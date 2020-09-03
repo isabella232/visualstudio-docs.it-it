@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::Stop Documenti Microsoft
+title: 'IDebugEngineProgram2:: Stop | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 286a448ee33f57d2e3a3282dc8d72b11a843a9c3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730478"
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
@@ -41,9 +41,9 @@ int Stop();
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Questo metodo viene chiamato quando è in corso il debug di questo programma in un ambiente multiprogramma. Quando viene ricevuto un evento di arresto da un altro programma, questo metodo viene chiamato su questo programma. L'implementazione di questo metodo deve essere asincrona; ovvero, non tutti i thread devono essere arrestati prima che questo metodo restituisca. L'implementazione di questo metodo può essere semplice come chiamare il [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) metodo su questo programma.
+ Questo metodo viene chiamato quando viene eseguito il debug di questo programma in un ambiente con più programmi. Quando viene ricevuto un evento di arresto da un altro programma, questo metodo viene chiamato su questo programma. L'implementazione di questo metodo deve essere asincrona. ovvero, non è necessario arrestare tutti i thread prima che questo metodo venga restituito. L'implementazione di questo metodo può essere semplice quanto la chiamata al metodo [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) su questo programma.
 
- Gli implementatori devono inviare un [IDebugStopCompleteEvent2](../../../extensibility/debugger/reference/idebugstopcompleteevent2.md) quando il programma viene arrestato.
+ Gli implementatori devono inviare un [IDebugStopCompleteEvent2](../../../extensibility/debugger/reference/idebugstopcompleteevent2.md) quando il programma si interrompe.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

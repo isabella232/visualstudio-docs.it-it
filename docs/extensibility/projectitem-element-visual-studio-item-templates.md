@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 885d0fbb50204f23a30fa43c1ffad45c9d67f829
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770727"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>Elemento ProjectItem (modelli di elemento di Visual Studio)
@@ -46,7 +46,7 @@ Specifica un file incluso nel modello di elemento.
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
 | Attributo | Descrizione |
 |---------------------| - |
@@ -57,7 +57,7 @@ Specifica un file incluso nel modello di elemento.
 | `TargetFileName` | Attributo facoltativo.<br /><br /> Specifica il nome dell'elemento creato dal modello. Questo attributo è utile per l'utilizzo della sostituzione dei parametri per creare un nome di elemento. |
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -71,7 +71,7 @@ Specifica un file incluso nel modello di elemento.
  Oggetto `string` che rappresenta il nome di un file nel file con *estensione zip* del modello.
 
 ## <a name="remarks"></a>Osservazioni
- `ProjectItem`è un elemento figlio facoltativo di `TemplateContent` .
+ `ProjectItem` è un elemento figlio facoltativo di `TemplateContent` .
 
  L' `TargetFileName` attributo può essere utilizzato per rinominare i file con parametri. Se, ad esempio, il file MyFile *. vb* è presente nella directory radice del file con estensione *zip* del modello, ma si vuole che il file venga denominato in base al nome file specificato dall'utente nella finestra di dialogo **Aggiungi nuovo elemento** , usare il codice XML seguente:
 

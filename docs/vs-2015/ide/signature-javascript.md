@@ -1,5 +1,5 @@
 ---
-title: '&lt;signature &gt; (JavaScript) | Microsoft Docs'
+title: '&lt;firma &gt; (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b4c640c28ada16a8a03943fcd1362d4fd521772c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671124"
 ---
 # <a name="ltsignaturegt-javascript"></a>&lt;signature&gt; (JavaScript)
@@ -33,18 +33,18 @@ Raggruppa un set di elementi correlati per una funzione o un metodo per fornire 
 ```
 
 #### <a name="parameters"></a>Parametri
- `externalid` Facoltativo. Se l'attributo `format` per l'elemento [\<loc >](../ide/loc-javascript.md) è `vsdoc`, questo attributo specifica l'ID membro usato per individuare il codice XML associato alla firma. A differenza dell'attributo `locid`, questo attributo specifica che devono essere caricati tutti gli elementi del membro con questo ID. Tutte le informazioni di descrizione associate presenti nel codice XML verranno unite anche con gli elementi specificati nella firma. In questo modo è possibile specificare elementi aggiuntivi, ad esempio `<capability>`, nel file sidecar senza specificarli nel file di origine. `externalid` è un attributo facoltativo.
+ `externalid` Facoltativo. Se l' `format` attributo per l' [\<loc>](../ide/loc-javascript.md) elemento è `vsdoc` , questo attributo specifica l'ID del membro usato per individuare il codice XML associato alla firma. Diversamente dall' `locid` attributo, questo attributo specifica che devono essere caricati tutti gli elementi del membro con questo ID. Tutte le informazioni di descrizione associate presenti nel codice XML verranno unite anche con gli elementi specificati nella firma. In questo modo è possibile specificare elementi aggiuntivi, ad esempio `<capability>` , nel file sidecar senza specificarli nel file di origine. `externalid` è un attributo facoltativo.
 
- `externalFile` Facoltativo. Specifica il nome del file in cui trovare il `externalid`. Questo attributo viene ignorato se non è presente alcun `externalid`. Si tratta di un attributo facoltativo. Il valore predefinito è il nome del file corrente ma con estensione di file XML anziché js. Per impostazione predefinita, le regole di ricerca delle risorse gestite per la localizzazione vengono usate per individuare il file.
+ `externalFile` Facoltativo. Specifica il nome del file in cui trovare `externalid` . Questo attributo viene ignorato se non `externalid` è presente alcun. Questo è un attributo facoltativo. Il valore predefinito è il nome del file corrente ma con estensione di file XML anziché js. Per impostazione predefinita, le regole di ricerca delle risorse gestite per la localizzazione vengono usate per individuare il file.
 
  `helpKeyword` Facoltativo. Parola chiave per Guida F1.
 
- `locid` Facoltativo. Identificatore per le informazioni di localizzazione sul campo. L'identificatore è un ID membro o corrisponde al valore dell'attributo `name` in un'aggregazione messaggi definita da metadati OpenAjax. Il tipo di identificatore dipende dal formato specificato nel tag [\<loc>](../ide/loc-javascript.md).
+ `locid` Facoltativo. Identificatore per le informazioni di localizzazione sul campo. L'identificatore è un ID membro o corrisponde al valore dell'attributo `name` in un'aggregazione messaggi definita da metadati OpenAjax. Il tipo di identificatore dipende dal formato specificato nel [\<loc>](../ide/loc-javascript.md) tag.
 
 ## <a name="remarks"></a>Osservazioni
- Usare un elemento `<signature>` per ogni descrizione della funzione in overload nel file js oppure usare un elemento `<signature>` per ogni ID membro esterno specificato.
+ Usare un `<signature>` elemento per ogni descrizione di funzione in overload nel file js oppure usare un `<signature>` elemento per ogni ID membro esterno specificato.
 
- L'elemento `<signature>` deve essere inserito nel corpo della funzione prima di qualsiasi istruzione. Quando si usa [\<summary >](../ide/summary-javascript.md), [\<param >](../ide/param-javascript.md)o [\<returns](../ide/returns-javascript.md) gli elementi > con l'elemento `<signature>`, inserire gli altri elementi all'interno del blocco di `<signature>`.
+ L' `<signature>` elemento deve essere inserito nel corpo della funzione prima di qualsiasi istruzione. Quando si [\<summary>](../ide/summary-javascript.md) usano [\<param>](../ide/param-javascript.md) [\<returns>](../ide/returns-javascript.md) gli elementi, o con l' `<signature>` elemento, inserire gli altri elementi all'interno del `<signature>` blocco.
 
 ## <a name="example"></a>Esempio
  L'esempio di codice seguente illustra come usare l'elemento `<signature>`.

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 1065c5efdcf73016e61ee0f016511579d41acd88
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282748"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Procedura: creare e configurare DataSet in Visual Studio
@@ -88,7 +88,7 @@ In questa procedura viene illustrato come aggiungere una tabella dallo stesso da
 
 Le tabelle autonome devono implementare la `Fill` logica in tabelle autonome in modo che sia possibile riempirle con i dati. Per informazioni sul riempimento di tabelle di dati autonome, vedere [popolamento di un DataSet da un oggetto DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Relazioni nei set di dati](../data-tools/relationships-in-datasets.md)

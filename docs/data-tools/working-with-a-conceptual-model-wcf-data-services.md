@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 272f2f5e04ad8d87da45c98ed38c30751658d5c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585912"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Utilizzare un modello concettuale (WCF Data Services)
@@ -27,8 +27,8 @@ Quando si utilizza un modello concettuale per descrivere i dati in un database, 
 
 | Argomento | Descrizione |
 | - | - |
-| [Procedura: Eseguire query sul servizio dati](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Viene illustrato come eseguire una query su un servizio dati da un'applicazione .NET. |
-| [Procedura: Proiettare risultati di query](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Viene illustrato come ridurre la quantità di dati restituiti tramite una query del servizio dati. |
+| [Procedura: eseguire query sul servizio dati](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Viene illustrato come eseguire una query su un servizio dati da un'applicazione .NET. |
+| [Procedura: proiettare risultati di query](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Viene illustrato come ridurre la quantità di dati restituiti tramite una query del servizio dati. |
 
 Quando si utilizza un modello concettuale, è possibile definire il tipo di dati valido nella lingua corrispondente al dominio. È possibile definire dati validi nel modello oppure è possibile aggiungere la convalida alle operazioni eseguite su un'entità o un servizio dati.
 
@@ -36,14 +36,14 @@ Negli argomenti riportati di seguito viene illustrato come aggiungere la convali
 
 |Argomento|Descrizione|
 |-----------|-----------------|
-|[Procedura: Intercettare messaggi del servizio dati](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Viene illustrato come aggiungere la convalida a un'operazione del servizio dati.|
+|[Procedura: intercettare messaggi del servizio dati](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Viene illustrato come aggiungere la convalida a un'operazione del servizio dati.|
 
  Negli argomenti seguenti viene illustrato come creare, aggiornare ed eliminare dati eseguendo operazioni sulle entità.
 
 |Argomento|Descrizione|
 |-----------|-----------------|
-|[Procedura: Aggiungere, modificare ed eliminare entità](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Viene illustrato come creare, aggiornare ed eliminare dati di entità in un servizio dati.|
-|[Procedura: Definire le relazioni tra entità](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Viene illustrato come creare o modificare le relazioni in un servizio dati.|
+|[Procedura: aggiungere, modificare ed eliminare entità](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Viene illustrato come creare, aggiornare ed eliminare dati di entità in un servizio dati.|
+|[Procedura: definire le relazioni tra entità](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Viene illustrato come creare o modificare le relazioni in un servizio dati.|
 
 ## <a name="see-also"></a>Vedere anche
 

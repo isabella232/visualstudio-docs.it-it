@@ -1,5 +1,5 @@
 ---
-title: Parametri personalizzati Documenti Microsoft
+title: Parametri personalizzati | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cd52a49daa7d57a21d8cb0896f7108efa09e32b2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708940"
 ---
 # <a name="custom-parameters"></a>Parametri personalizzati
-I parametri personalizzati controllano il funzionamento di una procedura guidata dopo l'avvio di una procedura guidata. Un file *vsz* correlato fornisce una matrice di parametri definiti dall'utente che vengono inseriti nel pacchetto dall'ambiente di sviluppo integrato (IDE) e passati alla procedura guidata come matrice di stringhe all'avvio della procedura guidata. La procedura guidata analizza quindi la matrice di stringhe e utilizza le informazioni per controllare il funzionamento effettivo della procedura guidata. In questo modo, una procedura guidata può personalizzare la funzionalità in base al contenuto del file *vsz.*
+I parametri personalizzati controllano l'operazione di una procedura guidata dopo l'avvio di una procedura guidata. Un file con *estensione vsz* correlato fornisce una matrice di parametri definiti dall'utente che vengono inseriti in un pacchetto dall'Integrated Development Environment (IDE) e passati alla procedura guidata come una matrice di stringhe quando viene avviata la procedura guidata. La procedura guidata analizza quindi la matrice di stringhe e usa le informazioni per controllare l'effettivo funzionamento della procedura guidata. In questo modo, una procedura guidata può personalizzare le funzionalità in base al contenuto del file con *estensione vsz* .
 
- I parametri di contesto, d'altra parte, definiscono lo stato del progetto all'avvio della procedura guidata. Per ulteriori informazioni, vedere [Parametri di contesto](../../extensibility/internals/context-parameters.md).
+ I parametri di contesto, invece, definiscono lo stato del progetto quando viene avviata la procedura guidata. Per ulteriori informazioni, vedere [parametri di contesto](../../extensibility/internals/context-parameters.md).
 
- Di seguito è riportato un esempio di file *vsz* con parametri personalizzati:
+ Di seguito è riportato un esempio di un file con *estensione vsz* con parametri personalizzati:
 
 ```
 VSWIZARD 8.0
@@ -35,14 +35,14 @@ Param="PREPROCESS_FUNCTION = CanAddATLSupport"
 Param="PROJECT_TYPE = CSPROJ"
 ```
 
- L'autore del file *vsz* aggiunge i valori dei parametri. Quando un utente seleziona **Nuovo progetto** o Aggiungi **nuovo elemento** dal Menu **File** o facendo clic con il pulsante destro del mouse su un progetto in **Esplora soluzioni**, l'IDE raccoglie questi valori in una matrice di stringhe. L'IDE chiama quindi <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> il metodo <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> del progetto con il <xref:EnvDTE.IVsExtensibility.RunWizardFile%2A> flag impostato e il progetto chiama il metodo responsabile dell'esecuzione della procedura guidata e della restituzione del risultato.
+ L'autore del file con *estensione vsz* aggiunge i valori dei parametri. Quando un utente seleziona **nuovo progetto** o **Aggiungi nuovo elemento** dal menu **file** o facendo clic con il pulsante destro del mouse su un progetto in **Esplora soluzioni**, l'IDE raccoglie tali valori in una matrice di stringhe. L'IDE chiama quindi il metodo del progetto <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> con il <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> flag impostato e il progetto chiama il <xref:EnvDTE.IVsExtensibility.RunWizardFile%2A> Metodo responsabile dell'esecuzione della procedura guidata e la restituzione del risultato.
 
- La procedura guidata è responsabile dell'analisi della matrice di stringhe e dell'azione sulle stringhe in modo appropriato. In questo modo, implementando parametri personalizzati è possibile creare una procedura guidata che esegue un'ampia gamma di funzioni. In altre parole, una procedura guidata potrebbe avere tre diversi file *vsz.* Ogni file passa diversi set di parametri personalizzati per controllare il comportamento della procedura guidata in varie situazioni.
+ La procedura guidata è responsabile dell'analisi della matrice di stringhe e della corretta azione delle stringhe. In questo modo, implementando parametri personalizzati è possibile creare una procedura guidata che esegue un'ampia gamma di funzioni. In altre parole, una procedura guidata potrebbe avere tre diversi file con *estensione vsz* . Ogni file passa set diversi di parametri personalizzati per controllare il comportamento della procedura guidata in varie situazioni.
 
- Per ulteriori informazioni, vedere [File della procedura guidata (con estensione vsz).](../../extensibility/internals/wizard-dot-vsz-file.md)
+ Per ulteriori informazioni, vedere [file della procedura guidata (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md).
 
 ## <a name="see-also"></a>Vedere anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - [Parametri di contesto](../../extensibility/internals/context-parameters.md)
 - [Procedure guidate](../../extensibility/internals/wizards.md)
-- [File della procedura guidata (vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+- [File della procedura guidata (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md)

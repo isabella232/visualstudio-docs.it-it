@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 967e99102f3b88e82a5466e7ce8d2cac2412d286
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585678"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Finestra di dialogo Impostazioni avanzate per i servizi
@@ -45,5 +45,5 @@ Il provider di ruoli accede ai valori del ruolo memorizzati nella cache o al ser
 ## <a name="see-also"></a>Vedere anche
 
 - [Servizi applicazioni client](/dotnet/framework/common-client-technologies/client-application-services)
-- [Pagina Servizi, Creazione progetti](../../ide/reference/services-page-project-designer.md)
+- [Pagina Servizi, Progettazione progetti](../../ide/reference/services-page-project-designer.md)
 - [Procedura: configurare i servizi delle applicazioni client](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)

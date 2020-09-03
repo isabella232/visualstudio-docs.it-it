@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bef7c4be2f38d0f50b2a13c7745cb212204769b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670086"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Creare un database SQL usando uno script
@@ -26,24 +26,24 @@ ms.locfileid: "72670086"
 
 In questa procedura dettagliata viene usato Visual Studio per creare un database di piccole dimensioni che contiene il codice di esempio per [creare un'applicazione dati semplice usando ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).
 
- **In questo argomento**
+ **Contenuto dell'argomento**
 
-- [Creare uno script contenente uno schema di database](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)
+- [Creare uno script contenente uno schema del database](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)
 
 - [Creare un progetto di database e importare uno schema](../data-tools/create-a-sql-database-by-using-a-script.md#CreateProject)
 
 - [Distribuire il database](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  Per completare questa procedura dettagliata, è necessario disporre di SQL Server Express database locale o di un altro database SQL installato.
 
-## <a name="CreateScript"></a>Creare uno script contenente uno schema di database
+## <a name="create-a-script-that-contains-a-database-schema"></a><a name="CreateScript"></a> Creare uno script contenente uno schema di database
 
-#### <a name="to-create-a-script-from-which-you-can-import-a-schema"></a>Per creare uno script da cui è possibile importare uno schema
+#### <a name="to-create-a-script-from-which-you-can-import-a-schema"></a>Per creare uno script da cui sia possibile importare uno schema
 
-1. Nella barra dei menu di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] selezionare **file**  > **nuovo** **file** > .
+1. Nella [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] barra dei menu di scegliere **file**  >  **nuovo**  >  **file**.
 
-     Verrà visualizzata la finestra di dialogo **nuovo file** .
+     Verrà visualizzata la finestra di dialogo **Nuovo file** .
 
 2. Nell'elenco **categorie** selezionare **generale**.
 
@@ -213,30 +213,30 @@ In questa procedura dettagliata viene usato Visual Studio per creare un database
     GO
     ```
 
-5. Nella barra dei menu selezionare **File**  > **Salva SqlQuery_1. SQL con nome**.
+5. Nella barra dei menu selezionare **file**  >  **Salva SqlQuery_1. SQL come**.
 
      Verrà visualizzata la finestra **di dialogo Salva file con nome** .
 
-6. Nella casella **nome file** immettere `SampleImportScript.sql`, prendere nota del percorso in cui verrà salvato il file, quindi selezionare il pulsante **Salva** .
+6. Nella casella **nome file** immettere `SampleImportScript.sql` , prendere nota del percorso in cui verrà salvato il file, quindi selezionare il pulsante **Salva** .
 
-7. Nella barra dei menu selezionare **File**  > **Chiudi soluzione**.
+7. Sulla barra dei menu selezionare **file**  >  **Chiudi soluzione**.
 
      Successivamente, creare un progetto di database e quindi importare lo schema dallo script creato.
 
-## <a name="CreateProject"></a>Creare un progetto di database e importare uno schema
+## <a name="create-a-database-project-and-import-a-schema"></a><a name="CreateProject"></a> Creare un progetto di database e importare uno schema
 
 #### <a name="to-create-a-database-project"></a>Per creare un progetto di database
 
-1. Nella barra dei menu selezionare **File** > **Nuovo** > **Progetto**.
+1. Nella barra dei menu selezionare **file**  >  **nuovo**  >  **progetto**.
 
-     Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
+     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
 2. In **installato**espandere il nodo **modelli** , espandere il nodo **altri linguaggi** , selezionare la categoria **SQL Server** , quindi selezionare il modello di **progetto di database SQL Server** .
 
     > [!NOTE]
     > Il nodo **altri linguaggi** non viene visualizzato in tutte le installazioni di Visual Studio.
 
-3. Nella casella **nome** immettere `Small Database`.
+3. Nella casella **nome** immettere `Small Database` .
 
 4. Se non è già selezionata, selezionare la casella **di controllo Crea directory per soluzione** .
 
@@ -246,9 +246,9 @@ In questa procedura dettagliata viene usato Visual Studio per creare un database
 
      Importare quindi lo schema del database dallo script.
 
-#### <a name="to-import-a-database-schema-from-a-script"></a>Per importare uno schema di database da uno script
+#### <a name="to-import-a-database-schema-from-a-script"></a>Per importare uno schema del database da uno script
 
-1. Nella barra dei menu selezionare **progetto**  > **Importa**  > **script**.
+1. Nella barra dei menu selezionare **progetto**  >  **Importa**  >  **script**.
 
 2. Nella pagina di **benvenuto** esaminare il testo e quindi fare clic sul pulsante **Avanti** .
 
@@ -270,5 +270,5 @@ In questa procedura dettagliata viene usato Visual Studio per creare un database
 
      A questo punto, il database contiene solo oggetti di sistema, ad esempio tabelle e stored procedure. Dopo aver distribuito il database, conterrà le tabelle utente e le stored procedure definite dagli script.
 
-## <a name="DeployDatabase"></a>Distribuire il database
+## <a name="deploy-the-database"></a><a name="DeployDatabase"></a> Distribuire il database
  Quando si preme il tasto **F5** , per impostazione predefinita si distribuisce (o si pubblica) il database in un database del database locale. È possibile distribuire il database in un percorso diverso aprendo la pagina delle proprietà per il progetto, selezionando la scheda **debug** e quindi modificando la stringa di connessione.

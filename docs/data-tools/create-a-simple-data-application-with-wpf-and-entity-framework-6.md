@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4aa978098c459d9e55ef0dc1423080357e067a5b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282761"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Creare un'applicazione dati semplice con WPF ed Entity Framework 6
@@ -427,7 +427,7 @@ Aggiungere questi metodi di gestione alla classe MainWindow in *MainWindow.XAML.
 
 Premere **F5** per avviare il debug. Verranno visualizzati i dati relativi ai clienti e agli ordini popolati nella griglia e i pulsanti di spostamento dovrebbero funzionare come previsto. Fare clic su **commit** per aggiungere un nuovo cliente o ordine al modello dopo aver immesso i dati. Fare clic su **Annulla** per uscire da un nuovo modulo di cliente o nuovo ordine senza salvare i dati. È possibile apportare modifiche ai clienti e agli ordini esistenti direttamente nelle caselle di testo e tali modifiche vengono scritte automaticamente nel modello.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
-- [Visual Studio Data Tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+- [Visual Studio data tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Documentazione di Entity Framework](/ef/)

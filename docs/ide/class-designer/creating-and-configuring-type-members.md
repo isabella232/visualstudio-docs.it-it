@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2bb65cc70bfec5e8eafc4a823d24f609166d4327
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85771046"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Creare e configurare membri di tipi in Progettazione classi
@@ -161,7 +161,7 @@ Ciascuna riga di membri visualizza i seguenti elementi:
 
      Nella finestra **Dettagli classe** viene visualizzato un sottoinsieme delle proprietà dei membri riportate nella finestra Proprietà. La modifica di una proprietà in un percorso aggiorna il valore della proprietà a livello globale. Ciò include la visualizzazione del valore nell'altro percorso.
 
-- **Riepilogo**
+- **Summary**
 
      Nella cella **Riepilogo** è contenuto un riepilogo delle informazioni relative al membro. Fare clic sui puntini di sospensione nella cella **Riepilogo** per visualizzare o modificare le informazioni relative a **Riepilogo**, **Tipo restituito** e **Note** per il membro.
 
@@ -186,7 +186,7 @@ Usare la finestra **Dettagli classe** per aggiungere parametri ai metodi. I para
 
 Le righe dei parametri contengono i seguenti elementi:
 
-- **Nome**
+- **Name**
 
      La colonna **Nome** di una riga di parametri visualizza il nome del parametro. Questo nome viene visualizzato anche nella proprietà **Nome** nella finestra Proprietà. È possibile utilizzare questa cella per cambiare il nome di qualsiasi parametro con autorizzazioni di lettura-scrittura.
 
@@ -200,7 +200,7 @@ Le righe dei parametri contengono i seguenti elementi:
 
      La cella **Modificatore** di una riga di parametro accetta e visualizza il nuovo modificatore del parametro. Per immettere un nuovo modificatore di parametro, nell'elenco a discesa selezionare **Nessuno**, **ref**, **out** o **params** in C# e **ByVal**, **ByRef** o **ParamArray** in VB.
 
-- **Riepilogo**
+- **Summary**
 
      La cella **Riepilogo** di una riga di parametro consente di immettere i commenti di codice visualizzati in IntelliSense quando si immette il parametro nell'editor di codice.
 

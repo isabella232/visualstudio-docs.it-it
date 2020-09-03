@@ -1,5 +1,5 @@
 ---
-title: Panoramica del servizio di linguaggio legacy | Microsoft Docs
+title: Cenni preliminari sul servizio di linguaggio legacy | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,53 +11,53 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c5964aa82d76791d29313ac787f1216c9c9ad283
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202723"
 ---
 # <a name="legacy-language-service-overview"></a>Panoramica dei servizi di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Un servizio di linguaggio fornisce supporto dell'editor che consente di implementare determinati [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] funzionalità. Le classi del servizio linguaggio Framework di pacchetto gestito (MPF) offrono il supporto completo per le funzionalità usati di frequente e un supporto parziale per le altre funzionalità.  
+Un servizio di linguaggio fornisce supporto per l'editor che consente di implementare determinate [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] funzionalità. Le classi del servizio di linguaggio MPF (Managed Package Framework) forniscono supporto completo per le funzionalità di uso frequente e il supporto parziale per altre funzionalità.  
   
 ## <a name="fully-supported-features-in-the-mpf"></a>Funzionalità completamente supportate in MPF  
- Le classi del servizio del linguaggio MPF supportano le funzionalità seguenti:  
+ Le classi del servizio di linguaggio MPF supportano le funzionalità seguenti:  
   
 - Evidenziazione della sintassi  
   
 - struttura  
   
-- Aggiunta di commenti blocchi di codice  
+- Aggiungere commenti a blocchi di codice  
   
 - Corrispondenza parentesi graffe  
   
 - Frammenti di codice  
   
-- Proprietà personalizzate dei documenti  
+- Proprietà personalizzate del documento  
   
-- Informazioni sui parametri di IntelliSense  
+- Informazioni sui parametri IntelliSense  
   
 - Informazioni rapide di IntelliSense  
   
-- Completamento dei membri IntelliSense  
+- Completamento del membro IntelliSense  
   
-- Completamento delle parole IntelliSense  
+- Completamento parole IntelliSense  
   
 ## <a name="partially-supported-features-in-the-mpf"></a>Funzionalità parzialmente supportate in MPF  
- MPF supporta parzialmente solo per le funzionalità seguenti. Ciò significa che è necessario implementare i metodi chiamati da MPF.  
+ MPF fornisce solo il supporto parziale per le funzionalità seguenti. Ciò significa che è necessario implementare i metodi chiamati da MPF.  
   
-- Riformattazione del codice. Si fornisce il codice che implementa la riformattazione.  
+- Riformattazione del codice. Fornire il codice che implementa la riformattazione.  
   
-- Esegue la convalida dei punti di interruzione identificando gli intervalli di codice valido. Si fornisce il codice che identifica gli intervalli di codice.  
+- Convalida dei punti di interruzione mediante l'identificazione di intervalli di codice validi. Fornire il codice che identifica gli intervalli di codice.  
   
-- Supporto del debugger **Auto** finestra per la visualizzazione di variabili. Si fornisce il codice che determina gli elementi da visualizzare nella finestra.  
+- Supporto della finestra **auto** del debugger per la visualizzazione di variabili. Fornire il codice che determina gli elementi da visualizzare nella finestra.  
   
-- Che supportano il **sulla barra di navigazione** per la navigazione rapida tra tipi e membri. Si implementa e restituire una classe helper che consente di popolare gli elenchi nel **sulla barra di navigazione** caselle combinate.  
+- Supporto della **barra di navigazione** per la navigazione rapida tra tipi e membri. Implementare e restituire una classe helper che popola gli elenchi nelle caselle combinate della **barra di spostamento** .  
   
 ## <a name="implementation"></a>Implementazione  
- È necessario completare diversi passaggi per implementare il servizio di linguaggio stesso e le funzionalità di servizio di linguaggio che si desidera supportare per la propria lingua. Questi passaggi sono descritti negli argomenti seguenti:  
+ È necessario completare diversi passaggi per implementare il servizio di linguaggio e le funzionalità del servizio di linguaggio che si desidera supportare per la lingua in uso. Questi passaggi sono descritti negli argomenti seguenti:  
   
 - [Implementazione di un servizio di linguaggio legacy](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
   
@@ -67,7 +67,7 @@ Un servizio di linguaggio fornisce supporto dell'editor che consente di implemen
   
 - [Corrispondenza parentesi graffe in un servizio di linguaggio legacy](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
   
-- [Definizione della struttura in un servizio di linguaggio legacy](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
+- [Struttura in un servizio di linguaggio legacy](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
   
 - [Aggiunta di commenti al codice in un servizio di linguaggio legacy](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
   
@@ -92,5 +92,5 @@ Un servizio di linguaggio fornisce supporto dell'editor che consente di implemen
 - [Convalida dei punti di interruzione in un servizio di linguaggio legacy](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
   
 ## <a name="see-also"></a>Vedere anche  
- [Implementazione di un servizio di linguaggio Legacy](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
+ [Implementazione di un servizio di linguaggio legacy](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
  [Estendibilità dei servizi di linguaggio legacy](../../extensibility/internals/legacy-language-service-extensibility.md)

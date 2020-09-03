@@ -1,5 +1,5 @@
 ---
-title: Implementazione della gestione dei comandi per i progetti annidati. Documenti Microsoft
+title: Implementazione della gestione dei comandi per i progetti annidati | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,33 +11,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2092fc8033d5a5cc53b12bd63a945bd9865ca30e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707604"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementazione della gestione dei comandi per i progetti annidati
-L'IDE può passare i <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> comandi <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> che vengono passati tramite e le interfacce ai progetti annidati o i progetti padre possono filtrare o eseguire l'override dei comandi.
+L'IDE può passare i comandi passati attraverso il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> e le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfacce ai progetti annidati oppure i progetti padre possono filtrare o eseguire l'override dei comandi.
 
 > [!NOTE]
-> Solo i comandi normalmente gestiti dal progetto padre possono essere filtrati. I comandi, ad esempio **Compilazione** e **Distribuzione** gestiti dall'IDE, non possono essere filtrati.
+> È possibile filtrare solo i comandi normalmente gestiti dal progetto padre. Non è possibile filtrare i comandi come la **compilazione** e la **distribuzione** gestiti dall'IDE.
 
- I passaggi seguenti descrivono il processo per l'implementazione della gestione dei comandi.
+ Nei passaggi seguenti viene descritto il processo di implementazione della gestione dei comandi.
 
 ## <a name="procedures"></a>Procedure
 
 #### <a name="to-implement-command-handling"></a>Per implementare la gestione dei comandi
 
-1. Quando l'utente seleziona un progetto annidato o un nodo in un progetto annidato:When the user selects a nested project or a node in a nested project:
+1. Quando l'utente seleziona un progetto annidato o un nodo in un progetto annidato:
 
-   1. L'IDE <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> chiama il metodo.
+   1. L'IDE chiama il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodo.
 
       - o -
 
-   2. Se il comando ha avuto origine in una finestra della gerarchia, ad <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> esempio un comando del menu di scelta rapida in Esplora soluzioni, l'IDE chiama il metodo sul padre del progetto.
+   2. Se il comando ha avuto origine in una finestra della gerarchia, ad esempio un comando di menu di scelta rapida in Esplora soluzioni, l'IDE chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> metodo nell'elemento padre del progetto.
 
-2. Il progetto padre può esaminare `QueryStatus`i `pguidCmdGroup` parametri `prgCmds`da passare a , ad esempio e , per determinare se il progetto padre deve filtrare i comandi. Se il progetto padre viene implementato per filtrare i comandi, deve impostare:If the parent project is implemented to filter commands, it should set:
+2. Il progetto padre può esaminare i parametri da passare a `QueryStatus` , ad esempio `pguidCmdGroup` e `prgCmds` , per determinare se il progetto padre deve filtrare i comandi. Se il progetto padre viene implementato per filtrare i comandi, deve impostare:
 
    ```
    prgCmds[0].cmdf = OLECMDF_SUPPORTED;
@@ -45,11 +45,11 @@ L'IDE può passare i <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 
    prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;
    ```
 
-    Quindi il progetto `S_OK`padre deve restituire .
+    Il progetto padre deve quindi restituire `S_OK` .
 
-    Se il progetto padre non filtra il `S_OK`comando, deve restituire . In questo caso, l'IDE instrada automaticamente il comando al progetto figlio.
+    Se il progetto padre non filtra il comando, dovrebbe solo restituire `S_OK` . In questo caso, l'IDE instrada automaticamente il comando al progetto figlio.
 
-    Il progetto padre non deve instradare il comando al progetto figlio. L'IDE esegue questa attività.
+    Il progetto padre non deve eseguire il routing del comando al progetto figlio. Questa attività viene eseguita dall'IDE.
 
 ## <a name="see-also"></a>Vedere anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>

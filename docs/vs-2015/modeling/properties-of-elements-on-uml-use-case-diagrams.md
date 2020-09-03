@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: db3dc649d979c87960a42d38ffa211e352be175b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671411"
 ---
 # <a name="properties-of-elements-on-uml-use-case-diagrams"></a>Proprietà di elementi in diagrammi caso d'uso UML
@@ -31,19 +31,19 @@ In un diagramma caso di utilizzo UML, ogni elemento del diagramma ha delle propr
 
 ## <a name="properties-of-elements"></a>Proprietà degli elementi
 
-|proprietà|Impostazione predefinita|Elemento|Descrizione|
+|Proprietà|Predefinito|Elemento|Descrizione|
 |--------------|-------------|-------------|-----------------|
-|**Nome**|Nome predefinito|All|Identifica l'elemento.|
-|**Nome completo**|Pacchetto :: Nome|All|Identifica l'elemento in modo univoco. Preceduto dal nome completo del pacchetto che lo contiene.|
-|**Elementi di lavoro**|0 elementi associati|All|Numero di elementi di lavoro associati a questo elemento. Per associare elementi di lavoro, vedere [collegare elementi di modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md).|
-|**Descrizione**|(nessuno)|All|Qui è possibile inserire note generali sull'elemento.|
-|**Colore**|(predefinito)|All|Colore della forma. A differenza delle altre proprietà, non si tratta di una proprietà dell'elemento visualizzato dalla forma.|
-|**Percorso immagine**|(nessuno)|Attore|Percorso del file di un'immagine da usare al posto dell'icona predefinita dell'attore. L'icona deve essere un file di risorse all'interno del progetto di Visual Studio.|
-|**Soggetti**|(nessuno)|Caso di utilizzo|Sottosistema o un altro tipo proprietario del caso di utilizzo.<br /><br /> È possibile impostarlo posizionando il caso di utilizzo in un sottosistema del diagramma.|
-|**Visibilità**|Public|Caso di utilizzo, attore, sottosistema|**Public** -visibile globalmente.<br /><br /> **Pacchetto** : visibile all'interno del pacchetto.|
-|**IsAbstract**|False|Caso di utilizzo, attore, sottosistema|Se true, non è possibile creare un'istanza del tipo e rappresenta la base per la specializzazione tramite altre definizioni.|
-|**Viene creata indirettamente**|True|Sottosistema|Il sottosistema esiste solo come elemento di progettazione. In fase di esecuzione esistono solo le relative parti.|
-|**Collegamento ipertestuale**|(nessuno)|Elemento|URL o percorso di file del diagramma o del documento a cui l'elemento fornisce un collegamento.|
+|**Name**|Nome predefinito|Tutti|Identifica l'elemento.|
+|**Nome completo**|Pacchetto :: Nome|Tutti|Identifica l'elemento in modo univoco. Preceduto dal nome completo del pacchetto che lo contiene.|
+|**Elementi di lavoro**|0 elementi associati|Tutti|Numero di elementi di lavoro associati a questo elemento. Per associare elementi di lavoro, vedere [collegare elementi di modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md).|
+|**Descrizione**|(nessuna)|Tutti|Qui è possibile inserire note generali sull'elemento.|
+|**Colore**|(predefinito)|Tutti|Colore della forma. A differenza delle altre proprietà, non si tratta di una proprietà dell'elemento visualizzato dalla forma.|
+|**Image Path**|(nessuna)|Attore|Percorso del file di un'immagine da usare al posto dell'icona predefinita dell'attore. L'icona deve essere un file di risorse all'interno del progetto di Visual Studio.|
+|**Oggetti**|(nessuna)|Caso d'uso|Sottosistema o un altro tipo proprietario del caso di utilizzo.<br /><br /> È possibile impostarlo posizionando il caso di utilizzo in un sottosistema del diagramma.|
+|**Visibilità**|Pubblico|Caso di utilizzo, attore, sottosistema|**Public** -visibile globalmente.<br /><br /> **Pacchetto** : visibile all'interno del pacchetto.|
+|**IsAbstract**|Falso|Caso di utilizzo, attore, sottosistema|Se true, non è possibile creare un'istanza del tipo e rappresenta la base per la specializzazione tramite altre definizioni.|
+|**Is Indirectly Instantiated**|Vero|Subsystem|Il sottosistema esiste solo come elemento di progettazione. In fase di esecuzione esistono solo le relative parti.|
+|**Collegamento ipertestuale**|(nessuna)|Elemento|URL o percorso di file del diagramma o del documento a cui l'elemento fornisce un collegamento.|
 
  Per un elenco delle proprietà delle associazioni, vedere [proprietà delle associazioni nei diagrammi classi UML](../modeling/properties-of-associations-on-uml-class-diagrams.md).
 

@@ -12,71 +12,71 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5238274d66296a21e15b47d1a090ab01c1a1299d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201972"
 ---
-# <a name="walkthrough-publishing-a-visual-studio-extension"></a>Procedura dettagliata: Pubblicazione di un'estensione di Visual Studio
+# <a name="walkthrough-publishing-a-visual-studio-extension"></a>Procedura dettagliata: pubblicazione di un'estensione di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**Nota**: Raccolta di Visual Studio verrà sostituita da Visual Studio Marketplace. Vedere la versione più recente di questo argomento per informazioni dettagliate.
+**Nota**: la raccolta di Visual Studio viene sostituita dalla Visual Studio Marketplace. Per informazioni dettagliate, vedere la versione più recente di questo argomento.
 
-Questa procedura dettagliata illustra come pubblicare un'estensione di Visual Studio in Visual Studio Gallery. Quando si aggiunge l'estensione alla raccolta, gli sviluppatori possono utilizzare **estensioni e aggiornamenti** per cercare estensioni nuove e aggiornate.
+Questa procedura dettagliata illustra come pubblicare un'estensione di Visual Studio in Visual Studio Gallery. Quando si aggiunge l'estensione alla raccolta, gli sviluppatori possono usare **estensioni e aggiornamenti** per individuare le estensioni nuove e aggiornate.
 
 ## <a name="prerequisites"></a>Prerequisiti
- Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per altre informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+ Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per ulteriori informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
 ## <a name="create-a-visual-studio-extension"></a>Creare un'estensione di Visual Studio
- In questo caso si userà un'estensione VSPackage predefinito, ma gli stessi passaggi sono validi per ogni tipo di estensione.
+ In questo caso verrà usata un'estensione VSPackage predefinita, ma gli stessi passaggi sono validi per ogni tipo di estensione.
 
-1. Creare un pacchetto VSPackage in c# denominato `TestPublishing` che dispone di un comando di menu. Per altre informazioni, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Creare un pacchetto VSPackage in C# denominato `TestPublishing` con un comando di menu. Per ulteriori informazioni, vedere [creazione di un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 ## <a name="test-the-extension"></a>Testare l'estensione
- Prima di distribuire l'estensione, compilare e testare per verificare che sia installato correttamente nell'istanza sperimentale di Visual Studio.
+ Prima di distribuire l'estensione, compilarla e testarla per assicurarsi che sia installata correttamente nell'istanza sperimentale di Visual Studio.
 
-1. In Visual Studio, avviare il debug. Per aprire un'istanza sperimentale di Visual Studio.
+1. In Visual Studio avviare il debug. per aprire un'istanza sperimentale di Visual Studio.
 
-2. Nell'istanza sperimentale, passare al **degli strumenti** dal menu **gestore estensioni del**. L'estensione TestPublishing dovrebbe essere visualizzato nel riquadro centrale e abilitato.
+2. Nell'istanza sperimentale, andare al menu **strumenti** e fare clic su **Gestione estensioni**. L'estensione TestPublishing dovrebbe essere visualizzata nel riquadro centrale ed essere abilitata.
 
-3. Nel **strumenti** menu, assicurarsi che venga visualizzato il comando di test.
+3. Nel menu **strumenti** verificare che sia visualizzato il comando test.
 
-## <a name="publish-the-extension-to-the-visual-studio-gallery"></a>Pubblicare l'estensione per Visual Studio Gallery
- A questo punto è possibile pubblicare l'estensione per Visual Studio Gallery.
+## <a name="publish-the-extension-to-the-visual-studio-gallery"></a>Pubblicare l'estensione in Visual Studio Gallery
+ A questo punto è possibile pubblicare l'estensione in Visual Studio Gallery.
 
-1. Assicurarsi di avere compilato la versione dell'estensione e che sia aggiornato.
+1. Assicurarsi di aver compilato la versione di rilascio dell'estensione e che sia aggiornata.
 
-2. In un web browser, aprire il [Visual Studio Marketplace](https://marketplace.visualstudio.com/) sito Web.
+2. In un Web browser aprire il sito Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) .
 
-3. Nell'angolo superiore destro, fare clic su **SIGN IN**.
+3. Nell'angolo in alto a destra fare clic su **Sign in (accedi**).
 
-4. Usare l'account Microsoft per accedere. Se non hai un account Microsoft, è possibile creare uno a questo punto.
+4. Usare l'account Microsoft per accedere. Se non si dispone di un account Microsoft, è possibile crearne uno a questo punto.
 
-5. Fare clic su **Upload**.
+5. Fare clic su **Carica**.
 
-6. In **passaggio 1: Tipo di estensione**, selezionare **strumento** e quindi fare clic su **successivo**.
+6. In **Step 1: Extension Type**selezionare **Tool** e quindi fare clic su **Next**.
 
-7. In **passaggio 2: Caricare**, è possibile scegliere di caricare direttamente in Visual Studio Gallery o è sufficiente aggiungere un collegamento al proprio sito Web. In questo caso selezionare **desidero caricare lo strumento**. Il **selezionare il controllo** verrà visualizzata la finestra. Fare clic su **esplorare** e quindi selezionare TestPublish.vsix nella cartella \bin\Release del progetto. Scegliere **Avanti**.
+7. In **Step 2: upload**è possibile scegliere di caricare direttamente in Visual Studio Gallery o semplicemente aggiungere un collegamento al proprio sito Web. In questo caso selezionare **si desidera caricare lo strumento**. Verrà visualizzata la casella **selezionare il controllo** . Fare clic su **Sfoglia** e quindi selezionare TestPublish. VSIX nella cartella \bin\release del progetto. Fare clic su **Avanti**.
 
-8. In **passaggio 3: Informazioni di base**, vengono visualizzati i campi nel file vsixmanifest. Selezionare un'opzione appropriata **categoria** e aggiungere **tag** per consentire agli utenti di trovare l'estensione. È possibile aggiungere un riepilogo e una descrizione (la descrizione deve essere almeno 280 caratteri) più dettagliate. Lasciare **tipo di estensione** come **non è un'estensione di Microsoft** e **categorie costi** come **versione di valutazione**.
+8. Nel **passaggio 3: informazioni di base**, vengono visualizzati i campi del file source. Extension. vsixmanifest. Selezionare una **categoria** appropriata e aggiungere i **tag** per consentire agli utenti di trovare l'estensione. Potrebbe essere necessario aggiungere una descrizione e un riepilogo più dettagliati (la lunghezza della descrizione deve essere di almeno 280 caratteri). Lasciare il **tipo di estensione** come versione di **valutazione** **non è un'estensione Microsoft e una** categoria di **costo** .
 
-9. L'accordo di contributo nella parte inferiore della pagina leggere e controllare **accetto**.
+9. Leggere il contratto di contributo nella parte inferiore della pagina **e selezionare Accetto**.
 
-10. Fare clic su **crea contributo**. Verrà visualizzata la pagina che avrà l'estensione in Visual Studio Gallery, con un messaggio che la pagina non è ancora stata pubblicata.
+10. Fare clic su **Crea contributo**. Viene visualizzata la pagina in cui si troverà l'estensione in Visual Studio Gallery, con un messaggio che indica che la pagina non è ancora stata pubblicata.
 
 11. Fare clic su **Pubblica**.
 
-12. Raccolta di Visual Studio per l'estensione di ricerca. L'elenco per l'estensione TestPublish dovrebbe essere visualizzato.
+12. Cercare l'estensione nella raccolta di Visual Studio. Verrà visualizzato l'elenco per l'estensione TestPublish.
 
 ## <a name="install-the-extension-from-the-visual-studio-gallery"></a>Installare l'estensione da Visual Studio Gallery
- Ora che la pubblicazione dell'estensione, installarlo in Visual Studio e testarlo.
+ Ora che l'estensione è pubblicata, installarla in Visual Studio ed eseguirne il test.
 
-1. In Visual Studio sul **degli strumenti** menu, fare clic su **estensioni e aggiornamenti**.
+1. In Visual Studio scegliere **estensioni e aggiornamenti**dal menu **strumenti** .
 
-2. Fare clic su **Online** e quindi cercare TestPublish. L'elenco per l'estensione TestPublish dovrebbe essere visualizzato.
+2. Fare clic su **online** e quindi cercare TestPublish. Verrà visualizzato l'elenco per l'estensione TestPublish.
 
-3. Scegliere **Download**. Dopo aver scaricato l'estensione, fare clic su **Installa**.
+3. Fare clic su **Download**. Dopo aver scaricato l'estensione, fare clic su **Installa**.
 
 4. Per completare l'installazione, riavviare Visual Studio.
 
@@ -85,9 +85,9 @@ Questa procedura dettagliata illustra come pubblicare un'estensione di Visual St
 
 #### <a name="to-remove-the-extension-from-the-visual-studio-gallery"></a>Per rimuovere l'estensione da Visual Studio Gallery
 
-1. Aprire il [Visual Studio Marketplace](https://marketplace.visualstudio.com/) sito Web.
+1. Aprire il sito Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) .
 
-2. Nell'angolo superiore destro, fare clic su **Extenions My**. Viene visualizzato l'elenco per TestPublish.
+2. Nell'angolo in alto a destra fare clic su **My extenions**. Viene visualizzato l'elenco di TestPublish.
 
 3. Fare clic su **Elimina**.
 

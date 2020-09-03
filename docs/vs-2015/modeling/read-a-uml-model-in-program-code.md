@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bbc55204987f4b6ea0d45c4228f6c194f1ebaf64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671314"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>Leggere un modello UML nel codice programma
@@ -23,10 +23,10 @@ ms.locfileid: "72671314"
 
 È possibile caricare un modello UML e i relativi diagrammi usando l'API UML.
 
-## <a name="Reading"></a>Lettura di un modello nel codice programma
+## <a name="reading-a-model-in-program-code"></a><a name="Reading"></a> Lettura di un modello nel codice programma
  Per accedere al contenuto di un modello senza visualizzarlo in una finestra di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], usare `ModelingProject.LoadReadOnly()`.
 
- Esempio:
+ Ad esempio:
 
 ```
 using Microsoft.VisualStudio.Uml.Classes;
@@ -50,7 +50,7 @@ using (IModelingProjectReader projectReader =
 
  Per leggere le forme in un diagramma è necessario leggere il progetto e quindi il diagramma.
 
- Esempio:
+ Ad esempio:
 
 ```
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
@@ -70,7 +70,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
 
  È anche possibile aprire modelli e diagrammi nell'interfaccia utente usando l'API di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per altre informazioni, vedere [aprire un modello UML tramite l'API di Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).
 
-## <a name="Standalone"></a>Applicazioni autonome
+## <a name="stand-alone-applications"></a><a name="Standalone"></a> Applicazioni autonome
  L'esempio della sezione precedente funziona nelle estensioni di Visual Studio. È possibile leggere un modello in un'applicazione autonoma, ma è necessario aggiungere alcuni riferimenti al progetto[!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 > [!NOTE]

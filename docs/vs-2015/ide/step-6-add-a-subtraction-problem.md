@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8ec0bdd3ebae52158c5631a880e63ee0f3a455de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671706"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Passaggio 6: aggiungere un problema di sottrazione
@@ -56,7 +56,7 @@ Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazi
 
      La dicitura **(+ 2 overload(s))** della descrizione comando indica che è possibile chiamare il metodo `Next()` in altri due modi. Gli overload contengono numeri o tipi di argomenti diversi, pertanto funzionano in modo leggermente diverso l'uno dall'altro. Ad esempio, un metodo potrebbe accettare un argomento Integer singolo, mentre uno degli overload potrebbe accettare un Integer e una stringa. Scegliere l'overload corretto in base all'operazione da eseguire. Quando si aggiunge codice al metodo `StartTheQuiz()`, nella finestra di Intellisense vengono visualizzate più informazioni non appena si immette `randomizer.Next(`. Premere i tasti freccia SU e GIÙ per scorrere gli overload, come illustrato nell'immagine seguente.
 
-     ![Overload per il&#40; &#41; metodo Next in IntelliSense](../ide/media/express-nextoverload.png "Express_NextOverload") Overload per il metodo Next () in IntelliSense
+     ![Overload per il metodo Next&#40;&#41; in IntelliSense](../ide/media/express-nextoverload.png "Express_NextOverload") Overload per il metodo Next() in IntelliSense
 
      In questo caso, si desidera scegliere l'ultimo overload, perché consente di specificare i valori minimo e massimo.
 
@@ -80,6 +80,6 @@ Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazi
 
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 7: aggiungere problemi di moltiplicazione e divisione](../ide/step-7-add-multiplication-and-division-problems.md).
+- Per andare al passaggio successivo dell'esercitazione, vedere [passaggio 7: aggiungere problemi di moltiplicazione e divisione](../ide/step-7-add-multiplication-and-division-problems.md).
 
-- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 5: aggiungere gestori di eventi Enter per i controlli NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [passaggio 5: aggiungere gestori di eventi Enter per i controlli NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

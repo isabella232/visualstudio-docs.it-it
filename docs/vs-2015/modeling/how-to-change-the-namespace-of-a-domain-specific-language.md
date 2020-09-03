@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8b61b248876f701e9d5286063f28b4f71d73e18b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671725"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Procedura: modificare lo spazio dei nomi di un linguaggio specifico di dominio
@@ -49,7 +49,7 @@ ms.locfileid: "72671725"
 
 10. Reimpostare l'istanza sperimentale di Visual Studio.
 
-    1. Eliminare **\Users \\** _{nome}_ **\AppData\Local\Microsoft\VisualStudio \\ \*Exp**
+    1. Elimina **\Users \\ **_{Your Name}_**\AppData\Local\Microsoft\VisualStudio \\ \* Exp**
 
     2. Dal menu **Start** di Windows scegliere **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti**, **reimpostare l'istanza sperimentale**.
 

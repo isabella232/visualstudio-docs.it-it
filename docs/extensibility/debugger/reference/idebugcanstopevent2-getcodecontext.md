@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::GetCodeContext . Documenti Microsoft
+title: 'IDebugCanStopEvent2:: GetCodeContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 94c129d7d50bc747291d8a178d73c06655e65414
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734569"
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
-Ottiene il contesto di codice che descrive la posizione di questo evento.
+Ottiene il contesto del codice che descrive la posizione di questo evento.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -41,15 +41,15 @@ int GetCodeContext( 
 
 ## <a name="parameters"></a>Parametri
 `ppCodeContext`\
-[fuori] Restituisce l'oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che rappresenta il percorso del codice corrente.
+out Restituisce l'oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che rappresenta la posizione del codice corrente.
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
 ## <a name="remarks"></a>Osservazioni
- Per la maggior parte delle architetture di runtime, un contesto di codice può essere considerato come un indirizzo nel flusso di esecuzione di un programma, che punta a un'istruzione specifica.
+ Per la maggior parte delle architetture in fase di esecuzione, un contesto di codice può essere considerato come un indirizzo nel flusso di esecuzione di un programma, puntando a un'istruzione specifica.
 
- Per ottenere il contesto del documento, che è orientato verso le righe di codice sorgente, chiamare il [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md) metodo.
+ Per ottenere il contesto del documento, che è orientato verso le righe del codice sorgente, chiamare il metodo [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md) .
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)

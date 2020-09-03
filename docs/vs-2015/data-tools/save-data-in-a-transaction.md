@@ -21,18 +21,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b30f51da001c62166a97c954b1416e35fd8b540f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671085"
 ---
 # <a name="save-data-in-a-transaction"></a>Salvare i dati in una transazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In questa procedura dettagliata viene illustrato come salvare i dati in una transazione utilizzando lo spazio dei nomi <xref:System.Transactions>. Questo esempio usa le tabelle `Customers` e `Orders` del database di esempio Northwind.
+In questa procedura dettagliata viene illustrato come salvare i dati in una transazione utilizzando lo <xref:System.Transactions> spazio dei nomi. Questo esempio usa le tabelle `Customers` e `Orders` del database di esempio Northwind.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Prerequisiti
  La procedura dettagliata richiede l'accesso al database di esempio Northwind.
 
 ## <a name="create-a-windows-application"></a>Creare un'applicazione Windows
@@ -49,7 +49,7 @@ In questa procedura dettagliata viene illustrato come salvare i dati in una tran
      Il progetto **SavingDataInATransactionWalkthrough** viene creato e aggiunto a **Esplora soluzioni**.
 
 ## <a name="create-a-database-data-source"></a>Creare un'origine dati del database
- In questo passaggio viene utilizzata la [Configurazione guidata origine dati](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) per creare un'origine dati basata sulle tabelle `Customers` e `Orders` del database di esempio Northwind.
+ In questo passaggio viene utilizzata la [Configurazione guidata origine dati](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) per creare un'origine dati basata `Customers` sulle `Orders` tabelle e nel database di esempio Northwind.
 
 #### <a name="to-create-the-data-source"></a>Per creare l'origine dati
 
@@ -63,7 +63,7 @@ In questa procedura dettagliata viene illustrato come salvare i dati in una tran
 
     - Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.
 
-         oppure
+         -oppure-
 
     - Selezionare **Nuova connessione** per avviare la finestra di dialogo **Aggiungi/Modifica connessione** e creare una connessione al database Northwind.
 
@@ -73,12 +73,12 @@ In questa procedura dettagliata viene illustrato come salvare i dati in una tran
 
 7. Nella schermata **Seleziona oggetti di database** espandere il nodo **tabelle** .
 
-8. Selezionare le tabelle `Customers` e `Orders`, quindi fare clic su **fine**.
+8. Selezionare le `Customers` `Orders` tabelle e, quindi fare clic su **fine**.
 
-     L'oggetto **NorthwindDataSet** viene aggiunto al progetto e le tabelle `Customers` e `Orders` vengono visualizzate nella finestra **Origini dati**.
+     L'oggetto **NorthwindDataSet** viene aggiunto al progetto e le `Customers` `Orders` tabelle e vengono visualizzate nella finestra **origini dati** .
 
 ## <a name="addcontrols-to-the-form"></a>Addcontrols al form
- È possibile creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form.
+ È possibile creare i controlli associati a dati trascinando gli elementi dalla finestra **origini dati** nel form.
 
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Per creare controlli associati a dati in Windows Form
 
@@ -90,7 +90,7 @@ In questa procedura dettagliata viene illustrato come salvare i dati in una tran
 
 - Trascinare il nodo **Orders** correlato, non il nodo **Orders** principale, ma il nodo della tabella figlio correlato al di sotto della colonna **Fax** , nel form sotto **customersDataGridView**.
 
-     Nel form verrà visualizzato un oggetto <xref:System.Windows.Forms.DataGridView>. Nella barra dei componenti vengono visualizzati OrdersTableAdapter e <xref:System.Windows.Forms.BindingSource>.
+     Nel form verrà visualizzato un oggetto <xref:System.Windows.Forms.DataGridView>. Un OrdersTableAdapter e <xref:System.Windows.Forms.BindingSource> vengono visualizzati nella barra dei componenti.
 
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>Aggiungere un riferimento all'assembly System. Transactions
  Le transazioni usano lo spazio dei nomi <xref:System.Transactions>. Un riferimento di progetto all'assembly System. Transactions non viene aggiunto per impostazione predefinita, pertanto è necessario aggiungerlo manualmente.
@@ -104,7 +104,7 @@ In questa procedura dettagliata viene illustrato come salvare i dati in una tran
      Al progetto viene aggiunto un riferimento a **System.Transactions**.
 
 ## <a name="modifythe-code-in-the-bindingnavigators-saveitem-button"></a>Codice Modifythe nel pulsante SaveItem di BindingNavigator
- Per la prima tabella rilasciata nel form, per impostazione predefinita viene aggiunto il codice all'evento `click` del pulsante Salva nel <xref:System.Windows.Forms.BindingNavigator>. È necessario aggiungere manualmente il codice per aggiornare eventuali tabelle aggiuntive. Per questa procedura dettagliata viene effettuato il refactoring del codice di salvataggio esistente dal gestore dell'evento click del pulsante Salva. Vengono inoltre creati altri metodi per fornire funzionalità di aggiornamento specifiche a seconda che la riga debba essere aggiunta o eliminata.
+ Per la prima tabella rilasciata nel form, il codice viene aggiunto per impostazione predefinita all' `click` evento del pulsante Salva in <xref:System.Windows.Forms.BindingNavigator> . È necessario aggiungere manualmente il codice per aggiornare eventuali tabelle aggiuntive. Per questa procedura dettagliata viene effettuato il refactoring del codice di salvataggio esistente dal gestore dell'evento click del pulsante Salva. Vengono inoltre creati altri metodi per fornire funzionalità di aggiornamento specifiche a seconda che la riga debba essere aggiunta o eliminata.
 
 #### <a name="to-modify-the-auto-generated-save-code"></a>Per modificare il codice di salvataggio autogenerato
 
@@ -117,13 +117,13 @@ In questa procedura dettagliata viene illustrato come salvare i dati in una tran
 
    L'ordine di riconciliazione delle modifiche ai dati correlati è il seguente:
 
-- Elimina i record figlio. (In questo caso, eliminare i record dalla tabella `Orders`).
+- Elimina i record figlio. (In questo caso, eliminare i record dalla `Orders` tabella).
 
-- Elimina i record padre. (In questo caso, eliminare i record dalla tabella `Customers`).
+- Elimina i record padre. (In questo caso, eliminare i record dalla `Customers` tabella).
 
-- Inserire i record padre. (In questo caso, inserire i record nella tabella `Customers`).
+- Inserire i record padre. (In questo caso, inserire i record nella `Customers` tabella).
 
-- Inserire i record figlio. (In questo caso, inserire i record nella tabella `Orders`).
+- Inserire i record figlio. (In questo caso, inserire i record nella `Orders` tabella).
 
 #### <a name="to-delete-existing-orders"></a>Per eliminare gli ordini esistenti
 
@@ -153,7 +153,7 @@ In questa procedura dettagliata viene illustrato come salvare i dati in una tran
      [!code-csharp[VbRaddataSaving#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#8)]
      [!code-vb[VbRaddataSaving#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#8)]
 
-## <a name="run-the-application"></a>Esecuzione dell'applicazione
+## <a name="run-the-application"></a>Eseguire l'applicazione
 
 #### <a name="to-run-the-application"></a>Per eseguire l'applicazione
 
