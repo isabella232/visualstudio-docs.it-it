@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bc8f3c95c687244162cb3bd977ca40031cd8f39
-ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82255580"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Procedura: Usare la stessa destinazione in più file di progetto
@@ -38,7 +38,7 @@ L'elemento `Import` consente di inserire un file di progetto in un altro file di
 
 ## <a name="order-of-evaluation"></a>Ordine di valutazione
 
- Quando MSBuild raggiunge un `Import` elemento, il progetto importato viene inserito in modo efficace nel progetto di importazione in `Import` corrispondenza della posizione dell'elemento. La posizione dell'elemento `Import` può quindi influire sui valori delle proprietà e degli elementi ed è importante conoscere sia le proprietà e gli elementi impostati dal progetto importato, sia le proprietà e gli elementi usati dal progetto.
+ Quando MSBuild raggiunge un `Import` elemento, il progetto importato viene inserito in modo efficace nel progetto di importazione in corrispondenza della posizione dell' `Import` elemento. La posizione dell'elemento `Import` può quindi influire sui valori delle proprietà e degli elementi ed è importante conoscere sia le proprietà e gli elementi impostati dal progetto importato, sia le proprietà e gli elementi usati dal progetto.
 
  Quando si compila il progetto, vengono valutate prima tutte le proprietà e dopo gli elementi. Il codice XML seguente, ad esempio, definisce il file di progetto importato *comune. targets*:
 
@@ -71,7 +71,7 @@ L'elemento `Import` consente di inserire un file di progetto in un altro file di
 
  `Name="MyCommon"`
 
- Poiché il progetto viene importato dopo `Name` che la proprietà è stata definita in *MyApp. proj*, `Name` la definizione di in *comune. targets* sostituisce la definizione in *MyApp. proj*. Se il progetto venisse importato prima di definire la proprietà Name, durante la compilazione verrebbe visualizzato il messaggio seguente:
+ Poiché il progetto viene importato dopo che la proprietà `Name` è stata definita in *MyApp. proj*, la definizione di `Name` in *comune. targets* sostituisce la definizione in *MyApp. proj*. Se il progetto venisse importato prima di definire la proprietà Name, durante la compilazione verrebbe visualizzato il messaggio seguente:
 
  `Name="MyApp"`
 

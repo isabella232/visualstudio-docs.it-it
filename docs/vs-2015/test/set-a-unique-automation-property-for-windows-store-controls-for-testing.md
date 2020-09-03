@@ -9,10 +9,10 @@ caps.latest.revision: 12
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d4ccf10f3ce085aa8f0275c40644f1a109616daf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672145"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Impostare una proprietà di automazione univoca dei controlli Windows Store per il test
@@ -28,13 +28,13 @@ Per eseguire test codificati dell'interfaccia utente per un'applicazione di Wind
 
 - [Uso di un modello di dati](#UniquePropertyWindowsStoreControlsDataTemplate)
 
-- [Uso di un modello di controllo](#UniquePropertyWindowsStoreControlsControlTemplate)
+- [Usare un modello del controllo](#UniquePropertyWindowsStoreControlsControlTemplate)
 
 - [Controlli dinamici](#UniquePropertyWindowsStoreControlsDynamicControls)
 
 ## <a name="use-methods-to-assign-a-unique-automation-property"></a>Usare metodi per assegnare una proprietà di automazione univoca
 
-### <a name="UniquePropertyWindowsStoreControlsStaticXAML"></a> Definizione XAML statica
+### <a name="static-xaml-definition"></a><a name="UniquePropertyWindowsStoreControlsStaticXAML"></a> Definizione XAML statica
  Per specificare una proprietà di automazione univoca per un controllo definito nel file XAML, è possibile impostare AutomationProperties.AutomationId o AutomationProperties.Name in modo implicito o esplicito, come illustrato negli esempi seguenti. Quando si imposta uno di questi valori, al controllo viene assegnata una proprietà di automazione univoca che può essere usata per identificare il controllo quando si crea una registrazione delle azioni o di un test codificato dell'interfaccia utente.
 
  **Impostare la proprietà in modo implicito**
@@ -68,14 +68,14 @@ Per eseguire test codificati dell'interfaccia utente per un'applicazione di Wind
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />
 ```
 
-### <a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> Assegnazione di proprietà di automazione univoche con Visual Studio o Blend per Visual Studio
+### <a name="assign-unique-automation-properties-using-visual-studio-or-blend-for-visual-studio"></a><a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> Assegnare proprietà di automazione univoche con Visual Studio o Blend per Visual Studio
  È possibile usare Visual Studio o Blend per Visual Studio per assegnare nomi univoci a elementi interattivi quali pulsanti, caselle di riepilogo, caselle combinate e caselle di testo. In questo modo al controllo viene assegnato un valore univoco per AutomationProperties.Name.
 
  **Visual Studio:** nel menu **Strumenti** fare clic su **Opzioni**, scegliere **Editor di testo**, **XAML** e infine **Varie**.
 
  Selezionare **Assegna automaticamente un nome agli elementi interattivi durante la creazione** e quindi fare clic su **OK**.
 
- ![Opzioni varie XAML](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")
+ ![Altre opzioni XAML](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")
 
  **Blend per Visual Studio:** usare uno dei metodi seguenti per eseguire questa operazione da Blend per Visual Studio.
 
@@ -86,15 +86,15 @@ Per eseguire test codificati dell'interfaccia utente per un'applicazione di Wind
 
  Nel menu **Strumenti** scegliere **Denomina elementi interattivi**, come illustrato di seguito:
 
- ![Scegliere nome elementi interattivi dal menu strumenti](../test/media/cuit-windowsstoreproperty-blend-1.png "CUIT_WindowsStoreProperty_Blend_1")
+ ![Scegliere Denomina elementi interattivi dal menu Strumenti](../test/media/cuit-windowsstoreproperty-blend-1.png "CUIT_WindowsStoreProperty_Blend_1")
 
  **Per assegnare automaticamente un nome univoco a controlli creati**
 
  Nel menu **Strumenti** fare clic su **Opzioni** e quindi scegliere **Progetto**. Selezionare **Assegna automaticamente un nome agli elementi interattivi durante la creazione** e quindi fare clic su **OK**, come illustrato di seguito:
 
- ![Imposta il progetto per assegnare un nome agli elementi interattivi](../test/media/cuit-windowsstoreproeprty-blend-2.png "CUIT_WindowsStoreProeprty_Blend_2")
+ ![Impostare il progetto su Denomina elementi interattivi](../test/media/cuit-windowsstoreproeprty-blend-2.png "CUIT_WindowsStoreProeprty_Blend_2")
 
-### <a name="UniquePropertyWindowsStoreControlsDataTemplate"></a> Uso di un modello di dati
+### <a name="use-a-data-template"></a><a name="UniquePropertyWindowsStoreControlsDataTemplate"></a> Usare un modello di dati
  Per definire un modello semplice che usa ItemTemplate per associare i valori di una casella di riepilogo alle variabili, usare il codice XAML seguente.
 
 ```xaml
@@ -157,7 +157,7 @@ public override string ToString()
 
 ```
 
-### <a name="UniquePropertyWindowsStoreControlsControlTemplate"></a> Uso di un modello di controllo
+### <a name="use-a-control-template"></a><a name="UniquePropertyWindowsStoreControlsControlTemplate"></a> Usare un modello di controllo
  È possibile usare un modello di controllo per fare in modo che ogni istanza di un tipo specifico ottenga una proprietà di automazione univoca quando viene definita nel codice. È necessario creare il modello in modo che AutomationProperty sia associato a un ID univoco nell'istanza del controllo. Il codice XAML seguente illustra un approccio per la creazione di questa associazione con un modello di controllo.
 
 ```xaml
@@ -185,7 +185,7 @@ public override string ToString()
 <Button Content=”Button2” Style="{StaticResource MyButton}" Width="140"/>
 ```
 
-### <a name="UniquePropertyWindowsStoreControlsDynamicControls"></a> Controlli dinamici
+### <a name="dynamic-controls"></a><a name="UniquePropertyWindowsStoreControlsDynamicControls"></a> Controlli dinamici
  Se sono presenti controlli creati dinamicamente dal codice e non creati in modo statico o tramite modelli nei file XAML, è necessario impostare le proprietà Content o Name per il controllo, per fare in modo che a ogni controllo dinamico sia associata una proprietà di automazione univoca. Ad esempio, se è presente una casella di controllo che deve essere visualizzata quando si seleziona un elemento elenco, è possibile impostare queste proprietà, come illustrato di seguito:
 
 ```csharp

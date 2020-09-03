@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 210606af0f200d49b639d323456f85e0a7becd06
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543676"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualizzare la struttura del codice usando diverse finestre degli strumenti
@@ -119,7 +119,7 @@ Il menu di scelta rapida nella finestra **gerarchia di chiamata** contiene i com
 |**Vai a definizione**|Consente di passare alla definizione originale di un metodo.|
 |**Trova tutti i riferimenti**|Trova nel progetto tutti i riferimenti al metodo selezionato.|
 |**Copia**|Copia il nodo selezionato (ma non i sottonodi).|
-|**Refresh** (Aggiornamento)|Aggiorna le informazioni.|
+|**Aggiorna**|Aggiorna le informazioni.|
 
 ## <a name="object-browser"></a><a name="BKMK_ObjectBrowser"></a> Visualizzatore oggetti
 
@@ -200,7 +200,7 @@ Il menu di scelta rapida (o clic con il pulsante destro del mouse) nella finestr
 |Nome|Descrizione|
 |-|-|
 |**Azioni rapide e refactoring**||
-|**Rinomina**||
+|**Rinominare**||
 |**Genera grafico dei file di inclusione**||
 |**Visualizza definizione**||
 |**Vai a definizione**|Trova la definizione (o le definizioni per le classi parziali) e le visualizza in una finestra **Risultati ricerca**.|
@@ -212,7 +212,7 @@ Il menu di scelta rapida (o clic con il pulsante destro del mouse) nella finestr
 |**Test di debug**||
 |**Punto di interruzione**|Inserisce un punto di interruzione (o un punto di analisi).|
 |**Esegui fino al cursore**|Esegue il programma in modalità di debug per la posizione del cursore.|
-|**Frammento di codice**||
+|**Frammento**||
 |**Taglia**, **Copia**, **Incolla**||
 |**Annotazione**||
 |**struttura**|Comandi di struttura standard.|

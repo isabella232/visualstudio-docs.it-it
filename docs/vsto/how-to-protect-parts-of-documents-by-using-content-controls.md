@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541349"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Procedura: proteggere parti di documenti mediante controlli contenuto
@@ -34,7 +34,7 @@ ms.locfileid: "85541349"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a>Proteggere un controllo contenuto
+## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a> Proteggere un controllo contenuto
  È possibile impedire agli utenti di modificare o eliminare un controllo del contenuto impostando le proprietà del controllo in un progetto a livello di documento in fase di progettazione o di esecuzione.
 
  È anche possibile proteggere i controlli del contenuto aggiunti a un documento in fase di esecuzione con un progetto di componente aggiuntivo VSTO. Per altre informazioni, vedere [procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md).
@@ -104,7 +104,7 @@ ms.locfileid: "85541349"
 
 ## <a name="see-also"></a>Vedere anche
 - [Automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)
-- [Controlli del contenuto](../vsto/content-controls.md)
+- [Controlli contenuto](../vsto/content-controls.md)
 - [Procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)
 - [Limitazioni a livello di codice degli elementi e dei controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

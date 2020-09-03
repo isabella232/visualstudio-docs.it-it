@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6fe720b380133d15f9bc60485896d4b7acbf2c4b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543195"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introduzione ai linguaggi specifici del dominio
@@ -94,7 +94,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
 - **Progetto DslPackage** Questo progetto contiene codice che consente di aprire e modificare le istanze del linguaggio DSL [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-## <a name="running-the-dsl"></a><a name="Debugging"></a>Esecuzione del linguaggio DSL
+## <a name="running-the-dsl"></a><a name="Debugging"></a> Esecuzione del linguaggio DSL
  È possibile eseguire la soluzione DSL appena creata. Successivamente, è possibile modificare la definizione DSL gradualmente, eseguendo di nuovo la soluzione dopo ogni modifica.
 
 #### <a name="to-experiment-with-the-dsl"></a>Per sperimentare il linguaggio DSL
@@ -383,7 +383,7 @@ In questo argomento vengono illustrati i concetti di base per la definizione e l
 
  Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md).
 
-## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a>Rimozione di DSLs sperimentali obsoleti
+## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a> Rimozione di DSLs sperimentali obsoleti
  Se sono stati creati DSLs sperimentali che non si desidera più, è possibile rimuoverli dal computer reimpostando l' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] istanza sperimentale.
 
  Questo eliminerà dal computer tutti i DSLs sperimentali e altre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estensioni sperimentali. Si tratta di estensioni che sono state eseguite in modalità di debug.

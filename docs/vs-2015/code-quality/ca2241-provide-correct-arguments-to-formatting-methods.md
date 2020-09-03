@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1dfd770efd4d690930155d2486b8ff1859065272
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543650"
 ---
 # <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: Specificare argomenti corretti ai metodi di formattazione
@@ -34,7 +34,7 @@ ms.locfileid: "85543650"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- L' `format` argomento di stringa passato a un metodo come <xref:System.Console.WriteLine%2A> , <xref:System.Console.Write%2A> o non <xref:System.String.Format%2A?displayProperty=fullName> contiene un elemento di formato corrispondente a ogni argomento dell'oggetto o viceversa.
+ L' `format` argomento di stringa passato a un metodo come <xref:System.Console.WriteLine%2A> ,  <xref:System.Console.Write%2A> o non  <xref:System.String.Format%2A?displayProperty=fullName> contiene un elemento di formato corrispondente a ogni argomento dell'oggetto o viceversa.
 
 ## <a name="rule-description"></a>Descrizione della regola
  Gli argomenti dei metodi come <xref:System.Console.WriteLine%2A> , <xref:System.Console.Write%2A> e <xref:System.String.Format%2A> sono costituiti da una stringa di formato seguita da più <xref:System.Object?displayProperty=fullName> istanze. La stringa di formato è costituita da testo e elementi di formato incorporato nel formato, {index [, Alignment] [: formatString]}. 'index' è un intero in base zero che indica quali oggetti sono da formattare. Se un oggetto non dispone di un indice corrispondente nella stringa di formato, l'oggetto viene ignorato. Se l'oggetto specificato da' index ' non esiste, <xref:System.FormatException?displayProperty=fullName> viene generata un'eccezione in fase di esecuzione.

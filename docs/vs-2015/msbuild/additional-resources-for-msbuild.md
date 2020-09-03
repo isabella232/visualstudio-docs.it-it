@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3557e830ba90b1e9f32b01c344867c5370e7425c
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586189"
 ---
 # <a name="additional-resources-for-msbuild"></a>Risorse aggiuntive per MSBuild
@@ -40,7 +40,7 @@ I siti Web e i forum seguenti possono essere utili per trovare le risposte a dom
  [Forum di Visual Studio relativo a MSBuild](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/)  
  Forum della community dedicato a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
-## <a name="see-also"></a>Vedi anche  
+## <a name="see-also"></a>Vedere anche  
  [MSBuild](msbuild.md)   
  [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)   
- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)
+ [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)

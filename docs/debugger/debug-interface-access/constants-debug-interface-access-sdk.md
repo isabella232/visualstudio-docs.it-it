@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3fa6037253141df1111ef3bc57fac9c718d826dc
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462239"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Costanti (Debug Interface Access SDK)
@@ -26,7 +26,7 @@ Queste costanti di stringa possono essere utilizzate per identificare varie sezi
 ## <a name="constants"></a>Costanti
 Gli elementi seguenti sono dichiarati come macro C/C++.
 
-|Macro|valore|
+|Macro|Valore|
 |-----------|-----------|
 |`DiaTable_Symbols`|L "simboli"|
 |`DiaTable_Sections`|L "sezioni"|
@@ -55,7 +55,7 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 ## <a name="requirements"></a>Requisiti
 Intestazione: dia2. h
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Riferimento](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

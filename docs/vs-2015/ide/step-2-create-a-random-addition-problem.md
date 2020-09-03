@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 54dee9c25fc9b8ddf1f8cf6c54c40d68ce53dc6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671849"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Passaggio 2: creare un problema di addizione casuale
@@ -74,7 +74,7 @@ Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di
 
      Le istruzioni impostano le proprietà **Text** delle due etichette **plusLeftLabel** e **plusRightLabel**, in modo da visualizzare i due numeri casuali. È necessario utilizzare il metodo `ToString()` della variabile Integer per convertire i numeri in testo. In termini di programmazione, stringa significa testo. I controlli di etichetta visualizzare solo testo, non numeri.
 
-6. Nella finestra di progettazione fare doppio clic sul pulsante **Avvio** o sceglierlo e premere INVIO.
+6. Nella finestra di progettazione fare doppio clic sul pulsante **Avvia** o sceglierlo e quindi premere INVIO.
 
      Quando un esecutore del quiz sceglie il pulsante, viene avviato il quiz; è appena stato aggiunto un gestore dell'evento Click per implementare questo comportamento.
 
@@ -95,6 +95,6 @@ Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di
 
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 3: aggiungere un timer per il conto alla rovescia](../ide/step-3-add-a-countdown-timer.md).
+- Per andare al passaggio successivo dell'esercitazione, vedere [passaggio 3: aggiungere un timer per il conto alla rovescia](../ide/step-3-add-a-countdown-timer.md).
 
-- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 1: creare un progetto e aggiungere etichette al form](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [passaggio 1: creare un progetto e aggiungere etichette al form](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

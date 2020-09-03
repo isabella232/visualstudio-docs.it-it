@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543390"
 ---
 # <a name="analyze-cpu-usage"></a>Analizzare l'utilizzo della CPU
@@ -67,7 +67,7 @@ A partire da Visual Studio 2019, è possibile scegliere i pulsanti **Espandi per
 |**CPU auto [unità, %]**|![Equazione % auto](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Millisecondi e percentuale dell'attività della CPU usata dalle chiamate alla funzione nell'intervallo di tempo selezionato, escluse le funzioni chiamate dalla funzione.|
 |**Modulo**|Nome del modulo che contiene la funzione.
 
-### <a name="the-cpu-usage-call-tree"></a><a name="BKMK_The_CPU_Usage_call_tree"></a>Albero delle chiamate di utilizzo CPU
+### <a name="the-cpu-usage-call-tree"></a><a name="BKMK_The_CPU_Usage_call_tree"></a> Albero delle chiamate di utilizzo CPU
 
 Per visualizzare l'albero delle chiamate, selezionare il nodo padre nel report. La pagina **Utilizzo CPU** viene aperta con la visualizzazione **Chiamante/chiamato**. Nell'elenco a discesa **Visualizzazione corrente** selezionare **Albero delle chiamate**.
 
@@ -87,7 +87,7 @@ Per visualizzare l'albero delle chiamate, selezionare il nodo padre nel report. 
 |![Passaggio 3](../profiling/media/procguid_3.png "ProcGuid_3")|Gli elementi figlio del nodo di secondo livello sono i metodi del codice utente e le routine asincrone che vengono chiamati o creati dal codice di sistema o di framework di secondo livello.|
 |![Passaggio 4](../profiling/media/procguid_4.png "ProcGuid_4")|I nodi figlio di un metodo contengono dati solo per le chiamate del metodo padre. Quando l'opzione **Mostra codice esterno** è disabilitata, i metodi dell'app possono contenere anche un nodo **[Codice esterno]** .|
 
-#### <a name="external-code"></a><a name="BKMK_External_Code"></a>Codice esterno
+#### <a name="external-code"></a><a name="BKMK_External_Code"></a> Codice esterno
 
 Le funzioni di sistema e framework eseguite dal codice sono dette *codice esterno*. Le funzioni codice esterno avviano e arrestano l'app, disegnano l'interfaccia utente, controllano il threading e offre altri servizi di basso livello all'app. Nella maggior parte dei casi il codice esterno non risulta interessante, pertanto l'albero delle chiamate di Utilizzo CPU raccoglie le funzioni esterne di un metodo utente in un unico nodo **[Codice esterno]**.
 
@@ -108,7 +108,7 @@ Per trovare il nome di una funzione, usare la casella di ricerca. Passare il mou
 ![Ricerca di codice esterno annidato](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Ricerca di codice esterno annidato")
 ::: moniker-end
 
-### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a>Funzioni asincrone nell'albero delle chiamate di utilizzo CPU
+### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funzioni asincrone nell'albero delle chiamate di utilizzo CPU
 
  Quando il compilatore rileva un metodo asincrono, crea una classe nascosta per controllare l'esecuzione del metodo. A livello concettuale la classe è una macchina a stati. La classe dispone di funzioni generate dal compilatore che chiamano in modo asincrono i metodi originali e i callback, l'utilità di pianificazione e gli iteratori necessari per la loro esecuzione. Quando un metodo padre chiama il metodo originale, il compilatore rimuove il metodo dal contesto di esecuzione del metodo padre ed esegue i metodi della classe nascosta nel contesto del codice di sistema e di framework che controlla l'esecuzione dell'app. Spesso, ma non sempre, i metodi asincroni vengono eseguiti in uno o più thread diversi. Il codice è visualizzato nell'albero delle chiamate **Utilizzo CPU** come figlio del nodo **[Codice esterno]** immediatamente sotto il nodo principale dell'albero.
 

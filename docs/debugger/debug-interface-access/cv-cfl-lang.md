@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac8910ebe012e1edbaa6c26695027214db4e66c2
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462134"
 ---
 # <a name="cv_cfl_lang"></a>CV_CFL_LANG
@@ -81,12 +81,12 @@ CV_CFL_MSIL linguaggio dell'applicazione è un linguaggio MSIL (Microsoft Interm
 
 CV_CFL_HLSL linguaggio applicazione è un linguaggio shader di alto livello.
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
 I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaSymbol:: get_Language](../../debugger/debug-interface-access/idiasymbol-get-language.md) .
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst. h
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)

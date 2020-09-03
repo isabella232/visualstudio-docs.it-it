@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e89125c8e1dea25ab02fe64c21b8166e9d65194a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542220"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Utilizzo della finestra Stack in parallelo
@@ -40,7 +40,7 @@ La finestra **stack in parallelo** è utile quando si esegue il debug di applica
 |Lettera di riferimento|Nome dell'elemento|Descrizione|  
 |--------------------|------------------|-----------------|  
 |A|Segmento o nodo dello stack di chiamate|Contiene una serie di contesti del metodo per uno o più thread. Se non vi sono righe della freccia connesse al nodo, questo rappresenta l'intero percorso di chiamate per i thread.|  
-|b|Evidenziazione blu|Indica il percorso di chiamate del thread corrente.|  
+|B|Evidenziazione blu|Indica il percorso di chiamate del thread corrente.|  
 |C|Righe della freccia|Connettono i nodi per costituire l'intero percorso di chiamate per i thread.|  
 |D|Descrizione comandi nell'intestazione del nodo|Mostra l'ID e il nome definito dall'utente di ogni thread il cui percorso di chiamate condivide questo nodo.|  
 |E|Contesto del metodo|Rappresenta uno o più stack frame nello stesso metodo.|  
@@ -65,7 +65,7 @@ La finestra **stack in parallelo** è utile quando si esegue il debug di applica
 |Lettera di riferimento|Controllo|Descrizione|  
 |--------------------|-------------|-----------------|  
 |A|Casella combinata Thread/Attività|Consente di passare dalla visualizzazione degli stack di chiamate dei thread alla visualizzazione degli stack di chiamate delle attività e viceversa. Per altre informazioni, vedere Visualizzazione Attività e Visualizzazione Thread.|  
-|b|Mostra solo con contrassegno|Mostra gli stack di chiamate solo per i thread contrassegnati in altre finestre di debug, ad esempio la finestra **thread GPU** e la finestra espressione di **controllo in parallelo** .|  
+|B|Mostra solo con contrassegno|Mostra gli stack di chiamate solo per i thread contrassegnati in altre finestre di debug, ad esempio la finestra **thread GPU** e la finestra espressione di **controllo in parallelo** .|  
 |C|Attiva/Disattiva visualizzazione metodo|Consente di passare dalla Visualizzazione stack alla Visualizzazione metodo e viceversa. Per ulteriori informazioni, vedere Visualizzazione metodo.|  
 |D|Scorrimento automatico a stack frame corrente|Scorre automaticamente il diagramma in modo da visualizzare lo stack frame corrente. Questa funzionalità è utile quando si modifica lo stack frame corrente da altre finestre o quando si raggiunge un nuovo punto di interruzione nei diagrammi di grandi dimensioni.|  
 |E|Attiva/Disattiva controllo zoom|Mostra o nasconde il controllo zoom. È anche possibile eseguire lo zoom premendo CTRL e ruotando la rotellina del mouse, indipendentemente dalla visibilità del controllo zoom oppure premendo **CTRL + MAIUSC +' +'** per eseguire lo zoom avanti e **CTRL + MAIUSC +'-'** per eseguire lo zoom indietro. Se si preme **CTRL + F8** , lo zoom si adatta allo schermo.|  
