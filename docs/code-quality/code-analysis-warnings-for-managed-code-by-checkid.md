@@ -172,6 +172,7 @@ f1_keywords:
 - CA1831
 - CA1832
 - CA1833
+- CA1834
 - CA1835
 - CA1836
 - CA1837
@@ -298,12 +299,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05937cef7187726134a7116edae4d74ee004de1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad6cddfd974c1082e83ffc96609d3c3863e7a6af
+ms.sourcegitcommit: 6a43ace7b84c401ebd03f65abc17ae1d2a21a130
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219751"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89471234"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avvisi di analisi del codice per il codice gestito da CheckId
 
@@ -469,6 +470,7 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 | Ca1831 |[CA1831: Usare AsSpan invece di indicizzatori basati su Range per la stringa quando appropriato](../code-quality/ca1831.md) | Quando si usa un indicizzatore di intervallo in una stringa e si assegna in modo implicito il valore al &lt; tipo char ReadOnlySpan &gt; , <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> viene usato il metodo anziché <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , che produce una copia della parte richiesta della stringa. |
 | Ca1832 |[CA1832: Usare AsSpan o AsMemory invece di indicizzatori basati su Range per ottenere la parte ReadOnlySpan o ReadOnlyMemory di una matrice](../code-quality/ca1832.md) | Quando si usa un indicizzatore di intervallo in una matrice e si assegna in modo implicito il valore a un <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> tipo o, <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> viene usato il metodo anziché <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , che produce una copia della parte richiesta della matrice. |
 | Ca1833 |[CA1833: Usare AsSpan o AsMemory invece di indicizzatori basati su Range per ottenere la parte Span o Memory di una matrice](../code-quality/ca1833.md) | Quando si usa un indicizzatore di intervallo in una matrice e si assegna in modo implicito il valore a un <xref:System.Span%601> <xref:System.Memory%601> tipo o, <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> viene usato il metodo anziché <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , che produce una copia della parte richiesta della matrice. |
+| Ca1834 |[Ca1834: usare StringBuilder. Append (Char) per le stringhe a caratteri singoli](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder> ha un `Append` Overload che accetta `char` come argomento. Preferire la chiamata dell' `char` Overload per motivi di prestazioni. |
 | Ca1835 |[Ca1835: preferisce gli overload basati su Memory'per ' ReadAsync ' è WriteAsync '](../code-quality/ca1835.md) | ' Stream ' ha un overload ' ReadAsync ' che accetta un' &lt; byte &gt; di memoria ' come primo argomento e un overload ' WriteAsync ' che accetta un'ReadOnlyMemory &lt; byte &gt; ' come primo argomento. Preferisci chiamare gli overload basati sulla memoria, che sono più efficienti. |
 | Ca1836 |[Ca1836: preferenza `IsEmpty` rispetto a `Count` quando disponibile](../code-quality/ca1836.md) | Preferisci `IsEmpty` la proprietà che è più efficiente di `Count` , `Length` <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> o <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> per determinare se l'oggetto contiene o meno elementi. |
 | Ca1837 | [Ca1837: usare `Environment.ProcessId` anziché `Process.GetCurrentProcess().Id`](../code-quality/ca1837.md) | `Environment.ProcessId` è più semplice e veloce di `Process.GetCurrentProcess().Id` . |
