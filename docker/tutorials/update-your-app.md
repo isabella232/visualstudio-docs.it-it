@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 4a1cba71481608803522336ad5c0f6b6354bca32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8f17047902ccf6c7fad164e788e64fe0b17cf14
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178340"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485428"
 ---
 # <a name="update-the-app"></a>Aggiornare l'app
 
@@ -82,7 +82,7 @@ Per rimuovere un contenitore, è prima necessario arrestarlo. Una volta arrestat
 > [!TIP]
 > È possibile arrestare e rimuovere un contenitore in un singolo comando aggiungendo il flag "Force" al `docker rm` comando. Ad esempio: `docker rm -f <the-container-id>`
 
-### <a name="remove-a-container-using-the-docker-dashboard"></a>Rimuovere un contenitore usando il dashboard Docker
+### <a name="remove-a-container-using-the-docker-view"></a>Rimuovere un contenitore usando la visualizzazione Docker
 
 Se si apre l'estensione VS Code, è possibile rimuovere un contenitore con due clic. È certamente molto più semplice che cercare l'ID del contenitore e rimuoverlo.
 
@@ -92,7 +92,7 @@ Se si apre l'estensione VS Code, è possibile rimuovere un contenitore con due c
 
 1. Confermare la rimozione e l'operazione è terminata.
 
-![Dashboard Docker-rimozione di un contenitore](media/vs-removing-container.png)
+![Visualizzazione Docker-rimozione di un contenitore](media/vs-removing-container.png)
 
 ### <a name="start-the-updated-app-container"></a>Avvia il contenitore dell'app aggiornato
 

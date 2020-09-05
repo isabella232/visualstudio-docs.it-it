@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 34b3cb9465c1efb946260917d755729e25c4e259
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a4eb5062f8f1b01e8ad5e5165d7ec9ede636124
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178291"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485586"
 ---
 # <a name="persist-your-data"></a> Rendere persistenti i dati
 
@@ -86,7 +86,7 @@ Come indicato, si userà un **volume denominato**. Si pensi a un volume denomina
     docker volume create todo-db
     ```
 
-1. Arrestare di nuovo il contenitore dell'app Todo nel dashboard (oppure con `docker rm -f <id>` ), perché è ancora in esecuzione senza usare il volume permanente.
+1. Arrestare di nuovo il contenitore dell'app Todo nella visualizzazione Docker (o con `docker rm -f <id>` ), perché è ancora in esecuzione senza usare il volume permanente.
 
 1. Avviare il contenitore dell'app todo, ma aggiungere il `-v` flag per specificare un montaggio del volume. il volume denominato verrà usato e montato in, in `/etc/todos` modo da acquisire tutti i file creati nel percorso.
 
@@ -98,7 +98,7 @@ Come indicato, si userà un **volume denominato**. Si pensi a un volume denomina
 
     ![Elementi aggiunti a todo list](media/items-added.png)
 
-1. Rimuovere il contenitore per l'app todo. Usare il dashboard o `docker ps` per ottenere l'ID e quindi `docker rm -f <id>` rimuoverlo.
+1. Rimuovere il contenitore per l'app todo. Usare la visualizzazione Docker o `docker ps` per ottenere l'ID e quindi `docker rm -f <id>` rimuoverlo.
 
 1. Avviare un nuovo contenitore usando lo stesso comando riportato sopra.
 

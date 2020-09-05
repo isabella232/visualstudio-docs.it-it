@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: c870378cf277a6008f17ec42d960e07e18a53e86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45ef2d8f68ac951cc58040abb72e136b42f3b49c
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283125"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490300"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Come visualizzare e diagnosticare contenitori e immagini in Visual Studio
 
@@ -108,8 +108,8 @@ Per rimuovere un'immagine, fare clic con il pulsante destro del mouse sull'immag
 
 Per altre informazioni sugli strumenti contenitore disponibili in Visual Studio, vedere [Panoramica degli strumenti](overview.md)per i contenitori.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-[Sviluppo di contenitori in Visual Studio](/visualstudio/containers)
+[Sviluppo di contenitori in Visual Studio](./index.yml)
 
 [Marketplace delle estensioni per Visual Studio](https://marketplace.visualstudio.com/)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac5103b15cee6e44650d9b8aef6fdf755874b2d2
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219777"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490287"
 ---
 # <a name="use-code-analyzers"></a>Usare gli analizzatori di codice
 
@@ -76,6 +76,13 @@ La schermata seguente dell'editor del codice mostra tre violazioni diverse con l
 Lo screenshot seguente mostra le stesse tre violazioni visualizzate nel Elenco errori:
 
 ![Violazione di errori, avvisi e informazioni in Elenco errori](media/diagnostics-severities-in-error-list.png)
+
+### <a name="hidden-severity-versus-none-severity"></a>Gravità' hidden ' rispetto alla gravità' none '
+
+`Hidden` le regole di gravità abilitate per impostazione predefinita sono diverse dalle regole disabilitate o di `None` gravità in due modi.
+
+- Se è stata registrata una correzione del codice per una `Hidden` regola di gravità, la correzione viene offerta come azione di refactoring del codice a bulbo leggero in Visual Studio, anche se la diagnostica nascosta non è visibile all'utente. Questo non avviene per le regole di `None` gravità disabilitate.
+- `Hidden` le regole di gravità possono essere configurate in blocco dalle voci che [impostano la gravità della regola di più regole dell'analizzatore contemporaneamente in un file EditorConfig](#set-rule-severity-of-multiple-analyzer-rules-at-once-in-an-editorconfig-file). `None` le regole di gravità non possono essere configurate in questo modo. Ma devono essere configurate tramite le voci che [impostano la gravità della regola in un file EditorConfig per ogni ID regola](#set-rule-severity-in-an-editorconfig-file).
 
 ::: moniker range=">=vs-2019"
 
@@ -395,7 +402,7 @@ In un progetto .NET Core, se si aggiunge un riferimento a un progetto che includ
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica degli analizzatori di codice in Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Inviare un bug dell'analizzatore del codice](https://github.com/dotnet/roslyn-analyzers/issues)
