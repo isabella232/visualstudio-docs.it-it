@@ -250,7 +250,7 @@
               href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
             - name: Creazione di un'applicazione dati a più livelli
               href: walkthrough-creating-an-n-tier-data-application.md
-            - name: Cenni preliminari sull'applicazione dati a più livelli
+            - name: Panoramica delle applicazioni dati a più livelli
               href: n-tier-data-applications-overview.md
         - name: Risorse aggiuntive per la risoluzione degli errori di accesso ai dati
           href: additional-resources-for-troubleshooting-data-access-errors.md
