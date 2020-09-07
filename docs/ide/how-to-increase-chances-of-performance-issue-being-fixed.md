@@ -5,12 +5,12 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 50d1ed4edd2e1fa52661995f4d72466646dfd879
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9fc83ac1be1a6c1db7b46845c74a4b0e7bf6017f
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250513"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509926"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Come aumentare le probabilità di correzione di un problema di prestazioni
 
@@ -171,7 +171,7 @@ Non alleghi direttamente le tracce delle prestazioni agli elementi di feedback e
 
 **Tracce di prestazioni avanzate**
 
-Per la maggior parte degli scenari, le funzionalità di raccolta delle tracce nello strumento segnala un problema sono sufficienti. In alcuni casi, tuttavia, è necessario un maggiore controllo sulla raccolta di tracce (ad esempio, traccia con dimensioni del buffer maggiori), nel qual caso PerfView è un ottimo strumento da usare. I passaggi per la registrazione manuale della traccia delle prestazioni con lo strumento PerfView sono reperibili nella pagina [registrazione delle tracce delle prestazioni con PerfView](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView) .
+Per la maggior parte degli scenari, le funzionalità di raccolta delle tracce nello strumento segnala un problema sono sufficienti. In alcuni casi, tuttavia, è necessario un maggiore controllo sulla raccolta di tracce (ad esempio, traccia con dimensioni del buffer maggiori), nel qual caso PerfView è un ottimo strumento da usare. I passaggi per la registrazione manuale della traccia delle prestazioni con lo strumento PerfView sono reperibili nella pagina [registrazione delle tracce delle prestazioni con PerfView](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Recording-performance-traces-with-PerfView.md) .
 
 ## <a name="out-of-process-issues"></a>Problemi out-of-process
 

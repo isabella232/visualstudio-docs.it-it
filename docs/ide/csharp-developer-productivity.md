@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0aa8e19f2be78671587dd1d9bc6254306c82a78c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6cf9e1c3f0011a282048939a994e47b897a314b
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567502"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509939"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guida per la produttività di Visual Studio per gli sviluppatori C#
 
@@ -125,7 +125,7 @@ Visual Studio include numerosi refactoring, azioni di generazione del codice e c
 
 Le correzioni rapide e i refactoring più comuni includono:
 
-- Rinominare
+- Rinomina
 - Estrai metodo
 - Cambia firma metodo
 - Genera costruttore
@@ -139,7 +139,7 @@ Le correzioni rapide e i refactoring più comuni includono:
 
 Per altre informazioni, vedere [funzionalità di generazione del codice](code-generation-in-visual-studio.md).
 
-È possibile [installare gli analizzatori FxCop](../code-quality/install-fxcop-analyzers.md) per contrassegnare i problemi del codice. Oppure è possibile scrivere refactoring o correzioni del codice propri con gli [analizzatori Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
+È possibile [installare gli analizzatori FxCop](../code-quality/install-fxcop-analyzers.md) per contrassegnare i problemi del codice. Oppure è possibile scrivere refactoring o correzioni del codice propri con gli [analizzatori Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix.md).
 
 Diversi membri della community hanno scritto estensioni gratuite che aggiungono controlli aggiuntivi del codice:
 
@@ -154,7 +154,7 @@ Diversi membri della community hanno scritto estensioni gratuite che aggiungono 
 
 Visual Studio include molte funzionalità che consentono di eseguire ricerche e di [esplorare il codice](../ide/navigating-code.md).
 
-| Feature | Tasto di scelta rapida | Dettagli/Miglioramenti |
+| Funzionalità | Tasto di scelta rapida | Dettagli/Miglioramenti |
 |- | - | -|
 | Trova tutti i riferimenti | **Sposta** + **F12**| I risultati sono colorati e possono essere raggruppati per progetto, definizione e tipo riferimento, ad esempio lettura o scrittura. È anche possibile "bloccare" i risultati. |
 | Vai all'implementazione | **CTRL** + **F12** | È possibile usare Vai a definizione nella parola chiave `override` per passare al membro sostituito |

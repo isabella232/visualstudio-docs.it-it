@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7c7aa1544f998a88424c0087fadceab63757d23b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36fc3d3fd0b002c110e9184a6d7b15c9fa367c48
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77272084"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509835"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Usare i dati in Visual Studio
 
@@ -89,7 +89,7 @@ Tutti gli accessi ai dati .NET, incluso in .NET Core, sono basati su ADO.NET, un
 
 Per la documentazione relativa all'accesso ai dati relativa a ASP.NET, vedere [uso dei dati](https://www.asp.net/web-forms/overview/presenting-and-managing-data) nel sito di ASP.NET. Per un'esercitazione sull'uso di Entity Framework con ASP.NET MVC, vedere [Introduzione con Entity Framework 6 Code First con MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
-Le app piattaforma UWP (Universal Windows Platform) (UWP) in C# o Visual Basic possono usare la Microsoft Azure SDK per .NET per accedere ad archiviazione di Azure e ad altri servizi di Azure. La classe Windows. Web. HttpClient consente la comunicazione con qualsiasi servizio RESTful. Per ulteriori informazioni, vedere [come connettersi a un server http utilizzando Windows. Web. http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
+Le app piattaforma UWP (Universal Windows Platform) (UWP) in C# o Visual Basic possono usare la Microsoft Azure SDK per .NET per accedere ad archiviazione di Azure e ad altri servizi di Azure. La classe Windows. Web. HttpClient consente la comunicazione con qualsiasi servizio RESTful. Per ulteriori informazioni, vedere [come connettersi a un server http utilizzando Windows. Web. http](/previous-versions/windows/apps/dn469430(v=win.10)).
 
 Per l'archiviazione dei dati nel computer locale, l'approccio consigliato consiste nell'usare SQLite, che viene eseguito nello stesso processo dell'app. Se è necessario un livello ORM (Object-Relational Mapping), è possibile usare Entity Framework. Per ulteriori informazioni, vedere [accesso ai dati](/windows/uwp/data-access/index) nel centro per sviluppatori Windows.
 

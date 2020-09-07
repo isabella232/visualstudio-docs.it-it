@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 08/04/2020
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione del training Pluralsight inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 85001d4473e504bd149a1cd1402a9f4dd01f2a13
-ms.sourcegitcommit: 1d74273a50ede5a90d9d64372d93aad357daef42
+ms.openlocfilehash: 87cc42e2a0d4c8c95c771a88413b4a8af70bdc14
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89365886"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509757"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Vantaggi di training Pluralsight nelle sottoscrizioni di Visual Studio
 
@@ -27,6 +27,7 @@ La tabella seguente indica in dettaglio i vantaggi Pluralsight disponibili per o
    > [!div class="mx-imgBorder"]
    > ![Riquadro del vantaggio Pluralsight](_img/vs-pluralsight/vs-pluralsight-tile.png "Fare clic su attiva per richiedere il vantaggio")
 
+Il riquadro precedente è un esempio di ciò che un Sottoscrittore di Visual Studio Enterprise visualizzerà.  Se si usa una sottoscrizione di Visual Studio diversa, la durata del vantaggio Pluralsight può variare.  Per informazioni dettagliate, vedere la tabella di idoneità.
 1. L'utente verrà reindirizzato alla pagina Pluralsight per il vantaggio incluso con la sottoscrizione di Visual Studio.
    - Specificare le informazioni di contatto richieste nel modulo
    - Fare clic sulla casella di controllo per accettare le condizioni per l'utilizzo
@@ -75,10 +76,10 @@ Alla scadenza della sottoscrizione di Pluralsight, lo stato verrà modificato in
 |          Visual Studio Enterprise con GitHub Enterprise          | VL  |   6 mesi    | Sì<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL, Azure, Retail |   3 mesi    | Sì<sup>2</sup> |
 |         Visual Studio Professional con GitHub Enterprise          | VL  |   3 mesi    | Sì<sup>2</sup> |
-|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   Non disponibile    | ND  |
-|                      MSDN Platforms (Standard)                       |    VL, Retail     |   Non disponibile    | ND  |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) |       Azure       | Non disponibile |       ND       |
-|             Visual Studio Enterprise - NFR<sup>1</sup>              |      Programma      | Non disponibile |       ND       |
+|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   Non disponibile    | N/D  |
+|                      MSDN Platforms (Standard)                       |    VL, Retail     |   Non disponibile    | N/D  |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) |       Azure       | Non disponibile |       N/D       |
+|             Visual Studio Enterprise - NFR<sup>1</sup>              |      Programma      | Non disponibile |       N/D       |
 ||
 
 <sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT software & Services Developer, MCT software & Service, most VALUABLE Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), ETP, Imagine.*

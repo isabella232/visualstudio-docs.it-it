@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 03bd4d286ab0bcba37c9c1761c0331ce1347f313
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2af6126c751d03968dc7ecd87693e3546376c12a
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219673"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509861"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Set di regole delle Regole di globalizzazione per codice gestito
 
@@ -21,13 +21,9 @@ Usare il set di regole di globalizzazione Microsoft per concentrarsi sui problem
 
 |Regola|Descrizione|
 |----------|-----------------|
-|[CA1300](../code-quality/ca1300.md)|Specificare MessageBoxOptions|
-|[CA1301](../code-quality/ca1301.md)|Evitare tasti di scelta rapida duplicati|
-|[CA1302](../code-quality/ca1302.md)|Non impostare come hardcoded le stringhe specifiche delle impostazioni locali|
 |[CA1303](../code-quality/ca1303.md)|Non passare valori letterali come parametri localizzati|
 |[CA1304](../code-quality/ca1304.md)|Specificare CultureInfo|
 |[CA1305](../code-quality/ca1305.md)|Specificare IFormatProvider|
-|[CA1306](../code-quality/ca1306.md)|Specificare le impostazioni locali per i tipi di dati|
 |[CA1307](../code-quality/ca1307.md)|Specificare StringComparison per maggiore chiarezza|
 |[CA1308](../code-quality/ca1308.md)|Normalizzare le stringhe in lettere maiuscole|
 |[CA1309](../code-quality/ca1309.md)|Usare StringComparison ordinale|

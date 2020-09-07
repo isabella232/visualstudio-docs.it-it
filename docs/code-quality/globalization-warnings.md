@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff17a56be7d7908ced0e37d1b13e8296ffc2c3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd215a8b5c8dfb5905117638883d94d09268ce3d
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219686"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509848"
 ---
 # <a name="globalization-warnings"></a>Avvisi di globalizzazione
 Gli avvisi di globalizzazione supportano le librerie e le applicazioni predisposte per l'internazionalizzazione.
@@ -29,9 +29,6 @@ Gli avvisi di globalizzazione supportano le librerie e le applicazioni predispos
 
 |Regola|Descrizione|
 |----------|-----------------|
-|[CA1300: Specificare MessageBoxOptions](../code-quality/ca1300.md)|Per visualizzare correttamente una finestra di messaggio per le impostazioni cultura che utilizzano un ordine di lettura da destra a sinistra, è necessario passare i membri RightAlign e RtlReading dell'enumerazione MessageBoxOptions al metodo Show.|
-|[CA1301: Evitare tasti di scelta rapida duplicati](../code-quality/ca1301.md)|Un tasto di scelta o tasto di scelta rapida consente l'accesso da tastiera a un controllo mediante ALT. Quando più controlli hanno chiavi di accesso duplicate, il comportamento della chiave di accesso non è ben definito.|
-|[CA1302: Non impostare come hardcoded le stringhe delle impostazioni locali](../code-quality/ca1302.md)|L'enumerazione System.Environment.SpecialFolder contiene membri che fanno riferimento a cartelle di sistema speciali. I percorsi di queste cartelle possono presentare valori diversi in sistemi operativi diversi. I percorso possono essere modificati e sono localizzati. Il metodo Environment. GetFolderPath restituisce i percorsi associati all'enumerazione Environment. SpecialFolder, localizzati e appropriati per il computer attualmente in esecuzione.|
 |[CA1303: Non passare valori letterali come parametri localizzati](../code-quality/ca1303.md)|Un metodo visibile esternamente passa un valore letterale stringa come parametro a un metodo o un costruttore .NET e tale stringa deve essere localizzabile.|
 |[CA1304: Specificare CultureInfo](../code-quality/ca1304.md)|Un metodo o un costruttore chiama un membro che presenta un overload che accetta un parametro System.Globalization.CultureInfo e tale metodo o costruttore non chiama l'overload che accetta il parametro CultureInfo. Quando non viene fornito un oggetto CultureInfo o System.IFormatProvider, il valore predefinito fornito dal membro di overload potrebbe non avere l'effetto desiderato in tutte le impostazioni locali.|
 |[CA1305: Specificare IFormatProvider](../code-quality/ca1305.md)|Un metodo o un costruttore chiama uno o più membri con overload che accettano un parametro System.IFormatProvider e tale metodo o costruttore non chiama l'overload che accetta il parametro IFormatProvider. Quando non viene fornito un oggetto System.Globalization.CultureInfo o IFormatProvider, il valore predefinito fornito dal membro di overload potrebbe non avere l'effetto desiderato in tutte le impostazioni locali.|
