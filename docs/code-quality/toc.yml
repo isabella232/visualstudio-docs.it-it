@@ -567,6 +567,8 @@
                   href: ca1832.md
                 - name: 'CA1833: Usare AsSpan o AsMemory invece di indicizzatori basati su Range per ottenere la parte Span o Memory di una matrice'
                   href: ca1833.md
+                - name: 'CA1834: Usare StringBuilder.Append(char) per le stringhe di caratteri singoli'
+                  href: ca1834.md
                 - name: 'CA1835: Preferire gli overload di memoria dei metodi Stream ReadAsync/WriteAsync'
                   href: ca1835.md
                 - name: 'CA1836: Preferire IsEmpty a Count quando disponibile'
