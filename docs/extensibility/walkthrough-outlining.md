@@ -10,12 +10,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb338803d50b2ecc9af8c8db6a6b6dc2f3631161
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+dev_langs:
+- csharp
+- vb
+ms.openlocfilehash: 6e3e60fe873d7bcb512e56c844e76fcbef037d42
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906187"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508925"
 ---
 # <a name="walkthrough-outlining"></a>Procedura dettagliata: definizione della struttura
 Configurare le funzionalità basate sul linguaggio, ad esempio la struttura, definendo i tipi di aree di testo che si desidera espandere o comprimere. È possibile definire le aree nel contesto di un servizio di linguaggio oppure definire l'estensione del nome di file e il tipo di contenuto e applicare la definizione di area solo a tale tipo oppure applicare le definizioni delle aree a un tipo di contenuto esistente, ad esempio "testo". Questa procedura dettagliata illustra come definire e visualizzare le aree della struttura.

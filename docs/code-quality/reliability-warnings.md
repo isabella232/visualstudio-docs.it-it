@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db99a9628992c40ef65699fee72d65b891ed1e24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6350c98f5fb4bfab5cfd7d70a5d509d3098b15f
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219608"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508535"
 ---
 # <a name="reliability-warnings"></a>Avvisi di affidabilità
 
@@ -28,11 +28,7 @@ Gli avvisi di affidabilità supportano la libreria e l'affidabilità delle appli
 |Regola|Descrizione|
 |----------|-----------------|
 |[CA2000: Eliminare gli oggetti prima che siano esterni all'ambito](../code-quality/ca2000.md)|Poiché è possibile che si verifichi un evento eccezionale che impedisca l'esecuzione del finalizzatore di un oggetto, è opportuno eliminare in modo esplicito l'oggetto prima che tutti i riferimenti a tale oggetto siano esterni all'ambito.|
-|[CA2001: Evitare le chiamate a metodi problematici](../code-quality/ca2001.md)|Un membro chiama un metodo potenzialmente pericoloso o problematico.|
 |[CA2002: Non bloccare oggetti con identità debole](../code-quality/ca2002.md)|Un oggetto presenta un'identità debole quando è possibile accedere ad esso direttamente attraverso i confini dei domini applicazione. Un thread che tenta di acquisire un blocco su un oggetto con identità debole può essere bloccato da un secondo thread in un altro dominio applicazione con un blocco sullo stesso oggetto.|
-|[CA2003: Non considerare i fiber come i thread](../code-quality/ca2003.md)|Un thread gestito viene considerato come un thread Win32.|
-|[CA2004: Rimuovere le chiamate a GC.KeepAlive](../code-quality/ca2004.md)|Se si esegue la conversione in utilizzo di SafeHandle, rimuovere tutte le chiamate a GC. KeepAlive (oggetto). In questo caso, le classi non devono chiamare GC. KeepAlive, presumendo che non dispongano di un finalizzatore, ma si affidino a SafeHandle per finalizzare l'handle del sistema operativo.|
-|[CA2006: Usare SafeHandle per incapsulare le risorse native](../code-quality/ca2006.md)|L'utilizzo di IntPtr nel codice gestito potrebbe indicare un potenziale problema di sicurezza e affidabilità. Tutte le occorrenze di IntPtr devono essere esaminate per stabilire se al loro posto è necessario utilizzare SafeHandle o una tecnologia simile.|
 |[CA2007: Non attendere direttamente un'attività](../code-quality/ca2007.md)|Un metodo asincrono [attende](/dotnet/csharp/language-reference/keywords/await) direttamente un oggetto <xref:System.Threading.Tasks.Task> .|
 |[CA2008: Non creare attività senza passare un elemento TaskScheduler](../code-quality/ca2008.md)|Un'operazione di creazione o di continuazione di un'attività utilizza un overload del metodo che non specifica un <xref:System.Threading.Tasks.TaskScheduler> parametro.|
 |[CA2009: Non chiamare ToImmutableCollection su un valore ImmutableCollection](../code-quality/ca2009.md)|`ToImmutable` il metodo è stato chiamato inutilmente su una raccolta non modificabile dallo <xref:System.Collections.Immutable> spazio dei nomi.|

@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5159b73058c73c925cae644c2e3ddd2bc84ac41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b543af39cbcd0301da7d0d353f8f7b6fa006f7ac
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634552"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508522"
 ---
 # <a name="assignprojectconfiguration-task"></a>Attività AssignProjectConfiguration
 
@@ -30,6 +30,7 @@ Questa attività accetta stringhe di configurazione elenco e le assegna ai proge
 
 |Parametro|Descrizione|
 |---------------|-----------------|
+|`ProjectReferences`|<xref:Microsoft.Build.Framework.ITaskItem> `[]` Parametro di input obbligatorio.<br /><br /> Progetti da configurare.|
 |`SolutionConfigurationContents`|Parametro di ouput facoltativo `string`.<br /><br /> Include una stringa XML contenente una configurazione di progetto per ogni progetto. Le configurazioni vengono assegnate ai progetti con nome.|
 |`DefaultToVcxPlatformMapping`|Parametro di ouput facoltativo `string`.<br /><br /> Contiene un elenco delimitato da punto e virgola dei mapping dai nomi di piattaforma usati dalla maggior parte dei tipi a quelli usati dai file *VCXPROJ*.<br /><br /> Ad esempio:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|
 |`VcxToDefaultPlatformMapping`|Facoltativo<br /><br /> Parametro di output `string`.<br /><br /> Contiene un elenco delimitato da punti e virgola dei mapping dai nomi di piattaforma *. vcxproj* ai nomi di piattaforma usati dalla maggior parte dei tipi.<br /><br /> Ad esempio:<br /><br /> `"Win32=AnyCPU;X64=X64"`|

@@ -21,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28fd0033f5ef6f83ca29432f95d6b635fcd36116
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c298658c7e9f385e5140ea46f8069512c0bf278
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634370"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508041"
 ---
 # <a name="copy-task"></a>Copy (attività)
 
@@ -42,7 +42,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `Copy` .
 |`DestinationFiles`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica l'elenco di file in cui copiare i file di origine. Dovrebbe esistere un mapping uno-a-uno tra questo elenco e quello specificato nel parametro `SourceFiles`. In altri termini, il primo file specificato in `SourceFiles` verrà copiato nel primo percorso specificato in `DestinationFiles`e così via.|
 |`DestinationFolder`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica la directory in cui si vogliono copiare i file. Deve trattarsi di una directory, non di un file. Se la directory non esiste, viene creata automaticamente.|
 |`OverwriteReadOnlyFiles`|Parametro `Boolean` facoltativo.<br /><br /> Sovrascrivi file anche se sono contrassegnati come file di sola lettura|
-|`Retries`|Parametro `Int32` facoltativo.<br /><br /> Specifica il numero di tentativi da eseguire per la copia, se tutti i tentativi precedenti hanno avuto esito negativo. Il valore predefinito è zero.<br /><br /> **Nota:** La ripetizione dei tentativi può nascondere un problema di sincronizzazione nel processo di compilazione.|
+|`Retries`|Parametro `Int32` facoltativo.<br /><br /> Specifica il numero di tentativi da eseguire per la copia, se tutti i tentativi precedenti hanno avuto esito negativo. Il valore predefinito è zero.<br /><br /> **Attenzione:** L'uso dei tentativi può mascherare un problema di sincronizzazione nel processo di compilazione.<br /><br /> **Nota:** Mentre l'impostazione predefinita dell' *attività* è zero tentativi, gli utilizzi dell'attività passano spesso `$(CopyRetryCount)` che è diverso da zero per impostazione predefinita.|
 |`RetryDelayMilliseconds`|Parametro `Int32` facoltativo.<br /><br /> Specifica il ritardo tra eventuali nuovi tentativi necessari. Imposta come valore predefinito l'argomento RetryDelayMillisecondsDefault, che viene passato al costruttore CopyTask.|
 |`SkipUnchangedFiles`|Parametro `Boolean` facoltativo.<br /><br /> Se il parametro è impostato su `true`, i file rimasti invariati dall'origine alla destinazione non vengono copiati. L'attività `Copy` considera invariati i file con le stesse dimensioni e la stessa ora dell'ultima modifica. <br /><br /> **Nota:** Se questo parametro viene impostato su `true`, è consigliabile non usare l'analisi delle dipendenze nella destinazione contenitore, perché in questo caso l'attività viene eseguita soltanto se l'ora dell'ultima modifica dei file di origine è più recente rispetto a quella dei file di destinazione.|
 |`SourceFiles`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file da copiare.|

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 2312c636f465bd39cdcbc4ca0ab63c107151c5be
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 9912a7fa0e83c5433e0eba1c7ffa23763331af6b
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426733"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508496"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurare la diagnostica per Servizi cloud di Azure e macchine virtuali
 Per risolvere gli errori di un servizio cloud o di una macchina virtuale di Azure, è possibile usare Visual Studio per configurare con maggiore facilità Diagnostica di Azure. Diagnostica di Azure acquisisce i dati di sistema e i dati di registrazione nelle macchine virtuali e nelle istanze di macchine virtuali che eseguono il servizio cloud. I dati di diagnostica vengono trasferiti all'account di archiviazione scelto. Per altre informazioni sulla registrazione diagnostica in Azure, vedere [Abilitare la registrazione diagnostica per le app Web nel servizio app di Azure](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -156,18 +156,18 @@ Se si usa Azure SDK 2.5 e si vuole specificare un'origine dati personalizzata, �
 ```
 
 ### <a name="performance-counters"></a>Contatori delle prestazioni
-Le informazioni sui contatori delle prestazioni possono semplificare l'individuazione dei colli di bottiglia e l'ottimizzazione delle prestazioni del sistema e delle applicazioni. Per altre informazioni, vedere [Creare e usare contatori di prestazioni in un'applicazione Azure](https://msdn.microsoft.com/library/azure/hh411542.aspx). Per acquisire contatori delle prestazioni, selezionare la casella di controllo **Abilita il trasferimento di contatori delle prestazioni**. Per aumentare o diminuire l'intervallo tra il trasferimento dei log eventi all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)**. Selezionare le caselle di controllo per i contatori delle prestazioni da tracciare.
+Le informazioni sui contatori delle prestazioni possono semplificare l'individuazione dei colli di bottiglia e l'ottimizzazione delle prestazioni del sistema e delle applicazioni. Per altre informazioni, vedere [Creare e usare contatori di prestazioni in un'applicazione Azure](/azure/cloud-services/diagnostics-performance-counters). Per acquisire contatori delle prestazioni, selezionare la casella di controllo **Abilita il trasferimento di contatori delle prestazioni**. Per aumentare o diminuire l'intervallo tra il trasferimento dei log eventi all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)**. Selezionare le caselle di controllo per i contatori delle prestazioni da tracciare.
 
 ![Contatori delle prestazioni](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
-Per tenere traccia di un contatore delle prestazioni non incluso nell'elenco, immetterlo usando la sintassi suggerita e quindi selezionare **Aggiungi**. Il sistema operativo della macchina virtuale determina i contatori delle prestazioni di cui è possibile tenere traccia. Per ulteriori informazioni sulla sintassi, vedere [specificare un percorso del contatore](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx).
+Per tenere traccia di un contatore delle prestazioni non incluso nell'elenco, immetterlo usando la sintassi suggerita e quindi selezionare **Aggiungi**. Il sistema operativo della macchina virtuale determina i contatori delle prestazioni di cui è possibile tenere traccia. Per ulteriori informazioni sulla sintassi, vedere [specificare un percorso del contatore](/windows/win32/perfctrs/specifying-a-counter-path).
 
 ### <a name="infrastructure-logs"></a>Log infrastruttura
 I log dell'infrastruttura contengono informazioni sull'infrastruttura di diagnostica di Azure, il modulo RemoteAccess e il modulo RemoteForwarder. Per raccogliere informazioni sui log dell'infrastruttura, selezionare la casella di controllo **Abilita il trasferimento dei log dell'infrastruttura di diagnostica**. Per aumentare o diminuire l'intervallo tra il trasferimento dei log dell'infrastruttura all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)**.
 
 ![Log dell'infrastruttura di diagnostica](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758148.png)
 
-Per altre informazioni, vedere [Raccogliere i dati di registrazione usando Diagnostica di Azure](https://msdn.microsoft.com/library/azure/gg433048.aspx).
+Per altre informazioni, vedere [Raccogliere i dati di registrazione usando Diagnostica di Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="log-directories"></a>Directory log
 Le directory di log contengono i dati raccolti dalle directory di log per le richieste di Internet Information Services (IIS), le richieste non riuscite o le cartelle scelte. Per acquisire le directory di log, selezionare la casella di controllo **Abilita il trasferimento di directory di log**. Per aumentare o diminuire l'intervallo tra il trasferimento dei log all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)**.
@@ -185,7 +185,7 @@ Gli eventi vengono acquisiti da origini eventi e manifesti evento specificati. P
 
 ![Log ETW](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766025.png)
 
-Il framework ETW è supportato in ASP.NET tramite le classi nello spazio dei nomi [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)). Lo spazio dei nomi Microsoft.WindowsAzure.Diagnostics, che eredita dalle classi standard [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) e le estende, consente l'uso di [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) come framework di registrazione nell'ambiente Azure. Per altre informazioni, vedere [Controllo della registrazione e della traccia in Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) e [Abilitazione di Diagnostica di Azure in servizi cloud di Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Il framework ETW è supportato in ASP.NET tramite le classi nello spazio dei nomi [System.Diagnostics.aspx](/dotnet/api/system.diagnostics). Lo spazio dei nomi Microsoft.WindowsAzure.Diagnostics, che eredita dalle classi standard [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) e le estende, consente l'uso di [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) come framework di registrazione nell'ambiente Azure. Per altre informazioni, vedere [Controllo della registrazione e della traccia in Microsoft Azure](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure) e [Abilitazione di Diagnostica di Azure in servizi cloud di Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="crash-dumps"></a>Dump di arresto anomalo
 Per acquisire informazioni sulle situazioni in cui si verifica un arresto anomalo di un'istanza del ruolo, selezionare la casella di controllo **Abilita il trasferimento di dump di arresto anomalo del sistema**. Poiché ASP.NET gestisce la maggior parte delle eccezioni, questa operazione è in genere utile solo per i ruoli di lavoro. Per aumentare o ridurre la percentuale di spazio di archiviazione dedicata ai dump di arresto anomalo del sistema, modificare il valore della **quota di directory (%)** . È possibile cambiare il contenitore di archiviazione in cui vengono archiviati i dump di arresto anomalo del sistema e stabilire se si vuole acquisire un dump **Completo** o **Ridotto**.
@@ -194,7 +194,7 @@ I processi attualmente tracciati sono elencati nel prossimo screenshot. Selezion
 
 ![Dump di arresto anomalo](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-Per altre informazioni, vedere [Controllo della registrazione e della traccia in Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) e [Diagnostica di Microsoft Azure - Parte 4: Personalizzare i componenti di registrazione e modifiche a Diagnostica di Azure 1.3](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/).
+Per altre informazioni, vedere [Controllo della registrazione e della traccia in Microsoft Azure](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure) e [Diagnostica di Microsoft Azure - Parte 4: Personalizzare i componenti di registrazione e modifiche a Diagnostica di Azure 1.3](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/).
 
 ## <a name="view-the-diagnostics-data"></a>Visualizzare i dati di diagnostica
 Dopo la raccolta dei dati di diagnostica per un servizio cloud o una macchina virtuale, sarà possibile visualizzarli.
@@ -256,7 +256,7 @@ Se si sta esaminando un problema relativo a un servizio cloud già in esecuzione
     Se si modifica la raccolta di dati in Esplora server, le modifiche rimangono valide fino a una nuova distribuzione completa del servizio cloud. Se si usano le impostazioni di pubblicazione predefinite, le modifiche non vengono sovrascritte. Le impostazioni di pubblicazione predefinite prevedono l'aggiornamento della distribuzione esistente, anziché una ridistribuzione completa. Per assicurarsi che le impostazioni vengano cancellate durante la distribuzione, passare alla scheda **Impostazioni avanzate** nella Pubblicazione guidata e deselezionare la casella di controllo **Aggiornamento distribuzione**. Quando si esegue la nuova distribuzione con tale casella di controllo deselezionata, verranno ripristinate le impostazioni del file con estensione wadcfgx (o wadcfg) definite tramite l'editor delle **Proprietà** per il ruolo specifico. Se si aggiorna la distribuzione, Azure mantiene le impostazioni precedenti.
 
 ## <a name="troubleshoot-azure-cloud-service-issues"></a>Risolvere i problemi del servizio cloud di Azure
-Se si verificano problemi con i progetti del servizio cloud, come un ruolo bloccato con stato "occupato", che viene riciclato ripetutamente o genera un errore di server interno, è possibile usare alcuni strumenti e tecniche per diagnosticare e risolvere il problema. Per esempi specifici di problemi comuni e soluzioni, oltre a una panoramica dei concetti e degli strumenti usati per diagnosticare e risolvere questi errori, vedere [Azure PaaS compute diagnostics data](https://blogs.msdn.microsoft.com/kwill/2013/08/09/windows-azure-paas-compute-diagnostics-data/) (Dati di diagnostica di calcolo delle soluzioni PaaS per Azure).
+Se si verificano problemi con i progetti del servizio cloud, come un ruolo bloccato con stato "occupato", che viene riciclato ripetutamente o genera un errore di server interno, è possibile usare alcuni strumenti e tecniche per diagnosticare e risolvere il problema. Per esempi specifici di problemi comuni e soluzioni, oltre a una panoramica dei concetti e degli strumenti usati per diagnosticare e risolvere questi errori, vedere [Azure PaaS compute diagnostics data](/archive/blogs/kwill/windows-azure-paas-compute-diagnostics-data) (Dati di diagnostica di calcolo delle soluzioni PaaS per Azure).
 
 ## <a name="q--a"></a>Domande e risposte
 **Quali sono le dimensioni del buffer e quanto dovrebbe essere grande?**

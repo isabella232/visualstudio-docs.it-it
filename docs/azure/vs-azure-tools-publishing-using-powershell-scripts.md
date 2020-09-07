@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 25943a6b3edc1a55c6d27d3c2737a9893edf5032
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f7e2f79b5e7daea577693bc0fd54cef70bb7e4a
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84179960"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508405"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Uso degli script di Windows PowerShell per la pubblicazione in ambienti di sviluppo e test
 
@@ -154,7 +154,7 @@ Se non è stato eseguito prima uno script Windows PowerShell, è innanzitutto ne
 
    ![Creare pacchetto di distribuzione web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Per ulteriori informazioni, vedere [Procedura: Creare un pacchetto di distribuzione Web in Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). È anche possibile automatizzare la creazione del pacchetto di Distribuzione Web, come descritto nella sezione [Personalizzazione ed estensione degli script di pubblicazione](#customizing-and-extending-the-publish-scripts).
+   Per ulteriori informazioni, vedere [Procedura: Creare un pacchetto di distribuzione Web in Visual Studio](/previous-versions/aspnet/dd465323(v=vs.110)). È anche possibile automatizzare la creazione del pacchetto di Distribuzione Web, come descritto nella sezione [Personalizzazione ed estensione degli script di pubblicazione](#customizing-and-extending-the-publish-scripts).
 
 1. In **Esplora soluzioni** aprire il menu di scelta rapida per lo script e quindi scegliere **Apri con PowerShell ISE**.
 1. Se gli script di Windows PowerShell vengono eseguiti su questo computer per la prima volta, aprire una finestra del prompt dei comandi con privilegi di amministratore e digitare il comando seguente:

@@ -15,12 +15,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a72512eef8490f18f1179ae149b9a39c2ddaad4e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8238de0760f300b6fa418a5e3eb47eac3db77272
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89285710"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509016"
 ---
 # <a name="net-code-analysis-rules"></a>Regole di analisi del codice .NET
 Lo strumento di analisi del codice gestito fornisce avvisi che indicano le violazioni delle regole nelle librerie del codice gestito. Gli avvisi sono organizzati in aree di regole, ad esempio progettazione, localizzazione, prestazioni e sicurezza. Ogni avviso indica una violazione di una regola di analisi del codice gestito. Questa sezione fornisce descrizioni dettagliate ed esempi per ogni avviso di analisi del codice gestito.
@@ -44,18 +44,15 @@ Lo strumento di analisi del codice gestito fornisce avvisi che indicano le viola
 
 |Category|Descrizione|
 |-|-|
-|[Avvisi per CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Elenchi di tutti gli avvisi generati da CheckId|
-|[Avvisi di crittografia](../code-quality/cryptography-warnings.md)|Avvisi che supportano applicazioni e librerie più sicure attraverso l'uso corretto della crittografia.|
-|[Avvisi di progettazione](../code-quality/design-warnings.md)|Avvisi che supportano la progettazione corretta della libreria come specificato dalle linee guida di progettazione .NET.|
-|[Avvisi di documentazione](../code-quality/documentation-warnings.md)|Avvisi che supportano la progettazione di librerie ben documentate mediante l'utilizzo corretto di commenti di documentazione XML.|
-|[Avvisi di globalizzazione](../code-quality/globalization-warnings.md)|Avvisi che supportano applicazioni e librerie internazionalizzate.|
-|[Avvisi di interoperabilità](../code-quality/interoperability-warnings.md)|Avvisi che supportano l'interazione con i client COM.|
-|[Avvisi di gestibilità](../code-quality/maintainability-warnings.md)|Avvisi che supportano la manutenzione di applicazioni e librerie.|
-|[Avvisi di mobilità](../code-quality/mobility-warnings.md)|Avvisi che supportano l'utilizzo efficiente dell'energia.|
-|[Avvisi di denominazione](../code-quality/naming-warnings.md)|Avvisi che supportano la conformità alle convenzioni di denominazione delle linee guida di progettazione .NET.|
-|[Avvisi relativi alle prestazioni](../code-quality/performance-warnings.md)|Avvisi che supportano applicazioni e librerie ad alte prestazioni.|
-|[Avvisi di portabilità](../code-quality/portability-warnings.md)|Avvisi che supportano la portabilità tra piattaforme diverse.|
-|[Avvisi di affidabilità](../code-quality/reliability-warnings.md)|Avvisi che supportano l'affidabilità di applicazioni e librerie, ad esempio il corretto utilizzo di memoria e thread.|
-|[Avvisi di sicurezza](../code-quality/security-warnings.md)|Avvisi che supportano applicazioni e librerie più sicure.|
-|[Avvisi di utilizzo](../code-quality/usage-warnings.md)|Avvisi che supportano l'utilizzo appropriato di .NET.|
-|[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|Errori che si verificano se i criteri di analisi del codice non sono soddisfatti al momento dell'archiviazione.|
+|[Regole per ID](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Elenca tutte le regole per RuleID|
+|[Regole di progettazione](../code-quality/design-warnings.md)|Regole che supportano la progettazione corretta delle librerie come specificato dalle linee guida di progettazione .NET.|
+|[Regole della documentazione](../code-quality/documentation-warnings.md)|Regole che supportano un progetto di libreria ben documentato tramite l'utilizzo corretto di commenti di documentazione XML.|
+|[Regole di globalizzazione](../code-quality/globalization-warnings.md)|Regole che supportano applicazioni e librerie internazionali.|
+|[Regole di manutenibilità](../code-quality/maintainability-warnings.md)|Regole che supportano la manutenzione di applicazioni e librerie.|
+|[Regole di denominazione](../code-quality/naming-warnings.md)|Regole che supportano la conformità alle convenzioni di denominazione delle linee guida di progettazione .NET.|
+|[Regole di prestazioni](../code-quality/performance-warnings.md)|Regole che supportano applicazioni e librerie ad alte prestazioni.|
+|[Regole di portabilità e interoperabilità](../code-quality/interoperability-warnings.md)|Regole che supportano la portabilità tra piattaforme diverse e l'interazione con i client COM.|
+|[Regole di pubblicazione](../code-quality/publish-warnings.md)|Regole che supportano la pubblicazione appropriata di applicazioni .NET.|
+|[Regole di affidabilità](../code-quality/reliability-warnings.md)|Regole che supportano l'affidabilità di librerie e applicazioni, ad esempio l'utilizzo corretto di memoria e thread.|
+|[Regole di sicurezza](../code-quality/security-warnings.md)|Regole che supportano applicazioni e librerie più sicure.|
+|[Regole di utilizzo](../code-quality/usage-warnings.md)|Regole che supportano l'utilizzo appropriato di .NET.|

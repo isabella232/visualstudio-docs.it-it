@@ -9,12 +9,12 @@ ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: e42a746761b09e99e158ecef8e9054bc0049c03d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ee226aac0d705da29333260966781d5b9b627ed
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81489636"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508457"
 ---
 # <a name="optimizing-your-azure-code"></a>Ottimizzare il codice Azure
 Quando si programmano app che utilizzano Microsoft Azure, esistono alcune procedure consigliate da seguire per evitare problemi con la scalabilità di app, il comportamento e le prestazioni in un ambiente cloud. Microsoft fornisce uno strumento di analisi del codice di Azure che riconosce molti di questi problemi comunemente riscontrati e aiuta a risolverli. È possibile scaricare lo strumento in Visual Studio tramite NuGet.
@@ -37,22 +37,22 @@ Per impostazione predefinita, la modalità stato sessione specificata nel file W
 Lo stato della sessione ASP.NET supporta diverse opzioni di archiviazione per i dati dello stato sessione: InProc, StateServer, SQLServer, personalizzato e Off. È consigliabile utilizzare la modalità personalizzata per ospitare i dati in un archivio esterno dello stato della sessione, ad esempio [Provider di stato della sessione di Azure per Redis](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/).
 
 ### <a name="solution"></a>Soluzione
-Una soluzione consigliata consiste nell'archiviare lo stato della sessione in un servizio cache gestito. Informazioni su come utilizzare [il provider di stato della sessione di Azure per Redis](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/) per archiviare lo stato della sessione. È anche possibile archiviare lo stato della sessione in altre posizioni per garantire che l'applicazione sia scalabile nel cloud. Per ulteriori informazioni sulle soluzioni alternative, leggere [Modalità dello stato di sessione](https://msdn.microsoft.com/library/ms178586).
+Una soluzione consigliata consiste nell'archiviare lo stato della sessione in un servizio cache gestito. Informazioni su come utilizzare [il provider di stato della sessione di Azure per Redis](https://devblogs.microsoft.com/aspnet/announcing-asp-net-session-state-provider-for-redis-preview-release/) per archiviare lo stato della sessione. È anche possibile archiviare lo stato della sessione in altre posizioni per garantire che l'applicazione sia scalabile nel cloud. Per ulteriori informazioni sulle soluzioni alternative, leggere [Modalità dello stato di sessione](/previous-versions/ms178586(v=vs.140)).
 
 ## <a name="run-method-should-not-be-async"></a>L’esecuzione del metodo non deve essere asincrona
 ### <a name="id"></a>ID
 AP1000
 
 ### <a name="description"></a>Descrizione
-Creare metodi asincroni, ad esempio [await](https://msdn.microsoft.com/library/hh156528.aspx), fuori dal metodo [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) e quindi chiamare i metodi asincroni da [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx). La dichiarazione del metodo [[Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) come asincrona fa sì che il ruolo di lavoro immetta un ciclo di riavvio.
+Creare metodi asincroni, ad esempio [await](/dotnet/csharp/language-reference/operators/await), fuori dal metodo [Run ()](/previous-versions/azure/reference/ee772746(v=azure.100)) e quindi chiamare i metodi asincroni da [Run ()](/previous-versions/azure/reference/ee772746(v=azure.100)). La dichiarazione del metodo [[Run ()](/previous-versions/azure/reference/ee772746(v=azure.100))](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) come asincrona fa sì che il ruolo di lavoro immetta un ciclo di riavvio.
 
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motivo
-La chiamata di metodi asincroni all'interno del metodo [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) fa sì che il runtime del servizio cloud ricicli il ruolo di lavoro. Quando viene avviato un ruolo di lavoro, l'esecuzione del programma ha luogo all'interno del metodo [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx). Chiudere il metodo [Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) fa sì che il ruolo di lavoro venga riavviato. Quando il runtime di ruolo di lavoro raggiunge il metodo asincrono, invia tutte le operazioni dopo il metodo asincrono e poi ritorna  In questo modo, il ruolo di lavoro esce dal metodo [[[[Run()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) e si riavvia. Nell'iterazione successiva dell'esecuzione, il ruolo di lavoro raggiunge nuovamente il metodo asincrono e viene riavviato, causando nuovamente il riciclo anche del ruolo di lavoro.
+La chiamata di metodi asincroni all'interno del metodo [Run()](/previous-versions/azure/reference/ee772746(v=azure.100)) fa sì che il runtime del servizio cloud ricicli il ruolo di lavoro. Quando viene avviato un ruolo di lavoro, l'esecuzione del programma ha luogo all'interno del metodo [Run()](/previous-versions/azure/reference/ee772746(v=azure.100)). L'uscita dal metodo Run comporta il riavvio del ruolo di lavoro. Quando il runtime di ruolo di lavoro raggiunge il metodo asincrono, invia tutte le operazioni dopo il metodo asincrono e poi ritorna  In questo modo, il ruolo di lavoro esce dal metodo Run e viene riavviato. Nell'iterazione successiva dell'esecuzione, il ruolo di lavoro raggiunge nuovamente il metodo asincrono e viene riavviato, causando nuovamente il riciclo anche del ruolo di lavoro.
 
 ### <a name="solution"></a>Soluzione
-Posizionare tutte le operazioni asincrone fuori dal metodo [Run](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) . Quindi, chiamare il metodo asincrono refactoring dall'interno del metodo [[Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) , ad esempio RunAsync().wait. Lo strumento di analisi del codice di Azure può aiutare a risolvere il problema.
+Posizionare tutte le operazioni asincrone fuori dal metodo [Run](/previous-versions/azure/reference/ee772746(v=azure.100)) . Chiamare quindi il metodo asincrono sottoposto a refactoring dall'interno del metodo Run, ad esempio RunAsync (). Wait. Lo strumento di analisi del codice di Azure può aiutare a risolvere il problema.
 
 Il seguente frammento di codice dimostra la correzione del codice per questo problema:
 
@@ -107,9 +107,8 @@ BrokeredMessage receivedMessage = sc.Receive();
 
 Per altre informazioni, vedere gli argomenti seguenti.
 
-* Per una panoramica, vedere [autenticazione della firma di accesso condiviso con il bus di servizio](https://msdn.microsoft.com/library/dn170477.aspx)
-* [Come usare l'autenticazione della firma di accesso condiviso con il bus di servizio](https://msdn.microsoft.com/library/dn205161.aspx)
-* Per un progetto di esempio, vedere l'articolo relativo all' [autenticazione tramite firma di accesso condiviso con le sottoscrizioni del bus di servizio](https://code.msdn.microsoft.com/windowsapps/Shared-Access-Signature-0a88adf8)
+* Per una panoramica, vedere [autenticazione della firma di accesso condiviso con il bus di servizio](/azure/service-bus-messaging/service-bus-sas)
+* [Come usare l'autenticazione della firma di accesso condiviso con il bus di servizio](/azure/service-bus-messaging/service-bus-sas)
 
 ## <a name="consider-using-onmessage-method-to-avoid-receive-loop"></a>È consigliabile utilizzare il metodo OnMessage per evitare il "ciclo di ricezione"
 ### <a name="id"></a>ID
@@ -121,16 +120,16 @@ Per evitare di entrare in un "ciclo di ricezione" la chiamata al metodo **OnMess
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motivo
-Quando si chiama **OnMessage**, il client avvia un message pump interno che esegue costantemente il polling della coda o della sottoscrizione. Questo pump del messaggio contiene un ciclo infinito che emette una chiamata per ricevere messaggi. Se la chiamata scade, genera una nuova chiamata. L'intervallo di timeout è determinato dal valore della proprietà [OperationTimeout](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactorysettings.operationtimeout.aspx) del [MessagingFactory](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactory.aspx) che viene usato.
+Quando si chiama **OnMessage**, il client avvia un message pump interno che esegue costantemente il polling della coda o della sottoscrizione. Questo pump del messaggio contiene un ciclo infinito che emette una chiamata per ricevere messaggi. Se la chiamata scade, genera una nuova chiamata. L'intervallo di timeout è determinato dal valore della proprietà [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) del [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory) che viene usato.
 
 Il vantaggio dell'uso di **OnMessage** rispetto a **Receive** è che gli utenti non devono eseguire manualmente il polling dei messaggi, gestire le eccezioni, elaborare più messaggi in parallelo e completare i messaggi.
 
 Se si chiama la **Ricezione** senza utilizzare il valore predefinito, assicurarsi che il valore *ServerWaitTime* sia superiore a un minuto. L'impostazione di *ServerWaitTime* a più di un minuto impedisce al server di scadere prima che il messaggio venga ricevuto completamente.
 
 ### <a name="solution"></a>Soluzione
-Vedere gli esempi di codice seguenti per gli utilizzi consigliati. Per altre informazioni, vedere [Metodo QueueClient.OnMessage (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.onmessage.aspx) e [Metodo QueueClient.Receive (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.receive.aspx).
+Vedere gli esempi di codice seguenti per gli utilizzi consigliati. Per altre informazioni, vedere [Metodo QueueClient.OnMessage (Microsoft.ServiceBus.Messaging)](/dotnet/api/microsoft.servicebus.messaging.queueclient) e [Metodo QueueClient.Receive (Microsoft.ServiceBus.Messaging)](/dotnet/api/microsoft.servicebus.messaging.queueclient).
 
-Per migliorare le prestazioni dell'infrastruttura di messaggistica di Azure, vedere il modello di progettazione [Nozioni di base di messaggistica asincrona](https://msdn.microsoft.com/library/dn589781.aspx).
+Per migliorare le prestazioni dell'infrastruttura di messaggistica di Azure, vedere il modello di progettazione [Nozioni di base di messaggistica asincrona](/previous-versions/msp-n-p/dn589781(v=pandp.10)).
 
 Il seguente è un esempio dell'utilizzo di **OnMessage** per ricevere i messaggi.
 
@@ -225,12 +224,12 @@ Utilizzare i metodi asincroni del Bus di servizio per migliorare le prestazioni 
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motivo
-L’utilizzo di metodi asincroni consente la concorrenza del programma di applicazione perché l'esecuzione di ogni chiamata non blocca il thread principale. Quando si utilizzano i metodi di messaggistica del Bus di servizio, l’esecuzione di un'operazione (inviare, ricevere, eliminare, ecc) richiede tempo. Questa volta include l'elaborazione dell'operazione dal servizio Bus di servizio oltre alla latenza della richiesta e risposta. Per aumentare il numero di operazioni per volta, è necessario eseguire le operazioni contemporaneamente. Per altre informazioni, consultare le [Procedure consigliate per il miglioramento delle prestazioni tramite la messaggistica negoziata del bus di servizio](https://msdn.microsoft.com/library/azure/hh528527.aspx).
+L’utilizzo di metodi asincroni consente la concorrenza del programma di applicazione perché l'esecuzione di ogni chiamata non blocca il thread principale. Quando si utilizzano i metodi di messaggistica del Bus di servizio, l’esecuzione di un'operazione (inviare, ricevere, eliminare, ecc) richiede tempo. Questa volta include l'elaborazione dell'operazione dal servizio Bus di servizio oltre alla latenza della richiesta e risposta. Per aumentare il numero di operazioni per volta, è necessario eseguire le operazioni contemporaneamente. Per altre informazioni, consultare le [Procedure consigliate per il miglioramento delle prestazioni tramite la messaggistica negoziata del bus di servizio](/previous-versions/azure/hh528527(v=azure.100)).
 
 ### <a name="solution"></a>Soluzione
-Vedere [QueueClient class (Microsoft.ServiceBus.Messaging)](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.queueclient.aspx) per ricevere informazioni su come utilizzare il metodo asincrono consigliato.
+Vedere [QueueClient class (Microsoft.ServiceBus.Messaging)](/dotnet/api/microsoft.servicebus.messaging.queueclient) per ricevere informazioni su come utilizzare il metodo asincrono consigliato.
 
-Per migliorare le prestazioni dell'infrastruttura di messaggistica di Azure, vedere il modello di progettazione [Nozioni di base di messaggistica asincrona](https://msdn.microsoft.com/library/dn589781.aspx).
+Per migliorare le prestazioni dell'infrastruttura di messaggistica di Azure, vedere il modello di progettazione [Nozioni di base di messaggistica asincrona](/previous-versions/msp-n-p/dn589781(v=pandp.10)).
 
 ## <a name="consider-partitioning-service-bus-queues-and-topics"></a>Prendere in considerazione il partizionamento delle code e degli argomenti del bus di servizio.
 ### <a name="id"></a>ID
@@ -242,7 +241,7 @@ Esegue il partizionamento delle code e degli argomenti del bus di servizio per o
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motivo
-Il partizionamento delle code e degli argomenti del bus di servizio permette di aumentare la disponibilità dei servizi e la velocità effettiva delle prestazioni, perché la velocità effettiva complessiva di una coda o di un argomento partizionato non è più limitata dalle prestazioni di un singolo broker messaggi o archivio di messaggistica. Una interruzione temporanea di un archivio di messaggistica non influisce sulla disponibilità di code e argomenti partizionati. Per ulteriori informazioni, vedere [Partizionamento delle entità di messaggistica](https://msdn.microsoft.com/library/azure/dn520246.aspx).
+Il partizionamento delle code e degli argomenti del bus di servizio permette di aumentare la disponibilità dei servizi e la velocità effettiva delle prestazioni, perché la velocità effettiva complessiva di una coda o di un argomento partizionato non è più limitata dalle prestazioni di un singolo broker messaggi o archivio di messaggistica. Una interruzione temporanea di un archivio di messaggistica non influisce sulla disponibilità di code e argomenti partizionati. Per ulteriori informazioni, vedere [Partizionamento delle entità di messaggistica](/previous-versions/azure/dn520246(v=azure.100)).
 
 ### <a name="solution"></a>Soluzione
 Il seguente frammento di codice mostra come suddividere le entità di messaggistica.
@@ -272,7 +271,7 @@ La sincronizzazione dell'orologio comporta una differenza oraria lieve tra i Dat
 Per ulteriori informazioni sull'utilizzo di firma di accesso condiviso sull'archiviazione di Azure, vedere [Introduzione della tabella SAS (Shared Access Signature) della coda SAS coda del BLOB SAS - Blog del Team Microsoft Azure Storage - Home page - sito blog di MSDN](https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas/).
 
 ### <a name="solution"></a>Soluzione
-Rimuovere l'istruzione che imposta l'ora di inizio del criterio di accesso condiviso. Lo strumento di analisi del codice di Azure fornisce una correzione per questo problema. Per ulteriori informazioni sulla gestione della protezione, vedere il modello di progettazione [Modello passepartout](https://msdn.microsoft.com/library/dn568102.aspx).
+Rimuovere l'istruzione che imposta l'ora di inizio del criterio di accesso condiviso. Lo strumento di analisi del codice di Azure fornisce una correzione per questo problema. Per ulteriori informazioni sulla gestione della protezione, vedere il modello di progettazione [Modello passepartout](/previous-versions/msp-n-p/dn568102(v=pandp.10)).
 
 Il seguente frammento di codice dimostra la correzione del codice per questo problema.
 
@@ -304,7 +303,7 @@ I dataenter in diverse località del mondo sono sincronizzati da un segnale di o
 Per ulteriori informazioni sull'utilizzo di firma di accesso condiviso sull'archiviazione di Azure, vedere [Introduzione della tabella SAS (Shared Access Signature) della coda SAS coda del BLOB SAS - Blog del Team Microsoft Azure Storage - Home page - sito blog di MSDN](https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas/).
 
 ### <a name="solution"></a>Soluzione
-Per ulteriori informazioni sulla gestione della protezione, vedere il modello di progettazione [Modello passepartout](https://msdn.microsoft.com/library/dn568102.aspx).
+Per ulteriori informazioni sulla gestione della protezione, vedere il modello di progettazione [Modello passepartout](/previous-versions/msp-n-p/dn568102(v=pandp.10)).
 
 Di seguito è riportato un esempio di ora di inizio dei criteri di accesso condiviso non specificata.
 
@@ -337,7 +336,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 });
 ```
 
-Per ulteriori informazioni, [Creare e usare una firma di accesso condiviso](https://msdn.microsoft.com/library/azure/jj721951.aspx).
+Per altre informazioni, vedere [configurare l'accesso in lettura pubblico anonimo per contenitori e BLOB](/azure/storage/blobs/anonymous-read-access-configure?tabs=portal).
 
 ## <a name="use-cloudconfigurationmanager"></a>Utilizzare CloudConfigurationManager
 ### <a name="id"></a>ID
@@ -351,10 +350,10 @@ Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi d
 ### <a name="reason"></a>Motivo
 CloudConfigurationManager legge il file di configurazione appropriato per l'ambiente dell'applicazione.
 
-[CloudConfigurationManager](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx)
+[CloudConfigurationManager](/previous-versions/azure/)
 
 ### <a name="solution"></a>Soluzione
-Effettuare il refactoring del codice per utilizzare il [CloudConfigurationManager classe](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx). Una correzione del codice per questo problema viene fornita dallo strumento di analisi del codice di Azure.
+Effettuare il refactoring del codice per utilizzare il [CloudConfigurationManager classe](/previous-versions/azure/reference/mt634650(v=azure.100)). Una correzione del codice per questo problema viene fornita dallo strumento di analisi del codice di Azure.
 
 Il seguente frammento di codice dimostra la correzione del codice per questo problema. Sostituisci
 
@@ -407,7 +406,7 @@ Anziché configurare le impostazioni di diagnostica nel codice, ad esempio trami
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motivo
-Prima di Azure SDK 2.5 (che utilizza diagnostica Microsoft Azure 1.3), la diagnostica di Azure (WAD) può essere configurata utilizzando diversi metodi: aggiunta del BLOB di configurazione nel servizio di archiviazione, utilizzando il codice imperativo, la configurazione dichiarativa o la configurazione predefinita. Il modo migliore per configurare la diagnostica consiste tuttavia nell'usare un file di configurazione XML (diagnostics.wadcfg o diagnostics.wadcfgx per SDK 2.5 e versioni successive)nel progetto di applicazione. In questo approccio, il file diagnostics wadcfg definisce completamente la configurazione e può essere aggiornato e ridistribuito a suo piacimento. Combinare l'uso del file di configurazione wadcfg con i metodi a livello di codice di impostazione delle configurazioni tramite le classi [Diagnosticmonitorconfiguration](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx) o [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx) può generare confusione. Vedere [Avviare o modificare la configurazione della diagnostica di Azure](https://msdn.microsoft.com/library/azure/hh411537.aspx) per ulteriori informazioni.
+Prima di Azure SDK 2.5 (che utilizza diagnostica Microsoft Azure 1.3), la diagnostica di Azure (WAD) può essere configurata utilizzando diversi metodi: aggiunta del BLOB di configurazione nel servizio di archiviazione, utilizzando il codice imperativo, la configurazione dichiarativa o la configurazione predefinita. Il modo migliore per configurare la diagnostica consiste tuttavia nell'usare un file di configurazione XML (diagnostics.wadcfg o diagnostics.wadcfgx per SDK 2.5 e versioni successive)nel progetto di applicazione. In questo approccio, il file diagnostics wadcfg definisce completamente la configurazione e può essere aggiornato e ridistribuito a suo piacimento. Combinare l'uso del file di configurazione wadcfg con i metodi a livello di codice di impostazione delle configurazioni tramite le classi [Diagnosticmonitorconfiguration](/previous-versions/azure/reference/ee758597(v=azure.100)) o [RoleInstanceDiagnosticManager](/previous-versions/azure/reference/ee773157(v=azure.100)) può generare confusione. Vedere [Avviare o modificare la configurazione della diagnostica di Azure](/previous-versions/azure/hh411537(v=azure.100)) per ulteriori informazioni.
 
 A partire da 1.3 WAD (incluso in Azure SDK 2.5), non è più possibile utilizzare il codice per configurare la diagnostica. Di conseguenza, è possibile specificare solo la configurazione quando si applica o si aggiorna l'estensione di diagnostica.
 

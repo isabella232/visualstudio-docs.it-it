@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 04e3ee89498447f7743fc1b5119e129f046b4fcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c92a2bb2349f1b5543672d7ecd944e3d82bb500
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911784"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508431"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Test delle prestazioni di un servizio cloud
 ## <a name="overview"></a>Panoramica
@@ -54,7 +54,7 @@ In genere si simula un carico per testare i servizi cloud in condizioni normali 
 ## <a name="profiling-a-cloud-service-in-azure"></a>Profilatura di un servizio cloud in Azure
 Quando si pubblica un servizio cloud da Visual Studio, è possibile eseguire la profilatura del servizio e specificare le impostazioni di profilatura che forniscono le informazioni desiderate. Viene avviata una sessione di profilatura per ogni istanza di un ruolo. Per altre informazioni su come pubblicare un servizio da Visual Studio, vedere [Pubblicazione in un servizio cloud di Azure da Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
-Per altre informazioni sulla profilatura delle prestazioni in Visual Studio, vedere [Guida per principianti alla profilatura delle prestazioni](https://msdn.microsoft.com/library/azure/ms182372.aspx) e [Analisi delle prestazioni dell'applicazione mediante strumenti di profilatura](https://msdn.microsoft.com/library/azure/z9z62c29.aspx).
+Per altre informazioni sulla profilatura delle prestazioni in Visual Studio, vedere [Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md) e [Analisi delle prestazioni dell'applicazione mediante strumenti di profilatura](../profiling/performance-explorer.md).
 
 > [!NOTE]
 > Quando si pubblica il servizio cloud è possibile abilitare o IntelliTrace o la profilatura. Non è possibile abilitare entrambi.
@@ -68,7 +68,7 @@ Per altre informazioni sulla profilatura delle prestazioni in Visual Studio, ved
 * **Strumentazione** : questo metodo consente di raccogliere dati dettagliati sui tempi utili per l'analisi mirata e per l'analisi dei problemi relativi alle prestazioni di input/output. Il metodo della strumentazione registra ogni voce, uscita e chiamata di funzione delle funzioni di un modulo durante l'esecuzione di una profilatura. Questo metodo è utile per raccogliere informazioni dettagliate sui tempi per una sezione del codice e per comprendere l'impatto delle operazioni di input e output sulle prestazioni dell'applicazione. Questo metodo è disabilitato per un computer che esegue un sistema operativo a 32 bit. Questa opzione è disponibile solo quando si esegue il servizio cloud in Azure, non in locale nell'emulatore di calcolo.
 * **Allocazione della memoria .NET** : questo metodo raccoglie dati sull'allocazione della memoria .NET Framework usando il metodo di profilatura del campionamento. I dati raccolti includono il numero e la dimensione degli oggetti allocati.
 * **Concorrenza** : questo metodo raccoglie dati sui conflitti delle risorse e dati di esecuzione dei thread e dei processi utili per l'analisi delle applicazioni multithread e multiprocesso. Il metodo di concorrenza raccoglie i dati per ogni evento che blocca l'esecuzione del codice, ad esempio quando un thread attende che l'accesso bloccato a una risorsa dell'applicazione venga liberato. Questo metodo è utile per l'analisi di applicazioni multithread.
-* È inoltre possibile abilitare **Profilatura interazione tra livelli**, che fornisce informazioni aggiuntive sui tempi di esecuzione delle chiamate ADO.NET sincrone nelle funzioni di applicazioni multilivello che comunicano con uno o più database. È possibile raccogliere dati dell’interazione tra livelli con qualsiasi metodo di profilatura. Per altre informazioni sulla profilatura dell'interazione tra livelli, vedere [Visualizzazione Interazioni tra livelli](https://msdn.microsoft.com/library/azure/dd557764.aspx).
+* È inoltre possibile abilitare **Profilatura interazione tra livelli**, che fornisce informazioni aggiuntive sui tempi di esecuzione delle chiamate ADO.NET sincrone nelle funzioni di applicazioni multilivello che comunicano con uno o più database. È possibile raccogliere dati dell’interazione tra livelli con qualsiasi metodo di profilatura. Per altre informazioni sulla profilatura dell'interazione tra livelli, vedere [Visualizzazione Interazioni tra livelli](../profiling/tier-interactions-view.md).
 
 ## <a name="configuring-profiling-settings"></a>Configurazione delle impostazioni di profilatura
 La figura seguente illustra come configurare le impostazioni di profilatura dalla finestra di dialogo Pubblica l'applicazione Azure.
@@ -102,7 +102,7 @@ Viene creata una sessione di profilatura per ogni istanza di un ruolo nel serviz
 3. Per visualizzare i report di profilatura per un'istanza, scegliere il ruolo nel servizio, aprire il menu di scelta rapida per un'istanza specifica e scegliere **Visualizza report di profilatura**.
 
     Il report, un file con estensione vsp, viene ora scaricato da Azure e lo stato del download viene visualizzato nel log attività di Azure. Al termine del download, il report sulla profilatura viene visualizzato in una scheda dell'editor per Visual Studio con il nome <Nome ruolo\>*<Numero istanza\>*<identificatore\>.vsp. Vengono visualizzati i dati di riepilogo per il report.
-4. Per visualizzare viste diverse del report, nell'elenco Vista corrente, scegliere il tipo di visualizzazione che si desidera. Per altre informazioni, vedere [Visualizzazioni dei rapporti degli strumenti di profilatura](https://msdn.microsoft.com/library/azure/bb385755.aspx).
+4. Per visualizzare viste diverse del report, nell'elenco Vista corrente, scegliere il tipo di visualizzazione che si desidera. Per altre informazioni, vedere [Visualizzazioni dei rapporti degli strumenti di profilatura](../profiling/performance-report-views.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 [Debug di Servizi cloud](vs-azure-tools-debug-cloud-services-virtual-machines.md)

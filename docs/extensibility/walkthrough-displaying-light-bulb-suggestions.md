@@ -8,21 +8,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 153eda065b9a6e845a39c35aaae34bbe1745f7a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86412b82b291ee395b35d654d3cde6d326e956f0
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904993"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508951"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Procedura dettagliata: visualizzare i suggerimenti della lampadina
 Le lampadine sono icone nell'editor di Visual Studio che si espandono per visualizzare un set di azioni, ad esempio correzioni per i problemi identificati dagli analizzatori di codice predefiniti o dal refactoring del codice.
 
  Negli editor di Visual C# e Visual Basic è anche possibile usare l'.NET Compiler Platform ("Roslyn") per scrivere e creare pacchetti di analizzatori di codice personalizzati con azioni che visualizzano automaticamente le lampadine. Per altre informazioni, vedere:
 
-- [Procedura: scrivere una correzione del codice e di diagnostica C#](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)
+- [Procedura: scrivere una correzione del codice e di diagnostica C#](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)
 
-- [Procedura: scrivere un Visual Basic di diagnostica e correzione del codice](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)
+- [Procedura: scrivere un Visual Basic di diagnostica e correzione del codice](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix.md)
 
   Altri linguaggi come C++ forniscono anche lampadine per alcune azioni rapide, ad esempio, un suggerimento per creare un'implementazione Stub della funzione.
 

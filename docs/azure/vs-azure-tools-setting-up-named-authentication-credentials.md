@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 57841baaf147c2aae02ac89a8401c46d3bd64ca3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42d1f394cb4e65a3794e3e869f182ba81237eeef
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911676"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508392"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Configurare le credenziali di autenticazione denominate
 
@@ -33,7 +33,7 @@ In Esplora server fare clic con il pulsante destro del mouse sul nodo **Azure** 
 - Scegliere una sottoscrizione attiva e selezionare **Modifica** per aprire la finestra di dialogo in cui è possibile modificare una sottoscrizione esistente per l'uso in autenticazione.
 - Selezionare **Nuovo** per aprire la finestra di dialogo **Nuova sottoscrizione** e inserire le informazioni richieste. Per caricare il certificato nel servizio cloud indicato nella finestra di dialogo, accedere al portale di Azure, cercare il servizio cloud, selezionare **Impostazioni > Certificati di gestione**, selezionare **Carica** e specificare il percorso al file `.cer`.
 
-Se si vuole creare un certificato, vedere le istruzioni contenute in [Creare e caricare un certificato di gestione per Azure](https://msdn.microsoft.com/library/windowsazure/gg551722.aspx) e quindi caricare manualmente il certificato nel [portale di Azure](https://portal.azure.com/).
+Se si vuole creare un certificato, vedere le istruzioni contenute in [Creare e caricare un certificato di gestione per Azure](/azure/cloud-services/cloud-services-certs-create) e quindi caricare manualmente il certificato nel [portale di Azure](https://portal.azure.com/).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: e824951556124f080f14cdd9f440037decf5146f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a53db2d7cb73fbbb8ea694386dbada3186957ee
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815136"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508977"
 ---
 # <a name="using-net-4x-in-unity"></a>Uso di .NET 4.x in Unity
 
@@ -233,7 +233,7 @@ Questi suggerimenti possono essere utili per iniziare a usare il modello TAP in 
 * Le funzioni asincrone che restituiscono un'attività devono avere il suffisso **"Async"** aggiunto ai relativi nomi. Il suffisso "Async" consente di indicare che una funzione deve sempre essere attesa.
 * Usare solo il tipo restituito `async void` per le funzioni che attivano funzioni asincrone dal codice sincrono tradizionale. Tali funzioni non possono essere attese e non devono avere il suffisso "Async" nei relativi nomi.
 * Unity usa UnitySynchronizationContext per assicurarsi che le funzioni asincrone vengano eseguite sul thread principale per impostazione predefinita. L'API di Unity non è accessibile all'esterno del thread principale.
-* È possibile eseguire attività su thread in background con metodi quali [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) e [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx) . Questa tecnica è utile per l'offload delle operazioni onerose dal thread principale per migliorare le prestazioni. Tuttavia, l'uso di thread in background può causare problemi di cui è difficile eseguire il debug, ad esempio [situazioni di race condition](https://wikipedia.org/wiki/Race_condition).
+* È possibile eseguire attività su thread in background con metodi quali [`Task.Run`](/dotnet/api/system.threading.tasks.task.run) e [`Task.ConfigureAwait(false)`](/dotnet/api/system.threading.tasks.task.configureawait) . Questa tecnica è utile per l'offload delle operazioni onerose dal thread principale per migliorare le prestazioni. Tuttavia, l'uso di thread in background può causare problemi di cui è difficile eseguire il debug, ad esempio [situazioni di race condition](https://wikipedia.org/wiki/Race_condition).
 * L'API di Unity non è accessibile all'esterno del thread principale.
 * Le attività che usano i thread non sono supportate in build WebGL Unity.
 

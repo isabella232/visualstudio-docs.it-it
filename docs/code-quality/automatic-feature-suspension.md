@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 236a95cd8d4af8da91199bf79e7c9fe3aa0d49af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 976e676cda09d50e34acb88a12551b1531595888
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769478"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508379"
 ---
 # <a name="automatic-feature-suspension"></a>Sospensione funzionalità automatica
 
@@ -40,7 +40,7 @@ In una condizione di memoria insufficiente, si verificano le azioni seguenti:
 
 ## <a name="improve-visual-studio-performance"></a>Migliorare le prestazioni di Visual Studio
 
-Per suggerimenti e consigli su come migliorare le prestazioni di Visual Studio quando si gestiscono soluzioni di grandi dimensioni o condizioni di memoria insufficiente, vedere [considerazioni sulle prestazioni per soluzioni di grandi dimensioni](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Per suggerimenti e consigli su come migliorare le prestazioni di Visual Studio quando si gestiscono soluzioni di grandi dimensioni o condizioni di memoria insufficiente, vedere [considerazioni sulle prestazioni per soluzioni di grandi dimensioni](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md).
 
 ## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>L'analisi del codice in tempo reale è ridotta all'ambito minimo
 
@@ -69,4 +69,4 @@ Vengono inoltre cancellate le cache utilizzate per le operazioni interne di Visu
 
 - [Procedura: configurare l'ambito di analisi del codice in tempo reale per il codice gestito](./configure-live-code-analysis-scope-managed-code.md)
 - [Nozioni fondamentali di Garbage Collection](/dotnet/standard/garbage-collection/fundamentals)
-- [Considerazioni sulle prestazioni per soluzioni di grandi dimensioni](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [Considerazioni sulle prestazioni per soluzioni di grandi dimensioni](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)

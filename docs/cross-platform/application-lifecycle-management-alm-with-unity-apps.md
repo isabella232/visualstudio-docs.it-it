@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 17bdd86829da199e01a527aa382b8ed3bdfade17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be42bf1498746ce57f662f43c12ece80ac6ca9be
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232939"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509042"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps con app Unity
 
@@ -30,7 +30,7 @@ Collegamento di riferimento: [About Agile tools and Agile project management](/a
 
 Commento generale: tutte le funzionalità di pianificazione e traccia sono indipendenti dal tipo di progetto e dai linguaggi di codifica.
 
-|Feature|Supportata con Unity|Commenti aggiuntivi|
+|Funzionalità|Supportata con Unity|Commenti aggiuntivi|
 |-------------|--------------------------|-------------------------|
 |Gestione di backlog e sprint|Sì||
 |Verifica del lavoro|Sì||
@@ -44,7 +44,7 @@ Collegamento di riferimento: **[Analizzare e modellare l'architettura](../modeli
 
 Commento generale: anche se le funzionalità di progettazione sono indipendenti dal linguaggio di codifica o funzionano con i linguaggi .NET come C#, operano in base a un paradigma di applicazione tradizionale con gerarchie di oggetti e relazioni tra classi. La progettazione di un gioco in Unity prevede un paradigma completamente diverso, ossia relazioni di oggetti grafici, suoni, shader, script e così via. Per questo motivo, gli strumenti diagramma di modellazione di Visual Studio non sono particolarmente rilevanti per un intero progetto Unity. Possono eventualmente essere usati per gestire le relazioni negli script C#, che però costituiscono solo una parte dell'intero progetto.
 
-|Feature|Supportata con Unity|Commenti aggiuntivi|
+|Funzionalità|Supportata con Unity|Commenti aggiuntivi|
 |-------------|--------------------------|-------------------------|
 |Diagrammi sequenza|No||
 |Grafici delle dipendenze|No||
@@ -57,7 +57,7 @@ Commento generale: anche se le funzionalità di progettazione sono indipendenti 
 
 ## <a name="code"></a>Codice
 
-|Feature|Supportata con Unity|Commenti aggiuntivi|
+|Funzionalità|Supportata con Unity|Commenti aggiuntivi|
 |-------------|--------------------------|-------------------------|
 |[Usare controllo della versione di Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) o Azure Repos|Sì|I progetti Unity sono semplicemente una raccolta di file che possono essere inseriti nei sistemi di controllo della versione come qualsiasi altro progetto, ma con alcune considerazioni speciali descritte dopo la presente tabella.|
 |[Introduzione a Git in Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Sì|Vedere le note dopo la tabella.|
@@ -73,11 +73,11 @@ Considerazioni speciali per il controllo della versione con Unity:
 
 3. Le risorse binarie in un progetto Unity, ad esempio trame e file audio, possono richiedere una grande quantità di spazio di archiviazione. Diversi sistemi di controllo del codice sorgente, come Git, memorizzano una copia univoca di un file per ogni modifica apportata, anche se la modifica interessa solo una piccola parte del file. Ciò può causare un aumento eccessivo dell'archivio Git. Per risolvere questo problema, gli sviluppatori Unity scelgono spesso di aggiungere al repository solo le risorse finali e usare un modo diverso per mantenere una cronologia di lavoro delle risorse, ad esempio OneDrive, DropBox o git-annex. Questo approccio funziona perché tali attività in genere non richiedono il controllo della versione insieme alle modifiche del codice sorgente. In genere, gli sviluppatori impostano anche la modalità di serializzazione delle risorse dell'editor di progetto sull'opzione per forzare il testo per archiviare i file delle scene in formato testo anziché binario, in modo da consentire operazioni di unione nel controllo del codice sorgente. Per informazioni dettagliate, vedere [Editor Settings](https://docs.unity3d.com/Manual/class-EditorManager.html) (Impostazioni dell'editor) nella documentazione di Unity.
 
-## <a name="build"></a>Compilare
+## <a name="build"></a>Compilazione
 
 Collegamento di riferimento: **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
 
-|Feature|Supportata con Unity|Commenti aggiuntivi|
+|Funzionalità|Supportata con Unity|Commenti aggiuntivi|
 |-------------|--------------------------|-------------------------|
 |Team Foundation Server (TFS) locale|Possibile|I progetti Unity vengono compilati tramite l'ambiente Unity e non tramite il sistema di compilazione di Visual Studio (se si usa Visual Studio Tools per Unity, vengono compilati gli script, ma non viene prodotto un eseguibile). Poiché è possibile [compilare progetti Unity dalla riga di comando](https://docs.unity3d.com/Manual/CommandLineArguments.html) (documentazione di Unity), si può configurare un processo MSBuild in un server TFS per eseguire i comandi Unity appropriati, a condizione che Unity sia installato nello stesso computer.<br /><br /> Unity offre anche [Unity Cloud Build](https://build.cloud.unity3d.com/landing/) che monitora un repository Git o SVN ed esegue compilazioni periodiche. Al momento non funziona con TFVC o Azure DevOps Services.|
 |Server di compilazione locale collegato a Azure DevOps Services|Possibile|Date le stesse condizioni precedenti, è anche possibile indirizzare le compilazioni attivate tramite Azure DevOps Services in modo che usino un computer TFS locale. Per istruzioni, vedere [Build and release Agents](/azure/devops/pipelines/agents/agents?view=vsts) .|
@@ -87,7 +87,7 @@ Collegamento di riferimento: **[Azure Pipelines](/azure/devops/pipelines/index?v
 
 ## <a name="test"></a>Test
 
-|Feature|Supportata con Unity|Commenti aggiuntivi|
+|Funzionalità|Supportata con Unity|Commenti aggiuntivi|
 |-------------|--------------------------|-------------------------|
 |Pianificazione dei test, creazione di test case e organizzazione di gruppi di test|Sì||
 |Test manuali|Sì||
@@ -100,28 +100,28 @@ Collegamento di riferimento: **[Azure Pipelines](/azure/devops/pipelines/index?v
 
 Collegamento di riferimento: ** [migliorare la qualità del codice](../test/improve-code-quality.md)**
 
-|Feature|Supportata con Unity|Commenti aggiuntivi|
+|Funzionalità|Supportata con Unity|Commenti aggiuntivi|
 |-------------|--------------------------|-------------------------|
 |[Analizzare la qualità del codice gestito](../code-quality/code-analysis-for-managed-code-overview.md)|Sì|È possibile analizzare il codice di script C# in Visual Studio.|
-|[Ricerca del codice duplicato mediante il rilevamento del clone di codice](https://msdn.microsoft.com/library/hh205279.aspx)|Sì|È possibile analizzare il codice di script C# in Visual Studio.|
+|[Ricerca del codice duplicato mediante il rilevamento del clone di codice](/previous-versions/hh205279(v=vs.140))|Sì|È possibile analizzare il codice di script C# in Visual Studio.|
 |[Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/code-metrics-values.md)|Sì|È possibile analizzare il codice di script C# in Visual Studio.|
 |[Strumenti per le prestazioni](../profiling/performance-explorer.md)|No|Usare il [profiler di Unity](https://docs.unity3d.com/Manual/Profiler.html) (sito Web di Unity).|
-|[Analizzare i problemi relativi alla memoria .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|No|Gli Strumenti di Visual Studio non includono per il framework Mono, usato da Unity, per la profilatura. Usare il [profiler di Unity](http://docs.unity3d.com/Manual/Profiler.html) (documentazione di Unity).|
+|[Analizzare i problemi relativi alla memoria .NET Framework](../vs-2015/misc/analyze-dotnet-framework-memory-issues.md)|No|Gli Strumenti di Visual Studio non includono per il framework Mono, usato da Unity, per la profilatura. Usare il [profiler di Unity](http://docs.unity3d.com/Manual/Profiler.html) (documentazione di Unity).|
 
 ## <a name="release-management"></a>Gestione versioni
 
 Collegamento di riferimento: [Build and Release in Azure Pipelines and TFS](/azure/devops/pipelines/overview?view=vsts) (Compilazione e rilascio in Azure Pipelines e TFS)
 
-|Feature|Supportata con Unity|Commenti aggiuntivi|
+|Funzionalità|Supportata con Unity|Commenti aggiuntivi|
 |-------------|--------------------------|-------------------------|
 |Gestire i processi di rilascio|Sì||
 |Distribuzione ai server per il caricamento laterale tramite script|Sì||
-|Caricare nell'app store|Parziale|Sono disponibili estensioni che possono automatizzare questo processo per alcuni archivi applicazioni. Vedere le [estensioni per Azure DevOps Services](https://marketplace.visualstudio.com/VSTS), ad esempio l'[estensione per Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
+|Caricare nell'app store|Partial|Sono disponibili estensioni che possono automatizzare questo processo per alcuni archivi applicazioni. Vedere le [estensioni per Azure DevOps Services](https://marketplace.visualstudio.com/VSTS), ad esempio l'[estensione per Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
 ## <a name="monitor-with-hockeyapp"></a>Monitorare con HockeyApp
 
 Collegamento di riferimento: **[Monitorare con HockeyApp](https://www.hockeyapp.net/features/)**
 
-|Feature|Supportata con Unity|Commenti aggiuntivi|
+|Funzionalità|Supportata con Unity|Commenti aggiuntivi|
 |-------------|--------------------------|-------------------------|
 |Analisi degli arresti anomali, telemetria e distribuzione beta|Sì|HockeyApp risulta particolarmente utile per gestire la distribuzione beta e ottenere report sugli arresti anomali.<br /><br /> Per la telemetria di script C#, è possibile usare qualsiasi framework di analisi, a condizione che venga eseguito nella versione di .NET usata da Unity. Tuttavia, consente l'analisi solo all'interno degli script di gioco e non più in profondità nel motore di Unity. Attualmente non è disponibile un plug-in per Application Insights, ma sono disponibili plug-in per altre soluzioni di analisi, ad esempio [Unity Analytics](https://assetstore.unity.com/packages/add-ons/services/analytics/unity-analytics-28120) e [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). I servizi come Unity Analytics che riconoscono la natura di un progetto Unity forniscono naturalmente analisi più significative rispetto ai framework generici.|

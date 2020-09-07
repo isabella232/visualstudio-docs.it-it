@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b9c80ba76ba2da978c9cb475299ba0fc9e614120
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1dddc235131322a61cdb0106d866b138040d8c18
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72655141"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508197"
 ---
 # <a name="automatic-feature-suspension"></a>Sospensione funzionalità automatica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Se la memoria di sistema disponibile è inferiore a 200 MB, Visual Studio visual
 - Le cache di Visual Studio vengono scaricate.
 
 ## <a name="improve-visual-studio-performance"></a>Migliorare le prestazioni di Visual Studio
- Per suggerimenti e consigli su come migliorare le prestazioni di Visual Studio quando si gestiscono soluzioni di grandi dimensioni o condizioni di memoria insufficiente, vedere [considerazioni sulle prestazioni per soluzioni di grandi dimensioni](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+ Per suggerimenti e consigli su come migliorare le prestazioni di Visual Studio quando si gestiscono soluzioni di grandi dimensioni o condizioni di memoria insufficiente, vedere [considerazioni sulle prestazioni per soluzioni di grandi dimensioni](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md).
 
 ## <a name="full-solution-analysis-suspended"></a>Analisi completa della soluzione sospesa
  Per impostazione predefinita, l'analisi della soluzione completa è abilitata per Visual Basic e disabilitata per Visual C#. Tuttavia, in una condizione di memoria insufficiente, l'analisi della soluzione completa viene disabilitata automaticamente per Visual Basic e Visual C#, indipendentemente dalle impostazioni nella finestra di dialogo Opzioni. Tuttavia, è possibile riabilitare l'analisi completa della soluzione scegliendo il pulsante **riabilita** nella barra informazioni quando viene visualizzato, selezionando la casella di controllo **Abilita analisi della soluzione completa** nella finestra di dialogo Opzioni o riavviando Visual Studio. Nella finestra di dialogo Opzioni vengono sempre visualizzate le impostazioni di analisi della soluzione completa correnti. Per altre informazioni, vedere [procedura: abilitare e disabilitare l'analisi della soluzione completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
@@ -63,4 +63,4 @@ Vengono inoltre cancellate le cache utilizzate per le operazioni interne di Visu
 
 - [Procedura: Abilitare e disabilitare l'analisi completa della soluzione](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [Nozioni fondamentali di Garbage Collection](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
-- [Considerazioni sulle prestazioni per soluzioni di grandi dimensioni](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [Considerazioni sulle prestazioni per soluzioni di grandi dimensioni](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 1a36dc743108d2cfbf9e5405af727b79aeda4808
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8702b9814214a902a644cc5854250b600c301caa
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800476"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508444"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Esplorare e gestire le risorse di archiviazione usando Esplora server
 
@@ -126,7 +126,7 @@ Per caricare i BLOB, selezionare il pulsante **Carica BLOB** quando il contenito
 
 Se si usa Diagnostica di Azure per registrare dati dall'applicazione di Azure e i log sono stati trasferiti nell'account di archiviazione, vengono visualizzati i contenitori che Azure ha creato per questi log. Visualizzare questi log in Esplora server è un modo semplice per identificare i problemi relativi all'applicazione, soprattutto se è stata distribuita in Azure.
 
-Per altre informazioni su Diagnostica di Azure, vedere [Raccogliere dati di registrazione usando Diagnostica di Azure](https://msdn.microsoft.com/library/azure/gg433048.aspx).
+Per altre informazioni su Diagnostica di Azure, vedere [Raccogliere dati di registrazione usando Diagnostica di Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="to-get-the-url-for-a-blob"></a>Per ottenere l'URL per un BLOB
 
@@ -275,7 +275,7 @@ Il nuovo account di archiviazione viene visualizzato nell'elenco **Archiviazione
 
    * Nome dell'account di archiviazione esistente da collegare.
    * Chiave per l'account di archiviazione selezionato. Questo valore viene in genere immesso automaticamente quando si seleziona un account di archiviazione. Per memorizzare la chiave dell'account di archiviazione in Visual Studio, selezionare la casella di controllo **Memorizza chiave dell'account**.
-   * Protocollo da usare per connettersi all'account di archiviazione, ad esempio HTTP, HTTPS o un endpoint personalizzato. Per altre informazioni sugli endpoint personalizzati, vedere [Come configurare le stringhe di connessione](https://msdn.microsoft.com/library/azure/ee758697.aspx).
+   * Protocollo da usare per connettersi all'account di archiviazione, ad esempio HTTP, HTTPS o un endpoint personalizzato. Per altre informazioni sugli endpoint personalizzati, vedere [Come configurare le stringhe di connessione](/azure/storage/common/storage-configure-connection-string).
 
 ### <a name="to-view-the-secondary-endpoints"></a>Per visualizzare gli endpoint secondari
 

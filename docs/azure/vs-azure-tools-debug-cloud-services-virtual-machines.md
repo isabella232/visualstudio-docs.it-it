@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 68b64b3097d2b26d30593ac63de5e531d6cc7736
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b6d001a8764d3519f0584de88a55a000447054
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800489"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508483"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debug di un servizio cloud o di una macchina virtuale di Azure in Visual Studio
 
@@ -75,7 +75,7 @@ Se si abilita il debug remoto per un servizio cloud, esso non produce una riduzi
 
     ![Collega debugger](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746719.gif)
 
-3. Dopo che il debugger si connette a un'istanza, eseguire il debug come di consueto. Il debugger si connette automaticamente al processo host appropriato per il ruolo. In base al ruolo, il debugger si collega a w3wp.exe, WaWorkerHost.exe o WaIISHost.exe. Per verificare il processo a cui è collegato il debugger, espandere il nodo dell'istanza in Esplora server. Vedere [Architettura del ruolo di Azure](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/) per altre informazioni sui processi di Azure.
+3. Dopo che il debugger si connette a un'istanza, eseguire il debug come di consueto. Il debugger si connette automaticamente al processo host appropriato per il ruolo. In base al ruolo, il debugger si collega a w3wp.exe, WaWorkerHost.exe o WaIISHost.exe. Per verificare il processo a cui è collegato il debugger, espandere il nodo dell'istanza in Esplora server. Vedere [Architettura del ruolo di Azure](/archive/blogs/kwill/windows-azure-role-architecture) per altre informazioni sui processi di Azure.
 
     ![Finestra di dialogo Seleziona tipo di codice](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
@@ -128,7 +128,7 @@ Da Azure SDK 2.3, il debug remoto presenta le limitazioni seguenti:
 
     ![Finestra di dialogo Seleziona tipo di codice](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-5. Scegliere i processi di cui si vuole eseguire il debug nella macchina virtuale e quindi selezionare **Connetti**. Ad esempio, è possibile scegliere il processo w3wp.exe se si desidera eseguire il debug di un'applicazione Web nella macchina virtuale. Per altre informazioni, vedere [Debug di uno o più processi in Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) e [Architettura del ruolo di Azure](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/).
+5. Scegliere i processi di cui si vuole eseguire il debug nella macchina virtuale e quindi selezionare **Connetti**. Ad esempio, è possibile scegliere il processo w3wp.exe se si desidera eseguire il debug di un'applicazione Web nella macchina virtuale. Per altre informazioni, vedere [Debug di uno o più processi in Visual Studio](../debugger/debug-multiple-processes.md) e [Architettura del ruolo di Azure](/archive/blogs/kwill/windows-azure-role-architecture).
 
 ## <a name="create-a-web-project-and-a-virtual-machine-for-debugging"></a>Creare un progetto Web e una macchina virtuale per il debug
 
@@ -167,7 +167,7 @@ I progetti ASP.NET di Visual Studio offrono un'opzione per creare una macchina v
 
     ![Finestra Log attività di Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. Pubblicare il progetto come descritto in [Procedura: Distribuire un progetto Web tramite la pubblicazione con un clic in Visual Studio](https://msdn.microsoft.com/library/dd465337.aspx). Poiché si intende eseguire il debug nella macchina virtuale, nella pagina **Impostazioni** della configurazione guidata **Pubblica sito Web** selezionare **Debug** come configurazione. Ciò assicura che i simboli del codice siano disponibili durante il debug.
+6. Pubblicare il progetto come descritto in [Procedura: Distribuire un progetto Web tramite la pubblicazione con un clic in Visual Studio](/previous-versions/aspnet/dd465337(v=vs.110)). Poiché si intende eseguire il debug nella macchina virtuale, nella pagina **Impostazioni** della configurazione guidata **Pubblica sito Web** selezionare **Debug** come configurazione. Ciò assicura che i simboli del codice siano disponibili durante il debug.
 
     ![Impostazioni di pubblicazione](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
@@ -183,7 +183,7 @@ I progetti ASP.NET di Visual Studio offrono un'opzione per creare una macchina v
 
     ![Finestra di dialogo Seleziona tipo di codice](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-10. Scegliere i processi di cui si vuole eseguire il debug nella macchina virtuale e quindi selezionare **Connetti**. Ad esempio, è possibile scegliere il processo w3wp.exe se si desidera eseguire il debug di un'applicazione Web nella macchina virtuale. Per altre informazioni, vedere [Debug di uno o più processi in Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) .
+10. Scegliere i processi di cui si vuole eseguire il debug nella macchina virtuale e quindi selezionare **Connetti**. Ad esempio, è possibile scegliere il processo w3wp.exe se si desidera eseguire il debug di un'applicazione Web nella macchina virtuale. Per altre informazioni, vedere [Debug di uno o più processi in Visual Studio](../debugger/debug-multiple-processes.md) .
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 6f05f97155427d75b88bb509a6bfb09644d8c686
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 960bd86a1e0993e4d2c57514a29ceecca34cca3d
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250846"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508509"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configurare un ruolo per un servizio cloud di Azure con Visual Studio
 Un servizio cloud di Azure può includere uno o più ruoli di lavoro o ruoli Web. Per ogni ruolo è necessario definire la modalità di configurazione e configurare la modalità di esecuzione. Per altre informazioni sui ruoli nei servizi cloud, vedere il video [Introduzione ai servizi cloud di Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -140,7 +140,7 @@ La procedura seguente illustra come accedere a una stringa di connessione a live
     ```
 
 ## <a name="add-custom-settings-to-use-in-your-azure-cloud-service"></a>Aggiungere impostazioni personalizzate da usare nel servizio cloud di Azure
-Le impostazioni personalizzate nel file di configurazione del servizio consentono di aggiungere un nome e un valore per una stringa per una configurazione del servizio specifica. È possibile scegliere di usare questa impostazione per configurare una funzionalità nel servizio cloud leggendo il valore dell'impostazione e usando questo valore per controllare la logica nel codice. È possibile cambiare questi valori della configurazione del servizio senza dovere ricompilare il pacchetto del servizio o quando il servizio cloud è in esecuzione. Il codice può cercare notifiche in caso di modifiche di un'impostazione. Vedere l' [Evento RoleEnvironment.Changing](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.changing.aspx).
+Le impostazioni personalizzate nel file di configurazione del servizio consentono di aggiungere un nome e un valore per una stringa per una configurazione del servizio specifica. È possibile scegliere di usare questa impostazione per configurare una funzionalità nel servizio cloud leggendo il valore dell'impostazione e usando questo valore per controllare la logica nel codice. È possibile cambiare questi valori della configurazione del servizio senza dovere ricompilare il pacchetto del servizio o quando il servizio cloud è in esecuzione. Il codice può cercare notifiche in caso di modifiche di un'impostazione. Vedere l' [Evento RoleEnvironment.Changing](/previous-versions/azure/reference/ee758134(v=azure.100)).
 
 È possibile aggiungere, rimuovere o modificare impostazioni personalizzate per le configurazioni del servizio. Potrebbero essere necessari diversi valori per queste stringhe per configurazioni del servizio diverse.
 
@@ -269,4 +269,4 @@ Per visualizzare il file creato dal codice nella sezione precedente, seguire que
 1. Nella finestra di Esplora risorse visualizzata, immettere "MyLocalStorageTest.txt" nella casella di testo **Cerca** e premere **Invio** per avviare la ricerca.
 
 ## <a name="next-steps"></a>Passaggi successivi
-Per altre informazioni sui progetti Azure in Visual Studio, vedere [Configurazione di un progetto Azure](vs-azure-tools-configuring-an-azure-project.md). Per altre informazioni sullo schema del servizio cloud, vedere [Guida di riferimento agli schemi](https://msdn.microsoft.com/library/azure/dd179398).
+Per altre informazioni sui progetti Azure in Visual Studio, vedere [Configurazione di un progetto Azure](vs-azure-tools-configuring-an-azure-project.md). Per altre informazioni sullo schema del servizio cloud, vedere [Guida di riferimento agli schemi](/previous-versions/azure/dd179398(v=azure.100)).

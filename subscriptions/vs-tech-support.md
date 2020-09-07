@@ -7,12 +7,12 @@ ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 09/02/2020
 ms.topic: how-to
 description: Informazioni su come attivare il vantaggio Supporto tecnico incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 3081836b94fbc5fdda277d694086acc18db6eb44
-ms.sourcegitcommit: 1d74273a50ede5a90d9d64372d93aad357daef42
+ms.openlocfilehash: ba4a80f604116a10901d98229980f2732956c0df
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89365846"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508938"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivare e usare il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 Il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio consente di risolvere problemi in garanzia in **ambienti non di produzione** per i prodotti che sono ancora nella fase di supporto "Mainstream" del [ciclo di vita del supporto](https://support.microsoft.com/lifecycle/search). Le sottoscrizioni cloud standard e annuali di Visual Studio Enterprise ricevono quattro eventi imprevisti, mentre le sottoscrizioni cloud standard e annuali di Visual Studio Professional ne ricevono due, per un massimo di 1 anno dall'attivazione del vantaggio. L'attivazione del vantaggio deve avvenire mentre la sottoscrizione è corrente.
@@ -33,7 +33,13 @@ I prodotti non per sviluppatori (ad esempio SQL, Windows, SharePoint) scaricati 
 Descrizioni del livello di prodotto: espandere **piani di supporto non disponibili**. Se non è **possibile utilizzare il piano di supporto per il supporto per il prodotto specificato (codice: 8)**, non è possibile utilizzare il contratto di supporto per la versione del prodotto selezionata.
 
 > [!IMPORTANT]
-> Gli interventi di supporto sono disponibili per il supporto per la correzione delle interruzioni.  Non possono essere usati per assistenza per problemi di codifica/sviluppo che coinvolgono Microsoft teams, Microsoft Office, Microsoft SharePoint o Microsoft Outlook
+> Gli interventi di supporto sono disponibili per il supporto per la correzione delle interruzioni.  Non possono essere usati per assistenza per problemi di codifica/sviluppo che coinvolgono i prodotti seguenti:
+> - Microsoft Teams
+> - Microsoft Office
+> - Microsoft SharePoint
+> - Microsoft Exchange
+> - Microsoft Graph
+> - Microsoft Outlook
 
 ## <a name="how-to-activate-the-benefit"></a>Come attivare il vantaggio
 1. Passare a <https://my.visualstudio.com/Benefits>, scorrere verso il basso fino alla sezione Supporto e nel riquadro Supporto tecnico fare clic su **Chat to activate** (Chatta per attivare).
@@ -121,7 +127,7 @@ Per usare il vantaggio supporto tecnico della sottoscrizione di Visual Studio pe
 | Visual Studio Professional con GitHub Enterprise | VL                                     | 2 eventi imprevisti                                                          |Sì         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 2 eventi imprevisti                                             |  Sì         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 2 eventi imprevisti                                               | Sì         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |ND|
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 ||
 
 <sup>1</sup> *include: Imagine Premium, BizSpark. Esclude: not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ETP, MCT software & Services Developer, Imagine standard, Most Valuable Professional (MVP), Regional Director (RD), MCT software & Services.*

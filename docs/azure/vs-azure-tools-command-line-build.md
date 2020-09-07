@@ -9,17 +9,17 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: 179737f7a4a55fd6111338363ad6668a43689205
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ed5e9635cbe088773336a29bc9a8853d7e0a5db
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280765"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508470"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>Compilazione di progetti Azure dalla riga di comando
 Tramite Microsoft Build Engine (MSBuild) è possibile compilare prodotti in ambienti lab di compilazione in cui Visual Studio non è installato. MSBuild usa per i file di progetto il formato XML, che è estendibile e completamente supportato da Microsoft. Usando il formato file MSBuild è possibile indicare quali elementi devono essere compilati per una o più piattaforme o configurazioni.
 
-È anche possibile eseguire MSBuild alla riga dei comandi, come illustrato in questo argomento. Impostando le proprietà nella riga dei comandi, è possibile compilare configurazioni specifiche di un progetto. Analogamente, è possibile definire le destinazioni compilate dal comando di MSBuild. Per altre informazioni sui parametri della riga di comando e su MSBuild, vedere [Riferimenti alla riga di comando di MSBuild](https://msdn.microsoft.com/library/ms164311.aspx).
+È anche possibile eseguire MSBuild alla riga dei comandi, come illustrato in questo argomento. Impostando le proprietà nella riga dei comandi, è possibile compilare configurazioni specifiche di un progetto. Analogamente, è possibile definire le destinazioni compilate dal comando di MSBuild. Per altre informazioni sui parametri della riga di comando e su MSBuild, vedere [Riferimenti alla riga di comando di MSBuild](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="msbuild-parameters"></a>Parametri MSBuild
 Il modo più semplice per creare un pacchetto consiste nell'eseguire MSBuild con l'opzione `/t:Publish` . Per impostazione predefinita, questo comando crea una directory in relazione alla cartella radice del progetto, ad esempio `<ProjectDirectory>\bin\Configuration\app.publish\`. Quando si compila un progetto Azure, vengono generati due file, il file del pacchetto e il file di configurazione di accompagnamento:

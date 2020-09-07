@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e0f589ae3c6daa48a9bea6d8a0b561d7b8de337
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 19e1a968af60b76d07e24af1d86c74e427a3cd52
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801594"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509055"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Sviluppo per dispositivi mobili multipiattaforma in Visual Studio
 
@@ -31,7 +31,7 @@ Per compilare un gioco o un'app grafica immersiva, installare Visual Studio Tool
 
 Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per Android, iOS e Windows, condividendo il codice e anche l'interfaccia utente.
 
-|**Scopri di più**|
+|**Altre informazioni**|
 |--------------------|
 |[Installare Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Informazioni su Xamarin in Visual Studio](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
@@ -64,7 +64,7 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
  È possibile condividere il codice usando un progetto condiviso, un progetto della Libreria di classi portabile o entrambi. Alcuni codici potrebbero essere più adatti a un progetto condiviso, mentre altri a un progetto della Libreria di classi portabile.
 
-|**Scopri di più**|
+|**Altre informazioni**|
 |--------------------|
 |[Opzioni di condivisione del codice](/xamarin/cross-platform/app-fundamentals/code-sharing/) (Xamarin) |
 |[Opzioni di condivisione del codice con .NET](/dotnet/standard/cross-platform/) |
@@ -77,12 +77,11 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
  Iniziare con un modello di progetto per un'app della piattaforma UWP (Universal Windows Platform). Progettare visivamente le pagine e quindi aprirle in una finestra di anteprima per verificare come vengono visualizzate per vari tipi di dispositivi. Se l'aspetto di una pagina su un dispositivo non è di proprio gradimento, è possibile ottimizzare la pagina in modo da adattarla alle dimensioni dello schermo, alla risoluzione o ai vari orientamenti, ad esempio la modalità orizzontale o verticale. Tutto ciò è possibile grazie alle intuitive finestre degli strumenti e a opzioni di menu facilmente accessibili in Visual Studio. Quando si è pronti a eseguire l'app e il codice un'istruzione alla volta, sono disponibili tutti gli emulatori e i simulatori per diversi tipi di dispositivi, riuniti in un unico elenco a discesa nella barra degli strumenti **Standard**.
 
-|**Scopri di più**|
+|**Altre informazioni**|
 |--------------------|
 |[Introduzione alla piattaforma UWP (Universal Windows Platform)](/windows/uwp/get-started/universal-application-platform-guide)|
 |[Creare la prima app](/windows/uwp/get-started/your-first-app)|
 |[Sviluppare app per la piattaforma UWP (Universal Windows Platform)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
-|[Migrare le app alla piattaforma UWP (Universal Windows Platform)](https://msdn.microsoft.com/library/mt148501.aspx)|
 
 ::: moniker range="vs-2017"
 
@@ -106,7 +105,7 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
  I modelli di progetto per la creazione di app della piattaforma UWP (Universal Windows Platform) sono ancora disponibili in Visual Studio, quindi è possibile usarli se si intende destinare l'app solo ai dispositivi Windows. Se si vuole che l'app sia successivamente eseguibile anche in Android e iOS, è sempre possibile convertire il codice in un progetto Cordova.
 
-|**Scopri di più**|
+|**Altre informazioni**|
 |--------------------|
 |[Installare Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Introduzione a Strumenti di Visual Studio per Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/)|
@@ -138,7 +137,7 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
  Quando si scrive il codice in queste librerie, è possibile usare IntelliSense per esplorare le API native delle piattaforme Android e Windows. Questi progetti di libreria sono completamente integrati con il debugger di Visual Studio in modo da poter impostare punti di interruzione, eseguire il codice seguendo un'istruzione alla volta nonché individuare e risolvere i problemi mediante tutte le funzionalità avanzate del debugger.
 
-|**Scopri di più**|
+|**Altre informazioni**|
 |--------------------|
 |[Scarica Visual Studio](https://visualstudio.microsoft.com/downloads/) (VisualStudio.com)|
 |[Installare lo sviluppo di app per dispositivi mobili multipiattaforma con C++](/cpp/cross-platform/install-visual-cpp-for-cross-platform-mobile-development)|
@@ -157,7 +156,7 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
  Con Visual Studio Tools per Unity (VSTU) è possibile usare Visual Studio per scrivere script di giochi ed editor in C# e quindi usarne il potente debugger per individuare e correggere gli errori. La versione più recente di VSTU include il supporto di Unity 2018.1 e la colorazione della sintassi per il linguaggio ShaderLab di Unity, una migliore sincronizzazione con Unity, funzionalità di debug più complete e un miglioramento nella generazione del codice per la procedura guidata MonoBehavior. VSTU integra anche i file di progetto Unity, i messaggi della console e la possibilità di iniziare il gioco in Visual Studio evitando in tal modo di dover passare dall'editor di Unity a Visual Studio e viceversa durante la scrittura del codice.
 
-|**Scopri di più**|
+|**Altre informazioni**|
 |--------------------|
 |[Altre informazioni sulla compilazione di giochi Unity con Visual Studio](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[Altre informazioni su Visual Studio Tools per Unity](../cross-platform/visual-studio-tools-for-unity.md) |
