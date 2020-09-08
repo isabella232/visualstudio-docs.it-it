@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: 0ad3a0135b8e5ca955d9dad2301933133bbd05e7
-  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+  ms.openlocfilehash: 82824b8a2221e710f3f6c8402ae18b7f457c4fe8
+  ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "88639328"
+  ms.lasthandoff: 09/07/2020
+  ms.locfileid: "89509744"
 landingContent:
 - title: Distribuire nel Servizio app di Azure
   linkLists:
@@ -50,17 +50,17 @@ landingContent:
   - linkListType: overview
     links:
     - text: Sviluppo di contenitori
-      url: /visualstudio/containers
+      url: ../containers/index.yml
     - text: Strumenti contenitore in Visual Studio
-      url: /visualstudio/containers/overview
+      url: ../containers/overview.md
     - text: Strumenti di Kubernetes
-      url: /visualstudio/containers/tutorial-kubernetes-tools
+      url: ../containers/tutorial-kubernetes-tools.md
 - title: Eseguire il debug dei servizi di Azure e analizzare le prestazioni
   linkLists:
   - linkListType: tutorial
     links:
     - text: Eseguire il debug di ASP.NET Core in IIS in Azure
-      url: /visualstudio/debugger/remote-debugging-azure
+      url: ../debugger/remote-debugging-azure.md
     - text: Debug di un servizio cloud in Azure
       url: vs-azure-tools-intellitrace-debug-published-cloud-services.md
     - text: Eseguire il debug di un'app in esecuzione in una macchina virtuale
@@ -81,7 +81,7 @@ landingContent:
       url: /azure/key-vault/vs-key-vault-add-connected-service
     - text: Servizio Azure SignalR
       url: azure-signalr-add-connected-service.md
-    - text: database SQL di Azure
+    - text: Database SQL di Azure
       url: azure-sql-database-add-connected-service.md
     - text: Archiviazione di Azure
       url: vs-azure-tools-connected-services-storage.md
