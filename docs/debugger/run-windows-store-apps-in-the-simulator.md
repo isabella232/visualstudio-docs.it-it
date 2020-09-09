@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c208e435e63891c71fe47ebd64c5fe1307e0c82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b46abc4d22ddfdc551669d3bcd4cba5acf7cce4
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348141"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599524"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Eseguire app UWP nel simulatore
 
@@ -115,7 +115,7 @@ Il pulsante **Rotazione emulazione tocco** imposta la modalità di interazione s
 
 ## <a name="simulate-network-connection-properties"></a><a name="BKMK_Simulate_network_connection_properties"></a> Simulare le proprietà di connessione di rete
 
-È possibile consentire agli utenti dell'app di gestire il costo delle connessioni di rete a consumo mantenendo il controllo sulle modifiche dello stato relative ai costi della connessione di rete o del piano dati e consentendo all'app di usare queste informazioni per evitare di dover sostenere costi aggiuntivi per il roaming o il superamento di un limite di trasferimento dati specificato. Le API [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) consentono di rispondere agli eventi [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) e [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) che consentono l'accesso. Vedere [Guida introduttiva: Gestione dei vincoli di costo per le reti a consumo](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
+È possibile consentire agli utenti dell'app di gestire il costo delle connessioni di rete a consumo mantenendo il controllo sulle modifiche dello stato relative ai costi della connessione di rete o del piano dati e consentendo all'app di usare queste informazioni per evitare di dover sostenere costi aggiuntivi per il roaming o il superamento di un limite di trasferimento dati specificato. Le API [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) consentono di rispondere agli eventi [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) e [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) che consentono l'accesso. Vedere [Guida introduttiva: Gestione dei vincoli di costo per le reti a consumo](/previous-versions/windows/apps/hh750310(v=win.10)).
 
 Per eseguire il debug o il test del codice in grado di rilevare i costi di rete, il simulatore può simulare le proprietà di una rete esposte tramite l'oggetto [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) restituito da [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
 
@@ -139,7 +139,7 @@ Per simulare le proprietà di rete:
 
 Per ulteriori informazioni sulla gestione delle connessioni di rete, vedere:
 
-[Guida introduttiva: Gestione dei vincoli di costo per le reti a consumo](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+[Guida introduttiva: Gestione dei vincoli di costo per le reti a consumo](/previous-versions/windows/apps/hh750310(v=win.10))
 
 [Esempio di informazioni di rete](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 
@@ -159,6 +159,6 @@ Per ulteriori informazioni sulla gestione delle connessioni di rete, vedere:
 
 È possibile arrestare il simulatore premendo **CTRL + ALT + F4**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Eseguire app da Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

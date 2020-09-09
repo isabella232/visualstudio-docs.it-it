@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 83b4bea32f642cbf48acb01831bd4bccc2bb15a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e401dd55588228a98242e08d16e227b10b162418
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348938"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600160"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Come attivare eventi di sospensione, ripresa e background durante il debug di app UWP in Visual Studio
 
@@ -48,7 +48,7 @@ Per ulteriori informazioni sulla gestione della durata del processo e sulle atti
      **Sospendi e termina** chiude l'app e termina la sessione di debug.
 
 ## <a name="trigger-background-tasks"></a><a name="BKMK_Trigger_background_tasks"></a> Attivare attività in background
- Qualsiasi app può registrare un'attività in background per rispondere a determinati eventi di sistema, anche quando l'app non è in esecuzione. Le attività in background non possono eseguire codice che aggiorna direttamente l'interfaccia utente. Visualizzano invece informazioni all'utente con aggiornamenti di riquadri, aggiornamenti di notifiche e notifiche di tipo avviso popup. Per altre informazioni, vedere [supporto dell'app con attività in background](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e).
+ Qualsiasi app può registrare un'attività in background per rispondere a determinati eventi di sistema, anche quando l'app non è in esecuzione. Le attività in background non possono eseguire codice che aggiorna direttamente l'interfaccia utente. Visualizzano invece informazioni all'utente con aggiornamenti di riquadri, aggiornamenti di notifiche e notifiche di tipo avviso popup. Per altre informazioni, vedere [supporto dell'app con attività in background](/previous-versions/windows/apps/hh977046(v=win.10)).
 
  Puoi attivare eventi che avviano attività in background per l'app dal debugger.
 
@@ -109,8 +109,8 @@ Per ulteriori informazioni sulla gestione della durata del processo e sulle atti
 
 4. Scegli il log **Diagnostica** .
 
-## <a name="see-also"></a>Vedere anche
-- [Test delle app UWP con Visual Studio](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio)
+## <a name="see-also"></a>Vedi anche
+- [Test delle app UWP con Visual Studio](../test/unit-test-your-code.md)
 - [Eseguire il debug di app in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Ciclo di vita dell'applicazione](/windows/uwp/launch-resume/app-lifecycle)
 - [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)

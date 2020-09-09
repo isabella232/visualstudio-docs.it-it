@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 841b73bbb0c1f226e4a31a812bf8745bda1f118c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 796d8aa15aa3612b140917ccfa9db7663c0b0ad3
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507872"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599464"
 ---
 # <a name="code-metrics-values"></a>Valori della metrica del codice
 
@@ -34,13 +34,13 @@ Per informazioni su come generare dati di metrica del codice in Visual Studio, v
 
 L'elenco seguente mostra i risultati della metrica del codice calcolati da Visual Studio:
 
-- **Indice di gestibilità** : calcola un valore di indice compreso tra 0 e 100 che rappresenta la semplicità relativa di gestione del codice. Un valore elevato significa una migliore gestibilità. È possibile usare le classificazioni con codifica a colori per identificare rapidamente le aree problematiche nel codice. Una classificazione verde è compresa tra 20 e 100 e indica che il codice ha una corretta gestibilità. Una classificazione gialla è compresa tra 10 e 19 e indica che il codice è moderatamente gestibile. Una classificazione rossa è una classificazione compresa tra 0 e 9 e indica una bassa gestibilità. Per ulteriori informazioni, vedere il post di Blog relativo all' [intervallo di indici di manutenzione e al significato](https://blogs.msdn.microsoft.com/codeanalysis/2007/11/20/maintainability-index-range-and-meaning/) .
+- **Indice di gestibilità** : calcola un valore di indice compreso tra 0 e 100 che rappresenta la semplicità relativa di gestione del codice. Un valore elevato significa una migliore gestibilità. È possibile usare le classificazioni con codifica a colori per identificare rapidamente le aree problematiche nel codice. Una classificazione verde è compresa tra 20 e 100 e indica che il codice ha una corretta gestibilità. Una classificazione gialla è compresa tra 10 e 19 e indica che il codice è moderatamente gestibile. Una classificazione rossa è una classificazione compresa tra 0 e 9 e indica una bassa gestibilità. Per ulteriori informazioni, vedere il post di Blog relativo all' [intervallo di indici di manutenzione e al significato](/archive/blogs/codeanalysis/maintainability-index-range-and-meaning) .
 
 - **Complessità ciclomatica** : misura la complessità strutturale del codice. Viene creato calcolando il numero di percorsi di codice diversi nel flusso del programma. Un programma con un flusso di controllo complesso richiede un numero maggiore di test per ottenere una code coverage efficace ed è meno gestibile. Per ulteriori informazioni, vedere la [voce Wikipedia relativa alla complessità di ciclomatica](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
 - **Depth of ereditarietà** : indica il numero di classi diverse che ereditano l'una dall'altra, tornando alla classe di base. La profondità dell'ereditarietà è simile all'accoppiamento della classe in quanto una modifica in una classe di base può influire sulle classi ereditate. Maggiore è questo numero, maggiore è l'ereditarietà e maggiore è il rischio che le modifiche della classe di base provochino una modifica di rilievo. Per la profondità dell'ereditarietà, un valore basso è buono e un valore elevato non è valido.
 
-- **Accoppiamento della classe** : misura l'accoppiamento a classi univoche tramite parametri, variabili locali, tipi restituiti, chiamate al metodo, creazioni di istanze generiche o di modello, classi base, implementazioni di interfacce, campi definiti su tipi esterni e decorazione di attributi. Una buona progettazione software impone che i tipi e i metodi abbiano una coesione elevata e un accoppiamento basso. Un accoppiamento elevato indica una progettazione difficili da riutilizzare e gestire a causa delle diverse interdipendenze di altri tipi. Per ulteriori informazioni, vedere il post di Blog relativo all' [accoppiamento della classe](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) .
+- **Accoppiamento della classe** : misura l'accoppiamento a classi univoche tramite parametri, variabili locali, tipi restituiti, chiamate al metodo, creazioni di istanze generiche o di modello, classi base, implementazioni di interfacce, campi definiti su tipi esterni e decorazione di attributi. Una buona progettazione software impone che i tipi e i metodi abbiano una coesione elevata e un accoppiamento basso. Un accoppiamento elevato indica una progettazione difficili da riutilizzare e gestire a causa delle diverse interdipendenze di altri tipi. Per ulteriori informazioni, vedere il post di Blog relativo all' [accoppiamento della classe](/archive/blogs/zainnab/code-metrics-class-coupling) .
 
 ::: moniker range=">=vs-2019"
 

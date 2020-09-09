@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a06222c86ece31b18749394cf4590eedc4822f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f110af9aab6ae2ea01137043c834d38b29c4d1f9
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536409"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600000"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Uso del Microsoft Monitoring Agent (C#, Visual Basic)
 
@@ -74,7 +74,7 @@ ms.locfileid: "85536409"
 
      **PS C: >Import-Module "C:\Programmi\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**
 
-3. [Visitare TechNet](https://technet.microsoft.com/systemcenter/default) per ottenere il contenuto della Guida più recente.
+3. [Visitare TechNet](/previous-versions/system-center/developer/cc817313(v=msdn.10)) per ottenere il contenuto della Guida più recente.
 
 #### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a> D: Ricerca per categorie configurare le autorizzazioni per il pool di applicazioni?
  **R:** Usare il comando **icacls** di Windows o Esplora risorse (o Esplora file). Ad esempio:
@@ -108,7 +108,7 @@ ms.locfileid: "85536409"
   7. Verificare che il pool di applicazioni disponga delle autorizzazioni di **lettura ed esecuzione**.
 
 ## <a name="step-2-start-monitoring-your-app"></a><a name="MonitorEvents"></a> Passaggio 2: avviare il monitoraggio dell'app
- Per avviare il monitoraggio dell'applicazione usare il comando [Start-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472749(v=sc.20)) di Windows PowerShell. Se si usa System Center 2012, vedere [Monitoraggio delle applicazioni Web con Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).
+ Per avviare il monitoraggio dell'applicazione usare il comando [Start-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472749(v=sc.20)) di Windows PowerShell. Se si usa System Center 2012, vedere [Monitoraggio delle applicazioni Web con Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465157(v=sc.12)).
 
 1. Nel server Web aprire una finestra del prompt dei comandi di **Windows PowerShell** o **Windows PowerShell ISE** come amministratore.
 
@@ -134,7 +134,7 @@ ms.locfileid: "85536409"
 
     |Nome|Descrizione|
     |-|-|
-    |*"\<appName>"*|Specificare il percorso del sito Web e il nome dell'applicazione Web in IIS. Se si preferisce, è possibile includere anche il percorso di IIS.<br /><br /> *" \<IISWebsiteName> \\<IISWebAppName \> "*<br /><br /> -oppure-<br /><br /> **"IIS: \ sites** * \\<IISWebsiteName \> \\<IISWebAppName \> "*<br /><br /> Questo percorso è disponibile in Gestione IIS. Ad esempio:<br /><br /> ![Percorso dell'app Web e del sito Web IIS](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> È anche possibile usare i comandi [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) e [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) .|
+    |*"\<appName>"*|Specificare il percorso del sito Web e il nome dell'applicazione Web in IIS. Se si preferisce, è possibile includere anche il percorso di IIS.<br /><br /> *" \<IISWebsiteName> \\<IISWebAppName \> "*<br /><br /> -oppure-<br /><br /> **"IIS: \ sites** * \\<IISWebsiteName \> \\<IISWebAppName \> "*<br /><br /> Questo percorso è disponibile in Gestione IIS. Ad esempio:<br /><br /> ![Percorso dell'app Web e del sito Web IIS](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> È anche possibile usare i comandi [Get-WebSite](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee807832(v=technet.10)) e [Get WebApplication](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee790554(v=technet.10)) .|
     |*\<monitoringMode>*|Specificare la modalità di monitoraggio:<br /><br /> <ul><li>**Monitor**: registra dettagli minimi sugli eventi relativi a eccezioni e prestazioni. Questa modalità usa il piano di raccolta predefinito.</li><li>**Trace**: registra dettagli a livello di funzione o monitora le applicazioni SharePoint 2010 e SharePoint 2013 usando il piano di raccolta specificato. In questa modalità l'esecuzione dell'applicazione potrebbe essere più lenta.<br /><br /> <ul><li>[D: Come è possibile configurare le autorizzazioni per il pool di applicazioni?](#FullPermissionsITLog)</li><li>[D: Come è possibile ottenere il maggior numero possibile di dati senza rallentare l'applicazione?](#Minimizing)</li></ul><br />     Questo esempio registra gli eventi per un'applicazione SharePoint ospitata in un sito SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" Trace "C:\Programmi\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml" "C:\IntelliTraceLogs"**</li><li>**Custom**: registra i dettagli personalizzati usando un piano di raccolta personalizzato specificato. Sarà necessario riavviare il monitoraggio se si modifica il piano di raccolta dopo l'avvio del monitoraggio.</li></ul>|
     |*"\<outputPath>"*|Specificare il percorso completo della directory per archiviare i log IntelliTrace. Assicurarsi di creare questa directory prima di iniziare il monitoraggio.|
     |*\<UInt32>*|Specificare la dimensione massima per il log IntelliTrace. La dimensione massima predefinita del log IntelliTrace è 250 MB.<br /><br /> Quando viene raggiunto il limite, le voci immesse per prime vengono sovrascritte dall'agente per fare spazio ad altre voci. Per modificare questo limite, usare l'opzione **-MaximumFileSizeInMegabytes** o modificare l'attributo `MaximumLogFileSize` nel piano di raccolta.|
@@ -229,7 +229,7 @@ Il tipo `Employee` ha i seguenti attributi: `Id`, `Name`e `HomeAddress`. Esiste 
 L'agente registra valori per `id`, `Employee.Id`, `Employee.Name` e per l'oggetto `Employee` restituito dal metodo `AlterEmployee` . Tuttavia, l'agente non registra informazioni sull'oggetto `Address` , eccetto se era Null oppure no. L'agente non registra nemmeno i dati sulle variabili locali nel metodo `AlterEmployee` , a meno che non vengano usate da altri metodi come parametri; in questo caso vengono registrate come parametri di metodo.
 
 ## <a name="step-3-save-recorded-events"></a><a name="SaveEvents"></a> Passaggio 3: salvare gli eventi registrati
- Quando si rileva un errore o un problema di prestazioni, salvare gli eventi registrati in un log IntelliTrace. L'agente crea il log solo se sono stati registrati degli eventi. Se si usa System Center 2012, vedere [Monitoraggio delle applicazioni Web con Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).
+ Quando si rileva un errore o un problema di prestazioni, salvare gli eventi registrati in un log IntelliTrace. L'agente crea il log solo se sono stati registrati degli eventi. Se si usa System Center 2012, vedere [Monitoraggio delle applicazioni Web con Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465157(v=sc.12)).
 
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Salvataggio degli eventi registrati continuando il monitoraggio
  Seguire questa procedura se si vuole creare il log IntelliTrace senza riavviare l'applicazione o arrestare il monitoraggio. L'agente continua il monitoraggio anche in caso di riavvio dell'applicazione o del server.

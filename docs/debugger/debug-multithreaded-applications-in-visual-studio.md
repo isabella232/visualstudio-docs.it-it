@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 668e95c340348eeb1fa509622aa44d99b65b6efc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b99f7b44168a451e8e927e5e0d2ca1a7f8d0bf93
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72431802"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600333"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debug di applicazioni multithreading in Visual Studio
 Un thread è una sequenza di istruzioni a cui il sistema operativo concede tempo di elaborazione. Ogni processo in esecuzione nel sistema operativo è composto da almeno un thread. I processi composti da più di un thread sono detti multithreading.
@@ -98,11 +98,11 @@ Attribuzione di un nome da visualizzare nella finestra **Thread**.
 
 Attribuzione di un nome da visualizzare nella finestra **Thread**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare i punti di interruzione](../debugger/using-breakpoints.md)
 - [Threading](/dotnet/standard/threading/index)
-- [Multithreading nei componenti](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)
+- [Multithreading nei componenti](/previous-versions/3es4b6yy(v=vs.140))
 - [Supporto del multithreading per il codice precedente](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
 - [Debug di thread e processi](../debugger/debug-threads-and-processes.md)
 - [Debug remoto](../debugger/remote-debugging.md)

@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 331cb056132a2d90a932ff250c9bdbb7e22e38af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a43ac0930c4805d18c60a18e1b48882b2fed76de
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348262"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600182"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Eseguire il debug di HTML e CSS nelle app UWP in Visual Studio
 
@@ -254,7 +254,7 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 > [!NOTE]
 > L'evidenziazione degli elementi al passaggio del mouse è supportata solo in parte nell'emulatore Windows Phone.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Eseguire il debug di app in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md)
@@ -262,4 +262,4 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 - [Tasti di scelta rapida](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
 - [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017)
 - [Debug del codice di esempio HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
-- [Supporto tecnico e accessibilità](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
+- [Supporto tecnico e accessibilità](/previous-versions/tzbxw1af(v=vs.120))

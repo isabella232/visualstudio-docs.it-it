@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fab5627f3d467c0df289969e4fee010dd3ea78b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f7b293270facbbfa0d2174121ff6a3ac736b75a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350394"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599894"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Come è possibile eseguire il debug di funzioni API Windows?
 Per eseguire il debug di una funzione API Windows con NT Symbols caricato, effettuare le operazioni seguenti.
@@ -40,7 +40,7 @@ Per eseguire il debug di una funzione API Windows con NT Symbols caricato, effet
     {,,USER32.DLL}_MessageBeep@4
     ```
 
-     Per ottenere il nome decorato, vedere [visualizzazione dei nomi decorati](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).
+     Per ottenere il nome decorato, vedere [visualizzazione dei nomi decorati](/previous-versions/5x49w699(v=vs.140)).
 
      È possibile testare il nome decorato e visualizzarlo nel codice disassembly. Durante la sospensione della funzione nel debugger di Visual Studio, fare clic con il pulsante destro del mouse sulla funzione nell'editor del codice o nella finestra stack di chiamate e scegliere **Vai a disassembly**.
 
@@ -50,6 +50,6 @@ Per eseguire il debug di una funzione API Windows con NT Symbols caricato, effet
     {,,USER32.DLL}MessageBeep
     ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md)
 - [Debug del codice nativo](../debugger/debugging-native-code.md)

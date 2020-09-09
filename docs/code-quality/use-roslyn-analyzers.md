@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac5103b15cee6e44650d9b8aef6fdf755874b2d2
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 22a82abab6b0c11ed57780ac69b4af9e1290ac2d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490287"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599980"
 ---
 # <a name="use-code-analyzers"></a>Usare gli analizzatori di codice
 
@@ -67,7 +67,7 @@ Nella tabella seguente vengono illustrate le diverse opzioni di gravità:
 | Info | `suggestion` | Le violazioni vengono visualizzate come *messaggi* nell'elenco errori e non nell'output di compilazione da riga di comando. | Il codice che causa il danneggiamento è sottolineato con un zigzag grigio e contrassegnato da una piccola casella grigia nella barra di scorrimento. |
 | Nascosto | `silent` | Non visibile all'utente. | Non visibile all'utente. Tuttavia, la diagnostica viene segnalata al motore di diagnostica IDE. |
 | Nessuno | `none` | Eliminati completamente. | Eliminati completamente. |
-| Predefinito | `default` | Corrisponde alla gravità predefinita della regola. Per determinare il valore predefinito di una regola, cercare nell'Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
+| Impostazione predefinita | `default` | Corrisponde alla gravità predefinita della regola. Per determinare il valore predefinito di una regola, cercare nell'Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
 
 La schermata seguente dell'editor del codice mostra tre violazioni diverse con livelli di gravità diversi. Si noti il colore del zigzag e il piccolo quadrato colorato nella barra di scorrimento a destra.
 
@@ -118,7 +118,7 @@ Se sono presenti più voci applicabili a un ID di regola specifico, di seguito �
 - La voce di gravità per una singola regola in base all'ID ha la precedenza sulla voce di gravità per una categoria.
 - La voce di gravità per una categoria ha la precedenza sulla voce di gravità per tutte le regole dell'analizzatore.
 
-Si consideri l'esempio EditorConfig seguente, dove [CA1822](https://docs.microsoft.com/visualstudio/code-quality/ca1822) ha la categoria "performance":
+Si consideri l'esempio EditorConfig seguente, dove [CA1822](./ca1822.md) ha la categoria "performance":
 
    ```ini
    [*.cs]

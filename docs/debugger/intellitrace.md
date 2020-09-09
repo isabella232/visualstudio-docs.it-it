@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cbe14e1bf8c3a5e010e3c9e887a208b7e045b4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 878c2481164bc87d4af5e79a0a978e822e7baafe
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536513"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600257"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace per Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -68,7 +68,7 @@ IntelliTrace consente anche di eseguire il debug di errori difficili da riprodur
 
 - Una sessione di IntelliTrace in Visual Studio 2015 Enterprise o versioni successive o versioni precedenti di Visual Studio Ultimate.
 
-- App Web ASP.NET ospitate in IIS o applicazioni SharePoint 2010 e SharePoint 2013 in esecuzione nella distribuzione quando si usa Microsoft Monitoring Agent, in modalità autonoma o con System Center 2012. Vedere [usare l'agente di raccolta autonomo IntelliTrace e il](../debugger/using-the-intellitrace-stand-alone-collector.md) [monitoraggio con Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx).
+- App Web ASP.NET ospitate in IIS o applicazioni SharePoint 2010 e SharePoint 2013 in esecuzione nella distribuzione quando si usa Microsoft Monitoring Agent, in modalità autonoma o con System Center 2012. Vedere [usare l'agente di raccolta autonomo IntelliTrace e il](../debugger/using-the-intellitrace-stand-alone-collector.md) [monitoraggio con Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12)).
 
 Di seguito sono riportati alcuni esempi sul modo in cui IntelliTrace semplifica le operazioni di debug:
 

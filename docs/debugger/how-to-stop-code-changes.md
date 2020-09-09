@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c4419349e3d83cdc02670821b213678186d933d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a62fe2b99e197cfafbf48a1a5a881fce73d89788
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348951"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599847"
 ---
 # <a name="how-to-stop-code-changes"></a>Procedura: interrompere l'applicazione di modifiche al codice
 In Modifica e continuazione è possibile scegliere di interrompere l'applicazione delle modifiche al codice.
@@ -38,6 +38,6 @@ In Modifica e continuazione è possibile scegliere di interrompere l'applicazion
 
   Se si sceglie questa opzione, non verrà completata nessuna delle modifiche del codice.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Modifica e continuazione](../debugger/edit-and-continue.md)
-- [Modifica e continuazione, Debug, finestra di dialogo Opzioni](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [Modifica e continuazione, Debug, finestra di dialogo Opzioni](./edit-and-continue.md)

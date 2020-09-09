@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9c4f0e25449b0e108ac39662ec52a0ba9abc217
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f2ac131599d6d94a2a64945e62da93bacd5e12a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460838"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599629"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Errore: debug non riuscito. Non è attivata l'autenticazione di Windows integrata
 L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a causa di un errore di autenticazione. Questo errore può verificarsi quando si tenta di eseguire un'applicazione Web o un servizio Web XML. Una causa di questo errore è la mancata attivazione dell'autenticazione di Windows integrata. Per attivarla, seguire i passaggi della procedura relativa all'attivazione dell'autenticazione integrata di Windows.
@@ -113,7 +113,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
 
 10. Chiudere la finestra **Gestione Internet Information Services (IIS)**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Autenticazione digest Microsoft](/windows/win32/secauthn/microsoft-digest-authentication)
-- [Esecuzione di applicazioni Web in Windows Vista con IIS 7,0 e Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+- [Esecuzione di applicazioni Web in Windows Vista con IIS 7,0 e Visual Studio](/previous-versions/aa964620(v=vs.140))

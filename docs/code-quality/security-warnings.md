@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1208db68f2ae65775c6e0a5b6cf4bda0fb35d8
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: a40273c3230854e4b1d1a11a3fd02de54d5df745
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509458"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599971"
 ---
 # <a name="security-warnings"></a>Avvisi di sicurezza
 
@@ -33,7 +33,7 @@ Gli avvisi di sicurezza supportano librerie e applicazioni più sicure. Questi a
 |[CA2100: Controllare la vulnerabilità della sicurezza nelle query SQL](../code-quality/ca2100.md)|Un metodo imposta la proprietà System.Data.IDbCommand.CommandText usando una stringa compilata da un argomento stringa nel metodo. La regola presuppone che l'argomento stringa contenga l'input dell'utente. Una stringa di comando SQL compilata da un input dell'utente è vulnerabile agli attacchi intrusivi nel codice SQL,|
 |[CA2109: Controllare i gestori di eventi visibili](../code-quality/ca2109.md)|È stato rilevato un metodo di gestione eventi pubblico o protetto. I metodi di gestione eventi non devono essere esposti se non assolutamente necessario.|
 |[CA2119: Impostare come sealed i metodi che soddisfano interfacce private](../code-quality/ca2119.md)|Un tipo pubblico ereditabile fornisce un'implementazione di metodo sottoponibile a override di un'interfaccia interna (Friend in Visual Basic). Per correggere una violazione di questa regola, impedire che venga eseguito l'override del metodo esternamente all'assembly.|
-|[CA2153: Evitare la gestione delle eccezioni stato danneggiato](../code-quality/ca2153.md)|Le[eccezioni in stato danneggiato (CSE, Corrupted State Exception)](https://msdn.microsoft.com/magazine/dd419661.aspx) indicano che sono presenti danni nella memoria del processo. Se si prova a intercettare tali eccezioni, invece di lasciare che il processo venga arrestato in modo anomalo, può portare a vulnerabilità di sicurezza nel caso in cui un utente malintenzionato riesca a inserire un exploit nell'area della memoria danneggiata.|
+|[CA2153: Evitare la gestione delle eccezioni stato danneggiato](../code-quality/ca2153.md)|Le[eccezioni in stato danneggiato (CSE, Corrupted State Exception)](/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions) indicano che sono presenti danni nella memoria del processo. Se si prova a intercettare tali eccezioni, invece di lasciare che il processo venga arrestato in modo anomalo, può portare a vulnerabilità di sicurezza nel caso in cui un utente malintenzionato riesca a inserire un exploit nell'area della memoria danneggiata.|
 |[CA2300: Non usare il deserializzatore non sicuro BinaryFormatter](../code-quality/ca2300.md)|I deserializzatori non sicuri sono vulnerabili durante la deserializzazione di dati non attendibili. Un utente malintenzionato potrebbe modificare i dati serializzati per includere tipi imprevisti per inserire oggetti con effetti collaterali dannosi.|
 |[CA2301: Non chiamare BinaryFormatter.Deserialize senza aver prima impostato BinaryFormatter.Binder](../code-quality/ca2301.md)|I deserializzatori non sicuri sono vulnerabili durante la deserializzazione di dati non attendibili. Un utente malintenzionato potrebbe modificare i dati serializzati per includere tipi imprevisti per inserire oggetti con effetti collaterali dannosi.|
 |[CA2302: Assicurarsi che BinaryFormatter.Binder sia impostato prima di chiamare BinaryFormatter.Deserialize](../code-quality/ca2302.md)|I deserializzatori non sicuri sono vulnerabili durante la deserializzazione di dati non attendibili. Un utente malintenzionato potrebbe modificare i dati serializzati per includere tipi imprevisti per inserire oggetti con effetti collaterali dannosi.|

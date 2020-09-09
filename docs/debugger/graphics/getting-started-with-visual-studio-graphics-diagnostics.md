@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68cbd19b65eb25405dc994100baf4fddeef9479d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00a802c0083a9e67a145077ff8ec5842b30eb607
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350459"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600091"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Guida introduttiva a Diagnostica grafica di Visual Studio
 In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, quindi si acquisisce un frame da un'app Direct3D e lo si esamina in Analizzatore grafica.
@@ -56,7 +56,7 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
 Se si dispone già di un'app Direct3D per esplorare Diagnostica della grafica con, ottimo! In caso contrario, usare uno dei seguenti elementi:
 
 ::: moniker range=">=vs-2019"
-Scaricare un esempio dall' [esempio di gioco Direct3D](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/simple3dgamedx/).
+Scaricare un esempio dall' [esempio di gioco Direct3D](/samples/microsoft/windows-universal-samples/simple3dgamedx/).
 ::: moniker-end
 ::: moniker range="vs-2017"
 - Modelli di progetto **app DirectX 11 (Windows universale)** o **app DirectX 12 (Windows universale)** per Windows 10.
@@ -93,5 +93,5 @@ Verificare che sia possibile compilare ed eseguire l'app prima di procedere. Sce
 
  Per altre informazioni su come usare gli strumenti di analizzatore grafica insieme, vedere gli [esempi](graphics-diagnostics-examples.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Grafica Direct3D 12](/windows/desktop/direct3d12/direct3d-12-graphics)

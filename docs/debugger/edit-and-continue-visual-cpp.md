@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2d92477e37b4918e0601bf163e07f5a8492136c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c32c161d1df70fc81eee4186aa9d1ac102afa69
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72737904"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599649"
 ---
 # <a name="edit-and-continue-c"></a>Modifica e continuazione (C++)
 È possibile usare modifica e continuazione nei progetti C++. Per informazioni sulle limitazioni di modifica e continuazione, vedere [modifiche al codice supportate (C++)](../debugger/supported-code-changes-cpp.md) .
 
 Per ulteriori informazioni sui miglioramenti apportati a Visual Studio 2015 Update 3, vedere [modifica e continuazione di C++ in Visual studio 2015 Update 3](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/).
 
- L'opzione del compilatore [/Zo (Enhance Optimized Debugging)](/cpp/build/reference/zo-enhance-optimized-debugging) introdotta in Visual Studio 2013 Update 3 aggiunge altre informazioni ai file PDB (symbol) per i file binari compilati senza l'opzione [/Od (Disable (Debug))](https://msdn.microsoft.com/library/aafb762y.aspx).
+ L'opzione del compilatore [/Zo (Enhance Optimized Debugging)](/cpp/build/reference/zo-enhance-optimized-debugging) introdotta in Visual Studio 2013 Update 3 aggiunge altre informazioni ai file PDB (symbol) per i file binari compilati senza l'opzione [/Od (Disable (Debug))](/cpp/build/reference/od-disable-debug).
 
  **/Zo** Disabilita modifica e continuazione. Vedere [Procedura: Eseguire il debug di codice ottimizzato](../debugger/how-to-debug-optimized-code.md).
 
@@ -72,12 +72,12 @@ Per ulteriori informazioni sui miglioramenti apportati a Visual Studio 2015 Upda
 ## <a name="how-to-reset-the-point-of-execution"></a><a name="BKMK_How_to_reset_the_point_of_execution"></a> Come reimpostare il punto di esecuzione
  Alcune modifiche al codice applicate in modalità Modifica e continuazione possono causare uno spostamento automatico del punto di esecuzione in una nuova posizione. Nonostante il punto di esecuzione venga collocato nel modo più accurato possibile, in alcuni casi il risultato potrebbe non essere corretto.
 
- In C++, una finestra di dialogo informa l'utente quando viene modificato il punto di esecuzione. Si consiglia di verificare che la posizione sia corretta prima di continuare con il debug. In caso negativo, usare il comando **Imposta istruzione successiva** . Per altre informazioni, vedere [Impostare l'istruzione successiva da eseguire](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).
+ In C++, una finestra di dialogo informa l'utente quando viene modificato il punto di esecuzione. Si consiglia di verificare che la posizione sia corretta prima di continuare con il debug. In caso negativo, usare il comando **Imposta istruzione successiva** . Per altre informazioni, vedere [Impostare l'istruzione successiva da eseguire](./navigating-through-code-with-the-debugger.md#BKMK_Set_the_next_statement_to_execute).
 
 ## <a name="how-to-work-with-stale-code"></a><a name="BKMK_How_to_work_with_stale_code"></a> Come usare il codice non aggiornato
  In alcuni casi la funzionalità Modifica e continuazione non consente di applicare immediatamente modifiche all'eseguibile, ma può apportare automaticamente tali modifiche in un secondo momento se si continua il debug. Ciò si verifica quando si modifica una funzione che chiama la funzione corrente o si aggiungono più di 64 byte di nuove variabili ad una funzione presente nello stack di chiamate.
 
  In questi casi, il debugger continua a eseguire il codice originale, fino a quando non è possibile applicare le modifiche. Il codice non aggiornato è visualizzato in una finestra del file di origine temporanea di una finestra di origine distinta, caratterizzata da un titolo simile a `enc25.tmp`. L'origine modificata continua ad essere visualizzata nella finestra di origine originale. Se si tenta di modificare il codice non aggiornato, viene visualizzato un messaggio di avviso.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Modifiche al codice supportate (C++)](../debugger/supported-code-changes-cpp.md)

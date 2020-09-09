@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19eed30074215b64301d7227e93ba6bf5b438d78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceffab5b8c179734b1abb5f1005c240912115f1
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183802"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599593"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Specificare i file di simboli (con estensione pdb) e di origine nel debugger di Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -46,7 +46,7 @@ Per una spiegazione dettagliata dei file di simboli, vedere gli argomenti seguen
 
 - [Informazioni sui file di simboli e le impostazioni dei simboli di Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-- [Perché Visual Studio richiede che i file di simboli del debugger corrispondano esattamente ai file binari con cui sono stati compilati?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+- [Perché Visual Studio richiede che i file di simboli del debugger corrispondano esattamente ai file binari con cui sono stati compilati?](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)
 
 ## <a name="how-symbol-files-work"></a>Funzionamento dei file di simboli
 
@@ -57,7 +57,7 @@ Il file con *estensione PDB* include informazioni sul debug e sullo stato del pr
 
 I file di simboli mostrano anche il percorso dei file di origine e, facoltativamente, il server da cui recuperarli.
 
-Il debugger carica solo i file con estensione *PDB* che corrispondono esattamente ai file con *estensione PDB* creati al momento della compilazione di un'app, ovvero i file con *estensione PDB* originali o le copie. Questa [duplicazione esatta](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/) è necessaria perché il layout delle app può cambiare anche se il codice non è stato modificato.
+Il debugger carica solo i file con estensione *PDB* che corrispondono esattamente ai file con *estensione PDB* creati al momento della compilazione di un'app, ovvero i file con *estensione PDB* originali o le copie. Questa [duplicazione esatta](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with) è necessaria perché il layout delle app può cambiare anche se il codice non è stato modificato.
 
 > [!TIP]
 > Per eseguire il debug del codice al di fuori del codice sorgente del progetto, ad esempio il codice di Windows o il codice di terze parti chiamato dal progetto, è necessario specificare il percorso dei file con *estensione PDB* del codice esterno (e, facoltativamente, i file di origine), che devono corrispondere esattamente alle compilazioni nell'app.
@@ -269,7 +269,7 @@ Se il debugger trova il file con *estensione PDB* dopo l'esecuzione di una delle
 
 1. Selezionare **OK** o **applica**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Informazioni sui file di simboli e le impostazioni dei simboli di Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
 - [Modifiche al caricamento remoto dei simboli .NET in Visual Studio 2012 e 2013](https://devblogs.microsoft.com/devops/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

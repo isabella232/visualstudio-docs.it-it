@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef96bab28b1a17d4f20728a393511720fd10c624
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b05e703958fe7a1c630b542522f1f33b0fe5981
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349471"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600283"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Procedura: tornare alla funzione che ha chiamato MFC se interrotta
 
@@ -38,13 +38,13 @@ ms.locfileid: "85349471"
 
 Se è stato usato il comando **Interrompi** del menu **Debug** per interrompere il programma ma la chiamata di MFC è stata comunque eseguita, è possibile usare la finestra Stack di chiamate per tornare alla funzione, dopo aver verificato che il problema dipende dal codice. Per altre informazioni, vedere [procedura: usare la finestra stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
 
-Talvolta è possibile che il codice si interrompa nel message pump. In questo caso, non è disponibile codice utente nello stack di chiamate. Per evitare questo problema, usare i punti di interruzione (se possibile con condizioni e conteggi dei passaggi) anziché il comando **Interrompi**. Per altre informazioni, vedere [Breakpoints and Tracepoints](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).
+Talvolta è possibile che il codice si interrompa nel message pump. In questo caso, non è disponibile codice utente nello stack di chiamate. Per evitare questo problema, usare i punti di interruzione (se possibile con condizioni e conteggi dei passaggi) anziché il comando **Interrompi**. Per altre informazioni, vedere [Breakpoints and Tracepoints](/previous-versions/ktf38f66(v=vs.100)).
 
 ## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>Passare alla funzione da cui è stato chiamato MFC
 
 - Utilizzare la finestra **stack di chiamate** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md)
 - [Debug del codice nativo](../debugger/debugging-native-code.md)

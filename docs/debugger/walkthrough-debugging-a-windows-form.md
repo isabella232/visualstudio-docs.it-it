@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701d156d5fdc23a5e98ac1de43c1882f3065171e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cec7b9bc2c56e16d1a5d59701d0953797ae00f4
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72728324"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599474"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: Debug di un Windows Form
 Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea un'applicazione Windows standard. È possibile completare questa procedura dettagliata utilizzando Visual Basic, C# o C++.
@@ -109,7 +109,7 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
     textBox1->Text = "Button was clicked!";
     ```
 
-     Verrà visualizzato un punto di colore rosso e il testo sulla riga verrà evidenziato in rosso. Il punto di colore rosso rappresenta un punto di interruzione. Per altre informazioni, vedere [Punti di interruzione](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Quando verrà raggiunto questo punto nel codice, l'esecuzione dell'applicazione nel debugger verrà interrotta. Sarà quindi possibile visualizzare lo stato dell'applicazione ed eseguirne il debug.
+     Verrà visualizzato un punto di colore rosso e il testo sulla riga verrà evidenziato in rosso. Il punto di colore rosso rappresenta un punto di interruzione. Per altre informazioni, vedere [Punti di interruzione](/previous-versions/ktf38f66(v=vs.100)). Quando verrà raggiunto questo punto nel codice, l'esecuzione dell'applicazione nel debugger verrà interrotta. Sarà quindi possibile visualizzare lo stato dell'applicazione ed eseguirne il debug.
 
     > [!NOTE]
     > È anche possibile fare clic con il pulsante destro del mouse su una qualsiasi riga di codice, scegliere punto di **interruzione**, quindi fare clic su Inserisci punto di **interruzione** per aggiungere un punto di interruzione nella riga.
@@ -183,6 +183,6 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
 
      Il debugger interrompe l'esecuzione di Windows Form in corrispondenza del punto di interruzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug del codice gestito](../debugger/debugging-managed-code.md)
 - [Sicurezza del debugger](../debugger/debugger-security.md)

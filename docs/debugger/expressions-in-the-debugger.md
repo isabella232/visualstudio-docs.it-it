@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ab66f288ad8442b6f2b5aab3499e2c1f3857632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4a06a249fee38ca7fd8521459eda7bbf4100a97
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89311456"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600288"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Espressioni nel debugger di Visual Studio
 Il debugger di Visual Studio include analizzatori di espressioni che vengono usati quando si immette un'espressione nella finestra di dialogo **Controllo immediato** , nella finestra **Espressioni di controllo** o **Immediato** . Gli analizzatori di espressioni vengono inoltre usati nella finestra **Punti di interruzione** e in molte altre posizioni all'interno del debugger.
@@ -99,11 +99,11 @@ Funzioni intrinseche del debugger:
 
 |Area|Funzioni intrinseche|
 |----------|-------------------------|
-|**Lunghezza delle stringhe**|[strlen, wcslen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l), [strnlen, wcsnlen](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
-|**Confronto di stringhe**|[strcmp, wcscmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp), [stricmp, wcsicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp), [_stricmp, _strcmpi, _wcsicmp, _wcscmpi](https://docs.microsoft.com/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l), [strncmp, wcsncmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l), [strnicmp, wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp), [_strnicmp, _wcsnicmp](https://docs.microsoft.com/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
-|**Ricerca di stringhe**|[strchr, wcschr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l), [memchr, wmemchr](https://docs.microsoft.com/cpp/c-runtime-library/reference/memchr-wmemchr), [strstr, wcsstr](https://docs.microsoft.com/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
-|**Win32**|[CoDecodeProxy](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy), [DecodePointer](https://docs.microsoft.com/previous-versions/bb432242%28v%3dvs.85%29), [GetLastError](https://docs.microsoft.com/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), [TlsGetValue](https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
-|**Windows 8**|[RoInspectCapturedStackBackTrace](https://docs.microsoft.com/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace), [WindowsCompareStringOrdinal](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal), [WindowsGetStringLen](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringlen), [WindowsGetStringRawBuffer](https://docs.microsoft.com/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> Queste funzioni richiedono che il processo sottoposto a debug sia eseguito in Windows 8. Il debug dei file dump generati da un dispositivo Windows 8 richiede inoltre che nel computer Visual Studio sia eseguito Windows 8. Tuttavia, se si esegue il debug di un dispositivo Windows 8 in modalità remota, nel computer Visual Studio può essere eseguito Windows 7.|
+|**Lunghezza delle stringhe**|[strlen, wcslen](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l), [strnlen, wcsnlen](/cpp/c-runtime-library/reference/strnlen-strnlen-s)|
+|**Confronto di stringhe**|[strcmp, wcscmp](/cpp/c-runtime-library/reference/strcmp-wcscmp-mbscmp), [stricmp, wcsicmp](/cpp/c-runtime-library/reference/stricmp-wcsicmp), [_stricmp, _strcmpi, _wcsicmp, _wcscmpi](/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l), [strncmp, wcsncmp](/cpp/c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l), [strnicmp, wcsnicmp](/cpp/c-runtime-library/reference/strnicmp-wcsnicmp), [_strnicmp, _wcsnicmp](/cpp/c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l)|
+|**Ricerca di stringhe**|[strchr, wcschr](/cpp/c-runtime-library/reference/strchr-wcschr-mbschr-mbschr-l), [memchr, wmemchr](/cpp/c-runtime-library/reference/memchr-wmemchr), [strstr, wcsstr](/cpp/c-runtime-library/reference/strstr-wcsstr-mbsstr-mbsstr-l)|
+|**Win32**|[CoDecodeProxy](/windows/win32/api/combaseapi/nf-combaseapi-codecodeproxy), [DecodePointer](/previous-versions/bb432242(v=vs.85)), [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), [TlsGetValue](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)|
+|**Windows 8**|[RoInspectCapturedStackBackTrace](/windows/win32/api/roerrorapi/nf-roerrorapi-roinspectcapturedstackbacktrace), [WindowsCompareStringOrdinal](/windows/win32/api/winstring/nf-winstring-windowscomparestringordinal), [WindowsGetStringLen](/windows/win32/api/winstring/nf-winstring-windowsgetstringlen), [WindowsGetStringRawBuffer](/windows/win32/api/winstring/nf-winstring-windowsgetstringrawbuffer)<br /><br /> Queste funzioni richiedono che il processo sottoposto a debug sia eseguito in Windows 8. Il debug dei file dump generati da un dispositivo Windows 8 richiede inoltre che nel computer Visual Studio sia eseguito Windows 8. Tuttavia, se si esegue il debug di un dispositivo Windows 8 in modalità remota, nel computer Visual Studio può essere eseguito Windows 7.|
 |**Varie**|__log2//restituisce il logaritmo in base 2 di un intero specificato, arrotondato all'intero più basso più vicino.<br /><br />__findNonNull, DecodeHString, DecodeWinRTRestrictedException, DynamicCast, DynamicMemberLookup, GetEnvBlockLength<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//Concurrency:: Array<>:: operator [index<>] e operator (index<>)<br /><br />ConcurrencyArray_OperatorBracket_int//Concurrency:: Array<>:: operator (int, int,...)<br /><br />ConcurrencyArray_OperatorBracket_tidx//Concurrency:: Array<>:: operator [tiled_index<>] e operator (tiled_index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_idx//Concurrency:: array_view<>:: operator [index<>] e operator (index<>)<br /><br />ConcurrencyArrayView_OperatorBracket_int//Concurrency:: array_view<>:: operator (int, int,...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx//Concurrency:: array_view<>:: operator [tiled_index<>] e operator (tiled_index<>)<br /><br />TreeTraverse_Init//Inizializza un nuovo attraversamento dell'albero<br /><br />TreeTraverse_Next//restituisce i nodi in un albero<br /><br />TreeTraverse_Skip//ignora i nodi in un attraversamento dell'albero in sospeso '|
 
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - Espressioni non supportate
@@ -204,7 +204,7 @@ Non è possibile dichiarare nuove variabili esplicite nelle finestre del debugge
 
 - Parole chiave a livello di spazio dei nomi o di modulo, ad esempio `End Sub` o `Module`.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Identificatori di formato in C++](../debugger/format-specifiers-in-cpp.md)
 - [Operatore di contesto (C++)](../debugger/context-operator-cpp.md)
 - [Identificatori di formato in C#](../debugger/format-specifiers-in-csharp.md)

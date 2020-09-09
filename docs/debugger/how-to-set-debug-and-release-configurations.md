@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 458e6cb4ebf882d2d9e331823cc4955143e7d5b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e85f7c67f8dc25bb69f7de07a19286b5c63e938a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349159"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599899"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Impostare le configurazioni Debug e Release in Visual Studio
 
@@ -56,7 +56,7 @@ Per modificare la configurazione della build, effettuare una delle operazioni se
 
 * Scegliere **Configuration Manager**dal menu **Compila** , quindi selezionare **debug** o **rilascia**.
 
-Oppure
+oppure
 
 * Sulla barra degli strumenti selezionare **Debug ** o **Release** nell'elenco **Configurazione soluzione**.
 
@@ -67,7 +67,7 @@ Oppure
 È possibile scegliere di generare i file di simboli (con estensione pdb) e le informazioni di debug da includere. Per la maggior parte dei tipi di progetto, il compilatore genera i file di simboli per impostazione predefinita per le build di debug e di rilascio, mentre altre impostazioni predefinite sono diverse per tipo di progetto e versione di Visual Studio.
 
 > [!IMPORTANT]
-> Il debugger caricherà solo un file con estensione pdb per un file eseguibile che corrisponde esattamente al file pdb creato alla compilazione del file eseguibile (il file pdb deve essere l'originale o una copia del file pdb originale). Per ulteriori informazioni, vedere [motivi per cui Visual Studio richiede che i file di simboli del debugger corrispondano esattamente ai file binari con cui sono stati compilati](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/).
+> Il debugger caricherà solo un file con estensione pdb per un file eseguibile che corrisponde esattamente al file pdb creato alla compilazione del file eseguibile (il file pdb deve essere l'originale o una copia del file pdb originale). Per ulteriori informazioni, vedere [motivi per cui Visual Studio richiede che i file di simboli del debugger corrispondano esattamente ai file binari con cui sono stati compilati](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with).
 
 Per ogni tipo di progetto è possibile impostare queste opzioni in modo diverso.
 

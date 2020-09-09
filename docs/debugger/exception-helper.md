@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d044ed5ddaf4b7eb7a66bc09c8b3de3502a50f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e2157b55915f82e79dfdac5d300046850a93879
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350498"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600299"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>Esaminare un'eccezione usando l'helper eccezioni 
 
@@ -50,7 +50,7 @@ A partire da Visual Studio 2017, per il codice .NET e C/C++, quando si raggiunge
 È possibile configurare il debugger in modo che si interrompa quando viene generata un'eccezione del tipo corrente dalla sezione **Impostazioni eccezioni** dell'helper eccezioni. Se il debugger viene sospeso in corrispondenza di un'eccezione generata, è possibile utilizzare la casella di controllo per disabilitare l'interruzione di tale tipo di eccezione quando viene generata in futuro. Se non si vuole interrompere questa particolare eccezione quando viene generata in questo particolare modulo, selezionare la casella di controllo in base al nome del modulo in **tranne quando viene generata da:** nella finestra **Impostazioni eccezioni** . 
 
 ## <a name="inspect-inner-exceptions"></a>Esaminare le eccezioni interne 
-Se l'eccezione presenta eccezioni interne ([innerException](https://docs.microsoft.com/dotnet/api/system.exception.innerexception), è possibile visualizzarle nell'helper eccezioni. Se sono presenti più eccezioni, è possibile spostarsi tra di esse usando le frecce sinistra e destra visualizzate sopra lo stack di chiamate.
+Se l'eccezione presenta eccezioni interne ([innerException](/dotnet/api/system.exception.innerexception), è possibile visualizzarle nell'helper eccezioni. Se sono presenti più eccezioni, è possibile spostarsi tra di esse usando le frecce sinistra e destra visualizzate sopra lo stack di chiamate.
 
 ![Helper eccezione con eccezione interna](media/debugger-exception-helper-innerexception.png)
 
@@ -60,4 +60,4 @@ Nei casi in cui è stata rilevata un'eccezione `thrown` , l'helper eccezioni Mos
 ![Helper eccezioni con eccezioni rigenerate](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="share-a-debug-session-with-live-share"></a>Condividere una sessione di debug con Live Share
-Dall'helper eccezioni è possibile avviare una sessione di [Live Share](https://docs.microsoft.com/visualstudio/liveshare/) usando il collegamento **avvia Live Share sessione...**. Tutti gli utenti che partecipano alla sessione Live Share possono visualizzare l'helper eccezioni insieme a qualsiasi altra informazione di debug.
+Dall'helper eccezioni è possibile avviare una sessione di [Live Share](/visualstudio/liveshare/) usando il collegamento **avvia Live Share sessione...**. Tutti gli utenti che partecipano alla sessione Live Share possono visualizzare l'helper eccezioni insieme a qualsiasi altra informazione di debug.

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa2632e7d9b8103b5a89c49e5f44464a658fadc3
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901632"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599480"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Procedura dettagliata: Debug di un Web Form
 Nei passaggi di questa procedura dettagliata viene illustrato come eseguire il debug di un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], noto anche come Web Form. Viene spiegato come avviare e arrestare l'esecuzione, impostare punti di interruzione ed esaminare le variabili nella finestra **Espressioni di controllo**.
@@ -98,7 +98,7 @@ Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispon
    textBox1.Text = "Button was clicked!";
    ```
 
-    Verrà visualizzato un punto di colore rosso e il testo sulla riga verrà evidenziato in rosso. Il punto di colore rosso rappresenta un punto di interruzione. Quando verrà raggiunto questo punto nel codice, l'esecuzione dell'applicazione nel debugger verrà interrotta. Sarà quindi possibile visualizzare lo stato dell'applicazione ed eseguirne il debug. Per altre informazioni, vedere [Punti di interruzione](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).
+    Verrà visualizzato un punto di colore rosso e il testo sulla riga verrà evidenziato in rosso. Il punto di colore rosso rappresenta un punto di interruzione. Quando verrà raggiunto questo punto nel codice, l'esecuzione dell'applicazione nel debugger verrà interrotta. Sarà quindi possibile visualizzare lo stato dell'applicazione ed eseguirne il debug. Per altre informazioni, vedere [Punti di interruzione](/previous-versions/ktf38f66(v=vs.100)).
 
 2. Scegliere **Avvia debug** dal menu **Debug**.
 
@@ -162,6 +162,6 @@ Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispon
 
 6. Dopo il completamento del debug, scegliere **Termina debug** dal menu **Debug**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

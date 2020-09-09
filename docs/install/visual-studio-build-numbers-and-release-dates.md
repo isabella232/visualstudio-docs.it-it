@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 08/31/2020
+ms.date: 09/08/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: c836c101280da1884345dd5e95def383226942fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a0d77b4a1a926376857886b9430c4d9fdcdb3a39
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89285736"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600052"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -29,6 +29,9 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.7.3 | Versione | 8 settembre 2020 | 16.7.30503.244 |
+| 16.4.13 | Versione | 8 settembre 2020 | 16.4.30427.197 |
+| 16.0.18 | Versione | 8 settembre 2020 | 16.0.28803.826 |
 | 16.8.0 | Preview 2.1 | 31 agosto 2020 | 16.8.30428.66 |
 | 16.8.0 | Preview 2 | 25 agosto 2020 | 16.8.30420.98 |
 | 16.7.2 | Versione | 18 agosto 2020 | 16.7.30413.136 |
@@ -172,6 +175,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.27 | Versione | 8 settembre 2020 | 15.9.28307.1259 |
 | 15.9.26 | Versione | 11 agosto 2020 | 15.9.28307.1234 |
 | 15.9.25 | Versione | 14 luglio 2020 | 15.9.28307.1216 |
 | 15.9.24 | Versione | 9 giugno 2020 | 15.9.28307.1177 |
@@ -349,7 +353,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Visual Studio Roadmap](/visualstudio/productinfo/vs-roadmap)
 * [Frequenza di rilascio di Visual Studio](/visualstudio/productinfo/release-rhythm)

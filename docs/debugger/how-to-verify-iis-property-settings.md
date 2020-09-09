@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f37a1ee196b14ec1f8c7b03ffc6e6d826ced02d8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87fdd6064492c4043723ddff960685a50f8bcb2b
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348470"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600269"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Procedura: verificare le impostazioni delle proprietà di IIS
 
@@ -59,7 +59,7 @@ ms.locfileid: "85348470"
 
    3. Scegliere **OK** per chiudere la finestra di dialogo **Metodi di autenticazione**.
 
-5. Per un'applicazione ATL Server verificare che il verbo DEBUG sia associato all'estensione ISAPI. Per altre informazioni, vedere [procedura: associare un verbo di debug con estensione](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
+5. Per un'applicazione ATL Server verificare che il verbo DEBUG sia associato all'estensione ISAPI. Per altre informazioni, vedere [procedura: associare un verbo di debug con estensione](/previous-versions/ms165022(v=vs.100)).
 
 6. Per un'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], accertarsi che per la cartella virtuale dell'applicazione sia impostato un Nome applicazione in **Gestione Internet Information Services (IIS)**, **Gestione servizi Internet** o **Internet Information Services**.
 
@@ -77,6 +77,6 @@ ms.locfileid: "85348470"
 
 9. Fare clic su **OK** per chiudere le finestre di dialogo **Gestione Internet Information Services (IIS)**, **Gestione servizi Internet** o **Internet Information Services**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Risoluzione dei problemi](../debugger/debugging-web-applications-troubleshooting.md)

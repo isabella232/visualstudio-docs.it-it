@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d708b4f74777fb40eccc2fef9b782689f830e092
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba7b133594d016d1a80efae4d18d1fb55a96398d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72737963"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599544"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Finestra di dialogo Modifica e continuazione (C++)
 La modalità Modifica e continuazione non ha applicato le modifiche apportate al codice nativo. Questa condizione potrebbe essere temporanea. In alcuni casi, la modalità Modifica e continuazione non applica immediatamente le modifiche al codice nativo, ma in seguito durante la sessione di debug, ad esempio al termine della chiamata corrente alla procedura in esecuzione. Per altre informazioni, vedere [Modifica e continuazione](../debugger/edit-and-continue.md).
 
  È possibile modificare il codice per correggere l'errore mentre si esegue ancora il debug, interrompere il debug e correggere il codice o ignorare l'errore e continuare il debug. Se si continua senza apportare la correzione, le modifiche al codice non verranno applicate immediatamente.
 
-## <a name="see-also"></a>Vedere anche
-- [Modifica e continuazione, Debug, finestra di dialogo Opzioni](https://msdn.microsoft.com/library/bcew296c.aspx)
+## <a name="see-also"></a>Vedi anche
+- [Modifica e continuazione, Debug, finestra di dialogo Opzioni](./edit-and-continue.md)

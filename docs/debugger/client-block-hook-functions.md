@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7b0ef177922f09239c8925ced1ca013e966c0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 881809dda7e8254f9d337b68f0c317eccfd9093d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745711"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600205"
 ---
 # <a name="client-block-hook-functions"></a>Funzioni hook del blocco client
 Se si desidera convalidare o inserire in report il contenuto dei dati memorizzati in blocchi `_CLIENT_BLOCK`, sarà possibile scrivere una funzione specificamente per tale scopo. Tale funzione dovrà avere un prototipo analogo al seguente, come definito in CRTDBG.H:
@@ -46,8 +46,8 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)
    (void *, size_t);
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Scrittura di funzioni hook di debug](../debugger/debug-hook-function-writing.md)
-- [Esempio di crt_dbg2](https://msdn.microsoft.com/library/21e1346a-6a17-4f57-b275-c76813089167)
+- [Esempio di crt_dbg2](/previous-versions/b31tft51(v=vs.100))
 - [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)

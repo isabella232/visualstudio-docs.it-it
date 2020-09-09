@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2accfed995415a508a47e492837ded7acea150d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d3da21a833764745a7b6fc7dd001eeb4995f44d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72737890"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599637"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Modificare il codice e continuare a eseguire il debug in Visual Studio (C#, VB, C++)
 Modifica e continuazione è una funzionalità che consente di ridurre i tempi necessari per il debug poiché permette di apportare modifiche al codice sorgente mentre il programma è in modalità di interruzione. Quando si riprende l'esecuzione del programma scegliendo un comando di esecuzione, ad esempio **continua** o **passaggio**, modifica e continuazione applica automaticamente le modifiche del codice con alcune limitazioni. In questo modo è possibile modificare il codice durante una sessione di debug anziché dover terminare la sessione corrente, ricompilare l'intero programma e riavviare la sessione di debug.
@@ -45,7 +45,6 @@ Modifica e continuazione è una funzionalità che consente di ridurre i tempi ne
 
  [Modifica e continuazione non supportate per F#](../debugger/edit-and-continue-not-supported-for-f-hash.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)
-- [Modifica e continuazione, Debug, finestra di dialogo Opzioni](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

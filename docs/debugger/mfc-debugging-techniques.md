@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4a481a8d4f283204b99cfef4a07106d3e479cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06b42dbf31a8b5f4cb66de047bc1e08a4f840353
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731286"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600242"
 ---
 # <a name="mfc-debugging-techniques"></a>Tecniche di debug MFC
 Se si effettua il debug di un programma MFC, possono essere utili le seguenti tecniche di debug.
@@ -80,7 +80,7 @@ Accertarsi di rimuovere le istruzioni `AfxDebugBreak` quando si crea una build d
 [Contenuto dell'argomento](#BKMK_In_this_topic)
 
 ## <a name="the-trace-macro"></a><a name="BKMK_The_TRACE_macro"></a> Utilizzo della macro TRACE
-Per visualizzare i messaggi generati dal programma nella [finestra di output](../ide/reference/output-window.md)del debugger è possibile usare la macro [ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) oppure la macro [TRACE](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) MFC. Analogamente alle [asserzioni](../debugger/c-cpp-assertions.md)le macro di traccia sono attive solo nella versione di debug del programma e vengono annullate quando ne viene effettuata la compilazione nella versione di rilascio.
+Per visualizzare i messaggi generati dal programma nella [finestra di output](../ide/reference/output-window.md)del debugger è possibile usare la macro [ATLTRACE](/previous-versions/6xkxyz08(v=vs.140)) oppure la macro [TRACE](/previous-versions/6w95a4ha(v=vs.140)) MFC. Analogamente alle [asserzioni](../debugger/c-cpp-assertions.md)le macro di traccia sono attive solo nella versione di debug del programma e vengono annullate quando ne viene effettuata la compilazione nella versione di rilascio.
 
 Gli esempi che seguono illustrano alcuni metodi di utilizzo della macro **TRACE** . Analogamente a `printf`la macro **TRACE** è in grado di gestire svariati argomenti.
 
@@ -115,7 +115,7 @@ Per altre informazioni sulla macro **TRACE** , vedere [Servizi diagnostici](/cpp
 MFC offre classi e funzioni per il rilevamento della memoria allocata ma mai disallocata.
 
 ### <a name="tracking-memory-allocations"></a><a name="BKMK_Tracking_memory_allocations"></a> Gestione delle allocazioni di memoria
-In MFC è possibile usare la macro [DEBUG_NEW](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) anziché l'operatore **new** per un supporto nella ricerca di perdite di memoria. Nella versione di debug del programma, `DEBUG_NEW` tiene traccia del nome file e del numero di riga di ciascun oggetto da esso allocato. Quando si compila una versione di rilascio del programma, `DEBUG_NEW` si traduce in una semplice operazione **new** senza informazioni relative a nome file e numero di riga. La velocità non viene pertanto in alcun modo compromessa nella versione di rilascio del programma.
+In MFC è possibile usare la macro [DEBUG_NEW](/previous-versions/tz7sxz99(v=vs.140)) anziché l'operatore **new** per un supporto nella ricerca di perdite di memoria. Nella versione di debug del programma, `DEBUG_NEW` tiene traccia del nome file e del numero di riga di ciascun oggetto da esso allocato. Quando si compila una versione di rilascio del programma, `DEBUG_NEW` si traduce in una semplice operazione **new** senza informazioni relative a nome file e numero di riga. La velocità non viene pertanto in alcun modo compromessa nella versione di rilascio del programma.
 
 Se non si desidera riscrivere l'intero programma in modo da utilizzare `DEBUG_NEW` anziché **new**, sarà possibile definire questa macro nei file sorgente:
 
@@ -134,11 +134,11 @@ Per poter utilizzare le utilità di diagnostica della memoria è necessario atti
 
 **Per abilitare o disabilitare la diagnostica della memoria**
 
-- Chiamare la funzione globale [AfxEnableMemoryTracking](https://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) per abilitare o disabilitare l'allocatore di memoria diagnostico. Dal momento che la diagnostica della memoria si trova per impostazione predefinita nella libreria di debug, in genere si ricorre a questa funzione per disattivare tale diagnostica temporaneamente, aumentando la velocità di esecuzione del programma e riducendo l'output di diagnostica.
+- Chiamare la funzione globale [AfxEnableMemoryTracking](/previous-versions/hzsxb6e8(v=vs.140)) per abilitare o disabilitare l'allocatore di memoria diagnostico. Dal momento che la diagnostica della memoria si trova per impostazione predefinita nella libreria di debug, in genere si ricorre a questa funzione per disattivare tale diagnostica temporaneamente, aumentando la velocità di esecuzione del programma e riducendo l'output di diagnostica.
 
   **Per selezionare caratteristiche specifiche di diagnostica della memoria con afxMemDF**
 
-- Se si desidera godere di un maggior controllo sulle caratteristiche di diagnostica della memoria, sarà possibile attivare e disattivare selettivamente singole caratteristiche di diagnostica della memoria impostando il valore della variabile globale MFC [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). A questa variabile è possibile assegnare i seguenti valori, come specificato dal tipo enumerato **afxMemDF**.
+- Se si desidera godere di un maggior controllo sulle caratteristiche di diagnostica della memoria, sarà possibile attivare e disattivare selettivamente singole caratteristiche di diagnostica della memoria impostando il valore della variabile globale MFC [afxMemDF](/previous-versions/ahe4a83t(v=vs.140)). A questa variabile è possibile assegnare i seguenti valori, come specificato dal tipo enumerato **afxMemDF**.
 
   |Valore|Descrizione|
   |-----------|-----------------|
@@ -480,5 +480,5 @@ La compilazione di moduli selezionati con le librerie di debug MFC consente di e
 
    [Contenuto dell'argomento](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 [Debug del codice nativo](../debugger/debugging-native-code.md)

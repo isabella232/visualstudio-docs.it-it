@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db6d4e8bc5b2f09194e03bbadc8f49b773d24f1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386953"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599500"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Dump di file nel debugger di Visual Studio
 
@@ -74,7 +74,7 @@ Quando è abilitato il [debug](../debugger/just-in-time-debugging-in-visual-stud
 1. Individuare un percorso e selezionare un nome per il file dump, quindi selezionare **Salva**.
 
 >[!NOTE]
->È possibile creare file dump con qualsiasi programma che supporta il formato di minidump di Windows. Ad esempio, tramite l'utilità della riga di comando **Procdump** di [Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) è possibile creare file dump dell'arresto anomalo del processo basati su trigger o su richiesta. Per informazioni sull'uso di altri strumenti per la creazione di file di dump, vedere [requisiti e limitazioni](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) .
+>È possibile creare file dump con qualsiasi programma che supporta il formato di minidump di Windows. Ad esempio, tramite l'utilità della riga di comando **Procdump** di [Windows Sysinternals](/sysinternals/) è possibile creare file dump dell'arresto anomalo del processo basati su trigger o su richiesta. Per informazioni sull'uso di altri strumenti per la creazione di file di dump, vedere [requisiti e limitazioni](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) .
 
 ## <a name="open-a-dump-file"></a><a name="BKMK_Open_a_dump_file"></a> Aprire un file dump
 
@@ -113,7 +113,7 @@ Visual Studio esegue automaticamente la ricerca di questi percorsi per i file *e
 
 Se Visual Studio non riesce a trovare i file necessari per eseguire il debug di un modulo nel dump, viene visualizzato un file **binario non**trovato, non è stato **trovato alcun simbolo**oppure non è stata trovata alcuna pagina di **origine** . Queste pagine forniscono informazioni dettagliate sulla causa del problema e forniscono collegamenti all'azione che consentono di individuare i file. Vedere [specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Debug just-in-Time](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 145525dc12070d98dae83d592ae86a675bb605d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b254cb2077b748f34958e33dbc456f17df530ce
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893411"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600223"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procedura: generare dati di metrica del codice
 
@@ -32,7 +32,7 @@ ms.locfileid: "88893411"
 
 Gli analizzatori di qualità del codice .NET includono diverse regole dell' [analizzatore](roslyn-analyzers-overview.md) della metrica del codice:
 
-- [CA1501](ca1501-avoid-excessive-inheritance.md)
+- [CA1501](./ca1501.md)
 - [CA1502](ca1502.md)
 - [CA1505](ca1505.md)
 - [CA1506](ca1506.md)
@@ -336,7 +336,7 @@ La `LinesOfCode` metrica è più accurata e affidabile nel nuovo strumento per l
 
 Altre metriche, ad esempio `CyclomaticComplexity` e `MaintainabilityIndex` , usano le stesse formule delle versioni precedenti di *Metrics.exe*, ma il nuovo strumento conta il numero di istruzioni per le `IOperations` origini logiche anziché le istruzioni del linguaggio intermedio (il). I numeri saranno leggermente diversi rispetto a quelli generati dall'IDE di Visual Studio e dalle versioni precedenti di *Metrics.exe*.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare la finestra Risultati metrica codice](../code-quality/working-with-code-metrics-data.md)
 - [Valori della metrica del codice](../code-quality/code-metrics-values.md)

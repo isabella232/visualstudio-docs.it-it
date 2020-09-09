@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e141fac7fba1939811c722d8e08f49531111ff7e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3aa2de2f9e1bc0c5f92d13b159bfc268a25b059
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460247"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599930"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Errore: esecuzione Transact-SQL terminata senza debug
 
@@ -40,15 +40,15 @@ Questo problema riguarda due account:
 
   Per correggere questo errore, è possibile:
 
-  - Verificare le impostazioni delle autorizzazioni. Per altre informazioni, vedere [How to: Set SQL Server Permissions for debugging](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).
+  - Verificare le impostazioni delle autorizzazioni. Per altre informazioni, vedere [How to: Set SQL Server Permissions for debugging](/previous-versions/w1bhybwz(v=vs.100)).
 
   - Assicurarsi che il debug SQL sia configurato correttamente.
 
   - Consultare l'amministratore della rete o del database.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Impostazione del debug SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
-- [Procedura: impostare le autorizzazioni SQL Server per il debug](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [Procedura: impostare le autorizzazioni SQL Server per il debug](/previous-versions/w1bhybwz(v=vs.100))
 - [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)
 - [Debug remoto](../debugger/remote-debugging.md)

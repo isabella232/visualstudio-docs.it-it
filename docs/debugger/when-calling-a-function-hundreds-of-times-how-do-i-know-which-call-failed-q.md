@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d054c60c45980b3d08b09987229febb99593090
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4790fa8c6fd0bba5b513fd2ce3d203b552b6c63b
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72728041"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599996"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Quando vengono effettuate centinaia di chiamate di una funzione, come è possibile individuare la chiamata che ha avuto esito negativo?
 ## <a name="problem-description"></a>Descrizione del problema
@@ -48,7 +48,7 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
 
  A questo punto la funzione con esito negativo risulta essere la chiamata 101. Se si reimposta il punto di interruzione con un conteggio di passaggi di 101 e si esegue nuovamente il programma, esso si arresterà in corrispondenza della chiamata a `CnvtV` che ha causato il blocco.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md)
-- [Impostazione di punti di interruzione](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)
+- [Impostazione di punti di interruzione](/previous-versions/ktf38f66(v=vs.100))
 - [Debug del codice nativo](../debugger/debugging-native-code.md)

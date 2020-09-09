@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b060ae550fd0188728c827cac01c12d51930b57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6109c1becfae51ebf3824b5683bc66a5d89b74a0
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711547"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599617"
 ---
 # <a name="code-analysis-faq"></a>Domande frequenti sull'analisi del codice
 
@@ -92,9 +92,9 @@ Gli [analizzatori StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers
 
 **D**: dove è la pagina delle proprietà di analisi del codice per la soluzione?
 
-**R**: la pagina delle proprietà dell'analisi del codice a livello di soluzione è stata rimossa a favore del gruppo di proprietà condiviso più affidabile. Per la gestione dell'analisi del codice a livello di progetto, la pagina delle proprietà analisi codice è ancora disponibile. Per i progetti gestiti, è anche consigliabile eseguire la migrazione da RuleSets a EditorConfig per la configurazione delle regole.  Per la condivisione di RuleSet tra più progetti in una soluzione o in un repository, è consigliabile definire un gruppo di proprietà con la proprietà CodeAnalysisRuleSet in un file props/targets condiviso o in un file directory. props/directory. targets. Se non si dispone di tali oggetti o destinazioni comuni che tutti i progetti importano, è consigliabile [aggiungere tale gruppo di proprietà a una directory. props o a una directory. targets in una directory della soluzione di primo livello, che viene importata automaticamente in tutti i file di progetto definiti nella directory o nelle relative sottodirectory](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build?directorybuildprops-and-directorybuildtargets).
+**R**: la pagina delle proprietà dell'analisi del codice a livello di soluzione è stata rimossa a favore del gruppo di proprietà condiviso più affidabile. Per la gestione dell'analisi del codice a livello di progetto, la pagina delle proprietà analisi codice è ancora disponibile. Per i progetti gestiti, è anche consigliabile eseguire la migrazione da RuleSets a EditorConfig per la configurazione delle regole.  Per la condivisione di RuleSet tra più progetti in una soluzione o in un repository, è consigliabile definire un gruppo di proprietà con la proprietà CodeAnalysisRuleSet in un file props/targets condiviso o in un file directory. props/directory. targets. Se non si dispone di tali oggetti o destinazioni comuni che tutti i progetti importano, è consigliabile [aggiungere tale gruppo di proprietà a una directory. props o a una directory. targets in una directory della soluzione di primo livello, che viene importata automaticamente in tutti i file di progetto definiti nella directory o nelle relative sottodirectory](../msbuild/customize-your-build.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica degli analizzatori](roslyn-analyzers-overview.md)
 - [Impostazioni della convenzione di codifica .NET per EditorConfig](../ide/editorconfig-code-style-settings-reference.md)

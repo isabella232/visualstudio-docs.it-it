@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: b7d9ed2f2ceeae21b85fdb8227e65715cb07bc8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87f8fbec389e3735b6f1c39cdd671a391c7334d7
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350563"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600111"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Genera codice sorgente da assembly .NET durante il debug
 
@@ -27,7 +27,7 @@ Quando si esegue il debug di un'applicazione .NET, è possibile che si desideri 
 > [!NOTE]
 > * La generazione del codice sorgente (decompilazione) è disponibile solo per le applicazioni .NET ed è basata sul progetto open source [ILSpy](https://github.com/icsharpcode/ILSpy) .
 > * La decompilazione è disponibile solo in Visual Studio 2019 16,5 e versioni successive.
-> * L'applicazione dell'attributo [SuppressIldasmAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) a un assembly o un modulo impedisce a Visual Studio di provare a eseguire la decompilazione.
+> * L'applicazione dell'attributo [SuppressIldasmAttribute](/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) a un assembly o un modulo impedisce a Visual Studio di provare a eseguire la decompilazione.
 
 ## <a name="generate-source-code"></a>Genera codice sorgente
 
@@ -99,7 +99,7 @@ Per altri dettagli, vedere il problema [relativo al generatore PDB](https://gith
 
 ### <a name="just-my-code"></a>Just My Code
 
-Le impostazioni di [Just My Code (JMC)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) consentono a Visual Studio di eseguire un'istruzione/routine di sistema, Framework, libreria e altre chiamate non utente. Durante una sessione di debug, nella finestra **moduli** vengono visualizzati i moduli di codice che il debugger sta trattando come codice utente (codice utente).
+Le impostazioni di [Just My Code (JMC)](./just-my-code.md) consentono a Visual Studio di eseguire un'istruzione/routine di sistema, Framework, libreria e altre chiamate non utente. Durante una sessione di debug, nella finestra **moduli** vengono visualizzati i moduli di codice che il debugger sta trattando come codice utente (codice utente).
 
 La decompilazione di moduli ottimizzati o versione produce codice non utente. Se il debugger si interrompe nel codice non utente decompilato, ad esempio, non viene visualizzata **alcuna** finestra di origine. Per disabilitare Just My Code, passare a **strumenti**  >  **Opzioni** (o **Debug**  >  **Opzioni**di debug) > **debug**  >  **generale**, quindi deselezionare **Abilita Just My Code**.
 

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e39ae29e94ff28ce10daf36e3970273d8e34e9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa88d941950cdabe0da873f9184b420c81d5a348
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349107"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599856"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Procedura: specificare le impostazioni del debugger
 In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è possibile configurare varie impostazioni relative al funzionamento del debugger, che specificano ad esempio la modalità di visualizzazione delle variabili, se determinati messaggi di avviso vengono visualizzati, la modalità di impostazione dei punti di interruzione e gli effetti dell'interruzione sui programmi in esecuzione. Per specificare queste impostazioni, utilizzare la finestra di dialogo **Opzioni**.
@@ -41,8 +41,8 @@ In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è possibile config
 
 4. Selezionare o deselezionare l'opzione o le opzioni desiderate. Per visualizzare le informazioni della Guida sulle opzioni, premere F1
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Generale, Debug, finestra di dialogo Opzioni](../debugger/general-debugging-options-dialog-box.md)
-- [Modifica e continuazione, Debug, finestra di dialogo Opzioni](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [Modifica e continuazione, Debug, finestra di dialogo Opzioni](./edit-and-continue.md)
 - [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)
 - [Macro comuni per i comandi e le proprietà di compilazione](/cpp/build/reference/common-macros-for-build-commands-and-properties)

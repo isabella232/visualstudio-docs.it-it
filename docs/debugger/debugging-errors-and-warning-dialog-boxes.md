@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: beeba55c873e008b3e096da66f888695d719c882
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916441"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599945"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Finestre di dialogo di errore e di avviso per il debug
 Di seguito sono riportate le finestre di errore e di avviso che possono essere visualizzate quando si effettua il debug di un'applicazione.
@@ -48,7 +48,7 @@ Di seguito sono riportate le finestre di errore e di avviso che possono essere v
 
  [Finestra di dialogo Codice sorgente non disponibile per il percorso corrente](../debugger/no-source-available.md)
 
- [Finestra di dialogo Nessuna informazione sui simboli](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)
+ [Finestra di dialogo Nessuna informazione sui simboli](/previous-versions/d493t3ew(v=vs.100))
 
  [finestra di dialogo Risolvi ambiguità](../debugger/resolve-ambiguity-dialog-box.md)
 

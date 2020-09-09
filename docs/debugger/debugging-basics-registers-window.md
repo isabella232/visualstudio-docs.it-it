@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4deaf03013b6e28ea02e6ec7412bd23a05f1b87e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10b370b653590dd5061dc98d31d74d3351180dc6
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738259"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600318"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Informazioni sulla finestra registri in Visual Studio (C#, C++, Visual Basic, F #)
 
 La finestra **Registri** è disponibile solo se il debug a livello di indirizzo è stato attivato nella finestra di dialogo **Opzioni**, nodo **Debug**.
 
- I registri sono speciali posizioni interne a un processore (CPU) utilizzate per archiviare piccole porzioni di dati attualmente in uso da parte del processore. Durante la compilazione o l'interpretazione di codice sorgente vengono generate istruzioni che spostano dati dalla memoria ai registri e viceversa, secondo necessità. L'accesso ai dati nei registri è molto rapido rispetto all'accesso ai dati in memoria, quindi il codice che consente al processore di tenere i dati in un registro e di accedervi ripetutamente tende a eseguire più velocemente del codice che richiede al processore di caricare e scaricare costantemente i registri. Per facilitare la conservazione dei dati nei registri da parte del compilatore ed eseguire ulteriori ottimizzazioni è consigliabile evitare l'utilizzo di variabili globali e basarsi il più possibile su variabili locali. Il codice scritto in questo modo viene definito come dotato di un buon posizionamento dei riferimenti. In alcuni linguaggi, quali C/C++, il programmatore può dichiarare una variabile di registro, imponendo così al compilatore di conservare sempre, per quanto possibile, la variabile in un registro. Per altre informazioni, vedere [Parola chiave register](https://msdn.microsoft.com/library/5b66905a-2f7f-4918-bb55-5e66d4bc50f9).
+ I registri sono speciali posizioni interne a un processore (CPU) utilizzate per archiviare piccole porzioni di dati attualmente in uso da parte del processore. Durante la compilazione o l'interpretazione di codice sorgente vengono generate istruzioni che spostano dati dalla memoria ai registri e viceversa, secondo necessità. L'accesso ai dati nei registri è molto rapido rispetto all'accesso ai dati in memoria, quindi il codice che consente al processore di tenere i dati in un registro e di accedervi ripetutamente tende a eseguire più velocemente del codice che richiede al processore di caricare e scaricare costantemente i registri. Per facilitare la conservazione dei dati nei registri da parte del compilatore ed eseguire ulteriori ottimizzazioni è consigliabile evitare l'utilizzo di variabili globali e basarsi il più possibile su variabili locali. Il codice scritto in questo modo viene definito come dotato di un buon posizionamento dei riferimenti. In alcuni linguaggi, quali C/C++, il programmatore può dichiarare una variabile di registro, imponendo così al compilatore di conservare sempre, per quanto possibile, la variabile in un registro. Per altre informazioni, vedere [Parola chiave register](/previous-versions/482s4fy9(v=vs.140)).
 
  I registri possono essere distinti in due tipi: registri di utilizzo generale e registri di utilizzo specifico. Nei registri di utilizzo generale sono contenuti dati relativi a operazioni generali quali la somma di due numeri o l'aggiunta del riferimento a un elemento in una matrice. I registri di utilizzo specifico hanno scopi e significato particolari. Un esempio illuminante è il registro dei puntatori dello stack, utilizzato dal processore per tenere traccia dello stack di chiamate del programma. Con molta probabilità, il programmatore non intenderà modificare direttamente il puntatore dello stack. La sua presenza, tuttavia, è essenziale per il corretto funzionamento del programma. Senza il puntatore dello stack, infatti, non vi sarebbero informazioni chiare su quale punto del programma deve essere raggiunto al termine di una chiamata di funzione.
 
@@ -65,6 +65,6 @@ Per i processori Intel x86, nella finestra **registri** è possibile che vengano
 |Parity|PE = 1|
 |Carry|CY = 1|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: utilizzare la finestra Registri](../debugger/how-to-use-the-registers-window.md)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
