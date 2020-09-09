@@ -1,5 +1,5 @@
 ---
-title: Aggiungere nuove sottoscrizioni mensili di Visual Studio al portale di amministrazione delle sottoscrizioni | Microsoft Docs
+title: Aggiungere nuove sottoscrizioni mensili al portale di amministrazione delle sottoscrizioni | Microsoft Docs
 author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
@@ -7,12 +7,12 @@ ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 09/03/2020
 ms.topic: how-to
 description: Scopri come acquistare nuove sottoscrizioni mensili di Visual Studio nel portale di amministrazione delle sottoscrizioni
-ms.openlocfilehash: 209484968e85613da7cf38af3dce6944413c678a
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: d765e03d2c499c8e96bb97fc532596b7cfd0b903
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426830"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561403"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Aggiungere nuove sottoscrizioni mensili di Visual Studio al portale di amministrazione delle sottoscrizioni
 Quando si acquistano nuove sottoscrizioni mensili di Visual Studio usando una sottoscrizione di Azure, potrebbe essere necessario aggiungerle al portale di amministrazione delle sottoscrizioni per assegnarle agli utenti.  
@@ -28,14 +28,14 @@ I passaggi per aggiungere sottoscrizioni mensili dipendono dai tipi di sottoscri
 1. Nella scheda **Gestisci sottoscrittori** scegliere l'elenco a discesa **Aggiungi contratto** 
 1. Scegliere **nuove sottoscrizioni mensili** nell'elenco a discesa
    > [!div class="mx-imgBorder"]
-   > ![Elenco a discesa Aggiungi nuove sottoscrizioni mensili](_img/add-monthly-subs/add-subs-drop-down.png)
+   > ![Elenco a discesa Aggiungi nuove sottoscrizioni mensili](_img/add-monthly-subs/add-subs-drop-down.png "Scegliere "Aggiungi contratto", quindi "nuove sottoscrizioni mensili.")
 1. Il sistema cercherà tutte le sottoscrizioni di Azure per cui si dispone dei diritti di amministratore di accesso utente e importerà tutte le sottoscrizioni di Visual Studio acquistate con le sottoscrizioni di Azure.
 1. Se non sono state trovate sottoscrizioni di Azure per cui si hanno diritti di amministratore di accesso utente o se sono state trovate sottoscrizioni di Azure, ma non sono state trovate sottoscrizioni di Visual Studio, verrà visualizzato il messaggio seguente:
    > [!div class="mx-imgBorder"]
-   > ![Non sono state trovate nuove sottoscrizioni mensili](_img/add-monthly-subs/no-subs-found.png)
+   > ![Non sono state trovate nuove sottoscrizioni mensili](_img/add-monthly-subs/no-subs-found.png "Messaggio di errore che indica che non è disponibile alcuna sottoscrizione di Azure o sottoscrizioni di Visual Studio.")
 1. Se vengono rilevate nuove sottoscrizioni mensili, verrà visualizzato un messaggio di conferma
    > [!div class="mx-imgBorder"]
-   > ![Messaggio di conferma aggiunto alle sottoscrizioni](_img/add-monthly-subs/subs-added-confirmation.png)
+   > ![Messaggio di conferma aggiunto alle sottoscrizioni](_img/add-monthly-subs/subs-added-confirmation.png "Un messaggio di conferma visualizzerà le sottoscrizioni aggiunte.")
 
 ## <a name="things-to-keep-in-mind"></a>Aspetti da considerare
 - L'opzione per aggiungere nuove sottoscrizioni mensili sarà disponibile solo la prima volta che si acquistano.  Dopo aver aggiunto le sottoscrizioni mensili, si verificheranno nuove sottoscrizioni ogni volta che si accede al portale. 

@@ -1,18 +1,18 @@
 ---
-title: Migliorare subito le competenze di data science con il vantaggio DataCamp in sottoscrizioni selezionate di Visual Studio. | Microsoft Docs
+title: Aumenta le competenze data science con datacamp nelle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
 ms.date: 04/17/2020
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione di training di DataCamp inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 49370b4b3425effc4b8eeef704684420edfd3d41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b164dc4be4a06151b970ecd5522b82bde9aaeec7
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904512"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561494"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Vantaggio per il training DataCamp nelle sottoscrizioni di Visual Studio
 Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp.  Con DataCamp è possibile acquisire tutte le competenze di data science dal browser con la massima comodità, scegliendo personalmente il momento e l'argomento del training. Senza software da installare e senza requisiti hardware speciali, l'apprendimento di data science è più semplice che mai.

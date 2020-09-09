@@ -8,16 +8,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d50f8fcad0294adec032322229e9dd6cedac2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 147a7dbc029ae894a0054837e92feb0108dc19b4
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88508080"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561588"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Eseguire gli strumenti di profilatura con o senza il debugger
 
-Visual Studio offre una vasta gamma di strumenti di misurazione delle prestazioni e di profilatura. Alcuni strumenti, come l'utilizzo della CPU e l'utilizzo della memoria, possono essere eseguiti con o senza il debugger e nelle configurazioni della build di rilascio o di debug. Gli strumenti del profiler delle prestazioni come Sequenza temporale applicazione possono essere eseguiti in build di debug o di rilascio. Gli strumenti integrati nel debugger, come la finestra Strumenti di diagnostica e la scheda eventi, vengono eseguiti solo durante le sessioni di debug.
+Visual Studio offre una vasta gamma di strumenti di misurazione delle prestazioni e di profilatura. Alcuni strumenti, come l'utilizzo della CPU e l'utilizzo della memoria, possono essere eseguiti con o senza il debugger e nelle configurazioni della build di rilascio o di debug. Gli strumenti visualizzati nella [finestra strumenti di diagnostica](../profiling/profiling-feature-tour.md#view-performance-while-debugging) vengono eseguiti solo durante una sessione di debug. Gli strumenti visualizzati nel [Profiler delle prestazioni](../profiling/profiling-feature-tour.md#post_mortem) vengono eseguiti senza il debugger e si analizzano i risultati dopo aver scelto di arrestare e raccogliere i dati (per l'analisi post-mortem).
 
 >[!NOTE]
 >È possibile usare gli strumenti per le prestazioni non inclusi nel debugger con Windows 7 e versioni successive. Per eseguire gli strumenti di profilatura integrati nel debugger è necessario Windows 8 o versione successiva.
@@ -46,6 +46,11 @@ Quando si avvia il debug in Visual Studio selezionando **debug**  >  **Avvia deb
 - Se si esegue Visual Studio Enterprise, è possibile abilitare o disabilitare IntelliTrace passando a **strumenti**  >  **Opzioni**  >  **IntelliTrace**.
 
 La sessione di diagnostica termina quando si interrompe il debug.
+
+Per altre informazioni, vedere:
+
+- [Misurare le prestazioni dell'applicazione analizzando l'utilizzo della CPU](../profiling/beginners-guide-to-performance-profiling.md)
+- [Misurare l'utilizzo della memoria in Visual Studio](../profiling/memory-usage.md)
 
 ### <a name="the-events-tab"></a>Scheda Eventi
 
@@ -86,6 +91,15 @@ Per raccogliere dati sulle prestazioni senza debug, è possibile eseguire gli st
 È possibile salvare i report e aprirli dall'elenco **sessioni aperte di recente** nella pagina di avvio strumenti di diagnostica.
 
 ![Screenshot della Strumenti di diagnostica elenco di sessioni aperte di recente](../profiling/media/diaghubopenexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
+
+Per altre informazioni, vedere:
+
+- [Analizzare l'utilizzo della CPU](../profiling/cpu-usage.md)
+- [Analizzare l'utilizzo della memoria per il codice .NET](../profiling/dotnet-alloc-tool.md)
+- [Analizzare l'utilizzo della memoria](../profiling/analyze-memory-usage.md)
+- [Analizzare le prestazioni del codice asincrono .NET](../profiling/analyze-async.md)
+- [Analizzare le prestazioni del database](../profiling/analyze-database.md)
+- [Analizzare l'utilizzo della GPU](../profiling/gpu-usage.md)
 
 ## <a name="collect-profiling-data-from-the-command-line"></a>Raccogliere i dati di profilatura dalla riga di comando
 
