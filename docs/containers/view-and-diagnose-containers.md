@@ -1,5 +1,5 @@
 ---
-title: Log del contenitore Docker, variabili di ambiente e accesso al file System
+title: Visualizzare e diagnosticare contenitori e immagini Docker
 description: Viene descritto come migliorare la capacità di eseguire il debug e la diagnosi delle app basate su contenitori in Visual Studio usando una finestra degli strumenti per vedere cosa accade all'interno dei contenitori che ospitano l'app.
 author: ghogen
 ms.author: ghogen
@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 45ef2d8f68ac951cc58040abb72e136b42f3b49c
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 626666fc912fcff85fcfcc49425d59018778d1f6
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490300"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742779"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Come visualizzare e diagnosticare contenitori e immagini in Visual Studio
 
@@ -108,7 +108,7 @@ Per rimuovere un'immagine, fare clic con il pulsante destro del mouse sull'immag
 
 Per altre informazioni sugli strumenti contenitore disponibili in Visual Studio, vedere [Panoramica degli strumenti](overview.md)per i contenitori.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Sviluppo di contenitori in Visual Studio](./index.yml)
 

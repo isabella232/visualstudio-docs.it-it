@@ -1,5 +1,5 @@
 ---
-title: Supporto per la finestra auto in un servizio di linguaggio legacy | Microsoft Docs
+title: Supportare la finestra auto in un servizio di linguaggio legacy
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75f8c761721dde5dad4bb75b8675f71f678b06df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3567739dabe68bc028a1bb935337c149637cfd20
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704889"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741463"
 ---
-# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Supporto per la finestra Auto in un servizio di linguaggio legacy
+# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Supporto per la finestra auto in un servizio di linguaggio legacy
+
 Nella finestra **auto** vengono visualizzate espressioni come variabili e parametri nell'ambito quando il programma di cui è in corso il debug viene sospeso (a causa di un punto di interruzione o di un'eccezione). Le espressioni possono includere variabili, locali o globali e parametri modificati nell'ambito locale. La finestra **auto** può includere anche le creazioni di istanze di una classe, di una struttura o di un altro tipo. Qualsiasi elemento che può essere valutato da un analizzatore di espressioni può essere potenzialmente visualizzato nella finestra **auto** .
 
  Il Framework di pacchetto gestito (MPF) non fornisce il supporto diretto per la finestra **auto** . Tuttavia, se si esegue l'override del <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> metodo, è possibile restituire un elenco di espressioni da presentare nella finestra **auto** .
 
 ## <a name="implementing-support-for-the-autos-window"></a>Implementazione del supporto per la finestra auto
+
  Per supportare la finestra **auto** è sufficiente implementare il <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> metodo nella <xref:Microsoft.VisualStudio.Package.LanguageService> classe. L'implementazione deve decidere, data una posizione nel file di origine, in cui le espressioni devono essere visualizzate nella finestra **auto** . Il metodo restituisce un elenco di stringhe in cui ogni stringa rappresenta una singola espressione. Un valore restituito di <xref:Microsoft.VisualStudio.VSConstants.S_OK> indica che l'elenco contiene espressioni, mentre <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> indica che non sono presenti espressioni da visualizzare.
 
  Le espressioni effettive restituite sono i nomi delle variabili o dei parametri visualizzati in tale posizione nel codice. Questi nomi vengono passati all'analizzatore di espressioni per ottenere i valori e i tipi che vengono quindi visualizzati nella finestra **auto** .

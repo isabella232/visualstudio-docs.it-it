@@ -1,17 +1,18 @@
 ---
 title: Strumenti contenitore di Visual Studio con ASP.NET Core e React.js
+titleSuffix: ''
 author: ghogen
 description: Informazioni su come usare gli strumenti contenitore di Visual Studio e Docker per Windows
 ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: d92d3a22570fb21381f18f2ce353dbc2d999893b
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 2ac295982bb6ac0f6eaf6408106e3d95024af14d
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485398"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741881"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Guida introduttiva: usare Docker con un'app a singola pagina React in Visual Studio
 
@@ -236,7 +237,7 @@ Al termine del ciclo di sviluppo e debug dell'app, è possibile creare un'immagi
 
     ![Finestra di dialogo Creare un'istanza di Registro Azure Container di Visual Studio][0]
 
-1. Scegliere **Crea**.
+1. Fare clic su **Crea**.
 
    ![Screenshot che indica l'esito positivo della pubblicazione](media/container-tools/publish-succeeded.png)
 

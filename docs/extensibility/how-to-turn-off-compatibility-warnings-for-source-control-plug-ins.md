@@ -1,5 +1,5 @@
 ---
-title: Disabilitare gli avvisi di compatibilità per i plug-in del controllo del codice sorgente | Microsoft Docs
+title: Disattiva gli avvisi per i plug-in del controllo del codice sorgente
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22dd3821426aa1dae6265c520ddac60dd93e1c5e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33cf57aa86608cca96924faa2caeb9eec7fbdc0e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710717"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742766"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Procedura: disattivare gli avvisi di compatibilità per i plug-in del controllo del codice sorgente
+
 Un utente può visualizzare diversi avvisi di compatibilità quando utilizza il controllo del codice sorgente in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Gli avvisi presentati dipendono dalle funzionalità del plug-in del controllo del codice sorgente e possono essere disabilitati come descritto in dettaglio qui.
 
 ### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>Per disabilitare l'avviso: "per garantire l'integrazione ottimale del controllo del codice sorgente con Visual Studio"
@@ -42,4 +43,5 @@ Un utente può visualizzare diversi avvisi di compatibilità quando utilizza il 
      È preferibile supportare la rientranza ( `SCC_CAP_REENTRANT` funzionalità); in questo modo verrà rimosso questo avviso. Tuttavia, se il supporto non è possibile, è possibile impostare queste voci del registro di sistema.
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Flag funzionalità](../extensibility/capability-flags.md)

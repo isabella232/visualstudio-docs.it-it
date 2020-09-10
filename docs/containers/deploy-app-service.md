@@ -1,6 +1,6 @@
 ---
-title: Distribuire un contenitore Docker ASP.NET Core al servizio app Azure | Microsoft Docs
-description: Informazioni su come usare gli strumenti del contenitore di Visual Studio per distribuire un'app Web ASP.NET Core al servizio app Azure
+title: Distribuire un contenitore ASP.NET Core per app Azure servizio
+description: Informazioni su come usare gli strumenti del contenitore di Visual Studio per distribuire un'app Web ASP.NET Core in un contenitore Docker per app Azure servizio
 author: ghogen
 manager: jillfra
 ms.technology: vs-azure
@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 43bd06fba795c09bfa341ce7b61a3ced0fe15214
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3a0742daa1f5e6e6510f5fa5d7f56d76c1eb4da
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86454163"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741868"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Distribuire un contenitore ASP.NET Core al servizio app Azure con Visual Studio
 

@@ -1,5 +1,5 @@
 ---
-title: Proprietà personalizzate del documento in un servizio di linguaggio legacy | Microsoft Docs
+title: Proprietà personalizzate del documento nei servizi di linguaggio legacy
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b3db7f4cfa45ea96e3da3056f39c2a5c78a25ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3605658dc7baa45579cc47ccfbf824c3099aa63
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708963"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741814"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Proprietà personalizzate del documento in un servizio di linguaggio legacy
 Le proprietà del documento possono essere visualizzate nella [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] finestra **Proprietà** . I linguaggi di programmazione non dispongono in genere di proprietà associate a singoli file di origine. Tuttavia, XML supporta le proprietà del documento che interessano la codifica, lo schema e il foglio di stile.

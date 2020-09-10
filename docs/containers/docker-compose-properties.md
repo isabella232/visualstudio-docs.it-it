@@ -1,17 +1,17 @@
 ---
-title: Strumenti contenitore di Visual Studio Docker Compose impostazioni di compilazione
+title: Impostazioni di compilazione Docker Compose
 author: ghogen
 description: Panoramica del processo di compilazione degli strumenti contenitore
 ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 6d352461fd6ad96ae40d9c38a250c93018b1cd9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: deed01e2aa719df7ffeb038f022ef9d6d4b8cc71
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283151"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741864"
 ---
 # <a name="docker-compose-build-properties"></a>Proprietà di compilazione Docker Compose
 
@@ -37,13 +37,13 @@ Nella tabella seguente vengono illustrate le proprietà MSBuild disponibili per 
 |---------------|----------|-------------|----------------|
 |AdditionalComposeFilePaths|dcproj|Specifica i file di composizione aggiuntivi in un elenco delimitato da punti e virgola da inviare al docker-compose.exe per tutti i comandi. Sono consentiti percorsi relativi dal file di progetto Docker-compose (dcproj).|-|
 |DockerComposeBaseFilePath|dcproj|Specifica la prima parte dei nomi file dei file Docker-compose, senza l'estensione *yml* . Ad esempio: <br>1. DockerComposeBaseFilePath = null/undefined: usare il percorso del file di base *Docker-compose*e i file verranno denominati *Docker-compose. yml* e *Docker-compose. override. yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*: i file verranno denominati *mydockercompose. yml* e *mydockercompose. override. yml*<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose*: i file saranno di un livello superiore. |Docker-compose|
-|DockerComposeBuildArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose build` comando. Ad esempio: `--parallel --pull` |
-|DockerComposeDownArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose down` comando. Ad esempio: `--timeout 500`|-|  
+|DockerComposeBuildArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose build` comando. Ad esempio, usare `--parallel --pull` |
+|DockerComposeDownArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose down` comando. Ad esempio, usare `--timeout 500`|-|  
 |DockerComposeProjectPath|csproj o vbproj|Percorso relativo del file del progetto Docker-compose (dcproj). Impostare questa proprietà quando si pubblica il progetto di servizio per trovare le impostazioni di compilazione dell'immagine associate archiviate nel file Docker-compose. yml.|-|
-|DockerComposeUpArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose up` comando. Ad esempio: `--timeout 500`|-|
+|DockerComposeUpArguments|dcproj|Specifica i parametri aggiuntivi da passare al `docker-compose up` comando. Ad esempio, usare `--timeout 500`|-|
 |DockerDevelopmentMode|dcproj| Controlla se è abilitata l'ottimizzazione "compilazione su host" (debug in modalità rapida).  I valori consentiti sono **veloce** e **normale**. | Veloce |
 |DockerLaunchAction| dcproj | Specifica l'azione di avvio da eseguire in F5 o CTRL + F5.  I valori consentiti sono None, LaunchBrowser e LaunchWCFTestClient|Nessuno|
-|DockerLaunchBrowser| dcproj | Indica se avviare il browser. Viene ignorato se viene specificato DockerLaunchAction. | Falso |
+|DockerLaunchBrowser| dcproj | Indica se avviare il browser. Viene ignorato se viene specificato DockerLaunchAction. | False |
 |DockerServiceName| dcproj|Se vengono specificati DockerLaunchAction o DockerLaunchBrowser, DockerServiceName è il nome del servizio che deve essere avviato.  Usare questa proprietà per determinare il numero potenzialmente elevato di progetti a cui può fare riferimento un file Docker-compose.|-|
 |DockerServiceUrl| dcproj | URL da utilizzare all'avvio del browser.  I token di sostituzione validi sono "{ServiceIPAddress}", "{ServicePort}" e "{Scheme}".  Ad esempio: {Scheme}://{ServiceIPAddress}: {ServicePort}|-|
 |DockerTargetOS| dcproj | Sistema operativo di destinazione usato durante la compilazione dell'immagine docker.|-|

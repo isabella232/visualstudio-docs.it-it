@@ -1,5 +1,5 @@
 ---
-title: Applicazione delle impostazioni tra più connessioni di progetto | Microsoft Docs
+title: Applicare le impostazioni tra più connessioni di progetto
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bcaed0f7f2380dd36bcbffd776839025fe9efa16
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c88a5140bf72f6801d4c7a92ebd910f410aabfb
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710057"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741518"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Applicazione delle impostazioni tra più connessioni di progetto
 Un plug-in del controllo del codice sorgente compilato con l'API del plug-in del controllo del codice sorgente versione 1,2, può usare un'operazione batch per eseguire la stessa operazione del controllo del codice sorgente tra più progetti o più contesti di connessione. I batch possono essere usati per eliminare le finestre di dialogo ridondanti per progetto dall'esperienza utente.

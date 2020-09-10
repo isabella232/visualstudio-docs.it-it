@@ -1,5 +1,5 @@
 ---
-title: Registrazione delle estensioni di file per le distribuzioni side-by-side | Microsoft Docs
+title: Registrare le estensioni del nome file per gli IDE affiancati
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6717625a44b48a25d293f68d01cd9fa3c7c24853
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68c343646055e6ce877d7bd15892ab1db0d0cbc5
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701546"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741699"
 ---
 # <a name="register-file-name-extensions-for-side-by-side-deployments"></a>Registrare le estensioni di file per le distribuzioni side-by-side
 Per i pacchetti VSPackage distribuiti in un ambiente affiancato, è necessario registrare le estensioni dei nomi di file per associare i file alla versione corretta di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . A meno che non si usi un'estensione di file specifica della versione, la registrazione consente agli utenti di aprire i file di progetto e degli elementi di progetto nella versione appropriata di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .

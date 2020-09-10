@@ -1,5 +1,5 @@
 ---
-title: Supporto per la barra di spostamento in un servizio di linguaggio legacy | Microsoft Docs
+title: Supporto della barra di spostamento in un servizio di linguaggio legacy
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f86dabb0594b1e33c45808efb387fcbe313e3de3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f22aaf552cc69074c500508621ab4d9e288ef449
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704854"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741896"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Supporto per la barra di spostamento in un servizio di linguaggio legacy
 La barra di navigazione nella parte superiore della visualizzazione dell'editor consente di visualizzare i tipi e i membri del file. I tipi vengono visualizzati nell'elenco a discesa a sinistra e i membri vengono visualizzati nell'elenco a discesa a destra. Quando l'utente seleziona un tipo, il punto di inserimento viene inserito nella prima riga del tipo. Quando l'utente seleziona un membro, il punto di inserimento viene inserito nella definizione del membro. Le caselle di riepilogo a discesa vengono aggiornate in modo da riflettere la posizione corrente del punto di inserimento.

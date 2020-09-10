@@ -2,6 +2,7 @@
 title: 'Procedura dettagliata: Uso di MSBuild | Microsoft Docs'
 ms.date: 03/20/2019
 ms.topic: conceptual
+ms.custom: contperfq1
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
@@ -10,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 310fa3b6795a5e340dcd9c7fa40cb27807c132ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c04344e361bea15c39b092c59e76d1853e3969e2
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82072541"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89738321"
 ---
 # <a name="walkthrough-use-msbuild"></a>Procedura dettagliata: Usare MSBuild
 
@@ -184,7 +185,7 @@ Per compilare la destinazione HelloWorld definita sopra, eseguire MSBuild dal **
 </PropertyGroup>
 ```
 
- Tutte le proprietà sono elementi figlio degli elementi PropertyGroup. Il nome della proprietà è il nome dell'elemento figlio e il valore della proprietà è l'elemento testo dell'elemento figlio. Ad esempio:
+ Tutte le proprietà sono elementi figlio degli elementi PropertyGroup. Il nome della proprietà è il nome dell'elemento figlio e il valore della proprietà è l'elemento testo dell'elemento figlio. Ad esempio,
 
 ```xml
 <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -250,7 +251,7 @@ Usare questa sintassi per esaminare alcune delle proprietà nel file di progetto
 
 ### <a name="conditional-properties"></a>Proprietà condizionali
 
-Molte proprietà come `Configuration` sono definite in modo condizionale, ovvero l' `Condition` attributo viene visualizzato nell'elemento Property. Le proprietà condizionali vengono definite o ridefinite solo se la condizione restituisce "true". Si noti che alle proprietà non definite viene assegnato il valore predefinito di una stringa vuota. Ad esempio:
+Molte proprietà come `Configuration` sono definite in modo condizionale, ovvero l' `Condition` attributo viene visualizzato nell'elemento Property. Le proprietà condizionali vengono definite o ridefinite solo se la condizione restituisce "true". Si noti che alle proprietà non definite viene assegnato il valore predefinito di una stringa vuota. Ad esempio,
 
 ```xml
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -322,7 +323,7 @@ Per altre informazioni, vedere [caratteri speciali di MSBuild](../msbuild/msbuil
 
 Un elemento è un'informazione, in genere un nome file, usata come input per il sistema di compilazione. Ad esempio, una raccolta di elementi che rappresentano file di origine potrebbe venire passata a un'attività denominata Compile per compilarli in un assembly.
 
-Tutti gli elementi sono elementi figlio degli elementi ItemGroup. Il nome dell'elemento è il nome dell'elemento figlio e il valore dell'elemento è il valore dell'attributo Include dell'elemento figlio. I valori degli elementi con lo stesso nome vengono raccolti in tipi di elemento con tale nome.  Ad esempio:
+Tutti gli elementi sono elementi figlio degli elementi ItemGroup. Il nome dell'elemento è il nome dell'elemento figlio e il valore dell'elemento è il valore dell'attributo Include dell'elemento figlio. I valori degli elementi con lo stesso nome vengono raccolti in tipi di elemento con tale nome.  Ad esempio,
 
 ```xml
 <ItemGroup>
@@ -419,7 +420,7 @@ Modificare l'attività Message per usare ritorni a capo e avanzamenti riga (%0A%
 
 ### <a name="include-exclude-and-wildcards"></a>Include, Exclude e caratteri jolly
 
- È possibile usare i caratteri jolly "*", "\*\*" e "?" con l'attributo Include per aggiungere elementi a un tipo di elemento. Ad esempio:
+ È possibile usare i caratteri jolly "*", "\*\*" e "?" con l'attributo Include per aggiungere elementi a un tipo di elemento. Ad esempio,
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -433,7 +434,7 @@ Modificare l'attività Message per usare ritorni a capo e avanzamenti riga (%0A%
 
  aggiunge tutti i file con estensione *. jpeg* nella cartella *images* e in tutte le relative sottocartelle al tipo di elemento Photos. Per altri esempi, vedere [procedura: selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md).
 
- Si noti che gli elementi, quando vengono dichiarati, vengono aggiunti al tipo di elemento. Ad esempio:
+ Si noti che gli elementi, quando vengono dichiarati, vengono aggiunti al tipo di elemento. Ad esempio,
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -446,7 +447,7 @@ Modificare l'attività Message per usare ritorni a capo e avanzamenti riga (%0A%
 <Photos Include="images\*.jpeg;images\*.gif" />
 ```
 
- È possibile escludere un elemento da un tipo di elemento con l'attributo Exclude. Ad esempio:
+ È possibile escludere un elemento da un tipo di elemento con l'attributo Exclude. Ad esempio,
 
 ```xml
 <Compile Include="*.cs" Exclude="*Designer*">
@@ -454,7 +455,7 @@ Modificare l'attività Message per usare ritorni a capo e avanzamenti riga (%0A%
 
  aggiunge tutti i file con estensione *cs* al tipo di elemento Compile, tranne i file i cui nomi contengono la stringa *Designer*. Per altri esempi, vedere [procedura: escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md).
 
-L'attributo Exclude interessa solo gli elementi aggiunti dall'attributo Include nell'elemento item che li contiene entrambi. Ad esempio:
+L'attributo Exclude interessa solo gli elementi aggiunti dall'attributo Include nell'elemento item che li contiene entrambi. Ad esempio,
 
 ```xml
 <Compile Include="*.cs" />

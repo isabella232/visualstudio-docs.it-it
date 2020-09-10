@@ -1,5 +1,5 @@
 ---
-title: Usare DataRelation per creare relazioni tra set di impostazioni
+title: Creare relazioni tra set di dati
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 95476e56ceecfca84251c1b43cf0bb9ddf84f8b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6c30fb068a9a25c3cd8a6b6237aefbccc666e49e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281760"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739232"
 ---
 # <a name="create-relationships-between-datasets"></a>Creare relazioni tra set di dati
 I set di dati che contengono tabelle di dati correlate utilizzano <xref:System.Data.DataRelation> oggetti per rappresentare una relazione padre/figlio tra le tabelle e per restituire record correlati gli uni dagli altri. L'aggiunta di tabelle correlate ai set di dati tramite la **Configurazione guidata origine dati**o la **Progettazione DataSet**crea e configura automaticamente l' <xref:System.Data.DataRelation> oggetto.
@@ -55,7 +55,7 @@ Come parte del vincolo FOREIGN KEY, è possibile specificare le regole di integr
 
 Le regole che è possibile apportare sono specificate nell' <xref:System.Data.Rule> enumerazione e sono elencate nella tabella seguente.
 
-|Regola vincolo di chiave esterna|Action|
+|Regola vincolo di chiave esterna|Azione|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|La modifica (aggiornamento o eliminazione) apportata al record padre viene inoltre apportata in record correlati nella tabella figlio.|
 |<xref:System.Data.Rule.SetNull>|I record figlio non vengono eliminati, ma la chiave esterna nei record figlio viene impostata su <xref:System.DBNull> . Con questa impostazione, i record figlio possono essere lasciati come "orfani", ovvero non hanno alcuna relazione con i record padre. **Nota:** L'utilizzo di questa regola può generare dati non validi nella tabella figlio.|

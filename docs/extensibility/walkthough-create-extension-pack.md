@@ -1,5 +1,6 @@
 ---
-title: Creare un pacchetto di estensione con il modello di elemento del pacchetto di estensione | Microsoft Docs
+title: Creare un pacchetto di estensione
+description: Informazioni su come creare un pacchetto di estensione con il modello di elemento del pacchetto di estensione
 ms.date: 07/27/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa1c141e18a3870eaad4b155d816e30ee207f45d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5a0021061aefceafc2b048a3e231d9c0300db7b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697755"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742921"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Procedura dettagliata: Creare un pacchetto di estensione
 
@@ -31,7 +32,7 @@ La funzionalità pacchetto di estensione è disponibile a partire da Visual Stud
 
 Il modello di elemento del pacchetto di estensione crea un pacchetto di estensione con un set di estensioni che possono essere installate insieme.
 
-1. Nella finestra di dialogo **nuovo progetto** cercare "VSIX" e selezionare **progetto VSIX**. Per **nome progetto**, digitare "Test Extension Pack". Selezionare **Crea**.
+1. Nella finestra di dialogo **nuovo progetto** cercare "VSIX" e selezionare **progetto VSIX**. Per **nome progetto**, digitare "Test Extension Pack". Selezionare **Create** (Crea).
 
 2. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Passare al nodo **estensibilità** di Visual C# e selezionare **pacchetto di estensione**. Lasciare il nome file predefinito (ExtensionPack1.cs).
 
@@ -83,7 +84,7 @@ Ora che l'estensione è pubblicata, installarla in Visual Studio ed eseguirne il
 
 2. Fare clic su **online** e quindi cercare "Test Extension Pack".
 
-3. Fare clic su **Scarica**. L'estensione e l'elenco delle estensioni incluse nel pacchetto di estensione verranno quindi pianificate per l'installazione.
+3. Fare clic su **Download**. L'estensione e l'elenco delle estensioni incluse nel pacchetto di estensione verranno quindi pianificate per l'installazione.
 
 4. Di seguito è riportata una visualizzazione di download del pacchetto di estensione di esempio della finestra di dialogo **Gestisci estensioni** . Se si preferisce installare solo alcune estensioni incluse nel pacchetto di estensione, è possibile modificare l'elenco di estensioni in **pianificato per l'installazione**.
 

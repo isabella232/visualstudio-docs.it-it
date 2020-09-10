@@ -1,5 +1,5 @@
 ---
-title: Esplorare e gestire le risorse di archiviazione con Esplora server | Microsoft Docs
+title: Esplorare e gestire le risorse di archiviazione
 description: Esplorazione e gestione delle risorse di archiviazione con Esplora server
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 8702b9814214a902a644cc5854250b600c301caa
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 6e75a3822df6a5867e48693024637b901d40282b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508444"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739995"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Esplorare e gestire le risorse di archiviazione usando Esplora server
 
@@ -262,7 +262,7 @@ Sono disponibili due modi per aggiungere gli account di archiviazione usando Esp
 
    ![Creare un account di archiviazione di Azure](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. Selezionare **Crea**.
+1. Selezionare **Create** (Crea).
 
 Il nuovo account di archiviazione viene visualizzato nell'elenco **Archiviazione** di Esplora soluzioni.
 

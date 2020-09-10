@@ -1,5 +1,5 @@
 ---
-title: "&apos;Novità dell'API del plug-in del controllo del codice sorgente versione 1,3 | Microsoft Docs"
+title: "&apos;Novità dell'API del plug-in del controllo del codice sorgente 1,3"
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec24e9ee3079d3b02ac13759b6ab5bdee8c07a84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0eb580d018bbb858cd0214970bdba3d4ab4f391c
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88706451"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741540"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Novità dell'API del plug-in del controllo del codice sorgente versione 1,3&#39;
 L'API del plug-in del controllo del codice sorgente versione 1,3 introduce le nuove funzioni seguenti per fornire un controllo più avanzato.
@@ -24,7 +24,7 @@ L'API del plug-in del controllo del codice sorgente versione 1,3 introduce le nu
 ## <a name="changes"></a>Modifiche
  Le seguenti funzioni sono nuove per l'API del plug-in del controllo del codice sorgente versione 1,3:
 
-|Funzione|Panoramica|
+|Function|Panoramica|
 |--------------|--------------|
 |[SccGetExtendedCapabilities](../../extensibility/sccgetextendedcapabilities-function.md)|Consente di segnalare i bit aggiuntivi della funzionalità|
 |[SccEnumChangedFiles](../../extensibility/sccenumchangedfiles-function.md)|Consente di esaminare i file con versioni più recenti nel database di controllo della versione rispetto al disco locale|

@@ -1,5 +1,5 @@
 ---
-title: CATID per gli oggetti che in genere vengono usati per estendere i progetti | Microsoft Docs
+title: CATID per gli oggetti utilizzati generalmente per estendere i progetti
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5754e53f24731eb44dba128ccfcf4b474e833d16
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf67b12288408feebebff2c33f525713416d4990
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709871"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742835"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATID per gli oggetti che in genere vengono usati per estendere i progetti
 Nella tabella seguente sono elencati i CATID utilizzati per estendere `Project` e `ProjectItem` gli oggetti di automazione per i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] progetti, e [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] . Questi CATID sono definiti in *VSLangProj. olb*.
