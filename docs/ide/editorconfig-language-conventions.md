@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 3fa32e6155959df6e665a807af3b364923ba3f54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9c7da96df8c68de0b9f6ba3e341d93596200934
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533458"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641482"
 ---
 # <a name="language-conventions"></a>Convenzioni del linguaggio
 
@@ -1050,6 +1050,30 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 | **Valori** | `true` -Preferisco è un metodo di verifica dell'uguaglianza dei riferimenti null<br /><br />`false` -Preferisci il metodo di uguaglianza dei riferimenti per è il controllo null |
 | **Impostazione predefinita di Visual Studio** | `true:silent` |
 
+Esempi di codice:
+
+```csharp
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+if (value is null)
+    return;
+
+// dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+if (object.ReferenceEquals(value, null))
+    return;
+```
+
+```vb
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = true
+If value Is Nothing
+    Return
+End If
+
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = false
+If Object.ReferenceEquals(value, Nothing)
+    Return
+End If
+```
+
 ## <a name="net-code-quality-settings"></a>Impostazioni di qualità del codice .NET
 
 Le regole di qualità illustrate in questa sezione si applicano al codice C# e Visual Basic. Vengono usate per configurare gli analizzatori del codice integrati nell'IDE (Integrated Development Environment) di Visual Studio. Per informazioni sulla configurazione di analizzatori FxCop con un file EditorConfig, vedere [Configurare gli analizzatori FxCop](../code-quality/configure-fxcop-analyzers.md).
@@ -1934,7 +1958,7 @@ switch (x)
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Convenzioni di formattazione](editorconfig-formatting-conventions.md)
 - [Convenzioni di denominazione](editorconfig-naming-conventions.md)

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7125be46a894072f034bf1fce3060d2bda564aff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20524a02cf6ff38e8336ae715162f9f197d46590
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800833"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641639"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Distribuire l'app in una cartella, IIS, Azure o un'altra destinazione
 
@@ -84,7 +84,7 @@ Le [macchine virtuali (VM) di Azure](https://azure.microsoft.com/documentation/s
 
 Il ridimensionamento di un'applicazione ospitata in macchine virtuali comporta l'attivazione di altre macchine virtuali in base alla richiesta e quindi la distribuzione del software necessario. Questo livello di controllo aggiuntivo consente di ridimensionare le macchine in modo diverso nelle diverse aree geografiche globali. Se ad esempio l'applicazione viene usata da dipendenti dislocati in varie sedi regionali, è possibile ridimensionare le macchine virtuali in base al numero di dipendenti di quelle sedi, potenzialmente riducendo i costi.
 
-Per altre informazioni, vedere il [confronto dettagliato](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) tra Servizio app di Azure, Macchine virtuali di Azure e altri servizi di Azure che è possibile usare come destinazione della distribuzione usando l'opzione Personalizzata in Visual Studio.
+Per altre informazioni, vedere il [confronto dettagliato](/azure/architecture/guide/technology-choices/compute-decision-tree) tra Servizio app di Azure, Macchine virtuali di Azure e altri servizi di Azure che è possibile usare come destinazione della distribuzione usando l'opzione Personalizzata in Visual Studio.
 
 #### <a name="when-to-choose-azure-virtual-machines"></a>Quando scegliere macchine virtuali di Azure
 

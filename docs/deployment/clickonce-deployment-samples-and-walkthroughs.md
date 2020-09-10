@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 651f981117cdd9b9cfb26aae61bbd4e2747e921d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8083ed11537975bfd05f546843264881fe7a7aa0
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900386"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641472"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Esempi e procedure dettagliate relative alla distribuzione ClickOnce
 In questa sezione sono incluse applicazioni di esempio, codice di esempio e procedure dettagliate che illustrano la sintassi, la struttura e le tecniche utilizzate per distribuire Windows Forms, WPF e applicazioni console.
@@ -37,6 +37,6 @@ In questa sezione sono incluse applicazioni di esempio, codice di esempio e proc
 |[Scaricare assembly su richiesta con l'API della distribuzione ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Viene illustrato come contrassegnare determinati assembly nell'applicazione come "facoltativi" e come scaricarli usando le classi nello <xref:System.Deployment.Application> spazio dei nomi.|
 |[Scaricare assembly su richiesta con l'API della distribuzione ClickOnce tramite la finestra di progettazione](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Viene spiegato come scaricare gli assembly dell'applicazione solo quando vengono innanzitutto usati dall'applicazione.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Procedure dettagliate di Visual Studio](https://msdn.microsoft.com/library/f5399a1f-2d3d-42fb-b989-134ccda2159f)
+- [Procedure dettagliate di Visual Studio](/previous-versions/szatc41e(v=vs.110))

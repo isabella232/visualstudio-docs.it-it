@@ -11,12 +11,12 @@ manager: MSLukeWest
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: c35e6a12262083d09575b51f6c9f918ba30a27b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a057e655df643c5ddfd85064ba84260a2644dffd
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88714451"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641575"
 ---
 # <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Estensione Visual Studio Installer Projects e .NET Core 3.1
 
@@ -31,7 +31,7 @@ La creazione di pacchetti di applicazioni come MSI viene spesso eseguita utilizz
 
 - Le applicazioni autosufficienti includono il runtime di.
 
-Per ulteriori informazioni su queste strategie di distribuzione, vedere [Cenni preliminari sulla pubblicazione di applicazioni .NET Core](https://docs.microsoft.com/dotnet/core/deploying/).
+Per ulteriori informazioni su queste strategie di distribuzione, vedere [Cenni preliminari sulla pubblicazione di applicazioni .NET Core](/dotnet/core/deploying/).
 
 ### <a name="workflow-changes-for-net-core-31"></a>Modifiche del flusso di lavoro per .NET Core 3,1
 
@@ -54,7 +54,7 @@ Per le applicazioni console **è necessario selezionare** l'opzione **runtime di
 >[!NOTE]
 >Questi elementi sono presenti a partire dalla versione di Visual Studio 2019 Update 7.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Prerequisiti (finestra di dialogo)](../ide/reference/prerequisites-dialog-box.md)
 - [Prerequisiti per la distribuzione dell'applicazione](../deployment/application-deployment-prerequisites.md)
