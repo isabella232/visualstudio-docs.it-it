@@ -1,5 +1,6 @@
 ---
-title: La modifica del tipo restituito di un metodo DataContext non può essere annullata
+title: Impossibile annullare la modifica del tipo restituito
+description: La modifica del tipo restituito di un metodo DataContext non può essere annullata
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 76b161fc-5075-4192-8d94-f15b02e199e9
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80e7407472188ef25d6fd5127179c7ddbce54318
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c759e930bc35b011b22c509cd873d887fb7fdef
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536708"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743171"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>La modifica del tipo restituito di un metodo DataContext non può essere annullata
 
@@ -39,4 +40,4 @@ Il tipo restituito di un metodo <xref:System.Data.Linq.DataContext> varia a seco
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

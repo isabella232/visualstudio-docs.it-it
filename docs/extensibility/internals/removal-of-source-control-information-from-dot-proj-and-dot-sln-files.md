@@ -1,5 +1,5 @@
 ---
-title: Rimuovere le informazioni sul controllo del codice sorgente dai file. proj e. sln
+title: Rimuovi le informazioni sul controllo del codice sorgente dai file. proj e. sln
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,20 +10,23 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba3085a7806bfb0556613d1fca1b94953dcdb0b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54b403d105b1c2b3a3113885189868e8bae4efcc
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705592"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743058"
 ---
-# <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Rimozione delle informazioni del controllo del codice sorgente dai file con estensione proj e sln
+# <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Rimozione delle informazioni sul controllo del codice sorgente dai file. proj e. sln
+
 Nella versione 1,2 dell'API del plug-in del controllo del codice sorgente le informazioni di SCC sono archiviate in un MSSCCPRJ. File SCC. Il vantaggio del MSSCCPRJ. Il file SCC è che le informazioni di SCC non sono controllate dal codice sorgente, ad esempio nei file. proj e. sln.
 
 ## <a name="version-12-changes"></a>Modifiche della versione 1,2
+
  Nei plug-in del controllo del codice sorgente basati sull'API del plug-in del controllo del codice sorgente versione 1,1, le informazioni sul controllo del codice sorgente vengono archiviate nei file di progetto (con estensione proj) e di soluzione (con estensione sln). Il percorso del database delle informazioni sul controllo del codice sorgente è specificato da AuxPath e il percorso specifico all'interno del database è specificato da ProjName. Questo comportamento può causare problemi dopo le operazioni di Branch, fork o copia, perché ProjName in genere non è valido dopo una di queste operazioni.
 
  Nell'API del plug-in del controllo del codice sorgente versione 1,1, l'IDE usava ~ file SAK per rilevare se un plug-in supporta MSSCCPRJ. Metodo SCC per archiviare le informazioni sul controllo del codice sorgente. L'API del plug-in del controllo del codice sorgente versione 1,2 fornisce una nuova funzionalità per il rilevamento del supporto per MSSCCPRJ. File SCC senza usare un file ~ SAK. Per altre informazioni, vedere [eliminazione dei file ~ SAK](../../extensibility/internals/elimination-of-tilde-sak-files.md).
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Novità della versione 1.2 dell'API del plug-in del controllo del codice sorgente](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

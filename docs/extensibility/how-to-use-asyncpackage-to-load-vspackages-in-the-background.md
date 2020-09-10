@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: usare AsyncPackage per caricare i pacchetti VSPackage in background | Microsoft Docs'
+title: Usare AsyncPackage per caricare i pacchetti VSPackage in background
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
@@ -7,12 +7,12 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7727d53c84ab876fe6616c8ec5d438033216481e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1faead5cfc6027c4793b56c9de70b799dd0890b0
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905591"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743324"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Procedura: usare AsyncPackage per caricare i pacchetti VSPackage in background
 Il caricamento e l'inizializzazione di un pacchetto Visual Studio possono comportare l'I/O del disco. Se si verificano operazioni di I/O sul thread dell'interfaccia utente, possono verificarsi problemi di velocità di risposta. Per risolvere questo problema, in Visual Studio 2015 è stata introdotta la  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> classe che consente il caricamento dei pacchetti in un thread in background.

@@ -1,5 +1,5 @@
 ---
-title: Estendere le finestre Proprietà, Elenco attività, output, opzioni
+title: Estendi proprietà, Elenco attività, output, finestre opzioni
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db14068c97ff6868f5fb73c9ddd790020e99e7c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3059dbe1c28f0fd598e1a711952fa0bce8c4edde
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711627"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743347"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Estendere le finestre Proprietà, Elenco attività, output e opzioni
 È possibile accedere a qualsiasi finestra degli strumenti in Visual Studio. In questa procedura dettagliata viene illustrato come integrare le informazioni relative alla finestra degli strumenti in una nuova pagina **Opzioni** e una nuova impostazione nella pagina **Proprietà** e come scrivere nelle finestre di **elenco attività** e **output** .

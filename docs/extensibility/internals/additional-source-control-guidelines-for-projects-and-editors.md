@@ -1,5 +1,5 @@
 ---
-title: Linee guida aggiuntive per il controllo del codice sorgente per progetti ed editor | Microsoft Docs
+title: Linee guida sul controllo del codice sorgente per progetti ed editor
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181f6c10ff7ce95cd3a37151f117353d1bb47d41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b783fdf7231bd3f440686a1bef2a038d9b32f2e4
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710114"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743396"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Linee guida aggiuntive sul controllo del codice sorgente per progetti ed editor
 Esistono diverse linee guida che i progetti e gli editor devono rispettare per supportare il controllo del codice sorgente.
@@ -23,7 +23,7 @@ Esistono diverse linee guida che i progetti e gli editor devono rispettare per s
 ## <a name="guidelines"></a>Indicazioni
  Il progetto o l'editor deve anche eseguire le operazioni seguenti per supportare il controllo del codice sorgente:
 
-|Area|Progetto|Editor|Dettagli|
+|Area|Project|Editor|Dettagli|
 |----------|-------------|------------|-------------|
 |Copie private dei file|X||L'ambiente supporta copie private dei file. Ovvero ogni persona integrata nel progetto ha una propria copia privata dei file presenti in tale progetto.|
 |Persistenza ANSI/Unicode|X|X|Se si scrive il codice di persistenza, salvare in modo permanente i file nel modulo ANSI perché la maggior parte dei programmi di controllo del codice sorgente non supporta attualmente Unicode.|

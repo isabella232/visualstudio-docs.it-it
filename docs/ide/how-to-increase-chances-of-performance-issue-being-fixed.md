@@ -1,16 +1,16 @@
 ---
-title: Come è possibile aumentare le probabilità di correzione di un problema di prestazioni
+title: Aumentare la probabilità di correzione di un problema di prestazioni
 description: Informazioni aggiuntive e procedure consigliate per l'invio di problemi di prestazioni in Visual Studio
 author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 9fc83ac1be1a6c1db7b46845c74a4b0e7bf6017f
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: fac6dd284abc04e8018ba7c36ae3a22022890f95
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509926"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743048"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Come aumentare le probabilità di correzione di un problema di prestazioni
 

@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: collegamento di un tipo di contenuto a un'estensione di file | Microsoft Docs"
+title: Collegare un tipo di contenuto a un'estensione del nome file
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4e5ba3cd82090b5fad76d48c4600e0814bd91eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7224c98c55567ed091b09c1a69e630573eb34be8
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904689"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743220"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Procedura dettagliata: collegare un tipo di contenuto a un'estensione di file
 È possibile definire un tipo di contenuto personalizzato e collegarvi un'estensione di file usando le estensioni dell'editor Managed Extensibility Framework (MEF). In alcuni casi, l'estensione del nome file è già definita da un servizio di linguaggio. Tuttavia, per usarlo con MEF, è comunque necessario collegarlo a un tipo di contenuto.

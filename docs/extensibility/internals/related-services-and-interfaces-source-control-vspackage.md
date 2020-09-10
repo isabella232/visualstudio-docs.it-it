@@ -1,5 +1,6 @@
 ---
-title: Servizi e interfacce correlati (VSPackage del controllo del codice sorgente) | Microsoft Docs
+title: Interfacce e servizi correlati (VSPackage di controllo del codice sorgente)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +12,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 533f1bf4fcfbaebb25ec10908abf4a46ddacd521
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e0806ca278305a530a4f4f3e0d4abdf7977067e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705633"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743071"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Interfacce e servizi correlati (VSPackage di controllo del codice sorgente)
+
 Questa sezione elenca tutte le interfacce correlate a VSPackage del controllo del codice sorgente in [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] . Il pacchetto VSPackage del controllo del codice sorgente implementa alcune di queste interfacce e usa altre per eseguire le attività di controllo del codice sorgente.
 
 ## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Interfacce implementate da e per i pacchetti VSPackage del controllo del codice sorgente
+
  Le interfacce seguenti sono descritte in [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] e il pacchetto VSPackage del controllo del codice sorgente implementa un subset di tali interfacce a seconda del set di funzionalità desiderato. Alcune interfacce sono contrassegnate come obbligatorie e devono essere implementate da ogni VSPackage del controllo del codice sorgente.
 
  Per le interfacce non implementate da un pacchetto, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce un'implementazione predefinita. Si noti che l'implementazione predefinita è progettata per il caso in cui non viene registrato alcun pacchetto VSPackage e non è controllato alcun progetto. Un VSPackage del controllo del codice sorgente scritto correttamente implementa tutte le interfacce necessarie anziché lasciarlo all'implementazione predefinita di tali interfacce.
@@ -40,7 +43,7 @@ Questa sezione elenca tutte le interfacce correlate a VSPackage del controllo de
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | Gli editor chiamano questa interfaccia prima di modificare o salvare un file. Il pacchetto VSPackage del controllo del codice sorgente può estrarre il file o negare l'operazione se l'estrazione ha esito negativo. | VSPackage del controllo del codice sorgente | Consigliato |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> | Questa interfaccia fornisce la funzionalità di base del controllo del codice sorgente per i progetti, ad esempio la registrazione e l'annullamento della registrazione di progetti con il controllo del codice sorgente e il supporto per i glifi di controllo del codice sorgente | VSPackage del controllo del codice sorgente | Necessario |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> | Questa interfaccia viene ottenuta dall' <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> oggetto utilizzando la <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> funzione o semplicemente eseguendo il cast dell'oggetto `IVsHierarchy` che implementa a `IVsSccProject2` . Viene usato per ottenere i file nel controllo del codice sorgente in un progetto o per informare il progetto dello stato o del percorso del controllo del codice sorgente corrente. | Progetto | Necessario |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2> | Questa interfaccia viene ottenuta dall' <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> oggetto utilizzando la <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> funzione o semplicemente eseguendo il cast dell'oggetto `IVsHierarchy` che implementa a `IVsSccProject2` . Viene usato per ottenere i file nel controllo del codice sorgente in un progetto o per informare il progetto dello stato o del percorso del controllo del codice sorgente corrente. | Project | Necessario |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> | Il modulo di integrazione usa questa interfaccia per impostare il pacchetto VSPackage attivo corrente. | VSPackage del controllo del codice sorgente | Necessario |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> | Questa interfaccia è basata su un modello di sottoscrizione. Qualsiasi pacchetto VSPackage può segnalare che desidera ricevere gli eventi del documento ed essere informati dalla shell sugli eventi che stanno per verificarsi. Viene implementato e gestito da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , che a sua volta passa gli eventi che implementano al `IVsTrackProjectDocumentsEvents2` pacchetto VSPackage. | Stub del controllo del codice sorgente | Necessario |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3> | Questa interfaccia fornisce l'elaborazione batch, le operazioni di lettura/scrittura sincronizzate e un `OnQueryAddFiles` metodo avanzato. | Stub del controllo del codice sorgente | Necessario |
@@ -53,7 +56,7 @@ Questa sezione elenca tutte le interfacce correlate a VSPackage del controllo de
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs> | Il pacchetto VSPackage usa questa interfaccia per definire glifi aggiuntivi come glifi del controllo del codice sorgente per i nodi in **Esplora soluzioni**. | VSPackage del controllo del codice sorgente | Facoltativo |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccAddWebProjectFromSourceControl> | Questa interfaccia viene utilizzata dalla finestra di dialogo **Aggiungi** per i progetti Web. Fornisce metodi per l'esplorazione di un percorso del controllo del codice sorgente e per l'apertura di un progetto Web aggiunto in precedenza nel repository del controllo del codice sorgente in quel percorso. | VSPackage del controllo del codice sorgente | Consigliato |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> | Questa interfaccia fornisce il supporto per il caricamento asincrono (in background) dei progetti dal controllo del codice sorgente. | VSPackage del controllo del codice sorgente | Facoltativo |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents> | Questa interfaccia consente ai progetti di controllare lo stato di avanzamento del caricamento asincrono avviato da <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> . | Progetto | Facoltativo |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents> | Questa interfaccia consente ai progetti di controllare lo stato di avanzamento del caricamento asincrono avviato da <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> . | Project | Facoltativo |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccToolsOptions> | Questa interfaccia consente all'IDE di eseguire una query sul VSPackage del controllo del codice sorgente attivo. L'IDE esegue una query sul valore delle impostazioni di controllo del codice sorgente che hanno un significato anche quando non è stato registrato alcun VSPackage del controllo del codice sorgente attivo. Questa interfaccia viene implementata e gestita da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . | Stub del controllo del codice sorgente | Necessario |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> | Questa interfaccia viene utilizzata per la registrazione del pacchetto VSPackage del controllo del codice sorgente. | Stub del controllo del codice sorgente | Necessario |
 | <xref:EnvDTE.SourceControl> | Questa interfaccia viene usata in automazione. Di conseguenza, espone solo le funzioni che possono essere eseguite senza visualizzare alcuna interfaccia utente. | VSPackage del controllo del codice sorgente | Facoltativo |
