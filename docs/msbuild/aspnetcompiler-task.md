@@ -1,5 +1,5 @@
 ---
-title: Uso dell'attività AspNetCompiler per la precompilazione delle applicazioni ASP.NET | Microsoft Docs
+title: Usare l'attività AspNetCompiler per precompilare ASP.NET
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 072d1b94c552b3aca34a1573e5d6545628f6568e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83d120ae4d336300c04111f9fd35448ddda1c739
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82167332"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741634"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler (attività)
 
