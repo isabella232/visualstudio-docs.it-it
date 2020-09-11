@@ -8,16 +8,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6894bcfe3bfab3b0246d716b0bd85152ad17e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83e3b07bc3373070953709ffe913f37529e74bc7
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81744946"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012308"
 ---
 # <a name="manage-universal-windows-projects"></a>Gestire i progetti di Windows universale
 
-Le app di Windows universale sono app destinate a Windows 8.1 e Windows Phone 8,1, consentendo agli sviluppatori di usare codice e altre risorse in entrambe le piattaforme. Il codice condiviso e le risorse vengono conservati in un progetto condiviso, mentre le risorse e il codice specifici della piattaforma vengono conservati in progetti distinti, uno per Windows e l'altro per Windows Phone. Per altre informazioni sulle app di Windows universale, vedere [app di Windows universale](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Le estensioni di Visual Studio per la gestione dei progetti devono tenere presente che i progetti di app di Windows universale hanno una struttura diversa dalle app a piattaforma singola. In questa procedura dettagliata viene illustrato come spostarsi nel progetto condiviso e come gestire gli elementi condivisi.
+Le app di Windows universale sono app destinate a Windows 8.1 e Windows Phone 8,1, consentendo agli sviluppatori di usare codice e altre risorse in entrambe le piattaforme. Il codice condiviso e le risorse vengono conservati in un progetto condiviso, mentre le risorse e il codice specifici della piattaforma vengono conservati in progetti distinti, uno per Windows e l'altro per Windows Phone. Per altre informazioni sulle app di Windows universale, vedere [app di Windows universale](/windows/uwp/get-started/create-uwp-apps). Le estensioni di Visual Studio per la gestione dei progetti devono tenere presente che i progetti di app di Windows universale hanno una struttura diversa dalle app a piattaforma singola. In questa procedura dettagliata viene illustrato come spostarsi nel progetto condiviso e come gestire gli elementi condivisi.
 
 ## <a name="prerequisites"></a>Prerequisiti
 

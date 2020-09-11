@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9067f88b4bf1334e23a548bc6a2cbeb3eac6ad33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 48aa8a729b5cc38d3cee08a7f5ec143d5e84931a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708430"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012530"
 ---
 # <a name="expose-types-to-visual-designers"></a>Esporre i tipi alle finestre di progettazione visiva
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per visualizzare una finestra di progettazione visiva, è necessario avere accesso alle definizioni di classe e di tipo in fase di progettazione. Le classi vengono caricate da un set predefinito di assembly che includono il set di dipendenze completo del progetto corrente (riferimenti più le relative dipendenze). Potrebbe inoltre essere necessario per le finestre di progettazione visiva accedere alle classi e ai tipi definiti nei file generati dagli strumenti personalizzati.
@@ -44,6 +44,6 @@ ms.locfileid: "80708430"
      Quando viene compilato un file PE temporaneo, l'unico file di origine fornito al compilatore è l'output dello strumento personalizzato. Uno strumento personalizzato che usa un file PE temporaneo deve pertanto generare file di output che possono essere compilati indipendentemente da altri file nel progetto.
 
 ## <a name="see-also"></a>Vedere anche
-- [Introduzione all'oggetto BuildManager](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+- [Introduzione all'oggetto BuildManager](/previous-versions/8f9kffa8(v=vs.140))
 - [Implementare generatori di file singoli](../../extensibility/internals/implementing-single-file-generators.md)
 - [Registrare generatori di file singoli](../../extensibility/internals/registering-single-file-generators.md)

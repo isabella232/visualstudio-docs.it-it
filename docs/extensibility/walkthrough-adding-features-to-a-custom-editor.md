@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7605307d24aa320d2f892dc332f9ff78e14114e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dc781160b5cc9cb60da12d063f5b6d11844f3ac
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905942"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012087"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Procedura dettagliata: aggiungere funzionalità a un editor personalizzato
 Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzionalità.
@@ -34,11 +34,11 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
 
 3. Implementare una factory dell'editor impostando l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaccia.
 
-     Per altre informazioni, vedere [Editor Factory](/visualstudio/extensibility/editor-factories?view=vs-2015).
+     Per altre informazioni, vedere [Editor Factory](../vs-2015/extensibility/editor-factories.md?view=vs-2015).
 
 4. Decidere se si vuole che l'editor usi l'attivazione sul posto o l'incorporamento semplificato per gestire la finestra oggetto visualizzazione documento.
 
-     Una finestra Editor di incorporamento semplificata ospita una visualizzazione del documento standard, mentre una finestra dell'editor di attivazione sul posto ospita un controllo ActiveX o un altro oggetto attivo come visualizzazione del documento. Per altre informazioni, vedere [incorporamento semplificato](../extensibility/simplified-embedding.md) e [attivazione sul posto](/visualstudio/misc/in-place-activation?view=vs-2015).
+     Una finestra Editor di incorporamento semplificata ospita una visualizzazione del documento standard, mentre una finestra dell'editor di attivazione sul posto ospita un controllo ActiveX o un altro oggetto attivo come visualizzazione del documento. Per altre informazioni, vedere [incorporamento semplificato](../extensibility/simplified-embedding.md) e [attivazione sul posto](../vs-2015/misc/in-place-activation.md?view=vs-2015).
 
 5. Implementare l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia per gestire i comandi.
 
@@ -115,7 +115,7 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
 
 12. Implementare il supporto della Guida sensibile al contesto.
 
-     Questo passaggio consente di fornire la Guida sensibile al contesto e il supporto della finestra della Guida dinamica per gli elementi dell'editor. Per altre informazioni, vedere [procedura: fornire il contesto per gli editor](/visualstudio/extensibility/how-to-provide-context-for-editors?view=vs-2015).
+     Questo passaggio consente di fornire la Guida sensibile al contesto e il supporto della finestra della Guida dinamica per gli elementi dell'editor. Per altre informazioni, vedere [procedura: fornire il contesto per gli editor](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015).
 
 13. Esporre un modello a oggetti di automazione dall'editor implementando l' `IDispatch` interfaccia.
 

@@ -13,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2761e012d32516265e61c8001491e3c605372ff5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e96af4936f27d869409a7215c720d9bb64e4128
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699028"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012517"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Struttura del file [Content_types].xml
 Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio usa il file [Content_Types]. XML per installare il pacchetto, ma non installa il file stesso.
 
 > [!NOTE]
-> Sebbene questo argomento si riferisca solo ai file [Content_Type]. XML usati nei pacchetti VSIX, il tipo di file [Content_Types]. XML fa parte dello standard *OPC (Open Packaging Conventions)* . Per ulteriori informazioni, vedere [OPC: nuovo standard per la creazione di pacchetti di dati](https://msdn.microsoft.com/magazine/cc163372.aspx) nel sito Web MSDN.
+> Sebbene questo argomento si riferisca solo ai file [Content_Type]. XML usati nei pacchetti VSIX, il tipo di file [Content_Types]. XML fa parte dello standard *OPC (Open Packaging Conventions)* . Per ulteriori informazioni, vedere [OPC: nuovo standard per la creazione di pacchetti di dati](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data) nel sito Web MSDN.
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti l'elemento radice e i relativi attributi ed elementi figlio.
@@ -43,7 +43,7 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
 
 ### <a name="attribute-name-attribute"></a>{Nome attributo} Attributo
 
-| Valore | Descrizione |
+| valore | Descrizione |
 | - | - |
 | `http://schemas.openformats.org/package/2006/content-types` | Percorso dello schema dei tipi di contenuto. |
 
@@ -101,5 +101,5 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
 
 ## <a name="see-also"></a>Vedere anche
 - [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md)
-- [Riferimento allo schema di estensione VSIX 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC: nuovo standard per il packaging dei dati](https://msdn.microsoft.com/magazine/cc163372.aspx)
+- [Riferimento allo schema di estensione VSIX 1,0](/previous-versions/dd393700(v=vs.110))
+- [OPC: nuovo standard per il packaging dei dati](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data)

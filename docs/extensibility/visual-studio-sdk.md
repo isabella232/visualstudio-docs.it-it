@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ba3664ee9ea3e349aa4e5e9c01eed04ecddb45
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8acd7d52478574e8c37474426d27bc5c6a8b7efe
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173565"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012360"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK consente di estendere le funzionalità di Visual Studio o di integrare nuove funzionalità in Visual Studio. È possibile distribuire le estensioni ad altri utenti e al Visual Studio Marketplace. Di seguito sono illustrati alcuni dei modi in cui si può estendere Visual Studio:
@@ -65,11 +65,11 @@ Visual Studio SDK consente di estendere le funzionalità di Visual Studio o di i
 ## <a name="other-visual-studio-sdk-resources"></a>Altre risorse di Visual Studio SDK
  In caso di domande su VSSDK o se si vuole condividere le proprie esperienze sviluppando estensioni, è possibile usare il [Forum di estendibilità di Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) o la [chat di ExtendVS](https://gitter.im/Microsoft/extendvs).
 
- Per ulteriori informazioni, vedere il [Blog di VSX Arcana](https://blogs.msdn.microsoft.com/vsx/) e diversi blog scritti da Microsoft MVP:
+ Per ulteriori informazioni, vedere il [Blog di VSX Arcana](/archive/blogs/vsx/) e diversi blog scritti da Microsoft MVP:
 
 - [Estensioni di Visual Studio preferite](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
-- [Estendibilità di Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)
+- [Estendibilità in Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)
 
 - [Estensione di Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
@@ -77,7 +77,7 @@ Visual Studio SDK consente di estendere le funzionalità di Visual Studio o di i
 
 - [Creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Procedura: eseguire la migrazione di progetti di estendibilità a Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [Domande frequenti: conversione di componenti aggiuntivi in estensioni VSPackage](/visualstudio/extensibility/faq-converting-add-ins-to-vspackage-extensions?view=vs-2015)
+- [Domande frequenti: conversione di componenti aggiuntivi in estensioni VSPackage](../vs-2015/extensibility/faq-converting-add-ins-to-vspackage-extensions.md?view=vs-2015)
 - [Gestire più thread nel codice gestito](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Estendi menu e comandi](../extensibility/extending-menus-and-commands.md)
 - [Aggiungere comandi alle barre degli strumenti](../extensibility/adding-commands-to-toolbars.md)

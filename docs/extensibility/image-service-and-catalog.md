@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7df93a801b5ec34a433849baa41f2fd255790c86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26d8a3c4f3458c3659ccdd3a4cde802293342e5c
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536331"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011957"
 ---
 # <a name="image-service-and-catalog"></a>Catalogo e servizio immagini
 Questa guida di riferimento contiene indicazioni e procedure consigliate per l'adozione del servizio immagini di Visual Studio e del catalogo immagini introdotti in Visual Studio 2015.
@@ -42,7 +42,7 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 
   ![Servizio immagini prima e dopo](../extensibility/media/image-service-before-and-after.png "Servizio immagini prima e dopo")
 
-## <a name="how-it-works"></a>Funzionamento
+## <a name="how-it-works"></a>Come funziona
  Il servizio immagini può fornire un'immagine bitmap adatta per qualsiasi framework dell'interfaccia utente supportato:
 
 - WPF: BitmapSource
@@ -160,13 +160,13 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 |**Attributo**|**Definition**|
 |-|-|
 |Uri|Necessaria URI che definisce dove è possibile caricare l'immagine. I possibili valori sono i seguenti:<br /><br /> : [URI di pacchetto](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) che usa l'autorità Application:///<br />-Riferimento a una risorsa componente assoluto<br />: Percorso di un file che contiene una risorsa nativa|
-|Sfondo|Opzionale Indica il tipo di background che l'origine deve usare.<br /><br /> I possibili valori sono i seguenti:<br /><br /> *Chiaro:* L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> *Scuro:* L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> *HighContrast:* L'origine può essere utilizzata in qualsiasi background in modalità Contrasto elevato.<br /><br /> *HighContrastLight:* L'origine può essere utilizzata su uno sfondo chiaro in modalità Contrasto elevato.<br /><br /> *HighContrastDark:* L'origine può essere utilizzata su uno sfondo scuro in modalità Contrasto elevato.<br /><br /> Se l'attributo background viene omesso, l'origine può essere utilizzata in qualsiasi background.<br /><br /> Se background è *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se background viene omesso o impostato su *HighContrast*, l'inversione dei colori dell'origine viene controllata dall'attributo **AllowColorInversion** dell'immagine.|
+|Informazioni di base|Opzionale Indica il tipo di background che l'origine deve usare.<br /><br /> I possibili valori sono i seguenti:<br /><br /> *Chiaro:* L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> *Scuro:* L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> *HighContrast:* L'origine può essere utilizzata in qualsiasi background in modalità Contrasto elevato.<br /><br /> *HighContrastLight:* L'origine può essere utilizzata su uno sfondo chiaro in modalità Contrasto elevato.<br /><br /> *HighContrastDark:* L'origine può essere utilizzata su uno sfondo scuro in modalità Contrasto elevato.<br /><br /> Se l'attributo background viene omesso, l'origine può essere utilizzata in qualsiasi background.<br /><br /> Se background è *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se background viene omesso o impostato su *HighContrast*, l'inversione dei colori dell'origine viene controllata dall'attributo **AllowColorInversion** dell'immagine.|
 
 Un \<Source> elemento può avere esattamente uno dei sottoelementi facoltativi seguenti:
 
 |**elemento**|**Attributi (tutti necessari)**|**Definition**|
 |-|-|-|
-|\<Size>|Valore|L'origine verrà usata per le immagini con le dimensioni specificate (in unità dispositivo). L'immagine sarà quadrata.|
+|\<Size>|valore|L'origine verrà usata per le immagini con le dimensioni specificate (in unità dispositivo). L'immagine sarà quadrata.|
 |\<SizeRange>|MinSize, MaxSize|L'origine verrà usata per le immagini da MinSize a MaxSize (in unità dispositivo), inclusi. L'immagine sarà quadrata.|
 |\<Dimensions>|Larghezza, altezza|L'origine verrà usata per le immagini della larghezza e dell'altezza specificate (in unità dispositivo).|
 |\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|L'origine verrà usata per le immagini dalla larghezza/altezza minima alla larghezza/altezza massima (in unità dispositivo), inclusi.|
@@ -179,7 +179,7 @@ Un \<Source> elemento può avere esattamente uno dei sottoelementi facoltativi s
 
 |**Attributo**|**Definition**|
 |-|-|
-|Type|Necessaria Il tipo della risorsa nativa, ovvero XAML o PNG|
+|Tipo|Necessaria Il tipo della risorsa nativa, ovvero XAML o PNG|
 |ID|Necessaria Parte relativa all'ID integer della risorsa nativa|
 
  **ImageList**
@@ -712,7 +712,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Aggiornare il codice per usare il servizio immagini per richiedere moniker tramite il mapping aggiornato. Questo potrebbe significare l'aggiornamento a **CrispImages** per il codice gestito o la richiesta di HBITMAPs o HICONs dal servizio immagini e il relativo passaggio per il codice nativo.
 
 ## <a name="testing-your-images"></a>Test delle immagini
- È possibile utilizzare lo strumento Visualizzatore libreria immagini per testare i manifesti dell'immagine per assicurarsi che tutti gli elementi vengano creati correttamente. È possibile trovare lo strumento in [Visual Studio 2015 SDK](visual-studio-sdk.md). La documentazione per questo strumento e altre informazioni sono disponibili [qui](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015).
+ È possibile utilizzare lo strumento Visualizzatore libreria immagini per testare i manifesti dell'immagine per assicurarsi che tutti gli elementi vengano creati correttamente. È possibile trovare lo strumento in [Visual Studio 2015 SDK](visual-studio-sdk.md). La documentazione per questo strumento e altre informazioni sono disponibili [qui](./internals/vssdk-utilities.md?view=vs-2015).
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
@@ -1026,7 +1026,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphRecursion||Ricorsione|
     |GlyphXmlItem||Tag|
     |GlyphJSharpProject||DocumentCollection|
-    |GlyphJSharpDocument||Document|
+    |GlyphJSharpDocument||Documento|
     |GlyphForwardType||GoToNext|
     |GlyphCallersGraph||CallTo|
     |GlyphCallGraph||CallFrom|

@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b17f5bab02e49951eb1647af95641af807c44863
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc6f0643066aaca4ba12d9818d449785f6edb752
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721532"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011866"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 Questa interfaccia consente a un motore di debug (DE) o a un fornitore di porta personalizzato di registrare i programmi per il debug.
@@ -56,7 +56,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>Esempio
-Questo esempio illustra come creare un'istanza dell'autore del programma e registrare un nodo del programma. Questa operazione viene eseguita nell'esercitazione [pubblicazione del nodo del programma](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae).
+Questo esempio illustra come creare un'istanza dell'autore del programma e registrare un nodo del programma. Questa operazione viene eseguita nell'esercitazione [pubblicazione del nodo del programma](/previous-versions/bb161795(v=vs.90)).
 
 ```cpp
 // This is how m_srpProgramPublisher is defined in the class definition:

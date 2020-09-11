@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ddfe2b61c8ef08d77fbb7c841b3bb69c167af2f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64edfe1088e7fb8888933d85eeef096bd8c2006a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903742"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012269"
 ---
 # <a name="create-custom-editors-and-designers"></a>Creazione di editor e finestre di progettazione personalizzati
 
@@ -59,7 +59,7 @@ Per informazioni sull'editor principale di Visual Studio, vedere [estendere l'ed
 
 - L'editor deve ospitare i controlli ActiveX?
 
-   Se l'editor ospita controlli ActiveX, implementare un editor di attivazione sul posto, come descritto nell' [attivazione sul posto](/visualstudio/misc/in-place-activation?view=vs-2015). Se non ospita controlli ActiveX, usare un editor di incorporamento semplificato o personalizzare l' [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor predefinito.
+   Se l'editor ospita controlli ActiveX, implementare un editor di attivazione sul posto, come descritto nell' [attivazione sul posto](../vs-2015/misc/in-place-activation.md?view=vs-2015). Se non ospita controlli ActiveX, usare un editor di incorporamento semplificato o personalizzare l' [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor predefinito.
 
 - L'editor supporterà più visualizzazioni? È necessario supportare più visualizzazioni Se si desidera che le visualizzazioni dell'editor siano visibili nello stesso momento dell'editor predefinito.
 
@@ -93,7 +93,7 @@ Viene illustrato come implementare i dati del documento e le visualizzazioni doc
 
 ## <a name="related-sections"></a>Sezioni correlate
 
-[Interfacce legacy nell'editor](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015)\
+[Interfacce legacy nell'editor](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015)\
 Viene illustrato come accedere all'editor principale per mezzo dell'API legacy.
 
 [Sviluppare un servizio di linguaggio legacy](../extensibility/internals/developing-a-legacy-language-service.md)\

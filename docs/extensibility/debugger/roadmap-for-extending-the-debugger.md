@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e809eeb6a1a5d2c24368932713d69c7199b5af38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d97a7edd62540d12a0a60d15b3179ca0a623c26
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713140"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011827"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Guida di orientamento per l'estensione del debugger
 In questa documentazione vengono fornite informazioni di riferimento e guida per estendere il [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] debugger con il [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
@@ -31,7 +31,7 @@ In questa documentazione vengono fornite informazioni di riferimento e guida per
 
    [Valutazione delle espressioni](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
 
-   [Valutazione delle espressioni](../../extensibility/debugger/evaluating-expressions.md)
+   [Valutazione di espressioni](../../extensibility/debugger/evaluating-expressions.md)
 
    [Contesto di valutazione dell'espressione](../../extensibility/debugger/expression-evaluation-context.md)
 
@@ -43,11 +43,11 @@ In questa documentazione vengono fornite informazioni di riferimento e guida per
 
    [Creare un motore di debug personalizzato](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 
-   [Esercitazione: creare un motore di debug con ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+   [Esercitazione: creare un motore di debug con ATL COM](/previous-versions/bb147024(v=vs.90))
 
    [Implementare un fornitore di porte](../../extensibility/debugger/implementing-a-port-supplier.md)
 
    [Esempi](../../extensibility/debugger/visual-studio-debugging-samples.md)
 
 ## <a name="see-also"></a>Vedere anche
-- [Operazioni preliminari](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
+- [Attività iniziali](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

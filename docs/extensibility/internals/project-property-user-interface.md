@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4634eb5edaab16752bc5df82d70371a580845d28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f15895a7dab5c57d8312787b1276acac89c28796
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706390"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011853"
 ---
 # <a name="project-property-user-interface"></a>Interfaccia utente delle proprietà del progetto
 
@@ -55,7 +55,7 @@ Per determinare il CATID per l'ambito del progetto, il sottotipo di progetto rec
 
 Poiché il sottotipo di progetto aggrega l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> oggetto, può eseguire l'override della definizione di queste proprietà per controllare le finestre di dialogo delle **pagine delle proprietà** visualizzate. Il sottotipo di progetto può recuperare queste proprietà dal progetto di base interno e quindi aggiungere o rimuovere i CLSID secondo le necessità.
 
-Alle nuove pagine delle proprietà aggiunte da un sottotipo di progetto viene passato un oggetto browse della configurazione del progetto dall'implementazione del progetto di base. Questo oggetto browse della configurazione del progetto supporta Extender di automazione. Per altre informazioni su AutomationExtenders, vedere [implementazione e uso di Extender di automazione](https://msdn.microsoft.com/Library/0d5c218c-f412-4b28-ab0c-33a611f62356). Le pagine delle proprietà implementate dalla chiamata del sottotipo <xref:EnvDTE.Project.Extender%2A> di progetto per recuperare il proprio oggetto browse della configurazione del sottotipo di progetto che estende l'oggetto browse della configurazione del progetto di base.
+Alle nuove pagine delle proprietà aggiunte da un sottotipo di progetto viene passato un oggetto browse della configurazione del progetto dall'implementazione del progetto di base. Questo oggetto browse della configurazione del progetto supporta Extender di automazione. Per altre informazioni su AutomationExtenders, vedere [implementazione e uso di Extender di automazione](/previous-versions/0y92k2w2(v=vs.140)). Le pagine delle proprietà implementate dalla chiamata del sottotipo <xref:EnvDTE.Project.Extender%2A> di progetto per recuperare il proprio oggetto browse della configurazione del sottotipo di progetto che estende l'oggetto browse della configurazione del progetto di base.
 
 ## <a name="see-also"></a>Vedere anche
 

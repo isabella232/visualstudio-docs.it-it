@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e2ab6389f1e0d369dd095290d12c97431c44155
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfff8e4e6cc8ba3974ec70e6466b25e9ff7432e4
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705866"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012048"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrazione dei gestori dei comandi negli assembly di interoperabilità
 Un pacchetto VSPackage deve registrarsi in in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modo che il Integrated Development Environment (IDE) instrada correttamente i comandi.
@@ -25,7 +25,7 @@ Un pacchetto VSPackage deve registrarsi in in [!INCLUDE[vsprvs](../../code-quali
 
  Il Framework di pacchetto gestito (MPF) fornisce questa funzionalità tramite la <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> classe.
 
-- Le risorse di riferimento per il [formato della tabella comandi](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f) si trovano in DLL dell'interfaccia utente satellite non gestite.
+- Le risorse di riferimento per il [formato della tabella comandi](/previous-versions/bb164647(v=vs.100)) si trovano in DLL dell'interfaccia utente satellite non gestite.
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>Registrazione del gestore comandi di un pacchetto VSPackage
  Un pacchetto VSPackage che funge da gestore per i comandi basati sull'interfaccia utente richiede una voce del registro di sistema denominata dopo il pacchetto VSPackage `GUID` . Questa voce del registro di sistema specifica il percorso del file di risorse dell'interfaccia utente del pacchetto VSPackage e della risorsa di menu all'interno del file. La voce del registro di sistema si trova in HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ *\<Version>* \Menus, dove *\<Version>* è la versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , ad esempio 9,0.

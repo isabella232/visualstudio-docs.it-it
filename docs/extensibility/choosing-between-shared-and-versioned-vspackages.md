@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21fefb776fceeeef4db6997a5bd12a8b987af7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96386c2d3b7d1e822fdd1dd6632d754740f86301
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739881"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011931"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Scegliere tra VSPackage condivisi e con versione
 Diverse versioni di Visual Studio possono coesistere nello stesso computer. I pacchetti VSPackage possono supportare qualsiasi combinazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] versioni.
@@ -35,7 +35,7 @@ Diverse versioni di Visual Studio possono coesistere nello stesso computer. I pa
 
   - Programmare il pacchetto VSPackage per adattarsi alla versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] in cui è in esecuzione. Se quindi le query per i servizi più recenti hanno esito negativo, il pacchetto VSPackage può offrire altri servizi supportati nelle versioni precedenti di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-- Registrare il pacchetto VSPackage in modo appropriato. Per ulteriori informazioni, vedere la pagina relativa alla registrazione [VSPackage](../extensibility/internals/vspackage-registration.md) e alla [registrazione di VSPackage gestita](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).
+- Registrare il pacchetto VSPackage in modo appropriato. Per ulteriori informazioni, vedere la pagina relativa alla registrazione [VSPackage](../extensibility/internals/vspackage-registration.md) e alla [registrazione di VSPackage gestita](/previous-versions/bb166783(v=vs.100)).
 
 - Registrare le estensioni di file in modo appropriato. Per ulteriori informazioni, vedere [la pagina relativa alla registrazione delle estensioni di file per le distribuzioni side-by-side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
 

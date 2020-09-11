@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2b239059f445d92a5be6709ee7b7a26cb8bb7164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d1eb4cc53b6123acbba9741d33d3401d44cf6d7
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88144714"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011879"
 ---
 # <a name="work-with-sql-server-and-r"></a>Usare SQL Server ed R
 
@@ -50,7 +50,7 @@ Dopo che è stata stabilita la connessione, è possibile eseguire query e visual
 ![Risultati di una query SQL](media/sql-query-results.png)
 
 L'editor Transact-SQL supporta numerose funzionalità, ad esempio la visualizzazione del piano di esecuzione della query e il debugger di query.
-Per altre informazioni, vedere [Usare l'Editor Transact-SQL per modificare ed eseguire script](https://msdn.microsoft.com/library/hh272706.aspx).
+Per altre informazioni, vedere [Usare l'Editor Transact-SQL per modificare ed eseguire script](/previous-versions/sql/sql-server-data-tools/hh272706(v=vs.103)).
 
 ## <a name="work-with-sql-server-stored-procedures"></a>Usare stored procedure di SQL Server
 

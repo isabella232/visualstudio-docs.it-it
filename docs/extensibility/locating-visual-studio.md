@@ -9,23 +9,23 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7187fbcc3e3aca990846176676a47f5d17aaf00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93a6f39a9240002cd8008c9368799e10ab63b78d
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64878150"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012477"
 ---
 # <a name="locate-visual-studio"></a>Individuare Visual Studio
 
-A partire da Visual Studio 2017, è possibile installare più istanze della stessa versione o persino dell'edizione. Questa operazione è utile quando si desidera visualizzare in anteprima nuove funzionalità nel computer di sviluppo primario mantenendo l'installazione precedente. A causa di queste modifiche, non esiste una singola variabile di ambiente o un valore del registro di sistema che è possibile utilizzare per individuare un'istanza. È invece possibile usare un' [API di query com](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) per individuare le istanze in base ai criteri rilevanti per l'estensione.
+A partire da Visual Studio 2017, è possibile installare più istanze della stessa versione o persino dell'edizione. Questa operazione è utile quando si desidera visualizzare in anteprima nuove funzionalità nel computer di sviluppo primario mantenendo l'installazione precedente. A causa di queste modifiche, non esiste una singola variabile di ambiente o un valore del registro di sistema che è possibile utilizzare per individuare un'istanza. È invece possibile usare un' [API di query com](/dotnet/api/microsoft.visualstudio.setup.configuration) per individuare le istanze in base ai criteri rilevanti per l'estensione.
 
 Si tratta di un'API veloce di sola lettura con pacchetti NuGet disponibili per il codice nativo e gestito.
 
 | Codice | Pacchetto |
 | ---- | --- |
 | Nativo | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| Gestita | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| Gestiti | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
 È possibile individuare una singola istanza in base a un percorso o al processo corrente oppure enumerare tutte le istanze. Per esempi completi su come individuare Visual Studio [, vedere gli esempi.](https://github.com/Microsoft/vs-setup-samples)
 

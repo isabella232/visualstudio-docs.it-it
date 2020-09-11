@@ -10,18 +10,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6fb916810bc8a7e960a4723a6a7c7a6f0c1410
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a664385594f139e2c3c5a18a0d8a59e23c13df0a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713220"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011840"
 ---
 # <a name="register-a-custom-debug-engine"></a>Registrare un motore di debug personalizzato
 Il motore di debug deve registrarsi come class factory, seguendo le convenzioni COM, oltre a eseguire la registrazione con Visual Studio tramite la sottochiave del registro di sistema di Visual Studio.
 
 > [!NOTE]
-> È possibile trovare un esempio di come registrare un motore di debug nell'esempio TextInterpreter, creato nell'esercitazione relativa alla [creazione di un motore di debug con ATL com](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).
+> È possibile trovare un esempio di come registrare un motore di debug nell'esempio TextInterpreter, creato nell'esercitazione relativa alla [creazione di un motore di debug con ATL com](/previous-versions/bb147024(v=vs.90)).
 
 ## <a name="dll-server-process"></a>Processo server DLL
  Un motore di debug viene in genere configurato nella propria DLL come server COM. Di conseguenza, il motore di debug deve registrare il CLSID della relativa class factory con COM prima che Visual Studio possa accedervi. Il motore di debug deve quindi registrarsi con Visual Studio per stabilire le proprietà (altrimenti note come metriche) supportate dal motore di debug. La scelta delle metriche scritte nella sottochiave del registro di sistema di Visual Studio dipende dalle funzionalità supportate dal motore di debug.
@@ -51,4 +51,4 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 ## <a name="see-also"></a>Vedere anche
 - [Creazione di un motore di debug personalizzato](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 - [Helper SDK per il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
-- [Esercitazione: creazione di un motore di debug con ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+- [Esercitazione: creazione di un motore di debug con ATL COM](/previous-versions/bb147024(v=vs.90))

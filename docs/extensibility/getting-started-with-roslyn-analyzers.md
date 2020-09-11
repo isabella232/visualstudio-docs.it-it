@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc975ff4f142b85297c20f16ac399fce588c093b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d572c49f7d528b9dbb624bf31ad5e28dc3799aa
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711265"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012243"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Introduzione agli analizzatori Roslyn
 
@@ -25,7 +25,7 @@ Con gli analizzatori di codice dinamici basati su progetti in Visual Studio, gli
 
 [Esercitazione: compilare il primo analizzatore con correzione del codice](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 
-[Procedura dettagliata per aggiungere correzioni di codice: fornire correzioni agli utenti per i problemi dell'analizzatore](https://msdn.microsoft.com/magazine/dn904670.aspx)
+[Procedura dettagliata per aggiungere correzioni di codice: fornire correzioni agli utenti per i problemi dell'analizzatore](/archive/msdn-magazine/2015/february/csharp-adding-a-code-fix-to-your-roslyn-analyzer)
 
 [Real World Roslyn Analyzer](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) , che puoi guardare anche come una [discussione](https://channel9.msdn.com/events/Build/2015/3-725)
 

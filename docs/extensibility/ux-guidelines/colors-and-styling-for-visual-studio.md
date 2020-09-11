@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c7d8a02de9331f268cd06ad35e19faab6494fe0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1ba6e9af922a7a7ab4dffe555aa55d3ab7bb9dd
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699858"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012100"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colori e stili per Visual Studio
 
@@ -283,7 +283,7 @@ Per Contrasto elevato temi è possibile usare solo alcuni colori di sistema. Qua
 
 ### <a name="system-color-set"></a>Set di colori di sistema
 
-La tabella nel [Blog del team WPF: riferimento a SystemColors](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/) indica il set completo di nomi dei colori di sistema e le tonalità corrispondenti visualizzate in ogni tema.
+La tabella nel [Blog del team WPF: riferimento a SystemColors](/archive/blogs/wpf/systemcolors-reference) indica il set completo di nomi dei colori di sistema e le tonalità corrispondenti visualizzate in ogni tema.
 
 Quando si applica questo set limitato di colori all'interfaccia utente, si *prevede che si perderanno dettagli sottili che erano presenti nei temi "normali"*. Di seguito è riportato un esempio di interfaccia utente con colori grigio sottili che vengono usati per distinguere le aree all'interno di una finestra degli strumenti. Una volta abbinato alla stessa finestra visualizzata in modalità Contrasto elevato, è possibile osservare che tutti gli sfondi sono della stessa tonalità e che i bordi di tali aree sono indicati solo da un bordo:
 
@@ -340,7 +340,7 @@ In alcuni casi è opportuno consentire all'utente finale di personalizzare l'int
 
 Un pacchetto VSPackage può controllare i tipi di carattere e i colori tramite le categorie personalizzate e gli elementi visualizzati nella pagina delle proprietà tipi di carattere e colori. Quando si usa questo meccanismo, i pacchetti VSPackage devono implementare l'interfaccia [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) e le interfacce associate.
 
-In linea di principio, questo meccanismo può essere usato per modificare tutti gli elementi visualizzati esistenti e le categorie che li contengono. Tuttavia, non deve essere usato per modificare la categoria dell'editor di testo o i relativi elementi visualizzati. Per altre informazioni sulla categoria Editor di testo, vedere [Cenni preliminari su tipi di carattere e colori](/visualstudio/extensibility/font-and-color-overview?view=vs-2015).
+In linea di principio, questo meccanismo può essere usato per modificare tutti gli elementi visualizzati esistenti e le categorie che li contengono. Tuttavia, non deve essere usato per modificare la categoria dell'editor di testo o i relativi elementi visualizzati. Per altre informazioni sulla categoria Editor di testo, vedere [Cenni preliminari su tipi di carattere e colori](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015).
 
 Per implementare categorie personalizzate o elementi visualizzati, un pacchetto VSPackage deve:
 
@@ -358,7 +358,7 @@ Costruire un tipo speciale di voce del registro di sistema Category in `[HKLM\SO
 
 Popolare il registro di sistema con due valori:
 
-| Nome | Type | Dati | Descrizione |
+| Nome | Tipo | Data | Descrizione |
 | --- | --- | --- | --- |
 | Category | REG_SZ | GUID | GUID creato per identificare la categoria |
 | Pacchetto | REG_SZ | GUID | GUID del servizio VSPackage che supporta la categoria |
@@ -371,7 +371,7 @@ Costruire un tipo speciale di voce del registro di sistema Category in `[HKLM\SO
 
 Popolare il registro di sistema con due valori:
 
-| Nome | Type | Dati | Descrizione |
+| Nome | Tipo | Data | Descrizione |
 |--- | --- | --- | --- |
 | Category | REG_SZ | GUID | GUID creato per identificare la categoria |
 | Pacchetto | REG_SZ | GUID | GUID del servizio VSPackage che supporta la categoria |
@@ -423,7 +423,7 @@ A tale scopo, un pacchetto VSPackage deve:
 
   **OR**
 
-- eseguire **il polling dell'IDE per le modifiche**. Questa operazione può essere eseguita tramite l'interfaccia [errore IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) implementata dal sistema. Sebbene principalmente per il supporto della persistenza, il metodo [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) può ottenere informazioni relative al tipo di carattere e al colore per gli elementi visualizzati. Per ulteriori informazioni sulle impostazioni relative a tipi di carattere e colori, vedere l'articolo di MSDN [accesso alle impostazioni dei tipi di carattere e colori archiviati](/visualstudio/extensibility/accessing-stored-font-and-color-settings?view=vs-2015).
+- eseguire **il polling dell'IDE per le modifiche**. Questa operazione può essere eseguita tramite l'interfaccia [errore IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) implementata dal sistema. Sebbene principalmente per il supporto della persistenza, il metodo [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) può ottenere informazioni relative al tipo di carattere e al colore per gli elementi visualizzati. Per ulteriori informazioni sulle impostazioni relative a tipi di carattere e colori, vedere l'articolo di MSDN [accesso alle impostazioni dei tipi di carattere e colori archiviati](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015).
 
 > [!NOTE]
 > Per assicurarsi che i risultati del polling siano corretti, utilizzare l'interfaccia [IVsFontAndColorCacheManager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) per determinare se sono necessari uno scaricamento e un aggiornamento della cache prima di chiamare i metodi di recupero dell'interfaccia [errore IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) .

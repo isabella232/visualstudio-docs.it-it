@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44da532207668d9526aec0ccdcab027b94184e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7634802899d72eb6abcb0aa837b8fb6a532b966
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706376"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012061"
 ---
 # <a name="project-type-essentials"></a>Nozioni fondamentali sui tipi di progetto
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] include diversi tipi di progetto per linguaggi quali [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] o [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consente inoltre di creare tipi di progetto personalizzati.
@@ -52,7 +52,7 @@ ms.locfileid: "80706376"
 
 - I tipi di progetto sono oggetti in un VSPackage che implementano il set di interfacce [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] previsto. Se si utilizza C# per sviluppare un tipo di progetto, le classi di progetto del Framework di pacchetto gestito implementano le interfacce necessarie per l'utente e consentono di ereditare l'implementazione. Per ulteriori informazioni, vedere [utilizzo del Framework di pacchetto gestito per implementare un tipo di progetto (C#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).
 
-- Per gli sviluppatori C++, le classi nella libreria HierUtil funzionano in modo simile. Per altre informazioni, vedere [not in Build: uso di classi di progetto HierUtil7 per implementare un tipo di progetto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).
+- Per gli sviluppatori C++, le classi nella libreria HierUtil funzionano in modo simile. Per altre informazioni, vedere [not in Build: uso di classi di progetto HierUtil7 per implementare un tipo di progetto (C++)](/previous-versions/bb166212(v=vs.100)).
 
 - I tipi di progetto possono supportare dati diversi dai normali file di codice sorgente che si compilano in un assembly con estensione exe o dll. Ad esempio, i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] progetti di database contengono riferimenti a file di script e di query archiviati su disco e aggiungono comandi a **Esplora soluzioni** per eseguire gli script e le query su un database, ma i progetti non supportano il comportamento di compilazione. Per ulteriori informazioni, vedere [apertura e salvataggio di elementi di progetto](../../extensibility/internals/opening-and-saving-project-items.md).
 

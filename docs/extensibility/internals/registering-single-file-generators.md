@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cea2ebba4739695393447a36e9842ade1670954
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 185e60daac2aef2c8aeeb4f087547984e6fcf510
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705803"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012035"
 ---
 # <a name="registering-single-file-generators"></a>Registrazione di generatori di file singoli
 Per rendere disponibile uno strumento personalizzato in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , è necessario registrarlo in modo che [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possa crearne un'istanza e associarlo a un determinato tipo di progetto.
@@ -40,7 +40,7 @@ Per rendere disponibile uno strumento personalizzato in [!INCLUDE[vsprvs](../../
 
    - Valore predefinito.
 
-        facoltativo. Fornisce una descrizione intuitiva dello strumento personalizzato. Questo parametro è facoltativo, ma consigliato.
+        Facoltativo. Fornisce una descrizione intuitiva dello strumento personalizzato. Questo parametro è facoltativo, ma consigliato.
 
    - CLSID
 
@@ -71,4 +71,4 @@ Per rendere disponibile uno strumento personalizzato in [!INCLUDE[vsprvs](../../
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [Implementazione di generatori di file singoli](../../extensibility/internals/implementing-single-file-generators.md)
 - [Esposizione di tipi nelle finestre di progettazione visiva](../../extensibility/internals/exposing-types-to-visual-designers.md)
-- [Introduzione all'oggetto BuildManager](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+- [Introduzione all'oggetto BuildManager](/previous-versions/8f9kffa8(v=vs.140))

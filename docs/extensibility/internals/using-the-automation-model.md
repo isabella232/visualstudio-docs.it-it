@@ -10,18 +10,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9d7bd789a41f7a5e801552ca07f9f228921867
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d014627161666473d3b674f72cfec339a66fdc05
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704228"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012490"
 ---
 # <a name="using-the-automation-model"></a>Uso del modello di automazione
 Dopo aver connesso il pacchetto VSPackage a automazione, è possibile ottenere le proprietà e i metodi chiamando il <xref:EnvDTE.DTEClass.GetObject%2A> metodo sull' <xref:EnvDTE._DTE> oggetto, passando una stringa che rappresenta l'oggetto che si vuole recuperare.
 
 ## <a name="obtaining-project-objects"></a>Recupero di oggetti progetto
- Di seguito sono riportati due esempi di codice che illustrano il modo in cui un consumer di automazione ottiene gli oggetti di automazione del progetto. Per informazioni su come ottenere l'oggetto DTE, vedere [How to: get references to the DTE and DTE2 Objects](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).
+ Di seguito sono riportati due esempi di codice che illustrano il modo in cui un consumer di automazione ottiene gli oggetti di automazione del progetto. Per informazioni su come ottenere l'oggetto DTE, vedere [How to: get references to the DTE and DTE2 Objects](/previous-versions/68shb4dw(v=vs.140)).
 
 ```vb
 Sub DoAutomation()
