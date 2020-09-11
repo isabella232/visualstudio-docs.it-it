@@ -35,7 +35,7 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
 |-------------|-----------------|
 |`Types`|Contiene gli elementi figlio che enumerano i tipi di file nel pacchetto VSIX.|
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -54,7 +54,7 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
 |-------------|-----------------|
 |`Default`|Descrive un tipo di contenuto nel pacchetto VSIX. Ogni tipo di file nel pacchetto deve avere un proprio `Default` elemento.|
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
