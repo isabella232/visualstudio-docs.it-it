@@ -1,5 +1,6 @@
 ---
 title: Creare un nuovo file di progetto MSBuild
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edd5f3a01cc96a80403d1b030541e08e19d51eef
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 331206ee59c7cd05dd4871c422bd6b1a7ff85419
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741736"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037699"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: Creare un nuovo file di progetto MSBuild
 
@@ -470,7 +471,7 @@ Nell'esempio seguente viene illustrato un file di progetto che compila un'applic
 
  Visual Studio è in grado di eseguire automaticamente molte delle operazioni descritte in questa procedura dettagliata. Per informazioni su come usare Visual Studio per creare, modificare, compilare e testare i file di progetto MSBuild, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica di MSBuild](../msbuild/msbuild.md)
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)

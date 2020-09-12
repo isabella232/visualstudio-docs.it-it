@@ -1,6 +1,6 @@
 ---
 title: Panoramica delle regole di qualità del codice
-ms.date: 08/27/2020
+ms.date: 09/01/2020
 ms.topic: reference
 f1_keywords:
 - CA1000
@@ -253,16 +253,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e4b728fab6eb47501bb0d1bb752d22c0c29a8b4
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: a298ab142ae6a44c1fb24b2cb1b752f6beb4a68e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509445"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037237"
 ---
-# <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avvisi di analisi del codice per il codice gestito da CheckId
+# <a name="code-quality-analysis-rules-by-rule-id"></a>Regole di analisi della qualità del codice in base all'ID regola
 
-Nella tabella seguente sono elencati gli avvisi di analisi del codice per il codice gestito ordinati per identificatore CheckId.
+La tabella seguente elenca le regole di analisi della qualità del codice in base all'identificatore della regola.
 
 | CheckId | Avviso | Descrizione |
 |---------| - | - |
@@ -466,7 +466,7 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 | CA5358 | [CA5358: Non usare modalità crittografia non sicure](../code-quality/ca5358.md) | Non usare modalità crittografia non sicure |
 | CA5359 | [CA5359 non disabilitare la convalida del certificato](../code-quality/ca5359.md) | Un certificato può essere utile per autenticare l'identità del server. I client devono convalidare il certificato del server per garantire che le richieste vengano inviate al server desiderato. Se il ServerCertificateValidationCallback restituisce sempre `true` , qualsiasi certificato passerà la convalida. |
 | CA5360 | [CA5360 non chiamano metodi pericolosi nella deserializzazione](../code-quality/ca5360.md) | La deserializzazione non sicura è una vulnerabilità che si verifica quando i dati non attendibili vengono usati per abusare la logica di un'applicazione, infliggendo un attacco Denial of Service (DoS) o persino eseguendo codice arbitrario al momento della deserializzazione. Spesso gli utenti malintenzionati possono usare queste funzionalità di deserializzazione quando l'applicazione deserializza dati non attendibili sotto il proprio controllo. In particolare, richiamare metodi pericolosi nel processo di deserializzazione. Gli attacchi di deserializzazione non sicuri riusciti potrebbero consentire a un utente malintenzionato di eseguire attacchi come attacchi DoS, bypass di autenticazione ed esecuzione di codice in modalità remota. |
-| CA5361 | [CA5361: Non disabilitare l'uso della crittografia avanzata in Schannel](../code-quality/ca5361.md) | `Switch.System.Net.DontEnableSchUseStrongCrypto`L'impostazione di per `true` indebolisce la crittografia utilizzata nelle connessioni di Transport Layer Security in uscita (TLS). La crittografia più debole può compromettere la riservatezza delle comunicazioni tra l'applicazione e il server, semplificando l'intercettazione dei dati sensibili da parte degli utenti malintenzionati. |
+| CA5361 | [CA5361: non disabilitare l'uso di crittografia avanzata Schannel](../code-quality/ca5361.md) | `Switch.System.Net.DontEnableSchUseStrongCrypto`L'impostazione di per `true` indebolisce la crittografia utilizzata nelle connessioni di Transport Layer Security in uscita (TLS). La crittografia più debole può compromettere la riservatezza delle comunicazioni tra l'applicazione e il server, semplificando l'intercettazione dei dati sensibili da parte degli utenti malintenzionati. |
 | CA5362 | [CA5362 ciclo di riferimento potenziale nell'oggetto grafico deserializzato](../code-quality/ca5362.md) | In caso di deserializzazione di dati non attendibili, qualsiasi codice che elabora l'oggetto grafico deserializzato deve gestire i cicli di riferimento senza passare a cicli infiniti. Sono inclusi sia il codice che fa parte di un callback di deserializzazione che il codice che elabora l'oggetto grafico al termine della deserializzazione. In caso contrario, un utente malintenzionato potrebbe eseguire un attacco Denial of Service con dati dannosi contenenti un ciclo di riferimento. |
 | CA5363 | [CA5363: Non disabilitare la convalida delle richieste](../code-quality/ca5363.md) | La convalida delle richieste è una funzionalità di ASP.NET che esamina le richieste HTTP e determina se contengono contenuti potenzialmente pericolosi che possono causare attacchi injection, incluso lo scripting tra siti. |
 | CA5364 | [CA5364: Non usare protocolli di sicurezza deprecati](../code-quality/ca5364.md) | Transport Layer Security (TLS) protegge la comunicazione tra i computer, in genere con Hypertext Transfer Protocol Secure (HTTPS). Le versioni precedenti del protocollo TLS sono meno sicure di TLS 1,2 e TLS 1,3 ed è più probabile che abbiano nuove vulnerabilità. Evitare le versioni precedenti del protocollo per ridurre al minimo i rischi. |

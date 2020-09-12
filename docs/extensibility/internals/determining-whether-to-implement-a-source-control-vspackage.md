@@ -1,5 +1,6 @@
 ---
 title: Quando implementare un VSPackage del controllo del codice sorgente
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abb7ce1c737f9299ba345d5e33b98e6b6947a6e4
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 16f96191115a509e07b5263f1d10d53ea3b2cc9c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741791"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037042"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>Determinare se implementare un pacchetto VSPackage del controllo del codice sorgente
 
@@ -29,7 +30,7 @@ Questa sezione illustra le scelte dei plug-in del controllo del codice sorgente 
 
  Se si desidera implementare una soluzione di controllo del codice sorgente che fornisce un modello di controllo del codice sorgente completo che non viene acquisito in modo adeguato tramite l'API del plug-in del controllo del codice sorgente, è possibile considerare un pacchetto del controllo del codice sorgente come percorso di integrazione. Questo vale soprattutto se si preferisce sostituire il pacchetto dell'adattatore del controllo del codice sorgente (che comunica con i plug-in del controllo del codice sorgente e fornisce un'interfaccia utente di base del controllo del codice sorgente), in modo da poter gestire gli eventi del controllo del codice sorgente in modo personalizzato. Se si dispone già di un'interfaccia utente del controllo del codice sorgente soddisfacente e si desidera mantenere tale esperienza in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , l'opzione del pacchetto del controllo del codice sorgente consente di eseguire questa operazione. Il pacchetto del controllo del codice sorgente non è generico ed è progettato solo per l'uso con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
 
- Se si desidera implementare una soluzione di controllo del codice sorgente che fornisce flessibilità e controllo più completo sulla logica e sull'interfaccia utente del controllo del codice sorgente, è possibile che si preferisca la route di integrazione del pacchetto del controllo del codice sorgente È possibile scegliere:
+ Se si desidera implementare una soluzione di controllo del codice sorgente che fornisce flessibilità e controllo più completo sulla logica e sull'interfaccia utente del controllo del codice sorgente, è possibile che si preferisca la route di integrazione del pacchetto del controllo del codice sorgente È possibile:
 
 1. Registrare il pacchetto VSPackage del controllo del codice sorgente (vedere [registrazione e selezione](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).
 
@@ -39,6 +40,6 @@ Questa sezione illustra le scelte dei plug-in del controllo del codice sorgente 
 
 4. Gestire gli eventi di modifica della query e di salvataggio delle query (vedere [query Edit Query Save](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creazione di un plug-in del controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7ef6975fe5d9d19ebd2cbb0ed10951ca6f3219
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1762f12d791f220161867af73a823f88b9f86ec0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778440"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037328"
 ---
 # <a name="performance-rules-by-id"></a>Regole di prestazioni in base all'ID
 
@@ -28,7 +28,7 @@ ms.locfileid: "74778440"
 | [DA0006: Eseguire l'override di Equals() per i tipi di valore](../profiling/da0006-override-equals-parens-for-value-types.md) | Le chiamate al metodo Equals o agli operatori di uguaglianza di un tipo valore pubblico rappresentano una percentuale significativa dei dati di profilatura. Considerare la possibilità di implementare un metodo più efficiente. |
 | [DA0007: Evitare di usare eccezioni per il flusso di controllo](../profiling/da0007-avoid-using-exceptions-for-control-flow.md) | Nei dati di profilatura è stato chiamato un numero elevato di gestori di eccezioni di .NET Framework. Considerare la possibilità di usare un'altra logica di flusso di controllo per ridurre il numero di eccezioni generate. |
 | [DA0008: Numero ridotto di campioni raccolti](../profiling/da0008-few-samples-collected.md) | Durante l'esecuzione della profilatura sono stati raccolti solo pochi campioni. Si consiglia di eseguire il campionamento più a lungo o di aumentare la frequenza di campionamento per ottenere risultati più significativi. |
-| [DA0009: % tempo in JIT elevata](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd) | Una percentuale significativa del tempo di esecuzione dell'applicazione è stata impiegata nel compilatore JIT (Just In Time). |
+| [DA0009: % tempo in JIT elevata](/previous-versions/dd264972(v=vs.100)) | Una percentuale significativa del tempo di esecuzione dell'applicazione è stata impiegata nel compilatore JIT (Just In Time). |
 | [DA0010: Funzione GetHashCode dispendiosa](../profiling/da0010-expensive-gethashcode.md) | Le chiamate al metodo GetHashCode del tipo rappresentano una percentuale significativa dei dati di profilatura o il metodo alloca memoria. |
 | [DA0011: Funzione CompareTo dispendiosa](../profiling/da0011-expensive-compareto.md) | Il metodo CompareTo del tipo è dispendioso o alloca memoria. |
 | [DA0012: Utilizzo elevato della reflection](../profiling/da0012-significant-amount-of-reflection.md) | Le chiamate ai metodi System.Reflection, ad esempio InvokeMember e GetMember, o ai metodi Type, ad esempio MemberInvoke, costituiscono una percentuale significativa dei dati di profilatura. Ove possibile, considerare la possibilità di sostituire questi metodi con associazione anticipata ai metodi di assembly dipendenti. |

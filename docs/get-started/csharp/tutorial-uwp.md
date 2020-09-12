@@ -1,8 +1,8 @@
 ---
-title: Creare un'app per la piattaforma UWP (Universal Windows Platform) con Visual Studio e C#
+title: "Creare un'app UWP con Visual Studio e C #"
 description: Creare un'app UWP in Visual Studio con XAML e C#
 titleSuffix: ''
-ms.custom: seodec18, get-started
+ms.custom: seodec18, get-started, SEO-VS-2020
 ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: aec4b72e8393e241039e8c005d05275ab61111bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1f541c94804f8f5f454f6299a116a8bd1386e7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249257"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037276"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Esercitazione: creare la prima applicazione piattaforma UWP (Universal Windows Platform) in Visual Studio con XAML e C&#35;
 
@@ -72,7 +72,7 @@ Per prima cosa è necessario creare un progetto della piattaforma UWP (Universal
 
 1. Nella finestra di dialogo **Nuovo progetto della piattaforma UWP (Universal Windows Platform)** accettare le impostazioni predefinite per **Versione di destinazione** e **Versione minima**.
 
-   ![Nella finestra di dialogo Nuovo progetto della piattaforma UWP (Universal Windows Platform) accettare le impostazioni predefinite per Versione di destinazione e Versione minima](media/vs-2019/new-uwp-project-target-minver-dialog.png)
+   ![Accetta la versione di destinazione predefinita e le impostazioni minime della versione nella finestra di dialogo nuovo progetto di piattaforma UWP (Universal Windows Platform)](media/vs-2019/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
 
    > [!NOTE]
@@ -114,7 +114,7 @@ A questo punto è possibile iniziare a sviluppare l'app. Verrà aggiunto un puls
 
    Se si esamina il codice nell' **editor XAML**, si noterà che il pulsante è stato aggiunto anche qui:
 
-   ![Fare clic sul controllo Pulsante e trascinarlo nell'area di progettazione](media/uwp-xaml-control-code-window.png)
+   ![Mostra pulsante nell'editor XAML](media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Aggiungere un'etichetta al pulsante
 
@@ -192,7 +192,7 @@ A questo punto è possibile compilare, distribuire e avviare l'app UWP "Hello Wo
 
 1. Visualizzare l'app, che viene visualizzata subito dopo una schermata iniziale. L'app dovrebbe avere un aspetto simile al seguente:
 
-   ![App UWP "Hello World"](media/vs-2019/uwp-hello-world-app.png)
+   ![App "Hello World" di UWP](media/vs-2019/uwp-hello-world-app.png)
 
 1. Fare clic sul pulsante **Hello World**.
 
@@ -209,7 +209,7 @@ L'esercitazione è stata completata. Ci auguriamo che l'articolo sia stato utile
 > [!div class="nextstepaction"]
 > [Creare un'interfaccia utente](/windows/uwp/design/basics/xaml-basics-ui)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica di UWP](/windows/uwp/get-started/universal-application-platform-guide)
 - [Ottenere esempi di app UWP](/windows/uwp/get-started/get-uwp-app-samples)

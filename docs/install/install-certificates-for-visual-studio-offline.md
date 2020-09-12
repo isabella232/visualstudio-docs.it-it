@@ -1,8 +1,8 @@
 ---
-title: Installare i certificati necessari per un'installazione offline
+title: Installare i certificati per un'installazione offline
 description: Informazione sulla procedura di installazione dei certificati per un'installazione offline di Visual Studio.
 ms.date: 08/08/2019
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 525294d2cf3c33dfdb1c5796dabf1c2a7a78bf91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbc68d232816899d84cc2aead14208b009c933b2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418808"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037302"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installare i certificati necessari per l'installazione offline di Visual Studio
 
@@ -203,7 +203,7 @@ Dopo aver installato i certificati, la distribuzione di Visual Studio può proce
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Installa Visual Studio](install-visual-studio.md)
 * [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)

@@ -1,6 +1,7 @@
 ---
 title: Analizzatori Roslyn e librerie in grado di riconoscere il codice per ImmutableArrays
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
@@ -9,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fc40d229b911500cb6c196dba34546ed9ede206
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: db3ebbd289feb227506d8c188ade9261dfb53da2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741666"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037647"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizzatori Roslyn e libreria compatibile con il codice per ImmutableArrays
 
@@ -307,7 +308,7 @@ Questo esempio è stato sviluppato e illustrato più avanti in [questo argomento
 
 [Qui](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)è possibile visualizzare tutto il codice terminato. Le sottocartelle *DoNotUseImmutableArrayCollectionInitializer* e *DoNotUseImmutableArrayCtor* includono ognuna un file c# per individuare i problemi e un file c# che implementa le correzioni del codice visualizzate nell'interfaccia utente di Visual Studio Light Bulb. Si noti che il codice finito ha un'astrazione leggermente maggiore per evitare di recuperare l' \<T> oggetto di tipo ImmutableArray più volte. USA azioni registrate annidate per salvare l'oggetto tipo in un contesto disponibile ogni volta che vengono eseguite le azioni secondarie (analizza la creazione di oggetti e analizza le inizializzazioni della raccolta).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [\\\Build 2015 Talk](https://channel9.msdn.com/events/Build/2015/3-725)
 * [Codice completato su GitHub](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)

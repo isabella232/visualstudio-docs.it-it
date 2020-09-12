@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f638d60b7bd4416bb7a19cc960cac1159c755ab3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38e542fed0f26422a88644577ec864ef006855c5
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972296"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038439"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurare gli unit test usando un file con *estensione runsettings*
 
@@ -107,7 +107,7 @@ Aggiungere una proprietà di compilazione a un progetto tramite il file di proge
 
 - Le impostazioni esecuzione test a livello di progetto sono attualmente supportate nei progetti C#, VB, C++ e F #.
 - Un file specificato per un progetto esegue l'override di qualsiasi altro file di impostazioni esecuzione test specificato nella soluzione.
-- [Queste proprietà di MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties?view=vs-2019) possono essere usate per specificare il percorso del file runsettings. 
+- [Queste proprietà di MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md) possono essere usate per specificare il percorso del file runsettings. 
 
 Esempio di specifica di un file con *estensione runsettings* per un progetto:
     
@@ -141,7 +141,7 @@ Per eseguire i test dalla riga di comando, usare *vstest.console.exe*e specifica
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
    ```
 
-   Oppure
+   oppure
 
    ```cmd
    vstest.console.exe --settings:test.runsettings test.dll
@@ -307,7 +307,7 @@ Queste impostazioni sono specifiche dell'adattatore di test che esegue i metodi 
 |Configurazione|Predefinito|Valori|
 |-|-|-|
 |**ForcedLegacyMode**|false|In Visual Studio 2012, l'adapter MSTest è stato ottimizzato per essere più veloce e più scalabile. Un comportamento, ad esempio l'ordine in cui vengono eseguiti i test, potrebbe non essere esattamente come quello nelle versioni precedenti di Visual Studio. Impostare questo valore su **true** per usare l'adattatore di test precedente.<br /><br />Lo si può usare, ad esempio, nel caso in cui sia presente un file *app.config* specificato per uno unit test.<br /><br />È consigliabile provare a effettuare il refactoring dei test per consentire l'uso dell'adattatore più recente.|
-|**IgnoreTestImpact**|false|La funzionalità di impatto sui test assegna la priorità ai test interessati dalle modifiche recenti, quando viene eseguito in MSTest o da Microsoft Test Manager (deprecato in Visual Studio 2017). Questa impostazione disattiva la funzionalità. Per altre informazioni, vedere [Test da eseguire da una compilazione precedente](https://msdn.microsoft.com/library/dd286589).|
+|**IgnoreTestImpact**|false|La funzionalità di impatto sui test assegna la priorità ai test interessati dalle modifiche recenti, quando viene eseguito in MSTest o da Microsoft Test Manager (deprecato in Visual Studio 2017). Questa impostazione disattiva la funzionalità. Per altre informazioni, vedere [Test da eseguire da una compilazione precedente](/previous-versions/dd286589(v=vs.140)).|
 |**SettingsFile**||È possibile specificare un file di impostazioni test da usare con l'adattatore MSTest. È anche possibile specificare un file di impostazioni test [dal menu delle impostazioni](#specify-a-run-settings-file-in-the-ide).<br /><br />Se si specifica questo valore, è necessario impostare anche **ForcedlegacyMode** su **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|Una volta completata l'esecuzione di un test, MSTest viene arrestato. Anche qualsiasi processo avviato come parte del test verrà interrotto. Per fare in modo che l'executor di test rimanga attivo, impostare questa configurazione su **true**. Lo si può usare, ad esempio, per mantenere in esecuzione il browser tra i test codificati dell'interfaccia utente.|
 |**DeploymentEnabled**|true|Se si imposta il valore su **false**, gli elementi della distribuzione specificati nel metodo di test non vengono copiati nella directory di distribuzione.|
@@ -458,9 +458,8 @@ Il nodo **RunConfiguration** deve contenere un nodo **EnvironmentVariables** . U
 > [!NOTE]
 > Poiché queste variabili di ambiente devono essere sempre impostate quando l'host di test viene avviato, i test devono sempre essere eseguiti in un processo separato. A tale scopo, il flag */InIsolation* verrà impostato in presenza di variabili di ambiente in modo che l'host di test venga sempre richiamato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Configurare un agente di test](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md)
 - [Attività di test di Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
-

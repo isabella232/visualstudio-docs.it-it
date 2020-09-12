@@ -1,5 +1,6 @@
 ---
 title: Stringhe utilizzate come chiavi per trovare un plug-in del controllo del codice sorgente
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 038441f7bcea9fa1dafdd61505d4150ecf28a966
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 67e1a9c73c13632cf766b0536f2b7cfc1b456394
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741780"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037133"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Stringhe usate come chiavi per la ricerca di un plug-in del controllo del codice sorgente
 Le stringhe seguenti sono le chiavi per accedere al registro di sistema per trovare informazioni sul plug-in del controllo del codice sorgente.
@@ -46,7 +47,7 @@ Le stringhe seguenti sono le chiavi per accedere al registro di sistema per trov
 |`STR_UI_LANGUAGE`|UILanguage|
 |`STR_SRCSAFE_ROOT_KEY`|Software\Microsoft\SourceSafe|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)
 - [Procedura: Installare un plug-in del controllo del codice sorgente](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [File MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

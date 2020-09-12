@@ -1,21 +1,21 @@
 ---
 title: Disattiva analisi codice
-ms.date: 10/03/2019
+ms.date: 09/01/2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, disable
 - disable code analysis
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: d2cac7ad0502d82309aa664b8e8fe6bdd0301815
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28a95038db83e2a03975b0a5baccdabdd18452d9
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800698"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037146"
 ---
-# <a name="how-to-disable-source-code-analysis-for-managed-code"></a>Come disabilitare l'analisi del codice sorgente per il codice gestito
+# <a name="disable-source-code-analysis-for-net"></a>Disabilitare l'analisi del codice sorgente per .NET
 
 ::: moniker range=">=vs-2019"
 
@@ -77,7 +77,7 @@ A partire da Visual Studio 2019 versione 16,3, è possibile disattivare l'analis
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Non visualizzare le violazioni](use-roslyn-analyzers.md#suppress-violations)
 - [Procedura: abilitare e disabilitare l'analisi del codice legacy](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

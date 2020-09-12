@@ -1,5 +1,6 @@
 ---
 title: Linee guida sul controllo del codice sorgente per progetti ed editor
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b783fdf7231bd3f440686a1bef2a038d9b32f2e4
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 2d1066995537ff6c43a587326c1087b66f79ff52
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743396"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037634"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Linee guida aggiuntive sul controllo del codice sorgente per progetti ed editor
 Esistono diverse linee guida che i progetti e gli editor devono rispettare per supportare il controllo del codice sorgente.
@@ -33,5 +34,5 @@ Esistono diverse linee guida che i progetti e gli editor devono rispettare per s
 |Mantieni oggetti e proprietà in ordine stimabile|X|X|Rendere permanente i file in un ordine prevedibile, ad esempio ordine alfabetico, per facilitare l'Unione.|
 |Ricarica|X|X|Quando un file viene modificato sul disco, l'editor deve essere in grado di ricaricarlo. Quando si partecipa al controllo del codice sorgente, l'ambiente consente di ricaricare i dati chiamando l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementazione. Il caso di ricaricamento più difficile è quando si verifica un'estrazione quando si chiama IVsQueryEditQuerySave:: <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> e si stanno elaborando informazioni. Tuttavia, il codice di ricaricamento deve essere in grado di essere eseguito in questa situazione.<br /><br /> L'ambiente ricarica automaticamente i file di progetto. Tuttavia, un progetto deve implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> se presenta Gerarchie annidate per supportare il ricaricamento dei file di progetto annidati.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Supporto del controllo del codice sorgente](../../extensibility/internals/supporting-source-control.md)

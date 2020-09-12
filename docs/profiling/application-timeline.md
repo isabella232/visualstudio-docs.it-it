@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0bb76de0d62ab504090d9ac1864ba7ee5627f69d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d7f3d943d621708efab8df1e2f69402a0c5f26c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537280"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038348"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizzare il consumo delle risorse e l'attività del thread dell'interfaccia utente (XAML)
 
@@ -27,7 +27,7 @@ Questo strumento sostituisce lo strumento **Velocità di risposta interfaccia ut
 È possibile utilizzare questo strumento sulle piattaforme seguenti:
 
 - App Universal Windows (su Windows 10)
-- Windows 8.1
+- Windows 8,1
 - Windows Presentation Foundation (.Net 4.0 e versioni successive)
 - Windows 7
 
@@ -106,7 +106,7 @@ Sono supportati i seguenti eventi:
 |**Layout**|Nelle applicazioni di grandi dimensioni, migliaia di elementi potrebbero apparire sullo schermo contemporaneamente. Questa visualizzazione può comportare una bassa frequenza dei fotogrammi dell'interfaccia utente e una velocità di risposta dell’applicazione conseguentemente scarsa. L'evento Layout determina in modo accurato il costo del layout di ogni elemento, ovvero il tempo impiegato in Arrange, Measure, ApplyTemplate, ArrangeOverride e MeasureOverride. Crea anche le strutture ad albero visuali che hanno preso parte a un passaggio di Layout. È possibile usare questa visualizzazione per determinare quali alberi logici eliminare o per valutare altri meccanismi di rinvio per ottimizzare il passaggio di layout.|
 |**Rendering**|Tempo impiegato per disegnare elementi XAML sullo schermo.|
 |**I / 0**|Tempo impiegato per il recupero di dati dal disco locale o dalle risorse di rete cui è possibile accedere tramite l' [API Microsoft Windows Internet (WinINet)](/windows/desktop/WinInet/portal).|
-|**Codice app**|Tempo impiegato per l'esecuzione del codice dell'applicazione (utente) non correlato all'analisi o al layout.|
+|**Codice dell'app**|Tempo impiegato per l'esecuzione del codice dell'applicazione (utente) non correlato all'analisi o al layout.|
 |**Altro XAML**|Tempo impiegato per l'esecuzione del codice runtime XAML.|
 
 > [!TIP]
@@ -123,9 +123,9 @@ Usare la barra degli strumenti **Dettagli sequenza temporale** per ordinare, fil
 |![Elenco dettagli filtro sequenza temporale](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtra l'elenco in base a categorie selezionate e alla lunghezza degli eventi.|
 |![Personalizzare le informazioni sui dettagli della cronologia](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permette di specificare le annotazioni negli eventi.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Blog del team WPF: nuovo strumento di analisi delle prestazioni dell'interfaccia utente per applicazioni WPF](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
+- [Blog del team WPF: nuovo strumento di analisi delle prestazioni dell'interfaccia utente per applicazioni WPF](/archive/blogs/wpf/new-ui-performance-analysis-tool-for-wpf-applications)
 - [Procedure consigliate per le prestazioni per app UWP scritte in C++, C# e Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Ottimizzazione delle prestazioni di applicazioni WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
 - [Profilatura in Visual Studio](../profiling/index.yml)

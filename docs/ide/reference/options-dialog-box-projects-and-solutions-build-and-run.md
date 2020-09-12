@@ -1,5 +1,6 @@
 ---
 title: Finestra di dialogo Opzioni, progetti e soluzioni, compila ed Esegui
+ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4bcc033ba80778f3446b3089972c63006508ca
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: ff1ec236c85aeaeed655c611a88cead4380258f0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742761"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037712"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Finestra di dialogo Opzioni: progetti e soluzioni \> Compila ed Esegui
 
@@ -60,7 +61,7 @@ Determina la quantità di informazioni del processo di compilazione che viene vi
 
 Determina la quantità di informazioni scritte nel file di log di compilazione, disponibile in * \\ \<ProjectName> \Debug \\ \<ProjectName> . log*.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Compilazione e creazione](../../ide/compiling-and-building-in-visual-studio.md)
 - [Finestra di dialogo Opzioni, Progetti e soluzioni](projects-and-solutions-options-dialog-box.md)

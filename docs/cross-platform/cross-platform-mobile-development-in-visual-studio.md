@@ -1,6 +1,7 @@
 ---
 title: Sviluppo di app per dispositivi mobili multipiattaforma in Visual Studio | Microsoft Docs
-ms.custom: ''
+titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 19e1a968af60b76d07e24af1d86c74e427a3cd52
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 12c0da32014581e6e9cc0ea22cb80414462f03bd
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509055"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037263"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Sviluppo per dispositivi mobili multipiattaforma in Visual Studio
 
@@ -165,7 +166,7 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 |[Guardare un video di introduzione a Visual Studio Tools per Unity 2.0 Preview](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (Video)|
 |[Informazioni su Unity](https://unity.com/) (sito Web Unity)|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Aggiungere API Microsoft 365 a un progetto di Visual Studio](/office/developer-program/office-365-developer-program)
 - [Servizi app di Azure: app per dispositivi mobili](https://azure.microsoft.com/services/app-service/mobile/)

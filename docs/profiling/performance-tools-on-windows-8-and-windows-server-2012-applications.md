@@ -8,12 +8,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03c5897f4cbf06ad7c9dc7541a032f5b86e45d4c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778427"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038608"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012
 
@@ -42,9 +42,9 @@ Per altre informazioni sulla profilatura delle app UWP, vedere gli articoli segu
 - [Eseguire app UWP in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [Presentazione degli strumenti di profilatura](profiling-feature-tour.md)
 - [Memoria JavaScript](../profiling/javascript-memory.md)
-- [Profilare codice Visual C++, Visual C# e Visual Basic nelle app UWP in un computer locale](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)
-- [Profilare codice Visual C++, Visual C# e Visual Basic nelle app UWP in un dispositivo remoto](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)
-- [Analizzare i dati relativi alle prestazioni per il codice Visual C++, Visual C# e Visual Basic nelle app UWP](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)
+- [Profilare codice Visual C++, Visual C# e Visual Basic nelle app UWP in un computer locale](/previous-versions/hh696631(v=vs.140))
+- [Profilare codice Visual C++, Visual C# e Visual Basic nelle app UWP in un dispositivo remoto](/previous-versions/hh972878(v=vs.140))
+- [Analizzare i dati relativi alle prestazioni per il codice Visual C++, Visual C# e Visual Basic nelle app UWP](/previous-versions/hh780914(v=vs.140))
 
 ## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a>Raccogliere dati sulle app in esecuzione sul desktop di Windows 8 o in Windows Server 2012 dall'IDE di Visual Studio
 
@@ -118,7 +118,7 @@ Per raccogliere dati di interazione tra livelli in un computer remoto, è necess
 
 I dati di interazione tra livelli possono essere visualizzati solo in Visual Studio Enterprise. I report sull'interazione tra livelli basati su file tramite [VSPerfReport](../profiling/vsperfreport.md) non sono disponibili.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Esplora prestazioni](../profiling/performance-explorer.md) 
  [Configurare le sessioni](../profiling/configuring-performance-sessions.md) 

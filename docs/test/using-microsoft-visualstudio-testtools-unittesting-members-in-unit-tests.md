@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e45df63f36947b5f6f0aad77bb8eebcab4aca731
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d68e26e8503fb450d6b163ecec31c0cb6485f6c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585561"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038621"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Usare il framework MSTest negli unit test
 
@@ -43,7 +43,7 @@ Usare gli elementi seguenti per configurare unit test basati sui dati. Per altre
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Attributi usati per stabilire un ordine di chiamata
 
-Un elemento di codice decorato con uno degli attributi seguenti viene chiamato nel momento specificato. Per altre informazioni, vedere [Anatomia di un unit test](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Un elemento di codice decorato con uno degli attributi seguenti viene chiamato nel momento specificato. Per altre informazioni, vedere [Anatomia di un unit test](/previous-versions/ms182517(v=vs.110)).
 
 ### <a name="attributes-for-assemblies"></a>Attributi per gli assembly
 
@@ -69,7 +69,7 @@ ClassInitialize e ClassCleanup vengono chiamati subito dopo il caricamento e sub
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Attributi usati per identificare classi e metodi di test
 
-Ogni classe di test deve avere l'attributo `TestClass` e ogni metodo di test deve avere l'attributo `TestMethod`. Per altre informazioni, vedere [Anatomia di un unit test](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Ogni classe di test deve avere l'attributo `TestClass` e ogni metodo di test deve avere l'attributo `TestMethod`. Per altre informazioni, vedere [Anatomia di un unit test](/previous-versions/ms182517(v=vs.110)).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -133,6 +133,6 @@ Gli attributi in questa sezione correlano il metodo di test che decorano alle en
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType>
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - Documentazione di riferimento per <xref:Microsoft.VisualStudio.TestTools.UnitTesting>

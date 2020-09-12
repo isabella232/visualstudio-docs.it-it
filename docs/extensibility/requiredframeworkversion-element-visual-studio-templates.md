@@ -1,6 +1,7 @@
 ---
 title: Elemento RequiredFrameworkVersion (modelli di Visual Studio)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ce8a342f7b3582fb8b2b3839a44e545071b7177
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 552efae54a3c8346c7a259fb36e0ed0f8084be3e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741687"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037725"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Elemento RequiredFrameworkVersion (modelli di Visual Studio)
 
@@ -56,7 +57,7 @@ Specifica la versione minima del .NET Framework richiesta dal modello. L'elenco 
 
  Il testo deve essere il numero di versione minimo del .NET Framework necessario per il modello.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 `RequiredFrameworkVersion` è un elemento facoltativo. Utilizzare questo elemento solo se il modello supporta una versione minima specifica (e versioni successive, se presenti) del .NET Framework. Se si specifica l' `RequiredFrameworkVersion` elemento e il modello non supporta una versione minima specifica del .NET Framework, l'elenco a discesa **versione Framework di destinazione** viene visualizzato quando non è applicabile.
 
@@ -84,7 +85,7 @@ Nell'esempio seguente vengono illustrati i metadati per un [!INCLUDE[csprcs](../
 
 In questo esempio la versione minima del .NET Framework richiesta dal modello, rappresentata da `RequiredFrameworkVersion` , è 3,0. Un progetto creato con questo modello può avere come destinazione .NET Framework versioni a partire da 3,0.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)

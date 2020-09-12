@@ -9,19 +9,19 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: b369fe6998cd7ef134af765d6d849f41bc93527c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ea74fd587119105577062f571b4ec8e3de76a4f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290666"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037530"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Analizzare le prestazioni del database tramite lo strumento database
 
 Usare lo strumento database per registrare le query del database eseguite dall'app durante una sessione di diagnostica. È quindi possibile analizzare le informazioni sulle singole query per trovare le posizioni per migliorare le prestazioni dell'app.
 
 > [!NOTE]
-> Lo strumento database richiede Visual Studio 2019 versione 16,3 o successiva e un progetto .NET Core in Windows con [ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) o [Entity Framework Core](https://docs.microsoft.com/ef/core/).
+> Lo strumento database richiede Visual Studio 2019 versione 16,3 o successiva e un progetto .NET Core in Windows con [ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) o [Entity Framework Core](/ef/core/).
 
 ## <a name="setup"></a>Configurazione
 
@@ -50,8 +50,8 @@ Dopo aver individuato una query che si desidera analizzare, fare clic con il pul
 
 ![Vai a file di origine selezionato](./media/db-gotosource.png "Vai a file di origine selezionato")
 
-Se si seleziona un intervallo di tempo in un grafico, nella tabella query vengono mostrate solo le query che si sono verificate durante tale intervallo di tempo. Questo comportamento è particolarmente utile quando si esegue anche lo [strumento utilizzo CPU](https://docs.microsoft.com/visualstudio/profiling/cpu-usage?view=vs-2019).
+Se si seleziona un intervallo di tempo in un grafico, nella tabella query vengono mostrate solo le query che si sono verificate durante tale intervallo di tempo. Questo comportamento è particolarmente utile quando si esegue anche lo [strumento utilizzo CPU](./cpu-usage.md?view=vs-2019).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Ottimizzazione delle impostazioni del profiler](../profiling/optimize-profiler-settings.md)

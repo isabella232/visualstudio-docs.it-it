@@ -2,16 +2,17 @@
 title: Utilizzare più contenitori utilizzando Docker Compose
 author: ghogen
 description: Informazioni su come usare più contenitori con Docker Compose
+ms.custom: SEO-VS-2020
 ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 9fc2ed06e5429f8c05ef560bf0af7a44e8d189ad
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 0fa7d186623b69fd83c3ed7e4ab9cc12128847d2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742968"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037211"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Esercitazione: creare un'app a più contenitori con Docker Compose
 
@@ -192,7 +193,7 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI*. Selezionare
 
 Vedere le opzioni per la distribuzione dei [contenitori in Azure](/azure/containers).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
   
 [Modello di Docker Compose](https://docs.docker.com/compose/)  
 [Strumenti contenitore](./index.yml)

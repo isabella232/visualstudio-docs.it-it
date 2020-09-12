@@ -9,12 +9,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 49091ba472637d480c04c39f0170c2aee00595d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6f690b77b7e573fdf1c54fdaeca6237c6bbc146
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290671"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037543"
 ---
 # <a name="analyze-performance-of-net-asynchronous-code"></a>Analizzare le prestazioni del codice asincrono .NET
 
@@ -41,12 +41,12 @@ Usare lo strumento .NET Async per analizzare le prestazioni del codice asincrono
 
 Gli eventi asincroni sono organizzati in attività in ordine cronologico. Ognuno Visualizza l'ora di inizio, l'ora di fine e la durata.
 
-Ogni riga che corrisponde a un' [attività](https://docs.microsoft.com/dotnet/api/system.threading.tasks) è denominata nella colonna **nome** . Per qualsiasi nome di attività che non può essere risolto, viene visualizzata un' **attività nell'** etichetta. Segue il nome del metodo in cui si trova l'attività. Se un'attività asincrona non viene completata nella sessione di raccolta, viene visualizzata un'etichetta **incompleta** nella colonna **ora di fine** .
+Ogni riga che corrisponde a un' [attività](/dotnet/api/system.threading.tasks) è denominata nella colonna **nome** . Per qualsiasi nome di attività che non può essere risolto, viene visualizzata un' **attività nell'** etichetta. Segue il nome del metodo in cui si trova l'attività. Se un'attività asincrona non viene completata nella sessione di raccolta, viene visualizzata un'etichetta **incompleta** nella colonna **ora di fine** .
 
 Per esaminare ulteriormente un'attività o un'attività specifica, fare clic con il pulsante destro del mouse sulla riga. Selezionare quindi **Vai a file di origine** per vedere dove si è verificato l'attività nel codice.
 
 ![Strumento asincrono .NET con Vai al file di origine selezionato](../profiling/media/async-tool-gotosource.png "Strumento asincrono .NET con Vai al file di origine selezionato")
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Ottimizzazione delle impostazioni del profiler](../profiling/optimize-profiler-settings.md)
