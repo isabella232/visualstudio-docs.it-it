@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9157d47278f835232308dc497965afebb294f8fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f8da407c0917a3f974a55fd02a1227db5b5d63
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78937581"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036574"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>Eseguire la migrazione dall'analisi legacy (FxCop) all'analisi dell'origine (analizzatori FxCop)
 
@@ -27,11 +27,11 @@ Molte delle regole di analisi legacy (FxCop) sono già state riscritte per gli a
 
 Per ulteriori informazioni sulle differenze tra l'analisi legacy e l'analisi dell'origine, vedere gli argomenti seguenti:
 
-- [Analisi del codice sorgente rispetto all'analisi legacy](../code-quality/roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)
+- [Analisi del codice sorgente rispetto all'analisi legacy](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers)
 
 - [Domande frequenti sugli analizzatori FxCop](../code-quality/fxcop-analyzers-faq.md)
 
-Per eseguire la migrazione all'analisi [dell'origine, installare gli analizzatori FxCop](../code-quality/install-fxcop-analyzers.md). Analogamente alle violazioni delle regole di analisi legacy, le violazioni dell'analisi del codice sorgente vengono visualizzate nella finestra di Elenco errori in Visual Studio. Inoltre, le violazioni dell'analisi del codice sorgente vengono visualizzate nell'editor di codice come *controllo ortografia durante* sotto il codice che causa il danneggiamento. Il colore della linea ondulata dipende dall'[impostazione di gravità](../code-quality/use-roslyn-analyzers.md#rule-severity) della regola. Per visualizzare lo stato delle regole trasferite ai nuovi analizzatori FxCop, vedere [porte e regole non portate](../code-quality/fxcop-rule-port-status.md).
+Per eseguire la migrazione all'analisi [dell'origine, installare gli analizzatori FxCop](../code-quality/install-fxcop-analyzers.md). Analogamente alle violazioni delle regole di analisi legacy, le violazioni dell'analisi del codice sorgente vengono visualizzate nella finestra di Elenco errori in Visual Studio. Inoltre, le violazioni dell'analisi del codice sorgente vengono visualizzate nell'editor di codice come *controllo ortografia durante* sotto il codice che causa il danneggiamento. Il colore della linea ondulata dipende dall'[impostazione di gravità](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) della regola. Per visualizzare lo stato delle regole trasferite ai nuovi analizzatori FxCop, vedere [porte e regole non portate](../code-quality/fxcop-rule-port-status.md).
 
 Per ulteriori informazioni sulla configurazione degli analizzatori FxCop:
 

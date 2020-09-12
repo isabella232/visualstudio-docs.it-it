@@ -8,12 +8,12 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 625f4720e94f6ec0b3b9751c28ad18e0a9f38bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4c33072c1b42d76f1f6ea26222c4674f9e6ff77
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288006"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036093"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Procedura: creare un file di impostazioni di test per un test di carico distribuito
 
@@ -120,7 +120,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
     |**Proxy client ASP.NET per IntelliTrace e impatto test:** questo proxy consente di raccogliere informazioni sulle chiamate http da un client a un server Web per gli adattatori dati di diagnostica di IntelliTrace e impatto test.|![Icona Informazioni](../test/media/vc364f4.gif)<br /><br /> A meno che ci sia una specifica esigenza di raccogliere informazioni sul sistema per i computer degli agenti di test, non includere questo adattatore. **Attenzione:** non si consiglia l'utilizzo dell'adattatore IntelliTrace nei test di carico a causa dei problemi che si verificano per la grande quantità di dati raccolti. <br /><br /> I dati dell'impatto sui test non vengono raccolti tramite test di carico.||
     |**IntelliTrace:** è possibile configurare informazioni specifiche sulla traccia diagnostica archiviate in un file di log. Un file di log ha estensione *tdlog*. Quando si esegue il test e un passo del test non riesce, è possibile creare un bug. Il file di log che contiene la traccia diagnostica viene associato automaticamente al bug. I dati raccolti nel file di log aumentano la produttività di debug riducendo il tempo necessario per riprodurre e diagnosticare un errore nel codice. Da questo file di log è possibile ricreare la sessione locale in un altro computer. In questo modo si riduce il rischio che non sia possibile riprodurre un bug.<br /><br /> Per altre informazioni, vedere [Raccogliere dati IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Icona Importante](../test/media/vc364f3.gif)<br /><br /> Non si consiglia l'utilizzo dell'adattatore IntelliTrace nei test di carico a causa dei problemi che si verificano per la grande quantità di dati raccolti e registrati. È opportuno tentare di utilizzare l'adattatore IntelliTrace solo in test di carico che non hanno lunga esecuzione e non utilizzano molti agenti di test.|[Procedura: Raccogliere dati di IntelliTrace per agevolare il debug di problemi complessi](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |**Profiler di ASP.NET:** È possibile creare un'impostazione di test che includa la profilatura di ASP.NET, che raccoglie i dati sulle prestazioni nelle applicazioni Web ASP.NET.|L'adattatore dati di diagnostica del profiler ASP.NET profila il processo di Internet Information Services (IIS), pertanto non funzionerà con un server web di sviluppo. Per profilare il sito web nel test di carico, è necessario installare un agente di test nel computer sul quale IIS è in esecuzione. L'agente di test non genererà carico, ma sarà un agente di sola raccolta. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).|[Procedura: configurare ASP.NET Profiler per i test di carico tramite impostazioni test](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
-    |**Log eventi:** è possibile configurare un'impostazione test in modo da includere la raccolta del log eventi, che verrà inserita nei risultati dei test.||[Procedura: configurare la raccolta di log eventi usando le impostazioni test](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
+    |**Log eventi:** è possibile configurare un'impostazione test in modo da includere la raccolta del log eventi, che verrà inserita nei risultati dei test.||[Procedura: configurare la raccolta di log eventi usando le impostazioni test](/previous-versions/dd504816(v=vs.110))|
     |**Emulazione di rete:** è possibile specificare che si vuole aggiungere un carico di rete artificiale al test usando un'impostazione test. L'emulazione di rete influisce sulla comunicazione da e verso il computer emulando una determinata velocità della connessione di rete, ad esempio di una connessione remota. **Nota:** non è possibile usare l'emulazione di rete per aumentare la velocità della connessione di rete.|L'adattatore di emulazione di rete viene ignorato dai test di carico. Al contrario, i test di carico usano le impostazioni specificate nella combinazione di reti dello scenario dei test di carico.<br /><br /> Per altre informazioni, vedere [Specificare i tipi di rete virtuale](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
     |**Informazioni di sistema:** è possibile configurare un'impostazione test per includere le informazioni di sistema dei computer su cui viene eseguito l'agente di raccolta di dati e diagnostica delle informazioni di sistema. Le informazioni di sistema sono specificate nei risultati del test tramite un'impostazione di test.|![Icona di informazioni](../test/media/vc364f4.gif)<br /><br /> È possibile raccogliere informazioni di sistema sia dagli agenti di carico che dal sistema sottoposto a test.|Per raccogliere queste informazioni, non è necessaria alcuna configurazione.|
     |**Impatto test:** è possibile raccogliere informazioni sui metodi del codice dell'applicazione usati durante l'esecuzione di un test case. Queste informazioni possono essere utilizzate insieme a quelle relative alle modifiche apportate al codice dell'applicazione dagli sviluppatori per individuare i test interessati da tali modifiche di sviluppo.|I dati dell'impatto sui test non vengono raccolti con i test di carico.||
@@ -180,7 +180,7 @@ Nella cartella **elementi di soluzione** in **Esplora soluzioni**, fare clic con
 
 Il file delle impostazioni di test verrà rimosso dalla soluzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)

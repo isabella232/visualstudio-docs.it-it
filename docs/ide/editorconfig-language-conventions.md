@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: b9c7da96df8c68de0b9f6ba3e341d93596200934
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: cbe2b18b9edd6f2d4634ede41d676519f1b80ad3
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641482"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035720"
 ---
 # <a name="language-conventions"></a>Convenzioni del linguaggio
 
@@ -76,7 +76,7 @@ Per modificare la convenzione di stile del codice:
 
    Visual Studio aggiunge o modifica l'impostazione di configurazione nel file EditorConfig, come illustrato nella casella Anteprima.
 
-Per modificare la gravità della violazione dello stile del codice, seguire la stessa procedura, ma scegliere **Configura \<rule ID> gravità** anziché **Configura \<rule ID> stile codice**. Per altre informazioni, vedere [configurare automaticamente la gravità della regola](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
+Per modificare la gravità della violazione dello stile del codice, seguire la stessa procedura, ma scegliere **Configura \<rule ID> gravità** anziché **Configura \<rule ID> stile codice**. Per altre informazioni, vedere [configurare automaticamente la gravità della regola](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu).
 
 ::: moniker-end
 

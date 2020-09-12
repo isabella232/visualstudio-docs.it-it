@@ -1,6 +1,7 @@
 ---
 title: Tipo di dati non supportati
 description: Uno o più elementi selezionati contengono un tipo di dati non supportato dalla finestra di progettazione
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 71dcd4f9-2946-42c5-9ce4-99c819ea2785
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b393798ea3abd89b79bb47e4449d33272a3324f8
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 167146b9a7938e5498e8db023602b2e13f74379c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741842"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034078"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Uno o più elementi selezionati contengono un tipo di dati non supportato dalla finestra di progettazione
 
@@ -26,6 +27,6 @@ Uno o più elementi trascinati da **Esplora server** o **Esplora database** in *
 
 2. Trascinare la vista da **Esplora server** o **Esplora database** nella finestra di progettazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

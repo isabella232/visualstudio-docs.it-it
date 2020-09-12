@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: deef5aeaa802d5f5b46ba81f711173dc81a32357
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60b3d471191f58a5eb612d9942b72c9d5e90e8af
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800307"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036418"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Eseguire la pubblicazione di un'app Web in Servizio app di Azure con Visual Studio
 
@@ -23,7 +23,7 @@ Per le app ASP.NET, ASP.NET Core, Node.js e .NET Core, pubblicare nel servizio a
 
 * Per una distribuzione di app continua o automatica, usare Azure DevOps con [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
-* Per una distribuzione delle app singola (o manuale), usare lo strumento **Pubblica** in Visual Studio per distribuire le app ASP.NET, ASP.NET Core, Node.js e .NET Core nel servizio app di Azure o nel servizio app di Azure per Linux (tramite i contenitori). Per le app Python seguire i passaggi in [Python - Eseguire la pubblicazione nel servizio app di Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
+* Per la distribuzione monouso o manuale delle app, usare lo strumento di **pubblicazione** in Visual Studio per distribuire app ASP.NET, ASP.NET Core, Node.js e .NET Core al servizio app Azure o al [servizio app per Linux](../deployment/quickstart-deploy-to-linux.md) (usando i contenitori). Per le app Python seguire i passaggi in [Python - Eseguire la pubblicazione nel servizio app di Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 Questo articolo descrive come usare lo strumento **Pubblica** per una distribuzione singola.
 
@@ -35,7 +35,9 @@ Questo articolo descrive come usare lo strumento **Pubblica** per una distribuzi
 
     ![Il comando pubblica nel menu di scelta rapida del progetto in Esplora soluzioni](../deployment/media/quickstart-publish.png "Scegliere Pubblica")
 
-1. Nella finestra di dialogo **pubblica** selezionare **Azure**.
+1. Se sono stati configurati in precedenza tutti i profili di pubblicazione, viene visualizzata la finestra **pubblica** . Selezionare **Nuovo**.
+
+1. Nella finestra **pubblica** selezionare **Azure**.
 
     ![Scegliere la destinazione di pubblicazione](../deployment/media/quickstart-publish-azure-new.png)
 

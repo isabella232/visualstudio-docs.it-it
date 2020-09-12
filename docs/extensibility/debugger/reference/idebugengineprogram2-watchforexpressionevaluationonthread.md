@@ -1,6 +1,7 @@
 ---
 title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c1328423cd81db6e55964795ef9da23c5bb29811
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 4f36431ef7a190e98d35e795ffd8213781553dfc
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89737004"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036119"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 Consente o impedisce la valutazione di espressioni nel thread specificato, anche se il programma è stato arrestato.
@@ -67,12 +68,12 @@ in Se diverso da zero ( `TRUE` ), consente la valutazione dell'espressione sul t
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Quando la gestione del debug della sessione chiede a un programma, identificato dal `pOriginatingProgram` parametro, di valutare un'espressione, invia una notifica a tutti gli altri programmi collegati chiamando questo metodo.
 
  La valutazione delle espressioni in un programma può causare l'esecuzione di codice in un altro programma, a causa della valutazione della funzione o della valutazione delle `IDispatch` Proprietà. Per questo motivo, questo metodo consente l'esecuzione e il completamento della valutazione dell'espressione anche se il thread può essere arrestato in questo programma.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

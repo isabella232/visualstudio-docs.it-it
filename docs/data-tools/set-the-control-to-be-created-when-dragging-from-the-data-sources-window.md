@@ -1,5 +1,6 @@
 ---
 title: Imposta il controllo da creare durante il trascinamento
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7203cc5017763a6ba0b76855f010f114ca879a6
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: a7588fc23e7d52adb6c7ea780a75e11715688e26
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743100"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036262"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati
 
@@ -69,6 +70,6 @@ Prima di trascinare un elemento che rappresenta una colonna o una proprietà di 
 
      Se non si desidera creare un controllo per la colonna o la proprietà, selezionare **nessuno** nel menu a discesa. Questa opzione è utile se si desidera trascinare la tabella o l'oggetto padre nella finestra di progettazione, ma non si desidera includere la colonna o la proprietà specifica.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

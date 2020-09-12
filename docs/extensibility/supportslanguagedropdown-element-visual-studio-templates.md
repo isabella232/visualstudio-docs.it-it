@@ -1,6 +1,7 @@
 ---
 title: Elemento SupportsLanguageDropDown (modelli di Visual Studio)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58c8cd8eef19c6fe5ef6129d9149ec9b650c5025
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 2ef6cb4f96bf1b31566fef8b714ed30c270ad754
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741748"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036847"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>Elemento SupportsLanguageDropDown (modelli di Visual Studio)
 
@@ -59,7 +60,7 @@ Specifica se il modello di elemento Web è identico per più lingue e se l'opzio
 
  Il testo deve essere `true` o `false` , che indica se l'opzione **lingua** è disponibile o meno nella finestra di dialogo **Aggiungi nuovo elemento** .
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  `SupportsLanguageDropDown` è un elemento facoltativo. Il valore predefinito è `false`.
 
@@ -93,7 +94,7 @@ Specifica se il modello di elemento Web è identico per più lingue e se l'opzio
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

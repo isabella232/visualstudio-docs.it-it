@@ -14,39 +14,67 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20524a02cf6ff38e8336ae715162f9f197d46590
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: cccba4c299d5b12bdc00666a0b00f073fba12278
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641639"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036690"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Distribuire l'app in una cartella, IIS, Azure o un'altra destinazione
 
 Mediante la distribuzione, un'applicazione, un servizio o un componente viene distribuito per l'installazione in altri computer, dispositivi, server o nel cloud. Il metodo appropriato viene scelto in Visual Studio per il tipo di distribuzione necessaria.
 
-Per molti tipi comuni di app, è possibile distribuire l'applicazione direttamente da Esplora soluzioni in Visual Studio. Per una panoramica di questa funzionalità, vedere [Presentazione della distribuzione](../deployment/deploying-applications-services-and-components.md).
+Ottenere la guida per l'attività di distribuzione:
 
-![Scegliere un'opzione di pubblicazione](../deployment/media/quickstart-publish-dialog.png)
+- Non si è certi dell'opzione di distribuzione da scegliere? Scopri [quali sono le opzioni di pubblicazione più adatte?](#what-publishing-options-are-right-for-me)
+- Per informazioni sui problemi di distribuzione per app Azure Service o IIS, vedere la pagina [relativa alla risoluzione dei problemi ASP.NET Core su app Azure Service e IIS](/aspnet/core/test/troubleshoot-azure-iis).
+- Per informazioni sulla configurazione delle impostazioni di distribuzione .NET, vedere [configurare le impostazioni di distribuzione .NET](#configure-net-deployment-settings).
+- Per eseguire la distribuzione in una nuova destinazione, se in precedenza è stato creato un profilo di pubblicazione, selezionare **nuovo** dalla finestra **pubblica** per un profilo configurato.
+
+   ![Crea un nuovo profilo di pubblicazione](../deployment/media/create-a-new-publish-profile.png)
+
+   Quindi, scegliere un'opzione di distribuzione nella finestra pubblica. Per informazioni sulle opzioni di pubblicazione, vedere le sezioni seguenti.
 
 ## <a name="what-publishing-options-are-right-for-me"></a>Quali sono le opzioni di pubblicazione più adatte?
 
 Dall'interno di Visual Studio è possibile pubblicare le applicazioni direttamente nelle destinazioni seguenti:
 
+::: moniker range=">=vs-2019"
 - [Azure](#azure)
 - [Container Registry Docker](#docker-container-registry)
 - [Cartella](#folder)
 - [Server FTP/FTPS](#ftpftps-server)
 - [Server Web (IIS)](#web-server-iis)
 - [Importa profilo](#import-profile)
+::: moniker-end
+::: moniker range="vs-2017"
+- [Servizio app](#azure-app-service)
+- [Servizio app in Linux](#azure-app-service)
+- [IIS (scegliere IIS, FTP e così via)](#web-server-iis)
+- [FTP/FTPS (scegliere IIS, FTP e così via)](#ftpftps-server)
+- [Cartella](#folder)
+- [Importa profilo](#import-profile)
+::: moniker-end
+
+Le opzioni precedenti vengono visualizzate come illustrato nella figura seguente quando si crea un nuovo profilo di pubblicazione.
+
+::: moniker range=">=vs-2019"
+![Scegliere un'opzione di pubblicazione](../deployment/media/quickstart-publish-dialog.png)
+::: moniker-end
+::: moniker range="vs-2017"
+![Scegliere un'opzione di pubblicazione](../deployment/media/quickstart-publish-dialog-vs-2017.png)
+::: moniker-end
+
+Per una rapida panoramica delle opzioni di distribuzione delle applicazioni più generali, vedere la pagina relativa [alla distribuzione](../deployment/deploying-applications-services-and-components.md).
 
 ## <a name="azure"></a>Azure 
 
 Quando si sceglie Azure, è possibile scegliere tra:
 
-- Servizio app Azure in esecuzione in Windows, Linux o come immagine Docker
-- Un'immagine Docker distribuita in Azure Container Registry
-- Una macchina virtuale di Azure
+- [Servizio app Azure](#azure-app-service) in esecuzione in Windows, Linux o come immagine Docker
+- Un'immagine Docker distribuita in [Azure container Registry](#azure-container-registry)
+- Una [macchina virtuale di Azure](#azure-virtual-machine)
 
 ![Scegliere un servizio di Azure](../deployment/media/quickstart-choose-azure-service.png)
 
@@ -66,7 +94,9 @@ Per determinare la potenza di calcolo di un servizio app, scegliere un [piano ta
 > Per usare Servizio app di Azure nel proprio centro dati o in altri computer locali, usare [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
 Per ulteriori informazioni sulla pubblicazione nel servizio app, vedere:
-- [Guida introduttiva: pubblicare il servizio app Azure](quickstart-deploy-to-azure.md) e la [Guida introduttiva-pubblicare ASP.NET Core in Linux](quickstart-deploy-to-linux.md).
+- [Guida introduttiva-pubblicare nel servizio app Azure](quickstart-deploy-to-azure.md)
+- [Guida introduttiva: pubblicare ASP.NET Core in Linux](quickstart-deploy-to-linux.md).
+- [Pubblicare un'app ASP.NET Core in app Azure servizio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
 - [Risolvere i problemi relativi a ASP.NET Core in app Azure servizio e IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ### <a name="azure-container-registry"></a>Registro Azure Container
@@ -78,7 +108,11 @@ Per ulteriori informazioni sulla pubblicazione nel servizio app, vedere:
 - Quando si dispone di una pipeline di sviluppo e distribuzione di un contenitore Docker esistente.
 - Quando si vuole compilare immagini del contenitore Docker in Azure.
 
-### <a name="azure-virtual-machines"></a>Macchine virtuali di Azure
+Per altre informazioni:
+
+- [Distribuire un contenitore ASP.NET in un registro contenitori](../containers/hosting-web-apps-in-docker.md)
+
+### <a name="azure-virtual-machine"></a>Macchina virtuale di Azure
 
 Le [macchine virtuali (VM) di Azure](https://azure.microsoft.com/documentation/services/virtual-machines/) consentono di creare e gestire qualsiasi numero di risorse di elaborazione nel cloud. Assumendosi la responsabilità per tutto il software e tutti gli aggiornamenti nelle macchine virtuali, è possibile personalizzare queste ultime in base alle esigenze dell'applicazione. È possibile accedere alle macchine virtuali direttamente con Desktop remoto e ognuna di esse manterrà l'indirizzo IP assegnato finché lo si ritiene opportuno.
 
@@ -95,13 +129,18 @@ Per altre informazioni, vedere il [confronto dettagliato](/azure/architecture/gu
 
 > Per usare le macchine virtuali di Azure nel proprio centro dati o in altri computer locali, usare [Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
-## <a name="docker-container-registry"></a>Container Registry Docker
+## <a name="docker-container-registry"></a>Registro contenitori di Docker
 
-Se l'applicazione usa Docker, è possibile pubblicare l'applicazione in contenitori in un Container Registry docker.
+Se l'applicazione usa Docker, è possibile pubblicare l'applicazione in contenitori in un registro contenitori docker.
 
 ### <a name="when-to-choose-docker-container-registry"></a>Quando scegliere Docker Container Registry
 
 - Si vuole distribuire un'applicazione in contenitori
+
+Per altre informazioni, vedere gli argomenti seguenti:
+
+- [Distribuire un contenitore ASP.NET in un registro contenitori](../containers/hosting-web-apps-in-docker.md)
+- [Distribuire in Docker Hub](../containers/deploy-docker-hub.md)
 
 ## <a name="folder"></a>Cartella
 
@@ -117,7 +156,13 @@ Si noti che se per qualsiasi motivo (ad esempio, l'accesso al computer) non si �
 - È necessaria solo una distribuzione locale dei test.
 - Si vuole esaminare e potenzialmente modificare in modo indipendente i file dell'applicazione prima di inviarli a un'altra destinazione di distribuzione.
 
-Per altre informazioni, vedere [Guida introduttiva: distribuire in una cartella locale](quickstart-deploy-to-local-folder.md)
+Per ulteriori informazioni, vedere [Guida introduttiva: eseguire la distribuzione in una cartella locale](quickstart-deploy-to-local-folder.md).
+
+Per ulteriori informazioni sulla scelta delle impostazioni, vedere gli argomenti seguenti:
+
+- [Distribuzione autonoma e dipendente dal Framework](/dotnet/core/deploying/)
+- [Identificatori di runtime di destinazione (RID portatile, et al)](/dotnet/core/rid-catalog)
+- [Configurazioni di debug e di rilascio](../ide/understanding-build-configurations.md)
 
 ## <a name="ftpftps-server"></a>Server FTP/FTPS
 
@@ -157,7 +202,9 @@ Quando si sceglie un server Web IIS, Visual Studio richiede un nome di profilo, 
 - Si vuole eseguire la distribuzione usando credenziali diverse da quelle usate in Visual Studio o quelle associate direttamente all'account Azure.
 - Si vuole eliminare i file dalla destinazione ogni volta che si esegue la distribuzione.
 
-Per ulteriori informazioni, vedere [Guida introduttiva: eseguire la distribuzione in un sito Web](quickstart-deploy-to-a-web-site.md). Per informazioni sulla risoluzione dei problemi relativi a ASP.NET Core in IIS, vedere [risolvere i problemi di ASP.NET Core in app Azure Service e IIS](/aspnet/core/test/troubleshoot-azure-iis).
+Per ulteriori informazioni, vedere [Guida introduttiva: eseguire la distribuzione in un sito Web](quickstart-deploy-to-a-web-site.md).
+
+Per informazioni sulla risoluzione dei problemi relativi a ASP.NET Core in IIS, vedere [risolvere i problemi di ASP.NET Core in app Azure Service e IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ## <a name="import-profile"></a>Importa profilo
 
@@ -174,6 +221,14 @@ Per altre informazioni, vedere gli argomenti seguenti:
 
 - [Importare impostazioni di pubblicazione ed eseguire la distribuzione in IIS](tutorial-import-publish-settings-iis.md)
 - [Importare impostazioni di pubblicazione e distribuzione in Azure](tutorial-import-publish-settings-azure.md)
+
+## <a name="configure-net-deployment-settings"></a>Configurare le impostazioni di distribuzione .NET
+
+Per ulteriori informazioni sulla scelta delle impostazioni, vedere gli argomenti seguenti:
+
+- [Distribuzione autonoma e dipendente dal Framework](/dotnet/core/deploying/)
+- [Identificatori di runtime di destinazione (RID portatile, et al)](/dotnet/core/rid-catalog)
+- [Configurazioni di debug e di rilascio](../ide/understanding-build-configurations.md)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

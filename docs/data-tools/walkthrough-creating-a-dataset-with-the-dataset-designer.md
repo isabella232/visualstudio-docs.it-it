@@ -1,5 +1,6 @@
 ---
 title: Creare un set di dati con l'Progettazione DataSet
+ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 07d61ec32d48e5cb9b5421e397d743cd8c95b523
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 20cd8bdc4f7d72cd0ed3920f75a4955ee57d2a68
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742935"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036782"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Procedura dettagliata: creare un set di dati con l'Progettazione DataSet
 
@@ -108,7 +109,7 @@ In questa sezione viene illustrato come aggiungere tabelle al set di dati.
 
 - Aggiungere la logica di convalida <xref:System.Data.DataTable.ColumnChanging> agli <xref:System.Data.DataTable.RowChanging> eventi o delle tabelle dati nel DataSet. Per altre informazioni, vedere [convalidare i dati nei set di dati](../data-tools/validate-data-in-datasets.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare e configurare i set di dati in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

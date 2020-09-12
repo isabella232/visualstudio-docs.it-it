@@ -1,6 +1,7 @@
 ---
-title: Inviare un processo per eseguire il training del modello in Azure Batch per intelligenza artificiale
-description: training modello cloud
+title: Inviare un processo per eseguire il training di un modello
+description: Inviare un processo per eseguire il training di un modello usando Azure Batch intelligenza artificiale
+ms.custom: SEO-VS-2020
 keywords: intelligenza artificiale, visual studio, training modello, cloud
 author: jillre
 ms.author: jillfra
@@ -10,12 +11,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 4d705cbff1ce4e25892dfc5df896418e6d58b632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 110468de264370b22d64dae40cf55e9766804c31
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371651"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036613"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Eseguire il training dei modelli di intelligenza artificiale in Azure Batch per intelligenza artificiale
 

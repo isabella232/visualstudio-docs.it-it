@@ -1,34 +1,34 @@
 ---
-title: Configurare l'ambito di analisi del codice in tempo reale per il codice gestito
-ms.date: 03/23/2018
+title: Configurare l'ambito di analisi del codice in tempo reale per .NET
+ms.date: 09/01/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - live code analysis
 - background analysis
 - analysis scope
 - full solution analysis
-author: Mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57ff963de193360712e92b76f3cafd7a75ee6b89
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249183"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035417"
 ---
-# <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>Procedura: configurare l'ambito di analisi del codice in tempo reale per il codice gestito
+# <a name="configure-live-code-analysis-for-net"></a>Configurare l'analisi del codice in tempo reale per .NET
 
-## <a name="what-is-live-code-analysis-for-managed-code"></a>Che cos'è "analisi codice in tempo reale" per il codice gestito?
 Visual Studio esegue una serie di analisi del codice in tempo reale, denominate anche *analisi in background*, mentre si modificano i file di origine nell'editor. Alcune di esse sono richieste di analisi minime per un'esperienza di modifica accettabile dell'IDE di Visual Studio. Alcune di queste funzionalità sono per migliorare la velocità di risposta per le funzionalità IDE. Sebbene alcune di queste funzioni consentano di abilitare funzionalità aggiuntive dell'IDE, ad esempio la diagnostica e le correzioni del codice degli analizzatori Roslyn. In base alla funzionalità, queste analisi possono essere raggruppate come segue:
 
 - **Calcolo in background della diagnostica**: analisi per calcolare errori, avvisi e suggerimenti nei file di origine. Questi dati di diagnostica vengono visualizzati come voci nell'elenco errori e come controllo ortografia durante nell'editor. Possono essere classificati in due categorie:
   - Diagnostica del compilatore C# e Visual Basic
   - Diagnostica di Roslyn Analyzer, che include:
 
-    - Analizzatori IDE predefiniti per i suggerimenti di stile del codice e
+    - Analizzatori IDE predefiniti per i suggerimenti di stile del codice
+    - Analizzatori CA predefiniti per i suggerimenti sulla qualità del codice
     - Pacchetti dell'analizzatore di terze parti [installati](./install-roslyn-analyzers.md) per i progetti nella soluzione corrente.
 
 - **Altre analisi in background**: analisi per migliorare la velocità di risposta e l'interazione di Visual Studio per le funzionalità IDE. Di seguito sono riportati alcuni esempi di analisi di questo tipo:
@@ -74,7 +74,7 @@ Se Visual Studio rileva che sono disponibili 200 MB o meno di memoria di sistema
 
 ![Testo dell'avviso per la riduzione dell'ambito dell'analisi](./media/fsa_alert.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sospensione funzionalità automatica](./automatic-feature-suspension.md)
 - [Richiesta di funzionalità della modalità di risparmio energia](https://github.com/dotnet/roslyn/issues/38429)

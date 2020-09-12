@@ -1,6 +1,7 @@
 ---
 title: Schema non corrispondente
 description: Uno o più oggetti di database selezionati restituisce uno schema non corrispondente allo schema della classe di dati di destinazione
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 907b4d5c63d0e97839149576f518804cf6f8481b
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 941cbd78ef94fa186b28391bfd3a888f66c91274
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742811"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034091"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Uno o più oggetti di database selezionati restituisce uno schema non corrispondente allo schema della classe di dati di destinazione
 
@@ -28,6 +29,6 @@ Quando si trascinano oggetti di database in classi di entità esistenti, i dati 
 
 2. Consente di selezionare un oggetto di database che restituisce dati corrispondenti allo schema della classe di destinazione, ovvero la classe in cui viene rilasciato l'oggetto di database in **Progettazione relazionale**oggetti.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

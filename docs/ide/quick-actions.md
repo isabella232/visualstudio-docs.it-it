@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce8ce85e027a7ed7f78d0da1f68f328c1ca103d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfafcca1cddcaa216b8a9e12dd7d961949afa2bb
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596957"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036522"
 ---
 # <a name="quick-actions"></a>Azioni rapide
 
@@ -27,7 +27,7 @@ Le azioni rapide consentono di generare codice, effettuarne il refactoring o mod
 
 ::: moniker range=">=vs-2019"
 
-- [Elimina](../code-quality/use-roslyn-analyzers.md#suppress-violations) la violazione di una regola dell'analizzatore del codice o ne [Configura](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity) la gravità
+- [Elimina](../code-quality/use-roslyn-analyzers.md#suppress-violations) la violazione di una regola dell'analizzatore del codice o ne [Configura](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu) la gravità
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ Per vedere le potenziali correzioni, selezionare la freccia GIÙ accanto alla la
 
 ![Lampadina espansa](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generazione di codice in Visual Studio](../ide/code-generation-in-visual-studio.md)
 - [Azioni rapide comuni](../ide/common-quick-actions.md)
