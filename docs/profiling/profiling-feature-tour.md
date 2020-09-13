@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 268273b39db83a831a65805a8cc1cafc28a103ec
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507989"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036925"
 ---
 # <a name="first-look-at-profiling-tools"></a>Presentazione degli strumenti di profilatura
 
@@ -147,7 +147,7 @@ Nelle app UWP è possibile abilitare l' **analisi dell'interfaccia utente** nell
 
 ## <a name="analyze-gpu-usage-direct3d"></a>Analizzare l'uso della GPU (Direct3D)
 
-Nelle applicazioni Direct3D (i componenti Direct3D devono essere in C++) è possibile esaminare l'attività sulla GPU e analizzare i problemi di prestazioni. Per altre informazioni, vedere l'articolo relativo all'[uso della GPU](/visualstudio/debugger/graphics/gpu-usage). Per usare lo strumento, scegliere **Utilizzo GPU** nel profiler delle prestazioni e quindi scegliere **Inizia**. Nell'applicazione seguire lo scenario che interessa per la profilatura e quindi scegliere **Arresta raccolta** per generare un report.
+Nelle applicazioni Direct3D (i componenti Direct3D devono essere in C++) è possibile esaminare l'attività sulla GPU e analizzare i problemi di prestazioni. Per altre informazioni, vedere l'articolo relativo all'[uso della GPU](./gpu-usage.md). Per usare lo strumento, scegliere **Utilizzo GPU** nel profiler delle prestazioni e quindi scegliere **Inizia**. Nell'applicazione seguire lo scenario che interessa per la profilatura e quindi scegliere **Arresta raccolta** per generare un report.
 
 Quando si seleziona un periodo di tempo nei grafici e si sceglie **Visualizza dettagli**, appare una visualizzazione dettagliata nel riquadro inferiore. Nella visualizzazione dettagliata è possibile esaminare l'entità dell'attività in corso in ogni CPU e GPU. Selezionare gli eventi nel riquadro inferiore per ottenere i popup nella sequenza temporale. Ad esempio, selezionare l'evento **Present** per visualizzare i popup delle chiamate **presenti**. Le linee verticali grigio chiaro di vsync possono essere usate come riferimento per capire se per determinate chiamate **presenti** non è stato eseguito il vsync. Deve esistere una chiamata **presente** tra ogni due vsync affinché l'applicazione esegua costantemente 60 FPS.
 
@@ -200,13 +200,13 @@ In Visual Studio 2019, il Esplora prestazioni legacy e gli strumenti di profilat
 Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Studio e i diversi tipi di progetto con cui possono essere usati:
 
 ::: moniker range=">=vs-2019"
-|Strumento di prestazioni|Desktop di Windows|UWP|ASP.NET/ASP.NET Core|
+|Strumento di prestazioni|Desktop di Windows|Piattaforma UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
 |[PerfTips](../profiling/perftips.md)|sì|sì|sì|
 |[Utilizzo CPU](../profiling/cpu-usage.md)|sì|sì|sì|
 |[Utilizzo memoria](../profiling/memory-usage.md)|sì|sì|sì|
 |[Allocazione oggetti .NET](../profiling/dotnet-alloc-tool.md)|Sì (solo .NET)|sì|sì|
-|[Utilizzo GPU](/visualstudio/debugger/graphics/gpu-usage)|sì|sì|No|
+|[Utilizzo GPU](./gpu-usage.md)|sì|sì|No|
 |[Sequenza temporale applicazione](../profiling/application-timeline.md)|sì|sì|No|
 |[Visualizzatore eventi](../profiling/events-viewer.md)|sì|sì|sì|
 |[.NET Async](../profiling/analyze-async.md)|Sì (solo .NET)|sì|sì|
@@ -216,11 +216,11 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-|Strumento di prestazioni|Desktop di Windows|UWP|ASP.NET/ASP.NET Core|
+|Strumento di prestazioni|Desktop di Windows|Piattaforma UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
 |[Utilizzo CPU](../profiling/cpu-usage.md)|sì|sì|sì|
 |[Utilizzo memoria](../profiling/memory-usage.md)|sì|sì|sì|
-|[Utilizzo GPU](/visualstudio/debugger/graphics/gpu-usage)|sì|sì|No|
+|[Utilizzo GPU](./gpu-usage.md)|sì|sì|No|
 |[Sequenza temporale applicazione](../profiling/application-timeline.md)|sì|sì|No|
 |[PerfTips](../profiling/perftips.md)|sì|Sì per XAML, no per HTML|sì|
 |[Esplora prestazioni](../profiling/performance-explorer.md)|sì|No|sì|
@@ -231,5 +231,5 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 ::: moniker-end
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug in Visual Studio](../debugger/debugger-feature-tour.md)

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3636f87db5c395f1660d9271d0eed5cacec99161
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75845816"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036899"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni
 
@@ -31,7 +31,7 @@ La tabella seguente riporta le configurazioni e le piattaforme supportate per i 
 
 ## <a name="supported-configurations"></a>Configurazioni supportate
 
-| Configurazione | Supportato |
+| Configurazione | Funzionalità supportata |
 |-| - |
 | Sistemi operativi | [!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10 |
 | Supporto a 32 bit / 64 bit | Le applicazioni a 32 bit possono essere testate nel sistema operativo Windows a 32 bit che esegue [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] a 32 bit.<br /><br /> Le applicazioni WOW a 32 bit con Sincronizzazione dell'interfaccia utente possono essere testate nel sistema operativo Windows a 64 bit che esegue [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] a 32 bit.<br /><br /> Le applicazioni Windows Form e WPF a 64 bit prive di Sincronizzazione dell'interfaccia utente possono essere testate nel sistema operativo Windows a 64 bit che esegue [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] a 32 bit. |
@@ -59,17 +59,17 @@ La tabella seguente riporta le configurazioni e le piattaforme supportate per i 
 | Windows Form 2.0 e versioni successive | Completamente supportato. **Nota:** i controlli NetFx sono completamente supportati, ma non tutti i controlli di terze parti sono supportati. |
 | WPF 3.5 e versioni successive | Completamente supportato.<br /><br /> **Nota** I controlli NetFx sono completamente supportati, ma non tutti i controlli di terze parti sono supportati. |
 | Windows Win32 | Può essere usato ma presenta alcuni problemi noti. Non è ufficialmente supportato. |
-| MFC | Parzialmente supportato. Per informazioni dettagliate sulle funzionalità supportate, vedere il [framework UITest](https://blogs.msdn.microsoft.com/vstsqualitytools/2010/04/15/uitest-framework-mfc-support-in-vs-2010/). |
+| MFC | Parzialmente supportato. Per informazioni dettagliate sulle funzionalità supportate, vedere il [framework UITest](/archive/blogs/vstsqualitytools/uitest-framework-mfc-support-in-vs-2010). |
 | SharePoint | Completamente supportato. |
 | Applicazioni client di Office | Non supportata. |
 | Client Web di Dynamics CRM | Completamente supportato. |
-| Client di Dynamics (Ax) 2012 | La registrazione e la riproduzione delle azioni sono parzialmente supportate. Per informazioni dettagliate, vedere il post relativo al [supporto dei test codificati dell'interfaccia utente e delle registrazioni delle azioni in Visual Studio 10 per Microsoft Dynamics](https://blogs.msdn.microsoft.com/dave_froslie/2011/09/01/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012/). |
+| Client di Dynamics (Ax) 2012 | La registrazione e la riproduzione delle azioni sono parzialmente supportate. Per informazioni dettagliate, vedere il post relativo al [supporto dei test codificati dell'interfaccia utente e delle registrazioni delle azioni in Visual Studio 10 per Microsoft Dynamics](/archive/blogs/dave_froslie/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012). |
 | SAP | Non supportata. |
 | Servizi Citrix/terminal | La registrazione delle azioni in un server terminal non è consigliabile. Il registratore non supporta l'esecuzione di più istanze nello stesso momento. |
 | PowerBuilder | Parzialmente supportato.<br /><br /> Il supporto di accessibilità di ambito è abilitato per i controlli di PowerBuilder. |
 
 Per altre informazioni sulla creazione di estensioni per supportare altre piattaforme, vedere [Abilitare test codificati dell'interfaccia utente per i controlli](../test/enable-coded-ui-testing-of-your-controls.md) ed [Estendere test codificati dell'interfaccia utente e registrazioni delle azioni](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)

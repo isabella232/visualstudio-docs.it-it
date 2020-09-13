@@ -1,6 +1,8 @@
 ---
-title: "Passaggio 11: eseguire l'app visualizzatore immagini e provare altre funzionalità"
+title: Eseguire l'app visualizzatore immagini e provare altre funzionalità
+description: Eseguire l'app visualizzatore immagini e provare altre funzionalità nell'esercitazione creare un visualizzatore di immagini.
 ms.date: 09/11/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 865064bd85d45ccb24129d289b48143321486ca1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47a2efac2e317fc8e3d168f4b8b19bfb10014cf2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579897"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036938"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Passaggio 11: eseguire l'app visualizzatore immagini e provare altre funzionalità
 
@@ -56,7 +58,7 @@ Per altre informazioni, passare all'esercitazione successiva:
 
 Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 10: Scrivere codice per pulsanti aggiuntivi e una casella di controllo](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Altre esercitazioni su C#](/visualstudio/get-started/csharp/)
 * [Altre esercitazioni Visual Basic](/visualstudio/get-started/visual-basic/)

@@ -1,6 +1,8 @@
 ---
-title: 'Passaggio 10: Scrivere codice per una casella di controllo e pulsanti aggiuntivi'
+title: Scrivere codice per una casella di controllo e pulsanti aggiuntivi
+description: Informazioni su come scrivere codice per pulsanti aggiuntivi e una casella cheeck nell'esercitazione creare un visualizzatore di immagini.
 ms.date: 08/30/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 185cf370-ab39-4ac0-b6bc-601d5b95a4a2
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0dc7281b51d0efe0d19020df6a154e332ad9bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d66f7705821025bd5e30ea0d0c7f2dd57d540e4
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579432"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036912"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Passaggio 10: Scrivere codice per una casella di controllo e pulsanti aggiuntivi
 
@@ -48,7 +50,7 @@ Aggiungere il codice seguente al file di codice **Form1** (*Form1.cs* o *Form1.v
 
 * Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 9: Esaminare, commentare e testare il codice](../ide/step-9-review-comment-and-test-your-code.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Esercitazione 2: creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
 * [Esercitazione 3: creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)
