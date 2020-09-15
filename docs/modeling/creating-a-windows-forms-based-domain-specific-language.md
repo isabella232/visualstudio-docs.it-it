@@ -1,18 +1,20 @@
 ---
-title: Creazione di un linguaggio specifico di dominio basato su Windows Form
+title: Creare un linguaggio specifico di dominio basato su Windows Form
+description: Vengono fornite informazioni sull'utilizzo di Windows Forms per visualizzare lo stato di un modello di linguaggio specifico di dominio.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: c52b3bd352c2ecb2272ad8e229a0fe52a9ee5b41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e4c712eed732830da4bc1b158c8ad53a65a45d8
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238361"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100453"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Creare un Domain-Specific Language basato su Windows Forms
 
@@ -67,9 +69,9 @@ Quando si aggiorna il file di definizione DSL per definire il proprio linguaggio
 
 ## <a name="update-the-dsl-definition"></a>Aggiornare la definizione DSL
 
-In questa procedura dettagliata viene usata la definizione DSL riportata di seguito.
+L'immagine seguente è la definizione DSL utilizzata in questa procedura dettagliata.
 
-![DSL&#45;WPF&#45;1](../modeling/media/dsl-wpf-1.png)
+![Definizione DSL](../modeling/media/dsl-wpf-1.png)
 
 1. Aprire DslDefinition. DSL nella finestra di progettazione DSL.
 
@@ -127,7 +129,7 @@ A questo punto è possibile creare un nuovo controllo utente che visualizzerà l
 
      Le proprietà e le relazioni della classe del modello vengono visualizzate nella finestra Origini dati.
 
-     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
+     ![Finestra Origini dati](../modeling/media/dslwpf-3.png)
 
 ### <a name="connect-your-model-to-a-form"></a>Connettere il modello a un modulo
 
@@ -172,7 +174,9 @@ A questo punto è possibile creare un nuovo controllo utente che visualizzerà l
 
 - Garantisce che, quando l'utente seleziona una riga, il Finestra Proprietà Visualizza le proprietà dell'elemento del modello corrispondente, invece della riga della griglia dei dati.
 
-  ![](../modeling/media/dslwpf4.png)Schema DslWpf4 dei collegamenti tra le origini dati e le visualizzazioni.
+  ![Schema dell'associazione DSL](../modeling/media/dslwpf4.png)
+  
+  Schema dei collegamenti tra origini dati e viste.
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>Completare le associazioni al linguaggio DSL
 
@@ -298,7 +302,7 @@ La soluzione DSL ora può essere compilata ed eseguita, anche se è opportuno ag
 
     Dovrebbe essere possibile modificare il nome dell'elemento nella visualizzazione griglia dei dati. È anche possibile eliminarlo da questa posizione.
 
-   ![DSL&#45;WPF&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![Visualizzazione griglia dati di esempio](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Informazioni sul codice per l'aggiunta di un elemento
 

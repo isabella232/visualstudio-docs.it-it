@@ -1,21 +1,21 @@
 ---
-title: 'Guida introduttiva: creare un progetto Python tramite Cookiecutter'
+title: Guida introduttiva-creare progetti python usando tagliatore
 description: In questa guida introduttiva viene creato un progetto Visual Studio per Python tramite un modello Cookiecutter.
 ms.date: 02/25/2019
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3f3e7f56f4a36a7958cba9bd7092f38d735123d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6868b4c581674c8015d30bf81f64f2ab24ea2ee0
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62954500"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100735"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Guida introduttiva: Creare un progetto da un modello di Cookiecutter
 

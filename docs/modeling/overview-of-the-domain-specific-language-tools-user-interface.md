@@ -1,5 +1,6 @@
 ---
-title: Informazioni sull'interfaccia utente degli strumenti di linguaggio specifico di dominio
+title: Panoramica dell'interfaccia utente di Strumenti Domain-Specific Language
+description: Viene fornita una panoramica dell'interfaccia utente di una soluzione di strumenti del linguaggio specifico di dominio in Visual Studio.
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -9,14 +10,15 @@ helpviewer_keywords:
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: af28ca94639b1c6a800c0c43e41d3ccabb74d9bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 549726d16a5fc1129f8c773ef143267e4c9bc31e
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532405"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100722"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Informazioni sull'interfaccia utente degli strumenti di linguaggio specifico di dominio
 Quando si apre per la prima volta una soluzione Strumenti Domain-Specific Language (strumenti DSL) in Visual Studio, l'interfaccia utente sarà simile all'immagine seguente.
@@ -25,7 +27,7 @@ Quando si apre per la prima volta una soluzione Strumenti Domain-Specific Langua
 
  La tabella seguente spiega come vengono usate le diverse parti dell'interfaccia utente.
 
-|**elemento**|**Definition**|
+|**elemento**|**Definizione**|
 |-|-|
 |Diagramma|Il diagramma visualizza il modello di dominio.<br /><br /> Il diagramma presenta due lati. Un lato definisce i tipi degli elementi nei modelli. L'altro lato definisce il modo in cui i modelli verranno visualizzati sullo schermo.|
 |Casella degli strumenti|Trascinare gli strumenti dalla casella degli strumenti per aggiungere classi di dominio e tipi di forma al diagramma. Per aggiungere relazioni, connettori e mapping di forme, fare clic sullo strumento, sul nodo di origine sul diagramma e quindi sul nodo di destinazione.|
@@ -39,7 +41,7 @@ Quando si apre per la prima volta una soluzione Strumenti Domain-Specific Langua
 
  La tabella seguente spiega alcuni elementi del diagramma del modello di dominio.
 
-|**Termine**|**Definition**|
+|**Termine**|**Definizione**|
 |-|-|
 |Classe di dominio|Le classi di dominio sono i tipi degli elementi nei modelli.<br /><br /> Una classe di dominio può comparire più volte in un diagramma, se è la destinazione di più relazioni.<br /><br /> Per aggiungere una classe di dominio, trascinare lo strumento Classe di dominio dalla **Casella degli strumenti** al lato **Classi e relazioni** del diagramma.|
 |Relazione di dominio|Le relazioni di dominio sono i tipi dei collegamenti tra gli elementi nei modelli.<br /><br /> Una *relazione di incorporamento* indica che l'elemento di destinazione è di proprietà dell'elemento di origine o è contenuto all'interno di esso. Tale relazione viene visualizzata con una linea continua. Ogni elemento in un modello deve essere la destinazione di una relazione di incorporamento, in modo che il modello abbia l'aspetto di un albero. Una *relazione di riferimento* indica un collegamento generale tra elementi del modello generale e viene visualizzata con una linea tratteggiata. Tutti gli elementi possono avere un numero qualsiasi di collegamenti di riferimento.<br /><br /> Creare una relazione facendo clic sullo strumento nella **Casella degli strumenti**, sulla classe di dominio di origine e quindi sulla classe di destinazione.|

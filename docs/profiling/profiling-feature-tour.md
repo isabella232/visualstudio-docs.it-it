@@ -1,5 +1,5 @@
 ---
-title: Misurare le prestazioni con gli strumenti di profilatura
+title: Introduzione agli strumenti di profilatura
 description: Esaminare una breve panoramica dei diversi strumenti di diagnostica disponibili in Visual Studio.
 ms.custom: ''
 ms.date: 09/08/2020
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ebc2a2e7c4b10d835a20abcdd8392fb1851596a
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 28f382e8d20f3aa623ea241702e4795854e12f9a
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074917"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100774"
 ---
 # <a name="first-look-at-profiling-tools"></a>Presentazione degli strumenti di profilatura
 
@@ -57,7 +57,7 @@ Aprire il profiler delle prestazioni scegliendo **debug**  >  **Performance Prof
 
 ![Profiler prestazioni](../profiling/media/prof-tour-performance-profiler.png "Profiler prestazioni")
 
-In alcuni scenari, la finestra consente di selezionare [più strumenti per la profilatura](../profiling/use-multiple-profiler-tools-simultaneously.md). Gli strumenti come Utilizzo CPU possono visualizzare dati complementari che agevolano l'analisi. È anche possibile usare il [Profiler della riga di comando](../profiling/profile-apps-from-command-line.md) per abilitare scenari che coinvolgono più strumenti di profilatura.
+Per ulteriori informazioni sull'utilizzo dello strumento utilizzo CPU o utilizzo memoria nel profiler delle prestazioni e negli strumenti integrati nel debugger, vedere [eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). 
 
 Gli strumenti disponibili in Profiler prestazioni includono:
 
@@ -70,7 +70,7 @@ Gli strumenti disponibili in Profiler prestazioni includono:
 
 Per visualizzare il supporto dello strumento di profilatura per diversi tipi di app, vedere [quale strumento si deve usare?](#which-tool-should-i-use)
 
-Per ulteriori informazioni sull'utilizzo dello strumento utilizzo CPU o utilizzo memoria nel profiler delle prestazioni e negli strumenti integrati nel debugger, vedere [eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). 
+In alcuni scenari, la finestra consente di selezionare [più strumenti per la profilatura](../profiling/use-multiple-profiler-tools-simultaneously.md). Gli strumenti come Utilizzo CPU possono visualizzare dati complementari che agevolano l'analisi. È anche possibile usare il [Profiler della riga di comando](../profiling/profile-apps-from-command-line.md) per abilitare scenari che coinvolgono più strumenti di profilatura.
 
 ## <a name="examine-performance-using-perftips"></a>Esaminare le prestazioni con PerfTips
 

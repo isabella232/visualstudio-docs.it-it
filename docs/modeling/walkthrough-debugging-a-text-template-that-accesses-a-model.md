@@ -1,18 +1,20 @@
 ---
-title: 'Procedura dettagliata: debug di un modello di testo che accede a un modello'
+title: 'Procedura dettagliata: debug di modelli di testo che accedono a un modello'
+description: Vengono fornite informazioni su come eseguire il debug di un modello di testo che accede a un modello.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: e33297bba899c1843b8601c031d7669531a1bd3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb5065ed50afe3b9ee31b361be88c1b5c18138af
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546900"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100787"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procedura dettagliata: debug di un modello di testo che accede a un modello
 Quando si modificano o si aggiungono modelli di testo in una soluzione di linguaggio specifico di dominio, è possibile che vengano generati errori quando il motore trasforma il modello nel codice sorgente o quando compila il codice generato. Nella procedura dettagliata riportata di seguito vengono illustrate alcune delle operazioni che è possibile eseguire per eseguire il debug di un modello di testo.
