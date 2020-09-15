@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d61ebaa191e94439629d7ac5f85a6921163ed08b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d0489950b9132a36aef8ecb3d8374c02d1a1aee2
+ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036594"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90560736"
 ---
 # <a name="overview-of-source-code-analysis"></a>Panoramica dell'analisi del codice sorgente
 
@@ -25,9 +25,9 @@ Gli analizzatori .NET Compiler Platform (Roslyn) esaminano il codice C# o Visual
 
 Gli analizzatori possono essere divisi nei gruppi seguenti:
 
-- Gli analizzatori di [stili di codice](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019#convention-categories) sono incorporati in Visual Studio. L'ID di diagnostica, o codice, per questi analizzatori è nel formato IDExxxx, ad esempio IDE0067. È possibile configurare le preferenze nella [pagina Opzioni editor di testo](../ide/code-styles-and-code-cleanup.md) o in un [file EditorConfig](../ide/editorconfig-code-style-settings-reference.md). A partire da .NET 5,0, gli analizzatori di [stili di codice](https://docs.microsoft.com/dotnet/fundamentals/productivity/code-analysis) sono inclusi in .NET SDK.
+- Gli analizzatori di [stili di codice](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019#convention-categories) sono incorporati in Visual Studio. L'ID di diagnostica, o codice, per questi analizzatori è nel formato IDExxxx, ad esempio IDE0067. È possibile configurare le preferenze nella [pagina Opzioni editor di testo](../ide/code-styles-and-code-cleanup.md) o in un [file EditorConfig](../ide/editorconfig-code-style-settings-reference.md). A partire da .NET 5,0, gli analizzatori di stili di codice sono inclusi in .NET SDK e possono essere applicati in modo rigoroso come avvisi o errori di compilazione. Per altre informazioni, vedere [qui](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
 
-- Gli analizzatori di [qualità del codice](/code-analysis-warnings-for-managed-code-by-checkid.md) sono ora inclusi in .NET 5 SDK e abilitati per impostazione predefinita. L'ID di diagnostica, o codice, per questi analizzatori è nel formato CAXXXX, ad esempio CA1822. Per ulteriori informazioni, vedere [Cenni preliminari sull'analisi del codice sorgente .NET](/dotnet/fundamentals/productivity/code-analysis).
+- Gli analizzatori di [qualità del codice](code-analysis-warnings-for-managed-code-by-checkid.md) sono ora inclusi in .NET 5 SDK e abilitati per impostazione predefinita. L'ID di diagnostica, o codice, per questi analizzatori è nel formato CAXXXX, ad esempio CA1822. Per altre informazioni, vedere [Panoramica dell'analisi della qualità del codice .NET](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
 
 - Gli analizzatori di terze parti possono essere installati come un pacchetto NuGet o un'estensione di Visual Studio. Analizzatori di terze parti, ad esempio [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [xUnit](https://www.nuget.org/packages/xunit.analyzers/)Analyzers e [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).
 
@@ -42,7 +42,7 @@ Ogni analizzatore ha uno dei livelli di gravità seguenti:
 | Info | `suggestion` | Le violazioni vengono visualizzate come *messaggi* nell'elenco errori e non nell'output di compilazione da riga di comando. | Il codice che causa il danneggiamento è sottolineato con un zigzag grigio e contrassegnato da una piccola casella grigia nella barra di scorrimento. |
 | Nascosto | `silent` | Non visibile all'utente. | Non visibile all'utente. Tuttavia, la diagnostica viene segnalata al motore di diagnostica IDE. |
 | nessuno | `none` | Eliminati completamente. | Eliminati completamente. |
-| Predefinito | `default` | Corrisponde alla gravità predefinita della regola. Per determinare il valore predefinito di una regola, cercare nell'Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
+| Impostazione predefinita | `default` | Corrisponde alla gravità predefinita della regola. Per determinare il valore predefinito di una regola, cercare nell'Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
 
 Se le violazioni delle regole vengono trovate da un analizzatore, vengono segnalate nell'editor del codice (come *zigzag* sotto il codice che causa il errore) e nella finestra Elenco errori.
 
@@ -69,7 +69,7 @@ Gli analizzatori possono anche essere configurati per esaminare il codice in fas
 
 Gli analizzatori di terze parti possono essere installati per progetto tramite un pacchetto NuGet. Alcuni sono disponibili anche come estensione di Visual Studio, nel qual caso si applicano a qualsiasi soluzione aperta in Visual Studio. Esistono alcune differenze di comportamento fondamentali tra questi due metodi di [installazione degli analizzatori](../code-quality/install-roslyn-analyzers.md).
 
-### <a name="scope"></a>Scope
+### <a name="scope"></a>Ambito
 
 Se si installano gli analizzatori come estensione di Visual Studio, si applicano a livello di soluzione e a tutte le istanze di Visual Studio. Se si installano gli analizzatori come pacchetto NuGet (metodo preferito), si applicano solo al progetto in cui è stato installato il pacchetto NuGet. Negli ambienti di team gli analizzatori installati come pacchetti NuGet sono inclusi nell'ambito per *tutti gli sviluppatori* che lavorano sul progetto.
 
@@ -77,7 +77,7 @@ Se si installano gli analizzatori come estensione di Visual Studio, si applicano
 
 Per applicare le regole in fase di compilazione, anche tramite la riga di comando o come parte di una compilazione di integrazione continua, è possibile scegliere una delle opzioni seguenti:
 
-- Creare un progetto .NET 5,0 che includa gli analizzatori per impostazione predefinita in .NET SDK. L'analisi del codice è abilitata per impostazione predefinita per i progetti destinati a .NET 5,0 o versione successiva. È possibile abilitare l'analisi del codice per i progetti destinati a versioni precedenti di .NET impostando la proprietà [EnableNETAnalyzers](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) su true.
+- Creare un progetto .NET 5,0 che includa gli analizzatori per impostazione predefinita in .NET SDK. L'analisi del codice è abilitata per impostazione predefinita per i progetti destinati a .NET 5.0 o versione successiva. È possibile abilitare l'analisi del codice per i progetti destinati a versioni precedenti di .NET impostando la proprietà [EnableNETAnalyzers](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) su true.
 
 - Installare gli analizzatori come pacchetto NuGet. Gli errori e avvisi dell'analizzatore non vengono visualizzati nel report di compilazione se si installano gli analizzatori come estensione.
 
@@ -97,7 +97,7 @@ Non è possibile configurare la gravità delle regole degli analizzatori install
 > [!div class="nextstepaction"]
 > [Usare gli analizzatori del codice in Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Domande frequenti sugli analizzatori](analyzers-faq.md)
 - [Scrivere un analizzatore del codice personalizzato](../extensibility/getting-started-with-roslyn-analyzers.md)

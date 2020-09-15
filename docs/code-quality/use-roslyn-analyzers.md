@@ -1,5 +1,5 @@
 ---
-title: Analisi della qualità del codice
+title: Configurazione analizzatore
 ms.date: 09/02/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cbe22571a2485d163960cc7af58975f0a299bf9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6a950a005a4669e74722742b23527a9e85ab5f02
+ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036367"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90560749"
 ---
-# <a name="configure-code-quality-analysis"></a>Configurare l'analisi della qualità del codice
+# <a name="overview"></a>Panoramica
 
-A partire da .NET 5,0, gli analizzatori di qualità del codice sono inclusi in .NET SDK. In precedenza, questi analizzatori venivano installati come pacchetto NuGet. L'analisi del codice è abilitata per impostazione predefinita per i progetti destinati a .NET 5,0 o versione successiva. È possibile abilitare l'analisi del codice per i progetti destinati a versioni precedenti di .NET impostando la proprietà [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) su `true` . È anche possibile disabilitare l'analisi del codice per il progetto impostando `EnableNETAnalyzers` su `false` .
-
-Ogni *diagnostica* o regola di analizzatore di qualità del codice ha uno stato di gravità e di eliminazione predefinito che può essere sovrascritto e personalizzato per il progetto. In questo articolo viene illustrata l'impostazione di gravità dell'analizzatore di codice e l'eliminazione delle violazioni dell'analizzatore.
+Ogni *diagnostica* o regola di Roslyn Analyzer ha uno stato di gravità e di eliminazione predefinito che può essere sovrascritto e personalizzato per il progetto. Questo articolo illustra l'impostazione dei livelli di gravità dell'analizzatore e l'eliminazione delle violazioni dell'analizzatore.
 
 ## <a name="configure-severity-levels"></a>Configurare i livelli di gravità
 
@@ -47,7 +45,7 @@ Nella tabella seguente vengono illustrate le diverse opzioni di gravità:
 | Info | `suggestion` | Le violazioni vengono visualizzate come *messaggi* nell'elenco errori e non nell'output di compilazione da riga di comando. | Il codice che causa il danneggiamento è sottolineato con un zigzag grigio e contrassegnato da una piccola casella grigia nella barra di scorrimento. |
 | Nascosto | `silent` | Non visibile all'utente. | Non visibile all'utente. Tuttavia, la diagnostica viene segnalata al motore di diagnostica IDE. |
 | nessuno | `none` | Eliminati completamente. | Eliminati completamente. |
-| Predefinito | `default` | Corrisponde alla gravità predefinita della regola. Per determinare il valore predefinito di una regola, cercare nell'Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
+| Impostazione predefinita | `default` | Corrisponde alla gravità predefinita della regola. Per determinare il valore predefinito di una regola, cercare nell'Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
 
 Se le violazioni delle regole vengono trovate da un analizzatore, vengono segnalate nell'editor del codice (come *zigzag* sotto il codice che causa il errore) e nella finestra Elenco errori.
 
@@ -411,7 +409,7 @@ In un progetto .NET Core, se si aggiunge un riferimento a un progetto che includ
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Panoramica degli analizzatori di codice in Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Inviare un bug dell'analizzatore del codice](https://github.com/dotnet/roslyn-analyzers/issues)
