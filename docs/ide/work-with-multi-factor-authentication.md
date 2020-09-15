@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 914acae2f5fbb9bd3f47669eea699935fcfa5e4d
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ebacdd78cbb72bbd1cb90a0b5c719d0c753a95ca
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038387"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90093348"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>Come usare Visual Studio con gli account che richiedono l'autenticazione a più fattori
 
@@ -50,10 +50,11 @@ Quando il flusso di lavoro del browser Web di sistema è abilitato, è possibile
 
 Questa azione consente di aprire il Web browser predefinito del sistema, di richiedere l'accesso all'account e di convalidare i criteri di autenticazione a più fattori richiesti.
 
-In base alle attività di sviluppo e alla configurazione delle risorse, è possibile che venga richiesto di immettere nuovamente le credenziali durante la sessione. Questo problema può verificarsi quando si aggiunge una nuova risorsa o si prova ad accedere a una risorsa senza che in precedenza siano stati soddisfatti i requisiti di autorizzazione CA/AMF.
+Durante il processo di accesso, è possibile che venga visualizzato un messaggio di richiesta aggiuntivo che chiede di rimanere connesso. Questa richiesta verrà probabilmente visualizzata la seconda volta che un account viene usato per l'accesso. Per ridurre al minimo la necessità di immettere nuovamente le credenziali, è consigliabile selezionare **Sì**, in quanto ciò garantisce che le credenziali vengano mantenute tra le sessioni del browser.
 
-> [!NOTE] 
-> Per un'esperienza ottimale, è possibile lasciare il browser aperto fino a quando non vengono convalidati tutti i criteri CA/multi-factor authentication per le risorse. La chiusura del browser può comportare la perdita dello stato di autenticazione a più fattori compilato in precedenza e potrebbe richiedere richieste di autorizzazione aggiuntive.
+:::image type="content" source="media/kmsi.png" alt-text="Rimanere connessi?":::
+
+In base alle attività di sviluppo e alla configurazione delle risorse, è possibile che venga richiesto di immettere nuovamente le credenziali durante la sessione. Questo problema può verificarsi quando si aggiunge una nuova risorsa o si prova ad accedere a una risorsa senza che in precedenza siano stati soddisfatti i requisiti di autorizzazione CA/AMF.
 
 ## <a name="reauthenticating-an-account"></a>Riautenticazione di un account  
 Se si verifica un problema con l'account, Visual Studio potrebbe richiedere di immettere nuovamente le credenziali dell'account.  
@@ -82,7 +83,7 @@ Verrà visualizzata la finestra di dialogo **filtro account** , che consente di 
 
 :::image type="content" source="media/select-filter-account.png" alt-text="Selezionare l'account da filtrare.":::
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Accedi a Visual Studio](signing-in-to-visual-studio.md)
 - [Accesso a Visual Studio per Mac](/visualstudio/mac/signing-in)
