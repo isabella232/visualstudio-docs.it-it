@@ -15,12 +15,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77428bfc815a963e8fae4ddae5e5e7a7b7d991fe
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 566b9827f42f646cd9350cfc015a460485212a09
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034104"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90094330"
 ---
 # <a name="net-code-analysis-rules"></a>Regole di analisi del codice .NET
 L'analisi del codice .NET fornisce regole che indicano violazioni della qualità del codice o suggerimenti per migliorare la qualità del codice. Le regole sono organizzate in aree di regole, ad esempio progettazione, localizzazione, prestazioni e sicurezza. Alcune regole sono specifiche dell'utilizzo dell'API .NET, mentre le regole rimanenti sono relative alla qualità del codice generica. In questa sezione vengono fornite discussioni ed esempi dettagliati per ogni regola.
@@ -30,7 +30,7 @@ L'analisi del codice .NET fornisce regole che indicano violazioni della qualità
 |Elemento|Descrizione|
 |----------|-----------------|
 |Type|TypeName per la regola.|
-|CheckId|Identificatore univoco per la regola. CheckId e Category vengono usati per l'eliminazione di un avviso nell'origine.|
+|ID regola|Identificatore univoco per la regola. RuleId e Category vengono usati per l'eliminazione di un avviso nell'origine.|
 |Category|Categoria dell'avviso.|
 |Modifica|Indica se la correzione di una violazione della regola è una modifica importante. Per modifica importante si intende che un assembly che presenta una dipendenza dalla destinazione che ha causato la violazione non verrà ricompilato con la nuova versione corretta o potrebbe non riuscire in fase di esecuzione a causa della modifica. Quando sono disponibili più correzioni e almeno una correzione è una modifica di rilievo e una correzione non è, vengono specificati sia ' interruzioni ' che ' non-interruzioni '.|
 |Causa|Codice gestito specifico che ha fatto sì che la regola generasse un avviso.|

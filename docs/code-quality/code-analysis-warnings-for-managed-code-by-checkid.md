@@ -62,6 +62,7 @@ f1_keywords:
 - CA1309
 - CA1310
 - CA1401
+- CA1416
 - CA1417
 - CA1501
 - CA1502
@@ -253,18 +254,18 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a298ab142ae6a44c1fb24b2cb1b752f6beb4a68e
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 24f7dbcdd324620f2076f5fab8247c9ba99a72cb
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037237"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90094226"
 ---
 # <a name="code-quality-analysis-rules-by-rule-id"></a>Regole di analisi della qualità del codice in base all'ID regola
 
 La tabella seguente elenca le regole di analisi della qualità del codice in base all'identificatore della regola.
 
-| CheckId | Avviso | Descrizione |
+| ID regola | Avviso | Descrizione |
 |---------| - | - |
 | CA1000 | [CA1000: Non dichiarare membri statici su tipi generici](../code-quality/ca1000.md) | Quando viene chiamato un membro statico di un tipo generico, è necessario specificare l'argomento di tipo. Quando viene chiamato un membro di istanza generica che non supporta l'inferenza, è necessario specificare l'argomento tipo relativo al membro. In questi due casi, la sintassi necessaria per specificare l'argomento di tipo è diversa e può generare confusione. |
 | CA1001 | [CA1001: I tipi proprietari di campi Disposable devono essere Disposable](../code-quality/ca1001.md) | Una classe dichiara e implementa un campo di istanza di tipo System.IDisposable e la classe non implementa IDisposable. Una classe che dichiara un campo IDisposable è indirettamente proprietaria di una risorsa non gestita e deve implementare l'interfaccia IDisposable. |
@@ -324,6 +325,7 @@ La tabella seguente elenca le regole di analisi della qualità del codice in bas
 | CA1309 | [CA1309: Usare StringComparison ordinale](../code-quality/ca1309.md) | In un'operazione di confronto tra stringhe di tipo non linguistico il parametro StringComparison non viene impostato su Ordinal o OrdinalIgnoreCase. L'impostazione esplicita del parametro su StringComparison.Ordinal o StringComparison.OrdinalIgnoreCase consente spesso di rendere il codice più veloce, corretto e affidabile. |
 | Ca1310 | [CA1310: Specificare StringComparison per la correttezza](../code-quality/ca1310.md) | Un'operazione di confronto tra stringhe usa un overload del metodo che non imposta un parametro StringComparison e usa il confronto di stringhe specifico delle impostazioni cultura per impostazione predefinita. |
 | CA1401 | [CA1401: i P/Invoke non devono essere visibili](../code-quality/ca1401.md) | Un metodo pubblico o protetto in un tipo pubblico presenta l'attributo System.Runtime.InteropServices.DllImportAttribute (implementato anche dalla parola chiave Declare in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Questi metodi non devono essere esposti. |
+| CA1416 | [CA1416: convalida della compatibilità della piattaforma](../code-quality/ca1416.md) | L'uso di API dipendenti dalla piattaforma su un componente rende il codice non più funzionante in tutte le piattaforme. |
 | Ca1417 | [Ca1417: non usare `OutAttribute` nei parametri di stringa per P/Invoke](../code-quality/ca1417.md) | I parametri stringa passati per valore con `OutAttribute` possono destabilizzare il runtime se la stringa è una stringa interna. |
 | CA1501 | [CA1501: Evitare ereditarietà eccessiva](../code-quality/ca1501.md) | Un tipo si trova oltre il quarto livello di annidamento nella gerarchia di ereditarietà. Le gerarchie di tipi eccessivamente annidate possono comportare difficoltà di comprensione e gestione. |
 | CA1502 | [CA1502: Evitare complessità eccessiva](../code-quality/ca1502.md) | Questa regola misura il numero di percorsi linearmente indipendenti tramite il metodo, determinato dal numero e dalla complessità di rami condizionali. |
@@ -466,7 +468,7 @@ La tabella seguente elenca le regole di analisi della qualità del codice in bas
 | CA5358 | [CA5358: Non usare modalità crittografia non sicure](../code-quality/ca5358.md) | Non usare modalità crittografia non sicure |
 | CA5359 | [CA5359 non disabilitare la convalida del certificato](../code-quality/ca5359.md) | Un certificato può essere utile per autenticare l'identità del server. I client devono convalidare il certificato del server per garantire che le richieste vengano inviate al server desiderato. Se il ServerCertificateValidationCallback restituisce sempre `true` , qualsiasi certificato passerà la convalida. |
 | CA5360 | [CA5360 non chiamano metodi pericolosi nella deserializzazione](../code-quality/ca5360.md) | La deserializzazione non sicura è una vulnerabilità che si verifica quando i dati non attendibili vengono usati per abusare la logica di un'applicazione, infliggendo un attacco Denial of Service (DoS) o persino eseguendo codice arbitrario al momento della deserializzazione. Spesso gli utenti malintenzionati possono usare queste funzionalità di deserializzazione quando l'applicazione deserializza dati non attendibili sotto il proprio controllo. In particolare, richiamare metodi pericolosi nel processo di deserializzazione. Gli attacchi di deserializzazione non sicuri riusciti potrebbero consentire a un utente malintenzionato di eseguire attacchi come attacchi DoS, bypass di autenticazione ed esecuzione di codice in modalità remota. |
-| CA5361 | [CA5361: non disabilitare l'uso di crittografia avanzata Schannel](../code-quality/ca5361.md) | `Switch.System.Net.DontEnableSchUseStrongCrypto`L'impostazione di per `true` indebolisce la crittografia utilizzata nelle connessioni di Transport Layer Security in uscita (TLS). La crittografia più debole può compromettere la riservatezza delle comunicazioni tra l'applicazione e il server, semplificando l'intercettazione dei dati sensibili da parte degli utenti malintenzionati. |
+| CA5361 | [CA5361: Non disabilitare l'uso della crittografia avanzata in Schannel](../code-quality/ca5361.md) | `Switch.System.Net.DontEnableSchUseStrongCrypto`L'impostazione di per `true` indebolisce la crittografia utilizzata nelle connessioni di Transport Layer Security in uscita (TLS). La crittografia più debole può compromettere la riservatezza delle comunicazioni tra l'applicazione e il server, semplificando l'intercettazione dei dati sensibili da parte degli utenti malintenzionati. |
 | CA5362 | [CA5362 ciclo di riferimento potenziale nell'oggetto grafico deserializzato](../code-quality/ca5362.md) | In caso di deserializzazione di dati non attendibili, qualsiasi codice che elabora l'oggetto grafico deserializzato deve gestire i cicli di riferimento senza passare a cicli infiniti. Sono inclusi sia il codice che fa parte di un callback di deserializzazione che il codice che elabora l'oggetto grafico al termine della deserializzazione. In caso contrario, un utente malintenzionato potrebbe eseguire un attacco Denial of Service con dati dannosi contenenti un ciclo di riferimento. |
 | CA5363 | [CA5363: Non disabilitare la convalida delle richieste](../code-quality/ca5363.md) | La convalida delle richieste è una funzionalità di ASP.NET che esamina le richieste HTTP e determina se contengono contenuti potenzialmente pericolosi che possono causare attacchi injection, incluso lo scripting tra siti. |
 | CA5364 | [CA5364: Non usare protocolli di sicurezza deprecati](../code-quality/ca5364.md) | Transport Layer Security (TLS) protegge la comunicazione tra i computer, in genere con Hypertext Transfer Protocol Secure (HTTPS). Le versioni precedenti del protocollo TLS sono meno sicure di TLS 1,2 e TLS 1,3 ed è più probabile che abbiano nuove vulnerabilità. Evitare le versioni precedenti del protocollo per ridurre al minimo i rischi. |
