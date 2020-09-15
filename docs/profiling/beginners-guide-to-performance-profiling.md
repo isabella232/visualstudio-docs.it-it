@@ -17,33 +17,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3a7c5eb8aa489da9ced0803e0f83855734825ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: caac02510d2fce95fa67340d2061341ed77ac13e
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537371"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075431"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Misurare le prestazioni dell'applicazione analizzando l'utilizzo della CPU
 
-È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questo articolo illustra come usare la scheda **utilizzo CPU** degli strumenti di diagnostica per ottenere i dati sulle prestazioni per l'app.
+Individuare i problemi di prestazioni durante il debug con lo strumento di diagnostica **utilizzo CPU** integrato nel debugger.  È anche possibile analizzare l'utilizzo della CPU senza un debugger collegato o usando un'app in esecuzione. Per altre informazioni, vedere [eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-Durante le pause del debug, lo strumento **Utilizzo CPU** raccoglie informazioni sulle funzioni in esecuzione nell'applicazione. Vengono indicate le funzioni che stavano eseguendo un'operazione e un grafico della sequenza temporale consente di concentrarsi su segmenti specifici della sessione di campionamento.
-
-L'hub diagnostica include numerose altre opzioni per eseguire e gestire la sessione di diagnostica. Se **Utilizzo CPU** non offre i dati necessari, gli [altri strumenti di profilatura](../profiling/profiling-feature-tour.md) mettono a disposizione diversi di informazioni che possono risultare utili. In molti casi il collo di bottiglia delle prestazioni dell'applicazione può dipendere da un fattore diverso dalla CPU, ad esempio la memoria, il rendering dell'interfaccia utente o il tempo di richiesta di rete. L'hub diagnostica offre molte altre opzioni per la registrazione e l'analisi di questo tipo di dati.
+Quando il debugger viene sospeso, lo strumento **utilizzo CPU** nella finestra strumenti di diagnostica raccoglie informazioni sulle funzioni in esecuzione nell'applicazione. Vengono indicate le funzioni che stavano eseguendo un'operazione e un grafico della sequenza temporale consente di concentrarsi su segmenti specifici della sessione di campionamento.
 
 > [!Important]
-> Gli strumenti di diagnostica sono supportati per lo sviluppo di .NET in Visual Studio, incluso ASP.NET, e per lo sviluppo nativo/C++.
-
-In questo articolo viene illustrata l'analisi dell'utilizzo della CPU nel normale flusso di lavoro di debug. È anche possibile analizzare l'utilizzo della CPU senza un debugger collegato o usando un'app in esecuzione. Per altre informazioni, vedere [eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). È anche possibile usare un altro strumento di profilatura, [PerfTips](../profiling/perftips.md), per scorrere il codice e identificare il tempo necessario per completare determinate funzioni o blocchi di codice.
-
-È possibile usare gli strumenti di profilatura senza il debugger con Windows 7 e versioni successive. Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**.
+> Gli strumenti di diagnostica integrati nel debugger sono supportati per lo sviluppo .NET in Visual Studio, tra cui ASP.NET, ASP.NET Core e per lo sviluppo nativo/C++. Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**.
 
 In questa esercitazione si apprenderà come:
 
 > [!div class="checklist"]
 > * Raccogliere i dati di Utilizzo CPU
 > * Analizzare i dati d'uso della CPU
+
+Se l' **utilizzo della CPU** non fornisce i dati necessari, gli altri strumenti di profilatura nel [Profiler delle prestazioni](../profiling/profiling-feature-tour.md#post_mortem) forniscono tipi diversi di informazioni che potrebbero essere utili. In molti casi il collo di bottiglia delle prestazioni dell'applicazione può dipendere da un fattore diverso dalla CPU, ad esempio la memoria, il rendering dell'interfaccia utente o il tempo di richiesta di rete.
 
 ## <a name="step-1-collect-profiling-data"></a>Passaggio 1: Raccogliere i dati di profilatura
 

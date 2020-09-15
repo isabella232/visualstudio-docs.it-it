@@ -9,35 +9,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc0d97b1e2b2e27ebc8ddb898795c1767155c1cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e1e6951aebac63494aada4e64c5c072eb79c6a9
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80256192"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074982"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Misurare l'utilizzo della memoria in Visual Studio
 
-È possibile rilevare perdite di memoria e memoria inefficiente mentre si sta eseguendo il debug con lo strumento di diagnostica **Utilizzo memoria** integrato nel debugger. Lo strumento Utilizzo memoria consente di eseguire uno o più *snapshot* dell'heap di memoria gestito e nativo per comprendere meglio l'impatto sull'utilizzo della memoria dei tipi di oggetti. È possibile raccogliere snapshot di app.NET, native o in modalità mista (.NET e native).
-
-L'immagine seguente mostra la finestra **Strumenti di diagnostica**, disponibile in Visual Studio 2015 Update 1 e versioni successive:
-
-![Diagnostica&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+È possibile rilevare perdite di memoria e memoria inefficiente mentre si sta eseguendo il debug con lo strumento di diagnostica **Utilizzo memoria** integrato nel debugger. Lo strumento Utilizzo memoria consente di eseguire uno o più *snapshot* dell'heap di memoria gestito e nativo per comprendere meglio l'impatto sull'utilizzo della memoria dei tipi di oggetti. È anche possibile analizzare l'utilizzo della memoria senza un debugger collegato o usando un'app in esecuzione. Per altre informazioni, vedere [eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 Anche se è possibile raccogliere snapshot di memoria in qualsiasi momento nello strumento **Utilizzo memoria** è possibile usare il debugger di Visual Studio per controllare la modalità di esecuzione dell'applicazione durante l'analisi dei problemi di prestazioni. L'impostazione dei punti di interruzione, l'esecuzione di istruzioni, l'azione Interrompi tutto e altre azioni del debugger consentono di concentrare l'analisi delle prestazioni sui percorsi del codice più rilevanti. L'esecuzione di tali azioni durante l'esecuzione dell'app può eliminare il rumore dal codice che non interessa l'utente e può ridurre notevolmente la quantità di tempo necessaria per la diagnosi di un problema.
 
-È inoltre possibile usare lo strumento di memoria all'esterno del debugger. Vedere [utilizzo della memoria senza debug](../profiling/memory-usage-without-debugging2.md). È possibile usare gli strumenti di profilatura senza il debugger collegato con Windows 7 e versioni successive. Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**.
-
-> [!NOTE]
-> **Supporto per allocatori personalizzati** Il profiler della memoria nativa funziona raccogliendo i dati degli eventi [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) di allocazione generati in fase di esecuzione.  Gli allocatori in CRT e Windows SDK sono stati annotati a livello di origine in modo che sia possibile acquisirne i dati di allocazione. Nella scrittura degli allocatori, fare in modo che qualsiasi funzione che restituisce un puntatore alla memoria heap appena allocata possa essere decorata con [__declspec](/cpp/cpp/declspec)(allocator), come illustrato in questo esempio per myMalloc:
->
-> `__declspec(allocator) void* myMalloc(size_t size)`
+> [!Important]
+> Gli strumenti di diagnostica integrati nel debugger sono supportati per lo sviluppo .NET in Visual Studio, tra cui ASP.NET, ASP.NET Core, lo sviluppo nativo/C++ e le app in modalità mista (.NET e native). Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**.
 
 In questa esercitazione si apprenderà come:
 
 > [!div class="checklist"]
 > * Creare snapshot della memoria
 > * Analizzare i dati di utilizzo della memoria
+
+Se l' **utilizzo della memoria** non fornisce i dati necessari, gli altri strumenti di profilatura nel [Profiler delle prestazioni](../profiling/profiling-feature-tour.md#post_mortem) forniscono tipi diversi di informazioni che potrebbero essere utili. In molti casi, il collo di bottiglia delle prestazioni dell'applicazione può essere causato da un valore diverso dalla memoria, ad esempio CPU, rendering dell'interfaccia utente o tempo richiesta di rete.
+
+> [!NOTE]
+> **Supporto per allocatori personalizzati** Il profiler della memoria nativa funziona raccogliendo i dati degli eventi [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) di allocazione generati in fase di esecuzione.  Gli allocatori in CRT e Windows SDK sono stati annotati a livello di origine in modo che sia possibile acquisirne i dati di allocazione. Nella scrittura degli allocatori, fare in modo che qualsiasi funzione che restituisce un puntatore alla memoria heap appena allocata possa essere decorata con [__declspec](/cpp/cpp/declspec)(allocator), come illustrato in questo esempio per myMalloc:
+>
+> `__declspec(allocator) void* myMalloc(size_t size)`
 
 ## <a name="collect-memory-usage-data"></a>Raccogliere i dati sull'utilizzo della memoria
 

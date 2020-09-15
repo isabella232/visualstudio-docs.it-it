@@ -14,7 +14,7 @@
       href: quickstart-deploy-to-linux.md
     - name: Distribuire in un sito Web
       href: quickstart-deploy-to-a-web-site.md
-    - name: Distribuire in una cartella locale
+    - name: Distribuire in una cartella
       href: quickstart-deploy-to-local-folder.md
 - name: Esercitazioni
   items:

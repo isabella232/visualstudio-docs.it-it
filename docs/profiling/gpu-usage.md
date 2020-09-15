@@ -7,16 +7,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aa4cce032a5eb80a11568a83c1166b5690bd688
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a738490933c6f2d1cdf89e7e974a268540af991
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85279880"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074969"
 ---
 # <a name="gpu-usage"></a>Utilizzo GPU
 
-Usare lo strumento utilizzo GPU nell'hub prestazioni e diagnostica di Visual Studio per comprendere meglio l'utilizzo dell'hardware di alto livello dell'app Direct3D. Consente di verificare se le prestazioni dell'app sono basate sulla CPU o con associazione GPU e di ottenere informazioni su come usare l'hardware della piattaforma in modo più efficace. L'utilizzo della GPU supporta le app che usano Direct3D 12, Direct3D 11 e Direct3D 10. Non supporta altre API grafiche, ad esempio Direct2D o OpenGL.
+Usare lo strumento utilizzo GPU nel profiler delle prestazioni per comprendere meglio l'utilizzo dell'hardware di alto livello dell'app Direct3D. Consente di verificare se le prestazioni dell'app sono basate sulla CPU o con associazione GPU e di ottenere informazioni su come usare l'hardware della piattaforma in modo più efficace. L'utilizzo della GPU supporta le app che usano Direct3D 12, Direct3D 11 e Direct3D 10. Non supporta altre API grafiche, ad esempio Direct2D o OpenGL.
 
 Ecco come appare la finestra **report utilizzo GPU** :
 
@@ -43,7 +43,7 @@ Per avviare lo strumento Utilizzo GPU:
 
 2. Nell'hub **prestazioni e diagnostica** selezionare la casella accanto a **utilizzo GPU**. Facoltativamente, selezionare le caselle accanto agli altri strumenti a cui si è interessati. È possibile eseguire contemporaneamente diversi strumenti di diagnostica e prestazioni per ottenere un quadro più completo delle prestazioni dell'app.
 
-    ![Screenshot dell'hub prestazioni e diagnostica con utilizzo GPU selezionato](media/gpuusageselected.png "Utilizzo GPU selezionato")
+    ![Screenshot del Profiler prestazioni con utilizzo GPU selezionato](media/gpuusageselected.png "Utilizzo GPU selezionato")
 
    > [!NOTE]
    > Non tutti gli strumenti per le prestazioni e la diagnostica possono essere utilizzati contemporaneamente.

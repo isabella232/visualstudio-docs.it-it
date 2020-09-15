@@ -1,6 +1,6 @@
 ---
 title: PerfTips | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 9/11/2020
 ms.topic: how-to
 ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
 author: mikejo5000
@@ -8,29 +8,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7003f75b59773e8761095c15826bf5e6abcf23ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f260307b677046be54e6d80b0d8fe122b13292e4
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331054"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075470"
 ---
 # <a name="perftips"></a>PerfTips
+
 Il debugger di Visual Studio *PerfTips* e il debugger integrato **Strumenti di diagnostica** consentono di monitorare e analizzare le prestazioni dell'app durante il debug.
 
- Anche se gli strumenti di diagnostica integrati debugger sono un ottimo modo per acquisire consapevolezza dei problemi di prestazioni durante lo sviluppo, il debugger può avere un impatto significativo sulle prestazioni dell'applicazione. Per raccogliere dati più accurati sulle prestazioni, è consigliabile usare gli strumenti di diagnostica di Visual Studio che vengono eseguiti all'esterno del debugger troppo come un'ulteriore indicazione le indagini sulle prestazioni. Vedere [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Anche se gli strumenti di diagnostica integrati debugger sono un ottimo modo per acquisire consapevolezza dei problemi di prestazioni durante lo sviluppo, il debugger può avere un impatto significativo sulle prestazioni dell'applicazione. Per raccogliere dati più accurati sulle prestazioni, è consigliabile usare gli strumenti nel profiler delle prestazioni come parte aggiuntiva delle analisi delle prestazioni. Vedere [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 ## <a name="perftips"></a>PerfTips
- Quando il debugger interrompe l'esecuzione in un punto di interruzione o un'operazione passo a passo, il tempo trascorso tra l'interruzione e il precedente punto di interruzione viene visualizzato come un suggerimento nella finestra dell'editor. Per altre informazioni, vedere [PerfTips, informazioni immediate sulle prestazioni durante il debug in Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/).
 
- ![PerfTip](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")
+Quando il debugger interrompe l'esecuzione in un punto di interruzione o un'operazione passo a passo, il tempo trascorso tra l'interruzione e il precedente punto di interruzione viene visualizzato come un suggerimento nella finestra dell'editor. Per altre informazioni, vedere [PerfTips, informazioni immediate sulle prestazioni durante il debug in Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/).
+
+![PerfTip](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")
 
 ## <a name="diagnostics-tools-window"></a>Finestra Strumenti di diagnostica
- I punti di interruzione e i dati di intervallo associati vengono registrati nella finestra **Strumenti di diagnostica**.
 
- Il grafico seguente mostra la finestra di **strumenti di diagnostica** in Visual Studio 2015 Update 1:
+I punti di interruzione e i dati di intervallo associati vengono registrati nella finestra **strumenti di diagnostica** .
 
- ![Diagnostica&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+Nella figura seguente viene illustrata la finestra di **strumenti di diagnostica** .
+
+![Diagnostica&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
 
 - La sequenza temporale **Eventi di interruzione** contrassegnano i punti di interruzione che vengono eseguiti nella sessione di debug. Fare clic su un evento per selezionare l’elenco dei dettagli **Debugger** .
 
@@ -41,19 +44,22 @@ Il debugger di Visual Studio *PerfTips* e il debugger integrato **Strumenti di d
 - La colonna **Durata** di un evento di interruzione visualizza il tempo trascorso tra l'evento e il punto di interruzione precedente.
 
 ## <a name="turn-perftips-on-or-off"></a>Attivare o disattivare PerfTips
- Per abilitare o disabilitare PerfTips:
+
+Per abilitare o disabilitare PerfTips:
 
 1. Scegliere **Opzioni** dal menu **Debug**.
 
 2. Selezionare o deselezionare **Mostra il PerfTip relativo al tempo trascorso durante il debug**.
 
 ## <a name="turn-the-diagnostic-tools-window-on-or-off"></a>Attivare o disattivare la finestra Strumenti di diagnostica
- Per attivare o disattivare la finestra Strumenti di diagnostica:
+
+Per attivare o disattivare la finestra Strumenti di diagnostica:
 
 1. Scegliere **Opzioni** dal menu **Debug**.
 
 2. Selezionare o deselezionare **Abilita Strumenti di diagnostica durante il debug**.
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

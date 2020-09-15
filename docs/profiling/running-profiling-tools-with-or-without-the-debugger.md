@@ -8,30 +8,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 147a7dbc029ae894a0054837e92feb0108dc19b4
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 7db7e704eab7f5d00b20051811c503b143608e2f
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561588"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074956"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Eseguire gli strumenti di profilatura con o senza il debugger
 
-Visual Studio offre una vasta gamma di strumenti di misurazione delle prestazioni e di profilatura. Alcuni strumenti, come l'utilizzo della CPU e l'utilizzo della memoria, possono essere eseguiti con o senza il debugger e nelle configurazioni della build di rilascio o di debug. Gli strumenti visualizzati nella [finestra strumenti di diagnostica](../profiling/profiling-feature-tour.md#view-performance-while-debugging) vengono eseguiti solo durante una sessione di debug. Gli strumenti visualizzati nel [Profiler delle prestazioni](../profiling/profiling-feature-tour.md#post_mortem) vengono eseguiti senza il debugger e si analizzano i risultati dopo aver scelto di arrestare e raccogliere i dati (per l'analisi post-mortem).
+Visual Studio offre una vasta gamma di strumenti di misurazione delle prestazioni e di profilatura. Alcuni strumenti, come l'utilizzo della CPU e l'utilizzo della memoria, possono essere eseguiti con o senza il debugger e nelle configurazioni della build di rilascio o di debug. Gli strumenti visualizzati nella [finestra strumenti di diagnostica](../profiling/profiling-feature-tour.md#measure-performance-while-debugging) vengono eseguiti solo durante una sessione di debug. Gli strumenti visualizzati nel [Profiler delle prestazioni](../profiling/profiling-feature-tour.md#post_mortem) vengono eseguiti senza il debugger e si analizzano i risultati dopo aver scelto di arrestare e raccogliere i dati (per l'analisi post-mortem).
 
 >[!NOTE]
 >È possibile usare gli strumenti per le prestazioni non inclusi nel debugger con Windows 7 e versioni successive. Per eseguire gli strumenti di profilatura integrati nel debugger è necessario Windows 8 o versione successiva.
 
-Il Profiler prestazioni non incluso nel debugger e gli Strumenti di diagnostica integrati nel debugger offrono informazioni ed esperienze di uso diverse. Gli strumenti integrati nel debugger indicano i punti di interruzione e i valori delle variabili. Gli strumenti non inclusi nel debugger ottengono risultati più vicini all'esperienza dell'utente finale.
+Il Profiler prestazioni non incluso nel debugger e gli Strumenti di diagnostica integrati nel debugger offrono informazioni ed esperienze di uso diverse. Gli strumenti integrati nel debugger mostrano i valori delle variabili e consentono di usare i punti di interruzione. Gli strumenti non inclusi nel debugger ottengono risultati più vicini all'esperienza dell'utente finale.
 
 Per decidere quali strumenti e risultati utilizzare, tenere presente quanto segue:
 
-- I problemi di prestazioni esterni, come ad esempio i problemi di I/O dei file o di velocità di risposta della rete non sono visualizzati in modo molto diverso negli strumenti integrati nel debugger o negli altri.
-- Per i problemi causati da chiamate con utilizzo intensivo della CPU, è possibile che si verifichino notevoli differenze di prestazioni tra le build di rilascio e debug. Verificare se il problema è presente nelle build di rilascio.
-- Se il problema si verifica solo durante le compilazioni di debug, probabilmente non è necessario eseguire gli strumenti non del debugger. Per i problemi di compilazione della versione, decidere se gli strumenti del debugger aiuteranno a eseguire ulteriori indagini.
-- Le compilazioni Release offrono funzionalità di ottimizzazione come ad esempio l'incorporamento di chiamate di funzione e di costanti, l'eliminazione di percorsi di codice non usati e l'archiviazione di variabili in modalità non utilizzabili dal debugger. I valori relativi alle prestazioni negli strumenti integrati nel debugger sono meno precisi perché le compilazioni di debug non hanno queste ottimizzazioni.
-- Il debugger stesso modifica i tempi di prestazioni, in quanto esegue le operazioni del debugger necessarie, ad esempio intercettare gli eventi di eccezione e caricamento del modulo.
-- I numeri relativi alle prestazioni della compilazione Release negli strumenti Profiler prestazioni sono i più precisi e accurati. I risultati degli strumenti integrati nel debugger sono particolarmente utili per il confronto con altre misurazioni correlate al debug.
+- Strumento integrato debugger e strumento non debugger
+  - I problemi di prestazioni esterni, come ad esempio i problemi di I/O dei file o di velocità di risposta della rete non sono visualizzati in modo molto diverso negli strumenti integrati nel debugger o negli altri.
+  - Il debugger stesso modifica i tempi di prestazioni, in quanto esegue le operazioni del debugger necessarie, ad esempio intercettare gli eventi di eccezione e caricamento del modulo.
+  - I numeri relativi alle prestazioni della compilazione Release negli strumenti Profiler prestazioni sono i più precisi e accurati. I risultati degli strumenti integrati nel debugger sono particolarmente utili per il confronto con altre misure correlate al debug o per l'utilizzo delle funzionalità del debugger.
+- Debug rispetto alla build di rilascio
+  - Per i problemi causati da chiamate con utilizzo intensivo della CPU, è possibile che si verifichino notevoli differenze di prestazioni tra le build di rilascio e debug. Verificare se il problema è presente nelle build di rilascio.
+  - Se il problema si verifica solo durante le compilazioni di debug, probabilmente non è necessario eseguire gli strumenti non del debugger. Per i problemi di compilazione della versione, decidere se le funzionalità fornite dagli strumenti integrati nel debugger contribuiranno a individuare il problema.
+  - Le compilazioni Release offrono funzionalità di ottimizzazione come ad esempio l'incorporamento di chiamate di funzione e di costanti, l'eliminazione di percorsi di codice non usati e l'archiviazione di variabili in modalità non utilizzabili dal debugger. I valori delle prestazioni nelle build di debug sono meno accurati, perché le compilazioni di debug non hanno queste ottimizzazioni.
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Raccogliere dati di profilatura durante il debug
 
@@ -82,7 +84,7 @@ Per raccogliere dati sulle prestazioni senza debug, è possibile eseguire gli st
 
    Mentre la sessione è in esecuzione, alcuni strumenti visualizzano i grafici dei dati in tempo reale nella pagina strumenti di diagnostica, oltre ai controlli per sospendere e riprendere la raccolta dei dati.
 
-    ![Screenshot della raccolta dati nell'hub prestazioni e diagnostica](../profiling/media/diaghubcollectdata.png "Raccolta dati Hub")
+    ![Screenshot della raccolta dei dati nel profiler delle prestazioni](../profiling/media/diaghubcollectdata.png "Raccolta dati Hub")
 
 1. Per terminare la sessione di diagnostica, scegliere **Arrestare raccolta**.
 

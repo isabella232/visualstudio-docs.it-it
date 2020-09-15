@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c3a072408fd8f166475919d988766fb42fa7c54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f77fa9087673ff8e9a429caa27318a60f21d4a60
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285946"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075444"
 ---
 # <a name="analyze-memory-usage"></a>Analizzare l'utilizzo della memoria
 
@@ -35,6 +35,6 @@ Per istruzioni dettagliate che descrivono come usare gli strumenti di analisi de
 
 ## <a name="see-also"></a>Vedere anche
 
+- [Analizzare l'utilizzo della memoria senza il debugger](../profiling/memory-usage-without-debugging2.md)
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)
-- [Analizzare l'utilizzo della memoria senza il debugger](../profiling/memory-usage-without-debugging2.md)
