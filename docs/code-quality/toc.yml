@@ -580,6 +580,8 @@
                       href: interoperability-warnings.md
                     - name: 'CA1401: I P/Invoke non devono essere visibili'
                       href: ca1401.md
+                    - name: 'CA1416: Convalida compatibilità della piattaforma'
+                      href: ca1416.md
                     - name: 'CA1417: Non usare OutAttribute sui parametri di stringa per P/Invoke'
                       href: ca1417.md
                 - name: Avvisi di manutenibilità

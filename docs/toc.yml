@@ -509,6 +509,8 @@
             - name: Usare i file EditorConfig per lo stile del codice
               displayName: Configure code style analyzers
               href: ide/create-portable-custom-editor-options.md
+            - name: Convenzioni di formattazione EditorConfig in C++
+              href: ide/cpp-editorconfig-properties.md
             - name: Convenzioni di codifica .NET
               items:
                 - name: Panoramica
@@ -958,7 +960,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Prodotti e servizi Microsoft per l'accessibilità
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Informazioni di riferimento
+- name: Riferimento
   items:
     - name: Scelte rapide da tastiera
       items:
