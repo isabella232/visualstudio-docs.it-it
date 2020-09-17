@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eef35457b9f28864929ad42919fff4e9afdcb0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8f9ed7822dc231fdd4888d3e44c4e3218357f95
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114815"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713477"
 ---
 # <a name="transactionscope-activity-designer"></a>ActivityDesigner TransactionScope
 
@@ -39,7 +39,7 @@ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.St
 |<xref:System.Activities.Statements.TransactionScope.Body%2A>|Vero|Consente di specificare l'attività da eseguire in un'unica transazione. Per aggiungere l' <xref:System.Activities.Statements.TransactionScope.Body%2A> attività, rilasciare un'attività dalla casella **degli strumenti** nella casella **corpo** dell'ActivityDesigner **TransactionScope** con il testo di suggerimento "rilasciare l'attività".|
 |<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|Vero|Consente di specificare la proprietà <xref:System.Transactions.IsolationLevel> per questa attività <xref:System.Activities.Statements.TransactionScope>.|
 |<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|Falso|Consente di specificare l'intervallo di tempo (nel formato 00:00:00, che indica ore:minuti:secondi) disponibile per il completamento della transazione. Il valore predefinito è 1 minuto (00:01:00).|
-|[System. Activities. Statements. TransactionScope. AbortInstanceOnTransactionFailure](https://msdn.microsoft.com/library/system.activities.statements.transactionscope.abortinstanceontransactionfailure.aspx)|Vero|Specifica il valore che indica se il flusso di lavoro deve essere interrotto se la transazione si interrompe.|
+|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|Vero|Specifica il valore che indica se il flusso di lavoro deve essere interrotto se la transazione si interrompe.|
 
 ## <a name="see-also"></a>Vedere anche
 

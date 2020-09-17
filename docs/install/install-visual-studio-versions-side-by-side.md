@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 717a9cd3f4157c276ce7d0dd5c41cac625581ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0e5a2d09cad35266bacc73580b2284f66bd32f5
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250251"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713464"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installare versioni di Visual Studio side-by-side
 
@@ -50,7 +50,7 @@ Prima di installare le versioni side-by-side, verificare le condizioni seguenti:
 
 Quando si esegue l'aggiornamento da una versione secondaria di Visual Studio alla successiva, il programma di installazione di Visual Studio aggiornerà l'installazione corrente alla versione successiva nel canale per impostazione predefinita. Ad esempio, quando si installa l'anteprima di 16.6.4, il programma di installazione tenterà di sostituire l'installazione corrente di 16.6.3 Preview, perché entrambe le versioni si trovano nel canale 16,6 Preview. Ciò garantisce che le versioni precedenti di Visual Studio non stiano occupando spazio sul computer. In alcuni casi specifici, può essere utile installare le versioni secondarie side-by-side. In questo esempio, ciò significherebbe avere sia 16.6.3 che 16.6.4 nello stesso computer.
 
-1. Scaricare il [file del programma di avvio automatico di Visual Studio](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) per la versione secondaria di cui si vuole eseguire l'installazione side-by-side con le versioni esistenti di Visual Studio.
+1. Scaricare il [file del programma di avvio automatico di Visual Studio](/visualstudio/releases/2019/history#installing-an-earlier-release) per la versione secondaria di cui si vuole eseguire l'installazione side-by-side con le versioni esistenti di Visual Studio.
 2. Aprire il prompt dei comandi in modalità amministratore. A tale scopo, aprire il menu Start di Windows, digitare "cmd", fare clic con il pulsante destro del mouse sul risultato della ricerca del prompt dei comandi e selezionare **Esegui come amministratore**. Nel prompt dei comandi passare alla directory in cui si trova il file del programma di avvio automatico di Visual Studio.
 3. Eseguire il comando seguente, specificando un nuovo percorso di cartella per il percorso di installazione e sostituendo il nome del file con estensione exe con il nome del programma di avvio automatico appropriato per la versione di Visual Studio che si sta installando. Il nome del file con estensione exe deve corrispondere o essere simile a uno dei file seguenti:
    * vs_community.exe per Visual Studio Community

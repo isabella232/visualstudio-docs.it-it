@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d99a1aff2c241e81e8914a247d2f6d8981ee273
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fcd0159e5bd315009c1c468dc7a19b5ba5a9c61
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74239450"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713503"
 ---
 # <a name="remote-debugger-port-assignments"></a>Assegnazioni delle porte del debugger remoto
 Visual Studio Remote Debugger può essere eseguito come applicazione o come servizio in background. Quando viene eseguito come applicazione, usa una porta assegnata per impostazione predefinita, come indicato di seguito:
@@ -29,7 +29,7 @@ Visual Studio Remote Debugger può essere eseguito come applicazione o come serv
 
 - Visual Studio 2012: 4016
 
-In altre parole, il numero della porta assegnata al debugger remoto viene incrementato di 2 per ogni versione. È possibile impostare un numero di porta diverso. In una sezione successiva verrà illustrato come impostare i numeri di porta.
+In altre parole, il numero della porta assegnata al debugger remoto viene incrementato di 2 per ogni versione. Se lo si desidera, è possibile impostare un numero di porta diverso. In una sezione successiva verrà illustrato come impostare i numeri di porta.
 
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>Porta del debugger remoto nei sistemi operativi a 32 bit
 
