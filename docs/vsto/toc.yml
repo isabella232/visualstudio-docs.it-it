@@ -51,7 +51,7 @@
                 - name: Aggiornamento di progetti di Excel e Word
                   href: updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
                 - name: Aggiornamento delle personalizzazioni della barra multifunzione nei progetti di Office
-                  href: /visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5
+                  href: ./update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5.md
                 - name: Aggiornamento delle aree dei moduli nei progetti di Outlook
                   href: updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
         - name: Architettura delle soluzioni Office in Visual Studio

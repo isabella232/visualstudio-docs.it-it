@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 86d575b254209b547504ea6d746d03853990bfb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dfa575bea4e629c7521cc7f4c5a79707462714c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328993"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810993"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Pagina pubblica, Progettazione progetti (sviluppo per Office in Visual Studio)
   La pagina **Pubblica** di **Creazione progetti** viene usata per configurare le proprietà per la distribuzione.
@@ -29,7 +29,7 @@ ms.locfileid: "67328993"
  Per accedere a questa pagina, selezionare il progetto in **Esplora soluzioni**, quindi, nel menu **Progetto** , scegliere *NomeProgetto* **Proprietà**. Se la pagina **Pubblica** non viene visualizzata, scegliere la scheda **Pubblica** .
 
 > [!NOTE]
-> È anche possibile impostare il percorso di pubblicazione nella **Pubblicazione guidata**. Per altre informazioni, vedere [procedura: pubblicare una soluzione Office tramite ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
+> È anche possibile impostare il percorso di pubblicazione nella **Pubblicazione guidata**. Per altre informazioni, vedere [procedura: pubblicare una soluzione Office tramite ClickOnce](/previous-versions/bb386095(v=vs.110)).
 
 ## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
  Percorso **cartella di pubblicazione (sito Web, server FTP o percorso file)** Obbligatorio.
@@ -50,7 +50,7 @@ ms.locfileid: "67328993"
 
  Se i file di installazione si trovano in un percorso relativo al documento o al programma di installazione, ad esempio l'opzione CD, lasciare vuota questa casella.
 
- Questo valore può essere assegnato successivamente da un amministratore. Per altre informazioni, vedere [procedura: modificare il percorso di installazione di una soluzione Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
+ Questo valore può essere assegnato successivamente da un amministratore. Per altre informazioni, vedere [procedura: modificare il percorso di installazione di una soluzione Office](/previous-versions/bb608626(v=vs.110)).
 
  **Prerequisiti** I prerequisiti possono essere inclusi nel programma di installazione o scaricati su richiesta durante l'installazione.
 
@@ -102,4 +102,4 @@ ms.locfileid: "67328993"
 
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
 - [Distribuire una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Prerequisiti della soluzione Office per la distribuzione](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)
+- [Prerequisiti della soluzione Office per la distribuzione](/previous-versions/bb608617(v=vs.110))

@@ -1,5 +1,6 @@
 ---
-title: Raccolta di dati di concorrenza di thread e processi | Microsoft Docs
+title: Raccogli dati di concorrenza del processo di & thread
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 39f33f2df5ad4723a612a44d1d0301bd60ed80d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f44b7785306fc486c8f550c41bcac199825b8ed
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331608"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810718"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>Raccogliere dati di concorrenza di thread e processi
 

@@ -12,12 +12,12 @@ manager: jillfra
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 747095a876b353aeef76e2f5321e7f2ffc46136f
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: a7b0de26fdc1a7982347a12c283a6aa73e9aad12
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100800"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809440"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Procedura: modificare lo spazio dei nomi di un linguaggio specifico di dominio
 
@@ -57,4 +57,4 @@ ms.locfileid: "90100800"
 
 ## <a name="see-also"></a>Vedere anche
 
-[Glossario degli strumenti del linguaggio specifico di dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+[Glossario degli strumenti del linguaggio specifico di dominio](/previous-versions/bb126564(v=vs.100))

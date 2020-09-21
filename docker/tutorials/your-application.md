@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: fb92f5aae84a7c164f04145abe24eb32d7792056
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: d4538becdf7627cc63ac94f65ac456123c5d9c47
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485441"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739980"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Compilare ed eseguire l'app di esempio TODO
 
@@ -24,11 +24,11 @@ A questo punto, il team di sviluppo è piuttosto piccolo e si sta semplicemente 
 
 ![Schermata di gestione elenco TODO](media/todo-list-sample.png)
 
-## <a name="get-the-app"></a>Ottenere l'app
+## <a name="get-the-app"></a>Scaricare l'app
 
 Prima di poter eseguire l'applicazione, è necessario ottenere il codice sorgente dell'applicazione nel computer. Per i progetti reali, in genere il repository viene clonato. Tuttavia, per questa esercitazione è stato creato un file ZIP che contiene l'applicazione.
 
-1. [Scaricare il file zip](/assets/app.zip). Aprire il file ZIP e assicurarsi di estrarre il contenuto.
+1. [Scaricare il file zip](http://localhost/assets/app.zip). Aprire il file ZIP e assicurarsi di estrarre il contenuto.
 
 1. Al termine dell'estrazione, usare l'editor di codice preferito per aprire il progetto. Se è necessario un editor, è possibile usare [Visual Studio Code](https://code.visualstudio.com/). Verranno visualizzate le `package.json` due sottodirectory e `src` `spec` .
 

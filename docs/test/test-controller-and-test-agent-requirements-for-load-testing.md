@@ -1,5 +1,6 @@
 ---
-title: Requisiti del controller di test e dell'agente di test per il test di carico
+title: Test controller/requisiti dell'agente di test (test di carico)
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 39b174b0b134fdfdf26570565aa6aa756ba43c92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5d4e0562ed15aa44beba858f46870bf672d46ba
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588642"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810549"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisiti del controller e dell'agente di test per il test di carico
 
@@ -30,7 +31,7 @@ I computer del controller di test e dell'agente di test presentano requisiti har
 
 Nella tabella seguente sono riportati i requisiti hardware consigliati per la distribuzione di un controller di test e di agenti di test.
 
-|**Configurazione**|**Componente**|**CPU**|**Disco rigido**|**Memoria**|
+|**Configuration**|**Componente**|**CPU**|**Disco rigido**|**Memoria**|
 |-|-------------------|-|------------|-|
 |< 500 utenti virtuali|Agente di test|2,6 GHz|10 GB|2 GB|
 |< 1000 utenti virtuali|Agente di test|Processore doppio, 2,6 GHz|10 GB|2 GB|

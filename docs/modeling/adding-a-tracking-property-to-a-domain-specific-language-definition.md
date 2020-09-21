@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccac40e2ff11b4da67c95fba307de97e4f72a101
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 680d64e2d2bdf02c6a1c8b8b25bdfb64cde2db8f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238244"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810822"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Aggiungere una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio
 
@@ -26,7 +26,7 @@ Una proprietà del *dominio di rilevamento* è una proprietà che può essere ag
 
 Ad esempio, nel Strumenti Domain-Specific Language (strumenti DSL), la proprietà nome visualizzato di una classe di dominio ha un valore predefinito che viene calcolato usando il nome della classe di dominio, ma un utente può modificare il valore in fase di progettazione o reimpostarlo sul valore calcolato.
 
-In questa procedura dettagliata viene creato un linguaggio specifico di dominio (DSL) che dispone di una proprietà di rilevamento dello spazio dei nomi con un valore predefinito basato sulla proprietà dello spazio dei nomi predefinita del modello. Per ulteriori informazioni sulle proprietà di rilevamento, vedere [definizione delle proprietà di rilevamento](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
+In questa procedura dettagliata viene creato un linguaggio specifico di dominio (DSL) che dispone di una proprietà di rilevamento dello spazio dei nomi con un valore predefinito basato sulla proprietà dello spazio dei nomi predefinita del modello. Per ulteriori informazioni sulle proprietà di rilevamento, vedere [definizione delle proprietà di rilevamento](/previous-versions/cc825929(v=vs.100)).
 
 - Gli strumenti DSL supportano il rilevamento dei descrittori di proprietà. Tuttavia, non è possibile usare la finestra di progettazione DSL per aggiungere una proprietà di rilevamento a una lingua. Pertanto, è necessario aggiungere codice personalizzato per definire e implementare la proprietà di rilevamento.
 

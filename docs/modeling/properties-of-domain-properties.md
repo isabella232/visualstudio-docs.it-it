@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0342146f604d86dd93ce25ed20e6ab393c581ea9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d5ecb87fa23dbf2705eb1df39e3e19e1b2bf578
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544170"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810015"
 ---
 # <a name="properties-of-domain-properties"></a>Proprietà delle proprietà di dominio
 Una *proprietà di dominio* è una funzionalità di un elemento del modello che può ospitare un valore. Ad esempio, la classe di dominio `Person` potrebbe includere le proprietà `Name` e `BirthDate`. Nella definizione DSL, le proprietà di dominio sono elencate nella casella della classe di dominio sul diagramma e sotto la classe di dominio in DSL Explorer. Per ulteriori informazioni, vedere [come definire un Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md).
@@ -32,7 +32,7 @@ Una *proprietà di dominio* è una funzionalità di un elemento del modello che 
 
   Quando si seleziona una Proprietà di dominio in un diagramma o in DSL Explorer, nella Finestra Proprietà vengono visualizzati gli elementi seguenti. Per ulteriori informazioni sull'utilizzo di questi elementi, vedere [personalizzazione ed estensione di un Domain-Specific Language](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Proprietà|Descrizione|Default Value|
+|Proprietà|Descrizione|Valore predefinito|
 |-|-|-|
 |**Descrizione**|Descrizione usata per documentare l'interfaccia utente della finestra di progettazione generata.|\<none>|
 |**Nome visualizzato**|Nome che verrà visualizzato nella finestra di progettazione generata per questa proprietà di dominio. Può contenere spazi e punteggiatura, ad esempio "Song Title".|\<none>|
@@ -43,11 +43,11 @@ Una *proprietà di dominio* è una funzionalità di un elemento del modello che 
 |**È Nome elemento**|Se `True`, questa proprietà di dominio verrà visualizzata come nome del relativo elemento modello in DSL Explorer.<br /><br /> I nuovi elementi modello riceveranno un valore predefinito univoco per questa proprietà. Se si desidera controllare la modalità di generazione di questi valori, impostare **provider nome elemento**.|`False`|
 |**È di sola lettura nell'interfaccia utente**|Se `True`, il valore della proprietà di dominio non può essere modificato tramite l'interfaccia utente. Può comunque essere impostato da programmi e sarà visibile nella finestra Proprietà.<br /><br /> Se si desidera nascondere la proprietà del dominio dall'utente, set **è esplorabile**. Se si vuole controllare l'accesso tramite programmi, impostare il **modificatore di accesso Setter**.|`False`|
 |**Tipologia**|Il tipo di proprietà di dominio (`Normal`, `Calculated` o `CustomStorage`). Per altre informazioni, vedere [proprietà di archiviazione calcolate e personalizzate](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|
-|**Name**|Nome di questa proprietà di dominio. Deve essere un identificatore valido, ad esempio **SongTitle**.|\<none>|
+|**Nome**|Nome di questa proprietà di dominio. Deve essere un identificatore valido, ad esempio **SongTitle**.|\<none>|
 |**Note**|Note informali associate alla proprietà di dominio.|\<none>|
 |**Modificatore di accesso con metodo Set**|Modificatore di accesso per il metodo Set. Consente di controllare l'ambito nel quale il codice programma può impostare la proprietà.|`public`|
 |**Tipo**|Tipo di proprietà. Per aggiungere l'elenco dei tipi disponibili, fare clic con il pulsante destro del mouse sulla radice del DSL in DSL Explorer e scegliere **Aggiungi tipo esterno**.|`String`|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario di Strumenti Domain-Specific Language](/previous-versions/bb126564(v=vs.100))

@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 611df048d4ce569c10ae933be9053acf1174c06f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db49bfd1672866a755cce6780527520da2cad420
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290355"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810389"
 ---
 # <a name="add-debuggerdisplay-attribute"></a>Aggiungi attributo DebuggerDisplay
 
@@ -20,9 +20,9 @@ Questa generazione di codice si applica a:
 
 - C#
 
-**Cosa:** L' [attributo DebuggerDisplay](https://docs.microsoft.com/visualstudio/debugger/using-the-debuggerdisplay-attribute) controlla la modalità di visualizzazione di un oggetto, di una proprietà o di un campo nelle finestre delle variabili del debugger.
+**Cosa:** L' [attributo DebuggerDisplay](../../debugger/using-the-debuggerdisplay-attribute.md) controlla la modalità di visualizzazione di un oggetto, di una proprietà o di un campo nelle finestre delle variabili del debugger.
 
-**Quando:** Si desidera [aggiungere le proprietà](https://docs.microsoft.com/visualstudio/debugger/view-data-values-in-data-tips-in-the-code-editor#pin-properties-in-datatips) all'interno del debugger a livello di codice.
+**Quando:** Si desidera [aggiungere le proprietà](../../debugger/view-data-values-in-data-tips-in-the-code-editor.md#pin-properties-in-datatips) all'interno del debugger a livello di codice.
 
 **Motivo:** L'aggiunta di proprietà consente di ispezionare rapidamente gli oggetti in base alle relative proprietà, eseguendo la bubbling della proprietà nella parte superiore dell'elenco di proprietà dell'oggetto all'interno del debugger. 
 

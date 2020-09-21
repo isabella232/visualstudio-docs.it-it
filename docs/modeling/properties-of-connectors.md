@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7bf5492d7da845b65904959cb57737fd438c28b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6d2d3d747c128cfa2afbb63ae43289e0b50519b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532275"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810067"
 ---
 # <a name="properties-of-connectors"></a>Proprietà dei connettori
 I connettori rappresentano le relazioni di dominio in una finestra di progettazione generata.
@@ -37,7 +37,7 @@ I connettori rappresentano le relazioni di dominio in una finestra di progettazi
 |Con costruttore personalizzato|Se `True` , nel codice sorgente verrà fornito un costruttore personalizzato. Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generata dal connettore ( `none` `abstract` o `sealed` ).|Nessuno|
 |Connettore di base|Classe di base di questo connettore.|(nessuna)|
-|Nome|Nome del connettore.|Nome corrente|
+|nome|Nome del connettore.|Nome corrente|
 |Spazio dei nomi|Lo spazio dei nomi affiliato a questo connettore.|Spazio dei nomi corrente|
 |Tipo di descrizione comando|Modalità di definizione della descrizione comando (fixed, variable o None). Se è corretto, il valore della `Fixed Tooltip Text` proprietà viene usato come descrizione comando; se variabile, la descrizione comando è definita nel codice personalizzato.|\<none>|
 |Note|Note informali associate a questo connettore.|\<none>|
@@ -50,4 +50,4 @@ I connettori rappresentano le relazioni di dominio in una finestra di progettazi
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario di Strumenti Domain-Specific Language](/previous-versions/bb126564(v=vs.100))

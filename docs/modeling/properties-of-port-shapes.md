@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e5ed5703d67e4c10bd7a9e4fe2ab234c5577f65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58f0b35b54ddb383111ee060225528d5942b1058
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520860"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811149"
 ---
 # <a name="properties-of-port-shapes"></a>Proprietà delle forme delle porte
 È possibile utilizzare le forme porta per rappresentare le classi di dominio nella finestra di progettazione generata.
@@ -41,7 +41,7 @@ ms.locfileid: "85520860"
 |Con costruttore personalizzato|Se `True` , nel codice sorgente verrà fornito un costruttore personalizzato. Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generata dalla porta ( `none` `abstract` o `sealed` ).|Nessuno|
 |Porta di base|Classe di base di questa forma.|(nessuna)|
-|Name|Nome di questa forma.|Nome corrente|
+|nome|Nome di questa forma.|Nome corrente|
 |Spazio dei nomi|Spazio dei nomi affiliato a questa forma.|Spazio dei nomi corrente|
 |Tipo descrizione comando|Modalità di definizione della descrizione comando (fixed, variable o None). Se è corretto, il valore della `Fixed Tooltip Text` proprietà viene usato come descrizione comando; se variabile, la descrizione comando è definita nel codice personalizzato.|Nessuno|
 |Note|Note informali associate a questa forma.|\<none>|
@@ -55,4 +55,4 @@ ms.locfileid: "85520860"
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario di Strumenti Domain-Specific Language](/previous-versions/bb126564(v=vs.100))

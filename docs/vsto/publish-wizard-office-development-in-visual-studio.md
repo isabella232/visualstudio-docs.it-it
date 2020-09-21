@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be5742533280ab2ff7da04ee287b0534980d9436
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77558182"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810980"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Pubblicazione guidata (sviluppo per Office in Visual Studio)
   Usare la **pubblicazione guidata** per copiare i file di soluzione in un percorso specificato, creare i file manifesto e creare un programma di installazione.
@@ -49,7 +49,7 @@ ms.locfileid: "77558182"
 > Se nel computer di destinazione è in esecuzione Windows Vista, sono presenti ulteriori considerazioni. Per utilizzare l'opzione di pubblicazione locale, è necessario essere un amministratore del computer con Windows Vista. Inoltre, il percorso predefinito è sempre la directory *di \\ pubblicazione* , indipendentemente dal fatto che sia installato IIS.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Qual è il percorso di installazione predefinito nei computer degli utenti finali?
- Il percorso di installazione è facoltativo. Se si preferisce, è possibile impostare il percorso di installazione in un secondo momento. Per informazioni dettagliate, vedere [procedura: modificare il percorso di installazione di una soluzione Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
+ Il percorso di installazione è facoltativo. Se si preferisce, è possibile impostare il percorso di installazione in un secondo momento. Per informazioni dettagliate, vedere [procedura: modificare il percorso di installazione di una soluzione Office](/previous-versions/bb608626(v=vs.110)).
 
  Il percorso di installazione è la directory da cui l'utente finale installerà la personalizzazione. È anche il percorso usato dalla soluzione per controllare la disponibilità di aggiornamenti. La **pubblicazione guidata** non distribuisce la soluzione in questo percorso, a meno che il percorso non corrisponda a quello immesso nella casella **specificare il percorso di pubblicazione dell'applicazione** nella pagina precedente.
 

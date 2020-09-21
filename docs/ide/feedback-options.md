@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: a9c71837b83aa31b56ba1bd8ccb3384e4552d1be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b50ec910c6d5880ead2df48db2ef763753379bb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769998"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807885"
 ---
 # <a name="visual-studio-feedback-options"></a>Opzioni per commenti e suggerimenti in Visual Studio
 
@@ -71,7 +71,7 @@ Successivamente, Visual Studio apre la pagina della [community degli sviluppator
 È possibile contribuire a migliorare la documentazione in due modi:
 
 * Usare lo strumento di risposta della **pagina è utile?** nella parte superiore destra della pagina della documentazione.
-* Usare il proprio account GitHub per fornire commenti e suggerimenti per qualsiasi pagina su Visual Studio in [docs.microsoft.com](/visualstudio/). A tale scopo, scegliere il pulsante **Invia commenti e suggerimenti su**  >  **Questa pagina** nella parte inferiore della pagina della documentazione.
+* Usare il proprio account GitHub per fornire commenti e suggerimenti per qualsiasi pagina su Visual Studio in [docs.microsoft.com](../index.yml). A tale scopo, scegliere il pulsante **Invia commenti e suggerimenti su**  >  **Questa pagina** nella parte inferiore della pagina della documentazione.
 
 ## <a name="contact-microsoft-support"></a>Contattare il supporto Microsoft
 

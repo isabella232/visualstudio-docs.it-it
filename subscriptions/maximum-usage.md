@@ -1,18 +1,18 @@
 ---
 title: Usare la funzionalità Utilizzo massimo nel portale di amministrazione
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 04/07/2020
+ms.date: 09/16/2020
 ms.topic: conceptual
 description: Informazioni su come visualizzare il numero massimo di sottoscrizioni assegnate nel portale di amministrazione
-ms.openlocfilehash: 0fe9dbe494867c99ba62bcb5f56c372da7ac50aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60f9961d400e8ce675e6cfb228f9f7bee36c74a0
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80808358"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807937"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Utilizzare la funzionalità di utilizzo massimo per tenere traccia del numero di sottoscrizioni assegnate
 Una nuova funzionalità nel portale di amministrazione delle sottoscrizioni di Visual Studio consente di tenere traccia di quante sottoscrizioni sono state acquistate e assegnate e identifica il numero massimo di sottoscrizioni di ogni livello assegnate, sia nell'ultimo anno che per l'intera durata dei contratti. 
@@ -24,15 +24,17 @@ Una nuova funzionalità nel portale di amministrazione delle sottoscrizioni di V
 Per visualizzare il numero massimo di sottoscrizioni assegnate per qualsiasi livello di contratto e sottoscrizione:
 1. Selezionare il contratto da visualizzare nell'elenco a discesa nella parte superiore sinistra del portale. Se si dispone solo di un contratto, questo sarà già selezionato.
 2. Fare clic sull'icona di **utilizzo massimo** che rappresenta la terza icona nella parte superiore del lato sinistro della griglia del Sottoscrittore.  
+
     > [!div class="mx-imgBorder"]
-    > ![Menu Utilizzo massimo](_img/maximum-usage/maximum-usage-menu.png)
+    > ![Numero massimo di utilizzo](_img/maximum-usage/maximum-usage-menu.png "Fare clic sul pulsante utilizzo massimo per visualizzare il numero massimo di ogni tipo di sottoscrizione assegnata.")
+
 3. Verrà visualizzato il "utilizzo massimo di 12 mesi" e il numero massimo di sottoscrizioni assegnate nell'anno precedente per ogni livello, insieme al mese in cui è stato raggiunto il picco.    
 
 ## <a name="view-your-assignment-history"></a>Visualizzare la cronologia delle assegnazioni
 Oltre al numero massimo di assegnazioni per ogni livello di sottoscrizione, è possibile visualizzare un resoconto delle attività nell'ambito del contratto, tra cui gli acquisti e le assegnazioni, facendo clic sul pulsante **Export full report** (Esporta report completo).  (Potrebbe essere necessario scorrere verso il basso per visualizzare il pulsante).  
 
 > [!div class="mx-imgBorder"]
-> ![Report completo sull'utilizzo massimo](_img/maximum-usage/maximum-usage-full-report.png)
+> ![Report completo sull'utilizzo massimo](_img/maximum-usage/maximum-usage-full-report.png "Il report completo include un record di tutti gli acquisti e le assegnazioni delle sottoscrizioni.")
 
 Per ogni livello di sottoscrizione, il report mostra la data in cui è stato raggiunto un nuovo livello massimo di assegnazioni e il numero di sottoscrizioni acquistate in tale data, consentendo di visualizzare facilmente tutte le date in cui si sono verificate sovrassegnazioni.  
 

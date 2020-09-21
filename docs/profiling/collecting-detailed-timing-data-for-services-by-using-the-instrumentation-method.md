@@ -1,5 +1,6 @@
 ---
-title: Riga di comando del profiler-strumento per ottenere i dettagli dell'intervallo di servizio
+title: 'Riga di comando del profiler: ottenere i dati di temporizzazione per un servizio'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 502ae620dc8641fabc8a5f6225b5673d5530c7f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9fa021ea7602b2268c720bf3e02bab0ed93af775
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331796"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810757"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Raccogliere dati di intervallo dettagliati per i servizi usando il metodo di strumentazione dalla riga di comando del profiler
 Questa sezione descrive le procedure e le opzioni per la raccolta di dati dettagliati sulle prestazioni per i servizi Windows tramite il metodo di strumentazione dalla riga di comando.

@@ -1,30 +1,30 @@
 ---
-title: Avvisi di sicurezza
+title: Regole di sicurezza
 ms.date: 10/02/2019
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.securityrules
 helpviewer_keywords:
 - security [Visual Studio ALM], Enterprise Templates
-- security warnings
-- managed code analysis warnings, security warnings
-- warnings, security
+- security rules
+- managed code analysis rules, security rules
+- rules, security
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a40273c3230854e4b1d1a11a3fd02de54d5df745
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 2eb2356628099246aa010c0332f473955a3e976d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599971"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807924"
 ---
-# <a name="security-warnings"></a>Avvisi di sicurezza
+# <a name="security-rules"></a>Regole di sicurezza
 
-Gli avvisi di sicurezza supportano librerie e applicazioni più sicure. Questi avvisi contribuiscono ad evitare che il programma presenti difetti nella sicurezza. Se si disabilita uno qualsiasi di questi avvisi, è opportuno indicarne chiaramente il motivo nel codice e informare il responsabile della sicurezza designato per il progetto di sviluppo.
+Le regole di sicurezza supportano librerie e applicazioni più sicure. Queste regole consentono di evitare errori di sicurezza nel programma. Se si disabilita una di queste regole, è necessario contrassegnare chiaramente il motivo nel codice e informare il responsabile della sicurezza designato per il progetto di sviluppo.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -79,7 +79,7 @@ Gli avvisi di sicurezza supportano librerie e applicazioni più sicure. Questi a
 |[CA5358: Non usare modalità crittografia non sicure](../code-quality/ca5358.md)|Non usare modalità crittografia non sicure|
 |[CA5359: Non disabilitare la convalida del certificato](../code-quality/ca5359.md)|Un certificato può essere utile per autenticare l'identità del server. I client devono convalidare il certificato del server per garantire che le richieste vengano inviate al server desiderato. Se il ServerCertificateValidationCallback restituisce sempre `true` , qualsiasi certificato passerà la convalida.|
 |[CA5360: Non chiamare metodi pericolosi durante la deserializzazione](../code-quality/ca5360.md)|La deserializzazione non sicura è una vulnerabilità che si verifica quando i dati non attendibili vengono usati per abusare la logica di un'applicazione, infliggendo un attacco Denial of Service (DoS) o persino eseguendo codice arbitrario al momento della deserializzazione. Spesso gli utenti malintenzionati possono usare queste funzionalità di deserializzazione quando l'applicazione deserializza dati non attendibili sotto il proprio controllo. In particolare, richiamare metodi pericolosi nel processo di deserializzazione. Gli attacchi di deserializzazione non sicuri riusciti potrebbero consentire a un utente malintenzionato di eseguire attacchi come attacchi DoS, bypass di autenticazione ed esecuzione di codice in modalità remota.|
-|[CA5361: Non disabilitare l'uso della crittografia avanzata in Schannel](../code-quality/ca5361.md)|`Switch.System.Net.DontEnableSchUseStrongCrypto`L'impostazione di per `true` indebolisce la crittografia utilizzata nelle connessioni di Transport Layer Security in uscita (TLS). La crittografia più debole può compromettere la riservatezza delle comunicazioni tra l'applicazione e il server, semplificando l'intercettazione dei dati sensibili da parte degli utenti malintenzionati.|
+|[CA5361: non disabilitare l'uso di crittografia avanzata SChannel](../code-quality/ca5361.md)|`Switch.System.Net.DontEnableSchUseStrongCrypto`L'impostazione di per `true` indebolisce la crittografia utilizzata nelle connessioni di Transport Layer Security in uscita (TLS). La crittografia più debole può compromettere la riservatezza delle comunicazioni tra l'applicazione e il server, semplificando l'intercettazione dei dati sensibili da parte degli utenti malintenzionati.|
 |[CA5362: Ciclo di riferimento potenziale nel grafico di oggetti deserializzato](../code-quality/ca5362.md)|In caso di deserializzazione di dati non attendibili, qualsiasi codice che elabora l'oggetto grafico deserializzato deve gestire i cicli di riferimento senza passare a cicli infiniti. Sono inclusi sia il codice che fa parte di un callback di deserializzazione che il codice che elabora l'oggetto grafico al termine della deserializzazione. In caso contrario, un utente malintenzionato potrebbe eseguire un attacco Denial of Service con dati dannosi contenenti un ciclo di riferimento.|
 |[CA5363: Non disabilitare la convalida delle richieste](../code-quality/ca5363.md)|La convalida delle richieste è una funzionalità di ASP.NET che esamina le richieste HTTP e determina se contengono contenuti potenzialmente pericolosi che possono causare attacchi injection, incluso lo scripting tra siti.|
 |[CA5364: Non usare protocolli di sicurezza deprecati](../code-quality/ca5364.md)|Transport Layer Security (TLS) protegge la comunicazione tra i computer, in genere con Hypertext Transfer Protocol Secure (HTTPS). Le versioni precedenti del protocollo TLS sono meno sicure di TLS 1,2 e TLS 1,3 ed è più probabile che abbiano nuove vulnerabilità. Evitare le versioni precedenti del protocollo per ridurre al minimo i rischi.|

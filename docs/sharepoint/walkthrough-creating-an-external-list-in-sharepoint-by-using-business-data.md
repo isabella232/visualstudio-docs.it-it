@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29f6c4e170bce8ae7bacfc7178ebd9386f2d4416
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f4fe79c3a6f158eb61d624ce6c5e1566925e3fd
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015834"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740058"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Procedura dettagliata: creare un elenco esterno in SharePoint usando i dati aziendali
 
@@ -80,7 +80,7 @@ Per completare questa procedura dettagliata, è necessario disporre dei componen
 
 2. Aggiungere una connessione al database di esempio di SQL Server AdventureWorks.
 
-     Per ulteriori informazioni, vedere [Aggiungi/modifica connessione (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3).
+     Per ulteriori informazioni, vedere [Aggiungi/modifica connessione (Microsoft SQL Server)](/previous-versions/dxb6fxah(v=vs.140)).
 
 3. Scegliere il nodo di progetto in **Esplora soluzioni**.
 

@@ -1,5 +1,6 @@
 ---
-title: Analizzare i risultati dei test di carico nella visualizzazione Grafici dell'Analizzatore test di carico
+title: Analizzare i risultati dei test di carico-visualizzazione grafici (analizzatore test di carico)
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +16,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dac639b8513e8ef675c6246476791b9351241130
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b48162da7a753516ce0c1ae0dba4cfe1f94387e4
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591268"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810653"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizzare i risultati dei test di carico nella visualizzazione Grafici dell'Analizzatore test di carico
 
@@ -62,7 +63,7 @@ La legenda per i contatori visualizzati nei grafici mostra diverse colonne di da
 
 Nella legenda sono presenti le seguenti colonne:
 
-|Contatore|Nome del contatore|
+|Counter|Nome del contatore|
 |-|-|
 |Istanza|Il nome dell'istanza del contatore.|
 |Category|Il nome della categoria del contatore.|
@@ -71,8 +72,8 @@ Nella legenda sono presenti le seguenti colonne:
 |Range|Indica il numero rappresentato da 100 nel grafico per quel contatore. Ad esempio, per un intervallo il cui valore superiore è 10.000, l'etichetta 100 all'inizio del grafico rappresenta 10.000.|
 |Min|Indica il valore minimo in millisecondi per il contatore.|
 |Max|Indica il valore massimo in millisecondi per il contatore.|
-|Avg|Indica il valore medio in millisecondi per il contatore.|
-|Last (Ultimo)|Mostra il valore in millisecondi del contatore durante l'intervallo di campionamento più recente.|
+|Media|Indica il valore medio in millisecondi per il contatore.|
+|Ultimi|Mostra il valore in millisecondi del contatore durante l'intervallo di campionamento più recente.|
 
 ## <a name="tasks"></a>Attività
 

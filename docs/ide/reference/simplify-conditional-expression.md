@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0571c01217441d4a39fbfe6fb58ccfe95fd0c5a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0242c8c89848e3e76673ddfbca8a27c20605048d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290618"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810350"
 ---
 # <a name="simplify-conditional-expression-refactoring"></a>Refactoring semplificato dell'espressione condizionale
 
@@ -22,7 +22,7 @@ Questo refactoring si applica a:
 
 - C#
 
-**Cosa:** Consente di semplificare un' [espressione condizionale](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator).
+**Cosa:** Consente di semplificare un' [espressione condizionale](/dotnet/csharp/language-reference/operators/conditional-operator).
 
 **Quando:** Si vuole rimuovere il codice non necessario per fornire maggiore chiarezza.
 

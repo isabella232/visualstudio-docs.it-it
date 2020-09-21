@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 619e64dc09858b7d29e05804e3c3c353882f90ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd1b3b90cf4e284e558be02608cac953dc71584b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62561764"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811006"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>Aggiornamento progetto, finestra di dialogo Opzioni
   Usare la pagina **Aggiornamento progetto** per specificare se Visual Studio modifica automaticamente progetti di componente aggiuntivo VSTO per usare la versione di Office installata nel computer di sviluppo.
@@ -33,4 +33,4 @@ ms.locfileid: "62561764"
 
 ## <a name="see-also"></a>Vedere anche
 - [Aggiornare ed eseguire la migrazione di soluzioni Office](../vsto/upgrading-and-migrating-office-solutions.md)
-- [Procedura: aggiornare le soluzioni Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)
+- [Procedura: aggiornare le soluzioni Office](/previous-versions/4bez6837(v=vs.140))

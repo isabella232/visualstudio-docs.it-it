@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44c3b64d9fb8944a578d054b7d98d4bf39bde3bc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801321"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810376"
 ---
 # <a name="add-file-header"></a>Aggiungere l'intestazione del file
 
@@ -22,7 +22,7 @@ Questa generazione di codice si applica a:
 
 - Visual Basic
 
-**Cosa:** Aggiungere le intestazioni dei file a file, progetti e soluzioni esistenti usando un [EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project).
+**Cosa:** Aggiungere le intestazioni dei file a file, progetti e soluzioni esistenti usando un [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
 **Quando:** Si desidera aggiungere facilmente un'intestazione di file a file, progetti e soluzioni.
 
@@ -30,7 +30,7 @@ Questa generazione di codice si applica a:
 
 ## <a name="how-to"></a>Procedure
 
-1. Aggiungere un [EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project) a un progetto o a una soluzione se non ne è già presente uno.
+1. Aggiungere un [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project) a un progetto o a una soluzione se non ne è già presente uno.
 
 2. Aggiungere la regola seguente al file EditorConfig: *file_header_template*.
 

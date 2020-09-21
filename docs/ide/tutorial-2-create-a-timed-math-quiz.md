@@ -9,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1f3620ef462228ff6a3461f44019e9c515a1c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 738d32186a0bb0f1d4655f9afea3d236bf53ad4c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579308"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810848"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Esercitazione 2: Creare un quiz matematico a tempo
 
@@ -58,6 +58,6 @@ Per iniziare l'esercitazione, iniziare con il **[passaggio 1: creare un progetto
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Altre esercitazioni su C#](/visualstudio/get-started/csharp/)
-* [Esercitazioni Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Altre esercitazioni su C#](../get-started/csharp/index.yml)
+* [Esercitazioni Visual Basic](../get-started/visual-basic/index.yml)
 * [Esercitazioni su C++](/cpp/get-started/tutorial-console-cpp)

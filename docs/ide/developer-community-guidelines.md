@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7da5a229ec345a4f360aeb6051dc33130fa3d99a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87972473"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810119"
 ---
 # <a name="developer-community-guidelines"></a>Linee guida per Developer Community
 
@@ -57,7 +57,7 @@ Anche in caso di problemi che includono dettagli avanzati, potrebbe non essere p
 
 La valutazione di un problema è un processo in più passaggi che viene eseguito in modo collaborativo all'interno del team di funzionalità. Il Triaging richiede in genere una settimana, ma potrebbe richiedere più tempo. L'obiettivo del Triaging è fornire una chiara comprensione delle conseguenze del problema. Ad esempio, dopo la valutazione è possibile stabilire se si prevede di risolvere il problema o attendere un ulteriore feedback della community.
 
-Dopo la segnalazione di un problema, gli stati indicano la fase in cui si trovano le informazioni inviate nel proprio ciclo di vita. Poiché i team dei prodotti Visual Studio esaminano il feedback, lo impostano con uno stato appropriato. Tenere traccia dello stato di avanzamento dei report dei problemi facendo riferimento agli [Stati del problema e alle domande frequenti](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
+Dopo la segnalazione di un problema, gli stati indicano la fase in cui si trovano le informazioni inviate nel proprio ciclo di vita. Poiché i team dei prodotti Visual Studio esaminano il feedback, lo impostano con uno stato appropriato. Tenere traccia dello stato di avanzamento dei report dei problemi facendo riferimento agli [Stati del problema e alle domande frequenti](./report-a-problem.md).
 
 Quando in un problema mancano informazioni importanti, viene assegnato lo stato _needs more info (altre informazioni_ ). Il problema viene commentato con le informazioni specifiche necessarie e si riceverà una notifica tramite posta elettronica. Se le informazioni non vengono ricevute entro sette giorni, viene inviato un promemoria. Successivamente, il ticket viene chiuso dopo 14 giorni di inattività.
 
@@ -78,8 +78,8 @@ In tal caso, il problema verrà chiuso e verrà chiesto di aprirlo con l'altro p
 
 #### <a name="additional-information"></a>Informazioni aggiuntive
 
-- [Come aumentare le probabilità di correzione di un problema di prestazioni](https://docs.microsoft.com/visualstudio/ide/how-to-increase-chances-of-performance-issue-being-fixed)
-- [Risolvere i problemi e creare i log per problemi relativi a MSBuild](https://docs.microsoft.com/visualstudio/ide/msbuild-logs)
+- [Come aumentare le probabilità di correzione di un problema di prestazioni](./how-to-increase-chances-of-performance-issue-being-fixed.md)
+- [Risolvere i problemi e creare i log per problemi relativi a MSBuild](./msbuild-logs.md)
 
 ## <a name="managing-feature-suggestions"></a>Gestione dei suggerimenti sulle funzionalità
 
@@ -91,7 +91,7 @@ Nel processo decisionale si osserveranno le seguenti caratteristiche relative al
 
 - Corrisponde alla direzione generale del prodotto?
 - È possibile consentirne la compilazione e la gestione?
-- Si allineano alla strategia di [Roadmap](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap) complessiva?
+- Si allineano alla strategia di [Roadmap](/visualstudio/productinfo/vs-roadmap) complessiva?
 - Dispone del supporto della community, come indicato da voti e commenti?
 - Ci piace anche con il supporto della community di basso livello?
 
@@ -99,7 +99,7 @@ Se non è possibile rispondere a queste domande, verrà chiusa. Tuttavia, spesso
 
 Se un suggerimento non corrisponde alla direzione generale del prodotto, verrà chiuso come *fuori ambito*. Potrebbero ad esempio essere presenti investimenti simili in altri membri della famiglia di prodotti Visual Studio. In alternativa, la funzionalità suggerita potrebbe essere rilevante solo per alcune persone, rendendo un'estensione più adatta per fornirla.
 
-Tenere traccia dello stato di avanzamento del suggerimento per le funzionalità facendo riferimento agli [stati dei suggerimenti e alle domande frequenti](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
+Tenere traccia dello stato di avanzamento del suggerimento per le funzionalità facendo riferimento agli [stati dei suggerimenti e alle domande frequenti](./report-a-problem.md).
 
 ## <a name="discussion-etiquette"></a>Galateo discussione
 
@@ -111,7 +111,7 @@ Eventuali violazioni al galateo di discussione possono causare la rimozione del 
 
 ## <a name="data-privacy"></a>Privacy dei dati
 
-I commenti e le risposte sono visibili pubblicamente, ma tutti i file allegati sono condivisi privatamente solo con Microsoft. Questa visibilità è vantaggiosa perché consente all'intera community di visualizzare i problemi e le soluzioni rilevati da altri utenti. Se si è interessati alla privacy dei dati o dell'identità, sono disponibili opzioni. Scopri di più sulla [privacy dei dati della community degli sviluppatori](https://docs.microsoft.com/visualstudio/ide/developer-community-privacy).
+I commenti e le risposte sono visibili pubblicamente, ma tutti i file allegati sono condivisi privatamente solo con Microsoft. Questa visibilità è vantaggiosa perché consente all'intera community di visualizzare i problemi e le soluzioni rilevati da altri utenti. Se si è interessati alla privacy dei dati o dell'identità, sono disponibili opzioni. Scopri di più sulla [privacy dei dati della community degli sviluppatori](./developer-community-privacy.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ebd7d500767e896ce9576a3d007a4357b9c5281c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf9bf437c7592641f1b9020cdc16b4d702646015
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014638"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740097"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Procedura dettagliata: chiamata al modello a oggetti del client di SharePoint in un'estensione Esplora server
   In questa procedura dettagliata viene illustrato come chiamare il modello a oggetti del client di SharePoint da un'estensione del nodo **connessioni di SharePoint** in **Esplora server**. Per ulteriori informazioni sull'utilizzo del modello a oggetti del client di SharePoint, vedere la pagina relativa alla [chiamata nei modelli a oggetti di SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -192,7 +192,7 @@ Per completare la procedura dettagliata, è necessario conoscere i concetti segu
 
 1. In **Esplora soluzioni**, nel progetto **WebPartNode** , aprire il file **source. Extension. vsixmanifest** nell'editor manifesto.
 
-     Il file source. Extension. vsixmanifest è la base per il file Extension. vsixmanifest che tutti i pacchetti VSIX richiedono. Per altre informazioni su questo file, vedere [riferimento allo schema di estensione VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Il file source. Extension. vsixmanifest è la base per il file Extension. vsixmanifest che tutti i pacchetti VSIX richiedono. Per altre informazioni su questo file, vedere [riferimento allo schema di estensione VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Nella casella **nome prodotto** , immettere **nodo Raccolta Web part per Esplora server**.
 

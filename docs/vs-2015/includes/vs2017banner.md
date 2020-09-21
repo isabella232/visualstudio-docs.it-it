@@ -1,6 +1,6 @@
 ---
-title: File di inclusione
-description: File di inclusione
+title: includere file
+description: includere file
 ms.custom: include file
 author: ghogen
 ms.author: ghogen

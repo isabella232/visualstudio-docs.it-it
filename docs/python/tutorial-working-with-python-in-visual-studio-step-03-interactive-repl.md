@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31db7813521632539827f404c05625ff4b6121ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d88d936a4b470f891f3b2bf2c353f4ef4e595c57
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801568"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811045"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Passaggio 3: Usare la finestra interattiva REPL
 
@@ -25,7 +25,7 @@ ms.locfileid: "88801568"
 La finestra **interattiva** di Visual Studio per Python offre un'esperienza REPL (Read-Evaluate-Print-Loop) avanzata che riduce notevolmente il consueto ciclo di modifica-compilazione-debug. La finestra **Interattiva** offre tutte le funzionalità dell'esperienza REPL della riga di comando di Python. Rende anche molto semplice lo scambio di codice con i file di origine dell'editor di Visual Studio, che altrimenti risulta eccessivamente complessa con la riga di comando.
 
 > [!NOTE]
-> Per i problemi relativi a REPL, verificare che i pacchetti `ipython` e `ipykernel` siano installati. Per informazioni sull'installazione dei pacchetti, vedere la [scheda Packages (Pacchetti) in Python Environments (Ambienti Python)](/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
+> Per i problemi relativi a REPL, verificare che i pacchetti `ipython` e `ipykernel` siano installati. Per informazioni sull'installazione dei pacchetti, vedere la [scheda Packages (Pacchetti) in Python Environments (Ambienti Python)](./python-environments-window-tab-reference.md#packages-tab).
 
 1. Aprire la finestra **Interattiva** facendo clic col pulsante destro del mouse sull'ambiente Python del progetto in **Esplora soluzioni**, come **Python 3.6 (32 bit)** illustrato in precedenza, e selezionando **Apri finestra interattiva**. In alternativa, è possibile selezionare **Visualizza**  >  **altre**  >  **finestre Windows Python interattive** dal menu principale di Visual Studio.
 

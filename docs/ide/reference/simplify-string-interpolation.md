@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8b0fd53164cb98921b111d49fa04a76c9d0d8a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e801d417280d5d9ce8225c2185b582544fe2cef
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094307"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810337"
 ---
 # <a name="simplify-string-interpolation-refactoring"></a>Semplificazione del refactoring dell'interpolazione di stringhe
 
@@ -25,7 +25,7 @@ Questo refactoring si applica a:
 
 - Visual Basic
 
-**Cosa:** Consente di semplificare un' [interpolazione di stringhe](https://docs.microsoft.com/dotnet/csharp/tutorials/string-interpolation).
+**Cosa:** Consente di semplificare un' [interpolazione di stringhe](/dotnet/csharp/tutorials/string-interpolation).
 
 **Quando:** Si dispone di un'interpolazione di stringhe che può essere semplificata.
 

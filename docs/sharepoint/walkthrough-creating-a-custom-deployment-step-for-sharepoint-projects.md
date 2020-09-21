@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 56fac2be1e73de5df9da8aa13e6631c4cc9d1022
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b739db2755336958492a0aa67c9d5f0809f74bb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015892"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740019"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Procedura dettagliata: creare un passaggio di distribuzione personalizzato per i progetti SharePoint
   Quando si distribuisce un progetto SharePoint, Visual Studio esegue una serie di passaggi di distribuzione in un ordine specifico. Visual Studio include molti passaggi di distribuzione incorporati, ma è anche possibile crearne di personalizzati.
@@ -190,7 +190,7 @@ ms.locfileid: "86015892"
 
 1. In **Esplora soluzioni**, nel progetto **UpgradeDeploymentStep** , aprire il menu di scelta rapida per il file **source. Extension. vsixmanifest** , quindi scegliere **Apri**.
 
-     Visual Studio apre il file nell'editor manifesto. Il file source. Extension. vsixmanifest è la base per il file Extension. vsixmanifest che tutti i pacchetti VSIX richiedono. Per altre informazioni su questo file, vedere [riferimento allo schema di estensione VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Visual Studio apre il file nell'editor manifesto. Il file source. Extension. vsixmanifest è la base per il file Extension. vsixmanifest che tutti i pacchetti VSIX richiedono. Per altre informazioni su questo file, vedere [riferimento allo schema di estensione VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Nella casella **nome prodotto** immettere **Aggiorna passaggio di distribuzione per progetti SharePoint**.
 
@@ -218,7 +218,7 @@ ms.locfileid: "86015892"
 10. Nell'elenco **tipo** immettere **SharePoint. Commands. v4**.
 
     > [!NOTE]
-    > Questo elemento specifica un'estensione personalizzata che si desidera includere nell'estensione di Visual Studio. Per altre informazioni, vedere [elemento asset (schema VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Questo elemento specifica un'estensione personalizzata che si desidera includere nell'estensione di Visual Studio. Per altre informazioni, vedere [elemento asset (schema VSX)](/previous-versions/dd393737(v=vs.110)).
 
 11. Nell'elenco **origine** scegliere **un progetto nella soluzione corrente**.
 

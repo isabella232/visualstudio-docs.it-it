@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f820fe2f3cca0eddb709462961f328c906f6f2d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567983"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810363"
 ---
 # <a name="output-window"></a>Output (finestra)
 
@@ -76,7 +76,7 @@ Se si usa lo scorrimento automatico nella finestra **Output** e quindi si naviga
 ## <a name="see-also"></a>Vedere anche
 
 - [Messaggi di diagnostica nella finestra di output](../../debugger/diagnostic-messages-in-the-output-window.md)
-- [Procedura: Controllare la finestra di output](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
+- [Procedura: Controllare la finestra di output](/previous-versions/ht6z4e28(v=vs.140))
 - [Compilare](../../ide/compiling-and-building-in-visual-studio.md)
 - [Informazioni sulle configurazioni della build](../../ide/understanding-build-configurations.md)
 - [Panoramica della libreria di classi](/dotnet/standard/class-library-overview)

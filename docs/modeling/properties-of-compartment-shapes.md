@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51b652adcc482d6e326c0b64eda3a9d32efab309
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27263e596c1e0e6e34f62e5125ffb070fc0f2fbb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532289"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810080"
 ---
 # <a name="properties-of-compartment-shapes"></a>Proprietà delle forme di raggruppamento
 Le forme raggruppamento sono una delle forme che è possibile utilizzare per visualizzare una classe di dominio in un linguaggio specifico di dominio. È possibile espandere e comprimere i raggruppamenti.
@@ -32,7 +32,7 @@ Le forme raggruppamento sono una delle forme che è possibile utilizzare per vis
 |Modalità gradiente riempimento|Modalità di sfumatura riempimento di questa forma.|Ridimensionamento orizzontale|
 |Geometria|Geometria di questa forma (rettangolo o rettangolo arrotondato).|Rectangle|
 |Con punti di connessione predefiniti|Se `True` , la forma utilizzerà i punti di connessione superiore, inferiore, sinistro e destro nella finestra di progettazione generata.|Falso|
-|Intestazione a raggruppamento singolo visibile|Se `False` , e la forma hanno un unico raggruppamento, l'intestazione del raggruppamento non è visibile.|Vero|
+|Intestazione a raggruppamento singolo visibile|Se `False` , e la forma hanno un unico raggruppamento, l'intestazione del raggruppamento non è visibile.|True|
 |Colore del contorno|Colore del contorno di questa forma.|Black|
 |Stile tratteggiato contorno|Stile di tratteggio del contorno di questa forma (tinta unita, trattino, punto, DashDot, TrattoPuntoPunto, personalizzata).|Tinta unita|
 |Spessore del contorno|Spessore del contorno di questa forma.|0,03125|
@@ -43,7 +43,7 @@ Le forme raggruppamento sono una delle forme che è possibile utilizzare per vis
 |Con costruttore personalizzato|Se `True` , nel codice sorgente verrà fornito un costruttore personalizzato. Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe del codice sorgente generata dalla forma raggruppamento ( `none` , `abstract` o `sealed` ).|Nessuno|
 |Forma raggruppamento di base|Classe di base di questa forma.|(nessuna)|
-|Nome|Nome di questa forma.|Nome corrente|
+|nome|Nome di questa forma.|Nome corrente|
 |Spazio dei nomi|Spazio dei nomi affiliato a questa forma.|Spazio dei nomi corrente|
 |Tipo di descrizione comando|Modalità di definizione della descrizione comando (fixed, variable o None). Se è corretto, il valore della `Fixed Tooltip Text` proprietà viene usato come descrizione comando; se variabile, la descrizione comando è definita nel codice personalizzato.|Nessuno|
 |Note|Note informali associate a questa forma.|\<none>|
@@ -57,4 +57,4 @@ Le forme raggruppamento sono una delle forme che è possibile utilizzare per vis
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario di Strumenti Domain-Specific Language](/previous-versions/bb126564(v=vs.100))
