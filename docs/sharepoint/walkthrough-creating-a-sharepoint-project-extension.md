@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5df10e2da9e6b4c31894dce0669e9aa0e580b92f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d79bf66f88a7cbaa5321887b676cc9eca798a92
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015075"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739928"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Procedura dettagliata: creare un'estensione di progetto SharePoint
   In questa procedura dettagliata viene illustrato come creare un'estensione per i progetti SharePoint. È possibile usare un'estensione di progetto per rispondere a eventi a livello di progetto, ad esempio quando un progetto viene aggiunto, eliminato o rinominato. È anche possibile aggiungere proprietà personalizzate o rispondere quando viene modificato il valore di una proprietà. Diversamente dalle estensioni di elementi di progetto, le estensioni di progetto non possono essere associate a un particolare tipo di progetto SharePoint. Quando si crea un'estensione di progetto, l'estensione viene caricata quando un qualsiasi tipo di progetto SharePoint viene aperto in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -128,7 +128,7 @@ ms.locfileid: "86015075"
 
 1. In **Esplora soluzioni**aprire il menu di scelta rapida per il file source. Extension. vsixmanifest, quindi scegliere il pulsante **Apri** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre il file nella finestra di progettazione del manifesto. Le informazioni visualizzate nella scheda **metadati** vengono visualizzate anche in **estensioni e aggiornamenti**. Tutti i pacchetti VSIX richiedono il file Extension. vsixmanifest. Per altre informazioni su questo file, vedere [riferimento allo schema di estensione VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre il file nella finestra di progettazione del manifesto. Le informazioni visualizzate nella scheda **metadati** vengono visualizzate anche in **estensioni e aggiornamenti**. Tutti i pacchetti VSIX richiedono il file Extension. vsixmanifest. Per altre informazioni su questo file, vedere [riferimento allo schema di estensione VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Nella casella **nome prodotto** immettere **Proprietà progetto personalizzato**.
 

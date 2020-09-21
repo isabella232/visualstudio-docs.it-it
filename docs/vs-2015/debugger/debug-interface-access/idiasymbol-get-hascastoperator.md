@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c29a8ddf3cf2f5a48f08c8baef4f41d59ad632e5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64797987"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90829673"
 ---
-# <a name="idiasymbolgethascastoperator"></a>IDiaSymbol::get_hasCastOperator
+# <a name="idiasymbolget_hascastoperator"></a>IDiaSymbol::get_hasCastOperator
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un flag che specifica se il tipo di dati definito dall'utente dispone di qualsiasi operatore di cast definite.  
+Recupera un flag che specifica se per il tipo di dati definito dall'utente sono definiti operatori di cast.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,19 +35,19 @@ HRESULT get_hasCastOperator ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce un `TRUE` se il tipo di dati definito dall'utente ha tutti gli operatori di cast definiti; in caso contrario, restituisce `FALSE`.  
+ out Restituisce un oggetto `TRUE` se per il tipo di dati definito dall'utente sono definiti operatori cast. in caso contrario, restituisce `FALSE` .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="requirements"></a>Requisiti  
   
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
-|Intestazione:|DIA2.h|  
+|Intestazione:|dia2. h|  
 |Version:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  

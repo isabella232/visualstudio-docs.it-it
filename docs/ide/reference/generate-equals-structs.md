@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ccc5be9debbdc2b4901d4aad15a0dc4d2bf1bb9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ee695169f52036858fc70598f81f375638ab03f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290331"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808116"
 ---
 # <a name="generate-iequatable-operators-when-generating-equals-for-structs"></a>Genera operatori IEquatable durante la generazione di Equals per gli struct
 
@@ -20,7 +20,7 @@ Questa generazione di codice si applica a:
 
 - C#
 
-**Cosa:** Consente di generare gli operatori **Equals** e **IEquatable** per gli [struct](https://docs.microsoft.com/dotnet/csharp/language-reference/builtin-types/struct).
+**Cosa:** Consente di generare gli operatori **Equals** e **IEquatable** per gli [struct](/dotnet/csharp/language-reference/builtin-types/struct).
 
 **Quando:** Si dispone di uno struct che verrà automaticamente aggiunto anche a IEquatable e agli operatori Equals e not Equals.
 

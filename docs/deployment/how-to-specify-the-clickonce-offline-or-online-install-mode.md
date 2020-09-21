@@ -1,5 +1,6 @@
 ---
-title: 'Procedura: specificare la modalità di installazione online o offline di ClickOnce | Microsoft Docs'
+title: Specificare la modalità di installazione online o offline (ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcd9eeedfdd2a4661e3744da369a6fadc11039a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 896d2218237b884d9483496e0adac157a6e26fd3
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381756"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808737"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Procedura: Specificare la modalità di installazione online o offline di ClickOnce
 `Install Mode`Per un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione determina se l'applicazione sarà disponibile in modalità offline o online. Quando si sceglie **l'applicazione è disponibile solo online**, l'utente deve avere accesso al percorso di pubblicazione, ovvero [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] una pagina Web o una condivisione file, per eseguire l'applicazione. Quando si sceglie **l'applicazione è disponibile anche offline**, l'applicazione aggiunge voci al menu **Start** e alla finestra di dialogo **Installazione applicazioni** ; l'utente è in grado di eseguire l'applicazione quando non è connessa.

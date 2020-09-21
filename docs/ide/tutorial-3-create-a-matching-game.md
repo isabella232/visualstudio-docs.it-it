@@ -9,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 619c21f4878f2e421ee5ac5ea76a68cd6e6bc337
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 399275b64392ab4c6def97eb8c4f6a5bdafb2c4a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579713"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810835"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Esercitazione 3: Creare un gioco di abbinamenti
 
@@ -61,6 +61,6 @@ Per iniziare l'esercitazione, iniziare con il **[passaggio 1: creare un progetto
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Altre esercitazioni su C#](/visualstudio/get-started/csharp/)
-* [Esercitazioni Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Altre esercitazioni su C#](../get-started/csharp/index.yml)
+* [Esercitazioni Visual Basic](../get-started/visual-basic/index.yml)
 * [Esercitazioni su C++](/cpp/get-started/tutorial-console-cpp)

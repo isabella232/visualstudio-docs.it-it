@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc1241a39707eedc4b34e0ef3531ab65e49b8238
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800944"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811032"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Sviluppo di Office e SharePoint in Visual Studio
   È possibile estendere Microsoft Office e SharePoint creando un'app leggera o un componente aggiuntivo che gli utenti scaricano da [Office Store](https://store.office.com/) o da un catalogo dell'organizzazione oppure creando una soluzione basata su.NET Framework che gli utenti installano in un computer.
@@ -57,12 +57,12 @@ ms.locfileid: "88800944"
 
  ![App contenuto per Office](../vsto/media/appforoffice.png "App contenuto per Office")
 
- **Scopri di più**
+ **Altre informazioni**
 
-|Per|Vedere|
+|A|Vedere|
 |--------|---------|
 |Altre informazioni sui componenti aggiuntivi per Office e sulla relativa creazione.|[Componenti aggiuntivi di Office](/office/dev/add-ins/publish/publish)|
-|Confrontare i diversi modi in cui è possibile estendere Office e decidere se usare un'app o un componente aggiuntivo di Office.|[Roadmap per i componenti aggiuntivi di Office, VSTO e VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|Confrontare i diversi modi in cui è possibile estendere Office e decidere se usare un'app o un componente aggiuntivo di Office.|[Roadmap per i componenti aggiuntivi di Office, VSTO e VBA](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 
 ### <a name="build-a-sharepoint-add-in"></a>Creazione di un componente aggiuntivo per SharePoint
  Per estendere SharePoint per gli utenti, creare un componente aggiuntivo per SharePoint. Si tratta fondamentalmente di un'applicazione autonoma di piccole dimensioni, facile da usare che risolve la necessità di utenti o aziende.
@@ -73,9 +73,9 @@ ms.locfileid: "88800944"
 
  ![Applicazione gestione contatti business per SharePoint](../vsto/media/appforsharepoint.png "Applicazione gestione contatti business per SharePoint")
 
- **Scopri di più**
+ **Altre informazioni**
 
-|Per|Vedere|
+|A|Vedere|
 |--------|---------|
 |Altre informazioni sui componenti aggiuntivi per SharePoint e sulla relativa creazione.|[Componenti aggiuntivi di SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)|
 |Confrontare i componenti aggiuntivi per SharePoint con le soluzioni tradizionali di SharePoint.|[Confronto tra componenti aggiuntivi di SharePoint e soluzioni di SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
@@ -88,11 +88,11 @@ ms.locfileid: "88800944"
 
  ![Soluzione per i componenti aggiuntivi di PowerPoint](../vsto/media/powerpointaddin.png "Soluzione del componente aggiuntivo PowerPoint")
 
- **Scopri di più**
+ **Altre informazioni**
 
-|Per|Lettura|
+|A|Lettura|
 |--------|----------|
-|Confrontare i diversi modi in cui è possibile estendere Office e decidere se usare un componente aggiuntivo VSTO o un componente aggiuntivo di Office.|[Roadmap per i componenti aggiuntivi di Office, VSTO e VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|Confrontare i diversi modi in cui è possibile estendere Office e decidere se usare un componente aggiuntivo VSTO o un componente aggiuntivo di Office.|[Roadmap per i componenti aggiuntivi di Office, VSTO e VBA](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 |Creare un componente aggiuntivo VSTO.|[Componenti aggiuntivi VSTO creati con Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
 
 ## <a name="create-a-sharepoint-solution"></a><a name="Solutions"></a> Creare una soluzione di SharePoint
@@ -100,9 +100,9 @@ ms.locfileid: "88800944"
 
  Le soluzioni di SharePoint richiedono server della farm di SharePoint locali che devono essere installati dagli amministratori e poiché le soluzioni vengono eseguite in SharePoint, possono influenzare le prestazioni del server. Tuttavia, le soluzioni offrono un accesso più diretto agli oggetti di SharePoint. Inoltre, quando si crea una soluzione di SharePoint, è possibile sfruttare .NET Framework e usare C# e Visual Basic per interagire con gli oggetti di SharePoint.
 
- **Scopri di più**
+ **Altre informazioni**
 
-|Per|Vedere|
+|A|Vedere|
 |--------|---------|
 |Confrontare le soluzioni di SharePoint con i componenti aggiuntivi di SharePoint.|[Confronto tra componenti aggiuntivi di SharePoint e soluzioni di SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 |Creare una soluzione di SharePoint.|[Creazione di soluzioni SharePoint](../sharepoint/create-sharepoint-solutions.md)|

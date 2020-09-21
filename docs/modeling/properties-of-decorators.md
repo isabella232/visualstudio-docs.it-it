@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3374c07cac01104354b2ce41abddbeabbec0a373
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14965f829530ba5a2f6a7797291e9d1cfab0ae2d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566137"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810054"
 ---
 # <a name="properties-of-decorators"></a>Proprietà degli elementi Decorator
 Gli elementi Decorator sono icone, testo o frecce di espansione/compressione che possono essere visualizzate su forme o connettori nel diagramma. Nelle tabelle seguenti sono illustrate le proprietà dei tre tipi di elemento Decorator. Alcune delle proprietà vengono visualizzate solo negli elementi Decorator di forma o solo negli elementi Decorator del connettore.
@@ -26,7 +26,7 @@ Gli elementi Decorator sono icone, testo o frecce di espansione/compressione che
 |Proprietà|Descrizione|Predefinito|
 |-|-|-|
 |DisplayName|Nome dell'elemento Decorator che verrà visualizzato nella finestra di progettazione generata.|Espandi elemento Decorator compresso|
-|Name|Nome dell'elemento Decorator.|ExpandCollapseDecorator|
+|nome|Nome dell'elemento Decorator.|ExpandCollapseDecorator|
 |Note|Note informali associate a questo elemento Decorator.|\<none>|
 |HorizontalOffset|Offset orizzontale, in pollici, relativo alla posizione predefinita dell'elemento Decorator. (Solo su forme).|0|
 |VerticalOffset|Offset verticale rispetto alla posizione predefinita dell'elemento Decorator, in pollici. (Solo su forme).|0|
@@ -40,7 +40,7 @@ Gli elementi Decorator sono icone, testo o frecce di espansione/compressione che
 |-|-|-|
 |DefaultIcon|Percorso dell'icona o del file di immagine da visualizzare.|\<none>|
 |DisplayName|Nome dell'elemento Decorator da visualizzare nella finestra di progettazione generata.|Elemento Decorator icona|
-|Name|Nome dell'elemento Decorator.|IconDecorator|
+|nome|Nome dell'elemento Decorator.|IconDecorator|
 |Note|Note informali associate all'elemento Decorator.|\<none>|
 |HorizontalOffset|Offset orizzontale, in pollici, relativo alla posizione predefinita dell'elemento Decorator. (Solo su forme).|0|
 |VerticalOffset|Offset verticale rispetto alla posizione predefinita dell'elemento Decorator, in pollici. (Solo su forme).|0|
@@ -56,7 +56,7 @@ Gli elementi Decorator sono icone, testo o frecce di espansione/compressione che
 |DisplayName|Nome dell'elemento Decorator da visualizzare nella finestra di progettazione generata.|Etichetta|
 |FontSize|Dimensioni del carattere per il testo visualizzato nell'elemento Decorator.|8|
 |FontStyle|Stile del carattere per il testo visualizzato nell'elemento Decorator.|Normale|
-|Name|Nome dell'elemento Decorator.|Etichetta|
+|nome|Nome dell'elemento Decorator.|Etichetta|
 |Note|Note informali associate all'elemento Decorator.|\<none>|
 |HorizontalOffset|Offset orizzontale, in pollici, relativo alla posizione predefinita dell'elemento Decorator. (Solo su forme).|0|
 |VerticalOffset|Offset verticale rispetto alla posizione predefinita dell'elemento Decorator, in pollici. (Solo su forme).|0|
@@ -66,4 +66,4 @@ Gli elementi Decorator sono icone, testo o frecce di espansione/compressione che
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario di Strumenti Domain-Specific Language](/previous-versions/bb126564(v=vs.100))

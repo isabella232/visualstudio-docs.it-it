@@ -1,29 +1,29 @@
 ---
-title: avvisi di prestazioni
+title: Regole prestazioni
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.performancerules
 helpviewer_keywords:
-- warnings, performance
-- performance warnings
-- performance, warnings
-- managed code analysis warnings, performance warnings
+- rules, performance
+- performance rules
+- performance, rules
+- managed code analysis rules, performance rules
 ms.assetid: e014ac3a-02e6-46d9-942c-3491dd63782f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83e798b3a47d6a9d606e3c25768895096f752f53
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 7ee44b74ca47de8059b68d95ea5e06c801842bc7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508990"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808571"
 ---
-# <a name="performance-warnings"></a>avvisi di prestazioni
-Gli avvisi di prestazioni supportano applicazioni e librerie ad alte prestazioni.
+# <a name="performance-rules"></a>Regole prestazioni
+Le regole di prestazioni supportano le librerie e le applicazioni ad alte prestazioni.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 

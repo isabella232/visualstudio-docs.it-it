@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 385d313d0a8796d2aba93903e95e989ac1e0ced6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd51c377ed20807c5e5e2b26f842c6152bf7c222
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189708"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808220"
 ---
 # <a name="design-and-create-office-solutions"></a>Progettazione e creazione di soluzioni Office
 
@@ -50,7 +50,7 @@ Visual Studio fornisce modelli di progetto che è possibile utilizzare per crear
 
   Dopo la modifica del framework di destinazione, tuttavia, potrebbe essere necessario modificare parte del codice nel progetto se vengono utilizzate alcune funzionalità. Per ulteriori informazioni su come modificare il Framework di destinazione, vedere [How to: target a version of the .NET Framework](../ide/visual-studio-multi-targeting-overview.md). Per ulteriori informazioni sulle modifiche che potrebbero essere necessarie nel progetto, vedere [eseguire la migrazione di soluzioni Office a .NET Framework 4 o versione successiva](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
 
-  Se Visual Studio modifica la .NET Framework di destinazione per il progetto e si usa ClickOnce per distribuire la soluzione, assicurarsi di selezionare anche la versione corrispondente della .NET Framework nella finestra di dialogo **prerequisiti** . Questa selezione non viene modificata automaticamente quando si modifica il framework di destinazione per il progetto. Per altre informazioni, vedere [procedura: installare i prerequisiti nei computer degli utenti finali per eseguire soluzioni Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
+  Se Visual Studio modifica la .NET Framework di destinazione per il progetto e si usa ClickOnce per distribuire la soluzione, assicurarsi di selezionare anche la versione corrispondente della .NET Framework nella finestra di dialogo **prerequisiti** . Questa selezione non viene modificata automaticamente quando si modifica il framework di destinazione per il progetto. Per altre informazioni, vedere [procedura: installare i prerequisiti nei computer degli utenti finali per eseguire soluzioni Office](/previous-versions/bb608608(v=vs.110)).
 
 > [!NOTE]
 > Non è possibile usare .NET Framework 3.5 o versioni precedenti nei progetti Office creati tramite [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. I progetti di Office create mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] richiedono funzionalità che sono state introdotte in [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
@@ -58,7 +58,7 @@ Visual Studio fornisce modelli di progetto che è possibile utilizzare per crear
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Comprendere quando gli assembly di interoperabilità primari di Office sono necessari nei computer degli utenti finali
  Per impostazione predefinita, gli assembly di interoperabilità primari (PIA) di Office non devono essere installati nei computer degli utenti finali se la proprietà **Incorpora tipi di interoperabilità** di ogni riferimento Pia di Office nel progetto è impostata su **true**, ovvero il valore predefinito. In questo scenario, le informazioni sul tipo per i tipi di assembly di interoperabilità primari utilizzati dalla soluzione vengono incorporate nell'assembly della soluzione quando si compila il progetto. In fase di runtime, le informazioni sul tipo incorporate vengono utilizzate al posto degli assembly di interoperabilità primari per chiamare il modello a oggetti COM dell'applicazione di Office. Per ulteriori informazioni sulla modalità di incorporamento dei tipi di assembly di interoperabilità primari nella soluzione, vedere [equivalenza del tipo e tipi di interoperabilità incorporati](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).
 
- Se la proprietà **Incorpora tipi di interoperabilità** di ogni riferimento Pia di Office nel progetto è impostata su **false**, gli assembly di interoperabilità primari di Office devono essere installati e registrati nel Global assembly cache in ogni computer dell'utente finale che esegue la soluzione. Nella maggior parte dei casi, gli assembly di interoperabilità primari vengono installati per impostazione predefinita con Office, ma è anche possibile includere l'assembly di interoperabilità primario ridistribuibile come prerequisito per la soluzione. Per ulteriori informazioni, vedere [prerequisiti della soluzione Office per la distribuzione](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).
+ Se la proprietà **Incorpora tipi di interoperabilità** di ogni riferimento Pia di Office nel progetto è impostata su **false**, gli assembly di interoperabilità primari di Office devono essere installati e registrati nel Global assembly cache in ogni computer dell'utente finale che esegue la soluzione. Nella maggior parte dei casi, gli assembly di interoperabilità primari vengono installati per impostazione predefinita con Office, ma è anche possibile includere l'assembly di interoperabilità primario ridistribuibile come prerequisito per la soluzione. Per ulteriori informazioni, vedere [prerequisiti della soluzione Office per la distribuzione](/previous-versions/bb608617(v=vs.110)).
 
 ### <a name="understand-the-client-profile"></a>Informazioni sul profilo client
  .NET Framework Client Profile è un sottoinsieme della versione completa di .NET Framework. È possibile scegliere .NET Framework Client Profile se è necessario utilizzare solo le funzionalità client di .NET Framework e si desidera fornire l'esperienza di distribuzione più veloce per la soluzione Office. Per ulteriori informazioni, vedere [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile).

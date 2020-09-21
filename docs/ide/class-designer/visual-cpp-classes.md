@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7af49e94045e519e32aacd12ec33a4a31a4c905
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590735"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808129"
 ---
 # <a name="c-classes-in-class-designer"></a>Classi C++ in Progettazione classi
 
@@ -54,7 +54,7 @@ Facendo clic con il pulsante destro del mouse su una forma classe e scegliendo *
 > [!NOTE]
 > Il comando **Mostra classi derivate** non è supportato per il codice C++. Per visualizzare le classi derivate, scegliere **Visualizzazione classi**, espandere il nodo dei tipi, espandere la sottocartella **Tipi derivati** e trascinare tali tipi sul diagramma classi.
 
-Per altre informazioni sulle ereditarietà da classi multiple, vedere [Ereditarietà multipla](https://msdn.microsoft.com/library/6td5yws2.aspx) e [Più classi base](/cpp/cpp/multiple-base-classes).
+Per altre informazioni sulle ereditarietà da classi multiple, vedere [Ereditarietà multipla](/previous-versions/6td5yws2(v=vs.140)) e [Più classi base](/cpp/cpp/multiple-base-classes).
 
 ## <a name="abstract-classes"></a>Classi astratte
 
@@ -177,6 +177,6 @@ La tabella seguente illustra alcuni esempi di tipica connessione di classe speci
 - [Uso del codice C++](working-with-visual-cpp-code.md)
 - [Classi e struct](/cpp/cpp/classes-and-structs-cpp)
 - [Tipi di classe anonimi](/cpp/cpp/anonymous-class-types)
-- [Ereditarietà multipla](https://msdn.microsoft.com/library/6td5yws2.aspx)
+- [Ereditarietà multipla](/previous-versions/6td5yws2(v=vs.140))
 - [Più classi base](/cpp/cpp/multiple-base-classes)
 - [Modelli](/cpp/cpp/templates-cpp)

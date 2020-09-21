@@ -10,12 +10,12 @@ f1_keywords:
 manager: jillfra
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 0ab7f2d9fac02cf370e7b3803adc7fd3016d22ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c62a10e87b3a866956e4818a3b279eb0d4b833e
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800450"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808233"
 ---
 # <a name="f1-help"></a>Guida sensibile al contesto
 
@@ -25,7 +25,7 @@ Non è stato possibile trovare gli argomenti cercati. Per contribuire al miglior
 
 Se si sta cercando la Guida sensibile al contesto in una finestra, una parola chiave o un nome API:
 
-- Cerca in [docs.Microsoft.com](https://docs.microsoft.com)
+- Cerca in [docs.Microsoft.com](/)
 - Provare a eseguire la ricerca usando un motore di ricerca.
 
 ## <a name="find-help-on-a-keyword-or-api"></a>Trovare la guida su una parola chiave o un'API

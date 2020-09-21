@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4adbd08d13d26c717beeb454bd323185bb88640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb495b30950105d1ff19a1f4fb13da1ee624b228
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416562"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809349"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Distribuire una soluzione Office tramite ClickOnce
   L'uso di ClickOnce consente di distribuire una soluzione Office in un minor numero di passaggi. Eventuali aggiornamenti alla soluzione pubblicati vengono rilevati e installati automaticamente. Tuttavia, ClickOnce richiede che la soluzione venga installata separatamente per ciascun utente di un computer. Pertanto, è consigliabile utilizzare Windows Installer (*MSI*) se più utenti eseguiranno la soluzione nello stesso computer.
@@ -358,7 +358,7 @@ ms.locfileid: "79416562"
 |Codice di errore|Definizione|
 |----------------|----------------|
 |0|La soluzione è stata installata o disinstallata correttamente oppure è stata visualizzata la Guida di VSTOInstaller.|
-|-100|Una o più opzioni della riga di comando non sono valide o sono state impostate più di una volta. Per ulteriori informazioni, immettere "VSTOInstaller/?". in alternativa, vedere [creare un programma di installazione personalizzato per una soluzione Office ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
+|-100|Una o più opzioni della riga di comando non sono valide o sono state impostate più di una volta. Per ulteriori informazioni, immettere "VSTOInstaller/?". in alternativa, vedere [creare un programma di installazione personalizzato per una soluzione Office ClickOnce](/previous-versions/bb772078(v=vs.110)).|
 |-101|Una o più opzioni della riga di comando non sono valide. Per altre informazioni, immettere "vstoinstaller /?".|
 |-200|L'URI del manifesto di distribuzione non è valido. Per altre informazioni, immettere "vstoinstaller /?".|
 |-201|Non è stato possibile installare la soluzione perché il manifesto di distribuzione non è valido. Vedere [manifesti di distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md).|
@@ -460,7 +460,7 @@ ms.locfileid: "79416562"
 
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
 - [Pubblicare soluzioni Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Procedura: pubblicare una soluzione Office tramite ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Procedura: installare una soluzione Office ClickOnce](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)
-- [Procedura: pubblicare una soluzione Office a livello di documento in un server SharePoint tramite ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)
-- [Creare un programma di installazione personalizzato per una soluzione Office ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)
+- [Procedura: pubblicare una soluzione Office tramite ClickOnce](/previous-versions/bb386095(v=vs.110))
+- [Procedura: installare una soluzione Office ClickOnce](/previous-versions/bb608592(v=vs.110))
+- [Procedura: pubblicare una soluzione Office a livello di documento in un server SharePoint tramite ClickOnce](/previous-versions/bb608595(v=vs.110))
+- [Creare un programma di installazione personalizzato per una soluzione Office ClickOnce](/previous-versions/bb772078(v=vs.110))

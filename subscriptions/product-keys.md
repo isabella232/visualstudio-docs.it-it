@@ -1,18 +1,18 @@
 ---
 title: Uso di codici Product Key | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 03/09/2020
+ms.date: 09/18/2020
 ms.topic: conceptual
 description: Informazioni su come ottenere e gestire i codici Product Key in sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 10b09275dc1ba3d20e47c097888677e733e21ced
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a7a2551b98672332af88210a0347c9ee3faf2cc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183925"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809159"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso di codici Product Key in sottoscrizioni di Visual Studio
 
@@ -52,12 +52,12 @@ Per visualizzare i propri codici Product Key, è necessario essere connessi alla
 Per alcuni prodotti vengono raggruppate più edizioni del prodotto in un singolo download. In questi casi il codice Product Key immesso determina quale edizione del prodotto è installata.
 Alcuni codici vengono specificati automaticamente, ad esempio quelli "statici", che è possibile usare più volte poiché non è richiesta alcuna attivazione. Altri codici devono essere richiesti selezionando il collegamento **Ottieni chiave** relativo al prodotto.
 > [!div class="mx-imgBorder"]
-> ![Ottenere la chiave dalla pagina Download](_img/product-keys/download-get-key.png)
+> ![Ottenere la chiave dalla pagina Download](_img/product-keys/download-get-key.png "Fare clic su Ottieni chiave per richiedere una chiave per il prodotto che si sta scaricando.")
 
 Tutti i codici sono disponibili in forma aggregata nella pagina [Codici "Product Key"](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). In questa pagina sono elencate le chiavi statiche che possono essere usate da tutti gli utenti di un prodotto ed è possibile ottenere chiavi personalizzate per l'utilizzo personale, visualizzare i limiti di attestazione delle chiavi ed esportare tutti i codici Product Key. 
 
 > [!div class="mx-imgBorder"]
-> ![Pagina dei codici Product Key](_img/product-keys/product-keys-page.png)
+> ![Pagina dei codici Product Key](_img/product-keys/product-keys-page.png "La pagina codici Product Key fornisce le informazioni complete sul codice Product Key per la sottoscrizione specifica.")
 
 È disponibile un'ampia gamma di tipi di codici, a seconda del prodotto.
 
@@ -66,7 +66,7 @@ Tutti i codici sono disponibili in forma aggregata nella pagina [Codici "Product
 |    Tipo chiave           |    Descrizione                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Non applicabile                    |    Per installare questo prodotto non è necessario alcun codice.                                                       |
-|    Retail                     |    I codici per attivazione singola consentono più attivazioni e vengono usati nelle versioni acquistabili al dettaglio del prodotto. In molti casi sono consentite 10 o più attivazioni per codice, sebbene spesso siano consentite più attivazioni sullo stesso computer.                                                       |
+|    Vendita al dettaglio                     |    I codici per attivazione singola consentono più attivazioni e vengono usati nelle versioni acquistabili al dettaglio del prodotto. In molti casi sono consentite 10 o più attivazioni per codice, sebbene spesso siano consentite più attivazioni sullo stesso computer.                                                       |
 |    Attivazione multipla        |    Un codice ad attivazione multipla (MAK) consente di attivare più installazioni di un prodotto con lo stesso codice. I codici MAK vengono generalmente usati con le versioni dei prodotti destinate a contratti multilicenza. Viene generalmente offerto un solo codice MAK per sottoscrizione.    |
 |    Codice per attivazione statica    |    I codici per attivazione statica vengono offerti per i prodotti che non richiedono attivazione e possono essere usati per un numero qualsiasi di installazioni.                                                                                                                  |
 |    Codice personalizzato                 |    I codici personalizzati offrono azioni o informazioni speciali per attivare o installare il prodotto.                                                                                                                                                                |

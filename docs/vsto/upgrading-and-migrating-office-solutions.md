@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e421d6e4ee94d9974c0a0583db1fb495c72593e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13cbf08e5767ec548b9fdba9bd0892e0cf50a63d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416536"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808789"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Aggiornare ed eseguire la migrazione di soluzioni Office
   Se si dispone di un progetto di Microsoft Office che è stato creato in una versione precedente di Visual Studio, è necessario aggiornare il progetto per usarlo nella versione corrente di Visual Studio. Per aggiornare un progetto di Microsoft Office, aprirlo in una versione di Visual Studio che include Microsoft Office Developer Tools. Per altre informazioni sulle versioni di Visual Studio che includono gli strumenti di sviluppo Microsoft Office, vedere [configurare un computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
@@ -84,6 +84,6 @@ ms.locfileid: "79416536"
  Se si vuole usare ClickOnce per distribuire il componente aggiuntivo VSTO, è possibile eliminare completamente il progetto di installazione o InstallShield Limited Edition. Per altre informazioni sulla distribuzione di componenti aggiuntivi VSTO tramite ClickOnce, vedere [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: aggiornare le soluzioni Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)
+- [Procedura: aggiornare le soluzioni Office](/previous-versions/4bez6837(v=vs.140))
 - [Eseguire la migrazione di soluzioni Office a .NET Framework 4 o versione successiva](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Aggiornamento progetto, finestra di dialogo Opzioni](../vsto/project-upgrade-options-dialog-box.md)

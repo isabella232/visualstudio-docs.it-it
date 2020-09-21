@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1222e6603ea45e1a4172af84b9062c17a407c28c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e8cd25b8c4c70067641468dd6fa321e9e4fbe39
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986153"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809362"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Creare componenti aggiuntivi VSTO per Office con Visual Studio
   È possibile usare Microsoft Office Developer Tools in Visual Studio per creare applicazioni .NET Framework che estendono Office. Queste applicazioni sono denominate anche *soluzioni Office*.
@@ -73,7 +73,7 @@ ms.locfileid: "72986153"
 
  Fornisce informazioni su come automatizzare Visio e creare componenti aggiuntivi VSTO per Visio.
 
-- [soluzioni Word](word-solutions.md)
+- [Soluzioni Word](word-solutions.md)
 
  Fornisce informazioni su come automatizzare Word e creare soluzioni Word.
 
@@ -116,6 +116,6 @@ ms.locfileid: "72986153"
 
 - [Sezione sviluppo Microsoft Office di MSDN Library](/previous-versions/office/office-12/bb726434(v=office.12)) Area di MSDN Library in cui è possibile trovare articoli e documentazione di riferimento sullo sviluppo di soluzioni per diverse versioni di Office (non specifiche per lo sviluppo di Office con Visual Studio).
 
-- [Sviluppo di applicazioni in Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) Contiene collegamenti ad argomenti in cui viene illustrato come utilizzare Visual Studio per progettare, sviluppare, eseguire il debug e distribuire applicazioni Web, servizi Web XML e applicazioni client tradizionali.
+- [Sviluppo di applicazioni in Visual Studio](/previous-versions/h8w79z10(v=vs.140)) Contiene collegamenti ad argomenti in cui viene illustrato come utilizzare Visual Studio per progettare, sviluppare, eseguire il debug e distribuire applicazioni Web, servizi Web XML e applicazioni client tradizionali.
 
 - [Programmazione .NET Framework in Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Viene illustrato lo sviluppo di applicazioni con il .NET Framework in Visual Basic e Visual C#.

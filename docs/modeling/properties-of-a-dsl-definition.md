@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee23e15e6cc389ea5a8bdcdd793648365d08c30d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 650e4db75b3896a04b2dd4ef9056191d4a83d46a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532302"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810093"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Proprietà di una definizione DSL
 Le proprietà di DslDefinition definiscono le proprietà della definizione del *linguaggio specifico di dominio* , ad esempio la numerazione delle versioni. Le proprietà di DslDefinition vengono visualizzate nella finestra **Proprietà** quando si fa clic su un'area aperta del diagramma nel *finestra di progettazione Domain-Specific Language*.
@@ -28,7 +28,7 @@ Le proprietà di DslDefinition definiscono le proprietà della definizione del *
 |Modificatore di accesso|Determina se il modificatore di accesso per la classe di dominio è pubblico o interno.|public|
 |Attributi personalizzati|Attributi definiti personalizzati per la classe di dominio.<br /><br /> **Nota** Usare il pulsante Sfoglia per aggiungere un attributo.|\<none>|
 |Nome dell'azienda|Nome dell'attuale nome della società nel registro di sistema.|Nome società corrente|
-|Nome|Nome di questa classe di dominio.|Nome corrente|
+|nome|Nome di questa classe di dominio.|Nome corrente|
 |Spazio dei nomi|Spazio dei nomi affiliato a questa classe di dominio.|Spazio dei nomi corrente|
 |GUID pacchetto|GUID del pacchetto Visual Studio generato per questo linguaggio DSL.|\<none>|
 |Spazio dei nomi del pacchetto|Spazio dei nomi per il pacchetto Visual Studio generato per questo linguaggio DSL.|\<none>|
@@ -37,11 +37,11 @@ Le proprietà di DslDefinition definiscono le proprietà della definizione del *
 |Descrizione|Descrizione per questa classe di dominio.|\<none>|
 |Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per questa classe di dominio.|\<none>|
 |Parola chiave della Guida|Parola chiave della Guida associata a questa classe di dominio.|\<none>|
-|Compilare|Numero di build incrementale per la definizione del linguaggio specifico di dominio.|0|
+|Compilazione|Numero di build incrementale per la definizione del linguaggio specifico di dominio.|0|
 |Versione principale|Numero di build principale incrementale per la definizione del linguaggio specifico di dominio.|1|
 |Versione secondaria|Numero di build secondario incrementale per la definizione del linguaggio specifico di dominio.|0|
 |Revisione|Numero di build di revisione incrementale per la definizione del linguaggio specifico di dominio.|0|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario di Strumenti Domain-Specific Language](/previous-versions/bb126564(v=vs.100))

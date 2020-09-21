@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 762c2acb6774d7eb4949087fdd91e85c86acd6bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fd1ab781fd838c8e5379e38fdcb3a6fddd65230
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595423"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810041"
 ---
 # <a name="properties-of-diagrams"></a>Proprietà dei diagrammi
 È possibile impostare proprietà che specificano il modo in cui i diagrammi verranno visualizzati nella finestra di progettazione generata. Ad esempio, è possibile specificare un colore predefinito per il testo nel diagramma.
@@ -35,7 +35,7 @@ ms.locfileid: "75595423"
 |Con costruttore personalizzato|Se `True` , nel codice sorgente verrà fornito un costruttore personalizzato. Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe del codice sorgente generata dal diagramma ( `none` , `abstract` o `sealed` ).|Nessuno|
 |Diagramma di base|Classe base del diagramma.|(nessuna)|
-|Nome|Nome del diagramma.|Nome corrente|
+|nome|Nome del diagramma.|Nome corrente|
 |Spazio dei nomi|Spazio dei nomi affiliato a questo diagramma.|Spazio dei nomi corrente|
 |Classe rappresentata|Classe di dominio radice rappresentata da questo diagramma.|Classe radice corrente, se applicabile|
 |Note|Note informali associate a questo elemento.|\<none>|
@@ -47,4 +47,4 @@ ms.locfileid: "75595423"
 
 ## <a name="see-also"></a>Vedere anche
 
-[Glossario degli strumenti del linguaggio specifico di dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+[Glossario degli strumenti del linguaggio specifico di dominio](/previous-versions/bb126564(v=vs.100))

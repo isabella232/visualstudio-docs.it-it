@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cceeacab44f17eb30184c90f1128b8d2c3528bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ec27b9b4f90b1f3ec75edef6dca01b1ed7b8adf
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115360"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807846"
 ---
 # <a name="properties-of-swimlanes"></a>Proprietà delle corsie
 È possibile aggiungere corsie a un diagramma. Le corsie dividono un diagramma in aree verticali o orizzontali. È possibile definire altre forme da visualizzare all'interno delle corsie. Per ulteriori informazioni, vedere [come definire un Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzazione ed estensione di un Domain-Specific Language](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -37,7 +37,7 @@ ms.locfileid: "76115360"
 |Con costruttore personalizzato|Se `True` , nel codice sorgente verrà fornito un costruttore personalizzato. Per ulteriori informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|Falso|
 |Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generata dalla corsia ( `none` , `abstract` o `sealed` ).|Nessuno|
 |Corsia di base|Classe di base di questa corsia.|(nessuna)|
-|Nome|Nome di questa corsia.|Nome corrente|
+|nome|Nome di questa corsia.|Nome corrente|
 |Spazio dei nomi|Lo spazio dei nomi affiliato a questa corsia.|Spazio dei nomi corrente|
 |Tipo di descrizione comando|Modalità di definizione della descrizione comando ( `fixed` , `variable` o `none` ). Se `fixed` , viene usato il valore della `Fixed Tooltip Text` proprietà; se `variable` , la descrizione comando è definita nel codice personalizzato.|\<none>|
 |Note|Note informali associate a questa corsia.|\<none>|
@@ -52,4 +52,4 @@ ms.locfileid: "76115360"
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario di Strumenti Domain-Specific Language](/previous-versions/bb126564(v=vs.100))

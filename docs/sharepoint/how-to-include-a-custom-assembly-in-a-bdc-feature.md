@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 772cdbaca67cc82fc6b7eb2c5ef5adb6508df34a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79336e241b822e5fa9f84dbb771aa4187ea5eadb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015261"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740071"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Procedura: includere un assembly personalizzato in una funzionalità di integrazione applicativa dei dati
   Il progetto può fare riferimento agli assembly di altri progetti nella stessa soluzione. Tuttavia, è necessario aggiungere questi assembly al file di funzionalità del progetto utilizzando la finestra di dialogo **Assegna assembly a cui si fa riferimento a agli LobSystem** .
@@ -40,7 +40,7 @@ ms.locfileid: "86015261"
 4. Nell'elenco **selezionare un assembly** scegliere l'assembly personalizzato.
 
     > [!NOTE]
-    > Gli assembly vengono visualizzati nella finestra di dialogo **Assegna assembly a cui si fa riferimento a agli LobSystem** solo se è stato aggiunto un riferimento al progetto che contiene l'assembly. Per ulteriori informazioni, vedere [procedura: aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+    > Gli assembly vengono visualizzati nella finestra di dialogo **Assegna assembly a cui si fa riferimento a agli LobSystem** solo se è stato aggiunto un riferimento al progetto che contiene l'assembly. Per ulteriori informazioni, vedere [procedura: aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](/previous-versions/wkze6zky(v=vs.140)).
 
 5. Nel gruppo **proprietà riferimento** aprire l'elenco visualizzato per la proprietà **ambito LobSystem** , scegliere il sistema LOB dei metodi che utilizzano l'assembly personalizzato, quindi scegliere il pulsante **OK** .
 

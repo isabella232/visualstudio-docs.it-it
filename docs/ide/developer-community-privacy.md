@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f5b8e2d65454d75c08d3efc26af2fd93b22153b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6055592896779640e50b4bfaf28d951aa3309433
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284802"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739967"
 ---
 # <a name="developer-community-data-privacy"></a>Privacy dei dati della community degli sviluppatori
 
@@ -68,6 +68,8 @@ Se la **segnalazione del problema** viene avviata da Visual Studio, Microsoft ra
 - Log di Service Hub e log degli errori MEF, se esistenti
 
 - Log Python, se esistenti
+
+- Log dell'editor di Razor LSP, se esistenti
 
 - Windows Forms log, se esistono
 

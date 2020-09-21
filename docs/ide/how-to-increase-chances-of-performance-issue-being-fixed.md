@@ -6,16 +6,16 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 627b597d9c8f4d68fdb90235ebf51339111374f1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2ae6304e206b2cfe47fa587590b740a91c7fec9f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038595"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810861"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Come aumentare le probabilità di correzione di un problema di prestazioni
 
-Lo strumento "[segnala un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)" è ampiamente usato dagli utenti di Visual Studio per segnalare una serie di problemi. Il team di Visual Studio individua tendenze di arresto anomalo e lentezza nei commenti degli utenti e risolve problemi che influiscano su una vasta gamma di utenti. Il ticket di feedback specifico è più praticabile, più probabilmente verrà diagnosticato e risolto rapidamente dal team del prodotto. Questo documento descrive le procedure consigliate durante la segnalazione di problemi di arresto anomalo o lentezza per renderli più interoperabili.
+Lo strumento "[segnala un problema](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019)" è ampiamente usato dagli utenti di Visual Studio per segnalare una serie di problemi. Il team di Visual Studio individua tendenze di arresto anomalo e lentezza nei commenti degli utenti e risolve problemi che influiscano su una vasta gamma di utenti. Il ticket di feedback specifico è più praticabile, più probabilmente verrà diagnosticato e risolto rapidamente dal team del prodotto. Questo documento descrive le procedure consigliate durante la segnalazione di problemi di arresto anomalo o lentezza per renderli più interoperabili.
 
 ## <a name="general-best-practices"></a>Procedure consigliate generali
 
@@ -56,7 +56,7 @@ Gli arresti anomali direttamente riproducibili sono casi con le seguenti caratte
 
 - Può essere riprodotto nel codice di esempio o in un progetto che può essere collegato o fornito come parte del feedback (se i passaggi implicano l'apertura di un progetto o di un documento)
 
-Per questi problemi, attenersi alla procedura descritta in "[come segnalare un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" e assicurarsi di includere:
+Per questi problemi, attenersi alla procedura descritta in "[come segnalare un problema](./how-to-report-a-problem-with-visual-studio.md)" e assicurarsi di includere:
 
 - Passaggi per riprodurre il problema
 
@@ -103,7 +103,7 @@ Quindi, usare "segnala un problema" di Visual Studio. funzionalità. Consente di
 
 2. Se possibile, comprimere il file ( \* zip) per ridurne le dimensioni prima di inviare commenti e suggerimenti
 
-3. Attenersi alla procedura descritta in "[come segnalare un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)" e alleghi il dump dell'heap a un nuovo elemento di feedback.
+3. Attenersi alla procedura descritta in "[come segnalare un problema](./how-to-report-a-problem-with-visual-studio.md)" e alleghi il dump dell'heap a un nuovo elemento di feedback.
 
 > [!NOTE] 
 > **Feedback più prezioso:** Per questo caso, il feedback più prezioso è il dump dell'heap acquisito al momento dell'arresto anomalo.
@@ -118,7 +118,7 @@ Come descritto nella sezione corrispondente sugli arresti anomali, per i problem
 **Non risposta sconosciuta**
 
 Se una mancata risposta si manifesta in modo imprevedibile, all'occorrenza successiva avviare una nuova istanza di Visual Studio e segnalare un problema da tale istanza.
-Nella [schermata "record"](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro)assicurarsi di selezionare la sessione di Visual Studio che non risponde.
+Nella [schermata "record"](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019#record-a-repro)assicurarsi di selezionare la sessione di Visual Studio che non risponde.
 
 Se l'istanza di Visual Studio che non risponde è stata avviata in modalità amministratore, anche la seconda istanza deve essere avviata in modalità amministratore.
 
@@ -145,7 +145,7 @@ Per ottenere risultati ottimali nell'acquisizione delle prestazioni, attenersi a
 
 3. Nella nuova copia di Visual Studio aprire lo strumento **segnala un problema**
 
-4. Seguire i passaggi descritti in [come segnalare un problema](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) fino a raggiungere il passaggio "fornire una traccia e un dump di heap (facoltativo)".
+4. Seguire i passaggi descritti in [come segnalare un problema](./how-to-report-a-problem-with-visual-studio.md) fino a raggiungere il passaggio "fornire una traccia e un dump di heap (facoltativo)".
 
 5. Scegliere di registrare la prima copia di Visual Studio (un problema di prestazioni) e avviare la registrazione.
 
@@ -165,7 +165,7 @@ Per ottenere risultati ottimali nell'acquisizione delle prestazioni, attenersi a
 
 Durante la registrazione di una traccia delle prestazioni, se l'operazione lenta o la CPU elevata che si sta segnalando viene portata a termine, arrestare immediatamente la registrazione. Se viene raccolta una quantità eccessiva di informazioni, le informazioni meno recenti vengono sovrascritte. Se la traccia non viene interrotta a breve (entro pochi secondi) dopo l'operazione interessante, i dati di traccia utili vengono sovrascritti.
 
-Non alleghi direttamente le tracce delle prestazioni agli elementi di feedback esistenti nel sito Web della community degli sviluppatori. La richiesta o la fornitura di informazioni aggiuntive è un flusso di lavoro supportato nello strumento di segnalazione del problema predefinito di Visual Studio. Se è necessaria una traccia delle prestazioni per risolvere un elemento di feedback precedente, lo stato dell'elemento feedback verrà impostato su "need more info", che può essere risposto allo stesso modo in cui viene segnalato un nuovo problema. Per istruzioni dettagliate, vedere la [sezione "need more info"](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info) nel documento di report di un problema.
+Non alleghi direttamente le tracce delle prestazioni agli elementi di feedback esistenti nel sito Web della community degli sviluppatori. La richiesta o la fornitura di informazioni aggiuntive è un flusso di lavoro supportato nello strumento di segnalazione del problema predefinito di Visual Studio. Se è necessaria una traccia delle prestazioni per risolvere un elemento di feedback precedente, lo stato dell'elemento feedback verrà impostato su "need more info", che può essere risposto allo stesso modo in cui viene segnalato un nuovo problema. Per istruzioni dettagliate, vedere la [sezione "need more info"](./how-to-report-a-problem-with-visual-studio.md?view=vs-2017#when-further-information-is-needed-need-more-info) nel documento di report di un problema.
 
 > [!NOTE] 
 > **Feedback più prezioso:** Per quasi tutti i problemi di rallentamento/CPU elevato, il feedback più prezioso è una descrizione di alto livello di ciò che si stava tentando di eseguire, insieme alla traccia delle prestazioni ( \*.etl.zip) che acquisisce il comportamento durante tale periodo di tempo.
@@ -191,7 +191,7 @@ Ciò che rende più praticabile questi tipi di problemi consiste nel fornire log
 2. Scaricare lo strumento di raccolta dei log Microsoft Visual Studio e .NET Framework [qui](https://www.microsoft.com/download/details.aspx?id=12493).
 3. Eseguire lo strumento. Viene restituito un file zip a **% Temp%/vslogs.zip**. Alleghi il file ai tuoi commenti.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Opzioni per commenti e suggerimenti in Visual Studio](../ide/feedback-options.md)
 * [Segnala un problema con Visual Studio per Mac](/visualstudio/mac/report-a-problem)

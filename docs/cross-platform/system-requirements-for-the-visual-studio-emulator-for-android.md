@@ -1,6 +1,6 @@
 ---
-title: Requisiti di sistema per Visual Studio Emulator for Android | Microsoft Docs
-ms.custom: ''
+title: Requisiti di sistema per l'emulatore VS per Android
+ms.custom: SEO-VS-2020
 ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f1462769a4ba9929a000bca998c1fe3708908798
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 327713a59b7c5c8da5c5b92cd16f3a20a76a7458
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77272049"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808259"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisiti di sistema per Visual Studio Emulator per Android
 
@@ -63,7 +63,7 @@ Requisiti di Hyper-V
 - È necessario essere un membro del gruppo di amministratori di Hyper-V locali.
 
 ## <a name="system-requirements"></a>Requisiti di sistema
- Il computer deve soddisfare i seguenti requisiti:
+ Il tuo computer deve soddisfare i requisiti seguenti:
 
 - Supporto di Hyper-V (vedere [Requisiti di Hyper-V](#hyper-v-requirements))
 

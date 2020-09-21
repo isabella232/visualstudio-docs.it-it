@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 287ef3ccfd344786bd98098c5f28d0a2bd6573f6
+ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62896620"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90832320"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Identificatori di formato per C++ nel debugger di Visual Studio
 È possibile modificare il formato in cui un valore viene visualizzato nelle finestre **espressioni di controllo**, **auto**e **variabili locali** utilizzando identificatori di formato.
@@ -78,7 +78,7 @@ Nelle tabelle seguenti vengono descritti gli identificatori di formato che è po
 |bb|intero binario senza segno (senza 0b iniziale)|25|00000000000000000000000000011001|
 |e|notazione scientifica|25000000|2.500000 e + 07|
 |g|abbreviazione della notazione scientifica o del formato a virgola mobile|25000000|2.5 e + 07|
-|c|Carattere singolo|0x0065, c|101 'e'|
+|c|Carattere singolo|0x0065|101 'e'|
 |s|stringa const char * (con virgolette)|\<location> "Hello World"|"hello world"|
 |**SB**|Stringa const char* (senza virgolette)|\<location> "Hello World"|hello world|
 |s8|stringa UTF-8|\<location> "Si tratta di una tazza di caffè UTF-8 â ̃ •"|"Si tratta di una ☕ di Coffee Cup UTF-8"|

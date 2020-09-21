@@ -505,7 +505,7 @@
         - name: Stile del codice
           items:
             - name: Preferenze di stile per il codice
-              href: /visualstudio/ide/code-styles-and-code-cleanup
+              href: ./ide/code-styles-and-code-cleanup.md
             - name: Usare i file EditorConfig per lo stile del codice
               displayName: Configure code style analyzers
               href: ide/create-portable-custom-editor-options.md
@@ -960,7 +960,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Prodotti e servizi Microsoft per l'accessibilità
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Riferimento
+- name: Informazioni di riferimento
   items:
     - name: Scelte rapide da tastiera
       items:

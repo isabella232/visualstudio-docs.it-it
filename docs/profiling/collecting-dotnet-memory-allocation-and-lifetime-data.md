@@ -1,5 +1,6 @@
 ---
-title: Raccolta di dati di durata e allocazione di memoria .NET | Microsoft Docs
+title: Raccolta dati di durata & di allocazione di memoria .NET
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,16 +12,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1c256fcedf3ea1733f620a18528704fe455d1131
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1354fb95b543e73a67d19204871f3b79aec9ece9
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331709"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809427"
 ---
-# <a name="collect-net-memory-allocation-and-lifetime-data"></a>Raccogliere dati di durata e allocazione di memoria .NET
+# <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>Raccolta dei dati di durata e allocazione della memoria .NET Framework
 
-Gli strumenti di profilatura di Visual Studio supportano la raccolta di dati di durata e allocazione di memoria .NET. Ciò consente di rilevare problemi nelle prestazioni dell'applicazione correlate alla memoria.
+Visual Studio Strumenti di profilatura supporta la raccolta dei dati di allocazione della memoria .NET Framework e della durata degli oggetti, che consente di rilevare problemi di prestazioni relativi alla memoria nell'applicazione.
 
 - I dati sull'allocazione di memoria .NET includono le dimensioni e il numero di oggetti di memoria .NET Framework allocati.
 

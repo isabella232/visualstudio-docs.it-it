@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49963df35aa5bebd126aa241fca6cb1712a0b111
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70107842"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808994"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Risorse per la progettazione di applicazioni accessibili
 
@@ -48,9 +48,9 @@ Altre informazioni sulle tecnologie che supportano la progettazione di applicazi
 
 ## <a name="websites"></a>Siti Web
 
-- [Procedura dettagliata: Linee guida di accessibilità per l'uso di controlli immagine, controlli menu e AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) L'articolo offre istruzioni dettagliate per includere i controlli di accessibilità in una pagina Web di esempio. Contiene inoltre alcuni utili suggerimenti per la progettazione dell'accessibilità per il Web.
+- [Procedura dettagliata: Linee guida di accessibilità per l'uso di controlli immagine, controlli menu e AutoPostBack](/previous-versions/3has1x30(v=vs.140)) L'articolo offre istruzioni dettagliate per includere i controlli di accessibilità in una pagina Web di esempio. Contiene inoltre alcuni utili suggerimenti per la progettazione dell'accessibilità per il Web.
 
-- **Creating Accessible Web Pages with DHTML** (Creazione di pagine Web accessibili con DHTML) In questo articolo sono elencati gli elementi HTML 4.0 accessibili oltre a suggerimenti sulla progettazione Web accessibile. Per altre informazioni, vedere [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (Creare pagine Web accessibili con DHTML).
+- **Creating Accessible Web Pages with DHTML** (Creazione di pagine Web accessibili con DHTML) In questo articolo sono elencati gli elementi HTML 4.0 accessibili oltre a suggerimenti sulla progettazione Web accessibile. Per altre informazioni, vedere [Create accessible web pages with DHTML](/previous-versions//ms528445(v=vs.85)) (Creare pagine Web accessibili con DHTML).
 
 ### <a name="third-party-resources"></a>Risorse di terze parti
 

@@ -1,5 +1,6 @@
 ---
-title: "Procedura: specificare una pagina di pubblicazione per un'applicazione ClickOnce | Microsoft Docs"
+title: Specificare una pagina di pubblicazione (app ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acf7178a6b5456d048421533b8497682d69c2ee0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70f9853f6e15cb6d960e02491539f031bc1c44a1
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381964"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808776"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Procedura: Specificare una pagina di pubblicazione per un'applicazione ClickOnce
 Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione, viene generata e pubblicata una pagina Web predefinita (publish.htm) insieme all'applicazione. Questa pagina contiene il nome dell'applicazione, un collegamento per installare l'applicazione e/o tutti i prerequisiti e un collegamento a un argomento della guida che descrive [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . La proprietà **pubblica pagina** per il progetto consente di specificare un nome per la pagina Web per l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione.

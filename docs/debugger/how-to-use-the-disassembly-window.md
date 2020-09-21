@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0570aec5e8571e75cf64418a2c8c7c95cf507d31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23f297aa3fc549714a9b6327232a8a0b69c6138f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348704"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808168"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visualizzare il codice disassembly nel debugger di Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -58,7 +58,7 @@ Per visualizzare le istruzioni del codice del computer nel formato numerico non 
 
 ## <a name="use-the-disassembly-window"></a>Usare la finestra Disassembly
 
-Per abilitare la finestra **Disassembly** , in **strumenti**  >  **Opzioni** (o opzioni **strumenti**  >  **Options**) > **debug**selezionare **Abilita debug a livello di indirizzo**.
+Per abilitare la finestra **Disassembly** , in **strumenti**  >  **Opzioni**  >  **debug**selezionare **Abilita debug a livello di indirizzo**.
 
 Per aprire la finestra **Disassembly** durante il debug, selezionare **Windows**  >  **Disassembly** di Windows o premere **ALT** + **8**.
 
