@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03991f3d5900377ceca5464bf41cfb90fcae650e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440598"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840318"
 ---
 # <a name="how-to-set-permissions"></a>Procedura: Impostare le autorizzazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Questo argomento descrive il modo in cui un amministratore di un computer conced
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>Per creare un account utente con autorizzazioni utente  
   
-1. Fare clic con il pulsante destro del mouse su **Risorse del computer** e quindi fare clic su **Gestione**.  
+1. Fare clic con il pulsante destro del mouse su **computer locale** e quindi scegliere **Gestisci**.  
   
      Verrà aperta la finestra **Gestione computer**.  
   
@@ -50,9 +50,9 @@ Questo argomento descrive il modo in cui un amministratore di un computer conced
   
 3. Fare clic con il pulsante destro del mouse sulla cartella **Utenti** e quindi fare clic su **Nuovo utente**.  
   
-     Verrà visualizzata la finestra di dialogo **Nuovo utente**.  
+     Verrà visualizzata la finestra di dialogo **New User** (Nuovo utente).  
   
-4. Completare i campi di questa finestra di dialogo con le informazioni relative all'account utente che si sta creando. Specificare una password. Facoltativamente, selezionare la casella di controllo che richiede all'utente di cambiare la password al successivo accesso.  
+4. Completare i campi di questa finestra di dialogo con le informazioni relative all'account utente che si sta creando. Consente di specificare una password. Facoltativamente, selezionare la casella di controllo che richiede all'utente di cambiare la password al successivo accesso.  
   
 5. Fare clic su **Crea** e quindi su **Chiudi**.  
   
@@ -70,13 +70,13 @@ Questo argomento descrive il modo in cui un amministratore di un computer conced
   
 2. Fare clic con il pulsante destro del mouse sulla cartella e quindi fare clic su **Proprietà**.  
   
-     Verrà visualizzata la finestra di dialogo **Proprietà \<nome cartella>**.  
+     Verrà visualizzata la finestra di dialogo ** \<folder name> Proprietà** .  
   
-3. Fare clic sulla scheda **Sicurezza** .  
+3. Fare clic sulla scheda **Security** (Sicurezza).  
   
 4. Fare clic sul nome dell'account utente nella casella **Utenti e gruppi**.  
   
-5. Nella casella **Autorizzazioni per \<nome utente>** selezionare la casella di controllo **Controllo completo**.  
+5. Nella casella **autorizzazioni per \<user name> ** Selezionare la casella di controllo **controllo completo**.  
   
 6. Fare clic su **OK**.  
   
@@ -110,7 +110,7 @@ Questo argomento descrive il modo in cui un amministratore di un computer conced
    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
    ```  
   
-    Tramite questo comando all'account \<nome utente> o \<nome gruppo> viene concesso l'accesso agli strumenti di profilatura. L'opzione \<right> determina la funzionalità di profilatura alla quale l'utente può accedere. L'opzione \<right> può corrispondere a uno o più valori tra quelli riportati di seguito:  
+    Questo comando concede all' \<user name> account o l' \<group name> accesso agli strumenti di profilatura. L' \<right> opzione determina la funzionalità di profilatura a cui l'utente può accedere. L' \<right> opzione può essere costituita da uno o più dei valori seguenti:  
   
    - FullAccess: consente l'accesso a tutti i metodi di profilatura, inclusa la raccolta dei dati sulle prestazioni della profilatura dei servizi, tra sessioni e mediante campionamento.  
   
@@ -127,6 +127,6 @@ Questo argomento descrive il modo in cui un amministratore di un computer conced
    Dopo aver effettuato l'accesso, gli utenti specificati saranno in grado di usare gli strumenti di profilatura senza autorizzazioni di amministratore.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)  (Configurazione di sessioni di prestazioni)  
+ [Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profilatura e sicurezza in Windows Vista](../profiling/profiling-and-windows-vista-security.md)

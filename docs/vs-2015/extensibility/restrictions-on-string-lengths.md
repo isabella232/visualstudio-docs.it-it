@@ -1,5 +1,5 @@
 ---
-title: Limitazioni sulle lunghezze di stringa | Microsoft Docs
+title: Restrizioni sulle lunghezze di stringa | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,20 +11,20 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc6ff1e77a9a973e184384d98ef8b880aaa2f005
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432528"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839507"
 ---
 # <a name="restrictions-on-string-lengths"></a>Limitazioni delle lunghezze di stringa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L'API dei plug-in del controllo origine limita la lunghezza delle stringhe usate nelle varie funzioni.  
+L'API del plug-in del controllo del codice sorgente limita le lunghezze delle stringhe utilizzate in diverse funzioni.  
   
 ## <a name="string-length-values"></a>Valori di lunghezza stringa  
   
-|Costante|Value|  
+|Costante|valore|  
 |--------------|-----------|  
 |`SCC_NAME_LEN`|31|  
 |`SCC_AUXLABEL_LEN`|31|  
@@ -32,9 +32,9 @@ L'API dei plug-in del controllo origine limita la lunghezza delle stringhe usate
 |`SCC_PRJPATH_LEN`|300|  
   
 > [!NOTE]
-> La lunghezza non include la terminazione `null`. Altre costanti con suffisso "dimen_sione" anziché "_LEN" include lo spazio per la terminazione `null`.  
+> La lunghezza non include la terminazione `null` . Altre costanti con suffisso "_SIZE" invece di "_LEN" includono spazio per la terminazione `null` .  
   
-|Costante|Value|  
+|Costante|valore|  
 |--------------|-----------|  
 |SCC_NAME_SIZE|32|  
 |SCC_AUXLABEL_SIZE|32|  

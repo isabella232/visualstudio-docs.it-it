@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441662"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839992"
 ---
 # <a name="threads-view-parallel-performance"></a>Visualizzazione Thread (prestazioni in parallelo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,14 +69,14 @@ La visualizzazione Thread è la visualizzazione più dettagliata e ricca di funz
   
   Di seguito è riportata un'immagine della visualizzazione Thread:  
   
-  ![Visualizzazione dei thread](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+  ![Visualizzazione Thread](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
   Visualizzazione Thread  
   
   Inizialmente i thread sono disposti nell'ordine in cui vengono creati, in modo che il thread dell'applicazione principale sia il primo. È possibile usare l'opzione di ordinamento nell'angolo in alto a sinistra della visualizzazione per ordinare i thread in base a un altro criterio (ad esempio, secondo i thread che svolgono la maggior quantità di operazioni di esecuzione).  
   
   È possibile nascondere i thread che non eseguono alcuna attività selezionandone i nomi nella colonna a sinistra e quindi scegliendo il pulsante **Nasconde i thread selezionati** nella barra degli strumenti. È consigliabile nascondere i thread che sono completamente bloccati perché le relative statistiche sono irrilevanti e potrebbero intasare i rapporti.  
   
-  Per identificare altri thread da nascondere, nella legenda attiva scegliere il rapporto **Riepilogo per thread** nella scheda **Rapporto profilo**. Verrà visualizzato il grafico della suddivisione di esecuzione, che mostra lo stato dei thread per l'intervallo di tempo attualmente selezionato. Con alcuni livelli di zoom, alcuni thread potrebbero non essere visualizzati. In questo caso, vengono visualizzati puntini di sospensione a destra.  
+  Per identificare i thread aggiuntivi da nascondere, nella legenda attiva scegliere il rapporto **Riepilogo per thread** nella scheda **report del profilo** . Viene visualizzato il grafico ripartizione esecuzione, che mostra lo stato dei thread per l'intervallo di tempo attualmente selezionato. Con alcuni livelli di zoom, alcuni thread potrebbero non essere visualizzati. In questo caso, vengono visualizzati puntini di sospensione a destra.  
   
   Dopo aver selezionato un intervallo di tempo e alcuni thread in esso contenuti, è possibile avviare l'analisi delle prestazioni.  
   
@@ -94,7 +94,7 @@ La visualizzazione Thread è la visualizzazione più dettagliata e ricca di funz
 ### <a name="thread-execution-details"></a>Dettagli sull'esecuzione dei thread  
  Nel grafico della sequenza temporale di un thread i segmenti verdi mostrano quando era in esecuzione il codice. È possibile ottenere informazioni più dettagliate su un segmento di esecuzione.  
   
- Quando si seleziona un punto in un segmento di esecuzione, il visualizzatore di concorrenza cerca tale punto nel tempo nello stack di chiamate rilevante e quindi visualizza un cursore nero sopra il punto selezionato nel segmento di esecuzione e lo stesso stack di chiamate viene visualizzato nella scheda **Stack corrente**. È possibile selezionare più punti nel segmento di esecuzione.  
+ Quando si seleziona un punto in un segmento di esecuzione, il Visualizzatore di concorrenza cerca tale punto nel tempo nello stack di chiamate pertinente e quindi Visualizza un punto di inserimento nero sopra il punto selezionato nel segmento di esecuzione e visualizza lo stack di chiamate nella scheda **stack corrente** . È possibile selezionare più punti nel segmento di esecuzione.  
   
 > [!NOTE]
 > Il visualizzatore di concorrenza potrebbe non essere in grado di risolvere una selezione in un segmento di esecuzione. In genere, ciò si verifica quando la durata del segmento è inferiore a un millisecondo.  
@@ -123,31 +123,31 @@ La visualizzazione Thread è la visualizzazione più dettagliata e ricca di funz
 #### <a name="execution"></a>Esecuzione  
  Il rapporto di esecuzione riporta la suddivisione del tempo che l'applicazione ha impiegato nell'esecuzione.  
   
- Per trovare la riga di codice in cui è trascorso il tempo di esecuzione, espandere l'albero delle chiamate e quindi scegliere **Visualizza origine** o **Visualizza siti di chiamata** dal menu di scelta rapida per la voce dell'albero delle chiamate. **Visualizzazione origine** consente di individuare la riga di codice eseguita. **Visualizza siti di chiamata** permette di individuare la riga di codice che ha chiamato la riga di codice eseguita. Se esiste un solo sito di chiamata, la riga di codice corrispondente è evidenziata. Se sono presenti più siti di chiamata, è possibile selezionare quello desiderato nella finestra di dialogo visualizzata e quindi scegliere il pulsante **Vai a origine** per evidenziare il codice del sito di chiamata. È spesso molto utile individuare il sito di chiamata con il maggior numero di istanze, i tempi più elevati o entrambi. Per altre informazioni, vedere [Rapporto Profilo di esecuzione](../profiling/execution-profile-report.md).  
+ Per trovare la riga di codice in cui è trascorso il tempo di esecuzione, espandere l'albero delle chiamate e quindi scegliere **Visualizza origine** o **Visualizza siti di chiamata** dal menu di scelta rapida per la voce dell'albero delle chiamate. **Visualizzazione origine** consente di individuare la riga di codice eseguita. **Visualizza siti di chiamata** permette di individuare la riga di codice che ha chiamato la riga di codice eseguita. Se esiste un solo sito di chiamata, la riga di codice corrispondente è evidenziata. Se sono presenti più siti di chiamata, è possibile selezionare quello desiderato nella finestra di dialogo visualizzata e quindi scegliere il pulsante **Vai a origine** per evidenziare il codice del sito di chiamata. È spesso molto utile individuare il sito di chiamata con il maggior numero di istanze, i tempi più elevati o entrambi. Per ulteriori informazioni, vedere [report del profilo di esecuzione](../profiling/execution-profile-report.md).  
   
 #### <a name="synchronization"></a>Sincronizzazione  
- Il rapporto di sincronizzazione mostra le chiamate responsabili dei blocchi di sincronizzazione, insieme ai tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di sincronizzazione](../profiling/synchronization-time.md).  
+ Il rapporto di sincronizzazione mostra le chiamate responsabili dei blocchi di sincronizzazione, insieme ai tempi di blocco aggregati di ogni stack di chiamate. Per ulteriori informazioni, vedere [tempo di sincronizzazione](../profiling/synchronization-time.md).  
   
 #### <a name="io"></a>I/O  
- Il rapporto di I/O mostra le chiamate responsabili dei blocchi di I/O, insieme ai tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di I/O (visualizzazione Thread)](../profiling/i-o-time-threads-view.md).  
+ Il rapporto di I/O mostra le chiamate responsabili dei blocchi di I/O, insieme ai tempi di blocco aggregati di ogni stack di chiamate. Per ulteriori informazioni, vedere [tempo di I/O (visualizzazione thread)](../profiling/i-o-time-threads-view.md).  
   
-#### <a name="sleep"></a>Sleep  
- Il rapporto di sospensione mostra le chiamate responsabili dei blocchi di sospensione, insieme ai tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di sospensione](../profiling/sleep-time.md).  
+#### <a name="sleep"></a>Sospendi  
+ Il rapporto di sospensione mostra le chiamate responsabili dei blocchi di sospensione, insieme ai tempi di blocco aggregati di ogni stack di chiamate. Per ulteriori informazioni, vedere [tempo di sospensione](../profiling/sleep-time.md).  
   
 #### <a name="memory-management"></a>Gestione della memoria  
- Il rapporto di gestione della memoria mostra le chiamate in cui si sono verificati blocchi di gestione della memoria, insieme ai tempi di blocco aggregati di ogni stack di chiamate. È possibile usare queste informazioni per identificare le aree che presentano problemi notevoli di paging o di Garbage Collection.  Per altre informazioni, vedere [Tempo di gestione della memoria](../profiling/memory-management-time.md).  
+ Il rapporto di gestione della memoria mostra le chiamate in cui si sono verificati blocchi di gestione della memoria, insieme ai tempi di blocco aggregati di ogni stack di chiamate. È possibile usare queste informazioni per identificare le aree che presentano problemi notevoli di paging o di Garbage Collection.  Per ulteriori informazioni, vedere [tempo di gestione della memoria](../profiling/memory-management-time.md).  
   
 #### <a name="preemption"></a>Precedenza  
- Il rapporto di precedenza mostra le istanze in cui i processi nel sistema hanno avuto la precedenza sul processo corrente e i singoli thread che hanno sostituito i thread nel processo corrente. È possibile usare queste informazioni per identificare i processi e i thread maggiormente responsabili della precedenza. Per altre informazioni, vedere [Tempo di precedenza](../profiling/preemption-time.md).  
+ Il rapporto di precedenza mostra le istanze in cui i processi nel sistema hanno avuto la precedenza sul processo corrente e i singoli thread che hanno sostituito i thread nel processo corrente. È possibile usare queste informazioni per identificare i processi e i thread maggiormente responsabili della precedenza. Per ulteriori informazioni, vedere [tempo di precedenza](../profiling/preemption-time.md).  
   
 #### <a name="ui-processing"></a>Elaborazione interfaccia utente  
- Il rapporto di elaborazione interfaccia utente mostra le chiamate responsabili dei blocchi di elaborazione dell'interfaccia utente, insieme ai tempi di blocco aggregati di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md).  
+ Il rapporto di elaborazione interfaccia utente mostra le chiamate responsabili dei blocchi di elaborazione dell'interfaccia utente, insieme ai tempi di blocco aggregati di ogni stack di chiamate. Per ulteriori informazioni, vedere [tempo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md).  
   
 #### <a name="per-thread-summary"></a>Riepilogo per thread  
- Questa scheda mostra una visualizzazione a colonne di colori diversi del tempo totale trascorso da ciascun thread nell'esecuzione, nel blocco, nell'I/O e in altri stati. Le colonne sono etichettate nella parte inferiore. Quando si modifica il livello di zoom nel grafico della sequenza temporale, questa scheda viene aggiornata automaticamente. Con alcuni livelli di zoom, alcuni thread potrebbero non essere visualizzati. In questo caso, vengono visualizzati puntini di sospensione a destra. Se il thread desiderato non è presente, è possibile nascondere gli altri thread. Per altre informazioni, vedere [Rapporto di riepilogo per thread](../profiling/per-thread-summary-report.md).  
+ Questa scheda mostra una visualizzazione a colonne di colori diversi del tempo totale trascorso da ciascun thread nell'esecuzione, nel blocco, nell'I/O e in altri stati. Le colonne sono etichettate nella parte inferiore. Quando si modifica il livello di zoom nel grafico della sequenza temporale, questa scheda viene aggiornata automaticamente. Con alcuni livelli di zoom, alcuni thread potrebbero non essere visualizzati. In questo caso, vengono visualizzati puntini di sospensione a destra. Se il thread desiderato non è presente, è possibile nascondere gli altri thread. Per ulteriori informazioni, vedere [report di riepilogo per thread](../profiling/per-thread-summary-report.md).  
   
 #### <a name="disk-operations"></a>Operazioni su disco  
- Questa scheda mostra i processi e i thread coinvolti in operazioni di I/O su disco per conto del processo corrente, i file interessati (ad esempio, le DLL che sono state caricate), il numero di byte letti e altre informazioni. È possibile usare questo rapporto per valutare il tempo impiegato nell'accesso ai file durante l'esecuzione, specialmente se il processo sembra presentare vincoli di I/O. Per altre informazioni, vedere [Rapporto delle operazioni su disco](../profiling/disk-operations-report-threads-view.md).  
+ Questa scheda mostra i processi e i thread coinvolti in operazioni di I/O su disco per conto del processo corrente, i file interessati (ad esempio, le DLL che sono state caricate), il numero di byte letti e altre informazioni. È possibile usare questo rapporto per valutare il tempo impiegato nell'accesso ai file durante l'esecuzione, specialmente se il processo sembra presentare vincoli di I/O. Per ulteriori informazioni, vedere [report sulle operazioni su disco](../profiling/disk-operations-report-threads-view.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)

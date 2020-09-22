@@ -11,32 +11,32 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 457e2daf3e52c23ba9733d09d3aeb94750b5fab9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446250"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90840152"
 ---
 # <a name="sending-the-required-events"></a>Invio degli eventi richiesti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Utilizzare questa procedura per l'invio degli eventi necessari.  
+Usare questa procedura per inviare gli eventi richiesti.  
   
 ## <a name="process-for-sending-required-events"></a>Processo per l'invio di eventi richiesti  
- Gli eventi seguenti sono necessari, in quest'ordine, la creazione di un debug del motore (DE) e collegarlo a un programma:  
+ Gli eventi seguenti sono obbligatori, in questo ordine, quando si crea un motore di debug (DE) e lo si collega a un programma:  
   
-1. Invio di un [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) oggetto dell'evento al gestore di sessione di debug (SDM) quando viene inizializzata la Germania per il debug di uno o più programmi in un processo.  
+1. Inviare un oggetto evento [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) al gestore di debug della sessione (SDM) quando il de viene inizializzato per il debug di uno o più programmi in un processo.  
   
-2. Quando il programma da sottoporre a debug è collegato a, inviare un' [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) oggetto dell'evento per il modello SDM. Questo evento può essere un evento di arresto, a seconda della progettazione di motore.  
+2. Quando il programma di cui eseguire il debug è associato a, inviare un oggetto evento [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) al SDM. Questo evento può essere un evento di arresto, a seconda della progettazione del motore.  
   
-3. Se il programma viene collegato quando viene avviato il processo, inviare un' [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) oggetto dell'evento per il modello SDM per notificare l'IDE del nuovo thread. Questo evento può essere un evento di arresto, a seconda della progettazione di motore.  
+3. Se il programma è associato a quando viene avviato il processo, inviare un oggetto evento [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) a SDM per notificare l'IDE del nuovo thread. Questo evento può essere un evento di arresto, a seconda della progettazione del motore.  
   
-4. Invio di un [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) oggetto dell'evento per il modello SDM quando il programma sottoposto a debug è terminato il caricamento o quando viene completata la connessione al programma. Questo evento deve essere un evento di arresto.  
+4. Invia un oggetto evento [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) a SDM quando il programma di cui è in corso il debug viene completato il caricamento o quando il programma viene collegato al programma. Questo evento deve essere un evento di arresto.  
   
-5. Se viene avviata l'applicazione da sottoporre a debug, inviare un' [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) oggetto dell'evento per il modello SDM quando la prima istruzione del codice nell'architettura di runtime deve essere eseguito. Si tratta sempre un evento di arresto. Quando si esegue l'istruzione nella sessione di debug, l'IDE si interrompe in questo evento.  
+5. Se l'applicazione di cui eseguire il debug viene avviata, inviare un oggetto evento [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) a SDM quando sta per essere eseguita la prima istruzione di codice nell'architettura di run-time. Questo evento è sempre un evento di arresto. Quando si esegue un'istruzione nella sessione di debug, l'IDE si interrompe in questo evento.  
   
 > [!NOTE]
-> Molti linguaggi di usano gli inizializzatori globali o funzioni precompilate esterne (della libreria CRT o Main) all'inizio del codice. Se la lingua del programma di debug contiene uno di questi tipi di elementi che precedono il punto di ingresso iniziale, quindi questo codice viene eseguito e viene inviato l'evento punto di ingresso quando utenti del punto di ingresso, ad esempio **principale** o `WinMain`, è stata raggiunta.  
+> Molti linguaggi usano inizializzatori globali o funzioni esterne e precompilate (dalla libreria CRT o _Main) all'inizio del codice. Se la lingua del programma di cui si esegue il debug contiene uno di questi tipi di elementi prima del punto di ingresso iniziale, il codice viene eseguito e l'evento del punto di ingresso viene inviato quando viene raggiunto il punto di ingresso dell'utente, ad esempio **Main** o `WinMain` .  
   
 ## <a name="see-also"></a>Vedere anche  
  [Abilitazione di un programma da sottoporre a debug](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

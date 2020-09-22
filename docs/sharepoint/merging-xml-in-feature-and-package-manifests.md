@@ -1,5 +1,5 @@
 ---
-title: Unione di codice XML delle funzionalità e pacchetto manifesti | Microsoft Docs
+title: Unione di codice XML in manifesti di funzionalità e pacchetti | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,71 +13,71 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429278"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839724"
 ---
-# <a name="merge-xml-in-feature-and-package-manifests"></a>Unire i dati XML nei manifesti di funzionalità e pacchetto
-  Le funzionalità e i pacchetti sono definiti da [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] file manifesto. Questi manifesti di pacchetto sono una combinazione dei dati generati da finestre di progettazione e custom [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] immesso nel modello di manifesto da parte degli utenti. In fase di creazione dei pacchetti [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] unisce l'oggetto personalizzato [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] istruzioni con la finestra di progettazione fornito dal [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] in modo da formare il pacchetto [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] file manifesto. Gli elementi simili, con le eccezioni riportate più avanti in eccezioni di tipo Merge, vengono uniti per evitare [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] gli errori di convalida dopo aver distribuito i file in SharePoint e per rendere il manifesto i file più piccoli e più efficiente.
+# <a name="merge-xml-in-feature-and-package-manifests"></a>Unisci XML in manifesti di funzionalità e pacchetto
+  Le funzionalità e i pacchetti sono definiti da [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] file manifesto. Questi manifesti in pacchetto sono una combinazione di dati generati dalle finestre di progettazione e personalizzati [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] immessi nel modello di manifesto dagli utenti. Al momento della creazione del [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacchetto, unisce le [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] istruzioni personalizzate con la finestra di progettazione fornita [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] per formare il [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] file manifesto del pacchetto. Gli elementi simili, con le eccezioni annotate più avanti in eccezioni di merge, vengono uniti per evitare [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] errori di convalida dopo la distribuzione dei file in SharePoint e per rendere i file manifesto più piccoli ed efficienti.
 
 ## <a name="modify-the-manifests"></a>Modificare i manifesti
- Fino a quando non si disabilita le finestre di progettazione di funzionalità o un pacchetto, è possibile modificare direttamente i file manifesto nel pacchetto. Tuttavia, è possibile aggiungere manualmente custom [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementi al modello di manifesto tramite le finestre di progettazione di funzionalità e pacchetto o [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editor. Per altre informazioni, vedere [Procedura: Personalizzare una funzionalità di SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) e [come: Personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
+ Non è possibile modificare direttamente i file manifesto del pacchetto fino a quando non si disabilita la funzionalità o i progettisti di pacchetti. Tuttavia, è possibile aggiungere manualmente [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementi personalizzati al modello di manifesto tramite le finestre di progettazione di funzionalità e di pacchetti o l' [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Editor. Per ulteriori informazioni, vedere [procedura: personalizzare una funzionalità di SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md) e [procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-## <a name="feature-and-package-manifest-merge-process"></a>Funzionalità e pacchetti del manifesto del processo di merge
- Quando si combinano gli elementi personalizzati insieme a elements fornita da progettazione, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] procede come segue. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] verifica se ogni elemento ha un valore di chiave univoco. Se un elemento non dispone di valori di chiave univoci, viene aggiunto al file manifesto inserito nel pacchetto. Analogamente, gli elementi che dispongono di più chiavi non possono essere sottoposti a merge. Di conseguenza, questi vengono aggiunti al file manifesto.
+## <a name="feature-and-package-manifest-merge-process"></a>Processo di merge del manifesto della funzionalità e del pacchetto
+ Quando si combinano elementi personalizzati insieme agli elementi forniti dalla finestra di progettazione, in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] viene utilizzato il processo seguente. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Verifica se ogni elemento ha un valore di chiave univoco. Se un elemento non dispone di valori di chiave univoci, viene aggiunto al file manifesto inserito nel pacchetto. Analogamente, gli elementi che dispongono di più chiavi non possono essere sottoposti a merge. Vengono pertanto aggiunti al file manifesto.
 
- Se un elemento contiene una chiave univoca, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] confronta i valori della finestra di progettazione e i codici personalizzati. Se i valori corrispondono, queste vengono unite in un singolo valore. Se i valori sono diversi, il valore della chiave della finestra di progettazione viene eliminato e viene usato il valore della chiave personalizzato. Le raccolte vengono unite anche. Ad esempio, se la finestra di progettazione generati [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] e l'oggetto personalizzato [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] entrambi contengono una raccolta di assembly, il manifesto nel pacchetto contiene solo una raccolta di assembly.
+ Se un elemento ha una chiave univoca, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Confronta i valori della finestra di progettazione e delle chiavi personalizzate. Se i valori corrispondono, vengono uniti in un singolo valore. Se i valori sono diversi, il valore della chiave della finestra di progettazione viene ignorato e viene utilizzato il valore della chiave personalizzata. Anche le raccolte sono unite. Se, ad esempio, l'oggetto generato dalla finestra di progettazione [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] e l'oggetto personalizzato [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] contengono entrambi una raccolta di assembly, il manifesto del pacchetto contiene solo una raccolta di assembly.
 
-## <a name="merge-exceptions"></a>Le eccezioni di tipo merge
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Unisce la maggior parte delle finestra di progettazione [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementi insieme personalizzato simile [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementi fino a quando dispongono di un singolo attributo di identificazione univoco. Tuttavia, alcuni elementi non includono l'identificatore univoco richiesto per [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] unione. Questi elementi sono dette *eccezioni di tipo merge*. In questi casi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] non supporta l'unione personalizzata [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementi insieme a progettazione fornito dal [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] elementi, ma li aggiunge al file manifesto nel pacchetto.
+## <a name="merge-exceptions"></a>Eccezioni di merge
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] unisce la maggior parte [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] degli elementi della finestra di progettazione con elementi personalizzati simili, purché [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] dispongano di un unico attributo di identificazione univoco. Tuttavia, alcuni elementi non dispongono dell'identificatore univoco necessario per l' [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] Unione. Questi elementi sono noti come *eccezioni di Unione*. In questi casi, non [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] unisce gli elementi personalizzati [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] insieme agli elementi forniti dalla finestra [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] di progettazione, ma li aggiunge al file manifesto del pacchetto.
 
- Seguito è riportato un elenco delle eccezioni di tipo merge per funzionalità e pacchetto [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] file manifesto.
+ Di seguito è riportato un elenco di eccezioni di merge per i file manifesto delle funzionalità e dei pacchetti [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] .
 
 |Designer|Elemento XML|
 |--------------|-----------------|
-|Finestra di progettazione di funzionalità|ActivationDependency|
-|Finestra di progettazione di funzionalità|UpgradeAction|
-|Finestra di progettazione pacchetti|SafeControl|
-|Finestra di progettazione pacchetti|CodeAccessSecurity|
+|Progettazione funzionalità|ActivationDependency|
+|Progettazione funzionalità|UpgradeAction|
+|Progettazione pacchetti|SafeControl|
+|Progettazione pacchetti|CodeAccessSecurity|
 
-## <a name="feature-manifest-elements"></a>Elementi del manifesto funzionalità
- Nella tabella seguente è un elenco di tutti gli elementi del manifesto di funzionalità che possono essere uniti e la relativa chiave univoca che viene usato per la corrispondenza.
+## <a name="feature-manifest-elements"></a>Elementi del manifesto della funzionalità
+ La tabella seguente è un elenco di tutti gli elementi manifesto della funzionalità che possono essere Uniti e della relativa chiave univoca usata per la corrispondenza.
 
-|Nome elemento|Chiave univoca|
+|Nome dell'elemento|Chiave univoca|
 |------------------|----------------|
 |Funzionalità (tutti gli attributi)|*Nome attributo* (ogni nome di attributo dell'elemento Feature è una chiave univoca).|
-|ElementFile|Percorso|
-|ElementManifests/ElementManifest|Percorso|
-|Proprietà/proprietà|Chiave|
+|ElementFile|Location|
+|ElementManifests/ElementManifest|Location|
+|Proprietà/Proprietà|Chiave|
 |CustomUpgradeAction|Nome|
 |CustomUpgradeActionParameter|Nome|
 
 > [!NOTE]
-> Poiché è l'unico modo per modificare l'elemento CustomUpgradeAction personalizzato [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editor, l'effetto di unione non è bassa.
+> Poiché l'unico modo per modificare l'elemento CustomUpgradeAction è nell'editor personalizzato [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] , l'effetto della mancata unione è basso.
 
-## <a name="package-manifest-elements"></a>Elementi del manifesto del pacchetto
- Nella tabella seguente è un elenco di tutti gli elementi del manifesto del pacchetto che possono essere uniti e la relativa chiave univoca che viene usato per la corrispondenza.
+## <a name="package-manifest-elements"></a>Elementi manifesto del pacchetto
+ La tabella seguente è un elenco di tutti gli elementi del manifesto del pacchetto che possono essere Uniti e della relativa chiave univoca usata per la corrispondenza.
 
-|Nome elemento|Chiave univoca|
+|Nome dell'elemento|Chiave univoca|
 |------------------|----------------|
-|Soluzione (tutti gli attributi)|*Nome attributo* (ogni nome di attributo dell'elemento Solution è una chiave univoca).|
-|ApplicationResourceFiles/ApplicationResourceFile|Percorso|
-|Assembly/Assembly|Percorso|
-|ClassResources/ClassResource|Percorso|
-|DwpFiles/DwpFile|Percorso|
-|FeatureManifests/FeatureManifest|Percorso|
-|Risorse o|Percorso|
-|RootFiles/RootFile|Percorso|
-|SiteDefinitionManifests/SiteDefinitionManifest|Percorso|
-|WebTempFile|Percorso|
-|TemplateFiles/TemplateFile|Percorso|
+|Soluzione (tutti gli attributi)|*Nome attributo* (ogni nome di attributo dell'elemento della soluzione è una chiave univoca).|
+|ApplicationResourceFiles/Elemento ApplicationResourceFile|Location|
+|Assembly/assembly|Location|
+|ClassResources/ClassResource|Location|
+|DwpFiles/DwpFile|Location|
+|FeatureManifests/FeatureManifest|Location|
+|Risorse/risorsa|Location|
+|RootFiles/RootFile|Location|
+|SiteDefinitionManifests/SiteDefinitionManifest|Location|
+|WebTempFile|Location|
+|TemplateFiles della/TemplateFile|Location|
 |SolutionDependency|SolutionID|
 
 ## <a name="manually-add-deployed-files"></a>Aggiungere manualmente i file distribuiti
- Alcuni elementi del manifesto, ad esempio ApplicationResourceFile e DwpFiles, specificano un percorso che include un nome di file. Tuttavia, aggiungendo una voce di nome file al modello di manifesto non aggiungere il file sottostante al pacchetto. È necessario aggiungere il file al progetto per includerlo nel pacchetto e impostarne la proprietà del tipo di distribuzione di conseguenza.
+ Alcuni elementi del manifesto, ad esempio Elemento ApplicationResourceFile e DwpFiles, specificano un percorso che include un nome file. Tuttavia, se si aggiunge una voce di nome file al modello di manifesto, il file sottostante non viene aggiunto al pacchetto. È necessario aggiungere il file al progetto per includerlo nel pacchetto e impostare la relativa proprietà del tipo di distribuzione di conseguenza.
 
 ## <a name="see-also"></a>Vedere anche
-- [Il pacchetto e distribuire soluzioni di SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
+- [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

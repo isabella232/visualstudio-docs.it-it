@@ -12,16 +12,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cea0d72488bbd18972b2a2f6d87f21dfb32481d6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439353"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840104"
 ---
 # <a name="msbuild-inline-tasks"></a>Attività inline di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le attività di MSBuild in genere vengono create compilando una classe che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).  
+Le attività MSBuild vengono in genere create tramite la compilazione di una classe che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).  
   
  A partire dalla versione 4 di .NET Framework è possibile creare attività inline nel file di progetto. Non è necessario creare un assembly separato per ospitare l'attività. In questo modo è più semplice tenere traccia del codice sorgente e distribuire l'attività. Il codice sorgente è integrato nello script.  
   
@@ -82,7 +82,7 @@ Le attività di MSBuild in genere vengono create compilando una classe che imple
   
 - Se il valore di `Type` è `Fragment`, il codice definisce il contenuto del metodo `Execute` ma non la firma o l'istruzione `return`.  
   
-  Il codice in genere è visualizzato tra un indicatore `<![CDATA[` e un indicatore `]]>`. Poiché il codice è in una sezione CDATA, non è necessario preoccuparsi di eseguire l'escape di caratteri riservati, ad esempio "\<" o ">".  
+  Il codice in genere è visualizzato tra un indicatore `<![CDATA[` e un indicatore `]]>`. Poiché il codice si trova in una sezione CDATA, non è necessario preoccuparsi di eseguire l'escape dei caratteri riservati, ad esempio " \<" or "> ".  
   
   In alternativa, è possibile usare l'attributo `Source` dell'elemento `Code` per specificare il percorso di un file che contiene il codice per l'attività. Il codice nel file di origine deve essere del tipo specificato dall'attributo `Type`. Se l'attributo `Source` è presente, il valore predefinito di `Type` è `Class`. Se `Source` non è presente, il valore predefinito è `Fragment`.  
   
@@ -161,7 +161,7 @@ Log.LogError("Hello, world!");
   
 - `Tally` è un parametro di output del tipo System.Int32.  
   
-  Se l'elemento `Code` ha come attributo `Type` `Fragment` o `Method`, le proprietà vengono create automaticamente per ogni parametro. In caso contrario, le proprietà devono essere dichiarate in modo esplicito nel codice sorgente dell'attività e devono corrispondere esattamente alle relative definizioni di parametro.  
+  Se l'elemento `Code` ha come attributo `Type``Fragment` o `Method`, le proprietà vengono create automaticamente per ogni parametro. In caso contrario, le proprietà devono essere dichiarate in modo esplicito nel codice sorgente dell'attività e devono corrispondere esattamente alle relative definizioni di parametro.  
   
 ## <a name="example"></a>Esempio  
  L'attività inline seguente sostituisce ogni occorrenza di un token nel file specificato con il valore specificato.  

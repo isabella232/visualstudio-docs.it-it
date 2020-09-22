@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433581"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839267"
 ---
 # <a name="item-definitions"></a>Definizioni degli elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63433581"
   
 - I tipi di elemento possono presentare più definizioni. Quando al tipo vengono aggiunte altre specifiche di metadati, l'ultima ha la precedenza. \(I metadati seguono lo stesso ordine di importazione delle proprietà.\)  
   
-- I metadati possono essere additivi. Ad esempio, i valori CDefines vengono accumulati in modo condizionale, a seconda delle proprietà impostate. Ad esempio `MT;STD_CALL;DEBUG;UNICODE`.  
+- I metadati possono essere additivi. Ad esempio, i valori CDefines vengono accumulati in modo condizionale, a seconda delle proprietà impostate. Ad esempio: `MT;STD_CALL;DEBUG;UNICODE`.  
   
 - I metadati possono essere rimossi.  
   
@@ -80,7 +80,7 @@ ms.locfileid: "63433581"
   
 - Metadati noti in un elemento di un ItemDefinitionGroup  
   
-- Sezione CDATA \<\!\[CDATA\[nessun dato analizzato\]\]\>  
+- Sezione CDATA \<\!\[CDATA\[anything here is not parsed\]\]\>  
   
 > [!NOTE]
 > I metadati degli elementi di un ItemGroup non sono utili in una dichiarazione di metadati di un ItemDefinitionGroup perché gli elementi dell'ItemDefinitionGroup vengono elaborati prima di quelli dell'ItemGroup.  
@@ -240,4 +240,4 @@ ms.locfileid: "63433581"
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Batch MSBuild](../msbuild/msbuild-batching.md)
+ [Batch](../msbuild/msbuild-batching.md)
