@@ -1,5 +1,5 @@
 ---
-title: Come visualizzare documenti script | Microsoft Docs
+title: Visualizza documenti script | Microsoft Docs
 ms.date: 11/05/2019
 ms.topic: how-to
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcd9823e414005a1711ddccf9d972da929090920
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f6d60d11737cde2beebdaeeccae8e547df78853
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348444"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851034"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>Procedura: visualizzare documenti script (JavaScript)
 

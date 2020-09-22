@@ -1,5 +1,5 @@
 ---
-title: Errore-l'utente non è riuscito a eseguire la stored procedure sp_enable_sql_debug | Microsoft Docs
+title: L'utente non è riuscito a eseguire la stored procedure sp_enable_sql_debug | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84326c5c1beb91269a5f097c8c5d7cb8782a7a56
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: c8131c7b16205b308e04b621dd1fcb536ba94c14
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600143"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852426"
 ---
 # <a name="error-user-could-not-execute-stored-procedure-sp_enable_sql_debug"></a>Errore: l'utente non può eseguire la stored procedure sp_enable_sql_debug
 
@@ -29,7 +29,7 @@ Non è possibile eseguire la stored procedure sp_enable_sql_debug sul server. Qu
 
 Per altre informazioni, vedere [How to: Set SQL Server Permissions for debugging](/previous-versions/w1bhybwz(v=vs.100)).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Procedura: impostare le autorizzazioni SQL Server per il debug](/previous-versions/w1bhybwz(v=vs.100))
 - [Impostazione del debug SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst\(v\=vs.100\))

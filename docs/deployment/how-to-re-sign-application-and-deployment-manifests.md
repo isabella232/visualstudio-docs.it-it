@@ -1,5 +1,5 @@
 ---
-title: "Procedura: ripetere la firma dei manifesti dell'applicazione e della distribuzione | Microsoft Docs"
+title: Ripetere la firma dei manifesti dell'applicazione e della distribuzione | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c8c76a789ac4a50e1128dc0897b9a08a185117a
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 2a221eea7314ad79020437208bdba4fcb6b6972e
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641603"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851684"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Procedura: Firmare nuovamente manifesti di applicazione e distribuzione
 Dopo aver apportato le modifiche alle proprietà di distribuzione nel manifesto dell'applicazione per Windows Forms applicazioni, applicazioni Windows Presentation Foundation (XBAP) o soluzioni Office, è necessario firmare di nuovo entrambi i manifesti dell'applicazione e della distribuzione con un certificato. Questo processo aiuta ad assicurare che nei computer degli utenti finali non siano installati file alterati.
@@ -112,11 +112,11 @@ Dopo aver apportato le modifiche alle proprietà di distribuzione nel manifesto 
 
 7. Facoltativamente, copiare il manifesto della distribuzione master (*Publish \\ \<appname> . Application*) nella directory di distribuzione della versione (*file publish\Application \\ \<appname> _ \<version> *).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md)
-- [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)
+- [Panoramica della distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)
 - [Procedura: Abilitare le impostazioni di sicurezza ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
 - [Procedura: Impostare un'area di sicurezza per un'applicazione ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [Procedura: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)

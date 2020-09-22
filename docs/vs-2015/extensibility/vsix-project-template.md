@@ -12,76 +12,76 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2386f1be805f6347fc32fba4ee8bfe57c8602329
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436895"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840079"
 ---
 # <a name="vsix-project-template"></a>Modello di progetto VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile usare il modello di progetto VSIX per eseguire il wrapping di uno o più estensioni di Visual Studio in un progetto VSIX e quindi pubblicare il pacchetto nel [Visual Studio Marketplace](https://marketplace.visualstudio.com/) sito Web.  
+È possibile usare il modello di progetto VSIX per eseguire il wrapping di una o più estensioni di Visual Studio in un progetto VSIX e quindi pubblicare il pacchetto nel sito Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) .  
   
- Distribuzione VSIX supporta i pacchetti VSPackage, assembly, MEF componenti, i modelli di progetto, i modelli di elemento, i controlli della casella degli strumenti e tipi di estensione personalizzati.  
+ La distribuzione VSIX supporta VSPackage, assembly, componenti MEF, modelli di progetto, modelli di elemento, controlli della casella degli strumenti e tipi di estensione personalizzati.  
   
 > [!NOTE]
-> Per usare progetti VSIX, è necessario installare Visual Studio SDK. Per altre informazioni su Visual Studio SDK, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+> Per usare i progetti VSIX, è necessario installare Visual Studio SDK. Per ulteriori informazioni su Visual Studio SDK, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>Dove trovare il modello di progetto VSIX  
- Il modello di progetto VSIX è disponibile nel **nuovo progetto** nella finestra di dialogo. Espandere la **Visual Basic** nodo o il **Visual c#** nodo e quindi scegliere **estendibilità**.  
+ Il modello di progetto VSIX è disponibile nella finestra di dialogo **nuovo progetto** . Espandere il nodo **Visual Basic** o il nodo **Visual C#** , quindi scegliere **Extensibility**.  
   
 > [!TIP]
-> È necessario assicurarsi che .NET Framework 4.5 o versione successiva è specificato nell'elenco a discesa nella parte superiore del **nuovo progetto** nella finestra di dialogo.  
+> Verificare che nell'elenco a discesa nella parte superiore della finestra di dialogo **nuovo progetto** sia specificato .NET Framework 4,5 o versione successiva.  
   
-## <a name="uses-of-the-vsix-project-template"></a>Utilizzi del modello di progetto VSIX  
- Il modello di progetto VSIX ha due utilizzi principali:  
+## <a name="uses-of-the-vsix-project-template"></a>Usi del modello di progetto VSIX  
+ Il modello di progetto VSIX ha due usi principali:  
   
-- Per distribuire i modelli di progetto, modelli di elementi e altre estensioni che non dispongono ancora il supporto VSIX.  
+- Per distribuire modelli di progetto, modelli di elemento e altre estensioni che non hanno ancora il supporto VSIX.  
   
-- Per eseguire il wrapping gli output di più estensioni nel pacchetto una distribuzione.  
+- Per eseguire il wrapping degli output di più estensioni in un unico pacchetto di distribuzione.  
   
-  Non è necessario usare il modello di progetto VSIX per distribuire i pacchetti VSPackage o altri tipi di estensioni che hanno già VSIX supporto.  
+  Non è necessario usare il modello di progetto VSIX per distribuire pacchetti VSPackage o altri tipi di estensioni che hanno già il supporto VSIX.  
   
-## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Creazione del pacchetto di un'estensione in un progetto VSIX vuota  
- È possibile creare un pacchetto, un'estensione esistente o un'estensione che non dispone già di VSIX supportare, inserendoli in un progetto VSIX vuoto. L'estensione da sottoporre a wrapping deve essere di un tipo supportato dal [schema VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  
+## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Creazione del pacchetto di un'estensione in un progetto VSIX vuoto  
+ È possibile creare un pacchetto di un'estensione esistente o di un'estensione che non ha ancora il supporto VSIX, eseguendone il wrapping in un progetto VSIX vuoto. L'estensione da incapsulare deve essere di un tipo supportato dallo [schema VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  
   
 #### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Per creare un pacchetto di un'estensione usando un progetto VSIX  
   
-1. Compilare i progetti che costituiscono l'estensione.  
+1. Compilare i progetti che compongono l'estensione.  
   
-2. Creare un progetto VSIX usando il **progetto VSIX** modello.  
+2. Creare un progetto VSIX usando il modello di **progetto VSIX** .  
   
-     Consente di aprire vsixmanifest nel **progettazione manifesto**.  
+     Source. Extension. vsixmanifest viene aperto in **Progettazione manifesto**.  
   
-3. Nel **asset** scheda, scegliere il **New** pulsante.  
+3. Nella scheda **Asset** scegliere il pulsante **nuovo** .  
   
-     Il **Aggiungi nuovo Asset** verrà visualizzata la finestra di dialogo.  
+     Verrà visualizzata la finestra di dialogo **Aggiungi nuovo asset** .  
   
-4. Nel **tipo** elenco, scegliere il tipo di estensione da aggiungere.  
+4. Nell'elenco **tipo** scegliere il tipo di estensione da aggiungere.  
   
-5. Per aggiungere un elemento di estensione o contenuto che è incluso nella soluzione corrente (ad esempio, un modello di elemento o un assembly compilato), seguire i passaggi seguenti:  
+5. Per aggiungere un'estensione o un elemento di contenuto incluso nella soluzione corrente (ad esempio, un modello di elemento o un assembly compilato), seguire questa procedura:  
   
-    1. Nel **origine** casella di riepilogo **un progetto nella soluzione corrente**.  
+    1. Nell'elenco **origine** scegliere **un progetto nella soluzione corrente**.  
   
-    2. Nel **progetto** scegliere il nome dell'estensione.  
+    2. Nell'elenco **progetto** scegliere il nome dell'estensione.  
   
-    3. Nel **incorpora in questa cartella** immettere il nome di una cartella in cui si desidera incorporare l'asset e quindi scegliere il **OK** pulsante.  
+    3. Nella casella **incorpora in questa cartella** immettere il nome di una cartella in cui incorporare l'asset, quindi scegliere il pulsante **OK** .  
   
-6. Per aggiungere un elemento di contenuto che non è incluso nella soluzione corrente o un'estensione, seguire i passaggi seguenti:  
+6. Per aggiungere un'estensione o un elemento di contenuto che non è incluso nella soluzione corrente, seguire questa procedura:  
   
-    1. Nel **origine** elenco a discesa, scegliere **File in filesystem**.  
+    1. Nella casella di riepilogo **origine** scegliere **file su file System**.  
   
-    2. Nel **percorso** campo, immettere il percorso completo al file di estensione compilato o compresso o utilizzare il **Sfoglia** pulsante per individuare il file.  
+    2. Nel campo **percorso** immettere il percorso completo del file di estensione compilato o compresso oppure usare il pulsante **Sfoglia** per selezionare il file.  
   
-    3. Nel **incorpora in questa cartella** immettere il nome di una cartella in cui si desidera incorporare l'asset e quindi scegliere il **OK** pulsante.  
+    3. Nella casella **incorpora in questa cartella** immettere il nome di una cartella in cui incorporare l'asset, quindi scegliere il pulsante **OK** .  
   
-7. Se si desidera che il pacchetto a includere le estensioni aggiuntive, aggiungerle allo stesso modo.  
+7. Se si desidera che il pacchetto includa estensioni aggiuntive, aggiungerle nello stesso modo.  
   
 8. Compilare la soluzione.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Compila un file con estensione VSIX che contiene un file manifesto VSIX, un file [Content_Types] XML e tutte le risorse di estensione che è stato aggiunto al progetto.  
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Compila un file con estensione VSIX contenente un file manifesto VSIX, un file [Content_Types]. XML e tutte le risorse di estensione aggiunte al progetto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti su VSIX Extension Schema 2.0](../extensibility/vsix-extension-schema-2-0-reference.md)   
+ [Riferimento allo schema di estensione VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [Ricerca e uso delle estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)

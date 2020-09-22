@@ -18,16 +18,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eae8a32d4587b71f238c023d08a1328ce83ba37d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431384"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839935"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Procedura: fare riferimento al nome o al percorso del file di progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile usare il nome o il percorso del progetto nel file di progetto senza dover creare una proprietà. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fornisce proprietà riservate che fanno riferimento al nome file di progetto e altre proprietà relative al progetto. Per altre informazioni sulle proprietà riservate, vedere [Proprietà riservate e note di MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
+È possibile usare il nome o il percorso del progetto nel file di progetto senza dover creare una proprietà. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fornisce proprietà riservate che fanno riferimento al nome file di progetto e altre proprietà relative al progetto. Per altre informazioni sulle proprietà riservate, vedere [proprietà riservate e note di MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ## <a name="using-the-msbuildprojectname-property"></a>Uso della proprietà MSBuildProjectName  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fornisce alcune proprietà riservate che è possibile usare nei file di progetto senza definirle ogni volta. La proprietà riservata `MSBuildProjectName`, ad esempio, fornisce un riferimento al nome file di progetto.  
@@ -77,4 +77,4 @@ ms.locfileid: "63431384"
   
 ## <a name="see-also"></a>Vedere anche  
 [MSBuild](msbuild.md)  
- [Proprietà riservate e note MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)
+ [Proprietà riservate e note di MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

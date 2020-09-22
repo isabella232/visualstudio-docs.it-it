@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8afc67b92a943dd571847bb1a00fb7e4db4514b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911401"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851099"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Domande frequenti per il debug di snapshot in Visual Studio
 
@@ -124,7 +124,7 @@ Per i set di scalabilità di macchine virtuali/macchine virtuali rimuovere l'est
       ```
 
    - Certificato del server
-      - L'identificazione personale del certificato server corrispondente viene distribuita come chiave privata nell'insieme di credenziali delle credenziali di Azure. VS tenterà di trovare o creare un insieme di credenziali delle credenziali con prefisso MSVSAZ * nell'area corrispondente alla risorsa della macchina virtuale o dei set di scalabilità di macchine virtuali. Tutte le risorse della macchina virtuale o del set di scalabilità di macchine virtuali distribuite in tale area condividono pertanto lo stesso insieme di credenziali delle credenziali.
+      - L'identificazione personale del certificato server corrispondente viene distribuita come chiave privata nell'insieme di credenziali delle credenziali di Azure. Visual Studio tenterà di trovare o creare un insieme di credenziali delle credenziali con prefisso MSVSAZ * nell'area corrispondente alla risorsa della macchina virtuale o dei set di scalabilità di macchine virtuali. Tutte le risorse della macchina virtuale o del set di scalabilità di macchine virtuali distribuite in tale area condividono pertanto lo stesso insieme di credenziali delle credenziali.
       - Per eliminare il segreto di identificazione personale del certificato del server, passare alla portale di Azure e trovare l'insieme di credenziali delle MSVSAZ * nella stessa area in cui è ospitata la risorsa. Elimina il segreto che dovrebbe essere etichettato `remotedebugcert<<ResourceName>>`
       - Sarà anche necessario eliminare il segreto server dalla risorsa tramite PowerShell.
 

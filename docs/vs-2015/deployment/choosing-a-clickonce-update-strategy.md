@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8215b8e0955b79224341d5d43b51a473740f5fe5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442331"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840315"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Scelta di una strategia di aggiornamento ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "63442331"
 > Per gli aggiornamenti dell'applicazione è necessario disporre della connettività di rete. In assenza di una connessione di rete, l'applicazione verrà eseguita senza il controllo della disponibilità di aggiornamenti, indipendentemente dalla strategia di aggiornamento prescelta.  
   
 > [!NOTE]
-> In .NET Framework 2.0 e .NET Framework 3.0, qualunque sia la strategia di aggiornamento adottata, prima dell'avvio, dopo l'avvio o mediante le API di <xref:System.Deployment.Application>, è necessario impostare `deploymentProvider` nel manifesto di distribuzione. L'elemento `deploymentProvider` corrisponde in Visual Studio al campo **Posizione aggiornamento** nella finestra di dialogo **Aggiornamenti** della scheda **Pubblica**. Questa regola è di tipo relaxed in .NET Framework 3.5. Per altre informazioni, vedere [distribuzione di applicazioni ClickOnce per test e i server di produzione senza Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
+> In .NET Framework 2.0 e .NET Framework 3.0, qualunque sia la strategia di aggiornamento adottata, prima dell'avvio, dopo l'avvio o mediante le API di <xref:System.Deployment.Application>, è necessario impostare `deploymentProvider` nel manifesto di distribuzione. L' `deploymentProvider` elemento corrisponde a Visual Studio al campo **percorso aggiornamento** nella finestra di dialogo **aggiornamenti** della scheda **pubblica** . Questa regola è rilassata in .NET Framework 3,5. Per ulteriori informazioni, vedere [distribuzione di applicazioni ClickOnce per i server di test e di produzione senza](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)eseguire la firma.  
   
 ## <a name="checking-for-updates-after-application-startup"></a>Controllo della disponibilità di aggiornamenti dopo l'avvio dell'applicazione  
  Se si utilizza questa strategia, l'applicazione tenterà di individuare e leggere il file manifesto di distribuzione in background, mentre è in esecuzione. Se è disponibile un aggiornamento, la volta successiva che l'utente eseguirà l'applicazione verrà chiesto di scaricarlo e installarlo.  
@@ -117,12 +117,12 @@ ms.locfileid: "63442331"
 ## <a name="permission-elevation-and-updates"></a>Elevazione delle autorizzazioni e aggiornamenti  
  Se in una nuova versione di un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è richiesto un livello di attendibilità più alto rispetto alla versione precedente, verrà chiesto da [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] se si desidera che all'applicazione venga concesso un livello di attendibilità più alto. Se non si accetta di concedere un livello di attendibilità più alto, l'aggiornamento non verrà installato. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] richiederà di installare nuovamente l'applicazione al successivo riavvio. Se non si accetta di concedere un livello di attendibilità più alto in questa fase e l'aggiornamento non è contrassegnato come obbligatorio, verrà eseguita la versione obsoleta dell'applicazione. Se tuttavia l'aggiornamento è obbligatorio, l'applicazione non verrà eseguita finché non si accetterà il livello di attendibilità più alto.  
   
- Se si utilizza la distribuzione di applicazioni attendibili, non verrà visualizzato alcun prompt relativo ai livelli di attendibilità. Per altre informazioni, vedere [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+ Se si utilizza la distribuzione di applicazioni attendibili, non verrà visualizzato alcun prompt relativo ai livelli di attendibilità. Per ulteriori informazioni, vedere [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Deployment.Application>   
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Scelta di una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
- [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Come vengono eseguiti gli aggiornamenti dell'applicazione ClickOnce](../deployment/how-clickonce-performs-application-updates.md)   
- [Procedura: Gestire gli aggiornamenti per un'applicazione ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+ [Protezione delle applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
+ [Come ClickOnce esegue gli aggiornamenti dell'applicazione](../deployment/how-clickonce-performs-application-updates.md)   
+ [Procedura: gestire gli aggiornamenti per un'applicazione ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)

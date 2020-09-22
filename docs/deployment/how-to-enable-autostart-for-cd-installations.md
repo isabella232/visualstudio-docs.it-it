@@ -1,5 +1,5 @@
 ---
-title: "Procedura: abilitare l'avvio automatico per le installazioni di CD | Microsoft Docs"
+title: Abilitare l'avvio automatico per le installazioni di CD | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ff96cdfe412e5016c04daa2b22922b0ec47a3a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28fa4830c3ea5ff840e0d58f6d31f718c28ec3fb
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382445"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850943"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Procedura: Attivare l'avvio automatico per le installazioni da CD
 Quando si distribuisce un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione per mezzo di supporti rimovibili, ad esempio CD-ROM o DVD-ROM, è possibile abilitare in `AutoStart` modo che l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione venga avviata automaticamente al momento dell'inserimento del supporto.

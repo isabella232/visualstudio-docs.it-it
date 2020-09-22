@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: db28ad7fda7224c81bbf5bf4bfa772f6eaaa9800
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64829206"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840132"
 ---
-# <a name="idiasymbolgetaddresstaken"></a>IDiaSymbol::get_addressTaken
+# <a name="idiasymbolget_addresstaken"></a>IDiaSymbol::get_addressTaken
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera un flag che indica se un altro simbolo fa riferimento all'indirizzo di questo simbolo.  
@@ -35,16 +35,16 @@ HRESULT get_addressTaken ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce `TRUE` se un altro simbolo fa riferimento a questo indirizzo; in caso contrario, restituisce `FALSE`.  
+ out Restituisce `TRUE` se un altro simbolo fa riferimento a questo indirizzo. in caso contrario, restituisce `FALSE` .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio riportato di seguito `B` riferimenti `A`. Pertanto, di simboli `A`del `get_addressTaken` restituzione del metodo `TRUE`.  
+ Nell'esempio seguente, `B` fa riferimento a `A` . Pertanto, `A` il metodo del simbolo `get_addressTaken` restituisce `TRUE` .  
   
 ```cpp#  
 int A  = 0;  
@@ -53,9 +53,9 @@ int* B = &A;
   
 ## <a name="requirements"></a>Requisiti  
   
-|Requisito|DESCRIZIONE|  
+|Requisito|Descrizione|  
 |-----------------|-----------------|  
-|Intestazione:|DIA2.h|  
+|Intestazione:|dia2. h|  
 |Version:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  

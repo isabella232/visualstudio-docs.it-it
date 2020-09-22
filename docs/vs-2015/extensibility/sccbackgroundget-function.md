@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 118d8458fd9581a87baea08452d0011d4d66c9a1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432479"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839544"
 ---
 # <a name="sccbackgroundget-function"></a>Funzione SccBackgroundGet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questa funzione recupera dal controllo del codice sorgente ogni dei file specificati senza l'intervento dell'utente.  
+Questa funzione recupera dal controllo del codice sorgente ognuno dei file specificati senza alcuna interazione da parte dell'utente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -38,37 +38,37 @@ SCCRTN SccBackgroundGet(
   
 #### <a name="parameters"></a>Parametri  
  pContext  
- [in] Il puntatore di contesto del plug-in controllo di origine.  
+ in Puntatore al contesto del plug-in del controllo del codice sorgente.  
   
- nFiles  
- [in] Numero di file specificato per il `lpFileNames` matrice.  
+ nFile  
+ in Numero di file specificati nella `lpFileNames` matrice.  
   
  lpFileNames  
  [in, out] Matrice di nomi di file da recuperare.  
   
 > [!NOTE]
-> I nomi devono essere completamente qualificati i nomi di file locale.  
+> I nomi devono essere nomi di file locali completi.  
   
  dwFlags  
- [in] Flag di comando (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).  
+ in Flag di comando ( `SCC_GET_ALL` , `SCC_GET_RECURSIVE` ).  
   
  dwBackgroundOperationID  
- [in] Un valore univoco associato a questa operazione.  
+ in Valore univoco associato a questa operazione.  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:  
   
-|Value|Descrizione|  
+|valore|Descrizione|  
 |-----------|-----------------|  
 |SCC_OK|Operazione completata correttamente.|  
-|SCC_E_BACKGROUNDGETINPROGRESS|Uno per il recupero in background è già in corso (il plug-in del controllo del codice sorgente deve restituire questo solo se non supporta operazioni batch simultanei).|  
-|SCC_I_OPERATIONCANCELED|Operazione annullata prima del relativo completamento.|  
+|SCC_E_BACKGROUNDGETINPROGRESS|È già in corso un recupero in background (il plug-in del controllo del codice sorgente deve restituire questo valore solo se non supporta le operazioni batch simultanee).|  
+|SCC_I_OPERATIONCANCELED|Operazione annullata prima del completamento.|  
   
-## <a name="remarks"></a>Note  
- Questa funzione viene sempre chiamata su un thread diverso da quello che caricata il plug-in del controllo del codice sorgente. Questa funzione non deve restituire fino al termine; Tuttavia, si può chiamato più volte con più elenchi di file, tutti nello stesso momento.  
+## <a name="remarks"></a>Commenti  
+ Questa funzione viene sempre chiamata su un thread diverso da quello che ha caricato il plug-in del controllo del codice sorgente. Non è previsto che la funzione restituisca fino a quando non viene eseguita. Tuttavia, può essere chiamato più volte con più elenchi di file, nello stesso momento.  
   
- L'utilizzo dei `dwFlags` argomento è quello utilizzato per il [SccGet](../extensibility/sccget-function.md).  
+ L'uso dell' `dwFlags` argomento è identico a quello di [SccGet](../extensibility/sccget-function.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
+ [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGet](../extensibility/sccget-function.md)

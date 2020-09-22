@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d2eaf41ac66cd1bdf680145bef43b17cc29a505
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425873"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839636"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Scrittura di logger compatibili con più processori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ public interface INodeLogger: ILogger
   
   È possibile modificare ConfigurableForwardingLogger in base alle proprie esigenze. A tale scopo, chiamare il logger nella riga di comando usando MSBuild.exe e indicare gli eventi di compilazione che il logger dovrà inoltrare al nodo centrale.  
   
-  In alternativa, è possibile creare un logger di inoltro personalizzato. Creando un logger di inoltro personalizzato, è possibile ottimizzare il comportamento del logger. Tuttavia, la creazione di un logger di inoltro personalizzato è più complessa rispetto alla personalizzazione di ConfigurableForwardingLogger. Per altre informazioni, vedere l'articolo relativo alla [creazione dei logger di inoltro](../msbuild/creating-forwarding-loggers.md).  
+  In alternativa, è possibile creare un logger di inoltro personalizzato. Creando un logger di inoltro personalizzato, è possibile ottimizzare il comportamento del logger. Tuttavia, la creazione di un logger di inoltro personalizzato è più complessa rispetto alla personalizzazione di ConfigurableForwardingLogger. Per ulteriori informazioni, vedere [creazione di logger di inoltri](../msbuild/creating-forwarding-loggers.md).  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Uso di ConfigurableForwardingLogger per la registrazione distribuita semplice  
  Per allegare un oggetto ConfigurableForwardingLogger o un logger di inoltro personalizzato, usare l'opzione `/distributedlogger` (`/dl` per brevità) in una compilazione da riga di comando di MSBuild.exe. Il formato da usare per specificare i nomi dei tipi e delle classi del logger è identico a quello usato per l'opzione `/logger`, ad eccezione del fatto che un logger distribuito ha sempre due classi di registrazione anziché una sola, il logger di inoltro e il logger centrale. Di seguito è riportato un esempio di come allegare un logger di inoltro personalizzato denominato XMLForwardingLogger.  
@@ -83,7 +83,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
 > [!NOTE]
 > I due nomi di logger nell'opzione `/dl` devono essere separati da un asterisco (*).  
   
- L'uso di ConfigurableForwardingLogger è simile all'uso di qualsiasi altro logger, come descritto in [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md), ad eccezione del fatto che si allega il logger ConfigurableForwardingLogger anziché il tipico logger [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] e si specificano come parametri gli eventi che ConfigurableForwardingLogger deve passare al nodo centrale.  
+ L'uso di ConfigurableForwardingLogger è simile all'uso di qualsiasi altro logger (come descritto in [recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)), ad eccezione del fatto che il logger ConfigurableForwardingLogger viene collegato al posto del logger tipico [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] e si specifica come parametri gli eventi che si vuole che il ConfigurableForwardingLogger passi al nodo centrale.  
   
  Ad esempio, per ricevere una notifica solo all'inizio e alla fine di una compilazione e quando si verifica un errore, è necessario passare `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` e `ERROREVENT` come parametri. Per passare più parametri, separarli con punti e virgola. L'esempio che segue spiega come usare ConfigurableForwardingLogger per inoltrare solo gli eventi `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` e `ERROREVENT`.  
   
@@ -115,4 +115,4 @@ msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |SHOWCOMMANDLINE|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Creazione di logger di inoltro](../msbuild/creating-forwarding-loggers.md)
+ [Creazione di logger di Inoltring](../msbuild/creating-forwarding-loggers.md)

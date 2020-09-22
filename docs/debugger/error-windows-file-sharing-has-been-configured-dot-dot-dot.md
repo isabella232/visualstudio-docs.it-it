@@ -1,5 +1,5 @@
 ---
-title: Errore-la condivisione file di Windows è stata configurata... | Microsoft Docs
+title: Condivisione file di Windows configurata... | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af92ff07958656d350f30fb6b7f8f2a2ea5898f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17dbb1f3493ead985ac946331fdbff7933b6d604
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460052"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851671"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>Errore: la condivisione di file di Windows è stata configurata...
 La condivisione di file di Windows è stata configurata in modo da connettersi al computer remoto utilizzando un nome utente diverso. Ciò è incompatibile con il debug remoto.

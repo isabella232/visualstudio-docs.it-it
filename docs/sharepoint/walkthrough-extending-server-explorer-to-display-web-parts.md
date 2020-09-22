@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e5221d1cce065a352051ca700cf0fc5ef4ae843
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 915a1762782b2bf7177b87a3a5f4cdc6e08c6405
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015633"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739993"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Procedura dettagliata: estendere Esplora server per visualizzare le web part
   In Visual Studio è possibile usare il nodo **connessioni di SharePoint** di **Esplora server** per visualizzare i componenti nei siti di SharePoint. Tuttavia, per impostazione predefinita, **Esplora server** non visualizza alcuni componenti. In questa procedura dettagliata si estenderà **Esplora server** in modo da visualizzare la raccolta web part in ogni sito di SharePoint connesso.
@@ -275,7 +275,7 @@ ms.locfileid: "86015633"
 
 1. In **Esplora soluzioni**, nel progetto WebPartNode, aprire il file **source. Extension. vsixmanifest** nell'editor manifesto.
 
-     Il file source. Extension. vsixmanifest è la base per il file Extension. vsixmanifest che tutti i pacchetti VSIX richiedono. Per altre informazioni su questo file, vedere [riferimento allo schema di estensione VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Il file source. Extension. vsixmanifest è la base per il file Extension. vsixmanifest che tutti i pacchetti VSIX richiedono. Per altre informazioni su questo file, vedere [riferimento allo schema di estensione VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Nella casella **nome prodotto** , immettere **nodo Raccolta Web part per Esplora server**.
 
@@ -303,7 +303,7 @@ ms.locfileid: "86015633"
 10. Nella casella **tipo** immettere **SharePoint. Commands. v4**.
 
     > [!NOTE]
-    > Questo elemento specifica un'estensione personalizzata che si desidera includere nell'estensione di Visual Studio. Per altre informazioni, vedere [elemento asset (schema VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Questo elemento specifica un'estensione personalizzata che si desidera includere nell'estensione di Visual Studio. Per altre informazioni, vedere [elemento asset (schema VSX)](/previous-versions/dd393737(v=vs.110)).
 
 11. Nell'elenco **origine** scegliere il progetto nell'elemento dell'elenco **soluzione corrente** .
 

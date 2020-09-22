@@ -1,5 +1,5 @@
 ---
-title: Hook di allocazione e allocazioni di memoria di runtime C | Microsoft Docs
+title: Hook di allocazione e allocazioni di memoria di runtime C
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79e55ec521de098a7ae0339c4460502dde3d482d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be75b4d3e83ed297f31e9015c7ba082c0611206d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745791"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851619"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Hook di allocazione e allocazioni di memoria di runtime C
 Una restrizione molto importante per le funzioni hook di allocazione è che devono ignorare in modo esplicito i `_CRT_BLOCK` blocchi. Questi blocchi sono le allocazioni di memoria eseguite internamente dalle funzioni della libreria di runtime del linguaggio C se effettuano chiamate a funzioni della libreria di runtime C che allocano memoria interna. È possibile ignorare `_CRT_BLOCK` i blocchi includendo il codice seguente all'inizio della funzione hook di allocazione:

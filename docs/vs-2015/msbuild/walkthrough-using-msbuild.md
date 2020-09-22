@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6e77934f8e565800eb4a7a753df4beb3b003fbb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445585"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839543"
 ---
 # <a name="walkthrough-using-msbuild"></a>Procedura dettagliata: Uso di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa 
   
 1. Aprire Visual Studio.  
   
-2. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
+2. Scegliere **Nuovo** dal menu **File**e quindi fare clic su **Progetto**.  
   
 3. Nella finestra di dialogo **Nuovo progetto** selezionare il tipo di progetto Visual C# e quindi selezionare il modello **Windows Forms Application**. Nella casella **Nome** digitare `BuildApp`. Immettere un **percorso** per la soluzione, ad esempio `D:\`. Accettare le impostazioni predefinite per **Crea directory per soluzione** (selezionato), **Aggiungi al controllo del codice sorgente** (non selezionato) e **Nome soluzione** (`BuildApp`).  
   
@@ -73,7 +73,7 @@ MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa 
   
 - Un'attività è la più piccola unità di lavoro, in altre parole, l'"atom" di una compilazione. Le attività sono componenti eseguibili indipendenti che possono avere input e output. Attualmente nel file di progetto non sono presenti attività definite o a cui si fa riferimento. Le attività vengono aggiunte al file di progetto nelle sezioni seguenti. Per altre informazioni, vedere l'argomento [Attività](../msbuild/msbuild-tasks.md).  
   
-- Una destinazione è una sequenza denominata di attività. Esistono due destinazioni alla fine del file di progetto che attualmente sono racchiuse tra commenti HTML: BeforeBuild e AfterBuild.  
+- Una destinazione è una sequenza denominata di attività. Alla fine del file di progetto sono presenti due destinazioni attualmente racchiuse tra commenti HTML: BeforeBuild e AfterBuild.  
   
   ```  
   <Target Name="BeforeBuild">  
@@ -241,7 +241,7 @@ $(PropertyName)
  Quasi tutti gli elementi di MSBuild possono avere un attributo Condition. Per altre informazioni sull'uso dell'attributo Condition, vedere [Condizioni](../msbuild/msbuild-conditions.md).  
   
 ### <a name="reserved-properties"></a>Proprietà riservate  
- In MSBuild alcuni nomi di proprietà sono riservati per archiviare le informazioni relative al file di progetto e ai file binari di MSBuild. MSBuildToolsPath è un esempio di proprietà riservata. Si fa riferimento alle proprietà riservate con la notazione $, come per qualsiasi altra proprietà. Per altre informazioni, vedere [Procedura: Fare riferimento al nome o percorso del File di progetto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e [MSBuild proprietà riservate e note](../msbuild/msbuild-reserved-and-well-known-properties.md).  
+ In MSBuild alcuni nomi di proprietà sono riservati per archiviare le informazioni relative al file di progetto e ai file binari di MSBuild. MSBuildToolsPath è un esempio di proprietà riservata. Si fa riferimento alle proprietà riservate con la notazione $, come per qualsiasi altra proprietà. Per altre informazioni, vedere [Procedura: Fare riferimento al nome o al percorso del file di progetto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e [Proprietà riservate e note di MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).  
   
 ### <a name="environment-variables"></a>Variabili di ambiente  
  È possibile fare riferimento alle variabili di ambiente nei file di progetto come si fa riferimento alle proprietà di compilazione. Ad esempio, per usare la variabile di ambiente PATH nel file di progetto, usare $(Path). Se il progetto contiene una definizione di una proprietà con lo stesso nome di una variabile di ambiente, la proprietà nel progetto esegue l'override del valore della variabile di ambiente. Per altre informazioni, vedere [Procedura: Usare le variabili di ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md).  
@@ -316,7 +316,7 @@ $(PropertyName)
 </ItemGroup>  
 ```  
   
- Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).  
+ Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).  
   
 > [!NOTE]
 > Percorsi dei file sono relativi alla cartella contenente il file di progetto MSBuild.  
@@ -417,13 +417,13 @@ $(PropertyName)
 <Photos Include="images\*.jpeg;images\*.gif" />  
 ```  
   
- È possibile escludere un elemento da un tipo di elemento con l'attributo Exclude. Di seguito è riportato un esempio:  
+ È possibile escludere un elemento da un tipo di elemento con l'attributo Exclude. Ad esempio,  
   
 ```  
 <Compile Include="*.cs" Exclude="*Designer*">  
 ```  
   
- aggiunge tutti i file con estensione ".cs" al tipo di elemento Compile, tranne i file i cui nomi contengono la stringa "Designer". Per altri esempi, vedere [Procedura: Escludi file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md).  
+ aggiunge tutti i file con estensione ".cs" al tipo di elemento Compile, tranne i file i cui nomi contengono la stringa "Designer". Per altri esempi, vedere [Procedura: Escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md).  
   
  L'attributo Exclude interessa solo gli elementi aggiunti dall'attributo Include nell'elemento item che li contiene entrambi. Ad esempio,  
   
@@ -575,8 +575,8 @@ $(PropertyName)
   
    Si noti che i metadati espressi in questa sintassi non causano la divisione in batch.  
   
-## <a name="whats-next"></a>Argomenti successivi  
- Per informazioni su come creare un file di progetto semplice passaggio per passaggio, vedere [Procedura dettagliata: Creazione di un File di progetto MSBuild da zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
+## <a name="whats-next"></a>in ordine di priorità  
+ Per informazioni su come creare un file di progetto semplice passaggio per passaggio, vedere [Procedura dettagliata: Creazione di un nuovo file di progetto MSBuild](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
 ## <a name="see-also"></a>Vedere anche
 [Panoramica di MSBuild](msbuild.md)  

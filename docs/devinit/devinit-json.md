@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3d7df98dc6ebfb59aa78e6f0c546632bf84596f5
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5ba7299f90ce5f3f253a7210456053faa6bd22c0
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809700"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852202"
 ---
 # <a name="devinit-configuration-file"></a>file di configurazione di devinit
 
@@ -71,4 +71,4 @@ I percorsi sono relativi alla posizione in cui è in esecuzione devinit. Si trat
 
 ## <a name="examples"></a>Esempi
 
-Per altri esempi sull'uso di devinit, vedere la [sezione Esempi](/samples).
+Per altri esempi sull'uso di devinit, vedere la [sezione Esempi](sample-readme.md).

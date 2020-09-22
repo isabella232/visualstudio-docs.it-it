@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f2da5b3122bd97fcbef0db7124049372c21983f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422075"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839903"
 ---
 # <a name="debug-a-webview-control"></a>Debug di un controllo WebView
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content.png "windows_and_phone_content")  
   
  Per esaminare ed eseguire il debug dei controlli `WebView` in un'app di Windows Runtime, puoi configurare Visual Studio in modo da collegare Script Debugger all'avvio dell'app. A partire da Visual Studio 2013 Update 2, sono disponibili due modi per interagire con i controlli `WebView` tramite il debugger:  
   
@@ -40,9 +40,9 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 3. Scegliere **Debug**. Nell'elenco **Processo applicativo** scegliere **Script**.  
   
-     ![Collegare il debugger di script](../debugger/media/js-dom-webview-script-debugger.png "JS_DOM_WebView_Script_Debugger")  
+     ![Collegamento del debugger di script](../debugger/media/js-dom-webview-script-debugger.png "JS_DOM_WebView_Script_Debugger")  
   
-4. (Facoltativo) Per le versioni non Express di Visual Studio, disabilitare il debug just-in-time (JIT) scegliendo **degli strumenti**, **opzioni**, **debug**, **Just-In-Time**, e quindi disabilitando il debug JIT per Script.  
+4. Opzionale Per le versioni non Express di Visual Studio, disabilitare il debug JIT (just-in-Time) scegliendo **strumenti**, **Opzioni**, **debug**, **just-in-Time**e quindi disabilitando il debug JIT per lo script.  
   
     > [!NOTE]
     > Disabilitando il debug JIT, puoi nascondere le finestre di dialogo per le eccezioni non gestite che si verificano in alcune pagine Web. In Visual Studio Express, il debug JIT è sempre disabilitato.  
@@ -63,7 +63,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
      La finestra di DOM Explorer associata al controllo `WebView` viene visualizzata come nuova scheda in Visual Studio.  
   
-5. Visualizzare e modificare gli elementi DOM attivi e gli stili CSS come descritto in [stili Debug CSS tramite DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
+5. Visualizzare e modificare gli elementi DOM attivi e gli stili CSS come descritto in [eseguire il debug di stili CSS usando Dom Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ### <a name="use-the-javascript-console-window-to-inspect-and-debug-a-webview-control"></a>Usare la finestra Console JavaScript per esaminare ed eseguire il debug di un controllo WebView  
   
@@ -79,12 +79,12 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 5. Nella finestra Console selezionare la pagina Web o un `iFrame` visualizzato mediante il controllo `WebView` nell'elenco **Destinazione**.  
   
-     ![Selezione nella finestra della console JavaScript di destinazione](../debugger/media/js-console-target.png "JS_Console_Target")  
+     ![Selezione della destinazione nella finestra della console JavaScript](../debugger/media/js-console-target.png "JS_Console_Target")  
   
     > [!NOTE]
     > Tramite la console puoi interagire con un singolo `WebView`, `iFrame`, contratto di condivisione o Web worker alla volta. Ogni elemento richiede un'istanza separata dell'host della piattaforma Web (WWAHost.exe). Puoi interagire con un solo host alla volta.  
   
-6. Visualizzare e modificare le variabili nell'app o usare i comandi della console, come descritto in [Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+6. Visualizzare e modificare le variabili nell'app o usare i comandi della console, come descritto in [Guida introduttiva: eseguire il debug](../debugger/quickstart-debug-javascript-using-the-console.md) dei [comandi della console](../debugger/javascript-console-commands.md)JavaScript e JavaScript.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

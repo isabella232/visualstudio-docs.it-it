@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Eseguire il debug di client e server mediante il debug RPC COM | Microsoft Docs'
+title: 'Procedura: eseguire il debug di client e server COM mediante il debug RPC | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,13 +27,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fda2a10cd559f940ab87e5cc8c26f5b47dbec194
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384041"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840303"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Procedura: Eseguire il debug di client e server COM usando il debug RPC
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Procedura: eseguire il debug di client e server COM mediante il debug RPC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile utilizzare il debug RPC (Remote Procedure Call, chiamata a procedura remota) per eseguire il debug delle applicazioni client/server COM. Per utilizzare tale debug, è necessario attivarlo. Quando si chiama il server dal client con il debug RPC attivato, il debugger si connette al server e consente di eseguire il debug del codice. Una volta stabilita la connessione al server, è possibile utilizzare tutte le funzionalità del debugger per i processi del client e del server.  
@@ -55,5 +55,5 @@ ms.locfileid: "63384041"
     > L'esecuzione di chiamate RPC a un server remoto che esegue Microsoft Windows Vista funzionerà solo se un debugger nativo è connesso al server remoto. In caso contrario, la chiamata RPC non verrà eseguita senza restituire alcun messaggio di errore oppure verrà completata, ma non funzionerà.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug dei server e dei contenitori COM](../debugger/com-server-and-container-debugging.md)   
+ [Server COM e debug del contenitore](../debugger/com-server-and-container-debugging.md)   
  [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)

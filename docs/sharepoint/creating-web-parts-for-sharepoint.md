@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3825ef7d2c1c90f63a90f5028063c74332543841
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4824c358f81f2cf757f037611ed70ba9b8935130
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015055"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740157"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Creazione di Web part per SharePoint
   Utilizzando Web part è possibile modificare il contenuto, l'aspetto e il comportamento delle pagine di un sito di SharePoint tramite un browser. Le web part sono controlli lato server che vengono eseguiti all'interno di una pagina Web part: si tratta dei blocchi predefiniti di pagine visualizzate in un sito di SharePoint. Vedere [blocco predefinito: Web part](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
@@ -85,7 +85,7 @@ ms.locfileid: "86015055"
 
 - Le web part visive non supportano direttamente i token del server SharePoint, ad esempio $SPUrl. Per ulteriori informazioni, vedere "restrizioni dei token nell'oggetto visivo in sandbox Web part" nell'argomento [risolvere i problemi relativi alle soluzioni di SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).
 
-- Le web part visive in una soluzione in modalità sandbox ricevono occasionalmente l'errore "la richiesta di esecuzione del codice in modalità sandbox è stata rifiutata perché il servizio host del codice in modalità sandbox era troppo occupato per gestire la richiesta". Per ulteriori informazioni su questo errore, vedere questo post nel [Blog del team di sviluppo di SharePoint](https://blogs.msdn.microsoft.com/sharepointdev/2011/02/08/error-the-sandboxed-code-execution-request-was-refused-because-the-sandboxed-code-host-service-was-too-busy-to-handle-the-request-ricky-kirkham/#10149157).
+- Le web part visive in una soluzione in modalità sandbox ricevono occasionalmente l'errore "la richiesta di esecuzione del codice in modalità sandbox è stata rifiutata perché il servizio host del codice in modalità sandbox era troppo occupato per gestire la richiesta". Per ulteriori informazioni su questo errore, vedere questo post nel [Blog del team di sviluppo di SharePoint](/archive/blogs/sharepointdev/error-the-sandboxed-code-execution-request-was-refused-because-the-sandboxed-code-host-service-was-too-busy-to-handle-the-request-ricky-kirkham#10149157).
 
 - Il debug JavaScript sul lato server non è supportato in Visual Studio, ma il debug JavaScript sul lato client è supportato.
 

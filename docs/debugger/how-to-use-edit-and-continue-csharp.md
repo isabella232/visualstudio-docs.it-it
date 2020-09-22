@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: usare modifica e continuazione (C#) | Microsoft Docs'
+title: Usare modifica e continuazione (C#) | Microsoft Docs
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a88cff54679ac0deae32bfeeff1dd96526f19ea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 18d11f552d486fd9ebd7a95323e327324de14108
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348860"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851853"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Procedura: utilizzare Modifica e continuazione (C#)
 Con modifica e continuazione è possibile apportare e applicare modifiche al codice in modalità di interruzione durante il debug, senza dover arrestare e riavviare la sessione di debug.

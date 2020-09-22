@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a44781c6fea0ecf75dcdb8a5ab2e2b3bed8e52e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1336af7469b030492b486004940b730d372760bb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986144"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807963"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Distribuire una soluzione Office usando Windows Installer
 
@@ -333,7 +333,7 @@ Le installazioni per utente richiedono un solo programma di installazione indipe
 
 7. Ripetere la procedura per creare i seguenti valori:
 
-|Tipo di valore<br /><br />|Name<br /><br />|
+|Tipo di valore<br /><br />|nome<br /><br />|
 |--------------|--------|
 |Valore stringa<br /><br />|**FriendlyName**<br /><br />|
 |Valore DWORD<br /><br />|**LoadBehavior**<br /><br />|
@@ -504,7 +504,7 @@ Per modificare le proprietà personalizzate, si crea un programma che rimuove la
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Prerequisiti della soluzione Office per la distribuzione](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)
+- [Prerequisiti della soluzione Office per la distribuzione](/previous-versions/bb608617(v=vs.110))
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
 - [Voci del registro di sistema per i componenti aggiuntivi VSTO](../vsto/registry-entries-for-vsto-add-ins.md)
 - [Cenni preliminari sulle proprietà personalizzate del documento](../vsto/custom-document-properties-overview.md)

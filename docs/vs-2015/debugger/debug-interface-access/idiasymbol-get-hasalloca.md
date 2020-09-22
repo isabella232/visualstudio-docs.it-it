@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce10647737a34caf3f566ba4f50a84a51ea4c46f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798021"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839563"
 ---
-# <a name="idiasymbolgethasalloca"></a>IDiaSymbol::get_hasAlloca
+# <a name="idiasymbolget_hasalloca"></a>IDiaSymbol::get_hasAlloca
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un flag che specifica se la funzione contiene una chiamata a `alloca` (che viene usato per allocare memoria nello stack).  
+Recupera un flag che specifica se la funzione contiene una chiamata a `alloca` (utilizzata per allocare memoria nello stack).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -33,19 +33,19 @@ Recupera un flag che specifica se la funzione contiene una chiamata a `alloca` (
   
 #### <a name="parameters"></a>Parametri  
  `pFlag`  
- [out] Restituisce `TRUE` se la funzione contiene una chiamata a `alloca`; in caso contrario, restituisce `FALSE`.  
+ out Restituisce `TRUE` se la funzione contiene una chiamata a `alloca` ; in caso contrario, restituisce `FALSE` .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="requirements"></a>Requisiti  
   
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
-|Intestazione:|DIA2.h|  
+|Intestazione:|dia2. h|  
 |Version:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>Vedere anche  

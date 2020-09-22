@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fd8732a914581b39566bac88fe73698850893f77
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434280"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839371"
 ---
 # <a name="performance-report-overview"></a>Informazioni generali sul rapporto di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "63434280"
 ### <a name="summary-view"></a>Visualizzazione Riepilogo  
  Per impostazione predefinita, i dati di profilatura vengono visualizzati nella visualizzazione Riepilogo, che rappresenta il punto di partenza per la ricerca finalizzata all'identificazione dei problemi di prestazioni. Da ogni riga della visualizzazione Riepilogo è possibile passare a visualizzazioni più dettagliate facendo clic con il pulsante destro del mouse sul nome della funzione o del modulo. Per altre informazioni, vedere [Visualizzazione Riepilogo](../profiling/summary-view.md).  
   
-### <a name="callercallee-view"></a>Visualizzazione Chiamante/chiamato  
+### <a name="callercallee-view"></a>visualizzazione Chiamante/Chiamato  
  La visualizzazione Chiamante/chiamato consente di visualizzare un albero delle chiamate per una singola funzione. La visualizzazione è suddivisa in tre sezioni:  
   
 - La funzione di destinazione viene riportata nella parte centrale della visualizzazione.  
@@ -72,7 +72,7 @@ ms.locfileid: "63434280"
  La visualizzazione Puntatore all'istruzione consente di visualizzare istruzioni specifiche eseguite durante la profilatura del campionamento. Per altre informazioni, vedere [Visualizzazione Puntatore all'istruzione](../profiling/instruction-pointers-ips-view.md).  
   
 ### <a name="allocation-view"></a>Visualizzazione Allocazione  
- La visualizzazione Allocazione è disponibile se è stata selezionata l'opzione **Raccogliere le informazioni sull'allocazione dell'oggetto .NET** nella pagina **Generale** della finestra di dialogo delle proprietà **Sessione prestazioni**. Vedere [Panoramica delle sessioni di prestazioni](../profiling/performance-session-overview.md). La visualizzazione Allocazione elenca gli oggetti .NET che sono stati allocati dall'applicazione o dal componente. Quando si espande una riga dell'oggetto, viene visualizzato un albero delle chiamate, che indica i percorsi di esecuzione usati per la creazione dell'oggetto. Nell'albero delle chiamate vengono anche visualizzate le informazioni sul numero delle allocazioni inclusive ed esclusive per ogni funzione. Nella visualizzazione Allocazione è anche possibile espandere ed evidenziare il percorso di esecuzione di una funzione che ha allocato il maggior numero di oggetti. Per visualizzare il percorso più attivo, fare clic con il pulsante destro del mouse sulla funzione e quindi scegliere **Espandi percorso critico**. Per altre informazioni, vedere [Raccolta di dati di durata e allocazione di memoria .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) e [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md).  
+ La visualizzazione Allocazione è disponibile se è stata selezionata l'opzione **Raccogliere le informazioni sull'allocazione dell'oggetto .NET** nella pagina **Generale** della finestra di dialogo delle proprietà **Sessione prestazioni**. Vedere [Cenni preliminari sulle sessioni di prestazioni](../profiling/performance-session-overview.md). La visualizzazione Allocazione elenca gli oggetti .NET che sono stati allocati dall'applicazione o dal componente. Quando si espande una riga dell'oggetto, viene visualizzato un albero delle chiamate, che indica i percorsi di esecuzione usati per la creazione dell'oggetto. Nell'albero delle chiamate vengono anche visualizzate le informazioni sul numero delle allocazioni inclusive ed esclusive per ogni funzione. Nella visualizzazione Allocazione è anche possibile espandere ed evidenziare il percorso di esecuzione di una funzione che ha allocato il maggior numero di oggetti. Per visualizzare il percorso più attivo, fare clic con il pulsante destro del mouse sulla funzione e quindi scegliere **Espandi percorso critico**. Per altre informazioni, vedere [Raccolta di dati di durata e allocazione di memoria .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) e [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md).  
   
 ### <a name="objects-lifetime-view"></a>Visualizzazione Durata oggetti  
  La visualizzazione Durata oggetti è disponibile se sono state selezionate le opzioni **Raccogliere le informazioni sull'allocazione dell'oggetto .NET** e **Raccogliere anche le informazioni sulla durata dell'oggetto .NET** nella pagina **Generale** della finestra di dialogo delle proprietà **Sessione prestazioni**.  

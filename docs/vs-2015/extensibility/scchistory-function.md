@@ -13,16 +13,16 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8df85c03201e46768c43fb64cc41b7fa081eb91a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446822"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839447"
 ---
 # <a name="scchistory-function"></a>Funzione SccHistory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questa funzione consente di visualizzare la cronologia dei file specificati.  
+Questa funzione Visualizza la cronologia dei file specificati.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,45 +39,45 @@ SCCRTN SccHistory(
   
 #### <a name="parameters"></a>Parametri  
  `pvContext`  
- [in] La struttura del contesto plug-in del controllo origine.  
+ in Struttura del contesto del plug-in del controllo del codice sorgente.  
   
  `hWnd`  
- [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
+ in Handle per la finestra IDE che il plug-in del controllo del codice sorgente può utilizzare come elemento padre per tutte le finestre di dialogo fornite.  
   
  `nFiles`  
- [in] Numero di file specificato per il `lpFileName` matrice.  
+ in Numero di file specificati nella `lpFileName` matrice.  
   
  `lpFileName`  
- [in] Matrice di nomi completi di file.  
+ in Matrice di nomi completi di file.  
   
  `fOptions`  
- [in] Flag di comando (attualmente non usato).  
+ in Flag di comando (attualmente non usati).  
   
  `pvOptions`  
- [in] Opzioni specifiche plug-in controllo sorgente.  
+ in Opzioni specifiche del plug-in del controllo del codice sorgente.  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:  
   
-|Value|Descrizione|  
+|valore|Descrizione|  
 |-----------|-----------------|  
-|SCC_OK|Cronologia delle versioni è stata ottenuta correttamente.|  
-|SCC_I_RELOADFILE|Il controllo del codice sorgente modificato effettivamente il file su disco durante il recupero della cronologia (ad esempio, ottenendo una versione precedente), in modo che l'IDE deve ricaricare questo file.|  
-|SCC_E_FILENOTCONTROLLED|Il file non è incluso nel controllo del codice sorgente.|  
-|SCC_E_OPNOTSUPPORTED|Il controllo del codice sorgente non supporta questa operazione.|  
+|SCC_OK|La cronologia delle versioni è stata ottenuta correttamente.|  
+|SCC_I_RELOADFILE|Il sistema di controllo del codice sorgente ha effettivamente modificato il file su disco durante il recupero della cronologia (ad esempio, ottenendo una versione precedente), quindi l'IDE deve ricaricare il file.|  
+|SCC_E_FILENOTCONTROLLED|Il file non è sotto il controllo del codice sorgente.|  
+|SCC_E_OPNOTSUPPORTED|Il sistema di controllo del codice sorgente non supporta questa operazione.|  
 |SCC_E_NOTAUTHORIZED|L'utente non è autorizzato a eseguire questa operazione.|  
-|SCC_E_ACCESSFAILURE|Si è verificato un problema di accesso di sistema di controllo di origine, probabilmente a causa di problemi di contesa o di rete. È consigliabile un nuovo tentativo.|  
-|SCC_E_PROJNOTOPEN|Il progetto non sia stata aperta.|  
-|SCC_E_NONSPECIFICERROR|Errore non specifico. Non è stato possibile ottenere la cronologia dei file.|  
+|SCC_E_ACCESSFAILURE|Si è verificato un problema durante l'accesso al sistema di controllo del codice sorgente, probabilmente a causa di problemi di rete o di conflitto. È consigliabile eseguire un nuovo tentativo.|  
+|SCC_E_PROJNOTOPEN|Il progetto non è stato aperto.|  
+|SCC_E_NONSPECIFICERROR|Errore non specifico. Impossibile ottenere la cronologia file.|  
   
-## <a name="remarks"></a>Note  
- Il plug-in del controllo del codice sorgente può visualizzare una finestra di dialogo per visualizzare la cronologia di ogni file, usando `hWnd` come finestra padre. In alternativa, il testo facoltativo output callback funzione fornito per il [SccOpenProject](../extensibility/sccopenproject-function.md) può essere utilizzato, se è supportata.  
+## <a name="remarks"></a>Commenti  
+ Il plug-in del controllo del codice sorgente può visualizzare la relativa finestra di dialogo per visualizzare la cronologia di ogni file, usando `hWnd` come finestra padre. In alternativa, è possibile usare la funzione di callback di output di testo facoltativa fornita a [SccOpenProject](../extensibility/sccopenproject-function.md) , se supportata.  
   
- Si noti che in determinate circostanze, il file in corso l'analisi potrebbe cambiare durante l'esecuzione di questa chiamata. Ad esempio, il [!INCLUDE[vsvss](../includes/vsvss-md.md)] comando Cronologia consente all'utente la possibilità di ottenere una versione precedente del file. In tal caso, l'origine di controllo del plug-in restituisce `SCC_I_RELOAD` per avvisare l'IDE ed è necessario ricaricare il file.  
+ Si noti che in determinate circostanze, il file esaminato potrebbe cambiare durante l'esecuzione di questa chiamata. Ad esempio, il [!INCLUDE[vsvss](../includes/vsvss-md.md)] comando cronologia offre all'utente la possibilità di ottenere una versione precedente del file. In tal caso, il plug-in del controllo del codice sorgente restituisce un `SCC_I_RELOAD` avviso all'IDE necessario per ricaricare il file.  
   
 > [!NOTE]
-> Se il plug-in del controllo del codice sorgente non supporta questa funzione per una matrice di file, può essere visualizzata solo la cronologia file per il primo file.  
+> Se il plug-in del controllo del codice sorgente non supporta questa funzione per una matrice di file, è possibile visualizzare solo la cronologia file per il primo file.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
+ [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)

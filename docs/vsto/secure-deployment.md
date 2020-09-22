@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1000504ad83706bd028af4bd668da7483e478b7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c838eddea5b3118c28fb33411a8c58a19d7b4a2d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978374"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810954"
 ---
 # <a name="secure-deployment"></a>Distribuzione sicura
   Quando si crea una soluzione Office, il computer di sviluppo viene aggiornato automaticamente per consentire l'esecuzione del codice nel progetto. Tuttavia, quando si distribuisce la soluzione, è necessario fornire l'evidenza su quale basare una decisione di attendibilità firmando la soluzione con un certificato o usando la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] chiave della richiesta di attendibilità. Per altre informazioni, vedere [concedere l'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md).
@@ -46,5 +46,5 @@ ms.locfileid: "62978374"
 
 ## <a name="see-also"></a>Vedere anche
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
-- [Preparare i computer per l'esecuzione o l'hosting di soluzioni Office](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)
+- [Preparare i computer per l'esecuzione o l'hosting di soluzioni Office](/previous-versions/bb772092(v=vs.110))
 - [Soluzioni Office sicure](../vsto/securing-office-solutions.md)

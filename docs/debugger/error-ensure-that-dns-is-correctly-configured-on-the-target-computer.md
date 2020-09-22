@@ -1,5 +1,5 @@
 ---
-title: 'Errore: verificare che il DNS sia configurato correttamente nel computer di destinazione | Microsoft Docs'
+title: Verificare che il DNS sia configurato correttamente nel computer di destinazione | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e374e75caca3dec28800a2eac86d921c861888ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6848363b3afa5c3216c242136c7909980f0ed60
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460825"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852758"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>Errore: verificare che il DNS sia configurato correttamente nel computer di destinazione.
 Quando si tenta di eseguire il debug remoto, potrebbe essere visualizzato il seguente messaggio di errore:

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Modificare il computer di riproduzione di diagnostica della grafica | Microsoft Docs'
+title: 'Procedura: modificare il computer di riproduzione Diagnostica della grafica | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,46 +10,46 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cb14fb4017ea1df6659b9a1a0ac093cd7cf7e0b1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444819"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839807"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Procedura: Modificare il computer di riproduzione della diagnostica della grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile riprodurre informazioni grafiche con computer locale o utilizzando un computer o dispositivo remoto.  
+È possibile riprodurre le informazioni grafiche usando il computer locale o un computer o un dispositivo remoto.  
   
 ## <a name="choosing-a-playback-machine"></a>Scelta di un computer di riproduzione  
- Il computer di riproduzione è un computer o dispositivo che viene usato per riprodurre gli eventi di grafica da un log di grafica. In genere, il computer locale è l'opzione più semplice, ma un problema di rendering non potrebbe riprodursi in un computer con hardware diverse o versioni di driver al computer in cui è stato acquisito; In questo caso, è possibile scegliere un computer riproduzione remoto che riproduce meglio il problema e utilizzare comunque il computer di sviluppo per diagnosticarlo.  
+ Il computer di riproduzione è un computer o un dispositivo usato per riprodurre gli eventi di grafica da un log di grafica. In genere, il computer locale è l'opzione più semplice, ma un problema di rendering potrebbe non riprodursi in un computer con versioni hardware o driver diverse da quelle del computer in cui è stato acquisito. Quando si verifica questa situazione, è possibile scegliere un computer di riproduzione remoto che riproduca meglio il problema e continuare a usare il computer di sviluppo per diagnosticarlo.  
   
-#### <a name="to-use-the-local-machine-to-play-back-graphics-information"></a>Usare il computer locale per riprodurre informazioni grafiche  
+#### <a name="to-use-the-local-machine-to-play-back-graphics-information"></a>Per utilizzare il computer locale per riprodurre le informazioni grafiche  
   
-1. Nella finestra del documento di Log di grafica scegliere il **computer di riproduzione** collegamento. Il **connessioni Debugger remoto** verrà visualizzata la finestra di dialogo.  
+1. Nella finestra del documento del log di grafica scegliere il collegamento **computer riproduzione** . Verrà visualizzata la finestra di dialogo **Connessioni debugger remoto** .  
   
-2. Sotto **Manual Configuration**, nella **indirizzo** proprietà, immettere `localhost`.  
+2. In **configurazione manuale**, nella proprietà **Indirizzo** , immettere `localhost` .  
   
-3. Impostare il **modalità di autenticazione** proprietà **None**.  
+3. Impostare la proprietà **modalità di autenticazione** su **Nessuna**.  
   
 4. Scegliere il pulsante **Seleziona**.  
   
-#### <a name="to-use-a-remote-machine-to-play-back-graphics-information"></a>Usare un computer remoto per riprodurre informazioni grafiche  
+#### <a name="to-use-a-remote-machine-to-play-back-graphics-information"></a>Per utilizzare un computer remoto per riprodurre le informazioni grafiche  
   
-1. Nella finestra del documento di Log di grafica scegliere il **computer di riproduzione** collegamento. Il **connessioni Debugger remoto** verrà visualizzata la finestra di dialogo.  
+1. Nella finestra del documento del log di grafica scegliere il collegamento **computer riproduzione** . Verrà visualizzata la finestra di dialogo **Connessioni debugger remoto** .  
   
-2. Sotto **Manual Configuration**, nella **indirizzo** proprietà, immettere il nome di dominio Windows o l'indirizzo IP della macchina o del dispositivo che si desidera utilizzare per riprodurre informazioni grafiche.  
+2. In **configurazione manuale**, nella proprietà **Indirizzo** , immettere il nome di dominio Windows o l'indirizzo IP del computer o del dispositivo che si desidera utilizzare per riprodurre le informazioni grafiche.  
   
-3. Specificare il tipo di autorizzazione che si desidera usare per proteggere la connessione al computer di riproduzione.  
+3. Specificare il tipo di autorizzazione che si desidera utilizzare per proteggere la connessione al computer di riproduzione.  
   
-    - Per l'autenticazione di Windows, impostare il **modalità di autenticazione** proprietà **Windows**.  
+    - Per l'autenticazione di Windows, impostare la proprietà **modalità di autenticazione** su **Windows**.  
   
-    - Nessuna autenticazione, impostare il **modalità di autenticazione** proprietà **None**.  
+    - Per nessuna autenticazione, impostare la proprietà **modalità di autenticazione** su **Nessuna**.  
   
 4. Scegliere il pulsante **Seleziona**.  
   
 > [!NOTE]
-> Il **connessioni Debugger remoto** nella finestra di dialogo può inoltre essere visualizzate le destinazioni di debug remote che sono direttamente connessi al computer di sviluppo o che sono nella stessa subnet. È possibile usare una di queste destinazioni di debug remote come computer di riproduzione della diagnostica della grafica senza configurarlo manualmente. Nel **le connessioni Remote Debugger** finestra di dialogo, selezionare la destinazione desiderata, quindi scegliere il **selezionare** pulsante.  
+> Nella finestra di dialogo **Connessioni debugger remoto** è possibile che vengano visualizzate anche le destinazioni di debug remoto direttamente connesse al computer di sviluppo o che si trovano nella stessa subnet. È possibile usare una di queste destinazioni di debug remoto come Diagnostica della grafica computer di riproduzione senza configurarlo manualmente. Nella finestra di dialogo **Connessioni debugger remoto** selezionare la destinazione desiderata, quindi scegliere il pulsante **Seleziona** .  
   
 ## <a name="see-also"></a>Vedere anche  
- [Documento di log della grafica](../debugger/graphics-log-document.md)
+ [Documento log grafica](../debugger/graphics-log-document.md)

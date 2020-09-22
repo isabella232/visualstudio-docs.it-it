@@ -1,5 +1,5 @@
 ---
-title: Come arrestare le modifiche al codice | Microsoft Docs
+title: Interrompi modifiche al codice | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a62fe2b99e197cfafbf48a1a5a881fce73d89788
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 62a775944563d63834abf5e32b1f9d4c2453444c
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599847"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851879"
 ---
 # <a name="how-to-stop-code-changes"></a>Procedura: interrompere l'applicazione di modifiche al codice
 In Modifica e continuazione è possibile scegliere di interrompere l'applicazione delle modifiche al codice.
@@ -38,6 +38,6 @@ In Modifica e continuazione è possibile scegliere di interrompere l'applicazion
 
   Se si sceglie questa opzione, non verrà completata nessuna delle modifiche del codice.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Modifica e continuazione](../debugger/edit-and-continue.md)
 - [Modifica e continuazione, Debug, finestra di dialogo Opzioni](./edit-and-continue.md)
