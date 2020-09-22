@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: creare un manifesto del prodotto | Microsoft Docs'
+title: Creare un manifesto del prodotto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f4302756b089376eca8926453399768faaf58f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97ec49438ce2382336b1b8a6f8355bd092486c2d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382510"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852218"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Procedura: Creare il manifesto di un prodotto
 Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio automatico contiene un singolo file manifesto del prodotto, ma un manifesto del pacchetto per ogni impostazione locale. Il manifesto del pacchetto contiene aspetti specifici della localizzazione del pacchetto. Sono incluse le stringhe, i contratti di licenza con l'utente finale e i Language Pack.

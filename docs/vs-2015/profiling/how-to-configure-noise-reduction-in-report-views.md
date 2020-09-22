@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Configurare la riduzione del rumore nelle visualizzazioni report | Microsoft Docs'
+title: 'Procedura: Configurare la riduzione del rumore nelle visualizzazioni dei rapporti | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5871473eaba749833714d6382beb487702ebe02d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432761"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840140"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Procedura: Configurare la riduzione del rumore nelle visualizzazioni report
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ I rapporti di prestazioni possono essere configurati per la riduzione del rumore
   
 2. Per abilitare il trimming, attenersi alla procedura seguente:  
   
-    1. Selezionare **Abilita trimming**. Questa è l'impostazione predefinita.  
+    1. Selezionare **Abilita trimming**. Si tratta dell'impostazione predefinita.  
   
         > [!NOTE]
         > Se è abilitata la riduzione del rumore, nel rapporto verrà visualizzata una barra informazioni. Per altre informazioni, vedere [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md) e [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md).  
@@ -50,7 +50,7 @@ I rapporti di prestazioni possono essere configurati per la riduzione del rumore
   
     3. Configurare l'impostazione di soglia desiderata digitando un valore percentuale nella casella di testo **Soglia**.  
   
-    4. Per abilitare l'avviso di riduzione del rumore nel rapporto generato, selezionare **Visualizza un avviso nel rapporto generato quando è abilitata Riduzione rumore**. Questa è l'impostazione predefinita.  
+    4. Per abilitare l'avviso di riduzione del rumore nel rapporto generato, selezionare **Visualizza un avviso nel rapporto generato quando è abilitata Riduzione rumore**. Si tratta dell'impostazione predefinita.  
   
 3. Per disabilitare il trimming, deselezionare **Abilita trimming**.  
   
@@ -64,7 +64,7 @@ I rapporti di prestazioni possono essere configurati per la riduzione del rumore
   
 2. Per abilitare la riduzione, attenersi alla procedura seguente:  
   
-    1. Selezionare **Abilita riduzione**. Questa è l'impostazione predefinita.  
+    1. Selezionare **Abilita riduzione**. Si tratta dell'impostazione predefinita.  
   
         > [!NOTE]
         > Se è abilitata la riduzione del rumore, nel rapporto verrà visualizzata una barra informazioni. Per altre informazioni, vedere [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md) e [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md).  
@@ -73,14 +73,14 @@ I rapporti di prestazioni possono essere configurati per la riduzione del rumore
   
     3. Configurare l'impostazione di soglia desiderata digitando un valore percentuale nella casella di testo **Soglia**.  
   
-    4. Per abilitare l'avviso di riduzione del rumore nel rapporto generato, selezionare **Visualizza un avviso nel rapporto generato quando è abilitata Riduzione rumore**. Questa è l'impostazione predefinita.  
+    4. Per abilitare l'avviso di riduzione del rumore nel rapporto generato, selezionare **Visualizza un avviso nel rapporto generato quando è abilitata Riduzione rumore**. Si tratta dell'impostazione predefinita.  
   
 3. Per disabilitare la riduzione, deselezionare **Abilita riduzione**.  
   
 4. Fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Personalizzazione delle visualizzazioni dei rapporti degli strumenti per le prestazioni](../profiling/customizing-performance-tools-report-views.md)   
- [Procedura: Escludere o includere funzioni brevi nella strumentazione](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
- [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md)   
- [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md)
+ [Personalizzazione delle visualizzazioni dei report degli strumenti per le prestazioni](../profiling/customizing-performance-tools-report-views.md)   
+ [Procedura: escludere o includere funzioni brevi dalla strumentazione](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
+ [Visualizzazione albero delle chiamate](../profiling/call-tree-view.md)   
+ [Visualizzazione allocazioni](../profiling/dotnet-memory-allocations-view.md)

@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d2349c21d55c20bcb3bcd50ab96f383a9afcc00b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426116"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840107"
 ---
 # <a name="msbuild-task"></a>Attività MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Compila progetti di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] da 
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `MSBuild` .  
   
-|Parametro|Description|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
 |`BuildInParallel`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, i progetti specificati nel parametro `Projects` vengono compilati in parallelo, se possibile. Il valore predefinito è `false`.|  
 |`Projects`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file di progetto da compilare.|  
@@ -51,10 +51,10 @@ Compila progetti di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] da 
 |`UnloadProjectsOnCompletion`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, il progetto verrà scaricato al termine dell'operazione.|  
 |`UseResultsCache`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, il risultato memorizzato nella cache verrà restituito, se presente. Se l'attività MSBuild viene eseguita, il risultato verrà memorizzato nella cache in un ambito (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> come elenco di elementi di compilazione.|  
   
-## <a name="remarks"></a>Osservazioni  
- Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+## <a name="remarks"></a>Commenti  
+ Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
- Diversamente da quando si usa l'[attività Exec](../msbuild/exec-task.md) per avviare MSBuild.exe, questa attività usa lo stesso processo di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] per compilare i progetti figlio. L'elenco di destinazioni già compilate che possono essere ignorate viene condiviso tra le compilazioni padre e figlio. Questa attività è anche più veloce perché non vengono creati nuovi processi di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
+ A differenza dell'uso dell' [attività Exec](../msbuild/exec-task.md) per avviare MSBuild.exe, questa attività USA lo stesso [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] processo per compilare i progetti figlio. L'elenco di destinazioni già compilate che possono essere ignorate viene condiviso tra le compilazioni padre e figlio. Questa attività è anche più veloce perché non vengono creati nuovi processi di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  Questa attività può elaborare non solo i file di progetto, ma anche i file di soluzione.  
   
@@ -71,7 +71,7 @@ Compila progetti di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] da 
 > Questi nuovi elementi di metadati sono applicabili solo agli elementi passati nell'attributo Projects dell'[attività MSBuild](../msbuild/msbuild-task.md).  
   
 ## <a name="multi-processor-build-benefits"></a>Vantaggi della compilazione a più processori  
- Uno dei vantaggi principali derivanti dall'uso di questi nuovi metadati consiste nel compilare i progetti in parallelo in un sistema a più processori. I metadati consentono di consolidare tutti i progetti in una singola chiamata all'[attività MSBuild](../msbuild/msbuild-task.md) senza dover eseguire attività di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] di divisione in batch o condizionali. Quando si chiama una singola [attività MSBuild](../msbuild/msbuild-task.md), tutti i progetti elencati nell'attributo Projects verranno compilati in parallelo, ma solo se l'attributo `BuildInParallel=true` è presente nell'[attività MSBuild](../msbuild/msbuild-task.md). Per altre informazioni, vedere [Compilazione di più progetti in parallelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).  
+ Uno dei vantaggi principali derivanti dall'uso di questi nuovi metadati consiste nel compilare i progetti in parallelo in un sistema a più processori. I metadati consentono di consolidare tutti i progetti in una singola chiamata all'[attività MSBuild](../msbuild/msbuild-task.md) senza dover eseguire attività di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] di divisione in batch o condizionali. Quando si chiama una singola [attività MSBuild](../msbuild/msbuild-task.md), tutti i progetti elencati nell'attributo Projects verranno compilati in parallelo, (Solo, tuttavia, se l' `BuildInParallel=true` attributo è presente nell' [attività MSBuild](../msbuild/msbuild-task.md)). Per ulteriori informazioni, vedere [compilazione di più progetti in parallelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).  
   
 ## <a name="properties-metadata"></a>Metadati Properties  
  Uno scenario comune è quello in cui si compilano più file di soluzione tramite l'[attività MSBuild](../msbuild/msbuild-task.md), usando solo configurazioni della build diverse. Potrebbe essere necessario compilare la soluzione a1 usando la configurazione per il debug e la soluzione a2 usando la configurazione per la versione. In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 questo file di progetto sarà come il seguente:  
@@ -110,7 +110,7 @@ Compila progetti di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] da 
 </Project>  
 ```  
   
- \- oppure -  
+ \- - oppure -  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -191,4 +191,4 @@ Compila progetti di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] da 
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)

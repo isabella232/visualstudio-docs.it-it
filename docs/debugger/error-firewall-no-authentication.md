@@ -1,5 +1,5 @@
 ---
-title: Errore-firewall nessuna autenticazione | Microsoft Docs
+title: Nessuna autenticazione del firewall | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 199e3b203ff73397a49c19a736a447f5823e5422
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8548880df8c69fa59d58bf4c13f7f547ad359bd
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460765"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852719"
 ---
 # <a name="error-firewall-no-authentication"></a>Errore: nessuna autenticazione del firewall
 Nel computer remoto Windows Firewall non è configurato in modo da consentire il debug remoto. Per il debug remoto con `No Authentication` è necessario aggiungere msvsmon.exe all'elenco delle eccezioni. Potrebbe inoltre essere necessario aprire alcune porte IPSEC.
