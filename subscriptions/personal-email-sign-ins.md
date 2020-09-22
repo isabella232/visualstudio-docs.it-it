@@ -7,12 +7,12 @@ ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
 ms.date: 09/17/2020
 ms.topic: conceptual
 description: Sottoscrizioni di Visual Studio - Perché vengono visualizzati indirizzi Hotmail o Gmail per i sottoscrittori?
-ms.openlocfilehash: 95f5d849a1f661ab6a65a34890faf8f812c7007d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c7a5546a99ed73175ab0f4af2c22b3cbf20c0bdd
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810497"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006072"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Sottoscrizioni di Visual Studio: perché vengono visualizzati gli account personali per i sottoscrittori?
 Dopo la migrazione delle aziende da Volume Licensing Service Center (VLSC) al nuovo portale di [amministrazione delle sottoscrizioni](https://manage.visualstudio.com)di Visual Studio, gli amministratori sono sorpresi di scoprire che l'indirizzo di posta elettronica di accesso per alcuni sottoscrittori Mostra un indirizzo di posta elettronica personale come Hotmail o Outlook.  
@@ -50,11 +50,11 @@ Fare quindi clic su "continua" per passare a un elenco delle modifiche da esegui
 > Quando si modifica l'indirizzo di posta elettronica di accesso, questo aggiorna solo il messaggio di posta elettronica usato dal Sottoscrittore per accedere alla sottoscrizione in https://my.visualstudio.com . Se il Sottoscrittore ha già attivato vantaggi come Azure o Pluralsight usando l'altro indirizzo di posta elettronica, sarà necessario continuare a usare tali indirizzi di posta elettronica per accedervi. Per tutti i nuovi vantaggi a cui hanno accesso, è necessario usare il nuovo indirizzo di posta elettronica. 
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ##  <a name="next-steps"></a>Passaggi successivi
 - Dopo aver aggiornato gli indirizzi di posta elettronica dei sottoscrittori, è consigliabile informarli che le informazioni di accesso sono state modificate.  L'utente riceverà anche un messaggio di posta elettronica con le informazioni aggiornate.
-- Può essere utile [filtrare l'elenco dei sottoscrittori](search-license.md) nell'organizzazione per cercare gli indirizzi di posta elettronica di accesso che potrebbero dover essere modificati.  
+- Può essere utile [filtrare l'elenco dei sottoscrittori](search-license.md) nell'organizzazione per cercare gli indirizzi di posta elettronica di accesso che potrebbero dover essere modificati.

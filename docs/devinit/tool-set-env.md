@@ -3,7 +3,7 @@ title: set-env
 description: lo strumento devinit richiede-set-env.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e7c327fb3f8492af8c1c740044f852d826fffad0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 2f4ec5489f22e94ad8f57f22ddc7742dc0ae3ade
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810421"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005995"
 ---
 # <a name="set-env"></a>set-env
 
@@ -26,7 +26,7 @@ Questo strumento usa l'API .NET Core `Environment.SetEnvironment` e presenta le 
 
 ## <a name="usage"></a>Utilizzo
 
-| Nome                                         | Type   | Obbligatoria | valore                                                                       |
+| Nome                                         | Tipo   | Obbligatoria | valore                                                                       |
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------|
 | **Commenti**                                 | stringa | No       | Proprietà commenti facoltativi. Non usato.                                       |
 | [**input**](#input)                          | stringa | No       | Input per lo strumento. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.               |
@@ -48,6 +48,10 @@ Una `input` stringa può contenere un'espansione della variabile di ambiente `%u
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
 Non usato.
+
+## <a name="usage-in-a-codespace"></a>Utilizzo in un codespace
+
+Se si usa un codespace, è possibile impostare le variabili di ambiente usate nello spazio dei Customizating tramite la `remoteEnv` proprietà nel [`.devcontainer.json`](https://docs.microsoft.com/visualstudio/codespaces/reference/configuring) file.
 
 ## <a name="example-usage"></a>Esempio di utilizzo
 

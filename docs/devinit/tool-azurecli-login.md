@@ -3,7 +3,7 @@ title: azurecli-login
 description: strumento devinit azurecli-login.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e95bc70540ae73c73a17a94b4cadfc399c8557e5
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 74c8144d9442c786bddeae78024fc4cf0d1e0d4a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810172"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006043"
 ---
 # <a name="azurecli-login"></a>azurecli-login
 
@@ -26,7 +26,7 @@ Lo `azurecli-login` strumento viene usato per accedere Azure Active Directory tr
 
 Se entrambe le proprietà sono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Type   | Obbligatoria | valore                                                                          |
+| Nome                                             | Tipo   | Obbligatoria | valore                                                                          |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                          |
 | [**input**](#input)                              | stringa | No       | Non usato. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.                               |

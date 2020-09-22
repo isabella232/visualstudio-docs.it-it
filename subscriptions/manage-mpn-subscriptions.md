@@ -7,12 +7,12 @@ ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Come assegnare le sottoscrizioni di Visual Studio agli utenti finali per i partner MPN.
-ms.openlocfilehash: ecd85967c0d58166da17025bc7b2246b335a5736
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 75b4b188bcd0a7df9414e430c8a1922f8fda9d5e
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561377"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005885"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gestire le sottoscrizioni di Visual Studio offerte tramite Microsoft Partner Network (MPN)
 I partner che guadagnano una competenza o che acquistano Action Pack in MPN sono idonei per usare le sottoscrizioni di Visual Studio. Queste sottoscrizioni sono concesse in licenza per singolo utente e sono valide solo quando vengono assegnate a un utente denominato specifico che lavora per la società partner.
@@ -61,12 +61,10 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
   - Pagina 8: Assigning Visual Studio subscriptions for Competency Partners (Assegnazione delle sottoscrizioni di Visual Studio per i partner con competenze)
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 I sottoscrittori e gli amministratori del programma devono collaborare direttamente con il team di supporto di Microsoft Partner Network per risolvere eventuali problemi di accesso alle sottoscrizioni da parte dei sottoscrittori. Per assistenza, visitare la pagina del [supporto per i partner](https://partner.microsoft.com/support). (Verranno richieste le credenziali di accesso di MPN.)
-
-

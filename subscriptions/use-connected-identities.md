@@ -8,12 +8,12 @@ ms.date: 03/11/2020
 ms.topic: conceptual
 robots: noindex, nofollow
 description: Informazioni su come usare gli account Microsoft e le identità Azure Active Directory connesse
-ms.openlocfilehash: f7b2cad08eb94b15e35015db7e8ac3fe084a00ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d67576ab715f3ff8a49287155423a3dd6c20867
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87805611"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005238"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Come usare le identità connesse nelle sottoscrizioni di Visual Studio
 Se si riceve una sottoscrizione di Visual Studio tramite l'azienda o l'Istituto di istruzione e si usa il account Microsoft (MSA) per eseguire l'accesso, l'amministratore delle sottoscrizioni può connettere il servizio MSA alla propria identità nell'Azure Active Directory (Azure AD) dell'organizzazione.  Verrà modificato il modo in cui è possibile accedere ad alcuni dei vantaggi inclusi nella sottoscrizione. 
@@ -43,10 +43,10 @@ R: per informazioni su come contattare l'amministratore, vedere l'articolo [cont
 R: l'implementazione di identità connesse è semplice.  Vedi [questo articolo](personal-email-sign-ins.md) per altre informazioni. 
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Quando l'amministratore connette gli account Azure AD e MSA, è consigliabile verificare che sia possibile accedere al portale per le [sottoscrizioni](https://my.visualstudio.com?wt.mc_id=o~msft~docs) e accedere a vantaggi come Azure DevOps, Visual Studio e il credito individuale Azure DevTest. 
+Quando l'amministratore connette gli account Azure AD e MSA, è consigliabile verificare che sia possibile accedere al portale per le [sottoscrizioni](https://my.visualstudio.com?wt.mc_id=o~msft~docs) e accedere a vantaggi come Azure DevOps, Visual Studio e il credito individuale Azure DevTest.

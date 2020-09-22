@@ -7,12 +7,12 @@ ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
 ms.date: 04/13/2020
 ms.topic: how-to
 description: Informazioni su come acquistare le sottoscrizioni di Visual Studio nella Microsoft Store e attivarle nel portale delle sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 9eb4812d22096e9d36089e464dc9a37478480458
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 244d6e6a0e5ccd6bf98b0e95d2165459cbe492c4
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561575"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005963"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Le sottoscrizioni di Visual Studio sono disponibili tramite il Microsoft Store
 Le sottoscrizioni di Visual Studio sono disponibili tramite diversi canali, tra cui [contratti multilicenza](https://www.microsoft.com/licensing/default), provider di soluzioni Cloud, [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)e Microsoft Store.  In questo articolo verrà illustrato come acquistare e attivare le sottoscrizioni tramite il [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio).  
@@ -48,10 +48,10 @@ Dopo aver acquistato una sottoscrizione di Visual Studio tramite il Microsoft St
 Per eventuali domande sull'acquisto tramite il Microsoft Store, è disponibile la guida.  Contattare il [supporto Microsoft Store](https://support.microsoft.com/help/28808/microsoft-store-contact-support?ocid=MSCOMStoreFooter-ContactUs).
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Dopo aver attivato la sottoscrizione, visitare la pagina relativa ai [vantaggi](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) per visualizzare tutti gli strumenti, i servizi, i vantaggi di formazione e supporto inclusi nella sottoscrizione.  Per iniziare, è consigliabile configurare questi vantaggi:

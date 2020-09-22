@@ -7,12 +7,12 @@ ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Informazioni su come accedere alle sottoscrizioni di Visual Studio con l'account aziendale o dell'istituto di istruzione.
-ms.openlocfilehash: 50cb122f1df5b9e6f87d53d3170d59c8f4d4b306
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 96b111c47e753b343d59c89e65f71eaa90132f6f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561429"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005807"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Accesso alle sottoscrizioni di Visual Studio con l'account aziendale o dell'istituto di istruzione 
 
@@ -72,10 +72,10 @@ R: molti utenti hanno più di una sottoscrizione.  Se è possibile accedere al p
 Se i problemi persistono, è possibile contattare il team di [supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) per ricevere assistenza.  
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Dopo aver eseguito l'accesso al portale delle sottoscrizioni, è consigliabile visitare la pagina relativa ai vantaggi https://my.visualstudio.com/benefits ed esplorare gli eccezionali strumenti, servizi e offerte disponibili.  
+Dopo aver eseguito l'accesso al portale delle sottoscrizioni, è consigliabile visitare la pagina relativa ai vantaggi https://my.visualstudio.com/benefits ed esplorare gli eccezionali strumenti, servizi e offerte disponibili.

@@ -7,12 +7,12 @@ ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
 ms.date: 08/10/2020
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono individuare singoli sottoscrittori o gruppi nel portale di amministrazione.
-ms.openlocfilehash: aea4e0d05eb01a5ec3fcf1da97d34e069aeb964d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 29354348b423b539b79c36c78f213f7a20d60eb3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810705"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005303"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Cercare e filtrare i sottoscrittori nelle sottoscrizioni di Visual Studio
 Portale di amministrazione delle sottoscrizioni di Visual Studio consente di trovare un sottoinsieme specifico di sottoscrittori in base a diversi criteri. È possibile applicare un filtro all'elenco di sottoscrittori per nome, indirizzo di posta elettronica, livello di sottoscrizione e altre informazioni.
@@ -38,14 +38,12 @@ Portale di amministrazione delle sottoscrizioni di Visual Studio consente di tro
 
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Ora che si è appreso come trovare un sottoscrittore, vedere come [modificare](edit-license.md) la sottoscrizione.
 - Sono necessarie informazioni per l'uso del portale di amministrazione?  Contattare il [supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
-
-

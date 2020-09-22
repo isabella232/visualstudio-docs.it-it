@@ -3,7 +3,7 @@ title: require-vscomponent
 description: per lo strumento devinit è necessario vscomponent.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: d53e6d35a7c0d78505192f7c8863c34f9e1ca874
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7c47c219fa0c0ef32946d6e0500bc37ce9aec0ff
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810428"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005037"
 ---
 # <a name="require-vscomponent"></a>require-vscomponent
 
@@ -26,7 +26,7 @@ Lo `require-vscomponent` strumento viene usato per importare le configurazioni d
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                     | Type   | Obbligatoria | valore                                                                |
+| Nome                                     | Tipo   | Obbligatoria | valore                                                                |
 |------------------------------------------|--------|----------|----------------------------------------------------------------------|
 | **Commenti**                             | stringa | No       | Proprietà commenti facoltativi. Non usato.                                |
 | [**input**](#input)                      | stringa | No       | Percorso completo dell'oggetto `.vsconfig` . Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito. |

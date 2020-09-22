@@ -7,12 +7,12 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: Informazioni sulla gestione delle sottoscrizioni di Visual Studio in un contratto per prodotti e servizi Microsoft (MPSA)
-ms.openlocfilehash: 9d26bccebb11a59933c37ec0f29a9b6e30e86c5b
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: f0e894272f13b08af20f36579aea807cba7a882a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561390"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006085"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Sottoscrizioni di Visual Studio in un contratto MPSA (Microsoft Product and Services Agreement)
 Se sono state acquistate sottoscrizioni di Visual Studio tramite il programma MPSA, è necessario tenere presente alcuni aspetti prima di poter diventare un amministratore di sottoscrizioni di Visual Studio e assegnare le sottoscrizioni agli utenti. Se il proprio account è già stato configurato come amministratore, è possibile passare direttamente al [portale di amministrazione](https://manage.visualstudio.com/) delle sottoscrizioni di Visual Studio.
@@ -63,10 +63,10 @@ Per una descrizione più dettagliata di questo processo,vedere le [guide rapide]
 > Dopo aver completato il processo di take-over del dominio, è necessario soddisfare i criteri dei cinque passaggi della sezione Associazione pre-tenant (tenant gestito). Dopo aver soddisfatto i criteri, sarà necessario contattare il supporto MPSA per eseguire il provisioning di altri amministratori delle sottoscrizioni di Visual Studio.
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Altre informazioni sulla gestione delle sottoscrizioni di Visual Studio.

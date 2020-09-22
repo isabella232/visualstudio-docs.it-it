@@ -7,12 +7,12 @@ ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
 ms.date: 09/18/2020
 ms.topic: conceptual
 description: Informazioni su come ottenere e gestire i codici Product Key in sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 8a7a2551b98672332af88210a0347c9ee3faf2cc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 389a57fb2e8fe0ea6ee81ee163fed052c441c209
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809159"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005846"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso di codici Product Key in sottoscrizioni di Visual Studio
 
@@ -66,7 +66,7 @@ Tutti i codici sono disponibili in forma aggregata nella pagina [Codici "Product
 |    Tipo chiave           |    Descrizione                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Non applicabile                    |    Per installare questo prodotto non è necessario alcun codice.                                                       |
-|    Vendita al dettaglio                     |    I codici per attivazione singola consentono più attivazioni e vengono usati nelle versioni acquistabili al dettaglio del prodotto. In molti casi sono consentite 10 o più attivazioni per codice, sebbene spesso siano consentite più attivazioni sullo stesso computer.                                                       |
+|    Retail                     |    I codici per attivazione singola consentono più attivazioni e vengono usati nelle versioni acquistabili al dettaglio del prodotto. In molti casi sono consentite 10 o più attivazioni per codice, sebbene spesso siano consentite più attivazioni sullo stesso computer.                                                       |
 |    Attivazione multipla        |    Un codice ad attivazione multipla (MAK) consente di attivare più installazioni di un prodotto con lo stesso codice. I codici MAK vengono generalmente usati con le versioni dei prodotti destinate a contratti multilicenza. Viene generalmente offerto un solo codice MAK per sottoscrizione.    |
 |    Codice per attivazione statica    |    I codici per attivazione statica vengono offerti per i prodotti che non richiedono attivazione e possono essere usati per un numero qualsiasi di installazioni.                                                                                                                  |
 |    Codice personalizzato                 |    I codici personalizzati offrono azioni o informazioni speciali per attivare o installare il prodotto.                                                                                                                                                                |
@@ -80,10 +80,10 @@ Tutti i codici sono disponibili in forma aggregata nella pagina [Codici "Product
 È possibile richiedere una chiave dalla pagina di download per il prodotto oppure cercare la chiave necessaria nella pagina [Codici "Product Key"](https://my.visualstudio.com/productkeys).
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Per richiedere le chiavi, visitare https://my.visualstudio.com/productkeys.  

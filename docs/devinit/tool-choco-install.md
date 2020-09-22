@@ -1,9 +1,9 @@
 ---
-title: Choco-install
+title: choco-install
 description: strumento devinit Choco-install per installare i pacchetti di cioccolato.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 0ad4c5c772ac9028ec369fe7cc63e1a2f7af6931
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e30db0eea924fcbc9587593266323d81c4ff1b40
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810165"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006050"
 ---
-# <a name="choco-install"></a>Choco-install
+# <a name="choco-install"></a>choco-install
 
 Lo `choco-install` strumento può essere usato per installare e aggiornare i pacchetti di [cioccolato](https://chocolatey.org/) .
 
@@ -26,7 +26,7 @@ Lo `choco-install` strumento può essere usato per installare e aggiornare i pac
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento non eseguirà alcuna operazione.
 
-| Nome                                             | Type   | Obbligatoria | valore                                                                                                          |
+| Nome                                             | Tipo   | Obbligatoria | valore                                                                                                          |
 |--------------------------------------------------|--------|----------|----------------------------------------------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                                                          |
 | [**input**](#input)                              | stringa | No       | Pacchetto da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.                                                 |

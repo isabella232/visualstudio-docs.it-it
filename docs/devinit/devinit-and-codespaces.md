@@ -1,9 +1,9 @@
 ---
-title: spazi di codevinit e GitHub
+title: devinit e GitHub Codespaces
 description: Informazioni su come personalizzare un codespace per Visual Studio usando devinit.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b42ce84bcb2a336e37d0ffafb2bab6c2dba9ba9d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 5697237c1bce719a4658e84435db0426f363f746
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852209"
+ms.locfileid: "91005538"
 ---
-# <a name="devinit-and-github-codespaces"></a>spazi di codevinit e GitHub
+# <a name="devinit-and-github-codespaces"></a>devinit e GitHub Codespaces
 
 devinit è un ottimo complimento per i [codespace di GitHub](https://github.com/features/codespaces) e il devinit può essere usato per ottenere una configurazione dello spazio di codebase, in modo che i collaboratori possano creare, eseguire ed eseguire il debug immediatamente.
 
@@ -56,12 +56,12 @@ In questo esempio _.devcontainer.js_ nel file seguente viene inserito nella radi
 
 Quando la directory di lavoro corrente contiene un _.devinit.jssu_ file.
 
-```batch
+```console
 > devinit init
 ```
 
 Quando il _.devinit.js_ si trova in un'altra directory.
 
-```batch
+```console
 > devinit init -f path/to/.devinit.json
 ```

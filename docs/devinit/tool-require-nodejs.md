@@ -1,9 +1,9 @@
 ---
-title: require-NodeJS
+title: require-nodejs
 description: per lo strumento devinit è necessario NodeJS.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6bc2de2e497bd58cfc036e74af3968a2f70d1f52
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ce4a156a313e3d8d0afc82ababd49d0528b315f5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808418"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005777"
 ---
-# <a name="require-nodejs"></a>require-NodeJS
+# <a name="require-nodejs"></a>require-nodejs
 
 Lo `require-nodejs` strumento viene usato per installare il [Node.js](https://nodejs.org/) tramite un file MSI distribuito dall'organizzazione Node.js.
 
@@ -26,7 +26,7 @@ Lo `require-nodejs` strumento viene usato per installare il [Node.js](https://no
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Type   | Obbligatoria | valore                                                                     |
+| Nome                                             | Tipo   | Obbligatoria | valore                                                                     |
 |--------------------------------------------------|--------|----------|---------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                     |
 | [**input**](#input)                              | stringa | No       | Versione di Node.JS da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito. |

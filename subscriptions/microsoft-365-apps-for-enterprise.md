@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Informazioni su come installare Microsoft 365 app per Enterprise
-ms.openlocfilehash: 0249f2c97ba93c49985629143dabb842447c196f
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 88570806d90ff022ede6f39c16325d8696ef0f9e
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561252"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006124"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365 app per Enterprise nelle sottoscrizioni di Visual Studio
 Microsoft 365 Apps for Enterprise (in precedenza Office 365 Pro Plus) è disponibile nelle sottoscrizioni di Visual Studio selezionate. 
@@ -78,13 +78,13 @@ Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visu
 - Per domande sull'IDE di Visual Studio, su Azure DevOps o su altri prodotti o servizi di Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Assicurarsi di attivare questi eccezionali vantaggi per sfruttare al meglio la sottoscrizione di Visual Studio:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Credito singolo di Azure DevTest](vs-azure.md) Se si prevede di sviluppare applicazioni per Office, è necessario attivare la [sottoscrizione per sviluppatori di Office](vs-office-dev.md)
+- [Credito singolo di Azure DevTest](vs-azure.md) Se si prevede di sviluppare applicazioni per Office, è necessario attivare la [sottoscrizione per sviluppatori di Office](./vs-m365.md)

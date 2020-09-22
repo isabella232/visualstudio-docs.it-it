@@ -1,9 +1,9 @@
 ---
-title: WindowsFeature-Enable
+title: windowsfeature-enable
 description: strumento devinit WindowsFeature-Enable.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,20 +11,20 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 679f8599516cc63aa56d327f69164612db8bb3ca
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 115fda00f880e9c2fa1782735dd471fc3df68936
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810400"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005974"
 ---
-# <a name="windowsfeature-enable"></a>WindowsFeature-Enable
+# <a name="windowsfeature-enable"></a>windowsfeature-enable
 
 Lo `windowsfeature-enable` strumento viene usato per abilitare le funzionalità di Windows.
 
 ## <a name="usage"></a>Utilizzo
 
-| Nome                                             | Type   | Obbligatoria | valore                                                                    |
+| Nome                                             | Tipo   | Obbligatoria | valore                                                                    |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                    |
 | [**input**](#input)                              | string | Sì      | Funzionalità di Windows da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.   |

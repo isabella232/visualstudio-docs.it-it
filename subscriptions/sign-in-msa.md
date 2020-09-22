@@ -7,12 +7,12 @@ ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Informazioni su come accedere alla sottoscrizione di Visual Studio con l'account Microsoft (MSA)
-ms.openlocfilehash: d0193c3731840d694bc13764542b1df31c808027
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 52882fcf50a784812752dbf606b21db1ddc5c3ea
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561442"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005937"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Accesso alle sottoscrizioni di Visual Studio con l'account Microsoft (MSA)
 
@@ -43,10 +43,10 @@ R: molti utenti hanno più di una sottoscrizione.  Se è possibile accedere al p
 Se i problemi persistono, è possibile contattare il team di [supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) per ricevere assistenza.  
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Dopo aver eseguito l'accesso al portale delle sottoscrizioni, è consigliabile visitare la pagina relativa ai vantaggi https://my.visualstudio.com/benefits ed esplorare gli eccezionali strumenti, servizi e offerte disponibili.  
+Dopo aver eseguito l'accesso al portale delle sottoscrizioni, è consigliabile visitare la pagina relativa ai vantaggi https://my.visualstudio.com/benefits ed esplorare gli eccezionali strumenti, servizi e offerte disponibili.

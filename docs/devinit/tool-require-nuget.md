@@ -1,9 +1,9 @@
 ---
-title: Richiedi-NuGet
+title: require-nuget
 description: per lo strumento devinit è necessario-NuGet.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: c926bc146a7d85d67c49281effe88958f2031695
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ef5de2d8358dae0f5f29b815cfa2dca26a3f1cef
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810449"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005176"
 ---
-# <a name="require-nuget"></a>Richiedi-NuGet
+# <a name="require-nuget"></a>require-nuget
 
 Lo strumento per scaricare l'interfaccia della riga di comando di `require-nuget` NuGet e aggiunge alla variabile Path. L'interfaccia della riga di comando di NuGet offre l'estensione completa della funzionalità NuGet per installare, creare, pubblicare e gestire i pacchetti senza apportare modifiche ai file di progetto. Scopri di più [sull'interfaccia della](https://docs.microsoft.com/nuget/reference/nuget-exe-cli-reference)riga di comando di NuGet.
 
@@ -26,7 +26,7 @@ Lo strumento per scaricare l'interfaccia della riga di comando di `require-nuget
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Type   | Obbligatoria | valore                                                                                |
+| Nome                                             | Tipo   | Obbligatoria | valore                                                                                |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                                |
 | [**input**](#input)                              | stringa | No       | Versione dell'interfaccia della riga di comando NuGet da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito. |

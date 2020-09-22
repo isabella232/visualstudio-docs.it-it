@@ -1,21 +1,21 @@
 ---
-title: Nuova esperienza git in Visual Studio (anteprima)
+title: Nuova esperienza Git in Visual Studio (anteprima)
 titleSuffix: ''
 description: Informazioni sulla nuova esperienza git integrata in Visual Studio 2019
-ms.date: 09/21/2020
+ms.date: 09/22/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: c42571f58e6e5f531d87b26f44fc86b87913497d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e8bc35a6434ab619e7232b5351ba95aae68db2cd
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862182"
+ms.locfileid: "91005144"
 ---
-# <a name="new-git-experience-in-visual-studio-preview"></a>Nuova esperienza git in Visual Studio (anteprima)
+# <a name="new-git-experience-in-visual-studio-preview"></a>Nuova esperienza Git in Visual Studio (anteprima)
 
 A partire dalla [versione 16,6](/visualstudio/releases/2019/release-notes-v16.6), Visual Studio 2019 include ora una nuova esperienza git che semplifica l'uso di git dall'IDE. Git è il sistema di controllo della versione moderno più diffuso, quindi, indipendentemente dal fatto che tu sia uno sviluppatore professionale o se stai imparando a usare il codice, Git può essere molto utile.
 

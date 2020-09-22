@@ -3,7 +3,7 @@ title: require-azurecli
 description: per lo strumento devinit è necessario azurecli.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e730807cd4658a23c4e39e06ed837f622e0f0e39
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ad76f82a69356f4bbd40d189fb2d8e77a839b31f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810892"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005798"
 ---
 # <a name="require-azurecli"></a>require-azurecli
 
@@ -26,7 +26,7 @@ Lo `require-azurecli` strumento viene usato per installare l' [interfaccia](http
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Type   | Obbligatoria | valore                                                                          |
+| Nome                                             | Tipo   | Obbligatoria | valore                                                                          |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                          |
 | [**input**](#input)                              | stringa | No       | Non usato. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.                               |

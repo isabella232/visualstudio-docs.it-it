@@ -7,12 +7,12 @@ ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
 ms.date: 09/03/2019
 ms.topic: conceptual
 description: Informazioni sulle responsabilità degli amministratori delle sottoscrizioni.
-ms.openlocfilehash: 242fe28346b1264833939202936fa46a47d4f4d3
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: c0c30eb8bc5b63720bd2377990a390df8a173035
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426889"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006137"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Panoramica delle responsabilità degli amministratori
 L'amministratore può gestire le sottoscrizioni per l'organizzazione.  Il ruolo di amministratore è anche responsabile di verificare che le sottoscrizioni siano gestite in conformità alle condizioni di licenza. In questo articolo vengono illustrati responsabilità, vantaggi e limitazioni del ruolo di amministratore.
@@ -37,10 +37,10 @@ Le sottoscrizioni di Visual Studio consentono agli sviluppatori di installare e 
 | Eccezione per gli utenti finali                  | Alla fine di un progetto di sviluppo software, gli utenti finali in genere esaminano un'applicazione e determinano se soddisfa i criteri necessari per il rilascio. Questo processo è denominato test di accettazione utente. I membri di un team, ad esempio uno sponsor aziendale o un responsabile del prodotto possono fungere da intermediari per gli utenti finali. Gli utenti finali che non hanno una sottoscrizione di Visual Studio possono accedere al software per i test di accettazione utente, se l'uso del software è comunque conforme a tutte le condizioni di licenza di Visual Studio. È raro che un utente il cui ruolo primario stia progettando, sviluppando o testando il software venga qualificato anche come "utente finale". |
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Altre informazioni sulle responsabilità degli amministratori:

@@ -7,12 +7,12 @@ ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
 ms.date: 04/17/2020
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione di training di DataCamp inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: b164dc4be4a06151b970ecd5522b82bde9aaeec7
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 67fa9a68a22ee909c4c483246be7dc26c789c5f0
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561494"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006332"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Vantaggio per il training DataCamp nelle sottoscrizioni di Visual Studio
 Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp.  Con DataCamp è possibile acquisire tutte le competenze di data science dal browser con la massima comodità, scegliendo personalmente il momento e l'argomento del training. Senza software da installare e senza requisiti hardware speciali, l'apprendimento di data science è più semplice che mai.
@@ -84,10 +84,10 @@ Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visu
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Esplorare altre opportunità di sviluppo professionale nella propria sottoscrizione:

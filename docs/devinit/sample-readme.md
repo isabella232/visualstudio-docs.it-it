@@ -3,7 +3,7 @@ title: Elenco di esempio
 description: Elenco delle personalizzazioni del repository di esempio che usano devinit.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 28b4601498b5b52084f430bf31b167751735aa6c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9894a54d220bed9db064f4106b36af0b058f4297
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809083"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005624"
 ---
-# <a name="sample-list"></a>Elenco di esempio
+# <a name="sample-list"></a>Elenco degli esempi
 
 La tabella seguente contiene un elenco di tutti gli esempi attualmente disponibili per l'uso di devinit negli spazi dei codebase di GitHub.
 

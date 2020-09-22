@@ -1,9 +1,9 @@
 ---
-title: Richiedi-Choco
+title: require-choco
 description: lo strumento devinit richiede-Choco.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 05f5cfbfcc34589e855ff819dc2edc4bf33cc74f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 18ea1b08a50dc39d404058b07d7448c66a26003d
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810885"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005791"
 ---
-# <a name="require-choco"></a>Richiedi-Choco
+# <a name="require-choco"></a>require-choco
 
 Lo `require-choco` strumento può essere utilizzato per installare [cioccolato](https://chocolatey.org/).
 
@@ -26,7 +26,7 @@ Lo `require-choco` strumento può essere utilizzato per installare [cioccolato](
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Type   | Obbligatoria | valore                                                                      |
+| Nome                                             | Tipo   | Obbligatoria | valore                                                                      |
 |--------------------------------------------------|--------|----------|----------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                      |
 | [**input**](#input)                              | stringa | No       | Non usato. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.                           |

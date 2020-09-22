@@ -7,12 +7,12 @@ ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
 ms.date: 09/16/2020
 ms.topic: conceptual
 description: Informazioni su come visualizzare il numero massimo di sottoscrizioni assegnate nel portale di amministrazione
-ms.openlocfilehash: 60f9961d400e8ce675e6cfb228f9f7bee36c74a0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f13fc75d2c359b05f74d781a3d6a8d0de99d39ff
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807937"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005872"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Utilizzare la funzionalità di utilizzo massimo per tenere traccia del numero di sottoscrizioni assegnate
 Una nuova funzionalità nel portale di amministrazione delle sottoscrizioni di Visual Studio consente di tenere traccia di quante sottoscrizioni sono state acquistate e assegnate e identifica il numero massimo di sottoscrizioni di ogni livello assegnate, sia nell'ultimo anno che per l'intera durata dei contratti. 
@@ -48,12 +48,11 @@ R: le informazioni contenute nella panoramica mostrano le assegnazioni *correnti
 - [Condizioni per contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Per eventuali domande sulle assegnazioni delle sottoscrizioni o altri aspetti del portale di amministrazione, contattare https://visualstudio.microsoft.com/subscriptions/support/ per assistenza. 
 - Vedere altre informazioni su cosa fare se si assegnano più sottoscrizioni di quelle acquistate, uno scenario noto come [sovrallocazione](handle-overclaimed-license.md).
-

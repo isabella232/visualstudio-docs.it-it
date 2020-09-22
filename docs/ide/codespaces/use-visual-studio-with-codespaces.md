@@ -11,16 +11,16 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: c6eef7a63ea69611c6df1f6d2b425ed56437f68c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c3a2e14236c2d24bc9650fab81150cc295826844
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862252"
+ms.locfileid: "91006254"
 ---
 # <a name="how-to-use-visual-studio-with-a-codespace-preview"></a>Come usare Visual Studio con una codespace (anteprima)
 
-Visual Studio offre un supporto eccezionale per lo sviluppo in codespaces GitHub. È possibile creare e connettersi a uno spazio dei comandi e avere tutta la potenza di Visual Studio per lavorare sui progetti in un ambiente host remoto. Anche se il codice sorgente e gli strumenti si trovano in uno spazio dei nomi e la compilazione e il debug si verificano nel cloud, l'esperienza di sviluppo si risulterà veloce e senza attrito, come se si lavorasse localmente. È possibile usare un codespace dall'interno di Visual Studio 2019 Preview ([iscriversi alla versione beta pubblica limitata](https://github.com/features/codespaces/signup)).
+Visual Studio offre un supporto eccezionale per lo sviluppo in codespaces GitHub. È possibile creare e connettersi a uno spazio dei comandi e avere tutta la potenza di Visual Studio per lavorare sui progetti in un ambiente host remoto. Anche se il codice sorgente e gli strumenti si trovano in uno spazio dei nomi e la compilazione e il debug si verificano nel cloud, l'esperienza di sviluppo si risulterà veloce e senza attrito, come se si lavorasse localmente. È possibile usare un codespace dall'interno di Visual Studio 2019 Preview ([iscriversi alla versione beta pubblica limitata](https://github.com/features/codespaces/signup-vs)).
 
 > [!NOTE]
 > Questo articolo descrive in modo specifico l'uso di Visual Studio per connettersi agli spazi di codebase di GitHub. È possibile ottenere informazioni sulla connessione a uno spazio dei tipi con altri client nella documentazione [Visual Studio Code](https://docs.github.com/github/developing-online-with-codespaces/connecting-to-your-codespace-from-visual-studio-code) o [GitHub](https://docs.github.com/github/developing-online-with-codespaces/developing-in-a-codespace) .
@@ -119,4 +119,4 @@ Dopo aver creato l'area di lavoro, è possibile aprire il codespace direttamente
 
 * [Che cosa sono gli spazi di dati di GitHub?](codespaces-overview.md)
 * [Come personalizzare uno spazio di codespace](customize-codespaces.md)
-* [Funzionalità supportate di Visual Studio](supported-features-codespaces.md)
+* [Funzionalità di Visual Studio supportate](supported-features-codespaces.md)

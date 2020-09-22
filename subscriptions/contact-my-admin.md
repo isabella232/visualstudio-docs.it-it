@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Informazioni su come contattare l'amministratore della sottoscrizione per richiedere assistenza in caso di domande o problemi.
-ms.openlocfilehash: 43a0c4ac090331bb9e9c65c232f5277aaee890a7
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 6e2192f81a7003c3c3dcbbc9583ae537ac60cb4b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561416"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005688"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Ottenere assistenza dall'amministratore delle sottoscrizioni
 Se la sottoscrizione di Visual Studio viene fornita dall'azienda o dall'istituto di istruzione di appartenenza, è probabile che sia stata assegnata da un amministratore delle sottoscrizioni.  Gli amministratori possono assegnare o rimuovere sottoscrizioni, modificare gli indirizzi di posta elettronica di accesso, determinare se è possibile scaricare software ed eseguire altre funzioni correlate alla sottoscrizione.
@@ -36,10 +36,10 @@ Date le dimensioni e la complessità di molte organizzazioni, l'utente potrebbe 
 - [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Se non è già stato fatto, è consigliabile attivare questi vantaggi per ottenere il massimo dalla sottoscrizione di Visual Studio:
@@ -48,4 +48,3 @@ Se non è già stato fatto, è consigliabile attivare questi vantaggi per ottene
 - [Azure DevOps](vs-azure-devops.md)
 
 Questi vantaggi e altri sono disponibili all'indirizzo https://my.visualstudio.com/benefits.
-

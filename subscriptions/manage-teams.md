@@ -7,12 +7,12 @@ ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni sulla responsabilità degli amministratori per gestire le sottoscrizioni per i team di grandi dimensioni e per i collaboratori esterni.
-ms.openlocfilehash: 9753c7a69b5334abd0e4ccb299ece3a5403517bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86848fc7b5c9507c1e5df5bd043ee21217afe313
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232313"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005561"
 ---
 # <a name="large-teams-and-external-contractors"></a>Team di grandi dimensioni e collaboratori esterni
 Gli amministratori delle sottoscrizioni di Visual Studio sono responsabili di assicurarsi che ogni utente che interagisce con software di Visual Studio concesso in licenza disponga della licenza appropriata con la propria sottoscrizione di Visual Studio.
@@ -35,10 +35,10 @@ I collaboratori esterni possono disporre di licenze per interagire con l'ambient
 - [Condizioni per contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Altre informazioni sulle responsabilità degli amministratori:

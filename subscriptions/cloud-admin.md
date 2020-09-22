@@ -7,12 +7,12 @@ ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/03/2020
 ms.topic: how-to
 description: Configurazione degli amministratori per le sottoscrizioni mensili
-ms.openlocfilehash: 7a0d28e4cd75749db430353234060f72a8f86485
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbb8d1f7a1519950e84c6f6fe726dd8f52ff29c5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87434303"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006111"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Configurare gli amministratori per le sottoscrizioni mensili di Visual Studio
 
@@ -49,7 +49,7 @@ Per aggiungere gli amministratori:
 9. Nell'elenco di utenti scorrere verso il basso fino all'utente che si vuole impostare come amministratore e selezionarlo. 
    > [!div class="mx-imgBorder"]
    > ![Scegliere un ruolo, amministratore accesso utenti](_img/cloud-admin/add-role-user-access-admin.png "Scegliere ruolo, selezionare amministratore accesso utenti, quindi selezionare il nome dell'utente per impostarlo come amministratore.")
-10. Fare clic su **Save**.
+10. Fare clic su **Salva**.
 11. Fare clic sulla scheda **Assegnazioni ruolo** per verificare che l'utente selezionato sia ora visualizzato come Amministratore Accesso utenti.
 
 Il nuovo amministratore può ora accedere al portale di [Amministrazione](https://manage.visualstudio.com), selezionare la stessa sottoscrizione di Azure usata per acquistare le sottoscrizioni mensili dall'elenco nell'angolo superiore sinistro della pagina e iniziare a gestire tali sottoscrizioni.
@@ -60,10 +60,10 @@ Il nuovo amministratore può ora accedere al portale di [Amministrazione](https:
 Per informazioni sulle sottoscrizioni mensili di Visual Studio, vedere la [Panoramica](vscloud-overview.md) su come acquistare sottoscrizioni. Per acquistare sottoscrizioni mensili di Visual Studio, visitare la Visual Studio Marketplace all'indirizzo [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription) .
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Altre informazioni sulla gestione delle sottoscrizioni di Visual Studio.
@@ -71,6 +71,3 @@ Altre informazioni sulla gestione delle sottoscrizioni di Visual Studio.
 - [Assegna più sottoscrizioni](assign-license-bulk.md)
 - [Modificare sottoscrizioni](edit-license.md)
 - [Determinare l'utilizzo massimo](maximum-usage.md)
-
-
-

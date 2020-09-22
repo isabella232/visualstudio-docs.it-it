@@ -7,12 +7,12 @@ ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: Informazioni su come i partner gestiscono le sottoscrizioni di Visual Studio per i clienti.
-ms.openlocfilehash: b91959431fb653385c02e6465315a02c8be18c60
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 2442f3ac1821c81adcee5d029814ebfb79a6fb17
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426551"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006059"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Partner che gestiscono le sottoscrizioni per conto dei clienti
 Per gestire le sottoscrizioni nel [portale di amministrazione delle sottoscrizioni](https://manage.visualstudio.com)di Visual Studio, è necessario seguire alcuni passaggi. 
@@ -65,10 +65,10 @@ Passaggi per i partner che devono aggiungere una nuova licenza:
 - [Condizioni per contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Visitare il [portale di amministrazione delle sottoscrizioni](https://manage.visualstudio.com) di Visual Studio per gestire le sottoscrizioni.

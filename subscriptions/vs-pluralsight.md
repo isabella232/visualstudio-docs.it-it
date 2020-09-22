@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 08/04/2020
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione del training Pluralsight inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 87cc42e2a0d4c8c95c771a88413b4a8af70bdc14
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509757"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005342"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Vantaggi di training Pluralsight nelle sottoscrizioni di Visual Studio
 
@@ -47,7 +47,7 @@ Il riquadro precedente è un esempio di ciò che un Sottoscrittore di Visual Stu
 
 1. Immettere la password desiderata nel campo **nuova password** , immetterla di nuovo nel campo **Conferma password** e fare clic su **Salva**.
 
-1. Ecco fatto!  A questo punto è possibile iniziare a imparare usando i numerosi corsi Pluralsight.
+1. L'operazione è terminata.  A questo punto è possibile iniziare a imparare usando i numerosi corsi Pluralsight.
 
 ## <a name="status-of-your-pluralsight-subscription"></a>Stato della sottoscrizione di Pluralsight
 Dopo aver attivato il vantaggio Pluralsight, l'aspetto del riquadro nel portale delle sottoscrizioni di Visual Studio cambierà per consentire di tenere traccia dello stato della sottoscrizione.  
@@ -97,7 +97,7 @@ Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visu
 R: non tutte le sottoscrizioni di Visual Studio Enterprise includono il vantaggio Pluralsight.  Controllare la [tabella di idoneità](#eligibility) per verificare se la sottoscrizione è idonea.
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>D: è possibile accedere a playlist o canali di apprendimento personalizzati?
-A: Sì. Un Sottoscrittore di Visual Studio consente di accedere ai ruoli in primo piano, ai percorsi di apprendimento e ai canali personalizzati (playlist) come parte del vantaggio di formazione Pluralsight. Il contenuto in primo piano è stato curato appositamente da Microsoft e Pluralsight ed è destinato all'apprendimento in aree principali di interesse. Attivare il vantaggio Pluralsight tramite il portale delle sottoscrizioni <https://my.visualstudio.com/benefits> di Visual Studio per ottenere l'accesso a questo e ad altri contenuti nella Home page Pluralsight.
+R: Sì. Un Sottoscrittore di Visual Studio consente di accedere ai ruoli in primo piano, ai percorsi di apprendimento e ai canali personalizzati (playlist) come parte del vantaggio di formazione Pluralsight. Il contenuto in primo piano è stato curato appositamente da Microsoft e Pluralsight ed è destinato all'apprendimento in aree principali di interesse. Attivare il vantaggio Pluralsight tramite il portale delle sottoscrizioni <https://my.visualstudio.com/benefits> di Visual Studio per ottenere l'accesso a questo e ad altri contenuti nella Home page Pluralsight.
 
 ### <a name="q-the-pluralsight-tile-doesnt-have-an-activate-link-how-can-i-activate-the-benefit"></a>D: il riquadro Pluralsight non contiene un collegamento "Activate". Come posso attivare il vantaggio?
 R: se è già stato attivato il vantaggio Pluralsight, il collegamento "Activate" verrà sostituito da un collegamento che consente di accedere alla pagina di accesso di Pluralsight.  Viene inoltre visualizzata la data in cui è stato attivato il vantaggio, oltre a informazioni sul tempo rimanente per la sottoscrizione.  Se è già stata usata una sottoscrizione, non sarà possibile attivarne un'altra.
@@ -111,12 +111,12 @@ R: al termine della sottoscrizione gratuita a Pluralsight è possibile scegliere
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Dopo aver creato l'account, si è pronti per iniziare il training.  Visitare [https://www.pluralsight.com](https://www.pluralsight.com) e toccare **Accedi nell'** angolo superiore destro della pagina per avviare un nuovo corso o tornare a un corso già in corso.
 
-Sfrutta i vantaggi della tua sandbox di sviluppo attivando il tuo [credito di Azure DevTest](vs-azure.md). 
+Sfrutta i vantaggi della tua sandbox di sviluppo attivando il tuo [credito di Azure DevTest](vs-azure.md).

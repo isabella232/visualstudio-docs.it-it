@@ -7,12 +7,12 @@ ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
 ms.date: 03/06/2020
 ms.topic: conceptual
 description: Informazioni sulla responsabilità degli amministratori di eseguire gli inventari di pre-produzione
-ms.openlocfilehash: dc307d9d2f83666c6648a35b3e28a81da2de5c38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1abc3c15a7bd9e47b0f449c5a49fdbbc8e7bb590
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232767"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004157"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventario dell'ambiente di preproduzione
 Le sottoscrizioni di Visual Studio semplificano la gestione degli asset basandosi sul conteggio degli utenti piuttosto che dei dispositivi.
@@ -31,10 +31,10 @@ Ecco alcuni modi per semplificare la creazione dell'inventario dell'ambiente di 
 - [Condizioni per contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Altre informazioni sulle responsabilità degli amministratori:
@@ -42,6 +42,3 @@ Altre informazioni sulle responsabilità degli amministratori:
 - [Gestire team di grandi dimensioni e collaboratori esterni](manage-teams.md)
 - [Tenere traccia delle assegnazioni degli utenti ed elaborare gli ordini](assignments-orders.md)
 - Usare [Utilizzo massimo](maximum-usage.md) per tenere traccia degli impegni di acquisto
-
-
-

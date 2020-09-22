@@ -7,12 +7,12 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Scopri la nuova offerta di Visual Studio + GitHub
-ms.openlocfilehash: a87c6927f57e4a5e997fc396382045d6a5f4c03e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cbc1822498dacf3b5e5c5292db28425ced16357
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248192"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006098"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Introduzione alle sottoscrizioni di Visual Studio con GitHub Enterprise  
 
@@ -51,7 +51,7 @@ Poiché le sottoscrizioni di GitHub Enterprise sono assegnate separatamente, l'u
 
 Se non si ha familiarità con GitHub, ecco alcune risorse che possono risultare utili:
 
-| Oggetto                                  | Argomento della Guida di GitHub                                     |
+| Subject                                  | Argomento della Guida di GitHub                                     |
 |------------------------------------------|-------------------------------------------------------|
 | Domande/informazionidi carattere generale          | [Guida di GitHub](https://help.github.com/en)             |
 | Che cos'è GitHub?  Dove trovare ulteriori informazioni su GitHub?  | [About GitHub](https://help.github.com/en/categories/about-github) (Informazioni su GitHub)                                       |
@@ -79,13 +79,10 @@ R: insieme a una sottoscrizione di GitHub Enterprise, si riceve una sottoscrizio
 - Ottenere [supporto tecnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) per GitHub Enterprise.   
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Se non si ha familiarità con GitHub, consultare i progetti divertenti e pratici del [GitHub Learning Lab](https://lab.github.com/) e gli utili suggerimenti proposti.
-
-
-

@@ -3,7 +3,7 @@ title: Comandi devinit
 description: Informazioni dettagliate su come usare i comandi devinit per installare i componenti.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 545f7ec80b528b759db8ccfde21a18a46959913a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a0bd657d9612bde05a820a591c2ab2c1cfdaad3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809707"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005531"
 ---
 # <a name="devinit-commands"></a>comandi devinit
 
 ## <a name="init"></a>Init
 
-```batch
+```console
 > devinit init
 ```
 
@@ -41,7 +41,7 @@ Opzioni facoltative per il `devinit init` comando.
 
 ## <a name="run"></a>Esegui
 
-```batch
+```console
 > devinit run -t <toolname>
 ```
 
@@ -91,19 +91,19 @@ Genera output dettagliato nell'output standard. Se lo strumento da eseguire supp
 
 L'utilizzo di un oggetto `<arg>` che include uno spazio nel suo valore deve includere una coppia aggiuntiva di virgolette precedute.
 
-```batch
+```console
 > devinit run -t <toolname> -<somearg> "<some value>"
 ```
 
 Per l'installazione di DotNet in una directory specifica `C:\Program Files\dotnet` :
 
-```batch
+```console
 > devinit run -t require-dotnetcoresdk --"-InstallDir \"C:\Program Files\dotnet\""
 ```
 
 ## <a name="list"></a>Elenco
 
-```batch
+```console
 > devinit list
 ```
 
@@ -111,7 +111,7 @@ Stampa un elenco di tutti gli strumenti disponibili.
 
 ## <a name="show"></a>Mostra
 
-```batch
+```console
 > devinit show -t <toolname>
 ```
 
@@ -123,15 +123,15 @@ Stampa le informazioni della Guida per uno strumento specifico.
 
 ## <a name="version"></a>Versione
 
-```batch
+```console
 > devinit version
 ```
 
 Stampa le informazioni sulla versione corrente per devinilt.
 
-## <a name="help"></a>Guida
+## <a name="help"></a>Help
 
-```batch
+```console
 > devinit help
 > devinit help list
 ```

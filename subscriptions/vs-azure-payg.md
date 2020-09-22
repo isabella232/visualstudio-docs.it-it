@@ -7,12 +7,12 @@ ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
 ms.date: 04/15/2020
 ms.topic: how-to
 description: Informazioni su come configurare l'account con pagamento in base al consumo di Azure.
-ms.openlocfilehash: 057230d4b3b54e1d514a06f6db2de7412eb2c995
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 111733fb6950e602528fac9ae5b39bba04870d01
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85902894"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005073"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Sottoscrizioni con pagamento in base al consumo di Azure DevTest
 È possibile collaborare con il team nel cloud  creando più sottoscrizioni per sviluppo e test con pagamento in base al consumo, consentendo la collaborazione con altri sottoscrittori e garantendo allo stesso tempo l'isolamento tra i team e l'ambiente.  Sono disponibili tariffe orarie scontate esclusive per sviluppo/test e diritti speciali di uso del cloud per il software della sottoscrizione di Azure.
@@ -45,13 +45,12 @@ R: per apportare modifiche alle sottoscrizioni di Azure:
 4. Verranno visualizzate le opzioni per gestire o annullare la sottoscrizione, rinominarla, cambiare la directory o trasferire la proprietà della fatturazione.
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Molte sottoscrizioni includono ulteriori vantaggi correlati ad Azure, ad esempio Azure DevOps e Azure DevTest individual Credit.  Per altre informazioni su questi vantaggi, vedere:
 - [Azure DevOps](vs-azure-devops.md)
 - [Credito individuale per Azure DevTest](vs-azure.md)
-

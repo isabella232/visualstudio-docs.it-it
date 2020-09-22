@@ -7,12 +7,12 @@ ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 07/29/2020
 ms.topic: conceptual
 description: Informazioni su come individuare e scaricare titoli software Microsoft inclusi nelle sottoscrizioni di Visual Studio
-ms.openlocfilehash: d1d885bbe9322f6d15cecff7e44d879aceb63d4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a267db59f1efc4912748846e61774966f0f6abe
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801828"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005600"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Download di titoli software nelle sottoscrizioni di Visual Studio
 A seconda della sottoscrizione di Visual Studio, può essere disponibile un'ampia gamma di titoli software Microsoft.  Questo articolo descrive come individuare e scaricare il software necessario per sfruttare al meglio la sottoscrizione. 
@@ -53,10 +53,10 @@ Per ottenere un codice Product Key per il download, è possibile selezionare la 
 > ![Richiedere codici Product Key di Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png "Selezionare la chiave di attestazione per richiedere le chiavi rimanenti.")
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Per ulteriori informazioni sull'individuazione, la richiesta e l'esportazione dei codici Product Key, consultare la documentazione relativa ai codici "Product Key":

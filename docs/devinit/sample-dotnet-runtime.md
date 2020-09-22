@@ -3,7 +3,7 @@ title: Runtime di .NET Core
 description: Personalizzazione di esempio con il devinit per il repository DotNet/Runtime.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 477a498059be6d1ee5637a704512fd49b62e11b6
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b38490217a384e748ae97ec4b808f197b4af3b7b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809111"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005652"
 ---
 # <a name="net-core-runtime"></a>Runtime di .NET Core
 
@@ -26,7 +26,7 @@ Questo esempio illustra come personalizzare il runtime [DotNet/Runtime](https://
 
 Questo script viene chiamato da _PostCloneSetup.ps1_ e può essere eseguito anche localmente per configurare il repository. Questo file deve trovarsi nella stessa cartella del _.devcontainer.js_.
 
-```batch
+```console
 devinit init
 git config --system core.longpaths true
 ```
@@ -43,7 +43,7 @@ Il file di _packages.config_ è un file di [cioccolato](https://chocolatey.org/)
 </packages>
 ```
 
-## <a name="devinitjson"></a>.devinit.js
+## <a name="devinitjson"></a>.devinit.json
 
 Contenuto del [_.devinit.jssu_](devinit-json.md) file. Questo file deve trovarsi nella stessa cartella del file _.devcontainer.js_ .
 

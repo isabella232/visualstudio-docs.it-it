@@ -1,9 +1,9 @@
 ---
-title: Choco-aggiornamento
+title: choco-upgrade
 description: strumento devinit Choco-upgrade.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7b7c2d3dd005c54edb882e059679d45e77e539be
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5a735b60fd318d86e97dc4db7570e952a0fcdfd8
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810158"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006036"
 ---
-# <a name="choco-upgrade"></a>Choco-aggiornamento
+# <a name="choco-upgrade"></a>choco-upgrade
 
 Lo `choco-upgrade` strumento può essere usato per installare e aggiornare i pacchetti di [cioccolato](https://chocolatey.org/docs/commandsupgrade) .
 
@@ -26,7 +26,7 @@ Lo `choco-upgrade` strumento può essere usato per installare e aggiornare i pac
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento non eseguirà alcuna operazione.
 
-| Nome                                             | Type   | Obbligatoria | valore                                                                                                          |
+| Nome                                             | Tipo   | Obbligatoria | valore                                                                                                          |
 |--------------------------------------------------|--------|----------|----------------------------------------------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                                                          |
 | [**input**](#input)                              | stringa | No       | Pacchetto da aggiornare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.                                                 |

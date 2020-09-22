@@ -1,9 +1,9 @@
 ---
-title: vcpkg-installazione
+title: vcpkg-install
 description: strumento devinit vcpkg-install.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 2e6dcad778e89b112a8c851f2f27ac46330466af
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7c974b5747c38231ff4115aba17a8e3728672851
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810414"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005988"
 ---
-# <a name="vcpkg-install"></a>vcpkg-installazione
+# <a name="vcpkg-install"></a>vcpkg-install
 
 Lo `vcpkg-install` strumento viene usato per acquisire le librerie C/C++, denominate porte, usando [vcpkg](https://github.com/microsoft/vcpkg).
 
@@ -26,7 +26,7 @@ Lo `vcpkg-install` strumento viene usato per acquisire le librerie C/C++, denomi
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Type   | Obbligatoria | valore                                                                                   |
+| Nome                                             | Tipo   | Obbligatoria | valore                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                                   |
 | [**input**](#input)                              | string | Sì      | Pacchetti da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.                       |

@@ -7,12 +7,12 @@ ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
 ms.date: 02/23/2020
 ms.topic: how-to
 description: Scopri come sfruttare i prezzi speciali di Azure DevTest disponibili per i clienti con contratti Enterprise
-ms.openlocfilehash: 6d7ad872568ead5c7c53dcd8d0429f2ff0444095
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70f7b9877dcc973d2f649eb0cad53599ff6023f3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903133"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005740"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Offerta Azure Enterprise Agreement DevTest
 
@@ -32,7 +32,7 @@ Per abilitare le offerte:
 0. Passare il puntatore del mouse sul nome dell'account. 
 0. Fare clic sull'icona di **modifica** (matita) all'estrema destra. 
 0. Fare clic sulla casella di **controllo sviluppo/test** .
-0. Fare clic su **Save**.
+0. Fare clic su **Salva**.
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>Creare singole sottoscrizioni all'interno dell'account
 Ogni sottoscrittore dell'account può creare una sottoscrizione attenendosi alla procedura seguente:
@@ -42,10 +42,10 @@ Ogni sottoscrittore dell'account può creare una sottoscrizione attenendosi alla
 0. Fare clic su **Acquista**.  (Con questa offerta, non si sta effettivamente acquistando nulla).
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Altre informazioni sulla gestione delle sottoscrizioni di Visual Studio.
@@ -54,6 +54,3 @@ Altre informazioni sulla gestione delle sottoscrizioni di Visual Studio.
 - [Modificare sottoscrizioni](edit-license.md)
 - [Eliminare sottoscrizioni](delete-license.md)
 - [Determinare l'utilizzo massimo](maximum-usage.md)
-
-
-

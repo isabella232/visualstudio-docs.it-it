@@ -7,12 +7,12 @@ ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Informazioni sul vantaggio Account per sviluppatore di Windows incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 02d968875bec5d23fe25daaea5d2829f29a67111
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2686034d95c8faf8caed25b6b2fb4cb7ad83d8fe
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875475"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005382"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Account per sviluppatore di Windows nelle sottoscrizioni di Visual Studio
 L'account per sviluppatore di Windows, incluso in una sottoscrizione selezionata di Visual Studio, consente di inviare app di Windows gratuite e a pagamento a Windows Store.
@@ -47,9 +47,9 @@ Per usare l'account per sviluppatore di Windows, è necessario configurare un ac
 | Visual Studio Enterprise con GitHub Enterprise   | VL  | Incluso       |  Sì|
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Incluso                                                            |Sì|
 | Visual Studio Professional con GitHub Enterprise | VL                                        | Incluso                                                            |Sì|
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                            |  ND|
-| MSDN Platforms (Standard)                                          | VL, Retail                                              |  Non disponibile                                            |  ND|
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |ND|
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                            |  N/D|
+| MSDN Platforms (Standard)                                          | VL, Retail                                              |  Non disponibile                                            |  N/D|
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 ||
 
 <sup>1</sup>  *include: not for Resale (NFR), ETP, Visual Studio Industry Partner (VSIP), BizSpark, MCT software & Services Developer, MVP (Most Valuable Professional), Regional Director (Rd). Esclude: Microsoft Partner Network (MPN), Imagine, MCT software & Services.*
@@ -66,10 +66,10 @@ Non si è certi della sottoscrizione in uso?  Connettersi a per [https://my.visu
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Assicurarsi di attivare questi eccezionali vantaggi per sfruttare al meglio la sottoscrizione di Visual Studio:

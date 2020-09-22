@@ -7,12 +7,12 @@ ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Si possono verificare errori di accesso se si usano alias o nomi descrittivi
-ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f73aa52be518de627d468e8e1171de5f3145753b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234640"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006215"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>L'accesso alle sottoscrizioni di Visual Studio potrebbe non riuscire quando si usano gli alias
 A seconda del tipo di account usato per accedere, le sottoscrizioni disponibili potrebbero non essere visualizzate correttamente quando si accede a [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) . Una delle possibili cause è l'uso di "alias" o "nomi descrittivi" al posto dell'identità di accesso a cui è assegnata la sottoscrizione. Questa situazione viene chiamata "aliasing".
@@ -86,16 +86,16 @@ Entrambe le opzioni sono configurate nel portale di amministrazione completando 
 
 0. Se si modifica un singolo utente, selezionare l'utente nella tabella e fare clic con il pulsante destro del mouse per modificare. Verrà aperto un pannello in cui è possibile modificare l'indirizzo di posta elettronica di accesso. Apportare gli aggiornamenti necessari nel campo indirizzo di posta elettronica di accesso. Fare clic su Save (Salva) per rendere effettive le modifiche.  
 
-0. Se è necessario apportare queste modifiche a una grande quantità di utenti, è possibile utilizzare la funzionalità di modifica in blocco. Per ulteriori informazioni, vedere l'articolo su come [modificare più Sottoscrittori utilizzando la modifica bulk](https://docs.microsoft.com/visualstudio/subscriptions/edit-license#edit-multiple-subscribers-using-bulk-edit) .
+0. Se è necessario apportare queste modifiche a una grande quantità di utenti, è possibile utilizzare la funzionalità di modifica in blocco. Per ulteriori informazioni, vedere l'articolo su come [modificare più Sottoscrittori utilizzando la modifica bulk](./edit-license.md#edit-multiple-subscribers-using-bulk-edit) .
 
 > [!NOTE]
 > Per le modifiche sia singole che bulk, i sottoscrittori riceveranno un messaggio di posta elettronica con le istruzioni per la modifica dell'indirizzo di posta elettronica di accesso e dovranno eseguire l'accesso con l'indirizzo di posta elettronica aggiornato. È anche importante notare che se il Sottoscrittore ha attivato in precedenza i vantaggi con l'altro indirizzo di accesso, sarà necessario continuare a usare l'altro indirizzo di accesso per accedervi.  
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Passaggi successivi
@@ -104,5 +104,3 @@ Altre informazioni sulla gestione delle sottoscrizioni di Visual Studio.
 - [Assegna più sottoscrizioni](assign-license-bulk.md)
 - [Modificare sottoscrizioni](edit-license.md)
 - [Determinare l'utilizzo massimo](maximum-usage.md)
-
-

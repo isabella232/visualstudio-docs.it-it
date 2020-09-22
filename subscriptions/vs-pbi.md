@@ -7,12 +7,12 @@ ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
 ms.date: 03/26/2020
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione Power BI inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 9a16e827c45e600ff3b5edc8579b5941aa80ca90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82325c090087aea81f43472ebb41a385af51c19d
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801685"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005026"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro nelle sottoscrizioni di Visual Studio
 
@@ -65,11 +65,11 @@ Per usare Power BI Pro, è necessario configurare un account o accedere con un a
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, retail, NFR selezionato<sup>1</sup> | Disponibile       |  Sì|
 | Visual Studio Enterprise con GitHub Enterprise  | VL | Disponibile       |  Sì|
-| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Non disponibile                                                            |ND         |
-| Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                            |ND         |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                            |ND         |
+| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Non disponibile                                                            |N/D         |
+| Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                            |N/D         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                            |N/D         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Disponibile       |  Sì|
-| Visual Studio Enterprise (cloud mensile) | Azure                                       | Non disponibile                                  |ND|
+| Visual Studio Enterprise (cloud mensile) | Azure                                       | Non disponibile                                  |N/D|
 ||
 
 <sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT software & Services Developer, MCT software & Service, most VALUABLE Professional (MVP), Regional Director (Rd).  Escludi: Microsoft Partner Network (MPN), ETP, Imagine.*
@@ -114,11 +114,11 @@ R: No.  Il vantaggio Power BI Pro non può essere aggiunto ai tenant per enti pu
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Per attivare il vantaggio Power BI Pro, visitare [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .
-- Sfrutta i vantaggi della tua sandbox di sviluppo attivando il tuo [credito di Azure DevTest](vs-azure.md). 
+- Sfrutta i vantaggi della tua sandbox di sviluppo attivando il tuo [credito di Azure DevTest](vs-azure.md).

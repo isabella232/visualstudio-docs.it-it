@@ -7,12 +7,12 @@ ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Informazioni su come attivare la sottoscrizione Parasoft Virtualize/SOA Test Professional inclusa nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 8472c27e0196ec5837fccb17535061ea9b1b4867
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f32a15b0c2ab292f55c5ec5153161f03598ef4
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904384"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006267"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Vantaggio Parasoft Virtualize/SOAtest Professional Desktop nelle sottoscrizioni di Visual Studio
 
@@ -75,11 +75,11 @@ ms.locfileid: "85904384"
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, retail, NFR selezionato<sup>1</sup> | 6 mesi       |  Sì       |
 | Visual Studio Enterprise con GitHub Enterprise | VL | 6 mesi       |  Sì       |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                           |ND         |
-| Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                           |ND         |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                           |ND         |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                                           |ND         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |ND|
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                           |N/D         |
+| Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                           |N/D         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                           |N/D         |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                                           |N/D         |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 ||
 
 <sup>1</sup>  *include: Microsoft Partner Network (Enterprise).  Esclude: not for Resale (NFR), Visual Studio Industry Partner (VSIP), ETP, MCT software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT software & Services.*
@@ -95,10 +95,10 @@ ms.locfileid: "85904384"
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Sfrutta i vantaggi della tua sandbox di sviluppo attivando il tuo [credito di Azure DevTest](vs-azure.md). 
+Sfrutta i vantaggi della tua sandbox di sviluppo attivando il tuo [credito di Azure DevTest](vs-azure.md).

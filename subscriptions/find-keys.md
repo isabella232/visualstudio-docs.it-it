@@ -7,12 +7,12 @@ ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
 ms.date: 07/30/2020
 ms.topic: conceptual
 description: Informazioni su come trovare, richiedere ed esportare codici Product Key nelle sottoscrizioni di Visual Studio
-ms.openlocfilehash: e9be61db1f72684dcff12d015ec5180607b41977
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a246f66e429b78647f217468c7c19b703b419062
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250730"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004967"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Ricerca e richiesta di codici Product Key nelle sottoscrizioni di Visual Studio
 Questo articolo illustra come individuare, richiedere ed esportare codici Product Key da https://my.visualstudio.com/productkeys.  Per altre informazioni sull'attivazione di un prodotto con un codice Product Key, sulle versioni per attivazione singola e per contratti multilicenza dei codici Product Key e sui limiti giornalieri per la richiesta di tali codici, vedere la [panoramica dei codici Product Key](product-keys.md).
@@ -67,10 +67,10 @@ Come si può osservare, sono elencate diverse versioni.  Un codice Product Key �
 Per esportare le chiavi, è sufficiente selezionare il collegamento **Esporta tutte le chiavi** all'estrema destra della pagina codici Product Key.  Verrà creato un file con estensione xml intitolato KeysExport.xml e si potrà scegliere se aprire o salvare il file.  Sarà necessario aprire il file con un'applicazione in grado di gestire file con estensione xml.  Ad esempio, è possibile aprire il file come una cartella di lavoro di sola lettura in Excel.
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Quando è il momento di scaricare il software e di usare i codici Product Key, visitare la pagina https://my.visualstudio.com/downloads.  Per altre informazioni sul download del software, vedere la [panoramica sul download](download-software.md).

@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono assegnare licenze ai sottoscrittori
-ms.openlocfilehash: aa3c219a605b552ea1c4b785ff8fb1f92edf04ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f458e12cd27688f910917842de89e6377675fb69
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249471"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006202"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Assegnare licenze nel portale di amministrazione delle sottoscrizioni di Visual Studio
 In qualità di amministratore delle sottoscrizioni di Visual Studio, è possibile usare il portale di amministrazione per assegnare sottoscrizioni a singoli utenti e gruppi di utenti.
@@ -20,7 +20,7 @@ In qualità di amministratore delle sottoscrizioni di Visual Studio, è possibil
 Per i gruppi di utenti, è possibile scegliere la modalità di assegnazione delle sottoscrizioni.  
 - È possibile assegnare le sottoscrizioni una alla volta.
 - È anche possibile caricare in modo rapido e semplice elenchi di sottoscrittori e le relative informazioni di sottoscrizione usando la funzionalità di [aggiunta in blocco](assign-license-bulk.md) .
-- Se l'organizzazione utilizza Microsoft Azure Active Directory (Azure AD), è possibile [utilizzare Azure ad gruppi per assegnare le sottoscrizioni](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) a gruppi di utenti.  
+- Se l'organizzazione utilizza Microsoft Azure Active Directory (Azure AD), è possibile [utilizzare Azure ad gruppi per assegnare le sottoscrizioni](./assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) a gruppi di utenti.  
 
 
 ## <a name="add-a-single-subscriber"></a>Aggiungere un singolo sottoscrittore
@@ -59,14 +59,12 @@ Ecco come assegnare una sottoscrizione di Visual Studio a un nuovo utente per po
 Dopo l'aggiunta di un Sottoscrittore, un messaggio di posta elettronica di assegnazione verrà inviato automaticamente al nuovo Sottoscrittore con ulteriori istruzioni. È possibile inviare di nuovo il messaggio di posta elettronica di assegnazione in qualsiasi momento selezionando il Sottoscrittore e quindi selezionando il pulsante **Invia** di nuovo nel menu in alto.  Per inviare di nuovo i messaggi di posta elettronica a più utenti, tenere premuto il tasto **CTRL** mentre si selezionano i sottoscrittori.  Quando si seleziona il pulsante **Invia** di nuovo, viene visualizzata una finestra di dialogo in cui viene chiesto di confermare che si desidera inviare nuovamente a tali Sottoscrittori.  
 
 ## <a name="see-also"></a>Vedere anche
-- [Documentazione di Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentazione di Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentazione di Azure](https://docs.microsoft.com/azure/)
-- [Documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentazione di Visual Studio](/visualstudio/)
+- [Documentazione di Azure DevOps](/azure/devops/)
+- [Documentazione di Azure](/azure/)
+- [Documentazione di Microsoft 365](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Se è necessario aggiungere molti utenti,  vedere le informazioni su come assegnare sottoscrizioni a [più sottoscrittori](assign-license-bulk.md).
 - Serve aiuto?  Contattare il [supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
-
-
