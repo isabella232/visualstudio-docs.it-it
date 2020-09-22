@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 105f16c0d9deb8d94a102818c5335af18685c675
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439338"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839272"
 ---
 # <a name="call-tree-view"></a>Visualizzazione Albero delle chiamate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,22 +36,22 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
   
  La visualizzazione Albero delle chiamate può essere personalizzata per aggiungere o rimuovere colonne. Fare clic con il pulsante destro del mouse sulla **barra del titolo Nome colonna** e selezionare **Aggiungi/Rimuovi colonne**.  
   
- La visualizzazione Albero delle chiamate può essere configurata per la riduzione del rumore limitando la quantità di dati presentati. Con la riduzione del rumore, i problemi di prestazioni nella visualizzazione sono più evidenti. Quando i problemi di prestazioni sono più facili da trovare anche l'analisi è più semplice. Per altre informazioni, vedere [Procedura: Configurare la riduzione del rumore nelle visualizzazioni Report](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
+ La visualizzazione Albero delle chiamate può essere configurata per la riduzione del rumore limitando la quantità di dati presentati. Con la riduzione del rumore, i problemi di prestazioni nella visualizzazione sono più evidenti. Quando i problemi di prestazioni sono più facili da trovare anche l'analisi è più semplice. Per altre informazioni, vedere [procedura: configurare la riduzione del rumore nelle visualizzazioni report](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
   
 > [!NOTE]
 > Se la riduzione del rumore è configurata per visualizzare un avviso quando viene attivata, nel report viene visualizzata una barra informazioni.  
   
  Per altre informazioni sulle definizioni delle colonne nella visualizzazione Albero delle chiamate, vedere gli argomenti seguenti:  
   
- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-sampling-data.md)  
+ [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-sampling-data.md)  
   
- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)  
+ [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)  
   
- [Visualizzazione Albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
+ [Visualizzazione albero delle chiamate: campionamento](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
   
- [Visualizzazione albero delle chiamate](../profiling/call-tree-view-contention-data.md)  
+ [Visualizzazione Albero delle chiamate](../profiling/call-tree-view-contention-data.md)  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visualizzazioni dei report di prestazioni](../profiling/performance-report-views.md)   
+ [Visualizzazioni rapporto di prestazioni](../profiling/performance-report-views.md)   
  [Informazioni sui valori dei dati di strumentazione](../profiling/understanding-instrumentation-data-values.md)   
  [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)

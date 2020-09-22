@@ -14,42 +14,42 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e70b83046c41b13cb51324eb63e81b26a118a81f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403512"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839880"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Gerarchia lessicale dei tipi di simboli
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La tabella seguente illustra i tipi di simboli nella gerarchia lessicale.  
+Nella tabella seguente vengono illustrati i tipi di simboli della gerarchia lessicale.  
   
 ## <a name="symbol-types"></a>Tipi di simboli  
   
 |Tipo di simbolo|Descrizione|  
 |-----------------|-----------------|  
-|[Annotazione](../../debugger/debug-interface-access/annotation.md)|Specifica un percorso con annotazione nel codice del programma.|  
-|[Blocco](../../debugger/debug-interface-access/block.md)|Specifica gli ambiti annidati in funzioni.|  
-|`Compiland`|Specifica un `compiland` collegati file .exe.|  
-|[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)|Specifica i dati compilando che potrebbero richiedere il caricamento dei dettagli aggiuntivi compilando e in questo modo incorrere in fase di esecuzione sovraccarico per recuperare.|  
-|[CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)|Specifica delle variabili di ambiente aggiuntive significative per la compilazione del modulo diversamente.|  
+|[Annotazione](../../debugger/debug-interface-access/annotation.md)|Specifica una posizione con annotazioni nel codice del programma.|  
+|[Bloccato](../../debugger/debug-interface-access/block.md)|Specifica gli ambiti annidati nelle funzioni.|  
+|`Compiland`|Specifica un oggetto `compiland` collegato al file exe.|  
+|[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)|Specifica i dati di modulo che possono richiedere il caricamento di dettagli modulo aggiuntivi e pertanto comportare un sovraccarico in fase di esecuzione da recuperare.|  
+|[CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)|Specifica le variabili di ambiente aggiuntive significative per la compilazione di modulo.|  
 |[Custom (Debug Interface Access SDK)](../../debugger/debug-interface-access/custom-debug-interface-access-sdk.md)|Specifica un simbolo definito dall'utente.|  
-|[Dati (Debug Interface Access SDK)](../../debugger/debug-interface-access/data-debug-interface-access-sdk.md)|Specifica le variabili come parametri, variabili locali, le variabili globali e i membri della classe.|  
-|[Exe](../../debugger/debug-interface-access/exe.md)|Specifica l'ambito globale dei dati. corrisponde a un intero file .exe o DLL.|  
-|[FuncDebugEnd](../../debugger/debug-interface-access/funcdebugend.md)|Specifica una funzione che dispone di un punto definito in cui il debug è necessario terminare.|  
-|[FuncDebugStart](../../debugger/debug-interface-access/funcdebugstart.md)|Specifica una funzione che dispone di un punto definito quale debug ha inizio.|  
+|[Dati (Debug Interface Access SDK)](../../debugger/debug-interface-access/data-debug-interface-access-sdk.md)|Specifica tali variabili come parametri, variabili locali, variabili globali e membri della classe.|  
+|[Exe](../../debugger/debug-interface-access/exe.md)|Specifica l'ambito globale dei dati; corrisponde a un intero file con estensione exe o dll.|  
+|[FuncDebugEnd](../../debugger/debug-interface-access/funcdebugend.md)|Specifica una funzione che dispone di un punto definito in corrispondenza del quale deve terminare il debug.|  
+|[FuncDebugStart](../../debugger/debug-interface-access/funcdebugstart.md)|Specifica una funzione che ha un punto definito da cui iniziare il debug.|  
 |[Funzione (Debug Interface Access SDK)](../../debugger/debug-interface-access/function-debug-interface-access-sdk.md)|Specifica una funzione.|  
 |[Etichetta (Debug Interface Access SDK)](../../debugger/debug-interface-access/label-debug-interface-access-sdk.md)|Specifica una posizione nel codice del programma.|  
-|[PublicSymbol](../../debugger/debug-interface-access/publicsymbol.md)|Specifica un simbolo esterno che viene visualizzato quando si compila il programma eseguibile.|  
-|[Thunk](../../debugger/debug-interface-access/thunk.md)|Specifica un `thunk`.|  
-|[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|Specifica un `namespace`identificatore.|  
+|[PublicSymbol](../../debugger/debug-interface-access/publicsymbol.md)|Specifica un simbolo esterno visualizzato quando si compila il programma eseguibile.|  
+|[Thunk](../../debugger/debug-interface-access/thunk.md)|Specifica un oggetto `thunk` .|  
+|[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|Specifica un `namespace` identificatore.|  
   
 > [!NOTE]
-> Proprietà dei simboli aggiuntive potrebbero essere disponibili a seconda del tipo di simbolo. Queste proprietà sono elencate negli argomenti simbolo singoli.  
+> È possibile che siano disponibili ulteriori proprietà dei simboli a seconda del tipo di simbolo. Queste proprietà sono elencate nei singoli argomenti dei simboli.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
- [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
- [Simboli e relativi tag](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   
+ [IDiaSymbol:: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
+ [Simboli e tag dei simboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   
  [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

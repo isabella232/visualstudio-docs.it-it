@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: personalizzare le colonne della visualizzazione report | Microsoft Docs'
+title: Personalizzare colonne delle visualizzazioni dei rapporti | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 58d2a7b7c83f1260427ff0d805510e08ae35c019
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edc58c74daf3cdd1e80256f9915936f4cef6d3fa
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329797"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851177"
 ---
 # <a name="how-to-customize-report-view-columns"></a>Procedura: Personalizzare le colonne delle visualizzazioni dei report
 Gli strumenti per le prestazioni in Visual Studio Team System Development Edition sono completamente integrati nell'ambiente di sviluppo integrato (IDE) per fornire un'esperienza utente. L'elenco seguente indica le visualizzazioni che possono essere personalizzate aggiungendo, rimuovendo e ridisponendo le colonne:

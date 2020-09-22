@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1dddb9035a73a7d7da281a77760eafb066c4ddd5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64780472"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839295"
 ---
-# <a name="idiasymbolgetguid"></a>IDiaSymbol::get_guid
+# <a name="idiasymbolget_guid"></a>IDiaSymbol::get_guid
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera l'identificatore univoco globale del simbolo (GUID).  
+Recupera l'identificatore univoco globale (GUID) del simbolo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,19 +35,19 @@ HRESULT get_guid ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce il GUID del simbolo.  
+ out Restituisce il GUID del simbolo.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="requirements"></a>Requisiti  
   
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
-|Intestazione:|DIA2.h|  
+|Intestazione:|dia2. h|  
 |Version:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  

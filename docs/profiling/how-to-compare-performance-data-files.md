@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: confrontare i file di dati delle prestazioni | Microsoft Docs'
+title: Confrontare i file di dati delle prestazioni | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fdb8057823732503a215fb4f2c12ebee33b34c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f42ceaa251b59eae426bfbe52c29b21ae5075077
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330813"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851242"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Procedura: Confrontare i file di dati delle prestazioni
 È possibile confrontare i risultati di due diversi file di dati del profiler, con estensione *vsp* o *vsps*, creando un report o una visualizzazione di confronto "Diff". Il confronto indica le differenze, le regressioni relative alle prestazioni e i miglioramenti riscontrati da una sessione di profilatura all'altra.
@@ -48,7 +48,7 @@ ms.locfileid: "85330813"
 
 4. (facoltativo) Digitare un valore per **Soglia**.
 
-5. Fare clic su **Apply**.
+5. Fare clic su **Applica**.
 
 ### <a name="to-compare-report-files"></a>Per confrontare file di rapporto
 

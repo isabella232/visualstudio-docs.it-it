@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: creare manualmente sessioni di prestazioni | Microsoft Docs'
+title: Creare manualmente sessioni di prestazioni | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a1701322bec623c6bb2657f78ecdcc1dc16dde1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b918c201509829ad4194da415441ddd9506638a1
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85327668"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851008"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Procedura: Creare manualmente sessioni di prestazioni
 Una sessione di prestazioni può essere creata manualmente. Per eseguire questa operazione, non è necessario aprire un progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per altre informazioni, vedere [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md).

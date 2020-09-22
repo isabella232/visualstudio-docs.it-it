@@ -1,6 +1,6 @@
 ---
-title: Collegare il profiler a un'app ASP.NET per raccogliere dati sulla concorrenza
-ms.custom: seodec18
+title: Connetti profiler a ASP.NET per raccogliere dati di concorrenza
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0e215fdd-55f8-43ef-9534-06542eefe223
@@ -10,14 +10,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: d7e9f2e7fe68dc7bc9d7ceec9e677ab98d4ee1d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939cf4eb16ff685b8ba8dc19064f497f3f7c6464
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329365"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807989"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione Web ASP.NET per raccogliere dati di concorrenza tramite la riga di comando
+
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un'applicazione ASP.NET e raccogliere dati di concorrenza di thread e processi.
 
 Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
@@ -52,7 +53,7 @@ Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il 
 
    - `PID` specifica l'ID o il nome del processo di lavoro ASP.NET. È possibile visualizzare gli ID di processo di tutti i processi in esecuzione in Gestione attività di Windows.
 
-   - [/TargetCLR](../profiling/targetclr.md) **:** `Version` specifica la versione del Common Language Runtime (CLR) da profilare quando più di una versione del runtime viene caricata in un'applicazione. Questo parametro è facoltativo.
+   - [/TargetCLR](../profiling/targetclr.md) **:** `Version` specifica la versione del Common Language Runtime (CLR) da profilare quando più di una versione del runtime viene caricata in un'applicazione. Questo parametro è facoltativo e,
 
 ## <a name="control-data-collection"></a>Controllare la raccolta dati
  Mentre l'applicazione è in esecuzione, è possibile controllare la raccolta dei dati avviando e interrompendo la scrittura dei dati nel file usando le opzioni *VSPerfCmd.exe* . Per controllare la raccolta dei dati, è possibile raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o arresto dell'applicazione.

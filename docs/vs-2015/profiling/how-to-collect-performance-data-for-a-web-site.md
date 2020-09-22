@@ -20,16 +20,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3307b5372852d6f3e269264a02fa2c90cb1acd22
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432793"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839388"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedura: Raccogliere dati sulle prestazioni per un sito Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per raccogliere dati sulle prestazioni di un'applicazione Web di **, è possibile usare la** Creazione guidata sessione di prestazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . È possibile profilare un'applicazione Web aperta in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oppure un sito Web di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] disponibile nel computer locale e non aperto nell'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+È possibile utilizzare la **creazione guidata sessione di prestazioni** per raccogliere dati sulle prestazioni per un' [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] applicazione Web. È possibile profilare un'applicazione Web aperta in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]oppure un sito Web di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] presente nel computer locale e non aperto nell'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 > [!NOTE]
 > La **Creazione guidata sessione di prestazioni** consente di aggiungere dati di interazione tra livelli (TIP), dati relativi alle prestazioni di JScript o entrambi ai dati di profilatura raccolti. L'opzione TIP raccoglie dati dai processi sul lato server. L'opzione di profilatura JScript raccoglie dati da script in esecuzione in un sito Web locale o remoto. Nella maggior parte dei casi, è consigliabile scegliere solo una delle opzioni.  
@@ -42,7 +42,7 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di **, è possibil
   
 - Alcuni utenti possono negare l'accesso alle funzionalità di profilatura a tutti gli altri utenti.  
   
-  Per altre informazioni, vedere [Profilatura e sicurezza in Windows Vista](../profiling/profiling-and-windows-vista-security.md) e le opzioni ADMIN in [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Per ulteriori informazioni, vedere [profilatura e sicurezza in Windows Vista](../profiling/profiling-and-windows-vista-security.md) e le opzioni di amministrazione in [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-profile-a-web-site-project"></a>Per profilare un progetto di sito Web  
   
@@ -58,9 +58,9 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di **, è possibil
   
     - Per raccogliere dati di interazione tra livelli, selezionare la casella di controllo **Abilita profilatura interazione tra livelli** .  
   
-    - Per raccogliere dati da JavaScript in esecuzione nelle pagine Web, selezionare la casella di controllo **Profila JavaScript** .  
+    - Per raccogliere dati da JavaScript in esecuzione nelle pagine Web, selezionare la casella di controllo **profilo JavaScript** .  
   
-6. Scegliere **Avanti**.  
+6. Fare clic su **Avanti**.  
   
 7. Nella quarta pagina della procedura guidata fare clic su **Fine**.  
   
@@ -80,11 +80,11 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di **, è possibil
   
 5. Nella terza pagina della procedura guidata digitare l'URL della home page dell'applicazione nella casella **Specificare l'URL o il percorso che esegue l'applicazione Web** e quindi fare clic su **Avanti**.  
   
-   - Per un sito Web basato su un server (IIS), digitare l'URL, ad esempio **http://localhost/MySite/default.aspx**. In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] presente nel computer locale nella radice dell'applicazione di MySite e in Internet Explorer verrà aperta la pagina default.aspx del sito per avviare la sessione.  
+   - Per un sito Web basato su server (IIS), digitare un URL, ad esempio **http://localhost/MySite/default.aspx** . In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] presente nel computer locale nella radice dell'applicazione di MySite e in Internet Explorer verrà aperta la pagina default.aspx del sito per avviare la sessione.  
   
    - Per un sito Web basato su file, digitare un percorso, ad esempio file///**c:\WebSites\MySite\default.aspx**. In questo modo verrà profilata l'applicazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] presente in c:\webSites\MySite e in Internet Explorer verrà aperta la pagina http://localhost:nnnn/MySite/default.aspx per avviare la sessione.  
   
-   - Per i siti esterni che si desidera raccogliere dati JavaScript, digitare l'URL, ad esempio http:\//www.contoso.com.  
+   - Per i siti esterni sui quali si vuole raccogliere dati JavaScript, digitare l'URL, ad esempio http: \/ /www.contoso.com.  
   
      Per altre informazioni, visualizzare le pagine delle proprietà per un file binario di destinazione [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
@@ -92,18 +92,18 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di **, è possibil
   
    - Per raccogliere dati di interazione tra livelli, selezionare la casella di controllo **Abilita profilatura interazione tra livelli** .  
   
-   - Per raccogliere dati da JavaScript in esecuzione nelle pagine Web, selezionare la casella di controllo **Profila JavaScript** .  
+   - Per raccogliere dati da JavaScript in esecuzione nelle pagine Web, selezionare la casella di controllo **profilo JavaScript** .  
   
-7. Scegliere **Avanti**.  
+7. Fare clic su **Avanti**.  
   
 8. Nella quarta pagina della procedura guidata fare clic su **Fine**.  
   
 9. Verrà creata una sessione di prestazioni per l'applicazione ASP.NET e il sito Web verrà avviato nel browser. Verificare la funzionalità che si vuole profilare e quindi chiudere il browser.  
   
-     Il profiler genera il file di dati e apre la visualizzazione Riepilogo dei dati nella finestra principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Il profiler genera il file di dati e apre la visualizzazione Riepilogo dei dati nella finestra principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 ## <a name="see-also"></a>Vedere anche  
- [Overviews](../profiling/overviews-performance-tools.md)  (Panoramiche)  
- [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)  (Configurazione di sessioni di prestazioni)  
+ [Panoramiche](../profiling/overviews-performance-tools.md)   
+ [Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)   
  [Informazioni sui valori dei dati di strumentazione](../profiling/understanding-instrumentation-data-values.md)   
  [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)

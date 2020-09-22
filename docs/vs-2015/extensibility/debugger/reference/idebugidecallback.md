@@ -11,19 +11,19 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 068944d3a8d9c3fd8d455602b03387903ccfa992
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431498"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840100"
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni di Common Language Runtime, vedi [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [gestito esempio analizzatore di espressioni](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015, questo metodo di implementazione degli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere l'esempio degli [analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e dell' [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Consente a un analizzatore di espressioni (EE) visualizzare un messaggio nella finestra di output del debugger.  
+ Consente a un analizzatore di espressioni (EE) di visualizzare un messaggio nella finestra di output del debugger.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,18 +35,18 @@ IDebugIDECallback : IUnknown
  Questo callback viene implementato dal motore di debug gestito.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Che può essere utilizzata da un analizzatore di espressioni per inviare l'output alla finestra di output del debugger.  
+ Può essere utilizzato da un analizzatore di espressioni per inviare l'output alla finestra di output del debugger.  
   
 ## <a name="methods"></a>Metodi  
  Questa interfaccia implementa il metodo seguente:  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
-|[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|Invia la stringa di messaggio specificato alla finestra di output del debugger.|  
+|[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|Invia la stringa di messaggio specificata alla finestra di output del debugger.|  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: EE.h  
+ Intestazione: EE. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

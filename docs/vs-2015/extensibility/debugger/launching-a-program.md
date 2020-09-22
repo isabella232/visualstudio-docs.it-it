@@ -12,52 +12,52 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b54250a54960f346f60c5d668755fb5d28ab376e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430200"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840269"
 ---
 # <a name="launching-a-program"></a>Avvio di un programma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Gli utenti che desiderano eseguire il debug di un programma è possono premere F5 per eseguire il debugger dall'IDE. Questo passaggio inizia una serie di eventi che risultano dell'IDE per la connessione a un motore di debug (DE), che a sua volta connesso, o collegato, per il programma come indicato di seguito:  
+Gli utenti che desiderano eseguire il debug di un programma possono premere F5 per eseguire il debugger dall'IDE. Viene avviata una serie di eventi che in definitiva comportano la connessione dell'IDE a un motore di debug (DE), che a sua volta è connesso o collegato al programma, come indicato di seguito:  
   
-1. L'IDE chiama innanzitutto il pacchetto del progetto per ottenere le impostazioni di debug progetto attivo della soluzione. Le impostazioni includono la directory di avvio, le variabili di ambiente, la porta in cui verrà eseguito il programma e la Germania da utilizzare per creare il programma, se specificato. Queste impostazioni vengono passate al pacchetto di debug.  
+1. L'IDE chiama prima il pacchetto del progetto per ottenere le impostazioni di debug del progetto attive della soluzione. Le impostazioni includono la directory iniziale, le variabili di ambiente, la porta in cui il programma viene eseguito e la DE da usare per creare il programma, se specificato. Queste impostazioni vengono passate al pacchetto di debug.  
   
-2. Se viene specificato un CRI, la Germania chiama il sistema operativo per avviare il programma. Di conseguenza l'avvio del programma, viene caricato l'ambiente del programma in fase di esecuzione. Ad esempio, se un programma viene scritto in codice MSIL, common language runtime verrà richiamato per eseguire il programma.  
+2. Se viene specificato un valore DE, il DE chiama il sistema operativo per avviare il programma. Come conseguenza dell'avvio del programma, viene caricato l'ambiente di runtime del programma. Se, ad esempio, un programma è scritto in MSIL, il Common Language Runtime verrà richiamato per eseguire il programma.  
   
     -oppure-  
   
-    Se non viene specificato un CRI, la porta chiama il sistema operativo per avviare il programma, che comporta da caricare nell'ambiente in fase di esecuzione del programma.  
+    Se non si specifica un valore di, la porta chiama il sistema operativo per avviare il programma, causando il caricamento dell'ambiente di run-time del programma.  
   
    > [!NOTE]
-   > Se un CRI viene usato per avviare un programma, è probabile che la Germania stesso verrà collegato al programma.  
+   > Se viene usato un DE per avviare un programma, è probabile che lo stesso DE venga allegato al programma.  
   
-3. A seconda del fatto che la Germania o la porta ha avviato il programma, il DE o l'ambiente di run-time quindi crea una descrizione del programma, o un nodo e informa la porta su cui l'esecuzione del programma.  
+3. A seconda del fatto che la DE o la porta abbia avviato il programma, il DE o l'ambiente di runtime crea una descrizione o un nodo del programma e notifica alla porta che il programma è in esecuzione.  
   
    > [!NOTE]
-   > È consigliabile che l'ambiente di runtime creare il nodo di programma, perché il nodo di programma è una rappresentazione leggera di un programma che è possibile eseguire il debug. Non è necessario caricare un intero DE sufficiente per creare e registrare un nodo di programma. Se la Germania è progettato per l'esecuzione in corso l'IDE, ma nessun IDE è in esecuzione, deve essere un componente che è possibile aggiungere un nodo di programma per la porta.  
+   > È consigliabile che l'ambiente di runtime crei il nodo del programma, poiché il nodo del programma è una rappresentazione semplificata di un programma di cui è possibile eseguire il debug. Non è necessario caricare un intero DE solo per creare e registrare un nodo del programma. Se la DE è progettata per essere eseguita nel processo dell'IDE, ma nessun IDE è effettivamente in esecuzione, deve essere presente un componente che può aggiungere un nodo di programma alla porta.  
   
-   Il programma appena creato, insieme a eventuali altri programmi, correlati o non correlati, avviato o collegati per dall'IDE stesso, creare una sessione di debug.  
+   Il programma appena creato, insieme ad altri programmi, correlati o non correlati, avviato o collegato dallo stesso IDE, compongono una sessione di debug.  
   
-   A livello di codice quando l'utente prima di tutto preme **F5**, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]del pacchetto di debug chiama il pacchetto del progetto, ovvero associato con il tipo di programma viene avviato, tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metodo, che a sua volta compila un <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> struttura con impostazioni di debug della soluzione progetto attivo. Questa struttura viene passata al pacchetto di debug tramite una chiamata al <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> (metodo). Il pacchetto di debug crea quindi un'istanza di gestione del debug sessione (SDM), che avvia il programma in fase di motori di debug in fase di debug e di eventuali oggetti associati.  
+   A livello di codice, quando l'utente preme prima **F5**, il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pacchetto di debug chiama il pacchetto del progetto (associato al tipo di programma avviato) tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metodo, che a sua volta compila una <xref:Microsoft.VisualStudio.Shell.Interop.VsDebugTargetInfo2> struttura con le impostazioni di debug del progetto attive della soluzione. Questa struttura viene passata di nuovo al pacchetto di debug tramite una chiamata al <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger2.LaunchDebugTargets2%2A> metodo. Il pacchetto di debug crea quindi un'istanza di Session Debug Manager (SDM), che avvia il programma di cui è in corso il debug e tutti i motori di debug associati.  
   
-   Uno degli argomenti passati per il modello SDM è il GUID della DE da utilizzare per avviare il programma.  
+   Uno degli argomenti passati a SDM è il GUID della DE da usare per avviare il programma.  
   
-   Se non è il GUID DE `GUID_NULL`, il modello SDM CO-crea il DE e quindi chiama relativi [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) metodo per avviare il programma. Ad esempio, se un programma viene scritto in codice nativo, quindi `IDebugEngineLaunch2::LaunchSuspended` probabilmente chiamerà `CreateProcess` e `ResumeThread` (funzioni Win32) per eseguire il programma.  
+   Se il GUID DE non è `GUID_NULL` , l'SDM crea la co, quindi chiama il metodo [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) per avviare il programma. Se, ad esempio, un programma è scritto in codice nativo, `IDebugEngineLaunch2::LaunchSuspended` probabilmente chiamerà `CreateProcess` e `ResumeThread` (funzioni Win32) per eseguire il programma.  
   
-   Di conseguenza l'avvio del programma, viene caricato l'ambiente del programma in fase di esecuzione. La Germania o l'ambiente di runtime crea quindi un' [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) l'interfaccia per descrivere il programma e passa a questa interfaccia [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) per notificare la porta che il programma è è in esecuzione.  
+   Come conseguenza dell'avvio del programma, viene caricato l'ambiente di runtime del programma. Il DE o l'ambiente di runtime crea quindi un'interfaccia [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) per descrivere il programma e passa questa interfaccia a [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) per notificare alla porta che il programma è in esecuzione.  
   
-   Se `GUID_NULL` viene passato, quindi la porta consente di avviare il programma. Dopo l'esecuzione del programma, l'ambiente di runtime crea un `IDebugProgramNode2` interfaccia per descrivere il programma e lo passa al `IDebugPortNotify2::AddProgramNode`. Questa notifica la porta su cui l'esecuzione del programma. Il modello SDM collega quindi il motore di debug per il programma in esecuzione.  
+   Se `GUID_NULL` viene passato, la porta avvia il programma. Quando il programma è in esecuzione, l'ambiente di runtime crea un' `IDebugProgramNode2` interfaccia per descrivere il programma e lo passa a `IDebugPortNotify2::AddProgramNode` . Questa operazione informa la porta che il programma è in esecuzione. Quindi, il SDM connette il motore di debug al programma in esecuzione.  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Notifica della porta](../../extensibility/debugger/notifying-the-port.md)  
- Viene illustrato cosa accade dopo che un programma viene avviato e la porta è una notifica.  
+ Spiega cosa accade dopo l'avvio di un programma e la notifica della porta.  
   
  [Collegamento dopo un avvio](../../extensibility/debugger/attaching-after-a-launch.md)  
- Documenti quando la sessione di debug è pronta per collegare il DE al programma.  
+ Documenti quando la sessione di debug è pronta per alleghire il DE al programma.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Attività di debug](../../extensibility/debugger/debugging-tasks.md)  
- Contiene collegamenti alle varie attività di debug, ad esempio l'avvio di un programma e la valutazione delle espressioni.
+ Contiene collegamenti a diverse attività di debug, ad esempio l'avvio di un programma e la valutazione delle espressioni.

@@ -1,5 +1,6 @@
 ---
-title: Ruoli test controller e agente di test per i test automatizzati
+title: Ruoli test controller e agente di test
+ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0ea644294ea79f1e4c044c0cebf3f427f5b672a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c7f4360772f3962ff60517071dcae4318dc71e56
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591190"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809302"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Assegnare ruoli a un test controller e a un agente di test
 

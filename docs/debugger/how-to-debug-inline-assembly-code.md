@@ -1,5 +1,5 @@
 ---
-title: Come eseguire il debug di codice assembly inline | Microsoft Docs
+title: Eseguire il debug di codice assembly inline | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 528defb516b704f0425ac4389a2fd65befef7063
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b4366c84c87823d052452fa3fa81a3353e0c9e32
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350030"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852400"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Procedura: eseguire il debug di codice assembly inline
 

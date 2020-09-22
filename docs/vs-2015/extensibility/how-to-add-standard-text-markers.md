@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Aggiungere i marcatori di testo Standard | Microsoft Docs'
+title: 'Procedura: aggiungere marcatori di testo standard | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,45 +11,45 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 912d5d7a225520fc825d832bf73f5cfc733a9486
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436011"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839299"
 ---
-# <a name="how-to-add-standard-text-markers"></a>Procedura: Aggiungere i marcatori di testo Standard
+# <a name="how-to-add-standard-text-markers"></a>Procedura: Aggiungere marcatori di testo standard
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Usare la procedura seguente per creare uno dei tipi di marcatore di testo predefinito forniti con il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principale.  
+Utilizzare la procedura seguente per creare uno dei tipi di marcatore di testo predefiniti forniti con l' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principale.  
   
 ### <a name="to-create-a-text-marker"></a>Per creare un marcatore di testo  
   
-1. A seconda che si usi uno o due - dimensionale di sistema di coordinate, chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metodo o il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metodo per creare un nuovo marcatore di testo.  
+1. A seconda del fatto che si usi un sistema di coordinate uno o bidimensionale, chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> metodo o il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> metodo per creare un nuovo marcatore di testo.  
   
-     In questa chiamata al metodo, specificare un tipo di marcatore, un intervallo di testo per creare il marcatore di failover e un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaccia. Quindi, questo metodo restituisce un puntatore al marcatore di testo appena creata. Tipi di marcatori vengono prelevati i <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> enumerazione. Specificare un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaccia se si desidera essere informati di eventi del marcatore.  
+     In questa chiamata al metodo specificare un tipo di marcatore, un intervallo di testo su cui creare il marcatore e un' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaccia. Questo metodo restituisce quindi un puntatore al marcatore di testo appena creato. I tipi di marcatore vengono ricavati dall' <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> enumerazione. Specificare un' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaccia se si desidera essere informati degli eventi del marcatore.  
   
     > [!NOTE]
-    > Creare i marcatori di testo sul thread principale della UI solo. L'editor principale è basato sul contenuto del buffer di testo per creare marcatori di testo e il buffer di testo non è thread-safe.  
+    > Creare marcatori di testo solo sul thread principale dell'interfaccia utente. L'editor principale si basa sul contenuto del buffer di testo per creare marcatori di testo e il buffer di testo non è thread-safe.  
   
 ## <a name="adding-a-custom-command"></a>Aggiunta di un comando personalizzato  
- Implementazione di `IVsTextMarkerClient` interfaccia e che fornisce un puntatore a esso da un marcatore migliora il comportamento di marcatore in diversi modi. In primo luogo, in questo modo è possibile fornire suggerimenti per il marcatore e di eseguire i comandi. Ciò consente anche di ricevere le notifiche degli eventi per i marcatori di singoli e per creare un menu contestuale personalizzato sul marcatore. Utilizzare la procedura seguente per aggiungere un comando personalizzato per il menu di scelta rapida marcatore.  
+ L'implementazione dell' `IVsTextMarkerClient` interfaccia e la fornitura di un puntatore da un marcatore migliorano il comportamento del marcatore in diversi modi. In primo luogo, è possibile fornire suggerimenti per il marcatore e per eseguire i comandi. Questo consente anche di ricevere notifiche degli eventi per singoli marcatori e di creare un menu di scelta rapida personalizzato sul marcatore. Utilizzare la seguente procedura per aggiungere un comando personalizzato al menu di scelta rapida del marcatore.  
   
-#### <a name="to-add-a-custom-command-to-the-context-menu"></a>Per aggiungere un comando personalizzato per il menu di scelta rapida  
+#### <a name="to-add-a-custom-command-to-the-context-menu"></a>Per aggiungere un comando personalizzato al menu di scelta rapida  
   
-1. Prima che venga visualizzato il menu di scelta rapida, l'ambiente chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> metodo e passa un puntatore per il marcatore di testo è interessato e il numero dell'elemento comando nel menu di scelta rapida.  
+1. Prima che venga visualizzato il menu di scelta rapida, l'ambiente chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A> metodo e passa un puntatore al marcatore di testo interessato e al numero dell'elemento del comando nel menu di scelta rapida.  
   
-     Ad esempio, i comandi specifici punti di interruzione nel menu di scelta rapida includono **Rimuovi punto di interruzione** attraverso **nuovo punto di interruzione**, come visualizzato nello screenshot seguente.  
+     Ad esempio, i comandi specifici del punto di interruzione nel menu di scelta rapida includono **Rimuovi** punto di interruzione tramite nuovo punto di **interruzione**, come visualizzato nello screenshot seguente.  
   
-     ![Marker Context Menu](../extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")  
+     ![Menu di scelta rapida Marcatore](../extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")  
   
-2. Passare di nuovo un testo che identifica il nome del comando personalizzato. Ad esempio, **Rimuovi punto di interruzione** potrebbe essere un comando personalizzato se l'ambiente non ha già fornito. Anche passare di nuovo se il comando è supportato, disponibile e abilitato, e/o un interruttore on / off. L'ambiente Usa queste informazioni per visualizzare il comando personalizzato nel menu di scelta rapida in modo corretto.  
+2. Passare di nuovo il testo che identifica il nome del comando personalizzato. Ad esempio, **Remove breakpoint** potrebbe essere un comando personalizzato se non è già stato fornito dall'ambiente. Viene inoltre restituito se il comando è supportato, disponibile e abilitato e/o un interruttore on-off. L'ambiente utilizza queste informazioni per visualizzare il comando personalizzato nel menu di scelta rapida in modo corretto.  
   
-3. Per eseguire il comando, l'ambiente chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> , passando è un puntatore per il marcatore di testo e il numero del comando scelto dal menu di scelta rapida.  
+3. Per eseguire il comando, l'ambiente chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A> metodo, passando un puntatore al marcatore di testo e il numero del comando selezionato dal menu di scelta rapida.  
   
-     Usare queste informazioni da questa chiamata per eseguire qualsiasi azione del marcatore di testo del comando personalizzato determina.  
+     Usare queste informazioni da questa chiamata per eseguire qualsiasi azione del marcatore di testo che il comando personalizzato impone.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Utilizzo di marcatori di testo con l'API Legacy](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Procedura: Implementare i marcatori di errore](../extensibility/how-to-implement-error-markers.md)   
- [Procedura: Creare i marcatori di testo personalizzato](../extensibility/how-to-create-custom-text-markers.md)   
- [Procedura: usare i marcatori di testo](../extensibility/how-to-use-text-markers.md)
+ [Uso di marcatori di testo con l'API legacy](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Procedura: implementare i marcatori di errore](../extensibility/how-to-implement-error-markers.md)   
+ [Procedura: creare marcatori di testo personalizzati](../extensibility/how-to-create-custom-text-markers.md)   
+ [Procedura: Usare i marcatori di testo](../extensibility/how-to-use-text-markers.md)

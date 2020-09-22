@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436803"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840064"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadati degli elementi nella suddivisione in batch delle attività
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] è possibile divider
 > [!NOTE]
 > Se un elenco di elementi passato a un'attività non contiene elementi con i metadati di riferimento, ogni elemento incluso nell'elenco viene passato a ogni batch.  
   
- L'esempio seguente illustra come dividere in batch più elenchi di elementi in base ai metadati degli elementi. Gli elenchi di elementi `ExampColl` e `ExampColl2` vengono divisi ognuno in tre batch in base ai metadati dell'elemento `Number`. La presenza di `%(Number)` nell'attributo `Text` indica a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] la necessità di effettuare la suddivisione in batch. Gli elenchi di elementi `ExampColl` e `ExampColl2` vengono divisi in tre batch in base ai metadati dell'elemento `Number` e ogni batch viene passato separatamente all'attività.  
+ L'esempio seguente illustra come dividere in batch più elenchi di elementi in base ai metadati degli elementi. Gli elenchi di elementi `ExampColl` e `ExampColl2` vengono divisi ognuno in tre batch in base ai metadati dell'elemento `Number`. La presenza di `%(Number)` nell'attributo `Text` indica a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] la necessità di eseguire la suddivisione in batch. Gli elenchi di elementi `ExampColl` e `ExampColl2` vengono divisi in tre batch in base ai metadati dell'elemento `Number` e ogni batch viene passato separatamente all'attività.  
   
 ```  
 <Project  
@@ -224,6 +224,6 @@ Items in ExampColl: Item2;Item5
  [Metadati noti degli elementi](../msbuild/msbuild-well-known-item-metadata.md)   
  [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)   
  [Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
- [Suddivisione in batch](../msbuild/msbuild-batching.md)   
+ [Batch](../msbuild/msbuild-batching.md)   
  [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)   
  [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)

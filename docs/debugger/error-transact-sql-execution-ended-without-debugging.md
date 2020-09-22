@@ -1,5 +1,5 @@
 ---
-title: Errore-esecuzione Transact-SQL terminata senza debug | Microsoft Docs
+title: Esecuzione Transact-SQL terminata senza debug | Microsoft Docs
 ms.date: 11/08/2018
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3aa2de2f9e1bc0c5f92d13b159bfc268a25b059
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 66a1f60673d1bdfb58b1a101bd1571637c41f556
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599930"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851528"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Errore: esecuzione Transact-SQL terminata senza debug
 
@@ -46,7 +46,7 @@ Questo problema riguarda due account:
 
   - Consultare l'amministratore della rete o del database.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Impostazione del debug SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
 - [Procedura: impostare le autorizzazioni SQL Server per il debug](/previous-versions/w1bhybwz(v=vs.100))

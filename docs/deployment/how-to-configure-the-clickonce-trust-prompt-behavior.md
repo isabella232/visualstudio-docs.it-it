@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: configurare il comportamento della richiesta di attendibilità ClickOnce | Microsoft Docs'
+title: Configurare il comportamento della richiesta di attendibilità ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7417f9cdce21dc09aeaf306b55834ad7d3a125a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f4becc0244f42507b581029b2dfe21c71570db6
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382549"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852231"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Procedura: Configurare il comportamento di richiesta di attendibilità di ClickOnce
 È possibile configurare la richiesta di attendibilità ClickOnce per controllare se gli utenti finali hanno la possibilità di installare applicazioni ClickOnce, ad esempio Windows Forms applicazioni, Windows Presentation Foundation applicazioni, applicazioni console, applicazioni browser WPF e soluzioni Office. Per configurare la richiesta di attendibilità, impostare le chiavi del registro di sistema nel computer di ogni utente finale.
@@ -38,7 +38,7 @@ ms.locfileid: "85382549"
 
  La tabella seguente illustra il comportamento predefinito per ogni zona. La colonna applicazioni si riferisce Windows Forms applicazioni, Windows Presentation Foundation applicazioni, applicazioni browser WPF e applicazioni console.
 
-|Zona|APPLICAZIONI|soluzioni Office|
+|Zona|Applicazioni|soluzioni Office|
 |----------|------------------|----------------------|
 |`MyComputer`|`Enabled`|`Enabled`|
 |`LocalIntranet`|`Enabled`|`Enabled`|
@@ -67,7 +67,7 @@ ms.locfileid: "85382549"
 
 3. Aggiungere le sottochiavi seguenti come **valore di stringa**, se non esistono già, con i valori associati indicati nella tabella seguente.
 
-    |Sottochiave valore stringa|Valore|
+    |Sottochiave valore stringa|valore|
     |-------------------------|-----------|
     |`Internet`|`Enabled`|
     |`UntrustedSites`|`Disabled`|
@@ -126,7 +126,7 @@ ms.locfileid: "85382549"
 
 3. Aggiungere le sottochiavi seguenti come **valore di stringa**, se non esistono già, con i valori associati indicati nella tabella seguente.
 
-    |Sottochiave valore stringa|Valore|
+    |Sottochiave valore stringa|valore|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`AuthenticodeRequired`|
@@ -183,7 +183,7 @@ ms.locfileid: "85382549"
 
 3. Aggiungere le sottochiavi seguenti come **valore di stringa**, se non esistono già, con i valori associati indicati nella tabella seguente.
 
-    |Sottochiave valore stringa|Valore|
+    |Sottochiave valore stringa|valore|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`Disabled`|
@@ -226,7 +226,7 @@ ms.locfileid: "85382549"
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md)
-- [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)
+- [Panoramica della distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)
 - [Procedura: Abilitare le impostazioni di sicurezza ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
 - [Procedura: Impostare un'area di sicurezza per un'applicazione ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [Procedura: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)

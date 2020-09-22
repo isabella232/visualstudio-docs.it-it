@@ -1,5 +1,5 @@
 ---
-title: 'Errore: autenticazione Kerberos non riuscita | Microsoft Docs'
+title: Autenticazione Kerberos non riuscita | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afa4aca82a83f5b7ba64ad0e9958710582a6a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae81d7503ef325da24db7d553a98837f97a96168
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460677"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852693"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Errore: autenticazione Kerberos non riuscita
 Quando si tenta di eseguire il debug remoto, è possibile che venga visualizzato il messaggio di errore seguente:

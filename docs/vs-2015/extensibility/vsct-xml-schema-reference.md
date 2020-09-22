@@ -1,5 +1,5 @@
 ---
-title: Riferimento allo Schema XML VSCT | Microsoft Docs
+title: Riferimento allo schema XML di VSCT | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,34 +12,34 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e56de828d3b357762da98cde3b9591033c6b5d19
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441474"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90839711"
 ---
 # <a name="vsct-xml-schema-reference"></a>Informazioni di riferimento sullo schema XML VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Fornisce una tabella di elementi dello schema di comando del compilatore di tabella, con l'elemento figlio consentito gli elementi e attributi per ognuna.  
+Fornisce una tabella di elementi dello schema del compilatore della tabella dei comandi, con gli elementi figlio e gli attributi consentiti per ciascuno.  
   
- Un file di configurazione (con estensione vsct) tabella comando basato su XML definisce gli elementi di comando che un pacchetto VSPackage fornisce all'ambiente di sviluppo integrato (IDE). Questi elementi includono voci di menu, menu, barre degli strumenti e caselle combinate.  
+ Un file di configurazione della tabella dei comandi basato su XML (con estensione vsct) definisce gli elementi del comando forniti da un pacchetto VSPackage all'Integrated Development Environment (IDE). Questi elementi includono voci di menu, menu, barre degli strumenti e caselle combinate.  
   
 > [!NOTE]
-> Il compilatore VSCT eseguibili del preprocessore sul file con estensione vsct. Poiché si tratta in genere include di C++ per il preprocessore, che è possibile definire e macro che hanno la stessa sintassi utilizzata nel file di C++. Nel file vsct vengono forniti esempi di questo file che il **nuovo progetto** procedura guidata crea un progetto di VSPackage.  
+> Il compilatore VSCT può eseguire un preprocessore nel file. vsct. Poiché si tratta in genere del preprocessore C++, è possibile definire le inclusioni e macro con la stessa sintassi usata nei file C++. Alcuni esempi sono forniti nel file con estensione vsct creato dalla creazione guidata **nuovo progetto** per un progetto VSPackage.  
   
 ## <a name="optional-elements"></a>Elementi facoltativi  
- Alcuni elementi VSCT sono facoltativi. Se un `Parent` argomento non è specificato, Group_Undefined:0 sarà possibile implicita. Se un `Icon` argomento non è specificato, verrà implicita guidOfficeIcon:msotcidNoIcon. Quando viene definito un tasto di scelta rapida, l'emulazione, che non viene utilizzato in genere, è facoltativo.  
+ Alcuni elementi VSCT sono facoltativi. Se `Parent` non viene specificato un argomento, Group_Undefined: 0 verranno implicite. Se `Icon` non viene specificato un argomento, guidOfficeIcon: msotcidNoIcon sarà implicito. Quando viene definito un tasto di scelta rapida, l'emulazione, che in genere è inutilizzata, è facoltativa.  
   
- Gli elementi mappa di bit possono essere incorporati in fase di compilazione specificando il percorso della striscia di bitmap nel `href` argomento. Striscia di bitmap viene copiata durante l'unione anziché estratte dalle risorse della DLL. Quando un `href` argomento è specificato, il `usedList` argomento diventa facoltativo e tutti gli slot nella striscia di bitmap sono considerati utilizzato.  
+ Gli elementi bitmap possono essere incorporati in fase di compilazione specificando la posizione della striscia bitmap nell' `href` argomento. La striscia bitmap viene copiata durante l'Unione anziché estratta dalle risorse della DLL. Quando `href` viene specificato un argomento, l' `usedList` argomento diventa facoltativo e tutti gli slot nella striscia bitmap vengono considerati utilizzati.  
   
- Tutti i valori GUID e ID devono essere definiti con nomi simbolici. Questi nomi possono essere definiti nel file di intestazione o nel VSCT \<simboli > sezioni. I nomi simbolici devono essere locali, inclusi attraverso \<inclusione > elementi, o fa \<Extern > elementi. Un nome simbolico viene importato da un file di intestazione specificato in un \<Extern > elemento se segue il modello semplice di #define il valore di simbolo. Il valore può essere un altro simbolo, purché tale simbolo è stato definito in precedenza. Le definizioni di GUID devono seguire nel formato OLE o C++. I valori di ID possono essere cifre decimali o esadecimali che sono preceduti da 0x, come illustrato nelle righe seguenti:  
+ Tutti i valori GUID e ID devono essere definiti usando nomi simbolici. Questi nomi possono essere definiti in file di intestazione o in \<Symbols> sezioni vsct. I nomi simbolici devono essere locali, inclusi tramite \<Include> elementi o a cui fanno riferimento \<Extern> gli elementi. Un nome simbolico viene importato da un file di intestazione specificato in un \<Extern> elemento se segue il modello semplice di #define valore del simbolo. Il valore può essere un altro simbolo finché il simbolo è stato definito in precedenza. Le definizioni GUID devono seguire il formato OLE o C++. I valori ID possono essere cifre decimali o cifre esadecimali precedute da 0x, come illustrato nelle righe seguenti:  
   
 - {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
-- { 0x6d484634, 0xe53d, 0x4a2c, { 0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8 } }  
+- {0x6d484634, 0xe53d, 0x4a2c, {0xAD, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xC8}}  
   
-  Commenti in formato XML può essere usati, ma potrebbero rimuovere tali strumenti dell'interfaccia utente grafica di andata e ritorno. Il contenuto di \<Annotation > gli elementi sono garantiti a essere gestito indipendentemente dal formato.  
+  È possibile usare i commenti XML, ma gli strumenti dell'interfaccia utente grafica (GUI) di round trip potrebbero eliminarli. Il contenuto degli \<Annotation> elementi è garantito per essere mantenuto indipendentemente dal formato.  
   
 ## <a name="schema-hierarchy"></a>Gerarchia dello schema  
  Un file con estensione vsct presenta gli elementi principali seguenti:  
@@ -48,7 +48,7 @@ Fornisce una tabella di elementi dello schema di comando del compilatore di tabe
   
  [Elemento Extern](../extensibility/extern-element.md)  
   
- [Elemento Include](../extensibility/include-element.md)  
+ [Elemento include](../extensibility/include-element.md)  
   
  [Elemento Define](../extensibility/define-element.md)  
   
@@ -62,7 +62,7 @@ Fornisce una tabella di elementi dello schema di comando del compilatore di tabe
   
  [Elemento UsedCommands](../extensibility/usedcommands-element.md)  
   
- [Elemento Parent](../extensibility/parent-element.md)  
+ [Elemento padre](../extensibility/parent-element.md)  
   
  [Elemento Icon](../extensibility/icon-element.md)  
   

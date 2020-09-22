@@ -1,5 +1,5 @@
 ---
-title: Aggiornare un'applicazione (JavaScript) | Microsoft Docs
+title: Aggiornare un'app (JavaScript) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,18 +20,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5b8be97212f4510002a78e6565fc9884930db89
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446097"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839756"
 ---
 # <a name="refresh-an-app-javascript"></a>Aggiornare un'applicazione (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content.png "windows_and_phone_content")  
   
- È possibile apportare modifiche al codice mentre si sta eseguendo il debug e quindi aggiornarla un'app di Store utilizzando JavaScript scegliendo il **app di Windows di aggiornare** pulsante il **eseguire il Debug** sulla barra degli strumenti. Facendo clic su questo pulsante, l'app viene ricaricata senza arrestare e riavviare il debugger. La funzionalità di aggiornamento ti consente di modificare il codice HTML, CSS e JavaScript e visualizzare rapidamente i risultati. Questa funzionalità è supportata per app Windows Store e Windows Phone Store.  
+ È possibile apportare modifiche al codice durante il debug e quindi aggiornare un'app dello Store con JavaScript scegliendo il pulsante **Aggiorna applicazione Windows** sulla barra degli strumenti **debug** . Facendo clic su questo pulsante, l'app viene ricaricata senza arrestare e riavviare il debugger. La funzionalità di aggiornamento ti consente di modificare il codice HTML, CSS e JavaScript e visualizzare rapidamente i risultati. Questa funzionalità è supportata per app Windows Store e Windows Phone Store.  
   
  L'aggiornamento non mantiene lo stato dell'app né riflette le seguenti modifiche nell'app:  
   
@@ -56,15 +56,15 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 2. Con il modello aperto in Visual Studio, seleziona una destinazione di debug.  
   
-     Se un progetto Windows Phone è il tuo attuale progetto di avvio, seleziona un'emulatore Windows Phone come destinazione di debug. In caso contrario, selezionare **simulatore** oppure **computer locale**.  
+     Se un progetto Windows Phone è il tuo attuale progetto di avvio, seleziona un'emulatore Windows Phone come destinazione di debug. In caso contrario, selezionare **simulatore** o **computer locale**.  
   
-     ![Elenco di destinazioni di debug selezionare](../debugger/media/js-select-target.png "JS_Select_Target")  
+     ![Selezionare l'elenco di destinazione del debug](../debugger/media/js-select-target.png "JS_Select_Target")  
   
 3. Premi F5 per eseguire l'app in modalità debug.  
   
 4. Passa a Visual Studio. Premi F12.  
   
-5. Nelle **Esplora soluzioni**, nella **pagine** > **home** cartella, Apri Home. HTML.  
+5. In **Esplora soluzioni**, nella cartella **pages**  >  **Home** page, aprire home.html.  
   
 6. Modificare il testo del titolo della pagina da  
   
@@ -78,9 +78,9 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
     Hello!  
     ```  
   
-7. Fare clic sui **app di aggiornare Windows** pulsante, che ha un aspetto simile al seguente: ![Aggiorna il pulsante di app Windows](../debugger/media/js-refresh.png "JS_Refresh"). o premi F4.  
+7. Fare clic sul pulsante **Aggiorna app Windows** , simile al ![pulsante Aggiorna app Windows](../debugger/media/js-refresh.png "JS_Refresh"). o premi F4.  
   
 8. Torna all'app. L'app viene ricaricata senza riavviare il debugger e viene visualizzato il nuovo titolo della pagina.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Avvio rapido: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

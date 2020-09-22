@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 38e2cd78c1f149f7e60087207cde53dba4cfe959
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64794376"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839504"
 ---
-# <a name="idiasymbolgetclassparentid"></a>IDiaSymbol::get_classParentId
+# <a name="idiasymbolget_classparentid"></a>IDiaSymbol::get_classParentId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera l'identificatore di classe padre del simbolo.  
+Recupera l'identificatore padre della classe del simbolo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,22 +35,22 @@ HRESULT get_classParentId ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce l'ID di classe padre del simbolo.  
+ out Restituisce l'ID padre della classe del simbolo.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
- L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoco.  
+## <a name="remarks"></a>Commenti  
+ L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoci.  
   
 ## <a name="requirements"></a>Requisiti  
   
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
-|Intestazione:|DIA2.h|  
+|Intestazione:|dia2. h|  
 |Version:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  

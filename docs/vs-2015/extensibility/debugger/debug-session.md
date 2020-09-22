@@ -10,22 +10,22 @@ ms.assetid: 18d82199-b2d4-47a9-924f-ab64faf60ca1
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 81867f413a5e631d1831fdb342487acb13cb75a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eeacd639dff8b22e23711702d1b113a49b8e5b9d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955432"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840323"
 ---
 # <a name="debug-session"></a>Sessione di debug
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-In termini di architettura del debugger, un **sessione**:  
+In termini di architettura del debugger, una **sessione**:  
   
--   È il set di tutti i processi, correlati o correlati, che sono state avviate o collegati a da una singola istanza dell'IDE.  
+- È il set di tutti i processi, correlati o non correlati, avviati o collegati da una singola istanza dell'IDE.  
   
--   Viene implementato da un gestore di debug di sessione (SDM). Per altre informazioni, vedere [sessione di Debug Manager](../../extensibility/debugger/session-debug-manager.md).  
+- Viene implementato da un gestore di debug della sessione (SDM). Per altre informazioni, vedere [gestione del debug della sessione](../../extensibility/debugger/session-debug-manager.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Gestione del Debug della sessione](../../extensibility/debugger/session-debug-manager.md)   
+ [Gestione debug sessione](../../extensibility/debugger/session-debug-manager.md)   
  [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)

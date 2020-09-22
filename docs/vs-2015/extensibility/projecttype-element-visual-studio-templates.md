@@ -13,19 +13,19 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b01dd370fe5e3d7a5207363c5ab7ec4f2a0254c5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388398"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839344"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>Elemento ProjectType (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Classifica il modello di progetto in modo che venga visualizzata sotto il gruppo specificato il **nuovo progetto** oppure **Aggiungi nuovo elemento** nella finestra di dialogo.  
+Categorizza il modello di progetto in modo che venga visualizzato sotto il gruppo specificato nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** .  
   
 > [!WARNING]
-> Per C++, a partire da Visual Studio 2012 sono supportati i modelli di progetto. Non sono supportati per C++ in Visual Studio 2010 e versioni precedenti.  
+> I modelli di progetto sono supportati per C++ a partire da Visual Studio 2012. Non sono supportate per C++ in Visual Studio 2010 e versioni precedenti.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -55,23 +55,23 @@ Classifica il modello di progetto in modo che venga visualizzata sotto il gruppo
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Questo valore specifica il tipo di progetto del modello verrà creato e deve contenere uno dei valori seguenti:  
+ Questo valore specifica il tipo di progetto che verrà creato dal modello e deve contenere uno dei valori seguenti:  
   
 - `CSharp`: Specifica che il modello crea un [!INCLUDE[csprcs](../includes/csprcs-md.md)] progetto o un elemento.  
   
 - `VisualBasic`: Specifica che il modello crea un [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] progetto o un elemento.  
   
-- `Web`: Specifica che il modello crea un progetto Web o un elemento. Se il `ProjectType` elemento Event contiene questo valore, il linguaggio del progetto o elemento è definito nel [elemento ProjectSubType (modelli di Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
+- `Web`: Specifica che il modello crea un progetto Web o un elemento. Se l' `ProjectType` elemento contiene questo valore, il linguaggio del progetto o dell'elemento viene definito nell' [elemento ProjectSubType (modelli di Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Commenti  
  `ProjectType` è un elemento figlio obbligatorio di `TemplateData`.  
   
- Il valore della `ProjectType` elemento specifica in cui il modello è disponibile nel **nuovo progetto** o **Aggiungi nuovo elemento** nella finestra di dialogo. Ad esempio, un modello con un `ProjectType` pari a `CSharp` viene visualizzata sotto il **Visual c#** nodo nel **nuovo progetto** nella finestra di dialogo.  
+ Il valore dell' `ProjectType` elemento specifica il punto in cui si trova il modello nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** . Ad esempio, un modello con un `ProjectType` valore di `CSharp` viene visualizzato sotto il nodo **Visual C#** nella finestra di dialogo **nuovo progetto** .  
   
- Un sottotipo di modello può essere specificato usando il [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) elemento.  
+ Un sottotipo di modello può essere specificato tramite l'elemento [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) .  
   
 ## <a name="example"></a>Esempio  
- L'esempio seguente mostra i metadati per un modello di progetto per un [!INCLUDE[csprcs](../includes/csprcs-md.md)] dell'applicazione.  
+ Nell'esempio seguente vengono illustrati i metadati per un modello di progetto per un' [!INCLUDE[csprcs](../includes/csprcs-md.md)] applicazione.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -98,6 +98,6 @@ Classifica il modello di progetto in modo che venga visualizzata sotto il gruppo
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
  [Elemento ProjectSubType (modelli di Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: Errore-errore di accesso remoto del gruppo di lavoro | Microsoft Docs
+title: Errore di accesso remoto del gruppo di lavoro | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97045215098b1f59d5f76a928e9e0a1ab8362756
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 36f6c236d306d952785e4d1974b5a31e8040e74b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460092"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851658"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Errore: accesso remoto al gruppo di lavoro non riuscito
 Il testo del messaggio di errore è il seguente:

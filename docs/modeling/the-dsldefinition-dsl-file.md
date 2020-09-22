@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97736dd9893f3a5d0c07f464ae75849395270d4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 893f39149a9000f3672c5b3043551bcbd53e6b87
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114926"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808955"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>File DslDefinition.dsl
 
@@ -465,7 +465,7 @@ Il file serializzato contiene:
 
 La relazione di connessione include dati della classe XML propri che forniscono i nomi degli elementi e degli attributi della classe.
 
-Se l'attributo **ometteelement** è impostato su true, il nome del ruolo della relazione viene omesso, che abbrevia il file serializzato e non è ambiguo se le due classi non hanno più di una relazione. Ad esempio:
+Se l'attributo **ometteelement** è impostato su true, il nome del ruolo della relazione viene omesso, che abbrevia il file serializzato e non è ambiguo se le due classi non hanno più di una relazione. Esempio:
 
 ```xml
 <component name="Component3">
@@ -579,6 +579,6 @@ Le mappe dei connettori possono anche contenere mappe degli elementi Decorator.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossario di Strumenti Domain-Specific Language](/previous-versions/bb126564(v=vs.100))
 - [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md)

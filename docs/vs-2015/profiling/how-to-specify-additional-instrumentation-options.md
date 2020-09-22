@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d4bc6eeb208ab6d80168431f110f0f6169abbc82
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442142"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839511"
 ---
-# <a name="how-to-specify-additional-instrumentation-options"></a>Procedura: Specificare le opzioni di strumentazione aggiuntive
+# <a name="how-to-specify-additional-instrumentation-options"></a>Procedura: Specificare opzioni di strumentazione aggiuntive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile instrumentare i binari dall'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] o mediante gli strumenti della riga di comando. Se si instrumenta un file binario dall'IDE, è possibile controllare il volume dei dati raccolti durante la strumentazione specificando opzioni di strumentazione aggiuntive per lo strumento [VSInstr](../profiling/vsinstr.md). Queste opzioni sono disponibili a livello di sessione o di destinazione. Ad esempio, per includere o escludere funzioni specifiche durante il processo di strumentazione, è possibile usare l'opzione di strumentazione aggiuntiva a livello di destinazione.  

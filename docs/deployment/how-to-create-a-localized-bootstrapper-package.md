@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: creare un pacchetto del programma di avvio automatico localizzato | Microsoft Docs'
+title: Creare un pacchetto del programma di avvio automatico localizzato | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26858dce9c6484c1b7acb94ad2a7f38fd20447a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c673c6488b93802877ef088d9d9a1a4793cf50b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382562"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852485"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Procedura: Creare un pacchetto localizzato del programma di avvio automatico
 Dopo aver creato un pacchetto del programma di avvio automatico, è possibile creare le versioni localizzate del pacchetto del programma di avvio automatico creando altri due file per ogni impostazione locale, ovvero un file delle condizioni di licenza software (ad esempio *EULA. RTF*) e un manifesto del pacchetto (*package.xml*).

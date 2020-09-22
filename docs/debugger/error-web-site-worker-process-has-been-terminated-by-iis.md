@@ -1,5 +1,5 @@
 ---
-title: Errore-il processo di lavoro del sito Web è stato terminato da IIS | Microsoft Docs
+title: Il processo di lavoro del sito Web è stato terminato da IIS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d61f124d906137557b17b81122eba34e471a1a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5991bf0b14cf4952303dba599ad47e4c8fd27a9
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460000"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852413"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Errore: il processo di lavoro del sito Web è stato terminato da IIS
 L'esecuzione del codice sul sito Web è stata interrotta dal debugger. Di conseguenza, Internet Information Services (IIS) presuppone che il processo di lavoro non risponda e lo termina.

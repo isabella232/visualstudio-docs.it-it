@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f5b60f44dd1d32a9d19814b4d2194e7586d86865
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426855"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839364"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Cenni preliminari sul multitargeting di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,16 +37,16 @@ Tramite MSBuild è possibile compilare un'applicazione da eseguire in una qualun
 - Il multitargeting di MSBuild garantisce che un'applicazione usi solo le funzionalità disponibili nel framework e nella piattaforma di destinazione.  
   
 ## <a name="target-framework-and-platform"></a>Framework e piattaforma di destinazione  
- Un *framework di destinazione* è la versione di .NET Framework per la quale un progetto è stato compilato appositamente e una *piattaforma di destinazione* è la piattaforma di sistema per la quale il progetto è stato compilato appositamente.  Ad esempio, è preferibile destinare un'applicazione a .NET Framework 2.0 per eseguirla su una piattaforma a 32 bit compatibile con la famiglia di processori 802x86 (x86). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*. Per altre informazioni, vedere [Framework e piattaforma di destinazione di MSBuild](../msbuild/msbuild-target-framework-and-target-platform.md).  
+ Un *framework di destinazione* è la versione di .NET Framework per la quale un progetto è stato compilato appositamente e una *piattaforma di destinazione* è la piattaforma di sistema per la quale il progetto è stato compilato appositamente.  Ad esempio, è preferibile destinare un'applicazione a .NET Framework 2.0 per eseguirla su una piattaforma a 32 bit compatibile con la famiglia di processori 802x86 (x86). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*. Per ulteriori informazioni, vedere [Framework di destinazione e piattaforma di destinazione](../msbuild/msbuild-target-framework-and-target-platform.md).  
   
 ## <a name="toolset-toolsversion"></a>Set di strumenti (ToolsVersion)  
- Un set di strumenti comprende strumenti, attività e destinazioni usati per creare l'applicazione. Un set di strumenti include compilatori come csc.exe e vbc.exe, il file di destinazioni comuni (microsoft.common.targets) e il file delle attività comuni (microsoft.common.tasks). Il Set di strumenti 4.5 può essere usato per definire le destinazioni di .NET Framework versioni 2.0, 3.0, 3.5, 4 e 4.5. Tuttavia, il Set di strumenti 2.0 consente soltanto di scegliere come destinazione .NET Framework versione 2.0. Per altre informazioni, vedere [Set di strumenti di MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  
+ Un set di strumenti comprende strumenti, attività e destinazioni usati per creare l'applicazione. Un set di strumenti include compilatori come csc.exe e vbc.exe, il file di destinazioni comuni (microsoft.common.targets) e il file delle attività comuni (microsoft.common.tasks). Il Set di strumenti 4.5 può essere usato per definire le destinazioni di .NET Framework versioni 2.0, 3.0, 3.5, 4 e 4.5. Tuttavia, il Set di strumenti 2.0 consente soltanto di scegliere come destinazione .NET Framework versione 2.0. Per altre informazioni, vedere [Set di strumenti MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  
   
 ## <a name="reference-assemblies"></a>Assembly di riferimento  
- Gli assembly di riferimento specificati nel set di strumenti aiutano a progettare e sviluppare un'applicazione. Questi assembly di riferimento non solo consentono una specifica compilazione delle destinazioni, ma limitano anche i componenti e le funzionalità dell'IDE di Visual Studio a quelli compatibili con la destinazione. Per altre informazioni, vedere [Risoluzione di assembly in fase di progettazione](../msbuild/resolving-assemblies-at-design-time.md)  
+ Gli assembly di riferimento specificati nel set di strumenti aiutano a progettare e sviluppare un'applicazione. Questi assembly di riferimento non solo consentono una specifica compilazione delle destinazioni, ma limitano anche i componenti e le funzionalità dell'IDE di Visual Studio a quelli compatibili con la destinazione. Per ulteriori informazioni, vedere [risoluzione di assembly in fase di progettazione](../msbuild/resolving-assemblies-at-design-time.md)  
   
 ## <a name="configuring-targets-and-tasks"></a>Configurazione di destinazioni e attività  
- È possibile configurare le destinazioni e le attività di MSBuild per l'esecuzione out-of-process con MSBuild, in modo che si possano scegliere come destinazione contesti notevolmente diversi da quello corrente.  Ad esempio, è possibile scegliere come destinazione un'applicazione .NET Framework 2.0 a 32 bit mentre nel computer di sviluppo è in esecuzione .NET Framework 4.5 su una piattaforma a 64 bit. Per altre informazioni, vedere [Configurazione di destinazioni e attività](../msbuild/configuring-targets-and-tasks.md).  
+ È possibile configurare le destinazioni e le attività di MSBuild per l'esecuzione out-of-process con MSBuild, in modo che si possano scegliere come destinazione contesti notevolmente diversi da quello corrente.  Ad esempio, è possibile scegliere come destinazione un'applicazione .NET Framework 2.0 a 32 bit mentre nel computer di sviluppo è in esecuzione .NET Framework 4.5 su una piattaforma a 64 bit. Per ulteriori informazioni, vedere [configurazione di destinazioni e attività](../msbuild/configuring-targets-and-tasks.md).  
   
 ## <a name="troubleshooting"></a>Risoluzione dei problemi  
  Possono verificarsi errori se si tenta di fare riferimento a un assembly che non fa parte del contesto di destinazione. Per altre informazioni su questi errori e su come agire al riguardo, vedere [Risoluzione dei problemi relativi agli errori di impostazione di .NET Framework come destinazione](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).

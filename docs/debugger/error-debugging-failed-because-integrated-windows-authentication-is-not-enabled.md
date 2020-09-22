@@ -1,5 +1,5 @@
 ---
-title: "Errore: debug non riuscito perché l'autenticazione integrata di Windows non è abilitata | Microsoft Docs"
+title: Il debug non è riuscito perché l'autenticazione integrata di Windows non è abilitata | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2ac131599d6d94a2a64945e62da93bacd5e12a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 35c602b2754e4361b4e41e2b4d4d5cdcc09381c5
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599629"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852784"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Errore: debug non riuscito. Non è attivata l'autenticazione di Windows integrata
 L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a causa di un errore di autenticazione. Questo errore può verificarsi quando si tenta di eseguire un'applicazione Web o un servizio Web XML. Una causa di questo errore è la mancata attivazione dell'autenticazione di Windows integrata. Per attivarla, seguire i passaggi della procedura relativa all'attivazione dell'autenticazione integrata di Windows.
@@ -113,7 +113,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
 
 10. Chiudere la finestra **Gestione Internet Information Services (IIS)**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Autenticazione digest Microsoft](/windows/win32/secauthn/microsoft-digest-authentication)
 - [Esecuzione di applicazioni Web in Windows Vista con IIS 7,0 e Visual Studio](/previous-versions/aa964620(v=vs.140))

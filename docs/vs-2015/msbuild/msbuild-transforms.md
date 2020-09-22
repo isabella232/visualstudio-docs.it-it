@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426030"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839500"
 ---
 # <a name="msbuild-transforms"></a>Trasformazioni di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63426030"
 Una trasformazione è una conversione uno-a-uno di un elenco di elementi in un altro. Oltre a consentire a un progetto di convertire gli elenchi di elementi, una trasformazione consente a una destinazione di identificare un mapping diretto tra gli input e gli output. Questo argomento descrive le trasformazioni e il relativo uso in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] per compilare progetti in modo più efficiente.  
   
 ## <a name="transform-modifiers"></a>Modificatori di comandi  
- Le trasformazioni non sono arbitrarie, ma sono limitate da una sintassi speciale in cui tutti i modificatori di trasformazione devono essere nel formato %(*NomeMetadatiElementi*). I metadati degli elementi possono essere usati come modificatori della trasformazione. Sono inclusi i metadati noti degli elementi, assegnati a ogni elemento al momento della creazione. Per un elenco di tutti i metadati noti degli elementi, vedere [Metadati noti degli elementi di MSBuild](../msbuild/msbuild-well-known-item-metadata.md).  
+ Le trasformazioni non sono arbitrarie, ma sono limitate dalla sintassi speciale in cui tutti i modificatori di trasformazione devono essere nel formato%(*ItemMetaDataName*). I metadati degli elementi possono essere usati come modificatori della trasformazione. Sono inclusi i metadati noti degli elementi, assegnati a ogni elemento al momento della creazione. Per un elenco di metadati noti degli elementi, vedere [metadati noti degli elementi](../msbuild/msbuild-well-known-item-metadata.md).  
   
  Nell'esempio seguente un elenco di file con estensione resx viene trasformato in un elenco di file con estensione resources. Il modificatore di trasformazione %(filename) specifica che ogni file con estensione resources ha lo stesso nome del file con estensione resx corrispondente.  
   
@@ -54,7 +54,7 @@ Una trasformazione è una conversione uno-a-uno di un elenco di elementi in un a
 ## <a name="dependency-analysis"></a>Analisi delle dipendenze  
  Le trasformazioni garantiscono un mapping uno-a-uno tra l'elenco di elementi trasformato e l'elenco di elementi originale. Se pertanto una destinazione crea output che sono trasformazioni degli input, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] può analizzare i timestamp degli input e output e decidere se ignorare, compilare o ricompilare parzialmente una destinazione.  
   
- Nell'[attività Copy](../msbuild/copy-task.md) dell'esempio seguente, ogni file dell'elenco di elementi `BuiltAssemblies` è associato a un file nella cartella di destinazione dell'attività, specificata mediante una trasformazione nell'attributo `Outputs`. Se viene modificato un file dell'elenco di elementi `BuiltAssemblies`, l'attività `Copy` verrà eseguita esclusivamente per il file modificato e tutti gli altri file verranno ignorati. Per altre informazioni sulle analisi delle dipendenze e su come usare le trasformazioni, vedere [Procedura: La compilazione incrementale](../msbuild/how-to-build-incrementally.md).  
+ Nell' [attività di copia](../msbuild/copy-task.md) nell'esempio seguente, ogni file nell'elenco di `BuiltAssemblies` elementi è mappato a un file nella cartella di destinazione dell'attività, specificato utilizzando una trasformazione nell' `Outputs` attributo. Se viene modificato un file dell'elenco di elementi `BuiltAssemblies`, l'attività `Copy` verrà eseguita esclusivamente per il file modificato e tutti gli altri file verranno ignorati. Per altre informazioni sulle analisi delle dipendenze e su come usare le trasformazioni, vedere [Procedura: Eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md).  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -110,5 +110,5 @@ extension: .xsd
   
 ## <a name="see-also"></a>Vedere anche  
  [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)   
- [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
+ [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)   
  [Procedura: eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md)

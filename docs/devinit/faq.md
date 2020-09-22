@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: dd2da52a84d972e47b0e63905f0c4b6d4f7af9f3
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d926a51ecfa68f6a5caea0bcf84bcafaffddc0a7
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809320"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852476"
 ---
 # <a name="frequently-asked-questions-for-devinit"></a>Domande frequenti su devinit
 
@@ -64,4 +64,4 @@ Se è necessario riavviare il sistema operativo, viene restituito un messaggio d
 
 per la distribuzione e la configurazione delle dipendenze dell'app, la delineatura è sufficiente per consentire l'uso dell'ampio ecosistema. Mentre la devinit presenta un'opinione sui vantaggi offerti da un file JSON dichiarativo, è prevalentemente per l'esecuzione di altri strumenti.
 
-Oggi, la devinit è appena iniziata e l' [elenco di strumenti](/devinit-tool-list.md) è solo un inizio.
+Oggi, la devinit è appena iniziata e l' [elenco di strumenti](devinit-tool-list.md) è solo un inizio.

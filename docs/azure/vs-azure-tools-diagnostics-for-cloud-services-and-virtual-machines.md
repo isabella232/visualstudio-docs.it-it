@@ -1,7 +1,7 @@
 ---
-title: Diagnostica per servizi cloud e macchine virtuali di Azure
-description: Informazioni su come configurare la diagnostica per il debug dei servizi cloud e delle macchine virtuali di Azure in Visual Studio.
+title: Diagnostica-servizi cloud di Azure & macchine virtuali
 ms.custom: SEO-VS-2020
+description: Informazioni su come configurare la diagnostica per il debug dei servizi cloud e delle macchine virtuali di Azure in Visual Studio.
 author: ghogen
 manager: jillfra
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 0dd19ff2fd03304beccbb6f24fa6b5fe4e9e0106
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 55a0f96959d0e3e8bbc70c458ab99bbc06b06a62
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037094"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809846"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurare la diagnostica per Servizi cloud di Azure e macchine virtuali
 Per risolvere gli errori di un servizio cloud o di una macchina virtuale di Azure, è possibile usare Visual Studio per configurare con maggiore facilità Diagnostica di Azure. Diagnostica di Azure acquisisce i dati di sistema e i dati di registrazione nelle macchine virtuali e nelle istanze di macchine virtuali che eseguono il servizio cloud. I dati di diagnostica vengono trasferiti all'account di archiviazione scelto. Per altre informazioni sulla registrazione diagnostica in Azure, vedere [Abilitare la registrazione diagnostica per le app Web nel servizio app di Azure](/azure/app-service/web-sites-enable-diagnostic-log).

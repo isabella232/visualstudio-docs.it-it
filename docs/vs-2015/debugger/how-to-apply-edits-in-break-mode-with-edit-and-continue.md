@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Applicare modifiche in modalità di interruzione con modifica e continuazione | Microsoft Docs'
+title: 'Procedura: applicare modifiche in modalità di interruzioni con modifica e continuazione | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,13 +25,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5c04dc0ae6e5272d2544ad7436fa7ca516c9a022
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437351"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839524"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Procedura: Applicare modifiche in modalità di interruzione con modifica e continuazione
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Procedura: applicare modifiche in modalità di interruzione con Modifica e continuazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile usare Modifica e continuazione per modificare il codice in modalità di interruzione e continuare senza interrompere e riavviare l'esecuzione.  
@@ -48,11 +48,11 @@ ms.locfileid: "63437351"
   
 - Debug di un'applicazione di runtime incorporata.  
   
-- Debug di un'applicazione con **Collega a** anziché tramite l'esecuzione dell'applicazione con **avviare** dal **Debug** menu.  
+- Debug di un'applicazione con **Connetti a** anziché eseguire l'applicazione con **Avvia** dal menu **debug** .  
   
 - Debug di codice ottimizzato.  
   
-- Debug di codice gestito quando la destinazione è un'applicazione a 64 bit. Se si desidera utilizzare Modifica e continuazione, è necessario impostare la destinazione su x86 (_Project_**delle proprietà**, **compilare** scheda **del compilatore avanzate** impostazione.).  
+- Debug di codice gestito quando la destinazione è un'applicazione a 64 bit. Se si desidera utilizzare Modifica e continuazione, è necessario impostare la destinazione su x86 (_Project_**Proprietà**progetto, scheda **Compila** , impostazione **del compilatore avanzata** ).  
   
 - Debug di una versione precedente del codice dopo un tentativo non riuscito di compilazione di una nuova versione a causa della presenza di errori di compilazione.  
   
@@ -62,17 +62,17 @@ ms.locfileid: "63437351"
   
     - Impostare un punto di interruzione nel codice, quindi scegliere **Avvia debug** dal menu **Debug** e attendere che l'applicazione raggiunga il punto di interruzione.  
   
-         - oppure -  
+         –oppure–  
   
     - Avviare il debug, quindi scegliere **Interrompi tutto** dal menu **Debug**.  
   
-         - oppure -  
+         –oppure–  
   
-    - Quando si verifica un'eccezione, scegliere **Abilita modifica** nel**informazioni sulle eccezioni**.  
+    - Quando si verifica un'eccezione, scegliere **Attiva modifica** in informazioni sulle**eccezioni**.  
   
 2. Apportare tutte le modifiche desiderate al codice, purché siano valide.  
   
-     Per altre informazioni, vedere [modifiche non supportate in Visual Basic modifica e continuazione](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md).  
+     Per ulteriori informazioni, vedere [modifiche non supportate in Visual Basic modifica e continuazione](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md).  
   
     > [!NOTE]
     > Se si tenta di apportare una modifica non consentita da Modifica e continuazione, la modifica verrà contrassegnata con una riga ondulata di colore viola e nell'Elenco attività verrà indicata un'attività da eseguire. Per poter proseguire l'esecuzione del codice, è necessario annullare la modifica non valida del codice.  
@@ -82,5 +82,5 @@ ms.locfileid: "63437351"
      Il codice verrà eseguito con le modifiche incorporate nel progetto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Modifica e continuano di modifiche non supportate in Visual Basic](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)   
+ [Modifiche non supportate in Visual Basic modifica e continuazione](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)   
  [Modifica e continuazione (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Errore: controllo di sicurezza non riuscito. il servizio di amministrazione IIS non ha risposto | Microsoft Docs'
+title: Un controllo di sicurezza non è riuscito perché il servizio di amministrazione di IIS non ha risposto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9620edf10d2d3cab8da8231e561fc77d7e6af5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 015a159f8d4910a2cc9bfbd97a50ebe01253d011
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460878"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852810"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Errore: controllo di sicurezza non riuscito. Il servizio di amministrazione IIS non ha risposto
 Questo errore si verifica quando il servizio di amministrazione IIS non risponde. In questo modo viene indicato che l'installazione di IIS presenta un problema. Verificare innanzitutto che il servizio sia in esecuzione tramite lo strumento **Servizi** in **Strumenti di amministrazione**.

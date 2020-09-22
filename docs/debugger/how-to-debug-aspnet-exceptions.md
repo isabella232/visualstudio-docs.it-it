@@ -1,5 +1,5 @@
 ---
-title: Come eseguire il debug di eccezioni ASP.NET | Microsoft Docs
+title: Eccezioni di debug ASP.NET | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a6808bff0a38b6ebaa3049f1655e781439f3f735
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 011094eed88245e3cd83b092a3f1b2e47bc77ae8
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350134"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852152"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Procedura: debug di eccezioni ASP.NET
 Il debug delle eccezioni è una parte importante dello sviluppo di una potente applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Per informazioni generali sul debug delle eccezioni, è possibile [gestire le eccezioni con il debugger](../debugger/managing-exceptions-with-the-debugger.md).

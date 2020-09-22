@@ -1,5 +1,5 @@
 ---
-title: Debugger dello Shader HLSL | Microsoft Docs
+title: Debugger shader HLSL | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bef6c5a742c4bf6acc15a6326190686e46fef79b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410191"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840139"
 ---
 # <a name="hlsl-shader-debugger"></a>Debugger dello shader HLS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Il debugger HLSL in Analizzatore grafica di Visual Studio Visual Studio aiuta a 
   
  Questo è il debugger HLSL:  
   
- ![Debug di HLSL usando Guarda e finestre stack di chiamate. ](../debugger/media/gfx-diag-demo-hlsl-debugger-orientation.png "gfx_diag_demo_hlsl_debugger_orientation")  
+ ![Debug di HLSL usando le finestre Stack di chiamate ed Espressioni di controllo.](../debugger/media/gfx-diag-demo-hlsl-debugger-orientation.png "gfx_diag_demo_hlsl_debugger_orientation")  
   
 ## <a name="understanding-the-hlsl-debugger"></a>Informazioni sul debugger HLSL  
  Il debugger HLSL consente di individuare i problemi che sorgono nel codice dello shader. L'esecuzione del debug del codice HLSL in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è analogo al debug del codice scritto in altri linguaggi (ad esempio, C++, C# o Visual Basic). È possibile controllare il contenuto delle variabili, impostare punti di interruzione, eseguire il codice istruzione per istruzione e risalire nello stack di chiamate, proprio come quando si esegue il debug di altri linguaggi.  
@@ -42,8 +42,8 @@ Il debugger HLSL in Analizzatore grafica di Visual Studio Visual Studio aiuta a 
   
   Tuttavia, il debugger HLSL fornisce un'esperienza di debug più simile a quella di tipo CPU rispetto a quanto sarebbe altrimenti possibile.  
   
-## <a name="hlsl-shader-edit--apply"></a>Funzionalità Modifica e applicazione Shader HLSL  
- Il debugger dello shader HLSL non supporta la funzionalità Modifica e continuazione nello stesso modo del debugger CPU perché il modello di esecuzione delle GPU non consente l'annullamento dello stato dello shader. Il debugger HLSL supporta invece la funzionalità Modifica e applicazione, che consente di modificare i file di origine HLSL e quindi di scegliere **Applica** per rigenerare il frame per vedere l'effetto delle modifiche. Il codice modificato dello shader è archiviato in un file separato per mantenere l'integrità dei file di origine HLSL originale del progetto, ma quando si è soddisfatti con le modifiche è possibile scegliere **copiare in...** Per copiare le modifiche nel progetto. Con questa funzionalità è possibile scorrere rapidamente il codice dello shader contenente gli errori ed eliminare i passaggi di ricompilazione e acquisizione che comportano un grande consumo di risorse dal flusso di lavoro del debug HLSL.  
+## <a name="hlsl-shader-edit--apply"></a>& applicare la modifica dello shader HLSL  
+ Il debugger dello shader HLSL non supporta la funzionalità Modifica e continuazione nello stesso modo del debugger CPU perché il modello di esecuzione delle GPU non consente l'annullamento dello stato dello shader. Il debugger HLSL supporta invece la funzionalità Modifica e applicazione, che consente di modificare i file di origine HLSL e quindi di scegliere **Applica** per rigenerare il frame per vedere l'effetto delle modifiche. Il codice dello shader modificato viene archiviato in un file separato per mantenere l'integrità del file di origine HLSL originale del progetto, ma quando si è soddisfatti delle modifiche è possibile scegliere **copia in...** per copiare le modifiche nel progetto. Con questa funzionalità è possibile scorrere rapidamente il codice dello shader contenente gli errori ed eliminare i passaggi di ricompilazione e acquisizione che comportano un grande consumo di risorse dal flusso di lavoro del debug HLSL.  
   
 ## <a name="hlsl-disassembly"></a>Disassembly HLSL  
  Il debugger dello shader HLSL fornisce un elenco di assembly dello shader HLSL a destra dell'elenco del codice sorgente HLSL.  
@@ -73,9 +73,9 @@ Il debugger HLSL in Analizzatore grafica di Visual Studio Visual Studio aiuta a 
    > [!NOTE]
    > Questo punto di ingresso nel debugger HLSL esegue il debug del thread del pixel shader che corrisponde alla chiamata di disegno, alla primitiva e al pixel desiderati oppure dei thread del vertex shader i cui risultati sono interpolati dalla chiamata di disegno, dalla primitiva e dal pixel desiderato. Nel caso dei vertex shader, è possibile migliorare ulteriormente il punto di ingresso in un vertice specifico espandendo i dettagli del vertex shader.  
   
-   Per esempi su come usare il Debugger HLSL per eseguire il debug degli errori dello shader, vedere [esempi](../debugger/graphics-diagnostics-examples.md) o le procedure dettagliate un collegamento nella sezione Vedere anche.  
+   Per esempi su come usare il debugger HLSL per eseguire il debug degli errori dello shader, vedere gli [esempi](../debugger/graphics-diagnostics-examples.md) o le procedure dettagliate collegate a nella sezione vedere anche.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
- [Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)   
+ [Procedura dettagliata: oggetti mancanti a causa dell'ombreggiatura del vertice](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
+ [Procedura dettagliata: debug degli errori di rendering dovuti all'ombreggiatura](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)   
  [Procedura dettagliata: Uso della diagnostica della grafica per eseguire il debug di un compute shader](../debugger/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

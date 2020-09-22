@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed8ec8e7f990a4a2c5d943a15a105faa5ab23572
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83acc551c778fdb245b3bacec164a7544253d55f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589383"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808691"
 ---
 # <a name="symbol-path-command"></a>Comando Percorso simboli
 Imposta l'elenco delle directory in cui il debugger deve eseguire la ricerca dei simboli.
@@ -35,17 +35,17 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 
 facoltativo. Elenco di percorsi delimitato da punti e virgola usato dal debugger per la ricerca dei simboli.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Se non viene specificato un `pathname`, il comando elenca i percorsi dei simboli correnti.
 
-## <a name="example"></a>Esempio
+## <a name="example-1"></a>Esempio 1
 In questo esempio vengono aggiunti due percorsi all'elenco delle directory dei simboli.
 
 ```
 Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-2"></a>Esempio 2
 In questo esempio viene visualizzato un elenco delimitato da punti e virgola dei percorsi dei simboli correnti.
 
 ```

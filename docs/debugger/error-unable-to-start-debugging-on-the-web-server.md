@@ -1,5 +1,5 @@
 ---
-title: Errore-Impossibile avviare il debug sul server Web | Microsoft Docs
+title: Impossibile avviare il debug sul server Web | Microsoft Docs
 ms.date: 05/23/2018
 ms.topic: error-reference
 f1_keywords:
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00d27dafd5e44b058cff05b3c478322e45242b3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a0aa657abefa0638e62039cae8b6d15a33fdf51
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460039"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851424"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Errore: impossibile avviare il debug sul server Web
 

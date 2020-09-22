@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 018b9a6707ea46a9b1c46f820faf7bd47dac1ff9
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315304"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809898"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Esercitazione: Introduzione al framework Web Flask in Visual Studio
 
@@ -106,7 +106,7 @@ Poiché è stato selezionato **Crea nuovo repository Git** nella finestra di dia
 
 Risposta: Prima di tutto, l'uso del controllo del codice sorgente sin dall'inizio, in particolare con un repository remoto, garantisce un backup regolare del progetto in un'altra posizione. A differenza della situazione in cui si mantiene un progetto solo in un file system locale, il controllo del codice sorgente fornisce anche una cronologia delle modifiche completa e la possibilità di ripristinare un singolo file o l'intero progetto in base a uno stato precedente in tutta semplicità. La cronologia delle modifiche permette di determinare la causa delle regressioni (errori di test). Inoltre, il controllo del codice sorgente è essenziale se più persone lavorano su un progetto, perché gestisce le sovrascritture ed esegue la risoluzione dei conflitti. Infine, il controllo del codice sorgente, che è sostanzialmente una forma di automazione, offre tutti gli strumenti necessari per l'automazione delle compilazioni, dei test e della gestione del rilascio. Si tratta davvero del primo passaggio quando si usa DevOps per un progetto e poiché le limitazioni preliminari sono minime, non vi è alcun motivo per non usare il controllo del codice sorgente sin dall'inizio.
 
-Per altre informazioni sul controllo del codice sorgente come strumento di automazione, vedere [ Source of Truth: il ruolo dei repository in DevOps](https://msdn.microsoft.com/magazine/mt763232), un articolo in MSDN Magazine scritto per le app per dispositivi mobili, ma valido anche per le app Web.
+Per altre informazioni sul controllo del codice sorgente come strumento di automazione, vedere [ Source of Truth: il ruolo dei repository in DevOps](/archive/msdn-magazine/2016/september/mobile-devops-the-source-of-truth-the-role-of-repositories-in-devops), un articolo in MSDN Magazine scritto per le app per dispositivi mobili, ma valido anche per le app Web.
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Domanda: È possibile impedire a Visual Studio di eseguire il commit automatico di un nuovo progetto?
 

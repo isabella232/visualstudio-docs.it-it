@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Trovare una perdita di memoria (JavaScript) | Microsoft Docs'
+title: 'Procedura dettagliata: trovare una perdita di memoria (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,16 +17,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439655"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839375"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>Procedura dettagliata: Trovare una perdita di memoria (JavaScript)
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>Procedura dettagliata: trovare una perdita di memoria (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Si applica a Windows e Windows Phone] (.. /Image windows_and_phone_content.png "windows_and_phone_content")  
   
  Questa procedura dettagliata ti assiste nel processo di identificazione e risoluzione di un semplice problema di memoria usando JavaScript Memory Analyzer. JavaScript Memory Analyzer è disponibile in Visual Studio per le app Windows Store compilate per Windows con JavaScript. In questo scenario creerai un'app che conserva erroneamente gli elementi DOM in memoria anziché eliminare gli elementi alla stessa velocità con cui vengono creati.  
   
@@ -34,7 +34,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>Esecuzione dell'app di test di JavaScript Memory Analyzer  
   
-1. In Visual Studio scegli **File**, **Nuovo**, **Progetto**.  
+1. In Visual Studio scegliere **File**, **Nuovo**, **Progetto**.  
   
 2. Scegli **JavaScript** nel riquadro sinistro, quindi scegli **Windows**, **Windows 8**, **Universale** o **App di Windows Phone**.  
   
@@ -45,7 +45,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 4. Nella casella **Nome** specifica un nome come `JS_Mem_Tester`, quindi scegli **OK**.  
   
-5. In **Esplora soluzioni** aprire il file default.html e incollare il codice seguente tra i tag \<body>:  
+5. In **Esplora soluzioni**aprire default.html e incollare il codice seguente tra i \<body> Tag:  
   
     ```html  
     <div class="wrapper">  
@@ -139,7 +139,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
    > [!TIP]
    > Per un'app di Windows Store, puoi anche scegliere **Computer locale** o **Computer remoto** in questo elenco. L'emulatore o il simulatore può essere posizionato accanto a Visual Studio per poter passare agevolmente tra l'app in esecuzione e JavaScript Memory Analyzer. Per altre informazioni, vedere [Eseguire app da Visual Studio](../debugger/run-store-apps-from-visual-studio.md) ed [Eseguire app di Windows Store in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
-2. Scegliere **Profiler prestazioni** dal menu **Debug**.  
+2. Scegliere **Profiler prestazioni**dal menu **debug** .  
   
 3. In **Strumenti disponibili**scegli **Memoria JavaScript**e scegli **Avvia**.  
   
@@ -168,7 +168,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
     Questa illustrazione mostra lo snapshot della linea di base (n.1) e lo snapshot n.2.  
   
-    ![Snapshot iniziale e snapshot 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
+    ![Snapshot della linea di base e snapshot 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
    > [!NOTE]
    > L'Emulatore Windows Phone non mostra una schermata dell'app quando è stato scattato lo snapshot.  
@@ -219,12 +219,12 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
     - Questo oggetto è rimasto dallo snapshot n. 2 e rappresenta una potenziale perdita di memoria.  
   
-      Una conoscenza dell'app consente a questo punto: Scegliere il **perdita memoria** pulsante dovrebbe eliminare un elemento DIV e aggiungere un elemento, in modo che il codice non sembra funzionare correttamente (vale a dire le perdite di memoria). La sezione successiva spiega come risolvere questo problema.  
+      In questa fase è bene avere una certa conoscenza dell'app. La scelta del pulsante **Perdita memoria** dovrebbe eliminare un elemento DIV e aggiungerne un altro, pertanto il codice non sembra funzionare. La sezione successiva spiega come risolvere questo problema.  
   
     > [!TIP]
     > Talvolta, individuare un oggetto relativamente all'oggetto `Global` può aiutare a identificare quell'oggetto. A questo scopo, apri il menu di scelta rapida per l'identificatore e scegli **Mostra in visualizzazione radice**.  
   
-## <a name="FixingMemory"></a> Correzione del problema di memoria  
+## <a name="fixing-the-memory-issue"></a><a name="FixingMemory"></a> Correzione del problema di memoria  
   
 1. Usando i dati ottenuti dal profiler, esamina il codice responsabile della rimozione di elementi DOM con un ID "item". Questo si verifica nella funzione `initialize()`.  
   
@@ -266,7 +266,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   
 4. In **Strumenti disponibili**scegli **Memoria JavaScript**e scegli **Avvia**.  
   
-5. Segui la stessa procedura per eseguire tre snapshot. I passaggi sono riepilogati di seguito:  
+5. Segui la stessa procedura per eseguire tre snapshot. Qui viene fornito un riepilogo dei passaggi:  
   
    1. Nell'app scegli il pulsante **Perdita memoria** quattro volte in successione.  
   

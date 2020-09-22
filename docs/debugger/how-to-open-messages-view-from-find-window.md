@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: aprire la visualizzazione messaggi dalla finestra trova | Microsoft Docs'
+title: Aprire la visualizzazione messaggi dalla finestra trova | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3258e45e47c263912957ff5066ea9d02ad03e57e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b6240807eb82313182278251b353894545b957d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349484"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852270"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Procedura: aprire la visualizzazione messaggi dalla finestra Trova
 Potrebbe risultare utile utilizzare la finestra di dialogo **Trova finestra** per selezionare una finestra di destinazione e quindi aprire una visualizzazione messaggi di tale finestra.
