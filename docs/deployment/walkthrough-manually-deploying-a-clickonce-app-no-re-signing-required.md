@@ -1,5 +1,6 @@
 ---
-title: Distribuire manualmente le app ClickOnce che conservano la personalizzazione
+title: Distribuisci manualmente l'app ClickOnce & Mantieni la personalizzazione
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e3f21f9e377b7d3e2d71d499eed25079c7769c7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66263418"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809224"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Procedura dettagliata: distribuire manualmente un'applicazione ClickOnce che non richiede una nuova firma e che conserva le informazioni di personalizzazione
 Quando si crea un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione e la si assegna a un cliente per la pubblicazione e la distribuzione, il cliente ha tradizionalmente dovuto aggiornare il manifesto di distribuzione e firmarlo di nuovo. Sebbene questo sia ancora il metodo preferito nella maggior parte dei casi, il .NET Framework 3,5 consente di creare [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzioni che possono essere distribuite dai clienti senza dover rigenerare un nuovo manifesto di distribuzione. Per ulteriori informazioni, vedere la pagina relativa alla [distribuzione di applicazioni ClickOnce per i server di test e di produzione senza firma](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).

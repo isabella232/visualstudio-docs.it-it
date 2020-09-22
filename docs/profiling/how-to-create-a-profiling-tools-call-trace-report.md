@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: creazione di un report di traccia delle chiamate Strumenti di profilatura | Microsoft Docs'
+title: Creare un report calltrace degli strumenti di profilatura | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fe1ae2870e2e48d092f303f3e7458e7498c0ba5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d7d315d1931dfa64ce0070790c833651fa4fc11
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548161"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851203"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Procedura: Creare un report calltrace degli strumenti di profilatura
 Il *report calltrace* per gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] elenca le informazioni di intervallo per ogni punto di ingresso e di uscita delle funzioni dell'applicazione e ogni chiamata ad altre funzioni da parte di una determinata funzione. I report calltrace sono disponibili per i dati di profilatura solo se sono stati raccolti con il metodo di strumentazione.

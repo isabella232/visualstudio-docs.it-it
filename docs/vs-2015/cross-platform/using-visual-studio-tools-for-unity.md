@@ -10,11 +10,11 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: cd05f5ebad1a07e818e377b90aeb5e137f296cd9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443367"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839796"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Uso di Visual Studio Tools per Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,12 +29,12 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
   
 ##### <a name="to-access-unity-documentation"></a>Per accedere alla documentazione di Unity  
   
-- In Visual Studio evidenziare o posizionare il cursore sull'API di Unity su cui visualizzare maggiori informazioni e quindi premere **CTRL+ALT+M, CTRL+H**  
+- In Visual Studio evidenziare o posizionare il cursore sull'API di Unity su cui si desidera ottenere informazioni, quindi premere **CTRL + ALT + M, CTRL + H**  
   
 ### <a name="unity-monobehavior-scripting-wizard"></a>Procedura guidata MonoBehaviour di Unity per la creazione di script  
  In Unity la maggior parte degli script implementati deriva dalla classe MonoBehaviour di cui viene eseguito l'override di alcuni metodi. È possibile usare la procedura guidata MonoBehaviour per creare rapidamente definizioni vuote dei metodi MonoBehaviour di cui eseguire l'overload. Tramite questa procedura guidata è possibile specificare uno o più metodi di cui eseguire l'overload dall'elenco dei metodi disponibili, scegliere dove verranno inseriti nel codice e decidere se includere commenti relativi alla modalità di utilizzo.  
   
- ![Finestra di dialogo della procedura guidata MonoBehavior.](../cross-platform/media/vstu-monobehavior-wizard-full.png "vstu_monobehavior_wizard_full")  
+ ![Finestra della procedura guidata MonoBehavior.](../cross-platform/media/vstu-monobehavior-wizard-full.png "vstu_monobehavior_wizard_full")  
   
 ##### <a name="to-create-empty-monobehavior-method-definitions-by-using-the-monobehavior-wizard"></a>Per creare definizioni vuote di metodi MonoBehaviour con la procedura guidata MonoBehaviour  
   
@@ -55,7 +55,7 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
 #### <a name="quick-monobehavior-scripting-wizard"></a>Procedura guidata MonoBehaviour rapidi di Unity per la creazione di script  
  Una volta acquisita familiarità con le API di Unity, è possibile usare la procedura guidata MonoBehaviour rapidi per implementare metodi di overload ancor più rapidamente. Tramite questa procedura guidata è possibile specificare un unico metodo che viene inserito senza commenti in corrispondenza della posizione del cursore.  
   
- ![Finestra di dialogo della procedura guidata MonoBehavior rapidi.](../cross-platform/media/vstu-monobehavior-wizard-quick.png "vstu_monobehavior_wizard_quick")  
+ ![Finestra rapida della procedura guidata MonoBehavior.](../cross-platform/media/vstu-monobehavior-wizard-quick.png "vstu_monobehavior_wizard_quick")  
   
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>Per creare una definizione vuota di metodi MonoBehaviour con la procedura guidata MonoBehaviour rapidi  
   
@@ -70,13 +70,13 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
 ### <a name="unity-project-explorer"></a>Esplora progetti Unity  
  È possibile usare Esplora progetti Unity per spostarsi nel progetto Unity all'interno di Visual Studio.  
   
- ![Finestra di Esplora progetti Unity.](../cross-platform/media/vstu-unity-project-explorer.png "vstu_unity_project_explorer")  
+ ![Finestra Esplora progetti di Unity.](../cross-platform/media/vstu-unity-project-explorer.png "vstu_unity_project_explorer")  
   
 ##### <a name="to-view-the-unity-project-explorer"></a>Per visualizzare Esplora progetti Unity  
   
-- Nel menu principale di Visual Studio scegliere **Visualizza**, **Esplora progetti Unity**. Keyboard: **ALT+MAIUSC+E**  
+- Nel menu principale di Visual Studio scegliere **Visualizza**, **Esplora progetti Unity**. Tastiera: **ALT+MAIUSC+E**  
   
-   ![Visualizzare la finestra Esplora progetti Unity.](../cross-platform/media/vstu-view-unity-project-explorer.png "vstu_view_unity_project_explorer")  
+   ![Visualizzare la finestra Esplora progetti di Unity.](../cross-platform/media/vstu-view-unity-project-explorer.png "vstu_view_unity_project_explorer")  
   
   Esplora progetti Unity consente di visualizzare tutti i file e le directory di progetto Unity in modo analogo all'editor di Unity. Si tratta di una funzione diversa rispetto all'esplorazione degli script Unity con Esplora soluzioni, in cui sono presenti solo i file di script che vengono visualizzati in base all'organizzazione definita nei progetti e nella soluzione generata da Visual Studio Tools per Unity. Particolarmente nei progetti di grandi dimensioni è spesso più facile individuare lo script da modificare con Esplora progetti Unity, che consente inoltre di modificare altri tipi di file, ad esempio file di configurazione basati su testo, in Visual Studio senza aggiungerli a uno dei progetti nella soluzione Visual Studio.  
   
@@ -87,30 +87,30 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
   
  Se non si vogliono visualizzare errori, avvisi e messaggi di Unity nella finestra **Elenco errori** di Visual Studio, è possibile disabilitarli nel menu Configurazione.  
   
-### <a name="keyboard-shortcuts"></a>Scelte rapide da tastiera  
+### <a name="keyboard-shortcuts"></a>Tasti di scelta rapida  
  Per accedere rapidamente alle funzionalità degli strumenti Unity per Visual Studio, è possibile usare i tasti di scelta rapida elencati di seguito.  
   
-|Comando|Collegamento|Nome del comando associato al tasto di scelta rapida|  
+|Comando|Tasto di scelta rapida|Nome del comando associato al tasto di scelta rapida|  
 |-------------|--------------|---------------------------|  
-|Apri procedura guidata MonoBehaviour|**CTRL+MAIUSC+M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|  
-|Apri procedura guidata MonoBehaviour rapidi|**CTRL+MAIUSC+Q**|**EditorContextMenus.CodeWindow.QuickMonoBehaviours**|  
-|Apri Esplora progetti Unity|**ALT+MAIUSC+E**|**View.UnityProjectExplorer**|  
+|Apri procedura guidata MonoBehaviour|**CTRL + MAIUSC + M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|  
+|Apri procedura guidata MonoBehaviour rapidi|**CTRL + MAIUSC + Q**|**EditorContextMenus.CodeWindow.QuickMonoBehaviours**|  
+|Apri Esplora progetti Unity|**ALT + MAIUSC + E**|**View.UnityProjectExplorer**|  
 |Accedi alla documentazione di Unity|**CTRL+ALT+M, CTRL+H**|**Help.UnityAPIReference**|  
-|Connetti al debugger Unity (lettore o editor)|**_Non sono previsti valori predefiniti_**|**Debug.AttachUnityDebugger**|  
+|Connetti al debugger Unity (lettore o editor)|**_nessun valore predefinito_**|**Debug.AttachUnityDebugger**|  
   
  Se si preferisce non usarle, è possibile modificare le combinazioni di tasti di scelta rapida predefinite. Per informazioni su come modificarle, vedere [Identificazione e personalizzazione dei tasti di scelta rapida in Visual Studio](https://msdn.microsoft.com/library/5zwses53.aspx).  
   
 ## <a name="unity-debugging"></a>Debug di Unity  
  Visual Studio Tools per Unity consente di eseguire il debug di script dell'editor e di gioco del progetto Unity usando il potente debugger di Visual Studio.  
   
-### <a name="connecting-visual-studio-to-unity"></a> Connessione di Visual Studio a Unity  
+### <a name="connecting-visual-studio-to-unity"></a><a name="connecting-visual-studio-to-unity"></a> Connessione di Visual Studio a Unity  
  Visual Studio Tools per Unity comunica con Unity tramite una connessione UDP. Questo significa che è possibile connettersi in modo analogo a un'istanza di Unity in esecuzione in locale o in qualsiasi punto della rete. Per connettersi a una qualsiasi istanza di Unity visualizzata in rete, è possibile usare la finestra di dialogo **Seleziona istanza di Unity**.  
   
 ##### <a name="to-open-the-select-unity-instance-dialog"></a>Per aprire la finestra di dialogo Seleziona istanza di Unity  
   
 - Nel menu principale di Visual Studio scegliere **Debug**, **Collega debugger Unity**.  
   
-     ![Collegare il debugger di Unity.](../cross-platform/media/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")  
+     ![Connettere il debugger di Unity.](../cross-platform/media/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")  
   
 - *In alternativa*, sulla barra di stato di Visual Studio fare clic sull'icona della spina nell'angolo inferiore destro di Visual Studio.  
   
@@ -129,7 +129,7 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
  **Computer**  
  Nome del computer o del dispositivo in cui è in esecuzione questa istanza di Unity.  
   
- **Type**  
+ **Tipo**  
  **Editor** se questa istanza di Unity viene eseguita nell'editor di Unity; **Lettore** se questa istanza di Unity è un lettore autonomo.  
   
  **Porta**  
@@ -138,7 +138,7 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
 > [!IMPORTANT]
 > Dal momento che Visual Studio Tools per Unity e l'istanza di Unity comunicano tramite un socket di rete UDP, è possibile che il firewall non lo riconosca. In tal caso, è necessario autorizzare la connessione per consentire a VSTU e Unity di comunicare.  
   
-### <a name="debugging-your-project-in-a-unity-player"></a> Debug del progetto in un lettore Unity  
+### <a name="debugging-your-project-in-a-unity-player"></a><a name="debugging-your-project-in-a-unity-player"></a> Debug del progetto in un lettore Unity  
  È possibile connettere Visual Studio Tools per Unity direttamente all'app Unity in esecuzione in un lettore autonomo quando non è in esecuzione l'editor di Unity oppure per eseguire il debug di problemi specifici della piattaforma.  
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>Per abilitare il debug di script in un lettore Unity  
@@ -147,7 +147,7 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
   
   ![Configurare le impostazioni di compilazione Unity per il debug.](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
-  In più, per eseguire il debug di un'app Unity in esecuzione nel **lettore Web Unity**, è anche necessario configurarlo per l'uso del **canale della versione di sviluppo**.  
+  In più, per eseguire il debug di un'app Unity in esecuzione nel **lettore Web Unity**, è anche necessario configurarlo per l'uso del** canale della versione di sviluppo**.  
   
 ##### <a name="to-configure-the-development-release-channel-in-unity-web-player"></a>Per configurare il canale della versione di sviluppo nel lettore Web Unity  
   
@@ -170,7 +170,7 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
   
 1. Aggiungere il progetto di DLL esistente alla soluzione di Visual Studio generata da Visual Studio Tools per Unity. Può capitare meno frequentemente di avviare un nuovo progetto di DLL gestita per contenere i componenti di codice nel progetto Unity. In questo caso, è possibile aggiungere un nuovo progetto di DLL gestita alla soluzione Visual Studio. Per altre informazioni sull'aggiunta di un progetto nuovo o esistente a una soluzione, vedere [Procedura: Aggiungere progetti a una soluzione](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).  
   
-    ![Aggiungere il progetto esistente per una DLL alla soluzione.](../cross-platform/media/vstu-debugging-dll-add-existing.png "vstu_debugging_dll_add_existing")  
+    ![Aggiungere il progetto DLL esistente alla soluzione.](../cross-platform/media/vstu-debugging-dll-add-existing.png "vstu_debugging_dll_add_existing")  
   
     In entrambi i casi, Visual Studio Tools per Unity mantiene il riferimento al progetto, anche se deve rigenerare nuovamente i file di progetto e soluzione, di conseguenza è necessario eseguire questi passaggi una sola volta.  
   

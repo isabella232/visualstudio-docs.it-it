@@ -10,12 +10,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1431d56516c749004cef1b35ada482a6c53446
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44fe22aa1d4549d1daba4324349160afcd3133ba
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579719"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811214"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Esercitazione 1: Creare un visualizzatore di immagini
 
@@ -68,6 +68,6 @@ Per iniziare l'esercitazione, iniziare con il **[passaggio 1: creare un Windows 
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Altre esercitazioni su C#](/visualstudio/get-started/csharp/)
-* [Esercitazioni Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Altre esercitazioni su C#](../get-started/csharp/index.yml)
+* [Esercitazioni Visual Basic](../get-started/visual-basic/index.yml)
 * [Esercitazioni su C++](/cpp/get-started/tutorial-console-cpp)

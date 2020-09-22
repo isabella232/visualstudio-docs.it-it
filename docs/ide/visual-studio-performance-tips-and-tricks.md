@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4aefa741352e80f4a20a51fa1ab36e617403c9c
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: a5531a85bcdff90db816e942d196e0bab3b66139
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89427002"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810324"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Suggerimenti sulle prestazioni di Visual Studio
 
@@ -63,7 +63,7 @@ Se in genere si verificano problemi di memoria insufficiente durante le sessioni
 
     Impostare le opzioni su **Solo moduli specificati** anziché su **Tutti i moduli** e quindi specificare quali moduli si intende caricare. Durante il debug, è anche possibile fare doppio clic su moduli specifici nella finestra **Moduli** per includere in modo esplicito un modulo nel caricamento dei simboli Per aprire la finestra durante il debug, scegliere **debug**  >  . **Windows**  >  **Moduli**.)
 
-    Per altre informazioni, vedere [Understand symbol files](/visualstudio/ide/visual-studio-performance-tips-and-tricks?view=vs-2019) (Informazioni sui file dei simboli).
+    Per altre informazioni, vedere [Understand symbol files](?view=vs-2019) (Informazioni sui file dei simboli).
 
 - **Disabilitare gli strumenti di diagnostica**
 

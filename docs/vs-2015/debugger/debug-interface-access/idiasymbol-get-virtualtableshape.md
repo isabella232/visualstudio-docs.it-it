@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8dfc91a63634f47cc2a8bc16d0dfbede1e14abf4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64817253"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839904"
 ---
-# <a name="idiasymbolgetvirtualtableshape"></a>IDiaSymbol::get_virtualTableShape
+# <a name="idiasymbolget_virtualtableshape"></a>IDiaSymbol::get_virtualTableShape
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera l'interfaccia di simbolo del tipo di tabella virtuale per un tipo definito dall'utente.  
+Recupera l'interfaccia dei simboli del tipo di tabella virtuale per un tipo definito dall'utente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,13 +35,13 @@ HRESULT get_virtualTableShape ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che rappresenta la tabella virtuale per un tipo definito dall'utente.  
+ out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che rappresenta la tabella virtuale per un tipo definito dall'utente.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

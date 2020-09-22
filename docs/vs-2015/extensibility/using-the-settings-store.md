@@ -1,5 +1,5 @@
 ---
-title: Con il Store impostazioni | Microsoft Docs
+title: Uso dell'archivio impostazioni | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,34 +11,34 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4b6c2810a81ada06152faea06e86a27f7907a643
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430103"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840080"
 ---
 # <a name="using-the-settings-store"></a>Uso dell'archivio delle impostazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esistono due tipi di archivi di impostazioni:  
+Esistono due tipi di archivi delle impostazioni:  
   
-- Impostazioni di configurazione, che sono impostazioni di Visual Studio e package VS di sola lettura. Visual Studio unisce le impostazioni da tutti i file con estensione pkgdef noti in questo archivio.  
+- Impostazioni di configurazione, ovvero le impostazioni di Visual Studio e VSPackage di sola lettura. Visual Studio unisce le impostazioni da tutti i file pkgdef noti in questo archivio.  
   
-- Impostazioni utente, che sono impostazioni scrivibile, ad esempio quelli che vengono visualizzati nelle pagine di **opzioni** nella finestra di dialogo Pagine delle proprietà e alcune altre finestre di dialogo. Estensioni di Visual Studio possono usarle per l'archiviazione locale di piccole quantità di dati.  
+- Impostazioni utente, che sono impostazioni scrivibili, ad esempio quelle visualizzate nelle pagine della finestra di dialogo **Opzioni** , le pagine delle proprietà e alcune altre finestre di dialogo. Le estensioni di Visual Studio possono usarle per l'archiviazione locale di piccole quantità di dati.  
   
-  Questa procedura dettagliata illustra come leggere i dati dall'archivio di impostazione di configurazione. Visualizzare [scrivendo la Store impostazioni utente](../extensibility/writing-to-the-user-settings-store.md) per una spiegazione di come scrivere nell'archivio delle impostazioni utente.  
+  In questa procedura dettagliata viene illustrato come leggere i dati dall'archivio delle impostazioni di configurazione. Per una spiegazione su come scrivere nell'archivio impostazioni utente, vedere [scrittura nell'archivio impostazioni utente](../extensibility/writing-to-the-user-settings-store.md) .  
   
 ## <a name="creating-the-example-project"></a>Creazione del progetto di esempio  
- Questa sezione illustra come creare un progetto di estensione semplice con un comando di menu a scopo dimostrativo.  
+ In questa sezione viene illustrato come creare un semplice progetto di estensione con un comando di menu per la dimostrazione.  
   
-1. Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX che contiene gli asset di estensione. Creare un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto VSIX denominato `SettingsStoreExtension`. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual c# / Extensibility**.  
+1. Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX che conterrà gli asset di estensione. Creare un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto VSIX denominato `SettingsStoreExtension` . Il modello di progetto VSIX è reperibile nella finestra di dialogo **nuovo progetto** in **Visual C#/extensibility**.  
   
-2. A questo punto aggiungere un modello di elemento di comando personalizzato denominato **SettingsStoreCommand**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual c# / Extensibility** e selezionare **comando personalizzato**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome di file di comando da **SettingsStoreCommand.cs**. Per altre informazioni su come creare un comando personalizzato, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. A questo punto aggiungere un modello di elemento di comando personalizzato denominato **SettingsStoreCommand**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Visual C#/extensibility** e selezionare **comando personalizzato**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in **SettingsStoreCommand.cs**. Per ulteriori informazioni su come creare un comando personalizzato, vedere [creazione di un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-## <a name="using-the-configuration-settings-store"></a>Con il Store le impostazioni di configurazione  
+## <a name="using-the-configuration-settings-store"></a>Uso dell'archivio impostazioni di configurazione  
  In questa sezione viene illustrato come rilevare e visualizzare le impostazioni di configurazione.  
   
-1. Nel file SettingsStorageCommand.cs, aggiungere quanto segue usando istruzioni:  
+1. Nel file SettingsStorageCommand.cs aggiungere le istruzioni using seguenti:  
   
    ```  
    using System.Collections.Generic;  
@@ -47,16 +47,16 @@ Esistono due tipi di archivi di impostazioni:
    using System.Windows.Forms;  
    ```  
   
-2. In `MenuItemCallback`, rimuovere il corpo del metodo e aggiungere l'archivio delle impostazioni di configurazione di ottenere le righe seguenti:  
+2. In `MenuItemCallback` rimuovere il corpo del metodo e aggiungere le righe seguenti per ottenere l'archivio delle impostazioni di configurazione:  
   
    ```  
    SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
    SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
    ```  
   
-    Il <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> è una classe helper gestita tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> servizio.  
+    <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager>È una classe helper gestita sul <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> servizio.  
   
-3. A questo punto è scoprire se sono installati gli strumenti di Windows Phone. Il codice dovrebbe essere simile al seguente:  
+3. Verificare ora se sono installati Windows Phone Tools. Il codice dovrebbe essere simile al seguente:  
   
    ```  
    private void MenuItemCallback(object sender, EventArgs e)  
@@ -71,19 +71,19 @@ Esistono due tipi di archivi di impostazioni:
   
 4. Testare il codice. Compilare il progetto e avviare il debug.  
   
-5. Nell'istanza sperimentale, sul **degli strumenti** menu, fare clic su **SettingsStoreCommand richiamare**.  
+5. Nell'istanza sperimentale, scegliere **richiama SettingsStoreCommand**dal menu **strumenti** .  
   
-    Si dovrebbe vedere un messaggio **Microsoft Windows Phone Developer Tools:** aggiungendo **True** oppure **False**.  
+    Verrà visualizzata una finestra di messaggio che informa che **Microsoft Windows Phone strumenti di sviluppo:**  seguito da **true** o **false**.  
   
-   Visual Studio mantiene l'archivio delle impostazioni nel Registro di sistema.  
+   Visual Studio mantiene l'archivio delle impostazioni nel registro di sistema.  
   
-#### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Usare un editor del Registro di sistema per verificare le impostazioni di configurazione  
+#### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Per utilizzare un editor del registro di sistema per verificare le impostazioni di configurazione  
   
 1. Aprire Regedit.exe.  
   
-2. Passare a HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
+2. Passare a HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0Exp_Config \InstalledProducts \\ .  
   
     > [!NOTE]
-    > Assicurarsi che si sta esaminando la chiave che contiene \14.0Exp_Config\ e non \14.0_Config\\. Quando si esegue l'istanza sperimentale di Visual Studio, le impostazioni di configurazione disponibili nell'hive del Registro di sistema "14.0Exp_Config".  
+    > Assicurarsi di esaminare la chiave che contiene \ 14.0Exp_Config \ e non \ 14.0_Config \\ . Quando si esegue l'istanza sperimentale di Visual Studio, le impostazioni di configurazione si trovano nell'hive del registro di sistema "14.0Exp_Config".  
   
-3. Espandere il nodo \Installed Products\. Se il messaggio nei passaggi precedenti è **installata di Microsoft Windows Phone Developer Tools: True**, \Installed Products\ deve contenere un nodo di Microsoft Windows Phone Developer Tools. Se il messaggio è **installata di Microsoft Windows Phone Developer Tools: False**, quindi \Installed Products\ non deve contenere un nodo di Microsoft Windows Phone Developer Tools.
+3. Espandere il nodo \Installed Products \. Se il messaggio nei passaggi precedenti è **Microsoft Windows Phone strumenti di sviluppo installato: true**, i prodotti \Installed \ devono contenere un nodo microsoft Windows Phone strumenti di sviluppo. Se il messaggio è **Microsoft Windows Phone strumenti di sviluppo installato: false**, i prodotti \Installed \ non devono contenere un nodo microsoft Windows Phone strumenti di sviluppo.

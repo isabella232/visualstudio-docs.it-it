@@ -1,5 +1,5 @@
 ---
-title: 'Errore: il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer'
+title: Il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b372b1f6fcdab357e87ff91fa4df257e8da7d68d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e879fdc1be2eba309258dd64b3c9d83639eb05f7
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536669"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851073"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Errore: il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer
 Questo errore indica che il servizio debugger remoto è in esecuzione con un account utente che non è in grado di eseguire l'autenticazione quando tenta di connettersi al computer da cui si esegue il debug. Questo errore può verificarsi quando il debug remoto utilizza il motore di debug legacy e il debugger remoto viene eseguito come servizio.

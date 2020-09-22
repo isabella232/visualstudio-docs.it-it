@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Oggetti mancanti a causa della Pipeline configurati in modo errato | Microsoft Docs'
+title: 'Procedura dettagliata: oggetti mancanti a causa di una pipeline non configurata correttamente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9d74006051fd39043de75cec81fdad3f1083adef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444290"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90840289"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procedura dettagliata: Oggetti mancanti a causa di una pipeline configurata in modo non corretto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Questa procedura dettagliata descrive come usare gli strumenti della barra degli
   
  Quando in questo scenario l'app viene eseguita per essere testata, il rendering dello sfondo avviene nel modo previsto, ma uno degli oggetti non viene visualizzato. Usando gli strumenti di Diagnostica della grafica, è possibile acquisire il problema in un log di grafica in modo da poter eseguire il debug dell'app. Nell'app, il problema si presenta nel modo seguente:  
   
- ![L'oggetto non visibile](../debugger/media/gfx-diag-demo-misconfigured-pipeline-problem.png "gfx_diag_demo_misconfigured_pipeline_problem")  
+ ![Oggetto non visibile](../debugger/media/gfx-diag-demo-misconfigured-pipeline-problem.png "gfx_diag_demo_misconfigured_pipeline_problem")  
   
 ## <a name="investigation"></a>Analisi  
  Utilizzando gli strumenti di diagnostica della grafica, è possibile caricare il documento del log di grafica per controllare i frame acquisiti durante il test.  
@@ -68,7 +68,7 @@ Questa procedura dettagliata descrive come usare gli strumenti della barra degli
   
 4. Fermarsi quando si raggiunge la chiamata di disegno che corrisponde all'oggetto mancante. In questo scenario la finestra **Fasi pipeline grafica** indica che la geometria è stata inviata alla GPU (operazione indicata dalla presenza della fase **Assembler input** ) e trasformata (operazione indicata dalla fase **Vertex shader** ), ma non è visualizzata nella destinazione di rendering perché non sembra essere presente un pixel shader attivo (condizione indicata dall'assenza della fase **Pixel shader** ). In questo scenario è anche possibile visualizzare la sagoma dell'oggetto mancante nella fase **Merge output** :  
   
-    ![Un evento DrawIndexed e relativo effetto sulle pipeline](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-2.png "gfx_diag_demo_misconfigured_pipeline_step_2")  
+    ![Evento DrawIndexed e relativo effetto sulla pipeline](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-2.png "gfx_diag_demo_misconfigured_pipeline_step_2")  
   
    Dopo aver verificato che l'app ha emesso una chiamata di disegno per la geometria dell'oggetto mancante e aver determinato che la fase Pixel shader è inattiva, è possibile esaminare lo stato del dispositivo per confermare queste conclusioni. È possibile usare la funzionalità **Tabella oggetti grafici** per esaminare il contesto di dispositivo e altri dati dell'oggetto Direct3D.  
   
@@ -78,7 +78,7 @@ Questa procedura dettagliata descrive come usare gli strumenti della barra degli
   
 2. Esaminare lo stato del dispositivo visualizzato nella scheda del **contesto di dispositivo d3d11** per verificare che nessun pixel shader era attivo durante la chiamata di disegno. In questo scenario la voce **Informazioni generali shader**, visualizzata sotto **Stato pixel shader**, indica che lo shader è **NULL**:  
   
-    ![Il contesto di dispositivo D3D 11 Mostra stato pixel shader](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-4.png "gfx_diag_demo_misconfigured_pipeline_step_4")  
+    ![Il contesto del dispositivo D3D 11 indica lo stato pixel shader](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-4.png "gfx_diag_demo_misconfigured_pipeline_step_4")  
   
    Dopo aver confermato che il pixel shader è stato impostato su null dall'app, il passaggio successivo consiste nel trovare la posizione del codice sorgente dell'app in cui è impostato lo shader. Per trovare questa posizione, è possibile usare **Elenco eventi di grafica** insieme a **Stack di chiamate eventi di grafica** .  
   
@@ -93,15 +93,15 @@ Questa procedura dettagliata descrive come usare gli strumenti della barra degli
   
 3. Usare lo stack di chiamate per individuare la chiamata `PSSetShader` nel codice sorgente dell'app. Nella finestra **Stack di chiamate eventi di grafica** scegliere la chiamata posizionata più in alto ed esaminare il valore su cui è impostato il pixel shader. Il pixel shader potrebbe essere impostato direttamente su null oppure il valore null potrebbe essere presente a causa di un argomento passato nella funzione o di un altro stato. Se il pixel shader non è impostato direttamente su null, potrebbe essere possibile individuare l'origine del valore null in un altra posizione più in alto nello stack di chiamate. In questo scenario si determina che il pixel shader è impostato direttamente su `nullptr` nella funzione posizionata più in alto, denominata `CubeRenderer::Render`:  
   
-    ![Il codice che non inizializza il pixel shader](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-5.png "gfx_diag_demo_misconfigured_pipeline_step_5")  
+    ![Codice che non inizializza il pixel shader](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-5.png "gfx_diag_demo_misconfigured_pipeline_step_5")  
   
    > [!NOTE]
    > Se non è possibile individuare l'origine del valore null semplicemente esaminando lo stack di chiamate, è consigliabile impostare un punto di interruzione condizionale nella chiamata `PSSetShader` , in modo che l'esecuzione del programma si interrompa quando il pixel shader è impostato su null. Riavviare quindi l'app in modalità di debug e usare tecniche di debug tradizionali per individuare l'origine del valore null.  
   
    Per correggere il problema, assegnare il pixel shader corretto usando il primo parametro della chiamata API `ID3D11DeviceContext::PSSetShader` .  
   
-   ![C con correzione&#43; &#43; nel codice sorgente](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
+   ![Codice sorgente&#43;&#43; C corretto](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
   
    Dopo aver corretto il codice, è possibile ricompilare ed eseguire l'app per verificare che il problema di rendering sia stato risolto:  
   
-   ![L'oggetto viene ora visualizzata](../debugger/media/gfx-diag-demo-misconfigured-pipeline-resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")
+   ![Oggetto nuovamente visibile](../debugger/media/gfx-diag-demo-misconfigured-pipeline-resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")

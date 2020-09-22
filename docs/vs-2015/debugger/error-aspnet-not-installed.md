@@ -1,5 +1,5 @@
 ---
-title: 'Errore: ASP.NET non è installato | Microsoft Docs'
+title: 'Errore: ASP.NET non installato | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2198ed401f714353be2dd18846dd527cc433e695
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447318"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840027"
 ---
 # <a name="error-aspnet-not-installed"></a>Errore: ASP.NET non è installato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ Questo errore si verifica quando [!INCLUDE[vstecasp](../includes/vstecasp-md.md)
     \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
     ```  
   
-     in cui *versione* rappresenta il numero di versione di .NET Framework installata nel computer, ad esempio v1.0.370. È possibile determinare la versione del framework esaminando il `\WINDOWS\Microsoft.NET\Framework` directory.  
+     dove *Version* rappresenta il numero di versione del .NET Framework installato nel computer, ad esempio v 1.0.370. È possibile determinare la versione del Framework eseguendo una ricerca nella `\WINDOWS\Microsoft.NET\Framework` Directory.  
   
     > [!NOTE]
     > Con Windows Server 2003 è possibile installare [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] dall'applicazione **Installazione applicazioni** del Pannello di controllo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

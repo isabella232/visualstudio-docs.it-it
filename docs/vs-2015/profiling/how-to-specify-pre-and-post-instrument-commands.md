@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ab7ecbe97ba0b174a1cc4c0f0d169834ce25e8d8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439704"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839428"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procedura: Specificare comandi pre- e post-strumentazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63439704"
   
  È possibile specificare comandi per tutti i file binari instrumentati nell'esecuzione della profilatura o per singoli file binari. Tuttavia, è possibile specificare un solo comando pre-strumentazione da eseguire prima e un solo comando post-strumentazione da eseguire dopo il processo di strumentazione. Non è possibile specificare comandi sia per tutti i file binari che per singoli file binari. Quando si specificano comandi per tutti i file binari, i comandi vengono eseguiti prima o dopo la strumentazione di ogni file binario della sessione.  
   
- **Requirements**  
+ **Requisiti**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   

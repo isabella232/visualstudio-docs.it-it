@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetExceptionObjectAndType | Microsoft Docs
+title: 'IDebugBinder3:: GetExceptionObjectAndType | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b6da9b1259518f3796968712b11c725a08aa9a01
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443945"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840284"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -42,16 +42,16 @@ int GetExceptionObjectAndType(
   
 #### <a name="parameters"></a>Parametri  
  `ppException`  
- [out] Restituisce l'oggetto che rappresenta l'eccezione.  
+ out Restituisce l'oggetto che rappresenta l'eccezione.  
   
  `ppField`  
- [out] Restituisce l'oggetto che rappresenta un campo specifico che potrà aver causato l'eccezione (potrebbe trattarsi di un valore null).  
+ out Restituisce l'oggetto che rappresenta un campo specifico che può avere causato l'eccezione. può essere un valore null.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 > [!NOTE]
-> Per verificare se si verifica un'eccezione, controllare il valore restituito da `ppException`: se si tratta di un valore null, quindi non è associata a questo oggetto fa eccezione.  
+> Per verificare se è presente un'eccezione, controllare il valore restituito da `ppException` : se si tratta di un valore null, nessuna eccezione è associata a questo oggetto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

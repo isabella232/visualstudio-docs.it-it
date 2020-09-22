@@ -1,5 +1,5 @@
 ---
-title: "Errore: la Microsoft Visual Studio Remote Debugging Monitor nel computer remoto non dispone dell'autorizzazione per la connessione al computer"
+title: Microsoft Visual Studio Remote Debugging Monitor sul computer remoto non dispone dell'autorizzazione per connettersi al computer
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa9304c999abb1401af8e524551a999556826062
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7baed5cc2c4c8dbaa01cd3dfadc386b6db1834c
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460456"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851086"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>Errore: Microsoft Visual Studio Remote Debugging Monitor sul computer remoto non dispone dell'autorizzazione per connettersi al computer.
 

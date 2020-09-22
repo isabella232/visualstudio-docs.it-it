@@ -1,5 +1,5 @@
 ---
-title: Come sospendere e riprendere la raccolta dei dati sulle prestazioni | Microsoft Docs
+title: Sospendere e riprendere la raccolta dei dati sulle prestazioni | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee17d8fa40be710fd18026a66e0a74680c5da087
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5abdd7f8324e76f452d5e090aba861f8e7cf8301
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331468"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851385"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Procedura: Sospendere e riprendere la raccolta dati sulle prestazioni
 Dalla finestra pagina della sessione di profilatura è possibile controllare interattivamente la raccolta dei dati di profilatura.

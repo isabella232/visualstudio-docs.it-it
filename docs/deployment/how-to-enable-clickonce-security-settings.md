@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: abilitare le impostazioni di sicurezza ClickOnce | Microsoft Docs'
+title: Abilita impostazioni di sicurezza ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d673edac957e9625f7d948fbe766ee08b23b6b52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f407ac42dc9997215bfe6682bb8b974b78c7847
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382432"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850930"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Procedura: Abilitare le impostazioni di sicurezza ClickOnce
 Per pubblicare l'applicazione, è necessario abilitare la sicurezza dall'accesso di codice per le applicazioni ClickOnce. Questa operazione viene eseguita automaticamente quando si pubblica un'applicazione tramite la pubblicazione guidata.

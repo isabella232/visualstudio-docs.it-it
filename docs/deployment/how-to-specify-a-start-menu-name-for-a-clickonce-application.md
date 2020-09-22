@@ -1,5 +1,6 @@
 ---
-title: "Procedura: specificare il nome di un menu Start per un'applicazione ClickOnce | Microsoft Docs"
+title: Specificare il nome del menu Start per un'app ClickOnce
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 882d6f7471530a101404040368dbc6088e9b5d96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d60985d0fdf766fb49348bb9eb5d14d62d7e4d5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381925"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808763"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Procedura: Specificare il nome di un'applicazione ClickOnce per il menu Start
 Quando un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione viene installata per l'utilizzo online e offline, viene aggiunta una voce al menu **Start** e all'elenco **Installazione applicazioni** . Per impostazione predefinita, il nome visualizzato corrisponde al nome dell'assembly dell'applicazione, ma è possibile modificare il nome visualizzato impostando **nome prodotto** nella finestra di dialogo **Opzioni di pubblicazione** .

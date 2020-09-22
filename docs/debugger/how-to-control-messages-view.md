@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: controllare la visualizzazione dei messaggi | Microsoft Docs'
+title: Visualizzazione messaggi di controllo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a95e257950a93ff61c27f7ea599b0de12e09677d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 917fc2af5ab09544201a6aa35c34611a89d7a277
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350251"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850969"
 ---
 # <a name="how-to-control-messages-view"></a>Procedura: controllare la visualizzazione messaggi
 Con Spy + + si ha un notevole controllo sul contenuto di una finestra di [visualizzazione dei messaggi](../debugger/messages-view.md) . È possibile [avviare e arrestare](../debugger/how-to-start-and-stop-the-message-log-display.md) la visualizzazione dei messaggi in qualsiasi momento ed è possibile specificare:

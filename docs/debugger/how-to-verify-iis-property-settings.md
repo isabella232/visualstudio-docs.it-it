@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: verificare le impostazioni delle proprietà di IIS | Microsoft Docs'
+title: Verificare le impostazioni delle proprietà di IIS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87fdd6064492c4043723ddff960685a50f8bcb2b
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 4c883257abf48601f5131bdae239df61ea64ba77
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600269"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851047"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Procedura: verificare le impostazioni delle proprietà di IIS
 
@@ -77,6 +77,6 @@ ms.locfileid: "89600269"
 
 9. Fare clic su **OK** per chiudere le finestre di dialogo **Gestione Internet Information Services (IIS)**, **Gestione servizi Internet** o **Internet Information Services**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Risoluzione dei problemi](../debugger/debugging-web-applications-troubleshooting.md)

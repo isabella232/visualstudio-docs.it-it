@@ -1,5 +1,6 @@
 ---
-title: Scaricare assembly su richiesta con l'API di distribuzione ClickOnce
+title: Scarica assembly su richiesta (API ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f52d853399bb568407b5022dca7f6288e3901a7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8452bec3443b93737e4799a8f09c8e342f011976
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66262917"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809250"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procedura dettagliata: scaricare assembly su richiesta con l'API di distribuzione ClickOnce
 Per impostazione predefinita, tutti gli assembly inclusi in un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione vengono scaricati quando l'applicazione viene eseguita per la prima volta. Tuttavia, è possibile che si disponga di parti dell'applicazione utilizzate da un piccolo set di utenti. In questo caso, è consigliabile scaricare un assembly solo quando si crea uno dei relativi tipi. La procedura dettagliata riportata di seguito illustra come contrassegnare come "facoltativi" determinati assembly nell'applicazione e come scaricarli tramite le classi nello spazio dei nomi <xref:System.Deployment.Application> quando sono richiesti da Common Language Runtime (CLR).

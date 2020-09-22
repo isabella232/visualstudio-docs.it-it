@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: limitare la strumentazione a specifiche dll | Microsoft Docs'
+title: Limitare la strumentazione a specifiche DLL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 391aeb0b1686d58116d6aaa52ad0a3defe15fb00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3584498854e7518e93c4ba00dc019d804b0e8d8
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85327805"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851021"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procedura: Limitare la strumentazione a DLL specifiche
 
@@ -37,7 +37,7 @@ Usando il metodo di profilatura della strumentazione, è possibile limitare la r
 
 7. Dall'elenco **Aggiungi progetto di destinazione** selezionare il progetto eseguibile da usare per verificare la DLL.
 
-     facoltativo. È possibile aggiungere qualsiasi progetto DLL che si vuole profilare.
+     Facoltativo. È possibile aggiungere qualsiasi progetto DLL che si vuole profilare.
 
 8. Per impedire la raccolta di dati per un progetto aggiunto, fare clic con il pulsante destro del mouse sul nome del progetto e quindi deselezionare la casella di controllo **Strumento**.
 
@@ -55,7 +55,7 @@ Usando il metodo di profilatura della strumentazione, è possibile limitare la r
 
     - Digitare il percorso e il nome del file eseguibile (.* file exe*) che eseguirà l'operazione. *dll* nel **percorso eseguibile**. È anche possibile fare clic sul pulsante con i puntini di sospensione (...) per individuare il file nella finestra di dialogo **Eseguibile da avviare**.
 
-    - facoltativo. Digitare gli argomenti della riga di comando da passare al file eseguibile in **Argomenti della riga di comando**. Se necessario, specificare la directory di lavoro per l'applicazione in **Directory di lavoro**.
+    - Facoltativo. Digitare gli argomenti della riga di comando da passare al file eseguibile in **Argomenti della riga di comando**. Se necessario, specificare la directory di lavoro per l'applicazione in **Directory di lavoro**.
 
     - Fare clic su **Avanti**.
 
@@ -63,7 +63,7 @@ Usando il metodo di profilatura della strumentazione, è possibile limitare la r
 
 6. Fare clic su **Fine** per chiudere la procedura guidata e visualizzare la nuova sessione di prestazioni nella finestra **Esplora prestazioni**.
 
-7. facoltativo. Per aggiungere altre informazioni. file *dll* , fare clic con il pulsante destro del mouse su **destinazioni** e scegliere **Aggiungi binario di destinazione**. Selezionare i file dalla finestra di dialogo **Aggiungi binario di destinazione**.
+7. Facoltativo. Per aggiungere altre informazioni. file *dll* , fare clic con il pulsante destro del mouse su **destinazioni** e scegliere **Aggiungi binario di destinazione**. Selezionare i file dalla finestra di dialogo **Aggiungi binario di destinazione**.
 
     > [!NOTE]
     > Non specificare l'eseguibile (.* file exe*) che esercita le dll.

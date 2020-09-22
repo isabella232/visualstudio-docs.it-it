@@ -1,5 +1,5 @@
 ---
-title: Come filtrare i report dalla riga di comando | Microsoft Docs
+title: Filtrare report tramite la riga di comando | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 6e9b140f-b44f-4a5c-bd65-d868ddc94023
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3461965f0944200c44570cff5362aeeb143ed43c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b6408975e8a3d7189db26913f3de75ad1c7c595
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332250"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851138"
 ---
 # <a name="how-to-filter-reports-from-the-command-line"></a>Procedura: Filtrare i report dalla riga di comando
 Usando le opzioni del comando **VSPerfReport** è possibile filtrare i report per un intervallo di tempo specifico del file dei dati di profilatura o limitare i dati a uno o più processi o thread. Per altre informazioni su questo comando, vedere [VSPerfReport](../profiling/vsperfreport.md).

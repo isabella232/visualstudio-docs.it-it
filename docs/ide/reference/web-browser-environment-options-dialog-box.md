@@ -21,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8915bef3bba477dd515b1d176971cfb9949e9899
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85592076b99cf54991d21e1249cf30c609413733
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596502"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808678"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>Finestra di dialogo Opzioni: \> Web browser ambiente
 
@@ -52,7 +52,7 @@ Consente di impostare l'editor usato per aprire una pagina Web quando si sceglie
 
 - **Editor standard** Selezionare questa opzione per visualizzare l'origine nell'[editor](../../ide/writing-code-in-the-code-and-text-editor.md).
 
-- **Editor HTML** Selezionare questa opzione per visualizzare l'origine nella [finestra di progettazione HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Usare questa opzione per modificare la pagina Web nella visualizzazione Progettazione o nella visualizzazione Origine standard basata su testo.
+- **Editor HTML** Selezionare questa opzione per visualizzare l'origine nella [finestra di progettazione HTML](/previous-versions/ex0hkwbx(v=vs.140)). Usare questa opzione per modificare la pagina Web nella visualizzazione Progettazione o nella visualizzazione Origine standard basata su testo.
 
 - **Editor esterno** Selezionare questa opzione per visualizzare l'origine in un altro editor. Specificare il percorso dell'editor scelto, ad esempio notepad.exe.
 
@@ -66,4 +66,4 @@ Selezionare questa opzione per modificare le opzioni di Internet Explorer nella 
 ## <a name="see-also"></a>Vedere anche
 
 - [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
-- [Finestra di progettazione HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)
+- [Finestra di progettazione HTML](/previous-versions/ex0hkwbx(v=vs.140))

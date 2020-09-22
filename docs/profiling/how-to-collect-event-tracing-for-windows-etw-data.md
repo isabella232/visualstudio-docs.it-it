@@ -1,5 +1,5 @@
 ---
-title: Come raccogliere dati di Event Tracing for Windows (ETW) | Microsoft Docs
+title: Raccogliere dati ETW (Event Tracing for Windows) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0545ee7fe64d26e21d2a9f34def8dd618c08e630
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc5f1877ff6530dbe0bbc888824a6ae60215eca1
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330901"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851268"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Procedura: Raccogliere dati ETW (Event Tracing for Windows)
 

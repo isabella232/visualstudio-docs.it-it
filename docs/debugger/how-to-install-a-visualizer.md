@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: installare un visualizzatore | Microsoft Docs'
+title: Installare un visualizzatore | Microsoft Docs
 ms.date: 06/10/2020
 ms.topic: how-to
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b070eb361bcc3fbe4f72adfff10b5e7d19649087
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cce59dfb39da71b8ff87efd49de9e2e0f6cdbd0
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349562"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851411"
 ---
 # <a name="how-to-install-a-visualizer"></a>Procedura: installare un visualizzatore
 Dopo avere creato un visualizzatore, è necessario installarlo in modo da renderlo disponibile in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per installare un visualizzatore è sufficiente seguire una semplice procedura.

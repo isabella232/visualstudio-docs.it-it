@@ -13,11 +13,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 26e059d4fdc8eadd422924dd6bbda6f7c945ccfb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433040"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840274"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Procedura: creare ed eseguire un'installazione automatica di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,10 +40,10 @@ ms.locfileid: "63433040"
     > [!NOTE]
     > L'installazione potrebbe non riuscire se una combinazione di percorso e nome file supera i 260 caratteri. La lunghezza massima di un percorso in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è 221 caratteri.  Il nome del percorso locale non deve superare i 70 caratteri e il nome del percorso di rete non deve superare i 39 caratteri.
 
-     L'installazione potrebbe non riuscire anche se i nomi delle cartelle nel percorso includono spazi (ad esempio, "\\\\*ServerName*\IDE install" oppure \\\\*ServerName*\Visual Studio\\).
+     L'installazione potrebbe non riuscire anche se i nomi delle cartelle nel percorso includono spazi incorporati, ad esempio " \\ \\ *ServerName*\IDE install" o \\ \\ *ServerName*\Visual Studio \\ .
 
 ## <a name="deploying-visual-studio-in-unattended-mode"></a>Distribuzione di Visual Studio in modalità automatica
- Per distribuire [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in modalità automatica, è necessario modificare il file AdminDeployment.xml. A tale scopo, è necessario innanzitutto creare il file AdminDeployment.xml usando il parametro della riga di comando `/CreateAdminFile` *\<file location>*. È quindi possibile usare tale file per effettuare il push di una distribuzione di Visual Studio sulla rete o per inserirla in un'installazione se si inserisce tale file nella directory *Drive*:\IDEinstall\packages. Il file AdminDeployment.xml non è univoco per un sistema operativo, architettura, edizione di Visual Studio o lingua del sistema operativo.
+ Per distribuire [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in modalità automatica, è necessario modificare il file AdminDeployment.xml. A tale scopo, è necessario innanzitutto creare il file di AdminDeployment.xml utilizzando il `/CreateAdminFile` *\<file location>* parametro della riga di comando. È quindi possibile usare tale file per effettuare il push di una distribuzione di Visual Studio sulla rete o per inserirla in un'installazione se si inserisce tale file nella directory *Drive*:\IDEinstall\packages. Il file AdminDeployment.xml non è univoco per un sistema operativo, architettura, edizione di Visual Studio o lingua del sistema operativo.
 
 > [!CAUTION]
 > In alcuni casi, gli elementi elencati come selezionati nel file AdminDeployment.xml non vengono installati. Per risolvere questo problema, inserire gli elementi contrassegnati "Selected="yes"" alla **fine** del file AdminDeployment.xml.
@@ -59,13 +59,13 @@ ms.locfileid: "63433040"
 
  Lo schema del file AdminDeployment contiene i seguenti elementi:
 
-|Elemento|Attributo|Valori|Description|
+|Elemento|Attributo|Valori|Descrizione|
 |-------------|---------------|------------|-----------------|
-|BundleCustomizations|TargetDir|*Path*|Si comporta come la sostituzione del percorso nell'interfaccia utente dell'applicazione di installazione. Questo elemento viene ignorato se Visual Studio è già installato.|
+|BundleCustomizations|TargetDir|*Percorso*|Si comporta come la sostituzione del percorso nell'interfaccia utente dell'applicazione di installazione. Questo elemento viene ignorato se Visual Studio è già installato.|
 |BundleCustomizations|NoWeb|yes&#124;default|Se il valore di questo elemento è Sì, l'applicazione di installazione non tenta mai di accedere al Web durante l'azione di installazione.|
-|SelectableItemCustomization|Hidden|Yes&#124;No|Se il valore di questo elemento è Sì, nasconde un elemento selezionabile nell'albero della personalizzazione.|
+|SelectableItemCustomization|Nascosto|Yes&#124;No|Se il valore di questo elemento è Sì, nasconde un elemento selezionabile nell'albero della personalizzazione.|
 |SelectableItemCustomization|Selezionato|Yes&#124;No|Seleziona o deseleziona un elemento selezionabile nell'albero della personalizzazione.|
-|BundleCustomizations|Feed|Path|Percorso del feed che l'utente vuole usare.  Questo feed viene usato per le successive operazioni di modifica nel computer ("Default" per impostazione predefinita).|
+|BundleCustomizations|Feed|Percorso|Percorso del feed che l'utente vuole usare.  Questo feed viene usato per le successive operazioni di modifica nel computer ("Default" per impostazione predefinita).|
 |BundleCustomizations|SuppressRefreshPrompt|yes&#124;default|Impedisce che all'utente venga richiesto di aggiornare l'installazione se è disponibile una versione più recente.|
 |BundleCustomizations|NoRefresh|yes&#124;default|Non aggiorna l'installazione se è disponibile una versione più recente.|
 |BundleCustomizations|NoCacheOnlyMode|yes&#124;default|Impedisce il prepopolamento della cache del pacchetto.|
@@ -131,14 +131,14 @@ ms.locfileid: "63433040"
 
 2. Fare clic sulla scheda **Informazioni dettagliate** e quindi prendere nota della proprietà **Versione prodotto**.
 
-    ![Esempio di finestra di dialogo delle proprietà in un'installazione automatica di Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "Installazione automatica - Finestra di dialogo delle proprietà")
+    ![Esempio della finestra di dialogo Proprietà in un'installazione automatica di Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "Finestra di dialogo installazione automatica-proprietà")
 
 3. ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>Se la versione del prodotto è 14.0.24720.0 o 14.0.24720.1, seguire questa procedura:
    1. Eseguire *Product.exe* /Layout *Drive:* \IDEinstall in un computer con accesso a Internet. Ad esempio, eseguire: `vs_enterprise.exe /Layout d:\IDEinstall`.
 
    2. Al termine dell'esecuzione del comando /Layout, copiare la nuova immagine in una nuova posizione.
 
-   3. Creare e modificare il file AdminDeployment.xml. A tale scopo, usare il parametro della riga di comando `/CreateAdminFile`*\<file location>*. Per altre informazioni, vedere la sezione "Distribuzione di Visual Studio in modalità automatica" in questo articolo.
+   3. Creare e modificare il file AdminDeployment.xml. A tale scopo, utilizzare il `/CreateAdminFile` *\<file location>* parametro della riga di comando. Per altre informazioni, vedere la sezione "Distribuzione di Visual Studio in modalità automatica" in questo articolo.
 
    4. Nel computer client, eseguire il comando seguente per aggiornare la copia di Visual Studio installata in precedenza: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart".
 
@@ -148,7 +148,7 @@ ms.locfileid: "63433040"
 
    2. Al termine dell'esecuzione del comando /Layout, copiare la nuova immagine in una nuova posizione. In alternativa, è possibile sostituire l'immagine di rete esistente.
 
-   3. Creare e quindi modificare il file AdminDeployment.xml. A tale scopo, usare il parametro della riga di comando `/CreateAdminFile`*\<file location>*. Per altre informazioni, vedere la sezione "Distribuzione di Visual Studio in modalità automatica" in questo articolo.
+   3. Creare e quindi modificare il file AdminDeployment.xml. A tale scopo, utilizzare il `/CreateAdminFile` *\<file location>* parametro della riga di comando. Per altre informazioni, vedere la sezione "Distribuzione di Visual Studio in modalità automatica" in questo articolo.
 
    4. Se si copia l'immagine in una nuova posizione, è necessario eseguire il comando seguente nel computer client per aggiornare la copia di Visual Studio installata in precedenza: "\\\\*server1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart".
 
@@ -166,7 +166,7 @@ ms.locfileid: "63433040"
 ## <a name="registering-the-product"></a>Registrazione del prodotto
  Al termine dell'installazione, è possibile registrare la copia di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dall'interno di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-#### <a name="to-register"></a>Per effettuare la registrazione
+#### <a name="to-register"></a>Per eseguire la registrazione:
 
 1. Aprire il menu **Guida** , quindi scegliere **Registra prodotto**.
 
@@ -175,4 +175,4 @@ ms.locfileid: "63433040"
      Per altre informazioni, vedere gli argomenti [Procedura: individuare il codice Product Key di Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) e [Procedura: applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).
 
 ## <a name="see-also"></a>Vedere anche
- [Installare Visual Studio](../install/install-visual-studio-2015.md)
+ [Installa Visual Studio](../install/install-visual-studio-2015.md)

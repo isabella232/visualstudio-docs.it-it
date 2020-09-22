@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9f8edefc8e097f7ada67041b807231f594774548
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433547"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840276"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
 |[Progetto](../msbuild/project-element-msbuild.md)|Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
 |[ImportGroup](../msbuild/importgroup-element.md)|Contiene una raccolta di elementi `Import` raggruppati in una condizione facoltativa.|  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Commenti  
  Tramite l'elemento `Import` , è possibile riutilizzare codice comune a più file di progetto. Ciò semplifica la gestione del codice, poiché tutti gli aggiornamenti apportati al codice condiviso vengono propagati a tutti i progetti che lo importano.  
   
  Per convenzione i file di progetto condivisi importati vengono salvati come file con estensione .targets ma sono file di progetto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] standard. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] non impedisce di importare un progetto con una diversa estensione del nome del file, ma è consigliabile usare l'estensione .targets per coerenza.  
@@ -75,7 +75,7 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
  Lo schema di un progetto importato è identico a quello di un progetto standard. Sebbene [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] potrebbe essere in grado di creare un progetto importato, ciò è improbabile perché in genere un progetto importato contiene informazioni sulle proprietà da impostare o sull'ordine in cui eseguire le destinazioni. Il progetto importato dipende dal progetto in cui viene importato per fornire tali informazioni.  
   
 > [!NOTE]
-> Mentre le istruzioni di importazione condizionale funzionano in MSBuilds per la riga di comando, non funzionano in MSBuild nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Le importazioni condizionali vengono valutate usando i valori di configurazione e piattaforma impostati quando viene caricato il progetto. Se vengono apportate modifiche successive che richiedono una rivalutazione delle istruzioni condizionali nel file di progetto, ad esempio la modifica della piattaforma, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rivaluta le condizioni sulle proprietà e gli elementi ma non sulle importazioni. Poiché non viene rivalutata la condizione di importazione, l'importazione viene ignorata.  
+> Mentre le istruzioni di importazione condizionale funzionano in MSBuilds per la riga di comando, non funzionano in MSBuild nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Le importazioni condizionali vengono valutate usando i valori di configurazione e piattaforma impostati quando viene caricato il progetto. Se vengono apportate modifiche successive che richiedono una rivalutazione delle istruzioni condizionali nel file di progetto, ad esempio la modifica della piattaforma, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rivaluta le condizioni sulle proprietà e gli elementi ma non sulle importazioni. Poiché non viene rivalutata la condizione di importazione, l'importazione viene ignorata.  
 >   
 > Per risolvere il problema, inserire le importazioni condizionali nei file .targets o inserire il codice in un blocco condizionale, ad esempio un blocco [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) .  
   
@@ -115,5 +115,5 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)   
- [Procedura: usare la stessa destinazione in più file di progetto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)   
+ [Procedura: Usare la stessa destinazione in più file di progetto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

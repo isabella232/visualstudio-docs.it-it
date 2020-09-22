@@ -1,5 +1,5 @@
 ---
-title: Cronologia Pixel grafica | Microsoft Docs
+title: Cronologia pixel grafica | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 614977aef83092c64071524e33507848c34bf442
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420081"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840256"
 ---
 # <a name="graphics-pixel-history"></a>Cronologia pixel grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visu
   
  Questa è la finestra Cronologia pixel:  
   
- ![Un pixel con tre eventi Direct3D nella cronologia. ](../debugger/media/gfx-diag-demo-pixel-history-orientation.png "gfx_diag_demo_pixel_history_orientation")  
+ ![Un pixel con tre eventi Direct3D nella cronologia.](../debugger/media/gfx-diag-demo-pixel-history-orientation.png "gfx_diag_demo_pixel_history_orientation")  
   
 ## <a name="understanding-the-pixel-history-window"></a>Informazioni sulla finestra Cronologia pixel  
  Con la Cronologia pixel è possibile analizzare come un pixel specifico della destinazione di rendering sia interessato dagli eventi Direct3D durante un frame. È possibile associare con precisione un problema di rendering a un evento specifico di Direct3D, anche quando gli eventi successivi, o le primitive successive nello stesso evento, continuano a modificare il valore del colore finale del pixel. Ad esempio, è possibile eseguire il rendering errato di un pixel che viene quindi nascosto da un altro pixel semitrasparente in modo che i loro colori vengano fusi insieme nel framebuffer. Questo tipo di problema sarebbe difficile da diagnosticare se si disponesse solo del contenuto finale della destinazione di rendering come indicazione.  
@@ -38,14 +38,14 @@ La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visu
   
  È possibile espandere ogni primitiva per esaminare in che modo l'output del pixel shader è stato unito al colore del pixel esistente per produrre il colore risultante. A questo punto è possibile esaminare o eseguire il debug del codice del pixel shader associato alla primitiva ed è inoltre possibile espandere il nodo di vertex shader per esaminare l'input del vertex shader.  
   
-### <a name="exclusion"></a> Esclusione di primitive  
+### <a name="primitive-exclusion"></a><a name="exclusion"></a> Esclusione di primitive  
  Se una primitiva viene esclusa dall'influenzare il colore del pixel, l'esclusione può verificarsi per diversi motivi. Ogni motivo è rappresentato da un'icona descritta nella tabella seguente:  
   
 |Icona|Motivo dell'esclusione|  
 |----------|--------------------------|  
-|![Icona di errore test di profondità. ](../debugger/media/vsg-hist-icon-failed-depth.png "vsg_hist_icon_failed_depth")|Pixel escluso poiché non ha superato il test di profondità.|  
-|![Icona di errore test di ritaglio. ](../debugger/media/vsg-hist-icon-failed-scissor.png "vsg_hist_icon_failed_scissor")|Pixel escluso poiché non ha superato il test di ritaglio.|  
-|![Icona di errore test di stencil. ](../debugger/media/vsg-hist-icon-failed-stencil.png "vsg_hist_icon_failed_stencil")|Pixel escluso poiché non ha superato il test di stencil.|  
+|![Icona test di profondità non superato.](../debugger/media/vsg-hist-icon-failed-depth.png "vsg_hist_icon_failed_depth")|Pixel escluso poiché non ha superato il test di profondità.|  
+|![Icona test forbici non superato.](../debugger/media/vsg-hist-icon-failed-scissor.png "vsg_hist_icon_failed_scissor")|Pixel escluso poiché non ha superato il test di ritaglio.|  
+|![Icona test stencil non superato.](../debugger/media/vsg-hist-icon-failed-stencil.png "vsg_hist_icon_failed_stencil")|Pixel escluso poiché non ha superato il test di stencil.|  
   
 ### <a name="draw-call-exclusion"></a>Esclusione di chiamata di disegno  
  Se tutte le primitive di una chiamata di disegno vengono escluse dall'influenzare la destinazione di rendering in quanto non superano un test, la chiamata di disegno non può essere espansa e accanto a tale chiamata viene visualizzata un'icona che corrisponde al motivo dell'esclusione. I motivi dell'esclusione della chiamata di disegno assomigliano a quelli dell'esclusione delle primitive e le relative icone sono simili.  
@@ -78,5 +78,5 @@ La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visu
  Per comprendere gli eventi grafici nella cronologia del pixel, potrebbero essere necessarie informazioni sullo stato del dispositivo al momento dell'evento o sugli oggetti Direct3D a cui fa riferimento l'evento. Per ogni evento nella cronologia del pixel, la **Cronologia pixel grafica** fornisce collegamenti allo stato del dispositivo in essere e agli oggetti correlati.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo](../debugger/walkthrough-missing-objects-due-to-device-state.md)   
+ [Procedura dettagliata: oggetti mancanti a causa dello stato del dispositivo](../debugger/walkthrough-missing-objects-due-to-device-state.md)   
  [Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

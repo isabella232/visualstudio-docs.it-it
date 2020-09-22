@@ -1,18 +1,18 @@
 ---
 title: Visualizzazione di Indirizzi di posta elettronica personali in VLSC
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 04/10/2020
+ms.date: 09/17/2020
 ms.topic: conceptual
 description: Sottoscrizioni di Visual Studio - Perché vengono visualizzati indirizzi Hotmail o Gmail per i sottoscrittori?
-ms.openlocfilehash: 44b18bd46d55349fae5a3ece03cee9fe93240148
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95f5d849a1f661ab6a65a34890faf8f812c7007d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81223684"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810497"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Sottoscrizioni di Visual Studio: perché vengono visualizzati gli account personali per i sottoscrittori?
 Dopo la migrazione delle aziende da Volume Licensing Service Center (VLSC) al nuovo portale di [amministrazione delle sottoscrizioni](https://manage.visualstudio.com)di Visual Studio, gli amministratori sono sorpresi di scoprire che l'indirizzo di posta elettronica di accesso per alcuni sottoscrittori Mostra un indirizzo di posta elettronica personale come Hotmail o Outlook.  
@@ -34,17 +34,17 @@ Durante il processo di attivazione del sottoscrittore, veniva richiesto un accou
 Per risolvere il problema, è sufficiente selezionare il pulsante **Connetti messaggi di posta elettronica** e il sistema tenterà di associare gli account di MSAS agli utenti esistenti nell'Azure Active Directory dell'organizzazione (Azure ad) in base alla corrispondenza con il nome e il cognome. Se si verifica un errore, è possibile rimuovere qualsiasi corrispondenza facendo clic sulla **X** a destra della corrispondenza.  
 
 > [!div class="mx-imgBorder"]
-> ![Pulsante Connetti messaggi di posta elettronica](_img/connect-emails/connect-emails-button.png)
+> ![Pulsante Connetti messaggi di posta elettronica](_img/connect-emails/connect-emails-button.png "Fare clic su Connetti messaggi di posta elettronica per trovare la corrispondenza con gli utenti con account Microsoft per il Azure Active Directory")
 
 È anche possibile usare la **directory di ricerca** per correggere gli errori o inserire le informazioni mancanti dal Azure ad. Se l'aspetto di tutte le corrispondenze è corretto, è possibile scegliere "Seleziona tutti i sottoscrittori corrispondenti", anziché selezionarli uno alla volta.  
 
 > [!div class="mx-imgBorder"]
-> ![Connessione al volo](_img/connect-emails/connect-emails-flyout.png)
+> ![Connessione al volo](_img/connect-emails/connect-emails-flyout.png "Selezionare i sottoscrittori di cui si desidera trovare la corrispondenza con le identità Azure AD e fare clic su continua.")
 
-Fare quindi clic su "continua" per passare a una schermata che descrive le modifiche da eseguire. Se si accetta, fare clic su "Salva" per apportare le modifiche. Il sottoscrittore riceverà anche un messaggio che li informa della modifica al successivo accesso alla sottoscrizione.   
+Fare quindi clic su "continua" per passare a un elenco delle modifiche da eseguire. Se si accetta, fare clic su "Salva" per apportare le modifiche. Il sottoscrittore riceverà anche un messaggio che li informa della modifica al successivo accesso alla sottoscrizione.   
 
 > [!div class="mx-imgBorder"]
-> ![Conferma connessione messaggi di posta elettronica](_img/connect-emails/connect-emails-confirm.png) 
+> ![Conferma connessione messaggi di posta elettronica](_img/connect-emails/connect-emails-confirm.png "Fare clic su continua per implementare le modifiche proposte, quindi fare clic su Salva.") 
 
 > [!NOTE]
 > Quando si modifica l'indirizzo di posta elettronica di accesso, questo aggiorna solo il messaggio di posta elettronica usato dal Sottoscrittore per accedere alla sottoscrizione in https://my.visualstudio.com . Se il Sottoscrittore ha già attivato vantaggi come Azure o Pluralsight usando l'altro indirizzo di posta elettronica, sarà necessario continuare a usare tali indirizzi di posta elettronica per accedervi. Per tutti i nuovi vantaggi a cui hanno accesso, è necessario usare il nuovo indirizzo di posta elettronica. 
