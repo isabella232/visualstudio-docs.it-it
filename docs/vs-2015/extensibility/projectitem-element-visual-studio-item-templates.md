@@ -14,23 +14,23 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4778603278bf07dc7b0a45544b4835d2ed2cbf8a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438352"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839307"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>Elemento ProjectItem (modelli di elementi di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Specifica un file che viene incluso nel modello di elemento.  
+Specifica un file incluso nel modello di elemento.  
   
 > [!NOTE]
-> Il `ProjectItem` elemento accetta attributi diversi a seconda che il modello sia per un progetto o un elemento. Questo argomento viene illustrato il `ProjectItem` elemento per elemento. Per una spiegazione delle `ProjectItem` (elemento) per i modelli di progetto, vedere [ProjectItem (elemento) (Visual Studio Project Templates)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
+> L' `ProjectItem` elemento accetta attributi diversi a seconda che il modello sia per un progetto o un elemento. In questo argomento viene illustrato l' `ProjectItem` elemento per l'elemento. Per una spiegazione dell' `ProjectItem` elemento per i modelli di progetto, vedere [elemento ProjectItem (modelli di progetto di Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
   
  \<VSTemplate>  
  \<TemplateContent>  
- \<ProjectItem >  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -52,11 +52,11 @@ Specifica un file che viene incluso nel modello di elemento.
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`SubType`|Attributo facoltativo.<br /><br /> Specifica il sottotipo di un elemento in un modello di elemento a più file. Questo valore viene utilizzato per determinare l'editor che [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] userà per aprire l'elemento.|  
-|`CustomTool`|Attributo facoltativo.<br /><br /> Imposta il CustomTool per l'elemento nel file di progetto.|  
-|`ItemType`|Attributo facoltativo.<br /><br /> Imposta il tipo di elemento per l'elemento nel file di progetto.|  
-|`ReplaceParameters`|Attributo facoltativo.<br /><br /> Valore booleano che specifica se l'elemento contiene i valori dei parametri devono essere sostituiti quando viene creato un progetto dal modello. Il valore predefinito è `false`.|  
-|`TargetFileName`|Attributo facoltativo.<br /><br /> Specifica il nome dell'elemento che viene creato dal modello. Questo attributo è utile per l'uso di sostituzione dei parametri per creare un nome di elemento.|  
+|`SubType`|Attributo facoltativo.<br /><br /> Specifica il sottotipo di un elemento in un modello di elemento a più file. Questo valore viene utilizzato per determinare l'editor che utilizzerà [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per aprire l'elemento.|  
+|`CustomTool`|Attributo facoltativo.<br /><br /> Imposta CustomTool per l'elemento nel file di progetto.|  
+|`ItemType`|Attributo facoltativo.<br /><br /> Imposta ItemType per l'elemento nel file di progetto.|  
+|`ReplaceParameters`|Attributo facoltativo.<br /><br /> Valore booleano che specifica se l'elemento contiene valori di parametro che devono essere sostituiti quando viene creato un progetto dal modello. Il valore predefinito è `false`.|  
+|`TargetFileName`|Attributo facoltativo.<br /><br /> Specifica il nome dell'elemento creato dal modello. Questo attributo è utile per l'utilizzo della sostituzione dei parametri per creare un nome di elemento.|  
   
 ### <a name="child-elements"></a>Elementi figlio  
  Nessuno.  
@@ -70,21 +70,21 @@ Specifica un file che viene incluso nel modello di elemento.
 ## <a name="text-value"></a>Valore di testo  
  È necessario specificare un valore di testo.  
   
- Oggetto `string` che rappresenta il nome di un file nel file zip del modello.  
+ Oggetto `string` che rappresenta il nome di un file nel file con estensione zip del modello.  
   
-## <a name="remarks"></a>Note  
- `ProjectItem` è un elemento figlio facoltativo di `TemplateContent`.  
+## <a name="remarks"></a>Commenti  
+ `ProjectItem` è un elemento figlio facoltativo di `TemplateContent` .  
   
- Il `TargetFileName` attributo può essere utilizzato per rinominare i file con i parametri. Ad esempio, se il file `MyFile.vb` esiste nella directory radice del file ZIP modello, ma si vuole che il file sia denominato basato sul nome del file fornito dall'utente nel **Aggiungi nuovo elemento** nella finestra di dialogo si utilizzerebbe il codice XML seguente:  
+ L' `TargetFileName` attributo può essere utilizzato per rinominare i file con parametri. Se, ad esempio, il file `MyFile.vb` è presente nella directory radice del file con estensione zip del modello, ma si vuole che il file venga denominato in base al nome file specificato dall'utente nella finestra di dialogo **Aggiungi nuovo elemento** , usare il codice XML seguente:  
   
 ```  
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- Quando viene creato un elemento da questo modello, il nome del file si baseranno sul nome utente specificato nella **Aggiungi nuovo elemento** nella finestra di dialogo. Ciò è utile durante la creazione di modelli di elementi a più file. Per altre informazioni, vedere [Procedura: Creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md) e [i parametri del modello](../ide/template-parameters.md).  
+ Quando viene creato un elemento da questo modello, il nome del file sarà basato sul nome immesso dall'utente nella finestra di dialogo **Aggiungi nuovo elemento** . Questa operazione è utile quando si creano modelli di elementi a più file. Per altre informazioni, vedere [procedura: creare modelli di elementi](../ide/how-to-create-multi-file-item-templates.md) a più file e [parametri di modello](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Esempio  
- Nell'esempio seguente vengono illustrati i metadati per il modello di elementi standard per un [!INCLUDE[csprcs](../includes/csprcs-md.md)] classe.  
+ Nell'esempio seguente vengono illustrati i metadati per il modello di elemento standard per una [!INCLUDE[csprcs](../includes/csprcs-md.md)] classe.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -103,7 +103,7 @@ Specifica un file che viene incluso nel modello di elemento.
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
- [Procedura: Creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md)   
- [Parametri di modelli](../ide/template-parameters.md)
+ [Procedura: creare modelli di elementi a più file](../ide/how-to-create-multi-file-item-templates.md)   
+ [Parametri di modello](../ide/template-parameters.md)

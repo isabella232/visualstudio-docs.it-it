@@ -1,5 +1,5 @@
 ---
-title: La scrittura in Store le impostazioni utente | Microsoft Docs
+title: Scrittura nell'archivio impostazioni utente | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -9,43 +9,43 @@ caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 764d9b81297c6bbefd1f5fdf7c77e4d514bb5045
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408492"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839979"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Scrittura nell'archivio delle impostazioni utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le impostazioni utente sono le impostazioni modificabili come quelli nel **Strumenti / opzioni** finestra di dialogo, finestre delle proprietà e alcune altre finestre di dialogo. Estensioni di Visual Studio possono usarle per archiviare piccole quantità di dati. Questa procedura dettagliata illustra come aggiungere il blocco note a Visual Studio come uno strumento esterno per leggere e scrivere nell'archivio delle impostazioni utente.  
+Le impostazioni utente sono impostazioni scrivibili come quelle nella finestra di dialogo **Strumenti/Opzioni** , finestre proprietà e alcune altre finestre di dialogo. Le estensioni di Visual Studio possono usarle per archiviare piccole quantità di dati. Questa procedura dettagliata illustra come aggiungere il blocco note a Visual Studio come strumento esterno leggendo e scrivendo nell'archivio impostazioni utente.  
   
-### <a name="backing-up-your-user-settings"></a>Backup di impostazioni utente  
+### <a name="backing-up-your-user-settings"></a>Backup delle impostazioni utente  
   
-1. È necessario essere in grado di reimpostare le impostazioni di strumenti esterni, in modo che sia possibile eseguire il debug e ripetere la procedura. A tale scopo, è necessario salvare le impostazioni originali in modo che sia possibile ripristinarli in base alle esigenze.  
+1. È necessario essere in grado di reimpostare le impostazioni degli strumenti esterni in modo che sia possibile eseguire il debug e ripetere la procedura. A tale scopo, è necessario salvare le impostazioni originali in modo che sia possibile ripristinarle come richiesto.  
   
 2. Aprire Regedit.exe.  
   
-3. Passare a strumenti HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.  
+3. Passare a HKEY_CURRENT_USER strumenti \Software\Microsoft\VisualStudio\14.0Exp\External \\ .  
   
     > [!NOTE]
-    > Assicurarsi che si sta esaminando la chiave che contiene \14.0Exp\ e non \14.0\\. Quando si esegue l'istanza sperimentale di Visual Studio, le impostazioni utente sono nell'hive del Registro di sistema "14.0Exp".  
+    > Assicurarsi di esaminare la chiave che contiene \14.0Exp\ e non \ 14,0 \\ . Quando si esegue l'istanza sperimentale di Visual Studio, le impostazioni utente si trovano nell'hive del registro di sistema "14.0 Exp".  
   
-4. Pulsante destro del mouse sulla sottochiave \External Tools\ e quindi fare clic su **esportare**. Verificare che l'opzione **rami selezionati** sia selezionata.  
+4. Fare clic con il pulsante destro del mouse sulla sottochiave \External Tools \, quindi scegliere **Esporta**. Assicurarsi che sia selezionato **Branch selezionato** .  
   
-5. Salvare il file esterno Tools.reg risulta.  
+5. Salvare il file External Tools. reg risultante.  
   
-6. In un secondo momento, quando si desidera reimpostare le impostazioni di strumenti esterni, selezionare la chiave del Registro di sistema Tools \ HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External e fare clic su **eliminare** nel menu di scelta rapida.  
+6. In seguito, quando si desidera reimpostare le impostazioni degli strumenti esterni, selezionare la chiave del registro di sistema HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0Exp\External Tools \ e scegliere **Elimina** dal menu di scelta rapida.  
   
-7. Quando la **Conferma chiave di eliminazione** verrà visualizzata la finestra di dialogo, fare clic su **Yes**.  
+7. Quando viene visualizzata la finestra di dialogo **Conferma eliminazione chiave** , fare clic su **Sì**.  
   
-8. Fare doppio clic il file esterno Tools.reg salvato in precedenza, fare clic su **Apri con**, quindi fare clic su **dell'Editor del Registro di sistema**.  
+8. Fare clic con il pulsante destro del mouse sul file External Tools. reg salvato in precedenza, scegliere **Apri con**, quindi fare clic su **Editor del registro di sistema**.  
   
 ## <a name="writing-to-the-user-settings-store"></a>Scrittura nell'archivio delle impostazioni utente  
   
-1. Creare un progetto VSIX denominato UserSettingsStoreExtension e quindi aggiungere un comando personalizzato denominato UserSettingsStoreCommand. Per altre informazioni su come creare un comando personalizzato, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
+1. Creare un progetto VSIX denominato UserSettingsStoreExtension e quindi aggiungere un comando personalizzato denominato UserSettingsStoreCommand. Per ulteriori informazioni su come creare un comando personalizzato, vedere [creazione di un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-2. In UserSettingsStoreCommand.cs, aggiungere quanto segue usando istruzioni:  
+2. In UserSettingsStoreCommand.cs aggiungere le istruzioni using seguenti:  
   
     ```csharp  
     using System.Collections.Generic;  
@@ -53,7 +53,7 @@ Le impostazioni utente sono le impostazioni modificabili come quelli nel **Strum
     using Microsoft.VisualStudio.Shell.Settings;  
     ```  
   
-3. In MenuItemCallback, eliminare il corpo del metodo e ottenere l'utente archiviano le impostazioni, come indicato di seguito:  
+3. In MenuItemCallback eliminare il corpo del metodo e ottenere l'archivio delle impostazioni utente, come indicato di seguito:  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -63,7 +63,7 @@ Le impostazioni utente sono le impostazioni modificabili come quelli nel **Strum
     }  
     ```  
   
-4. A questo punto è scoprire se il blocco note è già impostato come uno strumento esterno. È necessario scorrere tutti gli strumenti esterni per determinare se l'impostazione ToolCmd è "Notepad", come indicato di seguito:  
+4. Verificare ora se il blocco note è già impostato come strumento esterno. È necessario scorrere tutti gli strumenti esterni per determinare se l'impostazione ToolCmd è "blocco note", come indicato di seguito:  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -87,7 +87,7 @@ Le impostazioni utente sono le impostazioni modificabili come quelli nel **Strum
   
     ```  
   
-5. Se il blocco note non è stato impostato come uno strumento esterno, impostarlo come indicato di seguito:  
+5. Se il blocco note non è stato impostato come strumento esterno, impostarlo come segue:  
   
     ```vb  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -123,10 +123,10 @@ Le impostazioni utente sono le impostazioni modificabili come quelli nel **Strum
     }  
     ```  
   
-6. Testare il codice. Tenere presente che aggiunge il blocco note come uno strumento esterno, pertanto è necessario il rollback del Registro di sistema prima di eseguirlo una seconda volta.  
+6. Testare il codice. Tenere presente che aggiunge il blocco note come strumento esterno, quindi è necessario eseguire il rollback del registro di sistema prima di eseguirlo una seconda volta.  
   
 7. Compilare il codice e avviare il debug.  
   
-8. Nel **degli strumenti** menu, fare clic su **UserSettingsStoreCommand richiamare**. Verrà aggiunto il blocco note per la **strumenti** menu.  
+8. Scegliere **richiama UserSettingsStoreCommand**dal menu **strumenti** . Il blocco note verrà aggiunto al menu **strumenti** .  
   
-9. Verrà ora visualizzato il blocco note sugli strumenti / opzioni di menu e scegliendo **Notepad** dovrebbe visualizzare un'istanza del blocco note.
+9. A questo punto, il blocco note verrà visualizzato nel menu Strumenti/Opzioni e facendo clic su **blocco note** verrà visualizzata un'istanza del blocco note.

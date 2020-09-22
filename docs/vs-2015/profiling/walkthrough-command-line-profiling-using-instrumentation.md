@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Profilatura dalla riga di comando tramite Strumentazione | Microsoft Docs'
+title: 'Procedura dettagliata: Profilatura dalla riga di comando tramite strumentazione | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3a37350cf274fbb551326ac96387330b0f3956e7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439690"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839915"
 ---
-# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Procedura dettagliata: Riga di comando di profilatura tramite Strumentazione
+# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Procedura dettagliata: Profilatura dalla riga di comando tramite strumentazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questa procedura dettagliata viene descritto come eseguire la profilatura di un'applicazione autonoma [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] per raccogliere informazioni dettagliate sugli intervalli e dati sul numero di chiamate tramite il metodo di strumentazione degli strumenti di profilatura. In questa procedura dettagliata, si completeranno le attività seguenti:  
@@ -41,9 +41,9 @@ In questa procedura dettagliata viene descritto come eseguire la profilatura di 
   
 - Conoscenza a livello intermedio dell'uso degli strumenti da riga di comando  
   
-- Una copia dell'[esempio PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
+- Una copia dell' [esempio PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
   
-- Per usare le informazioni fornite dalla profilatura, è consigliabile avere a disposizione informazioni sui simboli di debug. Per altre informazioni, vedere [Procedura: Informazioni sui simboli di riferimento Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+- Per usare le informazioni fornite dalla profilatura, è consigliabile avere a disposizione informazioni sui simboli di debug. Per altre informazioni, vedere [procedura: fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="command-line-profiling-using-the-instrumentation-method"></a>Profilatura dalla riga di comando tramite il metodo di strumentazione  
  La strumentazione è un metodo di profilatura in cui vengono usate particolari versioni dei file binari profilati, contenenti funzioni probe che raccolgono informazioni sugli intervalli all'ingresso e all'uscita dalle funzioni in un modulo instrumentato. Poiché questo metodo di profilatura è più invasivo rispetto al campionamento, comporta un sovraccarico maggiore. I file binari instrumentati sono anche più grandi dei file binari di debug o di rilascio e non sono destinati alla distribuzione.  
@@ -115,7 +115,7 @@ In questa procedura dettagliata viene descritto come eseguire la profilatura di 
     VSPerfCLREnv /off  
     ```  
   
-14. Usare lo strumento VSPerfReport per generare file di report con valori delimitati da virgole (CSV). Tipo:  
+14. Usare lo strumento VSPerfReport per generare file di report con valori delimitati da virgole (CSV). Digitare:  
   
     ```  
     VSPerfReport Reports\Report.vsp /output:Reports /summary:all  
@@ -124,8 +124,8 @@ In questa procedura dettagliata viene descritto come eseguire la profilatura di 
      È possibile analizzare i report generati in un programma di foglio di calcolo oppure usare l'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per analizzare i dati di profilatura nel file Report.vsp. Per altre informazioni, vedere [Analisi dei dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Panoramica delle sessioni di prestazioni](../profiling/performance-session-overview.md)   
+ [Panoramica della sessione di prestazioni](../profiling/performance-session-overview.md)   
  [Profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)   
- [Performance Report Views](../profiling/performance-report-views.md)(Visualizzazioni dei rapporti di prestazioni)
+ [Visualizzazioni dei rapporti di prestazioni](../profiling/performance-report-views.md)

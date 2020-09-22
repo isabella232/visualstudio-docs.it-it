@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Scrivere un visualizzatore | Microsoft Docs'
+title: 'Procedura: scrivere un visualizzatore | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,19 +22,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce50276e4e83a1a055294c8e2b6e09cd0f93d54d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440159"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840272"
 ---
-# <a name="how-to-write-a-visualizer"></a>Procedura: Scrivere un visualizzatore
+# <a name="how-to-write-a-visualizer"></a>Procedura: scrivere un visualizzatore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile scrivere un visualizzatore personalizzato per un oggetto di qualsiasi classe gestita, ad eccezione di <xref:System.Object> o <xref:System.Array>.  
   
 > [!NOTE]
-> Nelle **Store** le app, solo il testo standard, i visualizzatori HTML, XML e JSON sono supportati. Non sono supportati i visualizzatori personalizzati (creati dall'utente).  
+> Nelle app dello **Store** sono supportati solo i visualizzatori di testo, HTML, XML e JSON standard. Non sono supportati i visualizzatori personalizzati (creati dall'utente).  
   
  L'architettura di un visualizzatore del debugger è definita da due parti:  
   
@@ -44,7 +44,7 @@ ms.locfileid: "63440159"
   
   L'oggetto dati che si desidera visualizzare, ad esempio un oggetto stringa, esiste nel processo dell'oggetto del debug. Di conseguenza, il lato oggetto del debug deve inviare l'oggetto dati al lato debugger, che può quindi visualizzarlo in un'interfaccia utente creata dallo sviluppatore.  
   
-  Il lato debugger riceve questo oggetto dati da visualizzare da un *provider di oggetti* che implementa il <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interfaccia. Il lato oggetto del debug invia l'oggetto dati tramite il *origine dell'oggetto*, che deriva da <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. Il provider di oggetti può inoltre inviare nuovamente i dati all'origine oggetto consentendo in tal modo di scrivere un visualizzatore che modifica e visualizza i dati. Il provider di oggetti può essere sottoposto a override per comunicare con l'analizzatore di espressioni e, di conseguenza, con l'origine oggetto.  
+  Il lato debugger riceve questo oggetto dati da visualizzare da un provider di *oggetti* che implementa l' <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interfaccia. Il lato oggetto del debug invia l'oggetto dati tramite l' *origine dell'oggetto*, derivata da <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> . Il provider di oggetti può inoltre inviare nuovamente i dati all'origine oggetto consentendo in tal modo di scrivere un visualizzatore che modifica e visualizza i dati. Il provider di oggetti può essere sottoposto a override per comunicare con l'analizzatore di espressioni e, di conseguenza, con l'origine oggetto.  
   
   Il lato oggetto del debug e il lato debugger comunicano tra loro tramite la classe <xref:System.IO.Stream>. Sono disponibili metodi che consentono di serializzare un oggetto dati in un oggetto <xref:System.IO.Stream> e deserializzare l'oggetto <xref:System.IO.Stream> in un oggetto dati.  
   
@@ -54,11 +54,11 @@ ms.locfileid: "63440159"
   
   È possibile usare <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> per visualizzare Windows Forms, finestre di dialogo e controlli nel visualizzatore.  
   
-  Il supporto per i tipi generici è limitato. È possibile scrivere un visualizzatore per una destinazione di tipo generico solo quest'ultimo è di tipo aperto. Questa limitazione è identica a quella prevista quando si usa l'attributo `DebuggerTypeProxy`. Per informazioni dettagliate, vedere [usando l'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).  
+  Il supporto per i tipi generici è limitato. È possibile scrivere un visualizzatore per una destinazione di tipo generico solo quest'ultimo è di tipo aperto. Questa limitazione è identica a quella prevista quando si usa l'attributo `DebuggerTypeProxy`. Per informazioni dettagliate, vedere [uso dell'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).  
   
-  Ai visualizzatori personalizzati possono essere associate considerazioni sulla sicurezza. Visualizzare [considerazioni sulla sicurezza del visualizzatore](../debugger/visualizer-security-considerations.md).  
+  Ai visualizzatori personalizzati possono essere associate considerazioni sulla sicurezza. Vedere [considerazioni sulla sicurezza del Visualizzatore](../debugger/visualizer-security-considerations.md).  
   
-  Nelle procedure riportate di seguito vengono fornite informazioni generali sulle operazioni da effettuare per creare un visualizzatore. Per una spiegazione più dettagliata, vedere [procedura dettagliata: Scrittura di un visualizzatore in C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+  Nelle procedure riportate di seguito vengono fornite informazioni generali sulle operazioni da effettuare per creare un visualizzatore. Per una spiegazione più dettagliata, vedere [procedura dettagliata: scrittura di un visualizzatore in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
   
 ### <a name="to-create-the-debugger-side"></a>Per creare il lato debugger  
   
@@ -78,6 +78,6 @@ ms.locfileid: "63440159"
   
 ## <a name="see-also"></a>Vedere anche  
  [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
- [Procedura: Installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)   
- [Procedura: Test e Debug di un visualizzatore](../debugger/how-to-test-and-debug-a-visualizer.md)   
+ [Procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)   
+ [Procedura: eseguire il test e il debug di un visualizzatore](../debugger/how-to-test-and-debug-a-visualizer.md)   
  [Considerazioni sulla sicurezza del visualizzatore](../debugger/visualizer-security-considerations.md)

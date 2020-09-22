@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cd1ee4c024894e5752277a5000d37745c88c4ac6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442095"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839795"
 ---
-# <a name="cvcalle"></a>CV_call_e
+# <a name="cv_call_e"></a>CV_call_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Specifica la convenzione di chiamata per una funzione.  
   
 > [!NOTE]
-> Solo i valori di enumerazione più comuni sono documentati qui. L'enumerazione completo è disponibile nel file di intestazione cvconst.h.  
+> Solo i valori di enumerazione più comuni sono documentati qui. L'enumerazione complete è disponibile nel file di intestazione cvconst. h.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -43,28 +43,28 @@ typedef enum CV_call_e { 
   
 ## <a name="elements"></a>Elementi  
  CV_CALL_NEAR_C  
- Specifica una convenzione di chiamata di funzioni con un push quasi di destra a sinistra. La funzione chiamante Cancella lo stack.  
+ Specifica una convenzione di chiamata di funzione utilizzando un push vicino da destra a sinistra. La funzione chiamante Cancella lo stack.  
   
  CV_CALL_NEAR_FAST  
- Specifica una convenzione di chiamata di funzioni con un push da sinistra a destra quasi registri. La funzione chiamata viene utilizzata la somma dei byte di parametro per cancellare lo stack.  
+ Specifica una convenzione di chiamata di funzione utilizzando un push vicino da sinistra a destra con registri. La funzione chiamata utilizza la somma dei byte del parametro per cancellare lo stack.  
   
  CV_CALL_NEAR_STD  
- Specifica una convenzione di chiamata di funzione tramite una chiamata standard quasi (right-to-left push).  
+ Specifica una convenzione di chiamata di funzione utilizzando una chiamata near standard (push da destra a sinistra).  
   
  CV_CALL_NEAR_SYS  
- Specifica una convenzione di chiamata di funzione tramite una chiamata di sistema quasi.  
+ Specifica una convenzione di chiamata di funzione utilizzando una chiamata di sistema near.  
   
  CV_CALL_THISCALL  
- Specifica una convenzione di chiamata di funzioni usando `this` chiamare (`this` puntatore passati nel registro).  
+ Specifica una convenzione di chiamata di funzione utilizzando `this` Call ( `this` puntatore passato nel registro).  
   
  CV_CALL_CLRCALL  
- Specifica una convenzione di chiamata di funzioni usata da Common Language Runtime (CLR) (noto anche come un codice gestito convenzione di chiamata).  
+ Specifica una convenzione di chiamata di funzione utilizzata da Common Language Runtime (CLR), nota anche come convenzione di chiamata del codice gestito.  
   
-## <a name="remarks"></a>Note  
- I valori di questa enumerazione vengono restituiti da una chiamata per il [Get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) (metodo).  
+## <a name="remarks"></a>Commenti  
+ I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaSymbol:: get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: cvconst.h  
+ Intestazione: cvconst. h  
   
 ## <a name="see-also"></a>Vedere anche  
  [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)   

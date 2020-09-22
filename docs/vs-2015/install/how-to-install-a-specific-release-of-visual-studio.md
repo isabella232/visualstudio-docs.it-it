@@ -12,11 +12,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: dde0cefabf0523484ad76ac56f7f2760de8c7acc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433085"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839852"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Procedura: Installare una versione specifica di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Il programma di installazione di Visual Studio viene aggiornato spesso in modo d
 |Visual Studio Enterprise (versione Update 2 originale senza aggiornamenti aggiuntivi relativi a Update 2)|Visual Studio Enterprise RTM (disponibile nella [pagina di download per i titolari di abbonamenti MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/0/6/B/06BB0C5C-C767-4250-91DA-AB463377597E/20160405.3/enu/feed.xml`|L'installazione di Visual Studio userà il file feed.xml disponibile al momento del rilascio di Update 2|
 |Visual Studio Enterprise Update 1 (versione Update 1 originale, ma con aggiornamenti precedenti a Update 2)|Visual Studio Enterprise RTM (disponibile nella [pagina di download per i titolari di abbonamenti MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20160225.3/enu/feed.xml`|L'installazione di Visual Studio userà il file feed.xml corrente prima del rilascio di Update 2|
 |Visual Studio Enterprise Update 1 (Update 1 originale senza aggiornamenti aggiuntivi relativi a Update 1)|Visual Studio Enterprise RTM (disponibile nella [pagina di download per i titolari di abbonamenti MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/2/A/32A1974F-D236-43C1-8981-97DDCBAEF14A/20151201.1/enu/feed.xml`|L'installazione di Visual Studio userà il file feed.xml disponibile al momento del rilascio di Update 1|
-|Visual Studio Enterprise (RTM originale, ma con aggiornamenti precedenti a Update 1)|Visual Studio Enterprise RTM (disponibile nella  [pagina di download per i titolari di abbonamenti MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/6/1/36188D5F-479F-4A46-BF55-6AE5928D1EBB/20151102.3/enu/feed.xml`|L'installazione di Visual Studio userà il file feed.xml corrente prima del rilascio di Update 1.|
+|Visual Studio Enterprise (RTM originale, ma con aggiornamenti precedenti a Update 1)|Visual Studio Enterprise RTM (disponibile nella  [pagina di download degli abbonamenti MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/3/6/1/36188D5F-479F-4A46-BF55-6AE5928D1EBB/20151102.3/enu/feed.xml`|L'installazione di Visual Studio userà il file feed.xml corrente prima del rilascio di Update 1.|
 |Visual Studio Enterprise (RTM originale, senza aggiornamenti)|Visual Studio Enterprise RTM (disponibile nella [pagina di download per i titolari di abbonamenti MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/5/7/B/57BF5016-E4F0-4EB5-BE27-2BFA87E7723F/20150713.1/enu/feed.xml`|L'installazione di Visual Studio userà il file feed.xml disponibile al momento del rilascio della versione RTM|
 
 > [!IMPORTANT]
@@ -60,4 +60,4 @@ Il programma di installazione di Visual Studio viene aggiornato spesso in modo d
 >   - trk (per turco)
 
 ## <a name="see-also"></a>Vedere anche
- [Guida di Visual Studio Administrator](../install/visual-studio-administrator-guide.md)
+ [Guida dell'amministratore di Visual Studio](../install/visual-studio-administrator-guide.md)

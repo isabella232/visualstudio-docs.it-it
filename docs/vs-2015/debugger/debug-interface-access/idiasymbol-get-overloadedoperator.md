@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: afd35cbc8d1ee27cdd0178cc234e26f66c18b765
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64804245"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839663"
 ---
-# <a name="idiasymbolgetoverloadedoperator"></a>IDiaSymbol::get_overloadedOperator
+# <a name="idiasymbolget_overloadedoperator"></a>IDiaSymbol::get_overloadedOperator
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un flag che specifica se il tipo di dati definito dall'utente abbia eseguito l'overload degli operatori.  
+Recupera un flag che specifica se il tipo di dati definito dall'utente dispone di operatori di overload.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,13 +35,13 @@ HRESULT get_overloadedOperator ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce `TRUE` se il tipo di dati definito dall'utente abbia eseguito l'overload di operatori; in caso contrario, restituisce `FALSE`.  
+ out Restituisce `TRUE` se il tipo di dati definito dall'utente dispone di operatori di overload; in caso contrario, restituisce `FALSE` .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

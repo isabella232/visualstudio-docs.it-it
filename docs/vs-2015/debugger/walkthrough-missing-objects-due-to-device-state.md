@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo | Microsoft Docs'
+title: 'Procedura dettagliata: oggetti mancanti a causa dello stato del dispositivo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 51fb019d428ed7196818c96e759c0abc8f8e68c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a14c944cf38e0eaec7d1fbe4d7699bbd91c3e7d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969280"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839988"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,20 +23,20 @@ Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUD
   
  Questa procedura dettagliata illustra come:  
   
--   Usare l' **Elenco eventi di grafica** per individuare le possibili origini del problema.  
+- Usare l' **Elenco eventi di grafica** per individuare le possibili origini del problema.  
   
--   Usare la finestra **Fasi pipeline grafica** per controllare l'effetto delle chiamate dell'API Direct3D `DrawIndexed` .  
+- Usare la finestra **Fasi pipeline grafica** per controllare l'effetto delle chiamate dell'API Direct3D `DrawIndexed` .  
   
--   Usare la finestra **Cronologia pixel grafica** per individuare il problema più nello specifico.  
+- Usare la finestra **Cronologia pixel grafica** per individuare il problema più nello specifico.  
   
--   Controllare lo stato del dispositivo per individuare potenziali problemi o errori di configurazione.  
+- Controllare lo stato del dispositivo per individuare potenziali problemi o errori di configurazione.  
   
 ## <a name="scenario"></a>Scenario  
  Uno dei motivi per cui gli oggetti potrebbero non apparire nelle posizioni previste in un'app 3D è un errore di configurazione del dispositivo di grafica che causa l'esclusione dal rendering degli oggetti. Ad esempio, quando l'ordine dei vertici causa il culling erroneo dei triangoli o quando la funzione di test di profondità causa il rifiuto di tutti i pixel nell'oggetto.  
   
  Nello scenario descritto in questa procedura dettagliata, è stata appena raggiunta la prima tappa cardine dello sviluppo dell'app 3D e si è pronti per testarla per la prima volta. Quando si esegue l'app, tuttavia, sullo schermo viene visualizzata solo l'interfaccia utente. Usando Diagnostica grafica è possibile acquisire il problema in un file di log di grafica in modo da poter eseguire il debug dell'app. Nell'app, il problema si presenta nel modo seguente:  
   
- ![L'app prima che il problema è risolto](../debugger/media/vsg-walkthru1-firstview.png "vsg_walkthru1_firstview")  
+ ![Applicazione prima della risoluzione del problema](../debugger/media/vsg-walkthru1-firstview.png "vsg_walkthru1_firstview")  
   
  Per informazioni su come acquisire i problemi di grafica in un log di grafica, vedere [Capturing Graphics Information](../debugger/capturing-graphics-information.md).  
   
@@ -49,7 +49,7 @@ Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUD
   
 2. In **Elenco frame**selezionare un frame che dimostra che il modello non è visualizzato. La destinazione di rendering viene aggiornata per riflettere la selezione del frame. In questo scenario la scheda del log di grafica ha un aspetto simile al seguente:  
   
-    ![. Vsglog elenco di schede framebuffer frame e anteprima](../debugger/media/vsg-walkthru1-experiment.png "vsg_walkthru1_experiment")  
+    ![Elenco frame e anteprima buffer nella scheda .vsglog](../debugger/media/vsg-walkthru1-experiment.png "vsg_walkthru1_experiment")  
   
    Dopo aver selezionato un frame che dimostra il problema, è possibile usare l' **Elenco eventi di grafica** per diagnosticarlo. La finestra **Elenco eventi di grafica** contiene ogni chiamata API Direct3D effettuata per eseguire il rendering del frame attivo, ad esempio chiamate API per configurare lo stato del dispositivo, creare e aggiornare i buffer e disegnare gli oggetti visualizzati nel frame. Molti tipi di chiamate sono interessanti perché spesso, ma non sempre, si verifica una modifica corrispondente nella destinazione di rendering quando l'app funziona nel modo previsto, ad esempio le chiamate di disegno, invio, copia o eliminazione. Le chiamate di disegno sono particolarmente interessanti, perché ognuna rappresenta la geometria di cui l'app ha eseguito il rendering (anche le chiamate di invio possono eseguire il rendering della geometria).  
   
@@ -59,7 +59,7 @@ Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUD
   
 2. Controllare le chiamate di disegno nell' **Elenco eventi di grafica** . Per semplificare questa operazione, immettere "Draw" nella casella **Cerca** nell'angolo in alto a destra della finestra **Elenco eventi di grafica** . questo modo l'elenco viene filtrato in modo da contenere solo gli eventi nei cui titoli compare "Draw". In questo scenario, si scopre che sono state effettuate diverse chiamate di disegno:  
   
-    ![Elenco di eventi di grafica che mostra gli eventi acquisiti](../debugger/media/vsg-walkthru1.png "vsg_walkthru1_")  
+    ![Elenco eventi grafici con eventi acquisiti](../debugger/media/vsg-walkthru1.png "vsg_walkthru1_")  
   
    Dopo aver appurato che le chiamate di disegno vengono eseguite, è possibile determinare quale di esse corrisponde alla geometria mancante. Poiché è certo che la geometria mancante non viene disegnata nella destinazione di rendering (in questo caso), è possibile usare la finestra **Fasi pipeline grafica** per determinare la chiamata di disegno corrispondente alla geometria mancante. La finestra **Fasi pipeline grafica** mostra la geometria inviata a ogni chiamata di disegno, indipendentemente dagli effetti sulla destinazione di rendering. Passando da una chiamata di disegno alla successiva, le fasi della pipeline vengono aggiornate per mostrare la geometria associata a ogni chiamata e l'output della destinazione di rendering viene aggiornato per mostrare lo stato della destinazione di rendering dopo il completamento della chiamata.  
   
@@ -81,11 +81,11 @@ Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUD
   
 2. In base all'anteprima **Pixel shader** selezionare un pixel nell'output del buffer di frame che dovrebbe contenere una parte della geometria mancante. In questo scenario, l'output del pixel shader dovrebbe occupare la maggior parte della destinazione di rendering. Dopo aver selezionato un pixel, la finestra **Cronologia pixel grafica** dovrebbe avere questo aspetto:  
   
-    ![Finestra Cronologia pixel con correlate le chiamate di disegno](../debugger/media/vsg-walkthru1-hist1.png "vsg_walkthru1_hist1")  
+    ![Finestra cronologia pixel con le chiamate di disegno correlate](../debugger/media/vsg-walkthru1-hist1.png "vsg_walkthru1_hist1")  
   
 3. Verificare che il pixel di destinazione di rendering selezionato contenga una parte della geometria abbinando il numero della chiamata di disegno che si sta controllando (dalla finestra **Elenco eventi di grafica** ) a una delle chiamate di disegno nella finestra **Cronologia pixel grafica** . Se nessuna delle chiamate nella finestra **Cronologia pixel grafica** corrisponde alla chiamata di disegno che si sta controllando, ripetere questi passaggi (tranne il passaggio 1) fino a trovare una corrispondenza. In questo scenario, la chiamata di disegno corrispondente è simile alla seguente:  
   
-    ![Finestra Cronologia pixel con le informazioni sul frammento](../debugger/media/vsg-walkthru1-hist2.png "vsg_walkthru1_hist2")  
+    ![Finestra cronologia pixel con le informazioni sul frammento](../debugger/media/vsg-walkthru1-hist2.png "vsg_walkthru1_hist2")  
   
 4. Quando si individua una corrispondenza, espandere la chiamata di disegno corrispondente nella finestra **Cronologia pixel grafica** e verificare che il pixel sia stato escluso. Ogni chiamata di disegno nella finestra **Cronologia pixel grafica** corrisponde a una o più primitive geometriche (punti, linee o triangoli) che intersecano tale pixel come risultato della geometria dell'oggetto corrispondente. Ogni intersezione di questo tipo può contribuire al colore finale del pixel. Una primitiva che viene esclusa perché non supera il test di profondità è rappresentata da un'icona che mostra la lettera Z su una freccia inclinata verso il basso da sinistra a destra.  
   
@@ -99,12 +99,12 @@ Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUD
   
 2. Individuare l'oggetto **Dispositivo D3D10** nella **Tabella oggetti di grafica**e quindi aprire l'oggetto **Dispositivo D3D10** . Verrà aperta una nuova scheda **dispositivo d3d10** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per semplificare questa operazione, è possibile ordinare la **Tabella oggetti di grafica** in base a **Tipo**:  
   
-    ![Tabella oggetti grafici e lo stato del dispositivo correlati](../debugger/media/vsg-walkthru1-objtable.png "vsg_walkthru1_objtable")  
+    ![Tabella oggetti grafici e stato del dispositivo correlato](../debugger/media/vsg-walkthru1-objtable.png "vsg_walkthru1_objtable")  
   
 3. Esaminare lo stato del dispositivo visualizzato nella scheda **dispositivo d3d10** per individuare potenziali problemi. Dato che la geometria non è disponibile perché le primitive corrispondenti non hanno superato il test di profondità, è possibile concentrarsi sullo stato del dispositivo, come lo stencil di profondità, che influisce sul test di profondità. In questo scenario, la **Descrizione stencil profondità** (in **Stato unione output**) contiene un valore non comune per il membro **depthfunc** , `D3D10_COMPARISON_GREATER`:  
   
-    ![Finestra del dispositivo D3D10 con informazioni sul depth stencil](../debugger/media/vsg-walkthru1-devicestate.png "vsg_walkthru1_devicestate")  
+    ![Finestra del dispositivo D3D10 con informazioni sullo stencil di profondità](../debugger/media/vsg-walkthru1-devicestate.png "vsg_walkthru1_devicestate")  
   
    Dopo aver determinato che la causa del problema di rendering potrebbe essere una funzione di profondità non configurata correttamente, è possibile usare queste informazioni insieme alla conoscenza del codice per individuare la posizione in cui la funzione di profondità è stata impostata in modo non corretto, per poi risolvere il problema. Se non si ha familiarità con il codice, è possibile cercare il problema usando gli indizi raccolti durante il debug, ad esempio, in base alla **Descrizione stencil profondità** in questo scenario, si potrebbero cercare le parole "depth" o "GREATER" nel codice. Dopo aver corretto il codice, ricompilare ed eseguire l'app per verificare che il problema di rendering sia stato risolto:  
   
-   ![App dopo la risoluzione del problema](../debugger/media/vsg-walkthru1-finalview.png "vsg_walkthru1_finalview")
+   ![L'applicazione dopo la risoluzione del problema](../debugger/media/vsg-walkthru1-finalview.png "vsg_walkthru1_finalview")

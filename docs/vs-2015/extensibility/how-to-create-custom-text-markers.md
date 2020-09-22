@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Creare i marcatori di testo personalizzato | Microsoft Docs'
+title: 'Procedura: creare marcatori di testo personalizzati | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,57 +11,57 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ac681879e0f7ad0902358be23d74d57ccee406f8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435975"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839311"
 ---
-# <a name="how-to-create-custom-text-markers"></a>Procedura: Creare i marcatori di testo personalizzato
+# <a name="how-to-create-custom-text-markers"></a>Procedura: Creare marcatori di testo personalizzati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Se si desidera creare un marcatore di testo personalizzato per enfatizzare o organizzare il codice, è necessario eseguire i passaggi seguenti:  
+Se si desidera creare un marcatore di testo personalizzato per enfatizzare o organizzare il codice, è necessario eseguire la procedura seguente:  
   
-- Registrare il marcatore di testo nuovo, in modo che altri strumenti di relativi diritti di accesso  
+- Registrare il nuovo marcatore di testo, in modo che altri strumenti possano accedervi  
   
-- Fornire un'implementazione predefinita e la configurazione del marcatore di testo  
+- Fornire un'implementazione e una configurazione predefinite del marcatore di testo  
   
-- Creare un servizio che può essere utilizzato da altri processi per rendere utilizzare del marcatore di testo  
+- Creare un servizio che può essere usato da altri processi per usare il marcatore di testo  
   
-  Per informazioni dettagliate su come applicare un marcatore di testo a un'area di codice, vedere [come: Usare marcatori di testo](../extensibility/how-to-use-text-markers.md).  
+  Per informazioni dettagliate su come applicare un marcatore di testo a un'area di codice, vedere [procedura: usare gli indicatori di testo](../extensibility/how-to-use-text-markers.md).  
   
 ### <a name="to-register-a-custom-marker"></a>Per registrare un marcatore personalizzato  
   
-1. Creare una voce del Registro di sistema come indicato di seguito:  
+1. Creare una voce del registro di sistema come segue:  
   
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* \Text Editor\External Markers\\ *\<MarkerGUID>*  
+    HKEY_LOCAL_MACHINE \\ *\<Version>* marcatori Editor\External \Text \Software\Microsoft\VisualStudio\\*\<MarkerGUID>*  
   
-    <em>\<MarkerGUID ></em>è un `GUID` utilizzato per identificare il marcatore da aggiungere  
+    <em>\<MarkerGUID></em>oggetto `GUID` utilizzato per identificare il marcatore da aggiungere.  
   
-    *\<Versione >* è la versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ad esempio 8.0  
+    *\<Version>* è la versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ad esempio 8,0  
   
-    *\<PackageGUID >* è il GUID del pacchetto VSPackage che implementa l'oggetto di automazione.  
+    *\<PackageGUID>* è il GUID del pacchetto VSPackage che implementa l'oggetto di automazione.  
   
    > [!NOTE]
-   > Il percorso radice di HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<versione >* può essere sottoposto a override da un'altra radice quando viene inizializzata la shell di Visual Studio, per altre informazioni, vedere [Opzioni della riga di comando](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > Il percorso radice di HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *\<Version>* può essere sottoposto a override con una radice alternativa quando viene inizializzata la shell di Visual Studio. per ulteriori informazioni, vedere [Opzioni della riga di comando](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2. Creare quattro valori in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<versione >* \Text Editor\External marcatori\\ *\<MarkerGUID >*  
+2. Creare quattro valori in HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *\<Version>* \Text Editor\External markers\\*\<MarkerGUID>*  
   
-   - (Predefinito)  
+   - Valore predefinito.  
   
-   - Service  
+   - Servizio  
   
    - DisplayName  
   
    - Pacchetto  
   
-   - `Default` è una voce facoltativa di tipo REG_SZ. Se impostato, il valore della voce è una stringa che contiene alcune utili informazioni di identificazione, ad esempio "Custom marcatore di testo".  
+   - `Default` è una voce facoltativa di tipo REG_SZ. Quando è impostata, il valore della voce è una stringa che contiene alcune informazioni di identificazione utili, ad esempio "marcatore di testo personalizzato".  
   
-   - `Service` è una voce di tipo REG_SZ contenente la stringa del GUID del servizio che fornisce il marcatore di testo personalizzato tramite proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Il formato è {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   - `Service` è una voce di tipo REG_SZ contenente la stringa GUID del servizio che fornisce il marcatore di testo personalizzato da profondendo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> . Il formato è {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
    - `DisplayName` è una voce di tipo REG_SZ contenente l'ID risorsa del nome del marcatore di testo personalizzato. Il formato è #YYYY.  
   
-   - `Package` voce di tipo REG_SZ contenente il `GUID` di VSPackage che fornisce il servizio elencato nel servizio. Il formato è {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   - `Package` voce di tipo REG_SZ contenente l'oggetto `GUID` di VSPackage che fornisce il servizio elencato in servizio. Il formato è {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
 ### <a name="to-create-a-custom-text-marker"></a>Per creare un marcatore di testo personalizzato  
   
@@ -73,24 +73,24 @@ Se si desidera creare un marcatore di testo personalizzato per enfatizzare o org
   
     1. Un utente avvia l'IDE per la prima volta.  
   
-    2. Un utente seleziona il **Reimposta valori predefiniti** pulsante sotto il **Fonts and Colors** pagina delle proprietà nel **ambiente** cartella, nel riquadro sinistro della finestra il  **Le opzioni** finestra di dialogo ottenuto dal **strumenti** menu dell'IDE.  
+    2. Un utente seleziona il pulsante **Reimposta valori predefiniti** nella pagina delle proprietà **tipi di carattere e colori** nella cartella **ambiente** , disponibile nel riquadro sinistro della finestra di dialogo **Opzioni** ottenuta dal menu **strumenti** dell'IDE.  
   
-2. Implementare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> metodo, specificando che `IVsPackageDefinedTextMarkerType` implementazione deve da restituire in base al tipo di marcatore GUID specificato nella chiamata al metodo.  
+2. Implementare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider.GetTextMarkerType%2A> metodo, specificando quale `IVsPackageDefinedTextMarkerType` implementazione deve essere restituita in base al GUID del tipo di marcatore specificato nella chiamata al metodo.  
   
-     L'ambiente chiama questa volta il primo metodo viene creato il tipo di marcatore personalizzato e specifica un GUID che identifica il tipo di marcatore personalizzato.  
+     L'ambiente chiama questo metodo la prima volta che viene creato il tipo di marcatore personalizzato e specifica un GUID che identifica il tipo di marcatore personalizzato.  
   
-### <a name="to-proffer-your-marker-type-as-a-service"></a>Dichiarare il tipo di marcatore come servizio  
+### <a name="to-proffer-your-marker-type-as-a-service"></a>Per dichiarare il tipo di marcatore come servizio  
   
-1. Chiamare il <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A> metodo per <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService>.  
+1. Chiamare il <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager.QueryService%2A> metodo per <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService> .  
   
-     Un puntatore a <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> viene restituito.  
+     Viene restituito un puntatore a <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> .  
   
-2. Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> che specifica il GUID che identifica il servizio di tipo di marcatore personalizzato e specifica un puntatore all'implementazione del metodo di <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfaccia. I <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> implementazione deve restituire un puntatore all'implementazione del <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> interfaccia.  
+2. Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.ProfferService%2A> metodo, specificando il GUID che identifica il servizio del tipo di marcatore personalizzato e fornendo un puntatore all'implementazione dell' <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfaccia. L' <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> implementazione deve restituire un puntatore all'implementazione dell' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider> interfaccia.  
   
-     Un cookie univoco che identifica il servizio viene restituito. È possibile utilizzare questo cookie in un secondo momento per revocare il servizio di tipo di marcatori personalizzati chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> metodo del <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interfaccia se si specifica questo valore di cookie.  
+     Cookie univoco che identifica il servizio restituito. Questo cookie può essere usato in un secondo momento per revocare il servizio del tipo di marcatore personalizzato chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> metodo dell' <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interfaccia che specifica questo valore del cookie.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Utilizzo di marcatori di testo con l'API Legacy](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Procedura: Aggiungere i marcatori di testo Standard](../extensibility/how-to-add-standard-text-markers.md)   
- [Procedura: Implementare i marcatori di errore](../extensibility/how-to-implement-error-markers.md)   
- [Procedura: usare i marcatori di testo](../extensibility/how-to-use-text-markers.md)
+ [Uso di marcatori di testo con l'API legacy](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Procedura: aggiungere marcatori di testo standard](../extensibility/how-to-add-standard-text-markers.md)   
+ [Procedura: implementare i marcatori di errore](../extensibility/how-to-implement-error-markers.md)   
+ [Procedura: Usare i marcatori di testo](../extensibility/how-to-use-text-markers.md)

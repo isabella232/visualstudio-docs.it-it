@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex | Microsoft Docs'
+title: "Procedura dettagliata: oggetti mancanti a causa dell'ombreggiatura del vertex | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d54fdce78528f348e99436c3a58d15e1cbe861b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444278"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840024"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica de
   
  Quando in questo scenario l'app viene eseguita per essere testata, il rendering dello sfondo avviene nel modo previsto, ma uno degli oggetti non viene visualizzato. Usando gli strumenti di Diagnostica della grafica, è possibile acquisire il problema in un log di grafica in modo da poter eseguire il debug dell'app. Nell'app, il problema si presenta nel modo seguente:  
   
- ![L'oggetto non visibile. ](../debugger/media/gfx-diag-demo-missing-object-shader-problem.png "gfx_diag_demo_missing_object_shader_problem")  
+ ![Oggetto non visibile.](../debugger/media/gfx-diag-demo-missing-object-shader-problem.png "gfx_diag_demo_missing_object_shader_problem")  
   
 ## <a name="investigation"></a>Analisi  
  Usando gli strumenti di Diagnostica della grafica è possibile caricare il file di log di grafica per esaminare i frame acquisiti durante il test.  
@@ -61,14 +61,14 @@ Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica de
   
 3. Passando da una chiamata di disegno alla successiva nella finestra **Elenco eventi di grafica** , esaminare la finestra **Fasi pipeline grafica** per individuare l'oggetto mancante. Per semplificare questa operazione, immettere "Draw" nella casella **Cerca** nell'angolo in alto a destra della finestra **Elenco eventi di grafica** . questo modo l'elenco viene filtrato in modo da contenere solo gli eventi nei cui titoli compare "Draw".  
   
-    Nella finestra **Fasi pipeline grafica** la fase **Assembler input** mostra la geometria dell'oggetto prima che venga trasformata, mentre la fase **Vertex shader** mostra lo stesso oggetto una volta trasformato. In questo scenario, si avrà la certezza di aver trovato l'oggetto mancante quando l'oggetto viene visualizzato nella fase **Assembler input** ma non nella fase **Vertex shader** .  
+    Nella finestra **fasi pipeline grafica** la fase **assembler input** Mostra la geometria dell'oggetto prima che venga trasformata, mentre la fase **vertex shader** Mostra lo stesso oggetto dopo che è stato trasformato. In questo scenario, si avrà la certezza di aver trovato l'oggetto mancante quando l'oggetto viene visualizzato nella fase **Assembler input** ma non nella fase **Vertex shader** .  
   
    > [!NOTE]
    > Se altre fasi della geometria, ad esempio la fase Hull shader, Domain shader o Geometry shader, elaborano l'oggetto, potrebbero essere la causa del problema. In genere, il problema è correlato alla prima fase il cui risultato non viene visualizzato o viene visualizzato in modo imprevisto.  
   
 4. Fermarsi quando si raggiunge la chiamata di disegno che corrisponde all'oggetto mancante. In questo scenario la finestra **Fasi pipeline grafica** indica che la geometria è stata inviata alla GPU (come indicato dalla presenza dell'anteprima Assemblaggio input), ma non è visualizzata nella destinazione di rendering perché qualcosa non ha funzionato durante la fase Vertex shader (come indicato dalla presenza dell'anteprima Vertex shader).  
   
-    ![Un evento DrawIndexed e relativo effetto sulle pipeline](../debugger/media/gfx-diag-demo-missing-object-shader-step-2.png "gfx_diag_demo_missing_object_shader_step_2")  
+    ![Evento DrawIndexed e relativo effetto sulla pipeline](../debugger/media/gfx-diag-demo-missing-object-shader-step-2.png "gfx_diag_demo_missing_object_shader_step_2")  
   
    Dopo avere appurato che l'app ha inviato una chiamata di disegno per la geometria dell'oggetto mancante e aver scoperto che il problema si verifica durante la fase Vertex shader, è possibile usare il debugger HLSL per esaminare il vertex shader e scoprire cosa è successo alla geometria dell'oggetto. È possibile usare il debugger HLSL per esaminare lo stato delle variabili HLSL durante l'esecuzione, eseguire il codice HLSL un'istruzione alla volta e impostare i punti di interruzione per facilitare la diagnosi del problema.  
   
@@ -80,19 +80,19 @@ Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica de
   
 3. Alla prima modifica di `output` viene scritto il membro `worldPos` .  
   
-    ![Il valore di "output. worldpos" sembra ragionevole](../debugger/media/gfx-diag-demo-missing-object-shader-step-4.png "gfx_diag_demo_missing_object_shader_step_4")  
+    ![Il valore di "output.worldPos" sembra ragionevole](../debugger/media/gfx-diag-demo-missing-object-shader-step-4.png "gfx_diag_demo_missing_object_shader_step_4")  
   
     Dato che il relativo valore sembra ragionevole, si continua a eseguire il codice un'istruzione alla volta fino alla riga successiva che modifica `output`.  
   
 4. Alla successiva modifica di `output` viene scritto il membro `pos` .  
   
-    ![Il valore di "output. POS" è stato azzerato](../debugger/media/gfx-diag-demo-missing-object-shader-step-5.png "gfx_diag_demo_missing_object_shader_step_5")  
+    ![Il valore di "output.pos" è stato azzerato](../debugger/media/gfx-diag-demo-missing-object-shader-step-5.png "gfx_diag_demo_missing_object_shader_step_5")  
   
     Questa volta, il valore del membro `pos` (tutti zeri) sembra sospetto. A questo punto occorre stabilire come mai il valore di `output.pos` è composto da tutti zeri.  
   
 5. Si noti che `output.pos` prende il valore da una variabile denominata `temp`. Nella riga precedente, è possibile notare che il valore di `temp` è il risultato della moltiplicazione del valore precedente per una costante denominata `projection`. È possibile che il valore sospetto di `temp`sia il risultato di questa moltiplicazione. Posizionando il puntatore su `projection`si può notare che anche questo valore è composto da tutti zeri.  
   
-    ![Matrice di proiezione contiene una trasformazione errata](../debugger/media/gfx-diag-demo-missing-object-shader-step-6.png "gfx_diag_demo_missing_object_shader_step_6")  
+    ![La matrice di proiezione contiene una trasformazione errata](../debugger/media/gfx-diag-demo-missing-object-shader-step-6.png "gfx_diag_demo_missing_object_shader_step_6")  
   
     In questo scenario, un'ulteriore analisi rivela che il valore sospetto di `temp`è molto probabilmente causato dalla moltiplicazione per `projection`e dato che `projection` è una costante destinata a contenere una matrice di proiezione, è noto che non dovrebbe contenere tutti zeri.  
   
@@ -104,7 +104,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica de
   
 2. Spostarsi verso l'alto nello stack di chiamate nel codice sorgente dell'app. Nella finestra **Stack di chiamate eventi di grafica** scegliere la chiamata posizionata più in alto per verificare se il buffer costante viene riempito in quella posizione. In caso contrario, continuare a risalire lo stack di chiamate fino a trovare la posizione in cui viene riempito. In questo scenario, si scopre che il buffer costante viene riempito (tramite l'API Direct3D `UpdateSubresource` ) ancora più in alto nello stack di chiamate in una funzione denominata `MarbleMaze::Render`e che il relativo valore proviene da un oggetto buffer costante denominato `m_marbleConstantBufferData`:  
   
-    ![Il codice che imposta il buffer dell'oggetto costante](../debugger/media/gfx-diag-demo-missing-object-shader-step-7.png "gfx_diag_demo_missing_object_shader_step_7")  
+    ![Codice che imposta il buffer costanti dell'oggetto](../debugger/media/gfx-diag-demo-missing-object-shader-step-7.png "gfx_diag_demo_missing_object_shader_step_7")  
   
    > [!TIP]
    > Se si sta eseguendo contemporaneamente il debug dell'app, è possibile impostare un punto di interruzione in questa posizione e tale punto verrà raggiunto durante il rendering del frame successivo. È quindi possibile esaminare i membri di `m_marbleConstantBufferData` per confermare che il valore del membro `projection` viene impostato su tutti zeri quando viene riempito il buffer costante.  
@@ -119,12 +119,12 @@ Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica de
   
    Dopo aver individuato la posizione in cui viene impostato `m_marbleConstantBufferData.projection` , è possibile esaminare il codice sorgente circostante per determinare l'origine del valore non corretto. In questo scenario, si scopre che il valore di `m_marbleConstantBufferData.projection` è impostato su una variabile locale denominata `projection` prima dell'inizializzazione su un valore fornito da `m_camera->GetProjection(&projection);` nel codice nella riga successiva.  
   
-   ![La proiezione Marmo impostata prima dell'inizializzazione](../debugger/media/gfx-diag-demo-missing-object-shader-step-9.png "gfx_diag_demo_missing_object_shader_step_9")  
+   ![Proiezione marmo impostata prima dell'inizializzazione](../debugger/media/gfx-diag-demo-missing-object-shader-step-9.png "gfx_diag_demo_missing_object_shader_step_9")  
   
    Per risolvere il problema, spostare la riga di codice che imposta il valore di `m_marbleConstantBufferData.projection` dopo la riga che inizializza il valore della variabile locale `projection`.  
   
-   ![C con correzione&#43; &#43; nel codice sorgente](../debugger/media/gfx-diag-demo-missing-object-shader-step-10.png "gfx_diag_demo_missing_object_shader_step_10")  
+   ![Codice sorgente&#43;&#43; C corretto](../debugger/media/gfx-diag-demo-missing-object-shader-step-10.png "gfx_diag_demo_missing_object_shader_step_10")  
   
    Dopo aver corretto il codice, è possibile ricompilare ed eseguire l'app di nuovo per verificare che il problema di rendering sia stato risolto:  
   
-   ![L'oggetto è nuovamente visibile. ](../debugger/media/gfx-diag-demo-missing-object-shader-resolution.png "gfx_diag_demo_missing_object_shader_resolution")
+   ![L'oggetto è nuovamente visibile.](../debugger/media/gfx-diag-demo-missing-object-shader-resolution.png "gfx_diag_demo_missing_object_shader_resolution")

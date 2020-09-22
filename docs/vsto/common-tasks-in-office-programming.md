@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b0856d3832d31dd7027b2f264dd0a9cd1d657ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c82b4dec0c92f19933b045040ed0f1fcecb5b10b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63007327"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809859"
 ---
 # <a name="common-tasks-in-office-programming"></a>Attività comuni nella programmazione di Office
   Questo argomento descrive come usare Visual Studio per trovare le risposte alle seguenti categorie di domande frequenti relative alla programmazione delle soluzioni Office.
@@ -44,7 +44,7 @@ ms.locfileid: "63007327"
 
 - [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-- [Procedura: aggiornare le soluzioni Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e).
+- [Procedura: aggiornare le soluzioni Office](/previous-versions/4bez6837(v=vs.140)).
 
 - [Procedura: installare gli assembly di interoperabilità primari di Office](../vsto/how-to-install-office-primary-interop-assemblies.md).
 
@@ -216,19 +216,19 @@ ms.locfileid: "63007327"
 
 ## <a name="deployment-tasks"></a><a name="deployment"></a> Attività di distribuzione
 
-- [Procedura: pubblicare una soluzione Office tramite ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
+- [Procedura: pubblicare una soluzione Office tramite ClickOnce](/previous-versions/bb386095(v=vs.110)).
 
-- [Procedura: pubblicare una soluzione Office a livello di documento in un server SharePoint tramite ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
+- [Procedura: pubblicare una soluzione Office a livello di documento in un server SharePoint tramite ClickOnce](/previous-versions/bb608595(v=vs.110)).
 
-- [Procedura: installare una soluzione Office ClickOnce](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065).
+- [Procedura: installare una soluzione Office ClickOnce](/previous-versions/bb608592(v=vs.110)).
 
-- [Procedura: installare i prerequisiti nei computer degli utenti finali per eseguire soluzioni Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
+- [Procedura: installare i prerequisiti nei computer degli utenti finali per eseguire soluzioni Office](/previous-versions/bb608608(v=vs.110)).
 
-- [Procedura: preparare IIS per la distribuzione di soluzioni Office](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).
+- [Procedura: preparare IIS per la distribuzione di soluzioni Office](/previous-versions/bb608629(v=vs.110)).
 
-- [Procedura: aggiornare le soluzioni Office distribuite](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13).
+- [Procedura: aggiornare le soluzioni Office distribuite](/previous-versions/bb157871(v=vs.110)).
 
-- [Procedura: modificare il percorso di installazione di una soluzione Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
+- [Procedura: modificare il percorso di installazione di una soluzione Office](/previous-versions/bb608626(v=vs.110)).
 
 ## <a name="see-also"></a>Vedere anche
 - [Introduzione &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
