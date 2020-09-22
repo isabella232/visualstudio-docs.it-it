@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bf2882120f2e4c27e33b105585ba56261122055d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445648"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839871"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|Description|  
+|Attributo|Descrizione|  
 |---------------|-----------------|  
 |`AssemblyName`|Sono obbligatori sia l'attributo `AssemblyName` che l'attributo `AssemblyFile`.<br /><br /> Nome dell'assembly da caricare. L'attributo `AssemblyName` accetta assembly con nome sicuro, anche se non è obbligatorio un nome sicuro. L'uso di questo attributo equivale a caricare un assembly usando il metodo <xref:System.Reflection.Assembly.Load%2A> in .NET.<br /><br /> Non è possibile usare questo attributo se viene usato l'attributo `AssemblyFile`.|  
 |`AssemblyFile`|È obbligatorio l'attributo `AssemblyName` o l'attributo `AssemblyFile`.<br /><br /> Percorso del file dell'assembly. Questo attributo accetta percorsi completi o percorsi relativi. I percorsi relativi sono relativi alla directory del file di progetto o file di destinazioni in cui viene dichiarato l'elemento `UsingTask`. L'uso di questo attributo equivale a caricare un assembly usando il metodo <xref:System.Reflection.Assembly.LoadFrom%2A> in .NET.<br /><br /> Non è possibile usare questo attributo se viene usato l'attributo `AssemblyName`.|  
@@ -58,18 +58,18 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
   
 ### <a name="child-elements"></a>Elementi figlio  
   
-|Elemento|Description|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
 |[ParameterGroup](../msbuild/parametergroup-element.md)|Il set di parametri visualizzati nell'attività generata dall'elemento `TaskFactory` specificato.|  
-|[Task](../msbuild/task-element-msbuild.md)|I dati che vengono passati all'elemento `TaskFactory` per generare un'istanza dell'attività.|  
+|[Attività](../msbuild/task-element-msbuild.md)|I dati che vengono passati all'elemento `TaskFactory` per generare un'istanza dell'attività.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|Description|  
+|Elemento|Descrizione|  
 |-------------|-----------------|  
 |[Progetto](../msbuild/project-element-msbuild.md)|Elemento radice obbligatorio di un file di progetto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
   
-## <a name="remarks"></a>Osservazioni  
+## <a name="remarks"></a>Commenti  
  È possibile fare riferimento alle variabili di ambiente, alle proprietà della riga di comando e alle proprietà a livello di progetto in qualsiasi punto nell'elemento `UsingTask` se viene visualizzato nel file di progetto in modo esplicito o tramite un file di progetto importato. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).  
   
 > [!NOTE]
@@ -103,5 +103,5 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)   
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)   
  [Informazioni di riferimento sullo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4031672840237b0496ba7c6dbb9bb3b1658d7023
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64837912"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840312"
 ---
-# <a name="idiasymbolgetoemsymbolid"></a>IDiaSymbol::get_oemSymbolId
+# <a name="idiasymbolget_oemsymbolid"></a>IDiaSymbol::get_oemSymbolId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera il valore di ID del simbolo OEM (OEM).  
+Recupera il valore ID del simbolo OEM (Original Equipment Manufacturer).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,18 +35,18 @@ HRESULT get_oemSymbolId ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce che un OEM assegnato internamente simbolo ID.  
+ out Restituisce l'ID simbolo assegnato internamente dall'OEM.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
- L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoco.  
+## <a name="remarks"></a>Commenti  
+ L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoci.  
   
- Questa proprietà si applica solo ai simboli con un [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) tipo di `SymTagCustomType`.  
+ Questa proprietà si applica solo ai simboli con un tipo di [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) di `SymTagCustomType` .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

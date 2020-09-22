@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Creare un pacchetto Bootstrapper localizzato | Microsoft Docs'
+title: 'Procedura: creare un pacchetto del programma di avvio automatico localizzato | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -14,20 +14,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ec3cd1365826c1a06b2d0f7bd6da377c8dc4d46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440663"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840290"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>Procedura: Creare un pacchetto Bootstrapper localizzato
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>Procedura: creare un pacchetto del programma di avvio automatico personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dopo aver creato un pacchetto del programma di avvio automatico, è possibile creare versioni localizzate del pacchetto creando altri due file per ognuna delle impostazioni locali, ovvero un file per le condizioni di licenza software (ad esempio eula.rtf) e un manifesto di pacchetto (package.xml).  
   
  Per impostazione predefinita, Visual Studio 2010 include i pacchetti localizzati del programma di avvio automatico solo per .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 e F# Runtime 4.0. È possibile creare pacchetti localizzati per altri programmi di avvio automatico completando tre passaggi.  
   
-1. Creare una cartella denominata dopo il nome delle impostazioni locali in \Programmi\Microsoft Sdks\windows\v7.0A\Bootstrapper\Packages.\\*Nomepacchettoprogrammaavvioautomatico*.  
+1. Creare una cartella denominata dopo il nome delle impostazioni locali in \Programmi\microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *NomePacchettoProgrammaAvvio*.  
   
 2. Creare un file contenente le condizioni di licenza software per il pacchetto del programma di avvio automatico e inserirlo nella nuova cartella.  
   
@@ -42,9 +42,9 @@ Dopo aver creato un pacchetto del programma di avvio automatico, è possibile cr
   
 1. Creare una cartella denominata in base al nome delle impostazioni locali.  
   
-     Nei computer a 32 bit creare la cartella \Programmi\Microsoft Sdks\windows\v7.0A\Bootstrapper\Packages.\\*Nomepacchettoprogrammaavvioautomatico*\ cartella.  
+     Nei computer a 32 bit creare la cartella nella cartella \Programmi\microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *NomePacchettoProgrammaAvvio*\  
   
-     Nei computer a 64 bit, creare la cartella in \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages i file (86) \Programmi\\*Nomepacchettoprogrammaavvioautomatico*\ cartella.  
+     Nei computer a 64 bit creare la cartella nella cartella \Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *NomePacchettoProgrammaAvvio*\  
   
      La tabella seguente illustra i nomi di cartella che è possibile usare in base alle impostazioni locali.  
   
@@ -67,7 +67,7 @@ Dopo aver creato un pacchetto del programma di avvio automatico, è possibile cr
   
 2. Creare un file contenente le condizioni di licenza software per il pacchetto del programma di avvio automatico e inserirlo nella nuova cartella.  
   
-3. Creare un manifesto di pacchetto denominato package.xml e inserirlo nella nuova cartella. Per altre informazioni, vedere [Procedura: Creare un manifesto di pacchetto](../deployment/how-to-create-a-package-manifest.md).  
+3. Creare un manifesto di pacchetto denominato package.xml e inserirlo nella nuova cartella. Per altre informazioni, vedere [procedura: creare un manifesto del pacchetto](../deployment/how-to-create-a-package-manifest.md).  
   
 4. Aggiornare la sezione `<Strings>` del manifesto di pacchetto in modo che le stringhe siano nella lingua appropriata per le impostazioni locali.  
   
@@ -96,4 +96,4 @@ Dopo aver creato un pacchetto del programma di avvio automatico, è possibile cr
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di pacchetti del programma di avvio automatico](../deployment/creating-bootstrapper-packages.md)   
  [Prerequisiti per la distribuzione dell'applicazione](../deployment/application-deployment-prerequisites.md)   
- [Procedura: Creare un manifesto di pacchetto](../deployment/how-to-create-a-package-manifest.md)
+ [Procedura: creare un manifesto del pacchetto](../deployment/how-to-create-a-package-manifest.md)

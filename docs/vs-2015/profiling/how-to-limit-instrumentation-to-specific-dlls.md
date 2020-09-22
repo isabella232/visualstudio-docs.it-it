@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5dc2fe8e6f9b0ed1e6970943ab5eedf1b62eb961
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432682"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839747"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procedura: Limite di strumentazione a specifiche DLL
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procedura: Limitare la strumentazione a specifiche DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Usando il metodo di profilatura della strumentazione, è possibile limitare la raccolta dei dati di profilatura a una o più DLL di un'applicazione. Per profilare una o più DLL di un'applicazione, creare una sessione di prestazioni che includa i file con estensione dll come destinazioni. È possibile specificare le DLL da profilare come progetti in una soluzione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o come file binari indipendenti.  
@@ -59,7 +59,7 @@ Usando il metodo di profilatura della strumentazione, è possibile limitare la r
   
     - Facoltativo. Digitare gli argomenti della riga di comando da passare al file eseguibile in **Argomenti della riga di comando**. Se necessario, specificare la directory di lavoro per l'applicazione in **Directory di lavoro**.  
   
-    - Scegliere **Avanti**.  
+    - Fare clic su **Avanti**.  
   
 5. Scegliere **Strumentazione** come metodo di profilatura e quindi fare clic su **Avanti**.  
   
@@ -71,5 +71,5 @@ Usando il metodo di profilatura della strumentazione, è possibile limitare la r
     > Non specificare il file eseguibile (exe) che verifica le DLL.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Controllo della raccolta di dati](../profiling/controlling-data-collection.md)   
+ [Controllo della raccolta dati](../profiling/controlling-data-collection.md)   
  [Procedura: Limitare la strumentazione a specifiche funzioni](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

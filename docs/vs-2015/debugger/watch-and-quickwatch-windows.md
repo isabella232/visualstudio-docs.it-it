@@ -1,5 +1,5 @@
 ---
-title: Espressioni di controllo e controllo immediato Windows | Microsoft Docs
+title: Finestre espressioni di controllo e controllo immediato | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,16 +25,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3f79e492440f98f733488afb241fa6f86e220b9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444239"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839284"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Finestre Espressioni di controllo e Controllo immediato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile usare la **Watch** (**eseguire il Debug / Windows / espressioni di controllo / guardare (1, 2, 3, 4)**) e **controllo immediato** (pulsante destro del mouse sulla variabile / **eseguire il Debug / controllo immediato**) windows per controllare variabili ed espressioni durante una sessione di debug.  La differenza è che la finestra **Espressioni di controllo** può visualizzare più variabili, mentre la finestra **Controllo immediato** visualizza una singola variabile alla volta.  
+È possibile utilizzare le finestre **espressioni di controllo** (**debug/Windows/espressioni di controllo (1, 2, 3, 4)**) e controllo **immediato** (fare clic con il pulsante destro del mouse su variabili/ **debug/controllo immediato**) per controllare variabili ed espressioni durante una sessione di debug.  La differenza è che la finestra **Espressioni di controllo** può visualizzare più variabili, mentre la finestra **Controllo immediato** visualizza una singola variabile alla volta.  
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Osservazione di una singola variabile con Controllo immediato  
  È possibile usare la finestra **Controllo immediato** per osservare una singola variabile. Si supponga, ad esempio, di avere il codice seguente:  
@@ -62,7 +62,7 @@ static void Main(string[] args)
   
 4. La finestra **Controllo immediato** è una finestra di dialogo modale, per cui non è possibile continuare il debug finché è aperta. È possibile aggiungere la variabile nella finestra **Espressioni di controllo** facendo clic su **Aggiungi espressione di controllo**.  
   
-5. Chiudere la finestra **Controllo immediato** . È ora possibile continuare il debug osservando il valore nella finestra **Espressioni di controllo** .  
+5. Chiudere la finestra **Controllo immediato** . È ora possibile continuare il debug osservando il valore nella finestra **espressioni di controllo**  
   
 ## <a name="observing-variables-with-the-watch-window"></a>Osservazione delle variabili con la finestra Espressioni di controllo  
  È possibile osservare più variabili con la finestra **Espressioni di controllo** . Si supponga, ad esempio, di avere il codice seguente:  
@@ -108,11 +108,11 @@ static void Main(string[] args)
   
  ![WatchExpression](../debugger/media/watchexpression.png "WatchExpression")  
   
- In generale, le regole per la valutazione delle espressioni nella finestra **Espressioni di controllo** sono le stesse delle regole per la valutazione delle espressioni nel linguaggio di codifica. Se l'espressione contiene un errore di sintassi, è possibile aspettarsi lo stesso errore del compilatore che verrebbe visualizzato nell'editor del codice. Di seguito è riportato un esempio:  
+ In generale, le regole per la valutazione delle espressioni nella finestra **Espressioni di controllo** sono le stesse delle regole per la valutazione delle espressioni nel linguaggio di codifica. Se l'espressione contiene un errore di sintassi, è possibile aspettarsi lo stesso errore del compilatore che verrebbe visualizzato nell'editor del codice. Ecco un esempio:  
   
  ![WatchExpressionError](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
-## <a name="bkmk_refreshWatch"></a> Aggiornamento dei valori delle espressioni di controllo che non sono aggiornati  
+## <a name="refreshing-watch-values-that-are-out-of-date"></a><a name="bkmk_refreshWatch"></a> Aggiornamento dei valori delle espressioni di controllo che non sono aggiornati  
  In alcuni casi è possibile che venga visualizzata un'icona di aggiornamento (un cerchio con due frecce o un cerchio con due linee ondulate) quando un'espressione viene valutata nella finestra **Espressioni di controllo** .  Si supponga ad esempio che la valutazione delle proprietà sia disattivata (**Strumenti/Opzioni/Debug/Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**) e di avere il codice seguente:  
   
 ```csharp  
@@ -133,9 +133,9 @@ static void Main(string[] args)
   
  Se si punta all'icona, una descrizione comando fornisce informazioni sul motivo per cui l'espressione non è stata valutata.  Se vengono visualizzate le frecce che girano in cerchio, l'espressione non è stata valutata per uno dei seguenti motivi:  
   
-- • Un errore durante l'espressione è stata valutata. Ad esempio, è possibile che si sia verificato un timeout o che una variabile fosse esterna all'ambito.  
+- • Si è verificato un errore durante la valutazione dell'espressione. Ad esempio, è possibile che si sia verificato un timeout o che una variabile fosse esterna all'ambito.  
   
-- • L'espressione contiene una chiamata di funzione che potrebbe attivare un effetto collaterale dell'applicazione (vedere [effetti collaterali ed espressioni](#bkmk_sideEffects)).  
+- • L'espressione contiene una chiamata di funzione che può attivare un effetto collaterale nell'applicazione (vedere [effetti collaterali ed espressioni](#bkmk_sideEffects)).  
   
 - La valutazione automatica delle proprietà e delle chiamate di funzioni implicite da parte del debugger è disattivata (**Strumenti/Opzioni/Debug/Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**) e quindi l'espressione non può essere valutata automaticamente.  
   
@@ -143,7 +143,7 @@ static void Main(string[] args)
   
   Se viene visualizzata un'icona rappresentata da un cerchio con due linee ondulate che assomigliano a dei fili, l'espressione non è stata valutata a causa di una potenziale dipendenza cross-thread. In altre parole, la valutazione del codice richiede l'esecuzione temporanea di altri thread nell'applicazione. Quando ci si trova in modalità di interruzione, in genere tutti i thread nell'applicazione vengono arrestati. L'esecuzione temporanea di altri thread può avere effetti imprevisti sullo stato del programma e può far sì che il debugger ignori alcuni eventi quali i punti di interruzione e le eccezioni generate in tali thread.  
   
-## <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
+## <a name="side-effects-and-expressions"></a><a name="bkmk_sideEffects"></a> Side Effects and Expressions  
  La valutazione di alcune espressioni può comportare la modifica del valore di una variabile o altri effetti sullo stato del programma. La valutazione della seguente espressione, ad esempio, comporta la modifica del valore di `var1`:  
   
 ```  
@@ -206,7 +206,7 @@ public class Program
   
 2. Avviare il debug e quando l'esecuzione si arresta nel punto di interruzione, trovare la variabile nella finestra **Variabili locali** , fare clic con il pulsante destro del mouse sulla variabile e scegliere **Crea ID oggetto**.  
   
-3. Nella finestra **$** verrà visualizzato il simbolo **Variabili locali** . Si tratta dell'ID oggetto.  
+3. **$** Nella finestra **variabili locali** verrà visualizzato un segno più un numero. Si tratta dell'ID oggetto.  
   
 4. Aggiungere l'ID oggetto nella finestra Espressioni di controllo.  
   
@@ -218,12 +218,12 @@ public class Program
 > Se si vogliono visualizzare le proprietà dell'oggetto, ad esempio `Person.Name` nell'esempio precedente, è necessario abilitare la valutazione delle proprietà.  
   
 ## <a name="using-registers-in-the-watch-window-c-only"></a>Uso di registri nella finestra Espressioni di controllo (solo C++)  
- Se si esegue il debug codice nativo, è possibile aggiungere i nomi di registro, nonché i nomi delle variabili usando  **$ \<registrare nome >** oppure  **@ \<registrare nome >**.  Per altre informazioni, vedere [Pseudovariables](../debugger/pseudovariables.md).  
+ Se si esegue il debug di codice nativo, è possibile aggiungere nomi di registro e nomi di variabili usando **$\<register name>** o **@\<register name>** .  Per altre informazioni, vedere [Pseudovariables](../debugger/pseudovariables.md).  
   
 ## <a name="dynamicview-and-the-watch-window"></a>DynamicView e la finestra Espressioni di controllo  
  Alcuni linguaggi di script (ad esempio, JavaScript o Python) usano la tipizzazione dinamica o [duck typing](https://en.wikipedia.org/wiki/Duck_typing)e i linguaggi .NET (nella versione 4.0 e versioni successive) supportano gli oggetti che sono difficili da osservare con le normali finestre di debug, poiché possono contenere proprietà e metodi di runtime che non possono essere visualizzati.  
   
- Quando la finestra Espressioni di controllo viene visualizzato un oggetto creato da un tipo che implementa il <xref:System.Dynamic.IDynamicMetaObjectProvider>, il debugger aggiunge una speciale **visualizzazione dinamica** nodo per il **Auto** visualizzare. Questo nodo mostra i membri dinamici dell'oggetto dinamico, ma non consente la modifica dei valori dei membri.  
+ Quando il finestra Espressioni di controllo Visualizza un oggetto o creato da un tipo che implementa lo <xref:System.Dynamic.IDynamicMetaObjectProvider> , il debugger aggiunge uno speciale nodo della **visualizzazione dinamica**  alla visualizzazione **auto** . Questo nodo mostra i membri dinamici dell'oggetto dinamico, ma non consente la modifica dei valori dei membri.  
   
  Se si fa clic con il pulsante destro del mouse su un oggetto figlio di una **Visualizzazione dinamica** e si sceglie **Aggiungi espressione di controllo**, il debugger inserisce una nuova variabile di controllo che esegue il cast di un oggetto in un oggetto dinamico. In altre parole, **object Name** diventa (**(dynamic)object).Name**.  
   

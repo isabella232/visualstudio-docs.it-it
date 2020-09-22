@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0ddfda1e46dc1c5918a4ee1095f39db027bd3fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431603"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839824"
 ---
 # <a name="using-performance-rules-to-analyze-data"></a>Utilizzo di regole per le prestazioni per analizzare dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,12 +24,12 @@ Gli avvisi di prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](..
 > [!NOTE]
 > Gli avvisi di prestazioni del profiler vengono generati dall'analisi dinamica dell'esecuzione del programma e sono indipendenti dagli avvisi di Analisi codice. Analisi codice può inoltre generare avvisi di prestazioni per il codice gestito in base all'analisi statica del codice sorgente. Per altre informazioni, vedere [Analisi della qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) e [Avvisi di prestazioni](../code-quality/performance-warnings.md).  
   
-## <a name="in-this-section"></a>In questa sezione  
- [Procedura: Visualizzare gli avvisi di prestazioni](../profiling/how-to-view-performance-warnings.md)  
+## <a name="in-this-section"></a>Contenuto della sezione  
+ [Procedura: visualizzare gli avvisi di prestazioni](../profiling/how-to-view-performance-warnings.md)  
  Fornisce informazioni su come aprire la finestra **Elenco errori** per visualizzare gli avvisi di prestazioni del profiler.  
   
  [Procedura: Configurare le regole di prestazioni](../profiling/how-to-configure-performance-rules.md)  
  Fornisce informazioni su come attivare o disattivare i singoli avvisi di prestazioni.  
   
- [Tabella di riferimento delle regole di prestazioni](../profiling/performance-rules-reference.md)  
+ [Informazioni di riferimento sulle regole per le prestazioni](../profiling/performance-rules-reference.md)  
  Fornisce informazioni dettagliate sugli avvisi di prestazioni del profiler.

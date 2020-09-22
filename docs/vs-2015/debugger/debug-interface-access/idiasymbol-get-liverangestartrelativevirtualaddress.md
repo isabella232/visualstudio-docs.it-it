@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3dc0c42fe5dd5bc99e806ffbc20f42aa897d4c22
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64824930"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840051"
 ---
-# <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
+# <a name="idiasymbolget_liverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Restituisce l'inizio dell'intervallo di indirizzi in cui il simbolo locale è valido.  
@@ -35,20 +35,20 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
   
 #### <a name="parameters"></a>Parametri  
  `address`  
- [out] Restituisce l'inizio dell'intervallo di indirizzi.  
+ out Restituisce l'inizio dell'intervallo di indirizzi.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. L'indirizzo virtuale relativo restituito è l'inizio dell'intervallo in cui il simbolo è valido.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. L'indirizzo virtuale relativo restituito è l'inizio dell'intervallo in cui il simbolo è valido.  
   
 > [!NOTE]
-> Un codice di errore restituito significa che il simbolo non dispone di informazioni di intervallo in tempo reale.  
+> Un codice di errore restituito indica che il simbolo non contiene informazioni sull'intervallo Live.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: DIA2.h  
+ Intestazione: dia2. h  
   
- Libreria: diaguids.lib  
+ Libreria: diaguids. lib  
   
  DLL: msdia100.dll  
   

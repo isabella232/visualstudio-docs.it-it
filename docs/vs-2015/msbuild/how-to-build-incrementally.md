@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4b2e6dd825cfcf67ffffd9ace27017c8d01aa33
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431396"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840294"
 ---
-# <a name="how-to-build-incrementally"></a>Procedura: Compilazione incrementale
+# <a name="how-to-build-incrementally"></a>Procedura: eseguire la compilazione incrementale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando si compila un progetto di grandi dimensioni, è importante che i componenti compilati precedentemente e ancora aggiornati non vengano ricompilati. Se vengono ricompilate tutte le destinazioni, ogni compilazione impiegherà molto tempo. Per abilitare le compilazioni incrementali, in cui vengono compilate solo le destinazioni che non sono state compilate precedentemente o le destinazioni non aggiornate, [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) può confrontare i timestamp dei file di input con i timestamp dei file di output e stabilire se ignorare, compilare o ricompilare parzialmente una destinazione. Per questa operazione di confronto, è necessario un mapping uno a uno tra input e output. È possibile usare le trasformazioni per consentire alle destinazioni di identificare tale mapping diretto. Per altre informazioni sulle trasformazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md).  
@@ -61,9 +61,9 @@ Quando si compila un progetto di grandi dimensioni, è importante che i componen
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente viene usato un progetto che compila file della Guida per un ipotetico sistema di Guida. Il progetto converte i file di origine con estensione TXT in file CONTENT intermedi, che vengono quindi combinati con i file di metadati XML per generare il file con estensione HELP finale usato dal sistema di Guida. Il progetto usa le attività ipotetiche seguenti:  
   
-- `GenerateContentFiles`: Converte i file con estensione txt in file Content.  
+- `GenerateContentFiles`: converte file TXT in file CONTENT.  
   
-- `BuildHelp`: Combina file Content e i file di metadati XML per compilare il file con estensione help finale.  
+- `BuildHelp`: combina i file CONTENT e i file di metadati XML per compilare il file HELP finale.  
   
   Il progetto usa trasformazioni per creare un mapping uno a uno tra input e output nell'attività `GenerateContentFiles`. Per altre informazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md). L'elemento `Output` è impostato per usare automaticamente gli output dall'attività `GenerateContentFiles` come input per l'attività `BuildHelp`.  
   
@@ -105,8 +105,8 @@ Quando si compila un progetto di grandi dimensioni, è importante che i componen
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Destinazioni](../msbuild/msbuild-targets.md)   
- [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)   
- [Trasformazioni](../msbuild/msbuild-transforms.md)   
+ [Obiettivi](../msbuild/msbuild-targets.md)   
+ [Elemento target (MSBuild)](../msbuild/target-element-msbuild.md)   
+ [Trasforma](../msbuild/msbuild-transforms.md)   
  [Attività Csc](../msbuild/csc-task.md)   
  [Attività Vbc](../msbuild/vbc-task.md)

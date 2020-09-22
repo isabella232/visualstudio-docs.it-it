@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8b4a067facf713af1b0547654be9aaf54500025
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64819811"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839955"
 ---
-# <a name="idiasymbolgetcompilergenerated"></a>IDiaSymbol::get_compilerGenerated
+# <a name="idiasymbolget_compilergenerated"></a>IDiaSymbol::get_compilerGenerated
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera un flag che indica se il simbolo è stato generato dal compilatore.  
@@ -35,19 +35,19 @@ HRESULT get_compilerGenerated ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce `TRUE` se il compilatore ha generato il simbolo; in caso contrario, restituisce `FALSE` se il simbolo è stato generato da codice sorgente scritto dall'utente.  
+ out Restituisce `TRUE` se il compilatore ha generato il simbolo; in caso contrario, restituisce `FALSE` se il simbolo è stato generato dall'origine scritta dall'utente.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="requirements"></a>Requisiti  
   
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
-|Intestazione:|DIA2.h|  
+|Intestazione:|dia2. h|  
 |Version:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  

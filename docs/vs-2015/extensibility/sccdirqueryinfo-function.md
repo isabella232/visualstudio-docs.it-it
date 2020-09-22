@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7334ddd1ce6c7f9feac63253246e55b65121e18b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432445"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839287"
 ---
 # <a name="sccdirqueryinfo-function"></a>Funzione SccDirQueryInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questa funzione esamina un elenco di directory completo per il relativo stato corrente.  
+Questa funzione esamina un elenco di directory complete per lo stato corrente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -37,35 +37,35 @@ LPLONG  lpStatus
   
 #### <a name="parameters"></a>Parametri  
  pContext  
- [in] La struttura del contesto plug-in del controllo origine.  
+ in Struttura del contesto del plug-in del controllo del codice sorgente.  
   
  nDirs  
- [in] Il numero di directory selezionati per essere eseguita una query.  
+ in Numero di directory selezionate per la query.  
   
  lpDirNames  
- [in] Matrice di percorsi completi delle directory in cui eseguire una query.  
+ in Matrice di percorsi completi delle directory in cui eseguire la query.  
   
  lpStatus  
- [in, out] Una struttura di matrice per il controllo del codice sorgente del plug-in per restituire i flag di stato (vedere [il codice di stato Directory](../extensibility/directory-status-code-enumerator.md) per informazioni dettagliate).  
+ [in, out] Una struttura di matrice per il plug-in del controllo del codice sorgente per restituire i flag di stato (vedere il [codice di stato della directory](../extensibility/directory-status-code-enumerator.md) per informazioni dettagliate).  
   
 ## <a name="return-value"></a>Valore restituito  
- Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  
+ Si prevede che l'implementazione del plug-in del controllo del codice sorgente di questa funzione restituisca uno dei valori seguenti:  
   
-|Value|Descrizione|  
+|valore|Descrizione|  
 |-----------|-----------------|  
-|SCC_OK|La query è riuscita.|  
+|SCC_OK|La query è stata completata.|  
 |SCC_E_OPNOTSUPPORTED|Il sistema di controllo del codice sorgente non supporta questa operazione.|  
-|SCC_E_ACCESSFAILURE|Si è verificato un problema di accesso di sistema di controllo di origine, probabilmente a causa di problemi di contesa o di rete. È consigliabile un nuovo tentativo.|  
+|SCC_E_ACCESSFAILURE|Si è verificato un problema durante l'accesso al sistema di controllo del codice sorgente, probabilmente a causa di problemi di rete o di conflitto. È consigliabile eseguire un nuovo tentativo.|  
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Errore non specifico.|  
   
-## <a name="remarks"></a>Note  
- La funzione riempie la matrice restituita con una maschera di bit di bit dal `SCC_DIRSTATUS` famiglia (vedere [codice di stato Directory](../extensibility/directory-status-code-enumerator.md)), una voce per ogni directory di base. La matrice di stato viene allocata dal chiamante.  
+## <a name="remarks"></a>Commenti  
+ La funzione compila la matrice restituita con una maschera di bit di bit della `SCC_DIRSTATUS` famiglia (vedere il [codice di stato della directory](../extensibility/directory-status-code-enumerator.md)), una voce per ogni directory specificata. La matrice di stato viene allocata dal chiamante.  
   
- L'IDE Usa questa funzione prima della ridenominazione di una directory per controllare se la directory è incluso nel controllo sorgente eseguendo una query se dispone di un progetto corrispondente. Se la directory non è incluso nel controllo del codice sorgente, l'IDE può fornire l'avviso appropriato all'utente.  
+ L'IDE usa questa funzione prima della ridenominazione di una directory per verificare se la directory è sotto il controllo del codice sorgente eseguendo una query su se è presente un progetto corrispondente. Se la directory non è sotto il controllo del codice sorgente, l'IDE può fornire l'avviso appropriato all'utente.  
   
 > [!NOTE]
-> Se un plug-in del controllo del codice sorgente sceglie di non implementare uno o più dei valori di stato, non è implementata bits deve essere impostato su zero.  
+> Se un plug-in del controllo del codice sorgente sceglie di non implementare uno o più valori di stato, i bit non implementati devono essere impostati su zero.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   
+ [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)   
  [Codice di stato directory](../extensibility/directory-status-code-enumerator.md)

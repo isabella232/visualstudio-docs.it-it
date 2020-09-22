@@ -12,34 +12,34 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9cdbba0cfa48792127accc71cba75f8542556d67
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409385"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839499"
 ---
 # <a name="displaying-locals"></a>Visualizzazione di variabili locali
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni di Common Language Runtime, vedi [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [gestito esempio analizzatore di espressioni](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015, questo metodo di implementazione degli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere l'esempio degli [analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e dell' [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Sempre l'esecuzione avviene all'interno del contesto di un metodo, noto anche come metodo contenitore o il metodo corrente. Quando l'esecuzione viene sospesa, Visual Studio chiama il motore di debug (DE) per ottenere un elenco delle variabili locali e gli argomenti, collettivamente denominati variabili locali del metodo. Visual Studio visualizza le variabili locali e i relativi valori nel **variabili locali** finestra.  
+ L'esecuzione avviene sempre all'interno del contesto di un metodo, noto anche come metodo contenitore o metodo corrente. Quando l'esecuzione viene sospesa, Visual Studio chiama il motore di debug (DE) per ottenere un elenco di variabili e argomenti locali, chiamati collettivamente le variabili locali del metodo. Visual Studio Visualizza le variabili locali e i relativi valori nella finestra **variabili locali** .  
   
- Per visualizzare variabili locali, chiama il DE il [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) metodo appartenente all'analizzatore di Espressioni e gli assegna un contesto di valutazione, che è un provider di simboli (SP), l'indirizzo di esecuzione corrente e un oggetto strumento di associazione. Per altre informazioni, vedere [contesto di valutazione](../../extensibility/debugger/evaluation-context.md). Se la chiamata ha esito positivo, il `IDebugExpressionEvaluator::GetMethodProperty` metodo restituisce un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) oggetto che rappresenta il metodo che contiene l'indirizzo di esecuzione corrente.  
+ Per visualizzare le variabili locali, il DE chiama il metodo [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) che appartiene a EE e fornisce un contesto di valutazione, ovvero, un provider di simboli (SP), l'indirizzo di esecuzione corrente e un oggetto Binder. Per ulteriori informazioni, vedere [contesto di valutazione](../../extensibility/debugger/evaluation-context.md). Se la chiamata ha esito positivo, il `IDebugExpressionEvaluator::GetMethodProperty` metodo restituisce un oggetto [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta il metodo che contiene l'indirizzo di esecuzione corrente.  
   
- Le chiamate DE [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) per ottenere un [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) oggetto, che viene filtrata in modo da restituire soli variabili locali ed enumerata per produrre un elenco di [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)strutture. Ogni struttura contiene il nome, tipo e valore di una variabile locale. Il tipo e il valore vengono archiviati come stringhe formattate, adatte per la visualizzazione. Il nome, tipo e valore sono in genere visualizzati insieme in una sola riga del **variabili locali** finestra.  
+ Il DE chiama [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) per ottenere un oggetto [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) , che viene filtrato in modo da restituire solo variabili locali ed enumerate per produrre un elenco di strutture di [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) . Ogni struttura contiene il nome, il tipo e il valore di un oggetto locale. Il tipo e il valore vengono archiviati come stringhe formattate, adatte per la visualizzazione. Il nome, il tipo e il valore vengono in genere visualizzati insieme in una riga della finestra **variabili locali** .  
   
 > [!NOTE]
-> Il **controllo immediato** e **Watch** finestre vengono visualizzate anche le variabili con lo stesso formato di nome, valore e tipo. Tuttavia, tali valori vengono ottenuti chiamando [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) invece di `IDebugProperty2::EnumChildren`.  
+> Nelle finestre controllo **immediato** e espressione di **controllo** vengono visualizzate anche le variabili con lo stesso formato di nome, valore e tipo. Tuttavia, tali valori vengono ottenuti chiamando [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) anziché `IDebugProperty2::EnumChildren` .  
   
-## <a name="in-this-section"></a>In questa sezione  
+## <a name="in-this-section"></a>Contenuto della sezione  
  [Implementazione di esempio di variabili locali](../../extensibility/debugger/sample-implementation-of-locals.md)  
- Usa esempi per eseguire passo passo il processo di implementazione di variabili locali.  
+ USA esempi per eseguire il processo di implementazione di variabili locali.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
  [Contesto di valutazione](../../extensibility/debugger/evaluation-context.md)  
- Viene spiegato che quando il motore di debug (DE) chiama l'analizzatore di espressioni (EE), passa di tre argomenti.  
+ Viene illustrato che quando il motore di debug (DE) chiama l'analizzatore di espressioni (EE), passa tre argomenti.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Scrittura di un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

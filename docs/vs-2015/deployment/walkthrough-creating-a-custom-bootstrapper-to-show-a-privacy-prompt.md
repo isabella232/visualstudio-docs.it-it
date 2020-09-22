@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Creazione di un programma di avvio automatico per visualizzare l'informativa sulla Privacy dei messaggi di richiesta | Microsoft Docs"
+title: 'Procedura dettagliata: creazione di un programma di avvio automatico personalizzato per visualizzare un prompt di privacy | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -21,151 +21,151 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6d93d9f771da9387661603f3eb71301e9d9aead7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427138"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839608"
 ---
-# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Procedura dettagliata: Creazione di un programma di avvio automatico per visualizzare un Prompt di Privacy
+# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Procedura dettagliata: creazione di un programma di avvio automatico per visualizzare un prompt di privacy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile configurare le applicazioni ClickOnce per l'aggiornamento automatico quando gli assembly con le versioni più recenti di file e delle versioni degli assembly saranno disponibili. Per assicurarsi che i clienti di consenso a questo comportamento, è possibile visualizzare un prompt di privacy a essi. Quindi, è possibile scegliere se concedere l'autorizzazione per l'applicazione per aggiornare automaticamente. Se l'applicazione non è consentita l'aggiornamento automatico, non viene installato.  
+È possibile configurare le applicazioni ClickOnce per l'aggiornamento automatico quando diventano disponibili assembly con versioni di file e versioni di assembly più recenti. Per assicurarsi che i clienti accettino questo comportamento, è possibile visualizzare un messaggio di richiesta di privacy. Quindi, possono scegliere se concedere l'autorizzazione all'applicazione per l'aggiornamento automatico. Se l'applicazione non è consentita per l'aggiornamento automatico, non viene installata.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisiti  
- Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
+ Per completare questa procedura dettagliata, è necessario disporre dei componenti seguenti:  
   
 - Visual Studio 2010.  
   
-## <a name="creating-an-update-consent-dialog-box"></a>Creazione di una finestra di dialogo di consenso di aggiornamento  
- Per visualizzare un prompt di privacy, creare un'applicazione che richiede il lettore a fornire il consenso agli aggiornamenti automatici per l'applicazione.  
+## <a name="creating-an-update-consent-dialog-box"></a>Creazione di una finestra di dialogo di consenso dell'aggiornamento  
+ Per visualizzare una richiesta di privacy, creare un'applicazione che chieda al lettore di concedere il consenso agli aggiornamenti automatici per l'applicazione.  
   
 #### <a name="to-create-a-consent-dialog-box"></a>Per creare una finestra di dialogo di consenso  
   
-1. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
+1. Scegliere **Nuovo** dal menu **File**e quindi fare clic su **Progetto**.  
   
-2. Nel **nuovo progetto** della finestra di dialogo fare clic su **Windows**, quindi fare clic su **WindowsFormsApplication**.  
+2. Nella finestra di dialogo **nuovo progetto** fare clic su **Windows**e quindi su **WindowsFormsApplication**.  
   
-3. Per il **Name**, digitare **ConsentDialog**, quindi fare clic su **OK**.  
+3. Per il **nome**digitare **ConsentDialog**e quindi fare clic su **OK**.  
   
-4. Nella finestra di progettazione, fare clic sul form.  
+4. Nella finestra di progettazione fare clic sul form.  
   
-5. Nel **delle proprietà** finestra Modifica il **testo** proprietà **della finestra di consenso di aggiornamento**.  
+5. Nella finestra **Proprietà** modificare la proprietà **Text** in **Aggiorna finestra di dialogo di consenso**.  
   
-6. Nel **casella degli strumenti**, espandere **tutti i Windows Form**e trascinare un' **etichetta** controllo al form.  
+6. Nella **casella degli strumenti**espandere **tutti i Windows Forms**e trascinare un controllo **etichetta** nel form.  
   
-7. Nella finestra di progettazione, fare clic sul controllo etichetta.  
+7. Nella finestra di progettazione fare clic sul controllo etichetta.  
   
-8. Nel **delle proprietà** finestra Modifica il **testo** proprietà sotto **aspetto** al seguente:  
+8. Nella finestra **Proprietà** modificare la proprietà **Text** in **aspetto** nel modo seguente:  
   
-    L'applicazione che sta tentando di installare i controlli per gli aggiornamenti più recenti sul Web. Facendo clic su "Accetto", si autorizza l'applicazione per cercare e installare automaticamente gli aggiornamenti da Internet.  
+    L'applicazione che si sta per installare controlla gli aggiornamenti più recenti sul Web. Se si fa clic su "Accetto", si autorizza l'applicazione a verificare e installare automaticamente gli aggiornamenti da Internet.  
   
-9. Nel **casella degli strumenti**, trascinare un **casella di controllo** controllo al centro del form.  
+9. Nella **casella degli strumenti**trascinare un controllo **CheckBox** al centro del form.  
   
-10. Nel **delle proprietà** finestra Modifica il **testo** proprietà sotto **Layout** a **accetto**.  
+10. Nella finestra **Proprietà** modificare la proprietà **Text** in **layout** **su Accetto**.  
   
-11. Nel **casella degli strumenti**, trascinare un **pulsante** controllo in basso a sinistra del modulo.  
+11. Nella **casella degli strumenti**trascinare un controllo **Button** in basso a sinistra nel form.  
   
-12. Nel **le proprietà** finestra Modifica il **testo** proprietà sotto **Layout** a **procedi**.  
+12. Nella finestra **Proprietà** modificare la proprietà **Text** in **layout** per **continuare**.  
   
-13. Nel **delle proprietà** finestra Modifica il **(nome)** proprietà sotto **progettazione** a **ProceedButton**.  
+13. Nella finestra **Proprietà** modificare la proprietà **(Name)** in **progettazione** in **ProceedButton**.  
   
-14. Nel **casella degli strumenti**, trascinare un **pulsante** controllo nella parte inferiore destra del modulo.  
+14. Nella **casella degli strumenti**trascinare un controllo **Button** nella parte inferiore destra del form.  
   
-15. Nel **delle proprietà** finestra Modifica il **testo** proprietà sotto **Layout** per **Annulla**.  
+15. Nella finestra **Proprietà** modificare la proprietà **Text** in **layout** in **Annulla**.  
   
-16. Nel **delle proprietà** finestra Modifica il **(nome)** proprietà sotto **progettazione** a **CancelButton**.  
+16. Nella finestra **Proprietà** modificare la proprietà **(Name)** in **progettazione** in **CancelButton**.  
   
-17. Nella finestra di progettazione, fare doppio clic il **accetto** casella di controllo per generare il gestore dell'evento CheckedChanged.  
+17. Nella finestra di progettazione fare doppio clic sulla casella di controllo **Accetto** per generare il gestore dell'evento CheckedChanged.  
   
-18. Nel file di codice Form1, aggiungere il codice seguente per il gestore dell'evento CheckedChanged.  
+18. Nel file di codice Form1 aggiungere il codice seguente per il gestore dell'evento CheckedChanged.  
   
      [!code-csharp[ConsentDialog#1](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs#1)]
      [!code-vb[ConsentDialog#1](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb#1)]  
   
-19. Aggiornare il costruttore della classe per disabilitare il **procedi** pulsante per impostazione predefinita.  
+19. Aggiornare il costruttore della classe per disabilitare il pulsante **continua** per impostazione predefinita.  
   
      [!code-csharp[ConsentDialog#6](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs#6)]
      [!code-vb[ConsentDialog#6](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb#6)]  
   
-20. Nel file di codice Form1, aggiungere il codice seguente per una variabile booleana rilevare se l'utente finale abbia dato il consenso agli aggiornamenti online.  
+20. Nel file di codice Form1 aggiungere il codice seguente per una variabile booleana per rilevare se l'utente finale ha acconsentito agli aggiornamenti online.  
   
      [!code-csharp[ConsentDialog#3](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs#3)]
      [!code-vb[ConsentDialog#3](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb#3)]  
   
-21. Nella finestra di progettazione, fare doppio clic il **procedi** pulsante per generare il gestore dell'evento Click.  
+21. Nella finestra di progettazione fare doppio clic sul pulsante **continua** per generare il gestore dell'evento click.  
   
-22. Nel file di codice Form1, aggiungere il codice seguente al gestore dell'evento Click per il **procedi** pulsante.  
+22. Nel file di codice Form1 aggiungere il codice seguente al gestore dell'evento click per il pulsante **continua** .  
   
      [!code-csharp[ConsentDialog#2](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs#2)]
      [!code-vb[ConsentDialog#2](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb#2)]  
   
-23. Nella finestra di progettazione, fare doppio clic il **annullare** pulsante per generare il gestore dell'evento Click.  
+23. Nella finestra di progettazione fare doppio clic sul pulsante **Annulla** per generare il gestore dell'evento click.  
   
-24. Nel file di codice Form1, aggiungere il codice seguente per il gestore eventi Click per il **annullare** pulsante.  
+24. Nel file di codice Form1 aggiungere il codice seguente per il gestore dell'evento click per il pulsante **Annulla** .  
   
      [!code-csharp[ConsentDialog#4](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs#4)]
      [!code-vb[ConsentDialog#4](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb#4)]  
   
-25. Aggiornamento dell'applicazione per restituire un errore se l'utente finale non fornire il consenso agli aggiornamenti online.  
+25. Aggiornare l'applicazione per restituire un errore se l'utente finale non acconsente agli aggiornamenti online.  
   
-     Visual Basic solo per sviluppatori:  
+     Solo per gli sviluppatori Visual Basic:  
   
-    1. Nelle **Esplora soluzioni**, fare clic su **ConsentDialog**.  
+    1. In **Esplora soluzioni**fare clic su **ConsentDialog**.  
   
-    2. Nel **Project** menu, fare clic su **Aggiungi modulo**e quindi fare clic su **Add**.  
+    2. Scegliere **Aggiungi modulo**dal menu **progetto** , quindi fare clic su **Aggiungi**.  
   
-    3. Nel file di codice Module1.vb, aggiungere il codice seguente.  
+    3. Nel file di codice Module1. vb aggiungere il codice seguente.  
   
         [!code-vb[ConsentDialog#7](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb#7)]  
   
-    4. Nel **progetto** menu, fare clic su **proprietà ConsentDialog**e quindi fare clic sul **applicazione** scheda.  
+    4. Scegliere **Proprietà ConsentDialog**dal menu **progetto** e quindi fare clic sulla scheda **applicazione** .  
   
-    5. Deselezionare l'opzione **Abilita framework applicazione**.  
+    5. Deselezionare **Abilita framework applicazione**.  
   
-    6. Nel **oggetto di avvio** elenco a discesa dal menu **Module1**.  
+    6. Nel menu a discesa **oggetto di avvio** selezionare **Module1**.  
   
        > [!NOTE]
-       > La disabilitazione di framework applicazione disattiva le funzionalità, ad esempio stili di Windows XP, gli eventi dell'applicazione, la schermata iniziale, un'applicazione a istanza singola e altro ancora. Per altre informazioni, vedere [Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > La disabilitazione del Framework applicazione disattiva funzionalità come gli stili di visualizzazione di Windows XP, gli eventi dell'applicazione, la schermata iniziale, l'applicazione a istanza singola e altro ancora. Per altre informazioni, vedere [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-       Per Visual c# solo per gli sviluppatori:  
+       Solo per gli sviluppatori di Visual C#:  
   
        Aprire il file di codice Program.cs e aggiungere il codice seguente.  
   
        [!code-csharp[ConsentDialog#5](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs#5)]  
   
-26. Nel **compilare** menu, fare clic su **BuildSolution**.  
+26. Scegliere **BuildSolution**dal menu **Compila** .  
   
 ## <a name="creating-the-custom-bootstrapper-package"></a>Creazione del pacchetto del programma di avvio automatico personalizzato  
- Per visualizzare il prompt di privacy per gli utenti finali, è possibile creare un pacchetto di programma di avvio automatico per l'applicazione della finestra di consenso di aggiornamento e includerlo come prerequisito in tutte le applicazioni ClickOnce.  
+ Per visualizzare la richiesta di privacy per gli utenti finali, è possibile creare un pacchetto del programma di avvio automatico personalizzato per l'applicazione della finestra di dialogo di consenso dell'aggiornamento e includerlo come prerequisito in tutte le applicazioni ClickOnce.  
   
- Questa procedura viene illustrato come creare un pacchetto di programma di avvio automatico personalizzato creando i documenti seguenti:  
+ Questa procedura illustra come creare un pacchetto del programma di avvio automatico personalizzato creando i documenti seguenti:  
   
-- Un Product manifest file per descrivere il contenuto del programma di avvio automatico.  
+- Un product.xml file manifesto per descrivere il contenuto del programma di avvio automatico.  
   
-- Un file manifesto di package. XML per elencare gli aspetti specifici della localizzazione del pacchetto, ad esempio stringhe e le condizioni di licenza software.  
+- Un package.xml file manifesto per elencare gli aspetti specifici della localizzazione del pacchetto, ad esempio le stringhe e le condizioni di licenza software.  
   
-- Un documento per le condizioni di licenza software.  
+- Documento per le condizioni di licenza software.  
   
-#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Passaggio 1: Per creare la directory di avvio automatico  
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>Passaggio 1: creare la directory del programma di avvio automatico  
   
-1. Creare una directory denominata **UpdateConsentDialog** in %PROGRAMFILES%\Microsoft Sdks\windows\v7.0A\Bootstrapper\Packages.  
-  
-    > [!NOTE]
-    > Potrebbe essere necessario privilegi di amministratore per creare questa cartella.  
-  
-2. Nella directory UpdateConsentDialog, creare una sottodirectory denominata en.  
+1. Creare una directory denominata **UpdateConsentDialog** nel percorso%ProgramFiles%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
   
     > [!NOTE]
-    > Creare una nuova directory per ciascuna lingua. Ad esempio, è possibile aggiungere le sottodirectory per le impostazioni locali de e fr. Queste directory conterrebbe il francese e tedesco stringhe e i language pack, se necessario.  
+    > Per creare questa cartella, potrebbero essere necessari privilegi amministrativi.  
   
-#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Passaggio 2: Per creare il file manifesto di Product. Xml  
+2. Nella directory UpdateConsentDialog creare una sottodirectory denominata en.  
   
-1. Creare un file di testo denominato `product.xml`.  
+    > [!NOTE]
+    > Creare una nuova directory per ogni impostazione locale. Ad esempio, è possibile aggiungere sottodirectory per le impostazioni locali FR e de. Se necessario, queste directory contengono le stringhe e i Language Pack in francese e tedesco.  
   
-2. Nel file di Product. XML, aggiungere il codice XML seguente. Assicurarsi che non sovrascrivere il codice XML esistente.  
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>Passaggio 2: creare il file manifesto product.xml  
+  
+1. Creare un file di testo denominato `product.xml` .  
+  
+2. Nel file product.xml aggiungere il codice XML seguente. Assicurarsi di non sovrascrivere il codice XML esistente.  
   
     ```  
     <Product  
@@ -191,13 +191,13 @@ ms.locfileid: "63427138"
     </Product>  
     ```  
   
-3. Salvare il file alla directory bootstrapper UpdateConsentDialog.  
+3. Salvare il file nella directory UpdateConsentDialog del programma di avvio automatico.  
   
-#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Passaggio 3: Per creare il file manifesto di package. XML e le condizioni di licenza software  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Passaggio 3: creare il file manifesto package.xml e le condizioni di licenza software  
   
-1. Creare un file di testo denominato `package.xml`.  
+1. Creare un file di testo denominato `package.xml` .  
   
-2. Nel file package. XML, aggiungere il codice XML seguente per definire le impostazioni locali e includere le condizioni di licenza software. Assicurarsi che non sovrascrivere il codice XML esistente.  
+2. Nel file package.xml aggiungere il seguente codice XML per definire le impostazioni locali e includere le condizioni di licenza software. Assicurarsi di non sovrascrivere il codice XML esistente.  
   
     ```  
     <Package   
@@ -219,91 +219,91 @@ ms.locfileid: "63427138"
     </Package>  
     ```  
   
-3. Salvare il file nella directory del programma di bootstrap UpdateConsentDialog nella sottodirectory en.  
+3. Salvare il file nella sottodirectory en nella directory UpdateConsentDialog del programma di avvio automatico.  
   
 4. Creare un documento denominato EULA. RTF per le condizioni di licenza software.  
   
     > [!NOTE]
-    > Le condizioni di licenza software devono includere informazioni sulle licenze, garanzia, responsabilità e le leggi locali. Questi file devono essere specifiche delle impostazioni locali, assicurarsi che il file viene salvato in un formato che supporta i caratteri MBCS o UNICODE. Consultare l'ufficio legale sul contenuto delle condizioni di licenza software.  
+    > Le condizioni di licenza software devono includere informazioni su licenze, garanzie, passività e leggi locali. Questi file devono essere specifici delle impostazioni locali, quindi assicurarsi che il file venga salvato in un formato che supporti i caratteri MBCS o UNICODE. Consultare il reparto legale sul contenuto delle condizioni di licenza software.  
   
-5. Salvare il documento nella directory del programma di bootstrap UpdateConsentDialog nella sottodirectory en.  
+5. Salvare il documento nella sottodirectory en nella directory UpdateConsentDialog del programma di avvio automatico.  
   
-6. Se necessario, creare un nuovo file manifesto di package. XML e un nuovo documento EULA. RTF per le condizioni di licenza software per ognuna delle impostazioni locali. Ad esempio, se è stata creata una sottodirectory per le impostazioni locali de e fr, creare condizioni di licenza software e i file manifesto separato package. XML e salvarli in sottodirectory fr e de.  
+6. Se necessario, creare un nuovo file manifesto package.xml e un nuovo documento EULA. RTF per le condizioni di licenza software per ciascuna impostazione locale. Se, ad esempio, sono state create sottodirectory per le impostazioni locali FR e de, creare file manifesto package.xml e condizioni di licenza software distinti e salvarli nelle sottodirectory fr e de.  
   
-## <a name="setting-the-update-consent-application-as-a-prerequisite"></a>Impostare il consenso dell'utente di aggiornare un'applicazione come prerequisito  
- In Visual Studio, è possibile impostare l'applicazione di fornire il consenso di aggiornamento come prerequisito.  
+## <a name="setting-the-update-consent-application-as-a-prerequisite"></a>Impostazione dell'applicazione di consenso dell'aggiornamento come prerequisito  
+ In Visual Studio è possibile impostare l'applicazione di consenso dell'aggiornamento come prerequisito.  
   
-#### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Per impostare l'applicazione di fornire il consenso di aggiornamento come prerequisito  
+#### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Per impostare l'applicazione di consenso dell'aggiornamento come prerequisito  
   
-1. Nelle **Esplora soluzioni**, fare clic sul nome dell'applicazione che si desidera distribuire.  
+1. In **Esplora soluzioni**fare clic sul nome dell'applicazione che si desidera distribuire.  
   
-2. Scegliere **Proprietà** *Nome progetto* dal menu **Progetto**.  
+2. Scegliere **Proprietà***Nome progetto dal menu * **Progetto**.  
   
-3. Scegliere il **Publish** pagina e quindi fare clic su **prerequisiti**.  
+3. Fare clic sulla pagina **pubblica** , quindi fare clic su **prerequisiti**.  
   
-4. Selezionare **aggiornare consenso nell'apposita finestra**.  
+4. Selezionare la **finestra di dialogo di consenso dell'aggiornamento**.  
   
     > [!NOTE]
-    > Potrebbe essere necessario chiudere e riaprire Visual Studio per visualizzare la finestra di dialogo di consenso Update nella finestra di dialogo Prerequisiti.  
+    > Potrebbe essere necessario chiudere e riaprire Visual Studio per visualizzare la finestra di dialogo di consenso dell'aggiornamento nella finestra di dialogo Prerequisiti.  
   
 5. Fare clic su **OK**.  
   
-## <a name="creating-and-testing-the-setup-program"></a>Creare e testare il programma di installazione  
- Dopo aver impostato l'applicazione di fornire il consenso di aggiornamento come prerequisito, è possibile generare il programma di installazione e il programma di avvio automatico per l'applicazione.  
+## <a name="creating-and-testing-the-setup-program"></a>Creazione e test del programma di installazione  
+ Dopo aver impostato l'applicazione di consenso dell'aggiornamento come prerequisito, è possibile generare il programma di installazione e il programma di avvio automatico per l'applicazione.  
   
-#### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Per creare e testare il programma di installazione, non fare clic su accetto  
+#### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Per creare e testare il programma di installazione facendo clic su Accetto  
   
-1. Nelle **Esplora soluzioni**, fare clic sul nome dell'applicazione che si desidera distribuire.  
+1. In **Esplora soluzioni**fare clic sul nome dell'applicazione che si desidera distribuire.  
   
-2. Scegliere **Proprietà** *Nome progetto* dal menu **Progetto**.  
+2. Scegliere **Proprietà***Nome progetto dal menu * **Progetto**.  
   
-3. Fare clic sui **Publish** pagina e quindi fare clic su **pubblica**.  
+3. Fare clic sulla pagina **pubblica** , quindi fare clic su **pubblica ora**.  
   
-4. Se l'output di pubblicazione non viene aperto automaticamente, passare all'output della pubblicazione.  
+4. Se l'output di pubblicazione non viene aperto automaticamente, passare all'output di pubblicazione.  
   
 5. Eseguire il programma Setup.exe.  
   
-     Il programma di installazione viene illustrato il contratto di licenza della finestra di consenso di aggiornamento software.  
+     Il programma di installazione Visualizza il contratto di licenza software per la finestra di dialogo di autorizzazione aggiornamenti.  
   
-6. Leggere il contratto di licenza software e quindi fare clic su **Accept**.  
+6. Leggere il contratto di licenza software, quindi fare clic su **Accetto**.  
   
-     L'applicazione di aggiornamento finestra di dialogo di consenso viene visualizzata e Mostra il testo seguente: L'applicazione che sta tentando di installare i controlli per gli aggiornamenti più recenti sul Web. Facendo clic su accetto, si autorizza l'applicazione per cercare gli aggiornamenti automaticamente su Internet.  
+     Viene visualizzata l'applicazione finestra di dialogo consenso aggiornamento con il testo seguente: l'applicazione da installare controlla gli aggiornamenti più recenti sul Web. Facendo clic su Accetto, si autorizza l'applicazione a verificare la disponibilità di aggiornamenti automaticamente in Internet.  
   
 7. Chiudere l'applicazione o fare clic su Annulla.  
   
-     L'applicazione viene visualizzato un errore: Si è verificato un errore durante l'installazione dei componenti di sistema per *ApplicationName*. Impossibile continuare fino a quando tutti i componenti di sistema sono stati installati correttamente.  
+     Nell'applicazione viene visualizzato un errore: si è verificato un errore durante l'installazione dei componenti di sistema per *ApplicationName*. Impossibile continuare l'installazione fino a quando tutti i componenti di sistema non sono stati installati correttamente.  
   
-8. Fare clic su Dettagli per visualizzare il messaggio di errore seguente: Finestra di dialogo aggiornamento fornire il consenso del componente non è riuscita per l'installazione con il messaggio di errore seguente: "Il contratto per l'aggiornamento automatico non è accettato". Impossibile installare i componenti seguenti:-finestra di dialogo di consenso Update  
+8. Fare clic su dettagli per visualizzare il messaggio di errore seguente: Impossibile installare la finestra di dialogo di consenso aggiornamento componenti con il seguente messaggio di errore: "il contratto di aggiornamento automatico non è accettato". Impossibile installare i componenti seguenti: finestra di dialogo di consenso per l'aggiornamento  
   
-9. Fare clic su **Chiudi**.  
+9. Fare clic su **Close**.  
   
-#### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>Per creare e testare il programma di installazione, fare clic su accetto  
+#### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>Per creare e testare il programma di installazione facendo clic su Accetto  
   
-1. Nelle **Esplora soluzioni**, fare clic sul nome dell'applicazione che si desidera distribuire.  
+1. In **Esplora soluzioni**fare clic sul nome dell'applicazione che si desidera distribuire.  
   
-2. Scegliere **Proprietà** *Nome progetto* dal menu **Progetto**.  
+2. Scegliere **Proprietà***Nome progetto dal menu * **Progetto**.  
   
-3. Fare clic sui **Publish** pagina e quindi fare clic su **pubblica**.  
+3. Fare clic sulla pagina **pubblica** , quindi fare clic su **pubblica ora**.  
   
-4. Se l'output di pubblicazione non viene aperto automaticamente, passare all'output della pubblicazione.  
+4. Se l'output di pubblicazione non viene aperto automaticamente, passare all'output di pubblicazione.  
   
 5. Eseguire il programma Setup.exe.  
   
-     Il programma di installazione viene illustrato il contratto di licenza della finestra di consenso di aggiornamento software.  
+     Il programma di installazione Visualizza il contratto di licenza software per la finestra di dialogo di autorizzazione aggiornamenti.  
   
-6. Leggere il contratto di licenza software e quindi fare clic su **Accept**.  
+6. Leggere il contratto di licenza software, quindi fare clic su **Accetto**.  
   
-     L'applicazione di aggiornamento finestra di dialogo di consenso viene visualizzata e Mostra il testo seguente: L'applicazione che sta tentando di installare i controlli per gli aggiornamenti più recenti sul Web. Facendo clic su accetto, si autorizza l'applicazione per cercare gli aggiornamenti automaticamente su Internet.  
+     Viene visualizzata l'applicazione finestra di dialogo consenso aggiornamento con il testo seguente: l'applicazione da installare controlla gli aggiornamenti più recenti sul Web. Facendo clic su Accetto, si autorizza l'applicazione a verificare la disponibilità di aggiornamenti automaticamente in Internet.  
   
-7. Fare clic su **accetto**, quindi fare clic su **procedi**.  
+7. Fare clic su **Accetto**e quindi su **continua**.  
   
-     Avvio dell'applicazione per l'installazione.  
+     Viene avviata l'installazione dell'applicazione.  
   
-8. Se viene visualizzata la finestra di dialogo Installazione applicazioni, fare clic su **installare**.  
+8. Se viene visualizzata la finestra di dialogo installazione applicazione, fare clic su **Installa**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Prerequisiti per la distribuzione dell'applicazione](../deployment/application-deployment-prerequisites.md)   
  [Creazione di pacchetti del programma di avvio automatico](../deployment/creating-bootstrapper-packages.md)   
- [Procedura: Creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md)   
- [Procedura: Creare un manifesto di pacchetto](../deployment/how-to-create-a-package-manifest.md)   
+ [Procedura: creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md)   
+ [Procedura: creare un manifesto del pacchetto](../deployment/how-to-create-a-package-manifest.md)   
  [Riferimenti dello schema di prodotti e package](../deployment/product-and-package-schema-reference.md)

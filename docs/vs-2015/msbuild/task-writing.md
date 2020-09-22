@@ -14,16 +14,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445395"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839623"
 ---
 # <a name="task-writing"></a>Scrittura di attività
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Le attività sono contenute nelle destinazioni. In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] è inclusa una raccolta di attività tipiche ed è anche possibile creare le proprie attività. Per altre informazioni sulla raccolta di attività inclusa in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], vedere il [riferimento alle attività](../msbuild/msbuild-task-reference.md).  
+Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Le attività sono contenute nelle destinazioni. In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] è inclusa una raccolta di attività tipiche ed è anche possibile creare le proprie attività. Per ulteriori informazioni sulla libreria di attività incluse in [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] , vedere [riferimento alle attività](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="tasks"></a>Attività  
  Alcuni esempi di attività sono [Copy](../msbuild/copy-task.md), per eseguire la copia di uno o più file, [MakeDir](../msbuild/makedir-task.md), per creare una directory e [Csc](../msbuild/csc-task.md), per compilare i file di codice sorgente di [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Ogni attività viene implementata come classe .NET che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>, definita nell'assembly Microsoft.Build.Framework.dll.  
@@ -100,7 +100,7 @@ namespace MyTasks
 ```  
   
 ## <a name="registering-tasks"></a>Registrazione di attività  
- Se un progetto sta per eseguire un'attività, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] deve sapere come individuare l'assembly che contiene la classe dell'attività. Le attività vengono registrate usando l'[elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
+ Se un progetto sta per eseguire un'attività, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] deve sapere come individuare l'assembly che contiene la classe dell'attività. Le attività vengono registrate usando l' [elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
   
  Il file Microsoft.Common.Tasks di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] è un file di progetto contenente un elenco di elementi `UsingTask` che registrano tutte le attività disponibili con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Questo file è incluso automaticamente durante la compilazione di ogni progetto. Se un'attività registrata in Microsoft,Common.Tasks è registrata anche nel file di progetto corrente, il file di progetto corrente ha la precedenza, ovvero è possibile sostituire un'attività predefinita con un'attività personalizzata con lo stesso nome.  
   
@@ -162,7 +162,7 @@ public string RequiredProperty
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>Description  
+### <a name="description"></a>Descrizione  
  La seguente classe di [!INCLUDE[csprcs](../includes/csprcs-md.md)] rappresenta un'attività derivata dalla classe helper <xref:Microsoft.Build.Utilities.Task>. L'attività restituisce `true`, che indica che ha avuto esito positivo.  
   
 ### <a name="code"></a>Codice  
@@ -186,7 +186,7 @@ namespace SimpleTask1
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>Description  
+### <a name="description"></a>Descrizione  
  La seguente classe di [!INCLUDE[csprcs](../includes/csprcs-md.md)] rappresenta un'attività che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. L'attività restituisce `true`, che indica che ha avuto esito positivo.  
   
 ### <a name="code"></a>Codice  
@@ -244,7 +244,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>Description  
+### <a name="description"></a>Descrizione  
  Questa classe di [!INCLUDE[csprcs](../includes/csprcs-md.md)] rappresenta un'attività derivata dalla classe helper <xref:Microsoft.Build.Utilities.Task>. Ha una proprietà stringa obbligatoria e genera un evento che viene visualizzato da tutti i logger registrati.  
   
 ### <a name="code"></a>Codice  
@@ -252,7 +252,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>Esempio  
   
-### <a name="description"></a>Description  
+### <a name="description"></a>Descrizione  
  L'esempio seguente illustra un file di progetto che richiama l'attività dell'esempio precedente, SimpleTask3.  
   
 ### <a name="code"></a>Codice  
@@ -269,5 +269,5 @@ namespace SimpleTask2
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)   
- [Riferimento alle attività](../msbuild/msbuild-task-reference.md)
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)   
+ [Riferimento attività](../msbuild/msbuild-task-reference.md)

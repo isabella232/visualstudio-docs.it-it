@@ -1,5 +1,5 @@
 ---
-title: "Errore: Errore durante l'accesso remoto del gruppo di lavoro | Microsoft Docs"
+title: 'Errore: accesso remoto al gruppo di lavoro non riuscito | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 09f018982b81535ae23eafe7158aa88c0b6b08a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438341"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839575"
 ---
-# <a name="error-workgroup-remote-logon-failure"></a>Errore: Accesso remoto al gruppo di lavoro non riuscito
+# <a name="error-workgroup-remote-logon-failure"></a>Errore: accesso remoto al gruppo di lavoro non riuscito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il testo del messaggio di errore è il seguente:  
@@ -39,7 +39,7 @@ Il testo del messaggio di errore è il seguente:
   
  **Causa**  
   
- Questo errore può verificarsi quando si esegue il debug da un computer che fa parte di un gruppo di lavoro e si tenta di stabilire la connessione a un computer remoto. Fra le cause possibili vi sono le seguenti:  
+ Questo errore può verificarsi quando si esegue il debug da un computer che fa parte di un gruppo di lavoro e si tenta di stabilire la connessione a un computer remoto. Le cause possibili sono:  
   
 - Nel computer remoto non esiste un account con il nome e la password specificati.  
   
@@ -76,12 +76,12 @@ Il testo del messaggio di errore è il seguente:
   
 3. Fare clic su **Opzioni di sicurezza**.  
   
-4. Nel **criterio** colonna, fare doppio clic su **accesso alla rete: Modello di condivisione e sicurezza per gli account locali**.  
+4. Nella colonna **Criteri** fare doppio clic su **Accesso di rete: modello di condivisione e sicurezza per gli account locali**.  
   
-5. Nel **accesso alla rete: Modello di condivisione e sicurezza per gli account locali** finestra di dialogo, modificare il valore per **classico: gli utenti locali autenticarsi con il proprio** e fare clic sui **applica** pulsante.  
+5. Nella finestra di dialogo **Accesso di rete: modello di condivisione e sicurezza per gli account locali** modificare l'impostazione in **Classico: gli utenti locali effettuano l'autenticazione come se stessi**, quindi scegliere il pulsante **Applica**.  
   
-     ![Le opzioni di sicurezza dei criteri di sicurezza locali](../debugger/media/dbg-err-localsecuritypolicy-securityoptions-networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
+     ![Opzioni di sicurezza criteri di sicurezza locali](../debugger/media/dbg-err-localsecuritypolicy-securityoptions-networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
   
 ## <a name="see-also"></a>Vedere anche  
- [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+ [Errori e risoluzione dei problemi di debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Debug remoto](../debugger/remote-debugging.md)

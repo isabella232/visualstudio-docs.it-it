@@ -11,33 +11,33 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6e81a95cffebc9e26821b9cc6157627100343452
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383372"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839748"
 ---
 # <a name="debug-engine"></a>Motore di debug
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Un motore di debug (DE) funziona con l'interprete o sistema operativo per fornire servizi di debug, ad esempio valutazione dell'espressione di controllo e i punti di interruzione esecuzione. La Germania è responsabile per il monitoraggio dello stato di un programma in fase di debug. A tale scopo, la Germania utilizza qualsiasi metodo è disponibili per il processo del runtime supportati, sia dalla CPU o dalle API fornita dal runtime.  
+Un motore di debug (DE) funziona con l'interprete o il sistema operativo per fornire servizi di debug, ad esempio il controllo dell'esecuzione, i punti di interruzione e la valutazione delle espressioni. Il DE è responsabile del monitoraggio dello stato di un programma di cui è in corso il debug. A tale scopo, il DE usa qualsiasi metodo disponibile nel runtime supportato, sia dalla CPU che dalle API fornite dal runtime.  
   
- Ad esempio, common language runtime (CLR) fornisce meccanismi per monitorare un programma in esecuzione tramite le interfacce ICorDebugXXX. Un CRI che supporta Common Language Runtime Usa le interfacce appropriate ICorDebugXXX per tenere traccia di un programma di codice gestito in fase di debug. Comunica quindi tutte le modifiche dello stato per la gestione di debug di sessione (SDM), che inoltra tali informazioni per il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
+ Il Common Language Runtime (CLR), ad esempio, fornisce meccanismi per il monitoraggio di un programma in esecuzione tramite le interfacce ICorDebugXXX. Un DE che supporta CLR usa le interfacce ICorDebugXXX appropriate per tenere traccia di un programma di codice gestito di cui è in corso il debug. Comunica quindi qualsiasi modifica dello stato al gestore di debug della sessione (SDM), che li trasmette all' [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
   
 > [!NOTE]
-> Un motore di debug destinato a una specifica del runtime, vale a dire, il sistema in cui il programma in fase di debug viene eseguito. CLR è il runtime per il codice gestito e il runtime di Win32 è per le applicazioni Windows native. Se la lingua è creare può avere come destinazione uno di questi due runtime, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornisce già i motori di debug necessari. Tutto ciò che devi implementare è un analizzatore di espressioni.  
+> Un motore di debug è destinato a un runtime specifico, ovvero al sistema in cui viene eseguito il programma di cui è in corso il debug. CLR è il runtime per il codice gestito e il runtime Win32 è per le applicazioni Windows native. Se la lingua creata può essere destinata a uno di questi due runtime, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornisce già i motori di debug necessari. È necessario implementare solo un analizzatore di espressioni.  
   
 ## <a name="debug-engine-operation"></a>Operazione del motore di debug  
- I servizi di monitoraggio vengono implementati tramite le interfacce DE e possono causare il pacchetto di debug per la transizione tra diverse modalità operative. Per altre informazioni, vedere [modalità operative](../../extensibility/debugger/operational-modes.md). È in genere solo un'implementazione di DE per ogni ambiente run-time.  
+ I servizi di monitoraggio vengono implementati tramite le interfacce DE e possono causare la transizione del pacchetto di debug tra diverse modalità operative. Per ulteriori informazioni, vedere [modalità operative](../../extensibility/debugger/operational-modes.md). In genere esiste solo un'implementazione di DE per ogni ambiente di run-time.  
   
 > [!NOTE]
-> Anche se sono disponibili implementazioni separate di DE per Transact-SQL e [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)], VBScript e [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] condividono un singolo DE.  
+> Anche se sono presenti implementazioni di DE separate per Transact-SQL e [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] , VBScript e [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] condividono un solo de.  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Abilita debug motori per eseguire una delle due modalità di debug: entrambi nello stesso processo come il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] della shell o nello stesso processo come programma di destinazione in fase di debug. La seconda forma si verifica in genere quando il processo sottoposto a debug è effettivamente uno script in esecuzione con un interprete e il motore di debug deve avere una conoscenza approfondita dell'interprete per monitorare lo script. Si noti che in questo caso, l'interprete è effettivamente una fase di esecuzione. motori di debug sono per le implementazioni di specifica del runtime. Implementazione di un singolo DE, inoltre, può essere suddivise tra i limiti di processo e del computer (ad esempio, il debug remoto).  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] il debug consente ai motori di debug di eseguire uno dei due modi seguenti: nello stesso processo della [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Shell o nello stesso processo del programma di destinazione di cui è in corso il debug. Il secondo formato si verifica in genere quando il processo di cui è in corso il debug è in realtà uno script in esecuzione in un interprete e il motore di debug deve avere una conoscenza approfondita dell'interprete per monitorare lo script. Si noti che in questo caso l'interprete è in realtà un Runtime; i motori di debug sono per implementazioni specifiche del runtime. Inoltre, l'implementazione di un singolo DE può essere suddivisa tra i limiti del processo e del computer, ad esempio il debug remoto.  
   
- L'oggetto espone DE il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interfacce di debug. Tutte le comunicazioni sono tramite COM. Se la Germania viene caricato in-process, out-of-process o in un altro computer, non influisce sulle comunicazioni di componente.  
+ Il DE espone le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interfacce di debug. Tutte le comunicazioni vengono comunicate tramite COM. Se il valore DE viene caricato in-process, out-of-process o in un altro computer, non influisce sulla comunicazione dei componenti.  
   
- La Germania funziona con un componente dell'analizzatore di espressioni per abilitare il DE quel determinato in fase di esecuzione comprendere la sintassi delle espressioni. La Germania funziona anche con un componente gestore di simboli per accedere alle informazioni di debug sui simboli generate dal compilatore del linguaggio. Per altre informazioni, vedere [analizzatore di espressioni](../../extensibility/debugger/expression-evaluator.md) e [Provider di simboli](../../extensibility/debugger/symbol-provider.md).  
+ Il DE funziona con un componente dell'analizzatore di espressioni per abilitare il DE per quel particolare Runtime per comprendere la sintassi delle espressioni. Il DE funziona anche con un componente del gestore di simboli per accedere alle informazioni di debug simboliche generate dal compilatore di linguaggio. Per ulteriori informazioni, vedere l' [analizzatore di espressioni](../../extensibility/debugger/expression-evaluator.md) e il [provider di simboli](../../extensibility/debugger/symbol-provider.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Componenti del debugger](../../extensibility/debugger/debugger-components.md)   

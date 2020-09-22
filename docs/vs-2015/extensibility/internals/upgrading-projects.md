@@ -13,47 +13,47 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8e838cb02aa1a620356f96d9e77f1752797ac409
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441245"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839396"
 ---
 # <a name="upgrading-projects"></a>Aggiornamento dei progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Modifiche al modello di progetto da una versione di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] alla successiva potrebbe essere necessario aggiornare i progetti e soluzioni in modo che eseguano la versione più recente. Il [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] fornisce interfacce che possono essere utilizzate per implementare il supporto di aggiornamento nei propri progetti.  
+Le modifiche apportate al modello di progetto da una versione di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] al successivo possono richiedere l'aggiornamento di progetti e soluzioni in modo che possano essere eseguiti nella versione più recente. [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]Fornisce interfacce che possono essere utilizzate per implementare il supporto dell'aggiornamento nei propri progetti.  
   
 ## <a name="upgrade-strategies"></a>Strategie di aggiornamento  
- Per supportare un aggiornamento, l'implementazione di sistema di progetto è necessario definire e implementare una strategia di aggiornamento. Per determinare la strategia, è possibile scegliere per il supporto side-by-side (SxS) backup, backup di copia o entrambi.  
+ Per supportare un aggiornamento, l'implementazione del sistema di progetto deve definire e implementare una strategia di aggiornamento. Per determinare la strategia, è possibile scegliere di supportare il backup affiancato (SxS), il backup di copia o entrambi.  
   
-- Backup SxS significa che un progetto copia solo i file che richiedono l'aggiornamento sul posto, aggiungendo un suffisso di nome file appropriato, ad esempio, "old".  
+- Il backup SxS significa che un progetto copia solo i file che richiedono l'aggiornamento sul posto, aggiungendo un suffisso di nome file appropriato, ad esempio ". old".  
   
-- Backup di copia indica che un progetto copia tutti gli elementi di progetto in un percorso di backup fornito dall'utente. Quindi vengono aggiornati i file presenti nel percorso progetto originale.  
+- Copia backup significa che un progetto copia tutti gli elementi del progetto in un percorso di backup fornito dall'utente. Vengono quindi aggiornati i file rilevanti nel percorso del progetto originale.  
   
-## <a name="how-upgrade-works"></a>Come funziona l'aggiornamento  
- Quando una soluzione creata in una versione precedente di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] viene aperto in una versione più recente, i controlli di IDE la soluzione di file per determinare se deve essere aggiornato. Se l'aggiornamento è obbligatorio, il **aggiornamento guidato** viene avviato automaticamente per guidare l'utente attraverso il processo di aggiornamento.  
+## <a name="how-upgrade-works"></a>Funzionamento dell'aggiornamento  
+ Quando una soluzione creata in una versione precedente di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] viene aperta in una versione più recente, l'IDE controlla il file della soluzione per determinare se è necessario aggiornarlo. Se è richiesto l'aggiornamento, l' **aggiornamento guidato** viene avviato automaticamente per esaminare l'utente durante il processo di aggiornamento.  
   
- Quando una soluzione richiede l'aggiornamento, viene eseguita una query ogni factory di progetto per la propria strategia di aggiornamento. La strategia determina se la factory del progetto supporta il backup di copia o SxS. Le informazioni vengono inviate per il **aggiornamento guidato**, che raccoglie le informazioni necessarie per il backup e presenta le opzioni applicabili all'utente.  
+ Quando è necessario aggiornare una soluzione, viene eseguita una query su ogni factory del progetto per la strategia di aggiornamento. La strategia determina se la factory del progetto supporta il backup di copia o di SxS. Le informazioni vengono inviate all' **aggiornamento guidato**, che raccoglie le informazioni necessarie per il backup e presenta le opzioni applicabili all'utente.  
   
-### <a name="multi-project-solutions"></a>Soluzioni multiprogetto  
- Se una soluzione contiene più progetti e le strategie di aggiornamento sono diversi, ad esempio quando un progetto C++ che supporta solo backup SxS e un progetto Web che supportano solo backup di copia, le factory di progetto devono negoziare la strategia di aggiornamento.  
+### <a name="multi-project-solutions"></a>Soluzioni per più progetti  
+ Se una soluzione contiene più progetti e le strategie di aggiornamento sono diverse, ad esempio quando un progetto C++ che supporta solo il backup SxS e un progetto Web che supporta solo il backup di copia, il progetto Factory deve negoziare la strategia di aggiornamento.  
   
- La soluzione esegue una query ogni factory di progetto per <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>. Chiama quindi <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly%2A> per verificare se i file di progetto globale è necessario l'aggiornamento e per determinare le strategie di aggiornamento supportate. Il **aggiornamento guidato** viene quindi richiamato.  
+ La soluzione esegue una query su ogni factory di progetto per <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> . Chiama quindi <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly%2A> per verificare se i file di progetto globali necessitano dell'aggiornamento e per determinare le strategie di aggiornamento supportate. Viene quindi richiamato l' **aggiornamento guidato** .  
   
- Dopo che l'utente ha completato la procedura guidata, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> viene chiamato su ogni factory di progetto per eseguire l'aggiornamento effettivo. Per facilitare il backup, i metodi IVsProjectUpgradeViaFactory forniscono il <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> servizio per registrare i dettagli del processo di aggiornamento. Questo servizio non può essere memorizzato nella cache.  
+ Dopo che l'utente ha completato la procedura guidata, <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> viene chiamato su ogni factory del progetto per eseguire l'aggiornamento effettivo. Per facilitare il backup, i metodi IVsProjectUpgradeViaFactory forniscono il <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> servizio per registrare i dettagli del processo di aggiornamento. Questo servizio non può essere memorizzato nella cache.  
   
- Dopo aver aggiornato tutti i file globali pertinenti, ogni factory di progetto è possibile scegliere di creare un'istanza di un progetto. L'implementazione di progetto deve supportare <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> viene quindi chiamato il metodo per eseguire l'aggiornamento di tutti gli elementi di progetto pertinenti.  
+ Dopo l'aggiornamento di tutti i file globali rilevanti, ogni factory del progetto può scegliere di creare un'istanza di un progetto. L'implementazione del progetto deve supportare <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> . <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>Viene quindi chiamato il metodo per aggiornare tutti gli elementi di progetto pertinenti.  
   
 > [!NOTE]
-> Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> (metodo) non è incluso il servizio SVsUpgradeLogger. Questo servizio può essere ottenuto chiamando <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
+> Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> metodo non fornisce il servizio SVsUpgradeLogger. Questo servizio può essere ottenuto chiamando <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> .  
   
-## <a name="best-practices"></a>Suggerimenti  
- Usare il <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> servizio per verificare se è possibile modificare un file prima di modificarlo e possibile salvare il file prima di salvarlo. Ciò consentirà il backup e aggiornamento implementazioni consentono di gestire i file di progetto in controllo del codice sorgente, i file con autorizzazioni insufficienti e così via.  
+## <a name="best-practices"></a>Procedure consigliate  
+ Usare il <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> servizio per verificare se è possibile modificare un file prima di modificarlo e salvarlo prima di salvarlo. Ciò consentirà alle implementazioni di backup e di aggiornamento di gestire i file di progetto nel controllo del codice sorgente, i file con autorizzazioni insufficienti e così via.  
   
- Usare il <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> durante tutte le fasi del backup del servizio e di aggiornamento per fornire informazioni sull'esito positivo o negativo del processo di aggiornamento.  
+ Utilizzare il <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> servizio durante tutte le fasi di backup e aggiornamento per fornire informazioni sull'esito positivo o negativo del processo di aggiornamento.  
   
- Per altre informazioni sul backup e l'aggiornamento di progetti, vedere i commenti per IVsProjectUpgrade in vsshell2.idl.  
+ Per ulteriori informazioni sul backup e sull'aggiornamento dei progetti, vedere i commenti per IVsProjectUpgrade in vsshell2. idl.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Progetti](../../extensibility/internals/projects.md)   

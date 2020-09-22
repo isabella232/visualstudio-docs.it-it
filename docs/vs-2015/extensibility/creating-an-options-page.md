@@ -11,36 +11,36 @@ caps.latest.revision: 63
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7b5897f6c4463cc5a3c7928a722ed5a0a09e42b3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430583"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839924"
 ---
 # <a name="creating-an-options-page"></a>Creazione di una pagina di opzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Questa procedura dettagliata crea una pagina di strumenti/opzioni semplice che utilizza una griglia delle proprietà per esaminare e impostare le proprietà.  
+In questa procedura dettagliata viene creata una semplice pagina strumenti/opzioni che utilizza una griglia delle proprietà per esaminare e impostare le proprietà.  
   
- Per salvare queste proprietà a e il ripristino da un file di impostazioni, seguire questa procedura e quindi [Creating a Settings Category](../extensibility/creating-a-settings-category.md).  
+ Per salvare queste proprietà e ripristinarle da un file di impostazioni, seguire questa procedura e quindi vedere [creazione di una categoria di impostazioni](../extensibility/creating-a-settings-category.md).  
   
- MPF fornisce due classi per la creazione di pagine Opzioni del menu Strumenti, il <xref:Microsoft.VisualStudio.Shell.Package> classi e <xref:Microsoft.VisualStudio.Shell.DialogPage> classe. Si crea un pacchetto VSPackage per fornire un contenitore per queste pagine tramite sottoclassi di classe del pacchetto. Si crea ogni pagina di opzioni degli strumenti mediante la derivazione dalla classe DialogPage.  
+ MPF fornisce due classi per facilitare la creazione di pagine di opzioni degli strumenti, la <xref:Microsoft.VisualStudio.Shell.Package> classe e la <xref:Microsoft.VisualStudio.Shell.DialogPage> classe. Si crea un pacchetto VSPackage per fornire un contenitore per queste pagine creando una sottoclasse della classe del pacchetto. Per creare ogni pagina di opzioni degli strumenti, derivare dalla classe DialogPage.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
- A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area download. Viene inclusa come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare Visual Studio SDK in un secondo momento. Per ulteriori informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-tools-options-grid-page"></a>Creazione di una pagina di griglia di opzioni degli strumenti  
- In questa sezione è creare una griglia delle proprietà di semplice opzioni del menu Strumenti. Utilizzare questa griglia per visualizzare e modificare il valore di una proprietà.  
+## <a name="creating-a-tools-options-grid-page"></a>Creazione di una pagina della griglia opzioni strumenti  
+ In questa sezione viene creata una semplice griglia delle proprietà Opzioni strumenti. Utilizzare questa griglia per visualizzare e modificare il valore di una proprietà.  
   
 #### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>Per creare il progetto VSIX e aggiungere un pacchetto VSPackage  
   
-1. Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX che contiene gli asset di estensione. Creare un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto VSIX denominato `MyToolsOptionsExtension`. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** nella finestra di dialogo **Visual c# / Extensibility**.  
+1. Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX che conterrà gli asset di estensione. Creare un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto VSIX denominato `MyToolsOptionsExtension` . Il modello di progetto VSIX è reperibile nella finestra di dialogo **nuovo progetto** in **Visual C#/extensibility**.  
   
-2. Aggiungere un pacchetto VSPackage mediante l'aggiunta di un modello di elemento di pacchetto di Visual Studio denominato `MyToolsOptionsPackage`. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Aggiungi / nuovo elemento**. Nel **finestra di dialogo Aggiungi nuovo elemento**, passare a **elementi di Visual c# / Extensibility** e selezionare **pacchetto di Visual Studio**. Nel **Name** campo nella parte inferiore della finestra di dialogo, modificare il nome del file per `MyToolsOptionsPackage.cs`. Per altre informazioni su come creare un pacchetto VSPackage, vedere [creazione di un'estensione con un pacchetto VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
+2. Aggiungere un pacchetto VSPackage aggiungendo un modello di elemento del pacchetto di Visual Studio denominato `MyToolsOptionsPackage` . Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi/nuovo elemento**. Nella **finestra di dialogo Aggiungi nuovo elemento**passare a **elementi/estensibilità di Visual C#** e selezionare **pacchetto di Visual Studio**. Nel campo **nome** nella parte inferiore della finestra di dialogo modificare il nome del file in `MyToolsOptionsPackage.cs` . Per altre informazioni su come creare un pacchetto VSPackage, vedere [creazione di un'estensione con un pacchetto VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
   
-#### <a name="to-create-the-tools-options-property-grid"></a>Per creare la griglia delle proprietà di opzioni del menu Strumenti  
+#### <a name="to-create-the-tools-options-property-grid"></a>Per creare la griglia delle proprietà Opzioni strumenti  
   
-1. Aprire il file MyToolsOptionsPackage nell'editor del codice.  
+1. Aprire il file MyToolsOptionsPackage nell'editor di codice.  
   
 2. Aggiungere la seguente istruzione using.  
   
@@ -48,14 +48,14 @@ Questa procedura dettagliata crea una pagina di strumenti/opzioni semplice che u
     using System.ComponentModel;  
     ```  
   
-3. Dichiarare una classe OptionPageGrid eccezione e derivarla dalla <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+3. Dichiarare una classe OptionPageGrid e derivarla da <xref:Microsoft.VisualStudio.Shell.DialogPage> .  
   
     ```csharp  
     public class OptionPageGrid : DialogPage  
     {  }  
     ```  
   
-4. Applicare un <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> alla classe VSPackage per assegnare una categoria di opzioni e il nome di pagina Opzioni per il OptionPageGrid alla classe. Il risultato dovrebbe essere simile al seguente:  
+4. Applicare un oggetto <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> alla classe VSPackage per assegnare alla classe una categoria di opzioni e il nome della pagina di opzioni per OptionPageGrid. Il risultato dovrebbe essere simile al seguente:  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -67,13 +67,13 @@ Questa procedura dettagliata crea una pagina di strumenti/opzioni semplice che u
     public sealed class MyToolsOptionsPackage : Package  
     ```  
   
-5. Aggiungere un `OptionInteger` proprietà per il `OptionPageGrid` classe.  
+5. Aggiungere una `OptionInteger` proprietà alla `OptionPageGrid` classe.  
   
-    - Applicare un <xref:System.ComponentModel.CategoryAttribute?displayProperty=fullName> da assegnare alla proprietà di una categoria di griglia di proprietà.  
+    - Applicare un oggetto <xref:System.ComponentModel.CategoryAttribute?displayProperty=fullName> per assegnare alla proprietà una categoria della griglia delle proprietà.  
   
-    - Applicare un <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> assegnare alla proprietà un nome.  
+    - Applicare un oggetto <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> per assegnare alla proprietà un nome.  
   
-    - Applicare un <xref:System.ComponentModel.DescriptionAttribute?displayProperty=fullName> da assegnare alla proprietà di una descrizione.  
+    - Applicare un oggetto <xref:System.ComponentModel.DescriptionAttribute?displayProperty=fullName> per assegnare alla proprietà una descrizione.  
   
     ```csharp  
     public class OptionPageGrid : DialogPage  
@@ -92,20 +92,20 @@ Questa procedura dettagliata crea una pagina di strumenti/opzioni semplice che u
     ```  
   
     > [!NOTE]
-    > L'implementazione predefinita di <xref:Microsoft.VisualStudio.Shell.DialogPage> supporta le proprietà che dispongono di convertitori appropriati o che sono strutture o matrici che possono essere espansi all'interno delle proprietà che dispongono di convertitori appropriati. Per un elenco dei convertitori di tipi, vedere il <xref:System.ComponentModel> dello spazio dei nomi.  
+    > L'implementazione predefinita di <xref:Microsoft.VisualStudio.Shell.DialogPage> supporta proprietà con convertitori appropriati o strutture o matrici che possono essere espanse in proprietà con convertitori appropriati. Per un elenco dei convertitori, vedere lo <xref:System.ComponentModel> spazio dei nomi.  
   
 6. Compilare il progetto e avviare il debug.  
   
-7. Nell'istanza sperimentale di Visual Studio, sul **degli strumenti** menu fare clic su **opzioni**.  
+7. Nell'istanza sperimentale di Visual Studio scegliere **Opzioni**dal menu **strumenti** .  
   
-     Nel riquadro di sinistra dovrebbe **My Category**. (Opzioni categorie sono elencate in ordine alfabetico, pertanto dovrebbe essere presente sulla metà l'elenco a discesa.) Aprire **My Category** e quindi fare clic su **My pagina della griglia**. Nel riquadro di destra viene visualizzata la griglia di opzioni. La categoria della proprietà viene **My Options**, e il nome della proprietà viene **My opzione Integer**. La descrizione della proprietà, **l'opzione integer**, viene visualizzato nella parte inferiore del riquadro. Modificare il valore dal valore iniziale pari a 256 per qualcos'altro. Fare clic su **OK**e quindi riaprire **My pagina della griglia**. È possibile vedere che il nuovo valore viene mantenuto.  
+     Nel riquadro sinistro dovrebbe essere visualizzata la **categoria**. (Le categorie di opzioni sono elencate in ordine alfabetico, quindi dovrebbero apparire a metà dell'elenco). Aprire **la categoria** e quindi fare clic sulla **pagina della griglia**. La griglia opzioni verrà visualizzata nel riquadro destro. La categoria proprietà è **My Options**e il nome della proprietà è l' **opzione Integer**. La descrizione della proprietà, l' **opzione Integer**, viene visualizzata nella parte inferiore del riquadro. Modificare il valore del valore iniziale 256 in un altro. Fare clic su **OK**e quindi riaprire **la pagina della griglia**. È possibile osservare che il nuovo valore è permanente.  
   
-     La pagina delle opzioni è disponibile anche tramite avvio veloce di Visual Studio. Nella finestra avvio veloce nell'angolo superiore destro dell'IDE, digitare **My Category** e verrà visualizzato **My Category -> pagina della griglia My** elencati nell'elenco a discesa.  
+     La pagina Opzioni è disponibile anche tramite avvio veloce di Visual Studio. Nella finestra avvio veloce nell'angolo in alto a destra dell'IDE, digitare **My Category** (categoria personale). nella pagina della griglia viene visualizzata la **categoria > pagina della griglia** elencata nell'elenco a discesa.  
   
-## <a name="creating-a-tools-options-custom-page"></a>Creazione di un oggetto personalizzato di opzioni degli strumenti pagina  
- In questa sezione è creare una pagina di opzioni degli strumenti con un'interfaccia utente personalizzata. Utilizzare questa pagina per visualizzare e modificare il valore di una proprietà.  
+## <a name="creating-a-tools-options-custom-page"></a>Creazione di una pagina personalizzata Opzioni strumenti  
+ In questa sezione viene creata una pagina di opzioni degli strumenti con un'interfaccia utente personalizzata. Usare questa pagina per visualizzare e modificare il valore di una proprietà.  
   
-1. Aprire il file MyToolsOptionsPackage nell'editor del codice.  
+1. Aprire il file MyToolsOptionsPackage nell'editor di codice.  
   
 2. Aggiungere la seguente istruzione using.  
   
@@ -113,7 +113,7 @@ Questa procedura dettagliata crea una pagina di strumenti/opzioni semplice che u
     using System.Windows.Forms;  
     ```  
   
-3. Aggiungere un `OptionPageCustom` classe, appena prima di `OptionPageGrid` classe. La nuova classe da derivare `DialogPage`.  
+3. Aggiungere una `OptionPageCustom` classe, immediatamente prima della `OptionPageGrid` classe. Derivare la nuova classe da `DialogPage` .  
   
     ```csharp  
     public class OptionPageCustom : DialogPage  
@@ -144,7 +144,7 @@ Questa procedura dettagliata crea una pagina di strumenti/opzioni semplice che u
     }  
     ```  
   
-5. Applicare un secondo <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> alla classe VSPackage. Questo attributo assegna la classe di una categoria di opzioni e il nome di pagina di opzioni.  
+5. Applicare un secondo <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> alla classe VSPackage. Questo attributo assegna alla classe una categoria di opzioni e il nome della pagina di opzioni.  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -158,13 +158,13 @@ Questa procedura dettagliata crea una pagina di strumenti/opzioni semplice che u
     public sealed class MyToolsOptionsPackage : Package  
     ```  
   
-6. Aggiungere un nuovo **controllo utente** denominato MyUserControl al progetto.  
+6. Aggiungere al progetto un nuovo **controllo utente** denominato UserControl.  
   
-7. Aggiungere un **casella di testo** nel controllo utente.  
+7. Aggiungere un controllo **TextBox** al controllo utente.  
   
-     Nel **proprietà** finestra, sulla barra degli strumenti fare clic sulla **eventi** pulsante e quindi fare doppio clic il **lasciare** evento. Il nuovo gestore eventi viene visualizzata nel codice MyUserControl.cs.  
+     Nella finestra **Proprietà** fare clic sul pulsante **eventi** sulla barra degli strumenti, quindi fare doppio clic sull'evento **Leave** . Il nuovo gestore eventi viene visualizzato nel codice MyUserControl.cs.  
   
-8. Aggiungere un pubblico `OptionsPage` campo, un `Initialize` metodo alla classe di controllo, e aggiornare il gestore eventi per impostare l'opzione valore per il contenuto della casella di testo:  
+8. Aggiungere un `OptionsPage` campo pubblico, un `Initialize` metodo alla classe del controllo e aggiornare il gestore eventi per impostare il valore dell'opzione sul contenuto della casella di testo:  
   
     ```csharp  
     public partial class MyUserControl : UserControl  
@@ -188,9 +188,9 @@ Questa procedura dettagliata crea una pagina di strumenti/opzioni semplice che u
     }  
     ```  
   
-     Il `optionsPage` campo contiene un riferimento all'elemento padre `OptionPageCustom` istanza. Il `Initialize` metodo consente di visualizzare `OptionString` nel **nella casella di testo**. Il gestore eventi scrive il valore corrente del **casella di testo** per il `OptionString` quando lo stato attivo lascia il **casella di testo**.  
+     Il `optionsPage` campo include un riferimento all'istanza padre `OptionPageCustom` . Il `Initialize` metodo viene visualizzato `OptionString` nella **casella di testo**. Il gestore eventi scrive il valore corrente della **casella di testo** in `OptionString` quando lo stato attivo esce dalla **casella di testo**.  
   
-9. Nel file di codice del pacchetto, aggiungere una sostituzione per il `OptionPageCustom.Window` proprietà alla classe OptionPageCustom per creare, inizializzare e restituire un'istanza di `MyUserControl`. La classe dovrebbe ora essere simile al seguente:  
+9. Nel file di codice del pacchetto, aggiungere una sostituzione per la `OptionPageCustom.Window` proprietà alla classe OptionPageCustom per creare, inizializzare e restituire un'istanza di `MyUserControl` . La classe dovrebbe ora essere simile alla seguente:  
   
     ```csharp  
     [Guid("00000000-0000-0000-0000-000000000000")]  
@@ -219,16 +219,16 @@ Questa procedura dettagliata crea una pagina di strumenti/opzioni semplice che u
   
 10. Compilare ed eseguire il progetto.  
   
-11. Nell'istanza sperimentale, fare clic su **Strumenti / opzioni**.  
+11. Nell'istanza sperimentale, fare clic su **Strumenti/Opzioni**.  
   
-12. Trovare **del nome della categoria** e quindi **My Custom pagina**.  
+12. Trovare **la categoria** e quindi **la pagina personalizzata**.  
   
-13. Modificare il valore della **OptionString**. Fare clic su **OK**e quindi riaprire **My Custom pagina**. È possibile vedere che il nuovo valore è resa persistente.  
+13. Modificare il valore di **OptionString**. Fare clic su **OK**e quindi riaprire **la pagina personalizzata**. È possibile osservare che il nuovo valore è stato reso permanente.  
   
 ## <a name="accessing-options"></a>Accesso alle opzioni  
- In questa sezione ottenere il valore di un'opzione dal pacchetto VSPackage che ospita la pagina di opzioni degli strumenti associata. La stessa tecnica è utilizzabile per ottenere il valore di qualsiasi proprietà pubblica.  
+ In questa sezione si ottiene il valore di un'opzione dal pacchetto VSPackage che ospita la pagina delle opzioni degli strumenti associati. La stessa tecnica può essere usata per ottenere il valore di qualsiasi proprietà pubblica.  
   
-1. Nel file di codice del pacchetto, aggiungere una proprietà pubblica denominata **OptionInteger** per il **MyToolsOptionsPackage** classe.  
+1. Nel file di codice del pacchetto aggiungere una proprietà pubblica denominata **OptionInteger** alla classe **MyToolsOptionsPackage** .  
   
     ```  
     public int OptionInteger  
@@ -242,11 +242,11 @@ Questa procedura dettagliata crea una pagina di strumenti/opzioni semplice che u
   
     ```  
   
-     Questo codice viene chiamato <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> per creare o recuperare un `OptionPageGrid` istanza. `OptionPageGrid` le chiamate <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> per caricare le relative opzioni, che sono proprietà pubbliche.  
+     Questo codice chiama <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> per creare o recuperare un' `OptionPageGrid` istanza di. `OptionPageGrid` chiama <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> per caricare le opzioni, che sono proprietà pubbliche.  
   
-2. A questo punto aggiungere un modello di elemento di comando personalizzato denominato **MyToolsOptionsCommand** per visualizzare il valore. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual c# / Extensibility** e selezionare **comando personalizzato**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome di file di comando da **MyToolsOptionsCommand.cs**.  
+2. A questo punto, aggiungere un modello di elemento di comando personalizzato denominato **MyToolsOptionsCommand** per visualizzare il valore. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a **Visual C#/extensibility** e selezionare **comando personalizzato**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in **MyToolsOptionsCommand.cs**.  
   
-3. Nel file MyToolsOptionsCommand, sostituire il corpo del comando `ShowMessageBox` metodo con il codice seguente:  
+3. Nel file MyToolsOptionsCommand sostituire il corpo del metodo del comando `ShowMessageBox` con il codice seguente:  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -259,9 +259,9 @@ Questa procedura dettagliata crea una pagina di strumenti/opzioni semplice che u
   
 4. Compilare il progetto e avviare il debug.  
   
-5. Nell'istanza sperimentale, sul **degli strumenti** menu, fare clic su **MyToolsOptionsCommand richiamare**.  
+5. Nell'istanza sperimentale, scegliere **richiama MyToolsOptionsCommand**dal menu **strumenti** .  
   
-     Una finestra di messaggio Visualizza il valore corrente di `OptionInteger`.  
+     In una finestra di messaggio viene visualizzato il valore corrente di `OptionInteger` .  
   
 ## <a name="see-also"></a>Vedere anche  
  [Opzioni e pagine di opzioni](../extensibility/internals/options-and-options-pages.md)

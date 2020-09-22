@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 979f79658834f9bdcf50f0af51597515eaab2991
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64814062"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839840"
 ---
-# <a name="idiasymbolgetthisadjust"></a>IDiaSymbol::get_thisAdjust
+# <a name="idiasymbolget_thisadjust"></a>IDiaSymbol::get_thisAdjust
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera l'operatore logico `this` DS per il metodo.  
+Recupera l'utilità `this` di regolazione logica per il metodo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,16 +35,16 @@ HRESULT get_thisAdjust ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce l'operatore logico `this` DS per il metodo.  
+ out Restituisce l'utilità `this` di regolazione logica per il metodo.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
- In alcuni casi ereditarietà più il metodo di stesso deve calcolare un vero e proprio `this` mediante l'aggiunta di un offset al valore `this`.  
+## <a name="remarks"></a>Commenti  
+ In alcuni casi di ereditarietà multipla il metodo stesso deve calcolare un `this` valore true aggiungendo un offset a `this` .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

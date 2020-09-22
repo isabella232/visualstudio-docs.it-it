@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9692e9de7a3551b437691c5ca089756d1e2d50a5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64800977"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839620"
 ---
-# <a name="idiasymbolgetlocalbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
+# <a name="idiasymbolget_localbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera l'ID del registro che contiene un puntatore di base per le variabili locali sullo stack. Utilizzare quando le [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su `SymTagFunction`.  
+Recupera l'ID del registro che include un puntatore di base alle variabili locali nello stack. Utilizzare quando l' [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su `SymTagFunction` .  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,20 +35,20 @@ HRESULT get_localBasePointerRegisterId ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce l'ID del registro che contiene un puntatore di base per le variabili locali sullo stack.  
+ out Restituisce l'ID del registro che include un puntatore di base alle variabili locali nello stack.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Osservazioni  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: DIA2.h  
+ Intestazione: dia2. h  
   
- Libreria: diaguids.lib  
+ Libreria: diaguids. lib  
   
  DLL: msdia100.dll  
   

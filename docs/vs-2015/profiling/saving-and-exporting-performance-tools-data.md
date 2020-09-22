@@ -12,18 +12,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3be6d5d732e5cbb2050c68ac8c7db722c3f709f2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428100"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839512"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Salvataggio ed esportazione dei dati degli strumenti per le prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo argomento descrive come salvare ed esportare i file di dati delle prestazioni.  
   
-## <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Procedura: salvare i file di dati delle prestazioni come file di report analizzato  
+## <a name="how-to-save-performance-data-files-as-analyzed-report-files"></a><a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Procedura: salvare i file di dati delle prestazioni come file di report analizzati  
  È possibile salvare le visualizzazioni filtrate o non filtrate dei file di dati di profilatura (estensione vsp) come file di report analizzato (estensione vsps). Un file di report analizzato può essere visualizzato nella finestra di visualizzazione report ed è notevolmente più piccolo del file con estensione vsp originale. Non è possibile tuttavia applicare un filtro ai dati di un file con estensione vsps. È possibile creare un file di report analizzato da Esplora prestazioni senza aprire il file nell'ambiente di sviluppo integrato (IDE) oppure è possibile aprire e filtrare il file con estensione vsp e quindi salvare i risultati.  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Per salvare un report di prestazioni analizzato da Esplora prestazioni  
@@ -38,7 +38,7 @@ Questo argomento descrive come salvare ed esportare i file di dati delle prestaz
   
 1. Aprire il file di dati di profilatura (con estensione vsp) nella finestra di Visualizzazione report.  
   
-2. (Facoltativo) Applicare un filtro ai dati. Per altre informazioni, vedere [Filtro delle visualizzazioni dei report di prestazioni](../profiling/performance-report-view-filter.md).  
+2. (Facoltativo) Applicare un filtro ai dati. Per ulteriori informazioni, vedere [filtro delle visualizzazioni dei report di prestazioni](../profiling/performance-report-view-filter.md).  
   
 3. Fare clic su **Salva dati analizzati** nella barra degli strumenti della finestra di visualizzazione report.  
   
@@ -64,17 +64,17 @@ Questo argomento descrive come salvare ed esportare i file di dati delle prestaz
   
 4. In **Percorso rapporto esportato**specificare la directory.  
   
-5. In **Formato del rapporto esportato**, selezionare (Delimitato da virgole) (*.csv) o Dati XML (\*.xml).  
+5. In **formato report esportato**selezionare (delimitato da virgole) (*. csv) o dati XML ( \* . Xml).  
   
-6. Fare clic su **Esporta**.  
+6. Fare clic su **esportare**.  
   
-     Ogni visualizzazione del report viene salvata in un file separato denominato \<prefisso>_\<nome visualizzazione report>.\<csv&#124;xml>  
+     Ogni visualizzazione del report viene salvata in un file separato denominato \<prefix> _ \<report view name> .\<csv&#124;xml>  
   
 #### <a name="to-export-performance-reports-from-the-report-view-window"></a>Per esportare i report di prestazioni dalla finestra di visualizzazione report  
   
 1. Aprire il file con estensione vsp nella finestra di visualizzazione report.  
   
-2. (Facoltativo) Applicare un filtro ai dati. Per altre informazioni, vedere [Filtro delle visualizzazioni dei report di prestazioni](../profiling/performance-report-view-filter.md).  
+2. (Facoltativo) Applicare un filtro ai dati. Per ulteriori informazioni, vedere [filtro delle visualizzazioni dei report di prestazioni](../profiling/performance-report-view-filter.md).  
   
 3. Fare clic su **Esporta report** nella barra degli strumenti della finestra di visualizzazione report.  
   
@@ -84,11 +84,11 @@ Questo argomento descrive come salvare ed esportare i file di dati delle prestaz
   
 6. In **Percorso rapporto esportato**specificare la directory.  
   
-7. In **Formato del rapporto esportato**, selezionare (Delimitato da virgole) (*.csv) o Dati XML (\*.xml).  
+7. In **formato report esportato**selezionare (delimitato da virgole) (*. csv) o dati XML ( \* . Xml).  
   
-8. Fare clic su **Esporta**.  
+8. Fare clic su **esportare**.  
   
-     Ogni visualizzazione del report viene salvata in un file separato denominato \<prefisso>_\<nome visualizzazione report>.\<csv&#124;xml>  
+     Ogni visualizzazione del report viene salvata in un file separato denominato \<prefix> _ \<report view name> .\<csv&#124;xml>  
   
 ## <a name="see-also"></a>Vedere anche  
  [Esplora prestazioni](../profiling/performance-explorer.md)   

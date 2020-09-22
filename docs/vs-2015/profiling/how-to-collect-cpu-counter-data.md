@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 76dac6e20cc85eeb5784b0b6e29ee8d1b23fbd92
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432805"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840023"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Procedura: Raccogliere i dati dei contatori CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Un contatore di eventi CPU viene usato per raccogliere i dati relativi alle pres
   
 - Raccogliere i dati da uno o più contatori quando si esegue la profilatura tramite strumentazione.  
   
-- Specificare un evento di contatore come intervallo di campionamento quando si esegue la profilatura mediante campionamento. Per altre informazioni, vedere [Procedura: Scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md).  
+- Specificare un evento di contatore come intervallo di campionamento quando si esegue la profilatura mediante campionamento. Per altre informazioni, vedere [procedura: scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md).  
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Per raccogliere i dati dei contatori di prestazioni CPU quando si esegue la profilatura tramite strumentazione  
   
@@ -66,7 +66,7 @@ Un contatore di eventi CPU viene usato per raccogliere i dati relativi alle pres
     > L'opzione **Contatori di prestazioni disponibili** è abilitata solo se si seleziona la casella di controllo **Raccogli contatori CPU**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)  (Configurazione di sessioni di prestazioni)  
+ [Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)   
  [Proprietà della sessione di prestazioni](../profiling/performance-session-properties.md)   
  [Contatori CPU e Windows](../profiling/cpu-and-windows-counters.md)   
  [Procedura: Scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md)

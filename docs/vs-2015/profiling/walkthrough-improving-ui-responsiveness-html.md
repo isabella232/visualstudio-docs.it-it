@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Miglioramento della velocità di risposta dell'interfaccia utente (HTML) | Microsoft Docs"
+title: "Procedura dettagliata: miglioramento della velocità di risposta dell'interfaccia utente (HTML) | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,29 +20,29 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433162"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839484"
 ---
-# <a name="walkthrough-improving-ui-responsiveness-html"></a>Procedura dettagliata: Miglioramento della velocità di risposta dell'interfaccia utente (HTML)
+# <a name="walkthrough-improving-ui-responsiveness-html"></a>Procedura dettagliata: Miglioramento della velocità di risposta dell'interfaccia utente (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questa procedura dettagliata descrive i passaggi per identificare e risolvere un problema di prestazioni tramite il [profiler della velocità di risposta interfaccia utente HTML](../profiling/html-ui-responsiveness.md). Il profiler è disponibile in Visual Studio per le app universali di Windows e le app di Windows Store con JavaScript. In questo scenario creerai un'app di test delle prestazioni che aggiorna gli elementi DOM troppo frequentemente e userai il profiler per identificare e risolvere il problema.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Creazione ed esecuzione dell'app di test delle prestazioni  
   
-1. In Visual Studio creare un nuovo progetto JavaScript universale di Windows. Selezionare **File / Nuovo / Progetto**. Scegliere **JavaScript** nel riquadro sinistro, quindi scegliere **Windows**, **Windows 10** e infine **Universale** o **Windows Phone**.  
+1. In Visual Studio creare un nuovo progetto JavaScript universale di Windows. Selezionare **file/nuovo/progetto**. Scegliere **JavaScript** nel riquadro sinistro, quindi scegliere **Windows**, **Windows 10** e infine **Universale** o **Windows Phone**.  
   
 2. > [!IMPORTANT]
     > I risultati diagnostici illustrati in questo argomento sono relativi a un'app Windows 8.  
   
 3. Scegliere uno dei modelli di progetto vuoti nel riquadro centrale, ad esempio **Applicazione vuota**.  
   
-4. Nella casella **Nome** specificare un nome come `JS_Perf_Tester`, quindi scegliere **OK**.  
+4. Nella casella **Nome** specifica un nome come `JS_Perf_Tester`, quindi scegli **OK**.  
   
-5. In **Esplora soluzioni** aprire il file default.html e incollare il codice seguente tra i tag \<body>:  
+5. In **Esplora soluzioni**aprire default.html e incollare il codice seguente tra i \<body> Tag:  
   
     ```html  
     <div class="wrapper">  
@@ -150,13 +150,13 @@ Questa procedura dettagliata descrive i passaggi per identificare e risolvere un
   
 8. Premere il tasto F5 per avviare il debug. Verificare che il pulsante **In attesa di valori** sia presente nella pagina.  
   
-9. Scegliere **In attesa di valori** e verificare che il testo e il colore del pulsante si aggiornino circa una volta al secondo. Si tratta di un comportamento correlato alla progettazione.  
+9. Scegliere **In attesa di valori** e verificare che il testo e il colore del pulsante si aggiornino circa una volta al secondo. Questo si verifica per motivi strutturali.  
   
 10. Torna a Visual Studio (ALT+TAB) e premi MAIUSC+F5 per arrestare il debug.  
   
      Dopo aver verificato il corretto funzionamento dell'app, puoi esaminarne le prestazioni usando il profiler.  
   
-### <a name="analyzing-performance-data"></a>Analisi dei dati delle prestazioni  
+### <a name="analyzing-performance-data"></a>Analisi dei dati sulle prestazioni  
   
 1. Nella barra degli strumenti **Debug**, nell'elenco **Avvia debug**, scegliere uno degli emulatori Windows Phone oppure **Simulatore**.  
   
@@ -184,7 +184,7 @@ Questa procedura dettagliata descrive i passaggi per identificare e risolvere un
   
 7. Seleziona una porzione di uno-due secondi nella parte centrale del grafico di utilizzo della CPU (fai clic e trascina o usa i tasti freccia e TAB). La figura seguente mostra il grafico di utilizzo della CPU dopo una selezione. L'area non condivisa è la sezione.  
   
-    ![Grafico Utilizzo CPU](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![Grafico di utilizzo della CPU](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
 8. Scegliere **Zoom avanti**.  
   

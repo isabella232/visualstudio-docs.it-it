@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolSearchEvent2::GetSymbolSearchInfo | Microsoft Docs
+title: 'IDebugSymbolSearchEvent2:: GetSymbolSearchInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c8ef097ed02ae90b03289e3a2f3a1ad3f0ad8618
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446035"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839416"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Chiamato da un gestore eventi per recuperare i risultati relativi a un processo di caricamento di simboli.  
+Chiamato da un gestore eventi per recuperare i risultati relativi a un processo di caricamento dei simboli.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -45,22 +45,22 @@ int GetSymbolSearchInfo(
   
 #### <a name="parameters"></a>Parametri  
  `pModule`  
- [out] Oggetto IDebugModule3 che rappresenta il modulo per il quale sono stati caricati i simboli.  
+ out Oggetto IDebugModule3 che rappresenta il modulo per il quale sono stati caricati i simboli.  
   
  `pbstrDebugMessage`  
- [in, out] Restituisce una stringa contenente eventuali messaggi di errore del modulo. Se non si verificano errori, quindi questa stringa conterrà solo il nome del modulo, ma non è mai vuota.  
+ [in, out] Restituisce una stringa contenente tutti i messaggi di errore del modulo. Se non si verificano errori, questa stringa conterrà solo il nome del modulo, ma non sarà mai vuota.  
   
 > [!NOTE]
-> [C++] `pbstrDebugMessage` non può essere `NULL` e deve essere liberata mediante `SysFreeString`.  
+> [C++] `pbstrDebugMessage` non può essere `NULL` e deve essere liberato con `SysFreeString` .  
   
  `pdwModuleInfoFlags`  
- [out] Una combinazione di flag dal [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) enumerazione che indica se i simboli sono stati caricati.  
+ out Combinazione di flag dell'enumerazione [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) che indica se sono stati caricati simboli.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore.  
   
-## <a name="remarks"></a>Note  
- Quando un gestore riceve la [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) evento dopo che viene effettuato un tentativo di caricare i simboli di debug per un modulo, il gestore può chiamare questo metodo per determinare i risultati di tale carico.  
+## <a name="remarks"></a>Commenti  
+ Quando un gestore riceve l'evento [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) dopo aver eseguito un tentativo di caricare i simboli di debug per un modulo, il gestore può chiamare questo metodo per determinare i risultati del caricamento.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)   

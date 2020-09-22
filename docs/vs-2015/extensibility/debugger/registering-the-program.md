@@ -1,5 +1,5 @@
 ---
-title: Il programma di registrazione | Microsoft Docs
+title: Registrazione del programma | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,35 +12,35 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 31d03f12a31953cbc0e20d06820dd49b5f9827e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441975"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840035"
 ---
 # <a name="registering-the-program"></a>Registrazione del programma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Dopo che il motore di debug ha acquisito una porta, rappresentato da un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaccia, il passaggio successivo di abilitare il programma da sottoporre a debug è registrarlo con la porta. Una volta registrato, il programma è disponibile per il debug di uno dei seguenti modi:  
+Dopo che il motore di debug ha acquisito una porta, rappresentata da un'interfaccia [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) , il passaggio successivo per abilitare il programma di cui eseguire il debug consiste nel registrarla con la porta. Una volta registrato, il programma è disponibile per il debug in uno dei modi seguenti:  
   
-- Il processo di collegamento, che consente al debugger di ottenere il completo controllo debug di un'applicazione in esecuzione.  
+- Processo di associazione, che consente al debugger di ottenere il controllo completo del debug di un'applicazione in esecuzione.  
   
-- Just-in-time (JIT) esegue il debug, che consente il debug dopo i fatti di un programma che viene eseguito indipendentemente da un debugger. Quando l'architettura runtime rileva un errore, il debugger riceve una notifica prima del sistema operativo o ambiente di runtime Rilascia risorse di memoria e del programma di errore.  
+- Debug JIT (just-in-Time), che consente il debug dopo il fatto di un programma che viene eseguito in modo indipendente da un debugger. Quando l'architettura di runtime rileva un errore, il debugger riceve una notifica prima che il sistema operativo o l'ambiente di runtime rilasci la memoria e le risorse del programma che ha generato l'errore.  
   
-## <a name="registering-procedure"></a>La procedura di registrazione  
+## <a name="registering-procedure"></a>Procedura di registrazione  
   
 #### <a name="to-register-your-program"></a>Per registrare il programma  
   
-1. Chiamare il [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) metodo implementato dalla porta.  
+1. Chiamare il metodo [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) implementato dalla porta.  
   
-     `IDebugPortNotify2::AddProgramNode` richiede un puntatore a un [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfaccia.  
+     `IDebugPortNotify2::AddProgramNode` richiede un puntatore a un'interfaccia [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) .  
   
-     In genere, quando il sistema operativo o un ambiente di runtime carica un programma, viene creato il nodo di programma. Se il motore di debug (DE) viene richiesto di caricare il programma per la Germania crea e registra il nodo di programma.  
+     In genere, quando il sistema operativo o l'ambiente di runtime carica un programma, viene creato il nodo del programma. Se al motore di debug (DE) viene richiesto di caricare il programma, il DE crea e registra il nodo del programma.  
   
-     L'esempio seguente illustra il motore di debug, l'avvio del programma e registrandolo con una porta.  
+     Nell'esempio seguente viene illustrato il motore di debug che avvia il programma e lo registra con una porta.  
   
     > [!NOTE]
-    > Ciò non è l'unico modo per avviare e riprendere un processo. si tratta principalmente un esempio di registrazione di un programma con una porta.  
+    > Questo non è l'unico modo per avviare e riprendere un processo; si tratta principalmente di un esempio di registrazione di un programma con una porta.  
   
     ```cpp#  
     // This is an IDebugEngineLaunch2 method.  

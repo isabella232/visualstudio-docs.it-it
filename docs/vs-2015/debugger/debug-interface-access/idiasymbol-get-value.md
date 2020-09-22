@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e9000a4d0a65fd450e3ef655e6b646990f682ba9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64837917"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840311"
 ---
-# <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
+# <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera il valore di una costante.  
@@ -35,16 +35,16 @@ HRESULT get_value ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [in, out] Oggetto `VARIANT` oggetto compilato con il valore di una costante.  
+ [in, out] `VARIANT` Oggetto compilato con il valore di una costante.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
- La variante fornita deve essere inizializzata prima che venga passata al metodo. Per altre informazioni, vedere l'esempio.  
+## <a name="remarks"></a>Commenti  
+ La variante fornita deve essere inizializzata prima di essere passata a questo metodo. Per ulteriori informazioni, vedere l'esempio.  
   
 ## <a name="example"></a>Esempio  
   

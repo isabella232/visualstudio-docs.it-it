@@ -1,6 +1,8 @@
 ---
-title: Informazioni sui parametri in un tipo di linguaggio legacy1 | Microsoft Docs
-ms.date: 11/04/2016
+title: Informazioni sui parametri in un oggetto Service1 della lingua legacy | Microsoft Docs
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, method tips
@@ -9,72 +11,72 @@ helpviewer_keywords:
 - IVsMethodData interface
 - Parameter Info (IntelliSense)
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
-author: gregvanl
+caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 5b1707313c40e7ea720fff3b9f70546af00ea486
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408648"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839320"
 ---
-# <a name="parameter-info-in-a-legacy-language-service"></a>Informazioni sui parametri in un servizio di linguaggio Legacy
-La descrizione comando informazioni sul parametro di IntelliSense offre agli utenti con suggerimenti su dove si trovano in un costrutto di linguaggio.
+# <a name="parameter-info-in-a-legacy-language-service"></a>Informazioni sui parametri in un servizio di linguaggio legacy
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
- Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni, vedere [estensione dell'Editor e servizi di linguaggio](../../extensibility/extending-the-editor-and-language-services.md).
-
+La descrizione comando informazioni parametri IntelliSense fornisce agli utenti suggerimenti sulla posizione in cui si trovano in un costrutto di linguaggio.  
+  
+ I servizi di linguaggio legacy sono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per ulteriori informazioni, vedere [estensione dei servizi di editor e di linguaggio](../../extensibility/extending-the-editor-and-language-services.md).  
+  
 > [!NOTE]
-> È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.
-
-## <a name="how-parameter-info-tooltips-work"></a>Come funzionano le descrizioni comandi informazioni parametro
- Quando si digita un'istruzione nell'editor, il pacchetto VSPackage Visualizza una finestra piccola della descrizione comando contenente la definizione dell'istruzione la digitazione. Ad esempio, se si digita un'istruzione di Microsoft Foundation Classes (MFC) (ad esempio `pMainFrame ->UpdateWindow`) e premere un tasto della parentesi di apertura per iniziare a elencare i parametri, viene visualizzato un suggerimento sul metodo visualizzazione della definizione del `UpdateWindow` (metodo).
-
- Le descrizioni comandi informazioni di parametro vengono in genere usate in combinazione con il completamento delle istruzioni. Sono particolarmente utili per linguaggi che dispongono di parametri o altra informazione formattata dopo la parola chiave o il nome del metodo.
-
- Le descrizioni comandi informazioni sul parametro possono essere avviate dal servizio di linguaggio tramite intercettazione dei comandi. Per intercettare i caratteri di utente, è necessario implementare l'oggetto servizio di linguaggio il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> l'interfaccia e passare un puntatore per la visualizzazione di testo il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> implementazione, chiamando la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> metodo nella <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia. Il filtro di comando intercetta comandi digitati nella finestra del codice. Monitorare le informazioni sui comandi per sapere quando visualizzare informazioni sui parametri per l'utente. È possibile usare lo stesso filtro di comando per il completamento delle istruzioni, i marcatori di errore e così via.
-
- Quando si digita una parola chiave per il quale il servizio di linguaggio consente di fornire suggerimenti, quindi il servizio di linguaggio crea un' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> oggetto e chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> metodo nella <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia per notificare l'IDE per visualizzare un suggerimento. Creare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> dell'oggetto usando `VSLocalCreateInstance` e specificando la coclasse `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance` è una funzione definita nel vsdoc.h di file di intestazione che chiama `QueryService` per il Registro di sistema locale e chiama `CreateInstance` tohoto objektu per il `CLSID_VsMethodTipWindow`.
-
-## <a name="providing-a-method-tip"></a>Fornire un suggerimento sul metodo
- Per fornire un suggerimento sul metodo, chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> metodo nella <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> interfaccia, passandogli l'implementazione del <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> interfaccia.
-
- Quando il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> classe viene richiamata, i relativi metodi vengono chiamati nell'ordine seguente:
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>
-
-     Restituisce la posizione e lunghezza dei dati rilevanti nel buffer di testo corrente. Questo indica all'IDE di non nasconda tali dati con la finestra di descrizione comando.
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>
-
-     Restituisce il numero di metodo (indice in base zero), che si dovrà essere visualizzato inizialmente. Ad esempio, se si restituisce zero, quindi il primo metodo di overload viene inizialmente visualizzato.
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>
-
-     Restituisce il numero di metodi di overload applicabili nel contesto corrente. Se si restituisce un valore maggiore di 1 per questo metodo, quindi la visualizzazione di testo Visualizza frecce su e giù per l'utente. Se si fa clic sulla freccia in giù, l'IDE chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A> (metodo). Se si fa clic sulla freccia in su, l'IDE chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A> (metodo).
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>
-
-     Il testo della descrizione comando informazioni sul parametro è stato costruito durante diverse chiamate per il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A> e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A> metodi.
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>
-
-     Restituisce il numero di parametri da visualizzare nel metodo.
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>
-
-     Se si restituisce un numero di metodo corrispondente con l'overload che si desidera visualizzare, questo metodo viene chiamato, seguita da una chiamata al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> (metodo).
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>
-
-     Informa il servizio di linguaggio per aggiornare l'editor quando viene visualizzato un suggerimento di metodo. Nel <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> metodo, chiamare il comando seguente:
-
-    ```
-    <pTxWin> ->UpdateTipWindow(<pTip>, UTW_CONTENTCHANGED | UTW_CONTEXTCHANGED).
-    ```
-
-- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>
-
-     Si riceve una chiamata al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> metodo quando si chiude la finestra di suggerimento di metodo.
+> Si consiglia di iniziare a usare la nuova API editor appena possibile. Ciò consente di migliorare le prestazioni del servizio di linguaggio e di sfruttare i vantaggi delle nuove funzionalità dell'editor.  
+  
+## <a name="how-parameter-info-tooltips-work"></a>Funzionamento delle descrizioni comandi delle informazioni sui parametri  
+ Quando si digita un'istruzione nell'editor, il pacchetto VSPackage Visualizza una piccola finestra descrizione comando contenente la definizione dell'istruzione digitata. Se ad esempio si digita un'istruzione Microsoft Foundation Classes (MFC), ad esempio, `pMainFrame ->UpdateWindow` e si preme il tasto parentesi di apertura per iniziare a elencare i parametri, viene visualizzato un suggerimento sul metodo che visualizza la definizione del `UpdateWindow` metodo.  
+  
+ Le descrizioni comandi delle informazioni sui parametri vengono in genere utilizzate in combinazione con il completamento delle istruzioni. Sono particolarmente utili per i linguaggi con parametri o altre informazioni formattate dopo il nome del metodo o la parola chiave.  
+  
+ Le descrizioni comandi delle informazioni sui parametri vengono avviate dal servizio di linguaggio tramite l'intercettazione dei comandi. Per intercettare i caratteri utente, l'oggetto servizio di linguaggio deve implementare l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia e passare la visualizzazione di testo un puntatore all' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> implementazione, chiamando il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> metodo nell' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia. Il filtro comandi intercetta i comandi digitati nella finestra del codice. Monitorare le informazioni sul comando per stabilire quando visualizzare le informazioni sui parametri per l'utente. È possibile utilizzare lo stesso filtro di comando per il completamento delle istruzioni, i marcatori di errore e così via.  
+  
+ Quando si digita una parola chiave per la quale il servizio di linguaggio può fornire hint, il servizio di linguaggio crea un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> oggetto e chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> metodo nell' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia per notificare all'IDE di visualizzare un suggerimento. Creare l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> oggetto usando `VSLocalCreateInstance` e specificando la coclasse `CLSID_VsMethodTipWindow` . `VsLocalCreateInstance` è una funzione definita nel file di intestazione vsdoc. h che chiama `QueryService` il registro di sistema locale e chiama `CreateInstance` su questo oggetto per `CLSID_VsMethodTipWindow` .  
+  
+## <a name="providing-a-method-tip"></a>Fornire un suggerimento sul metodo  
+ Per fornire un suggerimento sul metodo, chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> metodo nell' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> interfaccia e passargli l'implementazione dell' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> interfaccia.  
+  
+ Quando la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> classe viene richiamata, i relativi metodi vengono chiamati nell'ordine seguente:  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>  
+  
+     Restituisce la posizione e la lunghezza dei dati rilevanti nel buffer di testo corrente. Ciò indica all'IDE di non nascondere i dati con la finestra della descrizione comando.  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>  
+  
+     Restituisce il numero di metodo (indice in base zero) che si desidera visualizzare inizialmente. Se, ad esempio, si restituisce zero, viene inizialmente presentato il primo metodo di overload.  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>  
+  
+     Restituisce il numero di metodi di overload applicabili nel contesto corrente. Se si restituisce un valore maggiore di 1 per questo metodo, la visualizzazione di testo Visualizza le frecce verso l'alto e verso il basso. Se si fa clic sulla freccia verso il basso, l'IDE chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A> metodo. Se si fa clic sulla freccia rivolta verso l'alto, l'IDE chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A> metodo.  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>  
+  
+     Il testo della descrizione comando informazioni parametri viene costruito durante varie chiamate ai <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A> metodi e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A> .  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>  
+  
+     Restituisce il numero di parametri da visualizzare nel metodo.  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>  
+  
+     Se si restituisce un numero di metodo corrispondente all'overload che si vuole visualizzare, questo metodo viene chiamato, seguito da una chiamata al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> metodo.  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>  
+  
+     Informa il servizio di linguaggio di aggiornare l'editor quando viene visualizzato un suggerimento sul metodo. Nel <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> metodo chiamare quanto segue:  
+  
+    ```  
+    <pTxWin> ->UpdateTipWindow(<pTip>, UTW_CONTENTCHANGED | UTW_CONTEXTCHANGED).  
+    ```  
+  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>  
+  
+     Si riceve una chiamata al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> metodo quando si chiude la finestra del suggerimento sul metodo.

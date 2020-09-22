@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6d5d6a365a7f8455b62e6144f212d853a5f57e2f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64782146"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839319"
 ---
-# <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
+# <a name="idiasymbolget_offsetinudt"></a>IDiaSymbol::get_offsetInUdt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera l'offset all'inizio di un tipo definito dall'utente (UDT) di un membro di tipo definito dall'utente.  
+Recupera l'offset all'inizio di un tipo definito dall'utente (UDT) di un membro nel tipo definito dall'utente.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,21 +35,21 @@ HRESULT get_offsetInUdt( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce l'offset in byte della posizione del simbolo.  
+ out Restituisce l'offset in byte della posizione del simbolo.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
- Questa funzione viene utilizzata solo nei record locale in una build ottimizzata.  
+## <a name="remarks"></a>Commenti  
+ Questa funzione viene utilizzata solo nei record locali in una compilazione ottimizzata.  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: DIA2.h  
+ Intestazione: dia2. h  
   
- Libreria: diaguids.lib  
+ Libreria: diaguids. lib  
   
  DLL: msdia100.dll  
   

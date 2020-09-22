@@ -1,5 +1,5 @@
 ---
-title: Fasi Pipeline grafica | Microsoft Docs
+title: Fasi pipeline grafica | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9eee83ba90248c15387771f355919e345375ff05
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420152"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840052"
 ---
 # <a name="graphics-pipeline-stages"></a>Fasi pipeline grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ La finestra Fasi Pipeline grafica aiuta a comprendere come una singola chiamata 
   
  Questa è la finestra Fasi pipeline:  
   
- ![3&#45;oggetto D passa attraverso le fasi della pipeline. ](../debugger/media/gfx-diag-demo-pipeline-stages-orientation.png "gfx_diag_demo_pipeline_stages_orientation")  
+ ![Un oggetto 3&#45;D passa attraverso le fasi della pipeline.](../debugger/media/gfx-diag-demo-pipeline-stages-orientation.png "gfx_diag_demo_pipeline_stages_orientation")  
   
 ## <a name="understanding-the-graphics-pipeline-stages-window"></a>Informazioni sulla finestra Fasi pipeline grafica  
  La finestra Fasi pipeline visualizza i risultati di ogni fase della pipeline grafica, separati per ogni chiamata di disegno. In genere i risultati delle fasi nella parte centrale della pipeline sono nascosti e questo rende difficile individuare le cause di un problema di rendering. Visualizzando separatamente ogni fase, la finestra Fasi pipeline consente di individuare facilmente l'origine del problema, ad esempio se una fase di vertex shader ha fatto sì che un oggetto venisse disegnato fuori dallo schermo.  
@@ -118,14 +118,14 @@ La finestra Fasi Pipeline grafica aiuta a comprendere come una singola chiamata 
  Nella finestra Fasi pipeline, l'output di Unione output viene visualizzato come un'immagine raster a colori. Per esaminare in dettaglio i risultati, selezionare **Unione output** nella finestra **Fasi pipeline grafica** per vedere il buffer frame unito.  
   
 ### <a name="vertex-shader-preview"></a>Anteprima di Vertex shader  
- Quando si seleziona la fase vertex shader nel **fasi Pipeline grafica** finestra, il **i buffer di Input** pannello viene visualizzato. Qui sono disponibili informazioni dettagliate sull'elenco di vertici fornito al vertex shader dopo l'assemblaggio nella fase Assemblaggio input.  
+ Quando si seleziona la fase vertex shader nella finestra **fasi pipeline grafica** , viene visualizzato il pannello **buffer di input** . Qui sono disponibili informazioni dettagliate sull'elenco di vertici fornito al vertex shader dopo l'assemblaggio nella fase Assemblaggio input.  
   
- ![Il Visualizzatore buffer di input fase di vertex shader](../debugger/media/gfx-diag-vertex-shader-inbuffers.png "gfx_diag_vertex_shader_inbuffers")  
+ ![Visualizzatore del buffer di input delle fasi del vertex shader](../debugger/media/gfx-diag-vertex-shader-inbuffers.png "gfx_diag_vertex_shader_inbuffers")  
   
  Per visualizzare i risultati della fase Vertex shader, scegliere l'anteprima corrispondente per visualizzare un wireframe rasterizzato a dimensioni intere della mesh dopo la trasformazione.  
   
- ![L'anteprima dei risultati fase vertex shader](../debugger/media/gfx-diag-vertex-shader-preview.png "gfx_diag_vertex_shader_preview")  
+ ![Anteprima dei risultati delle fasi del vertex shader](../debugger/media/gfx-diag-vertex-shader-preview.png "gfx_diag_vertex_shader_preview")  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
+ [Procedura dettagliata: oggetti mancanti a causa dell'ombreggiatura del vertice](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
  [Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

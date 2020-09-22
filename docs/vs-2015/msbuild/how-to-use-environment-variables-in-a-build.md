@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 72d810f998b111aa2ec08a5874498ed8ee23a3be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437885"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839496"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>Procedura: Usare le variabili di ambiente in una compilazione
+# <a name="how-to-use-environment-variables-in-a-build"></a>Procedura: utilizzare le variabili di ambiente in una compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando si compilano i progetti, spesso è necessario impostare le opzioni di compilazione usando informazioni non incluse nel file di progetto o nei file che costituiscono il progetto. Queste informazioni sono in genere archiviate nelle variabili di ambiente.  
@@ -71,4 +71,4 @@ Quando si compilano i progetti, spesso è necessario impostare le opzioni di com
 
 [Proprietà di MSBuild](../msbuild/msbuild-properties1.md)
 
-[Procedura: compilare gli stessi file di origine con opzioni diverse](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+[Procedura: Compilare gli stessi file di origine con opzioni diverse](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

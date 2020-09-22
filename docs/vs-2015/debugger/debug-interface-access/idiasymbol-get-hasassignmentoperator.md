@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 318229dfdef0bd20048b287e7973c05a40879250
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64832311"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840261"
 ---
-# <a name="idiasymbolgethasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
+# <a name="idiasymbolget_hasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un flag che specifica se il tipo di dati definito dall'utente dispone di qualsiasi operatore di assegnazione definiti.  
+Recupera un flag che specifica se il tipo di dati definito dall'utente dispone di operatori di assegnazione definiti.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,19 +35,19 @@ HRESULT get_hasAssignmentOperator ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce `TRUE` se il tipo di dati definito dall'utente ha tutti gli operatori di assegnazione definiti; in caso contrario, restituisce `FALSE`.  
+ out Restituisce `TRUE` se il tipo di dati definito dall'utente dispone di operatori di assegnazione definiti; in caso contrario, restituisce `FALSE` .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="requirements"></a>Requisiti  
   
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
-|Intestazione:|DIA2.h|  
+|Intestazione:|dia2. h|  
 |Version:|DIA SDK v7.0|  
   
 ## <a name="see-also"></a>Vedere anche  

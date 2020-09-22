@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d001d29433573fedde3b4310f989667538b4b69c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444967"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840015"
 ---
-# <a name="debugaddress"></a>DEBUG_ADDRESS
+# <a name="debug_address"></a>DEBUG_ADDRESS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Questa struttura rappresenta un indirizzo.  
@@ -46,26 +46,26 @@ public struct DEBUG_ADDRESS {
   
 ## <a name="terms"></a>Termini  
  ulAppDomainID  
- L'ID del processo.  
+ ID del processo.  
   
  guidModule  
- Il GUID del modulo che contiene questo indirizzo.  
+ GUID del modulo che contiene l'indirizzo.  
   
  tokClass  
- Il token che identifica la classe o un tipo di questo indirizzo.  
+ Token che identifica la classe o il tipo dell'indirizzo.  
   
 > [!NOTE]
-> Questo valore è specifico di un provider di simboli e pertanto non ha alcun significato generale diverso da come identificatore per un tipo di classe.  
+> Questo valore è specifico di un provider di simboli e pertanto non ha un significato generale diverso da un identificatore per un tipo di classe.  
   
- addr  
- Oggetto [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura, che contiene un'unione di strutture che descrivono i tipi di singoli indirizzi. Il valore `addr`.`dwKind` proviene il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione, che viene illustrato come interpretare l'unione.  
+ indirizzo  
+ Struttura [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) , che contiene un'Unione di strutture che descrivono i singoli tipi di indirizzi. Valore `addr` .`dwKind` deriva dall'enumerazione [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) , che spiega come interpretare l'Unione.  
   
-## <a name="remarks"></a>Note  
- Questa struttura viene passata per il [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) metodo deve essere compilato.  
+## <a name="remarks"></a>Commenti  
+ Questa struttura viene passata al metodo [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) da compilare.  
   
- **Avviso [C++ solo]**  
+ **Avviso [solo C++]**  
   
- Se `addr.dwKind` viene `ADDRESS_KIND_METADATA_LOCAL` e, se `addr.addr.addrLocal.pLocal` non è un valore null, sarà necessario chiamare `Release` sul puntatore token:  
+ Se `addr.dwKind` è `ADDRESS_KIND_METADATA_LOCAL` e se `addr.addr.addrLocal.pLocal` non è un valore null, è necessario chiamare `Release` sul puntatore del token:  
   
 ```  
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal != NULL)  
@@ -75,9 +75,9 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal !=
 ```  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: sh.h  
+ Intestazione: sh. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

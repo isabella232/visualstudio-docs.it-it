@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d195a0d446681450e792d08467db7714efce9360
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64788341"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839419"
 ---
-# <a name="idiasymbolgettargetsection"></a>IDiaSymbol::get_targetSection
+# <a name="idiasymbolget_targetsection"></a>IDiaSymbol::get_targetSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera la sezione di indirizzo di una destinazione thunk.  
+Recupera la sezione dell'indirizzo di una destinazione del thunk.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,13 +35,13 @@ HRESULT get_targetSection ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Parte di sezione di un indirizzo di destinazione thunk.  
+ out Parte della sezione di un indirizzo di destinazione del thunk.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

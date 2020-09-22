@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2b56203f2d0bfb2e7c20720b595cdde6b92aa987
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64834380"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840282"
 ---
-# <a name="idiasymbolgetcustomcallingconvention"></a>IDiaSymbol::get_customCallingConvention
+# <a name="idiasymbolget_customcallingconvention"></a>IDiaSymbol::get_customCallingConvention
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un flag che specifica se la funzione ha una convenzione di denominazione personalizzata.  
+Recupera un flag che specifica se la funzione dispone di una convenzione di chiamata personalizzata.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,19 +35,19 @@ HRESULT get_customCallingConvention(
   
 #### <a name="parameters"></a>Parametri  
  `pFlag`  
- [out] Restituisce `TRUE` se la funzione ha una convenzione di chiamata personalizzata; in caso contrario, restituisce `FALSE`, la funzione ha una convenzione di chiamata nota.  
+ out Restituisce `TRUE` se la funzione dispone di una convenzione di chiamata personalizzata; in caso contrario, restituisce `FALSE` , la funzione dispone di una convenzione di chiamata nota.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="requirements"></a>Requisiti  
   
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
-|Intestazione:|DIA2.h|  
+|Intestazione:|dia2. h|  
 |Version:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>Vedere anche  

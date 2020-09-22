@@ -13,19 +13,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ce5534f5723a3f0e570779939f207018cac71cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438897"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840291"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profilatura rapida di sito Web con VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Lo strumento da riga di comando **VSPerfASPNETCmd** consente di eseguire facilmente la profilatura di applicazioni Web di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Rispetto allo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md), le opzioni sono ridotte, non è necessario impostare variabili di ambiente e non è richiesto il riavvio del computer. **VSPerfASPNETCmd** è il metodo preferito per la profilatura con il profiler autonomo. Per altre informazioni, vedere [Procedura: Installare il Profiler autonomo](../profiling/how-to-install-the-stand-alone-profiler.md).  
+Lo strumento da riga di comando **VSPerfASPNETCmd** consente di eseguire facilmente la profilatura di applicazioni Web di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Rispetto allo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md), le opzioni sono ridotte, non è necessario impostare variabili di ambiente e non è richiesto il riavvio del computer. **VSPerfASPNETCmd** è il metodo preferito per la profilatura con il profiler autonomo. Per altre informazioni, vedere [procedura: installare il profiler autonomo](../profiling/how-to-install-the-stand-alone-profiler.md).  
   
 > [!NOTE]
-> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app di Windows Store richiedono nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).  
+> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app di Windows Store richiedono nuove tecniche di raccolta. Vedere [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  In alcuni scenari, quali la raccolta di dati di concorrenza o la sospensione e la ripresa della profilatura, **VSPerfCmd** costituisce il metodo di profilatura preferito.  
   
@@ -48,7 +48,7 @@ Lo strumento da riga di comando **VSPerfASPNETCmd** consente di eseguire facilme
   
  **vsperfaspnetcmd /trace**  *websiteUrl*  
   
- Se si vogliono profilare file con estensione dll compilati staticamente nell'applicazione Web, è necessario instrumentare i file tramite lo strumento da riga di comando [VSInstr](../profiling/vsinstr.md). Il comando vsperfaspnetcmd /trace includerà i dati dai file instrumentati.  
+ Se si desidera profilare i file DLL compilati in modo statico nell'applicazione Web, è necessario instrumentare i file utilizzando lo strumento da riga di comando [VSInstr](../profiling/vsinstr.md) . Il comando vsperfaspnetcmd /trace includerà i dati dai file instrumentati.  
   
 ## <a name="to-collect-net-memory-data"></a>Per raccogliere dati di memoria .NET  
  L'opzione **/Memory** consente di raccogliere dati sull'allocazione di oggetti nella memoria .NET ed è in grado di raccogliere dati sulla durata di tali oggetti. La raccolta di dati di allocazione è la modalità predefinita dell'opzione **/Memory** e non è necessario specificarla nella riga di comando.  
@@ -61,14 +61,14 @@ Lo strumento da riga di comando **VSPerfASPNETCmd** consente di eseguire facilme
   
  È inoltre possibile usare l'opzione **/Trace** per includere informazioni di intervallo dettagliate con i dati di memoria .NET:  
   
- **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`  
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`  
   
 ## <a name="to-collect-tier-interaction-data"></a>Per raccogliere dati di interazione tra livelli  
   
 > [!WARNING]
 > I dati di profilatura dell'interazione tra livelli (TIP) possono essere raccolti utilizzando [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] o [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. ma possono essere visualizzati solo in [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] e [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
-> Per raccogliere dati TIP in Windows 8 o Windows Server 2012, è necessario usare l'opzione di strumentazione ( **/trace**).  
+> Per raccogliere dati TIP in Windows 8 o Windows Server 2012, è necessario usare l'opzione di strumentazione (**/trace**).  
   
  Per raccogliere dati di interazione tra livelli con dati di campionamento:  
   
@@ -80,14 +80,14 @@ Lo strumento da riga di comando **VSPerfASPNETCmd** consente di eseguire facilme
   
  Per raccogliere dati di interazione tra livelli con dati di memoria .NET:  
   
- **vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_  
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_  
   
-## <a name="UsingNoWait"></a> Uso dell'opzione /NoWait  
+## <a name="using-the-nowait-option"></a><a name="UsingNoWait"></a> Uso dell'opzione /NoWait  
  Per impostazione predefinita, il prompt dei comandi non restituisce il controllo dopo un comando **vsperfaspnetcmd**. È possibile usare l'opzione della sintassi seguente per imporre il ripristino del prompt dei comandi. È quindi possibile eseguire altre operazioni nella finestra del prompt dei comandi. Per terminare la profilatura, usare l'opzione **/shutdown** in un comando **vsperfaspnetcmd** distinto.  
   
  Per iniziare la profilatura:  
   
- **vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_  
+ **vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_  
   
  Per terminare la profilatura:  
   
@@ -98,5 +98,5 @@ Lo strumento da riga di comando **VSPerfASPNETCmd** consente di eseguire facilme
   
 |Opzione|Descrizione|  
 |------------|-----------------|  
-|**/Output:** `VspFile`|Per impostazione predefinita, il file dei dati di profilatura (con estensione vsp) viene creato nella directory corrente con il nome file **PerformanceReport.vsp**. Usare l'opzione /output per specificare un percorso o un nome file diverso o entrambi.|  
+|**/Output:**`VspFile`|Per impostazione predefinita, il file di dati di profilatura (con estensione vsp) viene creato nella directory corrente con il nome file **PerformanceReport. vsp**. Usare l'opzione /output per specificare un percorso o un nome file diverso o entrambi.|  
 |**/PackSymbols:Off**|Per impostazione predefinita, VsPerfASPNETCmd incorpora simboli, ovvero nomi di funzione e di parametro e così via, nel file con estensione vsp. L'incorporamento di simboli può aumentare notevolmente le dimensioni del file di dati di profilatura. Se si avrà accesso ai file con estensione pdb contenenti i simboli quando si analizzano i dati, usare l'opzione /packsymbols:off per disabilitare l'incorporamento dei simboli.|

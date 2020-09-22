@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3d97a70e661796c681916b60d5eacb364e90ada3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64834524"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840285"
 ---
-# <a name="idiasymbolgetsymbolsfilename"></a>IDiaSymbol::get_symbolsFileName
+# <a name="idiasymbolget_symbolsfilename"></a>IDiaSymbol::get_symbolsFileName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Recupera il nome del file da cui sono stati caricati i simboli.  
@@ -35,16 +35,16 @@ HRESULT get_symbolsFileName ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce il nome del file da cui sono stati caricati i simboli.  
+ out Restituisce il nome del file da cui sono stati caricati i simboli.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
- Questa proprietà è valida solo per i simboli con un [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) pari a `SymTagExe` anche che hanno un ambito globale.  
+## <a name="remarks"></a>Commenti  
+ Questa proprietà è valida solo per i simboli con un valore di [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) di `SymTagExe` che dispongono anche dell'ambito globale.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

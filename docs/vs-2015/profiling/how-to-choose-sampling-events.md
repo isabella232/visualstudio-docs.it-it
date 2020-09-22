@@ -20,11 +20,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 017414bdbf8e0e1a3a664782aab1ea44bda030c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432828"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839275"
 ---
 # <a name="how-to-choose-sampling-events"></a>Procedura: Scegliere eventi di campionamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,8 +62,8 @@ Per impostazione predefinita, gli strumenti di profilatura di [!INCLUDE[vsprvs](
 5. Quando si seleziona un evento di campionamento, nella casella di testo **Intervallo di campionamento** viene visualizzato un valore predefinito per l'intervallo di campionamento. Se necessario, è possibile immettere il valore desiderato nella casella di testo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)  (Configurazione di sessioni di prestazioni)  
- [Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)   
+ [Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)   
+ [Procedura: scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)   
  [Contatori CPU e Windows](../profiling/cpu-and-windows-counters.md)   
  [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)   
  [Profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -11,19 +11,19 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae6ec2f0ffc48e8c23f65ab56ec7b66d69d11a2e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440602"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840295"
 ---
 # <a name="idebugpointerobject3"></a>IDebugPointerObject3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni di Common Language Runtime, vedi [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [gestito esempio analizzatore di espressioni](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015, questo metodo di implementazione degli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere l'esempio degli [analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e dell' [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Rappresenta un puntatore in un albero di analisi ed estende la **IDebugPointerObject** interfaccia.  
+ Rappresenta un puntatore in una struttura ad albero di analisi ed estende l'interfaccia **IDebugPointerObject** .  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,15 +35,15 @@ IDebugPointerObject3 : IDebugPointerObject
  Un analizzatore di espressioni (EE) implementa questa interfaccia.  
   
 ## <a name="methods"></a>Metodi  
- Oltre ai metodi nel [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) interfaccia, questa interfaccia implementa i metodi seguenti:  
+ Oltre ai metodi sull'interfaccia [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) , questa interfaccia implementa i metodi seguenti:  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
 |[GetPointerAddress](../../../extensibility/debugger/reference/idebugpointerobject3-getpointeraddress.md)|Recupera l'indirizzo del puntatore.|  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: EE.h  
+ Intestazione: EE. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

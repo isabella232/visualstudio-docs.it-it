@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3ac567677776c225008a581cc4d5de85ec2c882d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383968"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839984"
 ---
 # <a name="mip-map-generation-variant"></a>Variante di generazione di mappe MIP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Abilita le mappe MIP nelle trame che non corrispondono a destinazioni di renderi
   
  Se questa variante mostra un aumento delle prestazioni significativo, indica che si stanno usando trame senza abilitare le mappe MIP e pertanto senza sfruttare al massimo la cache delle trame.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Commenti  
  La generazione di mappe MIP viene forzata a ogni chiamata a `ID3D11Device::CreateTexture2D` che crea una trama di origine. In particolare, la generazione di mappe MIP viene forzata quando l'oggetto D3D11_TEXTUR2D_DESC passato in `pDesc` descrive una risorsa shader che non cambia, ovvero:  
   
 - Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.  
@@ -65,7 +65,7 @@ for (auto&& mip_level : initial_data)
 d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)  
 ```  
   
- Per creare una trama con una catena MIP completa, impostare `D3D11_TEXTURE2D_DESC::MipLevels` su 0. Il numero di livelli mip in una catena mip completa è floor(log2(n) + 1), dove n è la dimensione più grande della trama.  
+ Per creare una trama con una catena MIP completa, impostare `D3D11_TEXTURE2D_DESC::MipLevels` su 0. Il numero di livelli MIP in una catena MIP completa è floor (log2 (n) + 1), dove n è la dimensione più grande della trama.  
   
  Ricordare che quando vengono forniti i dati iniziali a `CreateTexture2D`, è necessario fornire un oggetto D3D11_SUBRESOURCE_DATA per ogni livello MIP.  
   
@@ -73,4 +73,4 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 > Se si vuole fornire contenuto di livello MIP personalizzato anziché generarlo automaticamente, è necessario creare le proprie trame tramite un editor di immagini che supporta trame con mappe MIP, caricare il file e passare i livelli MIP a `CreateTexture2D`.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Variante delle dimensioni della trama ridotte a metà o un quarto](../debugger/half-quarter-texture-dimensions-variant.md)
+ [Variante delle dimensioni della trama metà/trimestre](../debugger/half-quarter-texture-dimensions-variant.md)

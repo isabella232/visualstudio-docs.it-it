@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 058c502c7d64ba6e5f723eb39b56a525b3074e44
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64834577"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840286"
 ---
-# <a name="idiasymbolgetnotreached"></a>IDiaSymbol::get_notReached
+# <a name="idiasymbolget_notreached"></a>IDiaSymbol::get_notReached
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un flag che specifica se la funzione o l'etichetta non viene mai raggiunto.  
+Recupera un flag che specifica se la funzione o l'etichetta non viene mai raggiunta.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,19 +35,19 @@ HRESULT get_notReached(
   
 #### <a name="parameters"></a>Parametri  
  pFlag  
- [out] Restituisce `TRUE` se la funzione o l'etichetta non viene mai raggiunto; in caso contrario, restituisce `FALSE`.  
+ out Restituisce `TRUE` se la funzione o l'etichetta non viene mai raggiunta; in caso contrario, restituisce `FALSE` .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="requirements"></a>Requisiti  
   
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
-|Intestazione:|DIA2.h|  
+|Intestazione:|dia2. h|  
 |Version:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>Vedere anche  

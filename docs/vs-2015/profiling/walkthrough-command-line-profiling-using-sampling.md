@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento | Microsoft Docs'
+title: 'Procedura dettagliata: profilatura dalla riga di comando tramite campionamento | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 96dfe49ce4e174680202cd60c3e8bca83cfbf575
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439688"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839971"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Procedura dettagliata: Riga di comando di profilatura tramite campionamento
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questa procedura dettagliata illustra come eseguire la profilatura di un'applicazione mediante gli strumenti da riga di comando e il campionamento per identificare i problemi di prestazioni.  
@@ -41,7 +41,7 @@ Questa procedura dettagliata illustra come eseguire la profilatura di un'applica
   
 - Conoscenza a livello intermedio dell'uso degli strumenti della riga di comando  
   
-- Una copia dell'[esempio PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
+- Una copia dell' [esempio PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
   
 - Per usare le informazioni fornite dalla profilatura, è consigliabile avere a disposizione informazioni sui simboli di debug.  
   
@@ -97,7 +97,7 @@ Questa procedura dettagliata illustra come eseguire la profilatura di un'applica
   
     - Aprire il file con estensione vsp nell'IDE di Visual Studio.  
   
-         oppure  
+         - o -  
   
     - Generare un file con valori delimitati da virgole (CSV) tramite lo strumento da riga di comando VSPerfReport.exe. Per generare report da usare all'esterno dell'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], usare il comando seguente:  
   
@@ -106,8 +106,8 @@ Questa procedura dettagliata illustra come eseguire la profilatura di un'applica
         ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Panoramica delle sessioni di prestazioni](../profiling/performance-session-overview.md)   
+ [Panoramica della sessione di prestazioni](../profiling/performance-session-overview.md)   
  [Profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)   
- [Performance Report Views](../profiling/performance-report-views.md)(Visualizzazioni dei rapporti di prestazioni)
+ [Visualizzazioni dei rapporti di prestazioni](../profiling/performance-report-views.md)

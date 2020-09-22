@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: df3faba1309b5a26316b615042492f96b9401a01
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791459"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839471"
 ---
-# <a name="idiasymbolgetliverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
+# <a name="idiasymbolget_liverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Restituisce la parte della sezione dell'indirizzo iniziale dell'intervallo in cui il simbolo locale è valido.  
@@ -35,23 +35,23 @@ HRESULT get_liveRangeStartAddressSection ( 
   
 #### <a name="parameters"></a>Parametri  
  `section`  
- [out] Restituisce la parte della sezione dell'intervallo di indirizzi iniziale.  
+ out Restituisce la parte della sezione dell'intervallo di indirizzi iniziale.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
+ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.  
   
 > [!NOTE]
-> Un codice di errore restituito significa che il simbolo non dispone di informazioni di intervallo in tempo reale.  
+> Un codice di errore restituito indica che il simbolo non contiene informazioni sull'intervallo Live.  
   
-## <a name="remarks"></a>Note  
- L'indirizzo costituita dalla sezione e offset è l'inizio dell'intervallo in cui il simbolo è valido.  
+## <a name="remarks"></a>Commenti  
+ L'indirizzo formato dalla sezione e dall'offset è l'inizio dell'intervallo in cui il simbolo è valido.  
   
- Per ottenere la parte relativa all'offset dell'indirizzo, usare [IDiaSymbol::get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).  
+ Per ottenere la parte di offset dell'indirizzo, utilizzare [IDiaSymbol:: get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: DIA2.h  
+ Intestazione: dia2. h  
   
- Libreria: diaguids.lib  
+ Libreria: diaguids. lib  
   
  DLL: msdia100.dll  
   

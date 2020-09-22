@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9ad200d75c5534ddbe9d4ad4d9835417df6515f1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429105"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839991"
 ---
-# <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
+# <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vengono descritti gli attributi di un documento.  
+Descrive gli attributi di un documento.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,17 +39,17 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
  TEXT_DOC_ATTR_READONLY_2  
  Indica che il documento è di sola lettura.  
   
-## <a name="remarks"></a>Note  
+## <a name="remarks"></a>Commenti  
   
 > [!NOTE]
-> Questo valore non viene effettivamente definito nell'assembly per il linguaggio c#. In alternativa, è necessario copiare la definizione per il file di origine.  
+> Questo valore non è effettivamente definito nell'assembly per C#. Al contrario, è necessario copiare la definizione nel file di origine.  
   
- Passato come argomento per il [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) (metodo).  
+ Passato come argomento al metodo [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) .  
   
 ## <a name="requirements"></a>Requisiti  
- Intestazione: msdbg.h  
+ Intestazione: msdbg. h  
   
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
+ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop  
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   

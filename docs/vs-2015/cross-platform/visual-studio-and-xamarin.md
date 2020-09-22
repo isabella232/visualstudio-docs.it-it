@@ -9,16 +9,16 @@ caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 098d94a1aed9020271db5010e278a4aa8fc68330
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442125"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840124"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio e Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Xamarin è una piattaforma per lo sviluppo di app per dispositivi mobili per la creazione di app iOS, Android e Windows native da una codebase C#/.NET comune, che consente di ottenere un riutilizzo del codice tra le piattaforme dal 75% a quasi il 100%. Le app scritte con Xamarin e C# hanno accesso completo alle API della piattaforma sottostante, oltre alla possibilità di creare interfacce utente native ed eseguire la compilazione in pacchetti specifici della piattaforma, rendendo minimo l'impatto sulle prestazioni in fase di runtime. (Nota: Xamarin supporta anche F#, ma questa documentazione verrà illustrato in C# solo. Visual Basic non è attualmente supportato.  
+Xamarin è una piattaforma per lo sviluppo di app per dispositivi mobili per la creazione di app iOS, Android e Windows native da una codebase C#/.NET comune, che consente di ottenere un riutilizzo del codice tra le piattaforme dal 75% a quasi il 100%. Le app scritte con Xamarin e C# hanno accesso completo alle API della piattaforma sottostante, oltre alla possibilità di creare interfacce utente native ed eseguire la compilazione in pacchetti specifici della piattaforma, rendendo minimo l'impatto sulle prestazioni in fase di runtime. Nota: Xamarin supporta anche F#, ma nella presente documentazione verrà illustrato solo C#. Visual Basic non è attualmente supportato.  
   
  Meglio ancora, gli sviluppatori che hanno familiarità con C#, .NET e Visual Studio potranno trarre vantaggio dalla stessa potenza e produttività quando lavorano con Xamarin per le app per dispositivi mobili, incluso il debug remoto nei dispositivi Android, iOS e Windows, senza dover apprendere linguaggi di codifica nativi come Objective-C o Java. Non sorprende quindi che molte applicazioni ad alte prestazioni con interfacce utente accattivanti, come NASCAR, Aviva e MixRadio, siano state create usando Xamarin.  
   
@@ -38,4 +38,4 @@ Xamarin è una piattaforma per lo sviluppo di app per dispositivi mobili per la 
 > Queste istruzioni descrivono la configurazione del computer più semplice e diretta per gli sviluppatori che hanno familiarità con Windows e Visual Studio. Con questa configurazione, l'esperienza di sviluppo complessiva viene semplificata poiché è sufficiente interagire con il Mac per l'uso del simulatore iOS e del dispositivo con tethering. Se invece si ha familiarità con l'ambiente Mac, è consigliabile eseguire Visual Studio in Parallels/VMWare oppure usare Xamarin Studio Community. Per istruzioni, vedere [Configurazione, installazione e verifiche per gli utenti Mac](../cross-platform/setup-install-and-verifications-for-mac-users.md).  
   
 > [!NOTE]
-> Se si vuole una soluzione di sviluppo multipiattaforma basata su HTML e CSS, è disponibile Strumenti di Visual Studio per Apache Cordova, come descritto in [Sviluppo multipiattaforma in Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).
+> Se si sta cercando una soluzione di sviluppo multipiattaforma basata su HTML e CSS, vedere la Strumenti di Visual Studio per Apache Cordova come descritto in [sviluppo multipiattaforma in Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).

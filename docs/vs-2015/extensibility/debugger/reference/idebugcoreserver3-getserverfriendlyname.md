@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerFriendlyName | Microsoft Docs
+title: 'IDebugCoreServer3:: GetServerFriendlyName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fa81daf7ab1d592e6a2cd460268e5d66925f61e1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445277"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839439"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -40,18 +40,18 @@ int GetServerFriendlyName(
   
 #### <a name="parameters"></a>Parametri  
  `pbstrName`  
- [out] Restituisce un nome descrittivo per il server.  
+ out Restituisce un nome descrittivo per il server.  
   
 > [!NOTE]
 > Il chiamante è responsabile della liberazione della stringa.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.  
   
-## <a name="remarks"></a>Note  
- Per i server avviata dall'utente, il nome restituito da questo metodo è il nome completo del server. Per i server di avvio automatico, il nome è che del computer il server sia in esecuzione.  
+## <a name="remarks"></a>Commenti  
+ Per i server avviati dall'utente, il nome restituito da questo metodo è il nome completo del server. Per i server con avvio automatico, il nome è quello del computer in cui è in esecuzione il server.  
   
- Per un nome orientato alla macchina, chiamare il [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) (metodo).  
+ Per un nome orientato al computer, chiamare il metodo [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) .  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   

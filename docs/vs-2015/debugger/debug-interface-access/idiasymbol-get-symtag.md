@@ -1,5 +1,5 @@
 ---
-title: Get_symtag | Microsoft Docs
+title: 'IDiaSymbol:: get_symTag | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88800887a9bcc6a8108220097db41365f356b9b3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64812358"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839827"
 ---
-# <a name="idiasymbolgetsymtag"></a>IDiaSymbol::get_symTag
+# <a name="idiasymbolget_symtag"></a>IDiaSymbol::get_symTag
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera il classificatore di tipo di simbolo.  
+Recupera il classificatore del tipo di simbolo.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,13 +35,13 @@ HRESULT get_symTag ( 
   
 #### <a name="parameters"></a>Parametri  
  `pRetVal`  
- [out] Restituisce un valore compreso il [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumerazione che specifica il classificatore di tipo di simbolo.  
+ out Restituisce un valore dall'enumerazione Enumerazione [SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) che specifica il classificatore del tipo di simbolo.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="example"></a>Esempio  
   

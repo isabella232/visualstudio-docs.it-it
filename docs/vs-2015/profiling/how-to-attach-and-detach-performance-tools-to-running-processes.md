@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Collegamento e scollegamento di strumenti per le prestazioni ai processi in esecuzione | Microsoft Docs'
+title: 'Procedura: Connettere e disconnettere gli strumenti per le prestazioni ai processi in esecuzione | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0b8fc664ee47cd34ab984d1ac448b45c2f17c5b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443718"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839692"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Procedura: Collegamento e scollegamento di strumenti per le prestazioni ai processi in esecuzione
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Procedura: Connettere e disconnettere gli strumenti per le prestazioni ai processi in esecuzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il profiler può essere usato per la connessione o la disconnessione da un processo in esecuzione per facilitare la raccolta e il campionamento dei dati relativi alle prestazioni. È possibile usare questo metodo per la profilatura di un processo quando si vuole evitare di raccogliere dati sul tempo di caricamento dell'applicazione o per monitorare le prestazioni di un processo dopo il raggiungimento di uno stato specifico.  
@@ -40,13 +40,13 @@ Il profiler può essere usato per la connessione o la disconnessione da un proce
   
 - Accesso negato alla profilatura per tutti gli utenti.  
   
-  Per altre informazioni, vedere [Profilatura e sicurezza in Windows Vista](../profiling/profiling-and-windows-vista-security.md) e le opzioni ADMIN in [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Per ulteriori informazioni, vedere [profilatura e sicurezza in Windows Vista](../profiling/profiling-and-windows-vista-security.md) e le opzioni di amministrazione in [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-attach-to-a-running-process"></a>Per connettersi a un processo in esecuzione  
   
 1. Nel menu **Analizza** scegliere **Profiler** e quindi fare clic su **Connetti/Disconnetti**.  
   
-     \- oppure -  
+     \- - oppure -  
   
      In **Esplora prestazioni** fare clic con il pulsante destro del mouse sulla sessione di prestazioni e quindi scegliere **Connetti/Disconnetti**.  
   
@@ -60,7 +60,7 @@ Il profiler può essere usato per la connessione o la disconnessione da un proce
   
 1. Nel menu **Analizza** scegliere **Profiler** e quindi fare clic su **Connetti/Disconnetti**.  
   
-     \- oppure -  
+     \- - oppure -  
   
      In **Esplora prestazioni** fare clic con il pulsante destro del mouse sulla sessione di prestazioni e quindi scegliere **Connetti/Disconnetti**.  
   
@@ -68,11 +68,11 @@ Il profiler può essere usato per la connessione o la disconnessione da un proce
   
 2. Fare clic sul nome dell'immagine da cui eseguire la disconnessione.  
   
-3. Scegliere **Disconnetti**.  
+3. Fare clic su **Scollega**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Controllo della raccolta di dati](../profiling/controlling-data-collection.md)   
- [Panoramica delle sessioni di prestazioni](../profiling/performance-session-overview.md)   
- [Procedura: Iniziare e terminare la raccolta dati prestazioni](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Controllo della raccolta dati](../profiling/controlling-data-collection.md)   
+ [Panoramica della sessione di prestazioni](../profiling/performance-session-overview.md)   
+ [Procedura: iniziare e terminare la raccolta dei dati sulle prestazioni](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Profilatura e sicurezza in Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

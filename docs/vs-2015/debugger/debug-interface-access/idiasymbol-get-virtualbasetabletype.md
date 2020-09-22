@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ea59822ebc568e843433f28f6e9b23f4df96fdb2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64800005"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839583"
 ---
-# <a name="idiasymbolgetvirtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
+# <a name="idiasymbolget_virtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera il tipo di puntatore una tabella di base virtuale.  
+Recupera il tipo di un puntatore a una tabella di base virtuale.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,26 +35,26 @@ HRESULT get_virtualBaseTableType(
   
 #### <a name="parameters"></a>Parametri  
   
-|Parametro|DESCRIZIONE|  
+|Parametro|Descrizione|  
 |---------------|-----------------|  
-|`pRetVal`|[out] Restituisce un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che specifica il tipo di tabella di base.|  
+|`pRetVal`|out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che specifica il tipo di tabella di base.|  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
- Un puntatore alla tabella di base virtuale (`vbtptr`) è un puntatore nascosto in un [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] vtable che gestisce l'ereditarietà da classi base virtuali. Oggetto `vbtptr` possono avere dimensioni diverse a seconda delle classi ereditate.  
+## <a name="remarks"></a>Commenti  
+ Un puntatore a tabella di base virtuale ( `vbtptr` ) è un puntatore nascosto in un oggetto [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] vtable che gestisce l'ereditarietà dalle classi base virtuali. Un oggetto `vbtptr` può avere dimensioni diverse a seconda delle classi ereditate.  
   
- Questo metodo restituisce un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) oggetto che può essere utilizzato per determinare le dimensioni della finestra di vbtptr.  
+ Questo metodo restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) che può essere utilizzato per determinare le dimensioni di vbtptr.  
   
 ## <a name="requirements"></a>Requisiti  
   
 |Requisito|Descrizione|  
 |-----------------|-----------------|  
-|Intestazione:|DIA2.h|  
+|Intestazione:|dia2. h|  
 |Version:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>Vedere anche  

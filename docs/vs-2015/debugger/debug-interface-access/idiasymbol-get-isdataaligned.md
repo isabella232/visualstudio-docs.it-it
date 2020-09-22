@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 86c701765f9c8a67f7b95368d02febc1d254c696
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64810723"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839803"
 ---
-# <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
+# <a name="idiasymbolget_isdataaligned"></a>IDiaSymbol::get_isDataAligned
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un flag che specifica se il tipo definito dall'utente (UDT) è stato allineato per alcuni limiti di memoria specifica.  
+Recupera un flag che specifica se il tipo definito dall'utente (UDT) è stato allineato a un limite di memoria specifico.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -35,22 +35,22 @@ HRESULT get_isDataAligned(
   
 #### <a name="parameters"></a>Parametri  
  `pFlag`  
- [out] Restituisce `TRUE` se il tipo definito dall'utente è stato allineato a un limite di memoria; in caso contrario, restituisce `FALSE`.  
+ out Restituisce `TRUE` se il tipo definito dall'utente è stato allineato a un limite di memoria; in caso contrario, restituisce `FALSE` .  
   
 ## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.  
+ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o codice di errore.  
   
 > [!NOTE]
-> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.  
   
-## <a name="remarks"></a>Note  
- Questa proprietà è impostata in genere quando il file eseguibile viene compilato con l'allineamento dei dati non predefinite. Ad esempio, il compilatore Microsoft C++ può modificare l'allineamento di dati con l'opzione della riga di comando, /Zp<em>#</em>, dove *#* è un valore di byte.  
+## <a name="remarks"></a>Commenti  
+ Questa proprietà viene in genere impostata quando il file eseguibile viene compilato con l'allineamento dei dati non predefinito. Il compilatore Microsoft C++, ad esempio, può modificare l'allineamento dei dati con l'opzione della riga di comando/ZP <em>#</em> , dove *#* è un valore byte.  
   
 ## <a name="requirements"></a>Requisiti  
   
-|Requisito|DESCRIZIONE|  
+|Requisito|Descrizione|  
 |-----------------|-----------------|  
-|Intestazione:|DIA2.h|  
+|Intestazione:|dia2. h|  
 |Version:|DIA SDK v8.0|  
   
 ## <a name="see-also"></a>Vedere anche  

@@ -14,28 +14,28 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 894378d6648139b7ec2b587eb0066a5725af7a71
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443729"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840324"
 ---
 # <a name="manage-channels"></a>Gestione dei canali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nella **visualizzazione Thread** del visualizzatore di concorrenza è possibile organizzare i canali per il processo in modo da poter esaminare modelli specifici. È possibile ordinare i canali, spostarli verso l'alto o verso il basso e nasconderli o visualizzarli.  
   
-## <a name="sort-by"></a>Ordina per  
+## <a name="sort-by"></a>Sort By (Ordina per)  
  Il controllo Ordina per può essere usato per ordinare i thread in base a diversi criteri, sulla base del livello di zoom corrente. Ciò è particolarmente utile quando si sta cercando un determinato modello. È possibile ordinare i thread secondo i criteri seguenti:  
   
 |Criteri|Definizione|  
 |--------------|----------------|  
-|Ora di inizio|Ordina i thread in base all'ora di inizio. Si tratta dell'ordinamento predefinito.|  
-|Ora di fine|Ordina i thread in base all'ora di fine.|  
+|Ora di Inizio|Ordina i thread in base all'ora di inizio. Si tratta dell'ordinamento predefinito.|  
+|Ora fine|Ordina i thread in base all'ora di fine.|  
 |Esecuzione|Ordina i thread in base alla percentuale di tempo trascorso in fase di esecuzione.|  
 |Sincronizzazione|Ordina i thread in base alla percentuale di tempo trascorso in fase di sincronizzazione.|  
 |I/O|Ordina i thread in base alla percentuale di tempo trascorso in fase di I/O (lettura e scrittura di dati).|  
-|Sleep|Ordina i thread in base alla percentuale di tempo trascorso in fase di sospensione.|  
+|Sospendi|Ordina i thread in base alla percentuale di tempo trascorso in fase di sospensione.|  
 |Paging|Ordina i thread in base alla percentuale di tempo trascorso in fase di paging.|  
 |Precedenza|Ordina i thread in base alla percentuale di tempo trascorso in fase di precedenza.|  
 |Elaborazione interfaccia utente|Ordina i thread in base alla percentuale di tempo trascorso in fase di elaborazione dell'interfaccia utente.|  
@@ -62,6 +62,6 @@ Nella **visualizzazione Thread** del visualizzatore di concorrenza è possibile 
  Se una traccia contiene eventi marcatori, è possibile usare questo comando per raggruppare i canali dei marcatori sotto il thread che ha generato gli eventi marcatori.  I canali dei dischi vengono spostati all'inizio dell'elenco dei canali e i canali GPU vengono spostati alla fine.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Controllo zoom (visualizzazione Thread)](../profiling/zoom-control-threads-view.md)   
- [Modalità misurazione attiva/non attiva](../profiling/measure-mode-on-off.md)   
+ [Controllo zoom (visualizzazione thread)](../profiling/zoom-control-threads-view.md)   
+ [Modalità misurazione attiva/disattiva](../profiling/measure-mode-on-off.md)   
  [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

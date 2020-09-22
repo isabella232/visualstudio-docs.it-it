@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e398d7e5e297daa68663902efb8a9fa0775c86fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431637"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839399"
 ---
 # <a name="understanding-performance-collection-methods"></a>Informazioni sui metodi di raccolta delle prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "63431637"
 Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è possibile usare per raccogliere dati sulle prestazioni. In questo argomento vengono descritti i diversi metodi e vengono suggeriti alcuni scenari in cui può risultare appropriata la raccolta dei dati con un particolare metodo.  
   
 > [!NOTE]
-> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app di Windows Store richiedono nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).  
+> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app di Windows Store richiedono nuove tecniche di raccolta. Vedere [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
@@ -34,11 +34,11 @@ Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è po
 |[Strumentazione](#instrumentation)|Raccoglie informazioni dettagliate sugli intervalli per ogni chiamata di funzione.|  
 |[Concorrenza](#concurrency)|Raccoglie informazioni dettagliate sulle applicazioni multithread.|  
 |[Memoria .NET](#net_memory)|Raccoglie informazioni dettagliate sull'allocazione e la Garbage Collection della memoria .NET.|  
-|[Interazioni tra livelli](#tier_interaction)|Raccoglie informazioni sulle chiamate di funzione ADO.NET sincrone a un database di SQL Server.<br /><br /> I dati di profilatura dell'interazione tra livelli possono essere raccolti usando [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] o [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Tuttavia, i dati di profilatura dell'interazione possono essere visualizzati solo in [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] o [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].|  
+|[Interazione tra livelli](#tier_interaction)|Raccoglie informazioni sulle chiamate di funzione ADO.NET sincrone a un database di SQL Server.<br /><br /> I dati di profilatura delle interazioni tra livelli possono essere raccolti usando [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] o [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)], Tuttavia, i dati di profilatura dell'interazione possono essere visualizzati solo in [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] o [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].|  
   
  Usando alcuni metodi di profilatura, è anche possibile raccogliere dati aggiuntivi, ad esempio i contatori delle prestazioni di hardware e software. Per altre informazioni, vedere [Raccolta di dati aggiuntivi relativi alle prestazioni](../profiling/collecting-additional-performance-data.md).  
   
-## <a name="sampling"></a> Campionamento  
+## <a name="sampling"></a><a name="sampling"></a> Campionamento  
  Il metodo di profilatura di campionamento raccoglie dati statistici sulle operazioni eseguite da un'applicazione durante l'esecuzione di una profilatura. Il metodo di campionamento è leggero e ha un impatto minimo sull'esecuzione dei metodi dell'applicazione.  
   
  Il campionamento è il metodo predefinito degli strumenti di profilatura di Visual Studio. È utile per le operazioni seguenti:  
@@ -55,9 +55,9 @@ Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è po
   
   [Informazioni sui valori dei dati di campionamento](../profiling/understanding-sampling-data-values.md)  
   
-  [Sampling Method Data Views](../profiling/profiler-sampling-method-data-views.md) (Visualizzazioni dei dati del metodo di campionamento)  
+  [Visualizzazioni dei dati dei metodi di campionamento](../profiling/profiler-sampling-method-data-views.md)  
   
-## <a name="instrumentation"></a> Strumentazione  
+## <a name="instrumentation"></a><a name="instrumentation"></a> Strumentazione  
  Il metodo di profilatura della strumentazione raccoglie informazioni dettagliate sugli intervalli per le chiamate di funzione in un'applicazione sottoposta a profilatura. La profilatura della strumentazione è utile per le operazioni seguenti:  
   
 - Analisi dei colli di bottiglia di input/output, ad esempio attività di I/O su disco.  
@@ -82,14 +82,14 @@ Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è po
   
   [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)  
   
-## <a name="concurrency"></a> Concorrenza  
+## <a name="concurrency"></a><a name="concurrency"></a> Concorrenza  
  La profilatura della concorrenza raccoglie informazioni sulle applicazioni multithread. La profilatura dei conflitti di risorse raccoglie informazioni dettagliate sullo stack di chiamate ogni volta che thread concorrenti sono obbligati ad attendere l'accesso a una risorsa condivisa. La visualizzazione della concorrenza raccoglie inoltre informazioni più generali sulla modalità di interazione dell'applicazione multithread con se stessa, l'hardware, il sistema operativo e altri processi nel computer host:  
   
 - I report sui conflitti di risorse visualizzano il numero totale di conflitti e il tempo totale trascorso in attesa di una risorsa per i moduli, le funzioni, le righe del codice sorgente e le istruzioni in cui si è verificata l'attesa. I grafici della sequenza temporale mostrano inoltre quando si sono verificati i conflitti.  
   
 - Il visualizzatore di concorrenza mostra informazioni grafiche che è possibile usare per individuare problemi relativi a colli di bottiglia delle prestazioni, sottoutilizzo della CPU, conflitti di thread, migrazione di thread, ritardi di sincronizzazione, aree di I/O sovrapposte e per ottenere altre informazioni. Quando possibile, l'output grafico fornisce collegamenti allo stack di chiamate e ai dati del codice sorgente. I dati di visualizzazione della concorrenza possono essere raccolti solo per la riga di comando e le applicazioni Windows.  
   
-  [Informazioni sui valori dei dati su conflitti di risorse](../profiling/understanding-resource-contention-data-values.md)  
+  [Informazioni sui valori dei dati sui conflitti di risorse](../profiling/understanding-resource-contention-data-values.md)  
   
   [Raccolta di dati di concorrenza di thread e processi](../profiling/collecting-thread-and-process-concurrency-data.md)  
   
@@ -97,7 +97,7 @@ Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è po
   
   [Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)  
   
-## <a name="net_memory"></a> Memoria .NET  
+## <a name="net-memory"></a><a name="net_memory"></a> Memoria .NET  
  Il metodo di profilatura dell'allocazione della memoria .NET interrompe il processore del computer a ogni allocazione di un oggetto .NET Framework in un'applicazione sottoposta a profilatura. Quando vengono raccolti anche dati sulla durata degli oggetti, il profiler interrompe il processore dopo ogni operazione di Garbage Collection di .NET Framework.  
   
  Il profiler raccoglie informazioni sul tipo, la dimensione e il numero degli oggetti che sono stati creati in un'allocazione o eliminati in un'operazione di Garbage Collection.  
@@ -112,16 +112,16 @@ Gli strumenti di profilatura di Visual Studio forniscono cinque metodi che è po
   
 - Quando si esegue la profilatura della memoria .NET in modalità di strumentazione, vengono raccolte informazioni dettagliate sugli intervalli insieme ai valori inclusivi ed esclusivi dell'allocazione.  
   
-  [Informazioni sull'allocazione di memoria e i valori dei dati di durata di un oggetto](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
+  [Informazioni sui valori dei dati di allocazione di memoria e durata degli oggetti](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
   
   [Raccolta di dati di durata e allocazione di memoria .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
   
   [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)  
   
-## <a name="tier_interaction"></a> Interazioni tra livelli  
+## <a name="tier-interaction"></a><a name="tier_interaction"></a> Interazione tra livelli  
  La profilatura di interazione tra livelli aggiunge informazioni a un file di dati di profilatura sulle chiamate [!INCLUDE[vstecado](../includes/vstecado-md.md)] sincrone tra una pagina [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] o un'altra applicazione e un database [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. I dati includono il numero e l'ora delle chiamate e i tempi massimi e minimi. I dati di interazione tra livelli possono essere aggiunti ai dati di profilatura raccolti con i metodi di campionamento, strumentazione, memoria .NET o concorrenza.  
   
- ![Dati di profilatura di interazione tra livelli](../profiling/media/tierinteraction-profilingtools.png "TierInteraction_ProfilingTools")  
+ ![Dati di profilo di interazione tra livelli](../profiling/media/tierinteraction-profilingtools.png "TierInteraction_ProfilingTools")  
 Dati di interazione tra livelli raccolti dagli strumenti di profilatura  
   
  [Raccolta di dati di interazione tra livelli](../profiling/collecting-tier-interaction-data.md)  
@@ -129,5 +129,5 @@ Dati di interazione tra livelli raccolti dagli strumenti di profilatura
  [Visualizzazioni Interazioni tra livelli](../profiling/tier-interaction-views.md)  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Raccogliere dati sulle prestazioni per un sito Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
+ [Procedura: raccogliere dati sulle prestazioni per un sito Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
  [Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md)

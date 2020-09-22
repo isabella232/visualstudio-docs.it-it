@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cce51860b335e16fe507b20e41a5adba0b3fa278
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418201"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839700"
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Scelta di una strategia di distribuzione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,14 +35,14 @@ Per la distribuzione di un'applicazione [!INCLUDE[ndptecclick](../includes/ndpte
 - Avvio dell'applicazione dal Web o da una condivisione di rete  
   
     > [!NOTE]
-    > Oltre alla scelta di una strategia di distribuzione, sarà anche possibile scegliere una strategia per gli aggiornamenti dell'applicazione. Per altre informazioni, vedere [scelta di una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
+    > Oltre alla scelta di una strategia di distribuzione, sarà anche possibile scegliere una strategia per gli aggiornamenti dell'applicazione. Per ulteriori informazioni, vedere [scelta di una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
   
 ## <a name="install-from-the-web-or-a-network-share"></a>Installazione dal Web o da una condivisione di rete  
  Se si utilizza questa strategia, l'applicazione verrà distribuita in un server Web o in una condivisione file di rete. Quando un utente finale desidera installare l'applicazione, fa clic su un'icona su una pagina Web oppure fa doppio clic su un'icona nella condivisione di rete. L'applicazione viene quindi scaricata, installata e avviata sul computer. Gli elementi vengono aggiunti al **menu Start** e al gruppo **Installazione applicazioni** nel **Pannello di controllo**.  
   
  Poiché dipende dalla connettività di rete, questa strategia è particolarmente consigliata per le applicazioni che devono essere distribuite a utenti che hanno accesso a una rete LAN o a una connessione Internet ad alta velocità.  
   
- Se si distribuisce l'applicazione dal Web, è possibile passare argomenti all'applicazione qualora venga attivata utilizzando un URL. Per altre informazioni, vedere [Procedura: recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Non è possibile passare argomenti a un'applicazione attivata utilizzando gli altri metodi descritti in questo documento.  
+ Se si distribuisce l'applicazione dal Web, è possibile passare argomenti all'applicazione qualora venga attivata utilizzando un URL. Per altre informazioni, vedere [procedura: recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce in linea](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Non è possibile passare argomenti a un'applicazione attivata utilizzando gli altri metodi descritti in questo documento.  
   
  Per attivare questa strategia di distribuzione in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], fare clic su **Dal Web** oppure su **Da un percorso UNC o condivisione file** nella pagina **Specificare come verrà installata l'applicazione dagli utenti** della Pubblicazione guidata.  
   
@@ -55,7 +55,7 @@ Per la distribuzione di un'applicazione [!INCLUDE[ndptecclick](../includes/ndpte
   
  Per attivare questa strategia di distribuzione in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], fare clic su **Da CD-ROM o DVD-ROM** nella pagina **Specificare come verrà installata l'applicazione dagli utenti** della Pubblicazione guidata.  
   
- Per attivare manualmente questa strategia di distribuzione, modificare il tag **deploymentProvider** nel manifesto di distribuzione. In Visual Studio questa proprietà è esposta come **URL installazione** nella pagina **Pubblica** di Progettazione progetti. È in Mage.exe **percorso iniziale**.)  
+ Per attivare manualmente questa strategia di distribuzione, modificare il tag **deploymentProvider** nel manifesto di distribuzione. In Visual Studio questa proprietà è esposta come **URL installazione** nella pagina **Pubblica** di Progettazione progetti. In Mage.exe corrisponde invece all'opzione **Start Location**.  
   
 ## <a name="start-the-application-from-the-web-or-a-network-share"></a>Avvio dell'applicazione dal Web o da una condivisione di rete  
  Questa strategia è simile alla prima, tranne per il fatto che in questo caso l'applicazione si comporta come un'applicazione Web. Quando l'utente fa clic su collegamento in una pagina Web, oppure fa doppio clic su un'icona della condivisione file, l'applicazione viene avviata. Quando viene chiusa dall'utente, l'applicazione non è più disponibile nel computer locale. Nessun elemento viene aggiunto al **menu Start** o al gruppo **Installazione applicazioni** del **Pannello di controllo**.  
@@ -67,7 +67,7 @@ Per la distribuzione di un'applicazione [!INCLUDE[ndptecclick](../includes/ndpte
   
  Per attivare questa strategia di distribuzione in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], fare clic su **Non installare l'applicazione** nella pagina **Installa o esegui dal Web** della Pubblicazione guidata.  
   
- Per attivare manualmente questa strategia di distribuzione, modificare il tag **install** nel manifesto di distribuzione. Il valore può essere **true** o **false**. In Mage.exe, usare il **solo in linea** opzione il **tipo di applicazione** elenco.)  
+ Per attivare manualmente questa strategia di distribuzione, modificare il tag **install** nel manifesto di distribuzione. Il valore può essere **true** o **false**. In Mage.exe usare l'opzione **solo online** nell'elenco **tipo di applicazione** .  
   
 ## <a name="web-browser-support"></a>Supporto Web browser  
  Le applicazioni destinate a .NET Framework 3.5 possono essere installate utilizzando qualsiasi browser.  
@@ -77,5 +77,5 @@ Per la distribuzione di un'applicazione [!INCLUDE[ndptecclick](../includes/ndpte
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Scelta di una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
- [Procedura: Pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Sicurezza di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
+ [Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
