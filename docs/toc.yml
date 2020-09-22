@@ -260,9 +260,21 @@
         - name: Personalizzare le attività di compilazione e debug
           displayName: makefile tasks.vs.json
           href: ide/customize-build-and-debug-tasks-in-visual-studio.md
+    - name: Sviluppare con Codespaces (anteprima)
+      items:
+        - name: Panoramica
+          href: ide/codespaces/codespaces-overview.md
+        - name: Usare Visual Studio con un codespace
+          href: ide/codespaces/use-visual-studio-with-codespaces.md
+        - name: Personalizzare un codespace
+          href: ide/codespaces/customize-codespaces.md
+        - name: Funzionalità di Visual Studio supportate
+          href: ide/codespaces/supported-features-codespaces.md
     - name: Connettersi a un progetto o repository
       displayName: Azure DevOps VSTS GitHub
       href: ide/connect-team-project.md
+    - name: Nuova esperienza Git in Visual Studio (anteprima)
+      href: ide/git-with-visual-studio.md
     - name: Editor
       items:
         - name: Usare l'editor
@@ -960,7 +972,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Prodotti e servizi Microsoft per l'accessibilità
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Informazioni di riferimento
+- name: Riferimento
   items:
     - name: Scelte rapide da tastiera
       items:
