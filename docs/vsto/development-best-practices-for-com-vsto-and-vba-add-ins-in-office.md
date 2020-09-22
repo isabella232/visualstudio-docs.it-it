@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d5dd8864484e2b41a1146f1da495251663afdb6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be48e7ce721c84656362a019e0cc5eec1ae2ee17
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801503"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808207"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Procedure consigliate per lo sviluppo di componenti aggiuntivi COM, VSTO e VBA in Office
   Se si sviluppano componenti aggiuntivi COM, VSTO o VBA per Office, seguire le procedure consigliate per lo sviluppo descritte in questo articolo.   In modo da garantire:
@@ -31,7 +31,7 @@ ms.locfileid: "88801503"
  Non è consigliabile che il componente aggiuntivo rilevi se Office è installato durante il processo di installazione del componente aggiuntivo. Se Office non è installato, è possibile installare il componente aggiuntivo e l'utente sarà in grado di accedervi dopo l'installazione di Office.
 
 ## <a name="use-embedded-interop-types-nopia"></a>Usare i tipi di interoperabilità incorporati (NoPIA)
-Se la soluzione USA .NET 4,0 o versione successiva, usare i tipi di interoperabilità incorporati (NoPIA) anziché a seconda degli assembly di interoperabilità primari di Office (PIA) ridistribuibili. L'uso dell'incorporamento dei tipi riduce le dimensioni di installazione della soluzione e garantisce la compatibilità futura. Office 2010 è stata l'ultima versione di Office che ha fornito l'assembly di interoperabilità primario ridistribuibile. Per altre informazioni, vedere [procedura dettagliata: incorporamento delle informazioni sui tipi da assembly Microsoft Office](https://msdn.microsoft.com/library/ee317478.aspx) e [equivalenza del tipo e tipi di interoperabilità incorporati](/windows/uwp/porting/desktop-to-uwp-root).
+Se la soluzione USA .NET 4,0 o versione successiva, usare i tipi di interoperabilità incorporati (NoPIA) anziché a seconda degli assembly di interoperabilità primari di Office (PIA) ridistribuibili. L'uso dell'incorporamento dei tipi riduce le dimensioni di installazione della soluzione e garantisce la compatibilità futura. Office 2010 è stata l'ultima versione di Office che ha fornito l'assembly di interoperabilità primario ridistribuibile. Per altre informazioni, vedere [procedura dettagliata: incorporamento delle informazioni sui tipi da assembly Microsoft Office](/previous-versions/ee317478(v=vs.140)) e [equivalenza del tipo e tipi di interoperabilità incorporati](/windows/uwp/porting/desktop-to-uwp-root).
 
 Se la soluzione USA una versione precedente di .NET, è consigliabile aggiornare la soluzione per l'uso di .NET 4,0 o versione successiva. L'uso di .NET 4,0 o versione successiva riduce i prerequisiti di runtime nelle versioni più recenti di Windows.
 

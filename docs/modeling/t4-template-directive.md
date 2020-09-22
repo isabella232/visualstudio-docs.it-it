@@ -7,12 +7,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2763ca540a6b0518eed8bf757412716616d3ae3e
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591840"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808064"
 ---
 # <a name="t4-template-directive"></a>Direttiva template T4
 
@@ -96,7 +96,7 @@ Se si imposta il valore di questo attributo su `true`, viene aggiunta una propri
 
 Poiché il tipo di questa proprietà dipende dal tipo di host, è utile solo se si scrive un modello di testo che funziona solo con un host specifico. È applicabile ai [modelli della fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md), ma non ai modelli in fase di [esecuzione](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Quando `hostspecific` è `true` e si usa Visual Studio, è possibile eseguire il cast `this.Host` a IServiceProvider per accedere alle funzionalità di Visual Studio. È inoltre possibile utilizzare `Host.ResolvePath(filename)` per ottenere il percorso assoluto di un file nel progetto. Ad esempio:
+Quando `hostspecific` è `true` e si usa Visual Studio, è possibile eseguire il cast `this.Host` a IServiceProvider per accedere alle funzionalità di Visual Studio. È inoltre possibile utilizzare `Host.ResolvePath(filename)` per ottenere il percorso assoluto di un file nel progetto. Esempio:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -134,7 +134,7 @@ Valori validi:
 
 L' `language` attributo specifica la lingua ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ) da usare per il codice sorgente nei blocchi di istruzione e di espressione. Il file di codice intermedio dal quale viene generato l'output utilizzerà questo linguaggio. Questo linguaggio non è correlato al linguaggio generato dal modello, che può essere qualsiasi tipo di testo.
 
-Ad esempio:
+Esempio:
 
 ```vb
 <#@ template language="VB" #>
@@ -235,7 +235,7 @@ Un modello di testo della fase di progettazione è un file per il quale **lo str
 
 Per un modello di testo della fase di progettazione, è possibile specificare qualsiasi classe di base derivata da <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Utilizzare la direttiva `<#@assembly#>` per caricare l'assembly o il progetto contenente la classe di base.
 
-Per ulteriori informazioni, vedere ["ereditarietà nei modelli di testo" nel Blog di Gareth Jones](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/).
+Per ulteriori informazioni, vedere ["ereditarietà nei modelli di testo" nel Blog di Gareth Jones](/archive/blogs/garethj/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata).
 
 ## <a name="linepragmas-attribute"></a>attributo linePragmas
 

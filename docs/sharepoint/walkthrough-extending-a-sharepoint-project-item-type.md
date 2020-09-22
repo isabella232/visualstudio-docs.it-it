@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f949329c7db71386a12c3ab8d7fccf1483b8cca2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8186b1a1388745527fbb9f4dd37478942c36e62
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015669"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740006"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Procedura dettagliata: estensione di un tipo di elemento di progetto SharePoint
   È possibile utilizzare l'elemento di progetto **modello di integrazione applicativa dei dati** per creare un modello per il servizio di integrazione applicativa dei dati in SharePoint. Per impostazione predefinita, quando si crea un modello utilizzando questo elemento del progetto, i dati nel modello non vengono visualizzati agli utenti. È inoltre necessario creare un elenco esterno in SharePoint per consentire agli utenti di visualizzare i dati.
@@ -161,7 +161,7 @@ ms.locfileid: "86015669"
 
 1. In **Esplora soluzioni**aprire il menu di scelta rapida per il file source. Extension. vsixmanifest nel progetto GenerateExternalDataLists, quindi scegliere **Apri**.
 
-     Visual Studio apre il file nell'editor manifesto. Il file source. Extension. vsixmanifest è la base del file Extension. vsixmanifest è richiesto da tutti i pacchetti VSIX. Per altre informazioni su questo file, vedere [riferimento allo schema di estensione VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Visual Studio apre il file nell'editor manifesto. Il file source. Extension. vsixmanifest è la base del file Extension. vsixmanifest è richiesto da tutti i pacchetti VSIX. Per altre informazioni su questo file, vedere [riferimento allo schema di estensione VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Nella casella **Product Name** immettere **External Data List Generator**.
 

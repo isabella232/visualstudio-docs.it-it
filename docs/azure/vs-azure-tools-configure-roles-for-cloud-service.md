@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 960bd86a1e0993e4d2c57514a29ceecca34cca3d
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 7107e7f9b156f4f62e798b7f4ffb283fb8a6678c
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508509"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740045"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configurare un ruolo per un servizio cloud di Azure con Visual Studio
 Un servizio cloud di Azure può includere uno o più ruoli di lavoro o ruoli Web. Per ogni ruolo è necessario definire la modalità di configurazione e configurare la modalità di esecuzione. Per altre informazioni sui ruoli nei servizi cloud, vedere il video [Introduzione ai servizi cloud di Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -24,7 +24,7 @@ Le informazioni per il servizio cloud vengono archiviate nei file seguenti:
 - **File ServiceDefinition. csdef** : il file di definizione del servizio definisce le impostazioni della fase di esecuzione per il servizio cloud, inclusi i ruoli richiesti, gli endpoint e le dimensioni della macchina virtuale. Nessun dato archiviato in `ServiceDefinition.csdef` può essere modificato durante l'esecuzione del ruolo.
 - **ServiceConfiguration.cscfg** - Il file di configurazione del servizio configura il numero delle istanze di un ruolo che vengono eseguite e i valori delle impostazioni definiti per un ruolo. I dati archiviati in `ServiceConfiguration.cscfg` possono essere modificati durante l'esecuzione del ruolo.
 
-Per archiviare valori diversi per le impostazioni che controllano l'esecuzione del ruolo, è possibile creare più configurazioni del servizio. È possibile usare una configurazione del servizio diversa per ogni ambiente di distribuzione. Ad esempio, è possibile configurare la stringa di connessione dell'account di archiviazione in modo che usi l'emulatore di archiviazione di Azure locale in una configurazione del servizio locale e creare un'altra configurazione del servizio in modo che usi l'archiviazione di Azure nel cloud.
+Per archiviare valori diversi per le impostazioni che controllano l'esecuzione del ruolo, è possibile creare più configurazioni del servizio. È possibile usare una configurazione del servizio diversa per ogni ambiente di distribuzione. Ad esempio, è possibile impostare la stringa di connessione dell'account di archiviazione per usare l'emulatore di archiviazione di Azure locale in una configurazione del servizio locale e creare un'altra configurazione del servizio per usare archiviazione di Azure nel cloud.
 
 Quando si crea un servizio cloud in Visual Studio, vengono automaticamente create due configurazioni del servizio che sono poi aggiunte al progetto Azure:
 

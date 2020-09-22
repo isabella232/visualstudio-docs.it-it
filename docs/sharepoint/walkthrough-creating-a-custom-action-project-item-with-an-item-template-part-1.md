@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eccb9038b9fd929c713422aa79082c94ade512fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5b19f99cf9688191a5b6ef8ba8d4f58f4c6633c
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015929"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739941"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Procedura dettagliata: creare un elemento di progetto azione personalizzata con un modello di elemento, parte 1
   Per estendere il sistema del progetto SharePoint in Visual Studio, è possibile creare tipi di elemento di progetto personalizzati. In questa procedura dettagliata verrà creato un elemento del progetto che può essere aggiunto a un progetto SharePoint per creare un'azione personalizzata in un sito di SharePoint. L'azione personalizzata consente di aggiungere una voce di menu al menu **Azioni sito** del sito di SharePoint.
@@ -295,7 +295,7 @@ ms.locfileid: "86015929"
 
 1. In **Esplora soluzioni**aprire il menu di scelta rapida per il file **source. Extension. vsixmanifest** nel progetto CustomActionProjectItem, quindi scegliere **Apri**.
 
-     Visual Studio apre il file nell'editor manifesto. Il file source. Extension. vsixmanifest è la base per il file Extension. vsixmanifest che tutti i pacchetti VSIX richiedono. Per altre informazioni su questo file, vedere [riferimento allo schema di estensione VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Visual Studio apre il file nell'editor manifesto. Il file source. Extension. vsixmanifest è la base per il file Extension. vsixmanifest che tutti i pacchetti VSIX richiedono. Per altre informazioni su questo file, vedere [riferimento allo schema di estensione VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Nella casella **nome prodotto** immettere **elemento progetto azione personalizzata**.
 

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6b53fb34b3cff444e57491f878f8385bdb523c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1269049adad3fe2d26caa79721452f7f313e60d5
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285049"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739902"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gestire i pacchetti npm in Visual Studio
 
@@ -42,7 +42,7 @@ Queste funzionalità interagiscono e si sincronizzano con il sistema di progetto
 
 ### <a name="prerequisites"></a>Prerequisiti
 
-Per aggiungere il supporto NPM al progetto sono necessari il carico di lavoro di ** sviluppoNode.js** e il runtime di Node.js installato. Per i passaggi dettagliati, vedere [creare un Node.js progetto](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json).
+Per aggiungere il supporto NPM al progetto sono necessari il carico di lavoro di ** sviluppoNode.js** e il runtime di Node.js installato. Per i passaggi dettagliati, vedere [creare un Node.js progetto](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json).
 
 > [!NOTE]
 > Per i progetti di Node.js esistenti, usare il modello **di soluzione da codice Node.js esistente** o il tipo di progetto [cartella aperta (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md) per abilitare NPM nel progetto.
@@ -86,7 +86,7 @@ Fare clic con il pulsante destro del mouse sul nodo **NPM** per eseguire una del
 
 * **Installare nuovi pacchetti NPM** Apre l'interfaccia utente per installare i nuovi pacchetti.
 * **Installare i pacchetti NPM** Esegue il comando NPM install per installare tutti i pacchetti elencati in *package.json*. (Esegue `npm install` ).
-* **Aggiornare i pacchetti NPM** Aggiorna i pacchetti alle versioni più recenti, in base all'intervallo di semver specificato in *package.json*. (Esegue `npm update --save` .). Gli intervalli di Semver vengono in genere specificati usando "~" o "^". Per ulteriori informazioni, [package.jssulla configurazione](../javascript/configure-packages-with-package-json.md).
+* **Aggiornare i pacchetti NPM** Aggiorna i pacchetti alle versioni più recenti in base all'intervallo di controllo delle versioni semantico (semver) specificato in *package.json*. (Esegue `npm update --save` .). Gli intervalli di Semver vengono in genere specificati usando "~" o "^". Per ulteriori informazioni, [package.jssulla configurazione](../javascript/configure-packages-with-package-json.md).
 
 Fare clic con il pulsante destro del mouse su un nodo del pacchetto per eseguire una delle azioni seguenti:
 
@@ -126,7 +126,7 @@ Per progetti come ASP.NET Core progetti, è possibile integrare il supporto NPM 
 * [Installare i pacchetti usando package.json](#npmInstallPackage)
 
 >[!NOTE]
-> Per ASP.NET Core progetti, è anche possibile usare [Gestione librerie](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) o Yarn anziché NPM per installare i file CSS e JavaScript sul lato client.
+> Per ASP.NET Core progetti, è anche possibile usare [Gestione librerie](/aspnet/core/client-side/libman/?view=aspnetcore-3.1) o Yarn anziché NPM per installare i file CSS e JavaScript sul lato client.
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a> Aggiungere il supporto NPM a un progetto (ASP.NET Core)
 
@@ -181,4 +181,3 @@ L'installazione di un pacchetto potrebbe richiedere alcuni minuti. Controllare l
 * In alcuni scenari Esplora soluzioni possibile che non venga visualizzato lo stato corretto per i pacchetti NPM installati a causa di un problema noto descritto [qui](https://github.com/aspnet/Tooling/issues/479). È ad esempio possibile che il pacchetto venga visualizzato come non installato al momento dell'installazione. Nella maggior parte dei casi, è possibile aggiornare Esplora soluzioni eliminando *package.js*, riavviando Visual Studio e aggiungendo nuovamente il *package.jssul* file come descritto in precedenza in questo articolo. In alternativa, quando si installano i pacchetti, è possibile usare la finestra di output NPM per verificare lo stato dell'installazione.
 
 * Se si verificano errori durante la compilazione dell'app o il transimpilamento del codice TypeScript, verificare la presenza di incompatibilità del pacchetto NPM come origine potenziale di errori. Per semplificare l'identificazione degli errori, controllare la finestra di output di NPM durante l'installazione dei pacchetti, come descritto in precedenza in questo articolo. Se ad esempio una o più versioni del pacchetto NPM sono state deprecate e generano un errore, potrebbe essere necessario installare una versione più recente per correggere gli errori. Per informazioni sull'uso di *package.json* per controllare le versioni del pacchetto npm, vedere [Configurazione di package.json](../javascript/configure-packages-with-package-json.md).
-
