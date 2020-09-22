@@ -70,7 +70,7 @@ Quando si installa Visual Studio, viene chiesto di scegliere una serie di impost
 
 8. Nella pagina **Importazione completa** esaminare gli eventuali errori associati alla riconfigurazione delle impostazioni in **Dettagli**.
 
-9. Fare clic su **Close**.
+9. Fare clic su **Chiudi**.
 
 ## <a name="see-also"></a>Vedere anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)

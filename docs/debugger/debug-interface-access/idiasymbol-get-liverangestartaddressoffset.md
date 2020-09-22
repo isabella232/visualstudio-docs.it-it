@@ -41,7 +41,7 @@ out Restituisce la parte dell'offset dell'intervallo di indirizzi iniziale.
 > [!NOTE]
 > Un codice di errore restituito indica che il simbolo non contiene informazioni sull'intervallo Live.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'indirizzo formato dalla sezione e dall'offset è l'inizio dell'intervallo in cui il simbolo è valido.
 
  Per ottenere la parte della sezione dell'indirizzo, usare [IDiaSymbol:: get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).
