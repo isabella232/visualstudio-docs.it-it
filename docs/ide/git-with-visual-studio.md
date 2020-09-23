@@ -149,7 +149,7 @@ Possono verificarsi conflitti durante un'operazione di merge se due sviluppatori
 
 Visual Studio semplifica l'identificazione e la risoluzione di un conflitto di merge. In primo luogo, la finestra del **repository git** Mostra una barra delle informazioni in oro nella parte superiore della finestra.
 
-:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Screenshot del messaggio "merge completato con conflitti" in Visual Studio ":::
+:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Screenshot del messaggio merge completato con conflitti in Visual Studio ":::
 
 La finestra **modifiche git** Visualizza anche un messaggio "*merge is in progress with Conflicts*", con i file non Uniti nella relativa sezione separata sotto.
 
