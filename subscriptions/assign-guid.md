@@ -1,21 +1,23 @@
 ---
 title: Assegnare GUID specifici ai sottoscrittori di Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
-ms.date: 04/20/2020
+ms.author: v-evwin
+manager: cabuschl
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono eseguire il GUID di sottoscrizione specifico per i sottoscrittori
-ms.openlocfilehash: e6c50239721d810964f2b95e0ec3509999d2f4d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31544718683b10a186d4c38486bf0cd7923cd4cf
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235186"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022481"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Assegnare sottoscrizioni specifiche nel portale di amministrazione delle sottoscrizioni di Visual Studio
 
 Gli amministratori possono ora utilizzare il portale di amministrazione delle sottoscrizioni di Visual Studio per assegnare sottoscrizioni specifiche ai singoli sottoscrittori.  Questo può essere utile nelle situazioni in cui l'organizzazione dispone di un personale temporaneo o di fornitori che necessitano dell'accesso a una sottoscrizione per un breve periodo di tempo.  Gli amministratori possono assegnare una sottoscrizione che è già stata usata parzialmente, lasciando le nuove sottoscrizioni per l'uso a lungo termine.  
+
+Guardare il video o leggere per informazioni su come assegnare GUID di sottoscrizioni specifici agli utenti. 
 
 <br>
 
@@ -57,7 +59,7 @@ Il passaggio finale consiste nel scaricare il modello di **aggiunta in blocco** 
 > - Il GUID non è già assegnato a un altro utente nell'elenco esportato. 
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
-### <a name="qhow-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>D: modificare la sottoscrizione attualmente assegnata a un singolo utente?
+### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>D: Ricerca per categorie modificare la sottoscrizione attualmente assegnata a un singolo utente?
 R: se si desidera modificare il GUID assegnato a un utente, è innanzitutto necessario eliminare la sottoscrizione per tale utente.  Per ulteriori informazioni, vedere l'articolo [eliminare sottoscrizioni](delete-license.md) .  Dopo aver eliminato la sottoscrizione per l'utente, usare il processo descritto sopra per esportare l'elenco e caricare le nuove informazioni sulla sottoscrizione.  
 
 ## <a name="see-also"></a>Vedere anche

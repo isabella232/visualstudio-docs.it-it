@@ -1,18 +1,18 @@
 ---
 title: Eseguire ricerche e applicare filtri | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
-ms.date: 08/10/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono individuare singoli sottoscrittori o gruppi nel portale di amministrazione.
-ms.openlocfilehash: 29354348b423b539b79c36c78f213f7a20d60eb3
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 341f8e9739b629330775ff8688c5fdf872165e3a
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005303"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022236"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Cercare e filtrare i sottoscrittori nelle sottoscrizioni di Visual Studio
 Portale di amministrazione delle sottoscrizioni di Visual Studio consente di trovare un sottoinsieme specifico di sottoscrittori in base a diversi criteri. È possibile applicare un filtro all'elenco di sottoscrittori per nome, indirizzo di posta elettronica, livello di sottoscrizione e altre informazioni.
@@ -30,7 +30,7 @@ Portale di amministrazione delle sottoscrizioni di Visual Studio consente di tro
    > [!NOTE]
    > Il campo **Nome** viene ordinato in base al nome.
 
-   Si noti che l'icona del **filtro** è evidenziata, a indicare che è applicato un filtro.  Viene visualizzata anche una scelta di **filtro chiara** . 
+   Si noti che l'icona del **filtro** è evidenziata, a indicare che è applicato un filtro.  Viene visualizzata anche una scelta di **filtro chiara** . In questo esempio è stato filtrato l'elenco di sottoscrittori per trovare quelli con @outlook.com indirizzi di posta elettronica. 
 
 3. Per cancellare il filtro e ripristinare l'elenco non filtrato, fare clic sulla scheda **Cancella filtro** in alto a destra. 
    > [!div class="mx-imgBorder"]

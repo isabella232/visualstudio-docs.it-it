@@ -1,7 +1,8 @@
 ---
 title: Disegnare forme e tracciati
+description: Usare Blend per Visual Studio per aggiungere altri dettagli a forme e percorsi
 titleSuffix: Blend for Visual Studio
-ms.date: 07/31/2019
+ms.date: 09/22/2020
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: TerryGLee
@@ -9,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 368619a55316e0af59fc5351e187ced8892a6116
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350823"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022508"
 ---
 # <a name="draw-shapes-and-paths"></a>Disegnare forme e tracciati
 
@@ -26,7 +27,7 @@ Le forme e i tracciati usano la grafica vettoriale per una scalabilità ottimale
 
 Trovare le forme nella finestra **Asset**.
 
-![Categoria Forme nella finestra Asset](media/blend-shapes.png)
+:::image type="content" source="media/blend-shapes.png" alt-text="Screenshot della categoria forme della finestra asset in Blend per Visual Studio":::
 
 Trascinare la forma da usare nella tavola da disegno. Usare quindi i quadratini sulla forma per ridimensionarla, ruotarla, spostarla o inclinarla.
 
@@ -99,7 +100,7 @@ Per modificare una forma in modo analogo alla modifica di un tracciato, converti
 
 ![Combinare tracciati](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|Number|Action|
+|Numero|Azione|
 |-|-|
 |![Due forme prima della combinazione](../designers/media/b1_1.png)|Due forme prima della combinazione|
 |![Unisci](../designers/media/b1_2.png)|Unisci|

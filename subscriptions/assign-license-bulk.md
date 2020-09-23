@@ -1,23 +1,23 @@
 ---
 title: Assegnare licenze a gruppi di utenti per sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 05/10/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono assegnare licenze a più sottoscrittori usando la funzionalità di aggiunta in blocco o i gruppi di Microsoft Azure Active Directory
-ms.openlocfilehash: cbcdab00568e375633ddd9d6d350978d6ec56d2a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005766"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022422"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Assegnare sottoscrizioni a più utenti
 Il portale di amministrazione delle sottoscrizioni permette di aggiungere utenti uno per volta o in gruppi di grandi dimensioni.  Per aggiungere singoli utenti, vedere [Aggiungere singoli utenti](assign-license.md).
 
-Per aggiungere gruppi di utenti di grandi dimensioni, è possibile utilizzare la funzionalità di aggiunta in blocco o, se l'organizzazione utilizza Microsoft Azure Active Directory (Azure AD), è possibile utilizzare Azure AD gruppi. In questo articolo viene illustrato il processo per entrambe le opzioni. 
+Per aggiungere gruppi di utenti di grandi dimensioni, è possibile utilizzare la funzionalità di aggiunta in blocco o, se l'organizzazione utilizza Microsoft Azure Active Directory (Azure AD), è possibile utilizzare Azure AD gruppi. In questo articolo viene illustrato il processo per entrambe le opzioni.  Guardare questo video o leggere per ulteriori informazioni sulla funzionalità di aggiunta in blocco. 
 
 <br>
 
@@ -64,7 +64,8 @@ Per aggiungere gruppi di utenti di grandi dimensioni, è possibile utilizzare la
 
    Se si verifica un errore, attenersi alla procedura seguente:
    1. Aprire il file di Excel creato, risolvere i problemi e salvare il file.
-   0. Tornare al portale di dell'amministrazione e scegliere **Aggiungi**.
+   0. Tornare al portale di amministrazione e chiudere il messaggio di errore.
+   0. Scegliere **Aggiungi**.
    0. Selezionare **Aggiungi in blocco**.
    0. Poiché è già stato salvato il file di Excel, non è necessario scaricare il modello.  Selezionare **Sfoglia**, individuare il file appena salvato e selezionare **Apri**.
    0. Selezionare **OK**.
@@ -81,7 +82,7 @@ L'uso di questa funzionalità consente di mantenere più facilmente le assegnazi
 > [!IMPORTANT]
 >
 > Per l'utilizzo di gruppi di Azure AD per l'aggiunta di sottoscrittori, si applicano le limitazioni seguenti:
-> - L'amministratore deve essere un membro del tenant AAD quando aggiunge inizialmente un gruppo al portale di dell'amministrazione.  Una volta aggiunto il gruppo, le modifiche apportate all'appartenenza dei gruppi non richiedono l'intervento dell'amministratore. 
+> - L'amministratore deve essere un membro del tenant AAD quando inizialmente aggiunge un gruppo al portale di amministrazione.  Una volta aggiunto il gruppo, le modifiche apportate all'appartenenza dei gruppi non richiedono l'intervento dell'amministratore. 
 > - I gruppi devono contenere almeno un membro.  I gruppi vuoti non sono supportati.
 > - I gruppi devono avere meno di 1.000 utenti. 
 > - Tutti gli utenti devono trovarsi nel primo livello del gruppo.  I gruppi annidati non sono supportati.
@@ -89,6 +90,7 @@ L'uso di questa funzionalità consente di mantenere più facilmente le assegnazi
 > - Tutti i membri del gruppo devono avere un indirizzo di posta elettronica associato all'account Azure AD.
 > - Gli indirizzi di posta elettronica separati per le notifiche non sono supportati per le sottoscrizioni aggiunte con Azure AD gruppi.  
 
+Guardare questo video o leggere per altre informazioni sull'aggiunta di sottoscrittori con la funzionalità gruppo di Azure Active Directory. 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]

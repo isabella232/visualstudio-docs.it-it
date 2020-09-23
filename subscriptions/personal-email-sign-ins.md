@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 09/17/2020
+ms.date: 09/22/2020
 ms.topic: conceptual
 description: Sottoscrizioni di Visual Studio - Perché vengono visualizzati indirizzi Hotmail o Gmail per i sottoscrittori?
-ms.openlocfilehash: c7a5546a99ed73175ab0f4af2c22b3cbf20c0bdd
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: dc2de6c852f39f789fb07358384ad490d13f137c
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006072"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022656"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Sottoscrizioni di Visual Studio: perché vengono visualizzati gli account personali per i sottoscrittori?
 Dopo la migrazione delle aziende da Volume Licensing Service Center (VLSC) al nuovo portale di [amministrazione delle sottoscrizioni](https://manage.visualstudio.com)di Visual Studio, gli amministratori sono sorpresi di scoprire che l'indirizzo di posta elettronica di accesso per alcuni sottoscrittori Mostra un indirizzo di posta elettronica personale come Hotmail o Outlook.  
@@ -28,20 +28,21 @@ Durante il processo di attivazione del sottoscrittore, veniva richiesto un accou
 > L'esperienza del Sottoscrittore moderna di [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) supporta sia i tipi di identità dell'account aziendale che dell'Istituto di istruzione Microsoft (MSA).
 
 ## <a name="solution"></a>Soluzione
+Per risolvere il problema, è sufficiente selezionare il pulsante **Connetti messaggi di posta elettronica** e il sistema tenterà di associare gli account di MSAS agli utenti esistenti nell'Azure Active Directory dell'organizzazione (Azure ad) in base alla corrispondenza con il nome e il cognome. Se si verifica un errore, è possibile rimuovere qualsiasi corrispondenza facendo clic sulla **X** a destra della corrispondenza.  
+
+Guarda questo video o continua a leggere per scoprire come risolverlo. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6B]
-
-Per risolvere il problema, è sufficiente selezionare il pulsante **Connetti messaggi di posta elettronica** e il sistema tenterà di associare gli account di MSAS agli utenti esistenti nell'Azure Active Directory dell'organizzazione (Azure ad) in base alla corrispondenza con il nome e il cognome. Se si verifica un errore, è possibile rimuovere qualsiasi corrispondenza facendo clic sulla **X** a destra della corrispondenza.  
 
 > [!div class="mx-imgBorder"]
 > ![Pulsante Connetti messaggi di posta elettronica](_img/connect-emails/connect-emails-button.png "Fare clic su Connetti messaggi di posta elettronica per trovare la corrispondenza con gli utenti con account Microsoft per il Azure Active Directory")
 
-È anche possibile usare la **directory di ricerca** per correggere gli errori o inserire le informazioni mancanti dal Azure ad. Se l'aspetto di tutte le corrispondenze è corretto, è possibile scegliere "Seleziona tutti i sottoscrittori corrispondenti", anziché selezionarli uno alla volta.  
+È anche possibile usare la **directory di ricerca** per correggere gli errori o inserire le informazioni mancanti dal Azure ad. Se l'aspetto di tutte le corrispondenze è corretto, è possibile scegliere il pulsante **identità corrente** per selezionare tutte le voci corrispondenti anziché selezionarle una alla volta.  
 
 > [!div class="mx-imgBorder"]
 > ![Connessione al volo](_img/connect-emails/connect-emails-flyout.png "Selezionare i sottoscrittori di cui si desidera trovare la corrispondenza con le identità Azure AD e fare clic su continua.")
 
-Fare quindi clic su "continua" per passare a un elenco delle modifiche da eseguire. Se si accetta, fare clic su "Salva" per apportare le modifiche. Il sottoscrittore riceverà anche un messaggio che li informa della modifica al successivo accesso alla sottoscrizione.   
+Fare quindi clic su **continue (continua** ) per passare a un elenco delle modifiche da eseguire. Se si accetta, fare clic su **Salva** e verranno apportate le modifiche. Il sottoscrittore riceverà anche un messaggio che li informa della modifica al successivo accesso alla sottoscrizione.  Si noti che in questo elenco vengono visualizzati solo i due Sottoscrittori che corrispondono all'Azure Active Directory.  In questo esempio, poiché Frederick non ha un indirizzo corrispondente nella Azure AD, il suo account Microsoft (MSA) non corrisponde a un account aziendale. 
 
 > [!div class="mx-imgBorder"]
 > ![Conferma connessione messaggi di posta elettronica](_img/connect-emails/connect-emails-confirm.png "Fare clic su continua per implementare le modifiche proposte, quindi fare clic su Salva.") 

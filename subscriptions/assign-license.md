@@ -1,18 +1,18 @@
 ---
 title: Assegnare licenze a sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
-ms.date: 03/02/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono assegnare licenze ai sottoscrittori
-ms.openlocfilehash: f458e12cd27688f910917842de89e6377675fb69
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: cd64aa058ab5c0518fc27bf1ee64acef3b5b79a2
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006202"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022197"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Assegnare licenze nel portale di amministrazione delle sottoscrizioni di Visual Studio
 In qualità di amministratore delle sottoscrizioni di Visual Studio, è possibile usare il portale di amministrazione per assegnare sottoscrizioni a singoli utenti e gruppi di utenti.
@@ -24,7 +24,7 @@ Per i gruppi di utenti, è possibile scegliere la modalità di assegnazione dell
 
 
 ## <a name="add-a-single-subscriber"></a>Aggiungere un singolo sottoscrittore
-Ecco come assegnare una sottoscrizione di Visual Studio a un nuovo utente per poter accedere ai vantaggi della sottoscrizione.
+Guardare il video o leggere per informazioni su come assegnare una sottoscrizione di Visual Studio a un nuovo utente in modo da poter accedere ai vantaggi della sottoscrizione.
 
 <br>
 

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ec29ecc0c54646637a3176641ab21f40c20fa2fc
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 62c31dcb72735304f7b28e7dfd817f6647187bc9
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005666"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022629"
 ---
 # <a name="getting-started-with-devinit"></a>Introduzione con devinilt
 
@@ -28,7 +28,7 @@ devinit è attualmente disponibile solo come parte degli spazi dei codebase di G
 
 Il passaggio più importante consiste nel definire l'ambiente di sviluppo in un [ _.devinit.jssu_ file](devinit-json.md). Questo file verrà usato da devinit per creare l'ambiente quando si esegue `devinit init` .
 
-Per questo passaggio, prendere in considerazione le istruzioni che si darebbe a qualcuno per iniziare a usare un repository di progetto. Ad esempio, è necessario che sia installato SQL? Una versione specifica di .NET Core? Via. Quindi, per ognuna di queste dipendenze, cercare uno strumento di devinizzazione corrispondente nell' [elenco degli strumenti](devinit-tool-list.md)e aggiungerlo al _.devinit.js_ del repository nel file.
+Per questo passaggio, prendere in considerazione le istruzioni che si darebbe a qualcuno per iniziare a usare un repository di progetto. Ad esempio, è necessario che sia installato SQL? Una versione specifica di .NET Core? Via. Quindi, per ognuna di queste dipendenze, cercare uno strumento di devinizzazione corrispondente nell' [elenco di strumenti](devinit-tool-list.md) e aggiungerlo al _.devinit.js_ del repository nel file.
 
 ## <a name="step-3-enjoy"></a>Passaggio 3: divertirsi!
 

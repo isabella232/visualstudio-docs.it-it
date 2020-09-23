@@ -4,23 +4,25 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
-ms.date: 06/16/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono eliminare le assegnazioni delle sottoscrizioni nel portale di amministrazione delle sottoscrizioni di Visual Studio
-ms.openlocfilehash: a40f1ae5bb8d90217808888ccb44e047f8145b9f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 0ce0235d75946f46d39c78084121ce295067d74e
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005675"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022262"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Eliminare assegnazioni nelle sottoscrizioni di Visual Studio
 Quando un sottoscrittore non ha più necessità di usare una sottoscrizione di Visual Studio, ad esempio quando lascia l'azienda, completa un progetto o passa a un nuovo incarico, è possibile rimuovere la sua sottoscrizione e assegnarla a un altro utente. Si noti che quando si riassegna una sottoscrizione, non tutti i vantaggi del Sottoscrittore verranno reimpostati.  Il nuovo utente sarà in grado di richiedere le chiavi non richieste e di visualizzare le chiavi richieste in precedenza, ma i limiti di attestazione **non** vengono reimpostati.  Per le organizzazioni che hanno in essere contratti Enterprise, gli eventuali vantaggi usati dall'utente originale, ad esempio corsi Pluralsight, verranno reimpostati. 
 
+Guardare questo video o leggere per informazioni su come eliminare le assegnazioni.  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4yG2q]
 
 ## <a name="delete-a-subscription-assignment"></a>Eliminare un'assegnazione di sottoscrizione
-1. Fare clic sul nome del sottoscrittore che si desidera rimuovere. Per selezionare più sottoscrittori per la rimozione, è possibile fare clic sul cerchio a sinistra del nome del Sottoscrittore per selezionarne uno.  In alternativa, è possibile tenere premuto il tasto **CTRL** e fare clic su ogni Sottoscrittore che si desidera rimuovere. Per rimuovere un intervallo di sottoscrittori, fare clic sul primo, premere il tasto **MAIUSC** e fare clic sull'ultimo.  Premere **CTRL + a** per selezionare e rimuovere tutti i sottoscrittori. 
+1. Fare clic sul nome del sottoscrittore che si desidera rimuovere. Per selezionare più sottoscrittori per la rimozione, è possibile fare clic sul cerchio a sinistra del nome del Sottoscrittore per selezionarne uno.  In alternativa, è possibile tenere premuto il tasto **CTRL** e fare clic su ogni Sottoscrittore che si desidera rimuovere. Per rimuovere un intervallo di sottoscrittori, fare clic sul primo, premere il tasto **MAIUSC** e fare clic sull'ultimo.  Premere **CTRL + a** per selezionare e rimuovere tutti i sottoscrittori. In questo esempio vengono eliminati tre sottoscrittori: Amber, Kai e Madison. 
 2. Per eliminare i sottoscrittori selezionati, fare clic su **Elimina**.
 3. Quando viene visualizzato il messaggio che chiede di confermare l'eliminazione, fare clic su **OK**.
    > [!div class="mx-imgBorder"]
