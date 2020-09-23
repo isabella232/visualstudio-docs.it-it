@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 965477822e054794caf5d91b632fce39c1c9dc0f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 3374e0763a0189fb16db35b5b9ec6ec6908d9f4f
+ms.sourcegitcommit: 417ea66a8b07ec102ece2fa00e07b88edc404c00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005353"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91106271"
 ---
 # <a name="available-tools"></a>Strumenti disponibili
 
@@ -29,6 +29,7 @@ La tabella seguente contiene un elenco di tutti gli strumenti attualmente dispon
 | [**choco-upgrade**](tool-choco-upgrade.md)                                                       | Strumento per aggiornare i pacchetti di cioccolato.                                                                       |
 | [**dotnet-restore**](tool-dotnet-restore.md)                                                     | Strumento per ripristinare le dipendenze e gli strumenti di un progetto .NET.                                               |
 | [**dotnet-toolinstall**](tool-dotnet-toolinstall.md)                                             | Strumento per installare gli strumenti di .NET Core, ad esempio. DotNet-EF                                                |
+| [**Abilita-IIS**](tool-enable-iis.md)                                                             | Per abilitare le funzionalità di IIS e installare la versione più recente di ASP.NET bundle host.                                  |
 | [**npm-install**](tool-npm-install.md)                                                           | Strumento per installare i pacchetti NPM.                                                                               |
 | [**nuget-restore**](tool-nuget-restore.md)                                                       | Strumento per ripristinare i pacchetti NuGet.                                                                         |
 | [**require-azureartifactscredentialprovider**](tool-require-azureartifactscredentialprovider.md) | Installa il provider di credenziali Azure Artifacts.                                                           |
@@ -43,6 +44,7 @@ La tabella seguente contiene un elenco di tutti gli strumenti attualmente dispon
 | [**require-vscomponent**](tool-require-vscomponent.md)                                           | Strumento per modificare le installazioni di Visual Studio in base a un `.vsconfig` file.                                                |
 | [**windowsfeature-enable**](tool-windowsfeature-enable.md)                                       | Set di strumenti abilitare le funzionalità di Windows.                                                                           |
 | [**windowsfeature-disable**](tool-windowsfeature-disable.md)                                     | Set di strumenti disabilitare le funzionalità di Windows.                                                                          |
+| [**elenco di WindowsFeature**](tool-windowsfeature-list.md)                                           | Strumento per elencare lo stato di abilitazione/disabilitazione di tutte le funzionalità di Windows.                                                                        |
 | [**set-env**](tool-set-env.md)                                                                   | Strumento per visualizzare e impostare le variabili di ambiente.                                                                 |
 | [**vcpkg-install**](tool-vcpkg-install.md)                                                       | Strumento per installare i pacchetti tramite vcpkg.                                                                         |
 | [**wsl-install**](tool-wsl-install.md)                                                           | Strumento per installare e configurare le distribuzioni di Linux per il sottosistema di Windows per Linux.                             |
