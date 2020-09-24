@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c84978501e5c5bc6f21e8005023c3ae2fe931cce
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ee729a0dfe27bf54a64b42ff64b23bf851c14d06
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038569"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135118"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Procedura: gestire configurazioni di compilazione applicando le impostazioni di Visual Basic Developer
 
@@ -35,16 +35,13 @@ Per impostazione predefinita, le impostazioni di Visual Basic Developer nascondo
 
 2. Espandere **Progetti e soluzioni** e fare clic su **Generale**.
 
-    > [!NOTE]
-    > Il nodo **Generale** è visibile anche se l'opzione **Mostra tutte le impostazioni** è deselezionata. Se si vogliono visualizzare tutte le opzioni disponibili, fare clic su **Mostra tutte le impostazioni**.
-
 3. Fare clic su **Mostra configurazioni della build avanzate**.
 
 4. Fare clic su **OK**.
 
      **Configuration Manager** è ora disponibile nel menu **Compilazione** e gli elenchi **Configurazione** e **Piattaforma** sono visibili in **Creazione progetti**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)
 - [Compilare](../ide/compiling-and-building-in-visual-studio.md)

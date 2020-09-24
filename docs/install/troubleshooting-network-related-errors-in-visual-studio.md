@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0e127006976c484d1e4fc2fe011af979af7eb7a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0abe51b9f01d0c1f380c4762a7d0d4f457964aa7
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114981"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135131"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Risolvere gli errori correlati alla rete quando si installa o si usa Visual Studio
 
@@ -91,6 +91,22 @@ Generalmente questo errore si verifica quando gli utenti sono connessi a Interne
      > Per ulteriori informazioni, vedere le pagine [ &lt; &gt; elemento defaultProxy (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) e [ &lt; &gt; elemento proxy (impostazioni di rete)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) .
 
 ::: moniker-end
+
+## <a name="error-disconnected-from-visual-studio-when-attempting-to-report-a-problem"></a>Errore: "disconnesso da Visual Studio" durante il tentativo di segnalare un problema
+
+Questo errore si verifica in genere quando un utente è connesso a Internet tramite un server proxy e il server proxy blocca le chiamate che Visual Studio apporta ad alcune risorse di rete.
+
+### <a name="to-fix-this-proxy-error"></a>Per correggere l'errore del proxy
+
+1. Trovare **feedback.exe.config** (il file di configurazione feedback.exe) in: **% ProgramFiles (x86)% \ Microsoft Visual Studio\Installer** o **%ProgramFiles%\Microsoft Visual Studio\Installer**.
+
+2. Nel file di configurazione controllare se è presente il codice seguente. Se il codice non è presente, aggiungerlo prima dell'ultima `</configuration>` riga.
+
+   ```xml
+   <system.net>
+       <defaultProxy useDefaultCredentials="true" />
+   </system.net>
+   ```
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Errore: "Connessione sottostante chiusa"
 

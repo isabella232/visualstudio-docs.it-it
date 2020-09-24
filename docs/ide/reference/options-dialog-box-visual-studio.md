@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c864a10af9ad15d47e2342bb148af464b8f2a0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bad4e0b7db883a7604d674b854a9c3f794715d8d
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591502"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135105"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Finestra di dialogo Opzioni (Visual Studio)
 
@@ -38,10 +38,6 @@ Le opzioni per una funzionalità IDE non appaiono nel riquadro di spostamento fi
 ## <a name="how-options-are-applied"></a>Modalità di applicazione delle opzioni
 
 Fare clic su OK nella finestra di dialogo **Opzioni** per salvare tutte le impostazioni in tutte le pagine. Fare clic su Annulla in qualsiasi pagina per annullare tutte le richieste di modifica, incluse quelle eseguite in altre pagine **Opzioni**. Alcune modifiche alle impostazioni delle opzioni, ad esempio quelle apportate in [Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md), avranno effetto solo quando si chiude e si riapre Visual Studio.
-
-### <a name="show-all-settings"></a>Mostra tutte le impostazioni
-
-Selezionando o deselezionando l'opzione **Mostra tutte le impostazioni** vengono applicate tutte le modifiche apportate nella finestra di dialogo **Opzioni**, anche se non si è ancora scelto **OK**.
 
 ## <a name="see-also"></a>Vedere anche
 
