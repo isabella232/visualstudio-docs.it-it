@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cce59dfb39da71b8ff87efd49de9e2e0f6cdbd0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6410e9ba1250da5a0a247c786e4aada310186c4a
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851411"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211365"
 ---
 # <a name="how-to-install-a-visualizer"></a>Procedura: installare un visualizzatore
 Dopo avere creato un visualizzatore, è necessario installarlo in modo da renderlo disponibile in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per installare un visualizzatore è sufficiente seguire una semplice procedura.
@@ -32,7 +32,7 @@ Dopo avere creato un visualizzatore, è necessario installarlo in modo da render
 
 ::: moniker range=">=vs-2019"
 ### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Per installare un visualizzatore per Visual Studio 2019
-  
+
 1. Individuare la DLL che contiene il Visualizzatore compilato.
 
    In genere, è preferibile che sia la DLL sul lato debugger che la DLL del lato oggetto del debug specifichino **qualsiasi CPU** come piattaforma di destinazione. La DLL sul lato debugger deve essere **qualsiasi CPU** o **a 32 bit**. La piattaforma di destinazione per la DLL lato oggetto del debug deve corrispondere al processo di debug.
@@ -42,7 +42,7 @@ Dopo avere creato un visualizzatore, è necessario installarlo in modo da render
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
-    
+
 3. Copiare la dll del lato oggetto del [debug](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) in uno dei percorsi seguenti:
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Framework* di
@@ -61,7 +61,7 @@ Dopo avere creato un visualizzatore, è necessario installarlo in modo da render
 4. Riavviare la sessione di debug.
 
 > [!NOTE]
-> La procedura è diversa in Visual Studio 2017 e versioni precedenti. Vedere la [versione precedente](how-to-install-a-visualizer.md?view=vs-2017) di questo articolo.
+> La procedura è diversa in Visual Studio 2017 e versioni precedenti. Vedere la [versione precedente](how-to-install-a-visualizer.md?view=vs-2017&preserve-view=true) di questo articolo.
 ::: moniker-end
 
 ::: moniker range="vs-2017"

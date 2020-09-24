@@ -17,12 +17,12 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: e5a4cca61b32772f47c5fa350123bc45c8f8d671
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a64eee360c6039350683bb4add5be7126a4d444
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87805800"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211248"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>ID dei carichi di lavoro e dei componenti di Visual Studio
 
@@ -45,7 +45,7 @@ Fare clic sui nomi delle edizioni riportati nella tabella seguente per visualizz
 | [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md?vs-2017) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |
 | [Visual&nbsp;Studio Feedback&nbsp;Client&nbsp;2017](workload-component-id-vs-feedback-client.md?vs-2017) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Feedback Client 2017 |
 
-Per altre informazioni sull'uso di questi elenchi, vedere la pagina [Usare i parametri della riga di comando per installare Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) e la pagina [Procedura: Eseguire la migrazione di progetti di estendibilità in Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017).
+Per altre informazioni sull'uso di questi elenchi, vedere la pagina [Usare i parametri della riga di comando per installare Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017&preserve-view=true) e la pagina [Procedura: Eseguire la migrazione di progetti di estendibilità in Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017&preserve-view=true).
 
 ::: moniker-end
 
@@ -66,7 +66,7 @@ Per altre informazioni sull'uso di questi elenchi, vedere la pagina [Usare i par
 Per altre informazioni su come usare questi elenchi, vedere la pagina [usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) e la pagina [procedura: eseguire la migrazione di progetti di estendibilità a Visual Studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019) .
 
 > [!NOTE]
-> Per un elenco di ID di componenti e carichi di lavoro per la versione precedente, vedere [ID dei carichi di lavoro e dei componenti di Visual Studio 2017](workload-and-component-ids.md?view=vs-2017).
+> Per un elenco di ID di componenti e carichi di lavoro per la versione precedente, vedere [ID dei carichi di lavoro e dei componenti di Visual Studio 2017](workload-and-component-ids.md?view=vs-2017&preserve-view=true).
 
 ::: moniker-end
 

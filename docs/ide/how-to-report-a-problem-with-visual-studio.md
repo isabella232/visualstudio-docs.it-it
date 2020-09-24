@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2deb3f8ff19c2d7805031c0c3ba02bc82b8a3e7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d8e0718eb01f422ad435492304e77d73c14b4dee
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810874"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211175"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Come segnalare un problema con Visual Studio o il programma di installazione di Visual Studio
 
@@ -51,11 +51,11 @@ ms.locfileid: "90810874"
 
     È anche possibile ritagliare lo screenshot direttamente nel browser per rimuovere tutte le parti sensibili o non correlate.
 
-4. Uno dei modi migliori per consentire al team di progettazione di Visual Studio di risolvere il problema consiste nel fornire un file di traccia e di dump di heap da esaminare. Questa operazione può essere eseguita facilmente registrando i passaggi che hanno generato il bug. 
+4. Uno dei modi migliori per consentire al team di progettazione di Visual Studio di risolvere il problema consiste nel fornire un file di traccia e di dump di heap da esaminare. Questa operazione può essere eseguita facilmente registrando i passaggi che hanno generato il bug.
 
     ![Registrare le azioni ](../ide/media/feedback-recording.png) *solo i tecnici Microsoft possono visualizzare la registrazione*
 
-5. Esaminare i file allegati e caricare i file aggiuntivi se si ritiene che possano essere utili per diagnosticare il problema.   
+5. Esaminare i file allegati e caricare i file aggiuntivi se si ritiene che possano essere utili per diagnosticare il problema.
 
     ![File allegati ](../ide/media/feedback-attachments.png) *solo i tecnici Microsoft possono visualizzare i file allegati*
 

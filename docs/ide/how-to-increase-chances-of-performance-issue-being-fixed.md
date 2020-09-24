@@ -4,18 +4,19 @@ description: Informazioni aggiuntive e procedure consigliate per l'invio di prob
 ms.custom: SEO-VS-2020
 author: madskristensen
 ms.author: madsk
+manager: jillfra
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 2ae6304e206b2cfe47fa587590b740a91c7fec9f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1567e75d5e0a6f27aee68cd783b9ebd4a70815f4
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810861"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211188"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Come aumentare le probabilità di correzione di un problema di prestazioni
 
-Lo strumento "[segnala un problema](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019)" è ampiamente usato dagli utenti di Visual Studio per segnalare una serie di problemi. Il team di Visual Studio individua tendenze di arresto anomalo e lentezza nei commenti degli utenti e risolve problemi che influiscano su una vasta gamma di utenti. Il ticket di feedback specifico è più praticabile, più probabilmente verrà diagnosticato e risolto rapidamente dal team del prodotto. Questo documento descrive le procedure consigliate durante la segnalazione di problemi di arresto anomalo o lentezza per renderli più interoperabili.
+Lo strumento "[segnala un problema](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019&preserve-view=true)" è ampiamente usato dagli utenti di Visual Studio per segnalare una serie di problemi. Il team di Visual Studio individua tendenze di arresto anomalo e lentezza nei commenti degli utenti e risolve problemi che influiscano su una vasta gamma di utenti. Il ticket di feedback specifico è più praticabile, più probabilmente verrà diagnosticato e risolto rapidamente dal team del prodotto. Questo documento descrive le procedure consigliate durante la segnalazione di problemi di arresto anomalo o lentezza per renderli più interoperabili.
 
 ## <a name="general-best-practices"></a>Procedure consigliate generali
 
@@ -92,7 +93,7 @@ Personalizzare il numero di dump e la cartella dump nel modo appropriato. Altre 
 > [!NOTE]
 > È probabile che i dump acquisiti tramite Gestione attività siano di bit errato, rendendoli meno utilizzabili. La procedura descritta in precedenza è il modo migliore per acquisire un dump dell'heap. Se si vuole usare Gestione attività, chiudere quella attualmente in esecuzione, avviare Gestione attività a 32 bit (% windir% \\ syswow64 \\taskmgr.exe) e raccogliere un dump dell'heap da questa posizione.
 
-> [!NOTE] 
+> [!NOTE]
 > Ogni file di dump prodotto da questo metodo avrà dimensioni massime di 4 GB. Assicurarsi di impostare DumpFolder su un percorso con spazio su disco sufficiente o di regolare il DumpCount in modo appropriato.
 
 Ogni volta che si verifica un arresto anomalo di Visual Studio, viene creato un file dump **devenv.exe. [ numero] file. dmp** nel percorso configurato.
@@ -105,7 +106,7 @@ Quindi, usare "segnala un problema" di Visual Studio. funzionalità. Consente di
 
 3. Attenersi alla procedura descritta in "[come segnalare un problema](./how-to-report-a-problem-with-visual-studio.md)" e alleghi il dump dell'heap a un nuovo elemento di feedback.
 
-> [!NOTE] 
+> [!NOTE]
 > **Feedback più prezioso:** Per questo caso, il feedback più prezioso è il dump dell'heap acquisito al momento dell'arresto anomalo.
 
 ## <a name="unresponsiveness"></a>Blocco
@@ -118,18 +119,18 @@ Come descritto nella sezione corrispondente sugli arresti anomali, per i problem
 **Non risposta sconosciuta**
 
 Se una mancata risposta si manifesta in modo imprevedibile, all'occorrenza successiva avviare una nuova istanza di Visual Studio e segnalare un problema da tale istanza.
-Nella [schermata "record"](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019#record-a-repro)assicurarsi di selezionare la sessione di Visual Studio che non risponde.
+Nella schermata "record" assicurarsi di selezionare la sessione di Visual Studio che non risponde. Per ulteriori informazioni su come registrare le azioni che è possibile eseguire per riprodurre il problema, vedere il passaggio 8 sulla pagina [come segnalare un problema](./how-to-report-a-problem-with-visual-studio.md) .
 
 Se l'istanza di Visual Studio che non risponde è stata avviata in modalità amministratore, anche la seconda istanza deve essere avviata in modalità amministratore.
 
->[!NOTE] 
+>[!NOTE]
 > **Feedback più prezioso:** Per questo caso, il feedback più prezioso è il dump dell'heap acquisito al momento della mancata risposta.
 
 ## <a name="slowness-and-high-cpu-issues"></a>Lentezza e problemi di CPU elevati
 
 Ciò che rende più praticabile un problema di lentezza o un utilizzo elevato della CPU è una traccia delle prestazioni acquisita mentre è in corso l'operazione lenta o un evento CPU elevato.
 
->[!NOTE] 
+>[!NOTE]
 > Quando possibile, isolare ogni scenario in un report separato specifico di feedback.
 Se, ad esempio, la digitazione e la navigazione sono entrambe lente, attenersi alla procedura seguente una volta per ogni problema. Questo consente al team del prodotto di isolare la cause di problemi specifici.
 
@@ -165,9 +166,9 @@ Per ottenere risultati ottimali nell'acquisizione delle prestazioni, attenersi a
 
 Durante la registrazione di una traccia delle prestazioni, se l'operazione lenta o la CPU elevata che si sta segnalando viene portata a termine, arrestare immediatamente la registrazione. Se viene raccolta una quantità eccessiva di informazioni, le informazioni meno recenti vengono sovrascritte. Se la traccia non viene interrotta a breve (entro pochi secondi) dopo l'operazione interessante, i dati di traccia utili vengono sovrascritti.
 
-Non alleghi direttamente le tracce delle prestazioni agli elementi di feedback esistenti nel sito Web della community degli sviluppatori. La richiesta o la fornitura di informazioni aggiuntive è un flusso di lavoro supportato nello strumento di segnalazione del problema predefinito di Visual Studio. Se è necessaria una traccia delle prestazioni per risolvere un elemento di feedback precedente, lo stato dell'elemento feedback verrà impostato su "need more info", che può essere risposto allo stesso modo in cui viene segnalato un nuovo problema. Per istruzioni dettagliate, vedere la [sezione "need more info"](./how-to-report-a-problem-with-visual-studio.md?view=vs-2017#when-further-information-is-needed-need-more-info) nel documento di report di un problema.
+Non alleghi direttamente le tracce delle prestazioni agli elementi di feedback esistenti nel sito Web della community degli sviluppatori. La richiesta o la fornitura di informazioni aggiuntive è un flusso di lavoro supportato nello strumento di segnalazione del problema predefinito di Visual Studio. Se è necessaria una traccia delle prestazioni per risolvere un elemento di feedback precedente, lo stato dell'elemento feedback verrà impostato su "need more info", che può essere risposto allo stesso modo in cui viene segnalato un nuovo problema. Per istruzioni dettagliate, vedere la [sezione "need more info"](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed) nel documento di report di un problema.
 
-> [!NOTE] 
+> [!NOTE]
 > **Feedback più prezioso:** Per quasi tutti i problemi di rallentamento/CPU elevato, il feedback più prezioso è una descrizione di alto livello di ciò che si stava tentando di eseguire, insieme alla traccia delle prestazioni ( \*.etl.zip) che acquisisce il comportamento durante tale periodo di tempo.
 
 **Tracce di prestazioni avanzate**
@@ -177,7 +178,8 @@ Per la maggior parte degli scenari, le funzionalità di raccolta delle tracce ne
 ## <a name="out-of-process-issues"></a>Problemi out-of-process
 
 > [!NOTE]
-> A partire da Visual Studio 2019 versione 16,3, i log out-of-process vengono collegati automaticamente ai commenti inviati usando lo strumento segnala un problema. Tuttavia, se il problema è direttamente riproducibile, la procedura seguente potrebbe ancora aiutare ad aggiungere ulteriori informazioni per facilitare la diagnosi del problema.
+> A partire da Visual Studio 2019 versione 16,3, i log out-of-process vengono collegati automaticamente ai commenti inviati usando lo strumento segnala un problema.
+Tuttavia, se il problema è direttamente riproducibile, la procedura seguente potrebbe ancora aiutare ad aggiungere ulteriori informazioni per facilitare la diagnosi del problema.
 
 Sono disponibili numerosi processi satellite che vengono eseguiti in parallelo a Visual Studio e forniscono varie funzionalità dall'esterno del processo principale di Visual Studio. Se si verifica un errore in uno di questi processi satellite, viene in genere visualizzato sul lato di Visual Studio come ' StreamJsonRpc. RemoteInvocationException ' o ' StreamJsonRpc. ConnectionLostException '.
 

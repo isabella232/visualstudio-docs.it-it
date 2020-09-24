@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: db1e57097b492a8847be6d96719054a6b917e4bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7687aea6cd7bd1f4a71723c0eadfe36743ca8f71
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87425407"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211352"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guida di Visual Studio Administrator
 
@@ -78,9 +78,9 @@ Prima di distribuire Visual Studio all'interno dell'organizzazione, è necessari
 
   Per i computer che non sono connessi a Internet, la creazione di un layout minimo è il modo più semplice e rapido per aggiornare le istanze di Visual Studio offline. Per altre informazioni, vedere [aggiornare Visual Studio usando un layout minimo offline](update-minimal-layout.md).
 
-* Decidere di quali [carichi di lavoro e componenti](workload-and-component-ids.md?view=vs-2017) ha bisogno l'azienda.
+* Decidere di quali [carichi di lavoro e componenti](workload-and-component-ids.md?view=vs-2017&preserve-view=true) ha bisogno l'azienda.
 
-* Decidere se usare un [file di risposta](automated-installation-with-response-file.md?view=vs-2017), scelta che semplifica la gestione delle informazioni dettagliate nel file di script.
+* Decidere se usare un [file di risposta](automated-installation-with-response-file.md?view=vs-2017&preserve-view=true), scelta che semplifica la gestione delle informazioni dettagliate nel file di script.
 
 * Decidere se abilitare Criteri di gruppo e se configurare la disabilitazione dei suggerimenti dei clienti nei singoli computer in Visual Studio.
 
@@ -137,22 +137,22 @@ Il registro di sistema si trova nella directory * Software\Microsoft\VisualStudi
 
 ## <a name="step-1---download-visual-studio-product-files"></a>Passaggio 1: Scaricare i file di prodotto Visual Studio
 
-* [Selezionare i carichi di lavoro e i componenti](workload-and-component-ids.md?view=vs-2017) da installare.
+* [Selezionare i carichi di lavoro e i componenti](workload-and-component-ids.md?view=vs-2017&preserve-view=true) da installare.
 
-* [Creare una condivisione di rete per i file di prodotto di Visual Studio](create-a-network-installation-of-visual-studio.md?view=vs-2017).
+* [Creare una condivisione di rete per i file di prodotto di Visual Studio](create-a-network-installation-of-visual-studio.md?view=vs-2017&preserve-view=true).
 
 ## <a name="step-2---build-an-installation-script"></a>Passaggio 2: Creare uno script di installazione
 
-* Creare uno script di installazione che usi [parametri della riga di comando](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) per controllare l'installazione.
+* Creare uno script di installazione che usi [parametri della riga di comando](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017&preserve-view=true) per controllare l'installazione.
 
   >[!NOTE]
-  > È possibile semplificare gli script utilizzando un [file di risposta](automated-installation-with-response-file.md?view=vs-2017). Assicurarsi di creare un file di risposta che contenga l'opzione di installazione predefinita.
+  > È possibile semplificare gli script utilizzando un [file di risposta](automated-installation-with-response-file.md?view=vs-2017&preserve-view=true). Assicurarsi di creare un file di risposta che contenga l'opzione di installazione predefinita.
 
-* (Facoltativo) Includere nello script di installazione le istruzioni per [applicare un codice Product Key per contratti multilicenza](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2017), in modo che gli utenti non debbano attivare il software separatamente.
+* (Facoltativo) Includere nello script di installazione le istruzioni per [applicare un codice Product Key per contratti multilicenza](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2017&preserve-view=true), in modo che gli utenti non debbano attivare il software separatamente.
 
-* (Facoltativo) Aggiornare il layout di rete per [controllare quando gli aggiornamenti del prodotto vengono messi a disposizione degli utenti finali e la loro provenienza](controlling-updates-to-visual-studio-deployments.md?view=vs-2017).
+* (Facoltativo) Aggiornare il layout di rete per [controllare quando gli aggiornamenti del prodotto vengono messi a disposizione degli utenti finali e la loro provenienza](controlling-updates-to-visual-studio-deployments.md?view=vs-2017&preserve-view=true).
 
-* (Facoltativo) Impostare i criteri del registro di sistema che influiscono sulla distribuzione di Visual Studio, ad esempio dove sono installati alcuni pacchetti condivisi con altre versioni o istanze, [dove vengono memorizzati i pacchetti nella cache](set-defaults-for-enterprise-deployments.md?view=vs-2019) o [se i pacchetti vengono memorizzati nella cache](disable-or-move-the-package-cache.md?view=vs-2017).
+* (Facoltativo) Impostare i criteri del registro di sistema che influiscono sulla distribuzione di Visual Studio, ad esempio dove sono installati alcuni pacchetti condivisi con altre versioni o istanze, [dove vengono memorizzati i pacchetti nella cache](set-defaults-for-enterprise-deployments.md?view=vs-2019) o [se i pacchetti vengono memorizzati nella cache](disable-or-move-the-package-cache.md?view=vs-2017&preserve-view=true).
 
 * (Facoltativo) Impostare Criteri di gruppo. È anche possibile [configurare Visual Studio per disabilitare i suggerimenti dei clienti](../ide/visual-studio-experience-improvement-program.md) nei singoli computer.
 
@@ -162,13 +162,13 @@ Il registro di sistema si trova nella directory * Software\Microsoft\VisualStudi
 
 ## <a name="step-4---deploy-updates"></a>Passaggio 4: Distribuire gli aggiornamenti
 
-* [Aggiornare il percorso di rete con gli aggiornamenti più recenti](update-a-network-installation-of-visual-studio.md?view=vs-2017) di Visual Studio eseguendo regolarmente il comando usato nel passaggio 1 in modo da aggiungere i componenti aggiornati.
+* [Aggiornare il percorso di rete con gli aggiornamenti più recenti](update-a-network-installation-of-visual-studio.md?view=vs-2017&preserve-view=true) di Visual Studio eseguendo regolarmente il comando usato nel passaggio 1 in modo da aggiungere i componenti aggiornati.
 
   È possibile aggiornare Visual Studio usando uno script di aggiornamento. A tale scopo, usare il [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) parametro della riga di comando.
 
 ## <a name="step-5---optional-use-visual-studio-tools"></a>Passaggio 5: (Facoltativo) Usare gli strumenti di Visual Studio
 
-Sono stati resi disponibili diversi strumenti che consentono di [rilevare e gestire le istanze installate di Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2017) nei computer client.
+Sono stati resi disponibili diversi strumenti che consentono di [rilevare e gestire le istanze installate di Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true) nei computer client.
 
 ## <a name="advanced-configuration"></a>Configurazione avanzata
 
@@ -176,7 +176,7 @@ Per impostazione predefinita, l'installazione di Visual Studio consente l'inclus
 
 **DWORD "PutCustomTypeInBingSearch" 0**
 
-Il registro di sistema si trova nella directory * Software\Microsoft\VisualStudio\15.0_ {InstanceId} \ Roslyn\Internal\Diagnostics \* dell'hive del registro di sistema privato. Per istruzioni su come aprire l'hive del registro di sistema, vedere [modifica del registro di sistema per un'istanza di Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2017#editing-the-registry-for-a-visual-studio-instance).
+Il registro di sistema si trova nella directory * Software\Microsoft\VisualStudio\15.0_ {InstanceId} \ Roslyn\Internal\Diagnostics \* dell'hive del registro di sistema privato. Per istruzioni su come aprire l'hive del registro di sistema, vedere [modifica del registro di sistema per un'istanza di Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true#editing-the-registry-for-a-visual-studio-instance).
 
 ::: moniker-end
 
