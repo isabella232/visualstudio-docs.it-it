@@ -1,5 +1,5 @@
 ---
-title: Implementazione della valutazione dell'espressione di esempio | Microsoft Docs
+title: Implementazione di esempio della valutazione dell'espressione | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,33 +13,33 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7a19247b296d7e00a15051e75dd53536133c426
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436689"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91147247"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Implementazione di esempio di valutazione delle espressioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni di Common Language Runtime, vedi [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [gestito esempio analizzatore di espressioni](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015, questo metodo di implementazione degli analizzatori di espressioni è deprecato. Per informazioni sull'implementazione degli analizzatori di espressioni CLR, vedere l'esempio degli [analizzatori](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) di espressioni CLR e dell' [analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Per un **Watch** espressione della finestra, Visual Studio chiama [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) per produrre un' [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) oggetto. `IDebugExpressionContext2::ParseText` Crea un'istanza di un analizzatore di espressioni (EE) e chiama [analizzare](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) per ottenere un [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) oggetto.  
+ Per un'espressione della finestra **espressioni di controllo** , Visual Studio chiama [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) per produrre un oggetto [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) . `IDebugExpressionContext2::ParseText` Crea un'istanza di un analizzatore di espressioni (EE) e chiama [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) per ottenere un oggetto [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) .  
   
  Questa implementazione di `IDebugExpressionEvaluator::Parse` esegue le attività seguenti:  
   
-1. [C++ solo] Analizza l'espressione per cercare gli errori.  
+1. [Solo C++] Analizza l'espressione per cercare gli errori.  
   
-2. Crea un'istanza di una classe (chiamati `CParsedExpression` in questo esempio) che implementa il `IDebugParsedExpression` interfaccia e la archivia nella classe l'espressione da analizzare.  
+2. Crea un'istanza di una classe (denominata `CParsedExpression` in questo esempio) che implementa l' `IDebugParsedExpression` interfaccia e archivia nella classe l'espressione da analizzare.  
   
-3. Restituisce il `IDebugParsedExpression` dell'interfaccia dal `CParsedExpression` oggetto.  
+3. Restituisce l' `IDebugParsedExpression` interfaccia dell' `CParsedExpression` oggetto.  
   
 > [!NOTE]
-> Negli esempi che seguono e nell'esempio MyCEE, l'analizzatore di espressioni non separa il processo di analisi dalla valutazione.  
+> Negli esempi che seguono e nell'esempio MyCEE, l'analizzatore di espressioni non separa l'analisi dalla valutazione.  
   
 ## <a name="managed-code"></a>Codice gestito  
- Si tratta di un'implementazione di `IDebugExpressionEvaluator::Parse` nel codice gestito. Si noti che questa versione del metodo rinvia l'analisi e la [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) come valuta inoltre il codice per l'analisi nello stesso momento (vedere [la valutazione di un'espressione di controllo](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
+ Si tratta di un'implementazione di `IDebugExpressionEvaluator::Parse` nel codice gestito. Si noti che questa versione del metodo rinvia l'analisi a [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) poiché anche il codice per l'analisi restituisce contemporaneamente (vedere [valutazione di un'espressione Watch](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
   
 ```csharp  
 namespace EEMC  
@@ -66,7 +66,7 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>Codice non gestito  
- Si tratta di un'implementazione di `IDebugExpressionEvaluator::Parse` nel codice non gestito. Questo metodo chiama una funzione helper `Parse`, analizzare l'espressione e verificare gli errori, ma questo metodo ignora il valore risultante. La versione di valutazione formale viene rinviata al giorno [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) in cui l'espressione viene analizzato quando viene valutata (vedere [la valutazione di un'espressione di controllo](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
+ Si tratta di un'implementazione di `IDebugExpressionEvaluator::Parse` nel codice non gestito. Questo metodo chiama una funzione helper, `Parse` , per analizzare l'espressione e verificare la presenza di errori, ma questo metodo ignora il valore risultante. La valutazione formale viene rinviata a [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) , in cui l'espressione viene analizzata mentre viene valutata (vedere [valutazione di un'espressione Watch](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
   
 ```cpp#  
 STDMETHODIMP CExpressionEvaluator::Parse(  
@@ -110,5 +110,5 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Valutazione di un'espressione di finestra Espressioni di controllo](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
+ [Valutazione di un'espressione della finestra espressioni di controllo](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
  [Valutazione di un'espressione di controllo](../../extensibility/debugger/evaluating-a-watch-expression.md)
