@@ -11,26 +11,25 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 03ebd885f1fae1e7e12d76bb78e03bca0553bab8
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 4e30a333812e2c313f9e35934643bcea03cf054c
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006022"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352235"
 ---
 # <a name="require-psmodule"></a>require-psmodule
 
-Lo `require-psmodule` strumento viene usato per installare un [modulo di PowerShell](https://docs.microsoft.com/powershell/scripting/developer/module/understanding-a-windows-powershell-module?view=powershell-7&preserve-view=true) dal [PowerShell Gallery](https://www.powershellgallery.com/) tramite [install-module] ( https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true , in modo che possa essere usato negli script di PowerShell.
+Lo `require-psmodule` strumento viene usato per installare un [modulo di PowerShell](https://docs.microsoft.com/powershell/scripting/developer/module/understanding-a-windows-powershell-module?view=powershell-7&preserve-view=true) dal [PowerShell Gallery](https://www.powershellgallery.com/) tramite [install-module](https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true), in modo che possa essere usato negli script di PowerShell.
 
->
->! Suggerimento Dopo l'installazione di un modulo, sarà comunque necessario importarlo in uno script con [Import-Module](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/import-module?view=powershell-7&preserve-view=true).
->
+> [!TIP] 
+> Dopo l'installazione di un modulo, sarà comunque necessario importarlo in uno script con [Import-Module](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/import-module?view=powershell-7&preserve-view=true).
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Tipo   | Obbligatoria | valore                                                                                   |
+| Nome                                             | Type   | Obbligatoria | valore                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                                   |
 | [**input**](#input)                              | string | Sì      | Pacchetti da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.                       |

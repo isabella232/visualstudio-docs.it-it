@@ -11,22 +11,22 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 201ee0a7384b5dce502151fc9d34d73bc19424a5
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c632378ff15e9b52e7145821f2e16d782b0326ac
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005784"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352294"
 ---
 # <a name="require-dotnetcoresdk"></a>require-dotnetcoresdk
 
 Lo `require-dotnetcoresdk` strumento viene usato per installare il [.NET Core SDK](https://dotnet.microsoft.com/) e il runtime condiviso tramite lo script [DotNet-install](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) .
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Tipo   | Obbligatoria | valore                                                                               |
+| Nome                                             | Type   | Obbligatoria | valore                                                                               |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                               |
 | [**input**](#input)                              | stringa | No       | Versione del .NET Core SDK da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito. |
@@ -40,7 +40,8 @@ La `input` proprietà viene utilizzata per specificare la versione di .NET Core 
 
 Altre opzioni di configurazione possono essere passate come valore di `additionalOptions` . Questi argomenti sono un passthrough diretto per gli argomenti usati nello script [DotNet-install](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) . Per ulteriori informazioni sui parametri disponibili, vedere la [documentazione](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) per lo script [DotNet-install](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) . Quando `additionalOptions` si usa, assicurarsi di usare i nomi e il formato degli argomenti di PowerShell.
 
-Nota: qualsiasi valore aggiuntivo a un argomento che include uno spazio deve includere una coppia aggiuntiva di virgolette precedute (usando la barra rovesciata). Un esempio può essere visualizzato nell' [esempio di utilizzo](#example-usage) usando `-InstallDir` .
+> [!NOTE]
+> Qualsiasi valore aggiuntivo a un argomento che include uno spazio deve includere una coppia aggiuntiva di virgolette precedute (usando la barra rovesciata). Un esempio può essere visualizzato nell' [esempio di utilizzo](#example-usage) usando `-InstallDir` .
 
 ### <a name="default-behavior"></a>Comportamento predefinito
 

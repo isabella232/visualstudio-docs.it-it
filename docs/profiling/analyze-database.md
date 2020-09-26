@@ -9,12 +9,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea74fd587119105577062f571b4ec8e3de76a4f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0aeb2341d905be8f34d47c477f35861b8575dc69
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037530"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352316"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Analizzare le prestazioni del database tramite lo strumento database
 
@@ -50,8 +50,8 @@ Dopo aver individuato una query che si desidera analizzare, fare clic con il pul
 
 ![Vai a file di origine selezionato](./media/db-gotosource.png "Vai a file di origine selezionato")
 
-Se si seleziona un intervallo di tempo in un grafico, nella tabella query vengono mostrate solo le query che si sono verificate durante tale intervallo di tempo. Questo comportamento è particolarmente utile quando si esegue anche lo [strumento utilizzo CPU](./cpu-usage.md?view=vs-2019).
+Se si seleziona un intervallo di tempo in un grafico, nella tabella query vengono mostrate solo le query che si sono verificate durante tale intervallo di tempo. Questo comportamento è particolarmente utile quando si esegue anche lo [strumento utilizzo CPU](./cpu-usage.md?view=vs-2019&preserve-view=true).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Ottimizzazione delle impostazioni del profiler](../profiling/optimize-profiler-settings.md)

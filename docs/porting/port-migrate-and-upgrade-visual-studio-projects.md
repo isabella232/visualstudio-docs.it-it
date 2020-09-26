@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: d4ed87e082e5c4fa2722a44fbbfe1dcef803f247
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 3a9c7bf1c63575df0f6ef55585ba1d14e78e0aa8
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211326"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352303"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Informazioni di riferimento per la migrazione e l'aggiornamento di un progetto per Visual Studio
 
@@ -43,7 +43,7 @@ Questo articolo offre informazioni dettagliate relative solo ai tipi di progetto
 
 L'elenco che segue descrive il supporto di Visual Studio 2017 per i progetti creati nelle versioni precedenti.
 
-Se non viene visualizzato un progetto o non viene elencato un tipo di file che dovrebbe essere presente, vedere la [versione di questo articolo per Visual Studio 2015](../vs-2015/porting/porting-migrating-and-upgrading-visual-studio-projects.md?view=vs-2015) e usare l'opzione **Invia feedback su** > **Questa pagina** alla fine della pagina per inviare dettagli sul progetto. Se si usa il controllo anonimo "Questa pagina è stata utile?" non si riceverà una risposta a commenti e suggerimenti.
+Se non viene visualizzato un progetto o non viene elencato un tipo di file che dovrebbe essere presente, vedere la [versione di questo articolo per Visual Studio 2015](../vs-2015/porting/porting-migrating-and-upgrading-visual-studio-projects.md?view=vs-2015&preserve-view=true) e usare l'opzione **Invia feedback su** > **Questa pagina** alla fine della pagina per inviare dettagli sul progetto. Se si usa il controllo anonimo "Questa pagina è stata utile?" non si riceverà una risposta a commenti e suggerimenti.
 
 | Tipo di progetto | Supporto |
 | --- | --- |
@@ -106,7 +106,7 @@ Vedere gli articoli seguenti per ulteriori informazioni:
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni di riferimento per la migrazione e l'aggiornamento di un progetto per Visual Studio 2019](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019)
+- [Informazioni di riferimento per la migrazione e l'aggiornamento di un progetto per Visual Studio 2019](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019&preserve-view=true)
 - [Ciclo di vita e manutenzione del prodotto Visual Studio](/visualstudio/releases/2019/servicing/)
 
 ::: moniker-end

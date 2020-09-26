@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: cee62e02aa5b35108eec5024edf8eebb3848513f
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 9008c859c1bbf0a211e14ff5e777bea6cb3b5819
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211300"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352257"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -350,7 +350,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 15.0.0 | Versione | 7 marzo 2017 | 15.0.26228.4 |
 
 > [!NOTE]
-> Per altre informazioni sui numeri di build e le date di rilascio per la prossima versione di Visual Studio, vedere la pagina [Numeri di build e date di rilascio di Visual Studio 2019](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019).
+> Per altre informazioni sui numeri di build e le date di rilascio per la prossima versione di Visual Studio, vedere la pagina [Numeri di build e date di rilascio di Visual Studio 2019](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019&preserve-view=true).
 
 ::: moniker-end
 

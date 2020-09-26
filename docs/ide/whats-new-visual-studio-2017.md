@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 18e373dd8218c9019c2a5ec8a923fdbb2c24cf99
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: db777df991b48d1b6e26d40426d32c07a495efb1
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809518"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352177"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novità di Visual Studio 2017
 
@@ -104,7 +104,7 @@ Per visualizzare un elenco delle estensioni in Visual Studio, fare clic su **str
 
 Gestione roaming estensioni tiene traccia di tutte le estensioni installate, ma è possibile scegliere quelle che si vuole aggiungere all'elenco di roaming.
 
-![Visual Studio 2017 - Finestra di dialogo Estensioni e aggiornamenti](media/vs2017ide-RoamingExtensionManager.png)
+![Visual Studio 2017-gestione roaming estensioni](media/vs2017ide-RoamingExtensionManager.png)
 
 Quando si usa Gestione roaming estensioni sono disponibili tre tipi di icona nell'elenco:
 
@@ -222,7 +222,7 @@ Per altre informazioni, vedere il post del blog [Use the new Exception Helper in
 
 Per **esplorare e visualizzare** gli snapshot, è possibile usare i pulsanti avanti e **indietro** nella barra degli strumenti **debug** . Questi pulsanti consentono di spostarsi tra gli eventi visualizzati nella scheda **Eventi** della finestra **Strumenti di diagnostica**. Lo spostamento indietro o in avanti su un evento attiva automaticamente il debug cronologico per l'evento selezionato.
 
-![Nuova finestra di dialogo Helper eccezioni in Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Pulsanti avanti e indietro passaggio")
+![Esempio di torna indietro di IntelliTrace in Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Pulsanti avanti e indietro passaggio")
 
 Per altre informazioni, vedere la pagina [Visualizzare gli snapshot con la funzionalità per tornare indietro di IntelliTrace](../debugger/view-historical-application-state.md).
 

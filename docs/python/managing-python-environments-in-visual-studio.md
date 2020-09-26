@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9416862ad18bc297696e765d6664a4d08f2cc8dc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f331c794c50d6b6573ad9708da6d153c77f4d77c
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809911"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352349"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Come creare e gestire gli ambienti Python in Visual Studio
 
@@ -124,7 +124,7 @@ Per questo motivo, spesso gli sviluppatori creano un *ambiente virtuale* per un 
 
 Visual Studio offre supporto diretto per la creazione di un ambiente virtuale per un progetto. Se ad esempio si apre un progetto che contiene un file *requirements.txt* o si crea un progetto da un modello che include quel file, Visual Studio chiede di creare automaticamente un ambiente virtuale e di installare le dipendenze necessarie.
 
-È possibile creare un nuovo ambiente virtuale in qualsiasi momento all'interno di un progetto aperto. In **Esplora soluzioni** espandere il nodo del progetto, fare clic con il pulsante destro del mouse sul nodo **Ambienti Python** e scegliere "Aggiungi ambiente virtuale". Per altre informazioni, vedere [Creare un ambiente virtuale](./selecting-a-python-environment-for-a-project.md?view=vs-2019#create-a-virtual-environment-1).
+È possibile creare un nuovo ambiente virtuale in qualsiasi momento all'interno di un progetto aperto. In **Esplora soluzioni** espandere il nodo del progetto, fare clic con il pulsante destro del mouse sul nodo **Ambienti Python** e scegliere "Aggiungi ambiente virtuale". Per altre informazioni, vedere [Creare un ambiente virtuale](./selecting-a-python-environment-for-a-project.md?view=vs-2019&preserve-view=true#create-a-virtual-environment-1).
 
 Visual Studio include anche un comando che consente di generare un file *requirements.txt* dall'ambiente virtuale, facilitando la riproduzione dell'ambiente in altri computer. Per altre informazioni, vedere [Usare ambienti virtuali](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
@@ -160,7 +160,7 @@ Un ambiente Conda è un ambiente creato usando lo strumento `conda` o con la ges
     | Campo | Descrizione |
     | --- | --- |
     | Project | Progetto in cui creare l'ambiente (in presenza di più progetti nella stessa soluzione di Visual Studio). |
-    | nome | Nome per l'ambiente Conda. |
+    | Nome | Nome per l'ambiente Conda. |
     | Aggiungi pacchetti da | Scegliere **File di ambiente** se è disponibile un file *environment.yml* che descrive le dipendenze oppure scegliere **Uno o più nomi di pacchetto Anaconda** ed elencare almeno un pacchetto Python o una versione di Python nel campo sottostante. L'elenco dei pacchetti indica a Conda di creare un ambiente Python. Per installare la versione più recente di Python, usare `python`. Per installare una versione specifica, usare `python=,major>.<minor>` come in `python=3.7`. È anche possibile usare il pulsante Pacchetto per selezionare le versioni e i pacchetti comuni di Python da una serie di menu. |
     | Imposta come ambiente corrente | Dopo aver creato l'ambiente, attiva il nuovo ambiente nel progetto selezionato. |
     | Imposta come ambiente predefinito per i nuovi progetti | Imposta e attiva automaticamente l'ambiente Conda in tutti i nuovi progetti creati in Visual Studio. Questa opzione equivale a selezionare **Imposta come ambiente predefinito per i nuovi progetti** nella finestra **Ambienti Python**. |
@@ -239,7 +239,7 @@ Usare questa procedura per identificare un ambiente installato in un percorso no
 
     ![Opzione di ambiente personalizzato nella finestra di dialogo Aggiungi ambiente](media/environments/environments-custom-2-2019.png)
 
-1. Negli appositi campi nella finestra di dialogo, immettere o selezionare (tramite **...**) il percorso dell'interprete in **Percorso di prefisso**. Viene così compilata la maggior parte degli altri campi. Dopo aver esaminato questi valori e aver apportato le eventuali modifiche necessarie, selezionare **Aggiungi**. 
+1. Negli appositi campi nella finestra di dialogo, immettere o selezionare (tramite **...**) il percorso dell'interprete in **Percorso di prefisso**. Viene così compilata la maggior parte degli altri campi. Dopo aver esaminato questi valori e aver apportato le eventuali modifiche necessarie, selezionare **Aggiungi**.
 
     ![Campi per specificare i dettagli per un'opzione di ambiente personalizzato nella finestra di dialogo Aggiungi ambiente](media/environments/environments-custom-3-2019.png)
 
@@ -271,7 +271,7 @@ Per correggere un ambiente che non dispone di un'opzione di riparazione o per ri
     - Se l'ambiente è ancora presente nel computer, modificare il valore di **ExecutablePath** nella posizione corretta. Correggere anche i valori **(Predefinito)** e **WindowedExecutablePath** in base alle esigenze.
     - Se l'ambiente non è più presente nel computer e si vuole rimuoverlo dalla finestra **Ambienti Python**, eliminare il nodo padre di **InstallPath**, ad esempio **3.6** nell'immagine precedente.
     - Impostazioni non valide in **HKEY_CURRENT_USER \software\python** sostituire le impostazioni nel **HKEY_LOCAL_MACHINE \software\python**
-    
+
 ## <a name="see-also"></a>Vedere anche
 
 - [Installare interpreti Python](installing-python-interpreters.md)

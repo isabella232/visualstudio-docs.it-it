@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1a0bd657d9612bde05a820a591c2ab2c1cfdaad3
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a22e0f5a20050e62aa9978c40f2189c82ca3071c
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005531"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352327"
 ---
 # <a name="devinit-commands"></a>comandi devinit
 
@@ -67,7 +67,7 @@ Specifica il percorso del _devinit.jssul file. Se – file non è specificato, s
 * {Current-directory} \\.devinit.js
 * {Current-directory} \\ ..devinit.jsdi devinit \\
 
-Nota: anche i percorsi senza l'oggetto che conduce alla `.` Directory o al nome file corrisponderanno.
+Anche i percorsi senza l'oggetto che conduce alla `.` Directory o al nome file corrisponderanno.
 
 #### <a name="--error-action-argument"></a>--Error-argomento azione
 
@@ -87,7 +87,7 @@ Comandi echo Tool che verrebbero eseguiti, ma non eseguono alcun strumento.
 
 Genera output dettagliato nell'output standard. Se lo strumento da eseguire supporta un'opzione verbose, propagare l'opzione verbose allo strumento.
 
-#### <a name="note-on-additional-command-line-arguments"></a>Nota sugli argomenti della riga di comando aggiuntivi
+#### <a name="additional-command-line-arguments"></a>Argomenti aggiuntivi della riga di comando
 
 L'utilizzo di un oggetto `<arg>` che include uno spazio nel suo valore deve includere una coppia aggiuntiva di virgolette precedute.
 
@@ -129,7 +129,7 @@ Stampa le informazioni della Guida per uno strumento specifico.
 
 Stampa le informazioni sulla versione corrente per devinilt.
 
-## <a name="help"></a>Help
+## <a name="help"></a>Guida
 
 ```console
 > devinit help
