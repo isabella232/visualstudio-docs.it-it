@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d54673ee46c594bd1a4bea2990d3b9bbe90ce1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62411229acd2d2f8462984789037fc832dac09b8
+ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188199"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91421641"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifica e continuazione (Visual C#)
  La funzionalità Modifica e continuazione per C# consente di apportare modifiche al codice in modalità di interruzione durante il debug. Le modifiche possono essere applicate senza terminare e riavviare la sessione di debug. In modalità di esecuzione l'editor del codice sorgente è di sola lettura.
@@ -32,7 +32,7 @@ ms.locfileid: "73188199"
  La funzionalità modifica e continuazione è supportata in UWP in Windows 10 e nelle app x86 e x64 destinate a .NET Framework 4,6 desktop o versioni successive (il .NET Framework è solo una versione desktop).
 
  > [!NOTE]
- > Le app e le piattaforme non supportate includono ASP.NET 5, Silverlight 5 e Windows 8.1.
+ > Le app e le piattaforme non supportate includono Silverlight 5 e Windows 8.1.
 
  Nella modalità Modifica e continuazione, le modifiche supportate vengono applicate automaticamente quando si utilizza un comando di esecuzione del debugger, ad esempio **Continua**, **Passaggio** o **Imposta istruzione successiva** oppure si valuta una funzione in una finestra del debugger.
 

@@ -1,5 +1,6 @@
 ---
-title: Connetti profiler a .NET per raccogliere dati di concorrenza
+title: Connetti profiler a .NET per raccogliere dati di concorrenza-riga di comando
+titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: f4b97994a3e24e4c3d4bc13cfe3b28455e0cecc2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7b9b2e9a90df1b9dcfaaa2fd7b77410e24e32a9a
+ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811097"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91421807"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un servizio .NET per raccogliere dati di concorrenza tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un servizio .NET Framework e raccogliere dati di concorrenza di thread e processi tramite il metodo di campionamento.
