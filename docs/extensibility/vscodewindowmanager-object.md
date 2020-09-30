@@ -13,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fea97c8784402c55947c108f42f2f3153f322d9c
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 9668336c565b4a3be332509d1c960b067a486785
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012386"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583632"
 ---
 # <a name="vscodewindowmanager-object"></a>Oggetto VSCodeWindowManager
 
-Il servizio di linguaggio implementa gestione finestre del codice ed è responsabile della gestione delle aree di controllo (ad esempio, la barra a discesa). Per altre informazioni, vedere [personalizzazione delle finestre di codice tramite l'API legacy](../vs-2015/extensibility/customizing-code-windows-by-using-the-legacy-api.md?view=vs-2015).
+Il servizio di linguaggio implementa gestione finestre del codice ed è responsabile della gestione delle aree di controllo (ad esempio, la barra a discesa). Per altre informazioni, vedere [personalizzazione delle finestre di codice tramite l'API legacy](../vs-2015/extensibility/customizing-code-windows-by-using-the-legacy-api.md?view=vs-2015&preserve-view=true).
 
 Nella tabella seguente vengono illustrate le interfacce dell' `VSCodeWindowManager` oggetto.
 

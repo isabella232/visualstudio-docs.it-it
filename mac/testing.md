@@ -7,12 +7,12 @@ helpviewer_keywords:
 - unit tests [Visual Studio for Mac]
 ms.author: jomatthi
 author: jmatthiesen
-ms.openlocfilehash: acf34677e8d9b477512763be3c43bb9df0c53c46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 758bdcb0d854247847e4d0d56152840643402bf4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88200984"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91580961"
 ---
 # <a name="testing-tools-in-visual-studio-for-mac"></a>Strumenti di test in Visual Studio per Mac
 
@@ -24,7 +24,7 @@ Per iniziare a eseguire il test, è possibile creare un nuovo progetto di test n
 ![Finestra di dialogo nuovo progetto con > di test Web e console selezionato, che mostra i progetti xUnit, MSTest e NUnit](media/create-new-test-project.PNG)
 
 > [!NOTE]
-> Per ulteriori informazioni sull'unit test delle applicazioni .NET Core e sulla selezione di unit test Framework, vedere la pagina relativa ai [testing unità in .NET Core e .NET standard](https://docs.microsoft.com/dotnet/core/testing/?pivots=xunit) documentazione.
+> Per ulteriori informazioni sull'unit test delle applicazioni .NET Core e sulla selezione di unit test Framework, vedere la pagina relativa ai [testing unità in .NET Core e .NET standard](/dotnet/core/testing/?pivots=xunit) documentazione.
 
 ## <a name="running-tests"></a>Esecuzione di test
 La finestra **unit test** viene usata per eseguire unit test e viene aperta usando il menu **Visualizza > rilievi > unit test** . Gli unit test nella soluzione vengono individuati automaticamente e visualizzati in questa finestra, in cui è possibile eseguire tutti i test o un set di test selezionati.
@@ -39,7 +39,7 @@ Quando i test sono in esecuzione, viene visualizzata una finestra di **risultati
 
 ![Finestra Risultati test che mostra un test non superato e un conteggio di 21 test superati e 1 test non superato.](media/test-results-window.PNG)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Testing unità in .NET Core e .NET Standard](/dotnet/core/testing)
 - [Introduzione a unit test (Visual Studio in Windows)](/visualstudio/test/getting-started-with-unit-testing)

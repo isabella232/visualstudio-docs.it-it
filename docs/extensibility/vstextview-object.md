@@ -13,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65a78253094131b5998243ee3c826c4585ddff13
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 06e1ba7c10912f23fedc09892e03e2105ff2bab4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012178"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583606"
 ---
 # <a name="vstextview-object"></a>Oggetto oggetto VsTextView
 
-La visualizzazione di testo è una finestra che consente agli utenti di visualizzare e modificare il testo Unicode del buffer di testo. In pratica, la visualizzazione è la maggior parte degli utenti che fanno riferimento all'editor. Poiché la vista è separata dal buffer da vari livelli di testo (ritorno a capo automatico, testo della struttura e così via), la vista non è garantita come rappresentazione esatta del testo nel buffer. Per altre informazioni sulla visualizzazione di testo, vedere [accesso a TheText View con l'API legacy](../vs-2015/extensibility/accessing-thetext-view-by-using-the-legacy-api.md?view=vs-2015).
+La visualizzazione di testo è una finestra che consente agli utenti di visualizzare e modificare il testo Unicode del buffer di testo. In pratica, la visualizzazione è la maggior parte degli utenti che fanno riferimento all'editor. Poiché la vista è separata dal buffer da vari livelli di testo (ritorno a capo automatico, testo della struttura e così via), la vista non è garantita come rappresentazione esatta del testo nel buffer. Per altre informazioni sulla visualizzazione di testo, vedere [accesso a TheText View con l'API legacy](../vs-2015/extensibility/accessing-thetext-view-by-using-the-legacy-api.md?view=vs-2015&preserve-view=true).
 
 Nella tabella seguente vengono illustrate le interfacce dell' <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> oggetto.
 
@@ -38,7 +38,7 @@ Nella tabella seguente vengono illustrate le interfacce dell' <xref:Microsoft.Vi
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|Interagisce con i livelli di testo.|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|Esegue operazioni sulla vista da un thread diverso.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Modifica figure](https://www.microsoft.com/download/details.aspx?id=55984)
 - [Oggetto oggetto VsTextBuffer](../extensibility/vstextbuffer-object.md)
