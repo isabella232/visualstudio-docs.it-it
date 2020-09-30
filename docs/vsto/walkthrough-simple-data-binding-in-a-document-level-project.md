@@ -1,5 +1,6 @@
 ---
 title: 'Procedura dettagliata: data binding semplice in un progetto a livello di documento'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c22947e572a29c2b49a5ce9bb808c3cf2fe2902
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981062"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584924"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Procedura dettagliata: data binding semplice in un progetto a livello di documento
   In questa procedura dettagliata vengono illustrate le nozioni di base di data binding in un progetto a livello di documento. Un singolo campo dati in un database SQL Server è associato a un intervallo denominato in Microsoft Office Excel. Nella procedura dettagliata viene inoltre illustrato come aggiungere controlli che consentono di scorrere tutti i record nella tabella.
@@ -191,7 +192,7 @@ ms.locfileid: "62981062"
 
 - Utilizzare un <xref:System.Windows.Forms.BindingNavigator> controllo per scorrere i record. Per altre informazioni, vedere [procedura: esplorare i dati con il controllo BindingNavigator Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)
 - [Procedura dettagliata: data binding complesse in un progetto a livello di documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)

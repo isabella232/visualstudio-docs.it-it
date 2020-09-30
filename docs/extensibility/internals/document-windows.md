@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38556eec259e91dd9e007d8e9bf1ac8d59f159a0
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 93d8b19569912278f0dea6d849e3a2c6e183dba4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011762"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584898"
 ---
 # <a name="document-windows"></a>Finestre dei documenti
 In Visual Studio una *finestra del documento* è una finestra figlio incorniciata associata a una finestra interfaccia a documenti multipli (MDI). Le finestre di documento vengono in genere usate per la visualizzazione e la modifica del codice sorgente o del testo, ma possono anche ospitare altri tipi funzionali. Finestre di documento:
@@ -33,7 +33,7 @@ In Visual Studio una *finestra del documento* è una finestra figlio incorniciat
   Per altre informazioni sul comportamento delle finestre in Visual Studio, vedere [personalizzare il layout delle finestre](../../ide/customizing-window-layouts-in-visual-studio.md).
 
 ## <a name="document-window-implementation"></a>Implementazione della finestra del documento
- Le finestre di documento vengono create implementando un editor. L' <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaccia crea le finestre del documento come parte della creazione di un'istanza di un editor. Per ulteriori informazioni, vedere [interfacce legacy nell'editor](../../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015).
+ Le finestre di documento vengono create implementando un editor. L' <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaccia crea le finestre del documento come parte della creazione di un'istanza di un editor. Per ulteriori informazioni, vedere [interfacce legacy nell'editor](../../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015&preserve-view=true).
 
 > [!NOTE]
 > Per fornire punti di navigazione indietro e avanti in una finestra, implementare l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> interfaccia. Nell'editor di testo vengono utilizzati marcatori di testo per identificare i punti di navigazione nel documento.
@@ -41,5 +41,5 @@ In Visual Studio una *finestra del documento* è una finestra figlio incorniciat
 ## <a name="the-running-document-table"></a>Tabella documenti in esecuzione
  L'IDE utilizza la tabella documenti in esecuzione (RDT) per tenere traccia dello stato di ogni finestra del documento. RDT è il meccanismo tramite il quale le finestre del documento ricevono notifiche di eventi, ad esempio quando una soluzione viene chiusa o quando un file è stato modificato. Per ulteriori informazioni, vedere [esecuzione della tabella documenti](../../extensibility/internals/running-document-table.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Caricamento ritardato dei documenti](../../extensibility/internals/delayed-document-loading.md)

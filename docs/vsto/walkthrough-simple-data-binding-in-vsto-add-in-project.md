@@ -1,5 +1,6 @@
 ---
 title: 'Procedura dettagliata: data binding semplice nel progetto di componente aggiuntivo VSTO'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcfb150cc0b97b72fd0f6eac02f59ae1db3e9ca6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67264800fd2baa1ca685bcc578fb4d400e6538dd
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985396"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584911"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Procedura dettagliata: data binding semplice nel progetto di componente aggiuntivo VSTO
 
@@ -150,7 +151,7 @@ Quando si apre Word, il controllo contenuto visualizza i dati del set di dati `A
 
 2. Selezionare i pulsanti **Avanti** e **Indietro** per scorrere i record del database.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
@@ -163,7 +164,7 @@ Quando si apre Word, il controllo contenuto visualizza i dati del set di dati `A
 - [Procedura dettagliata: data binding semplice in un progetto a livello di documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
 - [Procedura dettagliata: data binding complesse in un progetto a livello di documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
 - [Panoramica sull'uso dei file di database locali nelle soluzioni Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
-- [Aggiungi nuova origine dati](../data-tools/add-new-data-sources.md)
+- [Aggiungere nuove origini dati](../data-tools/add-new-data-sources.md)
 - [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Procedura: popolare documenti con dati da oggetti](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [Procedura: aggiornare un'origine dati con i dati di un controllo host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

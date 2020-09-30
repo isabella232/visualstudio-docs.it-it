@@ -1,5 +1,6 @@
 ---
 title: Funzionalità disponibili in base ai tipi di progetto e applicazioni di Office
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24344a643e9ec2b4a7bb90dc62df67209b3eb183
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ba24bdeac9ad51d0173e765c8cb793be2473baf6
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808181"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585432"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Funzionalità disponibili in base ai tipi di progetto e applicazioni di Office
   In Visual Studio sono disponibili numerosi tipi di modelli di progetto che supportano scenari aziendali diversi per le applicazioni di Microsoft Office, inclusi i tipi seguenti:
@@ -49,7 +50,7 @@ ms.locfileid: "90808181"
 ## <a name="features-available-in-different-project-types"></a>Funzionalità disponibili in diversi tipi di progetto
  Nella tabella seguente sono indicati i tipi di progetto che forniscono ciascuna funzionalità.
 
-|Funzionalità|Tipi di progetto che forniscono la funzionalità|Ulteriori informazioni|
+|Feature|Tipi di progetto che forniscono la funzionalità|Ulteriori informazioni|
 |-------------|--------------------------------------------|---------------------|
 |Riquadro azioni.|Progetti a livello di documento.|[Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)|
 |Distribuzione ClickOnce.|Progetti a livello di documento e VS.|[Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)|
@@ -65,7 +66,7 @@ ms.locfileid: "90808181"
 |Personalizzazioni della barra multifunzione.|Progetti a livello di documento.<br /><br /> Progetti di componente aggiuntivo VSTO per le applicazioni seguenti:<br /><br /> -Excel<br />-InfoPath (solo InfoPath 2013 e InfoPath 2010)<br />-Outlook<br />-PowerPoint<br />-Progetto<br />-Visio<br />-Word|[Panoramica della barra multifunzione](../vsto/ribbon-overview.md)|
 |Programma di creazione documenti visivi.|Progetti a livello di documento.|[Progetti di Office nell'ambiente Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Introduzione &#40;sviluppo per Office in Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Panoramica sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)

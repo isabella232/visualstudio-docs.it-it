@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2037842e57b6152990144d9ea652936e65517e13
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 87312b5db9357462c822f876220cc239b79106aa
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739954"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585719"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profilare le prestazioni delle applicazioni SharePoint
 
@@ -55,18 +55,18 @@ I test delle prestazioni Web simulano il modo in cui un utente finale può inter
 
 ## <a name="test-user-interfaces"></a>Interfacce utente di test
 
-I test codificati dell'interfaccia utente indirizzano automaticamente l'applicazione SharePoint tramite la relativa interfaccia utente. Questi test coprono i controlli dell'interfaccia utente, ad esempio pulsanti e menu, per verificare che funzionino correttamente. Questo tipo di test è particolarmente utile se nell'interfaccia utente viene eseguita la convalida o un'altra logica, ad esempio in una pagina Web. È anche possibile usare i test codificati dell'interfaccia utente per automatizzare i test manuali. Si creano test codificati dell'interfaccia utente per le applicazioni SharePoint nello stesso modo in cui si creano test per altri tipi di applicazioni. Per altre informazioni, vedere [test di applicazioni SharePoint 2010 con test codificati dell'interfaccia utente](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015).
+I test codificati dell'interfaccia utente indirizzano automaticamente l'applicazione SharePoint tramite la relativa interfaccia utente. Questi test coprono i controlli dell'interfaccia utente, ad esempio pulsanti e menu, per verificare che funzionino correttamente. Questo tipo di test è particolarmente utile se nell'interfaccia utente viene eseguita la convalida o un'altra logica, ad esempio in una pagina Web. È anche possibile usare i test codificati dell'interfaccia utente per automatizzare i test manuali. Si creano test codificati dell'interfaccia utente per le applicazioni SharePoint nello stesso modo in cui si creano test per altri tipi di applicazioni. Per altre informazioni, vedere [test di applicazioni SharePoint 2010 con test codificati dell'interfaccia utente](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015&preserve-view=true).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 |Titolo|Descrizione|
 |-----------|-----------------|
 |[Procedura dettagliata: profilare un'applicazione SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Viene illustrato come eseguire un'analisi del profilo di campionamento in un'applicazione SharePoint.|
-|[Eseguire il test delle prestazioni dell'applicazione prima del rilascio](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|Viene descritto come creare test di carico che consentono di sottoporre a test le applicazioni SharePoint.|
+|[Eseguire il test delle prestazioni dell'applicazione prima del rilascio](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts&preserve-view=true)|Viene descritto come creare test di carico che consentono di sottoporre a test le applicazioni SharePoint.|
 |[Eseguire unit test del codice](../test/unit-test-your-code.md)|Viene descritto come trovare errori di logica nel codice tramite unit test.|
-|[Test delle applicazioni di SharePoint 2010 con test codificati dell'interfaccia utente](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015)|Viene descritto come testare l'interfaccia utente delle applicazioni SharePoint.|
+|[Test delle applicazioni di SharePoint 2010 con test codificati dell'interfaccia utente](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015&preserve-view=true)|Viene descritto come testare l'interfaccia utente delle applicazioni SharePoint.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Migliorare la qualità del codice](../test/improve-code-quality.md)

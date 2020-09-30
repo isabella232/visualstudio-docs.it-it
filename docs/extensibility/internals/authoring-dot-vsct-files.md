@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4a3dba370594397d2f247de90063f69c4195cb6
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 11e55da5f2eb1d8b4671543672a79b508e20a929
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012152"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583684"
 ---
 # <a name="author-vsct-files"></a>Crea file con estensione vsct
 Questo documento illustra come creare un file con *estensione vsct* per aggiungere voci di menu, barre degli strumenti e altri elementi dell'interfaccia utente a Visual Studio Integrated Development Environment (IDE). Usare questi passaggi quando si aggiungono elementi dell'interfaccia utente a un pacchetto di Visual Studio (VSPackage) che non dispone già di un file con *estensione vsct* .
@@ -108,7 +108,7 @@ Questo documento illustra come creare un file con *estensione vsct* per aggiunge
        > [!NOTE]
        > I pulsanti della barra degli strumenti devono avere icone.
 
-   Per ulteriori informazioni, vedere [oggetti MenuCommand e OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015).
+   Per ulteriori informazioni, vedere [oggetti MenuCommand e OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
 
 4. Se uno dei comandi richiede icone, aggiungere un elemento [bitmap](../../extensibility/bitmaps-element.md) all' `Commands` elemento. Quindi, per ogni icona aggiungere un elemento [bitmap](../../extensibility/bitmap-element.md) all' `Bitmaps` elemento. Qui è possibile specificare il percorso della risorsa bitmap. Per altre informazioni, vedere [aggiungere icone ai comandi di menu](../../extensibility/adding-icons-to-menu-commands.md).
 
@@ -233,7 +233,7 @@ Questo documento illustra come creare un file con *estensione vsct* per aggiunge
 
    - Controller menu: un controller di menu è un pulsante con una freccia accanto. Facendo clic sulla freccia si apre un elenco. Per aggiungere un controller di menu all'interfaccia utente, creare un `Menu` elemento e impostare il relativo `type` attributo su `MenuController` o `MenuControllerLatched` , a seconda del comportamento desiderato. Per popolare un controller di menu, impostarlo come padre di un `Group` elemento. Il controller di menu visualizzerà tutti gli elementi figlio del gruppo nell'elenco a discesa.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estendi menu e comandi](../../extensibility/extending-menus-and-commands.md)
 - [File della tabella dei comandi di Visual Studio (con estensione vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Riferimento XML Schema VSCT](../../extensibility/vsct-xml-schema-reference.md)

@@ -1,5 +1,6 @@
 ---
 title: 'Procedura dettagliata: inserire testo in un documento da un riquadro azioni'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c65027d7670c4d6789f32eb4d9080df061d904a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90840298"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584963"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Procedura dettagliata: inserire testo in un documento da un riquadro azioni
   In questa procedura dettagliata viene illustrato come creare un riquadro azioni in un Microsoft Office documento di Word. Il riquadro azioni contiene due controlli che raccolgono l'input e quindi inviano il testo al documento.
@@ -109,7 +110,7 @@ ms.locfileid: "90840298"
 
 4. Aggiungere un controllo **TextBox** al controllo del riquadro azioni e modificare le proprietà seguenti.
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**getName**|
     |**Dimensione**|**130, 20**|
@@ -118,7 +119,7 @@ ms.locfileid: "90840298"
 
 6. Aggiungere un secondo controllo **TextBox** al controllo del riquadro azioni e modificare le proprietà seguenti.
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**getAddress**|
     |**Accetta la restituzione**|**True**|
@@ -127,7 +128,7 @@ ms.locfileid: "90840298"
 
 7. Aggiungere un controllo **Button** al controllo del riquadro azioni e modificare le proprietà seguenti.
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**addText**|
     |**Text**|**Inserimento**|
@@ -179,7 +180,7 @@ ms.locfileid: "90840298"
 
 - Associare dati a controlli in un riquadro azioni. Per ulteriori informazioni, vedere [procedura dettagliata: associare dati a controlli in un riquadro azioni di Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)
 - [Procedura: aggiungere un riquadro azioni ai documenti di Word o alle cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Procedura: aggiungere un riquadro azioni alle cartelle di lavoro di Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))

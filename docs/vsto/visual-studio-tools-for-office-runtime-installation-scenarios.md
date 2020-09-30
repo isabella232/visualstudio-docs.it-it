@@ -1,5 +1,6 @@
 ---
 title: Scenari di installazione di Strumenti di Visual Studio per Office Runtime
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 54ca03e0af1b492b09b4c06c2fe0fc0b7e107443
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 95d183d2b767738156fc63f95d2a83ed6a1e5714
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810928"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584373"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Scenari di installazione di Strumenti di Visual Studio per Office Runtime
   È possibile installare Visual Studio 2010 Tools per Office Runtime in tre modi:
@@ -66,6 +67,6 @@ ms.locfileid: "90810928"
 
  Per altre informazioni sull'inclusione dei prerequisiti in una soluzione ClickOnce, vedere [procedura: installare i prerequisiti nei computer degli utenti finali per eseguire soluzioni Office](/previous-versions/bb608608(v=vs.110)). Per ulteriori informazioni su come installare manualmente il runtime dal pacchetto ridistribuibile, vedere [procedura: installazione di strumenti di Visual Studio per Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica di Strumenti di Visual Studio per Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)
 - [Assembly nel Strumenti di Visual Studio per Office Runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)

@@ -1,5 +1,6 @@
 ---
 title: Creazione di un elemento di progetto azione personalizzata con un modello di elemento, parte 1
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5b19f99cf9688191a5b6ef8ba8d4f58f4c6633c
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 5cdf574d17e63e1ef4906c629d43f5f928784d01
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739941"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585563"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Procedura dettagliata: creare un elemento di progetto azione personalizzata con un modello di elemento, parte 1
   Per estendere il sistema del progetto SharePoint in Visual Studio, è possibile creare tipi di elemento di progetto personalizzati. In questa procedura dettagliata verrà creato un elemento del progetto che può essere aggiunto a un progetto SharePoint per creare un'azione personalizzata in un sito di SharePoint. L'azione personalizzata consente di aggiungere una voce di menu al menu **Azioni sito** del sito di SharePoint.
@@ -449,7 +450,7 @@ ms.locfileid: "90739941"
 ## <a name="next-steps"></a>Passaggi successivi
  Al termine di questa procedura dettagliata, è possibile aggiungere una procedura guidata al modello di elemento. Quando un utente aggiunge un elemento del progetto di azione personalizzata a un progetto SharePoint, la procedura guidata raccoglie informazioni sull'azione, ad esempio la posizione e l'URL a cui passare quando viene scelta l'azione, e aggiunge tali informazioni al file *Elements.xml* nel nuovo elemento del progetto. Per ulteriori informazioni, vedere [procedura dettagliata: creare un elemento del progetto di azione personalizzata con un modello di elemento, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura dettagliata: creare un elemento di progetto azione personalizzata con un modello di elemento, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)
 - [Definire i tipi di elementi di progetto SharePoint personalizzati](../sharepoint/defining-custom-sharepoint-project-item-types.md)

@@ -1,5 +1,6 @@
 ---
 title: 'Procedura: visualizzare una stringa in una cella di un foglio di codice a livello di codice'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed93451942ccb0376c78ebb0e99b269a658131de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb3dbaec2efd95f63428e8494598720953f791e7
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545925"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585223"
 ---
 # <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>Procedura: visualizzare una stringa in una cella di un foglio di codice a livello di codice
   In questo esempio viene illustrato come visualizzare il testo in una cella a livello di codice. Per visualizzare il testo nella cella, utilizzare un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo o un oggetto intervallo Excel nativo.
@@ -45,7 +46,7 @@ ms.locfileid: "85545925"
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: raccolta di dati tramite Windows Form](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
 - [Risolvere i problemi relativi alle soluzioni Office](../vsto/troubleshooting-office-solutions.md)
 - [NamedRange (controllo)](../vsto/namedrange-control.md)

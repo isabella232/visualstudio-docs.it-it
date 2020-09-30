@@ -10,18 +10,18 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 0dcc254366e0d652ab7a8442a4d0c526fd72c403
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 3280e63ae92a99cfa076b79e499a7b18952285c4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402526"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584035"
 ---
 # <a name="create-no-locblazor-web-apps"></a>Crea Blazor app Web
 
 Questa guida offre un'introduzione alla creazione della prima Blazor app Web. Per istruzioni più dettagliate, vedere [Introduzione a ASP.NET Core Blazor ](/aspnet/core/blazor/index).
 
-ASP.NET Core Blazor supporta due diverse opzioni di hosting: Blazor WebAssembly (WASM) o Blazor Server. Visual Studio per Mac supporta entrambi i modelli di hosting. Visual Studio per Mac 8.4 + supporta Blazor Server e Visual Studio per Mac 8.6 + supporta entrambi. Per ulteriori informazioni sui Blazor modelli di hosting, vedere [ASP.NET Core Blazor modelli di hosting ](https://docs.microsoft.com/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1). Il supporto per Blazor WebAssembly il debug di progetti in Visual Studio per Mac è disponibile nella versione di anteprima della versione 8.8 (disponibile tramite il canale di aggiornamento dell'anteprima nel menu **> verifica della disponibilità di aggiornamenti di Visual Studio** ).
+ASP.NET Core Blazor supporta due diverse opzioni di hosting: Blazor WebAssembly (WASM) o Blazor Server. Visual Studio per Mac supporta entrambi i modelli di hosting. Visual Studio per Mac 8.4 + supporta Blazor Server e Visual Studio per Mac 8.6 + supporta entrambi. Per ulteriori informazioni sui Blazor modelli di hosting, vedere [ASP.NET Core Blazor modelli di hosting ](/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1). Il supporto per Blazor WebAssembly il debug di progetti in Visual Studio per Mac è disponibile nella versione di anteprima della versione 8.8 (disponibile tramite il canale di aggiornamento dell'anteprima nel menu **> verifica della disponibilità di aggiornamenti di Visual Studio** ).
 
 Che cos'è Blazor ? Blazor è un Framework per la creazione di un'interfaccia utente Web interattiva sul lato client con .NET, che offre agli sviluppatori Web i vantaggi seguenti:
 
@@ -101,7 +101,7 @@ Questa cartella contiene le pagine Web di un progetto che usano l'estensione di 
 
 Questa cartella include i componenti condivisi, usando anche l'estensione *Razor* . Si noterà che questo include *MainLayout. Razor*, che viene usato per definire il layout comune nell'applicazione. Include anche il componente Shared *NavMenu. Razor* , che viene usato in tutte le pagine. Se si stanno creando componenti riutilizzabili, questi verranno inseriti nella cartella **condivisa** .
 
-### <a name="app-settings"></a>Impostazioni delle app
+### <a name="app-settings"></a>Impostazioni dell'app
 
 Il *appSettings.jsnel* file contiene i dati di configurazione, ad esempio le stringhe di connessione.
 
@@ -116,7 +116,7 @@ Questa cartella contiene file statici, ad esempio file HTML, JavaScript e CSS. P
 Questo file contiene il punto di ingresso per il programma. Per altre informazioni, vedere [Host Web ASP.NET Core](/aspnet/core/fundamentals/host/web-host).
 
 ### <a name="no-locblazor-server-app-specific-files"></a>Blazor File specifici dell'app Server
-#### <a name="app-settings"></a>Impostazioni delle app
+#### <a name="app-settings"></a>Impostazioni dell'app
 
 Il *appSettings.jsnel* file contiene i dati di configurazione, ad esempio le stringhe di connessione.
 
@@ -129,6 +129,6 @@ Questo file contiene il codice che configura il comportamento dell'app, ad esemp
 ## <a name="summary"></a>Riepilogo
 In questa esercitazione è stato illustrato come creare una nuova app Blazor o app Server Blazor WebAssembly in Visual Studio per Mac e sono state apprese alcune delle funzionalità offerte da Visual Studio per Mac per facilitare la creazione di Blazor applicazioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 Per una guida più completa alla creazione di Blazor app Web, vedere [introduzione a Blazor ASP.NET Core ](/aspnet/core/blazor/index).

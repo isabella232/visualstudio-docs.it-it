@@ -1,5 +1,6 @@
 ---
 title: 'Procedura: aggiungere righe e colonne alle tabelle di Word a livello di codice'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0097692c77d0b472c808876e9017b514b6416fc6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3887f80a5c2a0cb775059f58876135d91350133c
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538073"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585379"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Procedura: aggiungere righe e colonne alle tabelle di Word a livello di codice
   In una tabella di Microsoft Office Word le celle sono organizzate in righe e colonne. È possibile usare il metodo <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> dell'oggetto <xref:Microsoft.Office.Interop.Word.Rows> per aggiungere righe alla tabella e il metodo <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> dell'oggetto <xref:Microsoft.Office.Interop.Word.Columns> per aggiungere colonne.
@@ -75,7 +76,7 @@ ms.locfileid: "85538073"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#96](codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#96)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: creare tabelle di Word a livello di codice](how-to-programmatically-create-word-tables.md)
 - [Procedura: aggiungere testo e formattazione alle celle delle tabelle di Word a livello di codice](how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
 - [Procedura: popolare tabelle di Word con proprietà dei documenti a livello di codice](how-to-programmatically-populate-word-tables-with-document-properties.md)

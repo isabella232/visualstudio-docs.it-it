@@ -1,5 +1,6 @@
 ---
 title: Creare la prima personalizzazione a livello di documento per Word
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c07c3257b8df0e671941ae08bc3738350e017a8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1f5d1d6d373a5bbcd3f10d600175a88e88823ad
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74567013"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584989"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Procedura dettagliata: creare la prima personalizzazione a livello di documento per Word
 
@@ -170,10 +171,10 @@ ms.locfileid: "74567013"
 
 - Distribuzione di personalizzazioni a livello di documento per Word: [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [soluzioni Word](../vsto/word-solutions.md)
+- [Soluzioni Word](../vsto/word-solutions.md)
 - [Programma personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
 - [Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md)
 - [Automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)

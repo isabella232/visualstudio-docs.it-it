@@ -1,5 +1,6 @@
 ---
 title: Riempimento automatico degli intervalli di dati a livello di codice
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 076381c93d11c2d13bdd89ea5c36c0039e15ef71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1cdcc02fa3c33945ffc4824310f0957bdbdd2dd
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547472"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585314"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Procedura: riempire automaticamente gli intervalli con dati modificati in modo incrementale a livello di codice
   Il <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metodo dell' <xref:Microsoft.Office.Interop.Excel.Range> oggetto consente di riempire automaticamente un intervallo in un foglio di un foglio di test. In genere, il <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metodo viene utilizzato per archiviare i valori che aumentano o diminuiscono in modo incrementale in un intervallo. È possibile specificare il comportamento fornendo una costante facoltativa dall' <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> enumerazione.
@@ -51,7 +52,7 @@ ms.locfileid: "85547472"
 
 - La colonna D prevede l'inclusione di una serie di numeri, incrementando di due per ogni riga. Per i valori iniziali, digitare **4** nella cella D1 e **6** nella cella D2.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Usare gli intervalli](../vsto/working-with-ranges.md)
 - [Procedura: fare riferimento a intervalli di fogli di fogli di codice a livello di codice](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
 - [Procedura: applicare stili agli intervalli nelle cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)

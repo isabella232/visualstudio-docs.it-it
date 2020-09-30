@@ -5,18 +5,18 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: d1511434a34017a7f0f7da65fe1ea6956d45d497
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 911d8d3a65c414bc3c98494bda75c46b778e5b2b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71128408"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584022"
 ---
 # <a name="understanding-build-configurations"></a>Informazioni sulle configurazioni della build
 
 È possibile archiviare diverse configurazioni di proprietà della soluzione e del progetto da usare in tipi diversi di compilazioni durante il processo di sviluppo. I progetti creati da Visual Studio per Mac usando un modello includeranno in genere configurazioni di debug e di rilascio che supportano rispettivamente il debug di un'app e la distribuzione di un'app. 
 
-Se si vuole creare configurazioni personalizzate, vedere [creazione e modifica di configurazioni di compilazione](/visualstudio/mac/create-and-edit-configurations).
+Se si vuole creare configurazioni personalizzate, vedere [creazione e modifica di configurazioni di compilazione](./create-and-edit-configurations.md).
 
 >[!NOTE]
 >Questo argomento si applica a Visual Studio per Mac. Per Visual Studio in Windows, vedere [informazioni sulle configurazioni di compilazione](/visualstudio/ide/understanding-build-configurations).
@@ -72,6 +72,6 @@ L'elenco seguente offre alcuni esempi di dati che possono essere inclusi nelle c
   * Modalità (Glance, notifica)
   * Payload di notifica
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni sulle configurazioni della build (Visual Studio in Windows)](/visualstudio/ide/understanding-build-configurations)

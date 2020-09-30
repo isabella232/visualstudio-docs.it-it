@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08513ef67dfdffbf70b5ce2ff449a9ceb4250c37
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f32b7de4d3e62c2f1d9de5126217ccede48dfca8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012295"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583697"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Aggiungere un comando alla barra degli strumenti Esplora soluzioni
 In questa procedura dettagliata viene illustrato come aggiungere un pulsante alla barra degli strumenti **Esplora soluzioni** .
@@ -114,7 +114,7 @@ In questa procedura dettagliata viene illustrato come aggiungere un pulsante all
 
 5. Scegliere **Chiudi soluzione** dal menu **File**. Il pulsante scompare dalla barra degli strumenti.
 
-   La visibilità del pulsante viene controllata da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] finché il pacchetto VSPackage non viene caricato. Una volta caricato il pacchetto VSPackage, la visibilità del pulsante viene controllata dal pacchetto VSPackage.  Per ulteriori informazioni, vedere [oggetti MenuCommand e OleMenuCommands](../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015).
+   La visibilità del pulsante viene controllata da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] finché il pacchetto VSPackage non viene caricato. Una volta caricato il pacchetto VSPackage, la visibilità del pulsante viene controllata dal pacchetto VSPackage.  Per ulteriori informazioni, vedere [oggetti MenuCommand e OleMenuCommands](../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

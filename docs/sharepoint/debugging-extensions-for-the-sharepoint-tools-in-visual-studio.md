@@ -1,5 +1,6 @@
 ---
 title: Estensioni di debug per gli strumenti di SharePoint in Visual Studio | Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1179779d07e7674babc51231ba629d7e25556f89
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64785341"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584633"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Estensioni di debug per gli strumenti di SharePoint in Visual Studio
   È possibile eseguire il debug delle estensioni degli strumenti di SharePoint nell'istanza sperimentale o nell'istanza normale di Visual Studio. Se è necessario risolvere i problemi relativi al comportamento di un'estensione, è anche possibile modificare i valori del registro di sistema in modo da visualizzare informazioni aggiuntive sull'errore e configurare la modalità di esecuzione dei comandi di SharePoint in Visual Studio.
@@ -127,7 +128,7 @@ ms.locfileid: "64785341"
 |MaxReceivedMessageSize|REG_DWORD che specifica la dimensione massima consentita, in byte, dei messaggi WCF passati tra Visual Studio e *vssphost4.exe*.<br /><br /> Il valore predefinito è 1.048.576 byte (1 MB).|
 |MaxStringContentLength|REG_DWORD che specifica la dimensione massima consentita, in byte, delle stringhe passate tra Visual Studio e *vssphost4.exe*.<br /><br /> Il valore predefinito è 1.048.576 byte (1 MB).|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Distribuire estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

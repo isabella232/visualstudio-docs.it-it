@@ -1,5 +1,6 @@
 ---
-title: '&lt;elemento postActions &gt; (sviluppo per Office in Visual Studio)'
+title: '&lt;elemento postActions &gt; (sviluppo per Office)'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfe9ae171f0f6fac1c2b5add5340de1c11f3da0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb716c3d9a20b6bda2cadff178a5126d6815ac00
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544417"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583710"
 ---
-# <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;elemento postActions &gt; (sviluppo per Office in Visual Studio)
+# <a name="ltpostactionsgt-element-office-development"></a>&lt;elemento postActions &gt; (sviluppo per Office)
   L'elemento `postActions` dello spazio dei nomi `vstav3` contiene tutti gli elementi `postAction` che descrivono le azioni post-distribuzione, che vengono eseguite dopo l'installazione delle soluzioni Office.
 
 ## <a name="syntax"></a>Sintassi
@@ -71,7 +72,7 @@ ms.locfileid: "85544417"
 </vstav3:postActions>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)

@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: dd4db2502c65e9330bde5f475fc97b2e86a49e4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10beb7e95807a098cbe6efa89d02fdfa866bc2b8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80544021"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583983"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Estensione di Visual Studio per Mac
 
@@ -161,7 +161,7 @@ Per informazioni sull'ambito delle aree disponibili per lo sviluppo, vedere le [
 
 ## <a name="extending-the-new-editor"></a>Estensione del nuovo editor
 
-Visual Studio per Mac [introduce l'interfaccia utente del nuovo editor di testo Cocoa](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes) basato sugli stessi livelli di editor di Visual Studio in Windows.
+Visual Studio per Mac [introduce l'interfaccia utente del nuovo editor di testo Cocoa](/visualstudio/releasenotes/vs2019-mac-relnotes) basato sugli stessi livelli di editor di Visual Studio in Windows.
 
 La condivisione dell'editor di testo tra Visual Studio e Visual Studio per Mac offre numerosi vantaggi, tra cui la possibilità di adattare a Visual Studio per Mac codice destinato all'editor di Visual Studio.
 
@@ -193,6 +193,6 @@ Per un oggetto specificato [`MonoDevelop.Ide.Gui.Document`](http://source.monode
 > [!NOTE]
 > Microsoft sta attualmente lavorando al miglioramento degli scenari di estendibilità per Visual Studio per Mac. Se si stanno creando estensioni e sono necessarie altre informazioni o maggiore supporto oppure si vuole fornire commenti e suggerimenti, compilare il modulo [Visual Studio for Mac Extension Authoring](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u) (Creazione di estensioni per Visual Studio per Mac).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sviluppare estensioni di Visual Studio (in Windows)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

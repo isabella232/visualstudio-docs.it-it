@@ -1,5 +1,6 @@
 ---
 title: 'Procedura dettagliata: data binding complesse in un progetto a livello di documento'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7aba307bcd76cc055e42c11418d42f3dd0cfba1f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67692347"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584321"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procedura dettagliata: data binding complesse in un progetto a livello di documento
   In questa procedura dettagliata vengono illustrate le nozioni di base di data binding complesse in un progetto a livello di documento. È possibile associare più celle di un foglio di lavoro Microsoft Office Excel ai campi del database di SQL Server Northwind.
@@ -223,7 +224,7 @@ ms.locfileid: "67692347"
 
 - Creare una relazione Master-Details tra un campo e una tabella. Per ulteriori informazioni, vedere [procedura dettagliata: creazione di una relazione Master Detail utilizzando un set di dati memorizzato nella cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)
 - [Procedura dettagliata: data binding semplice in un progetto a livello di documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)

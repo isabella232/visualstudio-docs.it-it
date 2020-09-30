@@ -1,5 +1,6 @@
 ---
 title: 'Esplora pacchetti: aggiungere & rimuovere funzionalità & elementi al pacchetto'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3ea7e30737855cbbb9434e8763f4903d80b82da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9bc4546d598a2fcca822f1921f778034fb768c2b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014551"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585589"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Esplora pacchetti
   Per configurare un pacchetto per la distribuzione di elementi e funzionalità di SharePoint, è possibile utilizzare Esplora pacchetti. È possibile modificare le funzionalità e gli elementi del progetto SharePoint all'interno del file con estensione wsp.
@@ -62,5 +63,5 @@ ms.locfileid: "86014551"
 
 2. Aprire un menu di scelta rapida per una funzionalità o un pacchetto, quindi scegliere **convalida**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

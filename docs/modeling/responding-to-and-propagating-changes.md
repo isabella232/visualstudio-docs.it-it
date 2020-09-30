@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c9f108529931fc99946e18f15492f72384e1578
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 96342abce736f18d79f89b9441d9b53c068cbecf
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809989"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583892"
 ---
 # <a name="respond-to-and-propagate-changes"></a>Risposta e propagazione delle modifiche
 
@@ -32,7 +32,7 @@ Come linea guida, prendere in considerazione queste tecniche nell'ordine seguent
 |Regole|È possibile definire regole accodate per l'esecuzione immediatamente prima della fine di una transazione in cui si è verificata una modifica. Non vengono eseguite in caso di annullamento o ripetizione. Utilizzarli per tenere una parte dell'archivio sincronizzata con un'altra.|[Le regole propagano le modifiche all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md)|
 |Archivia eventi|L'archivio di modellazione fornisce notifiche di eventi quali l'aggiunta o l'eliminazione di un elemento o un collegamento o la modifica del valore di una proprietà. L'evento viene inoltre eseguito in fase di annullamento e ripristino. Utilizzare gli eventi di archiviazione per aggiornare i valori non inclusi nell'archivio.|[I gestori eventi propagano le modifiche al di fuori del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
 |Eventi .NET|Le forme hanno gestori eventi che rispondono ai clic del mouse e ad altri movimenti. È necessario registrarsi per questi eventi per ogni oggetto. La registrazione viene in genere eseguita in un override di InitializeInstanceResources e deve essere eseguita per ogni elemento.<br /><br /> Questi eventi si verificano in genere all'esterno di una transazione.|[Procedura: Intercettare un clic su una forma o su un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
-|Regole dei limiti|Una regola dei limiti viene utilizzata in modo specifico per vincolare i limiti di una forma.|[Le regole associate (BoundsRules) vincolano posizione e dimensione delle forme](../vs-2015/modeling/boundsrules-constrain-shape-location-and-size.md?view=vs-2015)|
+|Regole dei limiti|Una regola dei limiti viene utilizzata in modo specifico per vincolare i limiti di una forma.|[Le regole associate (BoundsRules) vincolano posizione e dimensione delle forme](../vs-2015/modeling/boundsrules-constrain-shape-location-and-size.md?view=vs-2015&preserve-view=true)|
 |Regole di selezione|Le regole di selezione vincolano in modo specifico ciò che l'utente può selezionare.|[Procedura: Accedere e vincolare la selezione corrente](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Indicare gli Stati degli elementi del modello usando le funzionalità di forme e connettori, ad esempio ombreggiatura, frecce, colore e spessore di linea e stile.|[Aggiornamento di forme e di connettori per riflettere il modello](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
@@ -52,7 +52,7 @@ Utilizzare gli eventi di archiviazione per sincronizzare il modello con gli ogge
 
 - **Passaggio di argomenti di evento a regole ed eventi** A entrambi gli eventi e le regole viene passato un `EventArgs` parametro con informazioni sul modo in cui il modello è stato modificato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Intercettare un clic su una forma o su un elemento Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 - [Scrittura di codice per personalizzare un Domain-Specific Language](../modeling/writing-code-to-customise-a-domain-specific-language.md)

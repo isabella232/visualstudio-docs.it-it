@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 07/03/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 56af8f7cd30ec8e41ece2772dc63d67a2dbf3976
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: a385e58f73edbcea6eb25b7b2e2728e00f9bcb8d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402613"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584009"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Presentazione di Visual Studio 2019 per Mac
 
@@ -36,7 +36,7 @@ L'articolo illustra varie sezioni di Visual Studio per Mac e presenta alcune del
 
 Visual Studio per Mac è organizzato in sezioni diverse per la gestione di impostazioni e file delle applicazioni, la creazione di codice delle applicazioni e il debug.
 
-## <a name="getting-started"></a>Introduzione
+## <a name="getting-started"></a>Attività iniziali
 
 Quando si avvia Visual Studio 2019 per Mac per la prima volta, viene visualizzata una finestra di accesso per i nuovi utenti. Accedere con l'account Microsoft per attivare una licenza a pagamento (se disponibile) o connettersi alle sottoscrizioni di Azure. È possibile scegliere di **eseguire questa** operazione in un secondo momento e accedere in un secondo momento tramite la voce **di menu di accesso > di Visual Studio** :
 
@@ -66,7 +66,7 @@ Il riquadro della soluzione organizza i progetti in una soluzione:
 
 In questa posizione i file per il codice sorgente, le risorse, l'interfaccia utente e le dipendenze vengono organizzati in progetti specifici della piattaforma.
 
-Per altre informazioni sull'uso di progetti e soluzioni in Visual Studio per Mac, vedere l'articolo [Progetti e soluzioni](/visualstudio/mac/projects-and-solutions).
+Per altre informazioni sull'uso di progetti e soluzioni in Visual Studio per Mac, vedere l'articolo [Progetti e soluzioni](./projects-and-solutions.md).
 
 ## <a name="assembly-references"></a>Riferimenti ad assembly
 
@@ -78,7 +78,7 @@ I riferimenti ad assembly per ogni progetto sono disponibili nella cartella Rife
 
 ![Finestra di dialogo Modifica riferimenti](media/ide-tour-image20.png)
 
-Per altre informazioni sull'uso dei riferimenti in Visual Studio per Mac, vedere l'articolo [Gestione dei riferimenti in un progetto](/visualstudio/mac/managing-references-in-a-project).
+Per altre informazioni sull'uso dei riferimenti in Visual Studio per Mac, vedere l'articolo [Gestione dei riferimenti in un progetto](./managing-references-in-a-project.md).
 
 ## <a name="dependencies--packages"></a>Dipendenze/pacchetti
 
@@ -90,7 +90,7 @@ Per aggiungere una dipendenza all'applicazione, fare clic con il pulsante destro
 
 ![Aggiungere un pacchetto NuGet](media/ide-tour-image21.png)
 
-Le informazioni sull'uso di un pacchetto NuGet in un'applicazione sono disponibili nell'articolo [Inserimento di un pacchetto NuGet nel progetto](/visualstudio/mac/nuget-walkthrough).
+Le informazioni sull'uso di un pacchetto NuGet in un'applicazione sono disponibili nell'articolo [Inserimento di un pacchetto NuGet nel progetto](./nuget-walkthrough.md).
 
 ## <a name="source-editor"></a>Editor standard
 
@@ -111,7 +111,7 @@ In questo esempio vengono riportate alcune delle funzionalità seguenti:
 * Selezione di Formatta
 * Lampadine inline
 
-Per ulteriori informazioni sull'utilizzo dell'editor di origine in Visual Studio per Mac, vedere la documentazione dell' [editor di origine](/visualstudio/mac/source-editor) .
+Per ulteriori informazioni sull'utilizzo dell'editor di origine in Visual Studio per Mac, vedere la documentazione dell' [editor di origine](./source-editor.md) .
 
 Per tenere le schede visibili in qualsiasi momento, è possibile sfruttare i vantaggi offerti dall'aggiunta. Ciò garantisce che ogni volta che si avvia un progetto, la scheda necessaria sarà sempre visualizzata. Per aggiungere una scheda, passare il puntatore del mouse sulla scheda e fare clic sull'icona del _pin_ :
 
@@ -119,15 +119,15 @@ Per tenere le schede visibili in qualsiasi momento, è possibile sfruttare i van
 
 ## <a name="refactoring"></a>Refactoring
 
-Visual Studio per Mac fornisce due metodi utili per il refactoring del codice: azioni di contesto e analisi dell'origine. Per altre informazioni, vedere l'articolo [Refactoring](/visualstudio/mac/refactoring).
+Visual Studio per Mac fornisce due metodi utili per il refactoring del codice: azioni di contesto e analisi dell'origine. Per altre informazioni, vedere l'articolo [Refactoring](./refactoring.md).
 
 ## <a name="debugging"></a>Debug
 
-Visual Studio per Mac dispone di debugger che supportano i progetti .NET Core, .NET Framework, Unity e Novell. Visual Studio per Mac usa il debugger di .NET Core e il debugger mono soft, consentendo all'IDE di eseguire il debug di codice gestito in tutte le piattaforme. Per altre informazioni sul debug, vedere l'articolo [Debug](/visualstudio/mac/debugging).
+Visual Studio per Mac dispone di debugger che supportano i progetti .NET Core, .NET Framework, Unity e Novell. Visual Studio per Mac usa il debugger di .NET Core e il debugger mono soft, consentendo all'IDE di eseguire il debug di codice gestito in tutte le piattaforme. Per altre informazioni sul debug, vedere l'articolo [Debug](./debugging.md).
 
 Il debugger contiene visualizzatori avanzati per tipi speciali come stringhe, colori, URL, oltre a dimensioni, coordinate e curve di Bézier.
 
-Per altre informazioni sulle visualizzazioni dei dati del debugger, vedere l'articolo [Visualizzazioni dei dati](/visualstudio/mac/data-visualizations).
+Per altre informazioni sulle visualizzazioni dei dati del debugger, vedere l'articolo [Visualizzazioni dei dati](./data-visualizations.md).
 
 ## <a name="version-control"></a>Controllo della versione
 
@@ -139,7 +139,7 @@ I file con modifiche non sottoposte a commit presentano un'annotazione nelle rel
 
 ![File con modifiche non sottoposte a commit nel riquadro della soluzione](media/ide-tour-image23.png)
 
-Per altre informazioni sul controllo della versione in Visual Studio, vedere l'articolo [Controllo della versione](/visualstudio/mac/version-control).
+Per altre informazioni sul controllo della versione in Visual Studio, vedere l'articolo [Controllo della versione](./version-control.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
@@ -150,6 +150,6 @@ Per altre informazioni sul controllo della versione in Visual Studio, vedere l'a
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [IDE di Visual Studio (in Windows)](/visualstudio/ide/visual-studio-ide)

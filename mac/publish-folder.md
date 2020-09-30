@@ -9,12 +9,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: ab461327a0af5d072689e4a5cb357525b42018ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42d1d76275afd4944791137b97e04dd499e36083
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950489"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583944"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Pubblicare in una cartella usando Visual Studio per Mac
 
@@ -23,7 +23,7 @@ ms.locfileid: "85950489"
 ## <a name="prerequisites"></a>Prerequisiti
 
 - [Visual Studio 2019 per Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installato con .NET Core abilitato.
-- Una console di .NET Core o un progetto ASP.NET Core. Se non si ha già un progetto, è possibile [crearne uno](/visualstudio/mac/create-new-projects?view=vsmac-2019).
+- Una console di .NET Core o un progetto ASP.NET Core. Se non si ha già un progetto, è possibile [crearne uno](./create-new-projects.md?view=vsmac-2019).
 
 ## <a name="publish-to-folder"></a>Pubblicare in una cartella
 

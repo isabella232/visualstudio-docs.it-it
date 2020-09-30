@@ -1,5 +1,6 @@
 ---
-title: Tastiera di Office Word, impostazioni della tastiera, finestra di dialogo Opzioni
+title: Tastiera di Office Word, impostazioni, finestra di dialogo Opzioni
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5180aa2f4c5022cedcba2c5377d2ff2ac14ffb28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83cfe2e6061f82d48a00354b610955c698a9a11f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66835985"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584503"
 ---
-# <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Tastiera Microsoft Office Word, impostazioni della tastiera Microsoft Office, finestra di dialogo Opzioni
+# <a name="microsoft-office-word-keyboard-settings-options-dialog-box"></a>Tastiera Microsoft Office Word, impostazioni, finestra di dialogo Opzioni
   Microsoft Office Word e Visual Studio gestiscono entrambi i tasti di scelta rapida. La stessa combinazione di tasti di scelta rapida può basarsi su comandi diversi in Word e in Visual Studio. Quando Word è aperto in un progetto a livello di documento in Visual Studio, solo un'applicazione alla volta riceve i comandi del tasto di scelta rapida. Per impostazione predefinita, Visual Studio riceve tutti i comandi dei tasti di scelta rapida, ma è possibile fare in modo che vengano ricevuti da Word quando il documento ha lo stato attivo selezionando lo **schema della tastiera dinamica**
 
  Se si usa un tasto di scelta rapida che non è assegnato a un comando nell'applicazione che sta attualmente gestendo i tasti di scelta rapida, il tasto di scelta rapida viene passato all'altra applicazione.
@@ -35,5 +36,5 @@ ms.locfileid: "66835985"
 
  **Schema della tastiera dinamica** Visual Studio riceve i comandi del tasto di scelta rapida solo quando ha lo stato attivo. Quando il documento di Word ha lo stato attivo, Word riceve tutti i comandi del tasto di scelta rapida. Se, ad esempio, si preme il tasto funzione **F5** mentre il documento di Word ha lo stato attivo, in Word verrà visualizzata la finestra di dialogo **trova e Sostituisci** con la scheda **Vai a** selezionata. Se si preme **F5** mentre Visual Studio ha lo stato attivo, Visual Studio avvia il debug della soluzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Tastiera Microsoft Office Excel, impostazioni della tastiera Microsoft Office, finestra di dialogo Opzioni](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)

@@ -1,5 +1,6 @@
 ---
 title: Copiare dati e formattazione tra fogli di dati a livello di codice
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07baa23b6fd276e8fb8452934dc6361544d16038
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e72d7c94068e5fe9ca0bf533d9d8fe4b7f8e8e54
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546107"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585262"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Procedura: copiare dati e formattazione nei fogli di dati a livello di codice
   È possibile copiare i dati da un intervallo in un foglio a tutti gli altri fogli in una cartella di lavoro usando il <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> metodo. Specificare un intervallo e se si desidera copiare i dati, la formattazione o entrambi.
@@ -34,7 +35,7 @@ ms.locfileid: "85546107"
 ## <a name="compile-the-code"></a>Compilare il codice
  Questo esempio richiede un intervallo denominato `rangeData` in un foglio di foglio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
 - [Procedura: aggiungere nuovi fogli di lavoro alle cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
 - [Procedura: modificare la formattazione nelle righe di un foglio di un foglio di codice contenente celle selezionate](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)

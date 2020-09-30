@@ -1,5 +1,6 @@
 ---
 title: 'Procedura: inserire testo in documenti di Word a livello di codice'
+titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aef597099964333771fd488e0541b4ea4daf4553
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbd73a60b05d48eea0252cec9881d6eefca6cdd2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541505"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585184"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Procedura: inserire testo in documenti di Word a livello di codice
   Esistono tre modi principali per inserire il testo nei documenti di Microsoft Office Word:
@@ -127,7 +128,7 @@ ms.locfileid: "85541505"
    [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
    [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: formattare il testo nei documenti a livello di codice](../vsto/how-to-programmatically-format-text-in-documents.md)
 - [Procedura: definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [Procedura: estendere gli intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-extend-ranges-in-documents.md)

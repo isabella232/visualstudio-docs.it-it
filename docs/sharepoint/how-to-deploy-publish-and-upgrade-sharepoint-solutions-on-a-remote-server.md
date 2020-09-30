@@ -1,5 +1,6 @@
 ---
 title: Distribuire, pubblicare & aggiornare le soluzioni SharePoint in modalità remota
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f05f42f8aed35696b962e71a5fce86c2956b3661
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5de5128ff19472390e65aa5d9a437aee269ff897
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016801"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585784"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Procedura: distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto
   Oltre a distribuire le soluzioni SharePoint al sistema locale, è possibile pubblicare soluzioni di SharePoint in modalità sandbox in siti remoti o in siti di SharePoint locali. Il processo di pubblicazione remota copia il file con *estensione wsp* nel server SharePoint, installa la soluzione e quindi consente di attivare la soluzione. È inoltre possibile aggiornare un'installazione remota di una soluzione SharePoint dopo che sono state apportate modifiche.
@@ -74,7 +75,7 @@ ms.locfileid: "86016801"
 
      La versione precedente della soluzione è disattivata, la nuova versione della soluzione viene aggiornata con i dati conservati dalla soluzione precedente e la nuova soluzione viene attivata in SharePoint.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: distribuire e pubblicare una soluzione SharePoint in un sito di SharePoint locale](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
 - [Creare pacchetti della soluzione SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

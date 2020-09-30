@@ -1,5 +1,6 @@
 ---
 title: Introduzione alla programmazione delle personalizzazioni a livello di documento per Word
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2b2872ca6496444cbb3878dc39800a8661400a76
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4cf54dcdd08e7c44e8318973a3653dbe9c5ea1b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62971797"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585667"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Introduzione alla programmazione delle personalizzazioni a livello di documento per Word
   Se si sta iniziando a creare personalizzazioni a livello di documento per Microsoft Office Word con Visual Studio, ecco cosa è necessario conoscere.
@@ -63,10 +64,10 @@ ms.locfileid: "62971797"
 
  Per un elenco di argomenti che illustrano alcune delle attività comuni nei progetti di Word, vedere [attività comuni nella programmazione di Office](../vsto/common-tasks-in-office-programming.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Programma personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
-- [soluzioni Word](../vsto/word-solutions.md)
+- [Soluzioni Word](../vsto/word-solutions.md)
 - [Procedura dettagliata: creare la prima personalizzazione a livello di documento per Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 - [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)
 - [Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md)

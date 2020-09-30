@@ -1,5 +1,6 @@
 ---
-title: 'Procedura: usare un file di risorse per specificare nomi localizzati, proprietà e autorizzazioni | Microsoft Docs'
+title: Come usare un file di risorse in un progetto SharePoint | Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,14 +20,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a87cc8a3eb8f98ea19a87e93c37aae5303151ecf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1693308c591e60a2df0e4d8e18ece8cc9b598fd2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015405"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585745"
 ---
-# <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Procedura: usare un file di risorse per specificare nomi localizzati, proprietà e autorizzazioni
+# <a name="how-to-use-a-resource-file-in-a-sharepoint-project"></a>Come usare un file di risorse in un progetto SharePoint
+
   Utilizzando un file di risorse, è possibile fornire nomi localizzati, definire proprietà e applicare autorizzazioni per oggetti definiti in un modello di integrazione applicativa dei dati. Per specificare queste informazioni, è necessario aggiungere un elemento di **risorsa di connettività dei dati aziendali** a un progetto che contiene un elemento del **modello di integrazione applicativa dei dati** . Specificare nomi, proprietà e autorizzazioni modificando l'XML del file di risorse.
 
 ### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>Per aggiungere un file di risorse BDC a un progetto SharePoint
@@ -47,7 +49,7 @@ ms.locfileid: "86015405"
 
      Per informazioni su come definire questi elementi, vedere [file di modello e di risorse](/previous-versions/office/developer/sharepoint-2010/aa674515(v=office.14)).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: aggiungere un file modello di integrazione applicativa dei dati esistente a un progetto SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [Creare un modello di integrazione applicativa dei dati](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Procedura: creare un modello di integrazione applicativa dei dati](../sharepoint/how-to-create-a-bdc-model.md)

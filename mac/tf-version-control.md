@@ -7,12 +7,12 @@ ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: c51f3cd50598cd0c33b019c09f95554cc5f9058b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0808f86f8571210a9048faf2e825b483120e73ca
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950502"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584204"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Visual Studio per Mac supporta il controllo della versione di Team Foundation?
 
@@ -24,7 +24,7 @@ ms.locfileid: "85950502"
 
 Per la migliore esperienza di controllo della versione in macOS, è consigliabile usare **git** invece di controllo della versione di Team Foundation (TFVC). 
 
-Git è supportato in Visual Studio per Mac e rappresenta l'opzione predefinita per i repository ospitati in Team Foundation Server (TFS) o Azure DevOps. Per altre informazioni sull'uso di Git con TFS/Azure DevOps, vedere la guida [Impostazione di un repository Git](/visualstudio/mac/set-up-git-repository).
+Git è supportato in Visual Studio per Mac e rappresenta l'opzione predefinita per i repository ospitati in Team Foundation Server (TFS) o Azure DevOps. Per altre informazioni sull'uso di Git con TFS/Azure DevOps, vedere la guida [Impostazione di un repository Git](./set-up-git-repository.md).
 
 ## <a name="unsupported-workarounds-for-tfvc"></a>Soluzioni alternative non supportate per il controllo della versione di Team Foundation
 
@@ -107,6 +107,6 @@ Per altre informazioni sui comandi qui indicati o su altri comandi, è possibile
 
 `tf help`
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sviluppare e condividere il codice nel controllo della versione di Team Foundation usando Visual Studio (in Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 8020106ed189b1b67b7cc2f475784809fc93aa1e
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: f971237ecc829fcc4ab660263a1b66c701f86f62
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426902"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583957"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Installare Visual Studio 2019 per Mac
 
@@ -53,7 +53,7 @@ Per compilare app Xamarin per iOS o macOS, è anche necessario:
 
    Se non si desidera installare tutte le piattaforme, usare la guida seguente per decidere quali piattaforme installare:
 
-   |Tipo di app  |Destinazione  |Selection  |Note  |
+   |Tipo di app  |Destinazione  |Selezione  |Note  |
    |---------|---------|---------|---------|
    |**App che usano Novell**| Xamarin.Forms|Selezionare le piattaforme **Android** e **iOS** |È necessario installare [ **Xcode**](https://developer.apple.com/xcode/) |
    ||Solo iOS|Selezionare la piattaforma **iOS**|È necessario installare [ **Xcode**](https://developer.apple.com/xcode/)|
@@ -62,7 +62,7 @@ Per compilare app Xamarin per iOS o macOS, è anche necessario:
    |**Applicazioni .NET Core**|         |Selezionare piattaforma **.NET Core** .|         |
    |**Applicazioni Web ASP.NET Core**|         |Selezionare piattaforma **.NET Core** .|         |
    |**Funzioni di Azure**|         |Selezionare piattaforma **.NET Core** .|         |
-   |**Sviluppo di giochi Unity multipiattaforma**|         |Non è necessario installare altre piattaforme oltre Visual Studio per Mac.| Fare riferimento alla [guida all'installazione di Unity](/visualstudio/mac/setup-vsmac-tools-unity) per altre informazioni sull'installazione dell'estensione di Unity.|
+   |**Sviluppo di giochi Unity multipiattaforma**|         |Non è necessario installare altre piattaforme oltre Visual Studio per Mac.| Fare riferimento alla [guida all'installazione di Unity](./setup-vsmac-tools-unity.md) per altre informazioni sull'installazione dell'estensione di Unity.|
 
 7. Dopo aver effettuato le selezioni, premere il pulsante **Installa**.
 8. Il programma di installazione visualizzerà lo stato di avanzamento del download e dell'installazione di Visual Studio per Mac e dei carichi di lavoro selezionati. Verrà richiesto di immettere la password per concedere i privilegi necessari per l'installazione:
@@ -75,7 +75,7 @@ Per compilare app Xamarin per iOS o macOS, è anche necessario:
 
     [![Scegliere i tasti di scelta rapida da usare](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
 
-Se si riscontrano problemi di rete durante l'installazione in un ambiente aziendale, rivedere le istruzioni per l'[installazione di Visual Studio per Mac protetto da un firewall o un proxy](/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server).
+Se si riscontrano problemi di rete durante l'installazione in un ambiente aziendale, rivedere le istruzioni per l'[installazione di Visual Studio per Mac protetto da un firewall o un proxy](#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server).
 
 Altre informazioni sulle modifiche sono disponibili nelle [note sulla versione](/visualstudio/releasenotes/vs2019-mac-relnotes).
 
@@ -88,7 +88,7 @@ Per installare Visual Studio per Mac protetto da un firewall, determinati endpoi
 
 Configurare la rete per consentire l'accesso alle posizioni seguenti:
 
-- [Endpoint di Visual Studio](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
+- [Endpoint di Visual Studio](./install-behind-a-firewall-or-proxy-server.md)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
@@ -113,6 +113,6 @@ Per altri carichi di lavoro, vedere la pagina [Carichi di lavoro](workloads.md).
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Installare Visual Studio (in Windows)](/visualstudio/install/install-visual-studio)

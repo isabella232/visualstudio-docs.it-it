@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26d8a3c4f3458c3659ccdd3a4cde802293342e5c
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: a098e78e8895aea72d830a88e436a06f15de6133
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011957"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584542"
 ---
 # <a name="image-service-and-catalog"></a>Catalogo e servizio immagini
 Questa guida di riferimento contiene indicazioni e procedure consigliate per l'adozione del servizio immagini di Visual Studio e del catalogo immagini introdotti in Visual Studio 2015.
@@ -42,7 +42,7 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 
   ![Servizio immagini prima e dopo](../extensibility/media/image-service-before-and-after.png "Servizio immagini prima e dopo")
 
-## <a name="how-it-works"></a>Come funziona
+## <a name="how-it-works"></a>Funzionamento
  Il servizio immagini può fornire un'immagine bitmap adatta per qualsiasi framework dell'interfaccia utente supportato:
 
 - WPF: BitmapSource
@@ -101,7 +101,7 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 </Symbols>
 ```
 
-|**Sottoelemento**|**Definition**|
+|**Sottoelemento**|**Definizione**|
 |-|-|
 |Importa|Importa i simboli del file manifesto specificato per l'uso nel manifesto corrente|
 |Guid|Il simbolo rappresenta un GUID e deve corrispondere alla formattazione del GUID|
@@ -141,7 +141,7 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 </Image>
 ```
 
-|**Attributo**|**Definition**|
+|**Attributo**|**Definizione**|
 |-|-|
 |Guid|Necessaria Parte GUID del moniker dell'immagine|
 |ID|Necessaria Parte relativa all'ID del moniker dell'immagine|
@@ -157,16 +157,16 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
  </Source>
 ```
 
-|**Attributo**|**Definition**|
+|**Attributo**|**Definizione**|
 |-|-|
 |Uri|Necessaria URI che definisce dove è possibile caricare l'immagine. I possibili valori sono i seguenti:<br /><br /> : [URI di pacchetto](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) che usa l'autorità Application:///<br />-Riferimento a una risorsa componente assoluto<br />: Percorso di un file che contiene una risorsa nativa|
-|Informazioni di base|Opzionale Indica il tipo di background che l'origine deve usare.<br /><br /> I possibili valori sono i seguenti:<br /><br /> *Chiaro:* L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> *Scuro:* L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> *HighContrast:* L'origine può essere utilizzata in qualsiasi background in modalità Contrasto elevato.<br /><br /> *HighContrastLight:* L'origine può essere utilizzata su uno sfondo chiaro in modalità Contrasto elevato.<br /><br /> *HighContrastDark:* L'origine può essere utilizzata su uno sfondo scuro in modalità Contrasto elevato.<br /><br /> Se l'attributo background viene omesso, l'origine può essere utilizzata in qualsiasi background.<br /><br /> Se background è *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se background viene omesso o impostato su *HighContrast*, l'inversione dei colori dell'origine viene controllata dall'attributo **AllowColorInversion** dell'immagine.|
+|Background|Opzionale Indica il tipo di background che l'origine deve usare.<br /><br /> I possibili valori sono i seguenti:<br /><br /> *Chiaro:* L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> *Scuro:* L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> *HighContrast:* L'origine può essere utilizzata in qualsiasi background in modalità Contrasto elevato.<br /><br /> *HighContrastLight:* L'origine può essere utilizzata su uno sfondo chiaro in modalità Contrasto elevato.<br /><br /> *HighContrastDark:* L'origine può essere utilizzata su uno sfondo scuro in modalità Contrasto elevato.<br /><br /> Se l'attributo background viene omesso, l'origine può essere utilizzata in qualsiasi background.<br /><br /> Se background è *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se background viene omesso o impostato su *HighContrast*, l'inversione dei colori dell'origine viene controllata dall'attributo **AllowColorInversion** dell'immagine.|
 
 Un \<Source> elemento può avere esattamente uno dei sottoelementi facoltativi seguenti:
 
-|**elemento**|**Attributi (tutti necessari)**|**Definition**|
+|**elemento**|**Attributi (tutti necessari)**|**Definizione**|
 |-|-|-|
-|\<Size>|valore|L'origine verrà usata per le immagini con le dimensioni specificate (in unità dispositivo). L'immagine sarà quadrata.|
+|\<Size>|Valore|L'origine verrà usata per le immagini con le dimensioni specificate (in unità dispositivo). L'immagine sarà quadrata.|
 |\<SizeRange>|MinSize, MaxSize|L'origine verrà usata per le immagini da MinSize a MaxSize (in unità dispositivo), inclusi. L'immagine sarà quadrata.|
 |\<Dimensions>|Larghezza, altezza|L'origine verrà usata per le immagini della larghezza e dell'altezza specificate (in unità dispositivo).|
 |\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|L'origine verrà usata per le immagini dalla larghezza/altezza minima alla larghezza/altezza massima (in unità dispositivo), inclusi.|
@@ -177,7 +177,7 @@ Un \<Source> elemento può avere esattamente uno dei sottoelementi facoltativi s
 <NativeResource Type="type" ID="int" />
 ```
 
-|**Attributo**|**Definition**|
+|**Attributo**|**Definizione**|
 |-|-|
 |Tipo|Necessaria Il tipo della risorsa nativa, ovvero XAML o PNG|
 |ID|Necessaria Parte relativa all'ID integer della risorsa nativa|
@@ -193,7 +193,7 @@ Un \<Source> elemento può avere esattamente uno dei sottoelementi facoltativi s
  </ImageList>
 ```
 
-|**Attributo**|**Definition**|
+|**Attributo**|**Definizione**|
 |-|-|
 |Guid|Necessaria Parte GUID del moniker dell'immagine|
 |ID|Necessaria Parte relativa all'ID del moniker dell'immagine|
@@ -712,7 +712,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Aggiornare il codice per usare il servizio immagini per richiedere moniker tramite il mapping aggiornato. Questo potrebbe significare l'aggiornamento a **CrispImages** per il codice gestito o la richiesta di HBITMAPs o HICONs dal servizio immagini e il relativo passaggio per il codice nativo.
 
 ## <a name="testing-your-images"></a>Test delle immagini
- È possibile utilizzare lo strumento Visualizzatore libreria immagini per testare i manifesti dell'immagine per assicurarsi che tutti gli elementi vengano creati correttamente. È possibile trovare lo strumento in [Visual Studio 2015 SDK](visual-studio-sdk.md). La documentazione per questo strumento e altre informazioni sono disponibili [qui](./internals/vssdk-utilities.md?view=vs-2015).
+ È possibile utilizzare lo strumento Visualizzatore libreria immagini per testare i manifesti dell'immagine per assicurarsi che tutti gli elementi vengano creati correttamente. È possibile trovare lo strumento in [Visual Studio 2015 SDK](visual-studio-sdk.md). La documentazione per questo strumento e altre informazioni sono disponibili [qui](./internals/vssdk-utilities.md?view=vs-2015&preserve-view=true).
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 

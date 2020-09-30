@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 12/16/2019
 ms.assetid: 4bcb8acf-db50-4bd8-a48e-86248f00c90b
-ms.openlocfilehash: 530ad09bbf72d9696621f328c2df40b37f362c13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 307196dc7e33d268c45a9bb126c002ad426c5558
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75451489"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583918"
 ---
 # <a name="debugging-into-nuget-packages-with-source-link"></a>Debug in pacchetti NuGet con collegamento all'origine
 
@@ -35,7 +35,7 @@ Per impostazione predefinita, è selezionata l'opzione **Ask** . Quando viene tr
 ![Screenshot della richiesta visualizzata quando viene trovato codice esterno per un pacchetto NuGet](media/source-link2.png)
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Repository GitHub](https://github.com/dotnet/sourcelink/blob/master/README.md) per il collegamento all'origine
-- [Documentazione .NET](https://docs.microsoft.com/dotnet/standard/library-guidance/sourcelink) sul collegamento di origine e per altre informazioni su come aggiungere il supporto per il collegamento all'origine ai pacchetti
+- [Documentazione .NET](/dotnet/standard/library-guidance/sourcelink) sul collegamento di origine e per altre informazioni su come aggiungere il supporto per il collegamento all'origine ai pacchetti

@@ -1,5 +1,6 @@
 ---
 title: 'Procedura dettagliata: modificare i dati memorizzati nella cache in una cartella di lavoro in un server'
+titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a88fef7afe198dd15716570b1875ea257d19be8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16d3d69482476149b9a340cabe81e957f39ef6f8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985525"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584334"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Procedura dettagliata: modificare i dati memorizzati nella cache in una cartella di lavoro in un server
   Questa procedura dettagliata illustra come modificare un set di dati memorizzato nella cache in una Microsoft Office cartella di lavoro di Excel senza avviare Excel usando la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -310,6 +311,6 @@ ms.locfileid: "72985525"
 
 4. Chiudere la cartella di lavoro.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura dettagliata: inserimento di dati in una cartella di lavoro in un server](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)

@@ -1,5 +1,6 @@
 ---
 title: 'Procedura: aggiungere commenti al testo nei documenti a livello di codice'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 88350a0fb50c1d5feb0eba9706ef5b6ad56fd9df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04d4ffdc747823a3df9a884b054b39ad484e09a4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538113"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583788"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>Procedura: aggiungere commenti al testo nei documenti a livello di codice
   La proprietà Comments della classe Document aggiunge un commento a un intervallo di testo in un Microsoft Office documento di Word.
@@ -46,6 +47,6 @@ ms.locfileid: "85538113"
 ## <a name="robust-programming"></a>Programmazione efficiente
  Per modificare le iniziali dell'utente che Word aggiunge ai commenti, usare la proprietà <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: rimuovere tutti i commenti dai documenti a livello di codice](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)
 - [Elemento host Document](../vsto/document-host-item.md)
