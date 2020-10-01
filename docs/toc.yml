@@ -524,15 +524,7 @@
             - name: Convenzioni di formattazione EditorConfig in C++
               href: ide/cpp-editorconfig-properties.md
             - name: Convenzioni di codifica .NET
-              items:
-                - name: Panoramica
-                  href: ide/editorconfig-code-style-settings-reference.md
-                - name: Convenzioni del linguaggio
-                  href: ide/editorconfig-language-conventions.md
-                - name: Convenzioni di formattazione
-                  href: ide/editorconfig-formatting-conventions.md
-                - name: Convenzioni di denominazione
-                  href: ide/editorconfig-naming-conventions.md
+              href: /dotnet/fundamentals/code-analysis/code-style-rule-options
         - name: Personalizzare la barra di scorrimento
           href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
         - name: Impostare segnalibri nel codice
@@ -972,7 +964,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Prodotti e servizi Microsoft per l'accessibilità
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Riferimento
+- name: Informazioni di riferimento
   items:
     - name: Scelte rapide da tastiera
       items:
