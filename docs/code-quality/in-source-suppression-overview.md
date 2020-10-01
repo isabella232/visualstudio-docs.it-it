@@ -1,5 +1,5 @@
 ---
-title: Non visualizzare le violazioni dell'analisi codice
+title: Rimuovere le violazioni dell'analisi del codice
 ms.date: 08/27/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: aa650197f291c48c0c025563098181ea1cfa19a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: adf8e969af4a903aa6ed55b1c92f4ddaffcf77e0
+ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89091438"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91604629"
 ---
-# <a name="suppress-code-analysis-violations"></a>Non visualizzare le violazioni dell'analisi codice
+# <a name="suppress-code-analysis-violations"></a>Rimuovere le violazioni dell'analisi del codice
 
 Spesso è utile indicare che un avviso non è applicabile. Ciò indica ai membri del team che il codice è stato esaminato e che l'avviso può essere eliminato. L'eliminazione nell'origine (ISS) usa l' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo per non visualizzare un avviso. L'attributo può essere inserito vicino al segmento di codice che ha generato l'avviso. È possibile aggiungere l' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo al file di origine digitando l'attributo oppure è possibile utilizzare il menu di scelta rapida di un avviso nel **Elenco errori** per aggiungerlo automaticamente.
 
@@ -183,19 +183,14 @@ L'attributo seguente nel file di progetto _GlobalSuppressions_ , ad esempio, eli
 
 I compilatori di codice gestito e alcuni strumenti di terze parti generano codice per facilitare lo sviluppo rapido di codice. Il codice generato dal compilatore che viene visualizzato nei file di origine è in genere contrassegnato con l' `GeneratedCodeAttribute` attributo.
 
-Per l'analisi del codice sorgente, è possibile disattivare i messaggi nel codice generato usando il file con [estensione EditorConfig](../code-quality/configure-fxcop-analyzers.md) nella radice del progetto o della soluzione. Usare un modello di file per trovare la corrispondenza con il codice generato. Ad esempio, per escludere gli avvisi CS1591 nei file **. designer.cs* , usare questo nel file di configurazione.
-
-``` cmd
-[*.designer.cs]
-dotnet_diagnostic.CS1591.severity = none
-```
+Per l'analisi del codice sorgente, è possibile disattivare i messaggi nel codice generato in un `.editorconfig` file. Per altre informazioni, vedere [escludere il codice generato](/dotnet/fundamentals/code-analysis/configuration-options#exclude-generated-code).
 
 Per l'analisi del codice legacy, è possibile scegliere se escludere gli avvisi e gli errori di analisi codice per il codice generato. Per informazioni sull'eliminazione di tali avvisi ed errori, vedere [procedura: non visualizzare avvisi per il codice generato](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
 
 > [!NOTE]
 > L'analisi del codice ignora `GeneratedCodeAttribute` quando viene applicata a un intero assembly o a un singolo parametro.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

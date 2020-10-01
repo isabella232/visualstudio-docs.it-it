@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9408e8615e2a3591a5e93f569546b6161fe40e4c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e59fd8ef3210a19683b428438d2e58ab816e9a40
+ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037250"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91604600"
 ---
 # <a name="code-analysis-faq"></a>Domande frequenti sull'analisi del codice
 
@@ -34,7 +34,7 @@ Questa pagina contiene le risposte ad alcune domande frequenti sull'analisi del 
 
 Tuttavia, i file EditorConfig offrono modi aggiuntivi per configurare le regole:
 
-- Per gli analizzatori di qualità del codice .NET, i file EditorConfig consentono [di definire i tipi di codice da analizzare](fxcop-analyzer-options.md).
+- Per gli analizzatori di qualità del codice .NET, i file EditorConfig consentono [di definire i tipi di codice da analizzare](/dotnet/fundamentals/code-analysis/code-quality-rule-options).
 - Per gli analizzatori di tipo codice .NET incorporati in Visual Studio, i file EditorConfig consentono di [definire gli stili di codice preferiti](../ide/editorconfig-code-style-settings-reference.md) per una codebase.
 
 Oltre ai set di regole e ai file EditorConfig, alcuni analizzatori sono configurati tramite l'uso di file di testo contrassegnati come [file aggiuntivi](../ide/build-actions.md#build-action-values) per i compilatori C# e VB.
