@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d0b60c548e4e5d42a10e82754d045073f016f8b
-ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
+ms.openlocfilehash: b9aba6b9c4be882498535ab96020461f22722c10
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91621750"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659303"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Cronologia delle novità nella documentazione di Visual Studio
 
@@ -47,25 +47,25 @@ Benvenuti alla cronologia delle novità di Visual Studio docs. Questo argomento 
 
 **Nuovi articoli**
 
-- [Ca1310: specificare StringComparison per la correttezza](../code-quality/ca1310.md) -aggiungere la documentazione per ca1310 e aggiornare la documentazione per CA1307
-- [Ca1837: usare Environment. ProcessId anziché Process. GetCurrentProcess (). ID](../code-quality/ca1837.md) -docs per ca1837
-- [Ca1838: evitare `StringBuilder` i parametri per P/Invoke](../code-quality/ca1838.md) -aggiungere la documentazione per ca1838
-- [Ca2008: non creare attività senza passare un TaskScheduler](../code-quality/ca2008.md) -aggiungere la documentazione per ca2008
-- [CA2249: provare a usare String. Contains anziché String. IndexOf](../code-quality/ca2249.md) -docs per CA2249
-- [CA2361: assicurarsi che la classe generata automaticamente contenente DataSet. ReadXml () non venga usata con dati non attendibili](../code-quality/ca2361.md) -altre regole DataSet/DataTable
-- [CA2362: il set di dati o la DataTable unsafe nel tipo serializzabile generato automaticamente può essere vulnerabile agli attacchi di esecuzione di codice in modalità remota](../code-quality/ca2362.md) . altre regole DataSet/DataTable
-- [IL3000: evitare di usare l'accesso al percorso del file di assembly quando si pubblica come](../code-quality/il3000.md) documentazione di aggiunta di un singolo file per IL3000
-- [IL3001: evitare di accedere al percorso del file di assembly durante la pubblicazione come singolo file](../code-quality/il3001.md) : aggiungere documenti per IL3001
+- [Ca1310: specificare StringComparison per la correttezza](/dotnet/fundamentals/code-analysis/quality-rules/ca1310) -aggiungere la documentazione per ca1310 e aggiornare la documentazione per CA1307
+- [Ca1837: usare Environment. ProcessId anziché Process. GetCurrentProcess (). ID](/dotnet/fundamentals/code-analysis/quality-rules/ca1837) -docs per ca1837
+- [Ca1838: evitare `StringBuilder` i parametri per P/Invoke](/dotnet/fundamentals/code-analysis/quality-rules/ca1838) -aggiungere la documentazione per ca1838
+- [Ca2008: non creare attività senza passare un TaskScheduler](/dotnet/fundamentals/code-analysis/quality-rules/ca2008) -aggiungere la documentazione per ca2008
+- [CA2249: provare a usare String. Contains anziché String. IndexOf](/dotnet/fundamentals/code-analysis/quality-rules/ca2249) -docs per CA2249
+- [CA2361: assicurarsi che la classe generata automaticamente contenente DataSet. ReadXml () non venga usata con dati non attendibili](/dotnet/fundamentals/code-analysis/quality-rules/ca2361) -altre regole DataSet/DataTable
+- [CA2362: il set di dati o la DataTable unsafe nel tipo serializzabile generato automaticamente può essere vulnerabile agli attacchi di esecuzione di codice in modalità remota](/dotnet/fundamentals/code-analysis/quality-rules/ca2362) . altre regole DataSet/DataTable
+- [IL3000: evitare di usare l'accesso al percorso del file di assembly quando si pubblica come](/dotnet/fundamentals/code-analysis/quality-rules/il3000) documentazione di aggiunta di un singolo file per IL3000
+- [IL3001: evitare di accedere al percorso del file di assembly durante la pubblicazione come singolo file](/dotnet/fundamentals/code-analysis/quality-rules/il3001) : aggiungere documenti per IL3001
 
 **Aggiornato**
 
-- [CA1002: non esporre elenchi generici](../code-quality/ca1002.md) -sezione aggiunta di configurabilità-superficie API
-- [CA1046: non eseguire l'overload dell'operatore uguale ai tipi di riferimento](../code-quality/ca1046.md) -sezione aggiunta di configurabilità-superficie API
-- [CA1307: specificare StringComparison per maggiore chiarezza](../code-quality/ca1307.md) -aggiungere la documentazione per ca1310 e aggiornare la documentazione per CA1307
-- [CA1700: non denominare i valori enum &#39;sezione&#39;riservata ](../code-quality/ca1700.md) -Aggiungi configurabilità-superficie API
-- [CA1707: gli identificatori non devono contenere caratteri di sottolineatura](../code-quality/ca1707.md) -sezione aggiunta di configurabilità-superficie API
-- [CA1822: contrassegna i membri come statici](../code-quality/ca1822.md) -aggiunta di configurabilità-sezione di superficie dell'API
-- [CA2351: assicurarsi che l'input di DataSet. ReadXml () sia attendibile](../code-quality/ca2351.md) -altre regole DataSet/DataTable
+- [CA1002: non esporre elenchi generici](/dotnet/fundamentals/code-analysis/quality-rules/ca1002) -sezione aggiunta di configurabilità-superficie API
+- [CA1046: non eseguire l'overload dell'operatore uguale ai tipi di riferimento](/dotnet/fundamentals/code-analysis/quality-rules/ca1046) -sezione aggiunta di configurabilità-superficie API
+- [CA1307: specificare StringComparison per maggiore chiarezza](/dotnet/fundamentals/code-analysis/quality-rules/ca1307) -aggiungere la documentazione per ca1310 e aggiornare la documentazione per CA1307
+- [CA1700: non denominare i valori enum &#39;sezione&#39;riservata ](/dotnet/fundamentals/code-analysis/quality-rules/ca1700) -Aggiungi configurabilità-superficie API
+- [CA1707: gli identificatori non devono contenere caratteri di sottolineatura](/dotnet/fundamentals/code-analysis/quality-rules/ca1707) -sezione aggiunta di configurabilità-superficie API
+- [CA1822: contrassegna i membri come statici](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) -aggiunta di configurabilità-sezione di superficie dell'API
+- [CA2351: assicurarsi che l'input di DataSet. ReadXml () sia attendibile](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) -altre regole DataSet/DataTable
 - [Installare gli analizzatori di terze parti](../code-quality/install-roslyn-analyzers.md) : struttura modificata e titoli per la documentazione di analisi del codice
 
 ### <a name="containers"></a>Contenitori
@@ -73,7 +73,7 @@ Benvenuti alla cronologia delle novità di Visual Studio docs. Questo argomento 
 **Articoli aggiornati**
 
 - [Distribuire un contenitore ASP.NET in un registro contenitori con Visual Studio](../containers/hosting-web-apps-in-docker.md) -aggiornamenti degli strumenti contenitore per l'interfaccia utente di pubblicazione di visual Studio 16,7
-- [Introduzione agli strumenti di Visual Studio Kubernetes](../containers/tutorial-kubernetes-tools.md) -esercitazione su Kubernetes: aggiungere i passaggi per la rimozione
+- [Introduzione agli strumenti di Visual Studio Kubernetes](../containers/bridge-to-kubernetes.md) -esercitazione su Kubernetes: aggiungere i passaggi per la rimozione
 
 ### <a name="deployment"></a>Distribuzione
 
@@ -131,25 +131,25 @@ Benvenuti alla cronologia delle novità di Visual Studio docs. Questo argomento 
 
 **Nuovi articoli**
 
-- [Ca1417: non usare `OutAttribute` nei parametri di stringa per P/Invoke](../code-quality/ca1417.md) -aggiungere la documentazione per ca1417
-- [CA1805: non inizializzare inutilmente.](../code-quality/ca1805.md) -Aggiungere documenti per CA1805
-- Ca1836: preferire il numero di operazioni di i [/o al conteggio quando disponibili](../code-quality/ca1836.md) -aggiungere la documentazione per ca1836 (preferire il numero di spazio su Count)
-- [Ca2016: inviare il parametro CancellationToken ai metodi che accettano un solo](../code-quality/ca2016.md) documento ca2016-inviare il parametro CancellationToken ai metodi che ne accettano uno
-- [CA2350: assicurarsi che l'input di DataTable. ReadXml () sia attendibile](../code-quality/ca2350.md) -Initial DataSet/DataTable deserializzation Rules docs
-- [CA2351: assicurarsi che l'input di DataSet. ReadXml () sia attendibile](../code-quality/ca2351.md) -Initial DataSet/DataTable deserializzation Rules docs
-- [CA2352: il set di dati o l'oggetto DataTable unsafe in un tipo serializzabile può essere vulnerabile agli attacchi di esecuzione di codice in modalità remota](../code-quality/ca2352.md) . documenti iniziali di deserializzazione DataSet/DataTable
-- [CA2353: set di dati o DataTable non sicuro in un tipo serializzabile](../code-quality/ca2353.md) -tabella iniziale DataSet/DataTable deserializzazione docs
-- [CA2354: il set di dati o la DataTable unsafe in un oggetto grafico deserializzato può essere vulnerabile a un attacco di esecuzione di codice in modalità remota](../code-quality/ca2354.md) . documentazione iniziale di DataSet/DataTable deserializzazione
-- [CA2355: set di dati o DataTable non sicuro in un oggetto grafico deserializzato](../code-quality/ca2355.md) -documenti iniziali DataSet/DataTable deserializzation Rules
-- [CA2356: tipo di dati o DataTable non sicuro in un oggetto grafico deserializzato Web](../code-quality/ca2356.md) -documentazione iniziale relativa alla deserializzazione di DataSet/DataTable
+- [Ca1417: non usare `OutAttribute` nei parametri di stringa per P/Invoke](/dotnet/fundamentals/code-analysis/quality-rules/ca1417) -aggiungere la documentazione per ca1417
+- [CA1805: non inizializzare inutilmente.](/dotnet/fundamentals/code-analysis/quality-rules/ca1805) -Aggiungere documenti per CA1805
+- Ca1836: preferire il numero di operazioni di i [/o al conteggio quando disponibili](/dotnet/fundamentals/code-analysis/quality-rules/ca1836) -aggiungere la documentazione per ca1836 (preferire il numero di spazio su Count)
+- [Ca2016: inviare il parametro CancellationToken ai metodi che accettano un solo](/dotnet/fundamentals/code-analysis/quality-rules/ca2016) documento ca2016-inviare il parametro CancellationToken ai metodi che ne accettano uno
+- [CA2350: assicurarsi che l'input di DataTable. ReadXml () sia attendibile](/dotnet/fundamentals/code-analysis/quality-rules/ca2350) -Initial DataSet/DataTable deserializzation Rules docs
+- [CA2351: assicurarsi che l'input di DataSet. ReadXml () sia attendibile](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) -Initial DataSet/DataTable deserializzation Rules docs
+- [CA2352: il set di dati o l'oggetto DataTable unsafe in un tipo serializzabile può essere vulnerabile agli attacchi di esecuzione di codice in modalità remota](/dotnet/fundamentals/code-analysis/quality-rules/ca2352) . documenti iniziali di deserializzazione DataSet/DataTable
+- [CA2353: set di dati o DataTable non sicuro in un tipo serializzabile](/dotnet/fundamentals/code-analysis/quality-rules/ca2353) -tabella iniziale DataSet/DataTable deserializzazione docs
+- [CA2354: il set di dati o la DataTable unsafe in un oggetto grafico deserializzato può essere vulnerabile a un attacco di esecuzione di codice in modalità remota](/dotnet/fundamentals/code-analysis/quality-rules/ca2354) . documentazione iniziale di DataSet/DataTable deserializzazione
+- [CA2355: set di dati o DataTable non sicuro in un oggetto grafico deserializzato](/dotnet/fundamentals/code-analysis/quality-rules/ca2355) -documenti iniziali DataSet/DataTable deserializzation Rules
+- [CA2356: tipo di dati o DataTable non sicuro in un oggetto grafico deserializzato Web](/dotnet/fundamentals/code-analysis/quality-rules/ca2356) -documentazione iniziale relativa alla deserializzazione di DataSet/DataTable
 
 ### <a name="containers"></a>Contenitori
 
 **Nuovi articoli**
 
-- [Configurare il processo locale con Kubernetes](../containers/configure-local-process-with-kubernetes.md) -processo locale con Kubernetes: configurazione YAML
-- [Usare il processo locale con Kubernetes (anteprima)](../containers/local-process-kubernetes.md) -migrazione di spazi di sviluppo
-- [Come funziona Processo locale con Kubernetes](../containers/overview-local-process-kubernetes.md)
+- [Configurare il processo locale con Kubernetes](../containers/configure-bridge-to-kubernetes.md) -processo locale con Kubernetes: configurazione YAML
+- [Usare il processo locale con Kubernetes (anteprima)](../containers/bridge-to-kubernetes.md) -migrazione di spazi di sviluppo
+- [Come funziona Processo locale con Kubernetes](../containers/overview-bridge-to-kubernetes.md)
   - Processo locale per Kubernetes: sezione Aggiungi routing
   - Migrazione di spazi di sviluppo
 

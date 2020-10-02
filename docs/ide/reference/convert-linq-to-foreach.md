@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e1b24cb8406ff29659eb79d1d9fa856db628b89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7abdebf36ab075dfd289069671cf3b6851a72b75
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094083"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659368"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Refactoring per convertire LINQ in un'istruzione foreach
 
@@ -42,7 +42,7 @@ Questo refactoring si applica a:
 1. Selezionare **Converti in foreach**. In alternativa, selezionare **Anteprima modifiche** per aprire la finestra di dialogo [Anteprima modifiche](../../ide/preview-changes.md) e quindi selezionare **Applica**.
 
 > [!NOTE]
-> Per C#, il codice generato da questi refactoring usa un tipo esplicito o [var](/dotnet/csharp/language-reference/keywords/var) per la variabile di iterazione del ciclo `foreach`. Il tipo nel codice generato, esplicito o implicito, dipende dalle impostazioni di stile del codice che rientrano nell'ambito. Queste specifiche impostazioni di stile di codice sono configurate a livello di computer in **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **C#**  >  **stile di codice**  >  **generale**  >  ** \' var ' preferenze**o a livello di soluzione in un file [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) . Se si modifica un'impostazione di stile del codice in **Opzioni**, riaprire il file di codice per rendere effettive le modifiche.
+> Per C#, il codice generato da questi refactoring usa un tipo esplicito o [var](/dotnet/csharp/language-reference/keywords/var) per la variabile di iterazione del ciclo `foreach`. Il tipo nel codice generato, esplicito o implicito, dipende dalle impostazioni di stile del codice che rientrano nell'ambito. Queste specifiche impostazioni di stile di codice sono configurate a livello di computer in **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **C#**  >  **stile di codice**  >  **generale**  >  ** \' var ' preferenze**o a livello di soluzione in un file [EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types) . Se si modifica un'impostazione di stile del codice in **Opzioni**, riaprire il file di codice per rendere effettive le modifiche.
 
 ## <a name="see-also"></a>Vedere anche
 

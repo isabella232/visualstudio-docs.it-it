@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 875f6b3aba88fa3786e4c303f23072e586c4848d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4b82bdd63cd8a32ad38ddf949dfbc3dd5bdc193
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587342"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658490"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Set di regole consigliate gestite per codice gestito
 
@@ -23,29 +23,29 @@ Includere questo set di regole in tutti i set di regole personalizzati creati pe
 
 |Regola|Descrizione|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001.md)|I tipi proprietari di campi Disposable devono essere Disposable|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|I tipi proprietari di campi Disposable devono essere Disposable|
 |[CA1009](../code-quality/ca1009.md)|Dichiarare correttamente i gestori eventi|
-|[CA1016](../code-quality/ca1016.md)|Contrassegnare gli assembly con AssemblyVersionAttribute|
-|[CA1033](../code-quality/ca1033.md)|I metodi di interfaccia devono essere richiamabili dai tipi figlio|
+|[CA1016](/dotnet/fundamentals/code-analysis/quality-rules/ca1016)|Contrassegnare gli assembly con AssemblyVersionAttribute|
+|[CA1033](/dotnet/fundamentals/code-analysis/quality-rules/ca1033)|I metodi di interfaccia devono essere richiamabili dai tipi figlio|
 |[CA1049](../code-quality/ca1049.md)|I tipi delle risorse native devono essere disposable|
-|[CA1060](../code-quality/ca1060.md)|Spostare P/Invoke nella classe NativeMethods|
-|[CA1061](../code-quality/ca1061.md)|Non nascondere i metodi di una classe base|
-|[CA1063](../code-quality/ca1063.md)|Implementare IDisposable correttamente|
-|[CA1065](../code-quality/ca1065.md)|Non generare eccezioni in posizioni non previste|
+|[CA1060](/dotnet/fundamentals/code-analysis/quality-rules/ca1060)|Spostare P/Invoke nella classe NativeMethods|
+|[CA1061](/dotnet/fundamentals/code-analysis/quality-rules/ca1061)|Non nascondere i metodi di una classe base|
+|[CA1063](/dotnet/fundamentals/code-analysis/quality-rules/ca1063)|Implementare IDisposable correttamente|
+|[CA1065](/dotnet/fundamentals/code-analysis/quality-rules/ca1065)|Non generare eccezioni in posizioni non previste|
 |[CA1301](../code-quality/ca1301.md)|Evitare tasti di scelta rapida duplicati|
 |[CA1400](../code-quality/ca1400.md)|I punti di ingresso P/Invoke devono esistere|
-|[CA1401](../code-quality/ca1401.md)|I P/Invoke non devono essere visibili|
+|[CA1401](/dotnet/fundamentals/code-analysis/quality-rules/ca1401)|I P/Invoke non devono essere visibili|
 |[CA1403](../code-quality/ca1403.md)|I tipi layout automatici non devono essere visibili a COM|
 |[CA1404](../code-quality/ca1404.md)|Chiamare GetLastError immediatamente dopo P/Invoke|
 |[CA1405](../code-quality/ca1405.md)|I tipi di base del tipo visibile a COM devono essere visibili a COM|
 |[CA1410](../code-quality/ca1410.md)|I metodi di registrazione COM devono corrispondere|
 |[CA1415](../code-quality/ca1415.md)|Dichiarare correttamente i P/Invoke|
-|[CA1821](../code-quality/ca1821.md)|Rimuovere i finalizzatori vuoti|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|Rimuovere i finalizzatori vuoti|
 |[CA1900](../code-quality/ca1900.md)|I campi dei tipi di valore devono essere portabili|
 |[CA1901](../code-quality/ca1901.md)|Le dichiarazioni P/Invoke devono essere portabili|
-|[CA2002](../code-quality/ca2002.md)|Non bloccare oggetti con identità debole|
-|[CA2100](../code-quality/ca2100.md)|Controllare la vulnerabilità della sicurezza nelle query SQL|
-|[CA2101](../code-quality/ca2101.md)|Specificare il marshalling per gli argomenti di stringa P/Invoke|
+|[CA2002](/dotnet/fundamentals/code-analysis/quality-rules/ca2002)|Non bloccare oggetti con identità debole|
+|[CA2100](/dotnet/fundamentals/code-analysis/quality-rules/ca2100)|Controllare la vulnerabilità della sicurezza nelle query SQL|
+|[CA2101](/dotnet/fundamentals/code-analysis/quality-rules/ca2101)|Specificare il marshalling per gli argomenti di stringa P/Invoke|
 |[CA2108](../code-quality/ca2108.md)|Controllare la sicurezza dichiarativa sui tipi di valori|
 |[CA2111](../code-quality/ca2111.md)|I puntatori non devono essere visibili|
 |[CA2112](../code-quality/ca2112.md)|I tipi protetti non devono esporre campi|
@@ -67,21 +67,21 @@ Includere questo set di regole in tutti i set di regole personalizzati creati pe
 |[CA2146](../code-quality/ca2146.md)|I tipi devono essere Critical almeno come le interfacce e i tipi base relativi|
 |[CA2147](../code-quality/ca2147.md)|I metodi Transparent non possono usare asserzioni di sicurezza|
 |[CA2149](../code-quality/ca2149.md)|I metodi Transparent non devono effettuare chiamate nel codice nativo|
-|[CA2200](../code-quality/ca2200.md)|Eseguire il rethrow per mantenere i dettagli dello stack|
+|[CA2200](/dotnet/fundamentals/code-analysis/quality-rules/ca2200)|Eseguire il rethrow per mantenere i dettagli dello stack|
 |[CA2202](../code-quality/ca2202.md)|Non eliminare gli oggetti più volte|
-|[CA2207](../code-quality/ca2207.md)|Inizializzare i campi statici dei tipi di valore inline|
+|[CA2207](/dotnet/fundamentals/code-analysis/quality-rules/ca2207)|Inizializzare i campi statici dei tipi di valore inline|
 |[CA2212](../code-quality/ca2212.md)|Non contrassegnare componenti serviti con WebMethod|
-|[CA2213](../code-quality/ca2213.md)|I campi eliminabili devono essere eliminati|
-|[CA2214](../code-quality/ca2214.md)|Non chiamare metodi sottoponibili a override nei costruttori|
-|[CA2216](../code-quality/ca2216.md)|I tipi eliminabili devono dichiarare un finalizzatore|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|I campi eliminabili devono essere eliminati|
+|[CA2214](/dotnet/fundamentals/code-analysis/quality-rules/ca2214)|Non chiamare metodi sottoponibili a override nei costruttori|
+|[CA2216](/dotnet/fundamentals/code-analysis/quality-rules/ca2216)|I tipi eliminabili devono dichiarare un finalizzatore|
 |[CA2220](../code-quality/ca2220.md)|I finalizzatori devono chiamare il finalizzatore della classe di base|
-|[CA2229](../code-quality/ca2229.md)|Implementare costruttori di serializzazione|
-|[CA2231](../code-quality/ca2231.md)|Eseguire l'overload dell'operatore "uguale a" all'override di ValueType.Equals|
+|[CA2229](/dotnet/fundamentals/code-analysis/quality-rules/ca2229)|Implementare costruttori di serializzazione|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|Eseguire l'overload dell'operatore "uguale a" all'override di ValueType.Equals|
 |[CA2232](../code-quality/ca2232.md)|Contrassegnare i punti di ingresso del Windows Form con STAThread|
-|[CA2235](../code-quality/ca2235.md)|Contrassegnare tutti i campi non serializzabili|
+|[CA2235](/dotnet/fundamentals/code-analysis/quality-rules/ca2235)|Contrassegnare tutti i campi non serializzabili|
 |[CA2236](../code-quality/ca2236.md)|Chiamare metodi della classe di base su tipi ISerializable|
-|[CA2237](../code-quality/ca2237.md)|Contrassegnare i tipi ISerializable con SerializableAttribute|
+|[CA2237](/dotnet/fundamentals/code-analysis/quality-rules/ca2237)|Contrassegnare i tipi ISerializable con SerializableAttribute|
 |[CA2238](../code-quality/ca2238.md)|Implementare correttamente i metodi di serializzazione|
 |[CA2240](../code-quality/ca2240.md)|Implementare ISerializable in modo corretto|
-|[CA2241](../code-quality/ca2241.md)|Specificare argomenti corretti ai metodi di formattazione|
-|[CA2242](../code-quality/ca2242.md)|Testare i valori NaN in modo corretto|
+|[CA2241](/dotnet/fundamentals/code-analysis/quality-rules/ca2241)|Specificare argomenti corretti ai metodi di formattazione|
+|[CA2242](/dotnet/fundamentals/code-analysis/quality-rules/ca2242)|Testare i valori NaN in modo corretto|

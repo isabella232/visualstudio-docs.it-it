@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6cf9e1c3f0011a282048939a994e47b897a314b
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 23b50221845cf2b02b963c98f912a218a60630c6
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509939"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658412"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guida per la produttività di Visual Studio per gli sviluppatori C#
 
@@ -101,7 +101,7 @@ Visual Studio offre una funzionalità denominata **Vai a tutti** (**CTRL**+**T**
 
    ![Configurare il livello di gravità di una regola di stile di codice direttamente nell'editor](../ide/media/configure-severity-level.png)
 
-Vedere la documentazione relativa alle [opzioni delle convenzioni per la scrittura del codice .NET](editorconfig-code-style-settings-reference.md), che contiene anche un esempio di file EditorConfig completo.
+Vedere la documentazione relativa alle [opzioni delle convenzioni per la scrittura del codice .NET](/dotnet/fundamentals/code-analysis/code-style-rule-options), che contiene anche un esempio di file EditorConfig completo.
 
 ::: moniker range=">=vs-2019"
 
@@ -154,7 +154,7 @@ Diversi membri della community hanno scritto estensioni gratuite che aggiungono 
 
 Visual Studio include molte funzionalità che consentono di eseguire ricerche e di [esplorare il codice](../ide/navigating-code.md).
 
-| Funzionalità | Tasto di scelta rapida | Dettagli/Miglioramenti |
+| Feature | Tasto di scelta rapida | Dettagli/Miglioramenti |
 |- | - | -|
 | Trova tutti i riferimenti | **Sposta** + **F12**| I risultati sono colorati e possono essere raggruppati per progetto, definizione e tipo riferimento, ad esempio lettura o scrittura. È anche possibile "bloccare" i risultati. |
 | Vai all'implementazione | **CTRL** + **F12** | È possibile usare Vai a definizione nella parola chiave `override` per passare al membro sostituito |

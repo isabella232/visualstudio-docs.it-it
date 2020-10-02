@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d3fa48a7f571680cb9d26257fe4aa288aba15dbc
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: e8c99677396ab9b3d005d4079fd37fa633df4913
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352203"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658438"
 ---
 # <a name="overview-of-source-code-analysis"></a>Panoramica dell'analisi del codice sorgente
 
@@ -25,9 +25,9 @@ Gli analizzatori .NET Compiler Platform (Roslyn) esaminano il codice C# o Visual
 
 Gli analizzatori possono essere divisi nei gruppi seguenti:
 
-- Gli analizzatori di [stili di codice](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories) sono incorporati in Visual Studio. L'ID di diagnostica, o codice, per questi analizzatori è nel formato IDExxxx, ad esempio IDE0067. È possibile configurare le preferenze nella [pagina Opzioni editor di testo](../ide/code-styles-and-code-cleanup.md) o in un [file EditorConfig](../ide/editorconfig-code-style-settings-reference.md). A partire da .NET 5,0, gli analizzatori di stili di codice sono inclusi in .NET SDK e possono essere applicati in modo rigoroso come avvisi o errori di compilazione. Per altre informazioni, vedere [qui](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
+- Gli analizzatori di [stili di codice](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories) sono incorporati in Visual Studio. L'ID di diagnostica, o codice, per questi analizzatori è nel formato IDExxxx, ad esempio IDE0067. È possibile configurare le preferenze nella [pagina Opzioni editor di testo](../ide/code-styles-and-code-cleanup.md) o in un [file EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options). A partire da .NET 5,0, gli analizzatori di stili di codice sono inclusi in .NET SDK e possono essere applicati in modo rigoroso come avvisi o errori di compilazione. Per altre informazioni, vedere [qui](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
 
-- Gli analizzatori di [qualità del codice](code-analysis-warnings-for-managed-code-by-checkid.md) sono ora inclusi in .NET 5 SDK e abilitati per impostazione predefinita. L'ID di diagnostica, o codice, per questi analizzatori è nel formato CAXXXX, ad esempio CA1822. Per altre informazioni, vedere [Panoramica dell'analisi della qualità del codice .NET](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
+- Gli analizzatori di [qualità del codice](/dotnet/fundamentals/code-analysis/quality-rules/index) sono ora inclusi in .NET 5 SDK e abilitati per impostazione predefinita. L'ID di diagnostica, o codice, per questi analizzatori è nel formato CAXXXX, ad esempio CA1822. Per altre informazioni, vedere [Panoramica dell'analisi della qualità del codice .NET](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
 
 - Gli analizzatori di terze parti possono essere installati come un pacchetto NuGet o un'estensione di Visual Studio. Analizzatori di terze parti, ad esempio [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), [xUnit](https://www.nuget.org/packages/xunit.analyzers/)Analyzers e [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).
 
@@ -37,7 +37,7 @@ Ogni analizzatore ha uno dei livelli di gravità seguenti:
 
 | Gravità (Esplora soluzioni) | Gravità (file EditorConfig) | Comportamento in fase di compilazione | Comportamento dell'editor |
 |-|-|-|
-| Errore | `error` | Le violazioni vengono visualizzate come *errori* nel elenco errori e nell'output di compilazione da riga di comando e causano l'esito negativo delle compilazioni.| Il codice che offende è sottolineato con una zigzag rossa e contrassegnato da una piccola casella rossa nella barra di scorrimento. |
+| Errore di | `error` | Le violazioni vengono visualizzate come *errori* nel elenco errori e nell'output di compilazione da riga di comando e causano l'esito negativo delle compilazioni.| Il codice che offende è sottolineato con una zigzag rossa e contrassegnato da una piccola casella rossa nella barra di scorrimento. |
 | Avviso | `warning` | Le violazioni vengono visualizzate come *avvisi* nell'elenco errori e nell'output di compilazione da riga di comando, ma non comportano la mancata riuscita delle compilazioni. | Il codice offensivo è sottolineato con una zigzag verde e contrassegnato da una piccola casella verde nella barra di scorrimento. |
 | Info | `suggestion` | Le violazioni vengono visualizzate come *messaggi* nell'elenco errori e non nell'output di compilazione da riga di comando. | Il codice che causa il danneggiamento è sottolineato con un zigzag grigio e contrassegnato da una piccola casella grigia nella barra di scorrimento. |
 | Nascosto | `silent` | Non visibile all'utente. | Non visibile all'utente. Tuttavia, la diagnostica viene segnalata al motore di diagnostica IDE. |
@@ -69,7 +69,7 @@ Gli analizzatori possono anche essere configurati per esaminare il codice in fas
 
 Gli analizzatori di terze parti possono essere installati per progetto tramite un pacchetto NuGet. Alcuni sono disponibili anche come estensione di Visual Studio, nel qual caso si applicano a qualsiasi soluzione aperta in Visual Studio. Esistono alcune differenze di comportamento fondamentali tra questi due metodi di [installazione degli analizzatori](../code-quality/install-roslyn-analyzers.md).
 
-### <a name="scope"></a>Ambito
+### <a name="scope"></a>Scope
 
 Se si installano gli analizzatori come estensione di Visual Studio, si applicano a livello di soluzione e a tutte le istanze di Visual Studio. Se si installano gli analizzatori come pacchetto NuGet (metodo preferito), si applicano solo al progetto in cui è stato installato il pacchetto NuGet. Negli ambienti di team gli analizzatori installati come pacchetti NuGet sono inclusi nell'ambito per *tutti gli sviluppatori* che lavorano sul progetto.
 

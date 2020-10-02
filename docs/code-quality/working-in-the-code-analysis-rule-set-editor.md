@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffaf964b24fea41d8e364d610806ba92980b1dc7
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893307"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659179"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usare l'editor set di regole di analisi del codice
 
@@ -26,10 +26,10 @@ Nella tabella seguente vengono illustrate le opzioni di gravità:
 |Azione (gravità)|Descrizione|
 |-|-|
 |Avviso|Genera un avviso nel **Elenco errori** e anche in fase di compilazione.|
-|Errore|Genera un errore nel **Elenco errori** e anche in fase di compilazione.|
+|Errore di|Genera un errore nel **Elenco errori** e anche in fase di compilazione.|
 |Info|Genera un messaggio nel **Elenco errori**.|
 |Nascosto|La violazione non è visibile all'utente. Tuttavia, l'IDE riceve una notifica della violazione.|
-|Nessuno|La regola è stata eliminata. Il comportamento è lo stesso di se la regola è stata rimossa dal set di regole.|
+|nessuno|La regola è stata eliminata. Il comportamento è lo stesso di se la regola è stata rimossa dal set di regole.|
 
 Nell'editor vengono visualizzate le regole in una struttura ad albero che raggruppa le regole in base a un campo del set di regole specificato. Per aggiungere o rimuovere regole da un set di regole, eseguire uno o più dei passaggi seguenti:
 
@@ -70,10 +70,10 @@ Nella tabella seguente vengono descritti i campi di un set di regole:
 |Campo|Descrizione|
 |-----------|-----------------|
 |**ID**|Identificatore della regola.|
-|**Categoria**|Oltre all'appartenenza ai set di regole, le regole di analisi del codice sono raggruppate per categoria. Per altre informazioni, vedere [avvisi di analisi del codice](../code-quality/code-analysis-for-managed-code-warnings.md).|
-|**Name**|Titolo della regola.|
+|**Categoria**|Oltre all'appartenenza ai set di regole, le regole di analisi del codice sono raggruppate per categoria. Per altre informazioni, vedere [avvisi di analisi del codice](/dotnet/fundamentals/code-analysis/quality-rules/index).|
+|**Nome**|Titolo della regola.|
 |**Spazio dei nomi**|Spazio dei nomi della regola.|
-|**Tipo di destinazione**|Indica se la regola è per il codice nativo, gestito o del database.|
+|**Tipo destinazione**|Indica se la regola è per il codice nativo, gestito o del database.|
 |**Azione**|Azione eseguita quando la regola viene violata in un'esecuzione dell'analisi del codice. È possibile modificare il campo **azione** .|
 |**Set di regole di origine**|Set di regole che contiene la regola.|
 

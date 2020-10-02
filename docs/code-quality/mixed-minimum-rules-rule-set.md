@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d44b12815f24ea14d35df0e27e5b3f72c296e16
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: edacd898cc1deb0382dd8e8b4b048af895c3b579
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599572"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658464"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Set di regole minime miste
 
@@ -153,7 +153,7 @@ Includere questo set di regole in tutti i set di regole personalizzati creati pe
 |[C28305](/cpp/code-quality/c28305)|È stato individuato un errore durante l'analisi di un token.|
 |[C28350](/cpp/code-quality/c28350)|L'annotazione descrive una situazione non applicabile in modo condizionale.|
 |[C28351](/cpp/code-quality/c28351)|L'annotazione descrive la posizione nella condizione in cui non è possibile utilizzare un valore dinamico (variabile).|
-|[CA1001](../code-quality/ca1001.md)|I tipi proprietari di campi Disposable devono essere Disposable|
-|[CA1821](../code-quality/ca1821.md)|Rimuovere i finalizzatori vuoti|
-|[CA2213](../code-quality/ca2213.md)|I campi eliminabili devono essere eliminati|
-|[CA2231](../code-quality/ca2231.md)|Eseguire l'overload dell'operatore "uguale a" all'override di ValueType.Equals|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|I tipi proprietari di campi Disposable devono essere Disposable|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|Rimuovere i finalizzatori vuoti|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|I campi eliminabili devono essere eliminati|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|Eseguire l'overload dell'operatore "uguale a" all'override di ValueType.Equals|

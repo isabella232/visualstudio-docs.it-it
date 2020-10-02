@@ -2,20 +2,20 @@
 title: Opzioni di stile di codice e pulizia del codice
 ms.date: 04/25/2019
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 75b301f66f597f8b53a2561ffbbe05dfb8a4cb1c
-ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
+ms.openlocfilehash: 82eec2a911ec113c42423fe14b06539e465e8bb3
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90682694"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658386"
 ---
 # <a name="code-style-preferences"></a>Preferenze di stile per il codice
 
@@ -26,7 +26,7 @@ ms.locfileid: "90682694"
 
 ## <a name="code-styles-in-editorconfig-files"></a>Stili di codice nei file EditorConfig
 
-È possibile specificare le [impostazioni relative agli stili di codice](../ide/editorconfig-code-style-settings-reference.md) per .NET mediante l'aggiunta di un file [EditorConfig](create-portable-custom-editor-options.md) al progetto. I file EditorConfig sono associati a una codebase anziché a un account di personalizzazione di Visual Studio. Le impostazioni in un file EditorConfig hanno la precedenza sugli stili di codice specificati nella finestra di dialogo **Opzioni**. Usare un file EditorConfig quando si vogliono imporre stili di codice per tutti i collaboratori del repository o del progetto.
+È possibile specificare le [impostazioni relative agli stili di codice](/dotnet/fundamentals/code-analysis/code-style-rule-options) per .NET mediante l'aggiunta di un file [EditorConfig](create-portable-custom-editor-options.md) al progetto. I file EditorConfig sono associati a una codebase anziché a un account di personalizzazione di Visual Studio. Le impostazioni in un file EditorConfig hanno la precedenza sugli stili di codice specificati nella finestra di dialogo **Opzioni**. Usare un file EditorConfig quando si vogliono imporre stili di codice per tutti i collaboratori del repository o del progetto.
 
 ::: moniker range=">=vs-2019"
 
@@ -112,5 +112,5 @@ Se si vogliono applicare le impostazioni per gli stili di codice ogni volta che 
 ## <a name="see-also"></a>Vedere anche
 
 - [Azioni rapide](../ide/quick-actions.md)
-- [Impostazioni della convenzione di codifica .NET per EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Impostazioni della convenzione di codifica .NET per EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [Comportamento dell'editor (Visual Studio per Mac)](/visualstudio/mac/editor-behavior)

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6abee067465a0595b75df42d05213f9694dd7ed4
-ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
+ms.openlocfilehash: 62449bd5571ff72cdf5a1c855417611f45f5970f
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91621737"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659316"
 ---
 # <a name="visual-studio-docs-whats-new-for-september-2020"></a>Documenti di Visual Studio: novità di settembre 2020
 
@@ -30,14 +30,11 @@ Introduzione alle novità di Visual Studio docs per il 2020 settembre. Questo ar
 
 **Nuovi articoli**
 
-- [CA1416: convalida compatibilità piattaforma](../code-quality/ca1416.md) -documentazione CA1416 Convalida piattaforma compatibilità
-- [Ca1834: usare StringBuilder. Append (Char) per le stringhe a carattere singolo](../code-quality/ca1834.md) -docs per ca1834
+- [CA1416: convalida compatibilità piattaforma](/dotnet/fundamentals/code-analysis/quality-rules/ca1416) -documentazione CA1416 Convalida piattaforma compatibilità
+- [Ca1834: usare StringBuilder. Append (Char) per le stringhe a carattere singolo](/dotnet/fundamentals/code-analysis/quality-rules/ca1834) -docs per ca1834
 
 **Aggiornato**
 
-- [Configurare gli analizzatori di qualità del codice .NET con EditorConfig](../code-quality/configure-fxcop-analyzers.md)
-  - Poche correzioni minime per il refactoring di docs CA
-  - Aggiornamenti dell'analisi del codice per il refactoring .NET
 - [Panoramica dell'analisi del codice sorgente](../code-quality/roslyn-analyzers-overview.md) -aggiornamenti dell'analisi del codice per il refactoring .NET
 - [Configurare l'analisi della qualità del codice](../code-quality/use-roslyn-analyzers.md) -aggiornamenti dell'analisi del codice per il refactoring .NET
 
@@ -68,8 +65,8 @@ Introduzione alle novità di Visual Studio docs per il 2020 settembre. Questo ar
 
 **Articoli aggiornati**
 
-- [Impostazioni della convenzione di codifica .NET per EditorConfig](./editorconfig-code-style-settings-reference.md) -aggiornamento di EditorConfig
-- [Convenzioni del linguaggio](./editorconfig-language-conventions.md) -esempi mancanti
+- [Impostazioni della convenzione di codifica .NET per EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options) -aggiornamento di EditorConfig
+- [Convenzioni del linguaggio](/dotnet/fundamentals/code-analysis/style-rules/language-rules) -esempi mancanti
 
 ## <a name="install"></a>Installazione
 
@@ -78,6 +75,7 @@ Introduzione alle novità di Visual Studio docs per il 2020 settembre. Questo ar
 - [Visual Studio nei dispositivi](../install/visual-studio-on-arm-devices.md) basati su ARM-aggiunta di documenti per vs su ARM
 
 **Articoli aggiornati**
+
 - [Risolvere gli errori correlati alla rete quando si installa o si usa Visual Studio](../install/troubleshooting-network-related-errors-in-visual-studio.md) -Aggiungi soluzione alternativa per l'arresto anomalo del proxy di autenticazione feedback
 
 ## <a name="profiling"></a>Profilatura

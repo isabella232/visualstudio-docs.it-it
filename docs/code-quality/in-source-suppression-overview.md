@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: adf8e969af4a903aa6ed55b1c92f4ddaffcf77e0
-ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
+ms.openlocfilehash: 4ef64528d8686267677020458374ef96143f6e34
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91604629"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658516"
 ---
 # <a name="suppress-code-analysis-violations"></a>Rimuovere le violazioni dell'analisi del codice
 
@@ -68,7 +68,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 Le proprietà dell'attributo includono:
 
-- **Category** : la categoria in cui è definita la regola. Per ulteriori informazioni sulle categorie di regole di analisi del codice, vedere [avvisi del codice gestito](../code-quality/code-analysis-for-managed-code-warnings.md).
+- **Category** : la categoria in cui è definita la regola. Per ulteriori informazioni sulle categorie di regole di analisi del codice, vedere [avvisi del codice gestito](/dotnet/fundamentals/code-analysis/quality-rules/index).
 
 - **CheckId** : identificatore della regola. Il supporto include un nome breve e lungo per l'identificatore della regola. Il nome breve è CAXXXX; il nome lungo è CAXXXX: FriendlyTypeName.
 
@@ -190,7 +190,7 @@ Per l'analisi del codice legacy, è possibile scegliere se escludere gli avvisi 
 > [!NOTE]
 > L'analisi del codice ignora `GeneratedCodeAttribute` quando viene applicata a un intero assembly o a un singolo parametro.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

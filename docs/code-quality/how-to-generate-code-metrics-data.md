@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b254cb2077b748f34958e33dbc456f17df530ce
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 25fc255d0e04dd45400fa5da2b81c2e050a2150f
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600223"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658529"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procedura: generare dati di metrica del codice
 
@@ -32,10 +32,10 @@ ms.locfileid: "89600223"
 
 Gli analizzatori di qualità del codice .NET includono diverse regole dell' [analizzatore](roslyn-analyzers-overview.md) della metrica del codice:
 
-- [CA1501](./ca1501.md)
-- [CA1502](ca1502.md)
-- [CA1505](ca1505.md)
-- [CA1506](ca1506.md)
+- [CA1501](/dotnet/fundamentals/code-analysis/quality-rules/ca1501)
+- [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502)
+- [CA1505](/dotnet/fundamentals/code-analysis/quality-rules/ca1505)
+- [CA1506](/dotnet/fundamentals/code-analysis/quality-rules/ca1506)
 
 Queste regole sono disabilitate per impostazione predefinita, ma è possibile abilitarle da [**Esplora soluzioni**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) o in un file del [set di regole](using-rule-sets-to-group-code-analysis-rules.md) . Ad esempio, per abilitare la regola CA1502 come avviso, il file con estensione ruleset conterrà la voce seguente:
 
@@ -60,7 +60,7 @@ Queste regole sono disabilitate per impostazione predefinita, ma è possibile ab
    CA1502: 10
    ```
 
-   In questo esempio la regola [CA1502](ca1502.md) è configurata in modo da essere attivata quando la complessità ciclomatica di un metodo è maggiore di 10.
+   In questo esempio la regola [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502) è configurata in modo da essere attivata quando la complessità ciclomatica di un metodo è maggiore di 10.
 
 3. Nella finestra **Proprietà** di Visual Studio o nel file di progetto contrassegnare l'azione di compilazione del file di configurazione come [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Ad esempio:
 
@@ -336,7 +336,7 @@ La `LinesOfCode` metrica è più accurata e affidabile nel nuovo strumento per l
 
 Altre metriche, ad esempio `CyclomaticComplexity` e `MaintainabilityIndex` , usano le stesse formule delle versioni precedenti di *Metrics.exe*, ma il nuovo strumento conta il numero di istruzioni per le `IOperations` origini logiche anziché le istruzioni del linguaggio intermedio (il). I numeri saranno leggermente diversi rispetto a quelli generati dall'IDE di Visual Studio e dalle versioni precedenti di *Metrics.exe*.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Usare la finestra Risultati metrica codice](../code-quality/working-with-code-metrics-data.md)
 - [Valori della metrica del codice](../code-quality/code-metrics-values.md)

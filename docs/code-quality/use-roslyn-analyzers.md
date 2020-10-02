@@ -11,12 +11,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6a950a005a4669e74722742b23527a9e85ab5f02
-ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
+ms.openlocfilehash: 08d033deb09f8b91cfc183e121bac7c3f2839d08
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90560749"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659218"
 ---
 # <a name="overview"></a>Panoramica
 
@@ -40,12 +40,12 @@ Nella tabella seguente vengono illustrate le diverse opzioni di gravità:
 
 | Gravità (Esplora soluzioni) | Gravità (file EditorConfig) | Comportamento in fase di compilazione | Comportamento dell'editor |
 |-|-|-|
-| Errore | `error` | Le violazioni vengono visualizzate come *errori* nel elenco errori e nell'output di compilazione da riga di comando e causano l'esito negativo delle compilazioni.| Il codice che offende è sottolineato con una zigzag rossa e contrassegnato da una piccola casella rossa nella barra di scorrimento. |
+| Errore di | `error` | Le violazioni vengono visualizzate come *errori* nel elenco errori e nell'output di compilazione da riga di comando e causano l'esito negativo delle compilazioni.| Il codice che offende è sottolineato con una zigzag rossa e contrassegnato da una piccola casella rossa nella barra di scorrimento. |
 | Avviso | `warning` | Le violazioni vengono visualizzate come *avvisi* nell'elenco errori e nell'output di compilazione da riga di comando, ma non comportano la mancata riuscita delle compilazioni. | Il codice offensivo è sottolineato con una zigzag verde e contrassegnato da una piccola casella verde nella barra di scorrimento. |
 | Info | `suggestion` | Le violazioni vengono visualizzate come *messaggi* nell'elenco errori e non nell'output di compilazione da riga di comando. | Il codice che causa il danneggiamento è sottolineato con un zigzag grigio e contrassegnato da una piccola casella grigia nella barra di scorrimento. |
 | Nascosto | `silent` | Non visibile all'utente. | Non visibile all'utente. Tuttavia, la diagnostica viene segnalata al motore di diagnostica IDE. |
 | nessuno | `none` | Eliminati completamente. | Eliminati completamente. |
-| Impostazione predefinita | `default` | Corrisponde alla gravità predefinita della regola. Per determinare il valore predefinito di una regola, cercare nell'Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
+| Predefinito | `default` | Corrisponde alla gravità predefinita della regola. Per determinare il valore predefinito di una regola, cercare nell'Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
 
 Se le violazioni delle regole vengono trovate da un analizzatore, vengono segnalate nell'editor del codice (come *zigzag* sotto il codice che causa il errore) e nella finestra Elenco errori.
 
@@ -102,7 +102,7 @@ Se sono presenti più voci applicabili a un ID di regola specifico, di seguito �
 - La voce di gravità per una singola regola in base all'ID ha la precedenza sulla voce di gravità per una categoria.
 - La voce di gravità per una categoria ha la precedenza sulla voce di gravità per tutte le regole dell'analizzatore.
 
-Si consideri l'esempio EditorConfig seguente, dove [CA1822](./ca1822.md) ha la categoria "performance":
+Si consideri l'esempio EditorConfig seguente, dove [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) ha la categoria "performance":
 
    ```ini
    [*.cs]
@@ -117,7 +117,7 @@ Nell'esempio precedente, tutte e tre le voci sono applicabili a CA1822. Tuttavia
 
 1. Se non si dispone già di un file EditorConfig per il progetto, [aggiungerne uno](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
-2. Aggiungere una voce per ogni regola che si desidera configurare con l'estensione di file corrispondente. Ad esempio, per impostare il livello di gravità per [CA1822](ca1822.md) su `error` per i file C#, la voce è simile alla seguente:
+2. Aggiungere una voce per ogni regola che si desidera configurare con l'estensione di file corrispondente. Ad esempio, per impostare il livello di gravità per [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) su `error` per i file C#, la voce è simile alla seguente:
 
    ```ini
    [*.cs]
@@ -125,7 +125,7 @@ Nell'esempio precedente, tutte e tre le voci sono applicabili a CA1822. Tuttavia
    ```
 
 > [!NOTE]
-> Per gli analizzatori in stile codice IDE, è anche possibile configurarli in un file EditorConfig usando una sintassi diversa, ad esempio `dotnet_style_qualification_for_field = false:suggestion` . Tuttavia, se si imposta una gravità usando la `dotnet_diagnostic` sintassi, avrà la precedenza. Per altre informazioni, vedere [convenzioni di lingua per EditorConfig](../ide/editorconfig-language-conventions.md).
+> Per gli analizzatori in stile codice IDE, è anche possibile configurarli in un file EditorConfig usando una sintassi diversa, ad esempio `dotnet_style_qualification_for_field = false:suggestion` . Tuttavia, se si imposta una gravità usando la `dotnet_diagnostic` sintassi, avrà la precedenza. Per altre informazioni, vedere [convenzioni di lingua per EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules).
 
 ### <a name="set-rule-severity-from-the-light-bulb-menu"></a>Imposta gravità regola dal menu lampadina
 

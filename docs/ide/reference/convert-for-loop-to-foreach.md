@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: af52761f5cb199c7f842d01589c35501898b09aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47aa5a328f158d890908bf1ddcb69a838ad1ed66
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094597"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659381"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Effettuare il refactoring per convertire un ciclo for in un'istruzione foreach e viceversa
 
@@ -83,7 +83,7 @@ Di seguito sono riportati alcuni motivi per cui può essere opportuno convertire
 1. Poiché il refactoring introduce una nuova variabile Numero di iterazioni, la casella **Rinomina** appare nell'angolo superiore destro dell'editor. Se si vuole scegliere un nome diverso per la variabile, digitarlo in e quindi premere **INVIO** oppure selezionare **Applica** nella casella **Rinomina**. Se non si vuole scegliere un nuovo nome, premere **ESC** oppure selezionare **Applica** per chiudere la casella **Rinomina**.
 
 > [!NOTE]
-> Per C#, il codice generato da questi refactoring usa un tipo esplicito o [var](/dotnet/csharp/language-reference/keywords/var) per il tipo degli elementi nella raccolta. Il tipo nel codice generato, esplicito o implicito, dipende dalle impostazioni di stile del codice che rientrano nell'ambito. Queste specifiche impostazioni di stile di codice sono configurate a livello di computer in **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **C#**  >  **stile di codice**  >  **generale**  >  ** \' var ' preferenze**o a livello di soluzione in un file [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) . Se si modifica un'impostazione di stile del codice in **Opzioni**, riaprire il file di codice per rendere effettive le modifiche.
+> Per C#, il codice generato da questi refactoring usa un tipo esplicito o [var](/dotnet/csharp/language-reference/keywords/var) per il tipo degli elementi nella raccolta. Il tipo nel codice generato, esplicito o implicito, dipende dalle impostazioni di stile del codice che rientrano nell'ambito. Queste specifiche impostazioni di stile di codice sono configurate a livello di computer in **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **C#**  >  **stile di codice**  >  **generale**  >  ** \' var ' preferenze**o a livello di soluzione in un file [EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types) . Se si modifica un'impostazione di stile del codice in **Opzioni**, riaprire il file di codice per rendere effettive le modifiche.
 
 ## <a name="see-also"></a>Vedere anche
 

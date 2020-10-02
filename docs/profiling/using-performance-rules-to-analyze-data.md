@@ -9,18 +9,18 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f5af6b366a1181187c23327449ade8e03e30107f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ea0f43b63eb8ec51ad7e8240844a804259374a8
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778063"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659342"
 ---
 # <a name="use-performance-rules-to-analyze-data"></a>Usare le regole per le prestazioni per analizzare dati
 Gli avvisi di prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] segnalano i problemi che possono rallentare l'esecuzione di un'applicazione sottoposta a profilatura. Gli avvisi possono anche indicare che potrebbe essere necessario modificare i metodi di raccolta per raccogliere dati più utili. Gli avvisi di prestazioni sono generati automaticamente in una sessione di profilatura. Gli avvisi vengono visualizzati nella finestra **Elenco errori** quando viene aperto un file di dati di profilatura in Visual Studio. Dalla finestra **Elenco errori** è possibile individuare il codice sorgente del problema e visualizzare informazioni dettagliate sull'errore, ad esempio informazioni su come risolvere il problema. È inoltre possibile disabilitare gli avvisi a cui non si è interessati.
 
 > [!NOTE]
-> Gli avvisi di prestazioni del profiler vengono generati dall'analisi dinamica dell'esecuzione del programma e sono indipendenti dagli avvisi di Analisi codice. Analisi codice può inoltre generare avvisi di prestazioni per il codice gestito in base all'analisi statica del codice sorgente. Per altre informazioni, vedere [Analisi della qualità del codice gestito](../code-quality/code-analysis-for-managed-code-overview.md) e [Avvisi di prestazioni](../code-quality/performance-warnings.md).
+> Gli avvisi di prestazioni del profiler vengono generati dall'analisi dinamica dell'esecuzione del programma e sono indipendenti dagli avvisi di Analisi codice. Analisi codice può inoltre generare avvisi di prestazioni per il codice gestito in base all'analisi statica del codice sorgente. Per altre informazioni, vedere [Analisi della qualità del codice gestito](../code-quality/code-analysis-for-managed-code-overview.md) e [Avvisi di prestazioni](/dotnet/fundamentals/code-analysis/quality-rules/performance-warnings).
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Procedura: Visualizzare gli avvisi di prestazioni](../profiling/how-to-view-performance-warnings.md)

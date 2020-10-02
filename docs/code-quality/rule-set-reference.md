@@ -9,19 +9,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d380346b7e049a6ffc4e8d03a5be27983de10249
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b20974d2e44661ed7f4a0288ecb9eff82b2035a
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587238"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658425"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Tabella di riferimento del set di regole di analisi del codice
 
 Quando si configura l'analisi legacy per i progetti di codice gestito in Visual Studio, è possibile scegliere da un elenco di *set di regole*predefiniti. Alcune regole sono incluse in più di uno dei set di regole predefiniti, ad esempio il set di regole di base di correttezza include regole incluse nel set di regole consigliate gestite.
 
 > [!NOTE]
-> I set di regole in questa sezione riguardano l'analisi legacy. Per informazioni sui set di regole disponibili per i pacchetti dell'analizzatore di codice, vedere [usare i set di regole con gli analizzatori di codice](analyzer-rule-sets.md).
+> I set di regole in questa sezione riguardano l'analisi legacy. Per informazioni sui set di regole disponibili per i pacchetti dell'analizzatore di codice, vedere [usare i set di regole con gli analizzatori di codice](/dotnet/fundamentals/code-analysis/code-quality-rule-options).
 
 È possibile usare uno di questi set di regole predefiniti oppure [personalizzare un set di regole](../code-quality/how-to-create-a-custom-rule-set.md) per soddisfare i requisiti del progetto. Se si includono più set di regole che contengono la stessa regola in un set di regole personalizzato, tale regola viene visualizzata una sola volta nel set di regole personalizzate.
 
