@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: cb19cab0c03b87894029a18f682f05def6a2197c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 3877fd22efa69978c4e209b7fa23998dac7dc95e
+ms.sourcegitcommit: 036b0dfa651f7218ed33e6a19425613599ee58fa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005545"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91636690"
 ---
 # <a name="dotnet-toolinstall"></a>dotnet-toolinstall
 
@@ -34,7 +34,7 @@ Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, 
 
 ### <a name="input"></a>Input
 
-La `input` proprietà viene usata per specificare l'installazione dello strumento .NET Core. In è disponibile un elenco di strumenti non ufficiale [https://github.com/natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools) .
+La `input` proprietà viene usata per specificare lo strumento .NET Core da installare. In è disponibile un elenco di strumenti non ufficiale [https://github.com/natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools) .
 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
