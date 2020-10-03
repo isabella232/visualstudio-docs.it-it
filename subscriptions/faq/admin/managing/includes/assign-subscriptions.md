@@ -6,13 +6,13 @@ ms.topic: include
 ms.assetid: 59eb35fd-ec94-41ce-b24c-a8a120976bac
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 3/3/2020
-ms.openlocfilehash: 192cb7118a9f431ce2e7a9396b67a919fad10bb9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.date: 09/30/2020
+ms.openlocfilehash: add0bac2a9e7eb053c183d66fcee17c8133bb921
+ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84200408"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91643793"
 ---
 ## <a name="how-do-i-assign-visual-studio-subscriptions"></a>Qual è la procedura per assegnare le sottoscrizioni di Visual Studio?
 
@@ -39,4 +39,12 @@ Per assegnare le sottoscrizioni in blocco:
 4. Tornare a [manage.visualstudio.com](https://manage.visualstudio.com), selezionare Aggiungi in blocco e caricare la copia salvata del modello di Excel.
 5. Quando il caricamento ha esito positivo verrà visualizzata una pagina di conferma e l'elenco dei sottoscrittori sarà aggiornato con i nuovi. I sottoscrittori riceveranno un messaggio di posta elettronica e potranno iniziare a usare immediatamente la sottoscrizione di Visual Studio (non è richiesta alcuna attivazione da parte del sottoscrittore).
 
-Per scoprire come assegnare le sottoscrizioni in modo rapido e semplice, vedere le informazioni sull'[assegnazione delle sottoscrizioni nel portale di amministrazione delle sottoscrizioni di Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/assign-license#individual-assignments).
+Per scoprire come assegnare le sottoscrizioni in modo rapido e semplice, [vedere altre informazioni](https://docs.microsoft.com/visualstudio/subscriptions/assign-license#add-a-single-subscriber) sull'assegnazione delle sottoscrizioni nel portale di amministrazione di Sottoscrizioni di Visual Studio.  [Altre informazioni](https://docs.microsoft.com/visualstudio/subscriptions/assign-github) sulla Gestione delle sottoscrizioni di Visual Studio con GitHub Enterprise. 
+
+## <a name="what-is-the-github-enterprise-setup-process"></a>Come funziona il processo di configurazione di GitHub Enterprise? 
+
+GitHub Enterprise viene configurato e gestito separatamente dalle sottoscrizioni di Visual Studio. Dopo l'acquisto di Visual Studio con GitHub Enterprise viene avviato il processo di configurazione dell'account di GitHub Enterprise parallelamente (ma separatamente) alla sottoscrizione di un contratto in manage.visualstudio.com. La creazione di questo account di GitHub Enterprise può richiedere del tempo.  
+
+Dopo che l'azienda ha configurato un account di GitHub Enterprise, i sottoscrittori a cui è stata assegnata una sottoscrizione di Visual Studio con GitHub Enterprise riceveranno un messaggio di posta elettronica da GitHub che informa che le sottoscrizioni di Visual Studio sono state collegate. Quando i sottoscrittori ricevono questo messaggio di posta elettronica, possono rivolgersi all'amministratore dell'organizzazione di GitHub per ricevere un invito all'organizzazione appropriata. 
+
+[Altre informazioni](https://docs.microsoft.com/visualstudio/subscriptions/assign-github) sulla Gestione delle sottoscrizioni di Visual Studio con GitHub Enterprise. Per altri dettagli sul processo di configurazione di GitHub Enterprise, fare riferimento alla [documentazione per i sottoscrittori](https://docs.microsoft.com/visualstudio/subscriptions/access-github). 
