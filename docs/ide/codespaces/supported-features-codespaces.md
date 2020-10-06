@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: c86fc99fe6bd2ae17b6ce222b04549db07d7687e
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: eee21ca84acdcf5bbf774232d8d23ceda954b730
+ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862275"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749505"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Funzionalità supportate di Visual Studio (anteprima)
 
@@ -42,15 +42,15 @@ Si noti che la modifica del codice sorgente in uno spazio dei codici è leggerme
 * Evidenziazione della sintassi
 * Informazioni rapide *
 * HTML, CSS, editor Razor *-supporto parziale.
-* Editor JavaScript *-supporto parziale.
+* Editor JavaScript e TypeScript *-supporto parziale.
 
 Non ancora disponibile:
 
 * IntelliSense *-alcuni filtri di completamento automatico/elenco di membri non sono disponibili. Il completamento per i tipi non importati e IntelliSense nella finestra espressioni di controllo non è ancora disponibile.
-* Esplorazione del codice *: la maggior parte dei comandi supportati, in particolare passa a base e cerca nei file con specifica del percorso non ancora supportata.
+* Esplorazione del codice *: la maggior parte dei comandi è supportata. Vai a base e trova nei file con specifica del percorso non sono ancora supportati.
 * Informazioni rapide *-la colorazione nelle informazioni rapide non è supportata.
 * HTML, CSS, editor Razor *-diagnostica, completamento IntelliSense, informazioni rapide, rientro intelligente. Attualmente nessun supporto per la colorazione semantica, i comandi di navigazione e così via.
-* Editor JavaScript *-i blocchi di script (ad esempio, il contenuto JavaScript nei file HTML e CSHTML) e l'evidenziazione semantica non sono ancora supportati. Problemi noti relativi alle funzionalità della lampadina.
+* JavaScript e TypeScript editor *-i blocchi di script (ad esempio, il contenuto JavaScript nei file HTML e CSHTML) e l'evidenziazione semantica non sono ancora supportati. Problemi noti relativi alle funzionalità della lampadina.
 * Visualizzazione destinazioni CMake
 * Editor impostazioni progetto CMake
 * CTRL + F7 (compila file)
@@ -72,7 +72,7 @@ Sono supportati la maggior parte dei tipi di applicazione e delle configurazioni
 
 Non ancora disponibile:
 
-* Finestre di progettazione interfaccia utente-finestre di progettazione WinForms e WPF
+* Finestre di progettazione interfaccia utente-WinForms, WPF e progettazione risorse
 * Progetti Visual Basic e F #
 * .NET Framework progetti di destinazione
 * Progetti Docker Compose
