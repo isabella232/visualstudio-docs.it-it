@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ef41e28d994f27f66f616623d1b2c9798b65ede4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6b089309ca7202c01028b3323ccabfd3668e909
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77580054"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780971"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Esercitazione: introduzione a C# e ad ASP.NET Core in Visual Studio
 
@@ -139,7 +139,7 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
 
 ### <a name="about-your-solution"></a>Informazioni sulla soluzione
 
-Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo schema progettuale [Model-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x), in quanto è semplificato in modo da includere il codice del modello e del controller all'interno della pagina Razor stessa.
+Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo schema progettuale [Model-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x&preserve-view=true), in quanto è semplificato in modo da includere il codice del modello e del controller all'interno della pagina Razor stessa.
 
 ::: moniker range="vs-2017"
 ## <a name="tour-your-solution"></a>Presentazione della soluzione
@@ -366,7 +366,7 @@ Visual Studio è una suite integrata per lo sviluppo di strumenti di produttivit
 L'esercitazione è stata completata. Ci auguriamo che sia stata utile per l'apprendimento dell'uso di C#, ASP.NET Core e dell'IDE di Visual Studio. Per altre informazioni sulla creazione di un'app Web o di un sito Web con C# e ASP.NET, continuare con le esercitazioni seguenti:
 
 > [!div class="nextstepaction"]
-> [Creare un'app Web Razor Pages con ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+> [Creare un'app Web Razor Pages con ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)
 
 ## <a name="see-also"></a>Vedere anche
 

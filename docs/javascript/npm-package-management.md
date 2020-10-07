@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1269049adad3fe2d26caa79721452f7f313e60d5
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: fed525f62466d096aa7868cc57c7fd7c75bf46f8
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739902"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781028"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gestire i pacchetti npm in Visual Studio
 
@@ -126,7 +126,7 @@ Per progetti come ASP.NET Core progetti, è possibile integrare il supporto NPM 
 * [Installare i pacchetti usando package.json](#npmInstallPackage)
 
 >[!NOTE]
-> Per ASP.NET Core progetti, è anche possibile usare [Gestione librerie](/aspnet/core/client-side/libman/?view=aspnetcore-3.1) o Yarn anziché NPM per installare i file CSS e JavaScript sul lato client.
+> Per ASP.NET Core progetti, è anche possibile usare [Gestione librerie](/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) o Yarn anziché NPM per installare i file CSS e JavaScript sul lato client.
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a> Aggiungere il supporto NPM a un progetto (ASP.NET Core)
 
@@ -164,7 +164,7 @@ Per i progetti con NPM incluso, è possibile configurare i pacchetti NPM usando 
 
 IntelliSense in *package.json* consente di selezionare una particolare versione di un pacchetto NPM.
 
-:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Selezionare la versione del pacchetto NPM" border="true":::
+:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Installare nuovi pacchetti npm da esplora soluzioni" border="true":::
 
 Quando si salva il file, Visual Studio aggiunge il pacchetto nel nodo **dipendenze/NPM** in Esplora soluzioni. Se il nodo non è visibile, fare clic con il pulsante destro ** del mouse supackage.js** e scegliere **Ripristina pacchetti**.
 

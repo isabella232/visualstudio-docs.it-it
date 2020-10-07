@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77580081"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780984"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Passaggio 2: creare la prima app Web ASP.NET Core
 
@@ -33,7 +33,7 @@ _Guardare questo video e seguire le indicazioni per creare la prima app ASP.NET 
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>Avviare Visual Studio 2019 e creare un nuovo progetto
 
-Avviare Visual Studio 2019 e fare clic su **Crea nuovo progetto**. Scegliere **Applicazione Web ASP.NET Core**. Scegliere il modello **Applicazione Web** e mantenere il nome e il percorso del progetto predefiniti. Nell'elenco a discesa con la versione ASP.NET Core scegliere **ASP.NET Core 2,1** o **ASP.NET Core 2,2**. Scegliere **Crea**. Per istruzioni più dettagliate, vedere [il video precedente in questa serie di esercitazioni](tutorial-aspnet-core-ef-step-01.md).
+Avviare Visual Studio 2019 e fare clic su **Crea nuovo progetto**. Scegliere **Applicazione Web ASP.NET Core**. Scegliere il modello **Applicazione Web** e mantenere il nome e il percorso del progetto predefiniti. Nell'elenco a discesa con la versione ASP.NET Core scegliere **ASP.NET Core 2,1** o **ASP.NET Core 2,2**. Fare clic su **Crea**. Per istruzioni più dettagliate, vedere [il video precedente in questa serie di esercitazioni](tutorial-aspnet-core-ef-step-01.md).
 
 ![Visual Studio 2019 - Scegliere le opzioni per il progetto ASP.NET Core](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
@@ -100,7 +100,7 @@ Eseguire di nuovo l'applicazione. Ora nella pagina dovrebbe essere visualizzata 
 
 Aggiungere un punto di interruzione al metodo `OnGet` assegnando un valore a `Time` e avviare il debug dell'applicazione.
 
-L'esecuzione si interrompe in corrispondenza della riga e si può osservare che `DateTime.Today` comprende la data, ma l'ora è sempre la mezzanotte perché non sono inclusi dati sull'ora. 
+L'esecuzione si interrompe in corrispondenza della riga e si può osservare che `DateTime.Today` comprende la data, ma l'ora è sempre la mezzanotte perché non sono inclusi dati sull'ora.
 
 ![Progetto ASP.NET Core di Visual Studio 2019 nel browser](media/vs-2019/vs2019-breakpoint.png)
 
@@ -128,4 +128,4 @@ Nel prossimo video si apprenderà come aggiungere il supporto dei dati per l'app
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Esercitazione: creare un'app Web Razor Pages con ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [Esercitazione: creare un'app Web Razor Pages con ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)

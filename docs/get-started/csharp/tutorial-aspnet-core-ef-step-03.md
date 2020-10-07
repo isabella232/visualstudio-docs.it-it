@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 42bc0442dc5901f92fc8a83b7af41c1fc42f4be4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d01d991daf5c24c02b8cd4976663a9399b251cc
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250794"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780959"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Passaggio 3: utilizzare i dati utilizzando Entity Framework
 
@@ -54,7 +54,7 @@ public class Game
 
 A questo punto è possibile procedere con la creazione delle pagine che verranno usate per gestire la libreria di giochi. Nonostante quello che si potrebbe immaginare, l'operazione è in effetti incredibilmente semplice. Prima di tutto è necessario decidere dove posizionare questa funzionalità nell'app. Aprire la cartella Pagine nel progetto Web e aggiungere una nuova cartella. Chiamarla *Games*.
 
-Ora fare clic con il pulsante destro del mouse su giochi e scegliere **Aggiungi**  >  **nuovo elemento con impalcatura**. Scegliere l'opzione **Pagine Razor che usano Entity Framework (CRUD)**. CRUD è l'acronimo d"Create, Read, Update, Delete" (Creare, leggere, aggiornare, eliminare) e questo modello creerà le pagine per ogni operazione (incluse una pagina per elencare tutti gli elementi e una pagina per visualizzare i dettagli di un elemento).
+A questo punto, fare clic con il pulsante destro del mouse su giochi e scegliere **Aggiungi**  >  **nuovo elemento con ponteggi**. Scegliere l'opzione **Pagine Razor che usano Entity Framework (CRUD)**. CRUD è l'acronimo d"Create, Read, Update, Delete" (Creare, leggere, aggiornare, eliminare) e questo modello creerà le pagine per ogni operazione (incluse una pagina per elencare tutti gli elementi e una pagina per visualizzare i dettagli di un elemento).
 
 ![ASP.NET Core di Visual Studio 2019 - Aggiungere pagine con scaffolding](media/vs-2019/vs2019-add-scaffold.png)
 
@@ -79,7 +79,7 @@ services.AddDbContext<AppDbContext>(options =>
 
 Si noterà anche che è stata aggiunta la stringa di connessione `AppDbContext` al file *appsettings.json* del progetto.
 
-Se si esegue l'app a questo punto, potrebbe verificarsi un errore perché non è ancora stato creato un database. È possibile configurare l'app per la creazione automatica del database se richiesto, [aggiungendo codice al file Program.cs](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio#update-main):
+Se si esegue l'app a questo punto, potrebbe verificarsi un errore perché non è ancora stato creato un database. È possibile configurare l'app per la creazione automatica del database se richiesto, [aggiungendo codice al file Program.cs](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true#update-main):
 
 ```csharp
 public static void Main(string[] args)
@@ -135,5 +135,5 @@ Nel prossimo video si apprenderà come aggiungere il supporto dell'API Web per l
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Razor Pages con Entity Framework Core in ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
-- [ASP.NET Core Razor Pages con Entity Framework Core](/aspnet/core/data/?view=aspnetcore-2.1)
+- [Razor Pages con Entity Framework Core in ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true)
+- [ASP.NET Core Razor Pages con Entity Framework Core](/aspnet/core/data/?view=aspnetcore-2.1&preserve-view=true)

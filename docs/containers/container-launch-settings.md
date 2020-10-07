@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: de0e3cc4e563f7082b91b904a110996cdb85b3b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1fdfbd3bf1f0969061365cd592f6054c7116b67
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247977"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780869"
 ---
 # <a name="container-tools-launch-settings"></a>Impostazioni di avvio degli strumenti contenitore
 
-Nella cartella *Properties* di un progetto ASP.NET Core è possibile trovare il launchSettings.jssu file, che contiene le impostazioni che controllano la modalità di avvio dell'app Web nel computer di sviluppo. Per informazioni dettagliate sul modo in cui questo file viene usato nello sviluppo ASP.NET, vedere [usare più ambienti in ASP.NET Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2). In *launchSettings.json*, le impostazioni nella sezione **Docker** sono correlate al modo in cui Visual Studio gestisce le app in contenitori.
+Nella cartella *Properties* di un progetto ASP.NET Core è possibile trovare il launchSettings.jssu file, che contiene le impostazioni che controllano la modalità di avvio dell'app Web nel computer di sviluppo. Per informazioni dettagliate sul modo in cui questo file viene usato nello sviluppo ASP.NET, vedere [usare più ambienti in ASP.NET Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2&preserve-view=true). In *launchSettings.json*, le impostazioni nella sezione **Docker** sono correlate al modo in cui Visual Studio gestisce le app in contenitori.
 
 ::: moniker range="vs-2017"
 
@@ -51,7 +51,7 @@ L'impostazione CommandName indica che questa sezione si applica agli strumenti c
 
 ::: moniker range="vs-2017"
 
-|Nome impostazione|Version|Esempio|Descrizione|
+|Nome impostazione|Versione|Esempio|Descrizione|
 |------------|-------|-------|---------------|
 |launchBrowser|Visual Studio 2017|"launchBrowser": true|Indica se avviare il browser dopo aver avviato correttamente il progetto.|
 |launchUrl|Visual Studio 2017|"launchUrl": "{Scheme}://{ServiceHost}: {ServicePort}"|Questo URL viene usato quando si avvia il browser.  I token di sostituzione supportati per questa stringa sono:<br>   {Scheme}: sostituito con "http" o "https" a seconda che si stia usando SSL.<br>   {ServiceHost}-generalmente sostituito con "localhost". Quando si fa riferimento a contenitori Windows in Windows 10 RS3 o versioni precedenti, tuttavia, viene sostituito con l'IP del contenitore.<br>   {ServicePort}: in genere sostituito con sslPort o httpPort, a seconda che venga usato SSL.  Quando si fa riferimento a contenitori di Windows in Windows 10 RS3 o versioni precedenti, tuttavia, viene sostituito con "443" o "80", a seconda che venga usato SSL.|

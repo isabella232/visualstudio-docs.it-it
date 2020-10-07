@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abd6d73c7b312cf00062307370ba2f7aebe6694e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a3e1c43e9813bce664a63f3675b0fed6e14e3c7
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768615"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781001"
 ---
 # <a name="use-the-task-list"></a>Usare l'elenco attività
 
@@ -65,7 +65,7 @@ Nella finestra **Elenco attività** viene inoltre visualizzato un commento nel c
 Poiché `TODO` è un token predefinito, questo commento viene visualizzato nell'elenco come attività `TODO`.
 
 > [!NOTE]
-> I token predefiniti sono disponibili solo per i linguaggi C/C++, C# e VB. Per altri linguaggi, vedere la sezione **Token personalizzati**.
+> I token predefiniti sono disponibili solo per i linguaggi C/C++, C# e VB.
 
 ### <a name="custom-tokens"></a>Token personalizzati
 
