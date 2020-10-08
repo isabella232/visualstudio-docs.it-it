@@ -14,7 +14,20 @@
             - name: Panoramica
               href: use-roslyn-analyzers.md
             - name: Qualità del codice
-              href: /dotnet/fundamentals/code-analysis/code-quality-rule-options
+              items:
+                - name: Opzioni di qualità del codice
+                  href: /dotnet/fundamentals/code-analysis/code-quality-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: Usare i file EditorConfig per la qualità del codice
+                  href: /dotnet/fundamentals/code-analysis/configuration-files?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+            - name: Stile del codice
+              items:
+                - name: Preferenze di stile per il codice
+                  href: ../ide/code-styles-and-code-cleanup.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: Usare i file EditorConfig per lo stile del codice
+                  displayName: Configure code style analyzers
+                  href: ../ide/create-portable-custom-editor-options.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: Opzioni delle regole
+                  href: /dotnet/fundamentals/code-analysis/code-style-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
             - name: Configurare l'analisi del codice in tempo reale
               href: configure-live-code-analysis-scope-managed-code.md
             - name: Eseguire manualmente l'analisi del codice
@@ -434,3 +447,11 @@
           href: how-to-generate-code-metrics-data.md
         - name: Usare dati di metrica del codice
           href: working-with-code-metrics-data.md
+- name: Analisi del codice C++
+  items:
+    - name: Analizzare il codice C e C++
+      href: /cpp/code-quality/code-analysis-for-c-cpp-overview
+    - name: Convenzioni di formattazione di EditorConfig
+      href: ../ide/cpp-editorconfig-properties.md
+    - name: Avvisi di analisi del codice C++
+      href: /cpp/code-quality/code-analysis-for-c-cpp-warnings
