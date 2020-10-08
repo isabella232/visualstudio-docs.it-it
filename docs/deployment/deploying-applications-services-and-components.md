@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8eeb44d08f4b966bed4aef526c12263bdd1a2b77
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 3a8301fcca5fd915b130477600ed9fe0b5b90f46
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641675"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830773"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Presentazione della distribuzione in Visual Studio
 
@@ -50,7 +50,7 @@ La distribuzione in una cartella locale viene di solito usata a scopo di test o 
 
 - **ASP.NET**, **ASP.NET Core**, **Python**e **Node.js**: pubblicare in app Azure Service o app Azure Service Linux (usando i contenitori) usando uno dei metodi seguenti.
 
-  - Per una distribuzione di app continua o automatica, usare Azure DevOps con [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
+  - Per una distribuzione di app continua o automatica, usare Azure DevOps con [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true).
 
   - Per una distribuzione di app una tantum o manuale, usare lo strumento **Pubblica** in Visual Studio.
 
@@ -107,7 +107,7 @@ Se è necessaria un'installazione di un'applicazione desktop più complessa di q
 
 - È possibile creare un pacchetto del programma di installazione basato su MSI usando l'[estensione WiX Toolset Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Si tratta di un set di strumenti da riga di comando.
 
-- È possibile creare un pacchetto del programma di installazione MSI o EXE usando [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) da Flexera Software. È possibile usare InstallShield con Visual Studio 2017 e versioni successive. 
+- È possibile creare un pacchetto del programma di installazione MSI o EXE usando [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) da Flexera Software. È possibile usare InstallShield con Visual Studio 2017 e versioni successive.
 
   > [!NOTE]
   > InstallShield Limited Edition non è più incluso in Visual Studio e non è supportato in Visual Studio 2017 e versioni successive. verificare con il [software Flexera](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) sulla disponibilità futura.
@@ -122,7 +122,7 @@ Se è necessaria un'installazione di un'applicazione desktop più complessa di q
 
 ## <a name="continuous-deployment"></a>Distribuzione continua
 
-È possibile usare Azure Pipelines per abilitare la distribuzione continua dell'app. Per altre informazioni, vedere [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) e [Distribuisci in Azure](/azure/devops/deploy-azure/index?view=vsts).
+È possibile usare Azure Pipelines per abilitare la distribuzione continua dell'app. Per altre informazioni, vedere [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true) e [Distribuisci in Azure](/azure/devops/deploy-azure/index?view=vsts&preserve-view=true).
 
 ## <a name="deploy-a-sql-database"></a>Distribuire un database SQL
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 2a6db2771525010d73fdeeea12ff4aebd99a1bd2
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 5bbdbffa9de9ac7789495249d3e7bfb0a8d65377
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485138"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829900"
 ---
 # <a name="deploy-to-docker-hub"></a>Distribuire in Docker Hub
 
@@ -40,7 +40,7 @@ Se non si dispone di un repository Docker Hub, crearne uno nell' [Hub Docker](ht
 
    ![Screenshot della finestra di dialogo dell'hub Docker](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
-1. Se ci si connette al proprio repository (non appartenente a un'organizzazione), lasciare selezionata la casella di controllo per la **pubblicazione in un repository personale** . Se il repository è di proprietà di un'organizzazione, deselezionare la casella di controllo e immettere il nome dell'organizzazione. Immettere il nome utente e la password di Docker per l'account Docker con le autorizzazioni per accedere al repository a cui ci si connette e quindi selezionare **Save (Salva**).  
+1. Se ci si connette al proprio repository (non appartenente a un'organizzazione), lasciare selezionata la casella di controllo per la **pubblicazione in un repository personale** . Se il repository è di proprietà di un'organizzazione, deselezionare la casella di controllo e immettere il nome dell'organizzazione. Immettere il nome utente e la password di Docker per l'account Docker con le autorizzazioni per accedere al repository a cui ci si connette e quindi selezionare **Save (Salva**).
 
    Visual Studio tenta di distribuire l'immagine nell'hub docker.  In caso di esito positivo, viene visualizzata la schermata di **pubblicazione** con l'URL dell'immagine del repository, il tag dell'immagine, il repository e la configurazione della build, ad esempio **Release**.
 
@@ -52,9 +52,9 @@ Se non si dispone di un repository Docker Hub, crearne uno nell' [Hub Docker](ht
 
 Eseguire la pubblicazione in [azure container Registry](/azure/container-registry/) attenendosi alla procedura illustrata in [distribuire in Azure container Registry](hosting-web-apps-in-docker.md).
 
-Configurare l'integrazione e il recapito continui con [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops).
+Configurare l'integrazione e il recapito continui con [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Distribuisci nel servizio app Azure](deploy-app-service.md) 
  [Strumenti contenitore di Visual Studio](./index.yml).

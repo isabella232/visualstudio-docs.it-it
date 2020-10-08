@@ -1,5 +1,5 @@
 ---
-title: Funzionamento del Bridge per Kubernetes
+title: Come funziona Bridge per Kubernetes
 ms.technology: vs-azure
 ms.date: 06/02/2020
 ms.topic: conceptual
@@ -9,14 +9,14 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: fbb3cfe6453c68079cb4b4cc6b57f8494f45c0cc
-ms.sourcegitcommit: f9179a3a6d74fbd871f62b72491e70b9e7b05637
+ms.openlocfilehash: a224135e366c7a266defa525772dadf445208f3b
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90845865"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829885"
 ---
-# <a name="how-bridge-to-kubernetes-works"></a>Funzionamento del Bridge per Kubernetes
+# <a name="how-bridge-to-kubernetes-works"></a>Come funziona Bridge per Kubernetes
 
 Bridge to Kubernetes consente di eseguire ed eseguire il debug del codice nel computer di sviluppo, mentre è ancora connesso al cluster Kubernetes con il resto dell'applicazione o dei servizi. Ad esempio, se si dispone di un'architettura di microservizi di grandi dimensioni con molti servizi e database interdipendenti, la replica di tali dipendenze nel computer di sviluppo può essere difficile. Inoltre, la compilazione e la distribuzione di codice nel cluster Kubernetes per ogni modifica del codice durante lo sviluppo a ciclo interno possono essere lenti, dispendiose in termini di tempo e difficili da usare con un debugger.
 
@@ -40,7 +40,7 @@ Quando il Bridge per Kubernetes stabilisce una connessione al cluster,:
 * Sostituisce il contenitore nel Pod nel cluster con un contenitore agente remoto che reindirizza il traffico al computer di sviluppo.
 * Esegue [kubectl porta-in avanti][kubectl-port-forward] nel computer di sviluppo per l'invio del traffico dal computer di sviluppo all'agente remoto in esecuzione nel cluster.
 * Raccoglie le informazioni sull'ambiente dal cluster utilizzando l'agente remoto. Queste informazioni sull'ambiente includono variabili di ambiente, servizi visibili, montaggi di volumi e montaggi di segreti.
-* Configura l'ambiente in Visual Studio in modo che il servizio nel computer di sviluppo possa accedere alle stesse variabili come se fosse in esecuzione nel cluster.  
+* Configura l'ambiente in Visual Studio in modo che il servizio nel computer di sviluppo possa accedere alle stesse variabili come se fosse in esecuzione nel cluster.
 * Aggiorna il file degli host per eseguire il mapping dei servizi nel cluster agli indirizzi IP locali nel computer di sviluppo. Queste voci di file host consentono al codice in esecuzione nel computer di sviluppo di effettuare richieste ad altri servizi in esecuzione nel cluster. Per aggiornare il file degli host, Bridge to Kubernetes chiederà l'accesso come amministratore nel computer di sviluppo quando ci si connette al cluster.
 * Avvia l'esecuzione e il debug del codice nel computer di sviluppo. Se necessario, il Bridge per Kubernetes libererà le porte necessarie nel computer di sviluppo arrestando i servizi o i processi che attualmente utilizzano tali porte.
 
@@ -72,7 +72,7 @@ Quando si Abilita l'uso in isolamento, Bridge to Kubernetes esegue le operazioni
 Se Bridge to Kubernetes rileva che Azure Dev Spaces è abilitato nel cluster Kubernetes, viene richiesto di disabilitare Azure Dev Spaces prima di poter usare Bridge per Kubernetes.
 
 Quando viene avviato, gestione routing esegue le operazioni seguenti:
-* Duplica tutti gli ingressi trovati nello spazio dei nomi utilizzando la *GENERATED_NAME* per il sottodominio. 
+* Duplica tutti gli ingressi trovati nello spazio dei nomi utilizzando la *GENERATED_NAME* per il sottodominio.
 * Crea un pod di invio per ogni servizio associato a ingress duplicato con il sottodominio *GENERATED_NAME* .
 * Crea un pod di invio aggiuntivo per il servizio su cui si sta lavorando in isolamento. Ciò consente di indirizzare le richieste con il sottodominio al computer di sviluppo.
 * Configura le regole di routing per ogni pod di invio per gestire il routing per i servizi con il sottodominio.
@@ -92,7 +92,7 @@ Quando nel cluster viene ricevuta una richiesta senza il sottodominio *GENERATED
 > [!IMPORTANT]
 > Ogni servizio del cluster deve inoltrare l'intestazione *kubernetes-route-As = GENERATED_NAME* quando si effettuano richieste aggiuntive. Ad esempio, quando *servicea* riceve una richiesta, effettua una richiesta a *serviceB* prima di restituire una risposta. In questo esempio, *servicea* deve inoltrare l'intestazione *kubernetes-route-As = GENERATED_NAME* nella richiesta a *serviceB*. Alcuni linguaggi, ad esempio [ASP.NET][asp-net-header], possono avere metodi per la gestione della propagazione dell'intestazione.
 
-Quando si esegue la disconnessione dal cluster, per impostazione predefinita Bridge to Kubernetes rimuoverà tutti i pod di invio e il servizio duplicato. 
+Quando si esegue la disconnessione dal cluster, per impostazione predefinita Bridge to Kubernetes rimuoverà tutti i pod di invio e il servizio duplicato.
 
 > [!NOTE]
 > Il servizio e la distribuzione di gestione routing rimarranno in esecuzione nello spazio dei nomi. Per rimuovere la distribuzione e il servizio, eseguire i comandi seguenti per lo spazio dei nomi.
@@ -126,7 +126,7 @@ Per iniziare a usare Bridge per Kubernetes per connettersi al computer di svilup
 [asp-net-header]: https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderPropagation/
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
 [azds-tmp-dir]: /azure/dev-spaces/troubleshooting#before-you-begin
-[azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest
+[azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true
 [bridge-to-kubernetes-vs]: bridge-to-kubernetes.md
 [kubectl-port-forward]: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#port-forward
 [visual-studio]: https://visualstudio.microsoft.com/downloads/

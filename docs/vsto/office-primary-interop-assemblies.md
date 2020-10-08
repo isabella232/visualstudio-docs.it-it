@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4677cd2d178781d79b11ac3b1010a76fd6fcf00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25dad2d4601974e70e80377e634d05b60523318e
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985719"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830760"
 ---
 # <a name="office-primary-interop-assemblies"></a>assembly di interoperabilità primari di Office
 
@@ -100,15 +100,15 @@ Nella tabella seguente sono elencati gli assembly di interoperabilità primari d
 |-------------------------------------|-----------------------------------|
 |Libreria oggetti di Microsoft Access 14.0<br /><br /> Libreria oggetti di Microsoft Access 15.0|Microsoft.Office.Interop.Access.dll|
 |Libreria oggetti del modulo di gestione di database di Access di Microsoft Office 14.0<br /><br /> Libreria oggetti del modulo di gestione di database di Access di Microsoft Office 15.0|Microsoft.Office.Interop.Access.Dao.dll|
-|Libreria oggetti di Microsoft Excel 14.0<br /><br /> Libreria oggetti di Microsoft Excel 15.0|[Microsoft.Office.Interop.Excel.dll](/dotnet/api/microsoft.office.interop.excel?view=excel-pia)|
+|Libreria oggetti di Microsoft Excel 14.0<br /><br /> Libreria oggetti di Microsoft Excel 15.0|[Microsoft.Office.Interop.Excel.dll](/dotnet/api/microsoft.office.interop.excel?view=excel-pia&preserve-view=true)|
 |Libreria oggetti di Microsoft Graph 14.0 (usata da PowerPoint, Access e Word per i grafici)<br /><br /> Libreria oggetti di Microsoft Graph 15.0|Microsoft.Office.Interop.Graph.dll|
-|Libreria dei tipi Microsoft InfoPath 2.0 (solo per InfoPath 2007)|[Microsoft.Office.Interop.InfoPath.dll](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|
+|Libreria dei tipi Microsoft InfoPath 2.0 (solo per InfoPath 2007)|[Microsoft.Office.Interop.InfoPath.dll](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form&preserve-view=true)|
 |Assembly di interoperabilità XML di Microsoft InfoPath (solo per InfoPath 2007)|Microsoft.Office.Interop.InfoPath.Xml.dll|
 |Libreria oggetti Microsoft Office 14.0 (funzionalità condivisa di Office)<br /><br /> Libreria oggetti Microsoft Office 15.0 (funzionalità condivisa di Office)|office.dll|
 |Microsoft Office Outlook - Controllo visualizzazione (può essere usato in applicazioni e pagine Web per accedere alla cartella Posta in arrivo)|Microsoft.Office.Interop.OutlookViewCtl.dll|
-|Libreria oggetti di Microsoft Outlook 14.0<br /><br /> Libreria oggetti di Microsoft Outlook 15.0|[Microsoft.Office.Interop.Outlook.dll](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|
+|Libreria oggetti di Microsoft Outlook 14.0<br /><br /> Libreria oggetti di Microsoft Outlook 15.0|[Microsoft.Office.Interop.Outlook.dll](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia&preserve-view=true)|
 |Libreria oggetti di Microsoft PowerPoint 14.0<br /><br /> Libreria oggetti di Microsoft PowerPoint 15.0|Microsoft.Office.Interop.PowerPoint.dll|
-|Libreria oggetti di Microsoft Project 14.0<br /><br /> Libreria oggetti di Microsoft Project 15.0|[Microsoft.Office.Interop.MSProject.dll](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server)|
+|Libreria oggetti di Microsoft Project 14.0<br /><br /> Libreria oggetti di Microsoft Project 15.0|[Microsoft.Office.Interop.MSProject.dll](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server&preserve-view=true)|
 |Libreria oggetti di Microsoft Publisher 14.0<br /><br /> Libreria oggetti di Microsoft Publisher 15.0|Microsoft.Office.Interop.Publisher.dll|
 |Libreria riferimenti a oggetti Web di Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesigner.dll|
 |Libreria riferimenti a oggetti pagina di Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesignerPage.dll|
@@ -116,7 +116,7 @@ Nella tabella seguente sono elencati gli assembly di interoperabilità primari d
 |Libreria dei tipi Microsoft Visio 14.0<br /><br /> Libreria dei tipi Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.dll|
 |Libreria dei tipi Salva come pagina Web Microsoft Visio 14.0<br /><br /> Libreria dei tipi Salva come pagina Web Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|
 |Libreria dei tipi controlli disegno di Microsoft Visio 14.0<br /><br /> Libreria dei tipi controlli disegno di Microsoft Visio 15.0|Microsoft.Office.Interop.VisOcx.dll|
-|Libreria oggetti di Microsoft Word 14.0<br /><br /> Libreria oggetti di Microsoft Word 15.0|[Microsoft.Office.Interop.Word.dll](/dotnet/api/microsoft.office.interop.word?view=word-pia)|
+|Libreria oggetti di Microsoft Word 14.0<br /><br /> Libreria oggetti di Microsoft Word 15.0|[Microsoft.Office.Interop.Word.dll](/dotnet/api/microsoft.office.interop.word?view=word-pia&preserve-view=true)|
 |Microsoft Visual Basic, Applications Edition Extensibility 5.3|Microsoft.Vbe.Interop.dll|
 
 ### <a name="binding-redirect-assemblies"></a>Assembly di reindirizzamento di associazione
