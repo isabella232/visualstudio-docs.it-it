@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7671d336e3c4f86cae8b6bba7fe1b35443aa0632
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 102b6d4284958b80607e991c998f274c6e0e46bf
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005117"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862848"
 ---
 # <a name="nuget-restore"></a>nuget-restore
 
-Lo `nuget-restore` strumento Ripristina le dipendenze e gli strumenti specifici del progetto specificati nel file di progetto. Per altre informazioni sul ripristino di NuGet, vedere [qui](https://docs.microsoft.com/nuget/reference/cli-reference/cli-ref-restore).
+Lo `nuget-restore` strumento Ripristina le dipendenze e gli strumenti specifici del progetto specificati nel file di progetto. Per altre informazioni sul ripristino di NuGet, vedere [qui](/nuget/reference/cli-reference/cli-ref-restore).
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 

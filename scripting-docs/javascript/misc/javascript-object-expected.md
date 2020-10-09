@@ -14,12 +14,12 @@ ms.assetid: cc7cc32b-e444-4afa-9be1-802c83fdf5ae
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6151825391fb01a027f67cb66568eb6b2edfc44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 754285b22f0da6f45d63f86f774d24279aeb7f22
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816813"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862551"
 ---
 # <a name="javascript-object-expected"></a>Previsto oggetto JavaScript
 Si è tentato di passare un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] oggetto non a una funzione predefinita che prevede un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] oggetto. Diverse funzioni predefinite richiedono oggetti definiti in, a [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] differenza degli oggetti definiti dall'host o di un componente esterno come un controllo.  
@@ -29,5 +29,5 @@ Si è tentato di passare un [!INCLUDE[javascript](../../javascript/includes/java
 - Verificare che l'oggetto passato come parametro sia del tipo corretto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Oggetti e matrici](../../javascript/objects-and-arrays-javascript.md)   
- [Utilizzo di matrici](../../javascript/advanced/using-arrays-javascript.md)
+ [Oggetti e matrici](https://developer.mozilla.org/docs/Learn/JavaScript/Objects)   
+ [Utilizzo di matrici](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

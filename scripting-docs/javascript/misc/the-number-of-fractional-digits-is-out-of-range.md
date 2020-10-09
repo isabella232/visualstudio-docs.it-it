@@ -14,12 +14,12 @@ ms.assetid: dbe05d7d-fcf6-4823-9c61-4b814d1ad3c4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b0eb1d7a53614f48daaf6459aaadee594b6fa11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ede65345bdaab22b26274323ad08779313d186e
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816176"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862733"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>Il numero delle cifre frazionarie non è compreso nell'intervallo
 Si è provato a passare un argomento non valido al **numero di funzione. Prototype. Toesponenziale**. L'argomento della funzione **Toesponenziale ()** deve essere compreso tra 0 e 20 (inclusi).  
@@ -29,4 +29,4 @@ Si è provato a passare un argomento non valido al **numero di funzione. Prototy
 - Verificare che l'argomento di **Toesponenziale ()** non sia troppo grande o troppo piccolo.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Metodo toExponential (Number)](../../javascript/reference/toexponential-method-number-javascript.md)
+ [Metodo toExponential (Number)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/toexponential)

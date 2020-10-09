@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7c974b5747c38231ff4115aba17a8e3728672851
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 21dd482d100ce87ce942650e27a5dc5a232ddbbb
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005988"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862834"
 ---
 # <a name="vcpkg-install"></a>vcpkg-install
 
 Lo `vcpkg-install` strumento viene usato per acquisire le librerie C/C++, denominate porte, usando [vcpkg](https://github.com/microsoft/vcpkg).
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
@@ -38,7 +38,7 @@ La `input` proprietà deve essere dell'oggetto `name` `vcpkg` da installare o di
 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
-Le opzioni aggiuntive vengono passate direttamente al comando [vcpkg](https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true) e sono documentate nel [repository GitHub vcpkg](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md).
+Le opzioni aggiuntive vengono passate direttamente al comando [vcpkg](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7) e sono documentate nel [repository GitHub vcpkg](https://github.com/microsoft/vcpkg/blob/master/docs/examples/installing-and-using-packages.md).
 
 ### <a name="default-behavior"></a>Comportamento predefinito
 

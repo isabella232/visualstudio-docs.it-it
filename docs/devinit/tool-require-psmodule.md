@@ -11,25 +11,25 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 4e30a333812e2c313f9e35934643bcea03cf054c
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 2fd629934355b2462ae9d397046ef8e063a62fc6
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352235"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862833"
 ---
 # <a name="require-psmodule"></a>require-psmodule
 
-Lo `require-psmodule` strumento viene usato per installare un [modulo di PowerShell](https://docs.microsoft.com/powershell/scripting/developer/module/understanding-a-windows-powershell-module?view=powershell-7&preserve-view=true) dal [PowerShell Gallery](https://www.powershellgallery.com/) tramite [install-module](https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true), in modo che possa essere usato negli script di PowerShell.
+Lo `require-psmodule` strumento viene usato per installare un [modulo di PowerShell](/powershell/scripting/developer/module/understanding-a-windows-powershell-module?preserve-view=true&view=powershell-7) dal [PowerShell Gallery](https://www.powershellgallery.com/) tramite [install-module](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7), in modo che possa essere usato negli script di PowerShell.
 
 > [!TIP] 
-> Dopo l'installazione di un modulo, sarà comunque necessario importarlo in uno script con [Import-Module](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/import-module?view=powershell-7&preserve-view=true).
+> Dopo l'installazione di un modulo, sarà comunque necessario importarlo in uno script con [Import-Module](/powershell/module/microsoft.powershell.core/import-module?preserve-view=true&view=powershell-7).
 
 ## <a name="usage"></a>Uso
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Type   | Obbligatoria | valore                                                                                   |
+| Nome                                             | Tipo   | Obbligatoria | valore                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                                   |
 | [**input**](#input)                              | string | Sì      | Pacchetti da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.                       |
@@ -41,7 +41,7 @@ La `input` proprietà deve essere il `Name` del modulo PowerShell da installare.
 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
-Le opzioni aggiuntive vengono passate direttamente al comando [install-module](https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true) e sono documentate in [Microsoft docs](https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true).
+Le opzioni aggiuntive vengono passate direttamente al comando [install-module](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7) e sono documentate in [Microsoft docs](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7).
 
 ### <a name="default-behavior"></a>Comportamento predefinito
 
@@ -49,11 +49,11 @@ Il comportamento predefinito dello `require-psmodule` strumento è l'errore, com
 
 ## <a name="builtin-options"></a>Opzioni predefinite
 
-Lo `require-psmodule` strumento imposta un numero di `Install-Module` argomenti della riga di comando per garantire che sia `Install-Module` possibile eseguire l'intestazione. Questi argomenti sono elencati di seguito e la relativa documentazione è disponibile in [install-module](https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true).
+Lo `require-psmodule` strumento imposta un numero di `Install-Module` argomenti della riga di comando per garantire che sia `Install-Module` possibile eseguire l'intestazione. Questi argomenti sono elencati di seguito e la relativa documentazione è disponibile in [install-module](/powershell/module/powershellget/install-module?preserve-view=true&view=powershell-7).
 
-| Nome         | Descrizione                                                                                                                                                                                                                                                                                                                                                               |
+| Name         | Descrizione                                                                                                                                                                                                                                                                                                                                                               |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **-Force**   | Installa un modulo ed esegue l'override dei messaggi di avviso relativi ai conflitti di installazione del modulo. Se nel computer esiste già un modulo con lo stesso nome, Force consente l'installazione di più versioni. Sovrascriverà il modulo se è presente un modulo esistente con lo stesso nome e la stessa versione. Force e AllowClobber possono essere usati insieme in un comando install-module. |
+| **-Force**   | Installa un modulo ed esegue l'override dei messaggi di avviso relativi ai conflitti di installazione del modulo. Se nel computer esiste già un modulo con lo stesso nome, Force consente l'installazione di più versioni. Sovrascriverà il modulo se è presente un modulo esistente con lo stesso nome e la stessa versione. Force e AllowClobber possono essere usati insieme in un comando Install-Module. |
 | **-WhatIf**  | Il flag-WhatIf viene aggiunto quando viene passata l'esecuzione a secco per il `devinit` comando.                                                                                                                                                                                                                                                                                                       |
 | **-Verbose** | Il flag-Verbose viene aggiunto quando viene passato verbose per il `devinit` comando.                                                                                                                                                                                                                                                                                                      |
 

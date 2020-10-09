@@ -14,12 +14,12 @@ ms.assetid: a94100f4-6ee5-4759-b635-9d309e47111e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fdce6a86665b942098e4542dc237bc1ef22ad8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b49b5cfe7076a4a9504500a63f4d47d2f54bcc1a
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815513"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862792"
 ---
 # <a name="default-can-only-appear-once-in-a-switch-statement"></a>'default' può apparire una sola volta in un'istruzione 'switch'
 Si è provato a usare l'istruzione **predefinita** più di una volta all'interno di un'istruzione switch. Il case predefinito è sempre l'ultima istruzione case in un'istruzione switch, ovvero il caso.  
@@ -29,6 +29,6 @@ Si è provato a usare l'istruzione **predefinita** più di una volta all'interno
 - Rimuovere tutte le istruzioni case **predefinite** aggiuntive dall' `switch` istruzione (usare al massimo un'istruzione case predefinita nell'istruzione switch).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Switch (istruzione)](../../javascript/reference/switch-statement-javascript.md)   
- [Controllo del flusso di programma](../../javascript/controlling-program-flow-javascript.md)   
- [Parole riservate in JavaScript](../../javascript/reference/javascript-reserved-words.md)
+ [Switch (istruzione)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/switch)   
+ [Controllo del flusso di programma](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)   
+ [Parole riservate in JavaScript](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar)

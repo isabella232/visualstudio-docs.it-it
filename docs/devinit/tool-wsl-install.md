@@ -11,20 +11,20 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1a52027c060917e8c5f692f472427ba5d980b3bb
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 950ca7f1e9c43123b206893dbc6a07da7c3743ec
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005057"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862860"
 ---
 # <a name="wsl-install"></a>wsl-install
 
-Lo `wsl-install` strumento viene usato per installare le distribuzioni di Linux per il [sottosistema Windows per Linux](https://docs.microsoft.com/windows/wsl/) (WSL).
+Lo `wsl-install` strumento viene usato per installare le distribuzioni di Linux per il [sottosistema Windows per Linux](/windows/wsl/) (WSL).
 
 Lo `wsl-install` strumento richiede che WSL 2 sia già abilitato in Windows. Se per qualche motivo WSL2 non è abilitato, è possibile abilitare WSL2 usando lo strumento [WindowsFeature-Enable](tool-windowsfeature-enable.md) e il nome della funzionalità `Microsoft-Windows-Subsystem-Linux` .
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
