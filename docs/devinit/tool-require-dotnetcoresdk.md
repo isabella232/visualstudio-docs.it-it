@@ -11,22 +11,22 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: c632378ff15e9b52e7145821f2e16d782b0326ac
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 1a85268eb71ece1f06dc8d71d018d16206902130
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352294"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860829"
 ---
 # <a name="require-dotnetcoresdk"></a>require-dotnetcoresdk
 
-Lo `require-dotnetcoresdk` strumento viene usato per installare il [.NET Core SDK](https://dotnet.microsoft.com/) e il runtime condiviso tramite lo script [DotNet-install](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) .
+Lo `require-dotnetcoresdk` strumento viene usato per installare il [.NET Core SDK](https://dotnet.microsoft.com/) e il runtime condiviso tramite lo script [DotNet-install](/dotnet/core/tools/dotnet-install-script) .
 
 ## <a name="usage"></a>Uso
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Type   | Obbligatoria | valore                                                                               |
+| Nome                                             | Tipo   | Obbligatoria | valore                                                                               |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                               |
 | [**input**](#input)                              | stringa | No       | Versione del .NET Core SDK da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito. |
@@ -38,14 +38,14 @@ La `input` proprietà viene utilizzata per specificare la versione di .NET Core 
 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
-Altre opzioni di configurazione possono essere passate come valore di `additionalOptions` . Questi argomenti sono un passthrough diretto per gli argomenti usati nello script [DotNet-install](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) . Per ulteriori informazioni sui parametri disponibili, vedere la [documentazione](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) per lo script [DotNet-install](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) . Quando `additionalOptions` si usa, assicurarsi di usare i nomi e il formato degli argomenti di PowerShell.
+Altre opzioni di configurazione possono essere passate come valore di `additionalOptions` . Questi argomenti sono un passthrough diretto per gli argomenti usati nello script [DotNet-install](/dotnet/core/tools/dotnet-install-script) . Per ulteriori informazioni sui parametri disponibili, vedere la [documentazione](/dotnet/core/tools/dotnet-install-script) per lo script [DotNet-install](/dotnet/core/tools/dotnet-install-script) . Quando `additionalOptions` si usa, assicurarsi di usare i nomi e il formato degli argomenti di PowerShell.
 
 > [!NOTE]
 > Qualsiasi valore aggiuntivo a un argomento che include uno spazio deve includere una coppia aggiuntiva di virgolette precedute (usando la barra rovesciata). Un esempio può essere visualizzato nell' [esempio di utilizzo](#example-usage) usando `-InstallDir` .
 
 ### <a name="default-behavior"></a>Comportamento predefinito
 
-Il comportamento predefinito dello `require-dotnetcoresdk` strumento prevede l'installazione della versione della .NET Core SDK specificata in un `global.json` file [(documentazione)](https://docs.microsoft.com/dotnet/core/tools/global-json?tabs=netcore3x) nella directory di lavoro corrente. Se non `global.json` viene trovato alcun file, `require-dotnetcoresdk` installerà la versione corrente più recente del .NET Core SDK e il runtime condiviso.
+Il comportamento predefinito dello `require-dotnetcoresdk` strumento prevede l'installazione della versione della .NET Core SDK specificata in un `global.json` file [(documentazione)](/dotnet/core/tools/global-json?tabs=netcore3x) nella directory di lavoro corrente. Se non `global.json` viene trovato alcun file, `require-dotnetcoresdk` installerà la versione corrente più recente del .NET Core SDK e il runtime condiviso.
 
 ## <a name="example-usage"></a>Esempio di utilizzo
 

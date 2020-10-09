@@ -14,12 +14,12 @@ ms.assetid: 8da7485f-7050-4559-97c3-ccfa782cdff3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efac49ccbf3c94c5b7d136ddd965b4a45a304adb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc791e97fcecf357177d140a3c30ee8c66db377b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816644"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861967"
 ---
 # <a name="expected-constant"></a>Prevista costante
 Si è provato a usare una variabile (compilazione non condizionale) in un'istruzione di test di compilazione condizionale. Le istruzioni di test di compilazione condizionale devono restituire una costante.  
@@ -31,5 +31,5 @@ Si è provato a usare una variabile (compilazione non condizionale) in un'istruz
 - Sostituire la variabile con una variabile di compilazione condizionale.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Compilazione condizionale](../../javascript/advanced/conditional-compilation-javascript.md)   
- [Variabili di compilazione condizionale](../../javascript/advanced/conditional-compilation-variables-javascript.md)
+ [Compilazione condizionale](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/121hztk3(v=vs.84))   
+ [Variabili di compilazione condizionale](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/s59bkzce(v=vs.84))

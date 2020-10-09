@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f382e8d20f3aa623ea241702e4795854e12f9a
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 511874b5dc7d7c45a1584e95e004a53088f8ea09
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100774"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861814"
 ---
 # <a name="first-look-at-profiling-tools"></a>Presentazione degli strumenti di profilatura
 
@@ -42,8 +42,8 @@ Durante il debug è possibile usare la finestra **Strumenti di diagnostica** per
 La finestra di **strumenti di diagnostica** è un modo comune per profilare le app, ma per le build di rilascio è possibile anche eseguire un'analisi post-mortem dell'app. Per altre informazioni sui diversi approcci, vedere [eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Per visualizzare il supporto dello strumento di profilatura per diversi tipi di app, vedere [quale strumento si deve usare?](#which-tool-should-i-use)
 
 Gli strumenti disponibili nella finestra Strumenti di diagnostica o durante una sessione di debug includono:
-- [Utilizzo CPU](../profiling/beginners-guide-to-performance-profiling.md)
-- [Utilizzo memoria](../profiling/memory-usage.md)
+- [Utilizzo della CPU](../profiling/beginners-guide-to-performance-profiling.md)
+- [Utilizzo della memoria](../profiling/memory-usage.md)
 - [PerfTips](../profiling/perftips.md)
 
 > [!NOTE]
@@ -61,9 +61,9 @@ Per ulteriori informazioni sull'utilizzo dello strumento utilizzo CPU o utilizzo
 
 Gli strumenti disponibili in Profiler prestazioni includono:
 
-- [Utilizzo CPU](../profiling/cpu-usage.md)
+- [Utilizzo della CPU](../profiling/cpu-usage.md)
 - [Utilizzo della memoria per il codice .NET](../profiling/dotnet-alloc-tool.md)
-- [Utilizzo memoria](#analyze-memory-usage)
+- [Utilizzo della memoria](#analyze-memory-usage)
 - [Strumento asincrono .NET](../profiling/analyze-async.md)
 - [Strumento database](../profiling/analyze-database.md)
 - [Utilizzo GPU](../profiling/gpu-usage.md)
@@ -226,12 +226,12 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 |[Utilizzo CPU](../profiling/beginners-guide-to-performance-profiling.md)|sì|sì|sì|
 |[Utilizzo memoria](../profiling/memory-usage.md)|sì|sì|sì|
 |[Allocazione oggetti .NET](../profiling/dotnet-alloc-tool.md)|Sì (solo .NET)|sì|sì|
-|[Utilizzo GPU](/visualstudio/debugger/graphics/gpu-usage)|sì|sì|No|
-|[Sequenza temporale applicazione](../profiling/application-timeline.md)|Sì (XAML)|sì|No|
+|[Utilizzo GPU](./gpu-usage.md)|sì|sì|no|
+|[Sequenza temporale applicazione](../profiling/application-timeline.md)|Sì (XAML)|sì|no|
 |[Visualizzatore eventi](../profiling/events-viewer.md)|sì|sì|sì|
 |[.NET Async](../profiling/analyze-async.md)|Sì (solo .NET)|sì|sì|
-|[Database](../profiling/analyze-database.md)|Sì (solo .NET Core)|No|Sì (solo ASP.NET Core)|
-|[Esplora prestazioni](#analyze-performance-legacy-tools)|No|No|No|
+|[Database](../profiling/analyze-database.md)|Sì (solo .NET Core)|no|Sì (solo ASP.NET Core)|
+|[Esplora prestazioni](#analyze-performance-legacy-tools)|no|no|no|
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|
 ::: moniker-end
 
@@ -240,14 +240,14 @@ Nella tabella seguente sono riportati i diversi strumenti offerti da Visual Stud
 |----------------------|---------------------|-------------|-------------|
 |[Utilizzo CPU](../profiling/beginners-guide-to-performance-profiling.md)|sì|sì|sì|
 |[Utilizzo memoria](../profiling/memory-usage.md)|sì|sì|sì|
-|[Utilizzo GPU](/visualstudio/debugger/graphics/gpu-usage)|sì|sì|No|
-|[Sequenza temporale applicazione](../profiling/application-timeline.md)|Sì (XAML)|sì|No|
+|[Utilizzo GPU](./gpu-usage.md)|sì|sì|no|
+|[Sequenza temporale applicazione](../profiling/application-timeline.md)|Sì (XAML)|sì|no|
 |[PerfTips](../profiling/perftips.md)|sì|Sì per XAML, no per HTML|sì|
-|[Esplora prestazioni](../profiling/performance-explorer.md)|sì|No|sì|
+|[Esplora prestazioni](../profiling/performance-explorer.md)|sì|no|sì|
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|
-|[Utilizzo rete](../profiling/network-usage.md)|No|sì|No|
-|[Velocità di risposta interfaccia utente HTML](../profiling/html-ui-responsiveness.md)|No|Sì per HTML, no per XAML|No|
-|[Memoria JavaScript](../profiling/javascript-memory.md)|No|Sì per HTML, no per XAML|No|
+|[Utilizzo rete](../profiling/network-usage.md)|no|sì|no|
+|[Velocità di risposta interfaccia utente HTML](../profiling/html-ui-responsiveness.md)|no|Sì per HTML, no per XAML|no|
+|[Memoria JavaScript](../profiling/javascript-memory.md)|no|Sì per HTML, no per XAML|no|
 ::: moniker-end
 
 

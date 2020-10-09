@@ -14,12 +14,12 @@ ms.assetid: d4286315-814b-4966-b4c4-1ee19d796eff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16f675cb62c0c3fd5f3aba7ba6190427fe101353
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8453b05d2d09537f381bd2947dccb6b0a19a6263
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814803"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861837"
 ---
 # <a name="unterminated-comment"></a>Commento senza terminazione
 È stato avviato un blocco di commento a più righe, ma non è stato terminato correttamente. I commenti a più righe iniziano con una combinazione "/*" e terminano con la \* combinazione "/" inversa. Di seguito è riportato un esempio:  
@@ -34,4 +34,4 @@ This is another part of the same comment.*/
 - Assicurarsi di terminare i commenti a più righe con "*/".  
   
 ## <a name="see-also"></a>Vedere anche  
- [Istruzioni per commenti](../../javascript/reference/comment-statements-javascript.md)
+ [Istruzioni per commenti](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar)

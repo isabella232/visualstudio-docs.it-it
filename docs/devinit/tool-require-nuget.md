@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ef5de2d8358dae0f5f29b815cfa2dca26a3f1cef
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 401a14930c5405ebb05827768a7571e7aee1181e
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005176"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860710"
 ---
 # <a name="require-nuget"></a>require-nuget
 
-Lo strumento per scaricare l'interfaccia della riga di comando di `require-nuget` NuGet e aggiunge alla variabile Path. L'interfaccia della riga di comando di NuGet offre l'estensione completa della funzionalità NuGet per installare, creare, pubblicare e gestire i pacchetti senza apportare modifiche ai file di progetto. Scopri di più [sull'interfaccia della](https://docs.microsoft.com/nuget/reference/nuget-exe-cli-reference)riga di comando di NuGet.
+Lo strumento per scaricare l'interfaccia della riga di comando di `require-nuget` NuGet e aggiunge alla variabile Path. L'interfaccia della riga di comando di NuGet offre l'estensione completa della funzionalità NuGet per installare, creare, pubblicare e gestire i pacchetti senza apportare modifiche ai file di progetto. Scopri di più [sull'interfaccia della](/nuget/reference/nuget-exe-cli-reference)riga di comando di NuGet.
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 

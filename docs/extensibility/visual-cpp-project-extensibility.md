@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10869ad290b0b8df614d25d792d0b3ed1e88eb17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9427895644686c5c3b50311c8a3ab3ee036a6f4
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825559"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862458"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Estendibilità del sistema di progetto C++ di Visual Studio e integrazione del set di strumenti
 
@@ -435,7 +435,7 @@ Ad esempio, per generare automaticamente file con estensione cpp o h da file XAM
 </Target>
 ```
 
-Per usare `Task.HostObject` per ottenere il contenuto non salvato dei file di origine, le destinazioni e le attività devono essere registrate come [MsbuildHostObjects](/dotnet/api/microsoft.visualstudio.shell.interop.ivsmsbuildhostobject?view=visualstudiosdk-2017) per i progetti specificati in un pkgdef:
+Per usare `Task.HostObject` per ottenere il contenuto non salvato dei file di origine, le destinazioni e le attività devono essere registrate come [MsbuildHostObjects](/dotnet/api/microsoft.visualstudio.shell.interop.ivsmsbuildhostobject?view=visualstudiosdk-2017&preserve-view=true) per i progetti specificati in un pkgdef:
 
 ```reg
 \[$RootKey$\\Projects\\{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}\\MSBuildHostObjects\]

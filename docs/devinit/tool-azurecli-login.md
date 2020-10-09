@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 74c8144d9442c786bddeae78024fc4cf0d1e0d4a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: eb83c6a1a2944518fbfa541b03bc14f701f164dc
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006043"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862270"
 ---
 # <a name="azurecli-login"></a>azurecli-login
 
-Lo `azurecli-login` strumento viene usato per accedere Azure Active Directory tramite l' [interfaccia](https://docs.microsoft.com/cli/azure/authenticate-azure-cli?view=azure-cli-latest&preserve-view=true)della riga di comando di Azure. Questo strumento usa il comando dell'interfaccia della riga di comando di Azure: `az login --use-device-code` per completare l'accesso, è necessario seguire le istruzioni stampate nella console.
+Lo `azurecli-login` strumento viene usato per accedere Azure Active Directory tramite l' [interfaccia](/cli/azure/authenticate-azure-cli?preserve-view=true&view=azure-cli-latest)della riga di comando di Azure. Questo strumento usa il comando dell'interfaccia della riga di comando di Azure: `az login --use-device-code` per completare l'accesso, è necessario seguire le istruzioni stampate nella console.
 
-## <a name="usage"></a>Utilizzo
+## <a name="usage"></a>Uso
 
 Se entrambe le proprietà sono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 

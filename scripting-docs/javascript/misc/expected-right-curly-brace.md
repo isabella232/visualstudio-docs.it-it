@@ -14,12 +14,12 @@ ms.assetid: dff04495-9a6e-4604-9231-e40433fec152
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b34b44ed0bb1f1848ae37188aa642c6a4d2ce40e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55f91202184561aff5d0865b326415b3910b99b6
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817073"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862127"
 ---
 # <a name="expected-"></a>Previsto '}'
 Non è stata inclusa la parentesi graffa destra che contrassegna la fine del corpo della funzione, del ciclo, del blocco di codice o dell'inizializzatore di oggetto. Un esempio di questo errore è un ciclo **for** con la sola parentesi graffa sinistra che contrassegna il corpo del ciclo.  
@@ -29,5 +29,5 @@ Non è stata inclusa la parentesi graffa destra che contrassegna la fine del cor
 - Aggiungere la parentesi graffa destra che contrassegna la fine della funzione, del ciclo, del blocco o dell'inizializzatore di oggetto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Oggetto Function](../../javascript/reference/function-object-javascript.md)   
- [Controllo del flusso di programma](../../javascript/controlling-program-flow-javascript.md)
+ [Oggetto Function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
+ [Controllo del flusso di programma](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)

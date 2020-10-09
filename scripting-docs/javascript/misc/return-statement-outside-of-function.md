@@ -14,12 +14,12 @@ ms.assetid: 03568f9f-5f4f-4a10-a738-9a73f3832b9e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32eadcf5ae88dbe64c8ccdb3effbb85bc79f9b32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ec17d9e421d06736a236e26dd5a1200a5564e7d
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816735"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862045"
 ---
 # <a name="return-statement-outside-of-function"></a>Istruzione 'return' esterna alla funzione
 È stata usata un' `return` istruzione nell'ambito globale del codice. L' `return` istruzione deve essere presente solo all'interno del corpo di una funzione.  
@@ -42,6 +42,6 @@ return [ expression ];
 - Rimuovere l' `return` istruzione dal corpo principale del codice (ambito globale).  
   
 ## <a name="see-also"></a>Vedere anche  
- [return (istruzione)](../../javascript/reference/return-statement-javascript.md)   
- [Oggetto Function](../../javascript/reference/function-object-javascript.md)   
- [Proprietà caller (Function)](../../javascript/reference/caller-property-function-javascript.md)
+ [return (istruzione)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/return)   
+ [Oggetto Function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
+ [Proprietà caller (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/caller)

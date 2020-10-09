@@ -14,12 +14,12 @@ ms.assetid: f1cd947f-eba2-411e-8e84-8ca86f608643
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d9950573e7bbeefe3594d77df2ae41c12f77ed3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47411a6376cd843b3a12cf74ed1800775b98cd83
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816684"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861960"
 ---
 # <a name="expected-catch"></a>Previsto 'catch'
 È stato usato il blocco **try** per la gestione delle eccezioni, ma non è stata scritta l'istruzione **catch** associata. Il meccanismo di gestione delle eccezioni richiede che il codice che può avere esito negativo, insieme al codice che non deve essere eseguito se si verifica un'eccezione, venga incapsulato all'interno di un blocco **try** . Le eccezioni vengono generate all'interno del blocco **try** utilizzando l'istruzione **throw** e rilevate all'esterno del blocco **try** con una o più istruzioni **catch** .  
@@ -31,5 +31,5 @@ ms.locfileid: "85816684"
 - Provare a usare un blocco **finally** anziché un blocco **catch** .  
   
 ## <a name="see-also"></a>Vedere anche  
- [prova... rileva... finally (istruzione)](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
- [Error (oggetto)](../../javascript/reference/error-object-javascript.md)
+ [prova... rileva... finally (istruzione)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/try...catch)   
+ [Error (oggetto)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error)

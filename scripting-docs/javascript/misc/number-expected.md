@@ -14,12 +14,12 @@ ms.assetid: b272f51a-97c2-4398-8b46-9cc49a5c0bd6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8148e18fba3fca24cc6615f4f345c4883306ca3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09a49fb0cbff746f11606e4cef7417a5c9a68d0b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816436"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862509"
 ---
 # <a name="number-expected"></a>Previsto numero
 Si è provato a richiamare il metodo **Number. Prototype. ToString** o **Number. Prototype. valueOf** su un oggetto di un tipo diverso da **Number**. L'oggetto di questo tipo di chiamata deve essere di tipo **Number**.  
@@ -29,5 +29,5 @@ Si è provato a richiamare il metodo **Number. Prototype. ToString** o **Number.
 - Richiamare solo i metodi **Number. Prototype. ToString** o **Number. Prototype. valueOf** su oggetti di tipo **Number**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Oggetto Number](../../javascript/reference/number-object-javascript.md)   
- [Proprietà number (Error)](../../javascript/reference/number-property-error-javascript.md)
+ [Oggetto Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)   
+ [Proprietà number (Error)](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/Error.number)

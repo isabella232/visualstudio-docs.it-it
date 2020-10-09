@@ -12,12 +12,12 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: c00c37cc685cf6f0bd48ddf481a7c79d8ddcf77b
-ms.sourcegitcommit: 76845bf28da6d994666d5cdddfc5a2711d9a448d
+ms.openlocfilehash: 6ea81aab75b0499abb427d98e230b1f3909cef02
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91544800"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862262"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -27,7 +27,7 @@ ms.locfileid: "91544800"
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2019.
 
-| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 16.8.0 | Anteprima 3,2 | 29 settembre 2020 | 16.8.30524.135 |
 | 16.7.5 | Versione | 29 settembre 2020 |  16.7.30523.141 |
@@ -178,7 +178,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
-| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.27 | Versione | 8 settembre 2020 | 15.9.28307.1259 |
 | 15.9.26 | Versione | 11 agosto 2020 | 15.9.28307.1234 |
@@ -352,7 +352,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 | 15.0.0 | Versione | 7 marzo 2017 | 15.0.26228.4 |
 
 > [!NOTE]
-> Per altre informazioni sui numeri di build e le date di rilascio per la prossima versione di Visual Studio, vedere la pagina [Numeri di build e date di rilascio di Visual Studio 2019](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019&preserve-view=true).
+> Per altre informazioni sui numeri di build e le date di rilascio per la prossima versione di Visual Studio, vedere la pagina [Numeri di build e date di rilascio di Visual Studio 2019](?preserve-view=true&view=vs-2019).
 
 ::: moniker-end
 

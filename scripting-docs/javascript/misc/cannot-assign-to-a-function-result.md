@@ -14,12 +14,12 @@ ms.assetid: ee8ffb3a-1451-4cb3-99bf-5e9cf8b77d79
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84ec3426c80da0578dda7cb99e9160b81e31ab87
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6aab43ec6a547982cf670d64c8ad8b752160839f
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817632"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862340"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>Assegnazione a un risultato di funzione non consentita
 Si è provato a assegnare un valore al risultato di una funzione. Il risultato di una funzione può essere assegnato a una variabile, ma non può essere utilizzato come variabile. Se si desidera assegnare un nuovo valore alla funzione stessa, omettere le parentesi (operatore di chiamata di funzione). Nell'esempio seguente viene illustrata una situazione in cui viene generato questo errore.  
@@ -43,6 +43,6 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
     ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Oggetto Function](../../javascript/reference/function-object-javascript.md)   
- [Scrittura di codice JavaScript](../../javascript/writing-javascript-code.md)   
- [Funzioni](../../javascript/functions-javascript.md)
+ [Oggetto Function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
+ [Scrittura di codice JavaScript](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/JavaScript_basics)   
+ [Funzioni](https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/Functions)
