@@ -7,12 +7,12 @@ ms.assetid: 2c83cd19-2692-4aef-9cd7-b7842639cbce
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 63e64b64b855df6f287dad0fbec363f8b783f6a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34cf5e16f8718f407c1f6c698f3a6e917219e6d8
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85503491"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838220"
 ---
 ## <a name="how-long-does-it-take-for-my-cloud-subscription-to-be-canceled"></a>Quanto tempo è necessario per annullare la sottoscrizione cloud?
 
@@ -22,4 +22,4 @@ Con le sottoscrizioni cloud mensili, gli annullamenti diventano effettivi a part
 
 Per le sottoscrizioni cloud annuali, gli annullamenti diventano effettivi il primo giorno del mese successivo a 12 mesi dall'acquisto originale o a 12 mesi dall'ultimo addebito per il rinnovo annuale. Ad esempio, se si acquista una sottoscrizione cloud annuale di Visual Studio Professional il 3 gennaio 2018, questa rimane attiva fino al 1° febbraio 2019, quando viene rinnovata automaticamente per un altro anno. Se si annulla la sottoscrizione in qualsiasi momento tra tale data e il 1 febbraio 2020, la scadenza sarà il 1 febbraio 2020. Non è previsto alcuno sconto in caso di annullamento di sottoscrizioni cloud annuali prima del termine dell'anno di validità.
 
-Per altre informazioni sulle sottoscrizioni cloud, vedere [Modalità di elaborazione degli addebiti](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq#how-charges-are-processed).
+Per altre informazioni sulle sottoscrizioni cloud, vedere [Modalità di elaborazione degli addebiti](../../../../vscloud-billing-faq.md#how-charges-are-processed).

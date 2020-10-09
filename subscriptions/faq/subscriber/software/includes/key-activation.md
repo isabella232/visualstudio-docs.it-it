@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q2_2
-ms.openlocfilehash: d214130bfdc2832ad540fa6fac274e4f52cced5f
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: e18550018a593c0a3eae0d521148cd240b40f5df
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385900"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838296"
 ---
 ## <a name="how-do-i-activate-the-software-i-just-downloaded-using-product-keys"></a>Qual è la procedura per attivare il software appena scaricato usando i codici Product Key?
 
@@ -25,5 +25,5 @@ L'attivazione non è sempre richiesta per un prodotto. In alcuni casi, un singol
 
 Per altre informazioni su come ottenere e usare i codici Product Key, vedere questi articoli:
 
-- [Panoramica dei codici Product Key](https://docs.microsoft.com/visualstudio/subscriptions/product-keys)
-- [Trovare e richiedere chiavi](https://docs.microsoft.com/visualstudio/subscriptions/find-keys)
+- [Panoramica dei codici Product Key](../../../../product-keys.md)
+- [Trovare e richiedere chiavi](../../../../find-keys.md)

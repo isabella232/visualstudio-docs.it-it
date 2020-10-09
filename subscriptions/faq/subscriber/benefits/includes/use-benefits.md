@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 09/30/2020
 ms.faqid: q3_2
-ms.openlocfilehash: 8dc5e87e5299f735e8c7b21dab1bb7e3afdbc5a7
-ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
+ms.openlocfilehash: 8c0bcb40d775be6184f420cdd79156645333d260
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91644245"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838257"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>Qual è la procedura per usare i vantaggi?
 
@@ -20,7 +20,7 @@ Così come variano i tipi di vantaggi, variano anche i metodi per attivarli e us
 
 Per ogni vantaggio disponibile nel portale per i sottoscrittori sono stati pubblicati articoli con informazioni come le sottoscrizioni che li includono e le procedure per l'attivazione.
 
-Consultare la documentazione per [altre informazioni](https://docs.microsoft.com/visualstudio/subscriptions/whats-new-in-subscriptions) (fare clic su 'Sottoscrizioni' nel riquadro di spostamento a sinistra e scegliere 'Vantaggi').
+Consultare la documentazione per [altre informazioni](../../../../whats-new-in-subscriptions.md) (fare clic su 'Sottoscrizioni' nel riquadro di spostamento a sinistra e scegliere 'Vantaggi').
 
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Come funziona il processo di configurazione di Visual Studio con GitHub Enterprise? 
 
@@ -36,4 +36,4 @@ Quando l'amministratore dell'organizzazione di GitHub invia un invito, si riceve
 
 Dopo aver accettato l'invito per l'organizzazione di GitHub, l'aspetto del riquadro dei vantaggi all'indirizzo <https://my.visualstudio.com/benefits> cambierà da "In sospeso" ad "Attivato" e sarà possibile iniziare a usare GitHub Enterprise. 
 
-[Vedere altri dettagli](https://docs.microsoft.com/visualstudio/subscriptions/access-github.md) sul processo di configurazione di GitHub Enterprise. 
+[Vedere altri dettagli](../../../../access-github.md) sul processo di configurazione di GitHub Enterprise. 
