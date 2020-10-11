@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c374951b4d4875e4e754035ac52afb7f8fc5a2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b75ae05a65ae15e82c45ec0cf43935fb0809160
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286896"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928606"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installare agenti di test e test controller
 
@@ -28,8 +28,8 @@ La tabella seguente illustra i requisiti di sistema per l'installazione dell'age
 
 | Item | Requisiti |
 | ---- | ------------ |
-| **Agent** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard e Datacenter<br />Windows Server 2012 R2 |
-| **Controller** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard e Datacenter<br />Windows Server 2012 R2 |
+| **Agent** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard e Datacenter<br />R2 per Windows Server 2012 |
+| **Controller** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard e Datacenter<br />R2 per Windows Server 2012 |
 | **.NET Framework** | .NET Framework 4.5 |
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Installare il test controller e gli agenti di test
@@ -83,7 +83,7 @@ La tabella seguente visualizza gli scenari supportati da Agents per Visual Studi
 
 | Scenari supportati da Agents per Visual Studio 2013 | Alternativa in TFS e Azure Test Plans |
 | - | - |
-| Flusso di lavoro compilazione, distribuzione e test in Visual Studio | Gli utenti possono usare una [pipeline di compilazione](/azure/devops/pipelines/index?view=vsts) (non una compilazione XAML) per gli scenari di compilazione, distribuzione e test in TFS. |
+| Flusso di lavoro compilazione, distribuzione e test in Visual Studio | Gli utenti possono usare una [pipeline di compilazione](/azure/devops/pipelines/index?view=vsts&preserve-view=true) (non una compilazione XAML) per gli scenari di compilazione, distribuzione e test in TFS. |
 | Test di carico (test delle prestazioni) usando computer remoti in posizioni locali | Per eseguire i test di carico in locale, usare Test Controller e Test Agents 2013 Update 5. |
 | Esecuzione remota di test automatizzati da Microsoft Test Manager (deprecata in Visual Studio 2017) con un ambiente lab | Attualmente non è disponibile nessuna alternativa per questo scenario. È consigliabile usare l'attività Esegui test funzionali nelle definizioni di compilazione e di versione (non in una compilazione XAML) per eseguire i test in modalità remota. |
 | Sviluppatori che eseguono test remoti in Visual Studio | Non più supportata. |

@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: eee21ca84acdcf5bbf774232d8d23ceda954b730
-ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
+ms.openlocfilehash: f253ba9b7e46f809bc107aa2b3e26f635d778770
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91749505"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928554"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Funzionalità supportate di Visual Studio (anteprima)
 
@@ -104,7 +104,7 @@ Non ancora disponibile:
 * Funzionalità di threading: i thread di blocco/sblocco, Rinomina thread e Mostra thread nell'origine non sono supportati.
 * Funzionalità per l'esecuzione di istruzioni aggiuntive: l'esecuzione automatica delle proprietà e degli operatori (.NET Core) e l'esecuzione di istruzioni specifiche non sono supportate. 
 
-## <a name="features"></a>Funzionalità
+## <a name="features"></a>Caratteristiche
 
 Quando si usa Visual Studio connesso a uno spazio dei servizi, si ottengono le stesse funzionalità di accessibilità di quando si lavora localmente.
 

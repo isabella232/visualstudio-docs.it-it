@@ -1,5 +1,6 @@
 ---
 title: Operatori logici nelle espressioni di ricerca (Visualizzatore della guida)
+description: Informazioni su come usare gli operatori logici e gli operatori di ricerca avanzati per perfezionare le espressioni di ricerca in Microsoft Help Viewer.
 ms.custom: SEO-VS-2020
 ms.date: 11/02/2017
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9daceca2540a2da61a46e12a458c012ce7851001
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2bfa869bed2bc4462c050ac77e08665958f60598
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038634"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878930"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Operatori logici e avanzati nelle espressioni di ricerca
 
@@ -67,7 +68,7 @@ Gli operatori di ricerca avanzati consentono di affinare la ricerca di contenuto
 > [!NOTE]
 > L'operatore `code:` trova solo il contenuto contrassegnato con un'etichetta di linguaggio di programmazione, anziché il contenuto contrassegnato in modo generico come codice.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Procedura: Eseguire la ricerca di argomenti](../help-viewer/find-topics.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

@@ -9,16 +9,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 37455c05a010681eac343287abf25aad642328c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 052e2c794ba765573923fba89413e0192c582c15
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286843"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928593"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Usare Azure Test Plans anziché Lab Management per i test automatizzati
 
-Se si usano Microsoft Test Manager e Lab Management per l'esecuzione di test automatizzati o per l'automazione delle operazioni di compilazione/distribuzione/test, questo argomento descrive come ottenere gli stessi risultati usando le funzionalità di [compilazione e versione](/azure/devops/pipelines/index?view=vsts) in Azure Pipelines e Team Foundation Server (TFS).
+Se si usano Microsoft Test Manager e Lab Management per l'esecuzione di test automatizzati o per l'automazione delle operazioni di compilazione/distribuzione/test, questo argomento descrive come ottenere gli stessi risultati usando le funzionalità di [compilazione e versione](/azure/devops/pipelines/index?view=vsts&preserve-view=true) in Azure Pipelines e Team Foundation Server (TFS).
 
 > [!NOTE]
 > Microsoft Test Manager è deprecato in Visual Studio 2017 e rimosso in Visual Studio 2019.
@@ -31,7 +31,7 @@ Per l'automazione della compilazione, della distribuzione e del test delle appli
 |-------|----------------------|-----------------|
 | Identificare i computer in cui distribuire la compilazione ed eseguire i test. | Creare un ambiente lab standard in Microsoft Test Manager con questi computer. | n/d |
 | Identificare i test da eseguire. | Creare un gruppo di test in Microsoft Test Manager, creare i test case e associare l'automazione a ogni test case. Creare le impostazioni di test in Microsoft Test Manager identificando il ruolo dei computer nell'ambiente lab in cui devono essere eseguiti i test. | Se si prevede di gestire l'esecuzione dei test usando i piani di test, creare un gruppo di test automatizzati in Microsoft Test Manager nello stesso modo. In alternativa, è possibile evitare questo passaggio se i test devono essere eseguiti direttamente da file binari di test generati dalle compilazioni. In entrambi i casi non è necessario creare impostazioni di test. |
-| Automatizzare la distribuzione e l'esecuzione di test. | Creare una definizione di compilazione XAML tramite LabDefaultTemplate.*.xaml. Specificare la compilazione, i gruppi di test e l'ambiente lab nella definizione di compilazione. | Creare una [pipeline di compilazione o di versione](/azure/devops/pipelines/index?view=vsts) con un unico ambiente. Eseguire lo stesso script di distribuzione (dalla definizione di compilazione XAML) tramite l'attività Riga di comando ed eseguire test automatizzati tramite le attività Distribuzione agente di test ed Esegui test funzionali. Come input per queste attività, specificare l'elenco dei computer e le relative credenziali. |
+| Automatizzare la distribuzione e l'esecuzione di test. | Creare una definizione di compilazione XAML tramite LabDefaultTemplate.*.xaml. Specificare la compilazione, i gruppi di test e l'ambiente lab nella definizione di compilazione. | Creare una [pipeline di compilazione o di versione](/azure/devops/pipelines/index?view=vsts&preserve-view=true) con un unico ambiente. Eseguire lo stesso script di distribuzione (dalla definizione di compilazione XAML) tramite l'attività Riga di comando ed eseguire test automatizzati tramite le attività Distribuzione agente di test ed Esegui test funzionali. Come input per queste attività, specificare l'elenco dei computer e le relative credenziali. |
 
 Alcuni dei vantaggi offerti dall'uso di Azure Pipelines o TFS per questo scenario sono:
 
@@ -46,7 +46,7 @@ Alcuni dei vantaggi offerti dall'uso di Azure Pipelines o TFS per questo scenari
 
 ## <a name="self-service-management-of-scvmm-environments"></a>Gestione self-service di ambienti SCVMM
 
-Il [Test Center in Microsoft Test Manager](/azure/devops/test/mtm/guidance-mtm-usage?view=vsts) supporta la possibilità di gestire una raccolta di modelli di ambiente, nonché di eseguire il provisioning di ambienti su richiesta tramite un [server SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
+Il [Test Center in Microsoft Test Manager](/azure/devops/test/mtm/guidance-mtm-usage?view=vsts&preserve-view=true) supporta la possibilità di gestire una raccolta di modelli di ambiente, nonché di eseguire il provisioning di ambienti su richiesta tramite un [server SCVMM](/system-center/vmm/overview?view=sc-vmm-1801&preserve-view=true).
 
 Le funzionalità di provisioning self-service di Centro lab hanno due obiettivi distinti:
 
@@ -76,4 +76,4 @@ Tuttavia è possibile usare Azure Pipelines e Team Foundation Server, in combina
 * Avviare e arrestare le macchine virtuali
 * Eseguire script di PowerShell personalizzati per SCVMM
 
-Per altre informazioni, vedere [Create a virtual network isolated environment for build-deploy-test scenarios](/azure/devops/pipelines/targets/create-virtual-network?view=vsts) (Creare un ambiente con isolamento di rete virtuale per scenari di compilazione-distribuzione-test).
+Per altre informazioni, vedere [Create a virtual network isolated environment for build-deploy-test scenarios](/azure/devops/pipelines/targets/create-virtual-network?view=vsts&preserve-view=true) (Creare un ambiente con isolamento di rete virtuale per scenari di compilazione-distribuzione-test).

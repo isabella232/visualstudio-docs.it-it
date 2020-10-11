@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c01543b290d991a189c0851c64526c9c513068ba
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587082"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927978"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Usare la finestra Risultati metrica codice
 
@@ -82,9 +82,9 @@ Nella casella di riepilogo a discesa **filtro** sono contenuti i nomi delle colo
 
 ## <a name="create-a-work-item-based-on-code-metric-results"></a>Creare un elemento di lavoro in base ai risultati della metrica del codice
 
-È possibile creare un elemento di lavoro [Azure Boards](/azure/devops/boards/index?view=vsts) basato sui risultati nella finestra **dei risultati della metrica del codice** . Quando viene creato l'elemento di lavoro, Visual Studio immette automaticamente un titolo nel campo del **titolo** e i dati di metrica del codice nella scheda **cronologia** .
+È possibile creare un elemento di lavoro [Azure Boards](/azure/devops/boards/index?view=vsts&preserve-view=true) basato sui risultati nella finestra **dei risultati della metrica del codice** . Quando viene creato l'elemento di lavoro, Visual Studio immette automaticamente un titolo nel campo del **titolo** e i dati di metrica del codice nella scheda **cronologia** .
 
-Per altre informazioni sugli elementi di lavoro Azure Boards, vedere [elementi di lavoro](/azure/devops/boards/work-items/index?view=vsts).
+Per altre informazioni sugli elementi di lavoro Azure Boards, vedere [elementi di lavoro](/azure/devops/boards/work-items/index?view=vsts&preserve-view=true).
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Per creare un elemento di lavoro basato su un risultato
 

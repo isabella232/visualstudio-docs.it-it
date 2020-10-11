@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 43519a96e0718a0864065864d9dd4fbd2ac16b23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd5d4d14267be51dfea20c43630ff9f31f6d13ac
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288078"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928619"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Procedura: Creare un adattatore dati di diagnostica
 
@@ -245,7 +245,7 @@ Per un progetto di adattatore dati di diagnostica di esempio completo, incluso u
     >
     > Sono disponibili altri esempi di file di configurazione nel percorso seguente in base alla directory di installazione: *Programmi\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
-     Per altre informazioni sulla configurazione delle impostazioni test per usare un ambiente quando si eseguono i test, vedere [Raccogliere dati di diagnostica nei test manuali (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
+     Per altre informazioni sulla configurazione delle impostazioni test per usare un ambiente quando si eseguono i test, vedere [Raccogliere dati di diagnostica nei test manuali (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true).
 
      Per altre informazioni sull'installazione del file di configurazione, vedere [Procedura: Installare un adattatore dati di diagnostica personalizzato](../test/quickstart-create-a-load-test-project.md).
 
@@ -253,7 +253,7 @@ Per un progetto di adattatore dati di diagnostica di esempio completo, incluso u
 
 13. Per informazioni sull'installazione dell'editor personalizzato, vedere [Procedura: Installare un adattatore dati di diagnostica personalizzato](../test/quickstart-create-a-load-test-project.md).
 
-14. Per altre informazioni sulla configurazione delle impostazioni test per usare un ambiente quando si eseguono i test, vedere [Raccogliere dati di diagnostica nei test manuali (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
+14. Per altre informazioni sulla configurazione delle impostazioni test per usare un ambiente quando si eseguono i test, vedere [Raccogliere dati di diagnostica nei test manuali (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true).
 
 15. Per selezionare l'adattatore dati di diagnostica, è necessario innanzitutto selezionare le impostazioni di test esistenti o crearne di nuove da Visual Studio o Microsoft Test Manager (deprecate in Visual Studio 2017). L'adattatore viene visualizzato nella scheda **Dati e diagnostica** delle impostazioni test con il nome descrittivo assegnato alla classe.
 
@@ -273,6 +273,6 @@ Per un progetto di adattatore dati di diagnostica di esempio completo, incluso u
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>
 - [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)
-- [Raccogliere dati di diagnostica nei test manuali (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
-- [Raccogliere dati di diagnostica durante i test (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [Raccogliere dati di diagnostica nei test manuali (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
+- [Raccogliere dati di diagnostica durante i test (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)
 - [Procedura: Creare un editor personalizzato di dati per l'adattatore dati di diagnostica](../test/quickstart-create-a-load-test-project.md)

@@ -1,5 +1,6 @@
 ---
 title: Usare l'indice di Help Viewer
+description: Trovare argomenti usando l'indice Microsoft Help Viewer, che contiene un elenco di parole chiave associate agli argomenti nel contenuto installato.
 ms.date: 11/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff72fc3e65b48e195c8ffc9587bdbb3c5fc382be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 695bcabc195b97551b2943a557d591bdfb85c991
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284958"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879021"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Trovare argomenti tramite l'indice del visualizzatore della Guida
 

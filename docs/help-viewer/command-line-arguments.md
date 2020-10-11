@@ -1,5 +1,6 @@
 ---
 title: Argomenti della riga di comando per Gestione contenuto della Guida
+description: Utilizzare gli argomenti della riga di comando per gestione contenuto della guida (HlpCtntMgr.exe) per specificare la modalità di distribuzione e gestione del contenuto della guida locale.
 ms.date: 11/01/2017
 ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9bead01c6440d5232a91a5e8fe2007b3e30340c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24011c50cf6f8d2204abdaa8b6119f7873470bcf
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72631973"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879047"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argomenti della riga di comando per Gestione contenuto della Guida
 
@@ -46,7 +47,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 
 La tabella seguente definisce le opzioni e gli argomenti che è possibile usare per lo strumento da riga di comando per Gestione contenuto della Guida:
 
-|Commutatore|Necessaria?|Argomenti|
+|Opzione|Necessaria?|Argomenti|
 |------------|---------------|---------------|
 |/operation|Sì|-   **Install**: aggiunge i libri dell'origine dell'installazione specificata all'archivio del contenuto locale.<br />     Questa opzione richiede l'argomento /booklist, l'argomento /sourceURI o entrambi. Se non si specifica l'argomento /sourceURI, come origine dell'installazione viene usato l'URI predefinito di Visual Studio. Se non si specifica l'argomento /booklist, vengono installati tutti i libri in /sourceUri.<br />-   **Uninstall**: rimuove dall'archivio del contenuto locale i libri specificati.<br />     Questa opzione richiede l'argomento /booklist o l'argomento /sourceURI.  Se si specifica l'argomento /sourceURI, vengono rimossi tutti i libri e l'argomento /booklist viene ignorato.<br />-   **Move**: sposta l'archivio locale nel percorso specificato. Il percorso dell'archivio locale predefinito viene impostato come directory in *%ProgramData%*<br />     Questa opzione richiede gli argomenti /locationPath e /catalogName. Nel registro eventi vengono registrati messaggi di errore se si specifica un percorso non valido o se lo spazio libero sull'unità non è sufficiente per il contenuto.<br />-   **Refresh**: aggiorna gli argomenti modificati dopo l'installazione o aggiornati più di recente.<br />     Questa opzione richiede l'argomento /sourceURI.|
 |/catalogName|Sì|Specifica il nome del catalogo del contenuto. Per Visual Studio 2017 e Visual Studio 2019, questo è VisualStudio15.|

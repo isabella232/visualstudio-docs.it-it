@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa73894d713ded42696f5e47d40dffb2d2405b1a
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74538580"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928082"
 ---
 # <a name="team-explorer-reference"></a>Informazioni di riferimento su Team Explorer
 
@@ -26,7 +26,7 @@ Dopo essersi [connessi a un progetto](../connect-team-project.md) in **Team Expl
 - [Portale Web](/azure/devops/project/navigation/index)
 - [Lavagna delle attività](/azure/devops/boards/sprints/task-board)
 
-La page **Home** offre diverse funzioni a seconda che ci si sia connessi a un repository [GIT](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio) o un repository del [controllo della versione di Team Foundation](/azure/devops/repos/tfvc/overview).
+La page **Home** offre diverse funzioni a seconda che ci si sia connessi a un repository [GIT](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true) o un repository del [controllo della versione di Team Foundation](/azure/devops/repos/tfvc/overview).
 
 > [!TIP]
 > Per un confronto tra i due sistemi di controllo delle versioni, vedere [Choose the right version control for your project (Azure DevOps)](/azure/devops/repos/tfvc/comparison-git-tfvc) (Scegliere il controllo della versione corretto per il progetto (Azure DevOps)).
@@ -102,9 +102,9 @@ Vedere:
 
 La pagina **Impostazioni** consente di configurare le funzionalità amministrative per un progetto o una raccolta di progetti. Vedere gli articoli seguenti:
 
-| Progetto | Raccolta di progetti | Altro |
+| Project | Raccolta di progetti | Altro |
 | - | - | - |
-| [Sicurezza, Appartenenza a gruppo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Sicurezza, Controllo del codice sorgente (controllo della versione di Team Foundation)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Aree elementi di lavoro](/azure/devops/organizations/settings/set-area-paths)<br/>[Iterazioni elementi di lavoro](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Impostazioni portale](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Avvisi di progetto](/azure/devops/notifications/howto-manage-team-notifications) | [Sicurezza, Appartenenza a gruppo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Controllo del codice sorgente (controllo della versione di Team Foundation)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Gestione modelli di processo](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Impostazioni globali GIT](/azure/devops/repos/git/git-config)<br/>[Impostazioni del repository GIT](/azure/devops/repos/git/git-config) |
+| [Sicurezza, Appartenenza a gruppo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Sicurezza, Controllo del codice sorgente (controllo della versione di Team Foundation)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Aree elementi di lavoro](/azure/devops/organizations/settings/set-area-paths)<br/>[Iterazioni elementi di lavoro](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Impostazioni del portale](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Avvisi di progetto](/azure/devops/notifications/howto-manage-team-notifications) | [Sicurezza, Appartenenza a gruppo](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Controllo del codice sorgente (controllo della versione di Team Foundation)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Gestione modelli di processo](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Impostazioni globali GIT](/azure/devops/repos/git/git-config)<br/>[Impostazioni del repository GIT](/azure/devops/repos/git/git-config) |
 
 ## <a name="see-also"></a>Vedere anche
 

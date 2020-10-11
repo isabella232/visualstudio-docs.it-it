@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ac917248915129b8d93dc776ac7d35a2ed227069
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16ff335fdf8ca76889562cfd94807ec1adc516d2
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87454605"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927926"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>Compila codice TypeScript (ASP.NET Core)
 
@@ -107,6 +107,10 @@ Se Visual Studio è installato, il node.exe in bundle verrà automaticamente sel
 Per un esempio dell'uso di Gulp con l'attività Runner per compilare l'app, vedere [ASP.NET Core e typescript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html).
 
 Se si verificano problemi in cui Visual Studio usa una versione di Node.js o uno strumento di terze parti diverso dalla versione prevista, potrebbe essere necessario impostare il percorso di Visual Studio. Scegliere **strumenti**  >  **Opzioni**. In **progetti e soluzioni**scegliere **Web Gestione pacchetti**  >  **strumenti Web esterni**.
+
+### <a name="run-the-application"></a>Eseguire l'applicazione
+
+Per istruzioni su come eseguire l'app dopo la compilazione, vedere [creare la prima app Node.js](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application).
 
 ### <a name="nuget-package-structure-details"></a>Dettagli della struttura dei pacchetti NuGet
 

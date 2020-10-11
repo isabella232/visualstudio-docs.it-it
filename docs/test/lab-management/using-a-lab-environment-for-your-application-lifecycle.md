@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4c1cdbea77f8a14e8f4cedcd53b54e2eac65cf75
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1a5958b03b9797882b3df37f4ba99c75ff832d22
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037224"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928108"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usare un ambiente lab per DevOps
 
@@ -45,7 +45,7 @@ Ecco alcuni esempi di topologie comuni di ambienti lab:
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Usare il cloud con Compilazione e versione di Azure Pipelines o Team Foundation Server
 
-È possibile eseguire test automatizzati e automatizzare le operazioni di compilazione, distribuzione e test usando le funzionalità di [compilazione e versione](/azure/devops/pipelines/index?view=vsts) disponibili in Team Foundation Server (TFS) e Azure Test Plans. Ecco alcuni dei vantaggi che offre:
+È possibile eseguire test automatizzati e automatizzare le operazioni di compilazione, distribuzione e test usando le funzionalità di [compilazione e versione](/azure/devops/pipelines/index?view=vsts&preserve-view=true) disponibili in Team Foundation Server (TFS) e Azure Test Plans. Ecco alcuni dei vantaggi che offre:
 
 * Non è necessario alcun controller di compilazione o di test.
 * L'agente di test viene installato tramite un'attività compresa nella compilazione o nella versione.
@@ -94,27 +94,27 @@ Con Visual Studio Lab Management è possibile creare due tipi di ambiente lab: *
 > [!NOTE]
 > Lab Management non supporta SCVMM 2016.
 
-Per informazioni su SCVMM, vedere [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts).
+Per informazioni su SCVMM, vedere [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts&preserve-view=true).
 
 Gli ambienti standard e gli ambienti SCVMM supportano molte delle stesse funzionalità. Esistono tuttavia alcune importanti differenze da considerare. Nella tabella seguente vengono confrontate le funzionalità disponibili per gli ambienti standard e gli ambienti SCVMM.
 
 |Funzionalità|Ambienti SCVMM|Ambienti standard|
 |-|------------------------|-|
-|**Test**|||
-|Eseguire test manuali|Funzionalità supportata|Funzionalità supportata|
-|Eseguire il test codificato dell'interfaccia utente e altri test automatizzati|Funzionalità supportata|Funzionalità supportata|
-|Archiviare bug dettagliati usando gli adattatori diagnostici|Funzionalità supportata|Funzionalità supportata|
+|Test|||
+|Eseguire test manuali|Supportato|Supportato|
+|Eseguire il test codificato dell'interfaccia utente e altri test automatizzati|Supportato|Supportato|
+|Archiviare bug dettagliati usando gli adattatori diagnostici|Supportato|Supportato|
 |**Distribuzione della compilazione**|||
-|Flussi di lavoro compilazione, distribuzione e test automatici|Funzionalità supportata|Funzionalità supportata|
+|Flussi di lavoro compilazione, distribuzione e test automatici|Supportato|Supportato|
 |**Creazione e gestione dell'ambiente**|||
-|Usare computer fisici oltre alle macchine virtuali|Non supportate|Funzionalità supportata|
-|Usare macchine virtuali di terze parti|Non supportate|Funzionalità supportata|
-|Installazione automatica degli agenti di test nei computer nell'ambiente lab|Funzionalità supportata|Funzionalità supportata|
-|Salvare e distribuire lo stato di un ambiente lab tramite snapshot dell'ambiente|Funzionalità supportata|Non supportate|
-|Creare ambienti lab dai modelli di macchina virtuale|Funzionalità supportata|Non supportate|
-|Avviare, arrestare e creare lo snapshot dell'ambiente|Funzionalità supportata|Non supportate|
-|Connettersi all'ambiente usando Visualizzatore ambiente|Funzionalità supportata|Funzionalità supportata|
-|Eseguire più copie di un ambiente nello stesso momento usando l'isolamento della rete|Funzionalità supportata|Non supportate|
+|Usare computer fisici oltre alle macchine virtuali|Non supportato|Supportato|
+|Usare macchine virtuali di terze parti|Non supportato|Supportato|
+|Installazione automatica degli agenti di test nei computer nell'ambiente lab|Supportato|Supportato|
+|Salvare e distribuire lo stato di un ambiente lab tramite snapshot dell'ambiente|Supportato|Non supportato|
+|Creare ambienti lab dai modelli di macchina virtuale|Supportato|Non supportato|
+|Avviare, arrestare e creare lo snapshot dell'ambiente|Supportato|Non supportato|
+|Connettersi all'ambiente usando Visualizzatore ambiente|Supportato|Supportato|
+|Eseguire più copie di un ambiente nello stesso momento usando l'isolamento della rete|Supportato|Non supportato|
 
 ### <a name="lab-management-concepts"></a>Concetti di Lab Management
 
@@ -144,7 +144,7 @@ Per informazioni sulla configurazione degli ambienti, vedere:
 * [Creazione e uso di un ambiente di isolamento rete](/previous-versions/ee518924(v=vs.140))
 ::: moniker-end
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Installare e configurare agenti di test](../../test/lab-management/install-configure-test-agents.md)
 * [Visual Studio Lab Management Guide](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions) (Guida di Visual Studio Lab Management)

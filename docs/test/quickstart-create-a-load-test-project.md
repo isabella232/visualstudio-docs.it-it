@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4f186e8c10d894b98e789480046d43fc957edd8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d883d531737caf32ec202955ff951382b5ff9009
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566410"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928580"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Guida introduttiva: Creare un progetto di test di carico
 
@@ -78,7 +78,7 @@ In questa sezione si creerà un progetto di test di carico in C#. È anche possi
 
    Viene avviata la **Creazione guidata test di carico**.
 
-1. Selezionare l'opzione **Test di carico locale** e quindi scegliere **Avanti**. Per altre informazioni sul test di carico basato su cloud, fare clic [qui](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+1. Selezionare l'opzione **Test di carico locale** e quindi scegliere **Avanti**. Per altre informazioni sul test di carico basato su cloud, fare clic [qui](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts&preserve-view=true).
 
    ![Prima pagina della Creazione guidata test di carico](media/load-test-wizard-page-1.png)
 

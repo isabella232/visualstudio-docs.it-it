@@ -1,5 +1,6 @@
 ---
 title: Combinazioni di tasti (Help Viewer)
+description: Vedere l'elenco di tasti di scelta rapida in Microsoft Help Viewer. Usare i tasti di scelta rapida per la navigazione, la gestione delle finestre e la gestione dei contenuti.
 ms.date: 11/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f7c49eadcfa0b73997f9902bdde0b8a9c98065e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 264917d515e25823f8d6c2cb522e85dcc9c47d84
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533732"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878956"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Tasti di scelta rapida in Help Viewer
 
@@ -27,7 +28,7 @@ ms.locfileid: "85533732"
 |Applicazione generale|**Spazio**|Da usare al posto di **INVIO** ovunque ad eccezione dei campi di modifica.|
 |Applicazione generale|**F1**|Aprire la **Guida** sull'elemento corrente dell'interfaccia utente.|
 |Applicazione generale|**F11**|Passare dalla visualizzazione a schermo intero alla visualizzazione normale e viceversa.|
-|Barra degli strumenti|**Backspace**<br /><br /> -OPPURE-<br /><br /> **ALT** + **Freccia sinistra**|Visualizzare la pagina precedente.|
+|Barra degli strumenti|**BACKSPACE**<br /><br /> -OPPURE-<br /><br /> **ALT** + **Freccia sinistra**|Visualizzare la pagina precedente.|
 |Barra degli strumenti|**ALT** + **Freccia destra**|Visualizzare la pagina successiva.|
 |Barra degli strumenti|**ALT** + **Pagina iniziale**|Visualizzare la home page del **revisore della guida**.|
 |Barra degli strumenti|**CTRL** + **S**|Evidenziare l'argomento corrente nel sommario (nella scheda **Sommario**).|

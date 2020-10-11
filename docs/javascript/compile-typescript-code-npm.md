@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d70f1e95ce2dd5163eb017684620c403a77f74a
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: bfd019848e62abf4e6f25913d29d26d1a1bde6a5
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740032"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927900"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Compila codice TypeScript (Node.js)
 
@@ -112,6 +112,10 @@ Il [pacchetto NPM typescript](https://www.npmjs.com/package/typescript) aggiunge
    Se sono state generate mappe di origine, aprire la cartella specificata nell'opzione *outDir* per trovare i \* file con estensione js generati insieme ai \* file js. map generati.
 
    Per il [debug](../javascript/debug-nodejs.md)sono necessari i file di mapping di origine.
+
+### <a name="run-the-application"></a>Eseguire l'applicazione
+
+Per istruzioni su come eseguire l'app dopo la compilazione, vedere [creare la prima app Node.js](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application).
 
 ## <a name="automate-build-tasks"></a>Automatizzare le attività di compilazione
 

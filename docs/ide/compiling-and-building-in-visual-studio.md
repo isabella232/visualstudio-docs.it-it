@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55f229550dfe74606f4dfb0880b4e91d689d5ad
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 2180d535dbdbdc88290a48cf166879525f10b4bb
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809033"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928541"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilazione e creazione in Visual Studio
 
@@ -32,7 +32,7 @@ Per compilare un'applicazione è possibile usare uno di questi metodi: IDE di Vi
 | Riga di comando MSBuild| - Compilazione di progetti senza installare Visual Studio.<br />- Esecuzione di compilazioni multiprocessore per tutti i tipi di progetto.<br />- Personalizzazione della maggior parte delle aree del sistema di compilazione.|
 | Azure Pipelines | - Automazione della compilazione come parte di un processo di integrazione continua/recapito continuo.<br />- Implementazione di test automatizzati con ogni compilazione.<br />- Uso di risorse di codice praticamente illimitate per i processi di compilazione.<br />- Modifica del flusso di lavoro di compilazione e creazione di attività di compilazione per eseguire attività personalizzate specifiche.|
 
-La documentazione di questa sezione approfondisce i dettagli del processo di compilazione basato su IDE. Per informazioni sugli altri metodi, vedere rispettivamente [MSBuild](../msbuild/msbuild.md) e [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+La documentazione di questa sezione approfondisce i dettagli del processo di compilazione basato su IDE. Per informazioni sugli altri metodi, vedere rispettivamente [MSBuild](../msbuild/msbuild.md) e [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true).
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Compilazione e creazione in Visual Studio per Mac](/visualstudio/mac/compiling-and-building).

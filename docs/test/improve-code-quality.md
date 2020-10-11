@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0517d03db180ce76940723ca935be258d0cf1818
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d61ab4ec7647921a928841d2a9c89fb84becdf9
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80256231"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928069"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Esaminare prima di tutto gli strumenti di test in Visual Studio
 
@@ -94,7 +94,7 @@ Il [test di carico](../test/quickstart-create-a-load-test-project.md) simula il 
 
 ## <a name="related-scenarios"></a>Scenari correlati
 
-* [Test manuali ed esplorativi (Azure Test Plans)](/azure/devops/test/index?view=vsts)
-* [Test di carico (Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts)
-* [Test continuati (Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+* [Test manuali ed esplorativi (Azure Test Plans)](/azure/devops/test/index?view=vsts&preserve-view=true)
+* [Test di carico (Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)
+* [Test continuati (Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)
 * [Strumenti di analisi del codice](../code-quality/code-analysis-for-managed-code-overview.md)

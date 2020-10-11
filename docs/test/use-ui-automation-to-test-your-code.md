@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d18282cf0fbd8782eb7abce05794e0b2eb1c5c1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eaa1e284394bda78c6892647ce9eca20d372a362
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90035742"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928095"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Usare test codificati dell'interfaccia utente per il testing del codice
 
@@ -444,7 +444,7 @@ myWinCheckBox.Checked = true;
 
 - [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md)
 
-- [Eseguire test nel processo di compilazione](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+- [Eseguire test nel processo di compilazione](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true)
 
 - [Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop](/previous-versions/ee291332(v=vs.140))
 
@@ -456,9 +456,9 @@ myWinCheckBox.Checked = true;
 
 I test codificati dell'interfaccia utente vengono spesso usati per automatizzare i test manuali. Per altre informazioni sui test automatizzati, vedere [Strumenti di test di Visual Studio](../test/improve-code-quality.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
-- [Registrare e riprodurre test manuali](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
+- [Registrare e riprodurre test manuali](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts&preserve-view=true)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Procedura dettagliata: creare, modificare e gestire un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

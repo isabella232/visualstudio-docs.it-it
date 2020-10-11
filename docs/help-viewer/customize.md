@@ -1,5 +1,6 @@
 ---
 title: Personalizzare il visualizzatore della Guida
+description: Informazioni su come personalizzare il Visualizzatore della guida. Configurare il layout, le dimensioni del carattere, il numero massimo di risultati e se includere il contenuto in lingua inglese.
 ms.date: 11/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d1f4de5e5ace63f748c6a75d45d8311ea3eb71b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 402aa5deaae6b082c8360b9867807516f11d935d
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284972"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879034"
 ---
 # <a name="customize-the-help-viewer"></a>Personalizzare Help Viewer
 È possibile personalizzare il layout delle finestre di Help Viewer, così come altre opzioni quali dimensioni del carattere, numero massimo di risultati e se includere contenuto in inglese.

@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9859366f6e4b9a0d1c219adc2080e6415b1e44a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98bdbecb12897602a70c590b9cee64b992193b7d
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588655"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928502"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens
 
@@ -217,7 +217,7 @@ Aprire il menu di scelta rapida di un elemento per visualizzare le opzioni di co
 
 1. Accedere all'applicazione contenente il [codice di unit test](../test/unit-test-your-code.md) associato.
 
-2. Se non se ne ha già uno, compilare l'applicazione per caricare gli indicatori test di CodeLens. 
+2. Se non se ne ha già uno, compilare l'applicazione per caricare gli indicatori test di CodeLens.
 
 3. Esaminare i test per il codice premendo **ALT** + **3**.
 
@@ -268,7 +268,7 @@ Attivare gli indicatori CodeLens a livello di file e disattivare l’utilizzo de
 
 - Se il codice è archiviato in TFS, assicurarsi che l'indicizzazione del codice sia attivata usando il [comando CodeIndex](../ide/codeindex-command.md) con il [comando Config di TFS](/azure/devops/server/command-line/tfsconfig-cmd).
 
-- Gli indicatori DevOps vengono visualizzati solo quando gli elementi di lavoro sono collegati al codice e quando l'utente è autorizzato ad aprire gli elementi di lavoro collegati. Verificare di disporre [delle autorizzazioni](/azure/devops/organizations/security/view-permissions?view=vsts)per i membri del team.
+- Gli indicatori DevOps vengono visualizzati solo quando gli elementi di lavoro sono collegati al codice e quando l'utente è autorizzato ad aprire gli elementi di lavoro collegati. Verificare di disporre [delle autorizzazioni](/azure/devops/organizations/security/view-permissions?view=vsts&preserve-view=true)per i membri del team.
 
 - Gli indicatori di unit test non vengono visualizzati quando il codice dell'applicazione non contiene unit test. Gli indicatori di stato del test vengono visualizzati automaticamente nei progetti di test. Se si è certi che il codice dell'applicazione include unit test, ma gli indicatori di test non vengono visualizzati, provare a compilare la soluzione (**CTRL** + **MAIUSC** + **B**).
 

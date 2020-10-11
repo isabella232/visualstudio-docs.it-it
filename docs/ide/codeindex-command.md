@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bd2a6cc947c5f52212029bebe590d59906f5aee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07338e83f0c58331345cd3f4c6eb61855a16fd4f
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591164"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928489"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
 
@@ -25,7 +25,7 @@ Usare il comando **CodeIndex** per gestire l'indicizzazione del codice in Team F
 
 ## <a name="required-permissions"></a>Autorizzazioni necessarie
 
-Per usare il comando **CodeIndex**, è necessario essere membro del gruppo di sicurezza **Team Foundation Administrators **. Vedere [Permissions and groups in Azure DevOps and TFS](/azure/devops/organizations/security/permissions?view=vsts) (Autorizzazioni e gruppi in Azure DevOps e TFS).
+Per usare il comando **CodeIndex**, è necessario essere membro del gruppo di sicurezza **Team Foundation Administrators **. Vedere [Permissions and groups in Azure DevOps and TFS](/azure/devops/organizations/security/permissions?view=vsts&preserve-view=true) (Autorizzazioni e gruppi in Azure DevOps e TFS).
 
 > [!NOTE]
 > Anche se si accede con le credenziali amministrative, per eseguire questo comando, è necessario aprire una finestra del prompt dei comandi con privilegi elevati. È inoltre necessario eseguire questo comando dal livello applicazione di Team Foundation.

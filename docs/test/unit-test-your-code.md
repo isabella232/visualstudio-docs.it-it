@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ffe383d2195feb6689954a8ec858b196bae8c06a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7833d320ecbaefbd2290d0a65ec4b32f802e403
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565994"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927952"
 ---
 # <a name="unit-test-your-code"></a>Eseguire unit test del codice
 
@@ -47,8 +47,8 @@ Usare gli articoli seguenti per la comprensione e la creazione di unit test:
 |**Unit test di codice C++**|- [Scrivere unit test per C/C++](../test/writing-unit-tests-for-c-cpp.md)|
 |**Isolamento degli unit test**|- [Isolare il codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**Usare code coverage per identificare la percentuale del codice del progetto in fase di test:** informazioni sulla funzionalità code coverage degli strumenti di test di Visual Studio.|- [Usare code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Eseguire analisi di stress e prestazioni usando i test di carico:** Informazioni su come creare test di carico per isolare i problemi di prestazioni e di stress nell'applicazione.|- [Guida introduttiva: creare un progetto di test di carico](../test/quickstart-create-a-load-test-project.md)<br />- [Test di carico (Azure Test Plans e TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|Impostare i controlli di **qualità:** Informazioni su come creare controlli di qualità per applicare l'esecuzione di test prima che il codice venga archiviato o sottoposto a merge.|- [Criteri di archiviazione (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**Eseguire analisi di stress e prestazioni usando i test di carico:** Informazioni su come creare test di carico per isolare i problemi di prestazioni e di stress nell'applicazione.|- [Guida introduttiva: creare un progetto di test di carico](../test/quickstart-create-a-load-test-project.md)<br />- [Test di carico (Azure Test Plans e TFS)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
+|Impostare i controlli di **qualità:** Informazioni su come creare controlli di qualità per applicare l'esecuzione di test prima che il codice venga archiviato o sottoposto a merge.|- [Criteri di archiviazione (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts&preserve-view=true)|
 |**Impostare le opzioni di test:** Informazioni su come configurare le opzioni di test, ad esempio, in cui vengono archiviati i risultati dei test.|[Configurazione di unit test usando un file con estensione runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Documentazione di riferimento delle API

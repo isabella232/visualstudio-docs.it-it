@@ -1,5 +1,6 @@
 ---
 title: Requisiti di sistema per l'emulatore VS per Android
+description: Informazioni sui requisiti di sistema per l'emulatore di Visual Studio per Android per l'esecuzione come macchina virtuale in Hyper-V.
 ms.custom: SEO-VS-2020
 ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 327713a59b7c5c8da5c5b92cd16f3a20a76a7458
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 726a02c852c4b41dacc2cab73ab4000ebda53a8a
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808259"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878943"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisiti di sistema per Visual Studio Emulator per Android
 

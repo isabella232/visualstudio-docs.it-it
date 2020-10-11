@@ -1,5 +1,7 @@
 ---
 title: Installare versioni di Visual Studio side-by-side
+description: Informazioni su come installare Visual Studio in un computer in cui è già installata una versione precedente o successiva di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
@@ -11,12 +13,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 1a57d124029f5c654d41dcea621d6df95e29842f
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: ff62f07f3b1c5cc72488320b05d6ff9649fb5795
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211313"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928632"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installare versioni di Visual Studio side-by-side
 
@@ -48,10 +50,10 @@ Prima di installare le versioni side-by-side, verificare le condizioni seguenti:
 
 ## <a name="install-minor-visual-studio-versions-side-by-side"></a>Installare versioni secondarie di Visual Studio side-by-side
 
-Quando si esegue l'aggiornamento da una versione secondaria di Visual Studio alla successiva, il programma di installazione di Visual Studio aggiornerà l'installazione corrente alla versione successiva nel canale per impostazione predefinita. Ad esempio, quando si installa l'anteprima di 16.6.4, il programma di installazione tenterà di sostituire l'installazione corrente di 16.6.3 Preview, perché entrambe le versioni si trovano nel canale 16,6 Preview. Ciò garantisce che le versioni precedenti di Visual Studio non stiano occupando spazio sul computer. In alcuni casi specifici, può essere utile installare le versioni secondarie side-by-side. In questo esempio, ciò significherebbe avere sia 16.6.3 che 16.6.4 nello stesso computer.
+Quando si esegue l'aggiornamento da una versione secondaria di Visual Studio alla successiva, il programma di installazione di Visual Studio aggiornerà l'installazione corrente alla versione successiva nel canale per impostazione predefinita. Ad esempio, quando si installa l'anteprima di 16.6.4, il programma di installazione tenterà di sostituire l'installazione corrente di 16.6.3 Preview, perché entrambe le versioni si trovano nel canale 16,6 Preview. Ciò consente di garantire che le versioni precedenti di Visual Studio non stiano occupando spazio nel computer. In alcuni casi specifici, potrebbe essere utile installare le versioni secondarie side-by-side. In questo esempio, ciò significherebbe avere sia 16.6.3 che 16.6.4 nello stesso computer.
 
 1. Scaricare il [file del programma di avvio automatico di Visual Studio](/visualstudio/releases/2019/history#installing-an-earlier-release) per la versione secondaria di cui si vuole eseguire l'installazione side-by-side con le versioni esistenti di Visual Studio.
-2. Aprire il prompt dei comandi in modalità amministratore. A tale scopo, aprire il menu Start di Windows, digitare "cmd", fare clic con il pulsante destro del mouse sul risultato della ricerca del prompt dei comandi e selezionare **Esegui come amministratore**. Nel prompt dei comandi passare alla directory in cui si trova il file del programma di avvio automatico di Visual Studio.
+2. Aprire il prompt dei comandi in modalità amministratore. A tale scopo, aprire il menu Start di Windows, digitare "cmd", fare clic con il pulsante destro del mouse sul risultato della ricerca del prompt dei comandi e scegliere **Esegui come amministratore**. Nel prompt dei comandi passare alla directory in cui si trova il file del programma di avvio automatico di Visual Studio.
 3. Eseguire il comando seguente, specificando un nuovo percorso di cartella per il percorso di installazione e sostituendo il nome del file con estensione exe con il nome del programma di avvio automatico appropriato per la versione di Visual Studio che si sta installando. Il nome del file con estensione exe deve corrispondere o essere simile a uno dei file seguenti:
    * vs_community.exe per Visual Studio Community
    * vs_professional.exe per Visual Studio Professional

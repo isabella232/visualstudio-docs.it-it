@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9938d017d683fd27a3f303824f9568a3876c2c4d
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312002"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928043"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Benvenuti all'IDE di Visual Studio | Visual Basic
 
@@ -42,7 +42,7 @@ Questa immagine presenta Visual Studio con un progetto aperto e varie finestre d
 
 - La finestra [Output](../../ide/reference/output-window.md) (in basso al centro) è la finestra in cui Visual Studio invia le notifiche, ad esempio messaggi di errore e di debug, avvisi del compilatore, messaggi di stato di pubblicazione e altro. Ogni origine dei messaggi ha una scheda separata.
 
-- [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (in basso a destra) consente di tenere traccia degli elementi di lavoro e di condividere il codice con altri utenti usando tecnologie di controllo della versione come [Git](https://git-scm.com/) e [Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
+- [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts&preserve-view=true) (in basso a destra) consente di tenere traccia degli elementi di lavoro e di condividere il codice con altri utenti usando tecnologie di controllo della versione come [Git](https://git-scm.com/) e [Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true).
 
 ## <a name="editions"></a>Edizioni
 
