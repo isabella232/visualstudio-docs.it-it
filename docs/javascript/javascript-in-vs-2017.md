@@ -1,5 +1,7 @@
 ---
 title: JavaScript
+description: Informazioni su come usare la maggior parte o tutti gli strumenti di modifica standard (frammenti di codice, IntelliSense e così via) quando si scrive codice JavaScript nell'IDE di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/15/2019
 ms.technology: vs-javascript
 ms.topic: conceptual
@@ -12,12 +14,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fdb59c51fe38e3d2e3f2f1fd0b00db285b0de7f1
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: e8e4d0e337289e2676dc8eb040ad199ae41a8dbc
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739889"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947778"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
 
@@ -260,7 +262,7 @@ Altre informazioni sulla dichiarazione (`.d.ts`) di creazione di file [qui](http
 Poiché il nuovo servizio di linguaggio è alimentato dalle analisi statiche piuttosto che da un motore di esecuzione (leggere [questo problema](https://github.com/Microsoft/TypeScript/issues/4789) per informazioni riguardanti le differenze), esistono alcuni modelli di JavaScript che non possono essere rilevati.
 Il modello più comune è il modello "expando".
 Attualmente il servizio di linguaggio non può fornire IntelliSense ad oggetti che hanno proprietà aggiunte dopo la dichiarazione.
-Esempio:
+Ad esempio:
 
 ```js
 var obj = {};

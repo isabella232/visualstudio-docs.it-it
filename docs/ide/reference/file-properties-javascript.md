@@ -1,5 +1,7 @@
 ---
 title: Proprietà file, JavaScript
+description: Informazioni su come usare le proprietà dei file per indicare quali azioni devono essere eseguite dal sistema del progetto sui file.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.technology: vs-javascript
 ms.topic: reference
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efe1486cf8ac2b64965ed157abbb47dc2d8c7b6c
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926231"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947791"
 ---
 # <a name="file-properties-javascript"></a>Proprietà file, JavaScript
 
@@ -67,7 +69,7 @@ Visualizza il percorso completo del file come valore di sola lettura. Per modifi
 ## <a name="reference-file-properties"></a>Proprietà File di riferimento
 In questa sezione vengono descritte le proprietà comuni ai file cui fa riferimento un'app UWP sviluppata con JavaScript. Quando si seleziona un riferimento come un file con estensione .winmd, un riferimento SDK, un riferimento da progetto a progetto o un riferimento ad assembly in Esplora soluzioni, le altre proprietà possono essere visualizzate nella finestra Proprietà, in base al tipo di file.
 
-### <a name="culture"></a>Cultura
+### <a name="culture"></a>Impostazioni cultura
 Visualizza la lingua associata al riferimento.
 
 ### <a name="file-type"></a>Tipo di file
@@ -91,7 +93,7 @@ Visualizza il percorso al file SDK cui viene fatto riferimento.
 ### <a name="uri"></a>Uri
 Visualizza l'URI che deve essere incluso nel file HTML o JavaScript del progetto per includere il file come file di origine.
 
-### <a name="version"></a>Version
+### <a name="version"></a>Versione
 Visualizza la versione del riferimento.
 
 ## <a name="see-also"></a>Vedere anche

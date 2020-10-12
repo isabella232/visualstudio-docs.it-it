@@ -1,5 +1,7 @@
 ---
 title: Pagine proprietà, JavaScript
+description: Informazioni sulle pagine delle proprietà che consentono di accedere alle impostazioni del progetto e su come utilizzare le pagine visualizzate nelle pagine delle proprietà per modificare le proprietà del progetto.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.technology: vs-javascript
 ms.topic: reference
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf6c984715f5cd35f08bb75526346b68c11dbeb9
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926189"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947804"
 ---
 # <a name="property-pages-javascript"></a>Pagine delle proprietà, JavaScript
 
@@ -38,7 +40,7 @@ In **Pagine delle proprietà** vengono visualizzate le pagine e le opzioni segue
 
 Usare le opzioni seguenti per selezionare la configurazione e la piattaforma da visualizzare o modificare.
 
- **Configurazione**
+ **Configuration**
 
 Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni sono **Debug** (impostazione predefinita), **Release**, **Tutte le configurazioni** o una configurazione definita dall'utente. Per altre informazioni, vedere [Procedura: Impostare le configurazioni di debug e rilascio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
