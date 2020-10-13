@@ -12,12 +12,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a612be5a74c4d0905e3fcef3adaeb180df61320
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 09b200538f7d6bee55d12a79334811c8ba57515a
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878839"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959835"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Sviluppo per dispositivi mobili multipiattaforma in Visual Studio
 
@@ -33,7 +33,7 @@ Per compilare un gioco o un'app grafica immersiva, installare Visual Studio Tool
 
 Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per Android, iOS e Windows, condividendo il codice e anche l'interfaccia utente.
 
-|**Scopri di più**|
+|**Altre informazioni**|
 |--------------------|
 |[Installare Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Informazioni su Xamarin in Visual Studio](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
@@ -66,7 +66,7 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
  È possibile condividere il codice usando un progetto condiviso, un progetto della Libreria di classi portabile o entrambi. Alcuni codici potrebbero essere più adatti a un progetto condiviso, mentre altri a un progetto della Libreria di classi portabile.
 
-|**Scopri di più**|
+|**Altre informazioni**|
 |--------------------|
 |[Opzioni di condivisione del codice](/xamarin/cross-platform/app-fundamentals/code-sharing/) (Xamarin) |
 |[Opzioni di condivisione del codice con .NET](/dotnet/standard/cross-platform/) |
@@ -79,7 +79,7 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
  Iniziare con un modello di progetto per un'app della piattaforma UWP (Universal Windows Platform). Progettare visivamente le pagine e quindi aprirle in una finestra di anteprima per verificare come vengono visualizzate per vari tipi di dispositivi. Se l'aspetto di una pagina su un dispositivo non è di proprio gradimento, è possibile ottimizzare la pagina in modo da adattarla alle dimensioni dello schermo, alla risoluzione o ai vari orientamenti, ad esempio la modalità orizzontale o verticale. Tutto ciò è possibile grazie alle intuitive finestre degli strumenti e a opzioni di menu facilmente accessibili in Visual Studio. Quando si è pronti a eseguire l'app e il codice un'istruzione alla volta, sono disponibili tutti gli emulatori e i simulatori per diversi tipi di dispositivi, riuniti in un unico elenco a discesa nella barra degli strumenti **Standard**.
 
-|**Scopri di più**|
+|**Altre informazioni**|
 |--------------------|
 |[Introduzione alla piattaforma UWP (Universal Windows Platform)](/windows/uwp/get-started/universal-application-platform-guide)|
 |[Creare la prima app](/windows/uwp/get-started/your-first-app)|
@@ -107,7 +107,7 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
  I modelli di progetto per la creazione di app della piattaforma UWP (Universal Windows Platform) sono ancora disponibili in Visual Studio, quindi è possibile usarli se si intende destinare l'app solo ai dispositivi Windows. Se si vuole che l'app sia successivamente eseguibile anche in Android e iOS, è sempre possibile convertire il codice in un progetto Cordova.
 
-|**Scopri di più**|
+|**Altre informazioni**|
 |--------------------|
 |[Installare Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Introduzione a Strumenti di Visual Studio per Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/)|
@@ -139,7 +139,7 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
  Quando si scrive il codice in queste librerie, è possibile usare IntelliSense per esplorare le API native delle piattaforme Android e Windows. Questi progetti di libreria sono completamente integrati con il debugger di Visual Studio in modo da poter impostare punti di interruzione, eseguire il codice seguendo un'istruzione alla volta nonché individuare e risolvere i problemi mediante tutte le funzionalità avanzate del debugger.
 
-|**Scopri di più**|
+|**Altre informazioni**|
 |--------------------|
 |[Scarica Visual Studio](https://visualstudio.microsoft.com/downloads/) (VisualStudio.com)|
 |[Installare lo sviluppo di app per dispositivi mobili multipiattaforma con C++](/cpp/cross-platform/install-visual-cpp-for-cross-platform-mobile-development)|
@@ -158,13 +158,13 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
  Con Visual Studio Tools per Unity (VSTU) è possibile usare Visual Studio per scrivere script di giochi ed editor in C# e quindi usarne il potente debugger per individuare e correggere gli errori. La versione più recente di VSTU include il supporto di Unity 2018.1 e la colorazione della sintassi per il linguaggio ShaderLab di Unity, una migliore sincronizzazione con Unity, funzionalità di debug più complete e un miglioramento nella generazione del codice per la procedura guidata MonoBehavior. VSTU integra anche i file di progetto Unity, i messaggi della console e la possibilità di iniziare il gioco in Visual Studio evitando in tal modo di dover passare dall'editor di Unity a Visual Studio e viceversa durante la scrittura del codice.
 
-|**Scopri di più**|
+|**Altre informazioni**|
 |--------------------|
 |[Altre informazioni sulla compilazione di giochi Unity con Visual Studio](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[Altre informazioni su Visual Studio Tools per Unity](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Iniziare a usare Visual Studio Tools per Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
 |[Informazioni sugli ultimi miglioramenti apportati a Visual Studio Tools per Unity 2.0 Preview](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (blog di Visual Studio)|
-|[Guardare un video di introduzione a Visual Studio Tools per Unity 2.0 Preview](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (Video)|
+|[Guardare un video di introduzione a Visual Studio Tools per Unity 2.0 Preview](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408&preserve-view=true) (Video)|
 |[Informazioni su Unity](https://unity.com/) (sito Web Unity)|
 
 ## <a name="see-also"></a>Vedere anche

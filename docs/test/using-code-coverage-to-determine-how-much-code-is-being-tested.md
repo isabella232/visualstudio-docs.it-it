@@ -11,12 +11,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6dd6dde83720c6e6f37bd6827bb5d97526202aa7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d1b51661d9fc9a5492d123bdacd6c49d241ed87
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585600"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959775"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usare la funzionalità code coverage per determinare la quantità di codice testato
 
@@ -272,7 +272,7 @@ L'analisi del code coverage viene eseguita solo su assembly caricati e per i qua
 
 ## <a name="analyze-code-coverage-in-azure-pipelines"></a>Analizzare code coverage in Azure Pipelines
 
-Quando si controlla il codice, i test vengono eseguiti sul server di compilazione insieme ai test degli altri membri del team. È utile analizzare il code coverage in Azure Pipelines per ottenere un'immagine aggiornata e completa del code coverage dell'intero progetto. Vengono anche inclusi i test di sistema automatizzati e altri test codificati che normalmente non vengono eseguiti nei computer di sviluppo. Per altre informazioni, vedere [Eseguire unit test con le compilazioni](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts).
+Quando si controlla il codice, i test vengono eseguiti sul server di compilazione insieme ai test degli altri membri del team. È utile analizzare il code coverage in Azure Pipelines per ottenere un'immagine aggiornata e completa del code coverage dell'intero progetto. Vengono anche inclusi i test di sistema automatizzati e altri test codificati che normalmente non vengono eseguiti nei computer di sviluppo. Per altre informazioni, vedere [Eseguire unit test con le compilazioni](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true).
 
 ## <a name="analyze-code-coverage-from-the-command-line"></a>Analizzare il code coverage dalla riga di comando
 

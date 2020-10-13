@@ -11,22 +11,22 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 22029dc101cd73fee3933c5c63587f2f7222e640
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 3f9fbec93d9c27ae7bdcb6ea44f59debb2a03a14
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860850"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959813"
 ---
 # <a name="require-azurecli"></a>require-azurecli
 
-Lo `require-azurecli` strumento viene usato per installare l' [interfaccia](/cli/azure/?preserve-view=true&view=azure-cli-latest) della riga di comando di Azure tramite l'identità del servizio gestito di Azure.
+Lo `require-azurecli` strumento viene usato per installare l' [interfaccia](/cli/azure/?view=azure-cli-latest&preserve-view=true) della riga di comando di Azure tramite l'identità del servizio gestito di Azure.
 
 ## <a name="usage"></a>Uso
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Tipo   | Obbligatoria | valore                                                                          |
+| Nome                                             | Type   | Obbligatoria | valore                                                                          |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                          |
 | [**input**](#input)                              | stringa | No       | Non usato. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.                               |

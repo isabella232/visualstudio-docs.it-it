@@ -1,6 +1,7 @@
 ---
 title: Usare l'elenco attività
-ms.date: 11/04/2016
+description: Scopri in che modo il Elenco attività in Visual Studio può aiutarti a tenere traccia e usare i commenti del codice in modo più efficiente.
+ms.date: 10/12/2020
 ms.topic: how-to
 f1_keywords:
 - TaskListWindow
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3e1c43e9813bce664a63f3675b0fed6e14e3c7
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 8d19794b4fce3e4a1388f864cecf408e0f7e9c53
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781001"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959802"
 ---
 # <a name="use-the-task-list"></a>Usare l'elenco attività
 
@@ -64,12 +65,12 @@ Nella finestra **Elenco attività** viene inoltre visualizzato un commento nel c
 
 Poiché `TODO` è un token predefinito, questo commento viene visualizzato nell'elenco come attività `TODO`.
 
-> [!NOTE]
-> I token predefiniti sono disponibili solo per i linguaggi C/C++, C# e VB.
-
 ### <a name="custom-tokens"></a>Token personalizzati
 
 Per impostazione predefinita, Visual Studio include i token seguenti: `HACK`, `TODO`, `UNDONE` e `UnresolvedMergeConflict`. Per i token non viene fatta distinzione tra maiuscole e minuscole. È inoltre possibile creare token personalizzati.
+
+> [!NOTE]
+> I token predefiniti sono disponibili solo per i linguaggi C/C++, C# e VB. Per creare token personalizzati per altri linguaggi di programmazione, seguire questa procedura.
 
 Per creare un token personalizzato:
 

@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b4a90cc06396f9fb6afb8a356385e966ed1b3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7decb23bb6d307732c1f675fb14a96c1fc0dcda1
+ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249212"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91959861"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Associare a processi in esecuzione con il debugger di Visual Studio
 
@@ -78,7 +78,7 @@ Per riconnettersi rapidamente a un processo collegato in precedenza, vedere [Ric
    1. Nella finestra di dialogo **Seleziona tipo di codice** selezionare **Esegui il debug di questi tipi di codice**.
       Se si verifica un errore quando si tenta di connettersi a un processo nell'elenco, è possibile utilizzare la finestra di dialogo [Seleziona tipo di codice](../debugger/select-code-type-dialog-box.md) per [risolvere](#BKMK_Troubleshoot_attach_errors) il problema.
    1. Selezionare i tipi di codice di cui si vuole eseguire il debug.
-   1. Selezionare **OK**.
+   1. Scegliere **OK**.
 
 1. Selezionare **Allega**.
 
@@ -148,7 +148,7 @@ Per istruzioni più complete sul debug di applicazioni ASP.NET distribuite in II
    1. Fare clic su **Seleziona**.
    1. Nella finestra di dialogo **Seleziona tipo di codice** selezionare **Esegui il debug di questi tipi di codice**.
       Se si verifica un errore quando si tenta di connettersi a un processo nell'elenco, è possibile utilizzare la finestra di dialogo [Seleziona tipo di codice](../debugger/select-code-type-dialog-box.md) per [risolvere](#BKMK_Troubleshoot_attach_errors) il problema.
-   1. Selezionare **OK**.
+   1. Scegliere **OK**.
 
 6. Selezionare **Allega**.
 
@@ -182,16 +182,16 @@ Per altre informazioni, vedere [eseguire il debug remoto di .NET Core in esecuzi
 3. Selezionare **trova..** . per impostare la **destinazione della connessione** tramite la finestra di dialogo **Seleziona contenitore Docker** .
 
     È possibile eseguire il debug di un processo del contenitore Docker in locale o in remoto.
-    
+
     **Per eseguire il debug di un processo contenitore Docker in locale:**
     1. Impostare host dell'interfaccia della riga di comando **Docker** sul **computer locale**.
     1. Selezionare un contenitore in esecuzione a cui connettersi dall'elenco e fare clic su **OK**.
-    
+
     ![Selezionare il menu contenitore Docker](../debugger/media/select-docker-container.png "Select_Docker_Container_Menu")
- 
+
     **B. Per eseguire il debug remoto di un processo del contenitore docker:**
-    
-    > [!NOTE] 
+
+    > [!NOTE]
     > Sono disponibili due opzioni per la connessione remota a un processo in esecuzione in un contenitore docker. La prima opzione, per usare SSH, è ideale se gli strumenti Docker non sono installati nel computer locale.  Se gli strumenti Docker sono installati localmente e si ha un daemon Docker configurato per accettare le richieste remote, provare la seconda opzione usando un daemon docker.
 
     1. ***Per connettersi a un computer remoto tramite SSH:***
@@ -205,7 +205,7 @@ Per altre informazioni, vedere [eseguire il debug remoto di .NET Core in esecuzi
 
 4. Scegliere il processo contenitore corrispondente nell'elenco dei **processi disponibili** e selezionare **Connetti** per avviare il debug del processo contenitore C# in Visual Studio.
 
-    ![Menu Docker collegato completato](../debugger/media/docker-attach-complete.png "Menu Docker collegato Linux completato")    
+    ![Menu Docker collegato completato](../debugger/media/docker-attach-complete.png "Menu Docker collegato Linux completato")
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> Connettersi a un processo in esecuzione in un contenitore Docker di Windows
 
@@ -225,14 +225,14 @@ Per altre informazioni, vedere [eseguire il debug remoto di .NET Core in esecuzi
 
     > [!IMPORTANT]
     > Il processo di destinazione deve avere la stessa architettura del processore del contenitore di Windows Docker in cui è in esecuzione.
-    
+
    L'impostazione della destinazione su un contenitore remoto tramite SSH non è attualmente disponibile e può essere eseguita solo tramite un daemon docker.
-    
+
     ***Per impostare la destinazione su un contenitore remoto che esegue un processo tramite un [daemon Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
-    1. Specificare l'indirizzo del daemon, ad esempio tramite TCP, IP e così via, in **Docker host (facoltativo)** e fare clic sul collegamento Refresh (Aggiorna). 
+    1. Specificare l'indirizzo del daemon, ad esempio tramite TCP, IP e così via, in **Docker host (facoltativo)** e fare clic sul collegamento Refresh (Aggiorna).
 
     1. Selezionare un contenitore in esecuzione a cui connettersi dopo la connessione al daemon e scegliere OK.
-    
+
 4. Scegliere il processo contenitore corrispondente nell'elenco dei **processi disponibili** e selezionare **Connetti** per avviare il debug del processo contenitore C#.
 
     ![Menu Docker collegato completato](../debugger/media/docker-attach-complete-windows.png "Menu di alconnessione Docker Windows completato")
@@ -263,7 +263,7 @@ Per selezionare rapidamente un processo in esecuzione a cui connettersi, in Visu
 |Scenario|Metodo Debug|Nome del processo|Note e collegamenti|
 |-|-|-|-|
 |Debug remoto ASP.NET 4 o 4,5 su un server IIS|USA Remote Tools e **Connetti a processo**|*w3wp.exe*|Vedere [Remote Debugging ASP.NET on a Remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|ASP.NET Core di debug remoto in un server IIS|USA Remote Tools e **Connetti a processo**|*w3wp.exe* o *dotnet.exe*|A partire da .NET Core 3, il processo di *w3wp.exe* viene usato per il [modello di hosting predefinito in-app](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models). Per la distribuzione di app, vedere [pubblicare in IIS](/aspnet/core/host-and-deploy/iis/). Per informazioni più dettagliate, vedere [Remote Debugging ASP.NET Core in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
+|ASP.NET Core di debug remoto in un server IIS|USA Remote Tools e **Connetti a processo**|*w3wp.exe* o *dotnet.exe*|A partire da .NET Core 3, il processo di *w3wp.exe* viene usato per il [modello di hosting predefinito in-app](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models). Per la distribuzione di app, vedere [pubblicare in IIS](/aspnet/core/host-and-deploy/iis/). Per informazioni più dettagliate, vedere [Remote Debugging ASP.NET Core in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)|
 |Eseguire il debug di script lato client in un server IIS locale, per i tipi di app supportati |Usare **Connetti a processo**|*chrome.exe*, *MicrosoftEdgeCP.exe*o *iexplore.exe*|È necessario abilitare il debug degli script. Per Chrome, è inoltre necessario eseguire Chrome in modalità di debug (digitare `chrome.exe --remote-debugging-port=9222` da una riga di comando) e selezionare **JavaScript (Chrome)** nel campo **Connetti a** .|
 |Eseguire il debug di un'app C#, Visual Basic o C++ nel computer locale|Usare il debug standard (**F5**) o **Connetti a processo**|*\<appname>. exe*|Nella maggior parte degli scenari, utilizzare il debug standard e non la **connessione al processo**.|
 |Eseguire il debug remoto di un'app desktop di Windows|Strumenti remoti|N/D| Vedere [eseguire il debug remoto di un'app C# o Visual Basic](../debugger/remote-debugging-csharp.md) o [eseguire il debug remoto di un'app C++](../debugger/remote-debugging-cpp.md)|
@@ -311,7 +311,7 @@ Se si desiderano informazioni più specifiche sui motivi per cui il debugger non
 
     3. Nella finestra di dialogo **Seleziona tipo di codice** selezionare il pulsante di opzione **Esegui il debug di questi tipi di codice** e il tipo di codice per cui si è verificato il problema di connessione. Deselezionare gli altri tipi di codice.
 
-    4. Selezionare **OK**.
+    4. Scegliere **OK**.
 
     5. Nella finestra di dialogo **Connetti a processo** selezionare **Connetti**.
 
