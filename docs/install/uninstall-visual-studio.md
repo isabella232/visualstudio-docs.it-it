@@ -2,7 +2,7 @@
 title: Disinstallare Visual Studio
 titleSuffix: ''
 description: Informazioni sulla procedura di disinstallazione di Visual Studio.
-ms.date: 05/06/2020
+ms.date: 10/12/2020
 ms.custom: seodec18
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9d1412d6e015ec7d05e700370c7a379ada9a57b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e924ead1b8796089242ef20c7f5a3070833b68ba
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419094"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007154"
 ---
 # <a name="uninstall-visual-studio"></a>Disinstallare Visual Studio
 
@@ -70,11 +70,11 @@ Per rimuovere completamente dal computer tutte le installazioni di Visual Studio
 
 ::: moniker range="vs-2019"
 
-1. Individuare il programma di installazione di Visual Studio all'interno del computer in uso.
+1. Individuare il **programma di installazione di Visual Studio** all'interno del computer in uso.
 
-     Ad esempio, in un computer che esegue Windows 10 selezionare **Start** e scorrere fino alla lettera **P** in cui viene visualizzato come **Programma di installazione di Visual Studio**.
+     Nel menu Start di Windows è possibile cercare "programma di installazione".
 
-     ![Aprire il Programma di installazione di Visual Studio](media/vs-2019/vs-installer-windows-start.png "Aprire il Programma di installazione di Visual Studio")
+     ![Programma di installazione di Visual Studio](media/vs-2019/visual-studio-installer.png "Cerca il Programma di installazione di Visual Studio")
 
      > [!NOTE]
      > È anche possibile trovare il programma di installazione di Visual Studio nella posizione seguente:

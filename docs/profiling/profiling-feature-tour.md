@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 511874b5dc7d7c45a1584e95e004a53088f8ea09
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: cb9de05b7e57e4ebc4e7ea76c688a7203774404a
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91861814"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007194"
 ---
 # <a name="first-look-at-profiling-tools"></a>Presentazione degli strumenti di profilatura
 
@@ -107,9 +107,9 @@ Fare doppio clic su una funzione a cui si è interessati per aprire una visualiz
 
 ## <a name="analyze-memory-usage"></a>Analizzare l'utilizzo della memoria
 
-La finestra **strumenti di diagnostica** consente inoltre di valutare l'utilizzo della memoria nell'app utilizzando lo strumento **utilizzo memoria** . Ad esempio, è possibile esaminare il numero e le dimensioni degli oggetti nell'heap. È possibile utilizzare lo [strumento utilizzo memoria integrato nel debugger](../profiling/memory-usage.md) o lo strumento utilizzo memoria post-mortem nel [Profiler delle prestazioni](#post_mortem). Un altro strumento di analisi della memoria, lo [strumento di allocazione di oggetti .NET](../profiling/dotnet-alloc-tool.md), consente di identificare i modelli di allocazione e le anomalie nel codice .NET.
+La finestra **strumenti di diagnostica** consente inoltre di valutare l'utilizzo della memoria nell'app utilizzando lo strumento **utilizzo memoria** . Ad esempio, è possibile esaminare il numero e le dimensioni degli oggetti nell'heap. È possibile utilizzare lo [strumento utilizzo memoria integrato nel debugger](../profiling/memory-usage.md) o lo [strumento utilizzo memoria post-mortem](../profiling/memory-usage-without-debugging2.md) nel profiler delle prestazioni. Un altro strumento di analisi della memoria, lo [strumento di allocazione di oggetti .NET](../profiling/dotnet-alloc-tool.md), consente di identificare i modelli di allocazione e le anomalie nel codice .NET.
 
-Per analizzare l'utilizzo della memoria, è necessario eseguire almeno uno snapshot della memoria. Spesso, il modo migliore per analizzare la memoria consiste nel creare due snapshot: il primo immediatamente prima di un sospetto problema di memoria e il secondo subito dopo che si è verificato un sospetto problema di memoria. È quindi possibile confrontare i due snapshot in una visualizzazione differenziale e vedere esattamente che cosa è cambiato. Nella figura seguente viene illustrato l'acquisizione di uno snapshot con lo strumento integrato nel debugger.
+Per analizzare l'utilizzo della memoria con lo strumento **utilizzo memoria** , è necessario eseguire almeno uno snapshot della memoria. Spesso, il modo migliore per analizzare la memoria consiste nel creare due snapshot: il primo immediatamente prima di un sospetto problema di memoria e il secondo subito dopo che si è verificato un sospetto problema di memoria. È quindi possibile confrontare i due snapshot in una visualizzazione differenziale e vedere esattamente che cosa è cambiato. Nella figura seguente viene illustrato l'acquisizione di uno snapshot con lo strumento integrato nel debugger.
 
 ![Creazione di uno snapshot nella Strumenti di diagnostica](../profiling/media/prof-tour-take-snapshots.gif "Strumenti di diagnostica creare snapshot")
 

@@ -1,6 +1,5 @@
 ---
-title: Analizzare l'utilizzo della CPU | Microsoft Docs
-ms.custom: seodec18
+title: Analizzare l'utilizzo della CPU nel profiler delle prestazioni
 ms.date: 04/02/2020
 ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
@@ -9,24 +8,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 706ffa8d17974894403c22a559edad4c2e4b4ef8
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543390"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007092"
 ---
-# <a name="analyze-cpu-usage"></a>Analizzare l'utilizzo della CPU
+# <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>Analizzare l'utilizzo della CPU senza debug nel profiler delle prestazioni
 
 Un approccio ottimale per avviare l'analisi dei problemi di prestazioni nell'app è l'esame dell'uso della CPU. Lo strumento per le prestazioni **Utilizzo CPU** visualizza il tempo e la percentuale d'uso della CPU dedicati all'esecuzione del codice nelle app C++, C#/Visual Basic e JavaScript.
 
-Lo strumento **Utilizzo CPU** può essere eseguito in un progetto di Visual Studio aperto, in un'app di Microsoft Store installata oppure può essere collegato a un'app o un processo in esecuzione. Per altre informazioni, vedere [eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Lo strumento Utilizzo CPU può essere eseguito in un progetto di Visual Studio aperto, in un'app di Microsoft Store installata oppure può essere collegato a un'app o un processo in esecuzione. È possibile eseguire lo strumento Utilizzo CPU con o senza il debug. Per altre informazioni, vedere [eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-È possibile eseguire lo strumento **Utilizzo CPU** con o senza il debug. Nel debugger è possibile attivare e disattivare la profilatura della CPU e disattivare e visualizzare i dettagli dell'uso della CPU per ogni funzione. È possibile visualizzare i risultati dell'uso della CPU quando l'esecuzione viene messa in pausa, ad esempio in un punto di interruzione.
+Le istruzioni seguenti illustrano come usare lo strumento Utilizzo CPU senza il debugger, con Profiler prestazioni di Visual Studio. L'esempio usa una build di rilascio in un computer locale. Le build di rilascio offrono la migliore visualizzazione delle prestazioni effettive dell'app. Per analizzare l'utilizzo della CPU con le compilazioni di debug (debugger collegato), vedere [la guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md).
 
-Le istruzioni seguenti illustrano come usare lo strumento **Utilizzo CPU** senza il debugger, con **Profiler prestazioni** di Visual Studio. L'esempio usa una build di rilascio in un computer locale. Le build di rilascio offrono la migliore visualizzazione delle prestazioni effettive dell'app. Per l'analisi dell'uso della CPU con le build di debug, vedere la [Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md).
-
-In genere il computer locale replica in modo ottimale l'esecuzione dell'app installata. Per le app Windows Phone la raccolta dei dati direttamente dal dispositivo consente di ottenere i dati più accurati. Per raccogliere dati da un dispositivo remoto, eseguire l'app direttamente nel dispositivo e non tramite una connessione Desktop remoto.
+In genere il computer locale replica in modo ottimale l'esecuzione dell'app installata. Per raccogliere dati da un dispositivo remoto, eseguire l'app direttamente nel dispositivo e non tramite una connessione Desktop remoto.
 
 >[!NOTE]
 >Per l'uso di [Profiler prestazioni](../profiling/profiling-feature-tour.md) è necessario Windows 7 o versione successiva.

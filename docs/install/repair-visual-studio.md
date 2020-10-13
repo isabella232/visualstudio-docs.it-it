@@ -2,7 +2,7 @@
 title: Ripristinare Visual Studio
 titleSuffix: ''
 description: Informazioni su come riparare un'installazione di Visual Studio 2017
-ms.date: 06/15/2020
+ms.date: 10/12/2020
 ms.custom: seodec18
 ms.topic: how-to
 author: ornellaalt
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fda72206059e5c14c46d332e44ea0de481004296
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b2fd0a49a235827d3a9094aad6cc0f59a0cd403
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418964"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007127"
 ---
 # <a name="repair-visual-studio"></a>Ripristinare Visual Studio
 
@@ -63,9 +63,9 @@ In alcuni casi l'installazione di Visual Studio può risultare danneggiata Una c
 
 1. Individuare il **programma di installazione di Visual Studio** all'interno del computer in uso.
 
-     Ad esempio, in un computer che esegue Windows 10 selezionare **Start** e scorrere fino alla lettera **P** in cui viene visualizzato come **Programma di installazione di Visual Studio**.
+     Nel menu Start di Windows è possibile cercare "programma di installazione".
 
-     ![Aprire il Programma di installazione di Visual Studio](media/vs-2019/vs-installer-windows-start.png "Aprire il Programma di installazione di Visual Studio")
+     ![Programma di installazione di Visual Studio](media/vs-2019/visual-studio-installer.png "Cerca il Programma di installazione di Visual Studio")
 
      > [!NOTE]
      > È anche possibile trovare il programma di installazione di Visual Studio nella posizione seguente:

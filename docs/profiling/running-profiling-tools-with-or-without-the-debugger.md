@@ -1,5 +1,6 @@
 ---
 title: Eseguire strumenti di profilatura con o senza debugger | Microsoft Docs
+description: Informazioni sulle differenze tra le diverse modalità disponibili per gli strumenti di profilatura
 ms.date: 5/26/2020
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7db7e704eab7f5d00b20051811c503b143608e2f
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 13fd616e9ec596bfcdeb3718a62dc1a3a1bc8137
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074956"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007160"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Eseguire gli strumenti di profilatura con o senza il debugger
 
@@ -29,7 +30,7 @@ Per decidere quali strumenti e risultati utilizzare, tenere presente quanto segu
 - Strumento integrato debugger e strumento non debugger
   - I problemi di prestazioni esterni, come ad esempio i problemi di I/O dei file o di velocità di risposta della rete non sono visualizzati in modo molto diverso negli strumenti integrati nel debugger o negli altri.
   - Il debugger stesso modifica i tempi di prestazioni, in quanto esegue le operazioni del debugger necessarie, ad esempio intercettare gli eventi di eccezione e caricamento del modulo.
-  - I numeri relativi alle prestazioni della compilazione Release negli strumenti Profiler prestazioni sono i più precisi e accurati. I risultati degli strumenti integrati nel debugger sono particolarmente utili per il confronto con altre misure correlate al debug o per l'utilizzo delle funzionalità del debugger.
+  - I numeri delle prestazioni della build di rilascio nel profiler delle prestazioni sono i più precisi e accurati. I risultati degli strumenti integrati nel debugger sono particolarmente utili per il confronto con altre misure correlate al debug o per l'utilizzo delle funzionalità del debugger.
 - Debug rispetto alla build di rilascio
   - Per i problemi causati da chiamate con utilizzo intensivo della CPU, è possibile che si verifichino notevoli differenze di prestazioni tra le build di rilascio e debug. Verificare se il problema è presente nelle build di rilascio.
   - Se il problema si verifica solo durante le compilazioni di debug, probabilmente non è necessario eseguire gli strumenti non del debugger. Per i problemi di compilazione della versione, decidere se le funzionalità fornite dagli strumenti integrati nel debugger contribuiranno a individuare il problema.
@@ -98,7 +99,7 @@ Per altre informazioni, vedere:
 
 - [Analizzare l'utilizzo della CPU](../profiling/cpu-usage.md)
 - [Analizzare l'utilizzo della memoria per il codice .NET](../profiling/dotnet-alloc-tool.md)
-- [Analizzare l'utilizzo della memoria](../profiling/analyze-memory-usage.md)
+- [Analizzare l'utilizzo della memoria](../profiling/memory-usage-without-debugging2.md)
 - [Analizzare le prestazioni del codice asincrono .NET](../profiling/analyze-async.md)
 - [Analizzare le prestazioni del database](../profiling/analyze-database.md)
 - [Analizzare l'utilizzo della GPU](../profiling/gpu-usage.md)
