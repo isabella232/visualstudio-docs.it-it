@@ -1,5 +1,6 @@
 ---
 title: Log delle modifiche (Visual Studio Tools per Unity, Windows) | Microsoft Docs
+description: Visualizzare il log delle modifiche per Visual Studio Tools per Unity, Windows. Vedere le modifiche della versione 1.0.0.0 con 4.7.0.0 e oltre.
 ms.custom: ''
 ms.date: 7/30/2020
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 2a069753040be65f963c1047ef376bef653bfbc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f745cca14202c87386dc276b00e89fb70b399404
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87471519"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039438"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log delle modifiche (Visual Studio Tools per Unity, Windows)
 
@@ -1668,7 +1669,7 @@ Data di rilascio: 25 marzo 2013
 
 - Semplificazione del debug remoto attraverso l'eliminazione della necessità di configurare una cartella condivisa in Unity. È ora sufficiente avere accesso al progetto di Unity da Windows.
 
-- Installazione di un profilo di Unity personalizzato come profilo di destinazione .NET standard. In questo modo, vengono corretti tutti i falsi positivi eventualmente indicati da ReSharper.
+- Installare un profilo di Unity personalizzato come profilo di destinazione .NET standard. In questo modo, vengono corretti tutti i falsi positivi eventualmente indicati da ReSharper.
 
 - Risoluzione di un bug del motore di script di Unity, in modo che il debugger non generi un'interruzione in corrispondenza di thread registrati non correttamente.
 
@@ -1678,7 +1679,7 @@ Data di rilascio: 25 marzo 2013
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
-- Correzione del profilo .NET personalizzato.
+- Correzione del profilo .NET personalizzato
 
 - Correzione dell'integrazione dei temi, che corregge i problemi relativi al tema scuro di Visual Studio 2012.
 
@@ -1751,7 +1752,7 @@ Data di rilascio: 3 gennaio 2013
 
 - Correzione di un'eccezione che poteva verificarsi durante la valutazione di espressioni UnityScript e Boo.
 
-- Correzione di una regressione per cui la modifica del livello API di .NET in Unity non comportava l'attivazione di un aggiornamento dei file di progetto.
+- Correzione di una regressione in cui la modifica del livello dell'API .NET in Unity non comporta l'attivazione di un aggiornamento dei file di progetto.
 
 - Correzione di un problema di un'API per cui il codice utente non poteva fare parte del gestore dei callback di log.
 
@@ -1776,7 +1777,7 @@ Data di rilascio: 28 novembre 2012
 
 - Correzione di una regressione nello sfondo di Esplora progetti Unity in Visual Studio 2012.
 
-- Correzione della generazione di progetti per gli utenti del profilo . NET completo.
+- Correzione della generazione di progetti per gli utenti del profilo .NET completo.
 
 - Correzione della generazione di progetti per gli utenti della destinazione Web.
 

@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 09/29/2020
+ms.date: 10/13/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 6ea81aab75b0499abb427d98e230b1f3909cef02
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 3c012f8adddb4d9519d9541b26a24684c6f55341
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862262"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039787"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -27,8 +27,12 @@ ms.locfileid: "91862262"
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2019.
 
-| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.7.6 | Versione | 13 ottobre 2020 | 16.7.30611.23 |
+| 16.8.0 | Preview 4 | 13 ottobre 2020 | 16.8.30608.117 |
+| 16.0.19 | Versione | 13 ottobre 2020 | 16.0.28803.846 |
+| 16.4.14 | Versione | 13 ottobre 2020 | 16.4.30607.51 |
 | 16.8.0 | Anteprima 3,2 | 29 settembre 2020 | 16.8.30524.135 |
 | 16.7.5 | Versione | 29 settembre 2020 |  16.7.30523.141 |
 | 16.8.0 | Anteprima 3,1 | 22 settembre 2020 | 16.8.30516.212 |
@@ -178,8 +182,9 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
-| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.28 | Versione | 13 ottobre 2020 | 15.9.28307.1274 |
 | 15.9.27 | Versione | 8 settembre 2020 | 15.9.28307.1259 |
 | 15.9.26 | Versione | 11 agosto 2020 | 15.9.28307.1234 |
 | 15.9.25 | Versione | 14 luglio 2020 | 15.9.28307.1216 |

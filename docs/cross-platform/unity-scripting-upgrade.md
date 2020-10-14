@@ -1,5 +1,6 @@
 ---
 title: Uso di .NET 4.x in Unity
+description: Informazioni su come usare .NET 4. x in Unity. Abilitare il runtime di scripting .NET 4. x. Sfruttare la compatibilità di .NET. Esaminare la nuova sintassi e le nuove funzionalità del linguaggio.
 author: therealjohn
 ms.author: johmil
 ms.date: 08/29/2018
@@ -8,12 +9,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 9a53db2d7cb73fbbb8ea694386dbada3186957ee
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 06efbe9d346cbbe8b9e81d95be257742b659cf8f
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508977"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039846"
 ---
 # <a name="using-net-4x-in-unity"></a>Uso di .NET 4.x in Unity
 

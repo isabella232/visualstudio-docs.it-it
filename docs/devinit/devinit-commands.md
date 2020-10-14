@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a22e0f5a20050e62aa9978c40f2189c82ca3071c
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 56a2da4e02f890e199a6ff69b5a61882d1dfa416
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352327"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039798"
 ---
 # <a name="devinit-commands"></a>comandi devinit
 
@@ -34,10 +34,38 @@ Opzioni facoltative per il `devinit init` comando.
 
 | Argomento             | Obbligatoria | Descrizione                                                               |
 |----------------------|----------|---------------------------------------------------------------------------|
-| -f,--file           | No       | Percorso della _.devinit.jssul_ file.                                         |
+| -f,--file            | No       | Percorso della _.devinit.jssul_ file.                                         |
 | --Error-Action       | No       | Specifica la modalità di gestione degli errori. Opzioni: arresta, ignora, continua (impostazione predefinita).|
 | -v,--verbose         | No       | Genera output dettagliato.                                                      |
 | -n,--esecuzione a secco         | No       | Esecuzione a secco.                                                                  |
+
+#### <a name="--file-argument"></a>--argomento del file
+
+Specifica il percorso del _devinit.jssul_ file. Se--file non è specificato, si cerca un file predefinito nei percorsi seguenti:
+
+* {Current-directory} \\.devinit.js
+* {Current-directory} \\devinit.js
+* {Current-directory} \\ ..devinit.jsdi devinit \\
+* {Current-directory} \\ .devinit.jsdi devinit \\
+* {Current-directory} \\.devinit.jsdi devinit \\
+* {Current-directory} \\devinit.jsdi devinit \\
+* {Current-directory} \\ . devcontainer \\.devinit.json
+* {Current-directory} \\ . devcontainer \\devinit.json
+
+> [!NOTE]
+> Se vengono rilevati più file predefiniti, il file verrà usato per la prima volta nell'elenco precedente.
+
+#### <a name="--error-action-argument"></a>--Error-argomento azione
+
+Vedere di [seguito](#options-for-run).
+
+#### <a name="--verbose-switch"></a>opzione--verbose
+
+Vedere di [seguito](#options-for-run).
+
+#### <a name="--dry-run-switch"></a>--opzione di esecuzione a secco
+
+Vedere di [seguito](#options-for-run).
 
 ## <a name="run"></a>Esegui
 
@@ -51,23 +79,14 @@ Esegue lo strumento specifico. i parametri sono elencati di seguito. Vedere la [
 
 Opzioni per il `devinit run` comando.
 
-| Argomento                                  | Obbligatoria | Descrizione                                                                          |
-|-------------------------------------------|----------|--------------------------------------------------------------------------------------|
-| -t,--strumento                                 | Sì      | Obbligatorio. Nome dello strumento.                                                             |
-| -i,--input                                | No       | Valore di input dello strumento. Ad esempio, un nome file, un pacchetto o un nome.                           |
-| --Error-Action                            | No       | Specifica come gestire gli errori dello strumento: arresta, ignora, continua. Il valore predefinito è stop. |
-| -v,--verbose                              | No       | Genera output dettagliato.                                                                 |
-| -n,--esecuzione a secco                              | No       | Esecuzione a secco.                                                                             |
-| --&lt;arg1 &gt; &lt; arg2 &gt; &lt; argN&gt;  | No       | Argomenti aggiuntivi della riga di comando per lo strumento.                                       |
-
-#### <a name="--file-argument"></a>--argomento del file
-
-Specifica il percorso del _devinit.jssul file. Se – file non è specificato, si cerca un file predefinito nei percorsi seguenti:
-
-* {Current-directory} \\.devinit.js
-* {Current-directory} \\ ..devinit.jsdi devinit \\
-
-Anche i percorsi senza l'oggetto che conduce alla `.` Directory o al nome file corrisponderanno.
+| Argomento                                      | Obbligatoria | Descrizione                                                                          |
+|-----------------------------------------------|----------|--------------------------------------------------------------------------------------|
+| -t,--strumento                                     | Sì      | Obbligatorio. Nome dello strumento.                                                             |
+| -i,--input                                    | No       | Valore di input dello strumento. Ad esempio, un nome file, un pacchetto o un nome.                     |
+| --Error-Action                                | No       | Specifica come gestire gli errori dello strumento: arresta, ignora, continua. Il valore predefinito è stop. |
+| -v,--verbose                                  | No       | Genera output dettagliato.                                                                 |
+| -n,--esecuzione a secco                                  | No       | Esecuzione a secco.                                                                             |
+| --&lt;arg1 &gt; &lt; arg2 &gt; ... &lt; argN&gt;  | No       | Argomenti aggiuntivi della riga di comando per lo strumento.                                       |
 
 #### <a name="--error-action-argument"></a>--Error-argomento azione
 
@@ -79,13 +98,13 @@ Specifica l'azione da intraprendere se uno strumento restituisce un codice di us
 | ignore   | Continuare l'elaborazione di altri strumenti dopo l'emissione di un avviso nell'output standard. Il codice di uscita del processo devinilt deve essere sempre zero (esito positivo). L' `ignore` impostazione Ignora tutti gli errori.                                                                                                      |
 | stop     | Genera un errore nell'errore standard e interrompe l'elaborazione degli strumenti. Il codice di uscita del devinit.exe è diverso da zero (esito negativo). È simile all'azione continua errore, ma l'elaborazione viene interrotta al primo errore rilevato. `stop` è l'azione di errore predefinita per tutti i comandi ad eccezione di init. |
 
-#### <a name="--dry-run-switch"></a>--opzione di esecuzione a secco
-
-Comandi echo Tool che verrebbero eseguiti, ma non eseguono alcun strumento. 
-
 #### <a name="--verbose-switch"></a>opzione--verbose
 
 Genera output dettagliato nell'output standard. Se lo strumento da eseguire supporta un'opzione verbose, propagare l'opzione verbose allo strumento.
+
+#### <a name="--dry-run-switch"></a>--opzione di esecuzione a secco
+
+Comandi echo Tool che verrebbero eseguiti, ma non eseguono alcun strumento.
 
 #### <a name="additional-command-line-arguments"></a>Argomenti aggiuntivi della riga di comando
 

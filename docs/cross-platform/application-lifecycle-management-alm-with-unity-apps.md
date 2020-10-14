@@ -1,5 +1,6 @@
 ---
 title: Application Lifecycle Management (ALM) con app Unity | Microsoft Docs
+description: Informazioni sulla gestione del ciclo di vita delle applicazioni (ALM) con app Unity. Esaminare gli strumenti agile, modellare, scrivere codice, compilare, testare e migliorare la qualità del codice.
 ms.date: 08/21/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
@@ -9,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 7b4c4dfdb8e603d7dda2ebd55c4382e57414de25
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 17cfe2dd0a1ba25eeab6b0bb31ad849303207a02
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928030"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039924"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps con app Unity
 

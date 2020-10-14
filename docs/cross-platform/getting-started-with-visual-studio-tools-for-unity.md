@@ -1,5 +1,6 @@
 ---
 title: Introduzione a Visual Studio Tools per Unity | Microsoft Docs
+description: Inizia a usare Visual Studio Tools per Unity. Installare Visual Studio, configurare Unity per l'uso con Visual Studio e ottenere informazioni sul supporto per le versioni precedenti.
 ms.custom: ''
 ms.date: 05/11/2020
 ms.technology: vs-unity-tools
@@ -10,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a8f3e183bd72e9894eae55a5ed7c4f9322d44953
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 223458a448a4b32c3e9480f7189d5dc636ce8375
+ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250102"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "92039451"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Introduzione a Visual Studio Tools per Unity
 
