@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b10e4b211bb1a187f51f95aa6eb78d2de451516
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddcdf62fbfe6d683159cccce24280bdb08cedc2a
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699653"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099375"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Supporto per Visual Studio SDK
 Sono disponibili diverse opzioni di supporto per i clienti che hanno domande su come estendere Visual Studio Integrated Development Environment (IDE).
@@ -30,7 +30,7 @@ Sono disponibili diverse opzioni di supporto per i clienti che hanno domande su 
  I membri del team di sviluppo di Visual Studio e altri sviluppatori che estendono Visual Studio spesso partecipano al newsgroup Microsoft. public. vstudio. Extensibility. Questo newsgroup è un newsgroup gestito. Per gli abbonati MSDN universali, assicurati di registrare un alias per la posta indesiderata per consentire a Microsoft di rispondere.
 
 ### <a name="msdn-forums"></a>Forum MSDN
- I [Forum MSDN](https://social.msdn.microsoft.com/Forums/en-US/home) forniscono un altro modo per chattare con peer ed esperti. L'interfaccia utente grafica dei forum è progettata per facilitarne l'utilizzo rispetto ai newsgroup. Il [Forum di estendibilità di Visual Studio](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) è un valido punto di partenza per la ricerca di risposte alle domande di estendibilità. Eseguire sempre la ricerca prima di porre una domanda perché qualcun altro potrebbe avere già richiesto la stessa domanda.
+ I [Forum MSDN](https://social.msdn.microsoft.com/Forums/en-US/home) forniscono un altro modo per chattare con peer ed esperti. L'interfaccia utente grafica dei forum è progettata per facilitarne l'utilizzo rispetto ai newsgroup. Il [Forum di estendibilità di Visual Studio](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts&preserve-view=true) è un valido punto di partenza per la ricerca di risposte alle domande di estendibilità. Eseguire sempre la ricerca prima di porre una domanda perché qualcun altro potrebbe avere già richiesto la stessa domanda.
 
 ### <a name="visual-studio-gallery"></a>Visual Studio Gallery
  Il [Visual Studio Marketplace](https://marketplace.visualstudio.com/) è il posto per le estensioni e il codice di esempio. È possibile trovare strumenti che migliorano la produttività e l'esperienza utente con Visual Studio, le applicazioni di esempio che illustrano come usare VSPackage e il Managed Extensibility Framework (MEF) e altri tipi di esempi.
@@ -62,6 +62,6 @@ Domande sulle offerte di supporto tecnico Premier insieme al programma VSIP poss
 
 Le informazioni sulle singole richieste di supporto sono reperibili a [singole richieste di supporto](https://support.microsoft.com/supportforbusiness/productselection).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Comunica con Microsoft](../ide/feedback-options.md)

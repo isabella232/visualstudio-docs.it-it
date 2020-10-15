@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2981d510b5f56b89a2cb68d1a6bee93222d71b3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22c18fd457d4827d3abf3a3494ad622873eb5c7b
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596658"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099297"
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
 È possibile usare i requisiti e i modelli architetturali per organizzare i test del sistema e dei relativi componenti. Questa procedura consente di verificare che vengano testati i requisiti importanti per gli utenti e per altre parti interessate e di aggiornare rapidamente i test quando cambiano i requisiti. Se si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], è anche possibile gestire i collegamenti tra i modelli e i test.
@@ -59,7 +59,7 @@ ms.locfileid: "75596658"
 
 1. In [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] creare un requisito e usarlo come base per un gruppo di test.
 
-    Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Potrebbe trattarsi di un elemento di lavoro storia utente, requisito o caso di utilizzo, a seconda del modello di processo utilizzato dal progetto con Team Foundation. Per ulteriori informazioni, vedere [informazioni sugli strumenti agile e la gestione dei progetti Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Potrebbe trattarsi di un elemento di lavoro storia utente, requisito o caso di utilizzo, a seconda del modello di processo utilizzato dal progetto con Team Foundation. Per ulteriori informazioni, vedere [informazioni sugli strumenti agile e la gestione dei progetti Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true).
 
 2. Collegare l'elemento di lavoro requisito a uno o più casi di utilizzo del modello.
 
@@ -131,7 +131,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Associazione di test case agli elementi del modello
  Se il progetto usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], è possibile collegare i test agli elementi del modello. In questo modo è possibile trovare rapidamente i test interessati da una modifica ai requisiti e tenere traccia dell'ambito di applicazione di un requisito.
 
- È possibile collegare i test a tutti i tipi di elemento. Di seguito sono riportati alcuni esempi:
+ È possibile collegare i test a tutti i tipi di elemento. Ecco alcuni esempi:
 
 - Collegare un caso di utilizzo ai test che ne eseguono la verifica.
 
@@ -147,7 +147,7 @@ Assert (countAfter == countBefore = 1);
 
 1. In [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] creare un requisito e usarlo come base per un gruppo di test.
 
-    Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Potrebbe trattarsi di un elemento di lavoro storia utente, requisito o caso di utilizzo, a seconda del modello di processo utilizzato dal progetto con Team Foundation. Per ulteriori informazioni, vedere [informazioni sugli strumenti agile e la gestione dei progetti Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Potrebbe trattarsi di un elemento di lavoro storia utente, requisito o caso di utilizzo, a seconda del modello di processo utilizzato dal progetto con Team Foundation. Per ulteriori informazioni, vedere [informazioni sugli strumenti agile e la gestione dei progetti Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true).
 
 2. Collegare l'elemento di lavoro requisito a uno o più elementi del modello.
 
@@ -155,7 +155,7 @@ Assert (countAfter == countBefore = 1);
 
 3. Aggiungere al gruppo di test i test case che verificano il requisito espresso nell'elemento del modello.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare modelli per l'app](../modeling/create-models-for-your-app.md)
 - [Modellare i requisiti utente](../modeling/model-user-requirements.md)

@@ -8,19 +8,19 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fe6811f4deaa5958b050a8f93f74e48e2dc73f38
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4e9aea22a63f2eee8f83ee597ed11c90df7f6b1a
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809289"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099401"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Panoramica di agenti di test e test controller per i test di carico
 
 Visual Studio è in grado di generare un carico simulato per l'app usando macchine virtuali o fisiche. Questi computer devono essere configurati in modo da avere un solo controller di test e uno o più agenti di test. È possibile usare il controller di test e gli agenti di test per generare un carico maggiore rispetto a quello che può essere generato da un singolo computer.
 
 > [!NOTE]
-> È anche possibile usare il test di carico basato su cloud per specificare le macchine virtuali che generano il caricamento di molti utenti che accedono al sito Web contemporaneamente. Tuttavia, l'uso del programma di installazione dell'agente di test controller/test nelle macchine virtuali ospitate nel cloud non è supportato. Altre informazioni sui test di carico basati su cloud sono disponibili nell'articolo relativo all'[esecuzione di test di carico con Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+> È anche possibile usare il test di carico basato su cloud per specificare le macchine virtuali che generano il caricamento di molti utenti che accedono al sito Web contemporaneamente. Tuttavia, l'uso del programma di installazione dell'agente di test controller/test nelle macchine virtuali ospitate nel cloud non è supportato. Altre informazioni sui test di carico basati su cloud sono disponibili nell'articolo relativo all'[esecuzione di test di carico con Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts&preserve-view=true).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -90,6 +90,6 @@ Per informazioni importanti sui requisiti hardware e software per i test control
 
 Dopo aver installato un controller di test e uno o più agenti, è possibile specificare se usare un'esecuzione remota con il controller di test nell'impostazione di test per i test di carico. Inoltre, è possibile specificare i dati e gli adattatori diagnostici da usare con il ruolo associato agli agenti nell'impostazione di test.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md)

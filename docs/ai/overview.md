@@ -1,5 +1,7 @@
 ---
 title: Panoramica di Visual Studio Tools for AI
+description: Informazioni su come Visual Studio Tools for AI è un Integrated Development Environment (IDE) che è possibile usare per compilare, testare e distribuire soluzioni di apprendimento avanzato.
+ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jillfra
@@ -8,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: overview
 ms.workload:
 - multiple
-ms.openlocfilehash: b4f2f9b1e827bc7bcb53f37693b811dcaecf1d09
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 7b660881b18efca4ec81b3f8f31e8dd64870d4d0
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211050"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099167"
 ---
 # <a name="overview-of-visual-studio-tools-for-ai"></a>Panoramica di Visual Studio Tools for AI
 
@@ -39,5 +41,5 @@ Esaminare gli esempi nel [repository degli esempi](https://github.com/Microsoft/
 
 Per ulteriori informazioni su Visual Studio Tools for AI, inclusi i requisiti di sistema e le opzioni di supporto, vedere la pagina [informazioni su Visual Studio Tools for ai](about-ai-tools.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 [Estendibilità in Visual Studio](../extensibility/index.yml?view=vs-2017&preserve-view=true)
