@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5cf32bdf56f75ded7d193082f1072b79c3d16b3c
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87425394"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136914"
 ---
 # <a name="common-msbuild-project-items"></a>Elementi di progetto MSBuild comuni
 
@@ -41,7 +41,7 @@ Rappresenta un riferimento all'assembly (gestito) nel progetto.
 |FusionName|Stringa facoltativa. Specifica il nome Fusion semplice o sicuro per l'elemento.<br /><br /> Questo attributo, se specificato, consente di risparmiare tempo in quanto non comporta l'apertura del file di assembly per ottenere il nome Fusion.|
 |SpecificVersion|Valore booleano facoltativo. Specifica se è necessario fare riferimento solo alla versione nel nome Fusion.|
 |Alias|Stringa facoltativa. Gli alias per il riferimento.|
-|Privati|Valore booleano facoltativo. Specifica se il riferimento deve essere copiato nella cartella di output. Questo attributo corrisponde alla proprietà **Copia localmente** del riferimento nell'IDE di Visual Studio.|
+|Private|Valore booleano facoltativo. Specifica se il riferimento deve essere copiato nella cartella di output. Questo attributo corrisponde alla proprietà **Copia localmente** del riferimento nell'IDE di Visual Studio.|
 
 ### <a name="comreference"></a>COMReference
 
@@ -81,9 +81,15 @@ Rappresenta un riferimento a un altro progetto. `ProjectReference` gli elementi 
 |Nome metadati degli elementi|Descrizione|
 |---------------|-----------------|
 |Nome|Stringa facoltativa. Nome visualizzato del riferimento.|
-|Progetto|Stringa facoltativa. GUID per il riferimento, nel formato {12345678-1234-1234-1234-1234567891234}.|
-|Pacchetto|Stringa facoltativa. Il percorso del file di progetto a cui viene fatto riferimento.|
+|GlobalPropertiesToRemove|Oggetto `string[]` facoltativo. Nomi delle proprietà da rimuovere quando si compila il progetto a cui si fa riferimento, ad esempio `RuntimeIdentifier;PackOnBuild` . Per impostazione predefinita è vuoto.|
+|Project|Stringa facoltativa. GUID per il riferimento, nel formato {12345678-1234-1234-1234-1234567891234}.|
+|OutputItemType|Stringa facoltativa. Tipo di elemento in cui generare gli output di destinazione. Il valore predefinito è blank. Se i metadati di riferimento sono impostati su "true" (impostazione predefinita), gli output di destinazione diventeranno riferimenti per il compilatore.|
 |ReferenceOutputAssembly|Valore booleano facoltativo. Se impostato su `false`, non include l'output del progetto a cui si fa riferimento come [riferimento](#reference) del progetto, ma assicura che l'altro progetto venga compilato prima di questo. Il valore predefinito è `true`.|
+|SetConfiguration|Stringa facoltativa. Imposta la proprietà globale `Configuration` per il progetto a cui si fa riferimento, ad esempio `Configuration=Release` .|
+|SetPlatform|Stringa facoltativa. Imposta la proprietà globale `Platform` per il progetto a cui si fa riferimento, ad esempio `Platform=AnyCPU` .|
+|SetTargetFramework|Stringa facoltativa. Imposta la proprietà globale `TargetFramework` per il progetto a cui si fa riferimento, ad esempio `TargetFramework=netstandard2.0` .|
+|SkipGetTargetFrameworkProperties|Valore booleano facoltativo. Se `true` , compila il progetto a cui si fa riferimento senza negoziare il valore più compatibile `TargetFramework` . Il valore predefinito è `false`.|
+|Server di destinazione|Oggetto `string[]` facoltativo. Elenco di destinazioni separate da punto e virgola nei progetti a cui si fa riferimento da compilare. Per impostazione predefinita, il valore predefinito è `$(ProjectReferenceBuildTargets)` vuoto, che indica le destinazioni predefinite.|
 
 ### <a name="compile"></a>Compilazione
 
@@ -112,7 +118,7 @@ Rappresenta le risorse da incorporare nell'assembly generato.
 | CopyToOutputDirectory | Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori possibili sono:<br /><br /> 1. mai<br />2. always<br />3. PreserveNewest |
 | LogicalName | Stringa obbligatoria. Nome logico della risorsa incorporata. |
 
-### <a name="content"></a>Content
+### <a name="content"></a>Contenuto
 
 Rappresenta file che non sono compilati nel progetto, ma possono essere incorporati o pubblicati con il progetto.
 

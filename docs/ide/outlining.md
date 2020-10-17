@@ -1,6 +1,8 @@
 ---
 title: Comprimere ed espandere le aree di codice
-ms.date: 11/04/2016
+description: Informazioni su come usare i comandi Espandi e Comprimi per lavorare in modalità struttura in Visual Studio
+ms.custom: SEO-VS-2020
+ms.date: 10/15/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - outlining
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ad01726b57073cad3a5a2876a4b22667d3770a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e45d7192c35ed60442fadf1a3eb302997fbaf381
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545444"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136667"
 ---
 # <a name="outlining"></a>struttura
 
@@ -36,14 +38,14 @@ Quando si usa il codice di struttura, è possibile espandere le sezioni che si i
 I comandi **Annulla** e **Ripristina** nel menu **Modifica** hanno effetto su queste azioni. Le operazioni **Copia**, **Taglia**, **Incolla** e di trascinamento della selezione mantengono le informazioni relative alla struttura ma non lo stato dell'area comprimibile. Ad esempio, quando si copia un'area compressa, l'operazione **Incolla** incollerà il testo copiato come area espansa.
 
 > [!CAUTION]
-> Quando si modifica un'area della struttura, la struttura potrebbe andare persa. Ad esempio, le operazioni di eliminazione o Trova e Sostituisci potrebbero cancellare la parte finale dell'area.
+> Quando si modifica un'area della struttura, la struttura potrebbe andare persa. Ad esempio, le operazioni di eliminazione o **ricerca e sostituzione** possono cancellare la fine dell'area.
 
 I comandi seguenti sono disponibili nel sottomenu **modifica**  >  **struttura** .
 
 |Nome|Descrizione|
 |-|-|
 |Nascondi selezione|(**CTRL** + **M**, **CTRL** + **H**): comprime un blocco di codice selezionato che normalmente non sarebbe disponibile per la struttura, ad esempio un `if` blocco. Per rimuovere l'area personalizzata, usare **Visualizza selezione nascosta** (o **Ctrl**+**M**, **Ctrl**+**U**). Non disponibile in Visual Basic.|
-|Espandi/comprimi struttura|- Consente di invertire lo stato nascosto o espanso corrente della sezione di struttura più interna quando il cursore si trova in una sezione compressa nidificata.|
+|Espandi/comprimi struttura| (**CTRL** + **M**, **CTRL** + **M**): inverte lo stato nascosto o espanso corrente della sezione della struttura più interna quando il cursore si trova in una sezione compressa nidificata.|
 |Attiva/disattiva tutta la struttura|(**CTRL** + **M**, **CTRL** + **L**)-imposta tutte le aree sullo stesso stato compresso o espanso. Se alcune aree sono espanse e altre compresse, quelle compresse vengono espanse.|
 |Arresta struttura|(**CTRL** + **M**, **CTRL** + **P**)-rimuove tutte le informazioni sulla struttura per l'intero documento.|
 |Visualizza selezione nascosta|(**CTRL** + **M**, **CTRL** + **U**): rimuove le informazioni sulla struttura per l'area definita dall'utente attualmente selezionata. Non disponibile in Visual Basic.|

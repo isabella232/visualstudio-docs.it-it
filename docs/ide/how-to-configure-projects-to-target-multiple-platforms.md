@@ -1,5 +1,6 @@
 ---
 title: Configurare progetti per più piattaforme di destinazione
+description: Scopri in che modo Visual Studio fornisce una soluzione per la destinazione di diverse architetture di CPU, o piattaforme, in una sola volta.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2643e7f413a68d820780db80c87818dd0b8b9c03
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ce4dfbf2808071d47e1f84eef660d936181227f3
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036509"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136706"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Procedura: Configurare progetti per più piattaforme di destinazione
 
@@ -62,7 +63,7 @@ Poiché è possibile modificare le impostazioni in base alla combinazione di con
 
    È possibile avere una piattaforma a livello di soluzione impostata ad esempio su [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] e non avere all'interno della soluzione alcun progetto per la stessa piattaforma. È anche possibile avere più progetti nella soluzione ognuno con una piattaforma diversa come destinazione. In questi casi è consigliabile creare una nuova configurazione con un nome descrittivo per evitare confusione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Procedura: creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md)
 - [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md)

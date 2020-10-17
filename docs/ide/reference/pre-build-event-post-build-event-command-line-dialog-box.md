@@ -1,5 +1,6 @@
 ---
 title: Finestra di dialogo riga di comando eventi pre-compilazione-post-compilazione
+description: Informazioni su come è possibile pre-o post-compilazione di eventi direttamente nella casella di modifica o su come è possibile selezionare le macro pre-compilazione e post-compilazione da un elenco di macro disponibili.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -35,12 +36,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a9ec2acb6802c19b48ba6254fb0a8812935d400
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 538b6c0dc3a163936e04a85b374a239d43e46e8e
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038361"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136810"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione
 
@@ -96,7 +97,7 @@ Inserisce nella casella di modifica della riga di comando la macro selezionata n
 |`$(TargetFileName)`|Nome file del file di output principale per la build (definito come nome di base ed estensione di file).|
 |`$(TargetExt)`|Estensione di file del file di output principale per la compilazione. È incluso il punto '.' prima dell'estensione.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Specifica di eventi di compilazione personalizzati in Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [Pagina Eventi di compilazione, Progettazione progetti (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)

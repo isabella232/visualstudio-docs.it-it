@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 331206ee59c7cd05dd4871c422bd6b1a7ff85419
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 35b05410c1a9ac36273a43481929a3be463d8af1
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037699"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136693"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: Creare un nuovo file di progetto MSBuild
 
@@ -239,13 +239,13 @@ Il file di progetto sarà ora simile al codice seguente:
 >
 > `<OutputPath>Bin\</OutputPath>`
 >
-> `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`
+> `OutputAssembly="$(OutputPath)$(AssemblyName).exe" />`
 >
 > è meglio di
 >
 > `<OutputPath>Bin</OutputPath>`
 >
-> `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`
+> `OutputAssembly="$(OutputPath)\$(AssemblyName).exe" />`
 
 ## <a name="test-the-build-properties"></a>Testare le proprietà di compilazione
 
@@ -471,7 +471,7 @@ Nell'esempio seguente viene illustrato un file di progetto che compila un'applic
 
  Visual Studio è in grado di eseguire automaticamente molte delle operazioni descritte in questa procedura dettagliata. Per informazioni su come usare Visual Studio per creare, modificare, compilare e testare i file di progetto MSBuild, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Panoramica di MSBuild](../msbuild/msbuild.md)
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)

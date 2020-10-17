@@ -1,5 +1,6 @@
 ---
 title: Non visualizzare gli avvisi per i progetti e i pacchetti NuGet
+description: Informazioni su come usare Visual Studio per declutterare un log di compilazione filtrando uno o più tipi di avvisi del compilatore.
 ms.custom: SEO-VS-2020
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33abc359dea3e1c7982e5d1689debc1f8e881106
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a59f3706e2d33e87e760d2b88c4c7ba78eca4ef2
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038582"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136367"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procedura: Non visualizzare gli avvisi del compilatore
 
@@ -131,7 +132,7 @@ In alcuni casi, può essere necessario escludere gli avvisi del compilatore NuGe
 
    L'avviso scompare da **Esplora soluzioni** e dall'**Elenco errori**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Procedura dettagliata: Creare un'applicazione](../ide/walkthrough-building-an-application.md)
 - [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md)

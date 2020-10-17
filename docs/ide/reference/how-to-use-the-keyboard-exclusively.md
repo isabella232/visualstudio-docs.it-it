@@ -2,7 +2,7 @@
 title: Usare Visual Studio senza il mouse
 titleSuffix: ''
 description: Informazioni su come spostarsi nell'ambiente di sviluppo integrato (IDE) di Visual Studio e scrivere codice usando esclusivamente la tastiera.
-ms.date: 05/10/2019
+ms.date: 10/16/2020
 ms.topic: how-to
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a8c14f59b87be1e59b5d115ea84b555677cda32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52d6bda98ee01dad4faf4a51412e810e1f5e4fa7
+ms.sourcegitcommit: 4eb8fe6eb7f1dc639f1d213db05a7a3007e8087e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770235"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "92156561"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Come usare esclusivamente la tastiera
 
@@ -37,13 +37,13 @@ Per un elenco completo delle combinazioni di tasti di scelta rapida dei comandi 
 ::: moniker-end
 
 > [!NOTE]
-> A seconda delle impostazioni o dell'edizione di Visual Studio usata, le finestre di dialogo e i comandi di menu visualizzati possono non corrispondere a quelli descritti nella Guida. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../environment-settings.md#reset-settings).
+> A seconda delle impostazioni o dell'edizione di Visual Studio usata, le finestre di dialogo e i comandi di menu visualizzati possono non corrispondere a quelli descritti nella Guida. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni vedere [Reimpostare le impostazioni](../environment-settings.md#reset-settings).
 
 ## <a name="toolbox-controls"></a>Controlli della casella degli strumenti
 
 Per aggiungere un controllo della casella degli strumenti a un modulo o a una finestra di progettazione senza usare il mouse:
 
-1. Sulla barra dei menu scegliere **Visualizza**  >  **casella degli strumenti**.
+1. Nella barra dei menu selezionare **Visualizza**  >  **casella degli strumenti**.
 
 2. Usare i **Ctrl** + tasti**freccia su** o **CTRL** + **freccia giù** per spostarsi tra le sezioni della scheda della **casella degli strumenti** .
 
@@ -71,9 +71,9 @@ Per passare da un'opzione all'altra all'interno di una finestra di dialogo e mod
 
 ## <a name="navigate-between-windows-and-files"></a>Spostarsi tra finestre e file
 
-- Per spostarsi tra i file in un editor o una finestra di **Ctrl**progettazione, scegliere il tasto + di scelta rapida della**scheda** CTRL per visualizzare lo strumento di spostamento dell'IDE con **i file attivi** selezionati. Scegliere **Invio** per passare alla finestra evidenziata.
+- Per spostarsi tra i file in un editor o in una finestra di progettazione, **utilizzare il tasto** + di scelta rapida**Tab** per visualizzare lo strumento di spostamento dell'IDE con **i file attivi** selezionati. Scegliere **Invio** per passare alla finestra evidenziata.
 
-- Per spostarsi tra le finestre degli strumenti ancorate, **Alt**premere il tasto + di scelta rapida ALT**F7** per visualizzare lo strumento di spostamento dell'IDE con le **finestre degli strumenti attive** selezionate. Premere **INVIO** per passare alla finestra evidenziata.
+- Per spostarsi tra le finestre degli strumenti ancorate, **Alt**usare la + scelta rapida da tastiera ALT**F7** per visualizzare lo strumento di spostamento dell'IDE con le **finestre degli strumenti attive** selezionate. Premere **INVIO** per passare alla finestra evidenziata.
 
 ## <a name="move-and-dock-tool-windows"></a>Spostare e ancorare finestre degli strumenti
 
@@ -81,7 +81,7 @@ Per passare da un'opzione all'altra all'interno di una finestra di dialogo e mod
 
 2. Nel menu **Finestra** selezionare l'opzione **Finestra ancorata**.
 
-3. Premere **ALT** + **barra spaziatrice**, quindi scegliere **Sposta**.
+3. Premere **ALT** + **barra spaziatrice**, quindi selezionare **Sposta**.
 
    Verrà visualizzata la guida a forma di rombo per l'ancoraggio.
 

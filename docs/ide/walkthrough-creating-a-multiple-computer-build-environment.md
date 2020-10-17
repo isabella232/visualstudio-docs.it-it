@@ -1,5 +1,6 @@
 ---
 title: Creare un ambiente di compilazione con più computer
+description: Creare un ambiente di compilazione all'interno dell'organizzazione installando Visual Studio in un computer host e quindi copiando vari file e impostazioni in un altro computer.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 595317be1c3f24c9759bc5bb574a758795066659
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1c8fa7756763a668f6e97d90d8a405c660519189
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038426"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136953"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Procedura dettagliata: Creare un ambiente di compilazione con più computer
 
@@ -25,7 +26,7 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
 
 Questo documento non conferisce il diritto di ridistribuire il software esternamente o di fornire ambienti di compilazione a terze parti.
 
-> Dichiarazione di non responsabilità<br /><br /> Questo documento viene offerto di base "così com'è". Mentre sono stati testati tutti i passi descritti, non è possibile testare in modo esaustivo ogni configurazione. Il documento verrà tenuto aggiornato il più possibile man mano che nuove informazioni saranno disponibili. Le informazioni e le indicazioni riportate nel presente documento, inclusi URL e altri riferimenti a siti Internet, sono soggette a modifica senza preavviso. Microsoft non offre alcuna garanzia, esplicita o implicita, relativamente alle informazioni fornite. L'utente accetta di usarle a proprio rischio.<br /><br /> Il presente documento non implica la concessione di alcun diritto di proprietà intellettuale in relazione ai prodotti Microsoft. Sono consentiti la copia e l'uso del presente documento a fini di riferimento interno.<br /><br /> Non vi è alcun obbligo di fornire a Microsoft suggerimenti, commenti o altri feedback ("Feedback") relativi al documento. Le informazioni immesse volontariamente possono tuttavia essere utilizzate per prodotti Microsoft e specifiche correlate o altre documentazioni ("Opzioni di Microsoft") che a loro volta possono essere utilizzate da terze parti per compilare i propri prodotti. Pertanto, se vengono forniti feedback a Microsoft su qualsiasi versione di questo documento o sulle opzioni Microsoft a cui questi si riferiscono, si accettano le condizioni seguenti: (a) Microsoft può liberamente utilizzare, riprodurre, distribuire, concedere in licenza o commercializzare i feedback in ogni opzione Microsoft; (b) si concedono inoltre a terze parti, senza spese, i diritti necessari per utilizzare o interfacciare altri prodotti con le opzioni Microsoft che incorporano i feedback; e (c) non dovranno mai essere forniti a Microsoft feedback (i) che violano qualsiasi brevetto, copyright o altre proprietà o diritti intellettuali di terze parti o (ii) altri termini di licenza che impongano di incorporare o derivare tali feedback nelle opzioni Microsoft o in altre proprietà intellettuali Microsoft, per concederne una licenza o condividerle con terze parti.
+> Dichiarazione di non responsabilità<br /><br /> Questo documento viene offerto di base "così com'è". Mentre sono stati testati tutti i passi descritti, non è possibile testare in modo esaustivo ogni configurazione. Il documento verrà tenuto aggiornato il più possibile man mano che nuove informazioni saranno disponibili. Le informazioni e le indicazioni riportate nel presente documento, inclusi URL e altri riferimenti a siti Internet, sono soggette a modifica senza preavviso. Microsoft non riconosce alcuna garanzia, espressa o implicita, in merito alle informazioni qui fornite. L'utente accetta di usarle a proprio rischio.<br /><br /> Il presente documento non implica la concessione di alcun diritto di proprietà intellettuale in relazione ai prodotti Microsoft. Sono consentiti la copia e l'uso del presente documento a fini di riferimento interno.<br /><br /> Non vi è alcun obbligo di fornire a Microsoft suggerimenti, commenti o altri feedback ("Feedback") relativi al documento. Le informazioni immesse volontariamente possono tuttavia essere utilizzate per prodotti Microsoft e specifiche correlate o altre documentazioni ("Opzioni di Microsoft") che a loro volta possono essere utilizzate da terze parti per compilare i propri prodotti. Pertanto, se vengono forniti feedback a Microsoft su qualsiasi versione di questo documento o sulle opzioni Microsoft a cui questi si riferiscono, si accettano le condizioni seguenti: (a) Microsoft può liberamente utilizzare, riprodurre, distribuire, concedere in licenza o commercializzare i feedback in ogni opzione Microsoft; (b) si concedono inoltre a terze parti, senza spese, i diritti necessari per utilizzare o interfacciare altri prodotti con le opzioni Microsoft che incorporano i feedback; e (c) non dovranno mai essere forniti a Microsoft feedback (i) che violano qualsiasi brevetto, copyright o altre proprietà o diritti intellettuali di terze parti o (ii) altri termini di licenza che impongano di incorporare o derivare tali feedback nelle opzioni Microsoft o in altre proprietà intellettuali Microsoft, per concederne una licenza o condividerle con terze parti.
 
 Questa procedura dettagliata è stata convalidata per i sistemi operativi seguenti:
 
@@ -193,7 +194,7 @@ Si noti che il nome della cartella *Programmi* dipende dal sistema operativo ins
 
 È necessario creare voci nel Registro di sistema per configurare le impostazioni di MSBuild.
 
-1. Identificare la cartella padre per le voci del Registro di sistema. Tutte le voci del Registro di sistema vengono create nella stessa chiave padre. In un computer x86 la chiave padre è **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. In un computer x64 la chiave padre è **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft**. Indipendentemente dall'architettura di sistema, in questa procedura dettagliata si fa riferimento alla chiave padre come %RegistryRoot%.
+1. Identificare la cartella padre per le voci del Registro di sistema. Tutte le voci del Registro di sistema vengono create nella stessa chiave padre. In un computer x86 la chiave padre è **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. In un computer x64 la chiave padre è **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**. Indipendentemente dall'architettura di sistema, in questa procedura dettagliata si fa riferimento alla chiave padre come %RegistryRoot%.
 
     > [!NOTE]
     > Se l'architettura del computer host differisce da quella del computer di compilazione, assicurarsi di utilizzare la chiave padre appropriata in ogni computer. Ciò è particolarmente importante se viene automatizzato il processo di esportazione.
@@ -340,7 +341,7 @@ Per altre informazioni su come usare MSBuild dalla riga di comando, vedere [Rife
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         su
+         to
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
@@ -350,7 +351,7 @@ Per altre informazioni su come usare MSBuild dalla riga di comando, vedere [Rife
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         su
+         to
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
@@ -407,7 +408,7 @@ Per altre informazioni su come usare MSBuild dalla riga di comando, vedere [Rife
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Preparare un computer di test per l'esecuzione di un file eseguibile di debug](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md)

@@ -1,5 +1,7 @@
 ---
 title: Compilazione (pagina), Creazione progetti (Visual Basic)
+description: Informazioni su come specificare le istruzioni di compilazione in Visual Studio. In questa pagina è anche possibile specificare opzioni del compilatore avanzate ed eventi di pre-compilazione o post-compilazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9ffdfe4abbef5701cc060171ecbc379ae3a9215
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.openlocfilehash: 60172d9e308e38967f5ab5a8d882057e78f083c8
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89284317"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136628"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Compilazione (pagina), Creazione progetti (Visual Basic)
 
@@ -41,11 +43,11 @@ Le impostazioni seguenti consentono di selezionare la configurazione e la piatta
 > [!NOTE]
 > Usando configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Gli elenchi **Configurazione** e **Piattaforma** non vengono pertanto visualizzati.
 
-**Configurazione**
+**Configuration**
 
 Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni sono **Debug** (impostazione predefinita), **Rilascio** o **Tutte le configurazioni**. Per altre informazioni, vedere [Informazioni sulle configurazioni della build](../../ide/understanding-build-configurations.md) e [Procedura: creare e modificare le configurazioni](../../ide/how-to-create-and-edit-configurations.md).
 
-**Platform**
+**Piattaforma**
 
 Specifica le impostazioni della piattaforma da visualizzare o modificare. È possibile specificare **Qualsiasi CPU** (impostazione predefinita), **x64** o **x86**.
 

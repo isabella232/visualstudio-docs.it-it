@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: Visualizzare, salvare e configurare file di log di compilazione | Microsoft Docs'
+description: Informazioni su come visualizzare, salvare e configurare i file di log di compilazione. Questi file forniscono informazioni utili per attività come la risoluzione di un errore di compilazione.
+ms.custom: SEO-VS-2020
 ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -9,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4acf8ca4e116bfb0ab990f1b0aed66bef95820ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02d26416357ec13b61232f2adb0bc3e5e3c67818
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283905"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136602"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Procedura: Visualizzare, salvare e configurare file di log di compilazione
 

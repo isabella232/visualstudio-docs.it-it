@@ -1,5 +1,7 @@
 ---
 title: Pagina Eventi di compilazione, Progettazione progetti (C#)
+description: Informazioni su come specificare le istruzioni per la configurazione della build. È anche possibile specificare le condizioni in cui vengono eseguiti gli eventi di post-compilazione.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a56093ab14b9be72f99e36b03eefe7abb895183f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f70557338a48931a3d109f345714d219f428f50
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419055"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136849"
 ---
 # <a name="build-events-page-project-designer-c"></a>Pagina Eventi di compilazione, Progettazione progetti (C#)
 
@@ -29,7 +31,7 @@ Usare la pagina **Eventi di compilazione** di **Creazione progetti** per specifi
 
 ## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
-**Configurazione**
+**Configuration**
 
 Questo controllo non è modificabile in questa pagina. Per una descrizione di questo controllo, vedere [Pagina Compilazione, Creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md).
 

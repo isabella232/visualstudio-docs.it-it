@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da5a229ec345a4f360aeb6051dc33130fa3d99a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dfcdcfc309fb951b2f7e490f0d03dcfe9d381b83
+ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810119"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92116150"
 ---
 # <a name="developer-community-guidelines"></a>Linee guida per Developer Community
 
@@ -59,11 +59,13 @@ La valutazione di un problema è un processo in più passaggi che viene eseguito
 
 Dopo la segnalazione di un problema, gli stati indicano la fase in cui si trovano le informazioni inviate nel proprio ciclo di vita. Poiché i team dei prodotti Visual Studio esaminano il feedback, lo impostano con uno stato appropriato. Tenere traccia dello stato di avanzamento dei report dei problemi facendo riferimento agli [Stati del problema e alle domande frequenti](./report-a-problem.md).
 
+### <a name="prioritizing-which-issues-to-fix"></a>Assegnazione di priorità ai problemi da correggere
+
+Non è possibile risolvere tutti i problemi segnalati. Alcuni sono troppo costosi da correggere, altri potrebbero regredire altre aree di funzionalità e altri potrebbero avere un effetto troppo basso. Questo potrebbe risultare deludente se è stato richiesto di inviare un report sui problemi. Siamo stati tutti disponibili, sia in questo progetto che in altri utenti a cui è stato contribuito. Se un problema è stato chiuso e si ritiene che il motivo per cui è stato fornito non sia soddisfacente, è possibile chiarire il caso d'uso e richiedere che il problema venga riattivato per un altro passaggio. A questo punto, è possibile richiedere ulteriori informazioni.
+
+### <a name="missing-important-information"></a>Informazioni importanti mancanti
+
 Quando in un problema mancano informazioni importanti, viene assegnato lo stato _needs more info (altre informazioni_ ). Il problema viene commentato con le informazioni specifiche necessarie e si riceverà una notifica tramite posta elettronica. Se le informazioni non vengono ricevute entro sette giorni, viene inviato un promemoria. Successivamente, il ticket viene chiuso dopo 14 giorni di inattività.
-
-### <a name="wont-fix-bugs"></a>Non correggerà i bug
-
-Si chiudono alcuni bug quando si verifica un saldo negativo del vantaggio economico. Se, ad esempio, la correzione è talmente complessa da rischiare la regressione per molti utenti, la correzione potrebbe non essere ragionevole. Quando si chiude un bug di questo tipo, verrà spiegato il motivo per cui si esegue questa operazione.
 
 ### <a name="other-product"></a>Altro prodotto
 

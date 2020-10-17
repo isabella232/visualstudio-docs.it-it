@@ -1,5 +1,7 @@
 ---
 title: Informazioni sulle configurazioni della build
+description: Informazioni su come sono necessarie configurazioni di compilazione quando è necessario compilare i progetti con impostazioni diverse in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/20/2020
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -26,12 +28,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a37d4fa5dc92253b94dc64590c9df5fec7703ceb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d8b61275e8197c90bfba85cb1b4be680f3c1f1a
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77904165"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136680"
 ---
 # <a name="understand-build-configurations"></a>Informazioni sulle configurazioni della build
 
@@ -48,7 +50,7 @@ La configurazione e il controllo della piattaforma in cui vengono archiviati i f
 
 Per creare, selezionare, modificare o eliminare una configurazione, è possibile usare **Gestione configurazione**. Per aprirlo, sulla barra dei menu scegliere **Compila**  >  **Configuration Manager**o digita **configurazione** nella casella di ricerca. È inoltre possibile usare l'elenco **Configurazioni soluzione** sulla barra degli strumenti **Standard** per selezionare una configurazione o aprire **Gestione configurazione**.
 
-![Configuration Manager](media/understanding-build-configurations/config-manager.png)
+![Gestione configurazione](media/understanding-build-configurations/config-manager.png)
 
 > [!NOTE]
 > Se le impostazioni di configurazione della soluzione sulla barra degli strumenti non sono disponibili e non è possibile accedere alla **Configuration Manager**, è [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] possibile che vengano applicate le impostazioni di sviluppo. Per altre informazioni, vedere [Procedura: Gestire configurazioni di compilazione applicando le impostazioni di Visual Basic Developer](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).

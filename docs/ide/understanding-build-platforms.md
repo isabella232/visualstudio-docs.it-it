@@ -1,5 +1,7 @@
 ---
 title: Informazioni sulle piattaforme di compilazione
+description: Informazioni su come archiviare diverse versioni delle proprietà della soluzione e del progetto applicabili a diverse piattaforme di destinazione in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3737bbe8fbffcb89ca4e03bcc6063ba45f8a44fd
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115071"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136654"
 ---
 # <a name="understand-build-platforms"></a>Informazioni sulle piattaforme di compilazione
 

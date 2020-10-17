@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c1cdc4738f60301435932b3700f14377f12172
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65e386b71c0b7ece3aee8185574d53955b7326a1
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290684"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136862"
 ---
 # <a name="how-msbuild-builds-projects"></a>Come vengono compilati i progetti in MSBuild
 
@@ -50,7 +50,7 @@ I progetti .NET Core importano la versione di .NET SDK appropriata. Vedere Panor
 
 In questa sezione viene illustrato il modo in cui questi file di input vengono elaborati e analizzati per produrre oggetti in memoria che determinano gli elementi che verranno compilati.
 
-Lo scopo della fase di valutazione è creare le strutture degli oggetti in memoria in base ai file XML di input e all'ambiente locale. La fase di valutazione è costituita da cinque passaggi che elaborano i file di input, ad esempio i file XML del progetto o, e i file XML importati, in genere denominati file con *estensione Props* o *targets* , a seconda che impostino principalmente proprietà o definiscano le destinazioni di compilazione. Ogni passaggio compila una parte degli oggetti in memoria che vengono successivamente utilizzati nella fase di esecuzione per compilare i progetti, ma durante la fase di valutazione non si verificano azioni di compilazione effettive. All'interno di ogni passaggio, gli elementi vengono elaborati nell'ordine in cui vengono visualizzati.
+Lo scopo della fase di valutazione è creare le strutture degli oggetti in memoria in base ai file XML di input e all'ambiente locale. La fase di valutazione è costituita da sei passaggi che elaborano i file di input, ad esempio i file XML del progetto o, e i file XML importati, in genere denominati file con *estensione Props* o *targets* , a seconda che impostino principalmente proprietà o definiscano le destinazioni di compilazione. Ogni passaggio compila una parte degli oggetti in memoria che vengono successivamente utilizzati nella fase di esecuzione per compilare i progetti, ma durante la fase di valutazione non si verificano azioni di compilazione effettive. All'interno di ogni passaggio, gli elementi vengono elaborati nell'ordine in cui vengono visualizzati.
 
 I passaggi della fase di valutazione sono i seguenti:
 

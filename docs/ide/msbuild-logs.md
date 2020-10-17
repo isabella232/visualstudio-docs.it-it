@@ -1,5 +1,7 @@
 ---
 title: Risolvere i problemi e creare i log per problemi relativi a MSBuild
+description: Informazioni su come è possibile diagnosticare i problemi di compilazione nel progetto di Visual Studio e, se necessario, creare un log da inviare a Microsoft per l'analisi.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2019
 ms.technology: vs-ide-compile
 ms.topic: troubleshooting
@@ -15,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: 24df9f7c44ea2dbb9e9899abf68823683422da71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6b08b243a5b4eec3119ceedbaf2177670aa3e83
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235069"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136576"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Risolvere i problemi e creare i log per problemi relativi a MSBuild
 
@@ -106,7 +108,7 @@ Se si sta compilando nell'IDE di Visual Studio (con visualizzazione dettagliata 
     Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
     ```
 
-    Oppure
+    oppure
 
     ```cmd
     Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
@@ -124,7 +126,7 @@ Verrà creato un file Msbuild.binlog nella directory da cui è stato eseguito MS
     Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln
     ```
 
-    Oppure
+    oppure
 
     ```cmd
     Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /fl MyProject.vcxproj

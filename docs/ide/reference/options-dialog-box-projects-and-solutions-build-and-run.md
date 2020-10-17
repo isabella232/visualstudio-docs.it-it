@@ -1,6 +1,7 @@
 ---
 title: Finestra di dialogo Opzioni, progetti e soluzioni, compila ed Esegui
-ms.custom: SEO-VS-2020
+description: Specificare il numero massimo di progetti C++ o C# che è possibile compilare allo stesso tempo, determinati comportamenti di compilazione predefiniti e alcune impostazioni del log di compilazione in Visual Studio.
+'\ms.custom': SEO-VS-2020
 ms.date: 07/14/2017
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff1ec236c85aeaeed655c611a88cead4380258f0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 5c91a016d91addc4f9e4b06acb32614bd6f6a162
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037712"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136771"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Finestra di dialogo Opzioni: progetti e soluzioni \> Compila ed Esegui
 
@@ -61,7 +62,7 @@ Determina la quantità di informazioni del processo di compilazione che viene vi
 
 Determina la quantità di informazioni scritte nel file di log di compilazione, disponibile in * \\ \<ProjectName> \Debug \\ \<ProjectName> . log*.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Compilazione e creazione](../../ide/compiling-and-building-in-visual-studio.md)
 - [Finestra di dialogo Opzioni, Progetti e soluzioni](projects-and-solutions-options-dialog-box.md)
