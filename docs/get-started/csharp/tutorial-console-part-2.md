@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 981f18857beb83ef2a4902f50985ca8e9f7ed901
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd0d2b3e112a4bf08481fa8f043f70121d827010
+ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88507956"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92197478"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>Esercitazione: estendere una semplice app console C#
 
@@ -120,9 +120,10 @@ Il codice del mondo reale implica la collaborazione di molti progetti in una sol
 
 ## <a name="reference-net-libraries-write-to-a-log"></a>Librerie .NET di riferimento: scrivere in un log
 
-1. Si supponga ora di voler aggiungere un log di tutte le operazioni e di scriverlo in un file di testo. `Trace`Questa funzionalità è fornita dalla classe .NET. È utile anche per le tecniche di debug di stampa di base.  La classe Trace si trova in System. Diagnostics, quindi iniziare aggiungendo una direttiva using:
+1. Si supponga ora di voler aggiungere un log di tutte le operazioni e di scriverlo in un file di testo. `Trace`Questa funzionalità è fornita dalla classe .NET. È utile anche per le tecniche di debug di stampa di base.  La classe Trace si trova in System. Diagnostics e sono necessarie classi System.IO come `StreamWriter` , quindi iniziare aggiungendo le direttive using:
 
    ```csharp
+   using System.IO;
    using System.Diagnostics;
    ```
 
@@ -217,7 +218,7 @@ Il codice del mondo reale implica la collaborazione di molti progetti in una sol
 
    Il pacchetto viene scaricato e aggiunto al progetto e viene visualizzata una nuova voce nel nodo riferimenti in **Esplora soluzioni**.
 
-1. Aggiungere una direttiva using per il Newtonsoft.Jsnel pacchetto all'inizio di *CalculatorLibrary.cs*.
+1. Aggiungere una direttiva using per System.IO e Newtonsoft.Jsnel pacchetto all'inizio di *CalculatorLibrary.cs*.
 
    ```csharp
    using Newtonsoft.Json;
@@ -307,7 +308,7 @@ Il codice del mondo reale implica la collaborazione di molti progetti in una sol
         }
    ```
 
-1. Compilare ed eseguire l'app. dopo aver completato l'immissione di alcune operazioni, chiudere l'app correttamente usando il comando ' n'.  A questo punto, aprire il consolelog.jsnel file e dovrebbe essere visualizzato un risultato simile al seguente:
+1. Compilare ed eseguire l'app. dopo aver completato l'immissione di alcune operazioni, chiudere l'app correttamente usando il comando ' n'.  A questo punto, aprire il calculatorlog.jsnel file e dovrebbe essere visualizzato un risultato simile al seguente:
 
    ```json
    {

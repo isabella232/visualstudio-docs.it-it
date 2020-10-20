@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 1563efb15f98720352a25eec59c8eca045f77ddc
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 03e5f806b428b7ecf08038ef34d6b1dddcd92f9e
+ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91024913"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "92210801"
 ---
 L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio creativa che consente di modificare, eseguire il debug, compilare il codice e quindi pubblicare un'app. Un ambiente di sviluppo integrato (IDE) è un programma con numerose funzionalità che può essere usato per molti aspetti dello sviluppo software. A differenza dell'editor e del debugger standard disponibili nella maggior parte degli ambienti IDE, Visual Studio include compilatori, strumenti di completamento codice, finestre di progettazione con interfaccia grafica e altre funzionalità che semplificano il processo di sviluppo del software.
 
@@ -91,12 +91,9 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
    ![Elenco dei membri di Visual Studio](../media/intellisense-list-members.png)
 
-- Casella di ricerca
+- [Ricerca di Visual Studio](../../ide/visual-studio-search.md)
 
-   La quantità di menu, opzioni e proprietà disponibili in Visual Studio può sembrare a volte eccessiva. La casella di ricerca è un ottimo modo per trovare rapidamente quello che serve in Visual Studio. Quando si inizia a digitare il nome di un elemento da cercare, Visual Studio visualizza risultati che consentono di passare esattamente all'elemento desiderato. Se si vuole aggiungere una funzionalità a Visual Studio, ad esempio il supporto di un altro linguaggio di programmazione, la casella di ricerca fornisce risultati che consentono di aprire il programma di installazione di Visual Studio per installare un carico di lavoro o un singolo componente.
-
-   > [!TIP]
-   > Premere **CTRL** + **Q** come collegamento alla casella di ricerca.
+   La quantità di menu, opzioni e proprietà disponibili in Visual Studio può sembrare a volte eccessiva. La funzionalità di ricerca di Visual Studio (**CTRL** + **Q**) è un ottimo modo per trovare rapidamente le funzionalità e il codice IDE in un'unica posizione.
 
    ::: moniker range="vs-2017"
 
@@ -109,6 +106,8 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
    ::: moniker range="vs-2019"
 
    ![Casella di ricerca in Visual Studio 2019](../media/vs-2019/quick-launch-nuget.png)
+
+    Per informazioni e suggerimenti per la produttività, vedere [come usare la ricerca di Visual Studio](../../ide/visual-studio-search.md).
 
    ::: moniker-end
 
