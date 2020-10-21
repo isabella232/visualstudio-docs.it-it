@@ -178,6 +178,8 @@
       href: ide/index-writing-code.yml
     - name: Spostarsi all'interno dell'IDE
       href: ide/how-to-move-around-in-the-visual-studio-ide.md
+    - name: Usare la ricerca di Visual Studio
+      href: ide/visual-studio-search.md
     - name: Soluzioni e progetti
       items:
         - name: Usare soluzioni e progetti
