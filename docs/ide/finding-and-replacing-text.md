@@ -1,7 +1,6 @@
 ---
 title: Cercare e sostituire testo e selezione di più punti di inserimento
-description: Informazioni su come usare la funzionalità Trova e Sostituisci nell'editor di codice di Visual Studio.
-ms.date: 08/14/2018
+ms.date: 10/17/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.find
@@ -31,12 +30,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a74fa1328a3b0079eef6253fa32fc882876a71
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: b878ccbf6714987599d1585ca9c0dc3ceb759144
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298585"
+ms.locfileid: "92334194"
 ---
 # <a name="find-and-replace-text"></a>Cercare e sostituire testo
 
@@ -117,15 +116,15 @@ Per selezionare più punti di inserimento, fare clic o effettuare la prima selez
 
 Usare i tasti e le azioni seguenti per i comportamenti di selezione di più punti di inserimento:
 
-|Tasto di scelta rapida|Azione|
+|Tasto di scelta rapida|Action|
 |-|-|
 |**CTRL** + **ALT** + clic|Aggiungere un punto di inserimento secondario|
 |**CTRL** + **ALT** + doppio clic|Aggiungere una selezione di parola secondaria|
 |**CTRL** + **ALT** + clic + trascina|Aggiungere una selezione secondaria|
 |**Sposta** + **ALT** + **.**|Aggiungere il testo successivo corrispondente come selezione|
-|**CTRL** + **Sposta** + **ALT** + **,**|Aggiungere tutto il testo corrispondente come selezione|
+|**Sposta** + **ALT** + **;**|Aggiungere tutto il testo corrispondente come selezione|
 |**Sposta** + **ALT** + **,**|Rimuovere l'ultima occorrenza selezionata|
-|**CTRL** + **Sposta** + **ALT** + **.**|Ignorare l'occorrenza corrispondente successiva|
+|**Sposta** + **ALT**+**/**|Ignorare l'occorrenza corrispondente successiva|
 |**ALT** + clic|Aggiungere una selezione di casella|
 |**ESC** oppure clic|Cancellare tutte le selezioni|
 

@@ -2,18 +2,18 @@
 title: Nuova esperienza Git in Visual Studio (anteprima)
 titleSuffix: ''
 description: Informazioni sulla nuova esperienza git integrata in Visual Studio 2019
-ms.date: 09/22/2020
+ms.date: 10/13/2020
 ms.topic: conceptual
 ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1f9dc891219e5563ad6ea72085b0ad28469c7171
-ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
+ms.openlocfilehash: ad75fcff26365afdbc4fb4b02975d7c3211fa79b
+ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92082057"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92334207"
 ---
 # <a name="new-git-experience-in-visual-studio-preview"></a>Nuova esperienza Git in Visual Studio (anteprima)
 
@@ -95,7 +95,7 @@ Quando si esegue il staging di una modifica, Visual Studio crea una sezione di m
 
 Visual Studio semplifica anche il commit e la sincronizzazione con un solo clic usando i collegamenti **commit tutti e push** e **commit tutti e sincronizza** . Quando si fa doppio clic su un file nelle sezioni **modifiche** e **modifiche** di gestione temporanea, è possibile visualizzare un confronto riga per riga con la versione non modificata del file.
 
-:::image type="content" source="media/git-file-version-compare.png" alt-text="Screenshot della sezione funzionalità di anteprima della finestra di dialogo Opzioni in Visual Studio " Se si è connessi al repository DevOps di Azure. È possibile connettere il repository di Azure DevOps tramite Team Explorer > gestire le connessioni
+:::image type="content" source="media/git-file-version-compare.png" alt-text="Screenshot della sezione funzionalità di anteprima della finestra di dialogo Opzioni in Visual Studio " Se si è connessi al repository DevOps di Azure. È possibile connettere il repository di Azure DevOps tramite **Team Explorer**  >  **gestire le connessioni**.
 
 ### <a name="select-an-existing-branch"></a>Selezionare un ramo esistente
 
