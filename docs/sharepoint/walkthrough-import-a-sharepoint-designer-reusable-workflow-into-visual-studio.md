@@ -1,5 +1,6 @@
 ---
-title: 'Procedura dettagliata: importare un flusso di lavoro riutilizzabile di SharePoint Designer in Visual Studio | Microsoft Docs'
+title: 'Procedura dettagliata: importare un flusso di lavoro riutilizzabile di SharePoint Designer | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,14 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a589f14ea60d50c0062d85be81523f27c81b455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6680c6ff95808db56e5bb32e02e0775c935011
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015703"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298047"
 ---
-# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Procedura dettagliata: importare un flusso di lavoro riutilizzabile di SharePoint Designer in Visual Studio
+# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Procedura dettagliata: importare un flusso di lavoro riutilizzabile di SharePoint Designer
+
   In questa procedura dettagliata viene illustrato come importare un flusso di lavoro riutilizzabile creato in SharePoint Designer 2010 in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto flusso di lavoro di SharePoint.
 
  I flussi di lavoro creati in SharePoint Designer, o *flussi di lavoro dichiarativi*, sono costituiti da [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] istruzioni anziché da codice. SharePoint Designer 2010 introduce *flussi di lavoro riutilizzabili*, che sono flussi di lavoro dichiarativi portabili che possono essere utilizzati da elenchi diversi nei siti di SharePoint.

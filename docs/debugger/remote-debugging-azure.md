@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 926bd4a6630d9d99726ee6c1479d04c476756c18
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536786"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "92298753"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>ASP.NET Core di debug remoto in IIS in Azure in Visual Studio
 
@@ -96,7 +96,7 @@ Da Visual Studio è possibile pubblicare rapidamente ed eseguire il debug dell'a
 
     Il punto di interruzione verrà raggiunto in Visual Studio.
 
-    Ecco fatto! Il resto dei passaggi descritti in questo argomento si applica al debug remoto in una macchina virtuale di Azure.
+    L'operazione è terminata. Il resto dei passaggi descritti in questo argomento si applica al debug remoto in una macchina virtuale di Azure.
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a> ASP.NET Core di debug remoto in una macchina virtuale di Azure
 
@@ -255,7 +255,7 @@ Scaricare la versione di Remote Tools corrispondente alla versione di Visual Stu
 
 6. Digitare la prima lettera del nome del processo per trovare rapidamente l'app.
 
-    * Se si usa il [modello di hosting in-process](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) in IIS, selezionare il processo di **w3wp.exe** corretto. A partire da .NET Core 3, si tratta dell'impostazione predefinita.
+    * Se si usa il [modello di hosting in-process](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models) in IIS, selezionare il processo di **w3wp.exe** corretto. A partire da .NET Core 3, si tratta dell'impostazione predefinita.
 
     * In caso contrario, selezionare il processo **dotnet.exe** . Si tratta del modello di hosting out-of-process.
 

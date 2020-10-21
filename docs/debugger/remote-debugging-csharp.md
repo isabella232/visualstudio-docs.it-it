@@ -24,7 +24,7 @@ ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "89311053"
+ms.locfileid: "92298719"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Debug remoto di un progetto C# o Visual Basic in Visual Studio
 Per eseguire il debug di un'applicazione di Visual Studio distribuita in un computer diverso, installare ed eseguire Remote Tools nel computer in cui è stata distribuita l'app, configurare il progetto per la connessione al computer remoto da Visual Studio e quindi eseguire l'app.

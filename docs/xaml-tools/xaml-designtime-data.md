@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 9e6daa3e11bc96fe4d0b9499a6a1a7982432583d
-ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
+ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92039911"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298469"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Usare i dati della fase di progettazione con il finestra di progettazione XAML in Visual Studio
 
@@ -138,7 +138,7 @@ Il vantaggio è che è possibile associare i controlli a una versione statica de
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>Usare dati della fase di progettazione con proprietà e tipi personalizzati
 
-Per impostazione predefinita, questa funzionalità funziona solo con le proprietà e i controlli della piattaforma. In questa sezione vengono illustrati i passaggi necessari per consentire l'uso di controlli personalizzati come controlli della fase di progettazione. Esistono tre requisiti per abilitare questa operazione:
+Per impostazione predefinita, questa funzionalità funziona solo con le proprietà e i controlli della piattaforma. In questa sezione vengono illustrati i passaggi necessari per consentire l'uso di controlli personalizzati come controlli della fase di progettazione, una nuova funzionalità disponibile per i clienti che usano Visual Studio 2019 Preview versione [16,8](/visualstudio/releases/2019/preview-notes) o successiva. Esistono tre requisiti per abilitare questa operazione:
 
 - Uno spazio dei nomi xmlns personalizzato 
 

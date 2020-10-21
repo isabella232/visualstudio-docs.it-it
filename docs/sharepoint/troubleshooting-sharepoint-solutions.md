@@ -16,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcb30056021a865d0b0e605de462ff72ced5a383
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79a08d3f8dbc4b579a52501afb08ffb7dca33f2
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73661891"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "92298380"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Risolvere i problemi relativi alle soluzioni SharePoint
-  Quando si esegue il debug di soluzioni SharePoint tramite il debugger, potrebbero verificarsi i problemi o gli avvisi seguenti [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Per altre informazioni, vedere [debug di soluzioni flusso di lavoro SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
+  Quando si esegue il debug di soluzioni SharePoint tramite il debugger, potrebbero verificarsi i problemi o gli avvisi seguenti [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Per altre informazioni, vedere [debug di soluzioni flusso di lavoro SharePoint 2007](/previous-versions/bb386166(v=vs.100)).
 
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>Restrizioni relative ai token nelle web part visive create mediante sandbox
  Tramite le web part visive nelle soluzioni create mediante sandbox non è possibile elaborare i token standard, ad esempio $SPUrl, supportati dal runtime di SharePoint. Di conseguenza, l'URL non viene risolto e non è possibile visualizzare in anteprima il contenuto nella visualizzazione Progettazione nella finestra di progettazione di web part visive se vi si fa riferimento direttamente in un elemento dello script, come nell'esempio seguente:
@@ -99,7 +99,7 @@ ms.locfileid: "73661891"
  Dopo aver creato e distribuito una definizione di sito utilizzando una versione non in lingua inglese di, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ovvero una versione con impostazioni locali diverse da [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] 1033, la scheda **personalizzazioni di SharePoint** non viene visualizzata nella casella di **selezione del modello** e il nuovo modello di sito non viene visualizzato nella pagina **nuovo sito di SharePoint** .
 
 ### <a name="error-message"></a>Messaggio di errore
- Nessuno.
+ No.
 
 ### <a name="resolution"></a>Soluzione
  Questo problema si verifica a causa di un valore non corretto nella proprietà **path** per il file di configurazione della definizione sito Webtemp, ad esempio *webtemp_SiteDefinitionProject1.xml*. Nella proprietà **path** per il file WebTemp, situato sotto il **percorso di distribuzione**, impostare 1033 sulle impostazioni locali appropriate [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] . Ad esempio, per usare le impostazioni locali giapponesi, modificare il valore in 1041. Per altre informazioni, vedere [ID delle impostazioni locali assegnati da Microsoft](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c).
@@ -139,7 +139,7 @@ ms.locfileid: "73661891"
  Quando si crea un progetto di ricevitore di eventi e si selezionano alcuni eventi Web, ad esempio "è in corso l'eliminazione di un sito", l'evento non si verifica mai.
 
 ### <a name="error-message"></a>Messaggio di errore
- Nessuno.
+ No.
 
 ### <a name="resolution"></a>Soluzione
  Questo problema si verifica perché l'ambito di funzionalità deve essere "sito" per gestire gli eventi a livello di sito, ma l'ambito di funzionalità predefinito per i progetti di ricevitore di eventi è "Web". Gli eventi Web interessati sono:
@@ -263,7 +263,7 @@ ms.locfileid: "73661891"
  Se si esporta una soluzione SharePoint, si importa la soluzione in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e quindi si distribuisce la soluzione nello stesso sito da cui è stata esportata, la soluzione originale di SharePoint viene sostituita. Questo problema non si verifica se si distribuisce la soluzione in un server in cui non è attivata la soluzione originale.
 
 ### <a name="error-message"></a>Messaggio di errore
- Nessuno.
+ No.
 
 ### <a name="resolution"></a>Soluzione
  Per evitare di sovrascrivere una soluzione nel sito da cui è stata esportata, modificare i GUID di SolutionID e gli ID funzionalità di tutte le funzionalità importate nel [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto.

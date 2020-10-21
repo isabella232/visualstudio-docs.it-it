@@ -1,5 +1,6 @@
 ---
-title: 'Panoramica dello scenario: modificare la progettazione mediante gli strumenti di visualizzazione e modellazione'
+title: Modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
+description: Panoramica degli strumenti di visualizzazione e modellazione in Visual Studio.
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -12,15 +13,16 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio ALM], modeling software
 author: JoshuaPartlow
 ms.author: joshuapa
+ms.custom: SEO-VS-2020
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db584adc01a3f0f161d451d73df6a8deab08b869
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6ad330c083a97e8a098f05a9e0398a806a9153b
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238894"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "92298594"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Panoramica dello scenario: modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
 
@@ -214,9 +216,9 @@ Durante il lavoro, i team aggiornano gli elementi di lavoro in modo da rifletter
 
 Vedere:
 
-- [Informazioni sugli strumenti agile e la gestione dei progetti Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
+- [Informazioni sugli strumenti agile e la gestione dei progetti Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)
 
-- [Grafici, dashboard e widget (Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts)
+- [Grafici, dashboard e widget (Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts&preserve-view=true)
 
 - [Creare il backlog e le attività tramite Project](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
@@ -236,13 +238,13 @@ Per assicurarsi che il codice sia conforme alla progettazione, i team configuran
 
 Vedere:
 
-- [Test dell'applicazione](/azure/devops/test/overview?view=vsts)
+- [Test dell'applicazione](/azure/devops/test/overview?view=vsts&preserve-view=true)
 
 - [Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)
 
-- [Usare il controllo della versione](/azure/devops/repos/tfvc/overview?view=azure-devops)
+- [Usare il controllo della versione](/azure/devops/repos/tfvc/overview?view=azure-devops&preserve-view=true)
 
-- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)
+- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>Aggiornare il sistema usando la visualizzazione e la modellazione
 
@@ -484,5 +486,5 @@ I diagrammi di dipendenza consentono di:
 
 - [Visualizzare il codice](../modeling/visualize-code.md)
 - [Usare modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)
-- [Usare i modelli nello sviluppo Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Usare i modelli nello sviluppo Agile](/previous-versions/ff398061(v=vs.140))
 - [Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)

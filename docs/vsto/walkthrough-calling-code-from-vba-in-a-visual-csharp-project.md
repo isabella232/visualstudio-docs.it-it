@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46f88b47e135331e5f1dc010aa4a73abed520f51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c089a3156d005da7d49976f6c96bb10daac0662
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839667"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "92297953"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Procedura dettagliata: chiamata di codice da VBA in un progetto Visual C#
   Questa procedura dettagliata illustra come chiamare un metodo in una personalizzazione a livello di documento di Microsoft Office Excel da codice Visual Basic, Applications Edition (VBA) contenuto nella cartella di lavoro. La procedura comporta tre passaggi di base: aggiungere un metodo alla classe dell'elemento host `Sheet1` , esporre il metodo al codice VBA nella cartella di lavoro e quindi chiamare il metodo dal codice VBA contenuto nella cartella di lavoro.
@@ -66,7 +66,7 @@ ms.locfileid: "90839667"
 
 1. Avviare Excel.
 
-2. Salvare il documento attivo come **cartella di lavoro con attivazione macro di Excel (con \* estensione xlsm)** con il nome **WorkbookWithVBA**. Salvarla in un percorso a propria scelta, ad esempio, il desktop.
+2. Salvare il documento attivo come **cartella di lavoro di Excel Macro-Enabled ( \* xlsm)** con il nome **WorkbookWithVBA**. Salvarla in un percorso a propria scelta, ad esempio, il desktop.
 
 3. Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .
 
@@ -161,7 +161,7 @@ ms.locfileid: "90839667"
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
 
-3. Aggiungere il metodo seguente alla classe `Sheet1`. Questo metodo esegue l'override del metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.GetAutomationObject%2A> per restituire l'istanza corrente della classe `Sheet1` .
+3. Aggiungere il metodo seguente alla classe `Sheet1`. Questo metodo esegue l'override del metodo <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> per restituire l'istanza corrente della classe `Sheet1` .
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
 

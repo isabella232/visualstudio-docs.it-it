@@ -1,18 +1,20 @@
 ---
-title: 'Procedura: eseguire la migrazione di un linguaggio specifico di dominio a una nuova versione'
+title: 'Procedura: eseguire la migrazione di un progetto di linguaggio Domain-Specific'
+description: Vengono fornite informazioni su come eseguire la migrazione di un progetto di linguaggio specifico di dominio a una versione più recente di Visual Studio.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: f8bdaea1267d0bf69078aec5739291e72db8dfda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dacb13ef14768f4f59a414f6159bbea8d24c4de8
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532611"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "92298406"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procedura: eseguire la migrazione di un linguaggio specifico di dominio a una nuova versione
 È possibile eseguire la migrazione di progetti che definiscono e utilizzano il linguaggio specifico di dominio a [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] dalla versione di [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] distribuita con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] .

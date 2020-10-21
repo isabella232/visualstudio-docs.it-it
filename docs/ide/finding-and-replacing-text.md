@@ -1,5 +1,6 @@
 ---
 title: Cercare e sostituire testo e selezione di più punti di inserimento
+description: Informazioni su come usare la funzionalità Trova e Sostituisci nell'editor di codice di Visual Studio.
 ms.date: 08/14/2018
 ms.topic: conceptual
 f1_keywords:
@@ -30,12 +31,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffc31a0d0e2b6878b5dd5173a35ce4f538e135be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81a74fa1328a3b0079eef6253fa32fc882876a71
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590345"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298585"
 ---
 # <a name="find-and-replace-text"></a>Cercare e sostituire testo
 
@@ -112,11 +113,11 @@ Per selezionare più punti di inserimento, fare clic o effettuare la prima selez
 > [!TIP]
 > Se si è scelto **ALT** come tasto di modifica per il clic del mouse di Vai a definizione in **Strumenti** > **Opzioni**, la selezione per più punti di inserimento è disabilitata.
 
-### <a name="commands"></a>Comandi:
+### <a name="commands"></a>Comandi
 
 Usare i tasti e le azioni seguenti per i comportamenti di selezione di più punti di inserimento:
 
-|Tasto di scelta rapida|Action|
+|Tasto di scelta rapida|Azione|
 |-|-|
 |**CTRL** + **ALT** + clic|Aggiungere un punto di inserimento secondario|
 |**CTRL** + **ALT** + doppio clic|Aggiungere una selezione di parola secondaria|
@@ -130,7 +131,7 @@ Usare i tasti e le azioni seguenti per i comportamenti di selezione di più punt
 
 Alcuni comandi sono disponibili anche nel menu **Modifica**, in **Più punti di inserimento**:
 
-![Menu a comparsa per Più punti di inserimento in Visual Studio](media/edit-menu-multiple-carets.png)
+:::image type="content" source="media/edit-menu-multiple-carets-find-replace.png" alt-text="Screenshot del menu di scelta rapida per più elementi di interesse in Visual Studio":::
 
 ## <a name="see-also"></a>Vedere anche
 

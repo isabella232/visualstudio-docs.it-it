@@ -1,5 +1,6 @@
 ---
 title: Information Rights Management & estensioni di codice gestito
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 753f3d2da201c67cd86c697eccf7580596a40d6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06b55855184aaef57ec0a3425abed7d235ec837b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68872055"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "92298062"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>Panoramica di Information Rights Management e delle estensioni di codice gestito
   Microsoft Office Word e Microsoft Office Excel forniscono informazioni Rights Management (IRM), una funzionalità che consente di impedire a utenti non autorizzati di visualizzare o modificare le informazioni riservate. Per informazioni dettagliate sul funzionamento delle informazioni Rights Management, vedere la guida nell'applicazione di Office specifica.

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c900a1496d3ef864e50d40092379348c05a4706b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a2e4ca528c7f534cc3a7f04d7e1e2832ee9b412
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017109"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "92298626"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Procedura dettagliata: profilare un'applicazione SharePoint
   In questa procedura dettagliata viene illustrato come utilizzare gli strumenti di profilatura in Visual Studio per ottimizzare le prestazioni di un'applicazione SharePoint. L'applicazione di esempio è un ricevitore di eventi di funzionalità SharePoint contenente un ciclo inattivo che comporta una riduzione delle prestazioni del ricevitore di eventi di funzionalità. Il profiler di Visual Studio consente di individuare ed eliminare la parte più costosa (con prestazioni più lente) del progetto, nota anche come *percorso critico*.
@@ -275,4 +275,4 @@ ms.locfileid: "86017109"
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica della sessione di prestazioni](../profiling/performance-session-overview.md)
 - [Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md)
-- [Find Application Bottlenecks with Visual Studio Profiler](https://msdn.microsoft.com/magazine/cc337887.aspx) (Trovare i colli di bottiglia delle applicazioni con il profiler di Visual Studio)
+- [Find Application Bottlenecks with Visual Studio Profiler](/archive/msdn-magazine/2008/march/find-application-bottlenecks-with-visual-studio-profiler) (Trovare i colli di bottiglia delle applicazioni con il profiler di Visual Studio)

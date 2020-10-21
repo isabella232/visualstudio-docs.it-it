@@ -1,6 +1,7 @@
 ---
-title: 'Procedura dettagliata: Uso di MSBuild | Microsoft Docs'
-ms.date: 03/20/2019
+title: Usare MSBuild
+description: Informazioni sulle varie parti di un file di progetto MSBuild, inclusi elementi, metadati degli elementi, proprietà, destinazioni e attività.
+ms.date: 10/19/2020
 ms.topic: conceptual
 ms.custom: contperfq2
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f074e69f23e20ecb92d32efb69fe011c0dbf797
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.openlocfilehash: b26c13765daf5a82a9961e6509b36e24e18f4e0c
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91134818"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298527"
 ---
 # <a name="walkthrough-use-msbuild"></a>Procedura dettagliata: Usare MSBuild
 
@@ -29,6 +30,24 @@ MSBuild è la piattaforma di compilazione per Microsoft e Visual Studio. Questa 
 - Come usare gli elementi di compilazione.
 
 È possibile eseguire MSBuild da Visual Studio o dalla finestra di **comando**. In questa procedura dettagliata si crea un file di progetto MSBuild in Visual Studio. Si modifica il file di progetto in Visual Studio e si usa la **finestra di comando** per compilare il progetto ed esaminare i risultati.
+
+## <a name="install-msbuild"></a>Installare MSBuild
+
+::: moniker range="vs-2017"
+
+Se si dispone di Visual Studio, è già installato MSBuild. Per installare MSBuild 15 in un sistema che non dispone di Visual Studio, passare a [Visual Studio download precedenti](https://visualstudio.microsoft.com/vs/older-downloads/), espandere **Visual Studio 2017** e scegliere il pulsante **download** . Se si dispone di una sottoscrizione di Visual Studio, accedere e trovare il collegamento per scaricare la versione più recente degli **strumenti di compilazione per Visual studio 2017**. Se non si ha una sottoscrizione di Visual Studio, è comunque possibile installare la versione più recente degli strumenti di compilazione. In questa pagina usare il selettore di versione per passare alla versione 2019 della pagina e seguire le istruzioni di installazione.
+::: moniker-end
+
+::: moniker range="vs-2019"
+Se si dispone di Visual Studio, è già installato MSBuild. Con Visual Studio 2019, viene installato nella cartella di installazione di Visual Studio. Per un'installazione predefinita tipica in Windows 10, MSBuild.exe si trova nella cartella di installazione di *MSBuild\Current\Bin*.
+
+Per installare MSBuild in un sistema che non dispone di Visual Studio, passare a [download di Visual Studio](https://visualstudio.microsoft.com/downloads/) e scorrere verso il basso fino a **tutti i download**, quindi espandere **strumenti per Visual Studio 2019**. Installare **Build Tools per Visual Studio 2019**, che include MSBuild, oppure installare il [.NET Core SDK](/dotnet/core/sdk#acquiring-the-net-core-sdk).
+
+Nel programma di installazione verificare che gli strumenti MSBuild per i carichi di lavoro usati siano selezionati e scegliere **Installa**.
+
+![Installazione di MSBuild](media/walkthrough-using-msbuild/installation-msbuild-tools.png)
+
+::: moniker-end
 
 ## <a name="create-an-msbuild-project"></a>Creare un progetto MSBuild
 
@@ -100,7 +119,7 @@ La destinazione predefinita non è definita nel file di progetto. Viene invece s
 
 I file importati vengono effettivamente inseriti nel file di progetto dove vi si fa riferimento.
 
-In projcts di tipo SDK non viene visualizzato questo elemento Import, perché l'attributo SDK causa l'importazione implicita di questo file.
+Nei progetti in stile SDK non viene visualizzato questo elemento Import, perché l'attributo SDK causa l'importazione implicita di questo file.
 
 MSBuild tiene traccia delle destinazioni di una compilazione e garantisce che ogni destinazione non venga compilata più di una volta.
 

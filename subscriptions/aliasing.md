@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 03/02/2020
+ms.date: 10/20/2020
 ms.topic: conceptual
 description: Si possono verificare errori di accesso se si usano alias o nomi descrittivi
-ms.openlocfilehash: f73aa52be518de627d468e8e1171de5f3145753b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c5c211cd674e86edc4528e6e2c5e75bd5b02132d
+ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006215"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92298195"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>L'accesso alle sottoscrizioni di Visual Studio potrebbe non riuscire quando si usano gli alias
 A seconda del tipo di account usato per accedere, le sottoscrizioni disponibili potrebbero non essere visualizzate correttamente quando si accede a [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) . Una delle possibili cause è l'uso di "alias" o "nomi descrittivi" al posto dell'identità di accesso a cui è assegnata la sottoscrizione. Questa situazione viene chiamata "aliasing".
@@ -33,10 +33,10 @@ Una mancata corrispondenza UPN può essere rilevata quando una società dispone 
 
 1. Accedere https://my.visualstudio.com/subscriptions usando l'indirizzo di accesso indicato nel messaggio di posta elettronica di assegnazione della sottoscrizione.
 
-2. Verificare che l'indirizzo di posta elettronica di accesso elencato nella parte superiore destra della pagina corrisponda all'indirizzo usato per l'accesso.  In caso contrario, il nome UPN non corrisponde e non sarà possibile visualizzare la sottoscrizione. 
+2. Fare clic sul proprio nome nell'angolo superiore destro della pagina.  Il profilo verrà aperto.  Verificare che l'indirizzo di posta elettronica di accesso elencato nel profilo corrisponda all'indirizzo usato per l'accesso.  In caso contrario, il nome UPN non corrisponde e non sarà possibile visualizzare la sottoscrizione. 
 
 > [!div class="mx-imgBorder"]
-> ![Indirizzo di posta elettronica di accesso](_img//aliasing/sign-in-email.png "Assicurarsi che l'indirizzo di posta elettronica visualizzato in alto a destra corrisponda a quello usato per l'accesso.")
+> ![Indirizzo di posta elettronica di accesso](_img//aliasing/sign-in-email.png "Assicurarsi che l'indirizzo di posta elettronica visualizzato nel profilo corrisponda a quello usato per l'accesso.")
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>Come correggere un UPN non corrispondente
 

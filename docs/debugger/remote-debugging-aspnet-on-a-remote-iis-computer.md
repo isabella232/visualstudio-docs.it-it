@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 4d2f2e2a698063dfb5ac6261d8a9b01a073d112e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 389fe1491a92cacecd772244c2a0facd0d12c887
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173882"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "92298767"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>ASP.NET Core di debug remoto in un computer IIS remoto in Visual Studio
 
@@ -53,7 +53,7 @@ Questo articolo include i passaggi per configurare una configurazione di base di
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>Creare l'applicazione ASP.NET Core nel computer di Visual Studio
 
-1. Creare una nuova applicazione Web ASP.NET Core. 
+1. Creare una nuova applicazione Web ASP.NET Core.
 
     ::: moniker range=">=vs-2019"
     In Visual Studio 2019, digitare **CTRL + Q** per aprire la casella di ricerca, digitare **ASP.NET**, scegliere **modelli**, quindi scegliere **Crea nuovo ASP.NET Core applicazione Web**. Nella finestra di dialogo visualizzata, denominare il progetto **MyASPApp**, quindi scegliere **Crea**. Successivamente, scegliere **applicazione Web (Model-View-Controller)**, quindi scegliere **Crea**.
@@ -209,7 +209,7 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
 
 6. Digitare la prima lettera del nome del processo per trovare rapidamente l'app.
 
-    * Se si usa il [modello di hosting in-process](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models) in IIS, selezionare il processo di **w3wp.exe** corretto. A partire da .NET Core 3, si tratta dell'impostazione predefinita.
+    * Se si usa il [modello di hosting in-process](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models) in IIS, selezionare il processo di **w3wp.exe** corretto. A partire da .NET Core 3, si tratta dell'impostazione predefinita.
 
     * In caso contrario, selezionare il processo **dotnet.exe** . Si tratta del modello di hosting out-of-process.
 
