@@ -8,10 +8,10 @@ ms.date: 09/03/2020
 ms.topic: how-to
 description: Scopri come acquistare nuove sottoscrizioni mensili di Visual Studio nel portale di amministrazione delle sottoscrizioni
 ms.openlocfilehash: 56f4b4f765edec5b624db786795c84969872978a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005099"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Aggiungere nuove sottoscrizioni mensili di Visual Studio al portale di amministrazione delle sottoscrizioni

@@ -8,10 +8,10 @@ ms.date: 09/08/2020
 ms.topic: how-to
 description: Informazioni su come contattare l'amministratore della sottoscrizione per richiedere assistenza in caso di domande o problemi.
 ms.openlocfilehash: 6e2192f81a7003c3c3dcbbc9583ae537ac60cb4b
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005688"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Ottenere assistenza dall'amministratore delle sottoscrizioni

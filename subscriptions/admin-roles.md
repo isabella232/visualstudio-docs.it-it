@@ -8,10 +8,10 @@ ms.date: 09/21/2020
 ms.topic: conceptual
 description: Informazioni sui ruoli di amministratore con privilegi avanzati e amministratore e su come assegnare gli amministratori.
 ms.openlocfilehash: fc44845ed403e9bf942761203b75c2277fd1aff2
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91022702"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Amministratori con privilegi avanzati e amministratori per i contratti di sottoscrizione di Visual Studio
@@ -29,7 +29,7 @@ Guarda una dimostrazione sulla gestione degli amministratori.
 Per assegnare nuovi amministratori:
 1. Accedere a https://manage.visualstudio.com usando un indirizzo di posta elettronica assegnato come amministratore con privilegi avanzati nel contratto tramite cui sono state acquistate le sottoscrizioni.
 2. Fare clic sulla scheda **Manage Administrators** (Gestisci amministratori).
-3. Scegliere **Aggiungi**.
+3. Fare clic su **Aggiungi**.
    > [!div class="mx-imgBorder"]
    > ![Aggiungere amministratori](_img/admin-roles/add-admins.png "Fare clic sul pannello Gestisci amministratori, quindi su Aggiungi per assegnare nuovi amministratori.")
 4. Completare il modulo con le informazioni del nuovo amministratore.  

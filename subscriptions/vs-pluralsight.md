@@ -8,10 +8,10 @@ ms.date: 08/04/2020
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione del training Pluralsight inclusa nelle sottoscrizioni di Visual Studio selezionate.
 ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
+ms.lasthandoff: 10/22/2020
 ms.locfileid: "91005342"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Vantaggi di training Pluralsight nelle sottoscrizioni di Visual Studio
@@ -76,10 +76,10 @@ Alla scadenza della sottoscrizione di Pluralsight, lo stato verrà modificato in
 |          Visual Studio Enterprise con GitHub Enterprise          | VL  |   6 mesi    | Sì<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL, Azure, Retail |   3 mesi    | Sì<sup>2</sup> |
 |         Visual Studio Professional con GitHub Enterprise          | VL  |   3 mesi    | Sì<sup>2</sup> |
-|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   Non disponibile    | N/D  |
-|                      MSDN Platforms (Standard)                       |    VL, Retail     |   Non disponibile    | N/D  |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) |       Azure       | Non disponibile |       N/D       |
-|             Visual Studio Enterprise - NFR<sup>1</sup>              |      Programma      | Non disponibile |       N/D       |
+|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   Non disponibile    | ND  |
+|                      MSDN Platforms (Standard)                       |    VL, Retail     |   Non disponibile    | ND  |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) |       Azure       | Non disponibile |       ND       |
+|             Visual Studio Enterprise - NFR<sup>1</sup>              |      Programma      | Non disponibile |       ND       |
 ||
 
 <sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT software & Services Developer, MCT software & Service, most VALUABLE Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), ETP, Imagine.*
