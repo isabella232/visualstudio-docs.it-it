@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
-ms.date: 03/24/2020
+ms.date: 10/21/2020
 ms.topic: conceptual
 description: Informazioni sulle modalità di acquisto e di gestione delle sottoscrizioni cloud di Visual Studio per Cloud Solution Provider.
-ms.openlocfilehash: 9c263486259529e7eb4e19ea4cc3f8ad8520b039
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 632e407aa4455b7c2a87299cc8811bc996c8d5b6
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006228"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353265"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acquistare e gestire sottoscrizioni cloud di Visual Studio per i clienti
 I partner inclusi nel programma [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider) possono acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional per i loro clienti.
@@ -47,7 +47,7 @@ Chiunque disponga dell'[accesso come Proprietario o Collaboratore](https://na01.
 >[!NOTE]
 > È necessario seguire questa procedura ogni volta che si acquistano sottoscrizioni di Visual Studio come CSP. Al momento non è disponibile alcuna API per automatizzare l'acquisto.
 
-Dopo aver confermato l'acquisto, è possibile scegliere **Gestisci** per assegnare le sottoscrizioni agli utenti finali del cliente.  È anche possibile accedere al portale di amministrazione delle sottoscrizioni dal Centro per i partner scegliendo **Gestione dei servizi**.  Da qui, vedere i passaggi o il video seguenti.
+Dopo aver confermato l'acquisto, è possibile scegliere **Gestisci** per assegnare le sottoscrizioni agli utenti finali del cliente.  È anche possibile accedere al portale di amministrazione della sottoscrizione dal centro per i partner scegliendo **Gestione servizi**.  Da qui, vedere i passaggi o il video seguenti.
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>Come gestire le sottoscrizioni cloud di Visual Studio per il cliente
 
@@ -69,7 +69,7 @@ Per visualizzare i prezzi di Visual Studio per i partner CSP, accedere al [Centr
 
 Di seguito viene illustrato come interpretare le informazioni disponibili in questo foglio di calcolo:
 
-| Categoria del contatore    |   Nome                 |  Unità                                |           Contenuto                          |
+| Categoria del contatore    |   Name                 |  Unità                                |           Contenuto                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Subscription                         | Sottoscrizione mensile di Visual Studio Enterprise   |
 | Visual Studio     | Professionale           |  Subscription                         | Sottoscrizione mensile di Visual Studio Professional |

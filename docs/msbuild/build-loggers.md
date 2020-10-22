@@ -1,5 +1,7 @@
 ---
 title: Logger di compilazione | Microsoft Docs
+description: Usare i logger MSBuild per gestire e personalizzare l'output della compilazione e visualizzare messaggi, errori o avvisi in risposta a eventi di compilazione specifici.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a00bbb8ce239275ff140dbedf2157e4cdc41d44c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c56de103fa116cbf77ec16dc0116a2897e6ccdce
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634526"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353200"
 ---
 # <a name="build-loggers"></a>Logger di compilazione
 
@@ -64,7 +66,7 @@ La riga di comando seguente compila il progetto con lo stesso logger, ma con un 
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-1"></a>Esempio 1
 
 ### <a name="description"></a>Descrizione
 
@@ -74,7 +76,7 @@ L'esempio seguente contiene il codice completo per il logger.
 
 [!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]
 
-## <a name="example"></a>Esempio
+## <a name="example-2"></a>Esempio 2
 
 ### <a name="description"></a>Descrizione
 

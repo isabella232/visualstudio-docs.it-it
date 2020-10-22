@@ -7,12 +7,12 @@ ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Informazioni sul vantaggio Supporto della community di Azure in specifiche sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 8c048103d3ecc2aa21f771e88fa8f9b75ad94b4c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 000732d2c46d777c68451153dc5965d45087abce
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006241"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353213"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum Supporto della community di Azure nelle sottoscrizioni di Visual Studio
 Ottenere assistenza direttamente dal team di Azure in una selezione di forum di supporto tramite la community di Azure.  Il vantaggio Community di Azure consente di accedere a una raccolta di forum dedicati ad argomenti correlati ad Azure.
@@ -55,15 +55,15 @@ Ottenere assistenza direttamente dal team di Azure in una selezione di forum di 
 
 2. Individuare il riquadro Community di Azure nella sezione Supporto e fare clic sul collegamento **Ottieni assistenza**.
     > [!div class="mx-imgBorder"]
-    >![Riquadro Community di Azure](_img/vs-azure-community/vs-azure-community-tile.png)
+    >![Riquadro Community di Azure](_img/vs-azure-community/vs-azure-community-tile.png "Per iniziare, fare clic sul pulsante "Ottieni assistenza" nel riquadro della community di Azure.")
 
 3. Verrà visualizzato un elenco dei forum disponibili.  Fare semplicemente clic sul forum di propria scelta.
     > [!div class="mx-imgBorder"]
-    > ![Forum della community di Azure](_img/vs-azure-community/vs-azure-community-forums.png)
+    > ![Forum della community di Azure](_img/vs-azure-community/vs-azure-community-forums.png "Nella pagina supporto della community di Azure selezionare i forum scelti.")
 
 4. All'interno del forum, è possibile visualizzare gli argomenti e le risposte, cercare risposte alle proprie domande o pubblicare una nuova domanda.
     > [!div class="mx-imgBorder"]
-    > ![Esempio di Community di Azure](_img/vs-azure-community/vs-azure-community-example.png)
+    > ![Esempio di Community di Azure](_img/vs-azure-community/vs-azure-community-example.png "Nel forum è possibile visualizzare gli argomenti, cercare risposte o pubblicare nuove domande.")
 
 ## <a name="eligibility"></a>Idoneità
 La disponibilità del vantaggio Community di Azure dipende dalla sottoscrizione come mostrato di seguito:

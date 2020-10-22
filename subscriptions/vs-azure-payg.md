@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
-ms.date: 04/15/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Informazioni su come configurare l'account con pagamento in base al consumo di Azure.
-ms.openlocfilehash: 111733fb6950e602528fac9ae5b39bba04870d01
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 4071b16c56e67bdd86ba95f2ff982758cd23e150
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005073"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353185"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Sottoscrizioni con pagamento in base al consumo di Azure DevTest
 È possibile collaborare con il team nel cloud  creando più sottoscrizioni per sviluppo e test con pagamento in base al consumo, consentendo la collaborazione con altri sottoscrittori e garantendo allo stesso tempo l'isolamento tra i team e l'ambiente.  Sono disponibili tariffe orarie scontate esclusive per sviluppo/test e diritti speciali di uso del cloud per il software della sottoscrizione di Azure.
@@ -20,7 +20,7 @@ ms.locfileid: "91005073"
 ## <a name="set-up-a-subscription"></a>Configurare una sottoscrizione
 1. Per usare il vantaggio della sottoscrizione con pagamento in base al consumo di Azure, accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e fare clic sul collegamento **attiva** nella parte inferiore del riquadro del vantaggio.
    > [!div class="mx-imgBorder"]
-   > ![Riquadro del pagamento in base al consumo di Azure](_img/vs-azure-payg/vs-azure-payg-tile.png)
+   > ![Riquadro del pagamento in base al consumo di Azure](_img/vs-azure-payg/vs-azure-payg-tile.png "Per iniziare, fare clic su "attiva" nel riquadro sottoscrizione con pagamento in base al consumo di DevTest.")
 
 2. Se è già stato attivato un account Azure come parte dei vantaggi della sottoscrizione (ad esempio, se si dispone di una sottoscrizione Enterprise e si attiva il credito individuale Azure DevTest mensile $150), andare al passaggio 5.
 

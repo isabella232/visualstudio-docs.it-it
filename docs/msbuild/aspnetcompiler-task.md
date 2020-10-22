@@ -1,5 +1,6 @@
 ---
 title: Usare l'attività AspNetCompiler per precompilare ASP.NET
+description: Usare l'attività MSBuild AspNetCompiler per eseguire il wrapping aspnet_compiler.exe, un'utilità per la precompilazione delle applicazioni ASP.NET.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -19,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 43b7ccc11e8d265c0b1490e7e8de0bd33d903904
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 328c5d91767054b3ad4516838f95769ca6d848d0
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036184"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353408"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler (attività)
 
@@ -71,7 +72,7 @@ Nell'esempio di codice seguente viene usata l' `AspNetCompiler` attività per pr
 </Project>
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 * [Attività](../msbuild/msbuild-tasks.md)
 * [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

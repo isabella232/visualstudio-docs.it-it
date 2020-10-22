@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 03/25/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Informazioni sul vantaggio Concierge Chat nelle sottoscrizioni di Visual Studio.
-ms.openlocfilehash: d7ed217e551057ff12ed4abecedf717c9f3f6ced
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 0aab627d7c870720c0cc0d043ffb6ce556568703
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006319"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353382"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat nelle sottoscrizioni di Visual Studio
 Il servizio Concierge Chat offre assistenza per la ricerca di informazioni e documentazione tecnica sui prodotti, nonché per l'uso dei vantaggi della sottoscrizione di Visual Studio.
@@ -25,7 +25,7 @@ Ottenere assistenza tramite il servizio Concierge Chat è molto semplice.
 
 2. Individuare il riquadro Concierge Chat nella sezione Supporto della pagina dei vantaggi e fare clic su **Avvia chat**.
     > [!div class="mx-imgBorder"]
-    > ![Riquadro Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
+    > ![Riquadro Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-tile.png "Fare clic su' Chat Now ' per avviare una nuova sessione di chat.")
 
 3. Fare clic su **Continua**.
 
@@ -33,7 +33,7 @@ Ottenere assistenza tramite il servizio Concierge Chat è molto semplice.
 
 5. La chat verrà avviata non appena diventa disponibile un agente.
     > [!div class="mx-imgBorder"]
-    > ![Sessione di Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+    > ![Sessione di Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-session.png "La finestra della sessione di chat viene visualizzata quando un agente partecipa alla sessione.")
 
 ## <a name="eligibility"></a>Idoneità
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |

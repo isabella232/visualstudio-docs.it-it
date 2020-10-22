@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
-ms.date: 03/02/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Informazioni sul vantaggio CAST Highlight disponibile nelle sottoscrizioni di Visual Studio selezionate
-ms.openlocfilehash: 3273ffb718249a0503531d20b882334cb76f9428
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a6c1836724f05255c5120a336b8976ccae3cadbd
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005950"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353369"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Vantaggio CAST Highlight nelle sottoscrizioni di Visual Studio
 Gli sviluppatori hanno bisogno di informazioni dettagliate critiche sul software durante la migrazione al cloud. Con l'evidenziazione del CAST, i sottoscrittori di Visual Studio possono analizzare rapidamente il codice sorgente dell'applicazione per identificare la preparazione del cloud delle applicazioni per la migrazione ad Azure e monitorare lo stato di avanzamento della propria app durante e dopo una migrazione.
@@ -26,14 +26,14 @@ Gli sviluppatori hanno bisogno di informazioni dettagliate critiche sul software
 2. Individuare il riquadro del vantaggio CAST Highlight nella categoria "Strumenti" e fare clic su **Ottieni il codice**.
 
    > [!div class="mx-imgBorder"]
-   > ![Riquadro del vantaggio CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
+   > ![Riquadro del vantaggio CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png "Per iniziare, fare clic su' Ottieni codice ' nel riquadro del vantaggio evidenziato del CAST.")
 
 0. Verrà visualizzato un messaggio che informa che il codice è stato recuperato correttamente.  Fare clic su **Attiva**. Se non si sceglie di attivare subito il vantaggio, si può sempre tornare al riquadro di CAST Highlight nel portale delle sottoscrizioni.  Il collegamento "Ottieni il codice" verrà modificato in "Attiva" e facendo clic su di esso si riprenderà il processo di attivazione.
 
 0. Si verrà reindirizzati alla pagina di CAST Highlight in cui è possibile esplorare le funzionalità della sottoscrizione.  Quando si è pronti per creare l'account, è sufficiente specificare le informazioni di contatto nel modulo Web e fare clic su **Invia**.
 
     > [!div class="mx-imgBorder"]
-    > ![Pagina di destinazione di CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-landing.png)
+    > ![Pagina di destinazione di CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-landing.png "Specificare le informazioni personali per attivare la sottoscrizione CAST.")
 
    > [!NOTE]
    > È previsto un limite di dieci attivazioni del vantaggio CAST Highlight per organizzazione.  Se le dieci attivazioni dell'organizzazione sono già state utilizzate, non sarà possibile attivare il vantaggio CAST Highlight e si riceverà un messaggio di posta elettronica con ulteriori informazioni.

@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: Informazioni su come usare Azure DevOps come sottoscrittore di Visual Studio.
-ms.openlocfilehash: f449d39866cb5891f2b378acffdd84b38b6408c7
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 536941d02b790349d126257e61164d2b0b98d794
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005086"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92352953"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Vantaggi Azure DevOps per i sottoscrittori di Visual Studio
 I sottoscrittori attivi di Visual Studio hanno la possibilità di usare un'ampia gamma di funzionalità in Azure DevOps, incluse nella sottoscrizione come vantaggi. È possibile usare le stesse funzionalità in ogni organizzazione di Azure DevOps di cui si è membri, indipendentemente dal fatto di aver creato l'organizzazione o di essere stati aggiunti da un atro utente.
@@ -20,7 +20,7 @@ I sottoscrittori attivi di Visual Studio hanno la possibilità di usare un'ampia
 ## <a name="sign-in"></a>Accedi
 
    > [!div class="mx-imgBorder"]
-   > ![Riquadro Azure DevOps](_img/vs-azure-devops/vs-azure-devops-tile.png)
+   > ![Riquadro Azure DevOps](_img/vs-azure-devops/vs-azure-devops-tile.png "Fare clic su' inizia ' per accedere ad Azure DevOps.")
 
    
 Quando si accede ad Azure DevOps usando l'identità usata per attivare la sottoscrizione di Visual Studio o l'[identità alternativa](vs-alternate-identity.md), il riconoscimento avviene automaticamente.  In questo modo è anche possibile aggiungere un account aziendale o dell'Istituto di istruzione (che viene usato per l'accesso a Visual Studio, Microsoft 365 o alla rete aziendale o dell'Istituto di istruzione), consentendo di accedere ad Azure DevOps usando l'account personale e l'account aziendale o dell'Istituto di istruzione.
@@ -30,17 +30,17 @@ Quando si accede ad Azure DevOps usando l'identità usata per attivare la sottos
 ## <a name="eligibility"></a>Idoneità
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, retail, NFR selezionato<sup>1</sup>  | Azure Boards & repository (Basic<sup>2</sup>), Azure test plans, processi paralleli indipendenti [altre informazioni](/azure/devops/organizations/security/access-levels?view=azure-devops)     |  Sì          |
-| Visual Studio Enterprise con GitHub Enterprise   | VL| Azure Boards & repository (Basic<sup>2</sup>), Azure test plans, processi paralleli indipendenti [altre informazioni](/azure/devops/organizations/security/access-levels?view=azure-devops) |  Sì          |
-| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                        | Repository Azure Boards & (Basic<sup>2</sup>) [altre informazioni](/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Sì          |
-| Visual Studio Professional con GitHub Enterprise | VL| Repository Azure Boards & (Basic<sup>2</sup>)  [altre informazioni](/azure/devops/organizations/security/access-levels?view=azure-devops)                                                            |  Sì          |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Repository Azure Boards & (Basic<sup>2</sup>) Azure test plans [altre informazioni](/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Sì          |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | Repository Azure Boards & (Basic<sup>2</sup>) Azure test plans [altre informazioni](/azure/devops/organizations/security/access-levels?view=azure-devops)                                             |  Sì          |
+| Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, retail, NFR selezionato<sup>1</sup>  | Azure Boards & repository (Basic<sup>2</sup>), Azure test plans, processi paralleli indipendenti |  Sì          |
+| Visual Studio Enterprise con GitHub Enterprise   | VL| Azure Boards & repository (Basic<sup>2</sup>), Azure test plans, processi paralleli indipendenti |  Sì          |
+| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                        | Repository Azure Boards & (Basic<sup>2</sup>)                                                             |  Sì          |
+| Visual Studio Professional con GitHub Enterprise | VL| Repository Azure Boards & (Basic<sup>2</sup>)                                                             |  Sì          |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Repository Azure Boards & (Basic<sup>2</sup>), Azure test plans                                              |  Sì          |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Repository Azure Boards & (Basic<sup>2</sup>), Azure test plans                                             |  Sì          |
 ||
 
 <sup>1</sup>  *include: not for Resale (NFR), most VALUABLE Professional (MVP), Regional Director (Rd), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT software & Services Developer, ETP. Esclude: MCT software & Services, Imagine.*
 
-<sup>2</sup> il *piano Basic include la definizione di pipeline di versione e pipeline di distribuzione continua multifase (CD) e l'uso di approvazioni e controlli per controllare le distribuzioni. quando è abilitata l'accesso gratuito alla funzionalità di anteprima delle pipeline, le parti interessate ottengono l'accesso a tutte le funzionalità di Azure Pipelines. Per altre informazioni sulle funzionalità incluse nei piani, vedere la [pagina relativa ai livelli di accesso](/azure/devops/organizations/security/access-levels?view=azure-devops)di Azure.*
+<sup>2</sup> * il piano Basic include la definizione di pipeline di versione e pipeline di distribuzione continua multifase (CD) e l'uso di approvazioni e controlli per controllare le distribuzioni. Quando è abilitata la funzionalità di anteprima dell'accesso gratuito alla pipeline, le parti interessate ottengono l'accesso a tutte le funzionalità Azure Pipelines. *
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a passare a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare diverse opzioni per l'acquisto di Visual Studio.

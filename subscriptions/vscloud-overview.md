@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
-ms.date: 03/24/2020
+ms.date: 10/21/2020
 ms.topic: overview
 description: Noleggiare Visual Studio Professional o Visual Studio Enterprise su base mensile o annuale senza contratto a lungo termine.
-ms.openlocfilehash: d92d11321529e7ab8053ea657b2b5f4688c55aa0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 29dd6be56441fd833c56eaea89286bb3d418ec78
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005316"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353447"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional
 È possibile acquistare [sottoscrizioni di Visual Studio Professional e Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) da [Visual Studio Marketplace](https://marketplace.visualstudio.com). Queste sono le cosiddette **sottoscrizioni cloud**.
@@ -36,7 +36,7 @@ Per fatturare gli acquisti, è necessaria una [sottoscrizione di Azure](https://
 
 3. Selezionare la sottoscrizione di Azure da usare per la fatturazione. È possibile creare una nuova sottoscrizione Azure se non è già disponibile.
     > [!div class="mx-imgBorder"]
-    > ![Selezionare la sottoscrizione di Azure per la fatturazione](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
+    > ![Selezionare la sottoscrizione di Azure per la fatturazione](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png "Selezionare la sottoscrizione di Azure da usare per acquistare le sottoscrizioni.")
 
 4. Selezionare il numero di sottoscrizioni da acquistare.
     > [!div class="mx-imgBorder"]
@@ -47,18 +47,21 @@ Per fatturare gli acquisti, è necessaria una [sottoscrizione di Azure](https://
 5. Verificare e completare l'acquisto. Se si ha una sottoscrizione assegnata, è possibile visitare il [portale per i sottoscrittori Visual Studio](https://my.visualstudio.com) per avviare il download del software e iniziare a usare altri vantaggi per i sottoscrittori.
 
 > [!div class="mx-imgBorder"]
-> ![Completare l'acquisto](_img/buy-vs-subscriptions/buy-vs-sub-success.png)
+> ![Completare l'acquisto](_img/buy-vs-subscriptions/buy-vs-sub-success.png "Si riceverà una conferma di un acquisto riuscito.")
+
+0. Fare clic su **Visualizza sottoscrizione** per aprire il portale Sottoscrittore e iniziare a usare la sottoscrizione.
 
 > [!div class="mx-imgBorder"]
-> ![Passare al portale per i sottoscrittori di Visual Studio](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png)
+> ![Passare al portale per i sottoscrittori di Visual Studio](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png "Nel portale delle sottoscrizioni di Visual Studio è possibile esplorare la sottoscrizione e usare i vantaggi disponibili.")
 
-Se sono state acquistate più sottoscrizioni, procedere al [portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com) per assegnare le sottoscrizioni ad altri utenti.  Se questa è la prima volta che si acquistano, potrebbe essere necessario [aggiungere le nuove sottoscrizioni](add-monthly-subs.md) al portale di amministrazione.
-
-> [!div class="mx-imgBorder"]
-> ![Assegnare sottoscrizioni ad altri](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png)
+Se è stata acquistata più di una sottoscrizione, passare al [portale di amministrazione delle sottoscrizioni di Visual Studio](https://manage.visualstudio.com) per assegnare le sottoscrizioni ad altri utenti.  Se questa è la prima volta che si acquistano, potrebbe essere necessario [aggiungere le nuove sottoscrizioni](add-monthly-subs.md) al portale di amministrazione.
 
 > [!div class="mx-imgBorder"]
-> ![Visualizzare le sottoscrizioni](_img/buy-vs-subscriptions/assign-subscriptions.png)
+> ![Assegnare sottoscrizioni ad altri](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png "Fare clic su' assegna a utenti ' per fornire sottoscrizioni agli utenti.")
+
+
+> [!div class="mx-imgBorder"]
+> ![Visualizzare le sottoscrizioni](_img/buy-vs-subscriptions/assign-subscriptions.png "Fare clic su' Aggiungi ' per assegnare le sottoscrizioni agli utenti")
 
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>Annullare il rinnovo delle sottoscrizioni cloud acquistate
 
