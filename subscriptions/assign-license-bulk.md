@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 09/21/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono assegnare licenze a più sottoscrittori usando la funzionalità di aggiunta in blocco o i gruppi di Microsoft Azure Active Directory
-ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 1c3fba04ead841d4955d26865e6ff6b1d0632048
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022422"
+ms.locfileid: "92435876"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Assegnare sottoscrizioni a più utenti
 Il portale di amministrazione delle sottoscrizioni permette di aggiungere utenti uno per volta o in gruppi di grandi dimensioni.  Per aggiungere singoli utenti, vedere [Aggiungere singoli utenti](assign-license.md).
@@ -119,6 +119,8 @@ Guardare questo video o leggere per altre informazioni sull'aggiunta di sottoscr
 
 > [!NOTE]
 > Se sono già state assegnate sottoscrizioni individualmente agli utenti aggiunti successivamente come parte di un gruppo di Azure AD, verranno aggiunte come parte del gruppo e non verranno più elencate singolarmente. Tuttavia, se la sottoscrizione singola è per un livello di sottoscrizione diverso, avranno due sottoscrizioni.  Esempio: se un utente dispone di un singolo Visual Studio Professional sottoscrizione e è membro di un gruppo a cui si assegnano Visual Studio Enterprise sottoscrizioni, avranno entrambi.  
+>
+> Se si rimuove un Sottoscrittore da un gruppo Azure Active Directory a cui sono state assegnate sottoscrizioni, potrebbero essere necessarie fino a 24 ore prima che l'aggiornamento venga riflesso nel portale di amministrazione. 
 
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti

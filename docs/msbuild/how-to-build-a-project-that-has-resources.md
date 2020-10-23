@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: Compilare un progetto con risorse | Microsoft Docs'
+description: Informazioni su come compilare un progetto che dispone di risorse e su come compilare risorse tramite MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a76246096eec8779ce331e93f01be5ab791d1cdb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6a71a34b4ce208b093f7982ba3516b0229c8644
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633954"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436680"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Procedura: Compilare un progetto con risorse
 
@@ -38,7 +40,7 @@ La libreria delle attività comuni fornite con MSBuild include un' `GenerateReso
 
 4. Usare l'elemento creato dall'elemento `Output` come input per un'altra attività.
 
-## <a name="example"></a>Esempio
+## <a name="example-1"></a>Esempio 1
 
 L'esempio di codice seguente illustra come l'elemento `Output` specifica che l'attributo `OutputResources` dell'attività `GenerateResource` conterrà i file di risorse compilati *alpah.resources* e *beta.resources* e che questi due file verranno inseriti nell'elenco di elementi `Resources`. Identificando tali file con *estensione resources* come una raccolta di elementi con lo stesso nome, è possibile usarli facilmente come input per un'altra attività, ad esempio l'attività [CSC](../msbuild/csc-task.md) .
 
@@ -55,7 +57,7 @@ Questa attività equivale a usare l'opzione **/compile** per [Resgen.exe](/dotne
 </GenerateResource>
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-2"></a>Esempio 2
 
 Il progetto di esempio seguente contiene due attività: l'attività `GenerateResource` per compilare le risorse e l'attività `Csc` per compilare sia i file di codice sorgente che i file di risorse compilati. I file di risorse compilati dall'attività `GenerateResource` vengono archiviati nell'elemento `Resources` e passati all'attività `Csc`.
 

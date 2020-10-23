@@ -1,5 +1,7 @@
 ---
 title: Attività GenerateResource | Microsoft Docs
+description: Usare l'attività GenerateResource di MSBuild per eseguire la conversione tra i file con estensione txt o resx e Common Language Runtime file con estensione resources binari.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd5946612889e98b3b90f2ee3cb8665c43827a5e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 124e5dcc3666698dd71927e15c3686038233c317
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634058"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436871"
 ---
 # <a name="generateresource-task"></a>GenerateResource (attività)
 
@@ -44,7 +46,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `GenerateRe
 |`NeverLockTypeAssemblies`|Parametro `Boolean` facoltativo.<br /><br /> Ottiene o imposta un valore booleano che specifica se creare un nuovo oggetto [AppDomain](/dotnet/api/system.appdomain) per valutare i file di risorse (*resx*) (true) o se creare un nuovo oggetto [AppDomain](/dotnet/api/system.appdomain) solo quando i file di risorse fanno riferimento a un assembly dell'utente (false).|
 |`OutputResources`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica il nome dei file generati, inclusi i file *RESOURCES*. Se non si specifica un nome, viene utilizzato il nome del file di input corrispondente e il file con *estensione resources* creato viene inserito nella directory contenente il file di input.|
 |`PublicClass`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, crea una classe di risorse fortemente tipizzata come classe pubblica.|
-|`References`|Parametro `String[]` facoltativo.<br /><br /> Specifica i riferimenti per il caricamento dei tipi nei file *RESX*. Gli elementi dati dei file *RESX* possono essere di tipo .NET. Quando il file con *estensione resx* viene letto, è necessario risolvere il problema. In genere, è possibile risolverlo correttamente usando le regole di caricamento dei tipi standard. Hanno la precedenza eventuali assembly specificati in `References`.<br /><br /> Questo parametro non è obbligatorio per le risorse fortemente tipizzate.|
+|`References`|Parametro `String[]` facoltativo.<br /><br /> Specifica i riferimenti per il caricamento dei tipi nei file *RESX*. gli elementi dati del file con *estensione resx* possono avere un tipo .NET. Quando il file con *estensione resx* viene letto, è necessario risolvere il problema. In genere, è possibile risolverlo correttamente usando le regole di caricamento dei tipi standard. Hanno la precedenza eventuali assembly specificati in `References`.<br /><br /> Questo parametro non è obbligatorio per le risorse fortemente tipizzate.|
 |`SdkToolsPath`|Parametro `String` facoltativo.<br /><br /> Specifica il percorso degli strumenti SDK, ad esempio *resgen.exe*.|
 |`Sources`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica gli elementi da convertire. Gli elementi passati a questo parametro devono avere una delle estensioni di file seguenti:<br /><br /> -   *TXT*: specifica l'estensione di un file di testo da convertire. I file di testo possono contenere solo risorse di tipo stringa.<br />-   *RESX*: specifica l'estensione di un file di risorse basato su XML da convertire.<br />-   *RESTEXT*: specifica lo stesso formato di *TXT*. Questa diversa estensione consente di distinguere chiaramente i file di origine che contengono risorse dagli altri file di origine nel processo di compilazione.<br />-   *RESOURCES*: specifica l'estensione di un file di risorse da convertire.|
 |`StateFile`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica il percorso di un file di cache facoltativo usato per accelerare il controllo delle dipendenze dei collegamenti nei file di input *RESX*.|
@@ -62,7 +64,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `GenerateRe
 |`TrackFileAccess`|Parametro <xref:System.Boolean> facoltativo.<br /><br /> Se true, la directory del file di input viene usata per risolvere i percorsi di file relativi.|
 |`UseSourcePath`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, specifica che è necessario usare la directory del file di input per risolvere i percorsi di file relativi.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Poiché i file *RESX* possono contenere collegamenti ad altri file di risorse, non è sufficiente confrontare i timestamp dei file *RESX* e *RESOURCES* per verificare che gli output siano aggiornati. Per questo motivo, l'attività `GenerateResource` segue i collegamenti nei file *RESX* e al tempo stesso controlla i timestamp dei file collegati. Ne consegue che, in genere, non è consigliabile usare gli attributi `Inputs` e `Outputs` nella destinazione che contiene l'attività `GenerateResource`. In questo modo, infatti, è possibile che l'attività venga ignorata anziché essere eseguita.
 

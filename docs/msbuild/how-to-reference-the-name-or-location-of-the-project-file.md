@@ -1,5 +1,6 @@
 ---
 title: Fare riferimento al nome o al percorso del file di progetto
+description: Informazioni su come usare le proprietà riservate di MSBuild per fare riferimento al nome o al percorso del file di progetto senza dover creare proprietà personalizzate.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29960de09b512a419a56a61f493702485c287475
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ccc356e1859f447db1ac18a437b8fc2317925b0f
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036457"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436338"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Procedura: Fare riferimento al nome o al percorso del file di progetto
 
@@ -49,7 +50,7 @@ ms.locfileid: "90036457"
 > [!NOTE]
 > Le proprietà riservate non possono essere ridefinite nel file di progetto.
 
-## <a name="example"></a>Esempio
+## <a name="example-1"></a>Esempio 1
 
  Il file di progetto di esempio seguente fa riferimento al nome del progetto come proprietà riservata per specificare il nome per l'output.
 
@@ -78,7 +79,7 @@ ms.locfileid: "90036457"
 </Project>
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-2"></a>Esempio 2
 
  Il file di progetto di esempio seguente usa la proprietà `MSBuildProjectDirectory` riservata per creare il percorso completo a un file del percorso del file di progetto.
 
@@ -94,7 +95,7 @@ ms.locfileid: "90036457"
 
 Nell'esempio viene utilizzata la sintassi della [funzione Property](property-functions.md) per chiamare il metodo statico .NET Framework <xref:System.IO.Path.Combine*?displayProperty=fullName> .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [MSBuild](../msbuild/msbuild.md)
 - [Proprietà riservate e note MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

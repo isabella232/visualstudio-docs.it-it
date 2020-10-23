@@ -1,5 +1,7 @@
 ---
 title: Attività Error | Microsoft Docs
+description: Utilizzare l'attività errore MSBuild per arrestare una compilazione e registrare un errore in base a un'istruzione condizionale valutata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd5dd3214c9575a34e9265c33061b024648a221c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2b451f9c3074af7d621576336ea3bf0e05ebea3
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634227"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436641"
 ---
 # <a name="error-task"></a>attività Error
 
@@ -40,7 +42,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `Error` .
 | `HelpKeyword` | Parametro `String` facoltativo.<br /><br /> Parola chiave della Guida da associare all'errore. |
 | `Text` | Parametro `String` facoltativo.<br /><br /> Testo dell'errore registrato da MSBuild se il `Condition` parametro restituisce `true` . |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 L' `Error` attività consente ai progetti MSBuild di rilasciare il testo dell'errore ai logger e arrestare l'esecuzione della compilazione.
 

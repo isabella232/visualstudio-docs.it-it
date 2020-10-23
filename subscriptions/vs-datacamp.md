@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 04/17/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione di training di DataCamp inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 67fa9a68a22ee909c4c483246be7dc26c789c5f0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 54f2cf98d6e726e8abf8a0a863a54cc891c12523
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006332"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435893"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Vantaggio per il training DataCamp nelle sottoscrizioni di Visual Studio
 Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp.  Con DataCamp è possibile acquisire tutte le competenze di data science dal browser con la massima comodità, scegliendo personalmente il momento e l'argomento del training. Senza software da installare e senza requisiti hardware speciali, l'apprendimento di data science è più semplice che mai.
@@ -22,7 +22,7 @@ Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp. 
 
 2. Individuare il riquadro del vantaggio DataCamp nella categoria "Sviluppo professionale" e fare clic su **Attivalo**.
    > [!div class="mx-imgBorder"]
-   > ![Riquadro del vantaggio DataCamp](_img/vs-datacamp/vs-datacamp-tile-2.png)
+   > ![Riquadro del vantaggio DataCamp](_img/vs-datacamp/vs-datacamp-tile-2.png "Per iniziare, fare clic su "attiva".")
 
 3. Nella pagina DataCamp è possibile creare un nuovo account.  È possibile scegliere di immettere un indirizzo di posta elettronica e una password o di accedere tramite un account di Facebook, LinkedIn o Google.  Dopo aver fornito le informazioni di accesso, fare clic su **Get Started** (Inizia).
 
@@ -36,25 +36,25 @@ Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp. 
 
    Per iniziare è sufficiente fare clic sul percorso scelto.
    > [!div class="mx-imgBorder"]
-   > ![Scelta del percorso DataCamp](_img/vs-datacamp/vs-datacamp-choose-path.png)
+   > ![Scelta del percorso DataCamp](_img/vs-datacamp/vs-datacamp-choose-path.png "Scegli un percorso di apprendimento che ti interessa.")
 
 5. Dopo aver selezionato il percorso, è possibile affinare maggiormente il percorso di apprendimento selezionando un obiettivo.  Se ad esempio si è scelto il percorso "Develop your Data Science Skillset" (Sviluppo dell'insieme di competenze di data science), vengono visualizzate le opzioni seguenti. Scegliere un'opzione oppure fare clic su non è **certo.  Mostra tutti i percorsi di carriera** per creare un percorso più ampio.
    > [!div class="mx-imgBorder"]
-   > ![Insieme di competenze di data science di DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png)
+   > ![Insieme di competenze di data science di DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png "Fare clic su' non è certo.  Mostra tutti i percorsi di carriera per visualizzare l'elenco completo.")
 
 6. In base al percorso e alle opzioni selezionate verrà selezionata una selezione di percorsi di carriera.  Fare clic sul pulsante **Enroll** (Registrati) corrispondente al percorso scelto.
    > [!div class="mx-imgBorder"]
-   > ![Percorso di carriera di DataCamp](_img/vs-datacamp/vs-datacamp-all-tracks.png)
+   > ![Percorso di carriera di DataCamp](_img/vs-datacamp/vs-datacamp-all-tracks.png "Per iniziare, fare clic sul pulsante ' Registra ' nel percorso selezionato.")
 
-7. Dopo la registrazione, si aprirà il primo corso del percorso.  Verrà visualizzata un'esercitazione che spiegherà come interagire con il corso (spostamento ed esecuzione degli esercizi).
+7. Al termine della registrazione, viene aperto il primo corso di tale traccia.  Verrà visualizzata un'esercitazione che spiegherà come interagire con il corso (spostamento ed esecuzione degli esercizi).
 
    > [!div class="mx-imgBorder"]
-   > ![Introduzione a DataCamp](_img/vs-datacamp/vs-datacamp-getting-started.png)
+   > ![Introduzione a DataCamp](_img/vs-datacamp/vs-datacamp-getting-started.png "Per informazioni su come spostarsi nei corsi, vedere l'esercitazione.")
 
 È possibile interrompere il training in qualsiasi momento e riprenderlo nella sessione successiva.  Basta visitare [https://www.datacamp.com](https://www.datacamp.com) e accedere.  Verrà visualizzato il dashboard e sarà possibile riprendere il training dal punto in cui era stato sospeso. È sufficiente fare clic su **Continue Track** (Continua il percorso).
 
 > [!div class="mx-imgBorder"]
-> ![Continuazione del training su DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> ![Continuazione del training su DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png "Fare clic su' continua traccia ' per riprendere il training in qualsiasi momento.")
 
 ## <a name="eligibility"></a>Idoneità
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |

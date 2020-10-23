@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: Escludere file dalla compilazione | Microsoft Docs'
+description: Informazioni su come escludere o includere in modo esplicito i file dalle compilazioni nei file di progetto MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1914f709a69dbb120e4439ddceeda8b70ad570b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 48578edd6c7911e858f32b1961b4ef361748788d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633863"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436368"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Procedura: Escludere file dalla compilazione
 
@@ -44,7 +46,7 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
     <CSFile Include="*.cs" Exclude="Form2.cs"/>
     ```
 
-    Oppure
+    oppure
 
     ```xml
     <VBFile Include="*.vb" Exclude="Form2.vb"/>
@@ -58,7 +60,7 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>
     ```
 
-    Oppure
+    oppure
 
     ```xml
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>

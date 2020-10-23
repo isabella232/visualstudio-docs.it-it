@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: Usare la stessa destinazione in più file di progetto | Microsoft Docs'
+description: Informazioni su come salvare una destinazione in un file di progetto MSBuild e importarla in qualsiasi altro progetto che deve usare la destinazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bc8f3c95c687244162cb3bd977ca40031cd8f39
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d81328ecf17117500a5f686a45f934e451bb5809
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82255580"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436053"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Procedura: Usare la stessa destinazione in più file di progetto
 
@@ -83,7 +85,7 @@ L'elemento `Import` consente di inserire un file di progetto in un altro file di
 
 3. Nel file di progetto definire tutte le proprietà e gli elementi che devono eseguire l'override delle definizioni predefinite delle proprietà e degli elementi presenti nel progetto importato.
 
-## <a name="example"></a>Esempio
+## <a name="example-1"></a>Esempio 1
 
  Nell'esempio di codice seguente viene illustrato il file *comune. targets* importato dal secondo esempio di codice. Il file con *estensione targets* valuta le proprietà del progetto di importazione per configurare la compilazione.
 
@@ -102,7 +104,7 @@ L'elemento `Import` consente di inserire un file di progetto in un altro file di
 </Project>
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-2"></a>Esempio 2
 
  Nell'esempio di codice seguente viene importato il file *comune. targets* .
 

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: Selezionare i file da compilare | Microsoft Docs'
+description: Informazioni su come selezionare i file da compilare nel file di progetto MSBuild elencando separatamente ogni file o usando caratteri jolly.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0566078c7f90faf204c35024e2c308b5ef881c01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4593fff50feb0176ea81f70dc297bc39d8dd1936
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633811"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436202"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Procedura: Selezionare i file da compilare
 
@@ -35,7 +37,7 @@ Per includere i file per una compilazione, è necessario includerli in un elenco
 
     `<CSFile Include="form1.cs"/>`
 
-    Oppure
+    oppure
 
     `<VBFile Include="form1.vb"/>`
 
@@ -48,7 +50,7 @@ Per includere i file per una compilazione, è necessario includerli in un elenco
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 
-    Oppure
+    oppure
 
     `<VBFile Include="form1.vb;form2.vb"/>`
 
@@ -82,7 +84,7 @@ Gli esempi seguenti si basano su un progetto che contiene file grafici nelle dir
 
     `Include="Images\**\*jpgs\*.*"`
 
-    Oppure
+    oppure
 
     `Include="Images\**\*jpgs\*"`
 
@@ -96,7 +98,7 @@ In un file di progetto, è possibile usare la notazione @() nelle attività per 
 
     `<CSC Sources="@(CSFile)">...</CSC>`
 
-    Oppure
+    oppure
 
     `<VBC Sources="@(VBFile)">...</VBC>`
 
@@ -105,7 +107,7 @@ In un file di progetto, è possibile usare la notazione @() nelle attività per 
 >
 > `<CSC Sources="*.cs">...</CSC>`
 
-## <a name="example"></a>Esempio
+## <a name="example-1"></a>Esempio 1
 
 L'esempio di codice seguente illustra un progetto che include tutti i file di input separatamente.
 
@@ -140,7 +142,7 @@ L'esempio di codice seguente illustra un progetto che include tutti i file di in
 </Project>
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-2"></a>Esempio 2
 
 L'esempio di codice seguente usa un carattere jolly per includere tutti i file con estensione *cs*.
 

@@ -2,17 +2,17 @@
 title: Vantaggio Account per sviluppatore di Windows nelle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Informazioni sul vantaggio Account per sviluppatore di Windows incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 2686034d95c8faf8caed25b6b2fb4cb7ad83d8fe
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 46cb22becd8a5ac852c7fddbd2cf8b473cef47bc
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005382"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435817"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Account per sviluppatore di Windows nelle sottoscrizioni di Visual Studio
 L'account per sviluppatore di Windows, incluso in una sottoscrizione selezionata di Visual Studio, consente di inviare app di Windows gratuite e a pagamento a Windows Store.
@@ -25,10 +25,10 @@ Per usare l'account per sviluppatore di Windows, è necessario configurare un ac
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Individuare il riquadro Account per sviluppatore di Windows nella sezione Strumenti e fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro del vantaggio.  Copiare il codice negli Appunti e quindi fare clic su **Activate (attiva**).
    > [!div class="mx-imgBorder"]
-   > ![Riquadro del vantaggio per sviluppatori di Windows](_img/vs-windows-dev/vs-windows-dev-tile.png)
+   > ![Riquadro del vantaggio per sviluppatori di Windows](_img/vs-windows-dev/vs-windows-dev-tile.png "Fare clic su "Ottieni il codice" nel riquadro account sviluppatore Windows, quindi fare clic su "attiva".")
 3. Nel [https://developer.microsoft.com/store/register/](https://developer.microsoft.com/store/register/) sito è possibile iniziare il processo di registrazione.  Fare clic su **Iscriviti** per continuare.
    > [!div class="mx-imgBorder"]
-   > ![Registrazione al vantaggio per sviluppatori di Windows](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
+   > ![Registrazione al vantaggio per sviluppatori di Windows](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png "Fare clic su "Iscriviti" per creare l'account.")
 4. Accedere alla sottoscrizione.  Se si hanno più account, scegliere quello associato alla sottoscrizione Enterprise.
 0. Immettere l'indirizzo di posta elettronica, selezionare la lingua preferita e fare clic su **Salva**.
 5. Nella pagina successiva selezionare il paese o la regione di residenza o in cui si trova la società e quindi fare clic su **Avanti**.
@@ -47,9 +47,9 @@ Per usare l'account per sviluppatore di Windows, è necessario configurare un ac
 | Visual Studio Enterprise con GitHub Enterprise   | VL  | Incluso       |  Sì|
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Incluso                                                            |Sì|
 | Visual Studio Professional con GitHub Enterprise | VL                                        | Incluso                                                            |Sì|
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                            |  N/D|
-| MSDN Platforms (Standard)                                          | VL, Retail                                              |  Non disponibile                                            |  N/D|
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                            |  ND|
+| MSDN Platforms (Standard)                                          | VL, Retail                                              |  Non disponibile                                            |  ND|
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |ND|
 ||
 
 <sup>1</sup>  *include: not for Resale (NFR), ETP, Visual Studio Industry Partner (VSIP), BizSpark, MCT software & Services Developer, MVP (Most Valuable Professional), Regional Director (Rd). Esclude: Microsoft Partner Network (MPN), Imagine, MCT software & Services.*

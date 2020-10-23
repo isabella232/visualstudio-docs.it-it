@@ -1,5 +1,7 @@
 ---
 title: Attività GenerateTemporaryTargetAssembly | Microsoft Docs
+description: Usare l'attività GenerateTemporaryTargetAssembly di MSBuild per generare un assembly se un progetto fa riferimento a un tipo dichiarato localmente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69333b87720513244e90c131f052d11099b62e35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a100ad8a3be57288e49a858d6f87851269df303
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634045"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436764"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Attività GenerateTemporaryTargetAssembly
 
@@ -43,7 +45,7 @@ L' <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> attivit�
 | `ReferencePath` | Parametro **ITaskItem []** facoltativo.<br /><br /> Specifica un elenco di assembly, per percorso e nome file, a cui fanno riferimento i tipi compilati nell'assembly di destinazione temporaneo. |
 | `ReferencePathTypeName` | Parametro **String** obbligatorio.<br /><br /> Specifica il parametro usato dal parametro di destinazione della compilazione (**CompileTargetName**), che specifica l'elenco di riferimenti ad assembly (**ReferencePath**). Il valore appropriato è **ReferencePath**. |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Il primo passaggio di compilazione del markup, eseguito da [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md), compila i file XAML in formato binario. Di conseguenza, il compilatore necessita di un elenco degli assembly a cui si fa riferimento che contengono i tipi utilizzati dai file XAML. Tuttavia, se un file XAML usa un tipo definito nello stesso progetto, un assembly corrispondente per quel progetto non viene creato fino a quando non viene compilato il progetto. Pertanto, non è possibile fornire un riferimento all'assembly durante il primo passaggio di compilazione del markup.
 

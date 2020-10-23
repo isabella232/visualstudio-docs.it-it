@@ -1,5 +1,6 @@
 ---
 title: Compilare gli stessi file di origine con opzioni diverse
+description: Informazioni su come creare diverse configurazioni di compilazione MSBuild per compilare gli stessi file di origine con opzioni diverse.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e76145df0fdf3f4cc3a3dfa8e14c6826b0dbdf
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a2c6a2b27aa08780d440c0e961c9a091c2b2fdb2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037595"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436915"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedura: Compilare gli stessi file di origine con opzioni diverse
 
@@ -88,7 +89,7 @@ Dopo avere scritto il file di progetto in modo che accetti più configurazioni, 
 
   È possibile modificare questo comportamento usando l'attributo `TreatAsLocalProperty` in un tag di progetto. Per i nomi di proprietà elencati con tale attributo, il valore della proprietà specificato nella riga di comando non ha la precedenza sul valore nel file di progetto. È possibile trovare un esempio più avanti in questo argomento.
 
-## <a name="example"></a>Esempio
+## <a name="example-1"></a>Esempio 1
 
 L'esempio di codice seguente del progetto "Hello World" contiene due nuovi gruppi di proprietà che possono essere usati per creare una build di debug e una build di rilascio.
 
@@ -156,7 +157,7 @@ msbuild consolehwcs1.proj -p:flavor=retail
 </Project>
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-2"></a>Esempio 2
 
 L'esempio seguente mostra come usare l'attributo `TreatAsLocalProperty`. La proprietà `Color` ha un valore di `Blue` nel file di progetto e `Green` nella riga di comando. Con `TreatAsLocalProperty="Color"` nel tag di progetto, la proprietà della riga di comando (`Green`) non esegue l'override della proprietà definita nel file di progetto (`Blue`).
 
@@ -188,7 +189,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 -->
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [MSBuild](../msbuild/msbuild.md)
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)

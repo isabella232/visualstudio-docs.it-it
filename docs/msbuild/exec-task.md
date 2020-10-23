@@ -1,5 +1,7 @@
 ---
 title: Attività Exec | Microsoft Docs
+description: Informazioni su come usare l'attività di MSBuild Exec per eseguire un programma o un comando specifico usando gli argomenti specificati.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 785f3f7d350a21ae31fe9ee4657b967b63e40f2d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99475ac316112f29a73a85b8ff92249a13867852
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288923"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436732"
 ---
 # <a name="exec-task"></a>Exec (attività)
 
@@ -51,7 +53,7 @@ La tabella seguente descrive i parametri dell'attività `Exec`.
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Questa attività è utile quando una specifica attività MSBuild per il processo che si desidera eseguire non è disponibile. Tuttavia, l'attività `Exec`, a differenza di un'attività più specifica, non può eseguire un'altra elaborazione o operazioni condizionali in base al risultato dello strumento o del comando eseguito.
 

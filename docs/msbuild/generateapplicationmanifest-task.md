@@ -1,5 +1,7 @@
 ---
 title: Attività GenerateApplicationManifest | Microsoft Docs
+description: Utilizzare l'attività GenerateApplicationManifest di MSBuild per generare un manifesto dell'applicazione ClickOnce o un manifesto nativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f77420c5ab269e1b0052ce6102c4e3196a3be52b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4752e4b736a6ba2f8b4a209824b22f94d8036c2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634097"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436546"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest (attività)
 
@@ -66,7 +68,7 @@ La tabella seguente descrive i parametri dell'attività `GenerateApplicationMani
 | `TrustInfoFile` | Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Indica un documento XML che specifica la sicurezza dell'applicazione. L'elemento radice del documento XML deve essere un nodo trustInfo nello spazio dei nomi asmv2. Se l'attività genera un manifesto nativo, questo parametro viene ignorato. |
 | `UseApplicationTrust` | Parametro `Boolean` facoltativo.<br /><br /> Se true, le proprietà `Product`, `Publisher` e `SupportUrl` vengono scritte nel manifesto dell'applicazione. |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.GenerateManifestBase> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco dei parametri della classe Task, vedere [Classe di base Task](../msbuild/task-base-class.md).
 
@@ -84,7 +86,7 @@ Gli input per i file e le dipendenze possono essere ulteriormente decorati con i
 |`TargetPath`|Specifica il modo in cui il percorso deve essere definito nel manifesto generato. Questo attributo è valido per tutti i file. Se questo attributo non viene specificato, viene usata la specifica dell'elemento, Questo attributo è valido per tutti i file e le dipendenze con un valore `DependencyType` pari a `Install`.|
 |`IsDataFile`|Valore di metadati `Boolean` che indica se il file è o non è un file di dati. Un file di dati è speciale poiché viene migrato tra gli aggiornamenti dell'applicazione. Questi metadati sono validi solo per i file. `False` è il valore predefinito.|
 
-## <a name="example"></a>Esempio
+## <a name="example-1"></a>Esempio 1
 
 In questo esempio viene utilizzata l' `GenerateApplicationManifest` attività per generare un manifesto dell'applicazione ClickOnce e l' `GenerateDeploymentManifest` attività per generare un manifesto di distribuzione per un'applicazione con un singolo assembly. Viene quindi usata l'attività `SignFile` per firmare i manifesti.
 
@@ -138,7 +140,7 @@ Viene illustrato lo scenario di generazione del manifesto più semplice in cui v
 </Project>
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-2"></a>Esempio 2
 
 Questo esempio usa le `GenerateApplicationManifest` `GenerateDeploymentManifest` attività e per generare manifesti di applicazione e distribuzione ClickOnce per un'applicazione con un singolo assembly, specificando il nome e l'identità dei manifesti.
 
@@ -199,7 +201,7 @@ Questo esempio è simile all'esempio precedente, ma il nome e l'identità dei ma
 </Project>
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-3"></a>Esempio 3:
 
 Questo esempio usa le `GenerateApplicationManifest` `GenerateDeploymentManifest` attività e per generare manifesti di applicazione e distribuzione ClickOnce per un'applicazione con più file e assembly.
 
@@ -318,7 +320,7 @@ Questo esempio usa le `GenerateApplicationManifest` `GenerateDeploymentManifest`
 </Project>
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-4"></a>Esempio 4
 
 In questo esempio viene usata l'attività `GenerateApplicationManifest` per generare un manifesto nativo per l'applicazione *Test.exe*, facendo riferimento al componente nativo *Alpha.dll* e al componente COM isolato *Bravo.dll*.
 

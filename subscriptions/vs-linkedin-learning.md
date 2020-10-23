@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 10/06/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: Altre informazioni sul vantaggio LinkedIn Learning incluso come parte della sottoscrizione LinkedIn Premium inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: f71510b7d77ce79c1697848d505623c8994d8301
-ms.sourcegitcommit: a9fcf189aebe16234919421f2ad73e395e1ab8be
+ms.openlocfilehash: 7a5e15ad5d1101123a03b98da30d48895410313b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91805890"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435853"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Vantaggio LinkedIn Learning nelle sottoscrizioni di Visual Studio
 
@@ -27,7 +27,7 @@ Per attivare la sottoscrizione LinkedIn Premium e il vantaggio LinkedIn Learning
 
 2. Individuare il riquadro LinkedIn Learning nella categoria Contenuti e fare clic sul collegamento **Ottieni il codice**.
    > [!div class="mx-imgBorder"]
-   > ![Riquadro del vantaggio LinkedIn Learning](_img/vs-linkedin/vs-linkedin-6-month-tile.png)
+   > ![Riquadro del vantaggio LinkedIn Learning](_img/vs-linkedin/vs-linkedin-6-month-tile.png "Fare clic su' Ottieni codice ' per richiedere il codice e iniziare.")
 
 3. Se si ha già un account LinkedIn e l'accesso è stato effettuato automaticamente, verrà visualizzata immediatamente la pagina di attivazione del vantaggio LinkedIn Learning.  Se si ha un account LinkedIn ma l'accesso non è stato effettuato automaticamente, immettere il nome utente e la password e quindi fare clic su **Accedi**.  Andare a [questo passaggio](#activate-your-offer) per attivare l'offerta.
 
@@ -57,15 +57,15 @@ Per attivare la sottoscrizione LinkedIn Premium e il vantaggio LinkedIn Learning
 ### <a name="activate-your-offer"></a>Attivare l'offerta
 15. Ora che è stato effettuato l'accesso all'account LinkedIn o si è creato un nuovo account, è possibile attivare la sottoscrizione Premium e iniziare a usufruire della sottoscrizione di LinkedIn Learning.  Fare clic su **Attiva la tua offerta**.
    > [!div class="mx-imgBorder"]
-   > ![Attivazione di LinkedIn Learning](_img/vs-linkedin/vs-linkedin-Activate1.png)
+   > ![Attivazione di LinkedIn Learning](_img/vs-linkedin/vs-linkedin-Activate1.png "Fare clic su' attiva l'offerta ' per iniziare l'apprendimento.")
 
 16. È ora possibile iniziare l'esplorazione delle competenze di proprio interesse.  Si può scegliere dall'elenco di consigli, cercare altre competenze oppure fare clic su **Skip** (Ignora) per continuare senza effettuare alcuna scelta.
    > [!div class="mx-imgBorder"]
-   > ![Competenze di LinkedIn Learning](_img/vs-linkedin/vs-linkedin-skills.png)
+   > ![Competenze di LinkedIn Learning](_img/vs-linkedin/vs-linkedin-skills.png "Scegliere le competenze da esplorare.")
 
 17. L'attivazione dell'offerta di sottoscrizione Premium è stata attivata. È ora possibile iniziare a usare LinkedIn Learning e tutti gli altri vantaggi di Premium.
    > [!div class="mx-imgBorder"]
-   > ![Home page di LinkedIn Learning](_img/vs-linkedin/vs-linkedin-learning-home.png)
+   > ![Home page di LinkedIn Learning](_img/vs-linkedin/vs-linkedin-learning-home.png "Benvenuti in LinkedIn Premium con LinkedIn Learning.")
 
 ## <a name="eligibility"></a>Idoneità
 
@@ -75,9 +75,9 @@ Per attivare la sottoscrizione LinkedIn Premium e il vantaggio LinkedIn Learning
 | Visual Studio Enterprise con GitHub Enterprise   | VL | 6 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 mesi                                                            |No.  Disponibile solo per i nuovi sottoscrittori         |
 | Visual Studio Professional con GitHub Enterprise | VL | 3 mesi      | No.  Disponibile solo per i nuovi sottoscrittori         |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                            |  N/D         |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              | N/D         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                            |  ND         |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              | ND         |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |ND|
 
 <sup>1</sup>  *esclude: NFR, Visual Studio Industry partner, Microsoft Partner Network (MPN), ETP, MCT software & Services Developer, BizSpark, Imagine, most VALUABLE Professional (MVP), Regional Director (Rd).  MCT software & Services.*
 

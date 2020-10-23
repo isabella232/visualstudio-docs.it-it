@@ -1,18 +1,18 @@
 ---
-title: Vantaggio WhiteSource Bolt | Microsoft Docs
+title: WhiteSource Bolt nelle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 04/20/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Informazioni su come attivare la sottoscrizione di WhiteSource Bolt inclusa nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 7be5ba29c2243396ae8c510b33d928364163059c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 7d0e95bf82f31b92ef5b581a0b7d8b7d082d3237
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005701"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435988"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt nelle sottoscrizioni di Visual Studio
 
@@ -24,11 +24,11 @@ ms.locfileid: "91005701"
 
 2. Individuare il riquadro WhiteSource Bolt nella sezione Strumenti e fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro del vantaggio.
    > [!div class="mx-imgBorder"]
-   > ![Riquadro del vantaggio WhiteSource Bolt](_img/vs-whitesource/vs-whitesource-tile.png)
+   > ![Riquadro del vantaggio WhiteSource Bolt](_img/vs-whitesource/vs-whitesource-tile.png "Per iniziare, fare clic su' Ottieni codice ' nel riquadro Bolt WhiteSource.")
 
 3. Si riceverà una notifica con il codice di attivazione.  **Copiare il codice negli Appunti** e quindi fare clic su **Attiva**.
    > [!div class="mx-imgBorder"]
-   > ![Codice del vantaggio WhiteSource Bolt](_img/vs-whitesource/vs-whitesource-code.png)
+   > ![Codice del vantaggio WhiteSource ](_img/vs-whitesource/vs-whitesource-code.png "Copiare il codice negli Appunti, quindi fare clic su' Activate ' (attiva).")
 
 4. Nella pagina **Attiva l'account** fare clic sul collegamento **Installa** nel passaggio 1.
 5. Fare clic su **Scarica gratuitamente** in Visual Studio Marketplace.
@@ -44,11 +44,11 @@ ms.locfileid: "91005701"
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, retail, NFR selezionato<sup>1</sup> | 6 mesi       |  Sì       |
 | Visual Studio Enterprise con GitHub Enterprise | VL | 6 mesi       |  Sì       |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                           |N/D         |
-| Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                           |N/D         |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                           |N/D         |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                                           |N/D         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                           |ND         |
+| Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                           |ND         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                           |ND         |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                                           |ND         |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |ND|
 ||
 
 <sup>1</sup>  *include: Microsoft Partner Network (Enterprise).  Esclude: not for Resale (NFR), Visual Studio Industry Partner (VSIP), ETP, MCT software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT software & Services.*

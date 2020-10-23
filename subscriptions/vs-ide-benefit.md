@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 04/17/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Informazioni su come scaricare e installare l'ambiente IDE di Visual Studio incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: e955cc0c9e2437da07e48fc7db1c1b4df9e168e7
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 2baf2e452e86d44d814e3f4a511ebb5442b83578
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006306"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435755"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Vantaggi di Visual Studio 2019
 
@@ -26,7 +26,7 @@ Per scaricare l'ambiente IDE:
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Individuare il riquadro IDE di Visual Studio nella sezione Strumenti e fare clic sul collegamento **Download** nella parte inferiore del riquadro del vantaggio.  È anche possibile eseguire il download dalla pagina [Download](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
    > [!div class="mx-imgBorder"]
-   > ![Riquadro Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png)
+   > ! [Riquadro Visual Studio Enterprise] (_img/vs-IDE-Experience/vs-ide-tile.png "fare clic su" download "nel riquadro di Visual Studio per installare Visual Studio.")
 
 3. Verrà effettuato il reindirizzamento alla pagina Scarica i risultati di Visual Studio. Qui è possibile scaricare l'ambiente IDE e ottenere un codice Product Key per attivarlo. È anche possibile richiedere un codice Product Key facendo clic sul pulsante azzurro **Ottieni chiave**. In alternativa, è possibile richiedere un codice Product Key in seguito nella pagina [Product keys](https://my.visualstudio.com/productkeys) (Codici Product Key).
 4. Nella scheda Dettagli della pagina Scarica i risultati:
@@ -34,19 +34,19 @@ Per scaricare l'ambiente IDE:
    - Selezionare il linguaggio preferito.
 5. Fare clic sul pulsante di download blu.
    > [!div class="mx-imgBorder"]
-   > ![Dettagli del download di Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-download-details.png)
+   > ![Dettagli del download di Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-download-details.png "Fai clic sul pulsante "download" per iniziare il download.")
 6. Fare clic sul pacchetto di installazione scaricato.  Se viene richiesto di eseguire subito l'installazione, fare clic su **Esegui**.
 7. Nella finestra di dialogo Controllo dell'account utente fare clic su **Sì**.
 8. Fare clic su **Continua** per accettare le condizioni di licenza.
 9. Quando viene avviato il programma di installazione, scegliere i carichi di lavoro, i singoli componenti e i Language Pack scegliendoli nelle schede corrispondenti.
    > [!div class="mx-imgBorder"]
-   > ![Personalizzare Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
+   > ![Personalizzare Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png "Scegliere tra i carichi di lavoro e gli altri componenti.")
 
 10. Fare clic su **Installa**.
 
 11. Dopo il completamento dell'installazione, è possibile scegliere se modificarla o se avviare Visual Studio.  Fare clic su **Avvia** per iniziare.  Se sono installate più versioni, verranno elencate.
     > [!div class="mx-imgBorder"]
-    > ![Avviare Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png)
+    > ![Avviare Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png "Fare clic su' Avvia ' per avviare Visual Studio.")
 
 12. Accedere con l'account associato alla sottoscrizione di Visual Studio.
 
@@ -55,7 +55,7 @@ Per scaricare l'ambiente IDE:
 14. Viene aperto Visual Studio. È tutto pronto per iniziare a usare Visual Studio.
 
     > [!div class="mx-imgBorder"]
-    > ![Iniziare a usare Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+    > ![Iniziare a usare Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png "Visual Studio")
 
 
 ## <a name="eligibility"></a>Idoneità

@@ -1,5 +1,7 @@
 ---
 title: Attività GetFrameworkPath | Microsoft Docs
+description: Informazioni su come usare l'attività GetFrameworkPath di MSBuild per recuperare il percorso degli assembly di .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b907194c4818ff6b867e9d15b795506ef3b77476
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d54a1029805066f5477cb552f5fcf3f2e09598b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634006"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436832"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath (attività)
 
@@ -43,7 +45,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `GetFramewo
 |`FrameworkVersion40Path`|Parametro di ouput facoltativo `String`.<br /><br /> Contiene il percorso agli assembly della versione 4.0 del framework, se presenti. In caso contrario restituisce `null`.|
 |`Path`|Parametro di ouput facoltativo `String`.<br /><br /> Contiene il percorso agli assembly del framework più recente, se disponibili. In caso contrario restituisce `null`.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Se sono installate diverse versioni del .NET Framework, questa attività restituisce la versione progettata per l'esecuzione di MSBuild.
 

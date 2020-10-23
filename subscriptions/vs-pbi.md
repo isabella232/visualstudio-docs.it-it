@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
-ms.date: 03/26/2020
+ms.date: 10/22/2020
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione Power BI inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 82325c090087aea81f43472ebb41a385af51c19d
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: efc7aca0c5729a65a7f622721dbf25931eb89fb8
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005026"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435783"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro nelle sottoscrizioni di Visual Studio
 
@@ -27,33 +27,33 @@ Per usare Power BI Pro, è necessario configurare un account o accedere con un a
 
 2. Individuare il riquadro di Power BI Pro nella sezione Strumenti nella pagina Vantaggi. Fare clic sul collegamento **Ottieni il codice** nella parte inferiore del riquadro del vantaggio.   Si riceverà la notifica del recupero del codice.  Fare clic su **Attiva**.
    > [!div class="mx-imgBorder"]
-   > ![Riquadro del vantaggio Power BI Pro](_img/vs-pbi/vs-pbi-tile.png)
+   > ![Riquadro del vantaggio Power BI Pro](_img/vs-pbi/vs-pbi-tile.png "Nel riquadro Power BI Pro fare clic su' Get code ' e quindi su' Activate ' per iniziare.")
 
 3. È possibile che si disponga già di un account se è stato attivato un determinato vantaggio di sottoscrizione, ad esempio Microsoft 365 sottoscrizione per sviluppatori o Enterprise Mobility + Security.  Se viene trovato un account esistente, è possibile scegliere se aggiungere la sottoscrizione di Power BI Pro all'account esistente o registrare un nuovo account.  È consigliabile aggiungerla all'account esistente per accedere ai diversi vantaggi con un unico ID utente.
    > [!div class="mx-imgBorder"]
-   > ![Account esistente per il vantaggio Power BI Pro](_img/vs-pbi/vs-pbi-existing-account.png)
+   > ![Account esistente per il vantaggio Power BI Pro](_img/vs-pbi/vs-pbi-existing-account.png "Aggiungere Power BI Pro all'account esistente, se si dispone di un account.")
 
 4. Per creare un nuovo account, specificare le informazioni di contatto e quindi fare clic su **Avanti**.
 
 5. Creare quindi l'ID utente e la password.  Se si ha già un account e se ne sta creando uno nuovo, è necessario specificare un nome di società diverso da quello usato per l'account esistente.  Fare clic su **Crea il mio account**.
    > [!div class="mx-imgBorder"]
-   > ![Creazione dell'ID utente per il vantaggio Power BI Pro](_img/vs-pbi/vs-pbi-create-user-id-cropped.png)
+   > ![Creazione dell'ID utente per il vantaggio Power BI Pro](_img/vs-pbi/vs-pbi-create-user-id-cropped.png "Per i nuovi account, immettere un ID utente e una password.")
 
 6. Per verificare che a creare l'account sia una persona reale, viene richiesto di inserire un codice di conferma.  Specificare un numero di telefono e scegliere se ricevere il codice tramite chiamata telefonica o SMS.  Fare clic su **Invia un SMS** o su **Chiama**.
    > [!div class="mx-imgBorder"]
-   > ![Non un robot - Vantaggio Power BI Pro](_img/vs-pbi/vs-pbi-robot1-cropped.png)
+   > ![Non un robot - Vantaggio Power BI Pro](_img/vs-pbi/vs-pbi-robot1-cropped.png "Scegliere ' SMS me ' o ' Call me ' per ricevere il codice di conferma.")
 
 7. Immettere il codice ricevuto e fare clic su **Avanti**.
 
 8. Specificare le informazioni di contatto e quindi fare clic su **Avanti**.
    > [!div class="mx-imgBorder"]
-   > ![Informazioni sul contatto del vantaggio Power BI Pro](_img/vs-pbi/vs-pbi-contact-cropped.png)
+   > ![Informazioni sul contatto del vantaggio Power BI Pro](_img/vs-pbi/vs-pbi-contact-cropped.png "Fornire le informazioni di contatto per l'account.")
 
 9. La pagina successiva conferma che il prezzo della sottoscrizione di Power BI Pro Developer (MSDN) è 0,00 dollari.  Fare clic su **Avanti**.
 
 10. Vengono infine raccolte alcune informazioni per il pagamento.  Non occorre preoccuparsi, non verrà addebitato nulla.  Si noti che il prezzo è ancora 0,00 dollari.  Come metodo di pagamento è possibile scegliere la carta di credito, il conto bancario o la fattura.  Se si sceglie **Fattura**, può venire chiesto il motivo per cui si preferisce questo metodo di pagamento.  Specificare le informazioni richieste per il metodo di pagamento preferito e fare clic su **Esegui ordine**.
     > [!div class="mx-imgBorder"]
-    > ![Informazioni sul contatto del vantaggio Power BI Pro](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png)
+    > ![Informazioni sul paymant del vantaggio Power BI Pro](_img/vs-pbi/vs-pbi-payment-blurred-cropped.png "Scegliere il metodo di pagamento.  Tenere presente che non verrà addebitato alcun costo per questa offerta.")
 
 11. La pagina successiva conferma che è tutto pronto per iniziare a usare Power BI Pro.  Nella pagina è disponibile un collegamento alla pagina di accesso.  È consigliabile registrare il collegamento alla pagina di accesso, nonché l'ID utente.  Si riceverà anche un messaggio di posta elettronica di benvenuto all'indirizzo specificato durante la configurazione dell'account.  È anche possibile visualizzare una finestra automatica di Microsoft 365 Assistant, che può essere usata in caso di domande.  Fare clic su **Iniziamo** per continuare.
 
@@ -65,11 +65,11 @@ Per usare Power BI Pro, è necessario configurare un account o accedere con un a
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, retail, NFR selezionato<sup>1</sup> | Disponibile       |  Sì|
 | Visual Studio Enterprise con GitHub Enterprise  | VL | Disponibile       |  Sì|
-| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Non disponibile                                                            |N/D         |
-| Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                            |N/D         |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                            |N/D         |
+| Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Non disponibile                                                            |ND         |
+| Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                            |ND         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                            |ND         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Disponibile       |  Sì|
-| Visual Studio Enterprise (cloud mensile) | Azure                                       | Non disponibile                                  |N/D|
+| Visual Studio Enterprise (cloud mensile) | Azure                                       | Non disponibile                                  |ND|
 ||
 
 <sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT software & Services Developer, MCT software & Service, most VALUABLE Professional (MVP), Regional Director (Rd).  Escludi: Microsoft Partner Network (MPN), ETP, Imagine.*
@@ -91,7 +91,7 @@ R: Sì, è possibile usarlo in un ambiente di produzione, con due importanti avv
 - Il vantaggio Power BI Pro non può essere usato nei tenant per enti pubblici.
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>D: durante il tentativo di attivare Power BI Pro viene visualizzato un messaggio che indica che si ha già un account di lavoro.  È ancora possibile usare il vantaggio?
-R: sì.  Il messaggio indica che è stato effettuato l'accesso a un dominio in cui sono già attivi Microsoft 365 tenant per i quali non si è amministratori.  Per aggiungere Power BI Pro a un tenant, è necessario essere amministratore del tenant.  Per risolvere questo problema, seguire la procedura per la creazione di un proprio tenant.
+R: sì.  Il messaggio indica che è stato effettuato l'accesso a un dominio in cui sono già attivi Microsoft 365 tenant per i quali non si è amministratori.  Per aggiungere Power BI Pro a un tenant, è necessario essere un amministratore del tenant.  Per risolvere questo problema, seguire la procedura per la creazione di un proprio tenant.
 1. Quando viene visualizzato il messaggio che indica che si ha già un account di lavoro, fare clic su **Creare nuovo account**.
 
 2. Nella schermata successiva immettere le informazioni di contatto e fare clic su **Avanti**.
