@@ -8,18 +8,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cbfeef3352e4abd03e12cc6b228cea8a8c124a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5376c1edf2c87ece78d966bede05b60cc0b6bab
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184406"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467648"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Modelli di interazione per Visual Studio
 ## <a name="overview"></a>Panoramica
  Uno schema progettuale, in generale, è il nucleo di una progettazione che può essere applicata in situazioni specifiche per risolvere i problemi relativi a set di vincoli simili. I progettisti di funzionalità e di sistema utilizzano questi modelli di progettazione come punti di partenza, che possono essere adattati alla situazione specifica.
 
- Visual Studio include una libreria di modelli di interazione comuni che devono essere presi in considerazione quando si compilano nuove funzionalità. Per i modelli di progettazione sono disponibili due contesti di base: Visual Studio client (devenv) e Visual Studio codespaces (in precedenza Visual Studio online). Per alcuni problemi di progettazione, è disponibile un modello onnipresente che funziona correttamente in tutte le situazioni. In molti casi, tuttavia, la soluzione potrebbe essere diversa per l'interfaccia utente presentata in un browser e ospitata in un'applicazione client.
+ Visual Studio include una libreria di modelli di interazione comuni che devono essere presi in considerazione quando si compilano nuove funzionalità. Sono disponibili due contesti di base per i nostri modelli di progettazione: Visual Studio client (devenv) e gli spazi dei messaggi di GitHub (in precedenza Visual Studio online). Per alcuni problemi di progettazione, è disponibile un modello onnipresente che funziona correttamente in tutte le situazioni. In molti casi, tuttavia, la soluzione potrebbe essere diversa per l'interfaccia utente presentata in un browser e ospitata in un'applicazione client.
 
 ### <a name="visual-studio-client-pattern-types"></a>Tipi di modelli client di Visual Studio
 

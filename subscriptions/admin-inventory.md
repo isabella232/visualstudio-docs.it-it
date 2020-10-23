@@ -1,23 +1,23 @@
 ---
-title: Inventario degli ambienti di pre-produzione | Visual Studio Marketplace
+title: Inventario pre-produzione nella sottoscrizione di Visual Studio | Visual Studio Marketplace
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
-ms.date: 03/06/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
-description: Informazioni sulla responsabilità degli amministratori di eseguire gli inventari di pre-produzione
-ms.openlocfilehash: 1abc3c15a7bd9e47b0f449c5a49fdbbc8e7bb590
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+description: Informazioni sulle responsabilità degli amministratori per condurre gli inventari di pre-produzione
+ms.openlocfilehash: b464a7d9cfa8c802cd2367c5c7d0e76141583f3a
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004157"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467427"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventario dell'ambiente di preproduzione
 Le sottoscrizioni di Visual Studio semplificano la gestione degli asset basandosi sul conteggio degli utenti piuttosto che dei dispositivi.
 
-Gli amministratori di Visual Studio devono assegnare le sottoscrizioni di Visual Studio a **utenti specifici e nominati**. **Non sono consentite** le convenzioni di denominazione come Dev1, Dev2 o l'uso di nomi di team come "FeatureTeam".
+Gli amministratori di Visual Studio devono assegnare le sottoscrizioni di Visual Studio a **utenti specifici, denominati**. **Non sono consentite** le convenzioni di denominazione come Dev1, Dev2 o l'uso di nomi di team come "FeatureTeam".
 
 Ecco alcuni modi per semplificare la creazione dell'inventario dell'ambiente di preproduzione:
 - Verificare le assegnazioni degli utenti. Microsoft offre un sito Web denominato [portale di amministrazione di Visual Studio](https://manage.visualstudio.com/) per tenere traccia delle assegnazioni delle sottoscrizioni di Visual Studio.
@@ -37,8 +37,8 @@ Ecco alcuni modi per semplificare la creazione dell'inventario dell'ambiente di 
 - [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Altre informazioni sulle responsabilità degli amministratori:
-- [Responsabilità degli amministratori](admin-responsibilities.md)
+Altre informazioni sulle responsabilità per gli amministratori:
+- [Responsabilità dell'amministratore](admin-responsibilities.md)
 - [Gestire team di grandi dimensioni e collaboratori esterni](manage-teams.md)
 - [Tenere traccia delle assegnazioni degli utenti ed elaborare gli ordini](assignments-orders.md)
 - Usare [Utilizzo massimo](maximum-usage.md) per tenere traccia degli impegni di acquisto

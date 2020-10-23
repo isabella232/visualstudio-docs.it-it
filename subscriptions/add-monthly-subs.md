@@ -7,12 +7,12 @@ ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 09/03/2020
 ms.topic: how-to
 description: Scopri come acquistare nuove sottoscrizioni mensili di Visual Studio nel portale di amministrazione delle sottoscrizioni
-ms.openlocfilehash: 56f4b4f765edec5b624db786795c84969872978a
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: f6b835969fff3a8316a2b46c6e15217ebe3e33b1
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005099"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467596"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Aggiungere nuove sottoscrizioni mensili di Visual Studio al portale di amministrazione delle sottoscrizioni
 Quando si acquistano nuove sottoscrizioni mensili di Visual Studio usando una sottoscrizione di Azure, potrebbe essere necessario aggiungerle al portale di amministrazione delle sottoscrizioni per assegnarle agli utenti.  
@@ -39,7 +39,7 @@ I passaggi per aggiungere sottoscrizioni mensili dipendono dai tipi di sottoscri
 
 ## <a name="things-to-keep-in-mind"></a>Aspetti da considerare
 - L'opzione per aggiungere nuove sottoscrizioni mensili sarà disponibile solo la prima volta che si acquistano.  Dopo aver aggiunto le sottoscrizioni mensili, si verificheranno nuove sottoscrizioni ogni volta che si accede al portale. 
-- Quando vengono rilevate nuove sottoscrizioni, si può notare che sono già state assegnate ai sottoscrittori.  Questo perché sono presenti altri amministratori che hanno accesso alla sottoscrizione di Azure e hanno già assegnato le nuove sottoscrizioni di Visual Studio agli utenti.  Ora che sono stati aggiunti anche al portale, è possibile amministrare tali sottoscrizioni. 
+- Quando vengono rilevate nuove sottoscrizioni, si può notare che sono già state assegnate ai sottoscrittori.  Questo perché sono presenti altri amministratori con accesso alla sottoscrizione di Azure e hanno già assegnato le nuove sottoscrizioni di Visual Studio agli utenti.  Ora che sono stati aggiunti anche al portale, è possibile amministrare tali sottoscrizioni. 
 
 ## <a name="next-steps"></a>Passaggi successivi
 Ora che sono state aggiunte le sottoscrizioni, è possibile assegnarle agli utenti.  Questa operazione può essere eseguita in diversi modi:

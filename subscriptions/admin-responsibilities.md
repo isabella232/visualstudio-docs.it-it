@@ -1,24 +1,24 @@
 ---
-title: Responsabilità degli amministratori | Visual Studio Marketplace
+title: Responsabilità dell'amministratore nelle sottoscrizioni di Visual Studio | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 09/03/2019
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Informazioni sulle responsabilità degli amministratori delle sottoscrizioni.
-ms.openlocfilehash: c0c30eb8bc5b63720bd2377990a390df8a173035
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 183209e5e1fa873ae9af6ff2d9b32caf94c5461e
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006137"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467466"
 ---
-# <a name="overview-of-administrator-responsibilities"></a>Panoramica delle responsabilità degli amministratori
-L'amministratore può gestire le sottoscrizioni per l'organizzazione.  Il ruolo di amministratore è anche responsabile di verificare che le sottoscrizioni siano gestite in conformità alle condizioni di licenza. In questo articolo vengono illustrati responsabilità, vantaggi e limitazioni del ruolo di amministratore.
+# <a name="overview-of-admin-responsibilities"></a>Panoramica delle responsabilità degli amministratori
+In qualità di amministratore, è possibile gestire le sottoscrizioni per l'organizzazione.  Il ruolo di amministratore ha anche le responsabilità di garantire che le sottoscrizioni siano gestite in conformità con le condizioni di licenza. Questo articolo descrive le responsabilità, i vantaggi e le limitazioni del ruolo di amministratore.
 
 ## <a name="roles--responsibilities"></a>Ruoli e responsabilità
-Un amministratore delle sottoscrizioni di Visual Studio ha quattro responsabilità principali:
+Un amministratore di sottoscrizioni di Visual Studio ha quattro responsabilità principali:
 
 1. **Conoscere i vantaggi e le limitazioni delle sottoscrizioni di Visual Studio.** Una corretta comprensione dei vantaggi può favorire una riduzione dei costi dell'hardware grazie all'uso dei servizi cloud e dei costi del software con le licenze per utente per gli ambienti di preproduzione. 
 2. **Assegnare le sottoscrizioni di Visual Studio a utenti specifici e nominati incoraggiandone l'uso.** Il contratto prevede che le sottoscrizioni di Visual Studio vengano assegnate a utenti specifici e nominati. Segui gli abbonati per garantirne l'accesso e sfruttare al meglio i vantaggi inclusi nella sottoscrizione di Visual Studio.
@@ -43,7 +43,7 @@ Le sottoscrizioni di Visual Studio consentono agli sviluppatori di installare e 
 - [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Altre informazioni sulle responsabilità degli amministratori:
+Altre informazioni sulle responsabilità per gli amministratori:
 - [Inventario dell'ambiente di preproduzione](admin-inventory.md)
 - [Gestire team di grandi dimensioni e collaboratori esterni](manage-teams.md)
 - [Tenere traccia delle assegnazioni degli utenti ed elaborare gli ordini](assignments-orders.md)

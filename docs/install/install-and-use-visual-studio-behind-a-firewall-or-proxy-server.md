@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5692589192ee4377194f6c42c25d391636f5f42a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8b7dc9a388699cc9e323085769d17a00ba4fa6a
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800242"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467635"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
 
@@ -134,11 +134,11 @@ Per assicurarsi di avere accesso a tutti gli elementi desiderati quando si usano
 | Community degli sviluppatori | sendvsfeedback2.azurewebsites.net/api | https/443 | Usato per chiamare le API dello strumento per il feedback della community degli sviluppatori (problemi personali, ricerca, voto, commenti, invio, caricamento e ripresa) |
 | Intellicode | \*. intellicode.vsengsaas.visualstudio.com | https/443 | Usato per chiamare le API di Intellicode |
 | Live Share | \*. liveshare.vsengsaas.visualstudio.com| https/443 | Usato per chiamare le API di Live Share |
-| Visual Studio Codespaces | \*. online.visualstudio.com | https/443 | Usato per chiamare le API codespaces di Visual Studio |
+| GitHub Codespaces | \*. online.visualstudio.com | https/443 | Usato per chiamare le API di GitHub codespaces |
 | Acquisizione di tipi automatici JavaScript | registry.npmjs.org | https/443 | Usato per installare le definizioni dei tipi TypeScript per fornire IntelliSense per le librerie JavaScript più diffuse |
 | Servizio licenze per sottoscrizioni di Visual Studio | app.vssps.visualstudio.com/apis/<br/>Licenze/Clientrights per | https/443 | Licenze per l'attivazione online |
 | Debugger | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore. msvsmon. \* . zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>Usato per il download dei bit del debugger per il debug di .NET Core in UNIX/macOS tramite SSH <br><br>2. <br>Usato per il download dei bit del debugger per il debug del contenitore Docker di Windows remoto<br><br> 3. utilizzata per l'esecuzione di un'istruzione di origine .NET Framework <br><br> 4. <br>(Se l'utente sceglie di partecipare) Usato per il download dei simboli pubblicati nel server di simboli nuget.org.<br><br> 5. Se si sceglie di usare per scaricare i simboli e i file binari MS, potrebbe essere necessario anche per il debug del codice gestito nei dump |
-| Visual Studio Codespaces| \*. online.visualstudio.com | https/443 | Usato per chiamare le API codespaces di Visual Studio |
+| GitHub Codespaces| \*. online.visualstudio.com | https/443 | Usato per chiamare le API di GitHub codespaces |
 | Pubblicazione di app Android Novell | \*. googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | Usato per interagire con il servizio Google Play Store per pubblicare/caricare applicazioni Android Novell direttamente da Visual Studio. |
 | Registro Azure Container | *. azurecr.io | https/443 | Accedere ai registri contenitori ospitati in Azure per la configurazione di pipeline CICD |
 | | | | |

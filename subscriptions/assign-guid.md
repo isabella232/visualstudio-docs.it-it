@@ -3,15 +3,15 @@ title: Assegnare GUID specifici ai sottoscrittori di Visual Studio | Microsoft D
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono eseguire il GUID di sottoscrizione specifico per i sottoscrittori
-ms.openlocfilehash: 31544718683b10a186d4c38486bf0cd7923cd4cf
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: 1097743d1640fbadba550f3c2ee6908ac694436d
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022481"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467479"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Assegnare sottoscrizioni specifiche nel portale di amministrazione delle sottoscrizioni di Visual Studio
 
@@ -69,7 +69,7 @@ R: se si desidera modificare il GUID assegnato a un utente, è innanzitutto nece
 - [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Ora che sono state assegnate sottoscrizioni agli utenti, scoprire come eseguire altre attività amministrative.
+Ora che sono state assegnate le sottoscrizioni agli utenti, scoprire come eseguire altre attività amministrative.
 - [Assegna singole sottoscrizioni](assign-license.md)
 - [Assegna più sottoscrizioni](assign-license-bulk.md)
 - [Modificare sottoscrizioni](edit-license.md)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 09/21/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: Informazioni su come impostare le preferenze per la lingua, i contatti, il livello di sottoscrizione e altre opzioni nel portale di amministrazione
-ms.openlocfilehash: 58819995966f5cdf17335de474e83d2a77eccc37
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: e044db92a318114cd2f159b859843db354fac6c7
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022611"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467440"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Impostare le preferenze per i contratti nel portale di amministrazione
 Gli amministratori con privilegi avanzati possono impostare determinate preferenze nel portale di amministrazione (portale di amministrazione) che verrà applicato globalmente per ogni contratto.  Queste preferenze compileranno automaticamente i dettagli della sottoscrizione per gli amministratori durante l'aggiunta di sottoscrittori e potranno essere modificati solo a livello globale dagli amministratori con privilegi avanzati.  
@@ -41,7 +41,7 @@ Se si dispone di più contratti per i quali si è un amministratore con privileg
 Se è presente un solo contratto associato all'indirizzo di posta elettronica usato per l'accesso, verrà visualizzato a destra del pannello impostazioni espanse e l'elenco a discesa verrà disabilitato. 
 
 ### <a name="contact-email-address"></a>Contact email address (Indirizzo di posta elettronica del contatto)
-Questa preferenza consente ai sottoscrittori di contattare gli amministratori tramite il pulsante **Contatta l'amministratore** della [pagina Sottoscrizioni](https://my.visualstudio.com/subscriptions) del portale Sottoscrittore.  Se questa preferenza viene lasciata vuota, i messaggi del sottoscrittore verranno inoltrati a tutti gli amministratori e agli amministratori con privilegi avanzati per il contratto.  È consigliabile usare un alias di posta elettronica di gruppo o un gruppo di sicurezza per personalizzare i destinatari per questo indirizzo di posta elettronica di contatto. Se lo si preferisce, è anche possibile scegliere di immettere l'indirizzo di posta elettronica di un singolo utente.
+Questa preferenza consente ai sottoscrittori di contattare gli amministratori tramite il pulsante **Contatta l'amministratore** della [pagina Sottoscrizioni](https://my.visualstudio.com/subscriptions) del portale Sottoscrittore.  Se questa preferenza viene lasciata vuota, i messaggi del Sottoscrittore verranno inviati a tutti gli amministratori e agli amministratori con privilegi elevati nel contratto.  È consigliabile usare un alias di posta elettronica di gruppo o un gruppo di sicurezza per personalizzare i destinatari per questo indirizzo di posta elettronica di contatto. Se lo si preferisce, è anche possibile scegliere di immettere l'indirizzo di posta elettronica di un singolo utente.
 
 > [!NOTE]
 > L'indirizzo di posta elettronica qui indicato NON verrà fornito ai sottoscrittori.  Quando un Sottoscrittore invia una richiesta **Contatta l'amministratore** nel portale per i sottoscrittori, il messaggio verrà inoltrato all'alias senza esporlo al Sottoscrittore. 
@@ -53,14 +53,14 @@ Questa preferenza consente ai sottoscrittori di contattare gli amministratori tr
 L'impostazione di una lingua e di impostazioni locali predefinite per le comunicazioni può semplificare il processo di assegnazione delle sottoscrizioni.  Ad esempio, se il team di sviluppo si trova in un paese diverso da quello del team di amministrazione, è possibile impostare le preferenze più adatte alla località dei sottoscrittori. Queste impostazioni possono comunque essere modificate da tutti gli amministratori per i singoli sottoscrittori. 
 
 ### <a name="default-external-subscribers-setting"></a>Default external subscribers setting (Impostazione predefinita per i sottoscrittori esterni)
-Questa preferenza consente di decidere se gli amministratori possono aggiungere sottoscrittori dall'esterno del tenant o della directory dell'organizzazione.  Se si disattiva questa opzione, non sarà consentito alcun sottoscrittore esterno.  Se viene abilitata e un amministratore tenta di aggiungere un sottoscrittore esterno, verrà chiesto di confermare la scelta e sarà consentita l'assegnazione della sottoscrizione. Gli amministratori non possono eseguire l'override di questa impostazione. 
+Questa preferenza consente di decidere se gli amministratori possono aggiungere i Sottoscrittori dall'esterno del tenant o della directory dell'organizzazione.  Se si disattiva questa opzione, non sarà consentito alcun sottoscrittore esterno.  Se viene abilitata e un amministratore tenta di aggiungere un sottoscrittore esterno, verrà chiesto di confermare la scelta e sarà consentita l'assegnazione della sottoscrizione. Gli amministratori non possono sostituire questa impostazione. 
 
 ### <a name="default-downloads-setting"></a>Default downloads setting (Impostazione predefinita per i download)
 L'abilitazione di questa impostazione, attivata per impostazione predefinita, consentirà ai sottoscrittori di accedere ai download quando gli amministratori creano nuove sottoscrizioni.  Gli amministratori possono comunque disabilitare i download per singole sottoscrizioni.  Disabilitando l'accesso ai download viene disabilitato anche l'accesso ai codici Product Key.  
 
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
-### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-administrators"></a>D: è possibile disabilitare l' **indirizzo di posta elettronica di contatto** per consentire ai sottoscrittori di contattare gli amministratori?
+### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-admins"></a>D: è possibile disabilitare l' **indirizzo di posta elettronica di contatto** , in modo che gli abbonati non possano contattare gli amministratori?
 R: No. è possibile determinare gli amministratori contattati usando un gruppo di sicurezza, un alias di posta elettronica di gruppo o un indirizzo di posta elettronica singolo. la funzionalità non può essere disabilitata.
 
 ### <a name="q-if-i-answer-a-subscribers-email-will-they-have-my-email-address"></a>D: se si risponde a un messaggio di posta elettronica di un Sottoscrittore, avrà l'indirizzo di posta elettronica?
