@@ -8,12 +8,12 @@ ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 783d7a116dbdf530008c3271d38d15f7db3c3c98
-ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
+ms.openlocfilehash: 15c781be33343d2672396c44492d71f42cbb4eda
+ms.sourcegitcommit: 296ab61c40bf090c577ef20e84d581939bd1855b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91750758"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92502188"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Guida introduttiva: usare Docker con un'app a singola pagina React in Visual Studio
 
@@ -112,7 +112,7 @@ COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
 ```
 
-Il *Dockerfile* precedente è basato sull'immagine [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/) e include le istruzioni per modificare l'immagine di base compilando il progetto e aggiungendolo al contenitore.
+Il *Dockerfile* precedente è basato sull'immagine [MCR.Microsoft.com/dotnet/Core/ASPNET](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) e include istruzioni per modificare l'immagine di base compilando il progetto e aggiungendolo al contenitore.
 
 Se la casella di controllo **Configura per HTTPS** della finestra di dialogo Nuovo progetto è selezionata, il *Dockerfile* espone due porte. Una porta viene usata per il traffico HTTP e l'altra viene usata per il traffico HTTPS. Se la casella di controllo non è selezionata, viene esposta una sola porta (80) per il traffico HTTP.
 
@@ -166,19 +166,19 @@ Aggiornare Dockerfile aggiungendo le righe seguenti. In questo modo i nodi e NPM
       FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       WORKDIR /src
-      COPY ["WebApplication7/WebApplication37.csproj", "WebApplication37/"]
-      RUN dotnet restore "WebApplication7/WebApplication7.csproj"
+      COPY ["WebApplicationReact1/WebApplicationReact1.csproj", "WebApplicationReact1/"]
+      RUN dotnet restore "WebApplicationReact1/WebApplicationReact1.csproj"
       COPY . .
-      WORKDIR "/src/WebApplication37"
-      RUN dotnet build "WebApplication37.csproj" -c Release -o /app/build
+      WORKDIR "/src/WebApplicationReact1"
+      RUN dotnet build "WebApplicationReact1.csproj" -c Release -o /app/build
 
       FROM build AS publish
-      RUN dotnet publish "WebApplication37.csproj" -c Release -o /app/publish
+      RUN dotnet publish "WebApplicationReact1.csproj" -c Release -o /app/publish
 
       FROM base AS final
       WORKDIR /app
       COPY --from=publish /app/publish .
-      ENTRYPOINT ["dotnet", "WebApplication37.dll"]
+      ENTRYPOINT ["dotnet", "WebApplicationReact1.dll"]
       ```
 
    1. Aggiornare il file con estensione dockerignore rimuovendo `**/bin` .
@@ -202,12 +202,12 @@ Passare alla pagina *Contatore* e testare il codice sul lato client per il conta
 
 Aprire la **console di Gestione pacchetti** dal menu **Strumenti**> Gestione pacchetti NuGet, **Console di Gestione pacchetti**.
 
-L'immagine Docker risultante dell'app, contrassegnata con *dev*, è basata sul tag *2.2-aspnetcore-runtime* dell'immagine di base *microsoft/dotnet*. Eseguire il comando `docker images` nella finestra **Console di Gestione pacchetti**. Vengono visualizzate le immagini nel computer in uso:
+L'immagine Docker risultante dell'app, contrassegnata con *dev*, L'immagine è basata sul tag *3,1-nanoserver-1903* dell'immagine di base *DotNet/Core/ASPNET* . Eseguire il comando `docker images` nella finestra **Console di Gestione pacchetti**. Vengono visualizzate le immagini nel computer in uso:
 
 ```console
-REPOSITORY        TAG                     IMAGE ID      CREATED         SIZE
-webapplication37  dev                     d72ce0f1dfe7  30 seconds ago  255MB
-microsoft/dotnet  2.2-aspnetcore-runtime  fcc3887985bb  6 days ago      255MB
+REPOSITORY                             TAG                 IMAGE ID            CREATED             SIZE
+webapplicationreact1                   dev                 09be6ec2405d        2 hours ago         352MB
+mcr.microsoft.com/dotnet/core/aspnet   3.1-buster-slim     e3559b2d50bb        10 days ago         207MB
 ```
 
 > [!NOTE]
@@ -216,8 +216,8 @@ microsoft/dotnet  2.2-aspnetcore-runtime  fcc3887985bb  6 days ago      255MB
 Eseguire il comando `docker ps` nella console di Gestione pacchetti. Si noti che l'app viene eseguita usando il contenitore:
 
 ```console
-CONTAINER ID        IMAGE                  COMMAND               CREATED             STATUS              PORTS                                           NAMES
-cf5d2ef5f19a        webapplication37:dev   "tail -f /dev/null"   2 minutes ago       Up 2 minutes        0.0.0.0:52036->80/tcp, 0.0.0.0:44342->443/tcp   priceless_cartwright
+CONTAINER ID        IMAGE                      COMMAND               CREATED             STATUS              PORTS                                           NAMES
+56d1b1008c89        webapplicationreact1:dev   "tail -f /dev/null"   2 hours ago         Up 2 hours          0.0.0.0:32771->80/tcp, 0.0.0.0:32770->443/tcp   WebApplication-React1
 ```
 
 ## <a name="publish-docker-images"></a>Pubblicare immagini Docker
