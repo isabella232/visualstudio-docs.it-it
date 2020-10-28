@@ -1,18 +1,20 @@
 ---
 title: Progettare XAML in Visual Studio e in Blend per Visual Studio
 titleSuffix: ''
+description: Informazioni sulle funzionalità degli strumenti di progettazione visivi in Visual Studio e Blend per Visual Studio per la creazione di interfacce utente ed esperienze in XAML.
+ms.custom: SEO-VS-2020
 ms.date: 02/28/2020
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: eb18a2face5d9f1831bec35379a423f272c3e6ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5be85715efa3086a5a225da45501697440053cc5
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649821"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796706"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Progettare XAML in Visual Studio e Blend per Visual Studio
 
@@ -26,7 +28,7 @@ Visual Studio e Blend per Visual Studio offrono entrambi strumenti visivi per la
 
      ![Screenshot del carico di lavoro sviluppo di applicazioni desktop .NET dal Programma di installazione di Visual Studio](../xaml-tools/media/dotnet-desktop-dev-workload.png)
 
-- Per creare app UWP, installare il carico di lavoro **Sviluppo di app per la piattaforma UWP (Universal Windows Platform) ** in Visual Studio. Verrà installato anche Blend per Visual Studio.
+- Per creare app UWP, installare il carico di lavoro **Sviluppo di app per la piattaforma UWP (Universal Windows Platform)** in Visual Studio. Verrà installato anche Blend per Visual Studio.
 
      ![Screenshot del carico di lavoro di sviluppo piattaforma UWP (Universal Windows Platform) dalla Programma di installazione di Visual Studio](../xaml-tools/media/uwp-workload.png)
 
@@ -50,7 +52,7 @@ Per le attività di sviluppo più fondamentali, Visual Studio e Blend per Visual
 
 Per aumentare la produttività, è consigliabile usare Blend per Visual Studio per le attività seguenti. Queste sono le aree in cui Blend per Visual Studio offre più funzionalità rispetto alla finestra di progettazione di Visual Studio o al solo codice.
 
-| Attività | Visual Studio | Blend per Visual Studio | Altre informazioni |
+| Attività | Visual Studio | Blend per Visual Studio | Ulteriori informazioni |
 | - | - | - | - |
 | **Progettare stati di visualizzazione** | Non esiste uno strumento che consenta di progettare stati di visualizzazione, è necessario crearli a livello di codice. | Usare gli strumenti di progettazione per modificare l'aspetto di un controllo in base al suo stato. | [Stati di visualizzazione](modify-the-style-of-objects-in-blend.md#visual-states) |
 | **Creare animazioni** |Non esiste alcuno strumento di progettazione per animazioni. È necessario crearle a livello di codice. Ciò richiede la comprensione del sistema di animazione e temporizzazione in WPF e ampia esperienza di codifica.|È possibile creare le animazioni visivamente e verificarne l'anteprima in Blend per Visual Studio. Questa procedura è più veloce e precisa della creazione delle animazioni nel codice. È possibile aggiungere trigger per gestire l'interazione con l'utente e passare al codice per aggiungere gestori eventi e altre funzionalità.|[Animare oggetti](../xaml-tools/animate-objects-in-xaml-designer.md)|

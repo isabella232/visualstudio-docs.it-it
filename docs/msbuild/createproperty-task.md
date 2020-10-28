@@ -1,5 +1,7 @@
 ---
 title: Attività CreateProperty | Microsoft Docs
+description: Usare l'attività CreateProperty di MSBuild per popolare le proprietà con i valori passati, consentendo la copia dei valori da una proprietà o una stringa a un'altra.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,18 +20,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 155e8e6b57cc388e8c2981297be8b26ef5444c1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d7dd8d7f5a50998832a8fac6f47bf66e9a6bbe9
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634318"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796187"
 ---
 # <a name="createproperty-task"></a>CreateProperty (attività)
 
 Popola le proprietà con i valori passati. In questo modo i valori vengono copiati da una proprietà o una stringa a un'altra.
 
-## <a name="attributes"></a>Attributi
+## <a name="attributes"></a>Attributes
 
 Nella tabella che segue vengono descritti i parametri dell'attività `CreateProperty` .
 
@@ -38,7 +40,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `CreateProp
 | `Value` | Parametro di ouput facoltativo `String`.<br /><br /> Specifica il valore da copiare nella nuova proprietà. |
 | `ValueSetByTask` | Parametro di ouput facoltativo `String`.<br /><br /> Contiene lo stesso valore del parametro `Value`. Usare questo parametro solo quando si vuole evitare che la proprietà output sia impostata da MSBuild quando ignora la destinazione di inclusione, perché gli output sono aggiornati. |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -68,7 +70,7 @@ L'esempio seguente usa l'attività `CreateProperty` per creare la proprietà `Ne
 </Project>
 ```
 
-Dopo l'esecuzione del progetto il valore della proprietà `NewFile` è *Module1.vb*.
+Dopo l'esecuzione del progetto il valore della proprietà `NewFile` è *Module1.vb* .
 
 ## <a name="see-also"></a>Vedere anche
 

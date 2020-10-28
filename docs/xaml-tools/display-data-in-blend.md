@@ -1,6 +1,8 @@
 ---
 title: Visualizzare dati di esempio in un'interfaccia utente XAML
 titleSuffix: Blend for Visual Studio
+description: Informazioni su come generare dati di esempio da zero o da una classe esistente in Blend per Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/06/2018
 ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2c71ca21e0d346561435c9cbe079d17dac1d0b5
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: 927779e6d58de9eeaacd43b6b03f837dbc3281e2
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959848"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796680"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Visualizzare dati in Blend per Visual Studio
 
@@ -25,13 +27,13 @@ ms.locfileid: "91959848"
 
 ## <a name="generate-sample-data"></a>Generare i dati di esempio
 
-Per generare dati di esempio, aprire un documento XAML. Nel pannello **Dati** fare clic sul pulsante **Crea dati di esempio** ![Icona Crea dati di esempio](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) e quindi scegliere **Nuovi dati di esempio**.
+Per generare dati di esempio, aprire un documento XAML. Nel pannello **Dati** fare clic sul pulsante **Crea dati di esempio** ![Icona Crea dati di esempio](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) e quindi scegliere **Nuovi dati di esempio** .
 
 Definire la struttura dei dati nel pannello **Dati** e quindi associarla agli elementi dell'interfaccia utente in qualsiasi pagina.
 
 ![Pannello Dati](../designers/media/496d7ebc-fe46-42f6-95a8-57b0e5be5d49.png)
 
-Se si vuole che i dati di esempio vengano visualizzati nelle pagine quando si esegue l'app, scegliere **Opzioni origine dati** ![Icona Opzioni origine dati](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png) e quindi **Abilita quando l'applicazione è in esecuzione**.
+Se si vuole che i dati di esempio vengano visualizzati nelle pagine quando si esegue l'app, scegliere **Opzioni origine dati** ![Icona Opzioni origine dati](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png) e quindi **Abilita quando l'applicazione è in esecuzione** .
 
 ![Voce di menu Abilita quando l'applicazione è in esecuzione](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png)
 
@@ -41,7 +43,7 @@ Se si vuole che i dati di esempio vengano visualizzati nelle pagine quando si es
 
 Se sono già state create classi che descrivono la struttura dei dati, è possibile usarle per generare dati di esempio.
 
-Per generare dati di esempio da una classe, aprire un documento XAML e nel pannello **Dati** fare clic sul pulsante **Crea dati di esempio** ![Icona Crea dati di esempio](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) e quindi su **Crea dati di esempio da classe**.
+Per generare dati di esempio da una classe, aprire un documento XAML e nel pannello **Dati** fare clic sul pulsante **Crea dati di esempio** ![Icona Crea dati di esempio](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) e quindi su **Crea dati di esempio da classe** .
 
 **Breve video:** ![Icona Riproduci](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Combinare il data binding con Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 

@@ -1,5 +1,7 @@
 ---
 title: Attività CL | Microsoft Docs
+description: Vengono descritti lo scopo e i parametri dell'attività CL di MSBuild, che esegue il wrapping dello strumento compilatore Microsoft C++ cl.exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,20 +23,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb0e1feee1f7e1d271dd436a1879731354cbd8bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d930ed8d918a08503a6eaa6b60848abeec7683a
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78865336"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796836"
 ---
 # <a name="cl-task"></a>attività CL
 
-Esegue il wrapping dello strumento compilatore Microsoft C++ *cl.exe*. Il compilatore produce file eseguibili (con*estensione exe*), file di libreria a collegamento dinamico (con estensione*dll*) o file di modulo di codice (con*estensione netmodule*). Per ulteriori informazioni, vedere [Opzioni del compilatore](/cpp/build/reference/compiler-options) e [utilizzare MSBuild dalla riga di comando](/cpp/build/msbuild-visual-cpp) e [utilizzare il set di strumenti di Microsoft C++ dalla riga di comando](/cpp/build/building-on-the-command-line).
+Esegue il wrapping dello strumento compilatore Microsoft C++ *cl.exe* . Il compilatore produce file eseguibili (con *estensione exe* ), file di libreria a collegamento dinamico (con estensione *dll* ) o file di modulo di codice (con *estensione netmodule* ). Per ulteriori informazioni, vedere [Opzioni del compilatore](/cpp/build/reference/compiler-options) e [utilizzare MSBuild dalla riga di comando](/cpp/build/msbuild-visual-cpp) e [utilizzare il set di strumenti di Microsoft C++ dalla riga di comando](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>Parametri
 
- Nell'elenco che segue vengono descritti i parametri dell'attività **CL**. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.
+ Nell'elenco che segue vengono descritti i parametri dell'attività **CL** . La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.
 
 - **AdditionalIncludeDirectories**
 
@@ -56,7 +58,7 @@ Esegue il wrapping dello strumento compilatore Microsoft C++ *cl.exe*. Il compil
 
    Parametro String[] facoltativo.
 
-   Specifica una directory in cui il compilatore effettuerà la ricerca per risolvere i riferimenti di file passati alla direttiva **#using**.
+   Specifica una directory in cui il compilatore effettuerà la ricerca per risolvere i riferimenti di file passati alla direttiva **#using** .
 
    Per ulteriori informazioni, vedere [/ai (specifica directory dei metadati)](/cpp/build/reference/ai-specify-metadata-directories).
 
@@ -64,7 +66,7 @@ Esegue il wrapping dello strumento compilatore Microsoft C++ *cl.exe*. Il compil
 
    Parametro String facoltativo.
 
-   Stringa che viene sempre generata sulla riga di comando. Il valore predefinito è "**/c**".
+   Stringa che viene sempre generata sulla riga di comando. Il valore predefinito è " **/c** ".
 
 - **AssemblerListingLocation**
 
@@ -90,7 +92,7 @@ Esegue il wrapping dello strumento compilatore Microsoft C++ *cl.exe*. Il compil
 
   - **Tutto**  -  **/FACS**
 
-    Per ulteriori informazioni, vedere le opzioni **/fa**, **/fac**, **/FAS**e **/FACS** in [/fa,/fa (file di listato)](/cpp/build/reference/fa-fa-listing-file).
+    Per ulteriori informazioni, vedere le opzioni **/fa** , **/fac** , **/FAS** e **/FACS** in [/fa,/fa (file di listato)](/cpp/build/reference/fa-fa-listing-file).
 
 - **BasicRuntimeChecks**
 
@@ -196,7 +198,7 @@ Esegue il wrapping dello strumento compilatore Microsoft C++ *cl.exe*. Il compil
 
    Parametro booleano facoltativo.
 
-   Se `true`, indica al compilatore di preparare un'immagine per *l'applicazione di una patch a caldo*. Questo parametro assicura che la prima istruzione di ogni funzione sia di due byte, condizione necessaria per l'applicazione di una patch a caldo.
+   Se `true`, indica al compilatore di preparare un'immagine per *l'applicazione di una patch a caldo* . Questo parametro assicura che la prima istruzione di ogni funzione sia di due byte, condizione necessaria per l'applicazione di una patch a caldo.
 
    Per ulteriori informazioni, vedere [/hotpatch (Crea immagine Hotpatchable)](/cpp/build/reference/hotpatch-create-hotpatchable-image).
 
@@ -204,7 +206,7 @@ Esegue il wrapping dello strumento compilatore Microsoft C++ *cl.exe*. Il compil
 
    Parametro String facoltativo.
 
-   Consente di selezionare il tipo di informazioni di debug create per il programma e se tali informazioni vengono mantenute in file oggetto (*obj*) o in un database di programma (PDB).
+   Consente di selezionare il tipo di informazioni di debug create per il programma e se tali informazioni vengono mantenute in file oggetto ( *obj* ) o in un database di programma (PDB).
 
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
@@ -220,7 +222,7 @@ Esegue il wrapping dello strumento compilatore Microsoft C++ *cl.exe*. Il compil
 
    Parametro booleano facoltativo.
 
-   Se **true**, indica al compilatore di generare un errore per i costrutti di linguaggio che non sono compatibili con ANSI C o ANSI C++.
+   Se **true** , indica al compilatore di generare un errore per i costrutti di linguaggio che non sono compatibili con ANSI C o ANSI C++.
 
    Per ulteriori informazioni, vedere l'opzione **/za** in [/za,/ze (Disable Language Extensions)](/cpp/build/reference/za-ze-disable-language-extensions).
 
@@ -266,7 +268,7 @@ Esegue il wrapping dello strumento compilatore Microsoft C++ *cl.exe*. Il compil
 
    Parametro String facoltativo.
 
-   Consente di inviare informazioni sugli errori interni del compilatore direttamente a Microsoft. Per impostazione predefinita, l'impostazione nelle build IDE è **Prompt** e l'impostazione nelle build da riga di comando è **Queue**.
+   Consente di inviare informazioni sugli errori interni del compilatore direttamente a Microsoft. Per impostazione predefinita, l'impostazione nelle build IDE è **Prompt** e l'impostazione nelle build da riga di comando è **Queue** .
 
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
@@ -328,7 +330,7 @@ Esegue il wrapping dello strumento compilatore Microsoft C++ *cl.exe*. Il compil
 
    Se `true`, abilita il modello di eccezione a virgola mobile affidabile. Vengono generate eccezioni immediatamente dopo l'attivazione.
 
-   Per ulteriori informazioni, vedere l'opzione/**FP: except** in [/FP (specifica il comportamento](/cpp/build/reference/fp-specify-floating-point-behavior)della virgola mobile).
+   Per ulteriori informazioni, vedere l'opzione/ **FP: except** in [/FP (specifica il comportamento](/cpp/build/reference/fp-specify-floating-point-behavior)della virgola mobile).
 
 - **FloatingPointModel**
 
@@ -454,7 +456,7 @@ Esegue il wrapping dello strumento compilatore Microsoft C++ *cl.exe*. Il compil
 
    Parametro `Boolean` facoltativo.
 
-   Se `true` , omette il nome della libreria di runtime del linguaggio C predefinito dal file oggetto (*obj*). Per impostazione predefinita, il compilatore inserisce il nome della libreria nel file con *estensione obj* per indirizzare il linker alla libreria corretta.
+   Se `true` , omette il nome della libreria di runtime del linguaggio C predefinito dal file oggetto ( *obj* ). Per impostazione predefinita, il compilatore inserisce il nome della libreria nel file con *estensione obj* per indirizzare il linker alla libreria corretta.
 
    Per ulteriori informazioni, vedere [/Zl (omette il nome della libreria predefinita)](/cpp/build/reference/zl-omit-default-library-name).
 
@@ -496,7 +498,7 @@ Esegue il wrapping dello strumento compilatore Microsoft C++ *cl.exe*. Il compil
 
    Parametro **stringa** facoltativo.
 
-   Creare o usare un file di intestazione precompilata (*PCH*) durante la compilazione.
+   Creare o usare un file di intestazione precompilata ( *PCH* ) durante la compilazione.
 
    Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
@@ -574,7 +576,7 @@ Esegue il wrapping dello strumento compilatore Microsoft C++ *cl.exe*. Il compil
 
    Parametro `Integer` facoltativo.
 
-   Specifica il numero massimo di processori da usare in una compilazione multiprocessore. Usare questo parametro in combinazione con il parametro **MultiProcessorCompilation**.
+   Specifica il numero massimo di processori da usare in una compilazione multiprocessore. Usare questo parametro in combinazione con il parametro **MultiProcessorCompilation** .
 
 - **ProgramDataBaseFileName**
 
@@ -782,17 +784,17 @@ Esegue il wrapping dello strumento compilatore Microsoft C++ *cl.exe*. Il compil
 
    Parametro `ITaskItem[]` facoltativo.
 
-   Specifica una matrice di elementi che rappresentano i *log di rilevamento dei file di lettura*.
+   Specifica una matrice di elementi che rappresentano i *log di rilevamento dei file di lettura* .
 
-   Un log di rilevamento dei file di lettura (con*estensione tlog*) contiene i nomi dei file di input letti da un'attività e viene usato dal sistema di compilazione del progetto per supportare le compilazioni incrementali. Per altre informazioni, vedere i parametri **TrackerLogDirectory** e **TrackFileAccess** in questa tabella.
+   Un log di rilevamento dei file di lettura (con *estensione tlog* ) contiene i nomi dei file di input letti da un'attività e viene usato dal sistema di compilazione del progetto per supportare le compilazioni incrementali. Per altre informazioni, vedere i parametri **TrackerLogDirectory** e **TrackFileAccess** in questa tabella.
 
 - **TLogWriteFiles**
 
    Parametro `ITaskItem[]` facoltativo.
 
-   Specifica una matrice di elementi che rappresentano i *log di rilevamento dei file di scrittura*.
+   Specifica una matrice di elementi che rappresentano i *log di rilevamento dei file di scrittura* .
 
-   Un log di rilevamento dei file di scrittura (con*estensione tlog*) contiene i nomi dei file di output scritti da un'attività e viene usato dal sistema di compilazione del progetto per supportare le compilazioni incrementali. Per altre informazioni, vedere i parametri **TrackerLogDirectory** e **TrackFileAccess** in questa tabella.
+   Un log di rilevamento dei file di scrittura (con *estensione tlog* ) contiene i nomi dei file di output scritti da un'attività e viene usato dal sistema di compilazione del progetto per supportare le compilazioni incrementali. Per altre informazioni, vedere i parametri **TrackerLogDirectory** e **TrackFileAccess** in questa tabella.
 
 - **TrackFileAccess**
 

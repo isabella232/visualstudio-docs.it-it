@@ -1,5 +1,7 @@
 ---
 title: Attività ClangCompile | Microsoft Docs
+description: Descrive lo scopo e i parametri dell'attività ClangCompile di MSBuild, che esegue il wrapping dello strumento compilatore C++ clang.exe.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - multiple
-ms.openlocfilehash: c1526fbd3c2c0822781f0e011999ddcb9c679170
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63b278f322e66e6622064288d322709c51df336d
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77275471"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796823"
 ---
 # <a name="clangcompile-task"></a>Attività ClangCompile
 
@@ -30,7 +32,7 @@ Esegue il wrapping dello strumento compilatore Microsoft C++ clang.exe.
 
 ## <a name="parameters"></a>Parametri
 
-Nella tabella seguente vengono descritti i parametri dell'attività **ClangCompile**.
+Nella tabella seguente vengono descritti i parametri dell'attività **ClangCompile** .
 
 |Parametro|Descrizione|
 |---------------|-----------------|
@@ -38,14 +40,14 @@ Nella tabella seguente vengono descritti i parametri dell'attività **ClangCompi
 |**AdditionalOptions**|Parametro **stringa** facoltativo.|
 |**BufferSecurityCheck**|Parametro **stringa** facoltativo.<br/><br/>Il controllo di sicurezza facilita il rilevamento di sovraccarichi del buffer di stack, un attacco comunemente tentato alla sicurezza di un programma. <br/><br/>Usare `fstack-protector`.|
 |**BuildingInIde**|Parametro **bool** facoltativo.|
-|**CLanguageStandard**|Parametro **stringa** facoltativo.<br/><br/>Determina lo standard del linguaggio C.<br/><br/>Usare `std=[value]` con il valore **c89**, **c99**, **c11**, **gnu99** o **gnu11**.|
+|**CLanguageStandard**|Parametro **stringa** facoltativo.<br/><br/>Determina lo standard del linguaggio C.<br/><br/>Usare `std=[value]` con il valore **c89** , **c99** , **c11** , **gnu99** o **gnu11** .|
 |**ClangVersion**|Parametro **stringa** facoltativo.|
 |**CompileAs**|Parametro **stringa** facoltativo.<br/><br/>Specifica il linguaggio di compilazione per i file con estensione c e cpp. Il valore predefinito verrà rilevato in base all'estensione c o cpp.<br/><br/>Usare `-x c`, `-x c++`.|
-|**CppLanguageStandard**|Parametro **stringa** facoltativo.<br/><br/>Determina lo standard del linguaggio C++.<br/><br/>Usare `std=[value]` con il valore **c++98**, **c++11**, **c++1y**, **gnu++98**, **gnu++11** o **gnu++1y**.|
+|**CppLanguageStandard**|Parametro **stringa** facoltativo.<br/><br/>Determina lo standard del linguaggio C++.<br/><br/>Usare `std=[value]` con il valore **c++98** , **c++11** , **c++1y** , **gnu++98** , **gnu++11** o **gnu++1y** .|
 |**DataLevelLinking**|Parametro **bool** facoltativo.<br/><br/>Consente alle ottimizzazioni del linker di rimuovere i dati non usati creando ogni elemento dati in una sezione distinta.|
-|**DebugInformationFormat**|Parametro **stringa** facoltativo.<br/><br/>Specifica il tipo di informazioni di debug generate dal compilatore.<br/><br/>**None**: non produce informazioni di debug, quindi la compilazione può risultare più veloce (usare `g0`).<br/>**FullDebug**: genera le informazioni di debug DWARF2 (usare `g2 -gdwarf-2`).<br/>**LineNumber**: genera solo le informazioni sul numero di riga (usare `gline-tables-only`).|
+|**DebugInformationFormat**|Parametro **stringa** facoltativo.<br/><br/>Specifica il tipo di informazioni di debug generate dal compilatore.<br/><br/>**None** : non produce informazioni di debug, quindi la compilazione può risultare più veloce (usare `g0`).<br/>**FullDebug** : genera le informazioni di debug DWARF2 (usare `g2 -gdwarf-2`).<br/>**LineNumber** : genera solo le informazioni sul numero di riga (usare `gline-tables-only`).|
 |**EnableNeonCodegen**|Parametro **bool** facoltativo.<br/><br/>Abilita la generazione di codice per hardware per operazioni con virgola mobile NEON. Si applica solo per l'architettura ARM.|
-|**ExceptionHandling**|Parametro **stringa** facoltativo.<br/><br/>Specifica il modello di gestione delle eccezioni che deve essere usato dal compilatore.<br/><br/>**Disabled**: disabilita la gestione delle eccezioni (usare `fno-exceptions`).<br/>**Enabled**: abilita la gestione delle eccezioni (usare `fexceptions`).<br/>**UnwindTables**: genera gli eventuali dati statici necessari senza influire sul codice generato (usare `funwind-tables`).|
+|**ExceptionHandling**|Parametro **stringa** facoltativo.<br/><br/>Specifica il modello di gestione delle eccezioni che deve essere usato dal compilatore.<br/><br/>**Disabled** : disabilita la gestione delle eccezioni (usare `fno-exceptions`).<br/>**Enabled** : abilita la gestione delle eccezioni (usare `fexceptions`).<br/>**UnwindTables** : genera gli eventuali dati statici necessari senza influire sul codice generato (usare `funwind-tables`).|
 |**FloatABI**|Parametro **stringa** facoltativo.<br/><br/>Opzione da selezionare per scegliere l'ABI a virgola mobile.<br/><br/>Con **soft** il compilatore genera output contenente chiamate di libreria per operazioni a virgola mobile (usare `mfloat-abi=soft`).<br/>**softfp** consente la generazione di codice con istruzioni a virgola mobile hardware, ma vengono comunque usate le convenzioni di chiamata soft-float (usare `mfloat-abi=softfp`).<br/>**hard** consente la generazione di istruzioni a virgola mobile e usa le convenzioni di chiamata specifiche di FPU (usare `mfloat-abi=hard`).|
 |**ForcedIncludeFiles**|Parametro **string[]** facoltativo.<br/><br/>Uno o più file di inclusione il cui uso è forzato.<br/><br/>Usare `-include [name]`.|
 |**FunctionLevelLinking**|Parametro **bool** facoltativo.<br/><br/>Consente al compilatore di assemblare le singole funzioni sotto forma di funzioni incluse nel pacchetto (COMDAT). Impostazione necessaria per le operazioni di modifica e continuazione.<br/><br/>Usare `ffunction-sections`.|
@@ -58,7 +60,7 @@ Nella tabella seguente vengono descritti i parametri dell'attività **ClangCompi
 |**MSVCErrorReport**|Parametro **bool** facoltativo.<br/><br/>Segnala gli errori che Visual Studio può usare per analizzare e ottenere informazioni su file e riga.|
 |**ObjectFileName**|Parametro **stringa** facoltativo.<br/><br/>Consente di specificare un nome usato per eseguire l'override del nome del file oggetto predefinito. Può essere un nome di file o di directory.<br/><br/>Usare `/Fo[name]`.|
 |**OmitFramePointers**|Parametro **bool** facoltativo.<br/><br/>Disabilita la creazione di puntatori ai frame nello stack di chiamate.|
-|**Ottimizzazione**|Parametro **stringa** facoltativo.<br/><br/>Specifica il livello di ottimizzazione per l'applicazione.<br/><br/>**Custom**: consente di personalizzare l'ottimizzazione.<br/>**Disabled**: disabilita l'ottimizzazione (usare `O0`).<br/>**MinSize**: ottimizza in base alla dimensione (usare `Os`).<br/>**MaxSpeed**: ottimizza in base alla velocità (usare `O2`).<br/>**Full**: ottimizzazioni onerose (usare `O3`).|
+|**Ottimizzazione**|Parametro **stringa** facoltativo.<br/><br/>Specifica il livello di ottimizzazione per l'applicazione.<br/><br/>**Custom** : consente di personalizzare l'ottimizzazione.<br/>**Disabled** : disabilita l'ottimizzazione (usare `O0`).<br/>**MinSize** : ottimizza in base alla dimensione (usare `Os`).<br/>**MaxSpeed** : ottimizza in base alla velocità (usare `O2`).<br/>**Full** : ottimizzazioni onerose (usare `O3`).|
 |**PositionIndependentCode**|Parametro **bool** facoltativo.<br/><br/>Genera codice indipendente dalla posizione per l'uso in una libreria condivisa.|
 |**PrecompiledHeader**|Parametro **stringa** facoltativo.<br/><br/>Abilita la creazione o l'uso di un'intestazione precompilata durante la compilazione.|
 |**PrecompiledHeaderFile**|Parametro **stringa** facoltativo.<br/><br/>Specifica un nome di file di intestazione da usare come file di intestazione precompilato. Questo file verrà aggiunto anche ai **file di inclusione forzata** durante la compilazione.|
@@ -72,7 +74,7 @@ Nella tabella seguente vengono descritti i parametri dell'attività **ClangCompi
 |**StrictAliasing**|Parametro **bool** facoltativo.<br/><br/>Presuppone le regole di aliasing più restrittive. Un oggetto di un certo tipo non potrà mai risiedere nello stesso indirizzo di un oggetto di un tipo diverso.|
 |**Sysroot**|Parametro **stringa** facoltativo.<br/><br/>Percorso della cartella della directory radice per intestazioni e librerie.|
 |**TargetArch**|Parametro **stringa** facoltativo.<br/><br/>Architettura di destinazione.|
-|**ThumbMode**|Parametro **stringa** facoltativo.<br/><br/>Generare il codice che viene eseguito per la microarchitettura thumb. Si applica solo per l'architettura ARM.<br/><br/>**Thumb**, genera codice Thumb (usare `mthumb`).<br/>**ARM**, genera codice Arm (usare `marm`).<br/>**Disabled**, opzione non applicabile per la piattaforma selezionata.|
+|**ThumbMode**|Parametro **stringa** facoltativo.<br/><br/>Generare il codice che viene eseguito per la microarchitettura thumb. Si applica solo per l'architettura ARM.<br/><br/>**Thumb** , genera codice Thumb (usare `mthumb`).<br/>**ARM** , genera codice Arm (usare `marm`).<br/>**Disabled** , opzione non applicabile per la piattaforma selezionata.|
 |**TrackerLogDirectory**|Parametro **stringa** facoltativo.<br/><br/>Directory dei log di Tracker.|
 |**TreatWarningAsError**|Parametro **bool** facoltativo.<br/><br/>Considera tutti gli avvisi del compilatore come errori.<br/><br/>Per un nuovo progetto, potrebbe essere preferibile usare `/WX` in tutte le compilazioni. La risoluzione degli avvisi garantirà il minor numero possibile di errori del codice di difficile individuazione.|
 |**UndefinePreprocessorDefinitions**|Parametro **string[]** facoltativo.<br/><br/>Rimuove una o più definizioni per il preprocessore.<br/><br/>Usare `-U [macro]`.|
@@ -80,7 +82,7 @@ Nella tabella seguente vengono descritti i parametri dell'attività **ClangCompi
 |**UseMultiToolTask**|Parametro **bool** facoltativo.<br/><br/>Compilazione a più processori.|
 |**UseShortEnums**|Parametro **bool** facoltativo.<br/><br/>Il tipo enum usa solo il numero di byte richiesti dall'insieme di possibili valori di input.|
 |**Verbose**|Parametro **bool** facoltativo.<br/><br/>Visualizza i comandi da eseguire e usa l'output dettagliato.|
-|**WarningLevel**|Parametro **stringa** facoltativo.<br/><br/>Specifica il grado di severità del controllo effettuato dal compilatore per trovare gli errori del codice. È necessario aggiungere altri flag direttamente a **Opzioni aggiuntive** (se `/w` , `/Weverything` ).<br/><br/>**TurnOffAllWarnings**, disabilita tutti gli avvisi del compilatore (usare `w`).<br/>**EnableAllWarnings**, abilita tutti gli avvisi, inclusi quelli disabilitati per impostazione predefinita (usare `Wall`).|
+|**WarningLevel**|Parametro **stringa** facoltativo.<br/><br/>Specifica il grado di severità del controllo effettuato dal compilatore per trovare gli errori del codice. È necessario aggiungere altri flag direttamente a **Opzioni aggiuntive** (se `/w` , `/Weverything` ).<br/><br/>**TurnOffAllWarnings** , disabilita tutti gli avvisi del compilatore (usare `w`).<br/>**EnableAllWarnings** , abilita tutti gli avvisi, inclusi quelli disabilitati per impostazione predefinita (usare `Wall`).|
 
 ## <a name="see-also"></a>Vedere anche
 

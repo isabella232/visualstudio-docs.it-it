@@ -1,5 +1,7 @@
 ---
 title: Elemento Choose (MSBuild) | Microsoft Docs
+description: Usare l'elemento MSBuild Choose per valutare gli elementi figlio e selezionare un set di elementi ItemGroup o PropertyGroup da valutare.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4f699b4ffc9372af0c803d094390544932d652b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ad83bc215c70389dbb9383e1cb9562b99be7106
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634474"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796628"
 ---
 # <a name="choose-element-msbuild"></a>Elemento Choose (MSBuild)
 
@@ -50,7 +52,7 @@ Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di
 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributi
+### <a name="attributes"></a>Attributes
 
  Nessuno.
 
@@ -59,7 +61,7 @@ Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di
 |Elemento|Descrizione|
 |-------------|-----------------|
 |[In caso contrario](../msbuild/otherwise-element-msbuild.md)|Elemento facoltativo.<br /><br /> Specifica gli elementi `PropertyGroup` e `ItemGroup` del blocco di codice da valutare se le condizioni di tutti gli elementi `When` restituiscono `false`. In un elemento `Otherwise` può essere presente al massimo un elemento `Choose` ed è necessario che sia l'ultimo.|
-|[Se](../msbuild/when-element-msbuild.md)|Elemento obbligatorio.<br /><br /> Specifica un blocco di codice selezionabile dall'elemento `Choose`. In un elemento `When` possono essere presenti uno o più elementi `Choose`.|
+|[Quando](../msbuild/when-element-msbuild.md)|Elemento obbligatorio.<br /><br /> Specifica un blocco di codice selezionabile dall'elemento `Choose`. In un elemento `When` possono essere presenti uno o più elementi `Choose`.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -67,9 +69,9 @@ Valuta gli elementi figlio per selezionare un set di elementi `ItemGroup` e/o di
 | - | - |
 | [In caso contrario](../msbuild/otherwise-element-msbuild.md) | Specifica il blocco di codice da eseguire se le condizioni di tutti gli elementi `When` restituiscono `false`. |
 | [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
-| [Se](../msbuild/when-element-msbuild.md) | Specifica un blocco di codice selezionabile dall'elemento `Choose`. |
+| [Quando](../msbuild/when-element-msbuild.md) | Specifica un blocco di codice selezionabile dall'elemento `Choose`. |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  Gli elementi `Choose`, `When` e `Otherwise` vengono usati insieme per consentire di selezionare una sezione di codice da eseguire tra diverse alternative. Per altre informazioni, vedere [Costrutti condizionali di MSBuild](../msbuild/msbuild-conditional-constructs.md).
 

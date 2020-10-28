@@ -1,6 +1,6 @@
 ---
 title: OpenCV
-description: Personalizzazione di esempio mediante devinit per il repository OpenCV/OpenCV.
+description: Personalizzazione di esempio con la devinilt per la destinazione sia di Linux che di Windows per il repository OpenCV.
 ms.date: 08/28/2020
 ms.topic: reference
 author: andysterland
@@ -11,26 +11,47 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a1c7f2c78fdae9c70785727cb03c7f8cb1e08cef
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a2f284e1e464ab41391f60c546ce01d418ff377b
+ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005638"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92750126"
 ---
 # <a name="opencv"></a>OpenCV
 
-Questo esempio illustra le personalizzazioni necessarie per eseguire il provisioning automatico di [OpenCV](https://github.com/opencv/opencv) con [spazi dei codebase GitHub] https://github.com/features/codespaces) .
+Questo esempio illustra come personalizzare gli spazi dei nomi di [GitHub per lo](https://github.com/features/codespaces) sviluppo con progetti multipiattaforma, ad esempio [OpenCV/OpenCV](https://github.com/opencv/opencv).
 
-## <a name="devinitjson"></a>.devinit.json
+Le seguenti personalizzazioni sono già state applicate alla divisione [Microsoft/OpenCV](https://github.com/microsoft/opencv) e consentono a di compilare come destinazione Windows e Ubuntu.
 
-Contenuto del [_.devinit.jssu_](devinit-json.md) file. Questo file deve trovarsi nella stessa cartella del _.devcontainer.js_.
+## <a name="customization-with-devcontainerjson-and-devinitjson"></a>Personalizzazione con devcontainer.json e devinit.json
+
+La `.devcontainer` Directory deve contenere i file seguenti:
+
+* devcontainer.js
+* devinit.js
+
+### <a name="devcontainerjson"></a>devcontainer.js
+
+Di seguito è riportato il contenuto del _devcontainer.jssu_ file.
+
+```json
+{
+  "postCreateCommand": "devinit init"
+}
+```
+
+Il `postCreateCommand` Avvia lo strumento  [devinit](devinit-and-codespaces.md) , che utilizza _devinit.js_ .
+
+### <a name="devinitjson"></a>devinit.js
+
+Di seguito è riportato il contenuto del [_devinit.jssu_](devinit-json.md) file.
 
 ```json
 {
     "run": [
         {
-            "comments": "Example that will install Ubuntu 20.04 using WSL2, and configure it with various packages.",
+            "comments": "Example that will install Ubuntu 20.04 using WSL2, and configure it with various packages useful for C++ development.",
             "tool": "wsl-install",
             "input": "https://aka.ms/wslubuntu2004",
             "additionalOptions": "--wsl-version 2 --post-create-command 'apt-get update && apt-get install g++ gcc g++-9 gcc-9 cmake gdb ninja-build zip rsync -y'"
@@ -39,12 +60,15 @@ Contenuto del [_.devinit.jssu_](devinit-json.md) file. Questo file deve trovarsi
 }
 ```
 
-## <a name="devcontainerjson"></a>.devcontainer.js
+Il _devinit.jsin_ è il file utilizzato dallo strumento [devinit](devinit-and-codespaces.md) e deve trovarsi nella stessa directory di _devcontainer.jsin_ .
 
-Contenuto del _.devcontainer.js_ nel file nella radice del repository.
+In questo esempio, lo strumento [WSL-install](tool-wsl-install.md) viene usato per creare un'istanza di WSL che esegue Ubuntu 20,04 e provisioning con gli strumenti di sviluppo C++ essenziali.
+## <a name="targeting-windows-or-linux"></a>Destinazione di Windows o Linux
 
-```json
-{
-  "postCreateCommand": "devinit init"
-}
-```
+Una configurazione di compilazione predefinita destinata A Windows viene sempre creata denominata `x64-Debug` .
+
+Se si aggiungono i file menzionati in precedenza, durante la creazione dell'istanza di codespace, Visual Studio effettua il provisioning di una nuova connessione SSH nella [gestione connessione](/cpp/linux/connect-to-your-remote-linux-computer)e crea una nuova configurazione nella selezione configurazione che ha come destinazione l'istanza di Ubuntu tramite la connessione SSH.
+
+![Configurazione destinata a Ubuntu](media/wsl-ssh-linux-configuration.png).
+
+Selezionando la configurazione evidenziata destinata a WSL, è possibile compilare ed eseguire il debug delle destinazioni di compilazione di OpenCV.

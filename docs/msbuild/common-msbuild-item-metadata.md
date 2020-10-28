@@ -1,5 +1,7 @@
 ---
 title: Metadati dell'elemento MSBuild comuni | Microsoft Docs
+description: Informazioni sui metadati facoltativi degli elementi che hanno significato per alcuni SDK o destinazioni di MSBuild, ma che non sono impostati per impostazione predefinita per ogni elemento.
+ms.custom: SEO-VS-2020
 ms.date: 07/13/2020
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c715c16782733a08bb617a464c1aa9510d35b54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 152967fb99442b58d96016e10d8899b57ef35bf6
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87425957"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796590"
 ---
 # <a name="common-msbuild-item-metadata"></a>Metadati dell'elemento MSBuild comuni
 
@@ -28,7 +30,7 @@ La tabella seguente descrive i metadati facoltativi degli elementi che hanno un 
 
 | Metadati degli elementi | SDK | Descrizione |
 |---------------| ------- | -------------|
-|% (Collegamento)| Tutti |Il sistema di progetto di Visual Studio USA i `Link` metadati (se presenti) per modificare gli elementi visualizzati nell'albero del progetto. è possibile inserire un file in una struttura di cartelle logica diversa in **Esplora soluzioni**.<br />Inoltre, l' `AssignTargetPath` attività esamina `Link` per determinare la posizione della directory di output in cui copiare un file, se si tratta di uno degli elementi che vengono copiati.|
+|% (Collegamento)| Tutti |Il sistema di progetto di Visual Studio USA i `Link` metadati (se presenti) per modificare gli elementi visualizzati nell'albero del progetto. è possibile inserire un file in una struttura di cartelle logica diversa in **Esplora soluzioni** .<br />Inoltre, l' `AssignTargetPath` attività esamina `Link` per determinare la posizione della directory di output in cui copiare un file, se si tratta di uno degli elementi che vengono copiati.|
 |% (Collegamento)| .NET Core SDK | Utilizzato per impostare la cartella da utilizzare per i `Link` metadati per i gruppi di elementi. |
 
 ## <a name="see-also"></a>Vedere anche

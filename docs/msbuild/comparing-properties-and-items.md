@@ -1,5 +1,7 @@
 ---
 title: Confronto di proprietà ed elementi | Microsoft Docs
+description: Informazioni su come le proprietà e gli elementi di MSBuild passano informazioni alle attività, valutano le condizioni e archiviano i valori a cui il file di progetto può fare riferimento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a86365ffe839b45fcd09862040fb88f0d4148bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f00de870986cf020e91ff992dabb2681469ae5b
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634409"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796771"
 ---
 # <a name="compare-properties-and-items"></a>Confrontare proprietà ed elementi
 
@@ -27,7 +29,7 @@ Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad a
 
 ## <a name="scalars-and-vectors"></a>Valori scalari e vettori
 
-Poiché le proprietà MSBuild sono coppie nome-valore con un solo valore di stringa, sono spesso descritte come *valori scalari*. I tipi di elemento MSBuild sono invece elenchi di elementi e sono pertanto spesso descritti come *vettori*. In realtà le proprietà possono comunque rappresentare più valori, mentre i tipi di elemento possono non avere elementi o aver uno.
+Poiché le proprietà MSBuild sono coppie nome-valore con un solo valore di stringa, sono spesso descritte come *valori scalari* . I tipi di elemento MSBuild sono invece elenchi di elementi e sono pertanto spesso descritti come *vettori* . In realtà le proprietà possono comunque rappresentare più valori, mentre i tipi di elemento possono non avere elementi o aver uno.
 
 ### <a name="target-dependency-injection"></a>Inserimento delle dipendenze di destinazione
 
@@ -43,7 +45,7 @@ Per comprendere come le proprietà possono rappresentare più valori, considerar
 </PropertyGroup>
 ```
 
-La proprietà `BuildDependsOn` viene in genere usata come argomento di un attributo di destinazione `DependsOnTargets` che lo converte in modo efficace in un elenco di elementi. Questa proprietà può essere sottoposta a override per aggiungere una destinazione o per modificare l'ordine di esecuzione della destinazione. Ad esempio:
+La proprietà `BuildDependsOn` viene in genere usata come argomento di un attributo di destinazione `DependsOnTargets` che lo converte in modo efficace in un elenco di elementi. Questa proprietà può essere sottoposta a override per aggiungere una destinazione o per modificare l'ordine di esecuzione della destinazione. Ad esempio,
 
 ```xml
 <PropertyGroup>

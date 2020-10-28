@@ -1,5 +1,7 @@
 ---
 title: Tasti di modifica della tavola da disegno in Blend
+description: Informazioni sulle scelte rapide da tastiera con i tasti di modifica in Blend per Visual Studio per modificare le azioni nella tavola da disegno, ad esempio zoom, ridimensionamento e panning.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
@@ -8,19 +10,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2659f8f4c90bb7476a5c3a51f8ecb9a2e207029
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4b801713e6fdccf65bb580b017f011e65e0b84e
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329584"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796280"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Tasti di modifica della tavola da disegno in Blend
 Alcuni tasti di scelta rapida non presentano elementi di menu associati, pertanto non è possibile usare l'interfaccia utente [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] per individuarli. La tabella seguente elenca i tasti di scelta rapida che modificano un'azione, ad esempio il ridimensionamento di un oggetto.
 
 |Per|Procedere nel modo seguente|
 | - |-------------|
-|Selezionare temporaneamente **Selezione** mentre rimane selezionato uno strumento diverso (ciò consente di ridurre il numero di volte in cui è necessario fare clic su un elemento nel pannello **Strumenti**, passando da **Selezione** ad altri strumenti)|Tenere premuto **CTRL**|
+|Selezionare temporaneamente **Selezione** mentre rimane selezionato uno strumento diverso (ciò consente di ridurre il numero di volte in cui è necessario fare clic su un elemento nel pannello **Strumenti** , passando da **Selezione** ad altri strumenti)|Tenere premuto **CTRL**|
 |Spostare gli oggetti selezionati mentre è selezionato **Selezione**|Premere i tasti freccia|
 |Eseguire una panoramica della tavola da disegno|Tenere premuta la **BARRA SPAZIATRICE** e trascinare la tavola da disegno|
 |Eseguire uno zoom avanti o indietro della tavola da disegno|Ruotare la rotellina del mouse|
@@ -36,8 +38,8 @@ Alcuni tasti di scelta rapida non presentano elementi di menu associati, pertant
 |Selezionare più oggetti adiacenti|Tenere premuto **MAIUSC** e selezionare il primo e l'ultimo oggetto|
 |Selezionare disegnando una cornice intermittente|Tenere premuto **MAIUSC** e trascinare|
 |Selezionare un oggetto sotto un altro oggetto|Tenere premuto **ALT** e fare clic una volta per ogni livello di oggetti|
-|Spostarsi tra i documenti aperti|Premere **Ctrl**la + **scheda** CTRL|
-|Aprire il pannello **Asset**|Premere **Ctrl**il + **punto** CTRL|
+|Spostarsi tra i documenti aperti|Premere **Ctrl** la + **scheda** CTRL|
+|Aprire il pannello **Asset**|Premere **Ctrl** il + **punto** CTRL|
 
 ## <a name="see-also"></a>Vedere anche
 

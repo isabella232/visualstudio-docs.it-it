@@ -1,5 +1,7 @@
 ---
 title: Attività CreateCSharpManifestResourceName | Microsoft Docs
+description: Usare l'attività MSBuild CreateCSharpManifestResourceName per creare un nome di manifesto di tipo C# da un nome di file con estensione resx specificato o da un'altra risorsa.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8e72ef282911ecb36fb9a16838f6cc311e253e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f13293a6967456b153d14464b65182153eca2549
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634357"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796043"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>attività CreateCSharpManifestResourceName
 
@@ -39,7 +41,7 @@ Crea un nome di manifesto di tipo C# da un nome di file con *estensione resx* sp
 | `PrependCultureAsDirectory` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, il nome delle impostazioni cultura viene aggiunto come nome di directory prima del nome di risorsa di manifesto. Il valore predefinito è `true`. |
 | `ResourceFilesWithManifestResourceNames` | Parametro di output di sola lettura `String` facoltativo.<br /><br /> Restituisce il nome del file di risorse che include ora il nome di risorsa di manifesto. |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  L' [Attività CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) determina il nome della risorsa di manifesto appropriato da assegnare a un file con *estensione resx* o a un altro file di risorse specificato. L'attività fornisce un nome logico a un file di risorse e quindi lo associa a un parametro di output come metadato.
 

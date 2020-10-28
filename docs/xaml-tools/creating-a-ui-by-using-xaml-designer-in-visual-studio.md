@@ -1,5 +1,7 @@
 ---
 title: Panoramica della finestra di progettazione XAML
+description: Informazioni sull'interfaccia utente dell'area di lavoro e sulle funzionalità del finestra di progettazione XAML in Blend per Visual Studio che fornisce un'interfaccia visiva per semplificare la progettazione di app basate su XAML.
+ms.custom: SEO-VS-2020
 ms.date: 03/03/2020
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f8579a4e8088dc0fc6e7403da7f0371e46f2c928
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73e7fb0b3216baa960a1b69302fe43161e311399
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507963"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796784"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Creare un'interfaccia utente tramite la finestra di progettazione XAML
 
@@ -31,9 +33,9 @@ Per gli utenti avanzati è anche possibile [personalizzare la finestra di proget
 
 ## <a name="xaml-designer-workspace"></a>Area di lavoro della finestra di progettazione XAML
 
-L'area di lavoro della finestra di progettazione XAML è costituita da alcuni elementi dell'interfaccia visiva, tra cui la *tavola da disegno* (ovvero l'area di progettazione visiva), l'editor XAML, la finestra Struttura documento (finestra Oggetti e sequenza temporale in Blend per Visual Studio) e la finestra Proprietà. Per aprire la finestra di progettazione XAML, fare clic con il pulsante destro del mouse su un file XAML in **Esplora soluzioni** , quindi scegliere **Progettazione visualizzazioni**.
+L'area di lavoro della finestra di progettazione XAML è costituita da alcuni elementi dell'interfaccia visiva, tra cui la *tavola da disegno* (ovvero l'area di progettazione visiva), l'editor XAML, la finestra Struttura documento (finestra Oggetti e sequenza temporale in Blend per Visual Studio) e la finestra Proprietà. Per aprire la finestra di progettazione XAML, fare clic con il pulsante destro del mouse su un file XAML in **Esplora soluzioni** , quindi scegliere **Progettazione visualizzazioni** .
 
-La finestra di progettazione XAML include una visualizzazione XAML e una visualizzazione Progettazione sincronizzata del markup XAML dell'app sottoposto a rendering. Con un file XAML aperto in Visual Studio o Blend per Visual Studio, è possibile spostarsi tra la visualizzazione Progettazione e la visualizzazione XAML mediante le schede **Progettazione** e **XAML**. È possibile usare il pulsante **Scambia riquadri** nella ![finestra di progettazione XAML](media/swap-panes.PNG) per visualizzare in primo piano alternativamente la tavola da disegno o l'editor XAML.
+La finestra di progettazione XAML include una visualizzazione XAML e una visualizzazione Progettazione sincronizzata del markup XAML dell'app sottoposto a rendering. Con un file XAML aperto in Visual Studio o Blend per Visual Studio, è possibile spostarsi tra la visualizzazione Progettazione e la visualizzazione XAML mediante le schede **Progettazione** e **XAML** . È possibile usare il pulsante **Scambia riquadri** nella ![finestra di progettazione XAML](media/swap-panes.PNG) per visualizzare in primo piano alternativamente la tavola da disegno o l'editor XAML.
 
 ### <a name="design-view"></a>Visualizzazione progettazione
 
@@ -45,7 +47,7 @@ Nella tavola da disegno sono disponibili le funzionalità seguenti:
 
 **Guide di allineamento**
 
-Le guide di allineamento sono *limiti di allineamento*, visualizzati sotto forma di linee tratteggiate rosse, per indicare quando i bordi dei controlli sono allineati o quando le linee di base del testo sono allineate. I limiti di allineamento vengono visualizzati solo quando è abilitato l' **allineamento alle guide di allineamento** .
+Le guide di allineamento sono *limiti di allineamento* , visualizzati sotto forma di linee tratteggiate rosse, per indicare quando i bordi dei controlli sono allineati o quando le linee di base del testo sono allineate. I limiti di allineamento vengono visualizzati solo quando è abilitato l' **allineamento alle guide di allineamento** .
 
 **Sbarre della griglia**
 
@@ -61,11 +63,11 @@ Gli strumenti decorativi griglia vengono usati per controllare la larghezza e l'
 
 **Quadratini di ridimensionamento**
 
-I quadratini di ridimensionamento vengono visualizzati sui controlli selezionati e ne permettono il ridimensionamento. Quando si ridimensiona un controllo, vengono in genere visualizzati i valori relativi a larghezza e altezza per semplificare il ridimensionamento del controllo. Per altre informazioni sulla modifica dei controlli nella visualizzazione **Progettazione**, vedere [Usare gli elementi nella finestra di progettazione XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
+I quadratini di ridimensionamento vengono visualizzati sui controlli selezionati e ne permettono il ridimensionamento. Quando si ridimensiona un controllo, vengono in genere visualizzati i valori relativi a larghezza e altezza per semplificare il ridimensionamento del controllo. Per altre informazioni sulla modifica dei controlli nella visualizzazione **Progettazione** , vedere [Usare gli elementi nella finestra di progettazione XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
 
 **Margini**
 
-I margini rappresentano la quantità di spazio fisso tra il bordo di un controllo e il bordo del rispettivo contenitore. È possibile impostare i margini di un controllo usando le proprietà [Margin](xref:Windows.UI.Xaml.FrameworkElement.Margin) in **Layout** nella finestra **Proprietà**.
+I margini rappresentano la quantità di spazio fisso tra il bordo di un controllo e il bordo del rispettivo contenitore. È possibile impostare i margini di un controllo usando le proprietà [Margin](xref:Windows.UI.Xaml.FrameworkElement.Margin) in **Layout** nella finestra **Proprietà** .
 
 **Strumenti decorativi del margine**
 
@@ -83,11 +85,11 @@ Nella barra degli strumenti sono disponibili i comandi seguenti:
 
 **Zoom**
 
-Lo zoom consente di ridimensionare l'area di progettazione. È possibile ingrandire dal 12,5% all'800% o selezionare opzioni come **Adatta alla selezione** e **Adatta tutto**.
+Lo zoom consente di ridimensionare l'area di progettazione. È possibile ingrandire dal 12,5% all'800% o selezionare opzioni come **Adatta alla selezione** e **Adatta tutto** .
 
 **Mostra/Nascondi griglia di allineamento**
 
-Visualizza o nasconde la griglia di allineamento che mostra le griglie. Le griglie vengono usate quando è abilitato lo **snapping sulle linee della griglia** o lo **snapping sulle guide di allineamento**.
+Visualizza o nasconde la griglia di allineamento che mostra le griglie. Le griglie vengono usate quando è abilitato lo **snapping sulle linee della griglia** o lo **snapping sulle guide di allineamento** .
 
 **Attiva/Disattiva allineamento alla griglia**
 
@@ -107,7 +109,7 @@ Disabilita [il codice del progetto](debugging-or-disabling-project-code-in-xaml-
 
 ### <a name="xaml-view"></a>Visualizzazione XAML
 
-Nella visualizzazione **XAML**, la finestra contenente l'editor XAML è la finestra attiva e l'editor XAML è lo strumento di creazione primario. Il linguaggio Extensible Application Markup Language (XAML) fornisce un vocabolario dichiarativo basato su XML per la specifica dell'interfaccia utente di un'applicazione. La visualizzazione XAML include IntelliSense, la formattazione automatica, l'evidenziazione della sintassi e la navigazione tra tag. La figura seguente mostra la visualizzazione XAML con un menu di IntelliSense aperto:
+Nella visualizzazione **XAML** , la finestra contenente l'editor XAML è la finestra attiva e l'editor XAML è lo strumento di creazione primario. Il linguaggio Extensible Application Markup Language (XAML) fornisce un vocabolario dichiarativo basato su XML per la specifica dell'interfaccia utente di un'applicazione. La visualizzazione XAML include IntelliSense, la formattazione automatica, l'evidenziazione della sintassi e la navigazione tra tag. La figura seguente mostra la visualizzazione XAML con un menu di IntelliSense aperto:
 
 ![Visualizzazione XAML](media/xaml-editor.png)
 
@@ -123,8 +125,8 @@ La finestra Struttura documento in Visual Studio è simile alla finestra [Oggett
 
 - [Crea animazioni](animate-objects-in-xaml-designer.md) (solo Blend per Visual Studio).
 
-Per visualizzare la finestra Struttura documento in Visual Studio, nella barra dei menu selezionare **Visualizza**  >  **altre finestre**  >  **struttura documento**.
-Per visualizzare la finestra di oggetti e sequenza temporale Blend per Visual Studio, sulla barra dei menu selezionare **Visualizza**  >  **struttura documento**.
+Per visualizzare la finestra Struttura documento in Visual Studio, nella barra dei menu selezionare **Visualizza**  >  **altre finestre**  >  **struttura documento** .
+Per visualizzare la finestra di oggetti e sequenza temporale Blend per Visual Studio, sulla barra dei menu selezionare **Visualizza**  >  **struttura documento** .
 
 ![Finestra Struttura documento in Visual Studio](media/document-outline-window.png)
 
@@ -150,10 +152,10 @@ La finestra **Proprietà** consente di impostare valori di proprietà sui contro
 
 Nella parte superiore della finestra **Proprietà** sono disponibili varie opzioni:
 
-- È possibile modificare il nome dell'elemento selezionato nella casella **Nome**.
+- È possibile modificare il nome dell'elemento selezionato nella casella **Nome** .
 - Nell'angolo superiore sinistro è presente un'icona che rappresenta l'elemento selezionato.
-- Per disporre le proprietà per categoria o in ordine alfabetico, fare clic su **Categoria**, **Nome**oppure **Origine** nell'elenco **Disponi per** .
-- Per visualizzare l'elenco di eventi per un controllo, fare clic sul pulsante **Eventi**, identificato dal simbolo di un fulmine.
+- Per disporre le proprietà per categoria o in ordine alfabetico, fare clic su **Categoria** , **Nome** oppure **Origine** nell'elenco **Disponi per** .
+- Per visualizzare l'elenco di eventi per un controllo, fare clic sul pulsante **Eventi** , identificato dal simbolo di un fulmine.
 - Per cercare una proprietà, iniziare a digitare il nome corrispondente nella casella di ricerca. La finestra **Proprietà** mostra le proprietà corrispondenti alla ricerca durante la digitazione.
 
 In alcuni casi è possibile impostare proprietà avanzate selezionando un pulsante Freccia GIÙ.

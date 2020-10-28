@@ -1,6 +1,7 @@
 ---
 title: Disegnare forme e tracciati
-description: Usare Blend per Visual Studio per aggiungere altri dettagli a forme e percorsi
+description: Usare le funzionalità del finestra di progettazione XAML in Blend per Visual Studio per tracciare percorsi e forme, modificarli e combinarli.
+ms.custom: SEO-VS-2020
 titleSuffix: Blend for Visual Studio
 ms.date: 09/22/2020
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 368619a55316e0af59fc5351e187ced8892a6116
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+ms.openlocfilehash: 6c29e2a4718a10193a4c86d1485549ded6ae2c0e
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022508"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796797"
 ---
 # <a name="draw-shapes-and-paths"></a>Disegnare forme e tracciati
 
@@ -25,7 +26,7 @@ Le forme e i tracciati usano la grafica vettoriale per una scalabilità ottimale
 
 ## <a name="draw-a-shape"></a>Disegnare una forma
 
-Trovare le forme nella finestra **Asset**.
+Trovare le forme nella finestra **Asset** .
 
 :::image type="content" source="media/blend-shapes.png" alt-text="Screenshot della categoria forme della finestra asset in Blend per Visual Studio":::
 
@@ -35,13 +36,13 @@ Trascinare la forma da usare nella tavola da disegno. Usare quindi i quadratini 
 
 ## <a name="draw-a-path"></a>Disegnare un tracciato
 
-Un tracciato è costituito da una serie di linee e curve collegate. Usare un tracciato per creare forme interessanti non disponibili nella finestra **Asset**.
+Un tracciato è costituito da una serie di linee e curve collegate. Usare un tracciato per creare forme interessanti non disponibili nella finestra **Asset** .
 
-È possibile disegnare un tracciato usando una riga, una penna o una matita. Questi strumenti sono disponibili nella finestra **Strumenti**.
+È possibile disegnare un tracciato usando una riga, una penna o una matita. Questi strumenti sono disponibili nella finestra **Strumenti** .
 
 ### <a name="draw-a-straight-line"></a>Disegnare una linea retta
 
-Usare lo strumento **Penna** oppure lo strumento **Linea**.
+Usare lo strumento **Penna** oppure lo strumento **Linea** .
 
 **Uso dello strumento Penna**
 
@@ -53,7 +54,7 @@ Nella tavola da disegno trascinare il puntatore dal punto in cui si vuole che ab
 
 ### <a name="draw-a-curve"></a>Disegnare una curva
 
-Usare lo strumento **Penna**.
+Usare lo strumento **Penna** .
 
 Nella tavola da disegno fare clic una volta per definire il punto di inizio di una linea, quindi fare clic e trascinare il puntatore per creare la curva desiderata.
 
@@ -61,19 +62,19 @@ Per chiudere il tracciato, fare clic sul primo punto della linea.
 
 ### <a name="change-the-shape-of-a-curve"></a>Cambiare la forma di una curva
 
-Usare lo strumento **Selezione diretta**.
+Usare lo strumento **Selezione diretta** .
 
 Fare clic sulla forma, quindi trascinare qualsiasi punto della forma per modificare le forme della curva.
 
 ### <a name="draw-a-free-form-path"></a>Disegnare un tracciato a mano libera
 
-Usare lo strumento **Matita**.
+Usare lo strumento **Matita** .
 
 Nella tavola da disegno disegnare un tracciato a mano libera, proprio come se si usasse una vera matita.
 
 ### <a name="remove-part-of-a-path"></a>Eliminare una parte di un tracciato
 
-Usare lo strumento **Selezione diretta**.
+Usare lo strumento **Selezione diretta** .
 
 Selezionare il tracciato contenente il segmento da eliminare, quindi fare clic su **Elimina** .
 
@@ -87,7 +88,7 @@ Usare lo strumento **Selezione** per selezionare il tracciato. Usare lo strument
 
 ## <a name="convert-a-shape-to-a-path"></a>Convertire una forma in un tracciato
 
-Per modificare una forma in modo analogo alla modifica di un tracciato, convertire la forma in tracciato. Selezionare la forma, quindi selezionare **formato**  >  **percorso**  >  **Converti in tracciato**.
+Per modificare una forma in modo analogo alla modifica di un tracciato, convertire la forma in tracciato. Selezionare la forma, quindi selezionare **formato**  >  **percorso**  >  **Converti in tracciato** .
 
 **Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Working with paths: Convert a shape to a path](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147) (Uso di tracciati: convertire una forma in un tracciato).
 

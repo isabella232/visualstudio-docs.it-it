@@ -1,5 +1,7 @@
 ---
 title: Elementi di progetto MSBuild comuni | Microsoft Docs
+description: Informazioni sugli elementi di progetto MSBuild comuni. Gli elementi sono denominati riferimenti a uno o più file e hanno metadati come nomi file, percorsi e numeri di versione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,16 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf32bdf56f75ded7d193082f1072b79c3d16b3c
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: b42ba80365b8aedd9527490235efb1228bc2a61d
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136914"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796394"
 ---
 # <a name="common-msbuild-project-items"></a>Elementi di progetto MSBuild comuni
 
-In MSBuild un elemento è un riferimento denominato a uno o più file. Gli elementi contengono metadati quali ad esempio nomi file, percorsi e numeri di versione. Tutti i tipi di progetto in Visual Studio hanno più elementi in comune. Questi elementi sono definiti nel file *Microsoft.Build.CommonTypes.xsd*.
+In MSBuild un elemento è un riferimento denominato a uno o più file. Gli elementi contengono metadati quali ad esempio nomi file, percorsi e numeri di versione. Tutti i tipi di progetto in Visual Studio hanno più elementi in comune. Questi elementi sono definiti nel file *Microsoft.Build.CommonTypes.xsd* .
 
 ## <a name="common-items"></a>Elementi comuni
 
@@ -41,7 +43,7 @@ Rappresenta un riferimento all'assembly (gestito) nel progetto.
 |FusionName|Stringa facoltativa. Specifica il nome Fusion semplice o sicuro per l'elemento.<br /><br /> Questo attributo, se specificato, consente di risparmiare tempo in quanto non comporta l'apertura del file di assembly per ottenere il nome Fusion.|
 |SpecificVersion|Valore booleano facoltativo. Specifica se è necessario fare riferimento solo alla versione nel nome Fusion.|
 |Alias|Stringa facoltativa. Gli alias per il riferimento.|
-|Private|Valore booleano facoltativo. Specifica se il riferimento deve essere copiato nella cartella di output. Questo attributo corrisponde alla proprietà **Copia localmente** del riferimento nell'IDE di Visual Studio.|
+|Privato|Valore booleano facoltativo. Specifica se il riferimento deve essere copiato nella cartella di output. Questo attributo corrisponde alla proprietà **Copia localmente** del riferimento nell'IDE di Visual Studio.|
 
 ### <a name="comreference"></a>COMReference
 
@@ -118,7 +120,7 @@ Rappresenta le risorse da incorporare nell'assembly generato.
 | CopyToOutputDirectory | Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori possibili sono:<br /><br /> 1. mai<br />2. always<br />3. PreserveNewest |
 | LogicalName | Stringa obbligatoria. Nome logico della risorsa incorporata. |
 
-### <a name="content"></a>Contenuto
+### <a name="content"></a>Content
 
 Rappresenta file che non sono compilati nel progetto, ma possono essere incorporati o pubblicati con il progetto.
 
@@ -134,7 +136,7 @@ Rappresenta file che non sono compilati nel progetto, ma possono essere incorpor
 | Visible | Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in Visual Studio. |
 | CopyToOutputDirectory | Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori possibili sono:<br /><br /> 1. mai<br />2. always<br />3. PreserveNewest |
 
-### <a name="none"></a>Nessuno
+### <a name="none"></a>nessuno
 
 Rappresenta i file che non hanno un ruolo nel processo di compilazione.
 
@@ -155,7 +157,7 @@ Rappresenta gli attributi di assembly da generare come `[AssemblyMetadata(key, v
 | Nome metadati degli elementi | Descrizione |
 |-----------------------| - |
 | Includi | Diventa il primo parametro (chiave) nel costruttore dell' `AssemblyMetadataAttribute` attributo. |
-| Valore | Stringa obbligatoria. Diventa il secondo parametro (valore) nel costruttore dell' `AssemblyMetadataAttribute` attributo. |
+| valore | Stringa obbligatoria. Diventa il secondo parametro (valore) nel costruttore dell' `AssemblyMetadataAttribute` attributo. |
 
 > [!NOTE]
 > Questo vale per i progetti che usano solo la .NET Core SDK.

@@ -1,5 +1,7 @@
 ---
 title: Attività Copy | Microsoft Docs
+description: Informazioni su come usare l'attività di copia MSBuild per copiare i file in un nuovo percorso di file o cartella nella file system.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c298658c7e9f385e5140ea46f8069512c0bf278
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 00544b6d1e797a1fd8a7a197197480cae5620f10
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508041"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796226"
 ---
 # <a name="copy-task"></a>Copy (attività)
 
@@ -68,15 +70,15 @@ Gli avvisi vengono registrati, inclusi:
 
 - `Copy.RemovingReadOnlyAttribute`
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 È necessario specificare il parametro `DestinationFolder` o `DestinationFiles`, ma non entrambi. Se vengono specificati entrambi, l'attività avrà esito negativo e verrà registrato un errore.
 
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Esempio
+## <a name="example-1"></a>Esempio 1
 
-Nell'esempio riportato di seguito gli elementi della raccolta `MySourceFiles` vengono copiati nella cartella *c:\MyProject\Destination*.
+Nell'esempio riportato di seguito gli elementi della raccolta `MySourceFiles` vengono copiati nella cartella *c:\MyProject\Destination* .
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -95,9 +97,9 @@ Nell'esempio riportato di seguito gli elementi della raccolta `MySourceFiles` ve
 </Project>
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-2"></a>Esempio 2
 
-Nell'esempio riportato di seguito viene illustrato come creare una copia ricorsiva. Tutti i file del progetto vengono copiati in modo ricorsivo da *c:\MySourceTree* a *c:\MyDestinationTree*, mantenendo al tempo stesso la struttura di directory.
+Nell'esempio riportato di seguito viene illustrato come creare una copia ricorsiva. Tutti i file del progetto vengono copiati in modo ricorsivo da *c:\MySourceTree* a *c:\MyDestinationTree* , mantenendo al tempo stesso la struttura di directory.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

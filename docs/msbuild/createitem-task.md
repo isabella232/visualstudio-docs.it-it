@@ -1,5 +1,7 @@
 ---
 title: Attività CreateItem | Microsoft Docs
+description: Utilizzare l'attività CreateItem di MSBuild per popolare le raccolte di elementi con elementi di input, consentendo la copia degli elementi da un elenco a un altro.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4364e6c3f637fdf2c3e02a52d3163e5cdd8a5861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed964c618b59bf02086329715c5b0540039eb16a
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77634331"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796758"
 ---
 # <a name="createitem-task"></a>CreateItem (attività)
 
@@ -32,7 +34,7 @@ Inserisce elementi di input nelle raccolte di elementi. Questo consente di copia
 > [!NOTE]
 > Si tratta di un'attività deprecata. A partire da .NET Framework 3.5, è possibile posizionare i gruppi di elementi all'interno di elementi [Target](../msbuild/target-element-msbuild.md). Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
-## <a name="attributes"></a>Attributi
+## <a name="attributes"></a>Attributes
 
  Nella tabella che segue vengono descritti i parametri dell'attività `CreateItem` .
 
@@ -43,7 +45,7 @@ Inserisce elementi di input nelle raccolte di elementi. Questo consente di copia
 |`Include`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica gli elementi da includere nella raccolta di elementi di output. Questo parametro può contenere specifiche di caratteri jolly.|
 |`PreserveExistingMetadata`|Parametro `Boolean` facoltativo.<br /><br /> Se `True`, i metadati aggiuntivi vengono applicati solo se non sono ancora presenti.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -51,7 +53,7 @@ Inserisce elementi di input nelle raccolte di elementi. Questo consente di copia
 
  L'esempio di codice seguente mostra come creare una nuova raccolta di elementi denominata `MySourceItemsWithMetadata` a partire dalla raccolta di elementi `MySourceItems`. L'attività `CreateItem` popola la nuova raccolta con elementi dell'elemento `MySourceItems`. A ogni elemento della nuova raccolta viene poi aggiunto un altro metadato denominato `MyMetadata` di valore `Hello`.
 
- Al termine dell'esecuzione dell'attività, la raccolta di elementi `MySourceItemsWithMetadata` contiene gli elementi *file1.resx* e *file2.resx*, entrambi con voci di metadati per `MyMetadata`. La raccolta di elementi `MySourceItems` rimane invariata.
+ Al termine dell'esecuzione dell'attività, la raccolta di elementi `MySourceItemsWithMetadata` contiene gli elementi *file1.resx* e *file2.resx* , entrambi con voci di metadati per `MyMetadata`. La raccolta di elementi `MySourceItems` rimane invariata.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

@@ -1,5 +1,7 @@
 ---
 title: Attività Delete | Microsoft Docs
+description: Informazioni sui parametri e le considerazioni per l'uso dell'attività di eliminazione MSBuild per eliminare i file specificati.
+ms.custom: SEO-VS-2020
 ms.date: 06/11/2020
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eddb9804378a4c32de9d1b68f952bc715f32ffd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41d5312434f87d75db80095ff01734cd37894a94
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288910"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796485"
 ---
 # <a name="delete-task"></a>Delete (attività)
 
@@ -39,7 +41,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `Delete` .
 |`Files`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file da eliminare.|
 |`TreatErrorsAsWarnings`|Parametro `Boolean` facoltativo<br /><br /> Se `true`, gli errori vengono registrati come avvisi. Il valore predefinito è `false`.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
