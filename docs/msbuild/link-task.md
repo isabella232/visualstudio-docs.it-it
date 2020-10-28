@@ -1,5 +1,7 @@
 ---
 title: Attività Link | Microsoft Docs
+description: Informazioni su come MSBuild utilizza l'attività di collegamento per eseguire il wrapping dello strumento linker di Microsoft C++, link.exe, che collega i file oggetto e le librerie COFF.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -30,20 +32,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01105e3fd4c86d57077df7804e66592e32ebae07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 160d4fa3a1058e0cb81e5d25720d9194d90fdc39
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78865349"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904055"
 ---
 # <a name="link-task"></a>Link (attività)
 
-Esegue il wrapping dello strumento linker di Microsoft C++ *link.exe*. Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione *exe*) o una libreria di collegamento dinamico (DLL). Per ulteriori informazioni, vedere [Opzioni del linker](/cpp/build/reference/linker-options) e [utilizzare MSBuild dalla riga di comando](/cpp/build/msbuild-visual-cpp) e [utilizzare il set di strumenti di Microsoft C++ dalla riga di comando](/cpp/build/building-on-the-command-line).
+Esegue il wrapping dello strumento linker di Microsoft C++ *link.exe* . Lo strumento linker consente di collegare file in formato COFF (Common Object File Format ) e librerie per creare un file eseguibile (con estensione *exe* ) o una libreria di collegamento dinamico (DLL). Per ulteriori informazioni, vedere [Opzioni del linker](/cpp/build/reference/linker-options) e [utilizzare MSBuild dalla riga di comando](/cpp/build/msbuild-visual-cpp) e [utilizzare il set di strumenti di Microsoft C++ dalla riga di comando](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>Parametri
 
- Di seguito vengono descritti i parametri dell'attività **Link**. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.
+ Di seguito vengono descritti i parametri dell'attività **Link** . La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.
 
 - **AdditionalDependencies**
 
@@ -73,7 +75,7 @@ Esegue il wrapping dello strumento linker di Microsoft C++ *link.exe*. Lo strume
 
   Parametro **stringa** facoltativo.
 
-  Un elenco di opzioni del linker come specificato nella riga di comando. Ad esempio,/ \<option1>  / \<option2>  / \<option#> . Usare questo parametro per specificare le opzioni del linker che non sono rappresentate da altri parametri dell'attività **Link**.
+  Un elenco di opzioni del linker come specificato nella riga di comando. Ad esempio,/ \<option1>  / \<option2>  / \<option#> . Usare questo parametro per specificare le opzioni del linker che non sono rappresentate da altri parametri dell'attività **Link** .
 
   Per altre informazioni, vedere [Opzioni del linker](/cpp/build/reference/linker-options).
 
@@ -97,7 +99,7 @@ Esegue il wrapping dello strumento linker di Microsoft C++ *link.exe*. Lo strume
 
   Parametro **booleano** facoltativo.
 
-  Se `true`, crea l'attributo **DebuggableAttribute** con il rilevamento delle informazioni di debug e disabilita le ottimizzazioni JIT. Se `false`, crea l'attributo **DebuggableAttribute**, ma disabilita il rilevamento delle informazioni di debug e abilita le ottimizzazioni JIT.
+  Se `true`, crea l'attributo **DebuggableAttribute** con il rilevamento delle informazioni di debug e disabilita le ottimizzazioni JIT. Se `false`, crea l'attributo **DebuggableAttribute** , ma disabilita il rilevamento delle informazioni di debug e abilita le ottimizzazioni JIT.
 
   Per altre informazioni, vedere [/ASSEMBLYDEBUG (Aggiunge DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
@@ -219,7 +221,7 @@ Esegue il wrapping dello strumento linker di Microsoft C++ *link.exe*. Lo strume
 
   Parametro **String []** facoltativo.
 
-  Questo parametro fa in modo che le DLL vengano *caricate in ritardo*. Specificare il nome di una DLL di cui ritardare il caricamento.
+  Questo parametro fa in modo che le DLL vengano *caricate in ritardo* . Specificare il nome di una DLL di cui ritardare il caricamento.
 
   Per altre informazioni, vedere [/DELAYLOAD (importazione a caricamento ritardato)](/cpp/build/reference/delayload-delay-load-import).
 
@@ -253,7 +255,7 @@ Esegue il wrapping dello strumento linker di Microsoft C++ *link.exe*. Lo strume
 
   Parametro **String []** facoltativo.
 
-  Incorpora un file di risorse in un assembly. Specificare il nome file di risorse necessario. Facoltativamente, specificare il nome logico, che viene usato per caricare la risorsa, e l'opzione **PRIVATE**, che indica nel manifesto dell'assembly che il file di risorse è privato.
+  Incorpora un file di risorse in un assembly. Specificare il nome file di risorse necessario. Facoltativamente, specificare il nome logico, che viene usato per caricare la risorsa, e l'opzione **PRIVATE** , che indica nel manifesto dell'assembly che il file di risorse è privato.
 
   Per altre informazioni, vedere [/ASSEMBLYRESOURCE (incorpora una risorsa gestita)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).
 
@@ -341,7 +343,7 @@ Esegue il wrapping dello strumento linker di Microsoft C++ *link.exe*. Lo strume
 
   Parametro **booleano** facoltativo.
 
-  Se `true`, crea un *file di mappa*. L'estensione del nome file del file di mappa è *. map*.
+  Se `true`, crea un *file di mappa* . L'estensione del nome file del file di mappa è *. map* .
 
   Per ulteriori informazioni, vedere [/Map (genera file map)](/cpp/build/reference/map-generate-mapfile).
 
@@ -351,7 +353,7 @@ Esegue il wrapping dello strumento linker di Microsoft C++ *link.exe*. Lo strume
 
   Specifica la quantità di memoria fisica nellheap da allocare alla volta.
 
-  Per ulteriori informazioni, vedere l' `commit` argomento in [/heap (Set Heap Size)](/cpp/build/reference/heap-set-heap-size). Vedere anche il parametro **HeapReserveSize**.
+  Per ulteriori informazioni, vedere l' `commit` argomento in [/heap (Set Heap Size)](/cpp/build/reference/heap-set-heap-size). Vedere anche il parametro **HeapReserveSize** .
 
 - **HeapReserveSize**
 
@@ -373,7 +375,7 @@ Esegue il wrapping dello strumento linker di Microsoft C++ *link.exe*. Lo strume
 
   Parametro **booleano** facoltativo.
 
-  Se `true`, specifica che gli eventuali attributi IDL presenti nel codice sorgente non devono essere elaborati in un file con estensione *idl*.
+  Se `true`, specifica che gli eventuali attributi IDL presenti nel codice sorgente non devono essere elaborati in un file con estensione *idl* .
 
   Per altre informazioni, vedere [/IGNOREIDL (non elabora gli attributi in MIDL)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).
 
@@ -421,7 +423,7 @@ Esegue il wrapping dello strumento linker di Microsoft C++ *link.exe*. Lo strume
 
   Specifica un file che contiene la chiave per un assembly firmato.
 
-  Per altre informazioni, vedere [/keyfile (specifica la chiave o la coppia di chiavi per firmare un assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Vedere anche il parametro **KeyContainer**.
+  Per altre informazioni, vedere [/keyfile (specifica la chiave o la coppia di chiavi per firmare un assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Vedere anche il parametro **KeyContainer** .
 
 - **LargeAddressAware**
 
@@ -529,7 +531,7 @@ Esegue il wrapping dello strumento linker di Microsoft C++ *link.exe*. Lo strume
 
   Parametro **stringa** facoltativo.
 
-  Specifica il nome file e l'estensione di file del file *IDL*.
+  Specifica il nome file e l'estensione di file del file *IDL* .
 
   Per altre informazioni, vedere [/IDLOUT (assegnare un nome ai file di output MIDL)](/cpp/build/reference/idlout-name-midl-output-files).
 
@@ -605,7 +607,7 @@ Esegue il wrapping dello strumento linker di Microsoft C++ *link.exe*. Lo strume
 
   Parametro **booleano** facoltativo.
 
-  Se `true` e se l'opzione Registra output è abilitata, forza il reindirizzamento su **HKEY_CURRENT_USER** delle scritture del Registro di sistema in **HKEY_CLASSES_ROOT**.
+  Se `true` e se l'opzione Registra output è abilitata, forza il reindirizzamento su **HKEY_CURRENT_USER** delle scritture del Registro di sistema in **HKEY_CLASSES_ROOT** .
 
 - **PreprocessOutput**
 
@@ -625,7 +627,7 @@ Esegue il wrapping dello strumento linker di Microsoft C++ *link.exe*. Lo strume
 
   Parametro **booleano** facoltativo.
 
-  Se `true`, produce un file di output che può essere usato con il profiler di **strumenti per le prestazioni**.
+  Se `true`, produce un file di output che può essere usato con il profiler di **strumenti per le prestazioni** .
 
   Per altre informazioni, vedere [/PROFILE (profiler strumenti di prestazioni)](/cpp/build/reference/profile-performance-tools-profiler).
 
@@ -671,7 +673,7 @@ Esegue il wrapping dello strumento linker di Microsoft C++ *link.exe*. Lo strume
 
   Parametro **booleano** facoltativo.
 
-  Se `true`, imposta il checksum nell'intestazione di un file *EXE*.
+  Se `true`, imposta il checksum nell'intestazione di un file *EXE* .
 
   Per ulteriori informazioni, vedere [/Release (set the checksum)](/cpp/build/reference/release-set-the-checksum).
 
@@ -797,7 +799,7 @@ Esegue il wrapping dello strumento linker di Microsoft C++ *link.exe*. Lo strume
 
   Se `true`, indica al sistema operativo di copiare prima di tutto l'output del linker in un file di scambio per poi eseguire l'immagine da tale posizione.
 
-  Per ulteriori informazioni, vedere l' `CD` argomento di [/SWAPRUN (caricamento dell'output del linker nel file di scambio)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Vedere anche il parametro **SwapRunFromNET**.
+  Per ulteriori informazioni, vedere l' `CD` argomento di [/SWAPRUN (caricamento dell'output del linker nel file di scambio)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Vedere anche il parametro **SwapRunFromNET** .
 
 - **SwapRunFromNET**
 
@@ -921,7 +923,7 @@ Esegue il wrapping dello strumento linker di Microsoft C++ *link.exe*. Lo strume
 
   Parametro **stringa** facoltativo.
 
-  Inserire un numero di versione nell'intestazione del file *DLL* o *EXE*. Specificare "`major[.minor]`". Gli argomenti `major` e `minor` sono numeri decimali compresi tra 0 e 65535.
+  Inserire un numero di versione nell'intestazione del file *DLL* o *EXE* . Specificare "`major[.minor]`". Gli argomenti `major` e `minor` sono numeri decimali compresi tra 0 e 65535.
 
   Per ulteriori informazioni, vedere [/Version (informazioni sulla versione)](/cpp/build/reference/version-version-information).
 

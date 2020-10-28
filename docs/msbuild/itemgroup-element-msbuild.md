@@ -1,5 +1,7 @@
 ---
 title: Elemento ItemGroup (MSBuild) | Microsoft Docs
+description: Informazioni sull'elemento ItemGroup di MSBuild, che contiene un set di elementi elemento definiti dall'utente. Ogni elemento deve essere un elemento figlio di un ItemGroup.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a62b4df06d1c180a6a6d62b0231dce1136fb8059
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f4397415e684b9603dd662e409590e88e86034b
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288975"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903624"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
 
@@ -46,7 +48,7 @@ Contiene un set di elementi [Item](../msbuild/item-element-msbuild.md) definiti 
 
 Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -57,7 +59,7 @@ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gl
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento](../msbuild/item-element-msbuild.md)|Definisce gli input per il processo di compilazione. Possono esistere zero o più elementi `Item` in un `ItemGroup`.|
+|[Item](../msbuild/item-element-msbuild.md)|Definisce gli input per il processo di compilazione. Possono esistere zero o più elementi `Item` in un `ItemGroup`.|
 
 ### <a name="parent-elements"></a>Elementi padre
 

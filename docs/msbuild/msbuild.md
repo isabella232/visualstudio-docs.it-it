@@ -1,5 +1,7 @@
 ---
 title: MSBuild | Microsoft Docs
+description: Informazioni sul modo in cui la piattaforma Microsoft Build Engine (MSBuild) fornisce un file di progetto con un XML Schema per controllare le compilazioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e9f4614967f1307bc1faaaaba12a2dde1e8cad0
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: d7e42452d8ee59142c4f906d928378d1fb44bf67
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099271"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904514"
 ---
 # <a name="msbuild"></a>MSBuild
 
 Il Microsoft Build Engine è una piattaforma per la compilazione di applicazioni. Questo motore, anche noto come MSBuild, fornisce un XML Schema per un file di progetto che controlla il modo in cui la piattaforma di compilazione elabora e compila il software. Visual Studio USA MSBuild, ma MSBuild non dipende da Visual Studio. Richiamando *msbuild.exe* nel progetto o nel file della soluzione, è possibile orchestrare e compilare prodotti in ambienti in cui Visual Studio non è installato.
 
- Visual Studio utilizza MSBuild per caricare e compilare progetti gestiti. I file di progetto in Visual Studio (con estensione *csproj*, *vbproj*, *vcxproj* e altre) contengono il codice XML di MSBuild che viene eseguito quando si compila un progetto usando l'IDE. I progetti di Visual Studio importano tutte le impostazioni e tutti i processi di compilazione necessari per eseguire il normale lavoro di sviluppo standard, ma è possibile estenderli o modificarli in Visual Studio o mediante un editor XML.
+ Visual Studio utilizza MSBuild per caricare e compilare progetti gestiti. I file di progetto in Visual Studio (con estensione *csproj* , *vbproj* , *vcxproj* e altre) contengono il codice XML di MSBuild che viene eseguito quando si compila un progetto usando l'IDE. I progetti di Visual Studio importano tutte le impostazioni e tutti i processi di compilazione necessari per eseguire il normale lavoro di sviluppo standard, ma è possibile estenderli o modificarli in Visual Studio o mediante un editor XML.
 
  Per informazioni su MSBuild per C++, vedere [MSBuild (c++)](/cpp/build/msbuild-visual-cpp).
 
@@ -53,7 +55,7 @@ Questo articolo fornisce una panoramica di MSBuild. Per un'esercitazione introdu
 
 ## <a name="use-msbuild-at-a-command-prompt"></a>Uso di MSBuild al prompt dei comandi
 
- Per eseguire MSBuild al prompt dei comandi, passare un file di progetto a *MSBuild.exe*, insieme alle opzioni appropriate della riga di comando. Le opzioni della riga di comando consentono di impostare proprietà, eseguire destinazioni specifiche e impostare altre opzioni che controllano il processo di compilazione. Ad esempio, per compilare il file *MyProj.proj* con la proprietà `Configuration` impostata su `Debug` si usa la sintassi della riga di comando seguente.
+ Per eseguire MSBuild al prompt dei comandi, passare un file di progetto a *MSBuild.exe* , insieme alle opzioni appropriate della riga di comando. Le opzioni della riga di comando consentono di impostare proprietà, eseguire destinazioni specifiche e impostare altre opzioni che controllano il processo di compilazione. Ad esempio, per compilare il file *MyProj.proj* con la proprietà `Configuration` impostata su `Debug` si usa la sintassi della riga di comando seguente.
 
 ```cmd
 MSBuild.exe MyProj.proj -property:Configuration=Debug
@@ -168,7 +170,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 - È possibile definire Framework di destinazione diversi da .NET Framework, ad esempio, Silverlight.
 
-- L'applicazione può essere destinata a un *profilo del framework*, vale a dire un subset predefinito di un framework di destinazione.
+- L'applicazione può essere destinata a un *profilo del framework* , vale a dire un subset predefinito di un framework di destinazione.
 
 - Se viene rilasciata una Service Pack per la versione corrente di .NET Framework, è possibile impostarla come destinazione.
 
@@ -176,7 +178,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 Per altre informazioni, vedere [Multitargeting](../msbuild/msbuild-multitargeting-overview.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 | Titolo | Descrizione |
 | - | - |

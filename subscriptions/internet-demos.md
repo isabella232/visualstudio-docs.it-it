@@ -1,18 +1,18 @@
 ---
-title: Uso di codici Product Key per supportare demo Internet tramite Servizi terminal | Microsoft Docs
+title: Demo Internet tramite Servizi terminal nelle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
-ms.date: 09/08/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Informazioni sull'uso di codici Product Key per supportare dimostrazioni via Internet tramite Servizi terminal e abilitare l'accesso tramite Servizi Desktop remoto
-ms.openlocfilehash: 428ccdb86ca93bbafa07dcf847e017b88183928f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 9a63436e38779a51ba414969b36a2bb166e6cab9
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005329"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904615"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Dimostrazioni via Internet tramite Servizi terminal
 Con una sottoscrizione di Visual Studio è possibile offrire agli utenti finali l'accesso a dimostrazioni via Internet dei programmi tramite Servizi terminal (Windows Server 2003 o Windows Server 2008) o Servizi Desktop remoto (Windows Server 2008 R2 e versioni successive). In questo modo fino a 200 utenti anonimi potranno accedere contemporaneamente alla dimostrazione. La dimostrazione non deve contenere dati di produzione. I sottoscrittori di Visual Studio saranno autorizzati a illustrare le proprie applicazioni agli utenti finali. Questa dimostrazione via Internet mediante Servizi terminal (TS) e Servizi Desktop remoto (RDS) rappresenta l'unico scenario in cui gli utenti finali sprovvisti di sottoscrizione di Visual Studio potranno interagire con l'applicazione demo, mentre il software è concesso in licenza tramite sottoscrizione di Visual Studio.

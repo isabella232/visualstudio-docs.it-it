@@ -1,5 +1,7 @@
 ---
 title: Metadati degli elementi nella suddivisione in batch delle destinazioni | Microsoft Docs
+description: Informazioni sul modo in cui MSBuild usa i metadati degli elementi nel batch di destinazione per eseguire l'analisi delle dipendenze degli input e degli output di una destinazione di compilazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5d0c9dec280633d0a39573581c083e6ddd4d8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0436402aa4000841a278497af697985c3a50c812
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633668"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904605"
 ---
 # <a name="item-metadata-in-target-batching"></a>Metadati degli elementi nella suddivisione in batch delle destinazioni
 

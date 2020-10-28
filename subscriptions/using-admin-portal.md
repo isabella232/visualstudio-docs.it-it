@@ -1,18 +1,18 @@
 ---
-title: Introduzione al portale di amministrazione delle sottoscrizioni | Visual Studio Marketplace
+title: Introduzione al portale di amministrazione delle sottoscrizioni di Visual Studio | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
-ms.date: 09/03/2020
+ms.date: 10/28/2020
 ms.topic: overview
 description: Informazioni su come iniziare a gestire le sottoscrizioni di Visual Studio dell'organizzazione con il portale di amministrazione delle sottoscrizioni.
-ms.openlocfilehash: 8ed9a0b2ed7b9230a245493a2998fa1ca42cae53
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a9e23208bea480167452711442b52fb84b2bd8ee
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353304"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904549"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Panoramica del portale di amministrazione delle sottoscrizioni di Visual Studio
 
@@ -66,7 +66,7 @@ Per ulteriori informazioni sul contratto visualizzato, selezionare la seconda ic
 - [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-Altre informazioni sulle responsabilità degli amministratori:
+Altre informazioni sulle responsabilità per gli amministratori:
 - [Panoramica delle responsabilità degli amministratori](admin-responsibilities.md)
 - [Inventario dell'ambiente di preproduzione](admin-inventory.md)
 - [Gestire team di grandi dimensioni e collaboratori esterni](manage-teams.md)

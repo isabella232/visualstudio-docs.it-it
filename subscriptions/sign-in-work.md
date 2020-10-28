@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
-ms.date: 09/08/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: Informazioni su come accedere alle sottoscrizioni di Visual Studio con l'account aziendale o dell'istituto di istruzione.
-ms.openlocfilehash: 96b111c47e753b343d59c89e65f71eaa90132f6f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 3ac4e9fedae66656d4dee2155c8a8dcbe9325970
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005807"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903383"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Accesso alle sottoscrizioni di Visual Studio con l'account aziendale o dell'istituto di istruzione 
 
@@ -28,7 +28,7 @@ Questo articolo illustra la procedura per l'accesso con un indirizzo di posta el
    > [!NOTE]
    > Questo indirizzo viene anche indicato nel messaggio di posta elettronica di benvenuto al sottoscrittore ricevuto. In caso di problemi a individuare il messaggio di benvenuto, controllare le cartelle della posta indesiderata.
 
-3. Fare clic su **Continua**.
+3. Fare clic su **Continua** .
 4. Si verrà reindirizzati alla pagina di accesso aziendale.
 5. Immettere la password.
 6. Fare clic su **Accedi**
@@ -46,7 +46,7 @@ Questo articolo illustra la procedura per l'accesso con un indirizzo di posta el
    > [!NOTE]
    > Questo indirizzo è anche indicato nella Lettera di benvenuto al sottoscrittore. Se la Lettera di benvenuto non è stata ricevuta, controllare nelle cartelle di posta indesiderata.
 
-3. Fare clic su **Continua**.
+3. Fare clic su **Continua** .
 4. Si verrà reindirizzati a una pagina di decisione.
     - Selezionare **Account aziendale o dell'istituto di istruzione** se la sottoscrizione è associata a un account aziendale o dell'istituto di istruzione associato a un tenant di Azure Active Directory (AAD).
     - Selezionare **personale** se la sottoscrizione è associata a un indirizzo di posta elettronica "aziendale", ma è stata anche convertita in un account Microsoft "personale" (MSA).
@@ -54,10 +54,10 @@ Questo articolo illustra la procedura per l'accesso con un indirizzo di posta el
         > [!NOTE]
         > Ciò sarà vero per molti sottoscrittori che hanno usato sottoscrizioni di Visual Studio (in precedenza MSDN) in passato.
 
-    - Se un percorso non riesce, provare l'altro.  Gli amministratori delle sottoscrizioni potrebbero aver modificato la sottoscrizione.
+    - Se un percorso non riesce, provare l'altro.  È possibile che gli amministratori della sottoscrizione abbiano modificato la sottoscrizione.
 
 5. Immettere la password.
-6. Fare clic su **Accedi**.
+6. Fare clic su **Accedi** .
 7. A questo punto, dovrebbe essere visualizzata la pagina "Vantaggi".
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti

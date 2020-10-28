@@ -1,5 +1,7 @@
 ---
 title: Elemento Import (MSBuild) | Microsoft Docs
+description: Informazioni su come MSBuild usa l'elemento Import per importare il contenuto di un file di progetto in un altro file di progetto.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9e66934015c7c4a57c7d7c6911b9ebe02ac536
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5a5650402655f4a5a2a0388ac0e57a0b903bc2e
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094484"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903951"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 
@@ -43,7 +45,7 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -53,7 +55,7 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
 
 ### <a name="child-elements"></a>Elementi figlio
 
- Nessuno
+ nessuno
 
 ### <a name="parent-elements"></a>Elementi padre
 

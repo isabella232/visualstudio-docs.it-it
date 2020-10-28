@@ -1,5 +1,7 @@
 ---
 title: Elemento ItemMetadata (MSBuild) | Microsoft Docs
+description: Informazioni sull'elemento ItemMetadata di MSBuild, che contiene una chiave di metadati dell'elemento definita dall'utente che ha il valore dei metadati.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aba274068d8cba4f22526fdefac36d6c75f9f1e2
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633616"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903588"
 ---
 # <a name="itemmetadata-element-msbuild"></a>Elemento ItemMetadata (MSBuild)
 
@@ -54,7 +56,7 @@ Contiene una chiave dei metadati di elemento definita dall'utente che contiene i
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|[Elemento](../msbuild/item-element-msbuild.md)|Elemento definito dall'utente che definisce gli input per il processo di compilazione.|
+|[Item](../msbuild/item-element-msbuild.md)|Elemento definito dall'utente che definisce gli input per il processo di compilazione.|
 
 ## <a name="text-value"></a>Valore di testo
 

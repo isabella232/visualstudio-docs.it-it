@@ -6,23 +6,23 @@ manager: cabuschl
 ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
 ms.date: 09/21/2020
 ms.topic: how-to
-description: Informazioni su come gli amministratori possono individuare singoli sottoscrittori o gruppi nel portale di amministrazione.
-ms.openlocfilehash: 341f8e9739b629330775ff8688c5fdf872165e3a
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+description: Informazioni su come gli amministratori possono individuare i singoli sottoscrittori o i gruppi nel portale di amministrazione.
+ms.openlocfilehash: e1fd5ea959043cbea58d0eb9a14649044f5d556e
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022236"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904537"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Cercare e filtrare i sottoscrittori nelle sottoscrizioni di Visual Studio
 Portale di amministrazione delle sottoscrizioni di Visual Studio consente di trovare un sottoinsieme specifico di sottoscrittori in base a diversi criteri. È possibile applicare un filtro all'elenco di sottoscrittori per nome, indirizzo di posta elettronica, livello di sottoscrizione e altre informazioni.
 
 ## <a name="to-filter-the-subscriber-list"></a>Per filtrare l'elenco di sottoscrittori
-1. Per cercare uno specifico gruppo di sottoscrittori, selezionare la scheda **Filtro**.
+1. Per cercare uno specifico gruppo di sottoscrittori, selezionare la scheda **Filtro** .
    > [!div class="mx-imgBorder"]
    > ![Selezionare il filtro per cercare un elenco di sottoscrittori](_img/search-filter/filter-list.png "Fare clic su filtro per immettere i criteri per limitare le sottoscrizioni visualizzate.")
 
-2. Inserire i criteri da usare come base per la ricerca e quindi selezionare nuovamente **Filtro**.
+2. Inserire i criteri da usare come base per la ricerca e quindi selezionare nuovamente **Filtro** .
    > [!div class="mx-imgBorder"]
    > ![Usare i campi disponibili per filtrare i dati del sottoscrittore](media/filter-subscribers.png "Immettere i valori nei vari campi per limitare i risultati della ricerca. È possibile, ad esempio, cercare "@contoso. com" per restituire un elenco di tutti i sottoscrittori con indirizzi di posta elettronica @contoso. com.")
 

@@ -1,5 +1,7 @@
 ---
 title: Concetti avanzati relativi a MSBuild | Microsoft Docs
+description: Vedere collegamenti ad articoli che descrivono come usare le tecniche avanzate per migliorare le compilazioni eseguite tramite MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d3267e0c96747a9534f390191e9f8a84effdb8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58974778be615f2b0455f5b65a1c392035265425
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289287"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903476"
 ---
 # <a name="msbuild-advanced-concepts"></a>Concetti avanzati relativi a MSBuild
 

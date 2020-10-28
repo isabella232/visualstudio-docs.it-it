@@ -1,21 +1,21 @@
 ---
-title: Modificare sottoscrizioni nel portale di amministrazione | Microsoft Docs
+title: Modificare le sottoscrizioni di Visual Studio nel portale di amministrazione | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 09/21/2020
 ms.topic: how-to
-description: Informazioni su come gli amministratori possono modificare le assegnazioni di sottoscrizione.
-ms.openlocfilehash: 060ae7c7679eb1bf9dc4da99ea9a1bf952ebc58b
-ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
+description: Informazioni su come gli amministratori possono modificare le assegnazioni delle sottoscrizioni.
+ms.openlocfilehash: d10e9ee779c6fc37c886bb1b5e00e15913bab7e2
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91022545"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904170"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Modificare assegnazioni di sottoscrizioni di Visual Studio
-L'amministratore delle sottoscrizioni può modificare le sottoscrizioni assegnate a utenti all'interno dell'organizzazione.  Questo articolo presenta il tipo di modifiche che è possibile apportare, insieme ai passaggi necessari.
+In qualità di amministratore della sottoscrizione, è possibile apportare modifiche alle sottoscrizioni assegnate a singoli utenti all'interno dell'organizzazione.  Questo articolo presenta il tipo di modifiche che è possibile apportare, insieme ai passaggi necessari.
 
    > [!NOTE]
    > Se è necessario modificare i dettagli della sottoscrizione per un Sottoscrittore assegnato tramite un gruppo di Azure Active Directory, sarà necessario rimuoverli dal gruppo e aggiungerli singolarmente nel portale di amministrazione.  
@@ -27,7 +27,7 @@ Per modificare un sottoscrittore, selezionare i puntini di sospensione (…) che
 > [!div class="mx-imgBorder"]
 > ![Selezionare un sottoscrittore da modificare](_img/edit-license/select-subscriber.png "Fare clic sui puntini di sospensione e scegliere modifica.")
 
-È possibile aggiornare il nome, il cognome, il livello di sottoscrizione, l'indirizzo di posta elettronica, il paese, la lingua, i download e il campo di riferimento del Sottoscrittore Modificare le informazioni del Sottoscrittore e fare clic su **Salva**.
+È possibile aggiornare il nome, il cognome, il livello di sottoscrizione, l'indirizzo di posta elettronica, il paese, la lingua, i download e il campo di riferimento del Sottoscrittore Modificare le informazioni del Sottoscrittore e fare clic su **Salva** .
 
 ## <a name="edit-multiple-subscribers-using-bulk-edit"></a>Modificare più sottoscrittori usando la modifica di massa
 
@@ -42,7 +42,7 @@ Guardare questo video o leggere per informazioni su come modificare più Sottosc
    > [!IMPORTANT]
    > I livelli di sottoscrizione (ad esempio Enterprise, Professional e così via) e i GUID della sottoscrizione non possono essere modificati tramite la modifica bulk.  Se è necessario assegnare GUID di sottoscrizione specifici agli utenti, usare il processo per l'aggiunta di utenti scegliendo l'ID sottoscrizione. Se si tenta di eseguire un caricamento con questi elementi modificati nel modello di modifica bulk, il caricamento avrà esito negativo.
 
-1. Per modificare contemporaneamente più sottoscrittori, passare alla scheda sottoscrittori. Nella parte superiore della barra multifunzione fare clic su **modifica in blocco**.
+1. Per modificare contemporaneamente più sottoscrittori, passare alla scheda sottoscrittori. Nella parte superiore della barra multifunzione fare clic su **modifica in blocco** .
 
 2. La procedura di Modifiche di massa usa un modello di Excel per apportare modifiche a informazioni relative al sottoscrittore. Nella casella Modifiche di massa, fare clic su **Esporta in Excel** per scaricare l'elenco corrente di sottoscrittori, incluse tutte le relative informazioni.
    > [!div class="mx-imgBorder"]
@@ -50,7 +50,7 @@ Guardare questo video o leggere per informazioni su come modificare più Sottosc
 
 3. Successivamente, salvare il file in locale in modo che sia più facile trovarlo e apportare le modifiche necessarie prima di caricarlo. Per assicurarsi che il caricamento venga eseguito correttamente, **non modificare il livello di sottoscrizione o il GUID della sottoscrizione** nel file di modifica bulk. in questo modo, il caricamento avrà esito negativo.
 
-4. Tornare al portale di amministrazione delle sottoscrizioni di Visual Studio e nella finestra di dialogo Modifiche in blocco, fare clic su **Sfoglia**. Selezionare il file di Excel salvato e fare clic su **OK**. Lo stato di avanzamento del caricamento verrà visualizzato sullo schermo.
+4. Tornare al portale di amministrazione delle sottoscrizioni di Visual Studio e nella finestra di dialogo Modifiche in blocco, fare clic su **Sfoglia** . Selezionare il file di Excel salvato e fare clic su **OK** . Lo stato di avanzamento del caricamento verrà visualizzato sullo schermo.
    > [!div class="mx-imgBorder"]
    > ![Modifica di una licenza - Caricamento file delle modifiche di massa](_img/edit-license/edit-license-bulk-file-upload1.png "Passare al percorso del file di Excel completato, selezionarlo e fare clic su OK.")
 

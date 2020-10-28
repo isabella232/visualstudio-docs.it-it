@@ -1,18 +1,18 @@
 ---
-title: Esportare informazioni sulle sottoscrizioni | Microsoft Docs
+title: Esportare le informazioni sulla sottoscrizione nelle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
-ms.date: 03/03/2020
+ms.date: 10/26/2020
 ms.topic: conceptual
 description: Informazioni su come esportare un elenco di sottoscrittori e i dettagli delle assegnazioni delle sottoscrizioni.
-ms.openlocfilehash: 65d78625c0536b21b764a595590c7c260aa3b0a8
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 33482dbe517fd34efb9a165bc5c868e20be0d1d7
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005574"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904141"
 ---
 # <a name="export-subscription-information"></a>Esportare le informazioni sulla sottoscrizione
 Nel [portale di amministrazione](https://manage.visualstudio.com)delle sottoscrizioni di Visual Studio è possibile esportare un elenco di sottoscrittori e informazioni dettagliate sulle relative assegnazioni. Queste informazioni includono nome, indirizzo di posta elettronica, indirizzo di posta elettronica alternativo, livello della sottoscrizione, data di assegnazione, stato di attivazione, data di scadenza, campo di riferimento, abilitazione o meno dei download, paese, lingua, stato della sottoscrizione e GUID della sottoscrizione.  L'elenco viene esportato come file CSV che può essere facilmente aperto in Microsoft Excel per la creazione di grafici, pivot e altri artefatti.

@@ -1,5 +1,7 @@
 ---
 title: Attività Move | Microsoft Docs
+description: Informazioni sui parametri e le impostazioni per l'attività di spostamento di MSBuild, che consente di spostare i file in nuovi percorsi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05b9f83fa7c80769ea3c584e2885c8fb1db24176
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8714108f7c537d9a50fda453050a54802f14e335
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633460"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903557"
 ---
 # <a name="move-task"></a>Move (attività)
 

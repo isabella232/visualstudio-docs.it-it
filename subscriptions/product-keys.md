@@ -1,18 +1,18 @@
 ---
-title: Uso di codici Product Key | Microsoft Docs
+title: Uso di codici Product Key nelle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 09/18/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Informazioni su come ottenere e gestire i codici Product Key in sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 389a57fb2e8fe0ea6ee81ee163fed052c441c209
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a5da818a059709d311b87572f71b78a51dbb7deb
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005846"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903997"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso di codici Product Key in sottoscrizioni di Visual Studio
 
@@ -33,7 +33,7 @@ Se sono stati richiesti tutti i codici Product Key aggiuntivi disponibili e sono
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>Versioni di prodotti per attivazione singola e per contratti multilicenza
 Le sottoscrizioni di Visual Studio offrono una selezione di versioni di prodotti Microsoft per attivazione singola o per contratti multilicenza. Determinati prodotti vengono resi disponibili in Download solo nella versione per attivazione singola o solo nella versione per contratti multilicenza. Alcuni di essi, tuttavia, sono disponibili in entrambe le versioni. I prodotti che richiedono attivazione, come Windows, Windows Server e i prodotti client di Office, vengono generalmente offerti solo nella versione per attivazione singola tramite Download.
 
-I clienti con contratti multilicenza possono anche scaricare prodotti software dal Volume Licensing Service Center per ottenere versioni di prodotti con contratti multilicenza e i relativi codici Product Key.  L'accesso al Centro servizi per contratti multilicenza è gestito da amministratori designati all'interno dell'organizzazione del cliente.
+I clienti con contratti multilicenza possono anche scaricare prodotti software dal Volume Licensing Service Center per ottenere versioni di prodotti con contratti multilicenza e i relativi codici Product Key.  L'accesso a VLSC è gestito da amministratori designati all'interno dell'organizzazione del cliente.
 
 ## <a name="daily-product-key-claim-limits"></a>Limiti giornalieri per le richieste di codici Product Key
 Microsoft si impegna a proteggere l'integrità del programma di sottoscrizione di Visual Studio, nonché il valore del software e dei vantaggi che i sottoscrittori legittimi del programma ricevono dopo l'acquisto. Per supportare tale impegno, Microsoft ha implementato limiti giornalieri per le richieste di codici per le sottoscrizioni di Visual Studio. I limiti giornalieri impongono restrizioni al numero di codici che è possibile richiedere in un giorno per singola sottoscrizione.

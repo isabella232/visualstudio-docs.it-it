@@ -1,18 +1,18 @@
 ---
 title: Offerta Azure Enterprise Agreement DevTest
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
-ms.date: 02/23/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 description: Scopri come sfruttare i prezzi speciali di Azure DevTest disponibili per i clienti con contratti Enterprise
-ms.openlocfilehash: 70f7b9877dcc973d2f649eb0cad53599ff6023f3
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a4da6356c250b3c07cb19fb8bf4c5e260e9d3e29
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005740"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904457"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Offerta Azure Enterprise Agreement DevTest
 
@@ -32,14 +32,14 @@ Per abilitare le offerte:
 0. Passare il puntatore del mouse sul nome dell'account. 
 0. Fare clic sull'icona di **modifica** (matita) all'estrema destra. 
 0. Fare clic sulla casella di **controllo sviluppo/test** .
-0. Fare clic su **Salva**.
+0. Fare clic su **Salva** .
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>Creare singole sottoscrizioni all'interno dell'account
 Ogni sottoscrittore dell'account può creare una sottoscrizione attenendosi alla procedura seguente:
 1. Accedere a [https://account.windowsazure.com/signup?showCatalogs=True](https://account.windowsazure.com/signup?showCatalogs=True).
 0. Scegliere l'offerta **sviluppo/test Enterprise** .
 0. Fare clic sulla casella di controllo per confermare che la sottoscrizione è regolata dal Enterprise Agreement. 
-0. Fare clic su **Acquista**.  (Con questa offerta, non si sta effettivamente acquistando nulla).
+0. Fare clic su **Acquista** .  (Con questa offerta, non si sta effettivamente acquistando nulla).
 
 ## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](/visualstudio/)

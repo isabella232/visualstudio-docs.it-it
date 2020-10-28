@@ -1,5 +1,7 @@
 ---
 title: Attività MIDL | Microsoft Docs
+description: Informazioni sull'attività MIDL di MSBuild, che esegue il wrapping dello strumento compilatore Microsoft Interface Definition Language (MIDL), midl.exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,20 +28,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a43975244eaf064c9ed7608fa41c16854ca140f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 884cecdcbdbef3320516dd67c43cedd72bc25076
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633473"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903858"
 ---
 # <a name="midl-task"></a>MIDL (attività)
 
-Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definition Language), *midl.exe*. Per altre informazioni, vedere [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).
+Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definition Language), *midl.exe* . Per altre informazioni, vedere [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).
 
 ## <a name="parameters"></a>Parametri
 
- Di seguito sono descritti i parametri dell'attività **MIDL**. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.
+ Di seguito sono descritti i parametri dell'attività **MIDL** . La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.
 
 - **AdditionalIncludeDirectories**
 
@@ -89,7 +91,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Valore|Opzione da riga di comando|
+    |valore|Opzione da riga di comando|
     |-----------|--------------------------|
     |**Signed**|**/char signed**|
     |**Unsigned**|**/char unsigned**|
@@ -113,9 +115,9 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Valore|Opzione da riga di comando|
+    |valore|Opzione da riga di comando|
     |-----------|--------------------------|
-    |**Nessuno**|**/error none**|
+    |**Nessuna**|**/error none**|
     |**EnableCustom**|**/Error**|
     |**Tutto**|**/error all**|
 
@@ -143,7 +145,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Se `true`, controlla che i valori di enumerazione siano compresi in un intervallo consentito.
 
-     Per altre informazioni, vedere l'opzione **/error enum** nella guida della riga di comando (**/?**) per *midl.exe*.
+     Per altre informazioni, vedere l'opzione **/error enum** nella guida della riga di comando ( **/?** ) per *midl.exe* .
 
 - **ErrorCheckRefPointers**
 
@@ -169,9 +171,9 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Valore|Opzione da riga di comando|
+    |valore|Opzione da riga di comando|
     |-----------|--------------------------|
-    |**Nessuno**|**/client none**|
+    |**Nessuna**|**/client none**|
     |**Stub**|**/client stub**|
 
      Per altre informazioni, vedere l'opzione **/client** in [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).
@@ -184,9 +186,9 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Valore|Opzione da riga di comando|
+    |valore|Opzione da riga di comando|
     |-----------|--------------------------|
-    |**Nessuno**|**/server none**|
+    |**Nessuna**|**/server none**|
     |**Stub**|**/server stub**|
 
      Per altre informazioni, vedere l'opzione **/server** in [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).
@@ -203,7 +205,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Parametro **booleano** facoltativo.
 
-     Se `true`, non viene generato un file di libreria dei tipi (file con estensione *tlb*).
+     Se `true`, non viene generato un file di libreria dei tipi (file con estensione *tlb* ).
 
      Per altre informazioni, vedere l'opzione **/notlb** in [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL).
 
@@ -235,7 +237,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Parametro **int** facoltativo.
 
-     Specifica l'*identificatore delle impostazioni locali* che consente l'uso di caratteri internazionali in file di input, nomi file e percorsi di directory. Specificare un identificatore delle impostazioni locali decimale.
+     Specifica l' *identificatore delle impostazioni locali* che consente l'uso di caratteri internazionali in file di input, nomi file e percorsi di directory. Specificare un identificatore delle impostazioni locali decimale.
 
      Per altre informazioni, vedere l'opzione **/lcid** in [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche [Identificatori delle impostazioni locali](/windows/desktop/intl/locale-identifiers).
 
@@ -259,7 +261,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Parametro **String []** facoltativo.
 
-     Specifica una o più *definizioni*, ovvero un nome e un valore facoltativo da passare al preprocessore C come in base alla direttiva `#define`. Il formato di ogni definizione è *nome[=valore]*.
+     Specifica una o più *definizioni* , ovvero un nome e un valore facoltativo da passare al preprocessore C come in base alla direttiva `#define`. Il formato di ogni definizione è *nome[=valore]* .
 
      Per altre informazioni, vedere l'opzione **/D** in [MIDL command-line reference](/windows/desktop/Midl/midl-command-line-reference) (Informazioni di riferimento sulla riga di comando MIDL). Vedere anche il parametro **UndefinePreprocessorDefinitions** in questa tabella.
 
@@ -297,11 +299,11 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Parametro **stringa** facoltativo.
 
-     Specifica l'allineamento (*livello di compressione*) delle strutture nel sistema di destinazione.
+     Specifica l'allineamento ( *livello di compressione* ) delle strutture nel sistema di destinazione.
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Valore|Opzione da riga di comando|
+    |valore|Opzione da riga di comando|
     |-----------|--------------------------|
     |**NotSet**|*\<none>*|
     |**1**|**/Zp1**|
@@ -335,7 +337,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Valore|Opzione da riga di comando|
+    |valore|Opzione da riga di comando|
     |-----------|--------------------------|
     |**NotSet**|*\<none>*|
     |**Win32**|**/env win32**|
@@ -358,7 +360,7 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Valore|Opzione da riga di comando|
+    |valore|Opzione da riga di comando|
     |-----------|--------------------------|
     |**NewFormat**|**/newtlb**|
     |**OldFormat**|**/oldtlb**|
@@ -403,11 +405,11 @@ Esegue il wrapping dello strumento compilatore MIDL (Microsoft Interface Definit
 
      Parametro **stringa** facoltativo.
 
-     Specifica la gravità (*livello di avviso*) degli avvisi da creare. Per il valore 0 non vengono creati avvisi. Diversamente, viene creato un avviso se il livello di avviso è numericamente inferiore o uguale al valore specificato.
+     Specifica la gravità ( *livello di avviso* ) degli avvisi da creare. Per il valore 0 non vengono creati avvisi. Diversamente, viene creato un avviso se il livello di avviso è numericamente inferiore o uguale al valore specificato.
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.
 
-    |Valore|Opzione da riga di comando|
+    |valore|Opzione da riga di comando|
     |-----------|--------------------------|
     |**0**|**/W0**|
     |**1**|**/W1**|

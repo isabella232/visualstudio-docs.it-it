@@ -1,5 +1,7 @@
 ---
 title: Attività MergeLocalizationDirectives | Microsoft Docs
+description: Informazioni su come MSBuild usa l'attività MergeLocalizationDirectives per unire gli attributi di localizzazione e i commenti dei file in formato binario XAML in un unico file.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c7699afeb09604a437aad091f9aaf9ce624d33e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97d04978a2809a4744f62f27c375efdec1e43dcc
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633499"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903875"
 ---
 # <a name="mergelocalizationdirectives-task"></a>Attività MergeLocalizationDirectives
 
@@ -38,7 +40,7 @@ L' <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> attività un
 
 ## <a name="remarks"></a>Osservazioni
 
-È possibile aggiungere commenti e attributi di localizzazione al contenuto XAML. Con il supporto della localizzazione Windows Presentation Foundation (WPF), è possibile rimuovere i commenti e gli attributi di localizzazione e inserirli in un file con *estensione loc* separato dall'assembly generato. È possibile eseguire questa operazione mediante l'attributo **LocalizationPropertyStorage**. Per altre informazioni sui commenti e gli attributi di localizzazione e su **LocalizationPropertyStorage**, vedere [Attributi e commenti di localizzazione](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
+È possibile aggiungere commenti e attributi di localizzazione al contenuto XAML. Con il supporto della localizzazione Windows Presentation Foundation (WPF), è possibile rimuovere i commenti e gli attributi di localizzazione e inserirli in un file con *estensione loc* separato dall'assembly generato. È possibile eseguire questa operazione mediante l'attributo **LocalizationPropertyStorage** . Per altre informazioni sui commenti e gli attributi di localizzazione e su **LocalizationPropertyStorage** , vedere [Attributi e commenti di localizzazione](/dotnet/framework/wpf/advanced/localization-attributes-and-comments).
 
 ## <a name="example"></a>Esempio
 

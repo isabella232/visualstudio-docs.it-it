@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visual Studio
-ms.openlocfilehash: 59bfac51eb7888bbad4cc07bf2df25b8c35980fd
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a865bfa5cf7d55504e022efb1b134bddde7d231c
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005898"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904686"
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 
@@ -57,7 +57,7 @@ La sottoscrizione in uso verrà visualizzata chiaramente nell'intestazione di co
 
 ## <a name="transferring-subscriptions"></a>Trasferimento di sottoscrizioni
 
-Se la sottoscrizione è stata acquistata tramite i contratti multilicenza Microsoft ed è necessario riassegnarla a un altro membro dell'organizzazione, l'amministratore dovrà eseguire questa operazione per conto dell'utente.
+Se la sottoscrizione è stata acquistata tramite Microsoft Volume Licensing ed è necessario riassegnarla a un altro utente all'interno dell'organizzazione, l'amministratore dovrà eseguire questa operazione per l'utente.
 Le sottoscrizioni vendute al dettaglio possono essere trasferite a terze parti contattando il servizio clienti. Non è possibile trasferire abbonamenti gratuiti o non destinati alla divulgazione.
 
 ## <a name="managing-my-profile"></a>Gestione del profilo personale
@@ -71,7 +71,7 @@ Il portale delle sottoscrizioni consente di creare e gestire un profilo, semplif
 1. Selezionare il nome nell'angolo superiore destro del portale Sottoscrittore.
 2. Selezionare il pulsante **modifica profilo** .
 3. Nella scheda **Informazioni** è possibile modificare nome, indirizzo e-mail, paese/area geografica, immagine del profilo e preferenze di contatto. Nella scheda **Preferenze** è possibile selezionare le impostazioni preferite per lingua, criteri di data e ora, fuso orario e tema dell'interfaccia utente.
-4. Dopo aver completato le modifiche, selezionare **Salva**.
+4. Dopo aver completato le modifiche, selezionare **Salva** .
 5. Selezionare il pulsante **indietro** del browser per tornare alla pagina dei vantaggi.
 
 ### <a name="setting-communications-preferences"></a>Impostazione delle preferenze di comunicazione
@@ -90,7 +90,7 @@ Per aggiungere un account alternativo:
 1. Accedere al [Portale sottoscrittore](https://my.visualstudio.com?wt.mc_id=o~msft~docs) con il proprio account Microsoft (MSA).
 2. Selezionare la scheda **Sottoscrizioni** .
 3. In **Collegamenti correlati** scegliere **Add alternate account** (Aggiungi account alternativo).
-4. Immettere l'indirizzo di posta elettronica dell'account aziendale e dell'Istituto di istruzione e selezionare **Aggiungi**.
+4. Immettere l'indirizzo di posta elettronica dell'account aziendale e dell'Istituto di istruzione e selezionare **Aggiungi** .
 
 Una volta aggiunto un account alternativo, è possibile aggiornarlo o rimuoverlo in qualsiasi momento selezionando la scheda **sottoscrizioni** e scegliendo l'opzione appropriata nella sezione **collegamenti correlati** .
 

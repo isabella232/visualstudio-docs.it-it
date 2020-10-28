@@ -1,21 +1,21 @@
 ---
-title: Usare la funzionalità Utilizzo massimo nel portale di amministrazione
+title: Usare la funzionalità di utilizzo massimo nelle sottoscrizioni di Visual Studio
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 09/21/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: Informazioni su come visualizzare il numero massimo di sottoscrizioni assegnate nel portale di amministrazione
-ms.openlocfilehash: b9ff33623311e4bfeff6b6067d5631d4e65efda9
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: e8ea9aa9001312c792e6f9d356dbc5f7cf58dfb8
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91022171"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904494"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Utilizzare la funzionalità di utilizzo massimo per tenere traccia del numero di sottoscrizioni assegnate
-Una nuova funzionalità nel portale di amministrazione delle sottoscrizioni di Visual Studio consente di tenere traccia di quante sottoscrizioni sono state acquistate e assegnate e identifica il numero massimo di sottoscrizioni di ogni livello assegnate, sia nell'ultimo anno che per l'intera durata dei contratti. 
+Una nuova funzionalità del portale di amministrazione delle sottoscrizioni di Visual Studio consente di tenere traccia del numero di sottoscrizioni acquistate e assegnate e di identificare il numero massimo di sottoscrizioni di ogni livello assegnato, sia nell'anno precedente, sia per tutta la durata dei contratti. 
 
 ## <a name="maximum-usage-overview"></a>Panoramica sull'utilizzo massimo
 Guardare il video o leggere per informazioni su come usare la funzionalità di utilizzo massimo. 
@@ -55,5 +55,5 @@ R: le informazioni contenute nella panoramica mostrano le assegnazioni *correnti
 - [Documentazione di Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Passaggi successivi
-- Per eventuali domande sulle assegnazioni delle sottoscrizioni o altri aspetti del portale di amministrazione, contattare https://visualstudio.microsoft.com/subscriptions/support/ per assistenza. 
+- Per eventuali domande sulle assegnazioni delle sottoscrizioni o su altri aspetti del portale di amministrazione, contattare l' https://visualstudio.microsoft.com/subscriptions/support/ assistenza. 
 - Vedere altre informazioni su cosa fare se si assegnano più sottoscrizioni di quelle acquistate, uno scenario noto come [sovrallocazione](handle-overclaimed-license.md).

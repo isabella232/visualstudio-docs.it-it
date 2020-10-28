@@ -6,16 +6,16 @@ manager: cabuschl
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 09/08/2020
 ms.topic: how-to
-description: Informazioni su come contattare l'amministratore della sottoscrizione per richiedere assistenza in caso di domande o problemi.
-ms.openlocfilehash: 6e2192f81a7003c3c3dcbbc9583ae537ac60cb4b
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+description: Informazioni su come contattare l'amministratore della sottoscrizione per assistenza in merito a domande o problemi.
+ms.openlocfilehash: dab5a450f5a46bab527c5982288f6e2a98ecfd0c
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "91005688"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904532"
 ---
-# <a name="get-assistance-from-your-subscriptions-administrator"></a>Ottenere assistenza dall'amministratore delle sottoscrizioni
-Se la sottoscrizione di Visual Studio viene fornita dall'azienda o dall'istituto di istruzione di appartenenza, è probabile che sia stata assegnata da un amministratore delle sottoscrizioni.  Gli amministratori possono assegnare o rimuovere sottoscrizioni, modificare gli indirizzi di posta elettronica di accesso, determinare se è possibile scaricare software ed eseguire altre funzioni correlate alla sottoscrizione.
+# <a name="get-assistance-from-your-subscriptions-admin"></a>Ottenere assistenza dall'amministratore delle sottoscrizioni
+Se la sottoscrizione di Visual Studio viene fornita dall'ufficio o dall'Istituto di istruzione, è probabile che sia stata assegnata all'utente da un amministratore delle sottoscrizioni, o "admin".  Gli amministratori possono assegnare o rimuovere sottoscrizioni, modificare gli indirizzi di posta elettronica di accesso, determinare se è possibile scaricare software ed eseguire altre funzioni correlate alla sottoscrizione.
 
 Date le dimensioni e la complessità di molte organizzazioni, l'utente potrebbe non conoscere l'amministratore e potrebbe quindi essere difficile capire come ottenere assistenza.  È stata aggiunta una nuova funzionalità al portale dei sottoscrittori per contattare in modo più semplice l'amministratore.   
 
@@ -27,7 +27,7 @@ Date le dimensioni e la complessità di molte organizzazioni, l'utente potrebbe 
    > ![Contact my Admin (Contatta amministratore)](_img/contact-my-admin/contact-my-admin-button.png "Selezionare il pulsante Contatta l'amministratore, immettere il messaggio e selezionare Invia.")
 4. Immettere il messaggio per l'amministratore.
 5. Se si vuole ricevere una copia del messaggio inviato all'amministratore, scegliere la casella di controllo **Invia una copia** . 
-6. Infine, selezionare **Invia**.
+6. Infine, selezionare **Invia** .
 
 > [!NOTE]
 > **Amministratori con privilegi avanzati:**  Per impostare l'indirizzo di posta elettronica a cui vengono inviate le richieste "Contatta l'amministratore", specificare l'indirizzo nelle [Preferenze dell'accordo](admin-prefs.md#contact-email-address).

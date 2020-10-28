@@ -1,5 +1,7 @@
 ---
 title: Attività LC | Microsoft Docs
+description: Informazioni su come MSBuild usa l'attività LC per eseguire il wrapping LC.exe, che genera un file con estensione License da un file con estensione licx.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,16 +20,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 865167b9182ca1f2264900a3e71ddeb4983e25ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70c996d5a8d1d4bf296a395bfb64ead6eba1bb01
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82167397"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903578"
 ---
 # <a name="lc-task"></a>LC (attività)
 
-Esegue il wrapping di *LC.exe*, uno strumento che genera un file con estensione *license* da un file con estensione *licx*. Per altre informazioni su *LC.exe*, vedere [Lc.exe (License Compiler)](/dotnet/framework/tools/lc-exe-license-compiler).
+Esegue il wrapping di *LC.exe* , uno strumento che genera un file con estensione *license* da un file con estensione *licx* . Per altre informazioni su *LC.exe* , vedere [Lc.exe (License Compiler)](/dotnet/framework/tools/lc-exe-license-compiler).
 
 ## <a name="parameters"></a>Parametri
 
@@ -35,13 +37,13 @@ La tabella seguente descrive i parametri dell'attività `LC`.
 
 |Parametro|Descrizione|
 |---------------|-----------------|
-|`LicenseTarget`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica l'eseguibile per cui vengono generati i file con estensione *licenses*.|
+|`LicenseTarget`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica l'eseguibile per cui vengono generati i file con estensione *licenses* .|
 |`NoLogo`|Parametro `Boolean` facoltativo.<br /><br /> Evita la visualizzazione del messaggio di avvio Microsoft.|
-|`OutputDirectory`|Parametro `String` facoltativo.<br /><br /> Specifica la directory in cui inserire i file di output con estensione *licenses*.|
+|`OutputDirectory`|Parametro `String` facoltativo.<br /><br /> Specifica la directory in cui inserire i file di output con estensione *licenses* .|
 |`OutputLicense`|Parametro di ouput facoltativo <xref:Microsoft.Build.Framework.ITaskItem>.<br /><br /> Specifica il nome del file con *estensione licenses* . Se non si specifica un nome, viene usato il nome del file con estensione *licx* e il file con *estensione licenses* viene inserito nella directory contenente il file con *estensione licx* .|
-|`ReferencedAssemblies`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica i componenti a cui si fa riferimento da caricare durante la generazione del file con estensione *license*.|
-|`SdkToolsPath`|Parametro `String` facoltativo.<br /><br /> Specifica il percorso degli strumenti SDK, ad esempio *resgen.exe*.|
-|`Sources`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica gli elementi che contengono componenti concessi in licenza da includere nel file con estensione *licenses*. Per altre informazioni, vedere la documentazione relativa all'opzione `/complist` in [Lc.exe (License Compiler)](/dotnet/framework/tools/lc-exe-license-compiler).|
+|`ReferencedAssemblies`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica i componenti a cui si fa riferimento da caricare durante la generazione del file con estensione *license* .|
+|`SdkToolsPath`|Parametro `String` facoltativo.<br /><br /> Specifica il percorso degli strumenti SDK, ad esempio *resgen.exe* .|
+|`Sources`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica gli elementi che contengono componenti concessi in licenza da includere nel file con estensione *licenses* . Per altre informazioni, vedere la documentazione relativa all'opzione `/complist` in [Lc.exe (License Compiler)](/dotnet/framework/tools/lc-exe-license-compiler).|
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 

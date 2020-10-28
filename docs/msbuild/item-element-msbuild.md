@@ -1,5 +1,7 @@
 ---
 title: Elemento Item (MSBuild) | Microsoft Docs
+description: Informazioni su come MSBuild usa l'elemento Item per contenere un elemento definito dall'utente e i relativi metadati. Ogni elemento deve essere un elemento figlio di un elemento ItemGroup.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f235108c63eb063f0ddcd495385bd3325581332
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51ecf68cacf0edca90893931642cd7fb6064f972
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289014"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904642"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 
@@ -68,7 +70,7 @@ Ora è tuttavia possibile passare il metadato `Version` come un attributo, come 
 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -99,7 +101,7 @@ Gli elementi `Item` definiscono gli input nel sistema di compilazione e vengono 
 
 L'uso della notazione @ ( \<myType> ) consente di espandere una raccolta di elementi di tipo \<myType> in un elenco delimitato da punti e virgola di stringhe e di passare a un parametro. Se il parametro è di tipo `string`, il valore del parametro è l'elenco di elementi, separati da punti e virgola. Se il parametro è una matrice di stringhe (`string[]`), ogni elemento viene inserito nella matrice in base alla posizione dei punti e virgola. Se il parametro dell'attività è di tipo <xref:Microsoft.Build.Framework.ITaskItem>`[]`, il valore è il contenuto della raccolta di elementi con eventuali metadati associati. Per delimitare ciascun elemento usando un carattere diverso da un punto e virgola, usare la sintassi @(\<myType>, '\<separator>').
 
-Il motore MSBuild può valutare caratteri jolly come `*` e `?` e caratteri jolly ricorsivi, ad esempio * / \* \* / \* . cs*. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
+Il motore MSBuild può valutare caratteri jolly come `*` e `?` e caratteri jolly ricorsivi, ad esempio */ \* \* / \* . cs* . Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
 ## <a name="examples"></a>Esempi
 
@@ -114,7 +116,7 @@ Nell'esempio di codice seguente viene illustrato come dichiarare due elementi di
 </ItemGroup>
 ```
 
-L'esempio di codice seguente illustra come usare l'attributo `Update` per modificare i metadati in un file denominato *somefile.cs*, incluso tramite un criterio GLOB. È disponibile solo per i progetti .NET Core in Visual Studio 2017 o versioni successive.
+L'esempio di codice seguente illustra come usare l'attributo `Update` per modificare i metadati in un file denominato *somefile.cs* , incluso tramite un criterio GLOB. È disponibile solo per i progetti .NET Core in Visual Studio 2017 o versioni successive.
 
 ```xml
 <ItemGroup>
