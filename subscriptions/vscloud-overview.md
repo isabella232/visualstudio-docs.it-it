@@ -2,20 +2,20 @@
 title: Come acquistare sottoscrizioni cloud di Visual Studio
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
-ms.date: 10/21/2020
+ms.date: 10/28/2020
 ms.topic: overview
 description: Noleggiare Visual Studio Professional o Visual Studio Enterprise su base mensile o annuale senza contratto a lungo termine.
-ms.openlocfilehash: 29dd6be56441fd833c56eaea89286bb3d418ec78
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fbb4204ec5b36d865a1c8b3d9c235cdf97b4019e
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353447"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918084"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional
-È possibile acquistare [sottoscrizioni di Visual Studio Professional e Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) da [Visual Studio Marketplace](https://marketplace.visualstudio.com). Queste sono le cosiddette **sottoscrizioni cloud**.
+È possibile acquistare [sottoscrizioni di Visual Studio Professional e Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) da [Visual Studio Marketplace](https://marketplace.visualstudio.com). Queste sono le cosiddette **sottoscrizioni cloud** .
 
 [Confrontare vantaggi e prezzi delle sottoscrizioni cloud](https://visualstudio.microsoft.com/vs/pricing/)
 
@@ -42,7 +42,7 @@ Per fatturare gli acquisti, è necessaria una [sottoscrizione di Azure](https://
     > [!div class="mx-imgBorder"]
     > ![Selezionare il numero di sottoscrizioni](_img/buy-vs-subscriptions/buy-vs-sub-users.png "Scegliere il numero di sottoscrizioni da acquistare")
 
-    Se non si vuole che le sottoscrizioni vengano assegnate a se stessi, deselezionare **Assegna questa sottoscrizione a me**.
+    Se non si vuole che le sottoscrizioni vengano assegnate a se stessi, deselezionare **Assegna questa sottoscrizione a me** .
 
 5. Verificare e completare l'acquisto. Se si ha una sottoscrizione assegnata, è possibile visitare il [portale per i sottoscrittori Visual Studio](https://my.visualstudio.com) per avviare il download del software e iniziare a usare altri vantaggi per i sottoscrittori.
 
@@ -72,7 +72,7 @@ Per annullare le sottoscrizioni, è sufficiente impostare il numero di sottoscri
 > [!div class="mx-imgBorder"]
 > ![Visualizza panoramica delle sottoscrizioni](_img/buy-vs-subscriptions/overview-button.png "Selezionare il pulsante Panoramica per visualizzare i dettagli della sottoscrizione")
 
-4. Individuare la voce relativa alle sottoscrizioni che si desidera annullare e selezionare **modifica quantità**.
+4. Individuare la voce relativa alle sottoscrizioni che si desidera annullare e selezionare **modifica quantità** .
 1. Impostare la quantità su zero (0). Le sottoscrizioni rimarranno in vigore fino alla data di fatturazione pianificata, ma non vengono rinnovate al raggiungimento della data di fatturazione.   
 
 > [!div class="mx-imgBorder"]
@@ -115,7 +115,7 @@ R: i clienti non saranno in grado di acquistare nuove sottoscrizioni annuali del
 R: i clienti esistenti non saranno interessati. I nuovi clienti dovranno decidere se acquistare sottoscrizioni mensili di Visual Studio o passare a un altro canale, ad esempio i contratti multilicenza, per acquistare sottoscrizioni di Visual Studio.
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>D: cosa accade se si desidera aumentare il numero di sottoscrizioni per i clienti?
-R: le sottoscrizioni annuali acquistate durante un determinato mese vengono addebitate immediatamente per un anno intero e sono valide per un anno intero. Per questo motivo, l'amministratore può modificare solo il numero di licenze nel mese corrente di acquisto (che saranno valide per 1 anno e verranno addebitate per 1 anno). Non è più possibile aumentare il numero delle sottoscrizioni al di fuori del mese di acquisto.
+R: le sottoscrizioni annuali acquistate durante un determinato mese vengono addebitate immediatamente per un anno intero e sono valide per un anno intero. Per questo motivo, l'amministratore può solo modificare il numero di licenze nel mese di acquisto corrente (saranno valide per 1 anno e addebitate per 1 anno). Non è più possibile aumentare il numero delle sottoscrizioni al di fuori del mese di acquisto.
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>D: cosa fare se si desidera ridurre il numero di sottoscrizioni per i clienti?
 R: l'amministratore può comunque ridurre il numero di sottoscrizioni visitando [https://manage.visualstudio.com](https://manage.visualstudio.com) e seguendo le istruzioni riportate in questo articolo per ridurre i conteggi delle sottoscrizioni. Il sistema **non** genererà un credito ripartito. Per ottenere un rimborso è necessario contattare il team di fatturazione di Azure.

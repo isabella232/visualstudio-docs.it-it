@@ -1,18 +1,18 @@
 ---
-title: Vantaggio Supporto tecnico
+title: Vantaggio supporto tecnico nelle sottoscrizioni di Visual Studio
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 09/02/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: Informazioni su come attivare il vantaggio Supporto tecnico incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 6f22273d578c6e1bc30d588fff30c945846a5d8f
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 30b47646c26e5bc9fbf9045e2acf59a670aa5e9d
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91004546"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918123"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivare e usare il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 Il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio consente di risolvere problemi in garanzia in **ambienti non di produzione** per i prodotti che sono ancora nella fase di supporto "Mainstream" del [ciclo di vita del supporto](https://support.microsoft.com/lifecycle/search). Le sottoscrizioni cloud standard e annuali di Visual Studio Enterprise ricevono quattro eventi imprevisti, mentre le sottoscrizioni cloud standard e annuali di Visual Studio Professional ne ricevono due, per un massimo di 1 anno dall'attivazione del vantaggio. L'attivazione del vantaggio deve avvenire mentre la sottoscrizione è corrente.
@@ -30,7 +30,7 @@ Strumenti di sviluppo come l'IDE di Visual Studio e la Azure DevOps Server ricev
 
 I prodotti non per sviluppatori (ad esempio SQL, Windows, SharePoint) scaricati dalle sottoscrizioni di Visual Studio sono idonei solo per il supporto mainstream. Questi prodotti sono concessi in licenza solo per gli ambienti di sviluppo per la progettazione, lo sviluppo, il test e la dimostrazione delle applicazioni. Questi prodotti non sono concessi in licenza per gli ambienti di produzione.
 
-Descrizioni del livello di prodotto: espandere **piani di supporto non disponibili**. Se non è **possibile utilizzare il piano di supporto per il supporto per il prodotto specificato (codice: 8)**, non è possibile utilizzare il contratto di supporto per la versione del prodotto selezionata.
+Descrizioni del livello di prodotto: espandere **piani di supporto non disponibili** . Se non è **possibile utilizzare il piano di supporto per il supporto per il prodotto specificato (codice: 8)** , non è possibile utilizzare il contratto di supporto per la versione del prodotto selezionata.
 
 > [!IMPORTANT]
 > Gli interventi di supporto sono disponibili per il supporto per la correzione delle interruzioni.  Non possono essere usati per assistenza per problemi di codifica/sviluppo che coinvolgono i prodotti seguenti:
@@ -58,7 +58,7 @@ Descrizioni del livello di prodotto: espandere **piani di supporto non disponibi
    > [!div class="mx-imgBorder"]
    > ![Trovare l'ID sottoscrizione del vantaggio Supporto tecnico](_img/vs-tech-support/vs-tech-support-subID-cropped.png)
 
-4. Dopo aver completato il processo, si riceverà un messaggio di posta elettronica contenente l'**ID contratto** e l'**ID di accesso** da usare durante la creazione di un evento imprevisto per il supporto.  Verranno inoltre fornite istruzioni per l'invio di richieste di assistenza usando il nuovo ID di accesso e l'ID del contratto. 
+4. Dopo aver completato il processo, si riceverà un messaggio di posta elettronica contenente l' **ID contratto** e l' **ID di accesso** da usare durante la creazione di un evento imprevisto per il supporto.  Verranno inoltre fornite istruzioni per l'invio di richieste di assistenza usando il nuovo ID di accesso e l'ID del contratto. 
 
 > [!NOTE]
 > Per attivare l'account di supporto in una lingua diversa dall'inglese, scegliere il paese/area geografica da [questo elenco](https://support.microsoft.com/help/14084/activate-support-contract).
@@ -75,35 +75,35 @@ Quando si segnala un evento imprevisto online, per prima cosa verrà chiesto di 
 ### <a name="using-your-contract-id-and-access-id-when-submitting-an-incident-initial-use"></a>Uso dell'ID contratto e dell'ID di accesso durante la segnalazione di un evento imprevisto (uso iniziale)
 
 #### <a name="submitting-an-incident-online"></a>Invio di un evento imprevisto online
-Quando si segnala un evento imprevisto online, per prima cosa verrà chiesto di eseguire l'accesso. Selezionare dall'elenco a discesa il prodotto per cui si richiede assistenza. Per inviare ad esempio una richiesta di assistenza per Visual Studio Enterprise 2019, selezionare il gruppo **Strumenti di sviluppo**, scegliere **Visual Studio 2019** come prodotto e quindi scegliere **Visual Studio Enterprise 2019** come versione.
+Quando si segnala un evento imprevisto online, per prima cosa verrà chiesto di eseguire l'accesso. Selezionare dall'elenco a discesa il prodotto per cui si richiede assistenza. Per inviare ad esempio una richiesta di assistenza per Visual Studio Enterprise 2019, selezionare il gruppo **Strumenti di sviluppo** , scegliere **Visual Studio 2019** come prodotto e quindi scegliere **Visual Studio Enterprise 2019** come versione.
 
-1. Dopo aver scelto il prodotto per il quale è necessario il supporto, fare clic su **Avanti**.
+1. Dopo aver scelto il prodotto per il quale è necessario il supporto, fare clic su **Avanti** .
 
    > [!div class="mx-imgBorder"]
    > ![Vantaggio Supporto tecnico - Segnalazione dell'evento imprevisto - Passaggio 1 - Prodotto](_img/vs-tech-support/vs-tech-support-step1.png)
 
-2. Descrivere il problema e fare clic su **Avanti**.
+2. Descrivere il problema e fare clic su **Avanti** .
 
    > [!div class="mx-imgBorder"]
    > ![Vantaggio Supporto tecnico - Segnalazione dell'evento imprevisto - Passaggio 2 - Problema](_img/vs-tech-support/vs-tech-support-step2.png)
 
-3. Nella pagina "Piano di supporto" scorrere verso il basso fino all'opzione **Add or purchase a support plan** (Aggiungi o acquista un piano di supporto), espanderla con la freccia a destra e fare clic su **Aggiungi contratto**.
+3. Nella pagina "Piano di supporto" scorrere verso il basso fino all'opzione **Add or purchase a support plan** (Aggiungi o acquista un piano di supporto), espanderla con la freccia a destra e fare clic su **Aggiungi contratto** .
 
    > [!div class="mx-imgBorder"]
    > ![Vantaggio Supporto tecnico - Segnalazione dell'evento imprevisto - Aggiungere il contratto](_img/vs-tech-support/vs-tech-support-add-contract.png)
 
-4. Immettere l' **ID di accesso** e l' **ID del contratto**.  Scegliere **Aggiungi**.
+4. Immettere l' **ID di accesso** e l' **ID del contratto** .  Scegliere **Aggiungi** .
 
    > [!div class="mx-imgBorder"]
    > ![Vantaggio Supporto tecnico - Segnalazione dell'evento imprevisto - Aggiungere l'ID contratto](_img/vs-tech-support/vs-tech-support-add-contract-id.png)
 
-5. Dopo aver aggiunto il contratto, verrà visualizzato in **Select a support plan** (Selezionare un piano di supporto) nella parte superiore. Il piano contiene il termine "MSDN" nel titolo. Selezionarlo, scorrere verso il basso e fare clic su **Avanti**.
+5. Dopo aver aggiunto il contratto, verrà visualizzato in **Select a support plan** (Selezionare un piano di supporto) nella parte superiore. Il piano contiene il termine "MSDN" nel titolo. Selezionarlo, scorrere verso il basso e fare clic su **Avanti** .
 
    > [!div class="mx-imgBorder"]
    > ![Vantaggio Supporto tecnico - Segnalazione dell'evento imprevisto - Scegliere il piano](_img/vs-tech-support/vs-tech-support-choose-plan.png)
 
    > [!NOTE]
-   > Se non è possibile visualizzare il piano di supporto, tornare alla pagina precedente e fare di nuovo clic su **Avanti**.  Se il problema persiste, copiare negli Appunti il testo del problema di supporto, aggiornare la pagina e creare nuovamente la richiesta di supporto.
+   > Se non è possibile visualizzare il piano di supporto, tornare alla pagina precedente e fare di nuovo clic su **Avanti** .  Se il problema persiste, copiare negli Appunti il testo del problema di supporto, aggiornare la pagina e creare nuovamente la richiesta di supporto.
 
 6. Completare i passaggi rimanenti (gravità, informazioni di contatto, revisione delle informazioni).   Dopo aver segnalato l'evento imprevisto, un messaggio di conferma informa che l'evento imprevisto è stato inviato correttamente ed è possibile caricare i file nel caso. Un professionista del supporto verrà assegnato all'evento imprevisto e si metterà in contatto per risolvere il problema tramite il metodo di contatto selezionato.
 
@@ -127,7 +127,7 @@ Per usare il vantaggio supporto tecnico della sottoscrizione di Visual Studio pe
 | Visual Studio Professional con GitHub Enterprise | VL                                     | 2 eventi imprevisti                                                          |Sì         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 2 eventi imprevisti                                             |  Sì         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 2 eventi imprevisti                                               | Sì         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |ND|
 ||
 
 <sup>1</sup> *include: Imagine Premium, BizSpark. Esclude: not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ETP, MCT software & Services Developer, Imagine standard, Most Valuable Professional (MVP), Regional Director (RD), MCT software & Services.*

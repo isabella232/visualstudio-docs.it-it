@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0262081489ec6e037a006649c3041baf02b32d58
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: 53d8e33555530eacf482f3f99752ea4c42f8d827
+ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007212"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92918097"
 ---
 # <a name="analyze-memory-usage"></a>Analizzare l'utilizzo della memoria
 
@@ -21,11 +21,17 @@ Per individuare le perdite di memoria e l'utilizzo inefficiente della memoria, �
 
 Lo strumento Utilizzo memoria consente di eseguire uno o più *snapshot* dell'heap di memoria gestito e nativo. È possibile raccogliere snapshot delle app .NET, ASP.NET, C++ o miste (.NET e native). Lo strumento **utilizzo memoria** può essere eseguito in un progetto di Visual Studio aperto, in un'app Microsoft Store installata oppure collegato a un'app o a un processo in esecuzione. È possibile eseguire lo strumento **utilizzo memoria** con o senza debug. Per altre informazioni, vedere [eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Nel debugger è possibile attivare e disattivare la profilatura della memoria e vedere la suddivisione in base all'oggetto dell'utilizzo della memoria. È possibile visualizzare i risultati dell'utilizzo della memoria quando l'esecuzione viene sospesa, ad esempio in corrispondenza di un punto di interruzione.
 
-Gli sviluppatori .NET possono scegliere tra lo strumento [utilizzo memoria](../profiling/memory-usage.md) e lo [strumento di allocazione oggetti .NET](../profiling/dotnet-alloc-tool.md).
-- Lo strumento di **allocazione oggetti .NET** consente di identificare i modelli di allocazione e le anomalie nel codice .NET e consente di identificare i problemi più comuni con Garbage Collection. Questo strumento viene eseguito solo come strumento post-mortem. È possibile eseguire questo strumento in computer locali o remoti.
-- Lo strumento **utilizzo memoria** è utile per identificare le perdite di memoria, che in genere non sono comuni nelle app .NET. Se è necessario utilizzare le funzionalità del debugger durante il controllo della memoria, ad esempio l'esecuzione di un'istruzione alla volta nel codice, è consigliabile usare lo strumento [utilizzo memoria integrato del debugger](../profiling/beginners-guide-to-performance-profiling.md) .
+Gli sviluppatori .NET possono scegliere tra lo strumento di allocazione oggetti .NET o lo strumento [utilizzo memoria](../profiling/memory-usage.md) .
 
-È possibile usare gli strumenti di profilatura senza il debugger con Windows 7 e versioni successive. Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**.
+- Lo [strumento di allocazione oggetti .NET](../profiling/dotnet-alloc-tool.md) consente di identificare i modelli di allocazione e le anomalie nel codice .NET e consente di identificare i problemi più comuni con Garbage Collection. Questo strumento viene eseguito solo come strumento post-mortem. È possibile eseguire questo strumento in computer locali o remoti.
+- Lo [strumento utilizzo memoria](../profiling/memory-usage-without-debugging2.md) è utile per identificare le perdite di memoria, che in genere non sono comuni nelle app .NET. Se è necessario utilizzare le funzionalità del debugger durante il controllo della memoria, ad esempio l'esecuzione di un'istruzione alla volta nel codice, è consigliabile usare lo strumento [utilizzo memoria integrato del debugger](../profiling/memory-usage.md) .
+
+Gli sviluppatori C++ possono utilizzare lo strumento di utilizzo della memoria integrato nel debugger o non del debugger.
+
+- [Analizzare l'utilizzo della memoria con il debugger](../profiling/memory-usage.md)
+- [Analizzare l'utilizzo della memoria senza il debugger](../profiling/memory-usage-without-debugging2.md)
+
+È possibile usare gli strumenti di profilatura senza il debugger con Windows 7 e versioni successive. Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica** .
 
 ## <a name="blogs-and-videos"></a>Blog e video
 
@@ -35,6 +41,5 @@ Gli sviluppatori .NET possono scegliere tra lo strumento [utilizzo memoria](../p
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Analizzare l'utilizzo della memoria senza il debugger](../profiling/memory-usage-without-debugging2.md)
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)
