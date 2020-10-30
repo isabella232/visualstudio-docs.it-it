@@ -1,5 +1,7 @@
 ---
 title: Caratteri speciali di escape | Microsoft Docs
+description: Informazioni sui caratteri speciali che devono essere preceduti da un carattere di escape solo se hanno un significato speciale nel contesto in cui vengono usati.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c3a0feed4177bd41ee2b77edc49336bfda3171b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 433e762bf68b6a3956616e0ccccc229bca8f86b9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184042"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048273"
 ---
 # <a name="special-characters-to-escape"></a>Caratteri speciali di escape
 
@@ -45,7 +47,7 @@ I caratteri speciali devono essere preceduto da un carattere di escape solo se h
 > [!NOTE]
 > In alcuni scenari potrebbe essere necessario usare caratteri di escape per virgolette doppie ("), ad esempio quando si usa all'interno di un' `Exec` attività.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: eseguire l'escape di caratteri speciali in MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)

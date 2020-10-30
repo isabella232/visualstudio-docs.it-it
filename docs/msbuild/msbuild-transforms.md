@@ -1,5 +1,7 @@
 ---
 title: Trasformazioni di MSBuild | Microsoft Docs
+description: Informazioni sul modo in cui MSBuild usa le trasformazioni, uno a uno di un elenco di elementi in un altro, per compilare progetti in modo più efficiente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34394ba35a349a1564f6c3fdd43052be3e1fdf03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4eb35554c61c532e0d004e5c974345564e17d4ae
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633109"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049000"
 ---
 # <a name="msbuild-transforms"></a>Trasformazioni di MSBuild
 
@@ -26,13 +28,13 @@ Una trasformazione è una conversione uno-a-uno di un elenco di elementi in un a
 
 Le trasformazioni non sono arbitrarie, ma sono limitate dalla sintassi speciale in cui tutti i modificatori di trasformazione devono essere nel formato%( \<ItemMetaDataName> ). I metadati degli elementi possono essere usati come modificatori della trasformazione. Sono inclusi i metadati noti degli elementi, assegnati a ogni elemento al momento della creazione. Per un elenco di tutti i metadati noti degli elementi, vedere [Metadati noti degli elementi di MSBuild](../msbuild/msbuild-well-known-item-metadata.md).
 
-Nell'esempio seguente un elenco di file con estensione *resx* viene trasformato in un elenco di file con estensione *resources*. Il modificatore di trasformazione %(filename) specifica che ogni file con estensione *resources* ha lo stesso nome del file con estensione *resx* corrispondente.
+Nell'esempio seguente un elenco di file con estensione *resx* viene trasformato in un elenco di file con estensione *resources* . Il modificatore di trasformazione %(filename) specifica che ogni file con estensione *resources* ha lo stesso nome del file con estensione *resx* corrispondente.
 
 ```xml
 @(RESXFile->'%(filename).resources')
 ```
 
-Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx*, *Form2.resx* e *Form3.resx*, gli output nell'elenco trasformato saranno *Form1.resources*, *Form2.resources* e *Form3.resources*.
+Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx* , *Form2.resx* e *Form3.resx* , gli output nell'elenco trasformato saranno *Form1.resources* , *Form2.resources* e *Form3.resources* .
 
 > [!NOTE]
 > Per un elenco di elementi trasformato è possibile specificare un separatore personalizzato, in modo analogo a quanto accade con un elenco di elementi standard. Per separare, ad esempio, un elenco di elementi trasformato usando una virgola (,) anziché il punto e virgola predefinito (;), usare il codice XML seguente: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
@@ -45,9 +47,9 @@ Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx*
 @(RESXFile->'Toolset\%(filename)%(extension)')
 ```
 
- Se, ad esempio, gli elementi contenuti nell'elenco `RESXFile` sono *Project1\Form1.resx*, *Project1\Form2.resx* e *Project1\Form3.text*, gli output nell'elenco trasformato saranno *Toolset\Form1.resx*, *Toolset\Form2.resx* e *Toolset\Form3.text*.
+ Se, ad esempio, gli elementi contenuti nell'elenco `RESXFile` sono *Project1\Form1.resx* , *Project1\Form2.resx* e *Project1\Form3.text* , gli output nell'elenco trasformato saranno *Toolset\Form1.resx* , *Toolset\Form2.resx* e *Toolset\Form3.text* .
 
-## <a name="dependency-analysis"></a>Analisi delle dipendenze
+## <a name="dependency-analysis"></a>analisi delle dipendenze
 
  Le trasformazioni garantiscono un mapping uno-a-uno tra l'elenco di elementi trasformato e l'elenco di elementi originale. Se pertanto una destinazione crea output che sono trasformazioni degli input, MSBuild può analizzare i timestamp degli input e degli output e decidere se ignorare, compilare o ricompilare parzialmente una destinazione.
 
@@ -69,7 +71,7 @@ Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx*
 
 ### <a name="description"></a>Descrizione
 
- Nell'esempio seguente viene illustrato un file di progetto MSBuild che utilizza le trasformazioni. In questo esempio si presuppone che esista un solo file *xsd* nella directory *c:\sub0\sub1\sub2\sub3* e che la directory di lavoro sia *c:\sub0*.
+ Nell'esempio seguente viene illustrato un file di progetto MSBuild che utilizza le trasformazioni. In questo esempio si presuppone che esista un solo file *xsd* nella directory *c:\sub0\sub1\sub2\sub3* e che la directory di lavoro sia *c:\sub0* .
 
 ### <a name="code"></a>Codice
 
@@ -107,7 +109,7 @@ relativedir: sub1\sub2\sub3\
 extension: .xsd
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)

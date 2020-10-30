@@ -1,5 +1,7 @@
 ---
 title: Classe TrackedVCToolTask | Microsoft Docs
+description: Informazioni sui parametri aggiunti dalla classe di base TrackedVCToolTask alle attività che ereditano da esso.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 dev_langs:
@@ -11,12 +13,12 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01b55e0ad88cb520078479217306bac948e6cd60
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594929"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047002"
 ---
 # <a name="trackedvctooltask-base-class"></a>Classe di base TrackedVCToolTask
 
@@ -24,7 +26,7 @@ Molte attività ereditano dalla classe <xref:Microsoft.Build.Utilities.Task> e d
 
 ## <a name="parameters"></a>Parametri
 
-Nella tabella seguente vengono descritti i parametri della classe di base **TrackedVCToolTask**.
+Nella tabella seguente vengono descritti i parametri della classe di base **TrackedVCToolTask** .
 
 |Parametro|Descrizione|
 |---------------|-----------------|
@@ -36,7 +38,7 @@ Nella tabella seguente vengono descritti i parametri della classe di base **Trac
 |**PostBuildTrackingCleanup**|Parametro **bool** facoltativo.|
 |**RootSource**|Parametro **stringa** facoltativo.|
 |**SkippedExecution**|Parametro di output **bool** facoltativo.|
-|**SourcesCompiled**|Parametro di output facoltativo **ITaskItem[]**.|
+|**SourcesCompiled**|Parametro di output facoltativo **ITaskItem[]** .|
 |**TLogCommandFile**|Parametro **ITaskItem** facoltativo.|
 |**TLogReadFiles**|Parametro **ITaskItem []** facoltativo.|
 |**TLogWriteFiles**|Parametro **ITaskItem []** facoltativo.|
@@ -48,7 +50,7 @@ Nella tabella seguente vengono descritti i parametri della classe di base **Trac
 |**TrackerFrameworkPath**|Parametro **stringa** facoltativo.|
 |**TrackerSdkPath**|Parametro **stringa** facoltativo.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)<br/>
 [Attività](../msbuild/msbuild-tasks.md)

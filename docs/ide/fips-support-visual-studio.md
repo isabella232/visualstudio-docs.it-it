@@ -1,5 +1,7 @@
 ---
-title: Supporto di Visual Studio per la modalità di funzionamento di FIPS 140-2 approvata
+title: Supporto di Visual Studio per FIPS
+titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 04/14/2020
 ms.topic: conceptual
 author: TerryGLee
@@ -7,18 +9,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d06204fd1ef6ee2deb5eadc514af1ede8ae9bb6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56fe4fa2381502f01a952977fe2d506dc7792231
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84180493"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045518"
 ---
 # <a name="visual-studio-support-for-the-fips-140-2-approved-mode-of-operation"></a>Supporto di Visual Studio per la modalità di funzionamento di FIPS 140-2 approvata
 
 A partire dalla [versione 16,4](/visualstudio/releases/2019/release-notes-v16.4/), Visual Studio 2019 supporta la pubblicazione Federal Information Processing Standard (FIPS) 140-2 modalità di funzionamento approvata per Windows, Azure e .NET. Con la [versione 16,5](/visualstudio/releases/2019/release-notes-archive-v16.5), Visual Studio supporta ora la modalità operativa di FIPS 140-2 approvata quando si sviluppano [applicazioni C++ destinate a un sistema Linux remoto](/cpp/linux/set-up-fips-compliant-secure-remote-linux-development/).
 
-Per configurare la modalità di funzionamento approvato FIPS 140-2 per Visual Studio, [installare .NET Framework 4,8](https://dotnet.microsoft.com/download/dotnet-framework/net48) e quindi abilitare l'impostazione criteri di gruppo, **crittografia di sistema: usa algoritmi conformi a FIPS per crittografia, hash e firma**.
+Per configurare la modalità di funzionamento approvato FIPS 140-2 per Visual Studio, [installare .NET Framework 4,8](https://dotnet.microsoft.com/download/dotnet-framework/net48) e quindi abilitare l'impostazione criteri di gruppo, **crittografia di sistema: usa algoritmi conformi a FIPS per crittografia, hash e firma** .
 
 Per ulteriori informazioni sulla modalità di funzionamento approvata FIPS 140-2 e su come abilitarla, vedere [fips 140-2 Validation](/windows/security/threat-protection/fips-140-validation/).
 
@@ -33,6 +35,6 @@ Per ulteriori informazioni sulla modalità di funzionamento approvato FIPS 140-2
 - [Windows: crittografia di sistema e utilizzo di algoritmi conformi a FIPS per crittografia, hash e firma](/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing)
 - [.NET Core: conformità FIPS](/dotnet/standard/security/fips-compliance/)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Proteggere le applicazioni](securing-applications.md)

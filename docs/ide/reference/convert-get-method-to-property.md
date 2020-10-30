@@ -1,5 +1,6 @@
 ---
-title: Convertire il metodo Get in proprietà; convertire una proprietà in metodo Get
+title: Convertire il metodo Get in o da una proprietà
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 ms.devlang: csharp
@@ -13,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: af507a8b437a20e3d4f4807d582abab6f9a12e27
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad628f8727ed16c882129c5642c77748cb767908
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094209"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045775"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Refactoring per convertire il metodo Get in proprietà o una proprietà in metodo Get
 
@@ -45,7 +46,7 @@ Questi refactoring si applicano a:
    - **Mouse**
       - Fare clic con il pulsante destro del mouse sul codice, scegliere il menu **azioni rapide e refactoring** e selezionare **Sostituisci metodo con la proprietà** dal popup della finestra di anteprima.
 
-1. (Facoltativo) Se si dispone di un metodo Set, è anche possibile convertire il metodo Set in questo momento selezionando **Sostituisci metodo Get e metodo Set con la proprietà**.
+1. (Facoltativo) Se si dispone di un metodo Set, è anche possibile convertire il metodo Set in questo momento selezionando **Sostituisci metodo Get e metodo Set con la proprietà** .
 
 1. Se si è soddisfatti delle modifiche nell'anteprima del codice, premere **INVIO** o fare clic sulla correzione nel menu. Verrà eseguito il commit delle modifiche.
 
@@ -84,11 +85,11 @@ public int MyValue
    - **Tastiera**
       - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring** e selezionare **Sostituisci proprietà con metodi** dal popup della finestra di anteprima.
    - **Mouse**
-      - fare clic con il pulsante destro del mouse sul codice e scegliere il menu **Azioni rapide e refactoring**, quindi selezionare **Sostituisci proprietà con metodi** dal popup della finestra di anteprima.
+      - fare clic con il pulsante destro del mouse sul codice e scegliere il menu **Azioni rapide e refactoring** , quindi selezionare **Sostituisci proprietà con metodi** dal popup della finestra di anteprima.
 
 1. Se si è soddisfatti delle modifiche nell'anteprima del codice, premere **INVIO** o fare clic sulla correzione nel menu. Verrà eseguito il commit delle modifiche.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)
 - [Anteprima modifiche](../../ide/preview-changes.md)

@@ -1,5 +1,7 @@
 ---
 title: Attività XslTransformation | Microsoft Docs
+description: Informazioni su come MSBuild usa l'attività XslTransformation per trasformare un input XML usando un XSLT e l'output in un file o un dispositivo di output.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d23799e5ce5bf391915ac459c69c27b990211f0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da983f6dc215a5afd651733ecea6b62846ca95cc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094542"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047190"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation (attività)
 
@@ -41,7 +43,7 @@ Consente di trasformare un input XML tramite un XSLT o un XSLT compilato e di cr
 |`XslContent`|Parametro `String` facoltativo.<br /><br /> Specifica l'input XSLT sotto forma di stringa.|
 |`XslInputPath`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica il file di input XSLT.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -56,7 +58,7 @@ Nell'esempio seguente viene utilizzato un file di trasformazione XSL *Transform.
                        Parameters="&lt;Parameter Name='Parameter1' Value='$(Parameter1)'/&gt;"/>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Parametri XSLT](/dotnet/standard/data/xml/xslt-parameters)
 - [Attività](../msbuild/msbuild-tasks.md)

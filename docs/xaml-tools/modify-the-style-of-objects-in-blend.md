@@ -1,6 +1,8 @@
 ---
 title: Modificare lo stile degli oggetti
 titleSuffix: Blend for Visual Studio
+description: Informazioni su come modificare lo stile degli oggetti in Blend per Visual Studio applicando pennelli, impostando gli Stati di visualizzazione e applicando stili e modelli riutilizzabili.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: TerryGLee
@@ -8,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f38bfc7a6899ff1d61b8103204bb58df5c5106a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cfe54db27a16d95904412b5e1181d589ed2fcde8
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592952"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046789"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Modificare lo stile degli oggetti in Blend per Visual Studio
 
-Il modo più semplice per personalizzare un oggetto consiste nell'impostare le proprietà nel riquadro **Proprietà**.
+Il modo più semplice per personalizzare un oggetto consiste nell'impostare le proprietà nel riquadro **Proprietà** .
 
-Per riusare impostazioni o gruppi di impostazioni, creare una risorsa riutilizzabile, ovvero uno *stile*, un *modello* o qualcosa di semplice, come un colore personalizzato. È anche possibile impostare un controllo in modo che venga visualizzato in modo diverso a seconda dello stato, come ad esempio un pulsante che diventa verde quando viene selezionato dall'utente.
+Per riusare impostazioni o gruppi di impostazioni, creare una risorsa riutilizzabile, ovvero uno *stile* , un *modello* o qualcosa di semplice, come un colore personalizzato. È anche possibile impostare un controllo in modo che venga visualizzato in modo diverso a seconda dello stato, come ad esempio un pulsante che diventa verde quando viene selezionato dall'utente.
 
 ## <a name="brushes-modify-the-appearance-of-an-object"></a>Pennelli: modificare l'aspetto di un oggetto
 
@@ -27,9 +29,9 @@ Per modificare l'aspetto di un oggetto, è possibile applicarvi un pennello.
 
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Disegnare un'immagine o un motivo ripetuto su un oggetto
 
-Per disegnare un'immagine o un motivo ripetuto su un oggetto, è possibile usare un *pennello tessera*.
+Per disegnare un'immagine o un motivo ripetuto su un oggetto, è possibile usare un *pennello tessera* .
 
-Per creare un pennello tessera, creare prima una risorsa *pennello immagine*, *pennello da disegno* o *pennello visivo*.
+Per creare un pennello tessera, creare prima una risorsa *pennello immagine* , *pennello da disegno* o *pennello visivo* .
 
 Per creare un pennello immagine, usare un'immagine. Le illustrazioni seguenti mostrano il pennello immagine, il pennello immagine affiancato e il pennello immagine capovolto.
 
@@ -47,21 +49,21 @@ Per creare un pennello visivo, usare un controllo, ad esempio un pulsante. Le il
 
 È possibile progettare l'aspetto e il comportamento di un controllo una volta e applicarne le caratteristiche ad altri controlli in modo che non sia necessario gestirle singolarmente.
 
-**Quando usare uno stile**: se si vogliono solo impostare le proprietà predefinite, come il colore di un pulsante, è preferibile usare uno *stile*. È possibile modificare un controllo anche dopo l'applicazione di uno stile.
+**Quando usare uno stile** : se si vogliono solo impostare le proprietà predefinite, come il colore di un pulsante, è preferibile usare uno *stile* . È possibile modificare un controllo anche dopo l'applicazione di uno stile.
 
-**Quando usare un modello**: se si vuole modificare la struttura di un controllo, è preferibile usare un *modello*. Si supponga di voler convertire un elemento grafico o un logo in un pulsante. Non è possibile modificare un controllo dopo l'applicazione di un modello.
+**Quando usare un modello** : se si vuole modificare la struttura di un controllo, è preferibile usare un *modello* . Si supponga di voler convertire un elemento grafico o un logo in un pulsante. Non è possibile modificare un controllo dopo l'applicazione di un modello.
 
 ### <a name="create-a-template-or-style"></a>Creare un modello o uno stile
 
 È possibile creare un modello in due modi diversi. Si può convertire un oggetto qualsiasi presente nella tavola da disegno in un controllo oppure basare il modello su un controllo esistente.
 
-Per convertire un oggetto qualsiasi in un modello di controllo, selezionare l'oggetto e quindi scegliere **Crea controllo** dal menu **Strumenti**.
+Per convertire un oggetto qualsiasi in un modello di controllo, selezionare l'oggetto e quindi scegliere **Crea controllo** dal menu **Strumenti** .
 
-Se si preferisce basare il modello su un controllo esistente, selezionare un oggetto nella tavola da disegno. Nella parte superiore della tavola da disegno fare clic sul pulsante di navigazione, scegliere **Modifica modello** e quindi **Modifica una copia** o **Crea vuoto**.
+Se si preferisce basare il modello su un controllo esistente, selezionare un oggetto nella tavola da disegno. Nella parte superiore della tavola da disegno fare clic sul pulsante di navigazione, scegliere **Modifica modello** e quindi **Modifica una copia** o **Crea vuoto** .
 
 ![Menu Modifica modello](../designers/media/5ebdb33f-aad2-4c10-a328-5e8b04c56a36.png)
 
-Per creare uno stile, selezionare l'oggetto, scegliere **Modifica stile** dal menu **Oggetto** e quindi **Modifica una copia** o **Crea vuoto**.
+Per creare uno stile, selezionare l'oggetto, scegliere **Modifica stile** dal menu **Oggetto** e quindi **Modifica una copia** o **Crea vuoto** .
 
 - Scegliere **Modifica una copia** per iniziare con lo stile o il modello predefinito del controllo.
 
@@ -79,7 +81,7 @@ Nella finestra di dialogo **Create Style Resource** (Crea risorsa di stile) è p
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Applicare uno stile o un modello a un controllo
 
-Fare clic con il pulsante destro del mouse su un oggetto nella finestra [Oggetti e sequenza temporale](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window), scegliere **Modifica modello** e quindi **Applica risorsa**.
+Fare clic con il pulsante destro del mouse su un oggetto nella finestra [Oggetti e sequenza temporale](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window), scegliere **Modifica modello** e quindi **Applica risorsa** .
 
 ![Menu Applica risorsa](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
@@ -101,6 +103,6 @@ Gli stati di visualizzazione consentono di cambiare l'aspetto di un controllo in
 
 ![Pulsante Converti colore in risorsa](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![Finestra di dialogo Creare risorsa colore](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creazione di un'interfaccia utente usando Blend per Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

@@ -1,5 +1,7 @@
 ---
 title: Visualizzazione del grafico di Progettazione XML Schema
+description: Informazioni sulla visualizzazione grafico in Progettazione XML Schema che fornisce una rappresentazione grafica dei nodi dello schema globale e delle relazioni tra i nodi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb71196dfbaf371e66131bf1e4b22584d3dbf0c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee6abff7accf5e1990792b52f1fdf6a013edd0f9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592867"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045994"
 ---
 # <a name="graph-view"></a>Visualizzazione grafico
 
@@ -31,7 +33,7 @@ Facendo doppio clic su un nodo nella visualizzazione grafico, viene visualizzato
 
 Per eliminare i nodi selezionati dall'area di lavoro, utilizzare la barra degli strumenti di progettazione XSD o il tasto **Canc** .
 
-Se l'area di progettazione è vuota, vengono visualizzati l'editor XML, **XML Schema Explorer**e la filigrana. La *filigrana* è un elenco di collegamenti a tutte le visualizzazioni di progettazione XSD.
+Se l'area di progettazione è vuota, vengono visualizzati l'editor XML, **XML Schema Explorer** e la filigrana. La *filigrana* è un elenco di collegamenti a tutte le visualizzazioni di progettazione XSD.
 
 ![Progettazione XSD; Visualizzazione del grafico](../xml-tools/media/xsdgraphviewwatermark.gif)
 
@@ -101,16 +103,16 @@ I seguenti pulsanti della barra degli strumenti XSD sono abilitati quando la vis
 
 |Opzione|Descrizione|
 |-|-----------------|
-|**Mostra visualizzazione iniziale**|Passa alla [visualizzazione iniziale](../xml-tools/start-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **CTRL** + **1**.|
-|**Mostra visualizzazione modello di contenuto**|Passa alla [visualizzazione modello di contenuto](../xml-tools/content-model-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **CTRL** + **2**.|
-|**Mostra visualizzazione grafico**|Passa alla [visualizzazione grafico](../xml-tools/graph-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **CTRL** + **3**.|
+|**Mostra visualizzazione iniziale**|Passa alla [visualizzazione iniziale](../xml-tools/start-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **CTRL** + **1** .|
+|**Mostra visualizzazione modello di contenuto**|Passa alla [visualizzazione modello di contenuto](../xml-tools/content-model-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **CTRL** + **2** .|
+|**Mostra visualizzazione grafico**|Passa alla [visualizzazione grafico](../xml-tools/graph-view.md). È possibile accedere a questa visualizzazione tramite il tasto di scelta rapida: **CTRL** + **3** .|
 |**Cancella area di lavoro**|Cancella l'area di lavoro e l'area di progettazione.|
 |**Rimuovi dall'area di lavoro**|Rimuove i nodi selezionati dall'area di lavoro e dall'area di progettazione.|
 |**Rimuovi tutto tranne gli elementi selezionati dall'area di lavoro**|Rimuove i nodi non selezionati dall'area di lavoro e dall'area di progettazione. Questa opzione è abilitata nella visualizzazione modello di contenuto e nella visualizzazione grafico.|
-|**Da sinistra a destra**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da sinistra a destra dei nodi. È possibile accedere a questa opzione tramite la scelta rapida da tastiera: **ALT** + **freccia destra**.|
-|**Da destra a sinistra**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da destra a sinistra dei nodi. È possibile accedere a questa opzione tramite il tasto di scelta rapida: **ALT** + **freccia sinistra**.|
-|**Dall'alto in basso**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dall'alto in basso dei nodi. È possibile accedere a questa opzione tramite la scelta rapida da tastiera: **ALT** + **freccia giù**.|
-|**Dal basso verso l'alto**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dal basso in alto dei nodi. È possibile accedere a questa opzione tramite il tasto di scelta rapida: **ALT** + **freccia su**.|
+|**Da sinistra a destra**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da sinistra a destra dei nodi. È possibile accedere a questa opzione tramite la scelta rapida da tastiera: **ALT** + **freccia destra** .|
+|**Da destra a sinistra**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica da destra a sinistra dei nodi. È possibile accedere a questa opzione tramite il tasto di scelta rapida: **ALT** + **freccia sinistra** .|
+|**Dall'alto in basso**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dall'alto in basso dei nodi. È possibile accedere a questa opzione tramite la scelta rapida da tastiera: **ALT** + **freccia giù** .|
+|**Dal basso verso l'alto**|Modifica il layout nella visualizzazione grafico in una rappresentazione gerarchica dal basso in alto dei nodi. È possibile accedere a questa opzione tramite il tasto di scelta rapida: **ALT** + **freccia su** .|
 
 ## <a name="panscroll"></a>Panoramica/scorrimento
 
@@ -144,6 +146,6 @@ Il dispositivo di scorrimento zoom è opaco quando lo si seleziona, si posiziona
 
 Se si apportano modifiche al set di schemi nell'editor XML, le modifiche verranno sincronizzate nella visualizzazione grafico. Per ulteriori informazioni, vedere [integrazione con l'editor XML](../xml-tools/integration-with-xml-editor.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Area di progettazione](../xml-tools/xml-schema-designer-workspace.md)

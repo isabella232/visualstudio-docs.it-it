@@ -1,5 +1,7 @@
 ---
 title: Attività ResolveComReference | Microsoft Docs
+description: Informazioni su come MSBuild usa l'attività ResolveComReference per ottenere un elenco di uno o più nomi di librerie dei tipi o file tlb e risolverli in posizioni su disco.
+ms.custom: SEO-VS-2020
 ms.date: 07/25/2019
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b99e743cf5bc9e3e634a8738e30d17c8e5517191
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e98d0d64a8df1dac29127ffcf76fe8b6cc39a43
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286180"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048617"
 ---
 # <a name="resolvecomreference-task"></a>Attività ResolveComReference
 
@@ -48,7 +50,7 @@ Accetta un elenco di uno o più nomi di librerie dei tipi o file *tlb* e risolve
 |`SdkToolsPath`|Parametro <xref:System.String?displayProperty=fullName> facoltativo.<br /><br /> Se `ExecuteAsTool` è `true`, questo parametro deve essere impostato sul percorso degli strumenti SDK per la versione di framework di destinazione.|
 |`StateFile`|Parametro `String` facoltativo.<br /><br /> Specifica il file di cache per i timestamp dei componenti COM. Se non presente, ogni esecuzione genererà nuovamente tutti i wrapper.|
 |`TargetFrameworkVersion`|Parametro `String` facoltativo.<br /><br /> Specifica la versione del framework di destinazione del progetto.<br /><br /> Il valore predefinito è `String.Empty`. Tale valore indica che non viene applicato alcun filtro a un riferimento in base al framework di destinazione.|
-|`TargetProcessorArchitecture`|Parametro `String` facoltativo.<br /><br /> Specifica l'architettura preferita del processore di destinazione. Viene passato al flag *tlbimp.exe*/machine dopo la conversione.<br /><br /> Il valore del parametro deve essere un membro di <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|
+|`TargetProcessorArchitecture`|Parametro `String` facoltativo.<br /><br /> Specifica l'architettura preferita del processore di destinazione. Viene passato al flag *tlbimp.exe* /machine dopo la conversione.<br /><br /> Il valore del parametro deve essere un membro di <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|
 |`TypeLibFiles`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica il percorso del file della libreria dei tipi per i riferimenti COM. Gli elementi inclusi in questo parametro possono contenere metadati dell'elemento. Per altre informazioni, vedere la sezione [Metadati dell'elemento TypeLibFiles](#typelibfiles-item-metadata) riportata di seguito.|
 |`TypeLibNames`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica i nomi delle librerie dei tipi da risolvere. Gli elementi inclusi in questo parametro devono contenere alcuni metadati dell'elemento. Per altre informazioni, vedere la sezione [Metadati dell'elemento TypeLibNames](#typelibnames-item-metadata) riportata di seguito.|
 |`WrapperOutputDirectory`|Parametro `String` facoltativo.<br /><br /> Percorso su disco in cui viene inserito l'assembly di interoperabilità generato. Se questi metadati di elemento non vengono specificati, l'attività userà il percorso assoluto della directory in cui si trova il file di progetto.|
@@ -78,7 +80,7 @@ Accetta un elenco di uno o più nomi di librerie dei tipi o file *tlb* e risolve
 > [!NOTE]
 > Una maggiore quantità di informazioni fornite per identificare in maniera univoca una libreria dei tipi aumenta le probabilità di risoluzione dell'attività nel file corretto su disco.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base Task](../msbuild/task-base-class.md).
 
@@ -94,7 +96,7 @@ MSB4803: The task "ResolveComReference" is not supported on the .NET Core versio
 
 Questa attività non è supportata nella versione .NET Core di MSBuild, che viene usata quando si esegue il `dotnet build` comando dalla riga di comando. Provare a compilare il progetto richiamando [MSBuild.exe](msbuild-command-line-reference.md) dalla prompt dei comandi per gli sviluppatori di Visual Studio, perché usa la versione .NET Framework di MSBuild.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

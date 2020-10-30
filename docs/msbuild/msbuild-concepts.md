@@ -1,5 +1,7 @@
 ---
 title: Concetti relativi a MSBuild | Microsoft Docs
+description: Informazioni su come specificare i componenti e i processi di compilazione usando proprietà, elementi, attività e destinazioni di MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 605b6ff67963c8df3e711c3f0b000c23f82050cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1efd2b1344e4523b9428c0eaacb63f93f9f8995f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289248"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046427"
 ---
 # <a name="msbuild-concepts"></a>Concetti relativi a MSBuild
 

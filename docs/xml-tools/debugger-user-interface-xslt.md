@@ -1,5 +1,7 @@
 ---
 title: Finestre del debugger XSLT
+description: Informazioni sui componenti dell'interfaccia utente del debugger XSLT che controllano il comportamento di debug specifico di XSLT, inclusi variabili locali, output, punti di interruzione, stack di chiamate e finestre espressioni di controllo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 024a8659d95855c8154ed8d9bed231739648719e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592880"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045796"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaccia utente del debugger (XSLT)
 
@@ -25,7 +27,7 @@ Per ulteriori informazioni, vedere la Guida di [riferimento all'interfaccia uten
 
 Nella finestra Variabili locali vengono visualizzate le informazioni sulle variabili definite nel foglio di stile. La finestra Variabili locali contiene tre colonne di informazioni:
 
-**Name**
+**Nome**
 
 Questa colonna contiene i nomi di tutte le variabili locali nell'ambito corrente. I set di nodi hanno un controllo albero di cui è possibile eseguire il drill-down per visualizzare le relative sottocartelle.
 
@@ -39,7 +41,7 @@ In questa colonna viene identificato il tipo di dati di ogni variabile elencata 
 
 Nella finestra Variabili locali vengono inoltre visualizzate le variabili di contesto predefinite che tengono traccia del contesto della trasformazione XSLT. Nella tabella seguente vengono descritte le variabili di contesto predefinite usate dal debugger XSLT.
 
-|Name|Descrizione|
+|Nome|Descrizione|
 |-|-----------------|
 |`last()`|La dimensione del contesto.|
 |`position()`|Posizione, ossia il numero di indice, del nodo di contesto, in base alla dimensione del contesto.|
@@ -56,7 +58,7 @@ Il **elenco attività** elenca tutti gli errori di compilazione nel foglio di st
 Il **elenco attività** include tutti gli errori che si verificano nei blocchi di script nel file XSLT.
 
 > [!NOTE]
-> Il debugger XSLT non contiene avvisi, quindi non vengono mai visualizzati nella **elenco attività**.
+> Il debugger XSLT non contiene avvisi, quindi non vengono mai visualizzati nella **elenco attività** .
 
 ## <a name="breakpoints-window"></a>finestra Punti di interruzione
 
@@ -100,7 +102,7 @@ Nella finestra Disassembly viene visualizzato il codice di assembly generato dal
 
 Per ulteriori informazioni, [procedura: utilizzare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)](../xml-tools/debugging-xslt.md)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

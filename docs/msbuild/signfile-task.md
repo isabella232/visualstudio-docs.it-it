@@ -1,5 +1,7 @@
 ---
 title: Attività SignFile | Microsoft Docs
+description: Informazioni su come MSBuild usa l'attività SignFile per firmare il file specificato usando il certificato specificato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 319afb810ba755d0201d3edaebcb06a493b59047
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41fc320034ef5ea86006abf6f19079e8b0a45a82
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86301447"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048278"
 ---
 # <a name="signfile-task"></a>SignFile (attività)
 
@@ -45,7 +47,7 @@ Consente di firmare il file specificato usando il certificato specificato.
 |`TimestampUrl`|Parametro `String` facoltativo.<br /><br /> Specifica l'URL del server di timestamp.|
 |`TargetFrameworkVersion`|La versione di.NET Framework che viene usata per la destinazione.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base Task](../msbuild/task-base-class.md).
 
@@ -73,7 +75,7 @@ Consente di firmare il file specificato usando il certificato specificato.
 > [!NOTE]
 > L'identificazione personale del certificato è l'hash SHA-1 del certificato. Per altre informazioni, vedere [Ottenere l'hash SHA-1 di un certificato CA radice attendibile](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\)). Se si copia e incolla l'identificazione personale presente nei dettagli del certificato, assicurarsi di non includere il carattere invisibile (3F) aggiuntivo, che può impedire a `SignFile` di trovare il certificato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)

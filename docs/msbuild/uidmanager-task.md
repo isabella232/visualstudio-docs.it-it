@@ -1,5 +1,7 @@
 ---
 title: Attività UidManager | Microsoft Docs
+description: Informazioni sul modo in cui l'attività UidManager MSBuild controlla, aggiorna o rimuove gli identificatori univoci (UID) per localizzare tutti gli elementi XAML nei file XAML di origine.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37692c541fb2a6e9b2ccf61083dd383e56a79766
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 852b910de742676e1fe7dd0c85129640eb37a9ae
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631523"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046930"
 ---
 # <a name="uidmanager-task"></a>Attività UidManager
 
@@ -36,7 +38,7 @@ L' <xref:Microsoft.Build.Tasks.Windows.UidManager> attività controlla, aggiorna
 |-------------------------| - |
 | `IntermediateDirectory` | Parametro **stringa** facoltativo.<br /><br /> Specifica la directory utilizzata per eseguire il backup dei file XAML di origine specificati dal parametro **MarkupFiles** . |
 | `MarkupFiles` | Parametro **ITaskItem[]** obbligatorio.<br /><br /> Specifica i file XAML di origine da includere per il controllo, l'aggiornamento o la rimozione degli UID. |
-| `Task` | Parametro **String** obbligatorio.<br /><br /> Specifica l'attività di gestione degli UID da eseguire. Le opzioni valide sono **Check**, **Update** o **Remove**. |
+| `Task` | Parametro **String** obbligatorio.<br /><br /> Specifica l'attività di gestione degli UID da eseguire. Le opzioni valide sono **Check** , **Update** o **Remove** . |
 
 ## <a name="example"></a>Esempio
 
@@ -56,7 +58,7 @@ L' <xref:Microsoft.Build.Tasks.Windows.UidManager> attività controlla, aggiorna
 </Project>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni di riferimento su MSBuild WPF](../msbuild/wpf-msbuild-reference.md)
 - [Informazioni di riferimento sulle attività](../msbuild/wpf-msbuild-task-reference.md)

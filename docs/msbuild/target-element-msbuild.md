@@ -1,5 +1,7 @@
 ---
 title: Elemento Target (MSBuild) | Microsoft Docs
+description: Informazioni sull'elemento target di MSBuild, che contiene un set di attività per l'esecuzione sequenziale di MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16b8533bed128199a4eb0b6e7171ed9c674d62f4
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80375558"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048055"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 
@@ -55,7 +57,7 @@ Contiene un set di attività per l'esecuzione sequenziale di MSBuild.
 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -85,7 +87,7 @@ Contiene un set di attività per l'esecuzione sequenziale di MSBuild.
 | - | - |
 | [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  La prima destinazione da eseguire viene specificata in fase di esecuzione. Le destinazioni possono avere dipendenze da altre destinazioni. Ad esempio, una destinazione per la distribuzione dipende da una destinazione per la compilazione. Il motore MSBuild esegue le dipendenze nell'ordine in cui sono visualizzate nell' `DependsOnTargets` attributo, da sinistra a destra. Per altre informazioni, vedere [Destinazioni](../msbuild/msbuild-targets.md).
 
@@ -121,7 +123,7 @@ Contiene un set di attività per l'esecuzione sequenziale di MSBuild.
 </Target>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Server di destinazione](../msbuild/msbuild-targets.md)
 - [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)

@@ -1,5 +1,7 @@
 ---
 title: Attività VerifyFileHash | Microsoft Docs
+description: Informazioni sul modo in cui MSBuild usa l'attività VerifyFileHash per verificare che un file corrisponda all'hash del file previsto e non riesce se non corrisponde.
+ms.custom: SEO-VS-2020
 ms.date: 01/28/2019
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53819a642edcdf0419dd445ac32dbde8d14ffb22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d76c7de1fcf6857cbc32709490e54d5bdf3b8988
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579531"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046100"
 ---
 # <a name="verifyfilehash-task"></a>Attività VerifyFileHash
 
@@ -85,7 +87,7 @@ In MSBuild 16,5 e versioni successive, se non si vuole che la compilazione abbia
   </Target>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

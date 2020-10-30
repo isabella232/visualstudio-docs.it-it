@@ -1,5 +1,7 @@
 ---
 title: Menu di scelta rapida in XML Schema Explorer
+description: Informazioni sui menu di scelta rapida in XML Schema Explorer che contengono elementi per l'esecuzione di ricerche specifiche dello schema e altre operazioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7224ca09588858398a0f45c35008ddd5ba0af71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c5d78196a64ca0ab2067d0df73410c41cbeca35
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592893"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049171"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menu di scelta rapida (XML Schema Explorer)
 
@@ -112,7 +114,7 @@ Oltre alle opzioni del nodo globale descritte in precedenza, il menu di scelta r
 |**Mostra tutti i membri**|Consente di individuare ed evidenziare tutti i membri del gruppo denominato.|
 |**Mostra tutti i riferimenti**|Consente di individuare ed evidenziare tutti i riferimenti (gruppi con `ref="selectedGroup"`) al gruppo selezionato.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)
 - [Ricerca nel set di schemi](../xml-tools/searching-the-schema-set.md)

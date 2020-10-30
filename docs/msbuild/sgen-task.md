@@ -1,5 +1,7 @@
 ---
 title: Attività SGen | Microsoft Docs
+description: Informazioni su come MSBuild utilizza l'attività SGen per creare un assembly di serializzazione XML per i tipi, eseguendo il wrapping dello strumento generatore di serializzatori XML Sgen.exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,16 +20,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf18c4477a164ec2e25a5ed4b2105f6fdad9130
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de2437306dba50a1f93b0b94d86af6351b17c0b6
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82167436"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048346"
 ---
 # <a name="sgen-task"></a>SGen (attività)
 
-Crea un assembly di serializzazione XML per i tipi presenti nell'assembly specificato. Questa attività esegue il wrapping dello strumento generatore di serializzatori XML (*Sgen.exe*). Per ulteriori informazioni, vedere [strumento per la generazione di serializzatori XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
+Crea un assembly di serializzazione XML per i tipi presenti nell'assembly specificato. Questa attività esegue il wrapping dello strumento generatore di serializzatori XML ( *Sgen.exe* ). Per ulteriori informazioni, vedere [strumento per la generazione di serializzatori XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
 ## <a name="parameters"></a>Parametri
 
@@ -42,18 +44,18 @@ Crea un assembly di serializzazione XML per i tipi presenti nell'assembly specif
 | `KeyFile` | Parametro `String` facoltativo.<br /><br /> Specifica una coppia di chiavi o una chiave pubblica da usare per firmare un assembly. Durante la compilazione la chiave pubblica verrà inserita nel manifesto dell'assembly, mentre l'assembly finale verrà firmato con la chiave privata. |
 | `Platform` | Parametro `String` facoltativo.<br /><br /> Ottiene o imposta la piattaforma del compilatore usata per generare l'assembly di output. Il valore di questo parametro può essere `x86`, `x64` o `anycpu`. Il valore predefinito è `anycpu`. |
 | `References` | Parametro `String[]` facoltativo.<br /><br /> Specifica gli assembly a cui fanno riferimento i tipi che richiedono la serializzazione XML. |
-| `SdkToolsPath` | Parametro `String` facoltativo.<br /><br /> Specifica il percorso degli strumenti SDK, ad esempio *resgen.exe*. |
+| `SdkToolsPath` | Parametro `String` facoltativo.<br /><br /> Specifica il percorso degli strumenti SDK, ad esempio *resgen.exe* . |
 | `SerializationAssembly` | Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene l'assembly di serializzazione generato. |
 | `SerializationAssemblyName` | Parametro `String` facoltativo.<br /><br /> Specifica il nome dell'assembly di serializzazione generato. |
 | `ShouldGenerateSerializer` | Parametro `Boolean` obbligatorio.<br /><br /> Se `true`, l'attività SGen deve generare un assembly di serializzazione. |
 | `Timeout` | Parametro `Int32` facoltativo.<br /><br /> Specifica la quantità di tempo, in millisecondi, dopo i quali l'eseguibile dell'attività viene terminato. Il valore predefinito è `Int.MaxValue`, con cui si indica che non esiste alcun periodo di timeout. |
-| `ToolPath` | Parametro `String` facoltativo.<br /><br /> Consente di specificare il percorso da cui l'attività caricherà il file eseguibile sottostante (*sgen.exe*). Se questo parametro non è specificato, l'attività usa il percorso di installazione SDK corrispondente alla versione del Framework che esegue MSBuild. |
+| `ToolPath` | Parametro `String` facoltativo.<br /><br /> Consente di specificare il percorso da cui l'attività caricherà il file eseguibile sottostante ( *sgen.exe* ). Se questo parametro non è specificato, l'attività usa il percorso di installazione SDK corrispondente alla versione del Framework che esegue MSBuild. |
 | `Types` | Parametro `String[]` facoltativo.<br /><br /> Ottiene o imposta un elenco di tipi specifici per cui generare il codice di serializzazione. L'attività SGen genererà il codice di serializzazione solo per questi tipi. |
 | `UseProxyTypes` | Parametro `Boolean` obbligatorio.<br /><br /> Se `true`, l'attività SGen genera il codice di serializzazione solo per i tipi proxy del servizio Web XML. |
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)

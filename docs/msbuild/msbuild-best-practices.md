@@ -1,5 +1,7 @@
 ---
 title: Procedure consigliate per MSBuild | Microsoft Docs
+description: Informazioni sulle procedure consigliate per la scrittura di script MSBuild, ad esempio l'uso di attributi di condizione e non l'uso di caratteri jolly.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b2e157ee64f5e4d91bc75a5d6f8d65d4312862
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2742324f737a4e70221e3cbe4c78cff56fa7e7ca
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78263149"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047661"
 ---
 # <a name="msbuild-best-practices"></a>Procedure consigliate per MSBuild
 
@@ -32,6 +34,6 @@ Per la scrittura degli script di MSBuild è consigliabile seguire le indicazioni
 
 - In generale, evitare l'uso di caratteri jolly quando si selezionano gli elementi. Al contrario, specificare i file in modo esplicito. Questo perché nella maggior parte dei tipi di progetto, MSBuild espande i caratteri jolly in diversi momenti, ad esempio quando si aggiungono o rimuovono elementi, il che può causare un comportamento imprevisto. Un'eccezione a questo si verifica nei progetti di tipo .NET Core SDK, che consentono di elaborare correttamente i caratteri jolly.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Concetti avanzati](../msbuild/msbuild-advanced-concepts.md)

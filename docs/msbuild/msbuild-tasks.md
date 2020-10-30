@@ -1,5 +1,7 @@
 ---
 title: Attività di MSBuild | Microsoft Docs
+description: Informazioni su come MSBuild usa le attività o unità di codice eseguibile che eseguono operazioni di compilazione atomiche durante il processo di compilazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b065ea8cdaea2e2b39aa78a666ea0348f7b254ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76b359eebe0f4a22bef3ff6c6742a5134aa4520c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633135"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049050"
 ---
 # <a name="msbuild-tasks"></a>MSBuild (attività)
 
@@ -69,7 +71,7 @@ Una piattaforma di compilazione deve poter eseguire un numero illimitato di azio
 
  MSBuild cerca le attività in diverse posizioni. Il primo percorso è nei file con estensione *. OverrideTasks* archiviato nelle directory .NET Framework. Le attività in questi file eseguono l'override delle altre attività con gli stessi nomi, incluse le attività nel file di progetto. La seconda posizione è nei file con estensione *. Attività* nelle directory .NET Framework. Se l'attività non è presente in nessuna di queste posizioni, viene usata l'attività nel file di progetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)

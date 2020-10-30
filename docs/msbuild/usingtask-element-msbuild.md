@@ -1,5 +1,7 @@
 ---
 title: Elemento UsingTask (MSBuild) | Microsoft Docs
+description: Informazioni sull'elemento UsingTask di MSBuild, che esegue il mapping dell'attività a cui si fa riferimento in un elemento Task all'assembly che contiene l'implementazione dell'attività.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14556467e0907818333695b3388b2d11f3467ed7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d09f266f5bf51b870dbbbc0f80aa8282e91faa9
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289157"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046109"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 
@@ -47,7 +49,7 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -72,18 +74,18 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
 | - | - |
 | [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  È possibile fare riferimento alle variabili di ambiente, alle proprietà della riga di comando, alle proprietà a livello di progetto e agli elementi a livello di progetto negli elementi `UsingTask` inclusi nel file di progetto sia direttamente che tramite un file di progetto importato. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
 
 > [!NOTE]
 > Le proprietà e gli elementi a livello di progetto non hanno alcun effetto se l'elemento `UsingTask` proviene da uno dei file con estensione *tasks* registrati a livello globale nel motore MSBuild. I valori a livello di progetto non sono globali per MSBuild.
 
- In MSBuild 4.0 è possibile caricare gli elementi UsingTask dai file con estensione *overridetask*.
+ In MSBuild 4.0 è possibile caricare gli elementi UsingTask dai file con estensione *overridetask* .
 
 L'assembly contenente l'attività personalizzata viene caricato quando `Task` viene utilizzato per la prima volta.
 
-## <a name="example"></a>Esempio
+## <a name="example-1"></a>Esempio 1
 
  L'esempio seguente illustra come usare l'elemento `UsingTask` con un attributo `AssemblyName`.
 
@@ -100,7 +102,7 @@ L'assembly contenente l'attività personalizzata viene caricato quando `Task` vi
 </UsingTask>
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-2"></a>Esempio 2
 
  L'esempio seguente illustra come usare l'elemento `UsingTask` con un attributo `AssemblyFile`.
 
@@ -109,7 +111,7 @@ L'assembly contenente l'attività personalizzata viene caricato quando `Task` vi
               AssemblyFile="c:\myTasks\myTask.dll" />
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Procedura: configurare destinazioni e attività](../msbuild/how-to-configure-targets-and-tasks.md)   

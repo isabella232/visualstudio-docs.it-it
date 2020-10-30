@@ -1,5 +1,7 @@
 ---
 title: Recupero di log di compilazione con MSBuild | Microsoft Docs
+description: Informazioni su come usare le opzioni con MSBuild per specificare la quantità di dati di compilazione da rivedere e se salvare i dati di compilazione in uno o più file.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3dad3a9b157989ecf993cf951f91fc6296ecdf7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf13e23d69dfeba967e8e971ad2463cef4546567
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238608"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048962"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Recuperare log di compilazione con MSBuild
 
@@ -35,7 +37,7 @@ Usando le opzioni con MSBuild, è possibile specificare quanti dati di compilazi
 
 - Riepilogo della compilazione.
 
-Utilizzando l'opzione **-** livello di dettaglio (**-v**), è possibile controllare la quantità di dati visualizzati nel log di output. Per la risoluzione dei problemi, usare un livello di dettaglio `detailed` (`d`) o `diagnostic` (`diag`), che fornisce la maggior parte delle informazioni.
+Utilizzando l'opzione **-** livello di dettaglio ( **-v** ), è possibile controllare la quantità di dati visualizzati nel log di output. Per la risoluzione dei problemi, usare un livello di dettaglio `detailed` (`d`) o `diagnostic` (`diag`), che fornisce la maggior parte delle informazioni.
 
 Il processo di compilazione può risultare più lento quando si imposta il livello di **dettaglio** su `detailed` e ancora più lento quando si imposta il livello di **dettaglio** su `diagnostic` .
 
@@ -47,7 +49,7 @@ msbuild MyProject.proj -t:go -v:diag
 
 La tabella seguente illustra in che modo il livello di dettaglio del log (valori di colonna) influisce sulla scelta dei tipi di messaggio (valori di riga) da registrare.
 
-| Tipo di messaggio/livello di dettaglio              | Quiet | Minimal | Normale | Dettagliato | Diagnostic |
+| Tipo di messaggio/livello di dettaglio              | Quiet | Minime | Normale | Dettagliato | Diagnostica |
 |---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
 | Errors                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | Avvisi                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
@@ -58,7 +60,7 @@ La tabella seguente illustra in che modo il livello di dettaglio del log (valori
 
 ## <a name="save-the-build-log-to-a-file"></a>Salvare il log di compilazione in un file
 
-È possibile usare l'opzione **-FileLogger** (**FL**) per salvare i dati di compilazione in un file. L'esempio seguente salva i dati di compilazione in un file denominato *msbuild.log*.
+È possibile usare l'opzione **-FileLogger** ( **FL** ) per salvare i dati di compilazione in un file. L'esempio seguente salva i dati di compilazione in un file denominato *msbuild.log* .
 
 ```cmd
 msbuild MyProject.proj -t:go -fileLogger
@@ -74,9 +76,9 @@ msbuild MyProject.proj -t:go -fl -flp:logfile=MyProjectOutput.log;verbosity=diag
 
 ## <a name="save-the-log-output-to-multiple-files"></a>Salvare l'output del log in più file
 
- L'esempio seguente salva l'intero log in *msbuild1.log*, i soli errori in *JustErrors.log* e i soli avvisi in *JustWarnings.log*. L'esempio usa numeri di file per ognuno dei tre file. I numeri di file vengono specificati subito dopo le opzioni **-FL** e **-FLP** , ad esempio `-fl1` e `-flp1` .
+ L'esempio seguente salva l'intero log in *msbuild1.log* , i soli errori in *JustErrors.log* e i soli avvisi in *JustWarnings.log* . L'esempio usa numeri di file per ognuno dei tre file. I numeri di file vengono specificati subito dopo le opzioni **-FL** e **-FLP** , ad esempio `-fl1` e `-flp1` .
 
- Le opzioni **-fileLoggerParameters** ( `flp` ) per i file 2 e 3 specificano cosa assegnare un nome a ogni file e cosa includere in ogni file. Poiché per il file 1 non è specificato alcun nome, viene usato il nome predefinito *msbuild1.log*.
+ Le opzioni **-fileLoggerParameters** ( `flp` ) per i file 2 e 3 specificano cosa assegnare un nome a ogni file e cosa includere in ogni file. Poiché per il file 1 non è specificato alcun nome, viene usato il nome predefinito *msbuild1.log* .
 
 ```cmd
 msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorsonly -flp3:logfile=JustWarnings.log;warningsonly
@@ -86,9 +88,9 @@ msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorso
 
 ## <a name="save-a-binary-log"></a>Salvare un log binario
 
-È possibile salvare il log in formato binario compresso usando l'opzione **-binaryLogger** (**BL**). Il log include una descrizione dettagliata del processo di compilazione e può essere letto da alcuni strumenti di analisi dei log.
+È possibile salvare il log in formato binario compresso usando l'opzione **-binaryLogger** ( **BL** ). Il log include una descrizione dettagliata del processo di compilazione e può essere letto da alcuni strumenti di analisi dei log.
 
-Nell'esempio seguente viene creato un file di log binario con nome *binarylogfilename*.
+Nell'esempio seguente viene creato un file di log binario con nome *binarylogfilename* .
 
 ```cmd
 -bl:binarylogfilename.binlog
@@ -102,7 +104,7 @@ Per ulteriori informazioni, vedere [riferimenti alla riga di comando](../msbuild
 
  Nella riga di comando di MSBuild è possibile specificare il logger personalizzato usando l'opzione **-logger** . È anche possibile usare l'opzione **-noconsolelogger** per disabilitare il logger della console predefinito.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:Microsoft.Build.Framework.LoggerVerbosity>
 - [Logger di compilazione](../msbuild/build-loggers.md)

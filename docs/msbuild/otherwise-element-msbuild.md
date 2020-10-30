@@ -1,5 +1,7 @@
 ---
 title: Elemento Otherwise (MSBuild) | Microsoft Docs
+description: Informazioni su come MSBuild utilizza l'elemento altrimenti per specificare il blocco di codice da eseguire se e solo se le condizioni di All quando gli elementi sono false.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05cc8820f073ea8c620e4331c180ee1ddbfc2b65
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633044"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048929"
 ---
 # <a name="otherwise-element-msbuild"></a>Elemento Otherwise (MSBuild)
 
@@ -50,7 +52,7 @@ Specifica il blocco di codice da eseguire se e solo se le condizioni di tutti gl
 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
  Nessuno.
 
@@ -68,7 +70,7 @@ Specifica il blocco di codice da eseguire se e solo se le condizioni di tutti gl
 |-------------|-----------------|
 |[Scegliere](../msbuild/choose-element-msbuild.md)|Valuta gli elementi figlio per selezionare una sezione del codice da eseguire.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  In un elemento `Choose` può esistere un solo un elemento `Otherwise` ed è necessario che sia l'ultimo.
 
@@ -123,7 +125,7 @@ Specifica il blocco di codice da eseguire se e solo se le condizioni di tutti gl
 </Project>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)
 - [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)

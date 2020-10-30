@@ -1,5 +1,7 @@
 ---
 title: Funzioni di proprietà | Microsoft Docs
+description: Informazioni su come usare le funzioni di proprietà, che sono chiamate a .NET Framework metodi visualizzati nelle definizioni delle proprietà di MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c1e7a90d5d037865d9942ea1b91f33d7724706f
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183652"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048822"
 ---
 # <a name="property-functions"></a>Funzioni delle proprietà
 
@@ -248,9 +250,9 @@ La funzione di proprietà MSBuild `GetRegistryValue` restituisce il valore di un
 Gli esempi seguenti mostrano come viene usata questa funzione:
 
 ```
-$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
+$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
-$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
+$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
 ```
 
 ## <a name="msbuild-getregistryvaluefromview"></a>MSBuild GetRegistryValueFromView
@@ -344,7 +346,7 @@ Output:
 
 Le funzioni `Exists` e `HasTrailingSlash` non sono funzioni di proprietà. Sono disponibili per l'uso con l' `Condition` attributo. Vedere [condizioni di MSBuild](msbuild-conditions.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [proprietà di MSBuild](../msbuild/msbuild-properties.md)
 

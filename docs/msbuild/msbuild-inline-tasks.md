@@ -1,5 +1,7 @@
 ---
 title: Attività inline di MSBuild | Microsoft Docs
+description: Informazioni su come creare attività inline di MSBuild compilando una classe che implementa l'interfaccia Microsoft. Build. Framework. ITask.
+ms.custom: SEO-VS-2020
 ms.date: 09/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 848e9c8c4e3dcc7d364f2001393730fbcc56be7e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81638042"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046329"
 ---
 # <a name="msbuild-inline-tasks"></a>Attività inline di MSBuild
 
@@ -146,7 +148,7 @@ Log.LogError("Hello, world!");
 
 - `Output` è un attributo facoltativo che è `false` per impostazione predefinita. Se `true`, il parametro deve avere un valore assegnato prima della restituzione da parte del metodo Execute.
 
-Ad esempio:
+Ad esempio,
 
 ```xml
 <ParameterGroup>
@@ -195,7 +197,7 @@ File.WriteAllText(Path, content);
 </Project>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Procedura dettagliata: Creare un'attività inline](../msbuild/walkthrough-creating-an-inline-task.md)

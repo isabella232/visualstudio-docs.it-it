@@ -1,5 +1,7 @@
 ---
 title: Attività RemoveDuplicates | Microsoft Docs
+description: Informazioni su come MSBuild usa l'attività RemoveDuplicates per rimuovere gli elementi duplicati dalla raccolta di elementi specificata.
+ms.custom: SEO-VS-2020
 ms.date: 03/01/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90366bab14eefd1be4edac81d6b09b3f57aa3332
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 269499153c4be228503d6bd5b22e91e63dd5b5dd
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632784"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048677"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates (attività)
 
@@ -38,7 +40,7 @@ Rimuove gli elementi duplicati dalla raccolta di elementi specificata.
 |`Filtered`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene una raccolta di elementi con tutti gli elementi duplicati rimossi. Viene rispettato l'ordine degli elementi di input, mantenendo la prima istanza di ogni elemento duplicato.|
 |`Inputs`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Raccolta di elementi da cui rimuovere gli elementi duplicati.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  In questa attività non viene fatta distinzione tra maiuscole e minuscole e non vengono confrontati i metadati quando si determinano i duplicati.
 
@@ -70,7 +72,7 @@ Rimuove gli elementi duplicati dalla raccolta di elementi specificata.
 </Project>
 ```
 
- L'esempio seguente dimostra che l'attività `RemoveDuplicates` mantiene il relativo ordine di input. Quando l'attività viene completata, la raccolta di elementi `FilteredItems` contiene gli elementi *MyFile2.cs*, *MyFile1.cs* e *MyFile3.cs* in questo ordine.
+ L'esempio seguente dimostra che l'attività `RemoveDuplicates` mantiene il relativo ordine di input. Quando l'attività viene completata, la raccolta di elementi `FilteredItems` contiene gli elementi *MyFile2.cs* , *MyFile1.cs* e *MyFile3.cs* in questo ordine.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -93,7 +95,7 @@ Rimuove gli elementi duplicati dalla raccolta di elementi specificata.
 </Project>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)

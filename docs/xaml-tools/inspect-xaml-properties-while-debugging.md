@@ -1,5 +1,7 @@
 ---
 title: Controllare le proprietà XAML durante il debug | Microsoft Docs
+description: Informazioni su come usare gli strumenti albero elementi visivi attivi e Esplora proprietà attive durante il debug per esaminare le proprietà XAML e ottenere una visualizzazione albero degli elementi dell'interfaccia utente.
+ms.custom: SEO-VS-2020
 ms.date: 11/12/2019
 ms.topic: how-to
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c8ac187f5602d1c422fe5699d36deee70341b0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fb3c1fff831fdee711340345c283dbeaf3f13a6
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331073"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046075"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Analizzare le proprietà XAML durante il debug
 
@@ -32,7 +34,7 @@ Per iniziare, verrà analizzata un'applicazione WPF molto semplice con una visua
 
 ### <a name="create-the-project"></a>Creare il progetto
 
-1. Creare una nuova applicazione WPF c# (**file**  >  **nuovo**  >  **progetto**, quindi digitare "c# WPF" e scegliere **app WPF (.NET Core)** o **app WPF (.NET Framework)**). Assegnare all'applicazione il nome **TestXAML**.
+1. Creare una nuova applicazione WPF c# ( **file**  >  **nuovo**  >  **progetto** , quindi digitare "c# WPF" e scegliere **app WPF (.NET Core)** o **app WPF (.NET Framework)** ). Assegnare all'applicazione il nome **TestXAML** .
 
 1. Modificare MainWindow.xaml come segue:
 
@@ -78,19 +80,19 @@ Per iniziare, verrà analizzata un'applicazione WPF molto semplice con una visua
    Quando viene visualizzata la finestra, la barra degli strumenti in-app verrà visualizzata nell'applicazione in esecuzione.
 
    ::: moniker range=">= vs-2019"
-   ![Finestra principale dell'app](../debugger/media/vs-2019/livevisualtree-app.png "LiveVIsualTree-app")
+   ![Finestra principale dell'app](../debugger/media/vs-2019/livevisualtree-app.png "LiveVIsualTree-App")
    ::: moniker-end
    ::: moniker range="vs-2017"
-   ![Finestra principale dell'app](../debugger/media/livevisualtree-app.png "LiveVIsualTree-app")
+   ![Finestra principale dell'app](../debugger/media/livevisualtree-app.png "LiveVIsualTree-App")
    ::: moniker-end
 
 1. A questo punto, fare clic sul pulsante **Aggiungi elemento** alcune volte per aggiungere nuovi elementi all'elenco.
 
 ### <a name="inspect-xaml-properties"></a>Esaminare le proprietà XAML
 
-1. Aprire quindi la finestra **struttura ad albero visuale** attiva facendo clic sul pulsante a sinistra della barra degli strumenti in-app oppure scegliendo **Debug > Windows > albero elementi visivi attivi**. Una volta aperto, trascinarlo dalla posizione di ancoraggio per poter esaminare questa finestra e la finestra **proprietà attive** affiancata.
+1. Aprire quindi la finestra **struttura ad albero visuale** attiva facendo clic sul pulsante a sinistra della barra degli strumenti in-app oppure scegliendo **Debug > Windows > albero elementi visivi attivi** . Una volta aperto, trascinarlo dalla posizione di ancoraggio per poter esaminare questa finestra e la finestra **proprietà attive** affiancata.
 
-1. Nella finestra **Struttura ad albero visuale attiva** espandere il nodo **ContentPresenter**. Tale nodo dovrebbe contenere i nodi per il pulsante e la casella di riepilogo. Espandere la casella di riepilogo, listBox, (e quindi **ScrollContentPresenter** e **ItemsPresenter**) per individuare i relativi elementi.
+1. Nella finestra **Struttura ad albero visuale attiva** espandere il nodo **ContentPresenter** . Tale nodo dovrebbe contenere i nodi per il pulsante e la casella di riepilogo. Espandere la casella di riepilogo, listBox, (e quindi **ScrollContentPresenter** e **ItemsPresenter** ) per individuare i relativi elementi.
 
    ::: moniker range=">= vs-2019"
    Se non viene visualizzato il nodo **ContentPresenter** , impostare l'icona **Mostra Just My XAML** sulla barra degli strumenti. A partire da Visual Studio 2019 versione 16,4, la visualizzazione degli elementi XAML viene semplificata per impostazione predefinita con la funzionalità Just My XAML. È anche possibile [disabilitare questa impostazione](../debugger/general-debugging-options-dialog-box.md) in Options per visualizzare sempre tutti gli elementi XAML.
@@ -109,7 +111,7 @@ Per iniziare, verrà analizzata un'applicazione WPF molto semplice con una visua
 
 1. Verranno ora esaminate le proprietà di uno degli elementi della casella di riepilogo.
 
-   Selezionare il primo elemento casella di riepilogo nella finestra **Struttura ad albero visuale attiva** e fare clic sull'icona **Mostra proprietà** sulla barra degli strumenti. Dovrebbe venire visualizzata la finestra **Esplora proprietà attive**. Si noti che il campo del **contenuto** è "Item1" e il campo del colore di **sfondo**  >  **Color** è **#FFFFFFE0**.
+   Selezionare il primo elemento casella di riepilogo nella finestra **Struttura ad albero visuale attiva** e fare clic sull'icona **Mostra proprietà** sulla barra degli strumenti. Dovrebbe venire visualizzata la finestra **Esplora proprietà attive** . Si noti che il campo del **contenuto** è "Item1" e il campo del colore di **sfondo**  >  **Color** è **#FFFFFFE0** .
 
 1. Tornare alla finestra **Struttura ad albero visuale attiva** e selezionare il secondo elemento casella di riepilogo. **Esplora proprietà attive** dovrebbe indicare che il campo **contenuto** è "Item2" e che il campo del colore di **sfondo**  >  **Color** è **#FFD3D3D3** (a seconda del tema).
 
@@ -119,37 +121,37 @@ Per iniziare, verrà analizzata un'applicazione WPF molto semplice con una visua
    La struttura effettiva del codice XAML include numerosi elementi a cui probabilmente non si è direttamente interessati e se non si conosce bene il codice potrebbe risultare difficile esplorare l'albero per trovare ciò che si sta cercando. Lo strumento **Struttura ad albero visuale attiva** offre alcuni modi per usare l'interfaccia utente dell'applicazione per individuare l'elemento che si vuole esaminare.
 
    ::: moniker range=">= vs-2019"
-   **Selezionare l'elemento nell'applicazione in esecuzione**. È possibile abilitare questa modalità quando si seleziona il pulsante all'estrema sinistra sulla barra degli strumenti nella finestra **Struttura ad albero visuale attiva**. Quando questa modalità è attivata, è possibile selezionare un elemento dell'interfaccia utente nell'applicazione affinché lo strumento **Struttura ad albero visuale attiva** (e il **visualizzatore delle proprietà attive**) si aggiorni automaticamente per mostrare il nodo nell'albero corrispondente a tale elemento e le relative proprietà. A partire da Visual Studio 2019 versione 16,4, è possibile [configurare il comportamento della selezione degli elementi](../debugger/general-debugging-options-dialog-box.md).
+   **Selezionare l'elemento nell'applicazione in esecuzione** . È possibile abilitare questa modalità quando si seleziona il pulsante all'estrema sinistra sulla barra degli strumenti nella finestra **Struttura ad albero visuale attiva** . Quando questa modalità è attivata, è possibile selezionare un elemento dell'interfaccia utente nell'applicazione affinché lo strumento **Struttura ad albero visuale attiva** (e il **visualizzatore delle proprietà attive** ) si aggiorni automaticamente per mostrare il nodo nell'albero corrispondente a tale elemento e le relative proprietà. A partire da Visual Studio 2019 versione 16,4, è possibile [configurare il comportamento della selezione degli elementi](../debugger/general-debugging-options-dialog-box.md).
 
-   **Visualizza gli Adorner layout nell'applicazione in esecuzione**. È possibile abilitare questa modalità quando si seleziona il pulsante immediatamente a destra del pulsante di abilitazione della selezione. Quando l'opzione **Visualizza gli Adorner layout** è attivata, la finestra dell'applicazione mostra le linee orizzontali e verticali lungo i bordi dell'oggetto selezionato, per consentire di vederne l'allineamento, nonché rettangoli che mostrano i margini. Ad esempio, attivare sia l' **elemento SELECT** che il **layout di visualizzazione** e selezionare il blocco di testo **Aggiungi elemento** nell'applicazione. Dovrebbero venire visualizzati il nodo del blocco di testo in **Struttura ad albero visuale attiva** e le proprietà del blocco di testo nel **visualizzatore delle proprietà attive**, nonché le linee orizzontali e verticali lungo i bordi del blocco di testo.
+   **Visualizza gli Adorner layout nell'applicazione in esecuzione** . È possibile abilitare questa modalità quando si seleziona il pulsante immediatamente a destra del pulsante di abilitazione della selezione. Quando l'opzione **Visualizza gli Adorner layout** è attivata, la finestra dell'applicazione mostra le linee orizzontali e verticali lungo i bordi dell'oggetto selezionato, per consentire di vederne l'allineamento, nonché rettangoli che mostrano i margini. Ad esempio, attivare sia l' **elemento SELECT** che il **layout di visualizzazione** e selezionare il blocco di testo **Aggiungi elemento** nell'applicazione. Dovrebbero venire visualizzati il nodo del blocco di testo in **Struttura ad albero visuale attiva** e le proprietà del blocco di testo nel **visualizzatore delle proprietà attive** , nonché le linee orizzontali e verticali lungo i bordi del blocco di testo.
 
    ![LivePropertyViewer in DisplayLayout](../debugger/media/vs-2019/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")
 
-   **Anteprima selezione**. È possibile abilitare questa modalità selezionando il terzo pulsante da sinistra sulla barra degli strumenti nella finestra Albero elementi visivi attivi. Questa modalità mostra il codice XAML in cui è stato dichiarato l'elemento, se si ha accesso al codice sorgente dell'applicazione. Selezionare **Seleziona elemento** e **Anteprima selezione**, quindi selezionare il pulsante nell'applicazione di test. Il file MainWindow.xaml verrà aperto in Visual Studio e il cursore verrà posizionato sulla riga in cui è definito il pulsante.
+   **Anteprima selezione** . È possibile abilitare questa modalità selezionando il terzo pulsante da sinistra sulla barra degli strumenti nella finestra Albero elementi visivi attivi. Questa modalità mostra il codice XAML in cui è stato dichiarato l'elemento, se si ha accesso al codice sorgente dell'applicazione. Selezionare **Seleziona elemento** e **Anteprima selezione** , quindi selezionare il pulsante nell'applicazione di test. Il file MainWindow.xaml verrà aperto in Visual Studio e il cursore verrà posizionato sulla riga in cui è definito il pulsante.
    ::: moniker-end
 
    ::: moniker range="vs-2017"
-   **Abilita la selezione nell'applicazione in esecuzione**. È possibile abilitare questa modalità quando si seleziona il pulsante all'estrema sinistra sulla barra degli strumenti nella finestra **Struttura ad albero visuale attiva**. Quando questa modalità è attivata, è possibile selezionare un elemento dell'interfaccia utente nell'applicazione affinché lo strumento **Struttura ad albero visuale attiva** (e il **visualizzatore delle proprietà attive**) si aggiorni automaticamente per mostrare il nodo nell'albero corrispondente a tale elemento e le relative proprietà.
+   **Abilita la selezione nell'applicazione in esecuzione** . È possibile abilitare questa modalità quando si seleziona il pulsante all'estrema sinistra sulla barra degli strumenti nella finestra **Struttura ad albero visuale attiva** . Quando questa modalità è attivata, è possibile selezionare un elemento dell'interfaccia utente nell'applicazione affinché lo strumento **Struttura ad albero visuale attiva** (e il **visualizzatore delle proprietà attive** ) si aggiorni automaticamente per mostrare il nodo nell'albero corrispondente a tale elemento e le relative proprietà.
 
-   **Visualizza gli Adorner layout nell'applicazione in esecuzione**. È possibile abilitare questa modalità quando si seleziona il pulsante immediatamente a destra del pulsante di abilitazione della selezione. Quando l'opzione **Visualizza gli Adorner layout** è attivata, la finestra dell'applicazione mostra le linee orizzontali e verticali lungo i bordi dell'oggetto selezionato, per consentire di vederne l'allineamento, nonché rettangoli che mostrano i margini. Ad esempio, attivare entrambe le opzioni **Abilita selezione** e **Visualizza gli Adorner layout** e selezionare il blocco di testo **Aggiungi elemento** nell'applicazione. Dovrebbero venire visualizzati il nodo del blocco di testo in **Struttura ad albero visuale attiva** e le proprietà del blocco di testo nel **visualizzatore delle proprietà attive**, nonché le linee orizzontali e verticali lungo i bordi del blocco di testo.
+   **Visualizza gli Adorner layout nell'applicazione in esecuzione** . È possibile abilitare questa modalità quando si seleziona il pulsante immediatamente a destra del pulsante di abilitazione della selezione. Quando l'opzione **Visualizza gli Adorner layout** è attivata, la finestra dell'applicazione mostra le linee orizzontali e verticali lungo i bordi dell'oggetto selezionato, per consentire di vederne l'allineamento, nonché rettangoli che mostrano i margini. Ad esempio, attivare entrambe le opzioni **Abilita selezione** e **Visualizza gli Adorner layout** e selezionare il blocco di testo **Aggiungi elemento** nell'applicazione. Dovrebbero venire visualizzati il nodo del blocco di testo in **Struttura ad albero visuale attiva** e le proprietà del blocco di testo nel **visualizzatore delle proprietà attive** , nonché le linee orizzontali e verticali lungo i bordi del blocco di testo.
 
    ![LivePropertyViewer in DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")
 
-   **Anteprima selezione**. È possibile abilitare questa modalità selezionando il terzo pulsante da sinistra sulla barra degli strumenti nella finestra Albero elementi visivi attivi. Questa modalità mostra il codice XAML in cui è stato dichiarato l'elemento, se si ha accesso al codice sorgente dell'applicazione. Selezionare le opzioni **Abilita selezione** e **Anteprima selezione** e quindi selezionare il pulsante nell'applicazione di test. Il file MainWindow.xaml verrà aperto in Visual Studio e il cursore verrà posizionato sulla riga in cui è definito il pulsante.
+   **Anteprima selezione** . È possibile abilitare questa modalità selezionando il terzo pulsante da sinistra sulla barra degli strumenti nella finestra Albero elementi visivi attivi. Questa modalità mostra il codice XAML in cui è stato dichiarato l'elemento, se si ha accesso al codice sorgente dell'applicazione. Selezionare le opzioni **Abilita selezione** e **Anteprima selezione** e quindi selezionare il pulsante nell'applicazione di test. Il file MainWindow.xaml verrà aperto in Visual Studio e il cursore verrà posizionato sulla riga in cui è definito il pulsante.
    ::: moniker-end
 
 ## <a name="use-xaml-tools-with-running-applications"></a>Usare gli strumenti XAML con le applicazioni in esecuzione
 
 È possibile usare questi strumenti XAML anche quando non si ha il codice sorgente. Quando si esegue l'associazione a un'applicazione XAML in esecuzione, è possibile usare lo strumento **Struttura ad albero visuale attiva** anche per gli elementi dell'interfaccia utente di tale applicazione. Di seguito è riportato un esempio che usa la stessa applicazione di test WPF usata in precedenza.
 
-1. Avviare l'applicazione **TestXaml** nella configurazione di rilascio. Non è possibile eseguire l'associazione a un processo in esecuzione in una configurazione di tipo**Debug**.
+1. Avviare l'applicazione **TestXaml** nella configurazione di rilascio. Non è possibile eseguire l'associazione a un processo in esecuzione in una configurazione di tipo **Debug** .
 
-2. Aprire una seconda istanza di Visual Studio e fare clic su **Debug > Associa a processo**. Trovare **TestXaml.exe** nell'elenco di processi disponibili e fare clic su **Associa**.
+2. Aprire una seconda istanza di Visual Studio e fare clic su **Debug > Associa a processo** . Trovare **TestXaml.exe** nell'elenco di processi disponibili e fare clic su **Associa** .
 
 3. Viene avviata l'esecuzione dell'applicazione.
 
-4. Nella seconda istanza di Visual Studio aprire la finestra **Struttura ad albero visuale attiva** (**Debug > Finestre > Struttura ad albero visuale attiva**). Dovrebbero venire visualizzati gli elementi dell'interfaccia utente di **TestXaml** e dovrebbe essere possibile modificarli nello stesso modo in cui sono stati modificati direttamente durante il debug dell'applicazione.
+4. Nella seconda istanza di Visual Studio aprire la finestra **Struttura ad albero visuale attiva** ( **Debug > Finestre > Struttura ad albero visuale attiva** ). Dovrebbero venire visualizzati gli elementi dell'interfaccia utente di **TestXaml** e dovrebbe essere possibile modificarli nello stesso modo in cui sono stati modificati direttamente durante il debug dell'applicazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Scrivere ed eseguire il debug del codice XAML in esecuzione con il ricaricamento attivo XAML](xaml-hot-reload.md)

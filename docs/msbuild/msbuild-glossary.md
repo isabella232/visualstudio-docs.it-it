@@ -1,5 +1,7 @@
 ---
 title: Glossario di MSBuild
+description: Informazioni sui termini di glossario di Microsoft Build Engine (MSBuild) che descrivono il motore di compilazione e i relativi componenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f20fdb4cd809e422bc33535f3143b45db99842f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f42d7945656a3f0e3cfbe11f80db26b7e5c124d3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633343"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046321"
 ---
 # <a name="msbuild-glossary"></a>Glossario di MSBuild
 
@@ -25,19 +27,19 @@ AssemblyFoldersEx\
 Percorso del Registro di sistema in cui i fornitori di terze parti archiviano i percorsi per ogni versione del framework supportato, che la risoluzione in fase di progettazione può esaminare per trovare gli assembly di riferimento.
 
 divisione in batch\
-La divisione in batch consiste nel dividere gli elementi in categorie diverse note come *batch*, in base ai metadati degli elementi, e quindi nell'eseguire una destinazione o un'attività una sola volta usando ogni batch. La divisione in batch è l'equivalente MSBuild del costrutto for--loop. Per altre informazioni, vedere [Batch](../msbuild/msbuild-batching.md).
+La divisione in batch consiste nel dividere gli elementi in categorie diverse note come *batch* , in base ai metadati degli elementi, e quindi nell'eseguire una destinazione o un'attività una sola volta usando ogni batch. La divisione in batch è l'equivalente MSBuild del costrutto for--loop. Per altre informazioni, vedere [Batch](../msbuild/msbuild-batching.md).
 
 ambito di compilazione\
 L' ambito di compilazione descrive un oggetto MSBuild, ad esempio una proprietà globale, potenzialmente visibile a un progetto e ai progetti figlio creati in una compilazione a più progetti.
 
 progetto figlio\
-Vedere *progetto, figlio*.
+Vedere *progetto, figlio* .
 
 condizione\
 Diversi elementi di MSBuild possono essere definiti in modo condizionale, vale a dire che l'attributo `Condition` viene visualizzato nell'elemento. Il contenuto degli elementi condizionali viene elaborato solo se la condizione risulta essere `true`. Per altre informazioni, vedere [Condizioni](../msbuild/msbuild-conditions.md).
 
 definizione, elemento\
-Vedere *definizione di un elemento*.
+Vedere *definizione di un elemento* .
 
 creazione di un elemento\
 Durante la fase di esecuzione di una compilazione, gli elementi possono essere creati o modificati dalle attività che hanno elementi `Output` figlio che hanno l'attributo `ItemName`. Si dice che l'attività "crea" i nuovi elementi.
@@ -52,7 +54,7 @@ fase di esecuzione\
 L'esecuzione è la seconda fase della compilazione di un progetto. Le destinazioni selezionate vengono compilate e le attività vengono eseguite. Le proprietà e gli elementi possono essere creati o modificati rispetto ai valori di valutazione.
 
 funzione, proprietà\
-Vedere *funzione di proprietà*.
+Vedere *funzione di proprietà* .
 
 funzione, elemento\
 Vedere funzione Item.
@@ -67,7 +69,7 @@ funzione dell'elemento\
 Le funzioni Item ottengono informazioni sugli elementi nel progetto. Queste funzioni semplificano l'acquisizione di elementi Distinct() e sono più veloci rispetto allo scorrimento in ciclo degli elementi. Queste funzioni servono a modificare le stringhe e i percorsi degli elementi. Per altre informazioni, vedere [funzioni di elemento](../msbuild/item-functions.md).
 
 metadati degli elementi\
-Vedere *metadati, elemento*.
+Vedere *metadati, elemento* .
 
 tipo di elemento\
 I tipi di elementi sono elenchi denominati di elementi che possono essere usati come parametri per le attività. Le attività usano i valori degli elementi per eseguire i passaggi del processo di compilazione. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
@@ -85,7 +87,7 @@ profilo\
 Subset del framework completo. Viene usato per ridurre al minimo la quantità di dati che è necessario scaricare in un computer.
 
 file di progetto\
-Un file di progetto contiene lo script di MSBuild che controlla la compilazione. I file di progetto hanno generalmente un'estensione che termina con *proj*, ad esempio *csproj* o *vbproj*. I file di progetto possono importare file di proprietà e file di destinazione.
+Un file di progetto contiene lo script di MSBuild che controlla la compilazione. I file di progetto hanno generalmente un'estensione che termina con *proj* , ad esempio *csproj* o *vbproj* . I file di progetto possono importare file di proprietà e file di destinazione.
 
 proprietà\
 Una proprietà è una coppia chiave-valore usata per controllare il processo di compilazione. Per altre informazioni, vedere [proprietà di MSBuild](../msbuild/msbuild-properties.md).
@@ -94,13 +96,13 @@ proprietà, ambiente\
 Una proprietà dell'ambiente è una proprietà che viene automaticamente inizializzata sul valore di una variabile di ambiente di sistema con lo stesso nome. Per altre informazioni, vedere [proprietà di MSBuild](../msbuild/msbuild-properties.md).
 
 file di proprietà\
-Un file di proprietà è un file di progetto che contiene principalmente gruppi di proprietà e gruppi di elementi che forniscono indicazioni per la compilazione. Per convenzione, l'estensione di file è *props*. I file di proprietà vengono in genere importati all'inizio dei file di progetto associati.
+Un file di proprietà è un file di progetto che contiene principalmente gruppi di proprietà e gruppi di elementi che forniscono indicazioni per la compilazione. Per convenzione, l'estensione di file è *props* . I file di proprietà vengono in genere importati all'inizio dei file di progetto associati.
 
 proprietà, funzione\
 Una funzione di proprietà è una proprietà di sistema o un metodo che si può usare per valutare gli script di MSBuild. I metodi di proprietà possono essere usati per leggere l'ora di sistema, confrontare stringhe, trovare la corrispondenza per espressioni regolari ed eseguire altre azioni. Per altre informazioni, vedere [Funzioni delle proprietà](../msbuild/property-functions.md).
 
 funzione di proprietà, annidata\
-Le funzioni di proprietà possono essere combinate per formare funzioni più complesse. Ad esempio:
+Le funzioni di proprietà possono essere combinate per formare funzioni più complesse. Ad esempio,
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
@@ -131,7 +133,7 @@ assembly di riferimento\
 Assembly usato in fase di progettazione per creare un'applicazione. È possibile rimuovere da un assembly di riferimento il codice effettivo e le interfacce private, lasciando solo i metadati e le interfacce pubbliche.
 
 proprietà del Registro di sistema\
-Vedere *proprietà, Registro di sistema*.
+Vedere *proprietà, Registro di sistema* .
 
 destinazione\
 Una destinazione raggruppa le attività in un determinato ordine ed espone le sezioni del file di progetto come punti di ingresso al processo di compilazione. Per altre informazioni, vedere [Destinazioni](../msbuild/msbuild-targets.md).
@@ -158,7 +160,7 @@ targeting pack\
 Elenco di assembly distribuiti con un determinato framework e set di assembly di riferimento per tale framework.
 
 file di destinazioni\
-Un file di destinazioni è un file di progetto contenente principalmente destinazioni e attività che forniscono indicazioni per la compilazione. Per convenzione, l'estensione di file è *targets*. I file di destinazione vengono in genere importati alla fine dei file di progetto associati.
+Un file di destinazioni è un file di progetto contenente principalmente destinazioni e attività che forniscono indicazioni per la compilazione. Per convenzione, l'estensione di file è *targets* . I file di destinazione vengono in genere importati alla fine dei file di progetto associati.
 
 attività\
 Le attività sono unità di codice eseguibile usate dai progetti MSBuild per eseguire operazioni di compilazione. Ad esempio, un'attività potrebbe compilare file di input o eseguire uno strumento esterno. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
@@ -167,8 +169,8 @@ trasformazione\
 Una trasformazione è una conversione uno a uno di una raccolta di elementi in un'altra. Oltre a consentire a un progetto di convertire le raccolte di elementi, una trasformazione consente a una destinazione di identificare un mapping diretto tra gli input e gli output. Per altre informazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md).
 
 metadati noti\
-Vedere *metadati, noti*.
+Vedere *metadati, noti* .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [MSBuild](../msbuild/msbuild.md)

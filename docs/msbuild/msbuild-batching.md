@@ -1,5 +1,7 @@
 ---
 title: Batch MSBuild | Microsoft Docs
+description: Informazioni su come MSBuild divide gli elenchi di elementi in diverse categorie, o batch, in base ai metadati degli elementi, ed esegue una destinazione o un'attività una volta per ogni batch.
+ms.custom: SEO-VS-2020
 ms.date: 06/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d7c72d1da270220144cd5e6167ebecb66462ba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c4d91e95d080b93c8bcdc4486593b4c94bcb501
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289274"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047704"
 ---
 # <a name="msbuild-batching"></a>Batch MSBuild
 
@@ -205,13 +207,13 @@ Il motivo è che quando si usa la suddivisione in batch delle destinazioni, ogni
 
 ## <a name="property-functions-using-metadata"></a>Funzioni delle proprietà che usano i metadati
 
-La suddivisione in batch può essere controllata usando funzioni delle proprietà che includono i metadati. Ad esempio:
+La suddivisione in batch può essere controllata usando funzioni delle proprietà che includono i metadati. Ad esempio,
 
 `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`
 
 usa <xref:System.IO.Path.Combine%2A> per combinare un percorso di cartella radice con un percorso di elemento Compile.
 
-Le funzioni delle proprietà possono non apparire all'interno dei valori dei metadati. Ad esempio:
+Le funzioni delle proprietà possono non apparire all'interno dei valori dei metadati. Ad esempio,
 
 `%(Compile.FullPath.Substring(0,3))`
 
@@ -219,7 +221,7 @@ non è consentito.
 
 Per altre informazioni sulle funzioni delle proprietà, vedere [Funzioni delle proprietà](../msbuild/property-functions.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)

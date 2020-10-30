@@ -1,5 +1,7 @@
 ---
 title: Elemento Parameter | Microsoft Docs
+description: Informazioni sull'elemento del parametro MSBuild, che contiene informazioni su un parametro specifico per un'attività generata da un oggetto UsingTask TaskFactory.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbf0c25967d84e930ee97a84709c808d3541e733
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7aa8809cbce8f07e18666afb1734026fdc9694b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78263103"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048887"
 ---
 # <a name="parameter-element"></a>Elemento Parameter
 
@@ -79,7 +81,7 @@ Contiene informazioni su un parametro specifico per un'attività generata da un 
 </UsingTask>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

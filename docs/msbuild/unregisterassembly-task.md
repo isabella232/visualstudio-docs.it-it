@@ -1,5 +1,7 @@
 ---
 title: Attività UnregisterAssembly | Microsoft Docs
+description: Informazioni su come MSBuild utilizza l'attività UnregisterAssembly per annullare la registrazione degli assembly specificati per scopi di interoperabilità COM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8cddcf9bf0632914d1a6de1cc904dbf0f173e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 068073b2d84d95ad3d86abe582691be0dd4af895
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631497"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046916"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly (attività)
 
@@ -39,7 +41,7 @@ Annulla la registrazione degli assembly specificati ai fini dell'interoperabilit
 |`AssemblyListFile`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Contiene informazioni sullo stato tra l'attività `RegisterAssembly` e l'attività `UnregisterAssembly`. Questo impedisce all'attività di tentare l'annullamento della registrazione di un assembly che non è riuscita nell'attività `RegisterAssembly`.<br /><br /> Se questo parametro è specificato, i parametri `Assemblies` e `TypeLibFiles` verranno ignorati.|
 |`TypeLibFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Annulla la registrazione della libreria dei tipi indicata dall'assembly specificato. **Nota:** questo parametro è necessario solo se il nome dei file della libreria dei tipi non corrisponde a quello dell'assembly.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  Per la corretta esecuzione dell'attività non è necessario che l'assembly sia presente. Se si prova ad annullare la registrazione di un assembly inesistente, l'attività verrà comunque eseguita correttamente e verrà visualizzato un avviso. Questa situazione si verifica perché l'attività ha la funzione di rimuovere la registrazione dell'assembly dal Registro di sistema. Se l'assembly non esiste, non si trova nel Registro di sistema e l'attività viene pertanto eseguita correttamente.
 
@@ -64,7 +66,7 @@ Annulla la registrazione degli assembly specificati ai fini dell'interoperabilit
 </Project>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [RegisterAssembly (attività)](../msbuild/registerassembly-task.md)
 - [Attività](../msbuild/msbuild-tasks.md)

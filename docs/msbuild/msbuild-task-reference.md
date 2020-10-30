@@ -1,5 +1,7 @@
 ---
 title: Riferimenti delle attività MSBuild | Microsoft Docs
+description: Informazioni sulle attività incluse in MSBuild, che forniscono il codice che viene eseguito durante il processo di compilazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58e247dc242fcacd7ea94f9f078af05dd56299e0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78865323"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049081"
 ---
 # <a name="msbuild-task-reference"></a>Riferimenti delle attività MSBuild
 
@@ -31,7 +33,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 | Parametro | Descrizione |
 |-------------------| - |
 | `Condition` | Parametro `String` facoltativo.<br /><br /> `Boolean`Espressione utilizzata dal motore MSBuild per determinare se questa attività verrà eseguita. Per informazioni sulle condizioni supportate da MSBuild, vedere [condizioni](../msbuild/msbuild-conditions.md). |
-| `ContinueOnError` | Parametro facoltativo. Può contenere uno dei valori seguenti:<br /><br /> -   **WarnAndContinue** o **true**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento [target](../msbuild/target-element-msbuild.md) e della compilazione continua e tutti gli errori dall'attività vengono considerati avvisi.<br />-   **ErrorAndContinue**. Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.<br />-   **ErrorAndStop** o **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.<br /><br /> Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.<br /><br /> Per altre informazioni, vedere [procedura: ignorare gli errori nelle attività](../msbuild/how-to-ignore-errors-in-tasks.md). |
+| `ContinueOnError` | Parametro facoltativo. Può contenere uno dei valori seguenti:<br /><br /> -   **WarnAndContinue** o **true** . Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento [target](../msbuild/target-element-msbuild.md) e della compilazione continua e tutti gli errori dall'attività vengono considerati avvisi.<br />-   **ErrorAndContinue** . Quando un'attività ha esito negativo, l'esecuzione delle attività successive nell'elemento `Target` e della compilazione continua e tutti gli errori delle attività vengono considerati errori.<br />-   **ErrorAndStop** o **false** (impostazione predefinita). Quando un'attività ha esito negativo, le attività rimanenti nell'elemento `Target` e la compilazione non vengono eseguite e l'intero elemento `Target` e la compilazione vengono considerati come non riusciti.<br /><br /> Le versioni di .NET Framework precedenti alla 4.5 supportano solo i valori `true` e `false`.<br /><br /> Per altre informazioni, vedere [procedura: ignorare gli errori nelle attività](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -53,7 +55,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - [AspNetCompiler (attività)](../msbuild/aspnetcompiler-task.md)
 
- Esegue il wrapping *aspnet_compiler.exe*, un'utilità per la precompilazione delle applicazioni ASP.NET.
+ Esegue il wrapping *aspnet_compiler.exe* , un'utilità per la precompilazione delle applicazioni ASP.NET.
 
 - [AssignCulture (attività)](../msbuild/assignculture-task.md)
 
@@ -121,7 +123,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - [FindAppConfigFile (attività)](../msbuild/findappconfigfile-task.md)
 
- Trova il file *app.config*, se presente, negli elenchi disponibili.
+ Trova il file di *app.config* , se presente, negli elenchi forniti.
 
 - [FindInList (attività)](../msbuild/findinlist-task.md)
 
@@ -307,7 +309,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
  Crea un archivio con estensione *zip* dal contenuto di una directory.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
 - [Scrittura di attività](../msbuild/task-writing.md)

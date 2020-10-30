@@ -1,5 +1,7 @@
 ---
 title: Elemento Task di UsingTask (MSBuild) | Microsoft Docs
+description: Informazioni sull'elemento Task di UsingTask di MSBuild, che contiene i dati passati a un TaskFactory TaskFactory.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36644a6b21092361d92dba5f0886eb4198884995
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f99452021b0efef1e5df305e984c684f3f446905
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78263188"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047890"
 ---
 # <a name="task-element-of-usingtask-msbuild"></a>Elemento Task di UsingTask (MSBuild)
 
@@ -50,7 +52,7 @@ Contiene i dati passati a un oggetto `UsingTask` `TaskFactory` . Per altre infor
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|Dati|Il testo compreso tra i tag `Task` viene inviato testualmente a `TaskFactory`.|
+|Data|Il testo compreso tra i tag `Task` viene inviato testualmente a `TaskFactory`.|
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -75,7 +77,7 @@ Contiene i dati passati a un oggetto `UsingTask` `TaskFactory` . Per altre infor
 </UsingTask>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

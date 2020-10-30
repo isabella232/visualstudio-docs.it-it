@@ -1,5 +1,7 @@
 ---
 title: Configurazioni standard e personalizzate del set di strumenti | Microsoft Docs
+description: Informazioni sui set di strumenti MSBuild standard e personalizzati, che contengono riferimenti a attività, destinazioni e strumenti che è possibile usare per compilare un progetto di applicazione.
+ms.custom: SEO-VS-2020
 ms.date: 01/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb75d6fc02f2841383127482503799b2c78512cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b82eaf6ca52b04d39e9f776feca74f5bb223a0d5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289183"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048178"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurazioni standard e personalizzate del set di strumenti
 
@@ -29,9 +31,9 @@ Un set di strumenti di MSBuild contiene riferimenti ad attività, destinazioni e
 
 |ToolsVersion|Percorso del set di strumenti (come specificato nella proprietà di compilazione MSBuildToolsPath o MSBuildBinPath)|
 |------------------| - |
-|2,0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
+|2.0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
 |3,5|*\<Windows installation path>\Microsoft.NET\Framework\v3.5\\*|
-|4,0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
+|4.0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
 |Corrente|*\<Visual Studio installation path>\MSBuild\Current\bin*|
 
  Il valore `ToolsVersion` determina quale set di strumenti viene usato da un progetto generato da Visual Studio. In Visual Studio 2019 il valore predefinito è "Current" indipendentemente dalla versione specificata nel file di progetto, ma è possibile eseguire l'override di tale attributo usando l'opzione **/toolsversion** a un prompt dei comandi. Per informazioni su questo attributo e altri modi per specificare `ToolsVersion` , vedere [override delle impostazioni ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
@@ -43,9 +45,9 @@ Un set di strumenti di MSBuild contiene riferimenti ad attività, destinazioni e
 
 |ToolsVersion|Percorso del set di strumenti (come specificato nella proprietà di compilazione MSBuildToolsPath o MSBuildBinPath)|
 |------------------| - |
-|2,0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
+|2.0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
 |3,5|*\<Windows installation path>\Microsoft.NET\Framework\v3.5\\*|
-|4,0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
+|4.0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
 |15.0|*\<Visual Studio installation path>\MSBuild\15.0\bin*|
 
  Il valore `ToolsVersion` determina quale set di strumenti viene usato da un progetto generato da Visual Studio. In Visual Studio 2017 il valore predefinito è "15.0" indipendentemente dalla versione specificata nel file di progetto, ma è possibile eseguire l'override di tale attributo usando l'opzione **/toolsversion** a un prompt dei comandi. Per informazioni su questo attributo e altri modi per specificare `ToolsVersion` , vedere [override delle impostazioni ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
@@ -53,11 +55,11 @@ Un set di strumenti di MSBuild contiene riferimenti ad attività, destinazioni e
 
 Visual Studio 2017 e versioni successive non usano una chiave del Registro di sistema per il percorso di MSBuild. Per le versioni di MSBuild precedenti alla 15.0 installate con Visual Studio 2017, le seguenti chiavi del Registro di sistema specificano il percorso di installazione di MSBuild.exe.
 
-|Chiave del Registro di sistema|Nome chiave|Valore della chiave della stringa|
+|Chiave del Registro di sistema|Nome della chiave|Valore della chiave della stringa|
 |------------------|--------------|----------------------|
-|**\ HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\** |**MSBuildToolsPath**|**Percorso di installazione di .NET Framework 2.0**|
-|**\ HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\** |**MSBuildToolsPath**|**Percorso di installazione di .NET Framework 3.5**|
-|**\ HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\** |**MSBuildToolsPath**|**Percorso di installazione di .NET Framework 4**|
+|**\ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\** |**MSBuildToolsPath**|**Percorso di installazione di .NET Framework 2.0**|
+|**\ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\** |**MSBuildToolsPath**|**Percorso di installazione di .NET Framework 3.5**|
+|**\ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\** |**MSBuildToolsPath**|**Percorso di installazione di .NET Framework 4**|
 
 ### <a name="sub-toolsets"></a>Subset di strumenti
 
@@ -74,9 +76,9 @@ Visual Studio 2017 e versioni successive non usano una chiave del Registro di si
 
 ## <a name="custom-toolset-definitions"></a>Definizioni personalizzate del set di strumenti
 
- Se un set di strumenti standard non soddisfa i requisiti di compilazione, è possibile creare un set di strumenti personalizzato. È ad esempio possibile disporre di uno scenario Lab di compilazione in cui è necessario disporre di un sistema separato per la compilazione di progetti C++. Utilizzando un set di strumenti personalizzato, è possibile assegnare valori personalizzati all' `ToolsVersion` attributo quando si creano progetti o si eseguono *MSBuild.exe*. In questo modo, è anche possibile usare la `$(MSBuildToolsPath)` proprietà per importare i file con *estensione targets* da tale directory, nonché definire proprietà personalizzate del set di strumenti che possono essere usate per qualsiasi progetto che usa tale set di strumenti.
+ Se un set di strumenti standard non soddisfa i requisiti di compilazione, è possibile creare un set di strumenti personalizzato. È ad esempio possibile disporre di uno scenario Lab di compilazione in cui è necessario disporre di un sistema separato per la compilazione di progetti C++. Utilizzando un set di strumenti personalizzato, è possibile assegnare valori personalizzati all' `ToolsVersion` attributo quando si creano progetti o si eseguono *MSBuild.exe* . In questo modo, è anche possibile usare la `$(MSBuildToolsPath)` proprietà per importare i file con *estensione targets* da tale directory, nonché definire proprietà personalizzate del set di strumenti che possono essere usate per qualsiasi progetto che usa tale set di strumenti.
 
- Specificare un set di strumenti personalizzato nel file di configurazione per *MSBuild.exe* (o per lo strumento personalizzato che ospita il motore MSBuild se è quello che si sta usando). Ad esempio, il file di configurazione per *MSBuild.exe* può includere la definizione di set di strumenti seguente se si vuole definire un set di strumenti denominato *MyCustomToolset*.
+ Specificare un set di strumenti personalizzato nel file di configurazione per *MSBuild.exe* (o per lo strumento personalizzato che ospita il motore MSBuild se è quello che si sta usando). Ad esempio, il file di configurazione per *MSBuild.exe* può includere la definizione di set di strumenti seguente se si vuole definire un set di strumenti denominato *MyCustomToolset* .
 
 ```xml
 <msbuildToolsets default="MyCustomToolset">
@@ -112,6 +114,6 @@ Visual Studio 2017 e versioni successive non usano una chiave del Registro di si
 
   Si possono anche aggiungere al file di configurazione proprietà personalizzate specifiche di ToolsVersion, usando la stessa sintassi usata per aggiungere la proprietà MSBuildToolsPath. Per rendere disponibili per il file di progetto queste proprietà personalizzate, usare lo stesso nome del valore specificato nel file di configurazione. È possibile definire i set di strumenti ma non i subset di strumenti nel file di configurazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Set di strumenti (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

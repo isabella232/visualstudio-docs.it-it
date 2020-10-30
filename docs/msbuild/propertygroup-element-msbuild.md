@@ -1,5 +1,7 @@
 ---
 title: Elemento PropertyGroup (MSBuild) | Microsoft Docs
+description: Informazioni sull'elemento PropertyGroup di MSBuild, che contiene un set di elementi della proprietà definiti dall'utente.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b94cf266be81b81aca9c83fe8d29b9777ee9114b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d276cdfa997bb02cfa44037d8ebe758a4d2704e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632927"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048810"
 ---
 # <a name="propertygroup-element-msbuild"></a>Elemento PropertyGroup (MSBuild)
 
@@ -44,7 +46,7 @@ Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) d
 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -74,7 +76,7 @@ Contiene un set di elementi [Property](../msbuild/property-element-msbuild.md) d
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
 - [proprietà di MSBuild](../msbuild/msbuild-properties.md)

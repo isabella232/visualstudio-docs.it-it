@@ -1,5 +1,7 @@
 ---
 title: Ordine di compilazione delle destinazioni | Microsoft Docs
+description: Informazioni su come specificare l'ordine in cui vengono eseguite le destinazioni MSBuild, se l'input per una destinazione dipende dall'output di un'altra destinazione.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607584b4b41bdfde224bdb35d30eec1c6c8a4197
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 955c8c496df45bbfce28bdac1571f84649621024
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585457"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048068"
 ---
 # <a name="target-build-order"></a>Ordine di compilazione delle destinazioni
 
@@ -73,7 +75,7 @@ Se non sono presenti destinazioni iniziali, destinazioni predefinite o destinazi
 
 ## <a name="target-dependencies"></a>Dipendenze tra destinazioni
 
-Le destinazioni possono descrivere relazioni di dipendenza reciproche. L'attributo `DependsOnTargets` indica che una destinazione dipende da altre destinazioni. Ad esempio:
+Le destinazioni possono descrivere relazioni di dipendenza reciproche. L'attributo `DependsOnTargets` indica che una destinazione dipende da altre destinazioni. Ad esempio,
 
 ```xml
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />
@@ -130,6 +132,6 @@ MSBuild determina l'ordine di compilazione delle destinazioni, come segue:
 
 7. Dopo che la destinazione viene eseguita o ignorata, vengono eseguite le eventuali altre destinazioni che la elencano in un attributo `AfterTargets`.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Server di destinazione](../msbuild/msbuild-targets.md)

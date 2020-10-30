@@ -1,5 +1,7 @@
 ---
 title: Informazioni di riferimento su MSBuild | Microsoft Docs
+description: Accedere ai collegamenti ad articoli che contengono informazioni di riferimento per MSBuild, il sistema di compilazione per Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b164d3d141c66817afd0eb88054fd9220656c0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5b7bb9287f26825ad1a90c3f339d7308fd6def1
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633265"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046567"
 ---
 # <a name="msbuild-reference"></a>Riferimenti a MSBuild
 
@@ -53,7 +55,7 @@ MSBuild è il sistema di compilazione di Visual Studio. I collegamenti seguenti 
  Vengono descritti gli argomenti e le opzioni che possono essere utilizzati con MSBuild.exe.
 
 - [. File di destinazione](../msbuild/msbuild-dot-targets-files.md)\
- Viene descritto *. * File di destinazione incluso in MSBuild.
+ Viene descritto *.* File di destinazione incluso in MSBuild.
 
 - [Metadati noti degli elementi](../msbuild/msbuild-well-known-item-metadata.md)\
  Elenca i metadati creati con ogni elemento.
@@ -70,7 +72,7 @@ MSBuild è il sistema di compilazione di Visual Studio. I collegamenti seguenti 
 - [Caratteri speciali di escape](../msbuild/special-characters-to-escape.md)\
  Elenca i caratteri che possono essere preceduti da un carattere di escape per essere interpretati correttamente. Una sequenza di escape è una serie di caratteri indicante che ciò che segue è un'interpretazione alternativa.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica di MSBuild](../msbuild/msbuild.md)
 - [Microsoft.Build.Evaluation](/dotnet/api/microsoft.build.evaluation)

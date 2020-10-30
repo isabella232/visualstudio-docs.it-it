@@ -1,5 +1,7 @@
 ---
 title: Modifica di fogli di stile XSLT
+description: Informazioni sulle funzionalità dell'editor XML per la modifica dei fogli di stile XSLT, incluse la colorazione della sintassi, le sottolineature e l'avvio del debugger XSLT dall'editor.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81bab324c58c06cc1ca553bae2f81faf474c4ad0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31d961de62822bf036a898601ba0125db5a0dafc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592841"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045877"
 ---
 # <a name="edit-xslt-style-sheets"></a>Modifica dei fogli di stile XSLT
 
@@ -43,6 +45,6 @@ Il codice nei blocchi di script è supportato dal debugger XSLT, consentendo di 
 
 È possibile avviare il debugger XSLT da un file XSLT nell'editor XML. Il debugger supporta l'impostazione dei punti di interruzione nel file XSLT, la visualizzazione dello stato di esecuzione di XSLT e così via. Se si passa con il mouse su una variabile XSLT, viene visualizzata una descrizione con il valore della matrice. Il debugger può essere usato per eseguire il debug di un foglio di stile o di una trasformazione XSLT chiamata da un'altra applicazione. Per ulteriori informazioni, vedere [debug di XSLT](../xml-tools/debugging-xslt.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Editor XML](../xml-tools/xml-editor.md)

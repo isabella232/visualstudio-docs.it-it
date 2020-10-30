@@ -1,5 +1,7 @@
 ---
 title: Proprietà di MSBuild | Microsoft Docs
+description: Informazioni sul modo in cui le coppie di proprietà nome-valore di MSBuild possono passare valori a attività, valutare condizioni e archiviare valori.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39f1f612244fedcc707475d067e67500dc76e1d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61cff0bfa1db43b196d7f6403b5140f9af2947ba
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633291"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046137"
 ---
 # <a name="msbuild-properties"></a>proprietà di MSBuild
 
@@ -64,7 +66,7 @@ Le proprietà sono coppie nome-valore che possono essere usate per configurare l
 
 ## <a name="registry-properties"></a>Proprietà del Registro di sistema
 
- È possibile leggere i valori del registro di sistema usando la sintassi seguente, dove `Hive` è l'hive del registro di sistema (ad esempio, **HKEY_LOCAL_MACHINE**), `MyKey` è il nome della chiave, `MySubKey` è il nome della sottochiave e `Value` è il valore della sottochiave.
+ È possibile leggere i valori del registro di sistema usando la sintassi seguente, dove `Hive` è l'hive del registro di sistema (ad esempio, **HKEY_LOCAL_MACHINE** ), `MyKey` è il nome della chiave, `MySubKey` è il nome della sottochiave e `Value` è il valore della sottochiave.
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
@@ -88,7 +90,7 @@ $(registry:Hive\MyKey\MySubKey)
 
 ## <a name="global-properties"></a>Proprietà globali
 
- MSBuild consente di impostare le proprietà nella riga di comando usando l'opzione **-Property** (o **-p**). Questi valori delle proprietà globali eseguono l'override dei valori delle proprietà impostati nel file di progetto. incluse le proprietà di ambiente, ma non le proprietà riservate, che non possono essere modificate.
+ MSBuild consente di impostare le proprietà nella riga di comando usando l'opzione **-Property** (o **-p** ). Questi valori delle proprietà globali eseguono l'override dei valori delle proprietà impostati nel file di progetto. incluse le proprietà di ambiente, ma non le proprietà riservate, che non possono essere modificate.
 
  L'esempio seguente imposta la proprietà `Configuration` globale su `DEBUG`.
 
@@ -144,7 +146,7 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 </PropertyGroup>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)

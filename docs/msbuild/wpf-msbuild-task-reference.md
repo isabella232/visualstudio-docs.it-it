@@ -1,5 +1,7 @@
 ---
 title: Informazioni di riferimento sulle attività MSBuild WPF | Microsoft Docs
+description: Vedere un riferimento a un'attività per il processo di compilazione Windows Presentation Foundation (WPF), che estende MSBuild con attività aggiuntive.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d994e32b717ff566a2e38acee732c7525d1bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 395f50db4159e8ace1b317f5926ed676c7462fe3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630847"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047521"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Informazioni di riferimento sulle attività MSBuild WPF
 
@@ -57,7 +59,7 @@ Il processo di compilazione di Windows Presentation Foundation (WPF) estende Mic
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Incorpora una o più risorse (*jpg*, *ico*, *BMP*, XAML in formato binario e altri tipi di estensione) in un file con estensione *Resources* .
+ Incorpora una o più risorse ( *jpg* , *ico* , *BMP* , XAML in formato binario e altri tipi di estensione) in un file con estensione *Resources* .
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -65,8 +67,8 @@ Il processo di compilazione di Windows Presentation Foundation (WPF) estende Mic
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Aggiunge l' **\<hostInBrowser />** elemento al manifesto dell'applicazione (* \<projectname> . exe. manifest*) quando viene compilato un progetto di applicazione browser XAML (XBAP).
+ Aggiunge l' **\<hostInBrowser />** elemento al manifesto dell'applicazione ( *\<projectname> . exe. manifest* ) quando viene compilato un progetto di applicazione browser XAML (XBAP).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [MSBuild](../msbuild/msbuild.md)

@@ -1,5 +1,7 @@
 ---
 title: Attività MSBuild | Microsoft Docs
+description: Informazioni sul modo in cui l'attività MSBuild usa lo stesso processo MSBuild per compilare progetti figlio da un altro progetto MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 07/30/2019
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab54c5c523c833be60ef4b5d5088b6217a3111a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4d1f9fe79ae5092992ff66ddaf5e10729e8b19a
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82072580"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049066"
 ---
 # <a name="msbuild-task"></a>MSBuild (attività)
 
@@ -49,11 +51,11 @@ Compila i progetti MSBuild da un altro progetto MSBuild.
 | `Targets` | Parametro `String` facoltativo.<br /><br /> Specifica la destinazione o le destinazioni da compilare nei file di progetto. Usare un punto e virgola per separare le voci di un elenco di nomi di destinazione. Se nessuna destinazione viene specificata nell'attività `MSBuild`, vengono compilate le destinazioni predefinite specificate nei file di progetto. **Nota:** le destinazioni devono essere presenti in tutti i file di progetto. In caso contrario, si verifica un errore di compilazione. |
 | `ToolsVersion` | Parametro `String` facoltativo.<br /><br /> Specifica la `ToolsVersion` da usare quando si compilano i progetti passati a questa attività.<br /><br /> Consente a un'attività MSBuild di compilare un progetto destinato a una versione diversa del .NET Framework rispetto a quello specificato nel progetto. I valori validi sono `2.0`, `3.0` e `3.5`. Il valore predefinito è `3.5`. |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
- A differenza dell'uso dell' [attività Exec](../msbuild/exec-task.md) per avviare *MSBuild.exe*, questa attività USA lo stesso processo MSBuild per compilare i progetti figlio. L'elenco di destinazioni già compilate che possono essere ignorate viene condiviso tra le compilazioni padre e figlio. Questa attività è anche più veloce perché non viene creato alcun nuovo processo MSBuild.
+ A differenza dell'uso dell' [attività Exec](../msbuild/exec-task.md) per avviare *MSBuild.exe* , questa attività USA lo stesso processo MSBuild per compilare i progetti figlio. L'elenco di destinazioni già compilate che possono essere ignorate viene condiviso tra le compilazioni padre e figlio. Questa attività è anche più veloce perché non viene creato alcun nuovo processo MSBuild.
 
  Questa attività può elaborare non solo i file di progetto, ma anche i file di soluzione.
 
@@ -195,7 +197,7 @@ Compila i progetti MSBuild da un altro progetto MSBuild.
 </Project>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

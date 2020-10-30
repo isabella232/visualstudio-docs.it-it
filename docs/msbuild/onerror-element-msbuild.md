@@ -1,5 +1,7 @@
 ---
 title: Elemento OnError (MSBuild) | Microsoft Docs
+description: Informazioni su come MSBuild utilizza l'elemento OnError per determinare l'esecuzione di una o più destinazioni, se l'attributo ContinueOnError è false per un'attività non riuscita.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18edfe06a4f2cb98fcb41e93c920b03c53daea8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3793dddf62f67d1c2ff75d8df863dadfdadb7a1
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633083"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048947"
 ---
 # <a name="onerror-element-msbuild"></a>Elemento OnError (MSBuild)
 
@@ -43,7 +45,7 @@ Fa in modo che vengano eseguite una o più destinazioni se l'attributo `Continue
 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -60,7 +62,7 @@ Fa in modo che vengano eseguite una o più destinazioni se l'attributo `Continue
 | - | - |
 | [Destinazione](../msbuild/target-element-msbuild.md) | Elemento contenitore per le attività di MSBuild. |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  MSBuild esegue l' `OnError` elemento se una delle attività dell' `Target` elemento ha esito negativo con l' `ContinueOnError` attributo impostato su `ErrorAndStop` (o `false` ). Quando l'attività ha esito negativo, vengono eseguite le destinazioni specificate nell'attributo `ExecuteTargets`. Se la destinazione include più di un elemento `OnError`, gli elementi `OnError` vengono eseguiti in sequenza quando l'attività ha esito negativo.
 
@@ -80,7 +82,7 @@ Fa in modo che vengano eseguite una o più destinazioni se l'attributo `Continue
 </Target>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Server di destinazione](../msbuild/msbuild-targets.md)

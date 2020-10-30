@@ -1,5 +1,7 @@
 ---
 title: Modi per eseguire il debug del codice XSLT
+description: Informazioni su come eseguire il debug di codice XSLT in Visual Studio usando il debugger XSLT per scorrere il codice, impostare i punti di interruzione e visualizzare gli Stati di esecuzione XSLT.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: overview
 author: TerryGLee
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e3885aa895cec5ed080b7a8b4d22522d2e9edf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad9ec70e5cd0f215dbb138db521dee09d722242
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815617"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047751"
 ---
 # <a name="debugging-xslt"></a>Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)
 
@@ -33,7 +35,7 @@ Una volta avviato il debug, nel debugger XSLT vengono aperte finestre di visuali
 
 1. Aprire il foglio di stile o il file XML in Visual Studio.
 
-1. Selezionare **Avvia debug XSLT** dal menu **XML** oppure premere **ALT** + **F5**.
+1. Selezionare **Avvia debug XSLT** dal menu **XML** oppure premere **ALT** + **F5** .
 
 ## <a name="debug-from-an-app-that-uses-xslt"></a>Eseguire il debug da un'app che usa XSLT
 
@@ -90,8 +92,8 @@ namespace ConsoleApplication
 
 Il [Profiler XSLT](../xml-tools/xslt-profiler.md) è uno strumento che consente agli sviluppatori di misurare, valutare e risolvere i problemi correlati alle prestazioni nel codice XSLT creando rapporti di prestazioni XSLT dettagliati. Per altre informazioni, vedere [XSLT Profiler](../xml-tools/xslt-profiler.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Procedura dettagliata: eseguire il debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [Procedura dettagliata: Eseguire il debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
 - [Esaminare prima di tutto il debugger di Visual Studio](../debugger/debugger-feature-tour.md)
 - [Nozioni fondamentali sul debug: punti di interruzione](../debugger/using-breakpoints.md)

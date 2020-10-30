@@ -1,5 +1,7 @@
 ---
 title: Elemento ProjectExtensions (MSBuild) | Microsoft Docs
+description: Informazioni sull'elemento MSBuildProjectExtensions, che consente ai file di progetto MSBuild di contenere informazioni non di MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94f2d88aa19bf01ebe6f25c7d80772c812abcc59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74f01f9e6a82d89ca99455f160bda1e9b7e24345
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77632966"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048838"
 ---
 # <a name="projectextensions-element-msbuild"></a>Elemento ProjectExtensions (MSBuild)
 
@@ -43,7 +45,7 @@ Consente ai file di progetto MSBuild di contenere informazioni non MSBuild. Qual
 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
  Nessuno
 
@@ -57,7 +59,7 @@ Consente ai file di progetto MSBuild di contenere informazioni non MSBuild. Qual
 | - | - |
 | [Progetto](../msbuild/project-element-msbuild.md) | Elemento radice obbligatorio di un file di progetto MSBuild. |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  `ProjectExtensions`È possibile utilizzare un solo elemento in un progetto MSBuild.
 
@@ -77,7 +79,7 @@ Consente ai file di progetto MSBuild di contenere informazioni non MSBuild. Qual
 </ProjectExtensions>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

@@ -1,5 +1,7 @@
 ---
 title: Framework e piattaforma di destinazione di MSBuild | Microsoft Docs
+description: Informazioni su come creare un progetto MSBuild da eseguire in una versione di .NET Framework di destinazione e una piattaforma di destinazione o un'architettura software.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
@@ -8,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c55ce57adb5b86941b5953732d57a642eb4f943
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d29c4e4659e8e6a5564e3fb41f54615bf29171d2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350836"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049099"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Framework e piattaforma di destinazione di MSBuild
 
-È possibile compilare un progetto per eseguirlo in un *framework di destinazione*, che è una versione particolare di .NET Framework e una *piattaforma di destinazione*, che è un'architettura software particolare.  Ad esempio, è possibile fare riferimento a un'applicazione per l'esecuzione nel .NET Framework 2,0 in una piattaforma a 32 bit compatibile con la famiglia di processori 80x86 ("x86"). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*.
+È possibile compilare un progetto per eseguirlo in un *framework di destinazione* , che è una versione particolare di .NET Framework e una *piattaforma di destinazione* , che è un'architettura software particolare.  Ad esempio, è possibile fare riferimento a un'applicazione per l'esecuzione nel .NET Framework 2,0 in una piattaforma a 32 bit compatibile con la famiglia di processori 80x86 ("x86"). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione* .
 
 > [!IMPORTANT]
 > Questo articolo descrive il metodo precedente per specificare un framework di destinazione. I progetti in stile SDK abilitano framework di destinazione diversi, ad esempio netstandard. Per altre informazioni, vedere [Framework di destinazione](/dotnet/standard/frameworks).
@@ -72,7 +74,7 @@ Il framework di destinazione viene specificato nella proprietà `TargetFramework
 
 ## <a name="target-platform"></a>Piattaforma di destinazione
 
- Una *piattaforma* è una combinazione di hardware e software che definisce un particolare ambiente di runtime. Ad esempio:
+ Una *piattaforma* è una combinazione di hardware e software che definisce un particolare ambiente di runtime. Ad esempio,
 
 - `x86` definisce un sistema operativo Windows a 32 bit che è in esecuzione su un processore 80x86 Intel o un suo equivalente.
 
@@ -89,7 +91,7 @@ Una *piattaforma di destinazione* è una particolare piattaforma in cui il propr
 
 ```
 
-Una *configurazione di destinazione* è un subset di una piattaforma di destinazione. Ad esempio, la configurazione `x86` `Debug` non include la maggior parte delle ottimizzazioni di codice. La configurazione di destinazione viene specificata nella proprietà di compilazione `Configuration` in un file di progetto. È possibile modificare la configurazione di destinazione usando le pagine della proprietà del progetto o la **Gestione configurazione**.
+Una *configurazione di destinazione* è un subset di una piattaforma di destinazione. Ad esempio, la configurazione `x86` `Debug` non include la maggior parte delle ottimizzazioni di codice. La configurazione di destinazione viene specificata nella proprietà di compilazione `Configuration` in un file di progetto. È possibile modificare la configurazione di destinazione usando le pagine della proprietà del progetto o la **Gestione configurazione** .
 
 ```xml
 <PropertyGroup>
@@ -99,6 +101,6 @@ Una *configurazione di destinazione* è un subset di una piattaforma di destinaz
 
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)

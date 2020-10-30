@@ -1,5 +1,7 @@
 ---
 title: "Procedura dettagliata: Creazione di un'attività inline | Microsoft Docs"
+description: Procedura dettagliata per la creazione di un'attività MSBuild inline nel file di progetto, senza dover creare un assembly separato per ospitare l'attività.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d345d532c29931577edbe0441003cc80b069e335
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2d72745aebedb5dad5efc86d33804a51e36b762
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289144"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046630"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Procedura dettagliata: Creare un'attività inline
 
@@ -38,7 +40,7 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
 
 2. Modificare il file di progetto in Visual Studio per creare l'attività inline.
 
-3. Usare la **finestra del prompt dei comandi ** per compilare il progetto ed esaminare i risultati.
+3. Usare la **finestra del prompt dei comandi** per compilare il progetto ed esaminare i risultati.
 
 ## <a name="create-and-modify-an-msbuild-project"></a>Creare e modificare un progetto MSBuild
 
@@ -46,13 +48,13 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
 
 #### <a name="to-create-and-modify-a-project-file"></a>Per creare e modificare un file di progetto
 
-1. In Visual Studio creare un nuovo progetto usando il modello di **applicazione Windows Forms** C#. Nella casella **Nome** digitare `InlineTasks`. In **Percorso** digitare un percorso per la soluzione, ad esempio *D:\\*. Verificare che l'opzione **Crea directory per soluzione** sia selezionata, che l'opzione **Aggiungi al controllo del codice sorgente** sia deselezionata e che **Nome soluzione** sia **InlineTasks**.
+1. In Visual Studio creare un nuovo progetto usando il modello di **applicazione Windows Forms** C#. Nella casella **Nome** digitare `InlineTasks`. In **Percorso** digitare un percorso per la soluzione, ad esempio *D:\\* . Verificare che l'opzione **Crea directory per soluzione** sia selezionata, che l'opzione **Aggiungi al controllo del codice sorgente** sia deselezionata e che **Nome soluzione** sia **InlineTasks** .
 
 3. Scegliere **OK** per creare il file di progetto.
 
-3. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto **InlineTasks** , quindi scegliere **Scarica progetto**.
+3. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto **InlineTasks** , quindi scegliere **Scarica progetto** .
 
-4. Fare nuovamente clic con il pulsante destro del mouse sul nodo di progetto e quindi scegliere **Modifica InlineTasks.csproj**.
+4. Fare nuovamente clic con il pulsante destro del mouse sul nodo di progetto e quindi scegliere **Modifica InlineTasks.csproj** .
 
      Il file di progetto verrà visualizzato nell'editor del codice.
 
@@ -94,20 +96,20 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
 
 ##### <a name="to-run-the-hello-task"></a>Per eseguire l'attività Hello
 
-1. Fare clic su **Start**, scegliere **Tutti i programmi, **, quindi individuare la cartella **Strumenti di Visual Studio** e infine fare clic su **Prompt dei comandi di Visual Studio**.
+1. Fare clic su **Start** , scegliere **Tutti i programmi,** , quindi individuare la cartella **Strumenti di Visual Studio** e infine fare clic su **Prompt dei comandi di Visual Studio** .
 
-2. Nella **finestra del prompt dei comandi**individuare la cartella che contiene il file di progetto, in questo caso *D:\InlineTasks\InlineTasks \\ *.
+2. Nella **finestra del prompt dei comandi** individuare la cartella che contiene il file di progetto, in questo caso *D:\InlineTasks\InlineTasks \\* .
 
-3. Digitare **MSBuild** senza opzioni di comando e quindi premere **invio**. Per impostazione predefinita, compila il file *InlineTasks. csproj* ed elabora il TestBuild di destinazione predefinito, che richiama l'attività Hello.
+3. Digitare **MSBuild** senza opzioni di comando e quindi premere **invio** . Per impostazione predefinita, compila il file *InlineTasks. csproj* ed elabora il TestBuild di destinazione predefinito, che richiama l'attività Hello.
 
-4. Esaminare l'output nella **finestra del prompt dei comandi**. Dovrebbe essere visualizzata questa riga:
+4. Esaminare l'output nella **finestra del prompt dei comandi** . Dovrebbe essere visualizzata questa riga:
 
     `Hello, world!`
 
    > [!NOTE]
    > Se questa riga non viene visualizzata, salvare nuovamente il file di progetto e quindi eseguire l'attività Hello.
 
-   Alternando l'editor del codice e la **finestra del prompt dei comandi**, è possibile modificare il file di progetto e visualizzare velocemente i risultati.
+   Alternando l'editor del codice e la **finestra del prompt dei comandi** , è possibile modificare il file di progetto e visualizzare velocemente i risultati.
 
 ## <a name="define-the-echo-task"></a>Definire l'attività Echo
 
@@ -133,9 +135,9 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
    </Target>
    ```
 
-2. Nella **finestra del prompt dei comandi**Digitare **MSBuild** senza opzioni di comando e quindi premere **invio**. Per impostazione predefinita, viene elaborata la destinazione predefinita TestBuild che richiama l'attività Echo.
+2. Nella **finestra del prompt dei comandi** Digitare **MSBuild** senza opzioni di comando e quindi premere **invio** . Per impostazione predefinita, viene elaborata la destinazione predefinita TestBuild che richiama l'attività Echo.
 
-3. Esaminare l'output nella **finestra del prompt dei comandi**. Dovrebbe essere visualizzata questa riga:
+3. Esaminare l'output nella **finestra del prompt dei comandi** . Dovrebbe essere visualizzata questa riga:
 
     `Greetings!`
 
@@ -170,9 +172,9 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
    </Target>
    ```
 
-2. Nella **finestra del prompt dei comandi**Digitare **MSBuild** senza opzioni di comando e quindi premere **invio**. Per impostazione predefinita, viene elaborata la destinazione predefinita TestBuild che richiama l'attività Echo.
+2. Nella **finestra del prompt dei comandi** Digitare **MSBuild** senza opzioni di comando e quindi premere **invio** . Per impostazione predefinita, viene elaborata la destinazione predefinita TestBuild che richiama l'attività Echo.
 
-3. Esaminare l'output nella **finestra del prompt dei comandi**. Dovrebbe essere visualizzata questa riga:
+3. Esaminare l'output nella **finestra del prompt dei comandi** . Dovrebbe essere visualizzata questa riga:
 
     `The sum is 9`
 
@@ -226,9 +228,9 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
    </Target>
    ```
 
-2. Nella **finestra del prompt dei comandi**Digitare **MSBuild** senza opzioni di comando e quindi premere **invio**. Per impostazione predefinita, viene elaborata la destinazione predefinita TestBuild che richiama l'attività RegX.
+2. Nella **finestra del prompt dei comandi** Digitare **MSBuild** senza opzioni di comando e quindi premere **invio** . Per impostazione predefinita, viene elaborata la destinazione predefinita TestBuild che richiama l'attività RegX.
 
-3. Esaminare l'output nella **finestra del prompt dei comandi**. Dovrebbero essere visualizzate queste righe:
+3. Esaminare l'output nella **finestra del prompt dei comandi** . Dovrebbero essere visualizzate queste righe:
 
    ```
    Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
@@ -264,7 +266,7 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
 </Code>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività inline](../msbuild/msbuild-inline-tasks.md)
 - [Attività](../msbuild/msbuild-tasks.md)

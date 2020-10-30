@@ -1,5 +1,7 @@
 ---
 title: Attività WriteLinesToFile | Microsoft Docs
+description: Informazioni su come MSBuild usa l'attività WriteLinesToFile per scrivere i percorsi degli elementi specificati nel file di testo specificato.
+ms.custom: SEO-VS-2020
 ms.date: 09/20/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27673ba3691e53540bce2249700c4453cb56c166
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a504f4329c9e7b15eb8fbe1b756d682f0de44907
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286102"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047373"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile (attività)
 
@@ -41,7 +43,7 @@ Scrive i percorsi degli elementi specificati nel file di testo indicato.
 |`Encoding`|Parametro `String` facoltativo.<br /><br /> Seleziona la codifica dei caratteri, ad esempio "Unicode". L'impostazione predefinita è UTF-8.  Vedere anche <xref:System.Text.Encoding>.|
 |`WriteOnlyWhenDifferent`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, il file di destinazione specificato, se presente, verrà letto prima di confrontarlo con quello che sarebbe stato scritto dall'attività. Se identico, il file non viene scritto su disco e il timestamp viene mantenuto. Il valore predefinito è `false`.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  Se `Overwrite` è `true`, crea un nuovo file, scrive il contenuto nel file e quindi lo chiude. Se il file di destinazione è già esistente, viene sovrascritto. Se `Overwrite` è `false`, accoda il contenuto al file, creando il file di destinazione nel caso in cui non esista.
 
@@ -95,7 +97,7 @@ dotnet %~dp0$(AssemblyName).dll %*
 </Project>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

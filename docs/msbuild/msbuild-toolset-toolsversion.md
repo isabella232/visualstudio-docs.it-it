@@ -1,5 +1,7 @@
 ---
 title: Set di strumenti di MSBuild (ToolsVersion) | Microsoft Docs
+description: Informazioni su come usare l'attributo ToolsVersion nel file di progetto MSBuild per specificare un set di strumenti di attività, destinazioni e strumenti per la compilazione di un'applicazione.
+ms.custom: SEO-VS-2020
 ms.date: 01/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,16 +15,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b77ea7f04377a1c531efeff780e9303f0bd3eb79
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: e0b27a1914d85f5fde8ef6c5c467d73197c084ce
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426963"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049024"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Set di strumenti di MSBuild (ToolsVersion)
 
-Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprende attività, destinazioni e strumenti. In genere, un set di strumenti di MSBuild include un file *Microsoft. Common. Tasks* , un file *Microsoft. Common. targets* e compilatori come *csc.exe* e *vbc.exe*. La maggior parte dei set di strumenti può essere usata per compilare applicazioni in più versioni di .NET Framework e in più piattaforme di sistema. Tuttavia, il set di strumenti di MSBuild 2.0 consente di scegliere come destinazione soltanto .NET Framework 2.0.
+Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprende attività, destinazioni e strumenti. In genere, un set di strumenti di MSBuild include un file *Microsoft. Common. Tasks* , un file *Microsoft. Common. targets* e compilatori come *csc.exe* e *vbc.exe* . La maggior parte dei set di strumenti può essere usata per compilare applicazioni in più versioni di .NET Framework e in più piattaforme di sistema. Tuttavia, il set di strumenti di MSBuild 2.0 consente di scegliere come destinazione soltanto .NET Framework 2.0.
 
 ## <a name="toolsversion-attribute"></a>Attributo ToolsVersion
 
@@ -63,7 +65,7 @@ Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprend
 
  È possibile modificare il valore di `MSBuildToolsPath` definendo un set di strumenti personalizzato. Per altre informazioni, vedere [configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md).
 
- Quando si compila una soluzione dalla riga di comando e si specifica un attributo `ToolsVersion` per *msbuild.exe*, tutti i progetti e le dipendenze tra progetti vengono compilati secondo tale attributo `ToolsVersion`, anche se ogni progetto della soluzione contiene un attributo `ToolsVersion` specifico. Per definire il valore `ToolsVersion` in base al progetto, vedere [Override delle impostazioni ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
+ Quando si compila una soluzione dalla riga di comando e si specifica un attributo `ToolsVersion` per *msbuild.exe* , tutti i progetti e le dipendenze tra progetti vengono compilati secondo tale attributo `ToolsVersion`, anche se ogni progetto della soluzione contiene un attributo `ToolsVersion` specifico. Per definire il valore `ToolsVersion` in base al progetto, vedere [Override delle impostazioni ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
 
  L'attributo `ToolsVersion` viene usato anche per la migrazione del progetto. Ad esempio, se si apre un progetto di Visual Studio 2008 in Visual Studio 2010, il file di progetto viene aggiornato per includere ToolsVersion="4.0". Se in seguito si tenta di aprire tale progetto in Visual Studio 2008, l'attributo `ToolsVersion` aggiornato non verrà riconosciuto e pertanto il progetto verrà compilato come se l'attributo fosse ancora impostato su 3.5.
 
@@ -79,7 +81,7 @@ Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprend
 
 - Altri strumenti gestiti
 
-  Gli strumenti gestiti includono *ResGen.exe* e *TlbImp.exe*.
+  Gli strumenti gestiti includono *ResGen.exe* e *TlbImp.exe* .
 
 MSBuild consente di accedere al set di strumenti in due modi:
 
@@ -87,7 +89,7 @@ MSBuild consente di accedere al set di strumenti in due modi:
 
 - Con i metodi <xref:Microsoft.Build.Utilities.ToolLocationHelper>
 
-Le proprietà del set di strumenti specificano i percorsi degli strumenti. A partire da Visual Studio 2017, MSBuild non ha più una posizione fissa. Per impostazione predefinita, si trova nella cartella *MSBuild\15.0\Bin* relativa al percorso di installazione di Visual Studio. Nelle versioni precedenti, MSBuild usa il valore dell'attributo `ToolsVersion` nel file di progetto per individuare la chiave corrispondente del Registro di sistema e quindi usa le informazioni della chiave del Registro di sistema per impostare le proprietà del set di strumenti. Ad esempio, se `ToolsVersion` ha il valore `12.0`, MSBuild imposterà le proprietà del set di strumenti in base alla chiave del Registro di sistema **HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0**.
+Le proprietà del set di strumenti specificano i percorsi degli strumenti. A partire da Visual Studio 2017, MSBuild non ha più una posizione fissa. Per impostazione predefinita, si trova nella cartella *MSBuild\15.0\Bin* relativa al percorso di installazione di Visual Studio. Nelle versioni precedenti, MSBuild usa il valore dell'attributo `ToolsVersion` nel file di progetto per individuare la chiave corrispondente del Registro di sistema e quindi usa le informazioni della chiave del Registro di sistema per impostare le proprietà del set di strumenti. Ad esempio, se `ToolsVersion` ha il valore `12.0`, MSBuild imposterà le proprietà del set di strumenti in base alla chiave del Registro di sistema **HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0** .
 
  Le proprietà del set di strumenti sono:
 
@@ -132,7 +134,7 @@ MSBuild fornisce gli overload dei metodi `ToolLocationHelper` che aggiungono com
 
 I subset di strumenti sono stati introdotti in .NET Framework 4.5.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Configurazioni standard e personalizzate del set di strumenti](../msbuild/standard-and-custom-toolset-configurations.md)
 - [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)

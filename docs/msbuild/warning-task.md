@@ -1,5 +1,7 @@
 ---
 title: Attività Warning | Microsoft Docs
+description: Informazioni su come MSBuild usa l'attività di avviso per registrare un avviso durante una compilazione in base a un'istruzione condizionale valutata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e95b59b4ccc0bd2df89e45512a5bdd05c027556
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce7104c08ce8f18672bf4d2df93debc3c1d19983
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631094"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047819"
 ---
 # <a name="warning-task"></a>attività Warning
 
@@ -40,7 +42,7 @@ Registra un avviso durante una compilazione in base a un'istruzione condizionale
 | `HelpKeyword` | Parametro `String` facoltativo.<br /><br /> Parola chiave della Guida da associare all'avviso. |
 | `Text` | Parametro `String` facoltativo.<br /><br /> Testo di avviso che viene registrato da MSBuild se il `Condition` parametro restituisce `true` . |
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  L' `Warning` attività consente ai progetti MSBuild di verificare la presenza di una proprietà o una configurazione richiesta prima di procedere con l'istruzione di compilazione successiva.
 
@@ -66,7 +68,7 @@ Registra un avviso durante una compilazione in base a un'istruzione condizionale
 </Project>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)

@@ -1,5 +1,7 @@
 ---
 title: Elemento Output (MSBuild) | Microsoft Docs
+description: Vedere attributi, elementi e un esempio dell'elemento MSBuild output, che archivia i valori di output delle attività in elementi e proprietà.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f48f5166e102273651511ceb5a925b5e49e66878
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633031"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048918"
 ---
 # <a name="output-element-msbuild"></a>Elemento Output (MSBuild)
 
@@ -45,7 +47,7 @@ Archivia i valori di output dell'attività in elementi e proprietà.
 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -85,7 +87,7 @@ Archivia i valori di output dell'attività in elementi e proprietà.
 </Target>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)

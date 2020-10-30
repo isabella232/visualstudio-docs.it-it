@@ -1,5 +1,7 @@
 ---
 title: Attività XmlPoke | Microsoft Docs
+description: Informazioni su come MSBuild usa l'attività XmlPoke per impostare i valori come specificato da una query XPath in un file XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b69afc20d15802ad79b201ca38e2d69f1d473b1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35e29004116807092452a08d3835ba3e5e1dabcd
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82072502"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047237"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke (attività)
 
@@ -38,7 +40,7 @@ Imposta i valori come specificato da una query XPath in un file XML.
 |`Value`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> obbligatorio.<br /><br /> Specifica il valore da inserire nel percorso specificato.|
 |`XmlInputPath`|Parametro <xref:Microsoft.Build.Framework.ITaskItem> facoltativo.<br /><br /> Specifica l'input XML come percorso di file.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  Oltre a usare i parametri elencati nella tabella, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
@@ -79,7 +81,7 @@ In questo esempio, se si vuole modificare `/Package/mp:PhoneIdentity/PhoneProduc
 
 `dn` è qui usato come un prefisso artificiale dello spazio dei nomi per lo spazio dei nomi predefinito.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

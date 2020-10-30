@@ -1,5 +1,7 @@
 ---
 title: Elemento When (MSBuild) | Microsoft Docs
+description: Informazioni sull'elemento MSBuild when, che specifica un possibile blocco di codice per l'elemento Choose da selezionare.
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb9404b8c68171f0695b33c285582f5e4c5b4ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e373c6491f8f174aba372c9a600e1b5c823dfb00
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630925"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046039"
 ---
 # <a name="when-element-msbuild"></a>Elemento When (MSBuild)
 
@@ -50,7 +52,7 @@ Specifica un blocco di codice selezionabile dall'elemento `Choose`.
 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -70,7 +72,7 @@ Specifica un blocco di codice selezionabile dall'elemento `Choose`.
 |-------------|-----------------|
 |[Elemento Choose (MSBuild)](../msbuild/choose-element-msbuild.md)|Valuta gli elementi figlio per selezionare una sezione del codice da eseguire.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  Se l'`Condition` attributo restituisce true, gli elementi figlio `ItemGroup` e `PropertyGroup` dell'elemento `When` vengono eseguiti e tutti gli elementi `When` successivi vengono ignorati.
 
@@ -125,7 +127,7 @@ Specifica un blocco di codice selezionabile dall'elemento `Choose`.
 </Project>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Costrutti condizionali](../msbuild/msbuild-conditional-constructs.md)
 - [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)

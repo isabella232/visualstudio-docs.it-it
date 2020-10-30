@@ -1,5 +1,7 @@
 ---
 title: Destinazioni di MSBuild | Microsoft Docs
+description: Informazioni su come MSBuild usa le destinazioni per raggruppare le attività e consentire il factoring del processo di compilazione in unità più piccole.
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfdbbf0f585ea02bfdb32f47728ab0cd26e9af3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a257299d22b5ba5050ee9027e6bbb97bbaf3a75
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250673"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049092"
 ---
 # <a name="msbuild-targets"></a>Destinazioni di MSBuild
 
@@ -31,7 +33,7 @@ Le destinazioni raggruppano le attività in un determinato ordine e consentono d
 </Target>
 ```
 
- Come le proprietà di MSBuild, le destinazioni possono essere ridefinite. Ad esempio:
+ Come le proprietà di MSBuild, le destinazioni possono essere ridefinite. Ad esempio,
 
 ```xml
 <Target Name="AfterBuild" >
@@ -68,7 +70,7 @@ Per informazioni dettagliate e altre informazioni sull'ordine di compilazione di
 
 ## <a name="target-batching"></a>Suddivisione in batch della destinazione
 
-Un elemento di destinazione può avere un `Outputs` attributo che specifica i metadati nel formato%( \<Metadata> ). In questo caso MSBuild esegue la destinazione una volta per ogni valore univoco dei metadati, raggruppando o suddividendo in "batch" gli elementi che contengono quel valore dei metadati. Ad esempio:
+Un elemento di destinazione può avere un `Outputs` attributo che specifica i metadati nel formato%( \<Metadata> ). In questo caso MSBuild esegue la destinazione una volta per ogni valore univoco dei metadati, raggruppando o suddividendo in "batch" gli elementi che contengono quel valore dei metadati. Ad esempio,
 
 ```xml
 <ItemGroup>
@@ -1012,7 +1014,7 @@ This target gathers the Redist folders from the SDKs which have been resolved.
         DependsOnTargets="$(SDKRedistOutputGroupDependsOn)"/>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)
 - [Procedura: usare la stessa destinazione in più file di progetto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

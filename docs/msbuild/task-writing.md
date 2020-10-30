@@ -1,5 +1,7 @@
 ---
 title: Scrittura di attività | Microsoft Docs
+description: Informazioni su come creare attività personalizzate per fornire il codice che viene eseguito durante il processo di compilazione di MSBuild.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cbcf47ec83e1b900ba94ab3842c2cfa63fdcc5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b614fd1705491e676bb89a9527c75cf86bdd36c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631837"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047922"
 ---
 # <a name="task-writing"></a>Scrittura di attività
 
@@ -25,13 +27,13 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
 
 ## <a name="tasks"></a>Attività
 
- Esempi di attività includono [Copy](../msbuild/copy-task.md), che copia uno o più file, [MakeDir](../msbuild/makedir-task.md), che crea una directory e [CSC](../msbuild/csc-task.md), che compila i file di codice sorgente C#. Ogni attività viene implementata come classe .NET che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>, definita nell'assembly *Microsoft.Build.Framework.dll*.
+ Esempi di attività includono [Copy](../msbuild/copy-task.md), che copia uno o più file, [MakeDir](../msbuild/makedir-task.md), che crea una directory e [CSC](../msbuild/csc-task.md), che compila i file di codice sorgente C#. Ogni attività viene implementata come classe .NET che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>, definita nell'assembly *Microsoft.Build.Framework.dll* .
 
  È possibile implementare un'attività in due modi:
 
 - Implementare direttamente l'interfaccia <xref:Microsoft.Build.Framework.ITask>.
 
-- Derivare la classe dalla classe di supporto <xref:Microsoft.Build.Utilities.Task>, definita nell'assembly *Microsoft.Build.Utilities.dll*. L'attività implementa ITask e specifica le implementazioni predefinite di alcuni membri di ITask. Inoltre, la registrazione è più semplice.
+- Derivare la classe dalla classe di supporto <xref:Microsoft.Build.Utilities.Task>, definita nell'assembly *Microsoft.Build.Utilities.dll* . L'attività implementa ITask e specifica le implementazioni predefinite di alcuni membri di ITask. Inoltre, la registrazione è più semplice.
 
 In entrambi i casi è necessario aggiungere alla classe un metodo denominato `Execute`, ovvero il metodo che viene chiamato quando l'attività è in esecuzione. Questo metodo non accetta parametri e restituisce un valore `Boolean`: `true` se l'attività ha avuto esito positivo o `false` se ha avuto esito negativo. Nell'esempio seguente viene illustrata un'attività che non esegue alcuna azione e restituisce `true`.
 
@@ -100,7 +102,7 @@ namespace MyTasks
  Il file MSBuild *Microsoft. Common. Tasks* è un file di progetto contenente un elenco di `UsingTask` elementi che registrano tutte le attività fornite con MSBuild. Questo file è incluso automaticamente durante la compilazione di ogni progetto. Se un'attività registrata in *Microsoft.Common.Tasks* è registrata anche nel file di progetto corrente, il file di progetto corrente ha la precedenza, ovvero è possibile sostituire un'attività predefinita con un'attività personalizzata con lo stesso nome.
 
 > [!TIP]
-> È possibile visualizzare un elenco delle attività fornite con MSBuild visualizzando il contenuto di *Microsoft. Common. Tasks*.
+> È possibile visualizzare un elenco delle attività fornite con MSBuild visualizzando il contenuto di *Microsoft. Common. Tasks* .
 
 ## <a name="raise-events-from-a-task"></a>Generazione di eventi da un'attività
 
@@ -170,7 +172,7 @@ Un'attività non deve dipendere da un ordine relativo della chiamata al setter d
 
 MSBuild gestisce in modo nativo le proprietà di `string` tipo `bool` , `ITaskItem` e `ITaskItem[]` . Se un'attività accetta un parametro di un tipo diverso, MSBuild richiama <xref:System.Convert.ChangeType%2A> per eseguire la conversione da `string` (con tutti i riferimenti a proprietà e elementi espansi) al tipo di destinazione. Se la conversione non riesce per un parametro di input, MSBuild genera un errore e non chiama il metodo dell'attività `Execute()` .
 
-## <a name="example"></a>Esempio
+## <a name="example-1"></a>Esempio 1
 
 ### <a name="description"></a>Descrizione
 
@@ -195,7 +197,7 @@ namespace SimpleTask1
 }
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-2"></a>Esempio 2
 
 ### <a name="description"></a>Descrizione
 
@@ -231,7 +233,7 @@ namespace SimpleTask2
 }
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-3"></a>Esempio 3:
 
 ### <a name="description"></a>Descrizione
 
@@ -241,7 +243,7 @@ Questa classe C# illustra un'attività che deriva dalla <xref:Microsoft.Build.Ut
 
 [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
 
-## <a name="example"></a>Esempio
+## <a name="example-4"></a>Esempio 4
 
 ### <a name="description"></a>Descrizione
 
@@ -260,6 +262,6 @@ L'esempio seguente illustra un file di progetto che richiama l'attività dell'es
 </Project>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

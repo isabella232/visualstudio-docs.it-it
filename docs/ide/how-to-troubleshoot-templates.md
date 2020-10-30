@@ -1,5 +1,6 @@
 ---
-title: Risolvere i problemi di caricamento dei modelli di progetto e di elemento
+title: Risolvere i problemi di modelli di progetto e modelli di elementi
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1bef6a460f1a59823930597565b955b591ab48a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddb164dbd43d1d2276fce66641ba6e647b49143e
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591385"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045711"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Procedura: Risolvere i problemi relativi ai modelli
 
@@ -22,7 +23,7 @@ Se un modello non viene caricato nell'ambiente di sviluppo, sono disponibili div
 
 ::: moniker range="vs-2017"
 
-Se il file con estensione *vstemplate* di un modello non rispetta lo schema di modello di Visual Studio, è possibile che il modello non venga visualizzato nella finestra di dialogo **Nuovo progetto**.
+Se il file con estensione *vstemplate* di un modello non rispetta lo schema di modello di Visual Studio, è possibile che il modello non venga visualizzato nella finestra di dialogo **Nuovo progetto** .
 
 ::: moniker-end
 
@@ -38,28 +39,28 @@ Se il file con estensione *vstemplate* di un modello non rispetta lo schema di m
 
 1. Estrarre il file *zip* .
 
-1. Nel menu **File** di Visual Studio scegliere **Apri** > **File**.
+1. Nel menu **File** di Visual Studio scegliere **Apri** > **File** .
 
-1. Selezionare il file con estensione *vstemplate* per il modello e scegliere **Apri**.
+1. Selezionare il file con estensione *vstemplate* per il modello e scegliere **Apri** .
 
-1. Verificare che il codice XML del file con estensione *vstemplate* rispetti lo schema del modello. Per altre informazioni sullo schema del file con estensione *vstemplate*, vedere [Riferimenti allo schema dei modelli](../extensibility/visual-studio-template-schema-reference.md).
+1. Verificare che il codice XML del file con estensione *vstemplate* rispetti lo schema del modello. Per altre informazioni sullo schema del file con estensione *vstemplate* , vedere [Riferimenti allo schema dei modelli](../extensibility/visual-studio-template-schema-reference.md).
 
     > [!NOTE]
-    > Per ottenere il supporto IntelliSense durante la creazione del file con estensione *vstemplate*, aggiungere un attributo `xmlns` all'elemento `VSTemplate` e assegnare all'attributo il valore `http://schemas.microsoft.com/developer/vstemplate/2005`.
+    > Per ottenere il supporto IntelliSense durante la creazione del file con estensione *vstemplate* , aggiungere un attributo `xmlns` all'elemento `VSTemplate` e assegnare all'attributo il valore `http://schemas.microsoft.com/developer/vstemplate/2005`.
 
-1. Salvare e chiudere il file con estensione *vstemplate*.
+1. Salvare e chiudere il file con estensione *vstemplate* .
 
-1. Selezionare i file inclusi nel modello, fare clic con il pulsante destro del mouse e scegliere **Invia a**  >  **cartella compressa**. I file selezionati vengono compressi in un file con *estensione zip* .
+1. Selezionare i file inclusi nel modello, fare clic con il pulsante destro del mouse e scegliere **Invia a**  >  **cartella compressa** . I file selezionati vengono compressi in un file con *estensione zip* .
 
 1. Inserire il nuovo file *zip* nella stessa directory del file *zip* precedente.
 
-1. Eliminare i file di modello estratti e il file di modello precedente con estensione *zip*.
+1. Eliminare i file di modello estratti e il file di modello precedente con estensione *zip* .
 
 ## <a name="enable-diagnostic-logging"></a>Abilitare la registrazione diagnostica
 
 È possibile abilitare la registrazione diagnostica per l'individuazione dei modelli seguendo la procedura in [Risoluzione dei problemi di individuazione dei modelli (estendibilità)](../extensibility/troubleshooting-template-discovery.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Risoluzione dei problemi di individuazione dei modelli (estendibilità)](../extensibility/troubleshooting-template-discovery.md)
 - [Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)

@@ -1,5 +1,6 @@
 ---
-title: Tasti di scelta rapida predefiniti per i comandi usati di frequente
+title: Tasti di scelta rapida per i comandi usati di frequente
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64c3a163f706898dfb358b15279e62729f40cf84
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596723"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93045662"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Tasti di scelta rapida più comuni per Visual Studio
 
@@ -21,9 +22,9 @@ ms.locfileid: "75596723"
 Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qualsiasi finestra degli strumenti in Visual Studio.
 
 > [!NOTE]
-> È possibile [cercare il tasto di scelta rapida](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) per qualsiasi comando aprendo la finestra di dialogo **Opzioni**, espandendo il nodo **Ambiente** e quindi scegliendo **Tastiera**.
+> È possibile [cercare il tasto di scelta rapida](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) per qualsiasi comando aprendo la finestra di dialogo **Opzioni** , espandendo il nodo **Ambiente** e quindi scegliendo **Tastiera** .
 
-## <a name="build"></a>Compilazione
+## <a name="build"></a>Compilare
 
 |Comandi|Tasti di scelta rapida [Contesti]|
 |--------------| - |
@@ -57,9 +58,9 @@ Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qua
 |Comandi|Tasti di scelta rapida [Contesti]|
 |--------------| - |
 |Edit.BreakLine|**Immettere** [Editor di testo, Progettazione report, progettazione Windows Form]<br /><br />o **MAIUSC + INVIO** [Editor di testo]|
-|Edit.CollapseToDefinitions|**CTRL + M**, **CTRL + O** [Editor di testo]|
-|Edit.CommentSelection|**CTRL + K**, **CTRL + C** [Editor di testo]|
-|Edit.CompleteWord|**ALT + freccia destra** [Editor di testo, progettazione flussi di lavoro]<br /><br />o **CTRL + barra spaziatrice** [Editor di testo, progettazione flussi di lavoro]<br /><br />o **CTRL + K**, **W** [Progettazione flussi di lavoro]<br /><br />o **CTRL + K, CTRL + W** [Progettazione flussi di lavoro]|
+|Edit.CollapseToDefinitions|**CTRL + M** , **CTRL + O** [Editor di testo]|
+|Edit.CommentSelection|**CTRL + K** , **CTRL + C** [Editor di testo]|
+|Edit.CompleteWord|**ALT + freccia destra** [Editor di testo, progettazione flussi di lavoro]<br /><br />o **CTRL + barra spaziatrice** [Editor di testo, progettazione flussi di lavoro]<br /><br />o **CTRL + K** , **W** [Progettazione flussi di lavoro]<br /><br />o **CTRL + K, CTRL + W** [Progettazione flussi di lavoro]|
 |Edit.Copy|**CTRL + C** [globale]<br /><br />o **CTRL + INS** [globale]|
 |Edit.Cut|**CTRL+X** [Globale]<br /><br />o **MAIUSC + CANC** [globale]|
 |Edit.Delete|**Delete** [globale, Team Explorer]<br /><br />o **MAIUSC + CANC** [diagramma sequenza, diagramma attività UML, diagramma livello]<br /><br />o **CTRL + CANC** [diagramma classi]|
@@ -75,7 +76,7 @@ Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qua
 |Edit.GoToDefinition|**F12**|
 |Edit.GoToFindCombo|**CTRL + D** [globale]|
 |Edit.GoToNextLocation|**F8** [globale]|
-|Edit.InsertSnippet|**CTRL + K**, **CTRL + X** [globale]|
+|Edit.InsertSnippet|**CTRL + K** , **CTRL + X** [globale]|
 |Edit.InsertTab|**Tab** [Progettazione report, progettazione Windows Form, editor di testo]|
 |Edit.LineCut|**CTRL + L** [Editor di testo]|
 |Edit.LineDownExtendColumn|**MAIUSC + ALT + freccia giù** [Editor di testo]|
@@ -119,7 +120,7 @@ Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qua
 |File.SaveSelectedItems|**CTRL + S** [globale]|
 |File.ViewinBrowser|**CTRL + MAIUSC + W** [globale]|
 
-## <a name="project"></a>Progetto
+## <a name="project"></a>Project
 
 |Comandi|Tasti di scelta rapida [Contesti]|
 |--------------| - |
@@ -169,7 +170,7 @@ Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qua
 |Window.NextDocumentWindowNav|**CTRL + TAB** [globale]|
 |Window.NextSplitPane|**F6** [globale]|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Identificare e personalizzare i tasti di scelta rapida in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Tutti i tasti di scelta rapida di Visual Studio](default-keyboard-shortcuts-in-visual-studio.md)

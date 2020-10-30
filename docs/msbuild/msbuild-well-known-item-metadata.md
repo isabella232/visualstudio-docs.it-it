@@ -1,5 +1,7 @@
 ---
 title: Metadati noti degli elementi di MSBuild | Microsoft Docs
+description: Informazioni sui metadati MSBuild assegnati a ogni elemento al momento della creazione e alcuni metadati facoltativi di MSBuild che è possibile definire per controllare il comportamento della compilazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c810e166ef6f04befdbf7a5d18fe20bb65b8a299
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 047fe5ef6edc57681b8382a9f2a1069991e0f513
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87425381"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049007"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Metadati noti degli elementi di MSBuild
 
@@ -40,16 +42,16 @@ La prima tabella di questo articolo descrive i metadati assegnati a ogni element
 |%(FullPath)|Contiene il percorso completo dell'elemento. Ad esempio:<br /><br /> *C:\MyProject\Source\Program.cs*|
 |%(RootDir)|Contiene la directory radice dell'elemento. Ad esempio:<br /><br /> *C\\*|
 |%(Filename)|Contiene il nome file dell'elemento, senza estensione. Ad esempio:<br /><br /> *Programma*|
-|%(Extension)|Contiene l'estensione del nome file dell'elemento. Ad esempio:<br /><br /> *.cs*|
+|%(Extension)|Contiene l'estensione del nome file dell'elemento. Ad esempio:<br /><br /> *. cs*|
 |%(RelativeDir)|Contiene il percorso specificato nell'attributo `Include`, fino alla barra rovesciata (\\) finale. Ad esempio:<br /><br /> *Origine\\*<br /><br /> Se l' `Include` attributo è un percorso completo, `%(RelativeDir)` inizia con la directory radice `%(RootDir)` .  Ad esempio: <br /><br /> *C:\MyProject\Source\\*|
 |%(Directory)|Contiene la directory dell'elemento, senza la directory radice. Ad esempio:<br /><br /> *MyProject\\Source\\*|
-|%(RecursiveDir)|Se l'attributo `Include` contiene il carattere jolly \*\*, questi metadati specificano la parte del percorso che sostituisce il carattere jolly. Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Se la cartella *C:\MySolution\MyProject\Source\\* contiene il file *Program.cs* e se il file di progetto contiene l'elemento seguente:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> il valore di `%(MyItem.RecursiveDir)` sarà *MySolution\MyProject\Source\\*.|
+|%(RecursiveDir)|Se l'attributo `Include` contiene il carattere jolly \*\*, questi metadati specificano la parte del percorso che sostituisce il carattere jolly. Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Se la cartella *C:\MySolution\MyProject\Source\\* contiene il file *Program.cs* e se il file di progetto contiene l'elemento seguente:<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> il valore di `%(MyItem.RecursiveDir)` sarà *MySolution\MyProject\Source\\* .|
 |%(Identity)|Elemento specificato nell' `Include` attributo. Ad esempio:<br /><br /> *Source\Program.cs*|
 |%(ModifiedTime)|Contiene il timestamp relativo all'ultima modifica dell'elemento. Ad esempio:<br /><br /> `2004-07-01 00:21:31.5073316`|
 |%(CreatedTime)|Contiene il timestamp relativo alla creazione dell'elemento. Ad esempio:<br /><br /> `2004-06-25 09:26:45.8237425`|
 |%(AccessedTime)|Contiene il timestamp relativo all'ora dell'ultimo accesso all'elemento.<br /><br /> `2004-08-14 16:52:36.3168743`|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Metadati dell'elemento MSBuild comuni](common-msbuild-item-metadata.md)
 - [Elementi](../msbuild/msbuild-items.md)

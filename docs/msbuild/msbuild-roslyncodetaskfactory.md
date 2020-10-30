@@ -1,5 +1,7 @@
 ---
 title: Attività inline di MSBuild con RoslynCodeTaskFactory | Microsoft Docs
+description: Informazioni su MSBuild RoslynCodeTaskFactory, che usa i compilatori Roslyn multipiattaforma per generare assembly di attività in memoria da usare come attività inline.
+ms.custom: SEO-VS-2020
 ms.date: 09/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1f606ed9e3d42d9f57cb941ee9518c1abfbc47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 336c23a5e1357e8e425a74c0954d3c0e28f8a930
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289209"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049128"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Attività inline di MSBuild con RoslynCodeTaskFactory
 
@@ -146,7 +148,7 @@ I parametri possono avere uno o più degli attributi seguenti:
 
 - `Output` è un attributo facoltativo che è `false` per impostazione predefinita. Se `true`, il parametro deve avere un valore assegnato prima della restituzione da parte del metodo Execute.
 
-Ad esempio:
+Ad esempio,
 
 ```xml
 <ParameterGroup>
@@ -310,7 +312,7 @@ Queste attività inline possono combinare i percorsi e ottenere il nome del file
 </Project>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Procedura dettagliata: Creare un'attività inline](../msbuild/walkthrough-creating-an-inline-task.md)

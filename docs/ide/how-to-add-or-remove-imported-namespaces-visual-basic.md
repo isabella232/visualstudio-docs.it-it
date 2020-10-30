@@ -1,5 +1,6 @@
 ---
-title: 'Procedura: Aggiungere o rimuovere spazi dei nomi importati (Visual Basic)'
+title: Aggiungere o rimuovere spazi dei nomi importati (Visual Basic)
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,24 +15,24 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a50fdb643029bed8a44ce6999d4a8ce062ba3dcf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff6b63db07d515e85c4c756f8d302d292c62dd50
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284739"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047096"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Procedura: Aggiungere o rimuovere spazi dei nomi importati (Visual Basic)
 
 L'importazione di uno spazio dei nomi consente di usare nel codice elementi tratti da tale spazio senza doverli qualificare in modo completo. Se, ad esempio, si vuole accedere al metodo `Create` nella classe `System.Messaging.MessageQueue`, è possibile importare lo spazio dei nomi `System.Messaging` e fare riferimento al solo elemento necessario nel codice come `MessageQueue.Create`.
 
-Gli spazi dei nomi importati vengono gestiti nella pagina **Riferimenti** di **Creazione progetti**. Le importazioni specificate in questa finestra di dialogo vengono passate direttamente al compilatore (*/imports*) e usate per tutti i file del progetto. L'istruzione `Imports` consente di usare uno spazio dei nomi in un unico file del codice sorgente.
+Gli spazi dei nomi importati vengono gestiti nella pagina **Riferimenti** di **Creazione progetti** . Le importazioni specificate in questa finestra di dialogo vengono passate direttamente al compilatore ( */imports* ) e usate per tutti i file del progetto. L'istruzione `Imports` consente di usare uno spazio dei nomi in un unico file del codice sorgente.
 
 ### <a name="to-add-an-imported-namespace"></a>Per aggiungere uno spazio dei nomi importato
 
 1. In **Esplora soluzioni** fare doppio clic sul nodo **Progetto** del progetto.
 
-2. Nella scheda **Creazione progetti** fare clic su **Riferimenti**.
+2. Nella scheda **Creazione progetti** fare clic su **Riferimenti** .
 
 3. Nell'elenco **Spazi dei nomi importati** selezionare la casella di controllo relativa allo spazio dei nomi da aggiungere.
 
@@ -42,7 +43,7 @@ Gli spazi dei nomi importati vengono gestiti nella pagina **Riferimenti** di **C
 
 1. In **Esplora soluzioni** fare doppio clic sul nodo **Progetto** del progetto.
 
-2. Nella scheda **Creazione progetti** fare clic su **Riferimenti**.
+2. Nella scheda **Creazione progetti** fare clic su **Riferimenti** .
 
 3. Nell'elenco **Spazi dei nomi importati** deselezionare la casella di controllo per lo spazio dei nomi da rimuovere.
 
@@ -55,11 +56,11 @@ Se in seguito si decide di importare la classe `EventLog` è possibile specifica
 
 1. In **Esplora soluzioni** fare doppio clic sul nodo **Progetto** del progetto.
 
-2. Nella scheda **Creazione progetti** fare clic su **Riferimenti**.
+2. Nella scheda **Creazione progetti** fare clic su **Riferimenti** .
 
 3. Nella casella di testo sotto l'elenco **Spazi dei nomi importati** immettere il nome completo dello spazio dei nomi da importare, incluso lo spazio dei nomi radice.
 
-4. Fare clic sul pulsante **Aggiungi importazione utente** per aggiungere lo spazio dei nomi all'elenco **Spazi dei nomi importati**.
+4. Fare clic sul pulsante **Aggiungi importazione utente** per aggiungere lo spazio dei nomi all'elenco **Spazi dei nomi importati** .
 
     > [!NOTE]
     > Il pulsante **Aggiungi importazione utente** è disabilitato se lo spazio dei nomi corrisponde a uno spazio dei nomi già incluso nell'elenco. Non è infatti possibile aggiungere due volte la stessa importazione.
@@ -68,14 +69,14 @@ Se in seguito si decide di importare la classe `EventLog` è possibile specifica
 
 1. In **Esplora soluzioni** fare doppio clic sul nodo **Progetto** del progetto.
 
-2. Nella scheda **Creazione progetti** fare clic su **Riferimenti**.
+2. Nella scheda **Creazione progetti** fare clic su **Riferimenti** .
 
 3. Nell'elenco **Spazi dei nomi importati** selezionare lo spazio dei nomi da modificare.
 
 4. Nella casella di testo sotto l'elenco **Spazi dei nomi importati** immettere il nome del nuovo spazio dei nomi.
 
-5. Fare clic sul pulsante **Aggiorna importazione utente** per aggiornare lo spazio dei nomi nell'elenco **Spazi dei nomi importati**.
+5. Fare clic sul pulsante **Aggiorna importazione utente** per aggiornare lo spazio dei nomi nell'elenco **Spazi dei nomi importati** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Gestire i riferimenti in un progetto](../ide/managing-references-in-a-project.md)

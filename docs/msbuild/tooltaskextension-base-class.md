@@ -1,5 +1,7 @@
 ---
 title: Classe di base ToolTaskExtension | Microsoft Docs
+description: Informazioni sui parametri aggiunti dalla classe di base Microsoft. Build. Tasks. ToolTaskExtension alle attività che ereditano da esso.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aa052a0fd2216d5f3d85e99794d9ac883a09e2d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4b0148a7c42b359906cd316b45dfdf2898e6313
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77631692"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047824"
 ---
 # <a name="tooltaskextension-base-class"></a>Classe di base ToolTaskExtension
 
@@ -47,7 +49,7 @@ Molte attività ereditano dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExten
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | Parametro `bool` facoltativo.<br /><br /> Se `true`, questa attività crea un file batch per la riga di comando e lo esegue mediante il processore dei comandi anziché eseguire direttamente il comando. |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | Parametro `bool` facoltativo.<br /><br /> Se `true`, questa attività restituisce il nodo quando l'attività è in esecuzione. |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)
 - [Attività](../msbuild/msbuild-tasks.md)
