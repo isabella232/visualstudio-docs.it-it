@@ -1,16 +1,18 @@
 ---
 title: Panoramica di XAML
+description: Informazioni di base su XAML e l'editor di codice XAML e sugli strumenti di finestra di progettazione XAML in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 06/23/2020
 ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e14e23f9820301374bd435484ba784edf50294bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 997a35414f38af16d028770044c28652e13149be
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331950"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049197"
 ---
 # <a name="overview-of-xaml"></a>Panoramica di XAML
 
@@ -44,7 +46,7 @@ Per informazioni aggiornate, fare riferimento alle risorse seguenti:
 - Post **[di Blog sulle novità di strumenti di sviluppo XAML in Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/whats-new-in-xaml-developer-tools-in-visual-studio-2019-for-wpf-uwp/)**
 - **[Nuove funzionalità XAML nel video di Visual Studio](https://youtu.be/yI9OyA4ZM2E)** su YouTube
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [XAML in all WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [XAML in all UWP](/windows/uwp/xaml-platform/xaml-overview)

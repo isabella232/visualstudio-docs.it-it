@@ -1,6 +1,8 @@
 ---
 title: Tasti di scelta rapida
 titleSuffix: Blend for Visual Studio
+description: Informazioni sui tasti di scelta rapida in Blend per Visual Studio di accesso ai comandi per l'utilizzo di progetti, documenti, oggetti, viste e aree di lavoro.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
@@ -9,18 +11,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4d0d537dc93479cc791b2e1c3246e9bab74139f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3641edafeed9cf7b5e29f8a967f9dbf26cdd3e8c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332232"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049242"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Scelte rapide da tastiera in Blend per Visual Studio
 
 ## <a name="project-shortcuts"></a>Tasti di scelta rapida per i progetti
 
-|Per|Procedere nel modo seguente|
+|Operazione da eseguire|Procedere nel modo seguente|
 |----------------|-------------|
 |Creare un nuovo progetto|**CTRL** + **Sposta** + **N**|
 |Aprire un progetto o una soluzione (non un sito)|**CTRL** + **Sposta** + **O**|
@@ -33,31 +35,31 @@ ms.locfileid: "85332232"
 
 ## <a name="document-shortcuts"></a>Tasti di scelta rapida per i documenti
 
-|Per|Procedere nel modo seguente|
+|Operazione da eseguire|Procedere nel modo seguente|
 |----------------|-------------|
 |Spostarsi tra i documenti aperti|**CTRL** + **Scheda**|
 |Salvare il documento attivo|**CTRL** + **S**|
 |Salvare tutti i documenti|**CTRL** + **Sposta** + **S**|
 |Chiudere il documento attivo|**CTRL** + **W**|
 |Chiudere tutti i documenti aperti|**CTRL** + **Sposta** + **W**|
-|Annullare l'ultima operazione|**CTRL**+ Z|
-|Ripetere l'ultima operazione annullata|**Ctrl**+Y o **Ctrl**+**Maiusc**+**Z**|
+|Annullare l'ultima operazione|**CTRL** + Z|
+|Ripetere l'ultima operazione annullata|**Ctrl** +Y o **Ctrl**+**Maiusc**+**Z**|
 |Creare un'annotazione in fase di progettazione|**CTRL** + **Sposta** + **T**|
 |Taglia|**CTRL** + **X**|
 |Copia|**CTRL** + **C**|
 |Incolla|**CTRL** + **V**|
-|Delete|**Elimina**|
+|Elimina|**Eliminazione**|
 |Trovare testo (solo visualizzazione XAML o editor JavaScript)|**CTRL** + **F**|
 |Trovare l'occorrenza successiva del testo (solo visualizzazione XAML o editor JavaScript)|**F3** o **Ctrl**+**H**|
 
 ## <a name="object-shortcuts"></a>Tasti di scelta rapida per gli oggetti
 
-|Per|Procedere nel modo seguente|
+|Operazione da eseguire|Procedere nel modo seguente|
 |----------------|-------------|
 |Creare un nuovo elemento|**CTRL** + **N**|
 |Duplicare un oggetto|Tenere premuto **ALT** e trascinare l'oggetto|
 |Assegnare un nuovo elemento padre a un oggetto|Trascinare l'oggetto su un pannello di layout e premere **Alt**|
-|Modificare il testo in un controllo|**F2** (**Esc** per uscire)|
+|Modificare il testo in un controllo|**F2** ( **Esc** per uscire)|
 |Modificare un controllo (WPF)|**CTRL** + **E**|
 |Impostare una larghezza uguale per gli oggetti selezionati|**CTRL** + **Sposta** + **1**|
 |Impostare un'altezza uguale per gli oggetti selezionati|**CTRL** + **Sposta** + **2**|
@@ -93,9 +95,9 @@ ms.locfileid: "85332232"
 
 ## <a name="view-shortcuts"></a>Tasti di scelta rapida per le visualizzazioni
 
-|Per|Procedere nel modo seguente|
+|Operazione da eseguire|Procedere nel modo seguente|
 |----------------|-------------|
-|Spostarsi tra le visualizzazioni **Progettazione**, **Codice** e **Doppia visualizzazione**|**F11**|
+|Spostarsi tra le visualizzazioni **Progettazione** , **Codice** e **Doppia visualizzazione**|**F11**|
 |Ingrandire la tavola da disegno|**CTRL** + **Segno di uguale** ( **=** )|
 |Ridurre la visualizzazione della tavola da disegno|**CTRL** + **Segno meno** ( **-** )|
 |Eseguire uno zoom avanti o indietro della tavola da disegno|Ruotare la rotellina del mouse|
@@ -105,11 +107,11 @@ ms.locfileid: "85332232"
 |Visualizzare la tavola da disegno con le dimensioni effettive|**CTRL** + **1**|
 |Mostrare o nascondere i punti di controllo|**F9**|
 |Mostrare o nascondere i limiti degli oggetti|**CTRL** + **Sposta** + **H**|
-|Spostarsi tra le visualizzazioni **Progettazione**, **XAML** e **Doppia visualizzazione**|**F11**|
+|Spostarsi tra le visualizzazioni **Progettazione** , **XAML** e **Doppia visualizzazione**|**F11**|
 
 ## <a name="workspace-shortcuts"></a>Tasti di scelta rapida per l'area di lavoro
 
-|Per|Procedere nel modo seguente|
+|Operazione da eseguire|Procedere nel modo seguente|
 |----------------|-------------|
 |Spostarsi tra le aree di lavoro **Animazione** e **Progettazione**|**CTRL** + **F11**|
 |Visualizzare o nascondere il pannello **Asset**|**CTRL** + **Periodo**|
