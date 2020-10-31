@@ -9,10 +9,10 @@ author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
 ms.openlocfilehash: ad75fcff26365afdbc4fb4b02975d7c3211fa79b
-ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
+ms.lasthandoff: 10/31/2020
 ms.locfileid: "92334207"
 ---
 # <a name="new-git-experience-in-visual-studio-preview"></a>Nuova esperienza Git in Visual Studio (anteprima)
@@ -30,7 +30,7 @@ Per abilitare o disabilitare la nuova esperienza git, passare a **strumenti**  >
 
 Sono disponibili tre modi per usare git in Visual Studio 2019:
 
-- [Aprire un repository Git esistente](#open-an-existing-local-repository). Se il codice è già presente nel computer, è possibile aprirlo usando **file**  >  **Apri**  >  **progetto/soluzione** (o **cartella**) e Visual Studio rileva automaticamente se dispone di un repository git inizializzato.
+- [Aprire un repository Git esistente](#open-an-existing-local-repository). Se il codice è già presente nel computer, è possibile aprirlo usando **file**  >  **Apri**  >  **progetto/soluzione** (o **cartella** ) e Visual Studio rileva automaticamente se dispone di un repository git inizializzato.
 - [Creare un nuovo repository git](#create-a-new-git-repository). Se il codice non è associato a git, è possibile creare un nuovo repository git.
 - [Clonare un repository Git esistente](#clone-an-existing-git-repository). Se il codice su cui si vuole lavorare non è presente nel computer, è possibile clonare tutti i repository remoti esistenti.
 
@@ -79,23 +79,23 @@ Visual Studio regola la visualizzazione in base al file di visualizzazione caric
 
 Git tiene traccia delle modifiche apportate ai file nel repository mentre si lavora e separa i file del repository in tre categorie. Queste modifiche sono equivalenti a quanto visualizzato quando si immette il `git status` comando nella riga di comando:
 
-- **File non modificati**: questi file non sono stati modificati dopo l'ultimo commit.
-- **File modificati**: questi file presentano modifiche rispetto all'ultimo commit, ma non sono stati ancora gestiti per il commit successivo.
-- **File**di gestione temporanea: questi file contengono modifiche che verranno aggiunte al commit successivo.
+- **File non modificati** : questi file non sono stati modificati dopo l'ultimo commit.
+- **File modificati** : questi file presentano modifiche rispetto all'ultimo commit, ma non sono stati ancora gestiti per il commit successivo.
+- **File** di gestione temporanea: questi file contengono modifiche che verranno aggiunte al commit successivo.
 
 Quando si esegue il lavoro, Visual Studio tiene traccia delle modifiche apportate ai file nel progetto nella sezione **modifiche** della finestra **modifiche git** .
 
 :::image type="content" source="media/git-changes-window.png" alt-text="Screenshot della sezione funzionalità di anteprima della finestra di dialogo Opzioni in Visual Studio ":::
 
-Quando si è pronti per la gestione temporanea delle modifiche, fare clic sul **+** pulsante (segno più) in ogni file che si desidera inserire in una fase oppure fare clic con il pulsante destro del mouse su un file e scegliere **fase**. È anche possibile organizzare tutti i file modificati con un solo clic usando il pulsante staging All **+** (più) nella parte superiore della sezione **changes** .
+Quando si è pronti per la gestione temporanea delle modifiche, fare clic sul **+** pulsante (segno più) in ogni file che si desidera inserire in una fase oppure fare clic con il pulsante destro del mouse su un file e scegliere **fase** . È anche possibile organizzare tutti i file modificati con un solo clic usando il pulsante staging All **+** (più) nella parte superiore della sezione **changes** .
 
-Quando si esegue il staging di una modifica, Visual Studio crea una sezione di modifiche di gestione **temporanea** . Al commit successivo verranno aggiunte solo le modifiche apportate alla sezione modifiche di gestione **temporanea** . a tale scopo, è possibile selezionare **commit**staging. È anche possibile non installare le modifiche facendo clic sul pulsante **–** (meno). Il comando equivalente per questa azione è `git commit -m "Your commit message"` .
+Quando si esegue il staging di una modifica, Visual Studio crea una sezione di modifiche di gestione **temporanea** . Al commit successivo verranno aggiunte solo le modifiche apportate alla sezione modifiche di gestione **temporanea** . a tale scopo, è possibile selezionare **commit** staging. È anche possibile non installare le modifiche facendo clic sul pulsante **–** (meno). Il comando equivalente per questa azione è `git commit -m "Your commit message"` .
 
-È anche possibile scegliere di non organizzare i file modificati ignorando l'area di gestione temporanea. In questo caso, Visual Studio consente di eseguire il commit delle modifiche direttamente senza doverle organizzare. È sufficiente immettere il messaggio di commit e quindi selezionare **commit tutti**. Il comando equivalente per questa azione è `git commit -a` .
+È anche possibile scegliere di non organizzare i file modificati ignorando l'area di gestione temporanea. In questo caso, Visual Studio consente di eseguire il commit delle modifiche direttamente senza doverle organizzare. È sufficiente immettere il messaggio di commit e quindi selezionare **commit tutti** . Il comando equivalente per questa azione è `git commit -a` .
 
 Visual Studio semplifica anche il commit e la sincronizzazione con un solo clic usando i collegamenti **commit tutti e push** e **commit tutti e sincronizza** . Quando si fa doppio clic su un file nelle sezioni **modifiche** e **modifiche** di gestione temporanea, è possibile visualizzare un confronto riga per riga con la versione non modificata del file.
 
-:::image type="content" source="media/git-file-version-compare.png" alt-text="Screenshot della sezione funzionalità di anteprima della finestra di dialogo Opzioni in Visual Studio " Se si è connessi al repository DevOps di Azure. È possibile connettere il repository di Azure DevOps tramite **Team Explorer**  >  **gestire le connessioni**.
+:::image type="content" source="media/git-file-version-compare.png" alt-text="Screenshot della sezione funzionalità di anteprima della finestra di dialogo Opzioni in Visual Studio " Se si è connessi al repository DevOps di Azure. È possibile connettere il repository di Azure DevOps tramite **Team Explorer**  >  **gestire le connessioni** .
 
 ### <a name="select-an-existing-branch"></a>Selezionare un ramo esistente
 
@@ -139,7 +139,7 @@ L'indicatore funziona anche come collegamento per passare alla cronologia di com
 
 #### <a name="commit-details"></a>Dettagli commit
 
-Quando si fa doppio clic su un **commit**, Visual Studio apre i dettagli in una finestra degli strumenti separata. Da qui è possibile ripristinare il commit, reimpostare il commit, modificare il messaggio di commit o creare un tag nel commit. Quando si fa clic su un file modificato nel commit, Visual Studio apre la visualizzazione delle **differenze** affiancata del commit e del relativo elemento padre.
+Quando si fa doppio clic su un **commit** , Visual Studio apre i dettagli in una finestra degli strumenti separata. Da qui è possibile ripristinare il commit, reimpostare il commit, modificare il messaggio di commit o creare un tag nel commit. Quando si fa clic su un file modificato nel commit, Visual Studio apre la visualizzazione delle **differenze** affiancata del commit e del relativo elemento padre.
 
 :::image type="content" source="media/git-branch-commit-details.png" alt-text="Screenshot della sezione funzionalità di anteprima della finestra di dialogo Opzioni in Visual Studio ":::
 
@@ -149,9 +149,7 @@ Possono verificarsi conflitti durante un'operazione di merge se due sviluppatori
 
 Visual Studio semplifica l'identificazione e la risoluzione di un conflitto di merge. In primo luogo, la finestra del **repository git** Mostra una barra delle informazioni in oro nella parte superiore della finestra.
 
-:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Screenshot della sezione funzionalità di anteprima della finestra di dialogo Opzioni in Visual Studio ":::
-
-La finestra **modifiche git** Visualizza anche un messaggio "*merge is in progress with Conflicts*", con i file non Uniti nella relativa sezione separata sotto.
+:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Screenshot della sezione funzionalità di anteprima della finestra di dialogo Opzioni in Visual Studio " *merge is in progress with Conflicts* ", con i file non Uniti nella relativa sezione separata sotto.
 
 :::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Screenshot della sezione funzionalità di anteprima della finestra di dialogo Opzioni in Visual Studio ":::
 
@@ -163,7 +161,7 @@ Tuttavia, se non si dispone di queste finestre aperte e si passa al file con con
     >>>>>>> main
 ```
 
-Al contrario, Visual Studio Visualizza una barra informazioni in oro nella parte superiore della pagina che indica che il file aperto presenta conflitti. Quindi, è possibile fare clic sul collegamento per aprire l' **editor di merge**.
+Al contrario, Visual Studio Visualizza una barra informazioni in oro nella parte superiore della pagina che indica che il file aperto presenta conflitti. Quindi, è possibile fare clic sul collegamento per aprire l' **editor di merge** .
 
 :::image type="content" source="media/git-merge-conflict-gold-info-bar.png" alt-text="Screenshot della sezione funzionalità di anteprima della finestra di dialogo Opzioni in Visual Studio ":::
 
