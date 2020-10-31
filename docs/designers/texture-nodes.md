@@ -1,5 +1,7 @@
 ---
 title: Nodi di trama
+description: Informazioni sui nodi di trama che campionano vari tipi di trama e geometrie, quindi producono o trasformano le coordinate di trama nella finestra di progettazione shader.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3393bb979b73694c4ac65120ae794ef1205b37c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3e45789358e49a0b224a6de3ea6e5dfea44bf01
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589813"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93133962"
 ---
 # <a name="texture-nodes"></a>Nodi di trama
 
@@ -27,7 +29,7 @@ Nella finestra di progettazione shader i nodi delle trame effettuano il campiona
 |**Campione mappa normali**|Prende un campione di normale da una mappa di normali 2D alle coordinate specificate<br /><br /> È possibile usare una mappa di normali per simulare l'aspetto di dettagli geometrici aggiuntivi sulla superficie di un oggetto. Le mappe di normali contengono dati compressi che rappresentano un vettore unitario anziché dati di colore.<br /><br /> **Input**<br /><br /> `UV`: `float2`<br /> Coordinate in cui viene eseguito il campionamento.<br /><br /> **Output:**<br /><br /> `Output`: `float3`<br /> Campione di normale.|**Adeguamento assi**<br /> Fattore usato per regolare la mano utilizzata per scrivere del campione di mappa normale.<br /><br /> **Trama**<br /> Registro di trama associato al campionatore.|
 |**Panoramica**|Effettua una panoramica delle coordinate di trama specificate come funzione di tempo.<br /><br /> È possibile usare questo valore per spostare una mappa di trame o di normali sulla superficie di un oggetto.<br /><br /> **Input**<br /><br /> `UV`: `float2`<br /> Coordinate di cui eseguire la panoramica.<br /><br /> `Time`: `float`<br /> Durata della panoramica, in secondi.<br /><br /> **Output:**<br /><br /> `Output`: `float2`<br /> Coordinate visualizzate in panoramica.|**Velocità X**<br /> Numero di texel visualizzati in panoramica lungo l'asse x, al secondo.<br /><br /> **Velocità Y**<br /> Numero di texel visualizzati in panoramica lungo l'asse y, al secondo.|
 |**Parallasse UV**|Sposta le coordinate di trama specificate come funzione dell'altezza e dell'angolo di visualizzazione.<br /><br /> L'effetto creato è noto come *mapping del parallasse* o mapping di spostamento virtuale. È possibile usare questo valore per creare un'illusione di profondità su una superficie piana.<br /><br /> **Input**<br /><br /> `UV`: `float2`<br /> Coordinate da spostare.<br /><br /> `Height`: `float`<br /> Valore di heightmap associato alle coordinate `UV`.<br /><br /> **Output:**<br /><br /> `Output`: `float2`<br /> Coordinate spostate.|**Piano profondità**<br /> Profondità di riferimento per l'effetto di parallasse. Per impostazione predefinita, il valore è 0,5. I valori minori sollevano la trama, mentre quelli maggiori la sprofondano nella superficie.<br /><br /> **Scala profondità**<br /> Scala dell'effetto di parallasse per rendere più o meno pronunciata la profondità apparente. I valori tipici sono compresi tra 0,02 e 0,1.|
-|**Rotazione UV**|Ruota le coordinate di trama specificate intorno a un punto centrale come funzione di tempo.<br /><br /> È possibile usare questo valore per ruotare una mappa di trame o di normali sulla superficie di un oggetto.<br /><br /> **Input**<br /><br /> `UV`: `float2`<br /> Coordinate di ruotare.<br /><br /> `Time`: `float`<br /> Durata della panoramica, in secondi.<br /><br /> **Output:**<br /><br /> `Output`: `float2`<br /> Coordinate ruotate.|**Centra X**<br /> Coordinata x che definisce il centro della rotazione.<br /><br /> **Centra Y**<br /> Coordinata y che definisce il centro della rotazione.<br /><br /> **speed**<br /> Angolo, in radianti, in base a cui viene ruotata la trama al secondo.|
+|**Rotazione UV**|Ruota le coordinate di trama specificate intorno a un punto centrale come funzione di tempo.<br /><br /> È possibile usare questo valore per ruotare una mappa di trame o di normali sulla superficie di un oggetto.<br /><br /> **Input**<br /><br /> `UV`: `float2`<br /> Coordinate di ruotare.<br /><br /> `Time`: `float`<br /> Durata della panoramica, in secondi.<br /><br /> **Output:**<br /><br /> `Output`: `float2`<br /> Coordinate ruotate.|**Centra X**<br /> Coordinata x che definisce il centro della rotazione.<br /><br /> **Centra Y**<br /> Coordinata y che definisce il centro della rotazione.<br /><br /> **Velocità**<br /> Angolo, in radianti, in base a cui viene ruotata la trama al secondo.|
 |**Coordinata trama**|Le coordinate di trama del pixel corrente.<br /><br /> Le coordinate di trama sono determinate dall'interpolazione tra gli attributi delle coordinate di trama dei vertici vicini. È possibile considerare questo valore come la posizione del pixel corrente nello spazio di trama.<br /><br /> **Output:**<br /><br /> `Output`: `float2`<br /> Coordinate di trama.|Nessuno|
 |**Dimensioni di trama**|Restituisce la larghezza e l'altezza di una mappa di trama 2D.<br /><br /> È possibile usare le dimensioni della trama per prendere in considerazione la larghezza e l'altezza della trama in uno shader.<br /><br /> **Output:**<br /><br /> `Output`: `float2`<br /> Larghezza e altezza della trama, espresse come vettore. La larghezza viene memorizzata nel primo elemento del vettore. L'altezza viene memorizzata nel secondo elemento.|**Trama**<br /> Registro di trama associato alle dimensioni della trama.|
 |**Differenza texel**|Restituisce la differenza (distanza) tra i texel di una mappa di trama 2D.<br /><br /> È possibile usare questo valore per eseguire un campionamento in base ai pixel adiacenti in una trama.<br /><br /> **Output:**<br /><br /> `Output`: `float2`<br /> La differenza (distanza) tra un texel e il texel successivo (spostandosi in diagonale nella direzione positiva), espresso come un vettore nello spazio di trama normalizzato. È possibile derivare le posizioni di tutti i texel adiacenti in modo selettivo ignorando o negando le coordinate V o U della differenza.|**Trama**<br /> Registro di trama associato alla differenza di texel.|

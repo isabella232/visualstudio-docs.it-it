@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: Creare uno shader con colore di base'
+description: Informazioni su come usare la finestra di progettazione shader e il linguaggio di Graph shader diretto per creare uno shader con colore flat che imposta il colore finale su un valore di colore RGB costante.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fe0fc31f3be758e16042de6133399b2df6b65c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d966a8fdc565eae5254d21dba4ab9dfaa440de94
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769155"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134106"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Procedura: Creare uno shader con colore di base
 
@@ -23,17 +25,17 @@ Questo articolo illustra come usare la finestra di progettazione shader e il lin
 
 È possibile implementare uno shader con colore uniforme scrivendo il valore di colore di una costante di colore RGB nel colore di output finale.
 
-Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti**.
+Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti** .
 
 1. Creare uno shader DGSL da utilizzare. Per informazioni su come aggiungere uno shader DGSL al progetto, vedere la sezione Introduzione in [Finestra di progettazione shader](../designers/shader-designer.md).
 
-2. Eliminare il nodo **Colore punto**. Usare lo strumento **Seleziona** per selezionare il nodo **Colore punto** e scegliere **Modifica** > **Elimina** nella barra dei menu.
+2. Eliminare il nodo **Colore punto** . Usare lo strumento **Seleziona** per selezionare il nodo **Colore punto** e scegliere **Modifica** > **Elimina** nella barra dei menu.
 
-3. Aggiungere un nodo **Costante colore** al grafico. Nella **casella degli strumenti**, in **Costanti**, selezionare **Costante colore** e spostarlo nell'area di progettazione.
+3. Aggiungere un nodo **Costante colore** al grafico. Nella **casella degli strumenti** , in **Costanti** , selezionare **Costante colore** e spostarlo nell'area di progettazione.
 
-4. Specificare un valore di colore per il nodo **Costante colore**. Usare lo strumento **Seleziona** per selezionare il nodo **Costante colore** e quindi specificare un valore di colore nella proprietà **Output** della finestra **Proprietà**. Per arancione, specificare un valore di (1.0, 0,5, 0,2, 1.0).
+4. Specificare un valore di colore per il nodo **Costante colore** . Usare lo strumento **Seleziona** per selezionare il nodo **Costante colore** e quindi specificare un valore di colore nella proprietà **Output** della finestra **Proprietà** . Per arancione, specificare un valore di (1.0, 0,5, 0,2, 1.0).
 
-5. Connettere la costante di colore al colore finale. Per creare le connessioni, spostare il terminale **RGB** del nodo **Costante colore** nel terminale **RGB** del nodo **Colore finale** e quindi spostare il terminale **Alfa** del nodo **Costante colore** nel terminale **Alfa** del nodo **Colore finale**. Queste connessioni impostano il colore finale sulla costante di colore definita nel passaggio precedente.
+5. Connettere la costante di colore al colore finale. Per creare le connessioni, spostare il terminale **RGB** del nodo **Costante colore** nel terminale **RGB** del nodo **Colore finale** e quindi spostare il terminale **Alfa** del nodo **Costante colore** nel terminale **Alfa** del nodo **Colore finale** . Queste connessioni impostano il colore finale sulla costante di colore definita nel passaggio precedente.
 
 La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a un cubo.
 

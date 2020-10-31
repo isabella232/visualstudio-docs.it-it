@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: esportare una trama che contiene mipmap'
+description: Informazioni su come la pipeline del contenuto di immagine genera mipmap da un'immagine di origine come parte della compilazione del progetto, in modo da garantire che mipmap non diventi mai sincronizzata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b46a353606fc90aa89abf68d1e901675b4880b4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3758184a10161d64add37fe1dc231326b90cb53
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768926"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134831"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Procedura: Esportare una trama che contiene mipmap
 
@@ -33,12 +35,12 @@ La creazione di mipmap offre un livello di dettaglio automatico sullo spazio del
 
 1. Iniziare con una trama di base. Caricare un file d'immagine esistente oppure crearne uno nuovo, come illustrato in [Procedura: Creare una trama di base](../designers/how-to-create-a-basic-texture.md). Per supportare le mipmap, specificare una trama la cui larghezza e altezza corrispondano a un valore esponenziale con base due, ad esempio, 64 x 64, 256 x 256 o 512 x 512.
 
-2. Configurare il file di trama appena creato in modo che venga elaborato dalla pipeline di contenuti immagine. In **Esplora soluzioni** aprire il menu di scelta rapida per il file di trama creato e quindi scegliere **Proprietà**. Nella pagina **proprietà di configurazione**  >  **generale** impostare la proprietà **tipo di elemento** su **pipeline contenuto immagine**. Assicurarsi che la proprietà **Contenuto** sia impostata su **Sì** e che l'opzione **Exclude From Build** (Escludi da build) sia impostata su **No**. Selezionare **Applica**.
+2. Configurare il file di trama appena creato in modo che venga elaborato dalla pipeline di contenuti immagine. In **Esplora soluzioni** aprire il menu di scelta rapida per il file di trama creato e quindi scegliere **Proprietà** . Nella pagina **proprietà di configurazione**  >  **generale** impostare la proprietà **tipo di elemento** su **pipeline contenuto immagine** . Assicurarsi che la proprietà **Contenuto** sia impostata su **Sì** e che l'opzione **Exclude From Build** (Escludi da build) sia impostata su **No** . Selezionare **Applica** .
 
    Viene visualizzata la pagina delle proprietà di configurazione **Image Content Pipeline** (Pipeline di contenuti immagine).
 
-3. Configurare la pipeline di contenuti immagine per generare mipmap. Nella **Configuration Properties**  >  pagina generale della**pipeline di contenuti immagine**delle proprietà di configurazione  >  **General** impostare la proprietà **Genera MIP** su **Sì (/generatemips)**.
+3. Configurare la pipeline di contenuti immagine per generare mipmap. Nella **Configuration Properties**  >  pagina generale della **pipeline di contenuti immagine** delle proprietà di configurazione  >  **General** impostare la proprietà **Genera MIP** su **Sì (/generatemips)** .
 
-4. Selezionare **OK**.
+4. Selezionare **OK** .
 
 Quando si compila il progetto, la pipeline di contenuti immagine converte l'immagine di origine dal formato di lavoro al formato di output specificato, includendo i livelli MIP. Il risultato viene copiato nella directory di output del progetto.

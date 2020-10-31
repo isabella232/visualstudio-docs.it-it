@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 73060a6314bb1d89a51df98ac9d06d8e1f1be90e
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: e886ea23a8f4f0815773f704d1d8274fced610df
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005645"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134594"
 ---
 # <a name="eshoponweb"></a>eShopOnWeb
 
@@ -24,7 +24,7 @@ Questo esempio illustra come personalizzare l'esempio di architettura DotNet [eS
 
 ## <a name="postclonesetupps1"></a>PostCloneSetup.ps1
 
-Questo script viene chiamato da _PostCloneSetup.ps1_ e può essere eseguito anche localmente per configurare il repository. Questo file deve trovarsi nella stessa cartella del _.devcontainer.js_.
+Questo script viene chiamato da _PostCloneSetup.ps1_ e può essere eseguito anche localmente per configurare il repository. Questo file deve trovarsi nella stessa cartella del _.devcontainer.js_ .
 
 ```console
 devinit init
@@ -34,7 +34,7 @@ dotnet ef database update -c appidentitydbcontext -p src\Infrastructure\Infrastr
 
 ## <a name="devinitjson"></a>.devinit.json
 
-Contenuto del [_.devinit.jssu_](devinit-json.md) file. Questo file deve trovarsi nella stessa cartella del _.devcontainer.js_.
+Contenuto del [_.devinit.jssu_](devinit-json.md) file. Questo file deve trovarsi nella stessa cartella del _.devcontainer.js_ .
 
 ```json
 {
@@ -60,6 +60,6 @@ Contenuto del _.devcontainer.js_ nel file nella radice del repository.
 
 ```json
 {
-  "postCreateCommand": "Powershell.exe -ExecutionPolicy unrestricted -File PostCloneSetup.ps1"
+  "postCreateCommand": "Powershell.exe -ExecutionPolicy unrestricted -File .\\PostCloneSetup.ps1"
 }
 ```

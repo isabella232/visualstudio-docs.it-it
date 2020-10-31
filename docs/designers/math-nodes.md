@@ -1,5 +1,7 @@
 ---
 title: Nodi di matematica
+description: Informazioni sui nodi matematici nella finestra di progettazione shader, che eseguono operazioni algebriche, logiche, trigonometriche e altre operazioni matematiche.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75c1b3b9c515defde9eceac1a370f40b0acbd2c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 519998d23aada86e9142e3097aac1dac06b07b81
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589396"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134746"
 ---
 # <a name="math-nodes"></a>Nodi di matematica
 
@@ -45,7 +47,7 @@ Nella finestra di progettazione shader i nodi matematici eseguono operazioni alg
 |**Moltiplicazione**|Calcola il prodotto degli input specificati a livello di componente.<br /><br /> Per ciascun componente del risultato, i componenti corrispondenti dei valori `X` e `Y` di input vengono moltiplicati insieme.<br /><br /> **Input**<br /><br /> `X`: `float`, `float2`, `float3` o `float4`<br /> Uno dei valori da moltiplicare.<br /><br /> `Y`: uguale a `X` di input<br /> Uno dei valori da moltiplicare.<br /><br /> **Output:**<br /><br /> `Output`: uguale a `X` di input<br /> Il prodotto, per componente.|Nessuno|
 |**Normalizzare**|Normalizza il vettore specificato.<br /><br /> Un vettore normalizzato mantiene la direzione del vettore originale, ma non l'ampiezza. È possibile usare i vettori normalizzati per semplificare i calcoli in cui è importante l'ampiezza di un vettore.<br /><br /> **Input**<br /><br /> `X`: `float2`, `float3` o `float4`<br /> Vettore da normalizzare.<br /><br /> **Output:**<br /><br /> `Output`: uguale a `X` di input<br /> Vettore normalizzato.|Nessuno|
 |**Uno meno**|Calcola la differenza tra 1 e l'input specificato per ogni componente.<br /><br /> Per ciascun componente del risultato, il componente corrispondente dell'input viene sottratto da 1.<br /><br /> **Input**<br /><br /> `X`: `float`, `float2`, `float3` o `float4`<br /> Valori da sottrarre da 1.<br /><br /> **Output:**<br /><br /> `Output`: uguale a `X` di input<br /> Differenza tra 1 e l'input specificato, per componente.|Nessuno|
-|**Potere**|Calcola l'elevamento a potenza degli input specificati a livello di componente.<br /><br /> Per ciascun componente del risultato, il componente corrispondente del valore `X` di input viene elevato alla potenza del componente corrispondente del valore `Y` di input.<br /><br /> **Input**<br /><br /> `X`: `float`, `float2`, `float3` o `float4`<br /> Valori di base<br /><br /> `Y`: uguale a `X` di input<br /> Valori esponenziali.<br /><br /> **Output:**<br /><br /> `Output`: uguale a `X` di input<br /> Elevamento a potenza, per componente.|Nessuno|
+|**Elettricità**|Calcola l'elevamento a potenza degli input specificati a livello di componente.<br /><br /> Per ciascun componente del risultato, il componente corrispondente del valore `X` di input viene elevato alla potenza del componente corrispondente del valore `Y` di input.<br /><br /> **Input**<br /><br /> `X`: `float`, `float2`, `float3` o `float4`<br /> Valori di base<br /><br /> `Y`: uguale a `X` di input<br /> Valori esponenziali.<br /><br /> **Output:**<br /><br /> `Output`: uguale a `X` di input<br /> Elevamento a potenza, per componente.|Nessuno|
 |**Saturazione**|Fissa ogni componente dell'input specificato all'intervallo [0, 1].<br /><br /> È possibile usare questo intervallo per rappresentare le percentuali e altre misurazioni relative nei calcoli. Per ciascun componente del risultato, i valori dei componenti corrispondenti minori di 0 sono resi uguali a 0, i valori maggiori di 1 sono resi uguali a 1 e i valori compresi nell'intervallo non vengono modificati.<br /><br /> **Input**<br /><br /> `X`: `float`, `float2`, `float3` o `float4`<br /> Valori da saturare.<br /><br /> **Output:**<br /><br /> `Output`: uguale a `X` di input<br /> Valore saturato, per componente.|Nessuno|
 |**Peccato**|Calcola il seno dell'input specificato, espresso in radianti, per ogni componente.<br /><br /> Per ciascun componente del risultato, viene calcolato il seno del componente corrispondente, fornito in radianti. Il risultato ha componenti con valori compresi nell'intervallo [-1, 1].<br /><br /> **Input**<br /><br /> `X`: `float`, `float2`, `float3` o `float4`<br /> Valori di cui calcolare il seno, in radianti.<br /><br /> **Output:**<br /><br /> `Output`: uguale a `X` di input<br /> Seno, per componente.|Nessuno|
 |**Sqrt**|Calcola la radice quadrata dell'input specificato, per ogni componente.<br /><br /> Per ciascun componente del risultato, viene calcolata la radice quadrata del componente corrispondente.<br /><br /> **Input**<br /><br /> `X`: `float`, `float2`, `float3` o `float4`<br /> Valori per i quali calcolare la radice quadrata.<br /><br /> **Output:**<br /><br /> `Output`: uguale a `X` di input<br /> Radice quadrata, per componente.|Nessuno|

@@ -1,5 +1,7 @@
 ---
 title: Uso di trame e immagini
+description: Informazioni su come usare l'editor di immagini in Visual Studio per creare e modificare trame e immagini in formati come quelli usati nello sviluppo di app DirectX.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 110cbbb01f5b86d462a9a5f196735fd4d477fb10
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc2f459fa3455d3f02953c42ad06e7f2647c79c6
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589864"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134720"
 ---
 # <a name="work-with-textures-and-images"></a>Usare trame e immagini
 
@@ -46,7 +48,7 @@ Le mappe di altezza contengono dati di campo di altezza. Queste mappe vengono us
 
 ### <a name="cube-maps"></a>Mappe di cubo
 
-Le mappe di cubo possono contenere tipi diversi di dati, ad esempio colori o normali, ma sono organizzate come sei trame sulle facce di un cubo. Per questo motivo, le mappe di cubo non vengono campionate fornendo coordinate di trama, ma un vettore la cui origine è il centro del cubo. Il campione viene acquisito in corrispondenza del punto in cui il vettore interseca il cubo. Le mappe cubo permettono di fornire un'approssimazione dell'ambiente che può essere usata per calcolare i riflessi, operazione chiamata *mapping dell'ambiente*, o per fornire a oggetti sferici una trama con una distorsione minore rispetto alle trame bidimensionali di base.
+Le mappe di cubo possono contenere tipi diversi di dati, ad esempio colori o normali, ma sono organizzate come sei trame sulle facce di un cubo. Per questo motivo, le mappe di cubo non vengono campionate fornendo coordinate di trama, ma un vettore la cui origine è il centro del cubo. Il campione viene acquisito in corrispondenza del punto in cui il vettore interseca il cubo. Le mappe cubo permettono di fornire un'approssimazione dell'ambiente che può essere usata per calcolare i riflessi, operazione chiamata *mapping dell'ambiente* , o per fornire a oggetti sferici una trama con una distorsione minore rispetto alle trame bidimensionali di base.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

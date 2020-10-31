@@ -1,5 +1,7 @@
 ---
 title: Nodi Parameter
+description: Informazioni su come modificare i parametri in uno shader in modo da assegnare all'oggetto un aspetto diverso in base alle proprietà del materiale, alle luci direzionali, alla posizione della fotocamera e al tempo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: da54db0b-3a3d-48dc-858c-7ac43aa04b13
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 986b7bcc75dd39b0d41d8f614a68734a65afca0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89b559ca9022234ca9f29c40f37c04212d0c698a
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768816"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134361"
 ---
 # <a name="parameter-nodes"></a>Nodi di parametro
 

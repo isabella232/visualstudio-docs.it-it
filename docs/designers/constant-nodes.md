@@ -1,5 +1,7 @@
 ---
 title: Nodi costanti
+description: Informazioni sui nodi costanti, che rappresentano i valori letterali e gli attributi dei vertici interpolati nei calcoli pixel shader, nella finestra di progettazione shader.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6868a5dc7cbace1d061c43cd507d32c271436a26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb7297a5486764127efda72ea37c5c97acc05245
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769306"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134217"
 ---
 # <a name="constant-nodes"></a>Nodi di costante
 
@@ -21,7 +23,7 @@ Nella modalità di progettazione shader, i nodi delle costanti rappresentano val
 
 ## <a name="vertex-attribute-interpolation"></a>Interpolazione degli attributi vertice
 
-L'immagine di una scena 3D in un gioco o in un'app viene creata mediante la trasformazione matematica di un numero di oggetti, che sono definiti da vertici, attributi vertice e definizioni di primitive, in pixel sullo schermo. Tutte le informazioni necessarie per dare al pixel un aspetto univoco vengono specificate tramite gli attributi vertice, che vengono combinati insieme in base alla prossimità del pixel ai diversi vertici che costituiscono la *primitiva*. Una primitiva è un elemento di base del rendering, vale a dire una semplice forma, come ad esempio un punto, una linea o un triangolo. Un pixel che è molto vicino a uno solo dei vertici riceve le costanti che sono pressoché identiche a tale vertice, ma un pixel equidistante da tutti i vertici di una primitiva riceve le costanti che sono la media di tali vertici. Nella programmazione grafica, le costanti che i pixel ricevono vengono dette *interpolate*. Specificare dati di costanti ai pixel con questa modalità consente di ottenere una qualità visiva ottimale e allo stesso tempo ridurre il footprint di memoria e i requisiti di larghezza di banda.
+L'immagine di una scena 3D in un gioco o in un'app viene creata mediante la trasformazione matematica di un numero di oggetti, che sono definiti da vertici, attributi vertice e definizioni di primitive, in pixel sullo schermo. Tutte le informazioni necessarie per dare al pixel un aspetto univoco vengono specificate tramite gli attributi vertice, che vengono combinati insieme in base alla prossimità del pixel ai diversi vertici che costituiscono la *primitiva* . Una primitiva è un elemento di base del rendering, vale a dire una semplice forma, come ad esempio un punto, una linea o un triangolo. Un pixel che è molto vicino a uno solo dei vertici riceve le costanti che sono pressoché identiche a tale vertice, ma un pixel equidistante da tutti i vertici di una primitiva riceve le costanti che sono la media di tali vertici. Nella programmazione grafica, le costanti che i pixel ricevono vengono dette *interpolate* . Specificare dati di costanti ai pixel con questa modalità consente di ottenere una qualità visiva ottimale e allo stesso tempo ridurre il footprint di memoria e i requisiti di larghezza di banda.
 
 Anche se ogni istanza del pixel shader riceve un solo set di valori costanti che non sono modificabili, istanze del pixel shader diverse ricevano set di dati costanti diversi. Questa progettazione consente a un programma di shader di produrre un output di colore diverso per ogni pixel nella primitiva.
 

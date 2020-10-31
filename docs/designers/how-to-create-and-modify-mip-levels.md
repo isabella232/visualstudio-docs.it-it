@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: creare e modificare livelli MIP'
+description: Informazioni su come usare l'editor di immagini per generare e modificare i livelli MIP per il livello di dettaglio dello spazio della trama.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e9764bdfb476d9e2c4aa8ab2c04ee3aaa4f222a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b97b57adb6fd87fa539e9dae7c37d6c5c8f2ddd6
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769051"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134446"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Procedura: Creare e modificare livelli MIP
 Questo documento illustra come usare **Editor di immagini** per generare e modificare i *livelli MIP* per il livello di dettaglio dell'area della trama.
@@ -25,9 +27,9 @@ Questo documento illustra come usare **Editor di immagini** per generare e modif
 
 1. Iniziare con una trama di base, come descritto in [procedura: creare una trama di base](../designers/how-to-create-a-basic-texture.md). Per risultati ottimali, specificare una trama con larghezza e altezza equivalenti a una potenza di due nella dimensione, ad esempio 256, 512, 1024 e così via.
 
-2. Generare i livelli MIP. Sulla barra degli strumenti della **modalità dell'editor di immagini** scegliere **Avanzate** > **Strumenti** > **Genera MIP**.
+2. Generare i livelli MIP. Sulla barra degli strumenti della **modalità dell'editor di immagini** scegliere **Avanzate** > **Strumenti** > **Genera MIP** .
 
-     I pulsanti per **la visualizzazione del livello MIP precedente** o **successivo** sono ora visualizzati sulla barra degli strumenti della **modalità dell'editor di immagini** . Se è visualizzata la finestra **Proprietà**, si può anche notare che nelle proprietà dell'immagine sono ora incluse le proprietà di sola lettura **Livello MIP** e **Conteggio livelli MIP**.
+     I pulsanti per **la visualizzazione del livello MIP precedente** o **successivo** sono ora visualizzati sulla barra degli strumenti della **modalità dell'editor di immagini** . Se è visualizzata la finestra **Proprietà** , si può anche notare che nelle proprietà dell'immagine sono ora incluse le proprietà di sola lettura **Livello MIP** e **Conteggio livelli MIP** .
 
 ## <a name="modifying-mip-levels"></a>Modifica dei livelli MIP
 Per ottenere effetti speciali o aumentare la qualità dell'immagine in specifici livelli di dettaglio, è possibile modificare singolarmente ogni livello MIP. È ad esempio possibile assegnare a un oggetto con trama un aspetto diverso a una certa distanza (una distanza maggiore corrisponde a livelli MIP più piccoli) oppure è possibile assicurarsi che le trame contenenti testo o simboli rimangano leggibili anche a livelli MIP più piccoli.
@@ -36,7 +38,7 @@ Per ottenere effetti speciali o aumentare la qualità dell'immagine in specifici
 
 1. Selezionare il livello MIP che si vuole modificare. Sulla barra degli strumenti della **modalità dell'editor di immagini** usare i pulsanti per **la visualizzazione del livello MIP precedente** o **successivo** per spostarsi da un livello MIP all'altro.
 
-2. Dopo aver selezionato il livello MIP da modificare, è possibile usare gli strumenti di disegno per modificarlo lasciando invariato il contenuto degli altri livelli MIP. Gli strumenti di disegno sono disponibili sulla barra degli strumenti **Editor di immagini**. Dopo aver selezionato uno strumento, è possibile modificarne le proprietà nella finestra **Proprietà**. Per informazioni sugli strumenti di disegno e le relative proprietà, vedere [Editor di immagini](../designers/image-editor.md).
+2. Dopo aver selezionato il livello MIP da modificare, è possibile usare gli strumenti di disegno per modificarlo lasciando invariato il contenuto degli altri livelli MIP. Gli strumenti di disegno sono disponibili sulla barra degli strumenti **Editor di immagini** . Dopo aver selezionato uno strumento, è possibile modificarne le proprietà nella finestra **Proprietà** . Per informazioni sugli strumenti di disegno e le relative proprietà, vedere [Editor di immagini](../designers/image-editor.md).
 
 > [!NOTE]
 > Se non è necessario modificare il contenuto di singoli livelli MIP (ad esempio, per ottenere effetti specifici), è consigliabile generare mipmap dalla trama di origine in fase di compilazione. Questa operazione garantisce infatti che i livelli MIP rimangano sincronizzati con la trama di origine, poiché le modifiche apportate a un livello MIP non vengono propagate automaticamente ad altri livelli. Per altre informazioni su come generare mipmap in fase di compilazione, vedere [procedura: esportare una trama che contiene mipmap](../designers/how-to-export-a-texture-that-contains-mipmaps.md).

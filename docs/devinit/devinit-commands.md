@@ -11,19 +11,19 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 56a2da4e02f890e199a6ff69b5a61882d1dfa416
-ms.sourcegitcommit: 01c1b040b12d9d43e3e8ccadee20d6282154faad
+ms.openlocfilehash: 8715bd00653f74d874dc077180a9978b26bff8f1
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92039798"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134731"
 ---
 # <a name="devinit-commands"></a>comandi devinit
 
 ## <a name="init"></a>Init
 
 ```console
-> devinit init
+devinit init
 ```
 
 Inizializzare l'ambiente eseguendo gli strumenti specificati in un [_.devinit.js_](devinit-json.md) nel file nella directory di lavoro corrente.  
@@ -70,7 +70,7 @@ Vedere di [seguito](#options-for-run).
 ## <a name="run"></a>Esegui
 
 ```console
-> devinit run -t <toolname>
+devinit run -t <toolname>
 ```
 
 Esegue lo strumento specifico. i parametri sono elencati di seguito. Vedere la [documentazione](devinit-tool-list.md) per ogni strumento per un utilizzo specifico.
@@ -111,19 +111,19 @@ Comandi echo Tool che verrebbero eseguiti, ma non eseguono alcun strumento.
 L'utilizzo di un oggetto `<arg>` che include uno spazio nel suo valore deve includere una coppia aggiuntiva di virgolette precedute.
 
 ```console
-> devinit run -t <toolname> -<somearg> "<some value>"
+devinit run -t <toolname> -<somearg> "<some value>"
 ```
 
 Per l'installazione di DotNet in una directory specifica `C:\Program Files\dotnet` :
 
 ```console
-> devinit run -t require-dotnetcoresdk --"-InstallDir \"C:\Program Files\dotnet\""
+devinit run -t require-dotnetcoresdk --"-InstallDir \"C:\Program Files\dotnet\""
 ```
 
 ## <a name="list"></a>Elenco
 
 ```console
-> devinit list
+devinit list
 ```
 
 Stampa un elenco di tutti gli strumenti disponibili.
@@ -131,7 +131,7 @@ Stampa un elenco di tutti gli strumenti disponibili.
 ## <a name="show"></a>Mostra
 
 ```console
-> devinit show -t <toolname>
+devinit show -t <toolname>
 ```
 
 | Argomento       | Obbligatoria | Descrizione                                                                          |
@@ -143,7 +143,7 @@ Stampa le informazioni della Guida per uno strumento specifico.
 ## <a name="version"></a>Versione
 
 ```console
-> devinit version
+devinit version
 ```
 
 Stampa le informazioni sulla versione corrente per devinilt.
@@ -151,8 +151,8 @@ Stampa le informazioni sulla versione corrente per devinilt.
 ## <a name="help"></a>Guida
 
 ```console
-> devinit help
-> devinit help list
+devinit help
+devinit help list
 ```
 
 Stampa il testo della Guida per il comando devinilt o per un comando specifico `devinit <command>` .

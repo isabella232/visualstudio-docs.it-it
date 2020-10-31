@@ -1,5 +1,7 @@
 ---
 title: Uso di risorse 3D per giochi e app
+description: Informazioni sugli strumenti di Visual Studio che è possibile usare per creare o modificare modelli 3D, trame e shader per app e giochi basati su DirectX.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa9fc04df3e817730492353e54d74c1e46c3775e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11f031aa3e3767af3132e68f92c492dc7e3fae6f
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589799"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134563"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Usare risorse 3D per giochi e app
 
@@ -35,7 +37,7 @@ Le immagini e le trame definiscono colore e dettagli visivi in giochi e app. Nel
 
 ### <a name="3d-models"></a>Modelli 3D
 
-I modelli 3D creano spazio e forma in giochi e app. I modelli codificano la posizione dei punti nello spazio 3D, noti come *vertici*, insieme all'indicizzazione dati, per definire linee o triangoli che rappresentano la forma del modello. A questi vertici è possibile aggiungere dati aggiuntivi, ad esempio informazioni sul colore, vettori normali o attributi specifici dell'applicazione. Ogni modello può anche definire attributi a livello di oggetto, ad esempio quali shader usare per definire l'aspetto dell'area dell'oggetto o quale trama applicare.
+I modelli 3D creano spazio e forma in giochi e app. I modelli codificano la posizione dei punti nello spazio 3D, noti come *vertici* , insieme all'indicizzazione dati, per definire linee o triangoli che rappresentano la forma del modello. A questi vertici è possibile aggiungere dati aggiuntivi, ad esempio informazioni sul colore, vettori normali o attributi specifici dell'applicazione. Ogni modello può anche definire attributi a livello di oggetto, ad esempio quali shader usare per definire l'aspetto dell'area dell'oggetto o quale trama applicare.
 
 È possibile usare l'Editor modello di Visual Studio per lavorare con modelli 3D in diversi formati comuni.
 
