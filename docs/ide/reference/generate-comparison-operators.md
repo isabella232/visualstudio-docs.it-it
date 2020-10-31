@@ -1,5 +1,7 @@
 ---
-title: Genera operatori di confronto per i tipi che implementano IComparable
+title: Generare operatori di confronto per IComparable
+ms.custom: SEO-VS-2020
+description: Per migliorare le prestazioni, generare operatori di confronto per i tipi che implementano IComparable.
 ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31e33b562a5a11ff77c1d610fbce9e90506b036d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 289562b1aebe981b0829a1adac107a607163a859
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290337"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102597"
 ---
 # <a name="generate-comparison-operators-for-types-that-implement-icomparable"></a>Genera operatori di confronto per i tipi che implementano IComparable
 
@@ -32,9 +34,9 @@ Questa generazione di codice si applica a:
 
 2. Eseguire quindi una delle operazioni seguenti:
 
-   - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
+   - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring** .
 
-   - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
+   - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring** .
 
    - Fare clic sull'icona ![cacciavite](../media/screwdriver-icon.png) che viene visualizzato nel margine sinistro.
 

@@ -1,5 +1,7 @@
 ---
-title: Completamento di DateTime e TimeSpan tramite il menu IntelliSense
+title: Completamento di DateTime e TimeSpan con IntelliSense
+description: Usare il menu IntelliSense per completare un valore letterale stringa DateTime e TimeSpan e una stringa di formato.
+ms.custom: SEO-VS-2020
 ms.date: 07/31/2020
 ms.topic: reference
 author: mikadumont
@@ -9,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36b6d5440e532653845638f87f7f1d7066af6ba3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd77f2b6b491dd49365cea10b22828815c13d8d9
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87471554"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102519"
 ---
-# <a name="datetime-and-timespan-completion-through-intellisense-menu"></a>Completamento di DateTime e TimeSpan tramite il menu IntelliSense
+# <a name="datetime-and-timespan-completion-by-using-the-intellisense-menu"></a>Completamento di DateTime e TimeSpan tramite il menu IntelliSense
 
 Questo refactoring si applica a:
 
@@ -24,7 +26,7 @@ Questo refactoring si applica a:
 
 **Cosa:** Valore letterale stringa DateTime e TimeSpan e completamento stringa di formato tramite il menu IntelliSense.
 
-**Quando:** Si desidera scrivere un valore letterale stringa DateTime e TimeSpan e una stringa di formato. IntelliSense fornisce il completamento di base e una spiegazione del significato di ogni carattere. 
+**Quando:** Si desidera scrivere un valore letterale stringa DateTime e TimeSpan e una stringa di formato. IntelliSense fornisce il completamento di base e una spiegazione del significato di ogni carattere.
 
 **Motivo:** Ricordare i formati DateTime è un disco rigido e IntelliSense può aiutarti a scriverlo.
 

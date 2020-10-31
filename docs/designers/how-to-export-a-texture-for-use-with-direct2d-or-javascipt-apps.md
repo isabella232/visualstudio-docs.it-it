@@ -1,5 +1,6 @@
 ---
-title: Esportare una trama per applicazioni Direct2D e JavaScript
+title: Esportare una trama per le app Direct2D e JavaScript
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
@@ -8,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 546f7255b1c2846bdbd05bba0593b30bad9beacd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e0433549f2a473da5f33eda6e264a46ea280e251
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769008"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102623"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Procedura: esportare una trama da usare con app Direct2D o JavaScript
 
@@ -51,16 +52,16 @@ Le trame usate nel contesto di Direct2D devono essere conformi alle convenzioni 
 
 1. Iniziare con una trama di base. Caricare un'immagine esistente o crearne una nuova, come descritto in [procedura: creare una trama di base](../designers/how-to-create-a-basic-texture.md). Per supportare la compressione a blocchi in formato *DDS* , specificare una trama con larghezza e altezza multipli di quattro, ad esempio, 100x100, 128x128 o 256x192. Poiché il mapping MIP non è supportato, la trama non deve essere quadrata e le dimensioni non devono essere una potenza di due.
 
-2. Configurare il file di trama in modo che venga elaborato dalla pipeline di contenuti immagine. In **Esplora soluzioni** aprire il menu di scelta rapida per il file di trama appena creato e quindi scegliere **Proprietà**. Nella pagina **proprietà di configurazione**  >  **generale** impostare la proprietà **tipo di elemento** su **pipeline contenuto immagine**. Assicurarsi che la proprietà **Contenuto** sia impostata su **Sì** e che l'opzione **Exclude From Build** (Escludi da compilazione) sia impostata su **No**, quindi scegliere il pulsante **Applica**. Viene visualizzata la pagina delle proprietà di configurazione **Image Content Pipeline** (Pipeline di contenuti immagine).
+2. Configurare il file di trama in modo che venga elaborato dalla pipeline di contenuti immagine. In **Esplora soluzioni** aprire il menu di scelta rapida per il file di trama appena creato e quindi scegliere **Proprietà** . Nella pagina **proprietà di configurazione**  >  **generale** impostare la proprietà **tipo di elemento** su **pipeline contenuto immagine** . Assicurarsi che la proprietà **Contenuto** sia impostata su **Sì** e che l'opzione **Exclude From Build** (Escludi da compilazione) sia impostata su **No** , quindi scegliere il pulsante **Applica** . Viene visualizzata la pagina delle proprietà di configurazione **Image Content Pipeline** (Pipeline di contenuti immagine).
 
-3. Impostare il formato di output su uno dei formati compressi a blocchi. Nella **Configuration Properties**  >  pagina generale della**pipeline di contenuti immagine**delle proprietà  >  **General** di configurazione impostare la proprietà **Comprimi** su **BC3_UNORM Compression (/Compress: BC3_UNORM)**. È possibile scegliere uno degli altri formati BC1, BC2 o BC3, in base alle specifiche esigenze. Direct2D attualmente non supporta le trame BC4, BC5, BC6 o BC7. Per altre informazioni sui diversi formati BC, vedere [compressione dei blocchi (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression).
+3. Impostare il formato di output su uno dei formati compressi a blocchi. Nella **Configuration Properties**  >  pagina generale della **pipeline di contenuti immagine** delle proprietà  >  **General** di configurazione impostare la proprietà **Comprimi** su **BC3_UNORM Compression (/Compress: BC3_UNORM)** . È possibile scegliere uno degli altri formati BC1, BC2 o BC3, in base alle specifiche esigenze. Direct2D attualmente non supporta le trame BC4, BC5, BC6 o BC7. Per altre informazioni sui diversi formati BC, vedere [compressione dei blocchi (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression).
 
    > [!NOTE]
-   > Il formato di compressione specificato determina il formato del file generato dalla pipeline di contenuti immagine. Questo si differenzia dalla proprietà **Formato** dell'immagine di origine nell'editor di immagini, che determina il formato del file di immagine di origine così com'è archiviato su disco, ovvero il *formato di lavoro*. In genere, non è consigliabile usare un formato di lavoro compresso.
+   > Il formato di compressione specificato determina il formato del file generato dalla pipeline di contenuti immagine. Questo si differenzia dalla proprietà **Formato** dell'immagine di origine nell'editor di immagini, che determina il formato del file di immagine di origine così com'è archiviato su disco, ovvero il *formato di lavoro* . In genere, non è consigliabile usare un formato di lavoro compresso.
 
-4. Configurare la pipeline di contenuti immagine in modo da generare output che usa il valore alfa premoltiplicato. Nella pagina generale della pipeline di contenuti immagine delle **proprietà di configurazione**  >  **Image Content Pipeline**  >  **General** impostare la proprietà **Converti in formato alfa pre-moltiplicato** su **Sì (/generatepremultipliedalpha)**.
+4. Configurare la pipeline di contenuti immagine in modo da generare output che usa il valore alfa premoltiplicato. Nella pagina generale della pipeline di contenuti immagine delle **proprietà di configurazione**  >  **Image Content Pipeline**  >  **General** impostare la proprietà **Converti in formato alfa pre-moltiplicato** su **Sì (/generatepremultipliedalpha)** .
 
-5. Configurare la pipeline di contenuti immagine in modo che non generi mipmap. Nella **Configuration Properties**  >  pagina generale della**pipeline di contenuti immagine**delle proprietà di configurazione  >  **General** impostare la proprietà **Genera MIP** su **No**.
+5. Configurare la pipeline di contenuti immagine in modo che non generi mipmap. Nella **Configuration Properties**  >  pagina generale della **pipeline di contenuti immagine** delle proprietà di configurazione  >  **General** impostare la proprietà **Genera MIP** su **No** .
 
 6. Fare clic su **OK** .
 
