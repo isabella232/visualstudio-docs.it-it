@@ -8,10 +8,10 @@ ms.date: 10/22/2020
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono assegnare le licenze a più sottoscrittori usando la funzionalità di aggiunta in blocco o i gruppi di Microsoft Azure Active Directory
 ms.openlocfilehash: 6cb3613d76faca2adc9c6e946f6a8ec2c73770f1
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "92467544"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Assegnare sottoscrizioni a più utenti
@@ -35,7 +35,7 @@ Per aggiungere gruppi di utenti di grandi dimensioni, è possibile utilizzare la
    > [!NOTE]
    > Scaricare sempre la versione più recente del modello. Se si usa una versione precedente, il caricamento in blocco potrebbe non riuscire.
 
-1. Nel foglio di calcolo Excel compilare i campi con le informazioni per gli utenti a cui si desidera assegnare le sottoscrizioni. (*Reference* è un campo facoltativo). Al termine, salvare il file localmente.
+1. Nel foglio di calcolo Excel compilare i campi con le informazioni per gli utenti a cui si desidera assegnare le sottoscrizioni. ( *Reference* è un campo facoltativo). Al termine, salvare il file localmente.
 
     > [!NOTE]
     > Uno dei campi del modello consente agli amministratori di abilitare o disabilitare la possibilità per i sottoscrittori di scaricare il software.  La disabilitazione dei download Disabilita anche l'accesso ai codici Product Key.
@@ -48,11 +48,11 @@ Per aggiungere gruppi di utenti di grandi dimensioni, è possibile utilizzare la
     - Verificare che tutti i campi obbligatori siano completati. 
     - Controllare la colonna del **messaggio di errore** .  Se vengono elencati errori, risolverli prima di provare a caricare il file. 
 
-1. Tornare al portale di amministrazione delle sottoscrizioni di Visual Studio. Nella finestra di dialogo **carica più sottoscrittori** selezionare **Sfoglia**.
+1. Tornare al portale di amministrazione delle sottoscrizioni di Visual Studio. Nella finestra di dialogo **carica più sottoscrittori** selezionare **Sfoglia** .
    > [!div class="mx-imgBorder"]
    > ![Passare al modello salvato per caricare più sottoscrittori](media/bulk-add-browse-saved-template.png "È possibile passare al percorso del file oppure trascinarlo e rilasciarlo in questa finestra di dialogo.")
 
-1. Passare al file di Excel salvato e quindi fare clic su **OK**.
+1. Passare al file di Excel salvato e quindi fare clic su **OK** .
    > [!div class="mx-imgBorder"]
    > ![Caricare il modello di Excel per caricare più sottoscrittori](media/bulk-upload-subscribers.png "Il modello con i dati verrà visualizzato qui.  Selezionare OK per avviare il caricamento.")
 
@@ -65,10 +65,10 @@ Per aggiungere gruppi di utenti di grandi dimensioni, è possibile utilizzare la
    Se si verifica un errore, attenersi alla procedura seguente:
    1. Aprire il file di Excel creato, risolvere i problemi e salvare il file.
    0. Tornare al portale di amministrazione e chiudere il messaggio di errore.
-   0. Scegliere **Aggiungi**.
-   0. Selezionare **Aggiungi in blocco**.
-   0. Poiché è già stato salvato il file di Excel, non è necessario scaricare il modello.  Selezionare **Sfoglia**, individuare il file appena salvato e selezionare **Apri**.
-   0. Selezionare **OK**.
+   0. Scegliere **Aggiungi** .
+   0. Selezionare **Aggiungi in blocco** .
+   0. Poiché è già stato salvato il file di Excel, non è necessario scaricare il modello.  Selezionare **Sfoglia** , individuare il file appena salvato e selezionare **Apri** .
+   0. Selezionare **OK** .
 
 
     Quando il caricamento ha esito positivo, viene visualizzato l'elenco di sottoscrittori e un messaggio di conferma.
@@ -111,7 +111,7 @@ Guardare questo video o leggere per altre informazioni sull'aggiunta di sottoscr
    > [!div class="mx-imgBorder"]
    > ![Scegliere il gruppo di Azure AD](_img/assign-license-bulk/bulk-add-aad-details.png "Scegliere il nome del gruppo di Azure AD per aggiungere i sottoscrittori del gruppo.")
 
-6. Selezionare **Aggiungi** e quindi **conferma**. 
+6. Selezionare **Aggiungi** e quindi **conferma** . 
 
 7. Per visualizzare il gruppo aggiunto, scorrere fino alla fine dell'elenco di utenti.  
 

@@ -8,10 +8,10 @@ ms.date: 07/30/2020
 ms.topic: conceptual
 description: Informazioni su come trovare, richiedere ed esportare codici Product Key nelle sottoscrizioni di Visual Studio
 ms.openlocfilehash: a246f66e429b78647f217468c7c19b703b419062
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "91004967"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Ricerca e richiesta di codici Product Key nelle sottoscrizioni di Visual Studio
@@ -56,7 +56,7 @@ Per richiedere un codice Product Key:
 > ![Cercare il codice Product Key](_img/product-keys/search-keys.png "Scorrere fino al prodotto desiderato oppure utilizzare la casella di ricerca per individuare rapidamente qualsiasi prodotto.")
    
 In questo esempio è stata usata la barra di ricerca per individuare un codice Product Key per Visual Studio Enterprise 2019.
-Come si può osservare, sono elencate diverse versioni.  Un codice Product Key è già stato richiesto per ognuna delle versioni 16.0 e 16.1.  Per entrambe le versioni sono ancora disponibili codici Product Key aggiuntivi di tipi diversi. Si noti che è possibile registrare una breve nota sui codici richiesti nella colonna **Note**,  che può essere usata in combinazione con la data nella colonna **Richiesto** per tenere traccia dei codici richiesti.  È possibile ad esempio inserire note quando si attiva un'installazione del prodotto tramite il codice.
+Come si può osservare, sono elencate diverse versioni.  Un codice Product Key è già stato richiesto per ognuna delle versioni 16.0 e 16.1.  Per entrambe le versioni sono ancora disponibili codici Product Key aggiuntivi di tipi diversi. Si noti che è possibile registrare una breve nota sui codici richiesti nella colonna **Note** ,  che può essere usata in combinazione con la data nella colonna **Richiesto** per tenere traccia dei codici richiesti.  È possibile ad esempio inserire note quando si attiva un'installazione del prodotto tramite il codice.
 
 ### <a name="exporting-your-claimed-keys"></a>Esportazione dei codici richiesti
 È possibile esportare un elenco di tutti i codici richiesti, insieme a un'ampia selezione di codici statici e altri codici contrassegnati automaticamente come "richiesti" per l'utente.

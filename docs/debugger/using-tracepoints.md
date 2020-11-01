@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "89561338"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Registrare le informazioni nella finestra di output usando punti in Visual Studio
@@ -53,7 +53,7 @@ Il programma di esempio seguente è un semplice `for` ciclo con una variabile co
 
    ![Casella condizioni controllate](../debugger/media/checkedconditionsbox.png "Casella condizioni controllate")
 
-   Sono disponibili tre opzioni per le condizioni: **espressione condizionale**, **filtro**e **numero di passaggi**.
+   Sono disponibili tre opzioni per le condizioni: **espressione condizionale** , **filtro** e **numero di passaggi** .
 
 ## <a name="actions-menu"></a>Menu Azioni
 
@@ -63,7 +63,7 @@ Se ad esempio si desidera visualizzare il valore della `counter` variabile nella
 
 ![Messaggio di output del contatore](../debugger/media/counteroutputmessage.png "Messaggio di output del contatore")
 
-Se si fa clic su **Chiudi** e quindi si esegue il debug del programma (**F5**), nella finestra di output verrà visualizzato il seguente output.
+Se si fa clic su **Chiudi** e quindi si esegue il debug del programma ( **F5** ), nella finestra di output verrà visualizzato il seguente output.
 
 ![Messaggio azioni nella Finestra di output](../debugger/media/actionsmessageinoutputwindow.png "Messaggio azioni nella Finestra di output")
 
@@ -110,7 +110,7 @@ Per il numero di passaggi è possibile scegliere di generare un messaggio quando
 
 ![Numero di passaggi delle espressioni condizionali](../debugger/media/conditionalexpressionhitcount.png "Numero di passaggi delle espressioni condizionali")
 
-### <a name="filter"></a>Filtro
+### <a name="filter"></a>Filtra
 Per una condizione di filtro, specificare quali dispositivi, processi o output dei thread vengono visualizzati per.
 
 ![Filtro espressione condizionale](../debugger/media/conditionalexpressionfilter.png "Filtro espressione condizionale")

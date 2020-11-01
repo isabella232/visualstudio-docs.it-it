@@ -8,10 +8,10 @@ ms.date: 08/04/2020
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione del training Pluralsight inclusa nelle sottoscrizioni di Visual Studio selezionate.
 ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
+ms.lasthandoff: 11/01/2020
 ms.locfileid: "91005342"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Vantaggi di training Pluralsight nelle sottoscrizioni di Visual Studio
@@ -31,7 +31,7 @@ Il riquadro precedente è un esempio di ciò che un Sottoscrittore di Visual Stu
 1. L'utente verrà reindirizzato alla pagina Pluralsight per il vantaggio incluso con la sottoscrizione di Visual Studio.
    - Specificare le informazioni di contatto richieste nel modulo
    - Fare clic sulla casella di controllo per accettare le condizioni per l'utilizzo
-   - Fare clic su **riscatta**.
+   - Fare clic su **riscatta** .
    > [!div class="mx-imgBorder"]
    > ![Registrazione Pluralsight](_img/vs-pluralsight/vs-pluralsight-registration.png "Completare il modulo di registrazione, fare clic sulla casella di controllo per accettare le condizioni e fare clic su Riscatta")
 
@@ -43,9 +43,9 @@ Il riquadro precedente è un esempio di ciò che un Sottoscrittore di Visual Stu
    > [!NOTE]
    > Se l'account non è idoneo per le nuove offerte, nel messaggio di posta elettronica viene spiegato che si è verificato un problema durante la creazione dell'account in quanto non idoneo.  Il messaggio contiene anche informazioni utili per contattare il team di supporto Pluralsight, che può rispondere a eventuali domande relative all'account.
 
-1. Fare clic su **Imposta password**.
+1. Fare clic su **Imposta password** .
 
-1. Immettere la password desiderata nel campo **nuova password** , immetterla di nuovo nel campo **Conferma password** e fare clic su **Salva**.
+1. Immettere la password desiderata nel campo **nuova password** , immetterla di nuovo nel campo **Conferma password** e fare clic su **Salva** .
 
 1. L'operazione è terminata.  A questo punto è possibile iniziare a imparare usando i numerosi corsi Pluralsight.
 
