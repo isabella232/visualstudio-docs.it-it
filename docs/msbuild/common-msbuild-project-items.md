@@ -2,7 +2,7 @@
 title: Elementi di progetto MSBuild comuni | Microsoft Docs
 description: Informazioni sugli elementi di progetto MSBuild comuni. Gli elementi sono denominati riferimenti a uno o più file e hanno metadati come nomi file, percorsi e numeri di versione.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 10/29/2020
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b42ba80365b8aedd9527490235efb1228bc2a61d
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 638f67575a7214047cdb917c994179ac144e60b2
+ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796394"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93238623"
 ---
 # <a name="common-msbuild-project-items"></a>Elementi di progetto MSBuild comuni
 
@@ -136,7 +136,7 @@ Rappresenta file che non sono compilati nel progetto, ma possono essere incorpor
 | Visible | Valore booleano facoltativo. Indica se visualizzare il file in **Esplora soluzioni** in Visual Studio. |
 | CopyToOutputDirectory | Stringa facoltativa. Specifica se il file deve essere copiato nella cartella di output. I valori possibili sono:<br /><br /> 1. mai<br />2. always<br />3. PreserveNewest |
 
-### <a name="none"></a>nessuno
+### <a name="none"></a>Nessuno
 
 Rappresenta i file che non hanno un ruolo nel processo di compilazione.
 
@@ -157,10 +157,22 @@ Rappresenta gli attributi di assembly da generare come `[AssemblyMetadata(key, v
 | Nome metadati degli elementi | Descrizione |
 |-----------------------| - |
 | Includi | Diventa il primo parametro (chiave) nel costruttore dell' `AssemblyMetadataAttribute` attributo. |
-| valore | Stringa obbligatoria. Diventa il secondo parametro (valore) nel costruttore dell' `AssemblyMetadataAttribute` attributo. |
+| Valore | Stringa obbligatoria. Diventa il secondo parametro (valore) nel costruttore dell' `AssemblyMetadataAttribute` attributo. |
 
 > [!NOTE]
-> Questo vale per i progetti che usano solo la .NET Core SDK.
+> Questo elemento si applica ai progetti che usano l'SDK per .NET 5 (e .NET Core) e versioni successive.
+
+### <a name="internalsvisibleto"></a>InternalsVisibleTo
+
+Specifica gli assembly da emettere come `[InternalsVisibleTo(..)]` attributi di assembly.
+
+| Nome metadati degli elementi | Descrizione |
+|-----------------------| - |
+| Includi | Nome dell'assembly. |
+| Chiave | Stringa facoltativa. Chiave pubblica dell'assembly. |
+
+> [!NOTE]
+> Questo elemento si applica ai progetti che usano l'SDK per .NET 5 (e .NET Core) e versioni successive.
 
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 
@@ -170,7 +182,7 @@ Rappresenta il manifesto dell'applicazione di base per la compilazione e contien
 
 Rappresenta il progetto FxCop da importare.
 
-### <a name="import"></a>Importa
+### <a name="import"></a>Comando Importa
 
 Rappresenta gli assembly i cui spazi dei nomi devono essere importati dal compilatore Visual Basic.
 
