@@ -26,7 +26,7 @@ ms.locfileid: "93238623"
 ---
 # <a name="common-msbuild-project-items"></a>Elementi di progetto MSBuild comuni
 
-In MSBuild un elemento è un riferimento denominato a uno o più file. Gli elementi contengono metadati quali ad esempio nomi file, percorsi e numeri di versione. Tutti i tipi di progetto in Visual Studio hanno più elementi in comune. Questi elementi sono definiti nel file *Microsoft.Build.CommonTypes.xsd* .
+In MSBuild un elemento è un riferimento denominato a uno o più file. Gli elementi contengono metadati quali ad esempio nomi file, percorsi e numeri di versione. Tutti i tipi di progetto in Visual Studio hanno più elementi in comune. Questi elementi sono definiti nel file *Microsoft.Build.CommonTypes.xsd*.
 
 ## <a name="common-items"></a>Elementi comuni
 
