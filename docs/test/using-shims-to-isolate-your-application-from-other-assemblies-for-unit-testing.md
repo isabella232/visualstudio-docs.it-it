@@ -9,12 +9,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1a241fa8422a71900312198988dacfe144525b5a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 13a5c8c4058fc051cf7ec0093632220c757604f0
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810523"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325925"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Usare gli shim per isolare l'app per il testing unità
 
@@ -24,13 +24,13 @@ Usare gli *shim* per isolare il codice dagli assembly che non fanno parte della 
 
 Per una panoramica e istruzioni introduttive, vedere [isolare il codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**Requisiti**
+**Requirements**
 
 - Visual Studio Enterprise
 - Un progetto .NET Framework
-
-> [!NOTE]
-> I progetti .NET Standard non sono supportati.
+::: moniker range=">=vs-2019"
+- Il supporto per il progetto di tipo .NET Core e SDK è visualizzato in anteprima in Visual Studio 2019 Update 6 ed è abilitato per impostazione predefinita nell'aggiornamento 8. Per altre informazioni, vedere [Microsoft Fakes per i progetti .NET Core e in stile SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+::: moniker-end
 
 ## <a name="example-the-y2k-bug"></a>Esempio: il bug dell'anno 2000
 
@@ -67,11 +67,14 @@ using (ShimsContext.Create()) {
 
 Aggiungere prima di tutto un assembly Fakes:
 
-1. In **Esplora soluzioni**espandere il nodo **riferimenti** del progetto unit test.
+1. In **Esplora soluzioni** , 
+    - Per un progetto di .NET Framework precedente (stile non SDK), espandere il nodo **riferimenti** del progetto unit test.
+    ::: moniker range=">=vs-2019"
+    - Per un progetto di tipo SDK che ha come destinazione .NET Framework o .NET Core, espandere il nodo **dipendenze** per trovare l'assembly da falsificare in **assembly** , **progetti** o **pacchetti**.
+    ::: moniker-end
+    - Se si sta lavorando in Visual Basic, selezionare **Mostra tutti i file** nella barra degli strumenti **Esplora soluzioni** per visualizzare il nodo **riferimenti** .
 
-   - Se si usa Visual Basic, per visualizzare il nodo **Riferimenti**, selezionare **Mostra tutti i file** sulla barra degli strumenti di **Esplora soluzioni**.
-
-2. Consente di selezionare l'assembly contenente le definizioni delle classi per le quali si desidera creare gli shim. Se ad esempio si desidera eseguire lo shim di **DateTime**, selezionare **System.dll**.
+2. Consente di selezionare l'assembly contenente le definizioni delle classi per le quali si desidera creare gli shim. Se ad esempio si desidera eseguire lo shim di **DateTime** , selezionare **System.dll**.
 
 3. Scegliere **Aggiungi assembly Fakes** dal menu di scelta rapida.
 
@@ -93,7 +96,7 @@ public void Y2kCheckerTest() {
 
 ### <a name="write-a-test-with-shims"></a>Scrivere un test con shim
 
-Nel codice di test inserire una *deviazione* per il metodo da simulare. Esempio:
+Nel codice di test inserire una *deviazione* per il metodo da simulare. Ad esempio:
 
 ```csharp
 [TestClass]
@@ -520,7 +523,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>Limitazioni
 
-Non è possibile usare gli shim in tutti i tipi della libreria di classi base .NET **mscorlib** e **System**.
+Gli shim non possono essere usati in tutti i tipi della libreria di classi base .NET **mscorlib** e **System** in .NET Framework e in **System. Runtime** in .NET Core.
 
 ## <a name="see-also"></a>Vedere anche
 

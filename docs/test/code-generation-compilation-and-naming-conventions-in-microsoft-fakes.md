@@ -7,24 +7,24 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 155caf50e82f56c1db0b0b0a65a640f252f44063
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a1ba469f460e966be581b87226f2a89faac8186
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589331"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325937"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generazione del codice, compilazione e convenzioni di denominazione in Microsoft Fakes
 
 Questo articolo illustra problemi e opzioni di generazione e compilazione di codice Fakes e descrive le convenzioni di denominazione per tipi, membri e parametri generati da Fakes.
 
-**Requisiti**
+**Requirements**
 
 - Visual Studio Enterprise
 - Un progetto .NET Framework
-
-> [!NOTE]
-> I progetti .NET Standard non sono supportati.
+::: moniker range=">=vs-2019"
+- Il supporto per il progetto di tipo .NET Core e SDK è visualizzato in anteprima in Visual Studio 2019 Update 6 ed è abilitato per impostazione predefinita nell'aggiornamento 8. Per altre informazioni, vedere [Microsoft Fakes per i progetti .NET Core e in stile SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+::: moniker-end
 
 ## <a name="code-generation-and-compilation"></a>Generazione e compilazione di codice
 
@@ -32,7 +32,7 @@ Questo articolo illustra problemi e opzioni di generazione e compilazione di cod
 
 La generazione dei tipi stub è configurata in un file XML con estensione *FAKES*. Il framework Fakes si integra nel processo di compilazione tramite attività MSBuild personalizzate e rileva tali file in fase di compilazione. Il generatore di codice Fakes compila i tipi stub in un assembly e aggiunge il riferimento al progetto.
 
-L'esempio seguente illustra i tipi stub definiti in *FileSystem.dll*:
+L'esempio seguente illustra i tipi stub definiti in *FileSystem.dll* :
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -84,7 +84,7 @@ Le stringhe di filtro usano una grammatica semplice per definire come eseguire l
 
 ### <a name="stub-concrete-classes-and-virtual-methods"></a>Generare stub per classi concrete e metodi virtuali
 
-Per impostazione predefinita, vengono generati tipi stub per tutte le classi non sealed. È possibile limitare i tipi stub alle classi astratte usando il file di configurazione *FAKES*:
+Per impostazione predefinita, vengono generati tipi stub per tutte le classi non sealed. È possibile limitare i tipi stub alle classi astratte usando il file di configurazione *FAKES* :
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -102,7 +102,7 @@ Per impostazione predefinita, vengono generati tipi stub per tutte le classi non
 
 ### <a name="internal-types"></a>Tipi interni
 
-Il generatore di codice Fakes genera tipi shim e stub per i tipi visibili nell'assembly Fakes generato. Per fare in modo che i tipi interni di un assembly sottoposto a shim siano visibili per Fakes e l'assembly di test, aggiungere attributi <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> al codice dell'assembly sottoposto a shim per dare visibilità all'assembly Fakes generato e all'assembly di test. Ecco un esempio:
+Il generatore di codice Fakes genera tipi shim e stub per i tipi visibili nell'assembly Fakes generato. Per fare in modo che i tipi interni di un assembly sottoposto a shim siano visibili per Fakes e l'assembly di test, aggiungere attributi <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> al codice dell'assembly sottoposto a shim per dare visibilità all'assembly Fakes generato e all'assembly di test. Ad esempio:
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -183,7 +183,7 @@ Per evitare questo problema, Fakes deve creare automaticamente nomi di assembly 
 
 Dato un assembly MyAssembly e una versione 1.2.3.4, il nome di assembly Fakes è MyAssembly.1.2.3.4.Fakes.
 
-È possibile modificare o rimuovere la versione modificando l'attributo Version dell'elemento Assembly nel file *FAKES*:
+È possibile modificare o rimuovere la versione modificando l'attributo Version dell'elemento Assembly nel file *FAKES* :
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -229,22 +229,22 @@ attribute of the Assembly element in the .fakes:
 
 - Se il nome del metodo è un'implementazione esplicita dell'interfaccia, i punti vengono rimossi.
 
-- Se il metodo è generico, viene aggiunto `Of`*n*, dove *n* è il numero di argomenti del metodo generico.
+- Se il metodo è generico, viene aggiunto `Of`*n* , dove *n* è il numero di argomenti del metodo generico.
 
-  I **nomi di metodi speciali**, come getter o setter di proprietà, vengono trattati come descritto nella tabella seguente:
+  I **nomi di metodi speciali** , come getter o setter di proprietà, vengono trattati come descritto nella tabella seguente:
 
 |Se il metodo è un/una…|Esempio|Nome del metodo aggiunto|
 |-|-|-|
 |Un **Costruttore**|`.ctor`|`Constructor`|
 |**Costruttore** statico|`.cctor`|`StaticConstructor`|
-|**Funzione di accesso** con nome di metodo composto da due parti separate da "_" (ad esempio getter proprietà)|*kind_name* (caso comune, ma non applicato da ECMA)|*NameKind*, dove entrambe le parti iniziano con una maiuscola e la loro posizione è stata scambiata|
+|**Funzione di accesso** con nome di metodo composto da due parti separate da "_" (ad esempio getter proprietà)|*kind_name* (caso comune, ma non applicato da ECMA)|*NameKind* , dove entrambe le parti iniziano con una maiuscola e la loro posizione è stata scambiata|
 ||Getter della proprietà `Prop`|`PropGet`|
 ||Setter della proprietà `Prop`|`PropSet`|
 ||Metodo di aggiunta evento|`Add`|
 ||Metodo di rimozione evento|`Remove`|
 |**Operatore** costituito da due parti|`op_name`|`NameOp`|
 |Ad esempio: operatore +|`op_Add`|`AddOp`|
-|Per un **operatore di conversione**, viene aggiunto il tipo restituito.|`T op_Implicit`|`ImplicitOpT`|
+|Per un **operatore di conversione** , viene aggiunto il tipo restituito.|`T op_Implicit`|`ImplicitOpT`|
 
 > [!NOTE]
 > - **Getter e setter di indicizzatori** vengono trattati in modo analogo a quelli di proprietà. Il nome predefinito per un indicizzatore è `Item`.

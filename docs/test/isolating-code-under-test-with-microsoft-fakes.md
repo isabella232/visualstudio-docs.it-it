@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 9ef41b8645e77a28c8422fff49111b41215ba971
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: e837b1a0e9a1d8fe06342352e4eedf5ce0fa9117
+ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739876"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93325956"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolare codice sottoposto a test con Microsoft Fakes
 
@@ -29,14 +29,15 @@ Fakes è di due tipi:
 
 ![Fakes sostituisce altri componenti](../test/media/fakes-2.png)
 
-**Requisiti**
+**Requirements**
 
 - Visual Studio Enterprise
 - Un progetto .NET Framework
-- Il supporto di .NET Core e del progetto in stile SDK è attualmente in fase di anteprima. [Altre informazioni](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
+::: moniker range=">=vs-2019"
+- Il supporto per il progetto di tipo .NET Core e SDK è visualizzato in anteprima in Visual Studio 2019 Update 6 ed è abilitato per impostazione predefinita nell'aggiornamento 8. Per altre informazioni, vedere [Microsoft Fakes per i progetti .NET Core e in stile SDK](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects).
+::: moniker-end
 
 > [!NOTE]
-> - I progetti .NET Standard non sono supportati.
 > - La profilatura con Visual Studio non è disponibile per i test che usano Microsoft Fakes.
 
 ## <a name="choose-between-stub-and-shim-types"></a>Scegliere tra i tipi stub e shim
@@ -82,11 +83,15 @@ Per una descrizione più dettagliata, vedere [Usare stub per isolare le parti de
 
 2. **Aggiungere l'assembly Fakes**
 
-    1. In **Esplora soluzioni**espandere l'elenco di riferimento del progetto di test. Se si usa Visual Basic, scegliere **Mostra tutti i file** per visualizzare l'elenco dei riferimenti.
+   1. In **Esplora soluzioni** , 
+       - Per un progetto di .NET Framework precedente (stile non SDK), espandere il nodo **riferimenti** del progetto unit test.
+       ::: moniker range=">=vs-2019"
+       - Per un progetto di tipo SDK che ha come destinazione .NET Framework o .NET Core, espandere il nodo **dipendenze** per trovare l'assembly da falsificare in **assembly** , **progetti** o **pacchetti**.
+       ::: moniker-end
+       - Se si sta lavorando in Visual Basic, selezionare **Mostra tutti i file** nella barra degli strumenti **Esplora soluzioni** per visualizzare il nodo **riferimenti** .
+   2. Consente di selezionare l'assembly contenente le definizioni delle classi per le quali si desidera creare gli shim. Se ad esempio si desidera eseguire lo shim di **DateTime** , selezionare **System.dll**.
 
-    2. Selezionare il riferimento all'assembly in cui è definita l'interfaccia (ad esempio IStockFeed). Nel menu di scelta rapida del riferimento scegliere **Aggiungi assembly Fakes**.
-
-    3. Ricompilare la soluzione.
+   3. Scegliere **Aggiungi assembly Fakes** dal menu di scelta rapida.
 
 3. Nei test, creare le istanze dello stub e fornire il codice per i relativi metodi:
 
@@ -169,7 +174,7 @@ Per usare gli shim, non è necessario modificare il codice dell'applicazione o s
 
 1. **Aggiungere l'assembly Fakes**
 
-     In **Esplora soluzioni**aprire i riferimenti del progetto unit test e selezionare il riferimento all'assembly che contiene il metodo che si desidera falsificare. In questo esempio la classe `DateTime` si trova in *System.dll*.  Per visualizzare i riferimenti in un progetto di Visual Basic, scegliere **Mostra tutti i file**.
+     In **Esplora soluzioni** aprire i riferimenti del progetto unit test e selezionare il riferimento all'assembly che contiene il metodo che si desidera falsificare. In questo esempio la classe `DateTime` si trova in *System.dll*.  Per visualizzare i riferimenti in un progetto di Visual Basic, scegliere **Mostra tutti i file**.
 
      Scegliere **Aggiungi assembly Fakes**.
 
@@ -244,6 +249,61 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 Non c'è un assembly "System.IO.Fakes" a cui fare riferimento. Lo spazio dei nomi viene generato dal processo di creazione di shim. È tuttavia possibile usare istruzioni "using" o "import" nel modo consueto.
 
 È inoltre possibile creare shim per istanze, costruttori e proprietà specifiche. Per altre informazioni, vedere [Usare shim per isolare l'applicazione da altri assembly per unit test](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
+
+## <a name="using-microsoft-fakes-in-the-ci"></a>Uso di Microsoft Fakes in CI
+
+### <a name="microsoft-fakes-assembly-generation"></a>Generazione di assembly Microsoft Fakes
+Poiché Microsoft Fakes richiede Visual Studio Enterprise, per la generazione di assembly Fakes è necessario compilare il progetto usando l' [attività di compilazione di Visual Studio](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops).
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> In alternativa, è possibile controllare gli assembly Fakes in CI e usare l' [attività MSBuild](../msbuild/msbuild-task.md?view=vs-2019). Quando si esegue questa operazione, è necessario assicurarsi di avere un riferimento all'assembly Fakes generato nel progetto di test, simile al frammento di codice seguente:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <Reference Include="FakesAssemblies\System.Fakes.dll">
+    </ItemGroup>
+</Project>
+```
+
+Questo riferimento è necessario per l'aggiunta manuale in specifici progetti di tipo SDK (.NET Core e .NET Framework) perché è stato spostato in modo implicito aggiungendo riferimenti ad assembly al progetto di test. Se si segue questo metodo, è necessario assicurarsi che l'assembly Fakes venga aggiornato quando viene modificato l'assembly padre.
+::: moniker-end
+
+### <a name="running-microsoft-fakes-tests"></a>Esecuzione di test Microsoft Fakes
+Finché gli assembly di Microsoft Fakes sono presenti nella directory configurata `FakesAssemblies` (impostazione predefinita `$(ProjectDir)FakesAssemblies` ), è possibile eseguire test usando l' [attività VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops).
+
+::: moniker range=">=vs-2019"
+Il test distribuito con i progetti .net core dell' [attività VSTest](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) con Microsoft Fakes richiede Visual Studio 2019 Update 9 Preview `20201020-06` e versioni successive.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-or-net-core-projects"></a>Transizione dei progetti di test di .NET Framework che usano Microsoft Fakes in progetti di .NET Framework o .NET Core in stile SDK
+Per eseguire la transizione a .NET Core, è necessario apportare modifiche minime al .NET Framework configurato per Microsoft Fakes. I casi da considerare sono i seguenti:
+- Se si usa un modello di progetto personalizzato, è necessario assicurarsi che sia in stile SDK e compilazioni per un Framework di destinazione compatibile.
+- Alcuni tipi sono presenti in assembly diversi in .NET Framework e .NET Core, ad esempio `System.DateTime` esiste in `System` / `mscorlib` in .NET Framework e in `System.Runtime` .NET Core, e in questi scenari è necessario modificare l'assembly simulato.
+- Se si dispone di un riferimento a un assembly Fakes e di un progetto di test, è possibile che venga visualizzato un avviso di compilazione relativo a un riferimento mancante simile al seguente:
+  ```
+  (ResolveAssemblyReferences target) ->
+  warning MSB3245: Could not resolve this reference. Could not locate the assembly "AssemblyName.Fakes". Check to make sure the assembly exists on disk.
+  If this reference is required by your code, you may get compilation errors.
+  ```
+  Questo avviso è dovuto a modifiche necessarie apportate nella generazione di Fakes. Può essere evitato rimuovendo il riferimento all'assembly dal file di progetto, perché ora vengono aggiunti in modo implicito durante la compilazione.
+::: moniker-end
+
+## <a name="microsoft-fakes-support"></a>Supporto di Microsoft Fakes 
+### <a name="microsoft-fakes-in-older-projects-targeting-net-framework-non-sdk-style"></a>Microsoft Fakes nei progetti precedenti destinati .NET Framework (stile non SDK).
+- La generazione di assembly Microsoft Fakes è supportata in Visual Studio Enterprise 2015 e versioni successive.
+- I test Microsoft Fakes possono essere eseguiti con tutti i pacchetti NuGet Microsoft. TestPlatform disponibili.
+- Il code coverage è supportato per i progetti di test con Microsoft Fakes in Visual Studio Enterprise 2015 e versioni successive.
+
+### <a name="microsoft-fakes-in-sdk-style-net-framework-and-net-core-projects"></a>Microsoft Fakes nei progetti .NET Framework e .NET Core in stile SDK
+- Microsoft Fakes Generation assembly Preview è stato visualizzato in Visual Studio Enterprise 2019 Update 6 ed è abilitato per impostazione predefinita nell'aggiornamento 8.
+- Microsoft Fakes verifica che i progetti destinati a .NET Framework possono essere eseguiti con tutti i pacchetti NuGet Microsoft. TestPlatform disponibili.
+- Microsoft Fakes verifica se i progetti destinati a .NET Core possono essere eseguiti con i pacchetti NuGet Microsoft. TestPlatform con le versioni [16.8.0-Preview-20200921-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.8.0-preview-20200921-01) e versioni successive.
+- Il code coverage è supportato per i progetti di test destinati a .NET Framework con Microsoft Fakes in Visual Studio Enterprise versione 2015 e successive.
+- Il supporto del code coverage per i progetti di test destinati a .NET Core con Microsoft Fakes è in fase di sviluppo.
+
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 [Usare stub per isolare le parti dell'applicazione l'una dall'altra per unit test](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
