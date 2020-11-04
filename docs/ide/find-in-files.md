@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e1f067df647f843819e085f283005606699f3bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a32720475bda124c563d45133028f43b4f1b9cd
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595475"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344507"
 ---
 # <a name="find-in-files"></a>Cerca nei file
 
@@ -55,7 +55,7 @@ Per cercare una nuova stringa di testo o espressione, specificarla nella casella
 L'opzione selezionata dall'elenco a discesa **Cerca in** determina se la funzione **Cerca nei file** eseguirà la ricerca solo nei file attualmente attivi oppure in tutti i file archiviati all'interno di determinate cartelle. Selezionare un ambito di ricerca nell'elenco o fare clic sul pulsante **Sfoglia (...)** per visualizzare la finestra di dialogo **Seleziona cartelle di ricerca** e immettere il set di directory desiderato. È anche possibile digitare un percorso direttamente nella casella **Cerca in**.
 
 > [!WARNING]
-> Con le opzioni **Intera soluzione** o **Progetto corrente**, la ricerca non viene eseguita nei file di progetto e di soluzione. Se si vuole cercare in file di progetto, scegliere una cartella di ricerca.
+> Con le opzioni **Intera soluzione** o **Progetto corrente** , la ricerca non viene eseguita nei file di progetto e di soluzione. Se si vuole cercare in file di progetto, scegliere una cartella di ricerca.
 
 > [!NOTE]
 > Se l'opzione **Cerca in** selezionata fa sì che venga cercato un file estratto dal controllo del codice sorgente, la ricerca verrà eseguita solo nella versione del file scaricata nel computer locale.

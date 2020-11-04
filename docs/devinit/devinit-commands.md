@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 8715bd00653f74d874dc077180a9978b26bff8f1
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 6543dfe8298ea24aa731a74556b01be1beeed2bf
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134731"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344478"
 ---
 # <a name="devinit-commands"></a>comandi devinit
 
@@ -53,7 +53,7 @@ Specifica il percorso del _devinit.jssul_ file. Se--file non è specificato, si 
 * {Current-directory} \\ . devcontainer \\devinit.json
 
 > [!NOTE]
-> Se vengono rilevati più file predefiniti, il file verrà usato per la prima volta nell'elenco precedente.
+> Se vengono trovati più file predefiniti, il file verrà usato per primo nell'elenco precedente.
 
 #### <a name="--error-action-argument"></a>--Error-argomento azione
 
@@ -148,7 +148,7 @@ devinit version
 
 Stampa le informazioni sulla versione corrente per devinilt.
 
-## <a name="help"></a>Guida
+## <a name="help"></a>Help
 
 ```console
 devinit help

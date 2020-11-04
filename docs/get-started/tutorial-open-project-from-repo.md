@@ -2,7 +2,7 @@
 title: 'Esercitazione: aprire un progetto da un repository'
 description: Informazioni su come aprire un progetto in un repository Git o Azure DevOps con Visual Studio.
 ms.custom: get-started
-ms.date: 03/30/2019
+ms.date: 11/03/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ad609e9cf6a00a1b966e5d63589592239f215b01
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 56005faa4475f040375108ca02abbca40cd2652d
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743032"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344540"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Esercitazione: aprire un progetto da un repository
 
@@ -53,7 +53,7 @@ Se Visual Studio non è ancora installato, passare alla pagina dei [download di 
 
     ![Scegliere Clona dalla sezione Repository Git locali](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. Nella casella ***Immetti l'URL di un repository Git da clonare***, digitare o incollare l'URL del repository e quindi premere **INVIO**. Se viene visualizzata la richiesta di accedere a GitHub, eseguire questa operazione.
+1. Nella casella di **testo _immettere l'URL di un repository git da clonare_*_, digitare o incollare l'URL per il repository, quindi premere _* invio**. Se viene visualizzata la richiesta di accedere a GitHub, eseguire questa operazione.
 
    Quando Visual Studio ha clonato il repository, Team Explorer si chiude e si apre Esplora soluzioni. Viene visualizzato il messaggio *Fare clic sopra su "Soluzioni e cartelle" per visualizzare un elenco di soluzioni*. Scegliere **Soluzioni e cartelle**.
 
@@ -92,6 +92,9 @@ Visualizzare l'animazione seguente per verificare il lavoro completato nella sez
    ![Scegliere cosa si vuole aprire nell'elenco a discesa Esplora soluzioni](./media/open-proj-repo-github-solutions-folders-picker.png)
 
    Se nel repository non è disponibile un file di soluzione (con estensione sln), il menu a comparsa indicherà che "Non sono state trovate soluzioni". Tuttavia, è possibile fare doppio clic su qualsiasi file nel menu della cartella per aprirlo nell'editor di codice di Visual Studio.
+
+> [!TIP]
+> Se si vuole provare una nuova esperienza git integrata in Visual Studio e si usa la [versione 16,6](/visualstudio/releases/2019/release-notes-v16.6) o successiva, è possibile attivarla passando a **strumenti**  >  **Opzioni**  >  **ambiente**  >  **Anteprima funzionalità** e quindi selezionando la casella di controllo **nuova esperienza utente git** . Per ulteriori informazioni, vedere la pagina relativa alla [nuova esperienza git in Visual Studio](../ide/git-with-visual-studio.md) .
 
 ::: moniker-end
 
@@ -181,9 +184,22 @@ Se è pronti a scrivere codice con Visual Studio, è possibile approfondire l'ar
 - [Esercitazioni di Visual Studio | **Visual Basic**](./visual-basic/index.yml)
 - [Esercitazioni di Visual Studio | **C++**](/cpp/get-started/tutorial-console-cpp)
 - [Esercitazioni di Visual Studio | **Python**](../python/index.yml)
-- [Esercitazioni di Visual Studio | **JavaScript**, **TypeScript** e **Node.js**](../javascript/index.yml)
+- [Esercitazioni di Visual Studio | **JavaScript** , **TypeScript** e **Node.js**](../javascript/index.yml)
 
 ## <a name="see-also"></a>Vedere anche
 
+::: moniker range="vs-2017"
+
 - [Azure DevOps Services: Introduzione a Azure Repos e Visual Studio](/azure/devops/repos/git/gitquickstart/)
 - [Microsoft Learn: introduzione ad Azure DevOps](/learn/modules/get-started-with-devops/)
+- [Nuova esperienza git in Visual Studio 2019](../ide/git-with-visual-studio.md?view=vs-2019&preserve-view=true)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Nuova esperienza git in Visual Studio](../ide/git-with-visual-studio.md)
+- [Azure DevOps Services: Introduzione a Azure Repos e Visual Studio](/azure/devops/repos/git/gitquickstart/)
+- [Microsoft Learn: introduzione ad Azure DevOps](/learn/modules/get-started-with-devops/)
+
+::: moniker-end

@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de4291d08b3a6b6897b3ae41562f70fad5372b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0d2b0964c565bab4d3a0731a14b93ccd976bb69
+ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89053429"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93344494"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Misurare le prestazioni dell'applicazione dalla riga di comando
 
@@ -33,7 +33,7 @@ Nell'esempio descritto in questo articolo si raccolgono informazioni sulle prest
 
 * Conoscenza degli strumenti da riga di comando
 
-* Per raccogliere informazioni sulle prestazioni in un computer remoto senza installato Visual Studio, installare gli [strumenti per le prestazioni di Visual Studio](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019) nel computer remoto. La versione degli strumenti deve corrispondere a quella di Visual Studio.
+* Per raccogliere informazioni sulle prestazioni in un computer remoto senza installato Visual Studio, installare il [Remote Tools per Visual Studio](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019) nel computer remoto. La versione degli strumenti deve corrispondere a quella di Visual Studio.
 
 ## <a name="collect-performance-data"></a>Raccogliere i dati sulle prestazioni
 
@@ -71,7 +71,7 @@ Per eseguire la profilatura tramite gli strumenti da riga di comando di diagnost
    VSDiagnostics.exe stop <id> /output:<path to file>
    ```
 
-1. Individuare l'output del file con *estensione DIAGSESSION* del comando precedente e aprirlo in Visual Studio (**file**  >  **aperto**) per esaminare le informazioni raccolte.
+1. Individuare l'output del file con *estensione DIAGSESSION* del comando precedente e aprirlo in Visual Studio ( **file**  >  **aperto** ) per esaminare le informazioni raccolte.
 
    Per analizzare i risultati, vedere la documentazione per lo strumento di prestazioni corrispondente. È ad esempio possibile [utilizzare la CPU](../profiling/cpu-usage.md), [lo strumento di allocazione oggetti .NET](../profiling/dotnet-alloc-tool.md)o lo strumento [database](../profiling/analyze-database.md) .
 
