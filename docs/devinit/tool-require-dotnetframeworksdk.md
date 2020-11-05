@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 4de8daf4b57d4775e4f1ede57392bb594bae53ea
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 42bcb44704c0273c936a763661ec78d232fe7a82
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005110"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400274"
 ---
 # <a name="require-dotnetframeworksdk"></a>require-dotnetframeworksdk
 
@@ -26,7 +26,7 @@ Lo `require-dotnetframeworksdk` strumento viene usato per installare il [.NET Fr
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Tipo   | Obbligatoria  | valore                                                                                    |
+| Nome                                             | Type   | Obbligatoria  | valore                                                                                    |
 |--------------------------------------------------|--------|-----------|------------------------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No        | Proprietà commenti facoltativi. Non usato.                                                    |
 | [**input**](#input)                              | stringa | No        | Versione di .NET Framework SDK da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito. |
@@ -48,7 +48,7 @@ Il comportamento predefinito dello `require-dotnetframeworksdk` strumento preved
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Example that will install a specific version of the .NET Framework SDK.",

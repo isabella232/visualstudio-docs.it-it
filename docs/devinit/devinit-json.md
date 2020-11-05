@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 29ea900b534bc03e47cfda49dba15af910189e48
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: 2b6cc27d2614f71c85988457ab9bb64228bbaebb
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344485"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399966"
 ---
 # <a name="devinit-configuration-file"></a>file di configurazione di devinit
 
@@ -46,7 +46,7 @@ I percorsi sono relativi alla posizione in cui è in esecuzione devinit. Si trat
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "comments": "string",
     "run": [
         {
@@ -61,14 +61,14 @@ I percorsi sono relativi alla posizione in cui è in esecuzione devinit. Si trat
 
 ### <a name="property-values"></a>Valori delle proprietà
 
-| Nome         | Tipo   | Obbligatoria | valore                              |
+| Nome         | Type   | Obbligatoria | valore                              |
 |--------------|--------|----------|------------------------------------|
 | **Commenti** | stringa | No       | Commenti per il file.             |
 | **Correre**      | array  | Sì      | [Oggetto RunTool](#run-tool-object) |
 
 #### <a name="run-tool-object"></a>Esegui oggetto strumento
 
-| Nome                  | Tipo   | Obbligatoria | valore                                                                                                      |
+| Nome                  | Type   | Obbligatoria | valore                                                                                                      |
 |-----------------------|--------|----------|------------------------------------------------------------------------------------------------------------|
 | **Commenti**          | stringa | No       | Commenti per la voce dello strumento.                                                                               |
 | **strumento**              | string | Sì      | Nome dello strumento. Vedere il `devinit list` comando per un elenco di strumenti disponibili.                            |

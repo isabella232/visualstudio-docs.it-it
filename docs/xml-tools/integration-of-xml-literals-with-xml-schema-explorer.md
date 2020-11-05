@@ -1,5 +1,7 @@
 ---
 title: Integrazione di valori letterali XML con XML Schema Explorer
+description: Informazioni su come utilizzare il supporto per i valori letterali XML in XML Schema Explorer in Visual Studio per integrare i frammenti XML direttamente nel codice Visual Basic.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 57a29998-c6e8-48ac-bdb0-5788e73f9164
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 576f403d92ae1c80d9c7fba1757278ae5c5f25ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 059263f06421fee3c90f2471df4c8b2c7bf8fc86
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592594"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398501"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Integrazione di valori letterali XML con XML Schema Explorer
 
@@ -23,11 +25,11 @@ Visual Basic supporta valori letterali XML; ciò significa che è possibile inco
 
 Se un file XSD nel progetto Visual Basic include un valore letterale XML, è possibile visualizzare il set di XML Schema in **XML Schema Explorer**. Per visualizzare il set di schemi associato a un valore letterale XML, fare clic con il pulsante destro del mouse su un nodo XML in un valore letterale XML o su un'importazione di spazi dei nomi XML e selezionare **Mostra in Schema Explorer**.
 
-![Valori letterali XML di Visual Basic; XML Schema Explorer](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer1.gif)
+![Screenshot di una finestra del progetto Visual Basic che mostra un menu di scelta rapida su un nodo XML con il comando shot in Esplora schema evidenziato.](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer1.gif)
 
 In questo modo si apre **XML Schema Explorer** affiancato al file di Visual Basic.
 
-![Valori letterali XML di Visual Basic; XML Schema Explorer](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer2.gif)
+![Screenshot di una finestra del progetto Visual Basic che mostra che XML Schema Explorer e Esplora soluzioni sono stati aperti nel riquadro di destra.](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer2.gif)
 
 ## <a name="see-also"></a>Vedere anche
 

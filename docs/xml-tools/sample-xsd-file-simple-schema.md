@@ -1,5 +1,7 @@
 ---
 title: 'File XSD di esempio: schema semplice'
+description: Visualizzare il file XSD di esempio per un semplice schema di ordine di acquisto utilizzato in vari esempi nella documentazione relativa a progettazione schemi XSD.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 788de9f31a58561aa743d6ca6286ef650f4297a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 974e15c9645a1c1fcb8d17a8e10adc995a8743f4
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592542"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398722"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>File XSD di esempio: schema semplice
 

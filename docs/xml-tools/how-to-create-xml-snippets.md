@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: creare frammenti XML'
+description: Informazioni su come utilizzare l'editor XML in Visual Studio per creare frammenti XML che consentono di compilare più rapidamente file XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b86962221dcdeff59b1152baf7b7cddcc55293e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d935f479e3133db8fb5340359d6a354058a3020a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815396"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400030"
 ---
 # <a name="how-to-create-xml-snippets"></a>Procedura: creare frammenti XML
 
@@ -33,7 +35,7 @@ Per creare un nuovo frammento di codice XML, creare un nuovo file XML e usare la
 
 5. Se necessario, apportare modifiche al nuovo frammento.
 
-6. Scegliere **salva XMLFile.xml**dal menu **file** .
+6. Scegliere **salva XMLFile.xml** dal menu **file** .
 
      Viene visualizzata la finestra **di dialogo Salva file con nome** .
 
@@ -117,6 +119,6 @@ La variabile $prefix$ può quindi essere usata in altri punti all'interno del fr
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Frammenti XML](../xml-tools/xml-snippets.md)
+- [frammenti XML](../xml-tools/xml-snippets.md)
 - [Procedura: utilizzare frammenti di codice XML](../xml-tools/how-to-use-xml-snippets.md)
 - [Procedura: generare un frammento XML da un XML Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

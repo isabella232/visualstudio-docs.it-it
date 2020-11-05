@@ -4,17 +4,16 @@ description: Informazioni su come usare i file di configurazione del servizio e 
 author: ghogen
 manager: jillfra
 assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 55fc29117b1b01bd6c9b214d1db111af72127871
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42c4668b2bf9925fe92db51b6a4275c535960a61
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911690"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398878"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Come gestire le configurazioni e i profili dei servizi
 ## <a name="overview"></a>Panoramica
@@ -27,7 +26,7 @@ Quando si pubblica un servizio cloud, Visual Studio archivia le informazioni di 
 
 ![Gestisci configurazioni di servizio](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-service-config.png)
 
-È inoltre possibile aprire la finestra di dialogo **Gestisci configurazioni** dalle pagine delle proprietà del ruolo. Per accedere alle proprietà per un ruolo nel progetto Azure, aprire il menu di scelta rapida per il ruolo in questione, quindi scegliere **Proprietà**. Nella scheda **Impostazioni** espandere l'elenco **Configurazione del servizio**, quindi fare clic su **Gestisci** per aprire la finestra di dialogo **Gestisci configurazioni**.
+È inoltre possibile aprire la finestra di dialogo **Gestisci configurazioni** dalle pagine delle proprietà del ruolo. Per accedere alle proprietà per un ruolo nel progetto Azure, aprire il menu di scelta rapida per il ruolo in questione, quindi scegliere **Proprietà**. Nella scheda **Impostazioni** espandere l'elenco **Configurazione del servizio** , quindi fare clic su **Gestisci** per aprire la finestra di dialogo **Gestisci configurazioni**.
 
 ### <a name="to-add-a-service-configuration"></a>Per aggiungere una configurazione del servizio
 1. In Esplora soluzioni aprire il menu di scelta rapida per il progetto Azure e quindi selezionare **Gestisci configurazioni**.
@@ -42,7 +41,7 @@ Quando si pubblica un servizio cloud, Visual Studio archivia le informazioni di 
 1. In Esplora soluzioni aprire il menu di scelta rapida per il progetto Azure e quindi selezionare **Gestisci configurazioni**.
 
     Verrà visualizzata la finestra di dialogo **Gestisci configurazioni di servizio**.
-2. Per eliminare una configurazione del servizio, selezionarla dall'elenco **Nome**, quindi scegliere **Rimuovi**. Verrà visualizzata una finestra di dialogo per verificare se si vuole eliminare questa configurazione.
+2. Per eliminare una configurazione del servizio, selezionarla dall'elenco **Nome** , quindi scegliere **Rimuovi**. Verrà visualizzata una finestra di dialogo per verificare se si vuole eliminare questa configurazione.
 3. Selezionare **Elimina**.
 
      Il file di configurazione del servizio viene rimosso dal progetto Azure in Esplora soluzioni.
@@ -51,7 +50,7 @@ Quando si pubblica un servizio cloud, Visual Studio archivia le informazioni di 
 1. In Esplora soluzioni aprire il menu di scelta rapida per il progetto Azure e quindi selezionare **Gestisci configurazioni**.
 
     Verrà visualizzata la finestra di dialogo **Gestisci configurazioni di servizio**.
-2. Per rinominare una configurazione del servizio, selezionarla dall'elenco **Nome**, quindi scegliere **Rinomina**. Nella casella di testo **nome** Digitare il nome che si desidera utilizzare per la configurazione del servizio, quindi selezionare **OK**.
+2. Per rinominare una configurazione del servizio, selezionarla dall'elenco **Nome** , quindi scegliere **Rinomina**. Nella casella di testo **nome** Digitare il nome che si desidera utilizzare per la configurazione del servizio, quindi selezionare **OK**.
 
     Il nome del file di configurazione del servizio viene modificato nel progetto Azure in Esplora soluzioni.
 
@@ -59,18 +58,18 @@ Quando si pubblica un servizio cloud, Visual Studio archivia le informazioni di 
 * Se si vuole modificare una configurazione del servizio, aprire il menu di scelta rapida di un ruolo specifico da modificare in un progetto Azure, quindi selezionare **Proprietà**. Per altre informazioni, vedere [Procedura: configurare i ruoli di un servizio cloud di Azure con Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md) .
 
 ## <a name="make-different-setting-combinations-by-using-profiles"></a>Effettuare diverse combinazioni di impostazioni usando i profili
-Mediante i profili è possibile popolare automaticamente la **Pubblicazione guidata** con diverse combinazioni di impostazioni usate per scopi differenti. Ad esempio, è possibile definire un profilo per eseguire il debug e uno per le build di rilascio. In questo caso, nel profilo **Debug** sarà abilitato **IntelliTrace** e sarà selezionata la configurazione **Debug**, mentre nel profilo **Rilascio** sarà disabilitato **IntelliTrace** e sarà selezionata la configurazione **Rilascio**. È anche possibile usare diversi profili per distribuire un servizio mediante un account di archiviazione diverso.
+Mediante i profili è possibile popolare automaticamente la **Pubblicazione guidata** con diverse combinazioni di impostazioni usate per scopi differenti. Ad esempio, è possibile definire un profilo per eseguire il debug e uno per le build di rilascio. In questo caso, nel profilo **Debug** sarà abilitato **IntelliTrace** e sarà selezionata la configurazione **Debug** , mentre nel profilo **Rilascio** sarà disabilitato **IntelliTrace** e sarà selezionata la configurazione **Rilascio**. È anche possibile usare diversi profili per distribuire un servizio mediante un account di archiviazione diverso.
 
 Quando si esegue la procedura guidata per la prima volta, viene creato un profilo predefinito. Visual Studio consente di archiviare il profilo in un file con estensione azurePubXml, aggiunto al progetto Azure nella cartella **Profili**. Se si specificano manualmente opzioni diverse nelle successive esecuzioni della procedura guidata, il file viene aggiornato automaticamente. Prima di eseguire la procedura riportata di seguito, è necessario avere già pubblicato almeno una volta il servizio cloud.
 
 ### <a name="to-add-a-profile"></a>Per aggiungere un profilo
 1. Aprire il menu di scelta rapida per il progetto Azure e quindi selezionare **Pubblica**.
-2. Accanto al **Profilo di destinazione**, selezionare il pulsante **Salva profilo**, come illustrato nella figura seguente. Verrà creato un profilo per l'utente.
+2. Accanto al **Profilo di destinazione** , selezionare il pulsante **Salva profilo** , come illustrato nella figura seguente. Verrà creato un profilo per l'utente.
 
     ![Creare un nuovo profilo](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/create-new-profile.png)
 3. Dopo aver creato il profilo, selezionare **<Gestisci…>** nell'elenco **Profilo di destinazione**.
 
-    Viene visualizzata la finestra di dialogo **Gestione profili**, come illustrato nella figura riportata di seguito.
+    Viene visualizzata la finestra di dialogo **Gestione profili** , come illustrato nella figura riportata di seguito.
 
     ![Finestra di dialogo Gestione profili](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
 4. Nell'elenco **Nome** scegliere un profilo, quindi selezionare **Crea copia**.
@@ -86,7 +85,7 @@ Quando si esegue la procedura guidata per la prima volta, viene creato un profil
 2. Nell'elenco **Profilo di destinazione** selezionare **Gestisci**.
 3. Nella finestra di dialogo **Gestione profili** selezionare profilo da eliminare, quindi scegliere **Rimuovi**.
 4. Nella finestra di dialogo di conferma visualizzata, selezionare **OK**.
-5. Selezionare **Chiudi**.
+5. Selezionare **Close** (Chiudi).
 
 ### <a name="to-change-a-profile"></a>Per modificare un profilo
 1. Aprire il menu di scelta rapida per il progetto Azure e quindi selezionare **Pubblica**.

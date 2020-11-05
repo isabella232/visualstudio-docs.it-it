@@ -4,17 +4,16 @@ description: Panoramica su come visualizzare, creare e gestire macchine virtuali
 author: ghogen
 manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 8fd5d81e721bc2df7041d4cb724687e5ee540a7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9ca956400956ae337d8d1e0f5a881f1dc4c6377
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911668"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398553"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Accesso alle macchine virtuali di Azure da Esplora server
 
@@ -28,8 +27,8 @@ Se ci sono macchine virtuali ospitate da Azure, è possibile accedervi in Esplor
    | --- | --- |
    | Nome DNS |URL con l'indirizzo Internet della macchina virtuale. |
    | Environment |Per una macchina virtuale, il valore di questa proprietà è sempre Produzione. |
-   | Name |Nome della macchina virtuale. |
-   | Dimensioni |Dimensioni della macchina virtuale corrispondenti alla quantità di memoria e spazio su disco disponibili. Per altre informazioni, vedere [dimensioni delle macchine virtuali](/azure/cloud-services/cloud-services-sizes-specs). |
+   | Nome |Nome della macchina virtuale. |
+   | Dimensione |Dimensioni della macchina virtuale corrispondenti alla quantità di memoria e spazio su disco disponibili. Per altre informazioni, vedere [dimensioni delle macchine virtuali](/azure/cloud-services/cloud-services-sizes-specs). |
    | Stato |I valori includono Avvio in corso, Avviato, Arresto, Arrestato e Recupero dello stato. Se viene visualizzato Recupero dello stato, lo stato corrente è sconosciuto. I valori di questa proprietà differiscono da quelli usati nel [portale di Azure](https://portal.azure.com). |
    | SubscriptionID |ID sottoscrizione dell'account Azure. È possibile vedere queste informazioni nel [portale di Azure](https://portal.azure.com) visualizzando le proprietà di una sottoscrizione. |
 2. Scegliere un nodo di endpoint e quindi visualizzare la finestra **Proprietà**.
@@ -37,7 +36,7 @@ Se ci sono macchine virtuali ospitate da Azure, è possibile accedervi in Esplor
 
    | Proprietà | Descrizione |
    | --- | --- |
-   | Name |Identificatore dell'endpoint. |
+   | Nome |Identificatore dell'endpoint. |
    | Private Port |Porta per l'accesso di rete interno all'applicazione. |
    | Protocollo |Protocollo usato dal livello di trasporto per l'endpoint TCP o UDP. |
    | Public Port |Porta usata per l'accesso pubblico all'applicazione. |

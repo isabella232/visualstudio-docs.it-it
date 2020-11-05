@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 8a649cec23a8f0090500a493fe577b3ba41788f9
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 07a15f7c0422cbc3e44bcffd8806be35dbe5717f
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005981"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400212"
 ---
 # <a name="windowsfeature-disable"></a>windowsfeature-disable
 
@@ -24,7 +24,7 @@ Lo `windowsfeature-disable` strumento viene usato per acquisire le funzionalità
 
 ## <a name="usage"></a>Utilizzo
 
-| Nome                                             | Tipo   | Obbligatoria | valore                                                                  |
+| Nome                                             | Type   | Obbligatoria | valore                                                                  |
 |--------------------------------------------------|--------|----------|------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                  |
 | [**input**](#input)                              | string | Sì      | Funzionalità di Windows da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito. |
@@ -34,7 +34,7 @@ Lo `windowsfeature-disable` strumento viene usato per acquisire le funzionalità
 
 La `input` proprietà deve essere `name` della proprietà dell'oggetto `windows feature` da disabilitare.
 
-### <a name="additional-options"></a>Opzioni aggiuntive
+### <a name="additional-options"></a>Additional-Options
 
 Nessuno.
 
@@ -46,7 +46,7 @@ Il comportamento predefinito dello `windowsfeature-disable` strumento è l'error
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Installs IIS.",

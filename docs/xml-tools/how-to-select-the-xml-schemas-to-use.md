@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: selezionare gli schemi XML da utilizzare'
+description: Viene illustrato come utilizzare l'editor XML per selezionare un XML Schema dalla cache dello schema che include schemi XML noti utilizzati per IntelliSense e la convalida di documenti XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06f9de6927d616d6cf08995c076246c8a45ec014
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9773df597269d5f7044bf168626f530e4a454020
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815968"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400154"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procedura: selezionare gli schemi XML da utilizzare
 
@@ -21,7 +23,7 @@ L'editor XML fornisce una cache degli schemi situata nella directory *%VSInstall
 
 Utilizzare la proprietà documento **schemi** per selezionare uno o più schemi di XML Schema Definition Language (XSD). È possibile selezionare gli schemi dalla cache degli schemi o altrove.
 
-Gli schemi specificati vengono salvati in un file di opzioni utente della soluzione (nascosto) (.* suo*), insieme a tutte le altre proprietà dei documenti XML. Di conseguenza, non è necessario immettere nuovamente questi valori alla successiva apertura della soluzione.
+Gli schemi specificati vengono salvati in un file di opzioni utente della soluzione (nascosto) (. *suo* ), insieme a tutte le altre proprietà dei documenti XML. Di conseguenza, non è necessario immettere nuovamente questi valori alla successiva apertura della soluzione.
 
 > [!NOTE]
 > L'editor può essere convalidato utilizzando uno schema inline o uno schema a cui fa riferimento l' `xsd:schemaLocation` attributo. Per ulteriori informazioni, vedere [convalida di documenti XML](../xml-tools/xml-document-validation.md).

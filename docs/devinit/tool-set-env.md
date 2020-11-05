@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7bb545a8e8713159d6833f0ed8d8c2b8784095e1
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: b1299686c086feda0c51689d72a676ddc4ff00dc
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959766"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400239"
 ---
 # <a name="set-env"></a>set-env
 
@@ -24,7 +24,7 @@ Lo `set-env` strumento può essere utilizzato per impostare le variabili di ambi
 
 Questo strumento usa l'API .NET Core `Environment.SetEnvironment` e presenta le stesse limitazioni dell'API. Per ulteriori informazioni, consultare la [documentazione](/dotnet/api/system.environment.setenvironmentvariable?view=netcore-3.1&preserve-view=true) relativa a `Environment.SetEnvironment` .
 
-## <a name="usage"></a>Uso
+## <a name="usage"></a>Utilizzo
 
 | Nome                                         | Type   | Obbligatoria | valore                                                                       |
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------|
@@ -39,9 +39,9 @@ Lo `set-env` strumento accetta un'unica stringa come input per la `input` Propri
 | Azione       | Input            | Descrizione                                                                                                                                                              | Esempio             |
 |--------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 | **list all** | Empty o omesso | Elencare tutte le variabili di ambiente correnti.                                                                                                                              | `"input":""`        |
-| **elencarne uno** | Stringa           | Elencare il valore di una variabile di ambiente specifica in base al nome.                                                                                                               | `"input":"foo"`     |
-| **add**      | Stringa           | Imposta il valore di una variabile di ambiente come coppia chiave-valore. Aggiunge una nuova variabile di ambiente se non è già presente o imposta il valore di una variabile di ambiente esistente | `"input":"foo=bar"` |
-| **delete**   | Stringa           | Elimina una variabile di ambiente esistente passando una stringa di valore vuota.                                                                                            | `"input":"foo="`    |
+| **elencarne uno** | string           | Elencare il valore di una variabile di ambiente specifica in base al nome.                                                                                                               | `"input":"foo"`     |
+| **add**      | string           | Imposta il valore di una variabile di ambiente come coppia chiave-valore. Aggiunge una nuova variabile di ambiente se non è già presente o imposta il valore di una variabile di ambiente esistente | `"input":"foo=bar"` |
+| **delete**   | string           | Elimina una variabile di ambiente esistente passando una stringa di valore vuota.                                                                                            | `"input":"foo="`    |
 
 Una `input` stringa può contenere un'espansione della variabile di ambiente `%userprofile%` , ad esempio, che viene espansa quando viene letto il valore.
 
@@ -57,7 +57,7 @@ Se si usa un codespace, è possibile impostare le variabili di ambiente usate ne
 
 ```json
 {
-  "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
   "comments": "A sample dot-devinit file demonstrating the set-env tool.",
   "run": [
     {

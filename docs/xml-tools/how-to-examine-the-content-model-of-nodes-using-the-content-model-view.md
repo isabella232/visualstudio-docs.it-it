@@ -1,5 +1,7 @@
 ---
 title: Esaminare i nodi tramite la visualizzazione modello di contenuto in Progettazione XML Schema
+description: Informazioni su come utilizzare la visualizzazione modello di contenuto in Progettazione XML Schema per esaminare il modello di contenuto dei nodi in un XML Schema.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81bf6294aeac9a23168bf9cf9aaec26efbfc6c1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef330e6e189b9cee1126d5de48d55622fe8d9046
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815981"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399509"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Procedura: esaminare il modello di contenuto dei nodi tramite la visualizzazione modello di contenuto
 

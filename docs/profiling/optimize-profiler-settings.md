@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ef802958817b43dd66973db66a80d328454aa83
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f0629228c2fcad1f8ea36db2e4d0c67a68715e4
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329259"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400311"
 ---
 # <a name="optimizing-profiler-settings"></a>Ottimizzazione delle impostazioni del profiler
 
@@ -22,7 +22,7 @@ Il profiler delle prestazioni e la finestra Strumenti di diagnostica in Visual S
 
 ## <a name="symbol-settings"></a>Impostazioni simboli
 
-Le impostazioni dei simboli presenti nelle opzioni del debugger (**Debug > opzioni > simboli**) hanno un impatto significativo sul tempo impiegato per generare i risultati negli strumenti. L'abilitazione dei server di simboli o l'utilizzo della **_NT_SYMBOL_PATH** fa sì che il profiler richieda simboli per ogni modulo caricato in un report. Attualmente, il profiler carica sempre automaticamente tutti i simboli indipendentemente dalle preferenze di caricamento automatico dei simboli.
+Le impostazioni dei simboli disponibili nelle opzioni del debugger ( **debug > opzioni > simboli** o **strumenti > opzioni > debug > simboli** ) hanno un impatto significativo sul tempo necessario per generare risultati negli strumenti. L'abilitazione dei server di simboli o l'utilizzo della **_NT_SYMBOL_PATH** fa sì che il profiler richieda simboli per ogni modulo caricato in un report. Attualmente, il profiler carica sempre automaticamente tutti i simboli indipendentemente dalle preferenze di caricamento automatico dei simboli.
 
 ![Pagina di caricamento dei simboli](../profiling/media/symbolloading.png "Caricamento simboli")
 

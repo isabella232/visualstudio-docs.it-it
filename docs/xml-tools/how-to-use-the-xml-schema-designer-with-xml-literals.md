@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: utilizzare Progettazione XML Schema con i valori letterali XML'
+description: Viene illustrato come utilizzare Progettazione XML Schema per visualizzare uno schema associato a un valore letterale XML in un progetto Visual Basic.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b515092087ab213db5d3002f00c56753c2e3de14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b86cc50e5a25466b0ec80e45a225d64b8a97f72
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814642"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399172"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Procedura: utilizzare Progettazione XML Schema con valori letterali XML
 
@@ -35,7 +37,7 @@ In questo argomento viene descritto come visualizzare uno schema associato a un 
 
 2. Salvare il file in un percorso con il nome *PurchaseOrderSchema. xsd*.
 
-3. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nome del progetto, scegliere **Aggiungi**, quindi selezionare **elemento esistente**. Verrà visualizzata la finestra di dialogo **elemento Aggiungi** . Individuare il file *PurchaseOrderSchema. xsd* , selezionarlo e quindi fare clic su **Aggiungi**.
+3. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nome del progetto, scegliere **Aggiungi** , quindi selezionare **elemento esistente**. Verrà visualizzata la finestra di dialogo **elemento Aggiungi** . Individuare il file *PurchaseOrderSchema. xsd* , selezionarlo e quindi fare clic su **Aggiungi**.
 
      Il progetto XMLLiterals contiene ora due file: *Module1. vb* e *PurchaseOrderSchema. xsd*.
 

@@ -3,18 +3,17 @@ title: Aggiungere applicazione Azure Insights utilizzando Servizi connessi | Mic
 description: Aggiungere applicazione Azure Insights all'app usando Visual Studio per aggiungere un servizio connesso
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: c15e7a14052efdab82388a950865557cb4425771
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d279de29664dcfc17ebd719fafc95d197a3352a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643545"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398670"
 ---
 # <a name="add-azure-application-insights-by-using-visual-studio-connected-services"></a>Aggiungere applicazione Azure Insights tramite Visual Studio Servizi connessi
 
@@ -43,7 +42,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
 1. Aprire il progetto in Visual Studio.
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo **servizi connessi** e scegliere **Aggiungi servizio connesso**dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **servizi connessi** e scegliere **Aggiungi servizio connesso** dal menu di scelta rapida.
 
 1. Nella scheda **servizi connessi** selezionare l'icona + per le **dipendenze del servizio**.
 
@@ -55,7 +54,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
     Se non è già stato effettuato l'accesso, accedere al proprio account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita](https://azure.microsoft.com/account/free).
 
-1. Nella schermata **Configure applicazione Azure Insights** selezionare un componente di applicazione Azure Insights esistente e fare clic su Next ( **Avanti**).
+1. Nella schermata **Configure applicazione Azure Insights** selezionare un componente di applicazione Azure Insights esistente e fare clic su Next ( **Avanti** ).
 
     Se è necessario creare un nuovo componente, andare al passaggio successivo. In caso contrario, andare al passaggio 7.
 

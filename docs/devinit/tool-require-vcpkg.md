@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 820d8ef7e857d0b91526e1db9e300a4b5f76bb84
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 222e1af34c759f4bf0fbac61f03a38ba8a24ffbe
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006015"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400253"
 ---
 # <a name="require-vcpkg"></a>require-vcpkg
 
@@ -26,7 +26,7 @@ Lo `require-vcpkg` strumento viene usato per installare [vcpkg](https://github.c
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Tipo   | Obbligatoria | valore                                                                      |
+| Nome                                             | Type   | Obbligatoria | valore                                                                      |
 |--------------------------------------------------|--------|----------|----------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                      |
 | [**input**](#input)                              | stringa | No       | Non usato. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.                           |
@@ -48,7 +48,7 @@ Il comportamento predefinito dello `require-vcpkg` strumento prevede l'installaz
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Installs vcpkg.",

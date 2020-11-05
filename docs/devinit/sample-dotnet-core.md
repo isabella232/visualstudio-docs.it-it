@@ -1,7 +1,7 @@
 ---
 title: App .NET Core
 description: Repository di esempio che usa la devinit per installare un .NET Core SDK specifico.
-ms.date: 11/02/2020
+ms.date: 11/04/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,18 +11,20 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 35971ac1fde5fc272f22579cc6640cbea6724db5
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: 26386631946bd37920ba89490a6210031ef945a6
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344518"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398342"
 ---
 # <a name="net-core-app"></a>App .NET Core
 
-Vedere il repository [DotnetCoreDevinitExample](https://github.com/microsoft/DotnetCoreDevinitExample) per un esempio completo dell'uso di devinit per installare la versione di .NET Core SDK necessaria in codespaces.
+Per un esempio completo dell'uso di devinit per installare la versione .NET Core SDK necessaria in codespaces, vedere il repository [devinit-example-DotNet-Core](https://github.com/microsoft/devinit-example-dotnet-core) .
 
 ## <a name="devinitjson"></a>.devinit.json
+
+Contenuto del _.devinit.js_ nel file nella radice del repository.
 
 ```json
 {

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 115fda00f880e9c2fa1782735dd471fc3df68936
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6e3d2fdaf6be019cae504d4f71258d410d232ff5
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005974"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400205"
 ---
 # <a name="windowsfeature-enable"></a>windowsfeature-enable
 
@@ -24,7 +24,7 @@ Lo `windowsfeature-enable` strumento viene usato per abilitare le funzionalità 
 
 ## <a name="usage"></a>Utilizzo
 
-| Nome                                             | Tipo   | Obbligatoria | valore                                                                    |
+| Nome                                             | Type   | Obbligatoria | valore                                                                    |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                    |
 | [**input**](#input)                              | string | Sì      | Funzionalità di Windows da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.   |
@@ -34,7 +34,7 @@ Lo `windowsfeature-enable` strumento viene usato per abilitare le funzionalità 
 
 La `input` proprietà deve essere `name` della proprietà dell'oggetto `windows feature` da installare. È possibile trovare un elenco delle funzionalità disponibili eseguendo il `Get-WindowsFeature` comando PowerShell cmd.
 
-### <a name="additional-options"></a>Opzioni aggiuntive
+### <a name="additional-options"></a>Additional-Options
 
 Nessuno.
 
@@ -46,7 +46,7 @@ Il comportamento predefinito dello `windowsfeature-enable` strumento è l'errore
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Installs IIS.",

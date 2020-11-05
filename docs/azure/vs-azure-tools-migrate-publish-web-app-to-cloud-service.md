@@ -1,7 +1,7 @@
 ---
 title: Eseguire la migrazione e la pubblicazione di un'applicazione Web in un servizio cloud
 description: Informazioni su come eseguire la migrazione e la pubblicazione di un'applicazione Web in un servizio cloud di Azure da Visual Studio
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
 ms.assetid: 9394adfd-a645-4664-9354-dd5df08e8c91
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: d5c2ae5e395f63d0c6c4fb6ac827c89daa7e3dc0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eb87aff7bf4ca1e3eac359b27a4280877eaefc50
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036535"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399819"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Procedura: eseguire la migrazione e la pubblicazione di un'applicazione Web in un servizio cloud di Azure da Visual Studio
 
@@ -58,7 +58,7 @@ Se si ha una stringa di connessione per l'applicazione Web che usa un database S
 1. Creare gli account di archiviazione e dei servizi cloud necessari nella sottoscrizione di Azure, come descritto in [Preparare la pubblicazione o la distribuzione di un'applicazione di Azure da Visual Studio](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md).
 1. In Visual Studio fare clic con il pulsante destro del mouse sul progetto di applicazione e selezionare **Pubblica in Microsoft Azure...** (diverso dal comando "Pubblica...").
 1. Nella finestra **Pubblica applicazione Azure** visualizzata, accedere usando l'account con la sottoscrizione di Azure e scegliere **Avanti >**.
-1. Nella scheda **Impostazioni > Impostazioni comuni** selezionare il servizio cloud di destinazione dall'elenco a discesa **Servizio cloud**, insieme all'ambiente e alle configurazioni selezionate.
+1. Nella scheda **Impostazioni > Impostazioni comuni** selezionare il servizio cloud di destinazione dall'elenco a discesa **Servizio cloud** , insieme all'ambiente e alle configurazioni selezionate.
 1. In **Impostazioni > Impostazioni avanzate** selezionare l'account di archiviazione da usare e quindi scegliere **Avanti >**.
 1. In **Diagnostica** decidere se si vuole inviare informazioni ad Application Insights.
 1. Selezionare **Avanti >** per visualizzare un riepilogo e quindi selezionare **Pubblica** per avviare la distribuzione.

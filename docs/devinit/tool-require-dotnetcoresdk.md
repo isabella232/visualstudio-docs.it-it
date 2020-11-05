@@ -11,22 +11,22 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1a85268eb71ece1f06dc8d71d018d16206902130
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 5c5b68b663d6ee4cd0294aa77bd89c2e778f8d2b
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860829"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399606"
 ---
 # <a name="require-dotnetcoresdk"></a>require-dotnetcoresdk
 
 Lo `require-dotnetcoresdk` strumento viene usato per installare il [.NET Core SDK](https://dotnet.microsoft.com/) e il runtime condiviso tramite lo script [DotNet-install](/dotnet/core/tools/dotnet-install-script) .
 
-## <a name="usage"></a>Uso
+## <a name="usage"></a>Utilizzo
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Tipo   | Obbligatoria | valore                                                                               |
+| Nome                                             | Type   | Obbligatoria | valore                                                                               |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                               |
 | [**input**](#input)                              | stringa | No       | Versione del .NET Core SDK da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito. |
@@ -51,7 +51,7 @@ Il comportamento predefinito dello `require-dotnetcoresdk` strumento prevede l'i
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Example that will trigger the Default behavior of installing latest or, if present, the SDK version from a global.json file.",

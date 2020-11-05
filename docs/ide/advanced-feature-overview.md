@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f5a5545152b9bf262f652e2fce5ce04e7b71cb
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 04c725e5bcae5d72562e767a06afdee8aa84950b
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099427"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399253"
 ---
 # <a name="features-of-visual-studio"></a>Funzionalità di Visual Studio
 
@@ -44,7 +44,7 @@ Visual Studio offre un gruppo di strumenti che consentono di creare facilmente a
 
 ::: moniker range="vs-2017"
 
-Dopo aver installato il carico di lavoro **Sviluppo di Azure**, vengono resi disponibili i modelli **Cloud** seguenti per C# nella finestra di dialogo **Nuovo progetto**:
+Dopo aver installato il carico di lavoro **Sviluppo di Azure** , vengono resi disponibili i modelli **Cloud** seguenti per C# nella finestra di dialogo **Nuovo progetto** :
 
 ![Modelli progetto cloud per Visual Studio](media/cloud-project-templates.png)
 
@@ -54,7 +54,7 @@ Dopo aver installato il carico di lavoro **Sviluppo di Azure**, vengono resi dis
 
 ![Cloud Explorer in Visual Studio](media/cloud-explorer.png)
 
-È possibile sfruttare i servizi di Azure per le app usando **Servizi connessi**, ad esempio:
+È possibile sfruttare i servizi di Azure per le app usando **Servizi connessi** , ad esempio:
 
 - [Servizio connesso di Active Directory](/azure/active-directory/develop/vs-active-directory-add-connected-service) in modo che gli utenti possano usare i propri account [Azure Active Directory](/azure/active-directory/active-directory-whatis) per connettersi alle app Web
 - [Servizio connesso Archiviazione di Azure](/azure/vs-azure-tools-connected-services-storage) per archiviazione BLOB, code e tabelle
@@ -82,7 +82,7 @@ Per altre informazioni, vedere [Strumenti Web moderni](https://visualstudio.micr
 
 - Usare le tecnologie Web standard&mdash;HTML, CSS e JavaScript&mdash; per compilare app per dispositivi mobili per iOS, Android e Windows usando [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
 
-- Compilare giochi 2D e 3D in C# tramite [Visual Studio Tools per Unity](../cross-platform/visual-studio-tools-for-unity.md).
+- Compilare giochi 2D e 3D in C# tramite [Visual Studio Tools per Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md).
 
 - Compilare app C++ native per dispositivi iOS, Android e Windows. Condividere il codice comune nelle librerie create per iOS, Android e Windows usando [C++ per lo sviluppo multipiattaforma](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development).
 
@@ -90,7 +90,7 @@ Per altre informazioni, vedere [Strumenti Web moderni](https://visualstudio.micr
 
 ## <a name="connect-to-databases"></a>Connettersi ai database
 
-**Esplora server** consente di esplorare e gestire le istanze e le risorse di SQL Server in locale, in remoto e in Azure, Salesforce.com, Microsoft 365 e siti Web. Per aprire **Esplora server**, scegliere **Visualizza** > **Esplora server** dal menu principale. Per altre informazioni sull'uso di Esplora server, vedere [Aggiungere nuove connessioni](../data-tools/add-new-connections.md).
+**Esplora server** consente di esplorare e gestire le istanze e le risorse di SQL Server in locale, in remoto e in Azure, Salesforce.com, Microsoft 365 e siti Web. Per aprire **Esplora server** , scegliere **Visualizza** > **Esplora server** dal menu principale. Per altre informazioni sull'uso di Esplora server, vedere [Aggiungere nuove connessioni](../data-tools/add-new-connections.md).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) è un ambiente di sviluppo avanzato per SQL Server, database SQL di Azure e Azure SQL Data Warehouse. Consente di creare, eseguire il debug, gestire ed effettuare il refactoring di database. È possibile usare un progetto di database o direttamente un'istanza del database connesso locale o remota.
 
@@ -136,7 +136,7 @@ Cercare le [estensioni esistenti](https://marketplace.visualstudio.com/vs) per V
 
 Per altre informazioni sull'estensione di Visual Studio, vedere [Estendi Visual Studio IDE](https://visualstudio.microsoft.com/vs/extend/).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Panoramica dell'ambiente IDE di Visual Studio](../get-started/visual-studio-ide.md)
 - [Novità di Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)

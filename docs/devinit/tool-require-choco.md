@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 18ea1b08a50dc39d404058b07d7448c66a26003d
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 9ebae66a593f2e27be3afee77ab2156b426d740f
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005791"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400281"
 ---
 # <a name="require-choco"></a>require-choco
 
@@ -26,7 +26,7 @@ Lo `require-choco` strumento può essere utilizzato per installare [cioccolato](
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Tipo   | Obbligatoria | valore                                                                      |
+| Nome                                             | Type   | Obbligatoria | valore                                                                      |
 |--------------------------------------------------|--------|----------|----------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                      |
 | [**input**](#input)                              | stringa | No       | Non usato. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.                           |
@@ -48,7 +48,7 @@ Il comportamento predefinito dello `require-choco` strumento prevede l'installaz
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Installs chocolatey.",

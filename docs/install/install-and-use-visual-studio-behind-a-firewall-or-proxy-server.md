@@ -17,20 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f8b7dc9a388699cc9e323085769d17a00ba4fa6a
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 52eee3535590842db53cd80ac761286fb4a23fa9
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467635"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398995"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
 
 Se un utente o un'organizzazione usa misure di sicurezza, come un firewall o un server proxy, è possibile che vi siano URL di dominio da aggiungere a un elenco di indirizzi consentiti, così come porte e protocolli da aprire per ottenere un'esperienza ottimale durante l'installazione e l'uso di Visual Studio e dei servizi di Azure.
 
-* **[Installare Visual Studio](#install-visual-studio)**: queste tabelle includono gli URL di dominio da aggiungere a un elenco Consenti, in modo da poter accedere a tutti i componenti e i carichi di lavoro desiderati.
+* **[Installare Visual Studio](#install-visual-studio)** : queste tabelle includono gli URL di dominio da aggiungere a un elenco Consenti, in modo da poter accedere a tutti i componenti e i carichi di lavoro desiderati.
 
-* **[Usare Visual Studio e i servizi di Azure](#use-visual-studio-and-azure-services)**: questa tabella include gli URL di dominio da aggiungere a un elenco Consenti e le porte e i protocolli da aprire per poter accedere a tutte le funzionalità e i servizi desiderati.
+* **[Usare Visual Studio e i servizi di Azure](#use-visual-studio-and-azure-services)** : questa tabella include gli URL di dominio da aggiungere a un elenco Consenti e le porte e i protocolli da aprire per poter accedere a tutte le funzionalità e i servizi desiderati.
 
 > [!NOTE]
 > Questo articolo è stato scritto per Visual Studio in Windows, ma alcune informazioni sono applicabili anche all'[installazione di Visual Studio per Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) dietro un firewall o un server proxy.
@@ -81,6 +81,7 @@ Dato che il programma di installazione di Visual Studio scarica i file da vari d
 | developer.apple.com | Provisioning di Novell. iOS |
 | appstoreconnect.apple.com | Provisioning di Novell. iOS |
 | idmsa.apple.com | Provisioning di Novell. iOS |
+| akamized.net | Rete per la distribuzione di contenuti (tecnologie Akamai) |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Usare Visual Studio e i servizi di Azure

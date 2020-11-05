@@ -5,17 +5,16 @@ author: mikejo5000
 manager: jillfra
 ms.assetid: 945e06e0-2100-41af-b218-72347367ddab
 ms.topic: how-to
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 00b6d001a8764d3519f0584de88a55a000447054
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: cd55ebd9171a7f9cd2157194da8876f47aa22ece
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508483"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398696"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debug di un servizio cloud o di una macchina virtuale di Azure in Visual Studio
 
@@ -33,7 +32,7 @@ L'emulatore simula il servizio di calcolo di Azure e viene eseguito nell'ambient
 
     ![Emulatore di Azure nella barra delle applicazioni](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC783828.png)
 
-2. Per visualizzare l'interfaccia utente dell'emulatore di calcolo, aprire il menu di scelta rapida dell'icona di Azure nell'area di notifica e selezionare **Show Compute Emulator UI**(Mostra interfaccia emulatore di calcolo).
+2. Per visualizzare l'interfaccia utente dell'emulatore di calcolo, aprire il menu di scelta rapida dell'icona di Azure nell'area di notifica e selezionare **Show Compute Emulator UI** (Mostra interfaccia emulatore di calcolo).
 
     Il riquadro sinistro dell'interfaccia utente mostra i servizi attualmente distribuiti nell'emulatore di calcolo e le istanze del ruolo in esecuzione in ogni servizio. È possibile scegliere il servizio o i ruoli per visualizzare le informazioni di diagnostica, registrazione e ciclo di vita nel riquadro di destra. Se si seleziona il margine superiore di una finestra inclusa, essa si espande per riempire il riquadro destro.
 
@@ -49,7 +48,7 @@ Per eseguire il debug di un servizio cloud da un computer remoto, è necessario 
 Se si abilita il debug remoto per un servizio cloud, esso non produce una riduzione delle prestazioni o costi aggiuntivi. Non usare il debug remoto in un servizio di produzione, poiché i client che usano il servizio potrebbero essere compromessi.
 
 > [!NOTE]
-> Quando si pubblica un servizio cloud da Visual Studio, è possibile abilitare **IntelliTrace** per qualsiasi ruolo del servizio destinato a .NET Framework 4 o .NET Framework 4.5. Tramite **IntelliTrace**è possibile esaminare gli eventi verificatisi in un'istanza del ruolo in passato e riprodurre il contesto da quel momento. Vedere [Debug di un servizio cloud pubblicato con IntelliTrace e Visual Studio](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) e [Uso di IntelliTrace](../debugger/intellitrace.md).
+> Quando si pubblica un servizio cloud da Visual Studio, è possibile abilitare **IntelliTrace** per qualsiasi ruolo del servizio destinato a .NET Framework 4 o .NET Framework 4.5. Tramite **IntelliTrace** è possibile esaminare gli eventi verificatisi in un'istanza del ruolo in passato e riprodurre il contesto da quel momento. Vedere [Debug di un servizio cloud pubblicato con IntelliTrace e Visual Studio](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) e [Uso di IntelliTrace](../debugger/intellitrace.md).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>Per abilitare il debug remoto per un servizio cloud
 
@@ -79,7 +78,7 @@ Se si abilita il debug remoto per un servizio cloud, esso non produce una riduzi
 
     ![Finestra di dialogo Seleziona tipo di codice](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. Per identificare i processi a cui è collegato il debugger, sulla barra dei menu selezionare **debug**  >  **Windows**  >  **processi**Windows e aprire la finestra di dialogo **processi** . (Tastiera: CTRL+ALT+Z) Per disconnettere un processo specifico, aprire il menu di scelta rapida e quindi selezionare **Disconnetti processo**. In alternativa, individuare il nodo dell'istanza in Esplora server, individuare il processo, aprire il relativo menu di scelta rapida e quindi selezionare **Disconnetti processo**.
+4. Per identificare i processi a cui è collegato il debugger, sulla barra dei menu selezionare **debug**  >  **Windows**  >  **processi** Windows e aprire la finestra di dialogo **processi** . (Tastiera: CTRL+ALT+Z) Per disconnettere un processo specifico, aprire il menu di scelta rapida e quindi selezionare **Disconnetti processo**. In alternativa, individuare il nodo dell'istanza in Esplora server, individuare il processo, aprire il relativo menu di scelta rapida e quindi selezionare **Disconnetti processo**.
 
     ![Debug di processi](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
@@ -142,7 +141,7 @@ I progetti ASP.NET di Visual Studio offrono un'opzione per creare una macchina v
 
 2. Nella sezione Azure della finestra di dialogo nuovo progetto ASP.NET selezionare **macchina virtuale** nella casella di riepilogo a discesa. Lasciare deselezionata la casella di controllo **Crea risorse remote**. Selezionare **OK** per procedere.
 
-    Verrà visualizzata la finestra di dialogo per la creazione di una macchina virtuale**** in Azure.
+    Verrà visualizzata la finestra di dialogo per la creazione di una macchina virtualein Azure.
 
     ![Finestra di dialogo Crea progetto Web ASP.NET](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 

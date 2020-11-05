@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 950ca7f1e9c43123b206893dbc6a07da7c3743ec
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 3283b6e90cb2bced27f09b8c4491992fb5ac315f
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862860"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400178"
 ---
 # <a name="wsl-install"></a>wsl-install
 
@@ -24,11 +24,11 @@ Lo `wsl-install` strumento viene usato per installare le distribuzioni di Linux 
 
 Lo `wsl-install` strumento richiede che WSL 2 sia già abilitato in Windows. Se per qualche motivo WSL2 non è abilitato, è possibile abilitare WSL2 usando lo strumento [WindowsFeature-Enable](tool-windowsfeature-enable.md) e il nome della funzionalità `Microsoft-Windows-Subsystem-Linux` .
 
-## <a name="usage"></a>Uso
+## <a name="usage"></a>Utilizzo
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Tipo   | Obbligatoria | valore                                                             |
+| Nome                                             | Type   | Obbligatoria | valore                                                             |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                             |
 | [**input**](#input)                              | string | Sì      | Distro da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.     |
@@ -55,7 +55,7 @@ URI del pacchetto di distribuzione dell'applicazione AppX ( `.appx` ) che contie
 
 Sono supportate più opzioni aggiuntive:
 
-| Nome                      | Tipo      | Obbligatoria | valore                                                                                                                                                                                    |
+| Nome                      | Type      | Obbligatoria | valore                                                                                                                                                                                    |
 |---------------------------|-----------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | --WSL-Version             | stringa    | No       | Versione di WSL da usare. Il valore predefinito è 2.                                                                                                                                  |
 | --Post-creazione-comando     | stringa    | No       | Comando da eseguire all'interno della distribuzione di Linux una volta completata l'installazione. Il comando deve essere formattato come una singola parola o racchiuso tra virgolette. Il valore predefinito è no Command.  |
@@ -68,7 +68,7 @@ Il comportamento predefinito dello `wsl-install` strumento è l'errore come la `
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Example that will install Ubuntu 20.04.",

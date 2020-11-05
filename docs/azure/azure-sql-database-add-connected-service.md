@@ -3,18 +3,17 @@ title: Aggiungere una connessione al database SQL di Azure | Microsoft Docs
 description: Aggiungere la connessione al database SQL di Azure all'app usando Visual Studio Servizi connessi
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: e1594ea4239b4200bf72ec4a2ef2c558839ef95c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09ae5768e55ae3e08ec2549faeb7cefa70a5edd1
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643503"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399047"
 ---
 # <a name="add-a-connection-to-azure-sql-database"></a>Aggiungere una connessione al database SQL di Azure
 
@@ -43,7 +42,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
 1. Aprire il progetto in Visual Studio.
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo **servizi connessi** e scegliere **Aggiungi servizio connesso**dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **servizi connessi** e scegliere **Aggiungi servizio connesso** dal menu di scelta rapida.
 
 1. Nella scheda **servizi connessi** selezionare l'icona + per le **dipendenze del servizio**.
 

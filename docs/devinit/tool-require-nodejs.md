@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ce4a156a313e3d8d0afc82ababd49d0528b315f5
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6ba6b5a53c6b6f1c67c957c55a612cbe461b108c
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005777"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400267"
 ---
 # <a name="require-nodejs"></a>require-nodejs
 
@@ -26,7 +26,7 @@ Lo `require-nodejs` strumento viene usato per installare il [Node.js](https://no
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Tipo   | Obbligatoria | valore                                                                     |
+| Nome                                             | Type   | Obbligatoria | valore                                                                     |
 |--------------------------------------------------|--------|----------|---------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                     |
 | [**input**](#input)                              | stringa | No       | Versione di Node.JS da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito. |
@@ -48,7 +48,7 @@ Il comportamento predefinito dello `require-nodejs` strumento consiste nell'inst
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Example that will trigger the Default behavior of installing latest LTS of Node.JS.",

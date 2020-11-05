@@ -3,18 +3,17 @@ title: Aggiungere Azure SignalR usando Servizi connessi | Microsoft Docs
 description: Aggiungere Azure SignalR all'app usando Visual Studio per aggiungere un servizio connesso
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 0e44416bd6a55796b62a7590856caab8466a6401
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c61d91ed3824d3ed9c33f579c321e471edb5a4e
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643506"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398982"
 ---
 # <a name="add-azure-signalr-by-using-visual-studio-connected-services"></a>Aggiungere Azure SignalR usando Visual Studio Servizi connessi
 
@@ -43,7 +42,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
 1. Aprire il progetto in Visual Studio.
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo **servizi connessi** e scegliere **Aggiungi servizio connesso**dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **servizi connessi** e scegliere **Aggiungi servizio connesso** dal menu di scelta rapida.
 
 1. Nella scheda **servizi connessi** selezionare l'icona + per le **dipendenze del servizio**.
 

@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1b5c3c478f275dac7512c4b3ada9871fe69b0f0e
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: 576f0055ab6443d991cbddaa51ca2767853bcf1e
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959793"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399599"
 ---
 # <a name="require-mssql"></a>require-mssql
 
 Lo `require-mssql` strumento viene utilizzato per installare [Microsoft SQL Server 2019 Developer Edition](https://www.microsoft.com/sql-server/application-development) da tramite l'ISO di MS SQL Server. SQL Server sarà disponibile per l' `localhost` utilizzo dell'autenticazione integrata di Windows e SQL Server sarà accessibile con la stringa di connessione `"Server=localhost;Integrated Security=true;"` .
 
-## <a name="usage"></a>Uso
+## <a name="usage"></a>Utilizzo
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
@@ -36,7 +36,7 @@ Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, 
 
 La `input` proprietà può essere una stringa con uno dei due valori seguenti:
 
-| valore     | Descrizione                              |
+| Valore     | Description                              |
 |-----------|------------------------------------------|
 | Installazione   | Installa SQL Server.                     |
 | uninstall | Disinstalla tutte le installazioni di SQL Server. |
@@ -53,7 +53,7 @@ Il comportamento predefinito dello `require-mssql` strumento è l'installazione 
 
 Lo `require-mssql` strumento imposta un numero di argomenti della riga di comando del programma di installazione per garantire che il programma di installazione possa essere eseguito. Questi argomenti sono elencati di seguito e la relativa documentazione è disponibile nella [documentazione sull'installazione di SQL](/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt?view=sql-server-ver15&preserve-view=true).
 
-| Nome                                                               | Descrizione |
+| Nome                                                               | Description |
 |--------------------------------------------------------------------|-------------|
 | /q                                                                 |             |
 | /ACTION = install                                                    |             |
@@ -78,7 +78,7 @@ Lo `require-mssql` strumento imposta un numero di argomenti della riga di comand
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
             "comments": "Installs MSSQL.",

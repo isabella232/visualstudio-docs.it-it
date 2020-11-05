@@ -3,18 +3,17 @@ title: Aggiungere la cache di Azure per Redis usando Servizi connessi | Microsof
 description: Aggiungere la cache di Azure per il supporto di redis all'app usando Visual Studio per aggiungere un servizio connesso
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 7583848c4bbe38f9094c60998e16ca3e95cf399f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 48554484781cca46ba96f8a075d18ea55ec3ef43
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643533"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93398618"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>Aggiungere la cache di Azure per Redis usando Visual Studio Servizi connessi
 
@@ -43,7 +42,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
 1. Aprire il progetto in Visual Studio.
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo **servizi connessi** e scegliere **Aggiungi servizio connesso**dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **servizi connessi** e scegliere **Aggiungi servizio connesso** dal menu di scelta rapida.
 
 1. Nella scheda **servizi connessi** selezionare l'icona + per le **dipendenze del servizio**.
 

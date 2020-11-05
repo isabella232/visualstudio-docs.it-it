@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8998a9e761716b28bd2815120e350b98804a6395
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 6361b6b3d85c970d74a624c82d052054ab66e44a
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928671"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400102"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurare gli unit test usando un file con *estensione runsettings*
 
-Gli unit test in Visual Studio possono essere configurati usando un file con estensione *runsettings*. Ad esempio, è possibile modificare la versione di .NET in cui vengono eseguiti i test, la directory dei risultati di test e i dati raccolti durante l'esecuzione dei test. Un uso piuttosto comune di un file con estensione *runsettings* è la personalizzazione dell'[analisi code coverage](../test/customizing-code-coverage-analysis.md).
+Gli unit test in Visual Studio possono essere configurati usando un file con estensione *runsettings*. Ad esempio, è possibile modificare la versione di .NET in cui vengono eseguiti i test, la directory dei risultati di test e i dati raccolti durante l'esecuzione dei test. Un uso piuttosto comune di un file con estensione *runsettings* è la personalizzazione dell' [analisi code coverage](../test/customizing-code-coverage-analysis.md).
 
 È possibile utilizzare i file di impostazioni esecuzione test per configurare i test eseguiti dalla [riga di comando](vstest-console-options.md), dall'IDE o in un [flusso di lavoro di compilazione](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true) utilizzando Azure test plans o Team Foundation Server (TFS).
 
@@ -24,7 +24,7 @@ I file di impostazioni esecuzione test sono facoltativi. Se non è necessaria al
 
 ## <a name="create-a-run-settings-file-and-customize-it"></a>Creazione di un file di impostazioni esecuzione test e personalizzazione
 
-1. Aggiungere un file di impostazioni esecuzione test alla propria soluzione. In **Esplora soluzioni**scegliere **Aggiungi**nuovo elemento dal menu di scelta rapida della soluzione  >  **New Item**e selezionare **file XML**. Salvare il file con un nome, ad esempio *test. runsettings*.
+1. Aggiungere un file di impostazioni esecuzione test alla propria soluzione. In **Esplora soluzioni** scegliere **Aggiungi** nuovo elemento dal menu di scelta rapida della soluzione  >  **New Item** e selezionare **file XML**. Salvare il file con un nome, ad esempio *test. runsettings*.
 
    > [!TIP]
    > Il nome del file non è rilevante, purché si usi l'estensione *runsettings*.
@@ -94,7 +94,7 @@ Se il rilevamento automatico dei file delle impostazioni esecuzione test è abil
 
 #### <a name="manually-select-the-run-settings-file"></a>Selezionare manualmente il file di impostazioni esecuzione test
 
-Nell'IDE selezionare **test** > **Configura impostazioni di esecuzione** > **Seleziona file runsettings a livello di soluzione**, quindi selezionare il file *. runsettings* .
+Nell'IDE selezionare **test** > **Configura impostazioni di esecuzione** > **Seleziona file runsettings a livello di soluzione** , quindi selezionare il file *. runsettings* .
 
    - Questo file esegue l'override del file con *estensione runsettings* alla radice della soluzione, se presente, e viene applicato a tutti i test eseguiti.
    - Questa selezione file viene resa permanente solo localmente.
@@ -131,7 +131,7 @@ Il file viene visualizzato nel menu test ed è possibile selezionarlo o deselezi
 
 ## <a name="specify-a-run-settings-file-from-the-command-line"></a>Specificare un file di impostazioni esecuzione test dalla riga di comando
 
-Per eseguire i test dalla riga di comando, usare *vstest.console.exe*e specificare il file di impostazioni usando il parametro **/Settings** .
+Per eseguire i test dalla riga di comando, usare *vstest.console.exe* e specificare il file di impostazioni usando il parametro **/Settings** .
 
 1. Aprire un [prompt dei comandi per gli sviluppatori](/dotnet/framework/tools/developer-command-prompt-for-vs) per Visual Studio.
 
@@ -172,6 +172,7 @@ Ognuno degli elementi di configurazione è facoltativo perché ha un valore pred
     <TargetFrameworkVersion>Framework40</TargetFrameworkVersion>
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
     <TestSessionTimeout>10000</TestSessionTimeout>
+    <TreatNoTestsAsError>true</TreatNoTestsAsError>
 </RunConfiguration>
 ```
 
@@ -181,12 +182,13 @@ L'elemento **RunConfiguration** può includere gli elementi seguenti:
 |-|-|-|
 |**MaxCpuCount**|1|Questa impostazione determina il livello di esecuzione parallela dei test durante l'esecuzione di unit test, in base ai core disponibili nel computer. Il motore di esecuzione dei test viene avviato come processo distinto in ogni core disponibile e assegna a ogni core un contenitore con test da eseguire. Un contenitore può essere un assembly, una DLL o un artefatto pertinente. Il contenitore di test è l'unità di pianificazione. In ogni contenitore, i test vengono eseguiti in base al framework di test. Se sono presenti molti contenitori, non appena termina l'esecuzione dei test in un contenitore, i processi vengono assegnati al successivo contenitore disponibile.<br /><br />MaxCpuCount può essere:<br /><br />n, dove 1 < = n < = numero di core: vengono avviati fino a n processi<br /><br />n, dove n = qualsiasi altro valore: il numero di processi avviati può essere fino al numero di core disponibili. Ad esempio, impostare n = 0 per consentire alla piattaforma di decidere automaticamente il numero ottimale di processi da avviare in base all'ambiente.|
 |**ResultsDirectory**||Directory in cui vengono inseriti i risultati del test. Il percorso è relativo alla directory che contiene il file con estensione runsettings.|
-|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` per le origini .NET Core, `FrameworkUap10` per le origini basate sulla piattaforma UWP, `Framework45` per .NET Framework 4.5 e versioni successive, `Framework40` per .NET Framework 4.0 e `Framework35` per .NET Framework 3.5.<br /><br />Questa impostazione specifica la versione del framework unit test usata per trovare ed eseguire i test. Può essere diversa dalla versione della piattaforma .NET specificata nelle proprietà di compilazione del progetto di unit test.<br /><br />Se si omette l'elemento `TargetFrameworkVersion` dal file con estensione *runsettings*, la piattaforma determina automaticamente la versione del framework sulla base dei file binari compilati.|
+|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` per le origini .NET Core, `FrameworkUap10` per le origini basate sulla piattaforma UWP, `Framework45` per .NET Framework 4.5 e versioni successive, `Framework40` per .NET Framework 4.0 e `Framework35` per .NET Framework 3.5.<br /><br />Questa impostazione specifica la versione del framework unit test usata per trovare ed eseguire i test. Può essere diversa dalla versione della piattaforma .NET specificata nelle proprietà di compilazione del progetto di unit test.<br /><br />Se si omette l'elemento `TargetFrameworkVersion` dal file con estensione *runsettings* , la piattaforma determina automaticamente la versione del framework sulla base dei file binari compilati.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||Uno o più percorsi della directory in cui si trovano i TestAdapter|
 |**TestSessionTimeout**||Consente agli utenti di terminare una sessione di test allo scadere di un timeout specificato. L'impostazione di un timeout assicura un consumo ottimale delle risorse e consente di vincolare le sessioni di test a un periodo di tempo stabilito. L'impostazione è disponibile in **Visual Studio 2017 versione 15.5** e versioni successive.|
-|**DotnetHostPath**||Specificare un percorso personalizzato per l'host DotNet usato per eseguire testhost. Questa operazione è utile quando si compila il proprio dotnet, ad esempio quando si compila il repository DotNet/Runtime. Se si specifica questa opzione, la ricerca di testhost.exe verrà ignorata e verrà sempre utilizzata l'testhost.dll.
+|**DotnetHostPath**||Specificare un percorso personalizzato per l'host DotNet usato per eseguire testhost. Questa operazione è utile quando si compila il proprio dotnet, ad esempio quando si compila il repository DotNet/Runtime. Se si specifica questa opzione, la ricerca di testhost.exe verrà ignorata e verrà sempre utilizzata l'testhost.dll.|
+|**TreatNoTestsAsError**|false| true o false <br>Specificare un valore booleano che definisce il codice di uscita quando non viene individuato alcun test. Se il valore è `true` e non viene individuato alcun test, viene restituito un codice di uscita diverso da zero. In caso contrario, sarà restituito zero.|
 
 ## <a name="datacollectors-element-diagnostic-data-adapters"></a>Elemento DataCollectors (adattatori dati di diagnostica)
 
@@ -231,7 +233,7 @@ Per personalizzare qualsiasi altro tipo di adattatore dati di diagnostica, usare
 
 ### <a name="blame-data-collector"></a>Incolpare l'agente di raccolta dati
 
-Questa opzione può essere utile per isolare un test problematico che causa un arresto anomalo di un host di test. Eseguendo l'agente di raccolta, viene creato un file di output (*Sequence.xml*) in *TestResults*, che acquisisce l'ordine di esecuzione del test prima dell'arresto anomalo.
+Questa opzione può essere utile per isolare un test problematico che causa un arresto anomalo di un host di test. Eseguendo l'agente di raccolta, viene creato un file di output ( *Sequence.xml* ) in *TestResults* , che acquisisce l'ordine di esecuzione del test prima dell'arresto anomalo.
 
 ```xml
 <DataCollector friendlyName="blame" enabled="True">
@@ -310,7 +312,7 @@ Queste impostazioni sono specifiche dell'adattatore di test che esegue i metodi 
 |**IgnoreTestImpact**|false|La funzionalità di impatto sui test assegna la priorità ai test interessati dalle modifiche recenti, quando viene eseguito in MSTest o da Microsoft Test Manager (deprecato in Visual Studio 2017). Questa impostazione disattiva la funzionalità. Per altre informazioni, vedere [Test da eseguire da una compilazione precedente](/previous-versions/dd286589(v=vs.140)).|
 |**SettingsFile**||È possibile specificare un file di impostazioni test da usare con l'adattatore MSTest. È anche possibile specificare un file di impostazioni test [dal menu delle impostazioni](#specify-a-run-settings-file-in-the-ide).<br /><br />Se si specifica questo valore, è necessario impostare anche **ForcedlegacyMode** su **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|Una volta completata l'esecuzione di un test, MSTest viene arrestato. Anche qualsiasi processo avviato come parte del test verrà interrotto. Per fare in modo che l'executor di test rimanga attivo, impostare questa configurazione su **true**. Lo si può usare, ad esempio, per mantenere in esecuzione il browser tra i test codificati dell'interfaccia utente.|
-|**DeploymentEnabled**|true|Se si imposta il valore su **false**, gli elementi della distribuzione specificati nel metodo di test non vengono copiati nella directory di distribuzione.|
+|**DeploymentEnabled**|true|Se si imposta il valore su **false** , gli elementi della distribuzione specificati nel metodo di test non vengono copiati nella directory di distribuzione.|
 |**CaptureTraceOutput**|true|È possibile scrivere nella traccia di debug dal metodo di test usando <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
 |**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Per mantenere la directory di distribuzione dopo un'esecuzione di test, impostare questo valore su **false**.|
 |**MapInconclusiveToFailed**|false|Se un test viene completato senza risultati, ne viene eseguito il mapping allo stato Ignorato in **Esplora test**. Se si vuole che i test senza risultati vengano visualizzati come non superati, impostare il valore su **true**.|
@@ -345,6 +347,10 @@ Ogni elemento del file è facoltativo perché usa un valore predefinito.
     <!-- TestSessionTimeout was introduced in Visual Studio 2017 version 15.5 -->
     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
     <TestSessionTimeout>10000</TestSessionTimeout>
+
+    <!-- true or false -->
+    <!-- Value that specifies the exit code when no tests are discovered -->
+    <TreatNoTestsAsError>true</TreatNoTestsAsError>
   </RunConfiguration>
 
   <!-- Configurations for data collectors -->

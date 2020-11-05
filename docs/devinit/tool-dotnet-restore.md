@@ -11,22 +11,22 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 2febd8a62e041384c8acf5b7b0b5e1c974597c0a
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 3b868d910218c853526f1f024ff9674a5ce045dd
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862248"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399850"
 ---
 # <a name="dotnet-restore"></a>dotnet-restore
 
 Lo `dotnet-restore` strumento Ripristina le dipendenze e gli strumenti specifici del progetto specificati nel file di progetto. Scopri di più su dotnet restore [qui](/dotnet/core/tools/dotnet-restore).
 
-## <a name="usage"></a>Uso
+## <a name="usage"></a>Utilizzo
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Tipo   | Obbligatoria | valore                                                                                |
+| Nome                                             | Type   | Obbligatoria | valore                                                                                |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                                |
 | [**input**](#input)                              | stringa | No       | Percorso del file di progetto/soluzione da ripristinare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito. |
@@ -48,7 +48,7 @@ Il comportamento predefinito dello `dotnet-restore` strumento consiste nell'eseg
 
 ```json
 {
-    "$schema": "https://json.schemastore.org/devinit.schema-2.0",
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "comments": "A sample dot-devinit file that builds the 'kitchen sink'",
     "run": [
         {

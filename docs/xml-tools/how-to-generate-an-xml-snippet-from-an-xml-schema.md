@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: generare un frammento XML da XML Schema'
+description: Viene illustrato come utilizzare l'editor XML per generare un frammento XML da uno schema XSD (XML Schema Definition Language).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c7dff8e1bb211343ccc44e0d1fd33d96c102283
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce87f71a465f9c6452fa713fd8a7bdf523e801a3
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817177"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399469"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedura: generare un frammento XML da un XML Schema
 
@@ -50,13 +52,13 @@ Nei passaggi di questa sezione viene illustrato come utilizzare la funzionalità
 
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Per creare un nuovo file XML e associarlo a un XML Schema
 
-1. Scegliere **nuovo**dal menu **file** e quindi fare clic su **file**.
+1. Scegliere **nuovo** dal menu **file** e quindi fare clic su **file**.
 
 2. Selezionare **file XML** nel riquadro **modelli** e fare clic su **Apri**.
 
      Viene aperto un nuovo file nell'editor. Il file contiene una dichiarazione XML predefinita, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Nella finestra proprietà del documento fare clic sul pulsante Sfoglia (**...**) nel campo **schemi** .
+3. Nella finestra proprietà del documento fare clic sul pulsante Sfoglia ( **...** ) nel campo **schemi** .
 
      Verrà visualizzata la finestra di dialogo **schemi XSD** .
 
@@ -156,5 +158,5 @@ Di seguito sono riportati i dati XML generati in base alle informazioni sullo sc
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Frammenti XML](../xml-tools/xml-snippets.md)
+- [frammenti XML](../xml-tools/xml-snippets.md)
 - [Procedura: utilizzare frammenti di codice XML](../xml-tools/how-to-use-xml-snippets.md)

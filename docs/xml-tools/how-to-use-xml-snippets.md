@@ -1,5 +1,7 @@
 ---
 title: Come utilizzare i frammenti XML
+description: Informazioni su come usare i comandi nell'editor XML per inserire frammenti di codice XML o per eseguire il wrapping di un frammento XML intorno al testo selezionato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e72c5ef5d5c33c46a9f09eb604d0a2e40cf9a6e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bebca3a27d11015388e45ff6839f446506e716c
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815916"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93400115"
 ---
 # <a name="how-to-use-xml-snippets"></a>Procedura: utilizzare frammenti di codice XML
 
@@ -26,7 +28,7 @@ Dopo che il frammento XML è stato aggiunto all'editor, i campi modificabili nel
 Nelle procedure riportate di seguito viene descritto come accedere al comando **Inserisci frammento** .
 
 > [!NOTE]
-> Il comando **Inserisci frammento** di codice è disponibile anche tramite il tasto di scelta rapida (**CTRL** + **K**, quindi **CTRL** + **X**).
+> Il comando **Inserisci frammento** di codice è disponibile anche tramite il tasto di scelta rapida ( **CTRL** + **K** , quindi **CTRL** + **X** ).
 
 ### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Per inserire i frammenti dal menu di scelta rapida
 
@@ -42,7 +44,7 @@ Nelle procedure riportate di seguito viene descritto come accedere al comando **
 
 1. Posizionare il cursore nel punto in cui si desidera inserire il frammento XML.
 
-2. Scegliere **IntelliSense**dal menu **modifica** e quindi selezionare **Inserisci frammento**di codice.
+2. Scegliere **IntelliSense** dal menu **modifica** e quindi selezionare **Inserisci frammento** di codice.
 
    Viene visualizzato un elenco dei frammenti XML disponibili.
 
@@ -56,7 +58,7 @@ Nelle procedure riportate di seguito viene descritto come accedere al comando **
 
 3. Selezionare il frammento XML dall'elenco Completa parola.
 
-4. Premere **Tab**, **Tab** per richiamare il frammento XML.
+4. Premere **Tab** , **Tab** per richiamare il frammento XML.
 
 > [!NOTE]
 > In alcuni casi è possibile che il frammento XML non venga richiamato. Ad esempio, se si tenta di inserire un elemento `xs:complexType` all'interno di un nodo `xs:element`, l'editor non genera alcun frammento XML. Quando un elemento `xs:complexType` viene usato all'interno di un nodo `xs:element`, non vengono rilevati attributi o sottoelementi obbligatori, pertanto l'editor non disporrà di alcun dato da inserire.
@@ -76,7 +78,7 @@ Nelle procedure riportate di seguito viene descritto come accedere al comando **
 Nelle procedure seguenti viene descritto come accedere al comando **Racchiudi tra** .
 
 > [!NOTE]
-> Il comando **Racchiudi** tra è disponibile anche tramite il tasto di scelta rapida (**CTRL** + **K**, quindi **CTRL** + **S**).
+> Il comando **Racchiudi** tra è disponibile anche tramite il tasto di scelta rapida ( **CTRL** + **K** , quindi **CTRL** + **S** ).
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>Per usare Racchiudi tra dal menu di scelta rapida
 
@@ -92,7 +94,7 @@ Nelle procedure seguenti viene descritto come accedere al comando **Racchiudi tr
 
 1. Consente di selezionare il testo da racchiudere nell'editor XML.
 
-2. Scegliere **IntelliSense**dal menu **modifica** e quindi **Racchiudi**tra.
+2. Scegliere **IntelliSense** dal menu **modifica** e quindi **Racchiudi** tra.
 
    Viene visualizzato un elenco delle scelte disponibili con i frammenti XML.
 
@@ -102,7 +104,7 @@ Nelle procedure seguenti viene descritto come accedere al comando **Racchiudi tr
 
 Una volta scelto il frammento XML, il testo del frammento di codice viene inserito automaticamente nella posizione del cursore. I campi modificabili del frammento vengono evidenziati e il primo campo modificabile viene selezionato automaticamente. Il campo attualmente selezionato è di tipo boxed.
 
-Quando si seleziona un campo, è possibile digitare un nuovo valore per tale campo. Premere **Tab** per scorrere i campi modificabili del frammento; premendo **MAIUSC**la + **scheda** scorre in ordine inverso. Se si fa clic su un campo il cursore viene posizionato all'interno del campo, se si fa doppio clic il campo viene selezionato. Quando un campo è evidenziato, potrebbe essere visualizzata la finestra con la descrizione del campo.
+Quando si seleziona un campo, è possibile digitare un nuovo valore per tale campo. Premere **Tab** per scorrere i campi modificabili del frammento; premendo **MAIUSC** la + **scheda** scorre in ordine inverso. Se si fa clic su un campo il cursore viene posizionato all'interno del campo, se si fa doppio clic il campo viene selezionato. Quando un campo è evidenziato, potrebbe essere visualizzata la finestra con la descrizione del campo.
 
 È modificabile solo la prima istanza di un determinato campo. Quando il campo è evidenziato, le altre istanze del campo sono tratteggiate. Quando si modifica il valore di un campo modificabile, il campo viene modificato ovunque venga usato nel frammento.
 
@@ -112,6 +114,6 @@ I colori predefiniti per i campi dei frammenti di codice modificabili possono es
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Frammenti XML](../xml-tools/xml-snippets.md)
+- [frammenti XML](../xml-tools/xml-snippets.md)
 - [Procedura: generare un frammento XML da un XML Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
 - [Procedura: creare frammenti XML](../xml-tools/how-to-create-xml-snippets.md)

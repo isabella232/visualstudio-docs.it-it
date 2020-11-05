@@ -4,17 +4,16 @@ description: Informazioni sulle procedure per la configurazione di servizi cloud
 author: ghogen
 manager: jillfra
 ms.assetid: 92ee2f9e-ec49-4c7a-900d-620abe5e9d8a
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 5cd458cca0a0b387ce816f2e7f5dde8153e08410
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a09b8f5c6efacab0f02a445ed78f8a3769031fa0
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280804"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399008"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Preparare la pubblicazione o la distribuzione di un servizio cloud in Visual Studio
 
@@ -31,14 +30,14 @@ Un servizio cloud esegue i ruoli nell'ambiente Azure. È possibile creare un ser
 
 1. Con un progetto di servizio cloud creato in precedenza, fare clic con il pulsante destro del mouse sul progetto e scegliere **Pubblica**.
 1. Se necessario, accedere con l'account Microsoft o aziendale associato alla sottoscrizione di Azure, quindi selezionare **Avanti** per passare alla pagina **Impostazioni**.
-1. Verrà visualizzata la finestra di dialogo **Crea servizio cloud e account di archiviazione** (in caso contrario, selezionare **Crea nuovo** dall'elenco **Servizio cloud**).
+1. Verrà visualizzata la finestra di dialogo **Crea servizio cloud e account di archiviazione** (in caso contrario, selezionare **Crea nuovo** dall'elenco **Servizio cloud** ).
 1. Immettere un nome per il servizio cloud senza distinzione tra maiuscole e minuscole. Il nome deve essere compreso nell'URL ed essere univoco. Scegliere anche un'area o un gruppo di affinità e selezionare un'opzione di replica.
 
 ### <a name="create-a-cloud-service-through-the-azure-portal"></a>Creare un servizio cloud tramite il portale di Azure
 
 1. Accedere al [portale di Azure](https://portal.azure.com/).
 1. Selezionare **Servizi cloud (versione classica)** sul lato sinistro della pagina.
-1. Selezionare **+ Aggiungi**, quindi specificare le informazioni obbligatorie (nome DNS, sottoscrizione, gruppo di risorse e posizione). Non è necessario caricare un pacchetto in questo momento poiché questa operazione verrà eseguita successivamente in Visual Studio.
+1. Selezionare **+ Aggiungi** , quindi specificare le informazioni obbligatorie (nome DNS, sottoscrizione, gruppo di risorse e posizione). Non è necessario caricare un pacchetto in questo momento poiché questa operazione verrà eseguita successivamente in Visual Studio.
 1. Fare clic su **Crea** per completare la procedura.
 
 ## <a name="create-a-storage-account"></a>Creare un account di archiviazione
@@ -47,7 +46,7 @@ Un account di archiviazione fornisce l'accesso ai servizi BLOB, code e tabelle. 
 
 ### <a name="create-a-storage-account-from-visual-studio"></a>Creare un account di archiviazione in Visual Studio
 
-1. In **Esplora soluzioni**, con un progetto di servizio cloud creato in precedenza, individuare il nodo **Servizi connessi** all'interno di un progetto di ruolo, fare clic con il pulsante destro del mouse e scegliere **Aggiungi servizio connesso**. In Visual Studio 2015 fare clic con il pulsante destro del mouse sul nodo **Archiviazione** e scegliere **Crea account di archiviazione**.
+1. In **Esplora soluzioni** , con un progetto di servizio cloud creato in precedenza, individuare il nodo **Servizi connessi** all'interno di un progetto di ruolo, fare clic con il pulsante destro del mouse e scegliere **Aggiungi servizio connesso**. In Visual Studio 2015 fare clic con il pulsante destro del mouse sul nodo **Archiviazione** e scegliere **Crea account di archiviazione**.
 1. Nell'elenco **Servizi connessi** che viene visualizzato selezionare **Archiviazione cloud con Archiviazione di Azure**.
 1. Nella finestra di dialogo Archiviazione di Azure che viene visualizzata selezionare **+Crea un nuovo account di archiviazione**. Verrà visualizzata una finestra di dialogo in cui specificare la sottoscrizione, un nome per l'account, un piano tariffario, un gruppo di risorse e una posizione.
 1. Al termine, fare clic su **Crea**. Il nuovo account di archiviazione verrà visualizzato nell'elenco degli account di archiviazione disponibili nella sottoscrizione.
@@ -65,11 +64,11 @@ Un account di archiviazione fornisce l'accesso ai servizi BLOB, code e tabelle. 
 
 Dopo aver creato un account di archiviazione e averne definito le connessioni in Visual Studio, vengono aggiornate automaticamente le configurazioni del servizio per il progetto, inclusi gli URL e le chiavi di accesso.
 
-Se è stato creato un servizio cloud in Visual Studio usando **Aggiungi servizio connesso**, è possibile verificare le connessioni aprendo `ServiceConfiguration.Cloud.cscfg` e `ServiceConfiguration.Local.cscfg`.
+Se è stato creato un servizio cloud in Visual Studio usando **Aggiungi servizio connesso** , è possibile verificare le connessioni aprendo `ServiceConfiguration.Cloud.cscfg` e `ServiceConfiguration.Local.cscfg`.
 
 Se è stato creato un servizio cloud tramite il portale di Azure, seguire la stessa procedura descritta in [Creare un account di archiviazione in Visual Studio](#create-a-storage-account-from-visual-studio) selezionando l'account esistente anziché creandone uno nuovo. Visual Studio aggiornerà quindi la configurazione per l'utente.
 
-Per configurare le impostazioni manualmente, usare le pagine delle proprietà in Visual Studio per il ruolo applicabile nel progetto di servizio cloud (fare clic con il pulsante destro del mouse sul ruolo e scegliere **Proprietà**). Per altre informazioni, vedere [Configurazione di una stringa di connessione in un account di archiviazione](vs-azure-tools-multiple-services-project-configurations.md#configuring-a-connection-string-for-a-storage-account).
+Per configurare le impostazioni manualmente, usare le pagine delle proprietà in Visual Studio per il ruolo applicabile nel progetto di servizio cloud (fare clic con il pulsante destro del mouse sul ruolo e scegliere **Proprietà** ). Per altre informazioni, vedere [Configurazione di una stringa di connessione in un account di archiviazione](vs-azure-tools-multiple-services-project-configurations.md#configuring-a-connection-string-for-a-storage-account).
 
 ### <a name="about-access-keys"></a>Chiavi di accesso
 
