@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aa4ad83428120c68adb89937afc46f51700dbfe
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 111eb74d388682ff3cf97d5e0aa7e7e5a91cbaf3
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583671"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414191"
 ---
 # <a name="checklist-create-new-project-types"></a>Elenco di controllo: creare nuovi tipi di progetto
 Per creare un nuovo tipo di progetto, è necessario completare diverse attività. Nell'elenco di controllo seguente viene fornita una guida a tali attività:
@@ -33,7 +33,7 @@ Per creare un nuovo tipo di progetto, è necessario completare diverse attività
 
     - Project Factory, per gestire la creazione di nuovi progetti e l'apertura di progetti esistenti. Per altre informazioni, vedere [creare istanze di progetto tramite Project Factory](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).
 
-    - Gerarchia del progetto e gestione dei comandi. Per altre informazioni, vedere [usare le classi di progetto HierUtil7 per implementare un tipo di progetto (C++)](/previous-versions/bb166212(v=vs.100)), [elementi di un modello di progetto](../../extensibility/internals/elements-of-a-project-model.md), [componenti di base del modello di progetto](../../extensibility/internals/project-model-core-components.md)e oggetti MenuCommand e [OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
+    - Gerarchia del progetto e gestione dei comandi. Per altre informazioni, vedere [usare le classi di progetto HierUtil7 per implementare un tipo di progetto (C++)](/previous-versions/bb166212(v=vs.100)), [elementi di un modello di progetto](../../extensibility/internals/elements-of-a-project-model.md), [componenti di base del modello di progetto](../../extensibility/internals/project-model-core-components.md)e oggetti MenuCommand e [OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015).
 
     - Gestione degli elementi di progetto, inclusa l'aggiunta del progetto alla finestra di dialogo **nuovo progetto** . Per altre informazioni, vedere [aggiungere modelli](../../extensibility/internals/adding-project-and-project-item-templates.md) di progetti e di elementi di progetto e [registrare i modelli di progetto e di elemento](../../extensibility/internals/registering-project-and-item-templates.md).
 
@@ -49,15 +49,15 @@ Per creare un nuovo tipo di progetto, è necessario completare diverse attività
 
     - Oggetti o classi derivate da `IDispatch` , disponibili per l'automazione.
 
-    - File della tabella dei comandi XML (con*estensione vsct*). Per ulteriori informazioni, vedere [file della tabella dei comandi di Visual Studio (con estensione vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+    - File della tabella dei comandi XML (con *estensione vsct* ). Per ulteriori informazioni, vedere [file della tabella dei comandi di Visual Studio (con estensione vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 6. Testare, eseguire il debug e avviare il tipo di progetto.
 
 7. Visualizzare il progetto nella scheda **progetto** della finestra di dialogo **Aggiungi riferimento** impostando `VARIANT_TRUE` come valore per `VSHPROPID_ShowProjInSolutionPage` . Per altre informazioni, vedere <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>.
 
-8. Creare il file di Microsoft Installer (*MSI*) per l'installazione dei pacchetti VSPackage. Per altre informazioni, vedere [installare VSPackage con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [registrare un tipo di progetto](../../extensibility/internals/registering-a-project-type.md)e [VSPackage](../../extensibility/internals/vspackages.md).
+8. Creare il file di Microsoft Installer ( *MSI* ) per l'installazione dei pacchetti VSPackage. Per altre informazioni, vedere [installare VSPackage con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [registrare un tipo di progetto](../../extensibility/internals/registering-a-project-type.md)e [VSPackage](../../extensibility/internals/vspackages.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Gerarchie in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 - [Quando creare i tipi di progetto](../../extensibility/internals/when-to-create-project-types.md)
 - [Creazione di tipi di progetto](../../extensibility/internals/creating-project-types.md)

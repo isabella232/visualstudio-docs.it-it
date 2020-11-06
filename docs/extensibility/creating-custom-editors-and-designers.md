@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcc047794cc79ad2909bfaa1d9866fc0a2c0dc1e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9177e6f431eb24a337822dd7de0a0b9586e1de0e
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584729"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414256"
 ---
 # <a name="create-custom-editors-and-designers"></a>Creazione di editor e finestre di progettazione personalizzati
 
@@ -59,7 +59,7 @@ Per informazioni sull'editor principale di Visual Studio, vedere [estendere l'ed
 
 - L'editor deve ospitare i controlli ActiveX?
 
-   Se l'editor ospita controlli ActiveX, implementare un editor di attivazione sul posto, come descritto nell' [attivazione sul posto](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true). Se non ospita controlli ActiveX, usare un editor di incorporamento semplificato o personalizzare l' [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor predefinito.
+   Se l'editor ospita controlli ActiveX, implementare un editor di attivazione sul posto, come descritto nell' [attivazione sul posto](/previous-versions/visualstudio/visual-studio-2015/misc/in-place-activation?preserve-view=true&view=vs-2015). Se non ospita controlli ActiveX, usare un editor di incorporamento semplificato o personalizzare l' [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor predefinito.
 
 - L'editor supporterà più visualizzazioni? È necessario supportare più visualizzazioni Se si desidera che le visualizzazioni dell'editor siano visibili nello stesso momento dell'editor predefinito.
 
@@ -93,7 +93,7 @@ Viene illustrato come implementare i dati del documento e le visualizzazioni doc
 
 ## <a name="related-sections"></a>Sezioni correlate
 
-[Interfacce legacy nell'editor](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015&preserve-view=true)\
+[Interfacce legacy nell'editor](/previous-versions/visualstudio/visual-studio-2015/extensibility/legacy-interfaces-in-the-editor?preserve-view=true&view=vs-2015)\
 Viene illustrato come accedere all'editor principale per mezzo dell'API legacy.
 
 [Sviluppare un servizio di linguaggio legacy](../extensibility/internals/developing-a-legacy-language-service.md)\

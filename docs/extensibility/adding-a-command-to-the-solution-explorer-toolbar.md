@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32b7de4d3e62c2f1d9de5126217ccede48dfca8
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7cc2eee209129867696955eb22c9e851c17973c1
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583697"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414100"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Aggiungere un comando alla barra degli strumenti Esplora soluzioni
 In questa procedura dettagliata viene illustrato come aggiungere un pulsante alla barra degli strumenti **Esplora soluzioni** .
@@ -27,7 +27,7 @@ In questa procedura dettagliata viene illustrato come aggiungere un pulsante all
  Per ulteriori informazioni sui menu, i comandi della barra degli strumenti e i file con *estensione vsct* , vedere [comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md).
 
 > [!NOTE]
-> Usare i file della tabella dei comandi XML (con*estensione vsct*) anziché i file di configurazione della tabella dei comandi (con*estensione CTC*) per definire la modalità di visualizzazione dei menu e dei comandi nei pacchetti VSPackage. Per ulteriori informazioni, vedere la [tabella dei comandi di Visual Studio (. File vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+> Usare i file della tabella dei comandi XML (con *estensione vsct* ) anziché i file di configurazione della tabella dei comandi (con *estensione CTC* ) per definire la modalità di visualizzazione dei menu e dei comandi nei pacchetti VSPackage. Per ulteriori informazioni, vedere la [tabella dei comandi di Visual Studio (. File vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
  A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area download. Viene inclusa come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare Visual Studio SDK in un secondo momento. Per ulteriori informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
@@ -80,7 +80,7 @@ In questa procedura dettagliata viene illustrato come aggiungere un pulsante all
 
 ### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Per visualizzare un pulsante quando uno o più progetti sono aperti
 
-1. Nella `<Buttons>` sezione di *ToolbarButtonPackage. vsct*aggiungere due flag di comando all' `<Button>` elemento esistente tra i `<Strings>` `<Icons>` tag e.
+1. Nella `<Buttons>` sezione di *ToolbarButtonPackage. vsct* aggiungere due flag di comando all' `<Button>` elemento esistente tra i `<Strings>` `<Icons>` tag e.
 
    ```xml
    <CommandFlag>DefaultInvisible</CommandFlag>
@@ -114,7 +114,7 @@ In questa procedura dettagliata viene illustrato come aggiungere un pulsante all
 
 5. Scegliere **Chiudi soluzione** dal menu **File**. Il pulsante scompare dalla barra degli strumenti.
 
-   La visibilità del pulsante viene controllata da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] finché il pacchetto VSPackage non viene caricato. Una volta caricato il pacchetto VSPackage, la visibilità del pulsante viene controllata dal pacchetto VSPackage.  Per ulteriori informazioni, vedere [oggetti MenuCommand e OleMenuCommands](../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015&preserve-view=true).
+   La visibilità del pulsante viene controllata da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] finché il pacchetto VSPackage non viene caricato. Una volta caricato il pacchetto VSPackage, la visibilità del pulsante viene controllata dal pacchetto VSPackage.  Per ulteriori informazioni, vedere [oggetti MenuCommand e OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md)

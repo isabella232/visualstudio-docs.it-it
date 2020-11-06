@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: a361a34458fdf22a988c603145ef6654b944be08
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: f13500c4d65287dfbafdb681a3fc47ffcd2c397e
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099440"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414321"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Informazioni di riferimento per la migrazione e l'aggiornamento di un progetto per Visual Studio
 
@@ -43,14 +43,14 @@ Questo articolo offre informazioni dettagliate relative solo ai tipi di progetto
 
 L'elenco che segue descrive il supporto di Visual Studio 2017 per i progetti creati nelle versioni precedenti.
 
-Se non viene visualizzato un progetto o non viene elencato un tipo di file che dovrebbe essere presente, vedere la [versione di questo articolo per Visual Studio 2015](../vs-2015/porting/porting-migrating-and-upgrading-visual-studio-projects.md?view=vs-2015&preserve-view=true) e usare l'opzione **Invia feedback su** > **Questa pagina** alla fine della pagina per inviare dettagli sul progetto. Se si usa il controllo anonimo "Questa pagina è stata utile?" non si riceverà una risposta a commenti e suggerimenti.
+Se non viene visualizzato un progetto o non viene elencato un tipo di file che dovrebbe essere presente, vedere la [versione di questo articolo per Visual Studio 2015](/previous-versions/visualstudio/visual-studio-2015/porting/porting-migrating-and-upgrading-visual-studio-projects?preserve-view=true&view=vs-2015) e usare l'opzione **Invia feedback su** > **Questa pagina** alla fine della pagina per inviare dettagli sul progetto. Se si usa il controllo anonimo "Questa pagina è stata utile?" non si riceverà una risposta a commenti e suggerimenti.
 
 | Tipo di progetto | Supporto |
 | --- | --- |
 | Progetti .NET Core (xproj) | I progetti creati con Visual Studio 2015 usano strumenti di anteprima che includono un file di progetto xproj. In Visual Studio 2017 il formato xproj non è supportato per la migrazione al formato csproj. Quando si apre un file xproj, viene richiesto di eseguire la migrazione del file nel formato csproj in stile SDK. Viene eseguito un backup del file xproj. I progetti csproj di tipo SDK non sono supportati in Visual Studio 2015 e versioni precedenti. Per altre informazioni, vedere [migrazione di progetti .NET Core al formato csproj](/dotnet/core/migration/#visual-studio).|
 | Applicazione Web ASP.NET e applicazione Web ASP.NET Core con Application Insights abilitato | Per ogni utente di Visual Studio, le informazioni sulle risorse sono memorizzate nel Registro di sistema per ogni istanza utente. Queste informazioni vengono usate quando l'utente non ha un progetto aperto e vuole eseguire una ricerca nei dati di Azure Application Insights. Visual Studio 2015 usa un percorso del Registro di sistema diverso da quello di Visual Studio 2017 e non è in conflitto.<br/><br/>Quando un utente crea un'applicazione Web ASP.NET o un'applicazione Web ASP.NET Core, la risorsa viene archiviata nel file SUO. L'utente può aprire il progetto in Visual Studio 2015 o 2017 e le informazioni sulle risorse vengono usate per entrambi purché Visual Studio supporti i progetti e le soluzioni in uso in entrambe le versioni. Gli utenti devono eseguire l'autenticazione una sola volta in ogni prodotto. Ad esempio, se un progetto viene creato con Visual Studio 2015 e aperto in Visual Studio 2017, l'utente deve eseguire l'autenticazione in Visual Studio 2017. |
 | Windows Form o Webform in C#/Visual Basic | È possibile aprire il progetto in Visual Studio 2017 e Visual Studio 2015. |
-| Progetti di unit test del database (csproj, vbproj) | I progetti di unit test meno recenti vengono caricati in Visual Studio 2017, ma usano la versione GAC delle dipendenze. Per aggiornare il progetto di unit test in modo da usare le dipendenze più recenti, fare clic con il pulsante destro sul progetto in Esplora soluzioni e selezionare **Converti nel progetto di unit test di SQL Server... **. |
+| Progetti di unit test del database (csproj, vbproj) | I progetti di unit test meno recenti vengono caricati in Visual Studio 2017, ma usano la versione GAC delle dipendenze. Per aggiornare il progetto di unit test in modo da usare le dipendenze più recenti, fare clic con il pulsante destro sul progetto in Esplora soluzioni e selezionare **Converti nel progetto di unit test di SQL Server...**. |
 | F# | Visual Studio 2017 è in grado di aprire i progetti creati in Visual Studio 2013 e 2015. Per abilitare le funzionalità di Visual Studio 2017 in questi progetti, aprire le proprietà dei progetti e modificare la destinazione fsharp.core in F# 4.1. Si noti anche che l'opzione per il **supporto del linguaggio F#** nel programma di installazione di Visual Studio non è selezionata per impostazione predefinita con carichi di lavoro di .NET. È necessario includerla selezionandola per il carico di lavoro oppure dalla scheda **Singoli componenti** in **le Attività di sviluppo**. |
 | InstallShield<br/>MSI InstallShield | I progetti del programma di installazione creati in Visual Studio 2010 possono essere aperti in versioni successive con il supporto dell'[estensione per i progetti di programma di installazione di Visual Studio](https://marketplace.visualstudio.com/items?itemName=UnniRavindranathan-MSFT.MicrosoftVisualStudio2013InstallerProjects). Vedere anche [WiX Toolset Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). InstallShield Limited Edition non è più incluso in Visual Studio. Controllare la disponibilità per Visual Studio 2017 in [Flexera Software](https://info.flexerasoftware.com/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio). |
 | LightSwitch | LightSwitch non è più supportato in Visual Studio 2017. I progetti creati con Visual Studio 2012 e aperti in precedenza in Visual Studio 2013 o Visual Studio 2015 vengono aggiornati e in seguito possono essere aperti solo in Visual Studio 2013 o Visual Studio 2015. |
@@ -104,7 +104,7 @@ Vedere gli articoli seguenti per ulteriori informazioni:
 - [Linee guida per ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Linee guida per la selezione del framework](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Informazioni di riferimento per la migrazione e l'aggiornamento di un progetto per Visual Studio 2019](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019&preserve-view=true)
 - [Ciclo di vita e manutenzione del prodotto Visual Studio](/visualstudio/releases/2019/servicing/)
@@ -135,7 +135,7 @@ Se non viene visualizzato un progetto o un tipo di file elencato qui, vedere la 
 | Applicazione Web ASP.NET e applicazione Web ASP.NET Core con Application Insights abilitato | Per ogni utente di Visual Studio, le informazioni sulle risorse sono memorizzate nel Registro di sistema per ogni istanza utente. Queste informazioni vengono usate quando l'utente non ha un progetto aperto e vuole eseguire una ricerca nei dati di Azure Application Insights. Visual Studio 2015 usa un percorso del registro diverso da quello di Visual Studio 2017 e Visual Studio 2019 e non è in conflitto.<br/><br/>Quando un utente crea un'applicazione Web ASP.NET o un'applicazione Web ASP.NET Core, la risorsa viene archiviata nel file SUO. L'utente può aprire il progetto in Visual Studio 2015, Visual Studio 2017 o Visual Studio 2019 e le informazioni sulle risorse vengono usate per ognuna di queste versioni, purché ciascuna supporti i progetti e le soluzioni in uso. Gli utenti devono eseguire l'autenticazione una sola volta in ogni prodotto. Ad esempio, se un progetto viene creato con Visual Studio 2017 e aperto in Visual Studio 2019, l'utente deve eseguire l'autenticazione in Visual Studio 2019. |
 | Windows Form o Webform in C#/Visual Basic | È possibile aprire il progetto in Visual Studio 2019, Visual Studio 2017 e Visual Studio 2015. |
 | Test codificato dell'interfaccia utente | Il test codificato dell'interfaccia utente per il test funzionale automatizzato basato sull'interfaccia utente è deprecato in Visual Studio 2019. <br/><br/>Visual Studio 2019 sarà l'ultima versione per il test codificato dell'interfaccia utente. È consigliabile usare Selenium per eseguire il test delle app Web e Appium con WinAppDriver per eseguire il test delle app desktop e della piattaforma UWP (Universal Windows Platform). |
-| Progetti di unit test del database (csproj, vbproj) | I progetti di unit test meno recenti vengono caricati in Visual Studio 2019, ma usano la versione GAC delle dipendenze. Per aggiornare il progetto di unit test in modo da usare le dipendenze più recenti, fare clic con il pulsante destro sul progetto in Esplora soluzioni e selezionare **Converti nel progetto di unit test di SQL Server... **. |
+| Progetti di unit test del database (csproj, vbproj) | I progetti di unit test meno recenti vengono caricati in Visual Studio 2019, ma usano la versione GAC delle dipendenze. Per aggiornare il progetto di unit test in modo da usare le dipendenze più recenti, fare clic con il pulsante destro sul progetto in Esplora soluzioni e selezionare **Converti nel progetto di unit test di SQL Server...**. |
 | F# | Visual Studio 2019 può aprire progetti creati in Visual Studio 2013, Visual Studio 2015 e Visual Studio 2017. La differenza chiave per i nuovi progetti rispetto ai modelli di Visual Studio precedenti è che la versione di FSharp.Core ora è sempre un pacchetto NuGet. F# viene installato per impostazione predefinita con qualsiasi carico di lavoro .NET.|
 | InstallShield<br/>MSI InstallShield | I progetti del programma di installazione creati in Visual Studio 2010 possono essere aperti in versioni successive con il supporto dell'[estensione per i progetti di programma di installazione di Visual Studio](https://marketplace.visualstudio.com/items?itemName=UnniRavindranathan-MSFT.MicrosoftVisualStudio2013InstallerProjects). Vedere anche [WiX Toolset Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). InstallShield Limited Edition non è più incluso in Visual Studio. Controllare la disponibilità per Visual Studio 2019 in [Flexera Software](https://info.flexerasoftware.com/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio). |
 | LightSwitch | LightSwitch non è più supportato in Visual Studio 2019 o in Visual Studio 2017. I progetti creati con Visual Studio 2012 e aperti in precedenza in Visual Studio 2013 o Visual Studio 2015 vengono aggiornati e in seguito possono essere aperti solo in Visual Studio 2013 o Visual Studio 2015. |
@@ -198,7 +198,7 @@ Vedere gli articoli seguenti per ulteriori informazioni:
 - [Linee guida per ToolsVersion](../msbuild/msbuild-toolset-toolsversion.md)
 - [Linee guida per la selezione del framework](../ide/visual-studio-multi-targeting-overview.md)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Riferimento alla migrazione e all'aggiornamento di un progetto per Visual Studio 2017](?view=vs-2017&preserve-view=true)
 - [Ciclo di vita e manutenzione del prodotto Visual Studio](/visualstudio/releases/2019/servicing/)

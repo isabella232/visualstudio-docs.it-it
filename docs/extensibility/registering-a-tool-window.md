@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7b82353247776eb2dac8135a0a412b396d571a1
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d70924ea503bc4e230eb30b0551b59bc5f45ae6d
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584716"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414334"
 ---
 # <a name="register-a-tool-window"></a>Registrare una finestra degli strumenti
 È possibile registrare le finestre degli strumenti usando <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> e  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> .
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- Nel codice precedente <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registra le `PersistedWindowPane` `DynamicWindowPane` finestre degli strumenti e con Visual Studio. La finestra degli strumenti permanente è ancorata e a schede con **Esplora soluzioni**e alla finestra dinamica viene assegnata una posizione e una dimensione di inizio predefinite. La finestra dinamica viene resa temporanea, a indicare che non viene creata all'avvio. Viene scritto un `DontForceCreate` valore nella `ToolWindows` chiave nel registro di sistema. Per ulteriori informazioni, vedere [configurazione dello schermo della finestra degli strumenti](../vs-2015/extensibility/tool-window-display-configuration.md?view=vs-2015&preserve-view=true).
+ Nel codice precedente <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registra le `PersistedWindowPane` `DynamicWindowPane` finestre degli strumenti e con Visual Studio. La finestra degli strumenti permanente è ancorata e a schede con **Esplora soluzioni** e alla finestra dinamica viene assegnata una posizione e una dimensione di inizio predefinite. La finestra dinamica viene resa temporanea, a indicare che non viene creata all'avvio. Viene scritto un `DontForceCreate` valore nella `ToolWindows` chiave nel registro di sistema. Per ulteriori informazioni, vedere [configurazione dello schermo della finestra degli strumenti](/previous-versions/visualstudio/visual-studio-2015/extensibility/tool-window-display-configuration?preserve-view=true&view=vs-2015).

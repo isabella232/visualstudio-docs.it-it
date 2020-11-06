@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d8b5ff72ff72d53556d14ce2c4b6f309aa0836a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6d4b14558a435d6ad9da32726508d81185961410
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584594"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414464"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Documenti e visualizzazione dei documenti negli editor personalizzati
 Un editor personalizzato è costituito da due parti: un oggetto dati del documento e un oggetto visualizzazione del documento. Come suggerisce il nome, l'oggetto dati del documento rappresenta i dati di testo da visualizzare. Analogamente, l'oggetto visualizzazione documento (o "visualizzazione") rappresenta una o più finestre in cui visualizzare l'oggetto dati del documento.
@@ -34,9 +34,9 @@ Un editor personalizzato è costituito da due parti: un oggetto dati del documen
 
  L'IDE notifica le visualizzazioni sugli eventi (ad esempio, quando una soluzione contenente un documento viene chiusa) associando un identificatore di elemento (ItemID) per ogni voce nella tabella documenti in esecuzione. Per altre informazioni, vedere esecuzione della [tabella documenti](../extensibility/internals/running-document-table.md).
 
- Sono disponibili due opzioni per la creazione di una vista per un editor personalizzato. Uno è il modello di attivazione sul posto, in cui la vista è ospitata in una finestra utilizzando un controllo ActiveX o un oggetto dati del documento. Il secondo è il modello di incorporamento semplificato, in cui la vista è ospitata da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ed <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> è implementata per gestire i comandi della finestra. Per informazioni sul modello di attivazione sul posto, vedere [attivazione sul posto](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true). Per informazioni sul modello di incorporamento semplificato, vedere [incorporamento semplificato](../extensibility/simplified-embedding.md).
+ Sono disponibili due opzioni per la creazione di una vista per un editor personalizzato. Uno è il modello di attivazione sul posto, in cui la vista è ospitata in una finestra utilizzando un controllo ActiveX o un oggetto dati del documento. Il secondo è il modello di incorporamento semplificato, in cui la vista è ospitata da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ed <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> è implementata per gestire i comandi della finestra. Per informazioni sul modello di attivazione sul posto, vedere [attivazione sul posto](/previous-versions/visualstudio/visual-studio-2015/misc/in-place-activation?preserve-view=true&view=vs-2015). Per informazioni sul modello di incorporamento semplificato, vedere [incorporamento semplificato](../extensibility/simplified-embedding.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Supportare più visualizzazioni di documenti](../extensibility/supporting-multiple-document-views.md)
 - [Incorporamento semplificato](../extensibility/simplified-embedding.md)

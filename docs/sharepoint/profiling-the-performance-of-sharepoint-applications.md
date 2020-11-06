@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87312b5db9357462c822f876220cc239b79106aa
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 13f2e3f5df236157550aa79af40f0cbc575eb8bf
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585719"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414412"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profilare le prestazioni delle applicazioni SharePoint
 
@@ -39,9 +39,9 @@ Dopo aver creato ed eseguito un'analisi del profilo nell'applicazione, in un rep
 
 ## <a name="performance-session-process"></a>Processo della sessione di prestazioni
 
-Per profilare un'applicazione, iniziare utilizzando la creazione guidata sessione di prestazioni Strumenti di profilatura per creare una sessione di prestazioni. Sulla barra dei menu scegliere **analizza**, **Avvia Creazione guidata sessione di prestazioni**. Quando si completa la procedura guidata, immettere le informazioni necessarie per la sessione di prestazioni, ad esempio il metodo del profilo desiderato e l'applicazione che si desidera profilare. Per ulteriori informazioni, vedere [procedura: profilare un sito Web o un'applicazione Web utilizzando la creazione guidata sessione di prestazioni](../profiling/how-to-collect-performance-data-for-a-web-site.md). In alternativa, è possibile usare le opzioni della riga di comando per configurare ed eseguire una sessione di prestazioni. Per ulteriori informazioni, vedere [utilizzo del strumenti di profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md). Se si desidera configurare manualmente ogni aspetto di una sessione di prestazioni, vedere [procedura: creare manualmente sessioni di prestazioni con il strumenti di profilatura](../profiling/how-to-manually-create-performance-sessions.md). È anche possibile creare una sessione di prestazioni da un unit test, nella finestra **risultati test** aprire il menu di scelta rapida per il unit test e quindi scegliere **Crea sessione di prestazioni**.
+Per profilare un'applicazione, iniziare utilizzando la creazione guidata sessione di prestazioni Strumenti di profilatura per creare una sessione di prestazioni. Sulla barra dei menu scegliere **analizza** , **Avvia Creazione guidata sessione di prestazioni**. Quando si completa la procedura guidata, immettere le informazioni necessarie per la sessione di prestazioni, ad esempio il metodo del profilo desiderato e l'applicazione che si desidera profilare. Per ulteriori informazioni, vedere [procedura: profilare un sito Web o un'applicazione Web utilizzando la creazione guidata sessione di prestazioni](../profiling/how-to-collect-performance-data-for-a-web-site.md). In alternativa, è possibile usare le opzioni della riga di comando per configurare ed eseguire una sessione di prestazioni. Per ulteriori informazioni, vedere [utilizzo del strumenti di profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md). Se si desidera configurare manualmente ogni aspetto di una sessione di prestazioni, vedere [procedura: creare manualmente sessioni di prestazioni con il strumenti di profilatura](../profiling/how-to-manually-create-performance-sessions.md). È anche possibile creare una sessione di prestazioni da un unit test, nella finestra **risultati test** aprire il menu di scelta rapida per il unit test e quindi scegliere **Crea sessione di prestazioni**.
 
-Dopo aver impostato una sessione di prestazioni, la configurazione di sessione viene salvata, il server è configurato per fornire i dati di profilatura e l'applicazione viene eseguita. Quando si usa l'applicazione, i dati sulle prestazioni vengono scritti in un file di log. Le sessioni di prestazioni sono elencate in **Esplora prestazioni** nella cartella **destinazioni** . Al termine di una sessione di prestazioni, il report viene visualizzato nella cartella **report** in **Esplora prestazioni**. Per visualizzare il report, aprirlo in **Esplora prestazioni**. Per visualizzare o configurare le proprietà di una sessione di prestazioni, aprire il menu di scelta rapida in **Esplora prestazioni**, quindi scegliere **Proprietà**. Per ulteriori informazioni sulle proprietà specifiche di una sessione di prestazioni, vedere [Configuring performance Sessions for strumenti di profilatura](../profiling/configuring-performance-sessions.md). Per informazioni su come interpretare i risultati di una sessione di prestazioni, vedere [analisi dei dati strumenti di profilatura](../profiling/analyzing-performance-tools-data.md).
+Dopo aver impostato una sessione di prestazioni, la configurazione di sessione viene salvata, il server è configurato per fornire i dati di profilatura e l'applicazione viene eseguita. Quando si usa l'applicazione, i dati sulle prestazioni vengono scritti in un file di log. Le sessioni di prestazioni sono elencate in **Esplora prestazioni** nella cartella **destinazioni** . Al termine di una sessione di prestazioni, il report viene visualizzato nella cartella **report** in **Esplora prestazioni**. Per visualizzare il report, aprirlo in **Esplora prestazioni**. Per visualizzare o configurare le proprietà di una sessione di prestazioni, aprire il menu di scelta rapida in **Esplora prestazioni** , quindi scegliere **Proprietà**. Per ulteriori informazioni sulle proprietà specifiche di una sessione di prestazioni, vedere [Configuring performance Sessions for strumenti di profilatura](../profiling/configuring-performance-sessions.md). Per informazioni su come interpretare i risultati di una sessione di prestazioni, vedere [analisi dei dati strumenti di profilatura](../profiling/analyzing-performance-tools-data.md).
 
 ## <a name="stress-test"></a>Test di stress
 
@@ -55,7 +55,7 @@ I test delle prestazioni Web simulano il modo in cui un utente finale può inter
 
 ## <a name="test-user-interfaces"></a>Interfacce utente di test
 
-I test codificati dell'interfaccia utente indirizzano automaticamente l'applicazione SharePoint tramite la relativa interfaccia utente. Questi test coprono i controlli dell'interfaccia utente, ad esempio pulsanti e menu, per verificare che funzionino correttamente. Questo tipo di test è particolarmente utile se nell'interfaccia utente viene eseguita la convalida o un'altra logica, ad esempio in una pagina Web. È anche possibile usare i test codificati dell'interfaccia utente per automatizzare i test manuali. Si creano test codificati dell'interfaccia utente per le applicazioni SharePoint nello stesso modo in cui si creano test per altri tipi di applicazioni. Per altre informazioni, vedere [test di applicazioni SharePoint 2010 con test codificati dell'interfaccia utente](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015&preserve-view=true).
+I test codificati dell'interfaccia utente indirizzano automaticamente l'applicazione SharePoint tramite la relativa interfaccia utente. Questi test coprono i controlli dell'interfaccia utente, ad esempio pulsanti e menu, per verificare che funzionino correttamente. Questo tipo di test è particolarmente utile se nell'interfaccia utente viene eseguita la convalida o un'altra logica, ad esempio in una pagina Web. È anche possibile usare i test codificati dell'interfaccia utente per automatizzare i test manuali. Si creano test codificati dell'interfaccia utente per le applicazioni SharePoint nello stesso modo in cui si creano test per altri tipi di applicazioni. Per altre informazioni, vedere [test di applicazioni SharePoint 2010 con test codificati dell'interfaccia utente](/previous-versions/visualstudio/visual-studio-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests?preserve-view=true&view=vs-2015).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -64,9 +64,9 @@ I test codificati dell'interfaccia utente indirizzano automaticamente l'applicaz
 |[Procedura dettagliata: profilare un'applicazione SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Viene illustrato come eseguire un'analisi del profilo di campionamento in un'applicazione SharePoint.|
 |[Eseguire il test delle prestazioni dell'applicazione prima del rilascio](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts&preserve-view=true)|Viene descritto come creare test di carico che consentono di sottoporre a test le applicazioni SharePoint.|
 |[Eseguire unit test del codice](../test/unit-test-your-code.md)|Viene descritto come trovare errori di logica nel codice tramite unit test.|
-|[Test delle applicazioni di SharePoint 2010 con test codificati dell'interfaccia utente](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015&preserve-view=true)|Viene descritto come testare l'interfaccia utente delle applicazioni SharePoint.|
+|[Test delle applicazioni di SharePoint 2010 con test codificati dell'interfaccia utente](/previous-versions/visualstudio/visual-studio-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests?preserve-view=true&view=vs-2015)|Viene descritto come testare l'interfaccia utente delle applicazioni SharePoint.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Migliorare la qualità del codice](../test/improve-code-quality.md)

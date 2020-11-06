@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0340b89ed87872833f554fb00e24aca2f4759f3
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 12f585a3e7dd4a8182d7ed80cf65a20d0a82da83
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583593"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414022"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Procedura dettagliata: aggiungere funzionalità a un editor personalizzato
 Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzionalità.
@@ -34,11 +34,11 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
 
 3. Implementare una factory dell'editor impostando l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interfaccia.
 
-     Per altre informazioni, vedere [Editor Factory](../vs-2015/extensibility/editor-factories.md?view=vs-2015&preserve-view=true).
+     Per altre informazioni, vedere [Editor Factory](/previous-versions/visualstudio/visual-studio-2015/extensibility/editor-factories?preserve-view=true&view=vs-2015).
 
 4. Decidere se si vuole che l'editor usi l'attivazione sul posto o l'incorporamento semplificato per gestire la finestra oggetto visualizzazione documento.
 
-     Una finestra Editor di incorporamento semplificata ospita una visualizzazione del documento standard, mentre una finestra dell'editor di attivazione sul posto ospita un controllo ActiveX o un altro oggetto attivo come visualizzazione del documento. Per altre informazioni, vedere [incorporamento semplificato](../extensibility/simplified-embedding.md) e [attivazione sul posto](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true).
+     Una finestra Editor di incorporamento semplificata ospita una visualizzazione del documento standard, mentre una finestra dell'editor di attivazione sul posto ospita un controllo ActiveX o un altro oggetto attivo come visualizzazione del documento. Per altre informazioni, vedere [incorporamento semplificato](../extensibility/simplified-embedding.md) e [attivazione sul posto](/previous-versions/visualstudio/visual-studio-2015/misc/in-place-activation?preserve-view=true&view=vs-2015).
 
 5. Implementare l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia per gestire i comandi.
 
@@ -69,7 +69,7 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
 
     2. Chiamare `QueryService` sul <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> servizio per ottenere un puntatore a <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .
 
-9. Consentire agli utenti di trascinare e rilasciare elementi tra l'editor e la **casella degli strumenti**oppure tra editor esterni (come Microsoft Word) e la **casella degli strumenti**. Seguire questa procedura:
+9. Consentire agli utenti di trascinare e rilasciare elementi tra l'editor e la **casella degli strumenti** oppure tra editor esterni (come Microsoft Word) e la **casella degli strumenti**. Seguire questa procedura:
 
     1. Implementare nell' `IDropTarget` Editor per avvisare l'IDE che l'editor è un obiettivo di rilascio.
 
@@ -115,7 +115,7 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
 
 12. Implementare il supporto della Guida sensibile al contesto.
 
-     Questo passaggio consente di fornire la Guida sensibile al contesto e il supporto della finestra della Guida dinamica per gli elementi dell'editor. Per altre informazioni, vedere [procedura: fornire il contesto per gli editor](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015&preserve-view=true).
+     Questo passaggio consente di fornire la Guida sensibile al contesto e il supporto della finestra della Guida dinamica per gli elementi dell'editor. Per altre informazioni, vedere [procedura: fornire il contesto per gli editor](/previous-versions/visualstudio/visual-studio-2015/extensibility/how-to-provide-context-for-editors?preserve-view=true&view=vs-2015).
 
 13. Esporre un modello a oggetti di automazione dall'editor implementando l' `IDispatch` interfaccia.
 
@@ -138,7 +138,7 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
   > [!NOTE]
   > L' `IOleInPlaceComponent` interfaccia viene utilizzata per evitare l'Unione di menu OLE 2.
 
-   L' `IOleCommandTarget` implementazione gestisce i comandi, ad esempio **taglia**, **copia**e **Incolla**. Quando `IOleCommandTarget` si implementa, decidere se l'Editor richiede il proprio file *. vsct* per definire la propria struttura del menu dei comandi o se può implementare comandi standard definiti da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . In genere, gli editor usano ed estendono i menu dell'IDE e definiscono le barre degli strumenti. Tuttavia, spesso è necessario che un editor definisca i propri comandi specifici, oltre a usare il set di comandi standard dell'IDE. L'editor deve dichiarare i comandi standard usati e quindi definire i nuovi comandi, i menu di scelta rapida, i menu di primo livello e le barre degli strumenti in un file con *estensione vsct* . Se si crea un editor di attivazione sul posto, implementare <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> e definire i menu e le barre degli strumenti per l'editor in un file con *estensione vsct* anziché utilizzare l'Unione dei menu OLE 2.
+   L' `IOleCommandTarget` implementazione gestisce i comandi, ad esempio **taglia** , **copia** e **Incolla**. Quando `IOleCommandTarget` si implementa, decidere se l'Editor richiede il proprio file *. vsct* per definire la propria struttura del menu dei comandi o se può implementare comandi standard definiti da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . In genere, gli editor usano ed estendono i menu dell'IDE e definiscono le barre degli strumenti. Tuttavia, spesso è necessario che un editor definisca i propri comandi specifici, oltre a usare il set di comandi standard dell'IDE. L'editor deve dichiarare i comandi standard usati e quindi definire i nuovi comandi, i menu di scelta rapida, i menu di primo livello e le barre degli strumenti in un file con *estensione vsct* . Se si crea un editor di attivazione sul posto, implementare <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> e definire i menu e le barre degli strumenti per l'editor in un file con *estensione vsct* anziché utilizzare l'Unione dei menu OLE 2.
 
 - Per evitare che il comando di menu venga affollato nell'interfaccia utente, è necessario usare i comandi esistenti nell'IDE prima di inventare nuovi comandi. I comandi condivisi sono definiti in *SharedCmdDef. vsct* e *ShellCmdDef. vsct*. Questi file vengono installati per impostazione predefinita nella sottodirectory VisualStudioIntegration\Common\Inc dell' [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] installazione.
 
@@ -152,6 +152,6 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
 
   - `Window.Object`
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Contribuire al modello di automazione](../extensibility/internals/contributing-to-the-automation-model.md)

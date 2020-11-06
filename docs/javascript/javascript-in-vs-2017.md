@@ -14,12 +14,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e8e4d0e337289e2676dc8eb040ad199ae41a8dbc
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: a5d71b2b20d0723b1809ae78717b64ee43ae2b6b
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947778"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414542"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript in Visual Studio 2017
 
@@ -252,7 +252,7 @@ VSDoc non è più supportato in favore di [JSDoc](https://jsdoc.app/about-gettin
 
 ### <a name="intellisensejs-extensions"></a>`.intellisense.js` estensioni
 
-In precedenza, era possibile creare [estensioni IntelliSense](../vs-2015/ide/extending-javascript-intellisense.md) che consentivano di aggiungere risultati di completamento personalizzato per le librerie di terze parti.
+In precedenza, era possibile creare [estensioni IntelliSense](/previous-versions/visualstudio/visual-studio-2015/ide/extending-javascript-intellisense) che consentivano di aggiungere risultati di completamento personalizzato per le librerie di terze parti.
 Queste estensioni erano piuttosto difficili da scrivere e installarle e farvi riferimento era un'operazione complessa, pertanto in futuro il nuovo servizio di linguaggio non supporterà tali file.
 Come alternativa più semplice, è possibile scrivere un file di definizione TypeScript per fornire gli stessi vantaggi di IntelliSense delle vecchie estensioni `.intellisense.js`.
 Altre informazioni sulla dichiarazione (`.d.ts`) di creazione di file [qui](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html).

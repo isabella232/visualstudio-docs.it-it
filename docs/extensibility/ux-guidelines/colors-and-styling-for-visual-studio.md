@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c43281e52d5a56fd7a888e42ba0bae66f9ac0bd9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2f9123117144d12babd97264090f16899f392954
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584269"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414269"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colori e stili per Visual Studio
 
@@ -49,7 +49,7 @@ Scegliere il metodo più adatto agli elementi dell'interfaccia utente.
 | Sono presenti finestre di dialogo incorporate o autonome. | **Colori di sistema** | Nomi di sistema che consentono al sistema operativo di definire il colore e l'aspetto degli elementi dell'interfaccia utente, come i controlli della finestra di dialogo comuni. |
 | Si dispone di un'interfaccia utente personalizzata che si desidera sia coerente con l'ambiente di Visual Studio e che si disponga di elementi dell'interfaccia utente che corrispondono alla categoria e al significato semantico dei token condivisi. | **Colori condivisi comuni** | Nomi di token di colore predefiniti esistenti per elementi dell'interfaccia utente specifici |
 | Si dispone di una singola funzionalità o di un gruppo di funzionalità e non è disponibile alcun colore condiviso per gli elementi simili. | **Colori personalizzati** | Nomi di token di colore specifici di un'area che non devono essere condivisi con altre interfacce utente |
-| Si desidera consentire all'utente finale di personalizzare l'interfaccia utente o il contenuto, ad esempio per gli editor di testo o per le finestre di progettazione specializzate. | **Personalizzazione dell'utente finale**<br /><br />**(Strumenti &gt; Finestra di dialogo Opzioni)** | Impostazioni definite nella pagina "tipi di carattere e colori" della finestra di dialogo ** &gt; Opzioni strumenti** o una pagina specializzata specifica di una funzionalità dell'interfaccia utente. |
+| Si desidera consentire all'utente finale di personalizzare l'interfaccia utente o il contenuto, ad esempio per gli editor di testo o per le finestre di progettazione specializzate. | **Personalizzazione dell'utente finale**<br /><br />**(Strumenti &gt; Finestra di dialogo Opzioni)** | Impostazioni definite nella pagina "tipi di carattere e colori" della finestra di dialogo **&gt; Opzioni strumenti** o una pagina specializzata specifica di una funzionalità dell'interfaccia utente. |
 
 ### <a name="visual-studio-themes"></a>Temi di Visual Studio
 
@@ -81,7 +81,7 @@ Prima di usare i colori condivisi comuni, verificare di aver compreso come utili
 
 Vedere: [esposizione dei colori per gli utenti finali](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
-In alcuni casi, è possibile consentire all'utente finale di personalizzare l'interfaccia utente, ad esempio quando si crea un editor di codice o un'area di progettazione. I componenti dell'interfaccia utente personalizzabili sono disponibili nella sezione **tipi di carattere e colori** della finestra di dialogo ** &gt; Opzioni strumenti** , in cui gli utenti possono scegliere di modificare il colore di primo piano, il colore di sfondo o entrambi.
+In alcuni casi, è possibile consentire all'utente finale di personalizzare l'interfaccia utente, ad esempio quando si crea un editor di codice o un'area di progettazione. I componenti dell'interfaccia utente personalizzabili sono disponibili nella sezione **tipi di carattere e colori** della finestra di dialogo **&gt; Opzioni strumenti** , in cui gli utenti possono scegliere di modificare il colore di primo piano, il colore di sfondo o entrambi.
 
 ![&gt;Finestra di dialogo Opzioni strumenti](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")<br />&gt;Finestra di dialogo Opzioni strumenti
 
@@ -334,13 +334,13 @@ Molti elementi dell'interfaccia utente comuni dispongono già di colori Contrast
 
 ### <a name="overview"></a>Panoramica
 
-In alcuni casi è opportuno consentire all'utente finale di personalizzare l'interfaccia utente, ad esempio quando si crea un editor di codice o un'area di progettazione. Il modo più comune per eseguire questa operazione consiste nell'utilizzare la finestra di dialogo ** &gt; Opzioni strumenti** . A meno che non si disponga di un'interfaccia utente altamente specializzata che richiede controlli speciali, il modo più semplice per presentare la personalizzazione è tramite la pagina **tipi di carattere e colori** all'interno della sezione **ambiente** della finestra di dialogo. Per ogni elemento esposto per la personalizzazione, l'utente può scegliere di modificare il colore di primo piano, il colore di sfondo o entrambi.
+In alcuni casi è opportuno consentire all'utente finale di personalizzare l'interfaccia utente, ad esempio quando si crea un editor di codice o un'area di progettazione. Il modo più comune per eseguire questa operazione consiste nell'utilizzare la finestra di dialogo **&gt; Opzioni strumenti** . A meno che non si disponga di un'interfaccia utente altamente specializzata che richiede controlli speciali, il modo più semplice per presentare la personalizzazione è tramite la pagina **tipi di carattere e colori** all'interno della sezione **ambiente** della finestra di dialogo. Per ogni elemento esposto per la personalizzazione, l'utente può scegliere di modificare il colore di primo piano, il colore di sfondo o entrambi.
 
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>Creazione di un pacchetto VSPackage per i colori personalizzabili
 
 Un pacchetto VSPackage può controllare i tipi di carattere e i colori tramite le categorie personalizzate e gli elementi visualizzati nella pagina delle proprietà tipi di carattere e colori. Quando si usa questo meccanismo, i pacchetti VSPackage devono implementare l'interfaccia [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) e le interfacce associate.
 
-In linea di principio, questo meccanismo può essere usato per modificare tutti gli elementi visualizzati esistenti e le categorie che li contengono. Tuttavia, non deve essere usato per modificare la categoria dell'editor di testo o i relativi elementi visualizzati. Per altre informazioni sulla categoria Editor di testo, vedere [Cenni preliminari su tipi di carattere e colori](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015&preserve-view=true).
+In linea di principio, questo meccanismo può essere usato per modificare tutti gli elementi visualizzati esistenti e le categorie che li contengono. Tuttavia, non deve essere usato per modificare la categoria dell'editor di testo o i relativi elementi visualizzati. Per altre informazioni sulla categoria Editor di testo, vedere [Cenni preliminari su tipi di carattere e colori](/previous-versions/visualstudio/visual-studio-2015/extensibility/font-and-color-overview?preserve-view=true&view=vs-2015).
 
 Per implementare categorie personalizzate o elementi visualizzati, un pacchetto VSPackage deve:
 
@@ -358,7 +358,7 @@ Costruire un tipo speciale di voce del registro di sistema Category in `[HKLM\SO
 
 Popolare il registro di sistema con due valori:
 
-| Nome | Tipo | Data | Descrizione |
+| Nome | Type | Data | Descrizione |
 | --- | --- | --- | --- |
 | Category | REG_SZ | GUID | GUID creato per identificare la categoria |
 | Pacchetto | REG_SZ | GUID | GUID del servizio VSPackage che supporta la categoria |
@@ -371,7 +371,7 @@ Costruire un tipo speciale di voce del registro di sistema Category in `[HKLM\SO
 
 Popolare il registro di sistema con due valori:
 
-| Nome | Tipo | Data | Descrizione |
+| Nome | Type | Data | Descrizione |
 |--- | --- | --- | --- |
 | Category | REG_SZ | GUID | GUID creato per identificare la categoria |
 | Pacchetto | REG_SZ | GUID | GUID del servizio VSPackage che supporta la categoria |
@@ -423,7 +423,7 @@ A tale scopo, un pacchetto VSPackage deve:
 
   **OR**
 
-- eseguire **il polling dell'IDE per le modifiche**. Questa operazione può essere eseguita tramite l'interfaccia [errore IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) implementata dal sistema. Sebbene principalmente per il supporto della persistenza, il metodo [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) può ottenere informazioni relative al tipo di carattere e al colore per gli elementi visualizzati. Per ulteriori informazioni sulle impostazioni relative a tipi di carattere e colori, vedere l'articolo di MSDN [accesso alle impostazioni dei tipi di carattere e colori archiviati](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015&preserve-view=true).
+- eseguire **il polling dell'IDE per le modifiche**. Questa operazione può essere eseguita tramite l'interfaccia [errore IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) implementata dal sistema. Sebbene principalmente per il supporto della persistenza, il metodo [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) può ottenere informazioni relative al tipo di carattere e al colore per gli elementi visualizzati. Per ulteriori informazioni sulle impostazioni relative a tipi di carattere e colori, vedere l'articolo di MSDN [accesso alle impostazioni dei tipi di carattere e colori archiviati](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-stored-font-and-color-settings?preserve-view=true&view=vs-2015).
 
 > [!NOTE]
 > Per assicurarsi che i risultati del polling siano corretti, utilizzare l'interfaccia [IVsFontAndColorCacheManager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) per determinare se sono necessari uno scaricamento e un aggiornamento della cache prima di chiamare i metodi di recupero dell'interfaccia [errore IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) .

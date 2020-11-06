@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 72e6193d850d351dacc5361d5053fe8f06b2d4bf
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 2fd91266f4a829193296b05c9a28dc96a9a88d31
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860490"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414061"
 ---
 # <a name="overview-of-source-code-analysis"></a>Panoramica dell'analisi del codice sorgente
 
@@ -25,7 +25,7 @@ Gli analizzatori .NET Compiler Platform (Roslyn) esaminano il codice C# o Visual
 
 Gli analizzatori possono essere divisi nei gruppi seguenti:
 
-- Gli analizzatori di [stili di codice](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories) sono incorporati in Visual Studio. L'ID di diagnostica, o codice, per questi analizzatori è nel formato IDExxxx, ad esempio IDE0067. È possibile configurare le preferenze nella [pagina Opzioni editor di testo](../ide/code-styles-and-code-cleanup.md) o in un [file EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options). A partire da .NET 5,0, gli analizzatori di stili di codice sono inclusi in .NET SDK e possono essere applicati in modo rigoroso come avvisi o errori di compilazione. Per altre informazioni, vedere [qui](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
+- Gli analizzatori di [stili di codice](/dotnet/fundamentals/code-analysis/code-style-rule-options?preserve-view=true&view=vs-2019#convention-categories) sono incorporati in Visual Studio. L'ID di diagnostica, o codice, per questi analizzatori è nel formato IDExxxx, ad esempio IDE0067. È possibile configurare le preferenze nella [pagina Opzioni editor di testo](../ide/code-styles-and-code-cleanup.md) o in un [file EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options). A partire da .NET 5,0, gli analizzatori di stili di codice sono inclusi in .NET SDK e possono essere applicati in modo rigoroso come avvisi o errori di compilazione. Per altre informazioni, vedere [qui](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
 
 - Gli analizzatori di [qualità del codice](/dotnet/fundamentals/code-analysis/quality-rules/index) sono ora inclusi in .NET 5 SDK e abilitati per impostazione predefinita. L'ID di diagnostica, o codice, per questi analizzatori è nel formato CAXXXX, ad esempio CA1822. Per altre informazioni, vedere [Panoramica dell'analisi della qualità del codice .NET](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
 
@@ -41,7 +41,7 @@ Ogni analizzatore ha uno dei livelli di gravità seguenti:
 | Avviso | `warning` | Le violazioni vengono visualizzate come *avvisi* nell'elenco errori e nell'output di compilazione da riga di comando, ma non comportano la mancata riuscita delle compilazioni. | Il codice offensivo è sottolineato con una zigzag verde e contrassegnato da una piccola casella verde nella barra di scorrimento. |
 | Info | `suggestion` | Le violazioni vengono visualizzate come *messaggi* nell'elenco errori e non nell'output di compilazione da riga di comando. | Il codice che causa il danneggiamento è sottolineato con un zigzag grigio e contrassegnato da una piccola casella grigia nella barra di scorrimento. |
 | Nascosto | `silent` | Non visibile all'utente. | Non visibile all'utente. Tuttavia, la diagnostica viene segnalata al motore di diagnostica IDE. |
-| nessuno | `none` | Eliminati completamente. | Eliminati completamente. |
+| Nessuno | `none` | Eliminati completamente. | Eliminati completamente. |
 | Predefinito | `default` | Corrisponde alla gravità predefinita della regola. Per determinare il valore predefinito di una regola, cercare nell'Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
 
 Se le violazioni delle regole vengono trovate da un analizzatore, vengono segnalate nell'editor del codice (come *zigzag* sotto il codice che causa il errore) e nella finestra Elenco errori.
@@ -52,13 +52,13 @@ Le violazioni dell'analizzatore segnalate nell'elenco errori corrispondono all' 
 
 ![Controllo ortografia durante nell'editor di codice in Visual Studio](media/diagnostics-severity-colors.png)
 
-Molte regole dell'analizzatore o *diagnostica*hanno una o più *correzioni del codice* associate che è possibile applicare per correggere la violazione della regola. Le correzioni del codice vengono visualizzate nel menu con l'icona a forma di lampadina insieme ad altri tipi di [azioni rapide](../ide/quick-actions.md). Per informazioni su queste correzioni del codice, vedere [Azioni rapide comuni](../ide/quick-actions.md).
+Molte regole dell'analizzatore o *diagnostica* hanno una o più *correzioni del codice* associate che è possibile applicare per correggere la violazione della regola. Le correzioni del codice vengono visualizzate nel menu con l'icona a forma di lampadina insieme ad altri tipi di [azioni rapide](../ide/quick-actions.md). Per informazioni su queste correzioni del codice, vedere [Azioni rapide comuni](../ide/quick-actions.md).
 
 ![Violazione dell'analizzatore e correzione del codice tramite azione rapida](../code-quality/media/built-in-analyzer-code-fix.png)
 
 ## <a name="configure-analyzer-severity-levels"></a>Configurare i livelli di gravità dell'analizzatore
 
-È possibile configurare la gravità delle regole dell'analizzatore o della *diagnostica*in un [file EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) o dal [menu lampadina](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu).
+È possibile configurare la gravità delle regole dell'analizzatore o della *diagnostica* in un [file EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) o dal [menu lampadina](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu).
 
 Gli analizzatori possono anche essere configurati per esaminare il codice in fase di compilazione e vivere durante la digitazione. È possibile configurare l'ambito dell'analisi codice in tempo reale da eseguire solo per il documento corrente, tutti i documenti aperti o l'intera soluzione. Vedere [procedura: configurare l'ambito dell'analisi codice in tempo reale](./configure-live-code-analysis-scope-managed-code.md).
 
@@ -69,7 +69,7 @@ Gli analizzatori possono anche essere configurati per esaminare il codice in fas
 
 Gli analizzatori di terze parti possono essere installati per progetto tramite un pacchetto NuGet. Alcuni sono disponibili anche come estensione di Visual Studio, nel qual caso si applicano a qualsiasi soluzione aperta in Visual Studio. Esistono alcune differenze di comportamento fondamentali tra questi due metodi di [installazione degli analizzatori](../code-quality/install-roslyn-analyzers.md).
 
-### <a name="scope"></a>Scope
+### <a name="scope"></a>Ambito
 
 Se si installano gli analizzatori come estensione di Visual Studio, si applicano a livello di soluzione e a tutte le istanze di Visual Studio. Se si installano gli analizzatori come pacchetto NuGet (metodo preferito), si applicano solo al progetto in cui è stato installato il pacchetto NuGet. Negli ambienti di team gli analizzatori installati come pacchetti NuGet sono inclusi nell'ambito per *tutti gli sviluppatori* che lavorano sul progetto.
 

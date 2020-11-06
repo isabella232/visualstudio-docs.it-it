@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 10/28/2020
+ms.date: 11/05/2020
 ms.topic: how-to
 description: Informazioni su come attivare il vantaggio Supporto tecnico incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 30b47646c26e5bc9fbf9045e2acf59a670aa5e9d
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 9ae88bcc066473752a600284d815378bc8870f64
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918123"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93413965"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivare e usare il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 Il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio consente di risolvere problemi in garanzia in **ambienti non di produzione** per i prodotti che sono ancora nella fase di supporto "Mainstream" del [ciclo di vita del supporto](https://support.microsoft.com/lifecycle/search). Le sottoscrizioni cloud standard e annuali di Visual Studio Enterprise ricevono quattro eventi imprevisti, mentre le sottoscrizioni cloud standard e annuali di Visual Studio Professional ne ricevono due, per un massimo di 1 anno dall'attivazione del vantaggio. L'attivazione del vantaggio deve avvenire mentre la sottoscrizione è corrente.
@@ -30,7 +30,7 @@ Strumenti di sviluppo come l'IDE di Visual Studio e la Azure DevOps Server ricev
 
 I prodotti non per sviluppatori (ad esempio SQL, Windows, SharePoint) scaricati dalle sottoscrizioni di Visual Studio sono idonei solo per il supporto mainstream. Questi prodotti sono concessi in licenza solo per gli ambienti di sviluppo per la progettazione, lo sviluppo, il test e la dimostrazione delle applicazioni. Questi prodotti non sono concessi in licenza per gli ambienti di produzione.
 
-Descrizioni del livello di prodotto: espandere **piani di supporto non disponibili** . Se non è **possibile utilizzare il piano di supporto per il supporto per il prodotto specificato (codice: 8)** , non è possibile utilizzare il contratto di supporto per la versione del prodotto selezionata.
+Descrizioni del livello di prodotto: espandere **piani di supporto non disponibili**. Se non è **possibile utilizzare il piano di supporto per il supporto per il prodotto specificato (codice: 8)** , non è possibile utilizzare il contratto di supporto per la versione del prodotto selezionata.
 
 > [!IMPORTANT]
 > Gli interventi di supporto sono disponibili per il supporto per la correzione delle interruzioni.  Non possono essere usati per assistenza per problemi di codifica/sviluppo che coinvolgono i prodotti seguenti:
@@ -44,7 +44,7 @@ Descrizioni del livello di prodotto: espandere **piani di supporto non disponibi
 ## <a name="how-to-activate-the-benefit"></a>Come attivare il vantaggio
 1. Passare a <https://my.visualstudio.com/Benefits>, scorrere verso il basso fino alla sezione Supporto e nel riquadro Supporto tecnico fare clic su **Chat to activate** (Chatta per attivare).
     > [!div class="mx-imgBorder"]
-    > ![Riquadro del vantaggio Supporto tecnico](_img/vs-tech-support/vs-tech-support-tile.png)
+    > ![Riquadro del vantaggio Supporto tecnico](_img/vs-tech-support/vs-tech-support-tile.png "Fare clic su' chat to Activate ' nel riquadro supporto tecnico.")
 2. Viene avviata una sessione di chat con un rappresentante che crea un **ID contratto** e un **ID di accesso** e li invia all'utente tramite posta elettronica come promemoria.
 
 3. Per completare il processo, è necessario specificare al rappresentante gli elementi seguenti:
@@ -52,70 +52,56 @@ Descrizioni del livello di prodotto: espandere **piani di supporto non disponibi
    - Nome azienda
    - Nome e cognome dell'utente
    - L'indirizzo di posta elettronica che si usa per accedere alla sottoscrizione
-   - Numero di telefono dell'utente
    - ID sottoscrizione, reperibile nella scheda [sottoscrizioni](https://my.visualstudio.com/subscriptions) .
 
    > [!div class="mx-imgBorder"]
-   > ![Trovare l'ID sottoscrizione del vantaggio Supporto tecnico](_img/vs-tech-support/vs-tech-support-subID-cropped.png)
+   > ![Trovare l'ID sottoscrizione del vantaggio Supporto tecnico](_img/vs-tech-support/vs-tech-support-subID-cropped.png "Trovare l'ID sottoscrizione nella scheda sottoscrizioni.")
 
 4. Dopo aver completato il processo, si riceverà un messaggio di posta elettronica contenente l' **ID contratto** e l' **ID di accesso** da usare durante la creazione di un evento imprevisto per il supporto.  Verranno inoltre fornite istruzioni per l'invio di richieste di assistenza usando il nuovo ID di accesso e l'ID del contratto. 
 
-> [!NOTE]
-> Per attivare l'account di supporto in una lingua diversa dall'inglese, scegliere il paese/area geografica da [questo elenco](https://support.microsoft.com/help/14084/activate-support-contract).
+   > [!NOTE]
+   > Per attivare l'account di supporto in una lingua diversa dall'inglese, scegliere il paese/area geografica da [questo elenco](https://support.microsoft.com/help/14084/activate-support-contract).
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>Come segnalare un evento imprevisto tramite il vantaggio
-Una volta configurati l' **ID contratto** e **l'ID di accesso** , è possibile usarlo per inviare una richiesta di supporto tecnico [online](https://support.microsoft.com/oas/) (accesso richiesto) o tramite il [portale di Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) oppure chiamando il numero di supporto tecnico per il paese/area geografica. Se si segnala l'evento imprevisto online,si può scegliere di essere richiamati da un professionista del supporto tecnico Microsoft.
+Dopo aver configurato l' **ID contratto** e **l'ID di accesso** , è possibile usarlo per inviare una richiesta di supporto tecnico. 
 
-### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>L'utente ha già l'ID contratto e l'ID di accesso associati all'account usato per accedere alla segnalazione di un evento imprevisto del Supporto tecnico online?
-Quando si segnala un evento imprevisto online, per prima cosa verrà chiesto di eseguire l'accesso. Eseguire l'accesso con l'account associato all'ID contratto e all'ID di accesso. Il vantaggio del piano di supporto esistente associato all'account verrà visualizzato nel passaggio 3 del flusso di lavoro del supporto. È sufficiente selezionare il piano e continuare per inviare il caso. È possibile segnalare gli eventi imprevisti fino al limite indicato nel piano o fino alla data di scadenza del piano, a seconda della circostanza che si verifica per prima. Quando gli eventi imprevisti rimanenti sono pari a "0" o se il piano arriva a scadenza, esso non è più attivo.
+È possibile inviare eventi imprevisti online, tramite telefono o dalla portale di Azure. 
 
+### <a name="submit-an-incident-online"></a>Inviare un evento imprevisto online
+Per inviare un evento imprevisto tramite il portale di supporto per le aziende, attenersi alla procedura seguente:
+
+  > [!NOTE]
+  > È possibile che venga visualizzato un avviso in cui è necessario confermare l'indirizzo di posta elettronica.  Fare clic sul collegamento **Invia messaggio di posta elettronica** nell'avviso per inviare la conferma all'indirizzo di posta elettronica elencato nel profilo. 
+
+1. Accedi a <https://support.microsoft.com/en-us/supportforbusiness/productselection>
+
+0. Nella sezione **passaggio 1** selezionare le voci appropriate dagli elenchi a discesa per indicare il prodotto, la versione, il problema e così via. Completare i campi di testo per il riepilogo del problema e per descrivere il problema in modo più dettagliato. Quindi fare clic su **Next**.
    > [!div class="mx-imgBorder"]
-   > ![Vantaggio Supporto tecnico - Segnalazione dell'evento imprevisto - Passaggio 3](_img/vs-tech-support/vs-tech-support-step3.png)
-
-### <a name="using-your-contract-id-and-access-id-when-submitting-an-incident-initial-use"></a>Uso dell'ID contratto e dell'ID di accesso durante la segnalazione di un evento imprevisto (uso iniziale)
-
-#### <a name="submitting-an-incident-online"></a>Invio di un evento imprevisto online
-Quando si segnala un evento imprevisto online, per prima cosa verrà chiesto di eseguire l'accesso. Selezionare dall'elenco a discesa il prodotto per cui si richiede assistenza. Per inviare ad esempio una richiesta di assistenza per Visual Studio Enterprise 2019, selezionare il gruppo **Strumenti di sviluppo** , scegliere **Visual Studio 2019** come prodotto e quindi scegliere **Visual Studio Enterprise 2019** come versione.
-
-1. Dopo aver scelto il prodotto per il quale è necessario il supporto, fare clic su **Avanti** .
-
+   > ![Creare una nuova richiesta di supporto](_img/vs-tech-support/vs-tech-support-create-new.png "Completare i campi per creare una nuova richiesta di supporto.") 
+0. Nella sezione **passaggio 2** specificare il percorso e il fuso orario.
+0. Fare clic su **Aggiungi contratto**.
+0. Immettere l' **ID di accesso** e l' **ID contratto** ricevuti nel messaggio di posta elettronica di conferma quando è stato attivato il vantaggio del supporto tecnico. Scegliere **Aggiungi**.
    > [!div class="mx-imgBorder"]
-   > ![Vantaggio Supporto tecnico - Segnalazione dell'evento imprevisto - Passaggio 1 - Prodotto](_img/vs-tech-support/vs-tech-support-step1.png)
-
-2. Descrivere il problema e fare clic su **Avanti** .
-
+   > ![Aggiungere un ID contratto](_img/vs-tech-support/vs-tech-support-add-contract-id.png "Aggiungere l'ID di accesso e l'ID del contratto dal messaggio di posta elettronica di conferma.") 
+0. Il nuovo contratto di supporto verrà visualizzato nel **passaggio 2**.  Selezionarla.
+0. Indicare la gravità del problema.  "Importante" è il valore predefinito. 
+0. Scegliere quando si desidera ricevere supporto. Per impostazione predefinita, viene selezionato "solo durante l'orario di ufficio". L'opzione per "supporto 24/7" è disponibile solo se è stata selezionata l'opzione "critico" come gravità.
+0. Fare clic su **Avanti** per continuare. 
+0. Per il **passaggio 3** , fornire le informazioni di contatto che si desidera che l'agente di supporto usi per contattare l'utente. 
    > [!div class="mx-imgBorder"]
-   > ![Vantaggio Supporto tecnico - Segnalazione dell'evento imprevisto - Passaggio 2 - Problema](_img/vs-tech-support/vs-tech-support-step2.png)
-
-3. Nella pagina "Piano di supporto" scorrere verso il basso fino all'opzione **Add or purchase a support plan** (Aggiungi o acquista un piano di supporto), espanderla con la freccia a destra e fare clic su **Aggiungi contratto** .
-
-   > [!div class="mx-imgBorder"]
-   > ![Vantaggio Supporto tecnico - Segnalazione dell'evento imprevisto - Aggiungere il contratto](_img/vs-tech-support/vs-tech-support-add-contract.png)
-
-4. Immettere l' **ID di accesso** e l' **ID del contratto** .  Scegliere **Aggiungi** .
-
-   > [!div class="mx-imgBorder"]
-   > ![Vantaggio Supporto tecnico - Segnalazione dell'evento imprevisto - Aggiungere l'ID contratto](_img/vs-tech-support/vs-tech-support-add-contract-id.png)
-
-5. Dopo aver aggiunto il contratto, verrà visualizzato in **Select a support plan** (Selezionare un piano di supporto) nella parte superiore. Il piano contiene il termine "MSDN" nel titolo. Selezionarlo, scorrere verso il basso e fare clic su **Avanti** .
-
-   > [!div class="mx-imgBorder"]
-   > ![Vantaggio Supporto tecnico - Segnalazione dell'evento imprevisto - Scegliere il piano](_img/vs-tech-support/vs-tech-support-choose-plan.png)
-
-   > [!NOTE]
-   > Se non è possibile visualizzare il piano di supporto, tornare alla pagina precedente e fare di nuovo clic su **Avanti** .  Se il problema persiste, copiare negli Appunti il testo del problema di supporto, aggiornare la pagina e creare nuovamente la richiesta di supporto.
-
-6. Completare i passaggi rimanenti (gravità, informazioni di contatto, revisione delle informazioni).   Dopo aver segnalato l'evento imprevisto, un messaggio di conferma informa che l'evento imprevisto è stato inviato correttamente ed è possibile caricare i file nel caso. Un professionista del supporto verrà assegnato all'evento imprevisto e si metterà in contatto per risolvere il problema tramite il metodo di contatto selezionato.
-
-#### <a name="submit-an-incident-by-phone"></a>Inviare un evento imprevisto per telefono
+   > ![Verificare le informazioni di contatto](_img/vs-tech-support/vs-tech-support-contact-info.png "Verificare le informazioni di contatto e il metodo di contatto preferito.") 
+0. Nel **passaggio 4** è possibile condividere le informazioni della richiesta di supporto con altri utenti del team.  Immettere gli indirizzi di posta elettronica di quelli con cui si vuole condividere la richiesta. Fare clic su **Avanti** per passare al passaggio successivo.
+0. Il **passaggio 5** riepiloga tutte le informazioni fornite per l'evento imprevisto.  Se si è soddisfatti che tutti gli elementi sono corretti e si è pronti per continuare, fare clic su **Invia**. 
+ 
+### <a name="submit-an-incident-by-phone"></a>Inviare un evento imprevisto per telefono
 Per creare una richiesta di assistenza sul telefono, trovare il numero di telefono del [servizio clienti](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers) per il paese/area geografica. Quando si chiama, assicurarsi di avere a disposizione l'ID di accesso e l'ID contratto.
 
-#### <a name="submit-an-incident-within-the-azure-portal"></a>Inviare un evento imprevisto mediante il portale di Azure
+### <a name="submit-an-incident-in-the-azure-portal"></a>Inviare un evento imprevisto nel portale di Azure
 Per usare il vantaggio supporto tecnico della sottoscrizione di Visual Studio per problemi relativi ad Azure, è necessario collegare l'ID contratto e l'ID di accesso alla sottoscrizione di Azure.
 
 1. Visitare https://portal.azure.com e accedere
-2. Dal pulsante di spostamento a sinistra fare clic su **Guida e supporto**
-3. In "Supporto" fare clic su **Nuova richiesta di supporto**
+0. Dal pulsante di spostamento a sinistra fare clic su **Guida e supporto**
+0. In "Supporto" fare clic su **Nuova richiesta di supporto**
 
 ## <a name="eligibility"></a>Idoneità
 
@@ -127,7 +113,7 @@ Per usare il vantaggio supporto tecnico della sottoscrizione di Visual Studio pe
 | Visual Studio Professional con GitHub Enterprise | VL                                     | 2 eventi imprevisti                                                          |Sì         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 2 eventi imprevisti                                             |  Sì         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 2 eventi imprevisti                                               | Sì         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |ND|
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 ||
 
 <sup>1</sup> *include: Imagine Premium, BizSpark. Esclude: not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ETP, MCT software & Services Developer, Imagine standard, Most Valuable Professional (MVP), Regional Director (RD), MCT software & Services.*
