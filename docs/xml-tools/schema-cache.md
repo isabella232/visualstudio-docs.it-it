@@ -1,5 +1,7 @@
 ---
 title: Cache dello schema dell'editor XML
+description: Informazioni sulla cache degli schemi fornita dall'editor XML che include gli schemi XML standard utilizzati per IntelliSense e la convalida dei documenti XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40781a5249d9b69df5f41f863f3d36ac6a119645
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3eaab4379d744bae0032e51995e5bc1b8e76423
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592490"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351375"
 ---
 # <a name="schema-cache"></a>Cache dello schema
 
@@ -112,7 +114,7 @@ Nell'esempio seguente è stato creato un nuovo elemento `Schema` che usa la vari
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-2. Espandere **editor di testo**, espandere **XML**, quindi fare clic su **varie**.
+2. Espandere **editor di testo** , espandere **XML** , quindi fare clic su **varie**.
 
 3. Fare clic sul pulsante **Sfoglia** nel campo **schemi** .
 

@@ -1,5 +1,7 @@
 ---
 title: Personalizzare la pagina Web predefinita per l'applicazione ClickOnce
+description: Informazioni sulla pagina Web generata quando si pubblica un'applicazione ClickOnce sul Web, che contiene il nome dell'applicazione e altre informazioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ee4c1211840f17afe371961dea644372cd63efb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbda4558622c2e244071a218d3d5e42196460113
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382471"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351206"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Procedura: Personalizzare la pagina Web predefinita per un'applicazione ClickOnce
 Quando si pubblica un'applicazione ClickOnce sul Web, una pagina Web viene generata e pubblicata automaticamente insieme all'applicazione. La pagina predefinita contiene il nome dell'applicazione e i collegamenti per installare l'applicazione, installare i prerequisiti o accedere alla guida su MSDN.
@@ -30,7 +32,7 @@ Quando si pubblica un'applicazione ClickOnce sul Web, una pagina Web viene gener
 > [!NOTE]
 > I collegamenti effettivi visualizzati nella pagina dipendono dal computer in cui viene visualizzata la pagina e dai prerequisiti inclusi.
 
- Il nome predefinito per la pagina Web è *Publish.htm*; è possibile modificare il nome in **Progettazione progetti**. Per altre informazioni, vedere [procedura: specificare una pagina di pubblicazione per un'applicazione ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
+ Il nome predefinito per la pagina Web è *Publish.htm* ; è possibile modificare il nome in **Progettazione progetti**. Per altre informazioni, vedere [procedura: specificare una pagina di pubblicazione per un'applicazione ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
 
  La pagina Web *Publish.htm* viene pubblicata solo se viene rilevata una versione più recente.
 

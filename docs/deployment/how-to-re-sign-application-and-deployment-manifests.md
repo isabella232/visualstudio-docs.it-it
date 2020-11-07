@@ -1,5 +1,7 @@
 ---
 title: Ripetere la firma dei manifesti dell'applicazione e della distribuzione | Microsoft Docs
+description: Informazioni su come ripetere la firma dei manifesti dell'applicazione e della distribuzione con un certificato dopo le modifiche apportate alle proprietà di distribuzione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a221eea7314ad79020437208bdba4fcb6b6972e
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 0a17902451c931bd37a92158a3b5c3838ed91ed4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851684"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351128"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Procedura: Firmare nuovamente manifesti di applicazione e distribuzione
 Dopo aver apportato le modifiche alle proprietà di distribuzione nel manifesto dell'applicazione per Windows Forms applicazioni, applicazioni Windows Presentation Foundation (XBAP) o soluzioni Office, è necessario firmare di nuovo entrambi i manifesti dell'applicazione e della distribuzione con un certificato. Questo processo aiuta ad assicurare che nei computer degli utenti finali non siano installati file alterati.
@@ -31,7 +33,7 @@ Dopo aver apportato le modifiche alle proprietà di distribuzione nel manifesto 
  Un altro scenario in cui è possibile firmare di nuovo i manifesti è quando i clienti vogliono firmare i manifesti dell'applicazione e della distribuzione con il proprio certificato.
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Firmare nuovamente i manifesti dell'applicazione e di distribuzione
- Questa procedura presuppone che siano già state apportate modifiche al file manifesto dell'applicazione (*. manifest*). Per altre informazioni, vedere [procedura: modificare le proprietà di distribuzione](/previous-versions/cc442869(v=vs.110)).
+ Questa procedura presuppone che siano già state apportate modifiche al file manifesto dell'applicazione ( *. manifest* ). Per altre informazioni, vedere [procedura: modificare le proprietà di distribuzione](/previous-versions/cc442869(v=vs.110)).
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Per firmare nuovamente i manifesti dell'applicazione e della distribuzione con Mage.exe
 
@@ -67,10 +69,10 @@ Dopo aver apportato le modifiche alle proprietà di distribuzione nel manifesto 
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5. Facoltativamente, copiare il manifesto della distribuzione master (*Publish \\ \<appname> . Application*) nella directory di distribuzione della versione (*file publish\Application \\ \<appname> _ \<version> *).
+5. Facoltativamente, copiare il manifesto della distribuzione master ( *Publish \\ \<appname> . Application* ) nella directory di distribuzione della versione ( *file publish\Application \\ \<appname> _ \<version>* ).
 
 ## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>Aggiornare e firmare nuovamente i manifesti dell'applicazione e della distribuzione
- Questa procedura presuppone che siano già state apportate modifiche al file manifesto dell'applicazione (*. manifest*), ma che siano presenti altri file aggiornati. Quando i file vengono aggiornati, è necessario aggiornare anche l'hash che rappresenta il file.
+ Questa procedura presuppone che siano già state apportate modifiche al file manifesto dell'applicazione ( *. manifest* ), ma che siano presenti altri file aggiornati. Quando i file vengono aggiornati, è necessario aggiornare anche l'hash che rappresenta il file.
 
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Per aggiornare e firmare nuovamente i manifesti dell'applicazione e della distribuzione con Mage.exe
 
@@ -110,7 +112,7 @@ Dopo aver apportato le modifiche alle proprietà di distribuzione nel manifesto 
 
 6. Aggiungere di nuovo l'estensione di file *. deploy* ai file, ad eccezione dei file manifesto dell'applicazione e della distribuzione.
 
-7. Facoltativamente, copiare il manifesto della distribuzione master (*Publish \\ \<appname> . Application*) nella directory di distribuzione della versione (*file publish\Application \\ \<appname> _ \<version> *).
+7. Facoltativamente, copiare il manifesto della distribuzione master ( *Publish \\ \<appname> . Application* ) nella directory di distribuzione della versione ( *file publish\Application \\ \<appname> _ \<version>* ).
 
 ## <a name="see-also"></a>Vedere anche
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)

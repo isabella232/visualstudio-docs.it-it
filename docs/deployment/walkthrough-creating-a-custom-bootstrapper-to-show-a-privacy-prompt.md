@@ -1,5 +1,6 @@
 ---
 title: Creare un programma di avvio automatico personalizzato con un prompt di privacy
+description: Informazioni su come configurare le applicazioni ClickOnce per l'aggiornamento automatico quando diventano disponibili assembly con versioni di file e versioni di assembly più recenti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8fbb05fcfdb1a639855ca31e9574d3037559610
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 06effb313dc2b8a247eeeab99290a289717bc960
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809276"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350465"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Procedura dettagliata: Creare un programma di avvio automatico personalizzato con un prompt di privacy
 È possibile configurare le applicazioni ClickOnce per l'aggiornamento automatico quando diventano disponibili assembly con versioni di file e versioni di assembly più recenti. Per assicurarsi che i clienti accettino questo comportamento, è possibile visualizzare un messaggio di richiesta di privacy. Quindi, possono scegliere se concedere l'autorizzazione all'applicazione per l'aggiornamento automatico. Se l'applicazione non è consentita per l'aggiornamento automatico, non viene installata.
@@ -42,17 +43,17 @@ ms.locfileid: "90809276"
 
 #### <a name="to-create-a-consent-dialog-box"></a>Per creare una finestra di dialogo di consenso
 
-1. Scegliere **Nuovo** dal menu **File**e quindi fare clic su **Progetto**.
+1. Scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.
 
-2. Nella finestra di dialogo **nuovo progetto** fare clic su **Windows**e quindi su **WindowsFormsApplication**.
+2. Nella finestra di dialogo **nuovo progetto** fare clic su **Windows** e quindi su **WindowsFormsApplication**.
 
-3. Per il **nome**digitare **ConsentDialog**e quindi fare clic su **OK**.
+3. Per il **nome** digitare **ConsentDialog** e quindi fare clic su **OK**.
 
 4. Nella finestra di progettazione fare clic sul form.
 
 5. Nella finestra **Proprietà** modificare la proprietà **Text** in **Aggiorna finestra di dialogo di consenso**.
 
-6. Nella **casella degli strumenti**espandere **tutti i Windows Forms**e trascinare un controllo **etichetta** nel form.
+6. Nella **casella degli strumenti** espandere **tutti i Windows Forms** e trascinare un controllo **etichetta** nel form.
 
 7. Nella finestra di progettazione fare clic sul controllo etichetta.
 
@@ -60,17 +61,17 @@ ms.locfileid: "90809276"
 
     L'applicazione che si sta per installare controlla gli aggiornamenti più recenti sul Web. Se si fa clic su "Accetto", si autorizza l'applicazione a verificare e installare automaticamente gli aggiornamenti da Internet.
 
-9. Nella **casella degli strumenti**trascinare un controllo **CheckBox** al centro del form.
+9. Nella **casella degli strumenti** trascinare un controllo **CheckBox** al centro del form.
 
 10. Nella finestra **Proprietà** modificare la proprietà **Text** in **layout** **su Accetto**.
 
-11. Nella **casella degli strumenti**trascinare un controllo **Button** in basso a sinistra nel form.
+11. Nella **casella degli strumenti** trascinare un controllo **Button** in basso a sinistra nel form.
 
 12. Nella finestra **Proprietà** modificare la proprietà **Text** in **layout** per **continuare**.
 
 13. Nella finestra **Proprietà** modificare la proprietà **(Name)** in **progettazione** in **ProceedButton**.
 
-14. Nella **casella degli strumenti**trascinare un controllo **Button** nella parte inferiore destra del form.
+14. Nella **casella degli strumenti** trascinare un controllo **Button** nella parte inferiore destra del form.
 
 15. Nella finestra **Proprietà** modificare la proprietà **Text** in **layout** in **Annulla**.
 
@@ -111,15 +112,15 @@ ms.locfileid: "90809276"
 
      Solo per gli sviluppatori Visual Basic:
 
-    1. In **Esplora soluzioni**fare clic su **ConsentDialog**.
+    1. In **Esplora soluzioni** fare clic su **ConsentDialog**.
 
-    2. Scegliere **Aggiungi modulo**dal menu **progetto** , quindi fare clic su **Aggiungi**.
+    2. Scegliere **Aggiungi modulo** dal menu **progetto** , quindi fare clic su **Aggiungi**.
 
     3. Nel file di codice *Module1. vb* aggiungere il codice seguente.
 
         [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]
 
-    4. Scegliere **Proprietà ConsentDialog**dal menu **progetto** e quindi fare clic sulla scheda **applicazione** .
+    4. Scegliere **Proprietà ConsentDialog** dal menu **progetto** e quindi fare clic sulla scheda **applicazione** .
 
     5. Deselezionare **Abilita framework applicazione**.
 
@@ -134,7 +135,7 @@ ms.locfileid: "90809276"
 
        [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]
 
-26. Scegliere **BuildSolution**dal menu **Compila** .
+26. Scegliere **BuildSolution** dal menu **Compila** .
 
 ## <a name="create-the-custom-bootstrapper-package"></a>Creare il pacchetto del programma di avvio automatico personalizzato
  Per visualizzare la richiesta di privacy per gli utenti finali, è possibile creare un pacchetto del programma di avvio automatico personalizzato per l'applicazione della finestra di dialogo di consenso dell'aggiornamento e includerlo come prerequisito in tutte le applicazioni ClickOnce.
@@ -233,9 +234,9 @@ ms.locfileid: "90809276"
 
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Per impostare l'applicazione di consenso dell'aggiornamento come prerequisito
 
-1. In **Esplora soluzioni**fare clic sul nome dell'applicazione che si desidera distribuire.
+1. In **Esplora soluzioni** fare clic sul nome dell'applicazione che si desidera distribuire.
 
-2. Scegliere **Proprietà***Nome progetto dal menu * **Progetto**.
+2. Scegliere **Proprietà***Nome progetto dal menu* **Progetto**.
 
 3. Fare clic sulla pagina **pubblica** , quindi fare clic su **prerequisiti**.
 
@@ -251,9 +252,9 @@ ms.locfileid: "90809276"
 
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Per creare e testare il programma di installazione facendo clic su Accetto
 
-1. In **Esplora soluzioni**fare clic sul nome dell'applicazione che si desidera distribuire.
+1. In **Esplora soluzioni** fare clic sul nome dell'applicazione che si desidera distribuire.
 
-2. Scegliere **Proprietà***Nome progetto dal menu * **Progetto**.
+2. Scegliere **Proprietà***Nome progetto dal menu* **Progetto**.
 
 3. Fare clic sulla pagina **pubblica** , quindi fare clic su **pubblica ora**.
 
@@ -277,9 +278,9 @@ ms.locfileid: "90809276"
 
 #### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>Per creare e testare il programma di installazione facendo clic su Accetto
 
-1. In **Esplora soluzioni**fare clic sul nome dell'applicazione che si desidera distribuire.
+1. In **Esplora soluzioni** fare clic sul nome dell'applicazione che si desidera distribuire.
 
-2. Scegliere **Proprietà***Nome progetto dal menu * **Progetto**.
+2. Scegliere **Proprietà***Nome progetto dal menu* **Progetto**.
 
 3. Fare clic sulla pagina **pubblica** , quindi fare clic su **pubblica ora**.
 
@@ -293,7 +294,7 @@ ms.locfileid: "90809276"
 
      Viene visualizzata l'applicazione finestra di dialogo consenso aggiornamento con il testo seguente: l'applicazione da installare controlla gli aggiornamenti più recenti sul Web. Facendo clic su Accetto, si autorizza l'applicazione a verificare la disponibilità di aggiornamenti automaticamente in Internet.
 
-7. Fare clic su **Accetto**e quindi su **continua**.
+7. Fare clic su **Accetto** e quindi su **continua**.
 
      Viene avviata l'installazione dell'applicazione.
 

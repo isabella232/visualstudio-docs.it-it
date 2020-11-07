@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;Elemento InstallChecks (programma di avvio automatico) | Microsoft Docs'
+description: L'elemento InstallChecks supporta l'avvio di una serie di test nel computer locale per assicurarsi che siano stati installati tutti i prerequisiti per un'applicazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7ba4da072a586bdc09993b77200a769be3940ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 660fc893eb22d0c40805a8bf7b2efc86fd83c3b1
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536305"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350868"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;&gt;Elemento InstallChecks (programma di avvio automatico)
 L' `InstallChecks` elemento supporta l'avvio di una serie di test sul computer locale per assicurarsi che siano stati installati tutti i prerequisiti appropriati per un'applicazione.
@@ -140,7 +142,7 @@ L' `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 |`FileName`|facoltativo. Nome di un file. Se specificato, il valore ottenuto dalla chiave del registro di sistema viene considerato un percorso di directory e tale nome viene aggiunto al nome. Se non specificato, il valore restituito dal registro di sistema si presuppone che corrisponda al percorso completo di un file.|
 |`SearchDepth`|facoltativo. Profondità in corrispondenza della quale ricercare le sottocartelle per il file specificato. La ricerca è di primo livello. Il valore predefinito è 0, che limita la ricerca alla cartella di livello superiore specificata dal valore della chiave del registro di sistema.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Mentre gli elementi sottostanti `InstallChecks` definiscono i test da eseguire, non li eseguono. Per eseguire i test, è necessario creare `Command` elementi sotto l' `Commands` elemento.
 
 ## <a name="example"></a>Esempio

@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;elemento publisherIdentity (distribuzione ClickOnce) | Microsoft Docs'
+description: L'elemento publisherIdentity contiene informazioni sul server di pubblicazione che ha firmato un manifesto di distribuzione. L'elemento è obbligatorio per i manifesti firmati.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1eb4b67bfdca13c63480f3dde82004d87cd4a12a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62927539"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350686"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;&gt;elemento publisherIdentity (distribuzione ClickOnce)
 Contiene informazioni sull'editore che ha firmato questo manifesto della distribuzione.

@@ -1,5 +1,6 @@
 ---
 title: Firmare i file di installazione con SignTool.exe (ClickOnce)
+description: Informazioni su come usare SignTool.exe per firmare un programma di installazione per le applicazioni ClickOnce, che consente di garantire che i file manomessi non siano installati.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,15 +20,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 138e84637acb123c445839dc4810547ed8bc2ed3
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d8907018c7f5b131747e802902d88a02ca95c2cc
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809505"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350972"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procedura: Firmare i file di installazione con SignTool.exe (ClickOnce)
-È possibile usare *SignTool.exe* per firmare un programma di installazione (*setup.exe*). Questo processo aiuta ad assicurare che nei computer degli utenti finali non siano installati file alterati.
+È possibile usare *SignTool.exe* per firmare un programma di installazione ( *setup.exe* ). Questo processo aiuta ad assicurare che nei computer degli utenti finali non siano installati file alterati.
 
  Per impostazione predefinita, ClickOnce include manifesti firmati e un programma di installazione firmato. Se tuttavia si vogliono modificare i parametri del programma di installazione in un secondo momento, sarà necessario firmare il programma in un secondo momento. Se si cambiano i parametri dopo la firma del programma di installazione, la firma sarà danneggiata.
 
@@ -39,7 +40,7 @@ ms.locfileid: "90809505"
 
 2. Selezionare il progetto in **Esplora soluzioni**.
 
-3. Scegliere **Proprietà***Nome progetto dal menu * **Progetto**.
+3. Scegliere **Proprietà***Nome progetto dal menu* **Progetto**.
 
 4. Nella pagina **Firma** deselezionare l'opzione **Firma i manifesti ClickOnce**.
 

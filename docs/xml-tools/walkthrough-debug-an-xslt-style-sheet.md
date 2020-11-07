@@ -1,5 +1,7 @@
 ---
 title: Debug di fogli di stile XSLT
+description: Per informazioni su come usare il debugger XSLT in Visual Studio per eseguire il debug di un foglio di stile XSLT, seguire i passaggi descritti in questa procedura dettagliata.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: how-to
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
@@ -8,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c75d3cae07101363f6c986a1defb375f602f466
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c69f93aca88cb8e83417a370de7113640d3ae38c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815123"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351336"
 ---
-# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procedura dettagliata: eseguire il debug di un foglio di stile XSLT
+# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procedura dettagliata: Eseguire il debug di un foglio di stile XSLT
 
 Nei passaggi della procedura dettagliata viene illustrato come usare il debugger XSLT. I passaggi comprendono la visualizzazione delle variabili, l'impostazione dei punti di interruzione e l'esecuzione del codice un'istruzione alla volta. Il debugger consente di eseguire il codice una riga alla volta.
 
@@ -26,13 +28,13 @@ Per preparare questa procedura dettagliata, copiare prima i due [file di esempio
 
 ## <a name="start-debugging"></a>Consente di iniziare il debug
 
-1. Scegliere **Apri**file dal menu **file**  >  **File**.
+1. Scegliere **Apri** file dal menu **file**  >  **File**.
 
 2. Individuare il file *below-average. xsl* e scegliere **Apri**.
 
    Il foglio di stile verrà aperto nell'editor XML.
 
-3. Fare clic sul pulsante Sfoglia (**...**) nel campo di **input** della finestra proprietà del documento. Se la finestra **Proprietà** non è visibile, fare clic con il pulsante destro del mouse in un punto qualsiasi del file aperto nell'editor, quindi scegliere **Proprietà**.
+3. Fare clic sul pulsante Sfoglia ( **...** ) nel campo di **input** della finestra proprietà del documento. Se la finestra **Proprietà** non è visibile, fare clic con il pulsante destro del mouse in un punto qualsiasi del file aperto nell'editor, quindi scegliere **Proprietà**.
 
 4. Individuare il file di *books.xml* , quindi scegliere **Apri**.
 
@@ -44,17 +46,17 @@ Per preparare questa procedura dettagliata, copiare prima i due [file di esempio
 
    - Fare clic in un punto qualsiasi della riga 12, quindi premere **F9**.
 
-   - Fare clic con il pulsante destro del mouse sul `xsl:if` tag **Breakpoint**di inizio e scegliere punto di  >  **interruzione Inserisci**punto di interruzione.
+   - Fare clic con il pulsante destro del mouse sul `xsl:if` tag **Breakpoint** di inizio e scegliere punto di  >  **interruzione Inserisci** punto di interruzione.
 
       ![Inserisci punto di interruzione nel file XSL in Visual Studio](media/insert-breakpoint.PNG)
 
-6. Sulla barra dei menu scegliere **XML**  >  **Avvia debug XSLT** (oppure premere **ALT** + **F5**).
+6. Sulla barra dei menu scegliere **XML**  >  **Avvia debug XSLT** (oppure premere **ALT** + **F5** ).
 
    Viene avviato il processo di debug.
 
    Nell'editor il debugger è posizionato sull' `xsl:if` elemento del foglio di stile. Un altro file denominato *below-average.xml* verrà aperto nell'editor; si tratta del file di output che verrà popolato quando viene elaborato ogni nodo del file di input *books.xml* .
 
-   Le finestre **auto**, **variabili locali**e **espressioni di controllo 1** vengono visualizzate nella parte inferiore della finestra di Visual Studio. Nella finestra variabili **locali** vengono visualizzate tutte le variabili locali e i relativi valori correnti. incluse le variabili definite nel foglio di stile e quelle usate dal debugger per tenere traccia dei nodi presenti nel contesto.
+   Le finestre **auto** , **variabili locali** e **espressioni di controllo 1** vengono visualizzate nella parte inferiore della finestra di Visual Studio. Nella finestra variabili **locali** vengono visualizzate tutte le variabili locali e i relativi valori correnti. incluse le variabili definite nel foglio di stile e quelle usate dal debugger per tenere traccia dei nodi presenti nel contesto.
 
 ## <a name="watch-window"></a>Finestra Espressioni di controllo
 

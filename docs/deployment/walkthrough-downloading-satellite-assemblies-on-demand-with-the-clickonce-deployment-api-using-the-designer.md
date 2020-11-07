@@ -1,5 +1,7 @@
 ---
 title: Scaricare l'assembly satellite su richiesta tramite la finestra di progettazione ClickOnce
+description: Informazioni su come contrassegnare gli assembly satellite come facoltativi usando progettazione e scaricare solo l'assembly richiesto da un computer client per le impostazioni cultura correnti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f510ef4ad81188997e1d572e7aa3b52b65883269
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b6b57faf01878dc5aff708f0aca47707bf6e48c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66263409"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350335"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procedura dettagliata: scaricare assembly satellite su richiesta con l'API della distribuzione ClickOnce tramite la finestra di progettazione
 Le applicazioni Windows Form possono essere configurate per più impostazioni cultura con l'uso di assembly satellite. Un *assembly satellite* è un assembly in cui sono contenute risorse dell'applicazione per impostazioni cultura diverse da quelle predefinite dell'applicazione.
@@ -43,11 +45,11 @@ Le applicazioni Windows Form possono essere configurate per più impostazioni cu
 
 2. Fare clic con il pulsante destro del mouse sul nome del progetto in Esplora soluzioni, quindi scegliere **Proprietà**.
 
-3. Fare clic sulla scheda **Pubblica**, quindi su **File applicazione**.
+3. Fare clic sulla scheda **Pubblica** , quindi su **File applicazione**.
 
 4. Selezionare la casella di controllo **Mostra tutti i file** per visualizzare gli assembly satellite. Per impostazione predefinita, tutti gli assembly satellite verranno inclusi nella distribuzione e saranno visibili in questa finestra di dialogo.
 
-     Un assembly satellite avrà un nome nel formato * \<isoCode>\ApplicationName.resources.dll*, dove \<isoCode> è un identificatore di lingua in formato RFC 1766.
+     Un assembly satellite avrà un nome nel formato *\<isoCode>\ApplicationName.resources.dll* , dove \<isoCode> è un identificatore di lingua in formato RFC 1766.
 
 5. Scegliere **Nuovo** nell'elenco **Gruppo di download** per ogni identificatore del linguaggio. Quando viene richiesto di specificare un nome per il gruppo di download, immettere l'identificatore del linguaggio. Per un assembly satellite giapponese, ad esempio, è necessario specificare il nome del gruppo di download `ja-JP` .
 
@@ -67,7 +69,7 @@ Le applicazioni Windows Form possono essere configurate per più impostazioni cu
 
 2. Nella parte inferiore della pagina della scheda, scegliere **Visualizza eventi di applicazioni**.
 
-3. Nella parte iniziale del file *ApplicationEvents.VB*, aggiungere i seguenti riferimenti importati.
+3. Nella parte iniziale del file *ApplicationEvents.VB* , aggiungere i seguenti riferimenti importati.
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]
 

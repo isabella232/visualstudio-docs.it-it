@@ -1,5 +1,7 @@
 ---
 title: Area di lavoro di Progettazione XML Schema
+description: Informazioni sulle visualizzazioni di inizio, grafico e modello di contenuto nell'area di lavoro di progettazione XML Schema (Progettazione XSD) in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 588fa495-fe7f-4b16-8a9f-6b6b8d2d502a
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cf86dd39e010424b25916deec8cdebd23ee1c1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06e7c1774666d2079bea56586f28c6c4e3f5aeec
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592373"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351310"
 ---
 # <a name="xml-schema-designer-workspace-views"></a>Viste dell'area di lavoro di progettazione XML Schema
 

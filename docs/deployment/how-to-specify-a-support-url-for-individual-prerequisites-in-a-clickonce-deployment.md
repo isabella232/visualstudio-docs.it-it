@@ -1,5 +1,7 @@
 ---
 title: URL di supporto per i prerequisiti nella distribuzione ClickOnce
+description: Informazioni sul modo in cui una distribuzione ClickOnce verifica i prerequisiti per l'esecuzione dell'applicazione ClickOnce e il modo in cui la distribuzione gestisce i prerequisiti mancanti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381730"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350946"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Procedura: Specificare un URL di supporto per i singoli prerequisiti in una distribuzione ClickOnce
 Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione può verificare la presenza di alcuni prerequisiti che devono essere disponibili nel computer client per l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] esecuzione dell'applicazione. Queste dipendenze includono la versione minima richiesta del .NET Framework, la versione del sistema operativo e tutti gli assembly che devono essere preinstallati nella Global Assembly Cache (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Tuttavia, non è in grado di installare alcuno di questi prerequisiti. Se un prerequisito non viene trovato, viene semplicemente interrotto l'installazione e viene visualizzata una finestra di dialogo che spiega il motivo per cui l'installazione non è riuscita.
 
  Sono disponibili due metodi per l'installazione dei prerequisiti. È possibile installarli usando un'applicazione del programma di avvio automatico. In alternativa, è possibile specificare un URL di supporto per i singoli prerequisiti, che viene visualizzato agli utenti nella finestra di dialogo se il prerequisito non viene trovato. La pagina a cui fa riferimento tale URL può contenere collegamenti alle istruzioni per l'installazione del prerequisito necessario. Se un'applicazione non specifica un URL di supporto per un singolo prerequisito, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Visualizza l'URL di supporto specificato nel manifesto di distribuzione per l'applicazione nel suo complesso, se definito.
 
- Sebbene [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sia possibile usare, *Mage.exe*e *MageUI.exe* per generare le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzioni, nessuno di questi strumenti supporta direttamente la specifica di un URL di supporto per i singoli prerequisiti. Questo documento descrive come modificare il manifesto dell'applicazione e la distribuzione del manifesto di distribuzione in modo da includere questi URL di supporto.
+ Sebbene [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sia possibile usare, *Mage.exe* e *MageUI.exe* per generare le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzioni, nessuno di questi strumenti supporta direttamente la specifica di un URL di supporto per i singoli prerequisiti. Questo documento descrive come modificare il manifesto dell'applicazione e la distribuzione del manifesto di distribuzione in modo da includere questi URL di supporto.
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Specificare un URL di supporto per un singolo prerequisito
 

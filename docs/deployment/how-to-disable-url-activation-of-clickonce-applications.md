@@ -1,5 +1,6 @@
 ---
 title: Disabilitare l'attivazione dell'URL delle app ClickOnce
+description: Informazioni su come disabilitare l'avvio automatico durante l'installazione per l'applicazione ClickOnce, nel caso in cui si desideri che gli utenti avviino l'applicazione dal menu Start.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f13921044e188d659ba8cd5b776a006f7af5b1a6
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 46e46278f5465de029aa9536744f51843397d743
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809759"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351232"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Procedura: Disabilitare l'attivazione dell'URL delle applicazioni ClickOnce
 

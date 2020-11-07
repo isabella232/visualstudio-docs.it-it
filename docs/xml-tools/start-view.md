@@ -1,5 +1,7 @@
 ---
 title: Visualizzazione iniziale di Progettazione XML Schema
+description: Informazioni sui comandi disponibili nella visualizzazione iniziale della finestra di progettazione XML Schema (XSD).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f05c3023a246ba193c98cb1b01984a54fdaa0ebb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd2c59d1af2802876305fa218bd169fae805f4f3
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592529"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351362"
 ---
 # <a name="start-view"></a>Visualizzazione iniziale
 

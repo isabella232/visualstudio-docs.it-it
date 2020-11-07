@@ -1,5 +1,7 @@
 ---
 title: '&lt;Elemento del pacchetto &gt; (programma di avvio automatico) | Microsoft Docs'
+description: L'elemento del pacchetto è l'elemento XML di primo livello all'interno di un file di pacchetto. L'elemento del pacchetto è obbligatorio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab3478f701cade458ffdb97caf4541a88f52230e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7645731cf5b955601541a122f2fdb3fa3d794cc3
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66745755"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350738"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Elemento del pacchetto &gt; (programma di avvio automatico)
 L' `Package` elemento è l'elemento XML di primo livello all'interno di un file di pacchetto.
@@ -147,7 +149,7 @@ L' `Package` elemento è l'elemento XML di primo livello all'interno di un file 
 |--------------------| - |
 | `Culture` | Obbligatorio. Definisce le impostazioni cultura per questo pacchetto, che determina il linguaggio da utilizzare. Questo attributo è una chiave dell' `Strings` elemento, che elenca le stringhe specifiche delle impostazioni cultura per i nomi dei prodotti e i messaggi di errore durante l'installazione. |
 | `Name` | Obbligatorio. Nome del pacchetto visualizzato allo sviluppatore all'interno di uno strumento, ad esempio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Questo attributo è una chiave nell' `Strings` elemento, che deve contenere un `String` elemento con le `Name` proprietà e `Culture` impostate in modo da corrispondere alle `Name` `Culture` proprietà e di `Package` . |
-| `LicenseAgreement` | facoltativo. Specifica il nome del file nel pacchetto di distribuzione che contiene il contratto di licenza con l'utente finale (EULA).  Questo file può essere in formato testo normale (con*estensione txt*) o RTF. (*RTF*) |
+| `LicenseAgreement` | facoltativo. Specifica il nome del file nel pacchetto di distribuzione che contiene il contratto di licenza End-User (EULA).  Questo file può essere in formato testo normale (con *estensione txt* ) o RTF. ( *RTF* ) |
 
 ## <a name="example"></a>Esempio
  Nell'esempio di codice riportato di seguito viene illustrato un file di pacchetto completo per ridistribuire il .NET Framework 2,0.

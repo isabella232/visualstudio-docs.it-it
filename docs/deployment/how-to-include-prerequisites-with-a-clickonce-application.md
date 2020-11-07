@@ -1,5 +1,6 @@
 ---
 title: Includi prerequisiti (app ClickOnce)
+description: Informazioni su come ottenere i pacchetti del programma di installazione per i prerequisiti da distribuire per l'applicazione ClickOnce per il computer di sviluppo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29ba5cbef127be2c67c078a62574ade22295433c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e9199bb720cb94bc949a04bd59d5d3b6527108ed
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809133"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351193"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Procedura: Includere i prerequisiti con un'applicazione ClickOnce
-Prima di poter distribuire i prerequisiti relativi al software con un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], è necessario scaricare i pacchetti di installazione per quei prerequisiti nel computer di sviluppo. Quando si pubblica un'applicazione e si sceglie **Scarica prerequisiti dallo stesso percorso dell'applicazione**, si verificherà un errore se i pacchetti di installazione non si trovano nella cartella **Pacchetti**.
+Prima di poter distribuire i prerequisiti relativi al software con un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], è necessario scaricare i pacchetti di installazione per quei prerequisiti nel computer di sviluppo. Quando si pubblica un'applicazione e si sceglie **Scarica prerequisiti dallo stesso percorso dell'applicazione** , si verificherà un errore se i pacchetti di installazione non si trovano nella cartella **Pacchetti**.
 
 > [!NOTE]
 > Per aggiungere un pacchetto di installazione per la .NET Framework, vedere [Guida alla distribuzione di .NET Framework per sviluppatori](/dotnet/framework/deployment/deployment-guide-for-developers).
@@ -30,7 +31,7 @@ Prima di poter distribuire i prerequisiti relativi al software con un'applicazio
 
 2. Aprire la cartella per il prerequisito che si desidera aggiungere e quindi aprire la cartella del linguaggio per la versione installata di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (ad esempio **en** per l'inglese).
 
-3. Nel Blocco Note aprire il file*Package.xml*.
+3. Nel Blocco Note aprire il file *Package.xml*.
 
 4. Individuare l'elemento **Name** che contiene `http://go.microsoft.com/fwlink` , quindi copiare l'URL. Includere la parte **LinkID**.
 
@@ -38,7 +39,7 @@ Prima di poter distribuire i prerequisiti relativi al software con un'applicazio
    > Se non contiene alcun elemento **Name** `http://go.microsoft.com/fwlink` , aprire il file **Product.xml** nella cartella radice del prerequisito e individuare la stringa **fwlink** .
 
    > [!IMPORTANT]
-   > Alcuni prerequisiti hanno più pacchetti di installazione (ad esempio, per sistemi a 32 bit o a 64 bit). Se più elementi **Nome** contengono **fwlink**, è necessario ripetere i passaggi restanti per ciascuno di essi.
+   > Alcuni prerequisiti hanno più pacchetti di installazione (ad esempio, per sistemi a 32 bit o a 64 bit). Se più elementi **Nome** contengono **fwlink** , è necessario ripetere i passaggi restanti per ciascuno di essi.
 
 5. Incollare l'URL nella barra degli indirizzi del proprio browser e, quando viene richiesto se eseguire o salvare, scegliere **Salva**.
 

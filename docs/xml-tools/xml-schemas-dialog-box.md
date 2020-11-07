@@ -1,5 +1,7 @@
 ---
 title: XML Schema
+description: Informazioni sulla finestra di dialogo schemi XML utilizzata per selezionare gli schemi di XML Schema Definition Language (XSD) da associare a un documento XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d01c56b04a9b046f695a19d61a9b47fcac73e06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26703b821d2748612f461a35591a831488807dbb
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592334"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351401"
 ---
 # <a name="xml-schemas-dialog-box"></a>Finestra di dialogo XML Schema
 
@@ -29,7 +31,7 @@ La finestra di dialogo **schemi XML** consente di selezionare gli schemi XML Sch
 
 Consente di selezionare la modalità di utilizzo di XML Schema.
 
-- **Automatico**. Questo schema non è usato dal documento corrente ma è disponibile per l'associazione automatica. Se il documento XML dichiara uno spazio di nomi che corrisponde al `targetNamespace` di questo schema, lo schema viene automaticamente associato e incluso nel set di schemi.
+- **Automatico** Questo schema non è usato dal documento corrente ma è disponibile per l'associazione automatica. Se il documento XML dichiara uno spazio di nomi che corrisponde al `targetNamespace` di questo schema, lo schema viene automaticamente associato e incluso nel set di schemi.
 
 - **Utilizzare questo schema**. Questo schema è usato dal documento corrente. L'utilizzo di questo schema è stato richiesto in modo esplicito selezionando questa colonna oppure lo schema è stato associato automaticamente in base a un `targetNamespace` corrispondente.
 

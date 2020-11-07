@@ -1,5 +1,7 @@
 ---
 title: Editor XML
+description: Informazioni sull'editor XML in Visual Studio, basato sull'editor di testo, che include supporto aggiuntivo per i linguaggi XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 550dcb0cc3299a4a1b884d3141761c39977ce088
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 1bd1cac1c688bf2efc0a4c08797d72eabf0133e2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713542"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351440"
 ---
 # <a name="xml-editor"></a>Editor XML
 
@@ -40,7 +42,7 @@ Nell'editor XML sono incluse le funzionalità seguenti:
 
 - Integrazione con [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). In questo modo viene fornita una visualizzazione gerarchica degli schemi XML.
 
-L'editor XML viene richiamato per estensioni di file note, quali *. XML*, *. xsd*, *. xsl*e *. config*. Viene inoltre richiamato su qualsiasi estensione di file sconosciuta se il file sembra contenere XML.
+L'editor XML viene richiamato per estensioni di file note, quali *. XML* , *. xsd* , *. xsl* e *. config*. Viene inoltre richiamato su qualsiasi estensione di file sconosciuta se il file sembra contenere XML.
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 

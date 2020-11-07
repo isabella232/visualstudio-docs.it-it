@@ -1,5 +1,7 @@
 ---
 title: Aggiornamenti automatici delle app usando l'API di distribuzione ClickOnce
+description: Informazioni su come scrivere codice in ClickOnce che usa la classe ApplicationDeployment per verificare la disponibilità di aggiornamenti in base a un evento, ad esempio una richiesta dell'utente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aee738d972b7c6e8c857ae87bb25758d871fe28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f00bd8aaa5db8ab72e6b6286763fd89fc900599f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382575"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351258"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Procedura: Controllare gli aggiornamenti dell'applicazione a livello di codice tramite l'API della distribuzione ClickOnce
 ClickOnce offre due modi per aggiornare un'applicazione dopo che è stata distribuita. Nel primo metodo, è possibile configurare la distribuzione ClickOnce per verificare automaticamente la disponibilità di aggiornamenti a intervalli specifici. Nel secondo metodo, è possibile scrivere codice che usa la <xref:System.Deployment.Application.ApplicationDeployment> classe per verificare la disponibilità di aggiornamenti in base a un evento, ad esempio una richiesta dell'utente.
@@ -60,6 +62,6 @@ ClickOnce offre due modi per aggiornare un'applicazione dopo che è stata distri
  Per utilizzare l'aggiornamento a livello di codice, l'applicazione deve disporre delle autorizzazioni di attendibilità totale.
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Specificare un percorso alternativo per gli aggiornamenti della distribuzione](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
+- [Procedura: specificare un percorso alternativo per gli aggiornamenti della distribuzione](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
 - [Scegliere una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)

@@ -1,5 +1,7 @@
 ---
 title: Creare un manifesto del prodotto | Microsoft Docs
+description: Informazioni su come distribuire i prerequisiti per l'applicazione ClickOnce con un pacchetto che contiene un singolo manifesto del prodotto e un manifesto del pacchetto per ogni impostazione locale.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97ec49438ce2382336b1b8a6f8355bd092486c2d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ab7156635914d46dfc1849717d29ac0416e2d9fa
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852218"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351219"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Procedura: Creare il manifesto di un prodotto
 Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio automatico contiene un singolo file manifesto del prodotto, ma un manifesto del pacchetto per ogni impostazione locale. Il manifesto del pacchetto contiene aspetti specifici della localizzazione del pacchetto. Sono incluse le stringhe, i contratti di licenza con l'utente finale e i Language Pack.
@@ -36,7 +38,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
 
 1. Creare una directory per il pacchetto del programma di avvio automatico. Questo esempio Usa c:\package.
 
-2. In Visual Studio creare un nuovo file XML denominato *product.xml*e salvarlo nella cartella *C:\package* .
+2. In Visual Studio creare un nuovo file XML denominato *product.xml* e salvarlo nella cartella *C:\package* .
 
 3. Aggiungere il codice XML seguente per descrivere lo spazio dei nomi XML e il codice prodotto per il pacchetto. Sostituire il codice del prodotto con un identificatore univoco per il pacchetto.
 
@@ -64,7 +66,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
 
 6. Copiare o spostare il file di *CorePackage.msi* nella cartella *C:\package* .
 
-7. Aggiungere il codice XML per installare il pacchetto utilizzando i comandi del programma di avvio automatico. Il programma di avvio automatico aggiunge automaticamente il flag **/qn** al file con *estensione msi* , che verrà installato in modalità invisibile all'utente. Se il file è un file con *estensione exe*, il programma di avvio automatico esegue il file con *estensione exe* utilizzando la Shell. Il codice XML seguente non Mostra argomenti da *CorePackage.msi*, ma è possibile inserire l'argomento della riga di comando nell' `Arguments` attributo.
+7. Aggiungere il codice XML per installare il pacchetto utilizzando i comandi del programma di avvio automatico. Il programma di avvio automatico aggiunge automaticamente il flag **/qn** al file con *estensione msi* , che verrà installato in modalità invisibile all'utente. Se il file è un file con *estensione exe* , il programma di avvio automatico esegue il file con *estensione exe* utilizzando la Shell. Il codice XML seguente non Mostra argomenti da *CorePackage.msi* , ma è possibile inserire l'argomento della riga di comando nell' `Arguments` attributo.
 
     ```xml
     <Commands>

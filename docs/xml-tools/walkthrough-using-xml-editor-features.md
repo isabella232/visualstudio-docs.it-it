@@ -1,5 +1,7 @@
 ---
 title: "Procedura dettagliata: utilizzo delle funzionalità dell'editor XML"
+description: Per informazioni su come creare un nuovo documento XML, seguire la procedura descritta in questa procedura dettagliata che illustra le funzionalità dell'editor XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
@@ -8,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cebf6f7621fb5fada37b8e4592efd429bdc85e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8aa7daef6e427b7355eb7676db0728a4af4ca42
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817398"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351479"
 ---
-# <a name="walkthrough-use-xml-editor-features"></a>Procedura dettagliata: usare le funzionalità dell'editor XML
+# <a name="walkthrough-use-xml-editor-features"></a>Procedura dettagliata: Usare le funzionalità dell'editor XML
 
 Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo documento XML. Nella procedura dettagliata vengono inoltre utilizzate alcune delle funzionalità dell'editor XML che lo rendono utile per la creazione di XML.
 
@@ -24,13 +26,13 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 ## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Per creare un nuovo file XML e associarlo a un XML Schema
 
-1. Scegliere **nuovo**dal menu **file** e quindi fare clic su **file**.
+1. Scegliere **nuovo** dal menu **file** e quindi fare clic su **file**.
 
 2. Selezionare **file XML** nel riquadro **modelli** e fare clic su **Apri**.
 
      Viene aperto un nuovo file nell'editor. Il file contiene una dichiarazione XML predefinita, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Nella finestra proprietà del documento fare clic sul pulsante Sfoglia (**...**) nel campo **schemi** .
+3. Nella finestra proprietà del documento fare clic sul pulsante Sfoglia ( **...** ) nel campo **schemi** .
 
      Verrà visualizzata la finestra di dialogo **schemi XSD** .
 
@@ -58,7 +60,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
     - **dipendente** per aggiungere l'elemento radice.
 
-2. Selezionare ** &lt; !--** per aggiungere un nodo di commento e premere **invio**.
+2. Selezionare **&lt; !--** per aggiungere un nodo di commento e premere **invio**.
 
      L'editor inserisce un tag di fine comment e colloca il cursore tra i tag comment di inizio e di fine.
 
@@ -96,7 +98,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 ## <a name="to-format-the-xml-document"></a>Per formattare il documento XML
 
-- Selezionare il pulsante **Formatta documento** sulla barra degli strumenti dell'editor XML oppure premere **CTRL** + **E**,**D**.
+- Selezionare il pulsante **Formatta documento** sulla barra degli strumenti dell'editor XML oppure premere **CTRL** + **E** , **D**.
 
    ![Pulsante Formatta documento XML in Visual Studio](media/format-xml-document.png)
 

@@ -1,5 +1,7 @@
 ---
 title: Gestire gli aggiornamenti per un'applicazione ClickOnce | Microsoft Docs
+description: Informazioni sulle opzioni per verificare la disponibilità di aggiornamenti automaticamente o a livello di codice per le applicazioni ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f4ebe4d04aa585d9129587fe3c250c46516c824
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: bc2fd7b9e58cac0b013c511e17a6a9744e87ca39
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851606"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351180"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Procedura: Gestire gli aggiornamenti per un'applicazione ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni possono verificare la disponibilità di aggiornamenti automaticamente o a livello di codice. Gli sviluppatori hanno molta flessibilità nell'specificare quando e come vengono eseguiti i controlli di aggiornamento, se gli aggiornamenti sono obbligatori e quando l'applicazione deve verificare la disponibilità di aggiornamenti.
@@ -41,7 +43,7 @@ ms.locfileid: "90851606"
 
 ### <a name="to-check-for-updates-before-the-application-starts"></a>Per verificare la disponibilità di aggiornamenti prima dell'avvio dell'applicazione
 
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
@@ -53,7 +55,7 @@ ms.locfileid: "90851606"
 
 ### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>Per cercare gli aggiornamenti in background dopo l'avvio dell'applicazione
 
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
@@ -61,13 +63,13 @@ ms.locfileid: "90851606"
 
 4. Nella finestra di dialogo **Aggiornamenti applicazione** verificare che sia selezionata la casella **di controllo l'applicazione deve verificare la disponibilità di aggiornamenti** .
 
-5. Nella **sezione scegliere quando controllare gli aggiornamenti dell'applicazione**selezionare **dopo l'avvio dell'applicazione**. L'applicazione verrà avviata più rapidamente in questo modo, quindi verificherà la disponibilità di aggiornamenti in background e invierà una notifica all'utente solo quando è disponibile un aggiornamento. Una volta installato, gli aggiornamenti non saranno effettivi fino al riavvio dell'applicazione.
+5. Nella **sezione scegliere quando controllare gli aggiornamenti dell'applicazione** selezionare **dopo l'avvio dell'applicazione**. L'applicazione verrà avviata più rapidamente in questo modo, quindi verificherà la disponibilità di aggiornamenti in background e invierà una notifica all'utente solo quando è disponibile un aggiornamento. Una volta installato, gli aggiornamenti non saranno effettivi fino al riavvio dell'applicazione.
 
 6. Nella sezione **specificare la frequenza con cui l'applicazione deve verificare la disponibilità di aggiornamenti** selezionare **Controlla ogni volta che viene eseguita l'applicazione** (impostazione predefinita) o **Controlla ogni** e immettere un numero e un intervallo di tempo.
 
 ### <a name="to-specify-a-minimum-required-version-for-the-application"></a>Per specificare una versione minima richiesta per l'applicazione
 
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
@@ -75,11 +77,11 @@ ms.locfileid: "90851606"
 
 4. Nella finestra di dialogo **Aggiornamenti applicazione** assicurarsi che la casella **di controllo l'applicazione deve verificare la disponibilità di aggiornamenti** sia selezionata.
 
-5. Selezionare la **casella di controllo specificare una versione minima richiesta per l'applicazione** , quindi immettere i numeri **principale**, **secondario**, **Build**e **Revisione** per l'applicazione.
+5. Selezionare la **casella di controllo specificare una versione minima richiesta per l'applicazione** , quindi immettere i numeri **principale** , **secondario** , **Build** e **Revisione** per l'applicazione.
 
 ### <a name="to-specify-a-different-update-location"></a>Per specificare un percorso di aggiornamento diverso
 
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
@@ -87,11 +89,11 @@ ms.locfileid: "90851606"
 
 4. Nella finestra di dialogo **Aggiornamenti applicazione** assicurarsi che la casella **di controllo l'applicazione deve verificare la disponibilità di aggiornamenti** sia selezionata.
 
-5. Nel campo **percorso aggiornamento** immettere il percorso di aggiornamento con un URL completo, usando il formato *http://Hostname/ApplicationName* o un percorso UNC usando il formato * \\ \Server\ApplicationName*oppure fare clic sul pulsante **Sfoglia** per cercare il percorso di aggiornamento.
+5. Nel campo **percorso aggiornamento** immettere il percorso di aggiornamento con un URL completo, usando il formato *http://Hostname/ApplicationName* o un percorso UNC usando il formato *\\ \Server\ApplicationName* oppure fare clic sul pulsante **Sfoglia** per cercare il percorso di aggiornamento.
 
 ### <a name="to-check-for-updates-programmatically"></a>Per verificare la disponibilità di aggiornamenti a livello di codice
 
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
@@ -99,7 +101,7 @@ ms.locfileid: "90851606"
 
 4. Nella finestra di dialogo **Aggiornamenti applicazione** assicurarsi che la casella **di controllo l'applicazione deve verificare la disponibilità di aggiornamenti** sia deselezionata. Facoltativamente, è possibile selezionare questa casella di controllo per verificare la disponibilità di aggiornamenti a livello di codice e consentire al runtime di ClickOnce di controllare automaticamente la disponibilità di aggiornamenti.
 
-5. Nel campo **percorso aggiornamento** immettere il percorso di aggiornamento con un URL completo, usando il formato *http://Hostname/ApplicationName* o un percorso UNC usando il formato * \\ \Server\ApplicationName*oppure fare clic sul pulsante **Sfoglia** per cercare il percorso di aggiornamento. Il percorso di aggiornamento è il punto in cui l'applicazione cercherà una versione aggiornata di se stessa.
+5. Nel campo **percorso aggiornamento** immettere il percorso di aggiornamento con un URL completo, usando il formato *http://Hostname/ApplicationName* o un percorso UNC usando il formato *\\ \Server\ApplicationName* oppure fare clic sul pulsante **Sfoglia** per cercare il percorso di aggiornamento. Il percorso di aggiornamento è il punto in cui l'applicazione cercherà una versione aggiornata di se stessa.
 
 6. Consente di creare un pulsante, una voce di menu o un altro elemento dell'interfaccia utente in un Windows Form che gli utenti selezioneranno per verificare la disponibilità di aggiornamenti. Dal gestore eventi di tale elemento, chiamare un metodo per verificare e installare gli aggiornamenti. È possibile trovare un esempio di codice Visual Basic e Visual C# per un metodo di questo tipo in [procedura: verificare la disponibilità di aggiornamenti dell'applicazione a livello di programmazione tramite l'API di distribuzione ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).
 

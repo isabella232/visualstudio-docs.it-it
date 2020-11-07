@@ -1,5 +1,6 @@
 ---
 title: Specificare i file da pubblicare (ClickOnce)
+description: Informazioni su come escludere file, contrassegnare i file come file di dati o prerequisiti e creare gruppi per l'installazione condizionale per un'applicazione ClickOnce.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa77b8a69151509455e149c168cbf94e5ad56f8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dca403e2b4b7ac9b572e73db397433b1fae1b1ae
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809492"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350894"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Procedura: Specificare i file da pubblicare mediante ClickOnce
 Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione, insieme all'applicazione vengono distribuiti tutti i file non di codice del progetto. In alcuni casi, è possibile che non si desideri o non sia necessario pubblicare determinati file o che si voglia installare determinati file in base alle condizioni. Visual Studio offre le funzionalità per escludere file, contrassegnare i file come file di dati o prerequisiti e creare gruppi di file per l'installazione condizionale.
@@ -36,9 +37,9 @@ Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 
  I file con la proprietà **azione di compilazione** impostata su **contenuto** sono designati come file dell'applicazione e verranno contrassegnati come inclusi per impostazione predefinita. Possono essere inclusi, esclusi o contrassegnati come file di dati. Le eccezioni sono le seguenti:
 
-- Per impostazione predefinita, i file di dati quali i file di database SQL (con*estensione MDF* e *MDB*) e i file XML verranno contrassegnati come file di dati.
+- Per impostazione predefinita, i file di dati quali i file di database SQL (con *estensione MDF* e *MDB* ) e i file XML verranno contrassegnati come file di dati.
 
-- I riferimenti agli assembly (file con*estensione dll* ) sono designati come indicato di seguito quando si aggiunge il riferimento: se **Copy Local** è **false**, è contrassegnato per impostazione predefinita come assembly prerequisiti (**prerequisito (auto)**) che deve essere presente nella GAC prima di installare l'applicazione. Se **Copy Local** è **true**, l'assembly è contrassegnato per impostazione predefinita come assembly dell'applicazione (**include (auto)**) e verrà copiato nella cartella dell'applicazione in fase di installazione. Un riferimento COM verrà visualizzato nella finestra di dialogo **file applicazione** (come file *ocx* ) solo se la relativa proprietà **isolata** è impostata su **true**. Per impostazione predefinita, verrà incluso.
+- I riferimenti agli assembly (file con *estensione dll* ) sono designati come indicato di seguito quando si aggiunge il riferimento: se **Copy Local** è **false** , è contrassegnato per impostazione predefinita come assembly prerequisiti ( **prerequisito (auto)** ) che deve essere presente nella GAC prima di installare l'applicazione. Se **Copy Local** è **true** , l'assembly è contrassegnato per impostazione predefinita come assembly dell'applicazione ( **include (auto)** ) e verrà copiato nella cartella dell'applicazione in fase di installazione. Un riferimento COM verrà visualizzato nella finestra di dialogo **file applicazione** (come file *ocx* ) solo se la relativa proprietà **isolata** è impostata su **true**. Per impostazione predefinita, verrà incluso.
 
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Per aggiungere file alla finestra di dialogo file applicazione
 
@@ -48,7 +49,7 @@ Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 
 ### <a name="to-exclude-files-from-clickonce-publishing"></a>Per escludere file dalla pubblicazione ClickOnce
 
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
@@ -60,7 +61,7 @@ Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 
 ### <a name="to-mark-files-as-data-files"></a>Per contrassegnare i file come file di dati
 
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
@@ -72,19 +73,19 @@ Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 
 ### <a name="to-mark-files-as-prerequisites"></a>Per contrassegnare i file come prerequisiti
 
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
 3. Fare clic sul pulsante **file applicazione** per aprire la finestra di dialogo **file applicazione** .
 
-4. Nella finestra di dialogo **file applicazione** selezionare l'assembly dell'applicazione (file con*estensione dll* ) che si desidera contrassegnare come prerequisito. Si noti che l'applicazione deve avere un riferimento all'assembly dell'applicazione affinché venga visualizzata nell'elenco.
+4. Nella finestra di dialogo **file applicazione** selezionare l'assembly dell'applicazione (file con *estensione dll* ) che si desidera contrassegnare come prerequisito. Si noti che l'applicazione deve avere un riferimento all'assembly dell'applicazione affinché venga visualizzata nell'elenco.
 
 5. Nel campo **stato pubblicazione** selezionare **prerequisito** dall'elenco a discesa.
 
 ### <a name="to-add-a-new-file-group"></a>Per aggiungere un nuovo gruppo di file
 
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
@@ -101,7 +102,7 @@ Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 
 ### <a name="to-add-a-file-to-a-group"></a>Per aggiungere un file a un gruppo
 
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
