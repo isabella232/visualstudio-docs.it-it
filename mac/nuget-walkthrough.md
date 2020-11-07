@@ -3,15 +3,15 @@ title: Inserimento di un pacchetto NuGet nel progetto
 description: Questo documento illustra come includere un pacchetto NuGet in un progetto usando Visual Studio per Mac. Illustra in modo dettagliato come trovare e scaricare un pacchetto e offre un'introduzione alle funzionalità di integrazione dell'IDE.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 11/01/2019
+ms.date: 09/04/2020
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e361a1a0fba05a6fdabc66b03008049dfa34784f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74127218"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349318"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Installare e gestire i pacchetti NuGet in Visual Studio per Mac
 
@@ -23,7 +23,7 @@ Per un'introduzione all'uso di NuGet in Visual Studio per Mac, vedere [Guida int
 
 ## <a name="find-and-install-a-package"></a>Trovare e installare un pacchetto
 
-1. Con un progetto aperto in Visual Studio per Mac, fare clic con il pulsante destro del mouse sulla cartella **dipendenze** (cartella**pacchetti** se si usa un progetto Novell) nel **riquadro della soluzione** e selezionare **Gestisci pacchetti NuGet...**.
+1. Con un progetto aperto in Visual Studio per Mac, fare clic con il pulsante destro del mouse sulla cartella **dipendenze** (cartella **pacchetti** se si usa un progetto Novell) nel **riquadro della soluzione** e selezionare **Gestisci pacchetti NuGet...**.
 
     ![Azione di contesto di aggiunta di un nuovo pacchetto NuGet](media/nuget-walkthrough-packages-menu.png)
 
@@ -59,17 +59,30 @@ using Newtonsoft.Json;
 
 ## <a name="updating-packages"></a>Aggiornamento di pacchetti
 
-Gli aggiornamenti dei pacchetti possono essere eseguiti contemporaneamente, facendo clic con il pulsante destro del mouse sul nodo **dipendenze** (nodo**pacchetti** per progetti Novell) o singolarmente in ogni pacchetto. Quando è disponibile una nuova versione di un pacchetto NuGet, viene visualizzata un'icona di aggiornamento ![ con il cerchio ](media/nuget-walkthrough-update-icon.png) .
+Gli aggiornamenti dei pacchetti possono essere eseguiti contemporaneamente, facendo clic con il pulsante destro del mouse sul nodo **dipendenze** (nodo **pacchetti** per progetti Novell) o singolarmente in ogni pacchetto. Quando è disponibile una nuova versione di un pacchetto NuGet, viene visualizzata un'icona di aggiornamento ![ con il cerchio ](media/nuget-walkthrough-update-icon.png) .
 
 Fare clic con il pulsante destro del mouse su **dipendenze** per accedere al menu di scelta rapida e scegliere **Aggiorna** per aggiornare tutti i pacchetti:
 
-![Menu Pacchetti](media/nuget-walkthrough-packages-menu-update.png)
+![Menu di scelta rapida dipendenze con il menu Aggiorna evidenziato](media/nuget-walkthrough-packages-menu-update.png)
 
 * **Gestisci pacchetti NuGet** : apre la finestra per aggiungere altri pacchetti al progetto.
 * **Aggiorna** - Controlla il server di origine per ogni pacchetto e scarica le eventuali versioni più recenti.
 * **Ripristina** - Scarica tutti i pacchetti mancanti (senza aggiornare i pacchetti esistenti alle versioni più recenti).
 
 Le opzioni Aggiorna e Ripristina sono disponibili anche a livello di soluzione e influiscono su tutti i progetti nella soluzione.
+
+### <a name="updating-to-pre-release-versions-of-packages"></a>Aggiornamento alle versioni non definitive dei pacchetti
+Per eseguire l'aggiornamento a una versione provvisoria più recente di un pacchetto, è possibile fare clic con il pulsante destro del mouse su **dipendenze** per aprire il menu di scelta rapida e scegliere il menu **Gestisci pacchetti NuGet** .
+
+![Menu di scelta rapida dipendenze con Gestisci pacchetti NuGet... menu evidenziato](media/nuget-walkthrough-packages-menu-manage-nuget-packages.png)
+
+Selezionare la casella di controllo **Mostra pacchetti pre-versione** nella parte inferiore della finestra di dialogo.
+
+![Finestra di dialogo Gestisci pacchetti NuGet aperta con l'opzione ' Mostra pacchetti pre-versione ' selezionata](media/nuget-walkthrough-show-pre-release-packages.png)
+
+Infine, nella scheda **aggiornamenti** della finestra di dialogo selezionare il pacchetto che si desidera aggiornare e scegliere la nuova versione non definitiva dall'elenco a discesa **nuova versione** , quindi fare clic su **Aggiorna pacchetto**.
+
+![Finestra di dialogo Gestisci pacchetti NuGet aperta nella scheda installato con un pacchetto selezionato e l'elenco a discesa nuova versione.](media/nuget-walkthrough-packages-nuget-dialog-update-installed-package.png)
 
 ### <a name="locating-outdated-packages"></a>Individuazione di pacchetti obsoleti
 Dal riquadro della soluzione è possibile visualizzare la versione di un pacchetto attualmente installata e fare clic con il pulsante destro del mouse sul pacchetto da aggiornare.
@@ -89,7 +102,7 @@ Nel menu visualizzato sono disponibili due opzioni:
 
 La gestione dei pacchetti per una soluzione è un metodo pratico per utilizzare più progetti contemporaneamente.
 
-1. Fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Gestisci pacchetti NuGet...**:
+1. Fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Gestisci pacchetti NuGet...** :
 
     ![Gestisci pacchetti NuGet per la soluzione](media/nuget-walkthrough-manage-packages-solution.png)
 
@@ -121,11 +134,11 @@ In Visual Studio per Mac passare a **Visual Studio > Preferenze > NuGet > Origin
 
 Fare clic su **Aggiungi** per configurare una nuova origine. Immettere un nome descrittivo e l'URL (o il percorso file) dell'origine del pacchetto. Se l'origine è un server Web sicuro, immettere nome utente e password, in caso contrario lasciare vuote queste voci:
 
-![Aggiungere origini dei pacchetti](media/nuget-walkthrough-PackageSource2.png)
+![Finestra di dialogo Aggiungi origine pacchetto con una richiesta per nome, URL percorso, nome utente e password.](media/nuget-walkthrough-PackageSource2.png)
 
 Quando si cercano i pacchetti è quindi possibile selezionare origini diverse:
 
-![Aggiungere origini dei pacchetti](media/nuget-walkthrough-PackageSource3.png)
+![Finestra di dialogo Aggiungi origine pacchetto che mostra un elenco a discesa con un elenco di origini di pacchetti.](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>Controllo della versione
 

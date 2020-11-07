@@ -1,6 +1,8 @@
 ---
 title: Configurare l'analisi del codice
 ms.date: 04/04/2018
+description: Informazioni su come configurare il set di regole usato dall'analisi del codice legacy di Visual Studio. Vedere come applicare un set di regole a uno o più progetti in una soluzione.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c94742b452bfd665dc35c59ef831bca2cdacf1f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c14a72ff0d797f2fcab8e4ac62d0e0a3fb1001f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801048"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348801"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Procedura: configurare l'analisi legacy per il codice gestito
 
@@ -36,15 +38,15 @@ In Visual Studio è possibile scegliere da un elenco di [set di regole](../code-
 
 1. Aprire la scheda **analisi codice** nelle pagine delle proprietà del progetto. È possibile precedere in uno dei modi seguenti:
 
-   - In **Esplora soluzioni**scegliere il progetto. Sulla barra dei menu selezionare **analizza**  >  **Configura analisi codice**  >  **per \<projectname> **.
+   - In **Esplora soluzioni** scegliere il progetto. Sulla barra dei menu selezionare **analizza**  >  **Configura analisi codice**  >  **per \<projectname>**.
 
-   - Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** , scegliere **Proprietà**, quindi selezionare la scheda **analisi codice** .
+   - Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** , scegliere **Proprietà** , quindi selezionare la scheda **analisi codice** .
 
 2. Negli elenchi **configurazione** e **piattaforma** scegliere la configurazione di compilazione e la piattaforma di destinazione.
 
 ::: moniker range="vs-2017"
 
-3. Per eseguire l'analisi del codice ogni volta che il progetto viene compilato usando la configurazione selezionata, selezionare **Abilita analisi codice durante la compilazione**. È anche possibile eseguire manualmente l'analisi del codice selezionando **analizza**  >  **Esegui analisi codice**  >  **Esegui analisi \<projectname> del codice su **.
+3. Per eseguire l'analisi del codice ogni volta che il progetto viene compilato usando la configurazione selezionata, selezionare **Abilita analisi codice durante la compilazione**. È anche possibile eseguire manualmente l'analisi del codice selezionando **analizza**  >  **Esegui analisi codice**  >  **Esegui analisi \<projectname> del codice su**.
 
 ::: moniker-end
 
@@ -85,7 +87,7 @@ Per impostazione predefinita, a tutti i progetti gestiti di una soluzione viene 
 
 2. Nel menu **analizza** selezionare **Configura analisi codice per la soluzione**.
 
-3. Se necessario, espandere **Proprietà comuni**, quindi selezionare **Impostazioni analisi codice**.
+3. Se necessario, espandere **Proprietà comuni** , quindi selezionare **Impostazioni analisi codice**.
 
 4. È possibile specificare un set di regole per uno o più progetti:
 

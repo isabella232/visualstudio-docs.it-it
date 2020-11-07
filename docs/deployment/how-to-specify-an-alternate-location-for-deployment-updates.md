@@ -1,5 +1,6 @@
 ---
 title: Specificare il percorso alternativo per gli aggiornamenti della distribuzione
+description: Informazioni su come specificare un percorso alternativo per gli aggiornamenti dell'applicazione ClickOnce nel manifesto della distribuzione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 096e962f9e334b3db9819973a0fbd82d636f7d6f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 698ca2c97bcc4699d2c836eff9fefa371481c9cc
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808750"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349646"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Procedura: Specificare un percorso alternativo per gli aggiornamenti della distribuzione
 È possibile installare l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione inizialmente da un CD o una condivisione file, ma l'applicazione deve verificare la presenza di aggiornamenti periodici sul Web. È possibile specificare un percorso alternativo per gli aggiornamenti nel manifesto di distribuzione in modo che l'applicazione possa aggiornarsi dal Web dopo l'installazione iniziale.
@@ -39,7 +40,7 @@ ms.locfileid: "90808750"
 
 3. Selezionare la scheda **Opzioni di distribuzione**.
 
-4. Nella casella di testo denominata **percorso di avvio**immettere l'URL della directory che conterrà il manifesto di distribuzione per gli aggiornamenti dell'applicazione.
+4. Nella casella di testo denominata **percorso di avvio** immettere l'URL della directory che conterrà il manifesto di distribuzione per gli aggiornamenti dell'applicazione.
 
 5. Salvare il manifesto della distribuzione.
 

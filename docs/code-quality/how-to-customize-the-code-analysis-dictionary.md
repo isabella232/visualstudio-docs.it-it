@@ -1,6 +1,8 @@
 ---
 title: 'Procedura: Personalizzare il dizionario di analisi del codice'
 ms.date: 11/04/2016
+description: Informazioni sul dizionario di analisi del codice che identifica gli errori di ortografia e convenzione di denominazione. Vedere come creare un dizionario personalizzato e applicarlo a un progetto.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis dictionary
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1a50374a2603153cc7f4770a9aaf5ba72fbe007
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33a552cfe918ef75257a4d23391535622560661c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453640"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348736"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Procedura: Personalizzare il dizionario di analisi del codice
 
@@ -264,13 +266,13 @@ Le condizioni nel nodo Dictionary/Acronims/CasingExceptions vengono applicate al
 
 ## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a> Per applicare un dizionario personalizzato a un progetto
 
-1. In **Esplora soluzioni**usare una delle procedure seguenti:
+1. In **Esplora soluzioni** usare una delle procedure seguenti:
 
     - Per aggiungere un dizionario a un singolo progetto, fare clic con il pulsante destro del mouse sul nome del progetto, quindi scegliere **Aggiungi elemento esistente**. Specificare il file nella finestra di dialogo **Aggiungi elemento esistente** .
   
     - Per aggiungere un dizionario condiviso tra due o più progetti, individuare il file da condividere nella finestra di dialogo **Aggiungi elemento esistente** , fare clic sulla freccia in giù del pulsante **Aggiungi** e quindi fare clic su **Aggiungi come collegamento**.
 
-2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nome del file **CustomDictionary.xml** e scegliere **proprietà**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nome del file **CustomDictionary.xml** e scegliere **proprietà**.
 
 3. Dall'elenco **azione di compilazione** selezionare **CodeAnalysisDictionary**.
 

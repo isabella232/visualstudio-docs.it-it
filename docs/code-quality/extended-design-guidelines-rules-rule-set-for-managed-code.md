@@ -1,6 +1,8 @@
 ---
 title: Set di regole Regole estese delle linee guida di progettazione per codice gestito
 ms.date: 11/04/2016
+description: Informazioni sul set di regole delle linee guida di progettazione estese in Visual Studio, che è incentrato sull'usabilità e la gestibilità. Vedere le descrizioni delle regole.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8062ef99d3c1ad43b633e896617e95851a40930a
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 0da23a533ca7667ba946299a3197dd487999afec
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658594"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348983"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Set di regole Regole estese delle linee guida di progettazione per codice gestito
 

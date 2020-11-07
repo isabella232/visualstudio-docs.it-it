@@ -1,5 +1,7 @@
 ---
 title: Pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata
+description: Informazioni sull'utilizzo della pubblicazione guidata per rendere disponibile l'applicazione ClickOnce agli utenti, incluse le proprietà di pubblicazione da utilizzare.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 518252ac24dc45036587de114f68cd0a77b8c5b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 252d029e7e2e5b9b5dfe27b2fb1cd72e1c09b473
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382302"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349880"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata
 Per rendere disponibile un'applicazione ClickOnce agli utenti, è necessario pubblicarla in un una condivisione file, in un percorso, in un server FTP o su un supporto rimovibile. Per pubblicare l'applicazione, usare la Pubblicazione guidata. Altre proprietà relative alla pubblicazione sono disponibili nella pagina **Pubblica** di **Creazione progetti**. Per altre informazioni, vedere [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md).
@@ -30,7 +32,7 @@ Per rendere disponibile un'applicazione ClickOnce agli utenti, è necessario pub
 Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni di pubblicazione. Ad esempio, se si vuole designare una chiave per la firma dell'applicazione ClickOnce, accedere alla pagina **Firma** di **Creazione progetti**. Per altre informazioni, vedere [proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md).
 
 > [!NOTE]
-> Quando si installa più di una versione di un'applicazione tramite ClickOnce, l'installazione Sposta le versioni precedenti dell'applicazione in una cartella denominata *Archive*, nel percorso di pubblicazione specificato. L'archiviazione delle versioni precedenti consente di mantenere pulita la directory di installazione.
+> Quando si installa più di una versione di un'applicazione tramite ClickOnce, l'installazione Sposta le versioni precedenti dell'applicazione in una cartella denominata *Archive* , nel percorso di pubblicazione specificato. L'archiviazione delle versioni precedenti consente di mantenere pulita la directory di installazione.
 
 > [!NOTE]
 > Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
@@ -39,7 +41,7 @@ Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni d
 
 1. In **Esplora soluzioni** selezionare il progetto di applicazione.
 
-2. Scegliere **pubblica** *NomeProgetto*dal menu **Compila** .
+2. Scegliere **pubblica** *NomeProgetto* dal menu **Compila** .
 
     Verrà visualizzata la Pubblicazione guidata.
 
@@ -80,7 +82,7 @@ Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni d
 4. Nella pagina **Specificare la modalità di installazione dell'applicazione usata dagli utenti** fare clic su **Da CD-ROM o DVD-ROM** e quindi fare clic su **Avanti**.
 
    > [!NOTE]
-   > Se si vuole che l'installazione venga eseguita automaticamente quando il CD-ROM viene inserito nell'unità, aprire la pagina **Pubblica** in **Creazione progetti**, fare clic sul pulsante **Opzioni** e quindi nella procedura guidata **Opzioni di pubblicazione** selezionare **Per le installazioni da CD, avvia automaticamente l'installazione all'inserimento del CD**.
+   > Se si vuole che l'installazione venga eseguita automaticamente quando il CD-ROM viene inserito nell'unità, aprire la pagina **Pubblica** in **Creazione progetti** , fare clic sul pulsante **Opzioni** e quindi nella procedura guidata **Opzioni di pubblicazione** selezionare **Per le installazioni da CD, avvia automaticamente l'installazione all'inserimento del CD**.
 
 5. Se l'applicazione viene distribuita tramite CD-ROM, sarà necessario pubblicare gli aggiornamenti in un sito Web. Nella pagina **Specificare la posizione per il controllo degli aggiornamenti per l'applicazione** scegliere un'opzione di aggiornamento:
 

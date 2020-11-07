@@ -1,6 +1,8 @@
 ---
 title: Installare gli analizzatori di terze parti
 ms.date: 08/27/2020
+description: Informazioni su come installare gli analizzatori di terze parti in Visual Studio. Vedere come installare gli analizzatori nei file VSIX e nei pacchetti di analizzatore NuGet.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,16 +13,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9da78f4c8e76f4e5b79f4cbdb0739d34fc465330
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c6978c19f01b278886f72ff21d62ebf6c5cf57f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89091451"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348684"
 ---
 # <a name="install-third-party-analyzers"></a>Installare analizzatori di terze parti
 
-Visual Studio include un core set di analizzatori di .NET Compiler Platform (*Roslyn*). Questi analizzatori sono sempre attivati. È possibile installare altri analizzatori come pacchetti NuGet o come estensioni di Visual Studio nei file *VSIX* .
+Visual Studio include un core set di analizzatori di .NET Compiler Platform ( *Roslyn* ). Questi analizzatori sono sempre attivati. È possibile installare altri analizzatori come pacchetti NuGet o come estensioni di Visual Studio nei file *VSIX* .
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Per installare i pacchetti di NuGet Analyzer
 
@@ -75,7 +77,7 @@ Visual Studio include un core set di analizzatori di .NET Compiler Platform (*Ro
 
 6. Selezionare **modifica** per avviare l'installazione.
 
-7. Dopo un minuto o due, l'installazione viene completata. Selezionare **Chiudi**.
+7. Dopo un minuto o due, l'installazione viene completata. Selezionare **Close** (Chiudi).
 
 8. Aprire di nuovo Visual Studio.
 

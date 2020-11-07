@@ -1,5 +1,7 @@
 ---
 title: Pagina Firma, Progettazione progetti
+description: Utilizzare la pagina firma di creazione progetti per firmare i manifesti dell'applicazione e della distribuzione e anche per firmare l'assembly.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: reference
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee2244792d73924793ae82def1f533b909403c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e76be0482353ffe4740956ab16f24d6ce82f4da
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418860"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348515"
 ---
 # <a name="signing-page-project-designer"></a>Pagina Firma, Progettazione progetti
 
@@ -35,7 +37,7 @@ La firma dei manifesti dell'applicazione e di distribuzione è un processo disti
 
 L'archiviazione delle informazioni relative al file di chiave, poi, è diversa per la firma dei manifesti e per la firma degli assembly. Per la firma dei manifesti, le informazioni sulla chiave vengono archiviate nel database dell'archivio di crittografia del computer e nell'archivio dei certificati di Windows dell'utente corrente. Per la firma degli assembly, le informazioni sulla chiave vengono archiviate esclusivamente nel database dell'archivio di crittografia del computer.
 
-Per accedere alla pagina **Firma**, selezionare un nodo di progetto in **Esplora soluzioni** e quindi scegliere **Proprietà** dal menu **Progetto**. Quando viene visualizzata la finestra **Creazione progetti**, fare clic sulla scheda **Firma**.
+Per accedere alla pagina **Firma** , selezionare un nodo di progetto in **Esplora soluzioni** e quindi scegliere **Proprietà** dal menu **Progetto**. Quando viene visualizzata la finestra **Creazione progetti** , fare clic sulla scheda **Firma**.
 
 ## <a name="application-and-deployment-manifest-signing"></a>Firma del manifesto di applicazione e distribuzione
 
@@ -47,7 +49,7 @@ Pulsante **Seleziona dall'archivio**
 
 Consente di selezionare un certificato esistente dall'archivio dei certificati personali dell'utente corrente. È possibile selezionare uno dei certificati disponibili per firmare i manifesti di distribuzione e dell'applicazione.
 
-Se si fa clic su **Seleziona dall'archivio**, viene aperta la finestra di dialogo **Seleziona un certificato**, che elenca i certificati validi (non scaduti) presenti nell'archivio personale che dispongono di chiavi private. Lo scopo del certificato selezionato deve prevedere la firma di codice.
+Se si fa clic su **Seleziona dall'archivio** , viene aperta la finestra di dialogo **Seleziona un certificato** , che elenca i certificati validi (non scaduti) presenti nell'archivio personale che dispongono di chiavi private. Lo scopo del certificato selezionato deve prevedere la firma di codice.
 
 Se si fa clic su **view certificate properties** (Fare clic qui per visualizzare le proprietà del certificato), viene visualizzata la finestra di dialogo **Dettagli del certificato**. Questa finestra di dialogo contiene informazioni dettagliate sul certificato e opzioni aggiuntive. È possibile fare clic su **Altre informazioni sui certificati** per visualizzare altre informazioni della Guida.
 
@@ -55,7 +57,7 @@ Pulsante **Seleziona da un file**
 
 Consente di selezionare un certificato da un file di chiave esistente.
 
-Se si fa clic su **Seleziona da un file**, si apre la finestra di dialogo **Seleziona file**, che consente di selezionare un file della chiave del certificato (con estensione pfx). Il file deve essere protetto da password e non può essere già presente nell'archivio dei certificati personali.
+Se si fa clic su **Seleziona da un file** , si apre la finestra di dialogo **Seleziona file** , che consente di selezionare un file della chiave del certificato (con estensione pfx). Il file deve essere protetto da password e non può essere già presente nell'archivio dei certificati personali.
 
 Nella finestra di dialogo **Immettere la password per aprire il file** immettere la password per aprire il file della chiave del certificato (con estensione pfx). Le informazioni sulla password vengono archiviate nell'elenco dei contenitori di chiavi personali e nell'archivio certificati personale.
 
@@ -63,7 +65,7 @@ Pulsante **Crea certificato di prova**
 
 Consente di creare un certificato per il test. Questo certificato viene usato per firmare l'applicazione ClickOnce e i manifesti di distribuzione.
 
-Se si fa clic su **Crea certificato di prova**, si apre la finestra di dialogo **Crea certificato di prova**, in cui è possibile digitare una password per il file di chiave con nome sicuro relativo al certificato di prova. Al file viene assegnato il nome *NomeProgetto*_TemporaryKey. pfx. Se si fa clic su **OK** senza digitare alcuna password, il file con estensione pfx non è protetto da password.
+Se si fa clic su **Crea certificato di prova** , si apre la finestra di dialogo **Crea certificato di prova** , in cui è possibile digitare una password per il file di chiave con nome sicuro relativo al certificato di prova. Al file viene assegnato il nome *NomeProgetto* _TemporaryKey. pfx. Se si fa clic su **OK** senza digitare alcuna password, il file con estensione pfx non è protetto da password.
 
 Casella **URL server di timestamp**
 
@@ -73,7 +75,7 @@ Specifica l'indirizzo di un server che genera il timestamp della firma. Quando s
 
 Casella di controllo **Firma assembly**
 
-Selezionare questa casella di controllo per firmare l'assembly e creare un file di chiave con nome sicuro. Per altre informazioni sulla firma dell'assembly tramite **Creazione progetti**, vedere [Procedura: firmare un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+Selezionare questa casella di controllo per firmare l'assembly e creare un file di chiave con nome sicuro. Per altre informazioni sulla firma dell'assembly tramite **Creazione progetti** , vedere [Procedura: firmare un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
 Questa opzione usa lo strumento Al.exe fornito da Windows Software Development Kit (SDK) per firmare l'assembly. Per altre informazioni su Al.exe, vedere [Procedura: firmare un assembly con un nome sicuro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
@@ -81,7 +83,7 @@ Elenco **Scegliere un file di chiave con nome sicuro**
 
 Consente di specificare un file di chiave nuovo o esistente con nome sicuro da usare per firmare l'assembly. Selezionare **\<Browse...>** per selezionare un file di chiave esistente.
 
-Selezionare **\<New...>** questa operazione per creare un nuovo file di chiave con cui firmare l'assembly. Verrà visualizzata la finestra di dialogo **Crea chiave con nome sicuro**, che è possibile usare per specificare il nome di un file di chiave e proteggere il file con una password. La password deve avere una lunghezza di almeno 6 caratteri. Se si specifica una password, viene creato un file di scambio di informazioni personali (con estensione pfx, Personal inFormation eXchange). Se non si specifica una password, viene creato un file di chiave con nome sicuro (con estensione snk).
+Selezionare **\<New...>** questa operazione per creare un nuovo file di chiave con cui firmare l'assembly. Verrà visualizzata la finestra di dialogo **Crea chiave con nome sicuro** , che è possibile usare per specificare il nome di un file di chiave e proteggere il file con una password. La password deve avere una lunghezza di almeno 6 caratteri. Se si specifica una password, viene creato un file di scambio di informazioni personali (con estensione pfx, Personal inFormation eXchange). Se non si specifica una password, viene creato un file di chiave con nome sicuro (con estensione snk).
 
 Pulsante **Cambia password**
 
@@ -105,4 +107,4 @@ Si tenga presente che un progetto con firma ritardata non può essere eseguito e
 - [Procedura: firmare manifesti dell'applicazione e di distribuzione](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [Procedura: firmare un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [Procedura: firmare un assembly con un nome sicuro](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
-- [Assembly con nomi sicuri](/dotnet/framework/app-domains/strong-named-assemblies)
+- [Assembly con nome sicuro](/dotnet/framework/app-domains/strong-named-assemblies)

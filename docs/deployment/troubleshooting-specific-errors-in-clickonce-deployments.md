@@ -1,5 +1,6 @@
 ---
 title: Risoluzione degli errori (distribuzioni ClickOnce)
+description: In questo articolo vengono descritti gli errori comuni che possono verificarsi quando si distribuisce un'applicazione ClickOnce e vengono illustrati i passaggi per risolvere ogni problema.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 351aad83fe28251fcb769c76dd3d63b61b108b6b
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: af462178cf18d57afa6b51aedaba0004615ebb6f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809453"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349264"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Risoluzione di errori specifici nelle distribuzioni ClickOnce
 In questo articolo vengono elencati gli errori comuni seguenti che possono verificarsi durante la distribuzione di un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione e vengono descritti i passaggi per risolvere ogni problema.
@@ -90,7 +91,7 @@ In questo articolo vengono elencati gli errori comuni seguenti che possono verif
  Per usare PrivatePath (percorsi di sondaggio Fusion), l'applicazione deve richiedere l'autorizzazione di attendibilità totale. Provare a modificare il manifesto dell'applicazione in modo da richiedere l'attendibilità totale, quindi riprovare.
 
 #### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>Durante la disinstallazione viene visualizzato un messaggio che indica che non è stato possibile disinstallare l'applicazione
- Questo messaggio indica in genere che l'applicazione è già stata rimossa o che l'archivio è danneggiato. Dopo aver fatto clic su **OK**, la voce **Aggiungi/Rimuovi programma** verrà rimossa.
+ Questo messaggio indica in genere che l'applicazione è già stata rimossa o che l'archivio è danneggiato. Dopo aver fatto clic su **OK** , la voce **Aggiungi/Rimuovi programma** verrà rimossa.
 
 #### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>Durante l'installazione viene visualizzato un messaggio che indica che le dipendenze della piattaforma non sono installate
  Manca un prerequisito nella GAC (Global Assembly Cache) necessario per l'esecuzione dell'applicazione.
@@ -113,7 +114,7 @@ In questo articolo vengono elencati gli errori comuni seguenti che possono verif
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Si è tentato di firmare con un certificato nell'archivio certificati e una finestra di messaggio ricevuta vuota
  Nella finestra di dialogo **firma** è necessario:
 
-- Selezionare **firma con un certificato archiviato**e
+- Selezionare **firma con un certificato archiviato** e
 
 - Selezionare un certificato dall'elenco; il primo certificato non è la selezione predefinita.
 

@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;Elemento PackageFiles (programma di avvio automatico) | Microsoft Docs'
+description: Informazioni sull'elemento PackageFiles, che contiene elementi PackageFile che definiscono i pacchetti di installazione eseguiti come risultato dell'elemento Command.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60d6491101bef33f1d8c91d4f7640be9d7277da0
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747519"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349542"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;&gt;Elemento PackageFiles (programma di avvio automatico)
 L' `PackageFiles` elemento contiene `PackageFile` elementi che definiscono i pacchetti di installazione eseguiti come risultato dell' `Command` elemento.

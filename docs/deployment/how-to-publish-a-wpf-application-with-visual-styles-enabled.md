@@ -1,5 +1,6 @@
 ---
 title: Pubblicare un'app WPF con stili di visualizzazione abilitati
+description: Informazioni su come pubblicare un'applicazione WPF con gli stili di visualizzazione abilitati, che consente di modificare l'aspetto dei controlli in base al tema scelto dall'utente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd463fa5253d204ad4025958025235c9b75aa29e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e372d3163dcef84d76d77e54c66cf9f7c788e213
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810458"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349854"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedura: Pubblicare un'applicazione WPF con gli stili di visualizzazione abilitati
 
@@ -50,7 +51,7 @@ Gli stili di visualizzazione consentono di modificare l'aspetto dei controlli co
 
     **Per aprire il file manifesto in un progetto Visual Basic**
 
-    1. Nella barra dei menu scegliere **progetto**, proprietà *NomeProgetto* **Properties**, dove *NomeProgetto* è il nome del progetto WPF.
+    1. Nella barra dei menu scegliere **progetto** , proprietà *NomeProgetto* **Properties** , dove *NomeProgetto* è il nome del progetto WPF.
 
          Verranno visualizzate le pagine delle proprietà per il progetto WPF.
 
@@ -60,7 +61,7 @@ Gli stili di visualizzazione consentono di modificare l'aspetto dei controlli co
 
     **Per aprire il file manifesto in un progetto C#**
 
-    1. Nella barra dei menu scegliere **progetto**, proprietà *NomeProgetto* **Properties**, dove *NomeProgetto* è il nome del progetto WPF.
+    1. Nella barra dei menu scegliere **progetto** , proprietà *NomeProgetto* **Properties** , dove *NomeProgetto* è il nome del progetto WPF.
 
          Verranno visualizzate le pagine delle proprietà per il progetto WPF.
 
@@ -96,9 +97,9 @@ Gli stili di visualizzazione consentono di modificare l'aspetto dei controlli co
     </asmv1:assembly>
     ```
 
-2. In Blocco note, fare clic su **File**, quindi fare clic su **Salva con nome**.
+2. In Blocco note, fare clic su **File** , quindi fare clic su **Salva con nome**.
 
-3. Nella finestra di dialogo **Salva con nome** selezionare **tutti i file**nell'elenco a discesa **Salva come tipo** .
+3. Nella finestra di dialogo **Salva con nome** selezionare **tutti i file** nell'elenco a discesa **Salva come tipo** .
 
 4. Nella casella **nome file** assegnare un nome al file e aggiungere *. manifest* alla fine del nome del file. Ad esempio: *Themes. manifest*.
 
@@ -111,7 +112,7 @@ Gli stili di visualizzazione consentono di modificare l'aspetto dei controlli co
 
 1. Aprire il **prompt dei comandi di Visual Studio**.
 
-    Per ulteriori informazioni su come aprire il **prompt dei comandi di Visual Studio**, vedere [prompt dei comandi](/dotnet/framework/tools/developer-command-prompt-for-vs).
+    Per ulteriori informazioni su come aprire il **prompt dei comandi di Visual Studio** , vedere [prompt dei comandi](/dotnet/framework/tools/developer-command-prompt-for-vs).
 
    > [!NOTE]
    > I passaggi rimanenti fanno i presupposti seguenti sulla soluzione:

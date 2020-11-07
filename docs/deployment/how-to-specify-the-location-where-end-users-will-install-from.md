@@ -1,5 +1,6 @@
 ---
 title: Specificare il percorso da cui gli utenti finali installano
+description: Informazioni su come impostare la proprietà URL di installazione, in cui è ospitata un'applicazione ClickOnce pubblicata per l'installazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ba02b1cf8947fa2d1907d6316e36af8f8f54a77
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 3518a2eef331414e5c73c0cebb36681ad2b72d61
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808724"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349620"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Procedura: Specificare il percorso da cui gli utenti finali eseguiranno l'installazione
 
@@ -38,7 +39,7 @@ La `Installation URL` proprietà può essere impostata nella pagina **pubblica**
 
 ### <a name="to-specify-an-installation-url"></a>Per specificare un URL di installazione
 
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 

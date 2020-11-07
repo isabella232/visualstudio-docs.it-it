@@ -1,6 +1,8 @@
 ---
 title: Set di regole Regole base delle linee guida di progettazione per codice gestito
 ms.date: 11/04/2016
+description: Informazioni sul set di regole delle linee guida di progettazione di base in Visual Studio, che consente di semplificare la comprensione e l'utilizzo del codice. Vedere le descrizioni delle regole.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2bf7542d94b16042df27ec8b780cc93c9061d6e8
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: abf11966f029d6c4ec66ce295332889a9d74c359
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659127"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348408"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Set di regole Regole base delle linee guida di progettazione per codice gestito
 

@@ -1,6 +1,8 @@
 ---
 title: Disattiva analisi codice
 ms.date: 09/01/2020
+description: Informazioni su come disattivare l'analisi del codice sorgente di Visual Studio nei progetti .NET Core, .NET Standard e .NET Framework.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, disable
@@ -8,12 +10,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 28a95038db83e2a03975b0a5baccdabdd18452d9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e808cb623fa47c9971e1cdceb15a02b5bf46e901
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037146"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348554"
 ---
 # <a name="disable-source-code-analysis-for-net"></a>Disabilitare l'analisi del codice sorgente per .NET
 
@@ -67,7 +69,7 @@ Esempi:
 
 ## <a name="source-analysis"></a>Analisi dell'origine
 
-Non è possibile disattivare l' [analisi dell'origine](roslyn-analyzers-overview.md) in Visual Studio 2017. Se si desidera cancellare gli errori dell'analizzatore dalla **Elenco errori**, è possibile eliminare tutte le violazioni correnti selezionando **analizza**  >  **Esegui analisi codice ed elimina problemi attivi** sulla barra dei menu. Per ulteriori informazioni, vedere la pagina relativa all' [eliminazione delle violazioni](use-roslyn-analyzers.md#suppress-violations).
+Non è possibile disattivare l' [analisi dell'origine](roslyn-analyzers-overview.md) in Visual Studio 2017. Se si desidera cancellare gli errori dell'analizzatore dalla **Elenco errori** , è possibile eliminare tutte le violazioni correnti selezionando **analizza**  >  **Esegui analisi codice ed elimina problemi attivi** sulla barra dei menu. Per ulteriori informazioni, vedere la pagina relativa all' [eliminazione delle violazioni](use-roslyn-analyzers.md#suppress-violations).
 
 A partire da Visual Studio 2019 versione 16,3, è possibile disattivare l'analisi del codice sorgente o eseguirla su richiesta. Provare a eseguire l'aggiornamento a Visual Studio 2019.
 
@@ -77,7 +79,7 @@ A partire da Visual Studio 2019 versione 16,3, è possibile disattivare l'analis
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Non visualizzare le violazioni](use-roslyn-analyzers.md#suppress-violations)
 - [Procedura: abilitare e disabilitare l'analisi del codice legacy](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

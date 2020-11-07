@@ -1,5 +1,7 @@
 ---
 title: Creare un manifesto del pacchetto | Microsoft Docs
+description: Informazioni sull'uso di un pacchetto del programma di avvio automatico per distribuire i prerequisiti per l'applicazione ClickOnce, che contiene un manifesto del pacchetto per ogni impostazione locale.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe51ac8bc8af07038e6bfe6ddb2c5730485ca60b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 43790914be67ddaf2e82f1bb411180d5643ebcbe
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851710"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350049"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Procedura: Creare un manifesto del pacchetto
 Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio automatico contiene un singolo file manifesto del prodotto, ma un manifesto del pacchetto per ogni impostazione locale. Le funzionalità condivise tra diverse versioni localizzate dovrebbero essere inserite nel manifesto del prodotto.
@@ -38,7 +40,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchet
 
 2. Creare una sottodirectory con il nome delle impostazioni locali, ad esempio *en* per la lingua inglese.
 
-3. In Visual Studio creare un file XML denominato *package.xml*e salvarlo nella cartella *C:\package\en* .
+3. In Visual Studio creare un file XML denominato *package.xml* e salvarlo nella cartella *C:\package\en* .
 
 4. Aggiungere il codice XML per elencare il nome del pacchetto del programma di avvio automatico, le impostazioni cultura per questo manifesto del pacchetto localizzato e il contratto di licenza facoltativo. Nel codice XML seguente vengono utilizzate le variabili `DisplayName` e `Culture` , definite in un elemento successivo.
 

@@ -1,6 +1,8 @@
 ---
 title: Creare un set di regole di analisi del codice personalizzato
 ms.date: 11/02/2018
+description: Informazioni su come personalizzare i set di regole di analisi del codice in Visual Studio. Vedere come creare nuovi set da zero o da set esistenti. Comprendere la precedenza delle regole.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe0d6ad545a197ca03c12acf68d779a42fd91ae
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: c6ad55d3d678a26489983bf276359f2141688272
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860509"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348814"
 ---
 # <a name="customize-a-rule-set"></a>Personalizzare un set di regole
 
@@ -26,7 +28,7 @@ ms.locfileid: "91860509"
 
 Per creare un set di regole personalizzato, è possibile aprire un set di regole incorporato nell' **Editor del set di regole**. Da qui è possibile aggiungere o rimuovere regole specifiche ed è possibile modificare l'azione che si verifica quando viene violata una regola, &mdash; ad esempio, viene visualizzato un avviso o un errore.
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
 
 2. Nelle pagine delle **Proprietà** selezionare la scheda **analisi codice** .
 
@@ -57,7 +59,7 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
 È possibile creare un nuovo file del set di regole dalla finestra di dialogo **nuovo file** :
 
-1. Selezionare **file**  >  **nuovo**  >  **file**oppure premere **CTRL** + **N**.
+1. Selezionare **file**  >  **nuovo**  >  **file** oppure premere **CTRL** + **N**.
 
 2. Nella finestra di dialogo **nuovo file** selezionare la categoria **generale** a sinistra e quindi selezionare **set di regole di analisi codice**.
 
@@ -70,7 +72,7 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 > [!NOTE]
 > La seguente procedura non si applica ai progetti .NET Core, che non dispongono di una scheda delle proprietà di **analisi del codice** .
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
 
 2. Nelle pagine delle **Proprietà** selezionare la scheda **analisi codice** .
 
@@ -90,7 +92,7 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
 
    ![Finestra di dialogo Aggiungi o Rimuovi set di regole](media/add-remove-rule-sets.png)
 
-5. Selezionare **Salva con**nome, immettere un nome per il file con *estensione ruleset* , quindi selezionare **Salva**.
+5. Selezionare **Salva con** nome, immettere un nome per il file con *estensione ruleset* , quindi selezionare **Salva**.
 
    Il nuovo set di regole è selezionato nell'elenco **Esegui questo set di regole** .
 
@@ -109,7 +111,7 @@ Per creare un set di regole personalizzato, è possibile aprire un set di regole
    </RuleSet>
    ```
 
-- Se la stessa regola è elencata due o più volte in un set di regole con lo *stesso* livello di gravità, è possibile che venga visualizzato il seguente avviso nel **Elenco errori**:
+- Se la stessa regola è elencata due o più volte in un set di regole con lo *stesso* livello di gravità, è possibile che venga visualizzato il seguente avviso nel **Elenco errori** :
 
    **CA0063: non è stato possibile caricare il file \[ del set di regole ' your]. RuleSet ' o uno dei file del set di regole dipendenti. Il file non è conforme allo schema del set di regole.**
 

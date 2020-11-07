@@ -1,5 +1,7 @@
 ---
 title: Pubblicazione di applicazioni ClickOnce | Microsoft Docs
+description: Informazioni su come utilizzare la pubblicazione guidata per pubblicare un'applicazione ClickOnce per la prima volta. Apportare modifiche in un secondo momento nella pagina pubblica di progettazione progetti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41f8a790decbd3af20141c1c95fcaed678a2ec6a
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 737e1092d88c48227183a32072502cb833ebcd37
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641544"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349490"
 ---
 # <a name="publish-clickonce-applications"></a>Pubblicare applicazioni ClickOnce
 Quando si pubblica un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] per la prima volta, è possibile impostare le proprietà di pubblicazione con la pubblicazione guidata. Solo alcune delle proprietà sono disponibili nella procedura guidata; tutte le altre proprietà vengono impostate sui valori predefiniti.
@@ -100,6 +102,6 @@ Quando si pubblica un'applicazione [!INCLUDE[ndptecclick](../deployment/includes
 |[Procedura dettagliata: creare un programma di installazione personalizzato per un'applicazione ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Viene spiegato come creare un programma di installazione personalizzato per installare un'applicazione ClickOnce.|
 |[Procedura: Pubblicare un'applicazione WPF con gli stili di visualizzazione abilitati](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Vengono fornite istruzioni dettagliate per risolvere un errore che viene visualizzato quando si tenta di pubblicare un'applicazione WPF con gli stili visuali abilitati.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Riferimento a ClickOnce](../deployment/clickonce-reference.md)

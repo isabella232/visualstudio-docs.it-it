@@ -1,16 +1,18 @@
 ---
 title: Disabilitare l'analisi del codice legacy
 ms.date: 10/04/2019
+description: Informazioni su come attivare e disattivare l'analisi del codice binario in Visual Studio. Vedere come configurare questa funzionalità nei progetti di codice gestito.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eb4422a12620d7650b4fe150313b10fe59835064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 582d0e0d86909b266bbb18f83745b1b2261f0d10
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801022"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348749"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Procedura: abilitare e disabilitare l'analisi del codice binario per il codice gestito
 
@@ -21,7 +23,7 @@ ms.locfileid: "88801022"
 
 Per abilitare o disabilitare l'analisi del codice legacy:
 
-1. In **Esplora soluzioni**selezionare e mantenere o fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
+1. In **Esplora soluzioni** selezionare e mantenere o fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
 
 2. Nella finestra di dialogo proprietà per il progetto andare alla scheda **analisi codice** .
 

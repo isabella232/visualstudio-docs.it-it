@@ -1,6 +1,8 @@
 ---
 title: Analisi codice per il codice gestito
 ms.date: 08/27/2020
+description: Informazioni sugli analizzatori di codice basati su .NET Compiler Platform in Visual Studio. Comprendere il motivo per cui questi analizzatori sostituiscono l'analisi statica FxCop degli assembly gestiti.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d13a8afdfcbeb6ae9f91e39779af8b82b2461000
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 643e8457dbbe838d593a7bad38064537b6cbe57d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89091401"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348528"
 ---
 # <a name="overview-of-code-analysis-for-net-in-visual-studio"></a>Panoramica dell'analisi del codice per .NET in Visual Studio
 

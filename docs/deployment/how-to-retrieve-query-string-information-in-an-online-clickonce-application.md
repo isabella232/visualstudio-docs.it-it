@@ -1,5 +1,6 @@
 ---
 title: Recuperare informazioni sulla stringa di query nell'app ClickOnce online
+description: Informazioni su come un'applicazione ClickOnce può leggere la porzione di query di un URL e come usare MageUI per configurare l'applicazione in modo che accetti i parametri della stringa di query.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 824d289e0b15938e730657a449ef1566bdb6ee8f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 25a1ba70336b54ce2ce4c4df6678984db9de8bf8
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809765"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349919"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Procedura: Recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online
 La *stringa di query* è la parte di un URL che inizia con un punto interrogativo (?) e contiene informazioni arbitrarie nel formato *nome = valore*. Si supponga di avere un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] denominata `WindowsApp1` che è ospitare in `servername`e di voler passare un valore per la variabile `username` quando l'applicazione viene avviata. L'aspetto dell'URL potrebbe essere simile al seguente:
@@ -40,7 +41,7 @@ La *stringa di query* è la parte di un URL che inizia con un punto interrogativ
 > [!NOTE]
 > Prima di decidere se attivare questa funzionalità, vedere la sezione "Sicurezza" più avanti in questo argomento.
 
- Per informazioni su come creare una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione usando *Mage.exe* o *MageUI.exe*, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Per informazioni su come creare una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione usando *Mage.exe* o *MageUI.exe* , vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 > [!NOTE]
 > A partire da .NET Framework 3.5 SP1, è possibile passare argomenti della riga di comando in un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] offline. Se si desidera fornire argomenti all'applicazione, è possibile passare parametri al file di collegamento con l'estensione .APPREF-MS.
@@ -62,14 +63,14 @@ La *stringa di query* è la parte di un URL che inizia con un punto interrogativ
    MageUI
    ```
 
-2. Nel menu **File** selezionare **Apri**e aprire il manifesto di distribuzione per l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , che è il file con l'estensione `.application` .
+2. Nel menu **File** selezionare **Apri** e aprire il manifesto di distribuzione per l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , che è il file con l'estensione `.application` .
 
 3. Selezionare il riquadro **Opzioni di distribuzione** nella finestra di navigazione a sinistra e selezionare la casella di controllo **Consenti passaggio di parametri URL all'applicazione** .
 
 4. Nel menu **File** selezionare **Salva**.
 
 > [!NOTE]
-> In alternativa è possibile abilitare la stringa di query passando [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Selezionare la casella di controllo **Consenti passaggio di parametri URL all'applicazione** , a cui si accede aprendo **Proprietà progetto**selezionando la scheda **Pubblica** e facendo clic sul pulsante **Opzioni** e quindi selezionando **Manifesti**.
+> In alternativa è possibile abilitare la stringa di query passando [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Selezionare la casella di controllo **Consenti passaggio di parametri URL all'applicazione** , a cui si accede aprendo **Proprietà progetto** selezionando la scheda **Pubblica** e facendo clic sul pulsante **Opzioni** e quindi selezionando **Manifesti**.
 
 ## <a name="robust-programming"></a>Programmazione efficiente
  Quando si usano parametri di stringa di query, è necessario valutare attentamente come l'applicazione è installata e attivata. Se l'applicazione è configurata per essere installata nel computer dell'utente dal Web o da una condivisione di rete, è probabile che l'utente attiverà l'applicazione solo una volta tramite l'URL. Successivamente, l'utente attiverà l'applicazione usando il collegamento nel menu **Start** . Di conseguenza, è garantito che l'applicazione riceverà gli argomenti della stringa di query una sola volta durante tutta la sua vita. Se si sceglie di archiviare questi argomenti sul computer dell'utente per uso futuro, è necessario archiviarli in modo sicuro e protetto.

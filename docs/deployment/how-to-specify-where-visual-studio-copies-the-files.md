@@ -1,6 +1,9 @@
 ---
 title: Specificare dove copiare i file | Microsoft Docs
-ms.custom: seodec18
+description: Informazioni su come impostare la proprietà percorso di pubblicazione per un'applicazione ClickOnce, che specifica il percorso in cui vengono inseriti i file dell'applicazione e il manifesto.
+ms.custom:
+- SEO-VS-2020
+- seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0618a6e0b74c16efaaf8a70b7b8745e0f3dd142
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8cb659b2191e156aac303678374fe726856d9a77
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381717"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349594"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Procedura: Specificare il percorso in cui vengono copiati i file in Visual Studio
 Quando si pubblica un'applicazione tramite ClickOnce, la proprietà `Publish Location` specifica il percorso in cui vengono inseriti i file dell'applicazione e il manifesto. Può trattarsi di un percorso di file o del percorso di un server FTP.
@@ -33,17 +36,17 @@ Quando si pubblica un'applicazione tramite ClickOnce, la proprietà `Publish Loc
 
 ### <a name="to-specify-a-publishing-location"></a>Per specificare un percorso di pubblicazione
 
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
 3. Nel campo **Percorso pubblicazione** immettere il percorso di pubblicazione usando uno dei formati seguenti:
 
-   - Per pubblicare in una condivisione file o un percorso su disco, immettere il percorso usando un percorso UNC (* \\ \Server\ApplicationName*) o un percorso file (*c:\Deploy\NomeApplicazione*).
+   - Per pubblicare in una condivisione file o un percorso su disco, immettere il percorso usando un percorso UNC ( *\\ \Server\ApplicationName* ) o un percorso file ( *c:\Deploy\NomeApplicazione* ).
 
    - Per pubblicare in un server FTP, immettere il percorso usando il formato <em>FTP://FTP.Microsoft.com/ \<ApplicationName> </em>.
 
-     Si noti che il testo deve essere presente nella casella **percorso di pubblicazione** affinché il pulsante Sfoglia (**..**.) funzioni.
+     Si noti che il testo deve essere presente nella casella **percorso di pubblicazione** affinché il pulsante Sfoglia ( **..**.) funzioni.
 
 ## <a name="see-also"></a>Vedere anche
 - [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)

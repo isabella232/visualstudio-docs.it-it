@@ -1,6 +1,8 @@
 ---
 title: Come eseguire manualmente l'analisi del codice per .NET
 ms.date: 09/02/2020
+description: Informazioni su come eseguire manualmente l'analisi del codice in Visual Studio 2019 versione 16,5 o versioni successive. Vedere come eseguire gli analizzatori Roslyn in C# o Visual Basic codice.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, running
@@ -11,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c24fa8e835dced8332aa4c50870d6251bdd43e63
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2eb4beff76d602bb4ce6182fab6091c7cd2a0096
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037159"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348723"
 ---
 # <a name="run-code-analysis-manually-for-net"></a>Eseguire manualmente l'analisi del codice per .NET
 Per impostazione predefinita, gli analizzatori di .NET Compiler Platform ("Roslyn") analizzano il codice C# o Visual Basic durante la digitazione eseguendo l'analisi in tempo reale e durante la compilazione. Di conseguenza, in genere non è necessario attivare manualmente l'analisi del codice. Tuttavia, esistono alcuni scenari in cui potrebbe essere necessario attivare manualmente l'analisi del codice:
@@ -29,8 +31,8 @@ Per impostazione predefinita, gli analizzatori di .NET Compiler Platform ("Rosly
 
 ### <a name="run-code-analysis-manually"></a>Eseguire manualmente l'analisi del codice
 
-1. In **Esplora soluzioni**selezionare il progetto.
+1. In **Esplora soluzioni** selezionare il progetto.
 
 2. Nel menu **analizza** selezionare **Esegui analisi codice sul nome del** *progetto*.
 
-L'analisi del codice inizierà a essere eseguita in background. Verrà visualizzato il messaggio **esecuzione dell'analisi del codice per \<project> ..** . nella barra di stato di Visual Studio verso l'angolo inferiore sinistro. Al termine dell'analisi del codice, il messaggio di stato viene modificato in **analisi codice \<project> completato per **. L'elenco errori verrà aggiornato a breve con tutta la diagnostica dell'analisi del codice.
+L'analisi del codice inizierà a essere eseguita in background. Verrà visualizzato il messaggio **esecuzione dell'analisi del codice per \<project> ..** . nella barra di stato di Visual Studio verso l'angolo inferiore sinistro. Al termine dell'analisi del codice, il messaggio di stato viene modificato in **analisi codice \<project> completato per**. L'elenco errori verrà aggiornato a breve con tutta la diagnostica dell'analisi del codice.

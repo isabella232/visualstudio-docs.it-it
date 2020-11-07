@@ -1,5 +1,6 @@
 ---
 title: Scarica assembly satellite su richiesta (API ClickOnce)
+description: Informazioni su come contrassegnare gli assembly satellite come facoltativi e scaricare solo l'assembly di cui un computer client ha bisogno per le impostazioni cultura correnti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda69b1aad8e70dce14bb3f25e6bf935103642bf
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 54deb51714183497173c7df4e346bb65613366a2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809237"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349295"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procedura dettagliata: scaricare assembly satellite su richiesta con l'API di distribuzione ClickOnce
 Le applicazioni Windows Form possono essere configurate per più impostazioni cultura con l'uso di assembly satellite. Un *assembly satellite* è un assembly in cui sono contenute risorse dell'applicazione per impostazioni cultura diverse da quelle predefinite dell'applicazione.
@@ -55,7 +56,7 @@ Le applicazioni Windows Form possono essere configurate per più impostazioni cu
 
 4. Scegliere la scheda **File** .
 
-5. Scegliere il pulsante con i **puntini di sospensione** (**...**) e selezionare la directory contenente tutti gli assembly e file dell'applicazione, inclusi gli assembly satellite generati con *Resgen.exe*. Un assembly satellite avrà un nome nel formato * \<isoCode>\ApplicationName.resources.dll*, dove \<isoCode> è un identificatore di lingua in formato RFC 1766.
+5. Scegliere il pulsante con i **puntini di sospensione** ( **...** ) e selezionare la directory contenente tutti gli assembly e file dell'applicazione, inclusi gli assembly satellite generati con *Resgen.exe*. Un assembly satellite avrà un nome nel formato *\<isoCode>\ApplicationName.resources.dll* , dove \<isoCode> è un identificatore di lingua in formato RFC 1766.
 
 6. Fare clic su **Popola** per aggiungere i file alla distribuzione.
 

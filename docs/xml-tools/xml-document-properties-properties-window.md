@@ -1,5 +1,7 @@
 ---
 title: Proprietà dei documenti XML, finestra Proprietà
+description: Informazioni sulle proprietà dei documenti XML nel Finestra Proprietà che forniscono informazioni di base sul documento attivo nell'editor XML.
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31098083383b1669e0fe79423c212f1f38208acc
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592425"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350231"
 ---
 # <a name="xml-document-properties-properties-window"></a>Proprietà del documento XML, Finestra Proprietà
 
@@ -28,7 +30,7 @@ La codifica dei caratteri per il file. Modificando questa proprietà si modifica
 
 **Input**
 
-Il documento di input associato al foglio di stile XSLT. Viene usato dai comandi di **avvio XSLT** , ad esempio, **XML**  >  **Start XSLT senza debug**. È possibile selezionare un documento utilizzando il pulsante Sfoglia (**..**.).
+Il documento di input associato al foglio di stile XSLT. Viene usato dai comandi di **avvio XSLT** , ad esempio, **XML**  >  **Start XSLT senza debug**. È possibile selezionare un documento utilizzando il pulsante Sfoglia ( **..**.).
 
 Questa proprietà è visibile solo quando un file XSLT è aperto nell'editor.
 

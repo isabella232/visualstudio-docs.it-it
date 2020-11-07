@@ -1,5 +1,7 @@
 ---
 title: Pagina Sicurezza, Progettazione progetti
+description: La pagina Sicurezza di Creazione progetti consente di configurare le impostazioni di sicurezza dall'accesso di codice per le applicazioni distribuite usando la distribuzione ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: reference
@@ -14,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0839adcf0e6c61141d2a14ad8903c532af76804c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7080c1a2ce77d26987f81acaa0a751887f9f574e
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418899"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350257"
 ---
 # <a name="security-page-project-designer"></a>Pagina Sicurezza, Progettazione progetti
 
 La pagina **Sicurezza** di **Creazione progetti** consente di configurare le impostazioni di sicurezza dall'accesso di codice per le applicazioni distribuite usando la distribuzione ClickOnce. Per altre informazioni, vedere [sicurezza dall'accesso di codice per applicazioni ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
 
-Per accedere alla pagina **Sicurezza**, fare clic su un nodo di progetto in **Esplora soluzioni** e quindi scegliere **Proprietà** dal menu **Progetto**. Quando viene visualizzata la finestra **Creazione progetti** fare clic sulla scheda **Sicurezza**.
+Per accedere alla pagina **Sicurezza** , fare clic su un nodo di progetto in **Esplora soluzioni** e quindi scegliere **Proprietà** dal menu **Progetto**. Quando viene visualizzata la finestra **Creazione progetti** fare clic sulla scheda **Sicurezza**.
 
 ## <a name="security-settings"></a>Impostazioni di sicurezza
 

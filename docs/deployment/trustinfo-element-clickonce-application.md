@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;elemento trustInfo (applicazione ClickOnce) | Microsoft Docs'
+description: L'elemento trustInfo descrive le autorizzazioni di sicurezza minime necessarie per l'esecuzione dell'applicazione nel computer client. L'elemento trustInfo è obbligatorio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5873eb18b2f803acfd5aba9444657884b1a24581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6779471edc25435f14511cc2ebcc34e6247225ee
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184432"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349217"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>Elemento &lt;trustInfo&gt; (applicazione ClickOnce)
 Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'applicazione nel computer client.
@@ -156,7 +158,7 @@ Descrive le autorizzazioni di sicurezza minime richieste per l'esecuzione dell'a
 
    facoltativo. Indica se l'applicazione richiede l'accesso agli elementi protetti dell'interfaccia utente. I valori sono `true` o `false`e il valore predefinito è false. Solo le applicazioni firmate devono avere un valore true.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Se un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] richiede altre autorizzazioni rispetto a quelle concesse per impostazione predefinita al computer client, il gestore di attendibilità di Common Language Runtime chiederà all'utente se vuole concedere all'applicazione un livello così elevato di attendibilità. Se l'utente rifiuta, l'applicazione non verrà eseguita. In caso contrario, eseguirà le autorizzazioni richieste.
 
  Tutte le autorizzazioni richieste mediante `defaultAssemblyRequest` e `assemblyRequest` verranno concesse senza chiedere all'utente se il manifesto di distribuzione ha una licenza di attendibilità valida.

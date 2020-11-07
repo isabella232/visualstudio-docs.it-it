@@ -1,6 +1,8 @@
 ---
 title: Calcolare la metrica del codice
 ms.date: 11/02/2018
+description: Informazioni su complessità ciclomatica, accoppiamento di classi e altre metriche di Visual Studio Code. Scopri come le metriche possono tenere traccia dello stato di avanzamento dello sviluppo e identificare i rischi.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.codemetrics.toolwindow
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 796d8aa15aa3612b140917ccfa9db7663c0b0ad3
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: a5e7ee628f5a48f573afed9753f4fad17f85e33a
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599464"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348645"
 ---
 # <a name="code-metrics-values"></a>Valori della metrica del codice
 
@@ -46,7 +48,7 @@ L'elenco seguente mostra i risultati della metrica del codice calcolati da Visua
 
 - **Righe di codice sorgente** : indica il numero esatto di righe del codice sorgente presenti nel file di origine, incluse le righe vuote. Questa metrica è disponibile a partire da Visual Studio 2019 versione 16,4 e Microsoft. CodeAnalysis. Metrics (2.9.5).
 
-- **Righe di codice eseguibile** : indica il numero approssimativo di righe o operazioni del codice eseguibile. Si tratta di un conteggio del numero di operazioni nel codice eseguibile. Questa metrica è disponibile a partire da Visual Studio 2019 versione 16,4 e Microsoft. CodeAnalysis. Metrics (2.9.5). Il valore è in genere una corrispondenza di chiusura con la metrica precedente, **righe di codice**, ovvero la metrica basata sull'istruzione MSIL utilizzata in modalità legacy.
+- **Righe di codice eseguibile** : indica il numero approssimativo di righe o operazioni del codice eseguibile. Si tratta di un conteggio del numero di operazioni nel codice eseguibile. Questa metrica è disponibile a partire da Visual Studio 2019 versione 16,4 e Microsoft. CodeAnalysis. Metrics (2.9.5). Il valore è in genere una corrispondenza di chiusura con la metrica precedente, **righe di codice** , ovvero la metrica basata sull'istruzione MSIL utilizzata in modalità legacy.
 ::: moniker-end
 ::: moniker range="vs-2017"
 

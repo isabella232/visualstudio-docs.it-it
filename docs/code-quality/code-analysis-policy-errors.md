@@ -1,6 +1,8 @@
 ---
 title: Code Analysis Policy Errors
 ms.date: 11/04/2016
+description: Informazioni sugli errori dei criteri di analisi del codice in Visual Studio. Visualizzare le descrizioni degli errori che si verificano se i criteri non vengono soddisfatti quando viene archiviato il codice.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.policyfailures
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac7a949b3f8a1e0c9d44c6194f87745b4e3f17a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43dae5ec9ca68c746b914ad0a75b792f2a6e6b43
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587745"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349100"
 ---
 # <a name="code-analysis-policy-errors"></a>Code Analysis Policy Errors
 
@@ -29,7 +31,7 @@ I requisiti di analisi del codice che controllano il controllo del codice sorgen
 
 - L'analisi del codice non è abilitata durante la compilazione per tutti i progetti nella soluzione.
 
-- Il set di regole locali per il progetto in Visual Studio ha un'impostazione di **azione** meno restrittiva rispetto al set di regole del progetto. ad esempio, una regola **Action**impostata su = **errore** azione sul server ha l' **azione** impostata su **avviso** o **Nessuna** nel set di regole in esecuzione in Visual Studio.
+- Il set di regole locali per il progetto in Visual Studio ha un'impostazione di **azione** meno restrittiva rispetto al set di regole del progetto. ad esempio, una regola **Action** impostata su = **errore** azione sul server ha l' **azione** impostata su **avviso** o **Nessuna** nel set di regole in esecuzione in Visual Studio.
 
 - Il set di regole specificato in Visual Studio non contiene tutte le regole specificate nel set di regole specificato nei criteri di archiviazione dell'analisi codice per il progetto.
 
@@ -47,11 +49,11 @@ Per i criteri di analisi del codice è necessario che tutti i file archiviati de
 
 **La versione di ' {0} ' non è corretta. Il nome sicuro specificato nei criteri è' {1} '.**
 
-Questo errore si applica ai progetti .NET. Una regola. dll richiesta dai criteri di analisi del codice è presente nel computer locale, ma la chiave pubblica o la versione non corrisponde. Per correggere l'errore, l'autore del criterio deve aggiornare le dll in *C:\Programmi\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\ * directory nel computer.
+Questo errore si applica ai progetti .NET. Una regola. dll richiesta dai criteri di analisi del codice è presente nel computer locale, ma la chiave pubblica o la versione non corrisponde. Per correggere l'errore, l'autore del criterio deve aggiornare le dll in *C:\Programmi\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* directory nel computer.
 
 **{0}l'assembly '' specificato nel criterio non esiste.**
 
-Questo errore si applica ai progetti .NET. Una regola necessaria per i criteri di analisi del codice non dispone della dll corrispondente installata nel computer client. Per correggere l'errore, l'autore del criterio deve aggiornare la dll in *C:\Programmi\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\ * directory nel computer.
+Questo errore si applica ai progetti .NET. Una regola necessaria per i criteri di analisi del codice non dispone della dll corrispondente installata nel computer client. Per correggere l'errore, l'autore del criterio deve aggiornare la dll in *C:\Programmi\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* directory nel computer.
 
 **{0}Le impostazioni delle regole di progetto non sono conformi ai criteri di analisi del codice.**
 

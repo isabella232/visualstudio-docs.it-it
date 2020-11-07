@@ -1,5 +1,6 @@
 ---
 title: Distribuire manualmente un'app ClickOnce
+description: Informazioni su come creare una distribuzione ClickOnce usando la versione della riga di comando o la versione grafica del Strumento per la generazione e la modifica di manifesti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,15 +22,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16f01b87a9d90f285ebefd70956ae3c6ccffedf5
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9767820889548f134c018df28ee3180088f5dc01
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809479"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349250"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce
-Se non è possibile usare Visual Studio per distribuire l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione oppure è necessario usare le funzionalità di distribuzione avanzate, ad esempio la distribuzione di applicazioni attendibili, è consigliabile usare lo strumento da riga di comando *Mage.exe* per creare i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti. In questa procedura dettagliata viene descritto come creare una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione utilizzando la versione della riga di comando (*Mage.exe*) o la versione grafica (*MageUI.exe*) del strumento per la generazione e la modifica di manifesti.
+Se non è possibile usare Visual Studio per distribuire l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione oppure è necessario usare le funzionalità di distribuzione avanzate, ad esempio la distribuzione di applicazioni attendibili, è consigliabile usare lo strumento da riga di comando *Mage.exe* per creare i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti. In questa procedura dettagliata viene descritto come creare una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione utilizzando la versione della riga di comando ( *Mage.exe* ) o la versione grafica ( *MageUI.exe* ) del strumento per la generazione e la modifica di manifesti.
 
 ## <a name="prerequisites"></a>Prerequisiti
  Questa procedura dettagliata include alcuni prerequisiti e opzioni che è necessario scegliere prima di creare una distribuzione.
@@ -52,7 +53,7 @@ Se non è possibile usare Visual Studio per distribuire l' [!INCLUDE[ndptecclick
 
 - Ottenere un certificato Authenticode.
 
-   È necessario firmare la distribuzione con un certificato Authenticode. È possibile generare un certificato di test tramite Visual Studio, *MageUI.exe*o *MakeCert.exe* e *Pvk2Pfx.exe* strumenti oppure è possibile ottenere un certificato da un'autorità di certificazione (CA). Se si sceglie di utilizzare la distribuzione di applicazioni attendibili, è necessario eseguire una sola installazione del certificato su tutti i computer client. Per ulteriori informazioni, vedere [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md).
+   È necessario firmare la distribuzione con un certificato Authenticode. È possibile generare un certificato di test tramite Visual Studio, *MageUI.exe* o *MakeCert.exe* e *Pvk2Pfx.exe* strumenti oppure è possibile ottenere un certificato da un'autorità di certificazione (CA). Se si sceglie di utilizzare la distribuzione di applicazioni attendibili, è necessario eseguire una sola installazione del certificato su tutti i computer client. Per ulteriori informazioni, vedere [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md).
 
   > [!NOTE]
   > È anche possibile firmare la distribuzione con un certificato CNG che è possibile ottenere da un'autorità di certificazione.
@@ -65,7 +66,7 @@ Se non è possibile usare Visual Studio per distribuire l' [!INCLUDE[ndptecclick
 
 - Determinare se l'applicazione richiede prerequisiti nel computer client.
 
-   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni distribuite da Visual Studio possono includere un programma di avvio automatico dell'installazione dei prerequisiti (*setup.exe*) con la distribuzione. In questa procedura dettagliata vengono creati i due manifesti necessari per una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione. È possibile creare un programma di avvio automatico dei prerequisiti usando l' [attività GenerateBootstrapper](../msbuild/generatebootstrapper-task.md).
+   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni distribuite da Visual Studio possono includere un programma di avvio automatico dell'installazione dei prerequisiti ( *setup.exe* ) con la distribuzione. In questa procedura dettagliata vengono creati i due manifesti necessari per una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione. È possibile creare un programma di avvio automatico dei prerequisiti usando l' [attività GenerateBootstrapper](../msbuild/generatebootstrapper-task.md).
 
 ### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>Per distribuire un'applicazione con lo strumento da riga di comando Mage.exe
 
@@ -132,11 +133,11 @@ Se non è possibile usare Visual Studio per distribuire l' [!INCLUDE[ndptecclick
    MageUI.exe
    ```
 
-5. Creare un nuovo manifesto dell'applicazione selezionando **file**, **nuovo**, **manifesto dell'applicazione** dal menu.
+5. Creare un nuovo manifesto dell'applicazione selezionando **file** , **nuovo** , **manifesto dell'applicazione** dal menu.
 
 6. Nella scheda **nome** predefinito digitare il nome e il numero di versione della distribuzione. Specificare anche il **processore** per cui viene compilata l'applicazione, ad esempio x86.
 
-7. Selezionare la scheda **file** e quindi fare clic sul pulsante con i puntini di sospensione (**...**) accanto alla casella di testo **Directory applicazione** . Verrà visualizzata la finestra **di dialogo Sfoglia per cartelle** .
+7. Selezionare la scheda **file** e quindi fare clic sul pulsante con i puntini di sospensione ( **...** ) accanto alla casella di testo **Directory applicazione** . Verrà visualizzata la finestra **di dialogo Sfoglia per cartelle** .
 
 8. Selezionare la sottodirectory di versione contenente i file dell'applicazione e quindi fare clic su **OK**.
 
@@ -144,11 +145,11 @@ Se non è possibile usare Visual Studio per distribuire l' [!INCLUDE[ndptecclick
 
 10. Passare al pulsante **popola** per aggiungere tutti i file dell'applicazione all'elenco file. Se l'applicazione contiene più file eseguibili, contrassegnare il file eseguibile principale per questa distribuzione come applicazione di avvio selezionando il **punto di ingresso** dall'elenco a discesa **tipo file** . Se l'applicazione contiene un solo file eseguibile, *MageUI.exe* lo contrassegnerà.
 
-11. Selezionare la scheda **autorizzazioni necessarie** e selezionare il livello di attendibilità che l'applicazione deve dichiarare. Il valore predefinito è **FullTrust**, che sarà adatto per la maggior parte delle applicazioni.
+11. Selezionare la scheda **autorizzazioni necessarie** e selezionare il livello di attendibilità che l'applicazione deve dichiarare. Il valore predefinito è **FullTrust** , che sarà adatto per la maggior parte delle applicazioni.
 
-12. Selezionare **file**, **Salva con nome** dal menu. Viene visualizzata una finestra di dialogo Opzioni di firma che richiede di firmare il manifesto dell'applicazione.
+12. Selezionare **file** , **Salva con nome** dal menu. Viene visualizzata una finestra di dialogo Opzioni di firma che richiede di firmare il manifesto dell'applicazione.
 
-13. Se si dispone di un certificato archiviato come file nella file system, utilizzare l'opzione **firma con file di certificato** e selezionare il certificato dall'file System utilizzando il pulsante con i puntini di sospensione (**...**). Digitare quindi la password del certificato.
+13. Se si dispone di un certificato archiviato come file nella file system, utilizzare l'opzione **firma con file di certificato** e selezionare il certificato dall'file System utilizzando il pulsante con i puntini di sospensione ( **...** ). Digitare quindi la password del certificato.
 
      -oppure-
 
@@ -158,13 +159,13 @@ Se non è possibile usare Visual Studio per distribuire l' [!INCLUDE[ndptecclick
 
 15. Nella finestra di dialogo **Salva con nome** specificare la directory della versione e quindi selezionare **Salva**.
 
-16. Selezionare **file**, **nuovo**, **manifesto distribuzione** dal menu per creare il manifesto della distribuzione.
+16. Selezionare **file** , **nuovo** , **manifesto distribuzione** dal menu per creare il manifesto della distribuzione.
 
-17. Nella scheda **nome** specificare un nome e un numero di versione per questa distribuzione (**1.0.0.0** in questo esempio). Specificare anche il **processore** per cui viene compilata l'applicazione, ad esempio x86.
+17. Nella scheda **nome** specificare un nome e un numero di versione per questa distribuzione ( **1.0.0.0** in questo esempio). Specificare anche il **processore** per cui viene compilata l'applicazione, ad esempio x86.
 
-18. Selezionare la scheda **Descrizione** e specificare i valori per **autore** e **prodotto**. (**Product** è il nome assegnato all'applicazione dal menu Start di Windows quando l'applicazione viene installata in un computer client per l'utilizzo offline).
+18. Selezionare la scheda **Descrizione** e specificare i valori per **autore** e **prodotto**. ( **Product** è il nome assegnato all'applicazione dal menu Start di Windows quando l'applicazione viene installata in un computer client per l'utilizzo offline).
 
-19. Selezionare la scheda **Opzioni di distribuzione** e nella casella di testo **percorso iniziale** specificare il percorso del manifesto dell'applicazione nel server Web o nella condivisione. Ad esempio, * \\ \myServer\myShare\AppToDeploy.Application*.
+19. Selezionare la scheda **Opzioni di distribuzione** e nella casella di testo **percorso iniziale** specificare il percorso del manifesto dell'applicazione nel server Web o nella condivisione. Ad esempio, *\\ \myServer\myShare\AppToDeploy.Application*.
 
 20. Se è stata aggiunta l'estensione *. deploy* in un passaggio precedente, selezionare anche **USA. distribuire l'estensione del nome file** qui.
 
@@ -174,9 +175,9 @@ Se non è possibile usare Visual Studio per distribuire l' [!INCLUDE[ndptecclick
 
 23. Selezionare il manifesto dell'applicazione creato in precedenza e quindi selezionare **Apri**.
 
-24. Selezionare **file**, **Salva con nome** dal menu. Viene visualizzata una finestra di dialogo **Opzioni di firma** che richiede di firmare il manifesto della distribuzione.
+24. Selezionare **file** , **Salva con nome** dal menu. Viene visualizzata una finestra di dialogo **Opzioni di firma** che richiede di firmare il manifesto della distribuzione.
 
-25. Se si dispone di un certificato archiviato come file nella file system, utilizzare l'opzione **firma con file di certificato** e selezionare il certificato dall'file System utilizzando il pulsante con i puntini di sospensione (**...**). Digitare quindi la password del certificato.
+25. Se si dispone di un certificato archiviato come file nella file system, utilizzare l'opzione **firma con file di certificato** e selezionare il certificato dall'file System utilizzando il pulsante con i puntini di sospensione ( **...** ). Digitare quindi la password del certificato.
 
      -oppure-
 
@@ -191,7 +192,7 @@ Se non è possibile usare Visual Studio per distribuire l' [!INCLUDE[ndptecclick
 29. Fornire agli utenti l'URL, l'UNC o i supporti fisici necessari per installare l'applicazione. Se si fornisce un URL o un UNC, è necessario assegnare agli utenti il percorso completo del manifesto di distribuzione. Se, ad esempio, AppToDeploy viene distribuito http://webserver01/ nella directory AppToDeploy, il percorso completo dell'URL sarà http://webserver01/AppToDeploy/AppToDeploy.application .
 
 ## <a name="next-steps"></a>Passaggi successivi
- Quando è necessario distribuire una nuova versione dell'applicazione, creare una nuova directory denominata dopo la nuova versione, ad esempio 1.0.0.1, e copiare i nuovi file dell'applicazione nella nuova directory. Successivamente, è necessario seguire i passaggi precedenti per creare e firmare un nuovo manifesto dell'applicazione e aggiornare e firmare il manifesto della distribuzione. Prestare attenzione a specificare la stessa versione più elevata sia nella *Mage.exe* `-New` che nelle `-Update` chiamate, perché [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Aggiorna solo versioni più elevate, con l'Integer più a sinistra più significativo. Se è stato usato *MageUI.exe*, è possibile aggiornare il manifesto di distribuzione aprendolo, selezionando la scheda **riferimento all'applicazione** , passare al pulsante **Seleziona manifesto** , quindi selezionare il manifesto dell'applicazione aggiornato.
+ Quando è necessario distribuire una nuova versione dell'applicazione, creare una nuova directory denominata dopo la nuova versione, ad esempio 1.0.0.1, e copiare i nuovi file dell'applicazione nella nuova directory. Successivamente, è necessario seguire i passaggi precedenti per creare e firmare un nuovo manifesto dell'applicazione e aggiornare e firmare il manifesto della distribuzione. Prestare attenzione a specificare la stessa versione più elevata sia nella *Mage.exe* `-New` che nelle `-Update` chiamate, perché [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Aggiorna solo versioni più elevate, con l'Integer più a sinistra più significativo. Se è stato usato *MageUI.exe* , è possibile aggiornare il manifesto di distribuzione aprendolo, selezionando la scheda **riferimento all'applicazione** , passare al pulsante **Seleziona manifesto** , quindi selezionare il manifesto dell'applicazione aggiornato.
 
 ## <a name="see-also"></a>Vedere anche
 - [Mage.exe (Strumento per la generazione e la modifica di manifesti)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

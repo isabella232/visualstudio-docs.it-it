@@ -1,6 +1,8 @@
 ---
 title: Procedura dettagliata per l'analisi del codice gestito per i difetti del codice | Microsoft Docs
 ms.date: 01/29/2018
+description: Informazioni su come usare l'analisi del codice legacy per analizzare gli assembly di codice gestito .NET. Vedere come verificare la presenza di errori e la conformità alle linee guida di progettazione .NET.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab8a834de307cf7803b93f025a68b95defe12466
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 7e862b176ab396999d3504e19c4de9a5c407b266
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659192"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349022"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Procedura dettagliata: usare l'analisi del codice statica per individuare i difetti del codice
 
@@ -75,15 +77,15 @@ Questo articolo illustra il processo di utilizzo dell'analisi legacy per analizz
 
 ::: moniker-end
 
-6. Scegliere **Salva elementi selezionati**dal menu **file** e quindi chiudere le pagine delle proprietà.
+6. Scegliere **Salva elementi selezionati** dal menu **file** e quindi chiudere le pagine delle proprietà.
 
-7. Scegliere **Compila CodeAnalysisManagedDemo**dal menu **Compila** .
+7. Scegliere **Compila CodeAnalysisManagedDemo** dal menu **Compila** .
 
     Gli avvisi di compilazione del progetto CodeAnalysisManagedDemo sono visualizzati nelle finestre **Elenco errori** e **output** .
 
 ## <a name="correct-the-code-analysis-issues"></a>Correggere i problemi di analisi del codice
 
-1. Scegliere **Elenco errori**dal menu **Visualizza** .
+1. Scegliere **Elenco errori** dal menu **Visualizza** .
 
     A seconda del profilo dello sviluppatore scelto, potrebbe essere necessario puntare ad **altre finestre** dal menu **Visualizza** , quindi scegliere **Elenco errori**.
 
@@ -115,7 +117,7 @@ Questo articolo illustra il processo di utilizzo dell'analisi legacy per analizz
 
    [CA2210: gli assembly devono avere nomi sicuri validi](../code-quality/ca2210.md): Sign ' CodeAnalysisManagedDemo ' con una chiave con nome sicuro:
 
-   1. Scegliere **Proprietà CodeAnalysisManagedDemo**dal menu **progetto** .
+   1. Scegliere **Proprietà CodeAnalysisManagedDemo** dal menu **progetto** .
 
       Verranno visualizzate le proprietà del progetto.
 
@@ -127,11 +129,11 @@ Questo articolo illustra il processo di utilizzo dell'analisi legacy per analizz
 
       Verrà visualizzata la finestra di dialogo **Crea chiave con nome sicuro**.
 
-   1. Per **nome file di chiave**immettere **TestKey**.
+   1. Per **nome file di chiave** immettere **TestKey**.
 
    1. Immettere una password, quindi scegliere **OK**.
 
-   1. Scegliere **Salva elementi selezionati**dal menu **file** e quindi chiudere le pagine delle proprietà.
+   1. Scegliere **Salva elementi selezionati** dal menu **file** e quindi chiudere le pagine delle proprietà.
 
    Dopo aver completato tutte le modifiche, il file Class1.cs dovrebbe essere simile al seguente:
 

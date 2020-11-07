@@ -1,6 +1,8 @@
 ---
 title: Sospensione funzionalità automatica
 ms.date: 11/04/2016
+description: Informazioni su come Visual Studio riduce l'ambito di analisi, disattiva Garbage Collection modalità a bassa latenza e Scarica le cache quando la memoria di sistema è limitata.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - live code analysis
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 976e676cda09d50e34acb88a12551b1531595888
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 12b15ed8aa02e53841b85245350735258e7ec11d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508379"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348541"
 ---
 # <a name="automatic-feature-suspension"></a>Sospensione funzionalità automatica
 

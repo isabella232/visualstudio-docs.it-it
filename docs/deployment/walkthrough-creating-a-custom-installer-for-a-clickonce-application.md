@@ -1,5 +1,7 @@
 ---
 title: Creare un programma di installazione personalizzato per l'applicazione ClickOnce
+description: Informazioni su come un programma di installazione personalizzato può installare e aggiornare un'applicazione ClickOnce in modo invisibile all'utente in base a un file con estensione exe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b648134b7ad27a8f622ce270dc0f05e0a7e6516c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08b4adbaa7e7e25041f90628695de729aaff0d0d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72637414"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349204"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Procedura dettagliata: creare un programma di installazione personalizzato per un'applicazione ClickOnce
 Qualsiasi applicazione ClickOnce basata su un file con *estensione exe* può essere installata e aggiornata automaticamente da un programma di installazione personalizzato. Un programma di installazione personalizzato può implementare un'esperienza utente personalizzata durante l'installazione, incluse le finestre di dialogo personalizzate per la sicurezza e le operazioni di manutenzione. Per eseguire le operazioni di installazione, il programma di installazione personalizzato usa la <xref:System.Deployment.Application.InPlaceHostingManager> classe. In questa procedura dettagliata viene illustrato come creare un programma di installazione personalizzato che installa automaticamente un'applicazione ClickOnce.

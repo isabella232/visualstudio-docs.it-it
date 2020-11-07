@@ -1,5 +1,7 @@
 ---
 title: Funzionalità IntelliSense dell'editor XML
+description: Informazioni sulle funzionalità IntelliSense dell'editor XML in Visual Studio e su come usarle con i documenti XSD (XML Schema Definition Language) e XSLT.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc79d40c2cb363b79c2064bd71fb23dece04e143
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592386"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350244"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funzionalità IntelliSense dell'editor XML
 
@@ -87,7 +89,7 @@ Ad esempio, se dall'elenco di IntelliSense si seleziona l'elemento `e:Book` in c
 
 ## <a name="brace-matching"></a>Corrispondenza parentesi graffe
 
-Nell'editor XML è inclusa una funzionalità per l'evidenziazione delle parentesi graffe, che fornisce un feedback immediato sugli elementi appena chiusi. È anche possibile usare i tasti di scelta rapida (**CTRL** + **]**) per passare da una parentesi graffa alla parentesi graffa corrispondente.
+Nell'editor XML è inclusa una funzionalità per l'evidenziazione delle parentesi graffe, che fornisce un feedback immediato sugli elementi appena chiusi. È anche possibile usare i tasti di scelta rapida ( **CTRL** + **]** ) per passare da una parentesi graffa alla parentesi graffa corrispondente.
 
 L'editor XML effettua tale operazione per i seguenti elementi:
 
@@ -107,11 +109,11 @@ L'editor XML effettua tale operazione per i seguenti elementi:
 
 ## <a name="modify-the-intellisense-options"></a>Modificare le opzioni di IntelliSense
 
-Le funzionalità IntelliSense e di completamento automatico sono abilitate per impostazione predefinita. Tuttavia, è possibile modificare questa impostazione modificando **Tools**le  >  impostazioni delle**Opzioni** degli strumenti.
+Le funzionalità IntelliSense e di completamento automatico sono abilitate per impostazione predefinita. Tuttavia, è possibile modificare questa impostazione modificando **Tools** le  >  impostazioni delle **Opzioni** degli strumenti.
 
 La sezione **inserimento automatico** della pagina **varie** controlla il comportamento seguente:
 
-|Nome|Descrizione|
+|Name|Descrizione|
 |-|-----------------|
 |Chiudi i tag|Inserisce i tag di chiusura per i nuovi elementi.|
 |Virgolette per gli attributi|Inserisce i valori di attributo tra virgolette quando si immette un nuovo nome di attributo.|
@@ -121,7 +123,7 @@ La sezione **inserimento automatico** della pagina **varie** controlla il compor
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-2. Espandere **editor di testo**, espandere **XML**e selezionare **varie**.
+2. Espandere **editor di testo** , espandere **XML** e selezionare **varie**.
 
 3. Apportare le modifiche alla sezione **inserimento automatico** e fare clic su **OK**.
 

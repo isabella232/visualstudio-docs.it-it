@@ -1,5 +1,7 @@
 ---
 title: Modificare la lingua di pubblicazione per l'applicazione ClickOnce
+description: Informazioni su come specificare una lingua/impostazioni cultura per un'applicazione di localizzazione in ClickOnce, anziché l'impostazione predefinita della lingua o delle impostazioni cultura del computer di sviluppo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0252cf39f8f5ee268adbf625f03a9b5a305b903a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7fed8c137b5bce225d8a231bb5a263b87c2bf361
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382588"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350166"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Procedura: Cambiare la lingua di pubblicazione di un'applicazione ClickOnce
 
@@ -34,7 +36,7 @@ La `Publish language` proprietà può essere impostata nella finestra di dialogo
 
 ## <a name="to-change-the-publish-language"></a>Per modificare la lingua di pubblicazione
 
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 

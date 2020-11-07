@@ -1,6 +1,8 @@
 ---
 title: Rimuovere le violazioni dell'analisi del codice
 ms.date: 08/27/2020
+description: Informazioni su come escludere le violazioni dell'analisi del codice in Visual Studio. Informazioni su come usare l'attributo SuppressMessageAttribute per l'eliminazione nell'origine.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
@@ -14,12 +16,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ef64528d8686267677020458374ef96143f6e34
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: b7a0820404047d123350a27950c5aee254af306f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658516"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348697"
 ---
 # <a name="suppress-code-analysis-violations"></a>Rimuovere le violazioni dell'analisi del codice
 
@@ -50,7 +52,7 @@ In C++/CLI, usare la CA macro non \_ visualizzare \_ messaggi o ca \_ globale \_
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage (attributo)
 
-Quando si seleziona **Elimina** dal menu di scelta rapida o facendo clic con il pulsante destro del mouse su un avviso di analisi del codice nella **Elenco errori**, <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> viene aggiunto un attributo nel codice o nel file di eliminazione globale del progetto.
+Quando si seleziona **Elimina** dal menu di scelta rapida o facendo clic con il pulsante destro del mouse su un avviso di analisi del codice nella **Elenco errori** , <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> viene aggiunto un attributo nel codice o nel file di eliminazione globale del progetto.
 
 Il <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> formato dell'attributo è il seguente:
 

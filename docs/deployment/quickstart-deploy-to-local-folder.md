@@ -1,5 +1,7 @@
 ---
 title: Distribuire in una cartella locale
+description: Informazioni su come usare lo strumento di pubblicazione per pubblicare app ASP.NET, ASP.NET Core, .NET Core e Python in una cartella da Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 800059dc8d5a3e6ccfb72c588fbb61423a338cba
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f392cc2dcb474487a37076229c0b10f7359b9251
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036392"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349568"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Distribuire un'app in una cartella con Visual Studio
 
@@ -34,7 +36,7 @@ ms.locfileid: "90036392"
 
 1. Se sono stati configurati in precedenza tutti i profili di pubblicazione, viene visualizzata la finestra **pubblica** . Selezionare **Nuovo**.
 
-1. Nella finestra **Publish (pubblica** ) selezionare **Folder (cartella**).
+1. Nella finestra **Publish (pubblica** ) selezionare **Folder (cartella** ).
 
     ![Scegliere la cartella come destinazione di pubblicazione](../deployment/media/quickstart-publish-folder-new.png "Scegli cartella")
 
@@ -62,7 +64,7 @@ ms.locfileid: "90036392"
 
 1. Per pubblicare di nuovo, selezionare **Pubblica**.
 
-Distribuire i file pubblicati con il metodo desiderato. È ad esempio possibile inserire i file in un file *zip*, usare un semplice comando di copia o distribuire i file con un pacchetto di installazione a scelta.
+Distribuire i file pubblicati con il metodo desiderato. È ad esempio possibile inserire i file in un file *zip* , usare un semplice comando di copia o distribuire i file con un pacchetto di installazione a scelta.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -1,6 +1,8 @@
 ---
 title: Analisi legacy per codice gestito
 ms.date: 06/12/2019
+description: Informazioni sull'analisi legacy in Visual Studio. Vedere come disattivare gli avvisi e come eseguire le analisi manualmente, automaticamente e durante le archiviazioni e le compilazioni.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6ab8171d2317549beabe2d8e552eeeefccd02cf
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: c6f1f12fa7fca964c857e534c1ffae50efe70b27
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927991"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348658"
 ---
 # <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Panoramica dell'analisi legacy per il codice gestito in Visual Studio
 
@@ -26,7 +28,7 @@ L'analisi del codice per il codice gestito analizza gli assembly gestiti e forni
 Lo strumento di analisi rappresenta i controlli eseguiti durante un'analisi come messaggi di avviso. I messaggi di avviso identificano eventuali problemi di programmazione e progettazione e, se possibile, forniscono informazioni su come risolverli.
 
 > [!NOTE]
-> L'analisi legacy (analisi statica del codice) non è supportata per i progetti .NET Core e .NET Standard in Visual Studio. Se si esegue l'analisi del codice in un progetto .NET Core o .NET Standard come parte di MSBuild, verrà visualizzato un errore simile a **errore: CA0055: Impossibile identificare la piattaforma \<your.dll> per **. Per analizzare il codice nei progetti .NET Core o .NET Standard, usare invece gli [analizzatori di codice](../code-quality/roslyn-analyzers-overview.md) .
+> L'analisi legacy (analisi statica del codice) non è supportata per i progetti .NET Core e .NET Standard in Visual Studio. Se si esegue l'analisi del codice in un progetto .NET Core o .NET Standard come parte di MSBuild, verrà visualizzato un errore simile a **errore: CA0055: Impossibile identificare la piattaforma \<your.dll> per**. Per analizzare il codice nei progetti .NET Core o .NET Standard, usare invece gli [analizzatori di codice](../code-quality/roslyn-analyzers-overview.md) .
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integrazione con IDE (Integrated Development Environment)
 
@@ -34,7 +36,7 @@ Lo strumento di analisi rappresenta i controlli eseguiti durante un'analisi come
 
 Per eseguire l'analisi del codice ogni volta che si compila un progetto, selezionare l'opzione nella pagina delle proprietà **analisi codice** del progetto. Per altre informazioni, vedere [procedura: abilitare e disabilitare l'analisi automatica del codice](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Per eseguire manualmente l'analisi del codice su un progetto, dalla barra dei menu scegliere **analizza**  >  **esecuzione**analisi codice  >  **Esegui analisi \<project> del codice su **.
+Per eseguire manualmente l'analisi del codice su un progetto, dalla barra dei menu scegliere **analizza**  >  **esecuzione** analisi codice  >  **Esegui analisi \<project> del codice su**.
 
 ## <a name="rule-sets"></a>Set di regole
 

@@ -1,6 +1,8 @@
 ---
 title: Analisi del codice tramite gli analizzatori Roslyn
 ms.date: 09/01/2020
+description: Acquisire familiarità con l'analisi del codice sorgente in Visual Studio. Informazioni sulle correzioni del codice e sui diversi tipi di analizzatori e livelli di gravità.
+ms.custom: SEO-VS-2020
 ms.topic: overview
 helpviewer_keywords:
 - code analysis, managed code
@@ -12,12 +14,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2fd91266f4a829193296b05c9a28dc96a9a88d31
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 237d1188b1a90c64464a15b2df81d507abacb718
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414061"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349035"
 ---
 # <a name="overview-of-source-code-analysis"></a>Panoramica dell'analisi del codice sorgente
 
@@ -41,7 +43,7 @@ Ogni analizzatore ha uno dei livelli di gravità seguenti:
 | Avviso | `warning` | Le violazioni vengono visualizzate come *avvisi* nell'elenco errori e nell'output di compilazione da riga di comando, ma non comportano la mancata riuscita delle compilazioni. | Il codice offensivo è sottolineato con una zigzag verde e contrassegnato da una piccola casella verde nella barra di scorrimento. |
 | Info | `suggestion` | Le violazioni vengono visualizzate come *messaggi* nell'elenco errori e non nell'output di compilazione da riga di comando. | Il codice che causa il danneggiamento è sottolineato con un zigzag grigio e contrassegnato da una piccola casella grigia nella barra di scorrimento. |
 | Nascosto | `silent` | Non visibile all'utente. | Non visibile all'utente. Tuttavia, la diagnostica viene segnalata al motore di diagnostica IDE. |
-| Nessuno | `none` | Eliminati completamente. | Eliminati completamente. |
+| nessuno | `none` | Eliminati completamente. | Eliminati completamente. |
 | Predefinito | `default` | Corrisponde alla gravità predefinita della regola. Per determinare il valore predefinito di una regola, cercare nell'Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
 
 Se le violazioni delle regole vengono trovate da un analizzatore, vengono segnalate nell'editor del codice (come *zigzag* sotto il codice che causa il errore) e nella finestra Elenco errori.

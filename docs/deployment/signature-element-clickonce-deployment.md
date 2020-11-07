@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;Elemento Signature (distribuzione ClickOnce) | Microsoft Docs'
+description: L'elemento Signature contiene le informazioni necessarie per la firma digitale del manifesto della distribuzione. La firma di un manifesto di distribuzione è facoltativa ma consigliata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6f07e2649d6f41e77f453f64c5838c746f22ad0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7a86236087bdbff8cf82ca4821573f9f799d019
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85835420"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349282"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;&gt;Elemento Signature (distribuzione ClickOnce)
 Contiene le informazioni necessarie per apporre una firma digitale al manifesto della distribuzione.
@@ -28,8 +30,8 @@ Contiene le informazioni necessarie per apporre una firma digitale al manifesto 
 
 ```xml
 
-<Signature> 
-   XML signature information 
+<Signature> 
+   XML signature information 
 </Signature>
 ```
 

@@ -1,5 +1,7 @@
 ---
 title: Configurare il comportamento della richiesta di attendibilità ClickOnce | Microsoft Docs
+description: Informazioni su come configurare la richiesta di attendibilità ClickOnce per controllare se gli utenti finali hanno la possibilità di installare applicazioni ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4becc0244f42507b581029b2dfe21c71570db6
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 68d39bed64ff1392c83d6fc2be0de936ac1b00d2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852231"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350062"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Procedura: Configurare il comportamento di richiesta di attendibilità di ClickOnce
 È possibile configurare la richiesta di attendibilità ClickOnce per controllare se gli utenti finali hanno la possibilità di installare applicazioni ClickOnce, ad esempio Windows Forms applicazioni, Windows Presentation Foundation applicazioni, applicazioni console, applicazioni browser WPF e soluzioni Office. Per configurare la richiesta di attendibilità, impostare le chiavi del registro di sistema nel computer di ogni utente finale.
@@ -38,7 +40,7 @@ ms.locfileid: "90852231"
 
  La tabella seguente illustra il comportamento predefinito per ogni zona. La colonna applicazioni si riferisce Windows Forms applicazioni, Windows Presentation Foundation applicazioni, applicazioni browser WPF e applicazioni console.
 
-|Zona|Applicazioni|soluzioni Office|
+|Zona|APPLICAZIONI|soluzioni Office|
 |----------|------------------|----------------------|
 |`MyComputer`|`Enabled`|`Enabled`|
 |`LocalIntranet`|`Enabled`|`Enabled`|
@@ -55,7 +57,7 @@ ms.locfileid: "90852231"
 
 1. Aprire l'editor del registro di sistema:
 
-    1. Fare clic sul pulsante **Start**e quindi scegliere **Esegui**.
+    1. Fare clic sul pulsante **Start** e quindi scegliere **Esegui**.
 
     2. Nella casella **Apri** Digitare `regedit` , quindi fare clic su **OK**.
 
@@ -65,9 +67,9 @@ ms.locfileid: "90852231"
 
      Se la chiave non esiste, crearla.
 
-3. Aggiungere le sottochiavi seguenti come **valore di stringa**, se non esistono già, con i valori associati indicati nella tabella seguente.
+3. Aggiungere le sottochiavi seguenti come **valore di stringa** , se non esistono già, con i valori associati indicati nella tabella seguente.
 
-    |Sottochiave valore stringa|valore|
+    |Sottochiave valore stringa|Valore|
     |-------------------------|-----------|
     |`Internet`|`Enabled`|
     |`UntrustedSites`|`Disabled`|
@@ -114,7 +116,7 @@ ms.locfileid: "90852231"
 
 1. Aprire l'editor del registro di sistema:
 
-    1. Fare clic sul pulsante **Start**e quindi scegliere **Esegui**.
+    1. Fare clic sul pulsante **Start** e quindi scegliere **Esegui**.
 
     2. Nella casella **Apri** Digitare `regedit` , quindi fare clic su **OK**.
 
@@ -124,9 +126,9 @@ ms.locfileid: "90852231"
 
      Se la chiave non esiste, crearla.
 
-3. Aggiungere le sottochiavi seguenti come **valore di stringa**, se non esistono già, con i valori associati indicati nella tabella seguente.
+3. Aggiungere le sottochiavi seguenti come **valore di stringa** , se non esistono già, con i valori associati indicati nella tabella seguente.
 
-    |Sottochiave valore stringa|valore|
+    |Sottochiave valore stringa|Valore|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`AuthenticodeRequired`|
@@ -171,7 +173,7 @@ ms.locfileid: "90852231"
 
 1. Aprire l'editor del registro di sistema:
 
-    1. Fare clic sul pulsante **Start**e quindi scegliere **Esegui**.
+    1. Fare clic sul pulsante **Start** e quindi scegliere **Esegui**.
 
     2. Nella casella **Apri** Digitare `regedit` , quindi fare clic su **OK**.
 
@@ -181,9 +183,9 @@ ms.locfileid: "90852231"
 
      Se la chiave non esiste, crearla.
 
-3. Aggiungere le sottochiavi seguenti come **valore di stringa**, se non esistono già, con i valori associati indicati nella tabella seguente.
+3. Aggiungere le sottochiavi seguenti come **valore di stringa** , se non esistono già, con i valori associati indicati nella tabella seguente.
 
-    |Sottochiave valore stringa|valore|
+    |Sottochiave valore stringa|Valore|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`Disabled`|

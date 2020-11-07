@@ -1,5 +1,6 @@
 ---
 title: Installare i prerequisiti con un'app ClickOnce
+description: Informazioni su come selezionare i componenti dei prerequisiti da creare in un pacchetto insieme all'applicazione ClickOnce durante l'installazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e815c45f776635d811c073114e22c3bd002de0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e4a2f2b951881208d3995aeb1f5f1f655b80674f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809120"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349932"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Procedura: Installare i prerequisiti con un'applicazione ClickOnce
 Per tutte le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazioni è necessario che la versione corretta del .NET Framework sia installata in un computer prima di poter essere eseguita. molte applicazioni hanno anche altri prerequisiti. Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione, è possibile scegliere un set di componenti dei prerequisiti da assemblare insieme all'applicazione. Al momento dell'installazione, verrà eseguito un controllo per ogni prerequisito per determinare se esiste già. in caso contrario, verrà installato prima di installare l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione.
@@ -39,7 +40,7 @@ Per tutte le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a
 
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Per specificare i prerequisiti per l'installazione di con un'applicazione ClickOnce
 
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **proprietà**dal menu **progetto** .
+1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **proprietà** dal menu **progetto** .
 
 2. Selezionare il riquadro **pubblica** .
 
@@ -53,7 +54,7 @@ Per tutte le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a
 
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Per specificare un percorso di download diverso per i prerequisiti
 
-1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **proprietà**dal menu **progetto** .
+1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **proprietà** dal menu **progetto** .
 
 2. Selezionare il riquadro **pubblica** .
 
