@@ -414,12 +414,16 @@
                   href: ide/reference/datetime-timespan-completion.md
                 - name: Incapsula campo
                   href: ide/reference/encapsulate-field.md
+                - name: Estrai classe di base
+                  href: ide/reference/extract-base-class.md
                 - name: Estrarre l'interfaccia
                   href: ide/reference/extract-interface.md
                 - name: Estrai metodo
                   href: ide/reference/extract-method.md
                 - name: Estrai funzione locale
                   href: ide/reference/extract-local-function.md
+                - name: Metodo inline
+                  href: ide/reference/inline-method.md
                 - name: Variabile temporanea inline
                   href: ide/reference/inline-temporary-variable.md
                 - name: Completamento di IntelliSense per tipi e metodi di estensione non importati
@@ -428,8 +432,8 @@
                   href: ide/reference/invert-conditional-logical.md
                 - name: Istruzione Invert if
                   href: ide/reference/invert-if-statement.md
-                - name: Opzioni di refactoring delle funzioni locali statiche
-                  href: ide/reference/static-local-function-refactor-options.md
+                - name: Impostare una classe come astratta
+                  href: ide/reference/make-class-abstract.md
                 - name: Rendere il membro statico
                   href: ide/reference/make-member-static.md
                 - name: Spostare la dichiarazione vicino al riferimento
@@ -456,6 +460,8 @@
                   href: ide/reference/sort-usings.md
                 - name: Istruzioni if di suddivisione o unione
                   href: ide/reference/split-or-merge-if-statement.md
+                - name: Opzioni di refactoring delle funzioni locali statiche
+                  href: ide/reference/static-local-function-refactor-options.md
                 - name: Spazio dei nomi di sincronizzazione e nome della cartella
                   href: ide/reference/sync-namespace-and-folder-name.md
                 - name: Sincronizzare tipo e nome file
@@ -464,6 +470,10 @@
                   href: ide/reference/convert-var-to-explicit-type.md
                 - name: Usare l'espressione lambda o il corpo del blocco
                   href: ide/reference/use-block-body-lambda.md
+                - name: Utilizza nuovo()
+                  href: ide/reference/use-new.md
+                - name: Usa i criteri di ricerca
+                  href: ide/reference/use-pattern-matching.md
                 - name: 'Assegnazioni, variabili e parametri di valori non usati'
                   href: ide/reference/unused-values-parameters.md
                 - name: 'Impostare il ritorno a capo automatico, il rientro e l''allineamento dei refactoring'
