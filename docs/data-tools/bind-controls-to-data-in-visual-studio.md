@@ -1,5 +1,6 @@
 ---
 title: Associare i controlli ai dati
+description: Associare i controlli ai dati in Visual Studio. Creare controlli associati a dati trascinando gli elementi dalla finestra Origini dati.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d812316de46caf7480146003f7ba1950ae3b9e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f92382721558d76cf9e84fa587b322d56af72247
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283034"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382169"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associare controlli ai dati in Visual Studio
 
@@ -45,7 +46,7 @@ Nel contesto di data binding, un'origine dati rappresenta i dati in memoria che 
 
 ## <a name="data-sources-window"></a>Finestra Origini dati
 
-Nella finestra **Origini dati** sono visualizzate le voci relative alle origini dati disponibili per il progetto. Questa finestra è visibile quando un'area di progettazione del modulo è la finestra attiva nel progetto oppure è possibile aprirla (quando un progetto è aperto) scegliendo **Visualizza**  >  **altre**  >  **origini dati**di Windows. È possibile trascinare elementi da questa finestra per creare controlli associati ai dati sottostanti ed è inoltre possibile configurare le origini dati facendo clic con il pulsante destro del mouse.
+Nella finestra **Origini dati** sono visualizzate le voci relative alle origini dati disponibili per il progetto. Questa finestra è visibile quando un'area di progettazione del modulo è la finestra attiva nel progetto oppure è possibile aprirla (quando un progetto è aperto) scegliendo **Visualizza**  >  **altre**  >  **origini dati** di Windows. È possibile trascinare elementi da questa finestra per creare controlli associati ai dati sottostanti ed è inoltre possibile configurare le origini dati facendo clic con il pulsante destro del mouse.
 
 ![Finestra Origini dati](../data-tools/media/raddata-data-sources-window.png)
 
@@ -55,10 +56,10 @@ Per ogni tipo di dati visualizzato nella finestra **Origini dati** viene creato 
 
 Nella tabella seguente sono elencate alcune delle attività più comuni eseguite per associare i controlli ai dati.
 
-|Attività|Altre informazioni|
+|Attività|Ulteriori informazioni|
 |----------| - |
 |Aprire la finestra **Origini dati**.|Aprire un'area di progettazione nell'editor e scegliere **Visualizza**  >  **origini dati**.|
-|Aggiungere un'origine dati al progetto.|[Aggiungi nuova origine dati](../data-tools/add-new-data-sources.md)|
+|Aggiungere un'origine dati al progetto.|[Aggiungere nuove origini dati](../data-tools/add-new-data-sources.md)|
 |Impostare il controllo che viene creato quando si trascina un elemento dalla finestra **Origini dati** alla finestra di progettazione.|[Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |Modificare l'elenco dei controlli associati agli elementi nella finestra **Origini dati**.|[Aggiungere controlli personalizzati alla finestra Origini dati](../data-tools/add-custom-controls-to-the-data-sources-window.md)|
 |Creare controlli associati a dati.|[Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)<br /><br /> [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)|

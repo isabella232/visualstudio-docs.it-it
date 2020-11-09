@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;elemento assemblyIdentity (applicazione ClickOnce) | Microsoft Docs'
+description: L'elemento assemblyIdentity è obbligatorio nell'applicazione ClickOnce. Non contiene elementi figlio e ha attributi descritti in questo articolo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7870fcf644103ec7f048a809e439cb962f63bd07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c86d5d1fd1e25b498405197b68efd9553ed64f16
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900667"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383209"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;&gt;elemento assemblyIdentity (applicazione ClickOnce)
 Identifica l'applicazione distribuita in una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione.
@@ -46,7 +48,7 @@ Identifica l'applicazione distribuita in una [!INCLUDE[ndptecclick](../deploymen
 |---------------|-----------------|
 |`Name`|Obbligatorio. Identifica il nome dell'applicazione.<br /><br /> Se `Name` contiene caratteri speciali, ad esempio virgolette singole o doppie, l'attivazione dell'applicazione potrebbe non riuscire.|
 |`Version`|Obbligatorio. Specifica il numero di versione dell'applicazione nel formato seguente: `major.minor.build.revision`|
-|`publicKeyToken`|facoltativo. Specifica una stringa esadecimale di 16 caratteri che rappresenta gli ultimi 8 byte del `SHA-1` valore hash della chiave pubblica in cui l'applicazione o l'assembly è firmato. La chiave pubblica usata per firmare il catalogo deve essere di 2048 bit o superiore.<br /><br /> Sebbene la firma di un assembly sia consigliata ma facoltativa, questo attributo è obbligatorio. Se un assembly non è firmato, è necessario copiare un valore da un assembly autofirmato oppure utilizzare un valore "fittizio" di tutti gli zeri.|
+|`publicKeyToken`|Facoltativa. Specifica una stringa esadecimale di 16 caratteri che rappresenta gli ultimi 8 byte del `SHA-1` valore hash della chiave pubblica in cui l'applicazione o l'assembly è firmato. La chiave pubblica usata per firmare il catalogo deve essere di 2048 bit o superiore.<br /><br /> Sebbene la firma di un assembly sia consigliata ma facoltativa, questo attributo è obbligatorio. Se un assembly non è firmato, è necessario copiare un valore da un assembly autofirmato oppure utilizzare un valore "fittizio" di tutti gli zeri.|
 |`processorArchitecture`|Obbligatorio. Specifica il processore. I valori validi sono `msil` per tutti i processori, `x86` per windows a 32 bit, `IA64` per Windows a 64 bit e `Itanium` per processori Itanium Intel 64-bit.|
 |`language`|Obbligatorio. Identifica i codici di lingua in due parti (ad esempio, `en-US` ) dell'assembly. Questo elemento si trova nello `asmv2` spazio dei nomi. Se non è specificato, il valore predefinito è `neutral` .|
 

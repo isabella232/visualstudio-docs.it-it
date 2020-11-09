@@ -1,5 +1,7 @@
 ---
 title: Scelta di una strategia di distribuzione ClickOnce | Microsoft Docs
+description: Informazioni sulle strategie per la distribuzione di un'applicazione ClickOnce e su come scegliere una strategia a seconda del tipo di applicazione che si sta distribuendo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b4ed387d00c96c1d66fdac0bb92a0bfbae7c530
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d623c47960a3c1a44c184df52488682659d5238d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839324"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383170"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Scegliere una strategia di distribuzione ClickOnce
 Per la distribuzione di un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sono disponibili tre diverse strategie. La scelta dipende principalmente dal tipo di applicazione che si desidera distribuire. Le tre strategie di distribuzione sono elencate di seguito:

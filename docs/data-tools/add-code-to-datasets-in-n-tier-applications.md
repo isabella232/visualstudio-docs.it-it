@@ -1,5 +1,6 @@
 ---
 title: Aggiungere codice nei set di dati di applicazioni a più livelli
+description: Aggiungere codice ai DataSet nelle app a più livelli in Visual Studio. Creare un file di classe parziale per un set di dati e aggiungervi codice, anziché a DataSetName. DataSet. designer.
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a57a05ddb8317ea31b852ded369ad7ef69d40bd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdbd6e728ebd4adea1a18d842651e9941098249c
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283086"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382195"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Aggiungere codice nei set di dati di applicazioni a più livelli
 
@@ -26,7 +27,7 @@ Per estendere la funzionalità di un set di dati, è possibile creare un file di
 
 Il codice che definisce un set di dati viene generato ogni volta che vengono apportate modifiche alla definizione del set di dati (nel DataSet tipizzato). Questo codice viene generato anche quando si apportano modifiche durante l'esecuzione di una procedura guidata che modifica la configurazione di un set di dati. Per impedire l'eliminazione del codice durante la rigenerazione di un set di dati, aggiungere il codice al file di classe parziale del set di dati.
 
-Per impostazione predefinita, dopo aver separato il set di dati e il codice TableAdapter, il risultato è un file di classe discreto in ogni progetto. Il progetto originale include un file denominato *DataSetName. designer. vb* (o *DataSetName.designer.cs*) che contiene il codice TableAdapter. Il progetto designato nella proprietà del **progetto DataSet** contiene un file denominato *DataSetname. DataSet. designer. vb* (o *DataSetName.DataSet.designer.cs*). Questo file contiene il codice del set di dati.
+Per impostazione predefinita, dopo aver separato il set di dati e il codice TableAdapter, il risultato è un file di classe discreto in ogni progetto. Il progetto originale include un file denominato *DataSetName. designer. vb* (o *DataSetName.designer.cs* ) che contiene il codice TableAdapter. Il progetto designato nella proprietà del **progetto DataSet** contiene un file denominato *DataSetname. DataSet. designer. vb* (o *DataSetName.DataSet.designer.cs* ). Questo file contiene il codice del set di dati.
 
 > [!NOTE]
 > Quando si separano i set di dati e i TableAdapter (impostando la proprietà del **progetto DataSet** ), le classi del set di dati parziali esistenti nel progetto non verranno spostate automaticamente. Le classi parziali del set di dati esistenti devono essere spostate manualmente nel progetto DataSet.

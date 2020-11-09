@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;elemento compatibleFrameworks (distribuzione ClickOnce) | Microsoft Docs'
+description: L'elemento compatibleFrameworks identifica le versioni del .NET Framework in cui l'applicazione può essere installata ed eseguita.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99db3d51414197df469aaa2eabe97e0967c31b05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5da9819cd3df667be5e8fa04372684f82762c037
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66746036"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383066"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;&gt;elemento compatibleFrameworks (distribuzione ClickOnce)
 Identifica le versioni di .NET Framework in cui è possibile installare ed eseguire questa applicazione.
@@ -31,12 +33,12 @@ Identifica le versioni di .NET Framework in cui è possibile installare ed esegu
 
 ```xml
 <compatibleFrameworks
-      SupportUrl> 
+      SupportUrl> 
    <framework
       targetVersion
       profile
       supportedRuntime
-   /> 
+   /> 
 </ compatibleFrameworks>
 ```
 
@@ -47,7 +49,7 @@ Identifica le versioni di .NET Framework in cui è possibile installare ed esegu
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|`S` `upportUrl`|facoltativo. Specifica un URL in cui è possibile scaricare la versione .NET Framework compatibile preferita.|
+|`S` `upportUrl`|Facoltativa. Specifica un URL in cui è possibile scaricare la versione .NET Framework compatibile preferita.|
 
 ## <a name="framework"></a>framework
  Obbligatorio. Nella tabella seguente sono elencati gli attributi `framework` supportati dall'elemento.
@@ -58,7 +60,7 @@ Identifica le versioni di .NET Framework in cui è possibile installare ed esegu
 |`profile`|Obbligatorio. Specifica il profilo della .NET Framework di destinazione.|
 |`supportedRuntime`|Obbligatorio. Specifica il numero di versione del runtime associato alla .NET Framework di destinazione.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 ## <a name="example"></a>Esempio
  Nell'esempio di codice riportato di seguito viene illustrato un `compatibleFrameworks` elemento in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto di distribuzione. Questa distribuzione può essere eseguita in [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] . Può anche essere eseguito nel .NET Framework 4 perché è un superset di [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)] .

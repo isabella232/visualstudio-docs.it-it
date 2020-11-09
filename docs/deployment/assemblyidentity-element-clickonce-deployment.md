@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;elemento assemblyIdentity (distribuzione ClickOnce) | Microsoft Docs'
+description: L'elemento assemblyIdentity è obbligatorio nella distribuzione ClickOnce. Non contiene elementi figlio e ha attributi descritti in questo articolo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56525cc0c0c754a7fa3a1f4c2c5b6cf2e941e9b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a692d37771070f1835fc791515d5dbc24ce6b1b
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929061"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383183"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;&gt;elemento assemblyIdentity (distribuzione ClickOnce)
 Identifica l'assembly primario dell' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione.
@@ -30,8 +32,8 @@ Identifica l'assembly primario dell' [!INCLUDE[ndptecclick](../deployment/includ
 
 ```xml
 
-      <assemblyIdentity  
-   name 
+      <assemblyIdentity  
+   name 
    version
    publicKeyToken
    processorArchitecture
@@ -50,7 +52,7 @@ Identifica l'assembly primario dell' [!INCLUDE[ndptecclick](../deployment/includ
 |`processorArchitecture`|Obbligatorio. Specifica il processore. I valori validi sono `msil` per tutti i processori, `x86` per windows a 32 bit, `IA64` per Windows a 64 bit e `Itanium` per processori Itanium Intel 64-bit.|
 |`type`|Obbligatorio. Per la compatibilità con la tecnologia di installazione side-by-side di Windows. L'unico valore consentito è `win32` .|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 ## <a name="example"></a>Esempio
  Nell'esempio di codice riportato di seguito viene illustrato un `assemblyIdentity` elemento in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto di distribuzione. Questo esempio di codice fa parte di un esempio più ampio fornito per l'argomento [manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md) .

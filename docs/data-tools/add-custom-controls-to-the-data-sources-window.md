@@ -1,5 +1,6 @@
 ---
 title: Aggiungere controlli personalizzati alla finestra Origini dati
+description: Aggiungere controlli personalizzati alla finestra Origini dati in Visual Studio. Personalizzare l'elenco di controlli associabili. Aggiungere i controlli associati.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: ghogen
 ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: 39ff272581793be9b456bbc404119a488850b3c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 004004a420374f3b0ce9504098ac5836cb307f1d
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283073"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382065"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Aggiungere controlli personalizzati alla finestra Origini dati
 
@@ -39,7 +40,7 @@ Per aggiungere o rimuovere controlli dall'elenco dei controlli disponibili per g
 2. Nella finestra **origini dati** fare clic su un elemento che fa parte di un'origine dati aggiunta alla finestra, quindi fare clic sul menu a discesa per l'elemento.
 
    > [!TIP]
-   > Se la finestra Origini dati non è aperta, aprirla selezionando **Visualizza**  >  **altre**  >  **origini dati**di Windows.
+   > Se la finestra Origini dati non è aperta, aprirla selezionando **Visualizza**  >  **altre**  >  **origini dati** di Windows.
 
 3. Nel menu a discesa fare clic su **Personalizza**. Si apre una delle finestre di dialogo seguenti:
 

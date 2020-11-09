@@ -1,5 +1,7 @@
 ---
 title: Eseguire il debug di app ClickOnce che usano System. Deployment. Application
+description: Informazioni su come usare e personalizzare le funzionalità di distribuzione ClickOnce avanzate accedendo al modello a oggetti di distribuzione fornito da System. Deployment. Application.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 203f1edc2e29bbbc34fb39e6aa01c1b56bf20e91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e79b6a64eff9eab92a05624f6ca71ae7a242ad2
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382653"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382988"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Debug di applicazioni ClickOnce in cui si usa System.Deployment.Application
 In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione consente di configurare la modalità di aggiornamento di un'applicazione. Tuttavia, se è necessario utilizzare e personalizzare [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le funzionalità di distribuzione avanzate, sarà necessario accedere al modello a oggetti di distribuzione fornito da <xref:System.Deployment.Application> . È possibile usare le <xref:System.Deployment.Application> API per le attività avanzate, ad esempio:
@@ -43,11 +45,11 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 2. Distribuire la versione 1 dell'applicazione.
 
-3. Creare una nuova soluzione vuota. Scegliere **Nuovo** dal menu **File**, quindi **Progetto**. Nella finestra di dialogo **nuovo progetto** aprire il nodo **altri tipi di progetto** , quindi selezionare la cartella **soluzioni di Visual Studio** . Nel riquadro **modelli** selezionare **soluzione vuota**.
+3. Creare una nuova soluzione vuota. Scegliere **Nuovo** dal menu **File** , quindi **Progetto**. Nella finestra di dialogo **nuovo progetto** aprire il nodo **altri tipi di progetto** , quindi selezionare la cartella **soluzioni di Visual Studio** . Nel riquadro **modelli** selezionare **soluzione vuota**.
 
-4. Aggiungere il percorso di origine archiviato alle proprietà per la nuova soluzione. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo della soluzione, quindi scegliere **Proprietà**. Nella finestra di dialogo **pagine delle proprietà** selezionare **debug dei file di origine**, quindi aggiungere la directory del codice sorgente archiviato. In caso contrario, il debugger troverà i file di origine non aggiornati, perché i percorsi dei file di origine vengono registrati nel file con estensione pdb. Se il debugger usa file di origine obsoleti, viene visualizzato un messaggio che informa che l'origine non corrisponde.
+4. Aggiungere il percorso di origine archiviato alle proprietà per la nuova soluzione. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo della soluzione, quindi scegliere **Proprietà**. Nella finestra di dialogo **pagine delle proprietà** selezionare **debug dei file di origine** , quindi aggiungere la directory del codice sorgente archiviato. In caso contrario, il debugger troverà i file di origine non aggiornati, perché i percorsi dei file di origine vengono registrati nel file con estensione pdb. Se il debugger usa file di origine obsoleti, viene visualizzato un messaggio che informa che l'origine non corrisponde.
 
-5. Verificare che il debugger possa trovare i file con *estensione PDB* . Se sono stati distribuiti con l'applicazione, il debugger li troverà automaticamente. Viene sempre visualizzato in primo luogo accanto all'assembly in questione. In caso contrario, sarà necessario aggiungere il percorso di archiviazione ai **percorsi dei file di simboli (con estensione pdb)** . per accedere a questa opzione, scegliere **Opzioni**dal menu **strumenti** , quindi aprire il nodo **debug** e fare clic su **simboli**.
+5. Verificare che il debugger possa trovare i file con *estensione PDB* . Se sono stati distribuiti con l'applicazione, il debugger li troverà automaticamente. Viene sempre visualizzato in primo luogo accanto all'assembly in questione. In caso contrario, sarà necessario aggiungere il percorso di archiviazione ai **percorsi dei file di simboli (con estensione pdb)** . per accedere a questa opzione, scegliere **Opzioni** dal menu **strumenti** , quindi aprire il nodo **debug** e fare clic su **simboli**.
 
 6. Eseguire il debug di ciò che accade tra le `CheckForUpdate` `Download` / `Update` chiamate al metodo e.
 

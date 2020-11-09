@@ -1,5 +1,7 @@
 ---
 title: Sicurezza e distribuzione di ClickOnce | Microsoft Docs
+description: Informazioni sul supporto di Visual Studio per ClickOnce, una tecnologia di distribuzione che consente di creare applicazioni basate su Windows con aggiornamento automatico.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d33e99d11007ca4684f3d875620e2baeb7ddc1e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b055928212dd4b094f4bd8987f6ce03960e932f1
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285494"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382676"
 ---
 # <a name="clickonce-security-and-deployment"></a>Sicurezza e distribuzione di ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è una tecnologia di distribuzione che consente di creare applicazioni basate su Windows con aggiornamento automatico che possono essere installate ed eseguite con interazioni utente minime. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fornisce supporto completo per la pubblicazione e l'aggiornamento di applicazioni distribuite con la tecnologia ClickOnce se i progetti sono stati sviluppati con Visual Basic e Visual C#. Per informazioni sulla distribuzione di applicazioni Visual C++, vedere [la pagina relativa alla distribuzione ClickOnce per le applicazioni Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).
@@ -38,7 +40,7 @@ ms.locfileid: "85285494"
   In passato, questi problemi causavano talvolta la creazione di applicazioni Web anziché di applicazioni basate su Windows, sacrificando un'interfaccia utente avanzata per semplificare l'installazione. Utilizzando le applicazioni distribuite mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , è possibile sfruttare al meglio entrambe le tecnologie.
 
 ## <a name="what-is-a-clickonce-application"></a>Che cos'è un'applicazione ClickOnce?
- Un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione è qualsiasi Windows Presentation Foundation (*. XBAP*), Windows Forms (*exe*), applicazione console (*exe*) o soluzione Office (con*estensione dll*) pubblicata usando la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnologia. È possibile pubblicare un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione in tre modi diversi: da una pagina Web, da una condivisione file di rete o da un supporto come un CD-ROM. Un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione può essere installata nel computer di un utente finale ed eseguita localmente anche quando il computer è offline oppure può essere eseguito in modalità solo online senza installare in modo permanente alcun elemento nel computer dell'utente finale. Per ulteriori informazioni, vedere [scelta di una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
+ Un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione è qualsiasi Windows Presentation Foundation ( *. XBAP* ), Windows Forms ( *exe* ), applicazione console ( *exe* ) o soluzione Office (con *estensione dll* ) pubblicata usando la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnologia. È possibile pubblicare un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione in tre modi diversi: da una pagina Web, da una condivisione file di rete o da un supporto come un CD-ROM. Un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione può essere installata nel computer di un utente finale ed eseguita localmente anche quando il computer è offline oppure può essere eseguito in modalità solo online senza installare in modo permanente alcun elemento nel computer dell'utente finale. Per ulteriori informazioni, vedere [scelta di una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni possono essere con aggiornamento automatico; possono verificare la disponibilità di versioni più recenti e sostituire automaticamente eventuali file aggiornati. Lo sviluppatore può specificare il comportamento di aggiornamento; un amministratore di rete può controllare le strategie di aggiornamento, ad esempio, rendendo obbligatorio un aggiornamento. È anche possibile eseguire il rollback degli aggiornamenti a una versione precedente dall'utente finale o da un amministratore. Per ulteriori informazioni, vedere [scelta di una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
@@ -60,7 +62,7 @@ ms.locfileid: "85285494"
  L' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] architettura di distribuzione principale si basa su due file manifesto XML: un manifesto dell'applicazione e un manifesto di distribuzione. I file vengono utilizzati per descrivere la posizione di installazione delle applicazioni ClickOnce, il modo in cui vengono aggiornate e il momento in cui vengono aggiornate.
 
 ### <a name="publish-clickonce-applications"></a>Pubblicare applicazioni ClickOnce
- Il manifesto dell'applicazione descrive l'applicazione stessa. Sono inclusi gli assembly, le dipendenze e i file che costituiscono l'applicazione, le autorizzazioni necessarie e il percorso in cui saranno disponibili gli aggiornamenti. Lo sviluppatore dell'applicazione crea il manifesto dell'applicazione usando la pubblicazione guidata in Visual Studio o il Strumento per la generazione e la modifica di manifesti (*Mage.exe*) in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Per altre informazioni, vedere [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ Il manifesto dell'applicazione descrive l'applicazione stessa. Sono inclusi gli assembly, le dipendenze e i file che costituiscono l'applicazione, le autorizzazioni necessarie e il percorso in cui saranno disponibili gli aggiornamenti. Lo sviluppatore dell'applicazione crea il manifesto dell'applicazione usando la pubblicazione guidata in Visual Studio o il Strumento per la generazione e la modifica di manifesti ( *Mage.exe* ) in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Per altre informazioni, vedere [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
  Il manifesto di distribuzione descrive il modo in cui viene distribuita l'applicazione. Inclusi il percorso del manifesto dell'applicazione e la versione dell'applicazione che i client devono eseguire.
 

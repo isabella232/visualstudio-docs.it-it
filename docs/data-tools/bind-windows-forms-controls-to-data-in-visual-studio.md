@@ -1,5 +1,6 @@
 ---
 title: Associare controlli Windows Form ai dati
+description: Associare Windows Forms controlli ai dati in Visual Studio in modo che sia possibile visualizzare i dati agli utenti dell'applicazione.
 ms.date: 11/03/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9af6c503b34d00ea88e74b8af40cd9e7ded643ff
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 48697fb5a031496b5e69c4dd8d6821ad243d3874
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508548"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382377"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Associare controlli Windows Form ai dati in Visual Studio
 
@@ -31,7 +32,7 @@ ms.locfileid: "89508548"
 ![Operazione di trascinamento dell'origine dati](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> Se la finestra **origini dati** non è visibile, è possibile aprirla scegliendo **Visualizza**  >  **altre**  >  **origini dati**di Windows o premendo **MAIUSC** + **ALT** + **D**. Per visualizzare la finestra **origini dati** , è necessario aprire un progetto in Visual Studio.
+> Se la finestra **origini dati** non è visibile, è possibile aprirla scegliendo **Visualizza**  >  **altre**  >  **origini dati** di Windows o premendo **MAIUSC** + **ALT** + **D**. Per visualizzare la finestra **origini dati** , è necessario aprire un progetto in Visual Studio.
 
 Prima di trascinare gli elementi, è possibile impostare il tipo di controllo a cui si desidera eseguire l'associazione. Vengono visualizzati valori diversi a seconda che si scelga la tabella o una singola colonna.  È anche possibile impostare valori personalizzati. Per una tabella, **Dettagli** indica che ogni colonna è associata a un controllo separato.
 
@@ -67,7 +68,7 @@ Se i controlli necessari per l'applicazione non sono disponibili nella finestra 
 
 ## <a name="bind-to-data-in-individual-controls"></a>Eseguire l'associazione ai dati nei singoli controlli
 
-Quando si associa un'origine dati ai **Dettagli**, ogni colonna del set di dati viene associata a un controllo separato.
+Quando si associa un'origine dati ai **Dettagli** , ogni colonna del set di dati viene associata a un controllo separato.
 
 ![Associa origine dati ai dettagli](../data-tools/media/raddata-bind-data-source-to-details.png)
 

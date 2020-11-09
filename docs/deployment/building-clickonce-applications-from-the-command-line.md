@@ -1,5 +1,7 @@
 ---
 title: Compilazione di applicazioni ClickOnce dalla riga di comando | Microsoft Docs
+description: Informazioni su come creare progetti di Visual Studio dalla riga di comando, che consente di riprodurre una compilazione usando un processo automatizzato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 065eea058ffa78c84428e031832e24837eb81d08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8423c2820aaf7daf479df6c14dd2e8de9e0e6e5a
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74797208"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383196"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Compilare applicazioni ClickOnce dalla riga di comando
 In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] è possibile compilare progetti dalla riga di comando, anche se vengono creati nel Integrated Development Environment (IDE). Infatti, è possibile ricompilare un progetto creato con [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] in un altro computer in cui è installato solo il .NET Framework. In questo modo è possibile riprodurre una compilazione utilizzando un processo automatizzato, ad esempio, in un Lab di compilazione centrale o utilizzando tecniche di scripting avanzate oltre all'ambito della compilazione del progetto stesso.
@@ -29,7 +31,7 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>Usare MSBuild per riprodurre le distribuzioni di applicazioni ClickOnce
  Quando si richiama MSBuild/target: Publish dalla riga di comando, indica al sistema MSBuild di compilare il progetto e di creare un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione nella cartella di pubblicazione. Questa operazione equivale alla selezione del comando **Publish** nell'IDE.
 
- Questo comando esegue *msbuild.exe*, che si trova nel percorso dell'ambiente del prompt dei comandi di Visual Studio.
+ Questo comando esegue *msbuild.exe* , che si trova nel percorso dell'ambiente del prompt dei comandi di Visual Studio.
 
  Una "destinazione" è un indicatore di MSBuild sull'elaborazione del comando. Le destinazioni principali sono la destinazione "Build" e la destinazione "Publish". La destinazione di compilazione equivale alla selezione del comando di compilazione (o alla pressione di F5) nell'IDE. Se si vuole solo compilare il progetto, è possibile ottenere questo risultato digitando `msbuild` . Questo comando funziona perché la destinazione di compilazione è la destinazione predefinita per tutti i progetti generati da [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] . Ciò significa che non è necessario specificare in modo esplicito la destinazione di compilazione. Pertanto, digitando `msbuild` è la stessa operazione della digitazione `msbuild /target:build` .
 
@@ -63,9 +65,9 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 1. Chiudere [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 
-2. Dal menu **Start** di Windows fare clic su **tutti i programmi**, quindi **Microsoft Visual Studio**, quindi **strumenti di Visual Studio**, quindi prompt dei **comandi di Visual Studio**. Verrà visualizzato un prompt dei comandi nella cartella radice dell'utente corrente.
+2. Dal menu **Start** di Windows fare clic su **tutti i programmi** , quindi **Microsoft Visual Studio** , quindi **strumenti di Visual Studio** , quindi prompt dei **comandi di Visual Studio**. Verrà visualizzato un prompt dei comandi nella cartella radice dell'utente corrente.
 
-3. Al **prompt dei comandi di Visual Studio**, impostare la directory corrente sul percorso del progetto appena creato. Ad esempio digitare `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
+3. Al **prompt dei comandi di Visual Studio** , impostare la directory corrente sul percorso del progetto appena creato. Ad esempio digitare `chdir My Documents\Visual Studio\Projects\CmdLineDemo`.
 
 4. Per rimuovere i file esistenti prodotti in "per creare e pubblicare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] progetto", digitare `rmdir /s publish` .
 
@@ -73,7 +75,7 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 5. Digitare `msbuild /target:publish`.
 
-   I passaggi precedenti produrranno una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione completa dell'applicazione in una sottocartella del progetto denominato **Publish**. *CmdLineDemo. Application* è il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto della distribuzione. La cartella *CmdLineDemo_1.0.0.0* contiene i file *CmdLineDemo.exe* e *CmdLineDemo.exe. manifest*, il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. *Setup.exe* è il programma di avvio automatico, che per impostazione predefinita è configurato per installare il .NET Framework. La cartella DotNetFX contiene i ridistribuibili per la .NET Framework. Si tratta dell'intero set di file necessari per distribuire l'applicazione sul Web o tramite UNC o CD/DVD.
+   I passaggi precedenti produrranno una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione completa dell'applicazione in una sottocartella del progetto denominato **Publish**. *CmdLineDemo. Application* è il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto della distribuzione. La cartella *CmdLineDemo_1.0.0.0* contiene i file *CmdLineDemo.exe* e *CmdLineDemo.exe. manifest* , il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. *Setup.exe* è il programma di avvio automatico, che per impostazione predefinita è configurato per installare il .NET Framework. La cartella DotNetFX contiene i ridistribuibili per la .NET Framework. Si tratta dell'intero set di file necessari per distribuire l'applicazione sul Web o tramite UNC o CD/DVD.
    
 > [!NOTE]
 > Il sistema MSBuild usa l'opzione **PublishDir** per specificare il percorso per l'output, ad esempio `msbuild /t:publish /p:PublishDir="<specific location>"` .
@@ -81,7 +83,7 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 ## <a name="publish-properties"></a>Pubblica proprietà
  Quando si pubblica l'applicazione nelle procedure precedenti, le proprietà seguenti vengono inserite nel file di progetto tramite la pubblicazione guidata. Queste proprietà influiscono direttamente sulla modalità di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] produzione dell'applicazione.
 
- In *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj*:
+ In *CmdLineDemo. vbproj*  /  *CmdLineDemo. csproj* :
 
 ```xml
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>
@@ -109,7 +111,7 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 msbuild /target:publish /property:BootstrapperEnabled=false
 ```
 
- Le proprietà di pubblicazione sono controllate [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dalle pagine delle proprietà **pubblica**, **sicurezza**e **firma** di **Progettazione progetti**. Di seguito è riportata una descrizione delle proprietà di pubblicazione, insieme a un'indicazione del modo in cui ciascuna è impostata nelle varie pagine delle proprietà di progettazione applicazione:
+ Le proprietà di pubblicazione sono controllate [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dalle pagine delle proprietà **pubblica** , **sicurezza** e **firma** di **Progettazione progetti**. Di seguito è riportata una descrizione delle proprietà di pubblicazione, insieme a un'indicazione del modo in cui ciascuna è impostata nelle varie pagine delle proprietà di progettazione applicazione:
 
 - `AssemblyOriginatorKeyFile` determina il file di chiave usato per firmare i [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti dell'applicazione. Questa stessa chiave può essere usata anche per assegnare un nome sicuro agli assembly. Questa proprietà è impostata nella pagina **firma** di **Progettazione progetti**.
 
@@ -163,9 +165,9 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 |Opzione URL|Descrizione|
 |----------------|-----------------|
 |`PublishURL`|Obbligatorio se si pubblica l'applicazione ClickOnce in un sito Web.|
-|`InstallURL`|facoltativo. Impostare questa opzione URL se il sito di installazione è diverso da `PublishURL` . Ad esempio, è possibile impostare `PublishURL` su un percorso FTP e impostare `InstallURL` su un URL Web.|
-|`SupportURL`|facoltativo. Impostare questa opzione URL se il sito di supporto è diverso da `PublishURL` . Ad esempio, è possibile impostare sul `SupportURL` sito Web del supporto tecnico della società.|
-|`UpdateURL`|facoltativo. Impostare questa opzione URL se il percorso di aggiornamento è diverso da `InstallURL` . Ad esempio, è possibile impostare `PublishURL` su un percorso FTP e impostare `UpdateURL` su un URL Web.|
+|`InstallURL`|Facoltativa. Impostare questa opzione URL se il sito di installazione è diverso da `PublishURL` . Ad esempio, è possibile impostare `PublishURL` su un percorso FTP e impostare `InstallURL` su un URL Web.|
+|`SupportURL`|Facoltativa. Impostare questa opzione URL se il sito di supporto è diverso da `PublishURL` . Ad esempio, è possibile impostare sul `SupportURL` sito Web del supporto tecnico della società.|
+|`UpdateURL`|Facoltativa. Impostare questa opzione URL se il percorso di aggiornamento è diverso da `InstallURL` . Ad esempio, è possibile impostare `PublishURL` su un percorso FTP e impostare `UpdateURL` su un URL Web.|
 
 ## <a name="see-also"></a>Vedere anche
 - <xref:Microsoft.Build.Tasks.GenerateBootstrapper>

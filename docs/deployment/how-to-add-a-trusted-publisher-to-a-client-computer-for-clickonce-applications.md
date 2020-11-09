@@ -1,5 +1,6 @@
 ---
 title: Aggiungi autore attendibile alla casella client (ClickOnce)
+description: Informazioni su come aggiungere un certificato a un computer client in modo che le applicazioni ClickOnce vengano eseguite a un livello di attendibilità superiore senza chiedere conferma all'utente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4146efe0790e2bfd4abfa9e30897811aba182916
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: cef5eb1df80c7fffcc4a938504e82cac2aa3ae46
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809807"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382702"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Procedura: Aggiungere un autore attendibile a un computer client per applicazioni ClickOnce
 Con la distribuzione di applicazioni attendibili, è possibile configurare i computer client in modo che le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] siano eseguite con un livello di attendibilità superiore senza chiedere conferma all'utente. Le procedure seguenti illustrano come usare lo strumento da riga di comando CertMgr.exe per aggiungere un certificato dell'autore all'archivio editori attendibili in un computer client.
@@ -39,7 +40,7 @@ Con la distribuzione di applicazioni attendibili, è possibile configurare i com
 
 1. Ottenere un certificato digitale da un'autorità di certificazione.
 
-2. Esportare il certificato nel formato Base64 X.509(*.cer*). Per altre informazioni sui formati di certificato, vedere [Esportare un certificato](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Esportare il certificato nel formato Base64 X.509( *.cer* ). Per altre informazioni sui formati di certificato, vedere [Esportare un certificato](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. Dal prompt dei comandi nei computer client eseguire il comando seguente:
 
@@ -49,7 +50,7 @@ Con la distribuzione di applicazioni attendibili, è possibile configurare i com
 
 1. Ottenere un certificato digitale da un'autorità di certificazione.
 
-2. Esportare il certificato nel formato Base64 X.509(*.cer*). Per ulteriori informazioni sui formati di certificato, vedere [esportare un certificato](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
+2. Esportare il certificato nel formato Base64 X.509( *.cer* ). Per ulteriori informazioni sui formati di certificato, vedere [esportare un certificato](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730988(v=ws.10)).
 
 3. Dal prompt dei comandi nei computer client eseguire il comando seguente:
 

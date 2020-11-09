@@ -1,5 +1,7 @@
 ---
 title: Informazioni di riferimento sulle API non gestite ClickOnce | Microsoft Docs
+description: Informazioni sulle API pubbliche ClickOnce non gestite da dfshim.dll, tra cui CleanOnlineAppCache, GetDeploymentDataFromManifest e LaunchApplication.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 api_name:
 - CleanOnlineAppCache
@@ -28,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b536a17df4f54158aa6f157a0d9795cf359ddc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5ca8c18c0ed69080a14ba31d4da6d80fa9ae6d4
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900274"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382611"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Riferimenti alle API non gestite ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API pubbliche non gestite da dfshim.dll.
@@ -44,7 +46,7 @@ ms.locfileid: "62900274"
 ### <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un valore HRESULT che rappresenta l'errore. Se si verifica un'eccezione gestita, restituisce 0x80020009 (DISP_E_EXCEPTION).
 
-### <a name="remarks"></a>Osservazioni
+### <a name="remarks"></a>Commenti
  La chiamata di CleanOnlineAppCache avvierà il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] servizio se non è già in esecuzione.
 
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest
@@ -68,7 +70,7 @@ ms.locfileid: "62900274"
 ### <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un valore HRESULT che rappresenta l'errore. Restituisce HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) se un buffer è troppo piccolo.
 
-### <a name="remarks"></a>Osservazioni
+### <a name="remarks"></a>Commenti
  I puntatori non devono essere null. `pcwzActivationUrl` e `pcwzPathToDeploymentManifest` non devono essere vuoti.
 
  È responsabilità del chiamante pulire l'URL di attivazione. Ad esempio, l'aggiunta di caratteri di escape dove sono necessari o la rimozione della stringa di query.

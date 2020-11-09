@@ -1,5 +1,6 @@
 ---
 title: Accedere ai dati remoti & locali (app ClickOnce)
+description: Informazioni sulle diverse opzioni fornite da ClickOnce per la lettura e la scrittura di dati, sia in locale che in remoto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e93c8479e917e74d31c3eedbb00d9d5911442b92
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: da8eaa4405a83ff349fd3d7486909a9281962126
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810471"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383261"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Accedere a dati locali e remoti in applicazioni ClickOnce
 La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] offre diverse opzioni per la lettura e la scrittura di dati, in locale e in remoto.
@@ -38,7 +39,7 @@ La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](.
 ### <a name="clickonce-data-directory"></a>Directory dei dati di ClickOnce
  Ogni applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installata in un computer locale ha una directory dei dati, archiviata nella cartella dell'utente Documents and Settings. Tutti i file inclusi in un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e contrassegnati come file "data" vengono copiati in questa directory quando viene installata un'applicazione. I file di dati possono essere di qualsiasi tipo. Quelli usati più frequentemente sono i file di testo, i file XML e i file di database, ad esempio i file mdb di Microsoft Access.
 
- La directory dei dati è destinata a dati gestiti dall'applicazione, ossia dati archiviati e gestiti in modo esplicito dall'applicazione. Tutti i file statici senza dipendenze non contrassegnati come "data" nel manifesto dell'applicazione risiedono invece nella directory delle applicazioni. In questa directory si trovano i file eseguibili dell'applicazione (*exe*) e gli assembly.
+ La directory dei dati è destinata a dati gestiti dall'applicazione, ossia dati archiviati e gestiti in modo esplicito dall'applicazione. Tutti i file statici senza dipendenze non contrassegnati come "data" nel manifesto dell'applicazione risiedono invece nella directory delle applicazioni. In questa directory si trovano i file eseguibili dell'applicazione ( *exe* ) e gli assembly.
 
 > [!NOTE]
 > Quando un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] viene disinstallata, viene rimossa anche la directory dei dati. Non usare mai la directory dei dati per archiviare dati gestiti dall'utente finale, ad esempio i documenti.
@@ -61,7 +62,7 @@ La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](.
 
  È anche possibile ottenere il percorso della directory dei dati usando le variabili rilevanti nella classe <xref:System.Windows.Forms.Application> , ad esempio <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.
 
- La manipolazione di altri tipi di file potrebbe richiedere autorizzazioni aggiuntive. Se ad esempio si desidera utilizzare un file di database di Access (con*estensione mdb*), l'applicazione deve asserire l'attendibilità totale per poter utilizzare le \<xref:System.Data> classi pertinenti.
+ La manipolazione di altri tipi di file potrebbe richiedere autorizzazioni aggiuntive. Se ad esempio si desidera utilizzare un file di database di Access (con *estensione mdb* ), l'applicazione deve asserire l'attendibilità totale per poter utilizzare le \<xref:System.Data> classi pertinenti.
 
 #### <a name="data-directory-and-application-versions"></a>Directory dei dati e versioni dell'applicazione
  Ogni versione dell'applicazione ha la propria directory dei dati, isolata rispetto alle altre versioni. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] crea questa directory indipendentemente dai file di dati inclusi nella distribuzione in modo che l'applicazione disponga di un percorso in cui creare i nuovi file di dati in fase di esecuzione. Quando viene installata una nuova versione di un'applicazione, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] copia tutti i file di dati esistenti dalla directory dei dati della versione precedente alla directory dei dati della nuova versione, indipendentemente dal fatto che i file fossero inclusi nella distribuzione originale o siano stati creati dall'applicazione.

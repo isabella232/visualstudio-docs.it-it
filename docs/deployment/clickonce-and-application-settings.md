@@ -1,5 +1,7 @@
 ---
 title: Impostazioni dell'applicazione e ClickOnce | Microsoft Docs
+description: Informazioni sul funzionamento dei file di impostazioni dell'applicazione in un'applicazione ClickOnce e sul modo in cui ClickOnce migra le impostazioni quando l'utente effettua l'aggiornamento alla versione successiva.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a72b5bc3f3645d9af1008f2c178ab285e8b45449
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e51b850fa10ac660fbc3bd3a06428ddb92a060c4
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184133"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383131"
 ---
 # <a name="clickonce-and-application-settings"></a>Impostazioni dell'applicazione e ClickOnce
 Le impostazioni dell'applicazione per Windows Forms semplificano la creazione, l'archiviazione e la gestione delle preferenze personalizzate dell'applicazione e dell'utente nel client. Nel documento seguente viene descritto il funzionamento dei file di impostazioni dell'applicazione in un'applicazione ClickOnce e il modo in cui ClickOnce migra le impostazioni quando l'utente effettua l'aggiornamento alla versione successiva.
@@ -27,11 +29,11 @@ Le impostazioni dell'applicazione per Windows Forms semplificano la creazione, l
  Le informazioni riportate di seguito si applicano solo al provider di impostazioni dell'applicazione predefinito, ovvero la <xref:System.Configuration.LocalFileSettingsProvider> classe. Se si fornisce un provider personalizzato, il provider determinerà il modo in cui archivia i dati e il modo in cui aggiorna le impostazioni tra le versioni. Per altre informazioni sui provider di impostazioni dell'applicazione, vedere [architettura delle impostazioni dell'applicazione](/dotnet/framework/winforms/advanced/application-settings-architecture).
 
 ## <a name="application-settings-files"></a>File di impostazioni dell'applicazione
- Impostazioni applicazione usa due file: * \<app>.exe.config* e *user.config*, dove *app* è il nome del Windows Forms Application. *user.config* viene creato nel client la prima volta che l'applicazione archivia le impostazioni con ambito di utente. * \<app>.exe.config*, al contrario, sarà presente prima della distribuzione se si definiscono i valori predefiniti per le impostazioni. Il file verrà incluso automaticamente in Visual Studio quando si usa il relativo comando di **pubblicazione** . Se si crea l'applicazione ClickOnce usando *Mage.exe* o *MageUI.exe*, è necessario assicurarsi che questo file sia incluso negli altri file dell'applicazione quando si popola il manifesto dell'applicazione.
+ Impostazioni applicazione usa due file: *\<app>.exe.config* e *user.config* , dove *app* è il nome del Windows Forms Application. *user.config* viene creato nel client la prima volta che l'applicazione archivia le impostazioni con ambito di utente. *\<app>.exe.config* , al contrario, sarà presente prima della distribuzione se si definiscono i valori predefiniti per le impostazioni. Il file verrà incluso automaticamente in Visual Studio quando si usa il relativo comando di **pubblicazione** . Se si crea l'applicazione ClickOnce usando *Mage.exe* o *MageUI.exe* , è necessario assicurarsi che questo file sia incluso negli altri file dell'applicazione quando si popola il manifesto dell'applicazione.
 
- In una Windows Forms Application non distribuita tramite ClickOnce, il file di * \<app>.exe.config* di un'applicazione viene archiviato nella directory dell'applicazione, mentre il file di *user.config* è archiviato nella cartella **Documents and Settings** dell'utente. In un'applicazione ClickOnce, * \<app>.exe.config* si trova nella directory dell'applicazione all'interno della cache dell'applicazione ClickOnce e *user.config* si trova nella directory dei dati ClickOnce per l'applicazione.
+ In una Windows Forms Application non distribuita tramite ClickOnce, il file di *\<app>.exe.config* di un'applicazione viene archiviato nella directory dell'applicazione, mentre il file di *user.config* è archiviato nella cartella **Documents and Settings** dell'utente. In un'applicazione ClickOnce, *\<app>.exe.config* si trova nella directory dell'applicazione all'interno della cache dell'applicazione ClickOnce e *user.config* si trova nella directory dei dati ClickOnce per l'applicazione.
 
- Indipendentemente dalla modalità di distribuzione dell'applicazione, le impostazioni dell'applicazione garantiscono l'accesso in lettura sicuro ai * \<app>.exe.config*e l'accesso sicuro in lettura/scrittura ai *user.config*.
+ Indipendentemente dalla modalità di distribuzione dell'applicazione, le impostazioni dell'applicazione garantiscono l'accesso in lettura sicuro ai *\<app>.exe.config* e l'accesso sicuro in lettura/scrittura ai *user.config*.
 
  In un'applicazione ClickOnce, le dimensioni dei file di configurazione utilizzati dalle impostazioni dell'applicazione sono limitate dalle dimensioni della cache ClickOnce. Per altre informazioni, vedere [Panoramica della cache ClickOnce](../deployment/clickonce-cache-overview.md).
 
@@ -42,8 +44,8 @@ Le impostazioni dell'applicazione per Windows Forms semplificano la creazione, l
 
 |Tipo di modifica|Azione di aggiornamento|
 |--------------------|--------------------|
-|Impostazione aggiunta a * \<app>.exe.config*|La nuova impostazione viene unita all' * \<app>.exe.config* della versione corrente|
-|Impostazione rimossa da * \<app>.exe.config*|L'impostazione precedente viene rimossa dalla * \<app>.exe.config* della versione corrente|
+|Impostazione aggiunta a *\<app>.exe.config*|La nuova impostazione viene unita all' *\<app>.exe.config* della versione corrente|
+|Impostazione rimossa da *\<app>.exe.config*|L'impostazione precedente viene rimossa dalla *\<app>.exe.config* della versione corrente|
 |Impostazione predefinita dell'impostazione modificata; impostazione locale ancora impostata sul valore predefinito originale in *user.config*|L'impostazione viene unita all' *user.config* della versione corrente con il nuovo valore predefinito.|
 |Impostazione predefinita dell'impostazione modificata; impostazione impostata su un valore non predefinito in *user.config*|L'impostazione viene unita all' *user.config* della versione corrente con il valore non predefinito mantenuto|
 

@@ -1,5 +1,6 @@
 ---
 title: Associare controlli alle immagini di un database
+description: Usare la finestra Origini dati per associare un'immagine di un database a un controllo nell'applicazione di Visual Studio.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e9093c2a2d7cec95e4fdd08ff4273ae8f8126a36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a2033bfe6719ccd325a2409d20fbb0e77d92926
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282984"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382299"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Associare controlli alle immagini di un database
 
@@ -39,7 +40,7 @@ Nella procedura seguente si presuppone che la finestra **origini dati** sia già
 2. Nella finestra **origini dati** espandere la tabella o l'oggetto desiderato per visualizzare le relative colonne o proprietà.
 
    > [!TIP]
-   > Se la finestra **origini dati** non è aperta, aprirla selezionando **Visualizza**  >  **altre**  >  **origini dati**di Windows.
+   > Se la finestra **origini dati** non è aperta, aprirla selezionando **Visualizza**  >  **altre**  >  **origini dati** di Windows.
 
 3. Selezionare la colonna o la proprietà che contiene i dati dell'immagine e selezionare uno dei controlli seguenti dall'elenco di controllo a discesa:
 

@@ -1,5 +1,7 @@
 ---
 title: '&lt;elemento fileAssociation &gt; (applicazione ClickOnce) | Microsoft Docs'
+description: L'elemento fileAssociation identifica un'estensione di file da associare all'applicazione. L'elemento fileAssociation è facoltativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d3a43af5b2c7d50034cbed9d7da16e65b402f70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1908b4f63edcf90643c28523c0c6ed0d0e11a97
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928518"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382728"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;elemento fileAssociation &gt; (applicazione ClickOnce)
 Identifica un'estensione di file da associare all'applicazione.
@@ -47,7 +49,7 @@ Identifica un'estensione di file da associare all'applicazione.
 |`progid`|Obbligatorio. Nome che identifica in modo univoco il tipo di file.|
 |`defaultIcon`|Obbligatorio. Specifica l'icona da usare per i file con questa estensione. Il file icona deve essere specificato usando l' [ \<file> elemento](../deployment/file-element-clickonce-application.md) all'interno dell' [ \<assembly> elemento](../deployment/assembly-element-clickonce-application.md) che contiene questo elemento.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo elemento deve includere un riferimento allo spazio dei nomi XML a "urn: schemas-microsoft-com: ClickOnce. V1". Se l' `<fileAssociation>` elemento viene utilizzato, deve provenire dopo l' `<application>` elemento nel relativo [ \<assembly> elemento](../deployment/assembly-element-clickonce-application.md)padre.
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] non sovrascrive le associazioni di file esistenti. Tuttavia, un'applicazione ClickOnce può eseguire l'override dell'estensione di file solo per l'utente corrente. Dopo la disinstallazione dell'applicazione ClickOnce, ClickOnce Elimina l'associazione di file per l'utente e l'associazione per computer è nuovamente attiva.

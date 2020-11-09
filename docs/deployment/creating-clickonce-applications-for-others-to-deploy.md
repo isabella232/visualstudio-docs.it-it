@@ -1,5 +1,7 @@
 ---
 title: Creazione di applicazioni ClickOnce per la distribuzione da altri utenti | Microsoft Docs
+description: Informazioni sulle applicazioni ClickOnce ospitate dal cliente sviluppate in .NET Framework 3,5 e versioni precedenti del .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3307fc124f50e8c9f73749293c36f53be36c5e3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7379038d1c2bf203f7787e69408ddd9b2e30f372
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71252454"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383001"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Creare applicazioni ClickOnce per la distribuzione da parte di terzi
 Non tutti gli sviluppatori che creano distribuzioni ClickOnce pianificano di distribuire le applicazioni stesse. Molti di essi comunicano l'applicazione usando ClickOnce e quindi rilasciano i file a un cliente, ad esempio un'azienda di grandi dimensioni. Il cliente diventa quello responsabile dell'hosting dell'applicazione nella rete. In questo argomento vengono illustrati alcuni dei problemi inerenti a tali distribuzioni nelle versioni del .NET Framework precedenti alla versione 3,5. Viene quindi descritta una nuova soluzione fornita utilizzando la nuova funzionalità "utilizza manifesto per l'attendibilità" nel .NET Framework 3,5. Infine, si conclude con le strategie consigliate per la creazione di distribuzioni ClickOnce per i clienti che usano ancora versioni precedenti del .NET Framework.
@@ -50,7 +52,7 @@ Non tutti gli sviluppatori che creano distribuzioni ClickOnce pianificano di dis
  Anche se lo sviluppatore e il cliente accettano che il cliente deve firmare il manifesto dell'applicazione, questo genera altri problemi che racchiudono l'identità dell'applicazione, soprattutto quando si applica alla distribuzione di applicazioni attendibili. Per ulteriori informazioni su questa funzionalità, vedere [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md). Supponiamo che Adventure Works desideri configurare i computer client in modo che tutte le applicazioni fornite da Microsoft Corporation vengano eseguite con attendibilità totale. Se Adventure Works firma il manifesto della distribuzione, ClickOnce utilizzerà la firma di sicurezza di Adventure Work per determinare il livello di attendibilità dell'applicazione.
 
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>Creare distribuzioni dei clienti usando il manifesto dell'applicazione per l'attendibilità
- ClickOnce nella .NET Framework 3,5 contiene una nuova funzionalità che offre agli sviluppatori e ai clienti una nuova soluzione per lo scenario di firma dei manifesti. Il manifesto dell'applicazione ClickOnce supporta un nuovo elemento denominato `<useManifestForTrust>` che consente agli sviluppatori di indicare che la firma digitale del manifesto dell'applicazione è quella da usare per prendere decisioni di attendibilità. Lo sviluppatore usa gli strumenti per la creazione di pacchetti ClickOnce, ad esempio *Mage.exe*, *MageUI.exe*e Visual Studio, per includere questo elemento nel manifesto dell'applicazione, nonché per incorporare il nome dell'editore e il nome dell'applicazione nel manifesto.
+ ClickOnce nella .NET Framework 3,5 contiene una nuova funzionalità che offre agli sviluppatori e ai clienti una nuova soluzione per lo scenario di firma dei manifesti. Il manifesto dell'applicazione ClickOnce supporta un nuovo elemento denominato `<useManifestForTrust>` che consente agli sviluppatori di indicare che la firma digitale del manifesto dell'applicazione è quella da usare per prendere decisioni di attendibilità. Lo sviluppatore usa gli strumenti per la creazione di pacchetti ClickOnce, ad esempio *Mage.exe* , *MageUI.exe* e Visual Studio, per includere questo elemento nel manifesto dell'applicazione, nonché per incorporare il nome dell'editore e il nome dell'applicazione nel manifesto.
 
  Quando `<useManifestForTrust>` si usa, non è necessario che il manifesto di distribuzione sia firmato con un certificato Authenticode emesso da un'autorità di certificazione. Al contrario, può essere firmato con un certificato autofirmato. Un certificato autofirmato viene generato dal cliente o dallo sviluppatore utilizzando gli strumenti standard di .NET Framework SDK e quindi applicato al manifesto di distribuzione utilizzando gli strumenti di distribuzione ClickOnce standard. Per ulteriori informazioni, vedere [Makecert](/windows/desktop/SecCrypto/makecert).
 

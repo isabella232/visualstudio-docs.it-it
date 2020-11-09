@@ -1,5 +1,6 @@
 ---
 title: Aggiungere nuove origini dati
+description: Aggiungere nuove origini dati in Visual Studio. Un'origine dati è un oggetto .NET che si connette a un archivio dati e rende i dati disponibili per un'applicazione .NET.
 ms.date: 11/21/2018
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2e8ad5bf65ad25d197785c3e720ec01c7bdc6f9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51d7d2bb7a7037d3fbcf307c620e9aca702ac370
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283047"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382117"
 ---
 # <a name="add-new-data-sources"></a>Aggiungere nuove origini dati
 
@@ -51,7 +52,7 @@ Per creare e modificare origini dati, è possibile utilizzare la **Configurazion
 Dopo aver creato un'origine dati, viene visualizzato nei **Data source** finestra degli strumenti.
 
 > [!TIP]
-> Per aprire la finestra **Data source**, assicurarsi che il progetto sia aperto e quindi premere **MAIUSC**+**Alt**+**1!d**oppure scegliere **View** > **Other Windows** > **Data source**.
+> Per aprire la finestra **Data source** , assicurarsi che il progetto sia aperto e quindi premere **MAIUSC**+**Alt**+**1!d** oppure scegliere **View** > **Other Windows** > **Data source**.
 
 È possibile trascinare un'origine dati dal **Data source** finestra in un'area di progettazione form o controllo. Questo causa la generazione di codice standard che Visualizza i dati dall'archivio dati.
 

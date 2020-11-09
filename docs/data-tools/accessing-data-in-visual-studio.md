@@ -1,5 +1,6 @@
 ---
 title: Usare i dati in Visual Studio
+description: Usare i dati in Visual Studio. Consente di creare app che si connettono ai dati di altri prodotti o servizi di database su computer locali, LAN o cloud pubblici o privati.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d1a82cc5fc5ea34f007750a08c0e8140421a9f41
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: 846898c1cf93d0f90ce04e77ee93bd8802e22ec2
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959822"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382091"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Usare i dati in Visual Studio
 
@@ -70,13 +71,13 @@ La maggior parte degli altri prodotti di database SQL e NoSQL elencati qui può 
 
 ::: moniker range="vs-2017"
 
-Molti fornitori di database e terze parti supportano l'integrazione di Visual Studio da pacchetti NuGet. È possibile esplorare le offerte in NuGet.org o tramite Gestione pacchetti NuGet in Visual Studio (**strumenti**  >  **gestione**pacchetti NuGet  >  **Gestisci pacchetti NuGet per la soluzione**). Altri prodotti di database si integrano con Visual Studio come estensione. È possibile esplorare queste offerte nella [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o passare a **strumenti**  >  **estensioni e aggiornamenti** e quindi selezionare **online** nel riquadro sinistro della finestra di dialogo. Per ulteriori informazioni, vedere [sistemi di database compatibili per Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Molti fornitori di database e terze parti supportano l'integrazione di Visual Studio da pacchetti NuGet. È possibile esplorare le offerte in NuGet.org o tramite Gestione pacchetti NuGet in Visual Studio ( **strumenti**  >  **gestione** pacchetti NuGet  >  **Gestisci pacchetti NuGet per la soluzione** ). Altri prodotti di database si integrano con Visual Studio come estensione. È possibile esplorare queste offerte nella [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o passare a **strumenti**  >  **estensioni e aggiornamenti** e quindi selezionare **online** nel riquadro sinistro della finestra di dialogo. Per ulteriori informazioni, vedere [sistemi di database compatibili per Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Molti fornitori di database e terze parti supportano l'integrazione di Visual Studio da pacchetti NuGet. È possibile esplorare le offerte in NuGet.org o tramite Gestione pacchetti NuGet in Visual Studio (**strumenti**  >  **gestione**pacchetti NuGet  >  **Gestisci pacchetti NuGet per la soluzione**). Altri prodotti di database si integrano con Visual Studio come estensione. È possibile esplorare queste offerte nella [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o passare a **estensioni**  >  **Gestisci estensioni** e quindi selezionare **online** nel riquadro sinistro della finestra di dialogo. Per ulteriori informazioni, vedere [sistemi di database compatibili per Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+Molti fornitori di database e terze parti supportano l'integrazione di Visual Studio da pacchetti NuGet. È possibile esplorare le offerte in NuGet.org o tramite Gestione pacchetti NuGet in Visual Studio ( **strumenti**  >  **gestione** pacchetti NuGet  >  **Gestisci pacchetti NuGet per la soluzione** ). Altri prodotti di database si integrano con Visual Studio come estensione. È possibile esplorare queste offerte nella [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o passare a **estensioni**  >  **Gestisci estensioni** e quindi selezionare **online** nel riquadro sinistro della finestra di dialogo. Per ulteriori informazioni, vedere [sistemi di database compatibili per Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ::: moniker-end
 

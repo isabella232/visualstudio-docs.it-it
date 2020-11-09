@@ -1,5 +1,6 @@
 ---
 title: Aggiungere nuove connessioni
+description: Aggiungere una connessione in Visual Studio a un database o a un servizio ed esplorare il contenuto e gli schemi del database usando Esplora server, Cloud Explorer o Esplora oggetti di SQL Server.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: ghogen
@@ -7,16 +8,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f6f34c28a6bbba236a4d90e2f936fad0b2a3f60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34f3ef6823ddfae806de11b85cc5bfe6b14c9b19
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283060"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382416"
 ---
 # <a name="add-new-connections"></a>Aggiungere nuove connessioni
 
-È possibile testare la connessione a un database o a un servizio ed esplorare il contenuto e gli schemi del database usando **Esplora server**, **Cloud Explorer**o **Esplora oggetti di SQL Server**. La funzionalità di queste finestre si sovrappone a una certa misura. Le differenze di base sono:
+È possibile testare la connessione a un database o a un servizio ed esplorare il contenuto e gli schemi del database usando **Esplora server** , **Cloud Explorer** o **Esplora oggetti di SQL Server**. La funzionalità di queste finestre si sovrappone a una certa misura. Le differenze di base sono:
 
 - Esplora server
 
@@ -32,7 +33,7 @@ ms.locfileid: "85283060"
 
 ## <a name="add-a-connection-in-server-explorer"></a>Aggiungere una connessione in Esplora server
 
-Per creare una connessione al database, fare clic sull'icona **Aggiungi connessione** in **Esplora server**oppure fare clic con il pulsante destro del mouse su **Esplora server** nel nodo **connessioni dati** e scegliere **Aggiungi connessione**. Da qui è inoltre possibile connettersi a un database in un altro server, un servizio SharePoint o un servizio di Azure.
+Per creare una connessione al database, fare clic sull'icona **Aggiungi connessione** in **Esplora server** oppure fare clic con il pulsante destro del mouse su **Esplora server** nel nodo **connessioni dati** e scegliere **Aggiungi connessione**. Da qui è inoltre possibile connettersi a un database in un altro server, un servizio SharePoint o un servizio di Azure.
 
 ![Icona nuova connessione Esplora server](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
@@ -52,7 +53,7 @@ Dopo aver scelto l'origine dati, fare clic su **Test connessione**. Se l'operazi
 
 ![Test della connessione](../data-tools/media/raddata-test-connection.png)
 
-Se il test ha esito positivo, si è pronti per creare un' *origine dati*, ovvero un termine di Visual Studio che significa realmente un *modello di dati* basato sul database o sul servizio sottostante.
+Se il test ha esito positivo, si è pronti per creare un' *origine dati* , ovvero un termine di Visual Studio che significa realmente un *modello di dati* basato sul database o sul servizio sottostante.
 
 ## <a name="see-also"></a>Vedere anche
 

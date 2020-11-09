@@ -1,5 +1,6 @@
 ---
 title: Configura riferimento a servizio (finestra di dialogo)
+description: Utilizzare la finestra di dialogo Configura riferimento al servizio in Visual Studio per configurare il comportamento dei servizi Windows Communication Foundation (WCF).
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,18 +15,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5bae3acb6f687c8c787e2d4121999d1133b0f1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70faee4277625621074b1bd1bfdf667c818e1f46
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586926"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382351"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configura riferimento a servizio (finestra di dialogo)
 
 La finestra di dialogo **Configura riferimento al servizio** consente di configurare il comportamento dei servizi Windows Communication Foundation (WCF).
 
-Per accedere alla finestra di dialogo **Configura riferimento a servizio**, fare clic con il pulsante destro del mouse su un riferimento al servizio in **Esplora soluzioni** e scegliere **Configura riferimento a servizio**. È anche possibile accedere alla finestra di dialogo facendo clic sul pulsante **Avanzate** nella **finestra di dialogo Aggiungi riferimento al servizio**.
+Per accedere alla finestra di dialogo **Configura riferimento a servizio** , fare clic con il pulsante destro del mouse su un riferimento al servizio in **Esplora soluzioni** e scegliere **Configura riferimento a servizio**. È anche possibile accedere alla finestra di dialogo facendo clic sul pulsante **Avanzate** nella **finestra di dialogo Aggiungi riferimento al servizio**.
 
 ## <a name="task-list"></a>Elenco attività
 
@@ -39,7 +40,7 @@ Per accedere alla finestra di dialogo **Configura riferimento a servizio**, fare
 
 - Per specificare i tipi di raccolta elenco o dizionario per un client WCF, selezionare i tipi dagli elenchi **Tipo di raccolta** e **Tipo di raccolta dizionario**.
 
-- Per disabilitare la condivisione dei tipi, deselezionare la casella di controllo **Riutilizza tipi in assembly di riferimento**. Per abilitare la condivisione di tipi per un sottoinsieme di assembly di riferimento, selezionare la casella di controllo **Riutilizza tipi in assembly di riferimento**, selezionare **Riutilizza tipi negli assembly di riferimento specificati** e selezionare i riferimenti desiderati nell'elenco **Assembly di riferimento**.
+- Per disabilitare la condivisione dei tipi, deselezionare la casella di controllo **Riutilizza tipi in assembly di riferimento**. Per abilitare la condivisione di tipi per un sottoinsieme di assembly di riferimento, selezionare la casella di controllo **Riutilizza tipi in assembly di riferimento** , selezionare **Riutilizza tipi negli assembly di riferimento specificati** e selezionare i riferimenti desiderati nell'elenco **Assembly di riferimento**.
 
 ## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
@@ -91,7 +92,7 @@ Quando questa opzione è selezionata, vengono riutilizzati solo i tipi seleziona
 
 **Elenco Assembly di riferimento**
 
-Contiene un elenco di assembly di riferimento per il progetto o il sito Web. Quando si seleziona **Riutilizza tipi in assembly di riferimento specificati**, è possibile selezionare o deselezionare singoli assembly.
+Contiene un elenco di assembly di riferimento per il progetto o il sito Web. Quando si seleziona **Riutilizza tipi in assembly di riferimento specificati** , è possibile selezionare o deselezionare singoli assembly.
 
 **Aggiungi riferimento Web**
 
@@ -101,7 +102,7 @@ Visualizza la **finestra di dialogo Aggiungi riferimento Web**.
 > Questa opzione deve essere usata solo per i progetti destinati alla versione 2,0 della .NET Framework.
 >
 > [!NOTE]
-> Il pulsante **Aggiungi riferimento Web** è disponibile solo quando nella finestra di dialogo **Aggiungi riferimento al servizio**viene visualizzata la finestra di dialogo **Configura riferimento al servizio** .
+> Il pulsante **Aggiungi riferimento Web** è disponibile solo quando nella finestra di dialogo **Aggiungi riferimento al servizio** viene visualizzata la finestra di dialogo **Configura riferimento al servizio** .
 
 ## <a name="see-also"></a>Vedere anche
 

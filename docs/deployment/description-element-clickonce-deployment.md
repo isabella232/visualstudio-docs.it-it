@@ -1,5 +1,7 @@
 ---
 title: '&lt;&gt;elemento Description (distribuzione ClickOnce) | Microsoft Docs'
+description: L'elemento Description identifica le informazioni sull'applicazione utilizzate per creare una presenza della shell e un elemento Installazione applicazioni nel pannello di controllo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c359b188894c40f017e3d2a0e06d52de87e9c5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4eb1de8f5692eedc9673f1a22cb448ac8d102ae5
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62928803"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382832"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;&gt;elemento Description (distribuzione ClickOnce)
 Identifica le informazioni sull'applicazione utilizzate per creare una presenza Shell e un elemento **Installazione applicazioni** nel pannello di controllo.
@@ -30,8 +32,8 @@ Identifica le informazioni sull'applicazione utilizzate per creare una presenza 
 
 ```xml
 
-      <description 
-   publisher 
+      <description 
+   publisher 
    product
    suiteName
    supportUrl
@@ -45,10 +47,10 @@ Identifica le informazioni sull'applicazione utilizzate per creare una presenza 
 |---------------|-----------------|
 |`publisher`|Obbligatorio. Identifica il nome della società usato per il posizionamento delle icone nel menu **Start** di Windows e l'elemento installazione **applicazioni** nel pannello di controllo, quando la distribuzione è configurata per l'installazione.|
 |`product`|Obbligatorio. Identifica il nome completo del prodotto. Utilizzato come titolo per l'icona installata nel menu **Start** di Windows.|
-|`suiteName`|facoltativo. Identifica una sottocartella all'interno della `publisher` cartella nel menu **Start** di Windows.|
-|`supportUrl`|facoltativo. Specifica un URL di supporto visualizzato nell'elemento **Installazione applicazioni** nel pannello di controllo. Viene inoltre creato un collegamento a questo URL per il supporto dell'applicazione nel menu **Start** di Windows, quando la distribuzione è configurata per l'installazione.|
+|`suiteName`|Facoltativa. Identifica una sottocartella all'interno della `publisher` cartella nel menu **Start** di Windows.|
+|`supportUrl`|Facoltativa. Specifica un URL di supporto visualizzato nell'elemento **Installazione applicazioni** nel pannello di controllo. Viene inoltre creato un collegamento a questo URL per il supporto dell'applicazione nel menu **Start** di Windows, quando la distribuzione è configurata per l'installazione.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'elemento Description è obbligatorio in tutte le configurazioni di distribuzione.
 
 ## <a name="example"></a>Esempio
