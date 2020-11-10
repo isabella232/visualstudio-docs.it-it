@@ -1,5 +1,7 @@
 ---
 title: Progettazione flussi di lavoro-InvokeDelegate
+description: Informazioni su InvokeDelegate designer e su come è possibile usare InvokeDelegate designer per creare e configurare un'attività InvokeDelegate.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ author: TerryGLee
 ms.author: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e63fb7a766b79467749cc5181a575e0d35a07b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a482f23b1df1587e9a1c7e3023bfb0d1737f1fae
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876073"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437749"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -33,7 +35,7 @@ Accedere all'ActivityDesigner **InvokeDelegate** nella categoria **primitive** d
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.InvokeDelegate> e ne viene descritta la modalità di uso nella finestra di progettazione. Queste proprietà possono essere modificate nella griglia delle proprietà e alcune possono essere modificate in Progettazione flussi di lavoro area.
 
-|Nome proprietà|Obbligatoria|Utilizzo|
+|Nome proprietà|Obbligatoria|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo dell'attività <xref:System.Activities.Statements.InvokeDelegate>. Il valore predefinito è InvokeDelegate.<br /><br /> Sebbene <xref:System.Activities.Activity.DisplayName%2A> non sia strettamente obbligatorio, è preferibile utilizzarne uno.|
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|Vero|Nome dell'elemento <xref:System.Activities.ActivityDelegate> da richiamare quando viene eseguita l'attività. Questa proprietà può essere modificata nell'area di progettazione ed è obbligatoria.|

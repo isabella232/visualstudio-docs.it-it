@@ -1,5 +1,7 @@
 ---
 title: Eseguire il mapping di classi LINQ to SQL a tabelle/viste (O-R Designer)
+description: Informazioni su come creare classi di entità LINQ to SQL (classi mappate a tabelle e viste) in Object Relational Designer (O/R Designer).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 19b634973e555fd037d20c3ad359ccbb1465c894
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79e5c529c1aefb4777e174489fc8fd1ca95a4111
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282124"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436346"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Procedura: Creare classi LINQ to SQL con mapping a tabelle e viste (Object Relational Designer)
 
@@ -32,7 +34,7 @@ Per impostazione predefinita, il runtime [!INCLUDE[vbtecdlinq](../data-tools/inc
 
 ### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Per creare classi LINQ to SQL con mapping a tabelle o visualizzazioni di database
 
-1. In **Esplora server**/**Esplora database** espandere **Tabelle** o **Viste** e individuare la tabella o la vista di database da usare nell'applicazione.
+1. In **Esplora server** / **Esplora database** espandere **Tabelle** o **Viste** e individuare la tabella o la vista di database da usare nell'applicazione.
 
 2. Trascinare la tabella o la vista in **o/R Designer**.
 
@@ -40,13 +42,13 @@ Per impostazione predefinita, il runtime [!INCLUDE[vbtecdlinq](../data-tools/inc
 
 ## <a name="create-an-object-data-source-and-display-the-data-on-a-form"></a>Creare l'origine dati di un oggetto e visualizzare i dati in un form
 
-Dopo aver creato le classi di entità usando **Progettazione relazionale**oggetti, è possibile creare un'origine dati oggetto e popolare la [finestra Origini dati](add-new-data-sources.md#data-sources-window) con le classi di entità.
+Dopo aver creato le classi di entità usando **Progettazione relazionale** oggetti, è possibile creare un'origine dati oggetto e popolare la [finestra Origini dati](add-new-data-sources.md#data-sources-window) con le classi di entità.
 
 ### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Per creare l'origine dati di un oggetto in base alle classi di entità LINQ to SQL
 
 1. Scegliere **Compila soluzione** dal menu **Compila** per compilare il progetto.
 
-2. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati**dal menu **dati** .
+2. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati** dal menu **dati** .
 
 3. Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.
 
@@ -63,9 +65,9 @@ Dopo aver creato le classi di entità usando **Progettazione relazionale**oggett
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Procedura dettagliata: Creazione di classi LINQ to SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Metodi DataContext (Object Relational Designer)](../data-tools/datacontext-methods-o-r-designer.md)
+- [Metodi DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)
 - [Procedura: Creare metodi DataContext di cui viene eseguito il mapping a stored procedure e funzioni (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
 - [Il modello a oggetti di LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)
 - [Procedura dettagliata: personalizzazione del comportamento di inserimento, aggiornamento ed eliminazione delle classi di entità](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)

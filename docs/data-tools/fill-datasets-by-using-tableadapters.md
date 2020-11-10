@@ -1,5 +1,7 @@
 ---
 title: Compilare i set di dati usando oggetti TableAdapter
+description: Compilare set di impostazioni usando TableAdapter. Un componente TableAdapter compila un set di dati con i dati del database, in base a una o più query o stored procedure specificate.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 888e2ac47348d7e61d115f51e3ea52d15ea9f447
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6a10eb996acbdbf5411688860ce2ec8b00da1f6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282436"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436459"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Compilare i set di dati usando oggetti TableAdapter
 
@@ -52,7 +54,7 @@ Gli oggetti TableAdapter sono componenti generati dalla finestra di progettazion
 
 ![Flusso dei dati in un'applicazione client](../data-tools/media/clientdatadiagram.gif)
 
-Sebbene gli oggetti TableAdapter siano progettati con la **Progettazione DataSet**, le classi TableAdapter non vengono generate come classi annidate di  <xref:System.Data.DataSet> . Si trovano in spazi dei nomi distinti specifici di ogni set di dati. Se, ad esempio, si dispone di un set di dati denominato `NorthwindDataSet` , gli oggetti TableAdapter associati a in si trovano  <xref:System.Data.DataTable> `NorthwindDataSet` nello `NorthwindDataSetTableAdapters` spazio dei nomi. Per accedere a un determinato TableAdapter a livello di codice, è necessario dichiarare una nuova istanza del TableAdapter. Ad esempio:
+Sebbene gli oggetti TableAdapter siano progettati con la **Progettazione DataSet** , le classi TableAdapter non vengono generate come classi annidate di  <xref:System.Data.DataSet> . Si trovano in spazi dei nomi distinti specifici di ogni set di dati. Se, ad esempio, si dispone di un set di dati denominato `NorthwindDataSet` , gli oggetti TableAdapter associati a in si trovano  <xref:System.Data.DataTable> `NorthwindDataSet` nello `NorthwindDataSetTableAdapters` spazio dei nomi. Per accedere a un determinato TableAdapter a livello di codice, è necessario dichiarare una nuova istanza del TableAdapter. Esempio:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -129,9 +131,9 @@ Di seguito sono riportati i metodi e le proprietà di uso frequente della `Table
 |Membro|Descrizione|
 |------------|-----------------|
 |Metodo `UpdateAll`|Salva tutti i dati di tutte le tabelle di dati.|
-|Proprietà `BackUpDataSetBeforeUpdate`|Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` metodo. Boolean.|
+|Proprietà`BackUpDataSetBeforeUpdate`|Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` metodo. Boolean.|
 |*TableName* `TableAdapter` Proprietà|Rappresenta un TableAdapter. Il TableAdapterManager generato contiene una proprietà per ogni oggetto `TableAdapter` gestito. Ad esempio, un set di dati con una tabella Customers e Orders genera con un TableAdapterManager che contiene `CustomersTableAdapter` le `OrdersTableAdapter` proprietà e.|
-|Proprietà `UpdateOrder`|Controlla l'ordine dei singoli comandi INSERT, Update e DELETE. Impostare questa impostazione su uno dei valori dell' `TableAdapterManager.UpdateOrderOption` enumerazione.<br /><br /> Per impostazione predefinita, la `UpdateOrder` è impostata su **InsertUpdateDelete**. Ciò significa che gli inserimenti, gli aggiornamenti e le eliminazioni vengono eseguiti per tutte le tabelle nel set di dati.|
+|Proprietà`UpdateOrder`|Controlla l'ordine dei singoli comandi INSERT, Update e DELETE. Impostare questa impostazione su uno dei valori dell' `TableAdapterManager.UpdateOrderOption` enumerazione.<br /><br /> Per impostazione predefinita, la `UpdateOrder` è impostata su **InsertUpdateDelete**. Ciò significa che gli inserimenti, gli aggiornamenti e le eliminazioni vengono eseguiti per tutte le tabelle nel set di dati.|
 
 ## <a name="security"></a>Sicurezza
 

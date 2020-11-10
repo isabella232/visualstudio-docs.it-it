@@ -1,6 +1,8 @@
 ---
 title: Criteri di archiviazione relativi alla compatibilità delle versioni per l'analisi del codice
 ms.date: 11/04/2016
+description: Informazioni sul modo in cui Team System 2008 Team Foundation Server e Team Foundation Server 2010 valutano i criteri di archiviazione di Visual Studio in modo diverso.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - version compatibility, code analysis check-in policy
@@ -11,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4757b3a105ff02a92944d9b45e645e2c63a8b81c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3a681f510da270bc22ae4bc983103f9a5735a127
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587160"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436875"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Criteri di archiviazione relativi alla compatibilità delle versioni per l'analisi del codice
 
 Se è necessario valutare e creare criteri di archiviazione dell'analisi codice utilizzando versioni diverse di [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] , è necessario comprendere le differenze tra la modalità [!INCLUDE[vstsTfsOrcasLong](../code-quality/includes/vststfsorcaslong_md.md)] e la valutazione dei criteri di [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] archiviazione.
 
-## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Compatibilità tra le versioni per la valutazione dei criteri di archiviazione
+## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Compatibilità tra versioni per la valutazione di criteri di Check-In
 
 - Quando si valutano i criteri di archiviazione dell'analisi del codice in [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] , tutte le regole esistenti in, [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] ma non esistono in, [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] vengono ignorate.
 
@@ -32,7 +34,7 @@ Se è necessario valutare e creare criteri di archiviazione dell'analisi codice 
 
 - Se i criteri di archiviazione dell'analisi del codice specificano gli assembly di regole che [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] non riconoscono, viene visualizzato un messaggio.
 
-## <a name="version-compatibility-for-authoring-check-in-policies"></a>Compatibilità tra le versioni per la creazione di criteri di archiviazione
+## <a name="version-compatibility-for-authoring-check-in-policies"></a>Compatibilità tra le versioni per la creazione di criteri di Check-In
 
 - Se è stato creato un criterio di archiviazione dell'analisi del codice utilizzando la [!INCLUDE[vstsTfsOrcasShort](../code-quality/includes/vststfsorcasshort_md.md)] versione di [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] , non è possibile utilizzare la [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] versione di [!INCLUDE[esprtfc](../code-quality/includes/esprtfc_md.md)] per modificarlo. Inoltre, [!INCLUDE[vstsTfsRosarioShort](../code-quality/includes/vststfsrosarioshort_md.md)] non è in grado di valutare i criteri.
 

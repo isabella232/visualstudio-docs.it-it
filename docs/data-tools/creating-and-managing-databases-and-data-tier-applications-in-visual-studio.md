@@ -1,5 +1,7 @@
 ---
 title: Progetti di database e progetti DAC
+description: Informazioni sui progetti di database e le applicazioni livello dati (DAC). Utilizzare i progetti di database per creare nuovi database, creare nuove DAC e aggiornare i database e le applicazioni livello dati esistenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cc8d32ddcc332264278cf76392ac69a6188ca51c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57b889f025b06e127e8e4bb38be311f6bbe55952
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586731"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436602"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Progetti di database e applicazioni livello dati
 
@@ -25,7 +27,7 @@ Per un elenco delle funzionalità di database supportate dalle applicazioni live
 
 ## <a name="common-high-level-tasks"></a>Attività di alto livello comuni
 
-| Attività di alto livello | Contenuto di supporto |
+| Attività High-Level | Contenuto di supporto |
 | - | - |
 | **Avviare lo sviluppo di un'applicazione livello dati:** Il concetto di applicazione livello dati (DAC) è stato introdotto con SQL Server 2008. Un'applicazione livello dati contiene la definizione per un database di SQL Server e gli oggetti istanza di supporto utilizzati da un'applicazione client-server o a tre livelli. Un'applicazione livello dati include oggetti di database, ad esempio tabelle e viste, insieme a entità di istanza quali gli account di accesso. È possibile utilizzare Visual Studio per creare un progetto DAC, compilare un file di pacchetto di applicazione livello dati e inviare il file del pacchetto di applicazione livello dati a un amministratore di database per la distribuzione in un'istanza del motore di database SQL Server. | - [Applicazioni livello dati](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
 | **Esecuzione dello sviluppo iterativo di database:** Gli sviluppatori possono estrarre parti del progetto e aggiornarle in un ambiente di sviluppo isolato. Utilizzando questo tipo di ambiente, è possibile testare le modifiche senza influire sugli altri membri del team. Una volta completate le modifiche, è possibile archiviare nuovamente i file nel controllo della versione, in modo che gli altri membri del team possano ottenere le modifiche e compilarle e distribuirle in un server di prova. | - [Sviluppo di database offline orientato ai progetti (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Debugger Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |

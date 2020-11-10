@@ -1,5 +1,7 @@
 ---
 title: 'Progettazione flussi di lavoro-procedura: usare la finestra di progettazione importazioni'
+description: Informazioni su come la finestra di progettazione importazioni consente di immettere gli spazi dei nomi per i tipi che si utilizzeranno nelle espressioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -10,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77da016b062d032965fcf7042cedba2004e3fdf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bdf33227263e8158f956fa8c6509d93e8116e9b
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817424"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437840"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Procedura: utilizzare la finestra di progettazione importazioni
 
 La finestra di progettazione importazioni consente di immettere gli spazi dei nomi per i tipi usati nelle espressioni. Analogamente alle **importazioni** o all' **uso** delle parole chiave in Visual Basic e C#, specificando gli spazi dei nomi nella finestra di progettazione importazioni è possibile immettere semplicemente un nome di tipo nell'espressione anziché un nome di tipo di versione completo.
 
-Sulla finestra di progettazione importazioni influiscono sia le modifiche all'interfaccia utente che quelle eseguite quando viene salvato il flusso di lavoro. Quando viene salvato il flusso di lavoro, alla finestra di progettazione importazioni è possibile aggiungere automaticamente spazi dei nomi, tra cui:
+Sulla finestra di progettazione importazioni influiscono sia le modifiche all'interfaccia utente che quelle eseguite quando viene salvato il flusso di lavoro. Quando viene salvato il flusso di lavoro, alla finestra di progettazione importazioni è possibile aggiungere automaticamente spazi dei nomi, Questi includono:
 
 - Spazi dei nomi per qualsiasi tipo usato nelle dichiarazioni di variabili e argomenti.
 

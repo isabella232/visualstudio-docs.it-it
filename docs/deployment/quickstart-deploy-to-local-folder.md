@@ -12,21 +12,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f392cc2dcb474487a37076229c0b10f7359b9251
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a96ea0fe4b4bbbebfc29cde7258273ea4f4b21e2
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349568"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437689"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Distribuire un'app in una cartella con Visual Studio
 
 È possibile usare lo strumento di **pubblicazione** per pubblicare app ASP.NET, ASP.NET Core, .NET Core e Python in una cartella da Visual Studio. Per Node.js la procedura è supportata, ma l'interfaccia utente è diversa.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
-
+::: moniker range=">=vs-2017"
 > [!NOTE]
 > Se è necessario pubblicare un'applicazione desktop di Windows in una cartella, vedere [distribuire un'app desktop usando ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# o Visual Basic). Per C++/CLR, vedere [Distribuire un'app nativa tramite ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) oppure per C/C++, vedere [Distribuire un'app nativa tramite un progetto di installazione](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> Se è necessario pubblicare un'applicazione desktop di Windows .NET Core 3,1 o successiva in una cartella, vedere [distribuire un'applicazione Windows .NET tramite ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+
+::: moniker-end
 
 ## <a name="deploy-to-a-local-folder"></a>Distribuire in una cartella locale
 
@@ -40,7 +48,17 @@ ms.locfileid: "94349568"
 
     ![Scegliere la cartella come destinazione di pubblicazione](../deployment/media/quickstart-publish-folder-new.png "Scegli cartella")
 
-1. Immettere un percorso o selezionare **Sfoglia** per specificare una cartella.
+::: moniker range=">=vs-2019"
+
+4. Se si distribuisce un'applicazione Windows .NET Core 3,1 o successiva, potrebbe essere necessario selezionare la **cartella** nella finestra di **destinazione specifica** .
+
+![Scegliere una cartella come destinazione specifica](../deployment/media/quickstart-publish-folder-targets.png "Scegliere una destinazione specifica")
+
+5. Se si vuole pubblicare un'applicazione Windows .NET Core 3,1 o successiva con ClickOnce, vedere [distribuire un'applicazione Windows .NET tramite ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+
+ ::: moniker-end
+
+4. Immettere un percorso o selezionare **Sfoglia** per specificare una cartella.
 
     ![Specificare il percorso della cartella](../deployment/media/quickstart-publish-folder-path.png "Scegli cartella")
 
@@ -73,3 +91,6 @@ Per le app .NET:
 - [Distribuire un'applicazione .NET Core con lo strumento di pubblicazione](/dotnet/core/deploying/deploy-with-vs)
 - [Pubblicazione di applicazioni .NET Core (distribuzioni indipendenti dal Framework e indipendenti)](/dotnet/core/deploying/)
 - [Distribuire il .NET Framework e le applicazioni](/dotnet/framework/deployment/)
+::: moniker range=">=vs-2019"
+- [Distribuire un'applicazione Windows .NET tramite ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+ ::: moniker-end

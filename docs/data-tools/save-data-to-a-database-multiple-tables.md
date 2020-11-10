@@ -1,5 +1,7 @@
 ---
 title: Salvare dati in un database (a più tabelle)
+description: In questa procedura dettagliata, salvare i dati da più tabelle in un database usando gli strumenti del set di dati in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b512263cd5d0ca8c83b0ba6848fb16feca1a71f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f6401fedc3158e2743f08775da93faf2ddfee73
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281643"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436042"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvare dati in un database (a più tabelle)
 
@@ -45,7 +47,7 @@ Le attività illustrate nella procedura dettagliata sono le seguenti:
 
 In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
+1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio** è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
 
 2. Installare il database di esempio Northwind attenendosi alla procedura seguente:
 
@@ -67,13 +69,13 @@ Creare un nuovo progetto di **App Windows Forms** per C# o Visual Basic. Assegna
 
 Questo passaggio consente di creare un'origine dati dal database Northwind usando la **Configurazione guidata origine dati**. Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni sulla configurazione del database Northwind di esempio, vedere [procedura: installare database di](../data-tools/installing-database-systems-tools-and-samples.md)esempio.
 
-1. Scegliere **Mostra origini dati**dal menu **dati** .
+1. Scegliere **Mostra origini dati** dal menu **dati** .
 
    Verrà visualizzata la finestra **Origini dati**.
 
 2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
-3. Nella schermata **scegliere un tipo di origine dati** selezionare **database**, quindi fare clic su **Avanti**.
+3. Nella schermata **scegliere un tipo di origine dati** selezionare **database** , quindi fare clic su **Avanti**.
 
 4. Nella schermata **Seleziona connessione dati** eseguire una delle operazioni seguenti:
 
@@ -85,7 +87,7 @@ Questo passaggio consente di creare un'origine dati dal database Northwind usand
 
 5. Se il database richiede una password, selezionare l'opzione per includere i dati sensibili, quindi selezionare **Avanti**.
 
-6. Nella pagina **Salva stringa di connessione nel file di configurazione dell'applicazione**selezionare **Avanti**.
+6. Nella pagina **Salva stringa di connessione nel file di configurazione dell'applicazione** selezionare **Avanti**.
 
 7. Nella schermata **Seleziona oggetti di database** espandere il nodo **tabelle** .
 

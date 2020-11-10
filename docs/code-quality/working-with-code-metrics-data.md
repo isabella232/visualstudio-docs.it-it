@@ -1,6 +1,8 @@
 ---
 title: Finestra metrica codice
 ms.date: 12/12/2017
+description: Informazioni su come visualizzare, filtrare, ridisporre ed esportare i dati di analisi delle metriche di Visual Studio Code. Vedere come creare elementi di lavoro in base ai risultati della metrica del codice.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.codemetrics.output
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c01543b290d991a189c0851c64526c9c513068ba
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d29109811c3dd5f354b510d046b33b0ba31d60e5
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927978"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436810"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Usare la finestra Risultati metrica codice
 
@@ -30,9 +32,9 @@ La finestra **Risultati metrica codice** viene visualizzata automaticamente quan
 
 È possibile visualizzare la finestra Risultati metrica codice utilizzando una delle seguenti sequenze di menu:
 
-- Nel menu **analizza** scegliere **Windows**  >  **i risultati della metrica del codice**di Windows.
+- Nel menu **analizza** scegliere **Windows**  >  **i risultati della metrica del codice** di Windows.
 
-- Scegliere **altri**risultati della metrica del codice di Windows dal menu **Visualizza**  >  **Code Metrics Results**.
+- Scegliere **altri** risultati della metrica del codice di Windows dal menu **Visualizza**  >  **Code Metrics Results**.
 
 Viene visualizzata la finestra **Risultati metrica codice** , anche se non contiene alcun risultato.
 
@@ -50,9 +52,9 @@ Nella casella di riepilogo a discesa **filtro** sono contenuti i nomi delle colo
 
 1. Selezionare il nome della colonna dall'elenco **filtro** .
 
-2. In **min**Digitare il valore minimo da visualizzare.
+2. In **min** Digitare il valore minimo da visualizzare.
 
-3. In **Max**Digitare il valore massimo da visualizzare.
+3. In **Max** Digitare il valore massimo da visualizzare.
 
 4. Fare clic sul pulsante **Applica filtro** .
 
@@ -90,7 +92,7 @@ Per altre informazioni sugli elementi di lavoro Azure Boards, vedere [elementi d
 
 1. Fare clic con il pulsante destro del mouse sul risultato.
 
-2. Scegliere **Crea elemento di lavoro**, quindi fare clic sul tipo di elemento di lavoro che si desidera creare (**bug**, **attività**e così via).
+2. Scegliere **Crea elemento di lavoro** , quindi fare clic sul tipo di elemento di lavoro che si desidera creare ( **bug** , **attività** e così via).
 
 3. Completare il form dell'elemento di lavoro compilando tutti i campi obbligatori.
 

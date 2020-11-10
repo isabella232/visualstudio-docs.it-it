@@ -1,5 +1,7 @@
 ---
 title: Visualizzare dati correlati in applicazioni WPF
+description: Visualizzare i dati correlati nelle applicazioni WPF. Utilizzare i dati di più tabelle o entità correlate tra loro in una relazione padre-figlio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6694d3c1521a6a405323edc33adc44dac0e66829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9604ac7c0083bc40edb17b19d4de608eb7366b1
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282553"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436498"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Visualizzare dati correlati in applicazioni WPF
 

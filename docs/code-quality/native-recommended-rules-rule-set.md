@@ -1,18 +1,20 @@
 ---
 title: Set di regole consigliate native
 ms.date: 11/04/2016
+description: Informazioni sul set di regole consigliate native di Visual Studio. Vedere le descrizioni delle regole per la sicurezza, l'affidabilità e altri problemi critici nel codice nativo.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fd7ba7b742c2615dc8f161c5ea156b4fd0a7f4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 1c0515a08d987d8892dd5f252d97ece8d138eb0b
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600021"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437031"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Set di regole consigliate native
 
@@ -38,20 +40,20 @@ Includere questo set di regole in tutti i set di regole personalizzati creati pe
 |[C6201](/cpp/code-quality/c6201)|L'indice supera il limite massimo del buffer di stack|
 |[C6214](/cpp/code-quality/c6214)|Cast di HRESULT a BOOL non valido|
 |[C6215](/cpp/code-quality/c6215)|Cast di BOOL a HRESULT non valido|
-|[C6216](/cpp/code-quality/c6216)|Cast compilato dal compilatore BOOL a HRESULT non valido|
+|[C6216](/cpp/code-quality/c6216)|Il cast di Compiler-Inserted BOOL a HRESULT non è valido|
 |[C6217](/cpp/code-quality/c6217)|Test HRESULT non valido con NOT|
 |[C6220](/cpp/code-quality/c6220)|Confronto HRESULT non valido a-1|
 |[C6226](/cpp/code-quality/c6226)|Assegnazione HRESULT non valida a-1|
 |[C6230](/cpp/code-quality/c6230)|Utilizzo HRESULT non valido come valore booleano|
-|[C6235](/cpp/code-quality/c6235)|Costante diversa da zero con Logical-OR|
-|[C6236](/cpp/code-quality/c6236)|Logical-OR con costante diversa da zero|
-|[C6237](/cpp/code-quality/c6237)|Zero con and logico perde effetti collaterali|
+|[C6235](/cpp/code-quality/c6235)|Costante diversa da zero con Logical-Or|
+|[C6236](/cpp/code-quality/c6236)|Logical-Or con una costante diversa da zero|
+|[C6237](/cpp/code-quality/c6237)|Zero con Logical-And perde effetti collaterali|
 |[C6242](/cpp/code-quality/c6242)|Rimozione locale forzata|
 |[C6248](/cpp/code-quality/c6248)|Creazione di DACL null|
 |[C6250](/cpp/code-quality/c6250)|Descrittori di indirizzo non rilasciati|
 |[C6255](/cpp/code-quality/c6255)|Uso non protetto di alloca|
 |[C6258](/cpp/code-quality/c6258)|Utilizzo del thread di terminazione|
-|[C6259](/cpp/code-quality/c6259)|Codice inattivo nell'opzione con OR bit per bit limitato|
+|[C6259](/cpp/code-quality/c6259)|Codice non recapitabile in Bitwise-Or switch limitato|
 |[C6260](/cpp/code-quality/c6260)|Utilizzo aritmetico dei byte|
 |[C6262](/cpp/code-quality/c6262)|Utilizzo eccessivo dello stack|
 |[C6263](/cpp/code-quality/c6263)|Utilizzo di alloca in loop|
@@ -64,18 +66,18 @@ Includere questo set di regole in tutti i set di regole personalizzati creati pe
 |[C6274](/cpp/code-quality/c6274)|Argomento non Character per formattare la funzione|
 |[C6276](/cpp/code-quality/c6276)|Cast stringa non valido|
 |[C6277](/cpp/code-quality/c6277)|Chiamata CreateProcess non valida|
-|[C6278](/cpp/code-quality/c6278)|Array-New Scalar-Delete non corrispondente|
-|[C6279](/cpp/code-quality/c6279)|Scalar-new Array-Delete non corrispondente|
-|[C6280](/cpp/code-quality/c6280)|Allocazione di memoria-deallocazione non corrispondente|
+|[C6278](/cpp/code-quality/c6278)|Array-New Scalar-Delete non corrispondenti|
+|[C6279](/cpp/code-quality/c6279)|Scalar-New Array-Delete non corrispondenti|
+|[C6280](/cpp/code-quality/c6280)|Memoria Allocation-Deallocation non corrispondente|
 |[C6281](/cpp/code-quality/c6281)|Precedenza relazione bit per bit|
 |[C6282](/cpp/code-quality/c6282)|L'assegnazione sostituisce il test|
-|[C6283](/cpp/code-quality/c6283)|Array primitivo-nuovo scalare-eliminazione non corrispondente|
+|[C6283](/cpp/code-quality/c6283)|Array-New primitive Scalar-Delete non corrispondenti|
 |[C6284](/cpp/code-quality/c6284)|Argomento di oggetto non valido per formattare la funzione|
-|[C6285](/cpp/code-quality/c6285)|Logical-OR di costanti|
-|[C6286](/cpp/code-quality/c6286)|Effetti collaterali logici diversi da zero|
+|[C6285](/cpp/code-quality/c6285)|Logical-Or di costanti|
+|[C6286](/cpp/code-quality/c6286)|Perdita di effetti collaterali Logical-Or diversi da zero|
 |[C6287](/cpp/code-quality/c6287)|Test ridondante|
-|[C6288](/cpp/code-quality/c6288)|Inclusione reciproca su Logical-and è false|
-|[C6289](/cpp/code-quality/c6289)|Esclusione reciproca su OR logico true|
+|[C6288](/cpp/code-quality/c6288)|Inclusione reciproca su Logical-And è false|
+|[C6289](/cpp/code-quality/c6289)|Esclusione reciproca su Logical-Or è true|
 |[C6290](/cpp/code-quality/c6290)|Precedenza Logical-Not Bitwise-And|
 |[C6291](/cpp/code-quality/c6291)|Precedenza Logical-Not Bitwise-Or|
 |[C6292](/cpp/code-quality/c6292)|Conteggi cicli fino al massimo|
@@ -92,7 +94,7 @@ Includere questo set di regole in tutti i set di regole personalizzati creati pe
 |[C6306](/cpp/code-quality/c6308)|Perdita di realloc|
 |[C6310](/cpp/code-quality/c6310)|Costante filtro eccezioni non valida|
 |[C6312](/cpp/code-quality/c6312)|Ciclo di esecuzione dell'eccezione continua|
-|[C6314](/cpp/code-quality/c6314)|Precedenza or bit per bit|
+|[C6314](/cpp/code-quality/c6314)|Precedenza Bitwise-Or|
 |[C6317](/cpp/code-quality/c6317)|Non complemento|
 |[C6318](/cpp/code-quality/c6318)|Continua ricerca eccezione|
 |[C6319](/cpp/code-quality/c6319)|Ignorato da virgola|
@@ -103,7 +105,7 @@ Includere questo set di regole in tutti i set di regole personalizzati creati pe
 |[C6333](/cpp/code-quality/c6333)|Dimensioni VirtualFree non valide|
 |[C6335](/cpp/code-quality/c6335)|Handle di processo perdita|
 |[C6381](/cpp/code-quality/c6381)|Informazioni di chiusura mancanti|
-|[C6383](/cpp/code-quality/c6383)|Numero di byte del buffer di conteggio elementi|
+|[C6383](/cpp/code-quality/c6383)|Sovraccarico del buffer Byte-Count Element-Count|
 |[C6384](/cpp/code-quality/c6384)|Divisione dimensioni puntatore|
 |[C6385](/cpp/code-quality/c6385)|Overrun di lettura|
 |[C6386](/cpp/code-quality/c6386)|Overrun di scrittura|

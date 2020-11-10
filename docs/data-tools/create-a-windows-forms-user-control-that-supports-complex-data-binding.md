@@ -1,5 +1,7 @@
 ---
 title: Creare un controllo utente Windows Forms con data binding
+description: Informazioni su come creare un Windows Forms controllo utente che supporta data binding complessi, implementando la classe ComplexBindingPropertiesAttribute.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 97d9e64a0fcabb207d4606d4819f6afcb61b1043
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 465636b2b5bbf1a47752b4f0917258e264172abd
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586848"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436784"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding complesso
 
@@ -55,7 +57,7 @@ Durante questa procedura dettagliata si apprenderà come:
 
 In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
+1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio** è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
 
 1. Installare il database di esempio Northwind attenendosi alla procedura seguente:
 
@@ -75,7 +77,7 @@ Il primo passaggio consiste nel creare un progetto di **App Windows Forms** per 
 
 ## <a name="add-a-user-control-to-the-project"></a>Aggiungere un controllo utente al progetto
 
-Poiché in questa procedura dettagliata viene creato un controllo associabile a dati complesso da un **controllo utente**, aggiungere un elemento del **controllo utente** al progetto:
+Poiché in questa procedura dettagliata viene creato un controllo associabile a dati complesso da un **controllo utente** , aggiungere un elemento del **controllo utente** al progetto:
 
 1. Scegliere **Aggiungi controllo utente** dal menu **Progetto**.
 
@@ -98,13 +100,13 @@ Per controlli semplici che supportano il data binding, è possibile implementare
     [!code-csharp[VbRaddataDisplaying#4](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.cs)]
     [!code-vb[VbRaddataDisplaying#4](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.vb)]
 
-1. Scegliere **Compila soluzione**dal menu **Compila** .
+1. Scegliere **Compila soluzione** dal menu **Compila** .
 
 ## <a name="create-a-data-source-from-your-database"></a>Creare un'origine dati dal database
 
 Utilizzare la **Configurazione guidata origine dati** per creare un'origine dati basata sulla `Customers` tabella nel database di esempio Northwind:
 
-1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati**dal menu **dati** .
+1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati** dal menu **dati** .
 
 2. Nella finestra **origini dati** selezionare **Aggiungi nuova origine dati** per avviare la configurazione guidata **origine dati** .
 

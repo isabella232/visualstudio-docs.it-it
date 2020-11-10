@@ -1,5 +1,6 @@
 ---
 title: Creare relazioni tra set di dati
+description: Creare relazioni tra set di impostazioni in Visual Studio. Informazioni sugli oggetti e sui vincoli DataRelation. Creare manualmente una relazione dati in gestione DataSet.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,15 +17,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93575cb299513dbb0616f3c7ed6f1c7db6d65bb5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0a07ca2d30e27cdcbc06e8f90a810982d4410931
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037686"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436094"
 ---
 # <a name="create-relationships-between-datasets"></a>Creare relazioni tra set di dati
-I set di dati che contengono tabelle di dati correlate utilizzano <xref:System.Data.DataRelation> oggetti per rappresentare una relazione padre/figlio tra le tabelle e per restituire record correlati gli uni dagli altri. L'aggiunta di tabelle correlate ai set di dati tramite la **Configurazione guidata origine dati**o la **Progettazione DataSet**crea e configura automaticamente l' <xref:System.Data.DataRelation> oggetto.
+I set di dati che contengono tabelle di dati correlate utilizzano <xref:System.Data.DataRelation> oggetti per rappresentare una relazione padre/figlio tra le tabelle e per restituire record correlati gli uni dagli altri. L'aggiunta di tabelle correlate ai set di dati tramite la **Configurazione guidata origine dati** o la **Progettazione DataSet** crea e configura automaticamente l' <xref:System.Data.DataRelation> oggetto.
 
 L' <xref:System.Data.DataRelation> oggetto esegue due funzioni:
 
@@ -56,7 +57,7 @@ Come parte del vincolo FOREIGN KEY, è possibile specificare le regole di integr
 
 Le regole che è possibile apportare sono specificate nell' <xref:System.Data.Rule> enumerazione e sono elencate nella tabella seguente.
 
-|Regola vincolo di chiave esterna|Azione|
+|Regola vincolo di chiave esterna|Action|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|La modifica (aggiornamento o eliminazione) apportata al record padre viene inoltre apportata in record correlati nella tabella figlio.|
 |<xref:System.Data.Rule.SetNull>|I record figlio non vengono eliminati, ma la chiave esterna nei record figlio viene impostata su <xref:System.DBNull> . Con questa impostazione, i record figlio possono essere lasciati come "orfani", ovvero non hanno alcuna relazione con i record padre. **Nota:** L'utilizzo di questa regola può generare dati non validi nella tabella figlio.|
@@ -69,9 +70,9 @@ Per ulteriori informazioni sugli aggiornamenti nelle tabelle del set di [dati](.
 Quando si crea un <xref:System.Data.DataRelation> oggetto, è possibile specificare che la relazione deve essere utilizzata solo per applicare i vincoli, ovvero non verrà utilizzata anche per accedere ai record correlati. È possibile usare questa opzione per generare un set di dati che è leggermente più efficiente e che contiene un minor numero di metodi rispetto a uno con la funzionalità dei record correlati. Tuttavia, non sarà possibile accedere ai record correlati. Una relazione di solo vincolo, ad esempio, impedisce l'eliminazione di un record padre che contiene ancora record figlio e non è possibile accedere ai record figlio tramite l'elemento padre.
 
 ## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>Creazione manuale di una relazione dati nell'Progettazione DataSet
-Quando si creano tabelle di dati tramite gli strumenti di progettazione dei dati in Visual Studio, le relazioni vengono create automaticamente se le informazioni possono essere raccolte dall'origine dei dati. Se si aggiungono manualmente tabelle di dati dalla scheda **DataSet** della **casella degli strumenti**, potrebbe essere necessario creare manualmente la relazione. Per informazioni sulla creazione di <xref:System.Data.DataRelation> oggetti a livello di codice, vedere [aggiunta di DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations).
+Quando si creano tabelle di dati tramite gli strumenti di progettazione dei dati in Visual Studio, le relazioni vengono create automaticamente se le informazioni possono essere raccolte dall'origine dei dati. Se si aggiungono manualmente tabelle di dati dalla scheda **DataSet** della **casella degli strumenti** , potrebbe essere necessario creare manualmente la relazione. Per informazioni sulla creazione di <xref:System.Data.DataRelation> oggetti a livello di codice, vedere [aggiunta di DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations).
 
-Le relazioni tra le tabelle di dati vengono visualizzate come righe nel **Progettazione DataSet**, con un glifo di chiave e infinito che illustra l'aspetto uno-a-molti della relazione. Per impostazione predefinita, il nome della relazione non viene visualizzato nell'area di progettazione.
+Le relazioni tra le tabelle di dati vengono visualizzate come righe nel **Progettazione DataSet** , con un glifo di chiave e infinito che illustra l'aspetto uno-a-molti della relazione. Per impostazione predefinita, il nome della relazione non viene visualizzato nell'area di progettazione.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -105,6 +106,6 @@ Le relazioni tra le tabelle di dati vengono visualizzate come righe nel **Proget
 
 2. Dal menu **dati** selezionare il comando **Mostra etichette di relazione** per visualizzare il nome della relazione. Deselezionare il comando per nascondere il nome della relazione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Creare e configurare i set di dati in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)

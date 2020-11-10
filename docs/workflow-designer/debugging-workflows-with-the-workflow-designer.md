@@ -1,5 +1,7 @@
 ---
 title: Debug dei flussi di lavoro mediante Progettazione flussi di lavoro
+description: Informazioni sul modo in cui il Progettazione flussi di lavoro consente di eseguire il debug di flussi di lavoro e attività personalizzate con un processo simile a quello del debugger predefinito di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b8de1ff9875d175c956a45b87d459d0943e783c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45219da52cdd1ff87b7243c3cc742bb4c97a74e7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597061"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435860"
 ---
 # <a name="debug-workflows-with-the-workflow-designer"></a>Eseguire il debug dei flussi di lavoro con il Progettazione flussi di lavoro
 
@@ -37,7 +39,7 @@ Generalmente si esegue il debug dei flussi di lavoro nello stesso modo in cui si
 
 ## <a name="step-through-code"></a>Esecuzione del codice un'istruzione alla volta
 
-- **Esegui istruzione**: eseguire un'istruzione in un'attività premendo **F11**. Il debugger avanza in qualsiasi gestore definito. Se nessun gestore è definito, viene eseguita l'istruzione/routine dell'attività oppure, con CompositeActivity contenenti altre attività, viene eseguita l'istruzione della prima attività in stato di esecuzione.
+- **Esegui istruzione** : eseguire un'istruzione in un'attività premendo **F11**. Il debugger avanza in qualsiasi gestore definito. Se nessun gestore è definito, viene eseguita l'istruzione/routine dell'attività oppure, con CompositeActivity contenenti altre attività, viene eseguita l'istruzione della prima attività in stato di esecuzione.
 
 - Esci **da istruzione/uscita:** Uscire da un'attività premendo **MAIUSC** + **F11**. Uscendo da un'istruzione/routine di un'attività, l'attività corrente e tutte le relative attività di pari livello vengono eseguite fino al completamento. Il debugger reimposta quindi il padre dell'attività corrente. Uscendo da un gestore del codice, il debugger reimposta l'attività alla quale è associato il gestore.
 
@@ -45,4 +47,4 @@ Generalmente si esegue il debug dei flussi di lavoro nello stesso modo in cui si
 
 ## <a name="debug-with-f5"></a>Debug con F5
 
-Se si sta compilando un'app console del flusso di lavoro, è sufficiente premere **F5** per avviare il debug nell'applicazione e nel flusso di lavoro. Se si compila una libreria attività in modo autonomo, è necessario specificare un'applicazione host eseguibile come progetto di avvio. Per impostare un progetto di avvio in **Esplora soluzioni**, fare clic con il pulsante destro del mouse sul nome del progetto dell'host e selezionare **Imposta come progetto di avvio**.
+Se si sta compilando un'app console del flusso di lavoro, è sufficiente premere **F5** per avviare il debug nell'applicazione e nel flusso di lavoro. Se si compila una libreria attività in modo autonomo, è necessario specificare un'applicazione host eseguibile come progetto di avvio. Per impostare un progetto di avvio in **Esplora soluzioni** , fare clic con il pulsante destro del mouse sul nome del progetto dell'host e selezionare **Imposta come progetto di avvio**.

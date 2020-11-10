@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6543dfe8298ea24aa731a74556b01be1beeed2bf
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: 153864a293ca25fdcf30f23b96f686737411c965
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344478"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435786"
 ---
 # <a name="devinit-commands"></a>comandi devinit
 
@@ -26,7 +26,7 @@ ms.locfileid: "93344478"
 devinit init
 ```
 
-Inizializzare l'ambiente eseguendo gli strumenti specificati in un [_.devinit.js_](devinit-json.md) nel file nella directory di lavoro corrente.  
+Inizializzare l'ambiente eseguendo gli strumenti specificati in un [.devinit.jssu](devinit-json.md) file.
 
 ### <a name="options-for-init"></a>Opzioni per init
 
@@ -34,7 +34,7 @@ Opzioni facoltative per il `devinit init` comando.
 
 | Argomento             | Obbligatoria | Descrizione                                                               |
 |----------------------|----------|---------------------------------------------------------------------------|
-| -f,--file            | No       | Percorso della _.devinit.jssul_ file.                                         |
+| -f,--file            | No       | Percorso del `.devinit.json` file.                                         |
 | --Error-Action       | No       | Specifica la modalità di gestione degli errori. Opzioni: arresta, ignora, continua (impostazione predefinita).|
 | -v,--verbose         | No       | Genera output dettagliato.                                                      |
 | -n,--esecuzione a secco         | No       | Esecuzione a secco.                                                                  |
@@ -98,6 +98,10 @@ Specifica l'azione da intraprendere se uno strumento restituisce un codice di us
 | ignore   | Continuare l'elaborazione di altri strumenti dopo l'emissione di un avviso nell'output standard. Il codice di uscita del processo devinilt deve essere sempre zero (esito positivo). L' `ignore` impostazione Ignora tutti gli errori.                                                                                                      |
 | stop     | Genera un errore nell'errore standard e interrompe l'elaborazione degli strumenti. Il codice di uscita del devinit.exe è diverso da zero (esito negativo). È simile all'azione continua errore, ma l'elaborazione viene interrotta al primo errore rilevato. `stop` è l'azione di errore predefinita per tutti i comandi ad eccezione di init. |
 
+#### <a name="--dry-run-switch"></a>--opzione di esecuzione a secco
+
+Comandi echo Tool che verrebbero eseguiti. Alcuni strumenti potrebbero richiedere ulteriori azioni, come documentato per tale strumento. 
+
 #### <a name="--verbose-switch"></a>opzione--verbose
 
 Genera output dettagliato nell'output standard. Se lo strumento da eseguire supporta un'opzione verbose, propagare l'opzione verbose allo strumento.
@@ -148,7 +152,7 @@ devinit version
 
 Stampa le informazioni sulla versione corrente per devinilt.
 
-## <a name="help"></a>Help
+## <a name="help"></a>Guida
 
 ```console
 devinit help

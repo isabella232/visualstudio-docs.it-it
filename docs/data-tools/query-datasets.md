@@ -1,5 +1,7 @@
 ---
 title: Set di dati di query
+description: Informazioni sui set di impostazioni di query. Informazioni sulla distinzione tra maiuscole e minuscole. Trovare una riga specifica in una tabella di dati, trovare righe in base ai valori di colonna e accedere ai record correlati.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ef1c806914b0f134702e010b58229ee3fc15c7a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ccf228b147301eb9fccf41da98f8cc5204971a9
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281864"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436068"
 ---
 # <a name="query-datasets"></a>Set di dati di query
 Per cercare record specifici in un set di dati, usare il `FindBy` Metodo sulla DataTable, scrivere un'istruzione foreach personalizzata per eseguire il ciclo della raccolta Rows della tabella o usare [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -70,7 +72,7 @@ In questa pagina vengono forniti esempi di utilizzo di DataSet tipizzati. Per in
 > [!NOTE]
 > Se si lavora in una Windows Forms Application e si usano le funzionalità di data binding per visualizzare i dati, il form generato dalla finestra di progettazione potrebbe fornire una funzionalità sufficiente per l'applicazione. Per altre informazioni, vedere [associare i controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). In particolare, vedere [relazioni nei DataSet](relationships-in-datasets.md).
 
-Negli esempi di codice seguenti viene illustrato come spostarsi in alto e in basso nelle relazioni nei dataset tipizzati. Negli esempi di codice vengono utilizzati i metodi tipizzati <xref:System.Data.DataRow> s ( `NorthwindDataSet.OrdersRow` ) e i FindBy*PrimaryKey* ( `FindByCustomerID` ) generati per individuare una riga desiderata e restituire i record correlati. Gli esempi vengono compilati ed eseguiti correttamente solo se si dispone di:
+Negli esempi di codice seguenti viene illustrato come spostarsi in alto e in basso nelle relazioni nei dataset tipizzati. Negli esempi di codice vengono utilizzati i metodi tipizzati <xref:System.Data.DataRow> s ( `NorthwindDataSet.OrdersRow` ) e i FindBy *PrimaryKey* ( `FindByCustomerID` ) generati per individuare una riga desiderata e restituire i record correlati. Gli esempi vengono compilati ed eseguiti correttamente solo se si dispone di:
 
 - Istanza di un set di dati denominato `NorthwindDataSet` con una `Customers` tabella.
 

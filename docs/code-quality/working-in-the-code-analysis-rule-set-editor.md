@@ -1,6 +1,8 @@
 ---
 title: Usare l'editor set di regole di analisi codice
 ms.date: 04/04/2018
+description: Informazioni su come modificare e visualizzare i set di regole in Visual Studio. Vedere come impostare la gravità della regola, specificare le regole in un set personalizzato e modificare i dati nella griglia del set di regole.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaf964b24fea41d8e364d610806ba92980b1dc7
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 4d2703972658aace438ab235d469eed3e0644c06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659179"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436823"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usare l'editor set di regole di analisi del codice
 
@@ -26,10 +28,10 @@ Nella tabella seguente vengono illustrate le opzioni di gravità:
 |Azione (gravità)|Descrizione|
 |-|-|
 |Avviso|Genera un avviso nel **Elenco errori** e anche in fase di compilazione.|
-|Errore di|Genera un errore nel **Elenco errori** e anche in fase di compilazione.|
+|Errore|Genera un errore nel **Elenco errori** e anche in fase di compilazione.|
 |Info|Genera un messaggio nel **Elenco errori**.|
 |Nascosto|La violazione non è visibile all'utente. Tuttavia, l'IDE riceve una notifica della violazione.|
-|nessuno|La regola è stata eliminata. Il comportamento è lo stesso di se la regola è stata rimossa dal set di regole.|
+|Nessuno|La regola è stata eliminata. Il comportamento è lo stesso di se la regola è stata rimossa dal set di regole.|
 
 Nell'editor vengono visualizzate le regole in una struttura ad albero che raggruppa le regole in base a un campo del set di regole specificato. Per aggiungere o rimuovere regole da un set di regole, eseguire uno o più dei passaggi seguenti:
 

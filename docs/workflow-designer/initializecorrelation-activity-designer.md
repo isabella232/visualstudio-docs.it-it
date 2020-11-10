@@ -1,5 +1,7 @@
 ---
 title: ActivityDesigner Progettazione flussi di lavoro-InitializeCorrelation
+description: Informazioni su come usare l'ActivityDesigner InitializeCorrelation per creare e configurare un'attività InitializeCorrelation.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aadb526e50351c8344c8b265dca3364637d1ff0c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82b786277c79a355e1859b337a45ab093e6f2a42
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875566"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437788"
 ---
 # <a name="initializecorrelation-activity-designer"></a>ActivityDesigner InitializeCorrelation
 
@@ -39,7 +41,7 @@ Per visualizzare la finestra di dialogo **Inizializza correlazione** in cui è p
 
 Nella tabella seguente sono illustrate le <xref:System.ServiceModel.Activities.InitializeCorrelation> proprietà e viene descritto come vengono utilizzate nella finestra di progettazione. Queste proprietà possono essere modificate nella finestra **Proprietà** o in Progettazione flussi di lavoro area.
 
-|Nome proprietà|Obbligatoria|Utilizzo|
+|Nome proprietà|Obbligatoria|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo dell'attività <xref:System.ServiceModel.Activities.InitializeCorrelation>. Il valore predefinito è InitializeCorrelation.<br /><br /> Anche se l'uso di un valore non predefinito per friendly <xref:System.Activities.Activity.DisplayName%2A> non è strettamente obbligatorio, è consigliabile.|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|Falso|<xref:System.ServiceModel.Activities.CorrelationHandle> usato per associare le attività del flusso di lavoro nella correlazione.|

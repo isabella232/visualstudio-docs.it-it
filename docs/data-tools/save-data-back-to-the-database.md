@@ -1,5 +1,7 @@
 ---
 title: Salvare i dati di nuovo nel database
+description: Usare gli strumenti del set di dati per salvare nuovamente i dati nel database. Il set di dati è una copia in memoria dei dati che deve essere salvata di nuovo nel database, se è stata modificata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 493637f81df15fadf65d6c7d90e980e322919b13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77f6a837fcc88c7154978e8031b17febaa0fcd39
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281747"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436055"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati di nuovo nel database
 
@@ -51,7 +53,7 @@ Se si ha familiarità con gli oggetti TableAdapter, è possibile passare diretta
 |[Salvare i dati in una transazione](../data-tools/save-data-in-a-transaction.md)|Procedura dettagliata che consente di creare un Windows Forms Application per illustrare il salvataggio dei dati in un database all'interno di una transazione|
 |[Salvare dati in un database (a più tabelle)](../data-tools/save-data-to-a-database-multiple-tables.md)|Come modificare i record e salvare di nuovo le modifiche in più tabelle nel database|
 |[Salvare dati da un oggetto in un database](../data-tools/save-data-from-an-object-to-a-database.md)|Come passare dati da un oggetto che non si trova in un DataSet a un database usando un metodo DbDirect di TableAdapter|
-|[PSalvare dati con i metodi DBDirect di TableAdapter](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Come utilizzare il TableAdapter per inviare query SQL direttamente al database|
+|[Salvare dati con i metodi DBDirect di TableAdapter](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Come utilizzare il TableAdapter per inviare query SQL direttamente al database|
 |[Salvare un set di dati come XML](../data-tools/save-a-dataset-as-xml.md)|Come salvare un set di dati in un documento XML|
 
 ## <a name="two-stage-updates"></a>Aggiornamenti in due fasi

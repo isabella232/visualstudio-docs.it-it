@@ -1,5 +1,7 @@
 ---
 title: Strumenti di set di dati
+description: Esaminare gli strumenti del set di dati disponibili in Visual Studio. Informazioni sul flusso di lavoro del set di dati, i set di dati e l'architettura a più livelli e i set di dati e XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
@@ -47,12 +49,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cb41a4e3e4ed1c0032c579779a18c7df0bc22477
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0ccb15d65f021099bb48c26dbdb7c03122049a7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586718"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436485"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Strumenti di set di dati in Visual Studio
 
@@ -77,9 +79,9 @@ Visual Studio offre strumenti per semplificare l'uso dei set di impostazioni. Il
 
   - [Compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-  - [Modificare i dati nei set di dati](../data-tools/edit-data-in-datasets.md)
+  - [Modifica di dati nei set di dati](../data-tools/edit-data-in-datasets.md)
 
-  - [Convalida dei dati nei set di dati](../data-tools/validate-data-in-datasets.md)
+  - [Convalidare i dati nei set di dati](../data-tools/validate-data-in-datasets.md)
 
   - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
 

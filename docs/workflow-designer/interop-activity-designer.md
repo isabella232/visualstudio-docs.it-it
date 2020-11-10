@@ -1,5 +1,7 @@
 ---
 title: ActivityDesigner Progettazione flussi di lavoro-Interop
+description: Informazioni sull'ActivityDesigner Interop e su come è possibile usare l'ActivityDesigner Interop per creare e configurare un'attività di interoperabilità.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8047df3787c0871e369b6079e4f0cc80f6d93949
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a45187f01469f568a98098a8470ad62f67307a6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72650204"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437775"
 ---
 # <a name="interop-activity-designer"></a>ActivityDesigner Interop
 
@@ -27,7 +29,7 @@ L'attività <xref:System.Activities.Statements.Interop> gestisce l'esecuzione de
 
 ### <a name="use-the-interop-activity-designer"></a>Usare l'ActivityDesigner Interop
 
-L'ActivityDesigner **Interop** è disponibile nella categoria **migrazione** della **casella degli strumenti**, a cui è possibile accedere facendo clic sulla scheda **casella degli strumenti** . In alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** o premere **CTRL** + **ALT** + **X**.
+L'ActivityDesigner **Interop** è disponibile nella categoria **migrazione** della **casella degli strumenti** , a cui è possibile accedere facendo clic sulla scheda **casella degli strumenti** . In alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** o premere **CTRL** + **ALT** + **X**.
 
 La categoria di [migrazione](../workflow-designer/migration-activity-designers.md) che contiene l' <xref:System.Activities.Statements.Interop> attività viene visualizzata solo nella **casella degli strumenti** se il progetto è destinato .NET Framework 4 (completo) o versione successiva. Se necessario, è possibile modificare la versione del Framework di destinazione del progetto.
 
@@ -39,7 +41,7 @@ Per aprire la finestra di dialogo **Cerca e seleziona un tipo .NET** , fare clic
 
 Nella tabella seguente vengono illustrate le <xref:System.Activities.Statements.Interop> proprietà e viene descritto il modo in cui vengono utilizzate nella finestra di progettazione. Queste proprietà possono essere modificate nella griglia delle proprietà o nell'area di Progettazione flussi di lavoro.
 
-|Nome proprietà|Obbligatoria|Utilizzo|
+|Nome proprietà|Obbligatoria|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo dell'attività <xref:System.Activities.Statements.Interop>. Il valore predefinito è **Interop**. Sebbene il nome visualizzato non sia obbligatorio, è consigliabile specificarne uno.|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|Vero|Consente di specificare il tipo di attività incluso nell'attività <xref:System.Activities.Statements.Interop>. Tale tipo specificato deve derivare da <xref:System.Workflow.ComponentModel.Activity>.|

@@ -1,5 +1,7 @@
 ---
 title: Connettersi ai dati in un database di Access
+description: Informazioni su come connettersi ai dati in un database di Access, ovvero un file con estensione mdb o accdb. file, in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 07/18/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3a94467dbfa0c11fdb7bb6ba7aa4d304fef3979f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 156acfd56789ec13201738e72c6df283e257e94f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800632"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436862"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Connettersi ai dati in un database di Access
 
@@ -25,7 +27,7 @@ ms.locfileid: "88800632"
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Per usare queste procedure, è necessario un progetto Windows Forms o WPF e un database di Access (file con estensione*accdb* ) o un database di Access 2000-2003 (file con*estensione mdb* ). Attenersi alla procedura che corrisponde al tipo di file utilizzato.
+Per usare queste procedure, è necessario un progetto Windows Forms o WPF e un database di Access (file con estensione *accdb* ) o un database di Access 2000-2003 (file con *estensione mdb* ). Attenersi alla procedura che corrisponde al tipo di file utilizzato.
 
 ## <a name="create-a-dataset-for-an-accdb-file"></a>Creare un set di dati per un file con estensione accdb
 
@@ -33,7 +35,7 @@ Connettersi ai database creati con Microsoft 365, Access 2013, Access 2010 o Acc
 
 1. Aprire un progetto di applicazione Windows Forms o WPF in Visual Studio.
 
-2. Per aprire la finestra **origini dati** , scegliere altre **View** **Other Windows**  >  **origini dati**di Windows dal menu Visualizza.
+2. Per aprire la finestra **origini dati** , scegliere altre **View** **Other Windows**  >  **origini dati** di Windows dal menu Visualizza.
 
    ![Visualizza, Altre finestre, Origini dati](../data-tools/media/viewdatasources.png)
 
@@ -49,11 +51,11 @@ Connettersi ai database creati con Microsoft 365, Access 2013, Access 2010 o Acc
 
    Verrà visualizzata la finestra di dialogo **Aggiungi connessione**.
 
-7. Se l' **origine dati** non è impostata su **file di database Microsoft Access**, selezionare il pulsante **Cambia** .
+7. Se l' **origine dati** non è impostata su **file di database Microsoft Access** , selezionare il pulsante **Cambia** .
 
-   Verrà visualizzata la finestra di dialogo **Modifica origine dati** . Nell'elenco delle origini dati scegliere file di **database Microsoft Access**. Nell'elenco a discesa **provider di dati** selezionare **.NET Framework provider di dati per OLE DB**, quindi scegliere **OK**.
+   Verrà visualizzata la finestra di dialogo **Modifica origine dati** . Nell'elenco delle origini dati scegliere file di **database Microsoft Access**. Nell'elenco a discesa **provider di dati** selezionare **.NET Framework provider di dati per OLE DB** , quindi scegliere **OK**.
 
-8. Scegliere **Sfoglia** accanto a **nome file di database**, quindi passare al file con estensione *accdb* e scegliere **Apri**.
+8. Scegliere **Sfoglia** accanto a **nome file di database** , quindi passare al file con estensione *accdb* e scegliere **Apri**.
 
 9. Immettere un nome utente e una password, se necessario, quindi scegliere **OK**.
 
@@ -75,7 +77,7 @@ Connettersi ai database creati con Access 2000-2003 usando la procedura seguente
 
 1. Aprire un progetto di applicazione Windows Forms o WPF in Visual Studio.
 
-2. Scegliere altre **View** **Other Windows**  >  **origini dati**di Windows dal menu Visualizza.
+2. Scegliere altre **View** **Other Windows**  >  **origini dati** di Windows dal menu Visualizza.
 
    ![Visualizza, Altre finestre, Origini dati](../data-tools/media/viewdatasources.png)
 
@@ -89,9 +91,9 @@ Connettersi ai database creati con Access 2000-2003 usando la procedura seguente
 
 6. Nella pagina **Seleziona connessione dati** selezionare **Nuova connessione** per configurare una nuova connessione dati.
 
-7. Se l'origine dati non è **un file di database Microsoft Access (OLE DB)**, selezionare **Cambia** per aprire la finestra di dialogo **Modifica origine dati** e selezionare **file di database Microsoft Access**, quindi scegliere **OK**.
+7. Se l'origine dati non è **un file di database Microsoft Access (OLE DB)** , selezionare **Cambia** per aprire la finestra di dialogo **Modifica origine dati** e selezionare **file di database Microsoft Access** , quindi scegliere **OK**.
 
-8. Nel **nome del file di database**specificare il percorso e il nome del file con *estensione mdb* a cui si desidera connettersi e quindi fare clic su **OK**.
+8. Nel **nome del file di database** specificare il percorso e il nome del file con *estensione mdb* a cui si desidera connettersi e quindi fare clic su **OK**.
 
    ![Aggiunta della connessione al file di database di Access](../data-tools/media/add-connection-access-db.png)
 

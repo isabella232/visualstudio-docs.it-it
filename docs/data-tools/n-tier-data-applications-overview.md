@@ -1,5 +1,7 @@
 ---
 title: Panoramica delle applicazioni dati a più livelli
+description: Leggi una panoramica dell'applicazione dati a più livelli. Dette anche applicazioni distribuite o applicazioni multilivello, si tratta di applicazioni dati separate in molti livelli.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 445826a2ada7b22201b7dd82948bc8bd5dd3d296
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: ea1ab222868df6ff1b22eee7827e1edd3978a88e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426863"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436211"
 ---
 # <a name="n-tier-data-applications-overview"></a>Panoramica delle applicazioni dati a più livelli
 Le applicazioni dati a più *livelli* sono applicazioni dati separate in più *livelli*. Dette anche "applicazioni distribuite" e "applicazioni a più livelli", le applicazioni a più livelli dipendono dall'elaborazione in livelli discreti distribuiti tra il client e il server. Quando si sviluppano applicazioni che accedono ai dati, è necessario avere una netta separazione tra i vari livelli che costituiscono l'applicazione.

@@ -1,5 +1,7 @@
 ---
 title: Creare e configurare oggetti TableAdapter
+description: Vedere come creare e configurare un TableAdapter in Visual Studio. Gli oggetti TableAdapter forniscono la comunicazione tra l'applicazione e un database.
+ms.custom: SEO-VS-2020
 ms.date: 09/01/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 90dcc8e623f258721c71ef02082500a0736764e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6c976f06f105969f1eaa91022607d61251a56008
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282672"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436758"
 ---
 # <a name="create-and-configure-tableadapters"></a>Creare e configurare oggetti TableAdapter
 
@@ -49,7 +51,7 @@ Se si trascina un nuovo TableAdapter dalla casella degli strumenti quando il **P
 
 - È possibile scegliere di creare un nuovo stored procedure nel database sottostante se si dispone delle autorizzazioni corrette per il database. Se non si dispone di queste autorizzazioni, questa non sarà un'opzione.
 
-- È inoltre possibile scegliere di eseguire stored procedure esistenti per i comandi **Select**, **Insert**, **Update**e **Delete** del TableAdapter. Il stored procedure assegnato al comando **Update** , ad esempio, viene eseguito quando `TableAdapter.Update()` viene chiamato il metodo.
+- È inoltre possibile scegliere di eseguire stored procedure esistenti per i comandi **Select** , **Insert** , **Update** e **Delete** del TableAdapter. Il stored procedure assegnato al comando **Update** , ad esempio, viene eseguito quando `TableAdapter.Update()` viene chiamato il metodo.
 
 Mappare i parametri dalla stored procedure selezionata alle colonne corrispondenti nella tabella dati. Se, ad esempio, il stored procedure accetta un parametro denominato `@CompanyName` che passa alla `CompanyName` colonna nella tabella, impostare la colonna di **origine** del `@CompanyName` parametro su `CompanyName` .
 
@@ -82,7 +84,7 @@ Nell'esempio seguente viene illustrato come chiamare una query aggiuntiva denomi
 
 1. Aprire il set di dati in **Progettazione DataSet**.
 
-2. Se si sta creando una nuova query, trascinare un oggetto **query** dalla scheda **DataSet** della **casella degli strumenti** in un <xref:System.Data.DataTable> oppure selezionare **Aggiungi query** dal menu di scelta rapida del TableAdapter. È anche possibile trascinare un oggetto **query** su un'area vuota del **Progettazione DataSet**, che crea un TableAdapter senza un oggetto associato <xref:System.Data.DataTable> . Queste query possono restituire solo valori singoli (scalari) o eseguire comandi di aggiornamento, inserimento o eliminazione sul database.
+2. Se si sta creando una nuova query, trascinare un oggetto **query** dalla scheda **DataSet** della **casella degli strumenti** in un <xref:System.Data.DataTable> oppure selezionare **Aggiungi query** dal menu di scelta rapida del TableAdapter. È anche possibile trascinare un oggetto **query** su un'area vuota del **Progettazione DataSet** , che crea un TableAdapter senza un oggetto associato <xref:System.Data.DataTable> . Queste query possono restituire solo valori singoli (scalari) o eseguire comandi di aggiornamento, inserimento o eliminazione sul database.
 
 3. Nella schermata **Seleziona connessione dati** selezionare o creare la connessione che viene utilizzata dalla query.
 

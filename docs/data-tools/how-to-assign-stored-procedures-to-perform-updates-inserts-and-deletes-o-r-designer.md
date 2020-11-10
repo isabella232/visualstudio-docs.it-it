@@ -1,5 +1,6 @@
 ---
 title: Usare stored procedure in LINQ to SQL per aggiornare i dati
+description: Per eseguire aggiornamenti, inserimenti ed eliminazioni di dati, utilizzare stored procedure nel Object Relational Designer LINQ to SQL (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3f8b2f783d6ae449a6124afe5d8e25dd836f0f8e
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 5915de290a84429878eccb4eae17821f8ac27f70
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036314"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436413"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procedura: Assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (Object Relational Designer)
 
@@ -44,7 +45,7 @@ Per impostazione predefinita, la logica per aggiornare un database (inserimenti,
 
 4. Selezionare la classe di entità per cui si desidera usare la stored procedure per eseguire gli aggiornamenti.
 
-5. Nella finestra **Proprietà** selezionare il comando di cui eseguire l'override (**Insert**, **Update** o **Delete**).
+5. Nella finestra **Proprietà** selezionare il comando di cui eseguire l'override ( **Insert** , **Update** o **Delete** ).
 
 6. Fare clic sui puntini di sospensione (...) accanto alle parole **Usa fase di esecuzione** per aprire la finestra di dialogo **Configura comportamento**.
 
@@ -60,11 +61,11 @@ Per impostazione predefinita, la logica per aggiornare un database (inserimenti,
 10. Fare clic su **OK** o su **Applica**.
 
     > [!NOTE]
-    > È possibile continuare a configurare il comportamento per ogni combinazione di classe e comportamento, purché si faccia clic su **applica** dopo avere apportato ogni modifica. Se si modifica la classe o il comportamento prima di fare clic su **applica**, viene visualizzata una finestra di dialogo di avviso che offre la possibilità di applicare le modifiche.
+    > È possibile continuare a configurare il comportamento per ogni combinazione di classe e comportamento, purché si faccia clic su **applica** dopo avere apportato ogni modifica. Se si modifica la classe o il comportamento prima di fare clic su **applica** , viene visualizzata una finestra di dialogo di avviso che offre la possibilità di applicare le modifiche.
 
-Per ripristinare l'uso della logica di runtime predefinita per gli aggiornamenti, fare clic sui puntini di sospensione accanto al comando **Insert**, **Update** o **Delete** nella finestra **Proprietà** e quindi selezionare **Usa fase di esecuzione** nella finestra di dialogo **Configura comportamento**.
+Per ripristinare l'uso della logica di runtime predefinita per gli aggiornamenti, fare clic sui puntini di sospensione accanto al comando **Insert** , **Update** o **Delete** nella finestra **Proprietà** e quindi selezionare **Usa fase di esecuzione** nella finestra di dialogo **Configura comportamento**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Metodi DataContext](../data-tools/datacontext-methods-o-r-designer.md)

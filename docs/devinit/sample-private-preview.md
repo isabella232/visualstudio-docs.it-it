@@ -1,5 +1,5 @@
 ---
-title: Anteprima privata
+title: Beta privata
 description: Personalizzazioni di esempio usate nel repository di Visual Studio preview beta di GitHub codespaces.
 ms.date: 08/28/2020
 ms.topic: reference
@@ -11,20 +11,20 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 61ef0a0575e5b86ab7cbd7c17e37c552c0c14388
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c79206295615fc984d2a95b52e0ecc0f70814e6f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005631"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437101"
 ---
-# <a name="private-preview"></a>Anteprima privata
+# <a name="private-beta"></a>Beta privata
 
 Questo esempio illustra come personalizzare uno spazio dei caratteri per Visual Studio in modo che abbia le stesse funzionalità della beta privata iniziale di [GitHub codespaces](https://github.com/features/codespaces) .
 
 ## <a name="devinitjson"></a>.devinit.json
 
-Contenuto del [_.devinit.jssu_](devinit-json.md) file. Questo file deve trovarsi nella stessa cartella del _.devcontainer.js_.
+Contenuto del [`.devinit.json`](devinit-json.md) file. Questo file deve trovarsi nella stessa cartella del _.devcontainer.js_.
 
 ```json
 {

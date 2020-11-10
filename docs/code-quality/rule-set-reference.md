@@ -1,6 +1,8 @@
 ---
 title: Tabella di riferimento del set di regole di analisi del codice
 ms.date: 04/04/2018
+description: Informazioni sui set di regole predefiniti nell'analisi del codice legacy di Visual Studio. Vedere risorse nei set di regole. Informazioni su come usare questi set in set di regole personalizzati.
+ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets reference
@@ -9,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc025a3ff096e560cc2bd5a135f370e89dba2f9e
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: ce5b7f2ecdc854269288c61eaeee6d46b4a74d91
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860462"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436979"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Tabella di riferimento del set di regole di analisi del codice
 
-Quando si configura l'analisi legacy per i progetti di codice gestito in Visual Studio, è possibile scegliere da un elenco di *set di regole*predefiniti. Alcune regole sono incluse in più di uno dei set di regole predefiniti, ad esempio il set di regole di base di correttezza include regole incluse nel set di regole consigliate gestite.
+Quando si configura l'analisi legacy per i progetti di codice gestito in Visual Studio, è possibile scegliere da un elenco di *set di regole* predefiniti. Alcune regole sono incluse in più di uno dei set di regole predefiniti, ad esempio il set di regole di base di correttezza include regole incluse nel set di regole consigliate gestite.
 
 > [!NOTE]
 > I set di regole in questa sezione riguardano l'analisi legacy. Per informazioni sui set di regole disponibili per i pacchetti dell'analizzatore di codice, vedere [usare i set di regole con gli analizzatori di codice](/dotnet/fundamentals/code-analysis/code-quality-rule-options).

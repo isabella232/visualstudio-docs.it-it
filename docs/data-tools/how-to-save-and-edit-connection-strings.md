@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: salvare e modificare stringhe di connessione'
+description: Informazioni su come salvare e modificare le stringhe di connessione nelle applicazioni di Visual Studio. Salvare o modificare una stringa di connessione direttamente nelle impostazioni dell'applicazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e3cb3f832f308edb42967d2fe4485b3d6885022a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 18d1da27faed67b90658ea4479f1e2e9a11ead4a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282020"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436289"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Procedura: Salvare e modificare stringhe di connessione
 Le stringhe di connessione nelle applicazioni di Visual Studio vengono salvate nel file di configurazione dell'applicazione (noto anche come impostazioni dell'applicazione) o hardcoded direttamente nell'applicazione. Il salvataggio delle stringhe di connessione nel file di configurazione dell'applicazione semplifica la gestione dell'applicazione. Se la stringa di connessione richiede modifiche, infatti, è possibile aggiornarla all'interno di tale file invece di modificarla nel codice sorgente e poi ricompilare l'applicazione.
@@ -24,13 +26,13 @@ Se non si sceglie di utilizzare la sicurezza integrata di Windows e il database 
 Per ulteriori informazioni, vedere [protezione delle informazioni di connessione](/dotnet/framework/data/adonet/protecting-connection-information).
 
 ## <a name="to-save-a-connection-string-from-within-the-data-source-configuration-wizard"></a>Per salvare una stringa di connessione dall'interno della configurazione guidata origine dati
-Nella **Configurazione guidata origine dati**selezionare l'opzione per salvare la connessione nella pagina **Salva stringa di connessione nel file di configurazione dell'applicazione** .
+Nella **Configurazione guidata origine dati** selezionare l'opzione per salvare la connessione nella pagina **Salva stringa di connessione nel file di configurazione dell'applicazione** .
 
 ## <a name="to-save-a-connection-string-directly-into-application-settings"></a>Per salvare una stringa di connessione direttamente nelle impostazioni dell'applicazione
 1. In **Esplora soluzioni** fare doppio clic sull'icona **Progetto** (Visual Basic) o **Proprietà** (C#) per aprire **Progettazione progetti**.
 1. Selezionare la scheda **Settings** (Impostazioni).
 1. Nella casella **Nome** immettere un nome per la stringa di connessione. Fare riferimento a questo nome per l'accesso alla stringa di connessione nel codice.
-1. Impostare **Tipo** su (**Stringa di connessione**).
+1. Impostare **Tipo** su ( **Stringa di connessione** ).
 1. Lasciare l'opzione **Ambito** impostata su **Applicazione**.
 1. Digitare la stringa di connessione nel campo **valore** oppure fare clic sul pulsante con i **puntini** di sospensione (...) nel campo **valore** per aprire la finestra di dialogo **Proprietà connessione** per compilare la stringa di connessione.
 
@@ -47,7 +49,7 @@ Per modificare le informazioni sulla connessione salvate nelle impostazioni dell
 È possibile modificare le informazioni di connessione per ogni TableAdapter in un set di dati.
 
 ### <a name="to-edit-a-connection-string-for-a-tableadapter-in-a-dataset"></a>Per modificare una stringa di connessione per un TableAdapter in un set di dati
-1. In **Esplora soluzioni**fare doppio clic sul set di dati (file con**estensione XSD** ) che contiene la connessione che si desidera modificare.
+1. In **Esplora soluzioni** fare doppio clic sul set di dati (file con **estensione XSD** ) che contiene la connessione che si desidera modificare.
 1. Selezionare il **TableAdapter** o la query con la connessione che si desidera modificare.
 1. Nella finestra **Proprietà** espandere il **nodo connessione**.
 1. Per modificare rapidamente la stringa di connessione, modificare la proprietà **ConnectionString** oppure fare clic sulla freccia verso il basso nella proprietà di **connessione** e scegliere **nuova connessione**.

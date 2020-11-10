@@ -1,6 +1,8 @@
 ---
 title: Set di regole di analisi del codice
 ms.date: 04/02/2018
+description: Informazioni sui set di regole predefiniti e personalizzati nell'analisi del codice di Visual Studio. Vedere come specificare i set di regole nei file e come configurare i set di regole nei progetti.
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
@@ -11,16 +13,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fde3f3200a4764c231b97b0b44e36c38dd0b3e23
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 49d17e8321aa6567a6ae0936291a73d5cb854b5c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860433"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436888"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Usare set di regole per raggruppare le regole di analisi del codice
 
-Quando si configura l'analisi del codice in Visual Studio, è possibile scegliere da un elenco di *set di regole*predefiniti. Un set di regole è un raggruppamento di regole di analisi del codice che identificano i problemi di destinazione e le condizioni specifiche per il progetto. Ad esempio, è possibile applicare un set di regole progettato per analizzare il codice per le API disponibili pubblicamente. È anche possibile applicare un set di regole che includa tutte le regole disponibili.
+Quando si configura l'analisi del codice in Visual Studio, è possibile scegliere da un elenco di *set di regole* predefiniti. Un set di regole è un raggruppamento di regole di analisi del codice che identificano i problemi di destinazione e le condizioni specifiche per il progetto. Ad esempio, è possibile applicare un set di regole progettato per analizzare il codice per le API disponibili pubblicamente. È anche possibile applicare un set di regole che includa tutte le regole disponibili.
 
 È possibile personalizzare un set di regole aggiungendo o eliminando regole o modificando i livelli di gravità delle regole in modo che vengano visualizzati come avvisi o errori nel **Elenco errori**. I set di regole personalizzati possono soddisfare la necessità di un ambiente di sviluppo specifico. Quando si personalizza un set di regole, l'editor dei set di regole fornisce strumenti di ricerca e filtro che consentono di semplificare il processo.
 
@@ -28,7 +30,7 @@ I set di regole sono disponibili per l'analisi del [codice gestito](/dotnet/fund
 
 ## <a name="rule-set-format"></a>Formato set di regole
 
-Un set di regole viene specificato in formato XML in un file con *estensione ruleset* . Le regole, che sono costituite da un ID e da un' *azione*, sono raggruppate in base all'ID analizzatore e allo spazio dei nomi nel file.
+Un set di regole viene specificato in formato XML in un file con *estensione ruleset* . Le regole, che sono costituite da un ID e da un' *azione* , sono raggruppate in base all'ID analizzatore e allo spazio dei nomi nel file.
 
 Il contenuto di un file con *estensione ruleset* è simile al codice XML seguente:
 

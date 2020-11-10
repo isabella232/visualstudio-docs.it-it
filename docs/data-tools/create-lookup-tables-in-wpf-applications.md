@@ -1,5 +1,7 @@
 ---
 title: Creare tabelle di ricerca in applicazioni WPF
+description: Creare tabelle di ricerca nelle applicazioni WPF. Una tabella di ricerca è un controllo che mostra le informazioni di una tabella dati in base a un valore del campo di chiave esterna in un'altra tabella.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,16 +18,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7485c63d358bc6f6fe7030e589fbdf7286ded3fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 293f04ca111fe88c905a288885f7e4763ec1cdc3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282618"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436693"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Creare tabelle di ricerca in applicazioni WPF
 
-La *tabella di ricerca* termini (talvolta denominata *associazione di ricerca*) descrive un controllo che visualizza informazioni da una tabella dati in base al valore di un campo di chiave esterna in un'altra tabella. È possibile creare una tabella di ricerca trascinando il nodo principale di una tabella o di un oggetto padre nella finestra **origini dati** su un controllo già associato a una colonna o a una proprietà in una tabella figlio correlata.
+La *tabella di ricerca* termini (talvolta denominata *associazione di ricerca* ) descrive un controllo che visualizza informazioni da una tabella dati in base al valore di un campo di chiave esterna in un'altra tabella. È possibile creare una tabella di ricerca trascinando il nodo principale di una tabella o di un oggetto padre nella finestra **origini dati** su un controllo già associato a una colonna o a una proprietà in una tabella figlio correlata.
 
 Si consideri, ad esempio, una tabella di `Orders` in un database Sales. Ogni record della `Orders` tabella include un valore `CustomerID` che indica il cliente che ha effettuato l'ordine. `CustomerID`È una chiave esterna che punta a un record del cliente nella `Customers` tabella. Quando si visualizza un elenco di ordini dalla `Orders` tabella, è possibile che si desideri visualizzare il nome effettivo del cliente anziché il `CustomerID` . Poiché il nome del cliente si trova nella `Customers` tabella, è necessario creare una tabella di ricerca per visualizzare il nome del cliente. Nella tabella di ricerca viene utilizzato il `CustomerID` valore del `Orders` record per spostarsi nella relazione e viene restituito il nome del cliente.
 
@@ -42,7 +44,7 @@ Si consideri, ad esempio, una tabella di `Orders` in un database Sales. Ogni rec
     > [!NOTE]
     > Prima di poter creare una tabella di ricerca, due tabelle o oggetti correlati devono esistere come origine dati per il progetto.
 
-2. Aprire **WPF Designer**e assicurarsi che la finestra di progettazione contenga un contenitore che rappresenta un obiettivo di rilascio valido per gli elementi nella finestra **origini dati** .
+2. Aprire **WPF Designer** e assicurarsi che la finestra di progettazione contenga un contenitore che rappresenta un obiettivo di rilascio valido per gli elementi nella finestra **origini dati** .
 
      Per altre informazioni sugli obiettivi di rilascio validi, vedere [associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 

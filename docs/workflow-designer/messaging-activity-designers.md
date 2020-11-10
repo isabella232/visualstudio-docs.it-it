@@ -1,5 +1,7 @@
 ---
 title: ActivityDesigner di messaggistica Progettazione flussi di lavoro
+description: Informazioni su come utilizzare gli ActivityDesigner di messaggistica per creare e configurare attività di messaggistica che inviano e ricevono messaggi di Windows Communication Foundation (WCF).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b821b4e63f82233b3c2e92fa3f5c3481cda982
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e82e4cd9f539dea5d0683999413a8371a442a13
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876190"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435651"
 ---
 # <a name="messaging-activity-designers"></a>ActivityDesigner Messaggistica
 
@@ -47,7 +49,7 @@ Per altri tipi di ActivityDesigner, vedere gli argomenti seguenti:
 
 - [Runtime](../workflow-designer/runtime-activity-designers.md)
 
-- [Primitive](../workflow-designer/primitives-activity-designers.md)
+- [Primitives](../workflow-designer/primitives-activity-designers.md)
 
 - [Transazione](../workflow-designer/transaction-activity-designers.md)
 

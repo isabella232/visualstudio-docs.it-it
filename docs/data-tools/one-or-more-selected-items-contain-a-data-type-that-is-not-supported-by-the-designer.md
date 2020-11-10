@@ -1,6 +1,6 @@
 ---
 title: Tipo di dati non supportati
-description: Uno o più elementi selezionati contengono un tipo di dati non supportato dalla finestra di progettazione
+description: Uno o più elementi selezionati contengono un tipo di dati non supportato dalla finestra di progettazione. Visualizzare le informazioni su questo messaggio di Visual Studio O/R Designer.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -10,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 167146b9a7938e5498e8db023602b2e13f74379c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4f678ad9bc6bcfc36baabad8a8d4d64d7bf2f89e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034078"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436133"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Uno o più elementi selezionati contengono un tipo di dati non supportato dalla finestra di progettazione
 
-Uno o più elementi trascinati da **Esplora server** o **Esplora database** in **Progettazione relazionale** oggetti contiene un tipo di dati che non è supportato da **o/r designer**, ad esempio i [tipi CLR definiti dall'utente](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
+Uno o più elementi trascinati da **Esplora server** o **Esplora database** in **Progettazione relazionale** oggetti contiene un tipo di dati che non è supportato da **o/r designer** , ad esempio i [tipi CLR definiti dall'utente](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
 
 ## <a name="to-correct-this-error"></a>Per correggere l'errore
 
@@ -27,6 +27,6 @@ Uno o più elementi trascinati da **Esplora server** o **Esplora database** in *
 
 2. Trascinare la vista da **Esplora server** o **Esplora database** nella finestra di progettazione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

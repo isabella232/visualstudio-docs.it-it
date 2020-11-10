@@ -1,5 +1,7 @@
 ---
 title: ActivityDesigner Progettazione flussi di lavoro-InvokeMethod
+description: Informazioni sull'attività InvokeMethod e su come è possibile usare l'ActivityDesigner InvokeMethod per creare e configurare un'attività InvokeMethod.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8660cd82f9d671da3b535ac228e8ce62c875dc07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55162def18d2295e0767a3999ffde75d71e1233d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593200"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437736"
 ---
 # <a name="invokemethod-activity-designer"></a>ActivityDesigner InvokeMethod
 
@@ -33,7 +35,7 @@ Accedere all'ActivityDesigner **InvokeMethod** nella categoria **primitive** del
 
 Nella tabella seguente sono illustrate le <xref:System.Activities.Statements.InvokeMethod> proprietà e viene descritto come vengono utilizzate nella finestra di progettazione. Queste proprietà possono essere modificate nella griglia delle proprietà e alcune possono essere modificate in Progettazione flussi di lavoro area.
 
-|Nome proprietà|Obbligatoria|Utilizzo|
+|Nome proprietà|Obbligatoria|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo dell'attività <xref:System.Activities.Statements.InvokeMethod>. Il valore predefinito è InvokeMethod.<br /><br /> Sebbene <xref:System.Activities.Activity.DisplayName%2A> non sia strettamente obbligatorio, è preferibile utilizzarne uno.|
 |<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|Vero|Nome del metodo da richiamare quando viene eseguita l'attività. Il metodo chiamato deve essere dichiarato come **public**. Questa proprietà può essere modificata nell'area di progettazione ed è obbligatoria.|
@@ -61,7 +63,7 @@ Questa restrizione non si applica a <xref:System.Activities.Statements.InvokeMet
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Primitive](../workflow-designer/primitives-activity-designers.md)
+- [Primitives](../workflow-designer/primitives-activity-designers.md)
 - [Assign](../workflow-designer/assign-activity-designer.md)
 - [Ritardo](../workflow-designer/delay-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)
