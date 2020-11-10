@@ -32,8 +32,6 @@
   items:
     - name: Personalizzazione dell'aspetto dell'IDE
       href: customizing-the-ide.md
-    - name: Estensione di Visual Studio per Mac
-      href: extending-visual-studio-mac.md
 - name: Progetti e soluzioni
   items:
     - name: Panoramica
