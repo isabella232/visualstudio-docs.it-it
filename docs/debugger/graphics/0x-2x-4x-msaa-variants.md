@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 707d63d3ae5fb487f6232321a1d9d3128d379e06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e77c0d7b5cbba2faf73fcca85ffcd0db063d618e
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64816542"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407549"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Varianti di MSAA 0x/2x/4x
 Eseguono l'override dell'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) in tutte le destinazioni di rendering e catene di scambio.
@@ -28,7 +28,7 @@ Eseguono l'override dell'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Al
 > [!NOTE]
 > L'hardware potrebbe non supportare completamente MSAA per tutti i formati. Se una di queste varianti dovesse incorrere in un limite hardware che non è possibile aggirare, la relativa colonna nella tabella di riepilogo delle prestazioni resterà vuota e verrà visualizzato un messaggio di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Queste varianti eseguono l'override degli argomenti relativi conteggio e alla qualità dei campioni nelle chiamate a `ID3DDevice::CreateTexture2D` che creano destinazioni di rendering. In particolare, tali parametri vengono sottoposti a override nei casi seguenti:
 
 - L'oggetto `D3D11_TEXTURE2D_DESC` passato in `pDesc` descrive una destinazione di rendering, ossia:
@@ -54,7 +54,7 @@ Eseguono l'override dell'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Al
 
  Quando la riproduzione rileva questi tipi di conflitti, viene fatto il possibile per replicare il comportamento atteso, ma potrebbe non essere possibile raggiungere una corrispondenza esatta dei risultati. Sebbene raramente ciò influisca sulle prestazioni di queste varianti in modo tale da rappresentarne l'impatto in modo erroneo, ciò può verificarsi, ad esempio, quando il controllo di flusso in un pixel shader viene determinato dal contenuto preciso di una trama, perché la trama replicata potrebbe non avere un contenuto identico.
 
-## <a name="example"></a>Esempio
+## <a name="example-1"></a>Esempio 1
  Queste varianti possono essere riprodotte per destinazioni di rendering create tramite `ID3D11Device::CreateTexture2D` usando codice simile al seguente:
 
 ```cpp
@@ -65,7 +65,7 @@ target_description.SampleDesc.Quality = 0;
 d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-2"></a>Esempio 2
  Per catene di scambio create tramite IDXGISwapChain::CreateSwapChain or D3D11CreateDeviceAndSwapChain il codice sarebbe simile al seguente:
 
 ```cpp

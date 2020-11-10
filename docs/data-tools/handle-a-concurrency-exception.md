@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d1c151b7f3afe977786ef3b308eff2de1c0857f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57820a7532255c0084bafc5134cf7793b8c88ab6
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282358"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407666"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gestire un'eccezione di concorrenza
 
@@ -49,7 +49,7 @@ Questa procedura dettagliata illustra il processo seguente:
 
 In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
+1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio** è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
 
 2. Installare il database di esempio Northwind attenendosi alla procedura seguente:
 
@@ -73,15 +73,15 @@ Per iniziare, creare un nuovo Windows Forms Application:
 
 3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
 
-4. Denominare il progetto **ConcurrencyWalkthrough**, quindi scegliere **OK**.
+4. Denominare il progetto **ConcurrencyWalkthrough** , quindi scegliere **OK**.
 
-     Il progetto **ConcurrencyWalkthrough** viene creato e aggiunto a **Esplora soluzioni**e viene aperto un nuovo form nella finestra di progettazione.
+     Il progetto **ConcurrencyWalkthrough** viene creato e aggiunto a **Esplora soluzioni** e viene aperto un nuovo form nella finestra di progettazione.
 
 ## <a name="create-the-northwind-dataset"></a>Creare il set di dati Northwind
 
-Successivamente, creare un set di dati denominato **NorthwindDataSet**:
+Successivamente, creare un set di dati denominato **NorthwindDataSet** :
 
-1. Scegliere **Aggiungi nuova origine dati**dal menu **dati** .
+1. Scegliere **Aggiungi nuova origine dati** dal menu **dati** .
 
    Viene avviata la Configurazione guidata origine dati.
 
@@ -104,7 +104,7 @@ Successivamente, creare un set di dati denominato **NorthwindDataSet**:
 
 In questa sezione viene creato un <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> trascinando l'elemento **Customers** dalla finestra **origini dati** nel Windows Form.
 
-1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati**dal menu **dati** .
+1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati** dal menu **dati** .
 
 2. Nella finestra **origini dati** espandere il nodo **NorthwindDataSet** , quindi selezionare la tabella **Customers** .
 
@@ -112,7 +112,7 @@ In questa sezione viene creato un <xref:System.Windows.Forms.DataGridView?displa
 
 4. Trascinare la tabella su un'area vuota del modulo.
 
-     Un <xref:System.Windows.Forms.DataGridView> controllo denominato **customersDataGridView**e un oggetto <xref:System.Windows.Forms.BindingNavigator> denominato **CustomersBindingNavigator**vengono aggiunti al form associato a <xref:System.Windows.Forms.BindingSource> . Questo, a sua volta, è associato alla tabella Customers nell'oggetto NorthwindDataSet.
+     Un <xref:System.Windows.Forms.DataGridView> controllo denominato **customersDataGridView** e un oggetto <xref:System.Windows.Forms.BindingNavigator> denominato **CustomersBindingNavigator** vengono aggiunti al form associato a <xref:System.Windows.Forms.BindingSource> . Questo, a sua volta, è associato alla tabella Customers nell'oggetto NorthwindDataSet.
 
 ## <a name="test-the-form"></a>Testare il modulo
 
@@ -176,14 +176,14 @@ Creare il messaggio aggiungendo il codice seguente all'editor di **codice**. Imm
 
 ### <a name="process-the-users-response"></a>Elaborare la risposta dell'utente
 
-È necessario anche codice per elaborare la risposta dell'utente alla finestra di messaggio. Le opzioni consentono di sovrascrivere il record corrente nel database con la modifica proposta oppure di abbandonare le modifiche locali e aggiornare la tabella dati con il record attualmente presente nel database. Se l'utente sceglie **Sì**, il <xref:System.Data.DataTable.Merge%2A> metodo viene chiamato con l'argomento *preserveChanges* impostato su **true**. In questo modo il tentativo di aggiornamento ha esito positivo, perché la versione originale del record ora corrisponde al record nel database.
+È necessario anche codice per elaborare la risposta dell'utente alla finestra di messaggio. Le opzioni consentono di sovrascrivere il record corrente nel database con la modifica proposta oppure di abbandonare le modifiche locali e aggiornare la tabella dati con il record attualmente presente nel database. Se l'utente sceglie **Sì** , il <xref:System.Data.DataTable.Merge%2A> metodo viene chiamato con l'argomento *preserveChanges* impostato su **true**. In questo modo il tentativo di aggiornamento ha esito positivo, perché la versione originale del record ora corrisponde al record nel database.
 
 Aggiungere il codice seguente sotto il codice aggiunto nella sezione precedente:
 
 [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
 [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
-## <a name="test-the-form"></a>Testare il modulo
+## <a name="test-the-form-behavior"></a>Testare il comportamento del modulo
 
 È ora possibile testare il form per assicurarsi che si comportano come previsto. Per simulare una violazione della concorrenza, è necessario modificare i dati nel database dopo aver compilato l'oggetto NorthwindDataSet.
 
@@ -193,18 +193,18 @@ Aggiungere il codice seguente sotto il codice aggiunto nella sezione precedente:
 
 3. Scegliere **Esplora server** dal menu **Visualizza**.
 
-4. In **Esplora server**espandere la connessione usata dall'applicazione, quindi espandere il nodo **tabelle** .
+4. In **Esplora server** espandere la connessione usata dall'applicazione, quindi espandere il nodo **tabelle** .
 
 5. Fare clic con il pulsante destro del mouse sulla tabella **Customers** , quindi scegliere **Mostra dati tabella**.
 
-6. Nel primo record (**ALFKI**) modificare **ContactName** in **Maria Anders2**.
+6. Nel primo record ( **ALFKI** ) modificare **ContactName** in **Maria Anders2**.
 
     > [!NOTE]
     > Passare a una riga diversa per eseguire il commit della modifica.
 
 7. Passare al form in esecuzione di ConcurrencyWalkthrough.
 
-8. Nel primo record nel form (**ALFKI**) modificare **ContactName** in **Maria Anders1**.
+8. Nel primo record nel form ( **ALFKI** ) modificare **ContactName** in **Maria Anders1**.
 
 9. Fare clic sul pulsante **Salva**.
 

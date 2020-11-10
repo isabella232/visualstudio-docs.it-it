@@ -14,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94feafbc614be61aaa4eef9e26669c0fbe901ed5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8df973ef6a75a9134b4ee6e945a5702708ece712
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740030"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407718"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Associa scelte rapide da tastiera a voci di menu
 Per associare un tasto di scelta rapida a un comando di menu personalizzato, è sufficiente aggiungere una voce al file con *estensione vsct* per il pacchetto. In questo argomento viene illustrato come eseguire il mapping di una scelta rapida da tastiera a un pulsante personalizzato, una voce di menu o un comando della barra degli strumenti e come applicare il mapping della tastiera nell'editor predefinito o come limitarlo a un editor personalizzato.
@@ -59,7 +59,7 @@ Per associare un tasto di scelta rapida a un comando di menu personalizzato, è 
 
     Impostare gli `guid`  `id` attributi e su quelli del comando che si desidera richiamare.
 
-    Impostare l' `mod1` attributo su **Control**, **ALT**o **Shift**.
+    Impostare l' `mod1` attributo su **Control** , **ALT** o **Shift**.
 
     La sezione delle combinazioni di tasti dovrebbe avere un aspetto simile al seguente:
 
@@ -81,7 +81,7 @@ Per associare un tasto di scelta rapida a un comando di menu personalizzato, è 
 
    Per rendere il comando disponibile solo in un editor personalizzato, impostare l' `editor` attributo sul nome dell'editor personalizzato generato dal [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modello di pacchetto quando è stato creato il pacchetto VSPackage che include l'editor personalizzato. Per trovare il valore del nome, esaminare la `<Symbols>` sezione per un `<GuidSymbol>` nodo il cui `name` attributo termina con " `editorfactory` ." Si tratta del nome dell'editor personalizzato.
 
-## <a name="example"></a>Esempio
+## <a name="example-1"></a>Esempio 1
  In questo esempio il tasto di scelta rapida **CTRL** + **ALT** + **C** viene associato a un comando denominato `cmdidMyCommand` in un pacchetto denominato `MyPackage` .
 
 ```
@@ -98,7 +98,7 @@ Per associare un tasto di scelta rapida a un comando di menu personalizzato, è 
 </CommandTable>
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-2"></a>Esempio 2
  Questo esempio Mostra come associare il tasto di scelta rapida **CTRL** + **B** a un comando denominato `cmdidBold` in un progetto denominato `TestEditor` . Il comando è disponibile solo nell'editor personalizzato e non in altri editor.
 
 ```xml

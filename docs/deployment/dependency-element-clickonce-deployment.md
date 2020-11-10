@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e77f115eb4014f16107ae167576ed0d923bffe8
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 09e5973b39bae2fbf923cf97ac1bd9cf15e10874
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382962"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407679"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;&gt;elemento dependency (distribuzione ClickOnce)
 Identifica la versione dell'applicazione da installare e il percorso del manifesto dell'applicazione.
@@ -128,7 +128,7 @@ Identifica la versione dell'applicazione da installare e il percorso del manifes
 ## <a name="remarks"></a>Commenti
  I manifesti della distribuzione hanno in genere un singolo `assemblyIdentity` elemento che identifica il nome e la versione del manifesto dell'applicazione.
 
-## <a name="example"></a>Esempio
+## <a name="example-1"></a>Esempio 1
  Nell'esempio di codice riportato di seguito viene illustrato un `dependency` elemento in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto di distribuzione.
 
 ```xml
@@ -147,7 +147,7 @@ Identifica la versione dell'applicazione da installare e il percorso del manifes
 </dependency>
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-2"></a>Esempio 2
  Nell'esempio di codice seguente viene specificata una dipendenza da un assembly già installato nella GAC.
 
 ```xml
@@ -158,7 +158,7 @@ Identifica la versione dell'applicazione da installare e il percorso del manifes
 </dependency>
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-3"></a>Esempio 3
  Nell'esempio di codice seguente viene specificata una dipendenza da una versione specifica del Common Language Runtime.
 
 ```xml
@@ -169,7 +169,7 @@ Identifica la versione dell'applicazione da installare e il percorso del manifes
 </dependency>
 ```
 
-## <a name="example"></a>Esempio
+## <a name="example-4"></a>Esempio 4
  Nell'esempio di codice seguente viene specificata una dipendenza del sistema operativo.
 
 ```xml

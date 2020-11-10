@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: f2c965866cdd8494af53748e4023196d84136553
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7a28e9cea6db337cbe114c7e51c387315879ccd5
+ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811136"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94407705"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Raccogliere dati di concorrenza per un'applicazione Web ASP.NET tramite la riga di comando del profiler
 Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consente di raccogliere i dati relativi ai conflitti di risorse.
@@ -54,5 +54,5 @@ Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../
 
 - [Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>Informazioni di riferimento
+## <a name="see-also"></a>Vedere anche
 - [Riferimenti agli strumenti di profilatura della riga di comando](../profiling/command-line-profiling-tools-reference.md)
