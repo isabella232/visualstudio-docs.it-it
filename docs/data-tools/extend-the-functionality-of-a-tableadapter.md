@@ -1,5 +1,7 @@
 ---
 title: Estendere la funzionalità di un TableAdapter
+description: Informazioni su come estendere la funzionalità di un TableAdapter aggiungendo codice al file di classe parziale del TableAdapter.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,24 +17,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 245ea6791fde96c1ff08d43d138c522f43749c6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e1c594ab1f74cddb962cc2a6d4030ede1e53c8f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282423"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435078"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Estendere la funzionalità di un TableAdapter
 
 È possibile estendere la funzionalità di un TableAdapter aggiungendo codice al file di classe parziale del TableAdapter.
 
-Il codice che definisce un TableAdapter viene rigenerato quando vengono apportate modifiche a TableAdapter nell' **Progettazione DataSet**o quando una procedura guidata modifica la configurazione di un TableAdapter. Per impedire l'eliminazione del codice durante la rigenerazione di un TableAdapter, aggiungere il codice al file di classe parziale del TableAdapter.
+Il codice che definisce un TableAdapter viene rigenerato quando vengono apportate modifiche a TableAdapter nell' **Progettazione DataSet** o quando una procedura guidata modifica la configurazione di un TableAdapter. Per impedire l'eliminazione del codice durante la rigenerazione di un TableAdapter, aggiungere il codice al file di classe parziale del TableAdapter.
 
 Le classi parziali consentono di dividere il codice per una classe specifica tra più file fisici. Per ulteriori informazioni, vedere [partial](/dotnet/visual-basic/language-reference/modifiers/partial) o [partial (Type)](/dotnet/csharp/language-reference/keywords/partial-type).
 
 ## <a name="locate-tableadapters-in-code"></a>Individuare gli oggetti TableAdapter nel codice
 
-Sebbene i TableAdapter siano progettati con la **Progettazione DataSet**, le classi TableAdapter generate non sono classi annidate di <xref:System.Data.DataSet> . Gli oggetti TableAdapter si trovano in uno spazio dei nomi in base al nome del set di dati associato del TableAdapter. Se, ad esempio, l'applicazione contiene un set di dati denominato `HRDataSet` , gli oggetti TableAdapter si troveranno `HRDataSetTableAdapters` nello spazio dei nomi. La convenzione di denominazione segue questo modello: *DataSetName*  +  `TableAdapters` .
+Sebbene i TableAdapter siano progettati con la **Progettazione DataSet** , le classi TableAdapter generate non sono classi annidate di <xref:System.Data.DataSet> . Gli oggetti TableAdapter si trovano in uno spazio dei nomi in base al nome del set di dati associato del TableAdapter. Se, ad esempio, l'applicazione contiene un set di dati denominato `HRDataSet` , gli oggetti TableAdapter si troveranno `HRDataSetTableAdapters` nello spazio dei nomi. La convenzione di denominazione segue questo modello: *DataSetName*  +  `TableAdapters` .
 
 Nell'esempio seguente si presuppone che un oggetto TableAdapter denominato `CustomersTableAdapter` si trovi in un progetto con `NorthwindDataSet` .
 

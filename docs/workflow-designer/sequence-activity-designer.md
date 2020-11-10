@@ -1,5 +1,7 @@
 ---
 title: ActivityDesigner Progettazione flussi di lavoro Sequence
+description: Informazioni sul modo in cui l'attività Sequence contiene una raccolta ordinata di attività figlio eseguite nell'ordine.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77980077a580724f6db6bb5a544200890421d8e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9e7e6e9114405bc1575e0256dd63211a4fb6d08
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875969"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433973"
 ---
 # <a name="sequence-activity-designer"></a>ActivityDesigner Sequence
 
@@ -31,7 +33,7 @@ Per aggiungere un' <xref:System.Activities.Statements.Sequence> attività, trasc
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Sequence> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area della finestra di progettazione.
 
-|Nome proprietà|Obbligatoria|Utilizzo|
+|Nome proprietà|Obbligatoria|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.Sequence> nell'intestazione. Il valore predefinito è Sequence. Facoltativamente, è possibile modificare il valore nella griglia Proprietà o direttamente nell'intestazione dell'ActivityDesigner.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
 

@@ -1,5 +1,7 @@
 ---
 title: ActivityDesigner Progettazione flussi di lavoro-TransactionScope
+description: Informazioni su come usare l'ActivityDesigner TransactionScope per creare e configurare un'attività TransactionScope.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8f9ed7822dc231fdd4888d3e44c4e3218357f95
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: f1fde6dabb372bfa20f55335008ce91e8de2481a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713477"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433583"
 ---
 # <a name="transactionscope-activity-designer"></a>ActivityDesigner TransactionScope
 
@@ -33,7 +35,7 @@ Accedere all'ActivityDesigner **TransactionScope** nella categoria **transazione
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.TransactionScope> e ne viene descritta la modalità di uso nella finestra di progettazione. Le <xref:System.Activities.Activity.DisplayName%2A> <xref:System.Activities.Statements.TransactionScope.Body%2A> proprietà e possono essere modificate in Progettazione flussi di lavoro area. Le altre proprietà devono invece essere modificate nella griglia delle proprietà.
 
-|Nome proprietà|Obbligatoria|Utilizzo|
+|Nome proprietà|Obbligatoria|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.TransactionScope>. Il valore predefinito è TransactionScope. Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
 |<xref:System.Activities.Statements.TransactionScope.Body%2A>|Vero|Consente di specificare l'attività da eseguire in un'unica transazione. Per aggiungere l' <xref:System.Activities.Statements.TransactionScope.Body%2A> attività, rilasciare un'attività dalla casella **degli strumenti** nella casella **corpo** dell'ActivityDesigner **TransactionScope** con il testo di suggerimento "rilasciare l'attività".|
@@ -47,4 +49,4 @@ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.St
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
 - [Compensare](../workflow-designer/compensate-activity-designer.md)
-- [Confirm](../workflow-designer/confirm-activity-designer.md)
+- [Confermare](../workflow-designer/confirm-activity-designer.md)

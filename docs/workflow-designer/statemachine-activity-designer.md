@@ -1,5 +1,7 @@
 ---
 title: ActivityDesigner Progettazione flussi di lavoro-StateMachine
+description: Informazioni sul modo in cui l'attività StateMachine contiene una raccolta di Stati e modella i flussi di lavoro usando il paradigma della macchina a stati familiare.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: e7a270780a953a6104adc7089a02ff6529106fdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dacb6dfa5c30ce174c64accfedf82f1c288c734d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593135"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433947"
 ---
 # <a name="statemachine-activity-designer"></a>ActivityDesigner StateMachine
 
@@ -30,7 +32,7 @@ Per aggiungere un' <xref:System.Activities.Statements.StateMachine> attività, t
 
 Nella tabella seguente vengono elencate le proprietà di <xref:System.Activities.Statements.StateMachine> che possono essere impostate usando la finestra di progettazione flussi di lavoro e viene descritta la modalità di utilizzo nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia della proprietà e alcune nell'area della finestra di progettazione.
 
-|Nome proprietà|Obbligatoria|Utilizzo|
+|Nome proprietà|Obbligatoria|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.StateMachine> nell'intestazione. Il valore predefinito è **StateMachine**. Facoltativamente, è possibile modificare il valore nella griglia Proprietà o direttamente nell'intestazione dell'ActivityDesigner. <xref:System.Activities.Activity.DisplayName%2A> è usato per l'esplorazione tramite la barra di navigazione visualizzata nella parte superiore della Progettazione flussi di lavoro.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
 

@@ -1,6 +1,8 @@
 ---
 title: Sincronizzare i set di regole del progetto con i criteri di archiviazione
 ms.date: 11/04/2016
+description: Informazioni su come sincronizzare un set di regole di progetto di Visual Studio Code con i criteri di archiviazione del progetto DevOps di Azure.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e27987f7fa298ddcedf52a9f01a80f57d3d329f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 913860538fe7f9da1514d0e51d23bb3ea48c3b66
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371781"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434688"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procedura: sincronizzare i set di regole del progetto di codice con i criteri di archiviazione del progetto DevOps di Azure
 
@@ -31,7 +33,7 @@ Sincronizzare le impostazioni di analisi del codice per i progetti di codice con
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Per specificare un set di regole standard Microsoft
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto di codice, quindi scegliere **Proprietà**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto di codice, quindi scegliere **Proprietà**.
 
 2. Fare clic su **Analisi codice**.
 
@@ -51,7 +53,7 @@ Sincronizzare le impostazioni di analisi del codice per i progetti di codice con
 
 1. Se necessario, eseguire un'operazione Get sul file del set di regole che specifica i criteri di archiviazione.
 
-2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto di codice, quindi scegliere **Proprietà**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto di codice, quindi scegliere **Proprietà**.
 
 3. Fare clic su **Analisi codice**.
 

@@ -1,5 +1,6 @@
 ---
 title: Imposta il controllo da creare durante il trascinamento
+description: Informazioni su come impostare il controllo da creare quando si trascina dalla finestra Origini dati in WPF Designer o Windows Forms Designer in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a7588fc23e7d52adb6c7ea780a75e11715688e26
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8a81ecb35c37dbef6d48227c27ed877c64e6e26f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036262"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434467"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati
 
@@ -38,7 +39,7 @@ In questo contesto, il termine *oggetto* fa riferimento a un oggetto business pe
 2. Nella finestra **origini dati** selezionare l'elemento che rappresenta la tabella o l'oggetto dati che si desidera impostare.
 
    > [!TIP]
-   > Se la finestra **origini dati** non è aperta, è possibile aprirla selezionando **Visualizza**  >  **altre**  >  **origini dati**di Windows.
+   > Se la finestra **origini dati** non è aperta, è possibile aprirla selezionando **Visualizza**  >  **altre**  >  **origini dati** di Windows.
 
 3. Fare clic sul menu a discesa per l'elemento, quindi fare clic su uno degli elementi seguenti nel menu:
 
@@ -70,6 +71,6 @@ Prima di trascinare un elemento che rappresenta una colonna o una proprietà di 
 
      Se non si desidera creare un controllo per la colonna o la proprietà, selezionare **nessuno** nel menu a discesa. Questa opzione è utile se si desidera trascinare la tabella o l'oggetto padre nella finestra di progettazione, ma non si desidera includere la colonna o la proprietà specifica.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

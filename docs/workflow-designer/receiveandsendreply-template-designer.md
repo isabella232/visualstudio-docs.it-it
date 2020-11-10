@@ -1,5 +1,7 @@
 ---
 title: Progettazione modelli Progettazione flussi di lavoro ReceiveAndSendReply
+description: Informazioni su come usare il modello ReceiveAndSendReply per creare una coppia di attività Receive e SendReply preconfigurate.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66822664766ac64e466882fda27906f56ebb4aad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b66b403fb5df98bc4a23131b6062b2d06f95719
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876008"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434168"
 ---
 # <a name="receiveandsendreply-template-designer"></a>Finestra di progettazione del modello ReceiveAndSendReply
 
@@ -42,7 +44,7 @@ Per ulteriori informazioni sull'utilizzo di progettazione **ricezione** per conf
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.Activities.SendReply> e ne viene descritta la modalità di uso nella finestra di progettazione. Queste proprietà possono essere modificate nella griglia delle proprietà e alcune possono essere modificate nell'area di Progettazione flussi di lavoro.
 
-| Nome proprietà | Obbligatoria | Utilizzo |
+| Nome proprietà | Obbligatoria | Uso |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | Falso | Nome descrittivo facoltativo dell'attività <xref:System.ServiceModel.Activities.SendReply>. Il valore predefinito è SendReplyToReceive.<br /><br /> Sebbene l'uso di un valore non predefinito per friendly <xref:System.Activities.Activity.DisplayName%2A> non sia strettamente necessario, è preferibile usare tale valore. |
 | <xref:System.ServiceModel.Activities.SendReply.Request%2A> | Vero | Riferimento all'attività <xref:System.ServiceModel.Activities.Receive> correlata a questa attività <xref:System.ServiceModel.Activities.SendReply>. Questa proprietà non può essere **null**. <xref:System.ServiceModel.Activities.Receive><xref:System.ServiceModel.Activities.SendReply>le attività e vengono utilizzate insieme sul server per modellare un modello di messaggistica di richiesta/risposta. Questa proprietà specifica quale attività <xref:System.ServiceModel.Activities.Send> viene associata. Nella finestra di progettazione non è possibile modificare questa proprietà perché viene associata automaticamente all' <xref:System.ServiceModel.Activities.Send> attività da cui è stata creata l' <xref:System.ServiceModel.Activities.SendReply> attività. |

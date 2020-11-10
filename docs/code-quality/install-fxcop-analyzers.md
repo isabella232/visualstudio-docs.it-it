@@ -1,6 +1,8 @@
 ---
 title: Installare gli analizzatori FXCop
 ms.date: 08/03/2018
+description: Informazioni su come installare gli analizzatori FxCop in Visual Studio. Vedere come installare questi analizzatori come un pacchetto NuGet o come estensione VSIX.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - fxcop analyzers
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d789299212ec7420f40135dd655056f16b6e4f35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9950941680f9e251fe9c589a1df1d0314f149a7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893346"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435521"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Installare gli analizzatori FxCop in Visual Studio
 
@@ -28,7 +30,7 @@ Microsoft ha creato un set di analizzatori, denominato [Microsoft. CodeAnalysis.
 
 In Visual Studio 2019 versione 16,3 e successive è possibile installare il pacchetto NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) direttamente dalla pagina delle proprietà di analisi del codice del progetto:
 
-1. Fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni**, scegliere **Proprietà**, quindi selezionare la scheda **analisi codice** .
+1. Fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** , scegliere **Proprietà** , quindi selezionare la scheda **analisi codice** .
 
    ![Installare il pacchetto degli analizzatori FxCop dalla pagina delle proprietà in Visual Studio](media/install-fxcop-properties-page.png)
 
@@ -72,7 +74,7 @@ Usare le linee guida seguenti per determinare la versione del pacchetto di anali
 
 | Versione di Visual Studio | Versione del pacchetto dell'analizzatore FxCop |
 | - | - |
-| Visual Studio 2019 (tutte le versioni) | [Ultima](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
+| Visual Studio 2019 (tutte le versioni) | [più recenti](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) |
 | Visual Studio 2017 versione 15,9 | [2.9.10](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.10) |
 | Visual Studio 2017 versione 15,5 a 15,8 | [2.6.4](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.4) |
 | Visual Studio 2017 versione 15,3 a 15,4 | [2.3.0-beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
@@ -139,7 +141,7 @@ L'estensione [Microsoft Code Analysis 2019](https://marketplace.visualstudio.com
 
    Dopo un minuto o due, l'installazione viene completata.
 
-7. Selezionare **Chiudi**, quindi aprire di nuovo Visual Studio.
+7. Selezionare **Chiudi** , quindi aprire di nuovo Visual Studio.
 
 ::: moniker range="vs-2017"
 

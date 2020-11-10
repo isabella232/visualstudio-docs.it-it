@@ -1,5 +1,7 @@
 ---
 title: ActivityDesigner Progettazione flussi di lavoro-PickBranch
+description: Informazioni sul modo in cui l'ActivityDesigner PickBranch fornisce un percorso di esecuzione basato su eventi all'interno di un'attività Pick che può essere attivata da un evento in ingresso.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34da9091c0f96b7270678f9b36fe861e4a87418f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bce1cee7fad7ccff57a6911c99a9470a22b9a927
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876086"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434233"
 ---
 # <a name="pickbranch-activity-designer"></a>ActivityDesigner PickBranch
 
@@ -31,7 +33,7 @@ Accedere a **PickBranch** designer nella categoria **flusso di controllo** della
 
 <xref:System.Activities.Statements.PickBranch>Per impostazione predefinita, vengono creati due oggetti vuoti con i nomi visualizzati **branch1** e **Branch2** come elementi di un' <xref:System.Activities.Statements.Pick> attività quando l'activitydesigner **pick** viene inizialmente rilasciato al progettazione flussi di lavoro. Questi rispettivi <xref:System.Activities.Statements.PickBranch.DisplayName%2A> valori di proprietà possono essere modificati nell'intestazione **PickBranch** designer o nella finestra **proprietà** per ogni ramo.
 
-È possibile aggiungere <xref:System.Activities.Statements.PickBranch> oggetti alla raccolta di un oggetto in due modi <xref:System.Activities.Statements.Pick> : trascinando e rilasciando la finestra di progettazione **PickBranch** dalla **casella degli strumenti**oppure facendo clic con il pulsante destro del mouse nell'area di progettazione **pick** :
+È possibile aggiungere <xref:System.Activities.Statements.PickBranch> oggetti alla raccolta di un oggetto in due modi <xref:System.Activities.Statements.Pick> : trascinando e rilasciando la finestra di progettazione **PickBranch** dalla **casella degli strumenti** oppure facendo clic con il pulsante destro del mouse nell'area di progettazione **pick** :
 
 - La finestra di progettazione **PickBranch** crea un oggetto <xref:System.Activities.Statements.PickBranch> quando viene trascinato dalla **casella degli strumenti** e rilasciata in uno dei rami di un ActivityDesigner **pick** sull'area Progettazione flussi di lavoro. I nuovi oggetti <xref:System.Activities.Statements.PickBranch> possono essere posizionati all'interno della finestra di progettazione <xref:System.Activities.Statements.Pick>, a destra o a sinistra di qualsiasi elemento <xref:System.Activities.Statements.PickBranch> esistente già contenuto nella raccolta. Quando si trascina una finestra di progettazione **PickBranch** nella finestra di progettazione di **selezione** con il mouse, la finestra di progettazione di **selezione** usa una banda blu-grigio verticale per indicare la posizione in cui viene aggiunto l'oggetto <xref:System.Activities.Statements.PickBranch> per una posizione del mouse specificata.
 
@@ -52,7 +54,7 @@ Assicurarsi di selezionare la finestra di progettazione **PickBranch** , in quan
 
 Nella tabella seguente vengono illustrate le <xref:System.Activities.Statements.PickBranch> proprietà più utili e viene descritto come utilizzarle nel Progettazione flussi di lavoro.
 
-|Nome proprietà|Obbligatoria|Utilizzo|
+|Nome proprietà|Obbligatoria|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|Falso|Nome descrittivo visualizzato nell'intestazione di **PickBranch** designer. Il valore predefinito è Branch.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
 |<xref:System.Activities.Statements.PickBranch.Trigger%2A>|Vero|Ogni <xref:System.Activities.Statements.PickBranch> contiene un'azione <xref:System.Activities.Statements.PickBranch.Trigger%2A> che può richiamare l'elemento <xref:System.Activities.Statements.PickBranch.Action%2A>.|

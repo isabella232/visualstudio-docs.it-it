@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: Aggiungere la convalida a classi di entità'
+description: Vedere come aggiungere la convalida alle classi di entità. Aggiungere la convalida per le modifiche apportate a un valore in una colonna specifica. Aggiungere la convalida per gli aggiornamenti a una classe di entità.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d408c67b2e54fecd6404bac93d93ecfb35de162
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f367cf799dd00b8b442870554e499e5405865cb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282345"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435104"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Procedura: Aggiungere la convalida a classi di entità
 La *convalida* delle classi di entità rappresenta il processo mediante cui si conferma che i valori immessi negli oggetti dati sono conformi ai vincoli presenti nello schema di un oggetto e alle regole stabilite per l'applicazione. Per ridurre gli errori, è opportuno convalidare i dati prima di inviare aggiornamenti al database sottostante. La convalida consente anche di ridurre il numero potenziale di round trip tra un'applicazione e il database.
@@ -33,7 +35,7 @@ In questa procedura viene mostrato come convalidare i dati quando viene modifica
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>Per convalidare i dati durante la modifica del valore di una colonna
 
-1. Aprire o creare un nuovo file di classi LINQ to SQL (file con**estensione dbml** ) in **Progettazione relazionale di o/R**. (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)
+1. Aprire o creare un nuovo file di classi LINQ to SQL (file con **estensione dbml** ) in **Progettazione relazionale di o/R**. (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)
 
 2. In **Object Relational Designer** fare clic con il pulsante destro del mouse sulla classe per cui si vuole aggiungere la convalida e quindi scegliere **Visualizza codice**.
 
@@ -79,7 +81,7 @@ Oltre a controllare i valori durante le modifiche, è anche possibile convalidar
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Per convalidare i dati durante un aggiornamento a una classe di entità
 
-1. Aprire o creare un nuovo file di classi LINQ to SQL (file con**estensione dbml** ) in **Progettazione relazionale di o/R**. (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)
+1. Aprire o creare un nuovo file di classi LINQ to SQL (file con **estensione dbml** ) in **Progettazione relazionale di o/R**. (Fare doppio clic sul file **.dbml** in **Esplora soluzioni**.)
 
 2. Fare clic con il pulsante destro del mouse su un'area vuota in **Object Relational Designer** e quindi scegliere **Visualizza codice**.
 
@@ -121,6 +123,6 @@ Oltre a controllare i valori durante le modifiche, è anche possibile convalidar
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Convalida dei dati](../data-tools/validate-data-in-datasets.md)
 - [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)

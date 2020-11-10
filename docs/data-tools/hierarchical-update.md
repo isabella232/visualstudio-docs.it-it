@@ -1,5 +1,7 @@
 ---
 title: Aggiornamento gerarchico
+description: Esaminare gli aggiornamenti gerarchici, che comportano il salvataggio dei dati aggiornati (da un set di dati con 2 tabelle correlate) a un database mantenendo le regole di integrità referenziale.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 158908c45d33781bc9f983950d5558a23481ad37
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfc0c1ca96f5bf6ce58a1b7df9ad0ea10f283e1e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586575"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435156"
 ---
 # <a name="hierarchical-update"></a>Aggiornamento gerarchico
 
@@ -38,7 +40,7 @@ Per impostazione predefinita, un set di dati considera le tabelle correlate come
 
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>Abilitare l'aggiornamento gerarchico in un set di dati
 
-Per impostazione predefinita, l'aggiornamento gerarchico è abilitato per tutti i nuovi set di impostazioni aggiunti o creati in un progetto. Attivare o disattivare l'aggiornamento gerarchico impostando la proprietà di **aggiornamento gerarchico** di un set di dati tipizzato nel set di dati su **true** o **false**:
+Per impostazione predefinita, l'aggiornamento gerarchico è abilitato per tutti i nuovi set di impostazioni aggiunti o creati in un progetto. Attivare o disattivare l'aggiornamento gerarchico impostando la proprietà di **aggiornamento gerarchico** di un set di dati tipizzato nel set di dati su **true** o **false** :
 
 ![Impostazione di aggiornamento gerarchico](../data-tools/media/hierarchical-update-setting.png)
 
@@ -78,9 +80,9 @@ Tuttavia, a volte potrebbe essere necessario ripristinare il set di dati dalla c
 
 Salvare le modifiche dalle tabelle dati correlate del set di dati nel database chiamando il metodo `TableAdapterManager.UpdateAll` e passando il nome del set di dati contenente le tabelle correlate. Ad esempio, eseguire il metodo `TableAdapterManager.UpdateAll(NorthwindDataset)` per inviare gli aggiornamenti da tutte le tabelle presenti in NorthwindDataSet al database back-end.
 
-Dopo avere rilasciato gli elementi dalla finestra **Origini dati**, il codice viene automaticamente aggiunto all'evento `Form_Load` per popolare ogni tabella (metodi `TableAdapter.Fill`). Il codice viene anche aggiunto all'evento Click del pulsante **Salva** di <xref:System.Windows.Forms.BindingNavigator> per salvare i dati dal set di dati nel database (metodo `TableAdapterManager.UpdateAll`).
+Dopo avere rilasciato gli elementi dalla finestra **Origini dati** , il codice viene automaticamente aggiunto all'evento `Form_Load` per popolare ogni tabella (metodi `TableAdapter.Fill`). Il codice viene anche aggiunto all'evento Click del pulsante **Salva** di <xref:System.Windows.Forms.BindingNavigator> per salvare i dati dal set di dati nel database (metodo `TableAdapterManager.UpdateAll`).
 
-Il codice di salvataggio generato contiene anche una riga di codice che chiama il metodo `CustomersBindingSource.EndEdit`. In particolare, viene chiamato il <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metodo del primo <xref:System.Windows.Forms.BindingSource> che viene aggiunto al form. In altre parole, questo codice viene generato solo per la prima tabella trascinata dalla finestra **origini dati** nel form. La chiamata al metodo <xref:System.Windows.Forms.BindingSource.EndEdit%2A> esegue il commit di tutte le modifiche in corso nei controlli associati a dati che si stanno modificando. Pertanto, se un controllo associato a dati ha lo stato attivo e si fa clic sul pulsante **Salva**, prima del salvataggio effettivo verrà eseguito il commit di tutte le modifiche in sospeso nel controllo (metodo `TableAdapterManager.UpdateAll`).
+Il codice di salvataggio generato contiene anche una riga di codice che chiama il metodo `CustomersBindingSource.EndEdit`. In particolare, viene chiamato il <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metodo del primo <xref:System.Windows.Forms.BindingSource> che viene aggiunto al form. In altre parole, questo codice viene generato solo per la prima tabella trascinata dalla finestra **origini dati** nel form. La chiamata al metodo <xref:System.Windows.Forms.BindingSource.EndEdit%2A> esegue il commit di tutte le modifiche in corso nei controlli associati a dati che si stanno modificando. Pertanto, se un controllo associato a dati ha lo stato attivo e si fa clic sul pulsante **Salva** , prima del salvataggio effettivo verrà eseguito il commit di tutte le modifiche in sospeso nel controllo (metodo `TableAdapterManager.UpdateAll`).
 
 > [!NOTE]
 > Il **Progettazione DataSet** aggiunge solo il `BindingSource.EndEdit` codice per la prima tabella rilasciata nel form. Pertanto, è necessario aggiungere una riga di codice per chiamare il metodo `BindingSource.EndEdit` per ogni tabella correlata nel form. Per questa procedura dettagliata, è necessario quindi aggiungere una chiamata al metodo `OrdersBindingSource.EndEdit`.
@@ -121,9 +123,9 @@ Di seguito sono riportati i metodi e le proprietà di uso frequente della `Table
 |Membro|Descrizione|
 |------------|-----------------|
 |Metodo `UpdateAll`|Salva tutti i dati di tutte le tabelle di dati.|
-|Proprietà `BackUpDataSetBeforeUpdate`|Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` metodo. Boolean.|
+|Proprietà`BackUpDataSetBeforeUpdate`|Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` metodo. Boolean.|
 |*TableName* `TableAdapter` Proprietà|Rappresenta un oggetto `TableAdapter` . L'oggetto generato `TableAdapterManager` contiene una proprietà per ogni oggetto `TableAdapter` gestito. Ad esempio, un set di dati con una tabella Customers e Orders viene generato con un oggetto `TableAdapterManager` che contiene `CustomersTableAdapter` le `OrdersTableAdapter` proprietà e.|
-|Proprietà `UpdateOrder`|Controlla l'ordine dei singoli comandi INSERT, Update e DELETE. Impostare questa impostazione su uno dei valori dell' `TableAdapterManager.UpdateOrderOption` enumerazione.<br /><br /> Per impostazione predefinita, la `UpdateOrder` è impostata su **InsertUpdateDelete**. Ciò significa che gli inserimenti, gli aggiornamenti e le eliminazioni vengono eseguiti per tutte le tabelle nel set di dati.|
+|Proprietà`UpdateOrder`|Controlla l'ordine dei singoli comandi INSERT, Update e DELETE. Impostare questa impostazione su uno dei valori dell' `TableAdapterManager.UpdateOrderOption` enumerazione.<br /><br /> Per impostazione predefinita, la `UpdateOrder` è impostata su **InsertUpdateDelete**. Ciò significa che gli inserimenti, gli aggiornamenti e le eliminazioni vengono eseguiti per tutte le tabelle nel set di dati.|
 
 ## <a name="see-also"></a>Vedere anche
 

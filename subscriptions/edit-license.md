@@ -7,12 +7,12 @@ ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 11/09/2020
 ms.topic: how-to
 description: Informazioni su come gli amministratori possono modificare le assegnazioni delle sottoscrizioni.
-ms.openlocfilehash: 785bad481e4329647582d1f441988b1cd83a055a
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 0f1ec9c9aa63b5bd877e13f112964f7d74a4b5af
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382494"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433557"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Modificare assegnazioni di sottoscrizioni di Visual Studio
 In qualità di amministratore della sottoscrizione, è possibile apportare modifiche alle sottoscrizioni assegnate a singoli utenti all'interno dell'organizzazione.  Questo articolo presenta il tipo di modifiche che è possibile apportare, insieme ai passaggi necessari.
@@ -39,6 +39,8 @@ Guardare questo video o leggere per informazioni su come modificare più Sottosc
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]
 
+> [!NOTE]
+> Non modificare i GUID della sottoscrizione nel modello. Vedere l'articolo sull' [assegnazione di GUID di sottoscrizione specifici](assign-guid.md).
 
 1. Per modificare contemporaneamente più sottoscrittori, passare alla scheda sottoscrittori. Nella parte superiore della barra multifunzione fare clic su **modifica in blocco**.
 
@@ -46,7 +48,7 @@ Guardare questo video o leggere per informazioni su come modificare più Sottosc
    > [!div class="mx-imgBorder"]
    > ![Modifica di una licenza - Esportazione di un elenco di modifiche in blocco](_img/edit-license/edit-license-bulk-edit-export.png "Fare clic su Esporta questo Excel per creare un elenco delle sottoscrizioni correnti.")
 
-3. Successivamente, salvare il file in locale in modo che sia più facile trovarlo e apportare le modifiche necessarie prima di caricarlo. Per assicurarsi che il caricamento venga eseguito correttamente, **non modificare il livello di sottoscrizione o il GUID della sottoscrizione** nel file di modifica bulk. in questo modo, il caricamento avrà esito negativo.
+3. Successivamente, salvare il file in locale in modo che sia più facile trovarlo e apportare le modifiche necessarie prima di caricarlo. 
 
 4. Tornare al portale di amministrazione delle sottoscrizioni di Visual Studio e nella finestra di dialogo Modifiche in blocco, fare clic su **Sfoglia**. Selezionare il file di Excel salvato e fare clic su **OK**. Lo stato di avanzamento del caricamento verrà visualizzato sullo schermo.
    > [!div class="mx-imgBorder"]

@@ -1,5 +1,7 @@
 ---
 title: Passare dati da un form all'altro
+description: In questa procedura dettagliata di Windows Forms controlli, ottenere istruzioni dettagliate per il passaggio dei dati da un form a un altro.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 198eb09cabe16c72415520aa493a3395cdbf6d48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e740483a855bbfd736810dd4d41e3f4d01b7dd60
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281877"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434675"
 ---
 # <a name="pass-data-between-forms"></a>Passare dati da un form all'altro
 
@@ -73,19 +75,19 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
 
-4. Denominare il progetto **PassingDataBetweenForms**, quindi scegliere **OK**.
+4. Denominare il progetto **PassingDataBetweenForms** , quindi scegliere **OK**.
 
      Il progetto **PassingDataBetweenForms** verrà creato e aggiunto a **Esplora soluzioni**.
 
 ## <a name="create-the-data-source"></a>Creare l'origine dati
 
-1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati**dal menu **dati** .
+1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati** dal menu **dati** .
 
 2. Nella finestra **origini dati** selezionare **Aggiungi nuova origine dati** per avviare la configurazione guidata **origine dati** .
 
 3. Selezionare **Database** nella pagina **Scegliere un tipo di origine dati** e scegliere **Avanti**.
 
-4. Nella pagina **Scegli modello database** verificare che sia specificato **Dataset**, quindi scegliere **Avanti**.
+4. Nella pagina **Scegli modello database** verificare che sia specificato **Dataset** , quindi scegliere **Avanti**.
 
 5. Nella pagina **Seleziona connessione dati** eseguire una delle operazioni seguenti:
 
@@ -99,7 +101,7 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 8. Espandere il nodo **Tables** nella pagina **Seleziona oggetti di database**.
 
-9. Selezionare le tabelle **Customers** e **Orders**, quindi scegliere **Fine**.
+9. Selezionare le tabelle **Customers** e **Orders** , quindi scegliere **Fine**.
 
      L'oggetto **NorthwindDataSet** viene aggiunto al progetto e le tabelle **Customers** e **Orders** vengono visualizzate nella finestra **Origini dati**.
 
@@ -154,15 +156,15 @@ Aggiungere una query TableAdapter a Form2 per caricare gli ordini per il cliente
 
 6. Fare clic su **Avanti**.
 
-7. Per il **riempimento di un nome DataTableMethod**, digitare `FillByCustomerID` .
+7. Per il **riempimento di un nome DataTableMethod** , digitare `FillByCustomerID` .
 
-8. Deselezionare l'opzione **Restituisci una DataTable**, quindi scegliere **Avanti**.
+8. Deselezionare l'opzione **Restituisci una DataTable** , quindi scegliere **Avanti**.
 
 9. Fare clic su **Fine**.
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Creare un metodo su Form2 per passare i dati a
 
-1. Fare clic con il pulsante destro del mouse su **Form2** e selezionare **Visualizza codice** per aprire **Form2** nell'**editor di codice**.
+1. Fare clic con il pulsante destro del mouse su **Form2** e selezionare **Visualizza codice** per aprire **Form2** nell' **editor di codice**.
 
 2. Aggiungere il codice riportato di seguito a **Form2** dopo il metodo `Form2_Load`:
 

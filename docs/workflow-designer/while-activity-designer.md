@@ -1,5 +1,7 @@
 ---
 title: ActivityDesigner Progettazione flussi di lavoro-while
+description: Informazioni sul modo in cui l'attività While esegue l'attività contenuta nel corpo mentre la condizione specificata restituisce true.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77954925533c51885a056f7156121e68851ad769
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e78d4f2e6aa332c9dfd5faebf834e4f5015c454
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115171"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433700"
 ---
 # <a name="while-activity-designer"></a>ActivityDesigner While
 
@@ -25,7 +27,7 @@ L' <xref:System.Activities.Statements.While> attività esegue l'attività conten
 
 Nella tabella seguente sono elencate le proprietà più utili dell'attività <xref:System.Activities.Statements.While> e ne viene descritta la modalità di utilizzo nella finestra di progettazione.
 
-|Nome proprietà|Obbligatoria|Utilizzo|
+|Nome proprietà|Obbligatoria|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.While> nell'intestazione. Il valore predefinito è While. Il valore può essere modificato nella finestra **Proprietà** o direttamente nell'intestazione Activity Designer.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
 |<xref:System.Activities.Statements.While.Body%2A>|Falso|Contiene l'attività da eseguire mentre l'oggetto <xref:System.Activities.Statements.While.Condition%2A> restituisce **true**.|

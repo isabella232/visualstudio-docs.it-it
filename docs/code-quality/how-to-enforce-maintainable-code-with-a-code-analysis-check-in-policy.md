@@ -1,6 +1,8 @@
 ---
 title: Usare i criteri di archiviazione dell'analisi del codice
 ms.date: 11/04/2016
+description: Informazioni su come usare i criteri di archiviazione dell'analisi del codice per verificare che il codice sia conforme agli standard di ereditarietà, accoppiamento delle classi, gestibilità e complessità.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code analysis, check-in policies
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 883b5e231036c446c1cbf1fbc2fc125a01b3de62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fa97f52f67e08b2ccf0843e5b5400680ed1c020
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371859"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434818"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedura: applicare codice gestibile con criteri di archiviazione dell'analisi del codice
 
@@ -27,7 +29,7 @@ Gli amministratori del controllo della versione di Team Foundation possono aggiu
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>Per aprire l'editor dei criteri di analisi del codice
 
-1. In **Team Explorer**fare clic con il pulsante destro del mouse sul progetto, scegliere **Impostazioni progetto**, quindi fare clic su **controllo del codice sorgente**.
+1. In **Team Explorer** fare clic con il pulsante destro del mouse sul progetto, scegliere **Impostazioni progetto** , quindi fare clic su **controllo del codice sorgente**.
 
      Verrà visualizzata la finestra di dialogo **controllo del codice sorgente** .
 
@@ -41,7 +43,7 @@ Gli amministratori del controllo della versione di Team Foundation possono aggiu
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>Per abilitare le regole di gestibilità dell'analisi codice
 
-1. Nella finestra di dialogo **Editor criteri di analisi codice** , in **Impostazioni regola**, espandere il nodo **regole di gestibilità** .
+1. Nella finestra di dialogo **Editor criteri di analisi codice** , in **Impostazioni regola** , espandere il nodo **regole di gestibilità** .
 
 2. Selezionare le caselle di controllo per le regole seguenti:
 

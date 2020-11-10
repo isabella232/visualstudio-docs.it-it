@@ -1,5 +1,7 @@
 ---
 title: Modifica di dati nei set di dati
+description: Informazioni su come modificare i dati nei set di dati. Sapere come modificare le righe del set di dati, inserire nuove righe in un set di dati, determinare se sono state modificate righe e individuare le righe con errori.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fe59b30e9af7ee1d98c0aba65339af1d53cba8fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e547d3a6a07a7881c34462138ffbe708b8d74080
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282462"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435091"
 ---
 # <a name="edit-data-in-datasets"></a>Modifica di dati nei set di dati
 È possibile modificare i dati nelle tabelle dati in modo analogo a come si modificano i dati in una tabella di qualsiasi database. Il processo può includere l'inserimento, l'aggiornamento e l'eliminazione di record nella tabella. In un form con associazione a dati è possibile specificare i campi modificabili dall'utente. In questi casi, l'infrastruttura di data binding gestisce tutti i rilevamento delle modifiche in modo che le modifiche possano essere inviate nuovamente al database in un secondo momento. Se si apportano modifiche ai dati a livello di codice e si desidera inviare le modifiche al database, è necessario utilizzare gli oggetti e i metodi che eseguono il rilevamento delle modifiche.

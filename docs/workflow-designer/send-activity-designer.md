@@ -1,5 +1,7 @@
 ---
 title: ActivityDesigner Progettazione flussi di lavoro Send
+description: Informazioni sull'attività Send e su come usare l'ActivityDesigner Send per creare e configurare un'attività Send.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd1eff0a52dfb258d7f7af49b03543fd741bc88c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d78925411f911f9c0dfc0c2cfff891deca0e91e3
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875956"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434051"
 ---
 # <a name="send-activity-designer"></a>ActivityDesigner Send
 
@@ -37,7 +39,7 @@ In alternativa, è possibile usare la finestra di progettazione del modello **Se
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.Activities.Send> e ne viene descritta la modalità di uso nella finestra di progettazione. Queste proprietà possono essere modificate nella griglia delle proprietà o nell'area Progettazione flussi di lavoro.
 
-| Nome proprietà | Obbligatoria | Utilizzo |
+| Nome proprietà | Obbligatoria | Uso |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | Falso | Nome descrittivo dell'attività <xref:System.ServiceModel.Activities.Send>. L'impostazione predefinita è Send. Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso. |
 | <xref:System.ServiceModel.Activities.Send.OperationName%2A> | Vero | Nome dell'operazione del servizio chiamata da questa attività <xref:System.ServiceModel.Activities.Send>. Questa proprietà viene utilizzata per costruire il valore predefinito per la proprietà **Action** se la proprietà **Action** non è impostata in modo esplicito. |

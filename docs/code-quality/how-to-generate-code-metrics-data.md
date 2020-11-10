@@ -1,6 +1,8 @@
 ---
 title: Generare metriche di codice dall'IDE o dalla riga di comando
 ms.date: 11/02/2018
+description: Informazioni su come generare dati di metrica codice in Visual Studio. Vedere come usare Esplora soluzioni, un file del set di regole, la riga di comando o un comando di menu.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - code metrics data
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fc255d0e04dd45400fa5da2b81c2e050a2150f
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 9c72e53266eae11fb060ac117c4a6dc0a1c37e2e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658529"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434792"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procedura: generare dati di metrica del codice
 
@@ -24,7 +26,7 @@ ms.locfileid: "91658529"
 
 - Abilitando gli [analizzatori di qualità del codice .NET](#net-code-quality-analyzers-code-metrics-rules) e abilitando le quattro regole della metrica del codice (gestibilità) in esso contenute.
 
-- Scegliendo il comando di menu [ **Analyze**  >  **Code Metrics** ](#calculate-code-metrics-menu-command) in Visual Studio.
+- Scegliendo il comando di menu [ **Analyze**  >  **Code Metrics**](#calculate-code-metrics-menu-command) in Visual Studio.
 
 - Dalla [riga di comando](#command-line-code-metrics) per i progetti C# e Visual Basic.
 
@@ -62,7 +64,7 @@ Queste regole sono disabilitate per impostazione predefinita, ma è possibile ab
 
    In questo esempio la regola [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502) è configurata in modo da essere attivata quando la complessità ciclomatica di un metodo è maggiore di 10.
 
-3. Nella finestra **Proprietà** di Visual Studio o nel file di progetto contrassegnare l'azione di compilazione del file di configurazione come [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Ad esempio:
+3. Nella finestra **Proprietà** di Visual Studio o nel file di progetto contrassegnare l'azione di compilazione del file di configurazione come [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Esempio:
 
    ```xml
    <ItemGroup>
@@ -80,7 +82,7 @@ Generare metriche del codice per uno o tutti i progetti aperti nell'IDE usando i
 
 - Dalla barra dei menu selezionare **analizza**  >  **Calcola metrica codice**  >  **per la soluzione**.
 
-- In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione e quindi scegliere **Calcola metrica codice**.
+- In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione e quindi scegliere **Calcola metrica codice**.
 
 - Nella finestra **Risultati metrica codice** selezionare il pulsante **Calcola metrica codice per la soluzione** .
 
@@ -88,7 +90,7 @@ I risultati vengono generati e viene visualizzata la finestra **Risultati metric
 
 ### <a name="generate-code-metrics-results-for-one-or-more-projects"></a>Generare risultati della metrica del codice per uno o più progetti
 
-1. In **Esplora soluzioni**selezionare uno o più progetti.
+1. In **Esplora soluzioni** selezionare uno o più progetti.
 
 1. Dalla barra dei menu selezionare **analizza**  >  **Calcola metrica codice**  >  **per i progetti selezionati**.
 
@@ -111,7 +113,7 @@ I risultati vengono generati e viene visualizzata la finestra **Risultati metric
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Pacchetto NuGet Microsoft. CodeAnalysis. Metrics
 
-Il modo più semplice per generare dati di metrica del codice dalla riga di comando consiste nell'installare il pacchetto NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Dopo aver installato il pacchetto, eseguire `msbuild /t:Metrics` dalla directory che contiene il file di progetto. Ad esempio:
+Il modo più semplice per generare dati di metrica del codice dalla riga di comando consiste nell'installare il pacchetto NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Dopo aver installato il pacchetto, eseguire `msbuild /t:Metrics` dalla directory che contiene il file di progetto. Esempio:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +136,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-È possibile eseguire l'override del nome del file di output specificando `/p:MetricsOutputFile=<filename>` . È anche possibile ottenere dati di metrica del codice di [tipo legacy](#previous-versions) specificando `/p:LEGACY_CODE_METRICS_MODE=true` . Ad esempio:
+È possibile eseguire l'override del nome del file di output specificando `/p:MetricsOutputFile=<filename>` . È anche possibile ottenere dati di metrica del codice di [tipo legacy](#previous-versions) specificando `/p:LEGACY_CODE_METRICS_MODE=true` . Esempio:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -293,7 +295,7 @@ Se non si vuole installare il pacchetto NuGet, è possibile generare e usare dir
 
 #### <a name="metricsexe-usage"></a>Utilizzo Metrics.exe
 
-Per eseguire *Metrics.exe*, fornire un progetto o una soluzione e un file XML di output come argomenti. Ad esempio:
+Per eseguire *Metrics.exe* , fornire un progetto o una soluzione e un file XML di output come argomenti. Esempio:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -334,7 +336,7 @@ A partire da Visual Studio 2019 versione 16,4 e Microsoft. CodeAnalysis. metrich
 La `LinesOfCode` metrica è più accurata e affidabile nel nuovo strumento per la metrica del codice della riga di comando. È indipendente dalle differenze di codegen e non cambia in caso di modifica del set di strumenti o del runtime. Il nuovo strumento conta le righe di codice effettive, incluse le righe vuote e i commenti.
 ::: moniker-end
 
-Altre metriche, ad esempio `CyclomaticComplexity` e `MaintainabilityIndex` , usano le stesse formule delle versioni precedenti di *Metrics.exe*, ma il nuovo strumento conta il numero di istruzioni per le `IOperations` origini logiche anziché le istruzioni del linguaggio intermedio (il). I numeri saranno leggermente diversi rispetto a quelli generati dall'IDE di Visual Studio e dalle versioni precedenti di *Metrics.exe*.
+Altre metriche, ad esempio `CyclomaticComplexity` e `MaintainabilityIndex` , usano le stesse formule delle versioni precedenti di *Metrics.exe* , ma il nuovo strumento conta il numero di istruzioni per le `IOperations` origini logiche anziché le istruzioni del linguaggio intermedio (il). I numeri saranno leggermente diversi rispetto a quelli generati dall'IDE di Visual Studio e dalle versioni precedenti di *Metrics.exe*.
 
 ## <a name="see-also"></a>Vedere anche
 

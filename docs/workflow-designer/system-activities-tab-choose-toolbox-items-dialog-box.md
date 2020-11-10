@@ -1,5 +1,7 @@
 ---
 title: 'Progettazione flussi di lavoro: System. Activities, scegliere gli elementi della casella degli strumenti'
+description: Informazioni su come la scheda System. Activities Visualizza un elenco di attività, modelli ed elementi di Windows Workflow Foundation (WF) disponibili.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f1a7030b6c351407814314ccd41e0e2ed6a880e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d13aadb135f6dcf72d146f74ea2804ef34228641
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593109"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433895"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Scheda System. Activities, finestra di dialogo Scegli elementi della casella degli strumenti
 
@@ -33,7 +35,7 @@ Il filtro viene eseguito in ogni scheda e non è possibile aggiungere attività 
 
 Quando si crea un'istanza dell'attività trascinandola e rilasciandola nella finestra di progettazione, si aggiunge automaticamente all'elenco degli assembly di riferimento l'assembly che contiene l'elemento. Se inoltre l'attività fa riferimento a un assembly C, C non viene aggiunto all'elenco di assembly di riferimento. L'assembly C deve trovarsi nella GAC o nella stessa directory dell'attività B. Nel caso autonomo, l'assembly deve trovarsi nella GAC o nei percorsi di probe di VS. È quindi solo possibile trascinare e rilasciare le attività nell'area di progettazione flussi di lavoro.
 
-Le impostazioni della **casella degli strumenti** vengono salvate per impostazione predefinita come opzioni utente, quindi la volta successiva, quando si apre la **casella degli strumenti**, viene visualizzato l'elenco personalizzato delle attività del flusso di lavoro. Un effetto collaterale è che se sono stati aggiunti elementi di dominio specifici alla **casella degli strumenti** tramite la finestra di dialogo **Scegli elementi della casella degli strumenti** , gli elementi continuano a essere visualizzati anche quando si lavora in un'applicazione console del flusso di lavoro. Se non si desidera visualizzarli, eliminarli usando il menu di scelta rapida o deselezionarli tramite la finestra di dialogo **Scegli elementi della casella degli strumenti** come indicato in precedenza.
+Le impostazioni della **casella degli strumenti** vengono salvate per impostazione predefinita come opzioni utente, quindi la volta successiva, quando si apre la **casella degli strumenti** , viene visualizzato l'elenco personalizzato delle attività del flusso di lavoro. Un effetto collaterale è che se sono stati aggiunti elementi di dominio specifici alla **casella degli strumenti** tramite la finestra di dialogo **Scegli elementi della casella degli strumenti** , gli elementi continuano a essere visualizzati anche quando si lavora in un'applicazione console del flusso di lavoro. Se non si desidera visualizzarli, eliminarli usando il menu di scelta rapida o deselezionarli tramite la finestra di dialogo **Scegli elementi della casella degli strumenti** come indicato in precedenza.
 
 Le colonne di questa finestra di dialogo includono le informazioni seguenti:
 

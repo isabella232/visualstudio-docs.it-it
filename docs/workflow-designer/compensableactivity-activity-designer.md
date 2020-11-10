@@ -1,5 +1,7 @@
 ---
 title: ActivityDesigner Progettazione flussi di lavoro-CompensableActivity
+description: Informazioni su come usare l'ActivityDesigner CompensableActivity per creare e configurare un'attività CompensableActivity.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec70c22ae195dc6dd58aa2cfa893cee35fe6ca8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e170bd47af7c84eb9ddb26a4946422c418365d2
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597100"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434337"
 ---
 # <a name="compensableactivity-activity-designer"></a>ActivityDesigner CompensableActivity
 
@@ -25,14 +27,14 @@ L'ActivityDesigner **CompensableActivity** viene usato per creare e configurare 
  <xref:System.Activities.Statements.CompensableActivity> definisce un'unità di lavoro che può essere confermata o compensata dopo l'esito positivo del completamento.
 
 ### <a name="using-the-compensableactivity-activity-designer"></a>Utilizzo dell'ActivityDesigner CompensableActivity
- L'ActivityDesigner **CompensableActivity** è disponibile nella categoria **transazione** della **casella degli strumenti**. Per aprire la **casella degli strumenti**, selezionare la scheda **casella degli strumenti** sul lato sinistro del progettazione flussi di lavoro. In alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** o premere **CTRL** + **ALT** + **X**.
+ L'ActivityDesigner **CompensableActivity** è disponibile nella categoria **transazione** della **casella degli strumenti**. Per aprire la **casella degli strumenti** , selezionare la scheda **casella degli strumenti** sul lato sinistro del progettazione flussi di lavoro. In alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** o premere **CTRL** + **ALT** + **X**.
 
  È possibile trascinare l'ActivityDesigner **CompensableActivity** dalla **casella degli strumenti** e rilasciarlo nell'area di progettazione flussi di lavoro. È possibile trascinare l'ActivityDesigner all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . Se si elimina l'ActivityDesigner, viene creata un' <xref:System.Activities.Statements.CompensableActivity> attività con il valore predefinito <xref:System.Activities.Activity.DisplayName%2A> CompensableActivity. Modificare il <xref:System.Activities.Activity.DisplayName%2A> valore nell'intestazione dell'ActivityDesigner **CompensableActivity** . Può anche essere modificato nella casella **DisplayName** della griglia delle proprietà.
 
 ### <a name="the-compensableactivity-properties"></a>Proprietà di CompensableActivity
  Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.CompensableActivity> e ne viene descritta la modalità di uso nella finestra di progettazione. La <xref:System.Activities.Activity.DisplayName%2A> <xref:System.Activities.Activity%601.Result%2A> proprietà e può essere modificata nella griglia delle proprietà ma le altre proprietà devono essere modificate nell'area di progettazione flussi di lavoro.
 
-|Nome proprietà|Obbligatoria|Utilizzo|
+|Nome proprietà|Obbligatoria|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.CompensableActivity>. Il valore predefinito è CompensableActivity.|
 |<xref:System.Activities.Activity%601.Result%2A>|Falso|Specifica il valore restituito di <xref:System.Activities.Statements.CompensableActivity>. Questa proprietà deve essere modificata nella griglia delle proprietà.|
@@ -46,5 +48,5 @@ L'ActivityDesigner **CompensableActivity** viene usato per creare e configurare 
 - [Transazione](../workflow-designer/transaction-activity-designers.md)
 - [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)
 - [Compensare](../workflow-designer/compensate-activity-designer.md)
-- [Confirm](../workflow-designer/confirm-activity-designer.md)
+- [Confermare](../workflow-designer/confirm-activity-designer.md)
 - [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

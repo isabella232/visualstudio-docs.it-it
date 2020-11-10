@@ -1,5 +1,6 @@
 ---
 title: Utilizzo di tabelle di ricerca in data binding-Windows Forms
+description: Informazioni su come creare un Windows Forms controllo utente che supporta la ricerca data binding, usando la classe LookupBindingPropertiesAttribute in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fe2289a54dba0c3b3e34de54991e9b7cfbee4c93
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: de89839dd85f0f330356e1ade7d4658428ea3d3e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037393"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435274"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding di ricerca
 
@@ -59,7 +60,7 @@ Durante questa procedura dettagliata si apprenderà come:
 
 In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
+1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio** è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
 
 2. Installare il database di esempio Northwind attenendosi alla procedura seguente:
 
@@ -83,13 +84,13 @@ Il primo passaggio consiste nel creare un progetto di **applicazione Windows For
 
 3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
 
-4. Denominare il progetto **LookupControlWalkthrough**, quindi scegliere **OK**.
+4. Denominare il progetto **LookupControlWalkthrough** , quindi scegliere **OK**.
 
      Il progetto **LookupControlWalkthrough** viene creato e aggiunto a **Esplora soluzioni**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Aggiungere un controllo utente al progetto
 
-Dal momento che questa procedura dettagliata crea un controllo di ricerca da un **Controllo utente**, è necessario aggiungere un elemento **Controllo utente** al progetto **LookupControlWalkthrough**.
+Dal momento che questa procedura dettagliata crea un controllo di ricerca da un **Controllo utente** , è necessario aggiungere un elemento **Controllo utente** al progetto **LookupControlWalkthrough**.
 
 1. Selezionare **Aggiungi controllo utente** dal menu **Progetto**.
 
@@ -112,13 +113,13 @@ Per controlli di ricerca che supportano il data binding, è possibile implementa
      [!code-vb[VbRaddataDisplaying#5](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.vb)]
      [!code-csharp[VbRaddataDisplaying#5](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.cs)]
 
-3. Scegliere **Compila soluzione**dal menu **Compila** .
+3. Scegliere **Compila soluzione** dal menu **Compila** .
 
 ## <a name="create-a-data-source-from-your-database"></a>Creare un'origine dati dal database
 
 Questo passaggio crea un'origine dati usando la **Configurazione guidata origine dati** basata sulle tabelle `Customers` e `Orders` nel database di esempio Northwind.
 
-1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati**dal menu **dati** .
+1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati** dal menu **dati** .
 
 2. Nella finestra **origini dati** selezionare **Aggiungi nuova origine dati** per avviare la configurazione guidata **origine dati** .
 
@@ -148,11 +149,11 @@ Nella finestra **Origini dati** è possibile impostare il controllo da creare pr
 
 2. Espandere il nodo **Customers** nella finestra **Origini dati**.
 
-3. Espandere il nodo **Orders** (nel nodo **Customers** sotto la colonna **Fax**).
+3. Espandere il nodo **Orders** (nel nodo **Customers** sotto la colonna **Fax** ).
 
 4. Fare clic sulla freccia a discesa nel nodo **Orders** e scegliere **Dettagli** dall'elenco di controllo.
 
-5. Fare clic sulla freccia a discesa nella colonna **CustomerID** (nel nodo **Orders**) e scegliere **Personalizza**.
+5. Fare clic sulla freccia a discesa nella colonna **CustomerID** (nel nodo **Orders** ) e scegliere **Personalizza**.
 
 6. Selezionare **LookupBox** dall'elenco **Controlli associati** nella finestra di dialogo **Personalizzazione dell'interfaccia utente dati**.
 
@@ -178,6 +179,6 @@ Viene in questo modo impostato il data binding per visualizzare `CompanyName` da
 
 - Spostarsi all'interno di alcuni record e verificare che `CompanyName` venga mostrato nel controllo `LookupBox`.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

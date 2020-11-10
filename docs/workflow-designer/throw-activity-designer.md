@@ -1,5 +1,7 @@
 ---
 title: ActivityDesigner Progettazione flussi di lavoro Throw
+description: Informazioni sull'attività Throw e su come è possibile usare l'ActivityDesigner Throw per creare e configurare un'attività Throw.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 650082ab0e4f8576b7028b8011c88bf5d93b2afd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d836a666c0b09366f5c8f3c9245def63faba462
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593096"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433856"
 ---
 # <a name="throw-activity-designer"></a>ActivityDesigner Throw
 
@@ -35,7 +37,7 @@ Accedere all'ActivityDesigner **throw** nella categoria **Gestione errori** dell
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Throw> e ne viene descritta la modalità di uso nella finestra di progettazione.
 
-|Nome proprietà|Obbligatoria|Utilizzo|
+|Nome proprietà|Obbligatoria|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.Throw>. Il valore predefinito è Throw.|
 |<xref:System.Activities.Statements.Throw.Exception%2A>|Vero|Eccezione da generare. Questa eccezione deve derivare da <xref:System.Exception>. Per specificare l'eccezione, digitare un'espressione Visual Basic nella griglia delle proprietà.|

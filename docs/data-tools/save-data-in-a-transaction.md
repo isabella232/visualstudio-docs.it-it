@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: Salvare dati in una transazione'
+description: In questa procedura dettagliata, vedere come salvare i dati in una transazione usando lo spazio dei nomi System. Transactions in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/08/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bb0262139e2096cf55ae7581ef854a57c67d22a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281630"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434545"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Procedura dettagliata: Salvare dati in una transazione
 
@@ -56,7 +58,7 @@ Il primo passaggio consiste nel creare un' **applicazione Windows Forms**.
 
 3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
 
-4. Denominare il progetto **SavingDataInATransactionWalkthrough**, quindi scegliere **OK**.
+4. Denominare il progetto **SavingDataInATransactionWalkthrough** , quindi scegliere **OK**.
 
      Il progetto **SavingDataInATransactionWalkthrough** viene creato e aggiunto a **Esplora soluzioni**.
 
@@ -64,11 +66,11 @@ Il primo passaggio consiste nel creare un' **applicazione Windows Forms**.
 
 In questo passaggio viene utilizzata la **Configurazione guidata origine dati** per creare un'origine dati basata `Customers` sulle `Orders` tabelle e nel database di esempio Northwind.
 
-1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati**dal menu **dati** .
+1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati** dal menu **dati** .
 
 2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
-3. Nella schermata **scegliere un tipo di origine dati** selezionare **database**, quindi fare clic su **Avanti**.
+3. Nella schermata **scegliere un tipo di origine dati** selezionare **database** , quindi fare clic su **Avanti**.
 
 4. Nella schermata **Seleziona connessione dati** eseguire una delle operazioni seguenti:
 
@@ -139,28 +141,28 @@ L'ordine di riconciliazione delle modifiche ai dati correlati è il seguente:
 
 ### <a name="to-delete-existing-orders"></a>Per eliminare gli ordini esistenti
 
-- Aggiungere il metodo `DeleteOrders` seguente in **Form1**:
+- Aggiungere il metodo `DeleteOrders` seguente in **Form1** :
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>Per eliminare i clienti esistenti
 
-- Aggiungere il metodo `DeleteCustomers` seguente in **Form1**:
+- Aggiungere il metodo `DeleteCustomers` seguente in **Form1** :
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>Per aggiungere nuovi clienti
 
-- Aggiungere il metodo `AddNewCustomers` seguente in **Form1**:
+- Aggiungere il metodo `AddNewCustomers` seguente in **Form1** :
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>Per aggiungere nuovi ordini
 
-- Aggiungere il metodo `AddNewOrders` seguente in **Form1**:
+- Aggiungere il metodo `AddNewOrders` seguente in **Form1** :
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]

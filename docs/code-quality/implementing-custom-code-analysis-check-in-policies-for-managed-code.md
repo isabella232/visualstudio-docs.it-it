@@ -1,6 +1,8 @@
 ---
 title: Criteri di archiviazione dell'analisi codice personalizzati per codice gestito
 ms.date: 11/04/2016
+description: Informazioni su come creare criteri di archiviazione personalizzati per l'analisi del codice. Vedere come verificare che il codice gestito di Visual Studio sia conforme a un criterio del progetto DevOps di Azure.
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 f1_keywords:
 - vs.code.analysis.selecttfsrulesets
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1404386445d24284a2231ed557a65568fdb1ba2b
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 567b6d2fe8906fd1a7a07ab73835439f8a9a9955
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928017"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435424"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementare i criteri di archiviazione di analisi codice personalizzati per il codice gestito
 
@@ -42,11 +44,11 @@ Per creare un set di regole personalizzato per un progetto DevOps di Azure, crea
 
 2. Nel riquadro **cartelle** , fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **nuova cartella**.
 
-3. Nel riquadro principale del controllo del codice sorgente fare clic con il pulsante destro del mouse su **nuova cartella**, scegliere **Rinomina**e digitare un nome per la cartella del set di regole.
+3. Nel riquadro principale del controllo del codice sorgente fare clic con il pulsante destro del mouse su **nuova cartella** , scegliere **Rinomina** e digitare un nome per la cartella del set di regole.
 
 ### <a name="to-create-the-check-in-policy-rule-set"></a>Per creare il set di regole dei criteri di archiviazione
 
-1. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **File**.
+1. Scegliere **Nuovo** dal menu **File** , quindi fare clic su **File**.
 
 2. Nell'elenco **categorie** fare clic su **generale**.
 
@@ -56,7 +58,7 @@ Per creare un set di regole personalizzato per un progetto DevOps di Azure, crea
 
 ### <a name="to-add-the-rule-set-file-to-version-control"></a>Per aggiungere il file del set di regole al controllo della versione
 
-1. In **Esplora controllo codice sorgente**fare clic con il pulsante destro del mouse sulla nuova cartella e quindi scegliere **Aggiungi elementi alla cartella**.
+1. In **Esplora controllo codice sorgente** fare clic con il pulsante destro del mouse sulla nuova cartella e quindi scegliere **Aggiungi elementi alla cartella**.
 
      Per ulteriori informazioni, vedere [git e Azure Repos](/azure/devops/repos/git/overview?view=vsts&preserve-view=true).
 
@@ -69,15 +71,15 @@ Per creare un set di regole personalizzato per un progetto DevOps di Azure, crea
 4. Nella finestra di dialogo **Archivia** è possibile aggiungere un commento, quindi fare clic su **Archivia**.
 
     > [!NOTE]
-    > Se sono già stati configurati criteri di archiviazione dell'analisi del codice per il progetto Azure DevOps ed è stata selezionata l'opzione **applica archiviazione per contenere solo file che fanno parte della soluzione corrente**, verrà generato un avviso di errore dei criteri. Nella finestra di dialogo errore criteri selezionare **Sostituisci errore criteri e continua archiviazione**. Aggiungere un commento obbligatorio, quindi fare clic su **OK**.
+    > Se sono già stati configurati criteri di archiviazione dell'analisi del codice per il progetto Azure DevOps ed è stata selezionata l'opzione **applica archiviazione per contenere solo file che fanno parte della soluzione corrente** , verrà generato un avviso di errore dei criteri. Nella finestra di dialogo errore criteri selezionare **Sostituisci errore criteri e continua archiviazione**. Aggiungere un commento obbligatorio, quindi fare clic su **OK**.
 
 ### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Per specificare il file del set di regole come criterio di archiviazione
 
-1. Scegliere **Impostazioni progetto**dal menu **Team** , quindi fare clic su controllo del **codice sorgente**.
+1. Scegliere **Impostazioni progetto** dal menu **Team** , quindi fare clic su controllo del **codice sorgente**.
 
-2. Fare clic su **criteri di archiviazione**e quindi su **Aggiungi**.
+2. Fare clic su **criteri di archiviazione** e quindi su **Aggiungi**.
 
-3. Nell'elenco dei **criteri di archiviazione** fare doppio clic su **analisi codice**e verificare che la casella di controllo **Imponi analisi codice per codice gestito** sia selezionata.
+3. Nell'elenco dei **criteri di archiviazione** fare doppio clic su **analisi codice** e verificare che la casella di controllo **Imponi analisi codice per codice gestito** sia selezionata.
 
 4. Nell'elenco **Esegui questo set di regole** fare clic su **\<Select Rule Set from Source Control>** .
 
@@ -88,7 +90,7 @@ Per creare un set di regole personalizzato per un progetto DevOps di Azure, crea
      **$/** `TeamProjectName` **/** `VersionControlPath`
 
     > [!NOTE]
-    > È possibile copiare il percorso usando una delle procedure seguenti in **Esplora controllo codice sorgente**:
+    > È possibile copiare il percorso usando una delle procedure seguenti in **Esplora controllo codice sorgente** :
 
     - Nel riquadro **cartelle** fare clic sulla cartella che contiene il file del set di regole. Copiare il percorso del controllo della versione della cartella che viene visualizzato nella casella **origine** e digitare manualmente il nome del file del set di regole.
 
@@ -104,7 +106,7 @@ Per creare un set di regole personalizzato per un progetto DevOps di Azure, crea
 
    È possibile eseguire questo passaggio in **Esplora controllo codice sorgente** facendo clic con il pulsante destro del mouse sulla cartella del set di regole e quindi scegliendo **ottenere la versione più recente**.
 
-2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto di codice, quindi scegliere **Proprietà**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto di codice, quindi scegliere **Proprietà**.
 
 3. **Fare clic su analisi codice**.
 

@@ -1,5 +1,6 @@
 ---
 title: Eseguire manualmente l'analisi del codice legacy (.NET)
+description: Informazioni su come rilevare i possibili difetti nel codice sorgente. Vedere come eseguire manualmente l'analisi del codice legacy sul codice gestito in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ca865b33d59f87453cafc337e1595c9d772b17a2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f61f0823c33478b4482f00541bbfe778fe72ed7e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808613"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434740"
 ---
 # <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>Procedura: eseguire manualmente l'analisi del codice legacy per il codice gestito
 
@@ -30,6 +31,6 @@ Lo strumento di analisi del codice fornisce informazioni sul possibile difetto n
 set EnableLegacyCodeAnalysis = true
 ```
 
-2. In **Esplora soluzioni**fare clic sul progetto.
+2. In **Esplora soluzioni** fare clic sul progetto.
 
 3. Nel menu **analizza** fare clic su **Esegui analisi del codice sul** *nome del progetto*.

@@ -1,5 +1,7 @@
 ---
 title: Creare tabelle di ricerca nelle applicazioni Windows Forms
+description: Informazioni su come creare tabelle di ricerca nelle applicazioni Windows Forms. Una tabella di ricerca descrive i controlli associati a due tabelle di dati correlate.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9a1ae368b7d2bf8548bf78a6a9795e19206bc277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d6ec8860d2c163d16e29d229203bb77abcdf65f
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282657"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435195"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Creare tabelle di ricerca nelle applicazioni Windows Forms
 
@@ -28,7 +30,7 @@ Si consideri, ad esempio, una tabella di `Orders` in un database Sales. Ogni rec
 
 ## <a name="to-databind-a-lookup-control"></a>Per associare un controllo di ricerca
 
-1. Con il progetto aperto, aprire la finestra **origini dati** scegliendo **Visualizza**  >  **altre**  >  **origini dati**di Windows.
+1. Con il progetto aperto, aprire la finestra **origini dati** scegliendo **Visualizza**  >  **altre**  >  **origini dati** di Windows.
 
     > [!NOTE]
     > Per le tabelle di ricerca è necessario che nella finestra **origini dati** siano disponibili due tabelle o oggetti correlati. Per altre informazioni, vedere [relazioni nei DataSet](relationships-in-datasets.md).

@@ -1,5 +1,7 @@
 ---
 title: Salvare dati con i metodi DBDirect di TableAdapter
+description: In questa procedura dettagliata eseguire le istruzioni SQL direttamente su un database usando i metodi DBDirect di un TableAdapter.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d79b2081e2d30d77ae3507884b44421f0f14bae
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281609"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434571"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvare dati con i metodi DBDirect di TableAdapter
 
@@ -43,7 +45,7 @@ Durante questa procedura dettagliata, si apprenderà come:
 
 In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
+1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio** è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
 
 2. Installare il database di esempio Northwind attenendosi alla procedura seguente:
 
@@ -67,7 +69,7 @@ Il primo passaggio consiste nel creare un' **applicazione Windows Forms**.
 
 3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
 
-4. Denominare il progetto **TableAdapterDbDirectMethodsWalkthrough**, quindi scegliere **OK**.
+4. Denominare il progetto **TableAdapterDbDirectMethodsWalkthrough** , quindi scegliere **OK**.
 
      Il progetto **TableAdapterDbDirectMethodsWalkthrough** viene creato e aggiunto a **Esplora soluzioni**.
 
@@ -77,13 +79,13 @@ Questo passaggio usa la **Configurazione guidata origine dati** per creare un'or
 
 ### <a name="to-create-the-data-source"></a>Per creare l'origine dati
 
-1. Scegliere **Mostra origini dati**dal menu **dati** .
+1. Scegliere **Mostra origini dati** dal menu **dati** .
 
    Verrà visualizzata la finestra **Origini dati**.
 
 2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
-3. Nella schermata **scegliere un tipo di origine dati** selezionare **database**, quindi fare clic su **Avanti**.
+3. Nella schermata **scegliere un tipo di origine dati** selezionare **database** , quindi fare clic su **Avanti**.
 
 4. Nella schermata **Seleziona connessione dati** eseguire una delle operazioni seguenti:
 
@@ -113,7 +115,7 @@ Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridVi
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Per aggiungere pulsanti da usare per la chiamata ai singoli metodi DbDirect di TableAdapter
 
-1. Trascinare tre controlli <xref:System.Windows.Forms.Button> dalla **Casella degli strumenti** in **Form1** (sotto l'oggetto **RegionDataGridView**).
+1. Trascinare tre controlli <xref:System.Windows.Forms.Button> dalla **Casella degli strumenti** in **Form1** (sotto l'oggetto **RegionDataGridView** ).
 
 2. Impostare le proprietà **Name** e **Text** seguenti per ciascun pulsante.
 

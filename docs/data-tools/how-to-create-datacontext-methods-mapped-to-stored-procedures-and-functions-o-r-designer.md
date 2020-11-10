@@ -1,5 +1,6 @@
 ---
 title: Eseguire il mapping di metodi DataContext a sprocs e funzioni
+description: Informazioni su come creare metodi DataContext mappati a stored procedure (sprocs) e funzioni usando Object Relational Designer (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6926631cfd9d04992d92553a346348ea18af847
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4cb02a7fc7fdcbb4ff3c9c3750e722ff0fe031a5
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038335"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434948"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Procedura: Creare metodi DataContext mappati a stored procedure e funzioni (Object Relational Designer)
 
@@ -34,7 +35,7 @@ ms.locfileid: "90038335"
 
 ### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>Per creare metodi DataContext che restituiscono tipi generati automaticamente
 
-1. In **Esplora server** o **Esplora database**espandere il nodo **stored procedure** del database con cui si sta lavorando.
+1. In **Esplora server** o **Esplora database** espandere il nodo **stored procedure** del database con cui si sta lavorando.
 
 2. Individuare la stored procedure desiderata e trascinarla in un'area vuota della **finestra di progettazione O/R**.
 
@@ -42,7 +43,7 @@ ms.locfileid: "90038335"
 
 ### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Per creare metodi DataContext con il tipo restituito di una classe di entità
 
-1. In **Esplora server** o **Esplora database**espandere il nodo **stored procedure** del database con cui si sta lavorando.
+1. In **Esplora server** o **Esplora database** espandere il nodo **stored procedure** del database con cui si sta lavorando.
 
 2. Individuare la stored procedure desiderata e trascinarla in una classe di entità esistente in **O/R Designer**.
 
@@ -51,7 +52,7 @@ ms.locfileid: "90038335"
 > [!NOTE]
 > Per informazioni su come modificare il tipo restituito predefinito esistente <xref:System.Data.Linq.DataContext> metodi, vedere [come: Modificare il tipo restituito di un metodo DataContext (O/R Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Metodi DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)

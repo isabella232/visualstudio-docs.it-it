@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c4a1effcf61348d2f2267fb38164fd166f7d48
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 45fc0a58262a533416f630ede795d0060f9fc909
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382972"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434493"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Distribuire l'app in una cartella, IIS, Azure o un'altra destinazione
 
@@ -117,16 +117,16 @@ Per altre informazioni:
 
 ### <a name="azure-virtual-machine"></a>Macchina virtuale di Azure
 
-Le [macchine virtuali (VM) di Azure](https://azure.microsoft.com/documentation/services/virtual-machines/) consentono di creare e gestire qualsiasi numero di risorse di elaborazione nel cloud. Assumendosi la responsabilità per tutto il software e tutti gli aggiornamenti nelle macchine virtuali, è possibile personalizzare queste ultime in base alle esigenze dell'applicazione. È possibile accedere alle macchine virtuali direttamente con Desktop remoto e ognuna di esse manterrà l'indirizzo IP assegnato finché lo si ritiene opportuno.
+[Macchine virtuali (VM) di Azure](https://azure.microsoft.com/documentation/services/virtual-machines/) consente di creare e gestire un numero qualsiasi di risorse di elaborazione nel cloud. Assumendosi la responsabilità per tutto il software e tutti gli aggiornamenti nelle macchine virtuali, è possibile personalizzare queste ultime in base alle esigenze dell'applicazione. È possibile accedere alle macchine virtuali direttamente con Desktop remoto e ognuna di esse manterrà l'indirizzo IP assegnato finché lo si ritiene opportuno.
 
 Il ridimensionamento di un'applicazione ospitata in macchine virtuali comporta l'attivazione di altre macchine virtuali in base alla richiesta e quindi la distribuzione del software necessario. Questo livello di controllo aggiuntivo consente di ridimensionare le macchine in modo diverso nelle diverse aree geografiche globali. Se ad esempio l'applicazione viene usata da dipendenti dislocati in varie sedi regionali, è possibile ridimensionare le macchine virtuali in base al numero di dipendenti di quelle sedi, potenzialmente riducendo i costi.
 
-Per altre informazioni, vedere il [confronto dettagliato](/azure/architecture/guide/technology-choices/compute-decision-tree) tra Servizio app di Azure, Macchine virtuali di Azure e altri servizi di Azure che è possibile usare come destinazione della distribuzione usando l'opzione Personalizzata in Visual Studio.
+Per altre informazioni, vedere il [confronto dettagliato](/azure/architecture/guide/technology-choices/compute-decision-tree) tra app Azure servizio, macchine virtuali di Azure e altri servizi di Azure che è possibile usare come destinazione di distribuzione usando l'opzione personalizzata in Visual Studio.
 
 #### <a name="when-to-choose-azure-virtual-machines"></a>Quando scegliere macchine virtuali di Azure
 
 - Si vuole distribuire un'applicazione Web accessibile via Internet, con controllo completo della durata degli indirizzi IP assegnati.
-- Sono necessarie personalizzazioni a livello di computer sui server, che includono software aggiuntivo come ad esempio un sistema di database specializzato, configurazioni di rete specifiche, partizioni del disco e così via.
+- Sono necessarie personalizzazioni a livello di computer sui server, tra cui software aggiuntivo, ad esempio un sistema di database specializzato, configurazioni di rete specifiche, partizioni del disco e così via.
 - Si vuole garantire un elevato livello di controllo sul ridimensionamento dell'applicazione Web.
 - È necessario l'accesso diretto ai server che ospitano l'applicazione per qualsiasi altro motivo.
 
@@ -147,19 +147,29 @@ Per altre informazioni, vedere gli argomenti seguenti:
 
 ## <a name="folder"></a>Cartella
 
-Effettuare la distribuzione nel file system significa semplicemente copiare i file dell'applicazione in una cartella specifica del proprio computer. Questo sistema viene spesso usato a scopo di test o per distribuire l'applicazione per l'uso da parte di un numero limitato di persone, se il computer esegue anche un server. Se la cartella di destinazione è condivisa in rete, la distribuzione nel file system può rendere disponibili i file dell'applicazione Web per altri utenti che possono distribuirli a loro volta a server specifici.
+La distribuzione nel file system significa copiare i file dell'applicazione in una cartella specifica nel computer. La distribuzione in una cartella viene spesso usata a scopo di test o per distribuire l'applicazione per l'uso da parte di un numero limitato di utenti se il computer esegue anche un server. Se la cartella di destinazione è condivisa in rete, la distribuzione nel file system può rendere disponibili i file dell'applicazione Web per altri utenti che possono distribuirli a loro volta a server specifici.
+::: moniker range=">=vs-2019"
+A partire da Visual Studio 2019 16,8, la destinazione della cartella include la possibilità di pubblicare un'applicazione Windows .NET tramite ClickOnce.
 
+Se si vuole pubblicare un'applicazione Windows .NET Core 3,1 o successiva con ClickOnce, vedere [distribuire un'applicazione Windows .NET tramite ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+::: moniker-end
 Qualsiasi computer locale che esegue un server è in grado di rendere l'applicazione disponibile su Internet o Intranet, in base al tipo di configurazione e alle reti a cui è connesso. Se si connette un computer direttamente a Internet, prestare particolare attenzione a proteggerlo dalle minacce alla sicurezza esterna. Poiché si gestiscono questi computer, si ha il controllo completo delle configurazioni software e hardware.
 
-Si noti che se per qualsiasi motivo (ad esempio, l'accesso al computer) non si è in grado di usare servizi cloud come Servizio app di Azure o Macchine virtuali di Azure, è possibile usare [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) nel proprio centro dati. Azure Stack consente di gestire e usare le risorse di elaborazione con Servizio app di Azure e Macchine virtuali di Azure, mantenendo tutti gli elementi in locale.
+Se per qualsiasi motivo, ad esempio l'accesso al computer, non si è in grado di usare servizi cloud come app Azure servizio o macchine virtuali di Azure, è possibile usare il [Azure stack](https://azure.microsoft.com/overview/azure-stack/) nel proprio Data Center. Azure Stack consente di gestire e usare le risorse di elaborazione con Servizio app di Azure e Macchine virtuali di Azure, mantenendo tutti gli elementi in locale.
 
 ### <a name="when-to-choose-file-system-deployment"></a>Quando scegliere la distribuzione nel file system
 
 - È necessario distribuire l'applicazione solo in una condivisione di file da cui altri utenti effettueranno a loro volta la distribuzione a server diversi.
+::: moniker range=">=vs-2019"
+- Si vuole distribuire un'applicazione Windows .NET tramite ClickOnce
+::: moniker-end
 - È necessaria solo una distribuzione locale dei test.
 - Si vuole esaminare e potenzialmente modificare in modo indipendente i file dell'applicazione prima di inviarli a un'altra destinazione di distribuzione.
 
 Per ulteriori informazioni, vedere [Guida introduttiva: eseguire la distribuzione in una cartella locale](quickstart-deploy-to-local-folder.md).
+::: moniker range=">=vs-2019"
+Per ulteriori informazioni sulla distribuzione di un'applicazione Windows .NET tramite ClickOnce, vedere [distribuire un'applicazione Windows .NET tramite ClickOnce](quickstart-deploy-using-clickonce-folder.md).
+::: moniker-end
 
 Per ulteriori informazioni sulla scelta delle impostazioni, vedere gli argomenti seguenti:
 
@@ -218,7 +228,7 @@ L'uso di un file di impostazioni di pubblicazione può semplificare la configura
 ### <a name="when-to-choose-import-profile"></a>Quando scegliere Importa profilo
 
 - Si sta eseguendo la pubblicazione in IIS e si vuole semplificare la configurazione della distribuzione.
-- Si sta eseguendo la pubblicazione in IIS o app Azure servizio e si desidera velocizzare la configurazione della distribuzione per riutilizzare o per la pubblicazione dei membri del team nello stesso servizio.
+- Si sta eseguendo la pubblicazione in IIS o app Azure servizio e si desidera velocizzare la configurazione della distribuzione per il riutilizzo o la pubblicazione dei membri del team nello stesso servizio.
 
 Per altre informazioni, vedere gli argomenti seguenti:
 

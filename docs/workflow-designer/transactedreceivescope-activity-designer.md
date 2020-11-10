@@ -1,5 +1,7 @@
 ---
 title: ActivityDesigner Progettazione flussi di lavoro-TransactedReceiveScope
+description: Informazioni su come usare TransactedReceiveScope designer per creare e configurare un'attività TransactedReceiveScope.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75fb1da392bce7dbd0cd7849d83b3b452521e0c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70117ab8b27a23dfb2836800c41ff0844fb8de1c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875930"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433778"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>ActivityDesigner TransactedReceiveScope
 
@@ -35,7 +37,7 @@ Accedere a **TransactedReceiveScope** Activity Designer nella categoria **messag
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.Activities.TransactedReceiveScope> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali <xref:System.Activities.Activity.DisplayName%2A> proprietà possono essere modificate nella griglia delle proprietà o nell'area di progettazione flussi di lavoro, ma le altre devono essere modificate nell'area di progettazione.
 
-|Nome proprietà|Obbligatoria|Utilizzo|
+|Nome proprietà|Obbligatoria|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo facoltativo dell'attività <xref:System.ServiceModel.Activities.TransactedReceiveScope>. Il valore predefinito è TransactedReceiveScope.<br /><br /> Sebbene il nome di <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatorio, se ne consiglia l'uso.|
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|Vero|Rilascia un' <xref:System.ServiceModel.Activities.Receive> attività nel blocco **Request** nell'area dell'ActivityDesigner.|

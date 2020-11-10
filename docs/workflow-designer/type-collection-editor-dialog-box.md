@@ -1,5 +1,7 @@
 ---
 title: Finestra di dialogo Editor della raccolta di tipi Progettazione flussi di lavoro
+description: Informazioni su come utilizzare la finestra di dialogo Editor raccolta di tipi per aggiungere tipi noti alle attività di trasmissione e ricezione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 023d049c5256abe6212dd65df78cd67151be94a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e58655f9baf91766fc9b8ff15afe708f1069a565
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593057"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433674"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Finestra di dialogo Editor raccolta di tipi
 
-La finestra di dialogo **Editor raccolta di tipi** viene utilizzata per aggiungere tipi noti alle attività di **trasmissione** e **ricezione** . Questa finestra di dialogo viene usata anche per aggiungere argomenti di tipo generico all'attività **InvokeMethod** . Se utilizzata per le attività **Send** e **Receive** per aggiungere tipi noti, nella finestra di dialogo Editor della **raccolta di tipi** è necessario che le aggiunte dei tipi siano univoche. Se viene aggiunto un tipo duplicato e viene eseguito il commit della modifica facendo clic su **OK**, viene restituito un messaggio di errore. Quando viene usato per l'attività **InvokeMethod** per aggiungere argomenti di tipo generico, la finestra di dialogo **Editor raccolta** di tipi consente l'aggiunta di tipi duplicati.
+La finestra di dialogo **Editor raccolta di tipi** viene utilizzata per aggiungere tipi noti alle attività di **trasmissione** e **ricezione** . Questa finestra di dialogo viene usata anche per aggiungere argomenti di tipo generico all'attività **InvokeMethod** . Se utilizzata per le attività **Send** e **Receive** per aggiungere tipi noti, nella finestra di dialogo Editor della **raccolta di tipi** è necessario che le aggiunte dei tipi siano univoche. Se viene aggiunto un tipo duplicato e viene eseguito il commit della modifica facendo clic su **OK** , viene restituito un messaggio di errore. Quando viene usato per l'attività **InvokeMethod** per aggiungere argomenti di tipo generico, la finestra di dialogo **Editor raccolta** di tipi consente l'aggiunta di tipi duplicati.
 
 Per ulteriori informazioni, vedere [tipi noti del contratto dati](/dotnet/framework/wcf/feature-details/data-contract-known-types).
 

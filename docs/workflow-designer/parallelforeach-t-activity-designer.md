@@ -1,5 +1,7 @@
 ---
 title: ActivityDesigner Progettazione flussi di lavoro ActivityDesigner ParallelForEach &lt; T &gt;
+description: Informazioni sul modo in cui l' <T> attività ActivityDesigner ParallelForEach enumera gli elementi di una raccolta ed esegue un'istruzione incorporata per ogni elemento della raccolta in parallelo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2d3d33b150bd9c360896f88eddf032837fe9c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57c8414637d767a57cf9021d907bfb6e1fe467ef
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876047"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435560"
 ---
 # <a name="parallelforeach-activity-designer"></a>Activity Designer ParallelForEach
 
 L'attività <xref:System.Activities.Statements.ParallelForEach%601> enumera gli elementi di una raccolta ed esegue in parallelo un'istruzione incorporata per ogni elemento della raccolta, ovvero in modo asincrono sullo stesso thread. Usare questa attività di controllo del flusso anziché l'attività <xref:System.Activities.Statements.Sequence> se si prevede che le relative attività figlio diventeranno inattive.
 
-L' <xref:System.Activities.Statements.ParallelForEach%601> attività dispone di una <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> proprietà che contiene un utente specificato Visual Basic espressione. L'attività <xref:System.Activities.Statements.ParallelForEach%601> valuta tale proprietà in seguito al completamento di ogni ramo. Se restituisce **true**, l' <xref:System.Activities.Statements.ParallelForEach%601> attività viene completata senza eseguire gli altri rami. Se <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> non restituisce **true**, l'attività viene completata al <xref:System.Activities.Statements.ParallelForEach%601> completamento di tutte le relative attività figlio.
+L' <xref:System.Activities.Statements.ParallelForEach%601> attività dispone di una <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> proprietà che contiene un utente specificato Visual Basic espressione. L'attività <xref:System.Activities.Statements.ParallelForEach%601> valuta tale proprietà in seguito al completamento di ogni ramo. Se restituisce **true** , l' <xref:System.Activities.Statements.ParallelForEach%601> attività viene completata senza eseguire gli altri rami. Se <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> non restituisce **true** , l'attività viene completata al <xref:System.Activities.Statements.ParallelForEach%601> completamento di tutte le relative attività figlio.
 
 ## <a name="the-parallelforeacht-activity"></a>Attività ActivityDesigner ParallelForEach<T \>
 
@@ -35,21 +37,21 @@ Il processo cambia se invece le attività incluse in <xref:System.Activities.Sta
 
 Accedere all' **ActivityDesigner \<T> ActivityDesigner ParallelForEach** nella categoria **flusso di controllo** della **casella degli strumenti**.
 
-È possibile trascinare l'ActivityDesigner **ActivityDesigner ParallelForEach \<T> ** dalla **casella degli strumenti** e rilasciarlo nell'area di progettazione flussi di lavoro, laddove gli ActivityDesigner vengono in genere posizionati, ad esempio all'interno di un ActivityDesigner **Sequence** . Una volta rilasciata la Progettazione flussi di lavoro, viene creata un' <xref:System.Activities.Statements.ParallelForEach%601> attività che, per impostazione predefinita, contiene un oggetto <xref:System.Activities.Activity.DisplayName%2A> di **ActivityDesigner ParallelForEach<Int32 \> .**
+È possibile trascinare l'ActivityDesigner **ActivityDesigner ParallelForEach \<T>** dalla **casella degli strumenti** e rilasciarlo nell'area di progettazione flussi di lavoro, laddove gli ActivityDesigner vengono in genere posizionati, ad esempio all'interno di un ActivityDesigner **Sequence** . Una volta rilasciata la Progettazione flussi di lavoro, viene creata un' <xref:System.Activities.Statements.ParallelForEach%601> attività che, per impostazione predefinita, contiene un oggetto <xref:System.Activities.Activity.DisplayName%2A> di **ActivityDesigner ParallelForEach<Int32 \> .**
 
 ### <a name="parallelforeacht-properties-in-the-workflow-designer"></a>Proprietà di ActivityDesigner ParallelForEach<T \> nell'progettazione flussi di lavoro
 
 Nella tabella seguente sono elencate le proprietà più utili dell'attività <xref:System.Activities.Statements.ParallelForEach%601> e ne viene descritta la modalità di utilizzo nella finestra di progettazione.
 
-|Nome proprietà|Obbligatoria|Utilizzo|
+|Nome proprietà|Obbligatoria|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo visualizzato nell'intestazione dell'ActivityDesigner. Il valore predefinito è **ActivityDesigner ParallelForEach \<Int32> **. Facoltativamente, è possibile modificare il valore nella griglia **Proprietà** o direttamente nell'intestazione Activity Designer.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|Falso|Attività da eseguire per ogni elemento della raccolta. Per aggiungere l' <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> attività, rilasciare un'attività dalla casella degli strumenti nella casella **corpo** dell'ActivityDesigner **ActivityDesigner ParallelForEach \<T> ** con il testo del suggerimento "drop Activity here".|
-|**TypeArgument**|Vero|Tipo degli elementi nella <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> raccolta specificata dal parametro generico *T*. Per impostazione predefinita, **TypeArgument** è impostato su **Int32**. Per modificare il tipo T nell'ActivityDesigner **activitydesigner parallelforeach<t \> ** , modificare il valore della casella combinata **TypeArgument** nella griglia delle proprietà.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Vero|Raccolta di elementi da scorrere. Per impostare <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> , digitare un'espressione Visual Basic nella casella **valori** dell'ActivityDesigner **foreach<T \> ** nella casella con il testo del suggerimento "immettere un'espressione VB" o nella casella **valori** nella finestra **Proprietà** .|
+|<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo visualizzato nell'intestazione dell'ActivityDesigner. Il valore predefinito è **ActivityDesigner ParallelForEach \<Int32>**. Facoltativamente, è possibile modificare il valore nella griglia **Proprietà** o direttamente nell'intestazione Activity Designer.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|Falso|Attività da eseguire per ogni elemento della raccolta. Per aggiungere l' <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> attività, rilasciare un'attività dalla casella degli strumenti nella casella **corpo** dell'ActivityDesigner **ActivityDesigner ParallelForEach \<T>** con il testo del suggerimento "drop Activity here".|
+|**TypeArgument**|Vero|Tipo degli elementi nella <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> raccolta specificata dal parametro generico *T*. Per impostazione predefinita, **TypeArgument** è impostato su **Int32**. Per modificare il tipo T nell'ActivityDesigner **activitydesigner parallelforeach<t \>** , modificare il valore della casella combinata **TypeArgument** nella griglia delle proprietà.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Vero|Raccolta di elementi da scorrere. Per impostare <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> , digitare un'espressione Visual Basic nella casella **valori** dell'ActivityDesigner **foreach<T \>** nella casella con il testo del suggerimento "immettere un'espressione VB" o nella casella **valori** nella finestra **Proprietà** .|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Valutato al termine di ogni iterazione. Se restituisce true, le iterazioni in sospeso pianificate vengono annullate. Se questa proprietà non è impostata, tutte le istruzioni pianificate vengono eseguite fino al completamento.|
 
-Per impostazione predefinita, l'iteratore del ciclo è denominato item. È possibile modificare il nome della variabile iteratore nella casella **foreach** in **ActivityDesigner ParallelForEach \<T> ** Activity Designer. L'iteratore del ciclo può essere usato nelle espressioni contenute in elementi figlio dell'attività <xref:System.Activities.Statements.ParallelForEach%601>.
+Per impostazione predefinita, l'iteratore del ciclo è denominato item. È possibile modificare il nome della variabile iteratore nella casella **foreach** in **ActivityDesigner ParallelForEach \<T>** Activity Designer. L'iteratore del ciclo può essere usato nelle espressioni contenute in elementi figlio dell'attività <xref:System.Activities.Statements.ParallelForEach%601>.
 
 ## <a name="see-also"></a>Vedere anche
 

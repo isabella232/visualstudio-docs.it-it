@@ -1,5 +1,7 @@
 ---
 title: ActivityDesigner Progettazione flussi di lavoro-Transition
+description: Informazioni su come usare l'ActivityDesigner Transition per configurare una transizione tra due Stati.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: c71f31f4582a60bcfc87e4906a1447e33ffa7bd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cedc9c7b6f402ad3f5f2c40e21c29e2a0d1ad2e6
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593083"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433726"
 ---
 # <a name="transition-activity-designer"></a>ActivityDesigner Transition
 
@@ -29,10 +31,10 @@ Un ActivityDesigner Transition consente di configurare una transizione tra due s
 
 Nella tabella seguente vengono elencate le proprietà di <xref:System.Activities.Statements.Transition> che possono essere impostate usando la finestra di progettazione flussi di lavoro e viene descritta la modalità di utilizzo nella finestra di progettazione.
 
-|Nome proprietà|Obbligatoria|Utilizzo|
+|Nome proprietà|Obbligatoria|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Statements.Transition.DisplayName%2A>|Falso|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.Transition>. Il valore predefinito è **T1**. Il valore può essere modificato nella griglia della proprietà, nell'intestazione della finestra di progettazione estesa di transizione e nell'intestazione della sezione di azione all'interno della finestra di progettazione espansa di transizione. <xref:System.Activities.Activity.DisplayName%2A> è usato per l'esplorazione tramite la barra di navigazione visualizzata nella parte superiore della Progettazione flussi di lavoro.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
-|<xref:System.Activities.Statements.Transition.Condition%2A>|Falso|Se presente, specifica un'espressione che deve restituire **true** prima che il controllo venga passato allo stato di destinazione. Tale condizione può essere modificata nella griglia delle proprietà e nella finestra di progettazione estesa di transizione. Più condizioni in una transizione condivisa vengono valutate nell'ordine in cui appaiono nella finestra di progettazione di transizione. **Nota:**  Si noti che se la <xref:System.Activities.Statements.Transition.Condition%2A> di una transizione restituisce **false** (o tutte le condizioni di una transizione del trigger condivisa restituiscono **false**), la transizione non verrà eseguita e tutti i trigger per tutte le transizioni dallo stato verranno ripianificati. In questa esercitazione, questa situazione non può verificarsi a causa della modalità con cui le condizioni vengono configurate (esistono azioni specifiche per verificare se il valore indicato è corretto o errato).|
+|<xref:System.Activities.Statements.Transition.Condition%2A>|Falso|Se presente, specifica un'espressione che deve restituire **true** prima che il controllo venga passato allo stato di destinazione. Tale condizione può essere modificata nella griglia delle proprietà e nella finestra di progettazione estesa di transizione. Più condizioni in una transizione condivisa vengono valutate nell'ordine in cui appaiono nella finestra di progettazione di transizione. **Nota:**  Si noti che se la <xref:System.Activities.Statements.Transition.Condition%2A> di una transizione restituisce **false** (o tutte le condizioni di una transizione del trigger condivisa restituiscono **false** ), la transizione non verrà eseguita e tutti i trigger per tutte le transizioni dallo stato verranno ripianificati. In questa esercitazione, questa situazione non può verificarsi a causa della modalità con cui le condizioni vengono configurate (esistono azioni specifiche per verificare se il valore indicato è corretto o errato).|
 |**Origine**|Vero|Indica lo stato da cui ha origine questa transizione. Facendo clic sul nome dello stato di origine si passa dalla visualizzazione Progettazione a una visualizzazione espansa di tale stato. Questo valore viene impostato quando la transizione viene creata e non può essere modificata.|
 |<xref:System.Activities.Statements.Transition.Trigger%2A>|Falso|Specifica l'attività il cui completamento avvia la transizione. Per impostare questa attività, trascinare un'attività dalla **casella degli strumenti** e rilasciarla nella sezione **trigger** della transizione.|
 |<xref:System.Activities.Statements.Transition.Action%2A>|Falso|Specifica l'attività eseguita quando l'attività del trigger è stata completata e <xref:System.Activities.Statements.Transition.Condition%2A> , se presente, restituisce **true**. Questa attività viene eseguita durante la transizione allo stato di destinazione, dopo l'esecuzione dell'attività di <xref:System.Activities.Statements.State.Exit%2A> per lo stato di origine, se presente. Quando la finestra di progettazione della transizione viene espansa, questo valore può essere impostato trascinando un'attività dalla **casella degli strumenti** e rilasciandola nella sezione **Action** della transizione. Possono essere presenti più azioni per una sola transizione. Le singole azioni possono essere espanse e contratte e possono essere ordinate facendo clic sulla freccia verso l'alto o verso il basso visualizzato sull'azione quando sono presenti più azioni in una transizione.|
@@ -40,7 +42,7 @@ Nella tabella seguente vengono elencate le proprietà di <xref:System.Activities
 
 ### <a name="creating-transitions"></a>Creazione transizioni
 
-Le transizioni vengono creati trascinando una riga da uno stato a un altro, o rilasciando uno stato sui triangoli visualizzati quando lo stato viene trascinato su un altro stato. Per creare una transizione tramite l'operazione di trascinamento, posizionare il mouse sul bordo dello stato di origine e trascinare una linea dallo stato di origine allo stato di destinazione. Per creare una transizione con il rilascio, trascinare lo stato di destinazione e posizionarlo sullo stato di origine, quindi rilasciarlo su uno dei quattro triangoli visualizzati intorno allo stato di origine. Lo stato di destinazione può essere un nuovo stato trascinato dalla **casella degli strumenti**o uno stato esistente trascinato dalla finestra di progettazione del flusso di lavoro.
+Le transizioni vengono creati trascinando una riga da uno stato a un altro, o rilasciando uno stato sui triangoli visualizzati quando lo stato viene trascinato su un altro stato. Per creare una transizione tramite l'operazione di trascinamento, posizionare il mouse sul bordo dello stato di origine e trascinare una linea dallo stato di origine allo stato di destinazione. Per creare una transizione con il rilascio, trascinare lo stato di destinazione e posizionarlo sullo stato di origine, quindi rilasciarlo su uno dei quattro triangoli visualizzati intorno allo stato di origine. Lo stato di destinazione può essere un nuovo stato trascinato dalla **casella degli strumenti** o uno stato esistente trascinato dalla finestra di progettazione del flusso di lavoro.
 
 > [!NOTE]
 > Un singolo stato in una macchina a stati può essere composto da un massimo di 76 transizioni create mediante la finestra di progettazione flussi di lavoro. Il limite alle transizioni per uno stato per i flussi di lavoro creati all'esterno della finestra di progettazione è stabilito solo dalle risorse di sistema.

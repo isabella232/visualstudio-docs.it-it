@@ -1,5 +1,6 @@
 ---
 title: Modificare il tipo restituito del metodo DataContext
+description: Informazioni su come modificare il tipo restituito di un metodo DataContext quando si rilascia una stored procedure o una funzione nell'Object Relational Designer (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,15 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: da1dc0437ccd4a7fad2a24b40542a58d8310bf17
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 20ff0e4764acf4f2f0f8dea77ed815a9aa430abe
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036665"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435052"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Procedura: Modificare il tipo restituito di un metodo DataContext (Object Relational Designer)
-Il tipo restituito di un <xref:System.Data.Linq.DataContext> metodo, creato in base a un stored procedure o a una funzione, varia a seconda della posizione in cui si rilascia la funzione o stored procedure in **Progettazione relazionale**o. Se si rilascia un elemento direttamente in una classe di entità esistente, viene creato un metodo <xref:System.Data.Linq.DataContext> con il tipo restituito della classe di entità (se lo schema dei dati restituiti dalla stored procedure o funzione corrisponde alla forma della classe di entità). Se si rilascia un elemento su un'area vuota della **finestra di progettazione di O/R**, <xref:System.Data.Linq.DataContext> viene creato un metodo che restituisce un tipo generato automaticamente. È possibile modificare il tipo restituito di un metodo <xref:System.Data.Linq.DataContext> dopo averlo aggiunto al riquadro dei metodi. Per controllare o modificare il tipo restituito di un metodo <xref:System.Data.Linq.DataContext>, selezionarlo e fare clic sulla proprietà **Return Type** nella finestra **Proprietà**.
+Il tipo restituito di un <xref:System.Data.Linq.DataContext> metodo, creato in base a un stored procedure o a una funzione, varia a seconda della posizione in cui si rilascia la funzione o stored procedure in **Progettazione relazionale** o. Se si rilascia un elemento direttamente in una classe di entità esistente, viene creato un metodo <xref:System.Data.Linq.DataContext> con il tipo restituito della classe di entità (se lo schema dei dati restituiti dalla stored procedure o funzione corrisponde alla forma della classe di entità). Se si rilascia un elemento su un'area vuota della **finestra di progettazione di O/R** , <xref:System.Data.Linq.DataContext> viene creato un metodo che restituisce un tipo generato automaticamente. È possibile modificare il tipo restituito di un metodo <xref:System.Data.Linq.DataContext> dopo averlo aggiunto al riquadro dei metodi. Per controllare o modificare il tipo restituito di un metodo <xref:System.Data.Linq.DataContext>, selezionarlo e fare clic sulla proprietà **Return Type** nella finestra **Proprietà**.
 
 > [!NOTE]
 > Non è possibile ripristinare la restituzione del tipo generato automaticamente da parte dei metodi <xref:System.Data.Linq.DataContext>, che presentano un tipo restituito impostato su una classe di entità, mediante la finestra **Proprietà**. Per ripristinare un <xref:System.Data.Linq.DataContext> metodo per la restituzione di un tipo generato automaticamente, è necessario trascinare nuovamente l'oggetto di database originale in **Progettazione relazionale** oggetti.
@@ -40,7 +41,7 @@ Il tipo restituito di un <xref:System.Data.Linq.DataContext> metodo, creato in b
 
 3. Salvare il file *.dbml*.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

@@ -1,5 +1,7 @@
 ---
 title: ActivityDesigner Progettazione flussi di lavoro-WriteLine
+description: Informazioni sull'attività WriteLine e su come usare l'ActivityDesigner WriteLine per creare e configurare un'attività WriteLine.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e3b4da69a2d9154f36e42d3b20657e204767872
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03aedaf522924266b0951ec189e96fb3f83c142c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593024"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433661"
 ---
 # <a name="writeline-activity-designer"></a>ActivityDesigner WriteLine
 
@@ -33,7 +35,7 @@ Accedere all'ActivityDesigner **WriteLine** nella categoria **primitive** della 
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.WriteLine> e ne viene descritta la modalità di uso nella finestra di progettazione. Queste proprietà possono essere modificate nella griglia delle proprietà e alcune possono essere modificate in Progettazione flussi di lavoro area.
 
-|Nome proprietà|Obbligatoria|Utilizzo|
+|Nome proprietà|Obbligatoria|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo dell'attività <xref:System.Activities.Statements.WriteLine>. Il valore predefinito è WriteLine. Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
 |<xref:System.Activities.Statements.WriteLine.Text%2A>|Falso|Testo da scrivere. Per impostare la proprietà, digitare un'espressione Visual Basic nella casella di **testo** dell'ActivityDesigner **WriteLine** o nella griglia delle proprietà.|
@@ -41,7 +43,7 @@ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.St
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Primitive](../workflow-designer/primitives-activity-designers.md)
+- [Primitives](../workflow-designer/primitives-activity-designers.md)
 - [Assign](../workflow-designer/assign-activity-designer.md)
 - [Ritardo](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)
