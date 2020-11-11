@@ -1,5 +1,7 @@
 ---
 title: 'Progettazione flussi di lavoro-procedura: aggiungere commenti a un flusso di lavoro'
+description: Informazioni su come .NET Framework 4,5 consente allo sviluppatore di aggiungere annotazioni a determinati tipi di elementi nella finestra di progettazione, ad esempio, attività, stato e elementi di transizione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 77fb43671a45d5d53d2fe23fa3e4e7a9a98c4373
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0fe5b766c0c5545a1cc3839e29d71e3f3b7a1f39
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815500"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437957"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Procedura: aggiungere commenti a un flusso di lavoro in Progettazione del flusso di lavoro
 
@@ -39,7 +41,7 @@ Per semplificare la creazione di flussi di lavoro più grandi e più complessi, 
 
 ## <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Aggiunta di un'annotazione a un'attività nella finestra di progettazione
 
-1. In Progettazione flussi di lavoro, fare clic con il pulsante destro del mouse su un elemento in Progettazione flussi di lavoro **e selezionare Annotazioni**, **Aggiungi annotazione**.
+1. In Progettazione flussi di lavoro, fare clic con il pulsante destro del mouse su un elemento in Progettazione flussi di lavoro **e selezionare Annotazioni** , **Aggiungi annotazione**.
 
 1. Aggiungere il testo dell'annotazione nello spazio disponibile.
 
@@ -59,21 +61,21 @@ Per semplificare la creazione di flussi di lavoro più grandi e più complessi, 
 
 ## <a name="showing-or-hiding-all-annotations"></a>Mostra o nascondi tutte le annotazioni
 
-1. Fare clic con il pulsante destro del mouse su un'attività che dispone di annotazione. Selezionare le **annotazioni**, **visualizzare tutte le annotazioni**.
+1. Fare clic con il pulsante destro del mouse su un'attività che dispone di annotazione. Selezionare le **annotazioni** , **visualizzare tutte le annotazioni**.
 
    Tutte le annotazioni vengono visualizzate nelle finestre di progettazione dell'attività.
 
-1. Per visualizzare tutte le annotazioni all'esterno delle finestre di progettazione dell'attività, fare clic con il pulsante destro del mouse sull'attività e selezionare **annotazioni**, **Nascondi tutte le**annotazioni
+1. Per visualizzare tutte le annotazioni all'esterno delle finestre di progettazione dell'attività, fare clic con il pulsante destro del mouse sull'attività e selezionare **annotazioni** , **Nascondi tutte le** annotazioni
 
 ## <a name="editing-or-deleting-an-annotation-for-an-activity"></a>Modifica o eliminazione di un'annotazione per un'attività
 
 1. Fare clic con il pulsante destro del mouse su un'attività che dispone di un'annotazione.
 
-1. Selezionare **le annotazioni**, **Modifica annotazione** o **Elimina annotazione**.
+1. Selezionare **le annotazioni** , **Modifica annotazione** o **Elimina annotazione**.
 
    L'annotazione viene aperta per la modifica o l'eliminazione.
 
-1. Per eliminare tutte le annotazioni contemporaneamente, fare clic con il pulsante destro del mouse su Progettazione flussi di lavoro e selezionare **annotazione**, **eliminare tutte le annotazioni**.
+1. Per eliminare tutte le annotazioni contemporaneamente, fare clic con il pulsante destro del mouse su Progettazione flussi di lavoro e selezionare **annotazione** , **eliminare tutte le annotazioni**.
 
 ## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>Aggiunta, modifica ed eliminazione di un'annotazione per una variabile o un argomento
 

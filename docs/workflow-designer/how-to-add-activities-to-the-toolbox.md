@@ -1,5 +1,7 @@
 ---
 title: 'Progettazione flussi di lavoro-procedura: aggiungere attività alla casella degli strumenti'
+description: Aggiungere attività alla casella degli strumenti nella soluzione aggiungendole all'interno del progetto corrente o facendo riferimento a esse da un progetto diverso.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ebe3f4c3daf5ee3a0f64a0197967b6da62a467b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2330392ace27a913870e7c7448976d1cae46958
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815825"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437944"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Procedura: aggiungere attività nella Casella degli strumenti
 
@@ -46,7 +48,7 @@ Le attività possono essere aggiunte alla **casella degli strumenti** nella solu
 
 1. Aprire una soluzione per flussi di lavoro.
 
-2. **Scegliere Scegli elementi della casella degli**strumenti dal menu **strumenti** .
+2. **Scegliere Scegli elementi della casella degli** strumenti dal menu **strumenti** .
 
 3. Nella finestra di dialogo **Scegli elementi della casella degli strumenti** selezionare la scheda **componenti System. Activities** , quindi fare clic su **Sfoglia** per passare all'assembly che contiene l'attività personalizzata che si desidera aggiungere.
 
