@@ -3,15 +3,15 @@ title: Inserimento di un pacchetto NuGet nel progetto
 description: Questo documento illustra come includere un pacchetto NuGet in un progetto usando Visual Studio per Mac. Illustra in modo dettagliato come trovare e scaricare un pacchetto e offre un'introduzione alle funzionalità di integrazione dell'IDE.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 09/04/2020
+ms.date: 11/09/2020
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: e361a1a0fba05a6fdabc66b03008049dfa34784f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 46ceb99617c6a0e9ba457fdb769c1162090d1d31
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349318"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493491"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Installare e gestire i pacchetti NuGet in Visual Studio per Mac
 
@@ -23,7 +23,7 @@ Per un'introduzione all'uso di NuGet in Visual Studio per Mac, vedere [Guida int
 
 ## <a name="find-and-install-a-package"></a>Trovare e installare un pacchetto
 
-1. Con un progetto aperto in Visual Studio per Mac, fare clic con il pulsante destro del mouse sulla cartella **dipendenze** (cartella **pacchetti** se si usa un progetto Novell) nel **riquadro della soluzione** e selezionare **Gestisci pacchetti NuGet...**.
+1. Con un progetto aperto in Visual Studio per Mac, fare clic con il pulsante destro del mouse sulla cartella **dipendenze** (cartella **pacchetti** se si usa un progetto Novell) nella **finestra della soluzione** e selezionare **Gestisci pacchetti NuGet...**.
 
     ![Azione di contesto di aggiunta di un nuovo pacchetto NuGet](media/nuget-walkthrough-packages-menu.png)
 
@@ -85,7 +85,7 @@ Infine, nella scheda **aggiornamenti** della finestra di dialogo selezionare il 
 ![Finestra di dialogo Gestisci pacchetti NuGet aperta nella scheda installato con un pacchetto selezionato e l'elenco a discesa nuova versione.](media/nuget-walkthrough-packages-nuget-dialog-update-installed-package.png)
 
 ### <a name="locating-outdated-packages"></a>Individuazione di pacchetti obsoleti
-Dal riquadro della soluzione è possibile visualizzare la versione di un pacchetto attualmente installata e fare clic con il pulsante destro del mouse sul pacchetto da aggiornare.
+Dalla finestra della soluzione è possibile visualizzare la versione di un pacchetto attualmente installata e fare clic con il pulsante destro del mouse sul pacchetto da aggiornare.
 
 ![Menu pacchetti con le opzioni per aggiornare, rimuovere, aggiornare](media/nuget-walkthrough-PackageMenu.png)
 

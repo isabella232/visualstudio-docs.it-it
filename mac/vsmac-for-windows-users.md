@@ -1,20 +1,20 @@
 ---
 title: Visual Studio per Mac per gli utenti di Windows
-description: Introduzione delle funzionalità di accessibilità in Visual Studio per Mac e del modo in cui possono essere abilitate.
+description: Introduzione a Visual Studio per Mac per gli sviluppatori che hanno familiarità con l'uso di Visual Studio nel sistema operativo Windows.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/25/2019
+ms.date: 11/09/2020
 ms.assetid: 61CB6883-08CE-470F-8599-6F7570DB756E
-ms.openlocfilehash: b414026ba7297dd6c93fecdf56d9a9c58c99f294
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 880811c675aac34a18a65c6eccb8ee10f3347d4c
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74984263"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493374"
 ---
 # <a name="visual-studio-for-mac-for-windows-users"></a>Visual Studio per Mac per gli utenti di Windows
 
-La migrazione da un sistema operativo a un altro può risultare complessa. Le applicazioni multipiattaforma hanno spesso differenze minime, dall'interfaccia utente alla categorizzazione delle voci di menu. Gli utenti avranno anche la curva di apprendimento di acclimatazione per l'interfaccia utente del nuovo sistema operativo. In questo articolo verranno illustrate le differenze più comuni tra Visual Studio per Mac e Visual Studio per Windows. Si apprenderanno anche alcune convenzioni diverse tra macOS e Windows.
+La migrazione da un sistema operativo a un altro può risultare complessa. Le applicazioni multipiattaforma hanno spesso differenze minime, dall'interfaccia utente alla categorizzazione delle voci di menu. In questo articolo verranno illustrate le differenze più comuni tra Visual Studio per Mac e Visual Studio per Windows. Si apprenderanno anche alcune convenzioni diverse tra macOS e Windows.
 
 ## <a name="keyboard-shortcuts"></a>Tasti di scelta rapida
 
@@ -49,10 +49,9 @@ I menu in macOS sono organizzati in modo diverso rispetto ai menu di Windows. Vi
 |-----------------------|---------------------------------------------------------------------|-------------------------------------|
 |Preferenze (opzioni)  |Strumenti > opzioni...                                                   |Preferenze di Visual Studio >...       |
 |Estensioni             |Estensioni > gestire le estensioni                                       |Estensioni di Visual Studio >...        |
-|Layout                |Finestra > applicare il layout della finestra > [selezionare il layout]                       |Visualizza > [selezionare il layout]               |
+|Layout                |Finestra > applicare il layout della finestra > [selezionare il layout]                       |Visualizzazione del layout > > [selezionare il layout]               |
 |Aggiornamenti                |Guida > verificare la disponibilità di aggiornamenti                                             |Verifica della disponibilità di aggiornamenti in Visual Studio >... |
 |Gestione pacchetti NuGet  |Strumenti > gestione pacchetti NuGet > gestire pacchetti NuGet o soluzioni... |Progetto > Gestisci pacchetti NuGet...   |
-|Rilievi/finestre         |Visualizza > [Seleziona riquadro/finestra]                                         |Visualizza > rilievi > [Seleziona riquadro/finestra]  |
 |Trova strumenti             |Modifica > trova e Sostituisci > [Seleziona strumento]                              |Cerca > [Seleziona strumento]               |
 |Informazioni su Visual Studio    |> della guida sulle Microsoft Visual Studio                                 |Visual Studio > su Visual Studio  
 

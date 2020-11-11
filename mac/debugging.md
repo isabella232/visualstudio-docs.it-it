@@ -7,12 +7,12 @@ ms.date: 5/13/2020
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.topic: overview
-ms.openlocfilehash: 09a761a8269fa40c3fab49a34b3e43a7f0ec63cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04fae5874a4fefcb51bdef8b00c8cb3b7171057e
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939081"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493257"
 ---
 # <a name="debugging-with-visual-studio-for-mac"></a>Debug con Visual Studio per Mac
 
@@ -40,7 +40,7 @@ Per impostare un punto di interruzione nell'IDE, fare clic sull'area del margine
 
 ![Impostazione di un punto di interruzione nel margine](media/debugging-image0.png)
 
-È possibile visualizzare tutti i punti di interruzione impostati nel codice passando al riquadro punti di  **interruzione**:
+È possibile visualizzare tutti i punti di interruzione impostati nel codice passando alla finestra punti di  **interruzione** :
 
 ![Elenco dei punti di interruzione](media/debugging-image0a.png)
 
@@ -67,9 +67,9 @@ A questo punto, è possibile usare strumenti di debug, come quello usato per esa
 
  ![Menu di scelta rapida Punto di interruzione](media/debugging-image4.png)
 
-* Per aggiungere una condizione a un punto di interruzione, fare clic con il pulsante destro del mouse sul punto di interruzione e scegliere **Proprietà punto di interruzione** oppure selezionare il pulsante Modifica punto di interruzione, mostrato di seguito, nel **riquadro Punti di interruzione**:
+* Per aggiungere una condizione a un punto di interruzione esistente, fare clic con il pulsante destro del mouse sul punto di interruzione e scegliere  **Proprietà** punto di interruzione oppure, nella finestra punti di  **interruzione** , selezionare il pulsante Modifica punto di interruzione illustrato di seguito:
 
- ![Modifica del punto di interruzione esistente nel riquadro Punti di interruzione](media/debugging-image5.png)
+ ![Modifica punto di interruzione esistente nella finestra punti di interruzione](media/debugging-image5.png)
 
 È quindi possibile immettere la condizione in base alla quale deve essere aggiunto il punto di interruzione:
 
@@ -83,7 +83,7 @@ Quando viene raggiunto un punto di interruzione, lo strumento di debug permette 
 
 Ecco i quattro pulsanti:
 
-* **Esegui**: avvia l'esecuzione del codice, fino al punto di interruzione successivo.
+* **Esegui** : avvia l'esecuzione del codice, fino al punto di interruzione successivo.
 * Esegui **istruzione** /routine: verrà eseguita la riga di codice successiva. Se la riga successiva è una chiamata di funzione, Esegui istruzione/routine eseguirà la funzione e si arresterà alla successiva riga di codice *dopo* la funzione.
 * Esegui **istruzione** : verrà eseguita anche la riga di codice successiva. Se la riga successiva è una chiamata di funzione, il pulsante si ferma alla prima riga della funzione, permettendo di continuare a eseguire il debug della funzione riga per riga. Se la riga successiva non è una funzione, il pulsante si comporta come il pulsante Esegui istruzione/routine.
 * Esci da **istruzione** /output: verrà restituito alla riga in cui è stata chiamata la funzione corrente.
@@ -103,7 +103,7 @@ I prodotti Xamarin vengono forniti con il codice sorgente per le librerie di cla
 
 Poiché questa funzionalità usa più memoria durante il debug, è disattivata per impostazione predefinita.
 
-Per abilitare questa funzionalità, passare a **Visual Studio per Mac > preferenze > debugger** e verificare che sia **selezionata**l'opzione "**Esegui codice esterno**", come illustrato di seguito:
+Per abilitare questa funzionalità, passare a **Visual Studio per Mac > preferenze > debugger** e verificare che sia **selezionata** l'opzione " **Esegui codice esterno** ", come illustrato di seguito:
 
 ![Opzione istruzione codice esterno](media/debugging-image8.png)
 

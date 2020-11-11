@@ -3,19 +3,19 @@ title: Aggiunta e rimozione di elementi di progetto
 description: Questo documento descrive come aggiungere e rimuovere elementi di progetto in Visual Studio per Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 11/06/2020
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
 ms.topic: how-to
-ms.openlocfilehash: 14f1b08464f1bc0f9e1db8a4e7ddbad23a84573e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6df6fbf9d36f06c4cdeb1908b50173e2ffee136a
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938497"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492945"
 ---
 # <a name="adding-and-removing-project-items"></a>Aggiunta e rimozione di elementi di progetto
 
-Per aggiungere nuovi elementi al progetto, è possibile fare clic con il pulsante destro del mouse sul nodo del progetto nel **riquadro Soluzione** e scegliere **Aggiungi > Nuovo file**:
+È possibile aggiungere nuovi elementi di progetto al progetto facendo clic con il pulsante destro del mouse sul nodo del progetto nella **finestra della soluzione** e scegliendo **Aggiungi > nuovo file** :
 
 ![Aggiungere un nuovo elemento di progetto](media/add-and-remove-project-items-image1.png)
 
@@ -37,8 +37,8 @@ Verrà visualizzata la finestra di dialogo di eliminazione dell'elemento. Selezi
 
 ![Finestra di dialogo di eliminazione dell'elemento](media/add-and-remove-project-items-image4.png)
 
-* **Elimina**: rimuove l'elemento dal progetto e dal disco.
-* **Rimuovi dal progetto**: rimuove l'elemento dal progetto, ma non dal disco
+* **Elimina** : rimuove l'elemento dal progetto e dal disco.
+* **Rimuovi dal progetto** : rimuove l'elemento dal progetto, ma non dal disco
 
 ## <a name="see-also"></a>Vedere anche
 

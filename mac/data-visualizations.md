@@ -3,37 +3,37 @@ title: Debug - Visualizzazioni dati
 description: Il debug è una parte comune e necessaria della programmazione. Visual Studio per Mac contiene un intero gruppo di funzionalità per semplificare il debug. Questo articolo presenta le diverse visualizzazioni dati che è possibile usare per esaminare gli oggetti nel debugger.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 838762435268ea06c09392475f294dbb22c3038d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67691738"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493244"
 ---
 # <a name="data-visualizations"></a>Visualizzazioni di dati
 
 Visual Studio per Mac include il supporto dell'interfaccia utente per il debugger, consentendo visualizzazioni dei valori di una variabile, un campo o una proprietà durante il debug. Questi visualizzatori dei dati mostrano una versione estesa dei dati e permettono agli sviluppatori di esaminare strutture note, ad esempio visualizzando il colore di uno struct di colore.
 
-I visualizzatori nel riquadro **Locale** per il debug possono essere avviati facendo clic sull'icona di anteprima visualizzata a destra del valore, quando si posiziona il puntatore del mouse sulla riga:
+È possibile visualizzare i visualizzatori nella finestra  **variabili locali** di debug facendo clic sull'icona di anteprima visualizzata a destra del valore quando l'utente passa sulla riga:
 
-![Riquadro Locale](media/data-visualizations-image9.png)
+![finestra Variabili locali](media/data-visualizations-image9.png)
 
 L'elenco seguente presenta molte delle nuove visualizzazioni per il debug in Visual Studio per Mac.
 
 ## <a name="point"></a>Point
-Un oggetto Point/PointF o CGPoint in iOS e Mac viene visualizzato come tupla che mostra i valori X e Y nel riquadro del debug:
+Un punto/PointF, o CGPoint in iOS e Mac, eseguirà il rendering come una tupla che mostra i valori X e Y nelle finestre di debug:
 
 ![Visualizzazione dei punti](media/data-visualizations-image10.png)
 
-## <a name="size"></a>Dimensioni
+## <a name="size"></a>Dimensione
 Un oggetto Size/SizeF CGSize in iOS e Mac viene visualizzato come rettangolo. L'oggetto viene disegnato in modo da ridimensionarsi fino a 250 px e da questo momento in poi il rettangolo viene ridimensionato in base al valore massimo di 250px:
 
 [Visualizzazione delle dimensioni](media/data-visualizations-image11.png)
 
-## <a name="rectangle"></a>Rectangle
+## <a name="rectangle"></a>Rettangolo
 Un oggetto Rectangle/RectangleF o CGRect in iOS e Mac mostra le dimensioni e l'origine. Come per gli oggetti Size, l'oggetto viene disegnato in modo da ridimensionarsi, fino a 250 px:
 
 ![Visualizzazione dei rettangoli](media/data-visualizations-image12.png)
@@ -43,7 +43,7 @@ Le coordinate vengono tracciate su una mappa, aggiungendo la posizione al centro
 
 [Visualizzazione delle coordinate](media/data-visualizations-image13.png)
 
-## <a name="color"></a>Color
+## <a name="color"></a>Colore
 Visualizza le proprietà UIColor, CGColor e Color, indicando l'anteprima del colore, i componenti RGBA, i valori di tonalità-luminosità-saturazione e il valore esadecimale del colore:
 
 ![Visualizzazione dei colori](media/data-visualizations-image14.png)
@@ -88,9 +88,9 @@ Di seguito sono elencati altri tipi che hanno visualizzatori incorporati propri:
 
 ![Altre visualizzazioni](media/data-visualizations-image23.png)
 
-* **Primitive**
+* **Primitives**
   * Visualizza il valore non elaborato del tipo primitivo.
-* **Enumerazione**
+* **Enum**
   * Visualizza il valore del campo senza il qualificatore di tipo enum.
 * **Tupla**
   * Usa il formato (,) per la visualizzazione.

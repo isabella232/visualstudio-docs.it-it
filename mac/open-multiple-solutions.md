@@ -3,16 +3,16 @@ title: 'Procedura: Aprire più soluzioni'
 description: Informazioni su come aprire più soluzioni in Visual Studio per Mac e su come aprire più istanze dell'applicazione.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 04/02/2019
+ms.date: 11/09/2020
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: d90a2a92e2902633e5667e71c5692faa8fa161e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e54f002141379d93a40df69ea070d5a64eba2f7d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950053"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493439"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Aprire più soluzioni o istanze di Visual Studio per Mac
 
@@ -32,15 +32,15 @@ Per aprire una seconda soluzione insieme alla prima, procedere come segue:
 
 1. Con la prima soluzione già aperta, selezionare **file**  >  **Apri**.
 2. Sfogliare il file system per individuare la soluzione esistente.
-3. Selezionare il file con estensione **sln** e quindi **Opzioni**:
+3. Selezionare il file con estensione **sln** e quindi **Opzioni** :
 
     ![Screenshot di Visual Studio per Mac, con il file con estensione sln e il comando Opzioni evidenziati](media/open-multiple-solutions-image3.png)
 
-4. Deselezionare la casella **Chiudi l'area di lavoro corrente**:
+4. Deselezionare la casella **Chiudi l'area di lavoro corrente** :
 
     ![Screenshot della finestra di dialogo Opzioni con la casella Chiudi l'area di lavoro corrente deselezionata](media/open-multiple-solutions-image1.png)
 
-5. Selezionare **Apri** per aprire la seconda soluzione nel riquadro della soluzione.
+5. Selezionare **Apri** per aprire la seconda soluzione nella finestra della soluzione.
 
 In alternativa, se la soluzione è stata aperta di recente, è possibile usare la procedura seguente:
 
@@ -48,7 +48,7 @@ In alternativa, se la soluzione è stata aperta di recente, è possibile usare l
 
     ![Screenshot del menu Soluzioni recenti](media/open-multiple-solutions-image2.png)
 
-1. Tenere premuto **Ctrl** e selezionare la soluzione. Questa combinazione consente di aprire la seconda soluzione nel riquadro della soluzione.
+1. Tenere premuto **Ctrl** e selezionare la soluzione. Questa combinazione apre la seconda soluzione nella finestra della soluzione.
 
 ## <a name="related-video"></a>Video correlato
 

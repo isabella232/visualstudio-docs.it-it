@@ -6,12 +6,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 07/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: b883979921b3fa1493188a8d0fe75a1c493d5d97
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f2c5154e2f35c57b46817c36ea669c6a9d0f5797
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583996"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493543"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Creare un'app multi-contenitore con Docker Compose
 
@@ -27,8 +27,8 @@ In questa esercitazione si imparerà a gestire più di un contenitore e consenti
 1. Creare una nuova soluzione selezionando **File > Nuova soluzione**.
 1. In **app Web e Console >** scegliere il modello **applicazione Web** : ![ creare una nuova applicazione ASP.NET](media/docker-quickstart-1.png)
 1. Selezionare il framework di destinazione. In questo esempio verrà usato .NET Core 3,1: ![ impostare il Framework di destinazione](media/docker-quickstart-2.png)
-1. Immettere i dettagli del progetto, inclusi il nome del progetto (in questo esempio _DockerDemoFrontEnd_) e il nome della soluzione (_DockerDemo_). Il progetto creato contiene tutte le informazioni di base necessarie per compilare ed eseguire un sito Web ASP.NET Core.
-1. Nel riquadro della soluzione fare clic con il pulsante destro del mouse sul progetto DockerDemoFrontEnd e scegliere **aggiungi > aggiungere supporto Docker**: ![ Aggiungi supporto Docker](media/docker-quickstart-3.png)
+1. Immettere i dettagli del progetto, inclusi il nome del progetto (in questo esempio _DockerDemoFrontEnd_ ) e il nome della soluzione ( _DockerDemo_ ). Il progetto creato contiene tutte le informazioni di base necessarie per compilare ed eseguire un sito Web ASP.NET Core.
+1. Nella finestra della soluzione fare clic con il pulsante destro del mouse sul progetto DockerDemoFrontEnd e scegliere **aggiungi > Aggiungi supporto Docker** : ![ Aggiungi supporto Docker](media/docker-quickstart-3.png)
 
 Visual Studio per Mac aggiungerà automaticamente alla soluzione un nuovo progetto denominato **docker-compose** e un **Dockerfile** al progetto esistente.
 
@@ -39,10 +39,10 @@ Si creerà ora un secondo progetto che svolgerà la funzione di API back-end. Il
 1. Aggiungere un nuovo progetto alla soluzione esistente facendo clic con il pulsante destro del mouse sulla soluzione e scegliendo **Aggiungi > Aggiungi nuovo progetto**.
 1. In **app Web e Console >** scegliere il modello **API** .
 1. Selezionare il framework di destinazione. In questo esempio verrà usato .NET Core 3,1.
-1. Immettere i dettagli del progetto, ad esempio il nome del progetto (_MyWebAPI_ in questo esempio).
-1. Al termine della creazione, passare al riquadro della soluzione e fare clic con il pulsante destro del mouse sul progetto MyWebAPI e selezionare **aggiungi > aggiungere supporto Docker**.
+1. Immettere i dettagli del progetto, ad esempio il nome del progetto ( _MyWebAPI_ in questo esempio).
+1. Una volta creato, passare alla finestra della soluzione e fare clic con il pulsante destro del mouse sul progetto MyWebAPI e scegliere **aggiungi > Aggiungi supporto Docker**.
 
-Il file **docker-compose.yml** del progetto **docker-compose** verrà automaticamente aggiornato in modo da includere il progetto API oltre al progetto App Web esistente. Quando si compila e si esegue il progetto **docker-compose**, ognuno di questi progetti verrà distribuito in un contenitore Docker separato.
+Il file **docker-compose.yml** del progetto **docker-compose** verrà automaticamente aggiornato in modo da includere il progetto API oltre al progetto App Web esistente. Quando si compila e si esegue il progetto **docker-compose** , ognuno di questi progetti verrà distribuito in un contenitore Docker separato.
 
 ```yaml
 version: '3.4'
@@ -102,7 +102,7 @@ Nella soluzione sono ora presenti due progetti ASP.NET, entrambi configurati con
       </div>
       ```
   
-1. Nei progetti front-end e API Web, impostare come commento la chiamata a [Microsoft. AspNetCore. Builder. HttpsPolicyBuilderExtensions. UseHttpsRedirection](/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) nel `Configure` metodo in *Startup.cs*, perché questo codice di esempio USA http, non HTTPS, per chiamare l'API Web.
+1. Nei progetti front-end e API Web, impostare come commento la chiamata a [Microsoft. AspNetCore. Builder. HttpsPolicyBuilderExtensions. UseHttpsRedirection](/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) nel `Configure` metodo in *Startup.cs* , perché questo codice di esempio USA http, non HTTPS, per chiamare l'API Web.
 
       ```csharp
                   //app.UseHttpsRedirection();

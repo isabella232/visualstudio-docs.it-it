@@ -3,15 +3,15 @@ title: Uso di Git
 description: Uso di Git in Visual Studio per Mac.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 767c08505877391d71ca085097a0464d516f4f24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 148a72fb13ff34e3fa15f0c56e145a70fa16608d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70108020"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493231"
 ---
 # <a name="working-with-git"></a>Uso di Git
 
@@ -45,17 +45,17 @@ Nella parte inferiore della finestra sono visualizzate cinque schede, come illus
 
 Queste schede consentono le azioni seguenti:
 
-* **Origine**: visualizza il file del codice sorgente.
-* **Modifiche**: visualizza le modifiche del codice tra il file locale e il file di base. È anche possibile confrontare diverse versioni del file da hash diversi:
+* **Origine** : visualizza il file del codice sorgente.
+* **Modifiche** : visualizza le modifiche del codice tra il file locale e il file di base. È anche possibile confrontare diverse versioni del file da hash diversi:
 
     ![Scheda Modifiche](media/version-control-gitChange.png)
 
-* **Segnala errore**: visualizza il nome dell'utente associato a ogni sezione del codice.
-* **Log**: visualizza tutti i commit, le ore, le date, i messaggi e gli utenti responsabili del file:
+* **Segnala errore** : visualizza il nome dell'utente associato a ogni sezione del codice.
+* **Log** : visualizza tutti i commit, le ore, le date, i messaggi e gli utenti responsabili del file:
 
     ![Scheda Log](media/version-control-gitLog.png)
 
-* **Unisci**: può essere usata in caso di un conflitto di unione quando si esegue il commit del lavoro. Mostra una rappresentazione visiva delle modifiche apportate dall'utente e dall'altro sviluppatore, per consentire di combinare correttamente entrambe le sezioni del codice.
+* **Unisci** : può essere usata in caso di un conflitto di unione quando si esegue il commit del lavoro. Mostra una rappresentazione visiva delle modifiche apportate dall'utente e dall'altro sviluppatore, per consentire di combinare correttamente entrambe le sezioni del codice.
 
 ## <a name="switching-branches"></a>Cambio di rami
 
@@ -65,7 +65,7 @@ Per impostazione predefinita, il primo ramo creato in un repository è denominat
 
 Gli utenti possono creare tutti i rami che desiderano per ogni repository, ma è consigliabile eliminare i rami quando si finisce di usarli per mantenere organizzato il repository.
 
-Per visualizzare i rami in Visual Studio per Mac, spostarsi su **Controllo della versione > Gestisci rami ed origini remote...**:
+Per visualizzare i rami in Visual Studio per Mac, spostarsi su **Controllo della versione > Gestisci rami ed origini remote...** :
 
 ![Visualizzazione dei rami](media/version-control-gitBranch2.png)
 
@@ -77,21 +77,21 @@ Per creare un nuovo ramo, selezionare il pulsante **Nuovo** nella finestra di di
 
 È anche possibile impostare un ramo remoto per il proprio ramo di _verifica_. Per altre informazioni sui rami di verifica, vedere la [documentazione su Git](https://git-scm.com/book/en/v2/Git-Branching-Remote-Branches#Tracking-Branches).
 
-Vedere il ramo corrente nel riquadro della soluzione, accanto al nome del progetto:
+Vedere Current Branch nella finestra della soluzione accanto al nome del progetto:
 
- ![Ramo corrente visualizzato nel riquadro soluzione](media/version-control-gitBranchName.png)
+ ![Current Branch visualizzato nella finestra della soluzione](media/version-control-gitBranchName.png)
 
 ## <a name="reviewing-and-committing"></a>Revisione e commit
 
 Per rivedere le modifiche nei file, usare le schede Modifiche, Segnala errore, Log e Unisci in ogni documento, come illustrato precedentemente in questo argomento.
 
-Rivedere tutte le modifiche del progetto spostandosi sulla voce di menu **Controllo della versione > Review Solution and Commit (Rivedi soluzione ed esegui commit)**:
+Rivedere tutte le modifiche del progetto spostandosi sulla voce di menu **Controllo della versione > Review Solution and Commit (Rivedi soluzione ed esegui commit)** :
 
 ![Visualizzazione di revisione del codice](media/version-control-gitReviewCommit.png)
 
 Ciò consente di visualizzare tutte le modifiche in ogni file di un progetto con l'opzione di annullarle, creare una patch o eseguire il commit.
 
-Per eseguire il commit di un file nel repository remoto, premere **commit**, immettere un messaggio di commit e confermare con il pulsante commit:
+Per eseguire il commit di un file nel repository remoto, premere **commit** , immettere un messaggio di commit e confermare con il pulsante commit:
 
 ![Commit di un file](media/version-control-gitCommit.png)
 

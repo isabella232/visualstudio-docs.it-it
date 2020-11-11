@@ -1,21 +1,21 @@
 ---
 title: Introduzione ad ASP.NET Core
 description: In questo articolo viene descritto come iniziare a usare ASP.NET in Visual Studio per Mac, incluse le procedure di installazione e creazione di un nuovo progetto.
-author: sayedihashimi
-ms.author: sayedha
-ms.date: 04/02/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/06/2020
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
 no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: 7f8795b798b492370a08e55171c5627485c7869a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a2f45069967df412f9245f8044c53ef425a00fdf
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584061"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493361"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introduzione ad ASP.NET Core
 
@@ -23,7 +23,7 @@ ms.locfileid: "91584061"
 
 ## <a name="installing-net-core"></a>Installazione di .NET Core
 
-.NET Core 3,1 viene installato automaticamente quando si installa Visual Studio per Mac. Per altre informazioni sulle versioni di .NET Core supportate in Visual Studio per Mac vedere [supporto di .NET Core](./net-core-support.md).
+.NET Core 3,1 viene installato automaticamente quando si installa Visual Studio per Mac. Per altre informazioni sulle versioni di .NET Core supportate in Visual Studio per Mac, vedere [supporto di .NET Core](./net-core-support.md).
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>Creazione di un'app ASP.NET Core in Visual Studio per Mac
 
@@ -44,13 +44,13 @@ Alcuni progetti offrono un modello predefinito utilizzabile per iniziare a crear
 
 ![Opzioni di progetto ASP.NET](media/asp-net-core-2019-new-asp-core.png)
 
-Selezionare **Progetto ASP.NET Core vuoto** e premere **Avanti**. Assegnare un nome al progetto e premere **Crea**. Viene creata una nuova app ASP.NET Core. Nel riquadro sinistro della soluzione, espandere la seconda freccia, quindi selezionare **Startup.cs**. Dovrebbe essere simile all'immagine seguente:
+Selezionare **Progetto ASP.NET Core vuoto** e premere **Avanti**. Assegnare un nome al progetto e premere **Crea**. Viene creata una nuova app ASP.NET Core. Nel riquadro sinistro della finestra della soluzione espandere la seconda freccia, quindi selezionare **Startup.cs**. Dovrebbe essere simile all'immagine seguente:
 
 ![Vista del nuovo progetto ASP.NET Core vuoto](media/asp-net-core-2019-empty-project.png)
 
-Il ASP.NET Core modello vuoto crea un'applicazione Web con due file predefiniti: **Program.cs** e **Startup.cs**, illustrati di seguito. Viene anche creata una cartella dipendenze che contiene le dipendenze del pacchetto NuGet del progetto, ad esempio ASP.NET Core, il Framework .NET Core e le destinazioni MSBuild che compilano il progetto:
+Il ASP.NET Core modello vuoto crea un'applicazione Web con due file predefiniti: **Program.cs** e **Startup.cs** , illustrati di seguito. Viene anche creata una cartella dipendenze che contiene le dipendenze del pacchetto NuGet del progetto, ad esempio ASP.NET Core, il Framework .NET Core e le destinazioni MSBuild che compilano il progetto:
 
-![Riquadro della soluzione che visualizza le dipendenze](media/asp-net-core-2019-solution-dependencies.png)
+![Finestra della soluzione che visualizza le dipendenze](media/asp-net-core-2019-solution-dependencies.png)
 
 ### <a name="programcs"></a>Program.cs
 
@@ -128,7 +128,7 @@ Questo semplice progetto "Hello World"può ora essere eseguito senza l'aggiunta 
 
 ![Esecuzione del browser](media/asp-net-web-picker.png)
 
-Per avviare il progetto Web, Visual Studio per Mac usa una porta casuale. Per individuare la porta usata, aprire Output applicazione, disponibile in **Vista > Riquadri**. L'output dovrebbe essere simile a quello illustrato di seguito:
+Per avviare il progetto Web, Visual Studio per Mac usa una porta casuale. Per individuare la porta, aprire l'output dell'applicazione, elencato sotto il menu **visualizza > altre finestre** . L'output dovrebbe essere simile a quello illustrato di seguito:
 
 ![Output applicazione con la porta di ascolto](media/asp-net-core-image6.png)
 
@@ -138,13 +138,13 @@ Quando il progetto è in esecuzione, il Web browser predefinito viene avviato e 
 
 ## <a name="adding-a-controller"></a>Aggiunta di un controller
 
-Le app ASP.NET Core usano lo schema progettuale Model-View-Controller (MVC) per stabilire una separazione logica delle responsabilità di ogni parte dell'app. Lo schema MVC è costituito come segue:
+Le app ASP.NET Core usano lo schema progettuale Model-View-Controller (MVC) per stabilire una separazione logica delle responsabilità di ogni parte dell'app. Il modello di progettazione MVC è costituito dai concetti seguenti:
 
 - **Model** (Modello): classe che rappresenta i dati dell'app.
 - **View** (Vista): visualizza l'interfaccia utente dell'app. Spesso corrisponde ai dati del modello.
-- **Controller**: classe che gestisce le richieste del browser e risponde all'input e all'interazione dell'utente.
+- **Controller** : classe che gestisce le richieste del browser e risponde all'input e all'interazione dell'utente.
 
-Per altre informazioni sull'uso dello schema MVC, vedere la guida [Overview of ASP.NET Core MVC](/aspnet/core/mvc/overview) (Panoramica di MVC ASP.NET Core).
+Per ulteriori informazioni sull'utilizzo di MVC, vedere la [Panoramica di ASP.NET Core](/aspnet/core/mvc/overview) guida a MVC.
 
 Per aggiungere un controller, eseguire le operazioni seguenti:
 
@@ -175,7 +175,7 @@ Per aggiungere un controller, eseguire le operazioni seguenti:
     }
     ```
 
-3. Aggiungere la dipendenza `Microsoft.AspNetCore.Mvc` al progetto facendo clic con il pulsante destro del mouse sulla cartella **Dependency** (Dipendenza) e selezionando **Aggiungi pacchetto... **.
+3. Aggiungere la dipendenza `Microsoft.AspNetCore.Mvc` al progetto facendo clic con il pulsante destro del mouse sulla cartella **Dependency** (Dipendenza) e selezionando **Aggiungi pacchetto...**.
 
 4. Usare la casella di ricerca per cercare `Microsoft.AspNetCore.Mvc` all'interno della libreria NuGet e selezionare **Aggiungi pacchetto**. L'installazione potrebbe richiedere alcuni minuti e potrebbe essere richiesto di accettare diverse licenze per le dipendenze necessarie:
 
@@ -230,7 +230,7 @@ Per aggiungere un controller, eseguire le operazioni seguenti:
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-Se è necessario installare manualmente .NET Core in Mac OS 10.12 (Sierra) e versioni successive, eseguire le operazioni seguenti:
+Se è necessario installare manualmente .NET Core in macOS 10,12 (Sierra) e versioni successive, seguire questa procedura:
 
 1. Prima di iniziare l'installazione di .NET Core, assicurarsi che siano stati eseguiti tutti gli aggiornamenti del sistema operativo fino alla versione stabile più recente. Per eseguire questa verifica, passare all'applicazione App Store e selezionare la scheda Aggiornamenti.
 
@@ -241,8 +241,8 @@ Per installare correttamente .NET Core, assicurarsi che tutti i passaggi vengano
 ## <a name="summary"></a>Riepilogo
 
 Questa guida offre un'introduzione ad ASP.NET Core. Descrive che cos'è e quando usarlo e fornisce informazioni per l'uso in Visual Studio per Mac.
-Per altre informazioni sui passaggi successivi, fare riferimento alle guide seguenti:
-- [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1) docs.
+Per ulteriori informazioni sui passaggi successivi da qui, vedere le guide seguenti:
+- [ASP.NET Core](/aspnet/core/) docs.
 - [Creating Backend Services for Native Mobile Applications](/aspnet/core/mobile/native-mobile-backend) (Creazione di servizi back-end per applicazioni per dispositivi mobili native), che illustra come creare un servizio REST tramite ASP.NET Core per un'app Xamarin.Forms.
 - [ASP.NET Core hands-on lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started) (Esercitazione pratica su ASP.NET Core).
 

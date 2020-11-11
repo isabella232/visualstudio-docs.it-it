@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 10/27/2020
+ms.date: 11/10/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: dae89eeca01d593cbf805b0c32a3fc2b55b10c09
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 7fefe17c56a347521f91a7d636d628248b712f4d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796407"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492906"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -29,6 +29,11 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.9.0 | Preview 1 | 10 novembre 2020 | 16.9.30709.64 |
+| 16.7.8 | Versione | 10 novembre 2020 | 16.7.30704.19 |
+| 16.4.15 | Versione | 10 novembre 2020 | 16.4.30703.110 |
+| 16.0.20 | Versione | 10 novembre 2020 | 16.0.28803.868 |
+| 16.8.0 | Versione | 10 novembre 2020 | 16.8.30709.132 |
 | 16.8.0 | Preview 6 | 27 ottobre 2020 | 16.8.30626.31 |
 | 16.7.7 | Versione | 27 ottobre 2020 | 16.7.30621.155 |
 | 16.8.0 | Preview 5 | 20 ottobre 2020 | 16.8.30615.102 |
@@ -187,6 +192,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 | **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.29 | Versione | 10 novembre 2020 | 15.9.28307.1300 |
 | 15.9.28 | Versione | 13 ottobre 2020 | 15.9.28307.1274 |
 | 15.9.27 | Versione | 8 settembre 2020 | 15.9.28307.1259 |
 | 15.9.26 | Versione | 11 agosto 2020 | 15.9.28307.1234 |

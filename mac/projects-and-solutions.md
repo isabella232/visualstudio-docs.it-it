@@ -4,14 +4,14 @@ description: Questo documento offre una panoramica di progetti e soluzioni in Vi
 ms.topic: overview
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/23/2019
+ms.date: 11/09/2020
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 92e7a47f7ea2b931c0b923d10e115843d315d024
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.openlocfilehash: c52b8513937505b40d17f7cd9fc05d9cf6a47941
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89284304"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493400"
 ---
 # <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Progetti e soluzioni in Visual Studio per Mac
 
@@ -26,15 +26,15 @@ Quando si crea una nuova applicazione, un nuovo sito Web e così via in Visual S
 
 Un progetto è definito da un file (ad esempio, `.csproj` per i progetti C#) in cui è incluso il codice XML che definisce la gerarchia di file e cartelle, i percorsi dei file e le impostazioni specifiche del progetto, ad esempio le impostazioni di compilazione.
 
-Quando viene caricato un progetto da Visual Studio per Mac, il riquadro della soluzione usa il file di progetto per visualizzare i file e le cartelle del progetto. Durante la compilazione, MSBuild legge le impostazioni dal file di progetto per creare il file eseguibile.
+Quando un progetto viene caricato da Visual Studio per Mac, la finestra della soluzione USA il file di progetto per visualizzare i file e le cartelle nel progetto. Durante la compilazione, MSBuild legge le impostazioni dal file di progetto per creare il file eseguibile.
 
 ## <a name="solutions"></a>Soluzioni
 
 Una *soluzione* è un contenitore che raggruppa uno o più progetti correlati. Le soluzioni sono descritte da un file di testo (con estensione `.sln`) in un formato univoco, per il quale non è prevista la modifica manuale.
 
-## <a name="managing-projects-in-the-solution-pad"></a>Gestione di progetti nel riquadro della soluzione
+## <a name="managing-projects-in-the-solution-window"></a>Gestione dei progetti nella finestra della soluzione
 
-Dopo aver creato o caricato un progetto, è possibile usare il riquadro della soluzione per visualizzare e gestire il progetto o la soluzione e i relativi file. La figura seguente mostra il riquadro della soluzione con una soluzione .NET Core che contiene due progetti:
+Dopo la creazione o il caricamento di un progetto, è possibile utilizzare la finestra della soluzione per visualizzare e gestire il progetto o la soluzione e i file contenuti all'interno di. La figura seguente mostra la finestra della soluzione con una soluzione .NET Core che contiene due progetti:
 
 ![Soluzione di esempio con più progetti](media/solution-example.png)
 

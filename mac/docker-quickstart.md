@@ -3,14 +3,14 @@ title: Introduzione a Docker
 description: Informazioni su come aggiungere Docker ai progetti in Visual Studio per Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 06/17/2019
+ms.date: 11/09/2020
 ms.topic: how-to
-ms.openlocfilehash: 5f21d55568328a9aeb9b7982e5978500f7ef715b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2bfb78369ae5da389820a318196dd7e9e13e897
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939049"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493075"
 ---
 # <a name="get-started-with-docker-in-visual-studio-for-mac"></a>Introduzione a Docker in Visual Studio per Mac
 
@@ -30,8 +30,8 @@ Per l'installazione di Docker, rivedere e seguire le informazioni riportate in [
 1. Creare una nuova soluzione selezionando **File > Nuova soluzione**.
 1. In **.NET Core > app** scegliere il modello di **applicazione Web** : ![ creare una nuova applicazione ASP.NET](media/docker-quickstart-1.png)
 1. Selezionare il framework di destinazione. In questo esempio verrà usato .NET Core 2,2: ![ impostare il Framework di destinazione](media/docker-quickstart-2.png)
-1. Immettere i dettagli del progetto, tra cui il nome (in questo esempio, _DockerDemo_). Il progetto creato contiene tutte le informazioni di base necessarie per compilare ed eseguire un sito Web ASP.NET Core.
-1. Nel riquadro della soluzione fare clic con il pulsante destro del mouse sul progetto DockerDemo e scegliere **aggiungi > aggiungere supporto Docker**: ![ Aggiungi supporto Docker](media/docker-quickstart-3.png)
+1. Immettere i dettagli del progetto, tra cui il nome (in questo esempio, _DockerDemo_ ). Il progetto creato contiene tutte le informazioni di base necessarie per compilare ed eseguire un sito Web ASP.NET Core.
+1. Nella finestra della soluzione fare clic con il pulsante destro del mouse sul progetto DockerDemo e scegliere **aggiungi > Aggiungi supporto Docker** : ![ Aggiungi supporto Docker](media/docker-quickstart-3.png)
 
 Visual Studio per Mac aggiungerà automaticamente alla soluzione un nuovo progetto denominato **docker-compose** e un **Dockerfile** al progetto esistente.
 
@@ -70,7 +70,7 @@ Il *Dockerfile* precedente è basato sull'immagine [microsoft/aspnetcore](https:
 
 ## <a name="debugging"></a>Debug
 
-Selezionare il progetto `docker-compose` come progetto di avvio e avviare il debug (**Esegui > Avvia debug**). Il progetto ASP.NET verrà compilato, distribuito e avviato in un contenitore.
+Selezionare il progetto `docker-compose` come progetto di avvio e avviare il debug ( **Esegui > Avvia debug** ). Il progetto ASP.NET verrà compilato, distribuito e avviato in un contenitore.
 
 > [!TIP]
 > Quando si esegue per la prima volta Docker Desktop dopo averlo installato, è possibile che venga visualizzato l'errore seguente durante il tentativo di eseguire il debug: `Cannot start service dockerdemo: Mounts denied`
@@ -87,6 +87,6 @@ Il contenitore rimarrà in ascolto su una porta, ad esempio `http://localhost:32
 
 Per visualizzare l'elenco dei contenitori in esecuzione, usare il comando `docker ps` nel terminale.
 
-Osservare il valore di inoltro della porta nello screenshot seguente (sotto **PORTS**). Questo valore indica che il contenitore è in ascolto sulla porta specificata in precedenza e che inoltra le richieste al server Web interno sulla porta 80 (come definito nel Dockerfile). L'applicazione, quindi, è in ascolto sulla porta 80:
+Osservare il valore di inoltro della porta nello screenshot seguente (sotto **PORTS** ). Questo valore indica che il contenitore è in ascolto sulla porta specificata in precedenza e che inoltra le richieste al server Web interno sulla porta 80 (come definito nel Dockerfile). L'applicazione, quindi, è in ascolto sulla porta 80:
 
 ![Elenco di contenitori Docker](media/docker-quickstart-7.png)

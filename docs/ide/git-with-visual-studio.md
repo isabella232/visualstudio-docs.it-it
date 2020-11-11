@@ -8,12 +8,12 @@ ms.author: tglee
 author: prnadago
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 71136bb634bd42eaf4933dead8c024b290177da3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 33606a2b4290735d5c15788a1e6961191d6d92f9
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434701"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493556"
 ---
 # <a name="git-productivity-in-visual-studio"></a>Produttività git in Visual Studio
 
@@ -94,7 +94,7 @@ Visual Studio semplifica anche il commit e la sincronizzazione con un solo clic 
 :::image type="content" source="media/git-file-version-compare.png" alt-text="Screenshot del confronto riga per riga delle versioni dei file in Visual Studio ":::
 
 > [!TIP]
-> È possibile associare l'elemento di lavoro di Azure DevOps a un commit usando il carattere "#" Se si è connessi al repository DevOps di Azure. È possibile connettere il repository di Azure DevOps tramite **Team Explorer**  >  **gestire le connessioni**.
+> È possibile associare un elemento di lavoro di Azure DevOps a un commit usando il carattere "#" Se si è connessi al repository DevOps di Azure. È possibile connettere il repository di Azure DevOps tramite **Team Explorer**  >  **gestire le connessioni**.
 
 ### <a name="select-an-existing-branch"></a>Selezionare un ramo esistente
 
@@ -180,7 +180,7 @@ Per personalizzare e personalizzare le impostazioni git a livello di repository 
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Screenshot della finestra di dialogo Opzioni in cui è possibile scegliere le impostazioni di personalizzazione e personalizzazione nell'IDE di Visual Studio ":::
 
-## <a name="how-to-use-legacy-team-explorer-experience-in-visual-studio"></a>Come usare legacy Team Explorer Experience in Visual Studio
+## <a name="how-to-use-the-legacy-team-explorer-experience-in-visual-studio"></a>Come usare l'esperienza Team Explorer legacy in Visual Studio
 
 La nuova esperienza git è il sistema di controllo della versione predefinito in Visual Studio 2019 dalla [versione 16,8](/visualstudio/releases/2019/release-notes/) e successive. Tuttavia, se si desidera disattivarla, è possibile. Passare a **strumenti**  >  **Opzioni**  >  **ambiente**  >  **Anteprima funzionalità** e quindi attivare o disattivare la casella di controllo **nuova esperienza utente git** , che consente di tornare all'esperienza Team Explorer legacy.
 

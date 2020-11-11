@@ -3,16 +3,16 @@ title: Introduzione alla creazione di giochi con Unity
 description: Introduzione all'uso di Unity e Visual Studio per Mac
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/20/2019
+ms.date: 11/09/2020
 ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
 ms.topic: how-to
-ms.openlocfilehash: da9c8b3470fee406b577b136b6c55d76c9346e44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cae68b54623564028ea85dd1aa319fad5ceaec48
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950648"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493582"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Introduzione alla creazione di giochi con Unity in Visual Studio per Mac
 
@@ -74,13 +74,13 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![azione contestuale Visualizza in Finder](media/unity-image8.png)
 
-12. Come si può notare, i progetti contengono le cartelle **Assets**, **Library**, **ProjectSettings** e **Temp**. Tuttavia, l'unica cartella visualizzata nell'interfaccia è **Assets**. La cartella **Library** è la cache locale per gli asset importati. Contiene tutti i metadati relativi agli asset. La cartella **ProjectSettings** archivia le impostazioni configurabili. La cartella **Temp** viene usata da Mono e Unity per i file temporanei durante il processo di compilazione. È anche presente un file di soluzione che è possibile aprire in Visual Studio per Mac. In questa immagine il file è denominato **UnityLab.sln**.
+12. Come si può notare, i progetti contengono le cartelle **Assets** , **Library** , **ProjectSettings** e **Temp**. Tuttavia, l'unica cartella visualizzata nell'interfaccia è **Assets**. La cartella **Library** è la cache locale per gli asset importati. Contiene tutti i metadati relativi agli asset. La cartella **ProjectSettings** archivia le impostazioni configurabili. La cartella **Temp** viene usata da Mono e Unity per i file temporanei durante il processo di compilazione. È anche presente un file di soluzione che è possibile aprire in Visual Studio per Mac. In questa immagine il file è denominato **UnityLab.sln**.
 
     ![asset nel Finder](media/unity-image9.png)
 
 13. Chiudere la finestra **Finder** e tornare a **Unity**.
 
-14. La cartella **assets** contiene tutti gli asset-Art, code, audio e così via. Ora è vuota, ma ogni singolo file inserito nel progetto va qui. che è sempre la cartella di livello principale nell'**Editor di Unity**. È tuttavia sempre necessario aggiungere e rimuovere i file tramite l'interfaccia di Unity (o Visual Studio per Mac) e mai direttamente tramite il file system.
+14. La cartella **assets** contiene tutti gli asset-Art, code, audio e così via. Ora è vuota, ma ogni singolo file inserito nel progetto va qui. che è sempre la cartella di livello principale nell' **Editor di Unity**. È tuttavia sempre necessario aggiungere e rimuovere i file tramite l'interfaccia di Unity (o Visual Studio per Mac) e mai direttamente tramite il file system.
 
     ![cartella Assets in Unity](media/unity-image10.png)
 
@@ -92,7 +92,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![proprietà dell'oggetto gioco](media/unity-image12.png)
 
-17. Rinominare l'oggetto **Cube** (Cubo), che per impostazione predefinita è denominato **"Cube"**, specificando il nuovo nome **"Enemy"**. Premere **INVIO** per salvare la modifica. Questo sarà il cubo dell'avversario nel gioco semplice che si sta creando.
+17. Rinominare l'oggetto **Cube** (Cubo), che per impostazione predefinita è denominato **"Cube"** , specificando il nuovo nome **"Enemy"**. Premere **INVIO** per salvare la modifica. Questo sarà il cubo dell'avversario nel gioco semplice che si sta creando.
 
     ![proprietà per la ridenominazione dell'oggetto Cube](media/unity-image13.png)
 
@@ -112,7 +112,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![spostamento di un cubo lungo l'asse](media/unity-image17.png)
 
-22. A questo punto è possibile aggiungere del codice per guidare la logica dell'oggetto dell'avversario verso l'oggetto del giocatore, in modo che l'avversario insegua il giocatore. Fare clic con il pulsante destro del mouse sulla cartella **Assets** nella scheda **Project** (Progetto) e scegliere **Create > C# Script** (Crea > Script C#).
+22. A questo punto è possibile aggiungere del codice per guidare la logica dell'oggetto dell'avversario verso l'oggetto del giocatore, in modo che l'avversario insegua il giocatore. Fare clic con il pulsante destro del mouse sulla cartella **Asset** nella finestra del **progetto** e scegliere **Crea > script C#**.
 
     ![azione contestuale per la creazione dello script C#](media/unity-image18.png)
 
@@ -130,7 +130,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 1. Il modo migliore per modificare il codice C# è quello di usare Visual Studio per Mac. È possibile configurare Unity in modo da usare Visual Studio per Mac come gestore predefinito. Selezionare **Unity > Preferences** (Unity > Preferenze).
 
-2. Selezionare la scheda **strumenti esterni** . Dall'elenco a discesa **editor di script esterno** selezionare **Sfoglia** e selezionare **applicazioni/Visual Studio. app**. In alternativa, se è già presente un'opzione **Visual Studio**, è sufficiente selezionare tale opzione.
+2. Selezionare la scheda **strumenti esterni** . Dall'elenco a discesa **editor di script esterno** selezionare **Sfoglia** e selezionare **applicazioni/Visual Studio. app**. In alternativa, se è già presente un'opzione **Visual Studio** , è sufficiente selezionare tale opzione.
 
     ![scheda degli strumenti esterni nelle preferenze](media/unity-image21.png)
 
@@ -142,9 +142,9 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![asset Enemy selezionato in Unity](media/unity-image23.png)
 
-5. La soluzione di Visual Studio è molto semplice. Contiene una cartella **Assets** (uguale a quella nel **Finder**) e lo script **EnemyAI.cs** creato in precedenza. In progetti più sofisticati, la gerarchia avrà probabilmente un aspetto diverso rispetto a ciò che viene visualizzato in Unity.
+5. La soluzione di Visual Studio è molto semplice. Contiene una cartella **Assets** (uguale a quella nel **Finder** ) e lo script **EnemyAI.cs** creato in precedenza. In progetti più sofisticati, la gerarchia avrà probabilmente un aspetto diverso rispetto a ciò che viene visualizzato in Unity.
 
-    ![riquadro della soluzione in Visual Studio per Mac](media/unity-image24.png)
+    ![Finestra della soluzione in Visual Studio per Mac](media/unity-image24.png)
 
 6. Il file **EnemyAI.cs** è aperto nell'editor. Lo script iniziale contiene semplicemente gli stub per i metodi **Start** e **Update**.
 
@@ -186,7 +186,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
     }
     ```
 
-8. Esaminare rapidamente il comportamento semplice dell'avversario definito nel codice. Nel metodo **Start** si ottiene un riferimento all'oggetto del giocatore (tramite il relativo tag) e alla relativa **trasformazione**. Nel metodo **Update**, che viene chiamato in ogni fotogramma, l'oggetto dell'avversario si sposta verso l'oggetto del giocatore. Per le parole chiave e i nomi viene usata una codifica a colori per rendere più comprensibile la codebase in Visual Studio per Mac.
+8. Esaminare rapidamente il comportamento semplice dell'avversario definito nel codice. Nel metodo **Start** si ottiene un riferimento all'oggetto del giocatore (tramite il relativo tag) e alla relativa **trasformazione**. Nel metodo **Update** , che viene chiamato in ogni fotogramma, l'oggetto dell'avversario si sposta verso l'oggetto del giocatore. Per le parole chiave e i nomi viene usata una codifica a colori per rendere più comprensibile la codebase in Visual Studio per Mac.
 
 9. Salvare le modifiche apportate allo script dell'avversario in **Visual Studio per Mac**.
 
@@ -194,11 +194,11 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 1. Impostare un punto di interruzione sulla prima riga di codice nel metodo **Start**. È possibile fare clic sul margine dell'editor in corrispondenza della riga di destinazione oppure posizionare il cursore sulla riga e premere **F9**.
 
-    ![impostazione di un punto di interruzione in Visual Studio per Mac](media/unity-image25.png)
+    ![impostazione del punto di interruzione in Visual Studio per Mac](media/unity-image25.png)
 
 2. Fare clic sul pulsante **Avvia debug** o premere **F5**. Il progetto viene compilato e collegato a Unity per il debug.
 
-    ![pulsante per l'avvio del debug in Visual Studio per Mac](media/unity-image26.png)
+    ![pulsante avvia in Visual Studio per Mac](media/unity-image26.png)
 
 3. Tornare a **Unity** e fare clic sul pulsante **Run** (Esegui) per avviare il gioco.
 
@@ -206,21 +206,21 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 4. Viene raggiunto il punto di interruzione ed è ora possibile usare gli strumenti per il debug di Visual Studio per Mac.
 
-    ![raggiungimento di un punto di interruzione in Visual Studio per Mac](media/unity-image28.png)
+    ![il punto di interruzione è stato raggiunto in Visual Studio per Mac](media/unity-image28.png)
 
-5. Dal riquadro **Variabili locali** individuare **questo** puntatore, che fa riferimento a un oggetto **EnemyAI**. Espandere il riferimento e notare che è possibile esplorare i membri associati, ad esempio **Speed**.
+5. Dalla finestra **variabili locali** individuare il puntatore **this** , che fa riferimento a un oggetto **EnemyAI** . Espandere il riferimento e notare che è possibile esplorare i membri associati, ad esempio **Speed**.
 
-    ![riquadro per il debug delle variabili locali in Visual Studio per Mac](media/unity-image29.png)
+    ![La finestra variabili locali in Visual Studio per Mac](media/unity-image29.png)
 
 6. Rimuovere il punto di interruzione dal metodo **Start** in modo simile a come è stato aggiunto, ovvero facendo clic su di esso nel margine o selezionando la riga e premendo **F9**.
 
-    ![raggiungimento di un punto di interruzione in Visual Studio per Mac](media/unity-image30.png)
+    ![Rimozione di un punto di interruzione in Visual Studio per Mac facendo clic su di esso](media/unity-image30.png)
 
 7. Premere **F10** per ignorare la prima riga di codice che trova l'oggetto gioco **Player** usando un tag come parametro.
 
 8. Passare il puntatore del mouse sulla variabile **player** all'interno della finestra dell'editor di codice per visualizzarne i membri associati. È anche possibile espandere l'overlay per visualizzare le proprietà figlio.
 
-    ![finestra per il debug nell'editor di Visual Studio per Mac](media/unity-image31.png)
+    ![finestra di debug nell'editor Visual Studio per Mac](media/unity-image31.png)
 
 9. Premere **F5** o fare clic sul pulsante **Esegui** per continuare l'esecuzione. Tornare a Unity per osservare il cubo dell'avversario che si avvicina ripetutamente al cubo del giocatore. Può essere necessario modificare l'impostazione della videocamera se non è visibile.
 
@@ -228,7 +228,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 10. Tornare a **Visual Studio per Mac** e impostare un punto di interruzione sulla prima riga del metodo **Update**. Dovrebbe essere raggiunto immediatamente.
 
-    ![impostazione di un punto di interruzione in Visual Studio per Mac](media/unity-image33.png)
+    ![Rimozione di un punto di interruzione in Visual Studio per Mac](media/unity-image33.png)
 
 11. Si supponga che la velocità sia troppo elevata e che si voglia testare l'impatto della modifica senza riavviare l'app. Individuare la variabile **Speed** all'interno della finestra **Auto** o **Variabili locali** e quindi impostarla su **"10"** e premere **INVIO**.
 
@@ -262,7 +262,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![azione contestuale Nuovo MonoBehaviour](media/unity-image40.png)
 
-4. La classe appena creata fornisce gli stub per i metodi **Start** e **Update**. Dopo la parentesi graffa di chiusura del metodo **Update**, iniziare a digitare **"onmouseup"**. Durante la digitazione, si noti che la tecnologia IntelliSense di Visual Studio punta rapidamente al metodo che si prevede di implementare. Selezionarlo dall'elenco di completamento automatico visualizzato. Verrà completato automaticamente uno stub del metodo, inclusi gli eventuali parametri.
+4. La classe appena creata fornisce gli stub per i metodi **Start** e **Update**. Dopo la parentesi graffa di chiusura del metodo **Update** , iniziare a digitare **"onmouseup"**. Durante la digitazione, si noti che la tecnologia IntelliSense di Visual Studio punta rapidamente al metodo che si prevede di implementare. Selezionarlo dall'elenco di completamento automatico visualizzato. Verrà completato automaticamente uno stub del metodo, inclusi gli eventuali parametri.
 
     ![IntelliSense in Visual Studio per Mac](media/unity-image41.png)
 
@@ -272,7 +272,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 6. Visual Studio per Mac consente inoltre di definire con facilità nuovi shader. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Assets** e scegliere **Aggiungi > Nuovo shader**.
 
-    ![azione per l'aggiunta di un nuovo shader in Visual Studio per Mac](media/unity-image43.png)
+    ![nuova azione shader in Visual Studio per Mac](media/unity-image43.png)
 
 7. Il contenuto del file di shader è formattato con colori e un tipo di carattere che ne semplificano la lettura e la comprensione.
 

@@ -3,15 +3,15 @@ title: Presentazione di Visual Studio per Mac
 description: Visual Studio per Mac offre un ambiente di sviluppo integrato per creare applicazioni .NET in macOS, inclusi siti Web ASP.NET Core e progetti Xamarin per iOS, Android, Mac e Xamarin.Forms.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 07/03/2020
+ms.date: 11/09/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: a385e58f73edbcea6eb25b7b2e2728e00f9bcb8d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a2caadd454564b389f48987e69e1bc08475affea
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584009"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493270"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Presentazione di Visual Studio 2019 per Mac
 
@@ -36,7 +36,7 @@ L'articolo illustra varie sezioni di Visual Studio per Mac e presenta alcune del
 
 Visual Studio per Mac è organizzato in sezioni diverse per la gestione di impostazioni e file delle applicazioni, la creazione di codice delle applicazioni e il debug.
 
-## <a name="getting-started"></a>Attività iniziali
+## <a name="getting-started"></a>Introduzione
 
 Quando si avvia Visual Studio 2019 per Mac per la prima volta, viene visualizzata una finestra di accesso per i nuovi utenti. Accedere con l'account Microsoft per attivare una licenza a pagamento (se disponibile) o connettersi alle sottoscrizioni di Azure. È possibile scegliere di **eseguire questa** operazione in un secondo momento e accedere in un secondo momento tramite la voce **di menu di accesso > di Visual Studio** :
 
@@ -58,11 +58,11 @@ L'immagine seguente mostra Visual Studio per Mac con un'applicazione caricata:
 
 Le sezioni seguenti forniscono una panoramica delle principali aree di Visual Studio per Mac.
 
-## <a name="solution-pad"></a>Riquadro della soluzione
+## <a name="solution-window"></a>Finestra della soluzione
 
-Il riquadro della soluzione organizza i progetti in una soluzione:
+La finestra della soluzione organizza i progetti in una soluzione:
 
-![Progetti organizzati nel riquadro della soluzione](media/ide-tour-image18.png)
+![Progetti organizzati nella finestra della soluzione](media/ide-tour-image18.png)
 
 In questa posizione i file per il codice sorgente, le risorse, l'interfaccia utente e le dipendenze vengono organizzati in progetti specifici della piattaforma.
 
@@ -72,9 +72,9 @@ Per altre informazioni sull'uso di progetti e soluzioni in Visual Studio per Mac
 
 I riferimenti ad assembly per ogni progetto sono disponibili nella cartella Riferimenti:
 
-![Cartella Riferimenti nel riquadro della soluzione](media/ide-tour-image19.png)
+![Cartella riferimenti nella finestra della soluzione](media/ide-tour-image19.png)
 
-È possibile aggiungere altri riferimenti usando la finestra di dialogo **Modifica riferimenti**, visualizzata facendo doppio clic sulla cartella Riferimenti oppure scegliendo **Modifica riferimenti** tra le azioni del menu di scelta rapida:
+È possibile aggiungere altri riferimenti usando la finestra di dialogo **Modifica riferimenti** , visualizzata facendo doppio clic sulla cartella Riferimenti oppure scegliendo **Modifica riferimenti** tra le azioni del menu di scelta rapida:
 
 ![Finestra di dialogo Modifica riferimenti](media/ide-tour-image20.png)
 
@@ -86,7 +86,7 @@ Tutte le dipendenze esterne usate nell'app vengono archiviate nella cartella dip
 
 NuGet è il più diffuso strumento di gestione pacchetti per lo sviluppo .NET. Con il supporto di NuGet di Visual Studio è possibile cercare e aggiungere facilmente pacchetti al progetto dell'applicazione.
 
-Per aggiungere una dipendenza all'applicazione, fare clic con il pulsante destro del mouse sulla cartella Dipendenze/Pacchetti e scegliere **Aggiungi pacchetti**:
+Per aggiungere una dipendenza all'applicazione, fare clic con il pulsante destro del mouse sulla cartella Dipendenze/Pacchetti e scegliere **Aggiungi pacchetti** :
 
 ![Aggiungere un pacchetto NuGet](media/ide-tour-image21.png)
 
@@ -135,9 +135,9 @@ Visual Studio per Mac si integra con sistemi di controllo del codice sorgente Su
 
 ![Nome del ramo per indicare un progetto sottoposto a controllo del codice sorgente](media/ide-tour-image22.png)
 
-I file con modifiche non sottoposte a commit presentano un'annotazione nelle relative icone nel riquadro della soluzione, come illustrato nell'immagine seguente:
+I file con modifiche di cui non è stato eseguito il commit hanno un'annotazione sulle icone nella finestra della soluzione, come illustrato nell'immagine seguente:
 
-![File con modifiche non sottoposte a commit nel riquadro della soluzione](media/ide-tour-image23.png)
+![File di cui non è stato eseguito il commit nella finestra soluzione](media/ide-tour-image23.png)
 
 Per altre informazioni sul controllo della versione in Visual Studio, vedere l'articolo [Controllo della versione](./version-control.md).
 
@@ -150,6 +150,6 @@ Per altre informazioni sul controllo della versione in Visual Studio, vedere l'a
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [IDE di Visual Studio (in Windows)](/visualstudio/ide/visual-studio-ide)

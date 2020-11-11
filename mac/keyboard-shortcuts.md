@@ -5,18 +5,18 @@ ms.date: 03/14/2019
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 989c47e3c192c936eec0828b96a800d5ed4feaa4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3a4b2a56e5ac6ed29289c3946a65fc57b54eaa21
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247382"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493205"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Tasti di scelta rapida predefiniti in Visual Studio per Mac
 
 Per informazioni sull'accessibilità da tastiera, vedere [procedura: usare la navigazione da tastiera](~/accessibility-keyboard.md).
 
-Per accedere a vari controlli in Visual Studio per Mac, è possibile usare la scelta rapida da tastiera appropriata. Questo documento elenca i tasti di scelta rapida predefiniti per lo schema di associazione chiave **Visual Studio per Mac** . Per altre informazioni su come modificare lo schema dei tasti di scelta rapida, vedere [Personalizzazione dell'IDE](~/customizing-the-ide.md#key-bindings). È inoltre possibile personalizzare i tasti di scelta rapida per **Visual Studio for Mac**un comando utilizzando la  >  voce di **Environment**menu**Preferenze** Visual Studio per Mac e scegliendo  >  **combinazioni di tasti** di scelta rapida nella finestra **Preferenze** .
+Per accedere a vari controlli in Visual Studio per Mac, è possibile usare la scelta rapida da tastiera appropriata. Questo documento elenca i tasti di scelta rapida predefiniti per lo schema di associazione chiave **Visual Studio per Mac** . Per altre informazioni su come modificare lo schema dei tasti di scelta rapida, vedere [Personalizzazione dell'IDE](~/customizing-the-ide.md#key-bindings). È inoltre possibile personalizzare i tasti di scelta rapida per **Visual Studio for Mac** un comando utilizzando la  >  voce di **Environment** menu **Preferenze** Visual Studio per Mac e scegliendo  >  **combinazioni di tasti** di scelta rapida nella finestra **Preferenze** .
 
 > [!TIP]
 > Le scelte rapida da tastiera indicate in questo documento e le preferenze relative ai tasti di scelta rapida in Visual Studio per Mac sono presentate mediante i simboli comunemente usati in macOS. In caso di dubbi su un simbolo, consultare la [tabella dei simboli dei tasti di macOS](#macos-key-symbols-lookup).
@@ -30,51 +30,51 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 
 ## <a name="code-navigation"></a>Esplorazione del codice
 
-|Comandi:|Tasti di scelta rapida|
+|Comandi|Tasti di scelta rapida|
 |-|-|
-|Trova riferimenti|**⇧⌘R**, **F12**|
-|Vai a dichiarazione|**⌘D**, **F12**|
-|Errore successivo|**⌥⇧⇟**, **⇧⌘F12**|
+|Trova riferimenti|**⇧⌘R** , **F12**|
+|Vai a dichiarazione|**⌘D** , **F12**|
+|Errore successivo|**⌥⇧⇟** , **⇧⌘F12**|
 |Problema successivo nel file|**⇟ ⌥**|
 |Errore precedente|**⌥ ⇧ ⇞**|
 |Problema precedente nel file|**⇞ ⌥**|
 
 ## <a name="debug"></a>Debug
 
-|Comandi:|Tasti di scelta rapida|
+|Comandi|Tasti di scelta rapida|
 |-|-|
-|Abilita o disabilita punto di interruzione|**⌥ ⌘/**, **⌘ F9**|
-|Sospendi|**⌥⌘P**, **⌥⌘L5**|
+|Abilita o disabilita punto di interruzione|**⌥ ⌘/** , **⌘ F9**|
+|Sospendi|**⌥⌘P** , **⌥⌘L5**|
 |Rimuovere tutti i punti di interruzione|**⇧ ⌘ F9**|
 |Esecuzione fino al cursore|**⌘ F10**|
 |Imposta istruzione successiva|**⇧ ⌘ F10**|
-|Mostra istruzione successiva|**⌥\***|
-|Esegui istruzione|**⇧⌘I**, **⌘F11**|
-|Esci da istruzione/routine|**⇧⌘U**, **⇧⌘F11**|
-|Esegui istruzione/routine|**⇧⌘O**, **F10**|
-|Imposta/Rimuovi punto di interruzione|**⌘\\**, **F9**|
+|Mostra istruzione successiva|**⌥ \** _|
+|Esegui istruzione|_ * ⇧ ⌘ I * *, **⌘ F11**|
+|Esci da istruzione/routine|**⇧⌘U** , **⇧⌘F11**|
+|Esegui istruzione/routine|**⇧⌘O** , **F10**|
+|Imposta/Rimuovi punto di interruzione|**⌘\\** , **F9**|
 |Visualizza punti di interruzione|**⌥ ⌘ B**|
 
 ## <a name="designer"></a>Designer
 
-|Comandi:|Tasti di scelta rapida|
+|Comandi|Tasti di scelta rapida|
 |-|-|
 |Passa da un file correlato all'altro|**⌃ ⌘ ↑**|
 
 ## <a name="edit"></a>Modifica
 
-|Comandi:|Tasti di scelta rapida|
+|Comandi|Tasti di scelta rapida|
 |-|-|
 |Modalità di modifica vincoli|**⌘ E**|
 |Copia|**⌘ C**|
 |Taglia|**⌘ X**|
-|Delete|**⌫ ⌘**|
+|Elimina|**⌫ ⌘**|
 |Formatta documento|**⌃**|
 |Imposta rientro per la selezione|**⌘**|
 |Incolla|**⌘ V**|
 |Preferenze|**⌘**|
 |Ripristinare|**⇧ ⌘ Z**|
-|Rinominare|**⌘R**, **F2**|
+|Rinomina|**⌘R** , **F2**|
 |Seleziona tutto|**⌘ A**|
 |Mostra generazione del codice|**⌘ I**|
 |Attiva/Disattiva tutte le riduzioni|**⌥ ⇧ ⌘ ↑**|
@@ -87,7 +87,7 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 
 ## <a name="f-integration"></a>Integrazione F#
 
-|Comandi:|Tasti di scelta rapida|
+|Comandi|Tasti di scelta rapida|
 |-|-|
 |Cancella F# Interactive|**⌃ ⌥ C**|
 |F# Interactive|**⌃ ⌥ F**|
@@ -98,7 +98,7 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 
 ## <a name="file"></a>File
 
-|Comandi:|Tasti di scelta rapida|
+|Comandi|Tasti di scelta rapida|
 |-|-|
 |Chiudi tutto|**⇧ ⌘ W**|
 |Chiudi file|**⌘ W**|
@@ -106,7 +106,7 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Nuovo file|**⌘ N**|
 |Nuova soluzione|**⇧ ⌘ N**|
 |Apri|**⌘ O**|
-|Stampa|**⌘ P**|
+|Print|**⌘ P**|
 |Uscire|**⌘ Q**|
 |Ripristinare|**U ⌘**|
 |Salva|**⌘ S**|
@@ -114,48 +114,48 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 
 ## <a name="help"></a>Guida
 
-|Comandi:|Tasti di scelta rapida|
+|Comandi|Tasti di scelta rapida|
 |-|-|
 |Documentazione sull'API|**⌥ ⌘?**|
 |Riferimento per le API Unity|**⌘**|
 
 ## <a name="other"></a>Altro
 
-|Comandi:|Tasti di scelta rapida|
+|Comandi|Tasti di scelta rapida|
 |-|-|
 |Implementa messaggi Unity|**⇧ ⌘ M**|
 |Controllare|**⌥ ⌘ I**|
 
-## <a name="project"></a>Progetto
+## <a name="project"></a>Project
 
-|Comandi:|Tasti di scelta rapida|
+|Comandi|Tasti di scelta rapida|
 |-|-|
 |Aggiungi file|**⌥ ⌘ A**|
-|Compilare|**⌘K**, **⇧F6**|
-|Compila tutto|**⌘B**, **F6**|
+|Compilazione|**⌘K** , **⇧F6**|
+|Compila tutto|**⌘B** , **F6**|
 |Clean|**⇧ ⌘ K**|
 |Ricompilazione|**⌃ ⌘ K**|
 |Ricompila tutto|**⌃ ⌘ B**|
-|Avvia debug|**⌘ ⏎**, **F5**|
-|Avvia senza eseguire debug|**⌥ ⌘ ⏎**, **⌃ F5**|
-|Arresto|**⇧⌘⏎**, **⇧F5**|
+|Avvia debug|**⌘ ⏎** , **F5**|
+|Avvia senza eseguire debug|**⌥ ⌘ ⏎** , **⌃ F5**|
+|Interrompere|**⇧⌘⏎** , **⇧F5**|
 
 ## <a name="refactoring"></a>Refactoring
 
-|Comandi:|Tasti di scelta rapida|
+|Comandi|Tasti di scelta rapida|
 |-|-|
 |Importa simbolo|**⌃ ⌥ ␣**|
 |Correzione rapida|**⏎ ⌥**|
 
-## <a name="search"></a>Ricerca
+## <a name="search"></a>Cerca
 
-|Comandi:|Tasti di scelta rapida|
+|Comandi|Tasti di scelta rapida|
 |-|-|
 |Comando|**⇧ ⌘ P**|
 |Cerca nei file|**⇧ ⌘ F**|
-|Trova successivo|**⌘G**, **F3**|
-|Trova stringa successiva simile alla selezione|**⌘E**, **⌘F3**|
-|Trova precedente|**⇧ ⌘ G**, **⇧ F3**|
+|Trova successivo|**⌘G** , **F3**|
+|Trova stringa successiva simile alla selezione|**⌘E** , **⌘F3**|
+|Trova precedente|**⇧ ⌘ G** , **⇧ F3**|
 |Trova stringa precedente simile alla selezione|**⇧ ⌘ F3**|
 |Find|**⌘ F**|
 |Vai al file|**⇧ ⌘ D**|
@@ -167,7 +167,7 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 
 ## <a name="text-editor"></a>Editor di testo
 
-|Comandi:|Tasti di scelta rapida|
+|Comandi|Tasti di scelta rapida|
 |-|-|
 |Completa parola|**⌃␣**|
 |Elimina carattere a sinistra|**⌃ H**|
@@ -180,10 +180,10 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Abbreviazione dinamica|**⌃/**|
 |Espandere la selezione|**⌥ ⇧ ↓**|
 |Espandere la selezione|**⌥ ⇧ ↑**|
-|Espandi selezione alla fine del documento|**⇧ ⌘ ↓**, **⇧ ⌘ ↘**|
-|Espandi selezione all'inizio del documento|**⇧ ⌘ ↑**, **⇧ ⌘ ↖**|
-|Espandi selezione alla fine della riga|**⇧ ↘**, **⇧ ⌘ →**|
-|Espandi selezione all'inizio della riga|**⇧ ↖**, **⇧ ⌘ ←**|
+|Espandi selezione alla fine del documento|**⇧ ⌘ ↓** , **⇧ ⌘ ↘**|
+|Espandi selezione all'inizio del documento|**⇧ ⌘ ↑** , **⇧ ⌘ ↖**|
+|Espandi selezione alla fine della riga|**⇧ ↘** , **⇧ ⌘ →**|
+|Espandi selezione all'inizio della riga|**⇧ ↖** , **⇧ ⌘ ←**|
 |Espandi selezione alla riga successiva|**⇧ ↓**|
 |Espandi selezione alla parola successiva|**⌥ ⇧ →**|
 |Espandi selezione a pagina verso l'alto|**⇟ ⇧**|
@@ -196,9 +196,9 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Vai a sinistra di un carattere|**⌃ B**|
 |Vai a destra di un carattere|**⌃ F**|
 |Vai all'inizio del documento|**⌘ ↑**|
-|Vai all'inizio della riga|**⌘←**, **⌃A**|
+|Vai all'inizio della riga|**⌘←** , **⌃A**|
 |Vai alla fine del documento|**⌘ ↓**|
-|Vai alla fine della riga|**⌘ →**, **⌃ E**|
+|Vai alla fine della riga|**⌘ →** , **⌃ E**|
 |Vai alla parentesi graffa corrispondente|**⇧ ⌘\\**|
 |Vai a riga successiva|**⌃ N**|
 |Vai a parola successiva|**⌥ →**|
@@ -216,9 +216,9 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Trasponi caratteri|**⌃ T**|
 |Wrapping con &lt;div&gt;|**⌥ ⇧ W**|
 
-## <a name="view"></a>Visualizzazione
+## <a name="view"></a>Visualizza
 
-|Comandi:|Tasti di scelta rapida|
+|Comandi|Tasti di scelta rapida|
 |-|-|
 |Centra documento e imposta stato attivo|**⌃ L**|
 |Imposta stato attivo per il documento|**F7**|
@@ -229,15 +229,15 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Posizione successiva|**⌃ ⌘ →**|
 |Dimensioni normali|**⌘ 0**|
 |Una colonna editor|**⌥ ⌘ 1**|
-|Mostra successivo|**⌥⌘↓**, **F8**|
-|Mostra precedente|**⌥ ⌘ ↑**, **⇧ F8**|
+|Mostra successivo|**⌥⌘↓** , **F8**|
+|Mostra precedente|**⌥ ⌘ ↑** , **⇧ F8**|
 |Due colonne editor|**⌥ ⌘ 2**|
-|Zoom avanti|**⌘ +**, **⌘ =**|
-|Zoom indietro|**⌘-**, **⌘ _**|
+|Zoom avanti|**⌘ +** , **⌘ =**|
+|Zoom indietro|**⌘-** , **⌘ _**|
 
 ## <a name="window"></a>Finestra
 
-|Comandi:|Tasti di scelta rapida|
+|Comandi|Tasti di scelta rapida|
 |-|-|
 |Attiva 1|**⌘ 1**|
 |Attiva 2|**⌘ 2**|
@@ -251,26 +251,26 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Nascondi altri|**⌥ ⌘ H**|
 |Nascondi Visual Studio|**⌘ H**|
 |Riduci|**⌘ M**|
-|Documento successivo|**⌘}**, **⌘ F6**|
-|Documento precedente|**⌘{**, **⇧⌘F6**|
+|Documento successivo|**⌘}** , **⌘ F6**|
+|Documento precedente|**⌘{** , **⇧⌘F6**|
 |Passa al documento successivo|**⌃⇥**|
-|Passa alla finestra ancorabile successiva|**⌃ ⌥ ⇥**|
+|Passa alla finestra degli strumenti successiva|**⌃ ⌥ ⇥**|
 |Torna al documento precedente|**⌃ ⇧ ⇥**|
-|Torna alla finestra ancorabile precedente|**⌃ ⌥ ⇧ ⇥**|
+|Passa alla finestra degli strumenti precedente|**⌃ ⌥ ⇧ ⇥**|
 
 ## <a name="macos-key-symbols-lookup"></a>Tabella simboli dei tasti di macOS
 
 |Simbolo|Chiave|
 |-|-|
-|⌘|**Comando** (**Cmd**)|
-|⌥|**Opzione** (**Alt**)|
+|⌘|**Comando** ( **Cmd** )|
+|⌥|**Opzione** ( **Alt** )|
 |⇧|**MAIUSC**|
-|⌃|**Control** (**Ctrl**)
-|⇞|**Pagina precedente** (**Pg Up**)|
-|⇟|**Pagina successiva** (**Pg Dn**)|
-|⌫|**Cancella** (**Backspace**)|
+|⌃|**Control** ( **Ctrl** )
+|⇞|**Pagina precedente** ( **Pg Up** )|
+|⇟|**Pagina successiva** ( **Pg Dn** )|
+|⌫|**Cancella** ( **Backspace** )|
 |⌦|**Cancella avanti**|
-|⏎|**Ritorno**|
+|⏎|**Return**|
 |←→↑↓|**Tasti di direzione**|
 |↖|**Home**|
 |↘|**Fine**|

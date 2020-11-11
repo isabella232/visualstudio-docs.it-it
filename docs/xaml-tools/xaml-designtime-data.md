@@ -1,18 +1,18 @@
 ---
 title: Usare i dati della fase di progettazione con il finestra di progettazione XAML in Visual Studio
 description: Informazioni su come usare i dati in fase di progettazione in XAML.
-ms.date: 09/29/2020
+ms.date: 11/10/2020
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: b9477868d265e9ad8b927d9e13b67112c0ea14f7
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298469"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94492895"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Usare i dati della fase di progettazione con il finestra di progettazione XAML in Visual Studio
 
@@ -25,7 +25,7 @@ Alcuni layout sono difficili da visualizzare senza dati. In questo documento ver
 
 I dati della fase di progettazione sono dati fittizi impostati per semplificare la visualizzazione dei controlli nella finestra di progettazione XAML. Per iniziare, aggiungere le righe di codice seguenti all'intestazione del documento XAML se non sono già presenti:
 
-```xml 
+```xml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 mc:Ignorable="d"
@@ -138,9 +138,9 @@ Il vantaggio è che è possibile associare i controlli a una versione statica de
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>Usare dati della fase di progettazione con proprietà e tipi personalizzati
 
-Per impostazione predefinita, questa funzionalità funziona solo con le proprietà e i controlli della piattaforma. In questa sezione vengono illustrati i passaggi necessari per consentire l'uso di controlli personalizzati come controlli della fase di progettazione, una nuova funzionalità disponibile per i clienti che usano Visual Studio 2019 Preview versione [16,8](/visualstudio/releases/2019/preview-notes) o successiva. Esistono tre requisiti per abilitare questa operazione:
+Per impostazione predefinita, questa funzionalità funziona solo con le proprietà e i controlli della piattaforma. In questa sezione vengono illustrati i passaggi necessari per consentire l'uso di controlli personalizzati come controlli della fase di progettazione, una nuova funzionalità disponibile per i clienti che usano Visual Studio 2019 versione [16,8](/visualstudio/releases/2019/release-notes/) o successiva. Esistono tre requisiti per abilitare questa operazione:
 
-- Uno spazio dei nomi xmlns personalizzato 
+- Uno spazio dei nomi xmlns personalizzato
 
     ```xml
     xmlns:myControls="http://MyCustomControls"

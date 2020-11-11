@@ -1,18 +1,18 @@
 ---
 title: Impostare più progetti di avvio
 description: Questo articolo descrive come impostare più progetti di avvio durante l'esecuzione o il debug.
-author: sayedihashimi
-ms.author: sayedha
-ms.date: 12/13/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/09/2020
 ms.topic: how-to
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: e0e1af97ec91af4105d1934a431f9aabc6562793
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df1e088a5e2d0f65d8b72dad0895f1edb1740f1f
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950111"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493569"
 ---
 # <a name="set-multiple-startup-projects"></a>Impostare più progetti di avvio
 
@@ -20,9 +20,9 @@ Visual Studio per Mac consente di specificare se avviare più di un progetto dur
 
 ## <a name="to-set-multiple-startup-projects"></a>Per impostare più progetti di avvio
 
-1. Nel riquadro della soluzione selezionare la soluzione (il primo nodo in alto).
+1. Nella finestra della soluzione selezionare la soluzione (il nodo principale).
 
-2. Fare clic con il pulsante destro del mouse sul nodo della soluzione e scegliere **Imposta progetti di avvio**:
+2. Fare clic con il pulsante destro del mouse sul nodo della soluzione e scegliere **Imposta progetti di avvio** :
 
    ![Selezionare Imposta progetti di avvio](media/startup-proj-ctx-menu.png)
 
@@ -42,7 +42,7 @@ Visual Studio per Mac consente di specificare se avviare più di un progetto dur
 
    ![Soluzione con più progetti configurati da avviare in fase di debug o esecuzione](media/startup-project-configured.png)
 
-   Si può notare che sono stati configurati due progetti da avviare perché entrambi sono in **grassetto** nel riquadro della soluzione. Nella barra degli strumenti la nuova configurazione di esecuzione è impostata come configurazione di esecuzione della soluzione corrente.
+   Ora i due progetti sono configurati per l'avvio, che è rappresentato da entrambi i progetti visualizzati in **grassetto** nella finestra della soluzione. Nella barra degli strumenti la nuova configurazione di esecuzione è impostata come configurazione di esecuzione della soluzione corrente.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

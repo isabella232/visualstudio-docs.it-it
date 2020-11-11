@@ -3,15 +3,15 @@ title: Gestione dei riferimenti in un progetto
 description: Questo articolo descrive come gestire i riferimenti in un progetto in Visual Studio per Mac
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.topic: overview
-ms.openlocfilehash: 28ea53826a19a9ec97349060702cf13c68342ad2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41d49fe6b23818f3cb9de8dec72462d4b2029bb6
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939006"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493517"
 ---
 # <a name="managing-references-in-a-project"></a>Gestione dei riferimenti in un progetto
 
@@ -22,7 +22,7 @@ Visual Studio per Mac offre due modi per aggiungere ulteriori riferimenti al pro
 Si tratta di:
 
 * Riferimenti
-* Pacchetti NuGet (aggiunti tramite la cartella Pacchetti)
+* Pacchetti NuGet (aggiunti tramite la cartella Packages)
 
 A qualsiasi progetto è anche possibile aggiungere riferimenti Web e riferimenti nativi.
 
@@ -30,7 +30,7 @@ A qualsiasi progetto è anche possibile aggiungere riferimenti Web e riferimenti
 
 Ogni framework in Xamarin include più di una dozzina di assembly. Non a tutti i pacchetti di assembly viene fatto riferimento nel progetto per impostazione predefinita.
 
-Per modificare i pacchetti a cui viene fatto riferimento nel progetto, usare la finestra di dialogo **Modifica riferimenti**, che è possibile visualizzare facendo doppio clic sulla cartella Riferimenti oppure scegliendo **Modifica riferimenti** tra le azioni del menu di scelta rapida:
+Per modificare i pacchetti a cui viene fatto riferimento nel progetto, usare la finestra di dialogo **Modifica riferimenti** , che è possibile visualizzare facendo doppio clic sulla cartella Riferimenti oppure scegliendo **Modifica riferimenti** tra le azioni del menu di scelta rapida:
 
 ![Finestra di dialogo dei riferimenti ad assembly](media/projects-and-solutions-image11.png)
 
@@ -40,7 +40,7 @@ Per informazioni sugli assembly disponibili per ogni framework Xamarin, vedere l
 
 NuGet è il più diffuso strumento di gestione pacchetti per lo sviluppo .NET. Il supporto di NuGet di Visual Studio per Mac consente di cercare i pacchetti da aggiungere al progetto.
 
-A tale scopo, fare clic con il pulsante destro del mouse sulla cartella **Pacchetto** nel riquadro della soluzione e scegliere Aggiungi pacchetti.
+A tale scopo, fare clic con il pulsante destro del mouse sulla cartella del **pacchetto** nella finestra della soluzione e scegliere Aggiungi pacchetti.
 
 Per altre informazioni sull'uso di un pacchetto NuGet, vedere la procedura guidata [Inserimento di un pacchetto NuGet nel progetto](nuget-walkthrough.md).
 
