@@ -1,6 +1,7 @@
 ---
 title: Associare i controlli ai dati
 description: Associare i controlli ai dati in Visual Studio. Creare controlli associati a dati trascinando gli elementi dalla finestra Origini dati.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f92382721558d76cf9e84fa587b322d56af72247
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 1b48c2e8b557a47c1ed795b6f9d3c3ced6247a43
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382169"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518622"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associare controlli ai dati in Visual Studio
 
@@ -56,7 +57,7 @@ Per ogni tipo di dati visualizzato nella finestra **Origini dati** viene creato 
 
 Nella tabella seguente sono elencate alcune delle attività più comuni eseguite per associare i controlli ai dati.
 
-|Attività|Ulteriori informazioni|
+|Attività|Altre informazioni|
 |----------| - |
 |Aprire la finestra **Origini dati**.|Aprire un'area di progettazione nell'editor e scegliere **Visualizza**  >  **origini dati**.|
 |Aggiungere un'origine dati al progetto.|[Aggiungere nuove origini dati](../data-tools/add-new-data-sources.md)|

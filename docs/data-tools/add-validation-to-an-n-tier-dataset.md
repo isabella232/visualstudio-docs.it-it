@@ -1,6 +1,7 @@
 ---
 title: Aggiungere la convalida a un set di dati a più livelli
 description: Aggiungere la convalida a un set di dati a più livelli in Visual Studio. Convalidare le modifiche a singole colonne o a intere righe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ecd57066f310886f2941700173d138756f682a0e
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 4c7891df6de9f12df324c8d79eed5dda0e091d9a
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382130"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518752"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Aggiungere la convalida a un set di dati a più livelli
 L'aggiunta della convalida a un set di dati separato in una soluzione a più livelli è fondamentalmente uguale all'aggiunta della convalida a un set di dati a file singolo (un set di dati in un singolo progetto). Il percorso suggerito per eseguire la convalida dei dati è durante gli <xref:System.Data.DataTable.ColumnChanging> eventi e/o <xref:System.Data.DataTable.RowChanging> di una tabella dati.

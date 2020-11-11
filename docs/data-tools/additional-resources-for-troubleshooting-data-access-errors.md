@@ -1,6 +1,7 @@
 ---
 title: Forum di accesso ai dati
 description: Trovare assistenza per la risoluzione di errori e avvisi nei forum pubblici. Visualizzare un elenco di forum correlati ai dati.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -225,12 +226,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8555a67bf9173767584c2bf37c1ed470548c4157
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: c3bfd0b322a368cd758ea1518c8c63ed668d4545
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382481"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518584"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Risolvere gli errori di accesso ai dati nei forum
 

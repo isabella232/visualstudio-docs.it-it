@@ -1,6 +1,7 @@
 ---
 title: Aggiungere il codice nei TableAdapter di applicazioni a più livelli
 description: Aggiungere codice agli adattatori di tabella nelle applicazioni a più livelli. Creare un file di classe parziale per TableAdapter e aggiungervi codice, anziché a DataSetName. DataSet. designer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed0664b78408e91eeda5b65c26615e870e2171b6
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 85e89e9800f35fc6d27346b4ed3d4757f83a8dfc
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382364"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518700"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Aggiungere il codice nei TableAdapter di applicazioni a più livelli
 È possibile estendere la funzionalità di un TableAdapter creando un file di classe parziale per il TableAdapter e aggiungendovi codice, anziché aggiungere codice al file *DataSetName. DataSet. designer* . Le classi parziali consentono di dividere il codice per una classe specifica tra più file fisici. Per ulteriori informazioni, vedere [partial](/dotnet/visual-basic/language-reference/modifiers/partial) o [partial (Type)](/dotnet/csharp/language-reference/keywords/partial-type).

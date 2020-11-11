@@ -1,5 +1,5 @@
 ---
-title: Convenzioni di formattazione C++ EditorConfig
+title: Convenzioni di formattazione EditorConfig in C++
 titleSuffix: ''
 description: Informazioni su come usare EditorConfig per formattare il codice C++ in Visual Studio.
 ms.date: 9/14/2020
@@ -14,23 +14,23 @@ ms.topic: reference
 ms.workload:
 - cplusplus
 monikerRange: vs-2019
-ms.openlocfilehash: 31a7db73a4487267c2a74fe628d28b577d339aba
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: f248ede6a4bb45a58d64a346489124462f304a86
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90078841"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518544"
 ---
-# <a name="c-editorconfig-formatting-conventions"></a>Convenzioni di formattazione C++ EditorConfig
+# <a name="c-editorconfig-formatting-conventions"></a>Convenzioni di formattazione EditorConfig in C++
 
 Il formattatore di Visual Studio C++ dispone di un set completo di impostazioni configurabili che è possibile applicare a livello globale. Per impostare le impostazioni di formattazione C++ per un'area di lavoro specifica, usare [clangformat](https://clang.llvm.org/docs/ClangFormat.html) o [EditorConfig](https://editorconfig.org/). Visual Studio e Visual Studio Code includono il supporto EditorConfig incorporato per ognuna delle impostazioni di formattazione globali di Visual Studio C++, con le impostazioni EditorConfig che hanno la precedenza. Ciò significa che è possibile aggiungere i file EditorConfig all'area di lavoro per configurare la formattazione C++ a un livello più granulare e applicare uno stile di codice coerente per tutti gli utenti che contribuiscono al progetto.
 
 ## <a name="c-formatting-conventions"></a>Convenzioni di formattazione C++
 
-Le impostazioni di EditorConfig per la formattazione C++ sono precedute dal prefisso `_cpp__` . Di seguito è riportato un esempio di come potrebbe essere il file EditorConfig:
+Le impostazioni di EditorConfig per la formattazione C++ sono precedute dal prefisso `cpp_` . Di seguito è riportato un esempio di come potrebbe essere il file EditorConfig:
 
 ```ini
-[\*.{c++,cc,cpp,cxx,h,h++,hh,hpp,hxx,inl,ipp,tlh,tli}]
+[*.{c++,cc,cpp,cxx,h,h++,hh,hpp,hxx,inl,ipp,tlh,tli}]
 
 cpp_indent_case_contents_when_block = true
 cpp_new_line_before_open_brace_namespace = same_line
