@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: a4e0079fa301d751962a945a0bf8348ffd3c359d
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b5d2f8205c72f2fd661a76296392bb94d1d24469
+ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047787"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94531862"
 ---
 # <a name="whats-new-in-msbuild-160"></a>Novità di MSBuild 16.0
 
@@ -33,10 +33,14 @@ Questo articolo descrive le funzionalità e le proprietà aggiornate in MSBuild 
 
 - Il valore di `VisualStudioVersion` per questa versione degli strumenti è "16.0".
 
+## <a name="change-waves"></a>Modificare le onde
+
+A partire da MSBuild 16,8, è possibile scegliere in modo selettivo se rifiutare esplicitamente determinate modifiche potenzialmente dannose in MSBuild. Vedere [Change Waves](change-waves.md).
+
 ## <a name="updates"></a>Aggiornamenti
 
 MSBuild (e Visual Studio) ora fanno riferimento a .NET Framework 4.7.2. Se si desidera usare nuove funzionalità dell'API MSBuild, è necessario aggiornare anche l'assembly, ma il codice esistente continua a funzionare.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [MSBuild](../msbuild/msbuild.md)

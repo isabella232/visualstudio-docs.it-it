@@ -2,7 +2,7 @@
 title: Prestazioni XSLT
 description: Informazioni sul Profiler XSLT in Visual Studio che consente di creare report di prestazioni XSLT dettagliati che consentono di ottimizzare le prestazioni del codice XSLT.
 ms.custom: SEO-VS-2020
-ms.date: 03/05/2019
+ms.date: 11/11/2020
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 author: TerryGLee
@@ -10,12 +10,13 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4fd10df6a5cd91866633a46e1a512e91da2040
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+monikerRange: vs-2017
+ms.openlocfilehash: f2214ab4d66dcad1ee92eda7d7acbb94b89e8eb6
+ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351414"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94531888"
 ---
 # <a name="the-xslt-profiler"></a>Profiler XSLT
 
@@ -23,14 +24,14 @@ Il Profiler XSLT crea rapporti di prestazioni XSLT dettagliati utili per misurar
 
 Il Profiler XSLT è parte di Visual Studio ed è disponibile nel menu **XML** .
 
-![Profiler XSLT](../xml-tools/media/profile-xslt-menu.png)
+![Profiler XSLT](../xml-tools/media/profile-xslt-menu.png "Screenshot delle voci di menu XML in Visual Studio 2017")
 
 > [!NOTE]
-> Il Profiler XSLT è disponibile solo nell'edizione Enterprise di Visual Studio.
+> Il Profiler XSLT è disponibile solo nell'edizione Enterprise di Visual Studio 2017.
 
 ## <a name="create-a-performance-report"></a>Creazione di un report di prestazioni
 
-1. Aprire un documento XSLT in Visual Studio.
+1. Aprire un documento XSLT in Visual Studio 2017.
 
 2. Sulla barra dei menu scegliere profilo **XML**  >  **XSLT**.
 
