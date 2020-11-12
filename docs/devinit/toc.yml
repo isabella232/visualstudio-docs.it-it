@@ -80,7 +80,7 @@
           href: sample-eshoponweb.md
         - name: Repository OpenCV
           href: sample-opencv.md
-        - name: Anteprima privata di Codespaces
+        - name: Versione beta privata di Codespaces
           href: sample-private-preview.md
         - name: App .NET Core
           href: sample-dotnet-core.md

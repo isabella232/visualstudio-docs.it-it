@@ -275,7 +275,7 @@
     - name: Connettersi a un progetto o repository
       displayName: Azure DevOps VSTS GitHub
       href: ide/connect-team-project.md
-    - name: Nuova esperienza Git in Visual Studio (anteprima)
+    - name: Nuova esperienza Git in Visual Studio
       href: ide/git-with-visual-studio.md
     - name: Editor
       items:
