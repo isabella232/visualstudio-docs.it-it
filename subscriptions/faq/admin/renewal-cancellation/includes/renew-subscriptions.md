@@ -1,18 +1,18 @@
 ---
 title: Qual è la procedura per rinnovare le sottoscrizioni?
 description: 'Il processo per il rinnovo delle sottoscrizioni dipende dal modo in cui sono state acquistate. Vendita al dettaglio: Per le sottoscrizioni acquistate tramite Microsoft...'
-ms.faqid: group4_1
+ms.faqid: group4_2
 ms.topic: include
 ms.assetid: 754c7033-72db-49ea-b99b-cea892261834
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 3707dc584eb9aa7c200526efbe7815d19b4d1451
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: f8c116084401c7166ee8d93945a27b2c55c1542c
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91838369"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575434"
 ---
 ## <a name="how-do-i-renew-my-subscriptions"></a>Qual è la procedura per rinnovare le sottoscrizioni?
 
@@ -22,6 +22,6 @@ Vendita al dettaglio: per le sottoscrizioni acquistate tramite Microsoft Store, 
 
 Sottoscrizioni cloud: se si usano sottoscrizioni cloud, non è necessario rinnovarle. Vengono rinnovate automaticamente fino all'annullamento.
 
-Vedere altre informazioni sull'[acquisto di sottoscrizioni cloud](../../../../vscloud-overview.md).
+Vedere altre informazioni sull'[acquisto di sottoscrizioni cloud](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview).
 
 Contratti multilicenza: per rinnovare le sottoscrizioni acquistate tramite contratti multilicenza, contattare il rivenditore di riferimento. [Trovare un rivenditore](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) nella propria area.

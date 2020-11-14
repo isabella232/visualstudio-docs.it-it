@@ -11,16 +11,16 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7ba3ff8e22923590c21333c35563a98352eeef21
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 929be4682465494738d859f9fe8144b5e26aaf4f
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438236"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94626168"
 ---
 # <a name="devinit-and-github-codespaces"></a>devinit e GitHub Codespaces
 
-devinit è un ottimo complimento per i [codespace di GitHub](https://github.com/features/codespaces) e il devinit può essere usato per ottenere una configurazione dello spazio di codebase, in modo che i collaboratori possano creare, eseguire ed eseguire il debug immediatamente.
+devinit è un ottimo complemento per gli spazi codebase di [GitHub](https://github.com/features/codespaces) e il devinit può essere usato per ottenere un'installazione di codespace, in modo che i collaboratori possano creare, eseguire ed eseguire il debug immediatamente.
 
 > [!IMPORTANT]
 > Prima di integrare la devinit con lo spazio codespace, prima di tutto è necessario assicurarsi di disporre di un `.devinit.json` file che definisce le dipendenze. Per ulteriori informazioni su come creare un `.devinit.json` , leggere la [documentazione](getting-started-with-devinit.md)introduttiva.
@@ -31,7 +31,7 @@ Per assicurarsi che venga creato un codespace con le dipendenze necessarie per l
 
 È anche possibile eseguire `devinit init -f <path to .devinit.json>` dal terminale integrato di Visual Studio dopo essersi connessi al codespace.
 
-## <a name="examples"></a>Esempi
+## <a name="examples"></a>Esempio
 
 In entrambi gli esempi riportati di seguito il `.devinit.json` si trova nella radice del repository insieme a `.devcontainer.json` .
 

@@ -1,6 +1,6 @@
 ---
 title: Opzioni, Editor di testo, C#, Avanzate
-ms.date: 08/12/2020
+ms.date: 11/13/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
@@ -10,16 +10,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acd04f80d5ade3a4afea418def69d4bbb6e20fa0
+ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88214671"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94626196"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opzioni, Editor di testo, C#, Avanzate
 
-Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di formattazione dell'editor, di refactoring del codice e dei commenti in formato documentazione XML per C#. Per accedere a questa pagina di opzioni, scegliere **strumenti**  >  **Opzioni**e quindi scegliere **editor di testo**  >  **C#**  >  **Avanzate**.
+Usare la pagina di opzioni **Avanzate** per modificare le impostazioni di formattazione dell'editor, di refactoring del codice e dei commenti in formato documentazione XML per C#. Per accedere a questa pagina di opzioni, scegliere **strumenti**  >  **Opzioni** e quindi scegliere **editor di testo**  >  **C#**  >  **Avanzate**.
 
 > [!NOTE]
 > È possibile che non tutte le opzioni siano elencate.
@@ -134,6 +134,12 @@ Selezionare queste caselle di controllo per visualizzare le linee verticali punt
     Quando questa opzione è selezionata, inserisce gli hint per i nomi di parametro per i valori letterali, i valori letterali sottoposta a cast e le creazioni di istanze degli oggetti prima di ogni argomento  
     
     ![Hint per i nomi di parametri inline per CSharp](media/inline-parameter-name-hints-csharp.png)
+
+- Hint di tipo inline 
+    
+    Quando questa opzione è selezionata, inserisce hint di tipo per le variabili con tipi dedotti e tipi di parametri lambda.  
+    
+    ![Hint di tipo inline per CSharp](media/inline-type-hints-csharp.png)
 ::: moniker-end
 - Genera commenti relativi alla documentazione XML per ///
 

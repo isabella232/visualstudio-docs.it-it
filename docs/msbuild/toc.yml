@@ -6,6 +6,8 @@
       href: whats-new-msbuild-16-0.md
     - name: Novità di MSBuild 15.0
       href: what-s-new-in-msbuild-15-0.md
+    - name: Flussi di modifiche
+      href: change-waves.md
     - name: Concetti relativi a MSBuild
       items:
         - name: Panoramica

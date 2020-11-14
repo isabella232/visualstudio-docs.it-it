@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 11/10/2020
+ms.date: 11/12/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 7fefe17c56a347521f91a7d636d628248b712f4d
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: 1a1807102fc0f8b62d9cf4830783de1f5348499b
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492906"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575463"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -27,8 +27,9 @@ ms.locfileid: "94492906"
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2019.
 
-| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.8.1 | Versione | 12 novembre 2020 | 16.8.30711.63 |
 | 16.9.0 | Preview 1 | 10 novembre 2020 | 16.9.30709.64 |
 | 16.7.8 | Versione | 10 novembre 2020 | 16.7.30704.19 |
 | 16.4.15 | Versione | 10 novembre 2020 | 16.4.30703.110 |
@@ -190,7 +191,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
-| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.29 | Versione | 10 novembre 2020 | 15.9.28307.1300 |
 | 15.9.28 | Versione | 13 ottobre 2020 | 15.9.28307.1274 |

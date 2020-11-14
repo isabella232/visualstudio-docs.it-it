@@ -7,16 +7,16 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 69ecab4f4d3dd7d99821b384dbda0c8986297282
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: f3c1c528e9201c66bc566f9867f8325c653700b9
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492841"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575541"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduzione alle funzioni di Azure
 
-Le funzioni di Azure sono un metodo per la creazione e l'esecuzione di frammenti di codice gestiti dagli eventi (funzioni) nel cloud, senza richiedere l'aggiunta o la gestione esplicita di elementi di infrastruttura. Per altre informazioni sulle funzioni di Azure, vedere la [documentazione di Funzioni di Azure](/azure/azure-functions/).
+Funzioni di Azure consente di creare ed eseguire frammenti di codice basati sugli eventi, ovvero funzioni, nel cloud, senza dover effettuare esplicitamente il provisioning o la gestione dell'infrastruttura. Per altre informazioni sulle funzioni di Azure, vedere la [documentazione di Funzioni di Azure](/azure/azure-functions/).
 
 ## <a name="requirements"></a>Requisiti
 
@@ -29,15 +29,15 @@ Per creare e distribuire funzioni è necessaria anche una sottoscrizione di Azur
 1. In Visual Studio per Mac selezionare **File > nuova soluzione**.
 2. Nella finestra di dialogo Nuovo progetto, selezionare il modello Funzioni di Azure in **Cloud > Generale** e fare clic su **Avanti** :
 
-    ![Finestra Nuovo progetto con l'opzione Funzioni di Azure](media/azure-functions-image1.png)
+    ![Finestra di dialogo nuovo progetto con l'opzione funzioni di Azure](media/azure-functions-image1.png)
 
 3. Selezionare il modello iniziale di Funzioni di Azure che si desidera usare, immettere il nome della funzione e fare clic su **Avanti**.
 
-    ![Finestra Nuovo progetto che mostra i modelli di funzioni di Azure](media/azure-functions-image2.png)
+    ![Finestra di dialogo nuovo progetto con i modelli di funzioni di Azure](media/azure-functions-image2.png)
 
     > [!TIP]
     > Anche se si cerca di mantenere il più possibile aggiornati il runtime e i modelli di Funzioni di Azure (interfaccia della riga di comando) in bundle, è inevitabile che diventino obsoleti. Quando si crea un nuovo progetto Funzioni, Visual Studio per Mac controlla la disponibilità di aggiornamenti per l'interfaccia della riga di comando e invia una notifica come illustrato nell'immagine seguente. È sufficiente fare clic sul pulsante per scaricare i modelli aggiornati.
-    > ![Finestra Nuovo progetto che mostra che sono disponibili aggiornamenti per le funzioni di Azure](media/azure-functions-update.png)
+    > ![Finestra di dialogo nuovo progetto che Mostra gli aggiornamenti di funzioni di Azure disponibili](media/azure-functions-update.png)
 
     A seconda del tipo di funzione selezionato, nella pagina successiva verrà richiesto di immettere i dettagli, ad esempio i diritti di accesso, come illustrato nell'immagine seguente:
 
@@ -147,15 +147,15 @@ Un'altra impostazione importante che potrebbe essere necessario impostare è `FU
   - Http POST CRUD
   - Trigger HTTP con parametri
 
-- **Timer** : consente di eseguire attività di pulizia o altre attività batch in una pianificazione predefinita. Questo modello supporta due campi: un nome e una pianificazione, ovvero un'espressione CRON a sei campi. Per altre informazioni, vedere [l'articolo di Funzioni di Azure con timer](/azure/azure-functions/functions-create-scheduled-function)
+- **Timer** : consente di eseguire attività di pulizia o altre attività batch in una pianificazione predefinita. Questo modello supporta due campi: un nome e una pianificazione, ovvero un'espressione CRON a sei campi. Per altre informazioni, vedere l' [articolo relativo alle funzioni di Azure in tempo](/azure/azure-functions/functions-create-scheduled-function)
 
-- **Trigger Queue** : funzione che risponde ai messaggi quando raggiungono la coda di Archiviazione di Azure. Oltre al nome della funzione, questo modello accetta una proprietà **Path** (nome della coda dalla quale verrà letto il messaggio) e una proprietà **Connection** dell'account di archiviazione (nome dell'impostazione dell'app che contiene la stringa di connessione dell'account di archiviazione). Per altre informazioni, vedere l'[articolo di Funzioni di Azure sull'archiviazione code](/azure/azure-functions/functions-create-storage-queue-triggered-function).
+- **Trigger Queue** : funzione che risponde ai messaggi quando raggiungono la coda di Archiviazione di Azure. Oltre al nome della funzione, questo modello accetta una proprietà **Path** (nome della coda dalla quale verrà letto il messaggio) e una proprietà **Connection** dell'account di archiviazione (nome dell'impostazione dell'app che contiene la stringa di connessione dell'account di archiviazione). Per altre informazioni, vedere l' [articolo relativo alle funzioni di Azure nell'archivio code](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 
-- **Trigger BLOB** : elabora i BLOB di Archiviazione di Azure quando vengono aggiunti a un contenitore. Oltre al nome della funzione, questo modello accetta proprietà Path e Connection. La proprietà Path è il percorso dell'account di archiviazione che verrà monitorato dal trigger. L'account di connessione è il nome dell'impostazione dell'app contenente la stringa di connessione dell'account di archiviazione. Per altre informazioni, vedere l'[articolo di Funzioni di Azure sull'archiviazione BLOB](/azure/azure-functions/functions-create-storage-blob-triggered-function).
+- **Trigger BLOB** : elabora i BLOB di Archiviazione di Azure quando vengono aggiunti a un contenitore. Oltre al nome della funzione, questo modello accetta proprietà Path e Connection. La proprietà Path è il percorso dell'account di archiviazione che verrà monitorato dal trigger. L'account di connessione è il nome dell'impostazione dell'app contenente la stringa di connessione dell'account di archiviazione. Per altre informazioni, vedere l' [articolo sull'archiviazione BLOB di funzioni di Azure](/azure/azure-functions/functions-create-storage-blob-triggered-function).
 
-- **WebHook generico** : funzione semplice che viene eseguita ogni volta che riceve una richiesta da un servizio che supporta i webhook. Per altre informazioni, vedere l'[articolo di Funzioni di Azure sui webhook generici](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
+- **WebHook generico** : funzione semplice che viene eseguita ogni volta che riceve una richiesta da un servizio che supporta i webhook. Per altre informazioni, vedere l' [articolo relativo alle funzioni di Azure sui webhook generici](/azure/azure-functions/functions-create-generic-webhook-triggered-function).
 
-- **Gestione di Funzioni durevoli** : Funzioni durevoli consente di creare funzioni con stato in un ambiente senza server. L'estensione gestisce automaticamente lo stato, i checkpoint e i riavvii. Per altre informazioni, vedere le sezioni relative alle funzioni di Azure in [Funzioni durevoli](/azure/azure-functions/durable-functions-overview).
+- **Gestione di Funzioni durevoli** : Funzioni durevoli consente di creare funzioni con stato in un ambiente senza server. L'estensione gestisce automaticamente lo stato, i checkpoint e i riavvii. Per altre informazioni, vedere le guide di funzioni di Azure sulle [funzioni permanenti](/azure/azure-functions/durable-functions-overview).
 
 - **Image Resizer** : questa funzione crea immagini ridimensionate ogni volta che un BLOB viene aggiunto a un contenitore. Il modello accetta un percorso e una stringa di connessione per il trigger, un output immagine di piccole dimensioni e un output immagine di medie dimensioni.
 
