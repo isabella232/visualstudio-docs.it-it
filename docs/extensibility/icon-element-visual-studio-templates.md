@@ -1,5 +1,7 @@
 ---
 title: Elemento Icon (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento Icon e sul modo in cui specifica il percorso e il nome del file di immagine che funge da icona.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff725e2db0d74e571b8c41d8a8aa80228938fbff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 059105b9d188c0e7a81252172aa2d1bf7002420c
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710524"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672691"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Elemento Icon (modelli di Visual Studio)
 Specifica il percorso e il nome del file di immagine che funge da icona, che viene visualizzata nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** per il modello.
@@ -62,7 +64,7 @@ Specifica il percorso e il nome del file di immagine che funge da icona, che vie
 
  Il testo fornisce il percorso e il nome del file dell'icona del modello che verrà visualizzata nella finestra di dialogo **nuovo progetto** .
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `Icon` è un elemento figlio obbligatorio di `TemplateData`.
 
 ## <a name="example"></a>Esempio

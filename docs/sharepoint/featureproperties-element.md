@@ -1,5 +1,7 @@
 ---
 title: Elemento FeatureProperties | Microsoft Docs
+description: Visualizzare le informazioni di riferimento sull'elemento FeatureProperties, che è un elemento nello schema dell'elemento del progetto SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6860a91067daa6da1d4223ae5060385087ad3433
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ee2bddec02263a889fb1f69088a8a50b3d8b57d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967331"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672600"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties (elemento)
   Raccolta di valori di proprietà inclusi in una funzionalità quando viene distribuita in SharePoint. Dopo la distribuzione di una funzionalità, è possibile accedere ai valori delle proprietà nel codice.
@@ -48,7 +50,7 @@ ms.locfileid: "62967331"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Rappresenta un elemento del progetto SharePoint. Questo elemento è l'elemento radice obbligatorio del `.spdata` file.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Per ulteriori informazioni sulle proprietà delle funzionalità, vedere [fornire informazioni sulla creazione di pacchetti e sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Informazioni sull'elemento

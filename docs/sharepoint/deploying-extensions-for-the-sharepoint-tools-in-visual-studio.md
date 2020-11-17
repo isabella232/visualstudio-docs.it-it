@@ -1,5 +1,7 @@
 ---
 title: Distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio | Microsoft Docs
+description: Distribuire estensioni per gli strumenti di SharePoint in Visual Studio. Usare progetti di estensione Visual Studio (VSIX) per creare pacchetti VSIX.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8178a660f757ae7d7c2758c76d6fd0fc4b22918f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9c8b05b5cb74a28157436f95f01992515c716e6a
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584703"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672678"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Distribuire estensioni per gli strumenti di SharePoint in Visual Studio
 
@@ -130,7 +132,7 @@ Nelle procedure seguenti viene descritto come aggiungere voci al file con estens
 
 5. Nell'elenco **progetto** , scegliere il nome del progetto, quindi scegliere il pulsante **OK** .
 
-6. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto di modello di progetto o di elemento, quindi scegliere **Scarica progetto**.
+6. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto di modello di progetto o di elemento, quindi scegliere **Scarica progetto**.
 
 7. Aprire di nuovo il menu di scelta rapida per il nodo del progetto, quindi scegliere **modifica**_NomeProgettoModello_**. csproj** o **modifica**_NomeProgettoModello_**. vbproj**.
 
@@ -152,7 +154,7 @@ Nelle procedure seguenti viene descritto come aggiungere voci al file con estens
 
 10. Salvare e chiudere il file.
 
-11. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto modello di progetto o modello di elemento, quindi scegliere **Ricarica progetto**.
+11. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto modello di progetto o modello di elemento, quindi scegliere **Ricarica progetto**.
 
 #### <a name="to-include-a-template-that-you-create-manually"></a>Per includere un modello creato manualmente
 
@@ -172,7 +174,7 @@ Nelle procedure seguenti viene descritto come aggiungere voci al file con estens
 
      Se, ad esempio, si dispone di un modello di elemento denominato ContosoCustomAction.zip che supporta le impostazioni locali per la lingua inglese (Stati Uniti), il percorso completo può essere *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*.
 
-3. In **Esplora soluzioni**scegliere il file modello (*YourTemplateName*. zip).
+3. In **Esplora soluzioni** scegliere il file modello (*YourTemplateName*. zip).
 
 4. Nella finestra **Proprietà** impostare la proprietà **azione di compilazione** su **contenuto**.
 
@@ -206,7 +208,7 @@ Nelle procedure seguenti viene descritto come aggiungere voci al file con estens
 
     - Se l'assembly della procedura guidata viene compilato da un progetto che si trova nella stessa soluzione del progetto VSIX, scegliere **un progetto nella soluzione corrente**. Nell'elenco **progetto** scegliere il nome del progetto.
 
-    - Se l'assembly della procedura guidata è incluso come file nel progetto, scegliere **file**nel file System. Nel campo **percorso** immettere il percorso completo del file di assembly oppure usare il pulsante **Sfoglia** per individuare e scegliere l'assembly.
+    - Se l'assembly della procedura guidata è incluso come file nel progetto, scegliere **file** nel file System. Nel campo **percorso** immettere il percorso completo del file di assembly oppure usare il pulsante **Sfoglia** per individuare e scegliere l'assembly.
 
 5. Fare clic su **OK** .
 
@@ -265,7 +267,7 @@ Nell'esempio seguente viene illustrato il contenuto di un file Extension. vsixma
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Estendere il sistema del progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Estendere il nodo connessioni di SharePoint in Esplora server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)

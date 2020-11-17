@@ -2,18 +2,18 @@
 title: Esperienza git in Visual Studio
 titleSuffix: ''
 description: Scopri in che modo la nuova esperienza git integrata in Visual Studio 2019 può aiutarti a migliorare la produttività.
-ms.date: 11/13/2020
+ms.date: 11/16/2020
 ms.topic: conceptual
 ms.author: tglee
-author: prnadago
+author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: cf2f55f64eff13e9f7966ac21decf669c36284bd
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.openlocfilehash: 621aed831e55d2fca1fda7063f8c10f859ca5157
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94626268"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672522"
 ---
 # <a name="git-experience-in-visual-studio"></a>Esperienza git in Visual Studio
 
@@ -30,9 +30,12 @@ Verrà illustrato come usare la nuova esperienza git in Visual Studio 2019, ma s
 
 Sono disponibili tre modi per iniziare a usare git con Visual Studio per aumentare la produttività:
 
-- [Aprire un repository Git esistente](#open-an-existing-local-repository). Se il codice è già presente nel computer, è possibile aprirlo usando **file**  >  **Apri**  >  **progetto/soluzione** (o **cartella** ) e Visual Studio rileva automaticamente se dispone di un repository git inizializzato.
+- [Aprire un repository Git esistente](#open-an-existing-local-repository). Se il codice è già presente nel computer, è possibile aprirlo usando **file**  >  **Apri**  >  **progetto/soluzione** (o **cartella**) e Visual Studio rileva automaticamente se dispone di un repository git inizializzato.
 - [Creare un nuovo repository git](#create-a-new-git-repository). Se il codice non è associato a git, è possibile creare un nuovo repository git.
 - [Clonare un repository Git esistente](#clone-an-existing-git-repository). Se il codice su cui si vuole lavorare non è presente nel computer, è possibile clonare tutti i repository remoti esistenti.
+
+> [!NOTE]
+> Visual Studio 2019 offre ora un'esperienza di account GitHub completamente integrata. A partire dalla [versione 16,8](/visualstudio/releases/2019/release-notes/), è possibile aggiungere account di GitHub e GitHub Enterprise al keychain. Potrai aggiungerli e usarli come con gli account Microsoft, il che significa che avrai a disposizione un momento più semplice per accedere alle risorse di GitHub in Visual Studio. Per altre informazioni, vedere la pagina [work with GitHub Accounts in Visual Studio](work-with-github-accounts.md) .
 
 ## <a name="create-a-new-git-repository"></a>Creare un nuovo repository git
 
@@ -79,8 +82,8 @@ Visual Studio regola la visualizzazione in base al file di visualizzazione caric
 
 Git tiene traccia delle modifiche apportate ai file nel repository mentre si lavora e separa i file del repository in tre categorie. Queste modifiche sono equivalenti a quanto visualizzato quando si immette il `git status` comando nella riga di comando:
 
-- **File non modificati** : questi file non sono stati modificati dopo l'ultimo commit.
-- **File modificati** : questi file presentano modifiche rispetto all'ultimo commit, ma non sono stati ancora gestiti per il commit successivo.
+- **File non modificati**: questi file non sono stati modificati dopo l'ultimo commit.
+- **File modificati**: questi file presentano modifiche rispetto all'ultimo commit, ma non sono stati ancora gestiti per il commit successivo.
 - **File** di gestione temporanea: questi file contengono modifiche che verranno aggiunte al commit successivo.
 
 Quando si esegue il lavoro, Visual Studio tiene traccia delle modifiche apportate ai file nel progetto nella sezione **modifiche** della finestra **modifiche git** .
@@ -142,7 +145,7 @@ L'indicatore funziona anche come collegamento per passare alla cronologia di com
 
 #### <a name="commit-details"></a>Dettagli commit
 
-Quando si fa doppio clic su un **commit** , Visual Studio apre i dettagli in una finestra degli strumenti separata. Da qui è possibile ripristinare il commit, reimpostare il commit, modificare il messaggio di commit o creare un tag nel commit. Quando si fa clic su un file modificato nel commit, Visual Studio apre la visualizzazione delle **differenze** affiancata del commit e del relativo elemento padre.
+Quando si fa doppio clic su un **commit**, Visual Studio apre i dettagli in una finestra degli strumenti separata. Da qui è possibile ripristinare il commit, reimpostare il commit, modificare il messaggio di commit o creare un tag nel commit. Quando si fa clic su un file modificato nel commit, Visual Studio apre la visualizzazione delle **differenze** affiancata del commit e del relativo elemento padre.
 
 :::image type="content" source="media/git-branch-commit-details.png" alt-text="Screenshot della finestra di dialogo Dettagli commit in Visual Studio ":::
 
@@ -154,7 +157,7 @@ Visual Studio semplifica l'identificazione e la risoluzione di un conflitto di m
 
 :::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Screenshot del messaggio &quot;merge completato con conflitti&quot; in Visual Studio ":::
 
-La finestra **modifiche git** Visualizza anche un messaggio " *merge is in progress with Conflicts* ", con i file non Uniti nella relativa sezione separata sotto.
+La finestra **modifiche git** Visualizza anche un messaggio "*merge is in progress with Conflicts*", con i file non Uniti nella relativa sezione separata sotto.
 
 :::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Screenshot del messaggio ' Unione in corso con conflitti ' in Visual Studio ":::
 
@@ -204,4 +207,5 @@ Anche se la nuova esperienza git è ora attiva per impostazione predefinita in V
 - [La serie di strumenti di Visual Studio presenta: il nuovo video sull'esperienza git](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) su Channel 9 e su [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)
 - [Nuovi aggiornamenti interessanti per l'esperienza git nel](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/) post di Blog di Visual Studio
 - [Esperienza git migliorata nel post di Blog di Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)
+- [Utilizzare gli account GitHub in Visual Studio](work-with-github-accounts.md)
 - [Note sulla versione di Visual Studio 2019](/visualstudio/releases/2019/release-notes)

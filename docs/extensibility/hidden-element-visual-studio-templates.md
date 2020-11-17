@@ -1,5 +1,7 @@
 ---
 title: Elemento Hidden (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento nascosto e su come specifica se il modello viene visualizzato nelle finestre di dialogo nuovo progetto o Aggiungi nuovo elemento.
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04cb966f21bbb501545f1a203297d06f8e852793
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711115"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672700"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Elemento Hidden (modelli di Visual Studio)
 
@@ -61,7 +63,7 @@ Nessuno.
 
 Il testo deve essere `true` o `false` , che indica se il modello verrà visualizzato nelle finestre di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** .
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 `Hidden` è un elemento facoltativo.
 

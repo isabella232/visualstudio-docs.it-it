@@ -1,5 +1,7 @@
 ---
 title: Distribuire, pubblicare & aggiornare i pacchetti della soluzione SharePoint
+description: Distribuire, pubblicare e aggiornare i pacchetti della soluzione SharePoint. Personalizzare il processo di distribuzione. Pubblicare i pacchetti in un server remoto o locale.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 574712b870256fa7422e64a3c29ae8733f4c2251
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ab97efc82575c31c8e05b73063c2b53a09691d2d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583879"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672665"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Distribuire, pubblicare e aggiornare i pacchetti della soluzione SharePoint
   Dopo aver sviluppato una soluzione SharePoint in Visual Studio, è possibile distribuire il file di pacchetto (con estensione wsp) in un server SharePoint locale o pubblicarlo in un server SharePoint locale o remoto. Se si distribuiscono i file, è possibile personalizzare la modalità di distribuzione dei file del pacchetto (con estensione wsp).
@@ -64,5 +66,5 @@ ms.locfileid: "91583879"
 ### <a name="upgrade-published-packages"></a>Aggiornare i pacchetti pubblicati
  Se si apportano modifiche a un progetto SharePoint in Visual Studio dopo la pubblicazione, è necessario aggiornare il pacchetto pubblicato per includere le modifiche. Per eseguire correttamente l'aggiornamento, un pacchetto deve avere un nome univoco. Se nel sito di SharePoint viene trovato un pacchetto con lo stesso nome, che può verificarsi durante l'aggiornamento di un'applicazione esistente, viene visualizzato un errore che segnala il conflitto con il nome del file e consente di rinominare il pacchetto. Dopo la ripubblicazione, il nuovo pacchetto viene visualizzato nel sito di SharePoint e può essere aggiornato. Un pacchetto aggiornato aggiorna la soluzione usando i dati del pacchetto precedente e quindi attiva la soluzione in SharePoint. Per ulteriori informazioni, vedere [procedura: distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

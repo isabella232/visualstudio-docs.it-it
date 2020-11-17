@@ -1,5 +1,7 @@
 ---
 title: Creazione di Web part per SharePoint | Microsoft Docs
+description: Creazione di Web part per SharePoint. Utilizzando Web part è possibile modificare il contenuto, l'aspetto e il comportamento delle pagine di un sito di SharePoint tramite un browser.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4824c358f81f2cf757f037611ed70ba9b8935130
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: bc9427d561817cb115473bddc71f2ba63475427e
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740157"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672795"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Creazione di Web part per SharePoint
   Utilizzando Web part è possibile modificare il contenuto, l'aspetto e il comportamento delle pagine di un sito di SharePoint tramite un browser. Le web part sono controlli lato server che vengono eseguiti all'interno di una pagina Web part: si tratta dei blocchi predefiniti di pagine visualizzate in un sito di SharePoint. Vedere [blocco predefinito: Web part](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
@@ -52,7 +54,7 @@ ms.locfileid: "90740157"
  Per ulteriori informazioni, vedere [procedura: creare una Web part di SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).
 
 ### <a name="visual-web-part-item"></a>Elemento Web part visiva
- Una Web part visiva è una Web part creata mediante la finestra di progettazione di Visual Web Developer in Visual Studio. Una Web part visiva funziona allo stesso modo di qualsiasi altra web part. Per aggiungere controlli, ad esempio pulsanti e caselle di testo, a una Web part, è necessario aggiungere codice a un file XML. Tuttavia, per aggiungere controlli a una Web part visiva, è possibile trascinarli o copiarli nella web part dalla **casella degli strumenti**di Visual Studio. La finestra di progettazione genera quindi il codice richiesto nel file XML. Vedere [procedura: creare una Web part di SharePoint tramite una finestra di progettazione](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
+ Una Web part visiva è una Web part creata mediante la finestra di progettazione di Visual Web Developer in Visual Studio. Una Web part visiva funziona allo stesso modo di qualsiasi altra web part. Per aggiungere controlli, ad esempio pulsanti e caselle di testo, a una Web part, è necessario aggiungere codice a un file XML. Tuttavia, per aggiungere controlli a una Web part visiva, è possibile trascinarli o copiarli nella web part dalla **casella degli strumenti** di Visual Studio. La finestra di progettazione genera quindi il codice richiesto nel file XML. Vedere [procedura: creare una Web part di SharePoint tramite una finestra di progettazione](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
 
 ## <a name="sharepoint-controls"></a>Controlli di SharePoint
  Visual Studio fornisce alcuni controlli per la creazione di pagine di SharePoint, ad esempio le pagine dell'applicazione. Questi controlli vengono visualizzati nella **casella degli strumenti** in **controlli di SharePoint**. La funzionalità per questi controlli deriva dallo spazio dei nomi [Microsoft. SharePoint. WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15)) , che contiene i controlli server ASP.NET che vengono utilizzati nelle pagine del sito e dell'elenco di SharePoint.

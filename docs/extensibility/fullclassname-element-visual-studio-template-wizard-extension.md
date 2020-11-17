@@ -1,5 +1,7 @@
 ---
 title: Elemento FullClassName (estensione della creazione guidata modelli VS)
+description: Informazioni sull'elemento FullClassName e su come è il nome completo della classe che implementa l'interfaccia IWizard.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed9ceb57f49d8c08b75aa140e45a0f4268f4336c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 987a97a34c846f93ef52765375c1512dd8968fb1
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769595"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672743"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Elemento FullClassName (estensione della creazione guidata modelli di Visual Studio)
 Nome completo della classe che implementa l' `IWizard` interfaccia.
@@ -35,7 +37,7 @@ Nome completo della classe che implementa l' `IWizard` interfaccia.
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
  Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -52,7 +54,7 @@ Nome completo della classe che implementa l' `IWizard` interfaccia.
 
  Questo testo specifica la classe che implementa l' `IWizard` interfaccia. La classe specificata deve esistere nell'assembly specificato dall'elemento [assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) .
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `FullClassName` è un elemento figlio obbligatorio di `WizardExtension`.
 
 ## <a name="example"></a>Esempio

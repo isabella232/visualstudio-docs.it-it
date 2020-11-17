@@ -1,5 +1,7 @@
 ---
 title: Sviluppo di soluzioni SharePoint | Microsoft Docs
+description: Sviluppare soluzioni SharePoint. Conosce gli elementi di un progetto SharePoint. Informazioni sulle proprietà del progetto e dell'elemento di progetto SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 36823637c530d65776c149ff576bf5e7e0ca545f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 755723dd2ae309e971e86852646ee33d2caa22cf
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016791"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672821"
 ---
 # <a name="develop-sharepoint-solutions"></a>Sviluppare soluzioni SharePoint
   In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sono disponibili diversi modelli di tipi di progetto SharePoint per la creazione di siti ed elementi dei siti SharePoint. Per un elenco dei tipi di progetto disponibili, vedere [modelli di progetto e di elementi di progetto SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md). Di seguito è riportata una descrizione degli elementi e delle proprietà di un progetto SharePoint.
@@ -47,7 +49,7 @@ ms.locfileid: "86016791"
 
  Per aggiungere manualmente una funzionalità, eseguire il comando **Aggiungi funzionalità** dal menu di scelta rapida del nodo della funzionalità. Mediante la finestra di progettazione delle funzionalità, è possibile visualizzare o modificare il contenuto di una funzionalità. Per altre informazioni, vedere [procedura: personalizzare una funzionalità di SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).
 
- Quando una funzionalità viene aggiunta a un progetto SharePoint, viene visualizzata in **Esplora soluzioni** come nodo con il nome predefinito Feature*x*.feature, dove *x* è un numero univoco. Dopo che una funzionalità viene distribuita nel server SharePoint, un amministratore di SharePoint può attivarla e renderla disponibile agli utenti del sito SharePoint.
+ Quando una funzionalità viene aggiunta a un progetto SharePoint, viene visualizzata in **Esplora soluzioni** come nodo con il nome predefinito Feature *x*.feature, dove *x* è un numero univoco. Dopo che una funzionalità viene distribuita nel server SharePoint, un amministratore di SharePoint può attivarla e renderla disponibile agli utenti del sito SharePoint.
 
 #### <a name="package-node"></a>Nodo pacchetto
  Il nodo **Pacchetto** contiene un singolo file che serve come meccanismo di distribuzione per il progetto SharePoint. Questo file, noto come *pacchetto della soluzione*, è. Basato su CAB con un. Estensione WSP. Un pacchetto della soluzione è un file distribuibile e riutilizzabile che contiene un set di funzionalità, definizioni dei siti e assembly che è possibile applicare ai siti SharePoint, nonché abilitare o disabilitare individualmente. Il nodo **Pacchetto** contiene sempre anche un file denominato Package.wspdef, un file di definizione [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] per il pacchetto. Quando un pacchetto viene distribuito nel server che esegue SharePoint, l'amministratore di SharePoint può installarlo e attivare le relative funzionalità.
@@ -101,7 +103,7 @@ ms.locfileid: "86016791"
 |Percorso di distribuzione|Percorso completo del file nel server SharePoint. Questo percorso è composto dalle sottoproprietà Radice distribuzione e Percorso distribuzione|
 |Percorso distribuzione|Percorso relativo del file nel file del server SharePoint, ad esempio Workflow1 \\ . Il percorso completo per il file viene creato concatenando il valore *Deployment Path* alla fine del valore *Deployment Root* .<br /><br /> Se si seleziona il valore *RootFile* per la proprietà *tipo di distribuzione* , la proprietà radice della *distribuzione* viene modificata in \<SharePointRoot> \\ , ottenendo un percorso completo di \<SharePointRoot> \Workflow1 \\ . Per ulteriori informazioni, vedere Creazione di [pacchetti e distribuzione di soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|
 |Deployment Root|Stringa. Cartella radice in cui viene distribuito il file nel server SharePoint. Ad esempio, \<SharePointRoot> \Template\Features \\ \<FeatureName> \\ .<br /><br /> Il valore della proprietà *Deployment Root* è determinato dall'impostazione di *Deployment Type* .|
-|Tipo di distribuzione|Tipo di distribuzione del file, che determina il valore di *Deployment Root* . I possibili valori sono i seguenti:<br /><br /> NoDeployment *\<no value>*<br /><br /> ElementManifest: * \<SharePointRoot> \Template\Features \\ \<FeatureName> *\\<br /><br /> ElementFile: * \<SharePointRoot> \\ \<FeatureName> \Template\Features \\ *<br /><br /> TemplateFile: * \<SharePointRoot> \Template \\ *<br /><br /> RootFile *\<SharePointRoot>\\*<br /><br /> GlobalResource: * \<SharePointRoot> \Resources \\ *<br /><br /> ClassResource *\<ClassResourcePath>\\*<br /><br /> Per altre informazioni, vedere <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
+|Tipo di distribuzione|Tipo di distribuzione del file, che determina il valore di *Deployment Root* . I possibili valori sono i seguenti:<br /><br /> NoDeployment *\<no value>*<br /><br /> ElementManifest: *\<SharePointRoot> \Template\Features \\ \<FeatureName>*\\<br /><br /> ElementFile: *\<SharePointRoot> \\ \<FeatureName> \Template\Features \\*<br /><br /> TemplateFile: *\<SharePointRoot> \Template \\*<br /><br /> RootFile *\<SharePointRoot>\\*<br /><br /> GlobalResource: *\<SharePointRoot> \Resources \\*<br /><br /> ClassResource *\<ClassResourcePath>\\*<br /><br /> Per altre informazioni, vedere <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|
 |File Name|Nome del file o della cartella per il file dell'elemento.|
 |Percorso completo|Percorso del file per l'elemento (sola lettura).|
 

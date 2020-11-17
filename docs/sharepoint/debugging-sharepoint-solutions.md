@@ -1,5 +1,7 @@
 ---
 title: Debug di soluzioni SharePoint | Microsoft Docs
+description: Eseguire il debug di soluzioni SharePoint tramite il debugger di Visual Studio. Esplorare il processo di debug e distribuzione F5, i flussi di lavoro di debug e i ricevitori di eventi di funzionalità di debug.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d83c8ffd4fe5ebb627b70fa07f010bdc713225dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0bd1996f5d42561cb2d44879ab702d6b6c4b4f7
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984482"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672860"
 ---
 # <a name="debug-sharepoint-solutions"></a>Debug di soluzioni SharePoint
   È possibile eseguire il debug di soluzioni SharePoint tramite il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger. Quando si avvia il debug, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] distribuisce i file di progetto nel server SharePoint e quindi apre un'istanza del sito di SharePoint nel Web browser. Nelle sezioni seguenti viene illustrato come eseguire il debug di applicazioni SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -118,7 +120,7 @@ ms.locfileid: "72984482"
 ## <a name="sharepoint-project-features"></a>Funzionalità di progetto SharePoint
  Una funzionalità è un'unità modulare e portatile che semplifica la modifica dei siti usando le definizioni dei siti. È anche un pacchetto di [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] elementi (WSS) che può essere attivato per un ambito specifico e che consente agli utenti di realizzare un obiettivo o un'attività specifica. I modelli vengono distribuiti come funzionalità.
 
- Quando si esegue un progetto in modalità di debug, il processo di distribuzione crea una cartella nella directory della *funzionalità* in *%COMMONPROGRAMFILES%\Microsoft Shared\Web server extensions\14\TEMPLATE\FEATURES*. I nomi delle funzionalità hanno il formato *nome del progetto*_Feature*x*, ad esempio TestProject_Feature1.
+ Quando si esegue un progetto in modalità di debug, il processo di distribuzione crea una cartella nella directory della *funzionalità* in *%COMMONPROGRAMFILES%\Microsoft Shared\Web server extensions\14\TEMPLATE\FEATURES*. I nomi delle funzionalità hanno il formato *nome del progetto* _Feature *x*, ad esempio TestProject_Feature1.
 
  La cartella della soluzione nella directory della funzionalità contiene un file di *definizione delle funzionalità* e un file di *definizione del flusso di lavoro* . Il file di definizione delle funzionalità (Feature.xml) descrive i file della funzionalità del progetto. il file di definizione del progetto (*Elements.xml*) descrive il modello di progetto. *Elements.xml* è possibile trovare in **Esplora soluzioni**, ma Feature.xml viene generato quando viene creato il pacchetto della soluzione. Per ulteriori informazioni su questi file, vedere [modelli di progetto e di elementi di progetto SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
@@ -140,7 +142,7 @@ ms.locfileid: "72984482"
 ## <a name="enable-enhanced-debugging-information"></a>Abilita informazioni di debug avanzate
  A causa delle interazioni a volte complesse tra il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] processo (devenv.exe), il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] processo host di sharepoint (*vssphost4.exe*), SharePoint e il livello WCF, la diagnosi degli errori che si verificano durante la compilazione, la distribuzione e così via può costituire un problema. Per facilitare la risoluzione di tali errori, è possibile abilitare le informazioni di debug avanzate. A tale scopo, passare alla seguente chiave del registro di sistema nel registro di sistema di Windows:
 
- **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\11.0\SharePointTools**
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**
 
  Se il valore **REG_DWORD** "EnableDiagnostics" non esiste già, crearlo manualmente. Impostare il valore "EnableDiagnostics" su "1".
 

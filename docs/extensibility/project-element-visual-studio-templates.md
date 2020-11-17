@@ -1,5 +1,7 @@
 ---
 title: Elemento Project (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento Project e sul modo in cui specifica i file o le directory da aggiungere al progetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 335a1e4efa62f07e10bb24b9971627d24bb13273
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652d438d6a0fdf0c42648ded7d3dc9c18b0212ff
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701995"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672385"
 ---
 # <a name="project-element-visual-studio-templates"></a>Elemento Project (modelli di Visual Studio)
 Specifica i file o le directory da aggiungere al progetto.
@@ -42,7 +44,7 @@ Specifica i file o le directory da aggiungere al progetto.
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -64,7 +66,7 @@ Specifica i file o le directory da aggiungere al progetto.
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Elemento obbligatorio.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `Project` è un elemento figlio facoltativo di `TemplateContent`.
 
  L' `Project` elemento viene usato per specificare un progetto e pertanto è valido solo nei modelli di progetto.

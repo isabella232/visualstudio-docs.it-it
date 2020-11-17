@@ -1,5 +1,7 @@
 ---
 title: Elemento FeatureProperty | Microsoft Docs
+description: Visualizzare le informazioni di riferimento sull'elemento FeatureProperty, che è un elemento nello schema dell'elemento del progetto SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61eeea33c6941624ed18a00db482590590a44a8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6010ac45d0b760325c73c4bd754fbb0b422a77
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546523"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672756"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty (elemento)
   Rappresenta una proprietà personalizzata inclusa con una funzionalità quando viene distribuita in SharePoint. Dopo la distribuzione di una funzionalità, è possibile accedere alla proprietà nel codice.
@@ -32,7 +34,7 @@ ms.locfileid: "85546523"
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -48,7 +50,7 @@ ms.locfileid: "85546523"
 |-------------|-----------------|
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|Rappresenta una raccolta di valori di proprietà inclusi in una funzionalità quando viene distribuita in SharePoint.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Per ulteriori informazioni sulle proprietà delle funzionalità, vedere la pagina relativa [alla fornitura di informazioni sui pacchetti e sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Informazioni sull'elemento

@@ -1,5 +1,7 @@
 ---
 title: Elemento MaxFrameworkVersion (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento MaxFrameworkVersion e sul modo in cui specifica la versione massima del .NET Framework richiesta dal modello.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c3acf9c40499417fe180ce470224824cc89a113
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44345b712f448bd7eedf288d7c58cb4193e1b020
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702627"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672425"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>Elemento MaxFrameworkVersion (modelli di Visual Studio)
 
@@ -55,7 +57,7 @@ Specifica la versione massima del .NET Framework richiesta dal modello. Determin
 
  Il testo deve essere il numero di versione più alto del .NET Framework consentito dal modello.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 `MaxFrameworkVersion` è un elemento facoltativo. L' `MaxFrameworkVersion` elemento deve essere omesso a meno che non sia necessario, in modo da non limitare inavvertitamente l'intervallo supportato di versioni .NET Framework per il modello. Deve inoltre essere omesso se .NET Framework non è applicabile al modello.
 

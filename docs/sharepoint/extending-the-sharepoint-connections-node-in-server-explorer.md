@@ -1,6 +1,8 @@
 ---
 title: Estensione del nodo connessioni di SharePoint in Esplora server | Microsoft Docs
 titleSuffix: ''
+description: Estendere il nodo connessioni di SharePoint nella finestra Esplora server in Visual Studio. Aggiungere proprietà personalizzate ai nodi. Ottenere i dati per i nodi predefiniti.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6615e02d84e1f252800597cb37666557e3c3fee6
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 56b635db6a8b0c24e2604940fe7500bb8f769a1b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584607"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672561"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Estendere il nodo connessioni di SharePoint in Esplora server
   In Visual Studio è possibile connettersi ai siti di SharePoint locali nel computer di sviluppo usando il nodo **connessioni di SharePoint** nella finestra **Esplora server** . In questo nodo vengono visualizzati molti dei componenti dei siti di SharePoint locali in una visualizzazione struttura ad albero gerarchica. Ad esempio, è possibile visualizzare gli elenchi, le raccolte documenti e i tipi di contenuto nei siti locali. Per ulteriori informazioni sull'utilizzo di **Esplora server** per connettersi ai siti di SharePoint locali, vedere [Browse SharePoint connections using Esplora server](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
@@ -57,7 +59,7 @@ ms.locfileid: "91584607"
 |---------------|----------------------|
 |Nodo sito di SharePoint|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerSiteNodeInfo>|
 |Tipo di contenuto|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IContentTypeNodeInfo>|
-|Feature|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFeatureNodeInfo>|
+|Funzionalità|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFeatureNodeInfo>|
 |Campo|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFieldNodeInfo>|
 |Elenco|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListNodeInfo>|
 |Modello di elenco|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListTemplateNodeInfo>|
@@ -67,7 +69,7 @@ ms.locfileid: "91584607"
 
  Per altre informazioni sull'uso della <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> proprietà, vedere [associare dati personalizzati con le estensioni degli strumenti di SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Procedura dettagliata: estendere Esplora server per visualizzare le web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [Procedura: estendere un nodo SharePoint in Esplora server](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [Procedura: aggiungere un nodo SharePoint personalizzato a Esplora server](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)

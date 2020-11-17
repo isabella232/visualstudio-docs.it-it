@@ -11,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fd3a6153a347bcaf7d17fd265b7d9c7d4e6a5e5
-ms.sourcegitcommit: c1cc3d8e1673c52fbfddc86b089b4a3d46bb3e59
+ms.openlocfilehash: 7873d42e075619e23c14d4e2e1babc6898825a6b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94626177"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672769"
 ---
 # <a name="sign-in-to-visual-studio"></a>Accedi a Visual Studio
 
@@ -37,15 +37,15 @@ ms.locfileid: "94626177"
 Quando si accede si migliorano le proprie esperienze di Visual Studio. Ad esempio, dopo aver eseguito l'accesso, è possibile [sincronizzare le impostazioni tra i](synchronized-settings-in-visual-studio.md) dispositivi, estendere una versione di valutazione e connettersi automaticamente a un servizio di Azure, per citarne alcuni.
 
 Di seguito è riportato un elenco completo dei vantaggi di cui usufruire e delle operazioni che si possono eseguire dopo aver effettuato l'accesso:
-- **Estendere il periodo di valutazione per Visual Studio** : è possibile usare Visual Studio Professional o Visual Studio Enterprise per 90 giorni, anziché essere vincolati al periodo di valutazione di 30 giorni. Per altre informazioni, vedere [estendere una versione di valutazione o aggiornare una licenza](../ide/how-to-unlock-visual-studio.md).
+- **Estendere il periodo di valutazione per Visual Studio**: è possibile usare Visual Studio Professional o Visual Studio Enterprise per 90 giorni, anziché essere vincolati al periodo di valutazione di 30 giorni. Per altre informazioni, vedere [estendere una versione di valutazione o aggiornare una licenza](../ide/how-to-unlock-visual-studio.md).
 
 - **Continuare a usare Visual Studio Community Edition** : se l'installazione dell'edizione community richiede una licenza, accedere all'IDE per continuare a usare **gratuitamente** Visual Studio community. 
 
 - **Sbloccare Visual Studio se si utilizza un account associato a una sottoscrizione di Visual Studio o a un'organizzazione di Azure DevOps**. Per istruzioni dettagliate, vedere [estendere una versione di valutazione o aggiornare una licenza](../ide/how-to-unlock-visual-studio.md).
 
-- **Accedere al programma Visual Studio Dev Essentials** : il programma comprende un software gratuito, formazione, supporto e altro ancora. Per altre informazioni, vedere [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) .
+- **Accedere al programma Visual Studio Dev Essentials**: il programma comprende un software gratuito, formazione, supporto e altro ancora. Per altre informazioni, vedere [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) .
 
-- **Sincronizzare le impostazioni di Visual Studio** : le impostazioni personalizzate, ad esempio le combinazioni di tasti, il layout della finestra e il tema colori, vengono applicate immediatamente quando si accede a Visual Studio da qualsiasi dispositivo. Vedere [sincronizzare le impostazioni in Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
+- **Sincronizzare le impostazioni di Visual Studio**: le impostazioni personalizzate, ad esempio le combinazioni di tasti, il layout della finestra e il tema colori, vengono applicate immediatamente quando si accede a Visual Studio da qualsiasi dispositivo. Vedere [sincronizzare le impostazioni in Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
 
 - **Collegarsi automaticamente a servizi come Azure e Azure DevOps Services** nell'IDE senza richiedere di nuovo le credenziali per lo stesso account.
 
@@ -84,6 +84,7 @@ Se si verificano problemi durante l'accesso, vedere la pagina relativa al suppor
 ## <a name="see-also"></a>Vedere anche
 
 * [Estendere una versione di valutazione o aggiornare una licenza](../ide/how-to-unlock-visual-studio.md)
+* [Utilizzare gli account GitHub in Visual Studio](../ide/work-with-github-accounts.md)
 * [Panoramica dell'ambiente IDE di Visual Studio](../get-started/visual-studio-ide.md)
 * [Accesso (Visual Studio per Mac)](/visualstudio/mac/signing-in)
 * [Attivazione (Visual Studio per Mac)](/visualstudio/mac/activation)
