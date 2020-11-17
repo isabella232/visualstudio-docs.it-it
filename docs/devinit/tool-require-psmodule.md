@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: d899faa4c830e443c4f6f597c191313d53514efd
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 51d9353333fac6dcca0035bf7cc8dd722c32cb40
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399572"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672118"
 ---
 # <a name="require-psmodule"></a>require-psmodule
 
@@ -51,7 +51,7 @@ Il comportamento predefinito dello `require-psmodule` strumento è l'errore, com
 
 Lo `require-psmodule` strumento imposta un numero di `Install-Module` argomenti della riga di comando per garantire che sia `Install-Module` possibile eseguire l'intestazione. Questi argomenti sono elencati di seguito e la relativa documentazione è disponibile in [install-module](/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true).
 
-| Nome         | Description                                                                                                                                                                                                                                                                                                                                                               |
+| Nome         | Descrizione                                                                                                                                                                                                                                                                                                                                                               |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **-Force**   | Installa un modulo ed esegue l'override dei messaggi di avviso relativi ai conflitti di installazione del modulo. Se nel computer esiste già un modulo con lo stesso nome, Force consente l'installazione di più versioni. Sovrascriverà il modulo se è presente un modulo esistente con lo stesso nome e la stessa versione. Force e AllowClobber possono essere usati insieme in un comando Install-Module. |
 | **-WhatIf**  | Il flag-WhatIf viene aggiunto quando viene passata l'esecuzione a secco per il `devinit` comando.                                                                                                                                                                                                                                                                                                       |
@@ -59,18 +59,27 @@ Lo `require-psmodule` strumento imposta un numero di `Install-Module` argomenti 
 
 
 ## <a name="example-usage"></a>Esempio di utilizzo
+Di seguito sono riportati alcuni esempi di come eseguire `require-psmodule` usando un `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-the-powershellget-module"></a>.devinit.jssu che installerà il modulo PowerShellGet:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Installs the PowerShellGet module.",
             "tool": "require-psmodule",
             "input": "PowerShellGet",
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-the-powershellget-module-from-a-specific-repository"></a>.devinit.jssu che installerà il modulo PowerShellGet da un repository specifico:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Installs the PowerShellGet module from a specific repository.",
             "tool": "require-psmodule",
             "input": "PowerShellGet",
             "additionalOptions": "-Repository PSGallery"

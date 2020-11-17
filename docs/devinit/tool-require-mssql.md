@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 576f0055ab6443d991cbddaa51ca2767853bcf1e
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 7d7a5e7d8ba78b98e05d1b9aff3145c3c34c6ca0
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399599"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672132"
 ---
 # <a name="require-mssql"></a>require-mssql
 
@@ -36,7 +36,7 @@ Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, 
 
 La `input` proprietà può essere una stringa con uno dei due valori seguenti:
 
-| Valore     | Description                              |
+| Valore     | Descrizione                              |
 |-----------|------------------------------------------|
 | Installazione   | Installa SQL Server.                     |
 | uninstall | Disinstalla tutte le installazioni di SQL Server. |
@@ -53,7 +53,7 @@ Il comportamento predefinito dello `require-mssql` strumento è l'installazione 
 
 Lo `require-mssql` strumento imposta un numero di argomenti della riga di comando del programma di installazione per garantire che il programma di installazione possa essere eseguito. Questi argomenti sono elencati di seguito e la relativa documentazione è disponibile nella [documentazione sull'installazione di SQL](/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt?view=sql-server-ver15&preserve-view=true).
 
-| Nome                                                               | Description |
+| Nome                                                               | Descrizione |
 |--------------------------------------------------------------------|-------------|
 | /q                                                                 |             |
 | /ACTION = install                                                    |             |
@@ -75,13 +75,14 @@ Lo `require-mssql` strumento imposta un numero di argomenti della riga di comand
 | /IACCEPTSQLSERVERLICENSETERMS                                      |             |
 
 ## <a name="example-usage"></a>Esempio di utilizzo
+Di seguito è riportato un esempio di come eseguire `require-msssql` usando un `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-mssql"></a>.devinit.jssu che installerà MSSQL:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Installs MSSQL.",
             "tool": "require-mssql",
             "input": "install",
         }

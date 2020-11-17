@@ -1,6 +1,7 @@
 ---
 title: Attributo ed elemento di BuildOnLoad (modelli di Visual Studio)
 titleSuffix: ''
+description: Informazioni sull'elemento e sull'attributo BuildOnLoad e su come viene specificato se compilare il progetto immediatamente dopo la creazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f411f918352391387e5c3b34eafeb209df3118b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 37df139f890a7717287db675a3a4b7e4b250dbf3
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036860"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671605"
 ---
 # <a name="buildonload-attribute-and-element"></a>Attributo ed elemento di BuildOnLoad
 
@@ -84,7 +85,7 @@ L'esempio seguente illustra i metadati per un modello C# quando **BuildOnLoad** 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Elemento BuildProjectOnload](buildprojectonload-element-visual-studio-templates.md)
 - [Elemento TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)

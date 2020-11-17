@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ab63b5feb8c71659b83e824f104dd7bbcbb744f9
-ms.sourcegitcommit: 62f91179f2c3a51c85dd7b0e6172a3a53393fb7e
+ms.openlocfilehash: 4cbb30842ebbed148b2aea80f941a738d18ae262
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94567013"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671973"
 ---
 # <a name="wsl-install"></a>wsl-install
 
@@ -66,24 +66,41 @@ Sono supportate più opzioni aggiuntive:
 Il comportamento predefinito dello `wsl-install` strumento è l'errore come la `input` proprietà, la distro da installare, è obbligatoria.
 
 ## <a name="example-usage"></a>Esempio di utilizzo
+Di seguito sono riportati alcuni esempi di come eseguire `wsl-install` usando un `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-ubuntu-2004"></a>.devinit.jssu che installerà Ubuntu 20,04:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Example that will install Ubuntu 20.04.",
             "tool": "wsl-install",
             "input": "https://aka.ms/wslubuntu2004"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-ubuntu-2004-and-perform-a-post-create-command"></a>.devinit.jssu che installerà Ubuntu 20,04 ed eseguirà un comando post-creazione:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Example that will install Ubuntu 20.04 using WSL2, and echo 'Hello from Ubuntu!' after installing.",
             "tool": "wsl-install",
             "input": "https://aka.ms/wslubuntu2004",
             "additionalOptions": "--wsl-version 2 --post-create-command 'echo Hello from Ubuntu!'"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-ubuntu-2004-and-perform-a-post-create-command-that-configures-the-packages-listed"></a>.devinit.jssu che installerà Ubuntu 20,04 ed eseguirà un comando post-creazione che configura i pacchetti elencati:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Example that will install Ubuntu 20.04 using WSL2, and configure it with various packages.",
             "tool": "wsl-install",
             "input": "https://aka.ms/wslubuntu2004",
             "additionalOptions": "--wsl-version 2 --post-create-command 'apt-get update && apt-get install g++ gcc g++-9 gcc-9 cmake gdb ninja-build zip rsync -y'"

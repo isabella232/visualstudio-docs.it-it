@@ -1,5 +1,7 @@
 ---
 title: Elemento CustomDataSignature (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento CustomDataSignature e sul modo in cui specifica la firma del testo per individuare i dati personalizzati.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec8bae34da0f007bac65f26c4e442c1d03e56d08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0b2442e7b254ccaaf9e890b5370f712b5715f18
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739438"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671519"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>Elemento CustomDataSignature (modelli di Visual Studio)
 Specifica la firma del testo per individuare i dati personalizzati.
@@ -34,7 +36,7 @@ Specifica la firma del testo per individuare i dati personalizzati.
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
  Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -51,7 +53,7 @@ Specifica la firma del testo per individuare i dati personalizzati.
 
  Il testo è una stringa che contiene la firma del testo necessaria per individuare i dati personalizzati.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `CustomDataSignature` è un elemento facoltativo.
 
 ## <a name="see-also"></a>Vedere anche

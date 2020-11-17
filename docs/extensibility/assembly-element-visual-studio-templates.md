@@ -1,5 +1,8 @@
 ---
 title: Elemento assembly (modelli di Visual Studio) | Microsoft Docs
+titleSuffix: ''
+description: Informazioni sull'elemento assembly e sul modo in cui specifica le informazioni su un assembly, che viene utilizzato dal modello per aggiungere un riferimento a tale assembly ai progetti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c80044657b16448ba4567fff839274226985fa14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4115e999cc061be53ba437a090f207046f71ef8
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740040"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671646"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Elemento assembly (modelli di Visual Studio)
 Specifica le informazioni su un assembly utilizzato dal modello per aggiungere un riferimento a tale assembly ai progetti.
@@ -38,7 +41,7 @@ Specifica le informazioni su un assembly utilizzato dal modello per aggiungere u
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
  Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio

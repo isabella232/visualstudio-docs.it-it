@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ec326871f5565ecaabdc8cda369b36df14029414
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 9b6ba2e22484850dd6079cfc7e4ab9cd68371dcb
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399830"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671926"
 ---
 # <a name="enable-iis"></a>enable-iis
 
@@ -45,13 +45,14 @@ Non usato.
 Il comportamento predefinito dello `enable-iis` strumento consiste nell'abilitare le funzionalità IIS: IIS-Webserver, IIS-WebServerRole, IIS-WebSocket e IIS-webauthentication, quindi installare la versione più recente del bundle di hosting ASP.NET che include il modulo ASP.NET Core. 
 
 ## <a name="example-usage"></a>Esempio di utilizzo
+Di seguito è riportato un esempio di come eseguire `enable-iis` usando un `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-enable-iis-development"></a>.devinit.jssu che consente lo sviluppo di IIS:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0.json",
     "run": [
         {
-            "comments": "Example that will enable IIS features and install the latest ASP.NET hosting bundle.",
             "tool": "enable-iis"
         },
     ]

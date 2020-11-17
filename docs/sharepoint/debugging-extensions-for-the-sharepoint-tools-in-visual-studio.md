@@ -1,5 +1,7 @@
 ---
 title: Estensioni di debug per gli strumenti di SharePoint in Visual Studio | Microsoft Docs
+description: Estensioni di debug per gli strumenti di SharePoint in Visual Studio. Eseguire il debug delle estensioni degli strumenti di SharePoint nell'istanza sperimentale o nell'istanza normale di VS.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1179779d07e7674babc51231ba629d7e25556f89
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5ad95ce8b4ab9567f22748453ae59c258f24aa86
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584633"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671220"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Estensioni di debug per gli strumenti di SharePoint in Visual Studio
   È possibile eseguire il debug delle estensioni degli strumenti di SharePoint nell'istanza sperimentale o nell'istanza normale di Visual Studio. Se è necessario risolvere i problemi relativi al comportamento di un'estensione, è anche possibile modificare i valori del registro di sistema in modo da visualizzare informazioni aggiuntive sull'errore e configurare la modalità di esecuzione dei comandi di SharePoint in Visual Studio.
@@ -51,7 +53,7 @@ ms.locfileid: "91584633"
 
 3. Nella finestra di dialogo del **programma di installazione dell'estensione di Visual Studio** scegliere l'edizione di Visual Studio in cui si vuole installare l'estensione, quindi scegliere il pulsante **Installa** .
 
-     Visual Studio installa i file di estensione nella \\ *author name* \\ versione del*nome dell'estensione*%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions Author \\ *version*. Le ultime tre cartelle in questo percorso sono costruite dagli `Author` `Name` elementi, e `Version` nel file *Extension. vsixmanifest* per l'estensione.
+     Visual Studio installa i file di estensione nella \\ *author name* \\ versione del *nome dell'estensione*%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions Author \\ *version*. Le ultime tre cartelle in questo percorso sono costruite dagli `Author` `Name` elementi, e `Version` nel file *Extension. vsixmanifest* per l'estensione.
 
 4. Dopo che Visual Studio ha installato l'estensione, scegliere il pulsante **Chiudi** .
 
@@ -110,7 +112,7 @@ ms.locfileid: "91584633"
 5. Nell'istanza di Visual Studio di cui è in corso il debug eseguire i passaggi necessari per eseguire il comando.
 
 ## <a name="modify-registry-values-to-help-debug-sharepoint-tools-extensions"></a>Modificare i valori del registro di sistema per facilitare il debug delle estensioni degli strumenti SharePoint
- Quando si esegue il debug di un'estensione degli strumenti di SharePoint in Visual Studio, è possibile modificare i valori nel registro di sistema per facilitare la risoluzione dei problemi relativi all'estensione. I valori esistono sotto la chiave **\software\microsoft\visualstudio\11.0\sharepointtools HKEY_CURRENT_USER** . Questi valori non sono disponibili per impostazione predefinita.
+ Quando si esegue il debug di un'estensione degli strumenti di SharePoint in Visual Studio, è possibile modificare i valori nel registro di sistema per facilitare la risoluzione dei problemi relativi all'estensione. I valori sono presenti nella chiave **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools** . Questi valori non sono disponibili per impostazione predefinita.
 
  Per facilitare la risoluzione dei problemi di qualsiasi estensione degli strumenti di SharePoint, è possibile creare e impostare il valore EnableDiagnostics. Nella tabella seguente viene descritto questo valore.
 
@@ -128,7 +130,7 @@ ms.locfileid: "91584633"
 |MaxReceivedMessageSize|REG_DWORD che specifica la dimensione massima consentita, in byte, dei messaggi WCF passati tra Visual Studio e *vssphost4.exe*.<br /><br /> Il valore predefinito è 1.048.576 byte (1 MB).|
 |MaxStringContentLength|REG_DWORD che specifica la dimensione massima consentita, in byte, delle stringhe passate tra Visual Studio e *vssphost4.exe*.<br /><br /> Il valore predefinito è 1.048.576 byte (1 MB).|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Distribuire estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

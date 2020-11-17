@@ -1,5 +1,7 @@
 ---
 title: Elemento ProjectItem (modelli di progetto di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento ProjectItem per i modelli di progetto e sul modo in cui accetta attributi diversi a seconda che il modello sia per un progetto o un elemento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 943f50823892e3cd942709bdcd4556b65c006b58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf2d41fe83b440e2a3b4bfebd4fac6f5d06094a4
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770314"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671324"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>Elemento ProjectItem (modelli di progetto di Visual Studio)
 Specifica un file incluso nel modello di progetto.
@@ -48,7 +50,7 @@ Specifica un file incluso nel modello di progetto.
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 | Attributo | Descrizione |
 |---------------------| - |
@@ -73,7 +75,7 @@ Specifica un file incluso nel modello di progetto.
 
  Oggetto `string` che rappresenta il nome o il percorso di un file nel file con *estensione zip* del modello.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `ProjectItem` è un elemento figlio facoltativo di `Project` .
 
  L' `TargetFileName` attributo può essere usato per creare una struttura di directory diversa dalla struttura di directory nel file con *estensione zip* del modello. Se, ad esempio, il file MyFile *. vb* è presente nella radice del file con estensione *zip* del modello, ma si vuole inserire il file in una directory denominata *CustomFiles* in tutti i progetti creati dal modello, usare il codice XML seguente:

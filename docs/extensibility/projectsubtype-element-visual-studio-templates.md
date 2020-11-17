@@ -1,5 +1,7 @@
 ---
 title: Elemento ProjectSubType (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento ProjectSubType e su come classificare il modello in una sottocategoria del valore specificato nell'elemento ProjectType.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27396ad1bcc4e181b2b8cecd6ca863db2412630d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ceecbf1bfb750244a13c641906f7a8712d01d69
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701836"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672320"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>Elemento ProjectSubType (modelli di Visual Studio)
 Classifica il modello in una sottocategoria del valore specificato nell' `ProjectType` elemento.
@@ -36,7 +38,7 @@ Classifica il modello in una sottocategoria del valore specificato nell' `Projec
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
  Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -53,7 +55,7 @@ Classifica il modello in una sottocategoria del valore specificato nell' `Projec
 
  Questo valore specifica la sottocategoria del modello.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `ProjectSubType` è un elemento figlio facoltativo di `TemplateData`.
 
  L' `ProjectSubType` elemento fornisce una sottocategoria all'elemento [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) . Questo valore può includere:

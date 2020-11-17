@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3bdcf6caa52f19bc03559fb57d41fadb0ac56485
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 82c1bfbaed4a8ae5540447991f1a097760ade0bd
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399858"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671940"
 ---
 # <a name="choco-install"></a>choco-install
 
@@ -34,7 +34,7 @@ Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, 
 
 ### <a name="input"></a>Input
 
-La `input` proprietà viene utilizzata per specificare il nome del pacchetto da installare, ad esempio ' MongoDB ', oppure il percorso di un file di configurazione con i formati seguenti _packages.config_ , _NuSpec_ e _. nupkg_. Il valore di `input` verrà accodato a un `choco install` comando (ad esempio `choco install mongodb` ) insieme a eventuali argomenti specifici di [`additionalOptions`](#additional-options) e alle `choco` opzioni predefinite (definite di [seguito](#built-in-options)). I pacchetti sono disponibili nella [raccolta di pacchetti di cioccolato](https://chocolatey.org/packages). Quando si usa un file di configurazione, ad esempio, è possibile passare il percorso del file nella `input` proprietà `"input":"packages.config"` .
+La `input` proprietà viene utilizzata per specificare il nome del pacchetto da installare, ad esempio ' MongoDB ', oppure il percorso di un file di configurazione con i formati seguenti _packages.config_, _NuSpec_ e _. nupkg_. Il valore di `input` verrà accodato a un `choco install` comando (ad esempio `choco install mongodb` ) insieme a eventuali argomenti specifici di [`additionalOptions`](#additional-options) e alle `choco` opzioni predefinite (definite di [seguito](#built-in-options)). I pacchetti sono disponibili nella [raccolta di pacchetti di cioccolato](https://chocolatey.org/packages). Quando si usa un file di configurazione, ad esempio, è possibile passare il percorso del file nella `input` proprietà `"input":"packages.config"` .
 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
@@ -44,30 +44,47 @@ Altre opzioni di configurazione possono essere passate come valore di `additiona
 
 Lo `choco-install` strumento imposta un numero di `choco` argomenti della riga di comando per garantire che sia `choco` possibile eseguire l'intestazione. Questi argomenti sono elencati di seguito e la relativa documentazione è disponibile nella [documentazione di cioccolato](https://chocolatey.org/docs/).
 
-| Nome                  | Description                                                                                        |
+| Nome                  | Descrizione                                                                                        |
 |-----------------------|----------------------------------------------------------------------------------------------------|
 | **--Sì**             | Conferma tutti i prompt: sceglie una risposta affermativa anziché richiedere. Implica `--accept-license.` |
 | **--No-Progress**     | Non visualizzare lo stato di avanzamento: le percentuali di avanzamento non verranno visualizzate.                                         |
 | **--Skip-PowerShell** | Ignorare PowerShell-chocolateyInstall.ps1 non verrà eseguito.                                              |
 
 ## <a name="example-usage"></a>Esempio di utilizzo
+Di seguito sono riportati alcuni esempi di come eseguire `choco-install` usando un `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-packages-listed-in-packagesconfig"></a>.devinit.jsin che installerà i pacchetti elencati in packages.config:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Example that will trigger the Default behavior of installing packages listed in a packages.config file.",
             "tool": "choco-install",
             "input": "packages.config",
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-mongodb"></a>.devinit.jssu che installerà MongoDB:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Example that will install the package 'mongodb'.",
             "tool": "choco-install",
             "input": "mongodb"
-        },
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-will-install-a-specific-version-of-mongodb"></a>.devinit.jssu che installerà una versione specifica di MongoDB:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
         {
-            "comments": "Example that will install the '4.2.7' version of 'mongodb'.",
             "tool": "choco-install",
             "input": "mongodb",
             "additionalOptions": "--version 4.2.7"

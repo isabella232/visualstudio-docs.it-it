@@ -1,5 +1,5 @@
 ---
-title: MSI-installazione
+title: msi-install
 description: strumento devinit per msiexec.
 ms.date: 10/13/2020
 ms.topic: reference
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 98667c602272f22e7803647a688ee75d6c6cbd70
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ab56157d531e762ed36f8c2349e50e76596b05ec
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93402315"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672173"
 ---
-# <a name="msi-install"></a>MSI-installazione
+# <a name="msi-install"></a>msi-install
 
 Lo `msi-install` strumento viene usato per installare i `.msi` formati di file di pacchetto con [msiexec](https://docs.microsoft.com/windows-server/administration/windows-commands/msiexec).
 
@@ -44,7 +44,7 @@ Le opzioni di configurazione aggiuntive possono essere passate come valore di ad
 
 Lo strumento MSI-install imposta una serie di `msiexec` argomenti della riga di comando per garantire che l'identità del servizio gestito possa essere eseguita. Questi argomenti sono elencati di seguito e la relativa documentazione si trova nella `msiexec` [documentazione](https://docs.microsoft.com/windows-server/administration/windows-commands/msiexec)di.
 
-| Nome          | Description                                                                                                                                                                                   |
+| Nome          | Descrizione                                                                                                                                                                                   |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | /i            | Esegue un'installazione normale                                                                                                                                                                    | 
 | /quiet        | Specifica la modalità non interattiva senza necessità di interazione dell'utente                                                                                                                                        | 
@@ -54,13 +54,14 @@ Lo strumento MSI-install imposta una serie di `msiexec` argomenti della riga di 
 | /norestart    | Arresta il riavvio del computer al termine dell'installazione, ma restituirà un codice di uscita 3010 se è necessario un riavvio                                                                  | 
 
 ## <a name="example-usage"></a>Esempio di utilizzo
+Di seguito è riportato un esempio di come eseguire `msi-install` usando un `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-the-7-zip-msi"></a>.devinit.jssu che installerà l'MSI 7-zip:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-4.0",
     "run": [
         {
-            "comments": "Installs the 7-Zip MSI",
             "tool": "msi-install",
             "input": "https://www.7-zip.org/a/7z1900.msi"
         }

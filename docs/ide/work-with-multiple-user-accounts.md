@@ -1,18 +1,18 @@
 ---
 title: Gestire più account utente
-ms.date: 07/23/2019
+ms.date: 11/16/2020
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abca888cda2d309951d6b8921cfd2078972ce195
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe124fc35eabec4b3c48cdf8dfa53ef8f17b0003
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800229"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671337"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Gestire più account utente
 
@@ -83,7 +83,7 @@ Per altre informazioni, vedere [Connettersi a progetti in Team Explorer](connect
 
 Per aggiungere un altro account a Visual Studio:
 
-1. Scegliere **File**  >  **Impostazioni account**file.
+1. Scegliere **File**  >  **Impostazioni account** file.
 
 1. In **Tutti gli account** scegliere **Aggiungi un account**.
 
@@ -124,6 +124,15 @@ Per eseguire l'accesso tramite il flusso del codice del dispositivo:
    ![Accesso a Visual Studio tramite browser completato](media/work-with-multiple-user-accounts/sign-in-browser-complete.png)
 
 1. Tornare alla pagina di gestione account in Visual Studio. Si noterà che l'account appena aggiunto è elencato in **Tutti gli account**. Scegliere **Chiudi**.
+
+::: moniker range=">=vs-2019"
+
+### <a name="add-a-github-account-to-visual-studio"></a>Aggiungere un account GitHub a Visual Studio
+
+A partire dalla versione 16,8, sarà possibile aggiungere gli account GitHub e GitHub Enterprise al keychain. Potrai aggiungerli e usarli come con gli account Microsoft, il che significa che avrai a disposizione un momento più semplice per accedere alle risorse di GitHub in Visual Studio.
+
+Per istruzioni dettagliate, vedere [usare gli account github in Visual Studio](work-with-github-accounts.md).
+::: moniker-end
 
 ## <a name="see-also"></a>Vedere anche
 

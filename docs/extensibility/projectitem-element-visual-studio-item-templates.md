@@ -1,5 +1,7 @@
 ---
 title: Elemento ProjectItem (modelli di elemento di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento ProjectItem per i modelli di elemento e sul modo in cui accetta attributi diversi a seconda che il modello sia per un progetto o un elemento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 885d0fbb50204f23a30fa43c1ffad45c9d67f829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 431f1d5f81827b47b57a53dbe411a2a7e8a57941
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770727"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672333"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>Elemento ProjectItem (modelli di elemento di Visual Studio)
 Specifica un file incluso nel modello di elemento.
@@ -46,7 +48,7 @@ Specifica un file incluso nel modello di elemento.
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 | Attributo | Descrizione |
 |---------------------| - |
@@ -70,7 +72,7 @@ Specifica un file incluso nel modello di elemento.
 
  Oggetto `string` che rappresenta il nome di un file nel file con *estensione zip* del modello.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `ProjectItem` è un elemento figlio facoltativo di `TemplateContent` .
 
  L' `TargetFileName` attributo può essere utilizzato per rinominare i file con parametri. Se, ad esempio, il file MyFile *. vb* è presente nella directory radice del file con estensione *zip* del modello, ma si vuole che il file venga denominato in base al nome file specificato dall'utente nella finestra di dialogo **Aggiungi nuovo elemento** , usare il codice XML seguente:

@@ -1,5 +1,7 @@
 ---
 title: Elemento BuildProjectOnload (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento BuildProjectOnload e sul modo in cui vengono compilati solo i nuovi progetti quando vengono creati e aggiunti a una soluzione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdf4256b2fb376fc063eb330d47c843c1ff8820b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739963"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671592"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Elemento BuildProjectOnload (modelli di Visual Studio)
 Compila solo i nuovi progetti durante la creazione e li aggiunge a una soluzione. L'intera soluzione non è compilata.
@@ -36,7 +38,7 @@ Gerarchia elementi:
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
  Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -53,7 +55,7 @@ Gerarchia elementi:
 
  Il testo deve essere `true` o `false` per indicare se compilare solo il nuovo progetto quando viene creato dal modello.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `BuildProjectOnLoad` è un elemento facoltativo. Il valore predefinito è `false`.
 
 ## <a name="example"></a>Esempio

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 9ebae66a593f2e27be3afee77ab2156b426d740f
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: d9ecd12a36621ab2a21f94014d6a0fd13568609b
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400281"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671879"
 ---
 # <a name="require-choco"></a>require-choco
 
@@ -45,13 +45,14 @@ Non usato.
 Il comportamento predefinito dello `require-choco` strumento prevede l'installazione di Chocolate e la relativa aggiunta al percorso (solo Windows).
 
 ## <a name="example-usage"></a>Esempio di utilizzo
+Di seguito è riportato un esempio di come eseguire `require-choco` usando un `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-chocolatey"></a>.devinit.jssu che installerà Chocolay:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
     "run": [
         {
-            "comments": "Installs chocolatey.",
             "tool": "require-choco"
         }
     ]

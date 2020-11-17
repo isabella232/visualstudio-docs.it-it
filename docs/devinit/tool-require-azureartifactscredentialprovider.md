@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: c784bb25fe9abc77cfb562ae085930b275d0ef03
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 0aa0d250289e6bf79467c0a00ddddef5264ed6d2
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400288"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671899"
 ---
 # <a name="require-azureartifactscredentialprovider"></a>require-azureartifactscredentialprovider
 
@@ -45,15 +45,15 @@ Le opzioni aggiuntive vengono passate così come sono al comando del provider di
 Il comportamento predefinito dello `require-azureartifactscredentialprovider` strumento consiste nell'installare il provider di credenziali Azure Artifacts più recente.
 
 ## <a name="example-usage"></a>Esempio di utilizzo
+Di seguito è riportato un esempio di come eseguire `require-azureartifactscredentialprovider` usando un `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-install-azure-artifacts-credential-provider"></a>.devinit.jsin che installerà Azure Artifacts provider di credenziali:
 ```json
 {
     "$schema": "https://json.schemastore.org/devinit.schema-3.0",
-    "comments": "A sample dot-devinit file that installs Azure Artifacts Credential Provider.'",
     "run": [
         {
             "tool": "require-azureartifactscredentialprovider",
-            "comments": "Installs Azure Artifacts Credential Provider."
         }
     ]
 }

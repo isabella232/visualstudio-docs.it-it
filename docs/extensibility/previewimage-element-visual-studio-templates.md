@@ -1,5 +1,7 @@
 ---
 title: Elemento PreviewImage (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento PreviewImage e su come viene specificato il nome file per l'immagine di anteprima che verrà visualizzata nella finestra di dialogo nuovo progetto o Aggiungi nuovo elemento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f20cfe5f3ef35b23a52972ef1e3b7d9d4adc5a39
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 326588259203224d3f70b505af8437af22930faa
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702015"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672346"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>Elemento PreviewImage (modelli di Visual Studio)
 Specifica l'immagine di anteprima, come nome file, per l'immagine di anteprima che verrà visualizzata nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** .
@@ -34,7 +36,7 @@ Specifica l'immagine di anteprima, come nome file, per l'immagine di anteprima c
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
  Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -51,7 +53,7 @@ Specifica l'immagine di anteprima, come nome file, per l'immagine di anteprima c
 
  Il testo deve essere una stringa che rappresenta un nome file.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `PreviewImage` è un elemento facoltativo.
 
 ## <a name="see-also"></a>Vedere anche

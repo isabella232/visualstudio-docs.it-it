@@ -1,6 +1,8 @@
 ---
 title: Elemento LocationField (modelli di progetto Visual Studio)
 titleSuffix: ''
+description: Informazioni sull'elemento LocationField e su come specifica se la casella di testo percorso della finestra di dialogo nuovo progetto è abilitata, disabilitata o nascosta per il modello di progetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9aafe51669bcc95d6024b5a3fd749ba70ea8ddc7
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 3f3febc5a47288225d1780ba4579dad243c1ea45
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739129"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671272"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Elemento LocationField (modelli di progetto di Visual Studio)
 Specifica se la casella di testo **percorso** nella finestra di dialogo **nuovo progetto** è abilitata, disabilitata o nascosta per il modello di progetto.
@@ -36,7 +38,7 @@ Specifica se la casella di testo **percorso** nella finestra di dialogo **nuovo 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
  Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -59,7 +61,7 @@ Specifica se la casella di testo **percorso** nella finestra di dialogo **nuovo 
 
 - `Hidden`, che indica che la casella **percorso** della finestra di dialogo **nuovo progetto** è nascosta.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il valore predefinito è `Enabled`.
 
  La casella di testo **percorso** nella finestra di dialogo **nuovo progetto** consente agli utenti di modificare la directory predefinita in cui vengono salvati i nuovi progetti.

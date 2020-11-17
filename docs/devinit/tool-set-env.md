@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b1299686c086feda0c51689d72a676ddc4ff00dc
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ce3876884061246d8ac1dbc1b211766903ea840a
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400239"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671739"
 ---
 # <a name="set-env"></a>set-env
 
@@ -51,53 +51,97 @@ Non usato.
 
 ## <a name="usage-in-a-codespace"></a>Utilizzo in un codespace
 
-Se si usa un codespace, è possibile impostare le variabili di ambiente usate nello spazio dei Customizating tramite la `remoteEnv` proprietà nel [`.devcontainer.json`](/visualstudio/codespaces/reference/configuring) file.
+Se si usa un codespace, è possibile impostare le variabili di ambiente usate nello spazio dei caratteri tramite la personalizzazione della `remoteEnv` proprietà nel [`.devcontainer.json`](/visualstudio/codespaces/reference/configuring) file.
 
 ## <a name="example-usage"></a>Esempio di utilizzo
+Di seguito sono riportati alcuni esempi di come eseguire `set-env` usando un `.devinit.json` . 
 
+#### <a name="devinitjson-that-will-set-an-environment-variable-foo-to-value-bar"></a>.devinit.json che imposta una variabile di ambiente, `foo` , su value `bar` :
 ```json
 {
   "$schema": "https://json.schemastore.org/devinit.schema-3.0",
-  "comments": "A sample dot-devinit file demonstrating the set-env tool.",
   "run": [
     {
       "tool": "set-env",
       "input": "foo=bar",
-      "comments": "To set an environment variable, set input to 'name=value'."
-    },
+    }
+  ]
+}
+```
+
+#### <a name="devinitjson-that-will-display-the-value-of-an-environment-variable"></a>.devinit.jssu in cui viene visualizzato il valore di una variabile di ambiente:
+```json
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+  "run": [
     {
       "tool": "set-env",
       "input": "foo",
-      "comments": "To display the value of a single environment variable, set input to the name of the variable."
-    },
+    }
+  ]
+}
+```
+
+#### <a name="devinitjson-that-will-list-all-the-environment-variables"></a>.devinit.jssu in cui sono elencate tutte le variabili di ambiente:
+```json
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+  "run": [
     {
       "tool": "set-env",
-      "comments": "To list all environment variables, pass no input."
-    },
+    }
+  ]
+}
+```
+
+#### <a name="devinitjson-that-will-delete-an-environment-variable"></a>.devinit.json che eliminerà una variabile di ambiente:
+```json
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+  "run": [
     {
       "tool": "set-env",
       "input": "foo=",
-      "comments": "To delete an environment variable, pass input of 'name='."
-    },
-    {
-      "tool": "set-env",
-      "input": "foo",
-      "comments": "Trying to display a variable that doesn't exist results in a warning."
-    },
+    }
+  ]
+}
+```
+
+
+#### <a name="devinitjson-that-will-use-environment-variable-expansion"></a>.devinit.jsin che utilizzerà l'espansione delle variabili di ambiente:
+```json
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+  "run": [
     {
       "tool": "set-env",
       "input": "_savedPath=%path%",
-      "comments": "Envrionment variable expansion is supported."
-    },
+    }
+  ]
+}
+```
+
+#### <a name="devinitjson-that-will-set-an-environment-variable-value-using-path-manipulation"></a>.devinit.json che imposta un valore della variabile di ambiente mediante la manipolazione del percorso:
+```json
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+  "run": [
     {
       "tool": "set-env",
       "input": "path=%path%;%userprofile%\\CustomFolder",
-      "comments": "Shows path manipulation. Note: Variables set here are not persisted."
-    },
+    }
+  ]
+}
+```
+
+#### <a name="devinitjson-that-will-restore-path-from-saved-copy"></a>.devinit.json che ripristinerà il percorso dalla copia salvata:
+```json
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+  "run": [
     {
       "tool": "set-env",
       "input": "path=%_savedPath%",
-      "comments": "Restore path from saved copy."
     }
   ]
 }

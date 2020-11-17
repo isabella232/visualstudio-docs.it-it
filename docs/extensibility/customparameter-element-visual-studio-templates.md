@@ -1,5 +1,7 @@
 ---
 title: Elemento CustomParameter (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento CustomParameter e su come contiene un nome e un valore di parametro personalizzato da usare quando viene creato un progetto o un elemento dal modello.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9063a354f03b896e189566e8d84a18caf7509db8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61c118bbc85064beb10b99641f0803af7af12d56
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739425"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671949"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>Elemento CustomParameter (modelli di Visual Studio)
 Contiene il nome e il valore di un parametro personalizzato da utilizzare quando un progetto o un elemento viene creato dal modello.
@@ -32,7 +34,7 @@ Contiene il nome e il valore di un parametro personalizzato da utilizzare quando
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -48,7 +50,7 @@ Contiene il nome e il valore di un parametro personalizzato da utilizzare quando
 |-------------|-----------------|
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Raggruppa i parametri personalizzati che devono essere passati alla creazione guidata modelli quando la procedura guidata esegue le sostituzioni dei parametri.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Quando un modello contiene `CustomParameter` elementi, ogni istanza l' `Name` attributo viene sostituito con l' `Value` attributo nei file di progetto o di elemento creati.
 
 ## <a name="example"></a>Esempio

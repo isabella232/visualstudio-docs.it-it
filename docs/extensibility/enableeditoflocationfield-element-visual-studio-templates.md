@@ -1,5 +1,6 @@
 ---
 title: Elemento EnableEditOfLocationField (modelli di Visual Studio)
+description: Informazioni sull'elemento EnableEditOfLocationField e su come specifica se l'utente può modificare il campo location.
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fdc6398a5130c2f537c2f1ad6b12f484add42b3
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 46af48bf8bf9f128103767be1aa5fa64968e68f5
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037406"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671298"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Elemento EnableEditOfLocationField (modelli di Visual Studio)
 Specifica se l'utente può modificare il campo del percorso.
@@ -35,11 +36,11 @@ Specifica se l'utente può modificare il campo del percorso.
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
- nessuno
+### <a name="attributes"></a>Attributi
+ Nessuno
 
 ### <a name="child-elements"></a>Elementi figlio
- nessuno
+ Nessuno
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -86,6 +87,6 @@ Specifica se l'utente può modificare il campo del percorso.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

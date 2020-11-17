@@ -1,5 +1,7 @@
 ---
 title: Elemento Name (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento Name e su come viene specificato il nome del modello come viene visualizzato nella finestra di dialogo nuovo progetto o Aggiungi nuovo elemento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2a02dc377bac5f93f8e0365f6f3d9ccb81737a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2aa14005a202b7868f61cd41ffb6ac9e2f872b68
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702452"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671181"
 ---
 # <a name="name-element-visual-studio-templates"></a>Elemento Name (modelli di Visual Studio)
 Specifica il nome del modello visualizzato nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** .
@@ -60,7 +62,7 @@ Specifica il nome del modello visualizzato nella finestra di dialogo **nuovo pro
 
  Il testo fornisce il nome del modello.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `Name` è un elemento figlio obbligatorio di `TemplateData`.
 
 ## <a name="example"></a>Esempio

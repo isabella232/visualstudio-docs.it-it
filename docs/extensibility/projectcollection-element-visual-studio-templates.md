@@ -1,5 +1,7 @@
 ---
 title: Elemento ProjectCollection (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento ProjectCollection e su come specifica l'organizzazione e il contenuto dei modelli multiprogetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12a22ca28c90ed1df69529ed3004b417b5e04276
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d9da3dbe92bdde8b0c19495e73cdbf2660ef3b4
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701968"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671233"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>Elemento ProjectCollection (modelli di Visual Studio)
 Specifica l'organizzazione e i contenuti dei modelli multiprogetto.
@@ -39,7 +41,7 @@ Specifica l'organizzazione e i contenuti dei modelli multiprogetto.
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
  Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -55,7 +57,7 @@ Specifica l'organizzazione e i contenuti dei modelli multiprogetto.
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Specifica il contenuto del modello.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  I modelli multiprogetto fungono da contenitori per due o più progetti. L' `ProjectCollection` elemento viene usato per specificare i progetti da includere nel modello. Per altre informazioni sui modelli multiprogetto, vedere [procedura: creare modelli](../ide/how-to-create-multi-project-templates.md)per più progetti.
 
 ## <a name="example"></a>Esempio

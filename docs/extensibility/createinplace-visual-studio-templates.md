@@ -1,5 +1,7 @@
 ---
 title: Elemento CreateInPlace (modelli di Visual Studio)
+description: Informazioni sull'elemento CreateInPlace e su come viene specificato se creare il progetto ed eseguire la sostituzione dei parametri in un percorso specifico o temporaneo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab2b5d68be069f30c8f71536b6d47cb1ce8823b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51348e8304b67314ffd19d0aec15d43d904ee651
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739655"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671982"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>Elemento CreateInPlace (modelli di Visual Studio)
 Specifica se creare il progetto ed eseguire la sostituzione dei parametri nel percorso specificato oppure eseguire la sostituzione dei parametri in un percorso temporaneo, quindi salvare il progetto nel percorso specificato.
@@ -36,7 +38,7 @@ Specifica se creare il progetto ed eseguire la sostituzione dei parametri nel pe
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
  Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -53,7 +55,7 @@ Specifica se creare il progetto ed eseguire la sostituzione dei parametri nel pe
 
  Questo testo deve essere `true` o `false`. Se `true` , il progetto viene creato e la sostituzione dei parametri viene eseguita nel percorso specificato nella finestra di dialogo **nuovo progetto** . Se `false` , la sostituzione dei parametri viene eseguita in un percorso temporaneo e il progetto viene quindi copiato nel percorso specificato.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `CreateInPlace` è un elemento facoltativo. Il valore predefinito è `true`.
 
 ## <a name="example"></a>Esempio
