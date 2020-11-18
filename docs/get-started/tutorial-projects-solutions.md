@@ -1,6 +1,6 @@
 ---
 title: Introduzione a progetti e soluzioni
-ms.date: 02/24/2020
+ms.date: 11/17/2020
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da2fc196f687e2335933794a578f507dafbc6de3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf99c191ef6cfe32ec8ccc9b2cfd57f761941be7
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579980"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94704053"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Informazioni su progetti e soluzioni
 
@@ -70,6 +70,9 @@ Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza 
 3. Nella pagina **Crea un nuovo progetto** immettere **soluzione vuota** nella casella di ricerca, selezionare il modello **Soluzione vuota** e quindi scegliere **Avanti**.
 
    ![Modello Soluzione vuota in Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png)
+
+    > [!TIP]
+    > Se sono installati più carichi di lavoro, il modello di **soluzione vuota** potrebbe non essere visualizzato nella parte superiore dell'elenco dei risultati della ricerca. Provare a scorrere gli **altri risultati in base** alla sezione di ricerca dell'elenco. Dovrebbe essere visualizzato qui.
 
 4. Assegnare alla soluzione il nome **QuickSolution**, quindi scegliere **Crea**.
 

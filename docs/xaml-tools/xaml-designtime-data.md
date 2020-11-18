@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 1dd0b4df440f6addd474ef08e7bf0b2958a58076
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: bda4af3a3985ec6fc3aae1e991b7f5f622d67965
+ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94492895"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94704001"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Usare i dati della fase di progettazione con il finestra di progettazione XAML in Visual Studio
 
@@ -181,7 +181,7 @@ Se si verifica un problema non elencato in questa sezione, è possibile segnalar
 
 - I dati della fase di progettazione richiedono Visual Studio 2019 versione [16,7](/visualstudio/releases/2019/release-notes) o successiva.
 
-- Supporta i progetti desktop di Windows destinati a Windows Presentation Foundation (WPF) per .NET Core e UWP. Questa funzionalità è disponibile anche per .NET Framework se è stata abilitata la funzionalità di anteprima "nuova finestra di progettazione XAML WPF per .NET Framework".
+- Supporta i progetti desktop di Windows destinati a Windows Presentation Foundation (WPF) per .NET Core e UWP. Questa funzionalità è disponibile anche nel [canale di anteprima](/visualstudio/releases/2019/release-notes-preview) per .NET Framework. Per abilitarla, passare a **strumenti**  >  **Opzioni**  >  **ambiente**  >  **Anteprima funzionalità**, selezionare **nuovo finestra di progettazione XAML WPF per .NET Framework** , quindi riavviare Visual Studio.
 
 - A partire da Visual Studio 2019 versione 16,7, questa funzionalità funziona con tutti i controlli predefiniti di WPF e UWP Framework. Il supporto per i controlli di terze parti è ora disponibile nella versione di anteprima 16,8.
 
