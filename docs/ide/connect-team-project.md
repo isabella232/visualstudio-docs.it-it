@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 4e4fdfb26c601ce6b706c1c946ea9afe9b18ecb2
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 7d920370013b2d624430acbdbe8e38dcc9aab03d
+ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850091"
+ms.locfileid: "94878257"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Connettersi a progetti in Team Explorer
 
@@ -32,7 +32,7 @@ Usare le finestra degli strumenti di **Team Explorer** per coordinare le attivit
 
 ::: moniker-end
 
-![Pagina Home di Team Explorer in Visual Studio](media/team-explorer/team-explorer.png)
+![Pagina Home di Team Explorer in Visual Studio](media/team-explorer/team-explorer.png "La Home page di Team Explorer in Visual Studio.")
 
 ::: moniker range="vs-2017"
 
@@ -45,17 +45,17 @@ Usare le finestra degli strumenti di **Team Explorer** per coordinare le attivit
 
 Connettersi a un progetto o a un repository nella pagina **Connessione**.
 
-![Pagina Connessione di Team Explorer](media/team-explorer/connect.png)
+![Pagina Connessione di Team Explorer](media/team-explorer/connect.png "Pagina Team Explorer-Connect in Visual Studio")
 
 Per connettersi a un progetto:
 
 1. Aprire la pagina **Connessione** scegliendo l'icona **Gestione connessioni**.
 
-   ![Pulsante Gestione connessioni in Team Explorer](media/team-explorer/manage-connections.png)
+   ![Pulsante Gestione connessioni in Team Explorer](media/team-explorer/manage-connections.png "Pulsante Team Explorer-Manage Connections in Visual Studio.")
 
 1. Nella pagina **Connessione** scegliere **Gestisci connessioni** > **Connetti a un progetto**.
 
-   ![Connettersi a un progetto in Team Explorer](media/team-explorer/connect-project.png)
+   ![Connettersi a un progetto in Team Explorer](media/team-explorer/connect-project.png "L'opzione Team Explorer-Connetti a un progetto in Visual Studio.")
 
 > [!TIP]
 > Se si vuole aprire un progetto da un repository, vedere [aprire un progetto da un repository](../get-started/tutorial-open-project-from-repo.md). Se si vuole creare un nuovo progetto o aggiungere utenti a un progetto, vedere [creare un progetto (Azure DevOps)](/azure/devops/organizations/projects/create-project) e [aggiungere utenti a un progetto o a un team (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project).

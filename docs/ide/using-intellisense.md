@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34e038256d46909e135f8285cb1b3edc45d0ba3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cbd85ece0cf7b84230e37c74c27e746df7a52439
+ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565344"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94878283"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense in Visual Studio
 
@@ -42,19 +42,19 @@ Nell'elenco dei membri, l'icona a sinistra rappresenta il tipo del membro, ad es
 
 Per disattivare l'elenco dei membri per impostazione predefinita (in modo che non venga visualizzato a meno che non venga richiamato specificamente), passare a **strumenti**  >  **Opzioni**  >  **tutti i linguaggi** e deselezionare **elenco membri automatico**. Se si vuole disattivare la funzionalità Elenca membri solo per un linguaggio specifico, andare sulle impostazioni **Generali** per quel linguaggio.
 
-È inoltre possibile modificare la modalità di suggerimento, in cui solo il testo digitato viene inserito nel codice. Se ad esempio si immette un identificatore che non è presente nell'elenco e si preme **Tab**, in modalità di completamento la voce sostituirà l'identificatore tipizzato. Per passare dalla modalità di completamento alla modalità di suggerimento, premere **CTRL** + **+** + **barra spaziatrice**o scegliere **Modifica**  >  **IntelliSense**Abilita  >  **modalità di terminazione**.
+È inoltre possibile modificare la modalità di suggerimento, in cui solo il testo digitato viene inserito nel codice. Se ad esempio si immette un identificatore che non è presente nell'elenco e si preme **Tab**, in modalità di completamento la voce sostituirà l'identificatore tipizzato. Per passare dalla modalità di completamento alla modalità di suggerimento, premere **CTRL** + **+** + **barra spaziatrice** o scegliere **Modifica**  >  **IntelliSense** Abilita  >  **modalità di terminazione**.
 
 ## <a name="parameter-info"></a>Informazioni sul parametro
 
 Informazioni sul parametro fornisce informazioni relative al numero, ai nomi e ai tipi di parametri richiesti da un metodo, un parametro di tipo generico di attributo (in C#) o da un modello (in C++).
 
-Il parametro in grassetto indica il parametro successivo richiesto durante la digitazione della funzione. Per le funzioni in overload, è possibile usare i tasti di direzione**Freccia SU** e **Freccia GIÙ** per visualizzare informazioni sui parametri alternativi per gli overload della funzione.
+Il parametro in grassetto indica il parametro successivo richiesto durante la digitazione della funzione. Per le funzioni in overload, è possibile usare i tasti di direzione **Freccia SU** e **Freccia GIÙ** per visualizzare informazioni sui parametri alternativi per gli overload della funzione.
 
 ![Informazioni sul parametro](../ide/media/vs2015_param_info.png)
 
 Se si annotano funzioni e parametri con commenti relativi alla documentazione XML, i commenti verranno visualizzati come informazioni sui parametri. Per altre informazioni, vedere [Inserire commenti XML per la generazione di documentazione](reference/generate-xml-documentation-comments.md).
 
-È possibile richiamare manualmente le informazioni sui parametri scegliendo **modifica**  >  **IntelliSense**  >  **informazioni parametri**IntelliSense, premendo **CTRL** + **MAIUSC** + **Space**o scegliendo il pulsante **informazioni sul parametro** sulla barra degli strumenti dell'editor.
+È possibile richiamare manualmente le informazioni sui parametri scegliendo **modifica**  >  **IntelliSense**  >  **informazioni parametri** IntelliSense, premendo **CTRL** + **MAIUSC** + **Space** o scegliendo il pulsante **informazioni sul parametro** sulla barra degli strumenti dell'editor.
 
 ## <a name="quick-info"></a>Informazioni rapide
 
@@ -66,15 +66,15 @@ Quando si seleziona un membro nella casella **Elenca membri**, vengono visualizz
 
 ![Informazioni sui parametri in un file di codice C&#35;](../ide/media/vs2015_paraminfo.png)
 
-È possibile richiamare manualmente le informazioni rapide scegliendo **modifica**  >  **IntelliSense**  >  **informazioni rapide**IntelliSense, premendo **CTRL** + **i**oppure scegliendo il pulsante **informazioni rapide** sulla barra degli strumenti dell'editor.
+È possibile richiamare manualmente le informazioni rapide scegliendo **modifica**  >  **IntelliSense**  >  **informazioni rapide** IntelliSense, premendo **CTRL** + **i** oppure scegliendo il pulsante **informazioni rapide** sulla barra degli strumenti dell'editor.
 
 Se una funzione è sottoposta a overload, è possibile che IntelliSense non visualizzi le informazioni per tutte le forme di overload.
 
-È possibile disattivare le informazioni rapide per il codice C++ passando a **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **C/C++**  >  **Avanzate**e impostando **informazioni rapide automatiche** su `false` .
+È possibile disattivare le informazioni rapide per il codice C++ passando a **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **C/C++**  >  **Avanzate** e impostando **informazioni rapide automatiche** su `false` .
 
 ## <a name="complete-word"></a>Completa parola
 
-Completa parola completa la digitazione del nome di una variabile, di un comando o di una funzione dopo che sono stati immessi caratteri sufficienti a identificare il termine in modo univoco. È possibile richiamare completa parola scegliendo **modifica**  >  **IntelliSense**  >  **completa parola**, premendo **CTRL** + **barra spaziatrice**oppure scegliendo il pulsante **completa parola** sulla barra degli strumenti dell'editor.
+Completa parola completa la digitazione del nome di una variabile, di un comando o di una funzione dopo che sono stati immessi caratteri sufficienti a identificare il termine in modo univoco. È possibile richiamare completa parola scegliendo **modifica**  >  **IntelliSense**  >  **completa parola**, premendo **CTRL** + **barra spaziatrice** oppure scegliendo il pulsante **completa parola** sulla barra degli strumenti dell'editor.
 
 ## <a name="intellisense-options"></a>Opzioni IntelliSense
 
@@ -111,6 +111,7 @@ MessageBox( hWnd, "String literal|")
 
 - [IntelliSense per Visual Basic](../ide/visual-basic-specific-intellisense.md)
 - [IntelliSense per C#](../ide/visual-csharp-intellisense.md)
+- [IntelliSense per Python](../python/editing-python-code-in-visual-studio.md#intellisense)
 - [IntelliSense per JavaScript](../ide/javascript-intellisense.md)
 - [Codice di scrittura e refactoring (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 - [Inserire commenti XML per la generazione di documentazione](reference/generate-xml-documentation-comments.md)

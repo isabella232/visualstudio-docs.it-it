@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 30ae69f07c89efb6d01228088596fc1bc05fac87
-ms.sourcegitcommit: e8a13978131f257d91ce37c5a2e0d153a4c400ef
+ms.openlocfilehash: e640d19659861a03d0f97abc799344bebb14b936
+ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704066"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94878309"
 ---
 # <a name="git-experience-in-visual-studio"></a>Esperienza git in Visual Studio
 
@@ -41,7 +41,7 @@ Sono disponibili tre modi per iniziare a usare git con Visual Studio per aumenta
 
 Se il codice non è associato a git, è possibile iniziare creando un nuovo repository git. A tale scopo, selezionare **git**  >  **Crea repository git** dalla barra dei menu. Quindi, nella finestra di dialogo **creare un repository git** immettere le informazioni.
 
-:::image type="content" source="media/git-create-repository.png" alt-text="Screenshot della finestra di dialogo per la creazione di un repository git in Visual Studio ":::
+:::image type="content" source="media/git-create-repository.png" alt-text="La finestra di dialogo creare un repository git in Visual Studio.":::
 
 La finestra di dialogo **creare un repository git** consente di eseguire facilmente il push del nuovo repository in GitHub. Per impostazione predefinita, il nuovo repository è privato, ovvero l'unico utente che può accedervi. Se si deseleziona la casella, il repository sarà pubblico, il che significa che chiunque su GitHub potrà visualizzarlo.
 
@@ -54,7 +54,7 @@ La finestra di dialogo **creare un repository git** consente di eseguire facilme
 
 Visual Studio include un'esperienza di clonazione semplice. Se si conosce l'URL del repository che si vuole clonare, è possibile incollare l'URL nella sezione **percorso repository** , quindi scegliere il percorso del disco in cui si vuole clonare Visual Studio.
 
-:::image type="content" source="media/git-clone-repository.png" alt-text="Screenshot della finestra di dialogo clonare un repository git in Visual Studio ":::
+:::image type="content" source="media/git-clone-repository.png" alt-text="La finestra di dialogo clonare un repository git in Visual Studio.":::
 
 Se non si conosce l'URL del repository, Visual Studio semplifica la ricerca e quindi la clonazione del repository GitHub o Azure DevOps esistente.
 
@@ -62,7 +62,7 @@ Se non si conosce l'URL del repository, Visual Studio semplifica la ricerca e qu
 
 Dopo aver clonato un repository o averne creato uno, Visual Studio rileva il repository git e lo aggiunge all'elenco dei repository **locali** nel menu git. Da qui è possibile accedere rapidamente e spostarsi tra i repository git.
 
-:::image type="content" source="media/git-local-repositories.png" alt-text="Screenshot dell'opzione repository locali dal menu git in Visual Studio ":::
+:::image type="content" source="media/git-local-repositories.png" alt-text="Opzione repository locali dal menu git in Visual Studio ":::
 
 ## <a name="view-files-in-solution-explorer"></a>Visualizza file in Esplora soluzioni
 
@@ -76,7 +76,7 @@ Visual Studio regola la visualizzazione in base al file di visualizzazione caric
 
 È possibile passare dalla visualizzazione attualmente aperta all'elenco di visualizzazioni utilizzando il pulsante **Cambia viste** sulla barra degli strumenti Esplora soluzioni.
 
-:::image type="content" source="media/git-solution-explorer-views.png" alt-text="Screenshot di Esplora soluzioni con il pulsante Cambia visualizzazioni selezionato in Visual Studio ":::
+:::image type="content" source="media/git-solution-explorer-views.png" alt-text="Esplora soluzioni con il pulsante Cambia viste selezionato in Visual Studio.":::
 
 ## <a name="git-changes-window"></a>Finestra modifiche git
 
@@ -88,7 +88,7 @@ Git tiene traccia delle modifiche apportate ai file nel repository mentre si lav
 
 Quando si esegue il lavoro, Visual Studio tiene traccia delle modifiche apportate ai file nel progetto nella sezione **modifiche** della finestra **modifiche git** .
 
-:::image type="content" source="media/git-changes-window.png" alt-text="Screenshot della finestra modifiche git in Visual Studio ":::
+:::image type="content" source="media/git-changes-window.png" alt-text="La finestra git changes in Visual Studio.":::
 
 Quando si è pronti per la gestione temporanea delle modifiche, fare clic sul **+** pulsante (segno più) in ogni file che si desidera inserire in una fase oppure fare clic con il pulsante destro del mouse su un file e scegliere **fase**. È anche possibile organizzare tutti i file modificati con un solo clic usando il pulsante staging All **+** (più) nella parte superiore della sezione **changes** .
 
@@ -98,7 +98,7 @@ Quando si esegue il staging di una modifica, Visual Studio crea una sezione di m
 
 Visual Studio semplifica anche il commit e la sincronizzazione con un solo clic usando i collegamenti **commit tutti e push** e **commit tutti e sincronizza** . Quando si fa doppio clic su un file nelle sezioni **modifiche** e **modifiche** di gestione temporanea, è possibile visualizzare un confronto riga per riga con la versione non modificata del file.
 
-:::image type="content" source="media/git-file-version-compare.png" alt-text="Screenshot del confronto riga per riga delle versioni dei file in Visual Studio ":::
+:::image type="content" source="media/git-file-version-compare.png" alt-text="Confronto riga per riga di versioni di file in Visual Studio ":::
 
 > [!TIP]
 > È possibile associare un elemento di lavoro di Azure DevOps a un commit usando il carattere "#" Se si è connessi al repository DevOps di Azure. È possibile connettere il repository di Azure DevOps tramite **Team Explorer**  >  **gestire le connessioni**.
@@ -107,11 +107,11 @@ Visual Studio semplifica anche il commit e la sincronizzazione con un solo clic 
 
 Visual Studio Visualizza il Current Branch nel selettore nella parte superiore della finestra delle **modifiche di git** .
 
-:::image type="content" source="media/git-changes-current-branch-selector.png" alt-text="Screenshot dei rami correnti che è possibile visualizzare usando il selettore nella parte superiore del selettore delle modifiche di Git in Visual Studio ":::
+:::image type="content" source="media/git-changes-current-branch-selector.png" alt-text="I rami correnti che è possibile visualizzare usando il selettore nella parte superiore del selettore delle modifiche di Git in Visual Studio ":::
 
 Current Branch è disponibile anche nella barra di stato nell'angolo inferiore destro dell'IDE di Visual Studio.
 
-:::image type="content" source="media/git-changes-current-branch-status-bar.png" alt-text="Screenshot dei rami correnti che è possibile visualizzare usando la barra di stato nell'angolo inferiore destro dell'IDE di Visual Studio ":::
+:::image type="content" source="media/git-changes-current-branch-status-bar.png" alt-text="Rami correnti che è possibile visualizzare usando la barra di stato nell'angolo inferiore destro dell'IDE di Visual Studio ":::
 
 Da entrambe le posizioni, è possibile passare da un ramo esistente all'altra.
 
@@ -121,7 +121,7 @@ Da entrambe le posizioni, è possibile passare da un ramo esistente all'altra.
 
 La creazione di un nuovo ramo è semplice come immettere il nome del ramo e basarlo su un ramo esistente.
 
-:::image type="content" source="media/git-changes-create-new-branch.png" alt-text="Screenshot della finestra di dialogo Crea un nuovo ramo in Visual Studio ":::
+:::image type="content" source="media/git-changes-create-new-branch.png" alt-text="Finestra di dialogo Crea un nuovo ramo in Visual Studio ":::
 
 È possibile scegliere un ramo locale o remoto esistente come base. La casella di controllo **checkout Branch** passa automaticamente al ramo appena creato. Il comando equivalente per questa azione è `git checkout -b <new-branch><existing-branch>` .
 
@@ -137,17 +137,17 @@ Quando si seleziona **Gestisci rami** dal menu **git** , viene visualizzata la v
 
 Quando si recupera un ramo, la finestra **modifiche git** presenta un indicatore sotto l'elenco a discesa Branch, che Visualizza il numero di commit estratti dal ramo remoto. Questo indicatore mostra anche il numero di commit locali non sottoposto a push.
 
-:::image type="content" source="media/git-repo-drop-down-indicator.png" alt-text="Screenshot della finestra modifiche git che mostra l'elemento dell'interfaccia utente a discesa indicatore in Visual Studio ":::
+:::image type="content" source="media/git-repo-drop-down-indicator.png" alt-text="La finestra modifiche git che mostra l'elemento dell'interfaccia utente a discesa indicatore in Visual Studio ":::
 
 L'indicatore funziona anche come collegamento per passare alla cronologia di commit del branch nella finestra del **repository git** . Nella parte superiore della cronologia ora vengono visualizzati i dettagli di questi commit in ingresso e in uscita. Da qui è anche possibile scegliere di eseguire il pull o il push dei commit.
 
-:::image type="content" source="media/git-branch-commit-history.png" alt-text="Screenshot della finestra del repository git che mostra la cronologia dei commit di un ramo in Visual Studio ":::
+:::image type="content" source="media/git-branch-commit-history.png" alt-text="Finestra del repository git che mostra la cronologia dei commit di un ramo in Visual Studio ":::
 
 #### <a name="commit-details"></a>Dettagli commit
 
 Quando si fa doppio clic su un **commit**, Visual Studio apre i dettagli in una finestra degli strumenti separata. Da qui è possibile ripristinare il commit, reimpostare il commit, modificare il messaggio di commit o creare un tag nel commit. Quando si fa clic su un file modificato nel commit, Visual Studio apre la visualizzazione delle **differenze** affiancata del commit e del relativo elemento padre.
 
-:::image type="content" source="media/git-branch-commit-details.png" alt-text="Screenshot della finestra di dialogo Dettagli commit in Visual Studio ":::
+:::image type="content" source="media/git-branch-commit-details.png" alt-text="Finestra di dialogo Dettagli commit in Visual Studio ":::
 
 ## <a name="handle-merge-conflicts"></a>Gestione dei conflitti di merge
 
@@ -155,11 +155,11 @@ Possono verificarsi conflitti durante un'operazione di merge se due sviluppatori
 
 Visual Studio semplifica l'identificazione e la risoluzione di un conflitto di merge. In primo luogo, la finestra del **repository git** Mostra una barra delle informazioni in oro nella parte superiore della finestra.
 
-:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Screenshot del messaggio &quot;merge completato con conflitti&quot; in Visual Studio ":::
+:::image type="content" source="media/git-merge-conflict-gold-bar.png" alt-text="Messaggio &quot;merge completato con conflitti&quot; in Visual Studio ":::
 
 La finestra **modifiche git** Visualizza anche un messaggio "*merge is in progress with Conflicts*", con i file non Uniti nella relativa sezione separata sotto.
 
-:::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Screenshot del messaggio ' Unione in corso con conflitti ' in Visual Studio ":::
+:::image type="content" source="media/git-merge-progress-conflicts-message.png" alt-text="Messaggio &quot;Unione in corso con conflitti&quot; in Visual Studio ":::
 
 Tuttavia, se non si dispone di queste finestre aperte e si passa al file con conflitti di merge, non sarà necessario cercare il testo seguente:
 
@@ -177,7 +177,7 @@ Al contrario, Visual Studio Visualizza una barra informazioni in oro nella parte
 
 L'editor di merge in Visual Studio è uno strumento di merge a tre vie che visualizza le modifiche in ingresso, le modifiche correnti e il risultato dell'Unione. È possibile utilizzare la barra degli strumenti nel livello superiore dell' **editor di merge** per spostarsi tra i conflitti e le differenze di Unione automatica nel file.
 
-:::image type="content" source="media/git-merge-editor.png" alt-text="Screenshot dell'editor di merge in Visual Studio ":::
+:::image type="content" source="media/git-merge-editor.png" alt-text="Editor di merge in Visual Studio ":::
 
 È anche possibile usare gli interruttori per visualizzare/nascondere le differenze, visualizzare/nascondere le differenze di parola e personalizzare il layout. Sono presenti caselle di controllo nella parte superiore di ogni lato che è possibile usare per eseguire tutte le modifiche da un lato o l'altro. Tuttavia, per modificare le singole modifiche, è possibile fare clic sulle caselle di controllo a sinistra delle righe in conflitto su entrambi i lati. Infine, al termine della risoluzione dei conflitti, è possibile selezionare il pulsante **accetta merge** nell'editor di merge. Si scrive quindi un messaggio di commit e si esegue il commit delle modifiche per completare la risoluzione.
 
@@ -185,13 +185,13 @@ L'editor di merge in Visual Studio è uno strumento di merge a tre vie che visua
 
 Per personalizzare e personalizzare le impostazioni git a livello di repository e a livello globale, passare a **git**  >  **Settings** sulla barra dei menu o a **strumenti**  >  **Opzioni**  >  **controllo del codice sorgente** sulla barra dei menu. Scegliere quindi le opzioni desiderate.
 
-:::image type="content" source="media/git-options-settings.png" alt-text="Screenshot della finestra di dialogo Opzioni in cui è possibile scegliere le impostazioni di personalizzazione e personalizzazione nell'IDE di Visual Studio ":::
+:::image type="content" source="media/git-options-settings.png" alt-text="La finestra di dialogo Opzioni in cui è possibile scegliere le impostazioni di personalizzazione e personalizzazione nell'IDE di Visual Studio ":::
 
 ## <a name="how-to-use-the-legacy-team-explorer-experience-in-visual-studio"></a>Come usare l'esperienza Team Explorer legacy in Visual Studio
 
 La nuova esperienza git è il sistema di controllo della versione predefinito in Visual Studio 2019 dalla [versione 16,8](/visualstudio/releases/2019/release-notes/) e successive. Tuttavia, se si desidera disattivarla, è possibile. Passare a **strumenti**  >  **Opzioni**  >  **ambiente**  >  **Anteprima funzionalità** e quindi attivare o disattivare la casella di controllo **nuova esperienza utente git** , che consente di tornare all'esperienza Team Explorer legacy.
 
-:::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Screenshot della sezione funzionalità di anteprima della finestra di dialogo Opzioni in Visual Studio ":::
+:::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Sezione funzionalità di anteprima della finestra di dialogo Opzioni in Visual Studio ":::
 
 ## <a name="whats-next"></a>Passaggi successivi
 
