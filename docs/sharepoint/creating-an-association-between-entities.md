@@ -1,5 +1,7 @@
 ---
 title: Creazione di un'associazione tra entità | Microsoft Docs
+description: Creare un'associazione tra entità nel modello di integrazione applicativa dei dati (Business Data Connectivity). Informazioni sui metodi e sui tipi di associazioni di associazione.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -21,18 +23,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee767ded0687baa09653bd82785b68bee7fa0ebd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a5decf8ad803bea8b1d64c79410c319dbef0be9
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981084"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850546"
 ---
 # <a name="create-an-association-between-entities"></a>Creare un'associazione tra entità
   È possibile definire le relazioni tra entità nel modello di integrazione applicativa dei dati (Business Data Connectivity) creando associazioni. Visual Studio genera metodi che forniscono agli utenti del modello informazioni sulle singole associazioni. Questi metodi possono essere utilizzati da elenchi, applicazioni personalizzate o web part di SharePoint per visualizzare le relazioni tra i dati in un'interfaccia utente.
 
 ## <a name="create-an-association"></a>Creare un'associazione
- Creare un'associazione scegliendo il controllo **associazione** nella **casella degli strumenti**di Visual Studio, scegliendo la prima entità (denominata entità di origine) e scegliendo la seconda entità (denominata entità di destinazione). È possibile definire i dettagli dell'associazione nell'editor di **associazione**. Per altre informazioni, vedere [procedura: creare un'associazione tra entità](../sharepoint/how-to-create-an-association-between-entities.md).
+ Creare un'associazione scegliendo il controllo **associazione** nella **casella degli strumenti** di Visual Studio, scegliendo la prima entità (denominata entità di origine) e scegliendo la seconda entità (denominata entità di destinazione). È possibile definire i dettagli dell'associazione nell'editor di **associazione**. Per altre informazioni, vedere [procedura: creare un'associazione tra entità](../sharepoint/how-to-create-an-association-between-entities.md).
 
 ## <a name="association-methods"></a>Metodi di associazione
  Applicazioni come le web part di dati aziendali di SharePoint utilizzano le associazioni chiamando i metodi nella classe del servizio di un'entità. È possibile aggiungere metodi alla classe di servizio di un'entità selezionandola nell' **editor di associazione**.

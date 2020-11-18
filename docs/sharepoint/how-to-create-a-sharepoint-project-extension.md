@@ -1,5 +1,7 @@
 ---
 title: "Procedura: creare un'estensione di progetto SharePoint | Microsoft Docs"
+description: Informazioni su come creare un'estensione di progetto in modo che sia possibile aggiungere funzionalità a qualsiasi progetto SharePoint aperto in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/28/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 191f5d718064a4e094a2c28e3f584168b20fb3fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad8ee37cba6f6f85e480fc0fe3ccaef081cefae4
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017152"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850663"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>Procedura: creare un'estensione di progetto SharePoint
   Creare un'estensione di progetto quando si desidera aggiungere funzionalità a un progetto SharePoint aperto in Visual Studio. Per ulteriori informazioni, vedere [estensione del sistema del progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).

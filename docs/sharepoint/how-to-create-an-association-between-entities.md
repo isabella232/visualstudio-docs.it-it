@@ -1,5 +1,7 @@
 ---
 title: "Procedura: creare un'associazione tra entità | Microsoft Docs"
+description: Definire le relazioni tra entità nel modello di connettività dei dati aziendali (BDC) creando associazioni in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e736e0befe8aaf9a6c090615d0c43bb3f3116dbf
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016937"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849844"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Procedura: creare un'associazione tra entità
   È possibile definire le relazioni tra entità nel modello di integrazione applicativa dei dati (Business Data Connectivity) creando associazioni. Visual Studio genera metodi che forniscono agli utenti del modello informazioni sulle singole associazioni. Questi metodi possono essere utilizzati da elenchi, applicazioni personalizzate o web part di SharePoint per visualizzare le relazioni tra i dati in un'interfaccia utente.
@@ -35,7 +37,7 @@ ms.locfileid: "86016937"
 
 ### <a name="to-create-an-association-between-entities"></a>Per creare un'associazione tra entità
 
-1. Nella scheda **BusinessDataConnectivity** della **casella degli strumenti**scegliere l'elemento **Association** .
+1. Nella scheda **BusinessDataConnectivity** della **casella degli strumenti** scegliere l'elemento **Association** .
 
 2. Nella finestra di progettazione dell'integrazione applicativa dei dati scegliere l'entità di origine, quindi l'entità di destinazione.
 

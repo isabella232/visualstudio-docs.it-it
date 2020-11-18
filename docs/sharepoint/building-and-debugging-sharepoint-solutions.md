@@ -1,5 +1,7 @@
 ---
 title: Compilazione e debug di soluzioni SharePoint | Microsoft Docs
+description: Impara a compilare ed eseguire il debug di soluzioni SharePoint e a comprendere in che modo è diverso dalla compilazione e dal debug di altri tipi di progetti in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,25 +15,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b34df23c8cb612d72fed108a6c0aecbf57875c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6801f6b60d2ef522385ecdf290d0a1913bd6df2
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016360"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850221"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Build e debug delle soluzioni SharePoint
   In generale, la compilazione e il debug di soluzioni SharePoint equivale alla compilazione e al debug di altri tipi di progetti in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Gli argomenti di questa sezione illustrano le differenze esistenti.
 
 ## <a name="project-output-for-sharepoint-solutions"></a>Output del progetto per le soluzioni SharePoint
- La compilazione di soluzioni SharePoint crea assembly e un file di pacchetto di soluzione (con*estensione wsp*). Nella tabella seguente vengono illustrati i percorsi di questi file durante una compilazione.
+ La compilazione di soluzioni SharePoint crea assembly e un file di pacchetto di soluzione (con *estensione wsp*). Nella tabella seguente vengono illustrati i percorsi di questi file durante una compilazione.
 
 |Elemento di compilazione|Cartella di output|
 |----------------|-------------------|
-|Assembly, database di programma (*PDB*) e file con *estensione wsp* .|* \<ProjectName> \bin\Debug* o * \<ProjectName> \bin\Release*|
-|File degli elementi del progetto SharePoint.|* \<ProjectName> \pkg\debug* o * \<ProjectName> \pkg\release*|
-|Compila i file intermedi.|* \<ProjectName> \obj\debug* o * \<ProjectName> \obj\release*|
-|File intermedi del pacchetto.|* \<ProjectName> \pkgobj\debug* o * \<ProjectName> \pkgobj\release*|
+|Assembly, database di programma (*PDB*) e file con *estensione wsp* .|*\<ProjectName> \bin\Debug* o *\<ProjectName> \bin\Release*|
+|File degli elementi del progetto SharePoint.|*\<ProjectName> \pkg\debug* o *\<ProjectName> \pkg\release*|
+|Compila i file intermedi.|*\<ProjectName> \obj\debug* o *\<ProjectName> \obj\release*|
+|File intermedi del pacchetto.|*\<ProjectName> \pkgobj\debug* o *\<ProjectName> \pkgobj\release*|
 
 ## <a name="build-sharepoint-solutions"></a>Compila soluzioni SharePoint
  Per compilare soluzioni SharePoint, nel computer di sviluppo deve essere installata la versione corretta di SharePoint Server. In caso contrario, la compilazione di soluzioni SharePoint equivale alla compilazione di altri tipi di progetti in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Per altre informazioni, vedere [procedura: compilare soluzioni SharePoint](../sharepoint/how-to-build-sharepoint-solutions.md).

@@ -1,5 +1,7 @@
 ---
 title: Esplorazione delle connessioni di SharePoint tramite Esplora server | Microsoft Docs
+description: Esplorazione delle connessioni di SharePoint tramite Esplora server. Informazioni sui nodi Esplora server e sui comandi del menu di scelta rapida del nodo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -16,15 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: baf580ace98ab14032de1e9a3edf18af2b2cfee8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79e8d3dbc1dab865b2ab9048cea8d13c478f2a12
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016346"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849831"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Esplorazione delle connessioni di SharePoint tramite Esplora server
-  È ora possibile esplorare le connessioni locali di SharePoint in **Esplora server**. Utilizzando questa tecnica, è possibile navigare attraverso i componenti di un sito di SharePoint nel sistema. I componenti del sito di SharePoint, ad esempio le definizioni di elenco e i tipi di contenuto, vengono visualizzati in un nodo denominato **connessioni di SharePoint** nella visualizzazione albero del **Esplora server**. Per visualizzare **Esplora server**, scegliere **Visualizza**Esplora server sulla barra dei menu  >  **Server Explorer**. Oltre a visualizzare i componenti del sito di SharePoint, è possibile rimuovere gli elementi, visualizzare le relative proprietà o aggiornare la visualizzazione albero usando i comandi del menu di scelta rapida.
+  È ora possibile esplorare le connessioni locali di SharePoint in **Esplora server**. Utilizzando questa tecnica, è possibile navigare attraverso i componenti di un sito di SharePoint nel sistema. I componenti del sito di SharePoint, ad esempio le definizioni di elenco e i tipi di contenuto, vengono visualizzati in un nodo denominato **connessioni di SharePoint** nella visualizzazione albero del **Esplora server**. Per visualizzare **Esplora server**, scegliere **Visualizza** Esplora server sulla barra dei menu  >  **Server Explorer**. Oltre a visualizzare i componenti del sito di SharePoint, è possibile rimuovere gli elementi, visualizzare le relative proprietà o aggiornare la visualizzazione albero usando i comandi del menu di scelta rapida.
 
 > [!IMPORTANT]
 > Per esplorare un sito di SharePoint, è necessario essere un amministratore della raccolta siti di SharePoint ed eseguire Visual Studio come amministratore del computer locale. In caso contrario, il sito viene visualizzato in **Esplora server**, ma non è possibile espanderne il nodo. Per verificare se si è un amministratore della raccolta siti, aprire il sito in un Web browser, aprire il menu **Azioni sito** , scegliere **autorizzazioni sito**, quindi, nella pagina **autorizzazioni: sito del team** , scegliere il comando **Amministratori raccolta siti** dal gruppo **Gestisci** sulla barra multifunzione. Il nome verrà visualizzato nella casella di testo se si è un amministratore della raccolta siti. Se il comando **Amministratori raccolta siti** non viene visualizzato nel gruppo Gestisci sulla barra multifunzione, non si è un amministratore della raccolta siti ed è necessario ottenere le autorizzazioni appropriate dall'amministratore del sito.
@@ -38,7 +40,7 @@ ms.locfileid: "86016346"
 |Nome comando|Descrizione|
 |------------------|-----------------|
 |Aggiorna|Aggiorna la visualizzazione albero in modo da riflettere le modifiche che potrebbero essersi verificate dall'ultima visualizzazione del nodo.|
-|Delete|Rimuove il nodo selezionato dalla visualizzazione albero. **Nota:**  Questo comando è abilitato solo nelle connessioni di SharePoint elencate nel nodo **connessioni di SharePoint** .|
+|Elimina|Rimuove il nodo selezionato dalla visualizzazione albero. **Nota:**  Questo comando è abilitato solo nelle connessioni di SharePoint elencate nel nodo **connessioni di SharePoint** .|
 |Proprietà|Consente di visualizzare le proprietà disponibili per il nodo selezionato nella finestra **Proprietà** . Tutte le proprietà sono di sola lettura e non tutte le proprietà sono associate a ogni nodo.|
 |Aggiungi connessione|Consente di specificare un sito di SharePoint che si desidera esplorare. Disponibile nel nodo **connessioni di SharePoint** e nei nodi del sito secondario.|
 |Visualizza nel browser|Consente di visualizzare l'elenco selezionato nel Web browser. Questo comando è disponibile in alcuni elenchi nel nodo **elenchi** contenuto negli **elenchi e nelle raccolte**.|

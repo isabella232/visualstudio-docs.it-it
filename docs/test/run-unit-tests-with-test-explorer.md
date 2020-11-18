@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d7dc38f1a25826ba275738cd8e758a2ad5d90e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95e35037ba07dcba1f51da7b47b7fca40a447dfb
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386641"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850026"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -62,7 +62,7 @@ Quando si eseguono, scrivono e rieseguono i test, Esplora test visualizza i risu
 ### <a name="run-tests"></a>Esecuzione dei test
 
 ::: moniker range="vs-2017"
-È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
+È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una di queste operazioni:
 
 - Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto**.
 
@@ -75,7 +75,7 @@ Quando si eseguono, scrivono e rieseguono i test, Esplora test visualizza i risu
 Mentre il test viene eseguito, la barra **Superato/Non superato** nella parte superiore della finestra **Esplora test** visualizza un'animazione. Al termine dell'esecuzione del test, la barra **Superato/Non superato** diventa verde se tutti i test sono stati superati o rossa se un test non è stato superato.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
+È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una di queste operazioni:
 
 - Per eseguire tutti i test in una soluzione, scegliere l'icona **Esegui tutto**.
 
@@ -158,7 +158,7 @@ Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento 
 ::: moniker range="vs-2017"
 |Gruppo|Descrizione|
 |-|-----------------|
-|**Duration**|Raggruppa i test in base al tempo di esecuzione: **Veloce**, **Medio**e **Lento**.|
+|**Duration**|Raggruppa i test in base al tempo di esecuzione: **Veloce**, **Medio** e **Lento**.|
 |**Risultato**|Raggruppa i test in base ai risultati di esecuzione: **Test non superati**, **Test ignorati**, **Test superati**.|
 |**Tratti**|Raggruppa i test in base a coppie categoria/valore definite. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
 |**Progetto**|Raggruppa i test in base al nome dei progetti.|
@@ -166,8 +166,8 @@ Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento 
 ::: moniker range=">=vs-2019"
 |Gruppo|Descrizione|
 |-|-----------------|
-|**Duration**|Raggruppa i test in base al tempo di esecuzione: **veloce**, **medio**e **lento**.|
-|**State**|Raggruppa i test per risultati di esecuzione: **test non**superati, **test ignorati**, **test superati**, **non eseguiti**|
+|**Duration**|Raggruppa i test in base al tempo di esecuzione: **veloce**, **medio** e **lento**.|
+|**State**|Raggruppa i test per risultati di esecuzione: **test non** superati, **test ignorati**, **test superati**, **non eseguiti**|
 |**Framework di destinazione** | Raggruppa i test in base al framework di destinazione dei progetti |
 |**Spazio dei nomi**|Raggruppa i test in base allo spazio dei nomi contenitore.|
 |**Progetto**|Raggruppa i test in base al progetto contenitore.|
@@ -233,6 +233,21 @@ A partire da Visual Studio 2019 versione 16,7, è possibile scegliere il pulsant
 È inoltre possibile selezionare o deselezionare le caselle dei gruppi padre nella gerarchia. Questa azione crea una playlist dinamica che aggiorna sempre la playlist in base ai test presenti nel gruppo. Se, ad esempio, si posiziona un segno di spunta accanto a una classe, qualsiasi test aggiunto da tale classe diventa parte di questa playlist. Se si elimina un test da tale classe, questo viene rimosso dalla playlist. È possibile ottenere altre informazioni sulle regole salvando la playlist con il pulsante Salva sulla barra degli strumenti e aprendo il file con *estensione playlist* creato sul disco. Questo file elenca tutte le regole e i singoli test che costituiscono una playlist.
 
 ![File XML playlist](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
+
+Se si vuole creare una playlist per i tratti, usare il formato seguente. Verificare che sia presente uno spazio tra il `TestCategory` nome e il `[Value]` .
+```xml
+<Playlist Version="2.0">
+  <Rule Name="Includes" Match="Any">
+    <Rule Match="All">
+      <Property Name="Solution" />
+        <Rule Match="Any">
+            <Property Name="Trait" Value="TestCategory [Value]" />
+        </Rule>
+    </Rule>
+  </Rule>
+</Playlist>
+```
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"

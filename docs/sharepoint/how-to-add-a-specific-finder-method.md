@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere un metodo Finder specifico | Microsoft Docs'
+description: Ottenere un'istanza di entità aggiungendo un metodo Finder. Il servizio BDC chiama il metodo quando un utente seleziona un'entità in una Web part dati business o in un elenco esterno.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,19 +19,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 403213b6dcd87251df0b24333c759c8de8720afd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a02e88b0168a6aa4b1a69af3ee14150a71e76037
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014817"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849728"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Procedura: aggiungere un metodo Finder specifico
   Per restituire una singola istanza di entità, è possibile creare un metodo di *ricerca specifico* . Il servizio di integrazione applicativa dei dati esegue il metodo di ricerca specifico quando un utente sceglie un'entità in una Web part dati business o in un elenco esterno. Per ulteriori informazioni, vedere [progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-specific-finder-method"></a>Per creare un metodo Finder specifico
 
-1. Nella **finestra di progettazione dell'integrazione applicativa**dei dati scegliere un'entità.
+1. Nella **finestra di progettazione dell'integrazione applicativa** dei dati scegliere un'entità.
 
     Per informazioni su come aggiungere un'entità alla finestra di **progettazione dell'integrazione applicativa** dei dati in Visual Studio, vedere [procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
@@ -65,9 +67,9 @@ ms.locfileid: "86014817"
 
 6. Nella finestra **Dettagli metodo** scegliere l'istanza del metodo del metodo.
 
-7. Nella **finestra Proprietà**impostare la proprietà **nome parametro restituito** sul nome del parametro restituito del metodo. Per ulteriori informazioni sulle proprietà dell'istanza del metodo, vedere [oggetto MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
+7. Nella **finestra Proprietà** impostare la proprietà **nome parametro restituito** sul nome del parametro restituito del metodo. Per ulteriori informazioni sulle proprietà dell'istanza del metodo, vedere [oggetto MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
-8. In **Esplora soluzioni**aprire il menu di scelta rapida del file di codice del servizio generato per l'entità, quindi scegliere **Visualizza codice**.
+8. In **Esplora soluzioni** aprire il menu di scelta rapida del file di codice del servizio generato per l'entità, quindi scegliere **Visualizza codice**.
 
     Il file di codice di Entity Service verrà aperto nell'editor di codice. Per altre informazioni sul file di codice di Entity Service, vedere [creare un modello di integrazione applicativa dei dati](../sharepoint/creating-a-business-data-connectivity-model.md).
 

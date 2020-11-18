@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: creare un ricevitore di eventi | Microsoft Docs'
+description: Creare un ricevitore di eventi in modo che sia possibile rispondere quando un utente interagisce con elementi di SharePoint, ad esempio elenchi o elementi di elenco.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26d8c9f433fad051716b6ebd37e3d1f3b3f9f4eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e94bd1594f94f43c82eed5033d6ec2660905c18
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016921"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849883"
 ---
 # <a name="how-to-create-an-event-receiver"></a>Procedura: creare un ricevitore di eventi
   Creando i *ricevitori di eventi*, è possibile rispondere quando un utente interagisce con gli elementi di SharePoint, ad esempio elenchi o elementi di elenco. Ad esempio, il codice in un ricevitore di eventi può essere attivato quando un utente modifica il calendario o Elimina un nome da un elenco di contatti. Seguendo questo argomento, è possibile apprendere come aggiungere un ricevitore di eventi a un'istanza di elenco.
@@ -36,11 +38,11 @@ ms.locfileid: "86016921"
 
 1. Aprire il progetto creato in [procedura dettagliata: creare una colonna del sito, un tipo di contenuto e un elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
 
-2. In **Esplora soluzioni**scegliere il nodo del progetto SharePoint, denominato **Clinic**.
+2. In **Esplora soluzioni** scegliere il nodo del progetto SharePoint, denominato **Clinic**.
 
 3. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
-4. In **Visual C#** o **Visual Basic**espandere il nodo **SharePoint** , quindi scegliere l'elemento **2010** .
+4. In **Visual C#** o **Visual Basic** espandere il nodo **SharePoint** , quindi scegliere l'elemento **2010** .
 
 5. Nel riquadro **modelli** scegliere ricevitore di **eventi**, denominarlo **TestEventReceiver1**, quindi scegliere il pulsante **OK** .
 

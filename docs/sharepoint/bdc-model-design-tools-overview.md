@@ -1,5 +1,7 @@
 ---
 title: Panoramica degli strumenti di progettazione dei modelli BDC | Microsoft Docs
+description: Leggi una panoramica degli strumenti di progettazione da usare con un modello di integrazione applicativa dei dati. Informazioni sulla finestra di progettazione dell'integrazione applicativa dei dati, la finestra Dettagli del metodo BDC e l'esplorazione BDC.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a2531f1cc6352a03acf0b3d6af82c35e47c2743
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6e78b6809d3136c0db1f558d175706dc0ecd75b
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64827948"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850312"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Panoramica degli strumenti di progettazione dei modelli BDC
   È possibile progettare un modello di integrazione applicativa dei dati tramite la finestra di progettazione dell'integrazione applicativa dei dati, la finestra **Dettagli metodo** di integrazione applicativa dei dati e l' **esplorazione BDC**.
@@ -51,16 +53,16 @@ ms.locfileid: "64827948"
 
  Nella finestra **Dettagli metodo di integrazione applicativa dei dati** è possibile generare rapidamente metodi Finder, Finder specifico, creatore, aggiornamento ed eliminatori. Quando si generano questi metodi, Visual Studio aggiunge al metodo i metadati, ad esempio parametri, istanze e descrittori di tipo. È possibile modificare questi metadati per soddisfare lo scenario specifico.
 
- Per aprire la finestra **Dettagli metodo di integrazione applicativa dei dati** , sulla barra dei menu scegliere **Visualizza**  >  **altri**  >  **Dettagli metodo di integrazione applicativa**Windows.
+ Per aprire la finestra **Dettagli metodo di integrazione applicativa dei dati** , sulla barra dei menu scegliere **Visualizza**  >  **altri**  >  **Dettagli metodo di integrazione applicativa** Windows.
 
  Per visualizzare i metodi nella finestra **Dettagli metodo BDC** , scegliere l'entità nella finestra di progettazione dell'integrazione applicativa dei dati. I metodi dell'entità selezionata vengono visualizzati nella finestra **Dettagli metodo di integrazione applicativa dei dati** . Se non si sceglie un'entità nella finestra di progettazione dell'integrazione applicativa dei dati, nella finestra **Dettagli metodo BDC** non vengono visualizzate informazioni.
 
  Espandere o comprimere i nodi nella finestra **Dettagli metodo di integrazione applicativa dei dati** per definire parametri, istanze e descrittori di filtro. Utilizzare **Esplora integrazione applicativa** dei dati per definire i descrittori di tipo.
 
 ## <a name="bdc-explorer"></a>Esplora integrazione applicativa dei dati
- In **Esplora integrazione applicativa** dei dati vengono visualizzati gli elementi che costituiscono il modello. Per aprire **Esplora integrazione applicativa**dei dati, sulla barra dei menu scegliere **Visualizza**  >  **altro**  >  **Esplora BDC**di Windows. Per esplorare il modello, espandere i nodi in **Esplora integrazione applicativa**dei dati. Ogni nodo rappresenta un elemento nel codice XML del file di modello.
+ In **Esplora integrazione applicativa** dei dati vengono visualizzati gli elementi che costituiscono il modello. Per aprire **Esplora integrazione applicativa** dei dati, sulla barra dei menu scegliere **Visualizza**  >  **altro**  >  **Esplora BDC** di Windows. Per esplorare il modello, espandere i nodi in **Esplora integrazione applicativa** dei dati. Ogni nodo rappresenta un elemento nel codice XML del file di modello.
 
- Quando si scelgono i nodi in **Esplora integrazione applicativa**dei dati, le proprietà di ogni nodo scelto vengono visualizzate nella finestra **Proprietà** . Molte di queste proprietà corrispondono agli attributi nel file di modello. È possibile eseguire ricerche nel modello utilizzando la casella di ricerca nella parte superiore di **Esplora integrazione applicativa**dei dati.
+ Quando si scelgono i nodi in **Esplora integrazione applicativa** dei dati, le proprietà di ogni nodo scelto vengono visualizzate nella finestra **Proprietà** . Molte di queste proprietà corrispondono agli attributi nel file di modello. È possibile eseguire ricerche nel modello utilizzando la casella di ricerca nella parte superiore di **Esplora integrazione applicativa** dei dati.
 
 > [!NOTE]
 > In **Esplora integrazione applicativa** dei dati non vengono visualizzati identificatori, proprietà personalizzate, stringhe localizzate, gruppi di associazioni, azioni, descrittori di filtro, elenchi di controlli delle azioni e valori di parametro predefiniti.

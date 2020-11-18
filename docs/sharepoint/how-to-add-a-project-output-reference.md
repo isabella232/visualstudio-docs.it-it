@@ -1,5 +1,7 @@
 ---
 title: "Procedura: aggiungere un riferimento all'output del progetto | Microsoft Docs"
+description: Informazioni su come aggiungere un riferimento all'output del progetto in modo da poter distribuire assembly di progetto non SharePoint (o file con estensione xap nei progetti Silverlight) a SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bea0f39ae161d8b695f872cb634c35d0cb205c91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03980eea9d16cde2b6f079e0b33973958fed7a7f
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016756"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849870"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>Procedura: aggiungere un riferimento all'output del progetto
   Per distribuire gli assembly di progetto non SharePoint (o i file con estensione xap nei progetti Silverlight) in SharePoint, aggiungerli come riferimento all'output del progetto.
@@ -30,7 +32,7 @@ ms.locfileid: "86016756"
 
 1. Caricare una soluzione che contenga almeno un progetto SharePoint e un progetto non SharePoint.
 
-2. In **Esplora soluzioni**scegliere un elemento nel nodo del progetto SharePoint.
+2. In **Esplora soluzioni** scegliere un elemento nel nodo del progetto SharePoint.
 
 3. Nella finestra **Proprietà** scegliere la proprietà **riferimenti output progetto** , quindi scegliere il pulsante con i puntini di sospensione (![ASP.NET Mobile Designer ellisse](../sharepoint/media/mwellipsis.gif "Ellisse di ASP.NET Mobile Designer")) accanto a esso.
 

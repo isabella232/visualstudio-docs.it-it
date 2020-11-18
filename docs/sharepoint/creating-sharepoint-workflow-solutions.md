@@ -1,5 +1,7 @@
 ---
 title: Creazione di soluzioni flusso di lavoro SharePoint | Microsoft Docs
+description: Creazione di soluzioni flusso di lavoro SharePoint mediante gli strumenti di per creare flussi di lavoro personalizzati che gestiscono il ciclo di vita dei documenti e degli elementi elenco nei siti Web di SharePoint
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c787009577735213437140513ec095f81c3f43b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd3f88df661537434c79a8b0049f90ddbce14c70
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015278"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850611"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Creazione di soluzioni flusso di lavoro SharePoint
 
@@ -60,9 +62,9 @@ Per ulteriori informazioni su SharePoint, vedere [prodotti e tecnologie Microsof
 > La proprietà del **tipo di flusso di lavoro** è di sola lettura e non può essere modificata. Se si desidera modificare il tipo di flusso di lavoro, è necessario creare un altro flusso di lavoro.
 
 ## <a name="design-a-sharepoint-workflow"></a>Progettare un flusso di lavoro di SharePoint
- Dopo aver definito tutti i passaggi del processo di business, utilizzare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Progettazione flussi di lavoro per progettare il flusso di lavoro di SharePoint. Per aprire la finestra di progettazione, fare doppio clic su Workflow1.cs o Workflow1. vb in **Esplora soluzioni**oppure aprire il menu di scelta rapida per uno di questi file, quindi scegliere **Apri**.
+ Dopo aver definito tutti i passaggi del processo di business, utilizzare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Progettazione flussi di lavoro per progettare il flusso di lavoro di SharePoint. Per aprire la finestra di progettazione, fare doppio clic su Workflow1.cs o Workflow1. vb in **Esplora soluzioni** oppure aprire il menu di scelta rapida per uno di questi file, quindi scegliere **Apri**.
 
-### <a name="activities"></a>Attività
+### <a name="activities"></a>attività
  Per progettare un flusso di lavoro, aggiungere attività dalla **casella degli strumenti** a una *pianificazione del flusso di lavoro* nella finestra di progettazione. Una pianificazione del flusso di lavoro contiene la sequenza di attività nell'ordine in cui devono essere eseguite.
 
  Sono disponibili due tipi di attività:

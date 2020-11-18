@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere un file di risorse | Microsoft Docs'
+description: Aggiungere un file di risorse in Visual Studio, usando i comandi nel menu di scelta rapida del nodo della soluzione e i nodi della funzionalità in Esplora soluzioni.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 657eb473adcff40a62d2fc9b09518ebe8135eeb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 440777aaaf239dcdd3c276786a82e3d8aef55070
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015176"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850130"
 ---
 # <a name="how-to-add-a-resource-file"></a>Procedura: aggiungere un file di risorse
   I comandi per l'aggiunta di file di risorse sono presenti nel menu di scelta rapida del nodo della soluzione e dei nodi della funzionalità in Esplora soluzioni. Per ulteriori informazioni, vedere [localizzazione di soluzioni SharePoint](../sharepoint/localizing-sharepoint-solutions.md).
@@ -27,7 +29,7 @@ ms.locfileid: "86015176"
 
 1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aprire una soluzione di SharePoint.
 
-2. In **Esplora soluzioni**scegliere un nodo di progetto SharePoint, quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
+2. In **Esplora soluzioni** scegliere un nodo di progetto SharePoint, quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
 3. Nella finestra di dialogo **Aggiungi nuovo elemento** scegliere il modello **file di risorse globali** , quindi scegliere il pulsante **Aggiungi** .
 
@@ -36,7 +38,7 @@ ms.locfileid: "86015176"
 
 4. Nella finestra di dialogo **Aggiungi risorsa** scegliere le impostazioni cultura per il file di risorse, ad esempio inglese (Stati Uniti).
 
-    Questo passaggio aggiunge un file di risorse globale alla soluzione nel formato Resource_x_**.** <em>impostazioni cultura</em><strong>.</strong> resx, ad esempio, *Resource1. en-US. resx*.
+    Questo passaggio aggiunge un file di risorse globale alla soluzione nel formato Resource_x_ **.** <em>impostazioni cultura</em><strong>.</strong> resx, ad esempio, *Resource1. en-US. resx*.
 
 5. Quando si apre l' **editor di risorse** [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , aggiungere le risorse al file di risorse.
 
@@ -44,7 +46,7 @@ ms.locfileid: "86015176"
 
 1. Se la soluzione SharePoint non è già aperta in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , aprire la soluzione.
 
-2. In **Esplora soluzioni**aprire il menu di scelta rapida per il nome di una funzionalità nel nodo **funzionalità** , quindi scegliere **Aggiungi risorsa funzionalità**.
+2. In **Esplora soluzioni** aprire il menu di scelta rapida per il nome di una funzionalità nel nodo **funzionalità** , quindi scegliere **Aggiungi risorsa funzionalità**.
 
      Questo passaggio aggiunge un file di risorse alla funzionalità nel formato _resourceFileName_**.** _culture_**. resx**, ad esempio, *Feature1. en-US. resx*.
 

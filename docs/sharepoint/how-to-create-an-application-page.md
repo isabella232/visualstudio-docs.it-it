@@ -1,5 +1,7 @@
 ---
 title: "Procedura: creare una pagina dell'applicazione | Microsoft Docs"
+description: Creare una pagina Web ASP.NET (nota anche come pagina dell'applicazione) in Visual Studio per uno o più siti di SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 32e6fbb7cece4c3b7513dfc1f5de3aca22f145ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df52ca75ef99fe98158cb5f874e59fe4ee0c47b4
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016953"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849857"
 ---
 # <a name="how-to-create-an-application-page"></a>Procedura: creare una pagina dell'applicazione
   È possibile creare una pagina Web ASP.NET per uno o più siti di SharePoint. In SharePoint queste pagine sono denominate pagine dell'applicazione. Diversamente da una pagina del sito, una pagina dell'applicazione contiene il codice che viene eseguito dietro la pagina. Per ulteriori informazioni, vedere [creare pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).

@@ -1,6 +1,8 @@
 ---
 title: "Procedura: creare un ricevitore di eventi per un'istanza di elenco specifica | Microsoft Docs"
 titleSuffix: ''
+description: Creare un ricevitore di eventi per un'istanza di elenco specifica. Un ricevitore di eventi di istanza elenco risponde agli eventi che si verificano in qualsiasi istanza di una definizione di elenco.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c37da8b798c3b6a0fdc093d5c443584f68b4b5cc
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 8bd76f2aafc5d0b3058dcaba68b6f3099f01ff8d
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585836"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849896"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Procedura: creare un ricevitore di eventi per un'istanza di elenco specifica
   Un ricevitore di eventi di istanza elenco risponde agli eventi che si verificano in qualsiasi istanza di una definizione di elenco. Sebbene il modello di ricevitore di eventi non consenta la destinazione di un'istanza di elenco specifica, è possibile modificare un ricevitore di eventi che ha come ambito una definizione di elenco per rispondere agli eventi in un'istanza di elenco specifica.
@@ -86,6 +88,6 @@ ms.locfileid: "91585836"
 
      Si noti che il ricevitore di eventi non viene attivato sul nuovo annuncio perché il ricevitore è configurato per rispondere solo agli eventi nell'istanza dell'elenco di annunci personalizzati, **TestAnnouncements**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Procedura: creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)

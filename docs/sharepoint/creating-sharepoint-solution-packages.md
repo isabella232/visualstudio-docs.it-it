@@ -1,5 +1,7 @@
 ---
 title: Creazione di pacchetti della soluzione SharePoint | Microsoft Docs
+description: Creare e personalizzare i pacchetti di distribuzione per le soluzioni SharePoint usando Progettazione pacchetti. Esplorare strumenti per la creazione di pacchetti, le opzioni di progettazione e la struttura di cartelle.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b250be3b61cdfc524f049f952f0cf7e65f1c295a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbe458f6ab4de01ffb224ae4e493bf23e3fc6ceb
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74876064"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850559"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Creare pacchetti della soluzione SharePoint
   Con progettazione pacchetti è possibile creare e personalizzare i pacchetti di distribuzione. Ad esempio, è possibile aggiungere elementi e funzionalità di progetto SharePoint, reimpostare il server IIS, impostare gli ambiti di attivazione della funzionalità e identificare le dipendenze delle funzionalità. La finestra di progettazione genera inoltre un manifesto, un file XML che descrive ogni pacchetto.
@@ -26,9 +28,9 @@ ms.locfileid: "74876064"
 ## <a name="packaging-tools"></a>Strumenti per la creazione di pacchetti
  È possibile utilizzare **Progettazione pacchetti** per personalizzare il pacchetto e generare il manifesto. È possibile includere gli elementi del progetto SharePoint, configurare se il server Web deve essere reimpostato e impostare il tipo di server di distribuzione. Per ulteriori informazioni, vedere [procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite Progettazione pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md).
 
- In alternativa, è possibile usare **Esplora pacchetti** per modificare le funzionalità e gli elementi nel file del pacchetto (con*estensione wsp*). Per altre informazioni, vedere [procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto con Esplora pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).
+ In alternativa, è possibile usare **Esplora pacchetti** per modificare le funzionalità e gli elementi nel file del pacchetto (con *estensione wsp*). Per altre informazioni, vedere [procedura: aggiungere e rimuovere funzionalità ed elementi in un pacchetto con Esplora pacchetti](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md).
 
- È possibile utilizzare Visual Studio e MSBuild per creare file di pacchetto (con*estensione wsp*) per distribuire la soluzione SharePoint. Questo processo genera i file manifesto necessari per la distribuzione di SharePoint. Per altre informazioni, vedere [procedura: creare un pacchetto della soluzione SharePoint usando le attività di MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).
+ È possibile utilizzare Visual Studio e MSBuild per creare file di pacchetto (con *estensione wsp*) per distribuire la soluzione SharePoint. Questo processo genera i file manifesto necessari per la distribuzione di SharePoint. Per altre informazioni, vedere [procedura: creare un pacchetto della soluzione SharePoint usando le attività di MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).
 
 ## <a name="package-designer-options"></a>Opzioni di progettazione pacchetti
  Nella tabella seguente vengono illustrate le proprietà che è possibile personalizzare nei pacchetti di SharePoint con **Progettazione pacchetti**.
@@ -48,13 +50,13 @@ ms.locfileid: "74876064"
 
 |Destinazione|Descrizione|
 |------------|-----------------|
-|BeforeLayout|Destinazione che esegue le attività immediatamente prima che i file vengano copiati in una directory intermedia. È possibile modificare i file prima di creare un file di pacchetto (con*estensione wsp*).|
+|BeforeLayout|Destinazione che esegue le attività immediatamente prima che i file vengano copiati in una directory intermedia. È possibile modificare i file prima di creare un file di pacchetto (con *estensione wsp*).|
 |AfterLayout|Destinazione che esegue le attività immediatamente dopo la copia dei file in una directory intermedia.|
 
  Per ulteriori informazioni, [procedura: personalizzare un pacchetto della soluzione SharePoint tramite destinazioni MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md).
 
 ## <a name="packaging-architecture"></a>Architettura di creazione pacchetti
- I passaggi seguenti si verificano quando si crea un pacchetto di SharePoint (con*estensione wsp*) in Visual Studio.
+ I passaggi seguenti si verificano quando si crea un pacchetto di SharePoint (con *estensione wsp*) in Visual Studio.
 
 1. Le funzionalità e i pacchetti vengono convalidati per assicurarsi che la struttura fisica e semantica del pacchetto sia corretta.
 

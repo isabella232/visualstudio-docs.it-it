@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere una proprietà ai progetti SharePoint | Microsoft Docs'
+description: Utilizzare un'estensione di progetto per aggiungere una proprietà a un progetto SharePoint. Una proprietà viene visualizzata nel Finestra Proprietà quando si seleziona il progetto Esplora soluzioni.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb72b0546b504e2df1a7e93ea9d4def350143d1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62766b704d140805a3b76dbc3c00acaf6257f5e5
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015925"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850156"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Procedura: aggiungere una proprietà ai progetti SharePoint
   È possibile utilizzare un'estensione di progetto per aggiungere una proprietà a qualsiasi progetto SharePoint. La proprietà viene visualizzata nella finestra **Proprietà** quando il progetto è selezionato in **Esplora soluzioni**.
@@ -35,7 +37,7 @@ ms.locfileid: "86015925"
 3. Nel gestore eventi per l' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> evento, aggiungere un'istanza della classe Properties alla <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> raccolta del parametro degli argomenti dell'evento.
 
 ## <a name="example"></a>Esempio
- Nell'esempio di codice riportato di seguito viene illustrato come aggiungere due proprietà ai progetti SharePoint. Una proprietà rende permanente i dati nel file di opzioni utente del progetto (file con *estensione csproj. User* o *vbproj. User* ). L'altra proprietà rende permanente i dati nel file di progetto (file con estensione*csproj* o *VBPROJ* ).
+ Nell'esempio di codice riportato di seguito viene illustrato come aggiungere due proprietà ai progetti SharePoint. Una proprietà rende permanente i dati nel file di opzioni utente del progetto (file con *estensione csproj. User* o *vbproj. User* ). L'altra proprietà rende permanente i dati nel file di progetto (file con estensione *csproj* o *VBPROJ* ).
 
  [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
  [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]

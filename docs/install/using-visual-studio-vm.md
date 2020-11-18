@@ -2,7 +2,7 @@
 title: Uso di Visual Studio in una macchina virtuale di Azure
 titleSuffix: ''
 description: Informazioni su come usare Visual Studio in una macchina virtuale di Azure
-ms.date: 04/23/2020
+ms.date: 11/17/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6453c263cb970ae3fff2c134f1ae570bca730b93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f73a410752d4b3befd00602f84d575a040c457fe
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183236"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850455"
 ---
 # <a name="visual-studio-images-on-azure"></a><a id="top"> </a> Immagini di Visual Studio in Azure
 
@@ -36,11 +36,11 @@ Le immagini per le versioni principali più recenti, Visual Studio 2019, Visual 
 
 | Versione di rilascio                                                                                                                                          | Edizioni              |    Versione del prodotto    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [Visual Studio 2019: versione più recente (versione 16.5)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | Versione 16.5.4    |
-| Visual Studio 2019: RTW                         | Enterprise            | Versione 16.0.13    |
-| Visual Studio 2017: Versione più recente (versione 15.9)           | Enterprise, Community | Versione 15.9.22   |
-| Visual Studio 2017: RTW                             | Enterprise, Community | Versione 15.0.28   |
-| Visual Studio 2015: Versione più recente (aggiornamento 3)              | Enterprise, Community | Versione 14.0.25431.01 |
+| [Visual Studio 2019: versione più recente (versione 16,8)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | Versione 16.8.0    |
+| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | Versione 16.0.20    |
+| [Visual Studio 2017: Versione più recente (versione 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | Versione 15.9.29   |
+| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | Versione 15.0.28   |
+| [Visual Studio 2015: Versione più recente (aggiornamento 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | Versione 14.0.25431.01 |
 
 > [!NOTE]
 > In base ai criteri di manutenzione di Microsoft, il supporto per la manutenzione della versione di Visual Studio 2015 originariamente rilasciata (RTW) è scaduto. Visual Studio 2015 Update 3 è l'unica versione rimanente offerta per la linea di prodotti Visual Studio 2015.

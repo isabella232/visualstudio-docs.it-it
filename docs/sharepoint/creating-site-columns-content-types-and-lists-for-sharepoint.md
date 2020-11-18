@@ -1,6 +1,8 @@
 ---
 title: Creazione di colonne del sito, tipi di contenuto ed elenchi per SharePoint | Microsoft Docs
 titleSuffix: ''
+description: Creazione di colonne del sito, tipi di contenuto ed elenchi per SharePoint. Visual Studio fornisce modelli di elementi di progetto per questi tipi di elementi di SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,15 +21,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 269be4aaf34e9b6c611a5d79ba38cddba04276bf
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 29d0ebc33bf3df198f3ee9b3f9d80a747087341c
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585106"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850520"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Creazione di colonne del sito, tipi di contenuto ed elenchi per SharePoint
-  Visual Studio fornisce modelli di elementi di progetto per molti elementi fondamentali di SharePoint, inclusi *elenchi* e *tipi di contenuto*, che possono incorporare le colonne o i *campi*del sito. Grazie alle nuove finestre di progettazione per i tipi di contenuto e gli elenchi, la creazione di questi elementi non è mai stata più facile.
+  Visual Studio fornisce modelli di elementi di progetto per molti elementi fondamentali di SharePoint, inclusi *elenchi* e *tipi di contenuto*, che possono incorporare le colonne o i *campi* del sito. Grazie alle nuove finestre di progettazione per i tipi di contenuto e gli elenchi, la creazione di questi elementi non è mai stata più facile.
 
 ## <a name="site-columns"></a>Colonne del sito
  Le colonne del sito sono uno degli elementi più semplici che si possono aggiungere a un progetto di SharePoint. Una colonna del sito rappresenta un tipo di dati, ad esempio un numero di telefono, un commento o il nome della città di un contatto in un elenco di contatti.
@@ -49,5 +51,5 @@ ms.locfileid: "91585106"
 |-----------|-----------------|
 |[Procedura dettagliata: creare una colonna del sito, un tipo di contenuto e un elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Viene illustrato come creare colonne del sito utilizzate in un tipo di contenuto personalizzato. Il tipo di contenuto viene quindi utilizzato in un elenco personalizzato.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Introduzione allo sviluppo in SharePoint 2010](/sharepoint/dev/)

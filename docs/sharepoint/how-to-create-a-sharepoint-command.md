@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: creare un comando di SharePoint | Microsoft Docs'
+description: Informazioni su come creare un comando di SharePoint personalizzato per chiamare l'API del modello a oggetti del server in un'estensione degli strumenti di SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15ea7ff86e90bf7a474f9d64c30a9803e3e20bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41e4ab0fd70f4993d148cd5c67cb816bdc92e77a
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016223"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850702"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Procedura: creare un comando di SharePoint
   Se si desidera utilizzare il modello a oggetti del server in un'estensione degli strumenti di SharePoint, è necessario creare un *comando di SharePoint* personalizzato per chiamare l'API. Il comando di SharePoint viene definito in un assembly che può chiamare direttamente nel modello a oggetti del server.
@@ -53,7 +55,7 @@ ms.locfileid: "86016223"
 
     - Il secondo parametro e il valore restituito devono essere un tipo che può essere serializzato dal Windows Communication Foundation (WCF). Per ulteriori informazioni, vedere [tipi supportati dal serializzatore dei contratti dati](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) e [utilizzo della classe XmlSerializer](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).
 
-    - Il metodo può avere qualsiasi visibilità (**public**, **Internal**o **private**) e può essere static o non static.
+    - Il metodo può avere qualsiasi visibilità (**public**, **Internal** o **private**) e può essere static o non static.
 
 4. Applicare al <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> metodo. Questo attributo specifica un identificatore univoco per il comando. Questo identificatore non deve corrispondere al nome del metodo.
 

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere o rimuovere connessioni di SharePoint | Microsoft Docs'
+description: Aggiungere o rimuovere connessioni di SharePoint utilizzando il nodo connessioni di SharePoint nella finestra di Esplora server di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cec1389294c8baf169db055acb87619114d7d19b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b898dd0f9327c7589d0dac3436aec0299009221d
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014566"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850715"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Procedura: aggiungere o rimuovere connessioni di SharePoint
   Esplora server consente di esplorare i siti di SharePoint e le connessioni dati. Tuttavia, prima di poter esplorare il contenuto di un sito di SharePoint, è necessario aggiungerlo al nodo **connessioni di SharePoint** .
@@ -28,7 +30,7 @@ ms.locfileid: "86014566"
 
 1. Sulla barra dei menu scegliere **Visualizza**, **Esplora server**.
 
-2. In **Esplora server**scegliere il nodo **connessioni di SharePoint** , quindi nella barra dei menu scegliere **strumenti**  >  **Aggiungi connessione SharePoint**.
+2. In **Esplora server** scegliere il nodo **connessioni di SharePoint** , quindi nella barra dei menu scegliere **strumenti**  >  **Aggiungi connessione SharePoint**.
 
 3. Nella casella **Aggiungi connessione SharePoint** immettere [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] per il sito di SharePoint, ad esempio http://testserver/sites/unittests) .
 

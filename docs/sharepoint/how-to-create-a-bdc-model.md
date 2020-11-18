@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: creare un modello di integrazione applicativa dei dati | Microsoft Docs'
+description: Creare un modello di integrazione applicativa dei dati tramite il modello di Visual Studio per tale tipo di elemento e quindi aggiungere il modello a qualsiasi progetto SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 139da31ced1d32def450a1dc176ca241b0c4677f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f95533a5ad3955ee00829194bc4da1498baace0
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014539"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850676"
 ---
 # <a name="how-to-create-a-bdc-model"></a>Procedura: creare un modello di integrazione applicativa dei dati
   È possibile creare un modello di integrazione applicativa dei dati utilizzando il modello per quel tipo di elemento e quindi aggiungendo il modello a qualsiasi progetto SharePoint. Per altre informazioni, vedere [creare un modello di integrazione applicativa dei dati](../sharepoint/creating-a-business-data-connectivity-model.md). Per ulteriori informazioni sulla progettazione del modello, vedere [progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md).

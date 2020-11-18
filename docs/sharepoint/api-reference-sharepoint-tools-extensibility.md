@@ -1,5 +1,7 @@
 ---
 title: Informazioni di riferimento sulle API (estendibilità degli strumenti di SharePoint) | Microsoft Docs
+description: Esaminare la documentazione di riferimento per l'API per estendere gli strumenti di SharePoint in Visual Studio. Vedere un elenco di spazi dei nomi correlati, ad esempio Microsoft. VisualStudio. SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37639068b74b5d99864871355a8b9ef36906f6cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4599a2c305558f2ef551d19abac210bdf05269f3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62987993"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850390"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Riferimento API (estendibilità degli strumenti di SharePoint)
   Questa sezione contiene la documentazione di riferimento sulle API per l'estensione degli strumenti di SharePoint in Visual Studio.
@@ -29,7 +31,7 @@ ms.locfileid: "62987993"
 
  <xref:Microsoft.VisualStudio.SharePoint.Commands>
 
- Contiene i tipi che è possibile utilizzare per creare *comandi*personalizzati di SharePoint. Un comando di SharePoint è un metodo che chiama il modello a oggetti server di SharePoint da un'estensione degli strumenti di SharePoint.
+ Contiene i tipi che è possibile utilizzare per creare *comandi* personalizzati di SharePoint. Un comando di SharePoint è un metodo che chiama il modello a oggetti server di SharePoint da un'estensione degli strumenti di SharePoint.
 
  <xref:Microsoft.VisualStudio.SharePoint.Deployment>
 

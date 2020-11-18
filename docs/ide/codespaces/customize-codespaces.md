@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 2223aecd66da721ff1afe9877853c8a00c837611
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 9072676dfc96ffc6286f81785048eca8ec46b0b8
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862221"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850507"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>Come personalizzare un codespace (anteprima)
 
@@ -84,7 +84,7 @@ Gli spazi dei codice GitHub supportano le *devcontainer.jsseguenti nelle* propri
 
 ## <a name="customize-with-devinit"></a>Personalizza con devinilt
 
-[devinit](../../devinit/getting-started-with-devinit.md) è uno strumento da riga di comando incluso negli spazi dei nomi di Windows che consente di installare Framework e strumenti nell'ambiente in uso. È possibile eseguirlo manualmente da un prompt dei comandi ( `devinit -t require-dotnetcoresdk` ), ma la sua vera potenza deriva dalla creazione di un [ *.devinit.jspersonalizzato in* ](../../devinit/devinit-json.md) un file per configurare in modo uniforme uno spazio dei comandi quando ne viene creato uno.
+[devinit](../../devinit/getting-started-with-devinit.md) è uno strumento da riga di comando incluso negli spazi dei nomi di Windows che consente di installare Framework e strumenti nell'ambiente in uso. È possibile eseguirlo manualmente da un prompt dei comandi ( `devinit run -t require-dotnetcoresdk` ), ma la sua vera potenza deriva dalla creazione di un [ *.devinit.jspersonalizzato in*](../../devinit/devinit-json.md) un file per configurare in modo uniforme uno spazio dei comandi quando ne viene creato uno.
 
 `devinit` include un set di strumenti per l'installazione di elementi specifici, ad esempio SQL Server e l'interfaccia della riga di comando di Azure, nonché per l'esecuzione di gestori di pacchetti generali come Chocolate, NPM e vcpkg. Per l'elenco completo degli `devinit` strumenti, vedere la documentazione relativa agli [strumenti disponibili](../../devinit/devinit-tool-list.md) .
 
@@ -122,11 +122,11 @@ Specificando `devinit init` , `devinit` verrà eseguito utilizzando il *devinit.
 }
 ```
 
-### <a name="an-example"></a>Esempio
+### <a name="an-example"></a>un esempio
 
 Ecco un semplice esempio di installazione di .NET Core Entity Framework strumento da riga di comando, `dotnet-ef` .
 
-**devcontainer.js**
+**devcontainer.json**
 
 Contenuto del *.devcontainer.js* nel file nella radice del repository. 
 

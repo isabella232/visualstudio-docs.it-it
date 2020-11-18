@@ -1,5 +1,7 @@
 ---
 title: Creazione di definizioni di sito per SharePoint | Microsoft Docs
+description: Creare definizioni di sito per SharePoint. Le definizioni del sito determinano l'aspetto e il comportamento del sito di SharePoint e il relativo contenuto e funzionalità predefiniti.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f1a512218c3c1b7af179cfaba3e231a90941fe0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7585a4b80322afb37e816758fc7074806a443676
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015066"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850572"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Creare definizioni di sito per SharePoint
   Il progetto di definizione del sito di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] consente di creare una *definizione di sito*, che funge da base per un nuovo sito di SharePoint. Queste definizioni non solo determinano l'aspetto e il comportamento del sito di SharePoint, ma anche il contenuto e le funzionalità predefinite. Nella definizione è possibile inserire elenchi preconfigurati, tipi di contenuto, ricevitori di eventi, immagini e altri elementi. In SharePoint sono incluse alcune definizioni di sito come BLOG, ad esempio. Quando si crea un sito basato sulla definizione del sito del BLOG, il sito contiene gli elenchi, le web part e altri elementi richiesti da un sito di Blog.
@@ -40,7 +42,7 @@ ms.locfileid: "86015066"
 |*onet.xml*|Specifica la configurazione del nuovo sito, i componenti del modello di definizione del sito e il comportamento predefinito. Queste impostazioni possono includere attributi quali i tipi di contenuto abilitati, le visualizzazioni elenco predefinite, i file modello di documento e le web part incluse nel sito. Per impostazione predefinita, la `Modules` sezione elenca i file da aggiungere al sito di SharePoint e il modo in cui vengono configurati.|
 |*webtemp_ \<SiteDefinitionName> . XML*|Specifica le configurazioni di definizione del sito visualizzate nella sezione **Selezione modello** della pagina **nuovo sito di SharePoint** .|
 
- Per impostazione predefinita, tutte le definizioni del sito sono archiviate nella cartella \Programmi\File * \<drive:> Comuni\microsoft Shared\Web server extensions\14\TEMPLATE\SiteTemplates* Ogni definizione di sito ha una propria sottocartella.
+ Per impostazione predefinita, tutte le definizioni del sito sono archiviate nella cartella \Programmi\File *\<drive:> Comuni\microsoft Shared\Web server extensions\14\TEMPLATE\SiteTemplates* Ogni definizione di sito ha una propria sottocartella.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

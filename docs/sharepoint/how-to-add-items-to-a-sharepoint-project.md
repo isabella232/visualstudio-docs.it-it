@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere elementi a un progetto SharePoint | Microsoft Docs'
+description: Aggiungere elementi nuovi o esistenti a un progetto SharePoint in Visual Studio dopo aver aperto o creato una soluzione SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f7a36591d94e846a0024bce8c5d0b618479e647
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4471f6a593e9349f32e4837da15df2e3e952d227
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014694"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850728"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>Procedura: aggiungere elementi a un progetto SharePoint
   Le soluzioni SharePoint contengono uno o più progetti, ognuno dei quali contiene più elementi di progetto SharePoint. Dopo aver aperto o creato una soluzione SharePoint, è possibile aggiungere elementi nuovi o esistenti a questi progetti. I nuovi progetti di flusso di lavoro, ad esempio, dispongono di un modulo predefinito denominato default. aspx, ma è possibile sostituire tale modulo con un formato nuovo o diverso oppure aggiungere un altro modulo ASPX.
@@ -26,7 +28,7 @@ ms.locfileid: "86014694"
 
 1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aprire o creare una soluzione SharePoint.
 
-2. In **Esplora soluzioni**scegliere il nodo del progetto.
+2. In **Esplora soluzioni** scegliere il nodo del progetto.
 
 3. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento** per visualizzare la finestra di dialogo **Aggiungi nuovo elemento** .
 
@@ -40,7 +42,7 @@ ms.locfileid: "86014694"
 
 1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aprire o creare una soluzione SharePoint.
 
-2. In **Esplora soluzioni**scegliere il nodo del progetto.
+2. In **Esplora soluzioni** scegliere il nodo del progetto.
 
 3. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi elemento esistente** per visualizzare la finestra di dialogo **Aggiungi elemento esistente** .
 

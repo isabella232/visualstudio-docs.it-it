@@ -1,5 +1,7 @@
 ---
 title: Chiamata ai modelli a oggetti di SharePoint | Microsoft Docs
+description: Informazioni su come chiamare i due modelli a oggetti diversi che è possibile utilizzare nelle estensioni degli strumenti di SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24634143a40f7b163c0b658bddb5596041868033
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40cd7132888d8b19d8e2a2818ec9a299b465e786
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62988402"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850052"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Chiamare nei modelli a oggetti di SharePoint
   Quando si creano estensioni per gli strumenti di SharePoint in Visual Studio, potrebbe essere necessario chiamare le API di SharePoint per eseguire determinate attività. Se, ad esempio, si crea una fase di distribuzione personalizzata per i progetti SharePoint, potrebbe essere necessario chiamare le API di SharePoint per eseguire alcune delle attività per distribuire le soluzioni.
