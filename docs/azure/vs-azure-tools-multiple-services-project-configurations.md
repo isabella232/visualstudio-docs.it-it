@@ -4,17 +4,16 @@ description: Informazioni su come configurare un progetto di servizio cloud di A
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: a811c30114f9a45119eaccc666d6eb39be80a562
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 58d7a967c3a8cf46330c169db1b73bc048a2110c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399806"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902363"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurazione del progetto Azure di Visual Studio per l'uso di più configurazioni del servizio
 
@@ -39,7 +38,7 @@ Consente di selezionare il file `ServiceConfiguration.*.cscfg` interessato dalle
 
 Impostare la proprietà **Conteggio istanze** sul numero di istanze che il servizio deve eseguire per questo ruolo.
 
-Impostare la proprietà delle **Dimensioni macchina virtuale** su **Molto piccola** , **Piccola** , **Media** , **Grande** o **Molto grande**.  Per ulteriori informazioni, vedere [dimensioni dei servizi cloud](/azure/cloud-services/cloud-services-sizes-specs).
+Impostare la proprietà delle **Dimensioni macchina virtuale** su **Molto piccola**, **Piccola**, **Media**, **Grande** o **Molto grande**.  Per ulteriori informazioni, vedere [dimensioni dei servizi cloud](/azure/cloud-services/cloud-services-sizes-specs).
 
 ### <a name="startup-action-web-role-only"></a>Startup Action (Azione di avvio) (solo ruolo Web)
 
@@ -51,7 +50,7 @@ Se è già stato aggiunto un endpoint HTTPS, l'opzione Endpoint HTTPS è abilita
 
 ### <a name="diagnostics"></a>Diagnostica
 
-Per impostazione predefinita, la diagnostica è abilitata per il ruolo Web. Il progetto di servizio cloud di Azure e l'account di archiviazione sono impostati per usare l'emulatore di archiviazione locale. Quando si è pronti a eseguire la distribuzione in Azure, è possibile selezionare il pulsante del generatore ( **…** ) per usare in sostituzione l’archiviazione di Azure. È possibile trasferire i dati di diagnostica nell'account di archiviazione a richiesta o a intervalli pianificati automaticamente. Per altre informazioni sulla diagnostica di Azure, vedere [Abilitazione della diagnostica nei servizi cloud e nelle macchine virtuali di Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Per impostazione predefinita, la diagnostica è abilitata per il ruolo Web. Il progetto di servizio cloud di Azure e l'account di archiviazione sono impostati per usare l'emulatore di archiviazione locale. Quando si è pronti a eseguire la distribuzione in Azure, è possibile selezionare il pulsante del generatore (**…**) per usare in sostituzione l’archiviazione di Azure. È possibile trasferire i dati di diagnostica nell'account di archiviazione a richiesta o a intervalli pianificati automaticamente. Per altre informazioni sulla diagnostica di Azure, vedere [Abilitazione della diagnostica nei servizi cloud e nelle macchine virtuali di Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Pagina Impostazioni
 
@@ -68,14 +67,14 @@ Una stringa di connessione è un'impostazione che fornisce informazioni di conne
 
 Per creare una stringa di connessione, selezionare **Aggiungi impostazione** e impostare **Tipo** su "Stringa di connessione".
 
-Per le stringhe di connessione nuove o esistenti, selezionare **...** _ a destra del campo _ *valore* * per aprire la finestra di dialogo **Crea stringa di connessione di archiviazione** :
+Per le stringhe di connessione nuove o esistenti, selezionare **...** _ a destra del campo _ *valore** per aprire la finestra di dialogo **Crea stringa di connessione di archiviazione** :
 
 1. In **Connetti con** scegliere l'opzione **Sottoscrizione** per selezionare un account di archiviazione da una sottoscrizione. Visual Studio otterrà quindi le credenziali dell'account di archiviazione automaticamente dal file `.publishsettings`.
-1. Se si seleziona **Credenziali immesse manualmente** , è possibile specificare il nome e la chiave dell'account direttamente, usando le informazioni presenti nel portale di Azure. Per copiare la chiave dell'account:
+1. Se si seleziona **Credenziali immesse manualmente**, è possibile specificare il nome e la chiave dell'account direttamente, usando le informazioni presenti nel portale di Azure. Per copiare la chiave dell'account:
     1. Selezionare l'account di archiviazione nel portale di Azure e fare clic su **Gestisci chiavi**.
     1. Per copiare la chiave dell'account, passare all'account di archiviazione nel portale di Azure, selezionare **Impostazioni > Chiavi di accesso** e quindi usare il pulsante Copia per copiare la chiave di accesso primaria negli Appunti.
 1. Selezionare una delle opzioni di connessione. In **Specifica endpoint personalizzati** viene chiesto di specificare gli URL di BLOB, tabelle e code. Gli endpoint personalizzati consentono di usare i [domini personalizzati](/azure/storage/blobs/storage-custom-domain-name) e controllare l'accesso in maniera più precisa. Vedere [Configurare le stringhe di connessione di archiviazione di Azure](/azure/storage/common/storage-configure-connection-string).
-1. Fare clic su **OK** , quindi selezionare **File > Salva** per aggiornare la configurazione con la nuova stringa di connessione.
+1. Fare clic su **OK**, quindi selezionare **File > Salva** per aggiornare la configurazione con la nuova stringa di connessione.
 
 Quando si pubblica l'applicazione in Azure, ricordarsi di scegliere la configurazione del servizio che contiene l'account di archiviazione di Azure per la stringa di connessione. Dopo la pubblicazione, verificare che l'applicazione funzioni come previsto in base ai servizi di archiviazione di Azure.
 

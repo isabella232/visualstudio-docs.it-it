@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: personalizzare i diagrammi classi (Progettazione classi)'
+description: Viene illustrato come modificare il modo in cui i diagrammi classi visualizzano le informazioni e come personalizzare l'intero diagramma o i singoli tipi nell'area di progettazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8e4665790aa228bb30aac05ea4782cfe4a62f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05f0b20307ac0802c4c4350588f5dc0c47cb3b6b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770182"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901427"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Procedura: Personalizzare i diagrammi classi
 
@@ -37,7 +39,7 @@ Le sezioni contenenti membri di tipo, ad esempio la sezione **Proprietà** in un
 
 2. Nella barra degli strumenti di **Progettazione classi** fare clic sul pulsante **Zoom avanti** o **Zoom indietro** per modificare il livello di zoom dell'area di progettazione.
 
-     Oppure
+     o
 
      Specificare un particolare valore di zoom. È possibile usare l'elenco a discesa **Zoom** o digitare un livello di zoom valido (l'intervallo valido è compreso tra 10% e 400%).
 

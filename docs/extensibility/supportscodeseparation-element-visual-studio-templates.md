@@ -1,6 +1,7 @@
 ---
 title: Elemento SupportsCodeSeparation (modelli di Visual Studio)
 titleSuffix: ''
+description: Informazioni sull'elemento SupportsCodeSeparation e su come specifica se la casella di controllo Inserisci il codice in un file separato è abilitata nella finestra di dialogo Aggiungi nuovo elemento.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dfdf3244d09c5f3418c5403a32570c382c5365c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1847d5f0a0fa77b1dd0ddd0d74eeba84326d0205
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038465"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901856"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>Elemento SupportsCodeSeparation (modelli di Visual Studio)
 Specifica se la casella **di controllo Inserisci codice in file separato** è abilitata nella finestra di dialogo **Aggiungi nuovo elemento** .
@@ -38,7 +39,7 @@ Specifica se la casella **di controllo Inserisci codice in file separato** è ab
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
  Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -87,6 +88,6 @@ Specifica se la casella **di controllo Inserisci codice in file separato** è ab
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

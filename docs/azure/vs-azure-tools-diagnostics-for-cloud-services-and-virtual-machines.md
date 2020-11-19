@@ -4,17 +4,16 @@ ms.custom: SEO-VS-2020
 description: Informazioni su come configurare la diagnostica per il debug dei servizi cloud e delle macchine virtuali di Azure in Visual Studio.
 author: ghogen
 manager: jillfra
-ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 55a0f96959d0e3e8bbc70c458ab99bbc06b06a62
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ababbbfcfa71f3083a292103f4fa4f1ba481faae
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809846"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902616"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurare la diagnostica per Servizi cloud di Azure e macchine virtuali
 Per risolvere gli errori di un servizio cloud o di una macchina virtuale di Azure, è possibile usare Visual Studio per configurare con maggiore facilità Diagnostica di Azure. Diagnostica di Azure acquisisce i dati di sistema e i dati di registrazione nelle macchine virtuali e nelle istanze di macchine virtuali che eseguono il servizio cloud. I dati di diagnostica vengono trasferiti all'account di archiviazione scelto. Per altre informazioni sulla registrazione diagnostica in Azure, vedere [Abilitare la registrazione diagnostica per le app Web nel servizio app di Azure](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -90,7 +89,7 @@ In Visual Studio è possibile raccogliere i dati di diagnostica per i ruoli eseg
     ![Abilitare la diagnostica e la configurazione di Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 6. Per questo esempio selezionare l'opzione **Personalizza piano** , in modo da poter personalizzare i dati raccolti.
 7. Nella casella **Quota disco in MB** è possibile specificare la quantità di spazio da allocare nell'account di archiviazione per i dati di diagnostica. È possibile modificare o accettare il valore predefinito.
-8. In ogni scheda dei dati di diagnostica che si desidera raccogliere, selezionare la casella di controllo **Abilita il trasferimento di \<log type\> ** . Ad esempio, per raccogliere i log applicazioni, selezionare la casella di controllo **Abilita il trasferimento di log applicazioni** nella scheda **Log applicazioni**. Specificare anche eventuali altre informazioni richieste da ogni tipo di dati di diagnostica. Per informazioni sulla configurazione di ogni scheda, vedere la sezione **Configurare le origini dati di diagnostica** più avanti in questo articolo.
+8. In ogni scheda dei dati di diagnostica che si desidera raccogliere, selezionare la casella di controllo **Abilita il trasferimento di \<log type\>** . Ad esempio, per raccogliere i log applicazioni, selezionare la casella di controllo **Abilita il trasferimento di log applicazioni** nella scheda **Log applicazioni**. Specificare anche eventuali altre informazioni richieste da ogni tipo di dati di diagnostica. Per informazioni sulla configurazione di ogni scheda, vedere la sezione **Configurare le origini dati di diagnostica** più avanti in questo articolo.
 9. Dopo aver abilitato la raccolta di tutti i dati di diagnostica desiderati, selezionare **OK**.
 10. Eseguire il progetto di servizio cloud di Azure in Visual Studio come di consueto. Quando si usa l'applicazione, le informazioni di log abilitate vengono salvate nell'account di archiviazione di Azure specificato.
 
@@ -204,7 +203,7 @@ Dopo la raccolta dei dati di diagnostica per un servizio cloud o una macchina vi
 1. Distribuire il servizio cloud come di consueto e quindi eseguirlo.
 2. È possibile visualizzare i dati di diagnostica in un report generato da Visual Studio o in tabelle nell'account di archiviazione. Per visualizzare i dati in un report, aprire Cloud Explorer o Esplora server, aprire il menu di scelta rapida del nodo per il ruolo desiderato e quindi scegliere **Visualizza dati di diagnostica**.
 
-    ![Visualizza dati di diagnostica](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC748912.png)
+    ![Visualizzare i dati di diagnostica](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC748912.png)
 
     Verrà visualizzato un report che mostra i dati disponibili.
 

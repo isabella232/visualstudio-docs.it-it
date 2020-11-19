@@ -1,5 +1,7 @@
 ---
 title: Errori di Progettazione classi
+description: Per informazioni su come risolvere gli errori di progettazione della classe, trascinare di nuovo il codice sorgente modificato o riposizionato nel diagramma classi per visualizzarlo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -28,12 +30,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc8b2c013a3e685a6071f4a12d63e3ca475051a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 575f9b74c7931ecc752f4c2e56866534aaa1e3d5
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596515"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903104"
 ---
 # <a name="class-designer-errors"></a>Errori di Progettazione classi
 

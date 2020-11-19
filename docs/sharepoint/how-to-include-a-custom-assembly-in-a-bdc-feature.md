@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: includere un assembly personalizzato in una funzionalità di integrazione applicativa dei dati | Microsoft Docs'
+description: Includere gli assembly personalizzati in una funzionalità di integrazione applicativa dei dati, in modo che il progetto possa fare riferimento agli assembly di altri progetti nella stessa soluzione.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,19 +19,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79336e241b822e5fa9f84dbb771aa4187ea5eadb
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: e7a2a0109faca4da5406b45b4d606ae8a5cd0685
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740071"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903468"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Procedura: includere un assembly personalizzato in una funzionalità di integrazione applicativa dei dati
   Il progetto può fare riferimento agli assembly di altri progetti nella stessa soluzione. Tuttavia, è necessario aggiungere questi assembly al file di funzionalità del progetto utilizzando la finestra di dialogo **Assegna assembly a cui si fa riferimento a agli LobSystem** .
 
 ### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>Per includere un assembly personalizzato in una funzionalità di integrazione applicativa dei dati
 
-1. In **Esplora soluzioni**scegliere la cartella che contiene il modello di integrazione applicativa dei dati.
+1. In **Esplora soluzioni** scegliere la cartella che contiene il modello di integrazione applicativa dei dati.
 
 2. Scegliere **Finestra Proprietà** dal menu **Visualizza**.
 

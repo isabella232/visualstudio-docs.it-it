@@ -4,17 +4,16 @@ ms.custom: SEO-VS-2020
 description: Uso di Emulator Express per l'esecuzione e il debug di un servizio cloud in un computer locale
 author: mikejo5000
 manager: jillfra
-ms.assetid: 73108f98-a552-4817-b7a1-551367b71906
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: 4874a93cd7d7546ca1d131f6c8941bd78cd98465
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: dee97ab487f4e165fd372559e51b6f19c3501e9f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809833"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902441"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Uso dell'emulatore Express per l'esecuzione e il debug di un servizio cloud di Azure in un computer locale
 Con l'emulatore Express, è possibile testare ed eseguire il debug di un servizio cloud senza eseguire Visual Studio come amministratore. È possibile configurare le impostazioni del progetto per usare l'emulatore Express o l'emulatore completo, in base ai requisiti del servizio cloud. Per altre informazioni sull'emulatore completo, vedere [Eseguire un'applicazione Azure nell'emulatore di calcolo](/azure/storage/common/storage-use-emulator).
@@ -24,7 +23,7 @@ Quando si crea un progetto di Azure in Azure SDK 2.3 o versione successiva, l'em
 
 1. Creare o aprire un progetto del servizio cloud di Azure in Visual Studio.
 
-1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Proprietà**dal menu di scelta rapida.
+1. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto e scegliere **Proprietà** dal menu di scelta rapida.
 
 1. Nelle pagine delle proprietà di progetti, selezionare la scheda **Web**.
 
@@ -32,7 +31,7 @@ Quando si crea un progetto di Azure in Azure SDK 2.3 o versione successiva, l'em
 
 1. In **Server di sviluppo locale**, scegliere **Usa l'opzione IIS Express**.
 
-1. In **Emulatore**selezionare **Usa emulatore Express**.
+1. In **Emulatore** selezionare **Usa emulatore Express**.
 
 1. Per avviare l'emulatore Express, eseguire il comando seguente al prompt dei comandi:
 

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: estendere un nodo SharePoint in Esplora server | Microsoft Docs'
+description: Informazioni su come estendere un nodo SharePoint in Esplora server usando il nodo connessioni di SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea556d18641b96ea6a38ef5abf6efe4c93a44cdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bad90701d19f97036ecba55bb2901739ad30b200
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015024"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903546"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>Procedura: estendere un nodo SharePoint in Esplora server
   È possibile estendere i nodi nel nodo **connessioni di SharePoint** in **Esplora server**. Questa opzione è utile quando si desidera aggiungere nuovi nodi figlio, voci di menu di scelta rapida o proprietà a un nodo esistente. Per ulteriori informazioni, vedere [estensione del nodo connessioni di SharePoint in Esplora server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

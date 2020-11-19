@@ -3,17 +3,16 @@ title: Pubblicare un servizio cloud di Azure
 description: Informazioni su come configurare le varie impostazioni della procedura guidata Pubblica l'applicazione Azure di Visual Studio
 author: ghogen
 manager: jillfra
-assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 281547356dcb8910af9426a853ceeb7e757b195d
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 87082a0d4df4542f36b1ce95cba92d261a2b4d9e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399456"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902311"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Uso della procedura guidata Pubblica l'applicazione Azure di Visual Studio
 
@@ -78,7 +77,7 @@ L'account di archiviazione di Azure archivia il pacchetto per la distribuzione d
 
 **Aggiornamento distribuzione** - Selezionare questa opzione se si vogliono distribuire solo componenti aggiornati. Questo tipo di distribuzione risulta più rapida della distribuzione completa. Questa opzione deve essere selezionata se si vuole mantenere un indirizzo IP virtuale costante per il servizio cloud.
 
-**Impostazioni aggiornamento distribuzione** - Questa finestra di dialogo viene usata per specificare ulteriormente come aggiornare i ruoli. Se si sceglie **Aggiornamento incrementale** , le istanze dell'applicazione vengono aggiornate una dopo l'altra, in modo che l'applicazione sia sempre disponibile. Se si sceglie **Simultaneous update** (Aggiornamento simultaneo), tutte le istanze dell'applicazione vengono aggiornate contemporaneamente. L'aggiornamento simultaneo è più veloce, ma è possibile che il servizio non sia disponibile durante il processo di aggiornamento.
+**Impostazioni aggiornamento distribuzione** - Questa finestra di dialogo viene usata per specificare ulteriormente come aggiornare i ruoli. Se si sceglie **Aggiornamento incrementale**, le istanze dell'applicazione vengono aggiornate una dopo l'altra, in modo che l'applicazione sia sempre disponibile. Se si sceglie **Simultaneous update** (Aggiornamento simultaneo), tutte le istanze dell'applicazione vengono aggiornate contemporaneamente. L'aggiornamento simultaneo è più veloce, ma è possibile che il servizio non sia disponibile durante il processo di aggiornamento.
 
 ![Impostazioni di distribuzione](./media/vs-azure-tools-publish-azure-application-wizard/deployment-settings.png)
 
@@ -98,7 +97,7 @@ La diagnostica consente di risolvere i problemi relativi a un servizio cloud di 
 
 ![Pagina Riepilogo](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**Profilo di destinazione** - È possibile scegliere di creare un profilo di pubblicazione dalle impostazioni scelte. È ad esempio possibile creare un profilo per un ambiente di test e un altro per l'ambiente di produzione. Per salvare questo profilo, scegliere l'icona **Salva**. La procedura guidata crea e salva il profilo nel progetto Visual Studio. Per modificare il nome del profilo, aprire l'elenco **Profilo di destinazione** , quindi scegliere **&lt;Gestisci&gt;**.
+**Profilo di destinazione** - È possibile scegliere di creare un profilo di pubblicazione dalle impostazioni scelte. È ad esempio possibile creare un profilo per un ambiente di test e un altro per l'ambiente di produzione. Per salvare questo profilo, scegliere l'icona **Salva**. La procedura guidata crea e salva il profilo nel progetto Visual Studio. Per modificare il nome del profilo, aprire l'elenco **Profilo di destinazione**, quindi scegliere **&lt;Gestisci&gt;**.
 
    > [!Note]
    > Il profilo di pubblicazione viene visualizzato in Esplora soluzioni di Visual Studio e le impostazioni del profilo vengono scritte in un file con estensione azurePubxml. Le impostazioni vengono salvate come attributi dei tag XML.

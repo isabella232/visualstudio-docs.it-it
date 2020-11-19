@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a8301fcca5fd915b130477600ed9fe0b5b90f46
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: db37c22af858cef76acda2a42d29a38d244395c8
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830773"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903325"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Presentazione della distribuzione in Visual Studio
 
@@ -44,11 +44,15 @@ La distribuzione in una cartella locale viene di solito usata a scopo di test o 
 
     ![Scegliere Pubblica](../deployment/media/quickstart-publish.png)
 
-- **Desktop di Windows** È possibile pubblicare un'applicazione desktop di Windows in una cartella tramite la distribuzione ClickOnce. Gli utenti possono quindi installare l'applicazione con un solo clic. Per altre informazioni, vedere [Distribuire un'app desktop tramite ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# e Visual Basic). Per C++/CLR, vedere [Distribuire un'app nativa tramite ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) oppure per C/C++, vedere [Distribuire un'app nativa tramite un progetto di installazione](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Desktop di Windows** È possibile pubblicare un'applicazione desktop di Windows in una cartella tramite la distribuzione ClickOnce. Gli utenti possono quindi installare l'applicazione con un solo clic. Per altre informazioni, vedere gli argomenti seguenti:
+
+  - [Distribuire un'app desktop di Windows .NET Framework usando ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+  - [Distribuire un'app desktop di Windows .NET tramite ClickOnce](quickstart-deploy-using-clickonce-folder.md)
+  - [Distribuire un'app/CLR C++ usando ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) o, per C/C++, vedere [distribuire un'app nativa usando un progetto di installazione](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Pubblicazione in Azure
 
-- **ASP.NET**, **ASP.NET Core**, **Python**e **Node.js**: pubblicare in app Azure Service o app Azure Service Linux (usando i contenitori) usando uno dei metodi seguenti.
+- **ASP.NET**, **ASP.NET Core**, **Python** e **Node.js**: pubblicare in app Azure Service o app Azure Service Linux (usando i contenitori) usando uno dei metodi seguenti.
 
   - Per una distribuzione di app continua o automatica, usare Azure DevOps con [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true).
 
@@ -56,7 +60,7 @@ La distribuzione in una cartella locale viene di solito usata a scopo di test o 
 
   Per una distribuzione che offre una maggiore personalizzazione della configurazione del server, è anche possibile usare lo strumento **Pubblica** per distribuire le app in una macchina virtuale di Azure.
 
-  Per usare lo strumento **Pubblica**, fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni e scegliere **Pubblica**. Se sono stati configurati in precedenza i profili di pubblicazione, è necessario fare clic su **Crea nuovo profilo**. Nella finestra di dialogo Pubblica scegliere **servizio app** o **macchine virtuali di Azure**e quindi seguire la procedura di configurazione.
+  Per usare lo strumento **Pubblica**, fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni e scegliere **Pubblica**. Se sono stati configurati in precedenza i profili di pubblicazione, è necessario fare clic su **Crea nuovo profilo**. Nella finestra di dialogo Pubblica scegliere **servizio app** o **macchine virtuali di Azure** e quindi seguire la procedura di configurazione.
 
   ![Scegliere app Azure servizio](../deployment/media/quickstart-publish-azure-new.png "Scegliere app Azure servizio")
 
@@ -65,8 +69,6 @@ La distribuzione in una cartella locale viene di solito usata a scopo di test o 
   Per le app Python, vedere anche [Python: pubblicazione nel Servizio app di Azure](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json).
 
   Per una rapida introduzione, vedere [Pubblicare in Azure](quickstart-deploy-to-azure.md) e [Pubblicare in Linux](quickstart-deploy-to-linux.md). Vedere anche [Pubblicare un'app ASP.NET Core in Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Per la distribuzione tramite Git, vedere [Distribuzione continua di ASP.NET Core in Azure con Git](/aspnet/core/publishing/azure-continuous-deployment).
-
-  Per informazioni sull'importazione di un profilo di pubblicazione dal Servizio app di Azure in Visual Studio, vedere [Importare impostazioni di pubblicazione e distribuzione in Azure](../deployment/tutorial-import-publish-settings-azure.md).
 
   > [!NOTE]
   > Se non si ha ancora un account di Azure, è possibile [iscriversi qui](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
@@ -83,7 +85,11 @@ La distribuzione in una cartella locale viene di solito usata a scopo di test o 
 
     È anche possibile distribuire applicazioni ASP.NET e servizi in diversi altri modi. Per altre informazioni, vedere [Deploying ASP.NET web applications and services](/aspnet/overview/deployment) (Distribuzione di applicazioni e servizi Web ASP.NET).
 
-- **Desktop di Windows**: è possibile pubblicare un'applicazione desktop di Windows in un server Web o in una condivisione file di rete tramite la distribuzione ClickOnce. Gli utenti possono quindi installare l'applicazione con un solo clic. Per altre informazioni, vedere [Distribuire un'app desktop tramite ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# e Visual Basic). Per C++/CLR, vedere [Distribuire un'app nativa tramite ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) oppure per C/C++, vedere [Distribuire un'app nativa tramite un progetto di installazione](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Desktop di Windows**: è possibile pubblicare un'applicazione desktop di Windows in un server Web o in una condivisione file di rete tramite la distribuzione ClickOnce. Gli utenti possono quindi installare l'applicazione con un solo clic. Per altre informazioni, vedere gli argomenti seguenti:
+
+  - [Distribuire un'app desktop di Windows .NET Framework usando ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+  - [Distribuire un'app desktop di Windows .NET tramite ClickOnce](quickstart-deploy-using-clickonce-folder.md)
+  - [Distribuire un'app C++/CLR usando ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)
 
 ## <a name="publish-to-microsoft-store"></a>Pubblicare in Microsoft Store
 
@@ -103,7 +109,7 @@ Se si intende distribuire a scopo di test un'app per la piattaforma UWP in un di
 
 ## <a name="create-an-installer-package-windows-desktop"></a>Creare un pacchetto del programma di installazione (desktop di Windows)
 
-Se è necessaria un'installazione di un'applicazione desktop più complessa di quella offerta da [ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md), è possibile creare un pacchetto di Windows Installer (file di installazione MSI o EXE) oppure un programma di avvio automatico personalizzato.
+Se è necessaria un'installazione di un'applicazione desktop più complessa di quella offerta da ClickOnce, è possibile creare un pacchetto di Windows Installer (file di installazione MSI o EXE) oppure un programma di avvio automatico personalizzato.
 
 - È possibile creare un pacchetto del programma di installazione basato su MSI usando l'[estensione WiX Toolset Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Si tratta di un set di strumenti da riga di comando.
 

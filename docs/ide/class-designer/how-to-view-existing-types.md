@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: visualizzare i tipi esistenti (Progettazione classi)'
+description: Informazioni su come visualizzare un tipo esistente e i relativi membri aggiungendone la forma a un diagramma classi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa27489844bc59bc0d4da32440cc1caa74ecbea6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b4660c4efc7c22431b7c9f0d9180576d524a372
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770007"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901167"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Procedura: Visualizzare i tipi esistenti in Progettazione classi
 
@@ -31,9 +33,9 @@ Per progettare nuovi tipi nei diagrammi classi, vedere [procedura: creare tipi u
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Per vedere i tipi di un progetto in un diagramma di classi
 
-1. Da un progetto in **Esplora soluzioni**aprire un file del diagramma classi (con estensione CD) esistente. In alternativa, se non sono disponibili diagrammi classi, aggiungerne uno nuovo al progetto. Vedere [procedura: aggiungere diagrammi classi ai progetti](how-to-add-class-diagrams-to-projects.md).
+1. Da un progetto in **Esplora soluzioni** aprire un file del diagramma classi (con estensione CD) esistente. In alternativa, se non sono disponibili diagrammi classi, aggiungerne uno nuovo al progetto. Vedere [procedura: aggiungere diagrammi classi ai progetti](how-to-add-class-diagrams-to-projects.md).
 
-2. Dal progetto in **Esplora soluzioni**trascinare un file di codice sorgente nel diagramma classi.
+2. Dal progetto in **Esplora soluzioni** trascinare un file di codice sorgente nel diagramma classi.
 
     > [!NOTE]
     > Se la soluzione contiene un progetto che condivide il codice con più app, è possibile trascinare file o codice in un diagramma classi solo da queste origini:
@@ -59,7 +61,7 @@ La prima volta che viene visualizzato un tipo nel diagramma, la relativa forma a
 
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>Per visualizzare il contenuto di un progetto in un diagramma classi
 
-In **Esplora soluzioni** o **Visualizzazione classi**fare clic con il pulsante destro del mouse sul progetto e scegliere **Visualizza**, quindi scegliere **Visualizza diagramma classi**. Verrà creato un diagramma classi compilato automaticamente.
+In **Esplora soluzioni** o **Visualizzazione classi** fare clic con il pulsante destro del mouse sul progetto e scegliere **Visualizza**, quindi scegliere **Visualizza diagramma classi**. Verrà creato un diagramma classi compilato automaticamente.
 
 ## <a name="see-also"></a>Vedere anche
 

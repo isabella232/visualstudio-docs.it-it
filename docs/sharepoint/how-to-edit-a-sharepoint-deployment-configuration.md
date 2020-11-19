@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: modificare una configurazione di distribuzione di SharePoint | Microsoft Docs'
+description: Informazioni su come creare una configurazione di distribuzione di SharePoint o modificare una configurazione di distribuzione esistente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74f6377bad0f62aa2c470e72afe64b85b3017ee6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e64f805496d03b42ca70489bab1302ecf58b33bc
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016784"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903559"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Procedura: modificare una configurazione di distribuzione di SharePoint
   È possibile creare una configurazione di distribuzione o modificare una configurazione di distribuzione esistente. Ad esempio, è possibile eseguire un singolo passaggio o modificare l'ordine dei passaggi nel processo di distribuzione. Potrebbe essere necessario creare o modificare le configurazioni di distribuzione perché non è possibile modificare le configurazioni predefinite e aggiunte a livello di codice.
@@ -28,7 +30,7 @@ ms.locfileid: "86016784"
 
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>Per creare una configurazione di distribuzione di SharePoint
 
-1. In **Esplora soluzioni**scegliere un progetto SharePoint, quindi nella barra dei menu scegliere **progetto**,**Proprietà** _NomeProgetto_.
+1. In **Esplora soluzioni** scegliere un progetto SharePoint, quindi nella barra dei menu scegliere **progetto**,**Proprietà** _NomeProgetto_.
 
 2. Nella scheda **SharePoint** scegliere il pulsante **nuovo** .
 
@@ -45,7 +47,7 @@ ms.locfileid: "86016784"
 
 #### <a name="to-change-the-active-deployment-configuration"></a>Per modificare la configurazione della distribuzione attiva
 
-1. In **Esplora soluzioni**scegliere un progetto SharePoint, quindi nella barra dei menu scegliere **Project**  >  ** \<*ProjectName*> Proprietà**progetto.
+1. In **Esplora soluzioni** scegliere un progetto SharePoint, quindi nella barra dei menu scegliere **Project**  >  **\<*ProjectName*> Proprietà** progetto.
 
 2. Scegliere la scheda **SharePoint** .
 

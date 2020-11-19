@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 9d279de29664dcfc17ebd719fafc95d197a3352a
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1317f41c9463ab645e6dd3ba281f11b9246720a8
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398670"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901934"
 ---
 # <a name="add-azure-application-insights-by-using-visual-studio-connected-services"></a>Aggiungere applicazione Azure Insights tramite Visual Studio Servizi connessi
 
@@ -54,7 +54,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
     Se non è già stato effettuato l'accesso, accedere al proprio account Azure. Se non si ha un account Azure, è possibile iscriversi per ottenere una [versione di valutazione gratuita](https://azure.microsoft.com/account/free).
 
-1. Nella schermata **Configure applicazione Azure Insights** selezionare un componente di applicazione Azure Insights esistente e fare clic su Next ( **Avanti** ).
+1. Nella schermata **Configure applicazione Azure Insights** selezionare un componente di applicazione Azure Insights esistente e fare clic su Next ( **Avanti**).
 
     Se è necessario creare un nuovo componente, andare al passaggio successivo. In caso contrario, andare al passaggio 7.
 

@@ -1,5 +1,7 @@
 ---
 title: Elemento TemplateData (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento TemplateData e su come categorizzare il modello e definire come viene visualizzato nella finestra di dialogo nuovo progetto o Aggiungi nuovo elemento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3ce0226286e8cc4623b66c043eb7bd376597118
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc0edf82421ba41198480e6c105dd56c02bd0f7e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699188"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903260"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>Elemento TemplateData (modelli di Visual Studio)
 Classifica il modello in base alla categoria e definisce la modalità di visualizzazione nella finestra di dialogo **Nuovo progetto** o **Aggiungi nuovo elemento** .
@@ -40,14 +42,14 @@ Classifica il modello in base alla categoria e definisce la modalità di visuali
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
  Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
 
 | Elemento | Descrizione |
 | - | - |
-| [Name](../extensibility/name-element-visual-studio-templates.md) | Elemento obbligatorio.<br /><br /> Specifica il nome del modello visualizzato nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** . |
+| [Nome](../extensibility/name-element-visual-studio-templates.md) | Elemento obbligatorio.<br /><br /> Specifica il nome del modello visualizzato nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** . |
 | [Descrizione](../extensibility/description-element-visual-studio-templates.md) | Elemento obbligatorio.<br /><br /> Specifica la descrizione del modello come appare nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** . |
 | [Icona](../extensibility/icon-element-visual-studio-templates.md) | Elemento obbligatorio.<br /><br /> Specifica il percorso e il nome del file di immagine che funge da icona, che viene visualizzata nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** per il modello. |
 | [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | Elemento obbligatorio.<br /><br /> Categorizza il modello di progetto in modo che venga visualizzato sotto il gruppo specificato nella finestra di dialogo **nuovo progetto** . |
@@ -76,7 +78,7 @@ Classifica il modello in base alla categoria e definisce la modalità di visuali
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Contiene tutti i metadati per il modello di progetto, il modello di elemento o starter kit.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `TemplateData` è un elemento obbligatorio.
 
  Se non si include un elemento facoltativo, viene utilizzato il valore predefinito di tale elemento.

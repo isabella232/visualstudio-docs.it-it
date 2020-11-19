@@ -1,5 +1,7 @@
 ---
 title: Elemento WizardData (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento WizardData e su come viene specificato un codice XML personalizzato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa3f9d2e971d944b964f4b194d1324ff960fbd24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0472bfeb3a988bcb39b4daf80cea92398130f59f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740388"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903403"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>Elemento WizardData (modelli di Visual Studio)
 
@@ -43,7 +45,7 @@ Specifica il codice XML personalizzato
 
 Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 Nessuno.
 
@@ -63,7 +65,7 @@ Il valore di testo è facoltativo.
 
 Questo testo specifica il codice XML personalizzato da passare all'estensione personalizzata della procedura guidata specificata nell'elemento [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) .
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 È possibile specificare qualsiasi XML in questo elemento. Il codice XML verrà passato come parametro all'estensione personalizzata della procedura guidata, consentendo all'estensione di utilizzare il contenuto di questo elemento. Per questi dati non viene eseguita alcuna convalida.
 

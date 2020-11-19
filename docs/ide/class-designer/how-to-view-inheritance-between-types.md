@@ -1,5 +1,7 @@
 ---
 title: "Procedura: visualizzare l'ereditarietà tra tipi (Progettazione classi)"
+description: Informazioni su come trovare la relazione di ereditarietà tra un tipo di base e i relativi tipi derivati in un diagramma classi in Progettazione classi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c35279421ad17e62afe707d62dbc879d03b384
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82785f1a5cac2185925c63c4d6d224ffd5fd67de
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769908"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901193"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Procedura: Visualizzare l'ereditarietà tra tipi in Progettazione classi
 

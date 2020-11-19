@@ -4,17 +4,16 @@ description: Esplorazione e gestione delle risorse di archiviazione con Esplora 
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 658dc064-4a4e-414b-ae5a-a977a34c930d
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: ab8373a24d296052b7ecfc7fcae6c85c14c74a1d
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ae45fafb562387720b652e0921624bc859ea5920
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398865"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902220"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Esplorare e gestire le risorse di archiviazione usando Esplora server
 
@@ -34,7 +33,7 @@ Esplora server mostra automaticamente un elenco di BLOB, code e tabelle nell'acc
 
 Per visualizzare le risorse dell'account dell'emulatore di archiviazione, espandere il nodo **Sviluppo** . Se l'emulatore di archiviazione non è stato avviato, verrà avviato automaticamente quando si espande il nodo **Sviluppo**. Questo processo può richiedere alcuni secondi. Durante l'avvio dell'emulatore di archiviazione è possibile continuare a lavorare in altre aree di Visual Studio.
 
-Per visualizzare le risorse in un account di archiviazione, espandere il nodo dell'account di archiviazione in Esplora server, in corrispondenza dei nodi **Blob** , **Code** e **Tabelle**.
+Per visualizzare le risorse in un account di archiviazione, espandere il nodo dell'account di archiviazione in Esplora server, in corrispondenza dei nodi **Blob**, **Code** e **Tabelle**.
 
 ## <a name="work-with-blob-resources"></a>Usare le risorse BLOB
 
@@ -94,7 +93,7 @@ Poiché le cartelle nei contenitori BLOB sono cartelle virtuali, non è possibil
 
 È possibile filtrare i BLOB visualizzati specificando un prefisso comune.
 
-Se, ad esempio, si immette il prefisso **hello** nella casella di testo del filtro e quindi si seleziona il pulsante **Esegui** ( **!** ), vengono visualizzati solo i BLOB che iniziano con "hello".
+Se, ad esempio, si immette il prefisso **hello** nella casella di testo del filtro e quindi si seleziona il pulsante **Esegui** (**!**), vengono visualizzati solo i BLOB che iniziano con "hello".
 
 ![Campo Filtro](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -235,7 +234,7 @@ Quando Esplora server si connette o riceve dati da un account di archiviazione, 
 ### <a name="to-refresh-table-data"></a>Per aggiornare i dati della tabella
 
 * Selezionare il nodo **Tabelle** sotto il nodo **Archiviazione** e quindi selezionare il pulsante **Aggiorna** sulla barra degli strumenti di Esplora server.
-* Per aggiornare l'elenco delle entità visualizzate in **Progettazione tabelle** , fare clic sul pulsante **Execute (esegui** ) nella progettazione tabelle.
+* Per aggiornare l'elenco delle entità visualizzate in **Progettazione tabelle**, fare clic sul pulsante **Execute (esegui** ) nella progettazione tabelle.
 
 ### <a name="to-refresh-queue-data"></a>Per aggiornare i dati della coda
 
@@ -251,7 +250,7 @@ Sono disponibili due modi per aggiungere gli account di archiviazione usando Esp
 
 ### <a name="to-create-a-storage-account-by-using-server-explorer"></a>Per creare un account di archiviazione usando Esplora server
 
-1. In Esplora server aprire il menu di scelta rapida per il nodo **Archiviazione** , quindi scegliere **Crea account di archiviazione**.
+1. In Esplora server aprire il menu di scelta rapida per il nodo **Archiviazione**, quindi scegliere **Crea account di archiviazione**.
 
 1. Nella finestra di dialogo **Crea account di archiviazione** selezionare o immettere le informazioni seguenti:
 
@@ -262,7 +261,7 @@ Sono disponibili due modi per aggiungere gli account di archiviazione usando Esp
 
    ![Creare un account di archiviazione di Azure](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. Selezionare **Crea**.
+1. Selezionare **Create** (Crea).
 
 Il nuovo account di archiviazione viene visualizzato nell'elenco **Archiviazione** di Esplora soluzioni.
 
@@ -279,7 +278,7 @@ Il nuovo account di archiviazione viene visualizzato nell'elenco **Archiviazione
 
 ### <a name="to-view-the-secondary-endpoints"></a>Per visualizzare gli endpoint secondari
 
-Se è stato creato un account di archiviazione con l'opzione di replica **Archiviazione con ridondanza geografica e accesso in lettura** , è possibile visualizzare gli endpoint secondari aprendo il menu di scelta rapida relativo al nome dell'account e quindi selezionando **Proprietà**.
+Se è stato creato un account di archiviazione con l'opzione di replica **Archiviazione con ridondanza geografica e accesso in lettura**, è possibile visualizzare gli endpoint secondari aprendo il menu di scelta rapida relativo al nome dell'account e quindi selezionando **Proprietà**.
 
 ![Endpoint secondari di archiviazione](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766040.png)
 

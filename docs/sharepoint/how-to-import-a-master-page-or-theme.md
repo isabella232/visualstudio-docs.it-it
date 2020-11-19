@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: importare una pagina master o un tema | Microsoft Docs'
+description: Creare modelli per pagine master e temi in SharePoint Designer, quindi importarli in Visual Studio per assegnare un aspetto coerente alle pagine del sito di SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7abca9e9141fdc8d4540e8a38e9579862fc540f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c17f4e7477a20ea245eaa359a6f9611a8dc4ece6
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015303"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903494"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Procedura: importare una pagina master o un tema
   È possibile assegnare a pagine del sito di SharePoint un aspetto coerente creando e utilizzando pagine e temi master. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] non fornisce modelli per questi elementi, ma è possibile crearli in SharePoint Designer e quindi importarli in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Per ulteriori informazioni, vedere [blocco predefinito: pagine e interfaccia utente](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) nel sito Web Microsoft.
@@ -76,7 +78,7 @@ ms.locfileid: "86015303"
 
      L'attributo `Type="GhostableInLibrary"` indica che l'elemento viene aggiunto al database del contenuto e l' `Url` attributo del modulo specifica dove archiviare il file nel database del contenuto di SharePoint.
 
-11. Per modificare l'ambito di distribuzione per una pagina master, in **Esplora soluzioni**aprire il file di funzionalità in progettazione funzionalità, quindi scegliere un nuovo ambito di distribuzione dall'elenco **ambito** .
+11. Per modificare l'ambito di distribuzione per una pagina master, in **Esplora soluzioni** aprire il file di funzionalità in progettazione funzionalità, quindi scegliere un nuovo ambito di distribuzione dall'elenco **ambito** .
 
      Il valore **Web** indica che la pagina master si applica solo al sito Web attualmente specificato nel progetto. Il valore **site** indica che la pagina master viene applicata alla raccolta di siti corrente, che include tutti i siti secondari e il Web radice. Gli altri valori non sono applicabili.
 

@@ -1,5 +1,7 @@
 ---
 title: Funzionalità avanzate
+description: Informazioni sulle funzionalità avanzate che potrebbero essere più appropriate per gli sviluppatori esperti o gli sviluppatori che hanno già familiarità con Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c725e5bcae5d72562e767a06afdee8aa84950b
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 61109a315a7f331821527ee882dd7c019411fca3
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399253"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903299"
 ---
 # <a name="features-of-visual-studio"></a>Funzionalità di Visual Studio
 
@@ -44,7 +46,7 @@ Visual Studio offre un gruppo di strumenti che consentono di creare facilmente a
 
 ::: moniker range="vs-2017"
 
-Dopo aver installato il carico di lavoro **Sviluppo di Azure** , vengono resi disponibili i modelli **Cloud** seguenti per C# nella finestra di dialogo **Nuovo progetto** :
+Dopo aver installato il carico di lavoro **Sviluppo di Azure**, vengono resi disponibili i modelli **Cloud** seguenti per C# nella finestra di dialogo **Nuovo progetto**:
 
 ![Modelli progetto cloud per Visual Studio](media/cloud-project-templates.png)
 
@@ -54,7 +56,7 @@ Dopo aver installato il carico di lavoro **Sviluppo di Azure** , vengono resi di
 
 ![Cloud Explorer in Visual Studio](media/cloud-explorer.png)
 
-È possibile sfruttare i servizi di Azure per le app usando **Servizi connessi** , ad esempio:
+È possibile sfruttare i servizi di Azure per le app usando **Servizi connessi**, ad esempio:
 
 - [Servizio connesso di Active Directory](/azure/active-directory/develop/vs-active-directory-add-connected-service) in modo che gli utenti possano usare i propri account [Azure Active Directory](/azure/active-directory/active-directory-whatis) per connettersi alle app Web
 - [Servizio connesso Archiviazione di Azure](/azure/vs-azure-tools-connected-services-storage) per archiviazione BLOB, code e tabelle
@@ -90,7 +92,7 @@ Per altre informazioni, vedere [Strumenti Web moderni](https://visualstudio.micr
 
 ## <a name="connect-to-databases"></a>Connettersi ai database
 
-**Esplora server** consente di esplorare e gestire le istanze e le risorse di SQL Server in locale, in remoto e in Azure, Salesforce.com, Microsoft 365 e siti Web. Per aprire **Esplora server** , scegliere **Visualizza** > **Esplora server** dal menu principale. Per altre informazioni sull'uso di Esplora server, vedere [Aggiungere nuove connessioni](../data-tools/add-new-connections.md).
+**Esplora server** consente di esplorare e gestire le istanze e le risorse di SQL Server in locale, in remoto e in Azure, Salesforce.com, Microsoft 365 e siti Web. Per aprire **Esplora server**, scegliere **Visualizza** > **Esplora server** dal menu principale. Per altre informazioni sull'uso di Esplora server, vedere [Aggiungere nuove connessioni](../data-tools/add-new-connections.md).
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) è un ambiente di sviluppo avanzato per SQL Server, database SQL di Azure e Azure SQL Data Warehouse. Consente di creare, eseguire il debug, gestire ed effettuare il refactoring di database. È possibile usare un progetto di database o direttamente un'istanza del database connesso locale o remota.
 

@@ -1,8 +1,11 @@
 ---
 title: Panoramica per gli sviluppatori Visual Basic
+description: Informazioni su come usare Visual Studio per modificare, eseguire il debug e compilare il codice e quindi pubblicare un'app come sviluppatore Visual Basic.
 ms.date: 11/15/2018
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9938d017d683fd27a3f303824f9568a3876c2c4d
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 990bff2832f290987ed29fd48b69f4d7a1a05bba
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928043"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901570"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Benvenuti all'IDE di Visual Studio | Visual Basic
 
@@ -237,7 +240,7 @@ Per modificare il tema **Scuro**:
 
 2. Sulla barra dei menu scegliere **strumenti**  >  **Opzioni** per aprire la finestra di dialogo **Opzioni** .
 
-3. Nella **Environment**  >  pagina Opzioni**generali** ambiente modificare la selezione del **tema colori** in **scuro**, quindi scegliere **OK**.
+3. Nella **Environment**  >  pagina Opzioni **generali** ambiente modificare la selezione del **tema colori** in **scuro**, quindi scegliere **OK**.
 
    ![Impostare il tema colori scuro in Visual Studio](media/change-color-theme.png)
 
@@ -281,7 +284,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    ![File > Nuovo progetto sulla barra dei menu](media/file-new-project-menu.png)
 
-   La finestra di dialogo **nuovo progetto** Mostra diversi *modelli*di progetto. Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
+   La finestra di dialogo **nuovo progetto** Mostra diversi *modelli* di progetto. Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
 
 1. Scegliere la categoria **.NET Core** in **Visual Basic** e quindi scegliere il modello **App console (.NET Core)**. Nella casella di testo **Nome** digitare **HelloWorld** e quindi selezionare il pulsante **OK**.
 
@@ -349,7 +352,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 1. Per trovare il modello da usare, digitare o immettere **console .net core** nella casella di ricerca. L'elenco dei modelli disponibili viene automaticamente filtrato in base alle parole chiave immesse. È possibile filtrare ulteriormente i risultati relativi ai modelli scegliendo **Visual Basic** dall'elenco a discesa **Linguaggio**.
 
-1. Selezionare il modello**App console (.NET Core)**, quindi scegliere **Avanti**.
+1. Selezionare il modello **App console (.NET Core)**, quindi scegliere **Avanti**.
 
    ![Creare un nuovo progetto in Visual Studio](media/vs-2019/create-new-project.png)
 
@@ -375,7 +378,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!**. Ed ecco un'app in esecuzione.
 
-   ![Finestra della console](../media/vs-2019/overview-console-window.png)
+   ![Screenshot della finestra della console che mostra il messaggio di Hello World.](../media/vs-2019/overview-console-window.png)
 
 1. Per chiudere la finestra della console, premere un tasto qualsiasi.
 
@@ -400,7 +403,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 1. Immettere il nome nella finestra della console e premere **INVIO**.
 
-   ![Finestra della console](../media/vs-2019/overview-console-input.png)
+   ![Screenshot della finestra della console che mostra la domanda sul nome e la risposta dell'app.](../media/vs-2019/overview-console-input.png)
 
 1. Premere un tasto qualsiasi per chiudere la finestra della console e arrestare l'esecuzione del programma.
 

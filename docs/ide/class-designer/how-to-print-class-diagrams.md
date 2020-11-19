@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: stampare diagrammi classi (Progettazione classi)'
+description: Informazioni su come stampare un diagramma classi usando la funzionalità di stampa di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fb7b22c523216a41cddfc5c6cf8e87a915a9e38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ecabb44f7b66c94ef7390d79bf4e379256bd464
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770071"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901362"
 ---
 # <a name="how-to-print-class-diagrams"></a>Procedura: Stampare diagrammi classi
 

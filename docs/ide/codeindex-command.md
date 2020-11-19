@@ -1,5 +1,7 @@
 ---
 title: Comando CodeIndex
+description: Informazioni su come usare il comando codeindex per gestire l'indicizzazione del codice su Azure DevOps Server (precedentemente noto come Team Foundation Server).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07338e83f0c58331345cd3f4c6eb61855a16fd4f
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: ece3916f0af442b67bb5cdd0999ad37159e53448
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928489"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901180"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
 
@@ -25,7 +27,7 @@ Usare il comando **CodeIndex** per gestire l'indicizzazione del codice in Team F
 
 ## <a name="required-permissions"></a>Autorizzazioni necessarie
 
-Per usare il comando **CodeIndex**, è necessario essere membro del gruppo di sicurezza **Team Foundation Administrators **. Vedere [Permissions and groups in Azure DevOps and TFS](/azure/devops/organizations/security/permissions?view=vsts&preserve-view=true) (Autorizzazioni e gruppi in Azure DevOps e TFS).
+Per usare il comando **CodeIndex**, è necessario essere membro del gruppo di sicurezza **Team Foundation Administrators**. Vedere [Permissions and groups in Azure DevOps and TFS](/azure/devops/organizations/security/permissions?view=vsts&preserve-view=true) (Autorizzazioni e gruppi in Azure DevOps e TFS).
 
 > [!NOTE]
 > Anche se si accede con le credenziali amministrative, per eseguire questo comando, è necessario aprire una finestra del prompt dei comandi con privilegi elevati. È inoltre necessario eseguire questo comando dal livello applicazione di Team Foundation.

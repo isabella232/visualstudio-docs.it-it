@@ -3,17 +3,16 @@ title: Ottimizzazione del codice di Azure
 description: Informazioni su come il codice di Azure come strumento di ottimizzazione in Visual Studio consente di rendere il codice più affidabile e migliorare le prestazioni.
 author: ghogen
 manager: jillfra
-ms.assetid: ed48ee06-e2d2-4322-af22-07200fb16987
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 853b51fb5990d74a79f76cc55743ff9ba50f282e
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 5ae141c4ecdf5cfe1819ba2f47aac45f1763fa34
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399779"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902298"
 ---
 # <a name="optimizing-your-azure-code"></a>Ottimizzare il codice Azure
 Quando si programmano app che utilizzano Microsoft Azure, esistono alcune procedure consigliate da seguire per evitare problemi con la scalabilità di app, il comportamento e le prestazioni in un ambiente cloud. Microsoft fornisce uno strumento di analisi del codice di Azure che riconosce molti di questi problemi comunemente riscontrati e aiuta a risolverli. È possibile scaricare lo strumento in Visual Studio tramite NuGet.
@@ -25,7 +24,7 @@ Lo strumento di analisi del codice di Azure utilizza le regole seguenti per cont
 ### <a name="id"></a>ID
 AP0000
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descrizione
 Se si utilizza la modalità di stato sessione (in-process) predefinita per le applicazioni cloud, è possibile perdere lo stato della sessione.
 
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
@@ -42,7 +41,7 @@ Una soluzione consigliata consiste nell'archiviare lo stato della sessione in un
 ### <a name="id"></a>ID
 AP1000
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descrizione
 Creare metodi asincroni, ad esempio [await](/dotnet/csharp/language-reference/operators/await), fuori dal metodo [Run ()](/previous-versions/azure/reference/ee772746(v=azure.100)) e quindi chiamare i metodi asincroni da [Run ()](/previous-versions/azure/reference/ee772746(v=azure.100)). La dichiarazione del metodo [[Run ()](/previous-versions/azure/reference/ee772746(v=azure.100))](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) come asincrona fa sì che il ruolo di lavoro immetta un ciclo di riavvio.
 
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
@@ -87,7 +86,7 @@ public async Task RunAsync()
 ### <a name="id"></a>ID
 AP2000
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descrizione
 Uso della firma di accesso condiviso per l’autenticazione. Il servizio di controllo di accesso (ACS) è deprecato per l'autenticazione di bus di servizio.
 
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
@@ -113,13 +112,13 @@ Per altre informazioni, vedere gli argomenti seguenti.
 ### <a name="id"></a>ID
 AP2002
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descrizione
 Per evitare di entrare in un "ciclo di ricezione" la chiamata al metodo **OnMessage** è una soluzione ottimale, poi chiamare il metodo **Receive**. Tuttavia, se è necessario utilizzare il metodo **Ricezione** e si specifica un tempo di attesa del server non predefinito, assicurarsi che il tempo di attesa del server sia più di un minuto.
 
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Motivo
-Quando si chiama **OnMessage** , il client avvia un message pump interno che esegue costantemente il polling della coda o della sottoscrizione. Questo pump del messaggio contiene un ciclo infinito che emette una chiamata per ricevere messaggi. Se la chiamata scade, genera una nuova chiamata. L'intervallo di timeout è determinato dal valore della proprietà [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) del [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory) che viene usato.
+Quando si chiama **OnMessage**, il client avvia un message pump interno che esegue costantemente il polling della coda o della sottoscrizione. Questo pump del messaggio contiene un ciclo infinito che emette una chiamata per ricevere messaggi. Se la chiamata scade, genera una nuova chiamata. L'intervallo di timeout è determinato dal valore della proprietà [OperationTimeout](/dotnet/api/microsoft.servicebus.messaging.messagingfactorysettings) del [MessagingFactory](/dotnet/api/microsoft.servicebus.messaging.messagingfactory) che viene usato.
 
 Il vantaggio dell'uso di **OnMessage** rispetto a **Receive** è che gli utenti non devono eseguire manualmente il polling dei messaggi, gestire le eccezioni, elaborare più messaggi in parallelo e completare i messaggi.
 
@@ -217,7 +216,7 @@ while (true)
 ### <a name="id"></a>ID
 AP2003
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descrizione
 Utilizzare i metodi asincroni del Bus di servizio per migliorare le prestazioni con la messaggistica negoziata.
 
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
@@ -234,7 +233,7 @@ Per migliorare le prestazioni dell'infrastruttura di messaggistica di Azure, ved
 ### <a name="id"></a>ID
 AP2004
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descrizione
 Esegue il partizionamento delle code e degli argomenti del bus di servizio per ottenere prestazioni migliori con la messaggistica del bus di servizio.
 
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
@@ -259,7 +258,7 @@ Per altre informazioni, vedere il blog di Microsoft Azure [Partitioned Service B
 ### <a name="id"></a>ID
 AP3001
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descrizione
 È consigliabile evitare l'utilizzo di SharedAccessStartTimeset all'ora corrente per avviare immediatamente il criterio di accesso condiviso. È sufficiente impostare questa proprietà se si desidera avviare i criteri di accesso condivisi in un secondo momento.
 
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
@@ -291,7 +290,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 ### <a name="id"></a>ID
 AP3002
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descrizione
 Può esistere una differenza di circa cinque minuti negli orologi tra i Data Center in posizioni diverse a causa di una condizione nota come "sfasamento." Per evitare che il token del criterio SAS scada prima del previsto, impostare l'ora di scadenza a più di cinque minuti.
 
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
@@ -341,7 +340,7 @@ Per altre informazioni, vedere [configurare l'accesso in lettura pubblico anonim
 ### <a name="id"></a>ID
 AP4000
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descrizione
 Usando la classe [ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) per progetti, come il sito Web di Azure e i servizi mobili di Azure, non si verificano problemi di runtime. Come procedura consigliata, tuttavia, è consigliabile usare Cloud [ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) come modo unificato di gestione delle configurazioni per tutte le applicazioni Cloud di Azure.
 
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
@@ -378,7 +377,7 @@ Di seguito è riportato un esempio di come archiviare l'impostazione di configur
 ### <a name="id"></a>ID
 AP4001
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descrizione
 Se si utilizzano stringhe di connessione hardcoded ed è necessario aggiornarle in un secondo momento, sarà necessario apportare modifiche al codice sorgente e ricompilare l'applicazione. Tuttavia, se si archiviano le stringhe di connessione in un file di configurazione, è possibile cambiarle successivamente semplicemente aggiornando il file di configurazione.
 
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
@@ -399,7 +398,7 @@ Per informazioni sull'uso di file di configurazione, ad esempio web.config o app
 ### <a name="id"></a>ID
 AP5000
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descrizione
 Anziché configurare le impostazioni di diagnostica nel codice, ad esempio tramite l'API di programmazione della diagnostica di Microsoft.WindowsAzure, è necessario configurare le impostazioni di diagnostica nel file diagnostics wadcfg. (O, diagnostics.wadcfgx se si utilizza Azure SDK 2.5). In questo modo è possibile modificare le impostazioni di diagnostica senza dover ricompilare il codice.
 
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
@@ -424,7 +423,7 @@ Usare la finestra di progettazione di configurazione di diagnostica per spostare
 ### <a name="id"></a>ID
 AP6000
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descrizione
 Per conservare memoria, evitare di dichiarare gli oggetti DbContext come static
 
 Condividere le idee e i suggerimenti nei [Commenti e suggerimenti dell'analisi del codice di Azure](https://social.msdn.microsoft.com/Forums/en-US/home).

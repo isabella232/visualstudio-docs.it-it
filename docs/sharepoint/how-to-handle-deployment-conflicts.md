@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: gestire i conflitti di distribuzione | Microsoft Docs'
+description: Vedere un esempio di come implementare il proprio codice per gestire i conflitti di distribuzione per un elemento del progetto SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,19 +11,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5df9677fd349825983cc33c5a8ed2648f34b8c9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 975fa69a503f5e2acd3e90defd9fa9895c70db00
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015304"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903507"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Procedura: gestire i conflitti di distribuzione
   È possibile fornire codice personalizzato per gestire i conflitti di distribuzione per un elemento del progetto SharePoint. Ad esempio, è possibile determinare se i file nell'elemento del progetto corrente sono già presenti nel percorso di distribuzione e quindi eliminare i file distribuiti prima della distribuzione dell'elemento del progetto corrente. Per ulteriori informazioni sui conflitti di distribuzione, vedere estensione della creazione [di pacchetti e della distribuzione di SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
 
 ### <a name="to-handle-a-deployment-conflict"></a>Per gestire un conflitto di distribuzione
 
-1. Creare un'estensione di elemento del progetto, un'estensione di progetto o una definizione di un nuovo tipo di elemento di progetto. Per altre informazioni, vedere gli argomenti seguenti:
+1. Creare un'estensione di elemento del progetto, un'estensione di progetto o una definizione di un nuovo tipo di elemento di progetto. Per altre informazioni, vedere i seguenti argomenti:
 
     - [Procedura: creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 

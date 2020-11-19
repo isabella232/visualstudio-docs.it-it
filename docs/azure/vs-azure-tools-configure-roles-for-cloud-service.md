@@ -3,17 +3,16 @@ title: Configurare i ruoli per un servizio cloud di Azure
 description: Informazioni su come impostare e configurare i ruoli per i servizi cloud di Azure usando Visual Studio.
 author: ghogen
 manager: jillfra
-assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 6b34a61bb0353bbbd4405b7f642bc63758dfa096
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 120c693e7009dddf2efaab7ce54fd4d20c0b1681
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399279"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902649"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configurare un ruolo per un servizio cloud di Azure con Visual Studio
 Un servizio cloud di Azure può includere uno o più ruoli di lavoro o ruoli Web. Per ogni ruolo è necessario definire la modalità di configurazione e configurare la modalità di esecuzione. Per altre informazioni sui ruoli nei servizi cloud, vedere il video [Introduzione ai servizi cloud di Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -55,7 +54,7 @@ Per migliorare le prestazioni del servizio cloud, è possibile cambiare il numer
 
 1. Creare o aprire un progetto del servizio cloud di Azure in Visual Studio.
 
-1. In **Esplora soluzioni** espandere il nodo del progetto. Nel nodo **Ruoli** , fare clic con il pulsante destro del mouse sul ruolo da aggiornare e selezionare **Proprietà** dal menu di scelta rapida.
+1. In **Esplora soluzioni** espandere il nodo del progetto. Nel nodo **Ruoli**, fare clic con il pulsante destro del mouse sul ruolo da aggiornare e selezionare **Proprietà** dal menu di scelta rapida.
 
     ![Menu di scelta rapida di Esplora soluzioni di Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -85,7 +84,7 @@ Se si usa un valore diverso per ogni configurazione del servizio, non sarà nece
 
 1. Creare o aprire un progetto del servizio cloud di Azure in Visual Studio.
 
-1. In **Esplora soluzioni** espandere il nodo del progetto. Nel nodo **Ruoli** , fare clic con il pulsante destro del mouse sul ruolo da aggiornare e selezionare **Proprietà** dal menu di scelta rapida.
+1. In **Esplora soluzioni** espandere il nodo del progetto. Nel nodo **Ruoli**, fare clic con il pulsante destro del mouse sul ruolo da aggiornare e selezionare **Proprietà** dal menu di scelta rapida.
 
     ![Menu di scelta rapida di Esplora soluzioni di Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -105,15 +104,15 @@ Se si usa un valore diverso per ogni configurazione del servizio, non sarà nece
 
     ![Nuova stringa di connessione](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting-new-setting.png)
 
-    - **Nome** : digitare il nome da usare per la stringa di connessione.
-    - **Tipo** : scegliere **Stringa di connessione** nell'elenco a discesa.
-    - **Valore** : è possibile immettere la stringa di connessione direttamente nella cella **Valore** o selezionare i puntini di sospensione (...) per lavorare nella finestra di dialogo **Crea stringa di connessione a risorsa di archiviazione**.
+    - **Nome**: digitare il nome da usare per la stringa di connessione.
+    - **Tipo**: scegliere **Stringa di connessione** nell'elenco a discesa.
+    - **Valore**: è possibile immettere la stringa di connessione direttamente nella cella **Valore** o selezionare i puntini di sospensione (...) per lavorare nella finestra di dialogo **Crea stringa di connessione a risorsa di archiviazione**.
 
-1. Nella finestra di dialogo **Crea stringa di connessione a risorsa di archiviazione** , selezionare un'opzione per **Connetti tramite**. Seguire quindi le istruzioni relative all'opzione selezionata:
+1. Nella finestra di dialogo **Crea stringa di connessione a risorsa di archiviazione**, selezionare un'opzione per **Connetti tramite**. Seguire quindi le istruzioni relative all'opzione selezionata:
 
     - **Emulatore di archiviazione di Microsoft Azure** : se si seleziona questa opzione, le impostazioni rimanenti della finestra di dialogo vengono disabilitate in quanto si applicano solo ad Azure. Selezionare **OK**.
-    - **Sottoscrizione** : se si seleziona questa opzione, usare l'elenco a discesa per selezionare e accedere a un account Microsoft oppure aggiungere un account Microsoft. Selezionare una sottoscrizione e un account di archiviazione di Azure. Selezionare **OK**.
-    - **Credenziali immesse manualmente** : immettere il nome dell'account di archiviazione e la chiave primaria o secondaria. Selezionare un'opzione per **Connection** (HTTPS è consigliato per la maggior parte degli scenari). Fare clic su **OK**.
+    - **Sottoscrizione**: se si seleziona questa opzione, usare l'elenco a discesa per selezionare e accedere a un account Microsoft oppure aggiungere un account Microsoft. Selezionare una sottoscrizione e un account di archiviazione di Azure. Selezionare **OK**.
+    - **Credenziali immesse manualmente**: immettere il nome dell'account di archiviazione e la chiave primaria o secondaria. Selezionare un'opzione per **Connection** (HTTPS è consigliato per la maggior parte degli scenari). Fare clic su **OK**.
 
 1. Per eliminare una stringa di connessione, selezionarla e quindi scegliere **Rimuovi impostazione**.
 
@@ -147,7 +146,7 @@ Se si usa un valore diverso per ogni configurazione del servizio, non sarà nece
 
 1. Creare o aprire un progetto del servizio cloud di Azure in Visual Studio.
 
-1. In **Esplora soluzioni** espandere il nodo del progetto. Nel nodo **Ruoli** , fare clic con il pulsante destro del mouse sul ruolo da aggiornare e selezionare **Proprietà** dal menu di scelta rapida.
+1. In **Esplora soluzioni** espandere il nodo del progetto. Nel nodo **Ruoli**, fare clic con il pulsante destro del mouse sul ruolo da aggiornare e selezionare **Proprietà** dal menu di scelta rapida.
 
     ![Menu di scelta rapida di Esplora soluzioni di Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -167,9 +166,9 @@ Se si usa un valore diverso per ogni configurazione del servizio, non sarà nece
 
     ![Nuova impostazione personalizzata](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-add-setting-new-setting.png)
 
-    - **Nome** : inserire il nome dell'impostazione.
-    - **Tipo** : scegliere **Stringa di connessione** dall'elenco a discesa.
-    - **Valore** : inserire il valore dell'impostazione. È possibile immettere il valore direttamente nella cella **Valore** o selezionare i puntini di sospensione (...) per immettere il valore nella finestra di dialogo **Modifica stringa**.
+    - **Nome**: inserire il nome dell'impostazione.
+    - **Tipo**: scegliere **Stringa di connessione** dall'elenco a discesa.
+    - **Valore**: inserire il valore dell'impostazione. È possibile immettere il valore direttamente nella cella **Valore** o selezionare i puntini di sospensione (...) per immettere il valore nella finestra di dialogo **Modifica stringa**.
 
 1. Per eliminare un'impostazione personalizzata, selezionarla e quindi scegliere **Rimuovi impostazione**.
 
@@ -198,7 +197,7 @@ La procedura seguente illustra come accedere a un'impostazione personalizzata a 
 
 1. Creare o aprire un progetto del servizio cloud di Azure in Visual Studio.
 
-1. In **Esplora soluzioni** espandere il nodo del progetto. Nel nodo **Ruoli** , fare clic con il pulsante destro del mouse sul ruolo da aggiornare e selezionare **Proprietà** dal menu di scelta rapida.
+1. In **Esplora soluzioni** espandere il nodo del progetto. Nel nodo **Ruoli**, fare clic con il pulsante destro del mouse sul ruolo da aggiornare e selezionare **Proprietà** dal menu di scelta rapida.
 
     ![Menu di scelta rapida di Esplora soluzioni di Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -206,7 +205,7 @@ La procedura seguente illustra come accedere a un'impostazione personalizzata a 
 
     ![Scheda Archiviazione locale](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab.png)
 
-1. Nell'elenco **Configurazione del servizio** , verificare che l'opzione selezionata sia **Tutte le configurazioni** , poiché le impostazioni di archiviazione locale si applicano a tutte le configurazioni di servizio. Qualsiasi altro valore comporta la disabilitazione di tutti i campi di input della pagina.
+1. Nell'elenco **Configurazione del servizio**, verificare che l'opzione selezionata sia **Tutte le configurazioni**, poiché le impostazioni di archiviazione locale si applicano a tutte le configurazioni di servizio. Qualsiasi altro valore comporta la disabilitazione di tutti i campi di input della pagina.
 
     ![Elenco configurazione servizio 3](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-service-configuration.png)
 
@@ -218,9 +217,9 @@ La procedura seguente illustra come accedere a un'impostazione personalizzata a 
 
     ![Nuova risorsa di archiviazione locale](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-new-local-storage.png)
 
-    - **Nome** : digitare il nome da usare per la nuova risorsa di archiviazione locale.
-    - **Dimensione (MB)** : immettere la dimensione in MB necessaria per la nuova risorsa di archiviazione locale.
-    - **Pulisci a riciclo ruolo** : selezionare questa opzione per rimuovere i dati dalla nuova risorsa di archiviazione locale quando la macchina virtuale per il ruolo viene riciclata.
+    - **Nome**: digitare il nome da usare per la nuova risorsa di archiviazione locale.
+    - **Dimensione (MB)**: immettere la dimensione in MB necessaria per la nuova risorsa di archiviazione locale.
+    - **Pulisci a riciclo ruolo**: selezionare questa opzione per rimuovere i dati dalla nuova risorsa di archiviazione locale quando la macchina virtuale per il ruolo viene riciclata.
 
 1. Per eliminare una risorsa di archiviazione locale, selezionarla e scegliere **Remove Local Storage** (Rimuovi risorsa di archiviazione locale).
 
@@ -261,7 +260,7 @@ Per visualizzare il file creato dal codice nella sezione precedente, seguire que
 
     ![Emulatore di calcolo di Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/compute-emulator.png)
 
-1. Dal menu **Emulatore di calcolo di Microsoft Azure** , selezionare **Strumenti** > **Open local store** (Apri risorsa di archiviazione locale).
+1. Dal menu **Emulatore di calcolo di Microsoft Azure**, selezionare **Strumenti** > **Open local store** (Apri risorsa di archiviazione locale).
 
     ![Voce di menu Apri risorsa di archiviazione locale](./media/vs-azure-tools-configure-roles-for-cloud-service/compute-emulator-open-local-store-menu.png)
 

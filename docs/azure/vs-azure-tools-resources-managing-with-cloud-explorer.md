@@ -3,17 +3,16 @@ title: Gestione delle risorse di Azure con Cloud Explorer | Documentazione Micro
 description: Informazioni su come usare Cloud Explorer per esplorare e gestire le risorse di Azure in Visual Studio.
 author: ghogen
 manager: jillfra
-assetId: 6347dc53-f497-49d5-b29b-e8b9f0e939d7
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 12c82cca6c8873facc1a16a926d90fd0f3918c07
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c9c2ce60b2096b6c3a4f06fad7360b1d5ea0c753
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399390"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902280"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Gestire le risorse associate agli account di Azure in Visual Studio Cloud Explorer
 
@@ -69,14 +68,14 @@ Per visualizzare le risorse associate a un account Azure, è prima necessario ag
 
 Per visualizzare le risorse di Azure, è possibile scegliere la visualizzazione **Tipi di risorsa** o **Gruppi di risorse**.
 
-1. In **Cloud Explorer** , selezionare l'elenco a discesa per la visualizzazione delle risorse.
+1. In **Cloud Explorer**, selezionare l'elenco a discesa per la visualizzazione delle risorse.
 
    ![Elenco a discesa di Cloud Explorer per selezionare la visualizzazione di risorse desiderata](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-view-dropdown.png)
 
 1. Dal menu di scelta rapida selezionare la visualizzazione desiderata:
 
-   * Visualizzazione **Tipi di risorsa** : la visualizzazione comune usata nel [portale di Azure](https://portal.azure.com), mostra le risorse di Azure classificate in base al tipo, ad esempio app Web, account di archiviazione e macchine virtuali.
-   * Visualizzazione **Gruppi di risorse** : classifica le risorse di Azure in base al gruppo di risorse di Azure a cui sono associate. Un gruppo di risorse è un bundle di risorse di Azure, in genere usate da un'applicazione specifica. Per altre informazioni sui gruppi di risorse di Azure, vedere [Panoramica di Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview).
+   * Visualizzazione **Tipi di risorsa**: la visualizzazione comune usata nel [portale di Azure](https://portal.azure.com), mostra le risorse di Azure classificate in base al tipo, ad esempio app Web, account di archiviazione e macchine virtuali.
+   * Visualizzazione **Gruppi di risorse**: classifica le risorse di Azure in base al gruppo di risorse di Azure a cui sono associate. Un gruppo di risorse è un bundle di risorse di Azure, in genere usate da un'applicazione specifica. Per altre informazioni sui gruppi di risorse di Azure, vedere [Panoramica di Azure Resource Manager](/azure/azure-resource-manager/resource-group-overview).
 
    L'immagine seguente illustra un confronto tra le visualizzazioni di due risorse:
 
@@ -96,7 +95,7 @@ Di seguito viene illustrato un confronto di esempio di ciò che viene visualizza
 
 L'azione **Open in portal** è disponibile per ogni risorsa. Quando si sceglie questa azione, Cloud Explorer mostra la risorsa selezionata nel [portale di Azure](https://portal.azure.com). La funzionalità **Apri nel portale** è particolarmente utile per l'esplorazione di risorse con molti livelli di nidificazione.
 
-È possibile che vengano visualizzate azioni aggiuntive e altri valori di proprietà, in base alla risorsa di Azure. Ad esempio, per le app Web e le app per la logica sono disponibili anche le azioni **Apri nel browser** e **Collega debugger** , oltre ad **Apri nel portale**. Quando si sceglie un BLOB, una coda o una tabella dell'account di archiviazione, vengono visualizzate le azioni per l'apertura di editor. Per le app Azure sono disponibili le proprietà relative a **URL** e **stato** , mentre per le risorse di archiviazione sono disponibili le proprietà relative alle chiavi e alle stringhe di connessione.
+È possibile che vengano visualizzate azioni aggiuntive e altri valori di proprietà, in base alla risorsa di Azure. Ad esempio, per le app Web e le app per la logica sono disponibili anche le azioni **Apri nel browser** e **Collega debugger**, oltre ad **Apri nel portale**. Quando si sceglie un BLOB, una coda o una tabella dell'account di archiviazione, vengono visualizzate le azioni per l'apertura di editor. Per le app Azure sono disponibili le proprietà relative a **URL** e **stato**, mentre per le risorse di archiviazione sono disponibili le proprietà relative alle chiavi e alle stringhe di connessione.
 
 ## <a name="find-resources-in-cloud-explorer"></a>Cercare risorse in Cloud Explorer
 

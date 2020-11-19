@@ -1,5 +1,7 @@
 ---
 title: Typedef C++ in Progettazione classi
+description: Informazioni su come Progettazione classi supporta i tipi typedef di C++ dichiarati con la parola chiave typedef.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c57382809b7730df2d7c674c24902d70ccab647
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f95b948d4ffc70d225dd4a8b2bb2debe111c967e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590696"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903442"
 ---
 # <a name="c-typedefs-in-class-designer"></a>Typedef C++ in Progettazione classi
 

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: creare tipi utilizzando Progettazione classi'
+description: Informazioni su come progettare nuovi tipi per i progetti C# e Visual Basic creandoli in un diagramma classi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98e489a37e5d75cbc17d17c32a1fa3b53f9993f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac6e59f4dc6fa68962ac061132e3fab90ec8e955
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770216"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901440"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Procedura: Creare tipi usando Progettazione classi
 
@@ -34,7 +36,7 @@ Per progettare nuovi tipi per progetti C# e Visual Basic, crearli in un diagramm
 
     - **Classe** o **Classe astratta**
 
-    - **Enumerazione**
+    - **Enum**
 
     - **Interfaccia**
 

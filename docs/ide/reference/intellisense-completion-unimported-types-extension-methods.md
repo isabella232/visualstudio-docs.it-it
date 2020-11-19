@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3eb912ebb4d8d7d4596a6aae6499ac054d4514ca
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: d2ac806b4a83b23a783c59eeee5df801c9237685
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102506"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94900920"
 ---
 # <a name="intellisense-completion-for-unimported-types-and-extension-methods"></a>Completamento IntelliSense per i tipi non importati e i metodi di estensione
 
@@ -38,7 +38,7 @@ Questo refactoring si applica a:
 1. Quando si inizia a digitare il nome di un tipo o di un metodo di estensione con una dipendenza nel progetto, IntelliSense fornirà suggerimenti. Per gli elementi degli spazi dei nomi non importati verrebbe visualizzato lo spazio dei nomi che lo contiene come suffisso.
 
    > [!TIP]
-   > È possibile mostrare o nascondere elementi da spazi dei nomi non importati su richiesta, usando il **pulsante di espansione (ALT + A)** visualizzato nella parte inferiore sinistra dell'elenco di completamento. Per modificare il comportamento predefinito, passare a **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **C#**  /  **Basic**  >  **IntelliSense** e cercare **Mostra elementi da spazi dei nomi non importati** .
+   > È possibile mostrare o nascondere elementi da spazi dei nomi non importati su richiesta, usando il **pulsante di espansione (ALT + A)** visualizzato nella parte inferiore sinistra dell'elenco di completamento. Per modificare il comportamento predefinito, passare a **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **C#**  /  **Basic**  >  **IntelliSense** e cercare **Mostra elementi da spazi dei nomi non importati**.
 
 2. Consente di selezionare ed eseguire il commit di un elemento non importato.
 

@@ -3,17 +3,16 @@ title: Accesso a Macchine virtuali di Azure da Esplora server | Documentazione M
 description: Panoramica su come visualizzare, creare e gestire macchine virtuali di Azure (VM) in Esplora Server in Visual Studio.
 author: ghogen
 manager: jillfra
-assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: a9ca956400956ae337d8d1e0f5a881f1dc4c6377
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 653a9be556441f5f8d5fc1c1053b144dc97dd3b2
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398553"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901870"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Accesso alle macchine virtuali di Azure da Esplora server
 
@@ -26,7 +25,7 @@ Se ci sono macchine virtuali ospitate da Azure, è possibile accedervi in Esplor
    | Proprietà | Descrizione |
    | --- | --- |
    | Nome DNS |URL con l'indirizzo Internet della macchina virtuale. |
-   | Environment |Per una macchina virtuale, il valore di questa proprietà è sempre Produzione. |
+   | Ambiente |Per una macchina virtuale, il valore di questa proprietà è sempre Produzione. |
    | Nome |Nome della macchina virtuale. |
    | Dimensione |Dimensioni della macchina virtuale corrispondenti alla quantità di memoria e spazio su disco disponibili. Per altre informazioni, vedere [dimensioni delle macchine virtuali](/azure/cloud-services/cloud-services-sizes-specs). |
    | Stato |I valori includono Avvio in corso, Avviato, Arresto, Arrestato e Recupero dello stato. Se viene visualizzato Recupero dello stato, lo stato corrente è sconosciuto. I valori di questa proprietà differiscono da quelli usati nel [portale di Azure](https://portal.azure.com). |

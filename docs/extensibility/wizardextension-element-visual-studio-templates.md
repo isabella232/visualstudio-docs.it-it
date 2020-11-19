@@ -1,5 +1,7 @@
 ---
 title: Elemento WizardExtension (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento WizardExtension e su come contiene gli elementi di registrazione per personalizzare la creazione guidata modelli.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd81b32861114d654aa794b992826589406b1df9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07d1c52e2b1dd8fe452d4c24f8dc6db6b32334a5
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740381"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903390"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>Elemento WizardExtension (modelli di Visual Studio)
 Contiene gli elementi di registrazione per personalizzare la creazione guidata modello.
@@ -38,7 +40,7 @@ Contiene gli elementi di registrazione per personalizzare la creazione guidata m
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
  Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -54,7 +56,7 @@ Contiene gli elementi di registrazione per personalizzare la creazione guidata m
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Contiene tutti i metadati per il modello di progetto, il modello di elemento o starter kit.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `WizardExtension` è un elemento figlio facoltativo di `VSTemplate`.
 
 ## <a name="example"></a>Esempio
