@@ -1,5 +1,7 @@
 ---
 title: Elemento ProvideDefaultName (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento ProvideDefaultName e su come specifica se Visual Studio genererà un nome predefinito di Visual Studio nella finestra di dialogo Aggiungi nuovo elemento o nuovo progetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 192716198f605a5f6b4f62730e84dcf83b4229cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7732c6f02ae5ec086a89bd9ade5c00ea533a68f2
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701709"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903806"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>Elemento ProvideDefaultName (modelli di Visual Studio)
 Specifica se il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistema del progetto genererà un nome predefinito per il modello nella finestra di dialogo **Aggiungi nuovo elemento** o **nuovo progetto** .
@@ -35,7 +37,7 @@ Specifica se il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistem
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
  Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -52,7 +54,7 @@ Specifica se il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sistem
 
  Il testo deve essere `true` o `false` , che indica se generare o meno un nome predefinito per il modello nella finestra di **dialogo Aggiungi nuovo elemento** o **nuovo progetto** .
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `ProvideDefaultName` è un elemento facoltativo. Il valore predefinito è `true`.
 
  Se l' `ProvideDefaultName` elemento è `false` , le caselle **nome** della finestra di dialogo **Aggiungi nuovo elemento** e **nuovo progetto** contengono il valore `<Enter_name>` .

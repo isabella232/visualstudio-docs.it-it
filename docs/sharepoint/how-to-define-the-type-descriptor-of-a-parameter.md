@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: definire il descrittore di tipo di un parametro | Microsoft Docs'
+description: Informazioni su come definire il descrittore di tipo di un parametro per un metodo nel modello di integrazione applicativa dei dati (Business Data Connectivity).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0b3ae803576c98a86a45d175af45aa28b3852134
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8044f04902e74b2597d6cf331e54eb4a6138817a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016838"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903598"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Procedura: definire il descrittore di tipo di un parametro
   Un descrittore di tipo contiene proprietà che descrivono il tipo di dati di un parametro. Può definire un campo, un'entità o una raccolta di entità. Per ulteriori informazioni, vedere [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
@@ -71,7 +73,7 @@ ms.locfileid: "86016838"
 
      Verrà visualizzata la finestra **Esplora dati BDC** .
 
-4. In **Esplora integrazione applicativa**dei dati aprire il menu di scelta rapida del descrittore di tipo, quindi scegliere **Aggiungi descrittore tipo**.
+4. In **Esplora integrazione applicativa** dei dati aprire il menu di scelta rapida del descrittore di tipo, quindi scegliere **Aggiungi descrittore tipo**.
 
      Un nuovo descrittore di tipo viene aggiunto come elemento figlio per il descrittore del tipo di entità. Configurare il descrittore di tipo come un campo.
 
@@ -113,7 +115,7 @@ ms.locfileid: "86016838"
 
     Verrà visualizzata la finestra **Esplora dati BDC** .
 
-7. In **Esplora integrazione applicativa**dei dati aprire il menu di scelta rapida del descrittore di tipo, quindi scegliere **Aggiungi descrittore tipo**.
+7. In **Esplora integrazione applicativa** dei dati aprire il menu di scelta rapida del descrittore di tipo, quindi scegliere **Aggiungi descrittore tipo**.
 
     Un nuovo descrittore di tipo viene aggiunto come elemento figlio per il descrittore del tipo di raccolta. Configurare il descrittore di tipo come un'entità.
 

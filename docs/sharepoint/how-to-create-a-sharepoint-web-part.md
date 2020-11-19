@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: creare una Web part di SharePoint | Microsoft Docs'
+description: Creare e personalizzare una Web part utilizzando una finestra di progettazione oppure aggiungendo un elemento Web part a qualsiasi progetto SharePoint e modificando quindi il file di codice per la Web part.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a8c02cce2f55374b4d62ba5663e8b3fe85b55b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13039520299d52e6f6a704567cf1cdc5ccfd66db
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016440"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903702"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>Procedura: creare una Web part di SharePoint
   È possibile creare e personalizzare una Web part aggiungendo un elemento **Web part** a qualsiasi progetto SharePoint, quindi modificando il file di codice per la Web part o utilizzando una finestra di progettazione. Per ulteriori informazioni, vedere [procedura: creare una Web part di SharePoint tramite una finestra di progettazione](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
@@ -39,7 +41,7 @@ ms.locfileid: "86016440"
 
      La Web part viene visualizzata in **Esplora soluzioni**. Per ulteriori informazioni sui file inclusi in una Web part, vedere [creare Web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
 
-6. In **Esplora soluzioni**aprire il file di codice per la Web part appena creata.
+6. In **Esplora soluzioni** aprire il file di codice per la Web part appena creata.
 
      Ad esempio, se il nome della web part è *WebPart1*, aprire *WebPart1. vb* (in Visual Basic) o *WebPart1.cs* (in C#).
 

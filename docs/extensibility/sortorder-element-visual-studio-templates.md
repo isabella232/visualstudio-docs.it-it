@@ -1,5 +1,7 @@
 ---
 title: Elemento SortOrder (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento SortOrder e su come viene specificato un valore utilizzato per disporre il modello come visualizzato nella finestra di dialogo nuovo progetto o Aggiungi nuovo elemento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 935d00335a21d3e129e79ce351e554ea93787447
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f07c3b62d1412564fd74c420b31b2a9fed41d1fa
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699960"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903754"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>Elemento SortOrder (modelli di Visual Studio)
 Specifica un valore utilizzato per disporre il modello, tra gli altri modelli nella stessa categoria, così come viene visualizzato nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** .
@@ -53,7 +55,7 @@ Specifica un valore utilizzato per disporre il modello, tra gli altri modelli ne
 
  Oggetto `integer` che rappresenta il valore dell'ordinamento.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `SortOrder` è un elemento facoltativo. Il valore predefinito è 100 e tutti i valori devono essere multipli di 10.
 
  L' `SortOrder` elemento viene ignorato per i modelli creati dall'utente. Tutti i modelli creati dall'utente sono ordinati alfabeticamente.

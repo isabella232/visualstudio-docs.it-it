@@ -1,6 +1,8 @@
 ---
 title: Distribuire, pubblicare & aggiornare le soluzioni SharePoint in modalità remota
 titleSuffix: ''
+description: Distribuire, pubblicare e aggiornare soluzioni SharePoint in modalità sandbox in un sito remoto o in un sito di SharePoint locale.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,19 +18,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5de5128ff19472390e65aa5d9a437aee269ff897
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: db476af4a9d3be9cab2109fb3489d0767765075f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585784"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903572"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Procedura: distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto
   Oltre a distribuire le soluzioni SharePoint al sistema locale, è possibile pubblicare soluzioni di SharePoint in modalità sandbox in siti remoti o in siti di SharePoint locali. Il processo di pubblicazione remota copia il file con *estensione wsp* nel server SharePoint, installa la soluzione e quindi consente di attivare la soluzione. È inoltre possibile aggiornare un'installazione remota di una soluzione SharePoint dopo che sono state apportate modifiche.
 
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>Per pubblicare una soluzione SharePoint in modalità sandbox in un server SharePoint remoto
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto SharePoint creato mediante sandbox che si desidera pubblicare, quindi scegliere **pubblica**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto SharePoint creato mediante sandbox che si desidera pubblicare, quindi scegliere **pubblica**.
 
 2. Nella finestra di dialogo **pubblica** scegliere il pulsante **di opzione pubblica nel sito di SharePoint** , quindi immettere un URL per un sito di pubblicazione online, ad esempio: `https://mytestsite.sharepoint.microsoftonline.com` .
 
@@ -38,7 +40,7 @@ ms.locfileid: "91585784"
 
 5. Accedere al server remoto se è necessaria l'autenticazione dell'utente.
 
-     Lo stato di avanzamento della pubblicazione viene visualizzato nella finestra di **output** di Visual Studio. Al termine del processo, il file di soluzione (con*estensione wsp*) viene installato nel server SharePoint remoto. Tuttavia, deve essere comunque attivato prima di poter essere utilizzato in SharePoint.
+     Lo stato di avanzamento della pubblicazione viene visualizzato nella finestra di **output** di Visual Studio. Al termine del processo, il file di soluzione (con *estensione wsp*) viene installato nel server SharePoint remoto. Tuttavia, deve essere comunque attivato prima di poter essere utilizzato in SharePoint.
 
 6. Nella pagina **raccolta soluzioni** selezionare l'applicazione SharePoint, quindi sulla barra multifunzione scegliere il pulsante **attiva** .
 
@@ -55,7 +57,7 @@ ms.locfileid: "91585784"
 
 3. Salvare il progetto.
 
-4. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto, quindi scegliere **pubblica**.
+4. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto, quindi scegliere **pubblica**.
 
 5. Nella finestra di dialogo **pubblica** scegliere il pulsante **di opzione pubblica nel sito di SharePoint** e quindi, se l'URL del server remoto in cui è salvata la soluzione non è presente, immetterlo.
 
@@ -75,7 +77,7 @@ ms.locfileid: "91585784"
 
      La versione precedente della soluzione è disattivata, la nuova versione della soluzione viene aggiornata con i dati conservati dalla soluzione precedente e la nuova soluzione viene attivata in SharePoint.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Procedura: distribuire e pubblicare una soluzione SharePoint in un sito di SharePoint locale](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
 - [Creare pacchetti della soluzione SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

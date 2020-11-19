@@ -1,5 +1,7 @@
 ---
 title: Elemento ProjectType (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento ProjectType e sul modo in cui Categorizza il modello di progetto in modo che venga visualizzato nella finestra di dialogo nuovo progetto o Aggiungi nuovo elemento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d794bd5e81e77a892b5a3be38ff73ab805582dd7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2bd457bfb639ff0def2662476e60c8736e14b3ce
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701799"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903819"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>Elemento ProjectType (modelli di Visual Studio)
 Categorizza il modello di progetto in modo che venga visualizzato sotto il gruppo specificato nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** .
@@ -38,7 +40,7 @@ Categorizza il modello di progetto in modo che venga visualizzato sotto il grupp
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
  Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -61,7 +63,7 @@ Categorizza il modello di progetto in modo che venga visualizzato sotto il grupp
 
 - `Web`: Specifica che il modello crea un progetto Web o un elemento. Se l' `ProjectType` elemento contiene questo valore, il linguaggio del progetto o dell'elemento viene definito nell' [elemento ProjectSubType (modelli di Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `ProjectType` è un elemento figlio obbligatorio di `TemplateData`.
 
  Il valore dell' `ProjectType` elemento specifica il punto in cui si trova il modello nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** . Ad esempio, un modello con un `ProjectType` valore di `CSharp` viene visualizzato sotto il nodo **Visual C#** nella finestra di dialogo **nuovo progetto** .

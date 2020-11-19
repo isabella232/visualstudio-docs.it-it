@@ -1,5 +1,7 @@
 ---
 title: "Procedura: definire un'istanza di metodo | Microsoft Docs"
+description: Informazioni su come definire un'istanza del metodo per un metodo nel modello di integrazione applicativa dei dati (Business Data Connectivity).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 170982a5d4abe33ca8cd705a979acc0737185a9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 751683873d98e6c7aedc7228e0a91fb59117993b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016835"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903624"
 ---
 # <a name="how-to-define-a-method-instance"></a>Procedura: definire un'istanza di metodo
   È necessario definire almeno un'istanza del metodo per ogni metodo nel modello.

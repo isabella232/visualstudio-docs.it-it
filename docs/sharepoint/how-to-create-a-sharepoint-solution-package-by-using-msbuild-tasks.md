@@ -1,5 +1,7 @@
 ---
 title: Creazione di un pacchetto della soluzione SharePoint tramite le attività MSBuild
+description: Informazioni su come creare, pulire e convalidare un pacchetto di soluzione SharePoint (con estensione wsp) utilizzando le attività MSBuild della riga di comando in un computer di sviluppo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c59a38e1153a57c1bd886121eeac244075045a42
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2979073414434d2b8f5be9d070b6b505c09ee14
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017010"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903728"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Procedura: creare un pacchetto della soluzione SharePoint tramite le attività MSBuild
-  È possibile compilare, pulire e convalidare un pacchetto di SharePoint (con*estensione wsp*) utilizzando le attività MSBuild della riga di comando in un computer di sviluppo. È inoltre possibile utilizzare questi comandi per automatizzare il processo di compilazione utilizzando Team Foundation Server in un computer di compilazione.
+  È possibile compilare, pulire e convalidare un pacchetto di SharePoint (con *estensione wsp*) utilizzando le attività MSBuild della riga di comando in un computer di sviluppo. È inoltre possibile utilizzare questi comandi per automatizzare il processo di compilazione utilizzando Team Foundation Server in un computer di compilazione.
 
 ## <a name="build-a-sharepoint-package"></a>Creazione di un pacchetto di SharePoint
 

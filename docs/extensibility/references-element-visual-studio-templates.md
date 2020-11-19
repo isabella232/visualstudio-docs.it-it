@@ -1,5 +1,7 @@
 ---
 title: Elemento References (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento References e sul modo in cui raggruppa i riferimenti agli assembly aggiunti dal modello ai progetti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef31c5e7550ec7c6e4570d156d364afcf4ad6819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2576a56bf223fd1b3a1ba4903595cc25144011ec
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701608"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903744"
 ---
 # <a name="references-element-visual-studio-templates"></a>Elemento References (modelli di Visual Studio)
 Raggruppa i riferimenti agli assembly aggiunti dal modello ai progetti.
@@ -55,7 +57,7 @@ Raggruppa i riferimenti agli assembly aggiunti dal modello ai progetti.
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Specifica il contenuto del modello.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `References` è un elemento figlio facoltativo di `TemplateContent`.
 
  Gli `Reference` `References` elementi e possono essere utilizzati solo nei file con *estensione vstemplate* il cui `Type` valore di attributo è `Item` .

@@ -1,5 +1,7 @@
 ---
 title: Elemento TargetPlatformName (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento TargetPlatformName e su come specifica la piattaforma di destinazione del modello di progetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db5e9d4f44af242e76bd446a25d3bbc533b56854
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b8f81ad86c98ab31e8f5d5dddf0efa1b2c89d85
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699271"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903988"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>Elemento TargetPlatformName (Modelli di Visual Studio)
 Specifica la piattaforma a cui è destinato il modello di progetto. Questo elemento viene usato per specificare per creare app di [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] viene usato un modello di progetto.
@@ -48,7 +50,7 @@ Specifica la piattaforma a cui è destinato il modello di progetto. Questo eleme
 ## <a name="text-value"></a>Valore di testo
  È necessario specificare un valore di testo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il testo deve essere **Windows**.
 
 ## <a name="example"></a>Esempio

@@ -1,5 +1,7 @@
 ---
 title: Elemento SupportsMasterPage (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento SupportsMasterPage e su come specifica se la casella di controllo Seleziona pagina master o meno è abilitata nella finestra di dialogo Aggiungi nuovo elemento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 384672303d00b72431820b98fa02d09e440a1de5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07230c3a9b76be8d78e22acaa83addd0fa21005a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699458"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903832"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>Elemento SupportsMasterPage (modelli di Visual Studio)
 Specifica se la casella di controllo **Seleziona pagina master** è abilitata o meno nella finestra di dialogo **Aggiungi nuovo elemento** .
@@ -53,7 +55,7 @@ Specifica se la casella di controllo **Seleziona pagina master** è abilitata o 
 
  Il testo deve essere `true` o `false` , che indica se la casella di controllo **Seleziona pagina master** è abilitata o meno nella finestra di dialogo **Aggiungi nuovo elemento** .
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `SupportsMasterPage` è un elemento facoltativo. Il valore predefinito è `false`.
 
  L' `SupportsMasterPage` elemento è disponibile solo per i modelli di elemento Web.

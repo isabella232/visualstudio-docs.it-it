@@ -1,5 +1,7 @@
 ---
 title: Elemento ShowByDefault (modelli di Visual Studio)
+description: Informazioni sull'elemento ShowByDefault e su come, quando è impostato su false, specifica che il modello verrà visualizzato solo nel TemplateGroupID specificato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 711cff06637957b796525543a02bfdd376e04284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b17a9a29b55721695509deed6b3d33cc7554aa9
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700103"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903975"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a>Elemento ShowByDefault (modelli di Visual Studio)
 Se `false` , specifica che il modello verrà visualizzato solo nel [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)specificato.
@@ -53,7 +55,7 @@ Se `false` , specifica che il modello verrà visualizzato solo nel [TemplateGrou
 
  Questo testo deve essere `true` o `false`. Se true, specifica che il modello verrà visualizzato per tutti i tipi di progetto. Se false, il modello verrà visualizzato solo nel `TemplateGroupID` specificato.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `ShowByDefault` è un elemento facoltativo. Il valore predefinito è `true`.
 
 ## <a name="example"></a>Esempio

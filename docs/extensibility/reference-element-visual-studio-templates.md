@@ -1,5 +1,7 @@
 ---
 title: Elemento Reference (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull'elemento Reference e sul modo in cui specifica il riferimento all'assembly da aggiungere quando l'elemento viene aggiunto a un progetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11d893f6268a69172d27a0f7caee707767abfe89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dcb713a62ebc9a0c3e4daf5aa16f36779b1a1fdc
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701618"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903767"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Elemento Reference (modelli di Visual Studio)
 Specifica il riferimento all'assembly da aggiungere quando l'elemento viene aggiunto a un progetto.
@@ -39,7 +41,7 @@ Specifica il riferimento all'assembly da aggiungere quando l'elemento viene aggi
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
  Nessuno.
 
 ### <a name="child-elements"></a>Elementi figlio
@@ -54,7 +56,7 @@ Specifica il riferimento all'assembly da aggiungere quando l'elemento viene aggi
 |-------------|-----------------|
 |[Riferimenti](../extensibility/references-element-visual-studio-templates.md)|Raggruppa i riferimenti agli assembly aggiunti dal modello ai progetti.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `Reference` è un elemento figlio obbligatorio di `References`.
 
  Gli `Reference` `References` elementi e possono essere utilizzati solo nei file con *estensione vstemplate* il cui `Type` valore di attributo è `Item` .

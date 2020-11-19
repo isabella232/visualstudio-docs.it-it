@@ -1,5 +1,7 @@
 ---
 title: Elemento ProjectTemplateLink (modelli di Visual Studio) | Microsoft Docs
+description: Informazioni sull' <element> elemento e su come specifica il percorso del file con estensione vstemplate di un progetto in un modello multiprogetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e87b33d9b4b3863b89ecd06c3ea959c6e35ec7c0
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 51098553d0b4b969b600f6e6e55cf62871cb44bf
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011983"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903845"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>Elemento ProjectTemplateLink (modelli di Visual Studio)
 Specifica il percorso del file con *estensione vstemplate* di un progetto in un modello multiprogetto.
@@ -44,7 +46,7 @@ o \<VSTemplate>
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -66,7 +68,7 @@ o \<VSTemplate>
 
  Questo testo specifica il percorso del file con *estensione vstemplate* del modello.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  I modelli multiprogetto fungono da contenitori per due o più progetti. L' `ProjectTemplateLink` elemento viene utilizzato per specificare il percorso del file con *estensione vstemplate* per uno dei progetti nel modello. Il file con *estensione vstemplate* di un modello per più progetti contiene un `ProjectTemplateLink` elemento per ogni progetto nel modello. Per altre informazioni sui modelli multiprogetto, vedere [procedura: creare modelli](../ide/how-to-create-multi-project-templates.md)per più progetti.
 
 ## <a name="example"></a>Esempio

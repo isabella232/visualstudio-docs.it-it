@@ -1,5 +1,7 @@
 ---
 title: Uso del codice C++ (Progettazione classi)
+description: Informazioni su come usare i diagrammi classi per progettare e visualizzare gli elementi di codice C++, le classi e altri tipi in un progetto.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54087a719b0079ba32ff08ff1e08ad01f5e64ed0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3509f625686f97156efe79f5e1b72aa991ce5ca
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596749"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903884"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>Usare il codice C++ in Progettazione classi
 

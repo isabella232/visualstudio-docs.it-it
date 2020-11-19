@@ -1,5 +1,7 @@
 ---
 title: Icone di Visualizzazione classi e Visualizzatore oggetti
+description: Informazioni sulle Visualizzazione classi e sulle icone di visualizzazione Visualizzatore oggetti che rappresentano le entità di codice, ad esempio spazi dei nomi, classi, funzioni e variabili.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bce70f83be2af80f93cf9888432257f6139732
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8c0cf21d6d9055f183d15728fb63118ffb87e9c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285146"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94904001"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icone di Visualizzazione classi e Visualizzatore oggetti
 
@@ -30,10 +32,10 @@ In **Visualizzazione classi** e **Visualizzatore oggetti** vengono visualizzate 
 |Icona|Descrizione|Icona|Descrizione|
 |----------|-----------------|----------|-----------------|
 |![Simbolo dello spazio dei nomi](../ide/media/vxnamespace_icon.gif)|Spazio dei nomi|![Simbolo Dichiarazione](../ide/media/vxmethod_icon.gif)|Metodo o funzione|
-|![Icona Classe](../ide/media/vxclass_icon.gif)|Classe|![Simbolo operatore](../ide/media/vxoperator_icon.gif)|Operatore|
+|![Icona Classe](../ide/media/vxclass_icon.gif)|Class|![Simbolo operatore](../ide/media/vxoperator_icon.gif)|Operatore|
 |![Simbolo interfaccia cerchio-linea](../ide/media/vxinterface_icon.gif)|Interfaccia|![Simbolo della proprietà](../ide/media/vxproperty_icon.gif)|Proprietà|
 |![Simbolo struttura](../ide/media/vxstruct_icon.gif)|Struttura|![Icona Campo](../ide/media/vxfield_icon.gif)|Campo o variabile|
-|![Simbolo unione](../ide/media/vxunion_icon.gif)|Union|![Simbolo Evento](../ide/media/vxevent_icon.gif)|Evento|
+|![Simbolo unione](../ide/media/vxunion_icon.gif)|Union|![Simbolo Evento](../ide/media/vxevent_icon.gif)|Event|
 |![Simbolo di enumerazione](../ide/media/vxenum_icon.gif)|Enumerazione|![Icona Costante](../ide/media/vxconstant_icon.gif)|Costante|
 |![Simbolo definizione dei tipi](../ide/media/vxtypedef_icon.gif)|TypeDef|![Simbolo di enumerazione elementi](../ide/media/vxenumitem_icon.gif)|Elemento di enumerazione|
 |![Simbolo dei moduli di Visual Studio](../ide/media/vxmodule_icon.gif)|Modulo|![Simbolo elemento mappa](../ide/media/vxmapitem_icon.gif)|Elemento mappa|

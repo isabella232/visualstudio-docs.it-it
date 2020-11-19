@@ -1,6 +1,8 @@
 ---
 title: 'Procedura: creare una Web part di SharePoint tramite una finestra di progettazione | Microsoft Docs'
 titleSuffix: ''
+description: Creare una Web part aggiungendo un elemento Web part visiva a un progetto SharePoint, che apre la finestra di progettazione di Visual Web Developer in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d19822237f61d5404f42e30078541a735eb206bc
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 09b237704a5b42f75c2239bd6d159e3d58e3025e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584113"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903715"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Procedura: creare una Web part di SharePoint tramite una finestra di progettazione
   È possibile creare una Web part aggiungendo un elemento **Web part visiva** a qualsiasi progetto SharePoint. Verrà visualizzata la finestra di progettazione di Visual Web Developer in Visual Studio, in cui è possibile aggiungere controlli e codice alla web part. Le web part visive funzionano in modo analogo alle web part. L'unica differenza è rappresentata dal fatto che si progettano Web part visive in Visual Web Developer Designer.
@@ -49,9 +51,9 @@ ms.locfileid: "91584113"
 
 3. Nell'elenco dei modelli di progetto scegliere **Web part visiva**, denominarlo, quindi scegliere il pulsante **Aggiungi** .
 
-     In **Esplora soluzioni**viene visualizzata la Web part. Dopo aver progettato la Web part in Visual Web Developer Designer, è possibile eseguirne il test nel sito specificato.
+     In **Esplora soluzioni** viene visualizzata la Web part. Dopo aver progettato la Web part in Visual Web Developer Designer, è possibile eseguirne il test nel sito specificato.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Creazione di Web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Procedura: creare una Web part di SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)
 - [Procedura dettagliata: creare una Web part per SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
