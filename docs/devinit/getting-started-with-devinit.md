@@ -1,7 +1,7 @@
 ---
 title: Introduzione con devinilt
 description: Guida introduttiva a devinit.
-ms.date: 08/28/2020
+ms.date: 11/18/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1f66f691bd92c6cc9d315c58225b9345198fe96d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d071a49c9996c9f7f161faf676117704fbcbbdcd
+ms.sourcegitcommit: 3b9a8aec34c7e835069f4db5c133dd002028180c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435766"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94937695"
 ---
 # <a name="getting-started-with-devinit"></a>Introduzione con devinilt
 
@@ -32,7 +32,9 @@ devinit è attualmente disponibile solo come parte degli spazi dei codebase di G
 
 Il passaggio più importante consiste nel definire l'ambiente di sviluppo in un [.devinit.jssu file](devinit-json.md). Questo file verrà usato da devinit per creare l'ambiente quando si esegue `devinit init` .
 
-Per questo passaggio, prendere in considerazione le istruzioni che si darebbe a qualcuno per iniziare a usare un repository di progetto. Ad esempio, è necessario che sia installato SQL? Una versione specifica di .NET Core? e così via. Quindi, per ognuna di queste dipendenze, cercare uno strumento di devinizzazione corrispondente nell' [elenco di strumenti](devinit-tool-list.md) e aggiungerlo al file del repository `.devinit.json` . È anche possibile visualizzare una selezione degli esempi nella documentazione degli [esempi](sample-readme.md).
+Per questo passaggio, prendere in considerazione le istruzioni che si darebbe a qualcuno per iniziare a usare un repository di progetto. Ad esempio, è necessario che sia installato SQL? Una versione specifica di .NET Core? e così via. Quindi, per ognuna di queste dipendenze, cercare uno strumento di devinizzazione corrispondente nell' [elenco di strumenti](devinit-tool-list.md) e aggiungerlo al file del repository `.devinit.json` .
+
+È anche possibile visualizzare una selezione degli esempi nella documentazione degli [esempi](sample-readme.md)oppure consultare l' [esercitazione](tutorial.md).
 
 ## <a name="step-3-enjoy"></a>Passaggio 3: divertirsi!
 
