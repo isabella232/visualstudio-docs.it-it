@@ -1,5 +1,7 @@
 ---
 title: Creazione di una pagina di opzioni | Microsoft Docs
+description: Informazioni su come creare una semplice pagina strumenti/opzioni che utilizza una griglia delle proprietà per esaminare e impostare le proprietà.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be826b73e28a73216ea88ceba8e23eb1e9ea457b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41102dfbbf1e49dadb1360ab0182810a47651dca
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903813"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973712"
 ---
 # <a name="create-an-options-page"></a>Creare una pagina di opzioni
 
@@ -37,7 +39,7 @@ In questa procedura dettagliata viene creata una semplice pagina strumenti/opzio
 
 1. Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX, che conterrà gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `MyToolsOptionsExtension` . È possibile trovare il modello di progetto VSIX nella finestra di dialogo **nuovo progetto** cercando "VSIX".
 
-2. Aggiungere un pacchetto VSPackage aggiungendo un modello di elemento del pacchetto di Visual Studio denominato `MyToolsOptionsPackage` . Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella **finestra di dialogo Aggiungi nuovo elemento**passare a **Visual C# elementi**  >  **estensibilità** e selezionare **pacchetto di Visual Studio**. Nel campo **nome** nella parte inferiore della finestra di dialogo modificare il nome del file in `MyToolsOptionsPackage.cs` . Per altre informazioni su come creare un pacchetto VSPackage, vedere [creare un'estensione con un pacchetto VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
+2. Aggiungere un pacchetto VSPackage aggiungendo un modello di elemento del pacchetto di Visual Studio denominato `MyToolsOptionsPackage` . Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella **finestra di dialogo Aggiungi nuovo elemento** passare a **Visual C# elementi**  >  **estensibilità** e selezionare **pacchetto di Visual Studio**. Nel campo **nome** nella parte inferiore della finestra di dialogo modificare il nome del file in `MyToolsOptionsPackage.cs` . Per altre informazioni su come creare un pacchetto VSPackage, vedere [creare un'estensione con un pacchetto VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).
 
 ### <a name="to-create-the-tools-options-property-grid"></a>Per creare la griglia delle proprietà Opzioni strumenti
 
@@ -97,9 +99,9 @@ In questa procedura dettagliata viene creata una semplice pagina strumenti/opzio
 
 6. Compilare il progetto e avviare il debug.
 
-7. Nell'istanza sperimentale di Visual Studio scegliere **Opzioni**dal menu **strumenti** .
+7. Nell'istanza sperimentale di Visual Studio scegliere **Opzioni** dal menu **strumenti** .
 
-     Nel riquadro sinistro dovrebbe essere visualizzata la **categoria**. (Le categorie di opzioni sono elencate in ordine alfabetico, quindi dovrebbero apparire a metà dell'elenco). Aprire **la categoria** e quindi fare clic sulla **pagina della griglia**. La griglia opzioni verrà visualizzata nel riquadro destro. La categoria proprietà è **My Options**e il nome della proprietà è l' **opzione Integer**. La descrizione della proprietà, l' **opzione Integer**, viene visualizzata nella parte inferiore del riquadro. Modificare il valore del valore iniziale 256 in un altro. Fare clic su **OK**e quindi riaprire **la pagina della griglia**. È possibile osservare che il nuovo valore è permanente.
+     Nel riquadro sinistro dovrebbe essere visualizzata la **categoria**. (Le categorie di opzioni sono elencate in ordine alfabetico, quindi dovrebbero apparire a metà dell'elenco). Aprire **la categoria** e quindi fare clic sulla **pagina della griglia**. La griglia opzioni verrà visualizzata nel riquadro destro. La categoria proprietà è **My Options** e il nome della proprietà è l' **opzione Integer**. La descrizione della proprietà, l' **opzione Integer**, viene visualizzata nella parte inferiore del riquadro. Modificare il valore del valore iniziale 256 in un altro. Fare clic su **OK** e quindi riaprire **la pagina della griglia**. È possibile osservare che il nuovo valore è permanente.
 
      La pagina Opzioni è disponibile anche tramite la casella di ricerca di Visual Studio. Nella casella di ricerca nella parte superiore dell'IDE digitare **My Category** (categoria). verrà visualizzata la **pagina Category-> My Grid** elencata nei risultati.
 
@@ -225,7 +227,7 @@ In questa procedura dettagliata viene creata una semplice pagina strumenti/opzio
 
 12. Trovare **la categoria** e quindi **la pagina personalizzata**.
 
-13. Modificare il valore di **OptionString**. Fare clic su **OK**e quindi riaprire **la pagina personalizzata**. È possibile osservare che il nuovo valore è stato reso permanente.
+13. Modificare il valore di **OptionString**. Fare clic su **OK** e quindi riaprire **la pagina personalizzata**. È possibile osservare che il nuovo valore è stato reso permanente.
 
 ## <a name="access-options"></a>Opzioni di accesso
 
@@ -262,7 +264,7 @@ In questa procedura dettagliata viene creata una semplice pagina strumenti/opzio
 
 4. Compilare il progetto e avviare il debug.
 
-5. Nell'istanza sperimentale, scegliere **richiama MyToolsOptionsCommand**dal menu **strumenti** .
+5. Nell'istanza sperimentale, scegliere **richiama MyToolsOptionsCommand** dal menu **strumenti** .
 
      In una finestra di messaggio viene visualizzato il valore corrente di `OptionInteger` .
 

@@ -1,5 +1,7 @@
 ---
 title: Elemento flag Command | Microsoft Docs
+description: L'elemento del flag di comando modifica il relativo elemento padre. Esaminare gli elementi padre e gli elementi figlio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84138a69dbb42fc349c12276fd7cca4b593e4d47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15dbf960aebc543b71ff282e525476583bdeba3d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649373"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974189"
 ---
 # <a name="command-flag-eelement"></a>Flag di comando Eelement
 Modifica il relativo elemento padre.
@@ -30,12 +32,12 @@ Modifica il relativo elemento padre.
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nella sezione seguente vengono descritti i valori degli elementi validi.
 
-### <a name="attributes"></a>Attributes
- Nessuno.
+### <a name="attributes"></a>Attributi
+ No.
 
 ### <a name="child-elements"></a>Elementi figlio
 
-|Valore|Descrizione|
+|Valore|Description|
 |-----------|-----------------|
 |AllowParams|Indica che gli utenti possono immettere i parametri del comando nella finestra di **comando** quando digitano il nome canonico del comando.<br /><br /> Valido per: `Button`|
 |AlwaysCreate|Il menu viene creato anche se non contiene gruppi o pulsanti.<br /><br /> Valido per: `Menu`|

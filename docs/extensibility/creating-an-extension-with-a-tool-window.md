@@ -1,5 +1,7 @@
 ---
 title: Creazione di un'estensione con una finestra degli strumenti | Microsoft Docs
+description: Informazioni su come usare il modello di progetto VSIX e il modello di elemento della finestra degli strumenti personalizzata per creare un'estensione con una finestra degli strumenti.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 597b84854dd398abee9dc21090e085273bc94c75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf2bcbce3c97830663b43a94191d84d81418b423
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903894"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973932"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>Creare un'estensione con una finestra degli strumenti
 
@@ -27,7 +29,7 @@ Questa procedura illustra come usare il modello di progetto VSIX e il modello di
 
 1. Creare un progetto VSIX denominato **FirstWindow**. È possibile trovare il modello di progetto VSIX nella finestra di dialogo **nuovo progetto** cercando "VSIX".
 
-2. Quando si apre il progetto, aggiungere un modello di elemento della finestra degli strumenti denominato **finestra**. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a estensibilità di **Visual C#**  >  **Extensibility** e selezionare **finestra degli strumenti personalizzata**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file della finestra degli strumenti in *myWindow.cs*.
+2. Quando si apre il progetto, aggiungere un modello di elemento della finestra degli strumenti denominato **finestra**. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a estensibilità di **Visual C#**  >  **Extensibility** e selezionare **finestra degli strumenti personalizzata**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file della finestra degli strumenti in *myWindow.cs*.
 
 3. Compilare il progetto e avviare il debug.
 

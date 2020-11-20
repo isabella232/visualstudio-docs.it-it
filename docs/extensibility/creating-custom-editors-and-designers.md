@@ -1,5 +1,7 @@
 ---
 title: Creazione di editor e finestre di progettazione personalizzati | Microsoft Docs
+description: "Informazioni sui diversi tipi di editor che possono essere ospitati dall'IDE di Visual Studio: editor principale, editor personalizzati, editor esterni e finestre di progettazione."
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9177e6f431eb24a337822dd7de0a0b9586e1de0e
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 9dd2d3923776cc0666a3efd12a32fc9e4e8735a0
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414256"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973616"
 ---
 # <a name="create-custom-editors-and-designers"></a>Creazione di editor e finestre di progettazione personalizzati
 

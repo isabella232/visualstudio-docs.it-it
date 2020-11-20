@@ -1,5 +1,7 @@
 ---
 title: Creazione di una pagina iniziale personalizzata | Microsoft Docs
+description: Informazioni su come creare una pagina iniziale personalizzata. Iniziare con una pagina iniziale vuota, aggiungere i controlli all'elemento UserControl vuoto e quindi testare la pagina.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: ed35948158866b7d0bbb2e458c8f8bc2f7b3f844
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7e4c9690e573d2807eb3ad9d842921ee08417d8
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903677"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974558"
 ---
 # <a name="creating-a-custom-start-page"></a>Creazione di una pagina iniziale personalizzata
 
@@ -75,7 +77,7 @@ Non impostare l'istanza primaria di Visual Studio in modo che esegua la pagina i
 
 3. Al prompt dei comandi di Visual Studio digitare **devenv/rootsuffix exp** per aprire un'istanza sperimentale di Visual Studio.
 
-4. Nell'istanza sperimentale, passare alla **Tools**  >  pagina di avvio dell'ambiente strumenti**Opzioni**  >  **Environment**  >  **Startup** e selezionare il file XAML dall'elenco a discesa **Personalizza pagina iniziale** .
+4. Nell'istanza sperimentale, passare alla **Tools**  >  pagina di avvio dell'ambiente strumenti **Opzioni**  >  **Environment**  >  **Startup** e selezionare il file XAML dall'elenco a discesa **Personalizza pagina iniziale** .
 
 5. Scegliere **Pagina iniziale** dal menu **Visualizza**.
 

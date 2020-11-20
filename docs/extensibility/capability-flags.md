@@ -1,5 +1,7 @@
 ---
 title: Flag funzionalità | Microsoft Docs
+description: Informazioni sui flag di SCC_CAP_xxx che indicano le funzionalità di un plug-in del controllo del codice sorgente e i flag di SCC_EXCAP_xxx che indicano le funzionalità estese.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9660cbe5a18e82974858fa4d923a38fc73e773f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b80672b00bec95c740824ef7e29f1faba0e63cf4
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739863"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974445"
 ---
 # <a name="capability-flags"></a>Flag funzionalità
-I flag di SCC_CAP_*xxx* sono flag di bit utilizzati per indicare le funzionalità di un plug-in del controllo del codice sorgente. I flag SCC_EXCAP_*xxx* sono flag incrementali che indicano le funzionalità estese e vengono risolti in valori integer.
+I flag di SCC_CAP_ *xxx* sono flag di bit utilizzati per indicare le funzionalità di un plug-in del controllo del codice sorgente. I flag SCC_EXCAP_ *xxx* sono flag incrementali che indicano le funzionalità estese e vengono risolti in valori integer.
 
-|Codice funzionalità|Valore|Descrizione|
+|Codice funzionalità|Valore|Description|
 |---------------------|-----------|-----------------|
 |`SCC_CAP_REMOVE`|0x00000001L|Supporta [SccRemove](../extensibility/sccremove-function.md) e Command.|
 |`SCC_CAP_RENAME`|0x00000002L|Supporta [SccRename](../extensibility/sccrename-function.md) e Command.|
@@ -50,7 +52,7 @@ I flag di SCC_CAP_*xxx* sono flag di bit utilizzati per indicare le funzionalit�
 
 ## <a name="capability-bits-added-in-version-12"></a>Bit funzionalità aggiunti nella versione 1,2
 
-|Codice funzionalità|Valore|Descrizione|
+|Codice funzionalità|Valore|Description|
 |---------------------|-----------|-----------------|
 |`SCC_CAP_CREATESUBPROJECT`|0x00010000L|Supporta [SccCreateSubProject](../extensibility/scccreatesubproject-function.md).|
 |`SCC_CAP_GETPARENTPROJECT`|0x00020000L|Supporta [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).|

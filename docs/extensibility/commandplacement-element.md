@@ -1,5 +1,7 @@
 ---
 title: Elemento CommandPlacement | Microsoft Docs
+description: L'elemento CommandPlacement consente di includere pulsanti, gruppi e menu in più di un gruppo o menu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcf9f23b5e860b895baa4c2a7a783f2ee15fcc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2828a32ea837e95be438aafa6ec4b31293a43a7
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739739"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974068"
 ---
 # <a name="commandplacement-element"></a>Elemento CommandPlacement
 L'elemento CommandPlacement consente di includere pulsanti, gruppi e menu in più di un gruppo o menu. Utilizzando l'elemento CommandPlacement, non è necessario ridefinire completamente questi elementi per modificare l'aspetto di un'interfaccia utente.
@@ -34,20 +36,20 @@ L'elemento CommandPlacement consente di includere pulsanti, gruppi e menu in pi�
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
 |guid|Obbligatorio. GUID del set di comandi, come definito nell' [elemento symbols](../extensibility/symbols-element.md).|
 |id|Obbligatorio. ID del menu, del gruppo o del comando da inserire, come definito in `Symbols Element` .|
 |priority|Obbligatorio. Determina la posizione visiva dell'elemento nel relativo elemento padre.|
-|Condizione|facoltativo. Vedere [Aattributes condizionale](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|Facoltativo. Vedere [Aattributes condizionale](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|Parent|Obbligatorio. Menu o gruppo che ospita l'elemento da inserire.|
+|Padre|Obbligatorio. Menu o gruppo che ospita l'elemento da inserire.|
 
 ### <a name="parent-elements"></a>Elementi padre
 

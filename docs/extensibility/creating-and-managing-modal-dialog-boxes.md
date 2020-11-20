@@ -1,5 +1,7 @@
 ---
 title: Creazione e gestione di finestre di dialogo modali | Microsoft Docs
+description: Informazioni su come creare una finestra di dialogo modale in Visual Studio, usando DialogWindow e senza usare DialogWindow.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2f4f296bb155bcde82235d962ae63c8fa4d41d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c95f03ee71a827380539404a90cd79d50232e488
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903772"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973620"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Creare e gestire finestre di dialogo modali
 Quando si crea una finestra di dialogo modale in Visual Studio, è necessario assicurarsi che la finestra padre della finestra di dialogo sia disabilitata mentre viene visualizzata la finestra di dialogo, quindi abilitare nuovamente la finestra padre dopo la chiusura della finestra di dialogo. In caso contrario, è possibile che venga visualizzato l'errore: *Impossibile arrestare Microsoft Visual Studio perché è attiva una finestra di dialogo modale. Chiudere la finestra di dialogo attiva e riprovare.*
@@ -38,7 +40,7 @@ Se la finestra di dialogo non è WPF o per qualche altro motivo non è possibile
 
     - *System.Xaml*
 
-3. In *OpenDialog.cs*aggiungere l'istruzione seguente `using` :
+3. In *OpenDialog.cs* aggiungere l'istruzione seguente `using` :
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;

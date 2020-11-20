@@ -1,5 +1,7 @@
 ---
 title: Creazione di un sistema di progetto di base, parte 1 | Microsoft Docs
+description: Informazioni su come creare un tipo di progetto denominato Extension. PROG. In Visual Studio i progetti sono contenitori usati per organizzare i file del codice sorgente e altri asset.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e95f760712f46632120540091b9f8f408aad9da4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c202aa9e76f568db9394625485282345ea3222c1
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903423"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974538"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Creazione di un sistema di progetto di base, parte 1
 In Visual Studio i progetti sono i contenitori usati dagli sviluppatori per organizzare i file del codice sorgente e altri asset. I progetti vengono visualizzati come elementi figlio di soluzioni nel **Esplora soluzioni**. I progetti consentono di organizzare, compilare, eseguire il debug e distribuire codice sorgente e creare riferimenti a servizi Web, database e altre risorse.
@@ -61,14 +63,14 @@ In Visual Studio i progetti sono i contenitori usati dagli sviluppatori per orga
  È inoltre necessario scaricare il codice sorgente per il [Framework di pacchetto gestito per i progetti](https://github.com/tunnelvisionlabs/MPFProj10). Estrarre il file in un percorso accessibile alla soluzione che si vuole creare.
 
 ## <a name="create-a-basic-project-type"></a>Creare un tipo di progetto di base
- Creare un progetto VSIX C# denominato **SimpleProject**. (**File**  >  **Nuovo**  >  **Progetto e** quindi **Visual C#**  >  **Extensibility**  >  **progetto VSIX**). Aggiungere un modello di elemento di progetto di pacchetto di Visual Studio (nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**, quindi passare a **estendibilità**  >  **Visual Studio Package**). Denominare il file *SimpleProjectPackage*.
+ Creare un progetto VSIX C# denominato **SimpleProject**. (**File**  >  **Nuovo**  >  **Progetto e** quindi **Visual C#**  >  **Extensibility**  >  **progetto VSIX**). Aggiungere un modello di elemento di progetto di pacchetto di Visual Studio (nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**, quindi passare a **estendibilità**  >  **Visual Studio Package**). Denominare il file *SimpleProjectPackage*.
 
 ## <a name="creating-a-basic-project-template"></a>Creazione di un modello di progetto di base
  A questo punto, è possibile modificare questo pacchetto VSPackage di base per implementare il nuovo tipo di progetto *. PROG* . Per creare un progetto basato sul tipo di progetto *. PROG* , è necessario che Visual Studio conosca i file, le risorse e i riferimenti da aggiungere al nuovo progetto. Per fornire queste informazioni, inserire i file di progetto in una cartella del modello di progetto. Quando un utente usa il progetto *. PROG* per creare un progetto, i file vengono copiati nel nuovo progetto.
 
 ### <a name="to-create-a-basic-project-template"></a>Per creare un modello di progetto di base
 
-1. Aggiungere tre cartelle al progetto, una sotto l'altra: *Templates\Projects\SimpleProject*. (In **Esplora soluzioni**, fare clic con il pulsante destro del mouse sul nodo del progetto **SimpleProject** , scegliere **Aggiungi**, quindi fare clic su **nuova cartella**. Assegnare un nome ai *modelli*di cartella. Nella cartella *templates* aggiungere una cartella denominata *Projects*. Nella cartella *progetti* aggiungere una cartella denominata *SimpleProject*.
+1. Aggiungere tre cartelle al progetto, una sotto l'altra: *Templates\Projects\SimpleProject*. (In **Esplora soluzioni**, fare clic con il pulsante destro del mouse sul nodo del progetto **SimpleProject** , scegliere **Aggiungi**, quindi fare clic su **nuova cartella**. Assegnare un nome ai *modelli* di cartella. Nella cartella *templates* aggiungere una cartella denominata *Projects*. Nella cartella *progetti* aggiungere una cartella denominata *SimpleProject*.
 
 2. Nella cartella *Templates\Projects\SimpleProject* aggiungere un file di immagine bitmap da usare come icona denominata *SimpleProject. ico*. Quando si fa clic su **Aggiungi**, viene aperto l'editor di icone.
 
@@ -154,11 +156,11 @@ In Visual Studio i progetti sono i contenitori usati dagli sviluppatori per orga
 
 11. Salvare il file.
 
-12. Nella finestra **Proprietà** impostare l'azione di **compilazione** *AssemblyInfo.cs*, *Program.cs*, *SimpleProject. ico*e *SimpleProject. PROG* sul **contenuto**e impostare le proprietà **Includi in VSIX** su **true**.
+12. Nella finestra **Proprietà** impostare l'azione di **compilazione** *AssemblyInfo.cs*, *Program.cs*, *SimpleProject. ico* e *SimpleProject. PROG* sul **contenuto** e impostare le proprietà **Includi in VSIX** su **true**.
 
     Questo modello di progetto descrive un progetto di base di Visual C# che include una configurazione di debug e una configurazione di rilascio. Il progetto include due file di origine, *AssemblyInfo.cs* e *Program.cs*, e diversi riferimenti ad assembly. Quando viene creato un progetto dal modello, il valore ProjectGuid viene sostituito automaticamente da un nuovo GUID.
 
-    In **Esplora soluzioni**la cartella **modelli** espansa dovrebbe apparire come segue:
+    In **Esplora soluzioni** la cartella **modelli** espansa dovrebbe apparire come segue:
 
 ```
 Templates
@@ -210,7 +212,7 @@ Templates
 
 ### <a name="to-register-the-project-template"></a>Per registrare il modello di progetto
 
-1. In *SimpleProjectPackage.cs*aggiungere un <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attributo alla `SimpleProjectPackage` classe, come indicato di seguito.
+1. In *SimpleProjectPackage.cs* aggiungere un <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attributo alla `SimpleProjectPackage` classe, come indicato di seguito.
 
    ```csharp
    [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",
@@ -242,7 +244,7 @@ Templates
 
 - Importare i file del codice sorgente per il Framework di pacchetto gestito.
 
-    1. Scaricare il progetto SimpleProject (in **Esplora soluzioni**, selezionare il nodo del progetto e scegliere **Scarica progetto**dal menu di scelta rapida e aprire il file di progetto nell'editor XML.
+    1. Scaricare il progetto SimpleProject (in **Esplora soluzioni**, selezionare il nodo del progetto e scegliere **Scarica progetto** dal menu di scelta rapida e aprire il file di progetto nell'editor XML.
 
     2. Aggiungere i blocchi seguenti al file di progetto (appena sopra i \<Import> blocchi). Impostare sul `ProjectBasePath` percorso del file *ProjectBase. files* nel codice del Framework del pacchetto gestito appena scaricato. Potrebbe essere necessario aggiungere una barra rovesciata al percorso. In caso contrario, il progetto potrebbe non riuscire a trovare il codice sorgente del Framework del pacchetto gestito.
 
@@ -261,7 +263,7 @@ Templates
 
     4. Aggiungere riferimenti agli assembly riportati di seguito:
 
-        - `Microsoft.VisualStudio.Designer.Interfaces`(in * \<VSSDK install> \VisualStudioIntegration\Common\Assemblies\v2.0*)
+        - `Microsoft.VisualStudio.Designer.Interfaces`(in *\<VSSDK install> \VisualStudioIntegration\Common\Assemblies\v2.0*)
 
         - `WindowsBase`
 
@@ -297,7 +299,7 @@ Templates
     }
     ```
 
-5. In *SimpleProjectFactory.cs*aggiungere la direttiva seguente `using` dopo le `using` direttive esistenti.
+5. In *SimpleProjectFactory.cs* aggiungere la direttiva seguente `using` dopo le `using` direttive esistenti.
 
     ```csharp
     using Microsoft.VisualStudio.Project;
@@ -460,7 +462,7 @@ Templates
 
 3. Nella finestra **Proprietà** modificare l'azione di **compilazione** della bitmap in **risorsa incorporata**.
 
-4. In *SimpleProjectNode.cs*aggiungere le `using` direttive seguenti:
+4. In *SimpleProjectNode.cs* aggiungere le `using` direttive seguenti:
 
    ```csharp
    using System.Drawing;

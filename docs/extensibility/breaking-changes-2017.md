@@ -1,5 +1,7 @@
 ---
 title: Modifiche di rilievo nell'estensibilità di Visual Studio 2017
+description: Informazioni sui dettagli tecnici sulle modifiche di rilievo apportate al modello di estendibilità in Visual Studio 2017 e sulle operazioni che è possibile eseguire per risolverli.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/09/2016
 ms.topic: conceptual
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d872003b319773401ef4da72c1fac8dc177ecbdb
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 3121189b1d73543d2a01bbf0b149c6a98eab6909
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011788"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973751"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Modifiche all'estendibilità di Visual Studio 2017
 
@@ -98,7 +100,7 @@ La maggior parte degli assembly principali di Visual Studio non vengono più ins
 ### <a name="global-com-registration"></a>Registrazione COM globale
 
 * In precedenza, Visual Studio ha installato molte chiavi del registro di sistema nel HKEY_CLASSES_ROOT e HKEY_LOCAL_MACHINE hive per supportare la registrazione COM nativa. Per eliminare questo impatto, Visual Studio USA ora l' [attivazione senza registrazione per i componenti com](/previous-versions/dotnet/articles/ms973913(v=msdn.10)).
-* Di conseguenza, la maggior parte dei file TLB/OLB/DLL in% ProgramFiles (x86)% \ Common Files\Microsoft Shared\MSEnv non vengono più installati per impostazione predefinita da Visual Studio. Questi file sono ora installati in [INSTALLDIR] con i manifesti COM corrispondenti senza registrazione usati dal processo host di Visual Studio.
+* Di conseguenza, la maggior parte dei file TLB/OLB/DLL in% ProgramFiles (x86)% \ Common Files\Microsoft Shared\MSEnv non vengono più installati per impostazione predefinita da Visual Studio. Questi file sono ora installati in [INSTALLDIR] con i manifesti Registration-Free COM corrispondenti utilizzati dal processo host di Visual Studio.
 * Di conseguenza, il codice esterno che si basa sulla registrazione COM globale per le interfacce COM di Visual Studio non troverà più tali registrazioni. Il codice in esecuzione all'interno del processo di Visual Studio non vedrà una differenza.
 
 ### <a name="visual-studio-registry"></a>Registro di sistema di Visual Studio
@@ -115,7 +117,7 @@ La maggior parte degli assembly principali di Visual Studio non vengono più ins
 
 ### <a name="react-to-this-breaking-change"></a>Rispondi a questa modifica di rilievo
 
-* Il codice esterno deve essere convertito in modo da usare anche l'attivazione senza registrazione per i componenti COM.
+* Il codice esterno deve essere convertito in modo da usare Registration-Free attivazione anche per i componenti COM.
 * I componenti esterni possono trovare il percorso di Visual Studio [seguendo le istruzioni](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup)riportate qui.
 * È consigliabile che i componenti esterni usino [Gestione impostazioni esterne](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) anziché leggere/scrivere direttamente nelle chiavi del registro di sistema di Visual Studio.
 * Controllare se i componenti utilizzati dall'estensione potrebbero avere implementato un'altra tecnica per la registrazione. Ad esempio, le estensioni del debugger possono essere in grado di sfruttare i vantaggi della nuova [registrazione com msvsmon file JSON](migrate-debugger-COM-registration.md).

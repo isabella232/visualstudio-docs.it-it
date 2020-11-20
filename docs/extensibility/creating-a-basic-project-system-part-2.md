@@ -1,5 +1,7 @@
 ---
 title: Creazione di un sistema di progetto di base, parte 2 | Microsoft Docs
+description: Informazioni su come aggiungere un modello di Visual Studio, una pagina delle proprietà e altre funzionalità a un progetto creato in un articolo precedente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9d5ce673e0ee44e888905239c12251241015ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 564d975a60c54a074d830742eb0ab6133fdbfe4e
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903827"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974616"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Creazione di un sistema di progetto di base, parte 2
 La prima procedura dettagliata della serie, [creazione di un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), Mostra come creare un sistema di progetto di base. Questa procedura dettagliata si basa sul sistema di progetto di base aggiungendo un modello di Visual Studio, una pagina delle proprietà e altre funzionalità. Prima di iniziare, è necessario completare la prima procedura dettagliata.
@@ -40,9 +42,9 @@ Questa procedura dettagliata illustra come eseguire queste attività:
 > I passaggi descritti in questa procedura dettagliata sono basati su un progetto C#. Tuttavia, ad eccezione delle specifiche, ad esempio le estensioni di file e il codice, è possibile usare la stessa procedura per un progetto Visual Basic.
 
 ## <a name="create-a-visual-studio-template"></a>Creare un modello di Visual Studio
-- [Creazione di un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) Mostra come creare un modello di progetto di base e aggiungerlo al sistema del progetto. Illustra anche come registrare questo modello con Visual Studio usando l' <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attributo, che scrive il percorso completo della cartella * \\ Templates\Projects\SimpleProject \\ * nel registro di sistema.
+- [Creazione di un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) Mostra come creare un modello di progetto di base e aggiungerlo al sistema del progetto. Illustra anche come registrare questo modello con Visual Studio usando l' <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attributo, che scrive il percorso completo della cartella *\\ Templates\Projects\SimpleProject \\* nel registro di sistema.
 
-Usando un modello di Visual Studio (file con*estensione vstemplate* ) invece di un modello di progetto di base, è possibile controllare il modo in cui il modello viene visualizzato nella finestra di dialogo **nuovo progetto** e come sostituire i parametri del modello. Un file con *estensione vstemplate* è un file XML che descrive il modo in cui i file di origine devono essere inclusi quando un progetto viene creato usando il modello di sistema del progetto. Il sistema del progetto stesso viene compilato raccogliendo il file con estensione *vstemplate* e i file di origine in un file con *estensione zip* e distribuiti copiando il file *zip* in un percorso noto a Visual Studio. Questo processo viene illustrato in modo più dettagliato più avanti in questa procedura dettagliata.
+Usando un modello di Visual Studio (file con *estensione vstemplate* ) invece di un modello di progetto di base, è possibile controllare il modo in cui il modello viene visualizzato nella finestra di dialogo **nuovo progetto** e come sostituire i parametri del modello. Un file con *estensione vstemplate* è un file XML che descrive il modo in cui i file di origine devono essere inclusi quando un progetto viene creato usando il modello di sistema del progetto. Il sistema del progetto stesso viene compilato raccogliendo il file con estensione *vstemplate* e i file di origine in un file con *estensione zip* e distribuiti copiando il file *zip* in un percorso noto a Visual Studio. Questo processo viene illustrato in modo più dettagliato più avanti in questa procedura dettagliata.
 
 1. In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] aprire la soluzione SimpleProject creata seguendo la procedura [creare un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md).
 
@@ -55,7 +57,7 @@ Usando un modello di Visual Studio (file con*estensione vstemplate* ) invece di 
     LanguageVsTemplate = "SimpleProject")]
     ```
 
-3. Aggiungere un file XML denominato *SimpleProject. vstemplate* alla cartella * \\ Templates\Projects\SimpleProject \\ * .
+3. Aggiungere un file XML denominato *SimpleProject. vstemplate* alla cartella *\\ Templates\Projects\SimpleProject \\* .
 
 4. Sostituire il contenuto di *SimpleProject. vstemplate* con il codice seguente.
 
@@ -83,7 +85,7 @@ Usando un modello di Visual Studio (file con*estensione vstemplate* ) invece di 
     </VSTemplate>
     ```
 
-5. Nella finestra **Proprietà** selezionare tutti e cinque i file nella cartella * \\ Templates\Projects\SimpleProject \\ * e impostare l' **azione di compilazione** su **ZipProject**.
+5. Nella finestra **Proprietà** selezionare tutti e cinque i file nella cartella *\\ Templates\Projects\SimpleProject \\* e impostare l' **azione di compilazione** su **ZipProject**.
 
     ![Cartella di progetto semplice](../extensibility/media/simpproj2.png "SimpProj2")
 
@@ -207,9 +209,9 @@ I nodi figlio vengono creati modificando il file di progetto e aggiungendo \<Out
 
 In questa sezione viene illustrato come creare un nodo figlio console per il tipo di progetto SimpleProject.
 
-1. Rinominare la cartella * \\ Templates\Projects\SimpleProject \\ * in * \\ Templates\Projects\ConsoleApp \\ *.
+1. Rinominare la cartella *\\ Templates\Projects\SimpleProject \\* in *\\ Templates\Projects\ConsoleApp \\*.
 
-2. Nella finestra **Proprietà** selezionare tutti e cinque i file nella cartella * \\ Templates\Projects\ConsoleApp \\ * e assicurarsi che l' **azione di compilazione** sia impostata su **ZipProject**.
+2. Nella finestra **Proprietà** selezionare tutti e cinque i file nella cartella *\\ Templates\Projects\ConsoleApp \\* e assicurarsi che l' **azione di compilazione** sia impostata su **ZipProject**.
 
 3. Nel file SimpleProject. vstemplate aggiungere la riga seguente alla fine della \<TemplateData> sezione, immediatamente prima del tag di chiusura.
 
@@ -285,13 +287,13 @@ Quando si crea un progetto usando un modello di Visual Studio nella finestra di 
 
 1. Nel file *SimpleProjectNode.cs* rimuovere il `AddFileFromTemplate` metodo.
 
-2. Nel file * \\ Templates\Projects\ConsoleApp\SimpleProject.MyProj* individuare la \<RootNamespace> proprietà e modificarne il valore in $safeprojectname $.
+2. Nel file *\\ Templates\Projects\ConsoleApp\SimpleProject.MyProj* individuare la \<RootNamespace> proprietà e modificarne il valore in $safeprojectname $.
 
     ```
     <RootNamespace>$safeprojectname$</RootNamespace>
     ```
 
-3. Nel file * \\ Templates\Projects\SimpleProject\Program.cs* sostituire il contenuto del file con il codice seguente:
+3. Nel file *\\ Templates\Projects\SimpleProject\Program.cs* sostituire il contenuto del file con il codice seguente:
 
     ```
     using System;
@@ -315,7 +317,7 @@ Quando si crea un progetto usando un modello di Visual Studio nella finestra di 
 
 4. Ricompilare il progetto SimpleProject e avviare il debug. Verrà visualizzata l'istanza sperimentale.
 
-5. Creare una nuova applicazione console SimpleProject. Nel riquadro **Tipi progetto** selezionare **SimpleProject**. In **modelli Visual Studio installati**selezionare **applicazione console**.
+5. Creare una nuova applicazione console SimpleProject. Nel riquadro **Tipi progetto** selezionare **SimpleProject**. In **modelli Visual Studio installati** selezionare **applicazione console**.
 
 6. Nel progetto appena creato aprire *Program.cs*. Il risultato dovrebbe essere simile al seguente (i valori GUID nel file saranno diversi):
 

@@ -1,5 +1,7 @@
 ---
 title: Elemento bitmaps | Microsoft Docs
+description: L'elemento bitmap raggruppa uno o più elementi bitmap. Questo articolo contiene un esempio dell'elemento bitmap.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85310923134a6db59f1b6a3a15ac4b96a127e239
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd3222e24c6e90380ec9c5836bed583ba95eaa68
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739982"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974576"
 ---
 # <a name="bitmaps-element"></a>Bitmaps (elemento)
 Raggruppa gli elementi [bitmap dell'elemento](../extensibility/bitmap-element.md) .
@@ -33,11 +35,11 @@ Raggruppa gli elementi [bitmap dell'elemento](../extensibility/bitmap-element.md
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 

@@ -1,5 +1,7 @@
 ---
 title: Creazione di una categoria di impostazioni | Microsoft Docs
+description: Informazioni su come creare una categoria di impostazioni di Visual Studio e usarla per salvare e ripristinare i valori da un file di impostazioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d50ca998efa034b1d4392c1fb7cecb8de8ed06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 468b1a44fb4754f86b31992e2c6d96bf6380592d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904024"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974542"
 ---
 # <a name="create-a-settings-category"></a>Crea una categoria di impostazioni
 
@@ -48,18 +50,18 @@ Per iniziare questa procedura dettagliata, è necessario completare prima la pri
     > [!NOTE]
     > Di questi tre, solo il nome della categoria non viene visualizzato nell' **importazione/esportazione guidata delle impostazioni** .
 
-3. In *MyToolsOptionsPackage.cs*aggiungere una `float` proprietà denominata `OptionFloat` alla `OptionPageGrid` classe, come illustrato nell'esempio seguente.
+3. In *MyToolsOptionsPackage.cs* aggiungere una `float` proprietà denominata `OptionFloat` alla `OptionPageGrid` classe, come illustrato nell'esempio seguente.
 
     ```csharp
-    public class OptionPageGrid : DialogPage
+    public class OptionPageGrid : DialogPage
     {
-        private int optionInt = 256;
-        private float optionFloat = 3.14F;
+        private int optionInt = 256;
+        private float optionFloat = 3.14F;
 
         [Category("My Options")]
         [DisplayName("My Integer option")]
         [Description("My integer option")]
-        public int OptionInteger
+        public int OptionInteger
         {
             get { return optionInt; }
             set { optionInt = value; }
@@ -67,7 +69,7 @@ Per iniziare questa procedura dettagliata, è necessario completare prima la pri
         [Category("My Options")]
         [DisplayName("My Float option")]
         [Description("My float option")]
-        public float OptionFloat
+        public float OptionFloat
         {
             get { return optionFloat; }
             set { optionFloat = value; }
@@ -92,7 +94,7 @@ Per iniziare questa procedura dettagliata, è necessario completare prima la pri
 
 1. Avviare il progetto in modalità di debug premendo **F5**. Viene avviata l'istanza sperimentale.
 
-2. Aprire la **Tools**  >  finestra di dialogo**Opzioni** strumenti.
+2. Aprire la **Tools**  >  finestra di dialogo **Opzioni** strumenti.
 
 3. Nella visualizzazione albero nel riquadro sinistro espandere la **categoria** e quindi fare clic sulla **pagina della griglia**.
 
@@ -118,7 +120,7 @@ Per iniziare questa procedura dettagliata, è necessario completare prima la pri
 
      Nella pagina **esportazione completata** viene segnalato che le impostazioni sono state esportate correttamente.
 
-10. Scegliere **Apri** dal menu **File**e quindi fare clic su **File**. Individuare *impostazioni. vssettings* e aprirlo.
+10. Scegliere **Apri** dal menu **File** e quindi fare clic su **File**. Individuare *impostazioni. vssettings* e aprirlo.
 
      È possibile trovare la categoria di proprietà esportata nella sezione seguente del file (i GUID sono diversi).
 
@@ -137,7 +139,7 @@ Per iniziare questa procedura dettagliata, è necessario completare prima la pri
 
 11. Chiudere il file di impostazioni senza modificarlo.
 
-12. Scegliere **Opzioni**dal menu **strumenti** , espandere **categoria**, fare clic sulla **pagina della griglia** e quindi modificare il valore di **optionFloat** su 1,0 e **OptionInteger** su 1. Fare clic su **OK**.
+12. Scegliere **Opzioni** dal menu **strumenti** , espandere **categoria**, fare clic sulla **pagina della griglia** e quindi modificare il valore di **optionFloat** su 1,0 e **OptionInteger** su 1. Fare clic su **OK**.
 
 13. Nel menu **strumenti** fare clic su **Importa/Esporta impostazioni**, selezionare **Importa le impostazioni di ambiente selezionate**, quindi fare clic su **Avanti**.
 
@@ -153,4 +155,4 @@ Per iniziare questa procedura dettagliata, è necessario completare prima la pri
 
 16. Assicurarsi che sia selezionata l'opzione **impostazioni personali** , quindi fare clic su **fine**. Quando viene visualizzata la pagina **importazione completata** , fare clic su **Chiudi**.
 
-17. Scegliere **Opzioni**dal menu **strumenti** , espandere **categoria**, fare clic sulla **pagina della griglia** e verificare che i valori della categoria di proprietà siano stati ripristinati.
+17. Scegliere **Opzioni** dal menu **strumenti** , espandere **categoria**, fare clic sulla **pagina della griglia** e verificare che i valori della categoria di proprietà siano stati ripristinati.

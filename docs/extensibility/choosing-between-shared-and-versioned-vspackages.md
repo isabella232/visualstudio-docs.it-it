@@ -1,5 +1,7 @@
 ---
 title: Scelta tra VSPackage condivisi e con versione | Microsoft Docs
+description: Informazioni sulle installazioni affiancate dei pacchetti VSPackage tramite strategie condivise o con versioni con più versioni di Visual Studio e del .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96386c2d3b7d1e822fdd1dd6632d754740f86301
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 725dd8368bd4db9509426fa1a98ce56ef85bc3c0
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011931"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974399"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Scegliere tra VSPackage condivisi e con versione
 Diverse versioni di Visual Studio possono coesistere nello stesso computer. I pacchetti VSPackage possono supportare qualsiasi combinazione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] versioni.

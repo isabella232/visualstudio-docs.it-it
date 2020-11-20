@@ -1,5 +1,7 @@
 ---
 title: Creazione di un kit di sviluppo software | Microsoft Docs
+description: Informazioni sull'infrastruttura generale degli SDK e su come creare una piattaforma SDK e un SDK di estensione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61e547be5f240cafccc058eb7ea2249fd492554b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3a793e3d7233eb1b6d0aaaa74fbe16d52cf6f43
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904118"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974324"
 ---
 # <a name="create-a-software-development-kit"></a>Creare una Software Development Kit
 
@@ -50,10 +52,10 @@ Gli SDK della piattaforma hanno il seguente layout:
                         \[arch]
 ```
 
-| Nodo | Descrizione |
+| Nodo | Description |
 |------------------------| - |
 | Cartella *riferimenti* | Contiene file binari che contengono API che possono essere codificate in base a. Possono includere file o assembly di metadati Windows (WinMD). |
-| Cartella *DesignTime* | Contiene i file necessari solo in fase di pre-esecuzione/debug. Questi possono includere documenti XML, librerie, intestazioni, binari della fase di progettazione della casella degli strumenti, elementi MSBuild e così via<br /><br /> I documenti XML dovrebbero, idealmente, essere posizionati nella cartella *\DesignTime* , ma i documenti XML per i riferimenti continueranno a essere inseriti insieme al file di riferimento in Visual Studio. Ad esempio, il documento XML per un riferimento<em>\References \\ [config] \\ [Arch] \sample.dll</em> sarà *\References \\ [config] \\ [Arch] \sample.xml*e la versione localizzata del documento sarà *\References \\ [config] \\ [Arch] \\ [locale] \sample.xml*. |
+| Cartella *DesignTime* | Contiene i file necessari solo in fase di pre-esecuzione/debug. Questi possono includere documenti XML, librerie, intestazioni, binari della fase di progettazione della casella degli strumenti, elementi MSBuild e così via<br /><br /> I documenti XML dovrebbero, idealmente, essere posizionati nella cartella *\DesignTime* , ma i documenti XML per i riferimenti continueranno a essere inseriti insieme al file di riferimento in Visual Studio. Ad esempio, il documento XML per un riferimento <em>\References \\ [config] \\ [Arch] \sample.dll</em> sarà *\References \\ [config] \\ [Arch] \sample.xml* e la versione localizzata del documento sarà *\References \\ [config] \\ [Arch] \\ [locale] \sample.xml*. |
 | Cartella di *configurazione* | Possono essere presenti solo tre cartelle: *debug*, *retail* e *CommonConfiguration*. Gli autori di SDK possono inserire i file in *CommonConfiguration* se è necessario usare lo stesso set di file SDK, indipendentemente dalla configurazione di destinazione del consumer SDK. |
 | Cartella *Architecture* | È possibile che esista una cartella di *architettura* supportata. Visual Studio supporta le seguenti architetture: x86, x64, ARM e neutral. Nota: Win32 esegue il mapping a x86 e AnyCPU viene mappato a un neutro.<br /><br /> MSBuild cerca solo in *\CommonConfiguration\neutral* per Platform SDK. |
 | *SDKManifest.xml* | In questo file viene descritto il modo in cui Visual Studio deve utilizzare l'SDK. Esaminare il manifesto dell'SDK per [!INCLUDE[win81](../debugger/includes/win81_md.md)] :<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** Valore visualizzato dall'Visualizzatore oggetti nell'elenco di esplorazione.<br /><br /> **PlatformIdentity:** L'esistenza di questo attributo indica a Visual Studio e MSBuild che SDK è un Platform SDK e che i riferimenti aggiunti non devono essere copiati localmente.<br /><br /> **TargetFramework:** Questo attributo viene utilizzato da Visual Studio per garantire che solo i progetti destinati agli stessi Framework specificati nel valore di questo attributo possano utilizzare l'SDK.<br /><br /> **MinVSVersion:** Questo attributo viene usato da Visual Studio per utilizzare solo gli SDK che vi si applicano.<br /><br /> **Riferimento:** Questo attributo deve essere specificato solo per i riferimenti che contengono controlli. Per informazioni su come specificare se un riferimento contiene controlli, vedere di seguito. |
@@ -107,7 +109,7 @@ Gli SDK di estensione hanno il seguente layout di installazione:
 
 2. Cartella *riferimenti* : file binari che contengono le API. Questi possono essere file di metadati di Windows (WinMD) o assembly.
 
-3. *Redist* Folder: i file necessari per la fase di esecuzione/debug e devono essere inseriti nel pacchetto come parte dell'applicazione dell'utente. Tutti i file binari devono essere posizionati sotto *redist \\<config \> \\<Arch \> *e i nomi binari devono avere il formato seguente per garantire l'univocità: *]* \<company> . \<product> . \<purpose> . \<extension> <em>. Ad esempio, * Microsoft.Cpp.Build.dll</em>. Tutti i file con nomi che possono essere in conflitto con i nomi di file di altri SDK (ad esempio, i file JavaScript, CSS, pri, XAML, PNG e jpg) devono essere posizionati sotto <em>redist \\<config \> \\<Arch \> \\<SDKName \> \* ad eccezione dei file associati ai controlli XAML. Questi file devono essere inseriti sotto * Redist \\<config \> \\<Arch \> \\<ComponentName \> \\ </em>.
+3. *Redist* Folder: i file necessari per la fase di esecuzione/debug e devono essere inseriti nel pacchetto come parte dell'applicazione dell'utente. Tutti i file binari devono essere posizionati sotto *redist \\<config \> \\<Arch \>* e i nomi binari devono avere il formato seguente per garantire l'univocità: *]* \<company> . \<product> . \<purpose> . \<extension> <em>. Ad esempio, * Microsoft.Cpp.Build.dll</em>. Tutti i file con nomi che possono essere in conflitto con i nomi di file di altri SDK (ad esempio, i file JavaScript, CSS, pri, XAML, PNG e jpg) devono essere posizionati sotto <em>redist \\<config \> \\<Arch \> \\<SDKName \> \* ad eccezione dei file associati ai controlli XAML. Questi file devono essere inseriti sotto * Redist \\<config \> \\<Arch \> \\<ComponentName \> \\ </em>.
 
 4. Cartella *DesignTime* : i file necessari solo in fase di pre-esecuzione/debug e non devono essere inclusi nel pacchetto come parte dell'applicazione dell'utente. Si tratta di documenti XML, librerie, intestazioni, binari della fase di progettazione della casella degli strumenti, elementi MSBuild e così via. Qualsiasi SDK destinato all'utilizzo da un progetto nativo deve avere un file *SDKName. props* . Di seguito è riportato un esempio di questo tipo di file.
 
@@ -127,9 +129,9 @@ Gli SDK di estensione hanno il seguente layout di installazione:
 
    ```
 
-    I documenti di riferimento XML vengono posizionati insieme al file di riferimento. Ad esempio, il documento di riferimento XML per *\References \\<config \> \\<Arch \>\sample.dll* assembly è *\References \\<config \> \\<Arch \>\sample.xml*e la versione localizzata di tale documento è *\References \\<config<\> \\ Arch \> \\<impostazioni locali \> *\sample.xml.
+    I documenti di riferimento XML vengono posizionati insieme al file di riferimento. Ad esempio, il documento di riferimento XML per *\References \\<config \> \\<Arch \>\sample.dll* assembly è *\References \\<config \> \\<Arch \>\sample.xml* e la versione localizzata di tale documento è *\References \\<config<\> \\ Arch \> \\<impostazioni locali \>* \sample.xml.
 
-5. Cartella di *configurazione* : tre sottocartelle: *debug*, *retail*e *CommonConfiguration*. Gli autori di SDK possono inserire i file in *CommonConfiguration* quando è necessario utilizzare lo stesso set di file SDK, indipendentemente dalla configurazione di destinazione del consumer SDK.
+5. Cartella di *configurazione* : tre sottocartelle: *debug*, *retail* e *CommonConfiguration*. Gli autori di SDK possono inserire i file in *CommonConfiguration* quando è necessario utilizzare lo stesso set di file SDK, indipendentemente dalla configurazione di destinazione del consumer SDK.
 
 6. Cartella *Architecture* : sono supportate le architetture seguenti: x86, x64, ARM, Neutral. Win32 viene mappato a x86 e AnyCPU viene mappato a un neutro.
 
@@ -183,7 +185,7 @@ L'elenco seguente fornisce gli elementi del file:
 
 10. SupportsMultipleVersions: se questo attributo è impostato su **Error** o **warning**, MSBuild indica che lo stesso progetto non può fare riferimento a più versioni dello stesso gruppo SDK. Se questo attributo non esiste o è impostato su **Consenti**, MSBuild non Visualizza questo tipo di errore o avviso.
 
-11. AppX: specifica il percorso dei pacchetti dell'app per la libreria dei componenti di Windows sul disco. Questo valore viene passato al componente di registrazione della libreria dei componenti di Windows durante il debug locale. La convenzione di denominazione per il nome file è * \<Company> . \<Product> . \<Architecture> . \<Configuration> . \<Version> . appx*. La configurazione e l'architettura sono facoltative nel nome dell'attributo e nel valore dell'attributo se non si applicano alla libreria dei componenti di Windows. Questo valore è applicabile solo alle librerie di componenti di Windows.
+11. AppX: specifica il percorso dei pacchetti dell'app per la libreria dei componenti di Windows sul disco. Questo valore viene passato al componente di registrazione della libreria dei componenti di Windows durante il debug locale. La convenzione di denominazione per il nome file è *\<Company> . \<Product> . \<Architecture> . \<Configuration> . \<Version> . appx*. La configurazione e l'architettura sono facoltative nel nome dell'attributo e nel valore dell'attributo se non si applicano alla libreria dei componenti di Windows. Questo valore è applicabile solo alle librerie di componenti di Windows.
 
 12. CopyRedistToSubDirectory: specifica la posizione in cui devono essere copiati i file nella cartella *Redist* rispetto alla radice del pacchetto dell'app, ovvero il **percorso del pacchetto** scelto nella creazione guidata **pacchetto dell'applicazione** , e la radice del layout di Runtime. Il percorso predefinito è la radice del pacchetto dell'app e il layout di **F5** .
 

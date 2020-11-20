@@ -1,5 +1,7 @@
 ---
 title: Elemento combos | Microsoft Docs
+description: Gli elementi combo raggruppano gli elementi combinati, che definiscono i comandi che vengono visualizzati in una casella combinata. Questo articolo contiene un esempio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d005ea69aea7f0331877326abe4087fcff403553
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eba7b40a6e770c5076a4d1aa89bf6196f7ef8684
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739809"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974249"
 ---
 # <a name="combos-element"></a>Elemento combos
 Raggruppa gli elementi di elementi [combinati](../extensibility/combo-element.md) .
@@ -33,11 +35,11 @@ Raggruppa gli elementi di elementi [combinati](../extensibility/combo-element.md
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 

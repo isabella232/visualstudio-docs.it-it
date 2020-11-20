@@ -1,5 +1,7 @@
 ---
 title: Modifica dell'aspetto di un comando | Microsoft Docs
+description: Informazioni su come fornire commenti e suggerimenti per modificare l'aspetto di un comando, ad esempio rendere disponibili i comandi/non disponibili, nascosti/visualizzati o selezionati/deselezionati.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c1574704f8848c16f4740189688cb1719f19623
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f79ac7873a1746e0b14db51ba864e94f6bbfa1e
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183717"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974420"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Modificare l'aspetto di un comando
 È possibile fornire commenti e suggerimenti all'utente modificando l'aspetto di un comando. Ad esempio, è possibile che un comando abbia un aspetto diverso quando non è disponibile. È possibile rendere i comandi disponibili o non disponibili, nasconderli o visualizzarli oppure selezionarli o deselezionarli nel menu.

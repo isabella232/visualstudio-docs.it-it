@@ -1,5 +1,7 @@
 ---
 title: Funzioni di callback implementate dall'IDE | Microsoft Docs
+description: Informazioni sulle funzioni di callback che il plug-in può chiamare in momenti appropriati durante un'operazione di controllo del codice sorgente per passare informazioni all'IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 666486f5b800707a4467a129abeed7a13306f10a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dfb7e8b7e046c9587f591aec96a6a7fbd270865
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739899"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974453"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funzioni di callback implementate dall'IDE
 Per semplificare il più possibile l'integrazione con il Integrated Development Environment (IDE) e fornire un'esperienza unificata per l'utente finale, il plug-in del controllo del codice sorgente può usare funzioni di callback implementate dall'IDE. Il plug-in può chiamare queste funzioni in momenti appropriati durante un'operazione di controllo del codice sorgente per passare informazioni all'IDE. l'IDE può quindi visualizzare queste informazioni come elementi incorporati nell'interfaccia utente nativa. In questo scenario l'utente ha un'esperienza meno frammentata rispetto al caso in cui il plug-in ha utilizzato una propria interfaccia utente.
 
- Il file di intestazione richiesto è *SCC. h*. Il percorso predefinito è *\Program Files\VSIP 8.0 \ EnvSDK\common\inc \\ *. Si trova anche nella cartella VSIP con l'esempio di plug-in del controllo del codice sorgente in *\Program Files\VSIP 8.0 \\ \ MSSCCI*.
+ Il file di intestazione richiesto è *SCC. h*. Il percorso predefinito è *\Program Files\VSIP 8.0 \ EnvSDK\common\inc \\*. Si trova anche nella cartella VSIP con l'esempio di plug-in del controllo del codice sorgente in *\Program Files\VSIP 8.0 \\ \ MSSCCI*.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) Viene descritta la funzione di callback utilizzata da [SccOpenProject](../extensibility/sccopenproject-function.md) per visualizzare i messaggi dal plug-in del controllo del codice sorgente tramite l'IDE.

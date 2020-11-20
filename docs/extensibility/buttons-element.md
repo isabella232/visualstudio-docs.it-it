@@ -1,5 +1,7 @@
 ---
 title: Elemento Buttons | Microsoft Docs
+description: Gli elementi dei pulsanti gruppi di elementi Button, che rappresentano i singoli comandi. Questo articolo contiene un esempio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64ac5621093f30af28ade0817906b767231e4ee1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f46942936f9d4f6b69225953d4f9aa8a974a8723
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739927"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974476"
 ---
 # <a name="buttons-element"></a>Elemento Buttons
 Elementi del [pulsante](../extensibility/button-element.md) gruppi, che rappresentano i singoli comandi.
@@ -33,11 +35,11 @@ Elementi del [pulsante](../extensibility/button-element.md) gruppi, che rapprese
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -56,7 +58,7 @@ Elementi del [pulsante](../extensibility/button-element.md) gruppi, che rapprese
 
 ```
 <Buttons>
-  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">
+  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">
     <Parent guid="guidMenuAndCommandsCmdSet" id="MyMenuGroup"/>
     <Icon guid="guidGenericCmdBmp" id="bmpArrow"/>
     <Strings>

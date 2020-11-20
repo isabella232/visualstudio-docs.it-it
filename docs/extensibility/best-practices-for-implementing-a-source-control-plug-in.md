@@ -1,5 +1,6 @@
 ---
 title: Implementazione di un plug-in del controllo del codice sorgente-procedure consigliate
+description: Esaminare questi dettagli tecnici per implementare in modo affidabile un plug-in del controllo del codice sorgente in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 399afaff75b2456e668aaa9862fb7aa5439cc39f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d04b8329d425df53c5414f593393e86a3be73c47
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038452"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974636"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Procedure consigliate per l'implementazione di un plug-in del controllo del codice sorgente
 I dettagli tecnici seguenti consentono di implementare in modo affidabile un plug-in del controllo del codice sorgente in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
@@ -58,6 +59,6 @@ I dettagli tecnici seguenti consentono di implementare in modo affidabile un plu
 
  La maggior parte delle opzioni di impostazione configurabili dall'utente non sono definite in questo modo, in quanto variano notevolmente tra i plug-in del controllo del codice sorgente. Pertanto, il meccanismo consigliato è un pulsante **Avanzate** . Nella finestra di dialogo **Ottieni** , ad esempio, l'IDE Visualizza solo le informazioni che riconosce, ma Visualizza anche un pulsante **Avanzate** se il plug-in include opzioni per questo comando. Quando l'utente fa clic sul pulsante **Avanzate** , l'IDE chiama [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) per abilitare il plug-in del controllo del codice sorgente per richiedere informazioni all'utente, ad esempio flag o una data/ora. Il plug-in restituisce queste informazioni in una struttura che viene passata di nuovo durante il `SccGet` comando.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)
 - [Creazione di un plug-in del controllo del codice sorgente](../extensibility/internals/creating-a-source-control-plug-in.md)

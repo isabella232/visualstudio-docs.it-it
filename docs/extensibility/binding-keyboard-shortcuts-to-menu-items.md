@@ -1,5 +1,7 @@
 ---
 title: Associazione dei tasti di scelta rapida alle voci di menu | Microsoft Docs
+description: Informazioni su come eseguire il mapping di una scelta rapida da tastiera in Visual Studio a un pulsante personalizzato, una voce di menu o un comando della barra degli strumenti per l'editor predefinito o per un editor personalizzato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df973ef6a75a9134b4ee6e945a5702708ece712
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 112089581965b96133f2160341a13efe23329934
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407718"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974629"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Associa scelte rapide da tastiera a voci di menu
 Per associare un tasto di scelta rapida a un comando di menu personalizzato, è sufficiente aggiungere una voce al file con *estensione vsct* per il pacchetto. In questo argomento viene illustrato come eseguire il mapping di una scelta rapida da tastiera a un pulsante personalizzato, una voce di menu o un comando della barra degli strumenti e come applicare il mapping della tastiera nell'editor predefinito o come limitarlo a un editor personalizzato.
@@ -59,7 +61,7 @@ Per associare un tasto di scelta rapida a un comando di menu personalizzato, è 
 
     Impostare gli `guid`  `id` attributi e su quelli del comando che si desidera richiamare.
 
-    Impostare l' `mod1` attributo su **Control** , **ALT** o **Shift**.
+    Impostare l' `mod1` attributo su **Control**, **ALT** o **Shift**.
 
     La sezione delle combinazioni di tasti dovrebbe avere un aspetto simile al seguente:
 

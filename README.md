@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: cf93d619ddeb385960eae74de8b64a7f11b7be4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67368f8bc8e6762dedf448829aca364e06b83fd3
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87115297"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973761"
 ---
 # <a name="visual-studio-documentation"></a>Documentazione di Visual Studio
 
 Benvenuto! Questo repository contiene i file di origine per la documentazione tecnica di Visual Studio. Gli argomenti sono pubblicati in [docs.microsoft.com](https://docs.microsoft.com/visualstudio).
 
-Questo repository è stato spostato il 23 giugno 2017 da https://github.com/Microsoft/vsdocs. Il traffico verso gli URL precedenti viene reindirizzato qui.
+Questo repository è stato spostato il 23 giugno 2017 da https://github.com/Microsoft/vsdocs.
 
 La documentazione di Visual Basic e Visual C# si trova nel [repository dotnet docs](https://github.com/dotnet/docs/tree/master/docs) e la documentazione di Visual C++ si trova nel [repository docs di C++](https://github.com/MicrosoftDocs/cpp-docs).
 
