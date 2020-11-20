@@ -1,5 +1,6 @@
 ---
 title: Creare una DataTable nel Progettazione DataSet
+description: In questa procedura dettagliata creare una DataTable (senza un TableAdapter) usando il Progettazione DataSet. Creare una nuova Windows Forms Application e aggiungervi un nuovo set di dati.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7dd762c6df5eebc9ebbf142a3ad7dfe430800802
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a0dad1e6878adc73a08753dca21500499e652602
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036769"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998252"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Procedura dettagliata: creare un oggetto DataTable nel Progettazione DataSet
 
@@ -80,7 +81,7 @@ Per impostare la chiave primaria, fare clic con il pulsante destro del mouse sul
 
 ## <a name="save-your-project"></a>Salvare il progetto
 
-Per salvare il progetto **DataTableWalkthrough** , scegliere **Salva tutto**dal menu **file** .
+Per salvare il progetto **DataTableWalkthrough** , scegliere **Salva tutto** dal menu **file** .
 
 ## <a name="see-also"></a>Vedi anche
 

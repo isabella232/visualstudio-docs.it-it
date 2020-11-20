@@ -1,5 +1,6 @@
 ---
 title: Classi LINQ to SQL con ereditarietà a tabella singola
+description: In questa procedura dettagliata creare classi di LINQ to SQL usando l'ereditarietà a tabella singola nell'Object Relational Designer di Visual Studio (O/R Designer).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0b5319cb36179e51b34eacce56282b97ad4a4bb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b83fd664cb2969c12d69e1e818f61190deed3804
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036756"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998239"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procedura dettagliata: creare classi di LINQ to SQL usando l'ereditarietà a tabella singola (O/R Designer)
 Gli [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supportano l'ereditarietà a tabella singola poiché viene in genere implementata nei sistemi relazionali. Questa procedura dettagliata illustra i passaggi generici forniti nell'argomento [How to: Configure ereditarietà by using the o/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) e fornisce alcuni dati reali per illustrare l'uso dell'ereditarietà in [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
@@ -43,7 +44,7 @@ Per verificare il funzionamento dell'ereditarietà, è possibile creare una tabe
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Per creare una tabella di base per l'illustrazione dell'ereditarietà
 
-1. In **Esplora server** o **Esplora database**fare clic con il pulsante destro del mouse sul nodo **tabelle** e scegliere **Aggiungi nuova tabella**.
+1. In **Esplora server** o **Esplora database** fare clic con il pulsante destro del mouse sul nodo **tabelle** e scegliere **Aggiungi nuova tabella**.
 
     > [!NOTE]
     > È possibile usare il database Northwind o qualsiasi altro database a cui sia possibile aggiungere una tabella.
@@ -116,7 +117,7 @@ Configurare l'ereditarietà trascinando un oggetto **Inheritance** dalla **Casel
 
 ### <a name="to-create-the-inheritance"></a>Per creare l'ereditarietà
 
-1. In **Esplora server** o **Esplora database**passare alla tabella **Person** creata in precedenza.
+1. In **Esplora server** o **Esplora database** passare alla tabella **Person** creata in precedenza.
 
 2. Trascinare la tabella **Person** nell'area di progettazione di **O/R Designer** .
 
@@ -183,7 +184,7 @@ Eseguire l'applicazione e verificare che i record visualizzati nella casella di 
 
 2. Verificare che vengano visualizzati solo i record con valore 2 nella rispettiva colonna di **tipo** .
 
-3. Chiudere il form. Scegliere **Interrompi debug**dal menu **debug** .
+3. Chiudere il form. Scegliere **Interrompi debug** dal menu **debug** .
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -1,5 +1,7 @@
 ---
 title: Data Tools per .NET
+description: Esaminare Visual Studio Data Tools per .NET, che fornisce il supporto per API e strumenti per connettersi ai database, modellare i dati in memoria e visualizzare i dati nell'interfaccia utente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: 67cf4969a5db8900910b375d4cf560b1e30da4eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a095d0fc026634c13ee9f74c8568e199e09f49db
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281071"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998278"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio data tools per .NET
 
@@ -42,6 +44,6 @@ Il flusso di lavoro tipico è il seguente:
 
 È possibile ignorare il passaggio 3 e programmare un'applicazione .NET per inviare comandi direttamente a un database, anziché usare un modello. In questo caso, è possibile trovare la relativa documentazione: [ADO.NET](/dotnet/framework/data/adonet/index). Si noti che è comunque possibile usare la **Configurazione guidata origine dati** e le finestre di progettazione per generare codice di data binding quando si popolano oggetti personalizzati in memoria e quindi si associano i controlli dell'interfaccia utente a tali oggetti.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Accedere ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

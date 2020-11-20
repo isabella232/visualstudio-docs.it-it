@@ -1,5 +1,7 @@
 ---
 title: Disattivare i vincoli durante il riempimento di un set di dati
+description: Informazioni su come disattivare i vincoli durante il riempimento di un set di dati. Sospendere i vincoli di aggiornamento a livello di codice o usando il Progettazione DataSet.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7bdb225a5b310f6f602619b2afcee610c3e9258b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a4d1e17d2f6a0159a9c0187d5e1a3d16216d0ba
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281266"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998317"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Disattivare i vincoli durante il riempimento di un set di dati
 
@@ -49,7 +51,7 @@ Se non è disponibile alcun meccanismo per consentire la sospensione temporanea 
 
 2. Nella finestra **Proprietà** impostare la proprietà <xref:System.Data.DataSet.EnforceConstraints%2A> su `false`.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
 - [Relazioni nei set di dati](../data-tools/relationships-in-datasets.md)

@@ -1,5 +1,7 @@
 ---
 title: Creazione di un servizio dati WCF con & WPF Entity Framework
+description: Creare un servizio dati WCF con WPF e Entity Framework ospitato in un'applicazione Web ASP.NET, quindi accedervi da una Windows Forms Application.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9abdeee9a785a8bccf6cbb580c87bae4fa313036
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8c9ced0b589b28f1cd21de4a862c6f11dc6e03e
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585990"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998265"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procedura dettagliata: Creazione di un'istanza di WCF Data Services con WPF ed Entity Framework
 Questa procedura dettagliata illustra come creare un semplice servizio [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] incluso in un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e come accedervi da un'applicazione Windows Forms.
@@ -43,7 +45,7 @@ In questa procedura dettagliata:
 ## <a name="prerequisites"></a>Prerequisiti
 In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
+1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio** è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
 
 2. Installare il database di esempio Northwind attenendosi alla procedura seguente:
 
@@ -178,7 +180,7 @@ Nel passaggio successivo viene configurata un'origine dati per abilitare data bi
 
 ### <a name="to-enable-data-binding-to-the-service"></a>Per abilitare il data binding al servizio
 
-1. Sulla barra dei menu scegliere **Visualizza**  >  **altre**  >  **origini dati**di Windows.
+1. Sulla barra dei menu scegliere **Visualizza**  >  **altre**  >  **origini dati** di Windows.
 
    Verrà visualizzata la finestra **Origini dati**.
 
@@ -202,7 +204,7 @@ Nel passaggio successivo viene creata l'interfaccia utente che Visualizza i dati
 
 3. Scegliere il controllo **CustomersDataGridView** e nella finestra **Proprietà** impostare la proprietà **Ancora** su **Riempimento**.
 
-4. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo **Form1** e scegliere **Visualizza codice** per aprire l'editor di codice e aggiungere l' `Imports` istruzione o seguente `Using` all'inizio del file:
+4. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo **Form1** e scegliere **Visualizza codice** per aprire l'editor di codice e aggiungere l' `Imports` istruzione o seguente `Using` all'inizio del file:
 
    ```vb
    Imports NorthwindClient.ServiceReference1
@@ -286,7 +288,7 @@ In questo passaggio viene personalizzata l'applicazione in modo da filtrare i da
 
 6. Nella casella di testo immettere **London**, quindi scegliere il pulsante. Verranno visualizzati solo i clienti di Londra.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Servizi Windows Communication Foundation e dati WCF in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [Procedura: aggiungere, aggiornare o rimuovere un riferimento a WCF Data Services](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

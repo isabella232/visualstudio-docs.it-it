@@ -1,5 +1,7 @@
 ---
 title: Aggiornare i file con estensione mdf
+description: Esaminare le opzioni per l'aggiornamento di un file di database (con estensione MDF) dopo l'installazione di una versione più recente di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,16 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d35611dcc7b6067cf6d6166aff521ef291b8dfcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: babc82469d32540f1a003b629c9d83887ca91595
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281123"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998044"
 ---
 # <a name="upgrade-mdf-files"></a>Aggiornare i file con estensione mdf
 
-In questo argomento vengono descritte le opzioni per l'aggiornamento di un file di database (con*estensione MDF*) dopo l'installazione di una versione più recente di Visual Studio. Sono incluse le istruzioni per le attività seguenti:
+In questo argomento vengono descritte le opzioni per l'aggiornamento di un file di database (con *estensione MDF*) dopo l'installazione di una versione più recente di Visual Studio. Sono incluse le istruzioni per le attività seguenti:
 
 - Aggiornare un file di database per utilizzare una versione più recente di SQL Server Express database locale
 
@@ -33,7 +35,7 @@ In questo argomento vengono descritte le opzioni per l'aggiornamento di un file 
 
 - Imposta come SQL Server Express il motore di database predefinito
 
-È possibile utilizzare Visual Studio per aprire un progetto che contiene un file di database (con*estensione MDF*) creato utilizzando una versione precedente di SQL Server Express o del database locale. Tuttavia, per continuare a sviluppare il progetto in Visual Studio, è necessario che la versione di SQL Server Express o del database locale sia installata nello stesso computer di Visual Studio oppure è necessario aggiornare il file di database. Se si aggiorna il file di database, non sarà possibile accedervi utilizzando versioni precedenti di SQL Server Express o del database locale.
+È possibile utilizzare Visual Studio per aprire un progetto che contiene un file di database (con *estensione MDF*) creato utilizzando una versione precedente di SQL Server Express o del database locale. Tuttavia, per continuare a sviluppare il progetto in Visual Studio, è necessario che la versione di SQL Server Express o del database locale sia installata nello stesso computer di Visual Studio oppure è necessario aggiornare il file di database. Se si aggiorna il file di database, non sarà possibile accedervi utilizzando versioni precedenti di SQL Server Express o del database locale.
 
 È inoltre possibile che venga richiesto di aggiornare un file di database creato con una versione precedente di SQL Server Express o database locale se la versione del file non è compatibile con l'istanza di SQL Server Express o database locale attualmente installato. Per risolvere il problema, in Visual Studio verrà richiesto di aggiornare il file.
 
@@ -57,7 +59,7 @@ Prima di aggiornare un database, considerare i criteri seguenti:
 
 ### <a name="to-upgrade-a-database-file-to-use-the-localdb-version"></a>Per aggiornare un file di database per l'utilizzo della versione del database locale
 
-1. In **Esplora server**selezionare il pulsante **Connetti al database** .
+1. In **Esplora server** selezionare il pulsante **Connetti al database** .
 
 2. Nella finestra di dialogo **Aggiungi connessione** specificare le informazioni seguenti:
 
@@ -97,7 +99,7 @@ Prima di aggiornare un database, considerare i criteri seguenti:
 
   - Per eseguire il progetto, premere il tasto **F5** .
 
-  - Per modificare il database, aprire il file con *estensione MDF* in **Esplora soluzioni**ed espandere il nodo in **Esplora server** per lavorare con il database.
+  - Per modificare il database, aprire il file con *estensione MDF* in **Esplora soluzioni** ed espandere il nodo in **Esplora server** per lavorare con il database.
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Per rendere SQL Server Express il motore di database predefinito
 
@@ -111,6 +113,6 @@ Prima di aggiornare un database, considerare i criteri seguenti:
 
     SQL Server Express sarà il motore di database predefinito per le applicazioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Accesso ai dati in Visual Studio](accessing-data-in-visual-studio.md)

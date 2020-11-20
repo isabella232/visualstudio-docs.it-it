@@ -1,5 +1,7 @@
 ---
 title: Risoluzione dei problemi relativi ai riferimenti al servizio
+description: Esaminare i problemi comuni che possono verificarsi quando si lavora con Windows Communication Foundation (WCF) o WCF Data Services riferimenti in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d1a1f0efc21f1f612d85725358555fcb0cb8245
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586120"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998070"
 ---
 # <a name="troubleshoot-service-references"></a>Risolvere i problemi relativi ai riferimenti al servizio
 
@@ -33,7 +35,7 @@ Quando si restituisce un oggetto `DataSet` o `DataTable` da un servizio, è poss
 
 Per correggere l'errore: 
 
-1. In **Esplora soluzioni**fare doppio clic sul file *app.config* per aprirlo.
+1. In **Esplora soluzioni** fare doppio clic sul file *app.config* per aprirlo.
 
 2. Individuare la `MaxReceivedMessageSize` proprietà e impostarla su un valore più grande.
 
@@ -43,7 +45,7 @@ Quando si fa clic sul pulsante **individua** nella finestra di dialogo **Aggiung
 
 Per correggere l'errore: 
 
-- In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto libreria di servizi WCF e scegliere **Compila**.
+- In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto libreria di servizi WCF e scegliere **Compila**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Errore durante l'accesso a un servizio su un desktop remoto
 
@@ -76,7 +78,7 @@ Per correggere l'errore, è necessario ricompilare manualmente il progetto di se
 
 1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-2. Nella finestra di dialogo **Opzioni** espandere **progetti e soluzioni**e quindi selezionare **generale**.
+2. Nella finestra di dialogo **Opzioni** espandere **progetti e soluzioni** e quindi selezionare **generale**.
 
 3. Verificare che la casella di controllo **Mostra configurazioni di compilazione avanzate** sia selezionata, quindi fare clic su **OK**.
 
@@ -84,7 +86,7 @@ Per correggere l'errore, è necessario ricompilare manualmente il progetto di se
 
 5. Nella finestra di dialogo **Configuration Manager** impostare la **configurazione della soluzione attiva** su **debug**. Per altre informazioni, vedere [Procedura: Creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md).
 
-6. In **Esplora soluzioni**selezionare il progetto del servizio WCF.
+6. In **Esplora soluzioni** selezionare il progetto del servizio WCF.
 
 7. Scegliere **ricompila** dal menu **Compila** per ricompilare il progetto del servizio WCF.
 
@@ -102,6 +104,6 @@ Per correggere l'errore, disabilitare i feed RSS:
 
 4. Fare clic su **OK** per chiudere la finestra di dialogo **Opzioni Internet** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Servizi Windows Communication Foundation e dati WCF in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

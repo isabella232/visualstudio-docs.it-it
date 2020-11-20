@@ -1,5 +1,6 @@
 ---
 title: Creare un set di dati con l'Progettazione DataSet
+description: In questa procedura dettagliata creare un set di dati usando il Progettazione DataSet. Comprendere il processo di creazione di un nuovo progetto e di aggiunta di un nuovo elemento del set di dati.
 ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: conceptual
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20cd8bdc4f7d72cd0ed3920f75a4955ee57d2a68
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1f124a459d55b945cd8dbb480d7e7c22b5de4f3e
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036782"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998031"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Procedura dettagliata: creare un set di dati con l'Progettazione DataSet
 
@@ -71,7 +72,7 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 1. Scegliere **Esplora server** dal menu **Visualizza**.
 
-2. In **Esplora server**fare clic sul pulsante **Connetti al database** .
+2. In **Esplora server** fare clic sul pulsante **Connetti al database** .
 
 3. Creare una connessione al database di esempio Northwind.
 
@@ -91,7 +92,7 @@ In questa sezione viene illustrato come aggiungere tabelle al set di dati.
 
 - Trascinare la tabella **Orders** da **Esplora server** nel **Progettazione DataSet**.
 
-     Al set di dati vengono aggiunte una tabella di dati **Orders** , **OrdersTableAdapter**e una relazione tra le tabelle **Customers** e **Orders** .
+     Al set di dati vengono aggiunte una tabella di dati **Orders** , **OrdersTableAdapter** e una relazione tra le tabelle **Customers** e **Orders** .
 
 ### <a name="to-create-the-orderdetails-table"></a>Per creare la tabella OrderDetails
 

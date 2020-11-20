@@ -1,5 +1,7 @@
 ---
 title: Convalidare i dati nei set di dati
+description: Informazioni su come convalidare i dati nei set di dati. La convalida dei dati implica la conferma che i valori immessi negli oggetti dati sono conformi ai vincoli nello schema di un set di dati.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 379c5ec40a59ba044c8cce1ef7926294b763d05d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cde45c4086b93713fe6e5223c1725538c0880491
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281084"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998304"
 ---
 # <a name="validate-data-in-datasets"></a>Convalidare i dati nei set di dati
 La convalida dei dati è il processo di conferma che i valori immessi negli oggetti dati sono conformi ai vincoli all'interno dello schema di un set di dati. Il processo di convalida conferma inoltre che questi valori seguono le regole stabilite per l'applicazione. È consigliabile convalidare i dati prima di inviare gli aggiornamenti al database sottostante. In questo modo si riducono gli errori, nonché il numero potenziale di round trip tra un'applicazione e il database.
@@ -207,7 +209,7 @@ Il passaggio del <xref:System.Data.DataRowVersion> valore con l'indice di colonn
      [!code-csharp[VbRaddataEditing#22](../data-tools/codesnippet/CSharp/validate-data-in-datasets_7.cs)]
      [!code-vb[VbRaddataEditing#22](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_7.vb)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Procedura: convalidare i dati nel controllo DataGridView Windows Forms](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)

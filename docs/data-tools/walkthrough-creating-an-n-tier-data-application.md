@@ -1,5 +1,7 @@
 ---
 title: "Procedura dettagliata: creazione di un'applicazione dati a più livelli"
+description: In questa procedura dettagliata creare un'applicazione dati a più livelli. Le applicazioni dati a più livelli sono app che accedono ai dati e sono separate in molti livelli logici o livelli.
+ms.custom: SEO-VS-2020
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a09ef4cec4b7c2921322b934eef39ba660d02587
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 76bf07e99f9965e88804c51663bcc37053bf74d6
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426655"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998083"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Procedura dettagliata: creare un'applicazione dati a più livelli
 Le applicazioni dati *a più livelli* sono applicazioni con accesso ai dati e sono separate in più *livelli logici*. La separazione dei componenti dell'applicazione in livelli discreti aumenta la manutenibilità e la scalabilità dell'applicazione mediante l'adozione semplificata di nuove tecnologie che possono essere applicate a un singolo livello senza la necessità di riprogettare l'intera soluzione. L'architettura a più livelli include un livello di presentazione, un livello intermedio e un livello dati. Il livello intermedio include in genere un livello di accesso ai dati, un livello di logica di business e componenti condivisi quali l'autenticazione e la convalida. Il livello dati include un database relazionale. Le applicazioni a più livelli in genere archiviano le informazioni riservate nel livello di accesso ai dati del livello intermedio per mantenere l'isolamento dagli utenti finali che accedono al livello di presentazione. Per altre informazioni, vedere [Panoramica delle applicazioni dati](../data-tools/n-tier-data-applications-overview.md)a più livelli.
@@ -53,7 +55,7 @@ Durante questa procedura dettagliata si eseguono i passaggi seguenti:
 ## <a name="prerequisites"></a>Prerequisiti
 In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**è possibile installare SQL Server Express database locale come parte del carico di lavoro sviluppo di applicazioni **desktop .NET** o come singolo componente.
+1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio** è possibile installare SQL Server Express database locale come parte del carico di lavoro sviluppo di applicazioni **desktop .NET** o come singolo componente.
 
 2. Installare il database di esempio Northwind attenendosi alla procedura seguente:
 
@@ -110,7 +112,7 @@ Il passaggio successivo consiste nella creazione di un dataset tipizzato. I set 
 
 1. Selezionare il **DataAccessTier** in **Esplora soluzioni**.
 
-2. Scegliere **Mostra origini dati**dal menu **dati** .
+2. Scegliere **Mostra origini dati** dal menu **dati** .
 
    Verrà visualizzata la finestra **Origini dati**.
 
@@ -177,7 +179,7 @@ Il servizio dati deve chiamare due metodi nel livello di accesso ai dati: `GetCu
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>Per creare un metodo nel livello di accesso ai dati per restituire la tabella Customers
 
-1. In **Esplora soluzioni**fare doppio clic su **NorthwindDataSet. xsd** per aprire il set di dati.
+1. In **Esplora soluzioni** fare doppio clic su **NorthwindDataSet. xsd** per aprire il set di dati.
 
 2. Fare clic con il pulsante destro del mouse su **CustomersTableAdapter** e scegliere **Aggiungi query**.
 
@@ -308,7 +310,7 @@ Per accedere ai metodi nel servizio, l'applicazione client PresentationTier rich
 
 ### <a name="to-add-a-reference-to-the-presentation-tier"></a>Per aggiungere un riferimento al livello di presentazione
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **PresentationTier** e scegliere **Aggiungi riferimento**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **PresentationTier** e scegliere **Aggiungi riferimento**.
 
 2. Nella finestra di dialogo **Aggiungi riferimento** selezionare la scheda **progetti** .
 
@@ -316,7 +318,7 @@ Per accedere ai metodi nel servizio, l'applicazione client PresentationTier rich
 
 ### <a name="to-add-a-service-reference-to-the-presentation-tier"></a>Per aggiungere il riferimento a un servizio al livello di presentazione
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **PresentationTier** e selezionare **Aggiungi riferimento al servizio**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **PresentationTier** e selezionare **Aggiungi riferimento al servizio**.
 
 2. Nella finestra di dialogo **Aggiungi riferimento al servizio** selezionare **individua**.
 
@@ -379,8 +381,8 @@ A seconda dei requisiti dell'applicazione, è possibile eseguire diverse operazi
 
 - Aggiungere al servizio altri metodi per l'aggiornamento dei dati nel database.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Usare i set di impostazioni in applicazioni a più livelli](../data-tools/work-with-datasets-in-n-tier-applications.md)
+- [Uso dei set di dati nelle applicazioni a più livelli](../data-tools/work-with-datasets-in-n-tier-applications.md)
 - [Aggiornamento gerarchico](../data-tools/hierarchical-update.md)
 - [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

@@ -1,5 +1,7 @@
 ---
 title: Impossibile eliminare la proprietà
+description: Impossibile eliminare la proprietà. Visualizza le informazioni su questo messaggio di Object Relational Designer di Visual Studio (O/R Designer).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 63e99bf7b247856815fd3e8de0f4932fed4881dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdca9758116c551604b5f75f141c15107c1fc890
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535291"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998360"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>Impossibile eliminare la proprietà \<property name>
 
@@ -31,6 +33,6 @@ Impostare **Proprietà Discriminator** su una diversa proprietà della classe di
 
 3. Provare a eliminare nuovamente la proprietà.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

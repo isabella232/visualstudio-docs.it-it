@@ -1,5 +1,7 @@
 ---
 title: Windows Communication Foundation e WCF Data Services
+description: Esplorare i servizi Windows Communication Foundation (WCF) e i WCF Data Services in Visual Studio, in modo da poter creare applicazioni distribuite.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 dev_langs:
@@ -35,12 +37,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1f24a33a482b1994d0d8667b4fc71cf968e4625
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 983ff598003a4f966b5173dc9ae78dd9aaa16580
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281045"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997901"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Servizi Windows Communication Foundation e dati WCF in Visual Studio
 
@@ -163,7 +165,7 @@ In tal caso, è possibile specificare `endpointConfigurationName` come parametro
 
 ### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Per trovare gli endpoint disponibili per un servizio WCF
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul file **app.config** per il progetto che contiene il riferimento al servizio, quindi scegliere **Apri**. Il file viene visualizzato nell'editor di codice.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul file **app.config** per il progetto che contiene il riferimento al servizio, quindi scegliere **Apri**. Il file viene visualizzato nell'editor di codice.
 
 2. Cercare il `<Client>` tag nel file.
 
@@ -186,9 +188,9 @@ Per impostazione predefinita, quando un riferimento al servizio viene aggiunto a
 
 ### <a name="to-call-a-service-method-asynchronously"></a>Per chiamare in modo asincrono un metodo del servizio
 
-1. In **Esplora soluzioni**selezionare il riferimento al servizio.
+1. In **Esplora soluzioni** selezionare il riferimento al servizio.
 
-2. Scegliere **Configura riferimento al servizio**dal menu **progetto** .
+2. Scegliere **Configura riferimento al servizio** dal menu **progetto** .
 
 3. Nella finestra di dialogo **Configura riferimento al servizio** selezionare la casella di controllo **genera operazioni asincrone** .
 
@@ -216,7 +218,7 @@ Per impostazione predefinita, quando un riferimento al servizio viene aggiunto a
 
 ### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>Per associare un controllo a un tipo composto restituito da un servizio WCF
 
-1. Scegliere **Mostra origini dati**dal menu **dati** . Viene visualizzata la finestra **Origini dati**.
+1. Scegliere **Mostra origini dati** dal menu **dati** . Viene visualizzata la finestra **Origini dati**.
 
 2. Nella finestra **origini dati** espandere il nodo per il riferimento al servizio. Tutti i tipi compositi restituiti dal servizio vengono visualizzati.
 
@@ -234,9 +236,9 @@ Per evitare questo problema, i tipi negli assembly a cui si fa riferimento vengo
 
 ### <a name="to-disable-type-sharing-in-a-single-assembly"></a>Per disabilitare la condivisione di tipi in un singolo assembly
 
-1. In **Esplora soluzioni**selezionare il riferimento al servizio.
+1. In **Esplora soluzioni** selezionare il riferimento al servizio.
 
-2. Scegliere **Configura riferimento al servizio**dal menu **progetto** .
+2. Scegliere **Configura riferimento al servizio** dal menu **progetto** .
 
 3. Nella finestra di dialogo **Configura riferimenti al servizio** selezionare **Riutilizza tipi negli assembly a cui si fa riferimento specificati**.
 
@@ -244,9 +246,9 @@ Per evitare questo problema, i tipi negli assembly a cui si fa riferimento vengo
 
 ### <a name="to-disable-type-sharing-in-all-assemblies"></a>Per disabilitare la condivisione di tipi in tutti gli assembly
 
-1. In **Esplora soluzioni**selezionare il riferimento al servizio.
+1. In **Esplora soluzioni** selezionare il riferimento al servizio.
 
-2. Scegliere **Configura riferimento al servizio**dal menu **progetto** .
+2. Scegliere **Configura riferimento al servizio** dal menu **progetto** .
 
 3. Nella finestra di dialogo **Configura riferimenti al servizio** deselezionare la casella **di controllo Riutilizza tipi in assembly a cui si fa riferimento** .
 
@@ -261,13 +263,13 @@ Per evitare questo problema, i tipi negli assembly a cui si fa riferimento vengo
 | [Risoluzione dei problemi relativi ai riferimenti al servizio](../data-tools/troubleshooting-service-references.md) | Presenta alcuni errori comuni che possono verificarsi con i riferimenti al servizio e come evitarli. |
 | [Debug di servizi WCF](../debugger/debugging-wcf-services.md) | Vengono descritti i problemi e le tecniche comuni di debug che possono verificarsi durante il debug dei servizi WCF. |
 | [Procedura dettagliata: creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Fornisce istruzioni dettagliate per la creazione di un dataset tipizzato e la separazione del codice degli elementi TableAdapter e dataset in più progetti. |
-| [Configura riferimento a servizio (finestra di dialogo)](../data-tools/configure-service-reference-dialog-box.md) | Vengono descritti gli elementi dell'interfaccia utente della finestra di dialogo **Configura riferimento al servizio** . |
+| [Finestra di dialogo Configura riferimento al servizio](../data-tools/configure-service-reference-dialog-box.md) | Vengono descritti gli elementi dell'interfaccia utente della finestra di dialogo **Configura riferimento al servizio** . |
 
-## <a name="reference"></a>Informazioni di riferimento
+## <a name="reference"></a>Riferimento
 
 - <xref:System.ServiceModel>
 - <xref:System.Data.Services>
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Visual Studio data tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

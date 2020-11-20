@@ -1,5 +1,7 @@
 ---
 title: Uso di un modello concettuale (WCF Data Services)
+description: Utilizzare un modello concettuale in WCF Data Services. Eseguire query sui dati tramite oggetti anziché convertirli tra gli schemi di database e i modelli a oggetti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 272f2f5e04ad8d87da45c98ed38c30751658d5c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2aa79ca10729b9c36437fe30072328838de5dda4
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585912"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997875"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Utilizzare un modello concettuale (WCF Data Services)
 
@@ -45,7 +47,7 @@ Negli argomenti riportati di seguito viene illustrato come aggiungere la convali
 |[Procedura: aggiungere, modificare ed eliminare entità](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Viene illustrato come creare, aggiornare ed eliminare dati di entità in un servizio dati.|
 |[Procedura: definire le relazioni tra entità](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Viene illustrato come creare o modificare le relazioni in un servizio dati.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Servizi Windows Communication Foundation e dati WCF in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [Esecuzione di query sul servizio dati](/dotnet/framework/data/wcf/querying-the-data-service-wcf-data-services)

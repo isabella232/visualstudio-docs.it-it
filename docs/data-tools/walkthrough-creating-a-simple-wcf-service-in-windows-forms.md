@@ -1,5 +1,6 @@
 ---
 title: Creazione di un servizio WCF semplice in Windows Forms
+description: In questa procedura dettagliata creare un servizio Windows Communication Foundation (WCF) in Visual Studio, testarlo e accedervi da una Windows Forms Application.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b0c874509622b34d7a9703a6b31481e0d88e586
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 215ae1409c36417526bb1362f0029029ed95e801
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036795"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998135"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Procedura dettagliata: creare un servizio WCF semplice in Windows Forms
 
@@ -64,7 +65,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice servizi
    > [!NOTE]
    > Viene creato un servizio di lavoro che può essere testato e a cui è possibile accedere. I due passaggi seguenti mostrano come modificare il metodo predefinito per usare un tipo di dati diverso. In un'applicazione reale verrebbero aggiunte anche le funzioni dell'utente al servizio.
 
-5. In **Esplora soluzioni**fare doppio clic su **IService1. vb** o **IService1.cs**.
+5. In **Esplora soluzioni** fare doppio clic su **IService1. vb** o **IService1.cs**.
 
    ![File IService1](../data-tools/media/wcf2.png)
 
@@ -80,7 +81,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice servizi
 
    Nel codice precedente annotare gli attributi `<OperationContract()>` o `[OperationContract]`. Questi attributi sono richiesti per tutti i metodi esposti dal servizio.
 
-6. In **Esplora soluzioni**fare doppio clic su **Service1. vb** o **Service1.cs**.
+6. In **Esplora soluzioni** fare doppio clic su **Service1. vb** o **Service1.cs**.
 
    ![File Service1](../data-tools/media/wcf3.png)
 

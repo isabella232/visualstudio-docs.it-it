@@ -1,5 +1,7 @@
 ---
 title: Uso dei set di dati nelle applicazioni a più livelli
+description: Informazioni su come usare i set di impostazioni in applicazioni a più livelli. Le applicazioni dati a più livelli sono app incentrate sui dati separate in più livelli logici (o livelli).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,12 +21,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c7532bed6a7d43c24d698870723d2265fc2b176f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d450bb60bdb604f658f73d0b5df4b9bd739cf923
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585925"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998187"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Uso dei set di dati nelle applicazioni a più livelli
 
@@ -34,12 +36,12 @@ I dataset tipizzati sono stati migliorati in modo da poter generare classi Table
 
 Il supporto a più livelli nei dataset tipizzati consente lo sviluppo iterativo dell'architettura dell'applicazione in una progettazione a più livelli. Elimina inoltre la necessità di separare manualmente il codice in più di un progetto. Iniziare a progettare il livello dati usando il **Progettazione DataSet**. Prima di applicare l'architettura dell'applicazione in una progettazione a più livelli, impostare la proprietà **Progetto DataSet** di un set di dati per generare la classe di set di dati in un progetto separato.
 
-## <a name="reference"></a>Informazioni di riferimento
+## <a name="reference"></a>Riferimento
 
 - <xref:System.Data.DataSet>
 - <xref:System.Data.TypedTableBase%601>
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md)
 - [Procedura dettagliata: creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

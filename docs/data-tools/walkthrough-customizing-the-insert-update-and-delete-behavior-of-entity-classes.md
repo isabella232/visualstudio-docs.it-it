@@ -1,5 +1,6 @@
 ---
 title: Personalizzare il comportamento di inserimento/aggiornamento/eliminazione
+description: In questa procedura dettagliata personalizzare il comportamento di inserimento, aggiornamento ed eliminazione delle classi di entità usando LINQ (Language-Integrated Query) in strumenti SQL in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5323cfa41dc4931db514977238fd359b4f38ab3f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: cac9f27263fc7d316d308f1f8d906751f419f104
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036743"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997927"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Procedura dettagliata: personalizzare il comportamento di inserimento, aggiornamento ed eliminazione delle classi di entità
 
@@ -50,7 +51,7 @@ Durante questa procedura dettagliata si apprenderà come eseguire le attività s
 
 In questa procedura dettagliata vengono utilizzati SQL Server Express database locale e il database di esempio Northwind.
 
-1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio**è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
+1. Se non si dispone di SQL Server Express database locale, installarlo dalla [pagina di download SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)o tramite il **programma di installazione di Visual Studio**. Nel **programma di installazione di Visual Studio** è possibile installare SQL Server Express database locale come parte del carico di lavoro di **elaborazione e archiviazione dei dati** oppure come singolo componente.
 
 2. Installare il database di esempio Northwind attenendosi alla procedura seguente:
 
@@ -86,17 +87,17 @@ Poiché si utilizzano classi LINQ to SQL e si visualizzano i dati in un Windows 
 
 5. Fare clic sul modello **Classi LINQ to SQL** e digitare **Northwind.dbml** nella casella **Nome**.
 
-6. Fare clic su **Aggiungi**.
+6. Scegliere **Aggiungi**.
 
      Al progetto viene aggiunto un file di classi di LINQ to SQL vuoto (**Northwind. dbml**) e viene aperto **Progettazione relazionale O** .
 
 ## <a name="create-the-customer-entity-class-and-object-data-source"></a>Creare la classe di entità Customer e l'origine dati dell'oggetto
 
-Creare LINQ to SQL classi di cui è stato eseguito il mapping alle tabelle di database trascinando le tabelle da **Esplora server** o **Esplora database** in **Progettazione relazionale**o. Il risultato è rappresentato da classi di entità LINQ to SQL con mapping alle tabelle nel database. Dopo aver creato le classi di entità, è possibile usarle come origini dati di un oggetto analogamente alle altre classi che dispongono di proprietà pubbliche.
+Creare LINQ to SQL classi di cui è stato eseguito il mapping alle tabelle di database trascinando le tabelle da **Esplora server** o **Esplora database** in **Progettazione relazionale** o. Il risultato è rappresentato da classi di entità LINQ to SQL con mapping alle tabelle nel database. Dopo aver creato le classi di entità, è possibile usarle come origini dati di un oggetto analogamente alle altre classi che dispongono di proprietà pubbliche.
 
 ### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>Per creare una classe di entità Customer e configurare un'origine dati con tale classe
 
-1. In **Esplora server** o **Esplora database**individuare la tabella **Customer** nella versione SQL Server del database di esempio Northwind.
+1. In **Esplora server** o **Esplora database** individuare la tabella **Customer** nella versione SQL Server del database di esempio Northwind.
 
 2. Trascinare il nodo **Customers** da **Esplora server** o **Esplora database** nell'area **o/R Designer* .
 
@@ -107,7 +108,7 @@ Creare LINQ to SQL classi di cui è stato eseguito il mapping alle tabelle di da
 
 3. Scegliere **Compila UpdatingwithSProcsWalkthrough** dal menu **Compila** per compilare il progetto.
 
-4. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati**dal menu **dati** .
+4. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati** dal menu **dati** .
 
 5. Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.
 
