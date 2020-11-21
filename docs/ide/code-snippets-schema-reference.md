@@ -1,5 +1,7 @@
 ---
 title: Riferimento dello schema dei frammenti di codice
+description: Informazioni sul frammento di codice IntelliSense XML Schema e su come usarle per incrementare la produttività.
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: reference
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e31ec2be9ccce0b07b04746d2ed51ab3909cdd2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5030efcfe6fc774a1bb576f6056db7d9f8fd662
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183678"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006471"
 ---
 # <a name="code-snippets-schema-reference"></a>Riferimento dello schema dei frammenti di codice
 
@@ -104,7 +106,7 @@ Di seguito è riportata la struttura dell'elemento Code:
 
 È necessario specificare un valore di testo. Il testo specifica il codice, insieme ai valori letterali e agli oggetti, che è possibile usare in caso di inserimento di questo frammento di codice in un file di codice.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 Sono disponibili tre attributi per l'elemento Code:
 
@@ -658,7 +660,7 @@ Specifica un URL che fornisce altre informazioni sull'assembly a cui viene fatto
 
 È necessario specificare un valore di testo. Tale testo specifica un URL contenente altre informazioni sull'assembly a cui viene fatto riferimento. L'URL viene visualizzato quando il riferimento non può essere aggiunto al progetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Frammenti di codice](../ide/code-snippets.md)
 - [Procedura dettagliata: Creare un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)

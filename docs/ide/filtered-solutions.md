@@ -1,5 +1,7 @@
 ---
 title: Caricare un subset di progetti
+description: Informazioni sul filtro della soluzione e su come consente di caricare rapidamente un subset di progetti in una soluzione.
+ms.custom: SEO-VS-2020
 ms.date: 04/22/2019
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -10,12 +12,12 @@ author: jillre
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73cb7afe913f7656ac6124d1f54fbc1cb7b611cb
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72650846"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006614"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Soluzioni filtrate in Visual Studio
 
@@ -102,7 +104,7 @@ Dopo essere stato creato, il file di filtro della soluzione viene aggiunto all'e
 
 ![Apri recenti in Visual Studio](media/filtered-solutions/open-recent.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Personalizzare l'annidamento file in Esplora soluzioni](file-nesting-solution-explorer.md)
 - [Ottimizzare le prestazioni di Visual Studio](optimize-visual-studio-performance.md)

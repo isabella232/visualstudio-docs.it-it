@@ -1,5 +1,7 @@
 ---
 title: Modificare l'esperienza di avvio
+description: Scopri come personalizzare l'esperienza di avvio in modo che Visual Studio si apra con gli strumenti più utili per te.
+ms.custom: SEO-VS-2020
 ms.date: 02/01/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 827ac67840f272e17cec6a7882a02b58dddbf925
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567216"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006263"
 ---
 # <a name="customize-startup"></a>Personalizzare l'avvio
 
@@ -67,7 +69,7 @@ Per installare una pagina iniziale personalizzata, aprire il file con estensione
 > [!TIP]
 > Se un errore in una pagina iniziale personalizzata determina un arresto anomalo di Visual Studio, è possibile aprire Visual Studio in modalità sicura e quindi impostare l'uso della pagina iniziale predefinita. Vedere [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
 

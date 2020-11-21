@@ -1,5 +1,7 @@
 ---
 title: Codifica e caratteri di interruzione di riga
+description: Informazioni sui caratteri interpretati da Visual Studio come interruzioni di riga e sulla modalità di mantenimento della codifica originale e dei caratteri di interruzione di riga.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6634a0b2715fb83a397b5e8cd0c8c68274771e2a
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 889af1c0fd28224b2f31eb80bbeecad28346cd1c
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045592"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006640"
 ---
 # <a name="encodings-and-line-endings"></a>Codifiche e interruzioni di riga
 
@@ -49,14 +51,14 @@ Quando si apre un file con caratteri di interruzione di riga diversi, è possibi
 ![Opzioni di salvataggio avanzate - finestra di dialogo](media/line_endings.png)
 
 > [!NOTE]
-> Se il comando **Opzioni di salvataggio avanzate** non è disponibile nel menu **File** , è possibile aggiungerlo. 
-> 1. Scegliere **strumenti** , **Personalizza** , 
-> 1. Scegliere la scheda **comandi** , selezionare il pulsante di opzione **barra dei menu** e nell'elenco a discesa corrispondente scegliere **file** . Scegliere il pulsante **Aggiungi comando** . 
-> 1. Nella finestra di dialogo **Aggiungi comando** , in **Categorie** scegliere **File** e quindi nell'elenco **Comandi** scegliere **Opzioni di salvataggio avanzate** . Scegliere il pulsante **OK** .
-> 1. Usare i pulsanti **Sposta su** e **Sposta giù** per spostare il comando in qualsiasi posizione nel menu. Scegliere **Chiudi** per chiudere la finestra di dialogo **Personalizza** . 
+> Se il comando **Opzioni di salvataggio avanzate** non è disponibile nel menu **File**, è possibile aggiungerlo. 
+> 1. Scegliere **strumenti**, **Personalizza**, 
+> 1. Scegliere la scheda **comandi** , selezionare il pulsante di opzione **barra dei menu** e nell'elenco a discesa corrispondente scegliere **file**. Scegliere il pulsante **Aggiungi comando** . 
+> 1. Nella finestra di dialogo **Aggiungi comando**, in **Categorie** scegliere **File** e quindi nell'elenco **Comandi** scegliere **Opzioni di salvataggio avanzate**. Scegliere il pulsante **OK** .
+> 1. Usare i pulsanti **Sposta su** e **Sposta giù** per spostare il comando in qualsiasi posizione nel menu. Scegliere **Chiudi** per chiudere la finestra di dialogo **Personalizza**. 
 > Per altre informazioni, vedere [Personalizzazione di un menu o di una barra degli strumenti](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
-> In alternativa, è possibile accedere alla finestra di dialogo **Opzioni di salvataggio avanzate** scegliendo **file**  >  **Salva \<file\> con nome** . Nella finestra di dialogo **Salva file con nome** scegliere il triangolo a discesa accanto al pulsante **Salva** e quindi scegliere **Salva con codifica** .
+> In alternativa, è possibile accedere alla finestra di dialogo **Opzioni di salvataggio avanzate** scegliendo **file**  >  **Salva \<file\> con nome**. Nella finestra di dialogo **Salva file con nome** scegliere il triangolo a discesa accanto al pulsante **Salva** e quindi scegliere **Salva con codifica**.
 
 ## <a name="see-also"></a>Vedi anche
 

@@ -1,5 +1,7 @@
 ---
 title: Trovare e installare le estensioni
+description: Informazioni sulle estensioni in Visual Studio e su come gestirle in modo da disporre di controlli, esempi, modelli, strumenti e altri componenti necessari.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2019
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5d4cf36d722c260f52584b16557bcb8d7cda83c
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594409"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006536"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Gestire le estensioni per Visual Studio
 
@@ -65,7 +67,7 @@ Se si tenta di installare un'estensione con dipendenze, il programma di installa
 
 ### <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Installare senza usare la finestra di dialogo Estensioni e aggiornamenti
 
-Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. La finestra **Tools**  >  di dialogo strumenti**estensioni e aggiornamenti** non consente di rilevare questi file, ma è possibile installare un file *VSIX* facendo doppio clic sul file o selezionando il file e premendo **invio**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per abilitarla, disabilitarla o disinstallarla.
+Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. La finestra **Tools**  >  di dialogo strumenti **estensioni e aggiornamenti** non consente di rilevare questi file, ma è possibile installare un file *VSIX* facendo doppio clic sul file o selezionando il file e premendo **invio**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per abilitarla, disabilitarla o disinstallarla.
 
 > [!NOTE]
 > - Visual Studio Marketplace contiene estensioni VSIX e MSI. La finestra di dialogo estensioni e aggiornamenti non consente di abilitare o disabilitare le estensioni basate su MSI.
@@ -79,7 +81,7 @@ Le estensioni che sono state incluse in file con estensione *vsix* possono esser
 
 Per installare le estensioni in Visual Studio:
 
-1. Da **estensioni**  >  **Gestisci estensioni**trovare l'estensione che si vuole installare. (se si conosce il nome dell'estensione o parte di esso, è possibile eseguire la ricerca nella finestra di**ricerca**).
+1. Da **estensioni**  >  **Gestisci estensioni** trovare l'estensione che si vuole installare. (se si conosce il nome dell'estensione o parte di esso, è possibile eseguire la ricerca nella finestra di **ricerca**).
 
 2. Selezionare **Download**.
 
@@ -89,7 +91,7 @@ Se si tenta di installare un'estensione con dipendenze, il programma di installa
 
 ### <a name="install-without-using-the-manage-extensions-dialog-box"></a>Installare senza usare la finestra di dialogo Gestisci estensioni
 
-Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. La finestra **Extensions**  >  di dialogo estensioni**Gestione estensioni** non è in grado di rilevare questi file, ma è possibile installare un file *VSIX* facendo doppio clic sul file o selezionando il file e premendo **invio**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Gestisci estensioni** per abilitarla, disabilitarla o disinstallarla.
+Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. La finestra **Extensions**  >  di dialogo estensioni **Gestione estensioni** non è in grado di rilevare questi file, ma è possibile installare un file *VSIX* facendo doppio clic sul file o selezionando il file e premendo **invio**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Gestisci estensioni** per abilitarla, disabilitarla o disinstallarla.
 
 > [!NOTE]
 > - Visual Studio Marketplace contiene estensioni VSIX e MSI. La finestra di dialogo Gestisci estensioni non può abilitare o disabilitare le estensioni basate su MSI.
@@ -106,13 +108,13 @@ Se si desidera interrompere l'utilizzo di un'estensione, è possibile disabilita
 
 ## <a name="per-user-and-administrative-extensions"></a>Estensioni amministrative e per utente
 
-La maggior parte delle estensioni è per singolo utente e sono installate nella cartella *%LocalAppData%\Microsoft\VisualStudio \\<Visual Studio versione \> \Extensions \\ * . Alcune estensioni sono estensioni amministrative e sono installate nella cartella * \<Visual Studio installation folder> \Common7\IDE\Extensions \\ * .
+La maggior parte delle estensioni è per singolo utente e sono installate nella cartella *%LocalAppData%\Microsoft\VisualStudio \\<Visual Studio versione \> \Extensions \\* . Alcune estensioni sono estensioni amministrative e sono installate nella cartella *\<Visual Studio installation folder> \Common7\IDE\Extensions \\* .
 
 Per proteggere il sistema da estensioni che possono contenere errori o codice dannoso, è possibile limitare il caricamento delle estensioni per utente nei soli in casi in cui Visual Studio sia in esecuzione con autorizzazioni utente normali. Ciò significa che le estensioni per utente sono disabilitate quando Visual Studio viene eseguito con autorizzazioni elevate.
 
 Per limitare il caricamento delle estensioni per utente:
 
-1. Aprire la pagina Opzioni estensioni (**strumenti**  >  **Opzioni**  >  **Environment**  >  **estensioni**di ambiente).
+1. Aprire la pagina Opzioni estensioni (**strumenti**  >  **Opzioni**  >  **Environment**  >  **estensioni** di ambiente).
 
 2. Deselezionare la casella **di controllo carica estensioni per utente quando viene eseguito come amministratore** .
 
@@ -204,7 +206,7 @@ Quando si installa un esempio online, la soluzione viene memorizzata in due posi
 
 - Aggiornare la copia master di un esempio installato quando è disponibile una notifica di aggiornamento.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Visual Studio Marketplace](https://marketplace.visualstudio.com)
 - [SDK di Visual Studio](../extensibility/visual-studio-sdk.md)

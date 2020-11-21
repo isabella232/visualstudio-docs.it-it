@@ -1,5 +1,7 @@
 ---
 title: Dati di diagnostica e i log generati dal sistema
+description: Informazioni sui log generati dal sistema di Visual Studio, sui tipi di dati raccolti e sul modo in cui vengono usati per risolvere i problemi e migliorare la qualità del prodotto.
+ms.custom: SEO-VS-2020
 ms.date: 05/24/2018
 ms.topic: conceptual
 author: jillre
@@ -7,12 +9,12 @@ ms.author: michma
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f3774a816ca31bfcdd4013d35dadbb1737e5ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93f450eab5879991f45f4a924338d4a277d13544
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387252"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95005925"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Log generati dal sistema raccolti da Visual Studio
 
@@ -24,7 +26,7 @@ Visual Studio raccoglie i log generati dal sistema per arresti anomali, non risp
 
 - Per l'utilizzo elevato della CPU e la mancanza di risposta, vengono raccolte le analisi degli stack dei thread di Visual Studio interessati.
 
-- Per i casi in cui le tracce dello stack di alcuni thread non sono sufficienti per determinare la causa principale del problema, ad esempio, arresti anomali, mancata risposta o utilizzo elevato della memoria, viene raccolto un *dump*della memoria. Il dump rappresenta lo stato del processo nel momento in cui si è verificato l'errore.
+- Per i casi in cui le tracce dello stack di alcuni thread non sono sufficienti per determinare la causa principale del problema, ad esempio, arresti anomali, mancata risposta o utilizzo elevato della memoria, viene raccolto un *dump* della memoria. Il dump rappresenta lo stato del processo nel momento in cui si è verificato l'errore.
 
 - Per le condizioni di errore imprevisto, ad esempio un'eccezione durante il tentativo di scrivere in un file su disco, vengono raccolte informazioni sull'eccezione. Le informazioni includono il nome dell'eccezione, l'analisi dello stack del thread in cui si è verificata l'eccezione, il messaggio associato all'eccezione e altre informazioni sull'eccezione specifica.
 
@@ -70,7 +72,7 @@ Gli autori delle estensioni devono limitare l'esposizione delle informazioni per
 
 Considerate le finalità della raccolta dei dati e i vincoli di accesso e memorizzazione, si consiglia di usare le impostazioni di privacy predefinite di Visual Studio e Windows. È possibile tuttavia [rifiutare esplicitamente](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) il programma Analisi utilizzo software di Visual Studio. Per rifiutare esplicitamente la raccolta di log generati dal sistema per tutti i programmi, vedere [Diagnostica, feedback e privacy in Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy). Le opzioni possono variare a seconda della versione di Windows in uso.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Analisi utilizzo software di Visual Studio](visual-studio-experience-improvement-program.md)
 - [Diagnostica, feedback e privacy in Windows 10](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)

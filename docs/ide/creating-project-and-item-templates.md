@@ -1,5 +1,7 @@
 ---
 title: Modelli per progetti e file
+description: Informazioni sul modo in cui i modelli di progetto e di elemento forniscono stub riutilizzabili che forniscono agli utenti un codice e una struttura di base.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7ce85818e0cce4a6e78f5e2ec5901452ebd83f9
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313796"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006302"
 ---
 # <a name="project-and-item-templates"></a>Modelli di progetti e di elementi
 
@@ -67,7 +69,7 @@ Quando questi file vengono compressi in un file con estensione *zip* e inseriti 
 
 Per ulteriori informazioni sulle cartelle dei modelli, vedere [procedura: individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: creare modelli di progetto](../ide/how-to-create-project-templates.md)
 - [Procedura: creare modelli di elementi](../ide/how-to-create-item-templates.md)

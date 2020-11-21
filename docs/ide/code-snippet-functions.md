@@ -1,5 +1,7 @@
 ---
 title: Funzioni dei frammenti di codice
+description: Informazioni sulle funzioni GenerateSwitchCases (EnumerationLiteral), ClassName () e SimpleTypeName (TypeName) disponibili per l'uso con i frammenti di codice C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7df85c429794d61028d5304108d289dfe9bf496
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6529f4f82f7a8a6862ae85adbf170d2fb6f8706
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594240"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006510"
 ---
 # <a name="code-snippet-functions"></a>Funzioni dei frammenti di codice
 
@@ -155,7 +157,7 @@ In questo esempio viene illustrato come usare la funzione `SimpleTypeName`. Quan
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Elemento Function](../ide/code-snippets-schema-reference.md#function-element)
 - [Riferimento dello schema dei frammenti di codice](../ide/code-snippets-schema-reference.md)

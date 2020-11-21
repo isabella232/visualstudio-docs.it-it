@@ -1,5 +1,7 @@
 ---
 title: Cerca nei file
+description: Informazioni sulla funzionalità Cerca nei file e su come usarla per eseguire ricerche in un set di file specifico.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a32720475bda124c563d45133028f43b4f1b9cd
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: c9aa0d1523c8ef8be73a3c5e73255ce1eeb32d57
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344507"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006575"
 ---
 # <a name="find-in-files"></a>Cerca nei file
 
@@ -55,7 +57,7 @@ Per cercare una nuova stringa di testo o espressione, specificarla nella casella
 L'opzione selezionata dall'elenco a discesa **Cerca in** determina se la funzione **Cerca nei file** eseguirà la ricerca solo nei file attualmente attivi oppure in tutti i file archiviati all'interno di determinate cartelle. Selezionare un ambito di ricerca nell'elenco o fare clic sul pulsante **Sfoglia (...)** per visualizzare la finestra di dialogo **Seleziona cartelle di ricerca** e immettere il set di directory desiderato. È anche possibile digitare un percorso direttamente nella casella **Cerca in**.
 
 > [!WARNING]
-> Con le opzioni **Intera soluzione** o **Progetto corrente** , la ricerca non viene eseguita nei file di progetto e di soluzione. Se si vuole cercare in file di progetto, scegliere una cartella di ricerca.
+> Con le opzioni **Intera soluzione** o **Progetto corrente**, la ricerca non viene eseguita nei file di progetto e di soluzione. Se si vuole cercare in file di progetto, scegliere una cartella di ricerca.
 
 > [!NOTE]
 > Se l'opzione **Cerca in** selezionata fa sì che venga cercato un file estratto dal controllo del codice sorgente, la ricerca verrà eseguita solo nella versione del file scaricata nel computer locale.
@@ -106,7 +108,7 @@ Mostra un elenco di file che contengono le corrispondenze invece di visualizzare
 
 Aggiunge i risultati della ricerca a quelli della ricerca precedente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md)
 - [Sostituisci nei file](../ide/replace-in-files.md)

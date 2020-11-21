@@ -1,5 +1,7 @@
 ---
 title: Personalizzare il layout delle finestre
+description: Informazioni su come personalizzare le caratteristiche di Windows per creare layout più adatti per diversi flussi di lavoro di sviluppo.
+ms.custom: SEO-VS-2020
 ms.date: 07/31/2020
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2135183a474e29229d941bbd47af8d6abc263e49
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c433a6faf3eab9dd959cc25f26033c74852c0899
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87546072"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006666"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizzare il layout delle finestre in Visual Studio
 
@@ -52,7 +54,7 @@ Quando è necessario visualizzare o modificare due percorsi contemporaneamente i
 
 #### <a name="preview-tab-document-windows"></a>Scheda Anteprima (finestre dei documenti)
 
-Nella scheda **Anteprima** è possibile visualizzare i file nell'editor senza aprirli. È possibile visualizzare in anteprima i file scegliendo i file in **Esplora soluzioni**, durante il debug quando si esegue l'istruzione nei file, con **Vai a definizione**e quando si esplorano i risultati di una ricerca. I file di anteprima vengono visualizzati in una scheda a destra della scheda del documento. Il file viene aperto per la modifica se viene modificato o se si sceglie **Apri**.
+Nella scheda **Anteprima** è possibile visualizzare i file nell'editor senza aprirli. È possibile visualizzare in anteprima i file scegliendo i file in **Esplora soluzioni**, durante il debug quando si esegue l'istruzione nei file, con **Vai a definizione** e quando si esplorano i risultati di una ricerca. I file di anteprima vengono visualizzati in una scheda a destra della scheda del documento. Il file viene aperto per la modifica se viene modificato o se si sceglie **Apri**.
 
 ::: moniker range="vs-2019"
 
@@ -62,7 +64,7 @@ Nella scheda **Anteprima** è possibile visualizzare i file nell'editor senza ap
 
 È possibile applicare le schede verticali dei documenti nei modi seguenti:
 
-- Scegliere **strumenti**  >  **Opzioni**  >  **ambiente**  >  **schede e finestre** dalla barra dei menu. Quindi, dal controllo **Layout scheda Set** , scegliere **Top**, **Left**o **right** dall'elenco a discesa.
+- Scegliere **strumenti**  >  **Opzioni**  >  **ambiente**  >  **schede e finestre** dalla barra dei menu. Quindi, dal controllo **Layout scheda Set** , scegliere **Top**, **Left** o **right** dall'elenco a discesa.
 
 - Fare clic con il pulsante destro del mouse su una scheda, scegliere **Imposta layout scheda**, quindi scegliere a **sinistra** o a **destra**. Per ripristinare la posizione predefinita delle schede, scegliere **superiore**.
 
@@ -167,7 +169,7 @@ Creare prima di tutto una soluzione di test che include due progetti, ognuno con
 
 3. Premere **CTRL** + **ALT** + **X** per visualizzare la finestra **casella degli strumenti** . Se la finestra è ancorata, trascinarla in modo da spostarla nel punto in cui si vuole posizionarla.
 
-4. Premere **F5** per attivare la modalità di debug di Visual Studio. Modificare la posizione delle finestre di debug **auto**, **stack di chiamate**e **output** nel modo desiderato. Il layout che si sta per creare verrà applicato sia alla modalità di modifica che a quella di debug.
+4. Premere **F5** per attivare la modalità di debug di Visual Studio. Modificare la posizione delle finestre di debug **auto**, **stack di chiamate** e **output** nel modo desiderato. Il layout che si sta per creare verrà applicato sia alla modalità di modifica che a quella di debug.
 
 5. Quando i layout in modalità di debug e di modifica sono quelli desiderati, scegliere **finestra**  >  **Salva layout finestra**. Assegnare a questo layout il nome "Finestra di progettazione".
 
@@ -204,6 +206,6 @@ Per ricordare i tasti di scelta rapida assegnati al layout, scegliere **finestra
 
 Il roaming di questi layout verrà effettuato automaticamente tra le edizioni di Visual Studio, oltre che tra le istanze di Blend in computer diversi e da una qualsiasi edizione Express a una qualsiasi altra organizzazione Express. Tuttavia, i layout non vengono spostati tra Visual Studio, Blend ed Express.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: spostarsi nell'IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)

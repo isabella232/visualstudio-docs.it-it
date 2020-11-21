@@ -1,5 +1,7 @@
 ---
 title: Casella Trova/Comando
+description: Informazioni sulla casella Trova/comando e su come usarlo per cercare testo ed eseguire i comandi di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99b50c0503d313d4482d8370071220dbf1403d9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 341362fe74d4d8a6edbf10afec1a0d49998e857d
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591528"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006601"
 ---
 # <a name="findcommand-box"></a>Trova/Comando (casella)
 
@@ -52,7 +54,7 @@ Un accento circonflesso ( **^** ) in un comando indica che il carattere immediat
 
 L'accento circonflesso presenta lo stesso funzionamento sia all'interno sia all'esterno delle virgolette. Se corrisponde all'ultimo carattere sulla riga, viene ignorato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Finestra di comando](../ide/reference/command-window.md)
 - [Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md)

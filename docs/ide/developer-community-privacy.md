@@ -1,5 +1,7 @@
 ---
 title: Dati privati per segnalazioni di problemi
+description: Informazioni su come proteggere i dati privati quando si creano report sui problemi che la community degli sviluppatori può rivedere.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6055592896779640e50b4bfaf28d951aa3309433
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 82c89f2f6ec2a1a9bc6c87a600c355226b2f3da4
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739967"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95005938"
 ---
 # <a name="developer-community-data-privacy"></a>Privacy dei dati della community degli sviluppatori
 
@@ -88,7 +90,7 @@ Se la **segnalazione del problema** viene avviata da Visual Studio, Microsoft ra
   > ![Segnala un problema: riepilogo dei log raccolti](media/report-a-problem-logs-collected.png)
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Come segnalare un problema con Visual Studio](how-to-report-a-problem-with-visual-studio.md)
 - [Segnalazioni e privacy](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

@@ -1,5 +1,7 @@
 ---
 title: Cercare e sostituire testo e selezione di più punti di inserimento
+description: Informazioni sulla funzionalità Trova e Sostituisci e su come usarla per trovare e sostituire le istanze di un modello.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2020
 ms.topic: conceptual
 f1_keywords:
@@ -30,12 +32,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b878ccbf6714987599d1585ca9c0dc3ceb759144
-ms.sourcegitcommit: 4450abc99453ccaf8936449bbff437c5b9efa022
+ms.openlocfilehash: 475f0249bd6af8176fba3ecc79ad758cc6ceceb7
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92334194"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006588"
 ---
 # <a name="find-and-replace-text"></a>Cercare e sostituire testo
 
@@ -81,7 +83,7 @@ Una versione del controllo di **ricerca** è disponibile anche in alcune finestr
 
 ### <a name="find-results"></a>Risultati ricerca
 
-Quando si sceglie **Find All ** (Trova tutti), si apre una finestra **Risultati ricerca** che elenca le corrispondenze della ricerca. Selezionando un risultato nell'elenco viene visualizzato il file associato ed evidenziata la corrispondenza. Se il file non è già aperto per la modifica, viene aperto in una scheda di anteprima a destra della finestra scheda. È possibile utilizzare il controllo **Trova** per eseguire la ricerca nell'elenco dei **Risultati ricerca**.
+Quando si sceglie **Find All** (Trova tutti), si apre una finestra **Risultati ricerca** che elenca le corrispondenze della ricerca. Selezionando un risultato nell'elenco viene visualizzato il file associato ed evidenziata la corrispondenza. Se il file non è già aperto per la modifica, viene aperto in una scheda di anteprima a destra della finestra scheda. È possibile utilizzare il controllo **Trova** per eseguire la ricerca nell'elenco dei **Risultati ricerca**.
 
 ### <a name="create-custom-search-folder-sets"></a>Creare set personalizzati di cartelle di ricerca
 
@@ -132,7 +134,7 @@ Alcuni comandi sono disponibili anche nel menu **Modifica**, in **Più punti di 
 
 :::image type="content" source="media/edit-menu-multiple-carets-find-replace.png" alt-text="Screenshot del menu di scelta rapida per più elementi di interesse in Visual Studio":::
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
 - [Refactoring del codice in Visual Studio](../ide/refactoring-in-visual-studio.md)

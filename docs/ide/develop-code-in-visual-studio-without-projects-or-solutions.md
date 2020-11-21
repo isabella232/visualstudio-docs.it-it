@@ -1,5 +1,7 @@
 ---
 title: Sviluppare codice senza progetti o soluzioni
+description: Scopri come sviluppare codice direttamente in Visual Studio senza la necessità di progetti o soluzioni.
+ms.custom: SEO-VS-2020
 ms.date: 06/22/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68665acfcc3ea00f118dc19cf155cb3e6f5d1b36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d706ccdc07abcc91e956878e1bc180be9c542223
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769660"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006003"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Sviluppare codice in Visual Studio senza progetti o soluzioni
 
@@ -33,10 +35,10 @@ Dopo aver aperto i file di codice in Visual Studio, **Esplora soluzioni** consen
 - Nel menu di scelta rapida (pulsante destro del mouse) di una cartella contenente codice scegliere il comando **Apri in Visual Studio**.
 
 ::: moniker range="vs-2017"
-- Scegliere il collegamento **Apri cartella** nella **pagina iniziale**di Visual Studio.
+- Scegliere il collegamento **Apri cartella** nella **pagina iniziale** di Visual Studio.
 
     > [!IMPORTANT]
-    > Non tutto il codice può essere aperto tramite il collegamento **Apri cartella** della **pagina iniziale**di Visual Studio. Se, ad esempio, il file di codice è stato salvato come parte di una soluzione &mdash; in altre parole, in un file sln &mdash; è necessario usare una delle altre opzioni elencate qui per aprire il codice.
+    > Non tutto il codice può essere aperto tramite il collegamento **Apri cartella** della **pagina iniziale** di Visual Studio. Se, ad esempio, il file di codice è stato salvato come parte di una soluzione &mdash; in altre parole, in un file sln &mdash; è necessario usare una delle altre opzioni elencate qui per aprire il codice.
 
 ::: moniker-end
 
@@ -70,7 +72,7 @@ L'esempio seguente mostra come clonare un repository GitHub e quindi aprire il r
 
 1. Scegliere il pulsante **Clona** per clonare i file del progetto in un repository Git locale. L'operazione potrebbe richiedere diversi minuti a seconda delle dimensioni del repository.
 
-1. Dopo aver clonato il repository nel sistema, in **Team Explorer**scegliere il comando **Apri** nel menu di scelta rapida (clic con il pulsante destro del mouse) del repository appena clonato.
+1. Dopo aver clonato il repository nel sistema, in **Team Explorer** scegliere il comando **Apri** nel menu di scelta rapida (clic con il pulsante destro del mouse) del repository appena clonato.
 
    ![Repository clonato](./media/VSIDE_Code_Clone3.png)
 
@@ -105,7 +107,7 @@ Se la codebase contiene codice Python o JavaScript, non è necessario configurar
 
    ![Carichi di lavoro Sviluppo Node.js e Sviluppo Python](media/python_nodejs_workloads.png)
 
-1. In**Esplora soluzioni** scegliere il comando **Imposta come elemento di avvio** nel menu di scelta rapida di un file JavaScript o Python.
+1. In **Esplora soluzioni** scegliere il comando **Imposta come elemento di avvio** nel menu di scelta rapida di un file JavaScript o Python.
 
 1. Scegliere il pulsante **Avvia** per avviare il debug.
 
@@ -123,7 +125,7 @@ Il testo del pulsante **Avvia** cambia per indicare che il progetto è l'element
 
 ![Progetto sul pulsante Avvia](media/customize-start-button-project.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Personalizzare le attività di compilazione e debug](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
 - [Progetti Apri cartella per C++](/cpp/build/open-folder-projects-cpp)

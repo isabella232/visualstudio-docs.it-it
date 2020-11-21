@@ -1,5 +1,7 @@
 ---
 title: Opzioni di stile di codice e pulizia del codice
+description: Informazioni su come configurare Visual Studio per applicare le preferenze di stile del codice usando i comandi di pulizia del codice (Visual Studio 2019) e Format Document (Visual Studio 2017).
+ms.custom: SEO-VS-2020
 ms.date: 04/25/2019
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +12,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 82eec2a911ec113c42423fe14b06539e465e8bb3
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 9172fff2dde1528c5ea382aea996d316e0738ea0
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658386"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006679"
 ---
 # <a name="code-style-preferences"></a>Preferenze di stile per il codice
 
@@ -58,7 +60,7 @@ Le opzioni impostate in questa finestra sono applicabili all'account di personal
 
 ### <a name="preference-and-severity"></a>Preferenza e gravità
 
-Per ogni impostazione di stile del codice in questa pagina è possibile impostare i valori **Preferenza** e **Gravità** usando i menu a discesa disponibili per ogni riga. La gravità può essere impostata su **Solo refactoring**, **Suggerimento**, **Avviso** o **Errore**. Se si vogliono abilitare le [Azioni rapide](../ide/quick-actions.md) per uno stile di codice, assicurarsi che l'opzione **Gravità** sia impostata su un valore diverso da **Solo refactoring**. Viene visualizzata la lampadina delle **azioni rapide** della lampadina, dell'errore della ![ lampadina di ](media/light-bulb-dropdown.png) ![ errore o dell' ](media/error-bulb.png) icona del cacciavite, ![ ](media/screwdriver.png) quando viene usato uno stile non preferito ed è possibile scegliere un'opzione nell'elenco **azioni rapide** per riscrivere automaticamente il codice nello stile preferito.
+Per ogni impostazione di stile del codice in questa pagina è possibile impostare i valori **Preferenza** e **Gravità** usando i menu a discesa disponibili per ogni riga. La gravità può essere impostata su **Solo refactoring**, **Suggerimento**, **Avviso** o **Errore**. Se si vogliono abilitare le [Azioni rapide](../ide/quick-actions.md) per uno stile di codice, assicurarsi che l'opzione **Gravità** sia impostata su un valore diverso da **Solo refactoring**. La lampadina **azioni rapide** :::image type="icon" source="media/light-bulb-dropdown.png"::: , la lampadina di errore o l'icona del :::image type="icon" source="media/error-bulb.png"::: cacciavite :::image type="icon" source="media/screwdriver.png"::: viene visualizzata quando viene usato uno stile non preferito ed è possibile scegliere un'opzione nell'elenco **azioni rapide** per riscrivere automaticamente il codice nello stile preferito.
 
 ::: moniker range=">=vs-2019"
 
@@ -109,7 +111,7 @@ Se si vogliono applicare le impostazioni per gli stili di codice ogni volta che 
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Azioni rapide](../ide/quick-actions.md)
 - [Impostazioni della convenzione di codifica .NET per EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)

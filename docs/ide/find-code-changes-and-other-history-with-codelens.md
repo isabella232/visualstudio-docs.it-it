@@ -1,5 +1,7 @@
 ---
 title: Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens
+description: Informazioni su CodeLens e su come usarlo per esplorare la cronologia del codice senza dover uscire dall'editor.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bdbecb12897602a70c590b9cee64b992193b7d
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 485287239a13f61d10ee39bad854a0f3bdae4f55
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928502"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006705"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens
 
@@ -128,7 +130,7 @@ Per ottenere altre informazioni su una modifica, fare clic con il pulsante destr
 
 Il team può essere costituito da più branch, ad esempio un branch principale e un branch figlio di sviluppo, per ridurre il rischio di danneggiare la stabilità del codice.
 
-![CodeLens: individuare il punto in cui il codice è stato sottoposto a branching](../ide/media/codelensfirstbranchconceptual.png)
+![CodeLens: trovare le modifiche nel branch corrente](../ide/media/codelensfirstbranchconceptual.png)
 
 È possibile individuare il numero di persone che hanno modificato il codice e il numero di modifiche apportate nel branch principale premendo **ALT** + **6**:
 
@@ -156,7 +158,7 @@ Per sapere quando il codice è stato sottoposto a branching, passare al codice n
 
 È possibile vedere quando sono state unite le modifiche, in modo da poter determinare quali modifiche sono incluse nel branch:
 
-![CodeLens - Merge delle modifiche tra branch](../ide/media/codelensbranchmergedconceptual.png)
+![CodeLens-individuare quando sono state unite le modifiche](../ide/media/codelensbranchmergedconceptual.png)
 
 Ad esempio, il codice nel branch principale include ora la correzione di bug del branch di sviluppo ("Dev"):
 
@@ -164,7 +166,7 @@ Ad esempio, il codice nel branch principale include ora la correzione di bug del
 
 ### <a name="compare-an-incoming-change-with-your-local-version"></a>Confrontare una modifica in arrivo con la versione locale
 
-Confrontare una modifica in arrivo con la versione locale premendo **MAIUSC** + **F10**oppure facendo doppio clic sull'insieme di modifiche.
+Confrontare una modifica in arrivo con la versione locale premendo **MAIUSC** + **F10** oppure facendo doppio clic sull'insieme di modifiche.
 
 ![CodeLens: confronto della modifica in arrivo con quella locale](../ide/media/codelens-branch-incoming-change-menu.png)
 
@@ -354,6 +356,6 @@ Per usare la tastiera:
 
 **R:** Ricompilare il progetto per ottenere gli indicatori test di CodeLens da caricare nel file. Per migliorare le prestazioni, Visual Studio non recupera più le informazioni sull'origine per gli indicatori test quando vengono caricati file di codice. Gli indicatori test vengono caricati dopo una compilazione o quando si seleziona un test facendo doppio clic in **Esplora Test**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)

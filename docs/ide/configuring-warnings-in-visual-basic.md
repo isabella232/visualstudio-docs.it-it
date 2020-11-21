@@ -1,5 +1,7 @@
 ---
 title: Configurazione degli avvisi in Visual Basic
+description: Informazioni su come configurare gli avvisi in Visual Basic che, a sua volta, consentiranno di scrivere codice più pulito, più veloce e migliore con meno bug.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd5239c4fd01aefa247fc63a66af3e872dbecbb6
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114725"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006406"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configurazione degli avvisi in Visual Basic
 
@@ -39,7 +41,7 @@ L'opzione della riga di comando **/warnaserror** del compilatore consente anche 
 |Opzione da riga di comando|Specifica|
 | - |---------------|
 |`/warnaserror+`|Considera tutti gli avvisi come errori.|
-|`/warnsaserror`-|Non considera gli avvisi come errori. Questa è l'impostazione predefinita.|
+|`/warnsaserror`-|Non considera gli avvisi come errori. Questo è il valore predefinito.|
 |`/warnaserror+:<warning list` `>`|Considera come errori gli avvisi specifici elencati in base al numero ID dell'errore in un elenco delimitato da virgole.|
 |`/warnaserror-:<warning list>`|Non considera come errori gli avvisi specifici elencati in base al numero ID dell'errore in un elenco delimitato da virgole.|
 |`/nowarn`|Non segnala gli avvisi.|
@@ -47,7 +49,7 @@ L'opzione della riga di comando **/warnaserror** del compilatore consente anche 
 
 L'elenco degli avvisi contiene i numeri ID errore degli avvisi da considerare come errori, usabili con le opzioni della riga di comando per attivare o disattivare avvisi specifici. Se l'elenco degli avvisi contiene un numero non valido, viene restituito un errore.
 
-## <a name="examples"></a>Esempi
+## <a name="examples"></a>Esempio
 Questa tabella di esempi di argomenti della riga di comando descrive la funzione di ogni argomento.
 
 |Argomento|Descrizione|
@@ -117,7 +119,7 @@ Viene generato quando un blocco `Catch` non viene mai raggiunto perché è corre
 
 ID: 42029, 42031
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Tipi di errore](/dotnet/visual-basic/programming-guide/language-features/error-types)
 - [Prova... Rileva... Finally (istruzione)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)

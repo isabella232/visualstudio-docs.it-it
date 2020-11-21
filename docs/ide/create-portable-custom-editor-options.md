@@ -1,5 +1,7 @@
 ---
 title: Impostazioni EditorConfig
+description: Informazioni su come aggiungere un file EditorConfig al progetto o alla codebase per applicare stili di codifica coerenti per tutti gli utenti che lavorano nella codebase.
+ms.custom: SEO-VS-2020
 ms.date: 09/02/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -7,12 +9,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 277e5cd03d4006ced0791356be73ca1fcbe5c217
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: a1f66368972614347df9eebe33af435987ea9cc8
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91659251"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006497"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Creare impostazioni personalizzate e portabili per l'editor con EditorConfig
 
@@ -31,7 +33,7 @@ Quando si aggiunge un file EditorConfig al progetto in Visual Studio, le nuove r
 
 ::: moniker range="=vs-2017"
 
-Quando si aggiunge un file EditorConfig al progetto in Visual Studio, le nuove righe di codice vengono formattate in base alle impostazioni di EditorConfig. La formattazione del codice esistente non viene modificata a meno che non si formatti il documento (**modificare**il  >  **Advanced**  >  **documento con formato** avanzato o **CTRL** + **K**, **CTRL** + **D** nel profilo predefinito). La formattazione del documento influiscono solo sulle impostazioni dello spazio vuoto, ad esempio lo stile di rientro, a meno che non sia stato configurato il formato documento per [eseguire la pulizia del codice](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
+Quando si aggiunge un file EditorConfig al progetto in Visual Studio, le nuove righe di codice vengono formattate in base alle impostazioni di EditorConfig. La formattazione del codice esistente non viene modificata a meno che non si formatti il documento (**modificare** il  >  **Advanced**  >  **documento con formato** avanzato o **CTRL** + **K**, **CTRL** + **D** nel profilo predefinito). La formattazione del documento influiscono solo sulle impostazioni dello spazio vuoto, ad esempio lo stile di rientro, a meno che non sia stato configurato il formato documento per [eseguire la pulizia del codice](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
 
  ::: moniker-end
 
@@ -80,7 +82,7 @@ Se il file EditorConfig viene rimosso dal progetto o dalla codebase e si vuole c
 
 1. Aprire un progetto o una soluzione in Visual Studio. Selezionare il progetto o il nodo della soluzione, a seconda che le impostazioni del file con estensione *editorconfig* siano da applicare a tutti i progetti nella soluzione o soltanto a uno. È anche possibile selezionare una cartella del progetto o della soluzione alla quale aggiungere il file con estensione *editorconfig*.
 
-1. Dalla barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**o premere **CTRL** + **MAIUSC** + **A**.
+1. Dalla barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento** o premere **CTRL** + **MAIUSC** + **A**.
 
    Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento** .
 
@@ -178,7 +180,7 @@ dir .editorconfig /s
 
 È possibile controllare l'ambito delle convenzioni EditorConfig impostando la proprietà ```root=true``` nel file con estensione *editorconfig* presente nella directory radice del repository o nella directory in cui si trova il progetto. Visual Studio cerca un file con estensione *editorconfig* nella directory del file aperto e in tutte le directory padre. La ricerca termina quando si raggiunge il filepath radice o se viene trovato un file con estensione *editorconfig* con ```root=true```.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [.NET code style conventions](/dotnet/fundamentals/code-analysis/code-style-rule-options) (Convenzioni di stile del codice .NET)
 - [Supporting EditorConfig for a language service](../extensibility/supporting-editorconfig.md) (Supporto di EditorConfig per un servizio di linguaggio)
