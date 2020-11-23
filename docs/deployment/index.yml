@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/17/2019
-  ms.openlocfilehash: 26c3ce01f656f77c578eaa78902bddb7fd844a7d
-  ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+  ms.openlocfilehash: f3ec7ac35844d149a63a76144f9fe6ba54db12e1
+  ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 09/11/2020
-  ms.locfileid: "90038491"
+  ms.lasthandoff: 11/19/2020
+  ms.locfileid: "94903910"
 landingContent:
 - title: Informazioni sulla distribuzione
   linkLists:
@@ -23,10 +23,12 @@ landingContent:
     links:
     - text: Presentazione della distribuzione
       url: deploying-applications-services-and-components.md
+- title: Introduzione (.NET Core, Python)
+  linkLists:
+  - linkListType: overview
+    links:
     - text: Eseguire la distribuzione in una cartella, in IIS o in Azure
       url: deploying-applications-services-and-components-resources.md
-- title: Introduzione
-  linkLists:
   - linkListType: quickstart
     links:
     - text: Eseguire la pubblicazione nel servizio app di Azure
@@ -37,18 +39,28 @@ landingContent:
       url: quickstart-deploy-to-a-web-site.md
     - text: Pubblicare in una cartella
       url: quickstart-deploy-to-local-folder.md
+    - text: Distribuire un'app .NET Core tramite ClickOnce
+      url: quickstart-deploy-using-clickonce-folder.md
 - title: Distribuire app .NET
   linkLists:
   - linkListType: tutorial
     links:
     - text: Distribuire app .NET Core
       url: /dotnet/core/deploying/deploy-with-vs
-    - text: Distribuire un'applicazione desktop tramite ClickOnce
+    - text: Distribuire un'app desktop di .NET Framework con ClickOnce
       url: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
-    - text: Compilare applicazioni ClickOnce dalla riga di comando
-      url: building-clickonce-applications-from-the-command-line.md
+    - text: Distribuire un'app desktop tramite un pacchetto di installazione
+      url: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
   - linkListType: how-to-guide
     links:
+    - text: Creare un pacchetto di un'app desktop per Windows Store
+      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
+- title: Distribuire app C++
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Eseguire la distribuzione tramite un pacchetto di installazione
+      url: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
     - text: Creare un pacchetto di un'app desktop per Windows Store
       url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
 - title: Distribuire app ASP.NET Core
@@ -61,31 +73,15 @@ landingContent:
       url: tutorial-import-publish-settings-iis.md
     - text: Pubblicare con Git
       url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
-- title: Distribuire app C++
+- title: Tipi di distribuzione aggiuntivi
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Distribuire con un progetto di installazione (C/C++)
-      url: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-    - text: Creare un pacchetto di un'app desktop per Windows Store
-      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-- title: Distribuire app Python
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Pubblicare nel servizio app di Linux
+    - text: Da app Python a servizio app di Linux
       url: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
-- title: Distribuire app Node.js
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Pubblicare nel servizio app di Linux
+    - text: Da app Node.js a servizio app di Linux
       url: ../javascript/publish-nodejs-app-azure.md
-- title: Distribuire pacchetti .NET in NuGet.org
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Eseguire la pubblicazione in NuGet.org (.NET Standard)
-      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
-    - text: Eseguire la pubblicazione in NuGet.org (.NET Framework)
-      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework
+    - text: Distribuire app in contenitori
+      url: ../containers/index.yml
+    - text: Pubblicare pacchetti NuGet
+      url: /nuget

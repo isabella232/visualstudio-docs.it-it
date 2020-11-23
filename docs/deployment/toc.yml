@@ -20,45 +20,45 @@
   items:
     - name: .NET
       items:
-        - name: Distribuire un'applicazione .NET Core con lo strumento di pubblicazione
-          href: /dotnet/core/deploying/deploy-with-vs
-        - name: Creare un pacchetto di un'app desktop per Microsoft Store
-          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Distribuire un'applicazione Windows di .NET con ClickOnce
           href: quickstart-deploy-using-clickonce-folder.md
         - name: Distribuire un'app desktop di .NET Framework con ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
+        - name: Creare un pacchetto del programma di installazione (desktop di Windows)
+          href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
+        - name: Creare un pacchetto di un'app desktop per Microsoft Store >>
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Compilare applicazioni ClickOnce dalla riga di comando
           href: building-clickonce-applications-from-the-command-line.md
     - name: ASP.NET
       items:
-        - name: Pubblicare un'app ASP.NET Core in Azure
+        - name: Pubblicare un'app ASP.NET Core in Azure >>
           href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
         - name: Importare impostazioni di pubblicazione ed eseguire la distribuzione in IIS
           href: tutorial-import-publish-settings-iis.md
         - name: Importare impostazioni di pubblicazione e distribuzione in Azure
           href: tutorial-import-publish-settings-azure.md
-        - name: Distribuzione continua di ASP.NET Core in Azure con Git
+        - name: Distribuzione continua di ASP.NET Core in Azure con Git >>
           href: /aspnet/core/publishing/azure-continuous-deployment
     - name: C++
       items:
-        - name: Distribuire un'app C/C++
-          href: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-        - name: Creare un pacchetto di un'app desktop per Microsoft Store
+        - name: Creare un pacchetto di installazione
+          href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
+        - name: Creare un pacchetto di un'app desktop per Microsoft Store >>
           href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: Distribuire un'app C tramite ClickOnce...
+        - name: Distribuire un'app ++/CLR tramite ClickOnce >>
           href: /cpp/windows/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
       items:
-        - name: Creare un pacchetto di un'app UWP tramite Visual Studio
+        - name: Creare un pacchetto di un'app UWP tramite Visual Studio >>
           href: /windows/uwp/packaging/packaging-uwp-apps
     - name: Node.js
       items:
-        - name: Pubblicare nel servizio app di Linux
+        - name: Eseguire la pubblicazione nel servizio app di Linux >>
           href: ../javascript/publish-nodejs-app-azure.md
     - name: Python
       items:
-        - name: Eseguire la pubblicazione nel servizio app di Azure
+        - name: Eseguire la pubblicazione nel servizio app di Azure >>
           href: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
 - name: Guide pratiche
   items:
