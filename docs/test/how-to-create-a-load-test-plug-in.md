@@ -1,5 +1,7 @@
 ---
 title: Creare un plug-in test di carico
+description: Informazioni su come creare un plug-in test di carico per eseguire il codice in momenti diversi durante l'esecuzione del test di carico, che può espandere o modificare la funzionalità del test di carico.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +14,12 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0abcc3865c21a4f4673331377af8d17b223c7875
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fee903c9fd2001b6c6d229e5786dd7ffb9037b9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288026"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441091"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Procedura: Creare un plug-in test di carico
 
@@ -40,7 +42,7 @@ ms.locfileid: "85288026"
 
 3. Aggiungere alla soluzione un nuovo progetto **Libreria di classi**. (In **Esplora soluzioni**, fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Aggiungi** , quindi **nuovo progetto**).
 
-4. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla cartella **riferimenti** nella nuova libreria di classi e selezionare **Aggiungi riferimento**.
+4. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **riferimenti** nella nuova libreria di classi e selezionare **Aggiungi riferimento**.
 
    Viene visualizzata la finestra di dialogo **Aggiungi riferimento**.
 
@@ -50,7 +52,7 @@ ms.locfileid: "85288026"
 
    Il riferimento a **Microsoft. VisualStudio. QualityTools. LoadTestFramework** viene aggiunto alla cartella **riferimenti** in **Esplora soluzioni**.
 
-7. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo principale del progetto di test di carico e prestazioni Web contenente il test di carico al quale si desidera aggiungere il plug-in test di carico e selezionare **Aggiungi riferimento**.
+7. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo principale del progetto di test di carico e prestazioni Web contenente il test di carico al quale si desidera aggiungere il plug-in test di carico e selezionare **Aggiungi riferimento**.
 
    Verrà visualizzata la finestra di **dialogo Aggiungi riferimento**.
 

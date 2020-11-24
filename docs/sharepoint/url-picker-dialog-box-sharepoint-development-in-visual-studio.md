@@ -1,5 +1,7 @@
 ---
 title: Finestra di dialogo selezione URL (sviluppo per SharePoint)
+description: Informazioni sulla finestra di dialogo di selezione URL, che consente a un utente di scegliere i file che si trovano nel progetto o nel server locale in cui è in esecuzione SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 991693c3379e008a2a907efd3127290c7e804c22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 584b77ab714cb692069fadd6c6fad50e20d46f80
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66261948"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442534"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Finestra di dialogo selezione URL (sviluppo per SharePoint in Visual Studio)
   Nella finestra di dialogo di selezione URL è possibile scegliere i file come file di pagina master o file di immagine posizionati nel progetto o nel server locale in cui è in esecuzione SharePoint.
@@ -42,7 +44,7 @@ ms.locfileid: "66261948"
 
   Espandere il nodo del **Server** per scegliere i file che si trovano nel server locale in cui è in esecuzione SharePoint. Per apparire come selezionabile nella finestra di dialogo, questi file devono soddisfare i criteri seguenti:
 
-- Il file deve trovarsi in una delle cartelle mappate seguenti: **Immagini**, **layout**o **ControlTemplate**.
+- Il file deve trovarsi in una delle cartelle mappate seguenti: **Immagini**, **layout** o **ControlTemplate**.
 
 - Il file non può trovarsi nel database del contenuto di SharePoint.
 

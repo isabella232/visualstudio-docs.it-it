@@ -1,5 +1,7 @@
 ---
 title: Uso di moduli per includere file nella soluzione | Microsoft Docs
+description: Usare i moduli o i contenitori per i file in una soluzione SharePoint per distribuire i file nel server SharePoint indipendentemente dal tipo di file (ad esempio, le pagine master).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 778bbc9cff2d7853628edbb5be6466acc55d9ab8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa0d6fe1855a1d60a0e1293e8422791f8148bd04
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015818"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442521"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Usare i moduli per includere i file nella soluzione
   In alcuni casi potrebbe essere necessario distribuire i file nel server SharePoint indipendentemente dal tipo di file, ad esempio le nuove pagine master. A tale scopo, è possibile usare i *moduli* (da non confondere con i [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] moduli di codice). I moduli sono contenitori per i file in una soluzione SharePoint. Quando la soluzione viene distribuita, i file del modulo vengono copiati nelle cartelle specificate sul server SharePoint.

@@ -1,5 +1,6 @@
 ---
 title: Analizzare i risultati dei test di carico-visualizzazione grafici (analizzatore test di carico)
+description: Informazioni su come visualizzare i risultati dei test come grafici. Ogni grafico viene visualizzato in un pannello con il nome del grafico in un elenco a discesa.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b48162da7a753516ce0c1ae0dba4cfe1f94387e4
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e30d81277ae28a3f5d6ca45a259fa66e0f4ee004
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810653"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441976"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizzare i risultati dei test di carico nella visualizzazione Grafici dell'Analizzatore test di carico
 
@@ -63,12 +64,12 @@ La legenda per i contatori visualizzati nei grafici mostra diverse colonne di da
 
 Nella legenda sono presenti le seguenti colonne:
 
-|Counter|Nome del contatore|
+|Contatore|Nome del contatore|
 |-|-|
 |Istanza|Il nome dell'istanza del contatore.|
 |Category|Il nome della categoria del contatore.|
 |Computer|Il nome del computer in cui viene raccolto il contatore.|
-|Color|Il colore della riga nel grafico.|
+|Colore|Il colore della riga nel grafico.|
 |Range|Indica il numero rappresentato da 100 nel grafico per quel contatore. Ad esempio, per un intervallo il cui valore superiore è 10.000, l'etichetta 100 all'inizio del grafico rappresenta 10.000.|
 |Min|Indica il valore minimo in millisecondi per il contatore.|
 |Max|Indica il valore massimo in millisecondi per il contatore.|

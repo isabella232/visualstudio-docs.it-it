@@ -1,5 +1,7 @@
 ---
 title: Personalizzazione dell'analisi code coverage
+description: Informazioni su come usare l'attributo ExcludeFromCodeCoverageAttribute per escludere il codice di test dai risultati del code coverage. È possibile includere assembly esterni alla soluzione.
+ms.custom: SEO-VS-2020
 ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 9171afdc6fe5ca65a8ba2bcae81fe255981cdae6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99eb322e1eebe2d8845b355cd76a9e34a7516348
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86475991"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441828"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizzare l'analisi code coverage
 
@@ -28,7 +30,7 @@ Il [file di impostazioni esecuzione](../test/configure-unit-tests-by-using-a-dot
 
 Per personalizzare il code coverage, seguire questa procedura:
 
-1. Aggiungere un file di impostazioni esecuzione test alla propria soluzione. In **Esplora soluzioni**scegliere **Aggiungi**nuovo elemento dal menu di scelta rapida della soluzione  >  **New Item**e selezionare **file XML**. Salvare il file con un nome come *CodeCoverage.runsettings*.
+1. Aggiungere un file di impostazioni esecuzione test alla propria soluzione. In **Esplora soluzioni** scegliere **Aggiungi** nuovo elemento dal menu di scelta rapida della soluzione  >  **New Item** e selezionare **file XML**. Salvare il file con un nome come *CodeCoverage.runsettings*.
 
 2. Aggiungere il contenuto riportato nel file di esempio alla fine di questo articolo, quindi personalizzarlo secondo le proprie esigenze come descritto nelle sezioni seguenti.
 
@@ -40,7 +42,7 @@ Per personalizzare il code coverage, seguire questa procedura:
 
 ::: moniker range=">=vs-2019"
 
-3. Per selezionare il file di impostazioni esecuzione test, scegliere **Seleziona file di impostazioni**dal menu **test** . Per specificare un file di impostazioni esecuzione test per l'esecuzione di test dalla riga di comando, vedere [Configurare unit test](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file-from-the-command-line).
+3. Per selezionare il file di impostazioni esecuzione test, scegliere **Seleziona file di impostazioni** dal menu **test** . Per specificare un file di impostazioni esecuzione test per l'esecuzione di test dalla riga di comando, vedere [Configurare unit test](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file-from-the-command-line).
 
 ::: moniker-end
 
@@ -118,11 +120,11 @@ La tabella seguente illustra i diversi modi in cui è possibile trovare una corr
 
 I nodi Includi ed Escludi usano espressioni regolari, che non sono uguali ai caratteri jolly. Tutte le corrispondenze fanno distinzione tra maiuscole e minuscole. Ad esempio:
 
-- **.\*** corrisponde a una stringa di qualsiasi carattere
+- **.\** _ corrisponde a una stringa di qualsiasi carattere
 
-- **\\.** corrisponde a un punto "."
+- _ *\\.* * corrisponde a un punto "."
 
-- ** \\ ( \\ )** corrisponde alle parentesi "()"
+- **\\ ( \\ )** corrisponde alle parentesi "()"
 
 - **\\\\** corrisponde a un delimitatore di percorso di file " \\ "
 

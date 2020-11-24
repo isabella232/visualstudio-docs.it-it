@@ -1,5 +1,6 @@
 ---
 title: Creazione di un report delle prestazioni del test di carico con Excel
+description: Informazioni su come generare report del test di carico di Microsoft Excel basati su due o più risultati del test. È possibile creare report sulle tendenze e sul confronto di esecuzione.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ce92e157ba3fe02dbabd1ddd408492c440102a1
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: a89818630258aab42535fb4256fa3e844b0c6878
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810259"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442430"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procedura: Creare report di prestazioni dei test di carico usando Microsoft Excel
 
@@ -45,7 +46,7 @@ Nella figura seguente è illustrato un esempio di report in cui viene mostrata u
 
 ![Possibile problema nel codice dell'applicazione](../test/media/lt_excel.png)
 
-È possibile generare report di Excel nell' **analizzatore test di carico**utilizzando il pulsante **Crea rapporto Excel** sulla barra degli strumenti oppure da Excel utilizzando l'opzione **rapporto test** di carico nella scheda **test di carico** della barra multifunzione di **Office** .
+È possibile generare report di Excel nell' **analizzatore test di carico** utilizzando il pulsante **Crea rapporto Excel** sulla barra degli strumenti oppure da Excel utilizzando l'opzione **rapporto test** di carico nella scheda **test di carico** della barra multifunzione di **Office** .
 
 > [!NOTE]
 > Se si aggiungono commenti a un test di carico, vengono visualizzati nel report di Excel.

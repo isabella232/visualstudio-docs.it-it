@@ -1,5 +1,6 @@
 ---
 title: Emulare l'uso reale di un sito Web per il test di carico
+description: Usare le opzioni di modellazione del carico per prevedere in modo più accurato l'uso reale previsto di un sito Web o di un'applicazione di cui si sta eseguendo il test di carico.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4dbbc5ec2ead98f9b20cb137f9e15237c13cf80
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ba5bba0b90acdfab932196ceda7dd8ad971efde1
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810311"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441261"
 ---
 # <a name="test-mix-models-overview"></a>Panoramica dei modelli di combinazione di test
 

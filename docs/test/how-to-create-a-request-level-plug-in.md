@@ -1,5 +1,6 @@
 ---
 title: Creazione di un plug-in a livello di richiesta (test delle prestazioni Web)
+description: Informazioni sul modo in cui i plug-in dei test delle prestazioni Web in una singola richiesta consentono di riutilizzare il codice al di fuori delle principali istruzioni dichiarative nel test delle prestazioni Web.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5f136214b787820396fdbcff37f9f3b78574e9c8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fb0b5339507866b8e6c134db2951c5ae94f108b9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810272"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441065"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Procedura: Creare un plug-in a livello di richiesta
 
@@ -31,11 +32,11 @@ Ogni plug-in delle richieste test prestazioni web dispone di un metodo PreReques
 
 ## <a name="to-create-a-request-level-plug-in"></a>Per creare un plug-in a livello di richiesta
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** , quindi **nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** , quindi **nuovo progetto**.
 
 2. Creare un nuovo progetto **Libreria di classi**.
 
-3. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla cartella **riferimenti** nella nuova libreria di classi e selezionare **Aggiungi riferimento**.
+3. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **riferimenti** nella nuova libreria di classi e selezionare **Aggiungi riferimento**.
 
      Viene visualizzata la finestra di dialogo **Aggiungi riferimento**.
 

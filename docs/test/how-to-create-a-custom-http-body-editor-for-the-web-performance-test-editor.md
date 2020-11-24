@@ -1,5 +1,6 @@
 ---
 title: Creare un editor del corpo HTTP per un test delle prestazioni Web
+description: Informazioni su come creare un editor di contenuto personalizzato che consente di modificare il contenuto del corpo della stringa o il contenuto binario di una richiesta di servizio Web.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7539f9055fb64cdbfa77ebe5beee7173b8967afb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7d6da75b24a982c420b475815f665851ebf06504
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810285"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440146"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Procedura: Creare un editor del corpo HTTP personalizzato per l'Editor test prestazioni Web
 
@@ -265,7 +266,7 @@ Quando viene completata la modifica del corpo della stringa e l'utente fa clic s
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Compilare e distribuire i plug-in
 
-1. Scegliere **Compila \<Windows Form Control Library project name> **dal menu **Compila** .
+1. Scegliere **Compila \<Windows Form Control Library project name>** dal menu **Compila** .
 
 2. Chiudere tutte le istanze di Visual Studio.
 

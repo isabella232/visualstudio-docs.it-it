@@ -1,5 +1,7 @@
 ---
 title: Unit test con la versione precedente di .NET Framework come destinazione
+description: Informazioni su come creare progetti unit test per individuare versioni specifiche del .NET Framework. La versione di destinazione deve essere 3.5 o successiva e non può essere una versione client.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 670ec672c55d591496e26435db5a3112c345a44d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6badbb7723bf4d8ed0c9385558204c2dc4907574
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288169"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441248"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procedura: configurare unit test destinati a una versione precedente di .NET Framework
 
@@ -83,7 +85,7 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 2. In **Esplora soluzioni** scegliere **Scarica progetto** dal nuovo progetto di test C++.
 
-3. In **Esplora soluzioni**scegliere il progetto di test C++ scaricato e quindi scegliere **modifica \<project name> . vcxproj**.
+3. In **Esplora soluzioni** scegliere il progetto di test C++ scaricato e quindi scegliere **modifica \<project name> . vcxproj**.
 
    Il file *VCXPROJ* viene aperto nell'editor.
 

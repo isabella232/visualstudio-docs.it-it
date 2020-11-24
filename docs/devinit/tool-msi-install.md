@@ -1,7 +1,7 @@
 ---
 title: msi-install
 description: strumento devinit per msiexec.
-ms.date: 10/13/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ab56157d531e762ed36f8c2349e50e76596b05ec
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8dfde12f58161dfcf86eeda2b9714f705685d39a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672173"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440422"
 ---
 # <a name="msi-install"></a>msi-install
 
@@ -46,15 +46,19 @@ Lo strumento MSI-install imposta una serie di `msiexec` argomenti della riga di 
 
 | Nome          | Descrizione                                                                                                                                                                                   |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| /i            | Esegue un'installazione normale                                                                                                                                                                    | 
-| /quiet        | Specifica la modalità non interattiva senza necessità di interazione dell'utente                                                                                                                                        | 
-| /qn           | Specifica che non è presente alcuna interfaccia utente durante il processo di installazione                                                                                                                                           | 
-| /passive      | Specifica la modalità automatica in cui l'installazione Mostra solo un indicatore di stato                                                                                                                    | 
-| /l * V          | Attiva la registrazione e registra tutte le informazioni, incluse le informazioni dettagliate, in un `devinit.log` file nella cartella temporanea locale del computer. Se lo strumento ha esito negativo, viene visualizzato il percorso del file di log.      | 
-| /norestart    | Arresta il riavvio del computer al termine dell'installazione, ma restituirà un codice di uscita 3010 se è necessario un riavvio                                                                  | 
+| /i            | Esegue un'installazione normale                                                                                                                                                                    |
+| /quiet        | Specifica la modalità non interattiva senza necessità di interazione dell'utente                                                                                                                                        |
+| /qn           | Specifica che non è presente alcuna interfaccia utente durante il processo di installazione                                                                                                                                           |
+| /passive      | Specifica la modalità automatica in cui l'installazione Mostra solo un indicatore di stato                                                                                                                    |
+| /l * V          | Attiva la registrazione e registra tutte le informazioni, incluse le informazioni dettagliate, in un `devinit.log` file nella cartella temporanea locale del computer. Se lo strumento ha esito negativo, viene visualizzato il percorso del file di log.      |
+| /norestart    | Arresta il riavvio del computer al termine dell'installazione, ma restituirà un codice di uscita 3010 se è necessario un riavvio                                                                  |
+
+### <a name="default-behavior"></a>Comportamento predefinito
+
+Il comportamento predefinito dello `msi-install` strumento è l'errore perché la `input` proprietà è obbligatoria.
 
 ## <a name="example-usage"></a>Esempio di utilizzo
-Di seguito è riportato un esempio di come eseguire `msi-install` usando un `.devinit.json` . 
+Di seguito è riportato un esempio di come eseguire `msi-install` usando un `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-the-7-zip-msi"></a>.devinit.jssu che installerà l'MSI 7-zip:
 ```json

@@ -1,5 +1,7 @@
 ---
 title: Riferimento allo schema degli elementi di progetto SharePoint | Microsoft Docs
+description: Vedere una panoramica dell'elemento di progetto SharePoint XML Schema riferimento (ProjectItemModelSchema. xsd), che viene usato per convalidare il contenuto dei file con estensione spdata.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc15ff5c384ec63f99ed50a5f3c700efd7ba3c18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd425111e7e3d69e381e69e60daf914f74cd2d11
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63007719"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442547"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Riferimento allo schema degli elementi di progetto SharePoint
   In Visual Studio viene utilizzato lo schema degli elementi di progetto SharePoint per convalidare il contenuto dei file con *estensione spdata* . Un file con *estensione spdata* specifica il contenuto e il comportamento di un elemento del progetto SharePoint. Per ulteriori informazioni sul contenuto degli elementi del progetto SharePoint, vedere [creare modelli di elementi e modelli di progetto per gli elementi del progetto SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).

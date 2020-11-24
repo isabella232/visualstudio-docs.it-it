@@ -1,5 +1,7 @@
 ---
 title: Creare un componente aggiuntivo per il Visualizzatore risultati test prestazioni Web
+description: Informazioni su come creare un componente aggiuntivo di Visual Studio per estendere l'interfaccia utente del Visualizzatore Risultati test prestazioni Web e implementare le classi necessarie per estendere l'interfaccia utente.
+ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 736c43a83a956c02b760b4909a427a82c6fa9e4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8fa3b83fb9a92be0118f4222e92364767affcda
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287831"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441078"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: creare un componente aggiuntivo per il Visualizzatore Risultati test prestazioni Web
 
@@ -49,7 +51,7 @@ Si utilizzerà **Gestione componenti aggiuntivi** alla fine di questo articolo.
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Per creare un componente aggiuntivo utilizzando la Creazione guidata componente aggiuntivo.
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi**, quindi selezionare **nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi**, quindi selezionare **nuovo progetto**.
 
 2. Creare un nuovo progetto di **componente aggiuntivo di Visual Studio**.
 
@@ -109,7 +111,7 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>Per creare un controllo da utilizzare nel Visualizzatore risultati test Web
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi**, quindi selezionare **nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi**, quindi selezionare **nuovo progetto**.
 
 2. Creare un nuovo progetto **Libreria di controlli Windows Form**.
 

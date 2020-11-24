@@ -1,5 +1,7 @@
 ---
 title: Esercitazione Creare un test codificato dell'interfaccia utente basato sui dati
+description: Informazioni su come usare i test codificati dell'interfaccia utente basati sui dati per testare condizioni diverse eseguendo i test più volte con valori di parametro diversi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada1f297bbb30fbe636042c87aae42849c1b6b7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9c4deb02bea8bf6e3dc3615ba9c5f0eddc6c877
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595358"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442677"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Creare un test codificato dell'interfaccia utente basato sui dati
 
@@ -22,7 +24,7 @@ Per testare condizioni diverse, è possibile eseguire il test più volte con val
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requisiti**
+**Requirements**
 
 - Visual Studio Enterprise
 - Componente Test codificato dell'interfaccia utente
@@ -104,7 +106,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
 
 2. Popolare il file con estensione *csv* con i dati seguenti:
 
-    |Num1|Num2|SUM|
+    |Num1|Num2|Somma|
     |-|-|-|
     |3|4|7|
     |5|6|11|

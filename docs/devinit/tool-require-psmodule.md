@@ -1,7 +1,7 @@
 ---
 title: require-psmodule
 description: per lo strumento devinit è necessario PSModule.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 51d9353333fac6dcca0035bf7cc8dd722c32cb40
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: c8c87e6df0e7ea66c2413f85fa39f397f30d50a7
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672118"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440004"
 ---
 # <a name="require-psmodule"></a>require-psmodule
 
@@ -47,7 +47,7 @@ Le opzioni aggiuntive vengono passate direttamente al comando [install-module](/
 
 Il comportamento predefinito dello `require-psmodule` strumento è l'errore, come `input` richiesto.
 
-## <a name="builtin-options"></a>Opzioni predefinite
+### <a name="built-in-options"></a>Opzioni predefinite
 
 Lo `require-psmodule` strumento imposta un numero di `Install-Module` argomenti della riga di comando per garantire che sia `Install-Module` possibile eseguire l'intestazione. Questi argomenti sono elencati di seguito e la relativa documentazione è disponibile in [install-module](/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true).
 
@@ -59,7 +59,7 @@ Lo `require-psmodule` strumento imposta un numero di `Install-Module` argomenti 
 
 
 ## <a name="example-usage"></a>Esempio di utilizzo
-Di seguito sono riportati alcuni esempi di come eseguire `require-psmodule` usando un `.devinit.json` . 
+Di seguito sono riportati alcuni esempi di come eseguire `require-psmodule` usando un `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-the-powershellget-module"></a>.devinit.jssu che installerà il modulo PowerShellGet:
 ```json

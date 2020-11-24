@@ -1,7 +1,7 @@
 ---
 title: choco-install
 description: strumento devinit Choco-install per installare i pacchetti di cioccolato.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 82c1bfbaed4a8ae5540447991f1a097760ade0bd
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: d26b2aa89ad295b63f0115acae11148c505720a5
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671940"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440510"
 ---
 # <a name="choco-install"></a>choco-install
 
@@ -26,11 +26,11 @@ Lo `choco-install` strumento può essere usato per installare e aggiornare i pac
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento non eseguirà alcuna operazione.
 
-| Nome                                             | Type   | Obbligatoria | valore                                                                                                          |
-|--------------------------------------------------|--------|----------|----------------------------------------------------------------------------------------------------------------|
-| **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                                                          |
-| [**input**](#input)                              | stringa | No       | Pacchetto da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.                                                 |
-| [**additionalOptions**](#additional-options)     | stringa | No       | Opzioni aggiuntive da passare allo strumento. Per informazioni dettagliate, vedere le [Opzioni aggiuntive](#additional-options) seguenti.       |
+| Nome                                             | Type   | Obbligatoria  | valore                                                                                                          |
+|--------------------------------------------------|--------|-----------|----------------------------------------------------------------------------------------------------------------|
+| **Commenti**                                     | stringa | No        | Proprietà commenti facoltativi. Non usato.                                                                          |
+| [**input**](#input)                              | string | Sì       | Pacchetto da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.                                                 |
+| [**additionalOptions**](#additional-options)     | stringa | No        | Opzioni aggiuntive da passare allo strumento. Per informazioni dettagliate, vedere le [Opzioni aggiuntive](#additional-options) seguenti.       |
 
 ### <a name="input"></a>Input
 
@@ -50,8 +50,12 @@ Lo `choco-install` strumento imposta un numero di `choco` argomenti della riga d
 | **--No-Progress**     | Non visualizzare lo stato di avanzamento: le percentuali di avanzamento non verranno visualizzate.                                         |
 | **--Skip-PowerShell** | Ignorare PowerShell-chocolateyInstall.ps1 non verrà eseguito.                                              |
 
+### <a name="default-behavior"></a>Comportamento predefinito
+
+Il comportamento predefinito dello `choco-install` strumento è l'errore perché la `input` proprietà è obbligatoria.
+
 ## <a name="example-usage"></a>Esempio di utilizzo
-Di seguito sono riportati alcuni esempi di come eseguire `choco-install` usando un `.devinit.json` . 
+Di seguito sono riportati alcuni esempi di come eseguire `choco-install` usando un `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-packages-listed-in-packagesconfig"></a>.devinit.jsin che installerà i pacchetti elencati in packages.config:
 ```json

@@ -1,5 +1,7 @@
 ---
 title: Analisi dei risultati dei test di carico
+description: Informazioni su come visualizzare i riquadri che forniscono diversi modi per analizzare i risultati di un'esecuzione dei test di carico, ad esempio un grafico nel tempo o tabelle dettagliate.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5e337c30a4b6a08f123ef7ee33dee704e9412de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7787b3b0afaed0bc3592b458646b97151e309905
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565175"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442508"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizzare gli errori e i risultati dei test di carico nella visualizzazione Tabelle dell'Analizzatore test di carico
 
@@ -53,7 +55,7 @@ Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle 
 |Nome tabella|Descrizione|
 |-|-|
 |Errors|Visualizza un elenco di errori generati durante l'esecuzione del test di carico. Per ulteriori informazioni, vedere [la tabella degli errori](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) in questo argomento e [analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
-|.NET|Visualizza un elenco di pagine visitate durante l'esecuzione di un test di carico. Alcuni dati di questa tabella sono disponibili solo al termine di un test di carico. Per altre informazioni, vedere [procedura: visualizzare la risposta della pagina Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
+|Pagine|Visualizza un elenco di pagine visitate durante l'esecuzione di un test di carico. Alcuni dati di questa tabella sono disponibili solo al termine di un test di carico. Per altre informazioni, vedere [procedura: visualizzare la risposta della pagina Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Requests|Visualizza dettagli relativi alle singole richieste emesse durante un test di carico, tra cui tutte le richieste HTTP e le richieste dipendenti, ad esempio immagini. Per ulteriori informazioni, vedere [la tabella richieste](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) in questo argomento.|
 |Traccia SQL|Visualizza i risultati della traccia SQL. Questa tabella è disponibile solo al termine di un test di carico e soltanto se durante il test è stata usata la traccia SQL. Per ulteriori informazioni, vedere [la tabella dati di traccia SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) in questo argomento.|
 |Test|Visualizza dettagli relativi ai singoli test eseguiti durante un test di carico. Per ulteriori informazioni, vedere [la tabella test](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) in questo argomento.|
@@ -80,7 +82,7 @@ Nella tabella seguente sono elencate le colonne della tabella **Richieste**:
 |**Totale**|Numero totale relativo a questa richiesta di test delle prestazioni Web emessa durante l'esecuzione del test di carico. Il totale include le richieste riuscite e non riuscite, ma non le richieste memorizzate nella cache, perché non vengono inviate al server Web.|Sì|
 |**Riuscito**|Numero di volte in cui la richiesta è stata emessa ed è riuscita.|No|
 |**Non riuscito**|Numero di volte in cui la richiesta è stata emessa e non è riuscita. Le voci di questa colonna vengono visualizzate come collegamenti ipertestuali. È possibile scegliere un collegamento ipertestuale per visualizzare un elenco dei singoli errori nella finestra di dialogo **Errori test di carico**. Per altre informazioni, vedere [analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Sì|
-|**Cache**|Numero totale di volte in cui la richiesta è già stata memorizzata nella cache.|No|
+|**Richieste nella cache**|Numero totale di volte in cui la richiesta è già stata memorizzata nella cache.|No|
 |**Richieste/sec**|Frequenza al secondo della richiesta durante l'esecuzione del test di carico.|No|
 |**Richieste riuscite/sec**|Frequenza al secondo di questa richiesta durante l'esecuzione del test di carico, per le istanze della richiesta che sono riuscite.|No|
 |**Richieste non riuscite/sec**|Frequenza al secondo di questa richiesta durante l'esecuzione del test di carico, per le istanze della richiesta che non sono riuscite.|No|
@@ -173,7 +175,7 @@ La tabella **Errori test di carico** contiene le seguenti colonne:
 |**Sottotipo**|Il sottotipo di errore, ad esempio LoadTestException.|
 |**Text**|Il testo del messaggio di errore, ad esempio 404 - NotFound.|
 |**Tra elementi sovrapposti**|Le voci di questa colonna sono vuote o contengono la parola **Stack** in formato collegamento ipertestuale. È possibile scegliere il collegamento ipertestuale per visualizzare la traccia dello stack dell'errore.|
-|**Informazioni dettagliate**|Le voci di questa colonna sono vuote o contengono la parola **TestLog** in formato collegamento ipertestuale. Questo collegamento può consentire di isolare errori nel test di carico. Se, ad esempio, si sceglie il collegamento **TestLog** in un errore di richiesta del test delle prestazioni Web, i risultati per il test delle prestazioni Web vengono aperti nel Visualizzatore risultati test prestazioni Web e viene evidenziato l'errore di richiesta.|
+|**Dettagli**|Le voci di questa colonna sono vuote o contengono la parola **TestLog** in formato collegamento ipertestuale. Questo collegamento può consentire di isolare errori nel test di carico. Se, ad esempio, si sceglie il collegamento **TestLog** in un errore di richiesta del test delle prestazioni Web, i risultati per il test delle prestazioni Web vengono aperti nel Visualizzatore risultati test prestazioni Web e viene evidenziato l'errore di richiesta.|
 
 > [!NOTE]
 > È possibile ordinare la tabella scegliendo le intestazioni delle colonne.

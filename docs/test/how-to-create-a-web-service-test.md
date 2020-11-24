@@ -1,5 +1,7 @@
 ---
 title: Creare un test del servizio Web
+description: Informazioni su come utilizzare un test delle prestazioni per i servizi Web e personalizzare le richieste nel Editor test prestazioni Web per individuare le pagine del servizio Web.
+ms.custom: SEO-VS-2020
 ms.date: 06/30/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9934f48e6d5900a418995eb96d357b4ea1ea532f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32b5a6a91221e8942faeefcb89cfc52dd0cc5895
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814759"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439927"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Procedura: Creare un test di servizio Web
 
@@ -24,7 +26,7 @@ I test web consentono di testare i servizi web. Utilizzando le opzioni **Inseris
 >[!NOTE]
 > La funzionalità del test di carico e delle prestazioni Web è deprecata in Visual Studio 2019. Per Application Insights, i test Web in più passaggi dipendono dai file di test Web di Visual Studio. È stato [annunciato](https://devblogs.microsoft.com/devops/cloud-based-load-testing-service-eol/) che Visual Studio 2019 sarà l'ultima versione con la funzionalità test Web. È importante comprendere che, anche se non vengono aggiunte nuove funzionalità, la funzionalità test Web in Visual Studio 2019 è ancora attualmente supportata e continuerà a esserlo durante il ciclo di vita del prodotto. Il team del prodotto Monitoraggio di Azure ha affrontato le domande relative al futuro dei test di disponibilità in più passi [qui](https://github.com/MicrosoftDocs/azure-docs/issues/26050#issuecomment-468814101).
 
-**Requisiti**
+**Requirements**
 
 Visual Studio Enterprise
 

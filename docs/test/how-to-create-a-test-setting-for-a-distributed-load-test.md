@@ -1,5 +1,7 @@
 ---
 title: Creare un'impostazione di test per un test di carico distribuito
+description: Informazioni su come configurare le impostazioni di test per i test di carico in modo che sia possibile distribuire tali test tra più computer usando agenti di test e controller di test.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c4c33072c1b42d76f1f6ea26222c4674f9e6ff77
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b52fad24cf0772099e619b08ad877bae891365c3
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036093"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439966"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Procedura: creare un file di impostazioni di test per un test di carico distribuito
 
@@ -41,7 +43,7 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
 ## <a name="create-a-test-settings-file"></a>Creare un file di impostazioni test
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **elementi di soluzione**, scegliere **Aggiungi**, quindi **nuovo elemento**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **elementi di soluzione**, scegliere **Aggiungi**, quindi **nuovo elemento**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento** .
 
@@ -180,7 +182,7 @@ Nella cartella **elementi di soluzione** in **Esplora soluzioni**, fare clic con
 
 Il file delle impostazioni di test verrà rimosso dalla soluzione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Raccogliere dati di diagnostica usando impostazioni test](../test/collect-diagnostic-information-using-test-settings.md)

@@ -1,5 +1,7 @@
 ---
 title: Creare un progetto di unit test
+description: Informazioni su come creare un progetto unit test. Il progetto test può essere nella stessa soluzione del codice di produzione o in una soluzione separata.
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ffa19fb9dc49d6286ef3f54c51d89043445f18ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0d438c05d3c9608c11903c02119d7c3e267a48b
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288715"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441846"
 ---
 # <a name="create-a-unit-test-project"></a>Creare un progetto di unit test
 
@@ -49,7 +51,7 @@ Gli unit test spesso simulano la struttura del codice sottoposto a test. Ad esem
 
    1. Selezionare il progetto di test in **Esplora soluzioni**.
 
-   2. Scegliere **Aggiungi riferimento**dal menu **progetto** .
+   2. Scegliere **Aggiungi riferimento** dal menu **progetto** .
 
    3. In **Gestione riferimenti** selezionare il nodo **Soluzione** in **Progetti**. Selezionare il progetto di codice da testare, quindi selezionare **OK**.
 

@@ -1,7 +1,7 @@
 ---
 title: require-dotnetframeworksdk
 description: per lo strumento devinit è necessario dotnetframeworksdk.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a74f45d67c6f2a921d8c5a06bc60abf6f5c76cb9
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: ed1d9ee019d96ebf93362db6907646ceb52b8f64
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671794"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441657"
 ---
 # <a name="require-dotnetframeworksdk"></a>require-dotnetframeworksdk
 
@@ -45,7 +45,7 @@ Non usato.
 Il comportamento predefinito dello `require-dotnetframeworksdk` strumento prevede l'installazione della versione più recente. Vedere i [programmi di installazione forniti](https://dotnet.microsoft.com/download/visual-studio-sdks) per la versione più recente.
 
 ## <a name="example-usage"></a>Esempio di utilizzo
-Di seguito sono riportati alcuni esempi di come eseguire `require-dotnetframeworksdk` usando un `.devinit.json` . 
+Di seguito sono riportati alcuni esempi di come eseguire `require-dotnetframeworksdk` usando un `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-the-latest-net-framework"></a>.devinit.jsin che installerà la versione più recente .NET Framework:
 ```json

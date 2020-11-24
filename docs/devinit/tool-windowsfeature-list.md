@@ -1,7 +1,7 @@
 ---
 title: windowsfeature-list
 description: WindowsFeature-list dello strumento devinit.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: b521009affbc1db81676481e33640a69e619aaf3
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 07b92e8783393fa19e5c09344a396a6c5c4fc011
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671712"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442126"
 ---
 # <a name="windowsfeature-list"></a>windowsfeature-list
 
@@ -41,7 +41,7 @@ Non usato. Ignorato.
 Il comportamento predefinito dello `windowsfeature-list` strumento consiste nell'elencare lo stato di abilitazione/disabilitazione di tutte le funzionalità di Windows.
 
 ## <a name="example-usage"></a>Esempio di utilizzo
-Di seguito è riportato un esempio di come eseguire `windowsfeature-list` usando un `.devinit.json` . 
+Di seguito è riportato un esempio di come eseguire `windowsfeature-list` usando un `.devinit.json` .
 
 #### <a name="devinitjson-that-will-list-the-state-of-all-windows-features"></a>.devinit.jssu in cui è possibile elencare lo stato di tutte le funzionalità di Windows:
 ```json

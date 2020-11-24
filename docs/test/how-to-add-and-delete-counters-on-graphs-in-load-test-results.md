@@ -1,5 +1,7 @@
 ---
 title: Aggiungere ed eliminare contatori nei grafici nei risultati dei test di carico
+description: Informazioni su come utilizzare il pannello dei contatori per aggiungere contatori delle prestazioni a un grafico e sulla proprietà frequenza di campionamento.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2b2cefc56d299c9ec917aea555aec1cd9ca53887
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82794efc8d3065c9b428602e50455cccd162bbd4
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288468"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442586"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Procedura: aggiungere ed eliminare contatori nei grafici nei risultati dei test di carico
 

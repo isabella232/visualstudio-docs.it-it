@@ -1,5 +1,7 @@
 ---
 title: Selezionare le impostazioni di esecuzione test di carico dalla riga di comando
+description: Un test di carico può includere impostazioni di esecuzione ovvero proprietà che determinano la modalità di esecuzione del test di carico. Informazioni su come caricare le impostazioni esecuzione test dalla riga di comando.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 79f1cc833278a62e2871cdc725f5993b12bcdb60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 290f56ba0f0ca9c6a8f6a6a1ee4e30b86bcfacd7
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287558"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440961"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Procedura: Selezionare un'impostazione di esecuzione test di carico dalla riga di comando
 

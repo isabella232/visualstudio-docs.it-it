@@ -1,7 +1,7 @@
 ---
 title: require-vscomponent
 description: per lo strumento devinit è necessario vscomponent.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e9d2f546e99f83b4c53d0b76abfdaf8ec91868ac
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 4a4725ac0757f43830741afd5aefd540633f05af
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672111"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442277"
 ---
 # <a name="require-vscomponent"></a>require-vscomponent
 
@@ -45,7 +45,7 @@ Non usato.
 Il comportamento predefinito dello `require-vscomponent` strumento consiste nel cercare un `.vsconfig` file nella directory corrente ed eseguire il programma di installazione di Visual Studio con questi dettagli in modalità non interattiva. `require-vscomponent` supporta solo la modifica di un'installazione esistente di Visual Studio.
 
 ## <a name="example-usage"></a>Esempio di utilizzo
-Di seguito è riportato un esempio di come eseguire `require-vscomponent` usando un `.devinit.json` . 
+Di seguito è riportato un esempio di come eseguire `require-vscomponent` usando un `.devinit.json` .
 
 #### <a name="devinitjson-that-will-import-the-configurations-of-a-given-vsconfig-file-path"></a>.devinit.json che importerà le configurazioni di un percorso di file con estensione vsconfig specificato:
 ```json

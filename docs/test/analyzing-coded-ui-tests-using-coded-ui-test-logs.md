@@ -1,5 +1,7 @@
 ---
 title: Analisi dei test codificati dell'interfaccia utente utilizzando i log dei test codificati dell'interfaccia utente
+description: Informazioni sui log dei test codificati dell'interfaccia utente, che filtrano e registrano informazioni importanti sulle esecuzioni dei test codificati dell'interfaccia utente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 6bbb3e6599ef4ae26740eed0eb79047c49356374
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 3dcbb1bdfd89ae13df5174b6502dc6e89437a468
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036145"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442495"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisi dei test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente
 
@@ -71,7 +73,7 @@ Quando si esegue un test codificato dell'interfaccia utente dopo avere apportato
      I test automatizzati vengono eseguiti e segnalano se sono stati superati o se hanno avuto esito negativo.
 
     > [!TIP]
-    > Per visualizzare **Esplora test**, scegliere **Test**  >  **finestre**di test, quindi scegliere **Esplora test**.
+    > Per visualizzare **Esplora test**, scegliere **Test**  >  **finestre** di test, quindi scegliere **Esplora test**.
 
 4. Scegliere il collegamento **Output** nei risultati di **Esplora test**.
 
@@ -87,7 +89,7 @@ Quando si esegue un test codificato dell'interfaccia utente dopo avere apportato
 
      ![File di log del test codificato dell'interfaccia utente](../test/media/cuit_htmlactionlog3.png)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)
 - [Procedura: Eseguire test da Microsoft Visual Studio](/previous-versions/ms182470(v=vs.140))

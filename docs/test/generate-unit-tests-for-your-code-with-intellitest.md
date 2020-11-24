@@ -1,5 +1,7 @@
 ---
 title: Generare unit test per il codice con IntelliTest
+description: IntelliTest esplora il codice .NET per generare dati di test e un gruppo di unit test. Informazioni su come eseguire IntelliTest per vedere quali test hanno esito negativo e correggerli.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2015
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 65b1de58f195b957d080bd21144c22479b1aafed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d503d37cfcacace8250da4d3e91221364c66b5c
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589591"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442469"
 ---
 # <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Procedura: generare unit test usando IntelliTest
 

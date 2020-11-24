@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: eliminare i risultati di un test di carico da un repository'
+description: Informazioni su come rimuovere le informazioni dal repository di Load Risultati test usando la finestra di dialogo Apri e Gestisci Risultati test di carico.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dd196076fb769f80c36ab8630eebf1e8a0f8b234
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b838d79237fc54f6d44d5b8222489973dea0c6e
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287779"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440948"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Procedura: Eliminare i risultati di un test di carico da un repository
 

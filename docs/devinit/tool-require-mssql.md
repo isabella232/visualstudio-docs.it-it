@@ -1,7 +1,7 @@
 ---
 title: require-mssql
 description: per lo strumento devinit è necessario MSSQL.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7d7a5e7d8ba78b98e05d1b9aff3145c3c34c6ca0
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 95558da015462899d0388870fce95d19030fc291
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672132"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442098"
 ---
 # <a name="require-mssql"></a>require-mssql
 
@@ -49,7 +49,7 @@ Non usato.
 
 Il comportamento predefinito dello `require-mssql` strumento è l'installazione di SQL Server.
 
-### <a name="builtin-options"></a>Opzioni predefinite
+### <a name="built-in-options"></a>Opzioni predefinite
 
 Lo `require-mssql` strumento imposta un numero di argomenti della riga di comando del programma di installazione per garantire che il programma di installazione possa essere eseguito. Questi argomenti sono elencati di seguito e la relativa documentazione è disponibile nella [documentazione sull'installazione di SQL](/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt?view=sql-server-ver15&preserve-view=true).
 
@@ -75,7 +75,7 @@ Lo `require-mssql` strumento imposta un numero di argomenti della riga di comand
 | /IACCEPTSQLSERVERLICENSETERMS                                      |             |
 
 ## <a name="example-usage"></a>Esempio di utilizzo
-Di seguito è riportato un esempio di come eseguire `require-msssql` usando un `.devinit.json` . 
+Di seguito è riportato un esempio di come eseguire `require-msssql` usando un `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-mssql"></a>.devinit.jssu che installerà MSSQL:
 ```json

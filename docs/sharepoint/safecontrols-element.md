@@ -1,5 +1,7 @@
 ---
 title: Elemento SafeControls | Microsoft Docs
+description: Ottenere informazioni sull'elemento SafeControls, che include una raccolta di controlli o Web part ASPX contrassegnati come sicuri per l'accesso nella pagina ASPX di un sito di SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e840f0040cf94fea408615525358580d207f07c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3423d1b6efd106ef7f947bd8573dcd1aa548a66
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547901"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440675"
 ---
 # <a name="safecontrols-element"></a>SafeControls (elemento)
   Raccolta di controlli e Web part ASPX designati come sicuri per qualsiasi utente per accedere a qualsiasi pagina ASPX nel sito di SharePoint.
@@ -34,7 +36,7 @@ ms.locfileid: "85547901"
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributes
- Nessuno.
+ No.
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -48,7 +50,7 @@ ms.locfileid: "85547901"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Rappresenta un elemento del progetto SharePoint. Questo elemento è l'elemento radice obbligatorio del file con *estensione spdata* .|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Per ulteriori informazioni sui controlli sicuri, vedere [fornire informazioni sulla creazione di pacchetti e sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Informazioni sull'elemento

@@ -1,5 +1,7 @@
 ---
 title: Configurare unit test con un file con estensione runsettings
+description: Informazioni su come usare il file con estensione runsettings in Visual Studio per configurare gli unit test che vengono eseguiti dalla riga di comando, dall'IDE o in un flusso di lavoro di compilazione.
+ms.custom: SEO-VS-2020
 ms.date: 07/15/2020
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,16 +9,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8194a5f61b45ac2b4358922aaf8c7c7b8bea4ae9
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: ca15e265f9e6f3188826c019a8c81d02a7668bcf
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518765"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442690"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurare gli unit test usando un file con *estensione runsettings*
 
-Gli unit test in Visual Studio possono essere configurati usando un file con estensione *runsettings*. Ad esempio, è possibile modificare la versione di .NET in cui vengono eseguiti i test, la directory dei risultati di test e i dati raccolti durante l'esecuzione dei test. Un uso piuttosto comune di un file con estensione *runsettings* è la personalizzazione dell' [analisi code coverage](../test/customizing-code-coverage-analysis.md).
+Gli unit test in Visual Studio possono essere configurati usando un file con estensione *runsettings*. Ad esempio, è possibile modificare la versione di .NET in cui vengono eseguiti i test, la directory dei risultati di test e i dati raccolti durante l'esecuzione dei test. Un uso piuttosto comune di un file con estensione *runsettings* è la personalizzazione dell'[analisi code coverage](../test/customizing-code-coverage-analysis.md).
 
 È possibile utilizzare i file di impostazioni esecuzione test per configurare i test eseguiti dalla [riga di comando](vstest-console-options.md), dall'IDE o in un [flusso di lavoro di compilazione](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts&preserve-view=true) utilizzando Azure test plans o Team Foundation Server (TFS).
 
@@ -94,7 +96,7 @@ Se il rilevamento automatico dei file delle impostazioni esecuzione test è abil
 
 #### <a name="manually-select-the-run-settings-file"></a>Selezionare manualmente il file di impostazioni esecuzione test
 
-Nell'IDE selezionare **test** > **Configura impostazioni di esecuzione** > **Seleziona file runsettings a livello di soluzione** , quindi selezionare il file *. runsettings* .
+Nell'IDE selezionare **test** > **Configura impostazioni di esecuzione** > **Seleziona file runsettings a livello di soluzione**, quindi selezionare il file *. runsettings* .
 
    - Questo file esegue l'override del file con *estensione runsettings* alla radice della soluzione, se presente, e viene applicato a tutti i test eseguiti.
    - Questa selezione file viene resa permanente solo localmente.
@@ -182,7 +184,7 @@ L'elemento **RunConfiguration** può includere gli elementi seguenti:
 |-|-|-|
 |**MaxCpuCount**|1|Questa impostazione determina il livello di esecuzione parallela dei test durante l'esecuzione di unit test, in base ai core disponibili nel computer. Il motore di esecuzione dei test viene avviato come processo distinto in ogni core disponibile e assegna a ogni core un contenitore con test da eseguire. Un contenitore può essere un assembly, una DLL o un artefatto pertinente. Il contenitore di test è l'unità di pianificazione. In ogni contenitore, i test vengono eseguiti in base al framework di test. Se sono presenti molti contenitori, non appena termina l'esecuzione dei test in un contenitore, i processi vengono assegnati al successivo contenitore disponibile.<br /><br />MaxCpuCount può essere:<br /><br />n, dove 1 < = n < = numero di core: vengono avviati fino a n processi<br /><br />n, dove n = qualsiasi altro valore: il numero di processi avviati può essere fino al numero di core disponibili. Ad esempio, impostare n = 0 per consentire alla piattaforma di decidere automaticamente il numero ottimale di processi da avviare in base all'ambiente.|
 |**ResultsDirectory**||Directory in cui vengono inseriti i risultati del test. Il percorso è relativo alla directory che contiene il file con estensione runsettings.|
-|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` per le origini .NET Core, `FrameworkUap10` per le origini basate sulla piattaforma UWP, `Framework45` per .NET Framework 4.5 e versioni successive, `Framework40` per .NET Framework 4.0 e `Framework35` per .NET Framework 3.5.<br /><br />Questa impostazione specifica la versione del framework unit test usata per trovare ed eseguire i test. Può essere diversa dalla versione della piattaforma .NET specificata nelle proprietà di compilazione del progetto di unit test.<br /><br />Se si omette l'elemento `TargetFrameworkVersion` dal file con estensione *runsettings* , la piattaforma determina automaticamente la versione del framework sulla base dei file binari compilati.|
+|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` per le origini .NET Core, `FrameworkUap10` per le origini basate sulla piattaforma UWP, `Framework45` per .NET Framework 4.5 e versioni successive, `Framework40` per .NET Framework 4.0 e `Framework35` per .NET Framework 3.5.<br /><br />Questa impostazione specifica la versione del framework unit test usata per trovare ed eseguire i test. Può essere diversa dalla versione della piattaforma .NET specificata nelle proprietà di compilazione del progetto di unit test.<br /><br />Se si omette l'elemento `TargetFrameworkVersion` dal file con estensione *runsettings*, la piattaforma determina automaticamente la versione del framework sulla base dei file binari compilati.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|false|false, true|
 |**TestAdaptersPaths**||Uno o più percorsi della directory in cui si trovano i TestAdapter|
@@ -233,7 +235,7 @@ Per personalizzare qualsiasi altro tipo di adattatore dati di diagnostica, usare
 
 ### <a name="blame-data-collector"></a>Incolpare l'agente di raccolta dati
 
-Questa opzione può essere utile per isolare un test problematico che causa un arresto anomalo di un host di test. Eseguendo l'agente di raccolta, viene creato un file di output ( *Sequence.xml* ) in *TestResults* , che acquisisce l'ordine di esecuzione del test prima dell'arresto anomalo.
+Questa opzione può essere utile per isolare un test problematico che causa un arresto anomalo di un host di test. Eseguendo l'agente di raccolta, viene creato un file di output (*Sequence.xml*) in *TestResults*, che acquisisce l'ordine di esecuzione del test prima dell'arresto anomalo.
 
 ```xml
 <DataCollector friendlyName="blame" enabled="True">
@@ -312,7 +314,7 @@ Queste impostazioni sono specifiche dell'adattatore di test che esegue i metodi 
 |**IgnoreTestImpact**|false|La funzionalità di impatto sui test assegna la priorità ai test interessati dalle modifiche recenti, quando viene eseguito in MSTest o da Microsoft Test Manager (deprecato in Visual Studio 2017). Questa impostazione disattiva la funzionalità. Per altre informazioni, vedere [Test da eseguire da una compilazione precedente](/previous-versions/dd286589(v=vs.140)).|
 |**SettingsFile**||È possibile specificare un file di impostazioni test da usare con l'adattatore MSTest. È anche possibile specificare un file di impostazioni test [dal menu delle impostazioni](#specify-a-run-settings-file-in-the-ide).<br /><br />Se si specifica questo valore, è necessario impostare anche **ForcedlegacyMode** su **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|Una volta completata l'esecuzione di un test, MSTest viene arrestato. Anche qualsiasi processo avviato come parte del test verrà interrotto. Per fare in modo che l'executor di test rimanga attivo, impostare questa configurazione su **true**. Lo si può usare, ad esempio, per mantenere in esecuzione il browser tra i test codificati dell'interfaccia utente.|
-|**DeploymentEnabled**|true|Se si imposta il valore su **false** , gli elementi della distribuzione specificati nel metodo di test non vengono copiati nella directory di distribuzione.|
+|**DeploymentEnabled**|true|Se si imposta il valore su **false**, gli elementi della distribuzione specificati nel metodo di test non vengono copiati nella directory di distribuzione.|
 |**CaptureTraceOutput**|true|È possibile scrivere nella traccia di debug dal metodo di test usando <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=nameWithType>.|
 |**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|Per mantenere la directory di distribuzione dopo un'esecuzione di test, impostare questo valore su **false**.|
 |**MapInconclusiveToFailed**|false|Se un test viene completato senza risultati, ne viene eseguito il mapping allo stato Ignorato in **Esplora test**. Se si vuole che i test senza risultati vengano visualizzati come non superati, impostare il valore su **true**.|

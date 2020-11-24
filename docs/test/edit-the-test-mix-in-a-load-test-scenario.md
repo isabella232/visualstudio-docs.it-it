@@ -1,5 +1,7 @@
 ---
 title: Combinazione di test per uno scenario di test di carico
+description: Informazioni su come modificare la combinazione di test di uno scenario, ovvero una combinazione della selezione delle prestazioni Web e degli unit test e della distribuzione dei test.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4a52d660140416ce829493a733171cfcf64ebbe4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6681b8aead05a180df04b1c3953002aa832a281
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595930"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441378"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Modificare la combinazione di test per specificare quali test delle prestazioni Web, unit test e test codificati dell'interfaccia utente includere in uno scenario di test di carico
 
@@ -43,7 +45,7 @@ Quando si crea un nuovo scenario usando la **Creazione guidata test di carico** 
 
 1. Aprire un test di carico.
 
-2. Nella **Editor test di carico**fare clic con il pulsante destro del mouse su uno scenario esistente, quindi scegliere **Aggiungi test**.
+2. Nella **Editor test di carico** fare clic con il pulsante destro del mouse su uno scenario esistente, quindi scegliere **Aggiungi test**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi test**. È possibile aggiungere allo scenario tutti i test delle prestazioni Web, gli unit test e i test codificati dell'interfaccia utente della soluzione non ancora aggiunti.
 

@@ -1,5 +1,7 @@
 ---
 title: Modifica di test codificati dell'interfaccia utente
+description: Informazioni su come usare l'editor di test codificati dell'interfaccia utente per individuare, visualizzare e modificare i metodi di test e le azioni dell'interfaccia utente. Usare la mappa del controllo dell'interfaccia utente per visualizzare e modificare i controlli corrispondenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d6c2fcf3d8807e9095abc9546e8bf1e39aecb8ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f78839280ae19da5020b08d499d347c0537a045
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288728"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441443"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modificare test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente
 
@@ -24,7 +26,7 @@ L'Editor di test codificati dell'interfaccia utente consente di modificare facil
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requisiti**
+**Requirements**
 
 - Visual Studio Enterprise
 - Componente Test codificato dell'interfaccia utente
@@ -61,7 +63,7 @@ Quando si apre il file *UIMap.uitest* associato al test codificato dell'interfac
 
 ![Modifica del menu di scelta rapida con il generatore di test codificati dell'interfaccia utente.](../test/media/editcodeduitest.png)
 
-In **Esplora soluzioni**aprire il menu di scelta rapida per *UIMap. UITest* e scegliere **Apri**. Il test codificato dell'interfaccia utente viene visualizzato nell' **editor di test codificati dell'interfaccia utente**. Ora è possibile visualizzare e modificare i metodi registrati, i le azioni e i corrispondenti controlli nel test codificato dell'interfaccia utente.
+In **Esplora soluzioni** aprire il menu di scelta rapida per *UIMap. UITest* e scegliere **Apri**. Il test codificato dell'interfaccia utente viene visualizzato nell' **editor di test codificati dell'interfaccia utente**. Ora è possibile visualizzare e modificare i metodi registrati, i le azioni e i corrispondenti controlli nel test codificato dell'interfaccia utente.
 
 > [!TIP]
 > Quando si seleziona un'azione dell'interfaccia utente che si trova in un metodo nel riquadro **Azioni dell'interfaccia utente** , viene evidenziato il controllo corrispondente. È possibile modificare anche le proprietà delle azioni dell'interfaccia utente o dei controlli.
@@ -112,7 +114,7 @@ Nel riquadro **Azioni dell'interfaccia utente** espandere il metodo di test cont
 
 ![Due metodi di test](../test/media/codeduitestsplitmethod2.png)
 
-Nel riquadro **Azioni dell'interfaccia utente** espandere il metodo di test che si vuole suddividere in due metodi distinti e selezionare l'azione dell'interfaccia utente con cui far iniziare il nuovo metodo di test. Aprire il menu di scelta rapida per l'azione dell'interfaccia utente e quindi scegliere **Suddividi in nuovo metodo**scegliere il pulsante **Suddividi in nuovo metodo** sulla barra degli strumenti dell'Editor di test codificati dell'interfaccia utente. Il nuovo metodo di test viene visualizzato nel riquadro **azioni dell'interfaccia utente** . che contiene le azioni dell'interfaccia utente a iniziare dall'azione in cui è stata specificata la suddivisione.
+Nel riquadro **Azioni dell'interfaccia utente** espandere il metodo di test che si vuole suddividere in due metodi distinti e selezionare l'azione dell'interfaccia utente con cui far iniziare il nuovo metodo di test. Aprire il menu di scelta rapida per l'azione dell'interfaccia utente e quindi scegliere **Suddividi in nuovo metodo** scegliere il pulsante **Suddividi in nuovo metodo** sulla barra degli strumenti dell'Editor di test codificati dell'interfaccia utente. Il nuovo metodo di test viene visualizzato nel riquadro **azioni dell'interfaccia utente** . che contiene le azioni dell'interfaccia utente a iniziare dall'azione in cui è stata specificata la suddivisione.
 
 Dopo aver completato la suddivisione del metodo, salvare le modifiche apportate al file *UIMap. designer* scegliendo **Salva** sulla barra degli strumenti di Visual Studio.
 

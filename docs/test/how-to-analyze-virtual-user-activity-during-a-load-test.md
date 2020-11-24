@@ -1,5 +1,7 @@
 ---
 title: Analizzare le attività degli utenti virtuali per i test di carico
+description: Informazioni su come usare il grafico attività utente virtuale per visualizzare ogni utente virtuale in esecuzione durante il test per visualizzare i modelli di attività degli utenti e altre informazioni.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 64b69ba926e3c978efa60bd9946da94d846c383f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 353a38c17cdcd3358376547155750914e406f4be
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288403"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442391"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Procedura: Analizzare le attività degli utenti virtuali durante un test di carico usando il grafico attività utente virtuale
 
@@ -72,7 +74,7 @@ Nelle procedure descritte di seguito viene illustrato come visualizzare il **Gra
 
 ## <a name="to-use-filtering-options-in-the-virtual-user-activity-chart"></a>Per utilizzare le opzioni di filtro nel Grafico attività utente virtuale
 
-1. Nella **Legenda dettagli**utilizzare l'elenco a discesa per selezionare **test**, **pagina**o **transazione**.
+1. Nella **Legenda dettagli** utilizzare l'elenco a discesa per selezionare **test**, **pagina** o **transazione**.
 
     **Riquadro Legenda dettagli**
 

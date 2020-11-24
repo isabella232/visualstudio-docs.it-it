@@ -1,5 +1,7 @@
 ---
 title: Creare un plug-in di registrazione per i test delle prestazioni Web
+description: Informazioni su come WebTestRecorderPlugin consente di modificare un test delle prestazioni Web registrato dopo aver scelto Interrompi nella barra degli strumenti registrazione test prestazioni Web.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f75114683a4f456d0514af20c1c201c373bd4b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce4be33e2e29ee0089184a034e56cf3a0539dc76
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288007"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440060"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Procedura: Creare un plug-in di registrazione
 
@@ -71,7 +73,7 @@ Nelle procedure seguenti viene illustrata la creazione di codice rudimentale per
 
 8. Aggiungere codice in base a ciò che si vuole che il plug-in di registrazione esegua dopo la registrazione Web. È ad esempio possibile aggiungere codice per gestire la correlazione personalizzata, come mostrato nell'esempio sotto. È anche possibile creare un plug-in di registrazione, ad esempio, per la conversione di commenti in transazioni o per l'aggiunta di regole di convalida al test delle prestazioni Web.
 
-9. Scegliere **Compila \<class library project name> **dal menu **Compila** .
+9. Scegliere **Compila \<class library project name>** dal menu **Compila** .
 
 A questo punto, distribuire il plug-in di registrazione per effettuarne la registrazione in Visual Studio.
 

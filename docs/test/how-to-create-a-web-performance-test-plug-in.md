@@ -1,5 +1,7 @@
 ---
 title: Creare un plug-in di test delle prestazioni Web
+description: Informazioni sul modo in cui i plug-in dei test delle prestazioni Web consentono di riutilizzare il codice al di fuori delle principali istruzioni dichiarative nel test delle prestazioni Web.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.assetid: a612f2d2-9806-477d-a126-12842f07da6e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c9651f4003647e18ba52e916aeb21e176274de5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ddb46b3e83c86396dfea6fbcdb3584882591fce
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287935"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442339"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Procedura: Creare un plug-in di test prestazioni Web
 
@@ -35,13 +37,13 @@ I plug-in per test delle prestazioni web personalizzati possono essere utilizzat
 
 1. Aprire un progetto di test di carico e prestazioni web che contenga un test delle prestazioni web.
 
-2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Aggiungi** , quindi **nuovo progetto**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Aggiungi** , quindi **nuovo progetto**.
 
 3. Creare un nuovo progetto **Libreria di classi**.
 
    Il nuovo progetto di libreria di classi viene aggiunto a **Esplora soluzioni** e la nuova classe viene visualizzata nell'**Editor di codice**.
 
-4. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla cartella **riferimenti** nella nuova libreria di classi e selezionare **Aggiungi riferimento**.
+4. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **riferimenti** nella nuova libreria di classi e selezionare **Aggiungi riferimento**.
 
    Viene visualizzata la finestra di dialogo **Aggiungi riferimento**.
 
@@ -87,7 +89,7 @@ I plug-in per test delle prestazioni web personalizzati possono essere utilizzat
 
      Viene visualizzata la finestra di dialogo **Aggiungi plug-in test Web**.
 
-16. In **Seleziona un plug-in selezionare**la classe del plug-in del test delle prestazioni Web.
+16. In **Seleziona un plug-in selezionare** la classe del plug-in del test delle prestazioni Web.
 
 17. Nel riquadro **Proprietà per il plug-in selezionato** impostare i valori iniziali per il plug-in da usare in fase di esecuzione.
 

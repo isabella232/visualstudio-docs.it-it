@@ -1,5 +1,7 @@
 ---
 title: Elemento ProjectOutputFile | Microsoft Docs
+description: Ottenere informazioni di riferimento sull'elemento ProjectOutputFile, che rappresenta l'output di un progetto separato nell'elemento del progetto SharePoint XML Schema riferimento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12f399b7a09c18c77482475575ca387a11955762
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe6f95bdfd7795c837aaaa25ec7ef2a35a7ae76
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542389"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442028"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile (elemento)
   Rappresenta l'output di un progetto separato da includere con l'elemento del progetto quando viene distribuito in SharePoint.
@@ -47,7 +49,7 @@ ms.locfileid: "85542389"
 |**Tipo**|Attributo **xs: String** obbligatorio.<br /><br /> Tipo di distribuzione da utilizzare per l'output del progetto dipendente. Per ulteriori informazioni sui valori possibili, vedere la descrizione della proprietà **tipo di distribuzione** degli elementi del progetto SharePoint in [sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ No.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -55,7 +57,7 @@ ms.locfileid: "85542389"
 |-------------|-----------------|
 |[File](../sharepoint/files-element.md)|Specifica i file da includere con l'elemento del progetto SharePoint quando viene distribuito in SharePoint.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Utilizzare l'elemento **ProjectOutputFile** per includere l'output di un progetto nella distribuzione dell'elemento del progetto SharePoint. È possibile specificare un progetto diverso o lo stesso progetto che contiene l'elemento del progetto. Per altre informazioni, vedere [fornire informazioni sulla creazione di pacchetti e sulla distribuzione negli elementi di progetto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Informazioni sull'elemento

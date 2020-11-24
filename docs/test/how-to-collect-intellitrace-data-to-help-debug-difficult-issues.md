@@ -1,5 +1,7 @@
 ---
 title: Dati di IntelliTrace
+description: Informazioni su come configurare l'adattatore dati di diagnostica per IntelliTrace per raccogliere informazioni di traccia diagnostica specifiche in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/13/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9da0000397042355387d21501c64c29806ddeaaa
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 7a043f2841dc5a6918036c152628ebfc346e11ee
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928515"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440108"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procedura: Raccogliere dati di IntelliTrace per agevolare il debug di problemi complessi
 

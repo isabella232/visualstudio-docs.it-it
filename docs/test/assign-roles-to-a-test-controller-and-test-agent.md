@@ -1,5 +1,6 @@
 ---
 title: Ruoli test controller e agente di test
+description: Informazioni su come creare e configurare un'impostazione di test che usa un test controller e un agente di test per distribuire i test in più computer con Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7f4360772f3962ff60517071dcae4318dc71e56
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c059510dc39472d5c981f93e4d7259545b809d38
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809302"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442443"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Assegnare ruoli a un test controller e a un agente di test
 
@@ -104,7 +105,7 @@ Questo articolo descrive come creare e configurare un'impostazione di test che u
 
 ::: moniker range=">=vs-2019"
 
-8. Scegliere **Seleziona file di impostazioni**dal menu **test** . Individuare e selezionare il file *TestSettingDistributedTestWalkthrough.testsettings*.
+8. Scegliere **Seleziona file di impostazioni** dal menu **test** . Individuare e selezionare il file *TestSettingDistributedTestWalkthrough.testsettings*.
 
 ::: moniker-end
 

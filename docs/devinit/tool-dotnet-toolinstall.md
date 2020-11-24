@@ -1,7 +1,7 @@
 ---
 title: dotnet-toolinstall
 description: strumento devinit DotNet-toolinstall.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 85a8beafdc9b19a807becabb459baa5de88169e2
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 343c66a0f1da955479993502cf5dcf967abe03b9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672219"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440402"
 ---
 # <a name="dotnet-toolinstall"></a>dotnet-toolinstall
 
@@ -38,7 +38,7 @@ La `input` proprietà viene usata per specificare lo strumento .NET Core da inst
 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
-Altre opzioni di configurazione possono essere passate come valore di `additionalOptions` . Questi argomenti sono un passthrough diretto per gli argomenti usati dal [`dotnet tool update`](/dotnet/core/tools/global-tools#update-a-tool) comando. 
+Altre opzioni di configurazione possono essere passate come valore di `additionalOptions` . Questi argomenti sono un passthrough diretto per gli argomenti usati dal [`dotnet tool update`](/dotnet/core/tools/global-tools#update-a-tool) comando.
 
 Il `dotnet tool update` comando viene usato per gestire in modo sicuro il caso in cui è già installato uno strumento.
 
@@ -47,7 +47,7 @@ Il `dotnet tool update` comando viene usato per gestire in modo sicuro il caso i
 Il comportamento predefinito dello `dotnet-toolinstall` strumento è l'errore, come `input` richiesto.
 
 ## <a name="example-usage"></a>Esempio di utilizzo
-Di seguito sono riportati alcuni esempi di come eseguire `dotnet-toolinstall` usando un `.devinit.json` . 
+Di seguito sono riportati alcuni esempi di come eseguire `dotnet-toolinstall` usando un `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-the-dotnet-trace-tool"></a>.devinit.jssu che installerà lo strumento DotNet-Trace:
 ```json

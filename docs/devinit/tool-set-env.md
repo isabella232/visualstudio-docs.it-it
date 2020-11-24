@@ -1,7 +1,7 @@
 ---
 title: set-env
 description: lo strumento devinit richiede-set-env.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ce3876884061246d8ac1dbc1b211766903ea840a
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 820cd87f26e4babc7a83d975c3fb480187af564f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671739"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442284"
 ---
 # <a name="set-env"></a>set-env
 
@@ -38,7 +38,7 @@ Lo `set-env` strumento accetta un'unica stringa come input per la `input` Propri
 
 | Azione       | Input            | Descrizione                                                                                                                                                              | Esempio             |
 |--------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| **list all** | Empty o omesso | Elencare tutte le variabili di ambiente correnti.                                                                                                                              | `"input":""`        |
+| **list all** | Empty o omesso | Elencare tutte le variabili di ambiente correnti.                                                                                                                           | `"input":""`        |
 | **elencarne uno** | string           | Elencare il valore di una variabile di ambiente specifica in base al nome.                                                                                                               | `"input":"foo"`     |
 | **add**      | string           | Imposta il valore di una variabile di ambiente come coppia chiave-valore. Aggiunge una nuova variabile di ambiente se non è già presente o imposta il valore di una variabile di ambiente esistente | `"input":"foo=bar"` |
 | **delete**   | string           | Elimina una variabile di ambiente esistente passando una stringa di valore vuota.                                                                                            | `"input":"foo="`    |
@@ -49,12 +49,16 @@ Una `input` stringa può contenere un'espansione della variabile di ambiente `%u
 
 Non usato.
 
+### <a name="default-behavior"></a>Comportamento predefinito
+
+Il comportamento predefinito dello `set-env` strumento consiste nell'elencare tutte le variabili di ambiente correnti.
+
 ## <a name="usage-in-a-codespace"></a>Utilizzo in un codespace
 
 Se si usa un codespace, è possibile impostare le variabili di ambiente usate nello spazio dei caratteri tramite la personalizzazione della `remoteEnv` proprietà nel [`.devcontainer.json`](/visualstudio/codespaces/reference/configuring) file.
 
 ## <a name="example-usage"></a>Esempio di utilizzo
-Di seguito sono riportati alcuni esempi di come eseguire `set-env` usando un `.devinit.json` . 
+Di seguito sono riportati alcuni esempi di come eseguire `set-env` usando un `.devinit.json` .
 
 #### <a name="devinitjson-that-will-set-an-environment-variable-foo-to-value-bar"></a>.devinit.json che imposta una variabile di ambiente, `foo` , su value `bar` :
 ```json

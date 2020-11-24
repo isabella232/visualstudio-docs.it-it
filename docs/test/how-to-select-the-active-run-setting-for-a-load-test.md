@@ -1,5 +1,7 @@
 ---
 title: Selezionare un'impostazione di esecuzione per un test di carico
+description: Un test di carico può includere impostazioni di esecuzione ovvero proprietà che determinano la modalità di esecuzione del test di carico. Informazioni su come selezionare l'impostazione di esecuzione attiva.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8400c5afcb81215078617cca00cef9aa8ce018d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87a67cb90ed48993e75dc248f23d10e982c64c43
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287545"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439862"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Procedura: Selezionare l'impostazione di esecuzione test attiva per un test di carico
 

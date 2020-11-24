@@ -1,7 +1,7 @@
 ---
 title: require-vcpkg
 description: per lo strumento devinit è necessario vcpkg.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 6a9559da218912b6e045c174b7ed20a60f93062e
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 7fabd803645e9e79e273683c364ca427793c0aff
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671746"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442291"
 ---
 # <a name="require-vcpkg"></a>require-vcpkg
 
@@ -42,10 +42,10 @@ Non usato.
 
 ### <a name="default-behavior"></a>Comportamento predefinito
 
-Il comportamento predefinito dello `require-vcpkg` strumento prevede l'installazione di vcpkg e la relativa aggiunta al percorso (solo Windows).
+Il comportamento predefinito dello `require-vcpkg` strumento prevede l'installazione di vcpkg e la relativa aggiunta a `PATH` .
 
 ## <a name="example-usage"></a>Esempio di utilizzo
-Di seguito è riportato un esempio di come eseguire `require-vcpkg` usando un `.devinit.json` . 
+Di seguito è riportato un esempio di come eseguire `require-vcpkg` usando un `.devinit.json` .
 
 #### <a name="devinitjson-that-will-install-vcpkg"></a>.devinit.json che installerà vcpkg:
 ```json

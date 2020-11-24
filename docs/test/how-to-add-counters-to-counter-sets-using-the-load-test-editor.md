@@ -1,5 +1,7 @@
 ---
 title: Aggiungere contatori a insiemi di contatori per i test di carico
+description: Quando si crea un test di carico utilizzando la Creazione guidata test di carico, è necessario aggiungere un insieme di contatori iniziale. Informazioni su come aggiungere i contatori usando Editor test di carico.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 754c88bd6dbe76736148718d2f1ad32888623c34
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6aabd5bc7293a73ec0fa1a304262c24776a9e38f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288377"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442573"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Procedura: Aggiungere contatori agli insiemi di contatori usando l'Editor test di carico
 

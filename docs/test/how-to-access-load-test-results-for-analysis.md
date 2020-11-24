@@ -1,5 +1,7 @@
 ---
 title: Analizzare i risultati dei test di carico
+description: Informazioni su come accedere ai risultati dei test di carico per l'analisi, automaticamente tramite l'analizzatore test di carico o manualmente per i test dalla riga di comando.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b72db87014304dc2b9baf57e05015e53a630c431
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95108a5901a00582e708f6bf3660cb07d2126e0a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288533"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442599"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Procedura: Accedere ai risultati dei test di carico per l'analisi
 
@@ -37,7 +39,7 @@ I risultati relativi al test di carico completato contengono gli esempi di conta
 
      Viene visualizzata la finestra di dialogo **Apri e gestisci risultati**.
 
-3. In **Immettere un nome del controller per trovare i risultati del test di carico** selezionare un controller. Selezionare ** \<local> -Nessun controller** per accedere ai risultati archiviati localmente.
+3. In **Immettere un nome del controller per trovare i risultati del test di carico** selezionare un controller. Selezionare **\<local> -Nessun controller** per accedere ai risultati archiviati localmente.
 
 4. In **Mostra risultati per test di carico seguente** selezionare il test di carico di cui si vuole visualizzare i risultati. Selezionare questa selezione **\<Show results for all tests>** per visualizzare tutti i risultati per tutti i test.
 

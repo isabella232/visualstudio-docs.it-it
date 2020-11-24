@@ -1,7 +1,7 @@
 ---
 title: nuget-restore
 description: strumento devinit NuGet-Restore.
-ms.date: 08/28/2020
+ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7d797e744b651eafd629ec83f20478f0142864e6
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8e525451ffcd691b0dab1260584946ad3d0a561c
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672166"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440368"
 ---
 # <a name="nuget-restore"></a>nuget-restore
 
@@ -42,10 +42,10 @@ Le opzioni aggiuntive vengono passate così come sono al comando di ripristino N
 
 ### <a name="default-behavior"></a>Comportamento predefinito
 
-Il comportamento predefinito dello `nuget-restore` strumento consiste nell'eseguire ' NuGet Restore ' nella directory corrente.
+Il comportamento predefinito dello `nuget-restore` strumento viene eseguito `NuGet restore` nella directory corrente.
 
 ## <a name="example-usage"></a>Esempio di utilizzo
-Di seguito è riportato un esempio di come eseguire `nuget-restore` usando un `.devinit.json` . 
+Di seguito è riportato un esempio di come eseguire `nuget-restore` usando un `.devinit.json` .
 
 #### <a name="devinitjson-that-will-restore-dependencies-and-tools-of-a-project"></a>.devinit.jssu per ripristinare le dipendenze e gli strumenti di un progetto:
 ```json
