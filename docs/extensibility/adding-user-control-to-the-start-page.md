@@ -1,5 +1,7 @@
 ---
 title: Aggiunta del controllo utente alla pagina iniziale | Microsoft Docs
+description: Informazioni su come aggiungere un controllo utente Windows Presentation Foundation (WPF) alla pagina iniziale in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 1d093ecc8afd9fe822c19c2c1f2ceb5765208865
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fa812b477f88b03b8f0d4bdcba6c69f009ec2894
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011996"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597548"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Aggiungere il controllo utente alla pagina iniziale
 
@@ -32,7 +34,7 @@ Aggiungere prima di tutto un controllo utente Windows Presentation Foundation (W
 
 1. Creare una pagina iniziale usando creato in [creare una pagina iniziale personalizzata](../extensibility/creating-a-custom-start-page.md).
 
-2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi**, quindi fare clic su **nuovo progetto**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi**, quindi fare clic su **nuovo progetto**.
 
 3. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** espandere il nodo **Visual Basic** o **Visual C#** , quindi fare clic su **Windows**. Nel riquadro centrale selezionare libreria di **controlli utente WPF**.
 
@@ -111,7 +113,7 @@ Per implementare un controllo utente WPF, compilare l'interfaccia utente in XAML
 2. Compilare il gestore dell'evento SetButton_Click come indicato di seguito.
 
     ```csharp
-    private void SetButton_Click(object sender, RoutedEventArgs e)
+    private void SetButton_Click(object sender, RoutedEventArgs e)
     {
         try
         {
@@ -151,7 +153,7 @@ Per rendere questo controllo disponibile per il progetto di pagina iniziale, nel
 
 ### <a name="to-add-the-control-to-the-markup"></a>Per aggiungere il controllo al markup
 
-1. In **Esplora soluzioni**aprire il file con estensione *XAML* della pagina iniziale.
+1. In **Esplora soluzioni** aprire il file con estensione *XAML* della pagina iniziale.
 
 2. Nel riquadro **XAML** aggiungere la dichiarazione dello spazio dei nomi seguente all'elemento di livello principale <xref:System.Windows.Controls.Grid> .
 
@@ -179,11 +181,11 @@ Per rendere questo controllo disponibile per il progetto di pagina iniziale, nel
 
 1. Copiare il file XAML e tutti i file di testo o i file di markup di supporto nella cartella *%USERPROFILE%\My Documenti\Visual Studio 2015 \\ \ StartPages* .
 
-2. Se la pagina iniziale fa riferimento a tutti i controlli o tipi negli assembly che non sono installati da Visual Studio, copiare gli assembly e incollarli nella _cartella di installazione di Visual Studio_** \\ \Common7\IDE\PrivateAssemblies**.
+2. Se la pagina iniziale fa riferimento a tutti i controlli o tipi negli assembly che non sono installati da Visual Studio, copiare gli assembly e incollarli nella _cartella di installazione di Visual Studio_**\\ \Common7\IDE\PrivateAssemblies**.
 
 3. Al prompt dei comandi di Visual Studio digitare **devenv/rootsuffix exp** per aprire un'istanza sperimentale di Visual Studio.
 
-4. Nell'istanza sperimentale, passare alla **Tools**  >  pagina di avvio dell'ambiente strumenti**Opzioni**  >  **Environment**  >  **Startup** e selezionare il file XAML dall'elenco a discesa **Personalizza pagina iniziale** .
+4. Nell'istanza sperimentale, passare alla **Tools**  >  pagina di avvio dell'ambiente strumenti **Opzioni**  >  **Environment**  >  **Startup** e selezionare il file XAML dall'elenco a discesa **Personalizza pagina iniziale** .
 
 5. Scegliere **Pagina iniziale** dal menu **Visualizza**.
 

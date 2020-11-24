@@ -1,5 +1,7 @@
 ---
 title: Creare modelli per più progetti
+description: Informazioni su come creare modelli di più progetti in Visual Studio che possono fungere da contenitori per molti progetti contemporaneamente.
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efd0808342e38627d0b79b097f36f86a1881dafe
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284412"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597226"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procedura: Creare modelli per più progetti
 
@@ -46,7 +48,7 @@ Ad esempio, il file con estensione *zip* di un modello per più progetti con due
 
 Il file *vstemplate* radice per un modello per più progetti differisce da un modello a progetto singolo nei modi seguenti:
 
-- L'attributo **Tipo** dell'elemento**VSTemplate** ha il valore **ProjectGroup** anziché **Project**. Ad esempio:
+- L'attributo **Tipo** dell'elemento **VSTemplate** ha il valore **ProjectGroup** anziché **Project**. Ad esempio:
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
@@ -88,13 +90,13 @@ Il file *vstemplate* radice per un modello per più progetti differisce da un mo
 2. Personalizzare i progetti fino a quando non sono pronti per essere esportati in un modello.
 
    > [!TIP]
-   > Se si usano [parametri di modello](template-parameters.md) e si vuole fare riferimento alle variabili del modello padre, aggiungere il prefisso `ext_` al nome del parametro. Ad esempio, `$ext_safeprojectname$` Impostare inoltre l'attributo **CopyParameters** dell'elemento **ProjectTemplateLink** su **true**.
+   > Se si usano [parametri di modello](template-parameters.md) e si vuole fare riferimento alle variabili del modello padre, aggiungere il prefisso `ext_` al nome del parametro. Ad esempio: `$ext_safeprojectname$`. Impostare inoltre l'attributo **CopyParameters** dell'elemento **ProjectTemplateLink** su **true**.
    >
    > ```xml
    > <ProjectTemplateLink ProjectName="MyProject" CopyParameters="true">...</ProjectTemplateLink>
    > ```
 
-3. Scegliere **Esporta modello**dal menu **progetto** .
+3. Scegliere **Esporta modello** dal menu **progetto** .
 
    Verrà visualizzata l' **esportazione guidata modelli** .
 

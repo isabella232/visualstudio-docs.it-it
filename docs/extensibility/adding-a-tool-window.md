@@ -1,5 +1,7 @@
 ---
 title: Aggiunta di una finestra degli strumenti | Microsoft Docs
+description: Informazioni su come creare una finestra degli strumenti e integrarla in Visual Studio aggiungendo un controllo e una barra degli strumenti contenente un comando alla finestra degli strumenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 169f386128ccdd79aef6b90a6703f50323b9b6f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 184e04e74e2065ea2a9e1bcd41b2e878981dd218
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904134"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597990"
 ---
 # <a name="add-a-tool-window"></a>Aggiungere una finestra degli strumenti
 
@@ -47,12 +49,12 @@ Visual Studio SDK è incluso come funzionalità facoltativa nel programma di ins
 
 1. Rimuovere il controllo predefinito. Aprire *FirstToolWindowControl. XAML* ed eliminare il **clic su me** . .
 
-2. Nella **casella degli strumenti**espandere la **sezione tutti i controlli WPF** e trascinare il controllo **elemento multimediale** sul form **FirstToolWindowControl** . Selezionare il controllo e nella finestra **Proprietà** assegnare un nome a questo elemento **mediaElement1**.
+2. Nella **casella degli strumenti** espandere la **sezione tutti i controlli WPF** e trascinare il controllo **elemento multimediale** sul form **FirstToolWindowControl** . Selezionare il controllo e nella finestra **Proprietà** assegnare un nome a questo elemento **mediaElement1**.
 
 ## <a name="add-a-toolbar-to-the-tool-window"></a>Aggiungere una barra degli strumenti alla finestra degli strumenti
 Con l'aggiunta di una barra degli strumenti nel modo seguente si garantisce che le sfumature e i colori siano coerenti con il resto dell'IDE.
 
-1. In **Esplora soluzioni**aprire *FirstToolWindowPackage. vsct*. Il file con *estensione vsct* definisce gli elementi dell'interfaccia utente grafica (GUI) nella finestra degli strumenti usando XML.
+1. In **Esplora soluzioni** aprire *FirstToolWindowPackage. vsct*. Il file con *estensione vsct* definisce gli elementi dell'interfaccia utente grafica (GUI) nella finestra degli strumenti usando XML.
 
 2. Nella `<Symbols>` sezione trovare il nodo il `<GuidSymbol>` cui `name` attributo è `guidFirstToolWindowPackageCmdSet` . Aggiungere i due `<IDSymbol>` elementi seguenti all'elenco di `<IDSymbol>` elementi in questo nodo per definire una barra degli strumenti e un gruppo di barre degli strumenti.
 
@@ -129,7 +131,7 @@ Aggiungere un comando alla barra degli strumenti, che viene visualizzato come pu
 ## <a name="add-a-mediaplayer-property-to-firsttoolwindowcontrol"></a>Aggiungere una proprietà MediaPlayer a FirstToolWindowControl
 Dai gestori eventi per i controlli della barra degli strumenti, il codice deve essere in grado di accedere al controllo Media Player, che è figlio della classe FirstToolWindowControl.
 
-In **Esplora soluzioni**fare clic con il pulsante destro del mouse su *FirstToolWindowControl. XAML*, scegliere **Visualizza codice**e aggiungere il codice seguente alla classe FirstToolWindowControl.
+In **Esplora soluzioni** fare clic con il pulsante destro del mouse su *FirstToolWindowControl. XAML*, scegliere **Visualizza codice** e aggiungere il codice seguente alla classe FirstToolWindowControl.
 
 ```csharp
 public System.Windows.Controls.MediaElement MediaPlayer
@@ -255,7 +257,7 @@ Aggiungere una barra degli strumenti e un comando di menu che richiama la finest
 
 Specificare quindi un percorso predefinito nell'IDE per la finestra degli strumenti. Le informazioni di configurazione per la finestra degli strumenti si trova nel file *FirstToolWindowPackage.cs* .
 
-1. In *FirstToolWindowPackage.cs*trovare l' <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> attributo sulla `FirstToolWindowPackage` classe, che passa il tipo FirstToolWindow al costruttore. Per specificare una posizione predefinita, è necessario aggiungere altri parametri al costruttore che segue l'esempio.
+1. In *FirstToolWindowPackage.cs* trovare l' <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> attributo sulla `FirstToolWindowPackage` classe, che passa il tipo FirstToolWindow al costruttore. Per specificare una posizione predefinita, è necessario aggiungere altri parametri al costruttore che segue l'esempio.
 
     ```csharp
     [ProvideToolWindow(typeof(FirstToolWindow),

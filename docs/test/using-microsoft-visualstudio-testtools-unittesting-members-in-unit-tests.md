@@ -1,5 +1,6 @@
 ---
 title: Usare MSTest negli unit test
+description: Informazioni sul framework MSTest, che supporta il testing unità in Visual Studio. Usare queste classi e i membri per codificare unit test.
 ms.custom: SEO-VS-2020
 ms.date: 03/02/2018
 ms.topic: reference
@@ -8,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 759eaded70c3e95b76123062e00072aced4ecdfa
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 21e78263e848a501d83414630de734368f90a179
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810536"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598575"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Usare il framework MSTest negli unit test
 

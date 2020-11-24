@@ -1,5 +1,7 @@
 ---
 title: Gestire strumenti esterni
+description: Informazioni su come aggiungere e gestire nuovi strumenti esterni a cui è possibile accedere tramite il menu strumenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2017
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c77ab079a2950d4417c2d00ef74cf86d5c206de7
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591294"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596690"
 ---
 # <a name="manage-external-tools"></a>Gestire strumenti esterni
 
@@ -61,7 +63,7 @@ Il menu **Strumenti** include alcuni comandi predefiniti, tra cui:
 
 Di seguito è riportato un elenco completo di argomenti che possono essere usati per la definizione di uno strumento esterno:
 
-|Nome|Argomento|Descrizione|
+|NOME|Argomento|Descrizione|
 |----------|--------------|-----------------|
 |Percorso elemento|$(ItemPath)|Nome file completo del file corrente (unità + percorso + nome file).|
 |Directory elemento|$(ItemDir)|Directory del file corrente (unità + percorso).|
@@ -81,7 +83,7 @@ Di seguito è riportato un elenco completo di argomenti che possono essere usati
 |Nome file soluzione|$(SolutionFileName)|Nome file della soluzione corrente (unità + percorso + nome file).|
 
 > [!NOTE]
-> La barra di stato IDE Visualizza le variabili di **riga corrente** e **colonna corrente** per indicare dove si trova il punto di inserimento nell' **Editor del codice**attivo. La variabile di **testo corrente** restituisce il testo o il codice selezionato in quella posizione.
+> La barra di stato IDE Visualizza le variabili di **riga corrente** e **colonna corrente** per indicare dove si trova il punto di inserimento nell' **Editor del codice** attivo. La variabile di **testo corrente** restituisce il testo o il codice selezionato in quella posizione.
 
 ## <a name="see-also"></a>Vedere anche
 

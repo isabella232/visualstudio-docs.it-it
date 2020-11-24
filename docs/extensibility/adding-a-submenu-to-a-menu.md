@@ -1,5 +1,7 @@
 ---
 title: Aggiunta di un sottomenu a un menu | Microsoft Docs
+description: Informazioni su come creare un sottomenu, aggiungerlo alla barra dei menu di Visual Studio e aggiungere un nuovo comando al sottomenu.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5887dba1ed1c583653b93792174524f8dfb84609
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16b58a6ab6a01ff635b3afd58b06133abacf970e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972322"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598016"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Aggiungere un sottomenu a un menu
 Questa procedura dettagliata si basa sulla dimostrazione in [aggiungere un menu alla barra dei menu di Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) mostrando come aggiungere un sottomenu al menu **Testmenu** .

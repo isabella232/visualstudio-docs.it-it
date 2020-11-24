@@ -1,5 +1,7 @@
 ---
 title: Creare un test codificato dell'interfaccia utente
+description: Informazioni su come usare un test codificato dell'interfaccia utente per un'app Windows Presentation Framework e per vedere le soluzioni per i test con problemi di temporizzazione e il refactoring dei controlli.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f36704405776a790c3ec634856f54ee51bc23dc6
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592061"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598536"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procedura dettagliata: Creare, modificare e gestire un test codificato dell'interfaccia utente
 
@@ -158,9 +160,9 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 
 1. Nel menu **Test** scegliere **Finestre** e quindi **Esplora test**.
 
-2. Scegliere **Compila soluzione**dal menu **Compila** .
+2. Scegliere **Compila soluzione** dal menu **Compila** .
 
-3. Nel file *CodedUITest1.cs* individuare il metodo **CodedUITestMethod** , fare clic con il pulsante destro del mouse e scegliere **Esegui test**oppure eseguire il test da **Esplora test**.
+3. Nel file *CodedUITest1.cs* individuare il metodo **CodedUITestMethod** , fare clic con il pulsante destro del mouse e scegliere **Esegui test** oppure eseguire il test da **Esplora test**.
 
    Durante l'esecuzione del test codificato dell'interfaccia utente, SimpleWPFApp rimane visibile. Vengono eseguiti i passaggi effettuati nella procedura precedente. Tuttavia, quando il test tenta di selezionare la casella di controllo per il controllo casella di controllo, la finestra di **risultati test** indica che il test ha avuto esito negativo. Ciò è dovuto al fatto che durante l'esecuzione del test è effettuato il tentativo di selezionare la casella di controllo, senza considerare che il controllo CheckBox rimane disabilitato finché l'indicatore di stato non sarà completato al 100%. È possibile correggere questo e problemi analoghi usando i diversi metodi `UITestControl.WaitForControlXXX()` disponibili per il test codificato dell'interfaccia utente. Nella procedura seguente verrà descritto l'uso del metodo `WaitForControlEnabled()` per correggere il problema che ha impedito il corretto funzionamento di questo test. Per altre informazioni, vedere [Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
@@ -180,7 +182,7 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
     > [!WARNING]
     > Non modificare il file *UIMap.designer.cs* . Qualsiasi modifica del codice apportata verrà sovrascritta ogni volta che si genera codice usando **UIMap - Generatore di test codificati dell'interfaccia utente**. Se è necessario modificare un metodo registrato, copiarlo nel file *UIMap.cs* e rinominarlo. Il file *UIMap.cs* può essere usato per eseguire l'override dei metodi e delle proprietà nel file *UIMapDesigner.cs* . È necessario rimuovere il riferimento al metodo originale nel file *Coded UITest.cs* e sostituirlo con il nome del metodo rinominato.
 
-4. In **Esplora soluzioni**individuare *UIMap. UITest* nel progetto di test codificato dell'interfaccia utente.
+4. In **Esplora soluzioni** individuare *UIMap. UITest* nel progetto di test codificato dell'interfaccia utente.
 
 5. Aprire il menu di scelta rapida per *UIMap.uitest* e scegliere **Apri**.
 
@@ -245,7 +247,7 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 
 3. Scegliere **Compila soluzione** dal menu **Compila**.
 
-4. In **Esplora test**eseguire **CodedUITestMethod1**.
+4. In **Esplora test** eseguire **CodedUITestMethod1**.
 
      Il test non funziona perché il test codificato dell'interfaccia utente non è in grado di individuare il pulsante mappato in origine come button1 in UIMap. Il refactoring può influire in questo modo sui test codificati dell'interfaccia utente.
 
@@ -290,7 +292,7 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 
 9. Close **UIMap-Generatore di test codificati dell'interfaccia utente**.
 
-10. In **Esplora soluzioni**aprire il file *UIMap.designer.cs* .
+10. In **Esplora soluzioni** aprire il file *UIMap.designer.cs* .
 
 11. Nel file *UIMap.Designer.cs* individuare la proprietà **UIStartButton1**. Si noti che `SearchProperties` è impostato su `"buttonA"`:
 
@@ -325,7 +327,7 @@ Questa procedura dettagliata insegna come creare, modificare e gestire un test c
 
 13. Scegliere **Compila soluzione** dal menu **Compila**.
 
-14. In **Esplora test**eseguire **CodedUITestMethod1**.
+14. In **Esplora test** eseguire **CodedUITestMethod1**.
 
      Questa volta tutti i passaggi del test codificato dell'interfaccia utente vengono completati. Nella finestra **Risultati test** viene visualizzato **Superato**.
 

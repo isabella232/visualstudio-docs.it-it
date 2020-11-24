@@ -1,5 +1,7 @@
 ---
 title: Aggiunta di una barra degli strumenti | Microsoft Docs
+description: Informazioni su come aggiungere una barra degli strumenti contenente i pulsanti associati ai comandi di Visual Studio Integrated Development Environment (IDE).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: beb97356daf3c932470bf2598e58e1f5b40ea233
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 434f7470fe5fca13f217c981cc99d6a884117a86
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904069"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597951"
 ---
 # <a name="add-a-toolbar"></a>Aggiungere una barra degli strumenti
 Questa procedura dettagliata illustra come aggiungere una barra degli strumenti all'IDE di Visual Studio.
@@ -35,7 +37,7 @@ Questa procedura dettagliata illustra come aggiungere una barra degli strumenti 
 
 ## <a name="create-a-toolbar-for-the-ide"></a>Creare una barra degli strumenti per l'IDE
 
-1. In *ToolbarTestCommandPackage. vsct*cercare la sezione simboli. Nell'elemento GuidSymbol denominato guidToolbarTestCommandPackageCmdSet aggiungere le dichiarazioni per una barra degli strumenti e un gruppo di barre degli strumenti, come indicato di seguito.
+1. In *ToolbarTestCommandPackage. vsct* cercare la sezione simboli. Nell'elemento GuidSymbol denominato guidToolbarTestCommandPackageCmdSet aggiungere le dichiarazioni per una barra degli strumenti e un gruppo di barre degli strumenti, come indicato di seguito.
 
     ```xml
     <IDSymbol name="Toolbar" value="0x1000" />

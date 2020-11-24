@@ -1,5 +1,7 @@
 ---
 title: Aggiornare i modelli di elemento del progetto esistente
+description: Informazioni su come usare l'esportazione guidata modelli e altri processi manuali per aggiornare i modelli di elementi di progetto già creati.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d5d9726ecbf3cb7c403f682aadb197a26b0dc26b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3a709070d777ebaf600fc05abf0e651eaef5b1a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283918"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596885"
 ---
 # <a name="how-to-update-existing-templates"></a>Procedura: Aggiornare modelli esistenti
 
@@ -31,7 +33,7 @@ In Visual Studio è disponibile l'**Esportazione guidata modelli** che può esse
 
 1. Modificare il progetto in Visual Studio. Ad esempio, modificare il tipo di output o aggiungere un nuovo file al progetto.
 
-1. Scegliere **Esporta modello**dal menu **progetto** .
+1. Scegliere **Esporta modello** dal menu **progetto** .
 
     Verrà visualizzata l' **esportazione guidata modelli** .
 

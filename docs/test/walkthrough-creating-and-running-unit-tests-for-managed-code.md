@@ -1,5 +1,7 @@
 ---
 title: Esercitazione sugli unit test C#
+description: Informazioni su come creare, eseguire e personalizzare una serie di unit test usando Microsoft unit test Framework per il codice gestito e Esplora test di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 05/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: b68cb720a636483a0c5e8c3193142d95dbb0afcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed2e7f11a6e36c797bb6c506c19b0fff11fb5ad1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81223671"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598549"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procedura dettagliata: Creare ed eseguire unit test per codice gestito
 
@@ -165,7 +167,7 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 3. Denominare il progetto **BankTests**.
 
-4. Scegliere **Crea**.
+4. Fare clic su **Crea**.
 
    Il progetto **BankTests** viene aggiunto alla soluzione **Bank**.
 
@@ -321,7 +323,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Eseguire nuovamente il test
 
-In **Esplora test**scegliere **Esegui tutto** per rieseguire il test. La barra verde/rossa diventa verde per indicare che il test è stato superato.
+In **Esplora test** scegliere **Esegui tutto** per rieseguire il test. La barra verde/rossa diventa verde per indicare che il test è stato superato.
 
 ![Esplora test in Visual Studio 2019 che indica che il test è stato superato](media/test-explorer-banktests-passed.png)
 

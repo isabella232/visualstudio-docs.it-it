@@ -1,5 +1,7 @@
 ---
 title: Aggiunta di un comando alla barra degli strumenti Esplora soluzioni | Microsoft Docs
+description: Informazioni su come aggiungere un pulsante che esegue un comando alla barra degli strumenti Esplora soluzioni in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cc2eee209129867696955eb22c9e851c17973c1
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: d080791c94c77577f80a4b55db67febd3d48b56a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414100"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597509"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Aggiungere un comando alla barra degli strumenti Esplora soluzioni
 In questa procedura dettagliata viene illustrato come aggiungere un pulsante alla barra degli strumenti **Esplora soluzioni** .
@@ -27,7 +29,7 @@ In questa procedura dettagliata viene illustrato come aggiungere un pulsante all
  Per ulteriori informazioni sui menu, i comandi della barra degli strumenti e i file con *estensione vsct* , vedere [comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md).
 
 > [!NOTE]
-> Usare i file della tabella dei comandi XML (con *estensione vsct* ) anziché i file di configurazione della tabella dei comandi (con *estensione CTC* ) per definire la modalità di visualizzazione dei menu e dei comandi nei pacchetti VSPackage. Per ulteriori informazioni, vedere la [tabella dei comandi di Visual Studio (. File vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+> Usare i file della tabella dei comandi XML (con *estensione vsct*) anziché i file di configurazione della tabella dei comandi (con *estensione CTC*) per definire la modalità di visualizzazione dei menu e dei comandi nei pacchetti VSPackage. Per ulteriori informazioni, vedere la [tabella dei comandi di Visual Studio (. File vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
  A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area download. Viene inclusa come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare Visual Studio SDK in un secondo momento. Per ulteriori informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).

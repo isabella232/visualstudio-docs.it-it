@@ -1,5 +1,7 @@
 ---
 title: Addressing DPI Issues2 | Microsoft Docs
+description: Informazioni sui problemi relativi alla programmazione per schermate ad alta risoluzione, ad esempio la scalabilità verticale del contenuto, i problemi di layout e l'uso delle API di scalabilità DPI.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80f16c5b17a41d1f95b9bcb70e90eb8de46ad69d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 455f144a95a41ae482c1f240e1d2f87b888763a5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740098"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598458"
 ---
 # <a name="address-dpi-issues"></a>Risolvere i problemi di DPI
 Un numero crescente di dispositivi viene distribuito con schermate ad alta risoluzione. Queste schermate hanno in genere più di 200 pixel per pollice (PPI). L'uso di un'applicazione su questi computer richiede il ridimensionamento del contenuto per soddisfare le esigenze di visualizzazione del contenuto a una distanza di visualizzazione normale per il dispositivo. A partire da 2014, la destinazione principale per i display ad alta densità è costituita dai dispositivi di elaborazione mobile (tablet, portatili a copertura mobile e telefoni).
@@ -126,7 +128,7 @@ Per accedere alle funzioni helper DPI dal codice gestito che viene eseguito all'
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />
     ```
 
-- Verificare che il progetto includa riferimenti a **System. Windows. Forms**, **PresentationCore**e **presentationui**.
+- Verificare che il progetto includa riferimenti a **System. Windows. Forms**, **PresentationCore** e **presentationui**.
 
 - Nel codice usare lo spazio dei nomi **Microsoft. VisualStudio. PlatformUI** e chiamare le funzioni statiche della classe DpiHelper. Per i tipi supportati (punti, dimensioni, rettangoli e così via), sono disponibili funzioni di estensione che restituiscono nuovi oggetti ridimensionati. Ad esempio:
 

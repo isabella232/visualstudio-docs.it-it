@@ -1,5 +1,7 @@
 ---
 title: Gestire le impostazioni dell'applicazione (.NET)
+description: Informazioni su come gestire le impostazioni dell'applicazione (in precedenza denominate proprietà dinamiche) che non sono incluse nel codice dell'applicazione, ma sono necessarie in fase di esecuzione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d792a6147795f81211203fc442539371f3caa91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f62e03210e83f434bd32d08c3fe0f7b2b539155e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593707"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596898"
 ---
 # <a name="manage-application-settings-net"></a>Gestire le impostazioni dell'applicazione (.NET)
 
@@ -50,7 +52,7 @@ Le modifiche apportate alle impostazioni utente non vengono scritte su disco a m
 
 ## <a name="create-application-settings-at-design-time"></a>Creare impostazioni dell'applicazione in fase di progettazione
 
-In fase di progettazione, le impostazioni dell'applicazione possono essere create in due modi, mediante la pagina **Impostazioni** di **Creazione progetti**oppure mediante la finestra **Proprietà** per un form o un controllo, che consente di associare un'impostazione direttamente a una proprietà.
+In fase di progettazione, le impostazioni dell'applicazione possono essere create in due modi, mediante la pagina **Impostazioni** di **Creazione progetti** oppure mediante la finestra **Proprietà** per un form o un controllo, che consente di associare un'impostazione direttamente a una proprietà.
 
 Quando si crea un'impostazione con ambito di applicazione, ad esempio una stringa di connessione al database o un riferimento a risorse del server, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] la Salva in *app.config* con il `<applicationSettings>` tag. (Le stringhe di connessione vengono salvate nel tag `<connectionStrings>` .)
 

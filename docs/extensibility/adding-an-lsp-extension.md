@@ -1,5 +1,7 @@
 ---
 title: Aggiunta di un'estensione del protocollo server di linguaggio | Microsoft Docs
+description: Informazioni su come creare un'estensione di Visual Studio che integra un server di linguaggio basato sul protocollo LSP (Language Server Protocol).
+ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0c43d5a50b7a2acb536dee5fe9c6ed9ec3d36d7
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860454"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598146"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Aggiungere un'estensione del protocollo di server di linguaggio
 
@@ -43,7 +45,7 @@ Per ulteriori informazioni su come creare un server di linguaggio di esempio o s
 
 Le tabelle seguenti illustrano le funzionalità LSP supportate in Visual Studio:
 
-Message | Con supporto in Visual Studio
+Messaggio | Con supporto in Visual Studio
 --- | ---
 inizializzazione | sì
 inizializzato | sì
@@ -125,7 +127,7 @@ Lo LSP non include le specifiche su come fornire la colorazione del testo per le
 
 1. Creare una cartella denominata "grammatiche" all'interno dell'estensione. in alternativa, è possibile scegliere qualsiasi nome.
 
-2. All'interno della cartella *Grammatics* includere tutti i file con * \* estensione tmlanguage*, * \* plist*, * \* tmtheme*o * \* JSON* che forniscono la colorazione personalizzata.
+2. All'interno della cartella *Grammatics* includere tutti i file con *\* estensione tmlanguage*, *\* plist*, *\* tmtheme* o *\* JSON* che forniscono la colorazione personalizzata.
 
    > [!TIP]
    > Un file con *estensione tmtheme* definisce la modalità di mapping degli ambiti alle classificazioni di Visual Studio (chiavi di colore denominate). Per informazioni aggiuntive, è possibile fare riferimento al file Global *. tmtheme* nella directory *% ProgramFiles (x86)% \ Microsoft Visual Studio \\ \<version> \\ \<SKU> \Common7\IDE\CommonExtensions\Microsoft\TextMate\Starterkit\Themesg* .
@@ -139,7 +141,7 @@ Lo LSP non include le specifiche su come fornire la colorazione del testo per le
 
 4. Fare clic con il pulsante destro del mouse sui file e scegliere **Proprietà**. Impostare l'azione di **compilazione** su **contenuto** e impostare la proprietà **Includi in VSIX** su **true**.
 
-Dopo aver completato i passaggi precedenti, una cartella *Grammatics* viene aggiunta alla directory di installazione del pacchetto come origine del repository denominata ' ". lang ' è semplicemente un nome per la risoluzione dell'ambiguità e può essere una stringa univoca. Tutte le grammatiche (file con*estensione tmlanguage* ) e i file di tema (file con*estensione tmtheme* ) in questa directory vengono prelevate come potenziali e sostituiscono le grammatiche predefinite fornite con TextMate. Se le estensioni dichiarate del file di grammatica corrispondono all'estensione del file aperto, TextMate eseguirà l'istruzione.
+Dopo aver completato i passaggi precedenti, una cartella *Grammatics* viene aggiunta alla directory di installazione del pacchetto come origine del repository denominata ' ". lang ' è semplicemente un nome per la risoluzione dell'ambiguità e può essere una stringa univoca. Tutte le grammatiche (file con *estensione tmlanguage* ) e i file di tema (file con *estensione tmtheme* ) in questa directory vengono prelevate come potenziali e sostituiscono le grammatiche predefinite fornite con TextMate. Se le estensioni dichiarate del file di grammatica corrispondono all'estensione del file aperto, TextMate eseguirà l'istruzione.
 
 ## <a name="create-a-simple-language-client"></a>Creazione di un client di linguaggio semplice
 

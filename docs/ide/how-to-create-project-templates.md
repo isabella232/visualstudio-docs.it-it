@@ -1,5 +1,7 @@
 ---
 title: Creare modelli di progetto
+description: Informazioni su come usare l'esportazione guidata modelli e altri metodi per creare modelli di progetto in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 f1_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e6f168244971a348cdb7938af463538d0fa2acaf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9030a88e67c90fab870613d71d0fe63992166222
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284386"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597184"
 ---
 # <a name="how-to-create-project-templates"></a>Procedura: Creare modelli di progetto
 
@@ -29,7 +31,7 @@ Questo argomento spiega come creare un modello usando l'**Esportazione guidata m
 
 2. Modificare il progetto finché non è pronto per l'esportazione come modello. Ad esempio, può essere necessario modificare i file del codice per indicare dove deve essere applicata la sostituzione dei parametri. Vedere [Procedura: Sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md).
 
-3. Scegliere **Esporta modello**dal menu **progetto** .
+3. Scegliere **Esporta modello** dal menu **progetto** .
 
    Verrà visualizzata l' **esportazione guidata modelli** .
 

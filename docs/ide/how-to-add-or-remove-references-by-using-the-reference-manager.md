@@ -1,5 +1,7 @@
 ---
 title: Aggiungere riferimenti in Gestione riferimenti
+description: Informazioni su come utilizzare la finestra di dialogo Gestione riferimenti per aggiungere e gestire riferimenti a componenti sviluppati.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f02dcc5f38bf8eb4acc702c5d8a1ee466a6a4a71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4884fdc857abd524fa62bb126e7a74af48e9ca88
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87390262"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597314"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti tramite Gestione riferimenti
 
@@ -189,11 +191,11 @@ Evitare di aggiungere riferimenti a file negli output di un altro progetto all'i
 
 Non è possibile individuare un SDK e aggiungerlo al progetto. È possibile solo individuare un file, ad esempio un assembly o un file con estensione *winmd*, e aggiungerlo al progetto.
 
-Quando si esegue un riferimento a un file in un WinMD, il layout previsto prevede che i file con estensione * \<FileName> WinMD*, * \<FileName> dll*e * \<FileName> pri* siano posizionati uno accanto all'altro. Se si fa riferimento a un WinMD nei seguenti scenari, un set incompleto di file verrà copiato nella directory di output del progetto e, di conseguenza, si verificheranno errori di runtime e di compilazione.
+Quando si esegue un riferimento a un file in un WinMD, il layout previsto prevede che i file con estensione *\<FileName> WinMD*, *\<FileName> dll* e *\<FileName> pri* siano posizionati uno accanto all'altro. Se si fa riferimento a un WinMD nei seguenti scenari, un set incompleto di file verrà copiato nella directory di output del progetto e, di conseguenza, si verificheranno errori di runtime e di compilazione.
 
-- **Componente nativo**: un progetto nativo crea un WinMD per ogni set di spazi dei nomi disgiunto e una sola DLL costituita dall'implementazione. I file WinMD avranno nomi diversi. Durante la creazione del riferimento a questo file di componente nativo, MSBuild non sarà in grado di riconoscere che WinMD con nome diverso sono in realtà un unico componente. Di conseguenza, verranno copiati solo i file con estensione * \<FileName> dll* e * \<FileName> WinMD* con lo stesso nome e si verificheranno errori di Runtime. Per risolvere questo problema, creare un SDK di estensione. Per altre informazioni, vedere [Procedura: Creare un Software Development Kit](../extensibility/creating-a-software-development-kit.md).
+- **Componente nativo**: un progetto nativo crea un WinMD per ogni set di spazi dei nomi disgiunto e una sola DLL costituita dall'implementazione. I file WinMD avranno nomi diversi. Durante la creazione del riferimento a questo file di componente nativo, MSBuild non sarà in grado di riconoscere che WinMD con nome diverso sono in realtà un unico componente. Di conseguenza, verranno copiati solo i file con estensione *\<FileName> dll* e *\<FileName> WinMD* con lo stesso nome e si verificheranno errori di Runtime. Per risolvere questo problema, creare un SDK di estensione. Per altre informazioni, vedere [Procedura: Creare un Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
-- **Utilizzo di controlli**: un controllo XAML consiste come minimo nei file con estensione *\<FileName>winmd*, *\<FileName>dll*, *\<FileName>pri*, *\<XamlName>xaml* e *\<ImageName>jpg*. Quando il progetto viene compilato, i file di risorse associati al riferimento di file non vengono copiati nella directory di output del progetto e verranno copiati solo i file con estensione * \<FileName> WinMD*, * \<FileName> dll* e * \<FileName> pri* . Viene registrato un errore di compilazione per informare l'utente che le risorse * \<XamlName> . XAML* e * \<ImageName> . jpg* risultano mancanti. Per ottenere i risultati desiderati, l'utente dovrà copiare manualmente questi file di risorse nella directory di output del progetto per compilazione e debug/runtime. Per risolvere questo problema, creare un SDK di estensione seguendo i passaggi in [Procedura: Creare un Software Development Kit](../extensibility/creating-a-software-development-kit.md) o modificare il file di progetto per aggiungere la proprietà seguente:
+- **Utilizzo di controlli**: un controllo XAML consiste come minimo nei file con estensione *\<FileName>winmd*, *\<FileName>dll*, *\<FileName>pri*, *\<XamlName>xaml* e *\<ImageName>jpg*. Quando il progetto viene compilato, i file di risorse associati al riferimento di file non vengono copiati nella directory di output del progetto e verranno copiati solo i file con estensione *\<FileName> WinMD*, *\<FileName> dll* e *\<FileName> pri* . Viene registrato un errore di compilazione per informare l'utente che le risorse *\<XamlName> . XAML* e *\<ImageName> . jpg* risultano mancanti. Per ottenere i risultati desiderati, l'utente dovrà copiare manualmente questi file di risorse nella directory di output del progetto per compilazione e debug/runtime. Per risolvere questo problema, creare un SDK di estensione seguendo i passaggi in [Procedura: Creare un Software Development Kit](../extensibility/creating-a-software-development-kit.md) o modificare il file di progetto per aggiungere la proprietà seguente:
 
     ```xml
     <PropertyGroup>
@@ -204,9 +206,9 @@ Quando si esegue un riferimento a un file in un WinMD, il layout previsto preved
     > [!NOTE]
     > Se si aggiunge la proprietà, la compilazione potrebbe essere eseguita più lentamente.
 
-## <a name="recent"></a>Recente
+## <a name="recent"></a>Recenti
 
-Gli **assembly**, **com**, **Windows**e **Browse** supportano ciascuno una scheda **recente** , che enumera l'elenco dei componenti aggiunti di recente ai progetti.
+Gli **assembly**, **com**, **Windows** e **Browse** supportano ciascuno una scheda **recente** , che enumera l'elenco dei componenti aggiunti di recente ai progetti.
 
 ## <a name="search"></a>Ricerca
 

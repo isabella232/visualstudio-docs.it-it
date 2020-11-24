@@ -1,5 +1,7 @@
 ---
 title: Uso del Grafico attività utente virtuale per i test di carico
+description: Informazioni su come usare il grafico attività utente virtuale per isolare gli errori che si sono verificati per singoli utenti virtuali che hanno eseguito il test di carico.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c58dd4f6e6a0c8fe1bd468053bf18c3635b1ee9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f87542e528b743fa59dfe82aa52a57f1a9cfa2c
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78169378"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598237"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Procedura dettagliata: Uso del grafico attività utente virtuale per isolare i problemi
 
@@ -46,7 +48,7 @@ Il Grafico attività utente virtuale consente di visualizzare l'attività degli 
 
 Eseguire il test di carico per raccogliere i dati dell'attività utente virtuale.
 
-- Nella **Editor test di carico**scegliere il pulsante **Esegui** sulla barra degli strumenti. LoadTest1 inizia l'esecuzione.
+- Nella **Editor test di carico** scegliere il pulsante **Esegui** sulla barra degli strumenti. LoadTest1 inizia l'esecuzione.
 
 ## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>Isolare problemi nel Grafico attività utente virtuale
 

@@ -1,5 +1,7 @@
 ---
 title: Personalizzare menu e barre degli strumenti
+description: Informazioni su come personalizzare i menu e le barre degli strumenti di Visual Studio, oltre a informazioni su come personalizzare i comandi inclusi nei menu e nelle barre degli strumenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -27,12 +29,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed85d3a3406cf7abf4bc08e728cc647d605e16ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9111631014275da92da73966ba0310971dbf27f
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284399"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597236"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procedura: personalizzare menu e barre degli strumenti in Visual Studio
 
@@ -69,7 +71,7 @@ ms.locfileid: "85284399"
 
         ![Finestra di dialogo Personalizza che mostra come aggiungere una barra degli strumenti](../ide/media/addtoolbar.png)
 
-    - Per rimuovere una barra degli strumenti personalizzata, selezionarla nell'elenco **Barre degli strumenti**e fare clic sul pulsante **Elimina**.
+    - Per rimuovere una barra degli strumenti personalizzata, selezionarla nell'elenco **Barre degli strumenti** e fare clic sul pulsante **Elimina**.
 
         > [!IMPORTANT]
         > È possibile eliminare le barre degli strumenti create, ma non quelle predefinite.

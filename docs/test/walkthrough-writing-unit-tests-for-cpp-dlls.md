@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: Scrivere unit test per DLL C/C++'
+description: Informazioni su come sviluppare una DLL nativa di C++ usando la metodologia test-First. Per iniziare, creare un progetto di test nativo.
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: how-to
 ms.author: corob
@@ -7,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 16020c0928229c80a9eb33b3bc4804b004d9f432
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 178fef548bc52346a78c7f9e4607aad7b1c56f65
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816007"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598406"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedura: Scrivere unit test per DLL C/C++
 
@@ -120,7 +122,7 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2019
 
 La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017.
 
-1. Creare un progetto C++ usando il modello**Progetto Win32**.
+1. Creare un progetto C++ usando il modello **Progetto Win32**.
 
      In questa procedura dettagliata, il progetto viene denominato `RootFinder`.
 
@@ -188,7 +190,7 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
 
     Il nuovo test viene visualizzato in **Esplora test**.
 
-5. In **Esplora test**scegliere **Esegui tutto**.
+5. In **Esplora test** scegliere **Esegui tutto**.
 
     ![Esplora unit test &#45; Test di base superato](../test/media/utecpp10.png)
 
@@ -243,7 +245,7 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
     }
     ```
 
-4. Compilare la soluzione e quindi in **Esplora test**scegliere **Esegui tutto**.
+4. Compilare la soluzione e quindi in **Esplora test** scegliere **Esegui tutto**.
 
      Entrambi i test vengono superati.
 

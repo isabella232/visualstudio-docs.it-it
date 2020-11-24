@@ -1,5 +1,7 @@
 ---
 title: Aggiunta della ricerca a una finestra degli strumenti | Microsoft Docs
+description: Informazioni su come aggiungere funzionalità di ricerca, tra cui una casella di ricerca, un filtro e un indicatore di stato, a una finestra degli strumenti in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b648b0202e00ea0fa3bc659b90f2f9a7d709768f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d117ab18022285e5cd52f18a1de01adeafbc5df3
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903400"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597639"
 ---
 # <a name="add-search-to-a-tool-window"></a>Aggiungere la ricerca a una finestra degli strumenti
 Quando si crea o si aggiorna una finestra degli strumenti nell'estensione, è possibile aggiungere la stessa funzionalità di ricerca visualizzata altrove in Visual Studio. Questa funzionalità include le funzionalità seguenti:
@@ -82,7 +84,7 @@ Seguendo questa procedura dettagliata, si apprenderà come eseguire le attività
 
 5. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale di Visual Studio.
 
-6. Sulla barra dei menu scegliere **Visualizza**  >  **altre**  >  **TestSearch**Windows.
+6. Sulla barra dei menu scegliere **Visualizza**  >  **altre**  >  **TestSearch** Windows.
 
      Viene visualizzata la finestra degli strumenti, ma il controllo di ricerca non viene ancora visualizzato.
 
@@ -93,9 +95,9 @@ Seguendo questa procedura dettagliata, si apprenderà come eseguire le attività
      Per abilitare la ricerca, è necessario eseguire l'override della <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> Proprietà. La <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> classe implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch> e fornisce un'implementazione predefinita che non Abilita la ricerca.
 
     ```csharp
-    public override bool SearchEnabled
+    public override bool SearchEnabled
     {
-        get { return true; }
+        get { return true; }
     }
     ```
 
@@ -242,7 +244,7 @@ Seguendo questa procedura dettagliata, si apprenderà come eseguire le attività
 1. Nel file * TestSearch.cs * aggiungere il codice seguente alla `TestSearch` classe. Questo codice consente la ricerca immediata anziché la ricerca su richiesta, ovvero l'utente non deve fare clic su **invio**. Il codice esegue l'override del `ProvideSearchSettings` metodo nella `TestSearch` classe, che è necessario per modificare le impostazioni predefinite.
 
     ```csharp
-    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)
+    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)
     {
         Utilities.SetValue(pSearchSettings,
             SearchSettingsDataSource.SearchStartTypeProperty.Name,
@@ -290,7 +292,7 @@ Seguendo questa procedura dettagliata, si apprenderà come eseguire le attività
 
     ```csharp
     private IVsEnumWindowSearchOptions m_optionsEnum;
-    public override IVsEnumWindowSearchOptions SearchOptionsEnum
+    public override IVsEnumWindowSearchOptions SearchOptionsEnum
     {
         get
         {
@@ -342,13 +344,13 @@ Seguendo questa procedura dettagliata, si apprenderà come eseguire le attività
 1. Nel file *TestSearch.cs* aggiungere il codice seguente alla `TestSearch` classe. Il codice implementa `SearchFiltersEnum` aggiungendo un oggetto <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> che specifica di filtrare i risultati della ricerca in modo da visualizzare solo le righe pari.
 
     ```csharp
-    public override IVsEnumWindowSearchFilters SearchFiltersEnum
+    public override IVsEnumWindowSearchFilters SearchFiltersEnum
     {
         get
         {
             List<IVsWindowSearchFilter> list = new List<IVsWindowSearchFilter>();
             list.Add(new WindowSearchSimpleFilter("Search even lines only", "Search even lines only", "lines", "even"));
-            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;
+            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;
         }
     }
 
@@ -359,19 +361,19 @@ Seguendo questa procedura dettagliata, si apprenderà come eseguire le attività
 2. Nel file *TestSearch.cs* aggiungere i metodi seguenti alla `TestSearchTask` classe, che si trova nella `TestSearch` classe. Questi metodi supportano il `OnStartSearch` metodo, che verrà modificato nel passaggio successivo.
 
     ```csharp
-    private string RemoveFromString(string origString, string stringToRemove)
+    private string RemoveFromString(string origString, string stringToRemove)
     {
         int index = origString.IndexOf(stringToRemove);
         if (index == -1)
             return origString;
-        else 
+        else 
              return (origString.Substring(0, index) + origString.Substring(index + stringToRemove.Length)).Trim();
     }
 
-    private string[] GetEvenItems(string[] contentArr)
+    private string[] GetEvenItems(string[] contentArr)
     {
         int length = contentArr.Length / 2;
-        string[] evenContentArr = new string[length];
+        string[] evenContentArr = new string[length];
 
         int indexB = 0;
         for (int index = 1; index < contentArr.Length; index += 2)
@@ -387,13 +389,13 @@ Seguendo questa procedura dettagliata, si apprenderà come eseguire le attività
 3. Nella `TestSearchTask` classe aggiornare il `OnStartSearch` metodo con il codice seguente. Questa modifica aggiorna il codice per supportare il filtro.
 
     ```csharp
-    protected override void OnStartSearch()
+    protected override void OnStartSearch()
     {
-        // Use the original content of the text box as the target of the search. 
-        var separator = new string[] { Environment.NewLine };
+        // Use the original content of the text box as the target of the search. 
+        var separator = new string[] { Environment.NewLine };
         string[] contentArr = ((TestSearchControl)m_toolWindow.Content).SearchContent.Split(separator, StringSplitOptions.None);
 
-        // Get the search option. 
+        // Get the search option. 
         bool matchCase = false;
         matchCase = m_toolWindow.MatchCaseOption.Value;
 
@@ -406,7 +408,7 @@ Seguendo questa procedura dettagliata, si apprenderà come eseguire le attività
         {
             string searchString = this.SearchQuery.SearchString;
 
-            // If the search string contains the filter string, filter the content array. 
+            // If the search string contains the filter string, filter the content array. 
             string filterString = "lines:\"even\"";
 
             if (this.SearchQuery.SearchString.Contains(filterString))
@@ -418,7 +420,7 @@ Seguendo questa procedura dettagliata, si apprenderà come eseguire le attività
                 searchString = RemoveFromString(searchString, filterString);
             }
 
-            // Determine the results. 
+            // Determine the results. 
             uint progress = 0;
             foreach (string line in contentArr)
             {
@@ -441,7 +443,7 @@ Seguendo questa procedura dettagliata, si apprenderà come eseguire le attività
 
                 SearchCallback.ReportProgress(this, progress++, (uint)contentArr.GetLength(0));
 
-                // Uncomment the following line to demonstrate the progress bar. 
+                // Uncomment the following line to demonstrate the progress bar. 
                 // System.Threading.Thread.Sleep(100);
             }
         }
@@ -457,8 +459,8 @@ Seguendo questa procedura dettagliata, si apprenderà come eseguire le attività
             this.SearchResults = resultCount;
         }
 
-        // Call the implementation of this method in the base class. 
-        // This sets the task status to complete and reports task completion. 
+        // Call the implementation of this method in the base class. 
+        // This sets the task status to complete and reports task completion. 
         base.OnStartSearch();
     }
     ```

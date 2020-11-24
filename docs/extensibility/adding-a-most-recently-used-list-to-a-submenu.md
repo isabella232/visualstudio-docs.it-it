@@ -1,5 +1,7 @@
 ---
 title: Aggiunta di un elenco usato più di recente a un sottomenu | Microsoft Docs
+description: Informazioni su come aggiungere un elenco dinamico che contiene i comandi di menu usati più di recente a un sottomenu in Visual Studio Integrated Development Environment (IDE).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0de48e30ea20ab2f7df4e512312978e4faa3a46b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904211"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597926"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Aggiungere un elenco usato più di recente a un sottomenu
 Questa procedura dettagliata si basa sulle dimostrazioni in [aggiungere un sottomenu a un menu](../extensibility/adding-a-submenu-to-a-menu.md)e Mostra come aggiungere un elenco dinamico a un sottomenu. L'elenco dinamico costituisce la base per la creazione di un elenco degli ultimi elementi usati (MRU).
@@ -47,7 +49,7 @@ Per seguire questa procedura dettagliata, è necessario installare Visual Studio
 
     ```xml
     <IDSymbol name="MRUListGroup" value="0x1200"/>
-    <IDSymbol name="cmdidMRUList" value="0x0200"/>
+    <IDSymbol name="cmdidMRUList" value="0x0200"/>
     ```
 
 3. Nella `Groups` sezione aggiungere il gruppo dichiarato dopo le voci di gruppo esistenti.
@@ -77,15 +79,15 @@ Per seguire questa procedura dettagliata, è necessario installare Visual Studio
 
 5. Compilare il progetto e avviare il debug per testare la visualizzazione del nuovo comando.
 
-    Nel menu **Testmenu** fare clic **sul menu nuovo**sottomenu, sottomenu per visualizzare il nuovo comando, il **segnaposto MRU**. Dopo l'implementazione di un elenco di comandi MRU dinamico nella procedura successiva, questa etichetta di comando verrà sostituita da tale elenco ogni volta che viene aperto il sottomenu.
+    Nel menu **Testmenu** fare clic **sul menu nuovo** sottomenu, sottomenu per visualizzare il nuovo comando, il **segnaposto MRU**. Dopo l'implementazione di un elenco di comandi MRU dinamico nella procedura successiva, questa etichetta di comando verrà sostituita da tale elenco ogni volta che viene aperto il sottomenu.
 
 ## <a name="filling-the-mru-list"></a>Riempimento dell'elenco MRU
 
-1. In *TestCommandPackageGuids.cs*aggiungere le righe seguenti dopo gli ID dei comandi esistenti nella `TestCommandPackageGuids` definizione della classe.
+1. In *TestCommandPackageGuids.cs* aggiungere le righe seguenti dopo gli ID dei comandi esistenti nella `TestCommandPackageGuids` definizione della classe.
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
-    public const uint cmdidMRUList = 0x200;
+    public const uint cmdidMRUList = 0x200;
     ```
 
 2. In *TestCommand.cs* aggiungere l'istruzione using seguente.
@@ -147,7 +149,7 @@ Per seguire questa procedura dettagliata, è necessario installare Visual Studio
 6. Dopo il `InitMRUMenu` metodo aggiungere il metodo seguente `OnMRUQueryStatus` . Si tratta del gestore che imposta il testo per ogni elemento MRU.
 
     ```csharp
-    private void OnMRUQueryStatus(object sender, EventArgs e)
+    private void OnMRUQueryStatus(object sender, EventArgs e)
     {
         OleMenuCommand menuCommand = sender as OleMenuCommand;
         if (null != menuCommand)
@@ -155,7 +157,7 @@ Per seguire questa procedura dettagliata, è necessario installare Visual Studio
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)
             {
-                menuCommand.Text = this.mruList[MRUItemIndex] as string;
+                menuCommand.Text = this.mruList[MRUItemIndex] as string;
             }
         }
     }
@@ -164,7 +166,7 @@ Per seguire questa procedura dettagliata, è necessario installare Visual Studio
 7. Dopo il `OnMRUQueryStatus` metodo aggiungere il metodo seguente `OnMRUExec` . Si tratta del gestore per la selezione di un elemento MRU. Questo metodo sposta l'elemento selezionato nella parte superiore dell'elenco e quindi Visualizza l'elemento selezionato in una finestra di messaggio.
 
     ```csharp
-    private void OnMRUExec(object sender, EventArgs e)
+    private void OnMRUExec(object sender, EventArgs e)
     {
         var menuCommand = sender as OleMenuCommand;
         if (null != menuCommand)
@@ -172,7 +174,7 @@ Per seguire questa procedura dettagliata, è necessario installare Visual Studio
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)
             {
-                string selection = this.mruList[MRUItemIndex] as string;
+                string selection = this.mruList[MRUItemIndex] as string;
                 for (int i = MRUItemIndex; i > 0; i--)
                 {
                     this.mruList[i] = this.mruList[i - 1];
@@ -190,7 +192,7 @@ Per seguire questa procedura dettagliata, è necessario installare Visual Studio
 
 1. Compilare il progetto e avviare il debug.
 
-2. Scegliere **richiama TestCommand**dal menu **Testmenu** . Questa operazione Visualizza una finestra di messaggio che indica che il comando è stato selezionato.
+2. Scegliere **richiama TestCommand** dal menu **Testmenu** . Questa operazione Visualizza una finestra di messaggio che indica che il comando è stato selezionato.
 
     > [!NOTE]
     > Questo passaggio è necessario per forzare il caricamento del pacchetto VSPackage e la visualizzazione corretta dell'elenco MRU. Se si ignora questo passaggio, l'elenco MRU non viene visualizzato.

@@ -1,5 +1,7 @@
 ---
 title: Uso di stub per isolare parti dell'app per i test
+description: Informazioni su uno stub, ovvero una piccola parte di codice che prende il posto di un altro componente durante i test. L'utilizzo di uno stub restituisce risultati coerenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -10,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 268cfaa0a5df458ae529f5f2d369dc157ef64548
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: eeb7b981dcaec97d52c24ea40476f0bec84e608e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325959"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598562"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usare stub per isolare parti dell'applicazione l'una dall'altra per il testing unità
 
@@ -29,7 +31,7 @@ Nel diagramma, si desidera testare il componente StockAnalyzer. In genere StockA
 
 ![Le classi Real e Stub sono conformi a un'interfaccia](../test/media/fakesinterfaces.png)
 
-Poiché gli stub si basano sulla possibilità di strutturare il codice in questo modo, in genere si usano gli stub per isolare una parte dell'applicazione da un'altra. Per isolarlo da altri assembly che non sono sotto controllo, ad esempio *System.dll* , è di solito consigliabile usare gli shim. Vedere [Usare shim per isolare l'applicazione da altri assembly per il testing unità](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
+Poiché gli stub si basano sulla possibilità di strutturare il codice in questo modo, in genere si usano gli stub per isolare una parte dell'applicazione da un'altra. Per isolarlo da altri assembly che non sono sotto controllo, ad esempio *System.dll*, è di solito consigliabile usare gli shim. Vedere [Usare shim per isolare l'applicazione da altri assembly per il testing unità](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
 ## <a name="how-to-use-stubs"></a>Come utilizzare gli stub
 
@@ -147,14 +149,14 @@ Per usare gli stub, è innanzitutto necessario generare i tipi stub dalle defini
 
 #### <a name="add-a-fakes-assembly"></a>Aggiungere un assembly Fakes
 
-1. In **Esplora soluzioni** , 
+1. In **Esplora soluzioni**, 
     - Per un progetto di .NET Framework precedente (stile non SDK), espandere il nodo **riferimenti** del progetto unit test.
     ::: moniker range=">=vs-2019"
-    - Per un progetto di tipo SDK che ha come destinazione .NET Framework o .NET Core, espandere il nodo **dipendenze** per trovare l'assembly da falsificare in **assembly** , **progetti** o **pacchetti**.
+    - Per un progetto di tipo SDK che ha come destinazione .NET Framework o .NET Core, espandere il nodo **dipendenze** per trovare l'assembly da falsificare in **assembly**, **progetti** o **pacchetti**.
     ::: moniker-end
     - Se si sta lavorando in Visual Basic, selezionare **Mostra tutti i file** nella barra degli strumenti **Esplora soluzioni** per visualizzare il nodo **riferimenti** .
 
-2. Consente di selezionare l'assembly contenente le definizioni delle classi per le quali si desidera creare gli shim. Se ad esempio si desidera eseguire lo shim di **DateTime** , selezionare **System.dll**.
+2. Consente di selezionare l'assembly contenente le definizioni delle classi per le quali si desidera creare gli shim. Se ad esempio si desidera eseguire lo shim di **DateTime**, selezionare **System.dll**.
 
 3. Scegliere **Aggiungi assembly Fakes** dal menu di scelta rapida.
 
@@ -341,7 +343,7 @@ stub.ValueSet = (value) => i = value;
 
 Se non si forniscono i metodi stub per il setter o il getter di una proprietà, Fakes genera uno stub per l'archiviazione dei valori in modo che la proprietà stub funzioni come una variabile semplice.
 
-### <a name="events"></a>Eventi
+### <a name="events"></a>Events
 
 Gli eventi sono esposti come campi delegati. Pertanto, qualsiasi evento sottoposto a stub può essere generato chiamando il campo di supporto evento. Si consideri la seguente interfaccia da sottoporre a stub:
 

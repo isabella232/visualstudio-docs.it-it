@@ -1,5 +1,7 @@
 ---
 title: Uso dei controlli HTML5 nei test codificati dell'interfaccia utente
+description: Informazioni sul supporto dei test codificati dell'interfaccia utente per i controlli HTML5 inclusi in Internet Explorer 9 e Internet Explorer 10.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3519d1cc030c69880bcc047b4b4123785c4fb8b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d902d31b0d417c32b7b3e1a2067a8bb5bcf77451
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289339"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598380"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Uso dei controlli HTML5 nei test codificati dell'interfaccia utente
 
@@ -20,7 +22,7 @@ I test codificati dell'interfaccia utente includono il supporto per alcuni dei c
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requisiti**
+**Requirements**
 
 - Visual Studio Enterprise
 
@@ -36,7 +38,7 @@ I test codificati dell'interfaccia utente includono il supporto per alcuni dei c
 
 ![Controllo audio HTML5](../test/media/codedui_html5_audio.png)
 
-|Action|Registrazione|Codice generato|
+|Azione|Registrazione|Codice generato|
 |-|---------------|-|
 |**Riproduzione audio**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Riprodurre l' \<name> audio da 00:00:00|HtmlAudio.Play(TimeSpan)|
 |**Ricercare un punto specifico dell'audio**|Cerca \<name> audio su 00:01:48|HtmlAudio.Seek(TimeSpan)|
@@ -59,7 +61,7 @@ Vedere [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioEl
 
 ![Controllo video HTML5](../test/media/codedui_html5_video.png)
 
-|Action|Registrazione|Codice generato|
+|Azione|Registrazione|Codice generato|
 |-|---------------|-|
 |**PlayVideo**<br /><br /> Direttamente dal controllo o dal menu di scelta rapida del controllo.|Riprodurre \<name> video da 00:00:00|HtmlVideo.Play(TimeSpan)|
 |**Ricercare un punto specifico nel video**|Cerca il \<name> video a 00:01:48|HtmlVideo.Seek(TimeSpan)|

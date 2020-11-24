@@ -1,5 +1,7 @@
 ---
 title: Passare al file, passare al simbolo, passare alla riga
+description: Informazioni sui comandi Vai a in Visual Studio e su come usarli per eseguire ricerche mirate sul codice.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3e000224fc09810e15ba3cdbdc4be729139eaaa
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593785"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597535"
 ---
 # <a name="find-code-using-go-to-commands"></a>Trovare codice con i comandi Vai a
 
@@ -57,7 +59,7 @@ Prefisso | Icona | Tasto di scelta rapida | Descrizione
 :| ![Icona Riga](media/gotoall-line-icon.png) | **CTRL** + **G** | Consente di passare al numero di riga specificato
 f| ![Icona File](media/gotoall-files-icon.png) | **CTRL** + **1**, **CTRL** + **F** | Consente di passare al file specificato
 r| ![Icona File recenti](media/gotoall-recent-files-icon.png) | **CTRL** + **1**, **CTRL** + **R** | Consente di passare al file specificato, visitato di recente
-t| ![Icona Tipi](media/gotoall-types-icon.png) | **CTRL** + **1**, **CTRL** + **T** | Consente di passare al tipo specificato
+u| ![Icona Tipi](media/gotoall-types-icon.png) | **CTRL** + **1**, **CTRL** + **T** | Consente di passare al tipo specificato
 m| ![Icona Membri](media/gotoall-members-icon.png) | **CTRL** + **1**, **CTRL** + **M** | Consente di passare al membro specificato
 \#| ![Icona Simboli](media/gotoall-symbols-icon.png) | **CTRL** + **1**, **CTRL** + **S** | Consente di passare al simbolo specificato
 

@@ -1,5 +1,7 @@
 ---
 title: Eseguire il debug di un'applicazione SharePoint con IntelliTrace
+description: Utilizzare IntelliTrace per eseguire più facilmente il debug e la correzione delle applicazioni SharePoint. Creare e aggiungere codice a un ricevitore di funzionalità. Testare il progetto. Raccogli dati IntelliTrace.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041a110ee39ae7711756b8d689bdf68ae2368caf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c7ab11dbe213208a2e8f5e39c3af2d20b79f5cb
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015751"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598484"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Procedura dettagliata: debug di un'applicazione di SharePoint tramite IntelliTrace
 
@@ -65,7 +67,7 @@ Si crea innanzitutto un progetto SharePoint vuoto con un ricevitore di funzional
 
      IntelliTrace opera solo su soluzioni farm.
 
-3. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo **funzionalità** , quindi scegliere **Aggiungi funzionalità**.
+3. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo **funzionalità** , quindi scegliere **Aggiungi funzionalità**.
 
      Viene visualizzato *Feature1. feature* .
 
@@ -258,15 +260,15 @@ Ora che il codice è stato aggiunto al ricevitore della funzionalità e l'agente
 
 2. Visualizzare il contenuto degli elenchi Annunci e attività.
 
-     L'elenco degli annunci dovrebbe avere un nuovo annuncio denominato **funzionalità attivata: IntelliTraceTest_Feature1**e l'elenco attività deve avere una nuova attività denominata **disattiva funzionalità: IntelliTraceTest_Feature1**. Se uno di questi elementi è mancante, verificare se la funzionalità è attivata. Se non è attivato, attivarlo.
+     L'elenco degli annunci dovrebbe avere un nuovo annuncio denominato **funzionalità attivata: IntelliTraceTest_Feature1** e l'elenco attività deve avere una nuova attività denominata **disattiva funzionalità: IntelliTraceTest_Feature1**. Se uno di questi elementi è mancante, verificare se la funzionalità è attivata. Se non è attivato, attivarlo.
 
 3. Disattivare la funzionalità eseguendo i passaggi seguenti:
 
    1. Nel menu **Azioni sito** di SharePoint scegliere **Impostazioni sito**.
 
-   2. In **Azioni sito**scegliere il collegamento **Gestisci caratteristiche sito** .
+   2. In **Azioni sito** scegliere il collegamento **Gestisci caratteristiche sito** .
 
-   3. Accanto a **IntelliTraceTest Feature1**scegliere il pulsante **Disattiva** .
+   3. Accanto a **IntelliTraceTest Feature1** scegliere il pulsante **Disattiva** .
 
    4. Nella pagina avviso scegliere il collegamento **Disattiva la funzionalità** .
 
@@ -285,9 +287,9 @@ Se si installa Microsoft Monitoring Agent nel sistema in cui è in esecuzione Sh
 
    1. Nel menu **Azioni sito** di SharePoint scegliere **Impostazioni sito**.
 
-   2. In **Azioni sito**scegliere il collegamento **Gestisci caratteristiche sito** .
+   2. In **Azioni sito** scegliere il collegamento **Gestisci caratteristiche sito** .
 
-   3. Accanto a **IntelliTraceTest Feature1**scegliere il pulsante **Disattiva** .
+   3. Accanto a **IntelliTraceTest Feature1** scegliere il pulsante **Disattiva** .
 
    4. Nella pagina avviso scegliere il collegamento **Disattiva la funzionalità** .
 
@@ -319,9 +321,9 @@ A questo punto è possibile visualizzare il file di log IntelliTrace in Visual S
 
     1. Nel menu **Azioni sito** di SharePoint scegliere **Impostazioni sito**.
 
-    2. In **Azioni sito**scegliere il collegamento **Gestisci caratteristiche sito** .
+    2. In **Azioni sito** scegliere il collegamento **Gestisci caratteristiche sito** .
 
-    3. Accanto a **IntelliTraceTest Feature1**scegliere il pulsante **Disattiva** .
+    3. Accanto a **IntelliTraceTest Feature1** scegliere il pulsante **Disattiva** .
 
     4. Nella pagina avviso scegliere il collegamento **Disattiva la funzionalità** .
 

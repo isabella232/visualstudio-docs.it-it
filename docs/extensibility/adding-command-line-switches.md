@@ -1,5 +1,7 @@
 ---
-title: Aggiunta di opzioni della riga di comando | Microsoft Docs
+title: Aggiunta di opzioni di Command-Line | Microsoft Docs
+description: Informazioni su come aggiungere opzioni della riga di comando applicate a un pacchetto VSPackage quando viene eseguito il devenv.exe comando.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb4abf5352ac6ad78852bd3224df0b22784470db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0eefb532380badcf917f6d512bc5b41ebb96b1d1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903481"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597730"
 ---
 # <a name="add-command-line-switches"></a>Aggiungi opzioni della riga di comando
 È possibile aggiungere opzioni della riga di comando che si applicano al pacchetto VSPackage quando *devenv.exe* viene eseguito. Usare <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> per dichiarare il nome dell'opzione e le relative proprietà. In questo esempio viene aggiunta l'opzione di commutazione a pagina per una sottoclasse di VSPackage denominata **AddCommandSwitchPackage** senza argomenti e con il pacchetto VSPackage caricato automaticamente.
@@ -72,4 +74,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Opzioni della riga di comando devenv](../ide/reference/devenv-command-line-switches.md)
 - [Utilità CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)
-- [. File pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [File con estensione pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

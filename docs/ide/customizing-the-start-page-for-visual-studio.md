@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 827ac67840f272e17cec6a7882a02b58dddbf925
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 3928ab1cad67cac26865229cbe6d317083a0a4f1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006263"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598107"
 ---
 # <a name="customize-startup"></a>Personalizzare l'avvio
 
@@ -69,7 +69,7 @@ Per installare una pagina iniziale personalizzata, aprire il file con estensione
 > [!TIP]
 > Se un errore in una pagina iniziale personalizzata determina un arresto anomalo di Visual Studio, è possibile aprire Visual Studio in modalità sicura e quindi impostare l'uso della pagina iniziale predefinita. Vedere [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
 

@@ -1,5 +1,7 @@
 ---
 title: Aggiunta di icone ai comandi di menu | Microsoft Docs
+description: Informazioni su come aggiungere icone ai comandi che possono essere visualizzati sia nei menu che nelle barre degli strumenti di Visual Studio Integrated Development Environment (IDE).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9f038dc43c1705a7cef47eb09a17607c535e307
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaf0a089c10c850c14b9ba2f807a69eada5d04b9
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903433"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597652"
 ---
 # <a name="add-icons-to-menu-commands"></a>Aggiungere icone ai comandi di menu
 I comandi possono essere visualizzati sia nei menu che nelle barre degli strumenti. Sulle barre degli strumenti è normale che un comando venga visualizzato solo con un'icona (per risparmiare spazio) mentre nei menu un comando viene in genere visualizzato con un'icona e un testo.
@@ -33,7 +35,7 @@ I comandi possono essere visualizzati sia nei menu che nelle barre degli strumen
 
      Se si utilizza una profondità di colore a 8 bit, utilizzare magenta `RGB(255,0,255)` come trasparenza. Tuttavia, le icone a colori a 32 bit sono preferite.
 
-2. Copiare il file icona nella directory *Resources* nel progetto VSPackage. Nella **Esplora soluzioni**aggiungere l'icona al progetto. (Selezionare **risorse**, quindi nel menu di scelta rapida fare clic su **Aggiungi**, quindi su **elemento esistente**e selezionare il file dell'icona).
+2. Copiare il file icona nella directory *Resources* nel progetto VSPackage. Nella **Esplora soluzioni** aggiungere l'icona al progetto. (Selezionare **risorse**, quindi nel menu di scelta rapida fare clic su **Aggiungi**, quindi su **elemento esistente** e selezionare il file dell'icona).
 
 3. Aprire il file con *estensione vsct* nell'editor.
 

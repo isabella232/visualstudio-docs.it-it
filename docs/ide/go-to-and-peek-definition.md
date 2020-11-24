@@ -1,5 +1,7 @@
 ---
 title: Visualizzazione delle definizioni dei tipi
+description: Informazioni sulle funzionalità Vai a definizione e Visualizza definizione che consentono di visualizzare facilmente la definizione di un tipo o di un membro.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ef13b959d4e106b451ea0cfb336835059667ce4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8fab4bae999825d7d2fb11dd232d1e271b4f62d5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75592074"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597496"
 ---
 # <a name="view-type-and-member-definitions"></a>Visualizzare le definizioni di tipi e membri
 
@@ -34,7 +36,7 @@ La funzionalità **Vai a definizione** consente di passare all'origine di un tip
 
 ![Animazione di Vai a definizione con un clic del mouse](../ide/media/click_gotodef.gif)
 
-È possibile modificare il tasto di modifica per **Vai a definizione** con clic del mouse passando a **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **generale**e scegliendo **ALT** o **CTRL** + **ALT** dall'elenco a discesa **Usa tasto di modifica** . È anche possibile disabilitare la funzionalità **Vai a definizione** con clic del mouse deselezionando la casella di controllo **Abilita clic del mouse per eseguire Vai a definizione**.
+È possibile modificare il tasto di modifica per **Vai a definizione** con clic del mouse passando a **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **generale** e scegliendo **ALT** o **CTRL** + **ALT** dall'elenco a discesa **Usa tasto di modifica** . È anche possibile disabilitare la funzionalità **Vai a definizione** con clic del mouse deselezionando la casella di controllo **Abilita clic del mouse per eseguire Vai a definizione**.
 
 ![Abilitazione del clic del mouse per Vai a definizione](../ide/media/editor_options_mouse_click_gotodef.png)
 
@@ -69,7 +71,7 @@ Ad esempio, se si esegue il comando **Vai a definizione** per <xref:System.Conso
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Visualizzare le definizioni del codice sorgente decompilato invece dei metadati (C#)
 
-È possibile impostare un'opzione per visualizzare il codice sorgente decompilato quando si visualizza la definizione di un tipo o di un membro C# per il quale non è disponibile il codice sorgente. Per attivare questa funzionalità, scegliere **strumenti**  >  **Opzioni** dalla barra dei menu. Espandere quindi **editor di testo**  >  **C#**  >  **Avanzate**e selezionare **Abilita spostamento a origini decompilate**.
+È possibile impostare un'opzione per visualizzare il codice sorgente decompilato quando si visualizza la definizione di un tipo o di un membro C# per il quale non è disponibile il codice sorgente. Per attivare questa funzionalità, scegliere **strumenti**  >  **Opzioni** dalla barra dei menu. Espandere quindi **editor di testo**  >  **C#**  >  **Avanzate** e selezionare **Abilita spostamento a origini decompilate**.
 
 ![Visualizzazione di una definizione decompilata](media/go-to-definition-decompiled-sources.png)
 

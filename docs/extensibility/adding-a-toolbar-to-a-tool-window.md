@@ -1,5 +1,7 @@
 ---
 title: Aggiunta di una barra degli strumenti a una finestra degli strumenti | Microsoft Docs
+description: Informazioni su come aggiungere una barra degli strumenti contenente i pulsanti associati ai comandi in una finestra degli strumenti in Visual Studio Integrated Development Environment (IDE).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5351fe6a713c217f8fca20d6740b542dc75f053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a093dd65ce4de187cadf7e277c695bac99b5ca6
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904126"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597977"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>Aggiungere una barra degli strumenti a una finestra degli strumenti
 In questa procedura dettagliata viene illustrato come aggiungere una barra degli strumenti a una finestra degli strumenti.
@@ -34,7 +36,7 @@ In questa procedura dettagliata viene illustrato come aggiungere una barra degli
 
 1. Creare un progetto VSIX denominato `TWToolbar` con un comando di menu denominato **TWTestCommand** e una finestra degli strumenti denominata **TestToolWindow**. Per altre informazioni, vedere [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md) e [creare un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md). È necessario aggiungere il modello di elemento del comando prima di aggiungere il modello della finestra degli strumenti.
 
-2. In *TWTestCommandPackage. vsct*cercare la sezione simboli. Nel nodo GuidSymbol denominato guidTWTestCommandPackageCmdSet dichiarare una barra degli strumenti e un gruppo di barre degli strumenti, come indicato di seguito.
+2. In *TWTestCommandPackage. vsct* cercare la sezione simboli. Nel nodo GuidSymbol denominato guidTWTestCommandPackageCmdSet dichiarare una barra degli strumenti e un gruppo di barre degli strumenti, come indicato di seguito.
 
     ```xml
     <IDSymbol name="TWToolbar" value="0x1000" />

@@ -1,5 +1,7 @@
 ---
 title: Creare modelli di elementi
+description: Informazioni su come usare l'esportazione guidata modelli per creare un modello di elemento in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -7,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 0a0d4122d36c0946b6c1c98ef0f1523ce35751a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abf058526a6ff48a37d4c7585e7deabe1decb14a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284477"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597275"
 ---
 # <a name="how-to-create-item-templates"></a>Procedura: Creare modelli di elementi
 
@@ -26,7 +28,7 @@ Questo argomento spiega come creare un modello di elemento usando l'**Esportazio
 
 1. Modificare il file del codice per indicare dove verrà applicata la sostituzione dei parametri. Per altre informazioni, vedere [Procedura: Sostituire i parametri di un modello](../ide/how-to-substitute-parameters-in-a-template.md).
 
-1. Scegliere **Esporta modello**dal menu **progetto** .
+1. Scegliere **Esporta modello** dal menu **progetto** .
 
 1. Nella pagina **Scegliere il tipo di modello** scegliere **Modello di elemento**, selezionare il progetto che contiene l'elemento e quindi scegliere **Avanti**.
 
@@ -48,7 +50,7 @@ Questo argomento spiega come creare un modello di elemento usando l'**Esportazio
 
 ## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Abilitare l'uso del modello di elemento in un progetto di app di Windows universale
 
-La procedura guidata esegue la maggior parte delle operazioni richieste per creare un modello di base, ma in molti casi sarà necessario modificare manualmente il file con estensione *vstemplate* dopo aver esportato il modello. Ad esempio, se si vuole includere l'elemento nella finestra di dialogo**Aggiungi nuovo elemento** per un progetto di app di Windows universale, è necessario eseguire alcuni passaggi aggiuntivi.
+La procedura guidata esegue la maggior parte delle operazioni richieste per creare un modello di base, ma in molti casi sarà necessario modificare manualmente il file con estensione *vstemplate* dopo aver esportato il modello. Ad esempio, se si vuole includere l'elemento nella finestra di dialogo **Aggiungi nuovo elemento** per un progetto di app di Windows universale, è necessario eseguire alcuni passaggi aggiuntivi.
 
 1. Seguire i passaggi della sezione precedente per esportare un modello di elemento.
 

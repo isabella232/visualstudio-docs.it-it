@@ -1,5 +1,7 @@
 ---
 title: Creazione ed esecuzione di unit test per app UWP
+description: Informazioni sul supporto di Visual Studio per unit test piattaforma UWP (Universal Windows Platform) app. Visual Studio fornisce modelli di unit test per C#, Visual Basic e C++.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 4109f743caf7c62450591f78e90b92113fc4107e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcf93dff859e2332c79b50086d0dc50d6bd304c8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568880"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598341"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Procedura dettagliata: Creare ed eseguire unit test per app della piattaforma UWP
 
@@ -78,11 +80,11 @@ Dopo aver completato questi passaggi, il progetto unit test viene creato e visua
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Modificare il file manifesto dell'applicazione UWP del progetto di unit test
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul file *Package. appxmanifest* e scegliere **Apri**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul file *Package. appxmanifest* e scegliere **Apri**.
 
 2. In **Progettazione manifesto** scegliere la scheda **Funzionalità**.
 
-3. Nell'elenco in **Funzionalità**selezionare le funzionalità necessarie per lo unit test e il codice per il test. Ad esempio, selezionare la casella di controllo **Internet** se lo unit test e il codice di cui si sta eseguendo il test necessitano della funzionalità di accesso a Internet.
+3. Nell'elenco in **Funzionalità** selezionare le funzionalità necessarie per lo unit test e il codice per il test. Ad esempio, selezionare la casella di controllo **Internet** se lo unit test e il codice di cui si sta eseguendo il test necessitano della funzionalità di accesso a Internet.
 
    > [!NOTE]
    > Le funzionalità selezionate devono includere solo quelle necessarie affinché lo unit test funzioni correttamente.
@@ -99,14 +101,14 @@ Per compilare la soluzione ed eseguire il unit test usando Esplora test:
 
 1. Dal menu **Test** scegliere **Finestre**, quindi scegliere **Esplora test**.
 
-2. Scegliere **Compila soluzione**dal menu **Compila** .
+2. Scegliere **Compila soluzione** dal menu **Compila** .
 
    Il unit test viene ora visualizzato in Esplora test.
 
    > [!NOTE]
    > È necessario compilare la soluzione per aggiornare l'elenco degli unit test in Esplora test.
 
-3. In **Esplora test**scegliere il unit test creato.
+3. In **Esplora test** scegliere il unit test creato.
 
 4. Scegliere **Esegui tutto**.
 
@@ -115,7 +117,7 @@ Per compilare la soluzione ed eseguire il unit test usando Esplora test:
    > [!TIP]
    > È possibile selezionare uno o più unit test elencati in Esplora test, quindi fare clic con il pulsante destro del mouse e scegliere **Esegui test selezionati**.
    >
-   > Inoltre, è possibile scegliere di **eseguire il debug dei test selezionati**, di **aprire il test**e di usare l'opzione **Proprietà** .
+   > Inoltre, è possibile scegliere di **eseguire il debug dei test selezionati**, di **aprire il test** e di usare l'opzione **Proprietà** .
    >
    > ![Esplora unit test &#45; unit test menu di scelta rapida](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 

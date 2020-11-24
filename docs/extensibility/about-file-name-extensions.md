@@ -1,5 +1,7 @@
 ---
 title: Informazioni sulle estensioni di file | Microsoft Docs
+description: Informazioni su come registrare le estensioni dei nomi di file per i pacchetti VSPackage e associarle a una versione specifica di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03e07ec233ef975441a1f10507f0db872051558f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ef0c942e88c10b4f814dc103702edc08229fb9b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740353"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597665"
 ---
 # <a name="about-file-name-extensions"></a>Informazioni sulle estensioni di file
 Quando si registra un'estensione di file di un pacchetto VSPackage, questo viene associato a una versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Questo è importante se [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] in un computer è installata più di una versione di.
