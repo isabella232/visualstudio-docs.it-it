@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 02d26416357ec13b61232f2adb0bc3e5e3c67818
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136602"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970197"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Procedura: Visualizzare, salvare e configurare file di log di compilazione
 
@@ -32,7 +32,7 @@ Se si compila qualsiasi tipo di progetto usando MSBuild, è possibile creare un 
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>Per visualizzare il file di log di compilazione per un progetto C++
 
-1. In Esplora **risorse** o **Esplora file**aprire il file seguente (relativo alla cartella radice del progetto): *versione* \\ <ProjectName> \> . Log * o *Debug \\<NomeProgetto \> . log*
+1. In Esplora **risorse** o **Esplora file** aprire il file seguente (relativo alla cartella radice del progetto): *versione* \\ <ProjectName> \> . Log * o *Debug \\<NomeProgetto \> . log*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Per creare un file di log di compilazione per un progetto di codice gestito
 
@@ -71,7 +71,7 @@ Se si compila qualsiasi tipo di progetto usando MSBuild, è possibile creare un 
 
 I log binari sono una funzionalità facoltativa per i progetti .NET che consente di ottenere un'esperienza di ricerca dei log più completa, con la quale sarebbe possibile trovare facilmente informazioni nei log di grandi dimensioni. Per usare i log binari, installare gli [strumenti dei sistemi di progetto](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools). Per ulteriori informazioni, vedere [https://msbuildlog.com](https://msbuildlog.com) e [log binario](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Compilare](../ide/compiling-and-building-in-visual-studio.md)

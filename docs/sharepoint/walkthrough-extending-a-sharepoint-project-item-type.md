@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: estensione di un tipo di elemento di progetto SharePoint | Microsoft Docs'
+description: In questa procedura dettagliata creare un'estensione per un tipo di elemento di progetto SharePoint, ad esempio l'elemento del progetto del modello di integrazione applicativa dei dati.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8186b1a1388745527fbb9f4dd37478942c36e62
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 3a360b6a336f64920c0144f742e98a64282eeeec
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740006"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970406"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Procedura dettagliata: estensione di un tipo di elemento di progetto SharePoint
   È possibile utilizzare l'elemento di progetto **modello di integrazione applicativa dei dati** per creare un modello per il servizio di integrazione applicativa dei dati in SharePoint. Per impostazione predefinita, quando si crea un modello utilizzando questo elemento del progetto, i dati nel modello non vengono visualizzati agli utenti. È inoltre necessario creare un elenco esterno in SharePoint per consentire agli utenti di visualizzare i dati.
@@ -85,7 +87,7 @@ ms.locfileid: "90740006"
 
 #### <a name="to-create-the-extension-project"></a>Per creare il progetto di estensione
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo della soluzione **GenerateExternalDataLists** , scegliere **Aggiungi**, quindi **nuovo progetto**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo della soluzione **GenerateExternalDataLists** , scegliere **Aggiungi**, quindi **nuovo progetto**.
 
 2. Nella finestra di dialogo **Aggiungi nuovo progetto** espandere i nodi **Visual C#** o **Visual Basic** , quindi scegliere il nodo **Windows** .
 
@@ -159,7 +161,7 @@ ms.locfileid: "90740006"
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>Per configurare e creare il pacchetto VSIX
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il file source. Extension. vsixmanifest nel progetto GenerateExternalDataLists, quindi scegliere **Apri**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il file source. Extension. vsixmanifest nel progetto GenerateExternalDataLists, quindi scegliere **Apri**.
 
      Visual Studio apre il file nell'editor manifesto. Il file source. Extension. vsixmanifest è la base del file Extension. vsixmanifest è richiesto da tutti i pacchetti VSIX. Per altre informazioni su questo file, vedere [riferimento allo schema di estensione VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
@@ -201,7 +203,7 @@ ms.locfileid: "90740006"
 
 3. Aprire il file di codice GenerateExternalDataLists, quindi aggiungere un punto di interruzione alla prima riga di codice nel `GenerateExternalDataLists_Execute` metodo.
 
-4. Per avviare il debug, premere il tasto **F5** oppure scegliere **debug**  >  **Avvia debug**sulla barra dei menu.
+4. Per avviare il debug, premere il tasto **F5** oppure scegliere **debug**  >  **Avvia debug** sulla barra dei menu.
 
      Visual Studio installa l'estensione in%UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\External Data List Generator\1.0 e avvia un'istanza sperimentale di Visual Studio. Si eseguirà il test dell'elemento del progetto in questa istanza di Visual Studio.
 
@@ -268,13 +270,13 @@ ms.locfileid: "90740006"
 
 3. Nel gruppo **Impostazioni** della scheda **elenco** scegliere **Impostazioni elenco**.
 
-4. In **autorizzazioni e gestione**scegliere **Elimina questo elenco**, quindi scegliere **OK** per confermare che si desidera inviare l'elenco al Cestino.
+4. In **autorizzazioni e gestione** scegliere **Elimina questo elenco**, quindi scegliere **OK** per confermare che si desidera inviare l'elenco al Cestino.
 
 5. Chiudere il Web browser.
 
 #### <a name="to-remove-the-bdc-model-from-the-sharepoint-site"></a>Per rimuovere il modello di integrazione applicativa dei dati dal sito di SharePoint
 
-1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere **Build**  >  **ritrazione**compilazione.
+1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere **Build**  >  **ritrazione** compilazione.
 
      Visual Studio rimuove il modello di integrazione applicativa dei dati dal sito di SharePoint.
 
@@ -292,7 +294,7 @@ ms.locfileid: "90740006"
 
 5. Chiudere entrambe le istanze di Visual Studio (l'istanza sperimentale e l'istanza in cui è aperta la soluzione GenerateExternalDataLists).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estendere il sistema del progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Creare un modello di integrazione applicativa dei dati](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [Progettare un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)

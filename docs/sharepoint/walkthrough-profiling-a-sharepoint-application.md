@@ -1,5 +1,7 @@
 ---
 title: "Procedura dettagliata: profilatura di un'applicazione SharePoint | Microsoft Docs"
+description: In questa procedura dettagliata, usare gli strumenti di profilatura di Visual Studio per ottimizzare le prestazioni di un'applicazione SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a2e4ca528c7f534cc3a7f04d7e1e2832ee9b412
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 66e19f7744a56d147fb0760c6f20254ea4308603
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "92298626"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970100"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Procedura dettagliata: profilare un'applicazione SharePoint
   In questa procedura dettagliata viene illustrato come utilizzare gli strumenti di profilatura in Visual Studio per ottimizzare le prestazioni di un'applicazione SharePoint. L'applicazione di esempio è un ricevitore di eventi di funzionalità SharePoint contenente un ciclo inattivo che comporta una riduzione delle prestazioni del ricevitore di eventi di funzionalità. Il profiler di Visual Studio consente di individuare ed eliminare la parte più costosa (con prestazioni più lente) del progetto, nota anche come *percorso critico*.
@@ -72,9 +74,9 @@ ms.locfileid: "92298626"
 
 ### <a name="to-add-a-feature-and-feature-event-receiver"></a>Per aggiungere una funzionalità e un ricevitore di eventi di funzionalità
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo **funzionalità** , scegliere **Aggiungi funzionalità**e lasciare il nome in corrispondenza del valore predefinito **Feature1**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo **funzionalità** , scegliere **Aggiungi funzionalità** e lasciare il nome in corrispondenza del valore predefinito **Feature1**.
 
-2. In **Esplora soluzioni**aprire il menu di scelta rapida per **Feature1**, quindi scegliere **Aggiungi ricevitore di eventi**.
+2. In **Esplora soluzioni** aprire il menu di scelta rapida per **Feature1**, quindi scegliere **Aggiungi ricevitore di eventi**.
 
      Verrà aggiunto un file di codice alla funzionalità con diversi gestori di eventi impostati come commenti e viene aperto il file da modificare.
 
@@ -178,7 +180,7 @@ ms.locfileid: "92298626"
     }
     ```
 
-6. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto (**profiletto**), quindi scegliere **proprietà**.
+6. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto (**profiletto**), quindi scegliere **proprietà**.
 
 7. Nella finestra di dialogo **Proprietà** scegliere la scheda **SharePoint** .
 
@@ -193,9 +195,9 @@ ms.locfileid: "92298626"
 
 ### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Per configurare e distribuire l'applicazione SharePoint
 
-1. Scegliere **Avvia Creazione guidata sessione di prestazioni**dal menu **analizza** .
+1. Scegliere **Avvia Creazione guidata sessione di prestazioni** dal menu **analizza** .
 
-2. In una pagina della **creazione guidata sessione di prestazioni**lasciare il metodo di profilatura come **campionamento CPU** e scegliere il pulsante **Avanti** .
+2. In una pagina della **creazione guidata sessione di prestazioni** lasciare il metodo di profilatura come **campionamento CPU** e scegliere il pulsante **Avanti** .
 
      Gli altri metodi di profilatura possono essere utilizzati in situazioni di profilatura più avanzate. Per altre informazioni, vedere [Informazioni sui metodi di raccolta delle prestazioni](../profiling/understanding-performance-collection-methods.md).
 
@@ -203,7 +205,7 @@ ms.locfileid: "92298626"
 
      Se in una soluzione sono disponibili più progetti, vengono visualizzati in questo elenco.
 
-4. Nella terza pagina della **creazione guidata sessione di prestazioni**deselezionare la casella di controllo **Abilita profilatura interazione tra livelli** , quindi scegliere il pulsante **Avanti** .
+4. Nella terza pagina della **creazione guidata sessione di prestazioni** deselezionare la casella di controllo **Abilita profilatura interazione tra livelli** , quindi scegliere il pulsante **Avanti** .
 
      La funzionalità di profilatura interazione tra livelli (TIP) è utile per misurare le prestazioni di applicazioni in cui vengono eseguite query sui database e per visualizzare il numero di volte in cui viene richiesta una pagina Web. Poiché i dati non sono necessari per questo esempio, la funzionalità non verrà abilitata.
 
@@ -262,7 +264,7 @@ ms.locfileid: "92298626"
 
 2. Salvare il progetto.
 
-3. In **Esplora prestazioni**aprire la cartella destinazioni, quindi scegliere il nodo **profiletto** .
+3. In **Esplora prestazioni** aprire la cartella destinazioni, quindi scegliere il nodo **profiletto** .
 
 4. Nella scheda **azioni** della barra degli strumenti **Esplora prestazioni** scegliere il pulsante **Avvia profilatura** .
 
@@ -272,7 +274,7 @@ ms.locfileid: "92298626"
 
      L'attivazione della funzionalità dovrebbe essere molto più veloce una volta che è stata eliminata la chiamata al ciclo inattivo. Il Rapporto sulla profilatura dei campioni dovrebbe riflettere questa situazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica della sessione di prestazioni](../profiling/performance-session-overview.md)
 - [Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md)
 - [Find Application Bottlenecks with Visual Studio Profiler](/archive/msdn-magazine/2008/march/find-application-bottlenecks-with-visual-studio-profiler) (Trovare i colli di bottiglia delle applicazioni con il profiler di Visual Studio)

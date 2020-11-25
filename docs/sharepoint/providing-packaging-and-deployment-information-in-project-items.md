@@ -1,5 +1,7 @@
 ---
 title: Creazione di pacchetti & informazioni sulla distribuzione negli elementi di progetto
+description: Aggiungere i pacchetti e i dati di distribuzione negli elementi di progetto SharePoint usando le proprietà della funzionalità, i ricevitori di funzionalità, i riferimenti di output del progetto e le entità di controllo sicur
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: db805c308fd245554824997b24236eb2e2d80e62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f73d8727fb960cf519d368d928aa20cae38ae1a9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984211"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970477"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Fornire informazioni sulla creazione di pacchetti e sulla distribuzione negli elementi di progetto
   Tutti gli elementi del progetto SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dispongono di proprietà che è possibile utilizzare per fornire dati aggiuntivi quando il progetto viene distribuito in SharePoint. Di seguito sono riportate le proprietà:
@@ -68,7 +70,7 @@ ms.locfileid: "72984211"
 ### <a name="reference-method"></a>Reference (metodo)
  Un altro modo per aggiungere un ricevitore di funzionalità consiste nell'usare la proprietà **Receiver della funzionalità** di un elemento di progetto per fare riferimento a un assembly del ricevitore di funzionalità. Il valore della proprietà ricevitore funzionalità dispone di due sottoproprietà: **assembly** e **nome classe**. L'assembly deve usare il nome completo, "Strong" e il nome della classe deve essere il nome completo del tipo. Per altre informazioni, vedere [Assembly con nomi sicuri](/previous-versions/dotnet/netframework-4.0/wd40t7ad(v=vs.100)). Dopo aver distribuito la soluzione in SharePoint, la funzionalità Usa il ricevitore della funzionalità a cui si fa riferimento per gestire gli eventi di funzionalità.
 
- Al momento della compilazione della soluzione, i valori delle proprietà del ricevitore di funzionalità nella funzionalità e i relativi progetti si uniscono per impostare gli attributi ReceiverAssembly e ReceiverClass dell'elemento Feature nel manifesto della funzionalità del file della soluzione SharePoint (con*estensione wsp*). Pertanto, se i valori delle proprietà assembly e nome classe di un elemento di progetto e di una funzionalità sono entrambi specificati, i valori delle proprietà elemento progetto e funzionalità devono corrispondere. Se i valori non corrispondono, verrà visualizzato un errore di convalida. Se si vuole che un elemento del progetto faccia riferimento a un assembly del ricevitore di funzionalità diverso da quello usato dalla funzionalità, spostarlo in un'altra funzionalità.
+ Al momento della compilazione della soluzione, i valori delle proprietà del ricevitore di funzionalità nella funzionalità e i relativi progetti si uniscono per impostare gli attributi ReceiverAssembly e ReceiverClass dell'elemento Feature nel manifesto della funzionalità del file della soluzione SharePoint (con *estensione wsp*). Pertanto, se i valori delle proprietà assembly e nome classe di un elemento di progetto e di una funzionalità sono entrambi specificati, i valori delle proprietà elemento progetto e funzionalità devono corrispondere. Se i valori non corrispondono, verrà visualizzato un errore di convalida. Se si vuole che un elemento del progetto faccia riferimento a un assembly del ricevitore di funzionalità diverso da quello usato dalla funzionalità, spostarlo in un'altra funzionalità.
 
  Se si fa riferimento a un assembly del ricevitore di funzionalità che non è già presente nel server, è necessario includere anche il file di assembly nel pacchetto. non [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] lo aggiunge. Quando si distribuisce la funzionalità, il file di assembly viene copiato [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] nella cartella del sistema o nella cartella bin nella directory fisica di SharePoint. Per altre informazioni, vedere Procedura: [aggiungere e rimuovere assembly aggiuntivi](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
@@ -105,7 +107,7 @@ ms.locfileid: "72984211"
 </Assemblies>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Pacchetto e distribuzione di soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [Usare i moduli per includere i file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md)
 - [Estensione della creazione di pacchetti e della distribuzione di SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

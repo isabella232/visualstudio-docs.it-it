@@ -1,5 +1,7 @@
 ---
 title: Importa pagina master personalizzata & pagina del sito con l'immagine
+description: In questa procedura dettagliata importare una pagina master personalizzata di SharePoint e una pagina del sito con un'immagine in un progetto SharePoint di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 311124b2e0b81e70c4c2a7b40754207e6c66b749
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ceb69608a2d1770f082991f3d927d4e4639ae56
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015685"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970166"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Procedura dettagliata: importazione di una pagina master personalizzata e di una pagina del sito con un'immagine
   In questa procedura dettagliata viene illustrato come importare una pagina master personalizzata di SharePoint e una pagina del sito con un'immagine in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto SharePoint.
@@ -27,7 +29,7 @@ ms.locfileid: "86015685"
 
 - Creazione di una pagina master personalizzata e di una pagina del sito utilizzando un'immagine in SharePoint Designer.
 
-- Esportare una pagina master personalizzata, un'immagine e una pagina del sito in un file di soluzione SharePoint (con*estensione wsp*).
+- Esportare una pagina master personalizzata, un'immagine e una pagina del sito in un file di soluzione SharePoint (con *estensione wsp*).
 
 - Importare e distribuire il file con *estensione wsp* in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto SharePoint utilizzando il progetto Importa pacchetto di soluzione SharePoint.
 
@@ -127,7 +129,7 @@ ms.locfileid: "86015685"
 6. Salvare la pagina del sito aggiornata.
 
 ## <a name="export-the-items-from-sharepoint"></a>Esportare gli elementi da SharePoint
- Esportare gli elementi da SharePoint in un file di soluzione SharePoint (con*estensione wsp*).
+ Esportare gli elementi da SharePoint in un file di soluzione SharePoint (con *estensione wsp*).
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>Per esportare elementi da SharePoint Designer
 
@@ -158,7 +160,7 @@ ms.locfileid: "86015685"
 
 3. Scegliere il pulsante **fine** per importare gli elementi selezionati.
 
-4. In **Esplora soluzioni**scegliere il \_ nodo catalogsmasterpage \_ e impostare il valore della proprietà di **risoluzione dei conflitti di distribuzione** su **Automatic**.
+4. In **Esplora soluzioni** scegliere il \_ nodo catalogsmasterpage \_ e impostare il valore della proprietà di **risoluzione dei conflitti di distribuzione** su **Automatic**.
 
     Ciò consente di garantire che eventuali conflitti di distribuzione vengano risolti automaticamente.
 
@@ -176,7 +178,7 @@ ms.locfileid: "86015685"
 
    Un metodo alternativo per importare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e distribuire file in SharePoint consiste nell'aggiungere i file ai moduli in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Procedura: importare una pagina master o un tema](../sharepoint/how-to-import-a-master-page-or-theme.md) e [utilizzare i moduli per includere i file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Importazione di elementi da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Creazione di controlli riutilizzabili per Web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

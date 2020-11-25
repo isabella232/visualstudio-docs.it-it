@@ -1,5 +1,7 @@
 ---
 title: Modelli di progetto e di elementi di progetto SharePoint | Microsoft Docs
+description: Esaminare le descrizioni dei modelli di progetto e di elementi di progetto SharePoint disponibili e come vengono usati.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2878bd2092e000cf63c2b4fcb531a502a470203e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6cbcc4d0bc99ce7ab495e0a24591b145c58f377
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649230"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970378"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Modelli di progetto e di elementi di progetto SharePoint
   Le sezioni seguenti descrivono i modelli di progetto e di elemento di progetto SharePoint disponibili e il modo in cui vengono usati.
@@ -60,7 +62,7 @@ ms.locfileid: "81649230"
  Un progetto *Web part visiva di SharePoint 2010* include un file di definizione *Elements.xml* , un elemento **Web part** e un elemento del **controllo utente** . È possibile progettare l'aspetto della web part visiva trascinando o copiando i controlli dalla casella degli strumenti di Visual Studio alla superficie del controllo utente. Per ulteriori informazioni, vedere [procedura: creare una Web part di SharePoint tramite una finestra di progettazione e un](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) [blocco predefinito: Web part](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
 
 ### <a name="import-sharepoint-2010-solution-package"></a>Importa pacchetto della soluzione SharePoint 2010
- I progetti di *pacchetti della soluzione sharepoint 2010* consentono di importare tutto o parte di un sito di SharePoint 2010 esistente, esportato in un file di soluzione SharePoint (con*estensione wsp*) in Visual Studio. Una volta importato in Visual Studio, è possibile personalizzarne gli elementi e ridistribuirli. Per ulteriori informazioni, vedere [importare elementi da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md).
+ I progetti di *pacchetti della soluzione sharepoint 2010* consentono di importare tutto o parte di un sito di SharePoint 2010 esistente, esportato in un file di soluzione SharePoint (con *estensione wsp*) in Visual Studio. Una volta importato in Visual Studio, è possibile personalizzarne gli elementi e ridistribuirli. Per ulteriori informazioni, vedere [importare elementi da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md).
 
 ### <a name="import-reusable-sharepoint-2010-workflow"></a>Importa flusso di lavoro riutilizzabile di SharePoint 2010
  L'importazione di progetti di *flusso di lavoro di SharePoint 2010 riutilizzabili* consente di importare un flusso di lavoro dichiarativo riutilizzabile creato in sharepoint designer 2010 in Visual Studio. Il flusso di lavoro viene esportato dal sito di SharePoint come file con estensione *WSP* . Una volta importato in Visual Studio, è possibile personalizzarlo, aggiungervi codice e distribuirlo in un sito di SharePoint. Per ulteriori informazioni, vedere [procedura dettagliata: importare un flusso di lavoro riutilizzabile di SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).
@@ -68,7 +70,7 @@ ms.locfileid: "81649230"
 ## <a name="project-item-templates"></a>Modelli di elementi di progetto
  Di seguito è riportato un elenco di modelli di elementi di progetto SharePoint. I modelli di elemento di progetto aggiungono file alla soluzione SharePoint per supportare funzionalità di SharePoint quali colonne del sito, elenchi e tipi di contenuto. Se ad esempio si aggiunge una colonna del sito alla soluzione, viene aggiunto un progetto di colonna del sito contenente un file di definizione *Elements.xml* . L'aggiunta di una Web part visiva consente di aggiungere un progetto Web part visiva alla soluzione contenente un file di *Elements.xml* , un elemento di controllo utente e un elemento Web part visiva.
 
- Per visualizzare i modelli di elementi di progetto SharePoint, in **Esplora soluzioni**aprire il menu di scelta rapida per un progetto SharePoint, quindi scegliere **Aggiungi**, **nuovo elemento**. Espandere il nodo **SharePoint** sotto **Visual C#** o **Visual Basic**, quindi selezionare **2010**.
+ Per visualizzare i modelli di elementi di progetto SharePoint, in **Esplora soluzioni** aprire il menu di scelta rapida per un progetto SharePoint, quindi scegliere **Aggiungi**, **nuovo elemento**. Espandere il nodo **SharePoint** sotto **Visual C#** o **Visual Basic**, quindi selezionare **2010**.
 
 ### <a name="application-page-farm-solution-only"></a>Pagina applicazione (solo soluzione farm)
  L'elemento **pagina applicazione (solo soluzione farm)** consente di progettare una [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] pagina Web per un sito di SharePoint. Le pagine delle applicazioni possono essere utilizzate solo nelle soluzioni farm. È possibile aggiungere questo elemento del progetto solo alle soluzioni farm. Per altre informazioni, vedere [procedura: creare una pagina dell'applicazione e un'](../sharepoint/how-to-create-an-application-page.md) [applicazione _layouts tipo di pagina](/previous-versions/office/aa979604(v=office.14)).
@@ -140,6 +142,6 @@ ms.locfileid: "81649230"
 ### <a name="web-part"></a>Web part
  Una *Web part* è un controllo lato server che viene eseguito all'interno di un tipo speciale di pagina denominata Web Part Page. Sono i blocchi predefiniti di pagine visualizzate in un sito di SharePoint. L'elemento Web part fornisce file che consentono di progettare una Web part per un sito di SharePoint. Per ulteriori informazioni, vedere [procedura: creare una Web part di SharePoint e un](../sharepoint/how-to-create-a-sharepoint-web-part.md) [blocco predefinito: Web part](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Prodotti e tecnologie SharePoint](/previous-versions/office/developer/sharepoint-2010/dd776256(v=office.12))

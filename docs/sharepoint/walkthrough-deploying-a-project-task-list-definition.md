@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: distribuzione di un progetto Elenco attività definizione | Microsoft Docs'
+description: In questa procedura dettagliata, usare Visual Studio per creare, personalizzare, eseguire il debug e distribuire un elenco SharePoint per tenere traccia delle attività del progetto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b5639fe7a1b35dea41b14be3730986ad7c7309b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0be8eed2dc41ad433c0e0514dfd34e3c6e3d7193
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015759"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970419"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Procedura dettagliata: distribuire una definizione di elenco attività progetto
 
@@ -51,7 +53,7 @@ Creare un progetto di elenco di SharePoint e associare la definizione dell'elenc
 
 6. Nella casella specificare il **nome da visualizzare per l'elenco** immettere **Project elenco attività**.
 
-7. Scegliere il pulsante **di opzione crea un elenco non personalizzabile in base a un tipo di elenco esistente** , quindi scegliere **attività**dal relativo elenco, quindi scegliere il pulsante **fine** .
+7. Scegliere il pulsante **di opzione crea un elenco non personalizzabile in base a un tipo di elenco esistente** , quindi scegliere **attività** dal relativo elenco, quindi scegliere il pulsante **fine** .
 
      L'elenco, la funzionalità e il pacchetto vengono visualizzati in **Esplora soluzioni**.
 
@@ -82,7 +84,7 @@ Nell'elenco attività è possibile aggiungere un ricevitore di eventi tramite cu
 
 Quando si crea una soluzione di SharePoint, Visual Studio crea automaticamente funzionalità per gli elementi del progetto predefiniti. È possibile personalizzare le impostazioni dell'elenco attività del progetto per il sito di SharePoint utilizzando la finestra di progettazione della funzionalità.
 
-1. In **Esplora soluzioni**espandere **funzionalità**.
+1. In **Esplora soluzioni** espandere **funzionalità**.
 
 2. Aprire il menu di scelta rapida per **Feature1**, quindi scegliere **Progettazione visualizzazioni**.
 
@@ -96,7 +98,7 @@ Quando si crea una soluzione di SharePoint, Visual Studio crea automaticamente f
 
 Quando si crea un progetto SharePoint, Visual Studio aggiunge automaticamente al pacchetto le funzionalità che contengono gli elementi del progetto predefiniti. È possibile personalizzare le impostazioni dell'elenco attività del progetto per il sito di SharePoint utilizzando Progettazione pacchetti.
 
-1. In **SolutionExplorer**aprire il menu di scelta rapida per **Package**, quindi scegliere **Visualizza finestra di progettazione**.
+1. In **SolutionExplorer** aprire il menu di scelta rapida per **Package**, quindi scegliere **Visualizza finestra di progettazione**.
 
 2. Nella casella **nome** immettere **ProjectTaskListPackage**.
 
@@ -138,7 +140,7 @@ Dopo aver compilato e testato l'elenco attività progetto, è possibile distribu
 
 Sulla barra dei menu di Visual Studio scegliere **Compila**  >  **distribuzione soluzione**.
 
-Visual Studio ricicla il pool di applicazioni IIS, ritira le versioni esistenti della soluzione, copia il file del pacchetto di soluzione (con*estensione wsp*) in SharePoint e quindi ne attiva le funzionalità. È ora possibile usare la soluzione in SharePoint. Per ulteriori informazioni sui passaggi di configurazione della distribuzione, vedere [procedura: modificare una configurazione di distribuzione di SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
+Visual Studio ricicla il pool di applicazioni IIS, ritira le versioni esistenti della soluzione, copia il file del pacchetto di soluzione (con *estensione wsp*) in SharePoint e quindi ne attiva le funzionalità. È ora possibile usare la soluzione in SharePoint. Per ulteriori informazioni sui passaggi di configurazione della distribuzione, vedere [procedura: modificare una configurazione di distribuzione di SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>Per distribuire l'elenco di attività del progetto in un sistema remoto
 
@@ -156,11 +158,11 @@ Visual Studio ricicla il pool di applicazioni IIS, ritira le versioni esistenti 
 
 5. Usare il `Add-SPUserSolution` comando di PowerShell per installare il pacchetto nell'installazione remota di SharePoint. Per le soluzioni farm, utilizzare il `Add-SPSolution` comando.
 
-     Ad esempio, `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`
+     Ad esempio: `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
 
 6. Usare il `Install-SPUserSolution` comando di PowerShell per distribuire la soluzione. Per le soluzioni farm, utilizzare il `Install-SPSolution` comando.
 
-     Ad esempio, `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`
+     Ad esempio: `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
 
      Per altre informazioni sulla distribuzione remota, vedere [uso delle soluzioni](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14)) e [aggiunta e distribuzione di soluzioni con PowerShell in SharePoint 2010](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx).
 
@@ -174,5 +176,5 @@ Per ulteriori informazioni su come personalizzare e distribuire le soluzioni Sha
 
 - [Windows PowerShell per SharePoint Server 2010](/powershell/module/sharepoint-server)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

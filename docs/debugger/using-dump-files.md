@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599500"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970616"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Dump di file nel debugger di Visual Studio
 
@@ -69,7 +69,7 @@ Quando è abilitato il [debug](../debugger/just-in-time-debugging-in-visual-stud
 
 1. Quando si è arrestato a un errore o a un punto di interruzione durante il debug, selezionare **debug**  >  **Salva dump con nome**.
 
-1. Nella finestra di dialogo **Salva dump con nome** , **in Salva come digitare**selezionare **minidump** o **minidump con heap** (impostazione predefinita).
+1. Nella finestra di dialogo **Salva dump con nome** , **in Salva come digitare** selezionare **minidump** o **minidump con heap** (impostazione predefinita).
 
 1. Individuare un percorso e selezionare un nome per il file dump, quindi selezionare **Salva**.
 
@@ -88,14 +88,14 @@ Quando è abilitato il [debug](../debugger/just-in-time-debugging-in-visual-stud
 
 1. In **azioni**:
    - Per impostare i percorsi di caricamento dei simboli, selezionare **Imposta percorsi simboli**.
-   - Per avviare il debug, selezionare **debug con solo gestito**, **Esegui il debug con solo nativo**, **Esegui il debug con misto**oppure Esegui il debug **con la memoria gestita**.
+   - Per avviare il debug, selezionare **debug con solo gestito**, **Esegui il debug con solo nativo**, **Esegui il debug con misto** oppure Esegui il debug **con la memoria gestita**.
 
 ## <a name="find-exe-pdb-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Trovare file con estensione exe, PDB e di origine
 
 Per usare le funzionalità di debug complete in un file dump, è necessario disporre di Visual Studio:
 
 - Il file con *estensione exe* per cui è stato creato il dump e altri file binari (dll e così via) usati dal processo di dump.
-- File di simboli (con*estensione PDB*) per il file con *estensione exe* e altri file binari.
+- File di simboli (con *estensione PDB*) per il file con *estensione exe* e altri file binari.
 - I file con *estensione exe* e *PDB* che corrispondono esattamente alla versione e alla compilazione dei file durante la creazione del dump.
 - File di origine per i moduli pertinenti. È possibile utilizzare il disassembly dei moduli se non è possibile trovare i file di origine.
 
@@ -107,11 +107,11 @@ Visual Studio esegue automaticamente la ricerca di questi percorsi per i file *e
 
 1. Cartella che contiene il file dump.
 2. Il percorso del modulo specificato dal file di dump, ovvero il percorso del modulo nel computer in cui è stato raccolto il dump.
-3. I percorsi dei simboli specificati in **strumenti** (o **debug**) > **Opzioni**di  >  **debug**  >  **Symbols**. È inoltre possibile aprire la pagina **simboli** dal riquadro **Azioni** della finestra **Riepilogo file dump** . In questa pagina è possibile aggiungere altri percorsi in cui eseguire la ricerca.
+3. I percorsi dei simboli specificati in **strumenti** (o **debug**) > **Opzioni** di  >  **debug**  >  **Symbols**. È inoltre possibile aprire la pagina **simboli** dal riquadro **Azioni** della finestra **Riepilogo file dump** . In questa pagina è possibile aggiungere altri percorsi in cui eseguire la ricerca.
 
 ### <a name="use-the-no-binary-no-symbols-or-no-source-found-pages"></a>Usa le pagine nessun binario, nessun simbolo o nessuna origine trovata
 
-Se Visual Studio non riesce a trovare i file necessari per eseguire il debug di un modulo nel dump, viene visualizzato un file **binario non**trovato, non è stato **trovato alcun simbolo**oppure non è stata trovata alcuna pagina di **origine** . Queste pagine forniscono informazioni dettagliate sulla causa del problema e forniscono collegamenti all'azione che consentono di individuare i file. Vedere [specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Se Visual Studio non riesce a trovare i file necessari per eseguire il debug di un modulo nel dump, viene visualizzato un file **binario non** trovato, non è stato **trovato alcun simbolo** oppure non è stata trovata alcuna pagina di **origine** . Queste pagine forniscono informazioni dettagliate sulla causa del problema e forniscono collegamenti all'azione che consentono di individuare i file. Vedere [specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="see-also"></a>Vedi anche
 

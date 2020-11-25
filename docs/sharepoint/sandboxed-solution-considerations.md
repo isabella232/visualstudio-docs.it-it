@@ -1,5 +1,7 @@
 ---
 title: Considerazioni sulla soluzione sandbox | Microsoft Docs
+description: Esplora le soluzioni sandbox, una funzionalità di Microsoft SharePoint che consente agli utenti della raccolta siti di caricare le proprie soluzioni di codice personalizzate.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17b310a3f992f80b04ad14bb6e038e05b009a4af
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839495"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970469"
 ---
 # <a name="sandboxed-solution-considerations"></a>Considerazioni sulla soluzione sandbox
   Le *soluzioni in modalità sandbox* sono una funzionalità di Microsoft SharePoint 2010 che consente agli utenti della raccolta siti di caricare le proprie soluzioni di codice personalizzate. Una soluzione sandbox comune è rappresentata dagli utenti che caricano i propri Web part.
@@ -71,7 +73,7 @@ ms.locfileid: "90839495"
 ## <a name="site-collection-solution-gallery"></a>Raccolta di soluzioni della raccolta siti
  [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 dispone di una funzionalità nota come "raccolta di soluzioni della raccolta siti". È possibile accedere a questa funzionalità dalla pagina Amministrazione centrale SharePoint 2010 o aprendo il menu **Azioni sito** , scegliendo **Impostazioni sito**, quindi scegliere il collegamento **soluzioni** in  **raccolte** nel sito di SharePoint. Le raccolte di soluzioni sono repository di soluzioni che consentono agli amministratori della raccolta siti di gestire le soluzioni nelle raccolte siti.
 
- La raccolta soluzioni è una raccolta documenti archiviata nel Web radice del sito di SharePoint. La raccolta soluzioni sostituisce i modelli di sito e supporta i pacchetti della soluzione. Quando viene caricato un file del pacchetto della soluzione SharePoint (con*estensione wsp*), questo viene elaborato come una soluzione creata mediante sandbox.
+ La raccolta soluzioni è una raccolta documenti archiviata nel Web radice del sito di SharePoint. La raccolta soluzioni sostituisce i modelli di sito e supporta i pacchetti della soluzione. Quando viene caricato un file del pacchetto della soluzione SharePoint (con *estensione wsp*), questo viene elaborato come una soluzione creata mediante sandbox.
 
 ## <a name="sandboxed-solution-limitations"></a>Limitazioni della soluzione sandbox
  Quando viene distribuita una soluzione in modalità sandbox, la matrice di funzionalità di SharePoint disponibile è limitata per ridurre le vulnerabilità di sicurezza che può avere. Di seguito sono riportate alcune di queste limitazioni:
@@ -137,6 +139,6 @@ ms.locfileid: "90839495"
 
 - Flussi di lavoro con codice
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Differenze tra soluzioni create mediante sandbox e farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)
 - [Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)

@@ -1,6 +1,8 @@
 ---
 title: 'Procedura dettagliata: importare elementi da un sito di SharePoint esistente | Microsoft Docs'
 titleSuffix: ''
+description: In questa procedura dettagliata importare gli elementi da un sito di SharePoint esistente in un progetto SharePoint di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c5f9fd5e3cc9b0df5feb60149e58e895996bb1f0
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7eeff880538d98f997f48f82c49d01045e834031
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298648"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970120"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Procedura dettagliata: importare elementi da un sito di SharePoint esistente
   In questa procedura dettagliata viene illustrato come importare elementi da un sito di SharePoint esistente in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto SharePoint.
@@ -56,7 +58,7 @@ ms.locfileid: "92298648"
 
 5. Dopo aver creato il sito, passare al sito principale del browser, http://<em>System Name</em>/SitePages/Home.aspx.
 
-6. Anche in questo caso, creare un sito secondario vuoto dal sito principale di SharePoint aprendo il menu **Azioni sito** , scegliendo **nuovo sito**e scegliendo il tipo di **sito vuoto** .
+6. Anche in questo caso, creare un sito secondario vuoto dal sito principale di SharePoint aprendo il menu **Azioni sito** , scegliendo **nuovo sito** e scegliendo il tipo di **sito vuoto** .
 
 7. Nella casella **titolo** immettere **Site Column test 2**; nella casella **nome URL** immettere **columntest2**; lasciare invariati i valori predefiniti delle altre impostazioni. quindi scegliere il pulsante **Crea** .
 
@@ -84,7 +86,7 @@ ms.locfileid: "92298648"
 
 2. Nella sezione **Azioni sito** della pagina Impostazioni sito scegliere il collegamento **Salva sito come modello** .
 
-3. Nella casella **nome file** immettere **ExampleSite**e nella casella **nome modello** immettere **sito di esempio**.
+3. Nella casella **nome file** immettere **ExampleSite** e nella casella **nome modello** immettere **sito di esempio**.
 
 4. Per questo esempio, lasciare deselezionata la casella di controllo **Includi contenuto** .
 
@@ -141,7 +143,7 @@ ms.locfileid: "92298648"
 
      Si noti che la colonna del sito personalizzata importata dal primo sito di SharePoint viene visualizzata nell'elenco.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Importa elementi da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Creazione di controlli riutilizzabili per Web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

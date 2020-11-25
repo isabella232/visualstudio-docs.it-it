@@ -8,11 +8,11 @@ ms.date: 03/25/2020
 ms.topic: how-to
 description: Informazioni sul vantaggio della rivista del codice incluso nella sottoscrizione di Visual Studio.
 ms.openlocfilehash: 30bc728db5aea53d442552ed9b79f506b0f6b6d7
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005911"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970487"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Rivista di codice inclusa nelle sottoscrizioni di Visual Studio
 
@@ -76,7 +76,7 @@ R: la rivista del codice raccoglie l'indirizzo, indipendentemente dal fatto che 
 - Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

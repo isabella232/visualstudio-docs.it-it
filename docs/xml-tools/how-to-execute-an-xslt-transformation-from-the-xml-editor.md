@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1c7165f301c82dfaf5aa066a3e15bd7ab244089
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399482"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970244"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procedura: eseguire una trasformazione XSLT dall'editor XML
 
 L'editor XML consente di associare un foglio di stile XSLT a un documento XML, eseguire la trasformazione e visualizzare l'output. L'output risultante dalla trasformazione XSLT viene visualizzato in una nuova finestra del documento.
 
-La proprietà **output** specifica il nome file per l'output. Se la proprietà **output** è vuota, nella directory temporanea viene generato un nome file. L'estensione del file è basata sull' `xsl:output` elemento del foglio di stile e può essere. *XML* ,. *txt* o. *htm*.
+La proprietà **output** specifica il nome file per l'output. Se la proprietà **output** è vuota, nella directory temporanea viene generato un nome file. L'estensione del file è basata sull' `xsl:output` elemento del foglio di stile e può essere.*XML*,. *txt* o. *htm*.
 
-Se la proprietà di **output** specifica un nome di file con un oggetto. *htm* o. estensione *HTML* , l'output XSLT viene visualizzato in anteprima usando un Web browser. Tutte le altre estensioni di file vengono aperte usando l'editor predefinito scelto da Visual Studio. Ad esempio, se l'estensione del file è. *XML* , Visual Studio usa l'editor XML.
+Se la proprietà di **output** specifica un nome di file con un oggetto. *htm* o. estensione *HTML* , l'output XSLT viene visualizzato in anteprima usando un Web browser. Tutte le altre estensioni di file vengono aperte usando l'editor predefinito scelto da Visual Studio. Ad esempio, se l'estensione del file è. *XML*, Visual Studio usa l'editor XML.
 
 ## <a name="execute-an-xslt-transformation-from-an-xml-file"></a>Eseguire una trasformazione XSLT da un file XML
 
@@ -61,6 +61,6 @@ Se la proprietà di **output** specifica un nome di file con un oggetto. *htm* o
 
 È possibile specificare un nome di file di output per i file XML e XSL. Aprire la finestra **Proprietà** e specificare un nome di file nel campo **output** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Editor XML](../xml-tools/xml-editor.md)

@@ -1,5 +1,7 @@
 ---
 title: Risoluzione dei problemi relativi alla creazione e alla distribuzione di SharePoint | Microsoft Docs
+description: Comprendere e risolvere vari problemi che potrebbero verificarsi durante il pacchetto e la distribuzione di soluzioni SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7eafac8015b7a2c51279b7a2d664f0e094d2397b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07ce649a22573041768bfc316f65bfcdf7577b98
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981929"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95969927"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Risolvere i problemi di distribuzione e creazione di pacchetti di SharePoint
   In questo argomento vengono analizzati vari problemi che possono verificarsi durante la creazione di pacchetti e la distribuzione di soluzioni SharePoint.
@@ -51,7 +53,7 @@ ms.locfileid: "72981929"
 |-----------|-----------------|
 |Automatico|I conflitti vengono rilevati e risolti automaticamente.|
 |Prompt|I conflitti vengono rilevati e segnalati allo sviluppatore prima di essere risolti.|
-|Nessuno|I conflitti non vengono rilevati.|
+|nessuno|I conflitti non vengono rilevati.|
 
 ## <a name="differences-between-f5-deployment"></a>Differenze tra la distribuzione di F5
  Quando si utilizza [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per distribuire il progetto SharePoint nel server SharePoint locale per il test e l'esecuzione del debug, in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vengono eseguiti alcuni passaggi aggiuntivi.
@@ -70,7 +72,7 @@ ms.locfileid: "72981929"
 ### <a name="error-message"></a>Messaggio di errore
  Nessuno.
 
-### <a name="resolution"></a>Soluzione
+### <a name="resolution"></a>Risoluzione
  Per risolvere il problema, effettuare i passaggi seguenti:
 
 1. Installare l'aggiornamento KB967535 come illustrato nell'articolo relativo alla correzione dell'articolo supporto tecnico Microsoft [: è disponibile un hotfix per risolvere due problemi in ASP.NET in IIS 7,0 per Windows Vista e Windows Server 2008](https://support.microsoft.com/help/967535).
@@ -87,7 +89,7 @@ ms.locfileid: "72981929"
 ### <a name="error-message"></a>Messaggio di errore
  Si è verificato un errore nel passaggio di distribuzione 'Aggiungi Soluzione': Impossibile estrarre il file cab nella soluzione.
 
-### <a name="resolution"></a>Soluzione
+### <a name="resolution"></a>Risoluzione
  Per risolvere il problema, rimuovere le parentesi nei nomi degli elementi di progetto SharePoint.
 
 ## <a name="error-appears-when-deploying-a-visual-web-part-to-a-site-on-a-different-web-application"></a>Viene visualizzato un errore durante la distribuzione di una Web part visiva in un sito in un'altra applicazione Web
@@ -96,7 +98,7 @@ ms.locfileid: "72981929"
 ### <a name="error-message"></a>Messaggio di errore
  Si è verificato un errore nel passaggio di distribuzione 'Aggiungi Soluzione': Una funzionalità con ID [#] è già stata installata in questa farm. Utilizzare l'attributo force per installare nuovamente in modo esplicito la funzionalità.
 
-### <a name="resolution"></a>Soluzione
+### <a name="resolution"></a>Risoluzione
  Questo errore si verifica a causa della modalità con cui le funzionalità della Web part visiva vengono ritratte in SharePoint. Per distribuire correttamente la Web part visiva, distribuire di nuovo la soluzione scegliendo il tasto **F5** .
 
 ## <a name="warning-appears-when-deploying-nested-user-controls"></a>Avviso visualizzato durante la distribuzione di controlli utente annidati
@@ -105,11 +107,11 @@ ms.locfileid: "72981929"
 ### <a name="error-message"></a>Messaggio di errore
  Avviso 1 l'elemento ' [*nome controllo*]' non è un elemento noto. Il problema potrebbe essere dovuto a un errore di compilazione del sito Web oppure il file web.config risulta mancante.
 
-### <a name="resolution"></a>Soluzione
+### <a name="resolution"></a>Risoluzione
  Se il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sistema del progetto non è a conoscenza di un controllo utente annidato, non può fornire IntelliSense e genera l'avviso. Il sistema del progetto non riconosce un controllo utente annidato se il progetto non viene compilato e la finestra di progettazione non viene chiusa né riaperta oppure se l'opzione di ritrazione automatica è abilitata, causando la ritrazione del controllo utente dall'hive SharePoint dopo il debug.
 
  Per rimuovere questo avviso, compilare il progetto, quindi chiudere e riaprire la finestra di progettazione oppure disabilitare l'opzione di ritrazione automatica per il progetto. A tale scopo, deselezionare la casella di controllo **ritrazione automatica dopo il debug** nella scheda **SharePoint** della finestra di dialogo Proprietà progetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

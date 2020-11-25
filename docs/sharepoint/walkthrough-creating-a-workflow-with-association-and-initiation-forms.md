@@ -1,5 +1,7 @@
 ---
 title: Creazione di un flusso di lavoro con form di associazione e di avvio
+description: In questa procedura dettagliata di SharePoint creare un flusso di lavoro sequenziale di base che incorpora l'uso dei moduli di associazione e di avvio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f257dfed2fe439c5ab22ab9951b6258116c6567
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62501a23695b81ee0437d3210dced7c81f9b054e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017136"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970438"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Procedura dettagliata: creare un flusso di lavoro con form di associazione e di avvio
   In questa procedura dettagliata viene illustrato come creare un flusso di lavoro sequenziale di base che incorpora l'utilizzo di form di associazione e di avvio. Si tratta di moduli ASPX che consentono l'aggiunta di parametri a un flusso di lavoro quando viene prima associato dall'amministratore di SharePoint (il modulo di associazione) e quando il flusso di lavoro viene avviato dall'utente (modulo di avvio).
@@ -84,7 +86,7 @@ ms.locfileid: "86017136"
 
 7. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
-8. In **Visual C#** o **Visual Basic**espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
+8. In **Visual C#** o **Visual Basic** espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
 
 9. Nel riquadro **modelli** scegliere modello di **flusso di lavoro sequenziale (solo soluzione farm)** , quindi scegliere il pulsante **Aggiungi** .
 
@@ -253,13 +255,13 @@ ms.locfileid: "86017136"
 
 1. Visualizzare il flusso di lavoro in Progettazione flussi di lavoro aprendo Workflow1 nel progetto.
 
-2. Nella **casella degli strumenti**espandere il nodo **Windows Workflow v 3.0** e individuare l'attività **IfElse** .
+2. Nella **casella degli strumenti** espandere il nodo **Windows Workflow v 3.0** e individuare l'attività **IfElse** .
 
 3. Aggiungere questa attività al flusso di lavoro eseguendo uno dei passaggi seguenti:
 
     - Aprire il menu di scelta rapida per l'attività **IfElse** , scegliere **copia**, aprire il menu di scelta rapida per la riga sotto l'attività **onWorkflowActivated1** nella finestra di progettazione del flusso di lavoro, quindi scegliere **Incolla**.
 
-    - Trascinare l'attività **IfElse** dalla **casella degli strumenti**e connetterla alla riga sotto l'attività **onWorkflowActiviated1** nella finestra di progettazione del flusso di lavoro.
+    - Trascinare l'attività **IfElse** dalla **casella degli strumenti** e connetterla alla riga sotto l'attività **onWorkflowActiviated1** nella finestra di progettazione del flusso di lavoro.
 
 4. Nella casella degli strumenti espandere il nodo **flusso di lavoro SharePoint** e individuare l'attività **CreateTask** .
 
@@ -283,13 +285,13 @@ ms.locfileid: "86017136"
 
 12. Scegliere la scheda **associa a un nuovo membro** , scegliere il pulsante di opzione **Crea campo** , quindi scegliere il pulsante **OK** .
 
-13. Nella **casella degli strumenti**espandere il nodo **flusso di lavoro SharePoint** e individuare l'attività **LogToHistoryListActivity** .
+13. Nella **casella degli strumenti** espandere il nodo **flusso di lavoro SharePoint** e individuare l'attività **LogToHistoryListActivity** .
 
 14. Aggiungere questa attività al flusso di lavoro eseguendo uno dei passaggi seguenti:
 
     - Aprire il menu di scelta rapida per l'attività **LogToHistoryListActivity** , scegliere **copia**, aprire il menu di scelta rapida per le altre aree **Drop Activities** in **IfElseActivity1** nella finestra di progettazione del flusso di lavoro, quindi scegliere **Incolla**.
 
-    - Trascinare l'attività **LogToHistoryListActivity** dalla **casella degli strumenti**e rilasciarla sull'area di rilascio delle altre **attività** all'interno di **IfElseActivity1**.
+    - Trascinare l'attività **LogToHistoryListActivity** dalla **casella degli strumenti** e rilasciarla sull'area di rilascio delle altre **attività** all'interno di **IfElseActivity1**.
 
 ## <a name="add-code-to-the-workflow"></a>Aggiungere codice al flusso di lavoro
  Successivamente, aggiungere il codice al flusso di lavoro per fornire la funzionalità.
@@ -445,6 +447,6 @@ ms.locfileid: "86017136"
 
 - Per ulteriori informazioni sui flussi di lavoro di SharePoint, vedere [flussi di lavoro in Windows SharePoint Services](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14)).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creazione di soluzioni flusso di lavoro SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Procedura dettagliata: aggiungere una pagina dell'applicazione a un flusso di lavoro](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)

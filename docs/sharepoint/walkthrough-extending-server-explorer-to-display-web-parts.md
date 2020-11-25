@@ -1,6 +1,8 @@
 ---
 title: 'Procedura dettagliata: estensione Esplora server per visualizzare Web part | Microsoft Docs'
 titleSuffix: ''
+description: In questa procedura dettagliata, estendere Esplora server in modo da visualizzare la raccolta web part in ogni sito di SharePoint connesso.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52dc3f418c3e86e126cbcf196fca2cf73fad35b2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 55950d8498b436d38d2145c2692556330718883e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583853"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970221"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Procedura dettagliata: estendere Esplora server per visualizzare le web part
   In Visual Studio è possibile usare il nodo **connessioni di SharePoint** di **Esplora server** per visualizzare i componenti nei siti di SharePoint. Tuttavia, per impostazione predefinita, **Esplora server** non visualizza alcuni componenti. In questa procedura dettagliata si estenderà **Esplora server** in modo da visualizzare la raccolta web part in ogni sito di SharePoint connesso.
@@ -52,7 +54,7 @@ ms.locfileid: "91583853"
 
   Per completare la procedura dettagliata, è necessario conoscere i concetti seguenti:
 
-- Utilizzo del modello a oggetti del server per SharePoint. Per ulteriori informazioni, vedere [utilizzo del modello a oggetti lato server di SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).
+- Utilizzo del modello a oggetti del server per SharePoint. Per ulteriori informazioni, vedere [utilizzo del modello a oggetti di SharePoint Foundation Server-Side](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).
 
 - Web part nelle soluzioni di SharePoint. Per ulteriori informazioni, vedere [Web part Overview](/previous-versions/office/ms432401(v=office.14)).
 
@@ -86,7 +88,7 @@ ms.locfileid: "91583853"
 
 #### <a name="to-create-the-extension-project"></a>Per creare il progetto di estensione
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
 
 2. Nella finestra di dialogo **nuovo progetto** espandere il nodo **Visual C#** o il nodo **Visual Basic** , quindi il nodo scegliere **Windows** .
 
@@ -100,7 +102,7 @@ ms.locfileid: "91583853"
 
 #### <a name="to-create-the-sharepoint-commands-project"></a>Per creare il progetto di comandi di SharePoint
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
 
 2. Nella finestra di dialogo  **nuovo progetto** espandere il nodo **Visual C#** o il nodo **Visual Basic** , quindi scegliere il nodo **Windows** .
 
@@ -137,7 +139,7 @@ ms.locfileid: "91583853"
 
 4. Scegliere la scheda **estensioni** , selezionare la casella di controllo per l'assembly Microsoft. VisualStudio. SharePoint, quindi scegliere il pulsante **OK** .
 
-5. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo del progetto **WebPartNodeExtension** , quindi scegliere **proprietà**.
+5. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo del progetto **WebPartNodeExtension** , quindi scegliere **proprietà**.
 
      Si apre la finestra **Creazione progetti**.
 
@@ -149,7 +151,7 @@ ms.locfileid: "91583853"
 
 1. Nel progetto WebPartCommands aggiungere un file di codice denominato WebPartCommands.
 
-2. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo del progetto **WebPartCommands** , scegliere **Aggiungi**, quindi **elemento esistente**.
+2. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo del progetto **WebPartCommands** , scegliere **Aggiungi**, quindi **elemento esistente**.
 
 3. Nella finestra di dialogo **Aggiungi elemento esistente** individuare la cartella che contiene i file di codice per il progetto WebPartNodeExtension, quindi scegliere i file di codice WebPartNodeInfo e WebPartCommandIds.
 
@@ -165,7 +167,7 @@ ms.locfileid: "91583853"
 
     - Microsoft. VisualStudio. SharePoint. Commands
 
-7. In **Esplora soluzioni**aprire di nuovo il menu di scelta rapida per il progetto **WebPartCommands** , quindi scegliere **proprietà**.
+7. In **Esplora soluzioni** aprire di nuovo il menu di scelta rapida per il progetto **WebPartCommands** , quindi scegliere **proprietà**.
 
      Si apre la finestra **Creazione progetti**.
 
@@ -178,7 +180,7 @@ ms.locfileid: "91583853"
 
 #### <a name="to-create-icons-for-the-nodes"></a>Per creare icone per i nodi
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto **WebPartNodeExtension** , quindi scegliere **proprietà**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **WebPartNodeExtension** , quindi scegliere **proprietà**.
 
 2. Si apre la finestra **Creazione progetti**.
 
@@ -331,11 +333,11 @@ ms.locfileid: "91583853"
 
 #### <a name="to-test-the-extension"></a>Per testare l'estensione
 
-1. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] scegliere **Visualizza**Esplora server dalla barra dei menu  >  **Server Explorer**.
+1. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] scegliere **Visualizza** Esplora server dalla barra dei menu  >  **Server Explorer**.
 
 2. Se il sito di SharePoint che si desidera utilizzare per il test non viene visualizzato nel nodo connessioni di **SharePoint** in **Esplora server**, attenersi alla procedura seguente:
 
-    1. In **Esplora server**aprire il menu di scelta rapida per le **connessioni di SharePoint**, quindi scegliere **Aggiungi connessione**.
+    1. In **Esplora server** aprire il menu di scelta rapida per le **connessioni di SharePoint**, quindi scegliere **Aggiungi connessione**.
 
     2. Nella finestra di dialogo **Aggiungi connessione SharePoint** immettere l'URL del sito di SharePoint a cui si desidera connettersi, quindi scegliere il pulsante **OK** .
 
@@ -351,7 +353,7 @@ ms.locfileid: "91583853"
 
 7. Nell'istanza sperimentale di Visual Studio verificare che tutti i Web part nel sito connesso siano visualizzati nel nodo **raccolta Web Part** **Esplora server**.
 
-8. In **Esplora server**aprire il menu di scelta rapida per una delle web part, quindi scegliere **Proprietà**.
+8. In **Esplora server** aprire il menu di scelta rapida per una delle web part, quindi scegliere **Proprietà**.
 
 9. Nell'istanza di di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cui si sta eseguendo il debug, verificare che i dettagli relativi alla web part siano visualizzati nella finestra **Proprietà** .
 

@@ -1,5 +1,7 @@
 ---
 title: Procedure dettagliate per lo sviluppo di SharePoint | Microsoft Docs
+description: Vedere i collegamenti alle procedure dettagliate che illustrano come sviluppare e distribuire soluzioni SharePoint usando Visual Studio. I collegamenti sono organizzati per area funzionale.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ae7ed434d2f76036f0409fe21d4dd1493cd28b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d1700958d155801a436cbd00a8a88f7599292a0
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62979471"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970316"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>Procedure dettagliate sullo sviluppo per SharePoint
   Nelle procedure dettagliate seguenti viene illustrato come sviluppare e distribuire soluzioni SharePoint utilizzando [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -93,5 +95,5 @@ ms.locfileid: "62979471"
 |[Procedura dettagliata: estendere Esplora server per visualizzare le web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)|Viene illustrato come aggiungere nuovi nodi per visualizzare Web part nei siti di SharePoint visualizzati in Esplora server. In questa procedura dettagliata viene inoltre illustrato come creare un comando di SharePoint per effettuare una chiamata nel modello a oggetti del server SharePoint.|
 |[Procedura dettagliata: chiamare il modello a oggetti del client di SharePoint in un'estensione Esplora server](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|Viene illustrato come aggiungere nuovi nodi per visualizzare Web part nei siti di SharePoint visualizzati in Esplora server. In questa procedura dettagliata viene inoltre illustrato come utilizzare il modello a oggetti del client di SharePoint.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedure dettagliate e esempi di sviluppo di SharePoint](../sharepoint/sharepoint-development-samples-and-walkthroughs.md)

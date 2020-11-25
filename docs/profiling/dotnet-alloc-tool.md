@@ -10,11 +10,11 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075418"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970224"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analizzare l'utilizzo della memoria mediante lo strumento di allocazione oggetti .NET
 
@@ -68,21 +68,21 @@ Nella visualizzazione grafica precedente il grafico superiore mostra il numero d
 
 La visualizzazione **allocazione** Mostra la posizione degli oggetti che allocano memoria e la quantità di memoria allocata da tali oggetti.
 
-- La colonna **tipo**   è un elenco di classi e strutture che utilizzano la memoria. Fare doppio clic su un tipo per visualizzarne il backtrace come albero delle chiamate invertito. Solo nella visualizzazione **allocazione** è possibile visualizzare gli elementi all'interno della categoria selezionata che interessano la memoria.
+- La colonna **tipo** è un elenco di classi e strutture che utilizzano la memoria. Fare doppio clic su un tipo per visualizzarne il backtrace come albero delle chiamate invertito. Solo nella visualizzazione **allocazione** è possibile visualizzare gli elementi all'interno della categoria selezionata che interessano la memoria.
 
-- Nella colonna **allocazioni**   viene visualizzato il numero di oggetti che utilizzano la memoria all'interno di una particolare funzione o tipo di allocazione. Questa colonna viene visualizzata solo nelle visualizzazioni **allocazione**, **albero delle chiamate**e **funzioni**   .
+- Nella colonna **allocazioni** viene visualizzato il numero di oggetti che utilizzano la memoria all'interno di una particolare funzione o tipo di allocazione. Questa colonna viene visualizzata solo nelle visualizzazioni **allocazione**, **albero delle chiamate** e **funzioni** .
 
-- Le colonne **bytes**   e **Average size (bytes)**   non vengono visualizzate per impostazione predefinita. Per visualizzarli, fare clic con il pulsante destro del mouse sulla colonna **tipo**   o **allocazioni**   , quindi selezionare le opzioni **byte**   e **dimensioni medie (byte)**   per aggiungerle al grafico. 
+- Le colonne **bytes** e **Average size (bytes)** non vengono visualizzate per impostazione predefinita. Per visualizzarli, fare clic con il pulsante destro del mouse sulla colonna **tipo** o **allocazioni** , quindi selezionare le opzioni **byte** e **dimensioni medie (byte)** per aggiungerle al grafico. 
 
-   Le due colonne sono simili a **totale (allocazioni)** e **self (allocazioni)**, ad eccezione del fatto che mostrano la quantità di memoria occupata anziché il numero di oggetti che occupano memoria. Queste colonne vengono visualizzate solo nella visualizzazione **allocazione** .
+   Le due colonne sono simili a **totale (allocazioni)** e **self (allocazioni)**, ad eccezione del fatto che mostrano la quantità di memoria occupata anziché il numero di oggetti che occupano memoria. Queste colonne vengono visualizzate solo nella visualizzazione **allocazione** .
 
-- Nella colonna **nome modulo**   viene visualizzato il modulo che contiene la funzione o il processo che sta chiamando.
+- Nella colonna **nome modulo** viene visualizzato il modulo che contiene la funzione o il processo che sta chiamando.
 
-Tutte le colonne sono ordinabili. Per le colonne del **tipo** e del **nome del modulo** , è possibile ordinare alfabeticamente gli elementi in ordine crescente o decrescente. Per le **allocazioni**, i **byte**   e le **dimensioni medie (byte)**, è possibile ordinare gli elementi aumentando o diminuendo il valore numerico.
+Tutte le colonne sono ordinabili. Per le colonne del **tipo** e del **nome del modulo** , è possibile ordinare alfabeticamente gli elementi in ordine crescente o decrescente. Per le **allocazioni**, i **byte** e le **dimensioni medie (byte)**, è possibile ordinare gli elementi aumentando o diminuendo il valore numerico.
 
 #### <a name="symbols"></a>Simboli
 
-I simboli seguenti vengono visualizzati nelle schede **allocazione**, **albero delle chiamate**e **funzioni** :
+I simboli seguenti vengono visualizzati nelle schede **allocazione**, **albero delle chiamate** e **funzioni** :
 
 - ![Il tipo di valore symbol](../profiling/media/valuetypeicon.png "Simbolo del tipo di valore") , un tipo di valore come Integer
 
@@ -96,13 +96,13 @@ I simboli seguenti vengono visualizzati nelle schede **allocazione**, **albero d
 
 ![Visualizzazione albero delle chiamate](../profiling/media/calltreelight.png "Visualizzazione albero delle chiamate")
 
-La visualizzazione **albero delle chiamate**Mostra   i percorsi di esecuzione della funzione che contengono oggetti che allocano molta memoria.
+La visualizzazione **albero delle chiamate** Mostra i percorsi di esecuzione della funzione che contengono oggetti che allocano molta memoria.
 
-- Nella colonna **nome funzione**   viene visualizzato il processo o il nome della funzione contenente oggetti che allocano memoria. La visualizzazione è basata sul livello del nodo che si sta controllando.
-- Le colonne **totale (allocazioni)** e **dimensioni totali (byte)**   mostrano il numero di oggetti allocati e la quantità di memoria utilizzata da una funzione e da tutte le altre funzioni da essa chiamate.
+- Nella colonna **nome funzione** viene visualizzato il processo o il nome della funzione contenente oggetti che allocano memoria. La visualizzazione è basata sul livello del nodo che si sta controllando.
+- Le colonne **totale (allocazioni)** e **dimensioni totali (byte)** mostrano il numero di oggetti allocati e la quantità di memoria utilizzata da una funzione e da tutte le altre funzioni da essa chiamate.
 - Le colonne **self (Allocations)** e **self-size (byte)** mostrano il numero di oggetti allocati e la quantità di memoria utilizzata da una singola funzione o tipo di allocazione selezionato.
 - Nella colonna **dimensioni medie (byte)** vengono visualizzate le stesse informazioni presenti nella visualizzazione **allocazioni** .
-- Nella colonna **nome modulo**   viene visualizzato il modulo che contiene la funzione o il processo che sta chiamando.
+- Nella colonna **nome modulo** viene visualizzato il modulo che contiene la funzione o il processo che sta chiamando.
 
    ![Un percorso critico espanso](../profiling/media/hotpathlight.png "Un percorso critico espanso")
 
@@ -135,7 +135,7 @@ La visualizzazione **raccolta** Mostra il numero di oggetti raccolti o conservat
 
 ### <a name="filtering-tools"></a>Strumenti di filtro
 
-Le visualizzazioni **allocazioni**, **albero delle chiamate**e **funzioni** contengono tutte le opzioni **Mostra Just My Code** e **Mostra codice nativo** e una casella filtro.
+Le visualizzazioni **allocazioni**, **albero delle chiamate** e **funzioni** contengono tutte le opzioni **Mostra Just My Code** e **Mostra codice nativo** e una casella filtro.
 
 - **Mostra Just My Code** comprime sistemi, Framework e altro codice non utente in frame **[codice esterno]** , in modo da potersi concentrare solo sul codice. Per altre informazioni, vedere [eseguire il debug del codice utente con Just My Code](../debugger/just-my-code.md).
 - **Mostra codice nativo** Mostra il codice nativo all'interno della destinazione di analisi e può includere codice non utente.

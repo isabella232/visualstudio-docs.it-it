@@ -1,5 +1,7 @@
 ---
 title: Parametri sostituibili | Microsoft Docs
+description: Esaminare i parametri sostituibili (token), che specificano i valori all'interno dei file di progetto per gli elementi della soluzione SharePoint i cui valori effettivi non sono noti in fase di progettazione.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,18 +16,18 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cd44b3edfaeae376e5a4a9698d138bd75c03bf8
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90840060"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970250"
 ---
 # <a name="replaceable-parameters"></a>Parametri sostituibili
   I parametri sostituibili, o *token*, possono essere usati all'interno di file di progetto per fornire valori per gli elementi della soluzione SharePoint i cui valori effettivi non sono noti in fase di progettazione. Si tratta di funzioni simili ai token di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modello standard. Per ulteriori informazioni, vedere [parametri di modello](../ide/template-parameters.md).
 
 ## <a name="token-format"></a>Formato token
- I token iniziano e terminano con un segno di dollaro ($). Durante la distribuzione, tutti i token utilizzati vengono sostituiti con i valori effettivi quando un progetto viene inserito in un pacchetto di soluzione SharePoint (file con estensione*WSP* ). Il token **$SharePoint. Package.Name $** , ad esempio, potrebbe risolversi nella stringa "test SharePoint Package".
+ I token iniziano e terminano con un segno di dollaro ($). Durante la distribuzione, tutti i token utilizzati vengono sostituiti con i valori effettivi quando un progetto viene inserito in un pacchetto di soluzione SharePoint (file con estensione *WSP* ). Il token **$SharePoint. Package.Name $** , ad esempio, potrebbe risolversi nella stringa "test SharePoint Package".
 
 ## <a name="token-rules"></a>Regole token
  Ai token si applicano le regole seguenti:
@@ -88,7 +90,7 @@ ms.locfileid: "90840060"
 > [!NOTE]
 > Poiché la sostituzione dei token si verifica dopo la compilazione di un progetto, non è necessario aggiungere estensioni di file per i tipi di file compilati, ad esempio *. cs*, *. vb* o *. resx*. I token vengono sostituiti solo nei file non compilati.
 
- Ad esempio, per aggiungere le estensioni di file (estensione estensione e *yourextension*) all'elenco di estensioni di file di sostituzione dei token, è necessario aggiungere il codice seguente a un file di progetto (con*estensione* *csproj*):
+ Ad esempio, per aggiungere le estensioni di file (estensione estensione e *yourextension*) all'elenco di estensioni di file di sostituzione dei token, è necessario aggiungere il codice seguente a un file di progetto (con *estensione* *csproj*):
 
 ```xml
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -105,5 +107,5 @@ ms.locfileid: "90840060"
 
  È possibile aggiungere l'estensione direttamente al file targets (*. targets*). Tuttavia, l'aggiunta dell'estensione modifica l'elenco di estensioni per tutti i progetti SharePoint inclusi nel sistema locale, non solo per quelli personalizzati. Questa estensione può essere utile quando si è l'unico sviluppatore del sistema o se la maggior parte dei progetti li richiede. Tuttavia, poiché è specifico del sistema, questo approccio non è portabile ed è quindi consigliabile aggiungere le estensioni al file di progetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)

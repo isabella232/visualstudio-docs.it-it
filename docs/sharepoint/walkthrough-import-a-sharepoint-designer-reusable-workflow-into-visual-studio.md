@@ -1,6 +1,8 @@
 ---
 title: 'Procedura dettagliata: importare un flusso di lavoro riutilizzabile di SharePoint Designer | Microsoft Docs'
 titleSuffix: ''
+description: In questa procedura dettagliata importare un flusso di lavoro riutilizzabile creato in SharePoint Designer in un progetto flusso di lavoro di SharePoint di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e6680c6ff95808db56e5bb32e02e0775c935011
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1421b061c50277177b5a30f0357725e9a042f3bd
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298047"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970179"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>Procedura dettagliata: importare un flusso di lavoro riutilizzabile di SharePoint Designer
 
@@ -134,7 +136,7 @@ ms.locfileid: "92298047"
 
 2. Nel riquadro di spostamento scegliere l'oggetto **flussi di lavoro** .
 
-3. In **flusso di lavoro riutilizzabile**scegliere **SPD Task Workflow**.
+3. In **flusso di lavoro riutilizzabile** scegliere **SPD Task Workflow**.
 
 4. Sulla barra multifunzione scegliere il pulsante **Salva come modello** per salvare il flusso di lavoro come file con estensione *WSP* .
 
@@ -180,17 +182,17 @@ ms.locfileid: "92298047"
 
     Al termine dell'operazione di importazione, viene creato un progetto denominato **WorkflowImportProject1** contenente un flusso di lavoro denominato **SPD_Workflow_TestFT**. In questa cartella è il file di definizione del flusso di lavoro *Elements.xml* e il file di progettazione del flusso di lavoro (*. xoml*). La finestra di progettazione contiene due file: il file delle regole (. Rules) e il file code-behind, ovvero *. cs* o *. vb*, a seconda del linguaggio di programmazione del progetto.
 
-8. In **Esplora soluzioni**eliminare la cartella **altri file importati** .
+8. In **Esplora soluzioni** eliminare la cartella **altri file importati** .
 
 9. Nel file di *Elements.xml* eliminare `InstantiationURL="_layouts/IniErkflIP.sspx"` .
 
-10. In **Esplora soluzioni**scegliere **WorkflowImportProject1**, quindi nella barra dei menu scegliere **progetto**  >  **impostato come progetto di avvio** per impostare **WorkflowImportProject1** come elemento di avvio.
+10. In **Esplora soluzioni** scegliere **WorkflowImportProject1**, quindi nella barra dei menu scegliere **progetto**  >  **impostato come progetto di avvio** per impostare **WorkflowImportProject1** come elemento di avvio.
 
      L'elenco verrà visualizzato immediatamente quando si esegue il debug del progetto.
 
 11. Poiché il modello di **flusso di lavoro importazione riutilizzabile di SharePoint 2010** non importa i valori delle proprietà di associazione per il flusso di lavoro importato, è necessario immetterli Per eseguire questa operazione:
 
-    1. In **Esplora soluzioni**scegliere il nodo **SPD_Workflow_TestFT** .
+    1. In **Esplora soluzioni** scegliere il nodo **SPD_Workflow_TestFT** .
 
     2. Scegliere il pulsante con i puntini di sospensione (![ASP.NET Mobile Designer ellisse](../sharepoint/media/mwellipsis.gif "Ellisse di ASP.NET Mobile Designer")) accanto a una delle proprietà dell'elenco, ad esempio la proprietà **elenco di destinazione** .
 
@@ -198,7 +200,7 @@ ms.locfileid: "92298047"
 
 12. Scegliere il file con estensione xoml, quindi nella barra dei menu scegliere **Visualizza**  >  **finestra di progettazione** per visualizzare il flusso di lavoro importato nella finestra di progettazione del flusso di lavoro.
 
-13. Nel nodo **Windows Workflow v 3.0** della **casella degli strumenti**eseguire uno dei passaggi seguenti:
+13. Nel nodo **Windows Workflow v 3.0** della **casella degli strumenti** eseguire uno dei passaggi seguenti:
 
     - Aprire il menu di scelta rapida per l'attività **codice** , quindi scegliere **copia**. Nella finestra di progettazione del flusso di lavoro aprire il menu di scelta rapida per la riga sotto l'attività **SequenceActivity1** , quindi scegliere **Incolla**.
 
@@ -210,7 +212,7 @@ ms.locfileid: "92298047"
 
     - Fare doppio clic su **CodeActivity1** per generare un gestore eventi e visualizzare il codice.
 
-    - Nella finestra **Proprietà** di **CodeActivity1**impostare il valore della proprietà **ExecuteCode** su **codeActivity_ExecuteCode**.
+    - Nella finestra **Proprietà** di **CodeActivity1** impostare il valore della proprietà **ExecuteCode** su **codeActivity_ExecuteCode**.
 
 15. Aggiungere quanto segue sotto le direttive **using** o **Imports** esistenti:
 
@@ -262,7 +264,7 @@ ms.locfileid: "92298047"
 
      Si noti che due azioni vengono eseguite dal flusso di lavoro: il nome viene visualizzato nella colonna **assegnato a** dell'attività e viene visualizzato un annuncio nell'elenco degli **annunci** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Importa elementi da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Creazione di controlli riutilizzabili per Web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

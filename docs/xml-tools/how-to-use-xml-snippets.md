@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bebca3a27d11015388e45ff6839f446506e716c
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400115"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970604"
 ---
 # <a name="how-to-use-xml-snippets"></a>Procedura: utilizzare frammenti di codice XML
 
@@ -28,7 +28,7 @@ Dopo che il frammento XML è stato aggiunto all'editor, i campi modificabili nel
 Nelle procedure riportate di seguito viene descritto come accedere al comando **Inserisci frammento** .
 
 > [!NOTE]
-> Il comando **Inserisci frammento** di codice è disponibile anche tramite il tasto di scelta rapida ( **CTRL** + **K** , quindi **CTRL** + **X** ).
+> Il comando **Inserisci frammento** di codice è disponibile anche tramite il tasto di scelta rapida (**CTRL** + **K**, quindi **CTRL** + **X**).
 
 ### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Per inserire i frammenti dal menu di scelta rapida
 
@@ -58,7 +58,7 @@ Nelle procedure riportate di seguito viene descritto come accedere al comando **
 
 3. Selezionare il frammento XML dall'elenco Completa parola.
 
-4. Premere **Tab** , **Tab** per richiamare il frammento XML.
+4. Premere **Tab**, **Tab** per richiamare il frammento XML.
 
 > [!NOTE]
 > In alcuni casi è possibile che il frammento XML non venga richiamato. Ad esempio, se si tenta di inserire un elemento `xs:complexType` all'interno di un nodo `xs:element`, l'editor non genera alcun frammento XML. Quando un elemento `xs:complexType` viene usato all'interno di un nodo `xs:element`, non vengono rilevati attributi o sottoelementi obbligatori, pertanto l'editor non disporrà di alcun dato da inserire.
@@ -78,7 +78,7 @@ Nelle procedure riportate di seguito viene descritto come accedere al comando **
 Nelle procedure seguenti viene descritto come accedere al comando **Racchiudi tra** .
 
 > [!NOTE]
-> Il comando **Racchiudi** tra è disponibile anche tramite il tasto di scelta rapida ( **CTRL** + **K** , quindi **CTRL** + **S** ).
+> Il comando **Racchiudi** tra è disponibile anche tramite il tasto di scelta rapida (**CTRL** + **K**, quindi **CTRL** + **S**).
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>Per usare Racchiudi tra dal menu di scelta rapida
 
@@ -112,7 +112,7 @@ Se si preme **invio** o **ESC** , viene annullata la modifica del campo e l'edit
 
 I colori predefiniti per i campi dei frammenti di codice modificabili possono essere modificati modificando l'impostazione del **Campo frammento di codice** nel riquadro **tipi di carattere e colori** della finestra di dialogo **Opzioni** . Per altre informazioni, vedere [procedura: modificare i tipi di carattere e i colori nell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [frammenti XML](../xml-tools/xml-snippets.md)
 - [Procedura: generare un frammento XML da un XML Schema](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

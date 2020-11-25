@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0bd8f90c586366a298ba96009dfe5d87a042141b
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918110"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970288"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Eseguire gli strumenti di profilatura con o senza il debugger
 
@@ -39,15 +39,15 @@ Per decidere quali strumenti e risultati utilizzare, tenere presente quanto segu
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Raccogliere dati di profilatura durante il debug
 
-Quando si avvia il debug in Visual Studio selezionando **debug**  >  **Avvia debug** o premendo **F5** , per impostazione predefinita viene visualizzata la finestra **strumenti di diagnostica** . Per aprirlo manualmente, selezionare **debug**  >  **Windows**  >  **Mostra strumenti di diagnostica** . Nella finestra **Strumenti di diagnostica** vengono visualizzate informazioni su eventi, memoria dei processi e utilizzo della CPU.
+Quando si avvia il debug in Visual Studio selezionando **debug**  >  **Avvia debug** o premendo **F5**, per impostazione predefinita viene visualizzata la finestra **strumenti di diagnostica** . Per aprirlo manualmente, selezionare **debug**  >  **Windows**  >  **Mostra strumenti di diagnostica**. Nella finestra **Strumenti di diagnostica** vengono visualizzate informazioni su eventi, memoria dei processi e utilizzo della CPU.
 
 ![Screenshot della finestra di Strumenti di diagnostica](../profiling/media/diagnostictoolswindow.png " Finestra Strumenti di diagnostica")
 
-- Usare l'icona **Impostazioni** sulla barra degli strumenti per scegliere se visualizzare **Utilizzo memoria** , **Analisi interfaccia utente** o **Utilizzo CPU** .
+- Usare l'icona **Impostazioni** sulla barra degli strumenti per scegliere se visualizzare **Utilizzo memoria**, **Analisi interfaccia utente** o **Utilizzo CPU**.
 
 - Selezionare **Impostazioni** nell'elenco a discesa **Impostazioni** per aprire le pagine delle **Proprietà strumenti di diagnostica** con più opzioni.
 
-- Se si esegue Visual Studio Enterprise, è possibile abilitare o disabilitare IntelliTrace passando a **strumenti**  >  **Opzioni**  >  **IntelliTrace** .
+- Se si esegue Visual Studio Enterprise, è possibile abilitare o disabilitare IntelliTrace passando a **strumenti**  >  **Opzioni**  >  **IntelliTrace**.
 
 La sessione di diagnostica termina quando si interrompe il debug.
 
@@ -74,21 +74,21 @@ Per altre informazioni, vedere l'articolo relativo a come [eseguire ricerche e a
 
 Per raccogliere dati sulle prestazioni senza debug, è possibile eseguire gli strumenti Profiler prestazioni.
 
-1. Con un progetto aperto in Visual Studio, impostare la configurazione della soluzione su **Release** , quindi selezionare **debugger Windows locale** (o **computer locale** ) come destinazione della distribuzione.
+1. Con un progetto aperto in Visual Studio, impostare la configurazione della soluzione su **Release**, quindi selezionare **debugger Windows locale** (o **computer locale**) come destinazione della distribuzione.
 
-1. Selezionare **debug**  >  **prestazioni profiler** oppure premere **ALT** + **F2** .
+1. Selezionare **debug**  >  **prestazioni profiler** oppure premere **ALT** + **F2**.
 
 1. Nella pagina di avvio degli strumenti di diagnostica selezionare uno o più strumenti da eseguire. Vengono visualizzati solo gli strumenti applicabili al tipo di progetto, al sistema operativo e al linguaggio di programmazione. Selezionare **Mostra tutti gli strumenti** per vedere anche gli strumenti che sono disabilitati per la sessione di diagnostica.
 
    ![Screenshot degli strumenti di diagnostica](../profiling/media/diaghubsummarypage.png "DIAG_SelectTool")
 
-1. Per avviare la sessione di diagnostica, fare clic su **Avvia** .
+1. Per avviare la sessione di diagnostica, fare clic su **Avvia**.
 
    Mentre la sessione è in esecuzione, alcuni strumenti visualizzano i grafici dei dati in tempo reale nella pagina strumenti di diagnostica, oltre ai controlli per sospendere e riprendere la raccolta dei dati.
 
     ![Screenshot della raccolta dei dati nel profiler delle prestazioni](../profiling/media/diaghubcollectdata.png "Raccolta dati Hub")
 
-1. Per terminare la sessione di diagnostica, scegliere **Arrestare raccolta** .
+1. Per terminare la sessione di diagnostica, scegliere **Arrestare raccolta**.
 
    I dati analizzati vengono visualizzati nella pagina del **report** .
 
