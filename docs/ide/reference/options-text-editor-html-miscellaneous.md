@@ -1,5 +1,7 @@
 ---
 title: Opzioni, Editor di testo, HTML (Web Form), Varie
+description: Informazioni su come usare la pagina varie nella sezione HTML per impostare le preferenze relative alla modalità di gestione degli elementi incollati nella pagina da parte dell'editor HTML.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa26144a7c0a2f7edad58ecfb26e3a7d402a994
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf5495f60e92a38c0c43a0751054d41dc4de6970
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770901"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040771"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Opzioni, Editor di testo, HTML (Web Form), Varie
 
-Usare la pagina di opzioni **Varie** per impostare le preferenze per la modalità di gestione di elementi incollati nella pagina dell'editor HTML. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni**e quindi espandere **editor di testo**  >  **HTML (Web Form)**  >  **varie**.
+Usare la pagina di opzioni **Varie** per impostare le preferenze per la modalità di gestione di elementi incollati nella pagina dell'editor HTML. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni** e quindi espandere **editor di testo**  >  **HTML (Web Form)**  >  **varie**.
 
 ## <a name="miscellaneous-html-options"></a>Altre opzioni HTML
 

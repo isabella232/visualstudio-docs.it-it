@@ -1,5 +1,7 @@
 ---
 title: Opzioni, Editor di testo, XML, Formattazione
+description: Informazioni su come utilizzare la pagina formattazione nella sezione XML per specificare la modalità di formattazione di elementi e attributi nei documenti XML.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 203e60b2-7b80-4ff4-9fa1-aa9f4374377b
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b5dabfbc4f705d7de9fa881f373994714e43d26a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9aac9420d084c64a4bd5d9199f6a7ca96b8c4281
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568139"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040511"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Opzioni, Editor di testo, XML, Formattazione
 
@@ -23,7 +25,7 @@ Usare la pagina delle opzioni **Formattazione** per specificare la formattazione
 
 **Mantieni la formattazione manuale degli attributi**
 
-Consente di non riformattare gli attributi. Questa è l'impostazione predefinita.
+Consente di non riformattare gli attributi. È l'impostazione predefinita.
 
 > [!NOTE]
 > Se gli attributi sono disposti su più righe, a ogni riga di attributi verrà applicato un rientro corrispondente al rientro dell'elemento padre.
@@ -53,7 +55,7 @@ Consente di riformattare l'elemento al completamento del tag di fine.
 
 **Formatta contenuto misto per impostazione predefinita**
 
-Viene riformattato il contenuto misto, tranne quando il contenuto si trova in un ambito `xml:space="preserve"`. Questa è l'impostazione predefinita.
+Viene riformattato il contenuto misto, tranne quando il contenuto si trova in un ambito `xml:space="preserve"`. È l'impostazione predefinita.
 
 Se un elemento contiene testo e markup, il contenuto viene considerato misto. Di seguito viene riportato un esempio di elemento con contenuto misto.
 

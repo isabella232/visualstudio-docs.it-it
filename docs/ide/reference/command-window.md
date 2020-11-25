@@ -1,5 +1,7 @@
 ---
 title: Finestra di comando
+description: Informazioni su come usare la finestra di comando per eseguire comandi o alias direttamente nell'IDE di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb855cbed67bffc5ff2fb63b1785c577dd9fea25
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e133f20464fb19752c7616d2fab1a631fa802c9
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75570349"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040898"
 ---
 # <a name="command-window"></a>Finestra di comando
 La finestra **Comando** consente di eseguire i comandi o gli alias direttamente nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. È possibile eseguire sia i comandi di menu che comandi che non vengono visualizzati nei menu. Per visualizzare la finestra **Comando**, scegliere **Altre finestre** dal menu **Visualizza** e selezionare **Finestra di comando**.
@@ -52,7 +54,7 @@ Il simbolo di maggiore (`>`) viene visualizzato sul lato sinistro della finestra
 
 I collegamenti seguenti consentono l'esplorazione in modalità di comando.
 
-|Action|Posizione del cursore|Tasto di scelta rapida|
+|Operazione|Posizione del cursore|Tasto di scelta rapida|
 |------------| - |----------------|
 |Scorrere l'elenco dei comandi immessi in precedenza.|Riga di input|FRECCIA GIÙ o FRECCIA SU|
 |Scorrere la finestra verso l'alto.|Contenuto della finestra Comando|CTRL+freccia SU|
@@ -98,7 +100,7 @@ Esistono due formati per quasi tutte le opzioni supportate da un comando: un for
 Se alle opzioni in formato breve raggruppate viene assegnato un valore, tale valore viene applicato a ogni opzione. Ad esempio, `/pgm:123` equivale a `/p:123 /g:123 /m:123`. Se una delle opzioni del gruppo non accetta un valore, si verifica un errore.
 
 ## <a name="escape-characters"></a>Caratteri di escape
-Un accento circonflesso (^) in una riga di comando indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio:
+Un accento circonflesso (^) in una riga di comando indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio,
 
 ```cmd
 >Edit.Find ^^t /regex

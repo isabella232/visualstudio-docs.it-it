@@ -1,5 +1,7 @@
 ---
 title: Opzioni, Editor di testo, HTML (Web Form), Convalida
+description: Informazioni su come usare la pagina convalida nella sezione HTML per impostare le preferenze relative alla modalità di verifica della sintassi del markup HTML nel documento da parte dell'editor HTML.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ede4600cb1fa1df118b4635a193d8bff348d5119
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b65edc2b6c48bc76075e909d0f9bd1341a1b6dd8
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568282"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040563"
 ---
 # <a name="options-text-editor-html-web-forms-validation"></a>Opzioni, Editor di testo, HTML (Web Form), Convalida
 
-Usare la pagina di opzioni **Convalida** per impostare le preferenze relative alla modalità di verifica da parte dell'editor HTML dell'uso della sintassi del markup HTML all'interno del documento. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni**e quindi espandere convalida **Text Editor**  >  **HTML (Web Form)** nell'editor di testo  >  **Validation**.
+Usare la pagina di opzioni **Convalida** per impostare le preferenze relative alla modalità di verifica da parte dell'editor HTML dell'uso della sintassi del markup HTML all'interno del documento. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni** e quindi espandere convalida **Text Editor**  >  **HTML (Web Form)** nell'editor di testo  >  **Validation**.
 
 ## <a name="validation"></a>Convalida
 

@@ -1,5 +1,7 @@
 ---
 title: Opzioni, Editor di testo, F#, Correzioni del codice
+description: 'Informazioni su come usare la pagina correzioni del codice nella sezione F # per specificare le impostazioni che consentono di identificare gli errori del codice e offrire soluzioni.'
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c20646c8da4101ac674a64c5ca1ed23a3b1fd7b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73d66e4f8611a08d6dee3733c30b075d71f6712c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770937"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039601"
 ---
 # <a name="options-text-editor--f--code-fixes"></a>Opzioni: editor di testo > le correzioni del codice > F #
 
-Usare la pagina delle opzioni Correzioni del codice per specificare le impostazioni che consentono di identificare gli errori del codice e offrono soluzioni. Per accedere a questa pagina di opzioni, scegliere **strumenti**  >  **Opzioni**e quindi scegliere **editor di testo**  >  **F #**  >  **correzioni del codice**.
+Usare la pagina delle opzioni Correzioni del codice per specificare le impostazioni che consentono di identificare gli errori del codice e offrono soluzioni. Per accedere a questa pagina di opzioni, scegliere **strumenti**  >  **Opzioni** e quindi scegliere **editor di testo**  >  **F #**  >  **correzioni del codice**.
 
 ## <a name="code-fixes"></a>Correzioni del codice
 

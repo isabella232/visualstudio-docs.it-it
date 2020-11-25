@@ -1,5 +1,6 @@
 ---
 title: Progetti Web nella finestra di dialogo Opzioni
+description: Informazioni su come utilizzare le opzioni dei progetti Web per impostare il server Web che i progetti Web utilizzeranno per lo sviluppo in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.topic: reference
@@ -11,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efff521076b2d4a4b091ebf30b42f0d3ea4daa1f
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: 60aadb43c40e109fef9c4b9e2aa046c3f0d51edd
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102636"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96044011"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Opzioni (finestra di dialogo), Progetti e soluzioni, Progetti Web
 
-Imposta il server Web che i progetti Web useranno per lo sviluppo all'interno di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Per accedere a queste opzioni selezionare **Strumenti > Opzioni** , espandere **Progetti e soluzioni** e selezionare **Progetti Web** .
+Imposta il server Web che i progetti Web useranno per lo sviluppo all'interno di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Per accedere a queste opzioni selezionare **Strumenti > Opzioni**, espandere **Progetti e soluzioni** e selezionare **Progetti Web**.
 
 Per impostazione predefinita, per l'esecuzione di un progetto Web in Visual Studio viene usato il Server di sviluppo Visual Studio. Per altre informazioni, vedere [Server Web in Visual Studio per progetti Web ASP.NET](/previous-versions/aspnet/58wxa9w5\(v\=vs.120\)).
 

@@ -1,5 +1,7 @@
 ---
 title: Opzioni, Editor di testo, XAML, Formattazione
+description: Informazioni su come usare la pagina Opzioni di formattazione e le relative sottopagine per impostare le opzioni per la formattazione del codice nell'editor di codice durante la programmazione in XAML.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: reference
 f1_keywords:
@@ -29,12 +31,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d340a3b9468ea23c4cab23aabe19a7c1390955a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddeb503153eacdcff993405e29bb8b3bdbe0c722
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568243"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040524"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opzioni, Editor di testo, XAML, Formattazione
 
@@ -90,7 +92,7 @@ I valori di attributo sono racchiusi tra virgolette singole.
 
 Specifica se il ritorno a capo viene applicato alle righe alla lunghezza di riga specificata da **Lunghezza**.
 
-**Lunghezza**
+**Length**
 
 Il numero di caratteri che una riga può contenere. Se necessario, alcune righe XAML possono superare la lunghezza di riga specificata.
 

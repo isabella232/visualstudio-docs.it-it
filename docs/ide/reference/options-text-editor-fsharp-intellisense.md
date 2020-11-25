@@ -1,5 +1,7 @@
 ---
 title: Opzioni, Editor di testo, F#, IntelliSense
+description: "Informazioni su come usare la pagina IntelliSense nella sezione F # per modificare le impostazioni IntelliSense dell'editor di testo per F #."
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,16 +11,16 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d293d2c649329f5de8444ea75fd05ddc34738ab4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 84e24f609891e67bdafaab5ff8847dc341b861ba
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72666221"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039614"
 ---
 # <a name="options-text-editor-f-intellisense"></a>Opzioni, Editor di testo, F#, IntelliSense
 
-Usare la pagina delle opzioni **IntelliSense** per modificare alcune impostazioni dell'editor di testo per F#. Per accedere a questa pagina di opzioni, scegliere **strumenti**  >  **Opzioni**e quindi scegliere **editor di testo**  >  **F #**  >  **IntelliSense**.
+Usare la pagina delle opzioni **IntelliSense** per modificare alcune impostazioni dell'editor di testo per F#. Per accedere a questa pagina di opzioni, scegliere **strumenti**  >  **Opzioni** e quindi scegliere **editor di testo**  >  **F #**  >  **IntelliSense**.
 
 ## <a name="completion-lists"></a>Elenchi di completamento
 

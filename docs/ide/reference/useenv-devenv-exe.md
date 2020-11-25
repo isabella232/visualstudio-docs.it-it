@@ -1,5 +1,7 @@
 ---
 title: -UseEnv (devenv.exe)
+description: Informazioni su come usare l'opzione della riga di comando UseEnv devenv per avviare Visual Studio e caricare determinate variabili di ambiente per la compilazione.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2019
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35808b27964b3ca8fa0488f1be2ce6dc5530b3dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51b47156b73d81f427c08e62006dc6e457e5780b
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596395"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040940"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
@@ -51,7 +53,7 @@ devenv /UseEnv {SolutionName|ProjectName}
 
 ## <a name="remarks"></a>Osservazioni
 
-Questa opzione influisce sull'IDE di Visual Studio nelle proprietà del progetto per **Directory di VC++**. Se si specifica l'opzione `/UseEnv`, il nodo **Directory di VC++** mostra i valori per le variabili di ambiente PATH, INCLUDE, LIBPATH e LIB. Mostra anche i valori per le **directory di origine** e le **directory di esclusione**. In caso contrario, il nodo sostituisce le variabili di ambiente con cinque valori di directory: **directory eseguibili**, **directory di inclusione**, **directory di riferimento**, **directory di libreria**e **directory WinRT della libreria**.
+Questa opzione influisce sull'IDE di Visual Studio nelle proprietà del progetto per **Directory di VC++**. Se si specifica l'opzione `/UseEnv`, il nodo **Directory di VC++** mostra i valori per le variabili di ambiente PATH, INCLUDE, LIBPATH e LIB. Mostra anche i valori per le **directory di origine** e le **directory di esclusione**. In caso contrario, il nodo sostituisce le variabili di ambiente con cinque valori di directory: **directory eseguibili**, **directory di inclusione**, **directory di riferimento**, **directory di libreria** e **directory WinRT della libreria**.
 
 > [!TIP]
 > Per accedere alle proprietà del progetto, fare clic con il pulsante destro del mouse su un progetto C++ e scegliere **Proprietà**. Nella finestra di dialogo **Pagine delle proprietà** selezionare **Proprietà di configurazione** e quindi **Directory di VC++**.

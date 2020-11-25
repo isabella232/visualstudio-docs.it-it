@@ -13,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78dc44f4cebbfd245d8e5a8e1a667b422282c7ee
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f5ca27d44e611ab3b541dfb5992ef37d230513c3
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349152"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040641"
 ---
 # <a name="overview"></a>Panoramica
 
@@ -292,7 +292,7 @@ dotnet_diagnostic.CA2231.severity = warning
   Se è la prima volta che si modifica il set di regole, Visual Studio crea una copia del file del set di regole predefinito, ne assegna il nome *\<projectname> . RuleSet* e lo aggiunge al progetto. Questo set di regole personalizzate diventa anche il set di regole attive per il progetto.
 
    > [!NOTE]
-   > I progetti .NET Core e .NET Standard non supportano i comandi di menu per i set di regole in **Esplora soluzioni** , ad esempio **aprire il set di regole attive**. Per specificare un set di regole non predefinite per un progetto .NET Core o .NET Standard, [aggiungere manualmente la proprietà **CodeAnalysisRuleSet**](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) al file di progetto. È comunque possibile configurare le regole all'interno del set di regole nell'interfaccia utente dell'editor set di regole di Visual Studio.
+   > I progetti .NET Core e .NET Standard non supportano i comandi di menu per i set di regole in **Esplora soluzioni**, ad esempio **aprire il set di regole attive**. Per specificare un set di regole non predefinite per un progetto .NET Core o .NET Standard, [aggiungere manualmente la proprietà **CodeAnalysisRuleSet**](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) al file di progetto. È comunque possibile configurare le regole all'interno del set di regole nell'interfaccia utente dell'editor set di regole di Visual Studio.
 
 1. Passare alla regola espandendo l'assembly contenitore.
 
@@ -363,18 +363,18 @@ Esistono diversi modi per eliminare le violazioni delle regole:
 
   Selezionare le regole da escludere, quindi fare clic con il pulsante destro del mouse e selezionare **Elimina**  >  **in origine/in file di eliminazione**.
 
-  - Se si omette **in origine** , viene visualizzata la finestra di dialogo **Anteprima modifiche** con un'anteprima dell' [avviso #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) C# o Visual Basic la direttiva di [avviso #Disable](/dotnet/visual-basic/language-reference/directives/directives) aggiunta al codice sorgente.
+  - Se si omette **in origine**, viene visualizzata la finestra di dialogo **Anteprima modifiche** con un'anteprima dell' [avviso #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) C# o Visual Basic la direttiva di [avviso #Disable](/dotnet/visual-basic/language-reference/directives/directives) aggiunta al codice sorgente.
 
     ![Anteprima dell'aggiunta di #pragma avviso nel file di codice](media/pragma-warning-preview.png)
 
-  - Se si seleziona **in file di eliminazione** , viene visualizzata la finestra di dialogo **Anteprima modifiche** con un'anteprima dell' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo aggiunto al file di eliminazione globale.
+  - Se si seleziona **in file di eliminazione**, viene visualizzata la finestra di dialogo **Anteprima modifiche** con un'anteprima dell' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo aggiunto al file di eliminazione globale.
 
     ![Anteprima dell'aggiunta dell'attributo SuppressMessage al file di eliminazione](media/preview-changes-in-suppression-file.png)
 
   Nella finestra di dialogo **Anteprima modifiche** selezionare **applica**.
 
   > [!NOTE]
-  > Se non viene visualizzata l'opzione di menu non **visualizzare** in **Esplora soluzioni** , è probabile che la violazione provenga da compilazione e non da analisi in tempo reale. Il **Elenco errori** Visualizza la diagnostica, o le violazioni delle regole, dall'analisi del codice in tempo reale e dalla compilazione. Poiché la diagnostica di compilazione può essere obsoleta, ad esempio se è stato modificato il codice per correggere la violazione ma non è stata ricompilata, non è possibile eliminare questi dati diagnostici dal **Elenco errori**. I dati di diagnostica da analisi in tempo reale o IntelliSense sono sempre aggiornati con le origini correnti e possono essere eliminati dal **Elenco errori**. Per escludere la diagnostica di *compilazione* dalla selezione, impostare il filtro di origine **Elenco errori** da **compilazione e IntelliSense** **solo in IntelliSense**. Selezionare quindi la diagnostica che si vuole escludere e procedere come descritto in precedenza.
+  > Se non viene visualizzata l'opzione di menu non **visualizzare** in **Esplora soluzioni**, è probabile che la violazione provenga da compilazione e non da analisi in tempo reale. Il **Elenco errori** Visualizza la diagnostica, o le violazioni delle regole, dall'analisi del codice in tempo reale e dalla compilazione. Poiché la diagnostica di compilazione può essere obsoleta, ad esempio se è stato modificato il codice per correggere la violazione ma non è stata ricompilata, non è possibile eliminare questi dati diagnostici dal **Elenco errori**. I dati di diagnostica da analisi in tempo reale o IntelliSense sono sempre aggiornati con le origini correnti e possono essere eliminati dal **Elenco errori**. Per escludere la diagnostica di *compilazione* dalla selezione, impostare il filtro di origine **Elenco errori** da **compilazione e IntelliSense** **solo in IntelliSense**. Selezionare quindi la diagnostica che si vuole escludere e procedere come descritto in precedenza.
   >
   > ![Filtro di origine Elenco errori in Visual Studio](media/error-list-filter.png)
 
@@ -386,7 +386,7 @@ Quando si compila il progetto dalla riga di comando, le violazioni delle regole 
 
 - Una o più regole sono violate nel codice del progetto.
 
-- Il livello di [gravità](#configure-severity-levels) di una regola violata è impostato su **warning** , nel qual caso le violazioni non causano errori di compilazione o **errore** , nel qual caso le violazioni causano errori di compilazione.
+- Il livello di [gravità](#configure-severity-levels) di una regola violata è impostato su **warning**, nel qual caso le violazioni non causano errori di compilazione o **errore**, nel qual caso le violazioni causano errori di compilazione.
 
 Il livello di dettaglio dell'output di compilazione non influisce sull'eventuale visualizzazione delle violazioni delle regole. Anche con il livello di dettaglio **silenzioso** , le violazioni delle regole vengono visualizzate nell'output di compilazione.
 
@@ -408,7 +408,7 @@ Nell'immagine seguente viene illustrato l'output di compilazione da riga di coma
 In un progetto .NET Core, se si aggiunge un riferimento a un progetto che include analizzatori NuGet, questi analizzatori vengono aggiunti automaticamente al progetto dipendente. Per disabilitare questo comportamento, ad esempio se il progetto dipendente è un progetto di unit test, contrassegnare il pacchetto NuGet come privato nel file con *estensione csproj* o *VBPROJ* del progetto a cui si fa riferimento impostando l'attributo **PrivateAssets** :
 
 ```xml
-<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
+<PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.0" PrivateAssets="all" />
 ```
 
 ## <a name="see-also"></a>Vedere anche

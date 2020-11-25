@@ -1,5 +1,7 @@
 ---
 title: Opzioni, Editor di testo, HTML (Web Form), Formattazione
+description: Informazioni su come usare la pagina formattazione nella sezione HTML per impostare le opzioni del progetto HTML per la formattazione del codice nell'editor di codice.
+ms.custom: SEO-VS-2020
 ms.date: 1/15/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e28caf7f71af7c7a07634d1732a1001a32a4aee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3c8fe85b7bce856867802d43411816ae2df5d2c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568321"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040979"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opzioni, Editor di testo, HTML (Web Form), Formattazione
 
-Usare la pagina di opzioni **Formattazione** per impostare le opzioni di progetto HTML per la formattazione del codice nell'editor del codice. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni**e quindi espandere formattazione **Text Editor**  >  **HTML (Web Form)** nell'editor di testo  >  **Formatting**.
+Usare la pagina di opzioni **Formattazione** per impostare le opzioni di progetto HTML per la formattazione del codice nell'editor del codice. Per accedere a questa pagina, nella barra dei menu scegliere **strumenti**  >  **Opzioni** e quindi espandere formattazione **Text Editor**  >  **HTML (Web Form)** nell'editor di testo  >  **Formatting**.
 
 ## <a name="capitalization"></a>Uso delle maiuscole
 
@@ -37,8 +39,8 @@ Queste opzioni specificano la modalità di applicazione delle lettere maiuscole 
 |Opzione|Risultato|
 |---------------------------------|------------------------------|
 |**Come immesse**|Esatta combinazione di maiuscole/minuscole dell'elemento come immessa.|
-|**Maiuscolo**|I nomi degli elementi vengono riformattati in maiuscolo.|
-|**Lettere minuscole**|I nomi degli elementi vengono riformattati in minuscolo.|
+|**Maiuscole**|I nomi degli elementi vengono riformattati in maiuscolo.|
+|**Minuscole**|I nomi degli elementi vengono riformattati in minuscolo.|
 |**Definizione assembly**|La combinazione di maiuscole e minuscole degli elementi è determinata dalla definizione dell'elemento nella classe di tipo corrispondente.|
 
 **Tag client, Attributi client**
@@ -48,8 +50,8 @@ Tramite queste opzioni viene determinato se durante la formattazione automatica 
 |Opzione|Risultato|
 |---------------------------------|------------------------------|
 |**Come immesse**|Esatta combinazione di maiuscole/minuscole dell'attributo come immessa.|
-|**Maiuscolo**|I nomi degli attributi vengono riformattati in maiuscolo.|
-|**Lettere minuscole**|I nomi degli attributi vengono riformattati in minuscolo.|
+|**Maiuscole**|I nomi degli attributi vengono riformattati in maiuscolo.|
+|**Minuscole**|I nomi degli attributi vengono riformattati in minuscolo.|
 
 ## <a name="automatic-formatting-options"></a>Opzioni di formattazione automatica
 
@@ -91,7 +93,7 @@ Queste opzioni determinano se i tag vengono suddivisi nell'editor in più righe 
    > [!NOTE]
    > Il valore specificato viene considerato come valore minimo. I singoli attributi non vengono suddivisi nell'editor.
 
-- **Lunghezza**
+- **Length**
 
    Viene specificato il numero di caratteri da visualizzare in una riga prima del ritorno a capo. Questa casella di input è disabilitata se non è selezionata la casella **Tag a capo quando superano la lunghezza specificata**.
 

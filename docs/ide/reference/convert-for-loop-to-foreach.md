@@ -1,5 +1,6 @@
 ---
 title: Effettuare il refactoring per convertire un ciclo for in un'istruzione foreach
+description: Informazioni su come usare il menu azioni rapide e refactoring per eseguire la conversione tra un ciclo for e un'istruzione foreach.
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
@@ -11,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 68ed736a1e3a07c7cd3f67ea9c936821cf4ac78c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 70c2b17f00c1f5e72ce0e913c360b4655b18df12
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045919"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040823"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Effettuare il refactoring per convertire un ciclo for in un'istruzione foreach e viceversa
 
@@ -51,7 +52,7 @@ Di seguito sono riportati alcuni motivi per cui può essere opportuno convertire
 
    ![Menu Converti in foreach](media/convert-to-foreach.png)
 
-1. Selezionare **Converti in foreach** . In alternativa, selezionare **Anteprima modifiche** per aprire la finestra di dialogo [Anteprima modifiche](../../ide/preview-changes.md) e quindi selezionare **Applica** .
+1. Selezionare **Converti in foreach**. In alternativa, selezionare **Anteprima modifiche** per aprire la finestra di dialogo [Anteprima modifiche](../../ide/preview-changes.md) e quindi selezionare **Applica**.
 
 ## <a name="convert-a-foreach-statement-to-a-for-loop"></a>Convertire un'istruzione foreach in un ciclo for
 
@@ -79,14 +80,14 @@ Di seguito sono riportati alcuni motivi per cui può essere opportuno convertire
 
    ![Menu Converti in for](media/convert-to-for.png)
 
-1. Selezionare **Converti in for** . In alternativa, selezionare **Anteprima modifiche** per aprire la finestra di dialogo [Anteprima modifiche](../../ide/preview-changes.md) e quindi selezionare **Applica** .
+1. Selezionare **Converti in for**. In alternativa, selezionare **Anteprima modifiche** per aprire la finestra di dialogo [Anteprima modifiche](../../ide/preview-changes.md) e quindi selezionare **Applica**.
 
-1. Poiché il refactoring introduce una nuova variabile Numero di iterazioni, la casella **Rinomina** appare nell'angolo superiore destro dell'editor. Se si vuole scegliere un nome diverso per la variabile, digitarlo in e quindi premere **INVIO** oppure selezionare **Applica** nella casella **Rinomina** . Se non si vuole scegliere un nuovo nome, premere **ESC** oppure selezionare **Applica** per chiudere la casella **Rinomina** .
+1. Poiché il refactoring introduce una nuova variabile Numero di iterazioni, la casella **Rinomina** appare nell'angolo superiore destro dell'editor. Se si vuole scegliere un nome diverso per la variabile, digitarlo in e quindi premere **INVIO** oppure selezionare **Applica** nella casella **Rinomina**. Se non si vuole scegliere un nuovo nome, premere **ESC** oppure selezionare **Applica** per chiudere la casella **Rinomina**.
 
 > [!NOTE]
-> Per C#, il codice generato da questi refactoring usa un tipo esplicito o [var](/dotnet/csharp/language-reference/keywords/var) per il tipo degli elementi nella raccolta. Il tipo nel codice generato, esplicito o implicito, dipende dalle impostazioni di stile del codice che rientrano nell'ambito. Queste specifiche impostazioni di stile di codice sono configurate a livello di computer in **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **C#**  >  **stile di codice**  >  **generale**  >  **\' var ' preferenze** o a livello di soluzione in un file [EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types) . Se si modifica un'impostazione di stile del codice in **Opzioni** , riaprire il file di codice per rendere effettive le modifiche.
+> Per C#, il codice generato da questi refactoring usa un tipo esplicito o [var](/dotnet/csharp/language-reference/keywords/var) per il tipo degli elementi nella raccolta. Il tipo nel codice generato, esplicito o implicito, dipende dalle impostazioni di stile del codice che rientrano nell'ambito. Queste specifiche impostazioni di stile di codice sono configurate a livello di computer in **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **C#**  >  **stile di codice**  >  **generale**  >  **\' var ' preferenze** o a livello di soluzione in un file [EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types) . Se si modifica un'impostazione di stile del codice in **Opzioni**, riaprire il file di codice per rendere effettive le modifiche.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)
 - [Anteprima modifiche](../../ide/preview-changes.md)

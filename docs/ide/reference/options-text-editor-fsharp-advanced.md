@@ -1,5 +1,7 @@
 ---
 title: Opzioni, Editor di testo, F#, Avanzate
+description: 'Informazioni su come utilizzare la pagina Avanzate nella sezione F # per modificare le impostazioni relative alle guide e alla struttura del blocco per F #.'
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
@@ -9,16 +11,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 64626a0ebd8850098bbbc056d523b6a3f034bf4e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9f4550ccf83f5697bca46d4a4049fe7df9b1c20
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770941"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039640"
 ---
 # <a name="options-text-editor-f-advanced"></a>Opzioni, Editor di testo, F#, Avanzate
 
-Usare la pagina delle opzioni **Avanzate** per modificare alcune impostazioni dell'editor di testo per F#. Per accedere a questa pagina di opzioni, scegliere **strumenti**  >  **Opzioni**e quindi scegliere **editor di testo**  >  **F #**  >  **Avanzate**.
+Usare la pagina delle opzioni **Avanzate** per modificare alcune impostazioni dell'editor di testo per F#. Per accedere a questa pagina di opzioni, scegliere **strumenti**  >  **Opzioni** e quindi scegliere **editor di testo**  >  **F #**  >  **Avanzate**.
 
 ## <a name="block-structure-guides"></a>Guide per strutture a blocchi
 

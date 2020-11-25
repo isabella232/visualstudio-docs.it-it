@@ -1,5 +1,7 @@
 ---
 title: Finestra di dialogo Opzioni
+description: Informazioni sulla finestra di dialogo Opzioni, il relativo layout e il modo in cui Visual Studio applica le opzioni selezionate ai progetti e alle soluzioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 068c80221a572747ab99e41e78945fe55c57c451
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 1abf435625cc9003dc569542e24e020e3801ec00
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211261"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039809"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Finestra di dialogo Opzioni (Visual Studio)
 
