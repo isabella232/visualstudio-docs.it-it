@@ -1,5 +1,7 @@
 ---
 title: Aggiungere controlli Null per tutti i parametri
+description: Informazioni su come creare e aggiungere istruzioni If al codice che controllano i valori null di tutti i parametri nullable e non controllati.
+ms.custom: SEO-VS-2020
 ms.date: 09/17/2019
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 573a9e56d3aedd55bc571eaaa363b42a53019566
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5828a2bb28f7b3085cd5d43c452c520a730b8175
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74782307"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870963"
 ---
 # <a name="add-null-checks-for-all-parameters"></a>Aggiungere controlli null per tutti i parametri 
 

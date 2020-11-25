@@ -1,5 +1,7 @@
 ---
 title: Pagina delle proprietà dell'applicazione per app UWP
+description: Informazioni su come usare la pagina applicazione per specificare l'assembly e le informazioni sul pacchetto del progetto piattaforma UWP (Universal Windows Platform) (UWP) e la versione di destinazione di Windows 10.
+ms.custom: SEO-VS-2020
 ms.date: 01/23/2018
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 826d408d8e1a6a2cb8bcad956ce930781a9155db
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77173085"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871366"
 ---
 # <a name="application-property-page-uwp-projects"></a>Pagina delle proprietà dell'applicazione (progetti UWP)
 

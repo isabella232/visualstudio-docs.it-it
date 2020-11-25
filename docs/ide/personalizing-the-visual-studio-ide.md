@@ -1,5 +1,7 @@
 ---
 title: Personalizzare l'IDE
+description: Informazioni su come personalizzare l'IDE di Visual Studio in modi che meglio supportano il proprio stile di sviluppo e i requisiti.
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2017
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39c9edbf5e96a59912c0cf16d7b4178f6fba2a62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4acd399aeb9de1d25cbe6abe2b8bba3f347dbc8a
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585743"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871457"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizzare l'IDE di Visual Studio
 
@@ -29,7 +31,7 @@ ms.locfileid: "75585743"
 
 Molte opzioni di personalizzazione sono esposte tramite la finestra di dialogo [Opzioni ambiente](../ide/reference/general-environment-options-dialog-box.md). È possibile accedere a questa finestra di dialogo in due modi:
 
-- Nella barra dei menu scegliere **strumenti**  >  **Opzioni**e, se non è già espanso, espandere il nodo **ambiente** .
+- Nella barra dei menu scegliere **strumenti**  >  **Opzioni** e, se non è già espanso, espandere il nodo **ambiente** .
 
 - Premere **CTRL** + **Q**, digitare **Environment** nella casella di ricerca, quindi scegliere **ambiente > generale** dai risultati.
 
@@ -44,7 +46,7 @@ Per modificare le opzioni di colorazione nell'editor, digitare **Environment** n
 
 ### <a name="main-menu-casing"></a>Utilizzo di maiuscole e minuscole nel menu principale
 
-È possibile modificare la combinazione di maiuscole e minuscole per il menu principale scegliendo tra le opzioni **Tutte Iniziali Maiuscole** ("File") e **Tutto maiuscole** ("FILE"). Digitare **Environment** nella casella di ricerca, selezionare **ambiente > generale**e quindi modificare l'opzione **Applica stile maiuscole e minuscole alla barra dei menu** .
+È possibile modificare la combinazione di maiuscole e minuscole per il menu principale scegliendo tra le opzioni **Tutte Iniziali Maiuscole** ("File") e **Tutto maiuscole** ("FILE"). Digitare **Environment** nella casella di ricerca, selezionare **ambiente > generale** e quindi modificare l'opzione **Applica stile maiuscole e minuscole alla barra dei menu** .
 
 ### <a name="customize-menus-and-toolbars"></a>Personalizzare menu e barre degli strumenti
 

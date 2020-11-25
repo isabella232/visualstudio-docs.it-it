@@ -1,5 +1,7 @@
 ---
 title: Comando Alias
+description: Informazioni su come usare il comando alias per creare un nuovo alias per un comando completo, per un comando completo e per argomenti o per un altro alias.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 031f1a4bab1acee3f3d0999b17c0b607f7808df9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a9521809baf338c542b0c1cba288f643b985f02
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596905"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871509"
 ---
 # <a name="alias-command"></a>Comando Alias
 Crea un nuovo alias per un comando completo, un comando completo con i relativi argomenti o un altro alias.
@@ -49,7 +51,7 @@ facoltativo. Elimina l'alias specificato rimuovendolo dal completamento automati
 /reset\
 facoltativo. Ripristina le impostazioni originali dell'elenco di alias predefiniti, ovvero ripristina tutti gli alias predefiniti e rimuove tutti gli alias definiti dall'utente.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Poiché rappresentano i comandi, gli alias devono essere posizionati all'inizio della riga di comando.
 
 Quando si esegue questo comando, le opzioni devono essere incluse subito dopo il comando, non dopo gli alias. In caso contrario, l'opzione verrà considerata parte della stringa di alias.

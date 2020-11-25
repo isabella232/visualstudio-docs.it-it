@@ -1,5 +1,7 @@
 ---
 title: Azioni rapide, lampadine e cacciavite
+description: Informazioni su come usare una singola azione rapida per effettuare il refactoring, generare o modificare il codice in altro modo.
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfafcca1cddcaa216b8a9e12dd7d961949afa2bb
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 967e73748b364e7e41b1773a7fab33831152ab18
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036522"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870781"
 ---
 # <a name="quick-actions"></a>Azioni rapide
 
@@ -68,7 +70,7 @@ Per vedere le potenziali correzioni, selezionare la freccia GIÙ accanto alla la
 
 ![Lampadina espansa](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Generazione di codice in Visual Studio](../ide/code-generation-in-visual-studio.md)
 - [Azioni rapide comuni](../ide/common-quick-actions.md)

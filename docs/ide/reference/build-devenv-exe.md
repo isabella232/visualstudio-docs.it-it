@@ -1,5 +1,7 @@
 ---
 title: -Build (devenv.exe)
+description: Informazioni sull'opzione della riga di comando di compilazione devenv e su come usarla per compilare una soluzione o un progetto con un file di configurazione della soluzione specificato.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1766fe22573554b41ebfaa38fbd9e8d6c90c5790
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b23a15984c4ded6ca77b1660e14c53be9fd42e3
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595761"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871431"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -53,7 +55,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
   facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 - L'opzione `/Build` esegue la stessa funzione del comando di menu **Compila soluzione** nell'ambiente di sviluppo integrato (IDE).
 

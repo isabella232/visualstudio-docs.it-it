@@ -1,5 +1,7 @@
 ---
 title: Pagina Applicazione delle proprietà del progetto C#
+description: Informazioni su come usare la pagina applicazione di progettazione progetti C# per specificare le impostazioni e le proprietà dell'applicazione del progetto.
+ms.custom: SEO-VS-2020
 ms.date: 10/30/2018
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef9a38fc13d0d9c9f6b912f4cb2b83971d105c29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b77ee4edca8f9cb8de2079e01d9c9997a24aeff
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595826"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871379"
 ---
 # <a name="application-page-project-designer-c"></a>Applicazione (pagina), Creazione progetti (C#)
 
@@ -121,6 +123,6 @@ Consente di selezionare un'opzione di generazione del manifesto quando l'applica
 
 Selezionare questo pulsante di opzione se si specifica un file di risorse per il progetto. Se si seleziona questa opzione, le opzioni **Icona** e **Manifesto** vengono disabilitate.
 
-Immettere un nome di percorso o usare il pulsante Sfoglia (**... **) per aggiungere un file di risorse Win32 al progetto.
+Immettere un nome di percorso o usare il pulsante Sfoglia (**...**) per aggiungere un file di risorse Win32 al progetto.
 
 Per altre informazioni, vedere [Creare i file di risorse per le app .NET](/dotnet/framework/resources/creating-resource-files-for-desktop-apps).

@@ -1,5 +1,7 @@
 ---
 title: "Guida introduttiva: presentazione dell'IDE di Visual Studio"
+description: Informazioni su alcune delle finestre, i menu e altre funzionalità dell'interfaccia utente di Visual Studio Integrated Development Environment (IDE).
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/21/2019
 ms.topic: quickstart
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08ec25312068d5c69cdb0df9b7c293ae0575f608
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4511658a454c1431967905e88428842c3ba00c64
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238855"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870886"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Guida introduttiva: Presentazione dell'IDE di Visual Studio
 
@@ -83,7 +85,7 @@ Per continuare a esplorare le funzionalità di Visual Studio si procederà a cre
 
    Viene visualizzata la finestra di dialogo **Crea un nuovo progetto**. Nella finestra è possibile cercare, filtrare e selezionare un modello di progetto. La finestra include anche un elenco dei modelli di progetto usati di recente.
 
-1. Nella casella di ricerca in alto digitare **console** per filtrare l'elenco dei tipi di progetto includendo solo quelli che contengono "console" nel nome. Perfezionare ulteriormente i risultati della ricerca scegliendo ** C# ** (o un altro linguaggio di propria scelta) nel menu di selezione del **Linguaggio**.
+1. Nella casella di ricerca in alto digitare **console** per filtrare l'elenco dei tipi di progetto includendo solo quelli che contengono "console" nel nome. Perfezionare ulteriormente i risultati della ricerca scegliendo **C#** (o un altro linguaggio di propria scelta) nel menu di selezione del **Linguaggio**.
 
    ![Finestra di dialogo Nuovo progetto di Visual Studio 2019](media/vs-2019/create-a-new-project.png)
 
@@ -131,7 +133,7 @@ Il **Elenco errori** Mostra gli errori, gli avvisi e i messaggi relativi allo st
 
 Nella finestra **Output** vengono visualizzati i messaggi di output generati dalla compilazione del progetto e dal provider di controllo del codice sorgente.
 
-Ora si procederà alla compilazione del progetto per esaminare alcuni elementi di output della compilazione. Scegliere **Compila soluzione**dal menu **Compila** . La finestra di **output** ottiene automaticamente lo stato attivo e visualizza un messaggio di compilazione riuscito.
+Ora si procederà alla compilazione del progetto per esaminare alcuni elementi di output della compilazione. Scegliere **Compila soluzione** dal menu **Compila** . La finestra di **output** ottiene automaticamente lo stato attivo e visualizza un messaggio di compilazione riuscito.
 
 ![Finestra Output di Visual Studio](media/build-output-minimal.png)
 

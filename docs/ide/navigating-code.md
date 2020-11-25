@@ -1,5 +1,7 @@
 ---
 title: Comandi di spostamento per il codice
+description: Informazioni sulle diverse opzioni disponibili per spostarsi nel codice nell'editor.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: 0216a71b675473d54aec9738ea7bdc85b7643841
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77b0f8782f9ffaf37701f13b30be6e068ce05f8d
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585821"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871522"
 ---
 # <a name="navigate-code"></a>Spostarsi all'interno del codice
 

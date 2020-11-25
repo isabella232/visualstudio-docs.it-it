@@ -1,5 +1,7 @@
 ---
 title: Scegli elementi della Casella degli strumenti, Componenti WPF
+description: Informazioni su come utilizzare la scheda Componenti WPF per visualizzare i controlli Windows Presentation Foundation disponibili per la selezione nel computer locale.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28576fab1ed4b39810b6f4cc32fb2955a7a44039
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 7b9727d335607f15101222e40be193de2315b7dc
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099349"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871327"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Scegli elementi della Casella degli strumenti, Componenti WPF
 
@@ -81,7 +83,7 @@ Inoltre se al controllo personalizzato vengono applicati i metadati della fase d
 
 È possibile fare riferimento ai controlli direttamente in XAML eseguendo il mapping dello spazio dei nomi e dell'assembly per il controllo.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Casella degli strumenti](../../ide/reference/toolbox.md)
 - [Guida introduttiva a WPF](../../designers/getting-started-with-wpf.md)

@@ -1,5 +1,7 @@
 ---
 title: Salvataggio automatico, Ambiente, finestra di dialogo Opzioni
+description: Informazioni sulla finestra di dialogo ripristino automatico, ambiente, opzioni e su come viene usata per specificare se eseguire o meno il backup automatico dei file.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2020
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f35424089b293b858c609d19f59459693373eb4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b578e914c6fa099528008090646372c7d9ef26b1
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250284"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871353"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>Salvataggio automatico, Ambiente, finestra di dialogo Opzioni
 
@@ -36,10 +38,10 @@ Per accedere a questa finestra di dialogo, passare a **strumenti**  >  **Opzioni
 
 ::: moniker range="vs-2019"
 
-Usare questa opzione per personalizzare la frequenza con cui un file viene salvato automaticamente nell'editor. Per i file salvati in precedenza, Visual Studio 2019 versione 16,2 e successive salva una copia del file in ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [NomeProgetto]***. Se il file è nuovo e non è ancora stato salvato, Visual Studio lo salva automaticamente usando un nome file generato in modo casuale.
+Usare questa opzione per personalizzare la frequenza con cui un file viene salvato automaticamente nell'editor. Per i file salvati in precedenza, Visual Studio 2019 versione 16,2 e successive salva una copia del file in **_%LocalAppData%\Microsoft\VisualStudio\BackupFiles \\ [NomeProgetto]_* _. Se il file è nuovo e non è ancora stato salvato, Visual Studio lo salva automaticamente usando un nome file generato in modo casuale.
 
 > [!NOTE]
-> Se si usa Visual Studio 2019 versione 16,1 o precedente, il percorso del file è *%USERPROFILE%\Documents\Visual Studio [versione] \backup file \\ [NomeProgetto]*. Per ulteriori informazioni, vedere la pagina della [cronologia delle note sulla versione di Visual Studio 2019](/visualstudio/releases/2019/release-notes-history/) .
+> Se si usa Visual Studio 2019 versione 16,1 o precedente, il percorso del file è _% USERPROFILE% \ Documents \ Visual Studio [versione] \backup file \\ [NomeProgetto] *. Per ulteriori informazioni, vedere la pagina della [cronologia delle note sulla versione di Visual Studio 2019](/visualstudio/releases/2019/release-notes-history/) .
 
 ::: moniker-end
 

@@ -1,5 +1,7 @@
 ---
 title: Trovare le chiamate a un metodo
+description: Informazioni su come usare la finestra gerarchia di chiamata per esplorare tutte le chiamate a e talvolta da un metodo, una proprietà o un costruttore selezionato.
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcedc6a49c0df84b4482f8030524d59d4336bcc8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75c330855d3fca1187f88171adb893c3f77c4ccd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595800"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871405"
 ---
 # <a name="view-call-hierarchy"></a>Visualizzare la gerarchia di chiamata
 

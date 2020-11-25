@@ -1,5 +1,7 @@
 ---
 title: Guida per la produttività
+description: Informazioni sui tasti di scelta rapida e sulle funzionalità di produttività di Visual Studio che consentono di scrivere codice, eseguire il debug del codice e gestire gli errori in modo efficiente.
+ms.custom: SEO-VS-2020
 ms.date: 4/29/2020
 ms.topic: conceptual
 author: ornellaalt
@@ -7,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a10b1f9b3dd6dda643a2775cf7b89221fba71d8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: bee392ddc4e7a0d185bdcc2d0e31dbd17832c733
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808142"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95870872"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Guida alla produttività per Visual Studio
 
@@ -20,7 +22,7 @@ Se si vuole risparmiare tempo durante la scrittura del codice, l'utente si trova
 
 Per informazioni sui tasti di scelta rapida più utili, vedere [Tasti di scelta rapida per la produttività](../ide/productivity-shortcuts.md). Per un elenco completo dei tasti di scelta rapida per i comandi, vedere [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-## <a name="get-started"></a>Operazioni preliminari
+## <a name="get-started"></a>Introduzione
 
 Risparmia tempo attraverso i menu per cercare rapidamente tutto ciò che ti serve, inclusi comandi, impostazioni, documentazione e opzioni di installazione. Vedere Tasti di scelta rapida per i comandi nei risultati della ricerca in Visual Studio in modo da poterli memorizzare più facilmente. 
 
@@ -40,7 +42,7 @@ Risparmia tempo attraverso i menu per cercare rapidamente tutto ciò che ti serv
 
 È possibile scrivere il codice più rapidamente tramite le seguenti funzionalità.
 
-- **Usare i comandi di comodità**. Visual Studio include vari comandi che consentono di eseguire attività di modifica comuni più velocemente. Ad esempio, è possibile scegliere un comando per duplicare facilmente una riga di codice senza doverla copiare, modificare la posizione del cursore e quindi incollarla. Scegliere **modifica**  >  **duplicato** o premere **CTRL** + **E**,**V**. È anche possibile espandere o comprimere rapidamente una selezione di testo scegliendo **modifica**  >  **Avanzate**  >  **Espandi selezione** o **Modifica**  >  **Advanced**  >  **selezione contratto**avanzata oppure premendo **MAIUSC** + **ALT** + **=** o **MAIUSC** + **ALT** + **-** .
+- **Usare i comandi di comodità**. Visual Studio include vari comandi che consentono di eseguire attività di modifica comuni più velocemente. Ad esempio, è possibile scegliere un comando per duplicare facilmente una riga di codice senza doverla copiare, modificare la posizione del cursore e quindi incollarla. Scegliere **modifica**  >  **duplicato** o premere **CTRL** + **E**,**V**. È anche possibile espandere o comprimere rapidamente una selezione di testo scegliendo **modifica**  >  **Avanzate**  >  **Espandi selezione** o **Modifica**  >  **Advanced**  >  **selezione contratto** avanzata oppure premendo **MAIUSC** + **ALT** + **=** o **MAIUSC** + **ALT** + **-** .
 
 - **Utilizzare IntelliSense**. Quando si immette il codice nell'editor, vengono visualizzate alcune informazioni di IntelliSense, come Elenca membri, Informazioni sul parametro, Informazioni rapide, Supporto firma e Completa parola. Queste funzionalità supportano la corrispondenza fuzzy del testo; ad esempio, gli elenchi di risultati per Elenca membri includono non solo le voci che iniziano con i caratteri immessi ma anche le voci che contengono la combinazione di caratteri in qualsiasi punto del nome. Per altre informazioni, vedere [Utilizzo di IntelliSense](../ide/using-intellisense.md).
 
@@ -50,7 +52,7 @@ Risparmia tempo attraverso i menu per cercare rapidamente tutto ciò che ti serv
 
 - **Usare frammenti di codice**. È possibile usare frammenti di codice predefiniti o creare frammenti di codice personalizzati.
 
-     Per inserire un frammento, sulla barra dei menu scegliere **modifica**  >  **IntelliSense**  >  **Inserisci frammento** o **Racchiudi tra**oppure aprire il menu di scelta rapida in un file e scegliere **frammento**Inserisci frammento di codice  >  **Insert Snippet** o **Racchiudi tra**. Per altre informazioni, vedere [Code Snippets](../ide/code-snippets.md) (Frammenti di codice).
+     Per inserire un frammento, sulla barra dei menu scegliere **modifica**  >  **IntelliSense**  >  **Inserisci frammento** o **Racchiudi tra** oppure aprire il menu di scelta rapida in un file e scegliere **frammento** Inserisci frammento di codice  >  **Insert Snippet** o **Racchiudi tra**. Per altre informazioni, vedere [Code Snippets](../ide/code-snippets.md) (Frammenti di codice).
 
 - **Correzione di errori di codice inline**. Le azioni rapide consentono di generare codice, effettuarne il refactoring o modificarlo in altro modo con facilità tramite un'unica azione. Queste azioni possono essere applicate usando l'icona del cacciavite o l'icona a bulbo di luce lampadina oppure ![ ](media/screwdriver-icon.png) ![ ](media/light-bulb-icon.png) premendo **ALT** + **invio** o **CTRL** + **.** quando il cursore si trova sulla riga di codice appropriata. Per altre informazioni, vedere [Azioni rapide](quick-actions.md).
 
@@ -70,7 +72,7 @@ Risparmia tempo attraverso i menu per cercare rapidamente tutto ciò che ti serv
 
 - **Inserimento di un segnalibro per le righe di codice**. È possibile utilizzare i segnalibri per passare rapidamente alle righe di codice specifiche in un file.
 
-    Per impostare un segnalibro, sulla barra dei menu scegliere **modifica**  >  **segnalibri**  >  **Attiva/Nascondi**segnalibro. È possibile visualizzare tutti i segnalibri per una soluzione nella finestra **Segnalibri**. Per altre informazioni, vedere [Impostazione di segnalibri nel codice](../ide/setting-bookmarks-in-code.md).
+    Per impostare un segnalibro, sulla barra dei menu scegliere **modifica**  >  **segnalibri**  >  **Attiva/Nascondi** segnalibro. È possibile visualizzare tutti i segnalibri per una soluzione nella finestra **Segnalibri**. Per altre informazioni, vedere [Impostazione di segnalibri nel codice](../ide/setting-bookmarks-in-code.md).
 
 - **Ricerca delle definizioni dei simboli in un file**. Sebbene sia possibile cercare all'interno di una soluzione definizioni di simboli e nomi file, i risultati della ricerca non includono gli spazi dei nomi o le variabili locali.
 

@@ -1,5 +1,7 @@
 ---
 title: Finestra di dialogo Impostazioni avanzate per i servizi
+description: Informazioni su come usare le impostazioni avanzate per le funzionalità dei servizi per configurare le impostazioni avanzate per i servizi delle applicazioni client.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,17 +14,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 967e99102f3b88e82a5466e7ce8d2cac2412d286
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59ad28dd6890effbac00282a0e9bc388b4191139
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585678"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871314"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Finestra di dialogo Impostazioni avanzate per i servizi
 I servizi delle applicazioni client offrono accesso semplificato a servizi di accesso, ruolo e profilo di [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] da applicazioni Windows Forms e Windows Presentation Foundation (WPF). Per configurare i servizi delle applicazioni client, è possibile usare la pagina **Servizi** in **Creazione progetti**. Per altre informazioni sulla pagina **Servizi**, vedere [Services Page, Project Designer](../../ide/reference/services-page-project-designer.md) (Pagina Servizi, Creazione progetti).
 
-Per configurare le impostazioni avanzate dei servizi delle applicazioni client, usare la finestra di dialogo **Impostazioni avanzate per i servizi ** della pagina **Servizi** in **Creazione progetti**. Queste impostazioni consentono di eseguire l'override di alcuni comportamenti predefiniti di servizi di applicazioni e abilitare scenari meno comuni. Per altre informazioni, vedere [Servizi applicazioni client](/dotnet/framework/common-client-technologies/client-application-services).
+Per configurare le impostazioni avanzate dei servizi delle applicazioni client, usare la finestra di dialogo **Impostazioni avanzate per i servizi** della pagina **Servizi** in **Creazione progetti**. Queste impostazioni consentono di eseguire l'override di alcuni comportamenti predefiniti di servizi di applicazioni e abilitare scenari meno comuni. Per altre informazioni, vedere [Servizi applicazioni client](/dotnet/framework/common-client-technologies/client-application-services).
 
 Per accedere alla finestra di dialogo **Impostazioni avanzate per i servizi**, selezionare un nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà** dal menu **Progetto**. Quando **Progettazione progetti** si apre, fare clic sulla scheda **Servizi** e premere il **Avanzate**. Questo pulsante rimarrà disabilitato fino all'abilitazione dei servizi delle applicazioni client.
 
