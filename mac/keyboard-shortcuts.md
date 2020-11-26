@@ -6,11 +6,11 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
 ms.openlocfilehash: 3a4b2a56e5ac6ed29289c3946a65fc57b54eaa21
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493205"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96188978"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Tasti di scelta rapida predefiniti in Visual Studio per Mac
 
@@ -32,9 +32,9 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 
 |Comandi|Tasti di scelta rapida|
 |-|-|
-|Trova riferimenti|**⇧⌘R** , **F12**|
-|Vai a dichiarazione|**⌘D** , **F12**|
-|Errore successivo|**⌥⇧⇟** , **⇧⌘F12**|
+|Trova riferimenti|**⇧⌘R**, **F12**|
+|Vai a dichiarazione|**⌘D**, **F12**|
+|Errore successivo|**⌥⇧⇟**, **⇧⌘F12**|
 |Problema successivo nel file|**⇟ ⌥**|
 |Errore precedente|**⌥ ⇧ ⇞**|
 |Problema precedente nel file|**⇞ ⌥**|
@@ -43,16 +43,16 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 
 |Comandi|Tasti di scelta rapida|
 |-|-|
-|Abilita o disabilita punto di interruzione|**⌥ ⌘/** , **⌘ F9**|
-|Sospendi|**⌥⌘P** , **⌥⌘L5**|
+|Abilita o disabilita punto di interruzione|**⌥ ⌘/**, **⌘ F9**|
+|Sospendi|**⌥⌘P**, **⌥⌘L5**|
 |Rimuovere tutti i punti di interruzione|**⇧ ⌘ F9**|
 |Esecuzione fino al cursore|**⌘ F10**|
 |Imposta istruzione successiva|**⇧ ⌘ F10**|
 |Mostra istruzione successiva|**⌥ \** _|
 |Esegui istruzione|_ * ⇧ ⌘ I * *, **⌘ F11**|
-|Esci da istruzione/routine|**⇧⌘U** , **⇧⌘F11**|
-|Esegui istruzione/routine|**⇧⌘O** , **F10**|
-|Imposta/Rimuovi punto di interruzione|**⌘\\** , **F9**|
+|Esci da istruzione/routine|**⇧⌘U**, **⇧⌘F11**|
+|Esegui istruzione/routine|**⇧⌘O**, **F10**|
+|Imposta/Rimuovi punto di interruzione|**⌘\\**, **F9**|
 |Visualizza punti di interruzione|**⌥ ⌘ B**|
 
 ## <a name="designer"></a>Designer
@@ -74,7 +74,7 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Incolla|**⌘ V**|
 |Preferenze|**⌘**|
 |Ripristinare|**⇧ ⌘ Z**|
-|Rinomina|**⌘R** , **F2**|
+|Rinominare|**⌘R**, **F2**|
 |Seleziona tutto|**⌘ A**|
 |Mostra generazione del codice|**⌘ I**|
 |Attiva/Disattiva tutte le riduzioni|**⌥ ⇧ ⌘ ↑**|
@@ -131,14 +131,14 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Comandi|Tasti di scelta rapida|
 |-|-|
 |Aggiungi file|**⌥ ⌘ A**|
-|Compilazione|**⌘K** , **⇧F6**|
-|Compila tutto|**⌘B** , **F6**|
+|Compilazione|**⌘K**, **⇧F6**|
+|Compila tutto|**⌘B**, **F6**|
 |Clean|**⇧ ⌘ K**|
 |Ricompilazione|**⌃ ⌘ K**|
 |Ricompila tutto|**⌃ ⌘ B**|
-|Avvia debug|**⌘ ⏎** , **F5**|
-|Avvia senza eseguire debug|**⌥ ⌘ ⏎** , **⌃ F5**|
-|Interrompere|**⇧⌘⏎** , **⇧F5**|
+|Avvia debug|**⌘ ⏎**, **F5**|
+|Avvia senza eseguire debug|**⌥ ⌘ ⏎**, **⌃ F5**|
+|Interrompere|**⇧⌘⏎**, **⇧F5**|
 
 ## <a name="refactoring"></a>Refactoring
 
@@ -153,9 +153,9 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |-|-|
 |Comando|**⇧ ⌘ P**|
 |Cerca nei file|**⇧ ⌘ F**|
-|Trova successivo|**⌘G** , **F3**|
-|Trova stringa successiva simile alla selezione|**⌘E** , **⌘F3**|
-|Trova precedente|**⇧ ⌘ G** , **⇧ F3**|
+|Trova successivo|**⌘G**, **F3**|
+|Trova stringa successiva simile alla selezione|**⌘E**, **⌘F3**|
+|Trova precedente|**⇧ ⌘ G**, **⇧ F3**|
 |Trova stringa precedente simile alla selezione|**⇧ ⌘ F3**|
 |Find|**⌘ F**|
 |Vai al file|**⇧ ⌘ D**|
@@ -180,10 +180,10 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Abbreviazione dinamica|**⌃/**|
 |Espandere la selezione|**⌥ ⇧ ↓**|
 |Espandere la selezione|**⌥ ⇧ ↑**|
-|Espandi selezione alla fine del documento|**⇧ ⌘ ↓** , **⇧ ⌘ ↘**|
-|Espandi selezione all'inizio del documento|**⇧ ⌘ ↑** , **⇧ ⌘ ↖**|
-|Espandi selezione alla fine della riga|**⇧ ↘** , **⇧ ⌘ →**|
-|Espandi selezione all'inizio della riga|**⇧ ↖** , **⇧ ⌘ ←**|
+|Espandi selezione alla fine del documento|**⇧ ⌘ ↓**, **⇧ ⌘ ↘**|
+|Espandi selezione all'inizio del documento|**⇧ ⌘ ↑**, **⇧ ⌘ ↖**|
+|Espandi selezione alla fine della riga|**⇧ ↘**, **⇧ ⌘ →**|
+|Espandi selezione all'inizio della riga|**⇧ ↖**, **⇧ ⌘ ←**|
 |Espandi selezione alla riga successiva|**⇧ ↓**|
 |Espandi selezione alla parola successiva|**⌥ ⇧ →**|
 |Espandi selezione a pagina verso l'alto|**⇟ ⇧**|
@@ -196,9 +196,9 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Vai a sinistra di un carattere|**⌃ B**|
 |Vai a destra di un carattere|**⌃ F**|
 |Vai all'inizio del documento|**⌘ ↑**|
-|Vai all'inizio della riga|**⌘←** , **⌃A**|
+|Vai all'inizio della riga|**⌘←**, **⌃A**|
 |Vai alla fine del documento|**⌘ ↓**|
-|Vai alla fine della riga|**⌘ →** , **⌃ E**|
+|Vai alla fine della riga|**⌘ →**, **⌃ E**|
 |Vai alla parentesi graffa corrispondente|**⇧ ⌘\\**|
 |Vai a riga successiva|**⌃ N**|
 |Vai a parola successiva|**⌥ →**|
@@ -216,7 +216,7 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Trasponi caratteri|**⌃ T**|
 |Wrapping con &lt;div&gt;|**⌥ ⇧ W**|
 
-## <a name="view"></a>Visualizza
+## <a name="view"></a>Visualizzazione
 
 |Comandi|Tasti di scelta rapida|
 |-|-|
@@ -229,11 +229,11 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Posizione successiva|**⌃ ⌘ →**|
 |Dimensioni normali|**⌘ 0**|
 |Una colonna editor|**⌥ ⌘ 1**|
-|Mostra successivo|**⌥⌘↓** , **F8**|
-|Mostra precedente|**⌥ ⌘ ↑** , **⇧ F8**|
+|Mostra successivo|**⌥⌘↓**, **F8**|
+|Mostra precedente|**⌥ ⌘ ↑**, **⇧ F8**|
 |Due colonne editor|**⌥ ⌘ 2**|
-|Zoom avanti|**⌘ +** , **⌘ =**|
-|Zoom indietro|**⌘-** , **⌘ _**|
+|Zoom avanti|**⌘ +**, **⌘ =**|
+|Zoom indietro|**⌘-**, **⌘ _**|
 
 ## <a name="window"></a>Finestra
 
@@ -251,8 +251,8 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 |Nascondi altri|**⌥ ⌘ H**|
 |Nascondi Visual Studio|**⌘ H**|
 |Riduci|**⌘ M**|
-|Documento successivo|**⌘}** , **⌘ F6**|
-|Documento precedente|**⌘{** , **⇧⌘F6**|
+|Documento successivo|**⌘}**, **⌘ F6**|
+|Documento precedente|**⌘{**, **⇧⌘F6**|
 |Passa al documento successivo|**⌃⇥**|
 |Passa alla finestra degli strumenti successiva|**⌃ ⌥ ⇥**|
 |Torna al documento precedente|**⌃ ⇧ ⇥**|
@@ -262,15 +262,15 @@ Sono stati compilati i tasti di scelta rapida più usati e più utili in un file
 
 |Simbolo|Chiave|
 |-|-|
-|⌘|**Comando** ( **Cmd** )|
-|⌥|**Opzione** ( **Alt** )|
+|⌘|**Comando** (**Cmd**)|
+|⌥|**Opzione** (**Alt**)|
 |⇧|**MAIUSC**|
-|⌃|**Control** ( **Ctrl** )
-|⇞|**Pagina precedente** ( **Pg Up** )|
-|⇟|**Pagina successiva** ( **Pg Dn** )|
-|⌫|**Cancella** ( **Backspace** )|
+|⌃|**Control** (**Ctrl**)
+|⇞|**Pagina precedente** (**Pg Up**)|
+|⇟|**Pagina successiva** (**Pg Dn**)|
+|⌫|**Cancella** (**Backspace**)|
 |⌦|**Cancella avanti**|
-|⏎|**Return**|
+|⏎|**Ritorno**|
 |←→↑↓|**Tasti di direzione**|
 |↖|**Home**|
 |↘|**Fine**|
