@@ -1,5 +1,7 @@
 ---
 title: Authoring. File vsct | Microsoft Docs
+description: Informazioni su come creare file con estensione vsct che aggiungono voci di menu, barre degli strumenti e altri elementi dell'interfaccia utente a Visual Studio Integrated Development Environment (IDE).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54e67a28d59cb739abbeab188ff1f100751f2aa8
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: e0aeb601449ffcc47b7f7786825ee222b8b6ac5b
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413910"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190083"
 ---
 # <a name="author-vsct-files"></a>Crea file con estensione vsct
 Questo documento illustra come creare un file con *estensione vsct* per aggiungere voci di menu, barre degli strumenti e altri elementi dell'interfaccia utente a Visual Studio Integrated Development Environment (IDE). Usare questi passaggi quando si aggiungono elementi dell'interfaccia utente a un pacchetto di Visual Studio (VSPackage) che non dispone già di un file con *estensione vsct* .
@@ -51,9 +53,9 @@ Questo documento illustra come creare un file con *estensione vsct* per aggiunge
 
 1. Nella parte superiore dell' `CommandTable` elemento aggiungere un `Extern` elemento per ogni file esterno a cui fare riferimento e impostare l' `href` attributo sul nome del file. Per accedere alle risorse di Visual Studio, è possibile fare riferimento ai file di intestazione seguenti:
 
-   - *Stdidcmd. h* : definisce gli ID per tutti i comandi esposti da Visual Studio.
+   - *Stdidcmd. h*: definisce gli ID per tutti i comandi esposti da Visual Studio.
 
-   - *Vsshlids. h* : contiene gli ID comando per i menu di Visual Studio.
+   - *Vsshlids. h*: contiene gli ID comando per i menu di Visual Studio.
 
 2. Se il pacchetto chiama qualsiasi comando definito da Visual Studio o da altri pacchetti, aggiungere un `UsedCommands` elemento dopo l' `Commands` elemento. Popolare questo elemento con un elemento [UsedCommand](../../extensibility/usedcommand-element.md) per ogni comando chiamato che non fa parte del pacchetto. Impostare gli `guid` `id` attributi e degli `UsedCommand` elementi sui valori GUID e ID dei comandi da chiamare.
 

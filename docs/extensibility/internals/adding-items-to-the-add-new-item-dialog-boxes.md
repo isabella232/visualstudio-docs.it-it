@@ -1,5 +1,7 @@
 ---
 title: Aggiunta di elementi alle finestre di dialogo Aggiungi nuovo elemento | Microsoft Docs
+description: Informazioni su come aggiungere elementi alla finestra di dialogo Aggiungi nuovo elemento in Visual Studio, in modo che sia possibile visualizzare i modelli e gli elementi di progetto da usare nei progetti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7f9e5c792785a23ad1674a50abeb4eb6d3cba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99377db0e835de8d84485d0254d84892a360f5f0
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710222"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190161"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Aggiungi elementi alla finestra di dialogo Aggiungi nuovo elemento
 Il processo per l'aggiunta di elementi alla finestra di dialogo **Aggiungi nuovo elemento** inizia con le chiavi del registro di sistema. Come illustrato nelle voci del registro di sistema seguenti, la sezione **AddItemTemplates** contiene il percorso e il nome della directory in cui vengono inseriti gli elementi resi disponibili nella finestra di dialogo **Aggiungi nuovo elemento** .
@@ -23,7 +25,7 @@ Il processo per l'aggiunta di elementi alla finestra di dialogo **Aggiungi nuovo
 > [!NOTE]
 > La tabella che segue immediatamente il segmento di codice contiene informazioni aggiuntive sulla voce del registro di sistema.
 
- Questa sezione si trova in **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\14.0exp\projects**.
+ Questa sezione si trova in **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**.
 
  Il primo GUID è il CLSID per i progetti di questo tipo. il secondo GUID indica il tipo di progetto registrato per i modelli Aggiungi elementi:
 
@@ -46,7 +48,7 @@ Il processo per l'aggiunta di elementi alla finestra di dialogo **Aggiungi nuovo
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- La directory elencata per **TemplatesDir**, che è *% TEMPLATE_PATH% \\ &lt; SomeProjectItems &gt; *, è il nodo sul lato sinistro dell'albero della finestra di dialogo **Aggiungi nuovo elemento** . Gli elementi aggiuntivi nell'albero sono basati sulla sottodirectory all'interno della directory radice. I file disponibili per l'aggiunta al progetto sono gli elementi nel riquadro destro della finestra di dialogo **Aggiungi nuovo elemento** .
+ La directory elencata per **TemplatesDir**, che è *% TEMPLATE_PATH% \\ &lt; SomeProjectItems &gt;*, è il nodo sul lato sinistro dell'albero della finestra di dialogo **Aggiungi nuovo elemento** . Gli elementi aggiuntivi nell'albero sono basati sulla sottodirectory all'interno della directory radice. I file disponibili per l'aggiunta al progetto sono gli elementi nel riquadro destro della finestra di dialogo **Aggiungi nuovo elemento** .
 
  In genere, questa cartella conterrà i file modello per il progetto, ad esempio un file HTML o *cpp* del modello e qualsiasi file con *estensione vsz* per l'avvio delle procedure guidate. Per controllare la modalità di visualizzazione degli elementi, è anche possibile includere file con *estensione VSDIR* per la localizzazione di nomi di directory e icone. La stringa localizzata è la didascalia che viene visualizzata nella finestra di dialogo che rappresenta questo nodo nell'albero della finestra di dialogo **Aggiungi nuovo elemento** .
 

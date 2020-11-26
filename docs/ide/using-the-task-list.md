@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d19794b4fce3e4a1388f864cecf408e0f7e9c53
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959802"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189836"
 ---
 # <a name="use-the-task-list"></a>Usare l'elenco attività
 

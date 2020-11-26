@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a70199f6a46fc5fd78c9b40dc5c68ed1e1c85a56
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352362"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189862"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Suggerimenti sulle prestazioni di Visual Studio
 
@@ -39,11 +39,11 @@ Tramite una barra gialla, Visual Studio indica se il ripristino automatico dei d
 
 Se si disabilita il ripristino automatico dei file, è possibile accedere velocemente ai file da aprire usando il comando [Vai a](../ide/go-to.md):
 
-- Per le funzionalità generali di **Vai a**, selezionare **Modifica** > **Vai a** > **Vai a tutti** oppure premere ** CTRL**+**T**.
+- Per le funzionalità generali di **Vai a**, selezionare **Modifica** > **Vai a** > **Vai a tutti** oppure premere **CTRL**+**T**.
 
-- Passare all'ultimo percorso di modifica in una soluzione usando **modifica**  >  **Vai a**  >  **Vai a percorso Ultima modifica**o premendo **CTRL** + **MAIUSC**indietro + **Backspace**.
+- Passare all'ultimo percorso di modifica in una soluzione usando **modifica**  >  **Vai a**  >  **Vai a percorso Ultima modifica** o premendo **CTRL** + **MAIUSC** indietro + **Backspace**.
 
-- Usare **Go To Recent File** (Vai a file recenti) per visualizzare un elenco di file visitati di recente in una soluzione. Selezionare **modifica**  >  **Vai a**  >  **Vai a file recente**oppure premere **CTRL** + **1**, **CTRL** + **R**.
+- Usare **Go To Recent File** (Vai a file recenti) per visualizzare un elenco di file visitati di recente in una soluzione. Selezionare **modifica**  >  **Vai a**  >  **Vai a file recente** oppure premere **CTRL** + **1**, **CTRL** + **R**.
 
 ## <a name="configure-debugging-options"></a>Configurare le opzioni di debug
 
@@ -94,7 +94,7 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
     Visual Studio esegue un'attività **Trova tutti i riferimenti** su ogni metodo quando viene visualizzato. CodeLens offre funzionalità come la visualizzazione inline del numero di riferimenti. Il lavoro viene eseguito in un processo separato, ad esempio *ServiceHub.RoslynCodeAnalysisService32*. In soluzioni di grandi dimensioni o in sistemi con risorse limitate, questa funzionalità può influenzare notevolmente le prestazioni. Se si riscontra un elevato utilizzo della CPU in questo processo o se si verificano problemi di memoria, ad esempio durante il caricamento di una soluzione di grandi dimensioni in un computer da 4 GB, è possibile disabilitare la funzionalità CodeLens per liberare le risorse.
 
-    Per disabilitare **CodeLens**, scegliere **Strumenti** > **Opzioni** > ** Editor di testo** > **Tutti i linguaggi** > **CodeLens** e deselezionare la funzionalità.
+    Per disabilitare **CodeLens**, scegliere **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi** > **CodeLens** e deselezionare la funzionalità.
 
     > [!NOTE]
     > CodeLens è disponibile nelle edizioni Professional ed Enterprise di Visual Studio.
@@ -121,7 +121,7 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
     [**Modalità mappa**](how-to-track-your-code-by-customizing-the-scrollbar.md#display-modes) Visualizza le righe di codice, in miniatura, sulla barra di scorrimento. La modalità mappa è abilitata per impostazione predefinita.
 
-    Per disabilitare la modalità mappa, passare a **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **tutti i linguaggi**  >  **barre di scorrimento**e nella sezione **comportamento** deselezionare l'opzione **Usa modalità mappa per barra di scorrimento verticale** .
+    Per disabilitare la modalità mappa, passare a **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **tutti i linguaggi**  >  **barre di scorrimento** e nella sezione **comportamento** deselezionare l'opzione **Usa modalità mappa per barra di scorrimento verticale** .
 
 - **Disabilitare il ritorno a capo automatico**
 
@@ -129,13 +129,13 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
     Per disabilitare il ritorno a capo automatico per un progetto su cui si sta lavorando, vedere **modificare**  >  **Advanced**  >  **Word Wrap**. È possibile abilitare o disabilitare questa impostazione usando gli stessi comandi di menu.
 
-    Per disabilitare il ritorno a capo automatico per tutti i progetti, passare a **strumenti**  >  **Opzioni**  >  **generale**  >  **editor di testo**  >  **tutti i linguaggi**  >  **generale**e nella sezione **Impostazioni** deselezionare l'opzione a **capo automatico** .
+    Per disabilitare il ritorno a capo automatico per tutti i progetti, passare a **strumenti**  >  **Opzioni**  >  **generale**  >  **editor di testo**  >  **tutti i linguaggi**  >  **generale** e nella sezione **Impostazioni** deselezionare l'opzione a **capo automatico** .
 
 - **Disabilitare la finestra di progettazione XAML**
 
     La finestra di progettazione XAML è abilitata per impostazione predefinita, ma usa risorse solo se si apre un file con estensione *xaml*. Se si utilizzano file XAML ma non si intende usare la funzionalità della finestra di progettazione, disabilitare questa funzionalità per liberare memoria.
 
-    Per disabilitare finestra di progettazione XAML, passare a **strumenti**  >  **Opzioni**  >  **finestra di progettazione XAML**  >  **Abilita finestra di progettazione XAML**e deselezionare l'opzione.
+    Per disabilitare finestra di progettazione XAML, passare a **strumenti**  >  **Opzioni**  >  **finestra di progettazione XAML**  >  **Abilita finestra di progettazione XAML** e deselezionare l'opzione.
 
 - **Rimuovere i carichi di lavoro**
 
@@ -143,7 +143,7 @@ Per informazioni sulle prestazioni di .NET Compiler Platform ("Roslyn"), vedere 
 
 ## <a name="force-a-garbage-collection"></a>Imporre una Garbage Collection
 
-CLR usa una sistema di gestione della memoria di Garbage Collection. In questo sistema, talvolta viene utilizzata memoria da oggetti non più necessari. Questo stato è temporaneo, il Garbage Collector libera questa memoria in base alla propria euristica di prestazioni e uso delle risorse. È possibile imporre a CLR la raccolta della memoria inutilizzata usando un tasto di scelta rapida in Visual Studio. Se in presenza di una quantità elevata di garbage in attesa di raccolta si forza una Garbage Collection, si noterà una riduzione nel consumo di memoria da parte del processo *devenv.exe *in **Gestione attività**. È raramente è necessario utilizzare questo metodo. Tuttavia, dopo il completamento di un'operazione dispendiosa (ad esempio una compilazione completa, una sessione di debug o un evento di apertura della soluzione), può consentire di determinare la quantità di memoria effettivamente usata dal processo. Poiché Visual Studio è misto (gestito e nativo), è talvolta possibile che allocatore nativo e Garbage Collector si contengono le risorse di memoria. In condizioni di utilizzo elevato della memoria, può essere utile per imporre l'esecuzione del Garbage Collector.
+CLR usa una sistema di gestione della memoria di Garbage Collection. In questo sistema, talvolta viene utilizzata memoria da oggetti non più necessari. Questo stato è temporaneo, il Garbage Collector libera questa memoria in base alla propria euristica di prestazioni e uso delle risorse. È possibile imporre a CLR la raccolta della memoria inutilizzata usando un tasto di scelta rapida in Visual Studio. Se in presenza di una quantità elevata di garbage in attesa di raccolta si forza una Garbage Collection, si noterà una riduzione nel consumo di memoria da parte del processo *devenv.exe* in **Gestione attività**. È raramente è necessario utilizzare questo metodo. Tuttavia, dopo il completamento di un'operazione dispendiosa (ad esempio una compilazione completa, una sessione di debug o un evento di apertura della soluzione), può consentire di determinare la quantità di memoria effettivamente usata dal processo. Poiché Visual Studio è misto (gestito e nativo), è talvolta possibile che allocatore nativo e Garbage Collector si contengono le risorse di memoria. In condizioni di utilizzo elevato della memoria, può essere utile per imporre l'esecuzione del Garbage Collector.
 
 Per forzare un Garbage Collection, usare il tasto di scelta rapida: **CTRL** + **ALT** + **MAIUSC** + **F12**, **CTRL** + **ALT** + **MAIUSC** + **F12** (premere due volte).
 

@@ -12,11 +12,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2019
 ms.openlocfilehash: c3a2e14236c2d24bc9650fab81150cc295826844
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006254"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189927"
 ---
 # <a name="how-to-use-visual-studio-with-a-codespace-preview"></a>Come usare Visual Studio con una codespace (anteprima)
 
@@ -32,7 +32,7 @@ Visual Studio offre un supporto eccezionale per lo sviluppo in codespaces GitHub
 
 La connessione a spazi dei caratteri di GitHub con Visual Studio 2019 Preview non è abilitata per impostazione predefinita, pertanto è necessario abilitare prima l'opzione funzionalità di anteprima.
 
-1. In Visual Studio 2019 Preview usare la **Tools**  >  voce di menu strumenti**Opzioni** per aprire la finestra di dialogo Opzioni.
+1. In Visual Studio 2019 Preview usare la **Tools**  >  voce di menu strumenti **Opzioni** per aprire la finestra di dialogo Opzioni.
 
 2. In **Environment (ambiente**) selezionare **funzionalità di anteprima** e selezionare la funzionalità **Connect to GitHub codespaces** Preview.
 
@@ -86,7 +86,7 @@ Dopo aver creato l'area di lavoro, è possibile aprire il codespace direttamente
 
    ![Finestra di avvio di Visual Studio con Connetti a uno spazio dei menu](media/visual-studio-start-window.png)
 
-   Se si è già in Visual Studio, è possibile **usare la**  >  voce**di menu Connetti a una voce di** menu.
+   Se si è già in Visual Studio, è possibile **usare la**  >  voce **di menu Connetti a una voce di** menu.
 
    ![File di Visual Studio connessione a una voce di menu codespace](media/visual-studio-file-connect-to-codespace.png)
 

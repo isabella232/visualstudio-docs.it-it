@@ -7,11 +7,11 @@ ms.date: 11/09/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
 ms.openlocfilehash: a2caadd454564b389f48987e69e1bc08475affea
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493270"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190187"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Presentazione di Visual Studio 2019 per Mac
 
@@ -74,7 +74,7 @@ I riferimenti ad assembly per ogni progetto sono disponibili nella cartella Rife
 
 ![Cartella riferimenti nella finestra della soluzione](media/ide-tour-image19.png)
 
-È possibile aggiungere altri riferimenti usando la finestra di dialogo **Modifica riferimenti** , visualizzata facendo doppio clic sulla cartella Riferimenti oppure scegliendo **Modifica riferimenti** tra le azioni del menu di scelta rapida:
+È possibile aggiungere altri riferimenti usando la finestra di dialogo **Modifica riferimenti**, visualizzata facendo doppio clic sulla cartella Riferimenti oppure scegliendo **Modifica riferimenti** tra le azioni del menu di scelta rapida:
 
 ![Finestra di dialogo Modifica riferimenti](media/ide-tour-image20.png)
 
@@ -86,7 +86,7 @@ Tutte le dipendenze esterne usate nell'app vengono archiviate nella cartella dip
 
 NuGet è il più diffuso strumento di gestione pacchetti per lo sviluppo .NET. Con il supporto di NuGet di Visual Studio è possibile cercare e aggiungere facilmente pacchetti al progetto dell'applicazione.
 
-Per aggiungere una dipendenza all'applicazione, fare clic con il pulsante destro del mouse sulla cartella Dipendenze/Pacchetti e scegliere **Aggiungi pacchetti** :
+Per aggiungere una dipendenza all'applicazione, fare clic con il pulsante destro del mouse sulla cartella Dipendenze/Pacchetti e scegliere **Aggiungi pacchetti**:
 
 ![Aggiungere un pacchetto NuGet](media/ide-tour-image21.png)
 

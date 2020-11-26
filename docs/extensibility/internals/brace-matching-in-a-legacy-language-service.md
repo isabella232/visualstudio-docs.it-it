@@ -1,5 +1,7 @@
 ---
 title: Corrispondenza tra parentesi graffe in un servizio di linguaggio legacy | Microsoft Docs
+description: Informazioni sulla corrispondenza tra parentesi graffe in un servizio di linguaggio legacy, che consente di tenere traccia degli elementi del linguaggio che devono essere eseguiti insieme, ad esempio le parentesi e le parentesi graffe.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0081be3e3ab5a53f7d85f77475d4288aa5c87092
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d9f93f0081d45e986ab6845cdaee53209b84e13
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709812"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190005"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Corrispondenza tra parentesi graffe in un servizio di linguaggio legacy
 La corrispondenza tra parentesi graffe consente allo sviluppatore di tenere traccia degli elementi del linguaggio che devono essere eseguiti insieme, ad esempio tra parentesi e parentesi graffe. Quando uno sviluppatore immette una parentesi graffa di chiusura, viene evidenziata la parentesi graffa di apertura.
@@ -38,7 +40,7 @@ La corrispondenza tra parentesi graffe consente allo sviluppatore di tenere trac
  Per una descrizione completa del modo in cui la digitazione di una parentesi graffa attiva l'evidenziazione della parentesi graffa, vedere la sezione *esempio di operazione di analisi* nell'articolo [parser e scanner del servizio di linguaggio legacy](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).
 
 ## <a name="enable-support-for-brace-matching"></a>Abilita il supporto per la corrispondenza tra parentesi graffe
- L' <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attributo può impostare le voci del registro di sistema **MatchBraces**, **MatchBracesAtCaret**e **ShowMatchingBrace** che impostano le proprietà corrispondenti della <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Le proprietà delle preferenze della lingua possono essere impostate anche dall'utente.
+ L' <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attributo può impostare le voci del registro di sistema **MatchBraces**, **MatchBracesAtCaret** e **ShowMatchingBrace** che impostano le proprietà corrispondenti della <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Le proprietà delle preferenze della lingua possono essere impostate anche dall'utente.
 
 |Voce del Registro di sistema|Proprietà|Descrizione|
 |--------------------|--------------|-----------------|

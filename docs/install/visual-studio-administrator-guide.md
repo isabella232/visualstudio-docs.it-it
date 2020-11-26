@@ -18,11 +18,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: ea12076e41185e9de4ee10afe3056ff97403d6ea
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352270"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190207"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guida di Visual Studio Administrator
 
@@ -40,11 +40,11 @@ Prima di distribuire Visual Studio all'interno dell'organizzazione, è necessari
 
 * Definire le esigenze di manutenzione.
 
-  Se l'azienda ha l'esigenza di mantenere un set di funzionalità più a lungo ma desidera comunque ottenere aggiornamenti di manutenzione regolari, prevedere di usare una baseline di manutenzione. Per ulteriori informazioni, vedere la sezione ***Opzioni di supporto per clienti aziendali e professionisti*** della pagina ciclo di vita del [prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , nonché la pagina [Aggiorna Visual Studio in una pagina di base di manutenzione](update-servicing-baseline.md) .
+  Se l'azienda ha l'esigenza di mantenere un set di funzionalità più a lungo ma desidera comunque ottenere aggiornamenti di manutenzione regolari, prevedere di usare una baseline di manutenzione. Per ulteriori informazioni, vedere la sezione ***Opzioni di supporto per i clienti Enterprise e Professional** _ della pagina ciclo di vita del [prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , nonché la pagina [Aggiorna Visual Studio in una pagina di base di manutenzione](update-servicing-baseline.md) .
 
   Se si prevede di applicare gli aggiornamenti di manutenzione insieme agli aggiornamenti delle funzionalità cumulativi, è possibile scegliere gli elementi più recenti.
 
-* Scegliere il modello di aggiornamento.
+_ Scegliere il modello di aggiornamento.
 
   Decidere da dove i singoli computer client devono ottenere gli aggiornamenti. In particolare, decidere se procurarsi gli aggiornamenti da Internet o da una condivisione locale a livello aziendale. Se si sceglie di usare una condivisione locale, decidere se i singoli utenti possono aggiornare i propri client o se un amministratore si farà carico di aggiornare i client a livello di codice.
 
@@ -66,11 +66,11 @@ Prima di distribuire Visual Studio all'interno dell'organizzazione, è necessari
 
 * Definire le esigenze di manutenzione.
 
-  Se l'azienda ha l'esigenza di mantenere un set di funzionalità più a lungo ma desidera comunque ottenere aggiornamenti di manutenzione regolari, prevedere di usare una baseline di manutenzione. Per ulteriori informazioni, vedere la sezione ***supporto per le versioni precedenti di Visual Studio*** della pagina ciclo di vita del [prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) , nonché la pagina [Aggiorna Visual Studio in una pagina di base di manutenzione](update-servicing-baseline.md) .
+  Se l'azienda ha l'esigenza di mantenere un set di funzionalità più a lungo ma desidera comunque ottenere aggiornamenti di manutenzione regolari, prevedere di usare una baseline di manutenzione. Per ulteriori informazioni, vedere la sezione ***supporto per le versioni precedenti di Visual Studio** _ della pagina ciclo di vita del [prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) , nonché l' [aggiornamento di Visual Studio in una](update-servicing-baseline.md) pagina di base di manutenzione.
 
   Se si prevede di applicare gli aggiornamenti di manutenzione insieme agli aggiornamenti delle funzionalità cumulativi, è possibile scegliere gli elementi più recenti.
 
-* Scegliere il modello di aggiornamento.
+_ Scegliere il modello di aggiornamento.
 
   Decidere da dove i singoli computer client devono ottenere gli aggiornamenti. In particolare, decidere se procurarsi gli aggiornamenti da Internet o da una condivisione locale a livello aziendale. Se si sceglie di usare una condivisione locale, decidere se i singoli utenti possono aggiornare i propri client o se un amministratore si farà carico di aggiornare i client a livello di codice.
 

@@ -1,5 +1,7 @@
 ---
 title: Formattazione automatica in un servizio di linguaggio legacy | Microsoft Docs
+description: Informazioni sulla formattazione automatica in un servizio di linguaggio legacy, che inserisce automaticamente un frammento di codice quando si inizia a digitare un costrutto di codice noto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a11e9c1fdef60e71f46cee9986d925e876dcac35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 651cecb20604069c6e8ccc5a5c7b983ab43d7384
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709985"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190057"
 ---
 # <a name="automatic-formatting-in-a-legacy-language-service"></a>Formattazione automatica in un servizio di linguaggio legacy
 Con la formattazione automatica, un servizio di linguaggio inserisce automaticamente un frammento di codice quando un utente inizia a digitare un costrutto di codice noto.

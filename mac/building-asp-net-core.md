@@ -7,11 +7,11 @@ ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
 ms.topic: how-to
 ms.openlocfilehash: 22dfa4a33005afd64be54828f3b49c45244779d2
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493504"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189875"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Creazione di applicazioni ASP.NET Core in Visual Studio per Mac
 
@@ -58,7 +58,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![Screenshot del progetto di soluzione con una classe C# denominata HomeController selezionata.](media/netcore-image4.png)
 
-3. La convenzione di classificazione **HomeController** gestisce tutte le richieste in ingresso che iniziano con **/Home**. Il metodo **Index** gestisce le richieste alla radice della directory, come `http://site.com/Home`, e altri metodi gestiscono le richieste al percorso denominato in base alla convenzione. Ad esempio, **About ()** gestisce le richieste a `http://site.com/Home/About`. Naturalmente, tutto questo è configurabile. Un concetto importante da tenere presente è dato dal fatto che in un nuovo progetto **HomeController** è il controller predefinito e pertanto le richieste inviate alla radice del sito (`http://site.com`) passano attraverso il metodo **Index()** di **HomeController** , proprio come le richieste a `http://site.com/Home` o `http://site.com/Home/Index`.
+3. La convenzione di classificazione **HomeController** gestisce tutte le richieste in ingresso che iniziano con **/Home**. Il metodo **Index** gestisce le richieste alla radice della directory, come `http://site.com/Home`, e altri metodi gestiscono le richieste al percorso denominato in base alla convenzione. Ad esempio, **About ()** gestisce le richieste a `http://site.com/Home/About`. Naturalmente, tutto questo è configurabile. Un concetto importante da tenere presente è dato dal fatto che in un nuovo progetto **HomeController** è il controller predefinito e pertanto le richieste inviate alla radice del sito (`http://site.com`) passano attraverso il metodo **Index()** di **HomeController**, proprio come le richieste a `http://site.com/Home` o `http://site.com/Home/Index`.
 
     ![Screenshot di una classe C# denominata HomeController.](media/netcore-image5.png)
 
@@ -84,11 +84,11 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![Screenshot della soluzione con il file di origine C# denominato programma selezionato.](media/netcore-image10.png)
 
-2. Anche se sono presenti solo due righe di codice, la loro importanza è fondamentale. Si esamineranno ora in dettaglio queste righe. Prima di tutto, viene creato un nuovo **WebHostBuilder**. Le app ASP.NET Core richiedono un host per l'esecuzione. L'host deve implementare l'interfaccia **IWebHost** , che espone raccolte di funzionalità e servizi, e un metodo **Start**. L'host viene in genere creato tramite un'istanza di **WebHostBuilder** , che crea e restituisce un'istanza di **WebHost**. L'istanza di **WebHost** fa riferimento al server che gestirà le richieste.
+2. Anche se sono presenti solo due righe di codice, la loro importanza è fondamentale. Si esamineranno ora in dettaglio queste righe. Prima di tutto, viene creato un nuovo **WebHostBuilder**. Le app ASP.NET Core richiedono un host per l'esecuzione. L'host deve implementare l'interfaccia **IWebHost**, che espone raccolte di funzionalità e servizi, e un metodo **Start**. L'host viene in genere creato tramite un'istanza di **WebHostBuilder**, che crea e restituisce un'istanza di **WebHost**. L'istanza di **WebHost** fa riferimento al server che gestirà le richieste.
 
     ![Screenshot del metodo Main C# con un'istruzione che Inizializza una variabile denominata host con il tipo WebHostBuilder.](media/netcore-image11.png)
 
-3. Mentre **WebHostBuilder** è responsabile della creazione dell'host che bootstrap il server per l'app, è necessario fornire un server che implementi **`IServer`** . Per impostazione predefinita viene usato **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)** , un server Web multipiattaforma per ASP.NET Core basato su **libuv** , una libreria di I/O asincrona multipiattaforma.
+3. Mentre **WebHostBuilder** è responsabile della creazione dell'host che bootstrap il server per l'app, è necessario fornire un server che implementi **`IServer`** . Per impostazione predefinita viene usato **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)**, un server Web multipiattaforma per ASP.NET Core basato su **libuv**, una libreria di I/O asincrona multipiattaforma.
 
     ![Screenshot del metodo principale C# che evidenzia la variabile host che imposta il server con il metodo UseKestrel.](media/netcore-image12.png)
 
@@ -96,7 +96,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
     ![Screenshot del metodo principale C# che evidenzia la variabile host che imposta la radice del contenuto per il server con il metodo UseContentRoot.](media/netcore-image13.png)
 
-5. Se l'app deve interagire con il server Web IIS (Internet Information Services), come parte del codice per la compilazione dell'host deve essere chiamato il metodo **UseIISIntegration**. A differenza di **UseKestrel** , questo metodo non configura un server. Per usare IIS con ASP.NET Core, è necessario specificare sia **UseKestrel** che **UseIISIntegration**. **Kestrel** è stato progettato per essere eseguito dietro un proxy e non deve essere distribuito con accesso diretto a Internet. **UseIISIntegration** specifica IIS come server proxy inverso, ma è rilevante solo quando viene eseguito su computer in cui è installato IIS. Se si distribuisce l'applicazione in Windows, lasciarlo lì. Negli altri casi non crea comunque problemi.
+5. Se l'app deve interagire con il server Web IIS (Internet Information Services), come parte del codice per la compilazione dell'host deve essere chiamato il metodo **UseIISIntegration**. A differenza di **UseKestrel**, questo metodo non configura un server. Per usare IIS con ASP.NET Core, è necessario specificare sia **UseKestrel** che **UseIISIntegration**. **Kestrel** è stato progettato per essere eseguito dietro un proxy e non deve essere distribuito con accesso diretto a Internet. **UseIISIntegration** specifica IIS come server proxy inverso, ma è rilevante solo quando viene eseguito su computer in cui è installato IIS. Se si distribuisce l'applicazione in Windows, lasciarlo lì. Negli altri casi non crea comunque problemi.
 
     ![Screenshot del metodo principale C# che evidenzia la variabile host che imposta il server proxy inverso con il metodo UseIISIntegration.](media/netcore-image14.png)
 
@@ -200,7 +200,7 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 ## <a name="task-6-inserting-application-middleware"></a>Attività 6: inserimento del middleware dell'applicazione
 
-1. Individuare il metodo **Configure** nella classe **Startup**. In questa classe viene configurato tutto il middleware in modo che possa essere inserito nella pipeline HTTP e usato per elaborare ogni richiesta inviata al server. Anche se questo metodo viene chiamato una sola volta, il contenuto dei metodi, ad esempio **UseStaticFiles** , può essere eseguito per ogni richiesta.
+1. Individuare il metodo **Configure** nella classe **Startup**. In questa classe viene configurato tutto il middleware in modo che possa essere inserito nella pipeline HTTP e usato per elaborare ogni richiesta inviata al server. Anche se questo metodo viene chiamato una sola volta, il contenuto dei metodi, ad esempio **UseStaticFiles**, può essere eseguito per ogni richiesta.
 
     ![Screenshot che illustra il metodo configure nella classe Startup.](media/netcore-image36.png)
 
@@ -242,6 +242,6 @@ Questo lab è destinato agli sviluppatori che hanno familiarità con C#, anche s
 
 12. Dopo aver letto le informazioni desiderate, chiudere la finestra del browser e la console.
 
-## <a name="summary"></a>Riepilogo
+## <a name="summary"></a>Summary
 
 In questo lab si è appreso come iniziare a sviluppare app ASP.NET Core con Visual Studio per Mac. Se si vogliono approfondire le conoscenze sullo sviluppo di un'applicazione di database di film più completa, vedere l'esercitazione [Introduzione ad ASP.NET Core MVC](/aspnet/core/tutorials/first-mvc-app/start-mvc).

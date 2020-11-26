@@ -1,5 +1,6 @@
 ---
 title: Applicare le impostazioni tra più connessioni di progetto
+description: Informazioni su come applicare le impostazioni tra più connessioni di progetto tramite un plug-in del controllo del codice sorgente per eseguire un'operazione batch.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81448760f0417528fd630c4919ce516b32e518c8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: cd5b7af98470c1d9a82eb0504c333e74de8c004f
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034922"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190109"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Applicazione delle impostazioni tra più connessioni di progetto
 Un plug-in del controllo del codice sorgente compilato con l'API del plug-in del controllo del codice sorgente versione 1,2, può usare un'operazione batch per eseguire la stessa operazione del controllo del codice sorgente tra più progetti o più contesti di connessione. I batch possono essere usati per eliminare le finestre di dialogo ridondanti per progetto dall'esperienza utente.
@@ -35,5 +36,5 @@ Le nuove funzioni seguenti supportano l'operazione batch:
 
 La `SCCBeginBatch` funzione avvia un gruppo di operazioni del controllo del codice sorgente. La `SccEndBatch` funzione chiude il gruppo. I gruppi non possono essere annidati.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Novità dell'API del plug-in del controllo del codice sorgente versione 1,2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

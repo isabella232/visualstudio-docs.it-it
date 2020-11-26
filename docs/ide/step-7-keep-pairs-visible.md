@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e854425bab10174220188b23fb7e292371e9cb48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168723"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189342"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Passaggio 7: Mantenere le coppie visibili
 Il gioco funziona finché il giocatore sceglierà coppie di icone che non corrispondono. Si consideri però cosa dovrebbe accadere quando il giocatore sceglie una coppia esatta. Anziché far scomparire le icone attivando il timer, tramite il metodo <xref:System.Windows.Forms.Timer.Start>, il gioco deve reimpostarsi in modo da non tenere più traccia delle etichette tramite le variabili di riferimento `firstClicked` e `secondClicked`, senza reimpostare i colori delle due etichette scelte.
@@ -62,7 +62,7 @@ Il gioco funziona finché il giocatore sceglierà coppie di icone che non corris
 2. Salvare ed eseguire il programma, quindi iniziare a scegliere icone nel form. Se si sceglie una coppia che non corrisponde, l'evento Tick del timer si attiva ed entrambe le icone scompaiono. Se si sceglie una coppia corrispondente, la nuova `if` istruzione viene eseguita e l'istruzione return fa sì che il metodo ignori il codice che avvia il timer, in modo che le icone restino visibili, come illustrato nella figura seguente.
 
      ![Gioco creato in questa esercitazione](../ide/media/express_finishedgame.png)<br/>
-***Gioco di abbinamenti*** *con coppie di icone visibili*
+***Abbinamenti di gioco** _ _WITH coppie di icone visibili *
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 

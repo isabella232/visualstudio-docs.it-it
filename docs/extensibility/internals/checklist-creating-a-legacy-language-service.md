@@ -1,5 +1,7 @@
 ---
 title: 'Elenco di controllo: creazione di un servizio di linguaggio legacy | Microsoft Docs'
+description: Informazioni sui passaggi di base che è necessario eseguire per creare un servizio di linguaggio legacy per l'editor principale di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11785dab63cbb6a95ab2d34c5edbfb4525ebf34c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 905d81d49706c3ae5348d71c03189d6e036dd3e5
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709782"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189992"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Elenco di controllo: creare un servizio di linguaggio legacy
 Nell'elenco di controllo seguente vengono riepilogati i passaggi di base che è necessario eseguire per creare un servizio di linguaggio per l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editor principale. Per integrare il servizio di linguaggio in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , è necessario creare un analizzatore di espressioni di debug. Per altre informazioni, vedere [scrivere un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) nell' [estensibilità del debugger di Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).

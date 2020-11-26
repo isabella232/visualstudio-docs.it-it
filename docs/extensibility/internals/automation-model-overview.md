@@ -1,5 +1,7 @@
 ---
 title: Panoramica del modello di automazione | Microsoft Docs
+description: Informazioni sul modello di automazione di Visual Studio costituito da un set di oggetti in cui è possibile scrivere un componente aggiuntivo o un'estensione di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa06b58ccd8d4cba8e16b17bc725798ae02d7e8f
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: f88d064c551ccffe1c59e68c8472b519a58db436
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414438"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190096"
 ---
 # <a name="automation-model-overview"></a>Panoramica del modello di automazione
 Il modello di automazione è costituito da un set di oggetti in cui è possibile scrivere un componente aggiuntivo o un'estensione di Visual Studio. Un componente aggiuntivo è un'applicazione in grado di modificare l'ambiente di Visual Studio e di automatizzare le attività comuni. Un'estensione di Visual Studio può creare componenti personalizzati di Visual Studio o aggiungere alla funzionalità dei componenti standard, ad esempio l'editor di testo.
@@ -38,7 +40,7 @@ Il modello di automazione è costituito da un set di oggetti in cui è possibile
 
 - Codice
 
-- Compilare
+- Compilazione
 
 Per altre informazioni sull'automazione, vedere [automazione ed estendibilità per Visual Studio](/previous-versions/visualstudio/visual-studio-2015/extensibility/extensibility-in-visual-studio?preserve-view=true&view=vs-2015). Questo documento e i documenti a cui forniscono i collegamenti consentono di prendere decisioni in merito a come fornire l'automazione per il pacchetto VSPackage.
 

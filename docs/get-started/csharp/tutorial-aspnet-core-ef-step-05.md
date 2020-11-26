@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: fc0729eccc6f1392561959dcdac0cf13dfc8e04a
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780955"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189758"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Passaggio 5: distribuire l'app ASP.NET Core in Azure
 
@@ -101,7 +101,7 @@ Per impostazione predefinita, Azure prevede che la connessione di una nuova app 
 
 Passare al percorso */Games*. Dovrebbe essere possibile aggiungere un nuovo gioco e visualizzarlo nell'elenco. Passare quindi al percorso */swagger*. Dovrebbe essere possibile usare gli endpoint dell'API Web da questa posizione per verificare che anche l'API dell'app funzioni correttamente.
 
-La procedura è stata completata. Questa serie di esercitazioni video è ora completa.
+Congratulazioni! Questa serie di esercitazioni video è ora completa.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

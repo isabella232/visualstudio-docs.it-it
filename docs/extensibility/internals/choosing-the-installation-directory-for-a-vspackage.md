@@ -1,5 +1,7 @@
 ---
 title: Scelta della directory di installazione per un pacchetto VSPackage | Microsoft Docs
+description: Informazioni su come scegliere la directory di installazione per un pacchetto VSPackage e i relativi file di supporto, usando fattori quali, ad esempio, se sono gestiti o non gestiti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ead19e9f50201ab795e3c3f68b661037d309d98d
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: cfb7f339ca9832db8fdfea47a5bc1aa940534823
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011905"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189979"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Scegliere la directory di installazione per un pacchetto VSPackage
 Un pacchetto VSPackage e i relativi file di supporto devono trovarsi nel file system di un utente. Il percorso varia a seconda che il pacchetto VSPackage sia gestito o non gestito, lo schema di controllo delle versioni side-by-side e la scelta dell'utente.

@@ -1,5 +1,7 @@
 ---
 title: Creazione di un pacchetto di Windows Installer | Microsoft Docs
+description: Informazioni su come creare un pacchetto di Windows Installer per Visual Studio costituito da tabelle di database contenenti dati di file e del registro di sistema.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d30c0e2b3b375e6e0efedddd3a017fbfb8646a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82c96bdf8e73f7d40b41220524edef022c216f1b
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710031"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190122"
 ---
 # <a name="author-a-windows-installer-package"></a>Creazione di un pacchetto di Windows Installer
 I dati guidano il modello di Windows Installer. Anziché scrivere uno script procedurale per copiare file e scrivere voci del registro di sistema, ad esempio, è possibile creare righe e colonne in tabelle di database che contengono dati di file e registro di sistema.
