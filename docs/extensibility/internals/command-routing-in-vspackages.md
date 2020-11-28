@@ -1,5 +1,7 @@
 ---
 title: Routing di comandi nei pacchetti VSPackage | Microsoft Docs
+description: Informazioni sul routing dei comandi nei pacchetti VSPackage e sul modo in cui i comandi vengono instradati in base al contesto in cui vengono eseguiti in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 957ddcca46365a882609c15c96d666c2848ace6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8168fbe3ad5ba9b1b332aebc4675ecd8e752ee7e
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709548"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305217"
 ---
 # <a name="command-routing-in-vspackages"></a>Routing di comandi nei pacchetti VSPackage
 Un comando viene instradato in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] base al contesto in cui viene eseguito. Viene indirizzato dal contesto iniziale verso il contesto globale.

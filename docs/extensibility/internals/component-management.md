@@ -1,5 +1,7 @@
 ---
 title: Gestione dei componenti | Microsoft Docs
+description: Informazioni su come gestire i componenti di Windows Installer quando si crea un programma di installazione VSPackage in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5dcac9fb14a83021b852be2c52436fcdca84bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a1c90b143a0f38f8911fcaed3ee1ed16908b6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709333"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304921"
 ---
 # <a name="component-management"></a>Gestione dei componenti
 Le unità di attività nel Windows Installer sono definite componenti Windows Installer (talvolta denominati WICs o Just Components). Un GUID identifica ogni WIC, ovvero l'unità di base dell'installazione e il conteggio dei riferimenti per le configurazioni che utilizzano Windows Installer.
@@ -29,7 +31,7 @@ Le unità di attività nel Windows Installer sono definite componenti Windows In
 
 - Creare file e chiavi del registro di sistema condivisi tra le versioni nei propri componenti.
 
-     In questo modo è possibile utilizzarli facilmente nella prossima versione. Ad esempio, le librerie dei tipi registrate globalmente, le estensioni di file, altri elementi registrati in **HKEY_CLASSES_ROOT**e così via.
+     In questo modo è possibile utilizzarli facilmente nella prossima versione. Ad esempio, le librerie dei tipi registrate globalmente, le estensioni di file, altri elementi registrati in **HKEY_CLASSES_ROOT** e così via.
 
 - Raggruppare i componenti condivisi in moduli unione distinti.
 

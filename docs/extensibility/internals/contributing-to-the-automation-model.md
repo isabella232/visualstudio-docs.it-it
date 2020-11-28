@@ -1,5 +1,7 @@
 ---
 title: Contribuire al modello di automazione | Microsoft Docs
+description: Per informazioni su come contribuire al modello di automazione di Visual Studio, seguire una serie di linee guida per la progettazione di un pacchetto VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d660edc740229c3e91b99e1f59eb37b4e9312098
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab43da108a8d4a3339c54973f60bf1bef6a74780
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709261"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305594"
 ---
 # <a name="contribute-to-the-automation-model"></a>Contribuire al modello di automazione
 Visual Studio fornisce un set di interfacce di automazione per la personalizzazione dell'ambiente. Il modello di automazione è il modello a oggetti che consente agli utenti finali di creare componenti aggiuntivi ed estensioni di Visual Studio.

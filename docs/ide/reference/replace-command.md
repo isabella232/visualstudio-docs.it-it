@@ -1,5 +1,7 @@
 ---
 title: Comando Sostituisci
+description: Informazioni sul comando Sostituisci e su come sostituisce il testo nei file usando un subset delle opzioni disponibili nella scheda Sostituisci nei file della finestra Trova e Sostituisci.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 620e55938a9c96393d8cd7de6f238d3f98715d29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2db7b59c1982f706cc6d2b18039870871ffa1039
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596684"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304043"
 ---
 # <a name="replace-command"></a>Comando Sostituisci
 Sostituisce il testo nei file usando un subset delle opzioni disponibili nella scheda **Sostituisci nei file** della finestra **Trova e sostituisci**.

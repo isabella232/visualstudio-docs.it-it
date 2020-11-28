@@ -1,6 +1,8 @@
 ---
 title: Concetti di programmazione & funzionalità per le estensioni degli strumenti di SharePoint
 titleSuffix: ''
+description: Esaminare importanti concetti e funzionalità di programmazione correlati a strumenti di SharePoint in Visual Studio, che possono svolgere un ruolo importante nelle estensioni degli strumenti di SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 607f4841ea66a01d64a6c0c2b93b07e3cd0a5a43
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2513eb99940d45d11bc2360581cbba455e864da2
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585706"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305030"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Programmazione di concetti e funzionalità per le estensioni degli strumenti di SharePoint
   Sono disponibili diversi concetti e funzionalità di programmazione importanti correlati agli strumenti di SharePoint in Visual Studio. Questi concetti e funzionalità svolgono un ruolo importante nella maggior parte delle estensioni degli strumenti di SharePoint.
@@ -36,7 +38,7 @@ ms.locfileid: "91585706"
 
  Viene descritto come associare dati personalizzati a determinati tipi di oggetti nelle estensioni degli strumenti di SharePoint.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Estendere gli strumenti di SharePoint in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Estendere il sistema del progetto SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Estendere il nodo connessioni di SharePoint in Esplora server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)

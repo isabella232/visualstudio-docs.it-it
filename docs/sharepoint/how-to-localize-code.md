@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: localizzare il codice | Microsoft Docs'
+description: Informazioni su come localizzare il codice in SharePoint sostituendo le stringhe hardcoded con le chiamate a GetGlobalResourceObject, un metodo che fa riferimento a risorse localizzate.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c1963ff0b6ef317dfa1a2c8154a1628710dc562
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2cbe38c55b92514954cc3487544fed89d68cc4dc
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016682"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304589"
 ---
 # <a name="how-to-localize-code"></a>Procedura: localizzare il codice
   Il codice non localizzato utilizza valori di stringa hardcoded. Per localizzare le stringhe di codice, sostituirle con chiamate a <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> , che è un metodo che fa riferimento a risorse localizzate.
@@ -27,7 +29,7 @@ ms.locfileid: "86016682"
 
 #### <a name="to-localize-code"></a>Per localizzare il codice
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per un elemento del progetto, quindi scegliere **Aggiungi**  >  **modulo**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per un elemento del progetto, quindi scegliere **Aggiungi**  >  **modulo**.
 
      Scegliere il modello **file di risorse** .
 
@@ -50,7 +52,7 @@ ms.locfileid: "86016682"
 
 7. Compilare il progetto per creare le DLL satellite delle risorse.
 
-8. In **Progettazione pacchetti**scegliere la scheda **Avanzate** , quindi aggiungere l'assembly satellite.
+8. In **Progettazione pacchetti** scegliere la scheda **Avanzate** , quindi aggiungere l'assembly satellite.
 
 9. Nella casella **percorso** anteporre una cartella ID impostazioni cultura al percorso, ad esempio *de-de \\ \<Project Item Name>.resources.dll*.
 

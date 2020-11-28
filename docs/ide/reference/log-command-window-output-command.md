@@ -1,5 +1,7 @@
 ---
 title: Comando Registra output finestra di comando
+description: Informazioni sul comando log output della finestra di comando e sul modo in cui vengono copiati tutti i dati di input e output dal finestra di comando in un file.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6ba8fb419726018bd089e217386ab5dbd6a9c33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cab4f102832e8dfa6ce51b61abed8e3bfd672c40
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568659"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305276"
 ---
 # <a name="log-command-window-output-command"></a>Comando Registra output finestra di comando
 
@@ -49,7 +51,7 @@ facoltativo. Interrompe la registrazione per la finestra di **comando**.
 /overwrite\
 facoltativo. Se il file specificato nell'argomento `filename` corrisponde a un file esistente, il file viene sovrascritto.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Se non viene specificato alcun file, viene creato per impostazione predefinita il file cmdline.log. Per impostazione predefinita, l'alias per questo comando è Log.
 

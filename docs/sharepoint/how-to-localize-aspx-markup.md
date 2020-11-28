@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: localizzare il markup ASPX | Microsoft Docs'
+description: Informazioni su come localizzare il markup ASPX in SharePoint sostituendo i valori di stringa hardcoded con espressioni che fanno riferimento a risorse localizzate.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63bd8ee614a78752069002820689a2cc6c0be783
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a4fcf724a8ae1586354f620a68b32e9f281b545
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016288"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304658"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Procedura: localizzare il markup ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] le pagine (aspx) utilizzano in genere valori stringa hardcoded. Per localizzare queste stringhe, sostituirle con espressioni che fanno riferimento a risorse localizzate.
@@ -31,9 +33,9 @@ ms.locfileid: "86016288"
 
      Se si localizzano solo markup e non codice, aggiungere un elemento di progetto file di risorse globali. Se si sta localizzando codice e markup, aggiungere un elemento di progetto file di risorse.
 
-    1. Per aggiungere un file di risorse globale, in **Esplora soluzioni**aprire il menu di scelta rapida per un elemento del progetto SharePoint, quindi scegliere **Aggiungi**  >  **nuovo elemento**. Nel nodo SharePoint **2010** scegliere il modello **file di risorse globali** .
+    1. Per aggiungere un file di risorse globale, in **Esplora soluzioni** aprire il menu di scelta rapida per un elemento del progetto SharePoint, quindi scegliere **Aggiungi**  >  **nuovo elemento**. Nel nodo SharePoint **2010** scegliere il modello **file di risorse globali** .
 
-    2. Per aggiungere un file di risorse, in **Esplora soluzioni**aprire il menu di scelta rapida per un elemento del progetto SharePoint, quindi scegliere **Aggiungi**  >  **nuovo elemento**. Nel nodo **Visual Basic** o **Visual C#** scegliere il modello file di **risorse** .
+    2. Per aggiungere un file di risorse, in **Esplora soluzioni** aprire il menu di scelta rapida per un elemento del progetto SharePoint, quindi scegliere **Aggiungi**  >  **nuovo elemento**. Nel nodo **Visual Basic** o **Visual C#** scegliere il modello file di **risorse** .
 
     > [!NOTE]
     > Assicurarsi di aggiungere i file di risorse a un elemento del progetto SharePoint per abilitare la proprietà del tipo di distribuzione. Questa proprietà è obbligatoria più avanti in questa procedura. Se la soluzione non dispone di un elemento di progetto SharePoint, è possibile aggiungere un progetto SharePoint vuoto e rimuovere il file *Elements.xml* predefinito.
@@ -60,7 +62,7 @@ ms.locfileid: "86016288"
     </asp:Content>
     ```
 
-     in
+     to
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">

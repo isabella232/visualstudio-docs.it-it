@@ -1,5 +1,7 @@
 ---
 title: Comando Apri file
+description: Informazioni sul comando Apri file e su come apre un file esistente e consente di specificare un editor.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e29e3182a19c9f3a667d41725327110b415fd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 792fe50aea43bc9711a58a895be09f85c041345b
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591515"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304123"
 ---
 # <a name="open-file-command"></a>Comando Apri file
 
@@ -51,7 +53,7 @@ Ad esempio, per aprire un file nell'editor del codice sorgente, per l'argomento 
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Quando si immette un percorso, il completamento automatico tenta di individuare il percorso e il nome file corretti.
 

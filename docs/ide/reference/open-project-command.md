@@ -1,5 +1,7 @@
 ---
 title: Apri progetto (comando)
+description: Informazioni sul comando Apri progetto e su come viene aperto un progetto o una soluzione esistente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce00713cbfe862c5788a0131c99ba4c5750bb600
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565812"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304137"
 ---
 # <a name="open-project-command"></a>Comando Apri progetto
 
@@ -41,7 +43,7 @@ Obbligatorio. Il percorso completo e il nome file del progetto o della soluzione
 > [!NOTE]
 > La sintassi dell'argomento `filename` richiede che i percorsi contenenti spazi usino le virgolette.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Il completamento automatico tenta di individuare il percorso e il nome file corretti durante la digitazione.
 

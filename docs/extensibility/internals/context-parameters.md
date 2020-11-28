@@ -1,5 +1,7 @@
 ---
 title: Parametri di contesto | Microsoft Docs
+description: Informazioni sui parametri di contesto nel Integrated Development Environment di Visual Studio (IDE) che definiscono lo stato di un progetto quando si aggiunge o si implementa una procedura guidata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d1a8c83ef9794479c35cd36609d77ef94621732
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 654ebf68efebaa44766079c172e87396134805e3
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012451"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304713"
 ---
 # <a name="context-parameters"></a>Parametri di contesto
-Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE), è possibile aggiungere le procedure guidate alle finestre di dialogo **nuovo progetto**, **Aggiungi nuovo elemento**o **Aggiungi progetto secondario** . Le procedure guidate aggiunte sono disponibili nel menu **file** o facendo clic con il pulsante destro del mouse su un progetto in **Esplora soluzioni**. L'IDE passa i parametri di contesto all'implementazione della procedura guidata. I parametri di contesto definiscono lo stato del progetto quando l'IDE chiama la procedura guidata.
+Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE), è possibile aggiungere le procedure guidate alle finestre di dialogo **nuovo progetto**, **Aggiungi nuovo elemento** o **Aggiungi progetto secondario** . Le procedure guidate aggiunte sono disponibili nel menu **file** o facendo clic con il pulsante destro del mouse su un progetto in **Esplora soluzioni**. L'IDE passa i parametri di contesto all'implementazione della procedura guidata. I parametri di contesto definiscono lo stato del progetto quando l'IDE chiama la procedura guidata.
 
  L'IDE avvia le procedure guidate impostando il <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> flag nella chiamata dell'IDE al <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> metodo per il progetto. Se impostata, il progetto deve causare l' `IVsExtensibility::RunWizardFile` esecuzione del metodo usando il nome o il GUID della procedura guidata registrata e altri parametri di contesto che l'IDE passa a tale metodo.
 

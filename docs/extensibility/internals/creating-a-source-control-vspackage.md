@@ -1,5 +1,7 @@
 ---
 title: Creazione di un pacchetto VSPackage di controllo del codice sorgente | Microsoft Docs
+description: Informazioni su come creare un pacchetto VSPackage del controllo del codice sorgente per creare un percorso di integrazione completa per l'integrazione del controllo del codice sorgente con Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8608aae718ff9f8bdf2e40c0ab648c1d22c38257
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69e526cea292544c725abc7ffb54d0b29ad88403
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709186"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305585"
 ---
 # <a name="create-a-source-control-vspackage"></a>Creare un pacchetto VSPackage del controllo del codice sorgente
 Questa documentazione include collegamenti alla panoramica dell'architettura di un pacchetto di controllo del codice sorgente integrato con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , l'API definita dalle interfacce da implementare e i servizi da utilizzare e un esempio che illustra una semplice implementazione di un pacchetto di controllo del codice sorgente.

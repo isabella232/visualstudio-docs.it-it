@@ -1,5 +1,7 @@
 ---
 title: Eseguire il refactoring del codice per sostituire var con un tipo esplicito
+description: Informazioni su come usare le azioni rapide per sostituire var in un'espressione di variabile locale con un tipo esplicito.
+ms.custom: SEO-VS-2020
 ms.date: 05/15/2018
 ms.topic: reference
 author: TerryGLee
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4ec388564e1851402f085f6bbaefba08dbea212c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9270ca6cf7407d196eca211b6a76c6dc6a8be78
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595774"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305532"
 ---
 # <a name="refactoring-to-replace-var-with-an-explicit-type"></a>Refactoring per sostituire var con un tipo esplicito
 

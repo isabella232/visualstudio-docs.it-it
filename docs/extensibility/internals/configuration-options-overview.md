@@ -1,5 +1,7 @@
 ---
 title: Panoramica delle opzioni di configurazione | Microsoft Docs
+description: Informazioni sulle opzioni per le configurazioni di progetto in Visual Studio. Una configurazione è un tipo di compilazione descritto con un set denominato di proprietà e percorsi di file.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d5ac25fcef7b942b791402baf17982c9810e92a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df8931066aef5f7163018fba540dd46dcfe5dcc0
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709415"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304737"
 ---
 # <a name="configuration-options-overview"></a>Panoramica delle opzioni di configurazione
 I progetti in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possono supportare più configurazioni che possono essere compilate, sottoposte a debug, eseguite e/o distribuite. Una configurazione è un tipo di compilazione descritto con un set denominato di proprietà, in genere le opzioni del compilatore e i percorsi dei file. Per impostazione predefinita, le nuove soluzioni contengono due configurazioni, *debug* e *Release*. Queste configurazioni possono essere applicate usando le impostazioni predefinite o modificate per soddisfare i requisiti specifici della soluzione e/o del progetto. Alcuni pacchetti possono essere compilati in due modi: come editor ActiveX o come componente sul posto. I progetti non devono tuttavia supportare più configurazioni. Se è disponibile una sola configurazione, viene eseguito il mapping di tale configurazione a tutte le configurazioni della soluzione.

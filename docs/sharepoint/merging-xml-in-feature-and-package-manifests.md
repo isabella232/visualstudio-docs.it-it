@@ -1,5 +1,7 @@
 ---
 title: Unione di codice XML in manifesti di funzionalità e pacchetti | Microsoft Docs
+description: Codice XML generato dalla finestra di progettazione di merge e codice XML aggiunto dall'utente nei manifesti di funzionalità e pacchetto di SharePoint. Informazioni sugli elementi del manifesto della funzionalità e del pacchetto e sulle eccezioni di Unione.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839724"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304228"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Unisci XML in manifesti di funzionalità e pacchetto
   Le funzionalità e i pacchetti sono definiti da [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] file manifesto. Questi manifesti in pacchetto sono una combinazione di dati generati dalle finestre di progettazione e personalizzati [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] immessi nel modello di manifesto dagli utenti. Al momento della creazione del [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacchetto, unisce le [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] istruzioni personalizzate con la finestra di progettazione fornita [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] per formare il [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] file manifesto del pacchetto. Gli elementi simili, con le eccezioni annotate più avanti in eccezioni di merge, vengono uniti per evitare [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] errori di convalida dopo la distribuzione dei file in SharePoint e per rendere i file manifesto più piccoli ed efficienti.

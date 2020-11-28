@@ -1,5 +1,6 @@
 ---
 title: Converti istruzione If nell'istruzione switch o nell'espressione
+description: Informazioni su come usare il menu azioni rapide e refactoring per convertire un'istruzione if in un'istruzione switch o in un'espressione switch C# 8,0.
 ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
@@ -10,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e093325ff4a4e6a9f8a2623e7e42f69bb6fa62f
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: e19314b8bf73f5859fdf2cef7d281f142c643b68
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102532"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305564"
 ---
 # <a name="convert-if-statement-to-switch-statement-or-switch-expression"></a>Convertire un'istruzione if in un'istruzione switch o un'espressione switch
 
@@ -32,14 +33,14 @@ Questo refactoring si applica a:
 ## <a name="how-to"></a>Procedure
 
 1. Posizionare il cursore nella parola chiave `if`.
-2. Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring** .
+2. Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
 3. Selezionare una delle due opzioni seguenti:
 
-    Selezionare **Converti nell'istruzione ' switch '** .
+    Selezionare **Converti nell'istruzione ' switch '**.
 
    ![Converti istruzione If nell'istruzione switch](media/convert-if-to-switch-statement.png)
 
-    Selezionare **Converti in espressione ' switch '** .
+    Selezionare **Converti in espressione ' switch '**.
 
     ![Converti istruzione if in espressione switch](media/convert-if-to-switch-expression.png)
 

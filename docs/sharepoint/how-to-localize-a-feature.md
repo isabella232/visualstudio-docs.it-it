@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: localizzare una funzionalità | Microsoft Docs'
+description: Informazioni su come localizzare i titoli e le descrizioni delle funzionalità in SharePoint sostituendo i valori di stringa hardcoded con espressioni che fanno riferimento a risorse localizzate.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0d15654ba48b6c95cf2b2f7fa4f9cd665f0959a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3865c11c67fd826e0ce914b6aeb88364da3212b7
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016143"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305196"
 ---
 # <a name="how-to-localize-a-feature"></a>Procedura: localizzare una funzionalità
   Per impostazione predefinita, i titoli e le descrizioni delle funzionalità usano valori di stringa hardcoded. Per localizzare il titolo e la descrizione della funzionalità, sostituire le stringhe con espressioni che fanno riferimento a risorse localizzate.
@@ -27,7 +29,7 @@ ms.locfileid: "86016143"
 
 #### <a name="to-localize-a-feature"></a>Per localizzare una funzionalità
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo **Feature1** , quindi scegliere **Aggiungi risorsa funzionalità**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo **Feature1** , quindi scegliere **Aggiungi risorsa funzionalità**.
 
 2. Nella finestra di dialogo **Aggiungi risorsa** scegliere **lingua** inglese dall'elenco come impostazioni cultura per il file di risorse della funzionalità della lingua predefinita.
 
@@ -37,7 +39,7 @@ ms.locfileid: "86016143"
 
 4. Aprire ogni file di risorse nell'Editor risorse e immettere tutti gli ID di stringa e i relativi valori.
 
-     Ad esempio, nel file di risorse della funzionalità predefinita, immettere un ID di stringa **title** con un valore del **titolo della funzionalità**e un secondo ID di stringa **Description** con un valore della **Descrizione della funzionalità My**. Per ogni file di risorse localizzato, utilizzare gli stessi ID di stringa utilizzati nella risorsa della funzionalità predefinita, ma immettere stringhe localizzate per i valori.
+     Ad esempio, nel file di risorse della funzionalità predefinita, immettere un ID di stringa **title** con un valore del **titolo della funzionalità** e un secondo ID di stringa **Description** con un valore della **Descrizione della funzionalità My**. Per ogni file di risorse localizzato, utilizzare gli stessi ID di stringa utilizzati nella risorsa della funzionalità predefinita, ma immettere stringhe localizzate per i valori.
 
 5. Dopo aver immesso tutti i valori delle risorse, aprire il menu di scelta rapida per la funzionalità (ad esempio, *Feature1. feature*), quindi scegliere **Visualizza finestra di progettazione** per aprire la funzionalità nella finestra di progettazione della funzionalità.
 
@@ -51,7 +53,7 @@ ms.locfileid: "86016143"
 
 7. Premere il tasto **F5** per compilare ed eseguire l'applicazione.
 
-8. In SharePoint aprire il menu **Azioni sito** , scegliere **Impostazioni sito**e quindi nella sezione **Azioni sito** scegliere il collegamento **Gestisci caratteristiche sito** .
+8. In SharePoint aprire il menu **Azioni sito** , scegliere **Impostazioni sito** e quindi nella sezione **Azioni sito** scegliere il collegamento **Gestisci caratteristiche sito** .
 
 9. In SharePoint modificare la lingua di visualizzazione dal valore predefinito.
 

@@ -1,5 +1,7 @@
 ---
 title: Utilità CreatePkgDef | Microsoft Docs
+description: Informazioni sull'utilità CreatePkgDef che accetta un file dll per un'estensione di Visual Studio come parametro e crea un file con estensione pkgdef per accompagnare il file dll.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f437eb3586dc16bb0b4b9eb60cd303eb90db6c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa0b0e3e8ea59ce1d41f9d8a6c056239f2bc0e9a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709159"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305541"
 ---
 # <a name="createpkgdef-utility"></a>Utilità CreatePkgDef
 Accetta un file con estensione dll per un'estensione di Visual Studio come parametro e crea un file *pkgdef* per accompagnare il file *dll* . Il file *. pkgdef* contiene tutte le informazioni che altrimenti verrebbero scritte nel registro di sistema durante l'installazione dell'estensione.
@@ -45,7 +47,7 @@ Forza la registrazione con l'utilità di **assembly** .
 **&lt;AssemblyPath&gt;**\
 Percorso del file con *estensione dll* da cui si desidera generare il file con *estensione pkgdef*.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 La distribuzione di estensioni con i file *pkgdef* sostituisce i requisiti del registro di sistema delle versioni precedenti di Visual Studio.
 
 ::: moniker range=">=vs-2019"

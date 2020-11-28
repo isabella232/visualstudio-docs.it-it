@@ -1,5 +1,7 @@
 ---
 title: Comando Elenca moduli
+description: Informazioni sul comando list modules e sul modo in cui elenca i moduli per il processo corrente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e083a0e1baeefc6807dccb2199cd0e5a9bd883d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa0c3f6445a22ee80457e8a7f9f24fb7008f77ed
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595501"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305314"
 ---
 # <a name="list-modules-command"></a>Comando Elenca moduli
 Elenca i moduli disponibili per il processo corrente.

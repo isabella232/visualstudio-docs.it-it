@@ -1,5 +1,7 @@
 ---
 title: Creazione di pacchetti e distribuzione di soluzioni SharePoint | Microsoft Docs
+description: Creare un pacchetto e distribuire le soluzioni SharePoint, che vengono distribuite in un server SharePoint tramite un file di pacchetto di soluzione (con estensione wsp).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a4bf3394cf47b4f355fbe6a330ff5374e2da1c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd06a5be3c9e7ceea38bdb4560f8b6262175bd45
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015597"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305077"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Creare pacchetti e distribuire soluzioni SharePoint
   In genere, una soluzione SharePoint viene distribuita in un server SharePoint tramite un file di pacchetto di soluzione (con estensione wsp). È possibile utilizzare Visual Studio per organizzare gli elementi del progetto SharePoint in funzionalità e creare un pacchetto per distribuire le funzionalità di SharePoint.
@@ -35,9 +37,9 @@ ms.locfileid: "86015597"
 - [Distribuire file in soluzioni SharePoint](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>Creazione di funzionalità e pacchetti
- È possibile utilizzare Visual Studio per raggruppare gli elementi di SharePoint correlati in una *funzionalità*di. Una funzionalità per la definizione di un elenco contatti, ad esempio, può includere l'istanza dell'elenco e la definizione dell'elenco. È possibile combinare questi due elementi in un'unica funzionalità per scopi di distribuzione. Per ulteriori informazioni sulle funzionalità di, vedere [Building Block: features](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14)).
+ È possibile utilizzare Visual Studio per raggruppare gli elementi di SharePoint correlati in una *funzionalità* di. Una funzionalità per la definizione di un elenco contatti, ad esempio, può includere l'istanza dell'elenco e la definizione dell'elenco. È possibile combinare questi due elementi in un'unica funzionalità per scopi di distribuzione. Per ulteriori informazioni sulle funzionalità di, vedere [Building Block: features](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14)).
 
- Successivamente, è possibile creare un pacchetto della soluzione SharePoint (con*estensione wsp*) per aggregare più funzionalità, definizioni del sito, assembly e altri file in un unico pacchetto, che archivia i file in un formato necessario per SharePoint per distribuire i file nel server. Per altre informazioni, vedere [Building Block: Solutions](/previous-versions/office/developer/sharepoint-2010/ee537008(v=office.14)).
+ Successivamente, è possibile creare un pacchetto della soluzione SharePoint (con *estensione wsp*) per aggregare più funzionalità, definizioni del sito, assembly e altri file in un unico pacchetto, che archivia i file in un formato necessario per SharePoint per distribuire i file nel server. Per altre informazioni, vedere [Building Block: Solutions](/previous-versions/office/developer/sharepoint-2010/ee537008(v=office.14)).
 
 ## <a name="feature-and-packaging-tool-support"></a>Supporto degli strumenti per funzionalità e pacchetti
  È possibile usare gli strumenti di sviluppo di SharePoint in Visual Studio per organizzare rapidamente i file di SharePoint in funzionalità e pacchetti di soluzioni per semplificare la distribuzione. Per configurare la funzionalità e il pacchetto della soluzione, è possibile usare gli strumenti seguenti.
@@ -89,13 +91,13 @@ ms.locfileid: "86015597"
  È inoltre possibile personalizzare i passaggi di distribuzione nel computer di sviluppo. Per altre informazioni, vedere [distribuire, pubblicare e aggiornare i pacchetti della soluzione SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).
 
 ## <a name="deploy-files-in-sharepoint-solutions"></a>Distribuire file in soluzioni SharePoint
- In genere, quando si aggiunge un elemento di progetto SharePoint alla soluzione di SharePoint, vengono inclusi tutti i file necessari. I file che possono essere compilati (file di codice) sono incorporati nell'assembly di output della soluzione. Tuttavia, potrebbe essere necessario aggiungere anche file non compilabili, ad esempio file con *estensione XML*, *txt*o di risorse, a un progetto SharePoint. Questi file non vengono automaticamente inclusi nella soluzione. Per assicurarsi che siano inclusi in un pacchetto, aggiungere i file a una cartella mappata o a un elemento del progetto SharePoint.
+ In genere, quando si aggiunge un elemento di progetto SharePoint alla soluzione di SharePoint, vengono inclusi tutti i file necessari. I file che possono essere compilati (file di codice) sono incorporati nell'assembly di output della soluzione. Tuttavia, potrebbe essere necessario aggiungere anche file non compilabili, ad esempio file con *estensione XML*, *txt* o di risorse, a un progetto SharePoint. Questi file non vengono automaticamente inclusi nella soluzione. Per assicurarsi che siano inclusi in un pacchetto, aggiungere i file a una cartella mappata o a un elemento del progetto SharePoint.
 
  I file aggiunti alle cartelle mappate vengono copiati automaticamente nell'hive di SharePoint quando viene distribuita la soluzione. I file aggiunti a un elemento del progetto SharePoint vengono distribuiti nel percorso specificato nella proprietà **percorso di distribuzione** per ogni file, che è parzialmente impostato in base alla proprietà **tipo di distribuzione** . Per impostazione predefinita, il valore della proprietà del **tipo di distribuzione** è **NoDeployment**, il che significa che il file non viene distribuito con la soluzione. È necessario impostare un altro valore per la proprietà in modo da includere il file nel pacchetto.
 
  Per aggiungere ad esempio un file *XML* a un progetto SharePoint, eseguire una delle operazioni seguenti:
 
-- Aggiungere una cartella mappata "Layouts" di SharePoint al progetto. In **Esplora soluzioni** una cartella denominata **Layouts** che include una sottocartella per il progetto. Aggiungere il file con *estensione XML* alla nuova sottocartella. Per impostazione predefinita, il file viene distribuito nel file system di SharePoint in *. \\\TEMPLATE\LAYOUTS \<Folder Name> *. Per informazioni su come aggiungere cartelle mappate, vedere [procedura: aggiungere e rimuovere cartelle mappate](../sharepoint/how-to-add-and-remove-mapped-folders.md).
+- Aggiungere una cartella mappata "Layouts" di SharePoint al progetto. In **Esplora soluzioni** una cartella denominata **Layouts** che include una sottocartella per il progetto. Aggiungere il file con *estensione XML* alla nuova sottocartella. Per impostazione predefinita, il file viene distribuito nel file system di SharePoint in *. \\\TEMPLATE\LAYOUTS \<Folder Name>*. Per informazioni su come aggiungere cartelle mappate, vedere [procedura: aggiungere e rimuovere cartelle mappate](../sharepoint/how-to-add-and-remove-mapped-folders.md).
 
 - Aggiungere il *file XML* alla cartella di un elemento del progetto SharePoint, quindi modificare la proprietà del **tipo di distribuzione** del file *con estensione XML* da **NoDeployment** a un'altra impostazione, ad esempio **RootFile** o **ElementFile**. L'impostazione del **tipo di distribuzione** appropriato dipende dal file e dal progetto. Per ulteriori informazioni sulle impostazioni delle proprietà del **tipo di distribuzione** , vedere [sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md).
 

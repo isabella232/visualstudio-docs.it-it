@@ -1,5 +1,7 @@
 ---
 title: Progettazione comandi | Microsoft Docs
+description: Informazioni su come progettare un comando per un VSPackage in Visual Studio. Incluso, come specificare dove viene visualizzato, quando è disponibile e come gestirlo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa58813623dc8150cafb4fbfee6496d09f889ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ab06ade9be1ccd0683cd298a5e758ddcfa883f8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709651"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304872"
 ---
 # <a name="command-design"></a>Progettazione comandi
 Quando si aggiunge un comando a un VSPackage, è necessario specificare dove deve essere visualizzato, quando è disponibile e come gestirlo.
 
 ## <a name="define-commands"></a>Definire i comandi
- Per definire nuovi comandi, includere un file della tabella dei comandi di Visual Studio (con*estensione vsct*) nel progetto VSPackage. Se è stato creato un pacchetto VSPackage usando il modello di pacchetto di Visual Studio, il progetto include uno di questi file. Per ulteriori informazioni, vedere [file della tabella dei comandi di Visual Studio (con estensione vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+ Per definire nuovi comandi, includere un file della tabella dei comandi di Visual Studio (con *estensione vsct*) nel progetto VSPackage. Se è stato creato un pacchetto VSPackage usando il modello di pacchetto di Visual Studio, il progetto include uno di questi file. Per ulteriori informazioni, vedere [file della tabella dei comandi di Visual Studio (con estensione vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
  Visual Studio unisce tutti i file con *estensione vsct* individuati in modo che possano visualizzare i comandi. Poiché questi file sono distinti dal binario VSPackage, Visual Studio non deve caricare il pacchetto per trovare i comandi. Per ulteriori informazioni, vedere [come i VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).
 
@@ -36,12 +38,12 @@ Quando si aggiunge un comando a un VSPackage, è necessario specificare dove dev
 ## <a name="visual-studio-command-environment"></a>Ambiente di comando di Visual Studio
  Visual Studio può ospitare un numero qualsiasi di pacchetti VSPackage e ognuno può contribuire al proprio set di comandi. Nell'ambiente vengono visualizzati solo i comandi appropriati per l'attività corrente. Per ulteriori informazioni, vedere la pagina relativa a [oggetti Context di selezione](../../extensibility/internals/selection-context-objects.md)e [disponibilità dei comandi](../../extensibility/internals/command-availability.md) .
 
- Un pacchetto VSPackage che definisce i nuovi comandi, i menu, le barre degli strumenti o i menu di scelta rapida fornisce le informazioni sul comando a Visual Studio al momento dell'installazione tramite le voci del registro di sistema che fanno riferimento a risorse in assembly nativi o gestiti. Ogni risorsa fa quindi riferimento a un file di risorse binarie (con*estensione CTO*), che viene generato quando si compila un file della tabella dei comandi di Visual Studio (con*estensione vsct*). Questo consente a Visual Studio di fornire set di comandi, menu e barre degli strumenti Uniti senza dover caricare tutti i pacchetti VSPackage installati.
+ Un pacchetto VSPackage che definisce i nuovi comandi, i menu, le barre degli strumenti o i menu di scelta rapida fornisce le informazioni sul comando a Visual Studio al momento dell'installazione tramite le voci del registro di sistema che fanno riferimento a risorse in assembly nativi o gestiti. Ogni risorsa fa quindi riferimento a un file di risorse binarie (con *estensione CTO*), che viene generato quando si compila un file della tabella dei comandi di Visual Studio (con *estensione vsct*). Questo consente a Visual Studio di fornire set di comandi, menu e barre degli strumenti Uniti senza dover caricare tutti i pacchetti VSPackage installati.
 
 ### <a name="command-organization"></a>Organizzazione comandi
  L'ambiente posiziona i comandi per gruppo, priorità e menu.
 
-- I gruppi sono raccolte logiche di comandi correlati, ad esempio il gruppo di comandi **taglia**, **copia**e **Incolla** . I gruppi sono i comandi visualizzati nei menu.
+- I gruppi sono raccolte logiche di comandi correlati, ad esempio il gruppo di comandi **taglia**, **copia** e **Incolla** . I gruppi sono i comandi visualizzati nei menu.
 
 - La priorità determina l'ordine in cui vengono visualizzati i singoli comandi di un gruppo nel menu.
 

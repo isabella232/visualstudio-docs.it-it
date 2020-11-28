@@ -1,5 +1,6 @@
 ---
 title: Scaricamento e ricaricamento di progetti annidati
+description: Informazioni sui passaggi aggiuntivi che è necessario eseguire durante lo scaricamento e il ricaricamento di progetti annidati in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 154eb51014d9719b601cf87d53383f57941403a8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 62cb611e927b878b82e1b5a1025331e1a443560e
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036821"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304678"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Considerazioni per lo scaricamento e il ricaricamento di progetti annidati
 
@@ -35,7 +36,7 @@ In genere, quando un progetto viene ricaricato, l'IDE genera gli <xref:Microsoft
 
 Per gestire questo processo, il progetto padre chiama `QueryInterface` sull' <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> interfaccia. `IVsFireSolutionEvents` dispone di funzioni che indicano all'IDE di generare l' `OnBeforeUnloadProject` evento per scaricare il progetto annidato e quindi generare l' `OnAfterLoadProject` evento per ricaricare lo stesso progetto.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>
 - [Annida progetti](../../extensibility/internals/nesting-projects.md)

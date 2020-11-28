@@ -1,5 +1,7 @@
 ---
 title: Integrazione di dati business in SharePoint | Microsoft Docs
+description: Leggere un riepilogo generale su come integrare i dati aziendali in SharePoint creando un modello per il servizio di integrazione applicativa dei dati.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4bbfb681a0dac0825bf7af4f1f27ab1c1b50053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3156adc286222282ae63f70f70838bc6b7155a8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016311"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304356"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Integrare i dati aziendali in SharePoint
   È possibile integrare i dati aziendali in SharePoint. I dati aziendali possono provenire dalle applicazioni server back-end, ad esempio [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)] , Siebel e SAP o da un servizio Web. Gli utenti possono visualizzare, aggiungere, aggiornare o eliminare i dati aziendali utilizzando elenchi esterni o dati aziendali Web part in SharePoint.  Gli utenti possono anche accedere ai dati offline in un'applicazione Microsoft Office, ad esempio Microsoft Outlook. Per ulteriori informazioni, vedere [dove è possibile visualizzare i dati esterni](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14)).

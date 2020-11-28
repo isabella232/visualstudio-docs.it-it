@@ -1,5 +1,7 @@
 ---
 title: Commento al codice in un servizio di linguaggio legacy | Microsoft Docs
+description: Informazioni sulle classi del Framework di pacchetto gestito (MPF) che forniscono supporto per l'inserimento di commenti nel codice in un servizio di linguaggio legacy in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5450199fde29f581dafdf9b2884c88ef26ea4ce7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07205a8e15cd338fa1acf0d3b081301a083bba5d
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709431"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305005"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Codice di commento in un servizio di linguaggio legacy
 I linguaggi di programmazione forniscono in genere un mezzo per aggiungere annotazioni o aggiungere commenti al codice. Un commento è una sezione di testo che fornisce informazioni aggiuntive sul codice, ma viene ignorato durante la compilazione o l'interpretazione.

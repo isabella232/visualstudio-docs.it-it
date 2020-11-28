@@ -1,5 +1,7 @@
 ---
 title: Documenti, Ambiente, finestra di dialogo Opzioni
+description: Informazioni su come usare la pagina ambienti nella sezione documenti per controllare la visualizzazione dei documenti nell'IDE e gestire le modifiche esterne a documenti e file.
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -31,12 +33,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7813a2e7686bef5a146e7472bce7f2c24baf9cd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28b0e7920aca2ae8b789a37fad25509dbb8b4d7a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75570063"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305482"
 ---
 # <a name="options-dialog-box-environment--documents"></a>Finestra di dialogo Opzioni: \> documenti ambiente
 
@@ -85,5 +87,5 @@ Se si seleziona questa opzione, i file contenenti informazioni non compatibili c
 
 ## <a name="see-also"></a>Vedere anche
 
-- [file esterni](../../ide/reference/miscellaneous-files.md)
+- [File esterni](../../ide/reference/miscellaneous-files.md)
 - [Ricerca e sostituzione di testo](../../ide/finding-and-replacing-text.md)

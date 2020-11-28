@@ -1,5 +1,7 @@
 ---
 title: -Diff (devenv.exe)
+description: Informazioni su come usare l'opzione della riga di comando diff devenv per confrontare due file.
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb74501c15e961d8da8e1e29dd0d9979c79a305
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a2ae3da5036134260f48dce8838571312d87bf2
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75570089"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305497"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
 
@@ -47,7 +49,7 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
   facoltativo. Nome visualizzato del secondo file.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Se un'istanza dell'IDE è già aperta, il confronto dei file viene visualizzato in una scheda nell'IDE corrente.
 

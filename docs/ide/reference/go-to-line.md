@@ -1,5 +1,7 @@
 ---
 title: Vai alla riga
+description: Informazioni sulla finestra di dialogo Vai alla riga e su come consente di passare a una riga specifica nel documento attivo.
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 643da538626395434c1269e2294d90b332c564e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7241a574dc8ac8531c2eb4d88eddb1cf047a80d6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249880"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304213"
 ---
 # <a name="go-to-line-dialog-box"></a>Vai alla riga (finestra di dialogo)
 

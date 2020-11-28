@@ -1,5 +1,7 @@
 ---
 title: Importazione di elementi da un sito di SharePoint esistente | Microsoft Docs
+description: Importare gli elementi da un sito di SharePoint esistente con il modello di progetto Importa pacchetto di soluzione SharePoint, in modo da poter riutilizzare gli elementi in una nuova soluzione SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c2703bfdd4f47281a1fc19060cb69f8b312e7d2
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: ef77fb280021fcfb701a677bc9ce17ec26e39516
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970525"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304514"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importa elementi da un sito di SharePoint esistente
   Il modello di progetto Importa pacchetto di soluzione SharePoint consente di riutilizzare elementi come i campi e i tipi di contenuto da siti di SharePoint esistenti in una nuova soluzione SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Sebbene sia possibile eseguire la maggior parte delle soluzioni importate senza modifiche, esistono alcune limitazioni e problemi da tenere in considerazione, soprattutto se si modificano gli elementi dopo averli importati.
@@ -133,7 +135,7 @@ ms.locfileid: "95970525"
 
  L'assenza di un controllo di gestione di script può costituire un problema quando si importa un progetto di [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] o [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)] in [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]perché l'attributo SharePointProductVersion di tutti i nuovi progetti viene impostato su 14.0. Se si distribuisce un progetto aggiornato che ha un Web Form senza gestore di script, non sarà possibile visualizzare il form in SharePoint.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Procedura dettagliata: importare elementi da un sito di SharePoint esistente](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)
 - [Linee guida per l'importazione di flussi di lavoro riutilizzabili](../sharepoint/guidelines-for-importing-reusable-workflows.md)
 - [Procedura dettagliata: importare un flusso di lavoro riutilizzabile di SharePoint Designer in Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)

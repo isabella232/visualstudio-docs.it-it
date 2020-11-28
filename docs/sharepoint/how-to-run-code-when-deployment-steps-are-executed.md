@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: eseguire codice quando vengono eseguiti i passaggi di distribuzione | Microsoft Docs'
+description: Eseguire il codice per gestire gli eventi generati dagli elementi del progetto SharePoint prima e dopo l'esecuzione di una fase di distribuzione da Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2b0431ab4f985d801a78159fc2d324a29f8b638
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b921d8500c95ebbb771b5c0b5817db87b7c6ca
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015530"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304456"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Procedura: eseguire codice quando vengono eseguiti i passaggi di distribuzione
   Se si desidera eseguire attività aggiuntive per un passaggio di distribuzione in un progetto SharePoint, è possibile gestire gli eventi generati dagli elementi del progetto SharePoint prima e dopo l'esecuzione di ogni passaggio di distribuzione da Visual Studio. Per ulteriori informazioni, vedere [estensione della creazione di pacchetti e della distribuzione di SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
 
 ### <a name="to-run-code-when-deployment-steps-are-executed"></a>Per eseguire il codice quando vengono eseguiti i passaggi di distribuzione
 
-1. Creare un'estensione di elemento del progetto, un'estensione di progetto o una definizione di un nuovo tipo di elemento di progetto. Per altre informazioni, vedere gli argomenti seguenti:
+1. Creare un'estensione di elemento del progetto, un'estensione di progetto o una definizione di un nuovo tipo di elemento di progetto. Per altre informazioni, vedere i seguenti argomenti:
 
     - [Procedura: creare un'estensione di elemento di progetto SharePoint](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 

@@ -1,5 +1,7 @@
 ---
 title: Creazione di un plug-in del controllo del codice sorgente | Microsoft Docs
+description: Informazioni su come creare un plug-in del controllo del codice sorgente che consente di aggiungere una funzionalità di controllo del codice sorgente a Visual Studio Integrated Development Environment (IDE).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e0d9dc54a61cabe7bdd5c21c10abf0def34ff6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ae887e8752e1603af173ed569d19a6602ac84f0
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709176"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305376"
 ---
 # <a name="create-a-source-control-plug-in"></a>Creazione di un plug-in del controllo del codice sorgente
 Visual Studio SDK fornisce risorse che consentono di aggiungere funzionalità di controllo del codice sorgente al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE). Consente di utilizzare qualsiasi DLL plug-in conforme all'API del plug-in del controllo del codice sorgente descritta in questa documentazione.

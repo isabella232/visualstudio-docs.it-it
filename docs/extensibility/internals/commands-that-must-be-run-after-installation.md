@@ -1,5 +1,7 @@
 ---
 title: Comandi che devono essere eseguiti dopo l'installazione | Microsoft Docs
+description: Informazioni sui comandi che devono essere eseguiti come parte dell'installazione di un'estensione distribuita tramite un file con estensione msi in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77add5afd5d44358f0077a11bb70559a796e74c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64eda9c95b9c469d8defc8ab0318031e9e43172a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709477"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305043"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandi che devono essere eseguiti dopo l'installazione
 Se si distribuisce l'estensione tramite un file con estensione *MSI* , è necessario eseguire **devenv/setup** come parte dell'installazione per consentire a Visual Studio di individuare le estensioni.
@@ -28,7 +30,7 @@ Se si distribuisce l'estensione tramite un file con estensione *MSI* , è necess
 
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>RegLocator righe della tabella per individuare devenv.exe da versioni diverse di Visual Studio
 
-|Firma|Radice|Codice|Nome|Type|
+|Firma|Radice|Codice|Nome|Tipo|
 |-----------------|----------|---------|----------|----------|
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|
@@ -44,7 +46,7 @@ Se si distribuisce l'estensione tramite un file con estensione *MSI* , è necess
 |DEVENV_EXE_2005|RL_DevenvExe_2005|
 |DEVENV_EXE_2008|RL_DevenvExe_2008|
 
- Ad esempio, il programma di installazione di Visual Studio scrive il valore del registro di sistema di **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\9.0\setup\vs\environmentpath** come *C:\VS2008\Common7\IDE\devenv.exe*, un percorso completo dell'eseguibile che deve essere eseguito dal programma di installazione.
+ Ad esempio, il programma di installazione di Visual Studio scrive il valore del registro di sistema di **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath** come *C:\VS2008\Common7\IDE\devenv.exe*, un percorso completo dell'eseguibile che deve essere eseguito dal programma di installazione.
 
 > [!NOTE]
 > Poiché la colonna di tipo della tabella RegLocator è 2, non è necessario specificare ulteriori informazioni sulla versione nella tabella della firma.
@@ -58,7 +60,7 @@ Se si distribuisce l'estensione tramite un file con estensione *MSI* , è necess
 
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>CustomAction righe della tabella da eseguire devenv.exe
 
-|Action|Type|Source (Sorgente)|Destinazione|
+|Azione|Tipo|Source (Sorgente)|Destinazione|
 |------------|----------|------------|------------|
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/Setup|
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/Setup|
@@ -74,7 +76,7 @@ Se si distribuisce l'estensione tramite un file con estensione *MSI* , è necess
 
 ### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>Tabella InstallExecuteSequence per pianificare le azioni personalizzate devenv.exe
 
-|Action|Condizione|Sequenza|
+|Azione|Condizione|Sequenza|
 |------------|---------------|--------------|
 |CA_RunDevenv2002|DEVENV_EXE_2002|6602|
 |CA_RunDevenv2003|DEVENV_EXE_2003|6603|

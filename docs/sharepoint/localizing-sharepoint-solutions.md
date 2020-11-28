@@ -1,5 +1,7 @@
 ---
 title: Localizzazione di soluzioni SharePoint | Microsoft Docs
+description: Localizzare le soluzioni di SharePoint rimuovendo le stringhe hardcoded dal codice e astraendole in file di risorse basati su XML (con estensione resx) contenenti stringhe tradotte.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0a7b04ab1f77eba15f2bc617f89514a8d0952674
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16cb372e5acf719d3edc79f081cff6f4b0396b6a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017147"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304269"
 ---
 # <a name="localize-sharepoint-solutions"></a>Localizzare le soluzioni SharePoint
 
@@ -109,7 +111,7 @@ $Resources:String ID
 ### <a name="localize-code"></a>Localizzare il codice
  Oltre a localizzare le stringhe di funzionalità e [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] il markup, è necessario localizzare anche le stringhe di messaggio e le stringhe di errore visualizzate nel codice della soluzione. Messaggi informativi e di errore localizzati sono contenuti in assembly satellite. Gli assembly satellite contengono stringhe visibili agli utenti, ad esempio [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] i messaggi di testo e di output come le eccezioni.
 
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Usa il modello di .NET Framework Hub e spoke standard. L'hub, o l'assembly del programma principale, contiene le risorse di lingua predefinite. I spoke, o gli assembly satellite, contengono le risorse specifiche della lingua. Per altre informazioni, vedere [Creazione del pacchetto e distribuzione delle risorse](/previous-versions/dotnet/netframework-4.0/sb6a8618(v=vs.100)). Gli assembly satellite vengono compilati da file di risorse (con*estensione resx*). Quando si aggiungono file di risorse specifici della lingua al progetto e al pacchetto della soluzione, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Compila i file di risorse in assembly satellite denominati *{nome progetto} .resources.dll*.
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Usa il modello di .NET Framework Hub e spoke standard. L'hub, o l'assembly del programma principale, contiene le risorse di lingua predefinite. I spoke, o gli assembly satellite, contengono le risorse specifiche della lingua. Per altre informazioni, vedere [Creazione del pacchetto e distribuzione delle risorse](/previous-versions/dotnet/netframework-4.0/sb6a8618(v=vs.100)). Gli assembly satellite vengono compilati da file di risorse (con *estensione resx*). Quando si aggiungono file di risorse specifici della lingua al progetto e al pacchetto della soluzione, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Compila i file di risorse in assembly satellite denominati *{nome progetto} .resources.dll*.
 
  Come per il markup ASPX, localizzare il codice dell'applicazione SharePoint aggiungendo elementi del progetto file di risorse separate al progetto; uno per la lingua predefinita e uno per ogni lingua localizzata. Tuttavia, come indicato in precedenza, se si dispone già di file di risorse per la localizzazione del markup ASPX, è possibile riutilizzarli per localizzare il codice. Se è necessario creare file di risorse, assegnare al file di risorse della lingua predefinita un nome a scelta aggiunto con l'estensione *resx* . Denominare i file di risorse localizzati con lo stesso nome aggiunto con le impostazioni cultura specifiche della lingua [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] . Impostare la proprietà operazione di compilazione di ogni file di risorse su risorsa incorporata per consentire la creazione di assembly di risorse satellite.
 

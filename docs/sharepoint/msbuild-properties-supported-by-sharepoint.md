@@ -1,5 +1,7 @@
 ---
 title: Proprietà di MSBuild supportate da SharePoint | Microsoft Docs
+description: Leggere un elenco dei nomi e delle descrizioni delle proprietà di MSBuild supportati da e sono specifici di SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5470160c6b0af1af39238a14319ad497e1541a43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1eab3832121f1e0c926257797ddbc79695546a5
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985169"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305140"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Proprietà di MsBuild supportate da SharePoint
   Qualsiasi [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] proprietà definita nel file Microsoft. VisualStudio. SharePoint. targets, nel file di progetto o nel file utente del progetto può essere utilizzata nei [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetti SharePoint. Oltre alle [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Proprietà comuni fornite dal progetto, SharePoint definisce proprietà aggiuntive specifiche dei progetti SharePoint.
 
- Per un elenco delle [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Proprietà comuni, vedere [Proprietà comuni del progetto MSBuild](/previous-versions/dotnet/netframework-4.0/bb629394(v=vs.100)). Per un elenco completo delle proprietà supportate dal linguaggio di programmazione, esaminare il file con *estensione targets* , il file di progetto (con*estensione csproj* o *VBPROJ*) o il file utente del progetto (*csproj. User* o *. vbproj. User*).
+ Per un elenco delle [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] Proprietà comuni, vedere [Proprietà comuni del progetto MSBuild](/previous-versions/dotnet/netframework-4.0/bb629394(v=vs.100)). Per un elenco completo delle proprietà supportate dal linguaggio di programmazione, esaminare il file con *estensione targets* , il file di progetto (con *estensione csproj* o *VBPROJ*) o il file utente del progetto (*csproj. User* o *. vbproj. User*).
 
 ## <a name="msbuild-properties-specific-to-sharepoint"></a>Proprietà di MsBuild specifiche di SharePoint
  Nella tabella seguente sono elencate le [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] proprietà che si applicano in modo specifico ai progetti SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Esistono altre proprietà, ma sono per uso interno.

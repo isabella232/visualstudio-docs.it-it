@@ -1,5 +1,7 @@
 ---
 title: Pagina Ambiente, Funzionalità di anteprima della finestra di dialogo Opzioni
+description: Informazioni su come usare la pagina funzionalità di anteprima nella sezione ambiente per abilitare o disabilitare le funzionalità di anteprima in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5fc392e6d3d862ae81f0844d2cd28e8da44a805
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a0eb0627c073c09f23d8690dba2fd4f9af8b482
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595683"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305449"
 ---
 # <a name="options-dialog-box-environment--preview-features"></a>Finestra di dialogo Opzioni: \> funzionalità di anteprima dell'ambiente
 

@@ -1,5 +1,7 @@
 ---
 title: Contratti di comando negli assembly di interoperabilità | Microsoft Docs
+description: Informazioni sul contratto di base per la gestione dei comandi tramite l'interfaccia Microsoft. VisualStudio. OLE. Interop. IOleCommandTarget.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f20a4f479d62cd1b64c3b13ff6e1a949656a668
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d655bfb3e6f2206156cd3a6d091ea04f18afe91a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709679"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304903"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Contratti di comando negli assembly di interoperabilità
 Il contratto di base per la gestione dei comandi tramite l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia è che l'ambiente chiama il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodo per determinare se il comando è supportato e, se è supportato, per determinare lo stato e il testo. Quindi, l'ambiente chiama il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metodo per eseguire il comando.

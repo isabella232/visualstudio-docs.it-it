@@ -1,5 +1,7 @@
 ---
 title: Comando Elenca thread
+description: Informazioni sul comando list Threads e su come viene visualizzato un elenco dei thread nel programma corrente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b36b8f4d9970d94eb83c47b59e85d01f932589
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf7b3ed8b28a43c31efe68c6512f08883cb4187a
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595488"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305264"
 ---
 # <a name="list-threads-command"></a>Comando Elenca thread
 Visualizza un elenco dei thread del programma corrente.
@@ -35,7 +37,7 @@ Debug.ListThreads [index]
 
 facoltativo. Seleziona un thread in base al relativo indice e lo contrassegna come thread corrente.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Quando specificato, l'argomento `index` contrassegna il thread indicato come thread corrente. Nell'elenco viene visualizzato un asterisco (*) accanto al thread corrente.
 
 ## <a name="example"></a>Esempio

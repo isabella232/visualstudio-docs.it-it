@@ -1,5 +1,7 @@
 ---
 title: Finestra Elenco errori
+description: Informazioni sulla finestra Elenco errori e su come usarla per eseguire attività correlate alla risoluzione degli errori visualizzati.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf008bd7c1355f5991890ca5ab8bd999f2a8dd32
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569663"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305443"
 ---
 # <a name="error-list-window"></a>Finestra Elenco errori
 
@@ -41,7 +43,7 @@ La finestra **Elenco errori** consente di eseguire le attività seguenti:
 
 - Cercare i termini specifici e l'ambito della ricerca solo nel progetto corrente o nel documento.
 
-Per visualizzare il **Elenco errori**, scegliere **Visualizza**  >  **Elenco errori**oppure premere **CTRL** + **\\** + **E**.
+Per visualizzare il **Elenco errori**, scegliere **Visualizza**  >  **Elenco errori** oppure premere **CTRL** + **\\** + **E**.
 
 È possibile scegliere le schede **Errori**, **Avvisi** e **Messaggi** per visualizzare diversi livelli di informazioni.
 
@@ -88,7 +90,7 @@ Descrizione
 
 Visualizza il testo della voce.
 
-Progetto
+Project
 
 Visualizza il nome del progetto corrente.
 
@@ -96,6 +98,6 @@ File
 
 Visualizza il nome del file.
 
-Grafico a linee
+Riga
 
 Visualizza la riga in cui si è verificato l'errore.

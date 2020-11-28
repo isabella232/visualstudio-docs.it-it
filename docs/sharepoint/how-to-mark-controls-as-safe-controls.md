@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: contrassegnare i controlli come controlli sicuri | Microsoft Docs'
+description: Contrassegnare i controlli come controlli sicuri nella proprietà voci di controllo sicure di un elemento di progetto SharePoint o in Progettazione pacchetti quando si aggiunge un assembly.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd7ed13504d3d91f4239a8ea070454e1c31b1114
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 024cd50fc36b84addca11dc3c0f23cdc64fa507d
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016263"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304508"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Procedura: contrassegnare i controlli come controlli sicuri
-  Per la sicurezza, SharePoint distingue tra i controlli Web protetti da attacchi di script injection e Web che non lo sono. È possibile accedere ai controlli protetti o ai *controlli sicuri*da parte di utenti non attendibili. È possibile contrassegnare i controlli come sicuri nella proprietà voci di controllo sicure di un elemento del progetto SharePoint o in **Progettazione pacchetti** quando si aggiunge un assembly al pacchetto. Per ulteriori informazioni, vedere
+  Per la sicurezza, SharePoint distingue tra i controlli Web protetti da attacchi di script injection e Web che non lo sono. È possibile accedere ai controlli protetti o ai *controlli sicuri* da parte di utenti non attendibili. È possibile contrassegnare i controlli come sicuri nella proprietà voci di controllo sicure di un elemento del progetto SharePoint o in **Progettazione pacchetti** quando si aggiunge un assembly al pacchetto. Per ulteriori informazioni, vedere
 
 - [web.config le impostazioni del file cambiano](/previous-versions/office/developer/sharepoint-2007/bb802890(v=office.12)) e [la registrazione di un assembly Web part come controllo sicuro](/previous-versions/office/developer/sharepoint2003/dd587360(v=office.11)).
 
@@ -43,7 +45,7 @@ ms.locfileid: "86016263"
 
 4. Nella finestra di dialogo **voci di controllo sicure** scegliere il pulsante **Aggiungi** due volte per aggiungere due voci di controllo sicure al riquadro **membri** : una per il pulsante e una per la casella di testo.
 
-5. Scegliere la prima voce di controllo sicura, quindi impostare il valore della relativa proprietà **Safe** su **false**, la **proprietà nome tipo** su **Button1**e la relativa proprietà **Safe su script** su **false**.
+5. Scegliere la prima voce di controllo sicura, quindi impostare il valore della relativa proprietà **Safe** su **false**, la **proprietà nome tipo** su **Button1** e la relativa proprietà **Safe su script** su **false**.
 
      Questo passaggio identifica il controllo Button come un controllo unsafe.
 
@@ -67,11 +69,11 @@ ms.locfileid: "86016263"
 
 4. Creare un'altra soluzione SharePoint.
 
-5. In **Esplora soluzioni**aprire il menu di scelta rapida per il file *Package. Package* , quindi scegliere **Apri** per aprire **Progettazione pacchetti**.
+5. In **Esplora soluzioni** aprire il menu di scelta rapida per il file *Package. Package* , quindi scegliere **Apri** per aprire **Progettazione pacchetti**.
 
-6. In **Progettazione pacchetti**scegliere la scheda **Avanzate** .
+6. In **Progettazione pacchetti** scegliere la scheda **Avanzate** .
 
-7. In **assembly aggiuntivi**scegliere il pulsante **Aggiungi** , quindi scegliere **Aggiungi assembly esistente** dall'elenco.
+7. In **assembly aggiuntivi** scegliere il pulsante **Aggiungi** , quindi scegliere **Aggiungi assembly esistente** dall'elenco.
 
 8. Nella finestra di dialogo **Aggiungi assembly esistente** scegliere il pulsante con i puntini di sospensione (![ASP.NET Mobile Designer ellisse](../sharepoint/media/mwellipsis.gif "Ellisse di ASP.NET Mobile Designer")) accanto a **percorso di origine**.
 
@@ -85,7 +87,7 @@ ms.locfileid: "86016263"
 
 12. Immettere i valori per le proprietà della tabella seguente.
 
-    |Nome proprietà|Valore|
+    |Nome proprietà|valore|
     |-------------------|-----------|
     |Spazio dei nomi|Spazio dei nomi completo per il controllo, ad esempio **BdcModelProject1. VisualWebPart1**.|
     |Nome tipo|Button1|
@@ -102,7 +104,7 @@ ms.locfileid: "86016263"
 
 15. Immettere i valori per le proprietà della tabella seguente.
 
-    |Nome proprietà|Valore|
+    |Nome proprietà|valore|
     |-------------------|-----------|
     |Spazio dei nomi|Spazio dei nomi completo per il controllo, ad esempio **BdcModelProject1. VisualWebPart1**.|
     |Nome tipo|TextBox1|

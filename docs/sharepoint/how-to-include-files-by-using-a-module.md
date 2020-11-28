@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: includere file mediante un modulo | Microsoft Docs'
+description: Informazioni su come includere i file usando un modulo, ovvero un contenitore che consente di distribuire file, ad esempio pagine master ASPX, file di testo o immagini, in SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ada86be30e207e36c7e0d84d3fd5dd877605e4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 381cb529db3f4116a9c42041c26e0e1e242073df
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016297"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305422"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Procedura: includere file mediante un modulo
   I *moduli* (da non confondere con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] i moduli) sono contenitori che consentono di distribuire file, ad esempio pagine master aspx, file di testo o immagini, in SharePoint.
@@ -33,7 +35,7 @@ ms.locfileid: "86016297"
 
      Per ulteriori informazioni, vedere [modelli di progetto e di elementi di progetto SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2. In **Esplora soluzioni**scegliere il nodo del progetto, quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
+2. In **Esplora soluzioni** scegliere il nodo del progetto, quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento** .
 
@@ -53,7 +55,7 @@ ms.locfileid: "86016297"
 
      Quando si aggiunge un file al progetto, una voce per esso viene aggiunta automaticamente al file di Elements.xml del modulo. Quando il progetto viene distribuito, i file vengono copiati in SharePoint Server, relativi alla directory radice del progetto, specificata dall'attributo **URL** dell'elemento **file** , ad esempio `Url="Module1/New Folder/SomeFile.doc` . Se si desidera modificare il percorso di distribuzione per un file, spostarlo in un'altra cartella in **Esplora soluzioni** o modificarne l'impostazione **URL** .
 
-8. Per tutti i file che si desidera visualizzare in una raccolta documenti, aggiungere l' `Type="GhostableInLibrary"` attributo alla relativa voce in *Elements.xml*. Ad esempio:
+8. Per tutti i file che si desidera visualizzare in una raccolta documenti, aggiungere l' `Type="GhostableInLibrary"` attributo alla relativa voce in *Elements.xml*. Ad esempio,
 
     ```xml
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />

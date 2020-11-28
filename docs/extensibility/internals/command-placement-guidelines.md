@@ -1,5 +1,7 @@
 ---
 title: Linee guida sul posizionamento del comando | Microsoft Docs
+description: Informazioni sulle linee guida e le procedure consigliate per posizionare i comandi in Visual Studio Integrated Development Environment (IDE).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021a5fd9f9931e3041a431d211c8ab49978bbbab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11a1619eaa625e086ac93bfa0f9e208239f8c844
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709561"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305246"
 ---
 # <a name="command-placement-guidelines"></a>Linee guida sul posizionamento del comando
 Le procedure consigliate per posizionare i comandi in Visual Studio Integrated Development Environment (IDE) variano a seconda delle dimensioni del set di comandi. I comandi vengono definiti e posizionati in base alle informazioni contenute nei file con *estensione vsct* .

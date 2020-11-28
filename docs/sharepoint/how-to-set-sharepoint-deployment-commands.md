@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: impostare i comandi di distribuzione di SharePoint | Microsoft Docs'
+description: Informazioni su come personalizzare il processo di distribuzione impostando i comandi di pre-distribuzione e post-distribuzione di SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2329efef64e7d8605f8483ff7dce3107cd702fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc1da67206e5e5c9fde1b5c595424239d1685ac7
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015507"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304384"
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>Procedura: impostare i comandi di distribuzione di SharePoint
   È possibile personalizzare il processo di distribuzione impostando i comandi di pre-distribuzione e post-distribuzione. Questi comandi vengono eseguiti prima e dopo altre azioni di distribuzione quando si esegue il debug di soluzioni SharePoint da Visual Studio.
 
 ### <a name="to-add-a-pre-deployment-command"></a>Per aggiungere un comando pre-distribuzione
 
-1. Sulla barra dei menu scegliere **Project**  >  ** \<*ProjectName*> Proprietà**progetto.
+1. Sulla barra dei menu scegliere **Project**  >  **\<*ProjectName*> Proprietà** progetto.
 
 2. Scegliere la scheda **SharePoint** .
 
@@ -34,7 +36,7 @@ ms.locfileid: "86015507"
 
 ### <a name="to-add-a-post-deployment-command"></a>Per aggiungere un comando post-distribuzione
 
-1. Sulla barra dei menu scegliere **Project**  >  ** \<*ProjectName*> Proprietà**progetto.
+1. Sulla barra dei menu scegliere **Project**  >  **\<*ProjectName*> Proprietà** progetto.
 
 2. Scegliere la scheda **SharePoint** .
 

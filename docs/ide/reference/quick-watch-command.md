@@ -1,5 +1,7 @@
 ---
 title: Comando Controllo immediato
+description: Informazioni sul comando Quick Watch e su come viene visualizzato il testo selezionato o specificato nel campo espressione della finestra controllo immediato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f6382a79884bf8c3891a3a191b594bf183efb62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6185418364e8b22e1f473308b2db9899c8778d13
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565630"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304169"
 ---
 # <a name="quick-watch-command"></a>Comando Controllo immediato
 Visualizza il testo selezionato o specificato nel campo Espressione della finestra di dialogo [Controllo immediato](../../debugger/watch-and-quickwatch-windows.md). È possibile usare questa finestra di dialogo per calcolare il valore corrente di una variabile o di un'espressione riconosciuta dal debugger o i contenuti di un registro. È anche possibile modificare il valore di una variabile non costante o i contenuti di un registro.
@@ -34,7 +36,7 @@ Debug.QuickWatchq [text]
 `text`\
 facoltativo. Il testo da aggiungere alla finestra di dialogo **Controllo immediato**.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Se `text` è omesso, il testo o la parola selezionata in corrispondenza del cursore viene aggiunta alla finestra Espressioni di controllo.
 

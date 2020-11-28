@@ -1,5 +1,7 @@
 ---
 title: Algoritmo di routing del comando | Microsoft Docs
+description: Informazioni sull'ordine di risoluzione del comando in Visual Studio poiché i comandi vengono gestiti da componenti diversi e indirizzati dal più interno al contesto più esterno.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af8d3e53e09214ce36a80ca18856085dfb2bb746
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1694e0835add6eac75986538a8abae99adf717b1
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709544"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305236"
 ---
 # <a name="command-routing-algorithm"></a>Algoritmo di routing del comando
 I comandi di Visual Studio sono gestiti da numerosi componenti diversi. I comandi vengono instradati dal contesto più interno, che è basato sulla selezione corrente, al contesto più esterno (noto anche come globale). Per ulteriori informazioni, vedere la pagina relativa alla [disponibilità dei comandi](../../extensibility/internals/command-availability.md).
@@ -38,7 +40,7 @@ I comandi di Visual Studio sono gestiti da numerosi componenti diversi. I comand
 
 7. Gerarchia corrente: la gerarchia corrente può essere il progetto a cui appartiene la finestra del documento attivo o la gerarchia selezionata in **Esplora soluzioni**. Visual Studio cerca l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia implementata nella gerarchia corrente o attiva. La gerarchia deve supportare i comandi validi ogni volta che la gerarchia è attiva, anche se una finestra del documento di un elemento di progetto ha lo stato attivo. Tuttavia, i comandi che si applicano solo quando **Esplora soluzioni** dispone dello stato attivo devono essere supportati usando l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interfaccia e i relativi <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> metodi e.
 
-     I comandi **taglia**, **copia**, **Incolla**, **Elimina**, **Rinomina**, **invio**e **DoubleClick** richiedono una gestione speciale. Per informazioni su come gestire i comandi **Delete** e **Remove** nelle gerarchie, vedere l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> interfaccia.
+     I comandi **taglia**, **copia**, **Incolla**, **Elimina**, **Rinomina**, **invio** e **DoubleClick** richiedono una gestione speciale. Per informazioni su come gestire i comandi **Delete** e **Remove** nelle gerarchie, vedere l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyDeleteHandler> interfaccia.
 
 8. Globale: se un comando non è stato gestito dai contesti citati in precedenza, Visual Studio tenta di instradarlo al pacchetto VSPackage che possiede un comando che implementa l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia. Se il pacchetto VSPackage non è già stato caricato, non viene caricato quando Visual Studio chiama il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodo. Il pacchetto VSPackage viene caricato solo quando <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> viene chiamato il metodo.
 

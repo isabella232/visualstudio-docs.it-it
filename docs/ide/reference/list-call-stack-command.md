@@ -1,5 +1,7 @@
 ---
 title: Comando Elenca stack di chiamate
+description: Informazioni sul comando Elenca stack di chiamate e su come viene visualizzato lo stack di chiamate corrente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34de768f41079311505ae7948502bb4356814ec7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 845d48f6a0fcc2b844777870bd7c9551f4a4d471
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770684"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305348"
 ---
 # <a name="list-call-stack-command"></a>Comando Elenca stack di chiamate
 Visualizza lo stack di chiamate corrente.
@@ -85,7 +87,7 @@ Thread:`n`
 
 facoltativo. Consente di visualizzare lo stack di chiamate per il thread `n`. Se non viene specificato alcun thread, visualizza lo stack di chiamate per il thread corrente.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Le modifiche apportate a opzioni o argomenti si applicano alle chiamate future di questo comando. Se si emette Debug.ListCallStackby, viene visualizzato l'intero stack di chiamate. Se si specifica un indice, ad esempio,
 
 ```cmd
