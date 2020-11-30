@@ -1,5 +1,7 @@
 ---
 title: Caricamento ritardato dei documenti | Microsoft Docs
+description: Informazioni sul caricamento ritardato dei documenti in Visual Studio e sulle estensioni di codice in modo che non eseguano query sugli elementi di un documento prima di caricarli.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f78d49013c1f0bd359d4439b73620a159a9ccc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6489c819efe0fd29cd2d120c08414cf0532ad6f
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708818"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328392"
 ---
 # <a name="delayed-document-loading"></a>Caricamento ritardato dei documenti
 
@@ -65,4 +67,4 @@ Un modo più efficiente per accedere a un documento consiste nell'usare <xref:Mi
 
 Non esiste alcuna indicazione visibile per indicare se un documento è stato inizializzato, pertanto può essere difficile determinare se l'estensione sta forzando l'inizializzazione. È possibile impostare una chiave del registro di sistema che rende più semplice la verifica, in quanto causa il titolo di ogni documento non inizializzato completamente per avere il testo *[Stub]* nel titolo.
 
-In **HKEY_CURRENT_USER \software\microsoft\visualstudio\14.0\backgroundsolutionload**impostare **StubTabTitleFormatString** su * {0} [Stub]*.
+In **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad** impostare **StubTabTitleFormatString** su *{0} [Stub]*.

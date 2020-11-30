@@ -1,5 +1,7 @@
 ---
 title: Utilizzo della legenda della visualizzazione Grafici per analizzare i test di carico
+description: Informazioni sulla visualizzazione grafici dell'analizzatore test di carico, che include un pannello legenda che visualizza informazioni per i contatori delle prestazioni per un grafico selezionato.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1455c67c3cb6d8dc99aeab91a7bfa63cce009c51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25200b691e0bebf2e3bd1c6252efb371ed9caeb2
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590800"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330069"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Usare la legenda della visualizzazione Grafici per analizzare i test di carico
 
@@ -57,7 +59,7 @@ La selezione di un elemento nella legenda consente di effettuare le operazioni s
 > [!TIP]
 > È possibile usare il pulsante del menu a discesa **Opzioni grafico** sulla barra degli strumenti dell'**Analizzatore test di carico** e selezionare **Mostra legenda** per visualizzare o nascondere il riquadro **Legenda** associato alla visualizzazione del grafico.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [Analizzare i risultati dei test di carico nella visualizzazione grafici](../test/analyze-load-test-results-in-the-graphs-view.md)

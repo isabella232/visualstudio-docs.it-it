@@ -1,5 +1,7 @@
 ---
 title: Testing unità di codice Visual C#
+description: Informazioni su come creare unit test per una classe C# in un'app UWP. Questo articolo illustra lo sviluppo basato su test.
+ms.custom: SEO-VS-2020
 ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 31fbbfaa5d16dd51776f592b89a7846936b3013f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 410d5dfefa5980bceabff99d66067987b390a615
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590865"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330082"
 ---
 # <a name="unit-test-c-code"></a>Unit test di codice C#
 
@@ -30,7 +32,7 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
 
 3. Denominare il progetto **Maths**.
 
-4. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Aggiungi**  >  **nuovo progetto**.
+4. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Aggiungi**  >  **nuovo progetto**.
 
 5. Cercare e selezionare il modello di progetto **App unit test (Windows universale)**.
 
@@ -58,7 +60,7 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
 
 ::: moniker range=">=vs-2019"
 
-2. Scegliere **Esegui tutti i test**dal menu **test** .
+2. Scegliere **Esegui tutti i test** dal menu **test** .
 
 ::: moniker-end
 
@@ -66,7 +68,7 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
 
 ## <a name="add-the-rooter-class-to-the-maths-project"></a>Aggiungere la classe Rooter al progetto Maths
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **Maths** , quindi scegliere **Aggiungi**  >  **classe**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **Maths** , quindi scegliere **Aggiungi**  >  **classe**.
 
 2. Assegnare il nome *Rooter.cs* al file di classe.
 
@@ -96,7 +98,7 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
 
 1. Aggiungere un riferimento dal progetto RooterTests all'app Maths.
 
-    1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **RooterTests** , quindi scegliere **Aggiungi**  >  **riferimento**.
+    1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **RooterTests** , quindi scegliere **Aggiungi**  >  **riferimento**.
 
     2. Nella finestra di dialogo **Aggiungi riferimento - RooterTests** espandere **Soluzione** e scegliere **Progetti**. Selezionare il progetto **Maths** .
 
@@ -128,11 +130,11 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
 
    Il nuovo test viene visualizzato in **Esplora test** nel nodo **test non eseguiti** .
 
-4. Per evitare l'errore "il payload contiene due o più file con lo stesso percorso di destinazione", in **Esplora soluzioni**espandere il nodo **Proprietà** nel progetto **Maths** , quindi eliminare il file di *Default.rd.xml* .
+4. Per evitare l'errore "il payload contiene due o più file con lo stesso percorso di destinazione", in **Esplora soluzioni** espandere il nodo **Proprietà** nel progetto **Maths** , quindi eliminare il file di *Default.rd.xml* .
 
 ::: moniker range="vs-2017"
 
-6. In **Esplora test**scegliere **Esegui tutto**.
+6. In **Esplora test** scegliere **Esegui tutto**.
 
    La soluzione viene compilata e i test vengono eseguiti e superati.
 
@@ -142,7 +144,7 @@ Questo articolo illustra *lo sviluppo basato su test*. In questo approccio viene
 
 ::: moniker range=">=vs-2019"
 
-6. In **Esplora test**scegliere **Esegui tutti i test**.
+6. In **Esplora test** scegliere **Esegui tutti i test**.
 
    La soluzione viene compilata e i test vengono eseguiti e superati.
 
@@ -200,13 +202,13 @@ Sono stati configurati i progetti di test e app e verificato che sia possibile e
 
 ::: moniker range="vs-2017"
 
-4. In **Esplora test**scegliere **Esegui tutto**.
+4. In **Esplora test** scegliere **Esegui tutto**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. In **Esplora test**scegliere **Esegui tutti i test**.
+4. In **Esplora test** scegliere **Esegui tutti i test**.
 
 ::: moniker-end
 
@@ -268,6 +270,6 @@ Il metodo **RangeTest** codifica in modo rigido il denominatore della variabile 
 > [!TIP]
 > Se si aggiunge un metodo helper a una classe di test e non si vuole che venga visualizzato in **Esplora test**, non aggiungere l' <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attributo al metodo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura dettagliata: sviluppo basato su test con Esplora test](quick-start-test-driven-development-with-test-explorer.md)

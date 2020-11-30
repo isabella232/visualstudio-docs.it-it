@@ -1,5 +1,7 @@
 ---
 title: Cenni preliminari sul riepilogo dei risultati dei test di carico
+description: Informazioni su come visualizzare il riepilogo del test di carico. Nel riepilogo dei test di carico sono riportati i risultati principali in un formato compatto e di agevole lettura.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7df3324c2182c376cb9547a4192fca3e601b3dd5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10e3e990637faf15c64aa6b0f18c4eb9114bea7b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75584491"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328821"
 ---
 # <a name="load-test-results-summary-overview"></a>Cenni preliminari sul riepilogo dei risultati dei test di carico
 
@@ -127,7 +129,7 @@ La sezione relativa alle risorse controller e agenti contiene un elenco dei comp
 
 ## <a name="errors"></a>Errors
 
-La sezione contiene un elenco di tutti gli errori che si sono verificati durante il test di carico. Sono visualizzati il tipo e il sottotipo di errore, il conteggio e l'ultimo messaggio. È possibile scegliere un errore per aprire la tabella **Errori **ed esaminare altri dettagli sull'errore. Per ulteriori informazioni, vedere [analizzare i risultati e gli errori dei test di carico nella visualizzazione tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+La sezione contiene un elenco di tutti gli errori che si sono verificati durante il test di carico. Sono visualizzati il tipo e il sottotipo di errore, il conteggio e l'ultimo messaggio. È possibile scegliere un errore per aprire la tabella **Errori** ed esaminare altri dettagli sull'errore. Per ulteriori informazioni, vedere [analizzare i risultati e gli errori dei test di carico nella visualizzazione tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
 > È possibile comprimere ed espandere questa sezione scegliendo la freccia alla sinistra del titolo della sezione.
@@ -136,7 +138,7 @@ La sezione contiene un elenco di tutti gli errori che si sono verificati durante
 
 È possibile stampare il riepilogo del test di carico scegliendo **Stampa** dal menu di scelta rapida del riepilogo. Per visualizzare un'anteprima della stampa, scegliere **Anteprima di stampa** dal menu di scelta rapida del riepilogo. È anche possibile stampare direttamente dalla schermata di anteprima.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Analisi delle violazioni delle regole di soglia](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

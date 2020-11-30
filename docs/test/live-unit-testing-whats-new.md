@@ -1,5 +1,7 @@
 ---
 title: Novità di Live Unit Testing in Visual Studio 2017
+description: Questo articolo descrive le nuove funzionalità aggiunte a Live Unit Testing in ogni versione di Visual Studio a partire da Visual Studio 2017 versione 15,3.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 10/11/2017
 ms.topic: conceptual
@@ -11,12 +13,12 @@ ms.author: mikejo
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: cc6a7a25ebd2f7d07dcb887952b82bda34aaad35
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ae1caef04c1ccd1c51c38ddef5dc8c783bdbfaa9
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851463"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328834"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Novità di Live Unit Testing per Visual Studio 2017
 
@@ -26,7 +28,7 @@ In questo argomento vengono elencate le nuove funzionalità aggiunte a Live Unit
 
 A partire da Visual Studio 2017 versione 15.4, Live Unit Testing include miglioramenti in numerose aree:
 
-- **Individuazione migliorata**. Per gli utenti che non conoscono la funzionalità Live Unit Testing, l'IDE di Visual Studio visualizza una barra color oro che cita Live Unit Testing ogni volta che l'utente apre una soluzione che include unit test ma senza che Live Unit Testing sia abilitato. Le informazioni presentate nella barra color oro offrono all'utente altri dettagli su Live Unit Testing e su come abilitarlo. La barra color oro consente di visualizzare informazioni anche quando i prerequisiti di Live Unit Testing non vengono soddisfatti. Sono inclusi:
+- **Individuazione migliorata**. Per gli utenti che non conoscono la funzionalità Live Unit Testing, l'IDE di Visual Studio visualizza una barra color oro che cita Live Unit Testing ogni volta che l'utente apre una soluzione che include unit test ma senza che Live Unit Testing sia abilitato. Le informazioni presentate nella barra color oro offrono all'utente altri dettagli su Live Unit Testing e su come abilitarlo. La barra color oro consente di visualizzare informazioni anche quando i prerequisiti di Live Unit Testing non vengono soddisfatti. Queste includono:
 
   - Mancano gli adattatori di test.
   - Sono presenti versioni precedenti degli adattatori di test.
@@ -64,7 +66,7 @@ Oltre a queste aggiunte principali, Live Unit Testing include anche i migliorame
   - Per NUnit: `[Category("SkipWhenLiveUnitTesting")]`
   - Per MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Introduzione di Live Unit Testing](live-unit-testing-intro.md)
 - [Live Unit Testing con Visual Studio](live-unit-testing.md)

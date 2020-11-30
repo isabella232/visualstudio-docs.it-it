@@ -1,5 +1,7 @@
 ---
 title: Distribuzione di tipi di progetto | Microsoft Docs
+description: Informazioni su come distribuire i tipi di progetto di codice gestito usando un nuovo aggregatore di tipi di progetto e Windows Installer pacchetto per la ridistribuzione in Visual Studio SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 835e85ade4d309d0b5692aa9b857476cd6b5927a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b1b015f29b6521482013a77bbcf7c44d8a79afa6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708780"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329876"
 ---
 # <a name="deploy-project-types"></a>Distribuire i tipi di progetto
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] consente di installare un nuovo aggregatore di tipi di progetto (*ProjectAggregator2.dll*) e anche un pacchetto di Windows Installer per la ridistribuzione (*ProjectAggregator2.msi*). È necessario usare il nuovo aggregatore per i tipi di progetto di codice gestito. ProjectAggregator2 funziona in base alle limitazioni di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Project aggregator che impedisce il corretto funzionamento dei tipi di progetto di codice gestito. I passaggi seguenti descrivono come modificare il pacchetto VSPackage per usare il nuovo aggregatore.

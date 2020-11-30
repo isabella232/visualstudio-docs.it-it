@@ -1,5 +1,7 @@
 ---
 title: Testare un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente
+description: Informazioni su come usare i test codificati dell'interfaccia utente durante il test di un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente. Questa funzionalità richiede Visual Studio Enterprise.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99e703d10d2bc6ed8fd573f4973e73f7ad40a937
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93ae6aaa77a133a0d1805554a38b2714bff5b312
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286583"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330160"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testare un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente
 
@@ -23,7 +25,7 @@ In questo argomento viene illustrato l'uso dei test codificati dell'interfaccia 
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requisiti**
+**Requirements**
 
 - Visual Studio Enterprise
 
@@ -139,7 +141,7 @@ namespace ContosoProject
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>

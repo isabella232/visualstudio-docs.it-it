@@ -1,5 +1,7 @@
 ---
 title: Impostare i test codificati dell'interfaccia utente per l'attesa di eventi specifici
+description: Informazioni su come indicare a un test codificato dell'interfaccia utente di attendere che si verifichino determinati eventi, ad esempio la visualizzazione di una finestra o la visualizzazione della barra di stato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -7,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0bd0135ca90f96c2275248da7d116ecfd92e01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 401888eee7fb5952c69c953824f3959c2b456a4d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286778"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329562"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Impostare i test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione
 
@@ -20,7 +22,7 @@ Nella riproduzione di un test codificato dell'interfaccia utente è possibile fa
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requisiti**
+**Requirements**
 
 Visual Studio Enterprise
 
@@ -105,7 +107,7 @@ Playback.Wait() chiama internamente Thread.Sleep() (dopo il calcolo precedente) 
 > [!TIP]
 > L'Editor di test codificati dell'interfaccia utente consente di modificare facilmente i test. Con l'Editor di test codificati dell'interfaccia utente è possibile individuare, visualizzare e modificare i metodi di test. È anche possibile modificare le azioni dell'interfaccia utente e i relativi controlli associati nella mappa di controllo dell'interfaccia utente. Per altre informazioni, vedere [modificare i test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)
 - [Creare test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md)

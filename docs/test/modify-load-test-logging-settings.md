@@ -1,5 +1,7 @@
 ---
 title: Impostazioni di registrazione dei test di carico
+description: Informazioni su come modificare le impostazioni di registrazione dei test di carico per controllare la quantità di dati sulle prestazioni raccolti, che può generare file di risultati molto grandi.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 9649226a-857d-41ef-8ec7-047b6e498033
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0c0a9967f1248c6dc23c5d70be35788ad9e05eb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 464429ef516d3f4cd6dadd013f274139eb106a57
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566306"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329198"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modificare le impostazioni di registrazione dei test di carico
 
@@ -28,6 +30,6 @@ Durante l'esecuzione del test di carico, il *test controller* effettua lo spooli
 |**Salvare i log se un test di carico non riesce:** è possibile specificare se si vuole salvare il log di test quando un test di carico non riesce.|-   [Procedura: specificare se i test non superati vengono salvati in log di test](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 |**Impostare le dimensioni massime per il file di log:** è possibile modificare il file di configurazione XML associato al servizio del test controller per specificare le dimensioni massime da usare per il file di log.|Modificare `<add key="LogSizeLimitInMegs" value="20"/>` nel file di configurazione XML *QTCcontroller.exe.config*.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Configurare le impostazioni di esecuzione dei test di carico](../test/configure-load-test-run-settings.md)

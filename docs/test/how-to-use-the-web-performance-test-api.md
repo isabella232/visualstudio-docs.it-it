@@ -1,5 +1,7 @@
 ---
 title: API del test delle prestazioni Web
+description: Informazioni sull'API del test delle prestazioni Web, che supporta test delle prestazioni Web codificati, plug-in di test, plug-in di richiesta, richieste e regole di estrazione/convalida.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b7320a38d474748713d687f4ee00b5b91f0208
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4802d95c46d1187911f4bbc134cc0c50ce08b18
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287077"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329718"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Procedura: Usare l'API del test delle prestazioni Web
 
@@ -51,7 +53,7 @@ ms.locfileid: "85287077"
 
          Viene visualizzata la finestra di dialogo **Aggiungi plug-in test Web**.
 
-    2. In **Seleziona un plug-in selezionare**la classe del plug-in del test delle prestazioni Web.
+    2. In **Seleziona un plug-in selezionare** la classe del plug-in del test delle prestazioni Web.
 
     3. Nel riquadro **Proprietà per il plug-in selezionato** impostare i valori iniziali per il plug-in da usare in fase di esecuzione.
 
@@ -64,7 +66,7 @@ ms.locfileid: "85287077"
 
      Per un esempio di implementazione di <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, vedere [Procedura: Creare un plug-in di test prestazioni Web](../test/how-to-create-a-web-performance-test-plug-in.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [Creare codice personalizzato e plug-in per test di carico](../test/create-custom-code-and-plug-ins-for-load-tests.md)

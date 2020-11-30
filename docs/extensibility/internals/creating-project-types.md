@@ -1,5 +1,7 @@
 ---
 title: Creazione di tipi di progetto | Microsoft Docs
+description: Informazioni su come estendere Visual Studio tramite la progettazione, la creazione e la registrazione di un nuovo tipo di progetto che supporta le attività di programmazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2398b63b8cd52784252cfc764bb6c6a30e1accc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4038a122c6d2ec5f6ed29df6e529b2bff2e2bb71
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709073"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329926"
 ---
 # <a name="create-project-types"></a>Creazione di tipi di progetto
 È possibile estendere creando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] un nuovo tipo di progetto. Per creare un nuovo tipo di progetto, è necessario comprendere alcuni concetti e completare una serie di passaggi. Negli argomenti seguenti viene fornita una panoramica su come creare i tipi di progetto.

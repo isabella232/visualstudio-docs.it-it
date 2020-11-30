@@ -1,5 +1,7 @@
 ---
 title: Tempo di risposta delle pagine in un test di carico
+description: Il tempo necessario per il caricamento di una pagina Web è il tempo di risposta. Informazioni su come impostare un obiettivo del tempo di risposta per ogni richiesta di pagina Web nel test delle prestazioni Web.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1affda002290a191fde6d5115094a2185ac8bfcb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a20e8dc21e2ff5d76ea582b6ea3a9a0e36f7ed74
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287051"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328652"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Procedura: Visualizzare il tempo di risposta delle pagine Web in un test di carico usando l'Analizzatore test di carico
 
@@ -57,7 +59,7 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
    |**95%**|Novantacinquesimo percentile per il tempo di risposta. Ciò indica che il 95% delle pagine ha risposto più velocemente di questo numero, mentre il 5% più lentamente.|
    |**99%**|Novantanovesimo percentile per il tempo di risposta. Ciò indica che il 99% delle pagine ha risposto più velocemente di questo numero, mentre il 1% più lentamente.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
    |**Max**|Tempo di risposta massimo della pagina.<br /><br /> Per impostazione predefinita, questi dati non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
-   |**Deviazione standard**|Per impostazione predefinita, i dati della deviazione standard non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
+   |**Dev std**|Per impostazione predefinita, i dati della deviazione standard non vengono raccolti. Per raccoglierli, nell'**Editor test di carico** sotto il nodo **Impostazioni di esecuzione** selezionare il nodo dell'impostazione di esecuzione da modificare. Nella finestra **Proprietà**, per la proprietà **Intervallo archiviazione dettagli**, selezionare **AllIndividualDetails**.|
    |**Tempo di risposta pagina**|Tempo di risposta medio per tutte le richieste effettuate per la pagina Web.|
    |**Obiettivo**|Tempo pagina obiettivo. Si tratta di un valore costante per la pagina. **Nota:**  Il tempo pagina obiettivo viene visualizzato solo quando è stato definito l'obiettivo per la richiesta nel test delle prestazioni Web.|
    |**% corrispondenza a obiettivo**|Percentuale delle richieste effettuate per la pagina web che soddisfano il tempo di risposta obiettivo.|
@@ -70,7 +72,7 @@ Se il test web viene eseguito sotto stress in un test di carico, sarà possibile
 
 Per visualizzare i dati sul tempo di risposta in un grafico:
 
-1. Nell' **analizzatore test di carico**scegliere **grafici** sulla barra degli strumenti per assicurarsi che venga visualizzato il grafico.
+1. Nell' **analizzatore test di carico** scegliere **grafici** sulla barra degli strumenti per assicurarsi che venga visualizzato il grafico.
 
 2. Nella finestra **Contatori** espandere il nodo dello scenario desiderato, ad esempio `Scenario1`.
 
@@ -84,14 +86,14 @@ Per visualizzare i dati sul tempo di risposta in un grafico:
 
     I dati vengono aggiunti al grafico.
 
-7. Opzionale Ripetere il passaggio precedente per **Media tempo pagina**, **obiettivo tempo di risposta pagina**e **Totale pagine**.
+7. Opzionale Ripetere il passaggio precedente per **Media tempo pagina**, **obiettivo tempo di risposta pagina** e **Totale pagine**.
 
    > [!NOTE]
    > Il valore **Page Response Time Goal** è costante.
 
    Per altre informazioni, vedere [analizzare i risultati dei test di carico nella visualizzazione grafici](../test/analyze-load-test-results-in-the-graphs-view.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 - [Procedura: accedere ai risultati dei test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md)

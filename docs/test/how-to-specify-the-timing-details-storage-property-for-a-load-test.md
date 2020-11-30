@@ -1,5 +1,6 @@
 ---
 title: Proprietà intervallo archiviazione dettagli (impostazione esecuzione test di carico)
+description: Informazioni su come modificare la proprietà Intervallo archiviazione dettagli per un'impostazione di esecuzione. I valori validi sono tutti i singoli dettagli, nessuno e solo le statistiche.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 132c55b4cd6f716d8983358064f749eabeb9ba88
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 94603c2da0eb339df52aa58e3b2bb5666b75ead7
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810562"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330017"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Procedura: Specificare la proprietà Intervallo archiviazione dettagli per un'impostazione di esecuzione test di carico
 
@@ -36,7 +37,7 @@ Usando l'Editor test di carico, è possibile modificare un valore della propriet
 
   **Considerazioni per la proprietà Intervallo archiviazione dettagli**
 
-  Se la proprietà **Intervallo archiviazione dettagli** è abilitata, il tempo richiesto per eseguire ogni singolo test, transazione e pagina durante il test di carico verrà archiviato nel repository dei risultati del test di carico. Ciò consente di visualizzare i dati del 90 ° e del 95 ° percentile nell' **analizzatore test di carico** nelle tabelle **test**, **transazioni**e **pagine** .
+  Se la proprietà **Intervallo archiviazione dettagli** è abilitata, il tempo richiesto per eseguire ogni singolo test, transazione e pagina durante il test di carico verrà archiviato nel repository dei risultati del test di carico. Ciò consente di visualizzare i dati del 90 ° e del 95 ° percentile nell' **analizzatore test di carico** nelle tabelle **test**, **transazioni** e **pagine** .
 
   Se la proprietà **Intervallo archiviazione dettagli** è abilitata, impostando il valore su **StatisticsOnly** o **AllIndividualDetails**, tutti i singoli test, pagine e transazioni vengono temporizzati e dati percentili vengono calcolati dai dati di intervallo individuali. La differenza per quanto riguarda l'opzione **StatisticsOnly** consiste nel fatto che i singoli dati di intervallo vengono eliminati dal repository dopo il calcolo dei dati percentili. In questo modo si riduce la quantità di spazio richiesta nel repository quando si utilizzano i dettagli dell'intervallo. Tuttavia, potrebbe essere necessario elaborare i dati dettaglio dell'intervallo in altri modi mediante strumenti SQL, nel qual caso deve essere usata l'opzione **AllIndividualDetails** in modo che i dati dettaglio dell'intervallo siano disponibili per quell'elaborazione. Inoltre, se si imposta la proprietà su **AllIndividualDetails**, è possibile analizzare l'attività utente virtuale utilizzando il **grafico attività utente virtuale** nell' **analizzatore test di carico** al termine dell'esecuzione del test di carico. Per altre informazioni, vedere [Analizzare l'attività utente virtuale nella visualizzazione Dettagli](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
@@ -60,7 +61,7 @@ Usando l'Editor test di carico, è possibile modificare un valore della propriet
 
      Dopo aver configurato l'impostazione **Tutti i singoli dettagli** per la proprietà **Intervallo archiviazione dettagli** è possibile eseguire il test di carico e visualizzare il **Grafico attività utente virtuale**. Per ulteriori informazioni, vedere [procedura: analizzare le operazioni svolte dagli utenti virtuali durante un test di carico](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Analisi dell'attività utente virtuale nella visualizzazione Dettagli](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [Procedura dettagliata: uso del grafico attività utente virtuale per isolare i problemi](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

@@ -1,5 +1,7 @@
 ---
 title: Eseguire uno unit test come processo a 64 bit
+description: Informazioni su come eseguire unit test e acquisire informazioni code coverage come processo a 64 bit. È necessario disporre di un computer a 64 bit.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3c5cb51232457a43200c8a71ace51cc4b8a63e02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d18a97a3cf8f680e7bfe3d679e8e57f7cc716fb
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88507986"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329068"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Eseguire uno unit test come processo a 64 bit
 
@@ -45,7 +47,7 @@ Se si dispone di un computer a 64 bit, è possibile eseguire unit test e acquisi
 
    Specificare `<TargetPlatform>x64</TargetPlatform>` in un file con estensione *runsettings*. Un vantaggio di questo metodo consiste nel specificare i gruppi di impostazioni in file diversi e passare rapidamente da impostazioni diverse. È inoltre possibile copiare le impostazioni tra soluzioni. Per altre informazioni, vedere [Configurare unit test usando un file con estensione runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md)
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)

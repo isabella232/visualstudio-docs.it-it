@@ -1,5 +1,7 @@
 ---
 title: Installare framework di unit test di terze parti
+description: Esplora test di Visual Studio può eseguire test da qualsiasi framework di unit test che ha sviluppato un'interfaccia di adattatore per Esplora test.
+ms.custom: SEO-VS-2020
 ms.date: 07/09/2020
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c274f203b9bf2746716c0625c61141aaa332977a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6433d665157c186a390e2963ef7ad1447b2f982
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387187"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329978"
 ---
 # <a name="install-unit-test-frameworks"></a>Installare framework di unit test
 
@@ -43,7 +45,7 @@ Eseguire l'aggiornamento all'adattatore di test stabile più recente per una mig
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Per eseguire l'aggiornamento alla versione dell'adattatore di test stabile più recente
 
-1. Aprire Gestione pacchetti NuGet per la soluzione passando a **strumenti**gestione  >  **pacchetti NuGet**  >  **Gestisci pacchetti NuGet per la soluzione**.
+1. Aprire Gestione pacchetti NuGet per la soluzione passando a **strumenti** gestione  >  **pacchetti NuGet**  >  **Gestisci pacchetti NuGet per la soluzione**.
 
 2. Fare clic sulla scheda **Aggiornamenti** e cercare gli adattatori di test MSTest, NUnit o xUnit installati.
 
@@ -53,6 +55,6 @@ Eseguire l'aggiornamento all'adattatore di test stabile più recente per una mig
 
    ![Aggiornare un adattatore di test](media/install-adapter-upgrade.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)

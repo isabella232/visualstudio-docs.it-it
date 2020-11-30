@@ -1,5 +1,7 @@
 ---
 title: Testare un'app UWP con un test codificato dell'interfaccia utente
+description: Informazioni su come creare un test codificato dell'interfaccia utente per un'app piattaforma UWP (Universal Windows Platform) creando un'app UWP per testare e creare un test codificato dell'interfaccia utente.
+ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: how-to
 author: mikejo5000
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: aad17d244d70051a363a4cde294c592968093ba0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6ec6750a48b8902ec77e8982beb774e306c8d1d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286752"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330238"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Creare un test codificato dell'interfaccia utente per testare un'app UWP
 
@@ -226,7 +228,7 @@ Il primo passaggio consiste nel creare una semplice app UWP da testare.
 
 **R**: Qualsiasi modifica del codice apportata nel file *UIMapDesigner.cs* viene sovrascritta ogni volta che si genera codice usando **Generatore di test codificati dell'interfaccia utente**. Se è necessario modificare un metodo registrato, copiarlo nel file *UIMap.cs* e rinominarlo. Il file *UIMap.cs* può essere usato per eseguire l'override dei metodi e delle proprietà nel file *UIMapDesigner.cs* . Rimuovere il riferimento al metodo originale nel file *Coded UITest.cs* e sostituirlo con il nome del metodo rinominato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)
 - [Impostare una proprietà di automazione univoca dei controlli UWP per il test](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

@@ -1,5 +1,6 @@
 ---
 title: Tempo di preparazione del passaggio per i test di carico
+description: Informazioni su come impostare la proprietà tempo di preparazione passaggio nella Finestra Proprietà. La proprietà Tempo di preparazione passaggio viene usata solo con un modello di carico per passaggio.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83ec0866407ef22e2f6c12e21207f8616b9a9477
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b3beb0b8bb026f996583ab3f209bb525a45a0be2
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810575"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328964"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Procedura: Specificare la proprietà relativa al tempo di preparazione del passaggio per un modello di carico passaggio
 
@@ -69,7 +70,7 @@ La proprietà **Tempo di preparazione passaggio** consente l'aumento graduale, a
 
 6. Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore di **Tempo di preparazione passaggio**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)
 - [Test controller e agenti di test](configure-test-agents-and-controllers-for-load-tests.md)

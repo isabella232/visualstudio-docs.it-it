@@ -1,5 +1,6 @@
 ---
 title: Test controller/requisiti dell'agente di test (test di carico)
+description: Informazioni sui requisiti di test controller e dell'agente di test per i test di carico. Visual Studio supporta diversi tipi di test.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a5d4e0562ed15aa44beba858f46870bf672d46ba
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 6668e669fdc26db9d81c7176aeee16e5af42987b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810549"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330186"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisiti del controller e dell'agente di test per il test di carico
 
@@ -60,6 +61,6 @@ Per evitare confusione e semplificare le operazioni, è consigliabile configurar
 
 È possibile monitorare i computer dell'agente per determinarne le esigenze in termini di risorse osservando i processi di *QTAgent\*.exe* che vengono eseguiti e scalati durante i test. Il più frequente collo di bottiglia nei processi *QTAgent\*.exe* è l'uso della CPU. Se l'utilizzo della CPU è costantemente superiore al 90%, è un'indicazione che l'agente è sovraccarico. Un altro collo di bottiglia frequente è l'utilizzo memoria. Per i test complessi, il monitoraggio di queste risorse può aiutare a determinare se è necessario aumentare le risorse dei computer o distribuire i test in modo diverso.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md)

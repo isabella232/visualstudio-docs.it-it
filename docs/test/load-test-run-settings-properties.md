@@ -1,5 +1,7 @@
 ---
 title: Impostazioni di esecuzione dei test di carico
+description: Informazioni su come creare e archiviare più impostazioni di esecuzione per ogni test di carico e quindi selezionare una particolare impostazione da usare quando si esegue il test.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8898a474888ce9efbf4c91a5251bf8fe7036fe5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 651d3937e51be4ec1deeb748f2e4f32cfd08ee81
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75584465"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329250"
 ---
 # <a name="load-test-run-settings-properties"></a>Proprietà delle impostazioni di esecuzione del test di carico
 
@@ -34,7 +36,7 @@ Per altre informazioni, vedere [Configurare le impostazioni di esecuzione dei te
 |**Numero massimo di URL richiesta restituiti**|Numero massimo di URL di richiesta di test delle prestazioni Web univoci da includere nei risultati del test di carico.<br /><br /> L'eventuale aumento di tale numero comporterà un aumento della dimensione e del tempo di elaborazione dei risultati del test di carico.|
 |**Numero massimo di violazioni di soglia**|Numero massimo di violazioni di soglia da salvare per questo test di carico.<br /><br /> L'eventuale aumento di tale numero comporterà un aumento della dimensione e del tempo di elaborazione dei risultati del test di carico.|
 |**Esegui unit test in dominio applicazione**|Valore Boolean che determina se ogni assembly di unit test verrà eseguito in un dominio dell'applicazione distinto quando il test di carico contiene unit test. L'impostazione predefinita è True.<br /><br /> Se per la corretta esecuzione degli unit test non è richiesto un file app.config o un dominio applicazione separato, gli unit test potrebbero essere eseguiti più velocemente impostando il valore di questa proprietà su `False`.|
-|**Name**|Nome dell'impostazione di esecuzione come visualizzato nel nodo **Impostazioni esecuzione test** dell'**Editor test di carico**.|
+|**Nome**|Nome dell'impostazione di esecuzione come visualizzato nel nodo **Impostazioni esecuzione test** dell'**Editor test di carico**.|
 |**Livello di convalida**|Con questo valore viene definito il livello più elevato della regola di convalida che sarà eseguita in un test di carico. Le regole di convalida sono associate alle richieste di test delle prestazioni Web. A ogni regola di convalida è associato un livello di convalida: **Alto**, **Medio** o **Basso**. Questa impostazione di esecuzione del test di carico consente di specificare quali regole di convalida saranno attive durante l'esecuzione del test delle prestazioni Web nel test di carico. Se, ad esempio, questa impostazione di esecuzione è impostata su **Medio**, verranno eseguite tutte le regole di convalida contrassegnate con livello **Medio** o **Basso**.|
 
 ## <a name="logging-properties"></a>Proprietà della registrazione
@@ -114,6 +116,6 @@ Per modificare le impostazioni di esecuzione test:
 > [!NOTE]
 > Anche i mapping insiemi di contatori fanno parte delle impostazioni di esecuzione. Per altre informazioni, vedere [Specificare gli insiemi di contatori e le regole di soglia per i computer in un test di carico](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Configurare le impostazioni di esecuzione dei test di carico](../test/configure-load-test-run-settings.md)

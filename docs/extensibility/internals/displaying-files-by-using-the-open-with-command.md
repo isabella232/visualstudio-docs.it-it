@@ -1,5 +1,7 @@
 ---
 title: Visualizzazione di file tramite il comando Apri con | Microsoft Docs
+description: Informazioni su come un progetto può chiamare il comando Apri con in Visual Studio Integrated Development Environment (IDE) per visualizzare i file.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4051793077e613981e1dd5b44f1736878f5853e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2cb6bd44148d470cac68addc09db9e9207e9d70
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708584"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329692"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>Visualizzare i file tramite il comando Apri con
 Un progetto può richiedere all'IDE di visualizzare la finestra di dialogo **Apri con** . Questa richiesta richiede all'utente di aprire un file con una selezione di editor standard. La procedura seguente descrive questo processo:
@@ -31,7 +33,7 @@ Un progetto può richiedere all'IDE di visualizzare la finestra di dialogo **Apr
 
 3. Non appena l'utente seleziona un elemento dalla finestra di dialogo **Apri con** , l'IDE apre il documento chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodo. Per altre informazioni, vedere [procedura: aprire gli editor standard](../../extensibility/how-to-open-standard-editors.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Apri e Salva elementi progetto](../../extensibility/internals/opening-and-saving-project-items.md)
 - [Visualizzare i file tramite il comando Apri file](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
 - [Procedura: aprire gli editor standard](../../extensibility/how-to-open-standard-editors.md)

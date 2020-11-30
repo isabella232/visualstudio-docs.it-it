@@ -1,5 +1,7 @@
 ---
 title: Creazione di pagine di opzioni | Microsoft Docs
+description: Informazioni su come creare una pagina di opzioni nel menu strumenti di Visual Studio implementando una classe DialogPage dal framework di pacchetto gestito.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 368efaa78a56723d4a72c482bea9ee739385127e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4759b3590fcde116e6f106ac326ff875e9566c43
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709155"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328639"
 ---
 # <a name="create-options-pages"></a>Crea pagine opzioni
 Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Framework di pacchetto gestito, le classi derivate da <xref:Microsoft.VisualStudio.Shell.DialogPage> estendono l'IDE aggiungendo le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pagine **Opzioni** nel menu **strumenti** .
@@ -82,6 +84,6 @@ Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Framework di pa
  [!code-csharp[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_3.cs)]
  [!code-vb[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_3.vb)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estendi impostazioni utente e opzioni](../../extensibility/extending-user-settings-and-options.md)
 - [Supporto di automazione per le pagine opzioni](../../extensibility/internals/automation-support-for-options-pages.md)

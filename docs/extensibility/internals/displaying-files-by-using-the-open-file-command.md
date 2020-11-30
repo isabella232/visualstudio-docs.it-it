@@ -1,5 +1,7 @@
 ---
 title: Visualizzazione di file tramite il comando Apri file | Microsoft Docs
+description: Informazioni sul modo in cui Visual Studio Integrated Development Environment (IDE) gestisce il comando Apri file nel menu file per visualizzare i file.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc18442c55b6989c4d8668e1425fdd62a2d4b1b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a932a9b56a63069e010cb2b945de25564c2d135
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708602"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328340"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Visualizzare i file tramite il comando Apri file
 Nei passaggi seguenti viene descritto il modo in cui l'IDE gestisce il comando **Apri file** , disponibile nel menu **file** di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . I passaggi descrivono inoltre come i progetti devono rispondere alle chiamate che provengono da questo comando.
@@ -51,7 +53,7 @@ Nei passaggi seguenti viene descritto il modo in cui l'IDE gestisce il comando *
 
 5. Il progetto ha quindi la possibilità di aprire il file usando un editor standard o un editor specifico del progetto. Per altre informazioni, vedere [procedura: aprire editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md) e [procedura: aprire gli editor standard](../../extensibility/how-to-open-standard-editors.md)rispettivamente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzare i file tramite il comando Apri con](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
 - [Apri e Salva elementi progetto](../../extensibility/internals/opening-and-saving-project-items.md)
 - [Procedura: aprire editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md)

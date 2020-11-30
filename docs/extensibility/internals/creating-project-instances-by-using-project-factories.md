@@ -1,5 +1,7 @@
 ---
 title: Creazione di istanze di progetto tramite Project Factory | Microsoft Docs
+description: Informazioni su come creare istanze della classe di progetto tramite Project Factory in Visual Studio Integrated Development Environment (IDE).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31ba5dd11af18f8a723b2271544eff2bd292e2e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59ad41bda80337fd0adc65d4792adbbbb1cf38f1
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709054"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328600"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Creare istanze di progetto tramite Project Factory
 I tipi di progetto in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usano una *Factory di progetto* per creare istanze di oggetti progetto. Una factory del progetto è simile a una class factory standard per oggetti COM cocreabili. Tuttavia, gli oggetti di progetto non sono cocreabili; possono essere creati solo tramite una factory del progetto.
@@ -38,13 +40,13 @@ I tipi di progetto in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md
 
    I tipi di progetto sono associati a una particolare estensione di file. Quando un utente tenta di aprire un file di progetto esistente o tenta di creare un nuovo progetto clonando un modello, l'IDE usa l'estensione del file per determinare il GUID del progetto corrispondente.
 
-   Non appena l'IDE determina se è necessario creare un nuovo progetto o aprire un progetto esistente di un determinato tipo, l'IDE usa le informazioni nel registro di sistema in **[HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio\8.0\Projects]** per trovare il VSPackage che implementa la factory del progetto richiesta. Il pacchetto VSPackage viene caricato dall'IDE. Nel <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> metodo, il pacchetto VSPackage deve registrare la factory del progetto con l'IDE chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> metodo.
+   Non appena l'IDE determina se è necessario creare un nuovo progetto o aprire un progetto esistente di un determinato tipo, l'IDE usa le informazioni nel registro di sistema in **[HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects]** per trovare il VSPackage che implementa la factory del progetto richiesta. Il pacchetto VSPackage viene caricato dall'IDE. Nel <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> metodo, il pacchetto VSPackage deve registrare la factory del progetto con l'IDE chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> metodo.
 
    Il metodo principale dell' `IVsProjectFactory` interfaccia è <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> , che dovrebbe gestire due scenari: l'apertura di un progetto esistente e la creazione di un nuovo progetto. La maggior parte dei progetti archivia lo stato del progetto in un file di progetto. In genere, i nuovi progetti vengono creati facendo una copia del file modello passato al `CreateProject` metodo e quindi aprendo la copia. Viene creata un'istanza dei progetti esistenti aprendo direttamente il file di progetto passato al `CreateProject` metodo. Il `CreateProject` metodo può visualizzare all'utente funzionalità aggiuntive dell'interfaccia utente, se necessario.
 
    Un progetto non può inoltre utilizzare alcun file e, al contrario, archiviare lo stato del progetto in un meccanismo di archiviazione diverso da quello file system, ad esempio un database o un server Web. In questo caso, il parametro del nome file passato al `CreateProject` metodo non è in realtà un percorso di file System ma una stringa univoca, ovvero un URL, per identificare i dati del progetto. Non è necessario copiare i file modello passati a `CreateProject` per attivare la sequenza di costruzione appropriata da eseguire.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>

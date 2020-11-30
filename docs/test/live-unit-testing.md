@@ -1,5 +1,7 @@
 ---
 title: Live Unit Testing
+description: Informazioni sulle Live Unit Testing durante lo sviluppo di applicazioni, inclusi i Framework supportati e su come configurare Live Unit Testing.
+ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1084b79fceda34cceed51ae8d4a5a84d7ebfb016
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82ed41514109887d32f38faf4f965c923864ae32
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249896"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329354"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Come configurare e usare Live Unit Testing
 
@@ -198,8 +200,8 @@ Per selezionare i singoli progetti negli unit test, eseguire le operazioni segue
 
 Per includere o escludere singoli metodi di test, è possibile usare la finestra dell'editor del codice. Fare clic con il pulsante destro del mouse sulla firma del metodo di test nella finestra dell'editor di codice e quindi selezionare una delle opzioni seguenti:
 
-- **Live unit testing**  >  **Includi \<selected method> **
-- **Live unit testing**  >  **Escludi \<selected method> **
+- **Live unit testing**  >  **Includi \<selected method>**
+- **Live unit testing**  >  **Escludi \<selected method>**
 - **Live unit testing**  >  **Escludi tutto \<selected method> tranne**
 
 ### <a name="exclude-tests-programmatically"></a>Escludi i test a livello di codice
@@ -218,7 +220,7 @@ Usare gli attributi seguenti per escludere un intero assembly di test da Live Un
 - Per NUnit: `[assembly: Category("SkipWhenLiveUnitTesting")]`
 - Per MSTest: `[assembly: TestCategory("SkipWhenLiveUnitTesting")]`
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti di test del codice](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Blog di Live Unit Testing](https://devblogs.microsoft.com/visualstudio/live-unit-testing-in-visual-studio-2017-enterprise/)

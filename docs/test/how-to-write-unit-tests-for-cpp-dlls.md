@@ -1,5 +1,7 @@
 ---
 title: Scrivere unit test per DLL C++
+description: Informazioni sui diversi modi per testare il codice DLL, a seconda che la DLL esporti le funzioni che si desidera testare.
+ms.custom: SEO-VS-2020
 ms.date: 05/01/2019
 ms.topic: how-to
 ms.author: corob
@@ -7,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 3bfbe5fd0147a04d6fc6142fd1d722f8f2304586
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7eb7b7be524e20ca87c70c3f1f771f4f8a01141
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287038"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328626"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Scrivere unit test per le DLL C++ in Visual Studio
 
@@ -42,7 +44,7 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
 - Se i test devono usare membri che non vengono esportati dal progetto della DLL e il progetto sottoposto al test viene compilato come libreria dinamica, può essere utile convertirlo in una libreria statica.
 
-  1. In **Esplora soluzioni**scegliere **Proprietà**dal menu di scelta rapida del progetto sottoposto a test. Si apre la finestra **Proprietà** del progetto.
+  1. In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto sottoposto a test. Si apre la finestra **Proprietà** del progetto.
 
   2. Scegliere **proprietà di configurazione**  >  **generale**.
 
@@ -100,13 +102,13 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
       ::: moniker-end
 
-  2. In **Esplora soluzioni**scegliere **Proprietà**dal menu di scelta rapida del progetto di test.
+  2. In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto di test.
 
   3. Scegliere **proprietà di configurazione**  >  **linker**  >  **immettere**  >  **dipendenze aggiuntive**.
 
        Scegliere **Modifica** e aggiungere i nomi dei file con estensione **obj** o **lib**. Non usare nomi di percorso completo.
 
-  4. Scegliere **proprietà di configurazione**  >  **linker**  >  **General**  >  **directory aggiuntive libreria**generale.
+  4. Scegliere **proprietà di configurazione**  >  **linker**  >  **General**  >  **directory aggiuntive libreria** generale.
 
        Scegliere **Modifica** e aggiungere il percorso della directory dei file con estensione **obj** o **lib**. Il percorso è in genere contenuto nella cartella di compilazione del progetto sottoposto a test.
 
@@ -167,9 +169,9 @@ Passare alla procedura [Per aggiungere unit test nello stesso progetto](#samePro
 
 1. Se non è visibile alcun test nella finestra, compilare il progetto di test facendo clic con il pulsante destro del mouse sul relativo nodo in **Esplora soluzioni** e scegliendo **Compila** o **Ricompila**.
 
-1. In **Esplora test**scegliere **Esegui tutto**oppure selezionare i test specifici che si desidera eseguire. Fare clic con il pulsante destro del mouse su un test per le altre opzioni, inclusa l'esecuzione in modalità di debug con i punti di interruzione abilitati.
+1. In **Esplora test** scegliere **Esegui tutto** oppure selezionare i test specifici che si desidera eseguire. Fare clic con il pulsante destro del mouse su un test per le altre opzioni, inclusa l'esecuzione in modalità di debug con i punti di interruzione abilitati.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md)
 - [Informazioni di riferimento sull'API Microsoft. VisualStudio. TestTools. CppUnitTestFramework](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)

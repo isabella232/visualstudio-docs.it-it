@@ -1,5 +1,7 @@
 ---
 title: Interfaccia utente personalizzata (VSPackage del controllo del codice sorgente) | Microsoft Docs
+description: Informazioni su come creare un'interfaccia utente personalizzata in Visual Studio usando un pacchetto VSPackage del controllo del codice sorgente per specificare gli elementi dell'interfaccia utente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6ef807cef17a6ca3cddfee05ba57ace27e34a9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1426b271ea8db4d486043c9fbe885a0f428b514
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708923"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328522"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Interfaccia utente personalizzata (VSPackage del controllo del codice sorgente)
-Un pacchetto VSPackage dichiara le voci di menu e i relativi stati predefiniti tramite il file della tabella dei comandi di Visual Studio (con*estensione vsct*). Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE) Visualizza le voci di menu negli stati predefiniti fino a quando il pacchetto VSPackage non viene caricato. Successivamente, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> viene chiamato il metodo per abilitare o disabilitare le voci di menu.
+Un pacchetto VSPackage dichiara le voci di menu e i relativi stati predefiniti tramite il file della tabella dei comandi di Visual Studio (con *estensione vsct*). Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE) Visualizza le voci di menu negli stati predefiniti fino a quando il pacchetto VSPackage non viene caricato. Successivamente, <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> viene chiamato il metodo per abilitare o disabilitare le voci di menu.
 
  Un pacchetto VSPackage può impostare una chiave del registro di sistema in modo che il pacchetto VSPackage possa essere caricato automaticamente in base a un contesto dell'interfaccia utente di comando, anche se in genere un VSPackage del controllo del codice sorgente deve essere caricato su richiesta anziché semplicemente passare a un particolare contesto dell'interfaccia utente. Per altre informazioni sulla chiave del registro di sistema **AutoLoadPackages** , vedere [gestire i pacchetti VSPackage](../../extensibility/managing-vspackages.md).
 
@@ -55,7 +57,7 @@ Un pacchetto VSPackage dichiara le voci di menu e i relativi stati predefiniti t
 | Finestre degli strumenti | Il pacchetto VSPackage del controllo del codice sorgente nasconde tutte le finestre degli strumenti di cui è proprietario quando viene reso inattivo. |
 | Pagine di opzioni specifiche del pacchetto VSPackage del controllo del codice sorgente | La chiave del registro di sistema **HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts** consente a un VSPackage di impostare i contesti in cui sono necessarie le pagine di opzioni da visualizzare. Una voce del registro di sistema sotto questa chiave deve essere creata usando l'ID del servizio (SID) del servizio di controllo del codice sorgente e assegnando a tale voce un valore DWORD pari a 1. Ogni volta che si verifica un evento dell'interfaccia utente in un contesto in cui è registrato il pacchetto VSPackage del controllo del codice sorgente, il pacchetto VSPackage verrà chiamato se è attivo. |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>

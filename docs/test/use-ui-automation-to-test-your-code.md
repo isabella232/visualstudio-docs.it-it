@@ -1,5 +1,7 @@
 ---
 title: Test codificati dell'interfaccia utente
+description: Informazioni su come creare un test codificato dell'interfaccia utente in Visual Studio eseguendo il test manualmente mentre il generatore di test codificati dell'interfaccia utente viene eseguito in background.
+ms.custom: SEO-VS-2020
 ms.date: 12/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eaa1e284394bda78c6892647ce9eca20d372a362
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: c3da0a3868b410fbb78ed98265eb8f0920e6482b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928095"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330108"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Usare test codificati dell'interfaccia utente per il testing del codice
 
@@ -456,7 +458,7 @@ myWinCheckBox.Checked = true;
 
 I test codificati dell'interfaccia utente vengono spesso usati per automatizzare i test manuali. Per altre informazioni sui test automatizzati, vedere [Strumenti di test di Visual Studio](../test/improve-code-quality.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Registrare e riprodurre test manuali](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts&preserve-view=true)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)

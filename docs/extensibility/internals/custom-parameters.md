@@ -1,5 +1,7 @@
 ---
 title: Parametri personalizzati | Microsoft Docs
+description: Informazioni su come creare parametri personalizzati che controllano l'operazione di una procedura guidata dopo l'avvio di una procedura guidata, modificando un file con estensione vsz.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd52a49daa7d57a21d8cb0896f7108efa09e32b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2fd2ba746f10094a79f1b37e57ba4ca90ff117b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708940"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328444"
 ---
 # <a name="custom-parameters"></a>Parametri personalizzati
 I parametri personalizzati controllano l'operazione di una procedura guidata dopo l'avvio di una procedura guidata. Un file con *estensione vsz* correlato fornisce una matrice di parametri definiti dall'utente che vengono inseriti in un pacchetto dall'Integrated Development Environment (IDE) e passati alla procedura guidata come una matrice di stringhe quando viene avviata la procedura guidata. La procedura guidata analizza quindi la matrice di stringhe e usa le informazioni per controllare l'effettivo funzionamento della procedura guidata. In questo modo, una procedura guidata può personalizzare le funzionalità in base al contenuto del file con *estensione vsz* .
@@ -41,7 +43,7 @@ Param="PROJECT_TYPE = CSPROJ"
 
  Per ulteriori informazioni, vedere [file della procedura guidata (VSZ)](../../extensibility/internals/wizard-dot-vsz-file.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - [Parametri di contesto](../../extensibility/internals/context-parameters.md)
 - [Procedure guidate](../../extensibility/internals/wizards.md)

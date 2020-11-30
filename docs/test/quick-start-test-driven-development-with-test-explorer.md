@@ -1,5 +1,7 @@
 ---
 title: Procedura dettagliata sullo sviluppo basato su test
+description: Informazioni su come sviluppare un metodo testato in C# usando Microsoft Test Framework, che può essere facilmente adattato per altri linguaggi o Framework di test, ad esempio NUnit.
+ms.custom: SEO-VS-2020
 ms.date: 07/24/2019
 ms.topic: conceptual
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: a264975014fea88126bbca0589fe037e629dae10
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82cccbc47d26dd9ef74ee02931d6efb4bbfa0054
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566280"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329159"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>Procedura dettagliata: sviluppo basato su test con Esplora test
 
@@ -87,7 +89,7 @@ A questo punto sono stati creati un test e uno stub che è possibile modificare 
     }
     ```
 
-2. In **Esplora test**scegliere **Esegui tutto**.
+2. In **Esplora test** scegliere **Esegui tutto**.
 
    La soluzione verrà compilata e il test verrà eseguito e avrà esito positivo.
 
@@ -124,7 +126,7 @@ Per migliorare le probabilità che il codice funzioni in tutti i casi, aggiunger
     }
     ```
 
-2. In **Esplora test**scegliere **Esegui tutto**.
+2. In **Esplora test** scegliere **Esegui tutto**.
 
    Il nuovo test ha esito negativo nonostante il primo test abbia comunque esito positivo. Per trovare il punto di errore, selezionare il test con esito negativo e quindi esaminare i dettagli nel riquadro **Riepilogo dettagli test**.
 
@@ -144,7 +146,7 @@ Per migliorare le probabilità che il codice funzioni in tutti i casi, aggiunger
     }
     ```
 
-4. In **Esplora test**scegliere **Esegui tutto**.
+4. In **Esplora test** scegliere **Esegui tutto**.
 
    Ora entrambi i test avranno esito positivo.
 
@@ -169,7 +171,7 @@ Per migliorare le probabilità che il codice funzioni in tutti i casi, aggiunger
     }
     ```
 
-2. In **Esplora test**scegliere **Esegui tutto**.
+2. In **Esplora test** scegliere **Esegui tutto**.
 
    Il metodo sottoposto al test entra in un ciclo e deve essere annullato manualmente.
 
@@ -189,7 +191,7 @@ Per migliorare le probabilità che il codice funzioni in tutti i casi, aggiunger
         ...
     ```
 
-5. In **Esplora test**scegliere **Esegui tutto**.
+5. In **Esplora test** scegliere **Esegui tutto**.
 
    Tutti i test avranno esito positivo.
 

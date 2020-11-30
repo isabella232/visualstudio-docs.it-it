@@ -1,5 +1,7 @@
 ---
 title: Nozioni fondamentali sugli unit test
+description: Scopri in che modo Esplora test di Visual Studio offre un modo flessibile ed efficiente per eseguire gli unit test e visualizzarne i risultati.
+ms.custom: SEO-VS-2020
 ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77ac5ffd14f97fd6fdd753327fe193ceb80ea57e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f563d37e6456ec775b2e70d59e07b0627c82994b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75846923"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330199"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -150,7 +152,7 @@ Un progetto unit test rispecchia in genere la struttura di un progetto a codice 
 
    1. Selezionare il progetto in **Esplora soluzioni**.
 
-   2. Scegliere **Aggiungi riferimento**dal menu **progetto** .
+   2. Scegliere **Aggiungi riferimento** dal menu **progetto** .
 
    3. Nella finestra di dialogo **Gestione riferimenti** aprire il nodo **Soluzione** e scegliere **Progetti**. Selezionare il nome del progetto di codice e chiudere la finestra di dialogo.
 
@@ -336,7 +338,7 @@ Altre informazioni dettagliate sul [debug di unit test](../debugger/debugger-fea
 
 **D: È possibile creare unit test che accettano più set di dati come input per eseguire il test?**
 
-**R:** Sì. I*metodi di test basati sui dati* permettono di testare un intervallo di valori con un singolo metodo di unit test. Usare un attributo `DataSource` per il metodo di test che specifica l'origine dati e la tabella contenente i valori variabili da testare.  Nel corpo del metodo assegnare i valori di riga alle variabili usando l' `TestContext.DataRow[` indicizzatore *ColumnName* `]` .
+**R:** Sì. I *metodi di test basati sui dati* permettono di testare un intervallo di valori con un singolo metodo di unit test. Usare un attributo `DataSource` per il metodo di test che specifica l'origine dati e la tabella contenente i valori variabili da testare.  Nel corpo del metodo assegnare i valori di riga alle variabili usando l' `TestContext.DataRow[` indicizzatore *ColumnName* `]` .
 
 > [!NOTE]
 > Queste procedure sono applicabili soli ai metodi di test scritti usando il framework per unit test Microsoft per codice gestito. Se si usa un framework diverso, per informazioni sulla funzionalità equivalente vedere la documentazione del framework in uso.
@@ -386,9 +388,9 @@ Altre informazioni sul [code coverage](../test/using-code-coverage-to-determine-
 
 Microsoft Fakes usa due approcci per la creazione delle classi sostitutive per le dipendenze esterne:
 
-1. Gli*stub* generano classi sostitutive derivate dall'interfaccia padre della classe di dipendenza di destinazione. I metodi stub possono sostituire metodi pubblici virtuali della classe di destinazione.
+1. Gli *stub* generano classi sostitutive derivate dall'interfaccia padre della classe di dipendenza di destinazione. I metodi stub possono sostituire metodi pubblici virtuali della classe di destinazione.
 
-2. Gli*shim* usano strumentazione di runtime per deviare chiamate a un metodo di destinazione, indirizzandole a un metodo shim sostitutivo per metodi non virtuali.
+2. Gli *shim* usano strumentazione di runtime per deviare chiamate a un metodo di destinazione, indirizzandole a un metodo shim sostitutivo per metodi non virtuali.
 
 In entrambi gli approcci si usano i delegati generati delle chiamate per il metodo di dipendenza per specificare il comportamento desiderato nel metodo di test.
 

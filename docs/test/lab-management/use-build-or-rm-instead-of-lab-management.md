@@ -1,5 +1,7 @@
 ---
 title: Usare Azure Pipelines per i test automatizzati
+description: Informazioni su come implementare test automatizzati per l'automazione di compilazione-distribuzione-test usando Azure Pipelines e Team Foundation Server.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 052e2c794ba765573923fba89413e0192c582c15
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: bd1ab445093a91875c8e9c20febe37ade3921800
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928593"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329303"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Usare Azure Test Plans anziché Lab Management per i test automatizzati
 

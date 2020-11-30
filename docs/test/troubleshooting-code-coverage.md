@@ -1,5 +1,7 @@
 ---
 title: Risoluzione dei problemi di code coverage
+description: Informazioni su come risolvere messaggi di risultati non corretti errati quando si prevede che in Visual Studio vengano raccolti dati per assembly nativi e gestiti.
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: troubleshooting
 ms.author: mikejo
@@ -7,16 +9,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 39d5d54021e7b8286bd653941d233a73bcf8cfb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e960e0729e7d13b27d0c4fbda9b3f8eca0ac57c
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80527999"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330121"
 ---
 # <a name="troubleshoot-code-coverage"></a>Risolvere i problemi di code coverage
 
-Lo strumento di analisi code coverage in Visual Studio raccoglie i dati per gli assembly nativi e gestiti (file con*estensione dll* o *exe* ). Tuttavia, in alcuni casi, nella finestra **Risultati code coverage** viene visualizzato un errore simile a "i risultati vuoti generati:...". Esistono diversi motivi per cui è possibile ottenere risultati vuoti. Questo articolo consente di risolvere tali problemi.
+Lo strumento di analisi code coverage in Visual Studio raccoglie i dati per gli assembly nativi e gestiti (file con *estensione dll* o *exe* ). Tuttavia, in alcuni casi, nella finestra **Risultati code coverage** viene visualizzato un errore simile a "i risultati vuoti generati:...". Esistono diversi motivi per cui è possibile ottenere risultati vuoti. Questo articolo consente di risolvere tali problemi.
 
 ## <a name="what-you-should-see"></a>Elementi che dovrebbero essere visualizzati
 
@@ -61,7 +63,7 @@ Spiegazione &mdash; il motore di code coverage richiede che ogni assembly abbia 
 
 Il file con *estensione PDB* deve essere generato dalla stessa compilazione dei file con *estensione dll* o *exe* .
 
-Risoluzione &mdash; assicurarsi che le impostazioni di compilazione generino il file con *estensione PDB* . Se i file con *estensione PDB* non vengono aggiornati quando viene compilato il progetto, aprire le proprietà del progetto, selezionare la pagina **Compila** , scegliere **Avanzate**e controllare le **informazioni di debug**.
+Risoluzione &mdash; assicurarsi che le impostazioni di compilazione generino il file con *estensione PDB* . Se i file con *estensione PDB* non vengono aggiornati quando viene compilato il progetto, aprire le proprietà del progetto, selezionare la pagina **Compila** , scegliere **Avanzate** e controllare le **informazioni di debug**.
 
 Per i progetti C++, assicurarsi che i file con estensione pdb generati dispongano di informazioni di debug complete. Aprire le proprietà del progetto e verificare che il debug del **linker**  >  **Debugging**  >  **genera informazioni di debug** sia impostato su **genera informazioni di debug ottimizzate per la condivisione e la pubblicazione (/debug: Full)**.
 
@@ -131,6 +133,6 @@ Spiegazione: lo strumento di code coverage funziona inserendo la strumentazione 
 
 Risoluzione: nessuna.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare la funzionalità code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

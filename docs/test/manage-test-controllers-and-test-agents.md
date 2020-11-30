@@ -1,5 +1,7 @@
 ---
 title: Gestire i test controller e gli agenti di test
+description: Informazioni su come gestire i controller di test e gli agenti di test dopo averli installati e configurati per la prima volta.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2018
 ms.topic: how-to
 author: mikejo5000
@@ -7,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78bd0143ee2584bcabb5e8ed4946818ee2590789
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d9a416dc64a9d49d14e367a04023f067c7b595c
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286700"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329640"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gestire i test controller e gli agenti di test
 
@@ -28,7 +30,7 @@ Per informazioni su come installare e configurare test controller e agenti di te
 
 Per configurare e monitorare il controller di test e gli eventuali agenti registrai, è necessario disporre di un file di impostazioni di test nel progetto di test che contiene i test da eseguire. Aprire il file di impostazioni di test, scegliere **Ruolo** e quindi selezionare **Gestisci controller di test** nell'elenco a discesa del campo **Controller**.
 
-Per un progetto di test di carico è anche possibile scegliere** Gestisci controller di test** dal menu **Test di carico**.
+Per un progetto di test di carico è anche possibile scegliere **Gestisci controller di test** dal menu **Test di carico**.
 
 ## <a name="add-a-test-agent-to-a-test-controller"></a>Aggiunta di un agente di test a un controller di test
 
@@ -45,7 +47,7 @@ Per un progetto di test di carico è anche possibile scegliere** Gestisci contro
 
 2. Verranno visualizzate due opzioni relative alla modalità di esecuzione dell'agente di test:
 
-   - **Servizio**: se non è necessario eseguire test automatizzati che interagiscono con il desktop, ad esempio i test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione del test, selezionare **servizio**in **Esegui agente di test come**. L'agente di test verrà avviato come servizio. Scegliere **Avanti**.
+   - **Servizio**: se non è necessario eseguire test automatizzati che interagiscono con il desktop, ad esempio i test codificati dell'interfaccia utente o la creazione di una registrazione video durante l'esecuzione del test, selezionare **servizio** in **Esegui agente di test come**. L'agente di test verrà avviato come servizio. Scegliere **Avanti**.
 
       A questo punto è possibile immettere i dettagli sull'utente quando l'agente di test viene avviato come servizio.
 
@@ -233,6 +235,6 @@ Dopo aver completato l'esecuzione dei test, abilitare nuovamente la verifica con
 
 Per disabilitare e riabilitare la verifica della firma, si consiglia di usare i comandi *SN.exe* negli script. È possibile disabilitare la verifica in uno script di installazione e riattivarla in uno script di pulitura.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md)

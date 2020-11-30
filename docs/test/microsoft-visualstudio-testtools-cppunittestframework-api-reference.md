@@ -1,5 +1,7 @@
 ---
 title: API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework
+description: Questo articolo descrive i membri di CppUnitTestFramework, che è possibile usare per scrivere unit test C++ basati sul Framework di unit test nativo Microsoft.
+ms.custom: SEO-VS-2020
 ms.date: 09/27/2019
 ms.topic: reference
 ms.author: corob
@@ -7,18 +9,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: corob-msft
-ms.openlocfilehash: 16ea629312237dd859e9eb1aad21b9b219de7229
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b552ff667d4b7aef5f982d4fb0cda78d65c98ed6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82109429"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329185"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Informazioni di riferimento sulle API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 In questo argomento sono elencati i membri pubblici dello spazio dei nomi `Microsoft::VisualStudio::CppUnitTestFramework`. Usare queste API per scrivere unit test C++ in base a Microsoft Native Unit Test Framework. È disponibile un [esempio di utilizzo](#example) alla fine dell'argomento.
 
-I file di intestazione e lib si trovano in * \<Visual Studio installation folder> \VC\Auxiliary\VS\UnitTest*.
+I file di intestazione e lib si trovano in *\<Visual Studio installation folder> \VC\Auxiliary\VS\UnitTest*.
 
 I percorsi dei file di intestazione e lib vengono configurati automaticamente in un progetto di test nativo.
 
@@ -638,7 +640,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)
 - [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md)

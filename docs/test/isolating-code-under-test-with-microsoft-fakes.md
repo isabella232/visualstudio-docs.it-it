@@ -1,5 +1,7 @@
 ---
 title: Isolamento del codice sottoposto a test con Microsoft Fakes
+description: Informazioni su come Microsoft Fakes consente di isolare il codice sottoposto a test sostituendo altre parti dell'applicazione con Stub o shim.
+ms.custom: SEO-VS-2020
 ms.date: 06/03/2020
 ms.topic: how-to
 ms.author: mikejo
@@ -10,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: e837b1a0e9a1d8fe06342352e4eedf5ce0fa9117
-ms.sourcegitcommit: f2bb3286028546cbd7f54863b3156bd3d65c55c4
+ms.openlocfilehash: aa1f0505d37059ce65da80fcf483473610cf2f6d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93325956"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329536"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolare codice sottoposto a test con Microsoft Fakes
 
@@ -83,13 +85,13 @@ Per una descrizione più dettagliata, vedere [Usare stub per isolare le parti de
 
 2. **Aggiungere l'assembly Fakes**
 
-   1. In **Esplora soluzioni** , 
+   1. In **Esplora soluzioni**, 
        - Per un progetto di .NET Framework precedente (stile non SDK), espandere il nodo **riferimenti** del progetto unit test.
        ::: moniker range=">=vs-2019"
-       - Per un progetto di tipo SDK che ha come destinazione .NET Framework o .NET Core, espandere il nodo **dipendenze** per trovare l'assembly da falsificare in **assembly** , **progetti** o **pacchetti**.
+       - Per un progetto di tipo SDK che ha come destinazione .NET Framework o .NET Core, espandere il nodo **dipendenze** per trovare l'assembly da falsificare in **assembly**, **progetti** o **pacchetti**.
        ::: moniker-end
        - Se si sta lavorando in Visual Basic, selezionare **Mostra tutti i file** nella barra degli strumenti **Esplora soluzioni** per visualizzare il nodo **riferimenti** .
-   2. Consente di selezionare l'assembly contenente le definizioni delle classi per le quali si desidera creare gli shim. Se ad esempio si desidera eseguire lo shim di **DateTime** , selezionare **System.dll**.
+   2. Consente di selezionare l'assembly contenente le definizioni delle classi per le quali si desidera creare gli shim. Se ad esempio si desidera eseguire lo shim di **DateTime**, selezionare **System.dll**.
 
    3. Scegliere **Aggiungi assembly Fakes** dal menu di scelta rapida.
 

@@ -1,5 +1,6 @@
 ---
 title: Quando implementare un VSPackage del controllo del codice sorgente
+description: Informazioni sulle opzioni dei plug-in del controllo del codice sorgente e dei pacchetti VSPackage di controllo del codice sorgente disponibili per l'estensione delle soluzioni di controllo del codice sorgente di Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f96191115a509e07b5263f1d10d53ea3b2cc9c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c7b6c0e786f13ff526a1b71861c040cb165bc9e4
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037042"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329822"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>Determinare se implementare un pacchetto VSPackage del controllo del codice sorgente
 

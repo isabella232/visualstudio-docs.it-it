@@ -1,5 +1,7 @@
 ---
 title: Ingrandire i grafici dei risultati dei test di carico
+description: Informazioni su come esaminare i dati generati durante l'esecuzione di un test di carico in modo più dettagliato usando le barre di zoom per eseguire lo zoom avanti e scorrere fino a un'area del grafico.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 836e4f30e2c84bf0093366f4cc38a2cb7f58b545
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 172b777111027b4492420185b53086f55ee4084b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287025"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328665"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Procedura: Eseguire lo zoom avanti su un'area del grafico nei risultati del test di carico
 
@@ -73,7 +75,7 @@ Quando si visualizzano più grafici, è possibile mantenerli sincronizzati in mo
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>Per sincronizzare lo zoom e lo scorrimento
 
-1. Nell' **analizzatore test di carico**scegliere **Sincronizza controlli zoom orizzontali**.
+1. Nell' **analizzatore test di carico** scegliere **Sincronizza controlli zoom orizzontali**.
 
      Quando il pulsante **Sincronizza controlli zoom orizzontali** è selezionato, lo zoom e lo scorrimento della scala cronologica di un singolo grafico vengono applicati anche alla scala cronologica degli altri grafici.
 
@@ -113,7 +115,7 @@ Quando si visualizzano più grafici, è possibile mantenerli sincronizzati in mo
 
      Viene eseguito lo zoom indietro per mostrare l'intera durata dell'esecuzione del test di carico.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Analizzare i risultati dei test di carico nella visualizzazione grafici](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

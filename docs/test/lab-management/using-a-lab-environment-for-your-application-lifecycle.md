@@ -1,5 +1,7 @@
 ---
 title: Usare un ambiente lab per DevOps
+description: Informazioni sugli ambienti Lab e su come usare il cloud con Azure Pipelines o Team Foundation Server compilazione e rilascio.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 1a5958b03b9797882b3df37f4ba99c75ff832d22
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: cb25561f70882336a1143918d3cf78849b394065
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928108"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328925"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usare un ambiente lab per DevOps
 
@@ -144,7 +146,7 @@ Per informazioni sulla configurazione degli ambienti, vedere:
 * [Creazione e uso di un ambiente di isolamento rete](/previous-versions/ee518924(v=vs.140))
 ::: moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Installare e configurare agenti di test](../../test/lab-management/install-configure-test-agents.md)
 * [Visual Studio Lab Management Guide](/archive/blogs/visualstudioalmrangers/library-of-tooling-and-guidance-solutions-aka-msvsarsolutions) (Guida di Visual Studio Lab Management)

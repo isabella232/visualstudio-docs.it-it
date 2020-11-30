@@ -1,5 +1,7 @@
 ---
 title: Installare agenti di test e test controller
+description: Informazioni su come usare gli agenti di Visual Studio per orchestrare i test con Azure Test Plans o Team Foundation Server.
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b75ae05a65ae15e82c45ec0cf43935fb0809160
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d2ffa3a1006057169d7e4f473922ff2eebbfe7bb
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928606"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328886"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installare agenti di test e test controller
 
@@ -26,10 +28,10 @@ Potrebbe anche essere utile valutare se è preferibile usare la [gestione di com
 
 La tabella seguente illustra i requisiti di sistema per l'installazione dell'agente di test o del test controller per Visual Studio:
 
-| Item | Requisiti |
+| Elemento | Requisiti |
 | ---- | ------------ |
-| **Agent** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard e Datacenter<br />R2 per Windows Server 2012 |
-| **Controller** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard e Datacenter<br />R2 per Windows Server 2012 |
+| **Agent** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard e Datacenter<br />Windows Server 2012 R2 |
+| **Controller** | Windows 10<br />Windows 8, Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard e Datacenter<br />Windows Server 2012 R2 |
 | **.NET Framework** | .NET Framework 4.5 |
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Installare il test controller e gli agenti di test

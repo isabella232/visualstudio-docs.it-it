@@ -1,5 +1,7 @@
 ---
 title: Posizionamento predefinito di comandi, gruppi e barre degli strumenti | Microsoft Docs
+description: Per informazioni sui comandi dell'IDE, sui comandi del prodotto e sui comandi dell'editor, per impostazione predefinita viene visualizzata l'interfaccia utente di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b432b514231e876dda1393bad8a315030272d998
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cacf8db933c7d56d44351da11b7b310bc0bdb8aa
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708895"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329885"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Posizionamento predefinito di comandi, gruppi e barre degli strumenti
 Per uniformità e stabilità del prodotto, l'interfaccia utente visualizza determinati gruppi di comandi per impostazione predefinita e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce le definizioni per i comandi e i gruppi di comandi. I pacchetti VSPackage possono anche usare i comandi e i gruppi di comandi standard.
@@ -40,6 +42,6 @@ Per uniformità e stabilità del prodotto, l'interfaccia utente visualizza deter
 
  Le barre degli strumenti dell'editor devono essere posizionate sotto la barra degli strumenti dell'IDE e del prodotto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Comandi, menu e gruppi definiti dall'IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

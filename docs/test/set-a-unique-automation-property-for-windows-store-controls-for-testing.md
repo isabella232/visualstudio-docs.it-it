@@ -1,5 +1,6 @@
 ---
 title: Impostare una proprietà di automazione univoca-test UWP Controlli
+description: Informazioni su come assegnare una proprietà di automazione univoca in base al tipo di controllo XAML nell'applicazione UWP basata su XAML per eseguire un test codificato dell'interfaccia utente.
 ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: how-to
@@ -8,12 +9,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 1790ac51f513ddcb42500eb271212b68a4aefe63
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5af4f9c70696144e0efb420ab27860a1969bddc6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810220"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328329"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Impostare una proprietà di automazione univoca dei controlli UWP per il test
 
@@ -44,7 +45,7 @@ Impostare **AutomationProperties.Name** su **ButtonY** tramite la proprietà **C
 Impostare **AutomationProperties.AutomationId** su **ButtonX** in modo esplicito nel file XAML per il controllo.
 
 ```xaml
-<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
+<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
 ```
 
 Impostare **AutomationProperties.Name** su **ButtonY** in modo esplicito nel file XAML per il controllo.
@@ -164,6 +165,6 @@ private void CreateCheckBox(string txt, StackPanel panel)
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Testare app UWP con test codificati dell'interfaccia utente](../test/test-uwp-app-with-coded-ui-test.md)

@@ -1,5 +1,7 @@
 ---
 title: Domande frequenti su Esplora test
+description: Vedere le domande frequenti su Esplora test di Visual Studio, che includono alcune comuni procedure di risoluzione dei problemi.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 5d0e98c3201d1e0e58ee972ad38c3a49bc9555de
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ef6c6bf3cedcccd156e7ae9ae02c2e5f70805521
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037029"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330173"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Domande frequenti su Esplora test di Visual Studio
 

@@ -1,5 +1,7 @@
 ---
 title: Risoluzione dei problemi dei test controller e degli agenti di test
+description: Informazioni su alcuni problemi comuni che possono verificarsi quando si lavora con i controller di test e gli agenti di test in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 51d7e15ec71eec7134dfc49b3515385970e593a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e86811739df2d59e3de7980cfa346da68cc0eb43
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565955"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330147"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie di risoluzione dei problemi dei controller e degli agenti di test nei test di carico
 
@@ -139,6 +141,6 @@ Per correggere questo errore, è necessario associare il controller di test a un
 
 Questa procedura si applica al controller di test, al servizio agente di test e al processo agente di test. La proprietà `BindTo` deve essere impostata per ogni processo in esecuzione in un computer che dispone di più schede di rete. La procedura per impostare la proprietà `BindTo` è identica per i tre processi, come specificato in precedenza per il controller di test. Per impostare i livelli di registrazione per il servizio agente di test e il processo agente di test, usare i file di configurazione elencati in [Impostare il livello di registrazione in un computer controller di test](#set-the-logging-level-on-a-test-controller-computer).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Test controller e agenti di test](../test/configure-test-agents-and-controllers-for-load-tests.md)

@@ -1,5 +1,7 @@
 ---
 title: Come testare una DLL C++ per le app UWP
+description: Informazioni su come creare unit test per una DLL di C++ per piattaforma UWP (Universal Windows Platform) app con Microsoft Test Framework per C++.
+ms.custom: SEO-VS-2020
 ms.date: 05/01/2019
 ms.topic: how-to
 ms.author: corob
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: corob-msft
-ms.openlocfilehash: 7b556f085ae4e4a9c610aefa87b3f9125fb27042
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7ae79ff4df783d3c4541720c9fef709087e7da6
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285609"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330095"
 ---
 # <a name="how-to-test-a-c-dll"></a>Come testare una DLL di C++
 
@@ -190,7 +192,7 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
 
     Il nuovo test viene visualizzato in **Esplora test** nel nodo **test non eseguiti** .
 
-5. In **Esplora test**scegliere **Esegui tutto**.
+5. In **Esplora test** scegliere **Esegui tutto**.
 
     ![Test di base superato](../test/media/ute_cpp_testexplorer_basictest.png)
 
@@ -219,7 +221,7 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
     >
     > Quando gli utenti modificano i requisiti, disabilitare i test che non sono più corretti. Scrivere nuovi test e farli funzionare uno alla volta, nello stesso modo incrementale.
 
-2. In **Esplora test**scegliere **Esegui tutto**.
+2. In **Esplora test** scegliere **Esegui tutto**.
 
 3. Il test ha esito negativo.
 
@@ -249,7 +251,7 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
 
     ```
 
-5. Compilare la soluzione e quindi in **Esplora test**scegliere **Esegui tutto**.
+5. Compilare la soluzione e quindi in **Esplora test** scegliere **Esegui tutto**.
 
      Entrambi i test vengono superati.
 
@@ -289,7 +291,7 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
    };
    ```
 
-2. In **Esplora test**scegliere **Esegui tutto**.
+2. In **Esplora test** scegliere **Esegui tutto**.
 
     Il test ha esito negativo. Scegliere il nome del test in **Esplora test**. L'asserzione fallita viene evidenziata. Il messaggio di errore è visibile nel riquadro dei dettagli di **Esplora test**.
 

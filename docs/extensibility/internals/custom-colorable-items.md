@@ -1,5 +1,7 @@
 ---
 title: Elementi colorabili personalizzati | Microsoft Docs
+description: Informazioni su come creare elementi colorabili personalizzati come parte di un servizio di linguaggio eseguendo l'override degli elementi nella finestra di dialogo tipi di carattere e colori, ad esempio parole chiave e commenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: feecd9e8f8178045f66999b775e2d0792f50b288
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a8e45b5b472ccc1a37cd69e2043f0bb5b9aa3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708989"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328535"
 ---
 # <a name="custom-colorable-items"></a>Elementi colorabili personalizzati
 È possibile eseguire l'override dell'elenco di tipi per la colorazione, ad esempio parole chiave e commenti, implementando elementi colorabili personalizzati come parte del servizio di linguaggio.
@@ -64,7 +66,7 @@ ms.locfileid: "80708989"
 
     Per un esempio di come implementare le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> interfacce e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> , vedere <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Modello di un servizio di linguaggio legacy](../../extensibility/internals/model-of-a-legacy-language-service.md)
 - [Colorazione della sintassi negli editor personalizzati](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [Colorazione della sintassi in un servizio di linguaggio legacy](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)

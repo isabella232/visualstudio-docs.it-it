@@ -1,5 +1,7 @@
 ---
 title: Proprietà di uno scenario di test di carico
+description: Informazioni su come modificare le impostazioni delle proprietà dello scenario di test di carico in Visual Studio in una delle diverse proprietà dello scenario di test di carico in questo articolo.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2011438f1fcb0230cde0de527216456553e7c64
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 263a3a1f928fe42d1f5b910f82d0d4a6ea24412e
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75584439"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328808"
 ---
 # <a name="load-test-scenario-properties"></a>Proprietà di uno scenario di test di carico
 
@@ -26,7 +28,7 @@ Modificare le impostazioni delle proprietà di uno scenario di test di carico in
 
 |Proprietà|Definizione|
 |-|----------------|
-|**Name**|Nome dello scenario.|
+|**Nome**|Nome dello scenario.|
 
 ## <a name="mix"></a>Combinazione
 
@@ -56,6 +58,6 @@ Modificare le impostazioni delle proprietà di uno scenario di test di carico in
 |**Disabilita durante riscaldamento**|Valore booleano usato per specificare se lo scenario deve essere o meno eseguito durante l'intervallo di tempo corrispondente al valore della proprietà **Durata riscaldamento** specificato nell'impostazione di esecuzione del test di carico.<br /><br />Per altre informazioni sulle proprietà delle impostazioni di esecuzione del test di carico, vedere [Proprietà delle impostazioni di esecuzione del test di carico](../test/load-test-run-settings-properties.md).<br /><br />Per altre informazioni, vedere [Configurare ritardi di avvio di uno scenario](../test/configure-scenario-start-delays.md).|
 |**Tempo interazione utente tra due iterazioni test**|Valore numerico utilizzato per specificare il tempo di attesa, in secondi, tra iterazioni di test.<br /><br />Per altre informazioni, vedere [Modificare i tempi interazione utente per simulare i ritardi di interazione umana con i siti Web](../test/edit-think-times-in-load-test-scenarios.md).|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Modificare gli scenari di test di carico](../test/edit-load-test-scenarios.md)

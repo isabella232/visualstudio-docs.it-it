@@ -1,5 +1,7 @@
 ---
 title: API del test di carico
+description: Informazioni su come usare l'API del test di carico, che supporta plug-in di test, che consentono di controllare o migliorare un test di carico.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1fc3ff1aa238249f7425c61b5b28d2a96e299fec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd2064a76777390eb4b708b402578f1d89ca52c7
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287103"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328678"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Procedura: Usare l'API del test di carico
 
@@ -59,7 +61,7 @@ Visual Studio supporta plug-in di test di carico che consentono di controllare o
 
      Per un'implementazione di <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> , vedere [procedura: creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 - [Creare codice personalizzato e plug-in per test di carico](../test/create-custom-code-and-plug-ins-for-load-tests.md)

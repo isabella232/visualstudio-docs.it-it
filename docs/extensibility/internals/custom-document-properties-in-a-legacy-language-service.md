@@ -1,5 +1,6 @@
 ---
 title: Proprietà personalizzate del documento nei servizi di linguaggio legacy
+description: Informazioni su come creare proprietà del documento personalizzate visualizzate in Visual Studio Finestra Proprietà, come parte di un servizio di linguaggio legacy.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c38ad28456ab8b9bccf29d2249307b718a5767b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d5fa24f3d052ab9122776967607b2c197fb102bf
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036834"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329900"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Proprietà personalizzate del documento in un servizio di linguaggio legacy
 Le proprietà del documento possono essere visualizzate nella [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] finestra **Proprietà** . I linguaggi di programmazione non dispongono in genere di proprietà associate a singoli file di origine. Tuttavia, XML supporta le proprietà del documento che interessano la codifica, lo schema e il foglio di stile.

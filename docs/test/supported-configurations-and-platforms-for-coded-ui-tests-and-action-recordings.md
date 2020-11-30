@@ -1,5 +1,7 @@
 ---
 title: Configurazioni e piattaforme per i test codificati dell'interfaccia utente
+description: Questo articolo contiene le configurazioni e le piattaforme supportate per i test codificati dell'interfaccia utente per Visual Studio Enterprise.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2015
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3636f87db5c395f1660d9271d0eed5cacec99161
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2b749375c398b3deb6ac56e8b1a787b0bcb82b22
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036899"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330251"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni
 
@@ -25,13 +27,13 @@ La tabella seguente riporta le configurazioni e le piattaforme supportate per i 
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requisiti**
+**Requirements**
 
 - Visual Studio Enterprise
 
 ## <a name="supported-configurations"></a>Configurazioni supportate
 
-| Configurazione | Funzionalità supportata |
+| Configurazione | Supportato |
 |-| - |
 | Sistemi operativi | [!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10 |
 | Supporto a 32 bit / 64 bit | Le applicazioni a 32 bit possono essere testate nel sistema operativo Windows a 32 bit che esegue [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] a 32 bit.<br /><br /> Le applicazioni WOW a 32 bit con Sincronizzazione dell'interfaccia utente possono essere testate nel sistema operativo Windows a 64 bit che esegue [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] a 32 bit.<br /><br /> Le applicazioni Windows Form e WPF a 64 bit prive di Sincronizzazione dell'interfaccia utente possono essere testate nel sistema operativo Windows a 64 bit che esegue [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] a 32 bit. |
@@ -48,7 +50,7 @@ La tabella seguente riporta le configurazioni e le piattaforme supportate per i 
 | App di Windows Phone | Sono supportate solo le app Phone basate su WinRT-XAML. |
 | App UWP | Sono supportate solo le app UWP basate su XAML. |
 | App di Windows universale | Sono supportate solo le app di Windows universale basate su XAML per desktop e telefono. |
-| Microsoft Edge | La registrazione dei passaggi dell'azione o l'utilizzo del generatore per la visualizzazione delle proprietà dell'oggetto non è supportata. I test possono essere riprodotti nel browser Microsoft Edge, usando Visual Studio 2015 Update 2 e versioni successive usando l' [estensione per il test codificato dell'interfaccia utente tra più browser](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting). |
+| Edge | La registrazione dei passaggi dell'azione o l'utilizzo del generatore per la visualizzazione delle proprietà dell'oggetto non è supportata. I test possono essere riprodotti nel browser Microsoft Edge, usando Visual Studio 2015 Update 2 e versioni successive usando l' [estensione per il test codificato dell'interfaccia utente tra più browser](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting). |
 | Internet Explorer 8<br /><br /> Internet Explorer 9<br /><br /> Internet Explorer 10 **Importante:**  Internet Explorer 10 è supportato solo su desktop. <br /><br /> Internet Explorer 11 **Importante:**  Internet Explorer 11 è supportato solo su desktop. | Completamente supportato.<br /><br /> -   **Supporto per HTML5 in Internet Explorer 9 e Internet Explorer 10:** I test codificati dell'interfaccia utente supportano record, riproduzione e convalida dei controlli HTML5: audio, video, ProgressBar e dispositivo di scorrimento. Per altre informazioni, vedere [uso dei controlli HTML5 nei test codificati dell'interfaccia utente](../test/using-html5-controls-in-coded-ui-tests.md). **Avviso:**      Un test codificato dell'interfaccia utente creato in Internet Explorer 10 potrebbe non funzionare in Internet Explorer 9 o Internet Explorer 8. Questo perché Internet Explorer 10 include controlli HTML5 come audio, video, ProgressBar e dispositivo di scorrimento. Questi controlli HTML5 non sono riconosciuti da Internet Explorer 9 o da Internet Explorer 8. Analogamente, il test codificato dell'interfaccia utente creato in Internet Explorer 9 potrebbe includere alcuni controlli HTML5 non riconosciuti in Internet Explorer 8.<br />-   **Supporto per il controllo ortografico di Internet Explorer 10:** Internet Explorer 10 include funzionalità di controllo ortografico per tutte le caselle di testo. In tal modo è possibile scegliere da un elenco di correzioni suggerite. Il test codificato dell'interfaccia utente ignorerà le azioni dell'utente, come ad esempio la selezione di un suggerimento alternativo di ortografia. Solo il testo finale digitato nella casella di testo verrà registrato.<br />     Per il test codificato dell'interfaccia utente che usa il controllo ortografico vengono registrate le azioni seguenti: Aggiungi al dizionario, Copia, Seleziona tutto e Ignora.<br />-   **Supporto per Internet Explorer a 64 bit in esecuzione in Windows 8:** In precedenza, le versioni a 64 bit di Internet Explorer non erano supportate per la registrazione e la riproduzione. Con [!INCLUDE[win8](../debugger/includes/win8_md.md)] e [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], i test codificati dell'interfaccia utente sono stati abilitati per le versioni a 64 bit di Internet Explorer. **Avviso:**      Il supporto a 64 bit in Internet Explorer si applica solo quando si esegue [!INCLUDE[win8](../debugger/includes/win8_md.md)] o versioni successive.<br />-   **Supporto per i siti bloccati in Internet Explorer 9:** In Internet Explorer 9 sono stati introdotti i siti aggiunti. Con i siti aggiunti è possibile accedere ai siti preferiti direttamente dalla barra delle applicazioni di Windows, senza dover prima aprire Internet Explorer. I test codificati dell'interfaccia utente possono ora generare azioni di intenzione sui siti aggiunti. Per ulteriori informazioni sui siti bloccati, vedere [siti bloccati](https://support.microsoft.com/hub/4230784/internet-explorer-help).<br />-   **Supporto per i tag semantici di Internet Explorer 9:** In Internet Explorer 9 sono stati introdotti i seguenti tag semantici: Section, NAV, article, aside, hgroup, header, footer, figure, figcaption e Mark. I test codificati dell'interfaccia utente ignorano tutti questi tag semantici durante la registrazione. È possibile aggiungere asserzioni a questi tag usando il generatore di test codificati dell'interfaccia utente. È possibile usare il riquadro di navigazione nel generatore di test codificati dell'interfaccia utente per passare a uno di questi elementi e visualizzarne le proprietà.<br />-   **Gestione perfetta degli spazi vuoti tra le versioni di Internet Explorer:** Esistono differenze nella gestione degli spazi vuoti tra Internet Explorer 8, Internet Explorer 9 e Internet Explorer 10. Il test codificato dell'interfaccia utente gestisce le differenze senza problemi. Un test codificato dell'interfaccia utente creato in Internet Explorer 8 ad esempio, viene quindi riprodotto correttamente in Internet Explorer 9 e in Internet Explorer 10.<br />-   **L'area di notifica di Internet Explorer viene ora registrata con l'attributo "continua in errore" impostato:** Tutte le azioni sull'area di notifica di Internet Explorer vengono ora registrate con l'attributo "continua in errore" impostato. Se la barra di notifica non viene visualizzata durante la riproduzione, le azioni verranno ignorate e il test codificato dell'interfaccia utente proseguirà con l'azione successiva. |
 | Controlli di terze parti WPF e Windows Forms | Completamente supportato.<br /><br /> Per abilitare i controlli di terze parti nelle applicazioni Windows Form e WPF, è necessario aggiungere i riferimenti e il codice. Per altre informazioni, vedere la pagina [Abilitare test codificati dell'interfaccia utente per i controlli](../test/enable-coded-ui-testing-of-your-controls.md). |
 | Internet Explorer 6<br /><br /> Internet Explorer 7 | Non supportata. |

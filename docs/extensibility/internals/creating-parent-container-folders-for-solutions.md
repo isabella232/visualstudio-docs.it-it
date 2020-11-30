@@ -1,5 +1,7 @@
 ---
 title: Creazione di cartelle del contenitore padre per le soluzioni | Microsoft Docs
+description: Informazioni su come usare la versione dell'API del plug-in del controllo del codice sorgente 1,2 per specificare una singola destinazione del controllo del codice sorgente per tutti i progetti Web all'interno di una soluzione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e5481e20a12fc05ccba97eef55173e5ce9b30d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e65da2b50984b0259079a1693dd31d400e1e12e3
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709092"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329939"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Creare cartelle del contenitore padre per le soluzioni
 Nel plug-in del controllo del codice sorgente versione 1,2, un utente può specificare una singola destinazione radice del controllo del codice sorgente per tutti i progetti Web all'interno della soluzione. Questa singola radice è denominata Super Unified root (SUR).
@@ -45,7 +47,7 @@ Nel plug-in del controllo del codice sorgente versione 1,2, un utente può speci
 
 In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è consigliabile che il nome della cartella sur corrisponda al nome della soluzione senza estensione. Nella tabella seguente viene riepilogato il comportamento delle due versioni.
 
-|Feature|API del plug-in del controllo del codice sorgente versione 1,1|API del plug-in del controllo del codice sorgente versione 1,2|
+|Funzionalità|API del plug-in del controllo del codice sorgente versione 1,1|API del plug-in del controllo del codice sorgente versione 1,2|
 |-------------| - | - |
 |Aggiungi soluzione a SCC|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|
 |Aggiungi progetto a soluzione controllata dal codice sorgente|SccGetProjPath()<br /><br /> OpenProject ()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Nota:**  In Visual Studio si presuppone che una soluzione sia un figlio diretto di SUR.|
@@ -62,7 +64,7 @@ In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è consigliabile
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] il valore predefinito è il comportamento della versione 1,1 se il plug-in del controllo del codice sorgente non restituisce `SCC_CAP_CREATESUBPROJECT` e i `SCC_CAP_GETPARENTPROJECT` flag di funzionalità. Inoltre, gli utenti di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possono scegliere di ripristinare il comportamento della versione 1,1 impostando il valore della chiave seguente su *DWORD: 00000001*:
 
- **[HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\sourcecontrol] DoNotCreateSolutionRootFolderInSourceControl**  =  *DWORD: 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl**  =  *DWORD: 00000001*
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Novità dell'API del plug-in del controllo del codice sorgente versione 1,2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

@@ -1,5 +1,7 @@
 ---
 title: Test di code coverage
+description: Informazioni su come usare la funzionalità code coverage di Visual Studio per determinare quale percentuale del codice del progetto viene testato dai test codificati.
+ms.custom: SEO-VS-2020
 ms.date: 07/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d1b51661d9fc9a5492d123bdacd6c49d241ed87
-ms.sourcegitcommit: 3e05bd4bfac6f0b8b3534d8c013388f67e288651
+ms.openlocfilehash: c2c7bcb270184bcc140dbadef63af1315df765dc
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91959775"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330056"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usare la funzionalità code coverage per determinare la quantità di codice testato
 
@@ -46,7 +48,7 @@ La funzionalità di code coverage è disponibile solo in Visual Studio Enterpris
 
 ::: moniker range=">=vs-2019"
 
-1. Scegliere **Analizza code coverage per tutti i test**dal menu **test** .
+1. Scegliere **Analizza code coverage per tutti i test** dal menu **test** .
 
    ![Menu di code coverage analizza in Visual Studio 2019](../test/media/vs-2019/analyze-code-coverage.png)
 
@@ -304,7 +306,7 @@ Per altre informazioni, vedere [Opzioni della riga di comando di VSTest.Console.
 
 Se non vengono visualizzati i risultati del code coverage, vedere l'articolo [Risolvere i problemi di code coverage](../test/troubleshooting-code-coverage.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md)
 - [Risolvere i problemi di code coverage](../test/troubleshooting-code-coverage.md)

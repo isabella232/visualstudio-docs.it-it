@@ -1,5 +1,7 @@
 ---
 title: Determinare quale editor apre un file in un progetto | Microsoft Docs
+description: Informazioni sulle chiavi del registro di sistema e sui metodi di Visual Studio SDK utilizzati da Visual Studio per determinare quale editor apre un file in un progetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7037a3b4bfbae1801e802256af240d017d2789
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9574a3319d3c43c17d7351e462b6956ae899d84
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708651"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328405"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>Determinare quale editor apre un file in un progetto
 Quando un utente apre un file in un progetto, l'ambiente viene sottoposto a un processo di polling, aprendo infine l'editor o la finestra di progettazione appropriata per tale file. La procedura iniziale utilizzata dall'ambiente è la stessa per gli editor standard e personalizzati. L'ambiente USA diversi criteri durante il polling dell'editor da usare per aprire un file e il pacchetto VSPackage deve coordinarsi con l'ambiente durante questo processo.
@@ -27,9 +29,9 @@ Quando un utente apre un file in un progetto, l'ambiente viene sottoposto a un p
 
  Il progetto di file esterni attesta tutti i file non richiesti da altri progetti. In questo modo, gli editor personalizzati possono aprire i documenti prima che vengano aperti dagli editor standard. Se un progetto di file esterni attesta un file, l'ambiente chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodo per aprire il file con un editor standard. L'ambiente controlla l'elenco interno di editor registrati per uno che gestisce i file con *estensione RTF* . Questo elenco si trova nel registro di sistema in corrispondenza della chiave seguente:
 
- **HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ \<version> \Editors \\ \<editor factory guid> \Extensions**
+ **HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ \<version> \Editors \\ \<editor factory guid> \Extensions**
 
- L'ambiente controlla anche gli identificatori di classe nella chiave di **HKEY_CLASSES_ROOT \CLSID** per tutti gli oggetti che hanno una sottochiave **DocObject**. Se l'estensione del file viene trovata, viene creata sul posto una versione incorporata dell'applicazione, ad esempio Microsoft Word, in Visual Studio. Questi oggetti documento devono essere file composti che implementano l' <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> interfaccia oppure l'oggetto deve implementare l' <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interfaccia.
+ L'ambiente controlla anche gli identificatori di classe nella chiave **HKEY_CLASSES_ROOT\CLSID** per tutti gli oggetti che hanno una sottochiave **DocObject**. Se l'estensione del file viene trovata, viene creata sul posto una versione incorporata dell'applicazione, ad esempio Microsoft Word, in Visual Studio. Questi oggetti documento devono essere file composti che implementano l' <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> interfaccia oppure l'oggetto deve implementare l' <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interfaccia.
 
  Se non è presente alcuna factory dell'editor per i file con *estensione RTF* nel registro di sistema, l'ambiente Cerca nella chiave **HKEY_CLASSES_ROOT \\ . RTF** e apre l'editor specificato. Se l'estensione di file non viene trovata in **HKEY_CLASSES_ROOT**, l'ambiente USA l'editor di testo principale di Visual Studio per aprire il file, se si tratta di un file di testo.
 

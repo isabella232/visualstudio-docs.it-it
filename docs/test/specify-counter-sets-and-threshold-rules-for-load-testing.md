@@ -1,5 +1,7 @@
 ---
 title: Insiemi di contatori e regole di soglia per il test di carico
+description: Informazioni su come specificare insiemi di contatori e regole di soglia in un test di carico. Aggiungere i server sottoposti a test all'elenco dei computer in cui raccogliere i contatori.
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.assetid: 9e14d955-f3a4-4717-bbfe-7f08cdda5678
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 440bc01b52269c477d9d2f2194fd831041f1d20d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04348eb2d88c560e9687c687486e6b44d8394371
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596320"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328951"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Specificare insiemi di contatori e regole di soglia per i computer in un test di carico
 
@@ -97,7 +99,7 @@ Impostare la proprietà **Avvisa se supera** su **True** per indicare che il sup
 
 Impostare la proprietà **Avvisa se supera** su **False** per indicare che il non raggiungimento della soglia è un problema. Ad esempio, se la regola di soglia è impostata su **Richieste/sec** e si vuole ricevere un avviso se il valore è minore di 50, usare il tipo di regola **Confronta costante**, impostare **Valore soglia critico** su 50 e impostare **Avvisa se supera** su **False**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Aggiungere una regola di soglia](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)
 - [Analisi delle violazioni delle regole di soglia](../test/analyze-threshold-rule-violations-in-load-tests.md)

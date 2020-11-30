@@ -1,5 +1,7 @@
 ---
 title: Progettazione della tabella comandi XML (. File vsct) | Microsoft Docs
+description: Viene illustrato come progettare un file di tabella dei comandi XML (con estensione vsct) che descrive il layout e l'aspetto degli elementi di comando, inclusi pulsanti, caselle combinate, menu e barre degli strumenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,22 +12,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcd29aee98139bb151c87590b256df6b8370abff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1ccab1eddf38e2f93cb00f1f5fdea6ce09f2f05
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708746"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328431"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Progettare file della tabella dei comandi XML (con estensione vsct)
-Un file della tabella dei comandi XML (con*estensione vsct*) descrive il layout e l'aspetto degli elementi del comando per un pacchetto VSPackage. Gli elementi di comando includono pulsanti, caselle combinate, menu, barre degli strumenti e gruppi di elementi di comando. Questo articolo descrive i file della tabella dei comandi XML, il modo in cui influiscono sugli elementi e sui menu del comando e su come crearli.
+Un file della tabella dei comandi XML (con *estensione vsct*) descrive il layout e l'aspetto degli elementi del comando per un pacchetto VSPackage. Gli elementi di comando includono pulsanti, caselle combinate, menu, barre degli strumenti e gruppi di elementi di comando. Questo articolo descrive i file della tabella dei comandi XML, il modo in cui influiscono sugli elementi e sui menu del comando e su come crearli.
 
 ## <a name="commands-menus-groups-and-the-vsct-file"></a>Comandi, menu, gruppi e file con estensione vsct
  I file con *estensione vsct* sono organizzati in tutti i comandi, i menu e i gruppi di comandi. I tag XML nel file con *estensione vsct* rappresentano ognuno di questi elementi, insieme ad altri elementi associati, ad esempio i pulsanti di comando, la posizione dei comandi e le bitmap.
 
  Quando si crea un nuovo pacchetto VSPackage eseguendo il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modello di pacchetto, il modello genera un file con *estensione vsct* con gli elementi necessari per un comando di menu, una finestra degli strumenti o un editor personalizzato, a seconda delle selezioni effettuate. Questo file con *estensione vsct* può quindi essere modificato per soddisfare i requisiti di un VSPackage specifico. Per esempi relativi alla modifica di un file con estensione *vsct* , vedere [estendere i menu e i comandi](../../extensibility/extending-menus-and-commands.md).
 
- Per creare un nuovo file con *estensione vsct* vuoto, vedere [procedura: creare un file con *estensione vsct* ](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Una volta creati, gli elementi, gli attributi e i valori XML vengono aggiunti al file per descrivere il layout dell'elemento del comando. Per un XML Schema dettagliato, vedere il [riferimento XML Schema vsct](../../extensibility/vsct-xml-schema-reference.md).
+ Per creare un nuovo file con *estensione vsct* vuoto, vedere [procedura: creare un file con *estensione vsct*](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Una volta creati, gli elementi, gli attributi e i valori XML vengono aggiunti al file per descrivere il layout dell'elemento del comando. Per un XML Schema dettagliato, vedere il [riferimento XML Schema vsct](../../extensibility/vsct-xml-schema-reference.md).
 
 ## <a name="differences-between-ctc-and-vsct-files"></a>Differenze tra i file con estensione CTC e vsct
  Sebbene il significato alla base dei tag XML in un file con *estensione vsct* corrisponda a quello dei tag del formato di file *. CTC* ora deprecato, la loro implementazione è leggermente diversa:
@@ -121,5 +123,5 @@ Il nuovo compilatore, *vsct.exe*, compila entrambi i file *. CTC* e *. vsct* . I
 
  Eseguire lo strumento usando il comando **CreateExpInstance/Reset**. Tenere presente che questo strumento rimuove dall'hive sperimentale tutti i pacchetti VSPackage registrati normalmente non installati con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estendi menu e comandi](../../extensibility/extending-menus-and-commands.md)

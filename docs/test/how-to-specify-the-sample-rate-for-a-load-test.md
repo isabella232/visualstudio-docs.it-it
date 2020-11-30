@@ -1,5 +1,6 @@
 ---
 title: Specificare la frequenza di campionamento per un'impostazione di esecuzione test di carico
+description: Informazioni su come modificare la frequenza di campionamento per un valore di impostazione di esecuzione nell'Finestra Proprietà usando il Editor test di carico.
 ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 522ddebaf17a6e1c447c15732e8a60a9c4e7f5da
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c21e38671a43755c55a3f0c37c5b8ab40ae11530
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810588"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329004"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Procedura: Specificare la frequenza di campionamento per un'impostazione di esecuzione dei test di carico
 
@@ -51,7 +52,7 @@ Di seguito sono riportate alcune linee guida per le frequenze di campionamento:
 
 5. Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore dell'opzione **Frequenza di campionamento**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Configurare le impostazioni di esecuzione dei test di carico](../test/configure-load-test-run-settings.md)
 - [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md)

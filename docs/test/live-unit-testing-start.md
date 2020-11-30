@@ -1,5 +1,7 @@
 ---
 title: Informazioni su come testare il codice con Live Unit Testing
+description: Informazioni su come usare Live Unit Testing creando una libreria di classi semplice destinata .NET Standard e creando un progetto MSTest destinato a .NET Core per testarlo.
+ms.custom: SEO-VS-2020
 ms.date: 04/03/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef0fbd5c422d16df4e361ff95f4ac8deabdd5bae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce2376f2dc3cb6abeb11b328452defb891949558
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287012"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329497"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Introduzione a Live Unit Testing
 
@@ -48,7 +50,7 @@ La soluzione è semplicemente un contenitore per uno o più progetti. Per creare
 
 Ora che è stata creata la soluzione, verrà creata una libreria di classi denominata StringLibrary che contiene una serie di metodi di estensione per l'uso delle stringhe.
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione UtilityLibraries e scegliere **Aggiungi**  >  **nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione UtilityLibraries e scegliere **Aggiungi**  >  **nuovo progetto**.
 
 ::: moniker range="vs-2017"
 
@@ -96,7 +98,7 @@ Ora che è stata creata la soluzione, verrà creata una libreria di classi denom
 
 Il passaggio successivo consiste nel creare il progetto unit test per testare la libreria StringLibrary. Creare gli unit test eseguendo i passaggi seguenti:
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione UtilityLibraries e scegliere **Aggiungi**  >  **nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione UtilityLibraries e scegliere **Aggiungi**  >  **nuovo progetto**.
 
 ::: moniker range="vs-2017"
 
@@ -260,7 +262,7 @@ In questa sezione verrà illustrato come usare Live Unit Testing per identificar
 
    Si noti che nella finestra **Auto** il valore della variabile `phrase` è "Name\tDescription", che è il secondo elemento della matrice. Il metodo di test prevede che `HasEmbeddedSpaces` restituisca `true` quando viene passata questa stringa; in questo caso restituisce invece `false`. Evidentemente, non riconosce "\t", il carattere di tabulazione, come uno spazio incorporato.
 
-1. Selezionare **debug**  >  **continua**, premere **F5**oppure fare clic sul pulsante **continua** sulla barra degli strumenti per continuare a eseguire il programma di test. Dal momento che si è verificata un'eccezione non gestita, il test viene terminato.
+1. Selezionare **debug**  >  **continua**, premere **F5** oppure fare clic sul pulsante **continua** sulla barra degli strumenti per continuare a eseguire il programma di test. Dal momento che si è verificata un'eccezione non gestita, il test viene terminato.
 In questo modo vengono specificate informazioni sufficienti per un'analisi preliminare del bug. `TestHasEmbeddedSpaces`, la routine di test, ha generato un presupposto errato, oppure `HasEmbeddedSpaces` non riconosce correttamente tutti gli spazi incorporati.
 
 1. Per diagnosticare e correggere il problema, iniziare con il `StringLibrary.HasEmbeddedSpaces` metodo. Esaminare il confronto nel metodo `HasEmbeddedSpaces`. Lo spazio incorporato viene considerato come U+0020. Tuttavia, lo standard Unicode include altri caratteri spazio. Ne consegue che nel codice della libreria è stato eseguito un test per gli spazi vuoti errato.
@@ -273,7 +275,7 @@ In questo modo vengono specificate informazioni sufficienti per un'analisi preli
 
    Live Unit Testing Mostra i risultati aggiornati, che vengono visualizzati anche nella finestra dell'editor di codice.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Live Unit Testing con Visual Studio 2017](live-unit-testing.md)
 - [Domande frequenti su Live Unit Testing](live-unit-testing-faq.md)

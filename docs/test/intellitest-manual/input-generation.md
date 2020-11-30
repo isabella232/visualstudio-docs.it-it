@@ -1,5 +1,7 @@
 ---
 title: Esecuzione simbolica dinamica | Strumento di test per sviluppatori Microsoft IntelliTest
+description: Informazioni su come IntelliTest genera input per unit test con parametri analizzando le condizioni del ramo nel programma.
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 771fd167a2dc9fce8278ca53f730872a9f170eb7
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315200"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329910"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generazione di input con l'esecuzione simbolica dinamica
 
@@ -133,6 +135,6 @@ La classe statica [PexChoose](static-helper-classes.md#pexchoose) può essere us
 
 Pubblicare idee e richieste di funzionalità nella [community degli sviluppatori](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
-## <a name="further-reading"></a>Letture di approfondimento
+## <a name="further-reading"></a>Altre informazioni
 
 * [Come funziona?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)
