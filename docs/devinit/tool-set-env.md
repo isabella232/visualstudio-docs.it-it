@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 820cd87f26e4babc7a83d975c3fb480187af564f
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 20f2d142c0e253cf5ad5a7ec5d85974ff5522508
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442284"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96356834"
 ---
 # <a name="set-env"></a>set-env
 
@@ -26,11 +26,11 @@ Questo strumento usa l'API .NET Core `Environment.SetEnvironment` e presenta le 
 
 ## <a name="usage"></a>Utilizzo
 
-| Nome                                         | Type   | Obbligatoria | valore                                                                       |
+| Nome                                         | Tipo   | Obbligatoria | valore                                                                       |
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------|
 | **Commenti**                                 | stringa | No       | Proprietà commenti facoltativi. Non usato.                                       |
 | [**input**](#input)                          | stringa | No       | Input per lo strumento. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.               |
-| [**additionalOptions**](#additional-options) | stringa | No       | Non usato. Per informazioni dettagliate, vedere le [Opzioni aggiuntive](#additional-options) seguenti.  |
+| [**additionalOptions**](#additional-options) | stringa | No       | Per informazioni dettagliate, vedere le [Opzioni aggiuntive](#additional-options) seguenti.            |
 
 ### <a name="input"></a>Input
 
@@ -47,7 +47,7 @@ Una `input` stringa può contenere un'espansione della variabile di ambiente `%u
 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
-Non usato.
+ `--user``--process` `--machine` è possibile includere, o per specificare dove impostare le variabili di ambiente. Per impostazione predefinita, la destinazione è l'utente. Per ulteriori informazioni sulle destinazioni possibili per le variabili di ambiente, vedere [EnvironmentVariableTarget](https://docs.microsoft.com/dotnet/api/system.environmentvariabletarget).
 
 ### <a name="default-behavior"></a>Comportamento predefinito
 
@@ -68,6 +68,20 @@ Di seguito sono riportati alcuni esempi di come eseguire `set-env` usando un `.d
     {
       "tool": "set-env",
       "input": "foo=bar",
+    }
+  ]
+}
+```
+
+#### <a name="devinitjson-that-will-set-an-environment-variable-foo-to-value-bar-stored-in-the-environment-block-associated-with-the-current-process"></a>.devinit.json che imposta una variabile di ambiente, `foo` , su value, `bar` , archiviata nel blocco dell'ambiente associato al processo corrente:
+```json
+{
+  "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+  "run": [
+    {
+      "tool": "set-env",
+      "input": "foo=bar",
+      "additionalOptions": "--process",
     }
   ]
 }
