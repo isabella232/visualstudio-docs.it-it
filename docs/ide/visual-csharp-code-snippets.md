@@ -1,5 +1,7 @@
 ---
 title: Frammenti di codice C#
+description: Informazioni su come usare i frammenti di codice per aggiungere codice comunemente usato ai file di codice C#.
+ms.custom: SEO-VS-2020
 ms.date: 06/05/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d41907a15b7e0b1692dda3f4d678c2b843dfcd03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46b2d231f1fa9a0e90538c426f48c86e5fafecbe
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594162"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478757"
 ---
 # <a name="c-code-snippets"></a>Frammenti di codice C#
 
@@ -72,7 +74,7 @@ Per impostazione predefinita in Visual Studio per C# sono inclusi i frammenti di
 |using|Crea una direttiva [using](/dotnet/csharp/language-reference/keywords/using-directive).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale).|
 |while|Crea un ciclo [while](/dotnet/csharp/language-reference/keywords/while).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Funzioni dei frammenti di codice](../ide/code-snippet-functions.md)
 - [Frammenti di codice](../ide/code-snippets.md)

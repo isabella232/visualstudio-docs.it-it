@@ -1,5 +1,7 @@
 ---
 title: Sincronizzare le impostazioni
+description: Informazioni su come sincronizzare le impostazioni di Visual Studio in più computer eseguendo l'accesso allo stesso account di personalizzazione.
+ms.custom: SEO-VS-2020
 ms.date: 06/18/2020
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3129543656c0defe09543b8531d8a10998791083
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5326264063d135582f2e9b8730ffcf16cba9e3d6
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285205"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479206"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizzare le impostazioni di Visual Studio in più computer
 
@@ -27,19 +29,19 @@ Per impostazione predefinita, vengono sincronizzate le impostazioni seguenti:
 
 - Alias di comandi definiti dall'utente. Per altre informazioni su come definire gli alias di comandi, vedere [Alias di comandi di Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
-- Layout delle finestre definite dall'utente nella **Window**  >  pagina**Gestisci layout** finestra.
+- Layout delle finestre definite dall'utente nella **Window**  >  pagina **Gestisci layout** finestra.
 
-- Le opzioni seguenti nelle **Tools**  >  pagine**Opzioni** di strumenti:
+- Le opzioni seguenti nelle **Tools**  >  pagine **Opzioni** di strumenti:
 
-  - Impostazioni delle maiuscole e minuscole della **Environment**barra dei menu nella  >  pagina Opzioni**generali** dell'ambiente.
+  - Impostazioni delle maiuscole e minuscole della **Environment** barra dei menu nella  >  pagina Opzioni **generali** dell'ambiente.
 
-  - Tutte le impostazioni nella **Environment**  >  pagina opzioni ambiente**tipi di carattere e colori** .
+  - Tutte le impostazioni nella **Environment**  >  pagina opzioni ambiente **tipi di carattere e colori** .
 
-  - Tutti i tasti di scelta **Environment**rapida nella  >  pagina Opzioni**tastiera** ambiente.
+  - Tutti i tasti di scelta **Environment** rapida nella  >  pagina Opzioni **tastiera** ambiente.
 
   - Tutte le impostazioni nelle **Environment**  >  **schede ambiente e** nella pagina Opzioni di Windows.
 
-  - Tutte le impostazioni nella **Environment**  >  pagina Opzioni di**avvio** dell'ambiente.
+  - Tutte le impostazioni nella **Environment**  >  pagina Opzioni di **avvio** dell'ambiente.
 
   - Tutte le impostazioni nella pagina delle opzioni **Editor di testo**, ad esempio le [preferenze di stile per il codice](code-styles-and-code-cleanup.md).
 
@@ -47,7 +49,7 @@ Per impostazione predefinita, vengono sincronizzate le impostazioni seguenti:
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Disattivare le impostazioni sincronizzate per un computer specifico
 
-Le impostazioni sincronizzate per Visual Studio sono attivate per impostazione predefinita. È possibile disattivare le impostazioni sincronizzate in un computer visitando la pagina **strumenti**  >  **Opzioni**  >  **ambiente**  >  **account** e deselezionando **Sincronizza impostazioni tra i dispositivi quando**si accede a Visual Studio.
+Le impostazioni sincronizzate per Visual Studio sono attivate per impostazione predefinita. È possibile disattivare le impostazioni sincronizzate in un computer visitando la pagina **strumenti**  >  **Opzioni**  >  **ambiente**  >  **account** e deselezionando **Sincronizza impostazioni tra i dispositivi quando** si accede a Visual Studio.
 
 Ad esempio, se si decide di non sincronizzare le impostazioni in Visual Studio sul computer "A", le modifiche apportate all'impostazione sul computer "A" non vengono visualizzate nel computer "B" o nel computer "C". I computer "B" e "C" continueranno a sincronizzarsi tra di loro, ma non con il computer "A".
 
@@ -89,7 +91,7 @@ Alcune impostazioni, ad esempio il layout delle finestre degli strumenti, non ve
 
 Per reimpostare le impostazioni predefinite per tutte le impostazioni, accedere a Visual Studio, quindi selezionare **strumenti**  >  **Importa/Esporta impostazioni** per aprire **importazione/esportazione guidata delle impostazioni**. Selezionare **Reimposta tutte le impostazioni** e quindi seguire i passaggi rimanenti della procedura guidata.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Personalizzare l'IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Impostazioni dell'ambiente](../ide/environment-settings.md)

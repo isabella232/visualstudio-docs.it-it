@@ -1,5 +1,6 @@
 ---
 title: Usare gli strumenti di Windows per visualizzare la struttura del codice
+description: Informazioni su come usare le finestre degli strumenti Visualizzazione classi, gerarchia di chiamata, Visualizzatore oggetti e definizione del codice (solo C++) per esaminare le classi e i relativi membri in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 09/19/2019
 ms.topic: reference
@@ -26,16 +27,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e65dd22ccf1b47559238efcd2be18cf6b81fcb
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: e33a060718fc5fd8a3545baaa7e78b6b763ab78d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049280"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478939"
 ---
 # <a name="view-the-structure-of-code-by-using-different-tool-windows"></a>Visualizzare la struttura del codice usando diverse finestre degli strumenti
 
-È possibile esaminare le classi e i relativi membri in Visual Studio usando diverse finestre degli strumenti, tra cui **Visualizzazione classi** , **Gerarchia di chiamata** , **Visualizzatore oggetti** e **Definizione codice** (solo C++). Queste finestre degli strumenti consentono di esaminare il codice in progetti di Visual Studio, componenti .NET, componenti COM, librerie a collegamento dinamico (DLL) e librerie dei tipi (TLB).
+È possibile esaminare le classi e i relativi membri in Visual Studio usando diverse finestre degli strumenti, tra cui **Visualizzazione classi**, **Gerarchia di chiamata**, **Visualizzatore oggetti** e **Definizione codice** (solo C++). Queste finestre degli strumenti consentono di esaminare il codice in progetti di Visual Studio, componenti .NET, componenti COM, librerie a collegamento dinamico (DLL) e librerie dei tipi (TLB).
 
 È anche possibile usare **Esplora soluzioni** per esplorare i tipi e i membri nei progetti, cercare simboli, visualizzare la gerarchia di chiamata di un metodo, individuare i riferimenti dei simboli ed eseguire altre attività senza dover passare tra varie finestre degli strumenti.
 
@@ -45,11 +46,11 @@ Se si ha Visual Studio Enterprise Edition, è possibile usare *mappe del codice*
 
 La finestra **Visualizzazione classi** viene visualizzata come parte di **Esplora soluzioni** e come finestra separata. La finestra **Visualizzazione classi** visualizza gli elementi di un'applicazione. Nel riquadro superiore vengono visualizzati spazi dei nomi, tipi, enumerazioni, interfacce e classi e nel riquadro inferiore vengono visualizzati i membri che appartengono al tipo selezionato nel riquadro superiore. Tramite questa finestra è possibile passare alle definizioni dei membri nel codice sorgente (o il **Visualizzatore oggetti** se l'elemento è definito all'esterno della soluzione).
 
-Non è necessario compilare un progetto per visualizzarne gli elementi in **Visualizzazione classi** . La finestra viene aggiornata quando si modifica il codice nel progetto.
+Non è necessario compilare un progetto per visualizzarne gli elementi in **Visualizzazione classi**. La finestra viene aggiornata quando si modifica il codice nel progetto.
 
-È possibile aggiungere codice al progetto selezionando il nodo del progetto e scegliendo il pulsante **Aggiungi** per aprire la finestra di dialogo **Aggiungi nuovo elemento** . Il codice viene aggiunto in un file separato.
+È possibile aggiungere codice al progetto selezionando il nodo del progetto e scegliendo il pulsante **Aggiungi** per aprire la finestra di dialogo **Aggiungi nuovo elemento**. Il codice viene aggiunto in un file separato.
 
-Se il progetto viene archiviato nel controllo del codice sorgente, ogni elemento **Visualizzazione classi** visualizza un'icona che indica lo stato del codice sorgente del file. I comandi comuni del controllo del codice sorgente , ad esempio **Estrai** , **Archivia** e **Leggi ultima versione** , sono disponibili anche nel menu di scelta rapida per l'elemento.
+Se il progetto viene archiviato nel controllo del codice sorgente, ogni elemento **Visualizzazione classi** visualizza un'icona che indica lo stato del codice sorgente del file. I comandi comuni del controllo del codice sorgente , ad esempio **Estrai**, **Archivia** e **Leggi ultima versione**, sono disponibili anche nel menu di scelta rapida per l'elemento.
 
 ### <a name="class-view-toolbar"></a>Visualizzazione classi - Barra degli strumenti
 
@@ -57,10 +58,10 @@ La barra degli strumenti **Visualizzazione classi** contiene i comandi seguenti:
 
 |Nome|Descrizione|
 |-|-|
-|**Nuova cartella**|Crea una cartella virtuale o una sottocartella in cui è possibile organizzare gli elementi usati di frequente. Vengono salvati nel file di soluzione (con *estensione suo* ) attivo. Dopo che è possibile rinominare o eliminare un elemento nel codice, potrebbe essere visualizzato in una cartella virtuale come nodo di errore. Per correggere questo problema, eliminare il nodo di errore. Se è stato rinominato un elemento, è possibile spostarlo dalla gerarchia di progetto nella cartella nuovamente.|
+|**Nuova cartella**|Crea una cartella virtuale o una sottocartella in cui è possibile organizzare gli elementi usati di frequente. Vengono salvati nel file di soluzione (con *estensione suo*) attivo. Dopo che è possibile rinominare o eliminare un elemento nel codice, potrebbe essere visualizzato in una cartella virtuale come nodo di errore. Per correggere questo problema, eliminare il nodo di errore. Se è stato rinominato un elemento, è possibile spostarlo dalla gerarchia di progetto nella cartella nuovamente.|
 |**Back**|Consente di passare all’elemento selezionato in precedenza.|
 |**Inoltra**|Consente di passare al successivo elemento selezionato.|
-|**Visualizza diagramma classi** (solo progetti di codice gestito)|Diventa disponibile quando si seleziona uno spazio dei nomi o si digita in **Visualizzazione classi** . Quando viene selezionato uno spazio dei nomi, che contiene tutti i tipi visualizzati dal diagramma classi. Quando viene selezionato uno spazio dei nomi, viene visualizzato solo quel tipo dal diagramma classi.|
+|**Visualizza diagramma classi** (solo progetti di codice gestito)|Diventa disponibile quando si seleziona uno spazio dei nomi o si digita in **Visualizzazione classi**. Quando viene selezionato uno spazio dei nomi, che contiene tutti i tipi visualizzati dal diagramma classi. Quando viene selezionato uno spazio dei nomi, viene visualizzato solo quel tipo dal diagramma classi.|
 
 ### <a name="class-view-settings"></a>Visualizzazione classi - Impostazioni
 
@@ -83,10 +84,10 @@ Il menu di scelta rapida (o clic con il pulsante destro del mouse) in **Visualiz
 
 |Nome|Descrizione|
 |-|-|
-|**Vai a definizione**|Trova la definizione dell'elemento nel codice sorgente o nel **Visualizzatore oggetti** , se l'elemento non è definito nel progetto aperto.|
-|**Sfoglia definizione**|Visualizza l'elemento selezionato nel **Visualizzatore oggetti** .|
-|**Trova tutti i riferimenti**|Trova l'elemento oggetto attualmente selezionato e visualizza i risultati in una finestra **Risultati ricerca** .|
-|**Filtra per tipo** (solo codice gestito)|Visualizza solo il tipo selezionato o lo spazio dei nomi. È possibile rimuovere il filtro scegliendo il pulsante **Cancella ricerca** ( **X** ) accanto alla casella **trova** .|
+|**Vai a definizione**|Trova la definizione dell'elemento nel codice sorgente o nel **Visualizzatore oggetti**, se l'elemento non è definito nel progetto aperto.|
+|**Sfoglia definizione**|Visualizza l'elemento selezionato nel **Visualizzatore oggetti**.|
+|**Trova tutti i riferimenti**|Trova l'elemento oggetto attualmente selezionato e visualizza i risultati in una finestra **Risultati ricerca**.|
+|**Filtra per tipo** (solo codice gestito)|Visualizza solo il tipo selezionato o lo spazio dei nomi. È possibile rimuovere il filtro scegliendo il pulsante **Cancella ricerca** (**X**) accanto alla casella **trova** .|
 |**Copia**|Copia il nome completo dell'elemento.|
 |**Ordina alfabeticamente**|Elenca tipi e membri in ordine alfabetico per nome.|
 |**Ordina per tipo di membro**|Elenca i tipi e membri nell'ordine in base al tipo (in cui le classi precedono le interfacce, le interfacce precedono i delegati e i metodi precedono le proprietà).|
@@ -95,7 +96,7 @@ Il menu di scelta rapida (o clic con il pulsante destro del mouse) in **Visualiz
 |**Vai a dichiarazione** (solo codice C++)|Visualizza la dichiarazione del tipo o membro nel codice sorgente, se disponibile.|
 |**Vai a definizione**|Visualizza la definizione del tipo o membro nel codice sorgente, se disponibile.|
 |**Vai a riferimento**|Visualizza un riferimento al tipo o membro nel codice sorgente, se disponibile.|
-|**Visualizza gerarchia delle chiamate**|Visualizza il metodo selezionato nella finestra **Gerarchia di chiamata** .|
+|**Visualizza gerarchia delle chiamate**|Visualizza il metodo selezionato nella finestra **Gerarchia di chiamata**.|
 
 ## <a name="call-hierarchy-window-visual-basic-c-c"></a>Finestra Gerarchia di chiamata (Visual Basic, C#, C++)
 
@@ -109,7 +110,7 @@ Usando l'elenco a discesa sulla barra degli strumenti è possibile specificare l
 
 Il riquadro principale visualizza le chiamate da e verso il metodo e il riquadro **Siti di chiamata** visualizza il percorso della chiamata selezionata. Per i membri virtuali o astratti viene visualizzato un nodo **Overrides method name** (Esegui override nome metodo). Per i membri di interfaccia viene visualizzato un nodo **Implements method name** (Implementa nome metodo).
 
-La finestra **Gerarchia di chiamata** non trova riferimenti per il gruppo di metodi, che includono i percorsi in cui un metodo viene aggiunto come gestore eventi o assegnato a un delegato. Per trovare questi riferimenti, usare il comando **Trova tutti i riferimenti** .
+La finestra **Gerarchia di chiamata** non trova riferimenti per il gruppo di metodi, che includono i percorsi in cui un metodo viene aggiunto come gestore eventi o assegnato a un delegato. Per trovare questi riferimenti, usare il comando **Trova tutti i riferimenti**.
 
 Il menu di scelta rapida nella finestra **gerarchia di chiamata** contiene i comandi seguenti:
 
@@ -130,19 +131,19 @@ Nella finestra **Visualizzatore oggetti** vengono visualizzate le descrizioni de
 
 ::: moniker range="vs-2017"
 
-Le impostazioni personalizzate vengono salvate nella directory dell'applicazione utente di Visual Studio, *%AppData%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat* .
+Le impostazioni personalizzate vengono salvate nella directory dell'applicazione utente di Visual Studio, *%AppData%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Le impostazioni personalizzate vengono salvate nella directory dell'applicazione utente di Visual Studio, *%APPDATA%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat* .
+Le impostazioni personalizzate vengono salvate nella directory dell'applicazione utente di Visual Studio, *%APPDATA%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat*.
 
 ::: moniker-end
 
 Il riquadro sinistro della finestra **Visualizzatore oggetti** mostra gli assembly. È possibile espandere gli assembly per visualizzare gli spazi dei nomi in essi contenuti e quindi espandere gli spazi dei nomi per visualizzare i tipi contenuti. Quando si seleziona un tipo, nel riquadro di destra sono elencati i relativi membri (ad esempio proprietà e metodi). Il riquadro inferiore destro visualizza informazioni dettagliate sull'elemento selezionato.
 
-È possibile cercare un elemento specifico usando la casella **Ricerca** nella parte superiore della finestra. Tutte le corrispondenze non applicano la distinzione tra maiuscole e minuscole. I risultati della ricerca vengono visualizzati nel riquadro sinistro. Per cancellare una ricerca, scegliere il pulsante **Cancella ricerca** ( **X** ) accanto alla casella di **ricerca** .
+È possibile cercare un elemento specifico usando la casella **Ricerca** nella parte superiore della finestra. Tutte le corrispondenze non applicano la distinzione tra maiuscole e minuscole. I risultati della ricerca vengono visualizzati nel riquadro sinistro. Per cancellare una ricerca, scegliere il pulsante **Cancella ricerca** (**X**) accanto alla casella di **ricerca** .
 
 Il **Visualizzatore oggetti** tiene traccia delle selezioni effettuate ed è possibile spostarsi tra le selezioni effettuate usando i pulsanti **Avanti** e **Indietro** sulla barra degli strumenti.
 
@@ -172,8 +173,8 @@ Il menu di scelta rapida (o clic con il pulsante destro del mouse) in **Visualiz
 |Nome|Descrizione|
 |-|-|
 |**Sfoglia definizione**|Viene illustrato il nodo primario per l'elemento selezionato.|
-|**Trova tutti i riferimenti**|Trova l'elemento oggetto attualmente selezionato e visualizza i risultati in una finestra **Risultati ricerca** .|
-|**Filtra per tipo**|Visualizza solo il tipo selezionato o lo spazio dei nomi. È possibile rimuovere il filtro scegliendo il pulsante **Cancella ricerca** .|
+|**Trova tutti i riferimenti**|Trova l'elemento oggetto attualmente selezionato e visualizza i risultati in una finestra **Risultati ricerca**.|
+|**Filtra per tipo**|Visualizza solo il tipo selezionato o lo spazio dei nomi. È possibile rimuovere il filtro scegliendo il pulsante **Cancella ricerca**.|
 |**Copia**|Copia il nome completo dell'elemento.|
 |**Rimuovi**|Se l'ambito è un componente personalizzato impostato, rimuove il componente selezionato dall'ambito.|
 |**Ordina alfabeticamente**|Elenca tipi e membri in ordine alfabetico per nome.|
@@ -183,7 +184,7 @@ Il menu di scelta rapida (o clic con il pulsante destro del mouse) in **Visualiz
 |**Vai a dichiarazione** (solo progetti C++)|Visualizza la dichiarazione del tipo o membro nel codice sorgente, se disponibile.|
 |**Vai a definizione**|Visualizza la definizione del tipo o membro nel codice sorgente, se disponibile.|
 |**Vai a riferimento**|Visualizza un riferimento al tipo o membro nel codice sorgente, se disponibile.|
-|**Visualizza gerarchia delle chiamate**|Visualizza il metodo selezionato nella finestra **Gerarchia di chiamata** .|
+|**Visualizza gerarchia delle chiamate**|Visualizza il metodo selezionato nella finestra **Gerarchia di chiamata**.|
 
 ## <a name="code-definition-window-c"></a>Finestra Definizione codice (C++)
 
@@ -204,17 +205,17 @@ Il menu di scelta rapida (o clic con il pulsante destro del mouse) nella finestr
 |**Rinominare**||
 |**Genera grafico dei file di inclusione**||
 |**Visualizza definizione**||
-|**Vai a definizione**|Trova la definizione (o le definizioni per le classi parziali) e le visualizza in una finestra **Risultati ricerca** .|
+|**Vai a definizione**|Trova la definizione (o le definizioni per le classi parziali) e le visualizza in una finestra **Risultati ricerca**.|
 |**Vai a dichiarazione**||
 |**Trova tutti i riferimenti**|Consente di trovare i riferimenti al tipo o membro nella soluzione.|
-|**Visualizza gerarchia delle chiamate**|Visualizza il metodo nella finestra **Gerarchia di chiamata** .|
+|**Visualizza gerarchia delle chiamate**|Visualizza il metodo nella finestra **Gerarchia di chiamata**.|
 |**Attiva/disattiva file di codice/intestazione**||
 |**Esegui test**|Se vi sono unit test nel progetto, vengono eseguiti i test per il codice selezionato.|
 |**Test di debug**||
 |**Punto di interruzione**|Inserisce un punto di interruzione (o un punto di analisi).|
 |**Esegui fino al cursore**|Esegue il programma in modalità di debug per la posizione del cursore.|
 |**Frammento di codice**||
-|**Taglia** , **Copia** , **Incolla**||
+|**Taglia**, **Copia**, **Incolla**||
 |**Annotazione**||
 |**struttura**|Comandi di struttura standard.|
 |**Ripeti analisi**||

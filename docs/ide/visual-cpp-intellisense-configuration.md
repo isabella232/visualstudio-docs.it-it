@@ -1,5 +1,7 @@
 ---
 title: Configurare un progetto C++ per IntelliSense
+description: Informazioni su come configurare manualmente il progetto C++ per ottenere il corretto funzionamento di IntelliSense utilizzando l'IDE di Visual Studio per identificare e correggere i problemi di IntelliSense.
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2018
 ms.topic: conceptual
 author: corob-msft
@@ -7,12 +9,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 610f3d92d86e227973be9c481adaf830d3d16737
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 34be73203f5c1d01e4674e7892e0f89d4aae4816
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509887"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478796"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurare un progetto C++ per IntelliSense
 
@@ -93,7 +95,7 @@ La finestra di output mostrerà ora le righe di comando passate al compilatore d
 /Yustdafx.h
 ```
 
-Queste informazioni possono aiutare a identificare perché IntelliSense fornisce informazioni non accurate. Ad esempio, se la directory di inclusione del progetto contiene **$(MyVariable)\Include**e il log di diagnostica mostra **/I\Include** come percorso di inclusione, significa che **$(MyVariable)** non è stato valutato ed è stato rimosso dal percorso di inclusione finale.
+Queste informazioni possono aiutare a identificare perché IntelliSense fornisce informazioni non accurate. Ad esempio, se la directory di inclusione del progetto contiene **$(MyVariable)\Include** e il log di diagnostica mostra **/I\Include** come percorso di inclusione, significa che **$(MyVariable)** non è stato valutato ed è stato rimosso dal percorso di inclusione finale.
 
 ## <a name="about-the-intellisense-build"></a>Informazioni sulla compilazione di IntelliSense
 
@@ -120,6 +122,6 @@ Se si imposta la variabile di ambiente TRACEDESIGNTIME su true e si riavvia Visu
 
 Per altre informazioni sulla variabile di ambiente TRACEDESIGNTIME, vedere [Roslyn](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Diagnosing-Project-System-Build-Errors.md) e [Common Project System](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md). Le informazioni contenute in questi articoli si applicano ai progetti C++.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [IntelliSense per Visual C++](visual-cpp-intellisense.md)

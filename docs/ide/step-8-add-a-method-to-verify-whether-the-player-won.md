@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 8: Aggiungere un metodo per verificare se il giocatore ha vinto'
+description: Informazioni su come aggiungere un metodo per determinare se il giocatore ha vinto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881fa0d90390a059bea28cb19584381f814396d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c53afebfd8c39e9c43f82916095d8eeef2ec8b11
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579755"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479290"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Passaggio 8: Aggiungere un metodo per verificare se il giocatore ha vinto
 È stato creato un gioco divertente, ma serve un elemento aggiuntivo per completare l'opera. Il gioco deve terminare quando il giocatore vince, pertanto è necessario aggiungere un metodo `CheckForWinner()` per verificare se il giocatore ha vinto.
@@ -43,10 +45,10 @@ ms.locfileid: "77579755"
 3. Salvare ed eseguire il programma. Giocare e accoppiare tutte le icone. Quando si vince, il programma visualizza un **MessageBox** di congratulazioni, come illustrato nello screenshot seguente, e quindi chiude la finestra.
 
      ![Gioco di abbinamenti con MessageBox](../ide/media/express_tut4step8.png)<br/>
-***Gioco di abbinamenti*** *con* ***MessageBox***
+**_Matching Game_* _ _con * ***MessageBox**_
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 9: provare altre funzionalità](../ide/step-9-try-other-features.md)**.
+- Per andare al passaggio successivo dell'esercitazione, vedere _ *[passaggio 9: provare altre funzionalità](../ide/step-9-try-other-features.md)* *.
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 7: Mantenere le coppie visibili](../ide/step-7-keep-pairs-visible.md).

@@ -1,5 +1,7 @@
 ---
 title: Suggerimenti per migliorare le prestazioni
+description: Informazioni su come ottimizzare determinate funzionalità di Visual Studio che potrebbero non essere usate per migliorare le prestazioni.
+ms.custom: SEO-VS-2020
 ms.date: 08/13/2020
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a70199f6a46fc5fd78c9b40dc5c68ed1e1c85a56
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 6f4c36987e198be576d843b984be14ddea824919
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189862"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479615"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Suggerimenti sulle prestazioni di Visual Studio
 
@@ -151,7 +153,7 @@ Se l'imposizione della Garbage Collection risulta particolarmente efficiente nel
 
 Per una descrizione dettagliata del Garbage Collector di CLR, vedere [Nozioni fondamentali sulla Garbage Collection](/dotnet/standard/garbage-collection/fundamentals).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Ottimizzare le prestazioni di Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Load solutions faster (Visual Studio blog)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/) (blog di Visual Studio Caricare più rapidamente soluzioni)

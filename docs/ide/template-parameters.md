@@ -1,5 +1,7 @@
 ---
 title: Parametri dei modelli di progetti ed elementi
+description: Informazioni su come usare i parametri del modello per sostituire i valori nel modello quando viene creata un'istanza del modello.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e575011f76370083b5a0f461fbb62bbbc839ea3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78169365"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479199"
 ---
 # <a name="template-parameters"></a>Parametri di modelli
 
@@ -50,7 +52,7 @@ La tabella seguente elenca i parametri di modello riservati che possono essere u
 |Parametro|Descrizione|
 |---------------|-----------------|
 |clrversion|Versione corrente di Common Language Runtime (CLR).|
-|ext_*|Aggiungere il prefisso `ext_` a tutti i parametri per fare riferimento alle variabili del modello padre. Ad esempio, `ext_safeprojectname`|
+|ext_*|Aggiungere il prefisso `ext_` a tutti i parametri per fare riferimento alle variabili del modello padre. Ad esempio: `ext_safeprojectname`.|
 |guid[1-10]|GUID usato per sostituire il GUID del progetto in un file di progetto. È possibile specificare fino a 10 GUID univoci, ad esempio `guid1`.|
 |itemname|Nome del file in cui viene usato il parametro.|
 |machinename|Nome del computer corrente, ad esempio Computer01.|
@@ -65,7 +67,7 @@ La tabella seguente elenca i parametri di modello riservati che possono essere u
 |userdomain|Dominio dell'utente corrente.|
 |username|Nome dell'utente corrente.|
 |webnamespace|Nome del sito Web corrente. Questo parametro viene usato nel modello di modulo Web per garantire che i nomi delle classi siano univoci. Se il sito Web si trova nella directory radice del server Web, questo parametro di modello viene risolto nella directory radice del server Web.|
-|year|L'anno corrente nel formato AAAA.|
+|anno|L'anno corrente nel formato AAAA.|
 
 > [!NOTE]
 > I parametri di modello fanno distinzione tra maiuscole e minuscole.
@@ -117,7 +119,7 @@ Nel file *.vstemplate* del modello di progetto includere l'attributo `ReplacePar
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: sostituire i parametri di un modello](how-to-substitute-parameters-in-a-template.md)
 - [Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)

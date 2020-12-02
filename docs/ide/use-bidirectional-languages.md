@@ -1,5 +1,7 @@
 ---
 title: Supporto per l'arabo e l'ebraico
+description: Informazioni su come visualizzare il testo in arabo ed ebraico e immettere il testo bidirezionale per i nomi e i valori degli oggetti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa2520527259c476f84d83cdff81d9f96bc2bbd7
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591996"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478965"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Supporto per le lingue bidirezionali in Visual Studio
 
@@ -86,6 +88,6 @@ L'ordine di lettura da destra a sinistra non è supportato nelle posizioni segue
 
 - L'editor di codice (e l'editor di testo) non supportano l'ordine di lettura da destra a sinistra. È possibile immettere il testo in una lingua bidirezionale, ma l'ordine di lettura è sempre da sinistra a destra.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sviluppare app globalizzate e localizzate](globalizing-and-localizing-applications.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Esercitazione 1: Creare un visualizzatore di immagini'
+description: Informazioni su come compilare un'app che carica un'immagine da un file e la Visualizza in una finestra.
+ms.custom: SEO-VS-2020
 ms.date: 10/16/2019
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44fe22aa1d4549d1daba4324349160afcd3133ba
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1c0eea844b04cbe8ba261fd4d65a6d21fb99aa4b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811214"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479134"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Esercitazione 1: Creare un visualizzatore di immagini
 
@@ -66,7 +68,7 @@ Sono disponibili anche eccezionali risorse di formazione video gratuite. Per alt
 
 Per iniziare l'esercitazione, iniziare con il **[passaggio 1: creare un Windows Forms Application progetto](../ide/step-1-create-a-windows-forms-application-project.md)**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Altre esercitazioni su C#](../get-started/csharp/index.yml)
 * [Esercitazioni Visual Basic](../get-started/visual-basic/index.yml)

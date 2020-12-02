@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 9: Esaminare, commentare e testare il codice'
+description: Informazioni su come aggiungere un commento al codice e testare l'app.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
 ms.topic: tutorial
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b31532bf6c26512e471ee787dc7219620e6db62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f5be5d8c59d9ef402bd929bd386a7bdaaa9912e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579752"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479303"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Passaggio 9: Esaminare, commentare e testare il codice
 
@@ -72,17 +74,17 @@ Si è appena compilato un programma che funziona e sebbene non sia ancora finito
 1. Prima di eseguire l'applicazione, salvare l'app scegliendo il pulsante della barra degli strumenti **Salva tutto** , che dovrebbe essere simile allo screenshot seguente.
 
      ![Pulsante della barra degli strumenti Salva tutto](../ide/media/express_iconsaveall.png)<br>
-*Pulsante* ***Salva tutto***
+**_Salva tutto_* _ _button *
 
      In alternativa, per salvare l'app, scegliere **file**  >  **Salva tutto** dalla barra dei menu o premere **CTRL** + **MAIUSC** + **S**. Una procedura consigliata consiste nel salvare presto e spesso.
 
      Quando è in esecuzione, il programma dovrebbe essere simile all'immagine seguente.
 
-     ![Visualizzatore di immagini](../ide/media/express_pictureviewerdonerun.png)<br>***Visualizzatore di immagini***
+     ![Visualizzatore di immagini](../ide/media/express_pictureviewerdonerun.png)<br>**_Visualizzatore immagini_* _
 
 ## <a name="to-test-your-app"></a>Per testare l'app
 
-1. Premere il tasto **F5** o scegliere il pulsante della barra degli strumenti **Avvia debug** .
+1. Premere il tasto _ *F5** o scegliere il pulsante della barra degli strumenti **Avvia debug** .
 
 1. Scegliere il pulsante **Visualizza immagine** per eseguire il codice appena scritto. Prima di tutto, l'app apre una finestra di dialogo **Apri file** . Verificare che i filtri vengano visualizzati nell'elenco a discesa **Tipo file** nella parte inferiore della finestra di dialogo. Passare quindi a un'immagine e aprirla. In genere è possibile trovare immagini di esempio incluse nel sistema operativo Windows nella cartella *Documenti*, che si trova all'interno della cartella *Immagini\Immagini campione*.
 
@@ -99,7 +101,7 @@ Si è appena compilato un programma che funziona e sebbene non sia ancora finito
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 8: Scrivere codice per il gestore dell'evento del pulsante Mostra immagine](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Esercitazione 2: creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
 * [Esercitazione 3: creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)

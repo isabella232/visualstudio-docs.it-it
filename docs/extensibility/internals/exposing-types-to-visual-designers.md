@@ -1,5 +1,7 @@
 ---
 title: Esposizione di tipi alle finestre di progettazione visiva | Microsoft Docs
+description: Informazioni su come esporre le definizioni di classi e tipi, incluse quelle negli strumenti personalizzati, in modo che Visual Studio possa renderle disponibili per le finestre di progettazione visive.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48aa8a729b5cc38d3cee08a7f5ec143d5e84931a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 43d1e1dca1860faa44d6bb5bc256bb8f0465e8b2
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012530"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479527"
 ---
 # <a name="expose-types-to-visual-designers"></a>Esporre i tipi alle finestre di progettazione visiva
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per visualizzare una finestra di progettazione visiva, è necessario avere accesso alle definizioni di classe e di tipo in fase di progettazione. Le classi vengono caricate da un set predefinito di assembly che includono il set di dipendenze completo del progetto corrente (riferimenti più le relative dipendenze). Potrebbe inoltre essere necessario per le finestre di progettazione visiva accedere alle classi e ai tipi definiti nei file generati dagli strumenti personalizzati.
@@ -37,13 +39,13 @@ ms.locfileid: "90012530"
 
 - Il codice generato deve essere nella stessa lingua dell'impostazione del progetto globale.
 
-     Il PE temporaneo viene compilato indipendentemente da ciò che viene segnalato dallo strumento personalizzato come estensione richiesta in, a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> condizione che **GeneratesDesignTimeSource** sia impostato su 1 nel registro di sistema. Non è necessario che l'estensione sia *. vb*, *. cs*o *. jsl*; può essere qualsiasi estensione.
+     Il PE temporaneo viene compilato indipendentemente da ciò che viene segnalato dallo strumento personalizzato come estensione richiesta in, a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> condizione che **GeneratesDesignTimeSource** sia impostato su 1 nel registro di sistema. Non è necessario che l'estensione sia *. vb*, *. cs* o *. jsl*; può essere qualsiasi estensione.
 
 - Il codice generato dallo strumento personalizzato deve essere valido e deve essere compilato autonomamente utilizzando solo il set di riferimenti presenti nel progetto al termine dell' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> esecuzione.
 
      Quando viene compilato un file PE temporaneo, l'unico file di origine fornito al compilatore è l'output dello strumento personalizzato. Uno strumento personalizzato che usa un file PE temporaneo deve pertanto generare file di output che possono essere compilati indipendentemente da altri file nel progetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Introduzione all'oggetto BuildManager](/previous-versions/8f9kffa8(v=vs.140))
 - [Implementare generatori di file singoli](../../extensibility/internals/implementing-single-file-generators.md)
 - [Registrare generatori di file singoli](../../extensibility/internals/registering-single-file-generators.md)

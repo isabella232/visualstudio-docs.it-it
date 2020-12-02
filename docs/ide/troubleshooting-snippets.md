@@ -1,5 +1,7 @@
 ---
 title: Risoluzione dei problemi relativi ai frammenti di codice
+description: Informazioni su come risolvere i problemi relativi ai frammenti di codice IntelliSense che in genere sono causati da contenuto non valido nel file di frammento o da un file di frammento danneggiato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a699c6a158b5a0751824c7634ddd637467da50d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4012298bdc4edf0c174576c739e67781bfffdade
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588694"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479186"
 ---
 # <a name="troubleshoot-snippets"></a>Risoluzione dei problemi relativi ai frammenti di codice
 
@@ -35,6 +37,6 @@ In genere, i problemi con i frammenti di codice IntelliSense possono avere due c
 
 - Una variabile potrebbe essere non definita. Le variabili non definite in un frammento di codice dovrebbero essere evidenziate. In caso contrario, è possibile segnalare l'errore a chi ha generato il frammento di codice.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Frammenti di codice](../ide/code-snippets.md)

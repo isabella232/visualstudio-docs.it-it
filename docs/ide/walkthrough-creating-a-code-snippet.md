@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: Creare un frammento di codice'
+description: 'Informazioni su come creare un frammento di codice in tre passaggi: creare un file XML, compilare gli elementi appropriati e aggiungervi il codice.'
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 46744decddcc2d50fd05ea86cc6ebfad9d210031
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61b7f227344f00fe277d4bf062f83bd3c1d79fd5
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800502"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479641"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procedura dettagliata: Creare un frammento di codice
 
@@ -54,7 +56,7 @@ Il codice XML seguente illustra il modello di frammento di base:
 
 2. Specificare il titolo del frammento nell'elemento **Title**. Usare il titolo **Square Root**.
 
-3. Aggiungere il linguaggio del frammento nell'attributo **Language** dell'elemento **Code**. Per C#, usare **CSharp**, per Visual Basic, usare **VB**e per C++, usare **cpp**.
+3. Aggiungere il linguaggio del frammento nell'attributo **Language** dell'elemento **Code**. Per C#, usare **CSharp**, per Visual Basic, usare **VB** e per C++, usare **cpp**.
 
    > [!TIP]
    > Per tutti i valori di lingua disponibili, vedere la [sezione Attributi dell'elemento Code](code-snippets-schema-reference.md#attributes) nella pagina [Riferimento dello schema dei frammenti di codice](code-snippets-schema-reference.md).
@@ -108,7 +110,7 @@ Il codice XML seguente illustra il modello di frammento di base:
 
    ::: moniker-end
 
-6. Testare il frammento aprendo un progetto C# o Visual Basic. Con un file di codice aperto nell'editor, scegliere **frammenti**  >  di codice**Inserisci frammento** di codice nel menu di scelta rapida, quindi **frammenti di codice**. Verrà visualizzato un frammento denominato **Square Root**. Fare doppio clic.
+6. Testare il frammento aprendo un progetto C# o Visual Basic. Con un file di codice aperto nell'editor, scegliere **frammenti**  >  di codice **Inserisci frammento** di codice nel menu di scelta rapida, quindi **frammenti di codice**. Verrà visualizzato un frammento denominato **Square Root**. Fare doppio clic.
 
    Il frammento viene inserito nel file di codice.
 
@@ -228,6 +230,6 @@ Il codice XML seguente illustra un frammento di codice che usa il metodo `File.E
 </CodeSnippets>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Riferimento dello schema dei frammenti di codice](../ide/code-snippets-schema-reference.md)

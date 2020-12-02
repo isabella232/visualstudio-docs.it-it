@@ -1,5 +1,7 @@
 ---
 title: IntelliSense per Visual Basic
+description: Informazioni su come usare le funzionalità di IntelliSense offerte dall'editor del codice sorgente Visual Basic.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 118de9ec05bcd5c56376376619bea0c5148d36ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70cdcf9eb6d741fc579ce555ce0bfa3cdea0d774
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594188"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478822"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense per i file di codice di Visual Basic
 
@@ -55,6 +57,6 @@ Per altre informazioni, vedere [Sicurezza dall'accesso di codice per applicazion
 
 In Visual Basic gli elenchi di completamento IntelliSense includono due controlli Struttura a schede posizionati a fine elenco. Nella scheda **Comune**, selezionata per impostazione predefinita, sono visualizzati gli elementi usati più di frequente per completare l'istruzione che si sta scrivendo. Nella scheda **Tutti** sono visualizzati tutti gli elementi disponibili per il completamento automatico, inclusi quelli presenti anche nella scheda **Comune**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare IntelliSense](../ide/using-intellisense.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Esercitazione 2: Creare un quiz matematico a tempo'
+description: Informazioni su come creare un quiz in cui l'esecutore del quiz deve rispondere a quattro problemi aritmetici casuali entro un determinato periodo di tempo.
+ms.custom: SEO-VS-2020
 ms.date: 10/16/2019
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 ms.topic: tutorial
@@ -9,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 738d32186a0bb0f1d4655f9afea3d236bf53ad4c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b0044e5d3a08e46318a325443e9f05742e141127
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810848"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479108"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Esercitazione 2: Creare un quiz matematico a tempo
 
@@ -56,7 +58,7 @@ Sono disponibili anche eccezionali risorse di formazione video gratuite. Per alt
 
 Per iniziare l'esercitazione, iniziare con il **[passaggio 1: creare un progetto e aggiungere etichette al form](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Altre esercitazioni su C#](../get-started/csharp/index.yml)
 * [Esercitazioni Visual Basic](../get-started/visual-basic/index.yml)

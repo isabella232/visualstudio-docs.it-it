@@ -1,5 +1,7 @@
 ---
 title: IntelliSense per C++
+description: Informazioni su alcune funzionalità di IntelliSense che è possibile usare durante la codifica del progetto C++.
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0d1be12f733a858bf223fb1dce6a091c0dc6c50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49d555b2e509237e34375e1b85a35c57a6db4f3b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594214"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478887"
 ---
 # <a name="visual-c-intellisense-features"></a>Funzionalità IntelliSense per Visual C++
 
@@ -104,7 +106,7 @@ Per una maggiore flessibilità, tutte le funzionalità di IntelliSense possono e
 
 ![Finestra di dialogo Strumenti/Opzioni](../ide/media/sintellisensecpptoolsoptions.PNG)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Utilizzo di IntelliSense](../ide/using-intellisense.md)
 - [Configurare un progetto C++ per IntelliSense](visual-cpp-intellisense-configuration.md)

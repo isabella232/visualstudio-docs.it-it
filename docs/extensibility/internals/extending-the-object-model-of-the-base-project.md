@@ -1,5 +1,7 @@
 ---
 title: Estensione del modello a oggetti del progetto di base | Microsoft Docs
+description: Informazioni su come estendere il modello a oggetti di automazione del progetto di base in Visual Studio usando un sottotipo di progetto.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33186cd477ade7f562f6191393dabe8e94f4f194
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4e3d7ad3f19aedc59288d6799e97d91499939c9
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708392"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479459"
 ---
 # <a name="extend-the-object-model-of-the-base-project"></a>Estendere il modello a oggetti del progetto di base
 

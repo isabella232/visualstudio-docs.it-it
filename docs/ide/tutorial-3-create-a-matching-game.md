@@ -1,5 +1,7 @@
 ---
 title: 'Esercitazione 3: Creare un gioco di abbinamenti'
+description: Informazioni su come creare un gioco di abbinamenti, in cui il giocatore deve corrispondere a coppie di icone nascoste.
+ms.custom: SEO-VS-2020
 ms.date: 10/16/2019
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 ms.topic: tutorial
@@ -9,12 +11,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 399275b64392ab4c6def97eb8c4f6a5bdafb2c4a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 62859c86ff3b4057eceb1f6e00ebfd46867f9927
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810835"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479030"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Esercitazione 3: Creare un gioco di abbinamenti
 
@@ -59,7 +61,7 @@ Sono disponibili anche eccezionali risorse di formazione video gratuite. Per alt
 
 Per iniziare l'esercitazione, iniziare con il **[passaggio 1: creare un progetto e aggiungere una tabella al form](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Altre esercitazioni su C#](../get-started/csharp/index.yml)
 * [Esercitazioni Visual Basic](../get-started/visual-basic/index.yml)

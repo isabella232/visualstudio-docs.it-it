@@ -1,5 +1,7 @@
 ---
 title: Usa caratteri jolly
+description: Informazioni su alcuni caratteri di espressione regolare, operatori, costrutti ed esempi di modelli che è possibile usare in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/13/2019
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1739d6b2376a4f86edd3c0102f7fad79da5d7cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8648eb48c68e0220b1d36a851619edec2b51ceb7
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568620"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478991"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usare espressioni regolari in Visual Studio
 
@@ -88,7 +90,7 @@ I gruppi Capture denominati, come i gruppi Capture numerati, possono essere usat
 
 - **all'interno dell'espressione regolare**: usare `\k<name>` . Ad esempio, `\k<repeated>` nell'espressione regolare `(?<repeated>\w+)\s\k<repeated>` fa riferimento al gruppo Capture denominato `repeated` la cui sottoespressione è `\w+`.
 
-- **in un modello di sostituzione**: usare `${name}` . Ad esempio, `${repeated}`
+- **in un modello di sostituzione**: usare `${name}` . Ad esempio: `${repeated}`.
 
 A titolo di esempio, l'immagine seguente mostra un'espressione regolare `(?<repeated>\w+)\s\k<repeated>` e una stringa di sostituzione `${repeated}`. Sia l'espressione regolare che il criterio di sostituzione fanno riferimento al primo gruppo Capture denominato `repeated`. Quando si sceglie **Sostituisci tutto** nella finestra di dialogo **Sostituzione veloce** in Visual Studio, le parole ripetute vengono rimosse dal testo.
 
@@ -99,7 +101,7 @@ A titolo di esempio, l'immagine seguente mostra un'espressione regolare `(?<repe
 
 Per altre informazioni sui gruppi Capture denominati, vedere [Sottoespressioni corrispondenti denominate](/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#named-matched-subexpressions). Per altre informazioni sulle espressioni regolari usate nei criteri di sostituzione, vedere [Sostituzioni nelle espressioni regolari](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Linguaggio di espressioni regolari](/dotnet/standard/base-types/regular-expression-language-quick-reference)
 - [Cercare e sostituire testo](../ide/finding-and-replacing-text.md)
