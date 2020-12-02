@@ -1,5 +1,7 @@
 ---
 title: GUID e ID delle barre degli strumenti di Visual Studio | Microsoft Docs
+description: Visualizzare un elenco di valori GUID e ID per le barre degli strumenti e i gruppi che contengono, inclusi nell'IDE di Visual Studio Integrated Development Environment.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe42821cdacc038d767e52373d45ddd7b8954323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708224"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480382"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID e ID delle barre degli strumenti di Visual Studio
 Questo argomento enumera i valori GUID e ID delle barre degli strumenti incluse nei Integrated Development Environment di Visual Studio (IDE) e dei gruppi che contengono. Questi valori sono definiti nei file con *estensione vsct* installati come parte di Visual Studio SDK. Per altre informazioni, vedere [comandi, menu e gruppi definiti dall'IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -41,7 +43,7 @@ Questo argomento enumera i valori GUID e ID delle barre degli strumenti incluse 
 |Barra degli strumenti|ID|
 |-------------|--------|
 |Standard|IDM_VS_TOOL_STANDARD|
-|Compilare|IDM_VS_TOOL_BUILD|
+|Compilazione|IDM_VS_TOOL_BUILD|
 |Editor di testo|IDM_VS_TOOL_TEXTEDITOR|
 |Debug|guidVSDebugGroup: IDM_DEBUG_TOOLBAR|
 |Percorso di debug|guidVSDebugGroup: IDM_DEBUG_CONTEXT_TOOLBAR|
@@ -95,7 +97,7 @@ Questo argomento enumera i valori GUID e ID delle barre degli strumenti incluse 
 |----------|--------|
 |Esecuzione|IDM_DEBUG_TOOLBAR|
 |Esecuzione di istruzioni|IDG_DEBUG_TOOLBAR_STEPPING|
-|Espressioni di controllo|IDG_DEBUG_TOOLBAR_WATCH|
+|Video|IDG_DEBUG_TOOLBAR_WATCH|
 |Windows|IDG_DEBUG_TOOLBAR_WINDOWS|
 
 ### <a name="debug-location-toolbar-groups"></a>Gruppi della barra degli strumenti posizione di debug
@@ -134,7 +136,7 @@ Questo argomento enumera i valori GUID e ID delle barre degli strumenti incluse 
 |Memoria 1-4|guidVSDebugGroup: IDM_MEMORY_WINDOW_TOOLBAR1... 4|IDG_MEMORY_EXPRESSION1.. 4<br /><br /> IDG_MEMORY_COLUMNS1.. 4|
 |Processi|guidVSDebugGroup: IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Aggiungere un controller di menu a una barra degli strumenti](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)
 - [Aggiungere una barra degli strumenti a una finestra degli strumenti](../../extensibility/adding-a-toolbar-to-a-tool-window.md)
 - [GUID e ID dei menu di Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 6: Aggiungere un timer'
+description: Informazioni su come aggiungere un <xref:System.Windows.Forms.Timer> controllo al gioco corrispondente.
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,27 +15,27 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0473ab07155e0f132e8e6207361e409b804257f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2684b197fc32b33081c8ecdfa8139b3c8f14e752
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80472776"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480551"
 ---
 # <a name="step-6-add-a-timer"></a>Passaggio 6: Aggiungere un timer
 Aggiungere ora un controllo <xref:System.Windows.Forms.Timer> al gioco di abbinamenti. Un timer resta in attesa per un determinato numero di millisecondi prima di generare un evento, detto *tick*. Si tratta di una condizione utile per avviare un'azione o ripeterne una a intervalli regolari. In questo caso, verrà utilizzato un timer per consentire ai giocatori di scegliere due icone e, se non corrispondono, nasconderle di nuovo dopo un breve periodo di tempo.
 
 ## <a name="to-add-a-timer"></a>Per aggiungere un timer
 
-1. Dalla casella degli strumenti in **Progettazione Windows Form**scegliere **timer** (nella categoria **componenti** ), quindi premere il tasto **invio** oppure fare doppio clic sul timer per aggiungere un controllo timer al modulo. L'icona del timer, denominata **Timer1**, dovrebbe essere visualizzata in uno spazio sotto il form, come illustrato nella figura seguente.
+1. Dalla casella degli strumenti in **Progettazione Windows Form** scegliere **timer** (nella categoria **componenti** ), quindi premere il tasto **invio** oppure fare doppio clic sul timer per aggiungere un controllo timer al modulo. L'icona del timer, denominata **Timer1**, dovrebbe essere visualizzata in uno spazio sotto il form, come illustrato nella figura seguente.
 
      ![Timer](../ide/media/express_timer.png)<br/>
-***Timer***
+**_Timer_* _
 
     > [!NOTE]
     > Se la casella degli strumenti è vuota, assicurarsi di selezionare la finestra di progettazione del form e non il codice retrostante prima di aprire la casella degli strumenti.
 
-2. Scegliere l'icona **Timer1** per selezionare il timer. Nella finestra **Proprietà** passare dalla visualizzazione degli eventi a quella delle proprietà. Impostare quindi la proprietà **Interval** del timer su **750**, ma lasciare la proprietà **Enabled** impostata su **False**. La proprietà **Interval** indica al timer il tempo di attesa tra eventi *tick* o il momento in cui viene attivato l'evento <xref:System.Windows.Forms.Timer.Tick>. Il valore 750 indica al timer di attendere tre quarti di secondo (750 millisecondi) prima di generare il relativo evento Tick. Il metodo <xref:System.Windows.Forms.Timer.Start> per avviare il timer verrà chiamato solo dopo che il giocatore avrà scelto la seconda etichetta.
+2. Per selezionare il timer, scegliere l'icona _ *Timer1**. Nella finestra **Proprietà** passare dalla visualizzazione degli eventi a quella delle proprietà. Impostare quindi la proprietà **Interval** del timer su **750**, ma lasciare la proprietà **Enabled** impostata su **False**. La proprietà **Interval** indica al timer il tempo di attesa tra eventi *tick* o il momento in cui viene attivato l'evento <xref:System.Windows.Forms.Timer.Tick>. Il valore 750 indica al timer di attendere tre quarti di secondo (750 millisecondi) prima di generare il relativo evento Tick. Il metodo <xref:System.Windows.Forms.Timer.Start> per avviare il timer verrà chiamato solo dopo che il giocatore avrà scelto la seconda etichetta.
 
 3. Scegliere l'icona del controllo timer in **Progettazione Windows Form** , quindi premere il tasto **invio** oppure fare doppio clic sul timer per aggiungere un gestore eventi di segno di spunta vuoto. Sostituire il codice con quello indicato di seguito oppure immettere manualmente il codice seguente nel gestore eventi.
 

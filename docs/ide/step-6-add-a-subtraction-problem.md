@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 6: Aggiungere un problema di sottrazione'
+description: Informazioni su come aggiungere un problema di sottrazione, oltre a informazioni su come eseguire le attività.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6dd2b572074265cca62a45b962c604abf5c849
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8157335e47ec13c66da471f77ddbd2877bcac12d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579825"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480668"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Passaggio 6: Aggiungere un problema di sottrazione
 Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazione e si apprenderà come eseguire le attività seguenti:
@@ -60,12 +62,12 @@ Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazi
      È possibile chiamare in più modi il metodo `Next()` della classe Random, a cui in precedenza in questa esercitazione è stato assegnato il nome "randomizer". I metodi che è possibile chiamare in più modi sono denominati metodi di overload ed è possibile utilizzare IntelliSense per esplorarli. Esaminare nuovamente la descrizione comando della finestra di IntelliSense per il metodo `Next()`.
 
      ![Descrizione comando della finestra di IntelliSense](../ide/media/express_overloads.png)<br/>
-***IntelliSense*** *Descrizione comando della finestra* di IntelliSense
+**_IntelliSense_* _ _window descrizione comando *
 
      La dicitura **(+ 2 overload(s))** della descrizione comando indica che è possibile chiamare il metodo `Next()` in altri due modi. Gli overload contengono numeri o tipi di argomenti diversi, pertanto funzionano in modo leggermente diverso l'uno dall'altro. Ad esempio, un metodo potrebbe accettare un singolo argomento Integer, mentre uno degli overload potrebbe accettare un Integer e una stringa. Scegliere l'overload corretto in base all'operazione da eseguire. Quando si aggiunge codice al metodo `StartTheQuiz()`, nella finestra di IntelliSense vengono visualizzate altre informazioni non appena si immette `randomizer.Next(`. Per scorrere gli overload, usare i tasti **freccia SU** e **freccia GIÙ**, come illustrato nella figura seguente:
 
      ![Overload per il metodo Next&#40;&#41; in IntelliSense](../ide/media/express_nextoverload.png)<br/>
-*Overload per* il metodo ***Next ()*** *in* ***IntelliSense***
+*Overload per*  * Metodo **Next ()** _ _in * ***IntelliSense**_
 
      In questo caso, si desidera scegliere l'ultimo overload, perché consente di specificare i valori minimo e massimo.
 
@@ -86,7 +88,7 @@ Nella sesta parte di questa esercitazione si aggiungerà un problema di sottrazi
      Il programma include un problema di sottrazione, come illustrato nella figura seguente:
 
      ![Quiz matematico con sottrazione](../ide/media/express_addsubtract.png)<br/>
-***Quiz matematico*** *con problema di sottrazione*
+_*_Quiz matematico_*_ _WITH problema di sottrazione *
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 

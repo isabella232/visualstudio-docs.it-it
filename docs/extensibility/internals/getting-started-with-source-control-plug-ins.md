@@ -1,5 +1,7 @@
 ---
 title: Introduzione con i plug-in del controllo del codice sorgente | Microsoft Docs
+description: Informazioni sulla creazione di un plug-in del controllo del codice sorgente che implementa le funzioni definite nell'API del plug-in del controllo del codice sorgente per l'uso nel controllo della versione del codice sorgente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: efc21e07830614d9d3041b2d2d231fd82c652114
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1524e4c4f08b272fd17973597d558efdabec41af
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708339"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480499"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>Introduzione ai plug-in del controllo del codice sorgente
 Per creare un plug-in del controllo del codice sorgente, è necessario creare una DLL che implementi le funzioni definite nell'API del plug-in del controllo del codice sorgente e quindi registrare la DLL con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per renderla disponibile per l'utilizzo nel controllo della versione del codice sorgente.

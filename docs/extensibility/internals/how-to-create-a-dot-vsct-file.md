@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: creare un oggetto. File vsct | Microsoft Docs'
+description: Informazioni su come creare manualmente un file con estensione vsct, un file di configurazione tabella comandi di Visual Studio basato su XML.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,16 +12,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a571098deeeca0e8262d855c24d0bf1ce66be08e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47d38e68494f29947131bcc8ce3a2a59b2e8d48b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905536"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480369"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Procedura: creare un file con estensione vsct
 
-Esistono diversi modi per creare un file di configurazione tabella comandi di Visual Studio (con*estensione vsct*) basato su XML.
+Esistono diversi modi per creare un file di configurazione tabella comandi di Visual Studio (con *estensione vsct*) basato su XML.
 
 - È possibile creare un nuovo VSPackage nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modello di pacchetto.
 
@@ -61,7 +63,7 @@ Esistono diversi modi per creare un file di configurazione tabella comandi di Vi
 
 1. Ottenere una copia del linguaggio Perl.
 
-2. Ottenere una copia dello script Perl *ConvertCTCToVSCT.pl*, che si trova in genere nella cartella * \<Visual Studio SDK installation path> \VisualStudioIntegration\Tools\bin*
+2. Ottenere una copia dello script Perl *ConvertCTCToVSCT.pl*, che si trova in genere nella cartella *\<Visual Studio SDK installation path> \VisualStudioIntegration\Tools\bin*
 
 3. Ottenere una copia del file di origine con *estensione CTC* che si desidera convertire.
 
@@ -69,7 +71,7 @@ Esistono diversi modi per creare un file di configurazione tabella comandi di Vi
 
 5. Nella [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] finestra del prompt dei comandi passare alla directory.
 
-6. Type
+6. Tipo
 
    ```
    perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct
@@ -96,7 +98,7 @@ Esistono diversi modi per creare un file di configurazione tabella comandi di Vi
 
 3. Al prompt dei comandi di Visual Studio passare alla directory che contiene i file con *estensione CTO* e *ctsym* .
 
-4. Type
+4. Tipo
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
@@ -138,7 +140,7 @@ Esistono diversi modi per creare un file di configurazione tabella comandi di Vi
 
      Questo markup deve entrare nell' `ItemGroup` elemento che contiene risorse incorporate.
 
-4. Aprire il file del pacchetto, in genere denominato * \<ProjectName\> Package.cs* o * \<ProjectName\> Package. vb*, nell'editor.
+4. Aprire il file del pacchetto, in genere denominato *\<ProjectName\> Package.cs* o *\<ProjectName\> Package. vb*, nell'editor.
 
 5. Aggiungere un `ProvideMenuResource` attributo alla classe del pacchetto, come illustrato nell'esempio seguente.
 
@@ -148,7 +150,7 @@ Esistono diversi modi per creare un file di configurazione tabella comandi di Vi
 
      Il primo valore del parametro deve corrispondere al valore dell' `ResourceName` attributo definito nel file di progetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Crea file con estensione vsct](../../extensibility/internals/authoring-dot-vsct-files.md)
 - [File della tabella dei comandi di Visual Studio (con estensione vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Riferimento XML Schema VSCT](../../extensibility/vsct-xml-schema-reference.md)

@@ -1,5 +1,7 @@
 ---
 title: Trova e sostituisci nei file
+description: Informazioni sulla funzionalità Sostituisci nei file e su come consente di cercare una stringa o un'espressione nel codice di un determinato set di file e di modificare alcune o tutte le corrispondenze trovate.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dddd55714e53516ba1ccd8a11c99761a4db7136a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c3499c1b2073d0263231eb1f60129b2cd3548fa
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585626"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480031"
 ---
 # <a name="replace-in-files"></a>Sostituisci nei file
 
@@ -101,7 +103,7 @@ Se questa casella di controllo è selezionata, i file in cui sono state eseguite
 > [!CAUTION]
 > Il comando **Annulla** può essere usato solo nei file che rimangono aperti per le modifiche. Se questa opzione non è selezionata, i file non ancora aperti per essere modificati rimarranno chiusi e non sarà disponibile alcuna opzione **Annulla** per tali file.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Cercare e sostituire testo](../ide/finding-and-replacing-text.md)
 - [Cerca nei file](../ide/find-in-files.md)

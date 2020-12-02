@@ -1,5 +1,6 @@
 ---
 title: Framework .NET di destinazione
+description: Informazioni su come specificare la versione del .NET Framework a cui si vuole destinare il progetto in modo che l'applicazione possa usare solo le funzionalità disponibili nella versione specificata.
 ms.date: 03/31/2020
 ms.topic: overview
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7c3c2b6b81f8f7793bda35c6b220e43caee9b5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9bc20c2ee08a2b838e0fd1ab14ee9a8388912542
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770456"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479732"
 ---
 # <a name="framework-targeting-overview"></a>Panoramica sull'impostazione dei framework di destinazione
 
@@ -118,7 +119,7 @@ Per altre informazioni sui riferimenti ad assembly, vedere [Risoluzione di assem
 
 Quando si usa .NET Framework 3.5 o versioni successive, vengono aggiunti automaticamente un riferimento a **System.Core** e un'importazione a livello di progetto per <xref:System.Linq> (solo in Visual Basic). Per usare le funzionalità LINQ, è necessario attivare anche `Option Infer` (solo in Visual Basic). Se si passa a una versione precedente di .NET Framework, il riferimento e l'importazione vengono rimossi automaticamente. Per altre informazioni, vedere [Uso di LINQ](/dotnet/csharp/tutorials/working-with-linq).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Framework di destinazione](/dotnet/standard/frameworks)
 - [Multitargeting (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)

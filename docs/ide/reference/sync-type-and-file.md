@@ -1,5 +1,7 @@
 ---
 title: Rinominare un file in modo che corrisponda a un tipo
+description: Informazioni su come usare il menu azioni rapide e refactoring per rinominare un tipo in modo che corrisponda al nome file o rinominare un nome file in modo che corrisponda al tipo che contiene.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b7a42a174fecd078e804f2ab3c35fbe442364a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 020dcedd6b0cb2117984d45548b5c1e099c67aee
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594396"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479823"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Refactoring con sincronizzazione di un tipo con un nome di file o un nome di file con un tipo
 
@@ -65,6 +67,6 @@ Questo refactoring si applica a:
 
        ![Risultato inline Visual Basic](media/synctype-result-vb.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)

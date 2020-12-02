@@ -1,5 +1,7 @@
 ---
 title: IntelliSense per C#
+description: Informazioni su alcune funzionalità di IntelliSense che è possibile usare durante la codifica del progetto C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ed5d86599fa99b9c1360b414b37ef95ab59082d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e725a06a2bc90c91cff11b05ad32b20a0db8e4fc
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89313432"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479784"
 ---
 # <a name="c-intellisense"></a>IntelliSense per C#
 
@@ -160,7 +162,7 @@ Se si preme **Tab**, IntelliSense esegue il stub di un metodo con la firma corre
 > [!NOTE]
 > Usare il comando **Sposta indietro** nel menu **Visualizza** (**CTRL** + **-** ) per tornare all'istruzione di collegamento dell'evento.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare IntelliSense](../ide/using-intellisense.md)
 - [IDE di Visual Studio](../get-started/visual-studio-ide.md)

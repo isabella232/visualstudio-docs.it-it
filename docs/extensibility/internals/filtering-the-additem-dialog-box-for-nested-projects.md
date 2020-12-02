@@ -1,5 +1,7 @@
 ---
 title: Filtrare la finestra di dialogo AddItem per i progetti annidati | Microsoft Docs
+description: Informazioni su come filtrare la finestra di dialogo AddItem per un progetto annidato in Visual Studio implementando l'interfaccia IVsFilterAddProjectItemDlg del progetto padre.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bc97b6041f4844ff71fe1d38a7103e1219888be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02d574007250960e3cb0b39bf50696f03af98e27
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708388"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480461"
 ---
 # <a name="filter-the-additem-dialog-box-for-nested-projects"></a>Filtrare la finestra di dialogo AddItem per i progetti annidati
 Quando si visualizza una finestra di dialogo **AddItem** per un progetto annidato, il progetto padre può controllare quali elementi vengono visualizzati nella finestra di dialogo.
@@ -29,7 +31,7 @@ Quando si visualizza una finestra di dialogo **AddItem** per un progetto annidat
 
  L' `IVsFilterAddProjectItemDlg` interfaccia può inoltre implementare il filtraggio per categoria. Per altre informazioni, vedere [aggiungere elementi alla finestra di dialogo Aggiungi nuovo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md) e [registrare i modelli di progetto e di elemento](../../extensibility/internals/registering-project-and-item-templates.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
 - [Aggiungi elementi alla finestra di dialogo Aggiungi nuovo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Registrare modelli di progetti e di elementi](../../extensibility/internals/registering-project-and-item-templates.md)

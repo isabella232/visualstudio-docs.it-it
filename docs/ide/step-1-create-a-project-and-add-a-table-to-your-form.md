@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 1: Creare un progetto e aggiungere una tabella al modulo'
+description: Informazioni su come creare il progetto di gioco di abbinamento e aggiungere una tabella al form.
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1134fb5bb02bd8c78f347ef582f12da35074c36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a8ae9b17df85431945b19d65f5435ac081b4a1c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579929"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480720"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere una tabella al modulo
 
@@ -29,7 +31,7 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
 1. Scegliere **Visual C#** o **Visual Basic** sul lato destro della finestra di dialogo **Nuovo progetto** e quindi scegliere **Desktop di Windows**.
 
-1. Nell'elenco di modelli scegliere il modello **App Windows Forms (.NET Framework) **, assegnare il nome *MatchingGame* e quindi scegliere il pulsante **OK**.
+1. Nell'elenco di modelli scegliere il modello **App Windows Forms (.NET Framework)**, assegnare il nome *MatchingGame* e quindi scegliere il pulsante **OK**.
 
     Verrà visualizzato un modulo con nome *Form1.cs* o *Form1.vb*, a seconda del linguaggio di programmazione scelto.
 

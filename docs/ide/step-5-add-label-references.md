@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 5: Aggiungere riferimenti alle etichette'
+description: Informazioni su come aggiungere riferimenti all'etichetta al form.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de89d7194425e1a8cba9e11f2734372d80b256b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95a4286feb778e17b345f964b1b7ccca5343e461
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579336"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480564"
 ---
 # <a name="step-5-add-label-references"></a>Passaggio 5: Aggiungere riferimenti alle etichette
 Il programma deve tenere traccia dei controlli Label scelti dal giocatore. Al momento il programma mostra tutte le etichette scelte dal giocatore, ma è possibile modificare questa impostazione. Una volta scelta la prima etichetta, il programma dovrebbe visualizzarne l'icona. Una volta scelta la seconda etichetta, il programma dovrebbe visualizzare entrambe le icone per un istante, quindi renderle nuovamente invisibili. Il programma terrà ora traccia del controllo Label scelto per primo e di quello scelto per secondo usando *variabili di riferimento*.
@@ -47,7 +49,7 @@ Il programma deve tenere traccia dei controlli Label scelti dal giocatore. Al mo
 4. Scegliere il controllo etichetta successivo. Non accadrà nulla. Il programma sta già tenendo traccia della prima etichetta scelta dal giocatore, pertanto `firstClicked` non è uguale a `null` in C# o `Nothing` in Visual Basic. Quando l'istruzione `if` controlla `firstClicked` per stabilire se sia uguale a `null` o `Nothing`, rileva che non lo è e non esegue le istruzioni contenute nell'istruzione `if`. Quindi, solo la prima icona scelta è nera e le altre icone sono invisibili, come illustrato nella figura seguente.
 
      ![Gioco di abbinamenti con un'icona visualizzata](../ide/media/express_tut4step5.png)<br/>
-***Gioco di abbinamenti*** che *Mostra un'icona*
+***Gioco corrispondente** _ _showing un'icona *
 
      Questa situazione verrà corretta nel passaggio successivo dell'esercitazione aggiungendo un controllo **Timer**.
 

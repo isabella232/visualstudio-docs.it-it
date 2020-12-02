@@ -1,5 +1,7 @@
 ---
 title: Gestione della distribuzione specializzata | Microsoft Docs
+description: Informazioni su come gestire la distribuzione specializzata di un progetto di applicazione in Visual Studio. Ad esempio, una distribuzione in un server Web o in un dispositivo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 972965c3565088af8205d6f7903d7098e568c057
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 664625cd8737fb9a9a3e398716d750d6d9665529
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708215"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480434"
 ---
 # <a name="handle-specialized-deployment"></a>Gestisci distribuzione specializzata
 Una distribuzione è un'operazione facoltativa per i progetti. Un progetto Web, ad esempio, supporta una distribuzione per consentire a un progetto di aggiornare un server Web. Analogamente, un progetto **Smart Device** supporta una distribuzione per copiare un'applicazione compilata nel dispositivo di destinazione. I sottotipi di progetto possono fornire un comportamento di distribuzione specializzato implementando l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfaccia. Questa interfaccia definisce un set completo di operazioni di distribuzione:
@@ -289,5 +291,5 @@ Una distribuzione è un'operazione facoltativa per i progetti. Un progetto Web, 
 > [!NOTE]
 > Tutti gli esempi di codice forniti in questo argomento sono parti di un esempio più ampio in [VSSDK Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sottotipi di progetto](../../extensibility/internals/project-subtypes.md)

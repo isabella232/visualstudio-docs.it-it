@@ -1,5 +1,7 @@
 ---
 title: Soluzioni e progetti
+description: Informazioni sui progetti e le soluzioni di Visual Studio e informazioni su come creare un nuovo progetto con lo strumento Esplora soluzioni.
+ms.custom: SEO-VS-2020
 ms.date: 06/26/2020
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0ee64afa78a962271d2b702ee525287c5b2457
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 949da02ac074e9740038fef7917655ca552a12f6
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468730"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480707"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 
@@ -42,7 +44,7 @@ Quando si crea un'app o un sito Web in Visual Studio, si inizia con un *progetto
 
 Visual Studio USA [MSBuild](../msbuild/msbuild.md) per compilare ogni progetto in una soluzione e ogni progetto contiene un file di progetto MSBuild. L'estensione di file riflette il tipo di progetto, ad esempio un progetto C# (con estensione csproj), un progetto di Visual Basic (vbproj) o un progetto di database (. dbproj). Il file di progetto è un documento XML contenente tutte le informazioni e le istruzioni necessarie a MSBuild per compilare il progetto, inclusi il contenuto, i requisiti della piattaforma, le informazioni sul controllo delle versioni, le impostazioni del server Web o del server di database e le attività da eseguire.
 
-I file di progetto sono basati sulla [XML schema MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Per esaminare il contenuto dei [file di progetto in stile SDK](../msbuild/how-to-use-project-sdk.md) più recenti in Visual Studio, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **modifica \<projectname\> **. Per esaminare il contenuto di .NET Framework e di altri progetti dello stile, scaricare prima il progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e selezionare **Scarica progetto**). Quindi, fare clic con il pulsante destro del mouse sul progetto e scegliere **modifica \<projectname\> **.
+I file di progetto sono basati sulla [XML schema MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Per esaminare il contenuto dei [file di progetto in stile SDK](../msbuild/how-to-use-project-sdk.md) più recenti in Visual Studio, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **modifica \<projectname\>**. Per esaminare il contenuto di .NET Framework e di altri progetti dello stile, scaricare prima il progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e selezionare **Scarica progetto**). Quindi, fare clic con il pulsante destro del mouse sul progetto e scegliere **modifica \<projectname\>**.
 
 > [!NOTE]
 > Non è necessario usare soluzioni o progetti in Visual Studio per modificare, compilare ed eseguire il debug del codice. È sufficiente aprire la cartella che contiene i file di origine in Visual Studio e iniziare ad apportare le modifiche. Per altre informazioni, vedere [Sviluppare codice in Visual Studio senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
@@ -81,7 +83,7 @@ Per i progetti ASP.NET Core, è possibile personalizzare la modalità di annidam
 
 Per visualizzare un elenco di alcune delle icone visualizzate in Esplora soluzioni, vedere [Visualizzazione classi e Visualizzatore oggetti icone](class-view-and-object-browser-icons.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [IDE di Visual Studio](../get-started/visual-studio-ide.md)
 - [Portabilità, migrazione e aggiornamento dei progetti](../porting/port-migrate-and-upgrade-visual-studio-projects.md)

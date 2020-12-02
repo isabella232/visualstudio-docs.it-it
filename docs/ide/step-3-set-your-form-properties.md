@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 3: Impostare le proprietà del modulo'
+description: Informazioni su come usare la Finestra Proprietà per modificare la modalità di ricerca del modulo.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82dbef4baee72be8ff96f83e436b2587e9a020ea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b858ed302c7fe89049585edb7cc5c4391a4789b
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579862"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480616"
 ---
 # <a name="step-3-set-your-form-properties"></a>Passaggio 3: Impostare le proprietà del modulo
 
@@ -33,7 +35,7 @@ In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto d
 1. Dopo aver selezionato il form, individuare la proprietà **Testo** nella finestra **Proprietà**. A seconda di come è ordinato l'elenco, potrebbe essere necessario scorrere verso il basso. Scegliere **testo**, digitare **Visualizzatore immagini**, quindi premere **invio**.  Il form dovrebbe ora disporre del **Visualizzatore immagini** del testo nella relativa barra del titolo e la finestra **Proprietà** dovrebbe essere simile alla schermata seguente.
 
     ![Finestra Proprietà](../ide/media/express_edittextproperty.png)<br>
-   ***Properties*** *Finestra* proprietà
+   **_Proprietà_* _ _window *
 
    > [!NOTE]
    > Le proprietà possono essere ordinate in base alla visualizzazione **Per categoria** o **Per nome**. È possibile passare da una visualizzazione all'altra tramite i pulsanti nella finestra **Proprietà**. In questa esercitazione è più facile trovare le proprietà tramite la visualizzazione **Per nome**.
@@ -56,13 +58,13 @@ In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto d
    - Sulla barra degli strumenti scegliere il pulsante **Avvia debug** visualizzato di seguito.
 
       ![Pulsante della barra degli strumenti Avvia debug](../ide/media/express_icondebug.png)<br>
-     *Pulsante della barra degli strumenti* ***Avvia debug***
+     **_Avvia debug_* _ _toolbar pulsante *
 
      Esattamente come in precedenza, l'IDE compila ed esegue l'app e viene visualizzata una finestra.
 
 1. Prima di andare al passaggio successivo, arrestare l'app, perché l'IDE non consente di modificare l'app mentre è in esecuzione. Tenere presente che è possibile usare uno dei metodi seguenti per arrestare l'app.
 
-   - Sulla barra degli strumenti scegliere il pulsante**Termina debug**.
+   - Sulla barra degli strumenti scegliere il pulsante **Termina debug**.
 
    - Sulla barra dei menu scegliere **debug**  >  **Interrompi debug**.
 
@@ -76,7 +78,7 @@ In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto d
 
 * Per tornare al passaggio precedente dell'esercitazione, vedere [passaggio 2: eseguire l'app visualizzatore immagini](../ide/step-2-run-your-program.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Esercitazione 2: creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
 * [Esercitazione 3: creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)

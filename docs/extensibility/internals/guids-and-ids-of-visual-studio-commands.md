@@ -1,5 +1,7 @@
 ---
 title: GUID e ID dei comandi di Visual Studio | Microsoft Docs
+description: Informazioni su come individuare i valori GUID e ID dei comandi inclusi in Visual Studio Integrated Development Environment (IDE).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8932f23d301eabc97414bf76453d70336e0dabae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cabf5c9452cf0a6809673d488f9cf01252d7b0ef
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708258"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480447"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUID e ID dei comandi di Visual Studio
 I valori GUID e ID dei comandi inclusi in Visual Studio Integrated Development Environment (IDE) sono definiti nei file con estensione vsct installati come parte di Visual Studio SDK. Per altre informazioni, vedere [comandi, menu e gruppi definiti dall'IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -54,13 +56,13 @@ I valori GUID e ID dei comandi inclusi in Visual Studio Integrated Development E
 
 - Voci di menu che includono un carattere sottolineato, ad esempio il comando **stampa** del menu **file** , in cui il *P* è sottolineato.
 
-     I caratteri preceduti dal carattere e commerciale (&) nei nomi delle voci di menu vengono visualizzati sotto forma di sottolineatura. Tuttavia, i file con *estensione vsct* sono scritti in XML, che usa il carattere e commerciale (&) per indicare caratteri speciali e richiede che una e commerciale da visualizzare sia digitata come * &amp; amp;*. Pertanto, in un file con *estensione vsct* , il comando **stampa** viene visualizzato come * &amp; amp; Stampa*.
+     I caratteri preceduti dal carattere e commerciale (&) nei nomi delle voci di menu vengono visualizzati sotto forma di sottolineatura. Tuttavia, i file con *estensione vsct* sono scritti in XML, che usa il carattere e commerciale (&) per indicare caratteri speciali e richiede che una e commerciale da visualizzare sia digitata come *&amp; amp;*. Pertanto, in un file con *estensione vsct* , il comando **stampa** viene visualizzato come *&amp; amp; Stampa*.
 
 - Comandi con testo dinamico, ad esempio **Save** \<Current Filename\> , e voci di menu generate dinamicamente, ad esempio gli elementi nell'elenco dei **file recenti** .
 
-     Non esiste un modo affidabile per eseguire ricerche in testo dinamico. Trovare invece un gruppo che ospita il comando desiderato consultando [GUID e ID dei menu di Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) o [GUID e ID delle barre degli strumenti di Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)e cercare l'ID del gruppo. Se la definizione del comando non dispone del gruppo come [elemento padre](../../extensibility/parent-element.md), cercare *SharedCmdPlace. vsct* e *ShellCmdPlace. vsct* (o *VsDbgCmdPlace. vsct* per i comandi del debugger) per un `<CommandPlacement>` elemento che imposta l'elemento padre del comando. *SharedCmdPlace. vsct*, *ShellCmdPlace. vsct*e *VsDbgCmdPlace. vsct* si trovano nella cartella * \<Visual Studio SDK installation path\> \VisualStudioIntegration\Common\Inc \\ * .
+     Non esiste un modo affidabile per eseguire ricerche in testo dinamico. Trovare invece un gruppo che ospita il comando desiderato consultando [GUID e ID dei menu di Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) o [GUID e ID delle barre degli strumenti di Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)e cercare l'ID del gruppo. Se la definizione del comando non dispone del gruppo come [elemento padre](../../extensibility/parent-element.md), cercare *SharedCmdPlace. vsct* e *ShellCmdPlace. vsct* (o *VsDbgCmdPlace. vsct* per i comandi del debugger) per un `<CommandPlacement>` elemento che imposta l'elemento padre del comando. *SharedCmdPlace. vsct*, *ShellCmdPlace. vsct* e *VsDbgCmdPlace. vsct* si trovano nella cartella *\<Visual Studio SDK installation path\> \VisualStudioIntegration\Common\Inc \\* .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [File della tabella dei comandi di Visual Studio (con estensione vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Riferimento XML Schema VSCT](../../extensibility/vsct-xml-schema-reference.md)

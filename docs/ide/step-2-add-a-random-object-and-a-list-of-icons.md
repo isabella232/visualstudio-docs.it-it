@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone'
+description: Informazioni su come creare un set di simboli corrispondenti per il gioco.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f4731778ebb3acbdc3bb7d9b5827c1015541d98
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1018b390f6ebbf67fab88554aa85fe6a8ecec88d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579428"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480694"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone
 
@@ -26,7 +28,7 @@ In questo passaggio verrà creato un set di simboli corrispondenti per il gioco.
 
 ## <a name="to-add-a-random-object-and-a-list-of-icons"></a>Per aggiungere un oggetto casuale e un elenco di icone
 
-1. In **Esplora soluzioni**scegliere *Form1.cs* se si usa C# o *Form1. vb* se si usa Visual Basic e quindi sulla barra dei menu scegliere **Visualizza**  >  **codice**. In alternativa, è possibile premere **F7** oppure fare doppio clic su **Form1** in **Esplora soluzioni**.
+1. In **Esplora soluzioni** scegliere *Form1.cs* se si usa C# o *Form1. vb* se si usa Visual Basic e quindi sulla barra dei menu scegliere **Visualizza**  >  **codice**. In alternativa, è possibile premere **F7** oppure fare doppio clic su **Form1** in **Esplora soluzioni**.
 
      Verrà visualizzato il modulo di codice dietro Form1.
 
@@ -42,7 +44,7 @@ In questo passaggio verrà creato un set di simboli corrispondenti per il gioco.
 
 3. Quando si aggiunge l'oggetto List, osservare la finestra di **IntelliSense** visualizzata. Di seguito è riportato un esempio in C#, ma viene visualizzato un testo simile quando si aggiunge un elenco in Visual Basic.
 
-     ![Finestra Proprietà con evento Click visualizzato](../ide/media/express_listintellisense.png)<br/>*Finestra di **IntelliSense***
+     ![Finestra Proprietà con evento Click visualizzato](../ide/media/express_listintellisense.png)<br/>*Finestra di *_IntelliSense_**
 
     > [!NOTE]
     > La finestra di IntelliSense viene visualizzata solo quando si immette il codice manualmente. Se si utilizzano le operazioni di copia e incolla, il codice non verrà visualizzato.

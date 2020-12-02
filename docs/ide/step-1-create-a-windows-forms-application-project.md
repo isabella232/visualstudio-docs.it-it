@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 1: Creare un progetto di app Windows Forms'
+description: Informazioni su come creare un progetto di app Windows Forms per il Visualizzatore immagini.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d5e34d825d2a4d296a8a394105b412195b4e3fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76225685a9f68ca6f6cb05f902922f8fa208015d
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579908"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480395"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Passaggio 1: Creare un progetto di app Windows Forms
 
@@ -27,7 +29,7 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nel cr
 
 1. Sulla barra dei menu scegliere **file**  >  **nuovo**  >  **progetto**. La finestra di dialogo avrà un aspetto simile allo screenshot seguente.
 
-     ![Finestra di dialogo Nuovo progetto](../ide/media/newprojectdialogcallouts.png)<br/>***Finestra di dialogo*** *Nuovo progetto*
+     ![Finestra di dialogo Nuovo progetto](../ide/media/newprojectdialogcallouts.png)<br/>**_Nuovo progetto_* _ _dialog box *
 
 2. Sul lato sinistro della finestra di dialogo **nuovo progetto** scegliere **Visual C#** o **Visual Basic**, quindi scegliere **desktop di Windows**.
 
@@ -105,7 +107,7 @@ Visual Studio crea una soluzione per l'app. Una soluzione funge da contenitore p
      In alternativa, scegliere il pulsante **Salva tutto** sulla barra degli strumenti, mostrata nell'immagine seguente.
 
      ![Pulsante della barra degli strumenti Salva tutto](../ide/media/express_iconsaveall.png)<br/>
-     *Pulsante della barra degli strumenti* ***Salva tutto***
+     **_Salva tutto_* _ _toolbar pulsante *
 
      In Visual Studio il nome della cartella e il nome del progetto vengono compilati automaticamente. Il progetto viene quindi salvato nella cartella dei progetti.
 
@@ -115,7 +117,7 @@ Visual Studio crea una soluzione per l'app. Una soluzione funge da contenitore p
 
 * Per tornare all'argomento introduttivo, vedere [esercitazione 1: creare un visualizzatore di immagini](../ide/tutorial-1-create-a-picture-viewer.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Esercitazione 2: creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
 * [Esercitazione 3: creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)

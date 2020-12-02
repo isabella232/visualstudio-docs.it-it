@@ -1,5 +1,7 @@
 ---
 title: Esposizione di eventi in Visual Studio SDK | Microsoft Docs
+description: Informazioni sui metodi e le voci del registro di sistema di Visual Studio SDK che espongono eventi per progetti ed elementi di progetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48f1e0ea0dcd07bbc26fc89d5c61a6a5941d4727
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5eec842f989497fda618482916154aabdcdd406
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708493"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480538"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Esporre eventi in Visual Studio SDK
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consente di usare l'automazione per gli eventi di origine. Si consiglia di usare eventi di origine per progetti ed elementi di progetto.
@@ -27,7 +29,7 @@ ms.locfileid: "80708493"
 
 1. Viene avviato l'ambiente.
 
-2. Esegue la lettura dal registro di sistema di tutti i nomi dei valori nelle chiavi **Automation**, **AutomationEvents**e **AutomationProperties** di tutti i pacchetti VSPackage, quindi archivia tali nomi in una tabella.
+2. Esegue la lettura dal registro di sistema di tutti i nomi dei valori nelle chiavi **Automation**, **AutomationEvents** e **AutomationProperties** di tutti i pacchetti VSPackage, quindi archivia tali nomi in una tabella.
 
 3. Un consumer di automazione chiama, in questo esempio, `DTE.Events.AutomationProjectsEvents` o `DTE.Events.AutomationProjectItemsEvents` .
 
@@ -46,13 +48,13 @@ ms.locfileid: "80708493"
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Voci del registro di sistema dell'esempio di progetto di base
  Questa sezione illustra come aggiungere i valori degli eventi di automazione al registro di sistema.
 
- **[HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\8.0\Packages \\<PkgGUID \> \AutomationEvents]**
+ **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages\\<PkgGUID \> \AutomationEvents]**
 
  **AutomationProjectEvents** = restituisce l' `AutomationProjectEvents` oggetto.
 
  **AutomationProjectItemEvents** = restituisce l' `AutomationProjectItemsEvents` oggetto.
 
-|Nome|Type|Range|Descrizione|
+|Nome|Tipo|Range|Descrizione|
 |----------|----------|-----------|-----------------|
 |Impostazione predefinita (@)|REG_SZ|Non utilizzato|Non utilizzato. È possibile usare il campo dati per la documentazione.|
 |*AutomationProjectsEvents*|REG_SZ|Nome dell'oggetto evento.|Solo il nome della chiave è pertinente. È possibile usare il campo dati per la documentazione.<br /><br /> Questo esempio deriva dall'esempio di progetto di base.|
@@ -62,7 +64,7 @@ ms.locfileid: "80708493"
 
  ![Eventi del progetto di Visual Studio](../../extensibility/internals/media/projectevents.gif "ProjectEvents") Modello di automazione per gli eventi
 
- La classe `CProjectEventsContainer` rappresenta l'oggetto di origine per *BscProjectsEvents*e `CProjectItemsEventsContainer` rappresenta l'oggetto di origine per *BscProjectItemsEvents*.
+ La classe `CProjectEventsContainer` rappresenta l'oggetto di origine per *BscProjectsEvents* e `CProjectItemsEventsContainer` rappresenta l'oggetto di origine per *BscProjectItemsEvents*.
 
  Nella maggior parte dei casi, è necessario restituire un nuovo oggetto per ogni richiesta di evento perché la maggior parte degli oggetti evento accetta un oggetto Filter. Quando si genera l'evento, controllare questo filtro per verificare che il gestore eventi venga chiamato.
 
@@ -108,5 +110,5 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 
  Gli oggetti evento vengono recuperati dalla stessa posizione centrale, ovvero l' `DTE.Events` oggetto. In questo modo, tutti gli oggetti evento vengono raggruppati in modo che un utente finale non debba esplorare l'intero modello a oggetti per trovare un evento specifico. Questo consente anche di fornire oggetti VSPackage specifici, anziché richiedere di implementare il proprio codice per gli eventi a livello di sistema. Tuttavia, per l'utente finale, che deve trovare un evento per l' `ProjectItem` interfaccia, non è immediatamente chiaro dal punto in cui viene recuperato l'oggetto evento.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

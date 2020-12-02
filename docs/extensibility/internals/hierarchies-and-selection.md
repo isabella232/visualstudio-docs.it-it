@@ -1,5 +1,7 @@
 ---
 title: Gerarchie e selezione | Microsoft Docs
+description: Informazioni sul modo in cui Visual Studio gestisce le gerarchie, ad esempio i progetti, e il modo in cui usa il contesto di selezione per determinare gli elementi visualizzati dall'utente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0e38c2cea464abded5ecf6ee2c8ac087868b07e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04f433e3da45e10d2b1721ac13254856489d2d0a
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708133"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480421"
 ---
 # <a name="hierarchies-and-selection"></a>Gerarchie e selezione
 Quando si Personalizza [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , è necessario comprendere il modo in cui [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestisce le gerarchie, ad esempio i progetti e il modo in cui usa il contesto di selezione per determinare gli elementi visualizzati dall'utente. In questa sezione vengono illustrati i concetti di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gerarchie e selezione.

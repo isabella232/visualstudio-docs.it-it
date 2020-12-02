@@ -1,5 +1,7 @@
 ---
 title: Elementi di un modello di progetto | Microsoft Docs
+description: Informazioni sugli elementi di un modello di progetto e su come le interfacce e le implementazioni di tutti i progetti in Visual Studio condividono una struttura di base.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cafc167eac28b7560287c6de88ee8c490196007
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: e366b2923d5903f00241db0a6b71017dc25f3dee
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011775"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480044"
 ---
 # <a name="elements-of-a-project-model"></a>Elementi di un modello di progetto
 Le interfacce e le implementazioni di tutti i progetti in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] condividono una struttura di base, ovvero il modello di progetto per il tipo di progetto. Nel modello di progetto, ovvero il pacchetto VSPackage che si sta sviluppando, è possibile creare oggetti conformi alle decisioni di progettazione e collaborare con le funzionalità globali fornite dall'IDE. Sebbene sia possibile controllare il modo in cui un elemento del progetto viene reso permanente, ad esempio, non si controlla la notifica che un file deve essere reso permanente. Quando un utente posiziona lo stato attivo su un elemento di progetto aperto e sceglie **Salva** dal menu **file** nella [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] barra dei menu, il codice del tipo di progetto deve intercettare il comando dall'IDE, salvare in modo permanente il file e inviare la notifica all'IDE che il file non è più modificato.
@@ -40,7 +42,7 @@ Le interfacce e le implementazioni di tutti i progetti in [!INCLUDE[vsprvs](../.
 
   I progetti possono supportare i comandi e pertanto devono implementare l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia per partecipare al routing dei comandi tramite i GUID del contesto del comando.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Elenco di controllo: creare nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Usare le classi di progetto HierUtil7 per implementare un tipo di progetto (C++)](/previous-versions/bb166212(v=vs.100))
 - [Componenti di base del modello di progetto](../../extensibility/internals/project-model-core-components.md)

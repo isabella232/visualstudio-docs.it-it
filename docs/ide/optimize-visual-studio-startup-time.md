@@ -1,6 +1,6 @@
 ---
 title: Migliorare il tempo di avvio
-description: Informazioni su come controllare le impostazioni delle estensioni e delle finestre degli strumenti nella finestra di dialogo Gestisci prestazioni di Visual Studio per migliorare l'ora di avvio di Visual Studio.
+description: Informazioni su come controllare le impostazioni di estensioni e finestre degli strumenti nella finestra di dialogo Gestisci prestazioni di Visual Studio per migliorare l'ora di avvio di Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/15/2017
 ms.topic: how-to
@@ -16,12 +16,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: a9cc3309e75e23ff325dd08ef9d2cceacb5f5db5
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: c409ad35b3d9c09a5dbe574d00a24d1f2bcb8370
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871496"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479953"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Ottimizzare il tempo di avvio di Visual Studio
 
@@ -70,7 +70,7 @@ La finestra di dialogo elenca le estensioni e le finestre degli strumenti che co
 > [!NOTE]
 > In alcune versioni precedenti di Visual Studio 2017 è presente una funzionalità denominata **caricamento leggero soluzioni**. Nelle versioni correnti le soluzioni di grandi dimensioni contenenti codice gestito vengono caricate molto più velocemente che in passato, anche senza il caricamento di soluzioni leggere.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Ottimizzare le prestazioni di Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Suggerimenti sulle prestazioni di Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)

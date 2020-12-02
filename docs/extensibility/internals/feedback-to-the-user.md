@@ -1,5 +1,7 @@
 ---
 title: Commenti e suggerimenti per l'utente | Microsoft Docs
+description: Informazioni su come fornire un feedback visivo all'utente sulle funzionalità disponibili in Visual Studio Integrated Development Environment (IDE).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b9190b16b9aa444384847bf209ccca50c7f768
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8f3f79a61729a641ee7c046ddd196a648469fb3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708405"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480525"
 ---
 # <a name="feedback-to-the-user"></a>Commenti e suggerimenti per l'utente
 Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE), il feedback visivo relativo alla funzionalità disponibile si basa sulla selezione corrente dell'utente e sul contesto di selezione globale. Nella tabella seguente sono elencate le funzionalità disponibili in diversi contesti di selezione.
@@ -57,7 +59,7 @@ Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Deve
 
 - La finestra gerarchia attiva, che in genere si **Esplora soluzioni**, e l'aggiornamento della relativa barra del titolo per riflettere il contesto corrente e i comandi di menu del **progetto** sensibili al contesto sono ora applicabili al progetto di applicazione Web attivo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Selezione e valuta nell'IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 - [Oggetti contesto selezione](../../extensibility/internals/selection-context-objects.md)
 - [Gerarchie e selezione](../../extensibility/internals/hierarchies-and-selection.md)

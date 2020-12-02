@@ -1,5 +1,7 @@
 ---
 title: Gerarchie in Visual Studio | Microsoft Docs
+description: Informazioni sulle gerarchie di progetto in Visual Studio Integrated Development Environment (IDE) che contengono gli elementi di progetto e le relative proprietà associate.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdbb8a0e58f6b1e5bc6e32f8c319d1480c4db4b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a7126f52517b1028cf878750294f1d4c7dbfe26
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708193"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480356"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Gerarchie in Visual Studio
 Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE) Visualizza un progetto come *gerarchia*. Nell'IDE, una gerarchia è una struttura ad albero di nodi, in cui ogni nodo dispone di un set di proprietà associate. Una *gerarchia del progetto* è un contenitore che include gli elementi del progetto, le relazioni tra gli elementi e le proprietà e i comandi associati agli elementi.
@@ -32,7 +34,7 @@ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Devel
 
  Quando un utente apre un elemento in un editor, la gerarchia che controlla tale elemento viene selezionata e diventa la gerarchia attiva. La gerarchia selezionata determina il set di comandi disponibili per agire sull'elemento. Il rilevamento dello stato attivo dell'utente in questo modo consente alla gerarchia di riflettere il contesto corrente dell'utente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Tipi di progetto](../../extensibility/internals/project-types.md)
 - [Selezione e valuta nell'IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 - [Esempi di VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples)

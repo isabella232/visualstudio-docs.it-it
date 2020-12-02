@@ -1,5 +1,7 @@
 ---
 title: Istruzioni if di suddivisione o unione
+description: Informazioni su come usare il menu azioni rapide e refactoring per suddividere o unire istruzioni If.
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a3b42f83faacda6be34b282150cf4fb4c0f379f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f72c6c2ed1cfdd1c8ea4471976d6a4980dfe422f
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093666"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479927"
 ---
 # <a name="split-or-merge-if-statements"></a>Istruzioni if di suddivisione o unione
 
@@ -57,6 +59,6 @@ Se si vuole unire l'istruzione `if` interna con l'istruzione `if` esterna:
 
     ![Unione delle istruzioni if completata](../media/merge-if-statement-complete.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)

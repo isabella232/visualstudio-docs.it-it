@@ -1,5 +1,7 @@
 ---
 title: GUID e ID dei menu di Visual Studio | Microsoft Docs
+description: Visualizzare un elenco di valori GUID e ID per i menu e i gruppi nella barra dei menu di Visual Studio inclusa nell'IDE di Visual Studio Integrated Development Environment.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a656d5cb9a126a9dc3988d70a290fceb3e56439e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0203c8b7028fb170ae2ba4d2cc9d6f1825414f64
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708234"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480408"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUID e ID dei menu di Visual Studio
 Questo articolo enumera i valori GUID e ID dei menu e dei gruppi sulla barra dei menu di Visual Studio. Questi valori sono definiti nei file con *estensione vsct* installati come parte di Visual Studio SDK. Per altre informazioni, vedere [comandi, menu e gruppi definiti dall'IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -32,12 +34,12 @@ Questo articolo enumera i valori GUID e ID dei menu e dei gruppi sulla barra dei
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>Gruppi sulla barra dei menu di Visual Studio
  Per aggiungere un menu alla barra dei menu, impostare uno di questi gruppi come padre.
 
-|Group|ID|
+|Gruppo|ID|
 |-----------|--------|
 |File/modifica/visualizzazione|IDG_VS_MM_FILEEDITVIEW|
 |Refactoring|IDG_VS_MM_REFACTORING:|
 |Progetto|IDG_VS_MM_PROJECT|
-|Compilare|IDG_VS_MM_BUILDDEBUGRUN|
+|Compilazione|IDG_VS_MM_BUILDDEBUGRUN|
 |Formato/strumenti|IDG_VS_MM_TOOLSADDINS|
 |Finestra/Guida/community|IDG_VS_MM_WINDOWHELP|
 |Add-in|IDG_VS_MM_MACROS|
@@ -53,7 +55,7 @@ Questo articolo enumera i valori GUID e ID dei menu e dei gruppi sulla barra dei
 |Visualizzazione|IDM_VS_MENU_VIEW|
 |Refactoring|IDM_VS_MENU_REFACTORING|
 |Progetto|IDM_VS_MENU_PROJECT|
-|Compilare|IDM_VS_MENU_BUILD|
+|Compilazione|IDM_VS_MENU_BUILD|
 |Formato|IDM_VS_MENU_FORMAT|
 |Strumenti|IDM_VS_MENU_TOOLS|
 |Estensioni|IDM_VS_MENU_EXTENSIONS|
@@ -67,7 +69,7 @@ Questo articolo enumera i valori GUID e ID dei menu e dei gruppi sulla barra dei
 
 ### <a name="file-menu-groups"></a>Gruppi di menu file
 
-|Group|ID|
+|Gruppo|ID|
 |-----------|--------|
 |Nuovo/Apri|IDG_VS_FILE_FILE|
 |Add|IDG_VS_FILE_ADD|
@@ -76,14 +78,14 @@ Questo articolo enumera i valori GUID e ID dei menu e dei gruppi sulla barra dei
 |Salva|IDG_VS_FILE_SAVE|
 |Rinominare|IDG_VS_FILE_RENAME|
 |Browser|IDG_VS_FILE_BROWSER|
-|Stampa|IDG_VS_FILE_PRINT|
+|Print|IDG_VS_FILE_PRINT|
 |Usati più di recente|IDG_VS_FILE_MRU|
 |Spostamento|IDG_VS_FILE_MOVE|
 |Esci|IDG_VS_FILE_EXIT|
 
 ### <a name="edit-menu-groups"></a>Modifica gruppi di menu
 
-|Group|ID|
+|Gruppo|ID|
 |-----------|--------|
 |Annullamento/ripristino|IDG_VS_EDIT_UNDOREDO|
 |Taglia/copia/incolla|IDG_VS_EDIT_CUTCOPY|
@@ -96,14 +98,14 @@ Questo articolo enumera i valori GUID e ID dei menu e dei gruppi sulla barra dei
 
 ### <a name="refactor-menu-groups"></a>Gruppi di menu di refactoring
 
-|Group|ID|
+|Gruppo|ID|
 |-----------|--------|
 |Comuni|IDG_REFACTORING_COMMON|
-|Avanzate|IDG_REFACTORING_ADVANCED|
+|Avanzato|IDG_REFACTORING_ADVANCED|
 
 ### <a name="view-menu-groups"></a>Visualizza gruppi di menu
 
-|Group|ID|
+|Gruppo|ID|
 |-----------|--------|
 |Codice modulo|IDG_VS_VIEW_FORMCODE|
 |Browser|IDG_VS_VIEW_BROWSER|
@@ -124,7 +126,7 @@ Questo articolo enumera i valori GUID e ID dei menu e dei gruppi sulla barra dei
 
 ### <a name="project-menu-groups"></a>Gruppi di menu progetto
 
-|Group|ID|
+|Gruppo|ID|
 |-----------|--------|
 |Aggiunta di varie|IDG_VS_PROJ_MISCADD|
 |Add|IDG_VS_PROJ_ADD|
@@ -136,17 +138,17 @@ Questo articolo enumera i valori GUID e ID dei menu e dei gruppi sulla barra dei
 
 ### <a name="build-menu-groups"></a>Gruppi di menu Compila
 
-|Group|ID|
+|Gruppo|ID|
 |-----------|--------|
 |Soluzione|IDG_VS_BUILD_SOLUTION|
-|Selection|IDG_VS_BUILD_SELECTION|
+|Selezione|IDG_VS_BUILD_SELECTION|
 |Ottimizzazione GPO|IDG_VS_PGO_SELECTION|
 |Varie|IDG_VS_BUILD_MISC|
 |Annulla|IDG_VS_BUILD_CANCEL|
 
 ### <a name="tools-menu-groups"></a>Gruppi di menu strumenti
 
-|Group|ID|
+|Gruppo|ID|
 |-----------|--------|
 |Riga di comando|IDG_VS_TOOLS_CMDLINE|
 |Frammenti di codice|IDG_VS_TOOLS_SNIPPETS|
@@ -158,9 +160,9 @@ Questo articolo enumera i valori GUID e ID dei menu e dei gruppi sulla barra dei
 
 ### <a name="window-menu-groups"></a>Gruppi di menu finestra
 
-|Group|ID|
+|Gruppo|ID|
 |-----------|--------|
-|Nuovo|IDG_VS_WINDOW_NEW|
+|Nuova|IDG_VS_WINDOW_NEW|
 |Ancoraggio/chiusura|IDG_VS_DOCKCLOSE|
 |Ancoraggio/Nascondi|IDG_VS_DOCKHIDE|
 |Disponi|IDG_VS_WINDOW_ARRANGE|
@@ -169,7 +171,7 @@ Questo articolo enumera i valori GUID e ID dei menu e dei gruppi sulla barra dei
 
 ### <a name="help-menu-groups"></a>Gruppi di menu della Guida
 
-|Group|ID|
+|Gruppo|ID|
 |-----------|--------|
 |Esempi|IDG_VS_HELP_SAMPLES|
 |Supporto|IDG_VS_HELP_SUPPORT|
@@ -179,7 +181,7 @@ Questo articolo enumera i valori GUID e ID dei menu e dei gruppi sulla barra dei
  La gerarchia seguente mostra i sottomenu associati ai menu sulla barra dei menu di Visual Studio. Poiché solo un gruppo può avere un menu come padre, ogni sottomenu deve scendere da un gruppo in un menu, anziché direttamente dal menu. Per ulteriori informazioni sulla relazione tra menu, gruppi e sottomenu, vedere [aggiungere un sottomenu a un menu](../../extensibility/adding-a-submenu-to-a-menu.md).
 
 > [!NOTE]
-> I nomi dei menu sulla barra dei menu di Visual Studio non vengono visualizzati separatamente in questa gerarchia perché possono essere dedotti dalla convenzione di denominazione per i gruppi nell'IDE, come indicato di seguito: *IDG_VS_ \<Menu Name\> _ \<Group Name\> *.
+> I nomi dei menu sulla barra dei menu di Visual Studio non vengono visualizzati separatamente in questa gerarchia perché possono essere dedotti dalla convenzione di denominazione per i gruppi nell'IDE, come indicato di seguito: *IDG_VS_ \<Menu Name\> _ \<Group Name\>*.
 
 |Gruppo padre|Sottomenu|Gruppi figlio|
 |------------------|-------------|------------------|
@@ -213,7 +215,7 @@ Questo articolo enumera i valori GUID e ID dei menu e dei gruppi sulla barra dei
 |IDG_VS_PGO_SELECTION|IDM_VS_CSCD_PGO_BUILD|IDG_VS_PGO_BUILD_CASCADE_BUILD|
 |||IDG_VS_PGO_BUILD_CASCADE_RUN|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [GUID e ID delle barre degli strumenti di Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
 - [GUID e ID dei comandi di Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
 - [File della tabella dei comandi di Visual Studio (con estensione vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

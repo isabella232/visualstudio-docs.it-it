@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 6: Assegnare un nome ai pulsanti'
+description: Informazioni su come assegnare un nome ai controlli Button.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2016
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 ms.topic: tutorial
@@ -13,32 +15,32 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c23f48e803665e00155d1b546ace4e4ec7bc54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfa5b69cc106aeae18012a7116fd511263423b2c
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579788"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480317"
 ---
 # <a name="step-6-name-your-button-controls"></a>Passaggio 6: Assegnare un nome ai pulsanti
 
 Nel modulo c'è un solo oggetto <xref:System.Windows.Forms.PictureBox>. Quando è stato aggiunto, l'IDE lo ha automaticamente denominato **pictureBox1**. C'è un solo oggetto <xref:System.Windows.Forms.CheckBox>, denominato **checkBox1**. Presto si scriverà del codice e il codice farà riferimento a CheckBox e PictureBox. Poiché è presente solo uno di questi controlli, si saprà cosa significa quando si visualizza **pictureBox1** o **CheckBox1** nel codice.
 
 > [!TIP]
-> In Visual Basic, l'impostazione predefinita per la prima lettera di qualsiasi nome di controllo è la maiuscola, pertanto i nomi sono **PictureBox1**, **CheckBox1**e così via.
+> In Visual Basic, l'impostazione predefinita per la prima lettera di qualsiasi nome di controllo è la maiuscola, pertanto i nomi sono **PictureBox1**, **CheckBox1** e così via.
 
-Vi sono quattro pulsanti nel form e l'IDE li ha denominati **button1**, **button2**, **button3**e **button4**. Da un semplice sguardo ai nomi correnti non è possibile capire quale pulsante corrisponda al pulsante **Chiudi** e quale corrisponda al pulsante **Visualizza immagine** . È questo il motivo per cui è utile assegnare nomi più descrittivi ai pulsanti.
+Vi sono quattro pulsanti nel form e l'IDE li ha denominati **button1**, **button2**, **button3** e **button4**. Da un semplice sguardo ai nomi correnti non è possibile capire quale pulsante corrisponda al pulsante **Chiudi** e quale corrisponda al pulsante **Visualizza immagine** . È questo il motivo per cui è utile assegnare nomi più descrittivi ai pulsanti.
 
 ## <a name="to-name-your-button-controls"></a>Per assegnare un nome ai pulsanti
 
 1. Nel form scegliere il pulsante **Chiudi** . Se sono ancora selezionati tutti i pulsanti, premere **ESC** per annullare la selezione. Scorrere nella finestra **Proprietà** fino a quando non viene visualizzata la proprietà **(Name)** . La proprietà **(Name)** è vicina alla parte superiore quando le proprietà sono alfabetiche. Modificare il nome in **CloseButton**, come illustrato nello screenshot seguente.
 
-    ![Finestra Proprietà con il nome closeButton](../ide/media/express_setnameproperty.png)<br>Finestra ***Proprietà*** *con* ***closeButton*** *nome* CloseButton
+    ![Finestra Proprietà con il nome closeButton](../ide/media/express_setnameproperty.png)<br>**_Proprietà_* _ _finestra con * ***CloseButton**_ _name *
 
     > [!NOTE]
     > Provare a modificare il nome del pulsante in **Chiudi pulsante**, con uno spazio tra le parole "close" e "button". Quando si esegue questa operazione, l'IDE Visualizza un messaggio di errore: "valore della proprietà non valido". Gli spazi (e alcuni altri caratteri) non sono consentiti nei nomi dei controlli.
 
-1. Rinominare gli altri tre pulsanti **backgroundButton**, **clearButton**e **showButton**.
+1. Rinominare gli altri tre pulsanti **backgroundButton**, **clearButton** e **showButton**.
 È possibile verificare i nomi facendo clic sull'elenco a discesa del selettore dei controlli nella finestra **Proprietà** . Vengono visualizzati i nuovi nomi dei pulsanti.
 
 1. Fare doppio clic sul pulsante **Visualizza immagine** nel form. In alternativa, scegliere il pulsante **Visualizza immagine** nel form, quindi premere il tasto **invio** . Quando si esegue questa operazione, l'IDE apre una scheda aggiuntiva nella finestra principale denominata **Form1.cs**. (Se si usa Visual Basic, la scheda è denominata **Form1. vb**).
@@ -46,7 +48,7 @@ Vi sono quattro pulsanti nel form e l'IDE li ha denominati **button1**, **button
    In questa scheda viene visualizzato il file di codice dietro il form, come illustrato nello screenshot seguente.
 
     ![Scheda Form1.cs con codice Visual C&#35;](../ide/media/express_showbuttoncode.png)<br>
-Scheda ***Form1.cs*** *con codice C#*
+**_Form1.cs_* _ _tab con codice C# *
 
     > [!NOTE]
     > In alternativa, è possibile che la scheda Form1.cs o Form1. vb visualizzi **showButton** come **showButton** .
@@ -103,7 +105,7 @@ Scheda ***Form1.cs*** *con codice C#*
 
 * Per tornare al passaggio precedente dell'esercitazione, vedere [passaggio 5: aggiungere controlli al form](../ide/step-5-add-controls-to-your-form.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Esercitazione 2: creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
 * [Esercitazione 3: creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)

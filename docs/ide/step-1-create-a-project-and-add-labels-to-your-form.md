@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 1: Creare un progetto e aggiungere etichette al modulo'
+description: Informazioni su come creare il progetto, aggiungere etichette, un pulsante e altri controlli a un modulo e impostare le proprietà per ogni controllo aggiunto.
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf904fca84fba88e81306ff91add6c2156b4544
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd84b7b11f58b8deb62f6138255b4c8d942b5a00
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579451"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480109"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere etichette al modulo
 
@@ -32,7 +34,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 1. Scegliere **Visual C#** o **Visual Basic** sul lato destro della finestra di dialogo **Nuovo progetto** e quindi scegliere **Desktop di Windows**.
 
-1. Nell'elenco di modelli scegliere il modello **App Windows Forms (.NET Framework) **, assegnare il nome *QuizMatematico* e quindi scegliere il pulsante **OK**.
+1. Nell'elenco di modelli scegliere il modello **App Windows Forms (.NET Framework)**, assegnare il nome *QuizMatematico* e quindi scegliere il pulsante **OK**.
 
     Verrà visualizzato un modulo con nome *Form1.cs* o *Form1.vb*, a seconda del linguaggio di programmazione scelto.
 
@@ -70,7 +72,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 ## <a name="to-set-properties-for-a-form"></a>Per impostare le proprietà per un modulo
 
-1. In Visual Studio scegliere il modulo (*Form1.cs* oppure *Form1.vb*, a seconda del linguaggio di programmazione) e quindi modificare la relativa proprietà **Testo** in ** Quiz matematico**.
+1. In Visual Studio scegliere il modulo (*Form1.cs* oppure *Form1.vb*, a seconda del linguaggio di programmazione) e quindi modificare la relativa proprietà **Testo** in **Quiz matematico**.
 
      La finestra **Proprietà** conterrà le proprietà per il modulo.
 
@@ -106,7 +108,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
      ![Finestra Proprietà con la dimensione del carattere](../ide/media/express_setfontsize.png)
 
-8. Aggiungere un altro controllo Label dalla **casella degli strumenti**e quindi impostarne le dimensioni del carattere su **15,75**.
+8. Aggiungere un altro controllo Label dalla **casella degli strumenti** e quindi impostarne le dimensioni del carattere su **15,75**.
 
 9. Impostare la proprietà **Text** su **Tempo rimanente**.
 
@@ -114,7 +116,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 ### <a name="to-add-controls-for-the-addition-problems"></a>Per aggiungere controlli per i problemi di addizione
 
-1. Aggiungere un controllo Label dalla **casella degli strumenti**e impostare la relativa proprietà **Text** su **?** (punto interrogativo).
+1. Aggiungere un controllo Label dalla **casella degli strumenti** e impostare la relativa proprietà **Text** su **?** (punto interrogativo).
 
 2. Impostare la proprietà **AutoSize** su **False**.
 
@@ -170,7 +172,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 5. Assegnare alla seconda etichetta punto interrogativo il nome **minusRightLabel**.
 
-6. Denominare il controllo NumericUpDown**differenza**.
+6. Denominare il controllo NumericUpDown **differenza**.
 
 7. Incollare i cinque controlli altre due volte.
 

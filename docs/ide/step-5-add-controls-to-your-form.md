@@ -1,5 +1,7 @@
 ---
 title: 'Passaggio 5: Aggiungere controlli al modulo'
+description: Informazioni su come aggiungere controlli, ad esempio un <xref:System.Windows.Forms.PictureBox> controllo e un <xref:System.Windows.Forms.CheckBox> controllo, al form.
+ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 ms.topic: tutorial
@@ -10,12 +12,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 631def96fc7e4b5d7858ea3474492b41c526da65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ff3e132087b97339bc710555428ba7488fa2e06
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579357"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480577"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Passaggio 5: Aggiungere controlli al modulo
 
@@ -29,10 +31,10 @@ In questo passaggio si aggiungono controlli, ad esempio un controllo <xref:Syste
 
 1. Scegliere il nuovo controllo **PictureBox** per selezionarlo, quindi scegliere il triangolo nero sul nuovo controllo PictureBox per visualizzare il relativo elenco attività, come illustrato nello screenshot seguente.
 
-    ![Attività di PictureBox](../ide/media/express_pictureboxtasks.png)<br/>*Attività* di PictureBox * * **
+    ![Attività di PictureBox](../ide/media/express_pictureboxtasks.png)<br/>PictureBox **_ _tasks**
 
     > [!NOTE]
-    > Se accidentalmente si aggiunge il tipo non corretto di controllo a TableLayoutPanel, è possibile eliminarlo. Fare clic con il pulsante destro del mouse sul controllo, quindi scegliere **Elimina** dal relativo menu di scelta rapida. È inoltre possibile rimuovere controlli dal form utilizzando la barra dei menu. Sulla barra dei menu scegliere **modifica**  >  **Annulla**o **modifica**  >  **Elimina**.
+    > Se accidentalmente si aggiunge il tipo non corretto di controllo a TableLayoutPanel, è possibile eliminarlo. Fare clic con il pulsante destro del mouse sul controllo, quindi scegliere **Elimina** dal relativo menu di scelta rapida. È inoltre possibile rimuovere controlli dal form utilizzando la barra dei menu. Sulla barra dei menu scegliere **modifica**  >  **Annulla** o **modifica**  >  **Elimina**.
 
 1. Nel menu **attività PictureBox** del controllo **PictureBox** scegliere il collegamento **ancora nel contenitore padre** . La proprietà **Dock** di PictureBox verrà automaticamente impostata su **Fill**. Per verificarlo, scegliere il controllo **PictureBox** per selezionarlo, andare alla finestra **Proprietà** e assicurarsi che la proprietà **Dock** sia impostata su **Fill**.
 
@@ -43,12 +45,12 @@ In questo passaggio si aggiungono controlli, ad esempio un controllo <xref:Syste
 
 1. Scegliere **TableLayoutPanel** nel form, quindi aggiungere un controllo CheckBox al form. Fare doppio clic sull'elemento **CheckBox** nella **casella degli strumenti** per aggiungere un nuovo controllo CheckBox alla cella libera successiva della tabella. Poiché un controllo PictureBox occupa le prime due celle, in TableLayoutPanel viene aggiunto un controllo CheckBox alla cella inferiore sinistra. Scegliere la proprietà **Text** e digitare la parola **Stretch**, come illustrato nella figura seguente.
 
-    ![Controllo TextBox con la proprietà Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>***Controllo*** *TextBox con* ***proprietà*** *Stretch*
+    ![Controllo TextBox con la proprietà Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>**_TextBox_* _ _Control con * ***Stretch**_ _property *
 
 1. Scegliere **TableLayoutPanel** nel form, quindi passare al gruppo **contenitori** nella **casella degli strumenti** (dove si è ottenuto il controllo TableLayoutPanel) e fare doppio clic sull'elemento **FlowLayoutPanel** per aggiungere un nuovo controllo all'ultima cella (in basso a destra). Quindi, ancorare FlowLayoutPanel in TableLayoutPanel. Questa operazione può essere eseguita scegliendo **ancora nel contenitore padre** nell'elenco attività del triangolo nero di FlowLayoutPanel o impostando la proprietà **Dock** di FlowLayoutPanel su **Fill**.
 
     > [!NOTE]
-    > Un oggetto <xref:System.Windows.Forms.FlowLayoutPanel> è un contenitore che dispone gli altri controlli in una riga, uno dopo l'altro. Quando si ridimensiona un controllo FlowLayoutPanel, tutti i controlli vengono posizionati in una singola riga, se è disponibile spazio a tale scopo. In caso contrario, vengono disposti su più righe, uno sopra l'altro. <br/><br/>Qui viene usato un controllo FlowLayoutPanel per mantenere quattro pulsanti. Se i pulsanti sono disposti uno sopra l'altro quando vengono aggiunti, assicurarsi di selezionare FlowLayoutPanel prima di aggiungere i pulsanti. <br/><br/>In genere, ogni cella contiene un solo controllo. In questo esempio, la cella inferiore destra di TableLayoutPanel contiene quattro controlli pulsante. Perché?  Poiché FlowLayoutPanel è un controllo contenitore, che è un controllo in una cella che contiene altri controlli.
+    > Un oggetto <xref:System.Windows.Forms.FlowLayoutPanel> è un contenitore che dispone gli altri controlli in una riga, uno dopo l'altro. Quando si ridimensiona un controllo FlowLayoutPanel, tutti i controlli vengono posizionati in una singola riga, se è disponibile spazio a tale scopo. In caso contrario, vengono disposti su più righe, uno sopra l'altro. <br/><br/>Qui viene usato un controllo FlowLayoutPanel per mantenere quattro pulsanti. Se i pulsanti sono disposti uno sopra l'altro quando vengono aggiunti, assicurarsi di selezionare FlowLayoutPanel prima di aggiungere i pulsanti. <br/><br/>In genere, ogni cella contiene un solo controllo. In questo esempio, la cella inferiore destra di TableLayoutPanel contiene quattro controlli pulsante. Questo problema dipende  Poiché FlowLayoutPanel è un controllo contenitore, che è un controllo in una cella che contiene altri controlli.
 
 ## <a name="to-add-buttons"></a>Per aggiungere pulsanti
 
@@ -74,7 +76,7 @@ In questo passaggio si aggiungono controlli, ad esempio un controllo <xref:Syste
 
    I pulsanti sono ora ridimensionati correttamente e si trovano nell'ordine corretto. (Purché tutti i quattro pulsanti siano selezionati, è possibile modificare tutte e quattro le proprietà **AutoSize** contemporaneamente). Nella figura seguente sono illustrati i quattro pulsanti.
 
-    ![Visualizzatore immagini con quattro pulsanti](../ide/media/express_autosize.png)<br/>***Visualizzatore di immagini*** *con quattro pulsanti*
+    ![Visualizzatore immagini con quattro pulsanti](../ide/media/express_autosize.png)<br/>**_Visualizzatore immagini_* _ _WITH quattro pulsanti *
 
 1. A questo punto, eseguire di nuovo il programma per visualizzare le modifiche.
 
@@ -86,7 +88,7 @@ In questo passaggio si aggiungono controlli, ad esempio un controllo <xref:Syste
 
 * Per tornare al passaggio precedente dell'esercitazione, vedere [passaggio 4: creare il layout del form con un controllo TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Esercitazione 2: creare un quiz matematico a tempo](tutorial-2-create-a-timed-math-quiz.md)
 * [Esercitazione 3: creare un gioco di abbinamenti](tutorial-3-create-a-matching-game.md)

@@ -1,5 +1,7 @@
 ---
 title: Finestre documento | Microsoft Docs
+description: Informazioni sulle finestre dei documenti in Visual Studio, incluse le modalità di implementazione e il modo in cui la tabella documenti in esecuzione (RDT) tiene traccia del proprio stato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca834a5414c73f6acf6ac744620a46bba54b8fbf
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: f39c02ece35a36ceb763a2a5b84f8431043a1b50
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413736"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480005"
 ---
 # <a name="document-windows"></a>Finestre dei documenti
 In Visual Studio una *finestra del documento* è una finestra figlio incorniciata associata a una finestra interfaccia a documenti multipli (MDI). Le finestre di documento vengono in genere usate per la visualizzazione e la modifica del codice sorgente o del testo, ma possono anche ospitare altri tipi funzionali. Finestre di documento:
@@ -41,5 +43,5 @@ In Visual Studio una *finestra del documento* è una finestra figlio incorniciat
 ## <a name="the-running-document-table"></a>Tabella documenti in esecuzione
  L'IDE utilizza la tabella documenti in esecuzione (RDT) per tenere traccia dello stato di ogni finestra del documento. RDT è il meccanismo tramite il quale le finestre del documento ricevono notifiche di eventi, ad esempio quando una soluzione viene chiusa o quando un file è stato modificato. Per ulteriori informazioni, vedere [esecuzione della tabella documenti](../../extensibility/internals/running-document-table.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Caricamento ritardato dei documenti](../../extensibility/internals/delayed-document-loading.md)

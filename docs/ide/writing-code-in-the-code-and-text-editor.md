@@ -1,5 +1,7 @@
 ---
 title: Funzionalità dell'editor del codice
+description: Informazioni sulle funzionalità disponibili nell'editor di codice di Visual Studio per semplificare la scrittura e la gestione del codice e del testo.
+ms.custom: SEO-VS-2020
 ms.date: 02/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cf1cdbebab5d59091454e340b567eef7430efd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2363d350c91ac72b21784f490778010eba12007
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532626"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480187"
 ---
 # <a name="features-of-the-code-editor"></a>Funzionalità dell'editor del codice
 
@@ -35,7 +37,7 @@ I diversi linguaggi di Visual Studio offrono set di funzionalità diversi e, in 
 |Feature|Descrizione|
 |-|-|
 |Colorazione della sintassi|Alcuni elementi della sintassi del codice e dei file di markup sono colorati in modo diverso per distinguerli. Ad esempio, le parole chiave (ad esempio `using` in C# e `Imports` in Visual Basic) sono di un colore, mentre i tipi (ad esempio `Console` e `Uri`) sono di un altro colore. Anche altri elementi della sintassi sono colorati, ad esempio i valori letterali stringa e i commenti. C++ usa i colori per distinguere i tipi, le enumerazioni e le macro dagli altri token.<br /><br /> È possibile visualizzare il colore predefinito per ogni tipo ed è possibile modificare il colore di qualsiasi elemento della sintassi specifico nella finestra di [dialogo tipi di carattere e colori, ambiente, opzioni](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), che è possibile aprire dal menu **strumenti** .|
-|Contrassegni di errore e di avviso|Quando si aggiunge codice e si compila la soluzione, vengono visualizzate (a) sottolineature ondulate con diversi colori (note come sottolineature a zigzag) o (b) lampadine nel codice. Le sottolineature rosse denotano errori di sintassi, quelle blu errori del compilatore, quelle verdi gli avvisi e quelle viola altri tipi di errore. Le [Azioni rapide](../ide/quick-actions.md) suggeriscono correzioni dei problemi e ne semplificano l'applicazione.<br /><br /> È possibile visualizzare il colore predefinito per ogni zigzag di errore e di avviso nella finestra di dialogo **strumenti**  >  **Opzioni**  >  **ambiente**  >  **tipi di carattere e colori** . Cercare **Errore di sintassi**, **Errore del compilatore**, **Avviso**e **Altro errore**.|
+|Contrassegni di errore e di avviso|Quando si aggiunge codice e si compila la soluzione, vengono visualizzate (a) sottolineature ondulate con diversi colori (note come sottolineature a zigzag) o (b) lampadine nel codice. Le sottolineature rosse denotano errori di sintassi, quelle blu errori del compilatore, quelle verdi gli avvisi e quelle viola altri tipi di errore. Le [Azioni rapide](../ide/quick-actions.md) suggeriscono correzioni dei problemi e ne semplificano l'applicazione.<br /><br /> È possibile visualizzare il colore predefinito per ogni zigzag di errore e di avviso nella finestra di dialogo **strumenti**  >  **Opzioni**  >  **ambiente**  >  **tipi di carattere e colori** . Cercare **Errore di sintassi**, **Errore del compilatore**, **Avviso** e **Altro errore**.|
 |Corrispondenza parentesi graffe|Quando il punto di inserimento viene inserito in una parentesi graffa di apertura in un file di codice, il punto e la parentesi graffa di chiusura vengono evidenziati. Questa funzionalità consente di ottenere un feedback immediato sulle parentesi graffe inserite non correttamente o mancanti. È possibile attivare o disattivare la corrispondenza tra parentesi graffe con l'impostazione **Evidenzia delimitatore automatico** (**strumenti**  >  **Opzioni**  >  **editor di testo**). È possibile modificare il colore di evidenziazione nell'impostazione **tipi di carattere e colori** (**strumenti**  >  **Opzioni**  >  **ambiente**). Cercare **Corrispondenza parentesi (evidenziate)** o **Corrispondenza parentesi (rettangolo)**.|
 |Visualizzatore di struttura|Per facilitare l'individuazione delle coppie di parentesi graffe di apertura e chiusura corrispondenti nel file di codice, vengono visualizzate linee tratteggiate che connettono le parentesi corrispondenti. In questo modo è possibile individuare più rapidamente il codice nella codebase. È possibile attivare o disattivare queste linee nell'opzione **Mostra guide per strutture** nella sezione **Visualizza** della pagina **Strumenti** > **Opzioni** > **Editor di testo** > **Generale**.|
 |Numeri di riga|I numeri di riga possono essere visualizzati nel margine sinistro della finestra del codice. Non vengono visualizzati per impostazione predefinita. È possibile attivare questa opzione nelle impostazioni **tutti i linguaggi dell'editor di testo** (**strumenti**  >  **Opzioni**  >  **editor di testo**  >  **tutti i linguaggi**). È possibile visualizzare i numeri di riga per i singoli linguaggi di programmazione modificando le impostazioni per tali lingue (**strumenti**  >  **Opzioni**  >  **editor di testo**  >  **\<language>** ). Per stampare i numeri di riga, è necessario selezionare **Includi numeri di riga** nella finestra di dialogo **Stampa**.|
@@ -61,7 +63,7 @@ I diversi linguaggi di Visual Studio offrono set di funzionalità diversi e, in 
 |Sposta in alto righe selezionate|Sposta la riga selezionata di una riga verso l'alto. Collegamento: **ALT** + **freccia su**.|
 |Sposta in basso righe selezionate|Sposta la riga selezionata di una riga verso il basso. Collegamento: **ALT** + **freccia giù**.|
 |Elimina spazio vuoto superfluo|Elimina le tabulazioni o gli spazi alla fine della riga corrente. Scelta rapida: **CTRL** + **K**, **CTRL**+**\\**|
-|Mostra/Nascondi spazi|Visualizza gli spazi sotto forma di punti mediani e le tabulazioni sotto forma di frecce. La fine di un file viene visualizzata come un glifo rettangolare. Se **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **tutti i linguaggi**  >  a**capo automatico**  >  **Mostra glifi visibili per il ritorno a capo automatico** è selezionato, viene visualizzato anche il glifo.|
+|Mostra/Nascondi spazi|Visualizza gli spazi sotto forma di punti mediani e le tabulazioni sotto forma di frecce. La fine di un file viene visualizzata come un glifo rettangolare. Se **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **tutti i linguaggi**  >  a **capo automatico**  >  **Mostra glifi visibili per il ritorno a capo automatico** è selezionato, viene visualizzato anche il glifo.|
 |A capo automatico|Rende visibili tutte le righe di un documento nella finestra del codice. È possibile attivare e disattivare il ritorno a capo nelle impostazioni **Tutti i linguaggi dell'editor di testo** (**Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi**).|
 |Commenta selezione|Aggiunge caratteri di commento alla selezione o alla riga corrente. Scelta rapida: **CTRL** + **K**, **CTRL** + **C**|
 |Rimuovi commento selezione|Rimuove tutti i caratteri di commento dalla selezione o dalla riga corrente. Scelta rapida: **CTRL** + **K**, **CTRL** + **U**|
@@ -86,7 +88,7 @@ Per definire i nuovi tasti di scelta o ridefinire quelli esistenti, passare a **
 
 Per le opzioni dell'editor specifiche per JavaScript, vedere le [opzioni dell'editor JavaScript](../ide/reference/options-text-editor-javascript-formatting.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Editor standard (Visual Studio per Mac)](/visualstudio/mac/source-editor)
 - [IDE di Visual Studio](../get-started/visual-studio-ide.md)
