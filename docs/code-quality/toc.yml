@@ -8,15 +8,21 @@
       items:
         - name: Panoramica
           href: roslyn-analyzers-overview.md
+        - name: Installazione
+          expanded: true
+          items:
+            - name: Analizzatori .NET
+              href: install-net-analyzers.md
+            - name: Analizzatori di terze parti
+              href: install-roslyn-analyzers.md
         - name: Configurazione
           expanded: true
           items:
             - name: Panoramica
               href: use-roslyn-analyzers.md
             - name: Analizzatori .NET
+              expanded: true
               items:
-                - name: Installare gli analizzatori .NET
-                  href: install-net-analyzers.md
                 - name: Qualità del codice
                   items:
                     - name: Opzioni di qualità del codice
@@ -42,8 +48,6 @@
               href: automatic-feature-suspension.md
             - name: Rimuovere le violazioni dell'analisi del codice
               href: in-source-suppression-overview.md
-        - name: Installare analizzatori di terze parti
-          href: install-roslyn-analyzers.md
         - name: Domande frequenti
           href: analyzers-faq.md
     - name: Analisi legacy
