@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione di training di DataCamp inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 54f2cf98d6e726e8abf8a0a863a54cc891c12523
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: c675d49f1a099c53dfdabe08a71f1c5545010f97
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435893"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538085"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Vantaggio per il training DataCamp nelle sottoscrizioni di Visual Studio
 Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp.  Con DataCamp è possibile acquisire tutte le competenze di data science dal browser con la massima comodità, scegliendo personalmente il momento e l'argomento del training. Senza software da installare e senza requisiti hardware speciali, l'apprendimento di data science è più semplice che mai.
@@ -60,9 +60,9 @@ Le sottoscrizioni di Visual Studio idonee includono sottoscrizioni di DataCamp. 
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | 3 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
-| Visual Studio Enterprise con GitHub Enterprise   | VL | 3 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
+| Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise   | VL | 3 mesi       |  No.  Disponibile solo per i nuovi sottoscrittori          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 mesi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori           |
-| Visual Studio Professional con GitHub Enterprise| VL | 3 mesi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori           |
+| Sottoscrizione di Visual Studio Professional con GitHub Enterprise| VL | 3 mesi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori           |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 3 mesi                                             |  No.  Disponibile solo per i nuovi sottoscrittori           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 3 mesi                                              |  No.  Disponibile solo per i nuovi sottoscrittori           |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponibile  | N/D |

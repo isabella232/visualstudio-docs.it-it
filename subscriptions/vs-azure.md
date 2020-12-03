@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 10/28/2020
 ms.topic: how-to
 description: Informazioni su come attivare il vantaggio di credito singolo di Azure DevTest incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: f524f0933d067d0c62c184d54c441edc7b15739d
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: bfd94ef7995ed5f456462e1bce6aa0d4d045bdd0
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903638"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538007"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
 I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggiuntivi.  Con il tuo [credito mensile Azure DevTest individual](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure è la tua sandbox personale per sviluppo/test.  È possibile effettuare il provisioning di macchine virtuali, servizi cloud e altre risorse di Azure.  L'importo del credito varia in base al livello della sottoscrizione.
@@ -24,15 +24,15 @@ I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggi
    > [!div class="mx-imgBorder"]
    > ![Riquadro Azure](_img/vs-azure/vs-azure-tile.png "Per iniziare, fare clic sul pulsante ' attiva ' nel riquadro di Azure.")
 
-3. Se non si ha una sottoscrizione di Azure esistente, verrà richiesto di immettere le informazioni necessarie per creare la sottoscrizione di Azure.  Il primo passaggio consiste nel fornire le informazioni personali e quindi selezionare **Avanti** .
+3. Se non si ha una sottoscrizione di Azure esistente, verrà richiesto di immettere le informazioni necessarie per creare la sottoscrizione di Azure.  Il primo passaggio consiste nel fornire le informazioni personali e quindi selezionare **Avanti**.
    > [!div class="mx-imgBorder"]
    > ![Registrazione di Azure](_img/vs-azure/vs-azure-about-you.png "Aggiungere le informazioni di contatto personali alla sottoscrizione di Azure.")
 
-4. Successivamente, sarà necessario verificare l'identità usando un semplice codice di verifica. Specificare il numero di telefono e scegliere se si desidera ricevere il codice in base a testo o telefono.  Immettere il codice ricevuto e selezionare **Verifica codice** .   
+4. Successivamente, sarà necessario verificare l'identità usando un semplice codice di verifica. Specificare il numero di telefono e scegliere se si desidera ricevere il codice in base a testo o telefono.  Immettere il codice ricevuto e selezionare **Verifica codice**.   
    > [!div class="mx-imgBorder"]
    > ![Preparazione di Azure](_img/vs-azure/vs-azure-identity.png "Richiedere un codice di verifica e quindi immetterlo per continuare.")
 
-5. Per il passaggio finale, selezionare la casella di controllo per accettare le condizioni e quindi selezionare **Iscriviti** .  Questo è tutto ciò che occorre fare.
+5. Per il passaggio finale, selezionare la casella di controllo per accettare le condizioni e quindi selezionare **Iscriviti**.  Questo è tutto ciò che occorre fare.
    > [!div class="mx-imgBorder"]
    > ![Iscrizione ad Azure](_img/vs-azure/vs-azure-agreement.png "Fare clic sul pulsante "Iscriviti" per completare la creazione della sottoscrizione di Azure.")
 
@@ -50,11 +50,11 @@ Se la sottoscrizione di Visual Studio scade o viene rimossa, tutti i vantaggi de
 
 Esistono diversi modi per continuare a usare un credito mensile per Azure.  Per salvare le risorse di Azure, sarà necessario [trasferire le risorse](/azure/azure-resource-manager/management/move-resource-group-and-subscription) a un'altra sottoscrizione di Azure, indipendentemente dall'azione scelta di seguito. 
 
-- **Se acquisti direttamente la sottoscrizione di Visual Studio** , Acquista una nuova sottoscrizione o rinnova la sottoscrizione tramite Microsoft Store.  
+- **Se acquisti direttamente la sottoscrizione di Visual Studio**, Acquista una nuova sottoscrizione o rinnova la sottoscrizione tramite Microsoft Store.  
     - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab)
     - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab)
-- **Se un utente dell'organizzazione acquista sottoscrizioni per l'organizzazione** , [contattare l'amministratore della sottoscrizione di Visual Studio](./contact-my-admin.md) e richiedere una sottoscrizione che fornisca il credito mensile necessario.  
+- **Se un utente dell'organizzazione acquista sottoscrizioni per l'organizzazione**, [contattare l'amministratore della sottoscrizione di Visual Studio](./contact-my-admin.md) e richiedere una sottoscrizione che fornisca il credito mensile necessario.  
 - **Se si ha un'altra sottoscrizione di Visual Studio attiva** allo stesso livello di sottoscrizione associata a un altro account Microsoft, è possibile trasferire il vantaggio di Azure a un'altra sottoscrizione attiva di Visual Studio [aggiungendo un account alternativo](./manage-vs-subscriptions.md#managing-my-profile) nel [portale delle sottoscrizioni](https://my.visualstudio.com/subscriptions)di Visual Studio.  
 
 Usare la tabella di idoneità riportata di seguito per determinare il numero di crediti inclusi in ogni tipo di sottoscrizione.  
@@ -73,10 +73,10 @@ Per domande su come trasferire risorse, rimuovere i limiti di spesa o altri argo
 |                 Livello di sottoscrizione/Programma                 |           Vantaggi           |                         Rinnovabile?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standard               |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
-|              Visual Studio Enterprise con GitHub Enterprise               |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
+|              Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise               |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
 |               Visual Studio Enterprise (mensile)               |        Non disponibile        |                                                             |
 |             Visual Studio Professional Standard              |     Credito mensile pari a 50 dollari USA      |                             Sì
-|              Visual Studio Professional con GitHub Enterprise              |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
+|              Sottoscrizione di Visual Studio Professional con GitHub Enterprise              |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
 |              Visual Studio Professional (mensile)              |        Non disponibile        |                                                             |
 |                    Visual Studio Test Pro                    |     Credito mensile pari a 50 dollari USA      |                             Sì                             |
 |                        MSDN Platforms                        |     Credito mensile pari a 100 dollari USA     |                             Sì                             |

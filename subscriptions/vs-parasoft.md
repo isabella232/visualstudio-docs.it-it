@@ -2,17 +2,17 @@
 title: Parasoft virtualizzate/SOAtest Professional nelle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Informazioni su come attivare la sottoscrizione Parasoft Virtualize/SOA Test Professional inclusa nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 6209be915d3744e13aad674ea893e77e0b276044
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: dbe3ee78d46128a5944ee7b4d0bc69f001270588
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436029"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537448"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Vantaggio Parasoft Virtualize/SOAtest Professional Desktop nelle sottoscrizioni di Visual Studio
 
@@ -74,12 +74,12 @@ ms.locfileid: "92436029"
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, retail, NFR selezionato<sup>1</sup> | 6 mesi       |  Sì       |
-| Visual Studio Enterprise con GitHub Enterprise | VL | 6 mesi       |  Sì       |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                           |ND         |
-| Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                           |ND         |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                           |ND         |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                                           |ND         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |ND|
+| Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise | VL | 6 mesi       |  Sì       |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                           |N/D         |
+| Sottoscrizione di Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                           |N/D         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                           |N/D         |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                                           |N/D         |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 ||
 
 <sup>1</sup>  *include: Microsoft Partner Network (Enterprise).  Esclude: not for Resale (NFR), Visual Studio Industry Partner (VSIP), ETP, MCT software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT software & Services.*

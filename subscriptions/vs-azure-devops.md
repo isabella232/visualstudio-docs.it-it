@@ -7,12 +7,12 @@ ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
 ms.date: 07/22/2020
 ms.topic: conceptual
 description: Informazioni su come usare Azure DevOps come sottoscrittore di Visual Studio.
-ms.openlocfilehash: 536941d02b790349d126257e61164d2b0b98d794
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: f8cf4cd5f2165a528301d5dc2387a7906f11dcab
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970497"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537695"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Vantaggi Azure DevOps per i sottoscrittori di Visual Studio
 I sottoscrittori attivi di Visual Studio hanno la possibilità di usare un'ampia gamma di funzionalità in Azure DevOps, incluse nella sottoscrizione come vantaggi. È possibile usare le stesse funzionalità in ogni organizzazione di Azure DevOps di cui si è membri, indipendentemente dal fatto di aver creato l'organizzazione o di essere stati aggiunti da un atro utente.
@@ -31,9 +31,9 @@ Quando si accede ad Azure DevOps usando l'identità usata per attivare la sottos
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, retail, NFR selezionato<sup>1</sup>  | Azure Boards & repository (Basic<sup>2</sup>), Azure test plans, processi paralleli indipendenti |  Sì          |
-| Visual Studio Enterprise con GitHub Enterprise   | VL| Azure Boards & repository (Basic<sup>2</sup>), Azure test plans, processi paralleli indipendenti |  Sì          |
+| Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise   | VL| Azure Boards & repository (Basic<sup>2</sup>), Azure test plans, processi paralleli indipendenti |  Sì          |
 | Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                        | Repository Azure Boards & (Basic<sup>2</sup>)                                                             |  Sì          |
-| Visual Studio Professional con GitHub Enterprise | VL| Repository Azure Boards & (Basic<sup>2</sup>)                                                             |  Sì          |
+| Sottoscrizione di Visual Studio Professional con GitHub Enterprise | VL| Repository Azure Boards & (Basic<sup>2</sup>)                                                             |  Sì          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Repository Azure Boards & (Basic<sup>2</sup>), Azure test plans                                              |  Sì          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Repository Azure Boards & (Basic<sup>2</sup>), Azure test plans                                             |  Sì          |
 ||
@@ -57,7 +57,7 @@ R: sì. Visual Studio Enterprise sottoscrittori ottengono un processo parallelo 
 - Per domande sull'IDE di Visual Studio, Azure DevOps o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
 - [Documentazione di Azure DevOps](/azure/devops/).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

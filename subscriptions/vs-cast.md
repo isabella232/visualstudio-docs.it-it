@@ -1,5 +1,5 @@
 ---
-title: Vantaggio CAST Highlight nelle sottoscrizioni di Visual Studio | Microsoft Docs
+title: Evidenziare il vantaggio per le sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: lank
@@ -7,12 +7,12 @@ ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
 ms.date: 10/21/2020
 ms.topic: how-to
 description: Informazioni sul vantaggio CAST Highlight disponibile nelle sottoscrizioni di Visual Studio selezionate
-ms.openlocfilehash: a6c1836724f05255c5120a336b8976ccae3cadbd
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: fbc7b6278d29d96ed8d97933c295468c7d3e2754
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353369"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538137"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Vantaggio CAST Highlight nelle sottoscrizioni di Visual Studio
 Gli sviluppatori hanno bisogno di informazioni dettagliate critiche sul software durante la migrazione al cloud. Con l'evidenziazione del CAST, i sottoscrittori di Visual Studio possono analizzare rapidamente il codice sorgente dell'applicazione per identificare la preparazione del cloud delle applicazioni per la migrazione ad Azure e monitorare lo stato di avanzamento della propria app durante e dopo una migrazione.
@@ -78,9 +78,9 @@ Dopo che la richiesta è stata approvata, si riceverà un secondo messaggio di p
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Valutazione di 5 app per tre mesi|  No.  Disponibile solo per i nuovi sottoscrittori          |
-| Visual Studio Enterprise con GitHub Enterprise  | VL | Valutazione di 5 app per tre mesi|  No.  Disponibile solo per i nuovi sottoscrittori          |
+| Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise  | VL | Valutazione di 5 app per tre mesi|  No.  Disponibile solo per i nuovi sottoscrittori          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Valutazione di 1 app per tre mesi                                                             |  No.  Disponibile solo per i nuovi sottoscrittori                  |
-| Visual Studio Professional con GitHub Enterprise | VL                                       | Valutazione di 1 app per tre mesi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori                  |
+| Sottoscrizione di Visual Studio Professional con GitHub Enterprise | VL                                       | Valutazione di 1 app per tre mesi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori                  |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                             |  N/D           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              |  N/D          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponibile  | N/D |

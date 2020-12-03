@@ -2,17 +2,17 @@
 title: WhiteSource Bolt nelle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Informazioni su come attivare la sottoscrizione di WhiteSource Bolt inclusa nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 7d0e95bf82f31b92ef5b581a0b7d8b7d082d3237
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: dffa4645795e771b2f947426907ed3e03caedf80
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435988"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537682"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt nelle sottoscrizioni di Visual Studio
 
@@ -43,12 +43,12 @@ ms.locfileid: "92435988"
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, retail, NFR selezionato<sup>1</sup> | 6 mesi       |  Sì       |
-| Visual Studio Enterprise con GitHub Enterprise | VL | 6 mesi       |  Sì       |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                           |ND         |
-| Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                           |ND         |
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                           |ND         |
-| MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                                           |ND         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |ND|
+| Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise | VL | 6 mesi       |  Sì       |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                           |N/D         |
+| Sottoscrizione di Visual Studio Professional con GitHub Enterprise | VL                                      | Non disponibile                                                           |N/D         |
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                           |N/D         |
+| MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                                           |N/D         |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 ||
 
 <sup>1</sup>  *include: Microsoft Partner Network (Enterprise).  Esclude: not for Resale (NFR), Visual Studio Industry Partner (VSIP), ETP, MCT software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT software & Services.*

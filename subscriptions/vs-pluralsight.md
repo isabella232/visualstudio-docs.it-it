@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 08/04/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Informazioni sulla sottoscrizione del training Pluralsight inclusa nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 02ed0d2417317116182800980206a1fcc7fbfc16
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "91005342"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537981"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Vantaggi di training Pluralsight nelle sottoscrizioni di Visual Studio
 
@@ -31,7 +31,7 @@ Il riquadro precedente è un esempio di ciò che un Sottoscrittore di Visual Stu
 1. L'utente verrà reindirizzato alla pagina Pluralsight per il vantaggio incluso con la sottoscrizione di Visual Studio.
    - Specificare le informazioni di contatto richieste nel modulo
    - Fare clic sulla casella di controllo per accettare le condizioni per l'utilizzo
-   - Fare clic su **riscatta** .
+   - Fare clic su **riscatta**.
    > [!div class="mx-imgBorder"]
    > ![Registrazione Pluralsight](_img/vs-pluralsight/vs-pluralsight-registration.png "Completare il modulo di registrazione, fare clic sulla casella di controllo per accettare le condizioni e fare clic su Riscatta")
 
@@ -43,11 +43,11 @@ Il riquadro precedente è un esempio di ciò che un Sottoscrittore di Visual Stu
    > [!NOTE]
    > Se l'account non è idoneo per le nuove offerte, nel messaggio di posta elettronica viene spiegato che si è verificato un problema durante la creazione dell'account in quanto non idoneo.  Il messaggio contiene anche informazioni utili per contattare il team di supporto Pluralsight, che può rispondere a eventuali domande relative all'account.
 
-1. Fare clic su **Imposta password** .
+1. Fare clic su **Imposta password**.
 
-1. Immettere la password desiderata nel campo **nuova password** , immetterla di nuovo nel campo **Conferma password** e fare clic su **Salva** .
+1. Immettere la password desiderata nel campo **nuova password** , immetterla di nuovo nel campo **Conferma password** e fare clic su **Salva**.
 
-1. L'operazione è terminata.  A questo punto è possibile iniziare a imparare usando i numerosi corsi Pluralsight.
+1. Ecco fatto!  A questo punto è possibile iniziare a imparare usando i numerosi corsi Pluralsight.
 
 ## <a name="status-of-your-pluralsight-subscription"></a>Stato della sottoscrizione di Pluralsight
 Dopo aver attivato il vantaggio Pluralsight, l'aspetto del riquadro nel portale delle sottoscrizioni di Visual Studio cambierà per consentire di tenere traccia dello stato della sottoscrizione.  
@@ -73,13 +73,13 @@ Alla scadenza della sottoscrizione di Pluralsight, lo stato verrà modificato in
 |                          Livello di sottoscrizione                          |     Canali      |    Vantaggi    |   Rinnovabile?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (Standard)           | VL, Azure, Retail |   6 mesi    | Sì<sup>2</sup> |
-|          Visual Studio Enterprise con GitHub Enterprise          | VL  |   6 mesi    | Sì<sup>2</sup> |
+|          Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise          | VL  |   6 mesi    | Sì<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL, Azure, Retail |   3 mesi    | Sì<sup>2</sup> |
-|         Visual Studio Professional con GitHub Enterprise          | VL  |   3 mesi    | Sì<sup>2</sup> |
-|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   Non disponibile    | ND  |
-|                      MSDN Platforms (Standard)                       |    VL, Retail     |   Non disponibile    | ND  |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) |       Azure       | Non disponibile |       ND       |
-|             Visual Studio Enterprise - NFR<sup>1</sup>              |      Programma      | Non disponibile |       ND       |
+|         Sottoscrizione di Visual Studio Professional con GitHub Enterprise          | VL  |   3 mesi    | Sì<sup>2</sup> |
+|              Visual Studio Test Professional (Standard)              |    VL, Retail     |   Non disponibile    | N/D  |
+|                      MSDN Platforms (Standard)                       |    VL, Retail     |   Non disponibile    | N/D  |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) |       Azure       | Non disponibile |       N/D       |
+|             Visual Studio Enterprise - NFR<sup>1</sup>              |      Programma      | Non disponibile |       N/D       |
 ||
 
 <sup>1</sup>  *include: not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT software & Services Developer, MCT software & Service, most VALUABLE Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), ETP, Imagine.*

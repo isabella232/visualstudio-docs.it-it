@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 09/08/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Scopri come sfruttare i vantaggi del desktop virtuale Microsoft Windows tramite la sottoscrizione di Visual Studio
-ms.openlocfilehash: 4e619b9c1140611be5236edfff70e8b0aa560b23
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 9198f4180a2f98b89540f1eedc0dab4be59558ab
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005046"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537955"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Accedere al desktop virtuale Windows nelle sottoscrizioni 
 I sottoscrittori di Visual Studio sono ora in grado di usare i singoli crediti di sviluppo/test di Azure per i servizi desktop virtuali di Microsoft Windows.  
@@ -47,9 +47,9 @@ Quando tutti i prerequisiti sono soddisfatti, è necessario completare diverse a
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Disponibile|  Sì          |
-| Visual Studio Enterprise con GitHub Enterprise  | VL | Disponibile|  Sì          |
+| Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise  | VL | Disponibile|  Sì          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Disponibile                                                             |  Sì             |
-| Visual Studio Professional con GitHub Enterprise | VL                                       | Disponibile                                        |  Sì           |
+| Sottoscrizione di Visual Studio Professional con GitHub Enterprise | VL                                       | Disponibile                                        |  Sì           |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Disponibile|  Sì          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Disponibile                                         |  Sì          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponibile  | N/D |

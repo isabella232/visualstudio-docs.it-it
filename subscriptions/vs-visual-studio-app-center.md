@@ -1,18 +1,18 @@
 ---
-title: Vantaggio Visual Studio App Center nelle sottoscrizioni di Visual Studio | Microsoft Docs
+title: Visual Studio App Center vantaggio nelle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabushcl
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Informazioni sul vantaggio Visual Studio App Center nelle sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 6b1fc94d596f3b771f8354c0857ef533c00e1449
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 8468b7641d12eca4db09d55d8d308ef5a913bc3c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435729"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537773"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center nelle sottoscrizioni di Visual Studio
 
@@ -43,9 +43,9 @@ Iniziare a usare Visual Studio App Center è facile.
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, Retail, NFR<sup>1</sup> | Incluso       |  Sì          |
-| Visual Studio Enterprise con GitHub Enterprise  | VL | Incluso       |  Sì          |
+| Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise  | VL | Incluso       |  Sì          |
 | Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Incluso                                                            |Sì |
-| Visual Studio Professional con GitHub Enterprise | VL                                      | Incluso                                                            |Sì |
+| Sottoscrizione di Visual Studio Professional con GitHub Enterprise | VL                                      | Incluso                                                            |Sì |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Incluso                                                            |Sì |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Incluso                                                            |Sì |
 ||

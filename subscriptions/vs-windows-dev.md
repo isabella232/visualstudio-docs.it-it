@@ -1,18 +1,18 @@
 ---
-title: Vantaggio Account per sviluppatore di Windows nelle sottoscrizioni di Visual Studio | Microsoft Docs
+title: Vantaggio account sviluppatore Windows nelle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Informazioni sul vantaggio Account per sviluppatore di Windows incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 46cb22becd8a5ac852c7fddbd2cf8b473cef47bc
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435817"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537721"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Account per sviluppatore di Windows nelle sottoscrizioni di Visual Studio
 L'account per sviluppatore di Windows, incluso in una sottoscrizione selezionata di Visual Studio, consente di inviare app di Windows gratuite e a pagamento a Windows Store.
@@ -44,12 +44,12 @@ Per usare l'account per sviluppatore di Windows, è necessario configurare un ac
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, retail, NFR selezionato<sup>1</sup> | Incluso       |  Sì|
-| Visual Studio Enterprise con GitHub Enterprise   | VL  | Incluso       |  Sì|
+| Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise   | VL  | Incluso       |  Sì|
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Incluso                                                            |Sì|
-| Visual Studio Professional con GitHub Enterprise | VL                                        | Incluso                                                            |Sì|
-| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                            |  ND|
-| MSDN Platforms (Standard)                                          | VL, Retail                                              |  Non disponibile                                            |  ND|
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |ND|
+| Sottoscrizione di Visual Studio Professional con GitHub Enterprise | VL                                        | Incluso                                                            |Sì|
+| Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                            |  N/D|
+| MSDN Platforms (Standard)                                          | VL, Retail                                              |  Non disponibile                                            |  N/D|
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
 ||
 
 <sup>1</sup>  *include: not for Resale (NFR), ETP, Visual Studio Industry Partner (VSIP), BizSpark, MCT software & Services Developer, MVP (Most Valuable Professional), Regional Director (Rd). Esclude: Microsoft Partner Network (MPN), Imagine, MCT software & Services.*

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
-ms.date: 03/25/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Informazioni sul vantaggio della rivista del codice incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 30bc728db5aea53d442552ed9b79f506b0f6b6d7
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: ff65a47df129eaf59d1404335cd8fd98df7474d6
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970487"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538111"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Rivista di codice inclusa nelle sottoscrizioni di Visual Studio
 
@@ -50,9 +50,9 @@ Dopo aver completato l'ordine di sottoscrizione, viene visualizzata una pagina d
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, retail, NFR selezionato<sup>1</sup> | Disponibile       |  No          |
-| Visual Studio Enterprise con GitHub Enterprise   | VL| Disponibile       |  No          |
+| Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise   | VL| Disponibile       |  No          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Disponibile                                                            |  No          |
-| Visual Studio Professional con GitHub Enterprise | VL                                      | Disponibile                                                            |  No          |
+| Sottoscrizione di Visual Studio Professional con GitHub Enterprise | VL                                      | Disponibile                                                            |  No          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Disponibile                                             |  No          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Disponibile                                              |  No          |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/D |
@@ -76,7 +76,7 @@ R: la rivista del codice raccoglie l'indirizzo, indipendentemente dal fatto che 
 - Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/)di Visual Studio.
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

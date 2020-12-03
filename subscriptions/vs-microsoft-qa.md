@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 16af82df-380a-4864-9f4e-6c3442cc7da2
-ms.date: 11/17/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Informazioni su Microsoft Q&un vantaggio del supporto per forum incluso nelle sottoscrizioni di Visual Studio selezionate.
-ms.openlocfilehash: 43f4002800b490d98cc661d3d737abda2893ff5c
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 7f3f615101f9b084232c42a6b1c867e123f4d38a
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94905527"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537734"
 ---
 # <a name="microsoft-qa-forum-support-in-visual-studio-subscriptions"></a>Microsoft Q&un supporto per forum nelle sottoscrizioni di Visual Studio
 Hai una domanda tecnica? Trovarlo in Microsoft Q&A: la casa per le domande e le risposte tecniche fornite da Microsoft.
@@ -51,9 +51,9 @@ La disponibilità del vantaggio Community di Azure dipende dalla sottoscrizione 
 |                                          Livello di sottoscrizione                                           |     Canali      |    Vantaggi    | Rinnovabile? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (standard), NFR<sup>1</sup>                            | VL, Azure, Retail |   Disponibile    |    Sì     |
-|                           Visual Studio Enterprise con GitHub Enterprise                           | VL, Azure, Retail |   Disponibile    |    Sì     |
+|                           Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise                           | VL, Azure, Retail |   Disponibile    |    Sì     |
 |                          Visual Studio Professional (Standard)                          | VL, Azure, Retail |   Disponibile    |    Sì     |
-|                          Visual Studio Professional con GitHub Enterprise                          | VL, Azure, Retail |   Disponibile    |    Sì     |
+|                          Sottoscrizione di Visual Studio Professional con GitHub Enterprise                          | VL, Azure, Retail |   Disponibile    |    Sì     |
 |                              Visual Studio Test Professional (Standard)                               |    VL, Retail     |   Disponibile    |    Sì     |
 |                                       MSDN Platforms (Standard)                                       |    VL, Retail     |   Disponibile    |    Sì     |
 | Visual Studio Enterprise (cloud mensile), Visual Studio Professional (cloud mensile)|        Tutti        | Non disponibile |     No     |

@@ -1,18 +1,18 @@
 ---
-title: Vantaggio Concierge Chat nella sottoscrizione di Visual Studio | Microsoft Docs
+title: Vantaggio concierge chat nella sottoscrizione di Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 10/21/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Informazioni sul vantaggio Concierge Chat nelle sottoscrizioni di Visual Studio.
-ms.openlocfilehash: 0aab627d7c870720c0cc0d043ffb6ce556568703
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 4f5f188ee7b6662549e5ade80a97c57f24bce64c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353382"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538098"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Concierge Chat nelle sottoscrizioni di Visual Studio
 Il servizio Concierge Chat offre assistenza per la ricerca di informazioni e documentazione tecnica sui prodotti, nonché per l'uso dei vantaggi della sottoscrizione di Visual Studio.
@@ -39,9 +39,9 @@ Ottenere assistenza tramite il servizio Concierge Chat è molto semplice.
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, retail, NFR selezionato<sup>1</sup> | Disponibile       |  Sì          |
-| Visual Studio Enterprise con GitHub Enterprise | VL| Disponibile       |  Sì          |
+| Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise | VL| Disponibile       |  Sì          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Disponibile                                                            |  Sì          |
-| Visual Studio Professional con GitHub Enterprise | VL | Disponibile                                                            |  Sì          |
+| Sottoscrizione di Visual Studio Professional con GitHub Enterprise | VL | Disponibile                                                            |  Sì          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Disponibile                                             |  Sì          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Disponibile                                              |  Sì          |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/D |

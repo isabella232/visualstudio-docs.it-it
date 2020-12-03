@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Informazioni su come installare Microsoft 365 app per Enterprise
-ms.openlocfilehash: 88570806d90ff022ede6f39c16325d8696ef0f9e
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: d23f8cccd284972d05d7085aea7e0b1cab0f275d
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006124"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537825"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Microsoft 365 app per Enterprise nelle sottoscrizioni di Visual Studio
 Microsoft 365 Apps for Enterprise (in precedenza Office 365 Pro Plus) è disponibile nelle sottoscrizioni di Visual Studio selezionate. 
@@ -56,10 +56,10 @@ Il processo per l'attivazione delle app Microsoft 365 per la sottoscrizione Ente
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Disponibile       |  Sì          |
-| Visual Studio Enterprise con GitHub Enterprise  | VL | Disponibile       |  Sì          |
+| Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise  | VL | Disponibile       |  Sì          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Non disponibile       |  N/D          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                            |  N/D          |
-| Visual Studio Professional con GitHub Enterprise | VL | Non disponibile         |  N/D          |
+| Sottoscrizione di Visual Studio Professional con GitHub Enterprise | VL | Non disponibile         |  N/D          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                             |  N/D          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              |  N/D          |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/D |

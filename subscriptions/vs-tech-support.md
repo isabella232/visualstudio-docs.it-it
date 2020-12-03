@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 11/05/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Informazioni su come attivare il vantaggio Supporto tecnico incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 9ae88bcc066473752a600284d815378bc8870f64
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: ea67dde54dd66af6d20b7f9af84d2bfe80211444
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413965"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537968"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivare e usare il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 Il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio consente di risolvere problemi in garanzia in **ambienti non di produzione** per i prodotti che sono ancora nella fase di supporto "Mainstream" del [ciclo di vita del supporto](https://support.microsoft.com/lifecycle/search). Le sottoscrizioni cloud standard e annuali di Visual Studio Enterprise ricevono quattro eventi imprevisti, mentre le sottoscrizioni cloud standard e annuali di Visual Studio Professional ne ricevono due, per un massimo di 1 anno dall'attivazione del vantaggio. L'attivazione del vantaggio deve avvenire mentre la sottoscrizione è corrente.
@@ -30,7 +30,7 @@ Strumenti di sviluppo come l'IDE di Visual Studio e la Azure DevOps Server ricev
 
 I prodotti non per sviluppatori (ad esempio SQL, Windows, SharePoint) scaricati dalle sottoscrizioni di Visual Studio sono idonei solo per il supporto mainstream. Questi prodotti sono concessi in licenza solo per gli ambienti di sviluppo per la progettazione, lo sviluppo, il test e la dimostrazione delle applicazioni. Questi prodotti non sono concessi in licenza per gli ambienti di produzione.
 
-Descrizioni del livello di prodotto: espandere **piani di supporto non disponibili**. Se non è **possibile utilizzare il piano di supporto per il supporto per il prodotto specificato (codice: 8)** , non è possibile utilizzare il contratto di supporto per la versione del prodotto selezionata.
+Descrizioni del livello di prodotto: espandere **piani di supporto non disponibili**. Se non è **possibile utilizzare il piano di supporto per il supporto per il prodotto specificato (codice: 8)**, non è possibile utilizzare il contratto di supporto per la versione del prodotto selezionata.
 
 > [!IMPORTANT]
 > Gli interventi di supporto sono disponibili per il supporto per la correzione delle interruzioni.  Non possono essere usati per assistenza per problemi di codifica/sviluppo che coinvolgono i prodotti seguenti:
@@ -57,7 +57,7 @@ Descrizioni del livello di prodotto: espandere **piani di supporto non disponibi
    > [!div class="mx-imgBorder"]
    > ![Trovare l'ID sottoscrizione del vantaggio Supporto tecnico](_img/vs-tech-support/vs-tech-support-subID-cropped.png "Trovare l'ID sottoscrizione nella scheda sottoscrizioni.")
 
-4. Dopo aver completato il processo, si riceverà un messaggio di posta elettronica contenente l' **ID contratto** e l' **ID di accesso** da usare durante la creazione di un evento imprevisto per il supporto.  Verranno inoltre fornite istruzioni per l'invio di richieste di assistenza usando il nuovo ID di accesso e l'ID del contratto. 
+4. Dopo aver completato il processo, si riceverà un messaggio di posta elettronica contenente l'**ID contratto** e l'**ID di accesso** da usare durante la creazione di un evento imprevisto per il supporto.  Verranno inoltre fornite istruzioni per l'invio di richieste di assistenza usando il nuovo ID di accesso e l'ID del contratto. 
 
    > [!NOTE]
    > Per attivare l'account di supporto in una lingua diversa dall'inglese, scegliere il paese/area geografica da [questo elenco](https://support.microsoft.com/help/14084/activate-support-contract).
@@ -87,7 +87,7 @@ Per inviare un evento imprevisto tramite il portale di supporto per le aziende, 
 0. Indicare la gravità del problema.  "Importante" è il valore predefinito. 
 0. Scegliere quando si desidera ricevere supporto. Per impostazione predefinita, viene selezionato "solo durante l'orario di ufficio". L'opzione per "supporto 24/7" è disponibile solo se è stata selezionata l'opzione "critico" come gravità.
 0. Fare clic su **Avanti** per continuare. 
-0. Per il **passaggio 3** , fornire le informazioni di contatto che si desidera che l'agente di supporto usi per contattare l'utente. 
+0. Per il **passaggio 3**, fornire le informazioni di contatto che si desidera che l'agente di supporto usi per contattare l'utente. 
    > [!div class="mx-imgBorder"]
    > ![Verificare le informazioni di contatto](_img/vs-tech-support/vs-tech-support-contact-info.png "Verificare le informazioni di contatto e il metodo di contatto preferito.") 
 0. Nel **passaggio 4** è possibile condividere le informazioni della richiesta di supporto con altri utenti del team.  Immettere gli indirizzi di posta elettronica di quelli con cui si vuole condividere la richiesta. Fare clic su **Avanti** per passare al passaggio successivo.
@@ -108,9 +108,9 @@ Per usare il vantaggio supporto tecnico della sottoscrizione di Visual Studio pe
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | 4 eventi imprevisti       |  Sì|
-| Visual Studio Enterprise con GitHub Enterprise | VL | 4 eventi imprevisti       |  Sì|
+| Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise | VL | 4 eventi imprevisti       |  Sì|
 | Visual Studio Professional (Standard) | VL, Azure, Retail, NFR<sup>2</sup> selezionato                                        | 2 eventi imprevisti                                                          |Sì         |
-| Visual Studio Professional con GitHub Enterprise | VL                                     | 2 eventi imprevisti                                                          |Sì         |
+| Sottoscrizione di Visual Studio Professional con GitHub Enterprise | VL                                     | 2 eventi imprevisti                                                          |Sì         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 2 eventi imprevisti                                             |  Sì         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 2 eventi imprevisti                                               | Sì         |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|

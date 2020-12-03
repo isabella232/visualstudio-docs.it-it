@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 10/22/2020
+ms.date: 12/02/2020
 ms.topic: how-to
-description: Informazioni su come scaricare e installare l'ambiente IDE di Visual Studio incluso nella sottoscrizione di Visual Studio.
-ms.openlocfilehash: 2baf2e452e86d44d814e3f4a511ebb5442b83578
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+description: Informazioni su come scaricare e installare l'IDE di Visual Studio incluso nella sottoscrizione di Visual Studio
+ms.openlocfilehash: edabaa21e8f8b6c7fe8fee33d2c1a4252efa7a1c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92435755"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538059"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Vantaggi di Visual Studio 2019
 
@@ -24,7 +24,7 @@ I sottoscrittori di Visual Studio hanno accesso all'ambiente IDE di Visual Studi
 
 Per scaricare l'ambiente IDE:
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2. Individuare il riquadro IDE di Visual Studio nella sezione Strumenti e fare clic sul collegamento **Download** nella parte inferiore del riquadro del vantaggio.  È anche possibile eseguire il download dalla pagina [Download](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
+2. Individuare il riquadro IDE di Visual Studio nella sezione strumenti e fare clic sul collegamento **download** nella parte inferiore del riquadro del vantaggio.  È anche possibile eseguire il download dalla pagina [Download](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
    > [!div class="mx-imgBorder"]
    > ! [Riquadro Visual Studio Enterprise] (_img/vs-IDE-Experience/vs-ide-tile.png "fare clic su" download "nel riquadro di Visual Studio per installare Visual Studio.")
 
@@ -63,9 +63,9 @@ Per scaricare l'ambiente IDE:
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggi                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud mensile)   | VL, Azure, retail, NFR selezionato<sup>1</sup> | Disponibile       |  Sì          |
-| Visual Studio Enterprise con GitHub Enterprise   | VL | Disponibile       |  Sì          |
+| Sottoscrizione di Visual Studio Enterprise con GitHub Enterprise   | VL | Disponibile       |  Sì          |
 | Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Disponibile                                                            |  Sì          |
-| Visual Studio Professional con GitHub Enterprise | VL   | Disponibile              |  Sì          |
+| Sottoscrizione di Visual Studio Professional con GitHub Enterprise | VL   | Disponibile              |  Sì          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Disponibile                                             |  Sì         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              |  N/D          |
 
