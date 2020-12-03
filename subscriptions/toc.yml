@@ -188,7 +188,7 @@
           href: aliasing.md
         - name: Sottoscrittori con accesso tramite posta elettronica personale
           href: personal-email-sign-ins.md
-        - name: Gestione di Visual Studio con GitHub Enterprise
+        - name: Gestione delle sottoscrizioni di Visual Studio con GitHub Enterprise
           href: assign-github.md
 - name: Risorse
   items:
