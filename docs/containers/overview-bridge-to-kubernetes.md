@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: d1a92433a90e6e6b7f71d0c7db6ced3a52c33315
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c6a85faf2d1451dcab9bc822fcdf228513b90dca
+ms.sourcegitcommit: ab60fd7b4a8219e378d100df1386e1b038ecdafc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440610"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96595266"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Come funziona Bridge per Kubernetes
 
@@ -72,7 +72,8 @@ Quando si Abilita l'uso in isolamento, Bridge to Kubernetes esegue le operazioni
 Se Bridge to Kubernetes rileva che Azure Dev Spaces è abilitato nel cluster Kubernetes, viene richiesto di disabilitare Azure Dev Spaces prima di poter usare Bridge per Kubernetes.
 
 Quando viene avviato, gestione routing esegue le operazioni seguenti:
-* Duplica tutti gli ingressi trovati nello spazio dei nomi utilizzando la *GENERATED_NAME* per il sottodominio.
+
+* Duplica tutti gli ingressi (incluso il servizio di bilanciamento del carico in ingresso) trovati nello spazio dei nomi usando il *GENERATED_NAME* per il sottodominio.
 * Crea un pod di invio per ogni servizio associato a ingress duplicato con il sottodominio *GENERATED_NAME* .
 * Crea un pod di invio aggiuntivo per il servizio su cui si sta lavorando in isolamento. Ciò consente di indirizzare le richieste con il sottodominio al computer di sviluppo.
 * Configura le regole di routing per ogni pod di invio per gestire il routing per i servizi con il sottodominio.
@@ -144,7 +145,7 @@ Il Bridge per Kubernetes presenta le limitazioni seguenti:
 * Un servizio deve essere supportato da un singolo POD per potersi connettere a tale servizio. Non è possibile connettersi a un servizio con più POD, ad esempio un servizio con repliche.
 * Un pod può avere un solo contenitore in esecuzione in tale Pod affinché il Bridge Kubernetes possa connettersi. Bridge per Kubernetes non è in grado di connettersi ai servizi con Pod con contenitori aggiuntivi, ad esempio contenitori sidecar inseriti da mesh dei servizi.
 * Attualmente, i pod Bridge per Kubernetes devono essere contenitori Linux. I contenitori Windows non sono supportati.
-* Impossibile utilizzare l'isolamento con HTTPS.
+* Non è possibile usare l'isolamento con HTTPS quando si usa Bridge per Kubernetes con Visual Studio. HTTPS è supportato solo in modalità di isolamento quando si usa Visual Studio Code.
 * Per poter modificare il file degli host, Bridge to Kubernetes richiede autorizzazioni elevate per l'esecuzione nel computer di sviluppo.
 * Non è possibile usare Bridge per Kubernetes in cluster con Azure Dev Spaces abilitata.
 
