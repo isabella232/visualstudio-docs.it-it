@@ -3,15 +3,15 @@ title: Impostazione di un repository Git
 description: Connessione a un repository git usando Visual Studio per Mac.
 author: therealjohn
 ms.author: johmil
-ms.date: 11/09/2020
+ms.date: 12/03/2020
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
-ms.openlocfilehash: 862f073d3c6d535d612a67f215aee740cea175bd
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: bacd533bf5c28c6f431fe7088fad36b6bbd3d04b
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493127"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561058"
 ---
 # <a name="set-up-a-git-repository"></a>Impostare un repository Git
 
@@ -45,6 +45,9 @@ Per impostare un repository Git, seguire questa procedura:
 
 Per un progetto esistente che _non_ sia stato ancora inserito nel sistema di controllo della versione, usare i passaggi seguenti per impostarlo in Git:
 
+> [!TIP]
+> Usare un file con estensione gitignore per controllare le cartelle e i file che vengono rilevati e pubblicati con git. Potrebbe essere necessario escludere le directory di compilazione, i file binari o i file generati. Per altre informazioni, vedere la [documentazione di GitHub su come ignorare i file](https://docs.github.com/en/free-pro-team@latest/github/using-git/ignoring-files).
+
 1. Selezionare il nome della soluzione nella finestra della soluzione in Visual Studio per Mac.
 
 2. Nella barra dei menu selezionare **controllo della versione > pubblica nel controllo della versione** per visualizzare la finestra di dialogo **clona repository** :
@@ -74,7 +77,7 @@ Per un progetto esistente che _non_ sia stato ancora inserito nel sistema di con
 > [!NOTE]
 > Se per l'account è abilitata l'autenticazione a due fattori, è necessario creare un token di accesso, che verrà usato al posto della password. Se non è stato creato un token di accesso, seguire i passaggi descritti nella documentazione relativa ai [token di accesso](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) Git.
 
-8. Inserire il nome utente e il token di accesso personale, quindi premere **OK** :
+8. Inserire il nome utente e il token di accesso personale, quindi premere **OK**:
 
     ![Inserire nome utente e password per Git](media/version-control-git9-sml.png)
 
@@ -88,7 +91,7 @@ Per un progetto esistente che _non_ sia stato ancora inserito nel sistema di con
 
 ## <a name="publishing-a-new-project"></a>Pubblicazione di un nuovo progetto
 
-È possibile usare la finestra di dialogo Nuovo progetto per creare un nuovo progetto con un repository Git locale. Per abilitarlo, selezionare la casella di controllo **Usa GIT per il controllo della versione** , come illustrato nello screenshot seguente. Verrà inizializzato il repository e verrà aggiunto un file con estensione gitignore facoltativo:
+È possibile usare la finestra di dialogo Nuovo progetto per creare un nuovo progetto con un repository Git locale. Per abilitarlo, selezionare la casella di controllo **Usa GIT per il controllo della versione**, come illustrato nello screenshot seguente. Verrà inizializzato il repository e verrà aggiunto un file con estensione gitignore facoltativo:
 
 ![Creare un nuovo progetto con il supporto Git](media/version-control-git-publish-new1.png)
 
@@ -101,21 +104,21 @@ Seguire questa procedura per eseguire il push del nuovo repository locale in un 
 
 2. Nella scheda Stato scegliere **Commit** nella parte superiore sinistra.
 
-3. Scrivere un messaggio di commit, ad esempio "First Commit", quindi fare clic su **Commit** :
+3. Scrivere un messaggio di commit, ad esempio "First Commit", quindi fare clic su **Commit**:
 
     ![Eseguire il commit delle modifiche iniziali nel repository Git](media/version-control-git-publish-new2.png)
 
 4. Nella barra dei menu passare quindi a **Controllo della versione > Gestisci rami ed origini remote**.
 
-5. Passare alla scheda **Origini remote** , quindi fare clic su **Aggiungi**.
+5. Passare alla scheda **Origini remote**, quindi fare clic su **Aggiungi**.
 
-6. Nella finestra **Origine remota** aggiungere i dettagli del repository GitHub precedentemente creato e fare clic su **OK** :
+6. Nella finestra **Origine remota** aggiungere i dettagli del repository GitHub precedentemente creato e fare clic su **OK**:
 
     ![Configurare le origini remote per il repository Git](media/version-control-git-publish-new3.png)
 
-7. Chiudere la finestra **Configurazione del repository GIT** , quindi nella barra dei menu passare a **Controllo della versione > Esegui push delle modifiche**.
+7. Chiudere la finestra **Configurazione del repository GIT**, quindi nella barra dei menu passare a **Controllo della versione > Esegui push delle modifiche**.
 
-8. Nella finestra **Esegui push nel repository** fare clic sul pulsante **Esegui push delle modifiche** :
+8. Nella finestra **Esegui push nel repository** fare clic sul pulsante **Esegui push delle modifiche**:
 
     ![Eseguire il push delle modifiche nel repository remoto](media/version-control-git-publish-new4.png)
 
@@ -132,7 +135,7 @@ Visual Studio per Mac eseguirà ora il push delle modifiche nel repository GitHu
 
 È probabile che sarà necessario usare un repository di GitHub che esiste solo in remoto e non nel computer locale. Visual Studio per Mac consente di clonare rapidamente questo repository. Seguire questa procedura per clonarlo nel computer in uso:
 
-1. Nella barra dei menu selezionare **controllo della versione > repository clone** :
+1. Nella barra dei menu selezionare **controllo della versione > repository clone**:
 
 2. Verrà visualizzata la scheda **Connetti con URL** :
 
@@ -155,8 +158,8 @@ Se si verificano problemi con l'inizializzazione del progetto con un repository 
 
 1. Andare alla cartella della soluzione.
 1. Premere **Comando + MAIUSC + .** per visualizzare i file e le cartelle nascosti.
-1. Se è presente una cartella **.git** , eliminarla.
-1. Se è presente un file **gitignore** , eliminarlo.
+1. Se è presente una cartella **.git**, eliminarla.
+1. Se è presente un file **gitignore**, eliminarlo.
 1. Premere **Comando + MAIUSC + .** per nascondere i file e le cartelle.
 1. Aprire la soluzione in Visual Studio per Mac.
 1. Nella finestra della soluzione selezionare il nodo della soluzione.

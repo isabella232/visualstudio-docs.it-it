@@ -1,5 +1,7 @@
 ---
 title: Valutazione di espressioni (SDK per il debug di Visual Studio) | Microsoft Docs
+description: Durante la modalità di rottura, l'IDE valuta le espressioni che coinvolgono variabili di programma. Informazioni sul modo in cui il motore di debug analizza e valuta un'espressione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e41179fd530818f5ac59aa54420ede1b4eafa1ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c398d9eb79a6b5fcd1a6851596ab8913faf32fa
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738706"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560889"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Valutazione di espressioni (Visual Studio Debugging SDK)
 Durante la modalità di rottura, l'IDE deve valutare espressioni semplici che coinvolgono diverse variabili di programma. Per eseguire la valutazione, il motore di debug (DE) deve analizzare e valutare un'espressione immessa in una delle finestre dell'IDE.

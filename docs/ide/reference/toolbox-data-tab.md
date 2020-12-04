@@ -1,5 +1,7 @@
 ---
 title: Casella degli strumenti, scheda Dati
+description: Informazioni sugli oggetti dati disponibili nella scheda dati della finestra casella degli strumenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e79b80890925bdf4d6d191db759516b5545fc403
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78a697ae8d9f3f551c8bb734c28c1f53551b1f81
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590254"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561084"
 ---
 # <a name="toolbox-data-tab"></a>Casella degli strumenti, scheda Dati
 
@@ -44,5 +46,5 @@ Per passare direttamente alla pagina di riferimento di .NET per un componente, p
 - [Strumenti di set di dati in Visual Studio](../../data-tools/dataset-tools-in-visual-studio.md)
 - [Associare controlli ai dati in Visual Studio](../../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Associare controlli Windows Form ai dati in Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Modificare i dati nei set di dati](../../data-tools/edit-data-in-datasets.md)
-- [Convalida dei dati nei set di dati](../../data-tools/validate-data-in-datasets.md)
+- [Modifica di dati nei set di dati](../../data-tools/edit-data-in-datasets.md)
+- [Convalidare i dati nei set di dati](../../data-tools/validate-data-in-datasets.md)

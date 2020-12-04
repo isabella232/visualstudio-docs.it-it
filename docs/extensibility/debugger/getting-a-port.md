@@ -1,5 +1,7 @@
 ---
 title: Recupero di una porta | Microsoft Docs
+description: Informazioni su come Visual Studio fornisce una porta al motore di debug per registrare i nodi del programma con la porta e per soddisfare le richieste di informazioni sul processo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf4948e7cb2590136774eab76fbafec91dbfa40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd86d84ba4187df70d2aa02181249336c38dda41
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738639"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560048"
 ---
 # <a name="get-a-port"></a>Ottenere una porta
 Una porta rappresenta una connessione a un computer in cui sono in esecuzione i processi. Il computer potrebbe essere il computer locale o un computer remoto, che potrebbe eseguire un sistema operativo non basato su Windows. per ulteriori informazioni, vedere [porte](../../extensibility/debugger/ports.md) .

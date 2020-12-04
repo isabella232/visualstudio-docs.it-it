@@ -1,5 +1,7 @@
 ---
 title: Implementazione di GetMethodProperty | Microsoft Docs
+description: Informazioni sul modo in cui Visual Studio ottiene informazioni sul metodo corrente nel stack frame usando GetDebugProperty del motore di debug.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 252d09eee9c69ca75cb46d28dde807f2c500737f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6028bd92611e7d5dc8a7e05fcf98bc360de7e9ed
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738523"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559914"
 ---
 # <a name="implement-getmethodproperty"></a>Implementare GetMethodProperty
 > [!IMPORTANT]

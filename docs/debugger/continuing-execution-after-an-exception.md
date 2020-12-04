@@ -1,5 +1,7 @@
 ---
 title: Continuazione dell'esecuzione dopo un'eccezione | Microsoft Docs
+description: Scopri cosa accade quando il debugger interrompe l'esecuzione a causa di un'eccezione non gestita. Potrebbe essere possibile continuare l'esecuzione nello stesso thread.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e94867d845988b787247c32d32afd35af946972
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7475dff2618a1dfcce598f35b57dbe67d80d254
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350680"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559381"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuazione dell'esecuzione dopo un'eccezione
 Quando il debugger interrompe l'esecuzione a causa di un'eccezione, per impostazione predefinita viene visualizzato l' **Helper eccezioni**. Se l' **Helper eccezioni** è stato disabilitato nella finestra di dialogo **Opzioni** , sarà possibile visualizzare le informazioni sulle **eccezioni** (C# o Visual Basic) o la finestra di dialogo **eccezione** (C++).

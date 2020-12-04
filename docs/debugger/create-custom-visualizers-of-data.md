@@ -1,5 +1,7 @@
 ---
 title: Creare visualizzatori dati personalizzati | Microsoft Docs
+description: I visualizzatori del debugger di Visual Studio sono componenti che visualizzano i dati. Informazioni sui sei visualizzatori standard e su come è possibile scrivere o scaricare altri utenti.
+ms.custom: SEO-VS-2020
 ms.date: 05/27/2020
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e184507415810f64060b0d2b2e92a825d642d2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c39fae399cd735d09218699f10c1eaead8e40ee
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280876"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560681"
 ---
 # <a name="create-custom-data-visualizers"></a>Creare visualizzatori dati personalizzati
 
@@ -99,5 +101,5 @@ Nel codice del lato oggetto del debug:
 - [Procedura dettagliata: Scrivere un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Procedura: Installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)
 - [Procedura: Testare un visualizzatore ed eseguirne il debug](../debugger/how-to-test-and-debug-a-visualizer.md)
-- [Informazioni di riferimento sulle API del Visualizzatore](../debugger/visualizer-api-reference.md)
+- [Informazioni di riferimento sulle API del visualizzatore](../debugger/visualizer-api-reference.md)
 - [Visualizzare i dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

@@ -1,5 +1,7 @@
 ---
 title: Pagina Impostazioni, Creazione progetti
+description: Informazioni su come usare la pagina impostazioni di progettazione progetti per specificare le impostazioni dell'applicazione di un progetto.
+ms.custom: SEO-VS-2020
 ms.date: 06/14/2018
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b5aa077043b16c01a05e8730bcd2b42719edaf0
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566774"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560317"
 ---
 # <a name="settings-page-project-designer"></a>Pagina Impostazioni, Creazione progetti
 
@@ -29,7 +31,7 @@ Per accedere alla pagina **Impostazioni**, selezionare un nodo del progetto in *
 
 La barra intestazione nella parte superiore della pagina **Impostazioni** contiene diversi controlli:
 
-**Sincronizzare**
+**Sincronizza**
 
 **Sincronizza** ripristina le impostazioni con ambito utente usate dall'applicazione in fase di esecuzione o durante il debug ai valori predefiniti specificati in fase di progettazione. Per ripristinare i dati, rimuovere i file specifici dell'applicazione generati in fase di esecuzione dal disco e non dai dati del progetto.
 
@@ -65,7 +67,7 @@ Per altre informazioni sulle classi helper delle impostazioni, vedere [Gestire l
 
 La **griglia Impostazioni** consente di configurare le impostazioni dell'applicazione. La griglia include le colonne seguenti:
 
-**Name**
+**Nome**
 
 Immettere il nome dell'impostazione dell'applicazione in questo campo.
 
@@ -73,7 +75,7 @@ Immettere il nome dell'impostazione dell'applicazione in questo campo.
 
 Usare l'elenco a discesa per selezionare un tipo di impostazione. L'elenco include i tipi più utilizzati, ad esempio **String**, **(Stringa di connessione)** e **System.Drawing.Font**. È possibile scegliere un tipo diverso selezionando **Sfoglia** alla fine dell'elenco e quindi selezionando un tipo dalla finestra di dialogo **Seleziona un tipo**. Il tipo selezionato viene aggiunto ai tipi più utilizzati dell'elenco a discesa (solo per la soluzione corrente).
 
-**Scope**
+**Ambito**
 
 Selezionare **Applicazione** o **Utente**.
 

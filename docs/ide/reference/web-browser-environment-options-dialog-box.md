@@ -1,5 +1,7 @@
 ---
 title: Web Browser, Ambiente, finestra di dialogo Opzioni
+description: Informazioni su come utilizzare la pagina Web browser nella sezione ambiente per impostare le opzioni per la Web browser interna e per Internet Explorer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85592076b99cf54991d21e1249cf30c609413733
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 2898984896ef96f9e7767e0c56ad58c92be42f54
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808678"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560928"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>Finestra di dialogo Opzioni: \> Web browser ambiente
 

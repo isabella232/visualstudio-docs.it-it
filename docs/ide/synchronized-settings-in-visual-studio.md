@@ -1,6 +1,6 @@
 ---
 title: Sincronizzare le impostazioni
-description: Informazioni su come sincronizzare le impostazioni di Visual Studio in più computer eseguendo l'accesso allo stesso account di personalizzazione.
+description: Per informazioni su come sincronizzare le impostazioni di Visual Studio in più computer, accedere allo stesso account di personalizzazione.
 ms.custom: SEO-VS-2020
 ms.date: 06/18/2020
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5326264063d135582f2e9b8730ffcf16cba9e3d6
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 310e716f890dcc2185d6ebf6e60411934a1761f4
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479206"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560915"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizzare le impostazioni di Visual Studio in più computer
 
@@ -91,7 +91,7 @@ Alcune impostazioni, ad esempio il layout delle finestre degli strumenti, non ve
 
 Per reimpostare le impostazioni predefinite per tutte le impostazioni, accedere a Visual Studio, quindi selezionare **strumenti**  >  **Importa/Esporta impostazioni** per aprire **importazione/esportazione guidata delle impostazioni**. Selezionare **Reimposta tutte le impostazioni** e quindi seguire i passaggi rimanenti della procedura guidata.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Personalizzare l'IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Impostazioni dell'ambiente](../ide/environment-settings.md)

@@ -1,5 +1,7 @@
 ---
 title: Implementazione di un fornitore di porte | Microsoft Docs
+description: Informazioni sull'implementazione di un fornitore di porte, necessario durante il debug in un computer non DCOM o quando un nuovo dispositivo richiede il supporto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8218e372ad3aece922811bc20cfd7650f33296f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72963660e4f50a72cdbc04bab4833b397d15fc27
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738551"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560668"
 ---
 # <a name="implement-a-port-supplier"></a>Implementare un fornitore di porte
 Un fornitore di porte fornisce porte su richiesta a gestione debug sessione (SDM). Un fornitore di porte deve essere implementato durante il debug in un computer non DCOM o quando un nuovo dispositivo richiede il supporto. Ad esempio, per fornire il debug a un telefono cellulare, è possibile configurare un fornitore di porte che fornisce le porte, che si connettono al telefono cellulare (probabilmente tramite IR o una connessione di cella) ed enumera i processi e i programmi in esecuzione sul telefono.

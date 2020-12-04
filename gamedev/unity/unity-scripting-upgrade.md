@@ -10,12 +10,12 @@ ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.workload:
 - unity
-ms.openlocfilehash: 5b7e36d0f0c29e997b4b39506fb27d73ceb45146
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: c1b745e4a1da85324b2dc73e30bebb873e2d0720
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341721"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559810"
 ---
 # <a name="using-net-4x-in-unity"></a>Uso di .NET 4.x in Unity
 
@@ -58,9 +58,9 @@ Ad esempio, se si usa il profilo .NET 4.x e si vuole usare `HttpClient`, è nece
 
 ![Riferimento all'assembly mancante](media/vs/vstu-missing-reference.png)
 
-Visual Studio rigenera i file con estensione csproj e sln per i progetti Unity ogni volta che vengono aperti. Di conseguenza, non è possibile aggiungere riferimenti ad assembly direttamente in Visual Studio, perché andranno perduti alla riapertura del progetto. È invece necessario usare un file di testo speciale denominato **mcs.rsp** :
+Visual Studio rigenera i file con estensione csproj e sln per i progetti Unity ogni volta che vengono aperti. Di conseguenza, non è possibile aggiungere riferimenti ad assembly direttamente in Visual Studio, perché andranno perduti alla riapertura del progetto. È invece necessario utilizzare un file di testo speciale denominato **csc. rsp** :
 
-1. Creare un nuovo file di testo denominato **mcs.rsp** nella directory **Assets** radice del progetto Unity.
+1. Creare un nuovo file di testo denominato **csc. rsp** nella directory **assets** radice del progetto Unity.
 
 1. Nella prima riga nel file di testo vuoto immettere `-r:System.Net.Http.dll` e quindi salvare il file. È possibile sostituire "System.Net.Http.dll" con qualsiasi assembly incluso per cui potrebbe mancare un riferimento.
 

@@ -1,5 +1,7 @@
 ---
 title: Recupero delle proprietà locali | Microsoft Docs
+description: Informazioni su come Visual Studio USA EnumChildren per ottenere le proprietà locali con questi esempi per codice gestito e non gestito.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e084f28257ddede388468f36e1635e87c8f65961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17b6d104f88999ba7dd8e115a752a78853af6603
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738627"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560018"
 ---
 # <a name="get-local-properties"></a>Ottenere le proprietà locali
 > [!IMPORTANT]

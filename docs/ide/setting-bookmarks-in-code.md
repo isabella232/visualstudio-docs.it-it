@@ -1,5 +1,7 @@
 ---
 title: Impostare segnalibri nel codice
+description: Informazioni su come usare i segnalibri per contrassegnare le righe nel codice in modo da poter tornare rapidamente a una posizione specifica o spostarsi tra le posizioni.
+ms.custom: SEO-VS-2020
 ms.date: 02/23/2018
 ms.topic: conceptual
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c62ded0b94db9d39a197dde55fbc77434c5325d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ded48fcea0630bf07311cbb92ed2e258cdf4afb1
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595436"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560863"
 ---
 # <a name="set-bookmarks-in-code"></a>Impostare segnalibri nel codice
 
-È possibile usare i segnalibri per contrassegnare righe nel codice in modo da poter tornare rapidamente a una posizione specifica o spostarsi da una posizione all'altra. I comandi e le icone dei segnalibri sono disponibili in due posizioni:**View**la **finestra segnalibro** (  >  **finestra segnalibro**visualizzazione) e la barra degli strumenti Editor di testo.
+È possibile usare i segnalibri per contrassegnare righe nel codice in modo da poter tornare rapidamente a una posizione specifica o spostarsi da una posizione all'altra. I comandi e le icone dei segnalibri sono disponibili in due posizioni:**View** la **finestra segnalibro** (  >  **finestra segnalibro** visualizzazione) e la barra degli strumenti Editor di testo.
 
 ![Barra degli strumenti segnalibro](media/bookmark-toolbar.png)
 

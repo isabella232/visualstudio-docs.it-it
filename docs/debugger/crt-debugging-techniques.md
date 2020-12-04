@@ -1,5 +1,7 @@
 ---
 title: Tecniche di debug CRT | Microsoft Docs
+description: Esistono diverse tecniche che è possibile usare per eseguire il debug di un programma che usa la libreria di runtime del linguaggio C (CRT). Usare questo articolo e i relativi collegamenti per ottenere informazioni su tali tecniche.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,30 +21,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88cdc78fd739de412b4cf796d0ca7a42f9174e0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b71c91dbcc420fd4cc89a5e86fb976cca738bdcc
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62564035"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560525"
 ---
 # <a name="crt-debugging-techniques"></a>Tecniche di debug CRT
 Se si effettua il debug di un programma che utilizza la libreria di runtime del linguaggio C, possono essere utili le seguenti tecniche di debug.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Utilizzo della libreria di debug CRT](../debugger/crt-debug-library-use.md)
+ [Uso della libreria di debug CRT](../debugger/crt-debug-library-use.md)
 
  Viene descritto il supporto per il debug fornito dalla libreria di runtime del linguaggio C e vengono fornite le istruzioni per accedere agli strumenti.
 
- [Macro per la creazione di rapporti](../debugger/macros-for-reporting.md)
+ [Macro per la creazione di report](../debugger/macros-for-reporting.md)
 
  Vengono fornite informazioni sulle macro **_RPTn** e **_RPTFn**, definite in CRTDBG.H, che sostituiscono l'utilizzo di istruzioni `printf` per il debug.
 
- [Versioni di debug di funzioni di allocazione heap](../debugger/debug-versions-of-heap-allocation-functions.md)
+ [Versioni di debug delle funzioni di allocazione heap](../debugger/debug-versions-of-heap-allocation-functions.md)
 
  Vengono descritte le speciali versioni di debug delle funzioni di allocazione heap, ad esempio: i vantaggi delle chiamate in modo esplicito, come CRT mappa le chiamate, come evitare la conversione, registrazione dei tipi separati di allocazioni nei blocchi client e i risultati della mancata definizione di _DEBUG.
 
- [Informazioni dettagliate sull'heap di debug CRT](../debugger/crt-debug-heap-details.md)
+ [Dettagli heap di debug CRT](../debugger/crt-debug-heap-details.md)
 
  Vengono forniti collegamenti a gestione della memoria e heap di debug, tipi di blocchi sull'heap di debug, utilizzo dell'heap di debug, funzioni per la creazione di report sullo stato dell'heap e registrazione delle richieste di allocazione dell'heap.
 

@@ -1,5 +1,7 @@
 ---
 title: Implementazione di visualizzatori di tipi e visualizzatori personalizzati | Microsoft Docs
+description: Informazioni sull'implementazione di visualizzatori di tipi e visualizzatori personalizzati che consentono a un utente di visualizzare i dati in modo più significativo rispetto a un dump di numeri.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2ebbb5c8e27df4ae4baf2d9a9f1c3314188e2b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc3b1f2510742e2d0656727826e5b4aeae935b6f
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738503"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559901"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>Implementare visualizzatori di tipi e visualizzatori personalizzati
 > [!IMPORTANT]

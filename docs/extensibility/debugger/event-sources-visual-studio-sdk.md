@@ -1,5 +1,7 @@
 ---
 title: Origini eventi (Visual Studio SDK) | Microsoft Docs
+description: 'Informazioni sulle due origini degli eventi nel debug di Visual Studio: il motore di debug e gestione debug della sessione.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13842ab7b231d04bdbcafdf32534edc4eb2a9af6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ab0bc2bb61069e20276c471d1245d167715cc7a
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738779"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559667"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Origini eventi (Visual Studio SDK)
 Esistono due origini di eventi: il motore di debug (DE) e la gestione del debug della sessione (SDM). Gli eventi inviati da un DE hanno un motore non NULL, mentre gli eventi inviati da SDM hanno un motore NULL.

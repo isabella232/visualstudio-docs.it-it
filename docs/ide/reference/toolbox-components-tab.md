@@ -1,5 +1,7 @@
 ---
 title: Casella degli strumenti, Scheda Componenti
+description: Informazioni sui componenti disponibili nella scheda componenti della finestra casella degli strumenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40ba84712a343a071d6213dc9cd985727fc20ebf
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597308"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560941"
 ---
 # <a name="toolbox-components-tab"></a>Casella degli strumenti, scheda Componenti
 

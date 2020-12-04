@@ -1,5 +1,7 @@
 ---
 title: Implementazione di un analizzatore di espressioni | Microsoft Docs
+description: Informazioni sulla valutazione di un'espressione, che include il motore di debug, il provider di simboli, l'oggetto Binder e l'analizzatore di espressioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8c7c9a1130794dd4c28f212afd6cb3c030f5a1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28989178ab726a9b274f66e0a9296f2bf49ead4a
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738549"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559966"
 ---
 # <a name="implement-an-expression-evaluator"></a>Implementare un analizzatore di espressioni
 > [!IMPORTANT]
@@ -46,7 +48,7 @@ ms.locfileid: "80738549"
 
 - [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)
 
-  EE esegue [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` fornisce il meccanismo per descrivere il risultato della valutazione di un'espressione, ad esempio una variabile locale, una primitiva o un oggetto a Visual Studio, che visualizza quindi le informazioni appropriate nella finestra **variabili locali**, **espressioni di controllo**o nella finestra di **controllo immediato** .
+  EE esegue [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md). `IDebugProperty2` fornisce il meccanismo per descrivere il risultato della valutazione di un'espressione, ad esempio una variabile locale, una primitiva o un oggetto a Visual Studio, che visualizza quindi le informazioni appropriate nella finestra **variabili locali**, **espressioni di controllo** o nella finestra di **controllo immediato** .
 
   Il SP viene assegnato all'EE dal DE quando richiede informazioni. SP esegue le interfacce che descrivono gli indirizzi e i campi, ad esempio le interfacce seguenti e i relativi derivati:
 

@@ -1,5 +1,7 @@
 ---
 title: Gestione delle eccezioni (Visual Studio SDK) | Microsoft Docs
+description: Informazioni sul processo che si verifica quando vengono generate eccezioni. Questo articolo descrive tutti i passaggi necessari.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34b83c7181a7ba405e642d9911e2c53df3f4401d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af5dc1007a4624a24bef59dd822f6e9fe3861551
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738770"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559654"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>Gestione delle eccezioni (Visual Studio SDK)
 Di seguito viene descritto il processo che si verifica quando vengono generate eccezioni.

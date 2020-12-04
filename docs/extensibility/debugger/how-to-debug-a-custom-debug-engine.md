@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: eseguire il debug di un motore di debug personalizzato | Microsoft Docs'
+description: Informazioni sui passaggi che consentono di usare Visual Studio per eseguire il debug del motore di debug personalizzato o di un tipo di progetto personalizzato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a65e69655c4e8699bd267f1835ec0c49603014d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79ceea58fc78922cd07bb6635ed2f399e97dd1c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903310"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560811"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Procedura: eseguire il debug di un motore di debug personalizzato
 Un tipo di progetto avvia il motore di debug (DE) dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> metodo. Ciò significa che la DE viene avviata sotto il controllo dell'istanza di che [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Controlla il tipo di progetto. Tuttavia, l'istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] non è in grado di eseguire il debug di de. Di seguito sono riportati i passaggi che consentono di eseguire il debug della DE personalizzata.
@@ -31,7 +33,7 @@ Un tipo di progetto avvia il motore di debug (DE) dal <xref:Microsoft.VisualStud
 
 1. Avviare *msvsmon.exe*, Remote Debug Monitor.
 
-2. Scegliere **Opzioni** dal menu **strumenti** in *msvsmon.exe*per aprire la finestra di dialogo **Opzioni** .
+2. Scegliere **Opzioni** dal menu **strumenti** in *msvsmon.exe* per aprire la finestra di dialogo **Opzioni** .
 
 3. Selezionare l'opzione "Nessuna autenticazione" e fare clic su **OK**.
 

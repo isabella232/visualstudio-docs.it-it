@@ -1,5 +1,7 @@
 ---
 title: Debug e processo di hosting | Microsoft Docs
+description: Per le versioni di Visual Studio precedenti alla 2017, usare il processo di hosting per migliorare le prestazioni del debugger e per accedere ad alcune funzionalità del debugger.
+ms.custom: SEO-VS-2020
 ms.date: 08/01/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f77df2eae643b658e915662e0f50f6a376141d27
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b6f2650da6a83d936869d01fdc661bc9ddf8fc0
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188462"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560694"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Debug e processo di hosting
 Il processo di hosting di Visual Studio migliora le prestazioni del debugger e offre ulteriori funzionalità, ad esempio il debug in contesti di attendibilità parziale e la valutazione delle espressioni per la fase di progettazione. Se necessario, è possibile disabilitare il processo di hosting. Nelle sezioni riportate di seguito vengono descritte alcune differenze tra l'esecuzione del debug con e senza processo di hosting.

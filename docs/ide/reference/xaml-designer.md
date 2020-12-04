@@ -1,5 +1,7 @@
 ---
 title: Pagina delle opzioni della finestra di progettazione XAML
+description: Informazioni su come usare la pagina generale nella sezione finestra di progettazione XAML per specificare la modalità di formattazione di elementi e attributi nei documenti XAML.
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2017
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 45c7a5ba87c006332b601b93143cbf8acfda16b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0955a6644e8f1dc1d42a1b22b15399a6d1ca452d
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547303"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560980"
 ---
 # <a name="xaml-designer-options-page"></a>Pagina delle opzioni della finestra di progettazione XAML
 
@@ -34,7 +36,7 @@ Le impostazioni seguenti sono valide solo se è abilitata la finestra di progett
 
 Usare questa impostazione per verificare se la visualizzazione Progettazione appare quando vengono caricati documenti XAML.
 
-|Name|Descrizione|
+|Nome|Descrizione|
 |-|-|
 |**Visualizzazione origine**|Specifica se viene visualizzata solo l'origine XAML nella visualizzazione XAML. L'impostazione è utile quando si caricano documenti di grandi dimensioni.|
 |**Visualizzazione progettazione**|Specifica se deve apparire solo una finestra di progettazione XAML visiva nella visualizzazione XAML.|
@@ -44,17 +46,17 @@ Usare questa impostazione per verificare se la visualizzazione Progettazione app
 
 Usare questa impostazione per stabilire come e quando viene visualizzata la finestra di progettazione XAML quando si modifica un documento XAML. Queste impostazioni si applicano solo quando **Visualizzazione documento predefinita** è impostata su **Doppia visualizzazione**.
 
-|Name|Descrizione|
+|Nome|Descrizione|
 |-|-|
 |**Vertical**|L'origine XAML viene visualizzata sul lato sinistro della visualizzazione XAML e la finestra di progettazione XAML viene visualizzata sull'altro lato.|
-|**Orizzontale**|La finestra di progettazione XAML viene visualizzata nella parte superiore della visualizzazione XAML e l'origine XAML viene visualizzata sotto di essa.|
+|**Ridimensionamento orizzontale**|La finestra di progettazione XAML viene visualizzata nella parte superiore della visualizzazione XAML e l'origine XAML viene visualizzata sotto di essa.|
 |**Default**|Il documento XAML usa l'orientamento divisione consigliato per la piattaforma di destinazione dal progetto del documento. Per la maggior parte delle piattaforme equivale a **Orizzontale**.|
 
 ## <a name="zoom-by-using"></a>Zoom mediante
 
 Usare questa impostazione per determinare il funzionamento dello zoom quando si modifica un documento XAML.
 
-|Name|Descrizione|
+|Nome|Descrizione|
 |-|-|
 |**Rotellina del mouse**|Fare zoom avanti nella finestra di progettazione XAML usando lo scorrimento della rotellina del mouse.|
 |**CTRL + rotellina del mouse**|Eseguire lo zoom avanti del finestra di progettazione XAML premendo il tasto **CTRL** mentre si scorre la rotellina del mouse.|
@@ -62,7 +64,7 @@ Usare questa impostazione per determinare il funzionamento dello zoom quando si 
 
 Queste impostazioni determinano il comportamento della finestra di progettazione quando si modifica un documento XAML.
 
-|Name|Descrizione|
+|Nome|Descrizione|
 |-|-|
 |**Assegna automaticamente un nome agli elementi interattivi durante la creazione**|Specifica se viene indicato un nome predefinito per un nuovo elemento interattivo quando se ne aggiunge uno alla finestra di progettazione.|
 |**Inserisci automaticamente le proprietà del layout durante la creazione degli elementi**|Specifica se vengono indicate le proprietà del layout per un nuovo elemento quando se ne aggiunge uno alla finestra di progettazione. Le proprietà di layout sono quelle che influenzano il layout di un controllo, ad esempio, Margin e VerticalAlignment. L'esempio XAML seguente mostra come viene creato un controllo Button, con e senza questa opzione selezionata:<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|
@@ -73,7 +75,7 @@ Queste impostazioni determinano il comportamento della finestra di progettazione
 
 Usare queste opzioni per determinare le impostazioni quando si modificano i file XAML con Blend.
 
-|Name|Descrizione|
+|Nome|Descrizione|
 |-|-|
 |**Zoom mediante**|Fare zoom avanti nella finestra di progettazione XAML scorrendo la rotellina del mouse o premendo il tasto **CTRL** o **ALT** mentre si fa scorrere la rotellina del mouse.|
 |**Digitare unità**|Specifica se le misurazioni nella finestra di progettazione sono basate su punti o pixel. Poiché le app di Windows universale non supportano i punti, le unità vengono automaticamente convertite in pixel se **Punti** è selezionata.|
@@ -84,7 +86,7 @@ Usare queste impostazioni per determinare il comportamento della finestra di pro
 
 ### <a name="snapping"></a>Snapping
 
-|Name|Descrizione|
+|Nome|Descrizione|
 |-|-|
 |**Mostra griglia di allineamento**|Quando questa opzione è selezionata, le linee della griglia vengono visualizzate nella finestra di progettazione per consentire l'allineamento dei controlli. I controlli aggiunti alla finestra di progettazione vengono bloccati sulle linee della griglia se l'opzione **Blocca sulla griglia** è selezionata.|
 |**Blocca sulla griglia**|Quando i controlli vengono aggiunti o spostati nella finestra di progettazione vengono bloccati sulla griglia.|
@@ -101,7 +103,7 @@ Usare questa impostazione per determinare se viene visualizzato un avviso quando
 
 Usare queste impostazioni per determinare se viene eseguito il rendering degli effetti quando si modificano i file XAML nella finestra di progettazione XAML usando Blend.
 
-|Name|Descrizione|
+|Nome|Descrizione|
 |-|-|
 |**Rendering effetti**|Specifica se viene eseguito il rendering degli effetti quando si modificano i file XAML nella finestra di progettazione XAML usando Blend.|
 |**Soglia zoom**|Specifica la percentuale di zoom con cui viene eseguito il rendering degli effetti quando la casella di controllo **Rendering effetti** è selezionata. Se si ingrandisce oltre questa impostazione, non viene più eseguito il rendering degli effetti nella finestra di progettazione XAML.|

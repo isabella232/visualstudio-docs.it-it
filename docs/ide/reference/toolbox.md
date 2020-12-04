@@ -1,5 +1,7 @@
 ---
 title: Finestra della casella degli strumenti
+description: Informazioni sulla finestra casella degli strumenti e sulla visualizzazione dei controlli che è possibile aggiungere ai progetti di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2020
 ms.topic: reference
 f1_keywords:
@@ -13,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9807762a4573cdbc68a4af26bf9d73b46827c7af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 905288d4a580f5633196273666fbea3954d1767c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285335"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560278"
 ---
 # <a name="toolbox"></a>Casella degli strumenti
 
 Nella finestra **Casella degli strumenti** sono visualizzati i controlli che è possibile aggiungere ai progetti di Visual Studio. Per aprire la **casella degli strumenti**, scegliere **Visualizza**  >  **casella degli strumenti** dalla barra dei menu o premere **CTRL** + **ALT** + **X**.
 
-![Finestra della casella degli strumenti](media/vs-2019/toolbox.png "Screenshot della finestra casella degli strumenti")
+![Screenshot della finestra della casella degli strumenti che mostra le opzioni nella sezione contenitori.](media/vs-2019/toolbox.png "Screenshot della finestra casella degli strumenti")
 
 È possibile trascinare diversi controlli sulla superficie della finestra di progettazione in uso nonché ridimensionare e posizionare tali controlli.
 
@@ -37,7 +39,7 @@ La versione di.NET di destinazione del progetto influisce sul set di controlli v
 
 ::: moniker range="vs-2019"
 
-![Finestra della casella degli strumenti](media/vs-2019/toolbox-change-dotnet-version.png "Screenshot della finestra di dialogo in cui è possibile modificare la versione di .NET")
+![Screenshot della finestra di dialogo dell'applicazione che mostra le opzioni nell'elenco a discesa Framework di destinazione.](media/vs-2019/toolbox-change-dotnet-version.png "Screenshot della finestra di dialogo in cui è possibile modificare la versione di .NET")
 
 ::: moniker-end
 

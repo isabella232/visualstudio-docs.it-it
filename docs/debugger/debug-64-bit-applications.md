@@ -1,5 +1,7 @@
 ---
 title: Eseguire il debug di applicazioni a 64 bit | Microsoft Docs
+description: Informazioni su come eseguire il debug di un'applicazione a 64 bit con Visual Studio. Sono disponibili suggerimenti per la risoluzione dei ritardi di debug imprevisti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cc84f690962cd83f45245758f88f7fd8261e500
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29deb50bb57f018d3031ed1065145b6a39abab67
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386251"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560447"
 ---
 # <a name="debug-64-bit-applications"></a>Eseguire il debug di applicazioni a 64 bit
 È possibile eseguire il debug di un'applicazione a 64 bit in esecuzione nel computer locale o in un computer remoto.

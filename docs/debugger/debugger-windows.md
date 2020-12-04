@@ -1,6 +1,7 @@
 ---
 title: Esaminare i dati utilizzando le finestre del debugger | Microsoft Docs
-ms.custom: seodec18
+description: Sono disponibili molti tipi di finestre del debugger che forniscono informazioni. Questo articolo fornisce un elenco dei tipi. Per ogni è disponibile un collegamento a ulteriori informazioni.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 04/25/2018
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c27d2b4436fc5defedcda44c4f7840760018ade
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8caa5f11f4f0501d8b56c308d5336f10d518062
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188546"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560733"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Esaminare i dati usando le finestre del debugger in Visual Studio
 
@@ -25,7 +26,7 @@ ms.locfileid: "73188546"
 |Punti di interruzione|CTRL+ALT+B|[Usare i punti di interruzione](../debugger/using-breakpoints.md)|
 |Impostazioni eccezioni|CTRL+ALT+E|[Gestire le eccezioni con il debugger](../debugger/managing-exceptions-with-the-debugger.md)|
 |Output|CTRL+ALT+O|[Finestra di output](../ide/reference/output-window.md)|
-|Espressioni di controllo|CTRL+ALT+W, (1, 2, 3, 4)|[Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)|
+|Video|CTRL+ALT+W, (1, 2, 3, 4)|[Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)|
 |Controllo immediato|MAIUSC+F9|[Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)|
 |Auto|CTRL+ALT+V, A|[Finestre Auto e Variabili locali](../debugger/autos-and-locals-windows.md)|
 |Variabili locali|CTRL+ALT+V, L|[Finestre Auto e Variabili locali](../debugger/autos-and-locals-windows.md)|
@@ -33,7 +34,7 @@ ms.locfileid: "73188546"
 |Immediato|CTRL+ALT+I|[Finestra di controllo immediato](../ide/reference/immediate-window.md)|
 |Stack in parallelo|CTRL+MAIUSC+D, S|[Utilizzo della finestra Stack in parallelo](../debugger/using-the-parallel-stacks-window.md)|
 |Espressione di controllo in parallelo|CTRL+MAIUSC+D, (1, 2, 3, 4)|[Inizia a eseguire il debug di applicazioni multithread](../debugger/get-started-debugging-multithreaded-apps.md)|
-|Threads|CTRL+ALT+H|[Eseguire il debug usando la finestra thread](../debugger/how-to-use-the-threads-window.md)|
+|Thread|CTRL+ALT+H|[Eseguire il debug usando la finestra thread](../debugger/how-to-use-the-threads-window.md)|
 |Moduli|CTRL+ALT+U|[Procedura: utilizzare la finestra Moduli](../debugger/how-to-use-the-modules-window.md)|
 |Thread GPU|-|[Procedura: usare la finestra thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Attività|CTRL+MAIUSC+D, K|[Utilizzo della finestra Attività](../debugger/using-the-tasks-window.md)|

@@ -1,6 +1,6 @@
 ---
 title: Risolvere i problemi relativi ai riferimenti interrotti
-description: Informazioni su come risolvere i problemi relativi ai riferimenti interrotti che potrebbero essere causati da elementi diversi dalle applicazioni che non sono in grado di trovare il componente a cui si fa riferimento.
+description: Informazioni su come risolvere i problemi relativi ai riferimenti interrotti che potrebbero essere causati da elementi diversi dall'impossibilità di trovare il componente a cui si fa riferimento.
 ms.custom: SEO-VS-2020
 ms.date: 03/21/2017
 ms.topic: troubleshooting
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 627724410ac9e0829faeb23cb5b0eef01b153293
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 6c47f8c399c89df9bf91879abc7cf926eac925bc
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479173"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560239"
 ---
 # <a name="troubleshoot-broken-references"></a>Risolvere i problemi relativi ai riferimenti interrotti
 
@@ -90,6 +90,6 @@ I file possono risultare inaccessibili per molte cause, ad esempio una connessio
 
 Se un utente ha aggiunto un riferimento a un componente COM e un altro utente tenta di eseguire il codice in un computer nel quale tale componente non è installato, verrà generato un errore relativo all'interruzione del riferimento, che sarà possibile correggere installando il componente nel computer del secondo utente. Per ulteriori informazioni sull'utilizzo dei riferimenti ai componenti COM nei progetti, vedere [interoperabilità com nelle applicazioni .NET Framework](/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Riferimenti (pagina), Creazione progetti (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)

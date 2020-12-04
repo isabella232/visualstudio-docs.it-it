@@ -1,5 +1,7 @@
 ---
 title: Pagina Servizi, Progettazione progetti
+description: Informazioni su come usare la pagina servizi di creazione progetti per abilitare e configurare i servizi delle applicazioni client per il progetto.
+ms.custom: SEO-VS-2020
 ms.date: 01/18/2018
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c286dbd632e09a9a9c2c2b62ac2002f2e48f283
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593564"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560798"
 ---
 # <a name="services-page-project-designer"></a>Pagina Servizi, Progettazione progetti
 
@@ -33,7 +35,7 @@ Per accedere alla pagina **Servizi**, selezionare un nodo di progetto in **Esplo
 
 ## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
- **Configurazione**
+ **Configuration**
 
 Questo controllo non è modificabile in questa pagina. Per una descrizione di questo controllo, vedere [Compilazione (pagina), Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) o [Pagina Compilazione, Creazione progetti (C#)](../../ide/reference/build-page-project-designer-csharp.md).
 

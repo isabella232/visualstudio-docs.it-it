@@ -1,5 +1,7 @@
 ---
 title: Uso della libreria di debug CRT | Microsoft Docs
+description: Informazioni sul modo in cui la libreria di runtime C (CRT) supporta le attività di debug e cosa è necessario fare per usare le librerie di debug CRT.
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2019
 ms.topic: conceptual
 f1_keywords:
@@ -28,15 +30,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20aeee220bec600c2232286d18600b04201ad03b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d145ccd8764e488a5d1270985050b29bcd8987d
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745615"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560564"
 ---
 # <a name="crt-debug-library-use"></a>Utilizzo della libreria di debug CRT
-La libreria di runtime del linguaggio C offre un ampio supporto per il debug. Per usare una delle librerie di debug CRT, è necessario collegare con [/debug](/cpp/build/reference/debug-generate-debug-info) e compilare con **/MDD**, **/MTD**o **/ldd crea un**.
+La libreria di runtime del linguaggio C offre un ampio supporto per il debug. Per usare una delle librerie di debug CRT, è necessario collegare con [/debug](/cpp/build/reference/debug-generate-debug-info) e compilare con **/MDD**, **/MTD** o **/ldd crea un**.
 
 ## <a name="remarks"></a>Osservazioni
  Le definizioni e le macro principali del debug CRT sono disponibili nel file di intestazione CRTDBG.h.
@@ -48,4 +50,4 @@ La libreria di runtime del linguaggio C offre un ampio supporto per il debug. Pe
 ## <a name="see-also"></a>Vedere anche
 
 - [Tecniche di debug CRT](../debugger/crt-debugging-techniques.md)
-- [/MD,/MT,/LD (utilizzare la libreria di Runtime)](/cpp/build/reference/md-mt-ld-use-run-time-library)
+- [/MD,/MT,/LD (USA libreria Run-Time)](/cpp/build/reference/md-mt-ld-use-run-time-library)
