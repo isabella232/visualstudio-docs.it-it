@@ -1,5 +1,7 @@
 ---
 title: Controllo programma | Microsoft Docs
+description: Informazioni sulle routine nel debug di Visual Studio che si verificano a livello di programma, ad esempio l'esecuzione, l'esecuzione di istruzioni, il proseguimento e la sospensione e la ripresa dei thread.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e77e233050c5ce10aef5053f82c8d26cb984b85
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 640b09620022d17fd6b7c8758f1dec4f9a3936eb
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738234"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606528"
 ---
 # <a name="program-control"></a>Controllo del programma
 Nel debug di Visual Studio, tutte le routine di esecuzione e continuazione seguenti si verificano a livello di programma:

@@ -1,5 +1,7 @@
 ---
 title: Modalità operative | Microsoft Docs
+description: Informazioni sulle tre modalità in cui l'IDE può funzionare, ovvero la modalità di progettazione, la modalità di esecuzione e la modalità di interruzioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027152b2b2fc18b509a687220e5d963ea1b7e721
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cabf32dcbe8b4d2e925bcfd48635063ecd0a5b74
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738288"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606606"
 ---
 # <a name="operational-modes"></a>Modalità operative
 Sono disponibili tre modalità in cui l'IDE può funzionare, come indicato di seguito:

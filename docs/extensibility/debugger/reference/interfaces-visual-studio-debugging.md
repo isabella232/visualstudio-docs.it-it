@@ -1,5 +1,7 @@
 ---
 title: Interfacce (debug di Visual Studio) | Microsoft Docs
+description: Usare queste risorse per conoscere le interfacce principali, le interfacce di valutazione delle espressioni e le interfacce del provider di simboli nel debug di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d31eb6900841dee9d2675e87bac573b432ff2acb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 508cf5d324a62b0ada056fe0c2495ff97334b8cf
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715073"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606562"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Interfacce (debug di Visual Studio)
 I metodi vengono elencati in ordine alfabetico sotto ogni interfaccia nel sommario e nella pagina di interfaccia in ordine vtable.

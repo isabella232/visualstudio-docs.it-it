@@ -1,5 +1,7 @@
 ---
 title: Helper SDK per il debug | Microsoft Docs
+description: Informazioni sulle funzioni e sulle dichiarazioni che sono funzioni helper globali per l'implementazione di motori di debug, analizzatori di espressioni e provider di simboli in C++.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9edb7c508fdea6736a71c0f70c0d2ff305d4a399
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32d0dd7dbeee70b8c4eb566a07cf9a44d40d4f49
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713646"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606541"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Helper SDK per il debug
 Queste funzioni e dichiarazioni sono funzioni helper globali per l'implementazione di motori di debug, analizzatori di espressioni e provider di simboli in C++.
@@ -269,7 +271,7 @@ HRESULT EnumMetricSections(
 |*[valore metrica]*|Valore assegnato alla metrica. Il tipo che il valore deve avere (stringa, numero e così via) dipende dalla metrica.|
 
 > [!NOTE]
-> Tutti i GUID vengono archiviati nel formato `{GUID}` . Ad esempio, `{123D150B-FA18-461C-B218-45B3E4589F9B}`
+> Tutti i GUID vengono archiviati nel formato `{GUID}` . Ad esempio: `{123D150B-FA18-461C-B218-45B3E4589F9B}`.
 
 ### <a name="debug-engines"></a>Motori di debug
  Di seguito è riportata l'organizzazione delle metriche dei motori di debug nel registro di sistema. `Engine` è il nome del tipo di metrica per un motore di debug e corrisponde a *[tipo di metrica]* nel sottoalbero del registro di sistema precedente.
@@ -414,7 +416,7 @@ HRESULT EnumMetricSections(
 |Segnaposto|Descrizione|
 |-----------------|-----------------|
 |*[GUID del motore di debug]*|GUID di un motore di debug che supporta le eccezioni.|
-|*[tipi di eccezione]*|Titolo generale per la sottochiave che identifica la classe di eccezioni che è possibile gestire. I nomi tipici sono **eccezioni C++**, **eccezioni Win32**, **eccezioni Common Language Runtime**e **controlli run-time nativi**. Questi nomi vengono usati anche per identificare una particolare classe di eccezione per l'utente.|
+|*[tipi di eccezione]*|Titolo generale per la sottochiave che identifica la classe di eccezioni che è possibile gestire. I nomi tipici sono **eccezioni C++**, **eccezioni Win32**, **eccezioni Common Language Runtime** e **controlli Run-Time nativi**. Questi nomi vengono usati anche per identificare una particolare classe di eccezione per l'utente.|
 |*eccezione*|Nome di un'eccezione, ad esempio **_com_error** o break di **controllo**. Questi nomi vengono usati anche per identificare un'eccezione specifica all'utente.|
 
 ## <a name="requirements"></a>Requisiti

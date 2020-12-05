@@ -1,5 +1,7 @@
 ---
 title: Avvio di un programma | Microsoft Docs
+description: Informazioni sulle serie di eventi che si verificano quando si esegue il debug di un programma con F5 per eseguire il debugger dall'IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf638e0c96c7df1de2650260427a972a07efce23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dce13e49eeadf4dc02fec07707bebcfe164ed9c
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738473"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606697"
 ---
 # <a name="launch-a-program"></a>Avviare un programma
 Gli utenti che desiderano eseguire il debug di un programma possono premere **F5** per eseguire il debugger dall'IDE. Viene avviata una serie di eventi che in definitiva comportano la connessione dell'IDE a un motore di debug (DE), che a sua volta è connesso o collegato al programma, come indicato di seguito:

@@ -1,5 +1,7 @@
 ---
 title: Avvio del debugger | Microsoft Docs
+description: Informazioni sulla sequenza di metodi ed eventi con gli attributi appropriati necessari per avviare il debugger.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +13,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ceb2f484449d1b3f8474a6586d298b057875b342
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40b91ae695a5e78745c01c5ac974411ac924f8f0
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738451"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606658"
 ---
 # <a name="launch-the-debugger"></a>Avviare il debugger
 Per avviare il debugger è necessario inviare la sequenza corretta di metodi ed eventi con i rispettivi attributi appropriati.
 
 ## <a name="sequences-of-methods-and-events"></a>Sequenze di metodi ed eventi
 
-1. Gestione debug sessione (SDM) viene chiamato scegliendo **Avvia**dal menu **debug** . Per ulteriori informazioni, vedere [avviare un programma](../../extensibility/debugger/launching-a-program.md).
+1. Gestione debug sessione (SDM) viene chiamato scegliendo **Avvia** dal menu **debug** . Per ulteriori informazioni, vedere [avviare un programma](../../extensibility/debugger/launching-a-program.md).
 
 2. SDM chiama il metodo [alconnessione](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) .
 
