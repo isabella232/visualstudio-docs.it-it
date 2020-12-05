@@ -1,5 +1,7 @@
 ---
 title: Generare un'azione rapida decostruttore
+description: Informazioni su come usare il menu azioni rapide e refactoring per generare immediatamente lo stub del metodo per un nuovo costruttore.
+ms.custom: SEO-VS-2020
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a3a89d15d05b44575fede98d3043d706b24c1d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff2ac7682eff1c3da0597a95945a6a0b016d9213
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "65531889"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617253"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Generare un decostruttore in Visual Studio
 
@@ -40,7 +42,7 @@ Questa generazione di codice si applica a:
       - Con il cursore nella dichiarazione, selezionare CTRL+. per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Selezionare l'icona a forma di ![cacciavite](media/screwdriver.png) che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga vuota nella classe.
+      - Selezionare l' :::image type="icon" source="media/screwdriver.png"::: icona visualizzata nel margine sinistro se il cursore di testo si trova già nella riga vuota della classe.
 
       ![Correzione del codice di generazione del decostruttore](media/deconstruct-codefix.png)
 

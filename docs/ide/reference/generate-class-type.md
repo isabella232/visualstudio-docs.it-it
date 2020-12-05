@@ -1,5 +1,7 @@
 ---
 title: Generare una classe o un tipo
+description: Informazioni su come usare il menu azioni rapide e refactoring per generare immediatamente il codice per una classe o un tipo.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe38cacf9f33acfac6b1634b6be6a8a3e45de820
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595631"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617539"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generare una classe o un tipo in Visual Studio
 
@@ -74,8 +76,8 @@ Questa generazione di codice si applica a:
    --- | ---
    Access | Impostare il tipo per l'accesso *Predefinito*, *Interno* o *Pubblico*.
    Tipo | Può essere impostato come *classe* o *struct*.
-   Name | Questo non può essere modificato e sarà il nome già digitato.
-   Progetto | Se sono presenti più progetti nella soluzione, è possibile scegliere il progetto in cui aggiungere la classe/lo struct.
+   Nome | Questo non può essere modificato e sarà il nome già digitato.
+   Project | Se sono presenti più progetti nella soluzione, è possibile scegliere il progetto in cui aggiungere la classe/lo struct.
    File Name | È possibile creare un nuovo file oppure è possibile aggiungere il tipo a un file esistente.
 
 Vengono creati la classe o lo struct. Per C# viene creato anche un costruttore.

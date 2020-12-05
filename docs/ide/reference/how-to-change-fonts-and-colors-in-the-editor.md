@@ -1,5 +1,7 @@
 ---
 title: Modificare i tipi di carattere e i colori dell'editor
+description: Informazioni su come modificare il tipo di carattere predefinito, modificare le dimensioni del carattere e modificare i colori di primo piano e di sfondo per vari elementi di visualizzazione di testo nell'editor di codice.
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa56a7ab8b3147cc3e8fbb784211d9a34536189d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ad32d814b67cae9a9a0a538d6c131aecba9c0b8
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770429"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617123"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Procedura: modificare i tipi di carattere e i colori per l'editor in Visual Studio
 
@@ -36,7 +38,7 @@ ms.locfileid: "85770429"
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>Modificare il tipo di carattere, le dimensioni e i colori predefiniti
 
-1. Scegliere **Opzioni** dal menu **Strumenti**. In **ambiente**selezionare **tipi di carattere e colori**.
+1. Scegliere **Opzioni** dal menu **Strumenti**. In **ambiente** selezionare **tipi di carattere e colori**.
 
 1. In **Mostra impostazioni per** selezionare **Editor di testo**.
 

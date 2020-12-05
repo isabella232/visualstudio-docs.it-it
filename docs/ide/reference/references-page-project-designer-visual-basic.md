@@ -1,5 +1,7 @@
 ---
 title: Riferimenti (pagina), Creazione progetti (Visual Basic)
+description: Informazioni su come usare la pagina riferimenti di progettazione progetti per gestire i riferimenti del progetto, i riferimenti Web e gli spazi dei nomi importati.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cc06bd51d66b49991e12db8bb03a63a5a742fe1
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565604"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616668"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Riferimenti (pagina), Creazione progetti (Visual Basic)
 

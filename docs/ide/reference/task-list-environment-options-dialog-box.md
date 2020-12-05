@@ -1,5 +1,7 @@
 ---
 title: Elenco attività, Ambiente, finestra di dialogo Opzioni
+description: Informazioni su come utilizzare la pagina Elenco attività nella sezione ambiente per aggiungere, eliminare e modificare i token di commento che generano Elenco attività promemoria.
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e28b3b9c3fe4d6e89228dc18ba8b98aa5e0d2e76
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b7b29c477bf046cfd47db9e39cb57360d999dee
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80233120"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616291"
 ---
 # <a name="options-dialog-box-environment--task-list"></a>Finestra di dialogo Opzioni: ambiente \> elenco attività
 

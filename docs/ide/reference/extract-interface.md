@@ -1,5 +1,7 @@
 ---
 title: Refactoring con estrazione di un'interfaccia
+description: Informazioni su come usare il menu azioni rapide e refactoring per creare un'interfaccia usando i membri esistenti di una classe, uno struct o un'interfaccia.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5055f50d07cf9362c9be1bdc8135e31240a7cc66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13e9b684c81abf491b5836c96190c6a89bdc0643
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595670"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617396"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refactoring con estrazione di un'interfaccia
 

@@ -1,5 +1,7 @@
 ---
 title: Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
+description: Informazioni su come usare la pagina tipi di carattere e colori nella sezione ambiente per definire una combinazione di tipi di carattere e colori personalizzati per vari elementi dell'interfaccia utente nell'IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,16 +27,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbbd42b0e4eae6d124fc59d68592155bf2c9bd49
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595618"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617526"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
 
-La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). Per accedere a questa finestra di dialogo è possibile fare clic su **strumenti**  >  **Opzioni**e quindi selezionare **Environment**  >  **tipi di carattere e colori**dell'ambiente.
+La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). Per accedere a questa finestra di dialogo è possibile fare clic su **strumenti**  >  **Opzioni** e quindi selezionare **Environment**  >  **tipi di carattere e colori** dell'ambiente.
 
 Le modifiche apportate alla combinazione colori non diventano effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche ai colori aprendo un'altra istanza di Visual Studio e riproducendo le condizioni in cui si prevede vengano applicate le modifiche apportate.
 
@@ -86,7 +88,7 @@ Reimposta i valori relativi al tipo di carattere e al colore dell'elemento elenc
 
 Consente di visualizzare l'elenco di tutti i tipi di carattere installati nel sistema. La prima volta che viene visualizzato il menu a discesa, nel campo **Mostra impostazioni per** viene evidenziato il tipo di carattere corrente per l'elemento selezionato. I tipi di carattere a larghezza fissa, più facili da allineare nell'editor, sono visualizzati in grassetto.
 
-**Dimensione**
+**Size**
 
 Elenca le dimensioni in punti disponibili per il tipo di carattere evidenziato. La modifica della dimensione del carattere influisce su tutti gli **Elementi visualizzati** disponibili per la selezione in **Mostra impostazioni per**.
 
@@ -191,7 +193,7 @@ Alcuni degli elementi visualizzati includono:
 |**Tipi utente (interfacce)**|Colore del tipo per le interfacce.|
 |**Tipi utente (tipi di valore)**|Colore del tipo per i tipi valore come struct in C#.|
 |**Indicatore di sola lettura di Visual Basic**|Indicatore specifico di Visual Basic usato per designare EnC, ad esempio aree di eccezione, una definizione di metodo e frame di chiamata non foglia.|
-|**Warning**|Avvisi del compilatore.|
+|**Avviso**|Avvisi del compilatore.|
 |**Percorso righe di avviso**|Usato per le righe di avviso di analisi statica.|
 |**Attributo XML**|Nomi di attributi.|
 |**Virgolette per l'attributo XML**|Virgolette per gli attributi XML.|

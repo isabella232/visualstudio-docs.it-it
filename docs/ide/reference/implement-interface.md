@@ -1,5 +1,7 @@
 ---
 title: Implementare un'interfaccia
+description: Informazioni su come usare il menu azioni rapide e refactoring per generare immediatamente il codice necessario per implementare un'interfaccia.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d420bd0d42e89476696966f7eda94a19893fc23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0484ed5f63cd4651669a8e3c1f94f5aad96fcc03
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595553"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617110"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>Implementare un'interfaccia in Visual Studio
 

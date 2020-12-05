@@ -1,5 +1,7 @@
 ---
 title: Refactoring con ridenominazione
+description: Informazioni su come usare la funzionalità di ridenominazione del refactoring per rinominare gli identificatori per i simboli del codice, ad esempio campi, variabili locali, metodi, spazi dei nomi, proprietà e tipi.
+ms.custom: SEO-VS-2020
 ms.date: 05/04/2020
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8d5b3d32b23b336dc86a92c33bcb97d02312f2dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43a6e93815732c4f9d2ec7f29d6d6bef4c1f3451
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84182957"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616720"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactoring con ridenominazione di un simbolo di codice
 
@@ -68,7 +70,7 @@ Questo refactoring si applica a:
 
 4. Quando si è soddisfatti della modifica, scegliere il pulsante **Applica** o premere **INVIO**. Verrà eseguito il commit delle modifiche.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 - A partire da Visual Studio 2019 versione 16,3, quando si rinomina un tipo che corrisponde al nome del file in, viene visualizzata una casella di controllo che consente di rinominare il file nello stesso momento. Questa opzione viene visualizzata quando si rinomina una classe, un'interfaccia o un'enumerazione. Questa opzione non è supportata per i tipi parziali con più definizioni.
 
@@ -78,7 +80,7 @@ Questo refactoring si applica a:
 
    ![Conflitto di ridenominazione](media/rename-conflict-cs.png)
 
-- Un altro modo per rinominare un simbolo consiste nel modificare il nome nell'editor. Quindi, con il cursore nel nome del simbolo, premere **CTRL** + **.** in alternativa, è sufficiente espandere il menu icona lampadina visualizzato e **scegliere \<old name> Rinomina \<new name> a **.
+- Un altro modo per rinominare un simbolo consiste nel modificare il nome nell'editor. Quindi, con il cursore nel nome del simbolo, premere **CTRL** + **.** in alternativa, è sufficiente espandere il menu icona lampadina visualizzato e **scegliere \<old name> Rinomina \<new name> a**.
 
    ![Rinominare nell'editor](media/rename-with-editor-cs.png)
 

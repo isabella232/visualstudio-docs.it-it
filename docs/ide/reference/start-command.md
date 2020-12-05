@@ -1,5 +1,7 @@
 ---
 title: Comando Avvia
+description: Informazioni sul comando di avvio e sul modo in cui inizia il debug del progetto di avvio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6138c4cff33f0b2a4211439a01a058da59da811
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6d9e1e36a2790fb63f9d39c0c83d67d889cc0a8
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590280"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616421"
 ---
 # <a name="start-command"></a>Comando Avvia
 Inizia il debug del progetto di avvio.
@@ -32,9 +34,9 @@ Debug.Start [address]
 ## <a name="arguments"></a>Argomenti
 `address`
 
-facoltativo. Indirizzo in corrispondenza del quale il programma sospende l'esecuzione, simile a un punto di interruzione nel codice sorgente. Questo argomento è valido solo in modalità di debug.
+Facoltativa. Indirizzo in corrispondenza del quale il programma sospende l'esecuzione, simile a un punto di interruzione nel codice sorgente. Questo argomento è valido solo in modalità di debug.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Il comando **Avvia**, quando eseguito, esegue un'operazione RunToCursor sull'indirizzo specificato.
 
 ## <a name="example"></a>Esempio

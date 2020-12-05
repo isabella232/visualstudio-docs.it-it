@@ -1,5 +1,7 @@
 ---
 title: Finestra di controllo immediato
+description: Informazioni su come utilizzare la finestra controllo immediato per eseguire il debug e la valutazione di espressioni, istruzioni EXECUTE e valori di variabili di stampa.
+ms.custom: SEO-VS-2020
 ms.date: 02/25/2019
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b21cdb9136abe1e960e5b74bbf09e7d1694519d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 342a2a34528134ed1174058b6701c77c9217fc63
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568958"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617019"
 ---
 # <a name="immediate-window"></a>Controllo immediato (finestra)
 
@@ -101,7 +103,7 @@ Immettere il segno di maggiore di (>) per aggiungere comandi di Visual Studio ne
 
 Quando fa clic su qualsiasi riga precedente nel **immediato** finestra, si passa automaticamente in modalità indicatore. Questa modalità consente di selezionare, modificare e copiare il testo dei comandi precedenti in qualsiasi editor di testo e incollarlo nella riga corrente.
 
-## <a name="examples"></a>Esempi
+## <a name="examples"></a>Esempio
 
 L'esempio seguente mostra quattro espressioni e i relativi risultati nella finestra **Controllo immediato** per un progetto Visual Basic.
 

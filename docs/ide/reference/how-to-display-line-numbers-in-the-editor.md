@@ -1,5 +1,7 @@
 ---
 title: Visualizzare i numeri di riga per il codice
+description: Informazioni su come visualizzare o nascondere la numerazione delle righe nel codice.
+ms.custom: SEO-VS-2020
 ms.date: 08/28/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02d26a452315f144e52a78d7fcea737d39052f59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca50674c3e16f9c43e71cfa041a0e05612740f3f
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89091473"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617435"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Procedura: visualizzare i numeri di riga nell'editor
 

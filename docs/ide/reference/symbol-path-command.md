@@ -1,5 +1,7 @@
 ---
 title: Comando Percorso simboli
+description: Informazioni sul comando percorso simboli e su come imposta l'elenco di directory in cui il debugger deve cercare i simboli.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83acc551c778fdb245b3bacec164a7544253d55f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: bd3268f3c40736f85a18b35e33c6cc78c96d6c88
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808691"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616447"
 ---
 # <a name="symbol-path-command"></a>Comando Percorso simboli
 Imposta l'elenco delle directory in cui il debugger deve eseguire la ricerca dei simboli.
@@ -33,7 +35,7 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ## <a name="arguments"></a>Argomenti
 `pathname`
 
-facoltativo. Elenco di percorsi delimitato da punti e virgola usato dal debugger per la ricerca dei simboli.
+Facoltativa. Elenco di percorsi delimitato da punti e virgola usato dal debugger per la ricerca dei simboli.
 
 ## <a name="remarks"></a>Commenti
 Se non viene specificato un `pathname`, il comando elenca i percorsi dei simboli correnti.

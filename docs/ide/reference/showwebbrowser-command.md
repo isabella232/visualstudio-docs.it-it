@@ -1,5 +1,7 @@
 ---
 title: Comando ShowWebBrowser
+description: Informazioni sul comando Mostra Web browser e su come viene visualizzato l'URL specificato in una finestra del Web browser all'interno dell'IDE o esterno all'IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8266a7c70544d8a320658fcd8b9f5ad249162fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 026878bdc2158d803f191cf2d28c8eb52f0b6e09
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769576"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616317"
 ---
 # <a name="showwebbrowser-command"></a>Comando ShowWebBrowser
 
@@ -38,13 +40,13 @@ Obbligatorio. URL (Uniform Resource Locator) per il sito Web.
 ## <a name="switches"></a>Commutatori
 /new
 
-facoltativo. Specifica che la pagina viene visualizzata in una nuova istanza del Web browser.
+Facoltativa. Specifica che la pagina viene visualizzata in una nuova istanza del Web browser.
 
 /ext
 
-facoltativo. Specifica che la pagina viene visualizzata nel Web browser predefinito all'esterno dell'IDE.
+Facoltativa. Specifica che la pagina viene visualizzata nel Web browser predefinito all'esterno dell'IDE.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 L'alias per il comando **ShowWebBrowser** è **navigate** o **nav**.
 
 ## <a name="example"></a>Esempio

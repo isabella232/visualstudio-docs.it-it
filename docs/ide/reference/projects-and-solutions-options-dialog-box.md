@@ -1,5 +1,7 @@
 ---
 title: Pagina Progetti e soluzioni della finestra di dialogo Opzioni
+description: Informazioni su come usare la pagina generale nella sezione progetti e soluzioni per definire il comportamento di Visual Studio correlato a progetti e soluzioni.
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -13,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01ee7e0da5fab8ceba2e5dc0642148033e2415da
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567645"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616902"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Finestra di dialogo Opzioni: progetti e soluzioni \> generale
 
-Usare questa pagina per definire il comportamento di Visual Studio in relazione a progetti e soluzioni. Per accedere a queste opzioni, selezionare **strumenti**  >  **Opzioni**, espandere **progetti e soluzioni**e quindi selezionare **generale**.
+Usare questa pagina per definire il comportamento di Visual Studio in relazione a progetti e soluzioni. Per accedere a queste opzioni, selezionare **strumenti**  >  **Opzioni**, espandere **progetti e soluzioni** e quindi selezionare **generale**.
 
 Le opzioni seguenti sono disponibili nella pagina **Generale**.
 

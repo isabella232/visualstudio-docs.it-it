@@ -1,5 +1,7 @@
 ---
 title: Comando Shell
+description: Informazioni sul comando shell e sul modo in cui avvia i programmi eseguibili da Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6197201ed35520ba8d362b6aa448fe625a2fe3a
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565877"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616369"
 ---
 # <a name="shell-command"></a>Comando Shell
 Avvia programmi eseguibili da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -41,22 +43,22 @@ Obbligatorio. Percorso e nome del file da eseguire o del documento da aprire. È
 
 `args`
 
-facoltativo. Argomenti da passare al programma richiamato.
+Facoltativa. Argomenti da passare al programma richiamato.
 
 ## <a name="switches"></a>Commutatori
 /commandwindow [oppure] /command [oppure] /c [oppure] /cmd
 
-facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **comando**.
+Facoltativa. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **comando**.
 
 /dir:`folder` [oppure] /d: `folder`
 
-facoltativo. Specifica la cartella di lavoro da impostare all'esecuzione del programma.
+Facoltativa. Specifica la cartella di lavoro da impostare all'esecuzione del programma.
 
 /outputwindow [oppure] /output [oppure] /out [oppure] /o
 
-facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **output**.
+Facoltativa. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **output**.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Le opzioni /dir /o /c devono essere specificate immediatamente dopo `Tools.Shell`. Tutto ciò che viene specificato dopo il nome del file eseguibile viene passato all'eseguibile come argomento della riga di comando.
 
 È possibile usare l'alias predefinito `Shell` invece di `Tools.Shell`.

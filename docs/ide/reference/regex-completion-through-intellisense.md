@@ -1,5 +1,6 @@
 ---
 title: Completamento di un'espressione regolare (regex) tramite IntelliSense
+description: Informazioni su come utilizzare il menu IntelliSense per scrivere un'espressione regolare con l'ausilio di IntelliSense.
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 68b5cb480184a287d9fcb088b0a74ac9d607f3f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 750869abbad079f3c109113f8cd65b5e8f11c147
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093864"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616694"
 ---
 # <a name="regex-completion-through-intellisense-menu"></a>Completamento di un'espressione regolare (regex) tramite IntelliSense
 

@@ -1,5 +1,7 @@
 ---
 title: Inserire commenti relativi alla documentazione XML
+description: Informazioni su come inserire commenti in formato documentazione XML nel codice che è possibile usare per creare un file XML generato dal compilatore da distribuire insieme all'assembly .NET.
+ms.custom: SEO-VS-2020
 ms.date: 01/22/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e21d0617f954c0cc34975b7f8626b83966f6b5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 250e07994b04e03b015bf3893633ebce0f36a90d
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77706394"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617474"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Procedura: Inserire commenti XML per la generazione di documentazione
 
@@ -30,7 +32,7 @@ Il file XML generato dal compilatore può essere distribuito insieme agli assemb
 
 1. Posizionare il cursore del testo sopra l'elemento da documentare, ad esempio, un metodo.
 
-2. Eseguire una delle operazioni seguenti:
+2. Eseguire una di queste operazioni:
 
    - Digitare `///` in C# o `'''` in Visual Basic
 
@@ -46,11 +48,11 @@ Il file XML generato dal compilatore può essere distribuito insieme agli assemb
 
 3. Immettere descrizioni per ogni elemento XML per documentare in modo completo l'elemento di codice.
 
-   ![Commento completato](media/doc-result-cs.png)
+   ![Screenshot che mostra il commento completato.](media/doc-result-cs.png)
 
 È possibile usare gli stili nei commenti XML che eseguiranno il rendering in informazioni rapide quando si passa il mouse sull'elemento. Questi stili includono: corsivo, grassetto, elenchi puntati e un collegamento selezionabile.
 
-   ![Commento completato](media/doc-style-cs.png) 
+   ![Screenshot che mostra il commento completato con tag di stile per Italics, Bold, Bullets e un collegamento selezionabile.](media/doc-style-cs.png) 
 
 > [!NOTE]
 > È disponibile un'[opzione](../../ide/reference/options-text-editor-csharp-advanced.md) per attivare/disattivare i commenti in formato documentazione XML dopo aver digitato `///` in C# o `'''` in Visual Basic. Dalla barra dei menu scegliere **strumenti**  >  **Opzioni** per aprire la finestra di dialogo **Opzioni** . Passare quindi a **editor di testo**  >  **C#** o **Basic**  >  **Advanced**. Nella sezione **Guida editor** cercare l'opzione **Genera commenti relativi alla documentazione XML**.
