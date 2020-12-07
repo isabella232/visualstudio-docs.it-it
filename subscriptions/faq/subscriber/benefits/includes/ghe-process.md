@@ -1,20 +1,20 @@
 ---
-title: Come funziona il processo di configurazione di Visual Studio con GitHub Enterprise?
+title: Come funziona il processo di configurazione delle sottoscrizioni di Visual Studio con GitHub Enterprise?
 description: Informazioni sul processo di attivazione della sottoscrizione di GitHub Enterprise
 ms.topic: include
 ms.assetid: 6f9aa66b-111f-45a0-a168-e0e5ff21aa46
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 10/13/2020
+ms.date: 12/03/2020
 ms.faqid: q3_3
-ms.openlocfilehash: be54a8a25058b1c07fd19588022ddea44c1d4ca7
-ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
+ms.openlocfilehash: 5b6422db320deab327b525307116b6214b99eb67
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94575575"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560771"
 ---
-## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Come funziona il processo di configurazione di Visual Studio con GitHub Enterprise? 
+## <a name="what-is-the-visual-studio-subscriptions-with-github-enterprise-setup-process"></a>Come funziona il processo di configurazione delle sottoscrizioni di Visual Studio con GitHub Enterprise? 
 
 Le sottoscrizioni di Visual Studio con GitHub Enterprise vengono gestite in due parti:  
 - La sottoscrizione di Visual Studio (Enterprise o Professional)  
