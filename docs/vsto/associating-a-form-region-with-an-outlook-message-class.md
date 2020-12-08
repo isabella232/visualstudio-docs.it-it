@@ -1,5 +1,7 @@
 ---
 title: Associare un'area del modulo a una classe messaggio di Outlook
+description: Informazioni su come specificare quali Microsoft Office elementi di Outlook visualizzano un'area del modulo associando l'area del modulo alla classe Message di ogni elemento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45db262b6bf7843a3893c5d60f0b6eaea5fcb70b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 213b167bf7fe10c83b028fce2d97c67cd837d272
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254570"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847000"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associare un'area del modulo a una classe messaggio di Outlook
   È possibile specificare quali Microsoft Office elementi di Outlook visualizzano un'area del modulo associando l'area del modulo alla classe Message di ogni elemento. Se ad esempio si desidera aggiungere un'area del modulo alla parte inferiore di un elemento di posta elettronica, è possibile associare l'area del modulo alla `IPM.Note` classe Message.
@@ -103,7 +105,7 @@ ms.locfileid: "71254570"
 > [!NOTE]
 > Visual Studio non verifica che i nomi delle classi di messaggi forniti siano corretti o validi.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Accedere a un'area del modulo in fase di esecuzione](../vsto/accessing-a-form-region-at-run-time.md)
 - [Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)
 - [Procedura dettagliata: progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)

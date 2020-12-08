@@ -1,5 +1,7 @@
 ---
 title: Globalizzazione e localizzazione di soluzioni Excel
+description: Informazioni sulle considerazioni speciali per Microsoft Office soluzioni Excel che verranno eseguite in computer con impostazioni non in lingua inglese per Windows.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f37ddcbbd3145fc96cd8081d7a1df524ef7ea8ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51e4a2cc4fb74309c44b8068152253de92eed0df
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986048"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847754"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalizzazione e localizzazione di soluzioni Excel
   Questa sezione contiene considerazioni speciali per le soluzioni Microsoft Office Excel eseguite in computer che hanno impostazioni di Windows non in inglese. Gli aspetti da considerare per la globalizzazione e la localizzazione di soluzioni Microsoft Office sono gli stessi implicati negli altri tipi di soluzioni create con Visual Studio. Per informazioni generali, vedere [globalizzazione e localizzazione delle applicazioni](../ide/globalizing-and-localizing-applications.md).
@@ -95,7 +97,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 ### <a name="applications-that-use-external-data"></a>Applicazioni che usano dati esterni
  Anche il codice che apre o usa in altro modo dati esterni, ad esempio file che includono valori separati da virgole (CSV) esportati da un sistema legacy, può essere interessato se tali file vengono esportati in un altro formato diverso da en-US. L'accesso al database potrebbe non essere influenzato, in quanto si presuppone che tutti i valori siano in formato binario, a meno che il database non archivi date sotto forma di stringhe o esegua operazioni che non usano il formato binario. Inoltre, se si creano query SQL mediante i dati di Excel, a seconda della funzione usata potrebbe essere necessario verificare che siano in formato en-US.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: utilizzare l'interfaccia utente multilingue di Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)
 - [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)

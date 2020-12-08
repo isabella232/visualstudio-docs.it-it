@@ -1,5 +1,7 @@
 ---
 title: Architettura delle soluzioni Office in Visual Studio
+description: Informazioni sulle soluzioni create con gli strumenti di sviluppo Microsoft Office in Visual Studio e sul relativo funzionamento.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0842cab03ba92568b0b672e2b8d257af4b6aa490
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ca40ed18639caae3250ddc1dc2a664b11780f7a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551871"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847585"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Architettura delle soluzioni Office in Visual Studio
   Negli argomenti di questa sezione vengono fornite informazioni sulle soluzioni create tramite gli strumenti di sviluppo di Office in Visual Studio.
@@ -33,7 +35,7 @@ ms.locfileid: "69551871"
 
 Viene descritto il funzionamento delle personalizzazioni a livello di documento e come vengono percepite in modo diverso da sviluppatori e utenti finali.
 
-[Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
+[Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)
 
 Vengono descritti i componenti aggiuntivi VSTO e come vengono caricati dalle applicazioni.
 

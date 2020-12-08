@@ -1,5 +1,7 @@
 ---
 title: "Procedura: configurare la sicurezza dell'elenco di inclusione"
+description: Configurare la richiesta di attendibilità ClickOnce per controllare se gli utenti finali hanno la possibilità di installare soluzioni Office salvando una decisione di attendibilità nell'elenco di inclusione.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541635"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846727"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Procedura: configurare la sicurezza dell'elenco di inclusione
   Se si dispone delle autorizzazioni di amministratore, è possibile configurare la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] richiesta di attendibilità per controllare se gli utenti finali hanno la possibilità di installare soluzioni Office salvando una decisione di attendibilità nell'elenco di inclusione. Per informazioni sugli elenchi di inclusione, vedere [considerare attendibili le soluzioni Office usando gli elenchi di inclusione](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).
@@ -40,7 +42,7 @@ ms.locfileid: "85541635"
 
 1. Aprire l'editor del registro di sistema:
 
-    1. Fare clic sul pulsante **Start**e quindi scegliere **Esegui**.
+    1. Fare clic sul pulsante **Start** e quindi scegliere **Esegui**.
 
     2. Nella casella **Apri** Digitare **regedt32.exe**, quindi fare clic su **OK**.
 
@@ -55,10 +57,10 @@ ms.locfileid: "85541635"
     |Sottochiave valore stringa|Valore|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
-    |**UntrustedSites**|**Disattivata**|
-    |**MyComputer**|**Attivata**|
-    |**LocalIntranet**|**Attivata**|
-    |**TrustedSites**|**Attivata**|
+    |**UntrustedSites**|**Disabilitato**|
+    |**MyComputer**|**Abilitato**|
+    |**LocalIntranet**|**Abilitato**|
+    |**TrustedSites**|**Abilitato**|
 
      Per impostazione predefinita, il valore di **Internet** è **AuthenticodeRequired** e il valore di **UntrustedSites** è **disabilitato**.
 
@@ -99,7 +101,7 @@ ms.locfileid: "85541635"
 
 1. Aprire l'editor del registro di sistema:
 
-    1. Fare clic sul pulsante **Start**e quindi scegliere **Esegui**.
+    1. Fare clic sul pulsante **Start** e quindi scegliere **Esegui**.
 
     2. Nella casella **Apri** Digitare **regedt32.exe**, quindi fare clic su **OK**.
 
@@ -113,7 +115,7 @@ ms.locfileid: "85541635"
 
     |Sottochiave valore stringa|Valore|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Disattivata**|
+    |**UntrustedSites**|**Disabilitato**|
     |**Internet**|**AuthenticodeRequired**|
     |**MyComputer**|**AuthenticodeRequired**|
     |**LocalIntranet**|**AuthenticodeRequired**|
@@ -158,7 +160,7 @@ ms.locfileid: "85541635"
 
 1. Aprire l'editor del registro di sistema:
 
-    1. Fare clic sul pulsante **Start**e quindi scegliere **Esegui**.
+    1. Fare clic sul pulsante **Start** e quindi scegliere **Esegui**.
 
     2. Nella casella **Apri** Digitare **regedt32.exe**, quindi fare clic su **OK**.
 
@@ -170,11 +172,11 @@ ms.locfileid: "85541635"
 
     |Sottochiave valore stringa|Valore|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Disattivata**|
-    |**Internet**|**Disattivata**|
-    |**MyComputer**|**Disattivata**|
-    |**LocalIntranet**|**Disattivata**|
-    |**TrustedSites**|**Disattivata**|
+    |**UntrustedSites**|**Disabilitato**|
+    |**Internet**|**Disabilitato**|
+    |**MyComputer**|**Disabilitato**|
+    |**LocalIntranet**|**Disabilitato**|
+    |**TrustedSites**|**Disabilitato**|
 
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>Per disabilitare l'elenco di inclusione a livello di codice
 
@@ -207,6 +209,6 @@ ms.locfileid: "85541635"
 
 3. Compilare ed eseguire l'applicazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Considerare attendibili le soluzioni Office usando gli elenchi di inclusione](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
 - [Soluzioni Office sicure](../vsto/securing-office-solutions.md)

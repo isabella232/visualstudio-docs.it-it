@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: popolare documenti con dati da oggetti'
+description: Informazioni su come usare i dati di un oggetto nella soluzione ed è possibile usare Windows Forms controlli per visualizzare i dati in un documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38461fc30f71a811033ea70bfe560a6492f56e12
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73cc795b5476f312f5fc80ba76dc383175596b64
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547173"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848053"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>Procedura: popolare documenti con dati da oggetti
 
@@ -66,9 +68,9 @@ Per connettere l'oggetto dati a BindingSource:
 
 4. Aggiungere l'origine dati come data binding al controllo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Aggiungi nuova origine dati](../data-tools/add-new-data-sources.md)
+- [Aggiungere nuove origini dati](../data-tools/add-new-data-sources.md)
 - [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Procedura: popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 - [Procedura: aggiornare un'origine dati con i dati di un controllo host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

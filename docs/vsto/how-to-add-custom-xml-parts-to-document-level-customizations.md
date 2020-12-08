@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere parti XML personalizzate a personalizzazioni a livello di documento'
+description: Informazioni su come archiviare i dati XML in una cartella di lavoro di Excel Microsoft Office o Microsoft Office documento di Word creando una parte XML personalizzata in una personalizzazione a livello di documento.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74bceeeabdaa46e6c1a35b5ab76de6a180d16d53
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9b2f3b4e72f9255099ed7190867faba5585ced4c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298445"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847430"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Procedura: aggiungere parti XML personalizzate a personalizzazioni a livello di documento
   È possibile archiviare dati XML in una cartella di lavoro di Microsoft Office Excel o in un documento di Microsoft Office Word creando una parte XML personalizzata in una personalizzazione a livello di documento. Per ulteriori informazioni, vedere [Cenni preliminari sulle parti XML personalizzate](../vsto/custom-xml-parts-overview.md).
@@ -58,6 +60,6 @@ ms.locfileid: "92298445"
 ## <a name="robust-programming"></a>Programmazione efficiente
  Per semplicità, in questo esempio viene usata una stringa XML definita come variabile locale nel metodo. In genere, è necessario ottenere l'XML da un'origine esterna, ad esempio un file o un database.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Cenni preliminari sulle parti XML personalizzate](../vsto/custom-xml-parts-overview.md)
 - [Procedura: aggiungere parti XML personalizzate ai documenti usando i componenti aggiuntivi VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)

@@ -1,5 +1,7 @@
 ---
 title: Glossario del debugger di Visual Studio | Microsoft Docs
+description: Questo articolo illustra diversi termini usati nell'SDK per il debug di Visual Studio, ad esempio il punto di interruzione associato, la causalità e il contesto del codice.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 954532311fe6b63fc288877a6d41722e6ea47581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a01a6ad0e23af04001e9b0990be57d78e84c7241
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713351"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847065"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glossario del debugger di Visual Studio
 Di seguito sono riportati i termini usati nell' [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] SDK di debug.
@@ -66,5 +68,5 @@ Di seguito sono riportati i termini usati nell' [!INCLUDE[vsprvs](../../../code-
 
   avviso punto di interruzione un'astrazione per la descrizione di un avviso in un punto di interruzione in sospeso. Un punto di interruzione di avviso descrive il motivo per cui il punto di interruzione in sospeso non è ancora stato associato a una posizione del codice. Questo potrebbe essere dovuto al fatto che il codice non è ancora stato caricato per la posizione descritta dal punto di interruzione in sospeso o per altri motivi.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estendibilità del debugger di Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

@@ -1,5 +1,7 @@
 ---
 title: Cenni preliminari sulle proprietà personalizzate del documento
+description: Quando si compila un progetto a livello di documento, Visual Studio aggiunge due proprietà personalizzate al documento nel progetto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d9fd14753f447b929faf5aecd37277529e0dd19
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 8c30e0b3253e19316eed24fa26500cd55a3dd515
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298468"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847793"
 ---
 # <a name="custom-document-properties-overview"></a>Cenni preliminari sulle proprietà personalizzate del documento
 
@@ -50,7 +52,7 @@ Questa proprietà contiene una stringa che fornisce informazioni dettagliate sul
 
   *SolutionID* è un GUID [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] usato da per identificare la soluzione. Il *SolutionID* viene generato automaticamente quando si compila il progetto. Il termine **vstolocal** indica a [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] che l'assembly deve essere caricato dalla stessa cartella del documento.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Architettura delle soluzioni Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architettura delle personalizzazioni a livello di documento](../vsto/architecture-of-document-level-customizations.md)

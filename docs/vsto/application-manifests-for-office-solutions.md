@@ -1,5 +1,7 @@
 ---
 title: Manifesti dell'applicazione per le soluzioni Office
+description: Informazioni sul modo in cui un manifesto dell'applicazione è un file XML che descrive gli assembly caricati in una soluzione Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -12,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6272f145ee2c7ef2a91cc635112e440e6404457
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a16d0f438d06cbfa48538bb3e370ed9b334ad16
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531508"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847923"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Manifesti dell'applicazione per le soluzioni Office
   Un manifesto dell'applicazione è un file XML che descrive gli assembly caricati in una soluzione Microsoft Office. Gli strumenti di sviluppo Microsoft Office in Visual Studio usano lo [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schema del manifesto dell'applicazione definito nel riferimento del [manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md) .
 
  I manifesti dell'applicazione delle soluzioni Office usano gli elementi e gli attributi [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] seguenti.
 
-|Elemento|Descrizione|Attributes|
+|Elemento|Descrizione|Attributi|
 |-------------|-----------------|----------------|
 |[&#60;elemento&#62; assembly &#40;applicazione ClickOnce&#41;](../deployment/assembly-element-clickonce-deployment.md)|Obbligatorio. Elemento di primo livello.|**manifestVersion**|
 |[&#60;elemento&#62; assemblyIdentity &#40;applicazione ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-deployment.md)|Obbligatorio. Identifica l'assembly primario dell'applicazione [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .|**nome**<br /><br /> **version**<br /><br /> **publicKeyToken**<br /><br /> **processorArchitecture**<br /><br /> **language**|
@@ -67,7 +69,7 @@ ms.locfileid: "85531508"
 </addIn>
 ```
 
-|Elemento|Descrizione|Attributes|
+|Elemento|Descrizione|Attributi|
 |-------------|-----------------|----------------|
 |[&#60;customHostSpecified&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/customhostspecified-element-office-development-in-visual-studio.md)|Obbligatorio. Contrassegna specificatamente il manifesto come soluzione Office.|Nessuno|
 |[&#60;elemento&#62; AddIn &#40;sviluppo per Office in Visual Studio&#41;](../vsto/addin-element-office-development-in-visual-studio.md)|Obbligatorio. Archivia i punti di ingresso in un solo spazio dei nomi.|Nessuno|
@@ -86,10 +88,10 @@ ms.locfileid: "85531508"
 |[ Elemento&#62;&#60;FriendlyName &#40;sviluppo per Office in Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)|facoltativo. Archivia il nome del componente aggiuntivo VSTO che viene visualizzato nell'elenco di componenti aggiuntivi VSTO installati.|Nessuno|
 |[&#60;Description&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md)|Obbligatorio solo per i componenti aggiuntivi VSTO. Archivia la descrizione che viene visualizzata nell'elenco dei programmi installati.|Nessuno|
 |[&#60;formRegions&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)|Obbligatorio solo per i componenti aggiuntivi VSTO di Outlook che includono aree di modulo.|Nessuno|
-|[&#60;formRegion&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md)|Obbligatorio solo per i componenti aggiuntivi VSTO di Outlook che includono aree di modulo.|**Name**|
+|[&#60;formRegion&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md)|Obbligatorio solo per i componenti aggiuntivi VSTO di Outlook che includono aree di modulo.|**Nome**|
 |[&#60;vstoRuntime&#62; elemento &#40;sviluppo per Office in Visual Studio&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|Obbligatorio. Descrive una versione specifica del runtime di Visual Studio Tools per Office supportata dalla soluzione Office.|**versione**<br /><br /> **version**<br /><br /> **supportUrl**|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  È possibile modificare manualmente i manifesti dell'applicazione e di distribuzione nelle soluzioni Office. Successivamente, è necessario firmare di nuovo i manifesti dell'applicazione e della distribuzione usando il Strumento per la generazione e la modifica di manifesti (*mage.exe* e *mageui.exe*). Per altre informazioni, vedere [Procedura: Firmare nuovamente manifesti di applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="file-location"></a>Percorso del file
@@ -100,7 +102,7 @@ ms.locfileid: "85531508"
 
  `OutlookAddIn1.dll.manifest`
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)
 - [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)

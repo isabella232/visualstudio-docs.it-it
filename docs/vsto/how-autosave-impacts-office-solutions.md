@@ -1,5 +1,7 @@
 ---
 title: Come il salvataggio automatico influisca sulle soluzioni Office
+description: Informazioni su come il salvataggio automatico è una funzionalità di Excel, PowerPoint e Word che consente di salvare automaticamente e continuamente le modifiche.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2018
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ceaf13e24d56060e3d962e108d43c4d87d69fb8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6108ee35c79ec475de70e874ce0dc6d872cc62c6
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62826683"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846792"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>Come il salvataggio automatico influisca sulle soluzioni Office
 
@@ -26,5 +28,5 @@ Il salvataggio automatico è una funzionalità per Excel, PowerPoint e Word che 
 > [!NOTE]
 > Il salvataggio automatico per Windows desktop Word, Excel e PowerPoint è stato introdotto in 2017 ed è attualmente disponibile per i sottoscrittori Office365. Se è stata acquistata una licenza perpetua per Office 2016 o versione precedente, attualmente non si ha accesso alla funzionalità di coautorizzazione. (Excel online, Excel per Android, Excel per iOS ed Excel Mobile in Windows Store supportano questa funzionalità).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sviluppare soluzioni Office](./developing-office-solutions.md)

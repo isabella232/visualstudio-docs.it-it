@@ -1,5 +1,7 @@
 ---
 title: Aggiungere un riquadro azioni ai documenti di Word o alle cartelle di lavoro di Excel
+description: Per informazioni su come aggiungere un riquadro azioni a un documento Microsoft Office Word o a una cartella di lavoro di Microsoft Excel, è innanzitutto necessario creare un controllo utente Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d24ec3a17c9e0824c6b7aaffeaaac02c1c4f76e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d675209f2a3ac47e8681da8fca73c5cd86e95d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546224"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848066"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Procedura: aggiungere un riquadro ai documenti Word o alle cartelle di lavoro di Excel
   Per aggiungere un riquadro azioni a un documento Microsoft Office Word o a una cartella di lavoro di Microsoft Excel, creare prima un controllo utente Windows Forms. Aggiungere quindi il controllo utente alla <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> proprietà del `ThisDocument.ActionsPane` campo (Word) o del `ThisWorkbook.ActionsPane` campo (Excel) nel progetto.
@@ -39,7 +41,7 @@ ms.locfileid: "85546224"
 
 2. Dal menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
-3. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare il **controllo riquadro azioni**, denominarlo **HelloControl**e fare clic su **Aggiungi**.
+3. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare il **controllo riquadro azioni**, denominarlo **HelloControl** e fare clic su **Aggiungi**.
 
     > [!NOTE]
     > In alternativa, è possibile aggiungere un elemento di **controllo utente** al progetto. Le classi generate dal **controllo del riquadro azioni** e dagli elementi del **controllo utente** sono funzionalmente equivalenti.
@@ -75,7 +77,7 @@ ms.locfileid: "85546224"
      [!code-csharp[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#15)]
      [!code-vb[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#15)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)
 - [Procedura dettagliata: inserire testo in un documento da un riquadro azioni](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
 - [Procedura: gestire il layout di controllo nei riquadri azioni](../vsto/how-to-manage-control-layout-on-actions-panes.md)

@@ -1,8 +1,8 @@
 ---
 title: Accesso VBA per creare o aprire un progetto di sistema VSTO
 titleSuffix: ''
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
-ms.custom: seodec18
+description: Informazioni che è necessario abilitare in modo esplicito l'accesso al sistema di progetto di Office VBA prima di poter creare o aprire un progetto di Strumenti di Visual Studio per Office System.
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e30a89bdf8547eab9ed9c51b07c49e014b7302
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584859"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846129"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Abilitare l'accesso a VBA per creare o aprire un Strumenti di Visual Studio per il progetto di sistema Microsoft Office
 
@@ -55,7 +55,7 @@ ms.locfileid: "91584859"
 
 3. Fare clic su **Centro protezione**, quindi fare clic su **Impostazioni Centro protezione**.
 
-4. Nel **Centro protezione**fare clic su **Impostazioni macro**.
+4. Nel **Centro protezione** fare clic su **Impostazioni macro**.
 
 5. Selezionare o deselezionare l' **accesso attendibile al modello a oggetti del progetto VBA** per abilitare o disabilitare l'accesso ai progetti Visual Basic.
 
@@ -63,7 +63,7 @@ ms.locfileid: "91584859"
 
 ### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>Per abilitare o disabilitare l'accesso ai progetti di Visual Basic con il sistema Microsoft Office 2007
 
-1. Scegliere **macro**dal menu **strumenti** in Word o Excel, quindi fare clic su **sicurezza**.
+1. Scegliere **macro** dal menu **strumenti** in Word o Excel, quindi fare clic su **sicurezza**.
 
 2. Nella finestra di dialogo **sicurezza** fare clic sulla scheda **autori attendibili** .
 
@@ -79,7 +79,7 @@ ms.locfileid: "91584859"
 
 3. Fare clic su **Centro protezione**, quindi fare clic su **Impostazioni Centro protezione**.
 
-4. Nel **Centro protezione**fare clic su **Impostazioni macro**.
+4. Nel **Centro protezione** fare clic su **Impostazioni macro**.
 
 5. Nella sezione **Impostazioni macro** selezionare l'impostazione desiderata.
 
@@ -87,7 +87,7 @@ ms.locfileid: "91584859"
 
 ### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>Per impostare il livello di sicurezza delle macro di Office con il sistema di Microsoft Office 2007
 
-1. Scegliere **macro**dal menu **strumenti** in Word o Excel, quindi fare clic su **sicurezza**.
+1. Scegliere **macro** dal menu **strumenti** in Word o Excel, quindi fare clic su **sicurezza**.
 
 2. Nella scheda **livello di sicurezza** selezionare l'impostazione desiderata.
 
@@ -107,11 +107,11 @@ ms.locfileid: "91584859"
 
 6. Espandere **funzionalità condivise di Office** nell'elenco **scegliere le opzioni di aggiornamento per le applicazioni e gli strumenti** .
 
-7. Aprire il menu a discesa accanto a **Visual Basic, Applications Edition**e quindi fare clic su **Esegui da computer locale**.
+7. Aprire il menu a discesa accanto a **Visual Basic, Applications Edition** e quindi fare clic su **Esegui da computer locale**.
 
 8. Fare clic su **Continua**.
 
-9. Fare clic su **Chiudi**.
+9. Fare clic su **Close**.
 
 ## <a name="to-repair-your-installation-of-office"></a>Per ripristinare l'installazione di Office
 

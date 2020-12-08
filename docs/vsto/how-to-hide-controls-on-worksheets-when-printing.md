@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: nascondere i controlli nei fogli di foglio durante la stampa'
+description: Informazioni sulla possibilità di nascondere i controlli durante la stampa di un foglio di lavoro di Excel Microsoft Office che contiene Windows Forms controlli.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 336723f60a2cd90dc63db24e981dd06e0388cb9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acc90986dd394e69de12893aac01e0a4f662b1a3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544807"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846493"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>Procedura: nascondere i controlli nei fogli di foglio durante la stampa
   Quando si stampa un Microsoft Office documento di Excel che contiene controlli Windows Forms, i controlli sono visibili nel foglio di lavoro stampato. È possibile nascondere i controlli quando si stampa un foglio di foglio.
@@ -37,11 +39,11 @@ ms.locfileid: "85544807"
 
 1. Creare o aprire un progetto di Excel in Visual Studio e verificare che **Sheet1** sia visibile nella finestra di progettazione. Per informazioni sulla creazione di progetti, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Dalla scheda **controlli comuni** della **casella degli strumenti**trascinare un <xref:Microsoft.Office.Tools.Excel.Controls.Button> controllo in una cella in `Sheet1` .
+2. Dalla scheda **controlli comuni** della **casella degli strumenti** trascinare un <xref:Microsoft.Office.Tools.Excel.Controls.Button> controllo in una cella in `Sheet1` .
 
 3. Nella finestra **Proprietà** impostare la <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> proprietà su **false**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)
 - [Cenni preliminari sui controlli Windows Forms nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Procedura: aggiungere controlli Windows Forms ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

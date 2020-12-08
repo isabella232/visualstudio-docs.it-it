@@ -1,5 +1,7 @@
 ---
 title: Accedere a un'area del modulo in fase di esecuzione
+description: Informazioni su come accedere a un'area del modulo in diversi tipi di progetto e versioni di Microsoft Office in fase di esecuzione.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5dd8818b57a1aa33b70254303150d8f00e36cc02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0276405c023717c88f334d6231939d59f79ee4e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255790"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847416"
 ---
 # <a name="access-a-form-region-at-run-time"></a>Accedere a un'area del modulo in fase di esecuzione
 
@@ -72,7 +74,7 @@ ms.locfileid: "71255790"
 
  Per ulteriori informazioni su come creare proprietà in Visual Basic, vedere [procedura: creare una proprietà (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Linee guida per la creazione di aree del modulo di Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)
 - [Procedura dettagliata: progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Procedure consigliate di sviluppo: COM, VSTO, & componenti aggiuntivi VBA in Office'
+description: Informazioni sulle procedure consigliate per lo sviluppo di componenti aggiuntivi COM, VSTO e VBA per Microsoft Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 07/25/2017
 ms.topic: conceptual
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e536c48004d9c8ff729ac5fb064e04e02c6884b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e7387b58bae486588687fe018453fafb5d6571f7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91581196"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846896"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Procedure consigliate per lo sviluppo di componenti aggiuntivi COM, VSTO e VBA in Office
   Se si sviluppano componenti aggiuntivi COM, VSTO o VBA per Office, seguire le procedure consigliate per lo sviluppo descritte in questo articolo.   In modo da garantire:

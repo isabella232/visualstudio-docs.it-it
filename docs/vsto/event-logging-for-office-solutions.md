@@ -1,5 +1,7 @@
 ---
 title: Registrazione eventi per le soluzioni Office
+description: Informazioni su come usare il Visualizzatore eventi in Windows per visualizzare i messaggi di eccezione acquisiti dalla Strumenti di Visual Studio per Office Runtime.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74aaf7c1c07c349fa3669332a41e4e7d06ba86f1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62951941"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847767"
 ---
 # <a name="event-logging-for-office-solutions"></a>Registrazione eventi per le soluzioni Office
   È possibile usare il Visualizzatore eventi di Windows per visualizzare i messaggi di eccezione acquisiti da [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] quando si installano o disinstallano soluzioni Office. Questi messaggi del registratore eventi possono essere usati per risolvere i problemi di installazione e di distribuzione.
@@ -84,7 +86,7 @@ ms.locfileid: "62951941"
 
 ### <a name="to-disable-the-event-log"></a>Per disabilitare il registro eventi
 
-1. Aprire **Sistema**nel Pannello di controllo.
+1. Aprire **Sistema** nel Pannello di controllo.
 
 2. Nella scheda **Avanzate** fare clic su **Variabili di ambiente**.
 
@@ -96,6 +98,6 @@ ms.locfileid: "62951941"
 
 6. Fare clic su **OK**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
 - [Risolvere i problemi di distribuzione della soluzione Office](../vsto/troubleshooting-office-solution-deployment.md)

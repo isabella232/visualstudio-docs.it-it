@@ -1,5 +1,7 @@
 ---
 title: Implementazione di esempio della valutazione dell'espressione | Microsoft Docs
+description: Informazioni su come Visual Studio chiama ParseText per produrre un oggetto IDebugExpression2 per un'espressione Windows Watch.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf994a61ed9283463cd01aa468018f6acce5e209
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba5baf52f18f638730ecc5f3b7c016889503cbbb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713107"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847702"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Implementazione di esempio della valutazione dell'espressione
 > [!IMPORTANT]
@@ -107,6 +109,6 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Valutare un'espressione finestra Espressioni di controllo](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
 - [Valutare un'espressione Watch](../../extensibility/debugger/evaluating-a-watch-expression.md)

@@ -1,5 +1,7 @@
 ---
 title: Protezione di documenti nelle soluzioni a livello di documento
+description: Informazioni su come usare le funzionalità di protezione di Microsoft Office Word e Microsoft Office Excel nei progetti a livello di documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c5f019907495c3cad3fddef501455aedf345bb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2898781a3603e7cb9582d246e4fa7edaaf6bddb9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253813"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846194"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Protezione di documenti nelle soluzioni a livello di documento
   È possibile utilizzare le funzionalità di protezione di Microsoft Office Word e Microsoft Office Excel nei progetti a livello di documento. Queste funzionalità impediscono a utenti non autorizzati di apportare modifiche alle parti protette di un documento.
@@ -52,7 +54,7 @@ ms.locfileid: "71253813"
 ## <a name="setting-the-password"></a>Impostazione della password
  Visual Studio Abilita automaticamente la protezione, ma non fornisce alcuna password per impostazione predefinita. Se si vuole che la protezione dei documenti disponga di una password, è necessario aggiungerla prima di distribuire la soluzione. L'aggiunta di una password consente di consentire agli utenti autorizzati di rimuovere la protezione dal documento; senza una password, non è possibile rimuovere facilmente la protezione. Per informazioni dettagliate sull'impostazione di una password, vedere la guida nell'applicazione di Office specifica.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: proteggere documenti e parti di documenti a livello di codice](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)
 - [Procedure dettagliate e esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Panoramica di Information Rights Management e delle estensioni di codice gestito](../vsto/information-rights-management-and-managed-code-extensions-overview.md)

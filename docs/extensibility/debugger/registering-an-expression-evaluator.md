@@ -1,5 +1,7 @@
 ---
 title: Registrazione di un analizzatore di espressioni | Microsoft Docs
+description: Informazioni sul modo in cui l'analizzatore di espressioni deve registrarsi come class factory con l'ambiente COM Windows e Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 600f7c8a2e2957cddf23ccc82b0872617e491940
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f26eddf7191ee4393dd2ca986fe7a1d2c3af9e2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713202"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847143"
 ---
 # <a name="register-an-expression-evaluator"></a>Registrare un analizzatore di espressioni
 > [!IMPORTANT]
@@ -120,7 +122,7 @@ namespace EEMC
     > [!NOTE]
     > `metricLanguage``GUID`Identifica la lingua in base al nome, ma è l' `guidLang` argomento a `SetEEMetric` che seleziona la lingua. Quando il compilatore genera il file di informazioni di debug, deve scrivere l'oggetto appropriato `guidLang` in modo che conosca l'EE da usare. Il DE richiede in genere il provider di simboli per questa lingua `GUID` , archiviata nel file di informazioni di debug.
 
-3. Esegue la registrazione con Visual Studio mediante la creazione di chiavi in HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *x. y*, dove *x. y* è la versione di Visual Studio con cui eseguire la registrazione.
+3. Esegue la registrazione con Visual Studio mediante la creazione di chiavi in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *x. y*, dove *x. y* è la versione di Visual Studio con cui eseguire la registrazione.
 
 ### <a name="example"></a>Esempio
  La funzione seguente mostra come un codice non gestito (C++) EE registra e Annulla la registrazione con Visual Studio.
@@ -209,6 +211,6 @@ static HRESULT RegisterMetric( bool registerIt )
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Scrittura di un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Helper SDK per il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

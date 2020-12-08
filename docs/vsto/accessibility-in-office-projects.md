@@ -1,5 +1,7 @@
 ---
 title: Accessibilità nei progetti di Office
+description: Informazioni su come i progetti Microsoft Office includono molte funzionalità di accessibilità che consentono di creare soluzioni personalizzate che soddisfano i requisiti di accessibilità standard.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8bd74f4d61c74a4dc348f7a615e103b283a15fc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de877ccc2d2a036bf03b0888a7edf455b17788a4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189629"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847364"
 ---
 # <a name="accessibility-in-office-projects"></a>Accessibilità nei progetti di Office
 
@@ -40,7 +42,7 @@ Nella maggior parte dei casi, i progetti di Office in Visual Studio soddisfano g
 
 #### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Per visualizzare i tasti di scelta rapida per schede e controlli della barra multifunzione nella finestra di progettazione
 
-1. In Visual Studio scegliere **Opzioni**dal menu **strumenti** .
+1. In Visual Studio scegliere **Opzioni** dal menu **strumenti** .
 
 2. Espandere il nodo **strumenti di Office** e selezionare **Microsoft Office tastiera di Excel** o la **tastiera Microsoft Office Word**, a seconda dei casi.
 
@@ -84,7 +86,7 @@ Visual Studio presenta le limitazioni seguenti relative alle modalità di visual
 
 È possibile utilizzare la lente di ingrandimento per superare queste limitazioni. Magnifier è un'utilità di visualizzazione in Windows che consente di creare una finestra separata in cui viene visualizzata una parte ingrandita dello schermo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sviluppare soluzioni Office](../vsto/developing-office-solutions.md)
 - [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)

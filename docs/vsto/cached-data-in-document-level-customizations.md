@@ -1,5 +1,7 @@
 ---
 title: Dati memorizzati nella cache nelle personalizzazioni a livello di documento
+description: Informazioni sul modo in cui Visual Studio separa i dati dalla vista nelle personalizzazioni a livello di documento consentendo di incorporare i dati come cache di dati.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9985dd25ba62cc9c0735a8a8f4008a4c0abe0558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be4229c179ec6c5640ab612d28991fe476363a53
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238348"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847897"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Dati memorizzati nella cache nelle personalizzazioni a livello di documento
   Uno degli obiettivi principali delle personalizzazioni a livello di documento consiste nel separare i dati dalla visualizzazione nei documenti di Office. I dati si riferiscono alle informazioni archiviate nel documento, inclusi i numeri e il testo. La vista fa riferimento all'interfaccia utente e al modello a oggetti di Microsoft Office Word e Microsoft Office Excel.
@@ -60,6 +62,6 @@ ms.locfileid: "88238348"
 |Quali tipi di dati è possibile archiviare?|Qualsiasi oggetto pubblico nell'assembly di personalizzazione che soddisfi determinati requisiti. Per altre informazioni, vedere [memorizzare i dati nella cache](../vsto/caching-data.md).|Qualsiasi dato XML.|
 |È possibile accedere ai dati senza avviare Microsoft Office applicazioni?|Sì, usando la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe fornita da [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .|Sì, usando le classi nello <xref:System.IO.Packaging> spazio dei nomi o usando Open XML Format SDK.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)
 - [Architettura delle soluzioni Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)

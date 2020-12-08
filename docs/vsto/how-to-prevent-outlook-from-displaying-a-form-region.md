@@ -1,5 +1,7 @@
 ---
 title: "Procedura: impedire la visualizzazione di un'area del modulo in Outlook"
+description: Informazioni su come impedire a Microsoft Office Outlook di visualizzare un'area del modulo per un particolare elemento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 90da255beb0a85a302158feb1f9d5cc4981437eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f247bf82d51fda6d321b45c16f91b857300cc1e4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520134"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847676"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Procedura: impedire la visualizzazione di un'area del modulo in Outlook
   Potrebbero essere presenti situazioni in cui non si desidera che Microsoft Office Outlook visualizzi un'area del modulo per un particolare elemento. Se, ad esempio, un elemento di contatto non contiene un indirizzo aziendale, è possibile impedire la visualizzazione di un'area del modulo che mostra la posizione dell'azienda in una mappa.
@@ -33,7 +35,7 @@ ms.locfileid: "85520134"
 
 3. Aggiungere il codice al `FormRegionInitializing` gestore eventi che imposta la <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> proprietà della <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> classe su **true**.
 
-   In questo esempio, se l'elemento contatto non contiene un indirizzo, la <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> proprietà viene impostata su **true**e l'area del modulo non viene visualizzata.
+   In questo esempio, se l'elemento contatto non contiene un indirizzo, la <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> proprietà viene impostata su **true** e l'area del modulo non viene visualizzata.
 
 ## <a name="example"></a>Esempio
  [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]

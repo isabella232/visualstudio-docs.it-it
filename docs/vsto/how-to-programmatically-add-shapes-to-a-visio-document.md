@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere forme a un documento di Visio a livello di codice'
+description: Informazioni su come è possibile aggiungere forme a un documento di Microsoft Office Visio recuperando i master da uno stencil e rilasciando le forme nella pagina attiva.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8eb3ad837f699a1bb0bbc327b6e892a20866e0a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 819560d584f267bfa54ae2bcfc61a162f45e0383
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584230"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848027"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Procedura: aggiungere forme a un documento di Visio a livello di codice
   È possibile aggiungere forme a un documento di Microsoft Office Visio recuperando i master da uno stencil e rilasciando le forme nella pagina attiva.

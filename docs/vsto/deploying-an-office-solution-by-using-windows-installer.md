@@ -1,5 +1,7 @@
 ---
 title: Distribuire una soluzione Office usando Windows Installer
+description: Per informazioni su come usare Visual Studio per creare una Windows Installer, è possibile distribuire una soluzione Office che richiede l'accesso amministrativo nel computer dell'utente finale.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1336af7469b030492b486004940b730d372760bb
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c001b3ce308c9e991cee747bdcab3ad646b226ab
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807963"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847117"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Distribuire una soluzione Office usando Windows Installer
 
@@ -91,7 +93,7 @@ Prima che una soluzione possa essere eseguita nei computer degli utenti, è nece
 
 2. Nel riquadro dei modelli espandere **Altri tipi di progetto**, quindi selezionare il modello **Installazione e distribuzione** .
 
-3. Nell'elenco dei tipi di progetto per **Installazione e distribuzione**scegliere **Abilita InstallShield Limited Edition**, quindi scegliere il pulsante **OK** .
+3. Nell'elenco dei tipi di progetto per **Installazione e distribuzione** scegliere **Abilita InstallShield Limited Edition**, quindi scegliere il pulsante **OK** .
 
    Viene visualizzata una pagina che fornisce informazioni su come ottenere InstallShield Limited Edition.
 
@@ -113,7 +115,7 @@ Prima che una soluzione possa essere eseguita nei computer degli utenti, è nece
 
 3. Nel riquadro dei modelli espandere **Altri tipi di progetto**, quindi selezionare il modello **Installazione e distribuzione** .
 
-4. Nell'elenco dei tipi di progetto per **Installazione e distribuzione**scegliere **Progetto InstallShield Limited Edition**, assegnare un nome al progetto, quindi scegliere il pulsante **OK** .
+4. Nell'elenco dei tipi di progetto per **Installazione e distribuzione** scegliere **Progetto InstallShield Limited Edition**, assegnare un nome al progetto, quindi scegliere il pulsante **OK** .
 
    Il progetto di installazione di InstallShield creato verrà visualizzato nella soluzione.
 
@@ -209,7 +211,7 @@ La pagina **Ridistribuibili** contiene un elemento denominato **Runtime di Micro
 
 4. Nel Blocco note, sostituire il testo **Your GUID goes here** incollando il GUID al suo posto.
 
-   L'elemento ** &lt; Properties &gt; ** del file è simile al seguente.
+   L'elemento **&lt; Properties &gt;** del file è simile al seguente.
 
    ```xml
    <properties Id="{87989B73-21DC-4403-8FD1-0C68A41A6D8C}" Description="This prerequisite installs the most recent version of the Microsoft Visual Studio 2010 Tools for Office Runtime." >
@@ -247,7 +249,7 @@ La pagina **Ridistribuibili** contiene un elemento denominato **Runtime di Micro
 
 ## <a name="specify-where-to-install-the-solution-on-the-users-computer"></a><a name="Location"></a>Specificare il percorso in cui installare la soluzione nel computer dell'utente
 
-1. In **Esplora soluzioni**espandere il nodo **OfficeAddInSetup** , espandere il nodo **Organizza l'installazione** , quindi selezionare il file **Informazioni generali** .
+1. In **Esplora soluzioni** espandere il nodo **OfficeAddInSetup** , espandere il nodo **Organizza l'installazione** , quindi selezionare il file **Informazioni generali** .
 
 2. Sulla barra dei menu scegliere **Visualizza**  >  **Apri**.
 
@@ -271,7 +273,7 @@ Le installazioni per utente richiedono un solo programma di installazione indipe
 
 ### <a name="to-specify-whether-you-want-to-support-per-user-or-per-computer-installations"></a>Per specificare se si desidera supportare le installazioni per utente o per computer.
 
-1. In **Esplora soluzioni**espandere il nodo di progetto **OfficeAddInSetup** , espandere il nodo **Organizza l'installazione** , quindi selezionare il file **Informazioni generali** .
+1. In **Esplora soluzioni** espandere il nodo di progetto **OfficeAddInSetup** , espandere il nodo **Organizza l'installazione** , quindi selezionare il file **Informazioni generali** .
 
 2. Sulla barra dei menu scegliere **Visualizza**  >  **Apri**.
 
@@ -285,7 +287,7 @@ Le installazioni per utente richiedono un solo programma di installazione indipe
 
 ### <a name="to-create-registry-keys"></a>Per creare chiavi del Registro di sistema
 
-1. In **Esplora soluzioni**scegliere il nodo **Project Assistant** .
+1. In **Esplora soluzioni** scegliere il nodo **Project Assistant** .
 
    Sulla barra dei menu scegliere **Visualizza**  >  **Apri**.
 
@@ -303,21 +305,21 @@ Le installazioni per utente richiedono un solo programma di installazione indipe
 
    **Programma di installazione per utente**
 
-   **HKEY_CURRENT_USER \Software\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**
+   **HKEY_CURRENT_USER\Software\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**
 
    **Programmi di installazione per computer in base alla versione di Office**
 
 | Versione di Office<br /><br /> | Percorso di configurazione di InstallShield<br /><br /> |
 |----------------------------| - |
-| 32 bit<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32 bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 bit<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (64 bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 bit<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 bit<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **Programmi di installazione per computer in base alla versione di Windows**
 
 | Versione di Windows<br /><br /> | Percorso di configurazione di InstallShield<br /><br /> |
 |-----------------------------| - |
-| 32 bit<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32 bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 bit<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32 bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE \SOFTWARE (64 bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 bit<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 bit<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
    > Un programma di installazione per Windows a 64 bit richiede due percorsi del registro di sistema poiché è possibile che gli utenti eseguano le versioni di Office a 32 e 64 bit in un computer che esegue Windows a 64 bit.
@@ -333,7 +335,7 @@ Le installazioni per utente richiedono un solo programma di installazione indipe
 
 7. Ripetere la procedura per creare i seguenti valori:
 
-|Tipo di valore<br /><br />|nome<br /><br />|
+|Tipo di valore<br /><br />|Nome<br /><br />|
 |--------------|--------|
 |Valore stringa<br /><br />|**FriendlyName**<br /><br />|
 |Valore DWORD<br /><br />|**LoadBehavior**<br /><br />|
@@ -392,7 +394,7 @@ Per modificare le proprietà personalizzate, si crea un programma che rimuove la
 
 3. Nell'elenco dei tipi di progetto per **Windows**, scegliere il modello **Applicazione console** .
 
-4. Assegnare il nome **SetExcelDocumentProperties**al progetto, quindi selezionare il pulsante **OK** .
+4. Assegnare il nome **SetExcelDocumentProperties** al progetto, quindi selezionare il pulsante **OK** .
 
 5. In **Esplora soluzioni**, selezionare il pulsante **Mostra tutti i file** , aprire il menu di scelta rapida per il nodo di progetto **SetExcelDocumentProperties** , quindi scegliere **Aggiungi riferimento**.
 
@@ -463,11 +465,11 @@ Per modificare le proprietà personalizzate, si crea un programma che rimuove la
 
 13. Aprire il file di progetto della soluzione nel Blocco note. Per Visual Basic progetti, il nome del file è *ExcelWorkbook. vbproj*. Per i progetti C#, il nome del file è *ExcelWorkbook. csproj*.
 
-14. Nel file di progetto cercare l'elemento ** &lt; SolutionID &gt; ** , copiarne il valore negli Appunti, quindi chiudere il blocco note.
+14. Nel file di progetto cercare l'elemento **&lt; SolutionID &gt;** , copiarne il valore negli Appunti, quindi chiudere il blocco note.
 
     Passare questo valore nell'applicazione console come parametro.
 
-15. Nella pagina delle proprietà di **NewCustomAction1**impostare la proprietà **Riga di comando** nella seguente riga di testo.
+15. Nella pagina delle proprietà di **NewCustomAction1** impostare la proprietà **Riga di comando** nella seguente riga di testo.
 
    ```cmd
    /assemblyLocation="[INSTALLDIR]ExcelWorkbook.dll" /deploymentManifestLocation="[INSTALLDIR]ExcelWorkbook.vsto" /documentLocation="[INSTALLDIR]ExcelWorkbook.xlsx" /solutionID="Your Solution ID"
@@ -480,7 +482,7 @@ Per modificare le proprietà personalizzate, si crea un programma che rimuove la
 
 ## <a name="build-the-setup-project"></a><a name="Build"></a>Build the Setup Project
 
-1. In **Esplora soluzioni**espandere il nodo **Preparare la versione** , quindi selezionare il file **Versioni** .
+1. In **Esplora soluzioni** espandere il nodo **Preparare la versione** , quindi selezionare il file **Versioni** .
 
 2. Sulla barra dei menu scegliere **Visualizza**  >  **Apri**.
 
@@ -500,9 +502,9 @@ Per modificare le proprietà personalizzate, si crea un programma che rimuove la
 
 9. Sulla barra dei menu scegliere **Compila**  >  **Build OfficeAddInSetup**.
 
-   Al termine della compilazione, è possibile individuare il file di *setup.exe* del progetto **OfficeAddInSetup** nel percorso seguente: <em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 \\ **
+   Al termine della compilazione, è possibile individuare il file di *setup.exe* del progetto **OfficeAddInSetup** nel percorso seguente: <em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 \\**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Prerequisiti della soluzione Office per la distribuzione](/previous-versions/bb608617(v=vs.110))
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)

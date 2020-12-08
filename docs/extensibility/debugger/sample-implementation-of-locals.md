@@ -1,5 +1,7 @@
 ---
 title: Implementazione di esempio di variabili locali | Microsoft Docs
+description: Informazioni su come Visual Studio ottiene le variabili locali per un metodo dall'analizzatore di espressioni in questo articolo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86aacb096001bdf634fe019ae9a28f01745c3ce0
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: aad77c9b9481ed6ae32c66260b1e3ef2a662c836
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011892"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847637"
 ---
 # <a name="sample-implementation-of-locals"></a>Implementazione di esempio di variabili locali
 > [!IMPORTANT]
@@ -60,5 +62,5 @@ ms.locfileid: "90011892"
 
  [Esempio MyCEE](/previous-versions/) Viene illustrato un approccio di implementazione alla creazione di un analizzatore di espressioni per il linguaggio MyC.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzazione di variabili locali](../../extensibility/debugger/displaying-locals.md)

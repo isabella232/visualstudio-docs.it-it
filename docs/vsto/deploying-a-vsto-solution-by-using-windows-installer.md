@@ -1,5 +1,7 @@
 ---
 title: Distribuzione di una soluzione VSTO con Windows Installer
+description: Informazioni su come distribuire un componente aggiuntivo Microsoft Visual Studio Tools per Office (VSTO) o una soluzione a livello di documento usando un progetto Programma di installazione di Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/18/2010
 ms.topic: conceptual
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6fd2824ae10ad36a7ed50250620e98575e9ea60
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e49705c99801cd6e09f4bf6d9be3c411cc2c53e3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585693"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846545"
 ---
 # <a name="deploying-a-vsto-solution-using-windows-installer"></a>Distribuzione di una soluzione VSTO con Windows Installer
 
@@ -144,7 +146,7 @@ Il progetto di installazione deve distribuire ExcelAddIn. Per configurare il pro
 
 ### <a name="to-add-the-exceladdin-project-output"></a>Per aggiungere l'output del progetto ExcelAddIn
 
-1. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse su **OfficeAddInSetup**, scegliere **Aggiungi** e quindi **output progetto**.
+1. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse su **OfficeAddInSetup**, scegliere **Aggiungi** e quindi **output progetto**.
 2. Nella finestra di dialogo **Aggiungi gruppo di output del progetto** selezionare **ExcelAddIn** dall'elenco progetto e **output primario**.
 3. Fare clic su **OK** per aggiungere l'output del progetto al progetto di installazione.
 
@@ -156,7 +158,7 @@ Il progetto di installazione deve distribuire il manifesto di distribuzione e il
 
 ### <a name="to-add-the-deployment-and-application-manifests"></a>Per aggiungere i manifesti dell'applicazione e della distribuzione
 
-1. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse su **OfficeAddInSetup**, scegliere **Aggiungi**e quindi fare clic su **file**.
+1. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse su **OfficeAddInSetup**, scegliere **Aggiungi** e quindi fare clic su **file**.
 2. Nella finestra di dialogo **Aggiungi file** passare alla directory di output **ExcelAddIn** . In genere, la directory di output è la sottocartella **bin \\ Release** della directory radice del progetto, a seconda della configurazione di compilazione selezionata.
 3. Selezionare i file **ExcelAddIn. VSTO** e **ExcelAddIn.dll. manifest** e fare clic su **Apri** per aggiungere questi due file al progetto di installazione.
 
@@ -168,7 +170,7 @@ Il riferimento a ExcelAddIn include tutti i componenti richiesti da ExcelAddIn. 
 
 ### <a name="to-exclude-the-exceladdin-project-dependencies"></a>Per escludere le dipendenze del progetto ExcelAddIn
 
-1. Nel **Esplora soluzioni**, nel nodo **OfficeAddInSetup** , selezionare tutti gli elementi di dipendenza sotto l'elemento **dipendenze rilevate** , ad eccezione di **Microsoft .NET Framework** o di qualsiasi assembly che termina con ** \*.Utilities.dll**. Gli assembly delle utilità sono progettati per essere distribuiti insieme all'applicazione.
+1. Nel **Esplora soluzioni**, nel nodo **OfficeAddInSetup** , selezionare tutti gli elementi di dipendenza sotto l'elemento **dipendenze rilevate** , ad eccezione di **Microsoft .NET Framework** o di qualsiasi assembly che termina con **\*.Utilities.dll**. Gli assembly delle utilità sono progettati per essere distribuiti insieme all'applicazione.
 2. Fare clic con il pulsante destro del mouse sul gruppo e scegliere **Proprietà**.
 3. Nella finestra **Proprietà** modificare la proprietà **Exclude** in **true** per escludere gli assembly dipendenti dal progetto di installazione. Assicurarsi di non escludere gli assembly di utilità.
 
@@ -185,7 +187,7 @@ Per **ExcelAddIn**, questi prerequisiti devono essere installati prima che il co
 
 Per configurare i componenti dipendenti come prerequisiti
 
-1. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **OfficeAddInSetup** e scegliere **proprietà**.
+1. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **OfficeAddInSetup** e scegliere **proprietà**.
 2. Verrà visualizzata la finestra di dialogo **pagine delle proprietà di OfficeAddInSetup** .
 3. Fare clic sul pulsante **prerequisiti** .
 4. Nella finestra di dialogo Prerequisiti selezionare la versione corretta del .NET Framework e il Microsoft Visual Studio Tools per Office Runtime.
@@ -201,13 +203,13 @@ Microsoft Office individua i componenti aggiuntivi utilizzando le chiavi del reg
 
 ### <a name="to-configure-the-registry"></a>Per configurare il registro di sistema
 
-1. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse su **OfficeAddInSetup**.
+1. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse su **OfficeAddInSetup**.
 2. Espandi **visualizzazione**.
 3. Fare clic su **Registro di sistema** per aprire la finestra Editor del registro di sistema.
 4. Nell'editor **del registro di sistema (OfficeAddInSetup)** espandere **HKEY \_ Local \_ Machine** e quindi **software**.
-5. Eliminare la chiave del ** \[ produttore \] **, disponibile in **HKEY \_ Local \_ Machine \\ software**.
+5. Eliminare la chiave del **\[ produttore \]**, disponibile in **HKEY \_ Local \_ Machine \\ software**.
 6. Espandere **HKEY \_ Current \_ User** e quindi **software**.
-7. Elimina la chiave del ** \[ produttore \] ** disponibile in **HKEY \_ Current \_ User \\ software**.
+7. Elimina la chiave del **\[ produttore \]** disponibile in **HKEY \_ Current \_ User \\ software**.
 8. Per aggiungere chiavi del registro di sistema per l'installazione del componente aggiuntivo, fare clic con il pulsante destro del mouse sulla chiave **hive User/Machine** , quindi scegliere **nuova chiave**. Usare il **software** di testo per il nome della nuova chiave. Fare clic con il pulsante destro del mouse sulla chiave **software** appena creata e creare una nuova chiave con il testo **Microsoft**.
 9. Utilizzare un processo simile per creare l'intera gerarchia di chiavi necessaria per la registrazione del componente aggiuntivo:
 
@@ -215,17 +217,17 @@ Microsoft Office individua i componenti aggiuntivi utilizzando le chiavi del reg
 
     Il nome della società viene spesso utilizzato come prefisso per il nome del componente aggiuntivo per garantire l'univocità.
 
-10. Fare clic con il pulsante destro del mouse sulla chiave **chiave SampleCompany. ExcelAddIn** , scegliere **nuovo**e fare clic su **valore stringa**. Utilizzare la **Descrizione** del testo per il nome.
+10. Fare clic con il pulsante destro del mouse sulla chiave **chiave SampleCompany. ExcelAddIn** , scegliere **nuovo** e fare clic su **valore stringa**. Utilizzare la **Descrizione** del testo per il nome.
 11. Usare questo passaggio per aggiungere altri tre valori:
     - **FriendlyName** di tipo **String**
     - **LoadBehavior** di tipo **DWORD**
     - **Manifesto** di tipo **stringa**
 
-12. Fare clic con il pulsante destro del mouse sul valore **Description** nell'editor del registro di sistema, quindi scegliere **finestra Proprietà**. Nella **finestra Proprietà**immettere il **componente aggiuntivo demo di Excel** per la proprietà valore.
-13. Selezionare la chiave **FriendlyName** nell'editor del registro di sistema. Nella **finestra Proprietà**modificare la proprietà **value** in **componente aggiuntivo demo di Excel**.
-14. Selezionare la chiave **LoadBehavior** nell'editor del registro di sistema. Nella **finestra Proprietà**modificare la proprietà **value** in **3.** Il valore 3 per LoadBehavior indica che il componente aggiuntivo deve essere caricato all'avvio dell'applicazione host. Per altre informazioni sul comportamento del caricamento, vedere [voci del registro di sistema per i componenti aggiuntivi VSTO](registry-entries-for-vsto-add-ins.md).
+12. Fare clic con il pulsante destro del mouse sul valore **Description** nell'editor del registro di sistema, quindi scegliere **finestra Proprietà**. Nella **finestra Proprietà** immettere il **componente aggiuntivo demo di Excel** per la proprietà valore.
+13. Selezionare la chiave **FriendlyName** nell'editor del registro di sistema. Nella **finestra Proprietà** modificare la proprietà **value** in **componente aggiuntivo demo di Excel**.
+14. Selezionare la chiave **LoadBehavior** nell'editor del registro di sistema. Nella **finestra Proprietà** modificare la proprietà **value** in **3.** Il valore 3 per LoadBehavior indica che il componente aggiuntivo deve essere caricato all'avvio dell'applicazione host. Per altre informazioni sul comportamento del caricamento, vedere [voci del registro di sistema per i componenti aggiuntivi VSTO](registry-entries-for-vsto-add-ins.md).
 
-15. Selezionare la chiave del **manifesto** nell'editor del registro di sistema. Nella **finestra Proprietà**modificare la proprietà **value** in **file:///[TARGETDIR] ExcelAddIn. VSTO | vstolocal**
+15. Selezionare la chiave del **manifesto** nell'editor del registro di sistema. Nella **finestra Proprietà** modificare la proprietà **value** in **file:///[TARGETDIR] ExcelAddIn. VSTO | vstolocal**
 
     ![Screenshot dell'editor del registro di sistema](media/setup-project-figure-6.png)
 
@@ -252,10 +254,10 @@ Se il pacchetto MSI viene usato per installare il componente aggiuntivo o la sol
 
 ### <a name="configure-a-launch-condition-to-detect-the-vsto-runtime"></a>Configurare una condizione di avvio per rilevare il runtime di VSTO
 
-1. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse su **OfficeAddInSetup**.
+1. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse su **OfficeAddInSetup**.
 2. Espandi **visualizzazione**.
 3. Fare clic su **condizioni di avvio**.
-4. Nell'editor **condizioni di avvio (OfficeAddInSetup)** fare clic con il pulsante destro del mouse **su requisiti nel computer di destinazione**e quindi fare clic su **Aggiungi condizione di avvio del registro di sistema**. Questa condizione di ricerca può eseguire ricerche nel registro di sistema per una chiave installata dal runtime di VSTO. Il valore della chiave è quindi disponibile per le varie parti del programma di installazione tramite una proprietà denominata. La condizione di avvio utilizza la proprietà definita dalla condizione di ricerca per verificare la presenza di un determinato valore.
+4. Nell'editor **condizioni di avvio (OfficeAddInSetup)** fare clic con il pulsante destro del mouse **su requisiti nel computer di destinazione** e quindi fare clic su **Aggiungi condizione di avvio del registro di sistema**. Questa condizione di ricerca può eseguire ricerche nel registro di sistema per una chiave installata dal runtime di VSTO. Il valore della chiave è quindi disponibile per le varie parti del programma di installazione tramite una proprietà denominata. La condizione di avvio utilizza la proprietà definita dalla condizione di ricerca per verificare la presenza di un determinato valore.
 5. Nell'editor **condizioni di avvio (OfficeAddInSetup)** selezionare la condizione **di ricerca Cerca RegistryEntry1** , fare clic con il pulsante destro del mouse sulla condizione e selezionare **finestra Proprietà**.
 
 6. Nella finestra **Proprietà** impostare queste proprietà:
@@ -280,7 +282,7 @@ Se il pacchetto MSI viene usato per installare il componente aggiuntivo o la sol
 
 ### <a name="configure-a-launch-condition-to-detect-the-vsto-runtime-installed-by-office"></a>Configurare una condizione di avvio per rilevare il runtime di VSTO installato da Office
 
-1. Nell'editor **condizioni di avvio (OfficeAddInSetup)** fare clic con il pulsante destro del mouse su **Cerca computer di destinazione**e quindi scegliere **Aggiungi ricerca Registro di sistema**.
+1. Nell'editor **condizioni di avvio (OfficeAddInSetup)** fare clic con il pulsante destro del mouse su **Cerca computer di destinazione** e quindi scegliere **Aggiungi ricerca Registro di sistema**.
 2. Selezionare la condizione **di ricerca RegistryEntry1** , fare clic con il pulsante destro del mouse sulla condizione e selezionare **finestra Proprietà**.
 3. Nella finestra **Proprietà** impostare queste proprietà:
     1. Impostare il valore di **(Name)** per la **ricerca di Office VSTO Runtime**.
@@ -312,9 +314,9 @@ Per altre informazioni, vedere [equivalenza del tipo e tipi di interoperabilità
 
 ### <a name="to-configure-launch-conditions-to-detect-that-for-office-pias"></a>Per configurare le condizioni di avvio per rilevare che per i Pia di Office
 
-1. Nell'editor **condizioni di avvio (OfficeAddInSetup)** fare clic con il pulsante destro del mouse **su requisiti nel computer di destinazione**e quindi **scegliere Aggiungi Windows Installer condizione di avvio**. Questa condizione di avvio cerca un assembly di interoperabilità primario di Office cercando l'ID componente specifico.
+1. Nell'editor **condizioni di avvio (OfficeAddInSetup)** fare clic con il pulsante destro del mouse **su requisiti nel computer di destinazione** e quindi **scegliere Aggiungi Windows Installer condizione di avvio**. Questa condizione di avvio cerca un assembly di interoperabilità primario di Office cercando l'ID componente specifico.
 2. Fare clic con il pulsante destro del mouse su **Cerca Component1** e scegliere **finestra Proprietà** per visualizzare le proprietà della condizione di avvio.
-3. Nella **finestra Proprietà**impostare le proprietà seguenti:
+3. Nella **finestra Proprietà** impostare le proprietà seguenti:
 
     1. Modificare il valore della proprietà **(Name)** per cercare l'assembly di interoperabilità **primario condiviso di Office**
     2. Modificare il valore di **ComponentID** in ID componente per il componente di Office che si sta usando. È possibile trovare l'elenco di ID componente nella tabella seguente, ad esempio **{64E2917E-AA13-4CA4-BFFE-EA6EDA3AFCB4}**.
@@ -357,7 +359,7 @@ Per altre informazioni, vedere [equivalenza del tipo e tipi di interoperabilità
 
 ### <a name="to-build-the-setup-project"></a>Per compilare il progetto di installazione
 
-1. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **OfficeAddInSetup** , quindi scegliere **Compila**.
+1. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **OfficeAddInSetup** , quindi scegliere **Compila**.
 2. Utilizzando **Esplora risorse**, passare alla directory di output del progetto **OfficeAddInSetup** e passare alla cartella Release o debug, a seconda della configurazione di compilazione selezionata. Copiare tutti i file dalla cartella in un percorso a cui gli utenti possono accedere.
 
 Per testare l'installazione di ExcelAddIn
@@ -514,14 +516,14 @@ Per aggiungere la personalizzazione al documento, è necessario avere l'ID della
 Per recuperare l'ID soluzione
 
 1. Scegliere **Compila soluzione** dal menu **Compila** per compilare la soluzione a livello di documento e aggiungere la proprietà ID soluzione al file di progetto.
-2. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto a livello di documento **ExcelWorkbookProject**
+2. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto a livello di documento **ExcelWorkbookProject**
 3. Fare clic su **UnloadProject** per accedere al file di progetto dall'interno di Visual Studio.
 
     ![Screenshot della soluzione Esplora soluzioni lo scaricamento del documento di Excel](media/setup-project-figure-16.jpg)
 
     **Figura 13: scaricamento della soluzione documento di Excel**
 
-4. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse su **ExcelWorkbookProject** e scegliere **EditExcelWorkbookProject. vbproj** o **modifica ExcelWorkbookProject. csproj**.
+4. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse su **ExcelWorkbookProject** e scegliere **EditExcelWorkbookProject. vbproj** o **modifica ExcelWorkbookProject. csproj**.
 5. Nell'editor **ExcelWorkbookProject** individuare l'elemento **SolutionID** all'interno dell'elemento **PropertyGroup** .
 6. Copiare il valore GUID di questo elemento.
 
@@ -529,7 +531,7 @@ Per recuperare l'ID soluzione
 
     **Figura 14: recupero del SolutionID**
 
-7. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse su **ExcelWorkbookProject** e scegliere **Ricarica progetto**.
+7. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse su **ExcelWorkbookProject** e scegliere **Ricarica progetto**.
 8. Fare clic su **Sì** nella finestra di dialogo visualizzata per chiudere l'editor **ExcelWorkbookProject** .
 9. L' **ID soluzione** verrà usato nell'azione installazione personalizzata.
 
@@ -537,18 +539,18 @@ L'ultimo passaggio consiste nel configurare l'azione personalizzata per i passag
 
 ### <a name="to-configure-the-setup-project"></a>Per configurare il progetto di installazione
 
-1. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse su **ExcelWorkbookSetup**, espandere **Aggiungi** , quindi fare clic su **output progetto**.
-2. Nella finestra di dialogo **Aggiungi gruppo di output del progetto** fare clic su **AddCustomizationCustomAction**nell'elenco **progetto** .
+1. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse su **ExcelWorkbookSetup**, espandere **Aggiungi** , quindi fare clic su **output progetto**.
+2. Nella finestra di dialogo **Aggiungi gruppo di output del progetto** fare clic su **AddCustomizationCustomAction** nell'elenco **progetto** .
 3. Selezionare **output primario** e fare clic su **OK** per chiudere la finestra di dialogo e aggiungere l'assembly contenente l'azione personalizzata al progetto di installazione.
 
     ![Screenshot dell'azione personalizzata manifesto del documento-finestra Aggiungi gruppo di output del progetto](media/setup-project-figure-18.jpg)
 
     **Figura 15: azione personalizzata del manifesto del documento-Aggiungi gruppo di output del progetto**
 
-4. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse su **ExcelWorkbookSetup**.
+4. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse su **ExcelWorkbookSetup**.
 5. Espandere **Visualizza** e fare clic su **azioni personalizzate**.
 6. Nell'editor delle **azioni personalizzate (ExcelWorkbookSetup)** fare clic con il pulsante destro del mouse su **azioni personalizzate** e scegliere **Aggiungi azione personalizzata**.
-7. Nella finestra di dialogo **Seleziona elemento nel progetto** , scegliere **cartella applicazione**nell'elenco **Cerca in** . Selezionare **output primario da AddCustomizationCustomAction (attivo)** e fare clic su **OK** per aggiungere l'azione personalizzata al passaggio di installazione.
+7. Nella finestra di dialogo **Seleziona elemento nel progetto** , scegliere **cartella applicazione** nell'elenco **Cerca in** . Selezionare **output primario da AddCustomizationCustomAction (attivo)** e fare clic su **OK** per aggiungere l'azione personalizzata al passaggio di installazione.
 8. Nel **nodo Installa**, fare clic con il pulsante destro del mouse su **output primario da AddCustomizationCustomAction (attivo)** e scegliere **Rinomina**. Assegnare un nome al **documento di copia dell'azione personalizzata in documenti e alleghi la personalizzazione**.
 9. Nel **nodo Disinstalla**, fare clic con il pulsante destro del mouse su **output primario da AddCustomizationCustomAction (attivo)** e scegliere **Rinomina**. Denominare l'azione personalizzata **Rimuovi documento dalla cartella documenti**.
 

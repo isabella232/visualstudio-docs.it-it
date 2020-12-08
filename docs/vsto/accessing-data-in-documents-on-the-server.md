@@ -1,5 +1,7 @@
 ---
 title: Accedere ai dati nei documenti sul server
+description: Informazioni su come è possibile programmare i dati in una personalizzazione a livello di documento senza dover usare il modello a oggetti di Microsoft Office Word o Microsoft Office Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab033120c0913bbae33458c5a2d0b53972364581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e436c7a30708fac0cf59c2e79100cc89dade84b2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255772"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847624"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Accedere ai dati nei documenti sul server
   È possibile programmare in base ai dati in una personalizzazione a livello di documento senza dover usare il modello a oggetti di Microsoft Office Word o Microsoft Office Excel. Ciò significa che è possibile accedere ai dati contenuti in un documento in un server in cui non è installato Word o Excel. Ad esempio, il codice in un server, ad esempio in una [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] pagina, può personalizzare i dati in un documento e inviare il documento personalizzato a un utente finale. Quando l'utente finale apre il documento, data binding codice nell'assembly della soluzione associa i dati personalizzati al documento. Questa operazione è possibile perché i dati nel documento sono separati dall'interfaccia utente. Per ulteriori informazioni, vedere la pagina relativa ai [dati memorizzati nella cache nelle personalizzazioni a livello di documento](../vsto/cached-data-in-document-level-customizations.md).
@@ -77,7 +79,7 @@ ms.locfileid: "71255772"
 ## <a name="access-typed-datasets-in-the-cache"></a>Accedere a DataSet tipizzati nella cache
  Se si desidera accedere ai dati in un DataSet tipizzato da una soluzione Office e da un'applicazione esterna a Office, ad esempio un Windows Forms Application o un [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] progetto, è necessario definire il set di dati tipizzato in un assembly separato a cui si fa riferimento in entrambi i progetti. Se si aggiunge il set di dati tipizzato a ogni progetto usando la **Configurazione guidata origine dati** o la **Progettazione DataSet**, il .NET Framework considererà i set di dati tipizzati nei due progetti come tipi diversi. Per altre informazioni sulla creazione di DataSet tipizzati, vedere [creare e configurare set di dati in Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Accedere ai dati nei documenti sul server](../vsto/accessing-data-in-documents-on-the-server.md)
 - [Dati memorizzati nella cache nelle personalizzazioni a livello di documento](../vsto/cached-data-in-document-level-customizations.md)

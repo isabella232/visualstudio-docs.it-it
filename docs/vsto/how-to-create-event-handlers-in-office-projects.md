@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: creare gestori eventi nei progetti di Office'
+description: Informazioni sui vari modi in cui è possibile creare gestori di eventi predefiniti per i controlli in Visual Basic e C#.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee85d89dcb990cebd595dadbd7b28add4a7b371a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f87889c13021a7c0a43b58564210db34301abdf4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538307"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846701"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Procedura: creare gestori eventi nei progetti di Office
   Esistono diversi modi per creare i gestori eventi in Visual Basic e C#. Nella visualizzazione della struttura è possibile creare i gestori eventi predefiniti per i controlli facendo doppio clic sul controllo o utilizzando il riquadro eventi della finestra **Proprietà** per creare gestori per qualsiasi evento nel controllo. Tuttavia, se ci si trova nella visualizzazione codice, è possibile che non si desideri passare alla visualizzazione progettazione per creare un gestore eventi.
@@ -50,7 +52,7 @@ ms.locfileid: "85538307"
 
      Visual Studio completa automaticamente la riga di codice, crea il gestore eventi e sposta il punto di inserimento nel gestore eventi appena creato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Scrivere codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)
 - [Procedura dettagliata: programma per eventi di un controllo NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
 - [Compilazione di soluzioni Office](../vsto/building-office-solutions.md)

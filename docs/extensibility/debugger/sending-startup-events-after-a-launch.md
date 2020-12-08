@@ -1,5 +1,7 @@
 ---
 title: Invio di eventi di avvio dopo un avvio | Microsoft Docs
+description: Informazioni sulle serie di eventi di avvio inviati dal motore di debug alla sessione di debug dopo che il motore di debug è associato a un programma.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c71db002420a2b822bffd34f2ae05e712f6a4bb9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99b094fd1019e0d7dea09e2953cb4f31e03b80dc
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713009"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847884"
 ---
 # <a name="send-startup-events-after-a-launch"></a>Invia eventi di avvio dopo un avvio
 Quando il motore di debug (DE) viene collegato al programma, invia una serie di eventi di avvio alla sessione di debug.
@@ -43,6 +45,6 @@ Quando il motore di debug (DE) viene collegato al programma, invia una serie di 
 
   Quando il codice viene caricato e pronto per l'esecuzione, ma prima dell'esecuzione di qualsiasi codice, il DE invia l'evento SDM a [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) Load complete. Infine, se il programma non è già in esecuzione, il DE Invia un evento del punto di ingresso [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) , segnalando che il programma ha raggiunto il punto di ingresso principale ed è pronto per il debug.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Controllo dell'esecuzione](../../extensibility/debugger/control-of-execution.md)
 - [Attività di debug](../../extensibility/debugger/debugging-tasks.md)

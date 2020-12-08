@@ -1,5 +1,7 @@
 ---
 title: Registrazione di un motore di debug personalizzato | Microsoft Docs
+description: Informazioni sul modo in cui il motore di debug si registra come class factory, seguendo le convenzioni COM e registrandosi con Visual Studio tramite il registro di sistema.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a664385594f139e2c3c5a18a0d8a59e23c13df0a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 01d7190bbf087bb60ac670341d82078e94c81c52
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011840"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847182"
 ---
 # <a name="register-a-custom-debug-engine"></a>Registrare un motore di debug personalizzato
 Il motore di debug deve registrarsi come class factory, seguendo le convenzioni COM, oltre a eseguire la registrazione con Visual Studio tramite la sottochiave del registro di sistema di Visual Studio.
@@ -48,7 +50,7 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creazione di un motore di debug personalizzato](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 - [Helper SDK per il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
 - [Esercitazione: creazione di un motore di debug con ATL COM](/previous-versions/bb147024(v=vs.90))

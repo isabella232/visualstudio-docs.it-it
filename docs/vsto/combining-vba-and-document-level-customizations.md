@@ -1,5 +1,7 @@
 ---
 title: Combinare VBA e personalizzazioni a livello di documento
+description: Informazioni su come usare il codice Visual Basic, Applications Edition (VBA) in un documento che fa parte di una personalizzazione a livello di documento per Microsoft Office Word o Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3bab9c132439c6efa53842f1e13c6c5be31db00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59d0e9122bf35ac6f40799d91d3b52614d027f50
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70977608"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846402"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Combinare VBA e personalizzazioni a livello di documento
   È possibile usare il codice Visual Basic, Applications Edition (VBA) in un documento incluso in una personalizzazione a livello di documento per Microsoft Office Word o Microsoft Office Excel. È possibile chiamare codice VBA nel documento dall'assembly di personalizzazione oppure configurare il progetto in modo da consentire al codice VBA nel documento di chiamare il codice nell'assembly di personalizzazione.
@@ -42,7 +44,7 @@ ms.locfileid: "70977608"
  Quando si esegue la soluzione, i gestori eventi in VBA e nell'assembly di personalizzazione selezionano eventi generati nel documento e vengono eseguiti entrambi i set di codice. È impossibile stabilire in anticipo quale dei due codici verrà eseguito per primo. Per ottenere questa informazione è necessario verificare ogni singolo caso. Se i due gruppi di codice non vengono coordinati e testati attentamente, il risultato potrebbe non essere quello previsto.
 
 ## <a name="call-vba-code-from-the-customization-assembly"></a>Chiamare il codice VBA dall'assembly di personalizzazione
- È possibile chiamare macro nei documenti di Word nonché macro e funzioni nelle cartelle di lavoro di Excel. Per farlo, usare uno dei metodi seguenti:
+ È possibile chiamare macro nei documenti di Word nonché macro e funzioni nelle cartelle di lavoro di Excel. A tale scopo, adottare uno dei metodi seguenti:
 
 - Per Word, chiamare il <xref:Microsoft.Office.Interop.Word._Application.Run%2A> metodo della <xref:Microsoft.Office.Interop.Word.Application> classe.
 
@@ -90,7 +92,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
   - Per Word: *. docm* o *. doc*
 
-  - Per Excel: *. xlsm*, *. xltm*, *. xls*o *. xlt*
+  - Per Excel: *. xlsm*, *. xltm*, *. xls* o *. xlt*
 
 - Il documento deve già contenere un progetto VBA che include il codice VBA.
 
@@ -249,7 +251,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 |Dopo aver impostato la proprietà **EnableVbaCallers** o **ReferenceAssemblyFromVbaProject** , un messaggio di errore indica che il numero di versione specificato da <xref:System.Reflection.AssemblyVersionAttribute> non è valido.|Assicurarsi che la <xref:System.Reflection.AssemblyVersionAttribute> dichiarazione nel file *AssemblyInfo.cs* o *AssemblyInfo. vb* del progetto sia impostata su un numero di versione dell'assembly valido. Per informazioni sui numeri di versione di assembly validi, vedere la classe <xref:System.Reflection.AssemblyVersionAttribute> .|
 |Dopo avere rinominato l'assembly di personalizzazione, il codice VBA che effettua chiamate nell'assembly di personalizzazione smette di funzionare.|Se si modifica il nome dell'assembly di personalizzazione dopo averlo esposto al codice VBA, il collegamento tra il progetto VBA nel documento e l'assembly di personalizzazione viene interrotto. Per correggere questo problema, impostare la proprietà **ReferenceFromVbaAssembly** nel progetto su **False** e poi di nuovo su **True**, quindi sostituire qualsiasi riferimento al nome dell'assembly precedente nel codice VBA con il nome del nuovo assembly.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: esporre il codice a VBA in un progetto Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
 - [Procedura: esporre il codice a VBA in un progetto Visual C&#35;](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
 - [Procedura dettagliata: chiamata di codice da VBA in un progetto Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)

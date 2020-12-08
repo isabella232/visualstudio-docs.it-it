@@ -1,5 +1,7 @@
 ---
 title: Creazione di aree del modulo di Outlook
+description: Informazioni su come usare le aree del modulo per personalizzare i moduli di Microsoft Outlook per semplificare la progettazione, lo sviluppo e il debug delle aree del modulo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8a999ca11427533690628fb92f28e93d22cf0971
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3273c02416cac54dfd244ba4f163fb5d726413c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255910"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847962"
 ---
 # <a name="create-outlook-form-regions"></a>Creazione di aree del modulo di Outlook
   È possibile usare aree del modulo per personalizzare i moduli di Microsoft Office Outlook. Visual Studio fornisce strumenti avanzati che semplificano la progettazione, lo sviluppo e il debug delle aree del modulo.
@@ -87,7 +89,7 @@ ms.locfileid: "71255910"
 
 - Un file di codice di Progettazione aree di form. Questo file contiene il codice generato da Progettazione aree di form e non può essere modificato direttamente.
 
-- Un file*OFS*(Outlook Form Storage).
+- Un file *OFS*(Outlook Form Storage).
 
     > [!NOTE]
     > Questo file viene aggiunto al progetto solo se si importa un'area del modulo progettata in Outlook.
@@ -104,7 +106,7 @@ ms.locfileid: "71255910"
 ### <a name="add-an-existing-form-region-to-your-project"></a><a name="AddingExistingFormRegion"></a> Aggiungere un'area del modulo esistente al progetto
  Un'area del modulo di Outlook di un altro progetto di Outlook può essere riutilizzata nel progetto corrente di componente aggiuntivo VSTO per Outlook con la finestra di dialogo **Aggiungi elemento esistente** .
 
- L'area del modulo esistente deve avere un file di codice (*. vb* o *. cs*); non è possibile aggiungere file con*estensione OFS*(Outlook Form Storage) tramite la finestra di dialogo **Aggiungi elemento esistente** . Tuttavia, è possibile creare un'area del modulo nuova importando un file ofs (Outlook From Storage). Per altre informazioni, vedere [procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
+ L'area del modulo esistente deve avere un file di codice (*. vb* o *. cs*); non è possibile aggiungere file con *estensione OFS*(Outlook Form Storage) tramite la finestra di dialogo **Aggiungi elemento esistente** . Tuttavia, è possibile creare un'area del modulo nuova importando un file ofs (Outlook From Storage). Per altre informazioni, vedere [procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
 ## <a name="use-the-form-region-designer"></a><a name="UsingFormRegionDesigner"></a> Usare la finestra di progettazione dell'area del modulo
  Progettazione aree di form consente di configurare il layout e l'aspetto di un'area del modulo. È possibile trascinare i controlli gestiti sulla superficie della finestra di progettazione, fare doppio clic su controlli per aprire i gestori eventi e impostare le proprietà nella finestra **Proprietà** .
@@ -116,18 +118,18 @@ ms.locfileid: "71255910"
 
  È possibile aprire Progettazione aree di form in tre modi diversi:
 
-- In **Esplora soluzioni**fare doppio clic sul file di codice dell'area del modulo.
+- In **Esplora soluzioni** fare doppio clic sul file di codice dell'area del modulo.
 
-- In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul file di codice dell'area del modulo, quindi scegliere **Visualizza finestra di progettazione**.
+- In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul file di codice dell'area del modulo, quindi scegliere **Visualizza finestra di progettazione**.
 
-- In **Esplora soluzioni**selezionare il file di codice dell'area del modulo, quindi scegliere **finestra di progettazione**dal menu **Visualizza** .
+- In **Esplora soluzioni** selezionare il file di codice dell'area del modulo, quindi scegliere **finestra di progettazione** dal menu **Visualizza** .
 
   Progettazione aree di form supporta solo i controlli gestiti. Non è possibile aggiungere controlli nativi di Outlook.
 
 ## <a name="import-a-form-region-designed-in-outlook"></a><a name="UsingFormRegionDesignedOutlook"></a> Importare un'area del modulo progettata in Outlook
  Quando si progetta in Outlook, è possibile aggiungere all'area del modulo i controlli nativi di Outlook che consentono di effettuare associazioni ai dati di Outlook in fase di progettazione. Tuttavia, non si potrà usare in seguito Progettazione aree di form per aggiungere i controlli gestiti o modificare la progettazione dell'area del modulo.
 
- È possibile importare aree del modulo in un progetto di componente aggiuntivo VSTO di Outlook usando la procedura guidata **nuova area del modulo di Outlook** . Nella pagina **selezionare la modalità di creazione dell'area del modulo** selezionare **Importa un file OFS (Outlook Form Storage)**. È quindi possibile passare al percorso di un file*OFS*(Outlook Form Storage file). Outlook salva le aree del modulo come file *OFS* .
+ È possibile importare aree del modulo in un progetto di componente aggiuntivo VSTO di Outlook usando la procedura guidata **nuova area del modulo di Outlook** . Nella pagina **selezionare la modalità di creazione dell'area del modulo** selezionare **Importa un file OFS (Outlook Form Storage)**. È quindi possibile passare al percorso di un file *OFS*(Outlook Form Storage file). Outlook salva le aree del modulo come file *OFS* .
 
  La procedura guidata **nuova area del modulo di Outlook** copia il file *OFS* nella directory del progetto e aggiunge i riferimenti al controllo al file di progettazione dell'area del modulo. È possibile quindi gestire gli eventi di controllo nel file di codice dell'area del modulo.
 

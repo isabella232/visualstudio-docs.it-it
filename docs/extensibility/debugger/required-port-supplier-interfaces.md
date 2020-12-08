@@ -1,5 +1,7 @@
 ---
 title: Interfacce del fornitore di porte obbligatorie | Microsoft Docs
+description: Informazioni sulle interfacce che devono essere eseguite da un fornitore di porte. Un fornitore di porte fornisce le porte e le implementa.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf2aeb1f26f81d773e171aa3fed6b0f2ef976c91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13e3ac8dc0c229f0c0a00bd22131251c71893224
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713157"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847130"
 ---
 # <a name="required-port-supplier-interfaces"></a>Interfacce del fornitore di porte obbligatorie
 Un fornitore di porte deve implementare l'interfaccia [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) . [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
@@ -80,5 +82,5 @@ Un fornitore di porte deve implementare l'interfaccia [IDebugPortSupplier2](../.
 
   Fornisce un modo per la connessione di SDM a questo programma.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Implementazione di un fornitore di porte](../../extensibility/debugger/implementing-a-port-supplier.md)

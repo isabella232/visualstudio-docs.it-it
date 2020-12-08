@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere controlli Windows Form a documenti di Office'
+description: Informazioni su come aggiungere controlli Windows Forms ai documenti Microsoft Office Excel e Microsoft Office Word in fase di progettazione nei progetti a livello di documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b12d51ffe3a2e647a067b95d320e8beb70cac384
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8f073a72db1a18574dff6ab060b1ea069475fbb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547537"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846779"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Procedura: aggiungere controlli Windows Forms ai documenti di Office
   È possibile aggiungere controlli Windows Form a documenti di Microsoft Office Excel e Microsoft Office Word in fase di progettazione in progetti a livello di documento. In fase di esecuzione è possibile aggiungere controlli nelle personalizzazioni a livello di documento e nei componenti aggiuntivi VSTO. Ad esempio, è possibile aggiungere un <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> controllo al foglio di lavoro in modo che gli utenti possano selezionare da un elenco di opzioni.
@@ -44,7 +46,7 @@ ms.locfileid: "85547537"
 
 1. Creare o aprire un progetto di una cartella di lavoro Excel o un progetto di documento di Word in Visual Studio per visualizzare il documento nella finestra di progettazione. Per informazioni sulla creazione di progetti, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Nella scheda **controlli comuni** della **casella degli strumenti**fare clic sul controllo che si desidera aggiungere e trascinarlo nel documento.
+2. Nella scheda **controlli comuni** della **casella degli strumenti** fare clic sul controllo che si desidera aggiungere e trascinarlo nel documento.
 
     > [!NOTE]
     > Quando si seleziona un controllo in Excel, verrà visualizzato **=EMBED("WinForms.Control.Host","")** nella **Barra della formula**. Questo testo è necessario e non deve essere eliminato.
@@ -53,7 +55,7 @@ ms.locfileid: "85547537"
 
 1. Creare o aprire un progetto di una cartella di lavoro Excel o un progetto di documento di Word in Visual Studio per visualizzare il documento nella finestra di progettazione. Per informazioni sulla creazione di progetti, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Nella scheda **controlli comuni** della **casella degli strumenti**fare clic sul controllo che si desidera aggiungere.
+2. Nella scheda **controlli comuni** della **casella degli strumenti** fare clic sul controllo che si desidera aggiungere.
 
 3. Nel documento fare clic sul punto in cui si vuole posizionare l'angolo superiore sinistro del controllo e trascinare fino al punto in cui si vuole posizionare l'angolo inferiore destro.
 
@@ -66,7 +68,7 @@ ms.locfileid: "85547537"
 
 1. Creare o aprire un progetto di una cartella di lavoro Excel o un progetto di documento di Word in Visual Studio per visualizzare il documento nella finestra di progettazione. Per informazioni sulla creazione di progetti, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Nella scheda **controlli comuni** della **casella degli strumenti**fare clic sul controllo che si desidera aggiungere.
+2. Nella scheda **controlli comuni** della **casella degli strumenti** fare clic sul controllo che si desidera aggiungere.
 
 3. Nel documento fare clic nel punto in cui si vuole aggiungere il controllo.
 
@@ -79,7 +81,7 @@ ms.locfileid: "85547537"
 
 1. Creare o aprire un progetto di una cartella di lavoro Excel o un progetto di documento di Word in Visual Studio per visualizzare il documento nella finestra di progettazione. Per informazioni sulla creazione di progetti, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Nella scheda **controlli comuni** della **casella degli strumenti**fare doppio clic sul controllo che si desidera aggiungere.
+2. Nella scheda **controlli comuni** della **casella degli strumenti** fare doppio clic sul controllo che si desidera aggiungere.
 
      Il controllo viene aggiunto al documento al centro del documento o del riquadro attivo.
 
@@ -90,7 +92,7 @@ ms.locfileid: "85547537"
 
 1. Creare o aprire un progetto di una cartella di lavoro Excel o un progetto di documento di Word in Visual Studio per visualizzare il documento nella finestra di progettazione. Per informazioni sulla creazione di progetti, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. Nella scheda **controlli comuni** della **casella degli strumenti**fare clic sul controllo che si desidera aggiungere e premere il tasto **invio** .
+2. Nella scheda **controlli comuni** della **casella degli strumenti** fare clic sul controllo che si desidera aggiungere e premere il tasto **invio** .
 
      Il controllo viene aggiunto al documento al centro del documento o del riquadro attivo.
 
@@ -130,7 +132,7 @@ ms.locfileid: "85547537"
      [!code-vb[Trin_WordAddInDynamicControls#7](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#7)]
      [!code-csharp[Trin_WordAddInDynamicControls#7](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#7)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Cenni preliminari sui controlli Windows Forms nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Procedura: ridimensionare i controlli all'interno di celle del foglio di comando](../vsto/how-to-resize-controls-within-worksheet-cells.md)

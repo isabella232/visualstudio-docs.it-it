@@ -1,5 +1,7 @@
 ---
 title: Compilazione di soluzioni Office
+description: Informazioni sulle differenze tra la compilazione e il debug di progetti di Office e la compilazione e il debug di altri tipi di progetti in Visual Studio, ad esempio Windows Forms.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f89e20b710584c678c035f4d85034e90bb11323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d942a7818c3c71e0859c9271b329688734682f2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551850"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847936"
 ---
 # <a name="build-office-solutions"></a>Compilazione di soluzioni Office
   I processi di compilazione e debug dei progetti di Office sono in genere analoghi agli stessi processi per altri tipi di progetti in Visual Studio, ad esempio per Windows Form. Gli argomenti di questa sezione illustrano le differenze esistenti. Per informazioni generali su come compilare applicazioni, vedere [compilazione e compilazione in Visual Studio](../ide/compiling-and-building-in-visual-studio.md).

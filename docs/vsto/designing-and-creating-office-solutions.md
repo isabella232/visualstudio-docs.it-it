@@ -1,5 +1,7 @@
 ---
 title: Progettazione e creazione di soluzioni Office
+description: Informazioni su come Visual Studio offre modelli di progetto che è possibile usare per creare diversi tipi di soluzioni Office.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd51c377ed20807c5e5e2b26f842c6152bf7c222
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 191de013c94bfede7d1ddac5f3dd0392143e08dc
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808220"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847533"
 ---
 # <a name="design-and-create-office-solutions"></a>Progettazione e creazione di soluzioni Office
 
@@ -91,7 +93,7 @@ Visual Studio fornisce modelli di progetto che è possibile utilizzare per crear
 ## <a name="referenced-assemblies"></a>Assembly di riferimento
  L'assembly può fare riferimento ad altri assembly elencati nei riferimenti del progetto. Tuttavia, un assembly del progetto a livello di documento non può fare riferimento a un altro assembly del progetto a livello di documento.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica sui modelli di progetto di Office](../vsto/office-project-templates-overview.md)
 - [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Progetti di Office nell'ambiente Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)

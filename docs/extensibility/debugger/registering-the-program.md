@@ -1,5 +1,7 @@
 ---
 title: Registrazione del programma | Microsoft Docs
+description: Informazioni su come un programma di cui eseguire il debug viene registrato con una porta dopo che il motore di debug acquisisce una porta.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b68fa67f784d155288482ad724b632ed5ba5fa41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80c3d13cc7319e43390a7e9e6f4eb42a5a87c780
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713164"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847096"
 ---
 # <a name="register-the-program"></a>Registrare il programma
 Dopo che il motore di debug ha acquisito una porta, rappresentata da un'interfaccia [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) , il passaggio successivo per abilitare il programma di cui eseguire il debug consiste nel registrarla con la porta. Una volta registrato, il programma è disponibile per il debug in uno dei modi seguenti:
@@ -104,6 +106,6 @@ Dopo che il motore di debug ha acquisito una porta, rappresentata da un'interfac
 
     ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Recupero di una porta](../../extensibility/debugger/getting-a-port.md)
 - [Abilitazione di un programma di cui eseguire il debug](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

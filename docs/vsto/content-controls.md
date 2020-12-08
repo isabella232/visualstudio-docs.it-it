@@ -1,5 +1,7 @@
 ---
 title: Controlli del contenuto
+description: Informazioni sui controlli contenuto e sul modo in cui i controlli contenuto consentono di progettare documenti e modelli.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -38,12 +40,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8683f5379aaa33446b150adf34f8a5aa57a83ff3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34211c7fb1fa001719219b7d08baab65340bde5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986182"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848040"
 ---
 # <a name="content-controls"></a>Controlli del contenuto
   I controlli contenuto permettono di progettare documenti e modelli che hanno le caratteristiche seguenti:
@@ -94,7 +96,7 @@ ms.locfileid: "72986182"
 ### <a name="drop-down-list"></a>Elenco a discesa
  Un elenco a discesa visualizza un elenco di voci che possono essere selezionate dagli utenti. Diversamente da una casella combinata, l'elenco a discesa non permette agli utenti di aggiungere o modificare voci. Per altre informazioni, vedere il tipo <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>.
 
-### <a name="group"></a>Group
+### <a name="group"></a>Gruppo
  Un controllo gruppo definisce un'area protetta di un documento che non può essere modificata o eliminata dagli utenti. Un controllo gruppo può contenere qualsiasi elemento del documento, come testo, tabelle, grafica e altri controlli contenuto. Per altre informazioni, vedere il tipo <xref:Microsoft.Office.Tools.Word.GroupContentControl>.
 
 ### <a name="picture"></a>Immagine
@@ -204,7 +206,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="data-bind-events-for-content-controls"></a>Eventi di associazione dati per i controlli contenuto
  Tutti i controlli contenuto forniscono un set di eventi che è possibile gestire per eseguire attività correlate ai dati, come la convalida per determinare che il testo in un controllo soddisfi determinati criteri prima dell'aggiornamento dell'origine dati. La tabella seguente elenca gli eventi controllo contenuto correlati al data binding.
 
-|Attività|Evento|
+|Attività|Event|
 |----------|-----------|
 |Eseguire codice appena prima che Word aggiorni automaticamente il testo in un controllo contenuto associato a una parte XML personalizzata.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|
 |Eseguire codice appena prima che Word aggiorni automaticamente i dati in una parte XML personalizzata associata a un controllo contenuto (ovvero dopo che il testo presente nel controllo contenuto cambia).|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|
@@ -234,7 +236,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
  [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)
 - [Procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Procedura dettagliata: creare un modello usando i controlli contenuto](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)
