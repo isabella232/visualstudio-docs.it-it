@@ -1,5 +1,7 @@
 ---
 title: Concedi attendibilità alle soluzioni Office
+description: Per concedere l'attendibilità alle soluzioni Office, è necessario modificare i criteri di sicurezza di ogni computer di destinazione in modo da considerare attendibile l'assembly della soluzione, il manifesto di distribuzione e il documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf7a68d5d3567305e4f70049d76a1c260ddecf25
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0b81c034ed0f8934da378dc214191d3be1f4506
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315239"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848326"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Concedi attendibilità alle soluzioni Office
   Concedi attendibilità alle soluzioni Office significa modificare i criteri di sicurezza di ogni computer di destinazione in modo da considerare attendibile l'assembly della soluzione, il manifesto dell'applicazione, il manifesto di distribuzione e il documento. È possibile concedere l'attendibilità alla soluzione Office da parte dell'utente o dell'utente finale.
@@ -45,7 +47,7 @@ ms.locfileid: "89315239"
 
  Gli amministratori possono disabilitare la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] richiesta di attendibilità o richiedere che la richiesta venga eseguita solo per le soluzioni firmate con un certificato Authenticode. Per ulteriori informazioni su come modificare queste impostazioni per le zone computer, LocalIntranet, Internet, TrustedSites e UntrustedSites, vedere [procedura: configurare il comportamento della richiesta di attendibilità ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Soluzioni Office sicure](../vsto/securing-office-solutions.md)
 - [Concedi attendibilità ai documenti](../vsto/granting-trust-to-documents.md)

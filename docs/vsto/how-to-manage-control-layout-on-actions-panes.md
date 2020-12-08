@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: gestire il layout di controllo nei riquadri azioni'
+description: Informazioni su come gestire il layout dei controlli nei riquadri azioni scrivendo codice per creare correttamente lo stack dei controlli utente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6df90847000560299b8b1a6f259ffa6e7df0729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbee49a97ab6cb3e6084950e53f30b3cb6ce1b7c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520147"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848248"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Procedura: gestire il layout di controllo nei riquadri azioni
   Per impostazione predefinita, un riquadro azioni è ancorato a destra di un documento o di un foglio di foglio. Tuttavia, può essere ancorato a sinistra, in alto o in basso. Se si usano più controlli utente, è possibile scrivere codice per lo stack corretto dei controlli utente nel riquadro azioni. Per altre informazioni, vedere [Cenni preliminari sul riquadro azioni](../vsto/actions-pane-overview.md).
@@ -65,7 +67,7 @@ ms.locfileid: "85520147"
 
 - Un progetto a livello di documento di Word con un riquadro azioni che contiene più controlli utente o controlli riquadro azioni nidificate.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)
 - [Procedura: aggiungere un riquadro azioni ai documenti di Word o alle cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Procedura: aggiungere un riquadro azioni ai documenti di Word o alle cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere controlli ListObject a fogli di foglio'
+description: Informazioni su come aggiungere controlli ListObject a un foglio di lavoro di Excel Microsoft Office in fase di progettazione e in fase di esecuzione nei progetti a livello di documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c53d820170c359e568b0a7b0ab5711a632d9eba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5dd72db2678f448158f268b790d39d4f6e44a737
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538320"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848157"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Procedura: aggiungere controlli ListObject a fogli di foglio
   È possibile aggiungere controlli <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro di Microsoft Office Excel in fase di progettazione e in fase di esecuzione nei progetti a livello di documento.
@@ -38,7 +40,7 @@ ms.locfileid: "85538320"
   Per ulteriori informazioni sui <xref:Microsoft.Office.Tools.Excel.ListObject> controlli, vedere [controllo ListObject](../vsto/listobject-control.md).
 
 ## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a> Aggiungere controlli ListObject in fase di progettazione
- Sono disponibili diversi modi per aggiungere <xref:Microsoft.Office.Tools.Excel.ListObject> controlli a un foglio di lavoro in un progetto a livello di documento in fase di progettazione: da Excel, dalla **casella degli strumenti**di Visual Studio e dalla finestra **origini dati** .
+ Sono disponibili diversi modi per aggiungere <xref:Microsoft.Office.Tools.Excel.ListObject> controlli a un foglio di lavoro in un progetto a livello di documento in fase di progettazione: da Excel, dalla **casella degli strumenti** di Visual Studio e dalla finestra **origini dati** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -50,7 +52,7 @@ ms.locfileid: "85538320"
 
 #### <a name="to-use-the-toolbox"></a>Per usare la casella degli strumenti
 
-1. Dalla scheda **Controlli Excel** della **casella degli strumenti**trascinare <xref:Microsoft.Office.Tools.Excel.ListObject> nel foglio di lavoro.
+1. Dalla scheda **Controlli Excel** della **casella degli strumenti** trascinare <xref:Microsoft.Office.Tools.Excel.ListObject> nel foglio di lavoro.
 
      Viene visualizzata la finestra di dialogo **Aggiungi controllo ListObject** .
 
@@ -86,7 +88,7 @@ ms.locfileid: "85538320"
      [!code-csharp[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#8)]
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estendi i documenti di Word e le cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)
 - [ListObject (controllo)](../vsto/listobject-control.md)

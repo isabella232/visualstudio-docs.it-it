@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: eseguire il controllo ortografico nei documenti a livello di codice'
+description: Informazioni su come controllare l'ortografia in un documento a livello di codice, è possibile usare il metodo CheckSpelling.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93ba9d9907135952f7408652bfb36f440d23138d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85294b21e9fd1f52f5cc707fc6824a87530e3cda
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537852"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848313"
 ---
 # <a name="how-to-programmatically-check-spelling-in-documents"></a>Procedura: eseguire il controllo ortografico nei documenti a livello di codice
   Per controllare l'ortografia in un documento, usare il <xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A> metodo. Questo metodo restituisce un valore booleano che indica se il parametro fornito è stato digitato correttamente.
@@ -32,6 +34,6 @@ ms.locfileid: "85537852"
      [!code-vb[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#113)]
      [!code-csharp[Trin_VstcoreWordAutomation#113](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#113)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: definire e selezionare intervalli nei documenti a livello di codice](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

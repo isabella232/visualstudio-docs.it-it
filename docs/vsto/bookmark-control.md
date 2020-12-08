@@ -1,5 +1,7 @@
 ---
 title: Bookmark (controllo)
+description: Informazioni sul modo in cui il controllo Bookmark è un segnalibro con un nome univoco, espone eventi e può essere associato ai dati.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2b8557581e93c8d2ba5a54a13c04d5de74b24f71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53f68bfd9abd26d9dfcb9e253c412a1ddf3c0e28
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255152"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848365"
 ---
 # <a name="bookmark-control"></a>Bookmark (controllo)
   Il controllo <xref:Microsoft.Office.Tools.Word.Bookmark> è un segnalibro con un nome univoco che espone gli eventi e può essere associato ai dati. Può essere usato come segnaposto per contrassegnare un elemento o una posizione in un documento di Microsoft Office Word. Il controllo <xref:Microsoft.Office.Tools.Word.Bookmark> è una combinazione degli oggetti <xref:Microsoft.Office.Interop.Word.Bookmark> e <xref:Microsoft.Office.Interop.Word.Range> .
@@ -91,7 +93,7 @@ La tabella seguente mostra in che modo la frase "This is sample text." è condiv
 |Segnalibro1|This is replacement.|
 |Segnalibro2|*\<empty>*|
 
-## <a name="events"></a>Eventi
+## <a name="events"></a>Events
 
 Gli eventi seguenti sono disponibili per il controllo <xref:Microsoft.Office.Tools.Word.Bookmark> :
 
@@ -109,7 +111,7 @@ Gli eventi seguenti sono disponibili per il controllo <xref:Microsoft.Office.Too
 
 - <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)
 - [Procedura: aggiungere controlli Bookmark ai documenti di Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

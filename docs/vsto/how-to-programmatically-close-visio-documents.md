@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: chiudere documenti di Visio a livello di codice'
+description: Informazioni su come chiudere il documento attivo Microsoft Office Visio usando il Microsoft.Office.Interop.Visio.Document. Metodo Close.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 478905a8ba4dacd2102c4b19fe091016a7409773
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5117714564fe4d8a52dad6f3663f870ce39209ad
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547485"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848270"
 ---
 # <a name="how-to-programmatically-close-visio-documents"></a>Procedura: chiudere documenti di Visio a livello di codice
   Per chiudere il documento attivo di Microsoft Office Visio, è possibile usare il metodo `Microsoft.Office.Interop.Visio.Document.Close`.
@@ -36,7 +38,7 @@ ms.locfileid: "85547485"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#7)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#7)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Soluzioni Visio](../vsto/visio-solutions.md)
 - [Panoramica del modello a oggetti di Visio](../vsto/visio-object-model-overview.md)
 - [Procedura: creare nuovi documenti di Visio a livello di codice](../vsto/how-to-programmatically-create-new-visio-documents.md)

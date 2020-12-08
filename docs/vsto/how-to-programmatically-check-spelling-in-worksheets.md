@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: eseguire il controllo ortografico nei fogli di codice a livello di codice'
+description: Informazioni su come è possibile controllare a livello di codice l'ortografia delle parole in un foglio di lavoro di Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 797fc498c54bdbc466fe8ddc35229b2c106db80d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f2a9f50767082ead9daafe684aae7fc1524ba9c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541544"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848289"
 ---
 # <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Procedura: eseguire il controllo ortografico nei fogli di codice a livello di codice
   A livello di codice è possibile eseguire il controllo ortografico delle parole in un foglio di lavoro. La finestra di dialogo **Controllo ortografia** viene visualizzata automaticamente se si sono parole formulate in modo non corretto nel foglio di lavoro.
@@ -41,7 +43,7 @@ ms.locfileid: "85541544"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#22](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#22)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#22](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#22)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Usare i fogli di lavoro](../vsto/working-with-worksheets.md)
 - [Procedura: eseguire calcoli di Excel a livello di codice](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)
 - [NamedRange (controllo)](../vsto/namedrange-control.md)

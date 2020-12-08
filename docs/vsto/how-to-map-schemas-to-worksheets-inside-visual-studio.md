@@ -1,7 +1,8 @@
 ---
 title: 'Procedura: eseguire il mapping di schemi a fogli di fogli di Visual Studio'
+description: Informazioni su come è possibile eseguire il mapping di un XML Schema a un foglio di lavoro di Excel Microsoft Office mentre il foglio di lavoro è aperto in Visual Studio.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8a0437b940953e89e24969314f63df34d223496
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a7e1a06e644536ce9ce881d9b9f1dc23aae03f1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538138"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848209"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Procedura: eseguire il mapping di schemi a fogli di fogli di Visual Studio
   È possibile eseguire il mapping di un XML Schema a un foglio di un foglio di tempo mentre il foglio di foglio è aperto in Visual Studio Si usa lo stesso Microsoft Office strumenti di Excel usati quando la cartella di lavoro è aperta all'esterno di Visual Studio. Il progetto di Office crea gli stessi oggetti se lo schema viene mappato al foglio di lavoro prima o dopo la creazione della soluzione Excel.
@@ -65,6 +66,6 @@ ms.locfileid: "85538138"
 
      Se si trascina un elemento dello schema ripetuto, il progetto di Office genera un <xref:Microsoft.Office.Tools.Excel.ListObject> controllo che non viene associato automaticamente a un'origine dati. Per ulteriori informazioni, vedere [XML Schema e dati nelle personalizzazioni a livello di documento](../vsto/xml-schemas-and-data-in-document-level-customizations.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: eseguire il mapping degli schemi a documenti di Word in Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)
 - [XML Schema e dati nelle personalizzazioni a livello di documento](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

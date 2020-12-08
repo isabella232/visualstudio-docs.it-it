@@ -1,5 +1,7 @@
 ---
 title: Linee guida per la creazione di aree del modulo di Outlook
+description: Informazioni sulle linee guida per la creazione di aree del modulo di Outlook che consentono di ottimizzare le aree del modulo ed evitare potenziali problemi.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a962b1ae2bff7b9a954204485a6ee73a3b63eb7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aaf6b96548a9856833fcd1768764ed914da30a07
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255947"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848092"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Linee guida per la creazione di aree del modulo di Outlook
   Le informazioni seguenti consentono di ottimizzare le aree del modulo ed evitare potenziali problemi:
@@ -78,7 +80,7 @@ ms.locfileid: "71255947"
 
 - Per l'icona **Pagina** , usare un file PNG (Portable Network Graphics).
 
-- Per l'icona**Finestra** si consiglia una dimensione di 32 pixel per 32 pixel.
+- Per l'icona **Finestra** si consiglia una dimensione di 32 pixel per 32 pixel.
 
 - Per tutte le altre icone, le dimensioni consigliate sono 16 pixel per 16 pixel.
 
@@ -86,7 +88,7 @@ ms.locfileid: "71255947"
 
   L'icona della **finestra** viene visualizzata nell'area di notifica e nella finestra di dialogo della **Alt** + **scheda** ALT per gli elementi aperti che visualizzano aree del modulo di sostituzione o di sostituzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Accedere a un'area del modulo in fase di esecuzione](../vsto/accessing-a-form-region-at-run-time.md)
 - [Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)
 - [Procedura dettagliata: progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)

@@ -1,5 +1,7 @@
 ---
 title: Assembly nel Strumenti di Visual Studio per Office Runtime
+description: Informazioni su come Visual Studio aggiunge automaticamente i riferimenti alla Strumenti di Visual Studio per gli assembly di Office Runtime.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2fc47aa917fa9c9d5351fd313ec46ae4aaa0664
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86c3c2b77b6bbea1e609bbea092b44bd1dee1dd4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75918789"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848300"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Assembly nel Strumenti di Visual Studio per Office Runtime
   Quando si crea un progetto di Office, in Visual Studio vengono automaticamente aggiunti riferimenti agli assembly [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] usati per il tipo di progetto e .NET Framework di destinazione del progetto. Sono disponibili diversi assembly nelle estensioni di Office per .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]e [!INCLUDE[net_v45](includes/net-v45-md.md)]. Per altre informazioni sulle estensioni di Office, vedere [Panoramica di strumenti di Visual Studio per Office Runtime](visual-studio-tools-for-office-runtime-overview.md).
@@ -61,6 +63,6 @@ ms.locfileid: "75918789"
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|Fornisce i seguenti tipi:<br /><br /> : La <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe, che è possibile usare per alleghi a livello di codice gli assembly di personalizzazione ai documenti e per accedere ai dati memorizzati nella cache nei documenti. Per altre informazioni, vedere [Manage Documents on a server by using the ServerDocument Class](managing-documents-on-a-server-by-using-the-serverdocument-class.md).<br />-Varie classi che rappresentano la gerarchia dei dati memorizzati nella cache in una personalizzazione a livello di documento. Per ulteriori informazioni, vedere [accedere ai dati nei documenti sul server](accessing-data-in-documents-on-the-server.md).|
 |Microsoft.VisualStudio.Tools.Office.Runtime.v10.0.dll|Fornisce i seguenti tipi:<br /><br /> -Le classi Microsoft. VisualStudio. Tools. Office. Runtime. Security. AddInSecurityEntry e Microsoft. VisualStudio. Tools. Office. Runtime. Security. UserInclusionList, che è possibile usare per creare voci dell'elenco di inclusione utente per concedere l'attendibilità alle soluzioni Office destinate al .NET Framework 3,5.<br />-Altri tipi che fanno parte dell'infrastruttura di Strumenti di Visual Studio per Office Runtime e che non sono destinati a essere usati direttamente dal codice.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica di Strumenti di Visual Studio per Office Runtime](visual-studio-tools-for-office-runtime-overview.md)
 - [Scenari di installazione di Strumenti di Visual Studio per Office Runtime](visual-studio-tools-for-office-runtime-installation-scenarios.md)
