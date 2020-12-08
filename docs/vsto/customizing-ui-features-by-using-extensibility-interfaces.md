@@ -1,5 +1,7 @@
 ---
 title: Personalizzare le funzionalità dell'interfaccia utente usando le interfacce di estendibilità
+description: Viene illustrato come gli strumenti di sviluppo di Office in Visual Studio forniscano interfacce di estendibilità che consentono di personalizzare le funzionalità dell'interfaccia utente.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07b62903388012dac3459c86011e349f8053762c
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 436f426eee6c90476997f416bab907c8e17f94cc
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583840"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845622"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personalizzare le funzionalità dell'interfaccia utente usando le interfacce di estendibilità
   Gli strumenti di sviluppo di Office in Visual Studio forniscono classi e finestre di progettazione che gestiscono molti dettagli di implementazione quando vengono usate per creare riquadri attività personalizzati, personalizzazioni della barra multifunzione e aree del modulo di Outlook in un componente aggiuntivo VSTO. Tuttavia, se sono necessari requisiti speciali è anche possibile implementare *l'interfaccia di estendibilità* per ogni funzionalità.
@@ -43,7 +45,7 @@ ms.locfileid: "91583840"
 ## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>Interfacce di estensibilità che è possibile implementare in un componente aggiuntivo VSTO
  La tabella seguente elenca le interfacce di estendibilità implementabili e le applicazioni che le supportano.
 
-|Interfaccia|Descrizione|Applicazioni|
+|Interfaccia|Descrizione|APPLICAZIONI|
 |---------------|-----------------|------------------|
 |<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implementare questa interfaccia per personalizzare l'interfaccia utente della barra multifunzione. **Nota:**  È possibile aggiungere un elemento **barra multifunzione (XML)** a un progetto per generare un' <xref:Microsoft.Office.Core.IRibbonExtensibility> implementazione predefinita nel componente aggiuntivo VSTO. Per altre informazioni, vedere [Ribbon XML](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word|
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|Implementare questa interfaccia per creare un riquadro attività personalizzato.|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|

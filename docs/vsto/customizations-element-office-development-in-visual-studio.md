@@ -1,7 +1,8 @@
 ---
 title: '&lt;elemento customizations &gt; (sviluppo per Office in Visual Studio)'
+description: Informazioni su come l'elemento customizations dello spazio dei nomi vstov4 contiene tutte le informazioni sull'installazione e sul caricamento di ogni soluzione Office.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 58d88f865e5f220000bf021b548e4b9c4b8745f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc1f33101346d334d08d2bd2d7795961ea33011e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64790005"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844036"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;elemento customizations &gt; (sviluppo per Office in Visual Studio)
   L'elemento `customizations` dello spazio dei nomi `vstov4` contiene tutte le informazioni sull'installazione e sul caricamento di ogni soluzione Office.
@@ -121,7 +122,7 @@ ms.locfileid: "64790005"
 </vstov4:customizations>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: accedere ai contatti di Outlook a livello di codice'
+description: Informazioni su come accedere ai contatti di Outlook a livello di codice. Questo esempio trova tutti i contatti il cui cognome contiene una stringa di ricerca specificata.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f6d64512af660392c10082e3bcd3c26b6bc6885
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68fe58f2f70a68c37d9171eb01f9294bb5e4d4af
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520094"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844687"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Procedura: accedere ai contatti di Outlook a livello di codice
   Questo esempio trova tutti i contatti il cui cognome contiene una stringa di ricerca specificata.
@@ -34,7 +36,7 @@ ms.locfileid: "85520094"
 
 - Contatti i cui ultimi nomi contengono la stringa "**na"** (ad esempio, Tzipi Butnaru) nella cartella **Contacts** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Usare gli elementi di contatto](../vsto/working-with-contact-items.md)
 - [Procedura: aggiungere una voce ai contatti di Outlook a livello di codice](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
 - [Procedura: eseguire la ricerca di un contatto specifico a livello di codice](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: esporre il codice a VBA in un progetto Visual Basic'
+description: Informazioni su come esporre il codice in un progetto Visual Basic al codice Visual Basic, Applications Edition (VBA) se si desidera che i due tipi di codice interagiscano tra loro.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8aa29fca9905c9f1ed056949eec64ad967323462
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61f94ebb5ed0c5e76693ddc8c0717b6adf9222f3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544846"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845986"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Procedura: esporre il codice a VBA in un progetto Visual Basic
   È possibile esporre il codice in un [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] progetto al codice Visual Basic, Applications Edition (VBA) se si desidera che i due tipi di codice interagiranno tra loro.
@@ -115,7 +117,7 @@ ms.locfileid: "85544846"
 
 9. Compilare il progetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
 - [Combinare VBA e personalizzazioni a livello di documento](../vsto/combining-vba-and-document-level-customizations.md)

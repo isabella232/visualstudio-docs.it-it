@@ -1,5 +1,7 @@
 ---
 title: Aggiungere controlli ai documenti di Office in fase di esecuzione
+description: Informazioni su come è possibile aggiungere controlli a un documento Microsoft Office Word e Microsoft Office cartella di lavoro di Excel in fase di esecuzione.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44bf1de5d550a264a63ba7293fe1bdc0c9630aee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e971556605a120b4ef475f434390c6dcf7b17938
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986330"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844842"
 ---
 # <a name="add-controls-to-office-documents-at-run-time"></a>Aggiungere controlli ai documenti di Office in fase di esecuzione
   È possibile aggiungere controlli a un documento di Microsoft Office Word e a una cartella di lavoro di Microsoft Office Excel in fase di esecuzione. È inoltre possibile rimuoverli in fase di esecuzione. I controlli aggiunti o rimossi in fase di esecuzione sono noti come *controlli dinamici*.
@@ -137,7 +139,7 @@ Quando si salva e si chiude un documento, tutti i controlli host creati dinamica
   [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
   [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)
 - [Mantieni controlli dinamici nei documenti di Office](../vsto/persisting-dynamic-controls-in-office-documents.md)
 - [Procedura: aggiungere controlli ListObject a fogli di foglio](../vsto/how-to-add-listobject-controls-to-worksheets.md)

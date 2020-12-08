@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: memorizzare nella cache i dati in un documento protetto da password'
+description: Si apprenderà che se si aggiungono dati alla cache dei dati in un documento o in una cartella di lavoro protetta con una password, è possibile salvare le modifiche ai dati memorizzati nella cache eseguendo l'override di due metodi nel progetto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12b04b985d54161343d26cdd32178b67bd6e6b91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a11b70da4bdd2500f70d2b45f025340af21ea94
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547238"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845999"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Procedura: memorizzare nella cache i dati in un documento protetto da password
   Se si aggiungono dati alla cache dei dati in un documento o in una cartella di lavoro protetta con una password, le modifiche apportate ai dati memorizzati nella cache non vengono salvate automaticamente. È possibile salvare le modifiche apportate ai dati memorizzati nella cache eseguendo l'override di due metodi nel progetto.
@@ -73,7 +75,7 @@ ms.locfileid: "85547238"
 ### <a name="compile-the-code"></a>Compilare il codice
  Aggiungere questo codice alla `ThisWorkbook` classe nel progetto. Questo codice presuppone che la password venga archiviata in un campo denominato `securelyStoredPassword` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Dati cache](../vsto/caching-data.md)
 - [Procedura: memorizzare nella cache i dati per l'uso offline o su un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
 - [Procedura: memorizzare nella cache a livello di codice un'origine dati in un documento di Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)

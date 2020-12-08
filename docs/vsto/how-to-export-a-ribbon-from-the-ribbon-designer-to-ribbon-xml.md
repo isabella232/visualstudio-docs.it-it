@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione a XML della barra multifunzione'
+description: Per informazioni su come personalizzare la barra multifunzione, è possibile esportare la barra multifunzione dalla finestra di progettazione alla barra multifunzione XML e modificare direttamente il codice XML.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf3101a062fa8b30ae821bf6a157319b6f37862a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: f39131eb7e3469d389ad2d50aaeb1ee97e3865b9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298430"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844140"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Procedura: esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione a XML della barra multifunzione
   L'elemento **barra multifunzione (finestra di progettazione visiva)** non supporta tutti i possibili tipi di personalizzazione della barra multifunzione. Per personalizzare la barra multifunzione in modi avanzati, è possibile esportare la barra multifunzione dalla finestra di progettazione a XML della barra multifunzione e modificare direttamente il codice XML.
@@ -44,11 +46,11 @@ ms.locfileid: "92298430"
 
 3. Nella classe di codice della barra multifunzione individuare i commenti che iniziano con `TODO:` .
 
-4. Copiare il blocco di codice in questi commenti nella classe **ThisAddIn**, **ThisWorkbook**o **ThisDocument** , a seconda del tipo di soluzione che si sta sviluppando.
+4. Copiare il blocco di codice in questi commenti nella classe **ThisAddIn**, **ThisWorkbook** o **ThisDocument** , a seconda del tipo di soluzione che si sta sviluppando.
 
      Questo codice consente all'applicazione Microsoft Office di individuare e caricare la barra multifunzione personalizzata. Per altre informazioni, vedere [Ribbon XML](../vsto/ribbon-xml.md).
 
-5. Nella classe **ThisAddIn**, **ThisWorkbook**o **ThisDocument** rimuovere il commento dal blocco di codice.
+5. Nella classe **ThisAddIn**, **ThisWorkbook** o **ThisDocument** rimuovere il commento dal blocco di codice.
 
      Dopo aver annullato il commento del codice, il codice dovrebbe essere simile all'esempio seguente. In questo esempio viene chiamata la classe Ribbon `MyRibbon` .
 
@@ -65,7 +67,7 @@ ms.locfileid: "92298430"
 
      Per informazioni sulla scrittura di metodi di callback e sull'utilizzo del modello di programmazione RibbonX, vedere [Ribbon XML](../vsto/ribbon-xml.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)
 - [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

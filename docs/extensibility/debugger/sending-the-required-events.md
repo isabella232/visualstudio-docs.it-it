@@ -1,5 +1,7 @@
 ---
 title: Invio degli eventi richiesti | Microsoft Docs
+description: Informazioni sugli eventi ordinati necessari durante la creazione di un motore di debug e la relativa associazione a un programma in debug di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc83b47e53607fe1111ececbbf892c96f7bbb639
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49c85e3d371bfd729d55e9d17a6c8de61924e35f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713000"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845310"
 ---
 # <a name="send-the-required-events"></a>Invia gli eventi necessari
 Usare questa procedura per inviare gli eventi richiesti.
@@ -36,5 +38,5 @@ Usare questa procedura per inviare gli eventi richiesti.
 > [!NOTE]
 > Molti linguaggi usano inizializzatori globali o funzioni esterne e precompilate (dalla libreria CRT o _Main) all'inizio del codice. Se la lingua del programma di cui si esegue il debug contiene uno di questi tipi di elementi prima del punto di ingresso iniziale, questo codice viene eseguito e l'evento del punto di ingresso viene inviato quando viene raggiunto il punto di ingresso dell'utente, ad esempio **Main** o `WinMain` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Abilitazione di un programma di cui eseguire il debug](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

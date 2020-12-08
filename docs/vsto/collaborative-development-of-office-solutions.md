@@ -1,5 +1,7 @@
 ---
 title: Sviluppo collaborativo di soluzioni Office
+description: Informazioni su come più sviluppatori possono lavorare su un progetto di Office nello stesso modo in cui collaborano con altri progetti di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76c26a110d88d3dee8bf7540647ea0bfde4e7c4f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d30f28b3e97469bc9e0bf921438960206b4f89c0
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62949487"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845804"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Sviluppo collaborativo di soluzioni Office
   Più sviluppatori possono lavorare a un progetto di Office nello stesso modo in cui collaborano con altri progetti di Visual Studio. Visual Studio individua correttamente l'installazione di Microsoft Office in ogni computer, anche se Office è installato in posizioni diverse. Tuttavia, esistono alcune importanti considerazioni da tenere presenti.
@@ -33,7 +35,7 @@ ms.locfileid: "62949487"
  Se il progetto è ospitato in una condivisione di rete anziché nel controllo del codice sorgente, è necessario eseguire alcuni passaggi aggiuntivi per consentire agli sviluppatori che collaborano di aprire la soluzione e testare l'assembly.
 
 ## <a name="source-control-requires-checking-out-all-files"></a>Il controllo del codice sorgente richiede l'estrazione di tutti i file
- Se si usa il controllo del codice sorgente per i progetti, è necessario estrarre tutti i file in un file di codice in **Esplora soluzioni** , ad esempio i file di codice *ThisDocument*, *ThisWorkbook*o *ThisAddIn* , ogni volta che si modifica il file di codice, anche i file che sono nascosti per impostazione predefinita. Se si estrae solo il file di codice di primo livello, le modifiche potrebbero andare perse.
+ Se si usa il controllo del codice sorgente per i progetti, è necessario estrarre tutti i file in un file di codice in **Esplora soluzioni** , ad esempio i file di codice *ThisDocument*, *ThisWorkbook* o *ThisAddIn* , ogni volta che si modifica il file di codice, anche i file che sono nascosti per impostazione predefinita. Se si estrae solo il file di codice di primo livello, le modifiche potrebbero andare perse.
 
  Dopo aver apportato le modifiche, controllare tutti i file di nuovo in. Per altre informazioni sui file di codice nascosti nei progetti, vedere [progetti di Office nell'ambiente Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).
 
@@ -42,7 +44,7 @@ ms.locfileid: "62949487"
 
  I certificati temporanei generati automaticamente in fase di compilazione non sono protetti da password. I certificati contengono il nome di accesso dello sviluppatore e altre informazioni personali. Se si distribuiscono personalizzazioni firmate da certificati temporanei, altri utenti potrebbero essere in grado di accedere a queste informazioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Soluzioni Office sicure](../vsto/securing-office-solutions.md)
 - [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
 - [Compilazione di soluzioni Office](../vsto/building-office-solutions.md)

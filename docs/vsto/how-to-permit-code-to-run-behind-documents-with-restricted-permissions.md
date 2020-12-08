@@ -1,5 +1,7 @@
 ---
 title: Consentire l'esecuzione del codice dietro i documenti con autorizzazioni limitate
+description: Informazioni su come consentire l'esecuzione di codice dietro i documenti con autorizzazioni limitate usando gli strumenti di sviluppo per Office in Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14c468a806160fd31c84b164a4b995f904e71fc6
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ac15302e81a68d8866c69a30a8368d36648ef1d9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298483"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844894"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Procedura: consentire l'esecuzione del codice dietro i documenti con autorizzazioni limitate
   È possibile utilizzare la funzionalità Information Rights Management (IRM) di Microsoft Office per limitare le autorizzazioni a un documento o a una cartella di lavoro. Per impostazione predefinita, non è consentita l'esecuzione del codice sottostante a un documento Microsoft Office Word con restrizioni o Microsoft Office cartella di lavoro di Excel. È possibile modificare l'impostazione predefinita in modo che le estensioni del codice gestito possano accedere al modello a oggetti e la soluzione funzionerà.
@@ -36,18 +38,18 @@ ms.locfileid: "92298483"
 
 1. Aprire il documento o la cartella di lavoro in Word o Excel.
 
-2. Fare clic sulla scheda **file** , scegliere **prepara**, scegliere **limita autorizzazione**e quindi fare clic su **accesso limitato**.
+2. Fare clic sulla scheda **file** , scegliere **prepara**, scegliere **limita autorizzazione** e quindi fare clic su **accesso limitato**.
 
    > [!NOTE]
    > Al primo utilizzo, viene richiesto di installare il client Windows Rights Management. Dopo aver installato il client, potrebbe essere necessario ripetere i passaggi.
 
-3. Nella finestra di dialogo **autorizzazione** selezionare **limita autorizzazione al documento**e quindi fare clic su **altre opzioni**.
+3. Nella finestra di dialogo **autorizzazione** selezionare **limita autorizzazione al documento** e quindi fare clic su **altre opzioni**.
 
-4. In **autorizzazioni aggiuntive per gli utenti**selezionare **accedi al contenuto a livello di codice**.
+4. In **autorizzazioni aggiuntive per gli utenti** selezionare **accedi al contenuto a livello di codice**.
 
    Word o Excel consentirà l'accesso programmatico al modello a oggetti.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica di Information Rights Management e delle estensioni di codice gestito](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [Protezione di documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)
 - [Protezione delle password nei documenti di Office](../vsto/password-protection-on-office-documents.md)

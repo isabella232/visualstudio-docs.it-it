@@ -1,5 +1,7 @@
 ---
 title: Associare i dati ai controlli nelle soluzioni Office
+description: Informazioni su come associare controlli Windows Forms e host in un documento di Microsoft Office Word o in un foglio di lavoro di Excel a un'origine dati.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93e2d5abb9c8fda9d4a1300a9bb0958ac9266499
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9be201899f0e2ff4f685343d58a859d8a9157068
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986164"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844426"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Associare i dati ai controlli nelle soluzioni Office
   È possibile associare i controlli Windows Form e i *controlli host* in un documento di Microsoft Office Word o in un foglio di lavoro di Microsoft Office Excel a un'origine dati in modo da visualizzare automaticamente i dati. È possibile associare dati ai controlli nei progetti a livello di applicazione e a livello di documento.
@@ -97,7 +99,7 @@ ms.locfileid: "72986164"
 
  Per altre informazioni, vedere [procedura: aggiornare un'origine dati con dati da un controllo host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Data Binding e Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
 - [Procedura: creare un controllo con associazione semplice in un Windows Form](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
 - [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere nuovi fogli di lavoro alle cartelle di lavoro a livello di codice'
+description: Informazioni su come creare un foglio di lavoro a livello di codice e quindi aggiungere il foglio di lavoro alla raccolta di fogli di lavoro nella cartella di lavoro.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3c014d8ea1701dde4e83e6849cce337656579f5d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3397b2ad8f656a7ada82ce0be17dcf21064d0ee3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585405"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96843984"
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>Procedura: aggiungere nuovi fogli di lavoro alle cartelle di lavoro a livello di codice
   È possibile creare un foglio di lavoro a livello di codice, quindi aggiungerlo alla raccolta di fogli di lavoro nella cartella di lavoro.

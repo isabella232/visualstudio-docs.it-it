@@ -1,5 +1,7 @@
 ---
 title: Esecuzione in modalità di interruzioni | Microsoft Docs
+description: Informazioni sul processo che si verifica quando il debugger è in modalità di interruzione. Il debugger deve quindi eseguire il codice istruzione per istruzione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3161fc1c1ec8b44d96b3793198ac630ba2e32d67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80273bf470a3ed0c342e781085de6e991508451c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712851"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845193"
 ---
 # <a name="stepping-in-break-mode"></a>Esecuzione in modalità di interruzioni
 Nella sezione seguente viene descritto il processo che si verifica quando il debugger è in modalità di interruzione ed è necessario eseguire il codice un'istruzione alla volta:
@@ -28,5 +30,5 @@ Nella sezione seguente viene descritto il processo che si verifica quando il deb
 
 2. Al termine del passaggio, inviare un [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) come evento di arresto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Chiamata di eventi del debugger](../../extensibility/debugger/calling-debugger-events.md)

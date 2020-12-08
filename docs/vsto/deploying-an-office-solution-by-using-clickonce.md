@@ -1,5 +1,7 @@
 ---
 title: Distribuire una soluzione Office tramite ClickOnce
+description: Informazioni su come distribuire la soluzione Office in un minor numero di passaggi se si usa ClickOnce. Eventuali aggiornamenti alla soluzione pubblicati vengono rilevati e installati automaticamente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb495b30950105d1ff19a1f4fb13da1ee624b228
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d808348528a64cc184c7a6c50359c057b2325a75
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809349"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845648"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Distribuire una soluzione Office tramite ClickOnce
   L'uso di ClickOnce consente di distribuire una soluzione Office in un minor numero di passaggi. Eventuali aggiornamenti alla soluzione pubblicati vengono rilevati e installati automaticamente. Tuttavia, ClickOnce richiede che la soluzione venga installata separatamente per ciascun utente di un computer. Pertanto, è consigliabile utilizzare Windows Installer (*MSI*) se più utenti eseguiranno la soluzione nello stesso computer.
@@ -50,11 +52,11 @@ ms.locfileid: "90809349"
 
 #### <a name="to-publish-the-solution"></a>Per pubblicare la soluzione
 
-1. In **Esplora soluzioni**scegliere il nodo denominato per il progetto.
+1. In **Esplora soluzioni** scegliere il nodo denominato per il progetto.
 
 2. Sulla barra dei menu scegliere **Progetto**, *Proprietà* **NomeProgetto**.
 
-3. In creazione **progetti**scegliere la scheda **pubblica** , illustrata nella figura seguente.
+3. In creazione **progetti** scegliere la scheda **pubblica** , illustrata nella figura seguente.
 
     ![Scheda Pubblica in Progettazione progetti](../vsto/media/vsto-publishtab.png "Scheda Pubblica in Progettazione progetti")
 
@@ -64,9 +66,9 @@ ms.locfileid: "90809349"
 
    - Un percorso locale, ad esempio *c:\Nomecartella\Nomecartella*.
 
-   - Un percorso UNC (Uniform Naming Convention) di una cartella della rete (ad esempio, * \\ \ServerName\FolderName*).
+   - Un percorso UNC (Uniform Naming Convention) di una cartella della rete (ad esempio, *\\ \ServerName\FolderName*).
 
-   - Un percorso relativo (ad esempio, *cartellapubblicazione \\ *, che è la cartella in cui il progetto viene pubblicato per impostazione predefinita).
+   - Un percorso relativo (ad esempio, *cartellapubblicazione \\*, che è la cartella in cui il progetto viene pubblicato per impostazione predefinita).
 
 5. Nella casella **URL cartella di installazione** immettere il percorso completo della posizione in cui gli utenti finali troveranno la soluzione.
 
@@ -85,7 +87,7 @@ ms.locfileid: "90809349"
     > [!NOTE]
     > Per impostazione predefinita, questa casella di controllo non viene visualizzata. Per visualizzarla, è necessario creare un pacchetto di programma di avvio automatico. Vedere [creare un pacchetto del programma di avvio automatico per un componente aggiuntivo VSTO di Office 2013 con Visual Studio 2012](create-vsto-add-ins-for-office-by-using-visual-studio.md).
 
-10. In **specificare il percorso di installazione dei prerequisiti**scegliere una delle opzioni visualizzate, quindi scegliere il pulsante **OK** .
+10. In **specificare il percorso di installazione dei prerequisiti** scegliere una delle opzioni visualizzate, quindi scegliere il pulsante **OK** .
 
      Nella tabella seguente viene descritta ciascuna opzione.
 
@@ -151,7 +153,7 @@ ms.locfileid: "90809349"
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-60"></a>Per aggiungere il tipo MIME .vsto a IIS 6.0
 
-1. Nel server in cui è in esecuzione IIS 6,0, scegliere **Avvia**  >  **tutti i programmi**  >  gestione**strumenti di amministrazione**  >   **Internet Information Services (IIS)**.
+1. Nel server in cui è in esecuzione IIS 6,0, scegliere **Avvia**  >  **tutti i programmi**  >  gestione **strumenti di amministrazione**  >   **Internet Information Services (IIS)**.
 
 2. Scegliere il nome del computer, la cartella **siti Web** o il sito Web che si sta configurando.
 
@@ -202,7 +204,7 @@ ms.locfileid: "90809349"
 
 4. Nel campo **nome** immettere **FileCopyPDA**, quindi scegliere il pulsante **OK** .
 
-5. In **Esplora soluzioni**scegliere il progetto **FileCopyPDA** .
+5. In **Esplora soluzioni** scegliere il progetto **FileCopyPDA** .
 
 6. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi riferimento**.
 
@@ -221,7 +223,7 @@ ms.locfileid: "90809349"
 
 ### <a name="build-and-publish-the-solution"></a>Compilare e pubblicare la soluzione
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto **FileCopyPDA** , quindi scegliere **Compila**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **FileCopyPDA** , quindi scegliere **Compila**.
 
 2. Aprire il menu di scelta rapida per il progetto **ExcelWorkbook** , quindi scegliere **Compila**.
 
@@ -229,13 +231,13 @@ ms.locfileid: "90809349"
 
 4. Nella finestra di dialogo **Aggiungi riferimento** scegliere la scheda **progetti** , scegliere **FileCopyPDA**, quindi scegliere il pulsante **OK** .
 
-5. In **Esplora soluzioni**scegliere il progetto **ExcelWorkbook** .
+5. In **Esplora soluzioni** scegliere il progetto **ExcelWorkbook** .
 
 6. Sulla barra dei menu scegliere **progetto**  >  **nuova cartella**.
 
 7. Immettere i **dati**, quindi premere il tasto **invio** .
 
-8. In **Esplora soluzioni**scegliere la cartella **dati** .
+8. In **Esplora soluzioni** scegliere la cartella **dati** .
 
 9. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi elemento esistente**.
 
@@ -342,14 +344,14 @@ ms.locfileid: "90809349"
 
  *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
- Se lo strumento non è presente in tale posizione, è possibile usare la chiave del registro di sistema **HKEY_LOCAL_MACHINE \Software\microsoft\vsto Runtime Setup\v4\InstallerPath** o **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\vsto Runtime Setup\v4\InstallerPath** per trovare il percorso di tale strumento.
+ Se lo strumento non è presente in tale posizione, è possibile usare la chiave del registro di sistema **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** o **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath** per trovare il percorso di tale strumento.
 
  È possibile usare i parametri seguenti con *VSTOinstaller.exe*.
 
 | Parametro | Definizione |
 |------------------| - |
-| /Install o /I | Installa la soluzione. È necessario seguire questa opzione con il percorso di un manifesto di distribuzione. È possibile specificare un percorso sul computer locale o di una condivisione file UNC (Universal Naming Convention). È possibile specificare un percorso locale (*C:\FolderName\PublishFolder*), un percorso relativo (*Publish \\ *) o un percorso completo (* \\ \ServerName\FolderName* o http://<em>ServerName/FolderName</em>). |
-| /Uninstall o /U | Disinstalla la soluzione. È necessario seguire questa opzione con il percorso di un manifesto di distribuzione. È possibile specificare che un percorso che può essere nel computer locale o in una condivisione file UNC. È possibile specificare un percorso locale (*c:\FolderName\PublishFolder*), un percorso relativo (*Publish \\ *) o un percorso completo (* \\ \ServerName\FolderName* o http://<em>ServerName/FolderName</em>). |
+| /Install o /I | Installa la soluzione. È necessario seguire questa opzione con il percorso di un manifesto di distribuzione. È possibile specificare un percorso sul computer locale o di una condivisione file UNC (Universal Naming Convention). È possibile specificare un percorso locale (*C:\FolderName\PublishFolder*), un percorso relativo (*Publish \\*) o un percorso completo (*\\ \ServerName\FolderName* o http://<em>ServerName/FolderName</em>). |
+| /Uninstall o /U | Disinstalla la soluzione. È necessario seguire questa opzione con il percorso di un manifesto di distribuzione. È possibile specificare che un percorso che può essere nel computer locale o in una condivisione file UNC. È possibile specificare un percorso locale (*c:\FolderName\PublishFolder*), un percorso relativo (*Publish \\*) o un percorso completo (*\\ \ServerName\FolderName* o http://<em>ServerName/FolderName</em>). |
 | /Silent o /S | Installa o disinstalla senza richiedere input da parte dell'utente o visualizzare un messaggio. Se è richiesta una richiesta di attendibilità, la personalizzazione non viene installata o aggiornata. |
 | /Help o /? | Visualizza le informazioni della Guida. |
 
@@ -424,7 +426,7 @@ ms.locfileid: "90809349"
 
      La casella **valore** contiene l'identificatore del manifesto della distribuzione.
 
-4. Prima dell'identificatore, immettere il percorso completo del documento, seguito da una barra, nell'identificatore del *percorso*di formato, | *Identifier* ad esempio *file://ServerName/FolderName/filename|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
+4. Prima dell'identificatore, immettere il percorso completo del documento, seguito da una barra, nell'identificatore del *percorso* di formato, | *Identifier* ad esempio *file://ServerName/FolderName/filename|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.
 
      Per altre informazioni su come formattare questo identificatore, vedere [Cenni preliminari sulle proprietà personalizzate del documento](../vsto/custom-document-properties-overview.md).
 
@@ -456,7 +458,7 @@ ms.locfileid: "90809349"
 > [!NOTE]
 > I dati locali vengono salvati soltanto per una versione precedente di una soluzione. Se si esegue il rollback di due versioni, i dati locali non vengono conservati. Per altre informazioni sui dati locali, vedere [accedere ai dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
 - [Pubblicare soluzioni Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)

@@ -1,5 +1,7 @@
 ---
 title: Interfacce del provider di simboli | Microsoft Docs
+description: Questo articolo contiene collegamenti a descrizioni per le interfacce di gestione dei simboli per Visual Studio SDK, che valutano le variabili in uno stack di chiamate durante la modalità di rottura.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7929ba36c76f0db1cabab087afe3590de509efff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a24baec6738382f93dee5d8b7843d624eea80890
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715842"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845791"
 ---
 # <a name="symbol-provider-interfaces"></a>Interfacce del provider di simboli
 Di seguito sono riportate le interfacce di gestione dei simboli per [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] .
@@ -58,5 +60,5 @@ Di seguito sono riportate le interfacce di gestione dei simboli per [!INCLUDE[vs
 |[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)|SP|Rappresenta una raccolta di oggetti [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) .|
 |[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)|SP|Rappresenta una raccolta di oggetti [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

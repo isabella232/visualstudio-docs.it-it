@@ -1,7 +1,8 @@
 ---
 title: 'Procedura: creare progetti di Office in Visual Studio'
+description: Informazioni su come usare Visual Studio per creare componenti aggiuntivi VSTO e personalizzazioni a livello di documento per applicazioni Microsoft Office.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c70668f2d4cb9597e00a7e3848b78b9f2ed49db7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 652b7676ddf5d7e095010e711ab0dabc5b5f2ab7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547563"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844374"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Procedura: creare progetti di Office in Visual Studio
   È possibile usare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per creare personalizzazioni a livello di documento e di componente aggiuntivo VSTO per applicazioni Microsoft Office. Per altre informazioni su questi tipi di progetti, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md).
@@ -39,7 +40,7 @@ ms.locfileid: "85547563"
 
 ### <a name="to-create-a-vsto-add-in-project"></a>Per creare un progetto di componente aggiuntivo VSTO
 
-1. Nel menu **File**, scegliere **Nuovo** > **Progetto**. Se il Integrated Development Environment (IDE) è impostato per usare [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] le impostazioni di sviluppo, **File** scegliere **nuovo**  >  **progetto**dal menu file.
+1. Nel menu **File**, scegliere **Nuovo** > **Progetto**. Se il Integrated Development Environment (IDE) è impostato per usare [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] le impostazioni di sviluppo, **File** scegliere **nuovo**  >  **progetto** dal menu file.
 
     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
@@ -94,7 +95,7 @@ ms.locfileid: "85547563"
 
 ### <a name="to-create-a-document-level-customization-project"></a>Per creare un progetto di personalizzazione a livello di documento
 
-1. Nel menu **File**, scegliere **Nuovo** > **Progetto**. Se l'IDE è configurato per usare Visual Basic impostazioni di sviluppo, scegliere **File** **nuovo**  >  **progetto**dal menu file.
+1. Nel menu **File**, scegliere **Nuovo** > **Progetto**. Se l'IDE è configurato per usare Visual Basic impostazioni di sviluppo, scegliere **File** **nuovo**  >  **progetto** dal menu file.
 
     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
@@ -159,7 +160,7 @@ ms.locfileid: "85547563"
 
      Per ulteriori informazioni su come aggiungere un documento ai percorsi attendibili, vedere il sito Web di Microsoft Office Online [creare, rimuovere o modificare un percorso attendibile per i file](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica sui modelli di progetto di Office](../vsto/office-project-templates-overview.md)
 - [Sviluppo collaborativo di soluzioni Office](../vsto/collaborative-development-of-office-solutions.md)
 - [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: Architettura delle personalizzazioni a livello di documento
+description: Informazioni sugli aspetti delle personalizzazioni a livello di documento, inclusi i componenti di personalizzazione e sul funzionamento delle personalizzazioni con Microsoft Office applicazioni.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5028f5a9b16ecfc2461c0d29cbedb44be70a64c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a522446f9109d996088dff9389f267ef5ff39447
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926554"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845961"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architettura delle personalizzazioni a livello di documento
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] include progetti per la creazione di personalizzazioni a livello di documento per Microsoft Office Word e Microsoft Office Excel. Questo argomento descrive gli aspetti seguenti delle personalizzazioni a livello di documento:
@@ -84,18 +86,18 @@ ms.locfileid: "68926554"
 
 |Excel|Word|
 |-----------|----------|
-|Cartella di lavoro di Excel (con*estensione xlsx*)<br /><br /> Cartella di lavoro con attivazione macro di Excel (*. xlsm*)<br /><br /> Cartella di lavoro binaria di Excel (*xlsb*)<br /><br /> Cartella di lavoro di Excel 97-2003 (*xls*)<br /><br /> Modello di Excel (con*estensione XLTX*)<br /><br /> Modello con attivazione macro di Excel (con*estensione XLTM*)<br /><br /> Modello di Excel 97-2003 (*. xlt*)|Documento di Word (*. docx*)<br /><br /> Documento di Word con attivazione macro (*docm*)<br /><br /> Documento di Word 97-2003 (*doc*)<br /><br /> Modello di Word (*. dotx*)<br /><br /> Modello di Word con attivazione macro (*dotm*)<br /><br /> Modello Word 97-2003 (*. dot*)|
+|Cartella di lavoro di Excel (con *estensione xlsx*)<br /><br /> Cartella di lavoro con attivazione macro di Excel (*. xlsm*)<br /><br /> Cartella di lavoro binaria di Excel (*xlsb*)<br /><br /> Cartella di lavoro di Excel 97-2003 (*xls*)<br /><br /> Modello di Excel (con *estensione XLTX*)<br /><br /> Modello con attivazione macro di Excel (con *estensione XLTM*)<br /><br /> Modello di Excel 97-2003 (*. xlt*)|Documento di Word (*. docx*)<br /><br /> Documento di Word con attivazione macro (*docm*)<br /><br /> Documento di Word 97-2003 (*doc*)<br /><br /> Modello di Word (*. dotx*)<br /><br /> Modello di Word con attivazione macro (*dotm*)<br /><br /> Modello Word 97-2003 (*. dot*)|
 
  Si consiglia di progettare le estensioni di codice gestito solo per documenti nei formati supportati. In caso contrario, è possibile che alcuni eventi non vengano generati all'apertura del documento nell'applicazione. Ad esempio, l' <xref:Microsoft.Office.Tools.Excel.Workbook.Open> evento non viene generato quando si utilizzano estensioni di codice gestito con cartelle di lavoro salvate nel formato foglio di calcolo XML di Excel o nella pagina Web (*. htm*; *. html*) formato.
 
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Supporto per documenti di Word con estensioni di file con estensione XML
  I modelli di progetto a livello di documento non consentono di creare progetti basati sui formati di file seguenti:
 
-- Documento XML di Word (* \* XML*).
+- Documento XML di Word (*\* XML*).
 
-- Documento XML di Word 2003 (* \* XML*).
+- Documento XML di Word 2003 (*\* XML*).
 
-  Se si vuole che gli utenti finali usino le personalizzazioni in questi formati di file, compilare e distribuire una personalizzazione che usi uno dei formati di file supportati specificati nella tabella precedente. Dopo l'installazione della personalizzazione, gli utenti finali possono salvare il documento nel formato documento XML di Word (* \* XML*) o nel formato documento xml di Word 2003 (* \* XML*) e la personalizzazione continuerà a funzionare come previsto.
+  Se si vuole che gli utenti finali usino le personalizzazioni in questi formati di file, compilare e distribuire una personalizzazione che usi uno dei formati di file supportati specificati nella tabella precedente. Dopo l'installazione della personalizzazione, gli utenti finali possono salvare il documento nel formato documento XML di Word (*\* XML*) o nel formato documento xml di Word 2003 (*\* XML*) e la personalizzazione continuerà a funzionare come previsto.
 
 ## <a name="components-of-customizations"></a><a name="Components"></a> Componenti delle personalizzazioni
  I componenti principali di una personalizzazione sono il documento e l'assembly. Oltre a questi componenti, anche alcune altre parti svolgono un ruolo importante nel modo in cui le applicazioni di Microsoft Office individuano e caricano le personalizzazioni.
@@ -141,9 +143,9 @@ ms.locfileid: "68926554"
 
 9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] chiama il gestore eventi **Startup** nell'assembly di personalizzazione. Per altre informazioni, vedere [eventi nei progetti di Office](../vsto/events-in-office-projects.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Architettura delle soluzioni Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
-- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Panoramica di Strumenti di Visual Studio per Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)
 - [Soluzioni Office sicure](../vsto/securing-office-solutions.md)
 - [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: Origine dati della cache nel documento di Office a livello di codice
+description: Informazioni su come è possibile aggiungere a livello di codice un oggetto dati alla cache di dati in un documento chiamando il metodo StartCaching di un elemento host.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ec3a38d109de561e3cba77951764dd8dd9479df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0b739a7671f19b126b0566dfc8f4775a2c91063
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544768"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845012"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Procedura: memorizzare nella cache a livello di codice un'origine dati in un documento di Office
   È possibile aggiungere a livello di codice un oggetto dati alla cache dei dati in un documento chiamando il `StartCaching` metodo di un elemento host, ad esempio <xref:Microsoft.Office.Tools.Word.Document> , <xref:Microsoft.Office.Tools.Excel.Workbook> o <xref:Microsoft.Office.Tools.Excel.Worksheet> . Rimuovere un oggetto dati dalla cache dei dati chiamando il `StopCaching` metodo di un elemento host.
@@ -54,7 +56,7 @@ ms.locfileid: "85544768"
     > [!NOTE]
     > Non chiamare `StopCaching` dal gestore eventi per l' `Shutdown` evento di un documento o di un foglio di esecuzione. Quando `Shutdown` viene generato l'evento, è troppo tardi per modificare la cache di dati. Per ulteriori informazioni sull' `Shutdown` evento, vedere [eventi nei progetti di Office](../vsto/events-in-office-projects.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Dati cache](../vsto/caching-data.md)
 - [Procedura: memorizzare nella cache i dati per l'uso offline o su un server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)

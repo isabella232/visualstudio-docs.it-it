@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: iniziare a personalizzare la barra multifunzione'
+description: Informazioni su come personalizzare la barra multifunzione di un'applicazione Microsoft Office, aggiungere un elemento barra multifunzione (finestra di progettazione visiva) o barra multifunzione (XML) a un progetto di Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be311f87862f4447d903294508927735d3507b08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3974fe85a97226a920959b41256fa7e29923c9d1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520068"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845947"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Procedura: iniziare a personalizzare la barra multifunzione
   Per personalizzare la barra multifunzione di un'applicazione Microsoft Office, aggiungere un elemento **barra multifunzione (finestra di progettazione visiva)** o **barra multifunzione (XML)** a un progetto di Office.
@@ -29,7 +31,7 @@ ms.locfileid: "85520068"
 
 ### <a name="to-add-a-ribbon-to-a-project"></a>Per aggiungere una barra multifunzione a un progetto
 
-1. Scegliere **Aggiungi nuovo elemento**dal menu **progetto** .
+1. Scegliere **Aggiungi nuovo elemento** dal menu **progetto** .
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **barra multifunzione (finestra di progettazione visiva)** o **barra multifunzione (XML)**. Per ulteriori informazioni su questi modelli, vedere [Cenni preliminari sulla barra multifunzione](../vsto/ribbon-overview.md).
 
@@ -69,7 +71,7 @@ ms.locfileid: "85520068"
 
    L'elemento della barra multifunzione viene visualizzato in **Esplora soluzioni**. Per informazioni sui passaggi successivi, vedere [Cenni preliminari sulla barra multifunzione](../vsto/ribbon-overview.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

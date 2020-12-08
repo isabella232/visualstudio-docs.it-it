@@ -1,5 +1,7 @@
 ---
 title: Procedure dettagliate relative ai dati nelle soluzioni Office
+description: Informazioni su come usare i dati nelle personalizzazioni a livello di documento e nei componenti aggiuntivi VSTO per Microsoft Word e Microsoft Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b2efa5e5def8214736d648e2b90906fe720dbe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25bf42015dcc60014012faf0254d4b6d02c30d56
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62956030"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845583"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Procedure dettagliate relative ai dati nelle soluzioni Office
   Le procedure dettagliate seguenti mostrano come usare i dati nelle personalizzazioni a livello di documento e i componenti aggiuntivi VSTO per Microsoft Office Word e Microsoft Office Excel.
@@ -47,7 +49,7 @@ ms.locfileid: "62956030"
 
 - [Procedura dettagliata: modificare i dati memorizzati nella cache in una cartella di lavoro in un server](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md) Viene illustrato come modificare un set di dati memorizzato nella cache di una cartella di lavoro di Excel Microsoft Office senza avviare Excel.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)
 - [Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)
 - [Procedure dettagliate di personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization-walkthroughs.md)

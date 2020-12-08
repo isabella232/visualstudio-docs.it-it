@@ -1,5 +1,7 @@
 ---
 title: Server (Visual Studio SDK) | Microsoft Docs
+description: Questo articolo descrive la definizione e il ruolo di un server nell'architettura del debugger in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32fdbb5afca40c3b4fced468d2f9ef0ea5226c00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9eaccebf874fa5fc0e7aaf63823547742215a568
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712889"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845297"
 ---
 # <a name="servers-visual-studio-sdk"></a>Server (Visual Studio SDK)
 Nell'architettura del debugger, un *Server*:
@@ -27,7 +29,7 @@ Nell'architettura del debugger, un *Server*:
 
 - È rappresentato da un'interfaccia [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) , che viene implementata solo da Visual Studio (un'istanza di un server per ogni istanza di Visual Studio in esecuzione).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Ports](../../extensibility/debugger/ports.md)
 - [Fornitori di porte](../../extensibility/debugger/port-suppliers.md)
 - [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)

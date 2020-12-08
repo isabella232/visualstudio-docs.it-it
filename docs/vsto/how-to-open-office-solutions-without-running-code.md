@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aprire soluzioni Office senza eseguire codice'
+description: Informazioni su come aprire un documento o una cartella di lavoro che contiene estensioni di codice gestito senza eseguire il codice dell'assembly.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d84515c2c3159b61b96f77555b23eef0df0ae961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8339f21fbf7add4335941360b73d42700ef6e635
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543481"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844920"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Procedura: aprire soluzioni Office senza eseguire codice
   Una soluzione Microsoft Office creata con estensioni di codice gestito viene eseguita anche se l'impostazione di sicurezza nell'applicazione di Office dell'utente finale è impostata su alta. Questo è dovuto al fatto che la sicurezza del codice assembly .NET viene gestita dal framework di Microsoft .NET, non da Microsoft Office.
@@ -49,7 +51,7 @@ ms.locfileid: "85543481"
 
      Se la soluzione viene utilizzata da più persone, questo metodo impedisce l'esecuzione della soluzione per tutti i membri. Questo può essere utile se si riscontra un problema nel codice o in un server a cui si fa riferimento e si desidera impedire a tutti gli utenti di eseguirlo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Soluzioni Office sicure](../vsto/securing-office-solutions.md)
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
 - [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)

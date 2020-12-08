@@ -1,5 +1,7 @@
 ---
 title: "Procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook"
+description: Informazioni su come creare un'area del modulo per estendere un modulo standard o personalizzato Microsoft Office Outlook usando la procedura guidata nuova area del modulo di Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a03ba05226720913d48dc1828dcb849bee72d17e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f137dbe88b8b3ecf51f17e0f19f61368359087fa
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538398"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845063"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Procedura: aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook
   Creare un'area del modulo per estendere un modulo standard o personalizzato di Microsoft Office Outlook usando la procedura guidata **Nuova area del modulo di Outlook** . È possibile creare una nuova area del modulo e progettare l'interfaccia utente in Visual Studio oppure importare un'area del modulo progettata in Outlook e aggiungere codice Visual Basic o C#.
@@ -35,7 +37,7 @@ ms.locfileid: "85538398"
 
 1. Aprire o creare un progetto di componente aggiuntivo VSTO di Outlook in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per altre informazioni, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2. In **Esplora soluzioni**selezionare il nodo del progetto di componente aggiuntivo VSTO di Outlook.
+2. In **Esplora soluzioni** selezionare il nodo del progetto di componente aggiuntivo VSTO di Outlook.
 
 3. Dal menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
@@ -48,7 +50,7 @@ ms.locfileid: "85538398"
 6. Nella pagina **Selezionare la modalità di creazione dell'area del modulo** scegliere se si vuole progettare l'area del modulo trascinando i controlli gestiti in una finestra di progettazione visiva o importare un'area del modulo progettata in Outlook.
 
     > [!NOTE]
-    > Se si sceglie di importare un'area del modulo progettata in Outlook, è necessario specificare il percorso di un file*OFS*(Outlook Form Storage). Non è possibile aggiungere controlli gestiti a un'area del modulo progettata in Outlook, ma solo aggiungere codice associato all'interfaccia utente esistente. Per altre informazioni, vedere [creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md).
+    > Se si sceglie di importare un'area del modulo progettata in Outlook, è necessario specificare il percorso di un file *OFS*(Outlook Form Storage). Non è possibile aggiungere controlli gestiti a un'area del modulo progettata in Outlook, ma solo aggiungere codice associato all'interfaccia utente esistente. Per altre informazioni, vedere [creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md).
 
 7. Nella pagina **Selezionare il tipo di area del modulo da creare** esaminare i tipi di area del modulo e selezionarne uno, quindi scegliere **Avanti**. Per altre informazioni sui tipi di area del modulo, vedere [creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md).
 
@@ -64,7 +66,7 @@ ms.locfileid: "85538398"
 
 11. Nella pagina **Identificare le classi di messaggi per la visualizzazione dell'area del modulo** selezionare le classi messaggio standard di Outlook o digitare i nomi di una o più classi messaggio personalizzate, quindi fare clic su **Fine**. Per altre informazioni, vedere [associare un'area del modulo a una classe messaggio di Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Accedere a un'area del modulo in fase di esecuzione](../vsto/accessing-a-form-region-at-run-time.md)
 - [Soluzioni Outlook](../vsto/outlook-solutions.md)
 - [Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)

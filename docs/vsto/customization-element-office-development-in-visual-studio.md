@@ -1,7 +1,8 @@
 ---
 title: '&lt;&gt;elemento customization (sviluppo per Office in Visual Studio)'
+description: Informazioni su come l'elemento customization dello spazio dei nomi vstov4 descrive una soluzione Office specifica.
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1239c6749f25bf4bce7a1f5cc89a2a8430c98a4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f50b441393e9d07dcd0b409248f199484022654
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544872"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844114"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento customization (sviluppo per Office in Visual Studio)
   L'elemento `customization` dello spazio dei nomi `vstov4` descrive una specifica soluzione Office. Gli elementi figlio sono diversi per le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO.
@@ -61,7 +62,7 @@ ms.locfileid: "85544872"
 |---------------|-----------------|
 |`id`|Necessario per la distribuzione multiprogetto. L'elemento `id` identifica in modo univoco una soluzione Office.|
 
-### <a name="document-level-customizations"></a>Personalizzazioni a livello di documento
+### <a name="document-level-customizations"></a>Personalizzazioni di Document-Level
  L'elemento `customization` ha l'elemento figlio seguente.
 
 #### <a name="document"></a>documento
@@ -119,7 +120,7 @@ ms.locfileid: "85544872"
 </vstov4:customization>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)

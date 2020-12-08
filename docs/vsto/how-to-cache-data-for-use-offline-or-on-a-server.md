@@ -1,5 +1,7 @@
 ---
 title: "Procedura: memorizzare nella cache i dati per l'uso offline o su un server"
+description: Contrassegnare un elemento di dati da memorizzare nella cache del documento, in modo che sia disponibile offline. In questo modo è possibile che i dati del documento vengano modificati da altro codice.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce295e299e4accb2d79655675f6264a1497b8d69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cefd4cd132e75f8ff622c8e0d809d317242c10f5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546185"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844322"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Procedura: memorizzare nella cache i dati per l'uso offline o su un server
   È possibile contrassegnare un elemento di dati da memorizzare nella cache del documento, in modo che sia disponibile offline. Ciò consente anche di modificare i dati nel documento da altro codice quando il documento viene archiviato in un server.
@@ -59,7 +61,7 @@ ms.locfileid: "85546185"
 
 4. Nella finestra **Proprietà** impostare la proprietà **Modifiers** su **public** (per impostazione predefinita è **Internal**).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Dati cache](../vsto/caching-data.md)
 - [Procedura: memorizzare nella cache a livello di codice un'origine dati in un documento di Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [Procedura: memorizzare nella cache i dati in un documento protetto da password](../vsto/how-to-cache-data-in-a-password-protected-document.md)

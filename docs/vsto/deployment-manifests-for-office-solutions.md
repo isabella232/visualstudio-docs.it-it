@@ -1,5 +1,7 @@
 ---
 title: Manifesti della distribuzione per le soluzioni Office
+description: Informazioni su come un manifesto di distribuzione è un file XML che descrive le impostazioni di distribuzione di una soluzione Office e identifica la versione corrente dell'applicazione.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -15,19 +17,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31909d2a6765c357635cd0a8c039132f14b5967d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547550"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845505"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifesti della distribuzione per le soluzioni Office
   Un manifesto di distribuzione è un file XML che descrive le impostazioni di distribuzione di una soluzione Office e identifica la versione corrente dell'applicazione.
 
  Lo sviluppo per Office in Visual Studio usa lo [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schema del manifesto di distribuzione definito nel riferimento del [manifesto di distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md) .
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il file manifesto di distribuzione per le soluzioni Office identifica la versione corrente e altre impostazioni di distribuzione. Fa riferimento al manifesto dell'applicazione e descrive la versione corrente della soluzione e tutti i file all'interno della soluzione.
 
 ## <a name="file-name-syntax"></a>Sintassi del nome file
@@ -183,6 +185,6 @@ ms.locfileid: "85547550"
 </asmv1:assembly>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)

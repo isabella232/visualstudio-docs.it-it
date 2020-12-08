@@ -1,5 +1,7 @@
 ---
 title: Sviluppare soluzioni Office
+description: Informazioni su come progettare un progetto usando gli strumenti di sviluppo di Office in Visual Studio. Viene inoltre illustrato come iniziare l'implementazione del codice e dell'interfaccia utente personalizzata.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ede09f18808eda22c747ac28e3c279fc43266bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbfe569e587c53aede6d550bc20527ad8d0fd328
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69551570"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844998"
 ---
 # <a name="develop-office-solutions"></a>Sviluppare soluzioni Office
   Dopo aver progettato un progetto usando gli strumenti di sviluppo di Office in Visual Studio e configurato i file di progetto, è possibile iniziare a concentrarsi sull'implementazione del codice e dell'interfaccia utente personalizzata.
@@ -58,7 +60,7 @@ ms.locfileid: "69551570"
 |[Supporto del threading in Office](../vsto/threading-support-in-office.md)|Viene fornita una panoramica dell'utilizzo di più thread nelle soluzioni Office.|
 |[Accessibilità nei progetti di Office](../vsto/accessibility-in-office-projects.md)|Vengono descritte le funzionalità di accessibilità disponibili nelle soluzioni Office.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: creare e modificare proprietà personalizzate di un documento](../vsto/how-to-create-and-modify-custom-document-properties.md)
 - [Procedura: leggere e scrivere nelle proprietà dei documenti](../vsto/how-to-read-from-and-write-to-document-properties.md)
 - [Procedura: utilizzare l'interfaccia utente multilingue di Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)

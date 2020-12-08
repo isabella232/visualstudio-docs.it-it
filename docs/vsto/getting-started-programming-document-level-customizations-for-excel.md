@@ -1,5 +1,7 @@
 ---
 title: 'Excel: Introduzione alla programmazione delle personalizzazioni a livello di documento'
+description: Informazioni su cosa è necessario sapere per iniziare a creare personalizzazioni a livello di documento per Microsoft Office Excel usando Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cb3b27a4020e2b8947ca0868bb46b5945b5d89de
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1fb048fd015126e5438a007be1950cddffbac9e1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585680"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846038"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Introduzione alla programmazione delle personalizzazioni a livello di documento per Excel
   Se si sta iniziando a creare personalizzazioni a livello di documento per Microsoft Office Excel usando Visual Studio, ecco cosa è necessario conoscere.
@@ -43,7 +45,7 @@ ms.locfileid: "91585680"
 
  I controlli host sono basati su oggetti nativi di Excel, ad esempio oggetti elenco e intervalli. I controlli host forniscono funzionalità simili agli oggetti nativi di Excel, ma dispongono anche di nuovi eventi, supporto della finestra di progettazione e funzionalità data binding. Vengono visualizzati come oggetti di prima classe nel codice del progetto e in IntelliSense, che rende più semplice fare riferimento a oggetti specifici direttamente nel codice senza dover esplorare il modello a oggetti di Excel.
 
- Per altre informazioni, vedere gli argomenti seguenti:
+ Per altre informazioni, vedere i seguenti argomenti:
 
 - [Programma personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
 

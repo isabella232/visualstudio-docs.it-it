@@ -1,5 +1,7 @@
 ---
 title: Gestione debug sessione | Microsoft Docs
+description: Informazioni su gestione debug sessione, che consente di gestire più motori di debug programmi di debug in più processi in un numero qualsiasi di computer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 953b4e948ef5e21531a3e73bceed3a363ed3cec5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2c51b1fd345789cabbb9735621626ab7c2db993
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712877"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845284"
 ---
 # <a name="session-debug-manager"></a>Gestione debug sessione
 Gestione debug sessione (SDM) gestisce un numero qualsiasi di motori di debug (DE) che eseguono il debug di un numero qualsiasi di programmi in più processi in un numero qualsiasi di computer. Oltre a essere un motore di debug multiplexer, SDM fornisce una visualizzazione unificata della sessione di debug all'IDE.
@@ -36,7 +38,7 @@ Gestione debug sessione (SDM) gestisce un numero qualsiasi di motori di debug (D
 
  SDM non rileva il programma, il thread o la stack frame corrente. Le informazioni relative al processo, al programma e al thread vengono inviate all'SDM insieme a eventi di debug specifici.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Motore di debug](../../extensibility/debugger/debug-engine.md)
 - [Componenti del debugger](../../extensibility/debugger/debugger-components.md)
 - [Contesti del debugger](../../extensibility/debugger/debugger-contexts.md)

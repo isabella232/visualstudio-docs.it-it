@@ -1,5 +1,7 @@
 ---
 title: Debug di progetti di Office
+description: Informazioni su come eseguire il debug di progetti di Office usando gli stessi strumenti di Microsoft Visual Studio usati per altri progetti di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92cc0922a36d8c57b54b69ad984d18cf4742b823
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea4874effcba4ee948f921ae9bf91f145b661f4f
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189706"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845635"
 ---
 # <a name="debug-office-projects"></a>Debug di progetti di Office
   È possibile eseguire il debug di progetti di Office usando gli stessi strumenti di Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] che si usano per altri progetti [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] le funzionalità del debugger, ad esempio la possibilità di inserire punti di interruzione e visualizzare le variabili nella finestra variabili **locali** , sono disponibili anche quando si esegue il debug di progetti di Office. Per altre informazioni sugli [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] strumenti di debug, vedere [debug in Visual Studio](../debugger/debugger-feature-tour.md).
@@ -48,7 +50,7 @@ ms.locfileid: "73189706"
 ### <a name="debug-office-2013-vsto-add-ins-by-using-either-office-2013-or-office-2016"></a>Eseguire il debug dei componenti aggiuntivi VSTO di Office 2013 con Office 2013 o Office 2016
  Se si usa Visual Studio 2015 e si hanno entrambe le versioni di Office installate side-by-Side, Visual Studio avvia Office 2016. Se si usa Visual Studio 2013, Visual Studio avvia Office 2013.
 
- Per eseguire il debug del componente aggiuntivo VSTO con una versione di Office diversa (2013 o 2016), aprire **Creazione progetti**e scegliere il pulsante di opzione **Avvia programma esterno** nella scheda **Debug** . Quindi, passare al percorso dell'eseguibile dell'applicazione di Office appropriata.
+ Per eseguire il debug del componente aggiuntivo VSTO con una versione di Office diversa (2013 o 2016), aprire **Creazione progetti** e scegliere il pulsante di opzione **Avvia programma esterno** nella scheda **Debug** . Quindi, passare al percorso dell'eseguibile dell'applicazione di Office appropriata.
 
 ## <a name="f10-and-f11-behavior"></a>Comportamento F10 e F11
  Quando si avvia il debug di un progetto di Office, **F10** e **F11** non hanno lo stesso comportamento di quando si avvia il debug di altri progetti Visual Basic o C#. Nei progetti Visual Basic o C#, il debugger si arresta sulla funzione principale. Nei progetti di Office, Visual Studio non dispone di controllo sulla funzione principale dell'applicazione di Office. Tuttavia, durante il debug, **F10** e **F11** hanno le stesse funzioni dei progetti Visual Basic e C#.
@@ -97,7 +99,7 @@ ms.locfileid: "73189706"
 
  Per scrivere gli errori in un file di log, creare una variabile di ambiente denominata `VSTO_LOGALERTS` e impostarla su 1 (uno). [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crea il file di log nella cartella che contiene il manifesto della distribuzione per il componente aggiuntivo VSTO o nella cartella che contiene il documento o la cartella di lavoro associata alla personalizzazione. Se l'operazione non riesce, il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Crea il file di log nella cartella *% Temp%* locale. Per i componenti aggiuntivi VSTO a livello di applicazione, il nome predefinito è *nome componente aggiuntivo*.vsto.log. Per i progetti a livello di documento, il nome del file di log è *nome documento*.*estensione*.log, ad esempio ExcelWorkbook1.xlsx.log. Per arrestare la registrazione degli errori, eliminare la variabile di ambiente o impostarla su 0 (zero).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Compilazione di soluzioni Office](../vsto/building-office-solutions.md)
 - [Procedura: riabilitare un componente aggiuntivo VSTO disabilitato](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere comandi a menu di scelta rapida'
+description: Informazioni su come aggiungere comandi a un menu di scelta rapida in un'applicazione di Office usando un componente aggiuntivo VSTO.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ad27481799718d9d2b0872d7a43837fc822ca40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95cc6a9dc773c9a0cb07eff518566af9dcc49e96
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546198"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845492"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Procedura: aggiungere comandi a menu di scelta rapida
   Questo argomento illustra come aggiungere comandi a un menu di scelta rapida in un'applicazione di Office usando un componente aggiuntivo VSTO.
@@ -29,7 +31,7 @@ ms.locfileid: "85546198"
 
 1. Aggiungere un elemento **Barra multifunzione (XML)** in un progetto di componente aggiuntivo VSTO o a livello di documento. Per altre informazioni, vedere [procedura: iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md). In
 
-2. **Esplora soluzioni**selezionare **ThisAddin.cs** o **ThisAddin.vb**.
+2. **Esplora soluzioni** selezionare **ThisAddin.cs** o **ThisAddin.vb**.
 
 3. Nella barra dei menu scegliere **Visualizza**  >  **codice**.
 
@@ -40,7 +42,7 @@ ms.locfileid: "85546198"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. In **Esplora soluzioni**selezionare il file XML della barra multifunzione. Per impostazione predefinita, il file XML della barra multifunzione è denominato *Ribbon1.xml*.
+5. In **Esplora soluzioni** selezionare il file XML della barra multifunzione. Per impostazione predefinita, il file XML della barra multifunzione è denominato *Ribbon1.xml*.
 
 6. Nella barra dei menu scegliere **Visualizza**  >  **codice**.
 
@@ -70,7 +72,7 @@ ms.locfileid: "85546198"
     </customUI>
     ```
 
-8. In **Esplora soluzioni**scegliere **MyRibbon.cs** o **MyRibbon.vb**.
+8. In **Esplora soluzioni** scegliere **MyRibbon.cs** o **MyRibbon.vb**.
 
 9. Aggiungere un metodo di callback alla `Ribbon1` classe per ogni controllo che si desidera gestire.
 
@@ -79,7 +81,7 @@ ms.locfileid: "85546198"
      [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]
      [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)
 - [Procedura dettagliata: creare menu di scelta rapida per i segnalibri](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)

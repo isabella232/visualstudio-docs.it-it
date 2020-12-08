@@ -1,5 +1,7 @@
 ---
 title: Stack frame | Microsoft Docs
+description: Questo articolo descrive la definizione e il ruolo di un stack frame nell'architettura del debugger in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ea79ad199e20afeb5d2bf1ca6a3cf881c6d51c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab2c891002ad90d767a4c5ca9efffd3f3d1d10ee
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712847"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845206"
 ---
 # <a name="stack-frames"></a>Stack frame
 Nell'architettura del debugger, un *stack frame*:
@@ -30,7 +32,7 @@ Nell'architettura del debugger, un *stack frame*:
 
 - È rappresentato da un'interfaccia [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) , in genere creata da un motore di debug (de) o da una macchina virtuale come conseguenza dell'esecuzione di un thread.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Contesti del debugger](../../extensibility/debugger/debugger-contexts.md)
 - [Concetti relativi al debugger](../../extensibility/debugger/debugger-concepts.md)
 - [Motore di debug](../../extensibility/debugger/debug-engine.md)
