@@ -1,5 +1,7 @@
 ---
 title: Esporre gli elenchi di simboli forniti al gestore oggetti | Microsoft Docs
+description: Informazioni su come implementare l'interfaccia IVsSimpleObjectList2 per esporre elenchi di simboli a gestione oggetti in Visual Studio e aggiornare gli strumenti di esplorazione dei simboli.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb15b7d9b29c578a0acf43fd1aa9cfdea88e23ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52bb2505e70d39e6cd861190db6eab9fa29e7aa7
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708079"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761348"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Procedura: esporre elenchi di simboli forniti dalla libreria al gestore oggetti
 I risultati degli strumenti di esplorazione dei simboli, **Visualizzazione classi**, **Visualizzatore oggetti**, **Visualizzatore chiamate** e **Trova simbolo**, passano le richieste per i nuovi dati al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestore oggetti. Il gestore oggetti trova le librerie appropriate e richiede nuovi elenchi di simboli. Le librerie rispondono fornendo i dati richiesti al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestore oggetti tramite l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaccia. Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestore di oggetti chiama i metodi nell' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaccia per ottenere i dati e li utilizza per popolare o aggiornare le visualizzazioni degli strumenti di esplorazione dei simboli.
@@ -464,7 +466,7 @@ I risultati degli strumenti di esplorazione dei simboli, **Visualizzazione class
 
     ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Supporto degli strumenti per l'esplorazione di simboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [Procedura: registrare una libreria con gestione oggetti](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
 - [Procedura: identificare i simboli in una libreria](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

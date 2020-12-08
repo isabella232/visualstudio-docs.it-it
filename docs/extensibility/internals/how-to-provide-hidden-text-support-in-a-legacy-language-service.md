@@ -1,5 +1,7 @@
 ---
 title: Fornire supporto per testo nascosto nel servizio di linguaggio legacy
+description: Informazioni su come fornire supporto per testo nascosto in un servizio di linguaggio legacy aggiungendo aree di testo nascoste controllate dall'editor o dal client.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a9d5fe85932f87eb68b6b5a0f5868ebbf8f2b5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f51f8e0c5ca268c1171804f663e5d01bd7c2530
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707934"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761309"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Procedura: fornire il supporto per testo nascosto in un servizio di linguaggio legacy
 Oltre alle aree della struttura, è possibile creare aree di testo nascoste. Le aree del testo nascosto possono essere controllate dal client o dall'editor e vengono usate per nascondere completamente un'area di testo. L'editor visualizza un'area nascosta come linee orizzontali. Un esempio è la visualizzazione **solo script** nell'editor HTML.

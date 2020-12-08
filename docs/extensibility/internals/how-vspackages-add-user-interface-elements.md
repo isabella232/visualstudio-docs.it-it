@@ -1,5 +1,7 @@
 ---
 title: Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente | Microsoft Docs
+description: Informazioni su come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente, ad esempio menu, barre degli strumenti e finestre degli strumenti, a Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d9cc3184009dd98e743064db1b8eb2abe6059d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3e2fe51c365e3e6936a73aef9d4de9d52024d47
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649590"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761088"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente
 Un pacchetto VSPackage può aggiungere elementi dell'interfaccia utente (UI), ad esempio menu, barre degli strumenti e finestre degli strumenti, a Visual Studio tramite il file con *estensione vsct* .
@@ -129,7 +131,7 @@ Poiché fa parte di un menu, questo gruppo contiene in genere i comandi. Tuttavi
 </Menu>
 ```
 
-#### <a name="commands"></a>Comandi:
+#### <a name="commands"></a>Comandi
 Un comando fornito all'IDE viene definito come un [elemento Button](../../extensibility/button-element.md) o un [elemento combinato](../../extensibility/combo-element.md). Per essere visualizzato in un menu o in una barra degli strumenti, il comando deve avere un gruppo come padre.
 
 ##### <a name="buttons"></a>Pulsanti
@@ -185,7 +187,7 @@ Le regole seguenti determinano il modo in cui un elemento può chiamare un altro
 
 |Elemento|Definito in questa sezione della tabella dei comandi|Può essere contenuto (come un elemento padre o in base alla posizione nella `CommandPlacements` sezione o entrambi)|Può contenere (definito come padre)|
 |-------------| - | - | - |
-|Group|[Elemento groups](../../extensibility/groups-element.md), IDE, other VSPackage|Un menu, un gruppo, l'elemento stesso|Menu, gruppi e comandi|
+|Gruppo|[Elemento groups](../../extensibility/groups-element.md), IDE, other VSPackage|Un menu, un gruppo, l'elemento stesso|Menu, gruppi e comandi|
 |Menu|[Elemento menu](../../extensibility/menus-element.md), IDE, altri VSPackage|da 1 a *n* gruppi|da 0 a *n* gruppi|
 |Barra degli strumenti|[Elemento menu](../../extensibility/menus-element.md), IDE, altri VSPackage|Elemento stesso|da 0 a *n* gruppi|
 |MenuItem|[Elemento Buttons](../../extensibility/buttons-element.md), IDE, other VSPackage|da 1 a *n* gruppi, l'elemento stesso|da-0 a *n* gruppi|
@@ -288,5 +290,5 @@ Di seguito sono riportate alcune considerazioni per la selezione e il posizionam
 
 - Per far sì che alcuni elementi dell'interfaccia utente vengano visualizzati nell'IDE, è necessario implementare una o più interfacce o scrivere codice.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estendi menu e comandi](../../extensibility/extending-menus-and-commands.md)

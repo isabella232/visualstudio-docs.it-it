@@ -1,5 +1,7 @@
 ---
 title: Implementazione di un linguaggio legacy Service2 | Microsoft Docs
+description: Informazioni su come implementare un servizio di linguaggio legacy che supporta le funzionalità del servizio di linguaggio esteso tramite il Framework di pacchetto gestito (MPF). Parte 2 di 2.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df44b92cdf311689397a062b127d4c3e514a15e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a7da218a9ada593731e6205e017861084e73adc
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238699"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761140"
 ---
 # <a name="implementing-a-legacy-language-service-2"></a>Implementazione di un servizio di linguaggio Legacy 2
 Per implementare un servizio di linguaggio utilizzando il Framework di pacchetto gestito (MPF), è necessario derivare una classe dalla <xref:Microsoft.VisualStudio.Package.LanguageService> classe e implementare i metodi e le proprietà astratti seguenti:
@@ -32,7 +34,7 @@ Per implementare un servizio di linguaggio utilizzando il Framework di pacchetto
 
   Per supportare funzionalità aggiuntive, il servizio di linguaggio potrebbe dover derivare una classe da una delle classi del servizio di linguaggio MPF; per supportare altri comandi di menu, ad esempio, è necessario derivare una classe dalla <xref:Microsoft.VisualStudio.Package.ViewFilter> classe ed eseguire l'override di diversi metodi di gestione dei comandi <xref:Microsoft.VisualStudio.Package.ViewFilter> . per informazioni dettagliate, vedere. La <xref:Microsoft.VisualStudio.Package.LanguageService> classe fornisce diversi metodi chiamati per creare nuove istanze di varie classi ed è necessario eseguire l'override del metodo di creazione appropriato per fornire un'istanza della classe. Ad esempio, è necessario eseguire l'override del <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> metodo nella <xref:Microsoft.VisualStudio.Package.LanguageService> classe per restituire un'istanza della classe personalizzata <xref:Microsoft.VisualStudio.Package.ViewFilter> . Per ulteriori informazioni, vedere la sezione relativa alla creazione di un'istanza delle classi personalizzate.
 
-  Il servizio di linguaggio può anche fornire le proprie icone, che vengono usate in molte posizioni. Ad esempio, quando viene visualizzato un elenco di completamento IntelliSense, a ogni elemento dell'elenco può essere associata un'icona, che contrassegna l'elemento come metodo, classe, spazio dei nomi, proprietà o qualsiasi elemento necessario per il linguaggio in uso. Queste icone vengono usate in tutti gli elenchi IntelliSense, nella **barra di spostamento**e nella finestra attività **Elenco errori** . Per informazioni dettagliate, vedere la sezione "immagini del servizio di linguaggio" riportata di seguito.
+  Il servizio di linguaggio può anche fornire le proprie icone, che vengono usate in molte posizioni. Ad esempio, quando viene visualizzato un elenco di completamento IntelliSense, a ogni elemento dell'elenco può essere associata un'icona, che contrassegna l'elemento come metodo, classe, spazio dei nomi, proprietà o qualsiasi elemento necessario per il linguaggio in uso. Queste icone vengono usate in tutti gli elenchi IntelliSense, nella **barra di spostamento** e nella finestra attività **Elenco errori** . Per informazioni dettagliate, vedere la sezione "immagini del servizio di linguaggio" riportata di seguito.
 
 ## <a name="getlanguagepreferences-method"></a>Metodo GetLanguagePreferences
  Il <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> metodo restituisce sempre la stessa istanza di una <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. <xref:Microsoft.VisualStudio.Package.LanguagePreferences>Se non è necessaria alcuna preferenza aggiuntiva per il servizio di linguaggio, è possibile utilizzare la classe di base. Le classi del servizio di linguaggio MPF presuppongono la presenza di almeno la classe di base <xref:Microsoft.VisualStudio.Package.LanguagePreferences> .
@@ -358,7 +360,7 @@ public enum IconImageIndex
         }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Implementazione di un servizio di linguaggio legacy](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [Panoramica dei servizi di linguaggio legacy](../../extensibility/internals/legacy-language-service-overview.md)
 - [Registrazione di un servizio di linguaggio legacy](../../extensibility/internals/registering-a-legacy-language-service1.md)

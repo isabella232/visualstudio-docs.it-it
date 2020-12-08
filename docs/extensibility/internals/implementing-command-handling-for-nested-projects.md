@@ -1,5 +1,7 @@
 ---
 title: Implementazione della gestione dei comandi per i progetti annidati | Microsoft Docs
+description: Informazioni su come implementare la gestione dei comandi per i progetti annidati in Visual Studio Integrated Development Environment (IDE).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2092fc8033d5a5cc53b12bd63a945bd9865ca30e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13cfa6ebb8cae645202339c511f15ca15e2b3490
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707604"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761153"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementazione della gestione dei comandi per i progetti annidati
 L'IDE può passare i comandi passati attraverso il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> e le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfacce ai progetti annidati oppure i progetti padre possono filtrare o eseguire l'override dei comandi.
@@ -51,7 +53,7 @@ L'IDE può passare i comandi passati attraverso il <xref:Microsoft.VisualStudio.
 
     Il progetto padre non deve eseguire il routing del comando al progetto figlio. Questa attività viene eseguita dall'IDE.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>
 - [Comandi, menu e barre degli strumenti](../../extensibility/internals/commands-menus-and-toolbars.md)
 - [Annidamento dei progetti](../../extensibility/internals/nesting-projects.md)

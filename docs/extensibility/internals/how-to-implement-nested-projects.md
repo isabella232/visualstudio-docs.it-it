@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: implementare progetti annidati | Microsoft Docs'
+description: Informazioni su come implementare i progetti annidati in Visual Studio generando eventi dalla soluzione e dai progetti padre per compilare una gerarchia del progetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b1ac3c147962b943499172435c3f601115d36a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85a5c14196211a638cd830ac6df39570288aa831
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905346"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761337"
 ---
 # <a name="how-to-implement-nested-projects"></a>Procedura: implementare progetti annidati
 
@@ -84,7 +86,7 @@ Negli argomenti seguenti vengono trattati molti altri concetti da considerare qu
 - [Implementare la gestione dei comandi per i progetti annidati](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
 - [Filtrare la finestra di dialogo AddItem per i progetti annidati](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Aggiungi elementi alla finestra di dialogo Aggiungi nuovo elemento](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Registrare modelli di progetti e di elementi](../../extensibility/internals/registering-project-and-item-templates.md)

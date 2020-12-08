@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: registrare una libreria con il gestore oggetti | Microsoft Docs'
+description: Informazioni su come registrare una libreria con gestione oggetti di Visual Studio in modo che sia possibile visualizzare i simboli negli strumenti di esplorazione, ad esempio Visualizzazione classi e Visualizzatore oggetti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,15 +16,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7179bd87fdfd9a2c3fc36958a9d964ec4f790dbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8036a0f4fe073473891805766ea8e3bb941951f8
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905238"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761382"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Procedura: registrare una libreria con gestione oggetti
-Gli strumenti di esplorazione dei simboli, ad esempio **Visualizzazione classi**, **Visualizzatore oggetti**, **Visualizzatore chiamate** e **trovare i risultati dei**simboli, consentono di visualizzare i simboli nel progetto o in componenti esterni. I simboli includono spazi dei nomi, classi, interfacce, metodi e altri elementi del linguaggio. Le librerie consentono di tenere traccia di questi simboli ed esporli al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestore oggetti che popola gli strumenti con i dati.
+Gli strumenti di esplorazione dei simboli, ad esempio **Visualizzazione classi**, **Visualizzatore oggetti**, **Visualizzatore chiamate** e **trovare i risultati dei** simboli, consentono di visualizzare i simboli nel progetto o in componenti esterni. I simboli includono spazi dei nomi, classi, interfacce, metodi e altri elementi del linguaggio. Le librerie consentono di tenere traccia di questi simboli ed esporli al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestore oggetti che popola gli strumenti con i dati.
 
  Il gestore oggetti tiene traccia di tutte le librerie disponibili. Ogni libreria deve eseguire la registrazione con gestione oggetti prima di fornire simboli per gli strumenti di esplorazione dei simboli.
 
@@ -164,7 +166,7 @@ Gli strumenti di esplorazione dei simboli, ad esempio **Visualizzazione classi**
 
     ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estendibilità del servizio di linguaggio legacy](../../extensibility/internals/legacy-language-service-extensibility.md)
 - [Supporto degli strumenti per l'esplorazione di simboli](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [Procedura: esporre elenchi di simboli forniti dalla libreria al gestore oggetti](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

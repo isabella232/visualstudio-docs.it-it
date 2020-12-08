@@ -1,5 +1,7 @@
 ---
 title: Fornire supporto per la struttura in un servizio di linguaggio | Microsoft Docs
+description: Informazioni su come fornire supporto per la struttura espansa in un servizio di linguaggio legacy aggiungendo aree della struttura controllate dall'editor e aree della struttura controllate dal client.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 450ef1430e86467d116cc635a27600756bc36075
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9397ff17ba80368a86ba03260b3c5af3759bfe8d
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905289"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761361"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Procedura: fornire il supporto per la struttura espansa in un servizio di linguaggio legacy
 Sono disponibili due opzioni per estendere il supporto della struttura per il linguaggio oltre al supporto del comando **Comprimi a definizioni** . È possibile aggiungere aree della struttura controllate dall'editor e aggiungere aree della struttura controllate dal client.

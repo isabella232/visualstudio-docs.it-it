@@ -1,5 +1,7 @@
 ---
-title: Comandi definiti dall'IDE per l'estensione dei sistemi di progetto | Microsoft Docs
+title: IDE-Defined comandi per estendere i sistemi di progetto | Microsoft Docs
+description: Informazioni sui comandi e sui gruppi di comandi definiti in Visual Studio Integrated Development Environment (IDE) usati per estendere i sistemi di progetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61c0b2924548f50ad650389e3ad81759be1986a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d5147f4e03b019b083613a77afe95b95e9e033a
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707729"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761166"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Comandi definiti dall'IDE per l'estensione dei sistemi di progetto
 Quando si desidera estendere i sistemi del progetto, è possibile utilizzare i comandi e i gruppi di comandi forniti dall' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
@@ -32,7 +34,7 @@ Quando si desidera estendere i sistemi del progetto, è possibile utilizzare i c
 |IDM_VS_TOOL_PROJWIN|Barra degli strumenti **Esplora soluzioni** .|
 
 ## <a name="shortcut-menus"></a>Menu di scelta rapida
- Nella tabella seguente vengono illustrati i menu di scelta rapida che si applicano quando si seleziona un singolo nodo nel **Esplora soluzioni**o quando sono presenti più selezioni omogenee nell' **Esplora soluzioni**, ovvero quando tutti i nodi selezionati sono dello stesso tipo.
+ Nella tabella seguente vengono illustrati i menu di scelta rapida che si applicano quando si seleziona un singolo nodo nel **Esplora soluzioni** o quando sono presenti più selezioni omogenee nell' **Esplora soluzioni**, ovvero quando tutti i nodi selezionati sono dello stesso tipo.
 
 |Menu di scelta rapida|Descrizione|
 |-------------------|-----------------|
@@ -69,7 +71,7 @@ Quando si desidera estendere i sistemi del progetto, è possibile utilizzare i c
 |IDG_VS_CTXT_PROJECT_TRANSFER|Comandi per operazioni Taglia, copia e incolla.|
 |IDG_VS_CTXT_PROJECT_PROPERTIES|Comandi che consentono di accedere alla finestra di dialogo delle **proprietà del progetto** .|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Creazione di gruppi riutilizzabili di pulsanti](../../extensibility/creating-reusable-groups-of-buttons.md)

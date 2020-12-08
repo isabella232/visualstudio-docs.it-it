@@ -1,5 +1,7 @@
 ---
-title: Comandi, menu e gruppi definiti dall'IDE | Microsoft Docs
+title: Comandi IDE-Defined, menu e gruppi | Microsoft Docs
+description: Informazioni sui menu, i comandi e i gruppi di comandi definiti in Visual Studio Integrated Development Environment (IDE).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6557f49b019a6793698dabe852919ec2e9f28cfd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6314199fdf850c377825ee31e58cd9f315c5f672
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707725"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761023"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Comandi, menu e gruppi definiti dall'IDE
 Molti menu, comandi e gruppi di comandi sono già definiti per l'uso da parte dell' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Questi comandi sono disponibili anche per l'uso quando si estende [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="finding-environment-defined-commands"></a>Ricerca di comandi definiti dall'ambiente
+## <a name="finding-environment-defined-commands"></a>Ricerca di Environment-Defined comandi
  I comandi dell'ambiente sono definiti in un set di quattro file con estensione vsct:
 
 - SharedCmdDef. vsct
@@ -48,7 +50,7 @@ Molti menu, comandi e gruppi di comandi sono già definiti per l'uso da parte de
 
  Fornisce i valori GUID e ID dei comandi definiti dall'IDE di Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [File Visual Studio Command Table (con estensione vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Comandi definiti dall'IDE per l'estensione dei sistemi di progetto](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
