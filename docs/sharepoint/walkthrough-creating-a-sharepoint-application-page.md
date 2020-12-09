@@ -1,5 +1,7 @@
 ---
 title: "Procedura dettagliata: creazione di una pagina dell'applicazione SharePoint | Microsoft Docs"
+description: In questa procedura dettagliata creare una pagina dell'applicazione (un modulo specializzato di una pagina ASP.NET) e quindi eseguirne il debug tramite un sito di SharePoint locale.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76375c15077bf672eaba01c840ba406228046435
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95addb145312de85a3525c228297e7ff9636ea0d
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016497"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914881"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Procedura dettagliata: creare una pagina dell'applicazione SharePoint
 
@@ -59,7 +61,7 @@ Per prima cosa, creare un **progetto SharePoint vuoto**. Successivamente, verrà
 
 Per creare una pagina dell'applicazione, aggiungere un elemento della **pagina dell'applicazione** al progetto.
 
-1. In **Esplora soluzioni**scegliere il progetto **MySharePointProject** .
+1. In **Esplora soluzioni** scegliere il progetto **MySharePointProject** .
 
 2. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
@@ -75,7 +77,7 @@ L'elemento della pagina dell'applicazione consente di usare una finestra di prog
 
 1. Sulla barra dei menu scegliere **Visualizza**  >  **casella degli strumenti**.
 
-2. Nel nodo standard della **casella degli strumenti**eseguire uno dei passaggi seguenti:
+2. Nel nodo standard della **casella degli strumenti** eseguire uno dei passaggi seguenti:
 
     - Aprire il menu di scelta rapida per l'elemento **etichetta** , scegliere **copia**, aprire il menu di scelta rapida per la riga sotto il controllo contenuto **PlaceHolderMain** nella finestra di progettazione, quindi scegliere **Incolla**.
 
@@ -99,11 +101,11 @@ L'elemento della pagina dell'applicazione consente di usare una finestra di prog
 
 Gestire i controlli in una pagina dell'applicazione in modo analogo a qualsiasi pagina ASP.NET. In questa procedura verrà gestito l' `SelectedIndexChanged` evento dell'elenco a discesa.
 
-1. Scegliere **codice**dal menu **Visualizza** .
+1. Scegliere **codice** dal menu **Visualizza** .
 
      Il file di codice della pagina dell'applicazione verrà aperto nell'editor di codice.
 
-2. Aggiungere il metodo seguente alla classe `SearchItems`. Questo codice gestisce l' <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> evento di chiamando <xref:System.Web.UI.WebControls.DropDownList> un metodo che verrà creato più avanti in questa procedura dettagliata.
+2. Aggiungi alla classe `SearchItems` il metodo seguente. Questo codice gestisce l' <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> evento di chiamando <xref:System.Web.UI.WebControls.DropDownList> un metodo che verrà creato più avanti in questa procedura dettagliata.
 
      [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]
      [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]
@@ -113,12 +115,12 @@ Gestire i controlli in una pagina dell'applicazione in modo analogo a qualsiasi 
      [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]
      [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]
 
-4. Aggiungere il metodo seguente alla classe `SearchItems`. Questo metodo scorre tutti i siti nella server farm e cerca gli elementi creati o modificati dall'utente corrente.
+4. Aggiungi alla classe `SearchItems` il metodo seguente. Questo metodo scorre tutti i siti nella server farm e cerca gli elementi creati o modificati dall'utente corrente.
 
      [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]
      [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]
 
-5. Aggiungere il metodo seguente alla classe `SearchItems`. Questo metodo consente di visualizzare gli elementi creati o modificati dall'utente corrente nella tabella.
+5. Aggiungi alla classe `SearchItems` il metodo seguente. Questo metodo consente di visualizzare gli elementi creati o modificati dall'utente corrente nella tabella.
 
      [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]
      [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]
@@ -127,7 +129,7 @@ Gestire i controlli in una pagina dell'applicazione in modo analogo a qualsiasi 
 
 Quando si esegue il progetto, viene aperto il sito di SharePoint e viene visualizzata la pagina applicazione.
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per la pagina applicazione, quindi scegliere **Imposta come elemento di avvio**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per la pagina applicazione, quindi scegliere **Imposta come elemento di avvio**.
 
 2. Premere **F5**.
 
@@ -151,7 +153,7 @@ Per ulteriori informazioni su come progettare il contenuto di una pagina di Shar
 
 - [Creazione di controlli riutilizzabili per Web part o pagine dell'applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Procedura: creare una pagina](../sharepoint/how-to-create-an-application-page.md) 
  dell'applicazione [Tipo di pagina _layouts applicazione](/previous-versions/office/aa979604(v=office.14))

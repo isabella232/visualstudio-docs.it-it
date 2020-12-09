@@ -1,5 +1,7 @@
 ---
 title: Valutazione delle variabili locali | Microsoft Docs
+description: Informazioni su come Visual Studio accede alla posizione in memoria che contiene un valore locale che dipende dallo stato corrente del programma.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aaf140a9ddbc7733da4d05450a024c0f0a713712
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5d9c25c9b7b32b69983aeec4a1e533cbb927a11
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738813"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915635"
 ---
 # <a name="evaluate-locals"></a>Valuta variabili locali
 > [!IMPORTANT]
@@ -189,7 +191,7 @@ HRESULT FieldGetPrimitiveValue(
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Implementazione di esempio di variabili locali](../../extensibility/debugger/sample-implementation-of-locals.md)
 - [Ottenere i valori locali](../../extensibility/debugger/getting-local-values.md)
 - [Contesto di valutazione](../../extensibility/debugger/evaluation-context.md)

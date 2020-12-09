@@ -1,6 +1,8 @@
 ---
 title: Creazione di un elemento di progetto azione personalizzata con un modello di elemento, parte 1
 titleSuffix: ''
+description: Utilizzando un modello di elemento, creare un elemento di progetto che può essere aggiunto a un progetto SharePoint per creare un'azione personalizzata in un sito di SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5cdf574d17e63e1ef4906c629d43f5f928784d01
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5d9d1d2cca8f8ffaec67c92b44e7a621d08ad673
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585563"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915271"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Procedura dettagliata: creare un elemento di progetto azione personalizzata con un modello di elemento, parte 1
   Per estendere il sistema del progetto SharePoint in Visual Studio, è possibile creare tipi di elemento di progetto personalizzati. In questa procedura dettagliata verrà creato un elemento del progetto che può essere aggiunto a un progetto SharePoint per creare un'azione personalizzata in un sito di SharePoint. L'azione personalizzata consente di aggiungere una voce di menu al menu **Azioni sito** del sito di SharePoint.
@@ -92,7 +94,7 @@ ms.locfileid: "91585563"
 
 #### <a name="to-create-the-item-template-project"></a>Per creare il progetto di modello di elemento
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
 
 2. Nell'elenco nella parte superiore della finestra di dialogo **nuovo progetto** verificare che sia selezionata l'opzione **.NET Framework 4,5** .
 
@@ -106,7 +108,7 @@ ms.locfileid: "91585563"
 
 #### <a name="to-create-the-extension-project"></a>Per creare il progetto di estensione
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
 
 2. Nell'elenco nella parte superiore della finestra di dialogo **nuovo progetto** verificare che sia selezionata l'opzione **.NET Framework 4,5** .
 
@@ -123,13 +125,13 @@ ms.locfileid: "91585563"
 
 #### <a name="to-configure-the-project"></a>Per configurare il progetto
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto **ProjectItemDefinition** , scegliere **Aggiungi**, quindi scegliere **nuovo elemento**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **ProjectItemDefinition** , scegliere **Aggiungi**, quindi scegliere **nuovo elemento**.
 
 2. Nell'elenco di elementi del progetto scegliere **file di codice**.
 
 3. Nella casella **nome** immettere il nome **CustomAction** con l'estensione del nome file appropriata, quindi scegliere il pulsante **Aggiungi** .
 
-4. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto **ProjectItemDefinition** , quindi scegliere **Aggiungi riferimento**.
+4. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **ProjectItemDefinition** , quindi scegliere **Aggiungi riferimento**.
 
 5. Nella finestra di dialogo **Gestione riferimenti-ProjectItemDefinition** scegliere il nodo **assembly** , quindi scegliere il nodo **Framework** .
 
@@ -160,7 +162,7 @@ ms.locfileid: "91585563"
 
 #### <a name="to-create-a-custom-icon-for-the-project-item"></a>Per creare un'icona personalizzata per l'elemento del progetto
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto **ProjectItemDefinition** , scegliere **Aggiungi**, quindi scegliere **nuovo elemento.**
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **ProjectItemDefinition** , scegliere **Aggiungi**, quindi scegliere **nuovo elemento.**
 
 2. Nell'elenco degli elementi del progetto scegliere l'elemento del **file icona** .
 
@@ -173,7 +175,7 @@ ms.locfileid: "91585563"
 
 4. Modificare la versione 16x16 del file icona in modo che disponga di una progettazione che è possibile riconoscere, quindi salvare il file dell'icona.
 
-5. In **Esplora soluzioni**scegliere **CustomAction_SolutionExplorer. ico**.
+5. In **Esplora soluzioni** scegliere **CustomAction_SolutionExplorer. ico**.
 
 6. Nella finestra **Proprietà** scegliere la freccia accanto alla proprietà azione di **compilazione** .
 
@@ -221,11 +223,11 @@ ms.locfileid: "91585563"
 
      Questo file definisce il contenuto e il comportamento del modello di elemento. Per altre informazioni sul contenuto di questo file, vedere [riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
-4. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto **ItemTemplate** , scegliere **Aggiungi**, quindi scegliere **nuovo elemento**.
+4. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **ItemTemplate** , scegliere **Aggiungi**, quindi scegliere **nuovo elemento**.
 
 5. Nella finestra di dialogo **Aggiungi nuovo elemento** scegliere il modello **file di testo** .
 
-6. Nella casella **nome** immettere **CustomAction. spdata**e quindi scegliere il pulsante **Aggiungi** .
+6. Nella casella **nome** immettere **CustomAction. spdata** e quindi scegliere il pulsante **Aggiungi** .
 
 7. Aggiungere il seguente codice XML al file *CustomAction. spdata* e quindi salvare e chiudere il file.
 
@@ -241,7 +243,7 @@ ms.locfileid: "91585563"
 
      Questo file contiene informazioni sui file contenuti nell'elemento del progetto. L' `Type` attributo dell' `ProjectItem` elemento deve essere impostato sulla stessa stringa passata a nella definizione dell'elemento di <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> progetto (la `CustomActionProjectItemTypeProvider` classe creata in precedenza in questa procedura dettagliata). Per ulteriori informazioni sul contenuto dei file con *estensione spdata* , vedere [riferimento allo schema degli elementi di progetto SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md).
 
-8. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto **ItemTemplate** , scegliere **Aggiungi**, quindi scegliere **nuovo elemento**.
+8. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **ItemTemplate** , scegliere **Aggiungi**, quindi scegliere **nuovo elemento**.
 
 9. Nella finestra di dialogo **Aggiungi nuovo elemento** scegliere il modello di **file XML** .
 
@@ -267,7 +269,7 @@ ms.locfileid: "91585563"
 
 12. Facoltativamente, aprire il file *ItemTemplate. ico* e modificarlo in modo che disponga di una progettazione che è possibile riconoscere. Questa icona verrà visualizzata accanto all'elemento del progetto nella finestra di dialogo **Aggiungi nuovo elemento** .
 
-13. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto **ItemTemplate** , quindi scegliere **Scarica progetto**.
+13. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **ItemTemplate** , quindi scegliere **Scarica progetto**.
 
 14. Aprire di nuovo il menu di scelta rapida per il progetto **ItemTemplate** , quindi scegliere **Modifica ItemTemplate. csproj** o **Modifica ItemTemplate. vbproj**.
 
@@ -287,14 +289,14 @@ ms.locfileid: "91585563"
 
      L' `OutputSubPath` elemento specifica altre cartelle nel percorso in cui viene creato il modello di elemento quando si compila il progetto. Le cartelle specificate qui assicurano che il modello di elemento sarà disponibile solo quando i clienti aprono la finestra di dialogo **Aggiungi nuovo elemento** , espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
 
-17. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto **ItemTemplate** , quindi scegliere **Ricarica progetto**.
+17. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **ItemTemplate** , quindi scegliere **Ricarica progetto**.
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-item"></a>Creare un pacchetto VSIX per distribuire l'elemento di progetto
  Per distribuire l'estensione, usare il progetto VSIX nella soluzione per creare un pacchetto VSIX. Per prima cosa, configurare il pacchetto VSIX modificando il file source. Extension. vsixmanifest incluso nel progetto VSIX. Quindi, creare il pacchetto VSIX compilando la soluzione.
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>Per configurare e creare il pacchetto VSIX
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il file **source. Extension. vsixmanifest** nel progetto CustomActionProjectItem, quindi scegliere **Apri**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il file **source. Extension. vsixmanifest** nel progetto CustomActionProjectItem, quindi scegliere **Apri**.
 
      Visual Studio apre il file nell'editor manifesto. Il file source. Extension. vsixmanifest è la base per il file Extension. vsixmanifest che tutti i pacchetti VSIX richiedono. Per altre informazioni su questo file, vedere [riferimento allo schema di estensione VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
@@ -363,7 +365,7 @@ ms.locfileid: "91585563"
 
 5. Nella **procedura guidata di personalizzazione di SharePoint**, immettere l'URL del sito che si desidera utilizzare per il debug, quindi scegliere il pulsante **fine** .
 
-6. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo del progetto, scegliere **Aggiungi**, quindi scegliere **nuovo elemento**.
+6. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo del progetto, scegliere **Aggiungi**, quindi scegliere **nuovo elemento**.
 
 7. Nella finestra di dialogo **Aggiungi nuovo elemento** scegliere il nodo **2010** nel nodo **SharePoint** .
 
@@ -377,7 +379,7 @@ ms.locfileid: "91585563"
 
 10. Premere il tasto **F5** per continuare a eseguire il debug del progetto.
 
-11. Nell'istanza sperimentale di Visual Studio, in **Esplora soluzioni**aprire il menu di scelta rapida per il nodo **CustomAction1** , quindi scegliere **Visualizza finestra di progettazione azione personalizzata**.
+11. Nell'istanza sperimentale di Visual Studio, in **Esplora soluzioni** aprire il menu di scelta rapida per il nodo **CustomAction1** , quindi scegliere **Visualizza finestra di progettazione azione personalizzata**.
 
 12. Verificare che venga visualizzata una finestra di messaggio, quindi scegliere il pulsante **OK** .
 
@@ -387,7 +389,7 @@ ms.locfileid: "91585563"
 
      Verrà visualizzata la finestra **output** .
 
-14. In **Esplora soluzioni**aprire il menu di scelta rapida per l'elemento **CustomAction1** , quindi modificarne il nome in **MyCustomAction**.
+14. In **Esplora soluzioni** aprire il menu di scelta rapida per l'elemento **CustomAction1** , quindi modificarne il nome in **MyCustomAction**.
 
      Nella finestra **output** viene visualizzato un messaggio di conferma. Questo messaggio viene scritto dal <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemNameChanged> gestore eventi definito nella `CustomActionProjectItemTypeProvider` classe. È possibile gestire questo evento e altri eventi dell'elemento di progetto per implementare il comportamento personalizzato quando lo sviluppatore modifica l'elemento del progetto.
 

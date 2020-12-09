@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: aggiungere ricevitori di eventi di funzionalità | Microsoft Docs'
+description: In questa procedura dettagliata aggiungere ricevitori di eventi di funzionalità, ovvero metodi che vengono eseguiti quando una funzionalità di SharePoint viene installata, attivata, disattivata o rimossa.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,15 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f40358c157ec24557947f36b0c6eadb6d8a2622d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98b85222fca4da6dfca653ad74e1315801798d83
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015363"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915596"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Procedura dettagliata: aggiungere ricevitori di eventi di funzionalità
-  I ricevitori di eventi di funzionalità sono metodi che vengono eseguiti quando si verifica uno dei seguenti eventi correlati alle funzionalità in SharePoint:
+I ricevitori di eventi di funzionalità sono metodi che vengono eseguiti quando si verifica uno dei seguenti eventi correlati alle funzionalità in SharePoint:
 
 - È installata una funzionalità di.
 
@@ -34,7 +36,7 @@ ms.locfileid: "86015363"
 
 - Una funzionalità viene rimossa.
 
-  In questa procedura dettagliata viene illustrato come aggiungere un ricevitore di eventi a una funzionalità in un progetto SharePoint. Vengono illustrate le attività seguenti:
+In questa procedura dettagliata viene illustrato come aggiungere un ricevitore di eventi a una funzionalità in un progetto SharePoint. Vengono illustrate le attività seguenti:
 
 - Creazione di un progetto vuoto con un ricevitore di eventi di funzionalità.
 
@@ -117,7 +119,7 @@ ms.locfileid: "86015363"
 
      Si noti che un annuncio viene visualizzato nell'elenco **annunci** dopo che la funzionalità è stata disattivata.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)

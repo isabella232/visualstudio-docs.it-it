@@ -1,6 +1,8 @@
 ---
 title: Creare un elemento di progetto colonna del sito con il modello di progetto, parte 2
 titleSuffix: ''
+description: Aggiungere una procedura guidata a un modello di progetto colonna del sito per raccogliere dati dagli utenti quando usano il modello per creare un progetto SharePoint contenente l'elemento del progetto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 51fb7a4fb3d2ccba8c0a811619d7793e730a8ec4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e6e5c9a0bb461f6b81b9cb7e1aa5f0134a7bdcbd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585458"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915141"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Procedura dettagliata: creare un elemento di progetto colonna del sito con un modello di progetto, parte 2
   Dopo aver definito un tipo personalizzato di elemento di progetto SharePoint e averlo associato a un modello di progetto in Visual Studio, potrebbe essere necessario anche fornire una procedura guidata per il modello. È possibile utilizzare la procedura guidata per raccogliere informazioni dagli utenti quando utilizzano il modello per creare un nuovo progetto che contiene l'elemento del progetto. Le informazioni raccolte possono essere utilizzate per inizializzare l'elemento del progetto.
@@ -80,7 +82,7 @@ ms.locfileid: "91585458"
 
 1. In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aprire la soluzione SiteColumnProjectItem.
 
-2. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo della soluzione **SiteColumnProjectItem** , scegliere **Aggiungi**, quindi **nuovo progetto**.
+2. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo della soluzione **SiteColumnProjectItem** , scegliere **Aggiungi**, quindi **nuovo progetto**.
 
 3. Nella parte superiore della finestra di dialogo **Aggiungi nuovo progetto** verificare che **.NET Framework 4,5** sia selezionato nell'elenco delle versioni del .NET Framework.
 
@@ -94,7 +96,7 @@ ms.locfileid: "91585458"
 
 #### <a name="to-create-the-sharepoint-commands-project"></a>Per creare il progetto di comandi di SharePoint
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo della soluzione SiteColumnProjectItem, scegliere **Aggiungi**, quindi **nuovo progetto**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo della soluzione SiteColumnProjectItem, scegliere **Aggiungi**, quindi **nuovo progetto**.
 
 2. Nella parte superiore della finestra di dialogo **Aggiungi nuovo progetto** scegliere **.NET Framework 3,5** nell'elenco delle versioni del .NET Framework.
 
@@ -111,9 +113,9 @@ ms.locfileid: "91585458"
 
 #### <a name="to-configure-the-wizard-project"></a>Per configurare il progetto della procedura guidata
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo del progetto **ProjectTemplateWizard** , quindi scegliere **proprietà**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo del progetto **ProjectTemplateWizard** , quindi scegliere **proprietà**.
 
-2. In creazione **progetti**scegliere la scheda **applicazione** per un progetto Visual C# o la scheda **Compila** per un progetto Visual Basic.
+2. In creazione **progetti** scegliere la scheda **applicazione** per un progetto Visual C# o la scheda **Compila** per un progetto Visual Basic.
 
 3. Verificare che il Framework di destinazione sia impostato sul .NET Framework 4,5, non sul profilo client .NET Framework 4,5.
 
@@ -165,7 +167,7 @@ ms.locfileid: "91585458"
 
 #### <a name="to-configure-the-sharepointcommands-project"></a>Per configurare il progetto SharePointcommands
 
-1. In **Esplora soluzioni**scegliere il nodo del progetto **SharePointCommands** .
+1. In **Esplora soluzioni** scegliere il nodo del progetto **SharePointCommands** .
 
 2. Sulla barra dei menu scegliere **progetto**,  **Aggiungi elemento esistente**.
 
@@ -365,7 +367,7 @@ ms.locfileid: "91585458"
 
 #### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>Per firmare l'assembly della procedura guidata con un nome sicuro
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto **ProjectTemplateWizard** , quindi scegliere **proprietà**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **ProjectTemplateWizard** , quindi scegliere **proprietà**.
 
 2. Nella scheda **Firma** selezionare la casella di controllo **Firma assembly**.
 
@@ -377,7 +379,7 @@ ms.locfileid: "91585458"
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>Per ottenere il token di chiave pubblica per l'assembly della procedura guidata
 
-1. Dal **menu Start**scegliere **tutti i programmi**, fare clic **su Microsoft Visual Studio**, scegliere **strumenti di Visual Studio**, quindi scegliere **prompt dei comandi per gli sviluppatori**.
+1. Dal **menu Start** scegliere **tutti i programmi**, fare clic **su Microsoft Visual Studio**, scegliere **strumenti di Visual Studio**, quindi scegliere **prompt dei comandi per gli sviluppatori**.
 
      Viene visualizzata una finestra del prompt dei comandi di Visual Studio.
 
@@ -393,7 +395,7 @@ ms.locfileid: "91585458"
 
 #### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>Per aggiungere un riferimento all'assembly della procedura guidata nel file con estensione vstemplate
 
-1. In **Esplora soluzioni**espandere il nodo del progetto **SiteColumnProjectTemplate** e aprire il file SiteColumnProjectTemplate. vstemplate.
+1. In **Esplora soluzioni** espandere il nodo del progetto **SiteColumnProjectTemplate** e aprire il file SiteColumnProjectTemplate. vstemplate.
 
 2. In prossimità della fine del file, aggiungere l' `WizardExtension` elemento seguente tra i `</TemplateContent>` `</VSTemplate>` tag e. Sostituire il valore del *token* dell' `PublicKeyToken` attributo con il token di chiave pubblica ottenuto nella procedura precedente.
 
@@ -477,7 +479,7 @@ ms.locfileid: "91585458"
 
 4. Nella finestra di dialogo **eccezioni** assicurarsi che le caselle di controllo **generate** e non **gestite dall'utente** per le **eccezioni Common Language Runtime** siano deselezionate, quindi scegliere il pulsante **OK** .
 
-5. Per avviare il debug, premere il tasto **F5** oppure scegliere **debug**  >  **Avvia debug**sulla barra dei menu.
+5. Per avviare il debug, premere il tasto **F5** oppure scegliere **debug**  >  **Avvia debug** sulla barra dei menu.
 
      Visual Studio installa l'estensione in%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Site Column\1.0 e avvia un'istanza sperimentale di Visual Studio. Si eseguirà il test dell'elemento del progetto in questa istanza di Visual Studio.
 
@@ -495,7 +497,7 @@ ms.locfileid: "91585458"
 
 6. Nella **procedura guidata di personalizzazione di SharePoint**, immettere l'URL del sito che si desidera utilizzare per il debug, quindi scegliere il pulsante **Avanti** .
 
-7. Nella seconda pagina della **procedura guidata di personalizzazione di SharePoint**effettuare le selezioni seguenti:
+7. Nella seconda pagina della **procedura guidata di personalizzazione di SharePoint** effettuare le selezioni seguenti:
 
    - Nell'elenco **tipo** scegliere **Boolean**.
 
@@ -503,7 +505,7 @@ ms.locfileid: "91585458"
 
    - Nella casella **nome** immettere la **colonna Yes/No**, quindi scegliere il pulsante **fine** .
 
-     In **Esplora soluzioni**viene visualizzato un nuovo progetto che contiene un elemento di progetto denominato **Field1**e Visual Studio apre il file di *Elements.xml* del progetto nell'editor.
+     In **Esplora soluzioni** viene visualizzato un nuovo progetto che contiene un elemento di progetto denominato **Field1** e Visual Studio apre il file di *Elements.xml* del progetto nell'editor.
 
 8. Verificare che *Elements.xml* contenga i valori specificati nella procedura guidata.
 
@@ -516,7 +518,7 @@ ms.locfileid: "91585458"
     > [!NOTE]
     > Se viene visualizzata la finestra di dialogo **debug script disabilitato** , scegliere il pulsante **Sì** per continuare a eseguire il debug del progetto.
 
-2. Scegliere **Impostazioni sito**dal menu **Azioni sito** .
+2. Scegliere **Impostazioni sito** dal menu **Azioni sito** .
 
 3. Nella pagina Impostazioni sito, in **raccolte**, scegliere il collegamento **colonne sito** .
 

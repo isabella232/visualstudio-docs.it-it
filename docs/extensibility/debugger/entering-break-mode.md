@@ -1,5 +1,7 @@
 ---
 title: Immissione della modalità di interruzioni | Microsoft Docs
+description: Informazioni sul processo che si verifica per un punto di interruzione rilevato in una funzione, in esecuzione fino alla riga del codice sorgente in corrispondenza del cursore o in esecuzione fino a un punto di interruzione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bbcec8adf6468f70d95df5f291ce1e5540406cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e73c64d17aee48cdb67a110e93aa556f112a1014
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738887"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915232"
 ---
 # <a name="enter-break-mode"></a>Immettere la modalità di interruzioni
 Le informazioni seguenti descrivono il processo che si verifica quando viene rilevato un punto di interruzione dopo l'esecuzione di un'istruzione in una funzione, l'esecuzione fino alla riga del codice sorgente in cui è presente il cursore o l'esecuzione fino a un punto di interruzione.
@@ -41,5 +43,5 @@ Le informazioni seguenti descrivono il processo che si verifica quando viene ril
 
     - [IDebugStackFrame2:: GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) per ottenere informazioni sulla memoria
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Chiamata di eventi del debugger](../../extensibility/debugger/calling-debugger-events.md)

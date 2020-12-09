@@ -1,5 +1,7 @@
 ---
 title: Creazione di modelli di progetto e di elemento personalizzati | Microsoft Docs
+description: Informazioni sul modo in cui i modelli per la creazione di modelli in Visual Studio SDK consentono di includere modelli in estensioni più grandi.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: overview
 ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb6bcd63896a11f9ca1eabddddc17b3e52865e5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78770c74e5b866ad6791db01a448d46231edfd2a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801256"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915622"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Creare modelli di progetto e di elemento personalizzati
 
@@ -32,7 +34,7 @@ Per gli scenari di creazione di modelli di base, è consigliabile usare l' **esp
 
 1. Creare un progetto di modello di progetto. È possibile trovare il modello di progetto nella finestra di dialogo **nuovo progetto** , cercando "modello di progetto" e selezionando la versione C# o Visual Basic.
 
-     Il modello genera un file di classe, un'icona, un file con *estensione vstemplate* , un file di progetto modificabile denominato *ProjectTemplate. vbproj* o *ProjectTemplate. csproj*e alcuni file che vengono in genere generati da altri tipi di progetto, ad esempio un file *Resources. resx* , un file *AssemblyInfo* e un file con *estensione Settings* . Ogni file di codice contiene le sostituzioni di parametro comuni laddove appropriato.
+     Il modello genera un file di classe, un'icona, un file con *estensione vstemplate* , un file di progetto modificabile denominato *ProjectTemplate. vbproj* o *ProjectTemplate. csproj* e alcuni file che vengono in genere generati da altri tipi di progetto, ad esempio un file *Resources. resx* , un file *AssemblyInfo* e un file con *estensione Settings* . Ogni file di codice contiene le sostituzioni di parametro comuni laddove appropriato.
 
 ![Selezione progetto modello di progetto](media/project-template-selection.png)
 
@@ -72,7 +74,7 @@ Per gli scenari di creazione di modelli di base, è consigliabile usare l' **esp
 
 1. Creare un progetto VSIX. Per altre informazioni, vedere [modello di progetto VSIX](../extensibility/vsix-project-template.md).
 
-2. Impostare il progetto VSIX come progetto di avvio. Nella **Esplora soluzioni**selezionare il nodo progetto VSIX, fare clic con il pulsante destro del mouse e scegliere **Imposta come progetto di avvio**.
+2. Impostare il progetto VSIX come progetto di avvio. Nella **Esplora soluzioni** selezionare il nodo progetto VSIX, fare clic con il pulsante destro del mouse e scegliere **Imposta come progetto di avvio**.
 
 3. Impostare il progetto di modello di progetto come asset del progetto VSIX. Aprire il file con *estensione vsixmanifest* . Passare alla scheda **Asset** e selezionare **nuovo**.
 
@@ -82,9 +84,9 @@ Per gli scenari di creazione di modelli di base, è consigliabile usare l' **esp
 
 4. Compilare la soluzione e premere **F5**. Viene visualizzata l'istanza sperimentale.
 
-5. Per un progetto di modello di progetto, il modello di progetto dovrebbe essere visualizzato nella finestra di dialogo **nuovo progetto** (**file**  >  **nuovo**  >  **progetto**), nel nodo Visual C# o Visual Basic. Per un progetto di modello di elemento, il modello di elemento verrà visualizzato nella finestra di dialogo **Aggiungi nuovo elemento** . Per visualizzare la finestra di dialogo **Aggiungi nuovo elemento** , dal **Esplora soluzioni**Selezionare il nodo del progetto e selezionare **Aggiungi**  >  **nuovo elemento**.
+5. Per un progetto di modello di progetto, il modello di progetto dovrebbe essere visualizzato nella finestra di dialogo **nuovo progetto** (**file**  >  **nuovo**  >  **progetto**), nel nodo Visual C# o Visual Basic. Per un progetto di modello di elemento, il modello di elemento verrà visualizzato nella finestra di dialogo **Aggiungi nuovo elemento** . Per visualizzare la finestra di dialogo **Aggiungi nuovo elemento** , dal **Esplora soluzioni** Selezionare il nodo del progetto e selezionare **Aggiungi**  >  **nuovo elemento**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni di riferimento sui modelli di Visual Studio](../ide/creating-project-and-item-templates.md)
 - [Pacchetti NuGet nei modelli di Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

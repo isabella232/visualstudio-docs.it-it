@@ -1,5 +1,7 @@
 ---
 title: Supporto dei form nei flussi di lavoro | Microsoft Docs
+description: 'Informazioni sul supporto dei moduli nei flussi di lavoro di SharePoint. In un flusso di lavoro possono essere utilizzati quattro tipi di form: associazione, avvio, attività e modifica.'
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b064df6729b914af7758cde86b03b886fd0e5d26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52939fe00dcbca1cfd633c81d4b0a00ea6b517b9
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986258"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915505"
 ---
 # <a name="form-support-in-workflows"></a>Supporto dei form nei flussi di lavoro
   In un flusso di lavoro possono essere utilizzati quattro tipi di form: associazione, avvio, attività e modifica. Questi tipi di form possono essere basati su un form ASPX o un modulo di InfoPath. Il livello di supporto [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornito da per un particolare modulo dipende da diversi fattori, descritti nelle tabelle seguenti. Per ulteriori informazioni sui tipi di form del flusso di lavoro, vedere [Cenni preliminari sui form](/previous-versions/office/developer/sharepoint-2010/ms457061(v=office.14))dei flussi
@@ -46,7 +48,7 @@ ms.locfileid: "72986258"
 |Attività|-Il form viene usato come riferimento nel file *Elements.xml* del flusso di lavoro.<br />-Il file di *Elements.xml* del flusso di lavoro non viene sottoposto a refactoring.|-Il form viene importato, ma non vi viene fatto riferimento nel *Elements.xml* del flusso di lavoro.<br />-Il file di *Elements.xml* del flusso di lavoro non viene sottoposto a refactoring. **Nota:**  Per il corretto funzionamento di questo scenario, è necessario aggiungere e modificare le regole e le proprietà.|
 |Modifica|Non applicabile. Impossibile creare moduli di modifica ASPX in SharePoint Designer.|Non applicabile. Non è possibile creare moduli di modifica di InfoPath in SharePoint Designer, ad eccezione del flusso di lavoro predefinito di SharePoint Server, che non è incluso nel file con estensione wsp quando il flusso di lavoro viene esportato.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: creare un flusso di lavoro con form di associazione e di avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
 - [Creazione di soluzioni flusso di lavoro SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Importa elementi da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)

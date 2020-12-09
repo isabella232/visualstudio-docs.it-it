@@ -7,12 +7,12 @@ ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
 ms.date: 09/21/2020
 ms.topic: conceptual
 description: Informazioni su come gli amministratori possono assegnare le licenze ai sottoscrittori
-ms.openlocfilehash: 95e0358a39ccb88ed93f8e5bcee11d2b36d12d48
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: dd80a14a3ff57100f210fd7ae1b882c0ab7a9faf
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863114"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915414"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Assegnare licenze nel portale di amministrazione delle sottoscrizioni di Visual Studio
 In qualità di amministratore delle sottoscrizioni di Visual Studio, è possibile usare il portale di amministrazione per assegnare le sottoscrizioni a singoli utenti e gruppi di utenti.
@@ -58,7 +58,7 @@ Guardare il video o leggere per informazioni su come assegnare una sottoscrizion
 ## <a name="why-use-a-different-notification-email-address"></a>Perché usare un indirizzo di posta elettronica di notifica diverso?
 Alcune organizzazioni configurano i servizi di posta elettronica per bloccare i messaggi di posta elettronica in arrivo da altri domini.  Il blocco di messaggi di posta elettronica in arrivo significa che i sottoscrittori e gli amministratori non hanno importanti comunicazioni:
 - I Sottoscrittori non riceveranno una notifica a cui è stata assegnata una sottoscrizione.  In questo modo si impedirà anche di attivare alcuni dei vantaggi inclusi.  
-- Gli abbonati a cui sono state assegnate sottoscrizioni di Visual Studio con GitHub Enterprise non riceveranno l'invito a partecipare all'organizzazione GitHub, ovvero non saranno in grado di accettare l'invito. Devono accettare l'invito tramite posta elettronica per ottenere l'accesso all'organizzazione GitHub. 
+- Gli abbonati a cui sono state assegnate sottoscrizioni di Visual Studio con GitHub Enterprise non riceveranno l'invito a partecipare all'organizzazione GitHub, ovvero non saranno in grado di accettare l'invito. **Devono accettare l'invito tramite posta elettronica** per ottenere l'accesso all'organizzazione github. 
 - Gli amministratori non riceveranno alcuna notifica quando vengono aggiunti a un contratto, ricevono istruzioni amministrative mensili o notifiche delle modifiche delle funzionalità che influiscono sul modo in cui gestiscono le sottoscrizioni.
 
 L'uso di un indirizzo di posta elettronica di notifica consente di consentire ai sottoscrittori di ricevere comunicazioni importanti sulle sottoscrizioni senza modificare la funzionalità degli indirizzi di posta elettronica di accesso.  

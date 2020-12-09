@@ -1,5 +1,7 @@
 ---
 title: Posizione documento | Microsoft Docs
+description: Informazioni sul modo in cui la posizione di un documento nel debug di Visual Studio fornisce un'astrazione di una posizione in un file di origine come noto all'IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19b88ead19e4578adb7c151a681583120cf2ec17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fef3debcbce3a178c4321114d69c87c627611a07
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738908"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915323"
 ---
 # <a name="document-position"></a>Posizione del documento
 In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debug, *posizione del documento*:
@@ -26,7 +28,7 @@ In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debug, *posizion
 
 - Viene implementato da un'interfaccia [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Contesto del codice](../../extensibility/debugger/code-context.md)
 - [Contesto del documento](../../extensibility/debugger/document-context.md)
 - [Provider di simboli](../../extensibility/debugger/symbol-provider.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere e rimuovere assembly aggiuntivi | Microsoft Docs'
+description: Informazioni su come aggiungere e rimuovere assembly aggiuntivi nei pacchetti della soluzione SharePoint. Aggiungere o eliminare anche controlli e risorse di classe sicuri.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07b9016a4e246d3ed5a2697d924f556517a8226f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41b41ccd5eda2a44457adf23302a833574dade9e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014823"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914972"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Procedura: aggiungere e rimuovere assembly aggiuntivi
   Se un pacchetto di SharePoint dipende da altri assembly per la funzionalità o i dati, è possibile aggiungere gli assembly al pacchetto della soluzione (con estensione wsp). In questo modo, il server SharePoint verifica che gli assembly personalizzati vengano installati con un pacchetto.
@@ -108,7 +110,7 @@ ms.locfileid: "86014823"
 
 3. Scegliere il tasto CANC.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creazione di funzionalità di SharePoint](../sharepoint/creating-sharepoint-features.md)
 - [Procedura: Personalizzare una funzionalità SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [Procedura: aggiungere e rimuovere elementi nelle funzionalità di SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

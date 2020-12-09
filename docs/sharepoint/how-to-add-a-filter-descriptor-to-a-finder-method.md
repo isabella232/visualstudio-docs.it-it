@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere un descrittore di filtro a un metodo Finder | Microsoft Docs'
+description: Informazioni su come aggiungere un descrittore di filtro a un metodo di ricerca usando la finestra Dettagli metodo di integrazione applicativa dei dati in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 228afb2f49f4d528fa9b806e9bf8d2531f7de901
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff312753be07867d8978dc4d5f60d5dfc0eee557
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016746"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915427"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Procedura: aggiungere un descrittore di filtro a un metodo Finder
   I descrittori di filtro consentono agli utenti del modello di passare i valori ai metodi prima dell'esecuzione. Per ulteriori informazioni, vedere [progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -67,7 +69,7 @@ ms.locfileid: "86016746"
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)
 - [Procedura: aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [Procedura: aggiungere un parametro a un metodo](../sharepoint/how-to-add-a-parameter-to-a-method.md)

@@ -1,6 +1,8 @@
 ---
 title: 'Procedura: aggiungere un file modello di integrazione applicativa dei dati esistente a un progetto SharePoint | Microsoft Docs'
 titleSuffix: ''
+description: Aggiungere un file modello di integrazione applicativa dei dati (BDC) esistente a un progetto SharePoint in Visual Studio, in modo da poter personalizzare, creare un pacchetto e ridistribuire un modello di integrazione applicativa dei dati.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -18,19 +20,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbfbd4e485a359b7e760188217326d23d3b0aa47
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ce65f286c3de760ff74e5ef7239aac54d760f003
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584620"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914959"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>Procedura: aggiungere un file modello di integrazione applicativa dei dati esistente a un progetto SharePoint
-  È possibile personalizzare, creare un pacchetto e ridistribuire un modello di integrazione applicativa dei dati tramite Visual Studio per aggiungere il file di modello (con*estensione bdcm*) a qualsiasi progetto della farm di SharePoint. Per altre informazioni, vedere [creare un modello di integrazione applicativa dei dati](../sharepoint/creating-a-business-data-connectivity-model.md).
+  È possibile personalizzare, creare un pacchetto e ridistribuire un modello di integrazione applicativa dei dati tramite Visual Studio per aggiungere il file di modello (con *estensione bdcm*) a qualsiasi progetto della farm di SharePoint. Per altre informazioni, vedere [creare un modello di integrazione applicativa dei dati](../sharepoint/creating-a-business-data-connectivity-model.md).
 
 ### <a name="to-add-a-bdc-model-file-to-a-sharepoint-project"></a>Per aggiungere un file del modello di integrazione applicativa dei dati a un progetto SharePoint
 
-1. In **Esplora soluzioni**scegliere la cartella per un progetto SharePoint.
+1. In **Esplora soluzioni** scegliere la cartella per un progetto SharePoint.
 
 2. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi elemento esistente**.
 

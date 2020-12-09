@@ -1,5 +1,7 @@
 ---
 title: "Procedura dettagliata: creazione di un'estensione di progetto SharePoint | Microsoft Docs"
+description: Creare un'estensione di progetto SharePoint, che è possibile utilizzare per rispondere agli eventi a livello di progetto, ad esempio quando un progetto viene aggiunto, eliminato o rinominato.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d79bf66f88a7cbaa5321887b676cc9eca798a92
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: b815f8ea4656cc5a144f8cf12396391e55123ece
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739928"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914868"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Procedura dettagliata: creare un'estensione di progetto SharePoint
   In questa procedura dettagliata viene illustrato come creare un'estensione per i progetti SharePoint. È possibile usare un'estensione di progetto per rispondere a eventi a livello di progetto, ad esempio quando un progetto viene aggiunto, eliminato o rinominato. È anche possibile aggiungere proprietà personalizzate o rispondere quando viene modificato il valore di una proprietà. Diversamente dalle estensioni di elementi di progetto, le estensioni di progetto non possono essere associate a un particolare tipo di progetto SharePoint. Quando si crea un'estensione di progetto, l'estensione viene caricata quando un qualsiasi tipo di progetto SharePoint viene aperto in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -75,7 +77,7 @@ ms.locfileid: "90739928"
 
 #### <a name="to-create-the-extension-project"></a>Per creare il progetto di estensione
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
 
 2. Nella finestra di dialogo **nuovo progetto** espandere i nodi **Visual C#** o **Visual Basic** , quindi scegliere **Windows**.
 
@@ -126,7 +128,7 @@ ms.locfileid: "90739928"
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>Per configurare e creare il pacchetto VSIX
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il file source. Extension. vsixmanifest, quindi scegliere il pulsante **Apri** .
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il file source. Extension. vsixmanifest, quindi scegliere il pulsante **Apri** .
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] apre il file nella finestra di progettazione del manifesto. Le informazioni visualizzate nella scheda **metadati** vengono visualizzate anche in **estensioni e aggiornamenti**. Tutti i pacchetti VSIX richiedono il file Extension. vsixmanifest. Per altre informazioni su questo file, vedere [riferimento allo schema di estensione VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
@@ -157,9 +159,9 @@ ms.locfileid: "90739928"
 
 11. Sulla barra dei **menu scegliere Compila compila**  >  **soluzione**, quindi assicurarsi che il progetto venga compilato senza errori.
 
-12. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto **ProjectExtensionPackage** e scegliere il pulsante **Apri cartella in Esplora file** .
+12. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **ProjectExtensionPackage** e scegliere il pulsante **Apri cartella in Esplora file** .
 
-13. In **Esplora file**aprire la cartella di output di compilazione per il progetto ProjectExtensionPackage e quindi verificare che la cartella contenga un file denominato ProjectExtensionPackage. vsix.
+13. In **Esplora file** aprire la cartella di output di compilazione per il progetto ProjectExtensionPackage e quindi verificare che la cartella contenga un file denominato ProjectExtensionPackage. vsix.
 
      Per impostazione predefinita, la cartella di output di compilazione è.. cartella \bin\Debug nella cartella che contiene il file di progetto.
 
@@ -186,7 +188,7 @@ ms.locfileid: "90739928"
 
     4. Scegliere il modello di **progetto SharePoint 2010** , quindi immettere **ModuleTest** come nome del progetto.
 
-4. In **Esplora soluzioni**scegliere il nodo del progetto **ModuleTest** .
+4. In **Esplora soluzioni** scegliere il nodo del progetto **ModuleTest** .
 
      Viene visualizzata una nuova **cartella immagini della mappa** delle proprietà personalizzata nella finestra **Proprietà** con il valore predefinito **false**.
 
@@ -200,7 +202,7 @@ ms.locfileid: "90739928"
 
 7. Chiudere l'istanza sperimentale di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estensione di progetti SharePoint](../sharepoint/extending-sharepoint-projects.md)
 - [Procedura: aggiungere una proprietà ai progetti SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
 - [Conversione tra tipi di sistemi di progetto SharePoint e altri tipi di progetto di Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)

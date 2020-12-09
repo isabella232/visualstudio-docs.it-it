@@ -1,5 +1,7 @@
 ---
 title: Creare & soluzione di flusso di lavoro di SharePoint
+description: In questa procedura dettagliata, creare ed eseguire il debug di una soluzione flusso di lavoro di SharePoint. Creare un modello di flusso di lavoro sequenziale di base. Creazione di attività del flusso di lavoro e gestione degli eventi.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65af3cbfc799a90d640579f8eed0e051fd5888f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c8d5ca5b941a7ae6e6ebada21f1eafaef2b6f43
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014616"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915310"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Procedura dettagliata: creare ed eseguire il debug di una soluzione flusso di lavoro SharePoint
   In questa procedura dettagliata viene illustrato come creare un modello di flusso di lavoro sequenziale di base. Il flusso di lavoro controlla una proprietà di una raccolta documenti condivisa per determinare se un documento è stato rivisto. Se il documento è stato esaminato, il flusso di lavoro viene completato.
@@ -57,7 +59,7 @@ ms.locfileid: "86014616"
 
 3. Scegliere **libreria** nella barra multifunzione **strumenti libreria** , quindi scegliere il pulsante **Crea colonna** sulla barra multifunzione per creare una nuova colonna.
 
-4. Denominare lo **stato del documento**di colonna, impostarne il tipo su **scelta (menu da scegliere)**, specificare le tre scelte seguenti, quindi scegliere il pulsante **OK** :
+4. Denominare lo **stato del documento** di colonna, impostarne il tipo su **scelta (menu da scegliere)**, specificare le tre scelte seguenti, quindi scegliere il pulsante **OK** :
 
     - **Revisione necessaria**
 
@@ -103,9 +105,9 @@ ms.locfileid: "86014616"
 
      Questo passaggio consente di impostare il livello di attendibilità della soluzione come soluzione farm, l'unica opzione disponibile per i progetti di flusso di lavoro. Per ulteriori informazioni, vedere [considerazioni sulle soluzioni create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).
 
-7. In **Esplora soluzioni**scegliere il nodo del progetto, quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
+7. In **Esplora soluzioni** scegliere il nodo del progetto, quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
-8. In **Visual C#** o **Visual Basic**espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
+8. In **Visual C#** o **Visual Basic** espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
 
 9. Nel riquadro **modelli** scegliere il modello **flusso di lavoro sequenziale (solo soluzione farm)** , quindi scegliere il pulsante **Aggiungi** .
 
@@ -136,7 +138,7 @@ ms.locfileid: "86014616"
 
 4. Tornare alla finestra di progettazione del flusso di lavoro, aprire la casella degli strumenti e quindi espandere il nodo **Windows Workflow v 3.0** .
 
-5. Nel nodo **Windows Workflow v 3.0** della **casella degli strumenti**eseguire uno dei seguenti set di passaggi:
+5. Nel nodo **Windows Workflow v 3.0** della **casella degli strumenti** eseguire uno dei seguenti set di passaggi:
 
     1. Aprire il menu di scelta rapida per l'attività **while** , quindi scegliere **copia**. Nella finestra di progettazione del flusso di lavoro aprire il menu di scelta rapida per la riga sotto l'attività **onWorkflowActivated1** , quindi scegliere **Incolla**.
 
@@ -152,7 +154,7 @@ ms.locfileid: "86014616"
 
 9. Tornare alla finestra di progettazione del flusso di lavoro, aprire la casella degli strumenti e quindi espandere il nodo **flusso di lavoro di SharePoint** .
 
-10. Nel nodo **flusso di lavoro SharePoint** della **casella degli strumenti**eseguire uno dei seguenti set di passaggi:
+10. Nel nodo **flusso di lavoro SharePoint** della **casella degli strumenti** eseguire uno dei seguenti set di passaggi:
 
     - Aprire il menu di scelta rapida per l'attività **OnWorkflowItemChanged** , quindi scegliere **copia**. Nella finestra di progettazione del flusso di lavoro aprire il menu di scelta rapida per la riga all'interno dell'attività **WhileActivity1** , quindi scegliere **Incolla**.
 
@@ -172,7 +174,7 @@ ms.locfileid: "86014616"
 
 #### <a name="to-handle-activity-events"></a>Per gestire gli eventi di attività
 
-1. In *Workflow1.cs* o *Workflow1. vb*aggiungere il campo seguente all'inizio della `Workflow1` classe. Questo campo viene utilizzato in un'attività per determinare se il flusso di lavoro è terminato.
+1. In *Workflow1.cs* o *Workflow1. vb* aggiungere il campo seguente all'inizio della `Workflow1` classe. Questo campo viene utilizzato in un'attività per determinare se il flusso di lavoro è terminato.
 
     ```vb
     Dim workflowPending As Boolean = True
@@ -182,7 +184,7 @@ ms.locfileid: "86014616"
     Boolean workflowPending = true;
     ```
 
-2. Aggiungere il metodo seguente alla classe `Workflow1`. Questo metodo controlla il valore della `Document Status` proprietà dell'elenco documenti per determinare se il documento è stato rivisto. Se la `Document Status` proprietà è impostata su `Review Complete` , il `checkStatus` metodo imposta il `workflowPending` campo su **false** per indicare che il flusso di lavoro è pronto per il completamento.
+2. Aggiungi alla classe `Workflow1` il metodo seguente. Questo metodo controlla il valore della `Document Status` proprietà dell'elenco documenti per determinare se il documento è stato rivisto. Se la `Document Status` proprietà è impostata su `Review Complete` , il `checkStatus` metodo imposta il `workflowPending` campo su **false** per indicare che il flusso di lavoro è pronto per il completamento.
 
     ```vb
     Private Sub checkStatus()
@@ -287,7 +289,7 @@ ms.locfileid: "86014616"
 
 - Per ulteriori informazioni sulle attività di Windows Workflow Foundation, vedere [spazio dei nomi System. Workflow. Activities](/dotnet/api/system.windows.media.color).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creazione di soluzioni flusso di lavoro SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [Modelli di progetto e di elementi di progetto SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

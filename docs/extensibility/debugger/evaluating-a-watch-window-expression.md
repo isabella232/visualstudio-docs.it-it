@@ -1,5 +1,7 @@
 ---
 title: Valutazione di un'espressione della finestra espressioni di controllo | Microsoft Docs
+description: Informazioni su come Visual Studio chiama il motore di debug per determinare il valore corrente di ogni espressione nell'elenco di controllo quando l'esecuzione viene sospesa.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cef2f27eec095ee7b136153ecb764feba9effbb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97fb2c11b94a97a5c7a00083aa61877bb68d377b
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738846"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915648"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>Valutare un'espressione della finestra espressioni di controllo
 > [!IMPORTANT]
@@ -55,5 +57,5 @@ ms.locfileid: "80738846"
 ## <a name="related-sections"></a>Sezioni correlate
  [Contesto di valutazione](../../extensibility/debugger/evaluation-context.md) Fornisce gli argomenti che vengono passati quando il motore di debug (DE) chiama l'analizzatore di espressioni (EE).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
  [Scrittura di un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

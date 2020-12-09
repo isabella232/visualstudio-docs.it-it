@@ -1,5 +1,7 @@
 ---
 title: Creazione di un passaggio di distribuzione personalizzato per i progetti SharePoint
+description: In questa procedura dettagliata creare un passaggio di distribuzione personalizzato per aggiornare le soluzioni di progetto SharePoint in un server in cui è in esecuzione SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8b739db2755336958492a0aa67c9d5f0809f74bb
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: ea8e6a09c512ed5edb6098183c66361e96537f54
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740019"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914933"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Procedura dettagliata: creare un passaggio di distribuzione personalizzato per i progetti SharePoint
   Quando si distribuisce un progetto SharePoint, Visual Studio esegue una serie di passaggi di distribuzione in un ordine specifico. Visual Studio include molti passaggi di distribuzione incorporati, ma è anche possibile crearne di personalizzati.
@@ -48,7 +50,7 @@ ms.locfileid: "90740019"
 
   Per completare la procedura dettagliata, è necessario conoscere i concetti seguenti:
 
-- Utilizzo del modello a oggetti del server per SharePoint. Per ulteriori informazioni, vedere [utilizzo del modello a oggetti lato server di SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).
+- Utilizzo del modello a oggetti del server per SharePoint. Per ulteriori informazioni, vedere [utilizzo del modello a oggetti di SharePoint Foundation Server-Side](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).
 
 - Soluzioni di SharePoint. Per altre informazioni, vedere [Panoramica delle soluzioni](/previous-versions/office/developer/sharepoint-2010/aa543214(v=office.14)).
 
@@ -84,7 +86,7 @@ ms.locfileid: "90740019"
 
 #### <a name="to-create-the-extension-project"></a>Per creare il progetto di estensione
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo della soluzione UpgradeDeploymentStep, scegliere **Aggiungi**, quindi **nuovo progetto**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo della soluzione UpgradeDeploymentStep, scegliere **Aggiungi**, quindi **nuovo progetto**.
 
 2. Nella finestra di dialogo **nuovo progetto** espandere i nodi **Visual C#** o **Visual Basic** , quindi scegliere il nodo **Windows** .
 
@@ -98,7 +100,7 @@ ms.locfileid: "90740019"
 
 #### <a name="to-create-the-sharepoint-command-project"></a>Per creare il progetto di comando di SharePoint
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo della soluzione UpgradeDeploymentStep, scegliere **Aggiungi**, quindi **nuovo progetto**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo della soluzione UpgradeDeploymentStep, scegliere **Aggiungi**, quindi **nuovo progetto**.
 
 2. Nella finestra di dialogo **nuovo progetto** espandere **Visual C#** o **Visual Basic**, quindi scegliere il nodo **Windows** .
 
@@ -131,7 +133,7 @@ ms.locfileid: "90740019"
 
 1. Nel progetto **SharePointCommands** aggiungere un file di codice denominato Commands.
 
-2. In **Esplora soluzioni**aprire il menu di scelta rapida sul nodo del progetto **SharePointCommands** , quindi scegliere **Aggiungi riferimento**.
+2. In **Esplora soluzioni** aprire il menu di scelta rapida sul nodo del progetto **SharePointCommands** , quindi scegliere **Aggiungi riferimento**.
 
 3. Nella scheda **estensioni** selezionare le caselle di controllo per gli assembly seguenti, quindi fare clic su scegliere il pulsante **OK** .
 
@@ -179,7 +181,7 @@ ms.locfileid: "90740019"
 
 #### <a name="to-build-the-projects"></a>Per generare i progetti
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto **DeploymentStepExtension** , quindi scegliere **Compila**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **DeploymentStepExtension** , quindi scegliere **Compila**.
 
 2. Aprire il menu di scelta rapida per il progetto **SharePointCommands** , quindi scegliere **Compila**.
 
@@ -241,7 +243,7 @@ ms.locfileid: "90740019"
 
 2. Nel progetto DeploymentStepExtension aprire il file di codice UpgradeStep, quindi aggiungere un punto di interruzione alla prima riga di codice nei `CanExecute` `Execute` metodi e.
 
-3. Per avviare il debug, premere il tasto **F5** oppure scegliere **debug**  >  **Avvia debug**sulla barra dei menu.
+3. Per avviare il debug, premere il tasto **F5** oppure scegliere **debug**  >  **Avvia debug** sulla barra dei menu.
 
 4. Visual Studio installa l'estensione nel passaggio di distribuzione%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Upgrade per SharePoint Projects\1.0 e avvia un'istanza sperimentale di Visual Studio. Il passaggio di distribuzione dell'aggiornamento verrà testato in questa istanza di Visual Studio.
 
@@ -257,9 +259,9 @@ ms.locfileid: "90740019"
 
 4. Nell'elenco dei modelli di progetto scegliere **progetto SharePoint 2010**, denominare il progetto **EmployeesListDefinition**, quindi scegliere il pulsante **OK** .
 
-5. Nella **procedura guidata di personalizzazione di SharePoint**immettere l'URL del sito che si desidera utilizzare per il debug.
+5. Nella **procedura guidata di personalizzazione di SharePoint** immettere l'URL del sito che si desidera utilizzare per il debug.
 
-6. In **Qual è il livello di attendibilità per la soluzione SharePoint**scegliere il pulsante di opzione **Distribuisci come soluzione farm** .
+6. In **Qual è il livello di attendibilità per la soluzione SharePoint** scegliere il pulsante di opzione **Distribuisci come soluzione farm** .
 
    > [!NOTE]
    > Il passaggio di distribuzione dell'aggiornamento non supporta le soluzioni create mediante sandbox.
@@ -298,7 +300,7 @@ ms.locfileid: "90740019"
 
 13. Salvare tutti i file e quindi chiudere la finestra di progettazione elenco.
 
-14. In **Esplora soluzioni**espandere il nodo **Employees list** , quindi espandere il nodo Child dell' **istanza List Employees** .
+14. In **Esplora soluzioni** espandere il nodo **Employees list** , quindi espandere il nodo Child dell' **istanza List Employees** .
 
 15. Nel file di *Elements.xml* sostituire il codice XML predefinito in questo file con il codice XML seguente. Questo XML modifica il nome dell'elenco in **Employees** e aggiunge informazioni per un dipendente denominato Jim Hance.
 
@@ -335,11 +337,11 @@ ms.locfileid: "90740019"
 
 #### <a name="to-deploy-the-list-definition-and-list-instance"></a>Per distribuire la definizione elenco e l'istanza elenco
 
-1. In **Esplora soluzioni**scegliere il nodo del progetto **EmployeesListDefinition** .
+1. In **Esplora soluzioni** scegliere il nodo del progetto **EmployeesListDefinition** .
 
 2. Nella finestra **Proprietà** verificare che la proprietà di **configurazione della distribuzione attiva** sia impostata sul **valore predefinito**.
 
-3. Premere il tasto **F5** o scegliere **debug**  >  **Avvia debug**sulla barra dei menu.
+3. Premere il tasto **F5** o scegliere **debug**  >  **Avvia debug** sulla barra dei menu.
 
 4. Verificare che il progetto venga compilato correttamente, che il Web browser si apra al sito di SharePoint, che l'elemento **elenchi** nella barra avvio veloce includa l'elenco nuovi **dipendenti** e che l'elenco dei **dipendenti** includa la voce per Jim Hance.
 
@@ -377,7 +379,7 @@ ms.locfileid: "90740019"
 
      Questa azione rimuove questi campi dalla visualizzazione predefinita dell'elenco **Employees** sul sito di SharePoint.
 
-8. Per avviare il debug, premere il tasto **F5** oppure scegliere **debug**  >  **Avvia debug**sulla barra dei menu.
+8. Per avviare il debug, premere il tasto **F5** oppure scegliere **debug**  >  **Avvia debug** sulla barra dei menu.
 
 9. Verificare che venga visualizzata la finestra di dialogo **conflitti di distribuzione** .
 
@@ -416,7 +418,7 @@ ms.locfileid: "90740019"
 
 #### <a name="to-test-the-upgrade-deployment-step"></a>Per testare il passaggio di distribuzione dell'aggiornamento
 
-1. Nell'istanza sperimentale di Visual Studio, in **Esplora soluzioni**aprire il menu di scelta rapida per il nodo del progetto **EmployeesListDefinition** , quindi scegliere **proprietà**.
+1. Nell'istanza sperimentale di Visual Studio, in **Esplora soluzioni** aprire il menu di scelta rapida per il nodo del progetto **EmployeesListDefinition** , quindi scegliere **proprietà**.
 
     Verrà visualizzata la finestra di progettazione o l'editor delle proprietà.
 
@@ -432,7 +434,7 @@ ms.locfileid: "90740019"
 
     Questa azione rimuove questi campi dalla visualizzazione predefinita dell'elenco **Employees** sul sito di SharePoint.
 
-5. Per avviare il debug, premere il tasto **F5** oppure scegliere **debug**  >  **Avvia debug**sulla barra dei menu.
+5. Per avviare il debug, premere il tasto **F5** oppure scegliere **debug**  >  **Avvia debug** sulla barra dei menu.
 
 6. Verificare che il codice nell'altra istanza di Visual Studio si arresti in base al punto di interruzione impostato in precedenza nel `CanExecute` metodo.
 
@@ -463,11 +465,11 @@ ms.locfileid: "90740019"
 
 3. Nel gruppo **Impostazioni** scegliere l'elemento **Impostazioni elenco** .
 
-4. In **autorizzazioni e gestione**scegliere il comando **Elimina questo elenco** , scegliere **OK** per confermare che si desidera inviare l'elenco al Cestino, quindi chiudere il Web browser.
+4. In **autorizzazioni e gestione** scegliere il comando **Elimina questo elenco** , scegliere **OK** per confermare che si desidera inviare l'elenco al Cestino, quindi chiudere il Web browser.
 
 #### <a name="to-remove-the-list-definition-from-the-sharepoint-site"></a>Per rimuovere la definizione dell'elenco dal sito di SharePoint
 
-1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere **Build**  >  **ritrazione**compilazione.
+1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere **Build**  >  **ritrazione** compilazione.
 
      Visual Studio ritira la definizione dell'elenco dal sito di SharePoint.
 
@@ -483,5 +485,5 @@ ms.locfileid: "90740019"
 
 4. Chiudere entrambe le istanze di Visual Studio (l'istanza sperimentale e l'istanza di Visual Studio in cui è aperta la soluzione UpgradeDeploymentStep).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estensione della creazione di pacchetti e della distribuzione di SharePoint](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

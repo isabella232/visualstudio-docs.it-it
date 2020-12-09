@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere un metodo Deleter | Microsoft Docs'
+description: Informazioni su come aggiungere un metodo Deleter nella finestra di progettazione dell'integrazione applicativa dei dati di Visual Studio, in modo che un utente finale possa eliminare un record di dati da un elenco esterno in un sito di SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,21 +21,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd97d28936e9f0cc50e9064fdc1a6a64bb20fc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5e41fbb4f70bd3f5ae2db72b630ae6e524d3def
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017041"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915440"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Procedura: aggiungere un metodo Deleter
   È possibile consentire a un utente finale di eliminare un record di dati da un elenco esterno in un sito di SharePoint aggiungendo un metodo Deleter al modello. Per ulteriori informazioni, vedere [progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-deleter-method"></a>Per creare un metodo Deleter
 
-1. Nella **finestra di progettazione dell'integrazione applicativa**dei dati scegliere un'entità.
+1. Nella **finestra di progettazione dell'integrazione applicativa** dei dati scegliere un'entità.
 
-2. Sulla barra dei menu scegliere **Visualizza**  >  **altri**  >  **Dettagli metodo di integrazione applicativa dei dati**di Windows.
+2. Sulla barra dei menu scegliere **Visualizza**  >  **altri**  >  **Dettagli metodo di integrazione applicativa dei dati** di Windows.
 
     Verrà visualizzata la finestra **Dettagli metodo BDC** . Per altre informazioni su questa finestra, vedere [Panoramica degli strumenti di progettazione dei modelli BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -51,7 +53,7 @@ ms.locfileid: "86017041"
 
      Per ulteriori informazioni, vedere [progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-4. In **Esplora soluzioni**aprire il menu di scelta rapida del file di codice del servizio generato per l'entità, quindi scegliere **Visualizza codice**.
+4. In **Esplora soluzioni** aprire il menu di scelta rapida del file di codice del servizio generato per l'entità, quindi scegliere **Visualizza codice**.
 
     Il file di codice di Entity Service verrà aperto nell'editor di codice. Per altre informazioni sul file di codice di Entity Service, vedere [creare un modello di integrazione applicativa dei dati](../sharepoint/creating-a-business-data-connectivity-model.md).
 
@@ -66,7 +68,7 @@ ms.locfileid: "86017041"
     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
     [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Progettare un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)
 - [Procedura: aggiungere un metodo Finder specifico](../sharepoint/how-to-add-a-specific-finder-method.md)

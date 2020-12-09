@@ -1,5 +1,7 @@
 ---
 title: Attività di debug | Microsoft Docs
+description: Informazioni sulle attività necessarie per eseguire il debug di un programma, ad esempio per collegarlo a un motore di debug, generare eventi di avvio e raggiungere i punti di interruzione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 070068853d962bdf9b209edb9410d33d46ccf853
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83d351e2b995922d1a8257f7ea9fc0cdad67ab3e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903552"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915570"
 ---
 # <a name="debug-tasks"></a>Attività di debug
 Per eseguire il debug di un programma, è necessario avviarlo ed è necessario collegare un motore di debug (DE); in caso contrario, il DE deve essere collegato a un programma avviato in precedenza. Una volta collegato, il DE deve generare determinati eventi di avvio. In risposta, il pacchetto di debug tenta di associare i punti di interruzione impostati nell'IDE. Quando il programma raggiunge un punto di interruzione associato, si interrompe e attende l'input dell'utente.
@@ -44,5 +46,5 @@ Per eseguire il debug di un programma, è necessario avviarlo ed è necessario c
 
  [Contesti del debugger](../../extensibility/debugger/debugger-contexts.md) Spiega in che modo il DE opera simultaneamente nei contesti di codice, documentazione e valutazione delle espressioni. Viene descritto, per ognuno dei tre contesti, la posizione, la posizione o la valutazione pertinente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
  [Operazioni preliminari](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

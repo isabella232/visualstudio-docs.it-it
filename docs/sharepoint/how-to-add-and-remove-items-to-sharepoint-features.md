@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere e rimuovere elementi nelle funzionalità di SharePoint | Microsoft Docs'
+description: Aggiungere e rimuovere manualmente gli elementi del progetto SharePoint nelle funzionalità di SharePoint usando progettazione funzionalità in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27c6ebfb0b0cdbff0a184859ffa2a73acab809c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dacfbf715ff37238af5332976313c3b592d21be6
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014535"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914920"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Procedura: aggiungere e rimuovere elementi nelle funzionalità di SharePoint
   Quando si crea una soluzione di SharePoint, Visual Studio aggiunge gli elementi predefiniti del progetto SharePoint alla funzionalità. Prima della distribuzione, è possibile aggiungere e rimuovere gli elementi del progetto SharePoint per modificare la funzionalità di SharePoint.
@@ -52,6 +54,6 @@ ms.locfileid: "86014535"
 
      Gli elementi del progetto SharePoint vengono visualizzati negli **elementi nell'** elenco della soluzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creazione di funzionalità di SharePoint](../sharepoint/creating-sharepoint-features.md)
 - [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

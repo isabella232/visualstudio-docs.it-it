@@ -1,6 +1,8 @@
 ---
 title: Creazione di un elemento di progetto azione personalizzata con un modello di elemento, parte 2
 titleSuffix: ''
+description: In questa procedura dettagliata, aggiungere una procedura guidata per raccogliere informazioni dagli utenti quando utilizzano un modello di elemento per aggiungere un elemento del progetto di azione personalizzato in un sito di SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 957af3fdb4a86f4973ff8ac24251bae923ec299c
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fe283da2c2a81827ca70414315278cebd775873a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585471"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915208"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Procedura dettagliata: creare un elemento di progetto azione personalizzata con un modello di elemento, parte 2
   Dopo aver definito un tipo personalizzato di elemento di progetto SharePoint e averlo associato a un modello di elemento in Visual Studio, potrebbe essere necessario fornire anche una procedura guidata per il modello. È possibile utilizzare la procedura guidata per raccogliere informazioni dagli utenti quando utilizzano il modello per aggiungere una nuova istanza dell'elemento del progetto a un progetto. Le informazioni raccolte possono essere utilizzate per inizializzare l'elemento del progetto.
@@ -59,7 +61,7 @@ ms.locfileid: "91585471"
 
 1. In Visual Studio aprire la soluzione CustomActionProjectItem
 
-2. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
+2. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
 
 3. Nella finestra di dialogo **nuovo progetto** espandere i nodi **Visual C#** o **Visual Basic** , quindi scegliere il nodo **Windows** .
 
@@ -76,9 +78,9 @@ ms.locfileid: "91585471"
 
 #### <a name="to-configure-the-wizard-project"></a>Per configurare il progetto della procedura guidata
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida dal nodo del progetto **ItemTemplateWizard** , quindi scegliere **proprietà**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida dal nodo del progetto **ItemTemplateWizard** , quindi scegliere **proprietà**.
 
-2. In **Progettazione progetti**verificare che il Framework di destinazione sia impostato su .NET Framework 4,5.
+2. In **Progettazione progetti** verificare che il Framework di destinazione sia impostato su .NET Framework 4,5.
 
      Per i progetti Visual C#, è possibile impostare questo valore nella scheda **applicazione** . Per Visual Basic progetti, è possibile impostare questo valore nella scheda **Compila** . Per altre informazioni, vedere [How to: target a version of the .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
@@ -172,7 +174,7 @@ ms.locfileid: "91585471"
 
 #### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>Per firmare l'assembly della procedura guidata con un nome sicuro
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida dal nodo del progetto **ItemTemplateWizard** , quindi scegliere **proprietà**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida dal nodo del progetto **ItemTemplateWizard** , quindi scegliere **proprietà**.
 
 2. Nella scheda **Firma** selezionare la casella di controllo **Firma assembly**.
 
@@ -196,7 +198,7 @@ ms.locfileid: "91585471"
 
 #### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>Per aggiungere un riferimento all'assembly della procedura guidata nel file con estensione vstemplate
 
-1. In **Esplora soluzioni**espandere il nodo del progetto **ItemTemplate** , quindi aprire il file *ItemTemplate. vstemplate* .
+1. In **Esplora soluzioni** espandere il nodo del progetto **ItemTemplate** , quindi aprire il file *ItemTemplate. vstemplate* .
 
 2. In prossimità della fine del file, aggiungere l' `WizardExtension` elemento seguente tra i `</TemplateContent>` `</VSTemplate>` tag e. Sostituire il valore *yourtoken* dell' `PublicKeyToken` attributo con il token di chiave pubblica ottenuto nella procedura precedente.
 
@@ -243,7 +245,7 @@ ms.locfileid: "91585471"
 
 #### <a name="to-add-the-wizard-to-the-vsix-package"></a>Per aggiungere la procedura guidata al pacchetto VSIX
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida dal file **source. Extension. vsixmanifest** nel progetto CustomActionProjectItem, quindi scegliere **Apri** per aprire il file nell'editor manifesto.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida dal file **source. Extension. vsixmanifest** nel progetto CustomActionProjectItem, quindi scegliere **Apri** per aprire il file nell'editor manifesto.
 
 2. Nell'editor del manifesto scegliere la scheda **Asset** , quindi scegliere il pulsante **nuovo** .
 
@@ -270,7 +272,7 @@ ms.locfileid: "91585471"
 
 4. Nella finestra di dialogo **eccezioni** assicurarsi che le caselle di controllo **generate** e non **gestite dall'utente** per le **eccezioni Common Language Runtime** siano deselezionate, quindi scegliere il pulsante **OK** .
 
-5. Per avviare il debug, premere il tasto **F5** oppure scegliere **debug**  >  **Avvia debug**dalla barra dei menu.
+5. Per avviare il debug, premere il tasto **F5** oppure scegliere **debug**  >  **Avvia debug** dalla barra dei menu.
 
      Visual Studio installa l'estensione nel progetto di azione%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Item\1.0 e avvia un'istanza sperimentale di Visual Studio. Si eseguirà il test dell'elemento del progetto in questa istanza di Visual Studio.
 
@@ -284,7 +286,7 @@ ms.locfileid: "91585471"
 
 4. Nella **procedura guidata di personalizzazione di SharePoint**, immettere l'URL del sito che si desidera utilizzare per il debug, quindi scegliere il pulsante **fine** .
 
-5. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo del progetto, scegliere **Aggiungi**, quindi scegliere **nuovo elemento**.
+5. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo del progetto, scegliere **Aggiungi**, quindi scegliere **nuovo elemento**.
 
 6. Nella finestra di dialogo **Aggiungi nuovo elemento-CustomItemWizardTest** espandere il nodo **SharePoint** , quindi espandere il nodo **2010** .
 
@@ -296,7 +298,7 @@ ms.locfileid: "91585471"
 
      Viene visualizzata la Personalizzazione guidata SharePoint.
 
-10. In **percorso**scegliere il pulsante di opzione **modifica elenco** .
+10. In **percorso** scegliere il pulsante di opzione **modifica elenco** .
 
 11. Nell'elenco **ID gruppo** scegliere **comunicazioni**.
 
@@ -310,7 +312,7 @@ ms.locfileid: "91585471"
 
 #### <a name="to-test-the-custom-action-in-sharepoint"></a>Per testare l'azione personalizzata in SharePoint
 
-1. Nell'istanza sperimentale di Visual Studio scegliere il tasto **F5** oppure scegliere **debug**  >  **Avvia debug**dalla barra dei menu.
+1. Nell'istanza sperimentale di Visual Studio scegliere il tasto **F5** oppure scegliere **debug**  >  **Avvia debug** dalla barra dei menu.
 
      L'azione personalizzata viene assemblata e distribuita nel sito di SharePoint specificato dalla proprietà **URL sito** del progetto e il Web browser si apre alla pagina predefinita del sito.
 

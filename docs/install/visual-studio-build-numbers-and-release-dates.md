@@ -5,19 +5,19 @@ description: Elenco aggiornato delle versioni rilasciate e dei numeri di build p
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 11/19/2020
+ms.date: 12/8/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 72e6e4cdc14f87080bb9e7a6faf3285c49270d78
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: ad594d41c621112fd34f83eba6b5c7a3cd53d938
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973956"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915492"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numeri di build e date di rilascio di Visual Studio
 
@@ -27,8 +27,13 @@ ms.locfileid: "94973956"
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2019.
 
-| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.21 | Versione | 8 dicembre 2020 | 16.0.28803.902 |
+| 16.9.0 | Preview 2 | 8 dicembre 2020 | 16.9.30803.129 |
+| 16.8.3 | Versione | 8 dicembre 2020 | 16.8.30804.86 |
+| 16.7.9 | Versione | 8 dicembre 2020 | 16.7.30802.117 |
+| 16.4.16 | Versione | 8 dicembre 2020 | 16.4.30802.185 |
 | 16.8.2 | Versione | 19 novembre 2020 | 16.8.30717.126 |
 | 16.8.1 | Versione | 12 novembre 2020 | 16.8.30711.63 |
 | 16.9.0 | Preview 1 | 10 novembre 2020 | 16.9.30709.64 |
@@ -192,8 +197,9 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 La tabella seguente include un elenco aggiornato delle date di rilascio e dei numeri di build per Visual Studio 2017.
 
-| **Version**| **Channel** | **Data di rilascio** | **Versione build** |
+| **Versione**| **Channel** | **Data di rilascio** | **Versione build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.30 | Versione | 8 dicembre 2020 | 15.9.28307.1321 |
 | 15.9.29 | Versione | 10 novembre 2020 | 15.9.28307.1300 |
 | 15.9.28 | Versione | 13 ottobre 2020 | 15.9.28307.1274 |
 | 15.9.27 | Versione | 8 settembre 2020 | 15.9.28307.1259 |
@@ -374,7 +380,7 @@ La tabella seguente include un elenco aggiornato delle date di rilascio e dei nu
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Visual Studio Roadmap](/visualstudio/productinfo/vs-roadmap)
 * [Frequenza di rilascio di Visual Studio](/visualstudio/productinfo/release-rhythm)

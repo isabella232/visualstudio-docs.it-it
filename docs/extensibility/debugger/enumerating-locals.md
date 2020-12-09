@@ -1,5 +1,7 @@
 ---
 title: Enumerazione di variabili locali | Microsoft Docs
+description: 'Informazioni dettagliate sul modo in cui Visual Studio USA IDebugProperty2:: EnumChildren per popolare la finestra variabili locali.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 540c062d3d4f73a5468b39629fc277e6fd10df7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4282e55dbf90c4ae24a9e3d16beea8bd93420524
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738864"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915687"
 ---
 # <a name="enumerate-locals"></a>Enumera variabili locali
 > [!IMPORTANT]
@@ -245,7 +247,7 @@ STDMETHODIMP CFieldProperty::EnumChildren(
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Implementazione di esempio di variabili locali](../../extensibility/debugger/sample-implementation-of-locals.md)
 - [Implementare GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)
 - [Contesto di valutazione](../../extensibility/debugger/evaluation-context.md)

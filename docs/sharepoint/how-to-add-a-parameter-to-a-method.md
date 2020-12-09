@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere un parametro a un metodo | Microsoft Docs'
+description: Informazioni su come aggiungere un parametro a un metodo di connettività dei dati aziendali (BDC), che consente di passare informazioni nel metodo o restituire informazioni dal metodo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6d0496d0fd6a347683d56630990e50af585520ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 179109ff4c0def002dac45887fe9491196a70d3e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016718"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915401"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Procedura: aggiungere un parametro a un metodo
   Usare un parametro per passare informazioni al metodo o per restituire informazioni da un metodo. Tutti i metodi devono avere almeno un parametro. Per ulteriori informazioni sulla progettazione di un parametro per supportare il tipo di metodo che si desidera creare, vedere Progettazione di [un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -33,7 +35,7 @@ ms.locfileid: "86016718"
 
 1. Aggiungere un metodo a un'entità.
 
-2. Sulla barra dei menu scegliere **Visualizza**  >  **altri**  >  **Dettagli metodo di integrazione applicativa dei dati**di Windows.
+2. Sulla barra dei menu scegliere **Visualizza**  >  **altri**  >  **Dettagli metodo di integrazione applicativa dei dati** di Windows.
 
      Verrà visualizzata la finestra **Dettagli metodo BDC** . Per altre informazioni, vedere [Panoramica degli strumenti di progettazione dei modelli BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
@@ -45,15 +47,15 @@ ms.locfileid: "86016718"
 
 5. Nella barra dei menu scegliere **Visualizza**  >  **finestra Proprietà**.
 
-6. Nella finestra **Proprietà** impostare la proprietà **Name** su qualsiasi nome che abbia senso. Se, ad esempio, il metodo restituirà Customers, è possibile assegnare il nome **GetCustomers**al metodo.
+6. Nella finestra **Proprietà** impostare la proprietà **Name** su qualsiasi nome che abbia senso. Se, ad esempio, il metodo restituirà Customers, è possibile assegnare il nome **GetCustomers** al metodo.
 
-7. Nella finestra **Dettagli metodo di integrazione applicativa dei dati** aprire l'elenco visualizzato per la direzione del parametro, quindi scegliere **in**, **InOut**, **out**o **return**.
+7. Nella finestra **Dettagli metodo di integrazione applicativa dei dati** aprire l'elenco visualizzato per la direzione del parametro, quindi scegliere **in**, **InOut**, **out** o **return**.
 
      Per ulteriori informazioni sulla direzione scelta per il metodo del tipo che si sta creando, vedere [progettazione di un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 8. Modificare il descrittore di tipo del parametro. Per altre informazioni, vedere [procedura: definire il descrittore di tipo di un parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica degli strumenti di progettazione dei modelli BDC](../sharepoint/bdc-model-design-tools-overview.md)
 - [Procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Procedura: definire il descrittore di tipo di un parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)

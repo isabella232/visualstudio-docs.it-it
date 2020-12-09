@@ -1,6 +1,8 @@
 ---
 title: Creare un elemento di progetto colonna del sito con un modello di progetto, parte 1
 titleSuffix: ''
+description: Definire un tipo di elemento di progetto per la creazione di una colonna del sito, quindi creare un modello di progetto da usare per la creazione di un progetto SharePoint che contiene l'elemento del progetto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a740d96fb6ae846188fc4fa457c5baeb7b5e907d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 32f56f282dc5755b8162c4f19a9c036dc2e9cc5f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585550"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915218"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Procedura dettagliata: creare un elemento di progetto colonna del sito con un modello di progetto, parte 1
   I progetti SharePoint sono contenitori per uno o più elementi del progetto SharePoint. Per estendere il sistema del progetto SharePoint in Visual Studio, è possibile creare tipi di elemento di progetto SharePoint personalizzati e quindi associarli a un modello di progetto. In questa procedura dettagliata verrà definito un tipo di elemento di progetto per la creazione di una colonna del sito, quindi verrà creato un modello di progetto che può essere utilizzato per creare un nuovo progetto che contiene un elemento di progetto colonna del sito.
@@ -86,7 +88,7 @@ ms.locfileid: "91585550"
 
 #### <a name="to-create-the-project-template-project"></a>Per creare il progetto di modello di progetto
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
 
 2. Nella parte superiore della finestra di dialogo **nuovo progetto** assicurarsi che **.NET Framework 4,5** sia selezionato nell'elenco delle versioni del .NET Framework.
 
@@ -116,7 +118,7 @@ ms.locfileid: "91585550"
 
 #### <a name="to-create-the-extension-project"></a>Per creare il progetto di estensione
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
 
 2. Nella parte superiore della finestra di dialogo **nuovo progetto** assicurarsi che **.NET Framework 4,5** sia selezionato nell'elenco delle versioni del .NET Framework.
 
@@ -163,13 +165,13 @@ ms.locfileid: "91585550"
 2. Creare un progetto SharePoint 2010 denominato **BaseSharePointProject**.
 
    > [!IMPORTANT]
-   > Nella **procedura guidata di personalizzazione di SharePoint**non selezionare il pulsante di opzione **Distribuisci come soluzione farm** .
+   > Nella **procedura guidata di personalizzazione di SharePoint** non selezionare il pulsante di opzione **Distribuisci come soluzione farm** .
 
 3. Aggiungere un elemento vuoto al progetto, quindi denominare l'elemento **Field1**.
 
 4. Salvare il progetto, quindi chiudere la seconda istanza di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-5. Nell'istanza di in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cui è aperta la soluzione SiteColumnProjectItem, in **Esplora soluzioni**aprire il menu di scelta rapida per il nodo del progetto **SiteColumnProjectTemplate** , scegliere **Aggiungi**, quindi **elemento esistente**.
+5. Nell'istanza di in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cui è aperta la soluzione SiteColumnProjectItem, in **Esplora soluzioni** aprire il menu di scelta rapida per il nodo del progetto **SiteColumnProjectTemplate** , scegliere **Aggiungi**, quindi **elemento esistente**.
 
 6. Nella finestra di dialogo **Aggiungi elemento esistente** aprire l'elenco di estensioni di file, quindi scegliere **tutti i file ( \* . \* )**.
 
@@ -196,7 +198,7 @@ ms.locfileid: "91585550"
 
 #### <a name="to-configure-how-developers-discover-the-project-template-in-the-new-project-dialog-box"></a>Per configurare il modo in cui gli sviluppatori individuano il modello di progetto nella finestra di dialogo nuovo progetto
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo del progetto **SiteColumnProjectTemplate** , quindi scegliere **Scarica progetto**. Se viene richiesto di salvare le modifiche apportate ai file, scegliere il pulsante **Sì** .
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo del progetto **SiteColumnProjectTemplate** , quindi scegliere **Scarica progetto**. Se viene richiesto di salvare le modifiche apportate ai file, scegliere il pulsante **Sì** .
 
 2. Aprire di nuovo il menu di scelta rapida per il nodo **SiteColumnProjectTemplate** , quindi scegliere **Modifica SiteColumnProjectTemplate. csproj** o **Modifica SiteColumnProjectTemplate. vbproj**.
 
@@ -218,7 +220,7 @@ ms.locfileid: "91585550"
 
 5. Salvare e chiudere il file.
 
-6. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto **SiteColumnProjectTemplate** , quindi scegliere **Ricarica progetto**.
+6. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **SiteColumnProjectTemplate** , quindi scegliere **Ricarica progetto**.
 
 ## <a name="edit-the-project-template-files"></a>Modificare i file del modello di progetto
  Nel progetto SiteColumnProjectTemplate modificare i file seguenti per definire il comportamento del modello di progetto:
@@ -428,7 +430,7 @@ ms.locfileid: "91585550"
 
     Il nuovo codice XML apporta le seguenti modifiche al file:
 
-   - Imposta l' `Name` elemento sulla colonna del **sito**del valore. Questo nome viene visualizzato nella finestra di dialogo **nuovo progetto** .
+   - Imposta l' `Name` elemento sulla colonna del **sito** del valore. Questo nome viene visualizzato nella finestra di dialogo **nuovo progetto** .
 
    - Aggiunge `ProjectItem` elementi per ogni file, incluso in ogni istanza del progetto.
 
@@ -701,7 +703,7 @@ ms.locfileid: "91585550"
 
 5. Verificare che il codice nell'altra istanza di Visual Studio si arresti in base al punto di interruzione impostato in precedenza nel `InitializeType` metodo, quindi premere il tasto **F5** per continuare a eseguire il debug del progetto.
 
-6. In **Esplora soluzioni**scegliere il nodo **Field1** , quindi premere il tasto **F4** .
+6. In **Esplora soluzioni** scegliere il nodo **Field1** , quindi premere il tasto **F4** .
 
      Si aprirà la finestra **Proprietà**.
 
@@ -709,7 +711,7 @@ ms.locfileid: "91585550"
 
 #### <a name="to-test-the-site-column-in-sharepoint"></a>Per testare la colonna del sito in SharePoint
 
-1. In **Esplora soluzioni**scegliere il nodo **SiteColumnTest** .
+1. In **Esplora soluzioni** scegliere il nodo **SiteColumnTest** .
 
 2. Nella finestra **Proprietà** , nella casella di testo accanto alla proprietà **URL sito** , immettere **http://localhost** .
 
@@ -725,7 +727,7 @@ ms.locfileid: "91585550"
     > [!NOTE]
     > Se viene visualizzata la finestra di dialogo **debug script disabilitato** , scegliere il pulsante **Sì** per continuare a eseguire il debug del progetto.
 
-4. Scegliere **Impostazioni sito**dal menu **Azioni sito** .
+4. Scegliere **Impostazioni sito** dal menu **Azioni sito** .
 
 5. Nell'elenco **raccolte** della pagina **Impostazioni sito** scegliere il collegamento **colonne sito** .
 

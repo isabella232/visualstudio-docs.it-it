@@ -1,6 +1,8 @@
 ---
 title: 'Procedura: aggiungere un nodo SharePoint personalizzato a Esplora server | Microsoft Docs'
 titleSuffix: ''
+description: Aggiungere un nodo SharePoint personalizzato a Esplora server in Visual Studio. Consente di visualizzare componenti aggiuntivi di SharePoint che non vengono visualizzati in Esplora server per impostazione predefinita.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a74c9c879df57a5ff6444626870ee9f021fb4e9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: bbee6d780c7f447c8b47f7b478531cb58cef94fd
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584885"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915466"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Procedura: aggiungere un nodo SharePoint personalizzato a Esplora server
   È possibile aggiungere nodi personalizzati nel nodo **connessioni di SharePoint** in **Esplora server**. Questa opzione è utile quando si desidera visualizzare componenti aggiuntivi di SharePoint che non vengono visualizzati in **Esplora server** per impostazione predefinita. Per ulteriori informazioni, vedere [estensione del nodo connessioni di SharePoint in Esplora server](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

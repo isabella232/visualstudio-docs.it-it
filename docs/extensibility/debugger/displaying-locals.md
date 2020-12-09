@@ -1,5 +1,7 @@
 ---
 title: Visualizzazione di variabili locali | Microsoft Docs
+description: Informazioni sull'elenco di variabili e argomenti locali, chiamati collettivamente le variabili locali del metodo, che vengono visualizzati quando l'esecuzione viene sospesa.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d44b276aeb9c6acb0ef34cc186662d49246de7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddc7bc564e4e294144eeb3fa34db8bdf73971053
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738935"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915544"
 ---
 # <a name="display-locals"></a>Visualizza variabili locali
 > [!IMPORTANT]
@@ -37,5 +39,5 @@ ms.locfileid: "80738935"
 ## <a name="related-sections"></a>Sezioni correlate
  [Contesto di valutazione](../../extensibility/debugger/evaluation-context.md) Viene illustrato che quando il motore di debug (DE) chiama l'analizzatore di espressioni (EE), passa tre argomenti.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
  [Scrivere un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

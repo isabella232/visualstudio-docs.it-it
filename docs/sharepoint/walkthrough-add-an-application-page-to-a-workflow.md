@@ -1,5 +1,7 @@
 ---
 title: "Procedura dettagliata: aggiungere una pagina dell'applicazione a un flusso di lavoro | Microsoft Docs"
+description: In questa procedura dettagliata aggiungere una pagina dell'applicazione a una soluzione del flusso di lavoro di SharePoint. Modificare il codice del flusso di lavoro. Creare, codificare e testare la pagina dell'applicazione.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f54914e6676e0cc2400fa04ebb089fac08f58c3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c862c1de3b0630b3a5144f821e6266c34a88a5db
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015487"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915661"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Procedura dettagliata: aggiungere una pagina dell'applicazione a un flusso di lavoro
   In questa procedura dettagliata viene illustrato come aggiungere una pagina dell'applicazione che Visualizza i dati derivati da un flusso di lavoro a un progetto flusso di lavoro. Si basa sul progetto descritto nell'argomento [procedura dettagliata: creare un flusso di lavoro con form di associazione e di avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -44,7 +46,7 @@ ms.locfileid: "86015487"
 
 - È anche necessario completare il progetto nell'argomento [procedura dettagliata: creare un flusso di lavoro con form di associazione e di avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
-## <a name="ammend-the-workflow-code"></a>Ammend il codice del flusso di lavoro
+## <a name="amend-the-workflow-code"></a>Modificare il codice del flusso di lavoro
  Per prima cosa, aggiungere una riga di codice al flusso di lavoro per impostare il valore della colonna risultato sulla quantità della nota spese. Questo valore viene utilizzato in un secondo momento nel calcolo di riepilogo della nota spese.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Per impostare il valore della colonna risultati nel flusso di lavoro
@@ -347,7 +349,7 @@ ms.locfileid: "86015487"
 
 - [Creazione di controlli riutilizzabili per Web part o pagine dell'applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura dettagliata: creare un flusso di lavoro con form di associazione e di avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
 - [Procedura: creare una pagina dell'applicazione](../sharepoint/how-to-create-an-application-page.md)

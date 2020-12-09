@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere una proprietà personalizzata | Microsoft Docs'
+description: Informazioni su come aggiungere una proprietà personalizzata al modello di integrazione applicativa dei dati in SharePoint, usando l'editor di proprietà in Esplora integrazione applicativa dei dati di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,19 +19,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e79b18b4d2b388d2ff0387fed24778f8db03fd54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b12124d874c58ce17f1fa24d2bd9283af64f1c92
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017078"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915479"
 ---
 # <a name="how-to-add-a-custom-property"></a>Procedura: aggiungere una proprietà personalizzata
   È possibile aggiungere proprietà personalizzate al modello usando l' **Editor proprietà**. È possibile accedere a queste proprietà nel codice per recuperare informazioni quali le stringhe di connessione e altri dati in fase di esecuzione.
 
 ### <a name="to-add-a-custom-property"></a>Per aggiungere una proprietà personalizzata
 
-1. In **Esplora integrazione**applicativa dei dati scegliere il nodo che rappresenta l'elemento del modello a cui si desidera applicare una proprietà personalizzata.
+1. In **Esplora integrazione** applicativa dei dati scegliere il nodo che rappresenta l'elemento del modello a cui si desidera applicare una proprietà personalizzata.
 
 2. Nella barra dei menu scegliere **Visualizza**  >  **finestra Proprietà**.
 
@@ -43,7 +45,7 @@ ms.locfileid: "86017078"
 
 6. Per il campo **valore** della proprietà personalizzata, specificare un valore, quindi scegliere il pulsante **OK** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Progettare un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Progettare un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Creare un modello di integrazione applicativa dei dati](../sharepoint/creating-a-business-data-connectivity-model.md)

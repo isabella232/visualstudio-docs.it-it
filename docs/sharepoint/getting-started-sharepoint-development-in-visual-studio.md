@@ -1,6 +1,8 @@
 ---
 title: Introduzione (sviluppo per SharePoint in Visual Studio) | Microsoft Docs
 titleSuffix: ''
+description: Introduzione allo sviluppo per SharePoint in Visual Studio. SharePoint offre una piattaforma di collaborazione basata sul Web.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba96887e8a3c8bc3cb1db43b7c24fa90223a2947
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 40eb9444ec72787e154ddd0cd7bc93e786c84397
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585628"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915167"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Introduzione (sviluppo per SharePoint in Visual Studio)
   Questa sezione permette di iniziare a usare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per sviluppare soluzioni SharePoint in grado di sfruttare i vantaggi offerti da [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
@@ -31,13 +33,13 @@ ms.locfileid: "91585628"
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-|Argomento|Descrizione|
+|Argomento|Description|
 |-----------|-----------------|
 |[Informazioni aggiuntive sugli errori di SharePoint](../sharepoint/additional-information-for-sharepoint-errors.md)|Descrive dove trovare supporto durante lo sviluppo e la risoluzione dei problemi per SharePoint.|
 
 ## <a name="related-sections"></a>Sezioni correlate
 
-|Argomento|Descrizione|
+|Argomento|Description|
 |-----------|-----------------|
 |[Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)|Descrive lo sviluppo per SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
 |[Configurare un ambiente di sviluppo generale per SharePoint](/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)|Descrive le installazioni necessarie per la creazione di una soluzione SharePoint|
