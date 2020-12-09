@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Creare associazioni tra tipi (Progettazione classi)'
+title: Creare associazioni tra tipi
 description: Informazioni su come creare associazioni tra tipi diversi in Progettazione classi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f72cb173b5ece347bb2d9eb1b4ef0e8d2317b21d
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 713b7349a6ccd008174b0f6c13c1df768cca65b5
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901609"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933557"
 ---
 # <a name="how-to-create-associations-between-types-in-class-designer"></a>Procedura: Creare associazioni tra tipi in Progettazione classi
 
