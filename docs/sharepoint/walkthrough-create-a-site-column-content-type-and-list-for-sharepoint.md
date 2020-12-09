@@ -1,6 +1,8 @@
 ---
 title: Creare una colonna del sito, un tipo di contenuto e un elenco per SharePoint
 titleSuffix: ''
+description: In questa procedura dettagliata creare una colonna del sito personalizzata (campo), un tipo di contenuto personalizzato che usa la colonna del sito e un elenco che usa il tipo di contenuto in SharePoint.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -20,15 +22,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041c0ba5174450fca7acf7247b1cf40a98ac147d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b1670dfa3c7202e8ebbdb28396f161daeffac491
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298368"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914010"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procedura dettagliata: creare una colonna del sito, un tipo di contenuto e un elenco per SharePoint
-  Nelle procedure riportate di seguito viene illustrato come creare colonne o *campi*personalizzati di un sito di SharePoint, nonché un tipo di contenuto che utilizza le colonne del sito. Viene inoltre illustrato come creare un elenco che utilizza il nuovo tipo di contenuto.
+  Nelle procedure riportate di seguito viene illustrato come creare colonne o *campi* personalizzati di un sito di SharePoint, nonché un tipo di contenuto che utilizza le colonne del sito. Viene inoltre illustrato come creare un elenco che utilizza il nuovo tipo di contenuto.
 
  In questa procedura dettagliata sono incluse le attività seguenti:
 
@@ -54,7 +56,7 @@ ms.locfileid: "92298368"
 
 #### <a name="to-create-the-project"></a>Per creare il progetto
 
-1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **File** Scegliere **nuovo**  >  **progetto**dal menu file.
+1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **File** Scegliere **nuovo**  >  **progetto** dal menu file.
 ::: moniker range="=vs-2017"
 2. Nella finestra di dialogo **nuovo progetto** , in **Visual C#** o **Visual Basic**, espandere il nodo **Office/SharePoint** , quindi selezionare **soluzioni SharePoint**.
 
@@ -87,7 +89,7 @@ ms.locfileid: "92298368"
 
 #### <a name="to-add-site-columns"></a>Per aggiungere colonne del sito
 
-1. Aggiungere una nuova colonna del sito. A tale scopo, nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **Clinic** , quindi scegliere **Aggiungi**  >  **nuovo elemento**.
+1. Aggiungere una nuova colonna del sito. A tale scopo, nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **Clinic** , quindi scegliere **Aggiungi**  >  **nuovo elemento**.
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** scegliere **colonna sito**, modificare il nome in **patientName**, quindi scegliere il pulsante **Aggiungi** .
 
@@ -115,11 +117,11 @@ ms.locfileid: "92298368"
 
 #### <a name="to-create-a-custom-content-type"></a>Per creare un tipo di contenuto personalizzato
 
-1. Aggiungere un tipo di contenuto al progetto. A tale scopo, nella **Esplora soluzioni**scegliere il nodo del progetto
+1. Aggiungere un tipo di contenuto al progetto. A tale scopo, nella **Esplora soluzioni** scegliere il nodo del progetto
 
 2. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
-3. In **Visual C#** o **Visual Basic**espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
+3. In **Visual C#** o **Visual Basic** espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
 
 4. Nel riquadro **modelli** scegliere il modello **tipo di contenuto** , modificare il nome in **informazioni sul paziente**, quindi scegliere il pulsante **Aggiungi** .
 
@@ -129,7 +131,7 @@ ms.locfileid: "92298368"
 
      Questa operazione consente di accedere ad altre colonne del sito potenzialmente utili nel tipo di contenuto Contact, oltre alle colonne del sito definite in precedenza.
 
-6. Quando viene visualizzata la finestra di progettazione dei tipi di contenuto, nella scheda **colonne** aggiungere le tre colonne del sito definite in precedenza, ovvero il **nome del paziente**, l' **ID del paziente**e il nome del **medico**. Per aggiungere queste colonne, scegliere la prima casella di riepilogo nell'elenco colonne sito in **nome visualizzato**, quindi scegliere ogni colonna del sito nell'elenco uno alla volta.
+6. Quando viene visualizzata la finestra di progettazione dei tipi di contenuto, nella scheda **colonne** aggiungere le tre colonne del sito definite in precedenza, ovvero il **nome del paziente**, l' **ID del paziente** e il nome del **medico**. Per aggiungere queste colonne, scegliere la prima casella di riepilogo nell'elenco colonne sito in **nome visualizzato**, quindi scegliere ogni colonna del sito nell'elenco uno alla volta.
 
     > [!TIP]
     > Per scegliere più rapidamente le colonne del sito, filtrare l'elenco immettendo le prime lettere del nome della colonna.
@@ -140,7 +142,7 @@ ms.locfileid: "92298368"
 
 9. Nella scheda **tipo di contenuto** verificare che il nome del tipo di contenuto sia **informazioni sul paziente**, quindi modificare la descrizione in **scheda informazioni del paziente**.
 
-10. Modificare il **nome del gruppo** in tipi di **contenuto Clinic**e lasciare invariati i valori predefiniti per le altre impostazioni.
+10. Modificare il **nome del gruppo** in tipi di **contenuto Clinic** e lasciare invariati i valori predefiniti per le altre impostazioni.
 
 11. Sulla barra dei menu scegliere **file**  >  **Salva tutto**, quindi chiudere la finestra di progettazione del tipo di contenuto.
 
@@ -149,11 +151,11 @@ ms.locfileid: "92298368"
 
 #### <a name="to-create-a-list"></a>Per creare un elenco
 
-1. Aggiungere un elenco al progetto. A tale scopo, nella **Esplora soluzioni**scegliere il nodo del progetto.
+1. Aggiungere un elenco al progetto. A tale scopo, nella **Esplora soluzioni** scegliere il nodo del progetto.
 
 2. Sulla barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
-3. In **Visual C#** o **Visual Basic**espandere il nodo **SharePoint** .
+3. In **Visual C#** o **Visual Basic** espandere il nodo **SharePoint** .
 
 4. Nel riquadro **modelli** scegliere il modello **elenco** , modificare il nome in **pazienti**, quindi scegliere il pulsante **Aggiungi** .
 
@@ -179,7 +181,7 @@ ms.locfileid: "92298368"
 
     - Commenti
 
-9. In **nome visualizzato colonna**scegliere una riga vuota, aggiungere una colonna elenco personalizzata e denominarla **Hospital**. Lasciare il tipo di dati come **singola riga di testo**.
+9. In **nome visualizzato colonna** scegliere una riga vuota, aggiungere una colonna elenco personalizzata e denominarla **Hospital**. Lasciare il tipo di dati come **singola riga di testo**.
 
      La colonna elenco personalizzato si applica solo a questo elenco. Quando si aggiunge una colonna elenco personalizzata a un elenco, viene creato un nuovo tipo di contenuto elenco, incluse tutte le colonne aggiunte nell'elenco, che viene impostato come elenco predefinito.
 
@@ -239,7 +241,7 @@ ms.locfileid: "92298368"
 
      Il nuovo record verrà visualizzato nell'elenco.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creazione di colonne del sito, tipi di contenuto ed elenchi per SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Procedura: creare un tipo di campo personalizzato](/previous-versions/office/developer/sharepoint-2010/bb862248(v=office.14))

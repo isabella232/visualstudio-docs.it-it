@@ -1,5 +1,7 @@
 ---
 title: Controllo dell'esecuzione | Microsoft Docs
+description: Informazioni sull'arresto degli eventi, il che significa che il DE attende una risposta dall'utente tramite l'IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c59831efb2fc97ad1bb2891fd93a67fe79f8eff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88adaad3092e084841c40b5e04d45f94985a2ee8
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387005"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913880"
 ---
 # <a name="control-of-execution"></a>Controllo dell'esecuzione
 Il motore di debug (DE) Invia in genere uno degli eventi seguenti come ultimo evento di avvio:
@@ -57,7 +59,7 @@ Il motore di debug (DE) Invia in genere uno degli eventi seguenti come ultimo ev
 
    Se il pacchetto di debug deve ignorare un determinato evento di arresto, il pacchetto di debug chiama SDM, che chiama [IDebugProgram2:: continue](../../extensibility/debugger/reference/idebugprogram2-continue.md). Se il programma esegue un'istruzione, una o più di una funzione quando si verifica la condizione di arresto, continua il passaggio. Questo implica che il programma gestisce uno stato di avanzamento, in modo da poter continuare.
 
-   Le chiamate effettuate da SDM a `Step` , **Execute**e **continue** sono asincrone, il che significa che SDM prevede che la chiamata restituisca rapidamente. Se l'oggetto DE invia l'evento SDM a Stop sullo stesso thread prima `Step` che **venga**restituito, Execute o **continue** , l'SDM smette di rispondere.
+   Le chiamate effettuate da SDM a `Step` , **Execute** e **continue** sono asincrone, il che significa che SDM prevede che la chiamata restituisca rapidamente. Se l'oggetto DE invia l'evento SDM a Stop sullo stesso thread prima `Step` che **venga** restituito, Execute o **continue** , l'SDM smette di rispondere.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Attività di debug](../../extensibility/debugger/debugging-tasks.md)

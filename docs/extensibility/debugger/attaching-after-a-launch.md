@@ -1,5 +1,7 @@
 ---
 title: Connessione dopo un avvio | Microsoft Docs
+description: Quando viene avviato un programma, la sessione di debug è pronta per l'associazione del motore di debug al programma. Scegliere un approccio di progettazione per la comunicazione con il motore di debug.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a4ce0a7465891035b43bbb8f6f22f0c064d104c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e19d9090126a13b657f53c20d7ec44a793d5376
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739279"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913893"
 ---
 # <a name="attach-after-a-launch"></a>Connetti dopo un avvio
 Dopo l'avvio di un programma, la sessione di debug è pronta per allineare il motore di debug (DE) al programma detto.
@@ -43,7 +45,7 @@ Dopo l'avvio di un programma, la sessione di debug è pronta per allineare il mo
 
  Il DE è ora collegato al programma e pronto per l'invio di eventi di avvio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Connessione diretta a un programma](../../extensibility/debugger/attaching-directly-to-a-program.md)
 - [Notifica della porta](../../extensibility/debugger/notifying-the-port.md)
 - [Attività di debug](../../extensibility/debugger/debugging-tasks.md)

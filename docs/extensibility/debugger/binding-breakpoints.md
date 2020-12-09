@@ -1,5 +1,7 @@
 ---
 title: Punti di interruzione dell'associazione | Microsoft Docs
+description: Informazioni sul modo in cui l'IDE formula la richiesta di un punto di interruzione e chiede alla sessione di debug di creare il punto di interruzione quando un utente imposta un punto di interruzione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e839b6e0e7967c4802bee5617da3334c5d4033c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 606c1f4cb5559722028b78ef4ef21c41c0ba5556
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903231"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914712"
 ---
 # <a name="bind-breakpoints"></a>Associa punti di interruzione
 Se l'utente imposta un punto di interruzione, ad esempio premendo **F9**, l'IDE formula la richiesta e chiede alla sessione di debug di creare il punto di interruzione.
@@ -53,5 +55,5 @@ Se l'utente imposta un punto di interruzione, ad esempio premendo **F9**, l'IDE 
 
  Se un DE gestisce un punto di interruzione, non è in grado di associarlo, ma è possibile che venga associato da un altro oggetto, viene restituito un avviso. L'IDE risponde inserendo un glifo della domanda all'interno dell'icona del punto di interruzione a sinistra della riga del codice sorgente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Attività di debug](../../extensibility/debugger/debugging-tasks.md)

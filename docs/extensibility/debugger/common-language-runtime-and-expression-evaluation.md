@@ -1,5 +1,7 @@
 ---
 title: Common Language Runtime e valutazione delle espressioni | Microsoft Docs
+description: Informazioni su come Common Language Runtime interagisce con il motore di debug e come integrare un linguaggio di programmazione proprietario nell'IDE di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 013579473189dd9310501b76d2de0d5cf6fa5822
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7c120ac1da59ab86e9419bcb031af46f1b3d900
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739119"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914257"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Common Language Runtime e valutazione delle espressioni
 > [!IMPORTANT]
@@ -29,11 +31,11 @@ ms.locfileid: "80739119"
 
  Una volta che un'espressione è stata analizzata, viene chiamato un provider di simboli (SP) per valutare ogni oggetto dati. Se, ad esempio, "A" è definito in più di un metodo, la domanda "quale A?" è necessario rispondere prima che il valore di un oggetto possa essere verificato. La risposta restituita da SP è simile a "il terzo elemento del quinto stack frame" o "A 50 byte oltre l'inizio della memoria statica allocata a questo metodo".
 
- Oltre a produrre codice MSIL per il programma stesso, i compilatori CLR possono anche produrre informazioni di debug molto descrittive scritte in un file di DataBase di programma (con*estensione PDB*). Fino a quando un compilatore del linguaggio proprietario genera informazioni di debug nello stesso formato dei compilatori CLR, SP di CLR è in grado di identificare gli oggetti dati denominati di tale lingua. Una volta identificato un oggetto dati denominato, EE utilizza un oggetto Binder per associare o associare l'oggetto dati all'area di memoria che contiene il valore di tale oggetto. Il DE può quindi ottenere o impostare un nuovo valore per l'oggetto dati.
+ Oltre a produrre codice MSIL per il programma stesso, i compilatori CLR possono anche produrre informazioni di debug molto descrittive scritte in un file di DataBase di programma (con *estensione PDB*). Fino a quando un compilatore del linguaggio proprietario genera informazioni di debug nello stesso formato dei compilatori CLR, SP di CLR è in grado di identificare gli oggetti dati denominati di tale lingua. Una volta identificato un oggetto dati denominato, EE utilizza un oggetto Binder per associare o associare l'oggetto dati all'area di memoria che contiene il valore di tale oggetto. Il DE può quindi ottenere o impostare un nuovo valore per l'oggetto dati.
 
  Un compilatore proprietario può fornire informazioni di debug CLR chiamando l' `ISymbolWriter` interfaccia (definita nel .NET Framework nello spazio dei nomi `System.Diagnostics.SymbolStore` ). Tramite la compilazione in MSIL e la scrittura di informazioni di debug tramite queste interfacce, un compilatore proprietario può utilizzare CLR DE e SP. Questo semplifica notevolmente l'integrazione di un linguaggio proprietario nell'IDE di Visual Studio.
 
  Quando CLR DE chiama il proprietario EE per valutare un'espressione, il DE fornisce l'EE con le interfacce a un SP e a un oggetto Binder. Pertanto, la scrittura di un motore di debug basato su CLR significa che è necessario implementare solo le interfacce dell'analizzatore di espressioni appropriate; CLR si occupa dell'associazione e della gestione dei simboli.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Scrivere un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

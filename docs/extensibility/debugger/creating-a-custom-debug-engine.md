@@ -1,5 +1,7 @@
 ---
 title: Creazione di un motore di debug personalizzato | Microsoft Docs
+description: Usare questi articoli per informazioni sulla creazione di un motore di debug che consente il debug di particolari architetture di Runtime.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 241bc016d8a64905951bffef07ba425f1351a727
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 673b08bf5680e04c90376c9eb3d63f6f03df9723
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903583"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914192"
 ---
 # <a name="create-a-custom-debug-engine"></a>Creare un motore di debug personalizzato
 Un motore di debug (DE) è un componente che consente il debug di particolari architetture di run-time. In genere esiste solo un'implementazione di DE per ogni ambiente di run-time.
@@ -54,5 +56,5 @@ Un motore di debug (DE) è un componente che consente il debug di particolari ar
 
  [Procedura: eseguire il debug di un motore di debug personalizzato](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md) Viene illustrato come eseguire il debug di un DE personalizzato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estensibilità del debugger di Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

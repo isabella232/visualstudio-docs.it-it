@@ -1,5 +1,7 @@
 ---
 title: Valutazione di espressioni | Microsoft Docs
+description: Informazioni sulla valutazione delle espressioni create dalle stringhe passate dalle finestre auto, espressioni di controllo, controllo immediato o immediato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18e342704cbb4abd7de9667576ce331ef8fbf60a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b43fc91de129407f2fd01e12951cffee4028186f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738824"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914595"
 ---
 # <a name="evaluate-expressions"></a>Espressioni di valutazione
-Le espressioni vengono create dalle stringhe passate dalle finestre **auto**, **espressioni di controllo, controllo** **immediato**o **immediate** . Quando viene valutata un'espressione, viene generata una stringa stampabile che contiene il nome e il tipo di variabile o argomento e il relativo valore. Questa stringa viene visualizzata nella finestra IDE corrispondente.
+Le espressioni vengono create dalle stringhe passate dalle finestre **auto**, **espressioni di controllo, controllo** **immediato** o **immediate** . Quando viene valutata un'espressione, viene generata una stringa stampabile che contiene il nome e il tipo di variabile o argomento e il relativo valore. Questa stringa viene visualizzata nella finestra IDE corrispondente.
 
 ## <a name="implementation"></a>Implementazione
  Le espressioni vengono valutate quando un programma si arresta in corrispondenza di un punto di interruzione. L'espressione stessa è rappresentata da un'interfaccia [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) , che rappresenta un'espressione analizzata pronta per l'associazione e la valutazione all'interno del contesto di valutazione dell'espressione specificato. Il stack frame determina il contesto di valutazione dell'espressione, che il motore di debug (DE) fornisce implementando l'interfaccia [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) .
@@ -31,7 +33,7 @@ Le espressioni vengono create dalle stringhe passate dalle finestre **auto**, **
 
  Per abilitare la valutazione dell'espressione, un DE deve implementare le interfacce [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) e [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) . Per la valutazione sincrona e asincrona è richiesta l'implementazione del metodo [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Stack frame](../../extensibility/debugger/stack-frames.md)
 - [Contesto di valutazione dell'espressione](../../extensibility/debugger/expression-evaluation-context.md)
 - [Attività di debug](../../extensibility/debugger/debugging-tasks.md)

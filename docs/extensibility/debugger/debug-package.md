@@ -1,5 +1,7 @@
 ---
 title: Pacchetto di debug | Microsoft Docs
+description: Informazioni sul modo in cui il pacchetto di debug viene eseguito nella shell di Visual Studio e gestisce l'interfaccia utente tramite l'utilizzo delle interfacce di debug e la comunicazione con gestione debug della sessione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de6240ea5d938d02f8415009203962e124ff049e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad62a487d38500617999a276aa3ae15a75089736
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739028"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914127"
 ---
 # <a name="debug-package"></a>Debug del pacchetto
 Il pacchetto di debug viene eseguito nella shell di Visual Studio e gestisce tutte le interfacce utente. Utilizza le interfacce di debug di Visual Studio e comunica con gestione debug sessione (SDM).
@@ -26,8 +28,8 @@ Il pacchetto di debug viene eseguito nella shell di Visual Studio e gestisce tut
 
  Il pacchetto di debug viene implementato da *vsdebug.dll*.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gestione debug sessione](../../extensibility/debugger/session-debug-manager.md)
 - [Stack frame](../../extensibility/debugger/stack-frames.md)
-- [Threads](../../extensibility/debugger/threads.md)
+- [Thread](../../extensibility/debugger/threads.md)
 - [Componenti del debugger](../../extensibility/debugger/debugger-components.md)

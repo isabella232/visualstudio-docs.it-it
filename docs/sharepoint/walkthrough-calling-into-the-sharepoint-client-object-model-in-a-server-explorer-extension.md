@@ -1,6 +1,8 @@
 ---
 title: 'Esplora server: estensione del nodo connessioni di SharePoint'
 titleSuffix: ''
+description: In questa procedura dettagliata, vedere come chiamare il modello a oggetti del client di SharePoint da un'estensione del nodo connessioni di SharePoint in Esplora server.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7f1ac5b0fb1f25d04139d76efa816ebd059d7da
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c323f05d341af810eecafae43e8d04d3cba29054
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585576"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913945"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Procedura dettagliata: chiamata al modello a oggetti del client di SharePoint in un'estensione Esplora server
   In questa procedura dettagliata viene illustrato come chiamare il modello a oggetti del client di SharePoint da un'estensione del nodo **connessioni di SharePoint** in **Esplora server**. Per ulteriori informazioni sull'utilizzo del modello a oggetti del client di SharePoint, vedere la pagina relativa alla [chiamata nei modelli a oggetti di SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -84,7 +86,7 @@ Per completare la procedura dettagliata, è necessario conoscere i concetti segu
 
 #### <a name="to-create-the-extension-project"></a>Per creare il progetto di estensione
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo soluzione, scegliere **Aggiungi**, quindi scegliere **nuovo progetto**.
 
 2. Nella finestra di dialogo  **nuovo progetto** espandere i nodi **Visual C#** o **Visual Basic** , quindi scegliere **Windows**.
 
@@ -184,7 +186,7 @@ Per completare la procedura dettagliata, è necessario conoscere i concetti segu
 
 #### <a name="to-build-the-project"></a>Per compilare il progetto
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto **WebPartNodeExtension** , quindi scegliere **Compila**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **WebPartNodeExtension** , quindi scegliere **Compila**.
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>Creare un pacchetto VSIX per distribuire l'estensione
  Per distribuire l'estensione, usare il progetto VSIX nella soluzione per creare un pacchetto VSIX. Per prima cosa, configurare il pacchetto VSIX modificando il file source. Extension. vsixmanifest incluso nel progetto. Creare quindi il pacchetto VSIX compilando la soluzione.
@@ -203,7 +205,7 @@ Per completare la procedura dettagliata, è necessario conoscere i concetti segu
 
 5. Nella scheda **Asset** dell'Editor scegliere il pulsante **nuovo** .
 
-6. Nella finestra di dialogo **Aggiungi nuovo asset** selezionare **Microsoft. VisualStudio. MefComponent**nell'elenco **tipo** .
+6. Nella finestra di dialogo **Aggiungi nuovo asset** selezionare **Microsoft. VisualStudio. MefComponent** nell'elenco **tipo** .
 
     > [!NOTE]
     > Questo valore corrisponde all' `MefComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione nel pacchetto VSIX. Per altre informazioni, vedere [Elemento MEFComponent (schema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
@@ -257,7 +259,7 @@ Per completare la procedura dettagliata, è necessario conoscere i concetti segu
 
 9. Nella finestra **Proprietà** verificare che vengano visualizzati i dettagli relativi alla web part.
 
-10. In **Esplora server**aprire il menu di scelta rapida per la stessa Web part, quindi scegliere **Visualizza messaggio**.
+10. In **Esplora server** aprire il menu di scelta rapida per la stessa Web part, quindi scegliere **Visualizza messaggio**.
 
      Nella finestra di messaggio visualizzata scegliere il pulsante **OK** .
 

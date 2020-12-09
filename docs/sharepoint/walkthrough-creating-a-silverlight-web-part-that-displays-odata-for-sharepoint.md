@@ -1,6 +1,8 @@
 ---
 title: Creazione di Web part Silverlight visualizzazione di OData per SharePoint
 titleSuffix: ''
+description: Creare una Web part Silverlight che visualizza OData per SharePoint. Personalizzare l'applicazione Silverlight e modificare e testare la Web part Silverlight.
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 652f34e6a062d2c8129266a10c859c8d24abd83e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298499"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914790"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Procedura dettagliata: creare una Web part Silverlight che visualizza OData per SharePoint
   SharePoint 2010 espone i dati dell'elenco per mezzo di OData. In SharePoint il servizio OData viene implementato dal servizio RESTful ListData. svc. In questa procedura dettagliata viene illustrato come creare una Web part di SharePoint che ospita un'applicazione Silverlight. L'applicazione Silverlight Visualizza le informazioni sull'elenco degli annunci di SharePoint utilizzando ListData. svc. Per ulteriori informazioni, vedere [interfaccia REST di SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) e [Open Data Protocol](https://www.odata.org/).
@@ -71,7 +73,7 @@ ms.locfileid: "92298499"
 
 1. Aggiungere un riferimento ad assembly a System. Windows. Data nell'applicazione Silverlight. Per ulteriori informazioni, vedere [procedura: aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](/previous-versions/wkze6zky(v=vs.140)).
 
-2. In **Esplora soluzioni**aprire il menu di scelta rapida per **riferimenti**, quindi scegliere **Aggiungi riferimento al servizio**.
+2. In **Esplora soluzioni** aprire il menu di scelta rapida per **riferimenti**, quindi scegliere **Aggiungi riferimento al servizio**.
 
     > [!NOTE]
     > Se si usa Visual Basic, è necessario scegliere l'icona **Mostra tutti i file** nella parte superiore di **Esplora soluzioni** per visualizzare il nodo **riferimenti** .
@@ -84,7 +86,7 @@ ms.locfileid: "92298499"
 
 5. Sulla barra dei menu scegliere **Compila**  >  **Compila soluzione**.
 
-6. Consente di aggiungere una nuova origine dati al progetto in base al servizio SharePoint. A tale scopo, sulla barra dei menu scegliere **Visualizza**  >  **altre**  >  **origini dati**di Windows.
+6. Consente di aggiungere una nuova origine dati al progetto in base al servizio SharePoint. A tale scopo, sulla barra dei menu scegliere **Visualizza**  >  **altre**  >  **origini dati** di Windows.
 
      Nella finestra **origini dati** vengono visualizzati tutti i dati dell'elenco SharePoint disponibili, ad esempio attività, annunci e calendario.
 
@@ -212,7 +214,7 @@ ms.locfileid: "92298499"
 
 1. Premere il tasto **F5** per compilare ed eseguire la soluzione SharePoint.
 
-2. In SharePoint scegliere **nuova pagina**dal menu **Azioni sito** .
+2. In SharePoint scegliere **nuova pagina** dal menu **Azioni sito** .
 
 3. Nella finestra di dialogo **nuova pagina** immettere un titolo, ad esempio **test Web part SL**, quindi scegliere il pulsante **Crea** .
 
@@ -231,6 +233,6 @@ ms.locfileid: "92298499"
     > [!NOTE]
     > Quando si accede ai dati in Silverlight tra domini, Silverlight protegge da vulnerabilità di sicurezza che possono essere usate per sfruttare le applicazioni Web. Se si verificano problemi durante l'accesso ai dati remoti in Silverlight, vedere [rendere disponibile un servizio tra i limiti di dominio](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95)).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creazione di Web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Distribuire, pubblicare e aggiornare i pacchetti della soluzione SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)

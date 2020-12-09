@@ -1,5 +1,7 @@
 ---
 title: Motore di debug | Microsoft Docs
+description: Informazioni sul funzionamento di un motore di debug con l'interprete o il sistema operativo per fornire servizi quali il controllo dell'esecuzione, i punti di interruzione e la valutazione delle espressioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4cb00796f8db23a43cd81a06d80d0fac40f075e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c31d095a3e340bf7e8f7a61a8db5bcbed53f0d5f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739061"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914218"
 ---
 # <a name="debug-engine"></a>Motore di debug
 Un motore di debug (DE) funziona con l'interprete o il sistema operativo per fornire servizi di debug, ad esempio il controllo dell'esecuzione, i punti di interruzione e la valutazione delle espressioni. Il DE è responsabile del monitoraggio dello stato di un programma di cui è in corso il debug. A tale scopo, il DE usa qualsiasi metodo disponibile nel runtime supportato, sia dalla CPU che dalle API fornite dal runtime.
@@ -37,7 +39,7 @@ Un motore di debug (DE) funziona con l'interprete o il sistema operativo per for
 
  Il valore DE è compatibile con un componente dell'analizzatore di espressioni per consentire al DE per quel particolare runtime di comprendere la sintassi delle espressioni. Il DE funziona anche con un componente del gestore di simboli per accedere alle informazioni di debug simboliche generate dal compilatore di linguaggio. Per ulteriori informazioni, vedere l' [analizzatore di espressioni](../../extensibility/debugger/expression-evaluator.md) e il [provider di simboli](../../extensibility/debugger/symbol-provider.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Componenti del debugger](../../extensibility/debugger/debugger-components.md)
 - [Analizzatore di espressioni](../../extensibility/debugger/expression-evaluator.md)
 - [Provider di simboli](../../extensibility/debugger/symbol-provider.md)

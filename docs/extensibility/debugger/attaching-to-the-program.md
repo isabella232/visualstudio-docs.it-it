@@ -1,5 +1,7 @@
 ---
 title: Connessione al programma | Microsoft Docs
+description: Informazioni su come Visual Studio implementa il debugger che si connette a un programma dopo che il programma è stato registrato con la porta appropriata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00b9780d0d302b9e067feed057d1a8d49c5f9fc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 030ee19e7e9e9e52140fb41da78f766978e18d3f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903219"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913763"
 ---
 # <a name="attach-to-the-program"></a>Connetti al programma
 Dopo aver registrato i programmi con la porta appropriata, è necessario associare il debugger al programma di cui si desidera eseguire il debug.
@@ -57,7 +59,7 @@ Dopo aver registrato i programmi con la porta appropriata, è necessario associa
     > [!NOTE]
     > Non si tratta dello stesso `IDebugProgram2` oggetto passato al `IDebugEngine2::Attach` metodo. L'oggetto passato in precedenza `IDebugProgram2` viene riconosciuto solo dalla porta ed è un oggetto separato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Allegato basato su avvio](../../extensibility/debugger/launch-based-attachment.md)
 - [Invio di eventi](../../extensibility/debugger/sending-events.md)
 - [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

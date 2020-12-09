@@ -1,5 +1,7 @@
 ---
 title: Modifica del valore di un oggetto locale | Microsoft Docs
+description: Informazioni sul processo di modifica del valore di un oggetto locale quando un nuovo valore viene digitato nel campo valore della finestra variabili locali.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 565ae9f27b9f5a113e51520724f525599ad5eda7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08f366162f4031b9cc7aa651bf9eca7aab55a15a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904264"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914335"
 ---
 # <a name="change-the-value-of-a-local"></a>Modificare il valore di una variabile locale
 > [!IMPORTANT]
@@ -45,6 +47,6 @@ ms.locfileid: "85904264"
 ## <a name="in-this-section"></a>Contenuto della sezione
  [Implementazione di esempio di valori modificabili](../../extensibility/debugger/sample-implementation-of-changing-values.md) Usa l'esempio MyCEE per eseguire il processo di modifica dei valori.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Scrittura di un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Visualizzazione di variabili locali](../../extensibility/debugger/displaying-locals.md)

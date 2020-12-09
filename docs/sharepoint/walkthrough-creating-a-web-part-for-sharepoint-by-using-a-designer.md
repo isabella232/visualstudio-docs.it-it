@@ -1,5 +1,7 @@
 ---
 title: Creazione di una Web part per SharePoint tramite la finestra di progettazione
+description: In questa procedura dettagliata, creare una Web part visivamente utilizzando il modello di progetto Web part visiva di SharePoint in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 732bd9fe3d34a768e0c6f71315f212c49bdf02af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc214e98b2ec0ed6feb31c9aaa6e8170b3ddd2c8
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016394"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913984"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Procedura dettagliata: creare una Web part per SharePoint tramite una finestra di progettazione
 
@@ -71,11 +73,11 @@ Progettare la Web part aggiungendo i controlli dalla **casella degli strumenti**
 
 2. Sulla barra dei menu scegliere **Visualizza**  >  **casella degli strumenti**.
 
-3. Nel nodo **standard** della **casella degli strumenti**scegliere il controllo **CheckBoxList** , quindi eseguire una delle operazioni seguenti:
+3. Nel nodo **standard** della **casella degli strumenti** scegliere il controllo **CheckBoxList** , quindi eseguire una delle operazioni seguenti:
 
     - Aprire il menu di scelta rapida per il controllo **CheckBoxList** , scegliere **copia**, aprire il menu di scelta rapida per la prima riga nella finestra di progettazione, quindi scegliere **Incolla**.
 
-    - Trascinare il controllo **CheckBoxList** dalla **casella degli strumenti**e connettere il controllo alla prima riga nella finestra di progettazione.
+    - Trascinare il controllo **CheckBoxList** dalla **casella degli strumenti** e connettere il controllo alla prima riga nella finestra di progettazione.
 
 4. Ripetere il passaggio precedente, ma spostare un pulsante nella riga successiva della finestra di progettazione.
 
@@ -185,7 +187,7 @@ Nella web part specificare i calendari che si desidera includere nella visualizz
 
 Gli eventi di tutti i calendari specificati vengono visualizzati nella visualizzazione del calendario mensile.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Creazione di Web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
  [Procedura: creare una Web part](../sharepoint/how-to-create-a-sharepoint-web-part.md) 

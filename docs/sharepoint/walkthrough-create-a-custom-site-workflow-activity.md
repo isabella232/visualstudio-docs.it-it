@@ -1,5 +1,7 @@
 ---
 title: "Procedura dettagliata: creare un'attività del flusso di lavoro del sito personalizzato | Microsoft Docs"
+description: In questa procedura dettagliata, vedere come creare un'attività personalizzata per un flusso di lavoro di SharePoint a livello di sito con Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc7eef8b0924be745de436e06acc36785b1cb99b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86302a0b8eef4344a909ae3b8fb2c513c86c4ad6
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016530"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913956"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Procedura dettagliata: creare un'attività personalizzata del flusso di lavoro del sito
   In questa procedura dettagliata viene illustrato come creare un'attività personalizzata per un flusso di lavoro a livello di sito tramite [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . I flussi di lavoro a livello di sito si applicano all'intero sito, non solo a un elenco sul sito. L'attività personalizzata crea un elenco di annunci di backup e quindi copia il contenuto dell'elenco degli annunci al suo interno.
@@ -66,9 +68,9 @@ ms.locfileid: "86016530"
 
      Questo passaggio consente di impostare il livello di attendibilità della soluzione come soluzione farm, l'unica opzione disponibile per i progetti di flusso di lavoro.
 
-6. In **Esplora soluzioni**scegliere il nodo del progetto, quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
+6. In **Esplora soluzioni** scegliere il nodo del progetto, quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
-7. In **Visual C#** o **Visual Basic**espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
+7. In **Visual C#** o **Visual Basic** espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
 
 8. Nel riquadro **modelli** scegliere il modello **flusso di lavoro sequenziale (solo soluzione farm)** , quindi scegliere il pulsante **Aggiungi** .
 
@@ -122,6 +124,6 @@ ms.locfileid: "86016530"
 
 5. Sulla barra QuickLaunch scegliere il collegamento **backup annunci** . Si noti che tutti gli annunci contenuti nell'elenco degli **annunci** sono stati copiati in questo nuovo elenco.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)

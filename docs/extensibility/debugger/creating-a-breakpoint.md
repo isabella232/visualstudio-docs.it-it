@@ -1,5 +1,7 @@
 ---
 title: Creazione di un punto di interruzione | Microsoft Docs
+description: Informazioni sulle chiamate ai metodi eseguite dal gestore di debug della sessione quando viene caricato il modulo necessario per associare un punto di interruzione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f89b99f15374ef7e0bbc6964ee1ff521eeb469f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba192a0cda2e63453984d3de7d6007744cc401b7
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903615"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914228"
 ---
 # <a name="create-a-breakpoint"></a>Creazione di un punto di interruzione
 Di seguito viene descritto il processo di creazione di un punto di interruzione.
@@ -37,5 +39,5 @@ Di seguito viene descritto il processo di creazione di un punto di interruzione.
 
 5. [IDebugPendingBreakpoint2::EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Chiama eventi del debugger](../../extensibility/debugger/calling-debugger-events.md)

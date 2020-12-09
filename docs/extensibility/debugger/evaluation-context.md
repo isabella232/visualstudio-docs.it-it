@@ -1,5 +1,7 @@
 ---
 title: Contesto di valutazione | Microsoft Docs
+description: "Quando il motore di debug chiama l'analizzatore di espressioni, gli argomenti determinano il contesto per la ricerca e la valutazione dei simboli: pSymbolProvider, pAddress e pBinder."
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e3d02bd652d6c46b5aabe00e049e425f0921c27
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a021d5dfdff5058211f5bafdfd7854611f977c27
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738808"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914517"
 ---
 # <a name="evaluation-context"></a>Contesto di valutazione
 > [!IMPORTANT]
@@ -26,7 +28,7 @@ ms.locfileid: "80738808"
 
 ## <a name="arguments"></a>Argomenti
 
-|Argomento|Descrizione|
+|Argomento|Description|
 |--------------|-----------------|
 |`pSymbolProvider`|Interfaccia [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md) che specifica il gestore di simboli (SH) da utilizzare per identificare il simbolo.|
 |`pAddress`|Interfaccia [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) che specifica il punto di esecuzione corrente. Questa interfaccia trova il metodo che contiene il codice in esecuzione.|
@@ -34,7 +36,7 @@ ms.locfileid: "80738808"
 
  `IDebugParsedExpression::EvaluateSync` Restituisce un'interfaccia [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) che rappresenta il valore risultante e il relativo tipo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce dell'analizzatore di espressioni chiave](../../extensibility/debugger/key-expression-evaluator-interfaces.md)
 - [Visualizzazione di variabili locali](../../extensibility/debugger/displaying-locals.md)
 - [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)

@@ -1,5 +1,7 @@
 ---
 title: Verifica e debug del codice SharePoint | Microsoft Docs
+description: Verificare ed eseguire il debug del codice SharePoint. Usare IntelliTrace per esaminare gli eventi passati e lo stato corrente nella soluzione. Usare gli unit test per assicurarsi che i metodi funzionino correttamente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,18 +17,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b57e07245631d37594d66ea7907b16efd817b2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce891e40552c0f8927bfd4ce006b750b6e5f8a54
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63008249"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914504"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>Verificare ed eseguire il debug del codice SharePoint
 Con IntelliTrace e unit test è possibile eseguire più facilmente il debug delle soluzioni SharePoint, nonché garantire il corretto funzionamento di ogni singolo metodo in esse. È possibile utilizzare queste funzionalità per i progetti SharePoint in Visual Studio seguendo le stesse procedure usate per altri tipi di progetti.
 
 ## <a name="intellitrace"></a>IntelliTrace
-Con IntelliTrace è possibile determinare non solo lo stato corrente della soluzione SharePoint ma anche gli eventi generati in passato e il contesto in cui si sono verificati. È possibile scorrere i diversi momenti della soluzione SharePoint in cui sono stati registrati eventi di interesse, esaminando gli stati e i valori delle variabili in ogni punto. Grazie a questa navigazione dinamica, il debug delle soluzioni SharePoint è più facile e rapido, senza la necessità di impostare numerosi punti di interruzione. È anche possibile salvare la sessione di debug in un file di log IntelliTrace (con*estensione iTrace*), aprirlo in un secondo momento in Visual Studio Enterprise ed eseguire il debug dopo l'arresto anomalo del sistema. Il file con *estensione iTrace* include informazioni dettagliate su quando e dove si sono verificati errori specifici di SharePoint, in modo da individuare più facilmente le cause degli errori. Le informazioni nel file con *estensione iTrace* sono un subset del log degli errori completo creato da Unified Logging System (ULS) in SharePoint. Queste informazioni prevedono eventi specifici di SharePoint, ad esempio quando un profilo utente viene aperto o chiuso e quando le proprietà in un progetto SharePoint vengono caricate, lette o modificate. È possibile configurare quali eventi vengono registrati da IntelliTrace. Per altre informazioni, vedere [Uso dei dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md).
+Con IntelliTrace è possibile determinare non solo lo stato corrente della soluzione SharePoint ma anche gli eventi generati in passato e il contesto in cui si sono verificati. È possibile scorrere i diversi momenti della soluzione SharePoint in cui sono stati registrati eventi di interesse, esaminando gli stati e i valori delle variabili in ogni punto. Grazie a questa navigazione dinamica, il debug delle soluzioni SharePoint è più facile e rapido, senza la necessità di impostare numerosi punti di interruzione. È anche possibile salvare la sessione di debug in un file di log IntelliTrace (con *estensione iTrace*), aprirlo in un secondo momento in Visual Studio Enterprise ed eseguire il debug dopo l'arresto anomalo del sistema. Il file con *estensione iTrace* include informazioni dettagliate su quando e dove si sono verificati errori specifici di SharePoint, in modo da individuare più facilmente le cause degli errori. Le informazioni nel file con *estensione iTrace* sono un subset del log degli errori completo creato da Unified Logging System (ULS) in SharePoint. Queste informazioni prevedono eventi specifici di SharePoint, ad esempio quando un profilo utente viene aperto o chiuso e quando le proprietà in un progetto SharePoint vengono caricate, lette o modificate. È possibile configurare quali eventi vengono registrati da IntelliTrace. Per altre informazioni, vedere [Uso dei dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md).
 
 Quando si verifica un errore in SharePoint, nella finestra di dialogo dell'errore viene visualizzato un identificatore "ID correlazione" di questo errore specifico. È anche possibile ottenere gli ID correlazione dagli eventi elencati nel file con *estensione iTrace* . Per visualizzare un elenco di tutti gli eventi che si sono verificati con un ID correlazione specificato, è possibile immettere l'ID nella sezione **analisi** della pagina di riepilogo di IntelliTrace. In questa sezione è possibile scegliere se visualizzare solo i nomi degli eventi che si sono verificati o i nomi degli eventi con le informazioni sulle chiamate, ad esempio il nome della funzione, i punti di uscita e ingresso, i parametri e i valori restituiti.
 
@@ -46,6 +48,6 @@ I progetti SharePoint supportano Microsoft Fakes, vale a dire un framework di is
 |[Procedura dettagliata: debug di un'applicazione di SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)|Viene illustrato come utilizzare IntelliTrace per individuare errori di codice in un progetto SharePoint.|
 |[Eseguire unit test del codice](../test/unit-test-your-code.md)|Viene descritto come trovare errori di logica nel codice tramite unit test.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Migliorare la qualità del codice](../test/improve-code-quality.md)

@@ -1,5 +1,7 @@
 ---
 title: Eventi di controllo | Microsoft Docs
+description: Informazioni sull'invio di eventi durante l'esecuzione controllata del programma tramite l'interfaccia IDebugEvent2.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc2c3ad9c9b63923bdf2f107e7bc582f3c76cd62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf7f59384d9317e4be173c93b6165d754a35ad8f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739094"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914244"
 ---
 # <a name="control-events"></a>Eventi di controllo
 È necessario inviare eventi durante l'esecuzione controllata del programma. Tutti gli eventi vengono inviati usando l'interfaccia [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) e hanno attributi che richiedono l'implementazione del metodo [IDebugEvent2:: GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) .
@@ -37,5 +39,5 @@ ms.locfileid: "80739094"
 
   Affinché il motore scriva l'output di tipo stringa, è necessario implementare il metodo [IDebugOutputStringEvent2:: GetString](../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Controllo di esecuzione e valutazione dello stato](../../extensibility/debugger/execution-control-and-state-evaluation.md)

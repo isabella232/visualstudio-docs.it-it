@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: creare un progetto di definizione di sito di base | Microsoft Docs'
+description: In questa procedura dettagliata di SharePoint, vedere come creare una definizione di sito di base contenente una Web part visiva con alcuni controlli.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1c06f4df5d1efe06ad2537bd2e65f2c239f3be2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0411f027b105622d806e123bd80f38c4b05281ca
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016770"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913854"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Procedura dettagliata: creare un progetto di definizione di sito di base
   In questa procedura dettagliata viene illustrato come creare una definizione di sito di base contenente una Web part visiva con alcuni controlli. Per maggiore chiarezza, la Web part visiva creata dispone solo di alcuni controlli. Tuttavia, è possibile creare definizioni di sito di SharePoint più sofisticate che includono più funzionalità.
@@ -69,9 +71,9 @@ ms.locfileid: "86016770"
 
     Il progetto viene visualizzato in **Esplora soluzioni**.
 
-8. In **Esplora soluzioni**scegliere il nodo del progetto, quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
+8. In **Esplora soluzioni** scegliere il nodo del progetto, quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
-9. In **Visual C#** o **Visual Basic**espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
+9. In **Visual C#** o **Visual Basic** espandere il nodo **SharePoint** , quindi scegliere il nodo **2010** .
 
 10. Nel riquadro **modelli** scegliere il modello di **definizione del sito** , lasciare il **nome** **SiteDefinition1**, quindi scegliere il pulsante **Aggiungi** .
 
@@ -80,7 +82,7 @@ ms.locfileid: "86016770"
 
 #### <a name="to-create-a-visual-web-part"></a>Per creare una Web part visiva
 
-1. In **Esplora soluzioni**scegliere il pulsante **Mostra tutti i file** .
+1. In **Esplora soluzioni** scegliere il pulsante **Mostra tutti i file** .
 
 2. Scegliere il nodo del progetto **SiteDefinition1** , quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi nuovo elemento**.
 
@@ -92,7 +94,7 @@ ms.locfileid: "86016770"
 
      Verrà aperto il file *VisualWebPart1. ascx* .
 
-5. Nella parte inferiore di *VisualWebPart1. ascx*aggiungere il markup seguente per aggiungere tre controlli al form: una casella di testo, un pulsante e un'etichetta:
+5. Nella parte inferiore di *VisualWebPart1. ascx* aggiungere il markup seguente per aggiungere tre controlli al form: una casella di testo, un pulsante e un'etichetta:
 
     ```aspx-csharp
     <table>
@@ -110,7 +112,7 @@ ms.locfileid: "86016770"
     </table>
     ```
 
-6. In *VisualWebPart1. ascx*aprire il file *VisualWebPart1.ascx.cs* (per [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ) o *VisualWebPart1. ascx. vb* (per [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ), quindi aggiungere il codice seguente:
+6. In *VisualWebPart1. ascx* aprire il file *VisualWebPart1.ascx.cs* (per [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ) o *VisualWebPart1. ascx. vb* (per [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ), quindi aggiungere il codice seguente:
 
      [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
      [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
@@ -140,7 +142,7 @@ ms.locfileid: "86016770"
 
      Questo codice crea un riferimento alla web part visiva creata in precedenza.
 
-3. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo **SiteDefinition1** , quindi scegliere **Imposta come elemento di avvio**.
+3. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo **SiteDefinition1** , quindi scegliere **Imposta come elemento di avvio**.
 
 ## <a name="deploy-and-run-the-site-definition-solution"></a>Distribuire ed eseguire la soluzione di definizione del sito
  Successivamente, distribuire il progetto in SharePoint e quindi eseguire il progetto.
@@ -181,6 +183,6 @@ ms.locfileid: "86016770"
 
      Il testo viene visualizzato nell'etichetta sul lato destro del pulsante.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)

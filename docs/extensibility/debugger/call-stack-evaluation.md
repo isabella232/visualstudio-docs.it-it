@@ -1,5 +1,7 @@
 ---
 title: Valutazione dello stack di chiamate | Microsoft Docs
+description: Informazioni sul metodo EnumFrameInfo e su come implementarlo per visualizzare gli stack frame dello stack di chiamate durante la modalità di rottura.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5557d7eae0ffe54b0f01f1f9e95935d71455229
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc637ff3ce2fe596eed48684523da7114fe0a03a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739185"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914673"
 ---
 # <a name="call-stack-evaluation"></a>Valutazione dello stack di chiamate
 Per visualizzare gli stack frame dello stack di chiamate durante la modalità di Breaking, è necessario implementare il metodo [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
@@ -37,5 +39,5 @@ Per visualizzare gli stack frame dello stack di chiamate durante la modalità di
 
  Per enumerare i contesti di codice, è necessario implementare tutti i metodi di [IEnumDebugCodeContexts2](../../extensibility/debugger/reference/ienumdebugcodecontexts2.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Controllo di esecuzione e valutazione dello stato](../../extensibility/debugger/execution-control-and-state-evaluation.md)

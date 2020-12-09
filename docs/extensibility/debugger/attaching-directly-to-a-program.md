@@ -1,5 +1,7 @@
 ---
 title: Connessione diretta a un programma | Microsoft Docs
+description: Informazioni su come Visual Studio implementa l'associazione di un motore di debug a un processo già in esecuzione tramite questa procedura nell'IDE di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc78234b31b98865f1779dd65d743d4196f9cbf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80ee40d60b5a7511c3f44c22c16e02751d9f1f36
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903263"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913776"
 ---
 # <a name="attach-directly-to-a-program"></a>Connettersi direttamente a un programma
 Gli utenti che desiderano eseguire il debug di programmi in un processo già in esecuzione in genere seguono questo processo:
@@ -40,6 +42,6 @@ Gli utenti che desiderano eseguire il debug di programmi in un processo già in 
 
    La seconda eccezione è costituita dal fatto che gli eventi di avvio inviati da una connessione a un programma già in esecuzione non includono in genere l'evento del punto di ingresso.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Invio di eventi di avvio dopo un avvio](../../extensibility/debugger/sending-startup-events-after-a-launch.md)
 - [Attività di debug](../../extensibility/debugger/debugging-tasks.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: creazione di una Web part per SharePoint | Microsoft Docs'
+description: Creare una Web part per SharePoint. Le web part consentono agli utenti di modificare direttamente il contenuto, l'aspetto e il comportamento delle pagine del sito di SharePoint tramite un browser.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98e0c21fa4e3f119b32e19dd1be6e7d9148a17f4
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247651"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914660"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Procedura dettagliata: creare una Web part per SharePoint
 
@@ -80,7 +82,7 @@ Aggiungere un elemento **Web part** al progetto. L'elemento **Web part** aggiung
 
 È possibile specificare i controlli che si desidera visualizzare nella web part aggiungendoli alla raccolta di controlli della classe Web part.
 
-1. In **Esplora soluzioni**aprire *WebPart1. vb* (in Visual Basic) o *WebPart1.cs* (in C#).
+1. In **Esplora soluzioni** aprire *WebPart1. vb* (in Visual Basic) o *WebPart1.cs* (in C#).
 
      Il file di codice della web part verrà aperto nell'editor di codice.
 
@@ -116,7 +118,7 @@ Aggiungere un elemento **Web part** al progetto. L'elemento **Web part** aggiung
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
-6. Aggiungere il metodo seguente alla classe `WebPart1`. Il codice esegue queste operazioni:
+6. Aggiungi alla classe `WebPart1` il metodo seguente. Il codice esegue queste operazioni:
 
    - Consente di creare un verbo visualizzato nel menu dei verbi della web part della web part di cui è stato eseguito il rendering.
 
@@ -164,7 +166,7 @@ Quando si esegue il progetto, viene aperto il sito di SharePoint. La Web part vi
 
 2. Nella barra dei menu del blocco note scegliere **file**  >  **Salva con nome**.
 
-3. Nella finestra di dialogo **Salva con nome** selezionare **tutti i file**nell'elenco **Salva come** .
+3. Nella finestra di dialogo **Salva con nome** selezionare **tutti i file** nell'elenco **Salva come** .
 
 4. Nella casella **nome file** immettere **data.xml**.
 
@@ -174,7 +176,7 @@ Quando si esegue il progetto, viene aperto il sito di SharePoint. La Web part vi
 
      Verrà aperto il sito di SharePoint.
 
-7. Scegliere **altre opzioni**dal menu **Azioni sito** .
+7. Scegliere **altre opzioni** dal menu **Azioni sito** .
 
 8. Nella pagina **Crea** scegliere il tipo di **pagina Web part** , quindi scegliere il pulsante **Crea** .
 
@@ -214,7 +216,7 @@ Consente di visualizzare e nascondere i dipendenti che non sono responsabili sel
 
      Tutti i dipendenti vengono visualizzati nella web part.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Creazione di Web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
  [Procedura: creare una Web part](../sharepoint/how-to-create-a-sharepoint-web-part.md) 

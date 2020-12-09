@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere e rimuovere cartelle mappate | Microsoft Docs'
+description: Aggiungere e rimuovere cartelle mappate a un progetto in SharePoint.  Modificare il percorso di distribuzione di una cartella mappata. Rinominare o rimuovere cartelle mappate.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80fbd3e18b8d440eae2873c73013ad7468073640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4d29be9b008bfaa9ad6694725b03e25bf6847df
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014650"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914806"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>Procedura: aggiungere e rimuovere cartelle mappate
   Alcune cartelle di uso comune in SharePoint, ad esempio immagini e layout, sono profondamente incorporate nella gerarchia dei file. È possibile eseguire il mapping di queste cartelle in un progetto SharePoint per accedervi più facilmente. Le cartelle mappate sono cartelle del progetto SharePoint che corrispondono alla posizione fisica dei file nell'installazione di SharePoint Server.
@@ -41,13 +43,13 @@ Per aggiungere cartelle mappate a un progetto, è possibile utilizzare i comandi
 
 4. Nella casella **nome** immettere **TestProject1**, quindi scegliere il pulsante **OK** .
 
-5. In **personalizzazione guidata SharePoint**scegliere il pulsante **fine** per mantenere le impostazioni predefinite.
+5. In **personalizzazione guidata SharePoint** scegliere il pulsante **fine** per mantenere le impostazioni predefinite.
 
-6. In **Esplora soluzioni**scegliere il nodo del progetto, quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi cartella mappata di SharePoint "immagini"**.
+6. In **Esplora soluzioni** scegliere il nodo del progetto, quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi cartella mappata di SharePoint "immagini"**.
 
      Nel progetto viene visualizzata una cartella denominata **Immagini** che contiene una sottocartella denominata TestProject1. Questa cartella mappata conterrà le immagini per il progetto Web part visiva.
 
-7. In **Esplora soluzioni**scegliere il nodo del progetto, quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi cartella mappata di SharePoint** per visualizzare la finestra di dialogo **Aggiungi cartella mappata di SharePoint** .
+7. In **Esplora soluzioni** scegliere il nodo del progetto, quindi nella barra dei menu scegliere **progetto**  >  **Aggiungi cartella mappata di SharePoint** per visualizzare la finestra di dialogo **Aggiungi cartella mappata di SharePoint** .
 
 8. Nella visualizzazione albero delle cartelle disponibili per il mapping scegliere la cartella **risorse** , quindi scegliere il pulsante **OK** .
 
@@ -78,5 +80,5 @@ Per aggiungere cartelle mappate a un progetto, è possibile utilizzare i comandi
 
 3. Per rimuovere una cartella mappata dal progetto, aprire il menu di scelta rapida, scegliere **Elimina**, quindi fare clic sul pulsante **OK** nella finestra di dialogo per confermare la rimozione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)

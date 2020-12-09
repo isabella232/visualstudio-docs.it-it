@@ -1,5 +1,7 @@
 ---
 title: Componenti del debugger | Microsoft Docs
+description: Informazioni sugli elementi che costituiscono una sessione di debug, gestita dal debugger di Visual Studio, implementata come VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03c400fd03c5ee0f2629e9f436b65f53f8f2ac8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2fa0a7feb85437cc8173d52695ddb1ba0d2c06b7
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739006"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914101"
 ---
 # <a name="debugger-components"></a>Componenti del debugger
 Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugger viene implementato come pacchetto VSPackage e gestisce l'intera sessione di debug. La sessione di debug include gli elementi seguenti:
@@ -62,5 +64,5 @@ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugger viene i
 
  [Attività di debug](../../extensibility/debugger/debugging-tasks.md) Contiene collegamenti a diverse attività di debug, ad esempio l'avvio di un programma e la valutazione delle espressioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Operazioni preliminari](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
