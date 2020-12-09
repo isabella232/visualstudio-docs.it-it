@@ -1,5 +1,7 @@
 ---
 title: Individuare le perdite di memoria con la libreria CRT | Microsoft Docs
+description: Informazioni sul modo in cui il debugger C/C++ e la libreria di runtime C (CRT) consentono di individuare le perdite di memoria. Le tecniche includono i report sulle perdite di memoria e il confronto degli snapshot di memoria.
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5deb42b2ab708bae572aebbcac15af2d077b14fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f5c906bd06fd4107166a45e93bf11be579c2270
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350485"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863075"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Individuare le perdite di memoria con la libreria CRT
 
@@ -108,7 +110,7 @@ Indipendentemente dal fatto che venga definito `_CRTDBG_MAP_ALLOC` , il report s
 - Dimensioni del blocco, `64 bytes` nell'esempio.
 - I primi 16 byte di dati nel blocco, in formato esadecimale.
 
-I tipi di blocchi di memoria sono *Normal*, *client*o *CRT*. Un *blocco normale* è dato da memoria ordinaria allocata dal programma. Un *blocco client* è un tipo speciale di blocco di memoria usato dai programmi MFC per oggetti che richiedono un distruttore. L'operazione MFC `new` crea un blocco normale o un blocco client, a seconda dell'oggetto creato.
+I tipi di blocchi di memoria sono *Normal*, *client* o *CRT*. Un *blocco normale* è dato da memoria ordinaria allocata dal programma. Un *blocco client* è un tipo speciale di blocco di memoria usato dai programmi MFC per oggetti che richiedono un distruttore. L'operazione MFC `new` crea un blocco normale o un blocco client, a seconda dell'oggetto creato.
 
 Un *blocco CRT* è allocato dalla libreria CRT per il proprio uso. La libreria CRT gestisce la deallocazione per questi blocchi, quindi i blocchi CRT non vengono visualizzati nel report delle perdite di memoria, a meno che non vi siano gravi problemi con la libreria CRT.
 
@@ -182,7 +184,7 @@ Il numero di allocazione della memoria indica quando è stato allocato un blocco
 
 1. Impostare un punto di interruzione in prossimità dell'inizio dell'app e avviare il debug.
 
-1. Quando l'app viene sospesa in corrispondenza del punto di interruzione, aprire una finestra **espressioni di controllo** selezionando **debug**  >  **Windows**  >  **Watch 1** (o espressione di controllo **2**, espressione di controllo **3**o espressione di **controllo 4**).
+1. Quando l'app viene sospesa in corrispondenza del punto di interruzione, aprire una finestra **espressioni di controllo** selezionando **debug**  >  **Windows**  >  **Watch 1** (o espressione di controllo **2**, espressione di controllo **3** o espressione di **controllo 4**).
 
 1. Nella finestra **espressioni di controllo** Digitare `_crtBreakAlloc` nella colonna **nome** .
 
@@ -260,8 +262,8 @@ Una tecnica per individuare le perdite di memoria inizia inserendo le `_CrtMemCh
 
  `_CrtDumpMemoryLeaks` può fornire false indicazioni di perdite di memoria se una libreria contrassegna le allocazioni interne come blocchi normali anziché come blocchi CRT o client. In questo caso, `_CrtDumpMemoryLeaks` non è in grado di indicare la differenza tra allocazioni utente e allocazioni interne della libreria. Se i distruttori globali relativi alle allocazioni della libreria vengono eseguiti dopo il punto in cui viene chiamato `_CrtDumpMemoryLeaks`, ogni allocazione interna della libreria viene segnalata come perdita di memoria. Le versioni della libreria di modelli standard precedenti a Visual Studio .NET possono causare la `_CrtDumpMemoryLeaks` segnalazione di falsi positivi.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Dettagli heap di debug CRT](../debugger/crt-debug-heap-details.md)
+- [Informazioni dettagliate sull'heap di debug CRT](../debugger/crt-debug-heap-details.md)
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Debug del codice nativo](../debugger/debugging-native-code.md)

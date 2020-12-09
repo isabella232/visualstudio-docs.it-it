@@ -1,5 +1,7 @@
 ---
 title: Modifica e continuazione (Visual C#) | Microsoft Docs
+description: La funzionalità modifica e continuazione è disponibile per i progetti Visual C#. Informazioni sulle modifiche supportate e su come è possibile controllare se e quando vengono applicate le modifiche.
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62411229acd2d2f8462984789037fc832dac09b8
-ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
+ms.openlocfilehash: 55406001e4017c853895002445d9bd5d614b4b20
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91421641"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862881"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifica e continuazione (Visual C#)
  La funzionalità Modifica e continuazione per C# consente di apportare modifiche al codice in modalità di interruzione durante il debug. Le modifiche possono essere applicate senza terminare e riavviare la sessione di debug. In modalità di esecuzione l'editor del codice sorgente è di sola lettura.
@@ -38,7 +40,7 @@ ms.locfileid: "91421641"
 
  Per altre informazioni, vedere [procedura: usare modifica e continuazione (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: Usare Modifica e continuazione (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
 - [Modifiche al codice supportate (C# e Visual Basic)](../debugger/supported-code-changes-csharp.md)
 - [Scrivere ed eseguire il debug del codice XAML in esecuzione con il ricaricamento a caldo di XAML in Visual Studio](../xaml-tools/xaml-hot-reload.md)

@@ -1,5 +1,7 @@
 ---
 title: Modifica e continuazione (Visual Basic) | Microsoft Docs
+description: La funzionalità modifica e continuazione è disponibile per i progetti Visual Basic. Informazioni sulle modifiche supportate e su come è possibile controllare se e quando vengono applicate le modifiche.
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4560973cd6ccd2bbfee48028494731935945a4c
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62851263"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862971"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Modifica e continuazione (Visual Basic)
 Modifica e continuazione è una funzionalità per il debug di [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] che consente di apportare modifiche al codice mentre viene eseguito in modalità di interruzione. Dopo aver applicato le modifiche al codice, è possibile riprendere l'esecuzione del codice con le nuove modifiche già inserite e verificarne l'effetto.

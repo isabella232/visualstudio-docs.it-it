@@ -1,5 +1,6 @@
 ---
 title: Scheda generale, finestra di dialogo Proprietà finestra | Microsoft Docs
+description: Visualizzare la scheda generale per informazioni su una finestra, inclusi didascalia, handle, rettangolo, handle dell'istanza dell'applicazione, handle di menu e dati utente.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,19 +11,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5160c79e2c8dae474927e6af7ebdc9e371e9edc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 125420655af4fb021e264c3885a739fc90cfff59
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849557"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862750"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>Scheda Generale, finestra di dialogo Proprietà finestra
 Utilizzare la scheda **generale** per visualizzare informazioni sulla finestra selezionata. Per visualizzare la finestra di [dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo sulla finestra di [visualizzazione di Windows](../debugger/windows-view.md) . Selezionare un nodo della finestra nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .
 
  Nella scheda **generale** sono disponibili le impostazioni seguenti:
 
-|Voce|Descrizione|
+|Voce|Description|
 |-----------|-----------------|
 |**Titolo finestra**|Testo nella didascalia della finestra o testo contenuto in una finestra se è un controllo.|
 |**Handle finestra**|ID univoco di questa finestra. I numeri di handle della finestra vengono riutilizzati. identificano una finestra solo per la durata di tale finestra.|

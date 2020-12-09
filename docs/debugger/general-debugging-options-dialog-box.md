@@ -1,5 +1,7 @@
 ---
 title: Generale, debug, finestra di dialogo Opzioni | Microsoft Docs
+description: Impostare le opzioni del debugger di Visual Studio per soddisfare le esigenze di debug. È possibile configurare il comportamento delle interruzioni, i livelli di debug, il comportamento di visualizzazione e altro ancora.
+ms.custom: SEO-VS-2020
 ms.date: 06/04/2020
 ms.topic: reference
 f1_keywords:
@@ -21,20 +23,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5b03d7b45e488d7e8026a7d6835bbfba1efa210
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b052c2cce3d396debb4fbaf8ce688ede3effb98
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286557"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863010"
 ---
 # <a name="general-debugging-options"></a>Opzioni generali di debug
 
-Per impostare le opzioni del debugger di Visual Studio, selezionare **strumenti**  >  **Opzioni**e in **debug** selezionare o deselezionare le caselle accanto alle opzioni **generali** . È possibile ripristinare tutte le impostazioni predefinite con **strumenti**  >  **Importa/Esporta impostazioni**  >  **Reimposta tutte le impostazioni**. Per reimpostare un subset di impostazioni, salvare le impostazioni con l' **importazione/esportazione guidata delle impostazioni** prima di apportare le modifiche desiderate, quindi importare le impostazioni salvate in seguito.
+Per impostare le opzioni del debugger di Visual Studio, selezionare **strumenti**  >  **Opzioni** e in **debug** selezionare o deselezionare le caselle accanto alle opzioni **generali** . È possibile ripristinare tutte le impostazioni predefinite con **strumenti**  >  **Importa/Esporta impostazioni**  >  **Reimposta tutte le impostazioni**. Per reimpostare un subset di impostazioni, salvare le impostazioni con l' **importazione/esportazione guidata delle impostazioni** prima di apportare le modifiche desiderate, quindi importare le impostazioni salvate in seguito.
 
 È possibile impostare le opzioni **generali** seguenti:
 
-**Chiedi prima di eliminare tutti**i punti di interruzione: richiede la conferma prima di completare il comando **Elimina tutti** i punti di interruzione.
+**Chiedi prima di eliminare tutti** i punti di interruzione: richiede la conferma prima di completare il comando **Elimina tutti** i punti di interruzione.
 
 **Interrompi tutti i processi quando si interrompe un processo**: interrompe contemporaneamente tutti i processi a cui è collegato il debugger, quando si verifica un'interruzione.
 
@@ -82,12 +84,12 @@ Nelle condizioni 2 e 3 l'eccezione viene talvolta intercettata dal codice gestit
 
 - **Esegui sempre comandi del server di origine non attendibili senza chiedere conferma**: quando il supporto del server di origine è abilitato, questa impostazione sostituisce il comportamento predefinito della richiesta quando si esegue un comando non attendibile.
 
-**Abilita supporto**per il collegamento all'origine: indica al debugger di Visual Studio di scaricare i file di origine per i file con *estensione PDB* contenenti informazioni sul collegamento all'origine. Per ulteriori informazioni sul collegamento di origine, vedere la [specifica del collegamento all'origine](/dotnet/standard/library-guidance/sourcelink).
+**Abilita supporto** per il collegamento all'origine: indica al debugger di Visual Studio di scaricare i file di origine per i file con *estensione PDB* contenenti informazioni sul collegamento all'origine. Per ulteriori informazioni sul collegamento di origine, vedere la [specifica del collegamento all'origine](/dotnet/standard/library-guidance/sourcelink).
 
 > [!IMPORTANT]
 > Poiché il collegamento all'origine scaricherà i file tramite http o HTTPS, assicurarsi di considerare attendibile il file con *estensione PDB* .
 
-- **Eseguire il fallback all'autenticazione di gestione credenziali git per tutte le richieste di collegamento**all'origine: quando è abilitato il supporto per il collegamento all'origine e una richiesta di collegamento di origine non riesce, Visual Studio chiama quindi git Credential Manager.
+- **Eseguire il fallback all'autenticazione di gestione credenziali git per tutte le richieste di collegamento** all'origine: quando è abilitato il supporto per il collegamento all'origine e una richiesta di collegamento di origine non riesce, Visual Studio chiama quindi git Credential Manager.
 
 **Evidenziare intera riga di origine per i punti di interruzione e l'istruzione corrente (solo C++)**: quando il debugger evidenzia un punto di interruzione o l'istruzione corrente, evidenzia l'intera riga.
 
@@ -109,7 +111,7 @@ Nelle condizioni 2 e 3 l'eccezione viene talvolta intercettata dal codice gestit
 
 Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL, usare `dumpbin /exports`. I simboli sono disponibili per tutte le DLL di sistema a 32 bit. Leggendo l'output di `dumpbin /exports` , è possibile visualizzare il nome esatto della funzione, compresi i caratteri non alfanumerici. Ciò risulta utile per impostare un punto di interruzione su una funzione. I nomi di funzione delle tabelle di esportazione DLL possono apparire troncati in altri punti del debugger. Le chiamate sono elencate nell'ordine di chiamata, con la funzione corrente (al più alto livello di annidamento) all'inizio dell'elenco. Per altre informazioni, vedere [dumpbin /exports](/cpp/build/reference/dash-exports).
 
-**Mostra il diagramma degli stack in parallelo dal basso**verso l'alto: controlla la direzione in cui vengono visualizzati gli stack nella finestra **stack in parallelo** .
+**Mostra il diagramma degli stack in parallelo dal basso** verso l'alto: controlla la direzione in cui vengono visualizzati gli stack nella finestra **stack in parallelo** .
 
 **Ignora le eccezioni di accesso alla memoria GPU se i dati scritti non hanno modificato il valore**: ignora le race condition rilevate durante il debug se i dati non sono stati modificati. Per altre informazioni, vedere [debug del codice GPU](../debugger/debugging-gpu-code.md).
 
@@ -132,7 +134,7 @@ Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL,
 
 **Abilita strumenti di debug dell'interfaccia utente per XAML**: le finestre albero elementi visivi attivi e Esplora proprietà attive vengono visualizzate quando si avvia il debug (**F5**) di un tipo di progetto supportato. Per altre informazioni, vedere [controllare le proprietà XAML durante il debug](../xaml-tools/inspect-xaml-properties-while-debugging.md).
 
-- **Anteprima degli elementi selezionati in struttura ad albero visuale**attiva: l'elemento XAML di cui è selezionato il contesto è selezionato anche nella finestra **albero elementi visivi attivi** .
+- **Anteprima degli elementi selezionati in struttura ad albero visuale** attiva: l'elemento XAML di cui è selezionato il contesto è selezionato anche nella finestra **albero elementi visivi attivi** .
 
 - **Mostra gli strumenti di runtime nell'applicazione**: Mostra i comandi della **struttura ad albero visuale** attiva in una barra degli strumenti nella finestra principale dell'applicazione XAML di cui è in corso il debug. Questa opzione è stata introdotta in Visual Studio 2015 Update 2.
 
@@ -193,7 +195,7 @@ Se si usa una versione precedente di Visual Studio, potrebbero essere presenti a
 
 - Usare questa opzione quando si esegue il debug del codice .NET C++, perché il nuovo motore di debug non supporta la valutazione delle espressioni C++ .NET. Tuttavia, l'abilitazione della modalità di compatibilità nativa disabilita molte funzionalità che dipendono dall'implementazione corrente del debugger per il funzionamento. Il motore legacy, ad esempio, non dispone di molti visualizzatori per i tipi incorporati come `std::string` nei progetti di Visual Studio 2015.   In questi casi, utilizzare Visual Studio 2013 progetti per un'esperienza di debug ottimale.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

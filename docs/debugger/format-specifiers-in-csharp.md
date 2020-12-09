@@ -1,5 +1,7 @@
 ---
 title: Identificatori di formato nel debugger (C#) | Microsoft Docs
+description: Usare un identificatore di formato per modificare il formato di visualizzazione di un valore nel finestra Espressioni di controllo. Questo articolo fornisce i dettagli di utilizzo.
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31739b9c8fecc862c891173a792986b467730400
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849832"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862789"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Identificatori di formato in C# nel debugger di Visual Studio
 È possibile modificare il formato in cui un valore viene visualizzato nella finestra **espressioni di controllo** usando gli identificatori di formato. È anche possibile usare gli identificatori di formato nella finestra di **controllo immediato** , nella finestra di **comando** , in [punti](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e nelle finestre di origine. Se si sospende un'espressione in queste finestre, il risultato verrà visualizzato in un  [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) nella visualizzazione del formato specificato.
@@ -48,7 +50,7 @@ Verrà usato il codice di esempio seguente:
 }
 ```
 
-Aggiungere la `my_var1` variabile alla finestra **espressioni di controllo** durante il debug, **eseguire il debug**di  >  **Windows**  >  **Watch**  >  **Watch 1**. Fare quindi clic con il pulsante destro del mouse sulla variabile e scegliere **visualizzazione esadecimale**. A questo punto la finestra **espressioni di controllo** Mostra il valore 0x0065. Per visualizzare questo valore come intero decimale anziché come intero esadecimale, aggiungere l'identificatore di formato decimale **, d** nella colonna **nome** dopo il nome della variabile. La colonna **valore** ora Visualizza **101**.
+Aggiungere la `my_var1` variabile alla finestra **espressioni di controllo** durante il debug, **eseguire il debug** di  >  **Windows**  >  **Watch**  >  **Watch 1**. Fare quindi clic con il pulsante destro del mouse sulla variabile e scegliere **visualizzazione esadecimale**. A questo punto la finestra **espressioni di controllo** Mostra il valore 0x0065. Per visualizzare questo valore come intero decimale anziché come intero esadecimale, aggiungere l'identificatore di formato decimale **, d** nella colonna **nome** dopo il nome della variabile. La colonna **valore** ora Visualizza **101**.
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
 
@@ -75,6 +77,6 @@ La tabella seguente descrive gli identificatori di formato C# per il debugger di
 |raw|Visualizza l'elemento così come appare nel nodo degli elementi non elaborati. Valido unicamente sugli oggetti proxy.|Dizionario\<T>|Visualizzazione non elaborata del dizionario\<T>|
 |results|Utilizzato con una variabile di un tipo che implementa IEnumerable o IEnumerable \<T> , in genere il risultato di un'espressione di query. Visualizza solo i membri che contengono il risultato della query.|Visualizza tutti i membri|Visualizza i membri che soddisfano le condizioni della query|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Finestre espressioni di controllo e controllo immediato](../debugger/watch-and-quickwatch-windows.md)
 - [Finestre auto e variabili locali](../debugger/autos-and-locals-windows.md)

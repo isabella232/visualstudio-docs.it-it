@@ -1,5 +1,7 @@
 ---
 title: Modifica e continuazione (C++) | Microsoft Docs
+description: La funzionalità modifica e continuazione è disponibile per i progetti C++. Informazioni sulle modifiche supportate e su come è possibile controllare se e quando vengono applicate le modifiche.
+ms.custom: SEO-VS-2020
 ms.date: 05/31/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c32c161d1df70fc81eee4186aa9d1ac102afa69
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 2a8cb40850aefe83ac048c708192bc24533a8296
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599649"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863062"
 ---
 # <a name="edit-and-continue-c"></a>Modifica e continuazione (C++)
 È possibile usare modifica e continuazione nei progetti C++. Per informazioni sulle limitazioni di modifica e continuazione, vedere [modifiche al codice supportate (C++)](../debugger/supported-code-changes-cpp.md) .

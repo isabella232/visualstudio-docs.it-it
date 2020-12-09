@@ -1,5 +1,6 @@
 ---
 title: Scheda generale, finestra di dialogo Proprietà thread | Microsoft Docs
+description: Visualizzare la finestra di dialogo Proprietà thread per informazioni su un thread, inclusi nome del modulo, ID thread, ID processo, stato thread, motivo attesa e tempo CPU.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e8604c2d31f6bb50e9e77efbf6423f56ed719c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd4c2bf24058ce8a69f05d8d2cee17a18ff9505d
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62896367"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862997"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Scheda Generale, finestra di dialogo Proprietà thread
 Usare questa finestra di dialogo per trovare altre informazioni su un thread specifico. Per visualizzare questa finestra di dialogo, spostare lo stato attivo in una finestra [visualizzazione thread](../debugger/threads-view.md) oppure aprire [visualizzazione messaggi](../debugger/messages-view.md) ed espandere un messaggio. Selezionare un nodo thread nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .
 
  La finestra di dialogo **Proprietà thread** contiene un riquadro, ovvero la scheda **generale** . Sono disponibili le impostazioni seguenti:
 
-|Voce|Descrizione|
+|Voce|Description|
 |-----------|-----------------|
 |**Nome del modulo**|Nome del modulo.|
 |**ID thread**|ID univoco del thread. Si noti che i numeri ID del thread vengono riutilizzati. identificano un thread solo per la durata del thread.|

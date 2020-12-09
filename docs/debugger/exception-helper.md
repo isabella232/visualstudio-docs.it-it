@@ -1,6 +1,8 @@
 ---
 title: Controllare un'eccezione
 titleSuffix: ''
+description: Informazioni sulle informazioni fornite da Visual Studio per semplificare il debug delle eccezioni e su come disabilitare selettivamente le interruzioni nelle eccezioni.
+ms.custom: SEO-VS-2020
 ms.date: 1/18/2020
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d0084abff760ff227b20137cd55d905b57e1a18
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ddc57d28510fe2e2cd5dbbb3aeea993813546715
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852498"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862815"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>Esaminare un'eccezione usando l'helper eccezioni 
 

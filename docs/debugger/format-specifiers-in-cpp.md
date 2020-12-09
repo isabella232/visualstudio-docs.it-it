@@ -1,5 +1,7 @@
 ---
 title: Identificatori di formato nel debugger (C++) | Microsoft Docs
+description: Usare un identificatore di formato per modificare il formato in cui un valore viene visualizzato in una finestra espressioni di controllo, auto o variabili locali. Questo articolo fornisce i dettagli di utilizzo.
+ms.custom: SEO-VS-2020
 ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
@@ -24,15 +26,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 287ef3ccfd344786bd98098c5f28d0a2bd6573f6
-ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
+ms.openlocfilehash: 64166768dea1da015c223a74c74440ae09a0d106
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90832320"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96863036"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Identificatori di formato per C++ nel debugger di Visual Studio
-È possibile modificare il formato in cui un valore viene visualizzato nelle finestre **espressioni di controllo**, **auto**e **variabili locali** utilizzando identificatori di formato.
+È possibile modificare il formato in cui un valore viene visualizzato nelle finestre **espressioni di controllo**, **auto** e **variabili locali** utilizzando identificatori di formato.
 
 È anche possibile usare gli identificatori di formato nella finestra di **controllo immediato** , nella finestra di **comando** , in [punti](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e persino nelle finestre di origine. Se si sospende un'espressione in queste finestre, il risultato verrà visualizzato in un [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). La visualizzazione Suggerimento dati riflette l'identificatore di formato.
 
@@ -50,7 +52,7 @@ int main() {
 }
 ```
 
-Aggiungere la `my_var1` variabile alla finestra **espressioni di controllo** durante il debug, **eseguire il debug**di  >  **Windows**  >  **Watch**  >  **Watch 1**. Fare quindi clic con il pulsante destro del mouse sulla variabile e scegliere **visualizzazione esadecimale**. A questo punto la finestra **espressioni di controllo** Mostra il valore 0x0065. Per visualizzare questo valore espresso come carattere anziché come Integer, fare prima clic con il pulsante destro del mouse e deselezionare la **visualizzazione esadecimale**. Aggiungere quindi l'identificatore di formato carattere **, c** nella colonna **nome** dopo il nome della variabile. La colonna **valore** ora Mostra **101 "e"**.
+Aggiungere la `my_var1` variabile alla finestra **espressioni di controllo** durante il debug, **eseguire il debug** di  >  **Windows**  >  **Watch**  >  **Watch 1**. Fare quindi clic con il pulsante destro del mouse sulla variabile e scegliere **visualizzazione esadecimale**. A questo punto la finestra **espressioni di controllo** Mostra il valore 0x0065. Per visualizzare questo valore espresso come carattere anziché come Integer, fare prima clic con il pulsante destro del mouse e deselezionare la **visualizzazione esadecimale**. Aggiungere quindi l'identificatore di formato carattere **, c** nella colonna **nome** dopo il nome della variabile. La colonna **valore** ora Mostra **101 "e"**.
 
 ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
 
@@ -76,7 +78,7 @@ Nelle tabelle seguenti vengono descritti gli identificatori di formato che è po
 |Xb<br /><br /> **Hb**|intero esadecimale (senza 0x iniziale)|102|CCCCCCCC|
 |b|intero binario senza segno|25|0b00000000000000000000000000011001|
 |bb|intero binario senza segno (senza 0b iniziale)|25|00000000000000000000000000011001|
-|e|notazione scientifica|25000000|2.500000 e + 07|
+|h|notazione scientifica|25000000|2.500000 e + 07|
 |g|abbreviazione della notazione scientifica o del formato a virgola mobile|25000000|2.5 e + 07|
 |c|Carattere singolo|0x0065|101 'e'|
 |s|stringa const char * (con virgolette)|\<location> "Hello World"|"hello world"|

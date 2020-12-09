@@ -1,5 +1,7 @@
 ---
 title: Espressioni nel debugger | Microsoft Docs
+description: La funzionalità modifica e continuazione è disponibile per i progetti Visual C#. Informazioni sulle modifiche supportate e su come è possibile controllare se e quando vengono applicate le modifiche.
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4a06a249fee38ca7fd8521459eda7bbf4100a97
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 28d04ce836316024eb4aef9f1b4a9955d98dbba8
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600288"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862867"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Espressioni nel debugger di Visual Studio
 Il debugger di Visual Studio include analizzatori di espressioni che vengono usati quando si immette un'espressione nella finestra di dialogo **Controllo immediato** , nella finestra **Espressioni di controllo** o **Immediato** . Gli analizzatori di espressioni vengono inoltre usati nella finestra **Punti di interruzione** e in molte altre posizioni all'interno del debugger.
@@ -207,5 +209,5 @@ Non è possibile dichiarare nuove variabili esplicite nelle finestre del debugge
 ## <a name="see-also"></a>Vedi anche
 - [Identificatori di formato in C++](../debugger/format-specifiers-in-cpp.md)
 - [Operatore di contesto (C++)](../debugger/context-operator-cpp.md)
-- [Identificatori di formato in C#](../debugger/format-specifiers-in-csharp.md)
+- [Identificatori di formato in C #](../debugger/format-specifiers-in-csharp.md)
 - [Pseudo variabili](../debugger/pseudovariables.md)

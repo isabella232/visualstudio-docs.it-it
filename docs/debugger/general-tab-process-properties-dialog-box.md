@@ -1,5 +1,7 @@
 ---
 title: Scheda generale, finestra di dialogo Proprietà processo | Microsoft Docs
+description: Visualizzare la scheda generale per informazioni su un processo, inclusi nome del modulo, ID processo, priorità di base, conteggio thread, tempo CPU, tempo utente e tempo trascorso.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6116beb67baf072d9c9762a1e8c67408cc915f29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4980437c63348050db1a007e8f541e9af9e186cc
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849811"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862737"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>Scheda Generale, finestra di dialogo Proprietà processo
 Utilizzare la scheda **generale** per ottenere ulteriori informazioni su un processo specifico. Per visualizzare la finestra di [dialogo Proprietà processo](../debugger/process-properties-dialog-box.md), spostare lo stato attivo in una finestra [visualizzazione processi](../debugger/processes-view.md) . Selezionare un nodo di processo nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .
 
  Nella scheda **generale** sono disponibili le impostazioni seguenti:
 
-|Voce|Descrizione|
+|Voce|Description|
 |-----------|-----------------|
 |**Nome del modulo**|Nome del modulo.|
 |**ID processo**|ID univoco del processo. I numeri ID processo vengono riutilizzati in modo da identificare un processo solo per la durata di tale processo. Il tipo di oggetto processo viene creato durante l'esecuzione di un programma. Tutti i thread in un processo condividono lo stesso spazio di indirizzi e hanno accesso agli stessi dati.|
