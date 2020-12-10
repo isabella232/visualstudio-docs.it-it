@@ -1,7 +1,7 @@
 ---
 title: Panoramica della diagnostica della grafica | Microsoft Docs
-description: Panoramica di alto livello di Visual Studio Diagnostica della grafica
-ms.custom: seodec18
+description: Visual Studio Diagnostica della grafica è un set di strumenti per registrare l'attività Direct3D e analizzare i log per risolvere i problemi di rendering e di prestazioni.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 02/09/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9193555ef3c9c69f494a78ac779a3724417f63
-ms.sourcegitcommit: a1cb4e2025045c2ad79167645c4c0f33b94b1152
+ms.openlocfilehash: 1ccf3b77c9b1f4dee7183aac32e8810417ba69c5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91671406"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996136"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Panoramica di Diagnostica grafica di Visual Studio
 *Diagnostica della grafica* di Visual Studio è un set di strumenti per la registrazione e l'analisi dei problemi di prestazioni e di rendering nelle app Direct3D. Diagnostica della grafica può essere usato nelle app in esecuzione localmente nel PC Windows o in un computer o un dispositivo remoto.
 
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Uso della diagnostica grafica per eseguire il debug dei problemi di rendering
- Eseguire il debug dei problemi di rendering in un'applicazione con contenuti grafici avanzati non è semplice come avviare un debugger ed eseguire codice istruzione per istruzione. In ogni frame vengono prodotte centinaia di migliaia di pixel univoci, ciascuno in base a un set complesso di stati, dati, parametri e codice. Di questi, probabilmente solo pochi presenteranno il problema che si tenta di diagnosticare. Come se non bastasse, il codice che genera ciascun pixel viene eseguito in hardware specializzato che elabora centinaia di pixel in parallelo. Gli strumenti e le tecniche tradizionali di debug, difficili da sfruttare anche in codice con pochi thread, sono inefficaci di fronte a una quantità eccessiva di dati.
+ Il debug dei problemi di rendering in un'applicazione graficamente avanzata non è semplice come l'avvio di un debugger e l'esecuzione di codice. In ogni frame vengono prodotte centinaia di migliaia di pixel univoci, ciascuno in base a un set complesso di stati, dati, parametri e codice. Di questi, probabilmente solo pochi presenteranno il problema che si tenta di diagnosticare. Come se non bastasse, il codice che genera ciascun pixel viene eseguito in hardware specializzato che elabora centinaia di pixel in parallelo. Gli strumenti e le tecniche tradizionali di debug, difficili da sfruttare anche in codice con pochi thread, sono inefficaci di fronte a una quantità eccessiva di dati.
 
  Gli strumenti di diagnostica grafica in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sono progettati per individuare i problemi di rendering a partire dagli artefatti visivi che indicano il problema e quindi risalendo all'origine concentrandosi solo sul codice di shader pertinente, le fasi della pipeline, le chiamate di disegno, le risorse e lo stato del dispositivo nel codice sorgente dell'app.
 

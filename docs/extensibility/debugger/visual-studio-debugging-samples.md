@@ -1,5 +1,7 @@
 ---
 title: Esempi di debug di Visual Studio | Microsoft Docs
+description: L'esempio di analizzatore di espressioni del debugger e il motore di debug di Visual Studio illustrano come estendere il debugger di Visual Studio con Visual Studio SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c3ac20f541f83103e0ded8c11881317e8d1aca4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb1afc16dc998adb18108248af4812fe6b173c66
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712410"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995928"
 ---
 # <a name="visual-studio-debugging-samples"></a>Esempi di debug di Visual Studio
 Due esempi illustrano come estendere il debugger di Visual Studio usando [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .

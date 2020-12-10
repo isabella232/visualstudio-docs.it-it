@@ -1,5 +1,7 @@
 ---
 title: Inizializzazione della finestra di progettazione e configurazione dei metadati | Microsoft Docs
+description: Informazioni su come Visual Studio SDK facilita il controllo dell'inizializzazione di un componente della finestra di progettazione o del componente della finestra di progettazione e dei relativi metadati da un VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f48d8ebb285bdc8211f590f49e615042b7029d70
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 9907298cf730d6e51c108dc92f633d0b50451f12
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011709"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996162"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inizializzazione della finestra di progettazione e configurazione dei metadati
 
-La manipolazione dei metadati e degli attributi di filtro associati a una finestra di progettazione o a un componente della finestra di progettazione fornisce un meccanismo che consente alle applicazioni di definire quali strumenti vengono utilizzati da una particolare finestra di progettazione per gestire <xref:System.Type> oggetti diversi, ad esempio strutture di dati, classi o entità grafiche, quando la finestra di progettazione è disponibile e come l' **Toolbox** IDE di Visual Studio è configurato per supportare la finestra di progettazione
+La manipolazione dei metadati e degli attributi di filtro associati a una finestra di progettazione o a un componente della finestra di progettazione fornisce un meccanismo che consente alle applicazioni di definire quali strumenti vengono utilizzati da una particolare finestra di progettazione per gestire <xref:System.Type> oggetti diversi, ad esempio strutture di dati, classi o entità grafiche, quando la finestra di progettazione è disponibile e come l'  IDE di Visual Studio è configurato per supportare la finestra di progettazione
 
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]In sono disponibili diversi meccanismi per facilitare il controllo dell'inizializzazione di un componente della finestra di progettazione o di un componente della finestra di progettazione e la manipolazione dei relativi metadati da un VSPackage.
 

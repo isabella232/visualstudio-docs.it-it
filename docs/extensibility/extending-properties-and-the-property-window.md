@@ -1,5 +1,7 @@
 ---
 title: Estensione delle proprietà e della finestra delle proprietà | Microsoft Docs
+description: Informazioni sull'estensione delle proprietà nell'Finestra Proprietà, che consente di visualizzare e modificare le proprietà e gli eventi della fase di progettazione degli oggetti selezionati.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14cc7bba8f5255d612c0f429aab5acf36729b506
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75c0deb1b4d1e0fecceefb2e91265c9e6160df8a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711731"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995785"
 ---
 # <a name="extend-properties-and-the-property-window"></a>Estendi proprietà e finestra delle proprietà
 La finestra **Proprietà** viene utilizzata per visualizzare e modificare le proprietà e gli eventi della fase di progettazione degli oggetti selezionati.

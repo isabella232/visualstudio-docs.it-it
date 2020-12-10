@@ -1,5 +1,7 @@
 ---
 title: Enumeratori | Microsoft Docs
+description: Informazioni sui tipi di dati dell'enumeratore nell'API del plug-in del controllo del codice sorgente, inclusi codice del comando, messaggio, codice di stato del file e codice di stato della directory.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee48d064612e5519d5ad7e5eaf04de6c5a697837
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55e124ce3d36e2b23ef53c376b660de05cd87043
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711850"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995811"
 ---
 # <a name="enumerators"></a>Enumerators
 In questa sezione sono elencati i tipi di dati dell'enumeratore nell'API del plug-in del controllo del codice sorgente che il plug-in del controllo del codice sorgente deve conoscere.

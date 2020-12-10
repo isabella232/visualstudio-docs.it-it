@@ -1,5 +1,7 @@
 ---
 title: Gestione dei contenitori di blocco del documento | Microsoft Docs
+description: Informazioni su come inserire un blocco di modifica su un documento nella tabella documenti in esecuzione senza che l'utente visualizzi un documento aperto in una finestra del documento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9dd520f8ad5cab1f0cfee890c4bcc388c204bb1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c15696d81be92f0549069bad354e65356f7b2e7c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712133"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995902"
 ---
 # <a name="document-lock-holder-management"></a>Gestione dei contenitori di blocco del documento
 

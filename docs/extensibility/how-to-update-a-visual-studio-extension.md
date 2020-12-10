@@ -1,5 +1,7 @@
 ---
 title: "Procedura: aggiornare un'estensione di Visual Studio | Microsoft Docs"
+description: Informazioni su come aggiornare un'estensione di Visual Studio nel sistema usando estensioni e aggiornamenti per installare la versione aggiornata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee81fe30e10253239bc51dd9d2f199340debc65a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be22ca13fd5af8df88501835c8a030cc6469e179
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905626"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995604"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Procedura: aggiornare un'estensione di Visual Studio
 È possibile aggiornare un'estensione di Visual Studio nel sistema usando **estensioni e aggiornamenti** per installare la versione aggiornata. Se si crea una versione aggiornata di un'estensione, è possibile significarla come aggiornata incrementando il numero di versione nel manifesto VSIX.
@@ -45,7 +47,7 @@ ms.locfileid: "85905626"
     > [!IMPORTANT]
     > Tutte le estensioni utente senza segno non vengono aggiornate automaticamente. È necessario firmare sempre le estensioni.
 
-2. In **Esplora soluzioni**aprire *source. Extension. manifest*.
+2. In **Esplora soluzioni** aprire *source. Extension. manifest*.
 
 3. In Progettazione manifesto aumentare il valore del numero nel campo **versione** .
 
@@ -55,7 +57,7 @@ ms.locfileid: "85905626"
 
      Quando un utente con una versione precedente dell'estensione apre **estensioni e aggiornamenti**, la nuova versione verrà visualizzata nell'elenco degli **aggiornamenti** , a condizione che lo strumento sia impostato in modo da cercare automaticamente gli aggiornamenti.
 
-     È possibile abilitare o disabilitare il controllo automatico degli aggiornamenti nella parte inferiore del riquadro **aggiornamenti** (**abilitare/disabilitare il rilevamento automatico degli aggiornamenti disponibili**), che modifica l'impostazione **Verifica aggiornamenti** in **strumenti**  >  **Opzioni**  >  **Environment**  >  **e aggiornamenti**.
+     È possibile abilitare o disabilitare il controllo automatico degli aggiornamenti nella parte inferiore del riquadro **aggiornamenti** (**abilitare/disabilitare il rilevamento automatico degli aggiornamenti disponibili**), che modifica l'impostazione **Verifica aggiornamenti** in **strumenti**  >  **Opzioni**  >    >  **e aggiornamenti**.
 
     > [!NOTE]
     > A partire da Visual Studio 2015 Update 2, è possibile specificare (in **strumenti**  >  **Opzioni**  >  **ambiente**  >  **estensioni e aggiornamenti**) se si desiderano gli aggiornamenti automatici per le estensioni per utente, tutte le estensioni utente o entrambe (impostazione predefinita).

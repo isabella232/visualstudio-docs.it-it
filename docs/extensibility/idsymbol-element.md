@@ -1,5 +1,7 @@
 ---
 title: Elemento IDSymbol | Microsoft Docs
+description: "L'elemento IDSymbol contiene l'ID della coppia GUID: ID che rappresenta un menu, un gruppo o un comando."
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d02a26a6874165738d917a14986d16d142c01915
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4feb477f8507bc3fe57e6db355538ab98ceeeaa
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710368"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995538"
 ---
 # <a name="idsymbol-element"></a>Elemento IDSymbol
 L' `IDSymbol` elemento contiene l'ID della coppia GUID: ID che rappresenta un menu, un gruppo o un comando. Il GUID deriva dall'elemento padre `GuidSymbol` . L' `IDSymbol` elemento dispone di un `name` attributo che fornisce un nome descrittivo per l'ID, contenuto nell' `value` attributo.
@@ -46,7 +48,7 @@ L' `IDSymbol` elemento contiene l'ID della coppia GUID: ID che rappresenta un me
 |-------------|-----------------|
 |[Elemento GuidSymbol](../extensibility/guidsymbol-element.md)|Contiene il GUID della coppia GUID: ID che rappresenta un menu, un gruppo o un comando. Raggruppa gli elementi `IDSymbol`.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Ogni `IDSymbol` elemento in un dato `GuidSymbol` elemento deve avere un univoco `value` . Tuttavia, `IDSymbol` gli elementi con valori identici possono esistere in un pacchetto purché abbiano elementi padre diversi.
 
 ## <a name="see-also"></a>Vedere anche

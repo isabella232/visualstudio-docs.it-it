@@ -1,6 +1,6 @@
 ---
-title: ActivityDesigner Progettazione flussi di lavoro-CompensableActivity
-description: Informazioni su come usare l'ActivityDesigner CompensableActivity per creare e configurare un'attività CompensableActivity.
+title: ActivityDesigner CompensableActivity
+description: Informazioni su come usare l'ActivityDesigner CompensableActivity in Progettazione flussi di lavoro per creare e configurare un'attività CompensableActivity.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e170bd47af7c84eb9ddb26a4946422c418365d2
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 3d05809b1e370fee2505470be1c06366f76bf9ca
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434337"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996227"
 ---
 # <a name="compensableactivity-activity-designer"></a>ActivityDesigner CompensableActivity
 
@@ -27,7 +27,7 @@ L'ActivityDesigner **CompensableActivity** viene usato per creare e configurare 
  <xref:System.Activities.Statements.CompensableActivity> definisce un'unità di lavoro che può essere confermata o compensata dopo l'esito positivo del completamento.
 
 ### <a name="using-the-compensableactivity-activity-designer"></a>Utilizzo dell'ActivityDesigner CompensableActivity
- L'ActivityDesigner **CompensableActivity** è disponibile nella categoria **transazione** della **casella degli strumenti**. Per aprire la **casella degli strumenti** , selezionare la scheda **casella degli strumenti** sul lato sinistro del progettazione flussi di lavoro. In alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** o premere **CTRL** + **ALT** + **X**.
+ L'ActivityDesigner **CompensableActivity** è disponibile nella categoria **transazione** della **casella degli strumenti**. Per aprire la **casella degli strumenti**, selezionare la scheda **casella degli strumenti** sul lato sinistro del progettazione flussi di lavoro. In alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** o premere **CTRL** + **ALT** + **X**.
 
  È possibile trascinare l'ActivityDesigner **CompensableActivity** dalla **casella degli strumenti** e rilasciarlo nell'area di progettazione flussi di lavoro. È possibile trascinare l'ActivityDesigner all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . Se si elimina l'ActivityDesigner, viene creata un' <xref:System.Activities.Statements.CompensableActivity> attività con il valore predefinito <xref:System.Activities.Activity.DisplayName%2A> CompensableActivity. Modificare il <xref:System.Activities.Activity.DisplayName%2A> valore nell'intestazione dell'ActivityDesigner **CompensableActivity** . Può anche essere modificato nella casella **DisplayName** della griglia delle proprietà.
 
@@ -38,7 +38,7 @@ L'ActivityDesigner **CompensableActivity** viene usato per creare e configurare 
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.CompensableActivity>. Il valore predefinito è CompensableActivity.|
 |<xref:System.Activities.Activity%601.Result%2A>|Falso|Specifica il valore restituito di <xref:System.Activities.Statements.CompensableActivity>. Questa proprietà deve essere modificata nella griglia delle proprietà.|
-|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|Vero|Specifica l'attività per la quale viene fornita la logica di compensazione, di annullamento e di conferma. Per aggiungere l' <xref:System.Activities.Statements.CompensableActivity.Body%2A> attività, rilasciare un'attività dalla **casella degli strumenti** nella casella **corpo** dell'ActivityDesigner **CompensableActivity** . Aggiungere il testo del suggerimento "drop Activity here".|
+|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|True|Specifica l'attività per la quale viene fornita la logica di compensazione, di annullamento e di conferma. Per aggiungere l' <xref:System.Activities.Statements.CompensableActivity.Body%2A> attività, rilasciare un'attività dalla **casella degli strumenti** nella casella **corpo** dell'ActivityDesigner **CompensableActivity** . Aggiungere il testo del suggerimento "drop Activity here".|
 |<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>|Falso|Specifica l'attività eseguita in caso di annullamento. Per aggiungere l'attività, rilasciare la finestra di progettazione dalla **casella degli strumenti** nella casella **CancellationHandler** nell'ActivityDesigner **CompensableActivity** . Aggiungere il testo del suggerimento "rilasciare l'attività".|
 |<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|Falso|Specifica l'attività da eseguire quando si esegue la compensazione per l'attività <xref:System.Activities.Statements.CompensableActivity.Body%2A>. È possibile richiamare questo gestore in modo esplicito usando l'attività <xref:System.Activities.Statements.Compensate>.<br /><br /> Per aggiungere l'attività, trascinare l'ActivityDesigner dalla casella **degli strumenti** nella casella **CompensationHandler** nell'ActivityDesigner **CompensableActivity** . Aggiungere il testo del suggerimento "rilasciare l'attività".|
 |<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|Falso|Specifica l'attività da eseguire quando si conferma l'attività <xref:System.Activities.Statements.CompensableActivity.Body%2A>. È possibile richiamare questo gestore in modo esplicito usando l'attività <xref:System.Activities.Statements.Confirm>.<br /><br /> Per aggiungere l'attività, trascinare l'ActivityDesigner dalla casella **degli strumenti** nella casella **ConfirmationHandler** nell'ActivityDesigner **CompensableActivity** . Aggiungere il testo del suggerimento "rilasciare l'attività".|

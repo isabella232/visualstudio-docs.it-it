@@ -1,5 +1,7 @@
 ---
 title: Gestione degli errori e valori restituiti | Microsoft Docs
+description: Informazioni su come Visual Studio SDK fornisce assembly di interoperabilità per registrare informazioni dettagliate sugli errori durante la ricezione di una notifica di errore.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30b6b9bff9056360f9ea840f47b1488f05bee872
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8e8385e0b270cd6e359ef03a3060d5eefb97479
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711926"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995850"
 ---
 # <a name="error-handling-and-return-values"></a>Gestione degli errori e valori restituiti
 I pacchetti VSPackage e COM usano la stessa architettura per gli errori. Le `SetErrorInfo` `GetErrorInfo` funzioni e fanno parte dell'Application Programming Interface Win32 (API). Qualsiasi VSPackage nel Integrated Development Environment (IDE) può chiamare queste API Win32 globali per registrare informazioni dettagliate sugli errori durante la ricezione di una notifica di errore. [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]Fornisce assembly di interoperabilità per gestire le informazioni sugli errori.

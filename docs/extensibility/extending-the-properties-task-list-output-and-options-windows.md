@@ -1,5 +1,6 @@
 ---
 title: Estendi proprietà, Elenco attività, output, finestre opzioni
+description: Informazioni su come integrare le informazioni relative alla finestra degli strumenti in Visual Studio in una nuova pagina di opzioni e una nuova impostazione nella pagina delle proprietà.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -16,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c968544c6bf52a901052fc7aedbbee66dcc10e62
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 54b78197be71dca9fbabbfded90c4e07660a74db
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038478"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995798"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Estendere le finestre Proprietà, Elenco attività, output e opzioni
 È possibile accedere a qualsiasi finestra degli strumenti in Visual Studio. In questa procedura dettagliata viene illustrato come integrare le informazioni relative alla finestra degli strumenti in una nuova pagina **Opzioni** e una nuova impostazione nella pagina **Proprietà** e come scrivere nelle finestre di **elenco attività** e **output** .
@@ -44,9 +45,9 @@ ms.locfileid: "90038478"
     > [!NOTE]
     > Questa operazione non elimina il gestore dell'evento **Button1_Click** , che verrà riutilizzato in un passaggio successivo.
 
-2. Dalla sezione **tutti i controlli WPF** della **casella degli strumenti**trascinare un controllo **Canvas** nella griglia.
+2. Dalla sezione **tutti i controlli WPF** della **casella degli strumenti** trascinare un controllo **Canvas** nella griglia.
 
-3. Trascinare una **casella di testo**, un **pulsante**e una **casella di riepilogo** nell'area di disegno. Disporre gli elementi in modo che la casella di testo e il pulsante si trovino sullo stesso livello e la casella di riepilogo riempie il resto della finestra sottostante, come nell'immagine seguente.
+3. Trascinare una **casella di testo**, un **pulsante** e una **casella di riepilogo** nell'area di disegno. Disporre gli elementi in modo che la casella di testo e il pulsante si trovino sullo stesso livello e la casella di riepilogo riempie il resto della finestra sottostante, come nell'immagine seguente.
 
      ![Finestra degli strumenti finita](../extensibility/media/t5-toolwindow.png "T5-ToolWindow")
 
@@ -80,7 +81,7 @@ ms.locfileid: "90038478"
     }
     ```
 
-3. In *TodoWindow.cs*modificare il costruttore TodoWindowControl in modo da includere il parametro TodoWindow. Il codice dovrebbe essere simile al seguente:
+3. In *TodoWindow.cs* modificare il costruttore TodoWindowControl in modo da includere il parametro TodoWindow. Il codice dovrebbe essere simile al seguente:
 
     ```csharp
     public TodoWindow() : base(null)
@@ -126,7 +127,7 @@ ms.locfileid: "90038478"
 
 ### <a name="make-the-options-page-available-to-users"></a>Rendere disponibile la pagina opzioni agli utenti
 
-1. In *TodoWindowPackage.cs*aggiungere un <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> alla `TodoWindowPackage` classe:
+1. In *TodoWindowPackage.cs* aggiungere un <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> alla `TodoWindowPackage` classe:
 
     ```csharp
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]
@@ -240,7 +241,7 @@ ms.locfileid: "90038478"
     }
     ```
 
-6. In *TodoWindowControl.XAML.cs*aggiungere i metodi stub alla `TodoWindowControl` classe per i `CheckForError` metodi e `UpdateList` . Inserirli dopo ProcessDialogChar e prima della fine del file.
+6. In *TodoWindowControl.XAML.cs* aggiungere i metodi stub alla `TodoWindowControl` classe per i `CheckForError` metodi e `UpdateList` . Inserirli dopo ProcessDialogChar e prima della fine del file.
 
     ```csharp
     public void CheckForErrors()
@@ -366,7 +367,7 @@ ms.locfileid: "90038478"
 
 8. Testare il codice. Compilare il progetto e avviare il debug. Verrà visualizzata l'istanza sperimentale.
 
-9. Aprire la **Tools**  >  pagina**Opzioni** strumenti. Nel riquadro sinistro dovrebbe essere visualizzata la categoria ToDo. Le categorie sono elencate in ordine alfabetico, quindi cercare in Servizi terminal.
+9. Aprire la   >  pagina **Opzioni** strumenti. Nel riquadro sinistro dovrebbe essere visualizzata la categoria ToDo. Le categorie sono elencate in ordine alfabetico, quindi cercare in Servizi terminal.
 
 10. Nella pagina Opzioni **todo** dovrebbe essere visualizzata la `DaysAhead` proprietà impostata su **0**. Impostarla su **2**.
 
@@ -375,7 +376,7 @@ ms.locfileid: "90038478"
 12. Nella casella di riepilogo dovrebbe essere visualizzata una data di due giorni dopo la data odierna.
 
 ## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>Aggiungere testo alla finestra di output ed elementi al Elenco attività
- Per il **elenco attività**si crea un nuovo oggetto di tipo Task, quindi si aggiunge tale oggetto attività alla **elenco attività** chiamando il relativo `Add` metodo. Per scrivere nella finestra di **output** , chiamare il relativo `GetPane` metodo per ottenere un oggetto riquadro, quindi chiamare il `OutputString` metodo dell'oggetto riquadro.
+ Per il **elenco attività** si crea un nuovo oggetto di tipo Task, quindi si aggiunge tale oggetto attività alla **elenco attività** chiamando il relativo `Add` metodo. Per scrivere nella finestra di **output** , chiamare il relativo `GetPane` metodo per ottenere un oggetto riquadro, quindi chiamare il `OutputString` metodo dell'oggetto riquadro.
 
 1. In *TodoWindowControl.XAML.cs*, nel `button1_Click` metodo, aggiungere il codice per ottenere il riquadro **generale** della finestra di **output** (impostazione predefinita) e scrivervi. Il metodo dovrebbe essere simile al seguente:
 
@@ -479,17 +480,17 @@ ms.locfileid: "90038478"
     }
     ```
 
-## <a name="try-it-out"></a>Procedura
+## <a name="try-it-out"></a>Provare questa operazione
 
 1. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale.
 
-2. Aprire il **TodoWindow** (**visualizzare**  >  **altre**  >  **TodoWindow**di Windows).
+2. Aprire il **TodoWindow** (**visualizzare**  >  **altre**  >  **TodoWindow** di Windows).
 
 3. Digitare un valore nella casella di testo e quindi fare clic su **Aggiungi**.
 
      Una data di scadenza 2 giorni dopo la data odierna viene aggiunta alla casella di riepilogo. Non viene generato alcun errore e il **elenco attività** (**visualizzazione**  >  **elenco attività**) non deve avere voci.
 
-4. A questo punto, modificare l'impostazione nella pagina di **strumenti**  >  **Opzioni**di  >  **todo** da **2** a **0**.
+4. A questo punto, modificare l'impostazione nella pagina di **strumenti**  >  **Opzioni** di  >  **todo** da **2** a **0**.
 
 5. Digitare un altro elemento nel **TodoWindow** , quindi fare di nuovo clic su **Aggiungi** . Viene attivato un errore e una voce nel **elenco attività**.
 

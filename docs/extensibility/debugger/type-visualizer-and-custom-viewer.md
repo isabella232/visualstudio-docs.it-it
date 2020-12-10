@@ -1,5 +1,7 @@
 ---
 title: Visualizzatore di tipi e visualizzatore personalizzato | Microsoft Docs
+description: Informazioni sui componenti del Visualizzatore di tipi e sui visualizzatori personalizzati, che visualizzano i dati in un formato specifico e le differenze tra di essi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b8def9d28279f601ff488fca457982806629c0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac759dd245da8d803cb943dd6398d9ae642aaf23
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712459"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995941"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Visualizzatore di tipi e visualizzatore personalizzato
 Un visualizzatore di tipi è un componente che visualizza una porzione di dati in un formato specifico. Il formato è interamente fino a chi implementa il visualizzatore, ovvero l'utente finale o un fornitore di visualizzatori di terze parti.

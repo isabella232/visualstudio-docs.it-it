@@ -1,5 +1,7 @@
 ---
 title: Provider di simboli | Microsoft Docs
+description: Informazioni sui provider di simboli forniti da Visual Studio per consentire a un analizzatore di espressioni di valutare variabili ed espressioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31b90846d9494ee046cf9dc4a3e5de9ff033ea3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 043014ebababd990c9cae03f28cb1b642d576071
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712816"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996045"
 ---
 # <a name="symbol-provider"></a>Provider di simboli
 Un'implementazione dell'analizzatore di espressioni deve accedere alle informazioni di debug simboliche generate dal compilatore del linguaggio per valutare variabili ed espressioni. Questa operazione viene eseguita tramite l'utilizzo delle interfacce di un provider di simboli (SP), denominato anche gestore di simboli.

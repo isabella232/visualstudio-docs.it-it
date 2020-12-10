@@ -1,5 +1,7 @@
 ---
 title: Enumeratore del codice di stato della directory | Microsoft Docs
+description: L'enumeratore SccDirStatus contiene valori costanti denominati che specificano lo stato di una directory nel sistema di controllo del codice sorgente e viene usato da SccDirQueryInfo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b5ebf61f2baa6e4277e27cd3c4d18a51e64f835
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af72b9e14695cb954084abebc3a3c336c90af73d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712149"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996123"
 ---
 # <a name="directory-status-code-enumerator"></a>Enumeratore del codice di stato della directory
 L' `SccDirStatus` enumeratore contiene valori costanti denominati che specificano lo stato di una directory nel sistema di controllo del codice sorgente. Questa enumerazione viene utilizzata da [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Questa operazione è stata introdotta nella versione 1,2 dell'API del plug-in del controllo del codice sorgente.
@@ -25,10 +27,10 @@ L' `SccDirStatus` enumeratore contiene valori costanti denominati che specifican
 
 ```
 enum SccDirStatus {
-   SCC_DIRSTATUS_INVALID       = -1L,
-   SCC_DIRSTATUS_NOTCONTROLLED = 0x0000L,
-   SCC_DIRSTATUS_CONTROLLED    = 0x0001L,
-   SCC_DIRSTATUS_EMPTYPROJ     = 0x0002L
+   SCC_DIRSTATUS_INVALID       = -1L,
+   SCC_DIRSTATUS_NOTCONTROLLED = 0x0000L,
+   SCC_DIRSTATUS_CONTROLLED    = 0x0001L,
+   SCC_DIRSTATUS_EMPTYPROJ     = 0x0002L
 };
 ```
 

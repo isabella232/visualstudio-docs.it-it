@@ -1,5 +1,7 @@
 ---
 title: Classe TaskScheduler-membri interni | Microsoft Docs
+description: Informazioni sui membri interni della classe System. Threading. Tasks. TaskScheduler che consentono di implementare un debugger personalizzato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a53abc8b24edb06445c23c19744d00d50de8735d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10528e57137f8605e7f140d4ab8d4a3399029a5f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712573"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996006"
 ---
 # <a name="taskscheduler-class---internal-members"></a>Classe TaskScheduler-membri interni
 Questo articolo descrive i membri interni della <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> classe che consentono di implementare un debugger personalizzato. Per informazioni generali su questa classe, vedere l' <xref:System.Threading.Tasks.TaskScheduler> articolo di riferimento.
@@ -43,7 +45,7 @@ Questo articolo descrive i membri interni della <xref:System.Threading.Tasks.Tas
 |[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Recupera una matrice di tutte le attività pianificate.|
 |[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Recupera una matrice di tutti <xref:System.Threading.Tasks.TaskScheduler> gli oggetti attualmente attivi.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 ## <a name="see-also"></a>Vedere anche
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>

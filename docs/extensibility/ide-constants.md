@@ -1,5 +1,7 @@
 ---
 title: Costanti IDE | Microsoft Docs
+description: La classe VSConstants fornisce costanti specifiche dell'IDE e definite in precedenza solo nei file di intestazione.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc2eddac1cc7d7e616deb197752adf41a4d68d15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28b419981e8fe1224cef5c25e112d58924a8301b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710508"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995564"
 ---
 # <a name="ide-constants"></a>Costanti IDE
 
@@ -29,7 +31,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> classe fornisce costanti specifiche
 
 ## <a name="logical-and-physical-views"></a>Viste logiche e fisiche
 
-|Valore|Descrizione|
+|valore|Descrizione|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>i `cmdidOpenWith` gestori devono passare questo valore al <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodo per ottenere la finestra di dialogo **Apri con** , in questo caso sulle possibili visualizzazioni di codice.|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>i `cmdidOpenWith` gestori passano questo valore al <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodo per ottenere la finestra di dialogo **Apri con** , in questo caso popolata con possibili <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> visualizzazioni di debug che corrispondono alla stessa visualizzazione di <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid> .|
@@ -40,7 +42,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> classe fornisce costanti specifiche
 
 ## <a name="editor-factory-flags"></a>Flag factory dell'editor
 
-|Valore|Descrizione|
+|valore|Descrizione|
 |-----------|-----------------|
 |[CEF. CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|Flag obsoleto combinato bit per bit come primo parametro del <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> metodo.|
 |[CEF. OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|Combinato bit per bit come primo parametro del <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> metodo, che indica che la factory dell'editor deve eseguire le correzioni necessarie.|
@@ -49,7 +51,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> classe fornisce costanti specifiche
 
 ## <a name="visual-studio-errors"></a>Errori di Visual Studio
 
-|Valore|Descrizione|
+|valore|Descrizione|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Costante restituita dalle interfacce al comportamento asincrono quando l'oggetto in questione è già occupato|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Errore HRESULT specifico di Visual Studio per "dati del documento incompatibili".|
@@ -65,7 +67,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> classe fornisce costanti specifiche
 
 ## <a name="visual-studio-constants"></a>Costanti di Visual Studio
 
-|Valore|Descrizione|
+|valore|Descrizione|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Errore HRESULT specifico di Visual Studio che indica "Project inoltred".|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Costante specifica di Visual Studio per un "marcatore della casella degli strumenti".|
@@ -80,7 +82,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> classe fornisce costanti specifiche
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
  Viene descritto il componente dell'IDE appena selezionato, ad esempio, in una <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> chiamata.
 
-|Costante|Valore|
+|Costante|valore|
 |--------------|-----------|
 |[SelectionElement.DocumentFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0x2|
 |[Selectionelement. PropertyBrowserSID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|
@@ -92,7 +94,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> classe fornisce costanti specifiche
 ## <a name="vsselelemid"></a>VSSELELEMID
  Costanti utilizzate per indicare un nuovo stato di selezione.
 
-|Costante|Valore|
+|Costante|valore|
 |--------------|-----------|
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|2|
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|7|
@@ -105,7 +107,7 @@ La <xref:Microsoft.VisualStudio.VSConstants> classe fornisce costanti specifiche
 
 ## <a name="component-selector-dialog-constants"></a>Costanti finestra di dialogo Selettore componenti
 
-|Costante|Valore|
+|Costante|valore|
 |--------------|-----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELCHANGED>|WM_USER + 1280|
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELDBLCLICK>|WM_USER + 1281|

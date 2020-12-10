@@ -1,5 +1,7 @@
 ---
 title: Estensione e personalizzazione delle finestre degli strumenti | Microsoft Docs
+description: Informazioni sull'estensione e la personalizzazione delle finestre degli strumenti fornite da Visual Studio, tra cui il Finestra Proprietà, la finestra di output e la finestra di Elenco attività.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76c094ec73a69baa46a5e8313dd26febd57e5887
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca7f6aa0c029cd3d85ba569aa93d6ae2087afd52
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711813"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995863"
 ---
 # <a name="extend-and-customize-tool-windows"></a>Estendi e Personalizza le finestre degli strumenti
 Visual Studio offre diversi tipi di finestre, ad esempio finestre degli strumenti, finestre dei documenti e finestre di dialogo. Altre finestre, ad esempio la finestra **Proprietà** , la finestra di **output** e la finestra di **elenco attività** , sono tipi di finestre degli strumenti.
 
 ## <a name="tool-windows"></a>Finestre degli strumenti
- Le finestre degli strumenti di Visual Studio sono in genere finestre di sola lettura che non sono basate su file. In questo differiscono dalle finestre dei documenti, che visualizzano file in modalità di lettura/scrittura. La **casella degli strumenti**e le finestre **Esplora soluzioni**, **Proprietà** e **Web browser** sono tutte esempi di finestre degli strumenti.
+ Le finestre degli strumenti di Visual Studio sono in genere finestre di sola lettura che non sono basate su file. In questo differiscono dalle finestre dei documenti, che visualizzano file in modalità di lettura/scrittura. La **casella degli strumenti** e le finestre **Esplora soluzioni**, **Proprietà** e **Web browser** sono tutte esempi di finestre degli strumenti.
 
  Per informazioni su come creare una semplice finestra degli strumenti, vedere [aggiungere una finestra degli strumenti](../extensibility/adding-a-tool-window.md).
 

@@ -1,5 +1,7 @@
 ---
 title: Estensione della barra di stato | Microsoft Docs
+description: Informazioni su come estendere la barra di stato di Visual Studio nella parte inferiore dell'IDE, che visualizza le informazioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa62326d82d81f7ee4d10a838209364355cc488e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddce0cdf62d803dac1a5981442424a45d6550193
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711546"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995694"
 ---
 # <a name="extend-the-status-bar"></a>Estendere la barra di stato
 È possibile usare la barra di stato di Visual Studio nella parte inferiore dell'IDE per visualizzare le informazioni.
@@ -34,7 +36,7 @@ ms.locfileid: "80711546"
 
 1. Creare un progetto VSIX denominato **TestStatusBarExtension** e aggiungere un comando di menu denominato **TestStatusBarCommand**.
 
-2. In *TestStatusBarCommand.cs*sostituire il metodo del gestore comando ( `MenuItemCallback` ) con il codice seguente:
+2. In *TestStatusBarCommand.cs* sostituire il metodo del gestore comando ( `MenuItemCallback` ) con il codice seguente:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -110,7 +112,7 @@ ms.locfileid: "80711546"
 
 ### <a name="display-an-animation"></a>Visualizzare un'animazione
 
-1. La barra di stato Visualizza un'animazione di ciclo che indica un'operazione a esecuzione prolungata, ad esempio la compilazione di più progetti in una soluzione. Se questa animazione non è visualizzata, assicurarsi di avere le **Tools**  >  impostazioni delle**Opzioni** di strumenti corrette:
+1. La barra di stato Visualizza un'animazione di ciclo che indica un'operazione a esecuzione prolungata, ad esempio la compilazione di più progetti in una soluzione. Se questa animazione non è visualizzata, assicurarsi di avere le   >  impostazioni delle **Opzioni** di strumenti corrette:
 
      Passare alla scheda **strumenti**  >  **Opzioni**  >  **generale** e deselezionare **regola automaticamente l'esperienza visiva in base alle prestazioni del client**. Quindi selezionare l'opzione secondaria **Abilita l'esperienza visiva del rich client**. A questo punto dovrebbe essere possibile visualizzare l'animazione quando si compila il progetto nell'istanza sperimentale di Visual Studio.
 

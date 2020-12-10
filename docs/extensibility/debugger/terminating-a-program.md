@@ -1,5 +1,7 @@
 ---
 title: Terminazione di un programma | Microsoft Docs
+description: Questo articolo descrive come l'IDE usa il motore di debug per terminare un singolo programma con un singolo thread.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 985b20fe75f8ceee3d434ac681b437c51baf85e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b2b883611d5479f0febc169b32f7f378230be4c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712518"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995980"
 ---
 # <a name="terminating-a-program"></a>Terminazione di un programma
 Nella sezione seguente viene descritta la chiusura di un singolo programma con un solo thread.

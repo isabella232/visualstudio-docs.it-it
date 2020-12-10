@@ -1,5 +1,7 @@
 ---
 title: Elemento include | Microsoft Docs
+description: L'elemento include specifica un file che può trovarsi nel percorso di inclusione fornito per l'inserimento nel file corrente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ea89185d28be2816a690d867dbb3eccbb739e04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71da1241863e41529af33bdd5e45dcf0a8bfbdb1
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710355"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996344"
 ---
 # <a name="include-element"></a>Elemento include
 L'elemento include specifica un file che può trovarsi nel percorso di inclusione fornito per l'inserimento nel file corrente.  Tutti i simboli e i tipi definiti diventeranno parte del risultato compilato.
@@ -43,7 +45,7 @@ L'elemento include specifica un file che può trovarsi nel percorso di inclusion
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|Nessuno.|Nessuno.|
+|No.|No.|
 
 ### <a name="parent-elements"></a>Elementi padre
 

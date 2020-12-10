@@ -1,5 +1,7 @@
 ---
 title: Esercitazione sull'estensione Hello World | Microsoft Docs
+description: Informazioni su come aggiungere un nuovo comando come estensione a Visual Studio, che prevede la creazione di un progetto, l'aggiunta di un comando e la modifica del codice sorgente.
+ms.custom: SEO-VS-2020
 ms.date: 03/14/2019
 ms.topic: tutorial
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 796cb53ea5124662c695cce55241794802f042c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ba4d6cbca8d55cdaceb04a1a773fde376a8670a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905938"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995720"
 ---
 # <a name="tutorial---create-your-first-extension-hello-world"></a>Esercitazione: creare la prima estensione: Hello World
 
@@ -46,7 +48,7 @@ Prima di iniziare, verificare di aver installato il carico di lavoro **sviluppo 
 
 Passaggio 1. Scegliere **Nuovo** > **Progetto** dal menu **File**.
 
-Passaggio 2: Nella casella di ricerca in alto a destra digitare "VSIX" e selezionare il **progetto VSIX**di Visual C#. Immettere "HelloWorld" per il **nome** nella parte inferiore della finestra di dialogo e selezionare **OK**.
+Passaggio 2. Nella casella di ricerca in alto a destra digitare "VSIX" e selezionare il **progetto VSIX** di Visual C#. Immettere "HelloWorld" per il **nome** nella parte inferiore della finestra di dialogo e selezionare **OK**.
 
 ![nuovo progetto](media/hello-world-new-project.png)
 
@@ -60,7 +62,7 @@ Se è necessario uscire da questa esercitazione e tornare a questa esercitazione
 
 Passaggio 1. Scegliere **Nuovo** > **Progetto** dal menu **File**. Cercare "VSIX" e selezionare il **progetto VSIX** di Visual C# e quindi **Avanti**.
 
-Passaggio 2: Immettere "HelloWorld" per il **nome del progetto** e selezionare **Crea**.
+Passaggio 2. Immettere "HelloWorld" per il **nome del progetto** e selezionare **Crea**.
 
 ![nuovo progetto](media/hello-world-new-project-2019.png)
 
@@ -72,7 +74,7 @@ A questo punto verrà visualizzato il progetto HelloWorld in **Esplora soluzioni
 
 Passaggio 1. Se si seleziona il file manifesto *. vsixmanifest* , è possibile visualizzare le opzioni modificabili, ad esempio descrizione, autore e versione.
 
-Passaggio 2: Fare clic con il pulsante destro del mouse sul progetto (non sulla soluzione). Nel menu di scelta rapida selezionare **Aggiungi**, quindi **nuovo elemento**.
+Passaggio 2. Fare clic con il pulsante destro del mouse sul progetto (non sulla soluzione). Nel menu di scelta rapida selezionare **Aggiungi**, quindi **nuovo elemento**.
 
 Passaggio 3. Selezionare la sezione **Extensibility** , quindi scegliere **comando**.
 
@@ -92,7 +94,7 @@ A questo punto, il testo del comando e del pulsante viene generato automaticamen
 
 ::: moniker range="vs-2017"
 
-Passaggio 1. In **Esplora soluzioni**trovare il file vsct per il nuovo comando. In questo caso, verrà chiamato *CommandPackage. vsct*.
+Passaggio 1. In **Esplora soluzioni** trovare il file vsct per il nuovo comando. In questo caso, verrà chiamato *CommandPackage. vsct*.
 
 ![vsct pacchetto di comandi](media/hello-world-command-package-vsct.png)
 
@@ -100,11 +102,11 @@ Passaggio 1. In **Esplora soluzioni**trovare il file vsct per il nuovo comando. 
 
 ::: moniker range=">=vs-2019"
 
-Passaggio 1. In **Esplora soluzioni**trovare il file vsct per il pacchetto di Visual Studio di estensione. In questo caso, verrà chiamato *HelloWorldPackage. vsct*.
+Passaggio 1. In **Esplora soluzioni** trovare il file vsct per il pacchetto di Visual Studio di estensione. In questo caso, verrà chiamato *HelloWorldPackage. vsct*.
 
 ::: moniker-end
 
-Passaggio 2: Modificare il `ButtonText` parametro in `Say Hello World!` .
+Passaggio 2. Modificare il `ButtonText` parametro in `Say Hello World!` .
 
 ```xml
   ...
@@ -156,7 +158,7 @@ Nella barra del titolo di Visual Studio vengono visualizzate le parole **istanza
 
 ::: moniker-end
 
-Passaggio 2: Nel menu **strumenti** dell' **istanza sperimentale**fare clic su **Say Hello World!**.
+Passaggio 2. Nel menu **strumenti** dell' **istanza sperimentale** fare clic su **Say Hello World!**.
 
 ![risultato finale](media/hello-world-final-result.png)
 

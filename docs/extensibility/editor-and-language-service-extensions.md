@@ -1,5 +1,7 @@
 ---
 title: Editor e estensioni del servizio di linguaggio | Microsoft Docs
+description: È possibile estendere la maggior parte delle funzionalità dell'editor di codice di Visual Studio, implementato usando Windows Presentation Foundation ed è scritto in codice gestito.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78d85cd3651f8769104a61586bea1468e1c21cd2
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 2b15d5f970bfc6a32489991b578a54f2eadc96ea
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414074"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995824"
 ---
 # <a name="editor-and-language-service-extensions"></a>Editor e estensioni del servizio di linguaggio
 È possibile estendere la maggior parte delle funzionalità dell'editor di codice di Visual Studio. L'editor è basato sul Windows Presentation Foundation (WPF) ed è scritto in codice gestito. Sebbene questa progettazione sia diversa da quella delle versioni precedenti di Visual Studio, fornisce la maggior parte delle stesse funzionalità. Per estendere l'editor, utilizzare il Managed Extensibility Framework (MEF).

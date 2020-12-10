@@ -1,5 +1,7 @@
 ---
 title: Tipi di evento supportati | Microsoft Docs
+description: Informazioni sui tipi di evento supportati dal debug di Visual Studio, inclusi gli eventi asincroni, gli eventi sincroni e gli eventi di arresto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94e26897c50fd7e10a8b831655610848cb93043f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 215256cbbcff45dfa0b85a480f0900e6f8ddfa71
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712806"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996032"
 ---
 # <a name="supported-event-types"></a>Tipi di evento supportati
 Il debug di Visual Studio supporta attualmente i tipi di evento seguenti:
@@ -53,7 +55,7 @@ Il debug di Visual Studio supporta attualmente i tipi di evento seguenti:
 > [!NOTE]
 > L'interfaccia [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) è obbligatoria per tutti gli eventi.
 
-|Event|IDebugProgram2|IDebugThread2|Arresto di eventi|
+|Evento|IDebugProgram2|IDebugThread2|Arresto di eventi|
 |-----------|--------------------|-------------------|---------------------|
 |[IDebugActivateDocumentEvent2](../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|Consentito, ma non obbligatorio|Consentito, ma non obbligatorio|No|
 |[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)|Obbligatoria|Obbligatoria|Sì|
