@@ -1,5 +1,7 @@
 ---
 title: "Procedura dettagliata: oggetti mancanti a causa dell'ombreggiatura del vertex | Microsoft Docs"
+description: Eseguire un'indagine che trova un errore del vertex shader. Mostra l'elenco di eventi di grafica, le fasi della pipeline grafica, il debugger HLSL e lo stack di chiamate eventi di grafica.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc3bd288044c9fea1da648b64cabc87148b8463a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7e4c01a990ce4d3fff6769ba016c168b190687f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90840087"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994998"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex
 Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica della grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per esaminare un problema dovuto a un oggetto mancante a causa di un errore che si verifica durante la fase Vertex shader.
@@ -35,14 +37,14 @@ Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica de
 
  ![Oggetto non visibile.](media/gfx_diag_demo_missing_object_shader_problem.png "gfx_diag_demo_missing_object_shader_problem")
 
-## <a name="investigation"></a>Analisi
+## <a name="investigation"></a>Ricerca della causa
  Usando gli strumenti di Diagnostica della grafica è possibile caricare il file di log di grafica per esaminare i frame acquisiti durante il test.
 
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Per esaminare un frame in un log di grafica
 
 1. In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]caricare un log di grafica contenente un frame che mostra l'oggetto mancante. In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]viene visualizzata una nuova scheda del log di grafica. Nella parte superiore di questa scheda è presente l'output della destinazione di rendering del frame selezionato. Nella parte inferiore è presente **Elenco frame**, che visualizza ogni frame acquisito come immagine di anteprima.
 
-2. In **Elenco frame**selezionare un frame indicante che l'oggetto non è visualizzato. La destinazione di rendering viene aggiornata per riflettere la selezione del frame. In questo scenario la scheda del log di grafica ha un aspetto simile al seguente:
+2. In **Elenco frame** selezionare un frame indicante che l'oggetto non è visualizzato. La destinazione di rendering viene aggiornata per riflettere la selezione del frame. In questo scenario la scheda del log di grafica ha un aspetto simile al seguente:
 
     ![Log grafico in Visual Studio](media/gfx_diag_demo_missing_object_shader_step_1.png "gfx_diag_demo_missing_object_shader_step_1")
 

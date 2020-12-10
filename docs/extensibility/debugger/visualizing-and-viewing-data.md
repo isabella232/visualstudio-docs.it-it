@@ -1,5 +1,7 @@
 ---
 title: Visualizzazione e visualizzazione dei dati | Microsoft Docs
+description: Informazioni su come i visualizzatori di tipi e i visualizzatori personalizzati presentano dati a uno sviluppatore. L'analizzatore di espressioni supporta i visualizzatori di tipi di terze parti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b5f984e6c6a3c1c8f3835dfa93a8679ae16680a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 856788546e10e69a8bb7e2787558505937f9effd
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712368"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995460"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualizzazione e visualizzazione dei dati
 I visualizzatori di tipi e i visualizzatori personalizzati presentano dati in modo rapido e significativo per uno sviluppatore. L'analizzatore di espressioni (EE) può supportare i visualizzatori di tipi di terze parti e fornire i propri visualizzatori personalizzati.

@@ -1,5 +1,7 @@
 ---
 title: Variante di generazione di mappe MIP | Microsoft Docs
+description: Se la generazione di mappe MIP Mostra un notevole miglioramento delle prestazioni, significa che si stanno usando trame senza abilitare le mappe MIP e non si ottiene il massimo dalla cache della trama.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 422a68f4e33733aa2874c639f0dcc799cd3ec795
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d939fb537ac6aed75d9b0f7bda2970a85f9175ad
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72734894"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994967"
 ---
 # <a name="mip-map-generation-variant"></a>Variante di generazione di mappe MIP
 Abilita le mappe MIP nelle trame che non corrispondono a destinazioni di rendering.
@@ -25,7 +27,7 @@ Per le scene 3D, è consigliabile usare le mappe MIP quando è disponibile memor
 
 Se questa variante mostra un aumento delle prestazioni significativo, indica che si stanno usando trame senza abilitare le mappe MIP e pertanto senza sfruttare al massimo la cache delle trame.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 La generazione di mappe MIP viene forzata a ogni chiamata a `ID3D11Device::CreateTexture2D` che crea una trama di origine. In particolare, la generazione di mappe MIP viene forzata quando l'oggetto D3D11_TEXTURE2D_DESC passato in `pDesc` descrive una risorsa shader che non cambia, ovvero:
 
 - Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.

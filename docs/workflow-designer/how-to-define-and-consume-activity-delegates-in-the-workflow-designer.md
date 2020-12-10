@@ -1,6 +1,6 @@
 ---
-title: 'Progettazione flussi di lavoro: definire e utilizzare delegati di attività'
-description: Informazioni su come .NET Framework 4,5 include una finestra di progettazione predefinita per l'attività InvokeDelegate che è possibile utilizzare per definire e utilizzare delegati di attività.
+title: Definire e usare delegati di attività
+description: In Progettazione flussi di lavoro, informazioni su come .NET Framework 4,5 include una finestra di progettazione predefinita per l'attività InvokeDelegate che è possibile utilizzare per definire e utilizzare delegati di attività.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: c59c828f380e47a06f8feb7b72788e76ad7ee08f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 48cab69de11ce006792e0fda72245048c6897acf
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437918"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993276"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procedura: definire e utilizzare delegati di attività in Progettazione del flusso di lavoro
 

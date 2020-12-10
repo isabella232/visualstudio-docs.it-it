@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: acquisizione di informazioni grafiche | Microsoft Docs'
+description: Vedere come usare Visual Studio Diagnostica della grafica per acquisire manualmente informazioni grafiche da un'app Direct3D.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aab86d42cd158ad64ebb16497b8d2d9f5a7002df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3acd9df9dbb5a430171ae7a283bbf4292e07e26a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72734731"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994979"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Procedura dettagliata: Acquisizione di informazioni grafiche
 Questa procedura dettagliata dimostra come usare Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per acquisire manualmente informazioni grafiche da un'app Direct3D.
@@ -31,7 +33,7 @@ Questa procedura dettagliata dimostra come usare Diagnostica grafica di [!INCLUD
 
 1. In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]caricare un file di progetto o di soluzione per l'app dalla quale si vogliono acquisire informazioni grafiche.
 
-2. Scegliere **Avvia diagnostica**sulla barra degli strumenti Diagnostica grafica.
+2. Scegliere **Avvia diagnostica** sulla barra degli strumenti Diagnostica grafica.
 
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>Per abilitare l'acquisizione di informazioni grafiche senza caricare un progetto o una soluzione
 

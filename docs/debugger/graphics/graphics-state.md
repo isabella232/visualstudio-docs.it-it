@@ -1,5 +1,7 @@
 ---
 title: Stato grafica | Microsoft Docs
+description: Risolvere i problemi di rendering visualizzando lo stato di grafica per ogni chiamata di progetto. Vengono evidenziate le parti dello stato modificate dalla chiamata precedente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a07e198c6ff4e432f708ac1751e69bbef77a22c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de8f3c356cfe05aade3e4f2197b3f7429967a259
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67823768"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994013"
 ---
 # <a name="graphics-state"></a>Stato grafica
 La finestra Stato in Diagnostica grafica di Visual Studio consente di comprendere lo stato di grafica attivo al momento dell'evento corrente, ad esempio una chiamata di disegno.
@@ -51,7 +53,7 @@ La finestra Stato in Diagnostica grafica di Visual Studio consente di comprender
 |Colonna|Descrizione|
 |------------|-----------------|
 |Nome|Nome dell'elemento di stato. Se questo elemento rappresenta un'aggregazione di stati, può essere espanso per visualizzarlo.<br /><br /> In **Visualizzazione stato di input API** e **Visualizzazione stato logico**, i nomi sono rientrati per mostrare la relazione gerarchica tra gli stati.<br /><br /> In **Visualizzazione stato bloccato** vengono visualizzati i nomi completi in un elenco semplice.|
-|Valore|Valore dell'elemento di stato.|
+|valore|Valore dell'elemento di stato.|
 |Type|Tipo dell'elemento di stato.|
 
 ### <a name="changed-state"></a>Stato modificato

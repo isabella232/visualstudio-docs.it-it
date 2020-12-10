@@ -1,5 +1,7 @@
 ---
 title: Estensione delle impostazioni e delle opzioni utente | Microsoft Docs
+description: Informazioni su come estendere le impostazioni utente e le opzioni in Visual Studio SDK usando le risorse in questo articolo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 854928c5461d60bb39b75d2895d8d1c8d0a0e8c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: adcefcfc18e64f9a7e082d0398b6609ba1877d28
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711561"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994576"
 ---
 # <a name="extend-user-settings-and-options"></a>Estendi impostazioni utente e opzioni
-In Visual Studio sono disponibili due modalità principali per gestire le preferenze dell'utente. Le **Tools**  >  pagine**Opzioni** degli strumenti consentono agli utenti di impostare valori propri per molti tipi diversi di impostazioni, sia generali che specifiche del linguaggio. Le impostazioni utente consentono agli utenti di specificare le proprietà di configurazione generali di Visual Studio. Per ulteriori informazioni sulle pagine opzioni, vedere [Opzioni e pagine](../extensibility/internals/options-and-options-pages.md)opzioni. Per ulteriori informazioni sulle impostazioni utente, vedere [supporto per le impostazioni utente](../extensibility/internals/support-for-user-settings.md).
+In Visual Studio sono disponibili due modalità principali per gestire le preferenze dell'utente. Le   >  pagine **Opzioni** degli strumenti consentono agli utenti di impostare valori propri per molti tipi diversi di impostazioni, sia generali che specifiche del linguaggio. Le impostazioni utente consentono agli utenti di specificare le proprietà di configurazione generali di Visual Studio. Per ulteriori informazioni sulle pagine opzioni, vedere [Opzioni e pagine](../extensibility/internals/options-and-options-pages.md)opzioni. Per ulteriori informazioni sulle impostazioni utente, vedere [supporto per le impostazioni utente](../extensibility/internals/support-for-user-settings.md).
 
 - [Creare una pagina di opzioni](../extensibility/creating-an-options-page.md) Viene illustrato come creare una pagina di opzioni.
 

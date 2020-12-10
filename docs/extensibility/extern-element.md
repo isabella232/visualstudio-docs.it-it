@@ -1,5 +1,7 @@
 ---
 title: Elemento extern | Microsoft Docs
+description: L'elemento extern fa riferimento a qualsiasi file di intestazione esterna (. h) da unire con il file vsct in fase di compilazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cf6f9db77abaa7034af8d074b9833a4c1560f07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e975c3f721d65b64fc7994824406b0c9af13022
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711494"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994524"
 ---
 # <a name="extern-element"></a>Extern (elemento)
 L'elemento extern fa riferimento a qualsiasi file di intestazione esterna (*. h*) da unire con il file *vsct* in fase di compilazione. I file da unire devono trovarsi nel percorso di inclusione assegnato al compilatore VSCT o a cui fa riferimento un [elemento include](../extensibility/include-element.md). I file possono essere altri file con *estensione vsct* o file di intestazione C++.
@@ -48,7 +50,7 @@ L'elemento extern fa riferimento a qualsiasi file di intestazione esterna (*. h*
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|Nessuno.|Nessuno.|
+|No.|No.|
 
 ### <a name="parent-elements"></a>Elementi padre
 

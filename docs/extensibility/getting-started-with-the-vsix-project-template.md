@@ -1,5 +1,7 @@
 ---
 title: Introduzione con il modello di progetto VSIX | Microsoft Docs
+description: Informazioni su come usare il modello di progetto VSIX per creare un'estensione o per comprimere un'estensione esistente per la distribuzione.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18ca9672b22120718f63638d8668812d0e42e41f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6c7c2e12f01b008be6937a8c974f2eea183d594
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905876"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994342"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>Introduzione al modello di progetto VSIX
 
@@ -33,7 +35,7 @@ ms.locfileid: "85905876"
 
     1. Aprire il progetto da cui creare un modello. Questo progetto può essere di qualsiasi tipo di progetto.
 
-    2. Nel menu **Progetto** scegliere**Esporta modello**. Completare i passaggi della procedura guidata.
+    2. Nel menu **Progetto** scegliere **Esporta modello**. Completare i passaggi della procedura guidata.
 
          Viene creato un file con *estensione zip* nei *modelli \\ esportati%UserProfile%\My Documenti\Visual Studio {Version} \My*.
 
@@ -43,7 +45,7 @@ ms.locfileid: "85905876"
 
 3. Aggiungere il file *zip* al progetto. Impostare la proprietà **copia nella directory di output** su `Copy Always` .
 
-4. In **Esplora soluzioni**fare doppio clic sul file *source. Extension. vsixmanifest* per aprirlo nella finestra di **progettazione del manifesto VSIX**, quindi apportare le modifiche seguenti:
+4. In **Esplora soluzioni** fare doppio clic sul file *source. Extension. vsixmanifest* per aprirlo nella finestra di **progettazione del manifesto VSIX**, quindi apportare le modifiche seguenti:
 
     - Impostare il campo **Product Name** sul **modello di progetto**.
 

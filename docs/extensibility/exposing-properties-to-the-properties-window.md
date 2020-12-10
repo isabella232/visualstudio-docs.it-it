@@ -1,5 +1,7 @@
 ---
 title: Esposizione delle proprietà alla finestra Proprietà | Microsoft Docs
+description: Informazioni sulle proprietà pubbliche di un oggetto. Le modifiche apportate a queste proprietà vengono riflesse nella Finestra Proprietà.
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f84962628ae550676e2c2eeb10c0f3baeca1bb58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f2668f8410b6e5f18b23c82202c1d33f8c67b4d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711833"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994693"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Esporre le proprietà al Finestra Proprietà
 
@@ -35,7 +37,7 @@ In questa sezione si crea una finestra degli strumenti personalizzata e si visua
 
 1. Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX, che conterrà gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `MyObjectPropertiesExtension` . È possibile trovare il modello di progetto VSIX nella finestra di dialogo **nuovo progetto** cercando "VSIX".
 
-2. Aggiungere una finestra degli strumenti aggiungendo un modello di elemento della finestra degli strumenti personalizzato denominato `MyToolWindow` . Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella finestra di **dialogo Aggiungi nuovo elemento**passare a **Visual C# elementi**  >  **estensibilità** e selezionare **finestra degli strumenti personalizzata**. Nel campo **nome** nella parte inferiore della finestra di dialogo modificare il nome del file in *MyToolWindow.cs*. Per ulteriori informazioni sulla creazione di una finestra degli strumenti personalizzata, vedere [creare un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).
+2. Aggiungere una finestra degli strumenti aggiungendo un modello di elemento della finestra degli strumenti personalizzato denominato `MyToolWindow` . Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella finestra di **dialogo Aggiungi nuovo elemento** passare a **Visual C# elementi**  >  **estensibilità** e selezionare **finestra degli strumenti personalizzata**. Nel campo **nome** nella parte inferiore della finestra di dialogo modificare il nome del file in *MyToolWindow.cs*. Per ulteriori informazioni sulla creazione di una finestra degli strumenti personalizzata, vedere [creare un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 3. Aprire *MyToolWindow.cs* e aggiungere l'istruzione using seguente:
 
@@ -110,15 +112,15 @@ In questa sezione si aggiunge una finestra degli strumenti ed espongono le relat
 
 ### <a name="to-expose-tool-window-properties"></a>Per esporre le proprietà della finestra degli strumenti
 
-1. Aprire *MyToolWindow.cs*e aggiungere la proprietà booleana public sottoverificata alla `MyToolWindow` classe.
+1. Aprire *MyToolWindow.cs* e aggiungere la proprietà booleana public sottoverificata alla `MyToolWindow` classe.
 
     ```csharp
     [Category("My Properties")]
     [Description("MyToolWindowControl properties")]
-    public bool IsChecked
+    public bool IsChecked
     {
         get {
-            if (base.Content == null)  return false;
+            if (base.Content == null)  return false;
             return (bool)(( MyToolWindowControl) base.Content).checkBox.IsChecked;
         }
         set {
@@ -143,7 +145,7 @@ In questa sezione si aggiunge una finestra degli strumenti ed espongono le relat
 
      Ciò consente `MyToolWindowControl` di accedere al `MyToolWindow` riquadro.
 
-3. In *MyToolWindow.cs*modificare il `MyToolWindow` costruttore come segue:
+3. In *MyToolWindow.cs* modificare il `MyToolWindow` costruttore come segue:
 
     ```csharp
     base.Content = new MyToolWindowControl(this);
@@ -190,14 +192,14 @@ In questa sezione si aggiunge una finestra degli strumenti ed espongono le relat
 1. Aprire *MyToolWindow.cs* e aggiungere una classe pubblica denominata `Simple` .
 
     ```csharp
-    public class Simple
+    public class Simple
     {
-        private string someText = "";
+        private string someText = "";
 
         [Category("My Properties")]
         [Description("Simple Properties")]
         [DisplayName("My Text")]
-        public string SomeText
+        public string SomeText
         {
             get { return someText; }
             set { someText = value; }
@@ -240,7 +242,7 @@ In questa sezione si aggiunge una finestra degli strumenti ed espongono le relat
     }
     ```
 
-3. In *MyToolWindowControl.cs*sostituire i gestori della casella di controllo con queste righe di codice:
+3. In *MyToolWindowControl.cs* sostituire i gestori della casella di controllo con queste righe di codice:
 
     ```csharp
     private void checkbox_Checked(object sender, RoutedEventArgs e)

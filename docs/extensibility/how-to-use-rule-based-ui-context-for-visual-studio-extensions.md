@@ -1,6 +1,7 @@
 ---
 title: Usare il contesto dell'interfaccia utente basato su regole per le estensioni di Visual Studio
 titleSuffix: ''
+description: Informazioni su come usare i contesti di interfaccia utente basati su regole, che consente agli autori di estensioni di definire le condizioni quando viene attivato un contesto dell'interfaccia utente e vengono caricati i pacchetti VSPackage.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc24fe3f5b27b3c92f0629ed378c1a97c820cd0a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 41b804d3f7697890773b4b6888bcffa108b7a11b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037107"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993458"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Procedura: usare il contesto dell'interfaccia utente basato su regole per le estensioni di Visual Studio
 
@@ -82,7 +83,7 @@ Il contesto dell'interfaccia utente basato su regole può essere usato in divers
    <GuidSymbol name="UIContextGuid" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
-    A questo punto, i comandi del menu di scelta rapida per i file con * \* estensione config* saranno visibili solo quando l'elemento selezionato in Esplora soluzioni è un file *. config* e il pacchetto non verrà caricato fino a quando non viene selezionato uno di questi comandi.
+    A questo punto, i comandi del menu di scelta rapida per i file con *\* estensione config* saranno visibili solo quando l'elemento selezionato in Esplora soluzioni è un file *. config* e il pacchetto non verrà caricato fino a quando non viene selezionato uno di questi comandi.
 
    Usare quindi un debugger per verificare che il pacchetto venga caricato solo quando previsto. Per eseguire il debug di TestPackage:
 

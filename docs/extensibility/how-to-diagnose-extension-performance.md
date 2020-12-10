@@ -1,5 +1,7 @@
 ---
 title: "Procedura: diagnosticare le prestazioni dell'estensione | Microsoft Docs"
+description: Visual Studio notifica agli utenti le estensioni lente. Informazioni sul modo in cui viene calcolato l'effetto sulle estensioni e sul modo in cui è possibile analizzare l'effetto dell'estensione localmente
+ms.custom: SEO-VS-2020
 ms.date: 11/08/2016
 ms.topic: how-to
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
@@ -8,12 +10,12 @@ ms.author: bertaygu
 manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 542d8a6d6d90091aa7a800ef18f847fea6b1a81c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03721f2aedd231dd9d4c4edaadf5eeb3a89389c2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905907"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994199"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Misurazione dell'effetto dell'estensione all'avvio
 

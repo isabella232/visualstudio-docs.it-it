@@ -1,5 +1,7 @@
 ---
 title: Elemento GuidSymbol | Microsoft Docs
+description: "L'elemento GuidSymbol contiene il GUID della coppia GUID: ID che rappresenta un menu, un gruppo o un comando."
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59068a9ac9f952b5370681b3684ce4234354afc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98fd802021f29365b6f338610754214352a996d7
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711124"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994238"
 ---
 # <a name="guidsymbol-element"></a>Elemento GuidSymbol
 L' `GuidSymbol` elemento contiene il GUID della coppia GUID: ID che rappresenta un menu, un gruppo o un comando. L'ID deriva da un `IDSymbol` elemento nell' `GuidSymbol` elemento. L' `GuidSymbol` elemento dispone di un `name` attributo che fornisce un nome descrittivo per il GUID, contenuto nell' `value` attributo.
@@ -52,7 +54,7 @@ L' `GuidSymbol` elemento contiene il GUID della coppia GUID: ID che rappresenta 
 |-------------|-----------------|
 |[Symbols-elemento](../extensibility/symbols-element.md)|Raggruppa `GuidSymbol` gli elementi in un file con *estensione vsct* .|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  In genere, un file *. vsct* contiene tre `GuidSymbol` elementi nella relativa `Symbols` sezione, uno per il pacchetto stesso, uno per il set di comandi (la raccolta di menu, gruppi e comandi resi disponibili dal pacchetto) e uno per le bitmap che forniscono icone per i pulsanti e altri componenti visivi. Ogni `IDSymbol` elemento in un dato `GuidSymbol` elemento deve avere un univoco `value` . Tuttavia, `IDSymbol` gli elementi con valori identici possono esistere in un pacchetto purché abbiano elementi padre diversi.
 
 ## <a name="see-also"></a>Vedere anche

@@ -1,5 +1,5 @@
 ---
-title: 'Progettazione flussi di lavoro-procedura: impostare punti di interruzione nei flussi di lavoro'
+title: Impostare punti di interruzione in flussi di lavoro
 description: Informazioni su come usare la Progettazione flussi di lavoro per impostare i punti di interruzione nei flussi di lavoro grafici come nel codice Visual Basic o C#.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,18 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2a8900d9df2679c6eb353336d8e7d96dd5ce365
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 88516a4160c5236a5a4ef9f01d7f15620aee5cc3
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437879"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993302"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Procedura: impostare punti di interruzione nei flussi di lavoro
 
 Quando si usa Progettazione flussi di lavoro, è possibile impostare punti di interruzione nei flussi di lavoro grafici come per il codice Visual Basic o C#. Come previsto, l'esecuzione del flusso di lavoro viene arrestata a ogni punto di interruzione impostato.
 
-Un punto di interruzione ha tre stati: *Pending* , *Bound* ed *Error*. Quando viene impostato, un punto di interruzione si trova nello stato In sospeso e viene rappresentato da un'icona rossa. Quando il runtime carica il tipo di flusso di lavoro, lo stato passa ad Associato. Se si specifica un formato non corretto per il punto di interruzione, ad esempio un nome di attività non valido, viene visualizzata una finestra di errore. Il punto di interruzione risulta ancora aggiunto alla finestra del punto di interruzione, ma è contrassegnato con una piccola “x”.
+Un punto di interruzione ha tre stati: *Pending*, *Bound* ed *Error*. Quando viene impostato, un punto di interruzione si trova nello stato In sospeso e viene rappresentato da un'icona rossa. Quando il runtime carica il tipo di flusso di lavoro, lo stato passa ad Associato. Se si specifica un formato non corretto per il punto di interruzione, ad esempio un nome di attività non valido, viene visualizzata una finestra di errore. Il punto di interruzione risulta ancora aggiunto alla finestra del punto di interruzione, ma è contrassegnato con una piccola “x”.
 
 > [!NOTE]
 > L'impostazione dei punti di interruzione sui flussi di lavoro richiamati non è supportata.

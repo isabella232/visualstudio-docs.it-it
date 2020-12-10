@@ -1,5 +1,7 @@
 ---
-title: Variante delle dimensioni della trama a metà trimestre | Microsoft Docs
+title: Variante delle dimensioni della trama Half-Quarter | Microsoft Docs
+description: Se le trame più piccole mostrano un notevole miglioramento delle prestazioni, l'utilizzo della larghezza di banda della memoria o l'utilizzo inefficiente della cache della trama GPU. Provare a ridurre le dimensioni della trama.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4c82836f5a80fae421a30721d8c3ee4c3d6893d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd3cc5d5517818934a20c9064e718cf65f9d3a65
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735386"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995148"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante delle dimensioni della trama ridotte a metà o un quarto
 Riduce le dimensioni della trama per trame che non sono destinazioni di rendering.
@@ -27,7 +29,7 @@ Riduce le dimensioni della trama per trame che non sono destinazioni di renderin
 
  Se le trame occupano più memoria di quella disponibile, considerarne la riduzione delle dimensioni, ma solo dopo avere previsto la compressione delle trame appropriate. Come accade per le trame più piccole, le trame compresse occupano meno memoria e riducono la necessità di paging nella memoria di sistema, tuttavia la fedeltà dei colori risulterà ridotta. A seconda del contenuto delle trame, la compressione può non sempre rappresentare la soluzione appropriata, ad esempio nel caso di trame con variazioni di colore significative. Per molte trame, tuttavia, la compressione può permettere di conservare una migliore qualità complessiva dell'immagine rispetto alla loro riduzione.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Le dimensioni della trama vengono ridotte a ogni chiamata a `ID3D11Device::CreateTexture2D` che crea una trama di origine. In particolare, le dimensioni della trama vengono ridotte quando l'oggetto D3D11_TEXTURE2D_DESC passato in `pDesc` descrive una trama che viene usata nel rendering, ovvero:
 
 - Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.

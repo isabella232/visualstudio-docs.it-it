@@ -1,5 +1,7 @@
 ---
 title: Distribuzione di pagine iniziali personalizzate | Microsoft Docs
+description: Informazioni su come distribuire pagine iniziali personalizzate usando la distribuzione VSIX o copiando i file nei percorsi corretti nel computer di destinazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 210b4589c0e2165af537c3fa9129affb06197e9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76c2fc23a2b76b48152a4d3d44d687f165abf106
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712235"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993887"
 ---
 # <a name="deploy-custom-start-pages"></a>Distribuire pagine iniziali personalizzate
 
@@ -46,7 +48,7 @@ Il modello di progetto di pagina iniziale crea una copia della pagina iniziale p
 
    1. Creare il file con *estensione vsixmanifest* e il file *[Content_Types]. XML* in una nuova cartella. Per altre informazioni, vedere [anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
-   2. In Esplora risorse fare clic con il pulsante destro del mouse sulla cartella che contiene i due file XML, scegliere **Invia a**e quindi fare clic su cartella compressa. Rinominare il file *zip* risultante in *nomefile. vsix*, dove nomefile è il nome del file ridistribuibile che installa il pacchetto.
+   2. In Esplora risorse fare clic con il pulsante destro del mouse sulla cartella che contiene i due file XML, scegliere **Invia a** e quindi fare clic su cartella compressa. Rinominare il file *zip* risultante in *nomefile. vsix*, dove nomefile è il nome del file ridistribuibile che installa il pacchetto.
 
 Affinché Visual Studio riconosca una pagina iniziale, il `Content Element` del manifesto VSIX deve contenere un oggetto `CustomExtension Element` il cui `Type` attributo è impostato su `"StartPage"` . Un'estensione della pagina iniziale che è stata installata tramite la distribuzione VSIX viene visualizzata nell'elenco **Personalizza pagina iniziale** della pagina Opzioni di **avvio** come *Nome estensione* **[estensione installata]** .
 
@@ -58,9 +60,9 @@ Se il pacchetto della pagina iniziale include gli assembly, è necessario aggiun
 ```
 
 ### <a name="vsix-deployment-for-all-users"></a>Distribuzione VSIX per tutti gli utenti
- Per impostazione predefinita, le estensioni distribuite nei pacchetti VSIX vengono installate solo per l'utente corrente. È possibile eseguire un'installazione della pagina iniziale per tutti gli utenti del computer di destinazione creando una distribuzione per tutti gli utenti.
+ Per impostazione predefinita, le estensioni distribuite nei pacchetti VSIX vengono installate solo per l'utente corrente. È possibile eseguire un'installazione della pagina iniziale per tutti gli utenti del computer di destinazione creando una distribuzione All-Users.
 
-### <a name="to-create-an-all-users-deployment"></a>Per creare una distribuzione per tutti gli utenti
+### <a name="to-create-an-all-users-deployment"></a>Per creare una distribuzione All-Users
 
 1. Aprire il file *Extension. vsixmanifest* nella visualizzazione codice.
 
@@ -83,7 +85,7 @@ Se il pacchetto della pagina iniziale include gli assembly, è necessario aggiun
      Ciò indica a Visual Studio di esaminare la nuova posizione della pagina iniziale.
 
 ## <a name="file-copy-deployment"></a>Distribuzione copia file
- Non è necessario creare un file con *estensione VSIX* per distribuire una pagina iniziale personalizzata. In alternativa, è possibile copiare i file di markup e di supporto direttamente nella <em>cartella \StartPages dell'utente \* . L'elenco **Personalizza pagina iniziale</em> * nella pagina Opzioni di **avvio** elenca tutti i file con *estensione XAML* in tale cartella, insieme al percorso, ad esempio *%USERPROFILE%\My Documenti\Visual Studio {Version} \StartPages \\ {nome file}. XAML*. Se la pagina iniziale include riferimenti a assembly privati, è necessario copiarli e incollarli nella cartella * \PrivateAssemblies \* .
+ Non è necessario creare un file con *estensione VSIX* per distribuire una pagina iniziale personalizzata. In alternativa, è possibile copiare i file di markup e di supporto direttamente nella <em>cartella \StartPages dell'utente \* . L'elenco **Personalizza pagina iniziale</em>* nella pagina Opzioni di **avvio** elenca tutti i file con *estensione XAML* in tale cartella, insieme al percorso, ad esempio *%USERPROFILE%\My Documenti\Visual Studio {Version} \StartPages \\ {nome file}. XAML*. Se la pagina iniziale include riferimenti a assembly privati, è necessario copiarli e incollarli nella cartella * \PrivateAssemblies \* .
 
  Per distribuire una pagina iniziale creata senza crearne il pacchetto in un file con *estensione VSIX* , è consigliabile usare una strategia di copia di base dei file, ad esempio uno script batch o qualsiasi altra tecnologia di distribuzione che consenta di inserire i file nelle directory richieste.
 

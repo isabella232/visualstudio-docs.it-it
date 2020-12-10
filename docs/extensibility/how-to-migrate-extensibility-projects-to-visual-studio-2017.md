@@ -1,6 +1,7 @@
 ---
 title: Eseguire la migrazione di progetti di estendibilità in Visual Studio 2017
 titleSuffix: ''
+description: Informazioni su come aggiornare i progetti di estensibilità a Visual Studio 2017 e su come eseguire l'aggiornamento dalla versione 2 del manifesto di estensione al manifesto VSIX della versione 3.
 ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 9212add38f877e76aa3eaaa98c3d0d863c97d62e
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 58d802ad97018a3d84e2b6a9f5e759db3a7cb2e3
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352283"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993965"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Procedura: eseguire la migrazione di progetti di estendibilità a Visual Studio 2017
 
@@ -109,14 +110,14 @@ Anziché modificare direttamente il file XML del manifesto, è possibile usare l
 
 ## <a name="update-debug-settings-for-the-project"></a>Aggiornare le impostazioni di debug per il progetto
 
-Se si vuole eseguire il debug dell'estensione in un'istanza sperimentale di Visual Studio, assicurarsi che l'azione impostazioni progetto per **debug**di  >  **avvio** disponga del **programma avvia esterno:** valore impostato sul file di *devenv.exe* dell'installazione di Visual Studio 2017.
+Se si vuole eseguire il debug dell'estensione in un'istanza sperimentale di Visual Studio, assicurarsi che l'azione impostazioni progetto per **debug** di  >  **avvio** disponga del **programma avvia esterno:** valore impostato sul file di *devenv.exe* dell'installazione di Visual Studio 2017.
 
 Il file potrebbe essere simile a: *c:\Programmi (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
 ![Avvia programma esterno](media/start-external-program.png)
 
 > [!Note]
-> L'azione di avvio del debug viene in genere archiviata nel file con *estensione csproj. User* . Questo file è generalmente incluso nel file con *estensione gitignore* e, di conseguenza, non viene salvato normalmente con altri file di progetto quando ne viene eseguito il commit nel controllo del codice sorgente. Di conseguenza, se la soluzione è stata eliminata dal controllo del codice sorgente, è probabile che per il progetto non siano impostati valori per l'azione di avvio. I nuovi progetti VSIX creati con Visual Studio 2017 avranno un file con *estensione csproj. User* creato con i valori predefiniti che puntano alla directory di installazione di Visual Studio corrente. Tuttavia, se si esegue la migrazione di un'estensione VSIX V2, è probabile che il file *. csproj. User* conterrà riferimenti alla directory di installazione precedente della versione di Visual Studio. Impostando il valore per l'azione di avvio del **debug**  >  **Start action** , sarà possibile avviare l'istanza sperimentale di Visual Studio corretta quando si tenta di eseguire il debug dell'estensione.
+> L'azione di avvio del debug viene in genere archiviata nel file con *estensione csproj. User* . Questo file è generalmente incluso nel file con *estensione gitignore* e, di conseguenza, non viene salvato normalmente con altri file di progetto quando ne viene eseguito il commit nel controllo del codice sorgente. Di conseguenza, se la soluzione è stata eliminata dal controllo del codice sorgente, è probabile che per il progetto non siano impostati valori per l'azione di avvio. I nuovi progetti VSIX creati con Visual Studio 2017 avranno un file con *estensione csproj. User* creato con i valori predefiniti che puntano alla directory di installazione di Visual Studio corrente. Tuttavia, se si esegue la migrazione di un'estensione VSIX V2, è probabile che il file *. csproj. User* conterrà riferimenti alla directory di installazione precedente della versione di Visual Studio. Impostando il valore per l'azione di avvio del **debug**  >   , sarà possibile avviare l'istanza sperimentale di Visual Studio corretta quando si tenta di eseguire il debug dell'estensione.
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>Verificare che l'estensione venga compilata correttamente (come VSIX V3)
 
@@ -187,7 +188,7 @@ Se non si è certi di quale componente contenga un file binario specifico, scari
 
 ### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017-ComponentBinaryMapping.xlsx
 
-Il foglio di Excel contiene quattro colonne: **nome del componente**, **ComponentID**, **versione**e **nomi file/binari**.  È possibile utilizzare i filtri per cercare e individuare componenti e file binari specifici.
+Il foglio di Excel contiene quattro colonne: **nome del componente**, **ComponentID**, **versione** e **nomi file/binari**.  È possibile utilizzare i filtri per cercare e individuare componenti e file binari specifici.
 
 Per tutti i riferimenti, determinare innanzitutto quelli presenti nel componente principale dell'editor (Microsoft. VisualStudio. Component. CoreEditor).  È necessario specificare almeno il componente dell'editor principale come prerequisito per tutte le estensioni. Dei riferimenti rimasti che non sono presenti nell'editor principale, aggiungere i filtri nella sezione **file binari/file** per trovare i componenti che includono uno dei subset di tali riferimenti.
 
@@ -198,7 +199,7 @@ Esempi:
 
 ## <a name="specify-a-visual-studio-2017-release"></a>Specificare una versione di Visual Studio 2017
 
-Se l'estensione richiede una versione specifica di Visual Studio 2017, ad esempio dipende da una funzionalità rilasciata in 15,3, è necessario specificare il numero di build nel **installazione**VSIX. Ad esempio, la versione 15,3 include un numero di build pari a' 15.0.26730.3'. È possibile visualizzare il mapping delle versioni per compilare i numeri [qui](../install/visual-studio-build-numbers-and-release-dates.md). L'uso del numero di versione ' 15,3' non funzionerà correttamente.
+Se l'estensione richiede una versione specifica di Visual Studio 2017, ad esempio dipende da una funzionalità rilasciata in 15,3, è necessario specificare il numero di build nel **installazione** VSIX. Ad esempio, la versione 15,3 include un numero di build pari a' 15.0.26730.3'. È possibile visualizzare il mapping delle versioni per compilare i numeri [qui](../install/visual-studio-build-numbers-and-release-dates.md). L'uso del numero di versione ' 15,3' non funzionerà correttamente.
 
 Se l'estensione richiede 15,3 o versione successiva, dichiarare la **versione di installazione** come [15.0.26730.3, 16,0):
 

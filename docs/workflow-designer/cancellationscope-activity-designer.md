@@ -1,6 +1,6 @@
 ---
-title: ActivityDesigner Progettazione flussi di lavoro-ActivityDesigner CancellationScope t
-description: Informazioni su come usare l'ActivityDesigner ActivityDesigner CancellationScope t per creare e configurare un'attività ActivityDesigner CancellationScope t.
+title: ActivityDesigner ActivityDesigner CancellationScope t
+description: Informazioni su come usare l'ActivityDesigner ActivityDesigner CancellationScope t in Progettazione flussi di lavoro per creare e configurare un'attività ActivityDesigner CancellationScope t.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 746ed70d0a1a8ae4de2207ea1fdf15280bd44de9
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 175ca46645d55106f18c163c54135316d73ea3ec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434441"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993237"
 ---
 # <a name="cancellationscope-activity-designer"></a>ActivityDesigner CancellationScope
 
@@ -29,7 +29,7 @@ L'attività <xref:System.Activities.Statements.CancellationScope> consente di sp
 
 ### <a name="using-the-cancellationscope-activity-designer"></a>Utilizzo dell'ActivityDesigner CancellationScope
 
-L'ActivityDesigner **ActivityDesigner CancellationScope t** è disponibile nella categoria **transazione** della **casella degli strumenti**. Per aprire la **casella degli strumenti** , selezionare la scheda **casella degli strumenti** della progettazione flussi di lavoro. In alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** o premere **CTRL** + **ALT** + **X**.
+L'ActivityDesigner **ActivityDesigner CancellationScope t** è disponibile nella categoria **transazione** della **casella degli strumenti**. Per aprire la **casella degli strumenti**, selezionare la scheda **casella degli strumenti** della progettazione flussi di lavoro. In alternativa, scegliere **casella degli strumenti** dal menu **Visualizza** o premere **CTRL** + **ALT** + **X**.
 
 È possibile trascinare l'ActivityDesigner **ActivityDesigner CancellationScope t** dalla **casella degli strumenti** e rilasciarlo nell'area Progettazione flussi di lavoro ogni volta che vengono inserite le attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . Se si elimina l'ActivityDesigner **ActivityDesigner CancellationScope t** , viene creata un' <xref:System.Activities.Statements.CancellationScope> attività con un valore predefinito <xref:System.Activities.Activity.DisplayName%2A> di ActivityDesigner CancellationScope t. Modificare il <xref:System.Activities.Activity.DisplayName%2A> valore nell'intestazione dell'ActivityDesigner **ActivityDesigner CancellationScope t** . È anche possibile modificarlo nella casella **DisplayName** della griglia delle proprietà.
 
@@ -40,8 +40,8 @@ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.St
 |Nome proprietà|Obbligatoria|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.CancellationScope>. Il valore predefinito è CancellationScope. Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
-|<xref:System.Activities.Statements.CancellationScope.Body%2A>|Vero|Specifica l'attività per la quale viene fornita la logica di annullamento. Per aggiungere l' <xref:System.Activities.Statements.CancellationScope.Body%2A> attività, rilasciare un'attività dalla **casella degli strumenti** nella casella **corpo** dell'ActivityDesigner **ActivityDesigner CancellationScope t** . Aggiungere il testo del suggerimento "drop Activity here".|
-|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|Vero|Specifica l'attività eseguita in caso di annullamento. Per aggiungere l' <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> attività, rilasciare un'attività dalla **casella degli strumenti** nella casella **CancellationHandler** nell'ActivityDesigner **ActivityDesigner CancellationScope t** . Aggiungere il testo del suggerimento "drop Activity here".|
+|<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|Specifica l'attività per la quale viene fornita la logica di annullamento. Per aggiungere l' <xref:System.Activities.Statements.CancellationScope.Body%2A> attività, rilasciare un'attività dalla **casella degli strumenti** nella casella **corpo** dell'ActivityDesigner **ActivityDesigner CancellationScope t** . Aggiungere il testo del suggerimento "drop Activity here".|
+|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|Specifica l'attività eseguita in caso di annullamento. Per aggiungere l' <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> attività, rilasciare un'attività dalla **casella degli strumenti** nella casella **CancellationHandler** nell'ActivityDesigner **ActivityDesigner CancellationScope t** . Aggiungere il testo del suggerimento "drop Activity here".|
 
 ## <a name="see-also"></a>Vedere anche
 

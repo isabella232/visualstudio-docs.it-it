@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aprire gli editor standard | Microsoft Docs'
+description: Informazioni su come implementare il Metodo OpenItem con un editor standard. L'IDE determina un editor standard per un tipo di file designato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c12e831654e7e138289d33b6e6f0409328e22c8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff03ed508fc11377861556bc27bdc33aaa1ec069
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905793"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993770"
 ---
 # <a name="how-to-open-standard-editors"></a>Procedura: aprire gli editor standard
 Quando si apre un editor standard, si consente all'IDE di determinare un editor standard per un tipo di file designato, anziché specificare un editor specifico del progetto per il file.

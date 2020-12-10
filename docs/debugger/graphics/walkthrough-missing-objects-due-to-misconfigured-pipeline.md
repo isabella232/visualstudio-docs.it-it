@@ -1,5 +1,6 @@
 ---
 title: Oggetti mancanti a causa di una pipeline non configurata correttamente
+description: Seguire un'indagine che trova una pipeline non configurata correttamente. Mostra l'elenco di eventi di grafica, le fasi della pipeline grafica e lo stack di chiamate eventi di grafica.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c00c10b8b7207e1162aa0041145000126fde87
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: e099d94479183e795a2ad3c8fc8db03fa969111c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189849"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995013"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procedura dettagliata: Oggetti mancanti a causa di una pipeline configurata in modo non corretto
 Questa procedura dettagliata descrive come usare gli strumenti della barra degli strumenti Diagnostica della grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per individuare un problema dovuto a un oggetto mancante a causa di un pixel shader non impostato.
@@ -36,7 +37,7 @@ Questa procedura dettagliata descrive come usare gli strumenti della barra degli
 
  ![Oggetto non visibile](media/gfx_diag_demo_misconfigured_pipeline_problem.png "gfx_diag_demo_misconfigured_pipeline_problem")
 
-## <a name="investigation"></a>Analisi
+## <a name="investigation"></a>Ricerca della causa
  Utilizzando gli strumenti di diagnostica della grafica, è possibile caricare il documento del log di grafica per controllare i frame acquisiti durante il test.
 
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Per esaminare un frame in un log di grafica

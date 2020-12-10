@@ -1,5 +1,7 @@
 ---
 title: Come eseguire il round trip delle estensioni
+description: Informazioni su come eseguire il round trip di progetti di estendibilità di Visual Studio tra Visual Studio 2015 e Visual Studio 2019 o Visual Studio 2017.
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2017
 ms.topic: how-to
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
@@ -8,12 +10,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3db3264bf5226b5679452659928e451e7975b001
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387278"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993614"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Procedura: rendere compatibili le estensioni con Visual Studio 2019/2017 e Visual Studio 2015
 
@@ -55,7 +57,7 @@ Più avanti in questo documento, le istruzioni di importazione condizionale veng
 Se il progetto contiene un *project.jssu* file:
 
 * Prendere nota dei riferimenti in *project.js*.
-* Dal **Esplora soluzioni**eliminare il *project.jssul* file dal progetto. Questa operazione consente di eliminare il *project.jsnel* file e di rimuoverlo dal progetto.
+* Dal **Esplora soluzioni** eliminare il *project.jssul* file dal progetto. Questa operazione consente di eliminare il *project.jsnel* file e di rimuoverlo dal progetto.
 * Aggiungere di nuovo i riferimenti NuGet al progetto:
   * Fare clic con il pulsante destro del mouse sulla **soluzione** e scegliere **Gestisci pacchetti NuGet per la soluzione**.
   * Visual Studio crea automaticamente il file di *packages.config* .
@@ -69,7 +71,7 @@ Se il progetto contiene un *project.jssu* file:
 
 Per compilare e distribuire un VSIXv3 in Visual Studio 2015 e 2019/2017, sono necessari i pacchetti NuGet seguenti:
 
-Version | Strumenti compilati
+Versione | Strumenti compilati
 --- | ---
 Visual Studio 2015 | Microsoft. VisualStudio. Sdk. BuildTasks. 14.0
 Visual Studio 2019 o 2017 | Microsoft. VSSDK. BuildTool

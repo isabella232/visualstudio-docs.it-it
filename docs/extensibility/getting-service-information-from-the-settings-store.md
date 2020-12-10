@@ -1,5 +1,7 @@
 ---
 title: Recupero delle informazioni sul servizio dall'archivio impostazioni | Microsoft Docs
+description: Informazioni su come usare l'archivio impostazioni per trovare tutti i servizi disponibili o per determinare se un particolare servizio è installato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b15d5c9f122ca66d21940b9998969b0d39d1a74d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15efb14d2cee36e5f2a8559c3ffa3844251aa982
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711378"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994433"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>Ottenere informazioni sul servizio dall'archivio impostazioni
 È possibile utilizzare l'archivio impostazioni per trovare tutti i servizi disponibili o per determinare se un particolare servizio è installato. È necessario essere a conoscenza del tipo di classe del servizio.
@@ -22,7 +24,7 @@ ms.locfileid: "80711378"
 
 1. Creare un progetto VSIX denominato `FindServicesExtension` e quindi aggiungere un comando personalizzato denominato `FindServicesCommand` . Per altre informazioni su come creare un comando personalizzato, vedere [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-2. In *FindServicesCommand.cs*aggiungere le direttive using seguenti:
+2. In *FindServicesCommand.cs* aggiungere le direttive using seguenti:
 
     ```csharp
     using System.Collections.Generic;
@@ -52,7 +54,7 @@ ms.locfileid: "80711378"
 
 4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale.
 
-5. Nell'istanza sperimentale, scegliere **richiama FindServicesCommand**dal menu **strumenti** .
+5. Nell'istanza sperimentale, scegliere **richiama FindServicesCommand** dal menu **strumenti** .
 
      Verrà visualizzata una finestra di messaggio in cui sono elencati tutti i servizi.
 
@@ -78,6 +80,6 @@ ms.locfileid: "80711378"
 
 2. Compilare il progetto e avviare il debug.
 
-3. Nell'istanza sperimentale, scegliere **richiama FindServicesCommand**dal menu **strumenti** .
+3. Nell'istanza sperimentale, scegliere **richiama FindServicesCommand** dal menu **strumenti** .
 
      Verrà visualizzato un messaggio con il servizio di **Guida del testo disponibile:**  seguito da **true** o **false**. Per verificare questa impostazione, è possibile utilizzare un editor del registro di sistema, come illustrato nei passaggi precedenti.

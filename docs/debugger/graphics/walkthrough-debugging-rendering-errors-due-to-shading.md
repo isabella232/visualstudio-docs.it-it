@@ -1,5 +1,7 @@
 ---
 title: "Procedura dettagliata: debug degli errori di rendering dovuti all'ombreggiatura | Microsoft Docs"
+description: Seguire un'indagine che trova un bug dello shader. Mostra l'uso di Visual Studio Diagnostica della grafica, tra cui la cronologia dei pixel grafica e il debugger HLSL.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b42aa5638b668d90fa44335c2d532c9bcddddc2b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849275"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995083"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo
 In questa procedura dettagliata viene illustrato come utilizzare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostica della grafica per esaminare un oggetto colorato in modo non corretto a causa di un bug dello shader.
@@ -40,7 +42,7 @@ In questa procedura dettagliata viene illustrato come utilizzare [!INCLUDE[vsprv
 
 1. In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] caricare un log di grafica contenente un frame che mostra il modello mancante. Verrà visualizzata una nuova finestra del documento del log grafico in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Nella parte superiore di questa finestra è presente l'output della destinazione di rendering del frame selezionato. Nella parte inferiore è presente **Elenco frame**, che visualizza ogni frame acquisito come immagine di anteprima.
 
-2. Nell' **Elenco frame**selezionare un frame in cui l'oggetto non ha l'aspetto corretto. La destinazione di rendering viene aggiornata per riflettere la selezione del frame. In questo scenario, la finestra del documento del log di grafica ha un aspetto simile all'immagine seguente:
+2. Nell' **Elenco frame** selezionare un frame in cui l'oggetto non ha l'aspetto corretto. La destinazione di rendering viene aggiornata per riflettere la selezione del frame. In questo scenario, la finestra del documento del log di grafica ha un aspetto simile all'immagine seguente:
 
     ![Documento di log della grafica in Visual Studio.](media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")
 
@@ -64,7 +66,7 @@ In questa procedura dettagliata viene illustrato come utilizzare [!INCLUDE[vsprv
 
 #### <a name="to-examine-the-pixel-shader"></a>Per esaminare il pixel shader
 
-1. Avviare il debug del pixel shader. Nella finestra **Cronologia pixel grafica** , nella primitiva dell'oggetto, accanto a **Pixel shader**scegliere il pulsante **Avvia debug** .
+1. Avviare il debug del pixel shader. Nella finestra **Cronologia pixel grafica** , nella primitiva dell'oggetto, accanto a **Pixel shader** scegliere il pulsante **Avvia debug** .
 
 2. In questo scenario, poiché il pixel shader passa semplicemente il colore dal vertex shader, è facile concludere che il pixel shader non è l'origine del problema.
 
@@ -78,7 +80,7 @@ In questa procedura dettagliata viene illustrato come utilizzare [!INCLUDE[vsprv
 
 #### <a name="to-examine-the-vertex-shader"></a>Per esaminare il vertex shader
 
-1. Avviare il debug del vertex shader. Nella finestra **Cronologia pixel grafica** , nella primitiva dell'oggetto, accanto a **Vertex shader**scegliere il pulsante **Avvia debug** .
+1. Avviare il debug del vertex shader. Nella finestra **Cronologia pixel grafica** , nella primitiva dell'oggetto, accanto a **Vertex shader** scegliere il pulsante **Avvia debug** .
 
 2. Individuare la struttura di output del vertex shader, ovvero l'input per il pixel shader. In questo scenario, il nome di questa struttura è `output`. Esaminare il codice di vertex shader e notare che il membro `color` della struttura `output` è stato impostato in modo esplicito su nero completamente opaco, probabilmente a causa delle attività di debug di un utente.
 
@@ -92,7 +94,7 @@ In questa procedura dettagliata viene illustrato come utilizzare [!INCLUDE[vsprv
 output.color = float3(0.0f, 0.0f, 0.0f);
 ```
 
- in
+ to
 
 ```hlsl
 output.color = input.color;

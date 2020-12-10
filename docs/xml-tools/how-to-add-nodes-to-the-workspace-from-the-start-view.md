@@ -1,5 +1,5 @@
 ---
-title: Aggiunta di nodi all'area di lavoro dalla visualizzazione iniziale in Progettazione XML Schema
+title: Aggiungere nodi all'area di lavoro dalla visualizzazione iniziale
 description: Informazioni su come aggiungere nodi all'area di lavoro di progettazione XML schema usando i comandi nella visualizzazione iniziale.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c456220ecf8fbe17ce65372c4f7904f54181fe2
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b2a30297cd2ede7293929604046550f78427b2a0
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049277"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995317"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Procedura: aggiungere nodi all'area di lavoro dalla visualizzazione iniziale
 
@@ -25,11 +25,11 @@ In questo argomento viene descritto come aggiungere nodi globali all' [area di l
 
 1. Seguire i passaggi in [procedura: creare e modificare un file di schema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. Fare clic con il pulsante destro del mouse nell'editor XML e scegliere **Visualizza finestra di progettazione** .
+2. Fare clic con il pulsante destro del mouse nell'editor XML e scegliere **Visualizza finestra di progettazione**.
 
      Viene aperta la visualizzazione iniziale.
 
-     Nella sezione **Dettagli set di schemi** si noti che sono presenti due ( **2** ) **tipi complessi globali** .
+     Nella sezione **Dettagli set di schemi** si noti che sono presenti due (**2**) **tipi complessi globali**.
 
 3. Fare clic sul collegamento **Aggiungi** a destra dell'intestazione **tipi complessi globali** .
 

@@ -1,5 +1,7 @@
 ---
 title: Codici di errore | Microsoft Docs
+description: Questo articolo contiene un elenco di codici di errore, valori e descrizioni per le funzioni API del plug-in del controllo del codice sorgente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34072f6ddbd632f83dd308c6cb63427e02bb110b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a77f869936531dbc41cc3bd1d9b510bf44c35cec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711846"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994719"
 ---
 # <a name="error-codes"></a>Codici di errore
 Quando una funzione dell'API del plug-in del controllo del codice sorgente restituisce un errore, dovrebbe essere uno dei codici di errore seguenti. Tutti gli errori sono negativi, gli avvisi o i codici di errore informativi sono positivi e il risultato è 0.
 
-|Codice di errore|Valore|Descrizione|
+|Codice di errore|valore|Descrizione|
 |----------------|-----------|-----------------|
 |`SCC_I_SHARESUBPROJOK`|7|Il plug-in supporta l'aggiunta di file dal controllo del codice sorgente in due passaggi. Per ulteriori informazioni, vedere [SccSetOption](../extensibility/sccsetoption-function.md).|
 |`SCC_I_FILEDIFFERS`|6|Il file locale è diverso dal file nel database del controllo del codice sorgente (ad esempio, [SccDiff](../extensibility/sccdiff-function.md) può restituire questo valore).|
@@ -72,7 +74,7 @@ IS_SCC_SUCCESS(rtn) (((rtn) == SCC_OK) ? TRUE : FALSE)
 IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)
 ```
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Tutte le funzioni API del plug-in del controllo del codice sorgente (ad eccezione di [SccAdd](../extensibility/sccadd-function.md), [SccCheckin](../extensibility/scccheckin-function.md)e [SccDiff](../extensibility/sccdiff-function.md)) dovrebbero avere esito positivo quando i file locali passati come argomenti non sono presenti nella cartella di lavoro. Ad esempio, l'IDE può eseguire una chiamata a [SccCheckout](../extensibility/scccheckout-function.md) o [SccUncheckout](../extensibility/sccuncheckout-function.md) in un file che non esiste nella cartella di lavoro, ma esiste nel sistema di controllo del codice sorgente. La chiamata avrà esito positivo. Solo quando non è presente alcun file nella cartella di lavoro o nel sistema di controllo del codice sorgente è la funzione che dovrebbe avere esito negativo.
 
  Alcune funzioni, ad esempio `SccAdd` e `SccCheckin` , devono essere restituite in modo specifico `SCC_E_FILENOTEXIST` quando il file nella cartella di lavoro non esiste. Le altre funzioni dovrebbero avere esito positivo quando il file di lavoro non esiste, se le funzioni operano su un nome di file valido nel sistema di controllo del codice sorgente.

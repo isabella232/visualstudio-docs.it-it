@@ -1,5 +1,7 @@
 ---
 title: Estensione del Finestra di output | Microsoft Docs
+description: Informazioni su come estendere la finestra di output in Visual Studio SDK e creare e gestire i riquadri personalizzati.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 800b443b079111d1d09fffdd900b246a020578f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39ee69f934a9962d2beefb83b1ada08b920ce53d
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711649"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994667"
 ---
 # <a name="extend-the-output-window"></a>Estendere la finestra di output
 La finestra **output** è un set di riquadri di testo in lettura/scrittura. Visual Studio include i riquadri predefiniti seguenti: **Build**, in cui i progetti comunicano messaggi sulle compilazioni e **generale**, in cui [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] comunica i messaggi sull'IDE. I progetti ottengono automaticamente un riferimento al riquadro di **compilazione** tramite i <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> metodi di interfaccia e Visual Studio offre accesso diretto al riquadro **generale** tramite il <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> servizio. Oltre ai riquadri predefiniti, è possibile creare e gestire i riquadri personalizzati.
@@ -33,14 +35,14 @@ La finestra **output** è un set di riquadri di testo in lettura/scrittura. Visu
 
     2. EnvDTE80
 
-3. In *testoutput.cs*aggiungere l'istruzione using seguente:
+3. In *testoutput.cs* aggiungere l'istruzione using seguente:
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4. In *testoutput.cs*eliminare il `ShowMessageBox` metodo. Aggiungere lo stub del metodo seguente:
+4. In *testoutput.cs* eliminare il `ShowMessageBox` metodo. Aggiungere lo stub del metodo seguente:
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)

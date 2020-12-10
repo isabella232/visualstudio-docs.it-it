@@ -1,5 +1,7 @@
 ---
 title: Estensione del filtro Esplora soluzioni | Microsoft Docs
+description: Informazioni su come estendere Esplora soluzioni funzionalità di filtro per mostrare o nascondere file diversi in Visual Studio SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af0824edd4188481bec8c0703d71043354f5dbcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cde3377582c3bac0c27371e25f28e5151d641db1
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711563"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994563"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Estendere il filtro Esplora soluzioni
 È possibile estendere **Esplora soluzioni** funzionalità di filtro per visualizzare o nascondere file diversi. Ad esempio, è possibile creare un filtro che mostra solo i file di class factory C# nel **Esplora soluzioni**, come illustrato in questa procedura dettagliata.
@@ -158,7 +160,7 @@ ms.locfileid: "80711563"
 
     ```
 
-4. In *FileFilter.cs*rimuovere il posizionamento del comando e il codice di gestione dal Costruttore FileFilter. Il risultato dovrebbe essere simile al seguente:
+4. In *FileFilter.cs* rimuovere il posizionamento del comando e il codice di gestione dal Costruttore FileFilter. Il risultato dovrebbe essere simile al seguente:
 
     ```csharp
     private FileFilter(Package package)
@@ -174,7 +176,7 @@ ms.locfileid: "80711563"
 
      Rimuovere `ShowMessageBox()` anche il metodo.
 
-5. In *FileFilterPackage.cs*sostituire il codice nel `Initialize()` metodo con il codice seguente:
+5. In *FileFilterPackage.cs* sostituire il codice nel `Initialize()` metodo con il codice seguente:
 
     ```csharp
     protected override void Initialize()

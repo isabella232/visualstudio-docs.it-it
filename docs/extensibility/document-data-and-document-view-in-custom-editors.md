@@ -1,5 +1,7 @@
 ---
 title: Visualizzazione dei dati e dei documenti negli editor personalizzati | Microsoft Docs
+description: Informazioni sui componenti di un editor personalizzato, ovvero l'oggetto dati del documento e l'oggetto visualizzazione del documento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d4b14558a435d6ad9da32726508d81185961410
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 576b195663f379b1f2fd327ce6a8806ddb43deda
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414464"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994875"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Documenti e visualizzazione dei documenti negli editor personalizzati
 Un editor personalizzato è costituito da due parti: un oggetto dati del documento e un oggetto visualizzazione del documento. Come suggerisce il nome, l'oggetto dati del documento rappresenta i dati di testo da visualizzare. Analogamente, l'oggetto visualizzazione documento (o "visualizzazione") rappresenta una o più finestre in cui visualizzare l'oggetto dati del documento.

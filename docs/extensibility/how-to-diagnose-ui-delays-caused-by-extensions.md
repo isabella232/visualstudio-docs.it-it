@@ -1,17 +1,19 @@
 ---
 title: Diagnosi dei ritardi dell'interfaccia utente di estensione in Visual Studio | Microsoft Docs
+description: Visual Studio notifica l'utente se i ritardi dell'interfaccia utente potrebbero essere causati da un'estensione. Informazioni su come diagnosticare gli elementi del codice dell'estensione che causano ritardi dell'interfaccia utente.
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: e8b35a566eb0f2457d6eb8ae3a33235df2a64cd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 965e96a7881e20eca035b61ed7fd6f29398e71c6
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75849153"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994264"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Procedura: Diagnosticare i ritardi dell'interfaccia utente causati dalle estensioni
 

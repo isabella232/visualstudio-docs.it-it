@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: usare il log attività | Microsoft Docs'
+description: I pacchetti VSPackage possono scrivere messaggi nel log attività. Informazioni su come usare il log attività per il debug dei pacchetti VSPackage negli ambienti di vendita al dettaglio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 824feee64f928dc837a379aeb539daaa5ba0d1db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2796b8537c0f94c02c91fddc73f6d913ba1b0c4c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905580"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993575"
 ---
 # <a name="how-to-use-the-activity-log"></a>Procedura: usare il log attività
 I pacchetti VSPackage possono scrivere messaggi nel log attività. Questa funzionalità è particolarmente utile per il debug dei pacchetti VSPackage negli ambienti di vendita al dettaglio.

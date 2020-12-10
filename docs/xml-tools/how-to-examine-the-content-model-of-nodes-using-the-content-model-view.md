@@ -1,5 +1,5 @@
 ---
-title: Esaminare i nodi tramite la visualizzazione modello di contenuto in Progettazione XML Schema
+title: Esaminare il modello di contenuto dei nodi
 description: Informazioni su come utilizzare la visualizzazione modello di contenuto in Progettazione XML Schema per esaminare il modello di contenuto dei nodi in un XML Schema.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef330e6e189b9cee1126d5de48d55622fe8d9046
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: f3ce3d1a47125c446521ceb60a851322c37209d0
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399509"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995278"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Procedura: esaminare il modello di contenuto dei nodi tramite la visualizzazione modello di contenuto
+# <a name="how-to-examine-the-content-model-of-nodes-by-using-the-content-model-view"></a>Procedura: esaminare il modello di contenuto dei nodi tramite la visualizzazione modello di contenuto
 
-In questo argomento viene descritto come esplorare i nodi utilizzando la [visualizzazione modello di contenuto](../xml-tools/content-model-view.md).
+In questo argomento viene descritto come esplorare i nodi tramite la [visualizzazione modello di contenuto](../xml-tools/content-model-view.md).
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Per creare un nuovo file XSD e visualizzare l'elemento radice nella visualizzazione modello di contenuto
 

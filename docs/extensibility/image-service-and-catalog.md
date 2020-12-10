@@ -1,5 +1,7 @@
 ---
 title: Catalogo e servizio immagini | Microsoft Docs
+description: Questo articolo contiene indicazioni e procedure consigliate per l'adozione del servizio immagini e del catalogo immagini di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/01/2019
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a098e78e8895aea72d830a88e436a06f15de6133
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 41adcbe97f9d0779fbad465bac673a3f7cf086c7
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584542"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993536"
 ---
 # <a name="image-service-and-catalog"></a>Catalogo e servizio immagini
 Questa guida di riferimento contiene indicazioni e procedure consigliate per l'adozione del servizio immagini di Visual Studio e del catalogo immagini introdotti in Visual Studio 2015.
@@ -65,7 +67,7 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 
   **File manifesto immagine**
 
-  I file manifesto immagine (con*estensione imagemanifest*) sono file XML che definiscono un set di asset immagine, i moniker che rappresentano tali asset e l'immagine reale o immagini che rappresentano ogni asset. I manifesti di immagine possono definire immagini autonome o elenchi di immagini per il supporto dell'interfaccia utente legacy. Sono inoltre disponibili attributi che possono essere impostati sull'asset o sulle singole immagini dietro ogni asset per modificare quando e come vengono visualizzati gli asset.
+  I file manifesto immagine (con *estensione imagemanifest*) sono file XML che definiscono un set di asset immagine, i moniker che rappresentano tali asset e l'immagine reale o immagini che rappresentano ogni asset. I manifesti di immagine possono definire immagini autonome o elenchi di immagini per il supporto dell'interfaccia utente legacy. Sono inoltre disponibili attributi che possono essere impostati sull'asset o sulle singole immagini dietro ogni asset per modificare quando e come vengono visualizzati gli asset.
 
   **Schema manifesto immagine**
 
@@ -125,7 +127,7 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 |ManifestFolder|Cartella contenente il file manifesto|
 |MyDocuments|Percorso completo della cartella documenti dell'utente corrente|
 |ProgramFiles|Valore della variabile di ambiente% ProgramFiles%|
-|Sistema|Cartella *Windows\System32*|
+|System|Cartella *Windows\System32*|
 |WinDir|Valore della variabile di ambiente% WinDir%|
 
  **Immagine**
@@ -160,13 +162,13 @@ Questa guida di riferimento contiene indicazioni e procedure consigliate per l'a
 |**Attributo**|**Definizione**|
 |-|-|
 |Uri|Necessaria URI che definisce dove è possibile caricare l'immagine. I possibili valori sono i seguenti:<br /><br /> : [URI di pacchetto](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) che usa l'autorità Application:///<br />-Riferimento a una risorsa componente assoluto<br />: Percorso di un file che contiene una risorsa nativa|
-|Background|Opzionale Indica il tipo di background che l'origine deve usare.<br /><br /> I possibili valori sono i seguenti:<br /><br /> *Chiaro:* L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> *Scuro:* L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> *HighContrast:* L'origine può essere utilizzata in qualsiasi background in modalità Contrasto elevato.<br /><br /> *HighContrastLight:* L'origine può essere utilizzata su uno sfondo chiaro in modalità Contrasto elevato.<br /><br /> *HighContrastDark:* L'origine può essere utilizzata su uno sfondo scuro in modalità Contrasto elevato.<br /><br /> Se l'attributo background viene omesso, l'origine può essere utilizzata in qualsiasi background.<br /><br /> Se background è *Light*, *Dark*, *HighContrastLight*o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se background viene omesso o impostato su *HighContrast*, l'inversione dei colori dell'origine viene controllata dall'attributo **AllowColorInversion** dell'immagine.|
+|Background|Opzionale Indica il tipo di background che l'origine deve usare.<br /><br /> I possibili valori sono i seguenti:<br /><br /> *Chiaro:* L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> *Scuro:* L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> *HighContrast:* L'origine può essere utilizzata in qualsiasi background in modalità Contrasto elevato.<br /><br /> *HighContrastLight:* L'origine può essere utilizzata su uno sfondo chiaro in modalità Contrasto elevato.<br /><br /> *HighContrastDark:* L'origine può essere utilizzata su uno sfondo scuro in modalità Contrasto elevato.<br /><br /> Se l'attributo background viene omesso, l'origine può essere utilizzata in qualsiasi background.<br /><br /> Se background è *Light*, *Dark*, *HighContrastLight* o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se background viene omesso o impostato su *HighContrast*, l'inversione dei colori dell'origine viene controllata dall'attributo **AllowColorInversion** dell'immagine.|
 
 Un \<Source> elemento può avere esattamente uno dei sottoelementi facoltativi seguenti:
 
 |**elemento**|**Attributi (tutti necessari)**|**Definizione**|
 |-|-|-|
-|\<Size>|Valore|L'origine verrà usata per le immagini con le dimensioni specificate (in unità dispositivo). L'immagine sarà quadrata.|
+|\<Size>|valore|L'origine verrà usata per le immagini con le dimensioni specificate (in unità dispositivo). L'immagine sarà quadrata.|
 |\<SizeRange>|MinSize, MaxSize|L'origine verrà usata per le immagini da MinSize a MaxSize (in unità dispositivo), inclusi. L'immagine sarà quadrata.|
 |\<Dimensions>|Larghezza, altezza|L'origine verrà usata per le immagini della larghezza e dell'altezza specificate (in unità dispositivo).|
 |\<DimensionRange>|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|L'origine verrà usata per le immagini dalla larghezza/altezza minima alla larghezza/altezza massima (in unità dispositivo), inclusi.|
@@ -179,7 +181,7 @@ Un \<Source> elemento può avere esattamente uno dei sottoelementi facoltativi s
 
 |**Attributo**|**Definizione**|
 |-|-|
-|Tipo|Necessaria Il tipo della risorsa nativa, ovvero XAML o PNG|
+|Type|Necessaria Il tipo della risorsa nativa, ovvero XAML o PNG|
 |ID|Necessaria Parte relativa all'ID integer della risorsa nativa|
 
  **ImageList**
@@ -283,7 +285,7 @@ Un \<Source> elemento può avere esattamente uno dei sottoelementi facoltativi s
 
 1. Per iniziare, aggiungere al progetto i riferimenti agli assembly necessari nella sezione passaggi precedenti. Non è necessario aggiungerli tutti, quindi aggiungere solo i riferimenti necessari. Nota: se si usa o si ha accesso a **colori** invece che a **pennelli**, è possibile ignorare il riferimento alle **utilità**, perché il convertitore non sarà necessario.
 
-2. Selezionare l'immagine desiderata e ottenere il relativo moniker. Usare un **KnownMoniker**o usare il proprio se si dispone di immagini e moniker personalizzati.
+2. Selezionare l'immagine desiderata e ottenere il relativo moniker. Usare un **KnownMoniker** o usare il proprio se si dispone di immagini e moniker personalizzati.
 
 3. Aggiungere **CrispImages** al codice XAML. (Vedere l'esempio seguente).
 
@@ -465,7 +467,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
  Questi sono i punti chiave per usare i moniker in una finestra degli strumenti. Seguire le istruzioni per ogni:
 
-1. Scheda della finestra degli strumenti quando le schede sono sufficientemente piccole (usate anche nello **Ctrl**strumento di selezione della finestra della + **scheda** CTRL).
+1. Scheda della finestra degli strumenti quando le schede sono sufficientemente piccole (usate anche nello strumento di selezione della finestra della + **scheda** CTRL).
 
     Aggiungere questa riga al costruttore per la classe che deriva dal tipo **ToolWindowPane** :
 
@@ -497,7 +499,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
    Questi sono i punti chiave per usare i moniker in una finestra degli strumenti. Seguire le istruzioni per ogni:
 
-3. Scheda della finestra degli strumenti quando le schede sono sufficientemente piccole (usate anche nello **Ctrl**strumento di selezione della finestra della + **scheda** CTRL).
+3. Scheda della finestra degli strumenti quando le schede sono sufficientemente piccole (usate anche nello strumento di selezione della finestra della + **scheda** CTRL).
 
    1. Rimuovere queste righe (se esistenti) nel costruttore della classe che deriva dal tipo **ToolWindowPane** :
 
@@ -576,7 +578,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="how-do-i-port-a-project-system"></a>Ricerca per categorie porta un sistema di progetto?
  **Come fornire ImageMonikers per un progetto**
 
-1. Implementare **VSHPROPID_SupportsIconMonikers** in **IVsHierarchy**del progetto e restituire true.
+1. Implementare **VSHPROPID_SupportsIconMonikers** in **IVsHierarchy** del progetto e restituire true.
 
 2. Implementare **VSHPROPID_IconMonikerImageList** (se il progetto originale usava **VSHPROPID_IconImgList**) o **VSHPROPID_IconMonikerGuid**, **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (se il progetto originale usava **VSHPROPID_IconHandle** e **VSHPROPID_OpenFolderIconHandle**).
 
@@ -638,7 +640,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
    - Consigliato: rinominare il simbolo di AssetsGuid e il simbolo della striscia dell'immagine in base all'utilizzo.
 
-   - Sostituire ogni GUID di **ContainedImage**con $ (ImageCatalogGuid), sostituire l'ID di ogni **ContainedImage**con $ ( \<moniker> ) e aggiungere l'attributo External = "true" a ogni **ContainedImage**
+   - Sostituire ogni GUID di **ContainedImage** con $ (ImageCatalogGuid), sostituire l'ID di ogni **ContainedImage** con $ ( \<moniker> ) e aggiungere l'attributo External = "true" a ogni **ContainedImage**
 
        - \<moniker> deve essere sostituito con **KnownMoniker** che corrisponde all'immagine ma con "KnownMonikers". rimosso dal nome.
 

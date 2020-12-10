@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: creare un feed Atom per una raccolta privata | Microsoft Docs'
+description: È possibile creare un feed Atom (RSS) in un percorso Intranet che contiene le estensioni e aggiungere il feed ad estensioni e aggiornamenti come raccolta privata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 269161e831fdb176dbfea844e951597efb467312
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 833d75d7dfd18e863664e6d3d17d65a4e08b4d77
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905859"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994147"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procedura: creare un feed Atom per una raccolta privata
 È possibile creare un feed Atom (RSS) in un percorso Intranet che contiene le estensioni e aggiungere il feed ad **estensioni e aggiornamenti** come raccolta privata. Per altre informazioni, vedere [Private Galleries](../extensibility/private-galleries.md) (Raccolte private).
 
 ## <a name="create-an-atom-feed"></a>Creare un feed Atom
- Per creare un feed Atom come raccolta privata, è necessario innanzitutto raccogliere le estensioni (file*VSIX* ) in una cartella. Se lo si desidera, è possibile organizzarle in sottocartelle. Sono necessarie anche le risorse seguenti:
+ Per creare un feed Atom come raccolta privata, è necessario innanzitutto raccogliere le estensioni (file *VSIX* ) in una cartella. Se lo si desidera, è possibile organizzarle in sottocartelle. Sono necessarie anche le risorse seguenti:
 
 - Un file *atom.xml* che rende le estensioni disponibili come raccolta privata. Per informazioni su come connettere il file di *atom.xml* a **estensioni e aggiornamenti**, vedere [raccolte private](../extensibility/private-galleries.md).
 

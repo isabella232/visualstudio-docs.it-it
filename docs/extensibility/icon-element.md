@@ -1,5 +1,7 @@
 ---
 title: Elemento Icon | Microsoft Docs
+description: Informazioni sull'elemento Icon, che rappresenta le icone usate nelle estensioni IDE di Visual Studio, che include gli attributi per la bitmap usata e lo slot nell'elenco bitmap.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf4f8a69e565620007fba4b9970ce96bb1513995
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ed5a4f64a2c80cfdc61b37a6a8bac72adc97a33
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710514"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993601"
 ---
 # <a name="icon-element"></a>Icon (elemento)
 L'attributo GUID del tag Icon è il GUID di una bitmap definita. L' `id` attributo seleziona lo slot nella striscia bitmap. Questo elemento è facoltativo. Se questo elemento non è incluso, il valore di **guidOfficeIcon: msotcidNoIcon** sarà implicito.
@@ -41,7 +43,7 @@ L'attributo GUID del tag Icon è il GUID di una bitmap definita. L' `id` attribu
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|Nessuno.|Nessuno.|
+|No.|No.|
 
 ### <a name="parent-elements"></a>Elementi padre
 

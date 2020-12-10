@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere una dipendenza a un pacchetto VSIX | Microsoft Docs'
+description: Informazioni su come configurare una distribuzione di pacchetti VSIX che consente di installare tutte le dipendenze che non sono già presenti nel computer di destinazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7ee7cbc4dee800351689386056389d274e07f4f
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: d7ef19bafd0788ed15094979141679625e4e992f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012230"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993835"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>Procedura: aggiungere una dipendenza a un pacchetto VSIX
 
@@ -34,7 +36,7 @@ ms.locfileid: "90012230"
 
 ## <a name="require-a-specific-visual-studio-release"></a>Richiedi una versione specifica di Visual Studio
 
-Se l'estensione richiede una versione specifica di Visual Studio 2017, ad esempio dipende da una funzionalità rilasciata in 15,3, è possibile specificare il numero di build nel **installazione**VSIX. Ad esempio, la versione 15,3 include un numero di build pari a' 15.0.26730.3'. È possibile visualizzare il mapping delle versioni per compilare i numeri [qui](../install/visual-studio-build-numbers-and-release-dates.md). Si noti che l'uso del numero di versione ' 15,3' non funzionerà correttamente.
+Se l'estensione richiede una versione specifica di Visual Studio 2017, ad esempio dipende da una funzionalità rilasciata in 15,3, è possibile specificare il numero di build nel **installazione** VSIX. Ad esempio, la versione 15,3 include un numero di build pari a' 15.0.26730.3'. È possibile visualizzare il mapping delle versioni per compilare i numeri [qui](../install/visual-studio-build-numbers-and-release-dates.md). Si noti che l'uso del numero di versione ' 15,3' non funzionerà correttamente.
 
 Se l'estensione richiede 15,3 o versione successiva, dichiarare la **versione di installazione** come [15.0.26730.3, 16,0):
 

@@ -1,6 +1,6 @@
 ---
-title: Progettazione flussi di lavoro-Cerca e seleziona una finestra di dialogo di tipo .NET
-description: Informazioni su come utilizzare la finestra di dialogo Cerca e seleziona un tipo .NET per scegliere un tipo da una visualizzazione albero di assembly e progetti.
+title: Finestra di dialogo Cerca e seleziona un tipo .NET
+description: Informazioni su come utilizzare la finestra di dialogo Cerca e seleziona un tipo .NET per scegliere un tipo da una visualizzazione albero di assembly e progetti in Progettazione flussi di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e887cf339647df9bca7fdc3d07a45dd44901c42
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9c479cbad884a8a21197c945f8f6f1ae13947991
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438178"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995486"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Finestra di dialogo Cerca e seleziona un tipo .NET
 
@@ -57,7 +57,7 @@ Nella finestra **Proprietà** , nelle finestre di dialogo o nelle finestre di pr
 
 ## <a name="types-displayed-in-the-type-browser"></a>Tipi visualizzati nel browser dei tipi
 
-I tipi visualizzati nel browser dei tipi possono variare in base alla modalità di avvio di tale browser. Se il browser dei tipi è stato avviato da un progetto flusso di lavoro all'interno di **VS2010** , per impostazione predefinita vengono visualizzati tutti i tipi negli assembly a cui si fa riferimento e i progetti a cui si fa riferimento. Se il browser dei tipi è stato avviato dall'esterno di un sistema di progetto **VS2010** , ad esempio in un'applicazione flusso di lavoro riallocata o in un file di flusso di lavoro autonomo, per impostazione predefinita vengono visualizzati i tipi di tutti gli assembly caricati nel dominio AppDomain.
+I tipi visualizzati nel browser dei tipi possono variare in base alla modalità di avvio di tale browser. Se il browser dei tipi è stato avviato da un progetto flusso di lavoro all'interno di **VS2010**, per impostazione predefinita vengono visualizzati tutti i tipi negli assembly a cui si fa riferimento e i progetti a cui si fa riferimento. Se il browser dei tipi è stato avviato dall'esterno di un sistema di progetto **VS2010** , ad esempio in un'applicazione flusso di lavoro riallocata o in un file di flusso di lavoro autonomo, per impostazione predefinita vengono visualizzati i tipi di tutti gli assembly caricati nel dominio AppDomain.
 
 I tipi del browser dei tipi possono essere filtrati in base agli sviluppatori di ActivityDesigner. Per qualsiasi attività specificata, è possibile visualizzare solo un subset dei tipi. Per l'attività <xref:System.Activities.Statements.TryCatch>, ad esempio, nel browser dei tipi sono visualizzati solo i tipi derivati da <xref:System.Exception>.
 
@@ -65,7 +65,7 @@ I tipi del browser dei tipi possono essere filtrati in base agli sviluppatori di
 
 L'elenco dei tipi nella casella **nome tipo** diventa più breve quando si digitano altri caratteri per trovare una corrispondenza. Solo i tipi il cui nome FullyQualified inizia con la stringa digitata o i tipi il cui nome breve inizia con la stringa digitata vengono visualizzati nell'elenco filtrato.
 
-Esempio:
+Ad esempio:
 
 1. L' **operazione** di digitazione corrisponde <xref:System.OperationCanceledException> , ma non <xref:System.InvalidOperationException> . Per trovare la corrispondenza con <xref:System.InvalidOperationException>, cominciare a digitare System.I o Invalid.
 

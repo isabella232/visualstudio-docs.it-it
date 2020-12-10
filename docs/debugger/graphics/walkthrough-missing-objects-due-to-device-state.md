@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: oggetti mancanti a causa dello stato del dispositivo | Microsoft Docs'
+description: Seguire un'indagine che trova uno stato del dispositivo non configurato correttamente. Mostra l'uso dell'elenco di eventi di grafica, delle fasi della pipeline grafica e della Cronologia pixel grafica.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c29e240d4be2f66fb0684bf5372d59fe5d4d825a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62895447"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995057"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo
 Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per esaminare un problema dovuto a un oggetto mancante a causa della configurazione non corretta dello stato del dispositivo.
@@ -44,7 +46,7 @@ Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUD
 
 1. In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]caricare un log di grafica contenente un frame che mostra il modello mancante. Verrà visualizzata una nuova scheda Diagnostica grafica in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Nella parte superiore di questa scheda è presente l'output della destinazione di rendering del frame selezionato. Nella parte inferiore è presente **Elenco frame**, che visualizza ogni frame acquisito come immagine di anteprima.
 
-2. In **Elenco frame**selezionare un frame che dimostra che il modello non è visualizzato. La destinazione di rendering viene aggiornata per riflettere la selezione del frame. In questo scenario la scheda del log di grafica ha un aspetto simile al seguente:
+2. In **Elenco frame** selezionare un frame che dimostra che il modello non è visualizzato. La destinazione di rendering viene aggiornata per riflettere la selezione del frame. In questo scenario la scheda del log di grafica ha un aspetto simile al seguente:
 
     ![Elenco frame e anteprima buffer nella scheda .vsglog](media/vsg_walkthru1_experiment.png "vsg_walkthru1_experiment")
 
@@ -94,7 +96,7 @@ Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUD
 
 1. Aprire la finestra **Tabella oggetti di grafica** . Scegliere **Tabella oggetti** sulla barra degli strumenti **Diagnostica grafica**.
 
-2. Individuare l'oggetto **Dispositivo D3D10** nella **Tabella oggetti di grafica**e quindi aprire l'oggetto **Dispositivo D3D10** . Verrà aperta una nuova scheda **dispositivo d3d10** in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Per semplificare questa operazione, è possibile ordinare la **Tabella oggetti di grafica** in base a **Tipo**:
+2. Individuare l'oggetto **Dispositivo D3D10** nella **Tabella oggetti di grafica** e quindi aprire l'oggetto **Dispositivo D3D10** . Verrà aperta una nuova scheda **dispositivo d3d10** in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Per semplificare questa operazione, è possibile ordinare la **Tabella oggetti di grafica** in base a **Tipo**:
 
     ![Tabella oggetti grafici e stato del dispositivo correlato](media/vsg_walkthru1_objtable.png "vsg_walkthru1_objtable")
 
