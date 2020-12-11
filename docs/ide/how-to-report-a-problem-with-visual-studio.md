@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8e0718eb01f422ad435492304e77d73c14b4dee
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 2956372882d4449345d026e691a12afb2988054a
+ms.sourcegitcommit: 6ef4e46c786c5bbcc52cd9c30e5ddfca12ea8b3c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211175"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97050827"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Come segnalare un problema con Visual Studio o il programma di installazione di Visual Studio
 
@@ -65,7 +65,7 @@ ms.locfileid: "91211175"
 
 Quando in un problema mancano informazioni importanti, viene assegnato lo stato **needs more info (altre informazioni** ). Il problema viene commentato con le informazioni specifiche necessarie e si riceverà una notifica tramite posta elettronica. Se le informazioni non vengono ricevute entro sette giorni, viene inviato un promemoria. Successivamente, il ticket viene chiuso dopo 14 giorni di inattività.
 
-1. Per visualizzare tutti i report nello stato **needs more info (ulteriori informazioni** ), fare clic sul collegamento nel messaggio di posta elettronica per segnalare il problema oppure passare a commenti e suggerimenti.
+1. Per visualizzare tutti i report nello stato **needs more info (ulteriori informazioni** ), seguire il collegamento nel messaggio di posta elettronica al report relativo al problema o passare alla Home page.
 
     ![Commenti e suggerimenti](../ide/media/feedback-my-feedback.png)
 

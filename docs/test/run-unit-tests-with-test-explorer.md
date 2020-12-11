@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3633f3084b875974adac17fc27e7ec7a695ed91
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 58faf100c61a25ae014bdcc0b09d161e924ad5c9
+ms.sourcegitcommit: 21ac4a0c8ffac3964b75604678b12e0955e0159b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996383"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97098527"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -234,7 +234,16 @@ A partire da Visual Studio 2019 versione 16,7, è possibile scegliere il pulsant
 
 ![File XML playlist](../test/media/vs-2019/test-explorer-playlist-xml-file.png)
 
-Se si vuole creare una playlist per i tratti, usare il formato seguente. Verificare che sia presente uno spazio tra il `TestCategory` nome e il `[Value]` .
+Se si vuole creare una playlist per i tratti, usare il formato seguente per MSTest.
+```xml
+<Playlist Version="2.0">
+    <Rule Name="Includes" Match="Any">
+        <Property Name="Trait" Value="SchemaUpdateBasic" />
+    </Rule>
+</Playlist>
+```
+
+Usare il formato seguente per xUnit. Verificare che sia presente uno spazio tra il `TestCategory` nome e il `[Value]` .
 ```xml
 <Playlist Version="2.0">
   <Rule Name="Includes" Match="Any">
