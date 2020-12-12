@@ -1,5 +1,7 @@
 ---
 title: Definizione di forme e connettori
+description: Informazioni sui diversi tipi di forme di base che è possibile usare per visualizzare le informazioni su un diagramma in un linguaggio specifico di dominio (DSL).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd95c467f0cfcc997fe419abacb1811e02b468b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd98e449f674d2841dd41aa88e320468698f4736
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589669"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363822"
 ---
 # <a name="define-shapes-and-connectors"></a>Definire forme e connettori
 
@@ -34,7 +36,7 @@ Questi modelli non sono imposti ma sono fortemente supportati. Quando si progett
 
 Sono disponibili i tipi di forme seguenti:
 
-|Tipo di forma|Descrizione|
+|Tipo di forma|Description|
 |-|-|
 |Forma geometrica|Forma rettangolare o ellittica di utilizzo generale. È possibile visualizzare elementi Decorator testo e icona in posizioni specifiche relative ai contorni della forma. È anche possibile annidare forme all'interno di forme Geometry.|
 |Forma Raggruppamento|Rettangolo contenente un'intestazione e raggruppamenti, come una classe UML. Ogni raggruppamento può contenere un elenco di righe di testo.<br /><br /> Le righe in genere rappresentano gli elementi incorporati nell'elemento rappresentato dalla forma. Per un esempio, creare un DSL dal modello di soluzione Diagramma classi.|

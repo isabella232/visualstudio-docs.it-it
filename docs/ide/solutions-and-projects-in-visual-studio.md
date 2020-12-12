@@ -2,7 +2,7 @@
 title: Soluzioni e progetti
 description: Informazioni sui progetti e le soluzioni di Visual Studio e informazioni su come creare un nuovo progetto con lo strumento Esplora soluzioni.
 ms.custom: SEO-VS-2020
-ms.date: 06/26/2020
+ms.date: 12/11/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 949da02ac074e9740038fef7917655ca552a12f6
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 42250d4b60cf272f041fea6f44abd24f99645b93
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480707"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363458"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 
@@ -55,10 +55,14 @@ Un progetto è contenuto all'interno di una *soluzione*. Nonostante il nome, una
 
 Per archiviare le impostazioni delle soluzioni, Visual Studio usa due tipi di file, uno con estensione *sln* e uno con estensione *suo*.
 
-|Estensione|Nome|Descrizione|
+|Estensione|Nome|Description|
 |---------------|----------|-----------------|
 |sln|Soluzione Visual Studio|Organizza progetti, elementi del progetto ed elementi della soluzione nella soluzione.|
 |suo|Solution User Options|Archivia le impostazioni a livello di utente e le personalizzazioni, ad esempio i punti di interruzione.|
+
+### <a name="solution-folder"></a>Cartella soluzione
+
+In questo contesto, una "cartella della soluzione" è una cartella virtuale che è solo in **Esplora soluzioni**, in cui è possibile usarla per raggruppare i progetti in una soluzione. Per individuare la posizione in cui i progetti vengono archiviati nel computer, passare a **strumenti**  >  **Opzioni**  >  **progetti e soluzioni**  >  **percorsi**.
 
 ## <a name="create-new-projects"></a>Crea nuovi progetti
 

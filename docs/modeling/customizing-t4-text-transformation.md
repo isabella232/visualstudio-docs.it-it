@@ -1,5 +1,7 @@
 ---
 title: Personalizzazione della trasformazione del testo T4
+description: Informazioni su come estendere il processo di trasformazione del modello predefinito personalizzando il processore di direttiva del modello di testo o l'host del modello di testo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e35c279f397f1228c17fb6a41a18a2fe583ab88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b168e0e66b7704c3e78a241f76ee4122278c9ed
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589734"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362912"
 ---
 # <a name="customize-t4-text-transformation"></a>Personalizzare la trasformazione del testo T4
 
@@ -33,6 +35,6 @@ I modelli di testo sono una funzionalità di Visual Studio che consente di gener
 
  Se si scrive un'estensione di Visual Studio, è consigliabile utilizzare il servizio di trasformazione del testo esistente anziché scrivere un proprio host. Per altre informazioni, vedere [richiamo della trasformazione del testo in un'estensione di Visual](../modeling/invoking-text-transformation-in-a-vs-extension.md)Studio.
 
-## <a name="reference"></a>Informazioni di riferimento
+## <a name="reference"></a>Riferimento
 
 - [Scrivere un modello di testo T4](../modeling/writing-a-t4-text-template.md) fornisce la sintassi delle direttive e dei blocchi di controllo del modello di testo.

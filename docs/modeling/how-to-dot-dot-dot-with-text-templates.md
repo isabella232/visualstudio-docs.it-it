@@ -1,5 +1,7 @@
 ---
 title: Procedure relative ai modelli di testo
+description: Informazioni sulle risposte alle domande comuni riscontrate quando si usano modelli di testo per generare testo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ecabc00f37cb199f203bcd71a1b72bdbfbe1a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50844ce8c6943fcf6b2a0b91c7fd2cfcb6184094
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594656"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363185"
 ---
 # <a name="how-to--with-text-templates"></a>Procedure relative ai modelli di testo
 I modelli di testo in Visual Studio offrono un modo utile per generare testo di qualsiasi tipo. È possibile usare i modelli di testo per generare testo in fase di esecuzione come parte dell'applicazione e in fase di progettazione per generare parte del codice del progetto. Questo argomento riepiloga le domande più frequenti su "Ricerca per categorie...?" domande.
@@ -75,7 +77,7 @@ Se si scrivono i metodi manualmente:
 
      `foreach (Book book in this.Library) { ... }`
 
-     Per ulteriori informazioni, vedere [Introduzione con linguaggi specifici del dominio](../modeling/getting-started-with-domain-specific-languages.md) e [generazione di codice da una Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
+     Per ulteriori informazioni, vedere [Introduzione con Domain-Specific linguaggi](../modeling/getting-started-with-domain-specific-languages.md) e [generazione di codice da un linguaggio di Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="get-data-from-visual-studio"></a>Ottenere dati da Visual Studio
  Per usare i servizi forniti in Visual Studio, impostare l' `hostSpecific` attributo e caricare l' `EnvDTE` assembly. Ad esempio:

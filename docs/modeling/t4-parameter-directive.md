@@ -1,5 +1,7 @@
 ---
 title: Direttiva parameter T4
+description: Informazioni su come in Visual Studio, la direttiva parameter dichiara le proprietà nel codice del modello inizializzate dai valori passati dal contesto esterno.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f833eb651efda0edb837515e1bf2b3567e1a759
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df739f10764f20b415ac74ee4b4e529433c7dc96
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591801"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363627"
 ---
 # <a name="t4-parameter-directive"></a>Direttiva parameter T4
 
@@ -82,7 +84,7 @@ string result = t4.ProcessTemplate("",
 //     Test 32 test
 ```
 
-## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Passaggio di valori a un modello di testo in fase di esecuzione (pre-elaborata)
+## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Passaggio di valori a un modello di testo Run-Time (pre-elaborato)
  Non è in genere necessario usare la `<#@parameter#>` direttiva con i modelli di testo in fase di esecuzione (pre-elaborati). È invece possibile definire un costruttore aggiuntivo o una proprietà impostabile per il codice generato, tramite il quale si passano i valori dei parametri. Per altre informazioni, vedere [generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
  Tuttavia, se si desidera utilizzare `<#@parameter>` in un modello di run-time, è possibile passare i valori utilizzando il dizionario di sessione. Si supponga, ad esempio, di aver creato il file come modello pre-elaborato denominato `PreTextTemplate1` . È possibile richiamare il modello nel programma usando il codice seguente.

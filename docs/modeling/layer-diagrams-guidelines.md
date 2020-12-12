@@ -1,5 +1,7 @@
 ---
 title: 'Diagrammi delle dipendenze: linee guida'
+description: Informazioni su come descrivere l'architettura dell'app a un livello elevato creando diagrammi di dipendenza in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f8ec90d045259cd5d10533db6096154376d48fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bfef2f9397fbe8dfeceaa8789cf8d118315b26d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594630"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363965"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagrammi di dipendenza: linee guida
 
@@ -90,7 +92,7 @@ Vedere:
 È presente una dipendenza quando un elemento associato a un livello dispone di un riferimento a un elemento associato a un altro livello. Ad esempio, una classe di un livello dichiara una variabile che dispone di una classe in un altro livello. Per individuare le dipendenze esistenti, è possibile decompilarle.
 
 > [!NOTE]
-> Non è possibile decompilare dipendenze per determinati tipi di elementi. Ad esempio, non è possibile decompilare dipendenze da e verso un livello collegato a un file di testo. Per verificare quali elementi presentano dipendenze che è possibile decodificare, fare clic con il pulsante destro del mouse su uno o più livelli, quindi scegliere **Visualizza collegamenti**. In **Esplora livello**esaminare la colonna **supporta la convalida** . Le dipendenze non verranno decodificate per gli artefatti per i quali la colonna Visualizza **false**.
+> Non è possibile decompilare dipendenze per determinati tipi di elementi. Ad esempio, non è possibile decompilare dipendenze da e verso un livello collegato a un file di testo. Per verificare quali elementi presentano dipendenze che è possibile decodificare, fare clic con il pulsante destro del mouse su uno o più livelli, quindi scegliere **Visualizza collegamenti**. In **Esplora livello** esaminare la colonna **supporta la convalida** . Le dipendenze non verranno decodificate per gli artefatti per i quali la colonna Visualizza **false**.
 
 ### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Per decompilare le dipendenze esistenti tra i livelli
 
@@ -172,7 +174,7 @@ Durante il processo di sviluppo, potrebbe essere necessario eliminare alcuni con
 
 Per assicurarsi che le modifiche future nel codice siano conformi ai diagrammi di dipendenza, includere la convalida dei livelli nel processo di compilazione standard della soluzione. Ogni volta che altri membri del team compilano la soluzione, eventuali differenze tra le dipendenze nel codice e il diagramma delle dipendenze verranno segnalate come errori di compilazione. Per altre informazioni sull'inclusione della convalida dei livelli nel processo di compilazione, vedere [convalidare il codice con diagrammi di dipendenza](../modeling/validate-code-with-layer-diagrams.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
 - [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)

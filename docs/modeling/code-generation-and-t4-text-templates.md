@@ -1,5 +1,7 @@
 ---
 title: Generazione di codice e modelli di testo T4
+description: Informazioni su come un modello di testo T4 è una combinazione di blocchi di testo e logica di controllo che può generare un file di testo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbcd41461ab57e3bbb5fb48849ddde8593c587fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 871aa20fe4fc95ea1641b7f478cb9b01d71284aa
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548239"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363575"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Generazione di codice e modelli di testo T4
 
@@ -56,7 +58,7 @@ Per altre informazioni, vedere [generazione di testo in fase di esecuzione con m
 
 ## <a name="design-time-t4-text-templates"></a>Modelli di testo T4 della fase di progettazione
 
-I modelli della fase di progettazione definiscono parte del codice sorgente e altre risorse dell'applicazione. In genere si usano diversi modelli che leggono i dati in un singolo file di input o database e si generano alcuni file con *estensione cs*, *VB*o altri file di origine. Ogni modello genera un file. Vengono eseguiti in Visual Studio o MSBuild.
+I modelli della fase di progettazione definiscono parte del codice sorgente e altre risorse dell'applicazione. In genere si usano diversi modelli che leggono i dati in un singolo file di input o database e si generano alcuni file con *estensione cs*, *VB* o altri file di origine. Ogni modello genera un file. Vengono eseguiti in Visual Studio o MSBuild.
 
 I dati di input potrebbero ad esempio essere un file XML di dati di configurazione. Ogni volta che si modifica il file XML durante lo sviluppo, i modelli di testo rigenerano parte del codice dell'applicazione. Uno dei modelli potrebbe assomigliare all'esempio seguente:
 
@@ -94,6 +96,6 @@ Per altre informazioni, vedere [generazione di codice in fase di progettazione t
 
 La funzionalità di trasformazione del modello di testo è denominata *T4*.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generare codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md)

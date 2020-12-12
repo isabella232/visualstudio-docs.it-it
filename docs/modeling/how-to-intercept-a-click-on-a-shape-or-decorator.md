@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: intercettare un clic su una forma o su un elemento Decorator'
+description: Informazioni su come intercettare un clic su una forma o su un elemento Decorator icona e su come è possibile intercettare i clic, fare doppio clic, trascinare e altri movimenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58d447526d83fec406b6fc20a08edcec37de89ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff49c1950e81098633fab92ffbbdf25020945a1e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532522"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363900"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Procedura: intercettare un clic su una forma o su un elemento Decorator
 Nelle procedure riportate di seguito viene illustrato come intercettare un clic su una forma o su un elemento Decorator di icona. È possibile intercettare clic, fare doppio clic, trascinare e altri movimenti e fare in modo che l'elemento risponda.
@@ -227,7 +229,7 @@ namespace Company.CompartmentDrag
 
  /// <summary>
  /// Override some methods of the compartment shape.
- /// *** GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. ****
+ /// **_ GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. _***
  /// </summary>
  public partial class ClassShape
  {
@@ -393,7 +395,7 @@ namespace Company.CompartmentDrag
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Risposta alle modifiche e propagazione delle modifiche](../modeling/responding-to-and-propagating-changes.md)
 - [Proprietà degli elementi Decorator](../modeling/properties-of-decorators.md)

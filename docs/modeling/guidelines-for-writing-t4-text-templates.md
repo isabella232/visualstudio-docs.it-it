@@ -1,5 +1,7 @@
 ---
 title: Linee guida per la scrittura di modelli di testo T4
+description: Informazioni sulle linee guida generali utili per la generazione di codice programma o altre risorse dell'applicazione in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,18 +9,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f7be4ce9b8beb7699844397de3e1fc206d017c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596541"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363406"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Linee guida per la scrittura di modelli di testo T4
 
 Queste linee guida generali potrebbero essere utili se si genera codice programma o altre risorse dell'applicazione in Visual Studio. Non sono regole fisse.
 
-## <a name="guidelines-for-design-time-t4-templates"></a>Linee guida per i modelli T4 della fase di progettazione
+## <a name="guidelines-for-design-time-t4-templates"></a>Linee guida per i modelli Design-Time T4
 
 I modelli T4 della fase di progettazione sono modelli che generano codice nel progetto di Visual Studio in fase di progettazione. Per altre informazioni, vedere [generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
@@ -91,7 +93,7 @@ MyProject
    AnotherClass.cs
 ```
 
-## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Linee guida per i modelli T4 in fase di esecuzione (pre-elaborata)
+## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Linee guida per i modelli T4 Run-Time (pre-elaborati)
 
 Spostare il materiale comune in modelli ereditati.
 
@@ -169,7 +171,7 @@ Tuttavia, per alcuni tipi di requisiti aziendali, è importante chiarire set com
 
 È anche possibile progettare un tipo di diagramma personalizzato come linguaggio specifico di dominio (DSL). Il codice può essere generato sia da UML che da DSLs. Per altre informazioni, vedere [analisi e modellazione dell'architettura](../modeling/analyze-and-model-your-architecture.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Generazione di testo in fase di esecuzione con modelli di testo T4](../modeling/run-time-text-generation-with-t4-text-templates.md)

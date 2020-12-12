@@ -1,6 +1,6 @@
 ---
 title: Modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
-description: Panoramica degli strumenti di visualizzazione e modellazione in Visual Studio.
+description: Informazioni sugli strumenti di visualizzazione e modellazione in Visual Studio e su come usare questi strumenti per modificare la progettazione.
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.custom: SEO-VS-2020
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6ad330c083a97e8a098f05a9e0398a806a9153b
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 91b62716c87fafd965652452b6494fe255530e7b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189127"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363861"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Panoramica dello scenario: modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
 
@@ -482,7 +482,7 @@ I diagrammi di dipendenza consentono di:
 |-|-|
 |**Forum**|- [Visual Studio Visualization and Modeling Tools](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio Visualization and Modeling SDK (strumenti DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Visualizzare il codice](../modeling/visualize-code.md)
 - [Usare modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)

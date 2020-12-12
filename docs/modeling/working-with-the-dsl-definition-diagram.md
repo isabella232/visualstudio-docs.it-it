@@ -1,5 +1,7 @@
 ---
 title: Utilizzo del diagramma di definizione DSL
+description: Informazioni sul diagramma di una definizione di strumenti DSL è uno strumento importante per la definizione di un linguaggio specifico di dominio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec9e6fa7262fd389be7f1bb66ed2ed7005d6811
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d489bfde8b095e35bc652f1cdb7588b07458e48e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810796"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362834"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Utilizzo del diagramma di definizione DSL
 Il diagramma di una [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definizione è uno strumento importante per la definizione del linguaggio specifico di dominio. Consente di aggiungere elementi al modello di dominio e definire relazioni sul diagramma ed è possibile modificare il layout del diagramma per renderlo più leggibile.
@@ -70,6 +72,6 @@ Il diagramma di una [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definizione 
 ### <a name="show-as-class"></a>Show As Class
  Se una relazione di dominio dispone di relazioni derivate o se presenta relazioni di incorporamento o riferimento con altre relazioni di dominio, è possibile visualizzare la relazione come classe facendo clic con il pulsante destro del mouse sulla relazione e quindi scegliendo **Mostra come classe**. La relazione verrà visualizzata con un raggruppamento delle **proprietà del dominio** e mostrerà gli alberi ereditarietà e relazioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Glossario di Strumenti Domain-Specific Language](/previous-versions/bb126564(v=vs.100))

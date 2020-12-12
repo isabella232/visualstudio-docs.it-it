@@ -1,5 +1,7 @@
 ---
 title: Controllo della visibilità di un'icona o di un elemento Decorator
+description: Informazioni su come è possibile controllare la visibilità di un'icona o di un elemento Decorator a seconda dello stato delle proprietà nel modello.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,18 +9,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2082f7e26d3e335ed88bbced0f59d6d6c4780c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdf97cc10543f066665506d3e238386dc39f0d4f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546644"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363497"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controllo della visibilità di un'icona o di un elemento Decorator
 Un *elemento Decorator* è un'icona o una riga di testo visualizzata in una forma in un linguaggio specifico di dominio (DSL). È possibile far apparire l'elemento Decorator e scomparire a seconda dello stato delle proprietà nel modello. Ad esempio, in una forma che rappresenta una persona, è possibile che vengano visualizzate icone diverse in base al sesso, al numero di elementi figlio e così via.
 
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controllo della visibilità di un'icona o di un elemento Decorator
- Nella procedura seguente si presuppone che sia già stata definita una forma e il relativo mapping a una classe di dominio. Per ulteriori informazioni, vedere [come definire un Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md).
+ Nella procedura seguente si presuppone che sia già stata definita una forma e il relativo mapping a una classe di dominio. Per ulteriori informazioni, vedere [come definire un linguaggio Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).
 
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Per controllare la visibilità di un'icona o di un elemento Decorator del testo
 
@@ -74,9 +76,9 @@ Un *elemento Decorator* è un'icona o una riga di testo visualizzata in una form
 
     2. Controllare la casella del **filtro visibilità** .
 
-    3. In **Proprietà filtro**selezionare la proprietà del controllo **DecoratorControl**.
+    3. In **Proprietà filtro** selezionare la proprietà del controllo **DecoratorControl**.
 
-    4. In **voci di visibilità**immettere `True` .
+    4. In **voci di visibilità** immettere `True` .
 
 3. Fare clic su **trasforma tutti i modelli** nella barra degli strumenti **Esplora soluzioni** .
 
@@ -103,7 +105,7 @@ Un *elemento Decorator* è un'icona o una riga di testo visualizzata in una form
 
 8. Ricompilare ed eseguire la soluzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Definizione di forme e connettori](../modeling/defining-shapes-and-connectors.md)
 - [Impostazione di un'immagine di sfondo in un diagramma](../modeling/setting-a-background-image-on-a-diagram.md)

@@ -1,5 +1,7 @@
 ---
 title: Direttiva include T4
+description: 'Per informazioni su un modello di testo in Visual Studio, è possibile includere testo da un altro file tramite una direttiva < # @include # >.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1ee58c29be3c4dfb5e2148c54464a7a511d1839
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 825beee156c3de0e29e561817663c0f7731840dc
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591853"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363653"
 ---
 # <a name="t4-include-directive"></a>Direttiva include T4
 

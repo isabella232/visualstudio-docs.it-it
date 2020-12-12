@@ -1,5 +1,7 @@
 ---
 title: Edizioni di Visual Studio supportate per l'SDK di visualizzazione e modellazione
+description: Informazioni sulle edizioni di Visual Studio supportate con gli strumenti DSL negli ambienti di creazione e distribuzione.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 908a224feb9f6ad463ae14812b3a8550bf932e35
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 714b3d018e2522c9f6acf3b15ffec82a0b5d49ec
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "92298549"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363718"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Edizioni di Visual Studio supportate per l'SDK di visualizzazione e modellazione
 
@@ -48,6 +50,6 @@ Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) 
 > [!NOTE]
 > Per consentire l'esecuzione di un linguaggio DSL in un prodotto shell, è necessario impostare il campo **supported vs Edition** nel manifesto dell'estensione. Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Glossario di Strumenti Domain-Specific Language](/previous-versions/bb126564(v=vs.100))

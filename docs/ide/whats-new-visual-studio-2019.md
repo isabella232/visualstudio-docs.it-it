@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: de5027024956c03341ac3e2d851bf85430f48f18
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 69fb3d8b5e8af13ec8781e65e60bd060ad69d365
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878296"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362392"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novità di Visual Studio 2019
 
@@ -114,7 +114,7 @@ Per altre informazioni, vedere il post di blog [Better multi-monitor experience 
 
 Per altre informazioni, vedere il post di Blog relativo all' [annuncio di .NET Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
-## <a name="collaborate"></a>Collaborare
+## <a name="collaborate"></a>Collaborazione
 
 Vedere il video seguente per altre informazioni su come è possibile lavorare in team per risolvere i problemi. <br><br>*Lunghezza video: 4,22 minuti*
 
@@ -136,9 +136,9 @@ Per altre informazioni, vedere il post di Blog relativo [a come è stato progett
 
 ### <a name="git-productivity"></a>Produttività git
 
-**Novità di 16,8** Git è ora l'esperienza di controllo della versione predefinita in Visual Studio 2019. Il set di funzionalità è stato creato ed è stato iterato in base ai commenti e suggerimenti durante le ultime due versioni. La nuova esperienza è ora attivata per impostazione predefinita per tutti gli utenti. Dal nuovo menu git è possibile clonare, creare o aprire repository. Usare le finestre dello strumento git integrato per eseguire il commit e il push delle modifiche al codice, gestire i rami, rimanere aggiornati con i repository remoti e risolvere i conflitti di merge.
+**Novità in 16,8**: git è ora l'esperienza di controllo della versione predefinita in Visual Studio 2019. Il set di funzionalità è stato creato ed è stato iterato in base ai commenti e suggerimenti durante le ultime due versioni. La nuova esperienza è ora attivata per impostazione predefinita per tutti gli utenti. Dal nuovo menu git è possibile clonare, creare o aprire repository. Usare le finestre dello strumento git integrato per eseguire il commit e il push delle modifiche al codice, gestire i rami, rimanere aggiornati con i repository remoti e risolvere i conflitti di merge.
 
-Per ulteriori informazioni, vedere la pagina relativa alla [produttività git in Visual Studio](git-with-visual-studio.md) .
+Per altre informazioni, vedere la pagina relativa all' [esperienza git in Visual Studio](git-with-visual-studio.md) .
 
 ### <a name="live-share"></a>Live Share
 
@@ -226,7 +226,7 @@ Nel frattempo, di seguito sono riportate alcune delle nuove funzionalità attual
 
    Sebbene la nuova esperienza di controllo della versione di git sia ora attiva per impostazione predefinita in Visual Studio 2019 [versione 16,8](/visualstudio/releases/2019/release-notes/), è possibile continuare ad aggiungere funzionalità per migliorare l'esperienza nella versione di anteprima più recente.
 
-   Per ulteriori informazioni, vedere la pagina relativa alla [produttività git in Visual Studio](git-with-visual-studio.md) .
+   Per altre informazioni, vedere la pagina relativa all' [esperienza git in Visual Studio](git-with-visual-studio.md) .
 
 Per ulteriori informazioni sulla versione di anteprima &mdash; e su un collegamento per il download, &mdash; vedere la pagina di anteprima di **[Visual Studio](https://aka.ms/vspreview/)** .
 
@@ -238,8 +238,9 @@ Per ulteriori informazioni sulla versione di anteprima &mdash; e su un collegame
 
 * Se si verifica un problema a causa del quale Visual Studio smette di rispondere, arresti anomali o altri problemi di prestazioni, è possibile condividere con facilità i passaggi di riproduzione e i file di supporto usando lo strumento [segnala un problema](how-to-report-a-problem-with-visual-studio.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
+* [Novità della documentazione di Visual Studio](whats-new-visual-studio-docs.md)
 * [Note sulla versione di Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Note sulla versione di Visual Studio 2019 per Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Novità di Visual Studio 2019 SDK](../extensibility/whats-new-visual-studio-2019-sdk.md)

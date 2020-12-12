@@ -1,5 +1,7 @@
 ---
 title: Proprietà di archiviazione calcolate e personalizzate
+description: Informazioni sul modo in cui tutte le proprietà del dominio in un linguaggio specifico di dominio (DSL) possono essere visualizzate all'utente nel diagramma e in Esplora linguaggio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c50d205745917b3af7de638a17921f4bcdca509
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115189"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363549"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Proprietà di archiviazione calcolate e personalizzate
 Tutte le proprietà del dominio in un linguaggio specifico di dominio (DSL) possono essere visualizzate all'utente nel diagramma e in Esplora linguaggio ed è possibile accedervi tramite codice programma. Tuttavia, le proprietà differiscono in base alla modalità di archiviazione dei relativi valori.
@@ -22,7 +24,7 @@ Tutte le proprietà del dominio in un linguaggio specifico di dominio (DSL) poss
 ## <a name="kinds-of-domain-properties"></a>Tipi di proprietà del dominio
  Nella definizione DSL è possibile impostare il **tipo** di una proprietà di dominio, come elencato nella tabella seguente:
 
-|Tipo di proprietà del dominio|Descrizione|
+|Tipo di proprietà del dominio|Description|
 |-|-|
 |**Standard** (impostazione predefinita)|Proprietà di dominio salvata nell' *Archivio* e serializzata in un file.|
 |**Calcolate**|Proprietà di dominio di sola lettura che non viene salvata nell'archivio, ma viene calcolata da altri valori.<br /><br /> Ad esempio, `Person.Age` può essere calcolato da `Person.BirthDate` .<br /><br /> È necessario fornire il codice per eseguire il calcolo. In genere, il valore viene calcolato dalle altre proprietà del dominio. Tuttavia, è anche possibile usare le risorse esterne.|
@@ -43,11 +45,11 @@ Tutte le proprietà del dominio in un linguaggio specifico di dominio (DSL) poss
 
 4. Nel menu **Compila** scegliere **Compila soluzione**.
 
-     Viene visualizzato il messaggio di errore seguente: "*ClasseUtente* non contiene una definizione per Get*Proprietà*".
+     Viene visualizzato il messaggio di errore seguente: "*ClasseUtente* non contiene una definizione per Get *Proprietà*".
 
 5. Fare doppio clic sul messaggio di errore.
 
-     Viene aperto Dsl\GeneratedCode\DomainClasses.cs o DomainRelationships.cs. Al di sopra della chiamata al metodo evidenziato, un commento richiede di fornire un'implementazione per Get*Proprietà*().
+     Viene aperto Dsl\GeneratedCode\DomainClasses.cs o DomainRelationships.cs. Al di sopra della chiamata al metodo evidenziato, un commento richiede di fornire un'implementazione per Get *Proprietà*().
 
     > [!NOTE]
     > Questo file viene generato da DslDefinition. DSL. Se si modifica questo file, le modifiche andranno perse la volta successiva che si fa clic su **trasforma tutti i modelli**. Aggiungere invece il metodo richiesto in un file separato.
@@ -79,7 +81,7 @@ Tutte le proprietà del dominio in un linguaggio specifico di dominio (DSL) poss
 
 9. Compilare ed eseguire la soluzione.
 
-10. Testare la proprietà. Assicurarsi di provare a **annullare** e **ripetere**l'operazione.
+10. Testare la proprietà. Assicurarsi di provare a **annullare** e **ripetere** l'operazione.
 
 ## <a name="transactions-and-custom-setters"></a><a name="setters"></a> Transazioni e setter personalizzati
  Nel metodo set della proprietà di archiviazione personalizzata non è necessario aprire una transazione, perché il metodo viene in genere chiamato all'interno di una transazione attiva.
@@ -107,7 +109,7 @@ void SetAgeValue(int value)
 
  Per ulteriori informazioni sulle transazioni, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Esplorazione e aggiornamento di un modello nel codice del programma](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Proprietà delle proprietà di dominio](../modeling/properties-of-domain-properties.md)

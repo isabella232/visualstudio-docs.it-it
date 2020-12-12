@@ -1,5 +1,7 @@
 ---
 title: Strutturare la soluzione di modellazione
+description: Informazioni su uno schema di modellazione per dividere l'applicazione in parti diverse che corrispondono ai livelli in un diagramma a livelli generale.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc4eba7dc4d185cbd8eb4f1b073fce8b0c9fb07e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d2f865cf66da0bb4496a3d754a49d1f4dcc70ff
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545041"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363731"
 ---
 # <a name="structure-your-modeling-solution"></a>Strutturare la soluzione di modellazione
 
@@ -52,7 +54,7 @@ In un progetto di medie o grandi dimensioni, la struttura del team riflette la s
 
    A questo punto è disponibile un modello per ogni livello, oltre a un modello per l'architettura dell'applicazione. Ogni modello è contenuto in una soluzione separata. In questo modo, i membri del team possono lavorare contemporaneamente sugli stessi livelli.
 
-2. Aggiungere alla soluzione Architecture il progetto di modellazione della soluzione di ogni livello. A questo scopo, aprire la soluzione Architecture. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere Aggiungi, quindi fare clic su **progetto esistente**. Passare al progetto di modellazione (con estensione modelproj) in una soluzione del livello.
+2. Aggiungere alla soluzione Architecture il progetto di modellazione della soluzione di ogni livello. A questo scopo, aprire la soluzione Architecture. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere Aggiungi, quindi fare clic su **progetto esistente**. Passare al progetto di modellazione (con estensione modelproj) in una soluzione del livello.
 
    Ogni modello è ora visibile in due soluzioni: la relativa soluzione principale e la soluzione Architecture.
 
@@ -72,9 +74,9 @@ In un progetto di medie o grandi dimensioni, la struttura del team riflette la s
 
 #### <a name="use-a-separate-package-for-each-layer"></a>Usare un pacchetto separato per ogni livello
 
-1. Aggiungere il progetto di modello Architecture alla soluzione di ogni livello. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere **Aggiungi**, quindi fare clic su **progetto esistente**. A questo punto, è possibile accedere da qualsiasi soluzione al singolo progetto di modello, ossia al progetto Architecture e al progetto di sviluppo per ogni livello.
+1. Aggiungere il progetto di modello Architecture alla soluzione di ogni livello. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere **Aggiungi**, quindi fare clic su **progetto esistente**. A questo punto, è possibile accedere da qualsiasi soluzione al singolo progetto di modello, ossia al progetto Architecture e al progetto di sviluppo per ogni livello.
 
-2. Nel modello condiviso creare un pacchetto per ogni livello: in **Esplora soluzioni**selezionare il progetto di modello. In **Esplora modelli UML**fare clic con il pulsante destro del mouse sul nodo radice del modello, scegliere **Aggiungi**, quindi fare clic su **pacchetto**.
+2. Nel modello condiviso creare un pacchetto per ogni livello: in **Esplora soluzioni** selezionare il progetto di modello. In **Esplora modelli UML** fare clic con il pulsante destro del mouse sul nodo radice del modello, scegliere **Aggiungi**, quindi fare clic su **pacchetto**.
 
    Ogni pacchetto conterrà i diagrammi che descrivono i requisiti e la progettazione del livello corrispondente.
 
@@ -106,7 +108,7 @@ Ad esempio, se si usano spesso soluzioni con livelli presentazione, aziendale e 
 
 [Organizzare e gestire i modelli](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)
 - [Documentazione Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)

@@ -1,5 +1,7 @@
 ---
 title: Distribuzione MSI e VSIX di un linguaggio DSL
+description: Informazioni su come installare un linguaggio specifico di dominio (DSL) nel computer o in altri computer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d4de8d7560cb43115a30e29516e0e88b4d02d21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 623cbdcfaae6acd1889e265fecafec805e5a9440
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542616"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363133"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Distribuzione MSI e VSIX di un linguaggio DSL
 È possibile installare un linguaggio specifico di dominio nel computer in uso o in altri computer. Visual Studio deve essere già installato nel computer di destinazione.
@@ -33,9 +35,9 @@ Quando il linguaggio DSL viene installato da questo metodo, l'utente può aprire
 
 1. Individuare il file con **estensione VSIX** compilato dal progetto di pacchetto DSL:
 
-   1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **DslPackage** , quindi scegliere **Apri cartella in Esplora file**.
+   1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **DslPackage** , quindi scegliere **Apri cartella in Esplora file**.
 
-   2. Individuare il file **bin \\ \* \\ **_progettoutente_**. DslPackage. vsix**
+   2. Individuare il file **bin \\ \* \\**_progettoutente_**. DslPackage. vsix**
 
 2. Copiare il file **VSIX** nel computer di destinazione in cui si vuole installare il linguaggio DSL. Può trattarsi del computer in uso o di un altro computer.
 
@@ -61,7 +63,7 @@ Quando il linguaggio DSL viene installato da questo metodo, l'utente può aprire
 
    Raramente, un'estensione errata non viene caricata e crea un report nella finestra degli errori, ma non viene visualizzata in Gestione estensioni. In tal caso, è possibile rimuovere l'estensione eliminando il file da:
 
-   *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions** LocalAppData
+    **\Microsoft\VisualStudio\10.0\Extensions** LocalAppData
 
 ## <a name="deploying-a-dsl-in-an-msi"></a><a name="msi"></a> Distribuzione di un linguaggio DSL in un file MSI
  Definendo un file MSI (Windows Installer) per il linguaggio DSL, è possibile consentire agli utenti di aprire i file DSL da Esplora risorse. È anche possibile associare un'icona e una breve descrizione all'estensione del nome file. Inoltre, l'identità del servizio gestito può installare un XSD che può essere utilizzato per convalidare i file DSL. Se lo si desidera, è possibile aggiungere altri componenti nell'identità del servizio gestito che verranno installati nello stesso momento.
@@ -94,7 +96,7 @@ Quando il linguaggio DSL viene installato da questo metodo, l'utente può aprire
 
    - Fare clic sul nodo **Editor** e nella finestra Proprietà fare clic **sull'icona**. Impostare il valore in modo che faccia riferimento a un file di icona in **DslPackage\Resources**, ad esempio **file. ico**
 
-   - Nel menu **Compila** aprire **Configuration Manager**e selezionare la configurazione che si desidera compilare, ad esempio **versione** o **debug**.
+   - Nel menu **Compila** aprire **Configuration Manager** e selezionare la configurazione che si desidera compilare, ad esempio **versione** o **debug**.
 
 4. Passare a [visualizzazione e modellazione SDK Home page](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)e dalla scheda **download** scaricare **CreateMsiSetupProject.TT**.
 
@@ -106,9 +108,9 @@ Quando il linguaggio DSL viene installato da questo metodo, l'utente può aprire
 
     Se lo si desidera, è ora possibile escludere CreateMsiSetupProject.tt dal progetto DSL.
 
-7. In **Esplora soluzioni**aggiungere **Setup \\ \* . vdproj** come progetto esistente.
+7. In **Esplora soluzioni** aggiungere **Setup \\ \* . vdproj** come progetto esistente.
 
-8. Scegliere **Dipendenze progetto**dal menu **progetto** .
+8. Scegliere **Dipendenze progetto** dal menu **progetto** .
 
     Nella finestra di dialogo **Dipendenze progetto** selezionare il progetto di installazione.
 

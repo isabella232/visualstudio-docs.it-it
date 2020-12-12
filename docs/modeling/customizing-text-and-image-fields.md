@@ -1,5 +1,7 @@
 ---
 title: Personalizzazione dei campi testo e immagine
+description: Informazioni sulla personalizzazione dei file di testo e di immagine. Si apprenderà inoltre che quando si definisce un elemento Decorator di testo in una forma, questo viene rappresentato da un TextField.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29210ec667bffd6b632bcfbee0b87c0cbb2d5f38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6effda90580a184bb8ebfb8c4f4830dc6cb844d5
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542714"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362860"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizzazione dei campi testo e immagine
 Quando si definisce un elemento Decorator di testo in una forma, questo viene rappresentato da un TextField. Per esempi di inizializzazione di TextField e altri ShapeField, controllare Dsl\GeneratedCode\Shapes.cs nella soluzione DSL.
@@ -261,7 +263,7 @@ partial class ExampleShape
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Definizione di forme e connettori](../modeling/defining-shapes-and-connectors.md)
 - [Impostazione di un'immagine di sfondo in un diagramma](../modeling/setting-a-background-image-on-a-diagram.md)

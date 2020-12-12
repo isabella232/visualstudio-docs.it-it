@@ -1,5 +1,7 @@
 ---
 title: File DslDefinition.dsl
+description: Informazioni sulla struttura del file DslDefinition. DSL nel progetto DSL di una soluzione strumenti DSL, che definisce un linguaggio specifico di dominio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 893f39149a9000f3672c5b3043551bcbd53e6b87
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c5db379447f39ed3d0c2b82aee23c1ac94aad34d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808955"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362782"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>File DslDefinition.dsl
 
@@ -267,7 +269,7 @@ Oltre agli attributi e ai nodi figlio disponibili per tutte le classi, ogni rela
 
 ## <a name="designer-and-toolbox-tabs"></a>Schede Finestra di progettazione e Casella degli strumenti
 
-La parte principale della sezione della **finestra di progettazione** del file DslDefinition. DSL è costituita dagli elementi **ToolBoxTab** . Una finestra di progettazione può avere molti di questi elementi, ognuno dei quali rappresenta una sezione diretta nella **casella degli strumenti**della finestra di progettazione generata. Ogni elemento **ToolBoxTab** può contenere uno o più elementi **ElementTool** , elementi **ConnectionTool** o entrambi.
+La parte principale della sezione della **finestra di progettazione** del file DslDefinition. DSL è costituita dagli elementi **ToolBoxTab** . Una finestra di progettazione può avere molti di questi elementi, ognuno dei quali rappresenta una sezione diretta nella **casella degli strumenti** della finestra di progettazione generata. Ogni elemento **ToolBoxTab** può contenere uno o più elementi **ElementTool** , elementi **ConnectionTool** o entrambi.
 
 Gli elementi ElementTool possono creare istanze di una classe di dominio specifica. Quando l'utente trascina un ElementTool nel diagramma, il risultato è determinato dalle direttive di merge degli elementi come descritto nella sezione relativa alle direttive di merge degli elementi più avanti in questo argomento.
 
@@ -296,7 +298,7 @@ In questo esempio, InPort è una sottoclasse di ComponentPort e ha una relazione
 Quando si scrive codice C# per questo modello, è possibile attraversare un collegamento in un unico passaggio tramite la proprietà che la relazione genera su ciascuna delle classi che collega:
 
 ```
-     InPort port; ...  Component c = port.Component;
+     InPort port; ...  Component c = port.Component;
 ```
 
 È però necessario eseguire entrambi gli hop in modo esplicito nella sintassi del percorso. Questo requisito consente di accedere al collegamento intermedio più facilmente. Il codice seguente completa l'hop dal collegamento alla proprietà Component:
@@ -465,7 +467,7 @@ Il file serializzato contiene:
 
 La relazione di connessione include dati della classe XML propri che forniscono i nomi degli elementi e degli attributi della classe.
 
-Se l'attributo **ometteelement** è impostato su true, il nome del ruolo della relazione viene omesso, che abbrevia il file serializzato e non è ambiguo se le due classi non hanno più di una relazione. Esempio:
+Se l'attributo **ometteelement** è impostato su true, il nome del ruolo della relazione viene omesso, che abbrevia il file serializzato e non è ambiguo se le due classi non hanno più di una relazione. Ad esempio:
 
 ```xml
 <component name="Component3">
@@ -480,7 +482,7 @@ Il file DslDefinition.dsl è un file serializzato e risulta conforme a una defin
 
 - **DSL** è il nodo RootClass e la classe del diagramma. DomainClass, DomainRelationship e altri elementi sono incorporati in `Dsl`.
 
-- **Classi** è il **RoleElementName** della relazione tra Domain-Specific Language e DomainClass.
+- **Classi** è il **RoleElementName** della relazione tra Domain-Specific lingua e DomainClass.
 
 ```xml
 <Dsl Name="CmptDsl5" ...>
@@ -577,7 +579,7 @@ La mappa dei connettori minima fa riferimento a un connettore e a una relazione:
 
 Le mappe dei connettori possono anche contenere mappe degli elementi Decorator.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Glossario di Strumenti Domain-Specific Language](/previous-versions/bb126564(v=vs.100))
 - [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)

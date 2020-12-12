@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aggiungere un comando al menu di scelta rapida'
+description: Informazioni su come aggiungere i comandi di menu al linguaggio specifico di dominio (DSL) in modo che gli utenti possano eseguire attività specifiche per il linguaggio DSL.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aac779a3c165d10262c078ff431731d9d248f3a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dc51de28162471262d8c4bd35ddd09bc156896e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545717"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363341"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Procedura: aggiungere un comando al menu di scelta rapida
 
@@ -157,7 +159,7 @@ La classe del set di comandi è derivata da <xref:Microsoft.VisualStudio.Modelin
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2. In **DslPackage**creare una cartella denominata **codice personalizzato**. In questa cartella creare un nuovo file di classe denominato `CommandSet.cs` .
+2. In **DslPackage** creare una cartella denominata **codice personalizzato**. In questa cartella creare un nuovo file di classe denominato `CommandSet.cs` .
 
 3. Nel nuovo file scrivere una dichiarazione parziale con lo stesso spazio dei nomi e lo stesso nome della classe parziale generata. Ad esempio:
 
@@ -357,7 +359,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Assicurarsi di aver disinstallato versioni precedenti del pacchetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Procedura: modificare un comando di menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)

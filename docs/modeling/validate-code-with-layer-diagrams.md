@@ -1,5 +1,7 @@
 ---
 title: Convalidare il codice con i diagrammi delle dipendenze
+description: Per assicurarsi che il codice non sia in conflitto con la progettazione, è necessario convalidare il codice con i diagrammi delle dipendenze in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,12 +21,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 975fe8eac5657e245027a4811e50bbc93528cfe5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc8b36768cbac4249b964b167988119b5700d5c7
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80759695"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362548"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Convalidare il codice con i diagrammi delle dipendenze
 
@@ -42,7 +44,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, convali
 
    Trovare codice o dipendenze che richiedono azioni quando si sposta il codice in un'architettura diversa.
 
-**Requisiti**
+**Requirements**
 
 - Visual Studio
 
@@ -80,13 +82,13 @@ La convalida delle dipendenze viene eseguita in tempo reale e gli errori vengono
 
 1. Nel diagramma delle dipendenze selezionare uno o più livelli, fare clic con il pulsante destro del mouse sulla selezione e quindi scegliere **Visualizza collegamenti**.
 
-2. In **Esplora livello**esaminare la colonna **supporta la convalida** . Se il valore è false, l'elemento non supporta la convalida.
+2. In **Esplora livello** esaminare la colonna **supporta la convalida** . Se il valore è false, l'elemento non supporta la convalida.
 
 ## <a name="include-other-net-assemblies-and-projects-for-validation"></a>Includere altri progetti e assembly .NET per la convalida
 
 Quando si trascinano elementi nel diagramma delle dipendenze, i riferimenti agli assembly .NET o ai progetti corrispondenti vengono aggiunti automaticamente alla cartella **Riferimenti livello** nel progetto di modello. Questa cartella contiene i riferimenti agli assembly e ai progetti analizzati durante la convalida. È possibile includere altri assembly e progetti .NET per la convalida senza trascinarli manualmente nel diagramma delle dipendenze.
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto di modello o sulla cartella **Riferimenti livello** , quindi scegliere **Aggiungi riferimento**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto di modello o sulla cartella **Riferimenti livello** , quindi scegliere **Aggiungi riferimento**.
 
 2. Nella finestra di dialogo **Aggiungi riferimento** selezionare gli assembly o i progetti, quindi fare clic su **OK**.
 
@@ -161,7 +163,7 @@ Durante il processo di sviluppo, potrebbe essere necessario eliminare alcuni con
 
 Usare queste attività per gestire gli errori di convalida nella finestra **Elenco errori** :
 
-|**To**|**Attenersi alla seguente procedura**|
+|**To**|**seguire le operazioni di seguito riportate**|
 |-|-|
 |Eliminare gli errori selezionati durante la convalida|Fare clic con il pulsante destro del mouse su uno o più errori selezionati, scegliere **Gestisci errori di convalida**, quindi fare clic su non **visualizzare errori**.<br /><br /> Gli errori eliminati vengono visualizzati come barrati. Alla successiva convalida, questi errori non saranno visualizzati.<br /><br /> Gli errori eliminati vengono rilevati in un file con estensione eliminazioni per il file del diagramma di dipendenza corrispondente.|
 |Interrompere l'eliminazione di errori selezionati|Fare clic con il pulsante destro del mouse sull'errore o sugli errori eliminati selezionati, scegliere **Gestisci errori di convalida**, quindi fare clic su **Interrompi eliminazione errori**.<br /><br /> Alla successiva convalida, gli errori eliminati selezionati verranno visualizzati.|
@@ -182,13 +184,13 @@ Usare un editor di testo per aprire il file del progetto di modello (.modelproj)
 
 \- - oppure -
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto di modello contenente il diagramma o i diagrammi delle dipendenze, quindi scegliere **Proprietà**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto di modello contenente il diagramma o i diagrammi delle dipendenze, quindi scegliere **Proprietà**.
 
 2. Nella finestra **Proprietà** impostare la proprietà **convalida architettura** del progetto di modello su **true**.
 
     Il progetto di modello viene incluso nel processo di convalida.
 
-3. In **Esplora soluzioni**fare clic sul file del diagramma di dipendenza (con estensione layerdiagram) che si desidera utilizzare per la convalida.
+3. In **Esplora soluzioni** fare clic sul file del diagramma di dipendenza (con estensione layerdiagram) che si desidera utilizzare per la convalida.
 
 4. Nella finestra **Proprietà** verificare che la proprietà **azione di compilazione** del diagramma sia impostata su **convalida**.
 
@@ -234,7 +236,7 @@ Nella sezione seguente viene descritta la sintassi usata negli errori, viene ill
 | DV3001: **collegamento mancante** | Il livello '*LayerName*' si collega a'*artefatto*' che non è stato trovato. Probabilmente manca un riferimento a un assembly. |
 | DV9001: l' **analisi dell'architettura ha rilevato errori interni** | I risultati potrebbero non essere completi. Per altre informazioni, vedere il log dettagliato degli eventi di compilazione o la finestra di output. |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Convalida delle dipendenze in tempo reale in Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)

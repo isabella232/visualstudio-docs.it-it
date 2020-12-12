@@ -1,5 +1,7 @@
 ---
 title: Creazione di processori di direttiva di modelli di testo T4 personalizzati
+description: Informazioni sul processo di trasformazione del modello di testo e su come creare un processore di direttiva del modello di testo T4 personalizzato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70aa1853701ef671b7057ad698a0fb63334a1ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 283f2122c05a91a5e677293f59e3f6e02d43f63a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597178"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363426"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>Creare processori di direttiva di modelli di testo T4 personalizzati
 
@@ -64,7 +66,7 @@ Dopo tutte le chiamate a ProcessDirective () il motore del modello chiamerà que
 
 - Per altre informazioni, vedere [procedura dettagliata: creazione di un processore di direttiva personalizzato](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Distribuire un processore di direttiva personalizzato](../modeling/deploying-a-custom-directive-processor.md) spiega come registrare un processore di direttiva personalizzato.
 - [Procedura dettagliata: creare un processore di direttiva personalizzato](../modeling/walkthrough-creating-a-custom-directive-processor.md) descrive come creare un processore di direttiva personalizzato, come registrare e testare il processore di direttiva e come formattare il file di output come HTML.

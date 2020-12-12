@@ -1,5 +1,7 @@
 ---
 title: Processo di trasformazione del modello di testo
+description: Informazioni che il processo di trasformazione del modello di testo accetta un file modello di testo come input e genera un nuovo file di testo come output.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0caadfe9abf38b2d83995da7efa32d618b4bfe0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565864"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362652"
 ---
 # <a name="the-text-template-transformation-process"></a>Processo di trasformazione del modello di testo
 Il processo di trasformazione del modello di testo accetta un file modello di testo come input e genera un nuovo file di testo come output. Ad esempio, è possibile usare i modelli di testo per generare codice Visual Basic o C# oppure è possibile generare un report HTML.

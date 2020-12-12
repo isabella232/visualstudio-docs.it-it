@@ -1,5 +1,7 @@
 ---
 title: Generazione di codice in fase di progettazione tramite modelli di testo T4
+description: Informazioni su come i modelli di testo T4 in fase di progettazione consentono di generare codice programma e altri file nel progetto di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c392862f884fd8082b30cbb673aab116756fdfe
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 698dde24cb66d27a12a0f8785c8ac97e4cfb0eb0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426772"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363809"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generazione di codice in fase di progettazione tramite modelli di testo T4
 
@@ -35,13 +37,13 @@ Se, come è probabile, si ha già esperienza di generazione di codice, Quando si
 
 Un modello di testo include una combinazione del testo da generare e di codice programma che genera le parti variabili del testo. Il codice programma consente di ripetere o omettere in modo condizionale parti del testo generato. Il testo generato può essere a sua volta codice programma che genererà parte dell'applicazione.
 
-## <a name="create-a-design-time-t4-text-template"></a>Creare un modello di testo T4 in fase di progettazione
+## <a name="create-a-design-time-t4-text-template"></a>Creare un modello di testo Design-Time T4
 
 1. Creare un nuovo progetto di Visual Studio o aprirne uno esistente.
 
 2. Aggiungere un file di modello di testo al progetto e assegnargli un nome con estensione **TT**.
 
-    A tale scopo, in **Esplora soluzioni**scegliere **Aggiungi**  >  **nuovo elemento**dal menu di scelta rapida del progetto. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **modello di testo** dal riquadro centrale.
+    A tale scopo, in **Esplora soluzioni** scegliere **Aggiungi**  >  **nuovo elemento** dal menu di scelta rapida del progetto. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **modello di testo** dal riquadro centrale.
 
     Si noti che la proprietà **strumento personalizzato** del file è **TextTemplatingFileGenerator**.
 
@@ -64,7 +66,7 @@ Un modello di testo include una combinazione del testo da generare e di codice p
 
     Potrebbe essere visualizzata una finestra di messaggio di **avviso di sicurezza** in cui viene chiesto di confermare che si desidera eseguire il modello. Fare clic su **OK**.
 
-6. In **Esplora soluzioni**espandere il nodo del file del modello e si troverà un file con estensione **txt**. Il file contiene testo generato dal modello.
+6. In **Esplora soluzioni** espandere il nodo del file del modello e si troverà un file con estensione **txt**. Il file contiene testo generato dal modello.
 
    > [!NOTE]
    > Se il progetto è un progetto di Visual Basic, è necessario fare clic su **Mostra tutti i file** per visualizzare il file di output.
@@ -79,7 +81,7 @@ Nei casi seguenti sarà eseguito un modello, che genera il file secondario:
 
 - Fare clic su **trasforma tutti i modelli** nel menu **Compila** . Questa operazione comporterà la trasformazione di tutti i modelli nella soluzione di Visual Studio.
 
-- In **Esplora soluzioni**scegliere **Esegui strumento personalizzato**dal menu di scelta rapida di qualsiasi file. Usare questo metodo per trasformare un sottoinsieme selezionato di modelli.
+- In **Esplora soluzioni** scegliere **Esegui strumento personalizzato** dal menu di scelta rapida di qualsiasi file. Usare questo metodo per trasformare un sottoinsieme selezionato di modelli.
 
 È anche possibile impostare un progetto di Visual Studio in modo che i modelli vengano eseguiti quando i file di dati letti sono stati modificati. Per ulteriori informazioni, vedere [rigenerazione automatica del codice](#Regenerating).
 
@@ -388,6 +390,6 @@ Vedere [linee guida per la scrittura di modelli di testo T4](../modeling/guideli
 |Trasformare i dati nel formato di un linguaggio specifico di dominio.|[Generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Scrivere processori di direttive per trasformare le origini dati.|[Personalizzazione della trasformazione del testo T4](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Linee guida per la scrittura di modelli di testo T4](../modeling/guidelines-for-writing-t4-text-templates.md)

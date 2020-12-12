@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: creare una soluzione per un linguaggio specifico di dominio'
+description: Informazioni su come creare un linguaggio specifico di dominio (DSL) usando una soluzione di Visual Studio specializzata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c47b16bbb9fe5eb352171e6e1cf4c13890890265
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c913f3015c56f7872dfe5ef3471578de7075b7d0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298661"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363276"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procedura: creare una soluzione per un linguaggio specifico di dominio
 Un linguaggio specifico di dominio (DSL) viene creato usando una soluzione specializzata di Visual Studio.
@@ -56,7 +58,7 @@ Prima di iniziare questa procedura, installare i componenti seguenti:
 
    - Se è stata usata l'estensione del nome file in DSLs sperimentali precedenti che non sono stati completamente installati, è possibile cancellarli usando lo strumento **Reimposta istanza sperimentale** , disponibile nel menu di Visual Studio SDK.
 
-   - Se un'altra estensione di Visual Studio che usa questa estensione di file è stata completamente installata nel computer, è consigliabile disinstallarla. Scegliere **Gestione estensioni**dal menu **strumenti** .
+   - Se un'altra estensione di Visual Studio che usa questa estensione di file è stata completamente installata nel computer, è consigliabile disinstallarla. Scegliere **Gestione estensioni** dal menu **strumenti** .
 
 4. Esaminare e, se necessario, modificare i campi nelle pagine rimanenti della procedura guidata. Una volta soddisfatte le impostazioni, fare clic su **fine**. Per ulteriori informazioni sulle impostazioni, vedere [finestra di progettazione DSL pagine della procedura guidata](#settings).
 
@@ -89,11 +91,11 @@ Digitare una nuova estensione di file.
 
      \- - oppure -
 
-- Reimpostare l'istanza sperimentale di Visual Studio. Verrà annullata la registrazione di tutti i DSLs compilati in precedenza. Dal menu **Start** fare clic su **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti**e quindi **reimpostare l'istanza sperimentale Microsoft Visual Studio 2010**. È possibile ricompilare qualsiasi altra DSLs che si vuole usare di nuovo.
+- Reimpostare l'istanza sperimentale di Visual Studio. Verrà annullata la registrazione di tutti i DSLs compilati in precedenza. Dal menu **Start** fare clic su **tutti i programmi**, **Microsoft Visual Studio 2010 SDK**, **strumenti** e quindi **reimpostare l'istanza sperimentale Microsoft Visual Studio 2010**. È possibile ricompilare qualsiasi altra DSLs che si vuole usare di nuovo.
 
      \- - oppure -
 
-- Se un'estensione di Visual Studio che usa questa estensione di file è stata completamente installata nel computer, disinstallarla. Scegliere **Gestione estensioni**dal menu **strumenti** .
+- Se un'estensione di Visual Studio che usa questa estensione di file è stata completamente installata nel computer, disinstallarla. Scegliere **Gestione estensioni** dal menu **strumenti** .
 
 ### <a name="product-settings-page"></a>Pagina Impostazioni prodotto
  **Qual è il nome del prodotto a cui appartiene il nuovo linguaggio specifico di dominio?**
@@ -116,7 +118,7 @@ Il valore predefinito è un nome composto dai nomi della società e del prodotto
 
  Per ulteriori informazioni sulla denominazione sicura, vedere [creazione e utilizzo di assembly Strong-Named](/dotnet/standard/assembly/create-use-strong-named).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Glossario di Strumenti Domain-Specific Language](/previous-versions/bb126564(v=vs.100))

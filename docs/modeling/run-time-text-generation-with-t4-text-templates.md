@@ -1,5 +1,7 @@
 ---
 title: Generazione di testo in fase di esecuzione con modelli di testo T4
+description: Informazioni su come generare stringhe di testo nell'applicazione in fase di esecuzione usando i modelli di testo di runtime di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344e15b69bf3e8308c62c6fa1074720b0cd7618d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fcb7048b4319d1edb46911a74e96f440540e4299
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520835"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363939"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generazione di testo in fase di esecuzione con modelli di testo T4
 
@@ -49,11 +51,11 @@ Si noti che il modello è una pagina HTML in cui le parti variabili sono state s
 
 L'uso di un modello nell'applicazione rende più semplice la visualizzazione del formato finale dell'output, ad esempio una serie di istruzioni Write lunghe. Apportare modifiche al modulo dell'output è più semplice e più affidabile.
 
-## <a name="creating-a-run-time-text-template-in-any-application"></a>Creazione di un modello di testo in fase di esecuzione in qualsiasi applicazione
+## <a name="creating-a-run-time-text-template-in-any-application"></a>Creazione di un Run-Time modello di testo in qualsiasi applicazione
 
 ### <a name="to-create-a-run-time-text-template"></a>Per creare un modello di testo in fase di esecuzione
 
-1. In Esplora soluzioni scegliere **Aggiungi**  >  **nuovo elemento**dal menu di scelta rapida del progetto.
+1. In Esplora soluzioni scegliere **Aggiungi**  >  **nuovo elemento** dal menu di scelta rapida del progetto.
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **modello di testo runtime**. (In Visual Basic cerca in **elementi comuni**  >  **Generale**).
 
@@ -74,15 +76,15 @@ L'uso di un modello nell'applicazione rende più semplice la visualizzazione del
     <#@ import namespace="System.Collections.Generic" #>
     ```
 
-## <a name="converting-an-existing-file-to-a-run-time-template"></a>Conversione di un file esistente in un modello in fase di esecuzione
+## <a name="converting-an-existing-file-to-a-run-time-template"></a>Conversione di un file esistente in un modello di Run-Time
 
 Un modo efficace per creare un modello consiste nel convertire un esempio esistente di output. Se, ad esempio, l'applicazione genera file HTML, è possibile iniziare creando un file HTML normale. Verificare che funzioni correttamente e che l'aspetto sia corretto. Quindi includerlo nel progetto di Visual Studio e convertirlo in un modello.
 
 ### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Per convertire un file di testo esistente in un modello in fase di esecuzione
 
-1. Includere il file nel progetto di Visual Studio. In Esplora soluzioni scegliere **Aggiungi**  >  **elemento esistente**dal menu di scelta rapida del progetto.
+1. Includere il file nel progetto di Visual Studio. In Esplora soluzioni scegliere **Aggiungi**  >  **elemento esistente** dal menu di scelta rapida del progetto.
 
-2. Impostare la proprietà **strumenti personalizzati** del file su **TextTemplatingFilePreprocessor**. In Esplora soluzioni scegliere **Proprietà**dal menu di scelta rapida del file.
+2. Impostare la proprietà **strumenti personalizzati** del file su **TextTemplatingFilePreprocessor**. In Esplora soluzioni scegliere **Proprietà** dal menu di scelta rapida del file.
 
     > [!NOTE]
     > Se la proprietà è già impostata, verificare che sia **TextTemplatingFilePreprocessor** e non **TextTemplatingFileGenerator**. Questo problema può verificarsi se si include un file che ha già l'estensione **TT**.
@@ -95,7 +97,7 @@ Un modo efficace per creare un modello consiste nel convertire un esempio esiste
 
     `<#@ template language="C#" #>`
 
-## <a name="the-content-of-the-run-time-template"></a>Contenuto del modello in fase di esecuzione
+## <a name="the-content-of-the-run-time-template"></a>Contenuto del modello di Run-Time
 
 ### <a name="template-directive"></a>Template (direttiva)
 
@@ -294,7 +296,7 @@ Il contenuto incluso può contenere qualsiasi combinazione di codice programma e
 
 La direttiva include può essere utilizzata in qualsiasi punto all'interno del testo di un file modello o di un file incluso.
 
-### <a name="inheritance-between-run-time-text-templates"></a>Ereditarietà tra modelli di testo in fase di esecuzione
+### <a name="inheritance-between-run-time-text-templates"></a>Ereditarietà tra Run-Time modelli di testo
 
 È possibile condividere contenuto tra modelli di runtime scrivendo un modello di classe base, che può essere astratto. Usare il `inherits` parametro della `<@#template#>` direttiva per fare riferimento a un'altra classe modello di Runtime.
 
@@ -433,7 +435,7 @@ Modelli della fase di progettazione: se si vuole usare un modello per generare c
 
 I modelli in fase di esecuzione possono essere utilizzati in qualsiasi applicazione in cui i modelli e il relativo contenuto vengono determinati in fase di compilazione. Tuttavia, se si vuole scrivere un'estensione di Visual Studio che genera testo da modelli che cambiano in fase di esecuzione, vedere [richiamo della trasformazione del testo in un'estensione vs](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md)
 - [Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md)

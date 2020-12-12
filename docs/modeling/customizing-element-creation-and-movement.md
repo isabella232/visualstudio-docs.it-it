@@ -1,5 +1,7 @@
 ---
 title: Personalizzazione della creazione e dello spostamento di elementi
+description: Informazioni su come è possibile consentire il trascinamento di un elemento in un altro, dalla casella degli strumenti o in un'operazione di Incolla o spostamento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a94f1e3321d846578ea42c69e50d48713ff618fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96ef956980b08e688970ad0a00d7d1a0804da7c3
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547264"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363120"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizzazione della creazione e dello spostamento di elementi
 
@@ -87,7 +89,7 @@ Gli utenti possono anche incollare elementi su altri elementi.
 
 2. Per consentire agli utenti di unire elementi sulle `ExampleElement` forme, creare un nuovo EMD nella `ExampleElement` classe di dominio:
 
-   1. In **DSL Explorer**espandere **classi di dominio**. Fare clic con il pulsante destro del mouse `ExampleElement` e scegliere **Aggiungi nuova direttiva di Unione elementi**.
+   1. In **DSL Explorer** espandere **classi di dominio**. Fare clic con il pulsante destro del mouse `ExampleElement` e scegliere **Aggiungi nuova direttiva di Unione elementi**.
 
    2. Assicurarsi che la finestra **Dettagli DSL** sia aperta, in modo che sia possibile visualizzare i dettagli del nuovo EMD. (Menu: **Visualizza**, **altre finestre**, **Dettagli DSL**).
 
@@ -97,7 +99,7 @@ Gli utenti possono anche incollare elementi su altri elementi.
 
     Si noti che la classe di indicizzazione diventa il nome del EMD in DSL Explorer.
 
-4. In **processo Unione mediante creazione di collegamenti**aggiungere due percorsi:
+4. In **processo Unione mediante creazione di collegamenti** aggiungere due percorsi:
 
    - Un percorso collega il nuovo elemento al modello padre. L'espressione di percorso che è necessario immettere consente di spostarsi dall'elemento esistente, fino alla relazione di incorporamento con il modello padre. Infine, specifica il ruolo nel nuovo collegamento a cui verrà assegnato il nuovo elemento. Il percorso è il seguente:
 
@@ -109,7 +111,7 @@ Gli utenti possono anche incollare elementi su altri elementi.
 
       È possibile utilizzare lo strumento di navigazione percorso per creare ogni percorso:
 
-      1. In **processo Unione creando collegamenti nei percorsi**fare clic su **\<add path>** .
+      1. In **processo Unione creando collegamenti nei percorsi** fare clic su **\<add path>** .
 
       2. Fare clic sulla freccia a discesa a destra della voce dell'elenco. Viene visualizzata una visualizzazione struttura ad albero.
 
@@ -258,11 +260,11 @@ Nel codice di merge personalizzato è possibile definire cosa accade quando l'ut
 
 ### <a name="to-write-custom-merge-code"></a>Per scrivere codice di merge personalizzato
 
-1. In **Dsl\Generated Code\DomainClasses.cs**controllare i metodi denominati `MergeRelate` . Questi metodi creano collegamenti tra un nuovo elemento e il modello esistente.
+1. In **Dsl\Generated Code\DomainClasses.cs** controllare i metodi denominati `MergeRelate` . Questi metodi creano collegamenti tra un nuovo elemento e il modello esistente.
 
     Esaminare inoltre i metodi denominati `MergeDisconnect` . Questi metodi scollegano un elemento dal modello quando deve essere eliminato.
 
-2. In **DSL Explorer**selezionare o creare la direttiva di Unione elementi che si desidera personalizzare. Nella finestra **Dettagli DSL** impostare **Usa unione personalizzata**.
+2. In **DSL Explorer** selezionare o creare la direttiva di Unione elementi che si desidera personalizzare. Nella finestra **Dettagli DSL** impostare **Usa unione personalizzata**.
 
     Quando si imposta questa opzione, le opzioni **elabora Unione** e Esegui **merge** vengono ignorate. Viene invece usato il codice.
 
@@ -288,7 +290,7 @@ Ad esempio, in un linguaggio DSL creato con il modello di diagramma dei componen
 
 2. Visualizzare **DSL Explorer** aprendo DslDefinition. DSL.
 
-3. In **DSL Explorer**espandere classi di **dominio**.
+3. In **DSL Explorer** espandere classi di **dominio**.
 
 4. La classe di dominio astratta **ComponentPort** è la classe base sia di **InPort** che di **OutPort**. Fare clic con il pulsante destro del mouse su **ComponentPort** e quindi scegliere **Aggiungi nuova direttiva di Unione elementi**.
 
@@ -300,7 +302,7 @@ Ad esempio, in un linguaggio DSL creato con il modello di diagramma dei componen
 
 7. Selezionare Esegui **merge in un'altra classe di dominio**.
 
-8. Nell'elenco di selezione del percorso espandere **ComponentPort**, espandere **ComponentHasPorts**e quindi selezionare **Component**.
+8. Nell'elenco di selezione del percorso espandere **ComponentPort**, espandere **ComponentHasPorts** e quindi selezionare **Component**.
 
     Il nuovo percorso sarà simile a quello riportato di seguito:
 
@@ -310,13 +312,13 @@ Ad esempio, in un linguaggio DSL creato con il modello di diagramma dei componen
 
 10. Compilare ed eseguire la soluzione. Viene visualizzata una nuova istanza di Visual Studio.
 
-11. In **Esplora soluzioni**aprire Sample. mydsl. Verranno visualizzati il diagramma e la **casella degli strumenti ComponentLanguage** .
+11. In **Esplora soluzioni** aprire Sample. mydsl. Verranno visualizzati il diagramma e la **casella degli strumenti ComponentLanguage** .
 
 12. Trascinare una **porta di input** dalla **casella degli strumenti** in un'altra **porta di input.** Trascinare quindi un **OutputPort** in **InputPort** e quindi in un altro **OutputPort**.
 
      Non dovrebbe essere visualizzato il puntatore non disponibile e dovrebbe essere possibile eliminare la nuova porta di **input** su quella esistente. Selezionare la nuova **porta di input** e trascinarla in un altro punto del **componente**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Esplorazione e aggiornamento di un modello nel codice del programma](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Personalizzazione di strumenti e della casella degli strumenti](../modeling/customizing-tools-and-the-toolbox.md)

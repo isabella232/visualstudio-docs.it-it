@@ -1,5 +1,7 @@
 ---
 title: Direttiva assembly T4
+description: In un modello di testo in fase di progettazione di Visual Studio, la direttiva assembly carica un assembly in modo che il codice del modello possa usare i relativi tipi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41abd2b5a48f6e5e126747326e9815f3c2f46787
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591892"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363705"
 ---
 # <a name="t4-assembly-directive"></a>Direttiva assembly T4
 
@@ -88,6 +90,6 @@ In un modello di testo della fase di progettazione di Visual Studio, la `assembl
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Direttiva include T4](../modeling/t4-include-directive.md)

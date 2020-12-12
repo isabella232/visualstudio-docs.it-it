@@ -1,5 +1,7 @@
 ---
 title: Convalida in un linguaggio specifico di dominio
+description: Informazioni su come definire vincoli di convalida per verificare che il modello creato dall'utente sia significativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a37dbb4d9754641b4bcca826ff0ec77c7298d9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb9baced0a4cc38ae175146d3f3779c5b9c28dd2
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594006"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362535"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Convalida in un linguaggio specifico di dominio
 Gli autori di un linguaggio specifico di dominio possono definire vincoli di convalida per verificare che il modello creato dall'utente sia significativo. Ad esempio, se il linguaggio specifico di dominio consente agli utenti di disegnare l'albero genealogico di determinate persone e dei relativi antenati, è possibile scrivere un vincolo per garantire che le date di nascita dei figli siano successive a quelle dei genitori.
@@ -193,7 +195,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  Se si imposta la molteplicità di un ruolo di una relazione di dominio su 1..* o 1..1, ma l'utente non crea un collegamento di questa relazione, verrà visualizzato un messaggio di errore di convalida.
 
- Ad esempio, se il linguaggio DSL presenta le classi Person e Town e una relazione PersonLivesInTown con una relazione **1. \\ ** * nel ruolo della città, per ogni persona che non ha un paese, verrà visualizzato un messaggio di errore.
+ Ad esempio, se il linguaggio DSL presenta le classi Person e Town e una relazione PersonLivesInTown con una relazione **1. \\** _ al ruolo Town, quindi per ogni persona che non ha un paese, verrà visualizzato un messaggio di errore.
 
 ## <a name="running-validation-from-program-code"></a>Esecuzione della convalida dal codice programma
  È possibile eseguire la convalida creando o accedendo a un oggetto ValidationController. Se si desidera che gli errori vengano visualizzati all'utente nella finestra di errore, utilizzare ValidationController collegato al DocData del diagramma. Ad esempio, se si intende scrivere un comando di menu, `CurrentDocData.ValidationController` è disponibile nella classe del set di comandi:
@@ -233,7 +235,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>Esecuzione della convalida in caso di modifica
  Se si vuole che l'utente venga avvertito immediatamente nel caso in cui il modello non è più valido, è possibile definire un evento dell'archivio che esegue la convalida. Per ulteriori informazioni sugli eventi di archiviazione, vedere [i gestori eventi propagano le modifiche al di fuori del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
- Oltre al codice di convalida, aggiungere un file di codice personalizzato al progetto **DslPackage** con contenuto simile all'esempio seguente. Questo codice usa il controller `ValidationController` allegato al documento. Questo controller Visualizza gli errori di convalida nell'elenco errori di Visual Studio.
+ Oltre al codice di convalida, aggiungere un file di codice personalizzato al progetto _ *DslPackage** con contenuto simile all'esempio seguente. Questo codice usa il controller `ValidationController` allegato al documento. Questo controller Visualizza gli errori di convalida nell'elenco errori di Visual Studio.
 
 ```csharp
 using System;
@@ -334,7 +336,7 @@ validationController.ValidateCustom
 > [!WARNING]
 > Assicurarsi di informare l'utente dell'adattamento della modifica o del rollback. Ad esempio, usare `System.Windows.Forms.MessageBox.Show("message").`
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Esplorazione e aggiornamento di un modello nel codice del programma](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [I gestori eventi propagano le modifiche al di fuori del modello](../modeling/event-handlers-propagate-changes-outside-the-model.md)

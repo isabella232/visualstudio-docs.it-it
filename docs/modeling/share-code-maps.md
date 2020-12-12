@@ -1,5 +1,7 @@
 ---
 title: Esportare e salvare mappe codice
+description: Informazioni su come salvare le mappe codice come parte di un progetto di Visual Studio, come immagine o come file XPS.
+ms.custom: SEO-VS-2020
 ms.date: 05/16/2018
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7f72010623d20e79a327877a512f0b7352bac5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9898b720e51c2750b67054d1f095200372f426da
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542571"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363770"
 ---
 # <a name="share-code-maps"></a>Condividere le mappe codice
 
@@ -51,12 +53,12 @@ Quando si esporta una mappa codice come immagine, è possibile copiarla in altre
 
 Quando si esporta una mappa codice come file XPS, è possibile visualizzarla in visualizzatori XAML o XML come Internet Explorer.
 
-1. Sulla barra degli strumenti della mappa codice scegliere **Condividi**  >  **messaggio di posta elettronica come** portabile XPS o **Salva come**portabile XPS.
+1. Sulla barra degli strumenti della mappa codice scegliere **Condividi**  >  **messaggio di posta elettronica come** portabile XPS o **Salva come** portabile XPS.
 
 2. Scegliere la posizione in cui salvare il file.
 
 3. Assegnare un nome alla mappa codice. Assicurarsi che la casella **Salva come** sia impostata su **XPS Files ( \* . Xps)**. Scegliere **Salva**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Eseguire il mapping delle dipendenze con le mappe codice](../modeling/map-dependencies-across-your-solutions.md)

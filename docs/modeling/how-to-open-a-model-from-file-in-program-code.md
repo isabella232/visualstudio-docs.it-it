@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aprire un modello da file nel codice del programma'
+description: Informazioni sul fatto che ModelBus fornisce un meccanismo standard per fare riferimento a un modello o a elementi in un modello e per individuare il modello se è stato spostato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19cec066d66b08d3f02f3885908722aad047172b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f854edc45724f0e1f3db5bda22cb6aa006d77e60
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532483"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363874"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Procedura: aprire un modello da file nel codice del programma
 
@@ -26,7 +28,7 @@ Impostare il **Framework di destinazione** del progetto di applicazione su .NET 
 
 1. Aprire il progetto di Visual Studio per l'applicazione in cui si desidera leggere un modello DSL.
 
-2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**.
 
 3. Nella scheda **applicazione** della finestra Proprietà progetto impostare il campo **Framework di destinazione** su **.NET Framework 4** (o versione successiva).
 
@@ -45,7 +47,7 @@ Aggiungere i riferimenti seguenti al progetto di applicazione di Visual Studio:
 
 ## <a name="important-classes-in-the-dsl"></a>Classi importanti nel linguaggio DSL
 
-Prima di poter scrivere il codice che legge il linguaggio DSL, è necessario essere a conoscenza dei nomi di alcune classi generate dal DSL. Nella soluzione DSL aprire il progetto **DSL** ed esaminare la cartella **GeneratedCode** . In alternativa, fare doppio clic sull'assembly DSL nei **riferimenti**del progetto e aprire lo spazio dei nomi dsl in **Visualizzatore oggetti**.
+Prima di poter scrivere il codice che legge il linguaggio DSL, è necessario essere a conoscenza dei nomi di alcune classi generate dal DSL. Nella soluzione DSL aprire il progetto **DSL** ed esaminare la cartella **GeneratedCode** . In alternativa, fare doppio clic sull'assembly DSL nei **riferimenti** del progetto e aprire lo spazio dei nomi dsl in **Visualizzatore oggetti**.
 
 Queste sono le classi che è necessario identificare:
 

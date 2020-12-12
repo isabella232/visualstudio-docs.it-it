@@ -1,5 +1,7 @@
 ---
 title: Più soluzioni DSL in una soluzione unica
+description: Informazioni su come creare un pacchetto di diversi linguaggi specifici del dominio (DSLs) come parte di una singola soluzione in modo che vengano installati insieme.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2eef29db24da3be0a9376ea76a9a1a551af9e1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1fbadc93f6245427284ea10c1cdd7cf99c5a7f68
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542597"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363092"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Più soluzioni DSL in una soluzione unica
 
@@ -32,7 +34,7 @@ Esistono varie tecniche per integrare più linguaggi specifici di dominio. Per a
 
    - Modificare i nomi dei progetti **DSL** e **DslPackage** in modo che siano tutti diversi. Ad esempio: `Dsl1`, `DslPackage1`, `Dsl2`, `DslPackage2`.
 
-   - In ogni **DslPackage \* \ source.Extension.TT**aggiornare questa riga al nome del progetto DSL corretto:
+   - In ogni **DslPackage \* \ source.Extension.TT** aggiornare questa riga al nome del progetto DSL corretto:
 
       `string dslProjectName = "Dsl2";`
 
@@ -54,7 +56,7 @@ Esistono varie tecniche per integrare più linguaggi specifici di dominio. Per a
 
    Il progetto VSIX risultante installerà entrambi i linguaggi specifici di dominio. È possibile testarli usando F5 oppure distribuire _progettovsix_**\bin\Debug \\ \* . vsix**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Integrazione di modelli tramite ModelBus di Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [Procedura: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)

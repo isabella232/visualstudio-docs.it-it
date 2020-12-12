@@ -1,5 +1,7 @@
 ---
 title: Generazione di codice in un processo di compilazione
+description: Informazioni sul modo in cui la trasformazione del testo può essere richiamata come parte del processo di compilazione di una soluzione di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: af0039fb8c945062bc19fa647b477c40c44d5346
-ms.sourcegitcommit: a876fcc75321f9c30729121cae83f400973f9d9d
+ms.openlocfilehash: 3000a02621f7e2c274522a199cfe499e2335c4c2
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92298210"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363562"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Richiama trasformazione testo nel processo di compilazione
 
@@ -57,7 +59,7 @@ Se [il server di compilazione](/azure/devops/pipelines/agents/agents) è in esec
 
 Modificare il file di progetto per configurare alcune delle funzionalità di MSBuild, ad esempio l'importazione delle destinazioni di trasformazione del testo.
 
-In **Esplora soluzioni**scegliere **Scarica** dal menu di scelta rapida del progetto. Ciò consente di modificare il file con estensione csproj o vbproj nell'editor XML. Al termine della modifica, scegliere **ricarica**.
+In **Esplora soluzioni** scegliere **Scarica** dal menu di scelta rapida del progetto. Ciò consente di modificare il file con estensione csproj o vbproj nell'editor XML. Al termine della modifica, scegliere **ricarica**.
 
 ## <a name="import-the-text-transformation-targets"></a>Importare le destinazioni di trasformazione del testo
 
@@ -299,7 +301,7 @@ Se si aggiorna un file incluso o un altro file letto dal modello, Visual Studio 
 
 - I [modelli di testo](../modeling/run-time-text-generation-with-t4-text-templates.md) in fase di esecuzione vengono trasformati in fase di esecuzione nell'applicazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 ::: moniker range="vs-2017"
 

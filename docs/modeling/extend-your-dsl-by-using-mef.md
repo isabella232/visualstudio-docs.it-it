@@ -1,5 +1,7 @@
 ---
 title: Estendere il DSL mediante MEF
+description: Informazioni su come è possibile estendere il linguaggio specifico di dominio (DSL) usando il Managed Extensibility Framework (MEF).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d14b3b17953ef30620d9f616bb471b186e9c9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20dc9b6ac1bd4e565fd10793889c611f9b039778
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547641"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363172"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estendere il DSL mediante MEF
 
@@ -129,7 +131,7 @@ Se si ha accesso a un linguaggio DSL abilitato per MEF creato dall'utente o da u
 
    - Questo assembly ha in genere un nome che termina con ".Dsl.dll".
 
-   - Se si ha accesso al progetto DSL, è possibile trovare il file di assembly nel ** \\ \\ \* contenitore DSL** directory
+   - Se si ha accesso al progetto DSL, è possibile trovare il file di assembly nella directory **DSL \\ bin \\ \** _
 
    - Se si ha accesso al file VSIX DSL, è possibile trovare l'assembly modificando l'estensione del nome file del file VSIX in ". zip". Decomprimere il file zip.
 
@@ -145,23 +147,23 @@ Se si ha accesso a un linguaggio DSL abilitato per MEF creato dall'utente o da u
 
    - System.Windows.Forms.dll
 
-4. Creare un nuovo progetto **progetto VSIX** .
+4. Creare un nuovo progetto _ *progetto VSIX**.
 
-5. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto VSIX e scegliere **Imposta come progetto di avvio**.
+5. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto VSIX e scegliere **Imposta come progetto di avvio**.
 
 6. Nel nuovo progetto aprire **source. Extension. vsixmanifest**.
 
-7. Fare clic su **Aggiungi contenuto**. Nella finestra di dialogo impostare **tipo di contenuto** su **componente MEF**e **progetto di origine** sul progetto libreria di classi.
+7. Fare clic su **Aggiungi contenuto**. Nella finestra di dialogo impostare **tipo di contenuto** su **componente MEF** e **progetto di origine** sul progetto libreria di classi.
 
 8. Aggiungere un riferimento VSIX al linguaggio DSL.
 
-   1. In **source. Extension. vsixmanifest**fare clic su **Aggiungi riferimento**
+   1. In **source. Extension. vsixmanifest** fare clic su **Aggiungi riferimento**
 
-   2. Nella finestra di dialogo fare clic su **Aggiungi payload** , quindi individuare il file VSIX del linguaggio DSL. Il file VSIX è compilato nella soluzione DSL, in **DslPackage \\ bin \\ \* **.
+   2. Nella finestra di dialogo fare clic su **Aggiungi payload** , quindi individuare il file VSIX del linguaggio DSL. Il file VSIX è compilato nella soluzione DSL, in **DslPackage \\ bin \\ \** _.
 
        Ciò consente agli utenti di installare il linguaggio DSL e l'estensione nello stesso momento. Se l'utente ha già installato il linguaggio DSL, verrà installata solo l'estensione.
 
-9. Esaminare e aggiornare gli altri campi di **source. Extension. vsixmanifest**. Fare clic su **Seleziona edizioni** e verificare che siano impostate le edizioni di Visual Studio corrette.
+9. Esaminare e aggiornare gli altri campi di _ * source. Extension. vsixmanifest * *. Fare clic su **Seleziona edizioni** e verificare che siano impostate le edizioni di Visual Studio corrette.
 
 10. Aggiungere codice al progetto libreria di classi. Usare gli esempi nella sezione successiva come guida.
 
@@ -323,7 +325,7 @@ namespace MefExtension
 
 I metodi di convalida sono contrassegnati dall' `ValidationExtension` attributo generato dal DSL e anche da <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> . Il metodo può essere visualizzato in qualsiasi classe non contrassegnata da un attributo.
 
-Per ulteriori informazioni, vedere [convalida in un Domain-Specific Language](../modeling/validation-in-a-domain-specific-language.md).
+Per ulteriori informazioni, vedere [convalida in un linguaggio Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
 ```csharp
 using Company.MyDsl;
@@ -372,7 +374,7 @@ namespace MefExtension
 } } } }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Distribuzione delle estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)

@@ -1,5 +1,7 @@
 ---
 title: Personalizzazione della finestra Proprietà
+description: Informazioni su come personalizzare l'aspetto e il comportamento della finestra Proprietà nel linguaggio specifico di dominio (DSL) in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f7d4ac76b8b10fde0c193e3eda73cec611c1441
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548278"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362874"
 ---
 # <a name="customize-the-properties-window"></a>Personalizzare il Finestra Proprietà
 
@@ -40,13 +42,13 @@ Alcune delle funzionalità dinamiche degli elementi grafici possono essere rappr
 
 Fare clic con il pulsante destro del mouse su una classe Shape nella definizione DSL, scegliere **Aggiungi esposto**, quindi scegliere una funzionalità.
 
-Nelle forme è possibile esporre le proprietà **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** e **FillGradientMode** . Sui connettori è possibile esporre le proprietà **color** `,` **TextColor**, **DashStyle**e **Thickness** . Nei diagrammi è possibile esporre le proprietà **FillColor** e **TextColor** .
+Nelle forme è possibile esporre le proprietà **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** e **FillGradientMode** . Sui connettori è possibile esporre le proprietà **color** `,` **TextColor**, **DashStyle** e **Thickness** . Nei diagrammi è possibile esporre le proprietà **FillColor** e **TextColor** .
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>Inoltring: visualizzare le proprietà degli elementi correlati
 
 Quando l'utente del linguaggio DSL seleziona un elemento in un modello, le proprietà dell'elemento vengono visualizzate nella finestra Proprietà. Tuttavia, è anche possibile visualizzare le proprietà degli elementi correlati specificati. Questa funzione è utile se è stato definito un gruppo di elementi che interagiscono. È ad esempio possibile definire un elemento principale e un elemento plug-in facoltativo. Se l'elemento principale viene mappato a una forma e l'altro non lo è, è utile visualizzare tutte le relative proprietà come se si trovassero in un elemento.
 
-Questo effetto è denominato *inoltring di proprietà*e si verifica automaticamente in diversi casi. In altri casi, è possibile ottenere l'inoltri delle proprietà definendo un descrittore di tipo di dominio.
+Questo effetto è denominato *inoltring di proprietà* e si verifica automaticamente in diversi casi. In altri casi, è possibile ottenere l'inoltri delle proprietà definendo un descrittore di tipo di dominio.
 
 ### <a name="default-property-forwarding-cases"></a>Case di invio proprietà predefinite
 
@@ -75,7 +77,7 @@ Nella procedura seguente si presuppone che sia stato creato un linguaggio DSL. I
 
     La molteplicità del ruolo di origine (il ruolo sul lato **libro** ) dovrebbe essere 0.. 1 o 1.. 1, in modo che ogni **libro** abbia un solo **autore**.
 
-2. In **DSL Explorer**fare clic con il pulsante destro del mouse sulla classe di dominio **book** , quindi scegliere **Aggiungi nuovo DomainTypeDescriptor**.
+2. In **DSL Explorer** fare clic con il pulsante destro del mouse sulla classe di dominio **book** , quindi scegliere **Aggiungi nuovo DomainTypeDescriptor**.
 
     Un nodo denominato **percorsi di descrittori di proprietà personalizzati** viene visualizzato nel nodo **descrittore di tipo personalizzato** .
 
@@ -113,13 +115,13 @@ Tuttavia, è possibile specificare gli editor e i tipi seguenti:
 
 ### <a name="define-a-domain-property-that-has-an-external-type"></a>Definire una proprietà di dominio con un tipo esterno
 
-1. In **Esplora soluzioni**aggiungere un riferimento all'assembly (dll) che contiene il tipo esterno nel progetto **DSL** .
+1. In **Esplora soluzioni** aggiungere un riferimento all'assembly (dll) che contiene il tipo esterno nel progetto **DSL** .
 
     L'assembly può essere un assembly .NET o un assembly fornito dall'utente.
 
 2. Aggiungere il tipo all'elenco dei **tipi di dominio** , a meno che non sia già stato fatto.
 
-   1. Aprire DslDefinition. DSL e in **DSL Explorer**fare clic con il pulsante destro del mouse sul nodo radice e quindi scegliere **Aggiungi nuovo tipo esterno**.
+   1. Aprire DslDefinition. DSL e in **DSL Explorer** fare clic con il pulsante destro del mouse sul nodo radice e quindi scegliere **Aggiungi nuovo tipo esterno**.
 
         Una nuova voce viene visualizzata sotto il nodo **tipi di dominio** .
 

@@ -1,5 +1,7 @@
 ---
 title: Personalizzazione di Esplora modelli
+description: Informazioni su come modificare l'aspetto e il comportamento di Esplora risorse per la finestra di progettazione del linguaggio specifico di dominio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b69748ef44ce0ca2e16f431c0d13d99bfa449411
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7d4bdfcea6cbc54fd620e9aacbdc6250493ca426
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807872"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362890"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizzazione di Esplora modelli
 È possibile modificare l'aspetto e il comportamento di Esplora risorse per la finestra di progettazione del linguaggio specifico di dominio come indicato di seguito:
@@ -44,7 +46,7 @@ ms.locfileid: "90807872"
 
 2. Inserire un file con estensione BMP contenente un'icona 16x16-pixel nella cartella **Dsl\Resources** della soluzione.
 
-3. In **DSL Explorer**fare clic con il pulsante destro del mouse su **Esplora comportamento** e quindi scegliere **Aggiungi nuove impostazioni del nodo di esplorazione**.
+3. In **DSL Explorer** fare clic con il pulsante destro del mouse su **Esplora comportamento** e quindi scegliere **Aggiungi nuove impostazioni del nodo di esplorazione**.
 
     Viene visualizzato un nodo **ExplorerNodeSettings** sotto il nodo **Impostazioni nodo personalizzato** .
 
@@ -68,9 +70,9 @@ ms.locfileid: "90807872"
 
 1. Aprire la soluzione creata nella procedura precedente.
 
-2. Verificare che il **Commento** faccia riferimento solo a una singola classe di dominio impostando la molteplicità del ruolo con gli **oggetti** nome proprietà su 0.. 1. Il nome della proprietà deve essere **soggetto**e il nome della relazione deve diventare **CommentReferencesSubject**.
+2. Verificare che il **Commento** faccia riferimento solo a una singola classe di dominio impostando la molteplicità del ruolo con gli **oggetti** nome proprietà su 0.. 1. Il nome della proprietà deve essere **soggetto** e il nome della relazione deve diventare **CommentReferencesSubject**.
 
-3. In **DSL Explorer**fare clic con il pulsante destro del mouse su **Esplora comportamento** e quindi scegliere **Aggiungi nuove impostazioni del nodo di esplorazione**.
+3. In **DSL Explorer** fare clic con il pulsante destro del mouse su **Esplora comportamento** e quindi scegliere **Aggiungi nuove impostazioni del nodo di esplorazione**.
 
      Viene visualizzato un nodo **ExplorerNodeSettings** sotto il nodo **Impostazioni nodo personalizzato** .
 
@@ -78,11 +80,11 @@ ms.locfileid: "90807872"
 
 5. Fare clic con il pulsante destro del mouse sul nodo **Comment** , quindi scegliere **Aggiungi nuovo percorso proprietà**.
 
-     Viene visualizzato un nuovo nodo denominato **Proprietà**denominata.
+     Viene visualizzato un nuovo nodo denominato **Proprietà** denominata.
 
-6. Selezionare **Proprietà visualizzata**, quindi nella finestra **Proprietà** fare clic sul campo valore di percorso della **proprietà**. Selezionare **Comment**, quindi **CommentReferencesSubject**e **FlowElement**. Il percorso risultante sarà simile a **CommentReferencesSubject. Subject/! Oggetto**.
+6. Selezionare **Proprietà visualizzata**, quindi nella finestra **Proprietà** fare clic sul campo valore di percorso della **proprietà**. Selezionare **Comment**, quindi **CommentReferencesSubject** e **FlowElement**. Il percorso risultante sarà simile a **CommentReferencesSubject. Subject/! Oggetto**.
 
-7. Nel campo valore della **Proprietà**selezionare **nome**.
+7. Nel campo valore della **Proprietà** selezionare **nome**.
 
 8. Trasformare tutti i modelli, quindi compilare ed eseguire la soluzione.
 
@@ -99,7 +101,7 @@ ms.locfileid: "90807872"
 
 1. Aprire la soluzione creata nella procedura precedente.
 
-2. In **DSL Explorer**fare clic con il pulsante destro del mouse su **Esplora comportamento** , quindi scegliere **Aggiungi nuovo percorso di dominio**.
+2. In **DSL Explorer** fare clic con il pulsante destro del mouse su **Esplora comportamento** , quindi scegliere **Aggiungi nuovo percorso di dominio**.
 
      Un nodo del **percorso di dominio** viene visualizzato sotto i **nodi nascosti**.
 
@@ -111,6 +113,6 @@ ms.locfileid: "90807872"
 
      La finestra di esplorazione dovrebbe visualizzare solo un nodo **Actors** e non deve visualizzare il nodo **Commenti** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Glossario di Strumenti Domain-Specific Language](/previous-versions/bb126564(v=vs.100))

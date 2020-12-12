@@ -1,5 +1,7 @@
 ---
 title: Connetti host al processore di direttiva generato
+description: Informazioni su come espandere l'host personalizzato in modo che supporti i modelli di testo che chiamano i processori di direttiva.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 8dfca47159192c1f6fe25f703b54745b55d8e384
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a98e432c7eb9508d32f52e51acc1447035b9058b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88237997"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362496"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Procedura dettagliata: Connettere un host a un processore di direttiva generato
 
@@ -51,9 +53,9 @@ Per definire un linguaggio specifico di dominio (Domain-Specific Language, DSL) 
 
 Inoltre, è necessario che la trasformazione del modello di testo personalizzato sia stata creata in [procedura dettagliata: creazione di un host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
-## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Usare Strumenti Domain-Specific Language per generare un processore di direttiva
+## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Usare gli strumenti del linguaggio Domain-Specific per generare un processore di direttiva
 
-In questa procedura dettagliata viene usata la procedura guidata Finestra di progettazione Domain-Specific Language per creare un linguaggio specifico di dominio per la soluzione DSLMinimalTest.
+In questa procedura dettagliata viene utilizzata la creazione guidata di Domain-Specific linguaggio per creare un linguaggio specifico di dominio per la soluzione DSLMinimalTest.
 
 1. Creare una soluzione di linguaggio specifico di dominio con le caratteristiche seguenti:
 
@@ -65,7 +67,7 @@ In questa procedura dettagliata viene usata la procedura guidata Finestra di pro
 
    - Nome della società: fabrikam
 
-   Per altre informazioni sulla creazione di una soluzione di linguaggio specifico di dominio, vedere [procedura: creare una soluzione Domain-Specific Language](../modeling/how-to-create-a-domain-specific-language-solution.md).
+   Per altre informazioni sulla creazione di una soluzione di linguaggio specifico di dominio, vedere [procedura: creare una soluzione di linguaggio Domain-Specific](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 2. Nel menu **Compila** scegliere **Compila soluzione**.
 
@@ -82,7 +84,7 @@ In questa procedura dettagliata viene usata la procedura guidata Finestra di pro
 
 5. Chiudere la seconda istanza di Visual Studio.
 
-6. Salvare la soluzione, quindi chiudere la Finestra di progettazione Domain-Specific Language.
+6. Salvare la soluzione, quindi chiudere la finestra di progettazione del linguaggio Domain-Specific.
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Connettere un host del modello di testo personalizzato a un processore di direttiva
 
@@ -342,7 +344,7 @@ Per testare l'host del modello di testo personalizzato, è prima necessario scri
 
      L'applicazione host personalizzata viene eseguita e avvia il processo di trasformazione del modello di testo.
 
-5. In **Esplora risorse**passare alla cartella che contiene il file TestTemplateWithDP.txt.
+5. In **Esplora risorse** passare alla cartella che contiene il file TestTemplateWithDP.txt.
 
      La cartella contiene anche il file TestTemplateWithDP1.txt.
 
@@ -360,6 +362,6 @@ Per testare l'host del modello di testo personalizzato, è prima necessario scri
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura dettagliata: creazione di un host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md)
