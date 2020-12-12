@@ -1,5 +1,6 @@
 ---
 title: Usare ModelBus in un modello di testo
+description: Informazioni su come risolvere i riferimenti per accedere ai modelli di destinazione se si scrivono modelli di testo che leggono un modello contenente Visual Studio ModelBus riferimenti.
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +8,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a6c9cb035637347ffd501b5cf3b1038cd09369
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1025e7d35c20dc18c87942e23cf71b598d85637a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535941"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361365"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Utilizzo di ModelBus di Visual Studio in un modello di testo
 
@@ -53,7 +54,7 @@ Per risolvere un riferimento ModelBus in un modello di testo, è necessario che 
 
     2. Rinominare il file di progetto (ad esempio, in **T4ModelBusAdapter. csproj**).
 
-    3. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere **Aggiungi**, quindi fare clic su **progetto esistente**. Individuare il nuovo progetto di adapter, **T4ModelBusAdapter. csproj**.
+    3. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere **Aggiungi**, quindi fare clic su **progetto esistente**. Individuare il nuovo progetto di adapter, **T4ModelBusAdapter. csproj**.
 
     4. In ogni `*.tt` file del nuovo progetto modificare lo spazio dei nomi.
 
@@ -396,7 +397,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     Se l'MBR è stato impostato su tale elemento, viene aperto il modello a cui si fa riferimento e viene selezionato l'elemento a cui si fa riferimento.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Integrazione di modelli tramite ModelBus di Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [Generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md)

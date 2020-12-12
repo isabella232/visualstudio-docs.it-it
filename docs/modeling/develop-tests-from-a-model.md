@@ -1,5 +1,7 @@
 ---
 title: Sviluppare test da un modello
+description: Informazioni su come usare i requisiti e i modelli architetturali per organizzare i test del sistema e dei relativi componenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c18fd457d4827d3abf3a3494ad622873eb5c7b
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 1f49b52bece0c1dddc65da919d266c4f21b1bf69
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099297"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361833"
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
 È possibile usare i requisiti e i modelli architetturali per organizzare i test del sistema e dei relativi componenti. Questa procedura consente di verificare che vengano testati i requisiti importanti per gli utenti e per altre parti interessate e di aggiornare rapidamente i test quando cambiano i requisiti. Se si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], è anche possibile gestire i collegamenti tra i modelli e i test.

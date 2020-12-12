@@ -1,5 +1,7 @@
 ---
 title: Aggiungere comandi e movimenti ai diagrammi delle dipendenze
+description: Informazioni su come definire comandi del menu di scelta rapida e gestori movimenti nei diagrammi delle dipendenze in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc91e2c160d2081db868daf8d8dbaeb041172297
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531391"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362223"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Aggiungere comandi e movimenti ai diagrammi delle dipendenze
 
@@ -28,7 +30,7 @@ Se si vuole, è possibile definire gestori comandi e movimenti diversi nello ste
 
 ## <a name="requirements"></a>Requisiti
 
-Vedere [Requisiti](../modeling/extend-layer-diagrams.md#requirements).
+Vedere i [requisiti](../modeling/extend-layer-diagrams.md#requirements).
 
 ## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>Definire un comando o un movimento in un nuovo progetto VSIX
 
@@ -73,15 +75,15 @@ Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e 
 
 2. Aggiungere o creare un progetto VSIX nella soluzione. Un progetto VSIX contiene un file denominato **source. Extension. vsixmanifest**.
 
-3. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto VSIX e scegliere **Imposta come progetto di avvio**.
+3. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto VSIX e scegliere **Imposta come progetto di avvio**.
 
 4. In **source.extension.vsixmanifest**, in **Asset**, aggiungere il progetto di gestore comandi o movimenti come componente MEF.
 
-    1. Nella scheda **Asset**scegliere **Nuovo**.
+    1. Nella scheda **Asset** scegliere **Nuovo**.
 
-    2. In **Tipo**selezionare **Microsoft.VisualStudio.MefComponent**.
+    2. In **Tipo** selezionare **Microsoft.VisualStudio.MefComponent**.
 
-    3. In **Origine**selezionare **Progetto nella soluzione corrente** e selezionare il nome del progetto del gestore comandi o movimenti.
+    3. In **Origine** selezionare **Progetto nella soluzione corrente** e selezionare il nome del progetto del gestore comandi o movimenti.
 
     4. Salvare il file.
 
@@ -261,6 +263,6 @@ Per quanto riguarda i gestori movimenti tenere presente quanto segue:
 
 - I gestori per alcuni tipi di elemento trascinato sono già definiti. Ad esempio, l'utente può trascinare elementi da Esplora soluzioni in un diagramma delle dipendenze. Non è possibile definire un gestore del trascinamento per questi tipi di elemento. In questi casi, i metodi `DragDrop` non verranno richiamati.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Aggiungere strumenti di convalida dell'architettura personalizzati ai diagrammi delle dipendenze](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)

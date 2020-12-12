@@ -1,5 +1,7 @@
 ---
 title: Proprietà dei ruoli di dominio
+description: Informazioni sulle proprietà associate a un ruolo di dominio, ad esempio tipo di raccolta, attributi personalizzati ed è esplorabile.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,15 +9,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c1c62126d65107bb25e3c4a475a794116c47193
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dda8e7c5538b0517c181a451072c4f8a9544965
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544144"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362340"
 ---
 # <a name="properties-of-domain-roles"></a>Proprietà dei ruoli di dominio
-Le proprietà nella tabella seguente sono associate a un ruolo di dominio. Per informazioni sui ruoli di dominio, vedere informazioni su [modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzazione ed estensione di un Domain-Specific Language](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Le proprietà nella tabella seguente sono associate a un ruolo di dominio. Per informazioni sui ruoli di dominio, vedere informazioni su [modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzazione ed estensione di un linguaggio Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 |Proprietà|Descrizione|Predefinito|
 |-|-|-|
@@ -33,7 +35,7 @@ Le proprietà nella tabella seguente sono associate a un ruolo di dominio. Per i
 |Assegnatario di ruolo|Classe di dominio dell'elemento che può riprodurre questo ruolo nella relazione. Questa proprietà è di sola lettura.|Classe di dominio dell'assegnatario di ruolo per questo ruolo.|
 |Note|Note informali associate al ruolo del dominio.|<None\>|
 |Category|Categoria in cui la proprietà generata viene visualizzata nella finestra **Proprietà** della finestra di progettazione generata. Se questa proprietà è vuota, la proprietà generata viene visualizzata sotto la categoria **varie**|<None\>|
-|Descrizione|Descrizione utilizzata per documentare il codice e utilizzata nell'interfaccia utente della finestra di progettazione generata.<br /><br /> La descrizione viene visualizzata nella descrizione comando IntelliSense per la proprietà generata nella classe assegnatario di ruolo.|`Description for`*nome completo del ruolo*|
+|Description|Descrizione utilizzata per documentare il codice e utilizzata nell'interfaccia utente della finestra di progettazione generata.<br /><br /> La descrizione viene visualizzata nella descrizione comando IntelliSense per la proprietà generata nella classe assegnatario di ruolo.|`Description for`*nome completo del ruolo*|
 |Nome visualizzato|Nome visualizzato nella finestra di progettazione generata per il ruolo di dominio.|Valore regolato della proprietà Name.|
 |Parola chiave della Guida|Parola chiave facoltativa utilizzata per indicizzare la Guida sensibile al contesto per il ruolo di dominio.|\<none>|
 |Nome visualizzato proprietà|Nome visualizzato nella finestra di progettazione generata per la proprietà del ruolo generata.|Valore regolato della proprietà del nome della proprietà.|
@@ -41,6 +43,6 @@ Le proprietà nella tabella seguente sono associate a un ruolo di dominio. Per i
 > [!NOTE]
 > Il valore predefinito di un nome visualizzato è basato sul valore della proprietà associata inserendo spazi prima di ogni carattere maiuscolo preceduto da un carattere minuscolo e non seguito da un altro carattere maiuscolo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Proprietà delle relazioni di dominio](../modeling/properties-of-domain-relationships.md)

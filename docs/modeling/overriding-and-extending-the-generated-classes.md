@@ -1,5 +1,7 @@
 ---
 title: Override ed estensione delle classi generate
+description: Informazioni su come la definizione DSL è una piattaforma in cui è possibile creare un potente set di strumenti basati su un linguaggio specifico di dominio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1b36a7524530df7f9a18ce9abe1de2d430156d6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595891"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362093"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Override ed estensione delle classi generate
 
@@ -46,7 +48,7 @@ public partial class Book
 
 Per individuare i metodi di cui è possibile eseguire l'override, digitare **override** nella classe, seguito da uno spazio. La descrizione comando IntelliSense indica i metodi di cui è possibile eseguire l'override.
 
-### <a name="double-derived-classes"></a>Classi derivate doppie
+### <a name="double-derived-classes"></a>Classi Double-Derived
 
 La maggior parte dei metodi nelle classi generate viene ereditata da un set fisso di classi negli spazi dei nomi di modellazione. Tuttavia, alcuni metodi sono definiti nel codice generato. In genere, ciò significa che non è possibile eseguirne l'override; non è possibile eseguire l'override di in una classe parziale i metodi definiti in un'altra definizione parziale della stessa classe.
 

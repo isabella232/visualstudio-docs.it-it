@@ -1,5 +1,7 @@
 ---
 title: Aggiungere la proprietà di rilevamento alla definizione DSL
+description: Informazioni sulla proprietà del dominio di rilevamento e sul modo in cui è possibile aggiungere una proprietà di rilevamento a un modello di dominio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa6c63d9f43c465e5632d40281c1f48fb9d0f0b
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 6709ede3de16a78e0042d035a87a715b9ce4c80c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830724"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361209"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Aggiungere una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio
 
@@ -24,7 +26,7 @@ In questa procedura dettagliata viene illustrato come aggiungere una proprietà 
 
 Una proprietà del *dominio di rilevamento* è una proprietà che può essere aggiornata dall'utente, ma con un valore predefinito che viene calcolato utilizzando i valori di altre proprietà o elementi del dominio.
 
-Ad esempio, nel Strumenti Domain-Specific Language (strumenti DSL), la proprietà nome visualizzato di una classe di dominio ha un valore predefinito che viene calcolato usando il nome della classe di dominio, ma un utente può modificare il valore in fase di progettazione o reimpostarlo sul valore calcolato.
+Ad esempio, negli strumenti del linguaggio Domain-Specific (strumenti DSL), la proprietà nome visualizzato di una classe di dominio ha un valore predefinito che viene calcolato usando il nome della classe di dominio, ma un utente può modificare il valore in fase di progettazione o reimpostarlo sul valore calcolato.
 
 In questa procedura dettagliata viene creato un linguaggio specifico di dominio (DSL) che dispone di una proprietà di rilevamento dello spazio dei nomi con un valore predefinito basato sulla proprietà dello spazio dei nomi predefinita del modello. Per ulteriori informazioni sulle proprietà di rilevamento, vedere [definizione delle proprietà di rilevamento](/previous-versions/cc825929(v=vs.100)).
 
@@ -54,9 +56,9 @@ Prima di iniziare questa procedura dettagliata, è necessario installare prima i
 
 ## <a name="create-the-project"></a>Creare il progetto
 
-1. Creare un progetto Finestra di progettazione Domain-Specific Language. Denominarlo `TrackingPropertyDSL`.
+1. Creare un progetto Domain-Specific Language Designer. Denomina tale elemento `TrackingPropertyDSL`.
 
-2. Nella **procedura guidata finestra di progettazione Domain-Specific Language**impostare le opzioni seguenti:
+2. Nella **procedura guidata finestra di progettazione Domain-Specific Language** impostare le opzioni seguenti:
 
     1. Selezionare il modello **MinimalLanguage** .
 
@@ -101,7 +103,7 @@ Prima di iniziare questa procedura dettagliata, è necessario installare prima i
 
 3. Alla classe di dominio **ExampleElement** aggiungere una proprietà di dominio denominata `Namespace` .
 
-     Nella finestra **Proprietà** per la nuova proprietà impostare **è esplorabile** su **false**e impostare **tipo** su **CustomStorage**.
+     Nella finestra **Proprietà** per la nuova proprietà impostare **è esplorabile** su **false** e impostare **tipo** su **CustomStorage**.
 
 4. Alla classe di dominio **ExampleElement** aggiungere una proprietà di dominio denominata `IsNamespaceTracking` .
 
@@ -121,13 +123,13 @@ Prima di iniziare questa procedura dettagliata, è necessario installare prima i
 
     2. Nell'elenco elementi **Decorator** selezionare **NamespaceDecorator**, selezionare la relativa casella di controllo e quindi nell'elenco **proprietà di visualizzazione** selezionare **spazio dei nomi**.
 
-3. In **DSL Explorer**espandere la cartella **classi di dominio** , fare clic con il pulsante destro del mouse sul nodo **ExampleElement** , quindi scegliere **Aggiungi nuovo descrittore del tipo di dominio**.
+3. In **DSL Explorer** espandere la cartella **classi di dominio** , fare clic con il pulsante destro del mouse sul nodo **ExampleElement** , quindi scegliere **Aggiungi nuovo descrittore del tipo di dominio**.
 
     1. Espandere il nodo **ExampleElement** e selezionare il nodo **descrittore del tipo personalizzato (descrittore del tipo di dominio)** .
 
     2. Nella finestra **Proprietà** per il descrittore del tipo di dominio impostare **Custom coded** su **true**.
 
-4. In **DSL Explorer**selezionare il nodo del **comportamento di serializzazione XML** .
+4. In **DSL Explorer** selezionare il nodo del **comportamento di serializzazione XML** .
 
     1. Nella finestra **Proprietà** impostare **Custom Post Load** su **true**.
 
@@ -145,7 +147,7 @@ Quando si trasformano tutti i modelli, il sistema genera il codice sorgente che 
 
 È necessario fornire il codice per la gestione del valore e dello stato della proprietà di rilevamento. Per semplificare la distinzione del codice personalizzato dal codice generato e per evitare conflitti di denominazione dei file, inserire i file di codice personalizzati in una sottocartella separata.
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **DSL** , scegliere **Aggiungi**, quindi fare clic su **nuova cartella**. Assegnare un nome alla nuova cartella `CustomCode` .
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **DSL** , scegliere **Aggiungi**, quindi fare clic su **nuova cartella**. Assegnare un nome alla nuova cartella `CustomCode` .
 
 2. Fare clic con il pulsante destro del mouse sulla nuova cartella **CustomCoded** , scegliere **Aggiungi**, quindi fare clic su **nuovo elemento**.
 
@@ -722,9 +724,9 @@ Il passaggio successivo consiste nel compilare ed eseguire la finestra di proget
 
     La build sperimentale di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] apre la soluzione di **debug** , che contiene un file di test vuoto.
 
-3. In **Esplora soluzioni**fare doppio clic sul file test. TrackingPropertyDSL per aprirlo nella finestra di progettazione, quindi fare clic sull'area di progettazione.
+3. In **Esplora soluzioni** fare doppio clic sul file test. TrackingPropertyDSL per aprirlo nella finestra di progettazione, quindi fare clic sull'area di progettazione.
 
-    Si noti che nella finestra **Proprietà** del diagramma la proprietà **dello spazio dei nomi predefinita** è **una proprietà DefaultNamespace**e la proprietà **elementi personalizzati** è **0/0**.
+    Si noti che nella finestra **Proprietà** del diagramma la proprietà **dello spazio dei nomi predefinita** è **una proprietà DefaultNamespace** e la proprietà **elementi personalizzati** è **0/0**.
 
 4. Trascinare un elemento **ExampleElement** dalla **casella degli strumenti** alla superficie del diagramma.
 
@@ -734,7 +736,7 @@ Il passaggio successivo consiste nel compilare ed eseguire la finestra di proget
 
 6. Nella finestra **Proprietà** fare clic con il pulsante destro del mouse su **spazio dei nomi elemento**, quindi scegliere **Reimposta**.
 
-    Il valore della proprietà viene modificato in **una proprietà DefaultNamespace**e il valore viene visualizzato in un tipo di carattere normale.
+    Il valore della proprietà viene modificato in **una proprietà DefaultNamespace** e il valore viene visualizzato in un tipo di carattere normale.
 
     Fare nuovamente clic con il pulsante destro del mouse su **namespace elemento** Il comando **Reimposta** è ora disabilitato perché la proprietà si trova attualmente nello stato di rilevamento.
 
@@ -754,7 +756,7 @@ Il passaggio successivo consiste nel compilare ed eseguire la finestra di proget
 
 Se si prevede di utilizzare più di una proprietà di rilevamento o di implementare proprietà di rilevamento in più di un linguaggio DSL, è possibile creare un modello di testo per generare il codice comune per supportare ogni proprietà di rilevamento. Per ulteriori informazioni sui modelli di testo, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>

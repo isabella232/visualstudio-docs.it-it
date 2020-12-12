@@ -1,5 +1,7 @@
 ---
 title: Utilizzo di Esplora linguaggi specifici di dominio
+description: Informazioni su DSL Explorer, uno strumento che consente di visualizzare diversi tipi di informazioni in una visualizzazione albero e include più nodi per la definizione di un linguaggio specifico di dominio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +11,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 971114a95fa43dbbcda985587d08f03ac3c7fd72
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0bb08f7d6dc6ea41c64cfc9aeb6898eac4df0ae5
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810783"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360923"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Utilizzo di Esplora linguaggi specifici di dominio
-In **Esplora DSL** vengono visualizzati diversi tipi di informazioni in una visualizzazione albero. Per ulteriori informazioni sulla maggior parte degli elementi in DSL Explorer, vedere [come definire un Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md).
+In **Esplora DSL** vengono visualizzati diversi tipi di informazioni in una visualizzazione albero. Per ulteriori informazioni sulla maggior parte degli elementi in DSL Explorer, vedere [come definire un linguaggio Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md).
 
  Ha i seguenti nodi:
 
@@ -33,7 +35,7 @@ In **Esplora DSL** vengono visualizzati diversi tipi di informazioni in una visu
 
 - **Tipi di dominio**. Un elenco dei tipi predefiniti ed esterni usati nel modello.
 
-- **Editor**. Un elenco di schede della **casella degli strumenti** e degli elementi in essi contenuti e le impostazioni di convalida per il modello. Per ulteriori informazioni sulla convalida, vedere [convalida in un Domain-Specific Language](../modeling/validation-in-a-domain-specific-language.md).
+- **Editor**. Un elenco di schede della **casella degli strumenti** e degli elementi in essi contenuti e le impostazioni di convalida per il modello. Per ulteriori informazioni sulla convalida, vedere [la pagina relativa alla convalida in un linguaggio Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
 - **Comportamento di Esplora risorse**. Impostazioni che specificano il comportamento di esplorazione nella finestra di progettazione generata. Per ulteriori informazioni sulla personalizzazione della finestra di esplorazione, vedere [personalizzazione di Esplora modelli](../modeling/customizing-the-model-explorer.md).
 
@@ -41,6 +43,6 @@ In **Esplora DSL** vengono visualizzati diversi tipi di informazioni in una visu
 
 - **Comportamento della serializzazione XML**. Impostazioni di serializzazione per il modello. Per ulteriori informazioni sulla serializzazione, vedere [personalizzazione dell'archiviazione file e della serializzazione XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Glossario di Strumenti Domain-Specific Language](/previous-versions/bb126564(v=vs.100))

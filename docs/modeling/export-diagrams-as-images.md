@@ -1,5 +1,7 @@
 ---
 title: Esportare diagrammi come immagini
+description: Informazioni su come salvare i diagrammi di modellazione in formati di sola lettura, in modo da poterli condividere con utenti che non usano la stessa versione di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e433e47d04a2beb1521aba65be664f7c7efd44f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12e0036377ed5b67e092ff0cf4588acc39c23525
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547602"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361638"
 ---
 # <a name="export-diagrams-as-images"></a>Esportare diagrammi come immagini
 
@@ -40,7 +42,7 @@ Per visualizzare le edizioni di Visual Studio che supportano questa funzionalit√
 
 3. Nella finestra di dialogo **Salva file con nome** , salvare il file come file di **documento XPS ( \* XPS)** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare modelli per l'app](../modeling/create-models-for-your-app.md)
 - [Condividere modelli ed esportare diagrammi](../modeling/share-models-and-exporting-diagrams.md)

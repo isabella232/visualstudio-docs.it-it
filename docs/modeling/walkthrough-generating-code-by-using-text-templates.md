@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: generazione di codice tramite modelli di testo'
+description: Scopri che la generazione del codice consente di creare codice di programma fortemente tipizzato e può essere modificato facilmente quando il modello di origine viene modificato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a39630f8a12ad2c1d7d2bc89f6830fc694e89087
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532060"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360988"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Procedura dettagliata: Generare codice tramite modelli di testo
 
@@ -93,7 +95,7 @@ Lo scopo di questo file è fornire esempi dei tipi di nodo XML che l'applicazion
 
 Il file deve far parte del progetto in modo che il modello possa leggerlo, ma non sarà integrato nell'applicazione compilata.
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi** , quindi fare clic su **nuovo elemento**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi** , quindi fare clic su **nuovo elemento**.
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **File XML** dal riquadro **Modelli** .
 
@@ -131,7 +133,7 @@ Un test più completo potrebbe controllare l'output di questa funzione di test c
 
 Aggiungere un file di modello di testo e impostare l'estensione di output su *. cs*.
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi**e quindi su **Nuovo elemento**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi** e quindi su **Nuovo elemento**.
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Modello di testo** dal riquadro **Modelli** .
 
@@ -412,7 +414,7 @@ Per rigenerare le classi quando viene modificato il file XML di esempio, fare cl
 
 Questa procedura dettagliata illustra diverse tecniche e vantaggi della generazione del codice:
 
-- La*generazione del codice* è la creazione di parte del codice sorgente dell'applicazione da un *modello*. Il modello contiene le informazioni in un formato adatto per il dominio dell'applicazione e può cambiare durante la vita dell'applicazione.
+- La *generazione del codice* è la creazione di parte del codice sorgente dell'applicazione da un *modello*. Il modello contiene le informazioni in un formato adatto per il dominio dell'applicazione e può cambiare durante la vita dell'applicazione.
 
 - La tipizzazione forte è uno dei vantaggi della generazione del codice. Mentre il modello rappresenta le informazioni in un formato più adatto all'utente, il codice generato consente ad altre parti dell'applicazione di gestire le informazioni mediante un set di tipi.
 
@@ -428,7 +430,7 @@ In questa procedura dettagliata il codice del programma viene effettivamente gen
 
 In caso di errori di compilazione o di trasformazione del modello nell'**Elenco errori** o se il file di output non è stato generato correttamente, è possibile risolvere i problemi del modello di testo con le tecniche descritte in [Generazione di file con l'utilità TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md)

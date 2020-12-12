@@ -1,5 +1,7 @@
 ---
 title: Metodi di utilità per i modelli di testo
+description: Informazioni sui vari metodi di utilità per i modelli di testo disponibili quando si scrive il codice in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c55da4d58b717bc4d42b6fafdd084067b7e21a31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b0015e68f7d78c2b33eaeb9e0bfb404acaed834
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591762"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362015"
 ---
 # <a name="text-template-utility-methods"></a>Metodi di utilità per i modelli di testo
 

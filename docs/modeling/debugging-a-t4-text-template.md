@@ -1,5 +1,7 @@
 ---
 title: Debug di un modello di testo T4
+description: Per eseguire il debug di un modello di testo della fase di progettazione, salvare il file del modello di testo, quindi scegliere debug T4 modello dal menu di scelta rapida del file in Esplora soluzioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570061feb5da034e2e8fab7168658577f6f990d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26ad1545918a02fbcf530b439e801a656a425864
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589682"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361469"
 ---
 # <a name="debugging-a-t4-text-template"></a>Debug di un modello di testo T4
 È possibile impostare punti di interruzione nei modelli di testo. Per eseguire il debug di un modello di testo della fase di progettazione, salvare il file del modello di testo, quindi scegliere **debug T4 modello** dal menu di scelta rapida del file in Esplora soluzioni. Per eseguire il debug di un modello di testo in fase di esecuzione, è sufficiente eseguire il debug dell'applicazione a cui appartiene.

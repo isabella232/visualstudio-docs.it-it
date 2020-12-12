@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: creazione di un host del modello di testo personalizzato'
+description: Informazioni su come scrivere un host personalizzato se si vuole usare la funzionalità di trasformazione del modello di testo dall'esterno di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 3979f93de6040078a5b1e4315cadc4f7faa4728e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cc1681d7c761aca123217cbf28cc33b0dbb584c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532223"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361053"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Procedura dettagliata: Creare un host del modello di testo personalizzato
 
@@ -801,7 +803,7 @@ Per testare l'host personalizzato, si scrive un modello di testo, quindi si eseg
 
      L'applicazione host personalizzata viene eseguita e completa il processo di trasformazione del modello di testo.
 
-5. In **Esplora risorse**passare alla cartella che contiene il file TestTemplate.TT.
+5. In **Esplora risorse** passare alla cartella che contiene il file TestTemplate.TT.
 
      Questa cartella contiene anche file TestTemplate1.txt.
 
@@ -821,6 +823,6 @@ Per testare l'host personalizzato, si scrive un modello di testo, quindi si eseg
 
 In questa procedura dettagliata, è stato creato un host di trasformazione del modello di testo che supporta la funzionalità della trasformazione di base. È possibile espandere l'host per supportare modelli di testo che chiamano processori di direttiva personalizzati o generati. Per ulteriori informazioni, vedere [procedura dettagliata: connessione di un host a un processore di direttiva generato](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

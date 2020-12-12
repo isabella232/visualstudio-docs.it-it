@@ -1,5 +1,7 @@
 ---
 title: Aggiungere proprietà personalizzate ai diagrammi delle dipendenze
+description: Informazioni su come archiviare i valori con qualsiasi elemento in un diagramma delle dipendenze quando si scrive il codice di estensione per i diagrammi delle dipendenze.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3073a42faf0dcc6fbf586847382ba3a83d88ed4
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546915"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360767"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Aggiungere proprietà personalizzate ai diagrammi delle dipendenze
 
@@ -22,7 +24,7 @@ Quando si scrive il codice di estensione per i diagrammi di dipendenza, è possi
 
 ## <a name="non-visible-properties"></a>Proprietà non visibili
 
-Se si desidera che il codice alleghi valori a qualsiasi elemento in un diagramma delle dipendenze, non è necessario definire un componente MEF. In ILayerElement è presente un dizionario denominato `Properties` . [ILayerElement](/previous-versions/ff644511(v=vs.140)) Aggiungere semplicemente i valori marshalable al dizionario di qualsiasi elemento del livello. Verranno salvati come parte del diagramma delle dipendenze.
+Se si desidera che il codice alleghi valori a qualsiasi elemento in un diagramma delle dipendenze, non è necessario definire un componente MEF. In ILayerElement è presente un dizionario denominato `Properties` . [](/previous-versions/ff644511(v=vs.140)) Aggiungere semplicemente i valori marshalable al dizionario di qualsiasi elemento del livello. Verranno salvati come parte del diagramma delle dipendenze.
 
 ## <a name="editable-properties"></a>Proprietà modificabili
 
@@ -38,7 +40,7 @@ Se si desidera che il codice alleghi valori a qualsiasi elemento in un diagramma
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. Nella sezione **strumenti di Visual Studio** del menu Start dell'applicazione di Visual Studio aprire **prompt dei comandi per gli sviluppatori**. Immettere:
+> 3. Nella sezione **strumenti di Visual Studio** del menu Start dell'applicazione di Visual Studio aprire **prompt dei comandi per gli sviluppatori**. Digitare:
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
@@ -160,6 +162,6 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Estendere i diagrammi delle dipendenze](../modeling/extend-layer-diagrams.md)

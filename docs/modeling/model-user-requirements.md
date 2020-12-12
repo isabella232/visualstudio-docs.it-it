@@ -1,5 +1,7 @@
 ---
 title: Modellare i requisiti utente
+description: Informazioni su come Visual Studio consente di comprendere, discutere e comunicare le esigenze degli utenti mediante la creazione di diagrammi sulle attività.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40418b2d188ac5482a12dd4ffdddd221bf5d2f97
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590241"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361964"
 ---
 # <a name="model-user-requirements"></a>Modellare i requisiti utente
 
@@ -64,7 +66,7 @@ Molte regole di business sono vincoli sulle relazioni tra le classi concettuali.
 
 ![Regola nel commento associato alla classe Order.](../modeling/media/uml_reqmcd2.png)
 
-Le*regole di business dinamiche* vincolano le sequenze di eventi consentite. È possibile ad esempio usare un diagramma di attività o di sequenza per mostrare che un utente deve accedere prima di eseguire altre operazioni nel sistema.
+Le *regole di business dinamiche* vincolano le sequenze di eventi consentite. È possibile ad esempio usare un diagramma di attività o di sequenza per mostrare che un utente deve accedere prima di eseguire altre operazioni nel sistema.
 
 Tuttavia, molte regole dinamiche possono essere illustrate più efficacemente e genericamente sostituendole con regole statiche. Ad esempio è possibile aggiungere un attributo booleano "Connesso" in una classe del modello di classi concettuali. L'attributo Connesso viene aggiunto come postcondizione della registrazione nel caso di utilizzo e come precondizione della maggior parte degli altri casi di utilizzo. Questo approccio consente di evitare di definire tutte le combinazioni possibili di sequenze di eventi. È anche più flessibile quando è necessario aggiungere nuovi casi di utilizzo al modello.
 
@@ -96,7 +98,7 @@ Se un Ristorante elimina un Elemento menu mentre un Cliente ordina un pasto, tut
 
 Per informazioni su come sviluppare codice che soddisfi i requisiti di qualità del servizio, vedere [modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)
 - [Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)

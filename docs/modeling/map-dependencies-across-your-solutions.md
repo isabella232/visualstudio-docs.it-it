@@ -1,5 +1,7 @@
 ---
 title: Mappe codice
+description: Informazioni sul modo in cui le mappe del codice consentono di osservare il modo in cui il codice si integra senza leggere file e righe di codice.
+ms.custom: SEO-VS-2020
 ms.date: 05/16/2018
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 771a6ccf4749a3464204d3da75f4d403d1ab2dd5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39b34bb124d663d81769c6d3086d6b36803d60eb
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532717"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362236"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Eseguire il mapping delle dipendenze con le mappe codice
 
@@ -36,14 +38,14 @@ Per creare e modificare le mappe del codice, è necessario Visual Studio Enterpr
 
 È possibile eseguire il mapping delle dipendenze per il codice nei seguenti linguaggi:
 
-- Visual C# o Visual Basic in una soluzione o in assembly (con*estensione dll* o *exe*)
+- Visual C# o Visual Basic in una soluzione o in assembly (con *estensione dll* o *exe*)
 
 - Codice C o C++ nativo o gestito in progetti Visual C++, file di intestazione (*. h* o `#include` ) o file binari
 
 - Progetti X++ e assembly creati da moduli .NET per Microsoft Dynamics AX
 
 > [!NOTE]
-> Per i progetti diversi da C# o Visual Basic, sono disponibili meno opzioni per l'avvio di una mappa codice o l'aggiunta di elementi a una mappa codice esistente. Ad esempio, non è possibile fare clic con il pulsante destro del mouse su un oggetto nell'editor di testo di un progetto C++ e aggiungerlo a una mappa codice. È tuttavia possibile trascinare e rilasciare singoli elementi di codice o file da **Esplora soluzioni**, **Visualizzazione classi**e **Visualizzatore oggetti**.
+> Per i progetti diversi da C# o Visual Basic, sono disponibili meno opzioni per l'avvio di una mappa codice o l'aggiunta di elementi a una mappa codice esistente. Ad esempio, non è possibile fare clic con il pulsante destro del mouse su un oggetto nell'editor di testo di un progetto C++ e aggiungerlo a una mappa codice. È tuttavia possibile trascinare e rilasciare singoli elementi di codice o file da **Esplora soluzioni**, **Visualizzazione classi** e **Visualizzatore oggetti**.
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>Installare la mappa codice e la convalida delle dipendenze attive
 
@@ -67,7 +69,7 @@ Per creare una mappa del codice in Visual Studio, installare prima di tutto la *
 
 Per aggiungere una mappa codice vuota:
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo della soluzione di primo livello. Scegliere **Aggiungi**  >  **nuovo elemento**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo della soluzione di primo livello. Scegliere **Aggiungi**  >  **nuovo elemento**.
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** , in **installato**, scegliere la categoria **generale** .
 
@@ -94,7 +96,7 @@ Per visualizzare tutte le dipendenze nella soluzione:
 
    ![Grafico dipendenze di primo livello di assembly](../modeling/media/dependencygraph_toplevelassemblies.png)
 
-   Questa soluzione di esempio contiene cartelle della soluzione (**Test** e **Componenti**), progetti di test, progetti Web e assembly. Per impostazione predefinita, tutte le relazioni del contenitore vengono visualizzate come *gruppi*che è possibile espandere e comprimere. Il gruppo **Esterni** contiene qualsiasi elemento esterno alla soluzione, incluse le dipendenze della piattaforma. Gli assembly esterni mostrano solo gli elementi usati. Per impostazione predefinita, i tipi di base del sistema sono nascosti sulla mappa per evitare confusione.
+   Questa soluzione di esempio contiene cartelle della soluzione (**Test** e **Componenti**), progetti di test, progetti Web e assembly. Per impostazione predefinita, tutte le relazioni del contenitore vengono visualizzate come *gruppi* che è possibile espandere e comprimere. Il gruppo **Esterni** contiene qualsiasi elemento esterno alla soluzione, incluse le dipendenze della piattaforma. Gli assembly esterni mostrano solo gli elementi usati. Per impostazione predefinita, i tipi di base del sistema sono nascosti sulla mappa per evitare confusione.
 
 3. Per eseguire il drill-down nella mappa, espandere i gruppi che rappresentano progetti e assembly. Per espandere tutti gli elementi premere **CTRL+A** per selezionare tutti i nodi e quindi scegliere **Gruppo**, **Espandi** dal menu di scelta rapida.
 
@@ -158,13 +160,13 @@ Si supponga di dover eseguire una revisione del codice in alcuni file con modifi
 
    ![Mostra dipendenze specifiche su una mappa codici](../modeling/media/codemapsspecificdependenciesintro.png)
 
-1. In **Esplora soluzioni**selezionare i progetti, i riferimenti agli assembly, le cartelle, i file, i tipi o i membri di cui si desidera eseguire il mapping.
+1. In **Esplora soluzioni** selezionare i progetti, i riferimenti agli assembly, le cartelle, i file, i tipi o i membri di cui si desidera eseguire il mapping.
 
    ![Selezionare gli elementi da mappare](../modeling/media/codemapsselectinsolutionexplorer.png)
 
 1. Sulla barra degli strumenti **Esplora soluzioni** scegliere **Mostra in mappa codici** ![ Crea nuovo grafico dal pulsante nodi selezionati ](../modeling/media/createnewgraphfromselectedbutton.gif) . In alternativa, aprire il menu di scelta rapida per uno o un gruppo di elementi e scegliere **Mostra in mappa codici**.
 
-   È anche possibile trascinare elementi da **Esplora soluzioni**, **Visualizzazione classi**o **Visualizzatore oggetti**in una mappa codice [nuova](#add-a-code-map) o esistente. Per includere la gerarchia padre per gli elementi, tenere premuto il tasto **CTRL** mentre si trascinano gli elementi oppure usare il pulsante **Includi padri** sulla barra degli strumenti della mappa codice per specificare l'azione predefinita. È anche possibile trascinare i file di assembly dall'esterno di Visual Studio, ad esempio da **Esplora risorse**.
+   È anche possibile trascinare elementi da **Esplora soluzioni**, **Visualizzazione classi** o **Visualizzatore oggetti** in una mappa codice [nuova](#add-a-code-map) o esistente. Per includere la gerarchia padre per gli elementi, tenere premuto il tasto **CTRL** mentre si trascinano gli elementi oppure usare il pulsante **Includi padri** sulla barra degli strumenti della mappa codice per specificare l'azione predefinita. È anche possibile trascinare i file di assembly dall'esterno di Visual Studio, ad esempio da **Esplora risorse**.
 
    > [!NOTE]
    > Quando si aggiungono elementi da un progetto condiviso tra più app, ad esempio Windows Phone o Microsoft Store, tali elementi vengono visualizzati nella mappa con il progetto di app attualmente attivo. Se si cambia il contesto passando a un altro progetto di applicazione e si aggiungono altri elementi dal progetto condiviso, tali elementi vengono visualizzati con il nuovo progetto di applicazione attivo. Le operazioni eseguite con un elemento nella mappa si applicano solo agli elementi che condividono lo stesso contesto.
@@ -177,7 +179,7 @@ Si supponga di dover eseguire una revisione del codice in alcuni file con modifi
 
    ![Espandere un nodo in una mappa codice](../modeling/media/dependencygraph_containment.png)
 
-   Per espandere tutti gli elementi, selezionarli usando **CTRL** + **A**, quindi aprire il menu di scelta rapida per la **Group**mappa e scegliere  >  **Espandi**gruppo. Tuttavia, questa opzione non è disponibile se l'espansione di tutti i gruppi crea una mappa inutilizzabile o problemi di memoria.
+   Per espandere tutti gli elementi, selezionarli usando **CTRL** + **A**, quindi aprire il menu di scelta rapida per la mappa e scegliere  >  **Espandi** gruppo. Tuttavia, questa opzione non è disponibile se l'espansione di tutti i gruppi crea una mappa inutilizzabile o problemi di memoria.
 
 5. Continuare a espandere gli elementi a cui si è interessati, fino al livello di classe e membro, se necessario.
 
@@ -187,18 +189,18 @@ Si supponga di dover eseguire una revisione del codice in alcuni file con modifi
 
 6. Per visualizzare più elementi correlati a quelli sulla mappa, selezionarne uno e scegliere **Mostra correlati** nella barra degli strumenti della mappa codice, quindi selezionare il tipo di elementi correlati da aggiungere alla mappa. In alternativa, selezionare uno o più elementi, aprire il menu di scelta rapida, quindi scegliere l'opzione **Mostra** per il tipo di elementi correlati da aggiungere alla mappa. Ad esempio:
 
-    Per un **assembly**scegliere:
+    Per un **assembly** scegliere:
 
-    |Opzione|Descrizione|
+    |Opzione|Description|
     |-|-|
     |**Mostra assembly a cui fa riferimento**|Aggiungere gli assembly a cui fa riferimento questo assembly. Gli assembly esterni vengono visualizzati nel gruppo **Esterni** .|
     |**Mostra assembly che fanno riferimento a**|Aggiungere gli assembly della soluzione che fanno riferimento a questo assembly.|
 
-    Per uno **spazio dei nomi**scegliere **Mostra assembly contenitore**, se non è visibile.
+    Per uno **spazio dei nomi** scegliere **Mostra assembly contenitore**, se non è visibile.
 
-    Per una **classe** o un' **interfaccia**scegliere:
+    Per una **classe** o un' **interfaccia** scegliere:
 
-    |Opzione|Descrizione|
+    |Opzione|Description|
     |-|-|
     |**Mostra tipi base**|Per una classe, aggiungere la classe base e le interfacce implementate.<br /><br /> Per un'interfaccia, aggiungere le interfacce di base.|
     |**Mostra tipi derivati**|Per una classe, aggiungere le classi derivate.<br /><br /> Per un'interfaccia, aggiungere le interfacce derivate e le classi o gli struct implementati.|
@@ -209,9 +211,9 @@ Si supponga di dover eseguire una revisione del codice in alcuni file con modifi
     |**Mostra tutti i tipi di base**|Aggiungere la gerarchia di interfacce o di classi base in modo ricorsivo.|
     |**Mostra tutti i tipi derivati**|Per una classe, aggiungere tutte le classi derivate in modo ricorsivo.<br /><br /> Per un'interfaccia, aggiungere tutte le interfacce derivate e implementare classi o struct in modo ricorsivo.|
 
-     Per un **metodo**scegliere:
+     Per un **metodo** scegliere:
 
-    |Opzione|Descrizione|
+    |Opzione|Description|
     |-|-|
     |**Mostra metodi chiamati**|Aggiungere metodi chiamati dal metodo specifico.|
     |**Mostra campi a cui fa riferimento**|Aggiungere i campi cui questo metodo fa riferimento.|
@@ -219,9 +221,9 @@ Si supponga di dover eseguire una revisione del codice in alcuni file con modifi
     |**Mostra tipo, spazio dei nomi e assembly contenitore**|Aggiungere la gerarchia del contenitore padre.|
     |**Mostra metodi sottoposti a override**|Per un metodo che esegue l'override di altri metodi o implementa un metodo di interfaccia, aggiungere tutti i metodi astratti o virtuali nelle classi base sottoposte a override e, se disponibile, il metodo di interfaccia implementato.|
 
-     Per un **campo** o una **proprietà**scegliere:
+     Per un **campo** o una **proprietà** scegliere:
 
-    |Opzione|Descrizione|
+    |Opzione|Description|
     |-|-|
     |**Mostra tipo contenitore**|Aggiungere il tipo padre.|
     |**Mostra tipo, spazio dei nomi e assembly contenitore**|Aggiungere la gerarchia del contenitore padre.|
@@ -236,7 +238,7 @@ Si supponga di dover eseguire una revisione del codice in alcuni file con modifi
 
    ![Usare il riquadro Filtro per semplificare la visualizzazione](../modeling/media/almcodemapfilterpane.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Video: informazioni sulla progettazione dal codice con le mappe codici di Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)

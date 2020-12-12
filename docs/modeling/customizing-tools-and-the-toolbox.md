@@ -1,5 +1,7 @@
 ---
 title: Personalizzazione di strumenti e della casella degli strumenti
+description: Informazioni su come è necessario definire gli elementi della casella degli strumenti per gli elementi che si desidera consentire agli utenti di aggiungere ai propri modelli.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 685da1184706e106f3bdd2088b4d937e0aa7cc9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f02254cc1229ab069277b0fe46a6b825393f682f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548291"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361560"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizzazione di strumenti e della casella degli strumenti
 
@@ -69,7 +71,7 @@ La proprietà **Generatore** di connessione di uno strumento di connessione fa r
 
 3. Impostare la proprietà **icona della casella degli strumenti** in modo che faccia riferimento a una bitmap 16x16.
 
-     Se si vuole definire una nuova icona, creare un file bitmap in Esplora soluzioni nella cartella **Dsl\Resources** . Il file deve avere i valori di proprietà seguenti: contenuto dell' **azione di compilazione**  =  **Content**; **Copia nella directory**  =  di output Non **copiare**.
+     Se si vuole definire una nuova icona, creare un file bitmap in Esplora soluzioni nella cartella **Dsl\Resources** . Il file deve avere i valori di proprietà seguenti: contenuto dell' **azione di compilazione**  =  ; **Copia nella directory**  =  di output Non **copiare**.
 
 4. **Per uno strumento elemento:** Impostare la proprietà **Class** dello strumento per fare riferimento a una classe di dominio concreta mappata a una forma.
 
@@ -154,12 +156,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  I generatori di connessioni contengono una o più direttive di collegamento connessione che specificano la relazione di dominio e gli elementi di origine e di destinazione. Nel modello di soluzione flusso attività, ad esempio, è possibile visualizzare il **CommentReferencesSubjectsBuilder** in **DSL Explorer**. Questo generatore di connessioni contiene una direttiva di connessione di collegamento denominata **CommentReferencesSubjects**, mappata alla relazione di dominio **CommentReferencesSubjects**. Questa direttiva di connessione di collegamento contiene una direttiva del ruolo di origine che fa riferimento alla classe di dominio `Comment` e una direttiva del ruolo di destinazione che fa riferimento alla classe di dominio `FlowElement`.
 
 ### <a name="using-connection-builders-to-restrict-source-and-target-roles"></a>Uso dei generatori di connessioni per limitare i ruoli di origine e di destinazione
- È possibile usare i generatori di connessioni per limitare l'occorrenza di determinate classi sia nel ruolo di origine che nel ruolo di destinazione di una determinata relazione di dominio. Ad esempio, una classe di dominio di base potrebbe avere una relazione di dominio con un'altra classe di dominio, ma non si vuole che tutte le classi derivate della classe di base abbiano gli stessi ruoli in quella relazione. Nella soluzione flusso attività sono disponibili quattro classi di dominio concrete (**StartPoint**, **endpoint**, **MergeBranch**e **Synchronization**) che ereditano direttamente dalla classe di dominio astratta **FlowElement**e due classi di dominio concrete (**Task** e **ObjectInState**) che ereditano indirettamente da tale classe. Esiste anche una relazione di riferimento del **flusso** che accetta le classi di dominio **FlowElement** sia nel ruolo di origine che nel ruolo di destinazione. Tuttavia, un'istanza di una classe di dominio dell' **endpoint** non deve essere l'origine di un'istanza di una relazione di **flusso** , né un'istanza di una classe **StartPoint** è la destinazione di un'istanza di una relazione di **flusso** . Il generatore di connessioni **FlowBuilder** dispone di una direttiva di connessione di collegamento denominata **Flow** che specifica le classi di dominio che possono riprodurre il ruolo di origine (**Task**, **MergeBranch**, **StartPoint**e **Synchronization**) e che possono riprodurre il ruolo di destinazione (**MergeBranch**, **endpoint**e **sincronizzazione**).
+ È possibile usare i generatori di connessioni per limitare l'occorrenza di determinate classi sia nel ruolo di origine che nel ruolo di destinazione di una determinata relazione di dominio. Ad esempio, una classe di dominio di base potrebbe avere una relazione di dominio con un'altra classe di dominio, ma non si vuole che tutte le classi derivate della classe di base abbiano gli stessi ruoli in quella relazione. Nella soluzione flusso attività sono disponibili quattro classi di dominio concrete (**StartPoint**, **endpoint**, **MergeBranch** e **Synchronization**) che ereditano direttamente dalla classe di dominio astratta **FlowElement** e due classi di dominio concrete (**Task** e **ObjectInState**) che ereditano indirettamente da tale classe. Esiste anche una relazione di riferimento del **flusso** che accetta le classi di dominio **FlowElement** sia nel ruolo di origine che nel ruolo di destinazione. Tuttavia, un'istanza di una classe di dominio dell' **endpoint** non deve essere l'origine di un'istanza di una relazione di **flusso** , né un'istanza di una classe **StartPoint** è la destinazione di un'istanza di una relazione di **flusso** . Il generatore di connessioni **FlowBuilder** dispone di una direttiva di connessione di collegamento denominata **Flow** che specifica le classi di dominio che possono riprodurre il ruolo di origine (**Task**, **MergeBranch**, **StartPoint** e **Synchronization**) e che possono riprodurre il ruolo di destinazione (**MergeBranch**, **endpoint** e **sincronizzazione**).
 
 ### <a name="connection-builders-with-multiple-link-connect-directives"></a>Generatori di connessione con più direttive di connessione collegamento
  È possibile aggiungere più di una direttiva di connessione di collegamento a un generatore di connessioni. In questo modo è possibile nascondere alcune complessità del modello di dominio dagli utenti e impedire che la **casella degli strumenti** si trovi troppo ingombrante. È possibile aggiungere direttive di connessione collegamento per diverse relazioni di dominio a un singolo generatore di connessioni. È tuttavia consigliabile combinare le relazioni di dominio quando svolgono approssimativamente la stessa funzione.
 
- Nella soluzione flusso attività, lo strumento di connessione del **flusso** viene usato per creare istanze delle relazioni di dominio **Flow** e **ObjectFlow** . Il generatore di connessioni **FlowBuilder** dispone, oltre alla direttiva di connessione a collegamento **dinamico** descritta in precedenza, due direttive Connect di collegamento denominate **ObjectFlow**. Queste direttive specificano che un'istanza di una relazione **ObjectFlow** può essere disegnata tra le istanze della classe di dominio **ObjectInState** o da un'istanza di un **ObjectInState** a un'istanza di un' **attività**, ma non tra due istanze di un' **attività**o da un'istanza di un' **attività** a un'istanza di un **ObjectInState**. Tuttavia, un'istanza di una relazione di **flusso** può essere disegnata tra due istanze di un' **attività**. Se si compila ed esegue la soluzione flusso attività, è possibile notare che il disegno di un **flusso** da un'istanza di un **ObjectInState** a un'istanza di un' **attività** crea un'istanza di un **ObjectFlow**, ma il disegno di un **flusso** tra due istanze di un' **attività** crea un'istanza di un **flusso**.
+ Nella soluzione flusso attività, lo strumento di connessione del **flusso** viene usato per creare istanze delle relazioni di dominio **Flow** e **ObjectFlow** . Il generatore di connessioni **FlowBuilder** dispone, oltre alla direttiva di connessione a collegamento **dinamico** descritta in precedenza, due direttive Connect di collegamento denominate **ObjectFlow**. Queste direttive specificano che un'istanza di una relazione **ObjectFlow** può essere disegnata tra le istanze della classe di dominio **ObjectInState** o da un'istanza di un **ObjectInState** a un'istanza di un' **attività**, ma non tra due istanze di un' **attività** o da un'istanza di un' **attività** a un'istanza di un **ObjectInState**. Tuttavia, un'istanza di una relazione di **flusso** può essere disegnata tra due istanze di un' **attività**. Se si compila ed esegue la soluzione flusso attività, è possibile notare che il disegno di un **flusso** da un'istanza di un **ObjectInState** a un'istanza di un' **attività** crea un'istanza di un **ObjectFlow**, ma il disegno di un **flusso** tra due istanze di un' **attività** crea un'istanza di un **flusso**.
 
 ### <a name="custom-code-for-connection-builders"></a>Codice personalizzato per i generatori di connessioni
  Nell'interfaccia utente sono disponibili quattro caselle di controllo che definiscono i vari tipi di personalizzazione dei generatori di connessioni:
@@ -232,7 +234,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  Si usa codice personalizzato per applicare vincoli "rigidi", ma è necessario considerare se gli utenti devono essere in grado di effettuare temporaneamente connessioni non valide. Se si vuole concedere questa possibilità, è possibile modificare i vincoli in modo che le connessioni non vengano convalidate fino a quando gli utenti non tentano di salvare le modifiche.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Personalizzazione della creazione e dello spostamento di elementi](../modeling/customizing-element-creation-and-movement.md)
 - [Personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md)

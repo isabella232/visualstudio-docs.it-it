@@ -1,5 +1,7 @@
 ---
 title: Riferimento ai diagrammi delle dipendenze
+description: In Visual Studio è possibile usare un diagramma delle dipendenze per visualizzare l'architettura logica di alto livello del sistema.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 774716dff6562b7792c6fa885c40db2a0a133136
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 265bb31dd95aa3a84bdb497a3306278acfd8838e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594565"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360572"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagrammi di dipendenza: riferimento
 
@@ -96,6 +98,6 @@ Viene aperto **Esplora livello** che Mostra gli elementi collegati ai livelli se
 |**Convalida supporti**|Se **true**, il processo di convalida dei livelli può verificare che il progetto sia conforme alle dipendenze da o verso questo elemento.<br /><br /> Se **false**, il collegamento non partecipa al processo di convalida dei livelli.<br /><br /> Per altre informazioni, vedere [diagrammi di dipendenza: linee guida](../modeling/layer-diagrams-guidelines.md).|
 |**Identificatore**|Riferimento all'elemento collegato|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare modelli per l'app](../modeling/create-models-for-your-app.md)

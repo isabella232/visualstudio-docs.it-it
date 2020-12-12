@@ -1,5 +1,7 @@
 ---
 title: Aggiunta di estensioni alle definizioni DSL
+description: Informazioni sul modo in cui l'estensione di definizione DSL consente di creare un pacchetto di estensioni a un linguaggio specifico di dominio (DSL).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2500fc8d9e09d95d7972a4b151b01937a5570a08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07057c24494a19d77bca872ad87adf20bb125252
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544235"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361144"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>Aggiungere estensioni alle definizioni DSL
 
@@ -34,6 +36,6 @@ Un utente di un linguaggio DSL esteso può creare e salvare un modello che conti
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Post di blog correlati](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

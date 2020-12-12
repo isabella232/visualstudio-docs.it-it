@@ -1,5 +1,7 @@
 ---
 title: Sintassi del percorso di dominio
+description: Informazioni sulla sintassi del percorso di dominio e sul modo in cui le definizioni DSL usano una sintassi simile a XPath per individuare elementi specifici in un modello.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d7ab5f080328338e40bed080ec8a4c7a85eabdb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a24e2c9bcbecb095282c0914fa09f93e5c21e699
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114633"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361743"
 ---
 # <a name="domain-path-syntax"></a>Sintassi del percorso di dominio
 Le definizioni DSL usano una sintassi di tipo XPath per individuare elementi specifici in un modello.
@@ -35,6 +37,6 @@ Le definizioni DSL usano una sintassi di tipo XPath per individuare elementi spe
 
  Il nome usato per l'hop da un elemento a un collegamento corrisponde al valore dell'oggetto `Property Name` del ruolo. Il nome usato per l'hop da un collegamento a un elemento corrisponde al nome del ruolo di destinazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md)

@@ -1,5 +1,7 @@
 ---
 title: Integrazione di modelli tramite ModelBus
+description: Informazioni su come Visual Studio ModelBus fornisce un metodo per la creazione di collegamenti tra modelli e da altri strumenti in modelli.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a222d5f69d19d2891b4aa20239c1874f55a056e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46705c7a614cd67d81c9e55c03e937f72c29a2fe
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536942"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360727"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Integrazione di modelli tramite ModelBus di Visual Studio
 
@@ -126,7 +128,7 @@ Per consentire a un linguaggio DSL di usare riferimenti a un altro linguaggio DS
 
 4. Se si sceglie di fare riferimento a un elemento in un modello, è possibile aggiungere un elenco di tipi che possono essere selezionati dall'utente, ad esempio Company.FamilyTree.Person.
 
-5. Fare clic su **OK**e quindi su **trasforma tutti i modelli** nella barra degli strumenti **Esplora soluzioni** .
+5. Fare clic su **OK** e quindi su **trasforma tutti i modelli** nella barra degli strumenti **Esplora soluzioni** .
 
     > [!WARNING]
     > Se non è stato selezionata un'entità o un modello valido, il pulsante OK non avrà alcun effetto sebbene possa sembrare abilitato.
@@ -303,7 +305,7 @@ using (FamilyTreeAdapter adapter =
 
 1. Il DSL a cui si vuole accedere deve disporre di un adattatore ModelBus configurato per l'accesso dai modelli di testo. Per ulteriori informazioni, vedere [fornire l'accesso a un linguaggio DSL](#provide).
 
-2. In genere, si accederà a un DSL di destinazione tramite un riferimento di ModelBus (MBR) archiviato in un DSL di origine. Il modello include pertanto la direttiva del DSL di origine, più il codice per risolvere l'MBR. Per ulteriori informazioni sui modelli di testo, vedere [generazione di codice da un Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
+2. In genere, si accederà a un DSL di destinazione tramite un riferimento di ModelBus (MBR) archiviato in un DSL di origine. Il modello include pertanto la direttiva del DSL di origine, più il codice per risolvere l'MBR. Per ulteriori informazioni sui modelli di testo, vedere [generazione di codice da un linguaggio Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
    ```
    <#@ template debug="true" hostspecific="true"
@@ -492,7 +494,7 @@ Quando si fa clic con il pulsante destro del mouse sul diagramma di definizione 
 
 Quando si imposta il tipo di una proprietà di dominio su ModelBusReference, quindi si fa clic con il pulsante destro del mouse sulla proprietà e si fa clic su **Abilita proprietà specifiche di ModelBusReference**:
 
-- Alla proprietà di dominio vengono aggiunti numerosi attributi CLR ed è possibile visualizzarlo nel campo Attributi personalizzati nella finestra Proprietà. In **Dsl\GeneratedCode\DomainClasses.cs**è possibile visualizzare gli attributi nella dichiarazione della proprietà:
+- Alla proprietà di dominio vengono aggiunti numerosi attributi CLR ed è possibile visualizzarlo nel campo Attributi personalizzati nella finestra Proprietà. In **Dsl\GeneratedCode\DomainClasses.cs** è possibile visualizzare gli attributi nella dichiarazione della proprietà:
 
   ```csharp
   [System.ComponentModel.TypeConverter(typeof(
@@ -514,7 +516,7 @@ Quando si fa clic con il pulsante destro del mouse sul diagramma di definizione 
 
 - In **DslPackage\source.extention.TT**, `|ModelBusAdapter|` viene aggiunto come componente MEF.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: aprire un modello da file nel codice del programma](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [Procedura: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)

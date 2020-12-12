@@ -1,5 +1,7 @@
 ---
 title: Scrittura di un modello di testo T4
+description: Informazioni sui modelli di testo T4 e su come scrivere un modello di testo che includa direttive, blocchi di testo e blocchi di controllo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1990377bffe0c663a70520c07bd3ab60b91f8bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 086e7ecf568d043142cdc80f020897ed1793b86c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593486"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361222"
 ---
 # <a name="writing-a-t4-text-template"></a>Scrittura di un modello di testo T4
-Un modello di testo contiene il testo che verrà generato dal modello stesso. Ad esempio, un modello che crea una pagina Web conterrà " \<html> ..." e tutte le altre parti standard di una pagina HTML. I *blocchi di controllo*inseriti nel modello sono frammenti del codice del programma. forniscono i valori variabili e consentono ad alcune parti del testo di essere ripetute e usate in modo condizionale.
+Un modello di testo contiene il testo che verrà generato dal modello stesso. Ad esempio, un modello che crea una pagina Web conterrà " \<html> ..." e tutte le altre parti standard di una pagina HTML. I *blocchi di controllo* inseriti nel modello sono frammenti del codice del programma. forniscono i valori variabili e consentono ad alcune parti del testo di essere ripetute e usate in modo condizionale.
 
  Questa struttura facilita lo sviluppo di un modello, perché consente di partire da un prototipo del file generato inserendo in modo incrementale i blocchi di controllo che variano il risultato.
 
@@ -238,7 +240,7 @@ private void WriteSquareLine(int i)
 
  **Caricare un file come modello esplorabile**. Un metodo più efficace è leggere i dati come un modello, in cui è possibile spostarsi con il codice del modello di testo. Ad esempio, è possibile caricare un file XML e spostarsi al suo interno con espressioni XPath. È inoltre possibile utilizzare [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) per creare un set di classi con cui è possibile leggere i dati XML.
 
- **Modificare il file del modello in un diagramma o in un form.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornisce strumenti che consentono di modificare un modello come diagramma o Windows Form. In questo modo diventa più semplice illustrare il modello agli utenti dell'applicazione generata. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] crea anche un set di classi fortemente tipizzate che riflettono la struttura del modello. Per ulteriori informazioni, vedere [generazione di codice da un Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).
+ **Modificare il file del modello in un diagramma o in un form.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornisce strumenti che consentono di modificare un modello come diagramma o Windows Form. In questo modo diventa più semplice illustrare il modello agli utenti dell'applicazione generata. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] crea anche un set di classi fortemente tipizzate che riflettono la struttura del modello. Per ulteriori informazioni, vedere [generazione di codice da un linguaggio Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Percorsi di file relativi in modelli della fase di progettazione
  In un [modello di testo della fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md), se si vuole fare riferimento a un file in un percorso relativo al modello di testo, usare `this.Host.ResolvePath()` . È inoltre necessario impostare `hostspecific="true"` nella direttiva `template`:
@@ -264,7 +266,7 @@ Content of MyFile.txt is:
  Questo non è vero per un [modello di testo](../modeling/run-time-text-generation-with-t4-text-templates.md)in fase di esecuzione, che fornisce il codice compilato insieme al resto del codice.
 
 ## <a name="editing-templates"></a>Modifica dei modelli
- È possibile scaricare editor di modelli di testo specializzati dalla Raccolta online di Gestione estensioni. Scegliere **Gestione estensioni**dal menu **strumenti** . Fare clic su **raccolta online**e quindi usare lo strumento di ricerca.
+ È possibile scaricare editor di modelli di testo specializzati dalla Raccolta online di Gestione estensioni. Scegliere **Gestione estensioni** dal menu **strumenti** . Fare clic su **raccolta online** e quindi usare lo strumento di ricerca.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

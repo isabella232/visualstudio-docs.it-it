@@ -1,5 +1,7 @@
 ---
 title: Utilizzo di sequenze di escape in modelli di testo
+description: Informazioni su come usare sequenze di escape nei modelli di testo per generare tag di modello di testo e per eseguire il escape di caratteri di controllo e virgolette solo nel codice C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83e6e5cf163037077d0517e5f7ea460f9124f27c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b007a9b5ccf41a27cda7d9833064eb60394c4dc
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594045"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361326"
 ---
 # <a name="use-escape-sequences-in-text-templates"></a>Usare sequenze di escape in modelli di testo
 
@@ -36,6 +38,6 @@ Se un blocco di testo include stringhe usate per l'escape dei tag del modello di
 
 - Se un \\ carattere di escape () viene visualizzato in qualsiasi altra sequenza diversa da quella in cui viene sottoposto a escape da un carattere di controllo o da un'offerta (solo in C#), il carattere verrà restituito direttamente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: generare modelli da modelli utilizzando sequenze di escape](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

@@ -1,5 +1,7 @@
 ---
 title: Modellare l' &apos; architettura dell'app
+description: Informazioni su come creare modelli in Visual Studio come parte della descrizione della struttura complessiva e del comportamento del sistema o dell'applicazione software.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 449f528264f2101a45bc809a5002ce4e88659d05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c284532a1e7f6407ebea987873665edb4e940019
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711729"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361027"
 ---
 # <a name="model-your-app39s-architecture"></a>Modellare l'architettura dell'app&#39;s
 Per garantire che il sistema software o l'applicazione soddisfi le esigenze degli utenti, è possibile creare modelli in Visual Studio come parte della descrizione della struttura complessiva e del comportamento del sistema software o dell'applicazione. Usando gli schemi è anche possibile descrivere modelli usati durante la progettazione. Questi modelli consentono di comprendere l'architettura esistente, discutere le modifiche e comunicare chiaramente le intenzioni.
@@ -102,7 +104,7 @@ Per garantire che il sistema software o l'applicazione soddisfi le esigenze degl
 
 - Descrizione delle variazioni che gli sviluppatori potrebbero essere in grado di adottare.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Visualizzare il codice](../modeling/visualize-code.md)
 - [Modellare i requisiti utente](../modeling/model-user-requirements.md)

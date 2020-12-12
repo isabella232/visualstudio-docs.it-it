@@ -1,5 +1,7 @@
 ---
 title: I gestori eventi propagano le modifiche al di fuori del modello
+description: Si apprenderà che nell'SDK di visualizzazione e modellazione è possibile definire i gestori eventi di archiviazione per propagare le modifiche alle risorse all'esterno dell'archivio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76234eea6c689459728e0da876b6a9cce7c290a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b0780007361115aa485b91db70cc413029a6f8f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114597"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361677"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>I gestori eventi propagano le modifiche al di fuori del modello
 
@@ -184,7 +186,7 @@ Ogni tipo di evento corrisponde a una raccolta in Store. EventManagerDirectory. 
 |TransactionCommitted||
 |TransactionRolledBack||
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Risposta alle modifiche e propagazione delle modifiche](../modeling/responding-to-and-propagating-changes.md)
 - [Codice di esempio: diagrammi di circuito](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

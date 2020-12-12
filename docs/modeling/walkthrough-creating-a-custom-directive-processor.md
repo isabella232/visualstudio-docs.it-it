@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: creazione di un processore di direttiva personalizzato'
+description: Informazioni su come usare Visual Studio per scrivere processori di direttiva personalizzati per personalizzare i modelli di testo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efe32db6f8d5aadb815d845bdc9f06be36ec06c9
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532236"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361885"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Procedura dettagliata: Creare un processore di direttiva personalizzato
 
@@ -637,9 +639,9 @@ In questa sezione, si aggiunge una chiave per il processore di direttiva persona
 
 1. Eseguire il `regedit` comando usando il menu Start o la riga di comando.
 
-2. Passare al percorso **HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ \* . 0 \ TextTemplating\DirectiveProcessors**, quindi fare clic sul nodo.
+2. Passare al percorso **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ \* . 0 \ TextTemplating\DirectiveProcessors**, quindi fare clic sul nodo.
 
-   Nei sistemi a 64 bit usare **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio \\ \* . 0 \ TextTemplating\DirectiveProcessors**
+   Nei sistemi a 64 bit usare **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\\ \* . 0 \ TextTemplating\DirectiveProcessors**
 
 3. Aggiungere una nuova chiave denominata CustomDirectiveProcessor.
 
@@ -654,7 +656,7 @@ In questa sezione, si aggiunge una chiave per il processore di direttiva persona
 
      La chiave del Registro di sistema deve contenere i valori seguenti:
 
-   | Nome | Type | Dati |
+   | Nome | Tipo | Dati |
    |-|-|-|
    | Valore predefinito. | REG_SZ | (valore non impostato) |
    | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
@@ -662,7 +664,7 @@ In questa sezione, si aggiunge una chiave per il processore di direttiva persona
 
      Se si è inserito l'assembly nella GAC, i valori appariranno come indicato di seguito:
 
-   | Nome | Type | Dati |
+   | Nome | Tipo | Dati |
    |-|-|-|
    | Valore predefinito. | REG_SZ | (valore non impostato) |
    | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
@@ -826,15 +828,15 @@ In questo esempio, il modello di testo chiama la direttiva e passa nel nome di u
     > [!NOTE]
     > In questo esempio, il valore del parametro `Processor` è `CustomDirectiveProcessor`. Il valore del parametro `Processor` deve corrispondere al nome della chiave del Registro di sistema per il processore.
 
-5. Scegliere **Salva tutto**dal menu **file** .
+5. Scegliere **Salva tutto** dal menu **file** .
 
 ### <a name="to-test-the-directive-processor"></a>Per testare il processore di direttiva
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su TestDP.TT e quindi scegliere **Esegui strumento personalizzato**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su TestDP.TT e quindi scegliere **Esegui strumento personalizzato**.
 
    Per Visual Basic utenti, per impostazione predefinita TestDP.txt potrebbe non essere visualizzato in **Esplora soluzioni** . Per visualizzare tutti i file assegnati al progetto, aprire il menu **progetto** e fare clic su **Mostra tutti i file**.
 
-2. In **Esplora soluzioni**espandere il nodo TestDP.txt, quindi fare doppio clic su TestDP.txt per aprirlo nell'editor.
+2. In **Esplora soluzioni** espandere il nodo TestDP.txt, quindi fare doppio clic su TestDP.txt per aprirlo nell'editor.
 
     Verrà visualizzato l'output di testo generato. L'output sarà simile al seguente:
 
@@ -959,8 +961,8 @@ Dopo avere testato il processore di direttiva personalizzato, è possibile che s
     </body></html>
     ```
 
-2. Scegliere **salva TestDP.txt**dal menu **file** .
+2. Scegliere **salva TestDP.txt** dal menu **file** .
 
-3. Per visualizzare l'output in un browser, nella **Esplora soluzioni**fare clic con il pulsante destro del mouse su TestDP.htm, quindi scegliere **Visualizza nel browser**.
+3. Per visualizzare l'output in un browser, nella **Esplora soluzioni** fare clic con il pulsante destro del mouse su TestDP.htm, quindi scegliere **Visualizza nel browser**.
 
    L'output deve corrispondere al testo originale, ad eccezione del fatto che il formato HTML è applicato. Il nome di ogni elemento viene visualizzato in grassetto.

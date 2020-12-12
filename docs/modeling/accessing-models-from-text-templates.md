@@ -1,5 +1,7 @@
 ---
 title: Accesso ai modelli da modelli di testo
+description: Informazioni su come utilizzare i modelli di testo per creare file di report, file di codice sorgente e altri file di testo basati su modelli di linguaggio specifici di dominio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,19 +11,19 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66f160d25ccacbdaaaf2238dfc738ade4a4200f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64d937f9a63207e16664bbd9254ae60470caeb41
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531469"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362288"
 ---
 # <a name="access-models-from-text-templates"></a>Accedere ai modelli da modelli di testo
 
 Utilizzando i modelli di testo, è possibile creare file di report, file di codice sorgente e altri file di testo basati su modelli di linguaggio specifici di dominio. Per informazioni di base sui modelli di testo, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md). I modelli di testo funzioneranno in modalità sperimentale durante il debug del linguaggio DSL e funzioneranno anche in un computer in cui è stato distribuito il linguaggio DSL.
 
 > [!NOTE]
-> Quando si crea una soluzione DSL, nel progetto di debug vengono generati file con ** \* estensione TT** del modello di testo di esempio. Quando si modificano i nomi delle classi di dominio, questi modelli non funzioneranno più. Tuttavia, includono le direttive di base necessarie e forniscono esempi che è possibile aggiornare in base al linguaggio DSL.
+> Quando si crea una soluzione DSL, nel progetto di debug vengono generati file con **\* estensione TT** del modello di testo di esempio. Quando si modificano i nomi delle classi di dominio, questi modelli non funzioneranno più. Tuttavia, includono le direttive di base necessarie e forniscono esempi che è possibile aggiornare in base al linguaggio DSL.
 
  Per accedere a un modello da un modello di testo:
 

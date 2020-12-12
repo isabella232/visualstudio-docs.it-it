@@ -1,5 +1,7 @@
 ---
 title: Gestori di modifica del valore delle proprietà del dominio
+description: Informazioni sui gestori delle modifiche dei valori delle proprietà del dominio che possono essere usati in un linguaggio specifico di dominio di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f23984d6c4723b020b361e1da30363442966ea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34f7dcf97498895f841f2a68fd3bc1abac224824
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594708"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361729"
 ---
 # <a name="domain-property-value-change-handlers"></a>Gestori di modifica del valore della proprietà del dominio
 
@@ -22,7 +24,7 @@ In un linguaggio specifico di dominio di Visual Studio, quando viene modificato 
 
 ## <a name="override-the-property-handler-methods"></a>Eseguire l'override dei metodi del gestore delle proprietà
 
-Ogni proprietà di dominio del linguaggio specifico di dominio è gestita da una classe annidata nella propria classe di dominio padre. Il nome segue il formato *PropertyName*gestoreproprietà. È possibile esaminare questa classe del gestore di proprietà nel file **Dsl\Generated Code\DomainClasses.cs**. Nella classe `OnValueChanging()` viene chiamato immediatamente prima che il valore cambi, mentre `OnValueChanged()` immediatamente dopo.
+Ogni proprietà di dominio del linguaggio specifico di dominio è gestita da una classe annidata nella propria classe di dominio padre. Il nome segue il formato *PropertyName* gestoreproprietà. È possibile esaminare questa classe del gestore di proprietà nel file **Dsl\Generated Code\DomainClasses.cs**. Nella classe `OnValueChanging()` viene chiamato immediatamente prima che il valore cambi, mentre `OnValueChanged()` immediatamente dopo.
 
 Si supponga, ad esempio, di disporre di una classe di dominio denominata `Comment` con una proprietà di dominio stringa denominata e di una `Text` proprietà integer denominata `TextLengthCount` . Per far sì che `TextLengthCount` contenga sempre la lunghezza della `Text` stringa, è possibile scrivere il codice seguente in un file separato nel progetto DSL:
 

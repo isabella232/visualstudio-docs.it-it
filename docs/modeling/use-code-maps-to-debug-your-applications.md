@@ -1,5 +1,7 @@
 ---
 title: Usare le mappe codice per eseguire il debug delle applicazioni
+description: Informazioni su come usare le mappe codice per evitare di perdersi nelle codebase di grandi dimensioni, nel codice non noto o nel codice legacy.
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e01857878f927c619529d3bbfc63728f84f0b81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7af24dbbb510fb1d5c9c62b40d5986ea5c74d35b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594110"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361651"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Usare le mappe codice per eseguire il debug delle applicazioni
 
@@ -140,7 +142,7 @@ Per informazioni dettagliate sui comandi e sulle azioni che è possibile usare q
 
  A questo punto è stata eseguita l'analisi. Il problema è stato individuato e corretto eseguendo il mapping del codice. Si dispone inoltre di una mappa che consente di spostarsi nel codice e di ricordare quanto indicato e che mostra i passaggi eseguiti per correggere il problema.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [Visualizzare il codice](../modeling/visualize-code.md)

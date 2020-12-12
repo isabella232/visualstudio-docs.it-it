@@ -1,5 +1,7 @@
 ---
 title: Esplorazione e aggiornamento di un modello nel codice del programma
+description: Informazioni su come scrivere codice per creare ed eliminare elementi del modello, impostarne le proprietà e creare ed eliminare collegamenti tra gli elementi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 521ad703b92133f56d38e061123bf13db13d6375
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb7c78351ccd03247d458ca403c81d379ec18d29
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75566176"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362210"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Esplorare e aggiornare i modelli nel codice del programma
 
@@ -55,7 +57,7 @@ ms.locfileid: "75566176"
 
  `henry.Name = "Henry VIII";`
 
- Se nella definizione DSL viene **calcolato**il **tipo** di una proprietà, non è possibile impostarlo. Per altre informazioni, vedere [proprietà di archiviazione calcolate e personalizzate](../modeling/calculated-and-custom-storage-properties.md).
+ Se nella definizione DSL viene **calcolato** il **tipo** di una proprietà, non è possibile impostarlo. Per altre informazioni, vedere [proprietà di archiviazione calcolate e personalizzate](../modeling/calculated-and-custom-storage-properties.md).
 
 ### <a name="relationships"></a>Relazioni
  Le relazioni di dominio definite nella definizione DSL diventano coppie di proprietà, una per la classe in ogni entità finale della relazione. I nomi delle proprietà vengono visualizzati nel diagramma di DslDefinition come etichette nei ruoli a ogni lato della relazione. A seconda della molteplicità del ruolo, il tipo della proprietà è la classe nell'altra entità finale della relazione o una raccolta di tale classe.
@@ -288,7 +290,7 @@ In alcuni casi, l'eliminazione viene impedita dall'esistenza di un blocco, sull'
 ## <a name="locks"></a><a name="locks"></a> Serrature
  Le modifiche potrebbero essere impedite da un blocco. I blocchi possono essere impostati sui singoli elementi, sulle partizioni e sull'archivio. Se uno di questi livelli ha un blocco che impedisce il tipo di modifica che si desidera apportare, è possibile che venga generata un'eccezione quando si tenta di eseguire questa operazione. È possibile individuare se i blocchi vengono impostati tramite l'elemento. GetLocks (), che è un metodo di estensione definito nello spazio dei nomi <xref:Microsoft.VisualStudio.Modeling.Immutability> .
 
- Per ulteriori informazioni, vedere [definizione di un criterio di blocco per creare segmenti di sola lettura](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
+ Per ulteriori informazioni, vedere [definizione di un criterio di blocco per la creazione di Read-Only segmenti](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
 
 ## <a name="copy-and-paste"></a><a name="copy"></a> Copia e incolla
  È possibile copiare elementi o gruppi di elementi in un oggetto <xref:System.Windows.Forms.IDataObject> :
@@ -482,7 +484,7 @@ partial class MyDiagram
 ## <a name="store-partitions"></a>Archivia partizioni
  Quando viene caricato un modello, il diagramma associato viene caricato nello stesso momento. In genere, il modello viene caricato in Store. DefaultPartition e il contenuto del diagramma viene caricato in un'altra partizione. In genere, il contenuto di ogni partizione viene caricato e salvato in un file separato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [Convalida in un linguaggio specifico di dominio](../modeling/validation-in-a-domain-specific-language.md)

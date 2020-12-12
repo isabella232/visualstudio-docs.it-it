@@ -1,5 +1,7 @@
 ---
 title: Estendere i diagrammi delle dipendenze
+description: Informazioni su come scrivere codice per creare e aggiornare i diagrammi delle dipendenze e su come convalidare la struttura del codice del programma in base ai diagrammi di dipendenza in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 305c562c7600dc6955ce0307db92f4e257fc1c21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d78b7005875f0544354c845cd27d187bdbf40d6d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92298418"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361625"
 ---
 # <a name="extend-dependency-diagrams"></a>Estendere i diagrammi delle dipendenze
 
@@ -35,7 +37,7 @@ ms.locfileid: "92298418"
 
 È necessario che nel computer in cui si desidera eseguire le estensioni del livello sia installata un'edizione appropriata di Visual Studio. Per individuare le edizioni di Visual Studio che supportano i diagrammi di dipendenza, vedere [supporto dell'edizione per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
 - [Diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md)

@@ -1,5 +1,7 @@
 ---
 title: Informazioni sul codice DSL
+description: Informazioni sul modo in cui la soluzione DSL (Domain-Specific Language) genera un'API che è possibile usare per leggere e aggiornare le istanze del linguaggio DSL in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +11,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd739a7780a2a2c858efc14aa72205e9be161900
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565942"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361456"
 ---
 # <a name="understanding-the-dsl-code"></a>Informazioni sul codice DSL
 
-Una soluzione Domain-Specific Language (DSL) genera un'API che è possibile usare per leggere e aggiornare le istanze del linguaggio DSL in Visual Studio. Questa API è definita nel codice generato dalla definizione DSL. Questo argomento descrive l'API generata.
+Una soluzione di linguaggio Domain-Specific (DSL) genera un'API che è possibile usare per leggere e aggiornare le istanze del linguaggio DSL in Visual Studio. Questa API è definita nel codice generato dalla definizione DSL. Questo argomento descrive l'API generata.
 
 ## <a name="the-example-solution-component-diagrams"></a>Soluzione di esempio: Diagrammi componente
 
@@ -66,7 +68,7 @@ Premere **F5** e sperimentare se non si ha familiarità con questo modello di so
 
  `ConnectionBuilders.cs`
 
- Un generatore di connessioni è una classe che crea relazioni. È il codice associato a uno strumento di connessione. Questo file contiene una coppia di classi per ogni strumento di connessione. I nomi sono derivati dai nomi della relazione di dominio e dello strumento di connessione: generatore di *relazioni*e *strumentoconnettore*ConnectAction.
+ Un generatore di connessioni è una classe che crea relazioni. È il codice associato a uno strumento di connessione. Questo file contiene una coppia di classi per ogni strumento di connessione. I nomi sono derivati dai nomi della relazione di dominio e dello strumento di connessione: generatore di *relazioni* e *strumentoconnettore* ConnectAction.
 
  Nell'esempio di soluzione componente, uno dei generatori di connessione si chiama ConnectionBuilder, ma è una coincidenza, perché la relazione di dominio è denominata Connection.
 
@@ -102,7 +104,7 @@ Premere **F5** e sperimentare se non si ha familiarità con questo modello di so
 
  Questo processore di direttive aiuta gli utenti a scrivere modelli di testo che leggono un'istanza del linguaggio DSL. Il processore di direttive carica gli assembly (DLL) per il linguaggio DSL e inserisce in modo efficace le istruzioni `using` per lo spazio dei nomi. Questo consente al codice dei modelli di testo di usare le classi e le relazioni definite nel linguaggio DSL.
 
- Per altre informazioni, vedere [generazione di codice da un Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md) e [creazione di processori di direttiva di modelli di testo T4 personalizzati](../modeling/creating-custom-t4-text-template-directive-processors.md).
+ Per ulteriori informazioni, vedere [generazione di codice da un linguaggio Domain-Specific](../modeling/generating-code-from-a-domain-specific-language.md) e [creazione di processori di direttiva di modelli di testo T4 personalizzati](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
  `DomainClasses.cs`
 
@@ -122,7 +124,7 @@ Premere **F5** e sperimentare se non si ha familiarità con questo modello di so
 
 - Metodi del gestore EGP (Element Group Prototype). Questi sono necessari se l'utente può *unire* (aggiungere) un altro elemento nelle istanze di questa classe. L'utente in genere esegue questa operazione trascinando da uno strumento elemento o da un'altra forma oppure incollando.
 
-   Nel linguaggio DSL di esempio, è possibile unire una porta di input o una porta di output in un componente. Anche componenti e commenti possono essere uniti nel modello. Il valore di
+   Nel linguaggio DSL di esempio, è possibile unire una porta di input o una porta di output in un componente. Anche componenti e commenti possono essere uniti nel modello. Alla classe
 
    I metodi del gestore EGP nella classe dei componenti consentono a un componente di accettare le porte, ma non i commenti. Il gestore EGP nella classe radice del modello accetta commenti e componenti, ma non le porte.
 
@@ -153,7 +155,7 @@ Premere **F5** e sperimentare se non si ha familiarità con questo modello di so
 
  Nei ruoli delle relazioni in cui si specifica una molteplicità di 1..1 o 1..*, l'utente deve essere avvisato che è richiesta almeno un'istanza della relazione. Questo file contiene i vincoli di convalida che implementano gli avvisi. Il collegamento 1..1 di un oggetto padre di incorporamento non è verificato.
 
- Per eseguire questi vincoli, è necessario impostare una delle opzioni **utilizza...** nel nodo **editor \Validation** in DSL Explorer. Per ulteriori informazioni, vedere [convalida in un Domain-Specific Language](../modeling/validation-in-a-domain-specific-language.md).
+ Per eseguire questi vincoli, è necessario impostare una delle opzioni **utilizza...** nel nodo **editor \Validation** in DSL Explorer. Per ulteriori informazioni, vedere [convalida in un linguaggio Domain-Specific](../modeling/validation-in-a-domain-specific-language.md).
 
  `PropertiesGrid.cs`
 
@@ -344,9 +346,9 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  Questo file controlla come il linguaggio DSL viene incluso nel pacchetto in un'estensione VSIX (Visual Studio Integration Extension). Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md)
 - [Personalizzazione ed estensione di un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md)
-- [Scrittura di codice per personalizzare un Domain-Specific Language](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Scrittura di codice per personalizzare un linguaggio Domain-Specific](../modeling/writing-code-to-customise-a-domain-specific-language.md)
