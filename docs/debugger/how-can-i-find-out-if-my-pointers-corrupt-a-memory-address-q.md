@@ -1,6 +1,7 @@
 ---
 title: Individuare se i puntatori danneggiano un indirizzo di memoria | Microsoft Docs
-ms.custom: seodec18
+Description: Per determinare se il puntatore danneggia la memoria, è possibile cercare il danneggiamento dell'heap ed è possibile impostare un punto di interruzione dei dati per scoprire come viene modificato un valore.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 075569815d55ea30f688c5ce86c56990fca03cd1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 310ec0b881c3b4a299a3d933511e54db0e288ddf
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350355"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398364"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>Come è possibile stabilire se i puntatori danneggino un indirizzo di memoria?
 ## <a name="problem-description"></a>Descrizione del problema

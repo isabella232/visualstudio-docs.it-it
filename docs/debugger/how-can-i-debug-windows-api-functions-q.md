@@ -1,6 +1,7 @@
 ---
 title: Eseguire il debug di funzioni API Windows | Microsoft Docs
-ms.custom: seodec18
+Description: Informazioni su come eseguire il debug di una funzione API Windows con i simboli NT caricati. Nel codice a 32 bit si usa il formato decorato del nome della funzione per impostare il punto di interruzione.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/03/2020
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f7b293270facbbfa0d2174121ff6a3ac736b75a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 7ab50205d1ade2447b85ad7eee2ffb6aaf38363d
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599894"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398390"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Come è possibile eseguire il debug di funzioni API Windows?
 Per eseguire il debug di una funzione API Windows con NT Symbols caricato, effettuare le operazioni seguenti.
@@ -50,6 +51,6 @@ Per eseguire il debug di una funzione API Windows con NT Symbols caricato, effet
     {,,USER32.DLL}MessageBeep
     ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md)
 - [Debug del codice nativo](../debugger/debugging-native-code.md)

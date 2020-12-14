@@ -1,5 +1,7 @@
 ---
 title: Debug .NET Framework origine | Microsoft Docs
+Description: Informazioni su come eseguire il debug dell'origine .NET Framework. È necessario configurarlo e scaricare i simboli di debug.
+ms.custom: SEO-VS-2020
 ms.date: 11/19/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f054564ff36c538b18525ec9d8adf9b6f3d060b9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 13a575ec2e77f1b715ec5f17324a6933d8cf0805
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852126"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398623"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Procedura: Eseguire il debug del codice sorgente di .NET Framework
 
@@ -29,7 +31,7 @@ Per eseguire il debug di .NET Framework origine, è necessario:
 
 ### <a name="to-enable-stepping-into-net-framework-source"></a>Per abilitare l'esecuzione di un'istruzione .NET Framework origine
 
-1. In **strumenti** (o **debug**) > **Opzioni**  >  di**debug**  >  **generale**selezionare **Abilita .NET Framework l'esecuzione**di un'istruzione all'origine.
+1. In **strumenti** (o **debug**) > **Opzioni**  >  di **debug**  >  **generale** selezionare **Abilita .NET Framework l'esecuzione** di un'istruzione all'origine.
 
    - Se Just My Code è attivato, viene visualizzata una finestra di dialogo con un avviso indicante che Just My Code è stato disabilitato. Selezionare **OK**.
 
@@ -53,7 +55,7 @@ Per eseguire il debug di .NET Framework origine, è necessario:
 
 ### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>Per caricare i simboli dalle finestre moduli o stack di chiamate
 
-1. Durante il debug, aprire la finestra selezionando **debug**  >  **Windows**  >  **moduli** Windows (oppure premere **CTRL + ALT + U**) o **eseguire il debug**  >  **Windows**  >  **dello stack di chiamate** Windows (**CTRL + ALT + C**).
+1. Durante il debug, aprire la finestra selezionando **debug**  >    >  **moduli** Windows (oppure premere **CTRL + ALT + U**) o **eseguire il debug**  >    >  **dello stack di chiamate** Windows (**CTRL + ALT + C**).
 
 1. Fare clic con il pulsante destro del mouse su un modulo per cui non sono stati caricati simboli Nella finestra **moduli** lo stato di caricamento dei simboli si trova nella colonna **stato simboli** . Nella finestra **stack di chiamate** lo stato è nella colonna **stato frame** e il frame è disattivato.
 

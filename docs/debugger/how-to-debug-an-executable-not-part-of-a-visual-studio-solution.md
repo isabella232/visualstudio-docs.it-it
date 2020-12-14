@@ -1,7 +1,8 @@
 ---
 title: Eseguire il debug di un'app che non fa parte di una soluzione di Visual Studio
 titleSuffix: ''
-ms.custom: ''
+Description: Informazioni su come eseguire il debug di un'app che non fa parte di una soluzione di Visual Studio. Potrebbe essere possibile aggiungere il debugger di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2020
 ms.topic: how-to
 dev_langs:
@@ -20,16 +21,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8cb71acb9c1c332f269f77129fa2d11a9a874f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd4d5497a4c29502fe4d7e4825b1767991c79298
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350147"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398662"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Eseguire il debug di un'app che non fa parte di una soluzione di Visual Studio (C++, C#, Visual Basic, F #)
 
-Potrebbe essere necessario eseguire il debug di un'app (file con*estensione exe* ) che non fa parte di una soluzione di Visual Studio. Potrebbe trattarsi di un progetto di [cartella aperta](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) oppure è possibile che l'app sia stata creata all'esterno di Visual Studio oppure che l'app sia stata creata da un'altra posizione.
+Potrebbe essere necessario eseguire il debug di un'app (file con *estensione exe* ) che non fa parte di una soluzione di Visual Studio. Potrebbe trattarsi di un progetto di [cartella aperta](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) oppure è possibile che l'app sia stata creata all'esterno di Visual Studio oppure che l'app sia stata creata da un'altra posizione.
 
 - Per un progetto di cartella aperta in Visual Studio (che non include alcun file di progetto o di soluzione), vedere [eseguire ed eseguire il debug del codice](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md#run-and-debug-your-code) oppure, per C++, [configurare i parametri di debug con launch.vs.json](/cpp/build/open-folder-projects-cpp#configure-debugging-parameters-with-launchvsjson).
 
@@ -71,6 +72,6 @@ Potrebbe essere necessario eseguire il debug di un'app (file con*estensione exe*
 1. Con il nuovo file selezionato, avviare il debug dell'app selezionando un comando di esecuzione, ad esempio **Avvia debug**, dal menu **debug** .
 
 ### <a name="see-also"></a>Vedere anche
-- [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)
+- [Impostazioni del debugger e preparazione](../debugger/debugger-settings-and-preparation.md)
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [File DBG](/previous-versions/visualstudio/visual-studio-2010/da528y14(v=vs.100))
