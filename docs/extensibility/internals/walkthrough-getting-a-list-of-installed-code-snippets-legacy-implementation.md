@@ -1,5 +1,7 @@
 ---
 title: Recupero di un elenco di frammenti di codice installati (legacy) | Microsoft Docs
+description: Informazioni su come ottenere tutti i frammenti di codice per un GUID del linguaggio specifico. I tasti di scelta rapida per i frammenti di codice possono essere inseriti in un elenco di completamento IntelliSense.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3d5ef857973555c4b2d201f98957bd2c39328b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 390f8e7030d0e758eb27fce4e83a30e30fbf64af
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703646"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487894"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Procedura dettagliata: Recupero di un elenco di frammenti di codice installati (implementazione legacy)
 Un frammento di codice è un frammento di codice che può essere inserito nel buffer di origine con un comando di menu (che consente di scegliere tra un elenco di frammenti di codice installati) o selezionando un collegamento al frammento da un elenco di completamento IntelliSense.

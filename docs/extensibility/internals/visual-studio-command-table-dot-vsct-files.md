@@ -1,5 +1,7 @@
 ---
 title: Tabella comandi di Visual Studio (. File vsct) | Microsoft Docs
+description: Informazioni sui file di configurazione della tabella dei comandi, ovvero file di testo che descrivono il set di comandi contenuti in un pacchetto VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24ebac7aee2294d2ad8cee06cd88102bb8d3fd78
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 377bae52f506c1cb9ac0f6b2d4136faaab0b50ad
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012347"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488037"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>File Visual Studio Command Table (con estensione vsct)
 Un file di configurazione della tabella dei comandi è un file di testo che descrive il set di comandi contenuti in un pacchetto VSPackage. Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] compilatore della tabella dei comandi (vsct) compila i file di configurazione basati su XML (file con estensione vsct) in file di output della tabella dei comandi binari (con estensione CTO). I file con estensione CTO risultanti sono identici a quelli creati usando il compilatore della tabella dei comandi (CTC) per compilare i file di configurazione. ctc. Tuttavia, i file con estensione vsct basati su XML presentano alcuni vantaggi, ad esempio un editor XML e XML IntelliSense.

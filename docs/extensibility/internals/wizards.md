@@ -1,5 +1,7 @@
 ---
 title: Procedure guidate | Microsoft Docs
+description: Informazioni su come elencare la procedura guidata tra le procedure guidate e i modelli disponibili in Visual Studio e sui requisiti che la procedura guidata deve soddisfare nell'IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d65cf2dcc10380b0ac750c8e1b0e7fd56eab95b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f367723a3c819635f2d7cf20ed812a36cda12830
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703204"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487751"
 ---
 # <a name="wizards"></a>Procedure guidate
 Dopo aver creato una procedura guidata, in genere si vuole aggiungerla al [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE) in modo che altri utenti possano usarlo. La procedura guidata aggiunta viene quindi visualizzata nelle finestre di dialogo **Aggiungi nuovo progetto** o **Aggiungi nuovo elemento** . Per visualizzare le finestre di dialogo **Aggiungi nuovo progetto** o **Aggiungi nuovo elemento** , fare clic con il pulsante destro del mouse su una soluzione aperta in **Esplora soluzioni**, scegliere **Aggiungi**, quindi fare clic su **nuovo progetto** o **nuovo elemento**.

@@ -1,5 +1,7 @@
 ---
 title: Installazione di Visual Studio SDK | Microsoft Docs
+description: Informazioni sulle opzioni di installazione di Visual Studio Software Development Kit, incluso durante l'installazione di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 07/12/2018
 ms.topic: overview
 ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31df92b011336320d759461ed16ce2a3c8f61017
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edab24396f5a3ae5527b76a58db90c19796c4240
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905547"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487569"
 ---
 # <a name="install-the-visual-studio-sdk"></a>Installare Visual Studio SDK
 

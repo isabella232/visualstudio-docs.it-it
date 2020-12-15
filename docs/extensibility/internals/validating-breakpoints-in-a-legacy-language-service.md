@@ -1,5 +1,7 @@
 ---
 title: Convalida di punti di interruzione in un servizio di linguaggio legacy | Microsoft Docs
+description: Informazioni su come è possibile eseguire l'override del metodo ValidateBreakpointLocation in un servizio di linguaggio legacy per convalidare i punti di interruzione prima dell'avvio del debugger.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af09e4f8f2156100bea9267c92ffebeb64ce1aa3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d48db7397e2f9a5921315036bea15551fb7baa9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704088"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488024"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Convalida dei punti di interruzione in un servizio di linguaggio legacy
 Un punto di interruzione indica che l'esecuzione del programma dovrebbe arrestarsi in un determinato punto mentre è in esecuzione in un debugger. Un utente può inserire un punto di interruzione in qualsiasi riga del file di origine, poiché l'editor non è a conoscenza di ciò che costituisce una posizione valida per un punto di interruzione. Quando viene avviato il debugger, tutti i punti di interruzione contrassegnati (detti punti di interruzione in sospeso) vengono associati alla posizione appropriata nel programma in esecuzione. Allo stesso tempo, i punti di interruzione vengono convalidati per assicurarsi di contrassegnare percorsi di codice validi. Ad esempio, un punto di interruzione in un commento non è valido perché non esiste alcun codice in tale posizione nel codice sorgente. Il debugger Disabilita i punti di interruzione non validi.

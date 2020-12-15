@@ -1,5 +1,7 @@
 ---
-title: Flag della riga di comando del compilatore VSCT | Microsoft Docs
+title: Flag Command-Line del compilatore VSCT | Microsoft Docs
+description: Il compilatore della tabella dei comandi di Visual Studio fornisce opzioni della riga di comando per garantire la corretta compilazione dei file con estensione vsct.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4ee29710049453c3163c366eccf96e257b6028d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d60b248a4941d176ac6ba4e808a94dbc67efbe7
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703962"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488011"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Flag della riga di comando del compilatore VSCT
 Il compilatore della tabella dei comandi di Visual Studio (VSCT) fornisce opzioni della riga di comando per garantire la corretta compilazione dei file. vsct.
 
 ## <a name="command-line-parameters"></a>Parametri della riga di comando
- Per visualizzare la Guida di base di VSCT da una finestra di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **comando** , passare alla cartella \VisualStudioIntegration\Tools\Bin\ del *percorso di installazione di Visual Studio SDK*e digitare:
+ Per visualizzare la Guida di base di VSCT da una finestra di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **comando** , passare alla cartella \VisualStudioIntegration\Tools\Bin\ del *percorso di installazione di Visual Studio SDK* e digitare:
 
 ```
 vsct /?
@@ -59,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-d|Specificare eventuali simboli definiti aggiuntivi.|
 |-I|Indica i percorsi di inclusione aggiuntivi da utilizzare durante la risoluzione dei riferimenti a file.|
 |-l|Specificare il <xref:System.Globalization.CultureInfo> nome delle impostazioni cultura, ad esempio "en-US".|
-|-E|Crea oggetti C# nello spazio dei nomi specificato per gli elementi Command, seguiti da [C&#124;H&#124;N]:*filename*where C = C#, H = C++ Header, N = Namespace. Lo spazio dei nomi è obbligatorio per C#.|
+|-E|Crea oggetti C# nello spazio dei nomi specificato per gli elementi Command, seguiti da [C&#124;H&#124;N]:*filename* where C = C#, H = C++ Header, N = Namespace. Lo spazio dei nomi è obbligatorio per C#.|
 |-v|Output dettagliato.|
 
  L'opzione-L indica al compilatore di selezionare un gruppo di stringhe per produrre il file binario con estensione CTO corrispondente al <xref:System.Globalization.CultureInfo> nome delle impostazioni cultura specificato. Il nome delle impostazioni cultura specificato deve corrispondere all'attributo Language di uno o più [elementi Strings](../../extensibility/strings-element.md) nel file con estensione vsct. Se un elemento Strings non ha un attributo Language, viene ereditato dall' [elemento CommandTable](../../extensibility/commandtable-element.md)che lo contiene.

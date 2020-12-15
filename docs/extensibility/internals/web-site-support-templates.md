@@ -1,5 +1,7 @@
 ---
 title: Modelli di supporto per siti Web | Microsoft Docs
+description: Informazioni sui modelli di supporto per siti Web. Il progetto e i modelli di elemento del sito Web di Visual Studio forniscono stub di elementi e progetti di siti Web riutilizzabili e personalizzabili.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3c139ae6f2f9ec618e6382a1551a9e35eee7ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7bb3d669dadf7c33fa81231adf26ae30e999c51
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703459"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487855"
 ---
 # <a name="web-site-support-templates"></a>Modelli di supporto per siti Web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] I modelli di progetto e di elemento del sito Web forniscono stub di elementi e progetti di siti Web riutilizzabili e personalizzabili che accelerano il processo di sviluppo eliminando la necessità di creare nuovi progetti ed elementi di siti Web da zero. Per ulteriori informazioni sui [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modelli, vedere [creazione di modelli di progetti e di elementi](../../ide/creating-project-and-item-templates.md).

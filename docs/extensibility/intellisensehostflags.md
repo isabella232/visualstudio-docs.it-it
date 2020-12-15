@@ -1,5 +1,7 @@
 ---
 title: IntelliSenseHostFlags | Microsoft Docs
+description: L'enumerazione IntelliSenseHostFlags specifica i flag host di IntelliSense. Questo articolo descrive i valori enum.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0df05e7363db01bd4f16fee5d75141dc93df1c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b206cc4aa7c1ff388d6868fa8a0533d15da094ff
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710265"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487504"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 Specifica i flag host di IntelliSense.
@@ -38,7 +40,7 @@ enum IntellisenseHostFlags
 
 ### <a name="parameters"></a>Parametri
 
-|Membri|Descrizione|
+|Members|Descrizione|
 |-------------|-----------------|
 |`IHF_READONLYCONTEXT`|Il buffer del contesto è di sola lettura.|
 |`IHF_NOSEPARATESUBJECT`|Nessun testo soggetto. Il buffer del contesto contiene la destinazione IntelliSense (implica `!IHF_READONLYCONTEXT` ).|

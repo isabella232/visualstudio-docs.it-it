@@ -1,5 +1,7 @@
 ---
 title: 'Area di test 6: eliminare | Microsoft Docs'
+description: Questa area di test del controllo del codice sorgente riguarda le azioni Delete in Esplora soluzioni per il plug-in del controllo del codice sorgente di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9902ab9d1cb9c28ddf67b83590a4cccd5f6562f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1371472a4dec265b5e476d96a32cb725e91ce7fe
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704506"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487556"
 ---
 # <a name="test-area-6-delete"></a>Area di test 6: Eliminare
 Questa area di test del plug-in del controllo del codice sorgente copre le azioni di eliminazione.
@@ -29,7 +31,7 @@ Questa area di test del plug-in del controllo del codice sorgente copre le azion
 
 - Cartelle
 
-- Progetto
+- Project
 
   A seconda del tipo di progetto, è possibile scegliere di **rimuovere** il progetto (lascia i file su disco) o **eliminare** il progetto (rimuove i file su disco). Entrambe le azioni rimuovono il progetto o l'elemento da **Esplora soluzioni**.
 
@@ -44,7 +46,7 @@ Questa area di test del plug-in del controllo del codice sorgente copre le azion
 
 - L'elemento è ancora presente nell'archivio del controllo del codice sorgente, anche dopo l'eliminazione e deve essere eliminato manualmente.
 
-|Action|Passi del test|Risultati previsti da verificare|
+|Azione|Passi del test|Risultati previsti da verificare|
 |------------|----------------|--------------------------------|
 |Eliminare un progetto client|1. creare un progetto client.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. rimuovere l'intero progetto dalla soluzione|Comportamento previsto comune.|
 |Elimina un file vuoto|1. creare un progetto client.<br />2. aggiungere un file di zero byte al progetto.<br />3. aggiungere la soluzione al controllo del codice sorgente.<br />4. Selezionare il file ed eliminarlo.|Comportamento previsto comune.|

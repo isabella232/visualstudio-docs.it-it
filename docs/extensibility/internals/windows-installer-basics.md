@@ -1,5 +1,7 @@
 ---
 title: Nozioni di base Windows Installer | Microsoft Docs
+description: Informazioni sulle Windows Installer da usare per l'installazione di un pacchetto VSPackage, inclusa l'organizzazione delle funzionalità VSPackage in componenti Windows Installer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeea0b17a3c234bb7670642fb9ae0a442c9d60cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f4ca1908fbd54c0e8d12212bed19fc77e1dff51
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703423"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487777"
 ---
 # <a name="windows-installer-basics"></a>Nozioni di base su Windows Installer
 Il Windows Installer installa e Disinstalla le applicazioni o i prodotti software sul computer di un utente, eseguendo queste attività in unità denominate Windows Installer componenti (talvolta denominati WICs o solo componenti). Un GUID identifica ogni WIC, ovvero l'unità di base dell'installazione e il conteggio dei riferimenti per le configurazioni che utilizzano Windows Installer.
@@ -55,13 +57,13 @@ Il Windows Installer installa e Disinstalla le applicazioni o i prodotti softwar
 > [!NOTE]
 > L'imposizione delle regole di Windows Installer si verifica solo se si esegue una convalida del file con estensione msi. Tuttavia, si consiglia di considerare queste regole come procedure consigliate. Per ulteriori informazioni, vedere [convalida di un database di installazione](/windows/desktop/Msi/validating-an-installation-database) e [convalida del pacchetto](/windows/desktop/Msi/package-validation).
 
-#### <a name="installer-enforced-rules"></a>Regole applicate dal programma di installazione
+#### <a name="installer-enforced-rules"></a>Regole di Installer-Enforced
 
 - Tutti i file in un determinato componente devono essere installati nella stessa directory. Viceversa, i file installati in cartelle separate devono appartenere a componenti distinti.
 
 - Può essere presente un solo percorso della chiave per ogni componente. Il percorso della chiave è semplicemente un file o una chiave del registro di sistema che rappresenta l'intero componente.
 
-#### <a name="component-provider-responsibilities"></a>Responsabilità del provider di componenti
+#### <a name="component-provider-responsibilities"></a>Responsabilità Component-Provider
 
 - Due risorse che potrebbero essere fornite separatamente nelle versioni successive dovrebbero esistere in componenti distinti. Le risorse devono essere raggruppate nello stesso componente solo quando si è certi che queste risorse non verranno mai fornite separatamente. In realtà, è consigliabile che tutte le risorse primarie (ad esempio, dll) esistano sempre in WICs separate. Per ulteriori informazioni, vedere [definizione dei componenti del programma di installazione](/windows/desktop/Msi/defining-installer-components).
 

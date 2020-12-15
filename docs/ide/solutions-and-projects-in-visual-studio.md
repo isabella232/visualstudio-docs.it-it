@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42250d4b60cf272f041fea6f44abd24f99645b93
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d2889729ae539d640bb9d43c64956edc04b74f26
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363458"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488193"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 
@@ -55,14 +55,14 @@ Un progetto è contenuto all'interno di una *soluzione*. Nonostante il nome, una
 
 Per archiviare le impostazioni delle soluzioni, Visual Studio usa due tipi di file, uno con estensione *sln* e uno con estensione *suo*.
 
-|Estensione|Nome|Description|
+|Estensione|Nome|Descrizione|
 |---------------|----------|-----------------|
 |sln|Soluzione Visual Studio|Organizza progetti, elementi del progetto ed elementi della soluzione nella soluzione.|
 |suo|Solution User Options|Archivia le impostazioni a livello di utente e le personalizzazioni, ad esempio i punti di interruzione.|
 
 ### <a name="solution-folder"></a>Cartella soluzione
 
-In questo contesto, una "cartella della soluzione" è una cartella virtuale che è solo in **Esplora soluzioni**, in cui è possibile usarla per raggruppare i progetti in una soluzione. Per individuare la posizione in cui i progetti vengono archiviati nel computer, passare a **strumenti**  >  **Opzioni**  >  **progetti e soluzioni**  >  **percorsi**.
+In questo contesto, una "cartella della soluzione" è una cartella virtuale che è solo in **Esplora soluzioni**, in cui è possibile usarla per raggruppare i progetti in una soluzione. Se si desidera individuare un file di soluzione in un computer, passare a **strumenti**  >  **Opzioni**  >  **progetti e soluzioni**  >  **percorsi**. Per altre informazioni, vedere finestra di [dialogo Opzioni: progetti e soluzioni > percorsi](./reference/projects-solutions-locations-options.md)
 
 ## <a name="create-new-projects"></a>Crea nuovi progetti
 
@@ -70,7 +70,7 @@ Il modo più semplice per creare un nuovo progetto è iniziare da un modello di 
 
 Se si personalizzano spesso i progetti in un certo modo, è possibile creare un modello di progetto personalizzato che è possibile utilizzare per creare nuovi progetti da. Per altre informazioni, vedere [Creare modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md).
 
-Quando si crea un nuovo progetto, per impostazione predefinita viene salvato in *%USERPROFILE%\source\repos*. È possibile modificare questo percorso tramite l'impostazione **Percorso progetti** in **Strumenti** > **Opzioni** > **Progetti e soluzioni** > **Percorsi**. Per altre informazioni, vedere [Pagina Progetti e soluzioni, finestra di dialogo Opzioni](../ide/reference/projects-and-solutions-options-dialog-box.md).
+Quando si crea un nuovo progetto, per impostazione predefinita viene salvato in *%USERPROFILE%\source\repos*. È possibile modificare questo percorso tramite l'impostazione **Percorso progetti** in **Strumenti** > **Opzioni** > **Progetti e soluzioni** > **Percorsi**. Per altre informazioni, vedere [Pagina Progetti e soluzioni, finestra di dialogo Opzioni](./reference/projects-and-solutions-options-dialog-box.md).
 
 ## <a name="solution-explorer"></a>Esplora soluzioni
 
@@ -87,7 +87,7 @@ Per i progetti ASP.NET Core, è possibile personalizzare la modalità di annidam
 
 Per visualizzare un elenco di alcune delle icone visualizzate in Esplora soluzioni, vedere [Visualizzazione classi e Visualizzatore oggetti icone](class-view-and-object-browser-icons.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [IDE di Visual Studio](../get-started/visual-studio-ide.md)
 - [Portabilità, migrazione e aggiornamento dei progetti](../porting/port-migrate-and-upgrade-visual-studio-projects.md)

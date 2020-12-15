@@ -1,5 +1,7 @@
 ---
 title: Scenari di installazione di VSPackage | Microsoft Docs
+description: Informazioni sulle procedure consigliate per il supporto di installazioni side-by-side di Visual Studio con installazioni condivise o affiancate del pacchetto VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2095087451ded8858382323aabc4048582a6db43
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 97538be6c174f76072a6ca006db6443aa3fcdb57
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012113"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487972"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scenari di installazione di pacchetti VSPackage
 

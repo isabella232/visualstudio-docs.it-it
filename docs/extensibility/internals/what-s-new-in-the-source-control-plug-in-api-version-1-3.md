@@ -1,5 +1,6 @@
 ---
 title: "&apos;Novità dell'API del plug-in del controllo del codice sorgente 1,3"
+description: Informazioni sulle novità dell'API del plug-in del controllo del codice sorgente versione 1,3, che introduce le nuove funzioni per fornire un controllo più avanzato.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac171a4ba33ed7941f2f5887ccf61ca589c31fd3
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 491c35a1a99af9b3271e8b2036f7d0c6f8f57908
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037608"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487790"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Novità dell'API del plug-in del controllo del codice sorgente versione 1,3&#39;
 L'API del plug-in del controllo del codice sorgente versione 1,3 introduce le nuove funzioni seguenti per fornire un controllo più avanzato.
@@ -35,6 +36,6 @@ L'API del plug-in del controllo del codice sorgente versione 1,3 introduce le nu
 |[SccBackgroundGet](../../extensibility/sccbackgroundget-function.md)|Esegue un'"Get" invisibile ai file specificati (non viene visualizzata alcuna interfaccia utente)|
 |[SccGetUserOption](../../extensibility/sccgetuseroption-function.md)|Consente l'accesso alle opzioni specifiche dell'utente|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Per iniziare](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
 - [Novità della versione 1.2 dell'API del plug-in del controllo del codice sorgente](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

@@ -1,5 +1,7 @@
 ---
 title: Shell di Visual Studio | Microsoft Docs
+description: Visual Studio Shell è l'agente primario di integrazione in Visual Studio e fornisce funzionalità di base e supporta la comunicazione incrociata tra i pacchetti VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb89fc3b82dc7f142714608d8a669e368216c729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 546a76d1533efaef28ddafb14b04514f64e9d4f9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704008"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488050"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 La [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell è l'agente primario di integrazione in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . La shell fornisce la funzionalità necessaria per consentire ai pacchetti VSPackage di condividere i servizi comuni. Poiché l'obiettivo dell'architettura di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è quello di sfruttare le funzionalità principali nei pacchetti VSPackage, la shell è un Framework per fornire funzionalità di base e supportare la comunicazione incrociata tra i pacchetti VSPackage dei componenti.

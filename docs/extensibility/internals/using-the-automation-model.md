@@ -1,5 +1,7 @@
 ---
 title: Uso del modello di automazione | Microsoft Docs
+description: Informazioni su come ottenere le proprietà e i metodi del pacchetto VSPackage dopo che è stato connesso al modello di automazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d014627161666473d3b674f72cfec339a66fdc05
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: ad8c02f846a946933ac07d4aa546ad3ce3a2a82f
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012490"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488167"
 ---
 # <a name="using-the-automation-model"></a>Uso del modello di automazione
 Dopo aver connesso il pacchetto VSPackage a automazione, è possibile ottenere le proprietà e i metodi chiamando il <xref:EnvDTE.DTEClass.GetObject%2A> metodo sull' <xref:EnvDTE._DTE> oggetto, passando una stringa che rappresenta l'oggetto che si vuole recuperare.

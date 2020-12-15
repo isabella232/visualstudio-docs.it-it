@@ -1,5 +1,7 @@
 ---
 title: Aggiornamento di progetti | Microsoft Docs
+description: Informazioni sulle interfacce fornite da Visual Studio SDK per implementare il supporto dell'aggiornamento nei progetti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a99207fc14cf9f462bc1abc88d6fed166ea6523f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d42a912761f04fb122551dc14ec077f1869f6bf
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704262"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487582"
 ---
 # <a name="upgrading-projects"></a>Aggiornamento dei progetti
 

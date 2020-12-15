@@ -1,5 +1,6 @@
 ---
 title: "&apos;Novità dell'API del plug-in del controllo del codice sorgente 1,2"
+description: Informazioni sulle novità della funzionalità di controllo del codice sorgente avanzato nell'API del plug-in del controllo del codice sorgente versione 1,2.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5deb43b3b5d1a654fee82b043f06ec8219530a2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: eca5afe8ea9bb1404acf342cc7edbe1100888c6e
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037621"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487803"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Novità dell'API del plug-in del controllo del codice sorgente versione 1,2&#39;
 In questa sezione viene evidenziata la funzionalità di controllo del codice sorgente avanzata nell'API del plug-in del controllo del codice sorgente versione 1,2. Di seguito sono elencate le nuove funzionalità della versione 1,2:
@@ -33,5 +34,5 @@ In questa sezione viene evidenziata la funzionalità di controllo del codice sor
 
 - [Rimozione delle informazioni del controllo del codice sorgente da. Proj e. File sln](../../extensibility/internals/removal-of-source-control-information-from-dot-proj-and-dot-sln-files.md) spiega in che modo l'API del plug-in del controllo del codice sorgente versione 1,2 archivia le informazioni sui progetti e le soluzioni.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Per iniziare](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

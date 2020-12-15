@@ -2,19 +2,19 @@
 title: Suggerimenti per migliorare le prestazioni
 description: Informazioni su come ottimizzare determinate funzionalità di Visual Studio che potrebbero non essere usate per migliorare le prestazioni.
 ms.custom: SEO-VS-2020
-ms.date: 08/13/2020
+ms.date: 12/14/2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f4c36987e198be576d843b984be14ddea824919
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: b3655407ce94395f74ebe5362e7006075ef1e790
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479615"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488180"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Suggerimenti sulle prestazioni di Visual Studio
 
@@ -43,7 +43,7 @@ Se si disabilita il ripristino automatico dei file, è possibile accedere veloce
 
 - Per le funzionalità generali di **Vai a**, selezionare **Modifica** > **Vai a** > **Vai a tutti** oppure premere **CTRL**+**T**.
 
-- Passare all'ultimo percorso di modifica in una soluzione usando **modifica**  >  **Vai a**  >  **Vai a percorso Ultima modifica** o premendo **CTRL** + **MAIUSC** indietro + **Backspace**.
+- Passare all'ultimo percorso di modifica in una soluzione usando **modifica**  >  **Vai a**  >  **Vai a percorso Ultima modifica** o premendo **CTRL** + **MAIUSC** indietro + .
 
 - Usare **Go To Recent File** (Vai a file recenti) per visualizzare un elenco di file visitati di recente in una soluzione. Selezionare **modifica**  >  **Vai a**  >  **Vai a file recente** oppure premere **CTRL** + **1**, **CTRL** + **R**.
 
@@ -71,7 +71,7 @@ Se in genere si verificano problemi di memoria insufficiente durante le sessioni
 
     È consigliabile disabilitare la profilatura della CPU dopo l'uso. Questa funzionalità può utilizzare grandi quantità di risorse. Dopo aver abilitato la profilatura della CPU, questo stato viene mantenuto per le sessioni di debug successive, perciò è preferibile disattivarla al termine. È possibile risparmiare risorse disabilitando gli strumenti di diagnostica durante il debug se la funzionalità offerte non sono necessarie.
 
-    Per disabilitare gli **strumenti di diagnostica**, avviare una sessione di debug, scegliere **Strumenti** > **Opzioni** > **Abilita strumenti di diagnostica** e deselezionare l'opzione.
+    Per disabilitare il **strumenti di diagnostica**, avviare una sessione di debug, selezionare **strumenti**  >  **Opzioni**  >  **debug**  >  **generale**, quindi deselezionare l'opzione **Abilita strumenti di diagnostica durante il debug** .
 
     Per altre informazioni, vedere [Strumenti di profilatura](../profiling/profiling-feature-tour.md).
 
@@ -153,7 +153,7 @@ Se l'imposizione della Garbage Collection risulta particolarmente efficiente nel
 
 Per una descrizione dettagliata del Garbage Collector di CLR, vedere [Nozioni fondamentali sulla Garbage Collection](/dotnet/standard/garbage-collection/fundamentals).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Ottimizzare le prestazioni di Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Load solutions faster (Visual Studio blog)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/) (blog di Visual Studio Caricare più rapidamente soluzioni)

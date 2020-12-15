@@ -1,5 +1,7 @@
 ---
 title: Attributi di supporto per siti Web | Microsoft Docs
+description: Informazioni sugli attributi di supporto per i siti Web necessari per estendere le funzionalità di Visual Studio mediante i progetti di siti Web.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef75f99480145475278357a552f3ac74c0289800
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9beee39ca6968b0922bc134fa21e0cde3d6dd3b6
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703489"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487868"
 ---
 # <a name="web-site-support-attributes"></a>Attributi di supporto per siti Web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Il progetto di sito Web può essere esteso per fornire supporto per i linguaggi di programmazione Web. È necessario che il linguaggio si registri [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] in modo che i modelli di progetto possano essere visualizzati nella finestra di dialogo **nuovo sito Web** quando la lingua è selezionata.

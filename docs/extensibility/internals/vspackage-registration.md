@@ -1,5 +1,7 @@
 ---
 title: Registrazione VSPackage | Microsoft Docs
+description: Informazioni sulla registrazione di VSPackage, in cui i pacchetti consigliano a Visual Studio che sono installati e che devono essere caricati scrivendo informazioni nel registro di sistema.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5941a0bc5d9f9f983a616dcc22cf1260d0911fa8
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 88c8294042bb61939a52f4053f5b27ae915e01df
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012126"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487985"
 ---
 # <a name="vspackage-registration"></a>Registrazione di pacchetti VSPackage
 I pacchetti VSPackage devono consigliare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] che siano installati e che debbano essere caricati. Questo processo viene eseguito scrivendo le informazioni nel registro di sistema. Si tratta di un processo tipico di un programma di installazione.
@@ -40,7 +42,7 @@ I pacchetti VSPackage devono consigliare [!INCLUDE[vsprvs](../../code-quality/in
 > [!NOTE]
 > Lo strumento RegPkg non è ridistribuibile e non può essere usato per registrare un pacchetto VSPackage nel sistema di un utente.
 
-## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Perché i pacchetti VSPackage non devono eseguire la registrazione automatica al momento dell'installazione
+## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Perché i pacchetti VSPackage non devono Self-Register al momento dell'installazione
  I programmi di installazione VSPackage non devono essere basati sulla registrazione automatica. A prima vista, mantenere i valori del registro di sistema del pacchetto VSPackage solo nel pacchetto VSPackage sembra essere una soluzione ideale. Dato che gli sviluppatori hanno bisogno dei valori del registro di sistema disponibili per il lavoro e i test di routine, è opportuno evitare di mantenere una copia separata dei dati del registro di sistema nel programma di installazione. Il programma di installazione può basarsi sul pacchetto VSPackage per scrivere i valori del registro di sistema.
 
  In teoria, la registrazione automatica presenta diversi difetti che lo rendono non idoneo per l'installazione di VSPackage:

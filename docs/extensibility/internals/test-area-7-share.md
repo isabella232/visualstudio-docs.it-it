@@ -1,5 +1,7 @@
 ---
 title: 'Area di test 7: condivisione | Microsoft Docs'
+description: Questa area di test del controllo del codice sorgente copre la condivisione di elementi tra percorsi tramite il comando Condividi per il plug-in del controllo del codice sorgente di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd4c48e94015d95f5e56d465cdbf98562108d3b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02593af854a9e68e7f4a6cc66f54452d3c3d3f94
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704411"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487608"
 ---
 # <a name="test-area-7-share"></a>Area di test 7: Condividi
 Questa area di test copre la condivisione di elementi tra percorsi tramite il comando **share** .
@@ -36,7 +38,7 @@ Questa area di test copre la condivisione di elementi tra percorsi tramite il co
 ## <a name="command-menu-access"></a>Accesso al menu dei comandi
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Nei test case vengono utilizzati i percorsi dei menu Integrated Development Environment seguenti.
 
- Condivisione: **File** -> condivisione del**controllo del codice sorgente**del file -> **Share**.
+ Condivisione:  -> condivisione del **controllo del codice sorgente** del file -> .
 
 ## <a name="expected-behavior"></a>Comportamento previsto
 
@@ -49,14 +51,14 @@ Questa area di test copre la condivisione di elementi tra percorsi tramite il co
 ## <a name="test-cases"></a>Test case
  Di seguito sono riportati i test case specifici per l'area test di condivisione.
 
-|Action|Passi del test|Risultati previsti da verificare|
+|Azione|Passi del test|Risultati previsti da verificare|
 |------------|----------------|--------------------------------|
-|Condividere un file da un progetto caricato nel controllo del codice sorgente a un altro progetto caricato|1. creare un nuovo progetto.<br />2. aggiungere un secondo progetto alla soluzione.<br />3. creare un file nel secondo progetto con un nome non presente nel primo progetto.<br />4. aggiungere la soluzione al controllo del codice sorgente.<br />5. Selezionare il primo progetto.<br />6. finestra di dialogo Apri **condivisione** (**File**  ->  **Condivisione controllo del codice sorgente**file  ->  **Share**).<br />7. condividere il file dal secondo progetto al primo progetto.<br />8. se richiesto, accettare il **controllo** .|Comportamento previsto comune.|
-|Condividere un file da un progetto a un altro|1. creare un nuovo progetto.<br />2. aggiungerlo al controllo del codice sorgente.<br />3. chiudere la soluzione.<br />4. creare un secondo progetto (nuova soluzione).<br />5. aggiungere la soluzione al controllo del codice sorgente.<br />6. Selezionare il progetto.<br />7. Aprire la finestra di dialogo **Condividi** (**File**  ->  **Condivisione controllo del codice sorgente**file  ->  **Share**).<br />8. condividere un file dal progetto aggiunto in precedenza al progetto aperto.<br />9. se richiesto, accettare il **controllo** .|Comportamento previsto comune.|
-|Condividere un file non parte del progetto dal controllo del codice sorgente nel progetto attualmente caricato|1. creare un nuovo progetto.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. aggiungere un file al controllo del codice sorgente che non fa parte del progetto o della soluzione.<br />4. Selezionare il progetto e aprire la finestra di dialogo **Condividi** (**File**  ->  **Condivisione controllo del codice sorgente**file  ->  **Share**).<br />5. Selezionare un file nella finestra di dialogo **Condividi** che non esiste all'interno del progetto o della soluzione corrente e condividerlo.<br />6. se richiesto, accettare il **controllo** .|L'archivio del controllo del codice sorgente ha eseguito un'operazione get, quindi il file è ora il percorso locale del progetto.|
-|Condividere i file all'interno dello stesso progetto in un'altra cartella|1. Selezionare **Estrai automaticamente** in **strumenti**  ->  **Opzioni**  ->  **controllo del codice sorgente**.<br />2. creare un nuovo progetto e aggiungerlo al controllo del codice sorgente.<br />3. aggiungere una cartella al progetto.<br />4. aggiungere un file alla cartella e archiviare la cartella.<br />5. Selezionare la cartella.<br />6. finestra di dialogo Apri **condivisione** (**File**  ->  **Condivisione controllo del codice sorgente**file  ->  **Share**).<br />7. condividere il file nella cartella selezionata.|Comportamento previsto comune.<br /><br /> È necessario archiviare la cartella con un file al suo interno prima di poterla usare per la condivisione.|
-|Condividere una cartella nel progetto caricato: ricorsivo|1. creare un nuovo progetto.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. Selezionare il progetto.<br />4. Aprire la finestra di dialogo **Condividi** (**File**  ->  **Condivisione controllo del codice sorgente**file  ->  **Share**).<br />5. Selezionare una cartella.<br />6. condividere la cartella in modo ricorsivo nel progetto.|Comportamento previsto comune.|
-|Condividere più file da un progetto a un altro|1. creare un nuovo progetto con più file.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. chiudere la soluzione.<br />4. creare un nuovo progetto in una nuova soluzione.<br />5. aggiungere la soluzione al controllo del codice sorgente.<br />6. Selezionare il progetto.<br />7. Aprire la finestra di dialogo **Condividi** (**File**  ->  **Condivisione controllo del codice sorgente**file  ->  **Share**).<br />8. condividere diversi file dal progetto creato in precedenza al progetto attualmente aperto.|Comportamento previsto comune.|
+|Condividere un file da un progetto caricato nel controllo del codice sorgente a un altro progetto caricato|1. creare un nuovo progetto.<br />2. aggiungere un secondo progetto alla soluzione.<br />3. creare un file nel secondo progetto con un nome non presente nel primo progetto.<br />4. aggiungere la soluzione al controllo del codice sorgente.<br />5. Selezionare il primo progetto.<br />6. finestra di dialogo Apri **condivisione** (  ->  **Condivisione controllo del codice sorgente** file  ->  ).<br />7. condividere il file dal secondo progetto al primo progetto.<br />8. se richiesto, accettare il **controllo** .|Comportamento previsto comune.|
+|Condividere un file da un progetto a un altro|1. creare un nuovo progetto.<br />2. aggiungerlo al controllo del codice sorgente.<br />3. chiudere la soluzione.<br />4. creare un secondo progetto (nuova soluzione).<br />5. aggiungere la soluzione al controllo del codice sorgente.<br />6. Selezionare il progetto.<br />7. Aprire la finestra di dialogo **Condividi** (  ->  **Condivisione controllo del codice sorgente** file  ->  ).<br />8. condividere un file dal progetto aggiunto in precedenza al progetto aperto.<br />9. se richiesto, accettare il **controllo** .|Comportamento previsto comune.|
+|Condividere un file non parte del progetto dal controllo del codice sorgente nel progetto attualmente caricato|1. creare un nuovo progetto.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. aggiungere un file al controllo del codice sorgente che non fa parte del progetto o della soluzione.<br />4. Selezionare il progetto e aprire la finestra di dialogo **Condividi** (  ->  **Condivisione controllo del codice sorgente** file  ->  ).<br />5. Selezionare un file nella finestra di dialogo **Condividi** che non esiste all'interno del progetto o della soluzione corrente e condividerlo.<br />6. se richiesto, accettare il **controllo** .|L'archivio del controllo del codice sorgente ha eseguito un'operazione get, quindi il file è ora il percorso locale del progetto.|
+|Condividere i file all'interno dello stesso progetto in un'altra cartella|1. Selezionare **Estrai automaticamente** in **strumenti**  ->  **Opzioni**  ->  **controllo del codice sorgente**.<br />2. creare un nuovo progetto e aggiungerlo al controllo del codice sorgente.<br />3. aggiungere una cartella al progetto.<br />4. aggiungere un file alla cartella e archiviare la cartella.<br />5. Selezionare la cartella.<br />6. finestra di dialogo Apri **condivisione** (  ->  **Condivisione controllo del codice sorgente** file  ->  ).<br />7. condividere il file nella cartella selezionata.|Comportamento previsto comune.<br /><br /> È necessario archiviare la cartella con un file al suo interno prima di poterla usare per la condivisione.|
+|Condividere una cartella nel progetto caricato: ricorsivo|1. creare un nuovo progetto.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. Selezionare il progetto.<br />4. Aprire la finestra di dialogo **Condividi** (  ->  **Condivisione controllo del codice sorgente** file  ->  ).<br />5. Selezionare una cartella.<br />6. condividere la cartella in modo ricorsivo nel progetto.|Comportamento previsto comune.|
+|Condividere più file da un progetto a un altro|1. creare un nuovo progetto con più file.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. chiudere la soluzione.<br />4. creare un nuovo progetto in una nuova soluzione.<br />5. aggiungere la soluzione al controllo del codice sorgente.<br />6. Selezionare il progetto.<br />7. Aprire la finestra di dialogo **Condividi** (  ->  **Condivisione controllo del codice sorgente** file  ->  ).<br />8. condividere diversi file dal progetto creato in precedenza al progetto attualmente aperto.|Comportamento previsto comune.|
 
 ## <a name="see-also"></a>Vedere anche
 - [Guida per il test dei plug-in del controllo del codice sorgente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

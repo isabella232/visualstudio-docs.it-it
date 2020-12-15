@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: creazione di un servizio di linguaggio legacy | Microsoft Docs'
+description: Informazioni su come usare le classi di linguaggio del Framework di pacchetto gestito per implementare un servizio di linguaggio in Visual C#.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbdad85dd1c0f62b22bb33b5ed6ab2c597e62164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fcc4004542f9a566d6c6bfa820cbb8c2e1846fa
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905992"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487933"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Procedura dettagliata: Creazione di un servizio di linguaggio legacy
 L'uso delle classi di linguaggio del Framework di pacchetto gestito (MPF) per implementare un servizio di linguaggio in [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] è semplice. È necessario un pacchetto VSPackage per ospitare il servizio di linguaggio, il servizio di linguaggio e un parser per la lingua in uso.
@@ -56,13 +58,13 @@ L'uso delle classi di linguaggio del Framework di pacchetto gestito (MPF) per im
 
 ### <a name="create-the-language-service-class"></a>Creazione della classe del servizio di linguaggio
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto MyLanguagePackage, scegliere **Aggiungi**, **riferimento**, quindi scegliere il pulsante **Aggiungi nuovo riferimento** .
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto MyLanguagePackage, scegliere **Aggiungi**, **riferimento**, quindi scegliere il pulsante **Aggiungi nuovo riferimento** .
 
 2. Nella finestra di dialogo **Aggiungi riferimento** selezionare **Microsoft. VisualStudio. Package. LanguageService** nella scheda **.NET** e fare clic su **OK**.
 
      Questa operazione deve essere eseguita una sola volta per il progetto Language Package.
 
-3. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto VSPackage e scegliere **Aggiungi**, **classe**.
+3. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto VSPackage e scegliere **Aggiungi**, **classe**.
 
 4. Assicurarsi che la **classe** sia selezionata nell'elenco modelli.
 
@@ -80,7 +82,7 @@ L'uso delle classi di linguaggio del Framework di pacchetto gestito (MPF) per im
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_2.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_2.vb)]
 
-8. Posizionare il cursore su "LanguageService" e scegliere **implementa classe astratta**dal menu **modifica**, **IntelliSense** . In questo modo vengono aggiunti i metodi minimi necessari per implementare una classe del servizio di linguaggio.
+8. Posizionare il cursore su "LanguageService" e scegliere **implementa classe astratta** dal menu **modifica**, **IntelliSense** . In questo modo vengono aggiunti i metodi minimi necessari per implementare una classe del servizio di linguaggio.
 
 9. Implementare i metodi astratti come descritto in [implementazione di un servizio di linguaggio legacy](../../extensibility/internals/implementing-a-legacy-language-service2.md).
 
@@ -104,7 +106,7 @@ L'uso delle classi di linguaggio del Framework di pacchetto gestito (MPF) per im
 
 #### <a name="deriving-from-an-mpf-class"></a>Derivazione da una classe MPF
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto VSPackage e scegliere **Aggiungi**, **classe**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto VSPackage e scegliere **Aggiungi**, **classe**.
 
 2. Assicurarsi che la **classe** sia selezionata nell'elenco modelli.
 
