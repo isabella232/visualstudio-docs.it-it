@@ -1,5 +1,7 @@
 ---
 title: Usare documenti di Visio
+description: Informazioni sulle procedure dettagliate e sugli esempi di codice per l'uso del modello a oggetti di Microsoft Visio per lavorare con i documenti nei progetti di Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82dbf0858266fe2f07d4ae51c8171e0e8a900861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8835e3ef668e060798c515a89868d800ca737f34
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815050"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523340"
 ---
 # <a name="work-with-visio-documents"></a>Usare documenti di Visio
   Negli argomenti di questa sezione vengono fornite procedure dettagliate ed esempi di codice per l'utilizzo del modello a oggetti di Microsoft Office Visio per lavorare con i documenti nei progetti di Office.

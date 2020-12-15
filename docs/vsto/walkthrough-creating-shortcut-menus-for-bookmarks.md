@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: creare menu di scelta rapida per i segnalibri'
+description: Informazioni su come creare menu di scelta rapida per i controlli Bookmark in una personalizzazione a livello di documento per Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b4b412d2e9456142c1be1af388e2803634d15c0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8b018687ec10eb725ece7d776277ea1c699dbbec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "91146919"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524214"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Procedura dettagliata: creare menu di scelta rapida per i segnalibri
   In questa procedura dettagliata viene illustrato come creare menu di scelta rapida per i <xref:Microsoft.Office.Tools.Word.Bookmark> controlli in una personalizzazione a livello di documento per Word. Quando un utente fa clic con il pulsante destro del mouse sul testo in un segnalibro, viene visualizzato un menu di scelta rapida che fornisce le opzioni utente per la formattazione del testo.
@@ -66,7 +68,7 @@ ms.locfileid: "91146919"
 
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Per aggiungere un controllo Bookmark al documento
 
-1. Dalla scheda **controlli Word** della **casella degli strumenti**trascinare un controllo nel <xref:Microsoft.Office.Tools.Word.Bookmark> documento.
+1. Dalla scheda **controlli Word** della **casella degli strumenti** trascinare un controllo nel <xref:Microsoft.Office.Tools.Word.Bookmark> documento.
 
     Verrà visualizzata la finestra di dialogo **Aggiungi controllo Bookmark** .
 
@@ -90,7 +92,7 @@ ms.locfileid: "91146919"
 
 1. Aggiungere un elemento **Ribbon XML** al progetto. Per altre informazioni, vedere [procedura: iniziare a personalizzare la barra multifunzione](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2. In **Esplora soluzioni**selezionare **ThisDocument.cs** o **ThisDocument. vb**.
+2. In **Esplora soluzioni** selezionare **ThisDocument.cs** o **ThisDocument. vb**.
 
 3. Nella barra dei menu scegliere **Visualizza**  >  **codice**.
 
@@ -101,7 +103,7 @@ ms.locfileid: "91146919"
      [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]
      [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]
 
-5. In **Esplora soluzioni**selezionare il file XML della barra multifunzione. Per impostazione predefinita, il file XML della barra multifunzione è denominato Ribbon1.xml.
+5. In **Esplora soluzioni** selezionare il file XML della barra multifunzione. Per impostazione predefinita, il file XML della barra multifunzione è denominato Ribbon1.xml.
 
 6. Nella barra dei menu scegliere **Visualizza**  >  **codice**.
 
@@ -125,14 +127,14 @@ ms.locfileid: "91146919"
 
      Questo codice aggiunge due pulsanti al menu di scelta rapida visualizzato quando si fa clic con il pulsante destro del mouse sul documento.
 
-8. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su `ThisDocument` , quindi scegliere **Visualizza codice**.
+8. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su `ThisDocument` , quindi scegliere **Visualizza codice**.
 
 9. Dichiarare le variabili e una variabile di segnalibro seguenti a livello di classe.
 
      [!code-csharp[Trin_Word_Document_Menus#2](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#2)]
      [!code-vb[Trin_Word_Document_Menus#2](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#2)]
 
-10. In **Esplora soluzioni**selezionare il file di codice della barra multifunzione. Per impostazione predefinita, il file di codice della barra multifunzione è denominato **Ribbon1.cs** o **Ribbon1. vb**.
+10. In **Esplora soluzioni** selezionare il file di codice della barra multifunzione. Per impostazione predefinita, il file di codice della barra multifunzione è denominato **Ribbon1.cs** o **Ribbon1. vb**.
 
 11. Nella barra dei menu scegliere **Visualizza**  >  **codice**.
 
@@ -152,7 +154,7 @@ ms.locfileid: "91146919"
      [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]
      [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]
 
-2. **Esplora soluzioni**selezionare **ThisDocument.cs** o **ThisDocument. vb**.
+2. **Esplora soluzioni** selezionare **ThisDocument.cs** o **ThisDocument. vb**.
 
 3. Nella barra dei menu scegliere **Visualizza**  >  **codice**.
 

@@ -1,5 +1,7 @@
 ---
 title: Visualizza il testo in una casella di testo nel foglio di utilizzo con il pulsante
+description: Informazioni di base sull'uso di pulsanti e caselle di testo in fogli di lavoro di Microsoft Excel. È anche possibile creare progetti Excel usando gli strumenti di sviluppo di Office in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b30eea0152b75cdd0869ececac674ee5aeee7933
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c499800efa783ce252dbf925f307bc64e814420f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328714"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522640"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Procedura dettagliata: visualizzare il testo in una casella di testo di un foglio di testo utilizzando un pulsante
   Questa procedura dettagliata illustra le nozioni di base sull'uso di pulsanti e caselle di testo in Microsoft Office fogli di lavoro di Excel e su come creare progetti Excel usando gli strumenti di sviluppo di Office in Visual Studio. Per visualizzare il risultato come esempio completo, vedere l'esempio relativo ai controlli di Excel in [esempi e procedure dettagliate per lo sviluppo di Office](../vsto/office-development-samples-and-walkthroughs.md).
@@ -63,16 +65,16 @@ ms.locfileid: "67328714"
 
 2. Dalla scheda **controlli comuni** della casella degli strumenti trascinare un oggetto <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> in `Sheet1` .
 
-3. Scegliere **finestra Proprietà**dal menu **Visualizza** .
+3. Scegliere **finestra Proprietà** dal menu **Visualizza** .
 
 4. Assicurarsi che **textBox1** sia visibile nella casella di riepilogo a discesa finestra **Proprietà** e modificare la proprietà **Name** della casella di testo in **DisplayText**.
 
 5. Trascinare un controllo **Button** su `Sheet1` e modificare le proprietà seguenti:
 
-   |Proprietà|Valore|
+   |Proprietà|valore|
    |--------------|-----------|
    |**Nome**|**insertText**|
-   |**Text**|**Inserisci testo**|
+   |**Testo**|**Inserisci testo**|
 
    A questo punto, scrivere il codice da eseguire quando si fa clic sul pulsante.
 
@@ -81,7 +83,7 @@ ms.locfileid: "67328714"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Per scrivere nella casella di testo quando si fa clic sul pulsante
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **Sheet1**, quindi scegliere **Visualizza codice** dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Sheet1**, quindi scegliere **Visualizza codice** dal menu di scelta rapida.
 
 2. Aggiungere il codice seguente al <xref:System.Windows.Forms.Control.Click> gestore eventi del pulsante:
 

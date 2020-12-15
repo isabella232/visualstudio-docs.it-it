@@ -1,5 +1,7 @@
 ---
 title: Usare i fogli di lavoro
+description: Informazioni sul foglio di lavoro e le classi del foglio di lavoro contengono i metodi e le proprietà usati per eseguire attività con i fogli di lavoro.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f518a3d6e271c4f457e50ad6f9affcc3afccdf9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d58576c999d11441122bb0b2115d2367b7ce04ce
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62814589"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522544"
 ---
 # <a name="work-with-worksheets"></a>Usare i fogli di lavoro
   Le classi <xref:Microsoft.Office.Tools.Excel.Worksheet> e <xref:Microsoft.Office.Interop.Excel.Worksheet> contengono i metodi e le proprietà usate per eseguire attività con i fogli di lavoro.

@@ -1,5 +1,7 @@
 ---
 title: Riferimenti alle API non gestite (sviluppo per Office in Visual Studio)
+description: Il riferimento all'API non gestita viene usato per aiutare i componenti aggiuntivi VSTO gestiti dal caricamento. È anche possibile creare un componente del caricatore del componente aggiuntivo VSTO implementando questa interfaccia.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79f48e7771b3e62c0c58fbc59bd9f9b534069d71
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9dbb64b54d9b0dd9a244d9a614fbce211d1edfc5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584425"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522679"
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Riferimenti alle API non gestite (sviluppo per Office in Visual Studio)
 

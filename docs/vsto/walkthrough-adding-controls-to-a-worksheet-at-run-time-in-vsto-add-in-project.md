@@ -1,5 +1,7 @@
 ---
 title: Aggiungere controlli al foglio di lavoro in fase di esecuzione in un progetto di componente aggiuntivo VSTO
+description: Informazioni su come usare la barra multifunzione per consentire agli utenti di aggiungere un pulsante, un NamedRange e un controllo ListObject a un foglio di controllo.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ec1d1361d7ca58d4292cbbb7bc4ea3b707a748ff
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9987e9427c0fe982cf3ddcb88ce8071caab04b0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584347"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522779"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Procedura dettagliata: aggiungere controlli a un foglio di lavoro in fase di esecuzione in un progetto di componente aggiuntivo VSTO
   È possibile aggiungere controlli a qualsiasi foglio di lavoro aperto mediante un componente aggiuntivo VSTO per Excel. Questa procedura dettagliata illustra come usare la barra multifunzione per consentire agli utenti l'aggiunta di oggetti <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> e <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro. Per informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -65,27 +67,27 @@ ms.locfileid: "91584347"
 
      Un file denominato **Ribbon1.cs** o **Ribbon1. vb** viene aperto nella finestra di progettazione della barra multifunzione e visualizza una scheda e un gruppo predefiniti.
 
-3. Dalla scheda **Controlli barra multifunzione di Office** della **Casella degli strumenti**trascinare un controllo ToggleButton in **group1**.
+3. Dalla scheda **Controlli barra multifunzione di Office** della **Casella degli strumenti** trascinare un controllo ToggleButton in **group1**.
 
 4. Fare clic su **CheckBox1** per selezionarlo.
 
 5. Nella finestra **Proprietà** modificare le seguenti proprietà:
 
-    |Proprietà|Valore|
+    |Proprietà|valore|
     |--------------|-----------|
     |**Nome**|**Button**|
     |**Etichetta**|**Button**|
 
-6. Aggiungere una seconda casella di controllo a **group1**e quindi modificare le proprietà seguenti.
+6. Aggiungere una seconda casella di controllo a **group1** e quindi modificare le proprietà seguenti.
 
-    |Proprietà|Valore|
+    |Proprietà|valore|
     |--------------|-----------|
     |**Nome**|**NamedRange**|
     |**Etichetta**|**NamedRange**|
 
 7. Aggiungere una terza casella di controllo a **Group1**, quindi modificare le proprietà seguenti.
 
-    |Proprietà|Valore|
+    |Proprietà|valore|
     |--------------|-----------|
     |**Nome**|**ListObject**|
     |**Etichetta**|**ListObject**|
@@ -106,9 +108,9 @@ ms.locfileid: "91584347"
      [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
      [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]
 
-3. In **Esplora soluzioni**selezionare *Ribbon1.cs* o *Ribbon1. vb*.
+3. In **Esplora soluzioni** selezionare *Ribbon1.cs* o *Ribbon1. vb*.
 
-4. Scegliere **finestra di progettazione**dal menu **Visualizza** .
+4. Scegliere **finestra di progettazione** dal menu **Visualizza** .
 
 5. Nella finestra di progettazione della barra multifunzione fare doppio clic su **NamedRange**.
 
@@ -138,11 +140,11 @@ ms.locfileid: "91584347"
 
 ### <a name="to-remove-controls-from-the-worksheet"></a>Per rimuovere i controlli dal foglio di lavoro
 
-1. In **Esplora soluzioni**selezionare *ThisAddIn.cs* o *ThisAddIn. vb*.
+1. In **Esplora soluzioni** selezionare *ThisAddIn.cs* o *ThisAddIn. vb*.
 
 2. Scegliere **Codice** dal menu **Visualizza**.
 
-3. Aggiungere il metodo seguente alla classe `ThisAddIn`. In questo codice si ottiene il primo foglio di lavoro della cartella di lavoro e viene usato il metodo `HasVstoObject` per controllare se il foglio di lavoro dispone di un oggetto foglio di lavoro generato. Se l'oggetto foglio di lavoro generato dispone di controlli, il codice ottiene tale oggetto ed esegue l'iterazione della raccolta di controlli rimuovendo questi ultimi.
+3. Aggiungi alla classe `ThisAddIn` il metodo seguente. In questo codice si ottiene il primo foglio di lavoro della cartella di lavoro e viene usato il metodo `HasVstoObject` per controllare se il foglio di lavoro dispone di un oggetto foglio di lavoro generato. Se l'oggetto foglio di lavoro generato dispone di controlli, il codice ottiene tale oggetto ed esegue l'iterazione della raccolta di controlli rimuovendo questi ultimi.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]
@@ -187,7 +189,7 @@ ms.locfileid: "91584347"
 
 - Per informazioni su come salvare i controlli in un foglio di lavoro, vedere l'esempio di controlli dinamici del componente aggiuntivo VSTO di Excel in [esempi e procedure dettagliate per lo sviluppo di Office](../vsto/office-development-samples-and-walkthroughs.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Soluzioni Excel](../vsto/excel-solutions.md)
 - [Cenni preliminari sui controlli Windows Form nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)

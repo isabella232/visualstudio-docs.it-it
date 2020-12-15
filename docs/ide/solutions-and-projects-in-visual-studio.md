@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2889729ae539d640bb9d43c64956edc04b74f26
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 7a24f56d94d470ca5ff04a99f524af3c76df3a15
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488193"
+ms.locfileid: "97524056"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 
@@ -62,7 +62,7 @@ Per archiviare le impostazioni delle soluzioni, Visual Studio usa due tipi di fi
 
 ### <a name="solution-folder"></a>Cartella soluzione
 
-In questo contesto, una "cartella della soluzione" è una cartella virtuale che è solo in **Esplora soluzioni**, in cui è possibile usarla per raggruppare i progetti in una soluzione. Se si desidera individuare un file di soluzione in un computer, passare a **strumenti**  >  **Opzioni**  >  **progetti e soluzioni**  >  **percorsi**. Per altre informazioni, vedere finestra di [dialogo Opzioni: progetti e soluzioni > percorsi](./reference/projects-solutions-locations-options.md)
+In questo contesto, una "cartella della soluzione" è una cartella virtuale che è solo in **Esplora soluzioni**, in cui è possibile usarla per raggruppare i progetti in una soluzione. Se si desidera individuare un file di soluzione in un computer, passare a **strumenti**  >  **Opzioni**  >  **progetti e soluzioni**  >  **percorsi**. Per altre informazioni, vedere finestra di [dialogo Opzioni: progetti e soluzioni > percorsi](./reference/projects-solutions-locations-options.md).
 
 ## <a name="create-new-projects"></a>Crea nuovi progetti
 

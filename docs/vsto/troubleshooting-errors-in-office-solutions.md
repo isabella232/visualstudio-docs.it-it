@@ -1,5 +1,7 @@
 ---
 title: Risolvere gli errori nelle soluzioni Office
+description: Informazioni su come è possibile risolvere gli errori che possono verificarsi durante lo sviluppo di soluzioni Microsoft Office in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd12c3dd9cd3c90564351dd1c64cebfe5df6e99d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234692"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523031"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Risolvere gli errori nelle soluzioni Office
   Questi problemi possono verificarsi quando si eseguono le attività seguenti durante lo sviluppo di soluzioni Office in Visual Studio:
@@ -36,7 +38,7 @@ ms.locfileid: "87234692"
 
 - [Scrittura di codice](#code)
 
-- [Compila progetti](#building)
+- [Compilare i progetti](#building)
 
 - [Debug di progetti](#debugging)
 
@@ -124,7 +126,7 @@ ms.locfileid: "87234692"
  Per ulteriori informazioni sulle interfacce eventi negli [assembly di interoperabilità primari di Office, vedere Panoramica di classi e interfacce negli assembly di interoperabilità primari di Office](/previous-versions/office/office-12//ms247299(v=office.12)).
 
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Non è possibile fare riferimento alle classi di interoperabilità primario di Office nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
- Nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] il codice che fa riferimento a una classe definita in un assembly di interoperabilità primario di Office non verrà compilato per impostazione predefinita. Nelle classi degli assembly di interoperabilità primari viene utilizzata la convenzione di denominazione *ObjectName*Class, ad esempio <xref:Microsoft.Office.Interop.Word.DocumentClass> e <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Ad esempio, il codice seguente di un progetto di componente aggiuntivo VSTO di Word non verrà compilato.
+ Nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] il codice che fa riferimento a una classe definita in un assembly di interoperabilità primario di Office non verrà compilato per impostazione predefinita. Nelle classi degli assembly di interoperabilità primari viene utilizzata la convenzione di denominazione *ObjectName* Class, ad esempio <xref:Microsoft.Office.Interop.Word.DocumentClass> e <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Ad esempio, il codice seguente di un progetto di componente aggiuntivo VSTO di Word non verrà compilato.
 
 ```vb
 Dim document As Word.DocumentClass = Globals.ThisAddIn.Application.ActiveDocument
@@ -197,7 +199,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  Se si crea un progetto a livello di documento per Excel o Word in un percorso di rete UNC, è necessario aggiungere il percorso del documento all'elenco di percorsi attendibili in Excel o Word. In caso contrario, la personalizzazione non verrà caricata quando si tenta di eseguire il progetto o il relativo debug in Visual Studio. Per ulteriori informazioni sui percorsi attendibili, vedere [Grant trust to Documents](../vsto/granting-trust-to-documents.md).
 
 ### <a name="threads-are-not-stopped-correctly-after-debugging"></a>I thread non vengono arrestati correttamente dopo il debug
- I progetti di Office in Visual Studio seguono una convenzione di denominazione dei thread che consente al debugger di chiudere correttamente il programma. Se si creano thread nella soluzione, è necessario denominare ogni thread con il prefisso VSTA_ per garantire che questi thread vengano gestiti correttamente quando si arresta il debug. Ad esempio, è possibile impostare la `Name` proprietà di un thread che attende la **VSTA_NetworkListener**di un evento di rete.
+ I progetti di Office in Visual Studio seguono una convenzione di denominazione dei thread che consente al debugger di chiudere correttamente il programma. Se si creano thread nella soluzione, è necessario denominare ogni thread con il prefisso VSTA_ per garantire che questi thread vengano gestiti correttamente quando si arresta il debug. Ad esempio, è possibile impostare la `Name` proprietà di un thread che attende la **VSTA_NetworkListener** di un evento di rete.
 
 ### <a name="cannot-run-or-debug-any-office-solution-on-the-development-computer"></a>Non è possibile eseguire o eseguire il debug di alcuna soluzione Office nel computer di sviluppo
  Se non è possibile eseguire o sviluppare un progetto di Office nel computer di sviluppo, potrebbe venire visualizzato il messaggio di errore seguente.

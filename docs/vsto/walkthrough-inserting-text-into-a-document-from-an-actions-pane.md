@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: inserire testo in un documento da un riquadro azioni'
+description: Creare un riquadro azioni in un documento di Microsoft Word. Informazioni che il riquadro azioni contiene due controlli che raccolgono l'input e quindi inviano il testo al documento.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c65027d7670c4d6789f32eb4d9080df061d904a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 44fd876dfad99e1a1320a5e5d743ea8e30dfdb98
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584963"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524171"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Procedura dettagliata: inserire testo in un documento da un riquadro azioni
   In questa procedura dettagliata viene illustrato come creare un riquadro azioni in un Microsoft Office documento di Word. Il riquadro azioni contiene due controlli che raccolgono l'input e quindi inviano il testo al documento.
@@ -72,20 +74,20 @@ ms.locfileid: "91584963"
 
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Per aggiungere un controllo Bookmark al documento
 
-1. Dalla scheda **controlli Word** della **casella degli strumenti**trascinare un <xref:Microsoft.Office.Tools.Word.Bookmark> controllo nel documento.
+1. Dalla scheda **controlli Word** della **casella degli strumenti** trascinare un <xref:Microsoft.Office.Tools.Word.Bookmark> controllo nel documento.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi controllo Bookmark** .
 
-2. Selezionare il **nome**della parola, senza selezionare il segno di paragrafo, quindi fare clic su **OK**.
+2. Selezionare il **nome** della parola, senza selezionare il segno di paragrafo, quindi fare clic su **OK**.
 
     > [!NOTE]
     > Il segno di paragrafo deve essere esterno al segnalibro. Se i segni di paragrafo non sono visibili nel documento, fare clic sul menu **strumenti** , scegliere **Microsoft Office strumenti di Word** , quindi fare clic su **Opzioni**. Fare clic sulla scheda **Visualizza** e selezionare la casella di controllo **segni di paragrafo** nella sezione **segni di formattazione** della finestra di dialogo **Opzioni** .
 
 3. Nella finestra **Proprietà** modificare la proprietà **Name** di **segnalibro1** in **ShowName**.
 
-4. Selezionare la parola **Indirizzo**senza selezionare il segno di paragrafo.
+4. Selezionare la parola **Indirizzo** senza selezionare il segno di paragrafo.
 
-5. Nella scheda **Inserisci** della barra multifunzione fare clic su **segnalibro**nel gruppo **collegamenti** .
+5. Nella scheda **Inserisci** della barra multifunzione fare clic su **segnalibro** nel gruppo **collegamenti** .
 
 6. Nella finestra di dialogo **segnalibro** digitare **ShowAddress** nella casella **nome segnalibro** e fare clic su **Aggiungi**.
 
@@ -104,34 +106,34 @@ ms.locfileid: "91584963"
 
 1. Se il controllo riquadro azioni non è visibile nella finestra di progettazione, fare doppio clic su **InsertTextControl**.
 
-2. Dalla scheda **controlli comuni** della **casella degli strumenti**trascinare un controllo **Label** nel controllo del riquadro azioni.
+2. Dalla scheda **controlli comuni** della **casella degli strumenti** trascinare un controllo **Label** nel controllo del riquadro azioni.
 
 3. Modificare la proprietà **Text** del controllo Label in **Name**.
 
 4. Aggiungere un controllo **TextBox** al controllo del riquadro azioni e modificare le proprietà seguenti.
 
-    |Proprietà|Valore|
+    |Proprietà|valore|
     |--------------|-----------|
     |**Nome**|**getName**|
-    |**Dimensione**|**130, 20**|
+    |**Size**|**130, 20**|
 
 5. Aggiungere un secondo controllo **Label** al controllo del riquadro azioni e modificare la proprietà **Text** in **Address**.
 
 6. Aggiungere un secondo controllo **TextBox** al controllo del riquadro azioni e modificare le proprietà seguenti.
 
-    |Proprietà|Valore|
+    |Proprietà|valore|
     |--------------|-----------|
     |**Nome**|**getAddress**|
     |**Accetta la restituzione**|**True**|
     |**Multiline**|**True**|
-    |**Dimensione**|**130, 40**|
+    |**Size**|**130, 40**|
 
 7. Aggiungere un controllo **Button** al controllo del riquadro azioni e modificare le proprietà seguenti.
 
-    |Proprietà|Valore|
+    |Proprietà|valore|
     |--------------|-----------|
     |**Nome**|**addText**|
-    |**Text**|**Inserimento**|
+    |**Testo**|**Inserimento**|
 
 ## <a name="add-code-to-insert-text-into-the-document"></a>Aggiungere codice per inserire testo nel documento
  Nel riquadro azioni scrivere il codice che inserisce il testo dalle caselle di testo nei controlli appropriati del <xref:Microsoft.Office.Tools.Word.Bookmark> documento. È possibile utilizzare la `Globals` classe per accedere ai controlli del documento dai controlli del riquadro azioni. Per altre informazioni, vedere [accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md).
@@ -180,7 +182,7 @@ ms.locfileid: "91584963"
 
 - Associare dati a controlli in un riquadro azioni. Per ulteriori informazioni, vedere [procedura dettagliata: associare dati a controlli in un riquadro azioni di Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)
 - [Procedura: aggiungere un riquadro azioni ai documenti di Word o alle cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Procedura: aggiungere un riquadro azioni alle cartelle di lavoro di Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))

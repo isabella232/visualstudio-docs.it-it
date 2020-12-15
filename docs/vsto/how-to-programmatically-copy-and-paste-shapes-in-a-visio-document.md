@@ -1,5 +1,7 @@
 ---
 title: Copiare e incollare forme in un documento di Visio a livello di codice
+description: Informazioni su come è possibile copiare le forme in una pagina di un documento a livello di codice e incollarle in una nuova pagina nello stesso documento.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f54f98a055ef834100c5c58274d72f92568b7c4
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4643d1527d078639e2f2f09add42fff96e345091
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585275"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523206"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Procedura: copiare e incollare forme in un documento di Visio a livello di codice
   È possibile copiare a livello di codice forme contenute in una pagina di un documento e quindi incollarle in una nuova pagina dello stesso documento. Le forme possono essere incollate nella posizione predefinita (ovvero il centro della finestra attiva) o nelle stesse coordinate occupate nella pagina originale.
@@ -46,7 +48,7 @@ ms.locfileid: "91585275"
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#15)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#15)]
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Soluzioni Visio](../vsto/visio-solutions.md)
 - [Panoramica del modello a oggetti di Visio](../vsto/visio-object-model-overview.md)
 - [Usare le forme di Visio](../vsto/working-with-visio-shapes.md)

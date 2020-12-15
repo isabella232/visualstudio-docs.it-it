@@ -1,5 +1,7 @@
 ---
 title: Eseguire azioni a livello di codice se viene ricevuto un messaggio di posta elettronica
+description: Informazioni su come usare Visual Studio per eseguire azioni personalizzate a livello di codice se si riceve un messaggio di posta elettronica in Microsoft Outlook.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 706080e9c7191383d91e63b56b2113cf82d4b35f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 22dbd3ae72ac8c269de603ce22bbfebef669be08
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585132"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523875"
 ---
 # <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>Procedura: eseguire azioni quando viene ricevuto un messaggio di posta elettronica a livello di codice
   Questo esempio esegue azioni personalizzate quando l'utente riceve un messaggio di posta elettronica.

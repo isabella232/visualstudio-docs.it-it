@@ -1,5 +1,7 @@
 ---
 title: Utilizzare le cartelle di lavoro
+description: Informazioni sulle classi di cartelle di lavoro e cartelle di lavoro che contengono i metodi e le proprietà usati per eseguire attività con le cartelle di lavoro.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d4d6eec08ae75efbd9104ace25409d336e45f40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e328d48873c30626e2b661ede23b3d91066a0e5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62814688"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522569"
 ---
 # <a name="work-with-workbooks"></a>Utilizzare le cartelle di lavoro
   La classe <xref:Microsoft.Office.Tools.Excel.Workbook> e <xref:Microsoft.Office.Interop.Excel.Workbooks> contiene i metodi e le proprietà usati per eseguire attività con le cartelle di lavoro.

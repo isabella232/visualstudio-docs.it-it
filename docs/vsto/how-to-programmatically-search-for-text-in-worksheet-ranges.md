@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: ricerca di testo negli intervalli dei fogli di testo a livello di codice'
+description: Informazioni su come usare Visual Studio per eseguire la ricerca a livello di codice di testo negli intervalli dei fogli di lavoro di Microsoft Excel.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f69a0b2c7191f608e4d18c6c3990c1ce19f1ed7e
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 01ce01e76aa56a834f4f63cd2bd0f6f16c4ab03a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584755"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524560"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Procedura: ricerca di testo negli intervalli dei fogli di testo a livello di codice
   Il <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> metodo dell' <xref:Microsoft.Office.Interop.Excel.Range> oggetto consente di cercare testo compreso nell'intervallo. Questo testo può essere costituito anche da qualsiasi stringa di errore che può essere presente in una cella di un foglio di foglio, ad esempio `#NULL!` o `#VALUE!` . Per ulteriori informazioni sulle stringhe di errore, vedere la pagina relativa ai [valori di errore della cella](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).

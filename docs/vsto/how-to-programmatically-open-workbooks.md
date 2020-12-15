@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aprire cartelle di lavoro a livello di codice'
+description: Informazioni su come usare Visual Studio per aprire una cartella di lavoro di Microsoft Excel a livello di codice o usare una cartella di lavoro esistente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10a849d8545565e450cd099b32a9e3e8f7f11b56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7de4072df177bd9a7c6ae23bf59e44e50d56e32
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537904"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523891"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Procedura: aprire cartelle di lavoro a livello di codice
   <xref:Microsoft.Office.Interop.Excel.Workbooks>Nella raccolta Microsoft Office Excel è possibile utilizzare tutte le cartelle di lavoro aperte e aprire le cartelle di lavoro di.

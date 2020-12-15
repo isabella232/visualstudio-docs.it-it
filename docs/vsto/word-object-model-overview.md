@@ -1,5 +1,7 @@
 ---
 title: Panoramica del modello a oggetti di Word
+description: Il modello a oggetti di Word è costituito da classi e interfacce fornite nell'assembly di interoperabilità primario per Word e definite nello spazio dei nomi di Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e66d6cda802b2b1243911e1927af751e2cdbe9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d8ca92fdebb3504331ec38937dd79786fdb8b42
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985383"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523485"
 ---
 # <a name="word-object-model-overview"></a>Panoramica del modello a oggetti di Word
   Quando si sviluppano soluzioni Word in Visual Studio, si interagisce con il modello a oggetti di Word. Questo modello a oggetti è costituito da classi e interfacce fornite nell'assembly di interoperabilità primario per Word ed è definito nello spazio dei nomi <xref:Microsoft.Office.Interop.Word> .
@@ -129,7 +131,7 @@ ms.locfileid: "72985383"
  Tutti gli oggetti e i membri nel riferimento del modello a oggetti VBA corrispondono a tipi e membri nell'assembly di interoperabilità primario (PIA) di Word. Ad esempio, l'oggetto documento nel riferimento del modello a oggetti VBA corrisponde all' <xref:Microsoft.Office.Interop.Word.Document> oggetto nell'assembly di interoperabilità primario di Word. Sebbene il riferimento del modello a oggetti VBA fornisca esempi di codice per la maggior parte delle proprietà, dei metodi e degli eventi, è necessario convertire il codice VBA di questo riferimento per Visual Basic o Visual C# se si vuole usarlo in un progetto di Word che è possibile creare tramite Visual Studio.
 
 ## <a name="see-also"></a>Vedere anche
-- [assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md)
+- [Assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md)
 - [Automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)
 - [Usare i documenti](../vsto/working-with-documents.md)
 - [Usare il testo nei documenti](../vsto/working-with-text-in-documents.md)

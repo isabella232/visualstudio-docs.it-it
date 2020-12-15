@@ -1,5 +1,7 @@
 ---
 title: Risolvere i problemi di distribuzione della soluzione Office
+description: Informazioni su come risolvere i problemi comuni che possono verificarsi durante la distribuzione di soluzioni Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c7db4a699fcc8b28e4f2f423f612738de6a6836
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b70b03e8342564de828059d1a335f6347c19b5a3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90806733"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522966"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Risolvere i problemi di distribuzione della soluzione Office
   Questo argomento contiene informazioni su come risolvere i problemi comuni che possono verificarsi durante la distribuzione di soluzioni Office.
@@ -73,7 +75,7 @@ ms.locfileid: "90806733"
 
 2. Nella pagina **Applicazione** scegliere **Informazioni assembly**.
 
-3. Impostare il numero di revisione, terzo campo, della **versione dell'assembly**su un carattere jolly ( \* ). Ad esempio, "1,0. *".  Quindi scegliere il pulsante **OK** .
+3. Impostare il numero di revisione, terzo campo, della **versione dell'assembly** su un carattere jolly ( \* ). Ad esempio, "1,0. *".  Quindi scegliere il pulsante **OK** .
 
    Dopo aver modificato la versione dell'assembly, è possibile continuare a firmare l'assembly con nome sicuro e Fusion caricherà la versione più recente della personalizzazione.
 

@@ -1,5 +1,7 @@
 ---
 title: Visualizzare riquadri attività personalizzati con messaggi di posta elettronica in Outlook
+description: Informazioni su come visualizzare un'istanza univoca di un riquadro attività personalizzato con ogni messaggio di posta elettronica in Microsoft Outlook creato o aperto.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 00a8eae3f0beea7482c5fd7a1ac1ebd1994b9c35
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: ac14eff05c6f776181c20acde4cff4e2ed7a87b6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584282"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522704"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Procedura dettagliata: visualizzare riquadri attività personalizzati con messaggi di posta elettronica in Outlook
   In questa procedura dettagliata viene illustrato come visualizzare un'istanza univoca di un riquadro attività personalizzato con ogni messaggio di posta elettronica creato o aperto. Gli utenti possono visualizzare o nascondere il riquadro attività personalizzato usando un pulsante nella barra multifunzione di ogni messaggio di posta elettronica.
@@ -72,7 +74,7 @@ ms.locfileid: "91584282"
 
 ### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>Per progettare l'interfaccia utente del riquadro attività personalizzato
 
-1. In **Esplora soluzioni**fare clic sul progetto **OutlookMailItemTaskPane** .
+1. In **Esplora soluzioni** fare clic sul progetto **OutlookMailItemTaskPane** .
 
 2. Nel menu **Progetto** fare clic su **Aggiungi controllo utente**.
 
@@ -80,7 +82,7 @@ ms.locfileid: "91584282"
 
      Il controllo utente viene visualizzato nella finestra di progettazione.
 
-4. Nella scheda **Controlli comuni** della **casella degli strumenti**trascinare un controllo **TextBox** nel controllo utente.
+4. Nella scheda **Controlli comuni** della **casella degli strumenti** trascinare un controllo **TextBox** nel controllo utente.
 
 ## <a name="design-the-user-interface-of-the-ribbon"></a>Progettare l'interfaccia utente della barra multifunzione
  Uno degli obiettivi di questo componente aggiuntivo VSTO è fornire agli utenti un modo per nascondere o visualizzare il riquadro attività personalizzato dalla barra multifunzione di ogni messaggio di posta elettronica. Per fornire l'interfaccia utente, creare un'interfaccia utente della barra multifunzione personalizzata che visualizza un interruttore che gli utenti possono selezionare per visualizzare o nascondere il riquadro attività personalizzato.
@@ -91,7 +93,7 @@ ms.locfileid: "91584282"
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Barra multifunzione (finestra di progettazione visiva)**.
 
-3. Modificare il nome della nuova barra multifunzione in **ManageTaskPaneRibbon**e fare clic su **Aggiungi**.
+3. Modificare il nome della nuova barra multifunzione in **ManageTaskPaneRibbon** e fare clic su **Aggiungi**.
 
      Il file *ManageTaskPaneRibbon.cs* o *ManageTaskPaneRibbon.vb* si apre nella finestra di progettazione della barra multifunzione e visualizza una scheda e un gruppo predefiniti.
 
@@ -99,7 +101,7 @@ ms.locfileid: "91584282"
 
 5. Nella finestra **Proprietà** impostare la proprietà **Label** su **Task Pane Manager**.
 
-6. Nella scheda **Controlli barra multifunzione di Office** della **casella degli strumenti**trascinare un controllo ToggleButton nel gruppo **Task Pane Manager** .
+6. Nella scheda **Controlli barra multifunzione di Office** della **casella degli strumenti** trascinare un controllo ToggleButton nel gruppo **Task Pane Manager** .
 
 7. Fare clic su **toggleButton1**.
 
@@ -200,7 +202,7 @@ ms.locfileid: "91584282"
 
 ### <a name="to-build-your-project"></a>Per compilare il progetto
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **OutlookMailItemTaskPane** , quindi fare clic su **Compila**. Verificare che il progetto venga compilato senza errori.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **OutlookMailItemTaskPane** , quindi fare clic su **Compila**. Verificare che il progetto venga compilato senza errori.
 
 ## <a name="synchronize-the-ribbon-toggle-button-with-the-custom-task-pane"></a>Sincronizzare l'interruttore della barra multifunzione con il riquadro attività personalizzato
  L'interruttore risulterà premuto quando il riquadro attività è visibile e non premuto quando il riquadro attività è nascosto. Per sincronizzare lo stato dell'interruttore con il riquadro attività personalizzato, modificare il gestore eventi <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> dell'interruttore.
@@ -267,7 +269,7 @@ ms.locfileid: "91584282"
 
 - Creare un pulsante della barra multifunzione in Excel da usare per visualizzare o nascondere un riquadro attività personalizzato. Per ulteriori informazioni, vedere [procedura dettagliata: sincronizzare un riquadro attività personalizzato con un pulsante della barra multifunzione](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Riquadri attività personalizzati](../vsto/custom-task-panes.md)
 - [Procedura: aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [Procedura dettagliata: automatizzare un'applicazione da un riquadro attività personalizzato](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aprire documenti di Visio a livello di codice'
+description: Informazioni su come usare Visual Studio per aprire un documento di Visio a livello di codice con i metodi Open o OpenEx.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb21d201c282461cbe82005f56bed023bb022209
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec46f4fd7be136d16e15e9fa366b7a4cb921b62e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519990"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523846"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>Procedura: aprire documenti di Visio a livello di codice
   Esistono due metodi per aprire i documenti Microsoft Office Visio esistenti: Open e OpenEx. Il metodo OpenEx è identico al metodo Open, ad eccezione del fatto che fornisce argomenti in cui il chiamante può specificare la modalità di apertura del documento.

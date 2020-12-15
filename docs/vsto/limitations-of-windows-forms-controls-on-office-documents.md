@@ -1,5 +1,7 @@
 ---
 title: Limitazioni dei controlli Windows Forms nei documenti di Office
+description: Informazioni sulle limitazioni dei metodi e delle proprietà di controllo Windows Forms nei documenti di Microsoft Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ade7da21a8d07fbd429a88303ad2be375877c1ec
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 63459f4daf1f9fe717946491a997ba47510fbab8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583736"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524453"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitazioni dei controlli Windows Forms nei documenti di Office
 
@@ -183,7 +185,7 @@ I controlli e i componenti seguenti non sono disponibili nella **casella degli s
 
 Se si crea un progetto di Office a livello di documento che usa un documento di Word o una cartella di lavoro di Excel esistente che contiene controlli ActiveX, la funzionalità dei controlli ActiveX non viene persa. Tuttavia, non è disponibile alcun supporto per l'aggiunta di nuovi controlli ActiveX ai documenti dall'interno di Visual Studio. Se, ad esempio, il documento di Word include un pulsante dalla casella degli strumenti del **controllo** che esegue una macro Visual Basic, Applications Edition (VBA), continuerà a eseguire la macro dopo che il documento è stato usato in un progetto di Office. Tuttavia, è consigliabile rimuovere i controlli ActiveX e le macro VBA e sostituirli con controlli Windows Forms e codice gestito.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)
 - [Cenni preliminari sui controlli Windows Forms nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)

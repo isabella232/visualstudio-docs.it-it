@@ -1,5 +1,7 @@
 ---
 title: Informazioni su coautore e componenti aggiuntivi
+description: Informazioni sulla coautorizzazione e sul modo in cui è una funzionalità di Excel per Windows desktop che consente di modificare una cartella di lavoro ospitata nel cloud contemporaneamente ad altri utenti.
+ms.custom: SEO-VS-2020
 ms.date: 07/20/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c0d4c513da403b02454055dadf6d0fd70eef81c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978185"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522845"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>Informazioni su coautore e componenti aggiuntivi
 

@@ -1,5 +1,7 @@
 ---
 title: La cartella di lavoro contiene controlli ActiveX che non possono essere caricati
+description: Informazioni su come è possibile risolvere l'errore che si verifica quando una cartella di lavoro contiene controlli ActiveX che non possono essere caricati.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: error-reference
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 09182fb354ad3ae8937b66952a0acd376d54fe0a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 7257e3940af72f344906642adc51a1dd98cb3f25
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584451"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524176"
 ---
 # <a name="the-workbook-contains-activex-controls-that-cannot-be-loaded"></a>La cartella di lavoro contiene controlli ActiveX che non possono essere caricati
 
@@ -34,6 +36,6 @@ ms.locfileid: "91584451"
 
 3. Creare una soluzione a livello di documento basata sul documento o sulla cartella di lavoro.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)

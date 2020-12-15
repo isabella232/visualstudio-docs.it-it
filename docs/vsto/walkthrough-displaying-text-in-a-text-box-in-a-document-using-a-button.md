@@ -1,5 +1,7 @@
 ---
 title: Visualizza il testo nella casella di testo nel documento usando il pulsante
+description: Informazioni su come usare i pulsanti e le caselle di testo in una personalizzazione a livello di documento per Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f3c467abcee8fb4faafd2da06ba261e7f3039fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cda1fe3e7430ff30dcc3b3921eb2bcd4d31b699
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328748"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522752"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Procedura dettagliata: visualizzare il testo in una casella di testo in un documento utilizzando un pulsante
   Questa procedura dettagliata illustra come usare i pulsanti e le caselle di testo in una personalizzazione a livello di documento per Microsoft Office Word.
@@ -57,7 +59,7 @@ ms.locfileid: "67328748"
 
 1. Verificare che il documento sia aperto nella finestra di progettazione di Visual Studio.
 
-2. Dalla scheda **controlli comuni** della **casella degli strumenti**trascinare un <xref:Microsoft.Office.Tools.Word.Controls.TextBox> controllo nel documento.
+2. Dalla scheda **controlli comuni** della **casella degli strumenti** trascinare un <xref:Microsoft.Office.Tools.Word.Controls.TextBox> controllo nel documento.
 
    > [!NOTE]
    > In Word i controlli vengono rilasciati in linea con il testo per impostazione predefinita. È possibile modificare la modalità di inserimento dei controlli e degli oggetti forma modificando il valore predefinito nella scheda **modifica** della finestra di dialogo **Opzioni** di Word.
@@ -68,10 +70,10 @@ ms.locfileid: "67328748"
 
 5. Trascinare un controllo **Button** nel documento e modificare le proprietà seguenti.
 
-   |Proprietà|Valore|
+   |Proprietà|valore|
    |--------------|-----------|
    |**Nome**|**insertText**|
-   |**Text**|**Inserisci testo**|
+   |**Testo**|**Inserisci testo**|
 
    È ora possibile scrivere il codice che verrà eseguito quando si fa clic sul pulsante.
 
@@ -80,7 +82,7 @@ ms.locfileid: "67328748"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Per scrivere nella casella di testo quando si fa clic sul pulsante
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **ThisDocument**, quindi scegliere **Visualizza codice** dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **ThisDocument**, quindi scegliere **Visualizza codice** dal menu di scelta rapida.
 
 2. Aggiungere il codice seguente al gestore eventi <xref:System.Windows.Forms.Control.Click> del pulsante.
 

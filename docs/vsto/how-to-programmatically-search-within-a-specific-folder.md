@@ -1,5 +1,7 @@
 ---
 title: "Procedura: eseguire una ricerca all'interno di una cartella specifica a livello di codice"
+description: Informazioni su come usare Visual Studio per eseguire ricerche a livello di codice all'interno di una cartella specifica di Microsoft Outlook.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f33b56da08fcd05706ac7681740cea04574d0070
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: fa569a2c301cb495f109a612d817937159c257c6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584742"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524548"
 ---
 # <a name="how-to-programmatically-search-within-a-specific-folder"></a>Procedura: eseguire una ricerca all'interno di una cartella specifica a livello di codice
   Questo esempio di codice usa `Find` i `FindNext` metodi e per cercare il testo nel campo oggetto dei messaggi di posta elettronica presenti nella **posta in arrivo**. Questo metodo utilizza un filtro di stringa per verificare la lettera T come lettera iniziale del `Subject` testo.

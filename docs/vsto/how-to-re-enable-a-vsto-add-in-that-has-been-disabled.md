@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: riabilitare un componente aggiuntivo VSTO disabilitato'
+description: Informazioni su come usare Visual Studio per riabilitare un componente aggiuntivo VSTO disabilitato in un'applicazione Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3575e119f4da3ca3050a28243104fb4773089cf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d03a03494b149a761910ddbdaa1d41592704f969
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541258"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524479"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Procedura: riabilitare un componente aggiuntivo VSTO disabilitato
   Le applicazioni di Microsoft Office possono disabilitare i componenti aggiuntivi VSTO che si comportano in modo imprevisto. Se un'applicazione non carica un componente aggiuntivo VSTO quando si tenta di eseguirne il debug, il componente aggiuntivo VSTO potrebbe essere stato disabilitato dall'applicazione in seguito alla chiusura dell'applicazione (disabilitazione di tipo "hard") o a un errore del componente (disabilitazione di tipo "soft").
@@ -43,11 +45,11 @@ ms.locfileid: "85541258"
 
      La colonna **Nome** specifica il nome dell'assembly e la colonna **Percorso** specifica il percorso completo del manifesto dell'applicazione.
 
-5. Nella casella **Gestione** fare clic su **Elementi disattivati**e quindi su **Vai**.
+5. Nella casella **Gestione** fare clic su **Elementi disattivati** e quindi su **Vai**.
 
 6. Selezionare il componente aggiuntivo VSTO e fare clic su **Attiva**.
 
-7. Fare clic su **Chiudi**.
+7. Fare clic su **Close**.
 
 ## <a name="soft-disabled-vsto-add-ins"></a>Componenti aggiuntivi VSTO con disabilitazione soft
  La disabilitazione di tipo "soft" può verificarsi quando un componente aggiuntivo VSTO genera un errore che non causa la chiusura imprevista dell'applicazione. Ad esempio, un'applicazione potrebbe eseguire la disabilitazione di tipo "soft" di un componente aggiuntivo VSTO se viene generata un'eccezione non gestita durante l'esecuzione del gestore eventi <xref:Microsoft.Office.Tools.AddIn.Startup> .
@@ -67,7 +69,7 @@ ms.locfileid: "85541258"
 
      La colonna **Nome** specifica il nome dell'assembly e la colonna **Percorso** specifica il percorso completo del manifesto dell'applicazione.
 
-5. Nella casella **Gestione** fare clic su **Componenti aggiuntivi COM**e quindi su **Vai**.
+5. Nella casella **Gestione** fare clic su **Componenti aggiuntivi COM** e quindi su **Vai**.
 
 6. Nella finestra di dialogo **Componenti aggiuntivi COM** selezionare la casella di controllo accanto al componente aggiuntivo VSTO disabilitato.
 

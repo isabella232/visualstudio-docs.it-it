@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: e640d19659861a03d0f97abc799344bebb14b936
-ms.sourcegitcommit: f78960320798e2c6b33145cee77a2221f031603c
+ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94878309"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524090"
 ---
 # <a name="git-experience-in-visual-studio"></a>Esperienza git in Visual Studio
 
@@ -187,9 +187,9 @@ Per personalizzare e personalizzare le impostazioni git a livello di repository 
 
 :::image type="content" source="media/git-options-settings.png" alt-text="La finestra di dialogo Opzioni in cui è possibile scegliere le impostazioni di personalizzazione e personalizzazione nell'IDE di Visual Studio ":::
 
-## <a name="how-to-use-the-legacy-team-explorer-experience-in-visual-studio"></a>Come usare l'esperienza Team Explorer legacy in Visual Studio
+## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio"></a>Come usare l'esperienza Team Explorer completa in Visual Studio
 
-La nuova esperienza git è il sistema di controllo della versione predefinito in Visual Studio 2019 dalla [versione 16,8](/visualstudio/releases/2019/release-notes/) e successive. Tuttavia, se si desidera disattivarla, è possibile. Passare a **strumenti**  >  **Opzioni**  >  **ambiente**  >  **Anteprima funzionalità** e quindi attivare o disattivare la casella di controllo **nuova esperienza utente git** , che consente di tornare all'esperienza Team Explorer legacy.
+La nuova esperienza git è il sistema di controllo della versione predefinito in Visual Studio 2019 dalla [versione 16,8](/visualstudio/releases/2019/release-notes/) e successive. Tuttavia, se si desidera disattivarla, è possibile. Passare a **strumenti**  >  **Opzioni**  >  **ambiente**  >  **Anteprima funzionalità** e quindi attivare o disattivare la casella di controllo **nuova esperienza utente git** , che consente di tornare a Team Explorer per git.
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Sezione funzionalità di anteprima della finestra di dialogo Opzioni in Visual Studio ":::
 

@@ -1,5 +1,7 @@
 ---
 title: Migliorare le prestazioni di un componente aggiuntivo VSTO
+description: Informazioni su come ottimizzare i componenti aggiuntivi VSTO creati per le applicazioni di Office in modo da avviarli rapidamente, arrestarli, aprire elementi ed eseguire altre attività.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7529c69270b5f33cde32e8a7907f1b80589c43b7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 83ba2e9cc2cd55b3e3f6362250ffc1e9489b1626
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "92298517"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524438"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Migliorare le prestazioni di un componente aggiuntivo VSTO
   È possibile offrire agli utenti un'esperienza migliore ottimizzando i componenti aggiuntivi VSTO creati per le applicazioni di Office per poterli avviare rapidamente, interromperli o usarli per aprire gli elementi ed eseguire altre attività. Se il componente aggiuntivo VSTO è per Outlook, è anche possibile ridurre la probabilità che il componente aggiuntivo VSTO venga disabilitato a causa delle prestazioni ridotte. È possibile incrementare le prestazioni del componente aggiuntivo VSTO implementando le strategie seguenti:
@@ -51,13 +53,13 @@ ms.locfileid: "92298517"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>Per configurare una soluzione Windows Installer per caricare componenti aggiuntivi VSTO su richiesta
 
-1. Nel registro di sistema impostare la `LoadBehavior` voce della chiave ** _root_\Software\Microsoft\Office \\ _ApplicationName_\Addins \\ _Add-in ID_ ** su **0x10**.
+1. Nel registro di sistema impostare la `LoadBehavior` voce della chiave **_root_\Software\Microsoft\Office \\ _ApplicationName_\Addins \\ _Add-in ID_** su **0x10**.
 
      Per altre informazioni, vedere [voci del registro di sistema per i componenti aggiuntivi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>Per configurare una soluzione per caricare componenti aggiuntivi VSTO su richiesta durante il debug della soluzione
 
-1. Creare uno script che imposta la `LoadBehavior` voce della chiave ** _radice_\SOFTWARE\MICROSOFT\OFFICE \\ _ApplicationName_\Addins \\ _ID componente_ ** aggiuntivo su **0x10**.
+1. Creare uno script che imposta la `LoadBehavior` voce della chiave **_radice_\SOFTWARE\MICROSOFT\OFFICE \\ _ApplicationName_\Addins \\ _ID componente_** aggiuntivo su **0x10**.
 
      Nel codice seguente viene illustrato un esempio di questo script.
 

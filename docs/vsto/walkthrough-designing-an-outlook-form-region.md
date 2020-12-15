@@ -1,5 +1,7 @@
 ---
 title: "Procedura dettagliata: progettare un'area del modulo di Outlook"
+description: Informazioni su come progettare un'area del modulo di Microsoft Outlook personalizzata visualizzata come nuova pagina nella finestra di controllo di un elemento di contatto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01cfe55964a1d61c2ad200c9538ced9ff0aa5599
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e306814512c6cab2d331a26128f22bb94d7dbbf4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985462"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524205"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Procedura dettagliata: progettare un'area del modulo di Outlook
   Le aree del modulo personalizzate estendono i moduli standard o personalizzati di Microsoft Office Outlook. In questa procedura dettagliata verrà progettata un'area del modulo personalizzata che viene visualizzata come una nuova pagina nella finestra di controllo di un contatto. Quest'area del modulo visualizza una mappa di ogni indirizzo elencato per il contatto, inviando le informazioni sull'indirizzo al sito Web di ricerca locale di Windows Live. Per informazioni sulle aree del modulo, vedere [creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md).
@@ -66,7 +68,7 @@ ms.locfileid: "72985462"
 
 ### <a name="to-add-a-form-region-to-the-outlook-vsto-add-in-project"></a>Per aggiungere un'area del modulo al progetto di componente aggiuntivo VSTO di Outlook
 
-1. In **Esplora soluzioni**selezionare il progetto **MapItAddIn** .
+1. In **Esplora soluzioni** selezionare il progetto **MapItAddIn** .
 
 2. Dal menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
@@ -76,7 +78,7 @@ ms.locfileid: "72985462"
 
 4. Nella pagina **selezionare la modalità di creazione dell'area del modulo** fare clic su **progetta una nuova area del modulo**, quindi fare clic su **Avanti**.
 
-5. Nella pagina **selezionare il tipo di area del modulo che si vuole creare** fare clic su **separato**e quindi su **Avanti**.
+5. Nella pagina **selezionare il tipo di area del modulo che si vuole creare** fare clic su **separato** e quindi su **Avanti**.
 
      Un'area del modulo *separata* aggiunge una nuova pagina a un modulo di Outlook. Per altre informazioni sui tipi di area del modulo, vedere [creare aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md).
 
@@ -95,7 +97,7 @@ ms.locfileid: "72985462"
 
 ### <a name="to-design-the-layout-of-the-form-region"></a>Per progettare il layout dell'area del modulo
 
-1. In **Esplora soluzioni**espandere il progetto **MapItAddIn** , quindi fare doppio clic su *MapIt.cs* o *MapIt. vb* per aprire la finestra di progettazione dell'area del modulo.
+1. In **Esplora soluzioni** espandere il progetto **MapItAddIn** , quindi fare doppio clic su *MapIt.cs* o *MapIt. vb* per aprire la finestra di progettazione dell'area del modulo.
 
 2. Fare clic con il pulsante destro del mouse sulla finestra di progettazione, quindi scegliere **Proprietà**.
 
@@ -105,7 +107,7 @@ ms.locfileid: "72985462"
 
 4. Scegliere **Casella degli strumenti** dal menu **Visualizza**.
 
-5. Dalla scheda **controlli comuni** della **casella degli strumenti**aggiungere un oggetto **WebBrowser** all'area del modulo.
+5. Dalla scheda **controlli comuni** della **casella degli strumenti** aggiungere un oggetto **WebBrowser** all'area del modulo.
 
      Il **WebBrowser** visualizzerà una mappa di ogni indirizzo elencato per il contatto.
 
@@ -114,7 +116,7 @@ ms.locfileid: "72985462"
 
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>Per personalizzare il comportamento dell'area del modulo
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su *MapIt.cs* o *MapIt. vb*, quindi scegliere **Visualizza codice**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su *MapIt.cs* o *MapIt. vb*, quindi scegliere **Visualizza codice**.
 
     *MapIt.cs* o *MapIt. vb* viene aperto nell'editor di codice.
 
@@ -165,7 +167,7 @@ ms.locfileid: "72985462"
 
 6. Nel gruppo **Mostra** della barra multifunzione dell'elemento fare clic su **mappa** per aprire l'area del modulo Map it.
 
-     Viene visualizzata l'area del modulo Map It insieme al sito Web di ricerca locale. Gli indirizzi **Business**, **Home**e **altri** vengono visualizzati nel riquadro Scratch. Nel riquadro di lavoro selezionare un indirizzo da mappare.
+     Viene visualizzata l'area del modulo Map It insieme al sito Web di ricerca locale. Gli indirizzi **Business**, **Home** e **altri** vengono visualizzati nel riquadro Scratch. Nel riquadro di lavoro selezionare un indirizzo da mappare.
 
 ## <a name="next-steps"></a>Passaggi successivi
  È possibile trovare altre informazioni sulla personalizzazione dell'interfaccia utente di un'applicazione di Outlook negli argomenti seguenti:

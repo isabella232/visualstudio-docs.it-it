@@ -1,5 +1,7 @@
 ---
 title: Associazione tardiva nelle soluzioni Office
+description: Informazioni sul modo in cui alcuni tipi nei modelli a oggetti all'interno di Microsoft Office applicazioni forniscono funzionalità disponibili tramite le funzionalità di associazione tardiva.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62224006d04e0a1e7447053e868dd9946f00c97e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 201b850d8a577f8cc76aff97e2370998b6f885ed
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62583946"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523565"
 ---
 # <a name="late-binding-in-office-solutions"></a>Associazione tardiva nelle soluzioni Office
   Alcuni tipi nei modelli a oggetti delle applicazioni di Office forniscono funzionalità disponibili tramite le funzionalità di associazione tardiva. Alcuni metodi e proprietà, ad esempio, possono restituire tipi diversi di oggetti a seconda del contesto dell'applicazione di Office e alcuni tipi possono esporre metodi o proprietà diversi in contesti diversi.

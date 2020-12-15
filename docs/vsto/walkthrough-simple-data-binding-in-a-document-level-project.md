@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: data binding semplice in un progetto a livello di documento'
+description: Informazioni sulle nozioni di base di data binding in un progetto a livello di documento e che un singolo campo dati in un database SQL Server è associato a un intervallo denominato in Microsoft Excel.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c22947e572a29c2b49a5ce9bb808c3cf2fe2902
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 868a120baa8207d922d3dee55e10c8e903381e19
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584924"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524096"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Procedura dettagliata: data binding semplice in un progetto a livello di documento
   In questa procedura dettagliata vengono illustrate le nozioni di base di data binding in un progetto a livello di documento. Un singolo campo dati in un database SQL Server è associato a un intervallo denominato in Microsoft Office Excel. Nella procedura dettagliata viene inoltre illustrato come aggiungere controlli che consentono di scorrere tutti i record nella tabella.
@@ -64,7 +66,7 @@ ms.locfileid: "91584924"
 
 ### <a name="to-create-the-data-source"></a>Per creare l'origine dati
 
-1. Se la finestra **origini dati** non è visibile, visualizzarla dalla barra dei menu scegliendo **Visualizza**  >  **altre**  >  **origini dati**di Windows.
+1. Se la finestra **origini dati** non è visibile, visualizzarla dalla barra dei menu scegliendo **Visualizza**  >  **altre**  >  **origini dati** di Windows.
 
 2. Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
@@ -103,11 +105,11 @@ ms.locfileid: "91584924"
 
 6. Fare clic su **NamedRange** nell'elenco a discesa, quindi trascinare la colonna **CustomerID** sulla cella **B1**.
 
-7. Un altro <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo denominato `customerIDNamedRange` viene creato nella cella **B1**e associato a <xref:System.Windows.Forms.BindingSource> .
+7. Un altro <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo denominato `customerIDNamedRange` viene creato nella cella **B1** e associato a <xref:System.Windows.Forms.BindingSource> .
 
 ### <a name="to-add-four-buttons"></a>Per aggiungere quattro pulsanti
 
-1. Dalla scheda **controlli comuni** della **casella degli strumenti**aggiungere un <xref:System.Windows.Forms.Button> controllo alla cella **a3** del foglio di comando.
+1. Dalla scheda **controlli comuni** della **casella degli strumenti** aggiungere un <xref:System.Windows.Forms.Button> controllo alla cella **a3** del foglio di comando.
 
     Questo pulsante è denominato `Button1` .
 
@@ -126,7 +128,7 @@ ms.locfileid: "91584924"
 
 ### <a name="to-initialize-the-controls"></a>Per inizializzare i controlli
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **Sheet1. vb** o **Sheet1.cs**, quindi scegliere **Visualizza codice** dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Sheet1. vb** o **Sheet1.cs**, quindi scegliere **Visualizza codice** dal menu di scelta rapida.
 
 2. Aggiungere il codice seguente al `Sheet1_Startup` metodo per impostare il testo per ogni pulsante.
 
@@ -192,7 +194,7 @@ ms.locfileid: "91584924"
 
 - Utilizzare un <xref:System.Windows.Forms.BindingNavigator> controllo per scorrere i record. Per altre informazioni, vedere [procedura: esplorare i dati con il controllo BindingNavigator Windows Forms](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)
 - [Procedura dettagliata: data binding complesse in un progetto a livello di documento](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
