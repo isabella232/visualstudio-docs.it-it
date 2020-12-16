@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: eliminare fogli di lavoro dalle cartelle di lavoro a livello di codice'
+description: Informazioni su come è possibile eliminare a livello di codice un foglio di lavoro in una cartella di lavoro di Microsoft Excel usando l'elemento host del foglio di lavoro, ad esempio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5fbcffdf56ea2168974658477579428ef546f061
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e9d1330c454e0b9b9f5ad4624c18e4ed1055343d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585249"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527783"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Procedura: eliminare fogli di lavoro dalle cartelle di lavoro a livello di codice
   È possibile eliminare qualsiasi foglio di lavoro da una cartella di lavoro. Per eliminare un foglio di lavoro, usare l'elemento host del foglio di lavoro o accedere al foglio di lavoro tramite la raccolta Sheets della cartella di lavoro.
@@ -65,7 +67,7 @@ ms.locfileid: "91585249"
      [!code-csharp[Trin_VstcoreExcelAutomation#18](codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomation#18](codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Usare i fogli di lavoro](working-with-worksheets.md)
 - [Procedura: nascondere i fogli di programmazione a livello di codice](how-to-programmatically-hide-worksheets.md)
 - [Procedura: spostare fogli di lavoro all'interno di cartelle di lavoro a livello di codice](how-to-programmatically-move-worksheets-within-workbooks.md)

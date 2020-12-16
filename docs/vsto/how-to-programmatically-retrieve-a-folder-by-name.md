@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: recuperare una cartella per nome a livello di codice'
+description: Informazioni su come usare Visual Studio per recuperare a livello di codice una cartella in base al nome e quindi visualizzare il contenuto della cartella.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 901de848b22f344ded2d71b11e9859917b8382d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4e615897fedcbfa41ad7958e93354718d9ccfbc
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547108"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528577"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Procedura: recuperare una cartella per nome a livello di codice
   Questo esempio Mostra come ottenere un riferimento a una cartella personalizzata denominata e quindi visualizzare il contenuto della cartella.

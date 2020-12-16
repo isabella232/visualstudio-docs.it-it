@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: chiamata di codice da VBA in un progetto Visual Basic'
+description: Informazioni su come chiamare un metodo in una personalizzazione a livello di documento per Microsoft Word dal codice Visual Basic, Applications Edition (VBA) del documento.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad50ed0f55a148a05c0fedc6fe0ccb0dd5b890b9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6016dbf53413f6e55c88edfe930af677472bdaf5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298270"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527380"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>Procedura dettagliata: chiamata di codice da VBA in un progetto Visual Basic
   Questa procedura dettagliata illustra come chiamare un metodo in una personalizzazione a livello di documento di Microsoft Office Word da codice Visual Basic, Applications Edition (VBA) contenuto nel documento. La procedura comporta tre passaggi di base: aggiungere un metodo alla classe dell'elemento host `ThisDocument` , esporre il metodo al codice VBA e quindi chiamare il metodo dal codice VBA contenuto nel documento.
@@ -96,9 +98,9 @@ ms.locfileid: "92298270"
 
 1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Scegliere **Nuovo** dal menu **File**e quindi fare clic su **Progetto**. Se l'IDE è configurato per usare le impostazioni di sviluppo di Visual Basic, scegliere **Nuovo progetto** dal menu **File**.
+2. Scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**. Se l'IDE è configurato per usare le impostazioni di sviluppo di Visual Basic, scegliere **Nuovo progetto** dal menu **File**.
 
-3. Nel riquadro Modelli espandere, **Visual Basic**quindi espandere **Office/SharePoint**.
+3. Nel riquadro Modelli espandere, **Visual Basic** quindi espandere **Office/SharePoint**.
 
 4. Selezionare il nodo **Componenti aggiuntivi di Office** .
 
@@ -110,7 +112,7 @@ ms.locfileid: "92298270"
 
      Viene visualizzata la **Creazione guidata progetto Visual Studio Tools per Office** .
 
-8. Selezionare **Copia un documento esistente**e, nella casella **Percorso completo del documento esistente** , specificare il percorso del documento **DocumentWithVBA** creato in precedenza. Se si ha già un documento con attivazione macro che si vuole usare, specificare invece il percorso di questo documento.
+8. Selezionare **Copia un documento esistente** e, nella casella **Percorso completo del documento esistente** , specificare il percorso del documento **DocumentWithVBA** creato in precedenza. Se si ha già un documento con attivazione macro che si vuole usare, specificare invece il percorso di questo documento.
 
 9. Fare clic su **Fine**.
 
@@ -152,11 +154,11 @@ ms.locfileid: "92298270"
 
 ### <a name="to-add-a-method-to-the-thisdocument-class"></a>Per aggiungere un metodo alla classe ThisDocument
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **ThisDocument.vb**, quindi scegliere **Visualizza codice**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **ThisDocument.vb**, quindi scegliere **Visualizza codice**.
 
      Il file **ThisDocument.vb** verrà aperto nell'editor di codice.
 
-2. Aggiungere il metodo seguente alla classe `ThisDocument`. Questo metodo crea una tabella con due righe e due colonne all'inizio del documento. I parametri specificano il testo visualizzato nella prima riga. Più avanti nella procedura dettagliata questo metodo verrà chiamato dal codice VBA contenuto nel documento.
+2. Aggiungi alla classe `ThisDocument` il metodo seguente. Questo metodo crea una tabella con due righe e due colonne all'inizio del documento. I parametri specificano il testo visualizzato nella prima riga. Più avanti nella procedura dettagliata questo metodo verrà chiamato dal codice VBA contenuto nel documento.
 
      [!code-vb[Trin_CallingVBCustomizationFromVBA#1](../vsto/codesnippet/VisualBasic/CallingCodeFromVBA/ThisDocument.vb#1)]
 
@@ -167,7 +169,7 @@ ms.locfileid: "92298270"
 
 ### <a name="to-expose-the-method-to-vba-code"></a>Per esporre il metodo al codice VBA
 
-1. In **Esplora soluzioni**fare doppio clic su **ThisDocument.vb**.
+1. In **Esplora soluzioni** fare doppio clic su **ThisDocument.vb**.
 
      Il file **DocumentWithVBA** verrà aperto nella finestra di progettazione.
 

@@ -1,5 +1,7 @@
 ---
 title: Mantieni controlli dinamici nei documenti di Office
+description: Informazioni su come aggiungere codice alla soluzione per ricreare controlli dinamici permanenti quando un utente riapre un documento chiuso.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d48dfab18ec2165753ac19330f7fbe18c923da9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6efb00571a9f594de6045860621fb840076e8f5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71256001"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527532"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Mantieni controlli dinamici nei documenti di Office
 
@@ -78,7 +80,7 @@ Anche nei componenti aggiuntivi VSTO i controlli vengono rimossi, tuttavia i wra
 
 1. Memorizzare le informazioni sulla dimensione, il percorso e lo stato dei controlli quando il documento viene salvato o chiuso. In una personalizzazione a livello di documento è possibile salvare i dati nella cache dei dati nel documento. In un componente aggiuntivo VSTO è possibile salvare i dati in una parte XML personalizzata del documento.
 
-2. Ricreare i controlli in un evento generato all'apertura del documento. Nei progetti a livello di documento, questa operazione può essere eseguita nei `Sheet` *n* `_Startup` `ThisDocument_Startup` gestori eventi n o. Nei progetti di componenti aggiuntivi VSTO, questa attività può essere eseguita nei gestori degli eventi <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> o <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
+2. Ricreare i controlli in un evento generato all'apertura del documento. Nei progetti a livello di documento, questa operazione può essere eseguita nei `Sheet`  `_Startup` `ThisDocument_Startup` gestori eventi n o. Nei progetti di componenti aggiuntivi VSTO, questa attività può essere eseguita nei gestori degli eventi <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> o <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
 
 ### <a name="remove-activex-wrappers-in-an-add-in"></a><a name="removingActiveX"></a> Rimuovere i wrapper ActiveX in un componente aggiuntivo
 

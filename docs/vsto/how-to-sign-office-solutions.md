@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: firmare soluzioni Office'
+description: Informazioni su come è possibile concedere l'attendibilità alla soluzione Microsoft Office usando un certificato come evidenza.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23afc171fd97620b3e6801b8d199da6890198d8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7451630570e6d557dc5d2b635d149ebc07cfb388
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545756"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528113"
 ---
 # <a name="how-to-sign-office-solutions"></a>Procedura: firmare soluzioni Office
   Se si firma una soluzione, è possibile concedere l'attendibilità alla soluzione usando il certificato come evidenza. È possibile utilizzare lo stesso certificato per più soluzioni e tutte le soluzioni verranno considerate attendibili senza ulteriori aggiornamenti dei criteri di sicurezza.
@@ -35,7 +37,7 @@ ms.locfileid: "85545756"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Per firmare una soluzione Office usando un certificato
 
-1. Scegliere**proprietà** _SolutionName_dal menu **progetto** .
+1. Scegliere **proprietà** _SolutionName_ dal menu **progetto** .
 
 2. Fare clic sulla scheda **Firma** .
 

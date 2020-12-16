@@ -1,5 +1,7 @@
 ---
 title: "Procedura: visualizzare gli errori dell'interfaccia utente del componente aggiuntivo"
+description: Informazioni su come usare Visual Studio per visualizzare a livello di codice gli errori dell'interfaccia utente del componente aggiuntivo VTSO nelle applicazioni Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49985589c021192454bf0dd58929c9ef5646aec9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e74d60fe6386575417114fe1ad4823704cf09d46
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545782"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528129"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Procedura: visualizzare gli errori dell'interfaccia utente del componente aggiuntivo
   Per impostazione predefinita, se un componente aggiuntivo VSTO tenta di modificare l'interfaccia utente di Microsoft Office e non riesce, non viene visualizzato alcun messaggio di errore. È però possibile configurare le applicazioni di Microsoft Office in modo da visualizzare messaggi per gli errori correlati all'interfaccia utente. È possibile utilizzare questi messaggi per determinare il motivo per cui non viene visualizzata una barra multifunzione personalizzata o perché viene visualizzata una barra multifunzione, ma non viene visualizzato alcun controllo.

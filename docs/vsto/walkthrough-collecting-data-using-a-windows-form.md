@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: raccolta di dati tramite Windows Form'
+description: Aprire un Windows Form da una personalizzazione a livello di documento per Microsoft Excel, raccogliere informazioni dall'utente e scrivere tali informazioni in una cella del foglio di lavoro.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 893418ca5eb82e9466ea13a12088b38fd496e695
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58d6f58f732d4a52aade6ff3678842900f1c29cd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839448"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527169"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Procedura dettagliata: raccolta di dati tramite Windows Form
   Questa procedura dettagliata spiega come aprire un Windows Form da una personalizzazione a livello di documento per Microsoft Office Excel, raccogliere le informazioni dall'utente e scriverle in una cella del foglio di lavoro.
@@ -44,7 +46,7 @@ ms.locfileid: "90839448"
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
-1. Creare un progetto relativo a una cartella di lavoro di Excel denominato **WinFormInput**e selezionare **Crea un nuovo documento** nella procedura guidata. Per altre informazioni, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Creare un progetto relativo a una cartella di lavoro di Excel denominato **WinFormInput** e selezionare **Crea un nuovo documento** nella procedura guidata. Per altre informazioni, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      La nuova cartella di lavoro di Excel viene aperta nella finestra di progettazione di Visual Studio e il progetto **WinFormInput** viene aggiunto in **Esplora soluzioni**.
 
@@ -86,7 +88,7 @@ ms.locfileid: "90839448"
 
 #### <a name="to-display-the-form-and-collect-information"></a>Per visualizzare il modulo e raccogliere informazioni
 
-1. Fare clic con il pulsante destro del mouse su **ThisWorkbook.vb** o **ThisWorkbook.cs** in **Esplora soluzioni**e selezionare **Visualizza codice**.
+1. Fare clic con il pulsante destro del mouse su **ThisWorkbook.vb** o **ThisWorkbook.cs** in **Esplora soluzioni** e selezionare **Visualizza codice**.
 
 2. Nel gestore dell'evento <xref:Microsoft.Office.Tools.Excel.Workbook.Open> di `ThisWorkbook`, aggiungere il codice riportato di seguito per dichiarare una variabile per il modulo `GetInputString` e visualizzare il modulo.
 

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: impostare le opzioni di ricerca in Word a livello di codice'
+description: Informazioni su come usare Visual Studio per impostare a livello di codice le opzioni di ricerca per le selezioni in Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 434dfc85ed6c4e03c7c610a497bd063ce1826c62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45af6a801a146838919402c31be502cf4825e718
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546991"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528565"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>Procedura: impostare le opzioni di ricerca in Word a livello di codice
   Esistono due modi per impostare le opzioni di ricerca per le selezioni nei documenti Microsoft Office Word:

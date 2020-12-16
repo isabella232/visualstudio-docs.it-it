@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: creare il primo componente aggiuntivo VSTO per Word'
+description: Creare un componente aggiuntivo a livello di applicazione per Microsoft Word. Questa funzionalità è disponibile per l'applicazione stessa, indipendentemente dai documenti aperti.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed5c5e5b03ce7ee0ffbd361b896f288f6b93a806
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dc136b1c58f9c627787045b1259d07e27a6b8ad
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839348"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527872"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Procedura dettagliata: creare il primo componente aggiuntivo VSTO per Word
   Questa procedura dettagliata introduttiva illustra come creare un componente aggiuntivo VSTO per Microsoft Office Word.  Le funzionalità create in questo tipo di soluzione sono disponibili per l'applicazione, indipendentemente da quali documenti vengano aperti.
@@ -52,7 +54,7 @@ ms.locfileid: "90839348"
 
 1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Scegliere **Nuovo** dal menu **File**e quindi fare clic su **Progetto**.
+2. Scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.
 
 3. Nel riquadro dei modelli, espandere **Visual C#** o **Visual Basic**, quindi espandere **Office/SharePoint**.
 

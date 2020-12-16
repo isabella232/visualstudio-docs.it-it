@@ -1,5 +1,7 @@
 ---
 title: Utilizzare le tabelle
+description: Informazioni sulle procedure dettagliate e gli esempi di codice per l'uso del modello a oggetti di Microsoft Word per lavorare con le tabelle nei progetti di Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1102a996f06634396f8bec3a02400fa952810e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27fdc776589879af6757967b18a7cac47f9f66df
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815352"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526854"
 ---
 # <a name="work-with-tables"></a>Utilizzare le tabelle
   Gli argomenti in questa sezione forniscono routine dettagliate ed esempi di codice per l'uso di modello a oggetti di Microsoft Office Word da usare con tabelle in progetti di Office. In alcuni casi, le modalità con le quali si eseguono queste attività nei componenti aggiuntivi VSTO sono diverse da quelle usate nelle personalizzazioni a livello di documento.

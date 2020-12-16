@@ -1,5 +1,7 @@
 ---
 title: Modificare la formattazione del documento utilizzando i controlli CheckBox
+description: Informazioni su come usare i controlli Windows Forms in una personalizzazione a livello di documento per Microsoft Word per modificare la formattazione del testo.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24c3cb8d76551bb477f9c13cc56c313519f3b617
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328731"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527252"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Procedura dettagliata: modificare la formattazione del documento utilizzando i controlli CheckBox
   Questa procedura dettagliata illustra come usare i controlli Windows Forms in una personalizzazione a livello di documento per Microsoft Office Word per modificare la formattazione del testo.
@@ -63,32 +65,32 @@ ms.locfileid: "67328731"
 
 1. Verificare che il documento sia aperto nella finestra di progettazione di Visual Studio.
 
-2. Dalla scheda **controlli comuni** della **casella degli strumenti**trascinare il primo <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> controllo nel documento.
+2. Dalla scheda **controlli comuni** della **casella degli strumenti** trascinare il primo <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> controllo nel documento.
 
 3. Nella finestra **Proprietà** modificare le seguenti proprietà:
 
-    |Proprietà|Valore|
+    |Proprietà|valore|
     |--------------|-----------|
     |**Nome**|**applyBoldFont**|
-    |**Text**|**Grassetto**|
+    |**Testo**|**Grassetto**|
 
 4. Premere **invio** per spostare il punto di inserimento sotto la prima casella di controllo.
 
 5. Aggiungere una seconda casella di controllo al documento sotto la `ApplyBoldFont` casella di controllo e modificare le proprietà seguenti.
 
-    |Proprietà|Valore|
+    |Proprietà|valore|
     |--------------|-----------|
     |**Nome**|**applyItalicFont**|
-    |**Text**|**Corsivo**|
+    |**Testo**|**Corsivo**|
 
 6. Premere **invio** per spostare il punto di inserimento sotto la seconda casella di controllo.
 
 7. Aggiungere una terza casella di controllo al documento sotto la `ApplyItalicFont` casella di controllo e modificare le proprietà seguenti.
 
-    |Proprietà|Valore|
+    |Proprietà|valore|
     |--------------|-----------|
     |**Nome**|**applyUnderlineFont**|
-    |**Text**|**Sottolineare**|
+    |**Testo**|**Sottolineato**|
 
 ### <a name="add-text-and-a-bookmark-control"></a>Aggiungere testo e un controllo segnalibro
 
@@ -96,7 +98,7 @@ ms.locfileid: "67328731"
 
     **Fare clic su una casella di controllo per modificare la formattazione del testo.**
 
-2. Dalla scheda **controlli Word** della **casella degli strumenti**trascinare un <xref:Microsoft.Office.Tools.Word.Bookmark> controllo nel documento.
+2. Dalla scheda **controlli Word** della **casella degli strumenti** trascinare un <xref:Microsoft.Office.Tools.Word.Bookmark> controllo nel documento.
 
     Verrà visualizzata la finestra di dialogo **Aggiungi controllo Bookmark** .
 

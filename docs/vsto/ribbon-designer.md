@@ -1,5 +1,7 @@
 ---
 title: Finestra di progettazione della barra multifunzione
+description: Informazioni su come usare la finestra di progettazione della barra multifunzione per aggiungere schede, gruppi e controlli personalizzati alla barra multifunzione di un'applicazione Microsoft Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1c2941b0c088a832540fd3380c993fe2c380b44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b72270da75d27ed2837540369f74e9c5e87b417b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985619"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528004"
 ---
 # <a name="ribbon-designer"></a>Finestra di progettazione della barra multifunzione
   La finestra di progettazione della barra multifunzione è un'area di progettazione visiva. Utilizzare la finestra di progettazione della barra multifunzione per aggiungere schede, gruppi e controlli personalizzati alla barra multifunzione di un'applicazione Microsoft Office.
@@ -65,13 +67,13 @@ ms.locfileid: "72985619"
 ## <a name="design-a-ribbon"></a><a name="DesigningRibbonLayout"></a> Progettare una barra multifunzione
  Sono disponibili tre modi per aprire la finestra di progettazione della barra multifunzione:
 
-- In **Esplora soluzioni**fare doppio clic sul file di codice della barra multifunzione.
+- In **Esplora soluzioni** fare doppio clic sul file di codice della barra multifunzione.
 
-- In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul file di codice della barra multifunzione, quindi scegliere **Visualizza finestra di progettazione**.
+- In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul file di codice della barra multifunzione, quindi scegliere **Visualizza finestra di progettazione**.
 
-- In **Esplora soluzioni**selezionare il file di codice della barra multifunzione, quindi scegliere **finestra di progettazione** dal menu **Visualizza** .
+- In **Esplora soluzioni** selezionare il file di codice della barra multifunzione, quindi scegliere **finestra di progettazione** dal menu **Visualizza** .
 
-  La finestra di progettazione della barra multifunzione contiene una scheda e un gruppo predefiniti. È possibile rimuovere la scheda e il gruppo predefiniti dalla finestra di progettazione della barra multifunzione. Per rimuovere il gruppo predefinito, fare clic con il pulsante destro del mouse su **Group1**e quindi scegliere **Elimina**. Per rimuovere la scheda predefinita, fare clic con il pulsante destro del mouse su un'area vuota dell'area di progettazione, quindi scegliere **Rimuovi scheda della barra multifunzione**.
+  La finestra di progettazione della barra multifunzione contiene una scheda e un gruppo predefiniti. È possibile rimuovere la scheda e il gruppo predefiniti dalla finestra di progettazione della barra multifunzione. Per rimuovere il gruppo predefinito, fare clic con il pulsante destro del mouse su **Group1** e quindi scegliere **Elimina**. Per rimuovere la scheda predefinita, fare clic con il pulsante destro del mouse su un'area vuota dell'area di progettazione, quindi scegliere **Rimuovi scheda della barra multifunzione**.
 
   È anche possibile aggiungere schede, gruppi e controlli personalizzati alla finestra di progettazione della barra multifunzione. È possibile trovare questi controlli nella **casella degli strumenti**, nel gruppo **controlli della barra multifunzione di Office** . Sono disponibili tre modi per aggiungere controlli dal gruppo di **controlli della barra multifunzione di Office** alla finestra di progettazione della barra multifunzione:
 
@@ -103,7 +105,7 @@ ms.locfileid: "72985619"
 
 - Fare clic con il pulsante destro del mouse sulla finestra di progettazione Ribbon, quindi scegliere **Aggiungi scheda della barra multifunzione**
 
-- Aprire l' **Editor della raccolta di schede**e quindi fare clic su **Aggiungi**.
+- Aprire l' **Editor della raccolta di schede** e quindi fare clic su **Aggiungi**.
 
    Per aprire l' **Editor della raccolta di schede**, nella finestra **Proprietà** selezionare la proprietà **tabulazioni** , quindi fare clic sul pulsante con i puntini di sospensione ![ASP.NET Mobile Designer ellisse](../sharepoint/media/mwellipsis.gif "Ellisse di ASP.NET Mobile Designer").
 
@@ -143,7 +145,7 @@ ms.locfileid: "72985619"
 |**ButtonGroup**|Gruppo che contiene uno o più pulsanti, pulsanti di menu, pulsanti di menu combinato e raccolte. È possibile aggiungere un gruppo di pulsanti a un gruppo o a un menu.|
 |**CheckBox**|Casella selezionata o deselezionata per attivare o disattivare un'opzione.|
 |**ComboBox**|Casella di modifica con una casella di riepilogo collegata. Gli utenti possono digitare o selezionare la scelta. Nella casella viene visualizzata la selezione corrente. Utilizzare la <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> proprietà per aggiungere e rimuovere elementi in fase di esecuzione prima o dopo il caricamento della barra multifunzione nell'applicazione di Office.|
-|**DropDown**|Elenco di elementi che l'utente può selezionare. L'utente non può digitare un nuovo elemento in un elenco a discesa.<br /><br /> Utilizzare la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> proprietà per aggiungere elementi all'elenco. È possibile aggiungere e rimuovere elementi in fase di esecuzione.<br /><br /> Utilizzare la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> proprietà per aggiungere pulsanti all'elenco. Tuttavia, non è possibile aggiungere e rimuovere pulsanti in fase di esecuzione dopo che la barra multifunzione è stata caricata nell'applicazione di Office.|
+|**Elenco a discesa**|Elenco di elementi che l'utente può selezionare. L'utente non può digitare un nuovo elemento in un elenco a discesa.<br /><br /> Utilizzare la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> proprietà per aggiungere elementi all'elenco. È possibile aggiungere e rimuovere elementi in fase di esecuzione.<br /><br /> Utilizzare la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> proprietà per aggiungere pulsanti all'elenco. Tuttavia, non è possibile aggiungere e rimuovere pulsanti in fase di esecuzione dopo che la barra multifunzione è stata caricata nell'applicazione di Office.|
 |**Casella**|Casella in cui l'utente può digitare il testo.|
 |**Raccolta**|Menu che presenta una matrice o una griglia di scelte visive da cui gli utenti possono selezionare. È possibile controllare il layout delle selezioni nel menu. Utilizzare le <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> proprietà e <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> per specificare il numero di righe e colonne in cui vengono visualizzati gli elementi e i pulsanti della raccolta.|
 |**Etichetta**|Testo che è possibile utilizzare per identificare i controlli sulla barra multifunzione.|
@@ -175,14 +177,14 @@ ms.locfileid: "72985619"
 
  Nella tabella seguente sono illustrati i tasti di scelta rapida che si applicano a tutti i controlli.
 
-|Action|Tasti di scelta rapida|
+|Azione|Tasto di scelta rapida|
 |------------|-----------------------|
 |Spostare un controllo prima del controllo precedente nell'elenco.|**CTRL** + **In alto**<br /><br /> **CTRL** + A **sinistra**|
 |Spostare un controllo dopo il controllo successivo nell'elenco.|**CTRL** + In **basso**<br /><br /> **CTRL** + A **destra**|
 |Spostare la selezione da un controllo a un altro nello stesso gruppo. Per un pannello a discesa, spostarsi tra il controllo padre e i controlli nel pannello a discesa.|**Attivo**<br /><br /> **Giù**|
-|Eseguire l'iterazione in tutti i controlli.|**Scheda**|
+|Eseguire l'iterazione in tutti i controlli.|**TAB**|
 |Eseguire l'iterazione fino al contrario di tutti i controlli.|**Sposta** + **Scheda**|
-|Elimina il controllo o il set di controlli selezionato.|**Elimina**|
+|Elimina il controllo o il set di controlli selezionato.|**Eliminazione**|
 |Copiare i controlli selezionati.|**CTRL** + **C**|
 |Taglia i controlli selezionati.|**CTRL** + **X**|
 |Incollare i controlli dagli Appunti.|**CTRL** + **V**|
@@ -191,12 +193,12 @@ ms.locfileid: "72985619"
 
  I tasti di scelta rapida che si applicano solo al menu Microsoft Office, <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> e <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> sono illustrati nella tabella seguente.
 
-|Action|Tasti di scelta rapida|
+|Azione|Tasto di scelta rapida|
 |------------|-----------------------|
 |Selezionare il controllo padre se il pannello a discesa è aperto ed è selezionato un controllo nel pannello a discesa.|**Sinistra**|
 |Chiudere il pannello a discesa se il pannello a discesa è aperto e il controllo padre è selezionato.|**Sinistra**|
-|Aprire il pannello a discesa.|**Ok**|
-|Selezionare il primo controllo nel pannello a discesa se il pannello a discesa è aperto.|**Ok**|
+|Aprire il pannello a discesa.|**Destra**|
+|Selezionare il primo controllo nel pannello a discesa se il pannello a discesa è aperto.|**Destra**|
 |Chiudere un pannello a discesa.|**ESC**|
 
 ## <a name="see-also"></a>Vedere anche

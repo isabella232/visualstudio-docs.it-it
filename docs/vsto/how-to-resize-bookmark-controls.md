@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: ridimensionare i controlli Bookmark'
+description: Informazioni su come usare Visual Studio per impostare le dimensioni di un controllo Bookmark quando lo si aggiunge a un documento di Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cc7b26bb767c233ed8699519261d4b5b708306b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d577f825337862de4ef967bb4f92f61ebbb0b45
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545860"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528190"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Procedura: ridimensionare i controlli Bookmark
   Le dimensioni di un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> vengono impostate quando il controllo viene aggiunto a un documento di Microsoft Office Word. È anche possibile ridimensionare tale controllo in un secondo momento.

@@ -1,5 +1,7 @@
 ---
 title: Eseguire l'associazione ai dati dal servizio nel progetto di componente aggiuntivo VSTO
+description: Informazioni su come aggiungere controlli a un documento di Microsoft Word, associare i controlli ai dati recuperati dal servizio contenuto MSDN e rispondere agli eventi in fase di esecuzione.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b65308cfc0ba4dee33dd6b20d3fd4028e9ea22e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72381322"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527480"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Procedura dettagliata: associazione ai dati di un servizio in un progetto di componente aggiuntivo VSTO
   È possibile associare dati ai controlli host nei progetti di componente aggiuntivo VSTO. Questa procedura dettagliata illustra come aggiungere controlli a un documento di Microsoft Office Word, associare i controlli ai dati recuperati dal servizio per la gestione del contenuto MSDN e rispondere agli eventi in fase di esecuzione.
@@ -48,7 +50,7 @@ ms.locfileid: "72381322"
 
 ### <a name="to-create-a-new-project"></a>Per creare un nuovo progetto
 
-1. Creare un progetto di componente aggiuntivo VSTO di Word denominato **MTPS Content Service**usando Visual Basic o C#.
+1. Creare un progetto di componente aggiuntivo VSTO di Word denominato **MTPS Content Service** usando Visual Basic o C#.
 
      Per altre informazioni, vedere [procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -61,7 +63,7 @@ ms.locfileid: "72381322"
 
 1. Scegliere **Aggiungi nuova origine dati** dal menu **Dati**.
 
-2. Nella **Configurazione guidata origine dati**fare clic su **Servizio**e quindi fare clic su **Avanti**.
+2. Nella **Configurazione guidata origine dati** fare clic su **Servizio** e quindi fare clic su **Avanti**.
 
 3. Nel campo **Indirizzo** digitare l'URL seguente:
 
@@ -69,7 +71,7 @@ ms.locfileid: "72381322"
 
 4. Fare clic su **Vai**.
 
-5. Nel campo **Spazio dei nomi** digitare **ContentService**e fare clic su **OK**.
+5. Nel campo **Spazio dei nomi** digitare **ContentService** e fare clic su **OK**.
 
 6. Nella finestra di dialogo della procedura guidata **Aggiungi riferimento** fare clic su **Fine**.
 
@@ -83,12 +85,12 @@ ms.locfileid: "72381322"
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#2)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#2)]
 
-2. Aggiungere il metodo seguente alla classe `ThisAddIn`. Questo metodo crea un controllo contenuto all'inizio del documento attivo.
+2. Aggiungi alla classe `ThisAddIn` il metodo seguente. Questo metodo crea un controllo contenuto all'inizio del documento attivo.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#4)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#4)]
 
-3. Aggiungere il metodo seguente alla classe `ThisAddIn`. Questo metodo inizializza gli oggetti necessari per creare e inviare una richiesta al servizio Web.
+3. Aggiungi alla classe `ThisAddIn` il metodo seguente. Questo metodo inizializza gli oggetti necessari per creare e inviare una richiesta al servizio Web.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#6)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#6)]

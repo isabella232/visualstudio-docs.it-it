@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: creare il primo componente aggiuntivo VSTO per Project'
+description: Creare un componente aggiuntivo a livello di applicazione per Microsoft Project. Questa funzionalità è disponibile per l'applicazione stessa, indipendentemente dai progetti aperti.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a84d295a47d3391f27e7101ad815dca0c910aa6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f4774b8f5ba55d54e05e3a9ef18f8ea13fd48fc
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981400"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527892"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Procedura dettagliata: creare il primo componente aggiuntivo VSTO per Project
   Questa procedura dettagliata illustra come creare un componente aggiuntivo VSTO per Microsoft Office progetto. Le funzionalità create in questo tipo di soluzione sono disponibili per l'applicazione, indipendentemente dai progetti aperti. Per altre informazioni, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;&#41;VSTO ](../vsto/office-solutions-development-overview-vsto.md).
@@ -52,7 +54,7 @@ ms.locfileid: "62981400"
 
 1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Scegliere **Nuovo** dal menu **File**e quindi fare clic su **Progetto**.
+2. Scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.
 
 3. Nel riquadro dei modelli, espandere **Visual C#** o **Visual Basic**, quindi espandere **Office/SharePoint**.
 

@@ -1,5 +1,7 @@
 ---
 title: Configurare le informazioni di configurazione per una soluzione Office
+description: Informazioni su come usare i file di configurazione per configurare le impostazioni specifiche per le soluzioni Microsoft Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e47ad00e3f9e90913784196894d514a755699864
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 3cff5e6f559245e361eda0db6623312917891969
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91581039"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528162"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Procedura: impostare le informazioni di configurazione per una soluzione Office
   È possibile usare i file di configurazione per configurare le impostazioni specifiche per le soluzioni Office. È possibile specificare impostazioni quali i criteri di associazione degli assembly, gli oggetti remoti, il debug e le impostazioni di traccia.
@@ -44,7 +46,7 @@ ms.locfileid: "91581039"
 
    Non esistono considerazioni speciali per l'uso dei file di configurazione con i progetti di Office.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Schema del file di configurazione per il .NET Framework](/dotnet/framework/configure-apps/file-schema/index)
 - [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)

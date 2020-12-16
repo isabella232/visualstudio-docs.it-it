@@ -1,5 +1,7 @@
 ---
 title: Soluzioni di progetto
+description: Informazioni su come usare i componenti aggiuntivi VSTO per automatizzare il progetto, estendere le funzionalità del progetto o personalizzare l'interfaccia utente del progetto.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 84dfe7cf86df2139b06a320d1c6441665a08a1b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c44e1208daaef11cb7fd9bd22e3e3ae574ca610d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985632"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527511"
 ---
 # <a name="project-solutions"></a>Soluzioni di progetto
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] fornisce modelli di progetto che è possibile usare per creare componenti aggiuntivi VSTO per Microsoft Office Project. È possibile usare i componenti aggiuntivi VSTO per automatizzare Project, estenderne le funzionalità o personalizzarne l'interfaccia utente.
@@ -66,10 +68,10 @@ ms.locfileid: "72985632"
 - [Procedura dettagliata: creare il primo componente aggiuntivo VSTO per Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
 - [Introduzione alla programmazione di componenti aggiuntivi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
 - [Panoramica sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Componenti aggiuntivi VSTO di programma](../vsto/programming-vsto-add-ins.md)
 - [Scrivere codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md)
-- [assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md)
+- [Assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md)
 - [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)
 - [Project 2010 e Project Server 2010 nello sviluppo per Office](/previous-versions/office/developer/office-2010/ee758031(v=office.14))

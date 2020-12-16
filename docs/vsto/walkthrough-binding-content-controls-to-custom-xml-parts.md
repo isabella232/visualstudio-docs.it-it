@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: associare controlli contenuto a parti XML personalizzate'
+description: Informazioni su come associare controlli contenuto in una personalizzazione a livello di documento per Word ai dati XML archiviati nel documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a80488408f680530ed3c9b4094b2997e97484ce3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a82a8fd98bbf1a735661f3e1cf01e2452eb7ee58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544443"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527959"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Procedura dettagliata: associare controlli contenuto a parti XML personalizzate
   Questa procedura dettagliata illustra come associare i controlli contenuto in una personalizzazione a livello di documento per Word a dati XML archiviati nel documento.
@@ -70,7 +72,7 @@ ms.locfileid: "85544443"
 
 1. Nel documento di Word ospitato nella [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] finestra di progettazione fare clic sulla scheda **Inserisci** sulla barra multifunzione.
 
-2. Nel gruppo **tabelle** scegliere **tabella**e inserire una tabella con 2 colonne e 3 righe.
+2. Nel gruppo **tabelle** scegliere **tabella** e inserire una tabella con 2 colonne e 3 righe.
 
 3. Digitare il testo nella prima colonna in modo che sia simile alla colonna seguente:
 
@@ -127,7 +129,7 @@ ms.locfileid: "85544443"
     </employees>
     ```
 
-5. In **Esplora soluzioni**scegliere il file di **employees.xml** .
+5. In **Esplora soluzioni** scegliere il file di **employees.xml** .
 
 6. Nella finestra **Proprietà** selezionare la proprietà **azione di compilazione** , quindi impostare il valore su **risorsa incorporata**.
 
@@ -148,7 +150,7 @@ ms.locfileid: "85544443"
 
      Viene aperta la progettazione schema.
 
-4. In **Esplora soluzioni**aprire il menu di scelta rapida per  **Employees. xsd**, quindi scegliere  **Visualizza codice**.
+4. In **Esplora soluzioni** aprire il menu di scelta rapida per  **Employees. xsd**, quindi scegliere  **Visualizza codice**.
 
 5. Sostituire il contenuto del file **Employees. xsd** con lo schema seguente.
 
@@ -225,19 +227,19 @@ ms.locfileid: "85544443"
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>Per aggiungere una parte XML personalizzata al documento
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per  **ThisDocument.cs** o **ThisDocument. vb**, quindi scegliere **Visualizza codice**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per  **ThisDocument.cs** o **ThisDocument. vb**, quindi scegliere **Visualizza codice**.
 
 2. Aggiungere le seguenti dichiarazioni alla classe `ThisDocument`. Questo codice dichiara diversi oggetti che verranno usati per aggiungere una parte XML personalizzata al documento.
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#1)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#1)]
 
-3. Aggiungere il metodo seguente alla classe `ThisDocument`. Questo metodo ottiene il contenuto del file di dati XML incorporato come risorsa nell'assembly e restituisce il contenuto come stringa XML.
+3. Aggiungi alla classe `ThisDocument` il metodo seguente. Questo metodo ottiene il contenuto del file di dati XML incorporato come risorsa nell'assembly e restituisce il contenuto come stringa XML.
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#3)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#3)]
 
-4. Aggiungere il metodo seguente alla classe `ThisDocument`. Il metodo crea `AddCustomXmlPart` una nuova parte XML personalizzata che contiene una stringa XML che viene passata al metodo.
+4. Aggiungi alla classe `ThisDocument` il metodo seguente. Il metodo crea `AddCustomXmlPart` una nuova parte XML personalizzata che contiene una stringa XML che viene passata al metodo.
 
      Per garantire che la parte XML personalizzata venga creata solo una volta, il metodo crea la parte XML personalizzata solo se non esiste già nel documento una parte XML personalizzata con GUID corrispondente. La prima volta che viene chiamato questo metodo, viene salvato il valore della proprietà <xref:Microsoft.Office.Core._CustomXMLPart.Id%2A> per la stringa `employeeXMLPartID`. Il valore della stringa `employeeXMLPartID` viene mantenuto nel documento perché è stato dichiarato mediante l'attributo <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>.
 
@@ -249,7 +251,7 @@ ms.locfileid: "85544443"
 
 ### <a name="to-bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>Per associare i controlli contenuto a elementi nella parte XML personalizzata
 
-1. Aggiungere il metodo seguente alla classe `ThisDocument`. Questo metodo associa ogni controllo del contenuto a un elemento nella parte XML personalizzata e imposta il formato di visualizzazione della data di <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>.
+1. Aggiungi alla classe `ThisDocument` il metodo seguente. Questo metodo associa ogni controllo del contenuto a un elemento nella parte XML personalizzata e imposta il formato di visualizzazione della data di <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>.
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#5)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#5)]
@@ -273,7 +275,7 @@ ms.locfileid: "85544443"
 
 2. Verificare che la tabella nel documento sia simile alla tabella seguente. Tutte le stringhe della seconda colonna sono ottenute da un elemento nella parte XML personalizzata del documento.
 
-    |Colonna|Valore|
+    |Colonna|valore|
     |-|-|
     |**Nome dipendente**|**Karina Leal**|
     |**Data assunzione**|**1 aprile 1999**|

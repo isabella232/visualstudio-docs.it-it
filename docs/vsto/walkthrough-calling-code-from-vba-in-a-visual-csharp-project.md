@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: chiamata di codice da VBA in un progetto Visual C#'
+description: Informazioni su come chiamare un metodo in una personalizzazione a livello di documento per Microsoft Excel dal codice Visual Basic, Applications Edition (VBA) nella cartella di lavoro.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c089a3156d005da7d49976f6c96bb10daac0662
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: daf25a1e2e80d2c5918d0d11c4b31c75a2e40c87
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "92297953"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527299"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Procedura dettagliata: chiamata di codice da VBA in un progetto Visual C#
   Questa procedura dettagliata illustra come chiamare un metodo in una personalizzazione a livello di documento di Microsoft Office Excel da codice Visual Basic, Applications Edition (VBA) contenuto nella cartella di lavoro. La procedura comporta tre passaggi di base: aggiungere un metodo alla classe dell'elemento host `Sheet1` , esporre il metodo al codice VBA nella cartella di lavoro e quindi chiamare il metodo dal codice VBA contenuto nella cartella di lavoro.
@@ -97,7 +99,7 @@ ms.locfileid: "92297953"
 
 1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Scegliere **Nuovo** dal menu **File**e quindi fare clic su **Progetto**.
+2. Scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.
 
 3. Nel riquadro Modelli espandere, **Visual C#** quindi espandere **Office/SharePoint**.
 
@@ -111,7 +113,7 @@ ms.locfileid: "92297953"
 
      Viene visualizzata la **Creazione guidata progetto Visual Studio Tools per Office** .
 
-8. Selezionare **Copia un documento esistente**e, nella casella **Percorso completo del documento esistente** , specificare il percorso della cartella di lavoro **WorkbookWithVBA** creata in precedenza. Se si ha già una cartella di lavoro con attivazione macro che si vuole usare, specificare invece il percorso di questa cartella di lavoro.
+8. Selezionare **Copia un documento esistente** e, nella casella **Percorso completo del documento esistente** , specificare il percorso della cartella di lavoro **WorkbookWithVBA** creata in precedenza. Se si ha già una cartella di lavoro con attivazione macro che si vuole usare, specificare invece il percorso di questa cartella di lavoro.
 
 9. Fare clic su **Fine**.
 
@@ -153,7 +155,7 @@ ms.locfileid: "92297953"
 
 ### <a name="to-add-a-method-to-the-sheet1-class"></a>Per aggiungere un metodo alla classe Sheet1
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **Sheet1.cs**, quindi scegliere **Visualizza codice**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Sheet1.cs**, quindi scegliere **Visualizza codice**.
 
      Il file **Sheet1.cs** verrà aperto nell'editor del codice.
 
@@ -161,7 +163,7 @@ ms.locfileid: "92297953"
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
 
-3. Aggiungere il metodo seguente alla classe `Sheet1`. Questo metodo esegue l'override del metodo <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> per restituire l'istanza corrente della classe `Sheet1` .
+3. Aggiungi alla classe `Sheet1` il metodo seguente. Questo metodo esegue l'override del metodo <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> per restituire l'istanza corrente della classe `Sheet1` .
 
      [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
 
@@ -195,7 +197,7 @@ ms.locfileid: "92297953"
 
 ### <a name="to-expose-the-method-to-vba-code"></a>Per esporre il metodo al codice VBA
 
-1. In **Esplora soluzioni**fare doppio clic su **Sheet1.cs**.
+1. In **Esplora soluzioni** fare doppio clic su **Sheet1.cs**.
 
      Il file **WorkbookWithVBA** verrà aperto nella finestra di progettazione, con Sheet1 visibile.
 

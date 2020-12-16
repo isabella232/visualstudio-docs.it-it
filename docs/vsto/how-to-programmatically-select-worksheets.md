@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: selezionare fogli di programmazione a livello di codice'
+description: Utilizzare Visual Studio per selezionare i fogli di lavoro di Microsoft Excel a livello di codice con l'elemento host Worksheet o la raccolta Sheets della cartella di lavoro di Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6134b23e7b398794529ee43a428ee8b8962ccf38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ddef833feeb4e59f5e9e9b2c95a2170ee3c2530
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547004"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528543"
 ---
 # <a name="how-to-programmatically-select-worksheets"></a>Procedura: selezionare fogli di programmazione a livello di codice
   Il metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> seleziona l'oggetto specificato e questa operazione sposta la selezione dell'utente al nuovo oggetto. Usare il metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> se si vuole applicare lo stato attivo all'oggetto senza modificare la selezione dell'utente.

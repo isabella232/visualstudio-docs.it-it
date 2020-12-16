@@ -1,5 +1,7 @@
 ---
 title: Creazione della prima personalizzazione a livello di documento per Excel
+description: Creare una personalizzazione a livello di documento per Microsoft Excel. Le funzionalità create in questo tipo di soluzione sono disponibili solo quando si apre una cartella di lavoro specifica.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b75bf6894bff4e5fa8d6ac17ed537f15041b3ede
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 4183e84a930957b7cf87a6cc1e6fabcb21420785
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585002"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527949"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Procedura dettagliata: creare la prima personalizzazione a livello di documento per Excel
 
@@ -56,7 +58,7 @@ ms.locfileid: "91585002"
 
 1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Scegliere **Nuovo** dal menu **File**e quindi fare clic su **Progetto**.
+2. Scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.
 ::: moniker range="vs-2017"
 3. Nel riquadro dei modelli, espandere **Visual C#** o **Visual Basic**, quindi espandere **Office/SharePoint**.
 
@@ -68,7 +70,7 @@ ms.locfileid: "91585002"
 
 7. Fare clic su **OK**.
 
-8. Selezionare **Crea un nuovo documento** dalla **procedura guidata strumenti di Visual Studio per il progetto di Office**e fare clic su **OK**.
+8. Selezionare **Crea un nuovo documento** dalla **procedura guidata strumenti di Visual Studio per il progetto di Office** e fare clic su **OK**.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 3. Nella finestra di dialogo **Crea un nuovo progetto** selezionare il progetto **cartella di lavoro VSTO di Excel** .
@@ -79,17 +81,17 @@ ms.locfileid: "91585002"
 
 5. Digitare **FirstWorkbookCustomization** nella casella **nome** della finestra di dialogo **Configura nuovo progetto** e fare clic su **Crea**.
 
-6. Selezionare **Crea un nuovo documento** dalla **procedura guidata strumenti di Visual Studio per il progetto di Office**e fare clic su **OK**.
+6. Selezionare **Crea un nuovo documento** dalla **procedura guidata strumenti di Visual Studio per il progetto di Office** e fare clic su **OK**.
 ::: moniker-end
    - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Crea il progetto **FirstWorkbookCustomization** e aggiunge i file seguenti al progetto.
 
    - *FirstWorkbookCustomization*. xlsx: rappresenta la cartella di lavoro di Excel nel progetto. Contiene tutti i fogli di lavoro e i grafici.
 
-   - Sheet1 (file*VB* per Visual Basic o file *CS* per Visual C#)-un foglio di lavoro che fornisce l'area di progettazione e il codice per il primo foglio di lavoro della cartella di lavoro. Per ulteriori informazioni, vedere [elemento host Worksheet](../vsto/worksheet-host-item.md).
+   - Sheet1 (file *VB* per Visual Basic o file *CS* per Visual C#)-un foglio di lavoro che fornisce l'area di progettazione e il codice per il primo foglio di lavoro della cartella di lavoro. Per ulteriori informazioni, vedere [elemento host Worksheet](../vsto/worksheet-host-item.md).
 
    - Sheet2 (file *. vb* per Visual Basic o file *CS* per Visual C#)-un foglio di lavoro che fornisce l'area di progettazione e il codice per il secondo foglio di lavoro della cartella di lavoro.
 
-   - Sheet3 (file con estensione*VB* per Visual Basic o file *CS* per Visual C#)-un foglio di lavoro che fornisce l'area di progettazione e il codice per il terzo foglio di lavoro della cartella di lavoro.
+   - Sheet3 (file con estensione *VB* per Visual Basic o file *CS* per Visual C#)-un foglio di lavoro che fornisce l'area di progettazione e il codice per il terzo foglio di lavoro della cartella di lavoro.
 
    - ThisWorkbook (file *. vb* per Visual Basic o file *CS* per Visual C#)-contiene l'area di progettazione e il codice per le personalizzazioni a livello di cartella di lavoro. Per ulteriori informazioni, vedere [elemento host Workbook](../vsto/workbook-host-item.md).
 
@@ -103,11 +105,11 @@ ms.locfileid: "91585002"
 
 1. Chiudere la cartella di lavoro facendo clic sul pulsante **Chiudi** (X) per la finestra di progettazione.
 
-2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul file di codice **Sheet1** , quindi scegliere **Visualizza finestra di progettazione**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul file di codice **Sheet1** , quindi scegliere **Visualizza finestra di progettazione**.
 
      \- - oppure -
 
-     In **Esplora soluzioni**fare doppio clic sul file di codice **Sheet1** .
+     In **Esplora soluzioni** fare doppio clic sul file di codice **Sheet1** .
 
 ## <a name="add-text-to-a-worksheet-in-the-designer"></a>Aggiungere testo a un foglio di progettazione
 
@@ -132,7 +134,7 @@ ms.locfileid: "91585002"
 
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>Per aggiungere al foglio di lavoro una seconda riga di codice mediante codice
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **Sheet1**, quindi scegliere **Visualizza codice**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Sheet1**, quindi scegliere **Visualizza codice**.
 
      Il file di codice verrà aperto in Visual Studio.
 
@@ -183,7 +185,7 @@ ms.locfileid: "91585002"
 
 - Distribuzione di personalizzazioni a livello di documento per Excel: [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Panoramica sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluzioni Excel](../vsto/excel-solutions.md)

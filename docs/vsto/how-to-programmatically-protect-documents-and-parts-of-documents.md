@@ -1,5 +1,7 @@
 ---
 title: Proteggere documenti e parti di documenti a livello di codice
+description: Informazioni su come è possibile aggiungere la protezione ai documenti di Microsoft Word per impedire agli utenti di apportare modifiche al documento.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: beab8c2e1b18d56dc7b71688e0ff2ec5b74ac596
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 1dbb001a8c350b376f30047dbafbf747f043e91d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584846"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527764"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Procedura: proteggere documenti e parti di documenti a livello di codice
   È possibile aggiungere protezione ai documenti di Microsoft Office Word per impedire agli utenti di apportare modifiche al documento.
@@ -69,7 +71,7 @@ ms.locfileid: "91584846"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#111)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#111)]
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Protezione di documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)
 - [Protezione delle password nei documenti di Office](../vsto/password-protection-on-office-documents.md)
 - [Procedura: consentire l'esecuzione del codice dietro i documenti con autorizzazioni limitate](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)

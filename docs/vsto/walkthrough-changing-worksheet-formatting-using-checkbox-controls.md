@@ -1,5 +1,7 @@
 ---
 title: Modificare la formattazione del foglio di controllo tramite i controlli CheckBox
+description: Informazioni su come usare gli strumenti di sviluppo di Office in Visual Studio per creare e aggiungere codice al progetto.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 42d2c46f6fd61d74476933cfda3dea8c62b00c95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28b9f000c2e8517304387e2b203dfa7888b33d64
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328694"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527215"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Procedura dettagliata: modificare la formattazione del foglio di controllo tramite i controlli CheckBox
   Questa procedura dettagliata illustra le nozioni di base sull'uso di caselle di controllo in un foglio di lavoro Microsoft Office Excel per modificare la formattazione. Per creare e aggiungere codice al progetto, si utilizzeranno gli strumenti di sviluppo di Office in Visual Studio. Per visualizzare il risultato come esempio completo, vedere l'esempio relativo ai controlli di Excel in [esempi e procedure dettagliate per lo sviluppo di Office](../vsto/office-development-samples-and-walkthroughs.md).
@@ -60,30 +62,30 @@ ms.locfileid: "67328694"
 
 1. Verificare che la cartella di lavoro sia aperta nella finestra di progettazione di Visual Studio e che `Sheet1` sia aperta.
 
-2. Dalla scheda **controlli comuni** della **casella degli strumenti**trascinare un <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> controllo nella cella **B2** o vicino alla cella **Sheet1**B2.
+2. Dalla scheda **controlli comuni** della **casella degli strumenti** trascinare un <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> controllo nella cella **B2** o vicino alla cella B2.
 
 3. Scegliere finestra **Proprietà** dal menu **Visualizza** .
 
 4. Assicurarsi che **CheckBox1** sia visibile nella casella di riepilogo nome oggetto della finestra **Proprietà** e modificare le proprietà seguenti:
 
-    |Proprietà|Valore|
+    |Proprietà|valore|
     |--------------|-----------|
     |**Nome**|**applyBoldFont**|
-    |**Text**|**Grassetto**|
+    |**Testo**|**Grassetto**|
 
 5. Trascinare una seconda casella di controllo in prossimità della cella **B4** e modificare le proprietà seguenti:
 
-    |Proprietà|Valore|
+    |Proprietà|valore|
     |--------------|-----------|
     |**Nome**|**applyItalicFont**|
-    |**Text**|**Corsivo**|
+    |**Testo**|**Corsivo**|
 
 6. Trascinare una terza casella di controllo nella cella **B6** e modificare le proprietà seguenti:
 
-    |Proprietà|Valore|
+    |Proprietà|valore|
     |--------------|-----------|
     |**Nome**|**applyUnderlineFont**|
-    |**Text**|**Sottolineare**|
+    |**Testo**|**Sottolineato**|
 
 7. Selezionare tutti e tre i controlli casella di controllo tenendo premuto il tasto **CTRL** .
 
@@ -110,7 +112,7 @@ ms.locfileid: "67328694"
 
 5. Assicurarsi che **NamedRange1** sia visibile nella casella di riepilogo nome oggetto della finestra **Proprietà** e modificare le proprietà seguenti:
 
-   |Proprietà|Valore|
+   |Proprietà|valore|
    |--------------|-----------|
    |**Nome**|**FontTesto**|
    |**Value2**|**Fare clic su una casella di controllo per modificare la formattazione del testo.**|

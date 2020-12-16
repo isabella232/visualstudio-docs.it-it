@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: data binding complesse in un progetto a livello di documento'
+description: Informazioni su come è possibile associare più celle di un foglio di lavoro di Microsoft Excel ai campi del database Northwind SQL Server.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7aba307bcd76cc055e42c11418d42f3dd0cfba1f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584321"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527119"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procedura dettagliata: data binding complesse in un progetto a livello di documento
   In questa procedura dettagliata vengono illustrate le nozioni di base di data binding complesse in un progetto a livello di documento. È possibile associare più celle di un foglio di lavoro Microsoft Office Excel ai campi del database di SQL Server Northwind.
@@ -65,7 +67,7 @@ ms.locfileid: "91584321"
 
 ### <a name="to-create-the-data-source"></a>Per creare l'origine dati
 
-1. Se la finestra **origini dati** non è visibile, visualizzarla dalla barra dei menu scegliendo **Visualizza**  >  **altre**  >  **origini dati**di Windows.
+1. Se la finestra **origini dati** non è visibile, visualizzarla dalla barra dei menu scegliendo **Visualizza**  >  **altre**  >  **origini dati** di Windows.
 
 2. Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
@@ -106,7 +108,7 @@ ms.locfileid: "91584321"
 
 ### <a name="to-add-a-button"></a>Per aggiungere un pulsante
 
-1. Dalla scheda **controlli comuni** della **casella degli strumenti**aggiungere un <xref:System.Windows.Forms.Button> controllo alla cella **a4** del foglio di foglio.
+1. Dalla scheda **controlli comuni** della **casella degli strumenti** aggiungere un <xref:System.Windows.Forms.Button> controllo alla cella **a4** del foglio di foglio.
 
    Il passaggio successivo consiste nell'aggiungere testo al pulsante quando si apre il foglio di esecuzione.
 
@@ -115,7 +117,7 @@ ms.locfileid: "91584321"
 
 ### <a name="to-initialize-the-control"></a>Per inizializzare il controllo
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **Sheet1. vb** o **Sheet1.cs**, quindi scegliere **Visualizza codice** dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Sheet1. vb** o **Sheet1.cs**, quindi scegliere **Visualizza codice** dal menu di scelta rapida.
 
 2. Aggiungere il codice seguente al `Sheet1_Startup` metodo per impostare il testo per b `utton` .
 
@@ -155,7 +157,7 @@ ms.locfileid: "91584321"
 
 ### <a name="to-modify-a-column-header"></a>Per modificare un'intestazione di colonna
 
-1. Fare clic sulla cella che contiene il **Cognome**dell'intestazione di colonna.
+1. Fare clic sulla cella che contiene il **Cognome** dell'intestazione di colonna.
 
 2. Digitare **Last Name**, incluso uno spazio tra le due parole, quindi premere **invio**.
 
@@ -175,7 +177,7 @@ ms.locfileid: "91584321"
 
 1. Selezionare una cella all'interno dell'oggetto elenco.
 
-    Viene visualizzata una nuova riga nella parte inferiore dell'elenco, con un asterisco ( **\*** ) nella prima cella della nuova riga.
+    Viene visualizzata una nuova riga nella parte inferiore dell'elenco, con un asterisco (* *\** _) nella prima cella della nuova riga.
 
 2. Aggiungere le informazioni seguenti nella riga vuota.
 
@@ -185,7 +187,7 @@ ms.locfileid: "91584321"
 
 ### <a name="to-delete-rows"></a>Per eliminare righe
 
-- Fare clic con il pulsante destro del mouse sul numero 16 (riga 16) all'estrema sinistra del foglio di lavori, quindi scegliere **Elimina**.
+- Fare clic con il pulsante destro del mouse sul numero 16 (riga 16) all'estrema sinistra del foglio di lavori, quindi scegliere _ * Elimina * *.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Per ordinare le righe nell'elenco
 
@@ -224,7 +226,7 @@ ms.locfileid: "91584321"
 
 - Creare una relazione Master-Details tra un campo e una tabella. Per ulteriori informazioni, vedere [procedura dettagliata: creazione di una relazione Master Detail utilizzando un set di dati memorizzato nella cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Dati nelle soluzioni Office](../vsto/data-in-office-solutions.md)
 - [Procedura dettagliata: data binding semplice in un progetto a livello di documento](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)

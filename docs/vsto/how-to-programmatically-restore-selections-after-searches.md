@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: ripristinare le selezioni dopo le ricerche a livello di codice'
+description: Informazioni su come usare Visual Studio per ripristinare a livello di codice le selezioni dopo le ricerche in un documento di Microsoft Word.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 452e483600f6da0eacd5337b42c728145bcfe8aa
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: d396602a5d2bc0c3a90d32256bf226348abff3f3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584781"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528279"
 ---
 # <a name="how-to-programmatically-restore-selections-after-searches"></a>Procedura: ripristinare le selezioni dopo le ricerche a livello di codice
   Se si trova e sostituisce testo in un documento, potrebbe essere necessario ripristinare la selezione originale dell'utente dopo il completamento della ricerca.

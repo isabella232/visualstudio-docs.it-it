@@ -1,5 +1,7 @@
 ---
 title: Modifiche richieste per i progetti di Office migrati a .NET 4,5
+description: Informazioni sulle modifiche che è necessario apportare al progetto se il Framework di destinazione viene modificato in .NET Framework 4 o versione successiva da una versione precedente del .NET Framework.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40db3cd629f2c3a2ced37a781dea3244a3f19957
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: e92a7fc81f77244664be7285cc6fd414dc4409be
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584464"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527488"
 ---
 # <a name="changes-required-for-office-projects-migrated-to-net-45"></a>Modifiche richieste per i progetti di Office migrati a .NET 4,5
 
@@ -71,5 +73,5 @@ ms.locfileid: "91584464"
 ## <a name="reinstall-solutions-on-end-user-computers"></a>Reinstallare le soluzioni nei computer degli utenti finali
  Se si usa ClickOnce per distribuire una soluzione Office destinata a .NET Framework 3.5 e quindi si modifica la destinazione del progetto a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, gli utenti finali devono disinstallare la soluzione e reinstallarla dopo averla ripubblicata. Se si ripubblica la soluzione ridestinata e la soluzione viene aggiornata sui computer degli utenti finali, gli utenti finali riceveranno un <xref:System.Runtime.InteropServices.COMException> quando eseguiranno la soluzione aggiornata.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Eseguire la migrazione di soluzioni Office a .NET Framework 4 o versione successiva](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)

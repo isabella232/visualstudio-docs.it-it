@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: leggere e scrivere nelle proprietà dei documenti'
+description: Informazioni su come usare Visual Studio per ottenere o impostare le proprietà di un documento in Microsoft Excel e Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: adad9ec70290f426ce7c3c59ad13ff8636a69463
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60ee5ccebc9c6c38369ed707c9d2043ffc1995c9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541323"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528208"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Procedura: leggere e scrivere nelle proprietà dei documenti
   È possibile archiviare le proprietà del documento insieme a un documento. Le applicazioni di Office offrono svariate proprietà predefinite, ad esempio autore, titolo e oggetto. Questo argomento illustra come impostare le proprietà dei documenti in Microsoft Office Excel e Microsoft Office Word.

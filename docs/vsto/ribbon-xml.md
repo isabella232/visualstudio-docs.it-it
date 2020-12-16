@@ -1,5 +1,7 @@
 ---
 title: Ribbon XML
+description: Informazioni su come utilizzare l'elemento barra multifunzione (XML) se si desidera personalizzare la barra multifunzione in un modo non supportato dall'elemento barra multifunzione (finestra di progettazione visiva).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c9e1cf4c6af266495b3d85d96aa8cce1697cca7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839483"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528414"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   L'elemento barra multifunzione (XML) consente di personalizzare una barra multifunzione tramite XML. Utilizzare l'elemento barra multifunzione (XML) se si desidera personalizzare la barra multifunzione in un modo non supportato dall'elemento barra multifunzione (finestra di progettazione visiva). Per un confronto tra le operazioni che è possibile eseguire con ogni elemento, vedere [Cenni preliminari sulla barra multifunzione](../vsto/Ribbon-overview.md).
@@ -45,7 +47,7 @@ ms.locfileid: "90839483"
   Per impostazione predefinita, questi file aggiungono un gruppo personalizzato alla scheda **componenti** aggiuntivi della barra multifunzione.
 
 ## <a name="display-the-custom-ribbon-in-a-microsoft-office-application"></a>Visualizzare la barra multifunzione personalizzata in un'applicazione Microsoft Office
- Dopo aver aggiunto un elemento **barra multifunzione (XML)** al progetto, è necessario aggiungere il codice alla classe **ThisAddIn**, **ThisWorkbook**o **ThisDocument** che esegue l'override del `CreateRibbonExtensibilityObject` metodo e restituisce la classe XML della barra multifunzione all'applicazione di Office.
+ Dopo aver aggiunto un elemento **barra multifunzione (XML)** al progetto, è necessario aggiungere il codice alla classe **ThisAddIn**, **ThisWorkbook** o **ThisDocument** che esegue l'override del `CreateRibbonExtensibilityObject` metodo e restituisce la classe XML della barra multifunzione all'applicazione di Office.
 
  L'esempio di codice seguente esegue l'override del metodo `CreateRibbonExtensibilityObject` e restituisce una classe Ribbon XML denominata MyRibbon.
 
@@ -133,7 +135,7 @@ ms.locfileid: "90839483"
  Gli elementi e gli attributi predefiniti nel file XML della barra multifunzione sono un piccolo subset degli elementi e degli attributi disponibili. Per un elenco completo degli elementi e degli attributi disponibili, vedere l'articolo tecnico [personalizzare l'interfaccia utente della barra multifunzione di Office (2007) per gli sviluppatori (parte 2 di 3)](/previous-versions/office/developer/office-2007/aa338199(v=office.12)).
 
 ## <a name="ribbon-class-reference"></a><a name="RibbonExtensionClass"></a> Riferimento alla classe Ribbon
- Visual Studio genera la classe Ribbon nel file di codice della barra multifunzione. Aggiungere i metodi di callback per i controlli sulla barra multifunzione a questa classe. La classe implementa l'interfaccia <xref:Microsoft.Office.Core.IRibbonExtensibility>.
+ Visual Studio genera la classe Ribbon nel file di codice della barra multifunzione. Aggiungere i metodi di callback per i controlli sulla barra multifunzione a questa classe. Questa classe implementa l'interfaccia <xref:Microsoft.Office.Core.IRibbonExtensibility> .
 
  La tabella seguente descrive i metodi predefiniti della classe.
 

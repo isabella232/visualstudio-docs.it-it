@@ -1,5 +1,7 @@
 ---
 title: Pubblicazione guidata (sviluppo per Office in Visual Studio)
+description: Informazioni su come utilizzare la pubblicazione guidata per copiare i file di soluzione in un percorso specificato, creare i file manifesto e creare un programma di installazione in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,17 +20,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be5742533280ab2ff7da04ee287b0534980d9436
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 25821a0f245f2f0ed30fcbfb10137a772dd0dd01
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810980"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528020"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Pubblicazione guidata (sviluppo per Office in Visual Studio)
   Usare la **pubblicazione guidata** per copiare i file di soluzione in un percorso specificato, creare i file manifesto e creare un programma di installazione.
 
- Per accedere a questa procedura guidata, scegliere **pubblica** *soluzione*dal menu **Compila** . È inoltre possibile accedere alla **pubblicazione guidata** da **Esplora soluzioni**. Aprire il menu di scelta rapida per il nodo del progetto, quindi scegliere **pubblica**.
+ Per accedere a questa procedura guidata, scegliere **pubblica** *soluzione* dal menu **Compila** . È inoltre possibile accedere alla **pubblicazione guidata** da **Esplora soluzioni**. Aprire il menu di scelta rapida per il nodo del progetto, quindi scegliere **pubblica**.
 
  Ogni sezione seguente descrive una pagina della procedura guidata.
 
@@ -39,7 +41,7 @@ ms.locfileid: "90810980"
 
 - Percorso relativo o assoluto in formato Windows standard, ad esempio *c:\distribuzione\applicazione* o *\applicazione*.
 
-- Un percorso di Universal Naming Convention (UNC), ad esempio * \\ \ServerName\MyApplication \\ *.
+- Un percorso di Universal Naming Convention (UNC), ad esempio *\\ \ServerName\MyApplication \\*.
 
 - URL di un sito Web, ad esempio `http://www.contoso.com/MyApplication` .
 

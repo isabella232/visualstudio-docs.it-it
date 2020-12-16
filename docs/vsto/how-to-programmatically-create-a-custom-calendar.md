@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: creare un calendario personalizzato a livello di codice'
+description: Utilizzare questo esempio per creare una nuova cartella di calendario denominata PersonalCalendar a livello di codice, quindi creare un nuovo elemento appuntamento e aggiungerlo alla cartella Calendar.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aab9e14c7fa4b4c70b2e61eca382af2ce787148c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d0a76189e96a6551408abe49b6e08a26c91ffa8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546055"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527827"
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>Procedura: creare un calendario personalizzato a livello di codice
   In questo esempio viene creata una nuova cartella Calendar denominata **PersonalCalendar**, quindi viene creato un nuovo elemento appuntamento e viene aggiunto alla cartella Calendar. Il codice Visualizza quindi la cartella Calendar.

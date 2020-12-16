@@ -1,5 +1,7 @@
 ---
 title: Panoramica della barra multifunzione
+description: Informazioni su come la barra multifunzione è un modo per organizzare i comandi correlati in modo che risultino più facili da trovare e come i comandi vengono visualizzati come controlli sulla barra multifunzione.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 668517705caa7ba6baef0b85305bf4470bc3b26b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca7f7757cddf89b97f7a374385ea834728f0e975
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985606"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527979"
 ---
 # <a name="ribbon-overview"></a>Panoramica della barra multifunzione
   La barra multifunzione è un modo per organizzare i comandi correlati in modo che siano più facili da trovare. I comandi vengono visualizzati come controlli sulla barra multifunzione. I controlli sono organizzati in *gruppi* lungo una striscia orizzontale sul bordo superiore di una finestra dell'applicazione. I gruppi correlati sono organizzati in schede.
@@ -93,7 +95,7 @@ ms.locfileid: "72985606"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>Aggiungere più elementi della barra multifunzione a un progetto
  È possibile aggiungere più elementi della barra multifunzione a un singolo progetto. Questa operazione è utile per eseguire una delle due attività seguenti:
 
-- Creare nastri per i *controlli*di Outlook. Per altre informazioni, vedere [personalizzare una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Creare nastri per i *controlli* di Outlook. Per altre informazioni, vedere [personalizzare una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
     > Un controllo rappresenta una finestra che viene aperta quando gli utenti eseguono determinate attività, ad esempio la creazione di un messaggio di posta elettronica.

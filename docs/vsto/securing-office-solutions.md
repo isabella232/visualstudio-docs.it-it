@@ -1,5 +1,7 @@
 ---
 title: Soluzioni Office sicure
+description: Informazioni su come il modello di sicurezza per le soluzioni Office include diverse tecnologie, tra cui la Strumenti di Visual Studio per Office Runtime e ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31a17fdf51e838405c93efca79d7994cd40ece5c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bedb49a6d5d17e3c9f79a652183c2b4cd748ff6c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978596"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528478"
 ---
 # <a name="secure-office-solutions"></a>Soluzioni Office sicure
   Il modello di sicurezza per le soluzioni Office comprende diverse tecnologie: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] , Centro protezione in Microsoft Office e area siti con restrizioni di Internet Explorer. Le sezioni seguenti descrivono il funzionamento delle diverse funzionalità di sicurezza:
@@ -62,7 +64,7 @@ ms.locfileid: "62978596"
 ### <a name="document-level-solutions"></a>Soluzioni a livello di documento
  Il percorso completo di un documento deve essere aggiunto all'elenco di percorsi attendibili nell'applicazione Microsoft Office se si stanno sviluppando i tipi di progetti seguenti:
 
-- Soluzioni a livello di documento che si trovano in una condivisione di file di rete, ad esempio * \\ \nomeserver\nomecondivisione*.
+- Soluzioni a livello di documento che si trovano in una condivisione di file di rete, ad esempio *\\ \nomeserver\nomecondivisione*.
 
 - Soluzioni a livello di documento per Word che usano file *doc* o *docm* .
 

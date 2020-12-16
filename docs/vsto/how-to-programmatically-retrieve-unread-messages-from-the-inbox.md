@@ -1,5 +1,7 @@
 ---
 title: Ottenere i messaggi non letti dalla posta in arrivo a livello di codice
+description: Informazioni su come usare Visual Studio per recuperare a livello di codice i messaggi non letti dalla posta in arrivo in Microsoft Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc913379546c80eef70671ea0ecbd441001e6ab5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6dae629c008c04f7ee9fb66b9dbc5f8f31e53d4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537605"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528265"
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Procedura: recuperare messaggi non letti dalla posta in arrivo a livello di codice
   Questo esempio recupera i messaggi di posta elettronica non letti dalla **posta in arrivo** di Outlook e visualizza il numero di elementi.

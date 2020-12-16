@@ -1,5 +1,7 @@
 ---
 title: "Procedura: determinare l'elemento corrente di Outlook a livello di codice"
+description: Informazioni su come è possibile determinare a livello di codice l'elemento corrente di Microsoft Outlook. In questo esempio viene usato l'evento Explorer. SelectionChange.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 428dccf09235e2feea528bcdaef0a447e02ef58d
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 10b8bd8103e80040519b9e3c5546f892da326202
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585236"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526797"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Procedura: determinare l'elemento corrente di Outlook a livello di codice
   In questo esempio viene usato l' `Explorer.SelectionChange` evento per visualizzare il nome della cartella corrente e alcune informazioni sull'elemento selezionato. Il codice Visualizza quindi l'elemento selezionato.
@@ -37,7 +39,7 @@ ms.locfileid: "91585236"
 
 - Gli elementi di appuntamento, di contatto e di posta elettronica in Microsoft Office Outlook.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Panoramica del modello a oggetti di Outlook](../vsto/outlook-object-model-overview.md)
 - [Procedura: recuperare una cartella per nome a livello di codice](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
 - [Procedura: eseguire la ricerca di un contatto specifico a livello di codice](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

@@ -1,5 +1,7 @@
 ---
 title: Panoramica sullo sviluppo di soluzioni Office (VSTO)
+description: Informazioni su come sviluppare personalizzazioni per gli strumenti e le interfacce utente Microsoft Office familiari, ad esempio le funzionalità di elaborazione di Word in Word e le funzionalità di analisi dei dati di Excel.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c1e9ce9ff2ab0a55de0a7e51325885d86c2fbf1
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9bb964e90c44c4e0b41e0f09df8931665426dc70
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811019"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527716"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Panoramica sullo sviluppo di soluzioni Office (VSTO)
   Utilizzando Microsoft Office come front-end per soluzioni, è possibile sfruttare i classici strumenti e interfacce utente di Microsoft Office, quali le funzionalità di elaborazione di testo, di analisi dei dati di Excel e di gestione della posta elettronica di Outlook. È possibile sviluppare soluzioni in Visual Studio per personalizzare le applicazioni di Office e aggiungere le funzionalità specifiche necessarie per i processi aziendali. Ad esempio, è possibile trasformare Word in un generatore di contratti che assembla contratti da parti preesistenti che possono essere rese modificabili o meno. Excel consente di creare un foglio di lavoro automatizzato relativo al budget, personalizzato per progetti diversi. Gli utenti possono inoltre usare soluzioni Office offline che rendono le soluzioni complesse più pratiche di quanto sarebbero se si utilizzasse un'architettura basata su Web.
@@ -28,9 +30,9 @@ ms.locfileid: "90811019"
 ## <a name="choose-an-office-project-type"></a>Scegliere un tipo di progetto di Office
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornisce i seguenti tipi di modelli di progetto per lo sviluppo di Office basato su VSTO:
 
-- Le**personalizzazioni a livello di documento** sono associate a un documento specifico.
+- Le **personalizzazioni a livello di documento** sono associate a un documento specifico.
 
-- I**VSTO Add-ins** sono associati all'applicazione stessa.
+- I **VSTO Add-ins** sono associati all'applicazione stessa.
 
   Per decidere quale di questi tipi di progetto è ottimale per la soluzione, è necessario stabilire se si desidera che il codice venga eseguito solo quando un documento specifico è aperto o che invece sia disponibile ogni volta che l'applicazione è in esecuzione. Per ulteriori informazioni sui modelli di progetto, vedere [Panoramica dei modelli di progetto di Office](../vsto/office-project-templates-overview.md).
 

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: chiamare codice in un componente aggiuntivo VSTO da VBA'
+description: Informazioni su come esporre un oggetto in un componente aggiuntivo VSTO ad altre soluzioni Microsoft Office, inclusi Visual Basic, Applications Edition (VBA) e i componenti aggiuntivi VSTO COM.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6fdbd2cf85086bac0aa7bb56c128a7ad6fe36f94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cbf03ef234ea6cf4eab790d96082d23b7ed5199
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72650777"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527290"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Procedura dettagliata: chiamare codice in un componente aggiuntivo VSTO da VBA
   Questa procedura dettagliata descrive come esporre un oggetto in un componente aggiuntivo VSTO ad altre soluzioni Microsoft Office, tra cui Visual Basic, Applications Edition (VBA) e i componenti aggiuntivi VSTO COM.
@@ -155,5 +157,5 @@ ms.locfileid: "72650777"
 - [Chiamata di codice nei componenti aggiuntivi VSTO da altre soluzioni Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [Sviluppare soluzioni Office](../vsto/developing-office-solutions.md)
 - [Procedura: creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Personalizzare le funzionalità dell'interfaccia utente usando le interfacce di estendibilità](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)

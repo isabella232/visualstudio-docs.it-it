@@ -1,5 +1,7 @@
 ---
 title: Personalizzazione dell'interfaccia utente di Office
+description: Informazioni su come personalizzare l'interfaccia utente delle applicazioni Microsoft Office usando gli strumenti di sviluppo di Office in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 257f87aedf5d4337e81fb6f251cc8df07f4e577c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 289b055ab84dd9c2c440b55f3d64fe1fe39b8e1b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88041064"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527580"
 ---
 # <a name="office-ui-customization"></a>Personalizzazione dell'interfaccia utente di Office
   È possibile personalizzare l'interfaccia utente (UI) delle applicazioni Microsoft Office mediante gli strumenti di sviluppo di Office in Visual Studio. Questo argomento descrive le funzionalità dell'interfaccia utente che è possibile personalizzare nelle sezioni seguenti:
@@ -43,7 +45,7 @@ ms.locfileid: "88041064"
 ## <a name="comparison-of-ui-features"></a><a name="Comparison"></a> Confronto tra le funzionalità dell'interfaccia utente
  Nella tabella seguente vengono confrontate le principali funzionalità dell'interfaccia utente che è possibile personalizzare nei progetti di Microsoft Office.
 
-|Feature|Tipi di progetti non supportati|Applicazioni Microsoft Office supportate|
+|Funzionalità|Tipi di progetti non supportati|Applicazioni Microsoft Office supportate|
 |-------------|-----------------------------|---------------------------------------------|
 |Riquadro Azioni|Personalizzazioni a livello di documento|Excel<br /><br /> Word|
 |Riquadri attività personalizzati|Componenti aggiuntivi VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|

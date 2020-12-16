@@ -1,5 +1,7 @@
 ---
 title: Trovare un indirizzo di posta elettronica nei contatti a livello di codice
+description: Informazioni su come usare Visual Studio per trovare un indirizzo di posta elettronica a livello di codice nei contatti di Microsoft Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a4a9d52ae16b77b40461a314c6008f8cdd741bcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7fa6578612fb81d9d025e613697c4342bac11bee
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537644"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528219"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Procedura: eseguire la ricerca di un indirizzo di posta elettronica nei contatti a livello di codice
   Questo esempio cerca una cartella Contatti per i contatti con il nome dominio **example.com** nei relativi indirizzi di posta elettronica.

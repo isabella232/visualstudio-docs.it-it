@@ -1,5 +1,7 @@
 ---
 title: Panoramica del modello a oggetti di Outlook
+description: Informazioni su come è possibile interagire con gli oggetti forniti dal modello a oggetti di Outlook per sviluppare componenti aggiuntivi VSTO per Microsoft Outlook.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6545815a0a24a3ba8579298151194fdd81edee77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83ada85ba346e83e5bc5ebc01e91b11be0e844e1
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985689"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528058"
 ---
 # <a name="outlook-object-model-overview"></a>Panoramica del modello a oggetti di Outlook
   Per sviluppare componenti aggiuntivi VSTO per Microsoft Office Outlook, è possibile interagire con gli oggetti forniti dal modello a oggetti di Outlook. Il modello a oggetti di Outlook fornisce classi e interfacce che rappresentano elementi nell'interfaccia utente. Ad esempio, l'oggetto <xref:Microsoft.Office.Interop.Outlook.Application> rappresenta l'intera applicazione, l'oggetto <xref:Microsoft.Office.Interop.Outlook.Folder> rappresenta una cartelle che contiene messaggi di posta elettronica o altri elementi e l'oggetto <xref:Microsoft.Office.Interop.Outlook.MailItem> rappresenta un messaggio di posta elettronica.
@@ -90,14 +92,14 @@ ms.locfileid: "72985689"
 ### <a name="folder-object"></a>Oggetto Folder
  L'oggetto <xref:Microsoft.Office.Interop.Outlook.Folder> rappresenta una cartella che contiene messaggi di posta elettronica, contatti, attività e altri elementi. Outlook offre 16 oggetti <xref:Microsoft.Office.Interop.Outlook.Folder> predefiniti.
 
- Gli oggetti <xref:Microsoft.Office.Interop.Outlook.Folder> predefiniti vengono definiti dai valori di enumerazione <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> . Ad esempio:
+ Gli oggetti <xref:Microsoft.Office.Interop.Outlook.Folder> predefiniti vengono definiti dai valori di enumerazione <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> . Ad esempio,
 
  Microsoft. Office. Interop. Outlook. OlDefaultFolders. olFolderInbox corrisponde alla cartella della **posta in arrivo** in Outlook.
 
  Per un esempio in cui viene illustrato come accedere a un oggetto predefinito <xref:Microsoft.Office.Interop.Outlook.Folder> e creare un nuovo <xref:Microsoft.Office.Interop.Outlook.Folder> , vedere [procedura: creare elementi di cartelle personalizzate a livello di codice](../vsto/how-to-programmatically-create-custom-folder-items.md).
 
 ### <a name="mailitem-object"></a>Oggetto MailItem
- L'oggetto <xref:Microsoft.Office.Interop.Outlook.MailItem> rappresenta un messaggio di posta elettronica. Gli oggetti<xref:Microsoft.Office.Interop.Outlook.MailItem> si trovano in genere nelle cartelle, ad esempio **Posta in arrivo**, **Posta inviata**e **Posta in uscita**. <xref:Microsoft.Office.Interop.Outlook.MailItem> espone proprietà e metodi che possono essere usati per creare e inviare messaggi di posta elettronica.
+ L'oggetto <xref:Microsoft.Office.Interop.Outlook.MailItem> rappresenta un messaggio di posta elettronica. Gli oggetti<xref:Microsoft.Office.Interop.Outlook.MailItem> si trovano in genere nelle cartelle, ad esempio **Posta in arrivo**, **Posta inviata** e **Posta in uscita**. <xref:Microsoft.Office.Interop.Outlook.MailItem> espone proprietà e metodi che possono essere usati per creare e inviare messaggi di posta elettronica.
 
  Per un esempio in cui viene illustrato come creare un messaggio di posta elettronica, vedere [procedura: creare un elemento di posta elettronica a livello di codice](../vsto/how-to-programmatically-create-an-e-mail-item.md).
 

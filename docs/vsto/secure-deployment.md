@@ -1,5 +1,7 @@
 ---
 title: Distribuzione sicura
+description: Viene illustrato come è necessario fornire l'evidenza su cui basare una decisione di attendibilità firmando la soluzione con un certificato o utilizzando la chiave di richiesta di attendibilità ClickOnce.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c838eddea5b3118c28fb33411a8c58a19d7b4a2d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b47a18aa3e791d446abc2a57b6aad1f139924ebf
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810954"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528473"
 ---
 # <a name="secure-deployment"></a>Distribuzione sicura
   Quando si crea una soluzione Office, il computer di sviluppo viene aggiornato automaticamente per consentire l'esecuzione del codice nel progetto. Tuttavia, quando si distribuisce la soluzione, è necessario fornire l'evidenza su quale basare una decisione di attendibilità firmando la soluzione con un certificato o usando la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] chiave della richiesta di attendibilità. Per altre informazioni, vedere [concedere l'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md).
@@ -32,9 +34,9 @@ ms.locfileid: "90810954"
 ## <a name="prevent-office-solutions-from-running-code"></a>Impedisci alle soluzioni Office di eseguire codice
  Gli amministratori possono usare il registro di sistema per impedire l'esecuzione di tutte le soluzioni Office in un computer. Quando viene aperta una soluzione Office con estensioni di codice gestito, il Strumenti di Visual Studio per Office Runtime controlla se esiste una voce con il nome `Disabled` in una delle seguenti chiavi del registro di sistema nel computer:
 
-- **HKEY_CURRENT_USER \Software\Microsoft\VSTO**
+- **HKEY_CURRENT_USER\Software\Microsoft\VSTO**
 
-- **HKEY_LOCAL_MACHINE \Software\Microsoft\VSTO**
+- **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**
 
   Per impedire l'esecuzione di codice per le soluzioni Office, creare una `Disabled` voce in una o entrambe le chiavi del registro di sistema e specificare uno dei tipi di dati e i valori seguenti per `Disabled` :
 

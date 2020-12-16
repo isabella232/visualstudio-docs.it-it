@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: creare il primo componente aggiuntivo VSTO per Excel'
+description: Creazione di un componente aggiuntivo a livello di applicazione per Microsoft Excel. Le funzionalità create sono disponibili per l'applicazione stessa, indipendentemente da quali cartelle di lavoro siano aperte.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b683b1f75f2967807f171c204fbf02a2e5db69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f04532e627a694e8a234f1842995b92a707e537
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69548010"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527910"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Procedura dettagliata: creare il primo componente aggiuntivo VSTO per Excel
   Questa procedura dettagliata introduttiva descrive come creare un componente aggiuntivo a livello di applicazione per Microsoft Office Excel. Le funzionalità create dall'utente in questo tipo di soluzione sono disponibili per l'applicazione stessa, indipendentemente da quali cartelle di lavoro siano aperte.
@@ -54,7 +56,7 @@ ms.locfileid: "69548010"
 
 1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Scegliere **Nuovo** dal menu **File**e quindi fare clic su **Progetto**.
+2. Scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.
 
 3. Nel riquadro dei modelli, espandere **Visual C#** o **Visual Basic**, quindi espandere **Office/SharePoint**.
 

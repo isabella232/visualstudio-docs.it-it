@@ -1,5 +1,7 @@
 ---
 title: Panoramica sui modelli di progetto di Office
+description: Informazioni su come gli strumenti di sviluppo Microsoft Office in Visual Studio includono modelli di progetto per la creazione di diversi tipi di soluzioni Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -30,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d83b04795386cfec80a8a309a9a84da04f6df105
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e3203eb4bbd7339f5e59ecffea8436b02180b8b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926593"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528080"
 ---
 # <a name="office-project-templates-overview"></a>Panoramica sui modelli di progetto di Office
   Gli strumenti di sviluppo di applicazioni per Microsoft Office in Visual Studio includono modelli di progetto per la creazione dei seguenti tipi di soluzioni Office:
@@ -83,7 +85,7 @@ ms.locfileid: "68926593"
 
 - [Programma personalizzazioni a livello di documento](../vsto/programming-document-level-customizations.md)
 
-- [soluzioni Word](../vsto/word-solutions.md)
+- [Soluzioni Word](../vsto/word-solutions.md)
 
 - [Soluzioni Excel](../vsto/excel-solutions.md)
 
@@ -164,7 +166,7 @@ ms.locfileid: "68926593"
  Se un modello di Microsoft Office Word usa estensioni di codice gestito, l'assembly del progetto non viene chiamato se il modello è associato come modello globale o se viene caricato dalla directory di avvio di Word. Inoltre il documento non riconosce il formato di un modello che fa parte di una soluzione Office.
 
 ## <a name="excel-add-ins-xla-files"></a>Componenti aggiuntivi di Excel (file xla)
- Non è disponibile alcun progetto di Office per la creazione di un componente aggiuntivo VSTO di Excel (file*xla* ). È possibile salvare una cartella di lavoro come file xla, anche se questa operazione non è supportata né consigliata. Se si salva una cartella di lavoro che dispone di estensioni di codice gestito come file di **componente aggiuntivo Microsoft Office Excel ( \* xla)** , è possibile selezionarlo nella finestra di dialogo **componenti** aggiuntivi per applicarla a un'altra cartella di lavoro. In alcuni casi, il codice verrà eseguito nella cartella di lavoro di destinazione dopo l'applicazione del componente aggiuntivo VSTO, ma tale uso della soluzione Office non è supportato.
+ Non è disponibile alcun progetto di Office per la creazione di un componente aggiuntivo VSTO di Excel (file *xla* ). È possibile salvare una cartella di lavoro come file xla, anche se questa operazione non è supportata né consigliata. Se si salva una cartella di lavoro che dispone di estensioni di codice gestito come file di **Microsoft Office Excel Add-In ( \* xla)** , è possibile selezionarlo nella finestra di dialogo **componenti** aggiuntivi per applicarla a un'altra cartella di lavoro. In alcuni casi, il codice verrà eseguito nella cartella di lavoro di destinazione dopo l'applicazione del componente aggiuntivo VSTO, ma tale uso della soluzione Office non è supportato.
 
 ## <a name="see-also"></a>Vedere anche
 - [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: visualizzare la scheda Developer sulla barra multifunzione'
+description: Informazioni su come usare Visual Studio per visualizzare a livello di codice la scheda Developer sulla barra multifunzione in un documento di Microsoft Word.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41070c92d0c27c1ee8fbf480f7461c22421b8fdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dc38b941d27cab0653b923ddd03ba8b78eeab58
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545847"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528143"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Procedura: visualizzare la scheda Developer sulla barra multifunzione
   Per accedere alla scheda **Developer** sulla barra multifunzione di un'applicazione di Office, è necessario configurarla in modo da visualizzare la scheda perché non è visualizzata per impostazione predefinita. Ad esempio, è necessario visualizzare tale scheda per aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> a una personalizzazione a livello di documento per Word.
@@ -52,7 +54,7 @@ ms.locfileid: "85545847"
 
      ![Pulsante Opzioni di Outlook 2013 Preview](../vsto/media/vsto-office2013-optionsbutton.png "Pulsante Opzioni di Outlook 2013 Preview")
 
-3. Nella finestra di dialogo**Opzioni** di _ApplicationName_scegliere il pulsante **Personalizza barra multifunzione** .
+3. Nella finestra di dialogo **Opzioni** di _ApplicationName_ scegliere il pulsante **Personalizza barra multifunzione** .
 
      Nella figura seguente sono illustrate la finestra di dialogo **Opzioni** e il pulsante **Personalizza barra multifunzione** in Excel 2010. La posizione di questo pulsante è simile in tutte le altre applicazioni elencate nella sezione "Applica a" quasi all'inizio di questo argomento.
 

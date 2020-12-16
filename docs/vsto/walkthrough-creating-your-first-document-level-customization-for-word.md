@@ -1,5 +1,6 @@
 ---
 title: Creare la prima personalizzazione a livello di documento per Word
+description: Creare una personalizzazione a livello di documento per Microsoft Word. Le funzionalità create in questo tipo di soluzione sono disponibili solo quando si apre un documento specifico.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1f5d1d6d373a5bbcd3f10d600175a88e88823ad
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c1f827346c30720cefd781dade3039416504b9c0
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584989"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527082"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Procedura dettagliata: creare la prima personalizzazione a livello di documento per Word
 
@@ -56,7 +57,7 @@ ms.locfileid: "91584989"
 
 1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Scegliere **Nuovo** dal menu **File**e quindi fare clic su **Progetto**.
+2. Scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.
 ::: moniker range="vs-2017"
 3. Nel riquadro dei modelli, espandere **Visual C#** o **Visual Basic**, quindi espandere **Office/SharePoint**.
 
@@ -68,7 +69,7 @@ ms.locfileid: "91584989"
 
 7. Fare clic su **OK**.
 
-8. Selezionare **Crea un nuovo documento** dalla **procedura guidata strumenti di Visual Studio per il progetto di Office**e fare clic su **OK**.
+8. Selezionare **Crea un nuovo documento** dalla **procedura guidata strumenti di Visual Studio per il progetto di Office** e fare clic su **OK**.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 3. Nella finestra di dialogo **Crea un nuovo progetto** selezionare il progetto di **documento VSTO di Word** .
@@ -79,7 +80,7 @@ ms.locfileid: "91584989"
 
 5. Digitare **FirstWorkbookCustomization** nella casella **nome** della finestra di dialogo **Configura nuovo progetto** e fare clic su **Crea**.
 
-6. Selezionare **Crea un nuovo documento** dalla **procedura guidata strumenti di Visual Studio per il progetto di Office**e fare clic su **OK**.
+6. Selezionare **Crea un nuovo documento** dalla **procedura guidata strumenti di Visual Studio per il progetto di Office** e fare clic su **OK**.
 ::: moniker-end
    - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Crea il progetto **FirstDocumentCustomization** e aggiunge il documento **FirstDocumentCustomization** e il file di codice ThisDocument al progetto. Il documento **FirstDocumentCustomization** viene aperto automaticamente nella finestra di progettazione.
 
@@ -91,11 +92,11 @@ ms.locfileid: "91584989"
 
 1. Chiudere il documento facendo clic sul pulsante **Chiudi** (X) per la finestra di progettazione.
 
-2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul file di codice **ThisDocument** , quindi scegliere **Visualizza finestra di progettazione**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul file di codice **ThisDocument** , quindi scegliere **Visualizza finestra di progettazione**.
 
      \- - oppure -
 
-     In **Esplora soluzioni**fare doppio clic sul file di codice **ThisDocument** .
+     In **Esplora soluzioni** fare doppio clic sul file di codice **ThisDocument** .
 
 ## <a name="add-text-to-the-document-in-the-designer"></a>Aggiungere testo al documento nella finestra di progettazione
 
@@ -117,7 +118,7 @@ ms.locfileid: "91584989"
 
 ### <a name="to-add-a-second-paragraph-of-text-to-the-document-by-using-code"></a>Per aggiungere nel documento un secondo paragrafo di testo usando il codice
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **ThisDocument**, quindi scegliere **Visualizza codice**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **ThisDocument**, quindi scegliere **Visualizza codice**.
 
      Il file di codice verrà aperto in Visual Studio.
 
@@ -171,7 +172,7 @@ ms.locfileid: "91584989"
 
 - Distribuzione di personalizzazioni a livello di documento per Word: [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Panoramica sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluzioni Word](../vsto/word-solutions.md)
