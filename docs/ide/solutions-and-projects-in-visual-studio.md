@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6504d3e7fe278e8713a897ffacefa1f22cec6a09
-ms.sourcegitcommit: f43e669f3597a4b07975b2bd2dce362a41a2e83f
+ms.openlocfilehash: ebe6e5c7479ce4e3cda435c51a883c4d5db8cc45
+ms.sourcegitcommit: 6f37100d4b8c15a21d3858335ded3c26ab275b93
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/16/2020
-ms.locfileid: "97578253"
+ms.locfileid: "97599499"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 
@@ -57,7 +57,7 @@ Un progetto è contenuto all'interno di una *soluzione*. Nonostante il nome, una
 
 Per archiviare le impostazioni delle soluzioni, Visual Studio usa due tipi di file, uno con estensione *sln* e uno con estensione *suo*.
 
-|Estensione|Nome|Descrizione|
+|Estensione|Name|Descrizione|
 |---------------|----------|-----------------|
 |sln|Soluzione Visual Studio|Organizza progetti, elementi del progetto ed elementi della soluzione nella soluzione.|
 |suo|Solution User Options|Archivia le impostazioni a livello di utente e le personalizzazioni, ad esempio i punti di interruzione.|
@@ -68,11 +68,11 @@ Una "cartella della soluzione" è una cartella virtuale che è solo in **Esplora
 
 ## <a name="create-new-projects"></a>Crea nuovi progetti
 
-Il modo più semplice per creare un nuovo progetto è iniziare da un modello di progetto per un tipo particolare di applicazione o sito Web. Un modello di progetto è costituito da un set di base di file di codice, file di configurazione, risorse e impostazioni già generati. Questi modelli sono disponibili nella finestra di dialogo in cui è possibile creare un nuovo progetto (**file**  >  **nuovo**  >  **progetto**). Per altre informazioni, vedere [Creare un nuovo progetto in Visual Studio](create-new-project.md) e [Creare soluzioni e progetti](../ide/creating-solutions-and-projects.md).
+Il modo più semplice per creare un nuovo progetto è iniziare da un modello di progetto per un tipo particolare di applicazione o sito Web. Un modello di progetto è costituito da un set di base di file di codice, file di configurazione, risorse e impostazioni già generati. Questi modelli sono disponibili nella finestra di dialogo in cui è possibile creare un nuovo progetto (**file**  >  **nuovo**  >  **progetto**). Per ulteriori informazioni, vedere la pagina relativa alla [creazione di un nuovo progetto](create-new-project.md) e [all'utilizzo di soluzioni e progetti](../ide/creating-solutions-and-projects.md).
 
 Se si personalizzano spesso i progetti in un certo modo, è possibile creare un modello di progetto personalizzato che è possibile utilizzare per creare nuovi progetti da. Per altre informazioni, vedere [Creare modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md).
 
-Quando si crea un nuovo progetto, per impostazione predefinita viene salvato in *%USERPROFILE%\source\repos*. È possibile modificare questo percorso tramite l'impostazione **Percorso progetti** in **Strumenti** > **Opzioni** > **Progetti e soluzioni** > **Percorsi**. Per altre informazioni, vedere [Pagina Progetti e soluzioni, finestra di dialogo Opzioni](./reference/projects-and-solutions-options-dialog-box.md).
+Quando si crea un nuovo progetto, per impostazione predefinita viene salvato in *%USERPROFILE%\source\repos*. È possibile modificare questo percorso tramite l'impostazione **Percorso progetti** in **Strumenti** > **Opzioni** > **Progetti e soluzioni** > **Percorsi**. Per ulteriori informazioni su questa e altre impostazioni di progetti e soluzioni, vedere la [pagina progetti e soluzioni, finestra di dialogo Opzioni](./reference/projects-and-solutions-options-dialog-box.md).
 
 ## <a name="solution-explorer"></a>Esplora soluzioni
 

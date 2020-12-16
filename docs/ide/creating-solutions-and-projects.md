@@ -1,5 +1,5 @@
 ---
-title: Creare soluzioni e progetti
+title: Usare soluzioni e progetti
 description: Informazioni sulla differenza tra soluzioni e progetti e su come usarli in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 02/06/2018
@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd893c06da9bc2c2c8d95fc4c085affa815edd2
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 9bbfa16273dc323d2ad175e965a19a22ad0d17ce
+ms.sourcegitcommit: 6f37100d4b8c15a21d3858335ded3c26ab275b93
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006445"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97599479"
 ---
-# <a name="create-solutions-and-projects"></a>Creare soluzioni e progetti
+# <a name="work-with-solutions-and-projects"></a>Usare soluzioni e progetti
 
 I *progetti* contengono gli elementi necessari per compilare l'app in Visual Studio, ad esempio file di codice sorgente, bitmap, icone e riferimenti a componenti e servizi. Quando si crea un nuovo progetto, Visual Studio crea una *soluzione* per ospitarlo. Se necessario è quindi possibile aggiungere altri progetti nuovi o esistenti alla soluzione. Le soluzioni possono anche contenere file non connessi ad alcun progetto specifico.
 
@@ -143,7 +143,7 @@ Per creare un progetto temporaneo, passare prima a **strumenti**  >  **Opzioni**
 
 1. Scegliere la cartella contenente la soluzione e quindi premere **Canc**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Soluzioni e progetti](../ide/solutions-and-projects-in-visual-studio.md)
 - [Repository open source Microsoft su GitHub](https://github.com/Microsoft)
