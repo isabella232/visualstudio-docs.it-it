@@ -1,8 +1,8 @@
 ---
 title: Soluzioni e progetti
-description: Informazioni sui progetti e le soluzioni di Visual Studio e informazioni su come creare un nuovo progetto con lo strumento Esplora soluzioni.
+description: Informazioni sui progetti e le soluzioni di Visual Studio, su come creare nuovi progetti da un modello e su come visualizzare & gestire i progetti in Esplora soluzioni.
 ms.custom: SEO-VS-2020
-ms.date: 12/11/2020
+ms.date: 12/15/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a24f56d94d470ca5ff04a99f524af3c76df3a15
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6504d3e7fe278e8713a897ffacefa1f22cec6a09
+ms.sourcegitcommit: f43e669f3597a4b07975b2bd2dce362a41a2e83f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524056"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97578253"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 
@@ -53,6 +53,8 @@ I file di progetto sono basati sulla [XML schema MSBuild](../msbuild/msbuild-pro
 
 Un progetto è contenuto all'interno di una *soluzione*. Nonostante il nome, una soluzione non è una "risposta". È semplicemente un contenitore che include uno o più progetti correlati, insieme a informazioni di compilazione, impostazioni della finestra di Visual Studio e a vari file non associati a un progetto particolare. Una soluzione è descritta da un file di testo (con estensione *sln*) con un formato univoco specifico, per il quale non è prevista la modifica manuale.
 
+### <a name="solution-file"></a>File di soluzione
+
 Per archiviare le impostazioni delle soluzioni, Visual Studio usa due tipi di file, uno con estensione *sln* e uno con estensione *suo*.
 
 |Estensione|Nome|Descrizione|
@@ -62,7 +64,7 @@ Per archiviare le impostazioni delle soluzioni, Visual Studio usa due tipi di fi
 
 ### <a name="solution-folder"></a>Cartella soluzione
 
-In questo contesto, una "cartella della soluzione" è una cartella virtuale che è solo in **Esplora soluzioni**, in cui è possibile usarla per raggruppare i progetti in una soluzione. Se si desidera individuare un file di soluzione in un computer, passare a **strumenti**  >  **Opzioni**  >  **progetti e soluzioni**  >  **percorsi**. Per altre informazioni, vedere finestra di [dialogo Opzioni: progetti e soluzioni > percorsi](./reference/projects-solutions-locations-options.md).
+Una "cartella della soluzione" è una cartella virtuale che è solo in **Esplora soluzioni**, in cui è possibile usarla per raggruppare i progetti in una soluzione. Se si desidera individuare un file di soluzione in un computer, passare a **strumenti**  >  **Opzioni**  >  **progetti e soluzioni**  >  **percorsi**. Per altre informazioni, vedere finestra di [dialogo Opzioni: progetti e soluzioni > percorsi](./reference/projects-solutions-locations-options.md).
 
 ## <a name="create-new-projects"></a>Crea nuovi progetti
 
