@@ -202,6 +202,8 @@
       href: visual-studio-experience-improvement-program.md
     - name: Segnalare un problema
       href: report-a-problem.md
+    - name: 'Risoluzione dei problemi: Come rilasciare una nuova versione dell''estensione esistente?'
+      href: migrate-extensions.md
     - name: 'Risoluzione dei problemi: Visual Studio per Mac supporta il controllo della versione di Team Foundation?'
       href: tf-version-control.md
     - name: 'Risoluzione dei problemi: Non è possibile visualizzare tutti i modelli'
