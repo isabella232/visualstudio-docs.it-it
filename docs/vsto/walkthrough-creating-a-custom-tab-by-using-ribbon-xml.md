@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: creare una scheda personalizzata usando il codice XML della barra multifunzione'
+description: Informazioni su come aggiungere pulsanti alla scheda Add-Ins e automatizzare Microsoft Word usando la barra multifunzione (XML).
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e05bd9173b83ec3303a058dcf61ea48a7ef7675c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e81d20dc179df76b759223c1460ca13bfceb5706
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839380"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524884"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Procedura dettagliata: creare una scheda personalizzata usando il codice XML della barra multifunzione
   Questa procedura dettagliata illustra come creare una scheda personalizzata della barra multifunzione usando l'elemento **barra multifunzione (XML)** .
@@ -65,27 +67,27 @@ ms.locfileid: "90839380"
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **barra multifunzione (XML)**.
 
-3. Modificare il nome della nuova barra multifunzione in **MyRibbon**e quindi scegliere **Aggiungi**.
+3. Modificare il nome della nuova barra multifunzione in **MyRibbon** e quindi scegliere **Aggiungi**.
 
      Il file **MyRibbon.cs** o **Ribbon. vb** viene aperto nella finestra di progettazione. Al progetto viene aggiunto anche un file XML denominato **MyRibbon.xml** .
 
-4. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **ThisAddIn.cs** o **ThisAddIn. vb**, quindi scegliere **Visualizza codice**.
+4. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **ThisAddIn.cs** o **ThisAddIn. vb**, quindi scegliere **Visualizza codice**.
 
 5. Aggiungere il codice seguente alla classe **ThisAddIn** . Questo codice esegue l'override del metodo `CreateRibbonExtensibilityObject` e restituisce la classe XML della barra multifunzione all'applicazione Office.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
 
-6. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **MyRibbonAddIn** , quindi scegliere **Compila**. Verificare che il progetto venga compilato senza errori.
+6. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **MyRibbonAddIn** , quindi scegliere **Compila**. Verificare che il progetto venga compilato senza errori.
 
 ## <a name="add-buttons-to-the-add-ins-tab"></a>Aggiungere pulsanti alla scheda componenti aggiuntivi
  L'obiettivo di questo componente aggiuntivo VSTO consiste nell'offrire all'utente un modo per aggiungere testo standard e una tabella specifica al documento attivo. Per fornire l'interfaccia utente, aggiungere due pulsanti alla scheda **componenti** aggiuntivi modificando il file XML della barra multifunzione. Più avanti nella procedura dettagliata verranno definiti i metodi di callback per i pulsanti. Per ulteriori informazioni sul file XML della barra multifunzione, vedere [Ribbon XML](../vsto/ribbon-xml.md).
 
 ### <a name="to-add-buttons-to-the-add-ins-tab"></a>Per aggiungere pulsanti alla scheda componenti aggiuntivi
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **MyRibbon.xml** , quindi scegliere **Apri**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **MyRibbon.xml** , quindi scegliere **Apri**.
 
-2. Sostituire il contenuto dell'elemento **Tab** con il codice XML seguente. Questo XML modifica l'etichetta del gruppo di controlli predefinito in **contenuto**e aggiunge due nuovi pulsanti con le etichette **Inserisci testo** e **Inserisci tabella**.
+2. Sostituire il contenuto dell'elemento **Tab** con il codice XML seguente. Questo XML modifica l'etichetta del gruppo di controlli predefinito in **contenuto** e aggiunge due nuovi pulsanti con le etichette **Inserisci testo** e **Inserisci tabella**.
 
     ```xml
     <tab idMso="TabAddIns">
@@ -105,19 +107,19 @@ ms.locfileid: "90839380"
 
 ### <a name="to-add-callback-methods-for-the-buttons"></a>Per aggiungere i metodi di callback per i pulsanti
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **MyRibbon.cs** o **Ribbon. vb**, quindi scegliere **Apri**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **MyRibbon.cs** o **Ribbon. vb**, quindi scegliere **Apri**.
 
 2. Aggiungere il codice seguente all'inizio del file **MyRibbon.cs** o **Ribbon. vb** . Tramite questo codice viene creato un alias per lo spazio dei nomi <xref:Microsoft.Office.Interop.Word>.
 
      [!code-csharp[Trin_RibbonButtons#1](../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs#1)]
      [!code-vb[Trin_RibbonButtons#1](../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb#1)]
 
-3. Aggiungere il metodo seguente alla classe `MyRibbon`. Si tratta di un metodo di callback per il pulsante **Inserisci testo** che aggiunge una stringa al documento attivo nella posizione corrente del cursore.
+3. Aggiungi alla classe `MyRibbon` il metodo seguente. Si tratta di un metodo di callback per il pulsante **Inserisci testo** che aggiunge una stringa al documento attivo nella posizione corrente del cursore.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#2)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#2)]
 
-4. Aggiungere il metodo seguente alla classe `MyRibbon`. Si tratta di un metodo di callback per il pulsante **Inserisci tabella** che aggiunge una tabella al documento attivo nella posizione corrente del cursore.
+4. Aggiungi alla classe `MyRibbon` il metodo seguente. Si tratta di un metodo di callback per il pulsante **Inserisci tabella** che aggiunge una tabella al documento attivo nella posizione corrente del cursore.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#3)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#3)]

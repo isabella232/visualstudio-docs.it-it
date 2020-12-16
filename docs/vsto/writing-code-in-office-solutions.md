@@ -1,5 +1,7 @@
 ---
 title: Scrivere codice nelle soluzioni Office
+description: Informazioni su come scrivere codice nelle soluzioni Microsoft Office e informazioni sul modo in cui i modelli a oggetti di Office vengono esposti al codice gestito.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -33,12 +35,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cead0569ae067fcc503f7f2074807c609e6eed75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40ea589cb4406a383876b1f16721f18fc48ebadd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255038"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526030"
 ---
 # <a name="write-code-in-office-solutions"></a>Scrivere codice nelle soluzioni Office
   Alcuni aspetti della scrittura del codice nei progetti di Office presentano delle differenze rispetto ad altri tipi di progetti in Visual Studio. Molte di queste differenze riguardano la modalità di esposizione dei modelli a oggetti di Office al codice gestito. Le altre differenze sono correlate alla creazione di progetti di Office.
@@ -61,7 +63,7 @@ ms.locfileid: "71255038"
 ### <a name="use-types-in-primary-interop-assemblies"></a>Usare i tipi negli assembly di interoperabilità primari
  Gli assembly di interoperabilità primari di Office contengono una combinazione di tipi che espongono il modello a oggetti delle applicazioni di Office e i tipi aggiuntivi dell'infrastruttura che non possono essere usati direttamente nel codice. Per una panoramica dei tipi negli assembly di interoperabilità primari di Office, vedere [Panoramica di classi e interfacce negli assembly di interoperabilità primari di Office](/previous-versions/office/office-12/ms247299\(v\=office.12\)).
 
- Poiché i tipi negli assembly di interoperabilità primari di Office corrispondono ai tipi nei modelli a oggetti COM, la modalità di utilizzo di questi tipi spesso è differente dagli altri tipi gestiti. Ad esempio, la modalità di chiamata dei metodi che hanno parametri facoltativi in un assembly di interoperabilità primario di Office varia in base al linguaggio di programmazione che si sta usando nel progetto. Per altre informazioni, vedere gli argomenti seguenti:
+ Poiché i tipi negli assembly di interoperabilità primari di Office corrispondono ai tipi nei modelli a oggetti COM, la modalità di utilizzo di questi tipi spesso è differente dagli altri tipi gestiti. Ad esempio, la modalità di chiamata dei metodi che hanno parametri facoltativi in un assembly di interoperabilità primario di Office varia in base al linguaggio di programmazione che si sta usando nel progetto. Per altre informazioni, vedere i seguenti argomenti:
 
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md).
 
@@ -105,7 +107,7 @@ ms.locfileid: "71255038"
 
 Nella tabella seguente sono illustrate le differenze principali tra Visual Basic e Visual C# nello sviluppo di applicazioni per Office.
 
-|Feature|Descrizione|Supporto in Visual Basic|Supporto in Visual C#|
+|Funzionalità|Descrizione|Supporto in Visual Basic|Supporto in Visual C#|
 |-------------|-----------------|--------------------------|------------------------|
 |Parametri facoltativi|Molti metodi di Microsoft Office hanno parametri che non sono richiesti quando si chiama il metodo. Se per il parametro non viene passato alcun valore, verrà usato un valore predefinito.|Visual Basic supporta i parametri facoltativi.|Visual C# supporta i parametri facoltativi nella maggior parte dei casi. Per altre informazioni, vedere [parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md).|
 |Passaggio di parametri per riferimento|I parametri facoltativi nella maggior parte degli assembly di interoperabilità primari di Microsoft Office possono essere passati per valore. Tuttavia, in alcuni assembly di interoperabilità primari i parametri facoltativi che accettano i tipi riferimento devono essere passati per riferimento.<br /><br /> Per altre informazioni sui parametri di tipo value e Reference, vedere [passare gli argomenti per valore e per riferimento &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (per Visual Basic) e [passare i parametri &#40;C&#35; guida alla programmazione&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Non è richiesta alcuna attività aggiuntiva per il passaggio di parametri in base al riferimento. Il compilatore di Visual Basic passa automaticamente i parametri per riferimento quando necessario.|Nella maggior parte dei casi, il compilatore di Visual C# passa automaticamente i parametri per riferimento quando necessario. Per altre informazioni, vedere [parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md).|
@@ -115,7 +117,7 @@ Nella tabella seguente sono illustrate le differenze principali tra Visual Basic
 ## <a name="key-differences-between-office-development-and-managed-code"></a>Differenze principali tra lo sviluppo di Office e il codice gestito
  Nella tabella seguente sono illustrate le differenze principali tra lo sviluppo di applicazioni per Office e il codice gestito scritto in Visual Basic e Visual C#.
 
-|Feature|Descrizione|Supporto in Visual Basic e Visual C#|
+|Funzionalità|Descrizione|Supporto in Visual Basic e Visual C#|
 |-------------|-----------------|-----------------------------------------|
 |Indici di matrice|Il limite di matrice inferiore delle raccolte nelle applicazioni di Microsoft Office inizia con 1. Visual Basic e Visual C# usano matrici in base 0. Per ulteriori informazioni, vedere [matrici &#40;C&#35; Guida di programmazione&#41;](/dotnet/csharp/programming-guide/arrays/index) e [matrici in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Per accedere al primo elemento di una raccolta del modello a oggetti di un'applicazione di Microsoft Office, usare l'indice 1 anziché 0.|
 

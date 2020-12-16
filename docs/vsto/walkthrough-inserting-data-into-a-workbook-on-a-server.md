@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: inserimento di dati in una cartella di lavoro in un server'
+description: Informazioni su come inserire dati in un set di dati memorizzato nella cache di una cartella di lavoro di Microsoft Excel senza avviare Excel usando la classe ServerDocument.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d9dcd22ca124ee5ea4002277f91071727a3e9e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23acfc79514d034faa6fce5c2c27a8edcaa4c58d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985423"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526214"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Procedura dettagliata: inserimento di dati in una cartella di lavoro in un server
   Questa procedura dettagliata illustra come inserire dati in un set di dati memorizzato nella cache di una Microsoft Office cartella di lavoro di Excel senza avviare Excel usando la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -65,9 +67,9 @@ ms.locfileid: "72985423"
 
 1. Avviare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2. Scegliere **Nuovo** dal menu **File**e quindi fare clic su **Progetto**.
+2. Scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.
 
-3. Nel riquadro modelli espandere **Visual C#** o **Visual Basic**e quindi fare clic su **Windows**.
+3. Nel riquadro modelli espandere **Visual C#** o **Visual Basic** e quindi fare clic su **Windows**.
 
 4. Nell'elenco dei modelli di progetto selezionare **libreria di classi**.
 
@@ -81,7 +83,7 @@ ms.locfileid: "72985423"
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aggiunge il progetto **AdventureWorksDataSet** a **Esplora soluzioni** e apre il file di codice **Class1.cs** o **Class1. vb** .
 
-9. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **Class1.cs** o **Class1. vb**, quindi fare clic su **Elimina**. Questo file non è necessario per questa procedura dettagliata.
+9. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Class1.cs** o **Class1. vb**, quindi fare clic su **Elimina**. Questo file non è necessario per questa procedura dettagliata.
 
 ## <a name="define-a-dataset-in-the-class-library-project"></a>Definire un set di dati nel progetto di libreria di classi
  Definire un DataSet tipizzato che contiene i dati del database AdventureWorksLT per SQL Server 2005. Più avanti in questa procedura dettagliata verrà fatto riferimento a questo set di dati da un progetto di cartella di lavoro di Excel e da un progetto di applicazione console.
@@ -90,17 +92,17 @@ ms.locfileid: "72985423"
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>Per definire un set di dati tipizzato nel progetto di libreria di classi
 
-1. In **Esplora soluzioni**fare clic sul progetto **AdventureWorksDataSet** .
+1. In **Esplora soluzioni** fare clic sul progetto **AdventureWorksDataSet** .
 
-2. Se la finestra **origini dati** non è visibile, visualizzarla dalla barra dei menu scegliendo **Visualizza**  >  **altre**  >  **origini dati**di Windows.
+2. Se la finestra **origini dati** non è visibile, visualizzarla dalla barra dei menu scegliendo **Visualizza**  >  **altre**  >  **origini dati** di Windows.
 
 3. Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
-4. Selezionare **Database**e quindi scegliere **Avanti**.
+4. Selezionare **Database** e quindi scegliere **Avanti**.
 
 5. Se si dispone di una connessione esistente al database AdventureWorksLT, scegliere questa connessione e fare clic su **Avanti**.
 
-    In caso contrario, scegliere **Nuova connessione**e usare la finestra di dialogo **Aggiungi connessione** per creare la nuova connessione. Per altre informazioni, vedere [procedura: connettersi ai dati in un database](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
+    In caso contrario, scegliere **Nuova connessione** e usare la finestra di dialogo **Aggiungi connessione** per creare la nuova connessione. Per altre informazioni, vedere [procedura: connettersi ai dati in un database](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
 
 6. Nella pagina **Salva stringa di connessione nel file di configurazione dell'applicazione** scegliere **Avanti**.
 
@@ -116,7 +118,7 @@ ms.locfileid: "72985423"
 
      Si useranno entrambi gli oggetti più avanti in questa procedura dettagliata.
 
-9. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **AdventureWorksDataSet** e scegliere **Compila**.
+9. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **AdventureWorksDataSet** e scegliere **Compila**.
 
      Verificare che il progetto venga compilato senza errori.
 
@@ -125,7 +127,7 @@ ms.locfileid: "72985423"
 
 ### <a name="to-create-the-excel-workbook-project"></a>Per creare il progetto cartella di lavoro di Excel
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione **AdventureWorksDataSet** , scegliere **Aggiungi**, quindi fare clic su **nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione **AdventureWorksDataSet** , scegliere **Aggiungi**, quindi fare clic su **nuovo progetto**.
 
 2. Nel riquadro dei modelli, espandere **Visual C#** o **Visual Basic**, quindi espandere **Office/SharePoint**.
 
@@ -148,7 +150,7 @@ ms.locfileid: "72985423"
 
 ### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>Per aggiungere il set di dati alle origini dati nel progetto cartella di lavoro di Excel
 
-1. In **Esplora soluzioni**fare doppio clic su **Sheet1.cs** o **Sheet1. vb** nel progetto **AdventureWorksReport** .
+1. In **Esplora soluzioni** fare doppio clic su **Sheet1.cs** o **Sheet1. vb** nel progetto **AdventureWorksReport** .
 
      La cartella di lavoro viene aperta nella finestra di progettazione.
 
@@ -197,7 +199,7 @@ ms.locfileid: "72985423"
 
 ### <a name="to-build-and-run-the-project"></a>Per compilare ed eseguire il progetto
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **AdventureWorksReport** , scegliere **debug**e quindi fare clic su **Avvia nuova istanza**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **AdventureWorksReport** , scegliere **debug** e quindi fare clic su **Avvia nuova istanza**.
 
      Il progetto viene compilato e la cartella di lavoro viene aperta in Excel. Il <xref:Microsoft.Office.Tools.Excel.ListObject> in **Sheet1** è vuoto, perché l' `adventureWorksLTDataSet` oggetto nella cache dei dati non contiene ancora dati. Nella sezione successiva si userà un'applicazione console per popolare l' `adventureWorksLTDataSet` oggetto con i dati.
 
@@ -208,9 +210,9 @@ ms.locfileid: "72985423"
 
 ### <a name="to-create-the-console-application-project"></a>Per creare il progetto di applicazione console
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sulla soluzione **AdventureWorksDataSet** , scegliere **Aggiungi**, quindi fare clic su **nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione **AdventureWorksDataSet** , scegliere **Aggiungi**, quindi fare clic su **nuovo progetto**.
 
-2. Nel riquadro **Tipi progetto** espandere **Visual C#** o **Visual Basic**e quindi fare clic su **Windows**.
+2. Nel riquadro **Tipi progetto** espandere **Visual C#** o **Visual Basic** e quindi fare clic su **Windows**.
 
 3. Nel riquadro **Modelli** selezionare **Applicazione console**.
 
@@ -225,15 +227,15 @@ ms.locfileid: "72985423"
 
 ### <a name="to-add-data-to-the-cached-dataset"></a>Per aggiungere dati al set di dati memorizzato nella cache
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **DataWriter** e scegliere **Aggiungi riferimento**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **DataWriter** e scegliere **Aggiungi riferimento**.
 
 2. Nella scheda **.NET** selezionare **Microsoft. VisualStudio. Tools. Applications. ServerDocument**.
 
 3. Fare clic su **OK**.
 
-4. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **DataWriter** e scegliere **Aggiungi riferimento**.
+4. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **DataWriter** e scegliere **Aggiungi riferimento**.
 
-5. Nella scheda **progetti** , selezionare **AdventureWorksDataSet**e fare clic su **OK**.
+5. Nella scheda **progetti** , selezionare **AdventureWorksDataSet** e fare clic su **OK**.
 
 6. Aprire il file *Program.cs* o *Module1. vb* nell'editor di codice.
 
@@ -267,7 +269,7 @@ ms.locfileid: "72985423"
      [!code-csharp[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#4)]
      [!code-vb[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#4)]
 
-10. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto **DataWriter** , scegliere **debug**, quindi fare clic su **Avvia nuova istanza**.
+10. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **DataWriter** , scegliere **debug**, quindi fare clic su **Avvia nuova istanza**.
 
      Il progetto viene compilato e nell'applicazione console vengono visualizzati diversi messaggi di stato quando il set di dati locale viene compilato e quando l'applicazione salva i dati nel set di dati memorizzato nella cache della cartella di lavoro. Premere **INVIO** per chiudere l'applicazione.
 

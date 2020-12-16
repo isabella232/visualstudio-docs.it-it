@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: associare dati a controlli in un riquadro azioni di Word'
+description: Associare dati a controlli in un riquadro azioni in Microsoft Word. I controlli mostrano una relazione master/detail tra le tabelle in un database SQL Server.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 05df38bf6056b392c0b991617316ba2c1c657306
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 76dffda9b332b9b76d6c0e0a423073959bcc7a56
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585067"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526207"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Procedura dettagliata: associare dati a controlli in un riquadro azioni di Word
   Questa procedura dettagliata illustra data binding a controlli in un riquadro azioni in Word. I controlli mostrano una relazione master/detail tra le tabelle in un database SQL Server.
@@ -72,11 +74,11 @@ ms.locfileid: "91585067"
 
 2. Dal menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
-3. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare il **controllo riquadro azioni**, denominarlo **ActionsControl**e quindi fare clic su **Aggiungi**.
+3. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare il **controllo riquadro azioni**, denominarlo **ActionsControl** e quindi fare clic su **Aggiungi**.
 
 ### <a name="to-add-a-data-source-to-the-project"></a>Per aggiungere un'origine dati al progetto
 
-1. Se la finestra **origini dati** non è visibile, visualizzarla dalla barra dei menu scegliendo **Visualizza**  >  **altre**  >  **origini dati**di Windows.
+1. Se la finestra **origini dati** non è visibile, visualizzarla dalla barra dei menu scegliendo **Visualizza**  >  **altre**  >  **origini dati** di Windows.
 
    > [!NOTE]
    > Se **Mostra origini dati** non è disponibile, fare clic sul documento di Word, quindi eseguire di nuovo la verifica.
@@ -130,10 +132,10 @@ ms.locfileid: "91585067"
 
 11. Fare clic con il pulsante destro del mouse su <xref:System.Windows.Forms.Button> , scegliere **Proprietà** dal menu di scelta rapida e modificare le proprietà seguenti.
 
-    |Proprietà|Valore|
+    |Proprietà|valore|
     |--------------|-----------|
     |**Nome**|**Inserimento**|
-    |**Text**|**Inserimento**|
+    |**Testo**|**Inserimento**|
 
 12. Ridimensionare il controllo utente per adattarlo ai controlli.
 
@@ -202,7 +204,7 @@ ms.locfileid: "91585067"
 
 ### <a name="to-show-the-actions-pane"></a>Per visualizzare il riquadro azioni
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **ThisDocument. vb** o **ThisDocument.cs**, quindi scegliere **Visualizza codice** dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **ThisDocument. vb** o **ThisDocument.cs**, quindi scegliere **Visualizza codice** dal menu di scelta rapida.
 
 2. Creare una nuova istanza del controllo nella parte superiore della classe in `ThisDocument` modo che abbia un aspetto simile all'esempio seguente.
 
@@ -236,7 +238,7 @@ ms.locfileid: "91585067"
 
 - Distribuzione del progetto. Per altre informazioni, vedere [distribuire una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)
 - [Procedura: aggiungere un riquadro azioni ai documenti di Word o alle cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)

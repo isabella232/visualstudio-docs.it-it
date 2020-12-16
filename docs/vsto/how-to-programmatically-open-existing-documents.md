@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: aprire documenti esistenti a livello di codice'
+description: Informazioni su come usare il metodo Open per aprire un documento di Microsoft Word esistente specificato da un percorso e un nome file completi.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eba4d110b06147db384a4d7aafe01c7d9f272ba3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 994afc6f0d8d9bb76aff56097d0a18b8c3f940d9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519899"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525559"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>Procedura: aprire documenti esistenti a livello di codice
   Il <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> metodo apre il documento Microsoft Office Word esistente specificato da un percorso completo e un nome file. Questo metodo restituisce un oggetto <xref:Microsoft.Office.Interop.Word.Document> che rappresenta il documento aperto.

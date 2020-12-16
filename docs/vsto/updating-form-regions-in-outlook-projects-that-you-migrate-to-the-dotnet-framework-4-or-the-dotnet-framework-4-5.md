@@ -1,5 +1,7 @@
 ---
 title: Aggiornare le aree del modulo di Outlook quando viene eseguita la migrazione a .NET Framework 4,5
+description: È necessario modificare il codice se il Framework di destinazione di un progetto di componente aggiuntivo VSTO di Outlook con aree del modulo viene modificato in .NET Framework 4 o versione successiva.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d8978703630e99ecb930e18e7d128eddff8792f
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 507132a28526e4ce008957fa0b988c23c09d686f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584399"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526590"
 ---
 # <a name="update-outlook-form-regions-when-migrated-to-net-framework-45"></a>Aggiornare le aree del modulo di Outlook quando viene eseguita la migrazione a .NET Framework 4,5
 
@@ -29,7 +31,7 @@ ms.locfileid: "91584399"
 
 ### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>Per aggiornare il codice generato per un'area del modulo progettata in Visual Studio
 
-1. Aprire il file code-behind dell'area del modulo nell'editor del codice. Il nome del file è *YourFormRegion.Designer.cs*o *YourFormRegion.Designer.vb*. Per visualizzare questo file nei progetti Visual Basic, fare clic sul pulsante **Mostra tutti i file** in **Esplora soluzioni**.
+1. Aprire il file code-behind dell'area del modulo nell'editor del codice. Il nome del file è *YourFormRegion.Designer.cs* o *YourFormRegion.Designer.vb*. Per visualizzare questo file nei progetti Visual Basic, fare clic sul pulsante **Mostra tutti i file** in **Esplora soluzioni**.
 
 2. Modificare la dichiarazione della classe di aree del modulo in modo che derivi da <xref:Microsoft.Office.Tools.Outlook.FormRegionBase> anziché da `Microsoft.Office.Tools.Outlook.FormRegionControl`.
 
@@ -115,7 +117,7 @@ ms.locfileid: "91584399"
 
 #### <a name="to-update-the-generated-code-for-a-form-region-that-you-imported-from-outlook"></a>Per aggiornare il codice generato per un'area del modulo importata da Outlook
 
-1. Aprire il file code-behind dell'area del modulo nell'editor del codice. Il nome del file è *YourFormRegion.Designer.cs*o *YourFormRegion.Designer.vb*. Per visualizzare questo file nei progetti Visual Basic, fare clic sul pulsante **Mostra tutti i file** in **Esplora soluzioni**.
+1. Aprire il file code-behind dell'area del modulo nell'editor del codice. Il nome del file è *YourFormRegion.Designer.cs* o *YourFormRegion.Designer.vb*. Per visualizzare questo file nei progetti Visual Basic, fare clic sul pulsante **Mostra tutti i file** in **Esplora soluzioni**.
 
 2. Modificare la dichiarazione della classe di aree del modulo in modo che derivi da <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase> anziché da `Microsoft.Office.Tools.Outlook.ImportedFormRegion`.
 
@@ -192,12 +194,12 @@ ms.locfileid: "91584399"
 
  La tabella seguente elenca i tipi di area del modulo e il metodo da usare per creare istanze dei tipi nei progetti destinati [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive.
 
-|Tipo|Metodo factory da usare|
+|Type|Metodo factory da usare|
 |----------|---------------------------|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionCustomAction>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionCustomAction%2A>|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionInitializingEventArgs%2A>|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionManifest%2A>|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Eseguire la migrazione di soluzioni Office a .NET Framework 4 o versione successiva](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)

@@ -1,5 +1,7 @@
 ---
 title: Voci del registro di sistema per i componenti aggiuntivi VSTO
+description: Informazioni su come creare un set specifico di voci del registro di sistema quando si distribuiscono componenti aggiuntivi VSTO creati con Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b02b50c42692ec2fd455358df5157e0b8481562b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d90b341fb4233c10c54947a6349480ea0c33b23a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416523"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525003"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Voci del registro di sistema per i componenti aggiuntivi VSTO
   È necessario creare un set specifico di voci del Registro di sistema quando si distribuiscono componenti aggiuntivi VSTO creati con Visual Studio. Queste voci del Registro di sistema forniscono informazioni che consentono all'applicazione di Microsoft Office di individuare e caricare il componente aggiuntivo VSTO.
@@ -54,13 +56,13 @@ ms.locfileid: "79416523"
 
 |Applicazione Office|Percorso di configurazione|
 |------------------|------------------|
-|Visio|*Root* \\ *Visio* \\ *ID del componente aggiuntivo \SOFTWARE\Microsoft di* Visio \Addins radice|
+|Visio| \\  \\ *ID del componente aggiuntivo \SOFTWARE\Microsoft di* Visio \Addins radice|
 |Tutti gli altri|*Radice*\Software\Microsoft\Office \\ *nome applicazione Office*\Addins \\ *ID componente aggiuntivo*|
 
 > [!NOTE]
-> Se il programma di installazione è destinato a tutti gli utenti in Windows a 64 bit, è consigliabile includere due voci del registro di sistema, una sotto la HKEY_LOCAL_MACHINE \Software\Microsoft e una nell'HKEY_LOCAL_MACHINE \SOFTWARE \\ **Wow6432Node**\Microsoft hive. Questo perché è possibile che gli utenti usino le versioni di Office a 32 bit o a 64 bit nel computer.
+> Se il programma di installazione è destinato a tutti gli utenti in Windows a 64 bit, è consigliabile includere due voci del registro di sistema, una sotto la HKEY_LOCAL_MACHINE\Software\Microsoft e una nella HKEY_LOCAL_MACHINE\Software\\ **Wow6432Node**\Microsoft hive. Questo perché è possibile che gli utenti usino le versioni di Office a 32 bit o a 64 bit nel computer.
 >
->Se il programma di installazione è destinato all'utente corrente, non è necessario installarlo in WOW6432Node perché il percorso di \SOFTWARE HKEY_CURRENT_USER è condiviso.
+>Se il programma di installazione è destinato all'utente corrente, non è necessario installarlo in WOW6432Node perché il percorso del HKEY_CURRENT_USER\Software è condiviso.
 >
 >Per ulteriori informazioni, vedere la pagina relativa ai [dati delle applicazioni a 32 bit e a 64 bit nel registro di sistema.](/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry)
 
@@ -76,7 +78,7 @@ ms.locfileid: "79416523"
 ### <a name="registry-entries-for-outlook-form-regions"></a><a name="OutlookEntries"></a> Voci del registro di sistema per le aree del modulo di Outlook
  Se si crea un'area del modulo personalizzata in un componente aggiuntivo VSTO per Outlook, vengono usate voci aggiuntive del Registro di sistema per registrare l'area con Outlook. Queste voci vengono create in una chiave del Registro di sistema diversa per ogni classe di messaggio supportata dall'area. Queste chiavi del registro di sistema si trovano nel percorso seguente, dove *root* è **HKEY_CURRENT_USER** o **HKEY_LOCAL_MACHINE**.
 
- *Root* \\ *Classe messaggio* radice \Software\Microsoft\Office\Outlook\FormRegions
+  \\ *Classe messaggio* radice \Software\Microsoft\Office\Outlook\FormRegions
 
  Analogamente alle altre voci del Registro di sistema condivise da tutti i componenti aggiuntivi VSTO, Visual Studio crea le voci relative all'area del modulo nel computer di sviluppo durante la compilazione del progetto. Se si usa ClickOnce per distribuire il componente aggiuntivo VSTO, le voci del registro di sistema vengono create automaticamente nel computer dell'utente finale. Se si usa Windows Installer per distribuire il componente aggiuntivo VSTO, è necessario configurare il progetto InstallShield Limited Edition per creare le voci del registro di sistema nel computer dell'utente finale.
 
@@ -101,7 +103,7 @@ ms.locfileid: "79416523"
 
 ## <a name="see-also"></a>Vedere anche
 - [Architettura delle soluzioni Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
-- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Architettura dei componenti aggiuntivi VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Compilazione di soluzioni Office](../vsto/building-office-solutions.md)
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
  

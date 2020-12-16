@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione'
+description: Informazioni su come creare una scheda personalizzata e quindi aggiungervi e posizionarvi i controlli usando la finestra di progettazione della barra multifunzione.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f311f35ba4a8c443f47941a905ee4cf4d3ebfb2
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 539f75b7770abab75e912a28bc62ed51b7fb61d8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585015"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524826"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Procedura dettagliata: creare una scheda personalizzata usando la finestra di progettazione della barra multifunzione
   Usando la finestra di progettazione della barra multifunzione è possibile creare una scheda personalizzata per aggiungervi e posizionarvi controlli.
@@ -68,7 +70,7 @@ ms.locfileid: "91585015"
 
      Il file **ActionsPaneControl1.cs** o **ActionsPaneControl1. vb** verrà aperto nella finestra di progettazione.
 
-3. Dalla scheda **controlli comuni** della **casella degli strumenti**aggiungere un'etichetta all'area di progettazione.
+3. Dalla scheda **controlli comuni** della **casella degli strumenti** aggiungere un'etichetta all'area di progettazione.
 
 4. Nella finestra **Proprietà** impostare la proprietà **Text** di Label1 su **Actions pane 1**.
 
@@ -83,7 +85,7 @@ ms.locfileid: "91585015"
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Barra multifunzione (finestra di progettazione visiva)**.
 
-3. Modificare il nome della nuova barra multifunzione in **Ribbon**e scegliere **Aggiungi**.
+3. Modificare il nome della nuova barra multifunzione in **Ribbon** e scegliere **Aggiungi**.
 
      Nella finestra di progettazione della barra multifunzione viene aperto un file **MyRibbon.cs** o **MyRibbon.vb** , che visualizza una scheda e un gruppo predefiniti.
 
@@ -97,15 +99,15 @@ ms.locfileid: "91585015"
 
 8. Nella finestra **Proprietà** impostare **Label** su **Actions pane Manager**.
 
-9. Dalla scheda **controlli barra multifunzione di Office** della **casella degli strumenti**trascinare un pulsante in **Group1**.
+9. Dalla scheda **controlli barra multifunzione di Office** della **casella degli strumenti** trascinare un pulsante in **Group1**.
 
 10. Selezionare **Button1**.
 
 11. Nella finestra **Proprietà** impostare **Label** su **Show Actions pane 1**.
 
-12. Aggiungere un secondo pulsante a **Group1**e impostare la proprietà **Label** su **Show Actions pane 2**.
+12. Aggiungere un secondo pulsante a **Group1** e impostare la proprietà **Label** su **Show Actions pane 2**.
 
-13. Dalla scheda **controlli barra multifunzione di Office** della **casella degli strumenti**trascinare un controllo **ToggleButton** in **Group1**.
+13. Dalla scheda **controlli barra multifunzione di Office** della **casella degli strumenti** trascinare un controllo **ToggleButton** in **Group1**.
 
 14. Impostare la proprietà **Label** su **Nascondi riquadro azioni**.
 
@@ -114,7 +116,7 @@ ms.locfileid: "91585015"
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Per nascondere e mostrare i riquadri azioni mediante i pulsanti della scheda personalizzata
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per *MyRibbon.cs* o *Ribbon. vb*, quindi scegliere **Visualizza codice**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per *MyRibbon.cs* o *Ribbon. vb*, quindi scegliere **Visualizza codice**.
 
 2. Aggiungere il codice riportato di seguito all'inizio della classe `MyRibbon`. Mediante questo codice vengono creati due oggetti riquadro azioni.
 
@@ -159,7 +161,7 @@ ms.locfileid: "91585015"
 
 - Estensione di un modulo standard o personalizzato di Microsoft Office Outlook. Per altre informazioni, vedere [procedura dettagliata: progettare un'area del modulo di Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Accedere alla barra multifunzione in fase di esecuzione](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)
 - [Finestra di progettazione della barra multifunzione](../vsto/ribbon-designer.md)

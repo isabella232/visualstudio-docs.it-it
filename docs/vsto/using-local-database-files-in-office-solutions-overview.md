@@ -1,5 +1,7 @@
 ---
 title: Panoramica sull'uso dei file di database locali nelle soluzioni Office
+description: Informazioni su come includere un file di database, ad esempio un file di SQL Server Express (con estensione MDF) o un file con estensione mdb (Microsoft Office Access) nella soluzione Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,15 +16,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea260a6286c8a923d56ab7a5088b55de57004489
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a3166a88080eaee1042187c171c4938d236058a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982241"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526559"
 ---
 # <a name="use-local-database-files-in-office-solutions-overview"></a>Panoramica sull'uso dei file di database locali nelle soluzioni Office
-  È possibile includere un file di database, ad esempio un file di SQL Server Express (con*estensione MDF*) o un file con estensione*MDB*(Microsoft Office Access) nella soluzione Office. Ciò consente agli utenti finali di gestire un database locale in situazioni in cui la gestione di un database centralizzato non è necessaria, ad esempio in una soluzione di inventario locale utilizzata su un solo computer.
+  È possibile includere un file di database, ad esempio un file di SQL Server Express (con *estensione MDF*) o un file con estensione *MDB*(Microsoft Office Access) nella soluzione Office. Ciò consente agli utenti finali di gestire un database locale in situazioni in cui la gestione di un database centralizzato non è necessaria, ad esempio in una soluzione di inventario locale utilizzata su un solo computer.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 

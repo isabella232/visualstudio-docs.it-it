@@ -1,5 +1,7 @@
 ---
 title: Progetti di Office nell'ambiente Visual Studio
+description: Informazioni sul modo in cui i progetti Microsoft Office hanno un'esperienza di sviluppo simile ad altri tipi di progetti in Visual Studio, ad esempio Windows Forms progetti.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -41,12 +43,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e183d5aca3fa856f45f322c2b79a76524b28005
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978058"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525158"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Progetti di Office nell'ambiente Visual Studio
   L'esperienza di sviluppo relativa ai progetti di Microsoft Office è simile a quella per altri tipi di progetti in Visual Studio, ad esempio progetti Windows Form. Quando si crea o si apre un progetto di Office, gli elementi del progetto vengono visualizzati in **Esplora soluzioni**. Per i progetti a livello di documento, il documento (ossia il documento di Word o la cartella di lavoro di Excel) viene aperto in Visual Studio e funziona come una finestra di progettazione visiva.
@@ -64,7 +66,7 @@ ms.locfileid: "62978058"
 
   In un progetto di componente aggiuntivo VSTO, in **Esplora soluzioni** sono illustrati gli elementi predefiniti seguenti:
 
-- Il nodo dell'applicazione. Questo nodo ha lo stesso nome dell'applicazione host, ad esempio **Word**, **Excel**oppure **Outlook**. Il nodo dell'applicazione contiene il file di codice ThisAddIn. Fornisce anche la proprietà **Spazio dei nomi per elemento host** . Per altre informazioni su questa proprietà, vedere [proprietà nei progetti di Office](../vsto/properties-in-office-projects.md).
+- Il nodo dell'applicazione. Questo nodo ha lo stesso nome dell'applicazione host, ad esempio **Word**, **Excel** oppure **Outlook**. Il nodo dell'applicazione contiene il file di codice ThisAddIn. Fornisce anche la proprietà **Spazio dei nomi per elemento host** . Per altre informazioni su questa proprietà, vedere [proprietà nei progetti di Office](../vsto/properties-in-office-projects.md).
 
 - Il file di codice ThisAddIn. Questo file contiene la classe `ThisAddIn` generata per il componente aggiuntivo VSTO. Per ulteriori informazioni su questa classe, vedere [Program VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
 
@@ -113,7 +115,7 @@ ms.locfileid: "62978058"
  Per altre informazioni sull'editor di codice, vedere [scrivere codice nell'editor di testo e](../ide/writing-code-in-the-code-and-text-editor.md)di codice. Per altre informazioni su come scrivere codice nei progetti di Office, vedere [scrivere codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md).
 
 ## <a name="properties-window"></a>Finestra Proprietà
- La finestra **Proprietà** mostra le proprietà per gli elementi del progetto selezionati in **Esplora soluzioni**e per gli elementi dell'interfaccia utente selezionati nella finestra di progettazione, ad esempio i controlli o il documento in un progetto a livello di documento. Alcune proprietà sono specifiche dell'applicazione e del documento, mentre altre sono identiche per tutti i progetti.
+ La finestra **Proprietà** mostra le proprietà per gli elementi del progetto selezionati in **Esplora soluzioni** e per gli elementi dell'interfaccia utente selezionati nella finestra di progettazione, ad esempio i controlli o il documento in un progetto a livello di documento. Alcune proprietà sono specifiche dell'applicazione e del documento, mentre altre sono identiche per tutti i progetti.
 
 ## <a name="data-sources-window"></a>Finestra Origini dati
  È possibile usare la finestra **Origini dati** all'interno dei progetti di Office a livello di documento per trascinare un'origine dati nel documento e creare un controllo associato all'origine dati. Per altre informazioni, vedere [associare i controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).

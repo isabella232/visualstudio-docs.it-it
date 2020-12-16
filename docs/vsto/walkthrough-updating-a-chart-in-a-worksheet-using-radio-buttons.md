@@ -1,5 +1,7 @@
 ---
 title: Aggiornare il grafico nel foglio di comando usando i pulsanti di opzione
+description: Informazioni sulle nozioni di base sull'uso dei pulsanti di opzione in un foglio di lavoro di Microsoft Excel per consentire all'utente di passare rapidamente da una modalità all'altra.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e63d7d09a09fe4c051d8137428fdae90490cbae5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e375f394cd3d8be35ace8e3df07920fb824a07e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238816"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526060"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Procedura dettagliata: aggiornamento di un grafico in un foglio di lavoro mediante i pulsanti di opzione
   Questa procedura dettagliata illustra le nozioni di base sull'uso dei pulsanti di opzione in un foglio di lavoro di Excel Microsoft Office per consentire all'utente di passare rapidamente da una modalità all'altra. In questo caso, le opzioni cambiano lo stile di un grafico.
@@ -108,7 +110,7 @@ ms.locfileid: "88238816"
 
 1. Selezionare il <xref:Microsoft.Office.Tools.Excel.Chart> controllo nella finestra di progettazione e modificare le proprietà seguenti nella finestra **Proprietà** .
 
-    |Proprietà|Valore|
+    |Proprietà|valore|
     |--------------|-----------|
     |**Nome**|**datachart**|
     |**HasLegend**|**false**|
@@ -130,33 +132,33 @@ ms.locfileid: "88238816"
 
 1. Se il controllo utente non è visibile nella finestra di progettazione, fare doppio clic su **ChartOptions** in **Esplora soluzioni**.
 
-2. Dalla scheda **controlli comuni** della **casella degli strumenti**trascinare un controllo **pulsante di opzione** sul controllo utente e modificare le proprietà seguenti.
+2. Dalla scheda **controlli comuni** della **casella degli strumenti** trascinare un controllo **pulsante di opzione** sul controllo utente e modificare le proprietà seguenti.
 
-   | Proprietà | Valore |
+   | Proprietà | valore |
    |----------|------------------|
    | **Nome** | **columnChart** |
-   | **Text** | **Istogramma** |
+   | **Testo** | **Istogramma** |
 
 3. Aggiungere un secondo pulsante di opzione al controllo utente e modificare le proprietà seguenti.
 
-   | Proprietà | Valore |
+   | Proprietà | valore |
    |----------|---------------|
    | **Nome** | **barChart** |
-   | **Text** | **Grafico a barre** |
+   | **Testo** | **Grafico a barre** |
 
 4. Aggiungere un terzo pulsante di opzione al controllo utente e modificare le proprietà seguenti.
 
-   | Proprietà | Valore |
+   | Proprietà | valore |
    |----------|----------------|
    | **Nome** | **lineChart** |
-   | **Text** | **Grafico a linee** |
+   | **Testo** | **Grafico a linee** |
 
 5. Aggiungere un quarto pulsante di opzione al controllo utente e modificare le proprietà seguenti.
 
-   |Proprietà|Valore|
+   |Proprietà|valore|
    |--------------|-----------|
    |**Nome**|**areaBlockChart**|
-   |**Text**|**Grafico ad area**|
+   |**Testo**|**Grafico ad area**|
 
    Quindi, scrivere il codice per aggiornare il grafico quando si fa clic su un pulsante di opzione.
 
@@ -165,7 +167,7 @@ ms.locfileid: "88238816"
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>Per creare un evento e una proprietà in un controllo utente
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul controllo utente, quindi scegliere **Visualizza codice**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul controllo utente, quindi scegliere **Visualizza codice**.
 
 2. Aggiungere codice alla `ChartOptions` classe per creare un `SelectionChanged` evento e la `Selection` Proprietà.
 
@@ -207,7 +209,7 @@ ms.locfileid: "88238816"
 
      Il controllo utente **ChartOptions** viene aggiunto alla **casella degli strumenti**.
 
-2. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **Sheet1. vb** o **Sheet1.cs**, quindi scegliere **Visualizza finestra di progettazione**.
+2. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Sheet1. vb** o **Sheet1.cs**, quindi scegliere **Visualizza finestra di progettazione**.
 
 3. Trascinare il controllo **ChartOptions** dalla **casella degli strumenti** al foglio di comando.
 
@@ -220,7 +222,7 @@ ms.locfileid: "88238816"
 
 ### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-worksheet"></a>Per modificare il tipo di grafico visualizzato nel foglio di testo
 
-1. Aggiungere il seguente gestore eventi alla classe `Sheet1`.
+1. Aggiungi alla classe `Sheet1` il gestore eventi indicato di seguito.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]

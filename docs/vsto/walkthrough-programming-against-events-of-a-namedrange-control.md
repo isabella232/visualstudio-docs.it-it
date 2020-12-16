@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: programma per eventi di un controllo NamedRange'
+description: Informazioni su come aggiungere un controllo NamedRange a un foglio di lavoro di Microsoft Excel e programmarlo in base agli eventi usando gli strumenti di sviluppo di Office in Visual Studio.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e5ce12e2de8274afd2c27d4ece36529563a6386
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 9e311a567d32ee083bcc13f417c248f5f3d3ee5a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584937"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526123"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Procedura dettagliata: programma per eventi di un controllo NamedRange
   In questa procedura dettagliata viene illustrato come aggiungere un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo a un foglio di lavoro di Excel Microsoft Office e programmarlo in base agli eventi utilizzando gli strumenti di sviluppo di Office in Visual Studio.
@@ -57,13 +59,13 @@ ms.locfileid: "91584937"
      Visual Studio apre la nuova cartella di lavoro di Excel nella finestra di progettazione e aggiunge il progetto **eventi di intervallo denominato** al **Esplora soluzioni**.
 
 ## <a name="add-text-and-named-ranges-to-the-worksheet"></a>Aggiungere testo e intervalli denominati al foglio di testo
- Poiché i controlli host sono oggetti estesi di Office, è possibile aggiungerli al documento nello stesso modo in cui si aggiunge l'oggetto nativo. Ad esempio, è possibile aggiungere un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo Excel a un foglio di lavoro aprendo il menu **Inserisci** , puntando a **nome**e scegliendo **Definisci**. È anche possibile aggiungere un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo trascinandoli dalla **casella degli strumenti** nel foglio di comando.
+ Poiché i controlli host sono oggetti estesi di Office, è possibile aggiungerli al documento nello stesso modo in cui si aggiunge l'oggetto nativo. Ad esempio, è possibile aggiungere un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo Excel a un foglio di lavoro aprendo il menu **Inserisci** , puntando a **nome** e scegliendo **Definisci**. È anche possibile aggiungere un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo trascinandoli dalla **casella degli strumenti** nel foglio di comando.
 
- In questo passaggio vengono aggiunti due controlli intervallo denominati al foglio di controllo utilizzando la **casella degli strumenti**e quindi viene aggiunto il testo al foglio di controllo.
+ In questo passaggio vengono aggiunti due controlli intervallo denominati al foglio di controllo utilizzando la **casella degli strumenti** e quindi viene aggiunto il testo al foglio di controllo.
 
 ### <a name="to-add-a-range-to-your-worksheet"></a>Per aggiungere un intervallo al foglio di lavoro
 
-1. Verificare che la cartella di lavoro *Events.xlsxintervallo denominato * sia aperta nella finestra di progettazione di Visual Studio, con `Sheet1` visualizzato.
+1. Verificare che la cartella di lavoro *Events.xlsxintervallo denominato* sia aperta nella finestra di progettazione di Visual Studio, con `Sheet1` visualizzato.
 
 2. Dalla scheda **controlli Excel** della casella degli strumenti trascinare un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo nella cella **a1** in `Sheet1` .
 
@@ -85,7 +87,7 @@ ms.locfileid: "91584937"
 
 ### <a name="to-add-text-to-your-worksheet"></a>Per aggiungere testo al foglio di lavoro
 
-1. Nella cella **a1**Digitare il testo seguente:
+1. Nella cella **a1** Digitare il testo seguente:
 
     **Questo è un esempio di controllo NamedRange.**
 
@@ -99,7 +101,7 @@ ms.locfileid: "91584937"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-beforedoubleclick-event"></a>Per inserire testo in NamedRange2 in base all'evento BeforeDoubleClick
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **Sheet1. vb** o **Sheet1.cs** e selezionare **Visualizza codice**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Sheet1. vb** o **Sheet1.cs** e selezionare **Visualizza codice**.
 
 2. Aggiungere il codice `namedRange1_BeforeDoubleClick` in modo che il gestore dell'evento abbia un aspetto simile al seguente:
 
@@ -156,7 +158,7 @@ ms.locfileid: "91584937"
 
 - Distribuzione del progetto. Per altre informazioni, vedere [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Cenni preliminari sugli elementi e sui controlli host](../vsto/host-items-and-host-controls-overview.md)
 - [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
 - [NamedRange (controllo)](../vsto/namedrange-control.md)

@@ -1,5 +1,7 @@
 ---
 title: Procedure dettagliate con Excel
+description: Informazioni su come usare le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO per automatizzare Microsoft Excel. È anche possibile personalizzare l'interfaccia utente.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b802d61c4e30fa9dd13279c54c2a9bfa343f322f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba8a52e615a8e3d40b5c76be66f4b639aec6c07e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255057"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525960"
 ---
 # <a name="walkthroughs-using-excel"></a>Procedure dettagliate con Excel
   Le procedure dettagliate seguenti descrivono come usare personalizzazioni a livello di documento e componenti aggiuntivi VSTO per automatizzare Microsoft Office Excel e personalizzare l'interfaccia utente.

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: aggiornare i controlli in una barra multifunzione in fase di esecuzione'
+description: Informazioni su come usare il modello a oggetti della barra multifunzione per aggiornare i controlli in una barra multifunzione dopo che la barra multifunzione è stata caricata nell'applicazione di Office.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c2e870f028b3337fd162adde881281d7050e142
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2246dcdca1e754c885dd610f98986306a256228c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "92298054"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526053"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Procedura dettagliata: aggiornare i controlli in una barra multifunzione in fase di esecuzione
 
@@ -92,13 +94,13 @@ La barra multifunzione per questo esempio verrà visualizzata quando un utente c
 
 7. Nella finestra **Proprietà** impostare **Label** su **Customer Purchases**.
 
-8. Dalla scheda **controlli barra multifunzione di Office** della **casella degli strumenti**trascinare un controllo **ComboBox** nel gruppo **Customer Purchases** .
+8. Dalla scheda **controlli barra multifunzione di Office** della **casella degli strumenti** trascinare un controllo **ComboBox** nel gruppo **Customer Purchases** .
 
 9. Fare clic su **ComboBox1** per selezionarlo.
 
 10. Nella finestra **Proprietà** impostare **etichetta** su **Customers**.
 
-11. Dalla scheda **controlli barra multifunzione di Office** della **casella degli strumenti**trascinare un **menu** nel gruppo **Customer Purchases** .
+11. Dalla scheda **controlli barra multifunzione di Office** della **casella degli strumenti** trascinare un **menu** nel gruppo **Customer Purchases** .
 
 12. Nella finestra **Proprietà** impostare **etichetta** su **prodotto acquistato**.
 
@@ -178,7 +180,7 @@ Usare il modello a oggetti della barra multifunzione per effettuare le seguenti 
 
     Questo assembly contiene le classi per l'uso di Language-Integrated Queries (LINQ). LINQ viene usato per popolare i controlli nel gruppo personalizzato con i dati del database Northwind.
 
-3. In **Esplora soluzioni**fare clic su **CustomerRibbon.cs** o **CustomerRibbon. vb** per selezionarlo.
+3. In **Esplora soluzioni** fare clic su **CustomerRibbon.cs** o **CustomerRibbon. vb** per selezionarlo.
 
 4. Scegliere **Codice** dal menu **Visualizza**.
 
@@ -219,7 +221,7 @@ Usare il modello a oggetti della barra multifunzione per effettuare le seguenti 
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]
 
-10. In **Esplora soluzioni**fare doppio clic sul file di codice della barra multifunzione.
+10. In **Esplora soluzioni** fare doppio clic sul file di codice della barra multifunzione.
 
      La finestra di progettazione della barra multifunzione viene aperta.
 
@@ -262,7 +264,7 @@ Per creare un messaggio di posta elettronica di completamento per i clienti, sel
 
      Viene avviato Outlook.
 
-2. In Outlook scegliere **nuovo**dal menu **file** , quindi fare clic su **messaggio di posta elettronica**.
+2. In Outlook scegliere **nuovo** dal menu **file** , quindi fare clic su **messaggio di posta elettronica**.
 
      Si verificano le azioni seguenti:
 

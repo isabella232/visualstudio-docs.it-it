@@ -1,5 +1,7 @@
 ---
 title: Sviluppo di Office e SharePoint in Visual Studio
+description: Informazioni su come estendere Microsoft Office e SharePoint creando un'app leggera o un componente aggiuntivo che gli utenti scaricano da Office Store.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc1241a39707eedc4b34e0ef3531ab65e49b8238
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: abd9d3aac289df702554790673cb6561a6e2488d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811032"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525335"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Sviluppo di Office e SharePoint in Visual Studio
   È possibile estendere Microsoft Office e SharePoint creando un'app leggera o un componente aggiuntivo che gli utenti scaricano da [Office Store](https://store.office.com/) o da un catalogo dell'organizzazione oppure creando una soluzione basata su.NET Framework che gli utenti installano in un computer.
@@ -57,7 +59,7 @@ ms.locfileid: "90811032"
 
  ![App contenuto per Office](../vsto/media/appforoffice.png "App contenuto per Office")
 
- **Altre informazioni**
+ **Scopri di più**
 
 |A|Vedere|
 |--------|---------|
@@ -73,7 +75,7 @@ ms.locfileid: "90811032"
 
  ![Applicazione gestione contatti business per SharePoint](../vsto/media/appforsharepoint.png "Applicazione gestione contatti business per SharePoint")
 
- **Altre informazioni**
+ **Scopri di più**
 
 |A|Vedere|
 |--------|---------|
@@ -88,7 +90,7 @@ ms.locfileid: "90811032"
 
  ![Soluzione per i componenti aggiuntivi di PowerPoint](../vsto/media/powerpointaddin.png "Soluzione del componente aggiuntivo PowerPoint")
 
- **Altre informazioni**
+ **Scopri di più**
 
 |A|Lettura|
 |--------|----------|
@@ -100,7 +102,7 @@ ms.locfileid: "90811032"
 
  Le soluzioni di SharePoint richiedono server della farm di SharePoint locali che devono essere installati dagli amministratori e poiché le soluzioni vengono eseguite in SharePoint, possono influenzare le prestazioni del server. Tuttavia, le soluzioni offrono un accesso più diretto agli oggetti di SharePoint. Inoltre, quando si crea una soluzione di SharePoint, è possibile sfruttare .NET Framework e usare C# e Visual Basic per interagire con gli oggetti di SharePoint.
 
- **Altre informazioni**
+ **Scopri di più**
 
 |A|Vedere|
 |--------|---------|

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: nascondere i fogli di programmazione a livello di codice'
+description: Informazioni su come è possibile visualizzare o nascondere a livello di codice un foglio di lavoro in una cartella di lavoro di Microsoft Excel usando l'elemento host Worksheet.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 83cf1f63a67525dca4cf9dbb5a4916da5d70b4ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a5ba61c7db0a62cf3e97fb8e4df5cb655e9f2dd
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547407"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525673"
 ---
 # <a name="how-to-programmatically-hide-worksheets"></a>Procedura: nascondere i fogli di programmazione a livello di codice
   È possibile mostrare o nascondere qualsiasi foglio di lavoro da una cartella di lavoro. Per nascondere un foglio di lavoro, usare l'elemento host Worksheet o accedere al foglio di lavoro usando la raccolta Sheets della cartella di lavoro.

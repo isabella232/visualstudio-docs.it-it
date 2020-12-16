@@ -1,5 +1,7 @@
 ---
 title: Esempi di sviluppo per Office
+description: Informazioni sulle applicazioni di esempio di Visual Studio che illustrano come usare gli strumenti di sviluppo Microsoft Office per creare soluzioni Office.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b9e20f0d14b2940fdbe8096442848f38183b1db7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d80598033c834e8567ab58368da73350b3cd9ff3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985731"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525166"
 ---
 # <a name="office-development-samples"></a>Esempi di sviluppo per Office
   Visual Studio include applicazioni di esempio che illustrano come usare Microsoft Office Developer Tools per creare soluzioni Office. Il codice in questi esempi illustra la sintassi, la struttura e le tecniche usate per creare soluzioni Office.

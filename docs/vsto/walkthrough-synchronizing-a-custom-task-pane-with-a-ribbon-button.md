@@ -1,5 +1,7 @@
 ---
 title: Sincronizzare il riquadro attività personalizzato con il pulsante della barra multifunzione
+description: Informazioni su come creare un riquadro attività personalizzato che gli utenti possono nascondere o visualizzare facendo clic su un interruttore nella barra multifunzione.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad910f94c6b6a4345f6973e84e02c85d4fe1f0e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7453d221cf57188a2c2f589492e4df59817f2cd9
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328329"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526091"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Procedura dettagliata: sincronizzare un riquadro attività personalizzato con un pulsante della barra multifunzione
   In questa procedura dettagliata viene illustrato come creare un riquadro attività personalizzato che gli utenti possono nascondere o visualizzare facendo clic su un interruttore nella barra multifunzione. È consigliabile creare sempre un elemento dell'interfaccia utente, ad esempio un pulsante, che gli utenti possono usare per visualizzare o nascondere il riquadro attività personalizzato, perché le applicazioni di Microsoft Office non forniscono una modalità predefinita per visualizzare o nascondere i riquadri attività personalizzati.
@@ -73,7 +75,7 @@ ms.locfileid: "67328329"
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Barra multifunzione (finestra di progettazione visiva)**.
 
-3. Modificare il nome della nuova barra multifunzione in **ManageTaskPaneRibbon**e fare clic su **Aggiungi**.
+3. Modificare il nome della nuova barra multifunzione in **ManageTaskPaneRibbon** e fare clic su **Aggiungi**.
 
      Il file **ManageTaskPaneRibbon.cs** o **ManageTaskPaneRibbon.vb** si apre nella finestra di progettazione della barra multifunzione e visualizza una scheda e un gruppo predefiniti.
 
@@ -81,7 +83,7 @@ ms.locfileid: "67328329"
 
 5. Nella finestra **Proprietà** impostare la proprietà **Label** su **Task Pane Manager**.
 
-6. Nella scheda **Controlli barra multifunzione di Office** della **casella degli strumenti**trascinare un controllo **ToggleButton** nel gruppo **Task Pane Manager** .
+6. Nella scheda **Controlli barra multifunzione di Office** della **casella degli strumenti** trascinare un controllo **ToggleButton** nel gruppo **Task Pane Manager** .
 
 7. Fare clic su **toggleButton1**.
 
@@ -98,7 +100,7 @@ ms.locfileid: "67328329"
 
      Il controllo utente viene visualizzato nella finestra di progettazione.
 
-3. Nella scheda **Controlli comuni** della **casella degli strumenti**trascinare un controllo **TextBox** nel controllo utente.
+3. Nella scheda **Controlli comuni** della **casella degli strumenti** trascinare un controllo **TextBox** nel controllo utente.
 
 ## <a name="create-the-custom-task-pane"></a>Creare il riquadro attività personalizzato
  Per creare il riquadro attività personalizzato quando viene avviato il componente aggiuntivo VSTO, aggiungere il controllo utente al riquadro attività nel gestore eventi <xref:Microsoft.Office.Tools.AddIn.Startup> del componente aggiuntivo VSTO. Per impostazione predefinita, il riquadro attività personalizzato non è visibile. Più avanti in questa procedura dettagliata verrà aggiunto il codice che consente di visualizzare o nascondere il riquadro attività quando l'utente fa clic sull'interruttore aggiunto alla barra multifunzione.
@@ -119,7 +121,7 @@ ms.locfileid: "67328329"
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#2)]
      [!code-vb[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#2)]
 
-5. Aggiungere il metodo seguente alla classe `ThisAddIn`. Questo metodo gestisce l'evento <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> . Quando l'utente chiude il riquadro attività facendo clic sul pulsante **Chiudi** (X), questo metodo aggiorna lo stato dell'interruttore nella barra multifunzione.
+5. Aggiungi alla classe `ThisAddIn` il metodo seguente. Questo metodo gestisce l'evento <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> . Quando l'utente chiude il riquadro attività facendo clic sul pulsante **Chiudi** (X), questo metodo aggiorna lo stato dell'interruttore nella barra multifunzione.
 
      [!code-csharp[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#3)]
      [!code-vb[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#3)]

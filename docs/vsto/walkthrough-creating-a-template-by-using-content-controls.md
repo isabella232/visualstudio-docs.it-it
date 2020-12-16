@@ -1,5 +1,6 @@
 ---
 title: 'Procedura dettagliata: creare un modello usando i controlli contenuto'
+description: Informazioni su come creare una personalizzazione a livello di documento che usa i controlli contenuto per creare contenuti strutturati e riutilizzabili in un modello di Microsoft Word.
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30f2443c724d547afe3c510e64f2c50fd9dd4db9
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 2dd7e75048a84a4e235390b99d17d48dfad039ec
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585028"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524983"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Procedura dettagliata: creare un modello usando i controlli contenuto
   Questa procedura dettagliata mostra come creare una personalizzazione a livello di documento che usa i controlli contenuto per creare contenuti strutturati e riutilizzabili in un modello di Microsoft Office Word.
@@ -68,7 +69,7 @@ ms.locfileid: "91585028"
 
 1. Nel modello di Word ospitato nella [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] finestra di progettazione fare clic sulla scheda **Inserisci** sulla barra multifunzione.
 
-2. Nel gruppo **tabelle** fare clic su **tabella**e inserire una tabella con due colonne e quattro righe.
+2. Nel gruppo **tabelle** fare clic su **tabella** e inserire una tabella con due colonne e quattro righe.
 
 3. Digitare il testo nella prima colonna in modo che sia simile alla colonna seguente:
 
@@ -86,7 +87,7 @@ ms.locfileid: "91585028"
    > [!NOTE]
    > Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per ulteriori informazioni, vedere [procedura: visualizzare la scheda Developer sulla barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-6. Nel gruppo **controlli** fare clic sul pulsante **Text** di testo ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> alla prima cella.
+6. Nel gruppo **controlli** fare clic sul pulsante  di testo ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> alla prima cella.
 
 7. Fare clic sulla seconda cella della seconda colonna (accanto a **Data assunzione**).
 
@@ -109,7 +110,7 @@ ms.locfileid: "91585028"
 
 2. Sulla barra multifunzione fare clic sulla scheda **Inserisci** .
 
-3. Nel gruppo **tabelle** fare clic su **tabella**e inserire una tabella con due colonne e tre righe.
+3. Nel gruppo **tabelle** fare clic su **tabella** e inserire una tabella con due colonne e tre righe.
 
 4. Digitare il testo nella prima colonna in modo che sia simile alla colonna seguente:
 
@@ -123,7 +124,7 @@ ms.locfileid: "91585028"
 
 6. Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .
 
-7. Nel gruppo **controlli** fare clic sul pulsante **Text** di testo ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> alla prima cella.
+7. Nel gruppo **controlli** fare clic sul pulsante  di testo ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") per aggiungere un <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> alla prima cella.
 
 8. Fare clic nella seconda cella della seconda colonna (accanto a **classificazione di soddisfazione**).
 
@@ -131,14 +132,14 @@ ms.locfileid: "91585028"
 
 10. Fare clic nell'ultima cella della seconda colonna (accanto a **Commenti**).
 
-11. Nel gruppo **controlli** fare clic sul pulsante **RTF** per aggiungere ![RichTextContentControl](../vsto/media/richtextcontrol.gif "RichTextContentControl") un oggetto <xref:Microsoft.Office.Tools.Word.RichTextContentControl> all'ultima cella.
+11. Nel gruppo **controlli** fare clic sul pulsante **RTF** per aggiungere ![](../vsto/media/richtextcontrol.gif "RichTextContentControl") un oggetto <xref:Microsoft.Office.Tools.Word.RichTextContentControl> all'ultima cella.
 
 ## <a name="populate-the-combo-box-and-drop-down-list-programmatically"></a>Popola la casella combinata e l'elenco a discesa a livello di codice
  È possibile inizializzare i controlli contenuto in fase di progettazione utilizzando la finestra **Proprietà** in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . È anche possibile inizializzarli in fase di esecuzione. In questo caso gli stati iniziali possono essere impostati dinamicamente. Per questa procedura dettagliata, usare il codice per popolare le voci in e in fase di <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> esecuzione in modo che sia possibile visualizzare il funzionamento di questi oggetti.
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>Per modificare l'interfaccia utente dei controlli contenuto a livello di codice
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **ThisDocument.cs** o **ThisDocument. vb**, quindi scegliere **Visualizza codice**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **ThisDocument.cs** o **ThisDocument. vb**, quindi scegliere **Visualizza codice**.
 
 2. Aggiungere il codice seguente alla classe `ThisDocument` . Questo codice dichiara diversi oggetti che verranno usati più avanti nella procedura dettagliata.
 
@@ -235,7 +236,7 @@ ms.locfileid: "91585028"
 
 - Associare controlli contenuto a parti del codice XML, chiamate anche parti XML personalizzate, incorporate in un documento. Per ulteriori informazioni, vedere [procedura dettagliata: associare controlli contenuto a parti XML personalizzate](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Automatizzare Word usando oggetti estesi](../vsto/automating-word-by-using-extended-objects.md)
 - [Controlli contenuto](../vsto/content-controls.md)
 - [Procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)

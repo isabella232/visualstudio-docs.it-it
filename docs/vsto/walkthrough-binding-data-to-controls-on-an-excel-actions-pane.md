@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: associare dati a controlli in un riquadro azioni di Excel'
+description: Associare dati a controlli in un riquadro azioni in Microsoft Excel. I controlli mostrano una relazione master/detail tra le tabelle in un database SQL Server.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3801aff53a5bf9a9a8d77263ab74127c1b2a9846
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 6c53f4c1dfe9838fe4522dcc71b675a7f6b868d4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91585054"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524977"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Procedura dettagliata: associare dati a controlli in un riquadro azioni di Excel
   Questa procedura dettagliata illustra data binding ai controlli in un riquadro azioni in Microsoft Office Excel. I controlli mostrano una relazione master/detail tra le tabelle in un database SQL Server.
@@ -67,7 +69,7 @@ ms.locfileid: "91585054"
 
 ### <a name="to-add-a-new-data-source-to-the-project"></a>Per aggiungere una nuova origine dati al progetto
 
-1. Se la finestra **origini dati** non è visibile, visualizzarla dalla barra dei menu scegliendo **Visualizza**  >  **altre**  >  **origini dati**di Windows.
+1. Se la finestra **origini dati** non è visibile, visualizzarla dalla barra dei menu scegliendo **Visualizza**  >  **altre**  >  **origini dati** di Windows.
 
 2. Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
@@ -83,7 +85,7 @@ ms.locfileid: "91585054"
 
 8. Selezionare la casella di controllo accanto alla tabella **Suppliers** .
 
-9. Espandere la **tabella Products** e **selezionare ProductName**, **SupplierID**, **QuantityPerUnit**e **PrezzoUnitario**.
+9. Espandere la **tabella Products** e **selezionare ProductName**, **SupplierID**, **QuantityPerUnit** e **PrezzoUnitario**.
 
 10. Fare clic su **Fine**.
 
@@ -121,11 +123,11 @@ ms.locfileid: "91585054"
 
 2. Dal menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
-3. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare il **controllo riquadro azioni**, denominarlo **ActionsControl**e fare clic su **Aggiungi**.
+3. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare il **controllo riquadro azioni**, denominarlo **ActionsControl** e fare clic su **Aggiungi**.
 
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Per aggiungere controlli Windows Forms associati a dati a un controllo del riquadro azioni
 
-1. Dalle schede **controlli comuni** della **casella degli strumenti**trascinare un <xref:System.Windows.Forms.ComboBox> controllo nel controllo del riquadro azioni.
+1. Dalle schede **controlli comuni** della **casella degli strumenti** trascinare un <xref:System.Windows.Forms.ComboBox> controllo nel controllo del riquadro azioni.
 
 2. Modificare la proprietà **size** in **171, 21**.
 
@@ -152,7 +154,7 @@ ms.locfileid: "91585054"
 
 #### <a name="to-show-the-actions-pane"></a>Per visualizzare il riquadro azioni
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su *ThisWorkbook. vb* o *ThisWorkbook.cs*, quindi scegliere **Visualizza codice**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su *ThisWorkbook. vb* o *ThisWorkbook.cs*, quindi scegliere **Visualizza codice**.
 
 2. Creare una nuova istanza del controllo utente nella `ThisWorkbook` classe.
 
@@ -184,7 +186,7 @@ ms.locfileid: "91585054"
 
 - Distribuzione del progetto. Per altre informazioni, vedere [distribuire una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)
 - [Procedura: gestire il layout di controllo nei riquadri azioni](../vsto/how-to-manage-control-layout-on-actions-panes.md)
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)

@@ -1,5 +1,7 @@
 ---
 title: Proprietà non valide nel file OFS per la classe Message "
+description: Informazioni su come correggere un errore che si verifica quando una o più proprietà nel file OFS non sono valide per la classe messaggio selezionata.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66e8ecacffb58e945a3f80d03f47edc1329668d1
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b655a7bb6ab4b9ab971c0edd775aa8f29150dead
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584659"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525086"
 ---
 # <a name="invalid-properties-in-the-ofs-file-for-the-message-class"></a>Proprietà non valide nel file OFS per la classe Message
 
@@ -33,5 +35,5 @@ Ad esempio, è possibile selezionare **Task (IPM.Task)** nella pagina finale del
 
 - In progettazione form in Outlook rimuovere i campi non compatibili con le classi messaggio. Rimuovere i campi che si intende selezionare nella pagina finale della procedura guidata **nuova area del modulo** .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Procedura dettagliata: importare un'area del modulo progettata in Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)

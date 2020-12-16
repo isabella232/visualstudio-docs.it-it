@@ -1,5 +1,7 @@
 ---
 title: "Procedura: ridimensionare i controlli all'interno di celle del foglio di comando"
+description: Informazioni su come usare Visual Studio per ridimensionare i controlli all'interno di celle del foglio di lavoro di Microsoft Excel sia in fase di progettazione che in fase di esecuzione.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2d22973e13ee77b66de303041f8b6a765b4b93a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba2a77dc44618c0415e645718aff3ead542b4b48
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545873"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525350"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Procedura: ridimensionare i controlli all'interno di celle del foglio di comando
   Quando si ridimensionano le colonne o le righe di un foglio di foglio, tutti i controlli host all'interno delle celle vengono automaticamente ridimensionati in altezza o larghezza della cella che è stata ridimensionata. Per impostazione predefinita, i controlli Windows Forms non vengono ridimensionati automaticamente.
@@ -35,13 +37,13 @@ ms.locfileid: "85545873"
 
 ### <a name="to-make-controls-resize-with-cells-at-design-time"></a>Per ridimensionare i controlli con le celle in fase di progettazione
 
-1. Dalla **casella degli strumenti**trascinare un controllo Windows Forms in un foglio di foglio.
+1. Dalla **casella degli strumenti** trascinare un controllo Windows Forms in un foglio di foglio.
 
 2. Fare clic con il pulsante destro del mouse sul controllo, quindi scegliere **formato controllo**.
 
 3. Nella finestra di dialogo **formato controllo** fare clic sulla scheda **Proprietà** .
 
-4. In **posizionamento oggetti**selezionare l'opzione **Sposta e dimensioni con celle** , quindi fare clic su **OK**.
+4. In **posizionamento oggetti** selezionare l'opzione **Sposta e dimensioni con celle** , quindi fare clic su **OK**.
 
      Quando si ridimensiona la cella che contiene il controllo, il controllo viene ridimensionato in base alla cella.
 

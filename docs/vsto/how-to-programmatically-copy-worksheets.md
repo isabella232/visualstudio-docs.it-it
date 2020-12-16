@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: copiare fogli di codice a livello di codice'
+description: Informazioni su come creare una copia di un foglio di lavoro e inserire il foglio di lavoro prima o dopo un foglio di lavoro esistente nella cartella di lavoro.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8226f337994c686d4d370e91831bc1262d3ef85e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4b2f16cfc8855f2adff3a4614c38eb70fbe7db5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546081"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524794"
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>Procedura: copiare fogli di codice a livello di codice
   È possibile creare una copia di un foglio di lavoro e inserirla prima o dopo un foglio di lavoro esistente nella cartella di lavoro. e non si specifica dove inserire il foglio di lavoro, Excel crea una nuova cartella di lavoro per il nuovo foglio di lavoro.

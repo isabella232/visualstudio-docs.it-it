@@ -1,5 +1,7 @@
 ---
 title: Tastiera di Office Excel, impostazioni, finestra di dialogo Opzioni
+description: Informazioni su come è possibile fare in modo che i comandi dei tasti di scelta rapida di Microsoft Excel ricevano lo stato attivo del documento selezionando lo schema della tastiera
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8b590f82d5f28c3a71e86e18dfe16b1c3e6c4c5a
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: b3422cb53fb454b3585e0b8ba936ce692dfc68a4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584516"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525306"
 ---
 # <a name="microsoft-office-excel-keyboard-settings-options-dialog-box"></a>Tastiera Microsoft Office Excel, impostazioni, finestra di dialogo Opzioni
   Microsoft Office Excel e Visual Studio gestiscono entrambi i tasti di scelta rapida. La stessa combinazione di tasti di scelta rapida può essere conforme a comandi diversi in Excel e in Visual Studio. Quando Excel è aperto in un progetto a livello di documento in Visual Studio, solo un'applicazione alla volta riceve i comandi del tasto di scelta rapida. Per impostazione predefinita, Visual Studio riceve tutti i comandi dei tasti di scelta rapida, ma è possibile fare in modo che vengano ricevuti da Excel quando il documento ha lo stato attivo selezionando lo **schema della tastiera dinamica**
@@ -36,5 +38,5 @@ ms.locfileid: "91584516"
 
  **Schema della tastiera dinamica** Visual Studio riceve i comandi del tasto di scelta rapida solo quando ha lo stato attivo. Quando Excel ha lo stato attivo, Excel riceve tutti i comandi del tasto di scelta rapida. Se ad esempio si preme il tasto funzione **F5** mentre Excel ha lo stato attivo, verrà visualizzata la finestra **di dialogo Vai a** . Se si preme **F5** mentre Visual Studio ha lo stato attivo, Visual Studio avvia il debug della soluzione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Tastiera Microsoft Office Word, impostazioni della tastiera Microsoft Office, finestra di dialogo Opzioni](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)

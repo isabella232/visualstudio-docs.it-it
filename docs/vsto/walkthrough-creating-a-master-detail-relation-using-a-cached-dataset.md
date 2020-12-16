@@ -1,5 +1,7 @@
 ---
 title: Crea relazione dettaglio Master con il set di dati memorizzato nella cache
+description: Informazioni sulla creazione di una relazione master/dettaglio in un foglio di lavoro e sulla memorizzazione nella cache dei dati in modo che la soluzione possa essere usata offline.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0acf84dd983a8c10f2af526ae0bb904eaa90a360
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de7bf3ba34a2a7dd3e7db9ff549e4a839800d524
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328360"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524863"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Procedura dettagliata: creare una relazione di dettaglio master usando un set di dati memorizzato nella cache
   In questa procedura dettagliata viene illustrata la creazione di una relazione master/dettaglio in un foglio di lavoro e la memorizzazione dei dati nella cache in modo che la soluzione possa essere utilizzata offline.
@@ -63,7 +65,7 @@ ms.locfileid: "67328360"
 
 ### <a name="to-create-the-data-source"></a>Per creare l'origine dati
 
-1. Se la finestra **origini dati** non è visibile, visualizzarla dalla barra dei menu scegliendo **Visualizza**  >  **altre**  >  **origini dati**di Windows.
+1. Se la finestra **origini dati** non è visibile, visualizzarla dalla barra dei menu scegliendo **Visualizza**  >  **altre**  >  **origini dati** di Windows.
 
 2. Scegliere **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
@@ -102,11 +104,11 @@ ms.locfileid: "67328360"
 
 6. Fare clic su **ListObject** nell'elenco a discesa, quindi trascinare la tabella **OrderDetails** sulla cella **a6**.
 
-7. Un <xref:Microsoft.Office.Tools.Excel.ListObject> controllo denominato **Order_DetailsListObject** viene creato nella cella **a6**e associato a <xref:System.Windows.Forms.BindingSource> .
+7. Un <xref:Microsoft.Office.Tools.Excel.ListObject> controllo denominato **Order_DetailsListObject** viene creato nella cella **a6** e associato a <xref:System.Windows.Forms.BindingSource> .
 
 ### <a name="to-add-two-buttons"></a>Per aggiungere due pulsanti
 
-1. Dalla scheda **controlli comuni** della **casella degli strumenti**aggiungere un <xref:System.Windows.Forms.Button> controllo alla cella **a3** del foglio di comando.
+1. Dalla scheda **controlli comuni** della **casella degli strumenti** aggiungere un <xref:System.Windows.Forms.Button> controllo alla cella **a3** del foglio di comando.
 
     Questo pulsante è denominato `Button1` .
 
@@ -136,7 +138,7 @@ ms.locfileid: "67328360"
 
 ### <a name="to-initialize-the-data-and-the-controls"></a>Per inizializzare i dati e i controlli
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **Sheet1. vb** o **Sheet1.cs**, quindi scegliere **Visualizza codice** dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Sheet1. vb** o **Sheet1.cs**, quindi scegliere **Visualizza codice** dal menu di scelta rapida.
 
 2. Aggiungere il codice seguente al `Sheet1_Startup` metodo per impostare il testo per i pulsanti.
 

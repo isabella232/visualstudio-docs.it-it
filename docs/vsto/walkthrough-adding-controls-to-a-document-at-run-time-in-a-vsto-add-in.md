@@ -1,5 +1,7 @@
 ---
 title: Aggiungere controlli al documento in fase di esecuzione in un componente aggiuntivo VSTO
+description: Informazioni su come usare la barra multifunzione per consentire agli utenti di aggiungere una classe Button o un'interfaccia RichTextContentControl a un documento.
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e8cde57ece3774e94f923387e1a8f7ca71cf797
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbf6313f4788a0bd224d04639d3ab588a6469842
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254167"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526282"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Procedura dettagliata: aggiungere controlli a un documento in fase di esecuzione in un componente aggiuntivo VSTO
   È possibile aggiungere controlli a qualsiasi documento Microsoft Office Word aperto usando un componente aggiuntivo VSTO. In questa procedura dettagliata viene illustrato come utilizzare la barra multifunzione per consentire agli utenti di aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.Controls.Button> o <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento.
@@ -64,7 +66,7 @@ ms.locfileid: "71254167"
 
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Barra multifunzione (finestra di progettazione visiva)**.
 
-3. Modificare il nome della nuova barra multifunzione in **MyRibbon**e quindi scegliere **Aggiungi**.
+3. Modificare il nome della nuova barra multifunzione in **MyRibbon** e quindi scegliere **Aggiungi**.
 
     Nella finestra di progettazione della barra multifunzione viene aperto un file **MyRibbon.cs** o **MyRibbon.vb** , che visualizza una scheda e un gruppo predefiniti.
 
@@ -72,20 +74,20 @@ ms.locfileid: "71254167"
 
 5. Nella finestra **Proprietà** impostare la proprietà **Etichetta** per **group1** su **Add Controls**.
 
-6. Dalla scheda **Controlli barra multifunzione di Office** della **Casella degli strumenti**trascinare un controllo **ToggleButton** in **group1**.
+6. Dalla scheda **Controlli barra multifunzione di Office** della **Casella degli strumenti** trascinare un controllo **ToggleButton** in **group1**.
 
 7. Fare clic su **CheckBox1** per selezionarlo.
 
 8. Nella finestra **Proprietà** modificare le seguenti proprietà:
 
-   | Proprietà | Valore |
+   | Proprietà | valore |
    |-----------|-----------------------|
    | **Nome** | **addButtonCheckBox** |
    | **Etichetta** | **Pulsante Aggiungi** |
 
-9. Aggiungere una seconda casella di controllo a **group1**e quindi modificare le proprietà seguenti.
+9. Aggiungere una seconda casella di controllo a **group1** e quindi modificare le proprietà seguenti.
 
-   | Proprietà | Valore |
+   | Proprietà | valore |
    |-----------|---------------------------|
    | **Nome** | **addRichTextCheckBox** |
    | **Etichetta** | **Add Rich Text Control** |
@@ -107,19 +109,19 @@ ms.locfileid: "71254167"
 
 ### <a name="to-add-and-remove-controls-on-the-active-document"></a>Per aggiungere e rimuovere controlli nel documento attivo
 
-1. In **Esplora soluzioni**fare doppio clic su *ThisAddIn.cs* o *ThisAddIn. vb* per aprire il file nell'editor di codice.
+1. In **Esplora soluzioni** fare doppio clic su *ThisAddIn.cs* o *ThisAddIn. vb* per aprire il file nell'editor di codice.
 
 2. Aggiungere il codice seguente alla classe `ThisAddIn` . Questo codice dichiara gli oggetti <xref:Microsoft.Office.Tools.Word.Controls.Button> e <xref:Microsoft.Office.Tools.Word.RichTextContentControl> che rappresentano i controlli che verranno aggiunti al documento.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#1)]
 
-3. Aggiungere il metodo seguente alla classe `ThisAddIn`. Quando l'utente fa clic sulla casella di controllo **Aggiungi pulsante** sulla barra multifunzione, questo metodo aggiunge un oggetto <xref:Microsoft.Office.Tools.Word.Controls.Button> alla selezione corrente nel documento se la casella di controllo è selezionata oppure rimuove l'oggetto <xref:Microsoft.Office.Tools.Word.Controls.Button> se la casella di controllo è deselezionata.
+3. Aggiungi alla classe `ThisAddIn` il metodo seguente. Quando l'utente fa clic sulla casella di controllo **Aggiungi pulsante** sulla barra multifunzione, questo metodo aggiunge un oggetto <xref:Microsoft.Office.Tools.Word.Controls.Button> alla selezione corrente nel documento se la casella di controllo è selezionata oppure rimuove l'oggetto <xref:Microsoft.Office.Tools.Word.Controls.Button> se la casella di controllo è deselezionata.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#2)]
 
-4. Aggiungere il metodo seguente alla classe `ThisAddIn`. Quando l'utente fa clic sulla casella di controllo **Add Rich Text Control** sulla barra multifunzione, questo metodo aggiunge un oggetto <xref:Microsoft.Office.Tools.Word.RichTextContentControl> alla selezione corrente nel documento se la casella di controllo è selezionata oppure rimuove l'oggetto <xref:Microsoft.Office.Tools.Word.RichTextContentControl> se la casella di controllo è deselezionata.
+4. Aggiungi alla classe `ThisAddIn` il metodo seguente. Quando l'utente fa clic sulla casella di controllo **Add Rich Text Control** sulla barra multifunzione, questo metodo aggiunge un oggetto <xref:Microsoft.Office.Tools.Word.RichTextContentControl> alla selezione corrente nel documento se la casella di controllo è selezionata oppure rimuove l'oggetto <xref:Microsoft.Office.Tools.Word.RichTextContentControl> se la casella di controllo è deselezionata.
 
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#3)]
@@ -178,12 +180,12 @@ ms.locfileid: "71254167"
 ## <a name="next-steps"></a>Passaggi successivi
  Per altre informazioni sui controlli nei componenti aggiuntivi VSTO, vedere questi argomenti:
 
-- Per un esempio in cui viene illustrato come aggiungere molti altri tipi di controlli a un documento in fase di esecuzione e ricreare i controlli quando il documento viene riaperto, vedere l'esempio relativo ai controlli dinamici del componente aggiuntivo per Word in [esempi e procedure dettagliate per lo sviluppo di Office](../vsto/office-development-samples-and-walkthroughs.md).
+- Per un esempio in cui viene illustrato come aggiungere molti altri tipi di controlli a un documento in fase di esecuzione e ricreare i controlli quando il documento viene riaperto, vedere l'esempio relativo ai controlli dinamici di Word Add-In in [esempi e procedure dettagliate per lo sviluppo di Office](../vsto/office-development-samples-and-walkthroughs.md).
 
 - Per una procedura dettagliata che illustra come aggiungere controlli a un foglio di lavoro usando un componente aggiuntivo VSTO per Excel, vedere [procedura dettagliata: aggiungere controlli a un foglio di lavoro in fase di esecuzione in un progetto di componente aggiuntivo VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
 
 ## <a name="see-also"></a>Vedere anche
-- [soluzioni Word](../vsto/word-solutions.md)
+- [Soluzioni Word](../vsto/word-solutions.md)
 - [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Mantieni controlli dinamici nei documenti di Office](../vsto/persisting-dynamic-controls-in-office-documents.md)
 - [Procedura: aggiungere controlli Windows Forms ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
