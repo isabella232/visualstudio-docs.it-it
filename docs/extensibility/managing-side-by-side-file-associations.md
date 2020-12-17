@@ -1,5 +1,7 @@
 ---
 title: Gestione di associazioni di file affiancati | Microsoft Docs
+description: Se il pacchetto VSPackage fornisce associazioni di file, decidere come gestire le installazioni side-by-side in cui una determinata versione di Visual Studio apre un file.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c284fe7ef4c2d07051a8524860583cb634e13bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 477afbd5bc4586d8c46db11b036364f8058133b0
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702766"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616344"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Gestire le associazioni di file affiancati
 
@@ -23,7 +25,7 @@ Se il pacchetto VSPackage fornisce associazioni di file, è necessario decidere 
 
 Gli utenti prevedono la compatibilità di una nuova versione di un prodotto con le versioni precedenti, in modo che i file esistenti possano essere caricati in una nuova versione senza perdita di dati. Idealmente, il pacchetto VSPackage può caricare e salvare i formati di file delle versioni precedenti. In caso contrario, è consigliabile offrire per aggiornare il formato di file alla nuova versione del pacchetto VSPackage. Lo svantaggio di questo approccio è che il file aggiornato non può essere aperto nella versione precedente.
 
-Per evitare questo problema, è possibile modificare le estensioni quando i formati di file diventano incompatibili. Ad esempio, la versione 1 del pacchetto VSPackage può usare l'estensione, *. mypkg10*e la versione 2 possono usare l'estensione *mypkg20*. Questa differenza identifica il VSPackage che apre un file specifico. Se si aggiungono pacchetti Vspackage più recenti all'elenco di programmi associati a un'estensione precedente, gli utenti possono fare clic con il pulsante destro del mouse sul file e scegliere di aprirlo in un pacchetto VSPackage più recente. A questo punto, il pacchetto VSPackage può offrire per aggiornare il file al nuovo formato o aprire il file e mantenere la compatibilità con le versioni precedenti del pacchetto VSPackage.
+Per evitare questo problema, è possibile modificare le estensioni quando i formati di file diventano incompatibili. Ad esempio, la versione 1 del pacchetto VSPackage può usare l'estensione, *. mypkg10* e la versione 2 possono usare l'estensione *mypkg20*. Questa differenza identifica il VSPackage che apre un file specifico. Se si aggiungono pacchetti Vspackage più recenti all'elenco di programmi associati a un'estensione precedente, gli utenti possono fare clic con il pulsante destro del mouse sul file e scegliere di aprirlo in un pacchetto VSPackage più recente. A questo punto, il pacchetto VSPackage può offrire per aggiornare il file al nuovo formato o aprire il file e mantenere la compatibilità con le versioni precedenti del pacchetto VSPackage.
 
 > [!NOTE]
 > È possibile combinare questi approcci. Ad esempio, è possibile offrire compatibilità con le versioni precedenti caricando un file precedente e l'offerta per aggiornare il formato del file quando l'utente lo salva.
@@ -51,7 +53,7 @@ Se si desidera che più VSPackage affiancati usino la stessa estensione, è nece
 
   **CustomAction righe della tabella che determinano la versione più recente di Visual Studio**
 
-  |Action|Type|Source (Sorgente)|Destinazione|
+  |Azione|Tipo|Source (Sorgente)|Destinazione|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
@@ -59,13 +61,13 @@ Se si desidera che più VSPackage affiancati usino la stessa estensione, è nece
 
   **InstallExecuteSequence righe della tabella che determinano la versione più recente di Visual Studio**
 
-  |Action|Condizione|Sequenza|
+  |Azione|Condizione|Sequenza|
   |------------|---------------|--------------|
   |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 E NON (DEVENV_EXE_2003 O DEVENV_EXE_2005)|410|
   |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 E NON DEVENV_EXE_2005|420|
   |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|
 
-   È possibile utilizzare la proprietà DEVENV_EXE_LATEST nella tabella del registro di sistema del pacchetto Windows Installer per scrivere il valore predefinito della chiave **ShellOpenCommand del HKEY_CLASSES_ROOT*ProgID*** , [DEVENV_EXE_LATEST] "%1"
+   È possibile utilizzare la proprietà DEVENV_EXE_LATEST nella tabella del registro di sistema del pacchetto Windows Installer per scrivere il valore predefinito della chiave **ShellOpenCommand del HKEY_CLASSES_ROOT *ProgID*** , [DEVENV_EXE_LATEST] "%1"
 
 - Eseguire un programma di avvio condiviso che può essere la scelta migliore dalle versioni VSPackage disponibili.
 

@@ -1,5 +1,7 @@
 ---
 title: Localizzazione dei comandi di menu | Microsoft Docs
+description: Informazioni su come fornire il testo localizzato per i comandi di menu e barre degli strumenti creando file con estensione vsct localizzati e file con estensione resx localizzati per il pacchetto VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c1c158fd689cbcae18fec5d3306e6d6fadb169f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51f3692a4539eddbf35e24de8024eadd39031080
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904554"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615603"
 ---
 # <a name="localize-menu-commands"></a>Comandi di menu Localize
 
@@ -32,7 +34,7 @@ Per informazioni su come localizzare l'esperienza di installazione, vedere [loca
 
 Nei pacchetti VSPackage, i comandi di menu e i pulsanti della barra degli strumenti sono definiti nel file con *estensione vsct* .
 
-1. In **Esplora soluzioni**modificare il nome del file con *estensione vsct* da *filename. vsct* a *filename. en-US. vsct*.
+1. In **Esplora soluzioni** modificare il nome del file con *estensione vsct* da *filename. vsct* a *filename. en-US. vsct*.
 
 2. Creare una copia di *filename. en-US. vsct* per ogni lingua localizzata.
 
@@ -76,7 +78,7 @@ Nei pacchetti VSPackage, i comandi di menu e i pulsanti della barra degli strume
 
 ## <a name="localize-other-text-resources"></a>Localizzare altre risorse di testo
 
-Le risorse di testo diverse dai nomi dei comandi sono definite nei file di risorse (con*estensione resx*).
+Le risorse di testo diverse dai nomi dei comandi sono definite nei file di risorse (con *estensione resx*).
 
 1. Rinominare *VSPackage. resx* in *VSPackage. en-US. resx*.
 
@@ -112,7 +114,7 @@ Le risorse di testo diverse dai nomi dei comandi sono definite nei file di risor
 
 Per incorporare le risorse localizzate, è necessario modificare il file *AssemblyInfo.cs* e il file di progetto.
 
-1. Dal nodo **Proprietà** in **Esplora soluzioni**aprire *AssemblyInfo.cs* o *AssemblyInfo. vb* nell'editor.
+1. Dal nodo **Proprietà** in **Esplora soluzioni** aprire *AssemblyInfo.cs* o *AssemblyInfo. vb* nell'editor.
 
 2. Aggiungere la voce seguente.
 

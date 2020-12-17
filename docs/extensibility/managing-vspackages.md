@@ -1,5 +1,7 @@
 ---
 title: Gestione dei pacchetti VSPackage | Microsoft Docs
+description: Informazioni sulla gestione dei pacchetti VSPackage, in modo da sapere quando è possibile usare semplicemente la gestione VSPackage predefinita fornita da Visual Studio e come e quando personalizzarla.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60745d07679ae53b85d169473ed37ab314b67624
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a040777671a5d6a4378e9b2ad68b2ffa2fabaeb
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702644"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615740"
 ---
 # <a name="manage-vspackages"></a>Gestire VSPackage
 Nella maggior parte dei casi non è necessario preoccuparsi della gestione dei pacchetti VSPackage, dal momento che i modelli di progetto e di elemento si registrano e caricano automaticamente il pacchetto. In alcuni casi, tuttavia, potrebbe essere necessario saperne di più per poter gestire il pacchetto.

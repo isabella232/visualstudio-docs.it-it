@@ -1,5 +1,7 @@
 ---
 title: LPTEXTOUTPROC | Microsoft Docs
+description: Informazioni sul puntatore alla funzione LPTEXTOUTPROC. L'IDE di Visual Studio implementa la funzione per la visualizzazione degli errori e dello stato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38c3e8263b9a30058c2de019e5e92160b716aa71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a04f47a6500c0cd2174d0567029a4f5c86d9f62d
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702797"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615727"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -49,7 +51,7 @@ mesg_type
 
 Tipo di messaggio. Nella tabella seguente sono elencati i valori supportati per questo parametro.
 
-|Valore|Descrizione|
+|valore|Descrizione|
 |-----------|-----------------|
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|Il messaggio è considerato informazioni, avviso o errore.|
 |`SCC_MSG_STATUS`|Il messaggio Mostra lo stato e può essere visualizzato nella barra di stato.|
@@ -63,7 +65,7 @@ Tipo di messaggio. Nella tabella seguente sono elencati i valori supportati per 
 
 ## <a name="return-value"></a>Valore restituito
 
-|Valore|Descrizione|
+|valore|Descrizione|
 |-----------|-----------------|
 |SCC_MSG_RTN_OK|La stringa è stata visualizzata oppure l'operazione è stata completata correttamente.|
 |SCC_MSG_RTN_CANCEL|L'utente desidera annullare l'operazione.|

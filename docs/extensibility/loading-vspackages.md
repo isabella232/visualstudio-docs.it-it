@@ -1,5 +1,7 @@
 ---
 title: Caricamento dei pacchetti VSPackage | Microsoft Docs
+description: Informazioni sul caricamento dei pacchetti VSPackage in Visual Studio, incluso il caricamento ritardato, che viene usato quando possibile per migliorare le prestazioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c221bf06ef3b7e37e2afc1856f3e54fe5ad95e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0aeab78a2f64be2df6f601ad8ed224f13071eb8c
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702957"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616104"
 ---
 # <a name="load-vspackages"></a>Carica VSPackage
 I pacchetti VSPackage vengono caricati in Visual Studio solo quando sono necessarie le relative funzionalità. Ad esempio, un pacchetto VSPackage viene caricato quando Visual Studio usa una factory del progetto o un servizio implementato dal pacchetto VSPackage. Questa funzionalità è denominata caricamento ritardato, che viene usato quando possibile per migliorare le prestazioni.
@@ -35,7 +37,7 @@ I pacchetti VSPackage vengono caricati in Visual Studio solo quando sono necessa
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [ProvideAutoLoad(UIContextGuids80.SolutionExists)]
     [Guid("00000000-0000-0000-0000-000000000000")] // your specific package GUID
-    public class MyAutoloadedPackage : Package
+    public class MyAutoloadedPackage : Package
     {. . .}
     ```
 

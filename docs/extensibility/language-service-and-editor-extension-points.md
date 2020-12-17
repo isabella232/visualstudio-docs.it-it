@@ -1,5 +1,7 @@
 ---
 title: Punti di estensione del servizio di linguaggio e dell'editor | Microsoft Docs
+description: Informazioni sui punti di estensione nell'editor di codice di Visual Studio che è possibile estendere, inclusa la maggior parte delle funzionalità del servizio di linguaggio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28bb086eb99e4b8128c04f62f9b370eb2eab8fa3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06329fcfcefe3ea75b772495f6a7e0dd14ced087
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703049"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615551"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Punti di estensione Editor e servizio di linguaggio
 L'editor fornisce punti di estensione che è possibile estendere come parti del componente Managed Extensibility Framework (MEF), inclusa la maggior parte delle funzionalità del servizio di linguaggio. Di seguito sono riportate le principali categorie di punti di estensione:

@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 33148c5202251525504864f26177da4497b5fabe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31e38d728eb3c336b1d3160a920ef18055de1b1f
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74983566"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616301"
 ---
 # <a name="working-with-git"></a>Uso di Git
 
@@ -59,9 +59,9 @@ Queste schede consentono le azioni seguenti:
 
 ## <a name="switching-branches"></a>Cambio di rami
 
-Per impostazione predefinita, il primo ramo creato in un repository è denominato ramo **Master**. Tecnicamente non vi è alcuna differenza tra il ramo master e l'altro ma il ramo master viene più frequentemente considerato come ramo "attivo" o di "produzione" dai team di sviluppo.
+Per impostazione predefinita, il primo ramo creato in un repository è noto come Branch **principale** . Non esiste tecnicamente alcuna differenza tra il ramo principale e qualsiasi altro, ma il ramo principale è quello che più spesso si considera nei team di sviluppo come ramo "Live" o "produzione".
 
-È possibile creare una linea di sviluppo indipendente, creando una diramazione del ramo master (o di qualsiasi altro ramo). Questo offre una nuova versione del ramo master in un determinato punto nel tempo, consentendo lo sviluppo indipendente di ciò che è "attivo". Questo uso dei rami è frequente per funzionalità nell'ambiente di sviluppo.
+Una linea di sviluppo indipendente può essere creata diramando il ramo principale (o qualsiasi altro ramo). Fornisce una nuova versione del Branch principale in un determinato momento, consentendo lo sviluppo indipendentemente da ciò che è "Live". Questo uso dei rami è frequente per funzionalità nell'ambiente di sviluppo.
 
 Gli utenti possono creare tutti i rami che desiderano per ogni repository, ma è consigliabile eliminare i rami quando si finisce di usarli per mantenere organizzato il repository.
 

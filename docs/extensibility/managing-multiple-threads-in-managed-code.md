@@ -1,5 +1,7 @@
 ---
 title: 'Procedura: gestire più thread nel codice gestito | Microsoft Docs'
+description: Informazioni su come gestire più thread nel codice se l'estensione VSPackage gestita chiama metodi asincroni o ha operazioni esterne al thread dell'interfaccia utente di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fe5cef9f7aebcbfc93ffd057a109647e45b5967
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 480b42c13d13cdbdb299b629fd777e3346fcd67c
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387070"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616331"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>Procedura: gestire più thread nel codice gestito
 Se si dispone di un'estensione VSPackage gestita che chiama metodi asincroni o con operazioni eseguite su thread diversi dal thread dell'interfaccia utente di Visual Studio, è necessario attenersi alle linee guida indicate di seguito. È possibile far rispondere il thread dell'interfaccia utente perché non è necessario attendere il completamento del lavoro in un altro thread. È possibile rendere il codice più efficiente, perché non sono presenti thread aggiuntivi che occupano lo spazio dello stack ed è possibile renderlo più affidabile e più semplice da eseguire il debug perché si evitano deadlock e il codice non risponde.

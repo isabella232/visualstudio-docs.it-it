@@ -1,5 +1,7 @@
 ---
 title: Gestione dei progetti Windows universali | Microsoft Docs
+description: Per supportare le app di Windows universale, le estensioni di Visual Studio per la gestione dei progetti devono essere a conoscenza della struttura del progetto di app di Windows universale.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83e3b07bc3373070953709ffe913f37529e74bc7
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f86edd33e7719dc326aa2c5d252d11322509de64
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012308"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615564"
 ---
 # <a name="manage-universal-windows-projects"></a>Gestire i progetti di Windows universale
 
@@ -25,7 +27,7 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
 ### <a name="navigate-the-shared-project"></a>Esplorare il progetto condiviso
 
-1. Creare un progetto VSIX C# denominato **TestUniversalProject**. (**File**  >  **Nuovo**  >  **Progetto** e quindi **C#**  >  **Extensibility**  >  **pacchetto di Visual Studio**Extensibility per C#. Aggiungere un modello di elemento del progetto di **comando personalizzato** (nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**, quindi passare a **estendibilità**). Denominare il file **TestUniversalProject**.
+1. Creare un progetto VSIX C# denominato **TestUniversalProject**. (**File**  >  **Nuovo**  >  **Progetto** e quindi   >    >  **pacchetto di Visual Studio** Extensibility per C#. Aggiungere un modello di elemento del progetto di **comando personalizzato** (nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**, quindi passare a **estendibilità**). Denominare il file **TestUniversalProject**.
 
 2. Aggiungere un riferimento a *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* e *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (nella sezione **Extensions** ).
 
@@ -291,7 +293,7 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. È ora possibile provarlo. Premere F5 per avviare l'istanza sperimentale. Creare un progetto di App Hub universale C# nell'istanza sperimentale (nella finestra di dialogo **nuovo progetto** , **Visual C#**  >  **Windows**  >  **Windows 8**  >  **Universal**  >  **App Hub**universale Windows Windows 8 di Visual C#). Al termine del caricamento della soluzione, passare al menu **strumenti** e fare clic su **richiama TestUniversalProject**, quindi controllare il testo nel riquadro di **output** . Verrà visualizzata una schermata simile alla seguente:
+16. È ora possibile provarlo. Premere F5 per avviare l'istanza sperimentale. Creare un progetto di App Hub universale C# nell'istanza sperimentale (nella finestra di dialogo **nuovo progetto** ,   >    >    >    >  **App Hub** universale Windows Windows 8 di Visual C#). Al termine del caricamento della soluzione, passare al menu **strumenti** e fare clic su **richiama TestUniversalProject**, quindi controllare il testo nel riquadro di **output** . Verrà visualizzata una schermata simile alla seguente:
 
     ```
     Found shared project: HubApp.Shared
@@ -549,7 +551,7 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
     this.ModifyFileNameInProject(sharedHier, fullPath);
     ```
 
-11. Compilare ed eseguire il progetto. Creare un'app Universal Hub C# nell'istanza sperimentale, passare al menu **strumenti** e fare clic su **richiama TestUniversalProject**e controllare il testo nel riquadro di output generale. Il nome del primo elemento nel progetto condiviso (si prevede che sia il file *app. XAML* ) deve essere modificato e si noterà che l' <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> evento è stato generato. In questo caso, poiché rinominare *app. XAML* causa la ridenominazione di *app.XAML.cs* , dovrebbero essere visualizzati quattro eventi, due per ogni progetto di piattaforma. Gli eventi DTE non rilevano gli elementi nel progetto condiviso. Verranno visualizzati due <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventi (uno per ogni progetto di piattaforma), ma nessun <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> evento.
+11. Compilare ed eseguire il progetto. Creare un'app Universal Hub C# nell'istanza sperimentale, passare al menu **strumenti** e fare clic su **richiama TestUniversalProject** e controllare il testo nel riquadro di output generale. Il nome del primo elemento nel progetto condiviso (si prevede che sia il file *app. XAML* ) deve essere modificato e si noterà che l' <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> evento è stato generato. In questo caso, poiché rinominare *app. XAML* causa la ridenominazione di *app.XAML.cs* , dovrebbero essere visualizzati quattro eventi, due per ogni progetto di piattaforma. Gli eventi DTE non rilevano gli elementi nel progetto condiviso. Verranno visualizzati due <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> eventi (uno per ogni progetto di piattaforma), ma nessun <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> evento.
 
 12. A questo punto, provare a rinominare un file in un progetto di piattaforma ed è possibile visualizzare la differenza negli eventi che vengono generati. Aggiungere il codice seguente in `ShowMessageBox` dopo la chiamata a `ModifyFileName` .
 
@@ -566,4 +568,4 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
     this.ModifyFileNameInProject(activePlatformHier, unsharedPath);
     ```
 
-13. Compilare ed eseguire il progetto. Creare un progetto universale C# nell'istanza sperimentale, andare al menu **strumenti** e fare clic su **richiama TestUniversalProject**e controllare il testo nel riquadro di output generale. Dopo la ridenominazione del file nel progetto piattaforma, verranno visualizzati sia un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> evento che un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> evento. Poiché la modifica del file non ha causato la modifica di altri file e poiché le modifiche apportate agli elementi in un progetto di piattaforma non vengono propagate in nessun punto, esiste solo uno di questi eventi.
+13. Compilare ed eseguire il progetto. Creare un progetto universale C# nell'istanza sperimentale, andare al menu **strumenti** e fare clic su **richiama TestUniversalProject** e controllare il testo nel riquadro di output generale. Dopo la ridenominazione del file nel progetto piattaforma, verranno visualizzati sia un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> evento che un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> evento. Poiché la modifica del file non ha causato la modifica di altri file e poiché le modifiche apportate agli elementi in un progetto di piattaforma non vengono propagate in nessun punto, esiste solo uno di questi eventi.

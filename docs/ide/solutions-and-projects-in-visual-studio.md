@@ -1,5 +1,5 @@
 ---
-title: Soluzioni e progetti
+title: Panoramica di soluzioni e progetti
 description: Informazioni sui progetti e le soluzioni di Visual Studio, su come creare nuovi progetti da un modello e su come visualizzare & gestire i progetti in Esplora soluzioni.
 ms.custom: SEO-VS-2020
 ms.date: 12/15/2020
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebe6e5c7479ce4e3cda435c51a883c4d5db8cc45
-ms.sourcegitcommit: 6f37100d4b8c15a21d3858335ded3c26ab275b93
+ms.openlocfilehash: 1981bc5c9d1c2589607f355528c332d01284917e
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97599499"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615753"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 
@@ -68,11 +68,11 @@ Una "cartella della soluzione" è una cartella virtuale che è solo in **Esplora
 
 ## <a name="create-new-projects"></a>Crea nuovi progetti
 
-Il modo più semplice per creare un nuovo progetto è iniziare da un modello di progetto per un tipo particolare di applicazione o sito Web. Un modello di progetto è costituito da un set di base di file di codice, file di configurazione, risorse e impostazioni già generati. Questi modelli sono disponibili nella finestra di dialogo in cui è possibile creare un nuovo progetto (**file**  >  **nuovo**  >  **progetto**). Per ulteriori informazioni, vedere la pagina relativa alla [creazione di un nuovo progetto](create-new-project.md) e [all'utilizzo di soluzioni e progetti](../ide/creating-solutions-and-projects.md).
+Il modo più semplice per creare un nuovo progetto consiste nell'usare un modello di progetto per il tipo di progetto desiderato. Un modello di progetto include un set di base di file di codice, file di configurazione, asset e impostazioni generati in precedenza. Usare **file**  >  **nuovo**  >  **progetto** per selezionare un modello di progetto. Per ulteriori informazioni, vedere la pagina relativa alla [creazione di un nuovo progetto](create-new-project.md).
 
-Se si personalizzano spesso i progetti in un certo modo, è possibile creare un modello di progetto personalizzato che è possibile utilizzare per creare nuovi progetti da. Per altre informazioni, vedere [Creare modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md).
+È inoltre possibile creare un modello di progetto personalizzato che è possibile utilizzare per creare nuovi progetti da. Per altre informazioni, vedere [Creare modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md).
 
-Quando si crea un nuovo progetto, per impostazione predefinita viene salvato in *%USERPROFILE%\source\repos*. È possibile modificare questo percorso tramite l'impostazione **Percorso progetti** in **Strumenti** > **Opzioni** > **Progetti e soluzioni** > **Percorsi**. Per ulteriori informazioni su questa e altre impostazioni di progetti e soluzioni, vedere la [pagina progetti e soluzioni, finestra di dialogo Opzioni](./reference/projects-and-solutions-options-dialog-box.md).
+Quando si crea un nuovo progetto, Visual Studio lo salva nel percorso predefinito, *%USERPROFILE%\source\repos*. Per modificare questo percorso, passare a **strumenti**  >  **Opzioni**  >  **progetti e soluzioni**  >  **percorsi**. Per altre informazioni, vedere finestra di [dialogo Opzioni: progetti e soluzioni > percorsi](./reference/projects-solutions-locations-options.md).
 
 ## <a name="solution-explorer"></a>Esplora soluzioni
 
@@ -94,4 +94,3 @@ Per visualizzare un elenco di alcune delle icone visualizzate in Esplora soluzio
 - [IDE di Visual Studio](../get-started/visual-studio-ide.md)
 - [Portabilità, migrazione e aggiornamento dei progetti](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Progetti e soluzioni (Visual Studio per Mac)](/visualstudio/mac/projects-and-solutions)
-- [Aggiungere e rimuovere elementi del progetto (Visual Studio per Mac)](/visualstudio/mac/add-and-remove-project-items)

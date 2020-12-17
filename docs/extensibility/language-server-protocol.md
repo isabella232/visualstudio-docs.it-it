@@ -1,5 +1,7 @@
 ---
 title: Cenni preliminari sul protocollo server di linguaggio | Microsoft Docs
+description: Informazioni sul modo in cui il protocollo server del linguaggio fornisce un Framework utile per esporre le funzionalità del linguaggio a un'ampia gamma di strumenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bd5dce3cfb7022a8abb6397dc87b418144cbe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d642d1168cbd2a8bd7abadbcdbd7c1e2851b00e
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703111"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616130"
 ---
 # <a name="language-server-protocol"></a>Protocollo di server di linguaggio
 
@@ -108,7 +110,7 @@ Quando un utente utilizza linguaggi diversi, VS Code in genere avvia un server d
 
 ![Java e Sass](media/lsp-java-and-sass.png)
 
-### <a name="capabilities"></a>Capabilities
+### <a name="capabilities"></a>Funzionalità
 
 Non tutti i server di linguaggio sono in grado di supportare tutte le funzionalità definite dal protocollo. Pertanto, il client e il server annunciano la funzionalità supportata impostata tramite "funzionalità". Ad esempio, un server annuncia che è in grado di gestire la richiesta ' textDocument/Definition ', ma potrebbe non gestire la richiesta ' Workspace/symbol '. Analogamente, i client possono annunciare che sono in grado di fornire le notifiche di "informazioni sul salvataggio" prima del salvataggio di un documento, in modo che un server possa calcolare le modifiche testuali per formattare automaticamente il documento modificato.
 

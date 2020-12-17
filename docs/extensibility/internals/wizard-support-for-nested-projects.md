@@ -1,5 +1,7 @@
 ---
 title: Supporto della procedura guidata per i progetti annidati | Microsoft Docs
+description: Informazioni sulle due procedure guidate che un progetto padre può implementare per i progetti annidati nel pacchetto VSPackage in Visual Studio SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7f37700d908167ebef8c071021558822bdce173
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b3c6dee712f79648eba203650cc70f76fcea657
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703198"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615616"
 ---
 # <a name="wizard-support-for-nested-projects"></a>Supporto di procedure guidate per i progetti annidati
 L'IDE esegue due procedure guidate che il progetto padre per i progetti annidati può implementare: creazione guidata **nuovo progetto** e **Aggiunta guidata elemento** .

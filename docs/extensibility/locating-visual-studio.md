@@ -1,5 +1,7 @@
 ---
 title: Individuazione di Visual Studio | Microsoft Docs
+description: È possibile installare più istanze della stessa versione di Visual Studio. Informazioni su come usare un'API di query COM per trovare l'istanza desiderata.
+ms.custom: SEO-VS-2020
 ms.date: 08/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93a6f39a9240002cd8008c9368799e10ab63b78d
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 8935af62b16ed6dd6d0d5d61412f347a95f32f23
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012477"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616288"
 ---
 # <a name="locate-visual-studio"></a>Individuare Visual Studio
 
@@ -25,7 +27,7 @@ Si tratta di un'API veloce di sola lettura con pacchetti NuGet disponibili per i
 | Codice | Pacchetto |
 | ---- | --- |
 | Nativo | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| Gestiti | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| Gestita | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
 È possibile individuare una singola istanza in base a un percorso o al processo corrente oppure enumerare tutte le istanze. Per esempi completi su come individuare Visual Studio [, vedere gli esempi.](https://github.com/Microsoft/vs-setup-samples)
 

@@ -1,5 +1,7 @@
 ---
 title: Elemento tastiere | Microsoft Docs
+description: L'elemento dei tasti di gruppo raggruppa gli elementi di tasti di scelta e altri raggruppamenti di tasti di scelta. Questo articolo contiene un esempio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df1720286007d8f6acf073c21f5b2dcc8486782c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 928637d8103a69eafd3bda4446a55bb7523f83a8
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703132"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616091"
 ---
 # <a name="keybindings-element"></a>Elemento Portatasti
 L'elemento dei tasti di gruppo raggruppa gli elementi di tasti di scelta e altri raggruppamenti di tasti di scelta.
@@ -35,11 +37,11 @@ L'elemento dei tasti di gruppo raggruppa gli elementi di tasti di scelta e altri
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
-|Condizione|facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|Facoltativo. Vedere [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 

@@ -1,5 +1,7 @@
 ---
 title: Completamento delle parole in un servizio di linguaggio legacy | Microsoft Docs
+description: Il completamento delle parole può essere supportato per un servizio di linguaggio legacy in Visual Studio SDK. Informazioni sul modo in cui i servizi di linguaggio legacy sono implementati in un pacchetto VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 948751cde5b6b710d911a30ca26a61e5411bba4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 489b43c825e3512e1bd33bc732833de84aed54c3
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703167"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616275"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Completamento delle parole in un servizio di linguaggio legacy
 Il completamento delle parole compila i caratteri mancanti in una parola parzialmente tipizzata. Se è presente solo un possibile completamento, la parola viene completata quando viene immesso il carattere di completamento. Se la parola parziale corrisponde a più di una possibilità, viene visualizzato un elenco di possibili completamenti. Un carattere di completamento può essere qualsiasi carattere non utilizzato per gli identificatori.

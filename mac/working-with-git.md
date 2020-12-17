@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 148a72fb13ff34e3fa15f0c56e145a70fa16608d
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: dc865ec593f53149d9c004f252015def32325d18
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493231"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616177"
 ---
 # <a name="working-with-git"></a>Uso di Git
 
@@ -45,27 +45,27 @@ Nella parte inferiore della finestra sono visualizzate cinque schede, come illus
 
 Queste schede consentono le azioni seguenti:
 
-* **Origine** : visualizza il file del codice sorgente.
-* **Modifiche** : visualizza le modifiche del codice tra il file locale e il file di base. È anche possibile confrontare diverse versioni del file da hash diversi:
+* **Origine**: visualizza il file del codice sorgente.
+* **Modifiche**: visualizza le modifiche del codice tra il file locale e il file di base. È anche possibile confrontare diverse versioni del file da hash diversi:
 
     ![Scheda Modifiche](media/version-control-gitChange.png)
 
-* **Segnala errore** : visualizza il nome dell'utente associato a ogni sezione del codice.
-* **Log** : visualizza tutti i commit, le ore, le date, i messaggi e gli utenti responsabili del file:
+* **Segnala errore**: visualizza il nome dell'utente associato a ogni sezione del codice.
+* **Log**: visualizza tutti i commit, le ore, le date, i messaggi e gli utenti responsabili del file:
 
     ![Scheda Log](media/version-control-gitLog.png)
 
-* **Unisci** : può essere usata in caso di un conflitto di unione quando si esegue il commit del lavoro. Mostra una rappresentazione visiva delle modifiche apportate dall'utente e dall'altro sviluppatore, per consentire di combinare correttamente entrambe le sezioni del codice.
+* **Unisci**: può essere usata in caso di un conflitto di unione quando si esegue il commit del lavoro. Mostra una rappresentazione visiva delle modifiche apportate dall'utente e dall'altro sviluppatore, per consentire di combinare correttamente entrambe le sezioni del codice.
 
 ## <a name="switching-branches"></a>Cambio di rami
 
-Per impostazione predefinita, il primo ramo creato in un repository è denominato ramo **Master**. Tecnicamente non vi è alcuna differenza tra il ramo master e l'altro ma il ramo master viene più frequentemente considerato come ramo "attivo" o di "produzione" dai team di sviluppo.
+Per impostazione predefinita, il primo ramo creato in un repository è noto come Branch **principale** . Non esiste tecnicamente alcuna differenza tra il ramo principale e qualsiasi altro, ma il ramo principale è quello che più spesso si considera nei team di sviluppo come ramo "Live" o "produzione".
 
-È possibile creare una linea di sviluppo indipendente, creando una diramazione del ramo master (o di qualsiasi altro ramo). Questo offre una nuova versione del ramo master in un determinato punto nel tempo, consentendo lo sviluppo indipendente di ciò che è "attivo". Questo uso dei rami è frequente per funzionalità nell'ambiente di sviluppo.
+Una linea di sviluppo indipendente può essere creata diramando il ramo principale (o qualsiasi altro ramo). Fornisce una nuova versione del Branch principale in un determinato momento, consentendo lo sviluppo indipendentemente da ciò che è "Live". Questo uso dei rami è frequente per funzionalità nell'ambiente di sviluppo.
 
 Gli utenti possono creare tutti i rami che desiderano per ogni repository, ma è consigliabile eliminare i rami quando si finisce di usarli per mantenere organizzato il repository.
 
-Per visualizzare i rami in Visual Studio per Mac, spostarsi su **Controllo della versione > Gestisci rami ed origini remote...** :
+Per visualizzare i rami in Visual Studio per Mac, spostarsi su **Controllo della versione > Gestisci rami ed origini remote...**:
 
 ![Visualizzazione dei rami](media/version-control-gitBranch2.png)
 
@@ -85,13 +85,13 @@ Vedere Current Branch nella finestra della soluzione accanto al nome del progett
 
 Per rivedere le modifiche nei file, usare le schede Modifiche, Segnala errore, Log e Unisci in ogni documento, come illustrato precedentemente in questo argomento.
 
-Rivedere tutte le modifiche del progetto spostandosi sulla voce di menu **Controllo della versione > Review Solution and Commit (Rivedi soluzione ed esegui commit)** :
+Rivedere tutte le modifiche del progetto spostandosi sulla voce di menu **Controllo della versione > Review Solution and Commit (Rivedi soluzione ed esegui commit)**:
 
 ![Visualizzazione di revisione del codice](media/version-control-gitReviewCommit.png)
 
 Ciò consente di visualizzare tutte le modifiche in ogni file di un progetto con l'opzione di annullarle, creare una patch o eseguire il commit.
 
-Per eseguire il commit di un file nel repository remoto, premere **commit** , immettere un messaggio di commit e confermare con il pulsante commit:
+Per eseguire il commit di un file nel repository remoto, premere **commit**, immettere un messaggio di commit e confermare con il pulsante commit:
 
 ![Commit di un file](media/version-control-gitCommit.png)
 
