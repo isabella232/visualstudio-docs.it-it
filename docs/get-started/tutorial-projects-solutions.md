@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b22695dac3f75b9e90950ee5428bb906436d661
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 48fb0f1c22b2f7055005640baff2239a0ad4a32a
+ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903936"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97646411"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Informazioni su progetti e soluzioni
 
@@ -201,6 +201,8 @@ Ora si aggiungerà un progetto unit test alla soluzione. Questa volta si inizier
 
 Il nuovo progetto unit test verrà utilizzato per il test del metodo nel progetto **QuickDate**, pertanto è necessario aggiungere un riferimento a tale progetto. Questa operazione crea una *dipendenza di compilazione*, vale a dire che quando si crea la soluzione, **QuickDate** viene compilato prima di **QuickTest**.
 
+::: moniker range="vs-2017"
+
 1. Scegliere il nodo **Dipendenze** nel progetto **QuickTest**, quindi nel menu di scelta rapida o nel menu a comparsa scegliere **Aggiungi riferimento**.
 
    Viene visualizzata la finestra di dialogo **Gestione riferimenti**.
@@ -210,6 +212,22 @@ Il nuovo progetto unit test verrà utilizzato per il test del metodo nel progett
    Viene aggiunto un riferimento al progetto **QuickDate**.
 
    ![Esplora soluzioni in Visual Studio 2019 con il riferimento al progetto](media/vs-2019/tutorial-projects-solution-explorer-reference.png "Esplora soluzioni che mostra un riferimento al progetto in Visual Studio.")
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Scegliere il nodo **dipendenze** nel progetto **QuickTest** e fare clic con il pulsante destro del mouse o scegliere **Aggiungi riferimento al progetto** dal menu di scelta rapida.
+
+   Viene visualizzata la finestra di dialogo **Gestione riferimenti**.
+
+1. Nel riquadro sinistro espandere **Progetti** e scegliere **Soluzione**. Nel riquadro centrale scegliere la casella di controllo accanto a **QuickDate**, quindi scegliere **OK**.
+
+   Viene aggiunto un riferimento al progetto **QuickDate**.
+
+   ![Esplora soluzioni in Visual Studio 2019 con il riferimento al progetto](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+   
+::: moniker-end
 
 ## <a name="add-test-code"></a>Aggiungere codice di test
 

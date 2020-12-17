@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 529c19753d09d6335e5c9fc5e839cdb7cd0c118c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 824c711fc0ebb26a78338a65808c6fdbed768919
+ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745786"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97646398"
 ---
 # <a name="assertions-in-managed-code"></a>Asserzioni nel codice gestito
 Un'asserzione, o istruzione `Assert`, verifica una condizione specificata come argomento dell'istruzione `Assert`. Se la condizione restituisce true, non viene eseguita alcuna azione. Se restituisce false, l'asserzione ha esito negativo. Se l'esecuzione avviene all'interno di una build di debug, viene attivata la modalità di interruzione.
@@ -66,8 +66,10 @@ End Function
 
 ```csharp
 int IntegerDivide ( int dividend , int divisor )
-    { Debug.Assert ( divisor != 0 );
-        return ( dividend / divisor ); }
+{
+    Debug.Assert ( divisor != 0 );
+    return ( dividend / divisor );
+}
 ```
 
  Quando si esegue questo codice nel debugger, l'istruzione di asserzione viene valutata, ma nella versione di rilascio il confronto non viene eseguito, pertanto non viene generato alcun sovraccarico aggiuntivo.
@@ -154,7 +156,7 @@ Debug.Assert ( temp != 0 );
 
   Per utilizzare i metodi Debug in una build di rilascio di C# o Visual Basic, è necessario definire il simbolo DEBUG nella configurazione di rilascio.
 
-  C++ non supporta i metodi della classe <xref:System.Diagnostics.Debug>. È possibile ottenere lo stesso effetto utilizzando la classe <xref:System.Diagnostics.Trace> con compilazione condizionale, ad esempio `#ifdef DEBUG`... `#endif`. È possibile definire questi simboli nella finestra di dialogo ** \<Project> pagine delle proprietà** . Per altre informazioni, vedere [Modifica delle impostazioni di progetto per una configurazione di debug di Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) o [Modifica delle impostazioni di progetto per una configurazione di debug di C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+  C++ non supporta i metodi della classe <xref:System.Diagnostics.Debug>. È possibile ottenere lo stesso effetto utilizzando la classe <xref:System.Diagnostics.Trace> con compilazione condizionale, ad esempio `#ifdef DEBUG`... `#endif`. È possibile definire questi simboli nella finestra di dialogo **\<Project> pagine delle proprietà** . Per altre informazioni, vedere [Modifica delle impostazioni di progetto per una configurazione di debug di Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) o [Modifica delle impostazioni di progetto per una configurazione di debug di C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
 ## <a name="assert-arguments"></a><a name="BKMK_Assert_arguments"></a>Argomenti del metodo Assert
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> e <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> accettano fino a tre argomenti. Il primo argomento obbligatorio è la condizione che si desidera verificare. Se si chiama <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> o <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName> con un solo argomento, il metodo `Assert` verifica la condizione e, se il risultato è false, genera il contenuto dello stack di chiamate nella finestra **Output**. Nell'esempio riportato di seguito sono illustrati i metodi <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> e <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>:
