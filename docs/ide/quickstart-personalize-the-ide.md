@@ -3,18 +3,18 @@ title: Impostare il tema scuro di Visual Studio e modificare i colori del testo
 description: Informazioni su come modificare il tema colori predefinito di Visual Studio in modalità scura e modificare i colori dei caratteri nell'editor di codice.
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d58bf3a00d3db208abfad23a67bd115914f14a15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d261d6c13572be6df80ca36f37e19792d53e2a32
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801399"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684037"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>Procedura: personalizzare l'IDE di Visual Studio e l'editor
 
@@ -38,7 +38,7 @@ Il tema colori predefinito per l'interfaccia utente di Visual Studio è denomina
 
 1. Nella barra dei menu, ovvero la riga dei menu con **File** e **Modifica**, scegliere **Strumenti** > **Opzioni**.
 
-1. Nella **Environment**  >  pagina Opzioni**generali** ambiente modificare la selezione del **tema colori** in **scuro**, quindi scegliere **OK**.
+1. Nella   >  pagina Opzioni **generali** ambiente modificare la selezione del **tema colori** in **scuro**, quindi scegliere **OK**.
 
    Il tema colori per l'intero ambiente di sviluppo di Visual Studio (IDE) diventa **scuro**.
 

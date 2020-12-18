@@ -3,7 +3,7 @@ title: Modificare i temi, i tipi di carattere, il testo e il contrasto per l'acc
 description: Informazioni su come modificare i temi colori di Visual Studio, i colori dei tipi di carattere, le dimensioni del testo e i colori a contrasto aggiuntivo per problemi di semplicità d'uso e accessibilità.
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe2b73f7f2ba771875355279043558f3c4cf105
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 7c52be25c007a16d7e6221663c434767c02d8d50
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/18/2020
-ms.locfileid: "97667910"
+ms.locfileid: "97683903"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Procedura: modificare i tipi di carattere, i colori e i temi in Visual Studio
 

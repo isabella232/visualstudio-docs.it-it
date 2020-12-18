@@ -3,17 +3,17 @@ title: Modificare il tasto della Guida F1
 description: Viene descritto come rimappare o rimuovere il mapping del tasto F1
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 robots: noindex,nofollow
 manager: jillfra
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: debf469248a8ec1906f3692c37835d9f96476f54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9add6996949a97d6140ab6d063f13e02b677e79
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88802272"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684084"
 ---
 # <a name="change-the-f1-help-key-in-visual-studio"></a>Modificare il tasto della Guida F1 in Visual Studio
 
@@ -24,7 +24,7 @@ Se si desidera utilizzare il tasto F1 per una funzione diversa rispetto al servi
 
 **Per disabilitare la Guida sensibile al contesto:**
 
-1. In Visual Studio selezionare **strumenti**  >  **Opzioni**, quindi in **ambiente**selezionare **tastiera**.
+1. In Visual Studio selezionare **strumenti**  >  **Opzioni**, quindi in **ambiente** selezionare **tastiera**.
 
 1. Nella casella di testo **Mostra comandi contenenti** digitare **Help. F1** per filtrare la visualizzazione dei comandi.
 
@@ -34,6 +34,6 @@ Se si desidera utilizzare il tasto F1 per una funzione diversa rispetto al servi
 
 1. Selezionare la casella di testo **premere il tasto di scelta rapida** .
 
-1. Sulla tastiera premere una nuova combinazione di tasti o tasti per la Guida sensibile al contesto, ad esempio **ALT + F1**, selezionare **assegna**e quindi fare clic su **OK**.
+1. Sulla tastiera premere una nuova combinazione di tasti o tasti per la Guida sensibile al contesto, ad esempio **ALT + F1**, selezionare **assegna** e quindi fare clic su **OK**.
 
 Per altre informazioni sull'impostazione dei tasti di scelta rapida, vedere [identificare e personalizzare i tasti di scelta rapida](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Altre informazioni sulle opzioni di pubblicazione per l'app con lo strumento di pubblicazione.
 ms.custom:
 - SEO-VS-2020
-- contperfq1
+- contperf-fy21q1
 ms.date: 08/21/2020
 ms.topic: troubleshooting
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45fc0a58262a533416f630ede795d0060f9fc909
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 86a771b1eae096227a46378c8146e6aa5d9e2a06
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434493"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97683930"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Distribuire l'app in una cartella, IIS, Azure o un'altra destinazione
 
@@ -181,7 +181,7 @@ Per ulteriori informazioni sulla scelta delle impostazioni, vedere gli argomenti
 
 Un server FTP/FTPS consente di distribuire l'applicazione in un server diverso da Azure. È possibile distribuire l'applicazione a un file system o qualsiasi altro server (Internet o Intranet) a cui si ha accesso, inclusi quelli presenti in altri servizi cloud. È anche possibile usare una distribuzione Web (file o .ZIP) e FTP.
 
-Quando si sceglie un server FTP/FTPS, Visual Studio richiede un nome di profilo, quindi raccoglie informazioni aggiuntive sulla **connessione** , tra cui il server o il percorso di destinazione, il nome di un sito e le credenziali. È possibile controllare i comportamenti seguenti nella scheda **Impostazioni** :
+Quando si sceglie un server FTP/FTPS, Visual Studio richiede un nome di profilo, quindi raccoglie informazioni aggiuntive sulla **connessione** , tra cui il server o il percorso di destinazione, il nome di un sito e le credenziali. È possibile controllare i comportamenti seguenti nella scheda **Impostazioni**:
 
 - La configurazione da distribuire.
 - Se rimuovere i file esistenti dalla destinazione.
@@ -200,7 +200,7 @@ Quando si sceglie un server FTP/FTPS, Visual Studio richiede un nome di profilo,
 
 Un server Web IIS consente di distribuire l'applicazione in un server Web diverso da Azure. Può essere distribuito in un server IIS (Internet o Intranet) a cui si ha accesso, inclusi quelli in altri servizi cloud. Può funzionare con Distribuzione Web o un pacchetto di Distribuzione Web.
 
-Quando si sceglie un server Web IIS, Visual Studio richiede un nome di profilo, quindi raccoglie informazioni aggiuntive sulla **connessione** , tra cui il server o il percorso di destinazione, un nome di sito e le credenziali. È possibile controllare i comportamenti seguenti nella scheda **Impostazioni** :
+Quando si sceglie un server Web IIS, Visual Studio richiede un nome di profilo, quindi raccoglie informazioni aggiuntive sulla **connessione** , tra cui il server o il percorso di destinazione, un nome di sito e le credenziali. È possibile controllare i comportamenti seguenti nella scheda **Impostazioni**:
 
 - La configurazione da distribuire.
 - Se rimuovere i file esistenti dalla destinazione.
@@ -221,7 +221,7 @@ Per informazioni sulla risoluzione dei problemi relativi a ASP.NET Core in IIS, 
 
 ## <a name="import-profile"></a>Importa profilo
 
-È possibile importare un profilo durante la pubblicazione in IIS o app Azure servizio. È possibile configurare la distribuzione usando un *file di impostazioni di pubblicazione* (con *\* estensione publishsettings* ). Il file delle impostazioni di pubblicazione viene creato da IIS o dal servizio app di Azure oppure può essere creato manualmente e quindi importato in Visual Studio.
+È possibile importare un profilo durante la pubblicazione in IIS o app Azure servizio. È possibile configurare la distribuzione usando un *file di impostazioni di pubblicazione* (con *\* estensione publishsettings*). Il file delle impostazioni di pubblicazione viene creato da IIS o dal servizio app di Azure oppure può essere creato manualmente e quindi importato in Visual Studio.
 
 L'uso di un file di impostazioni di pubblicazione può semplificare la configurazione della distribuzione e funziona meglio in un ambiente team rispetto alla configurazione manuale di ogni profilo di distribuzione.
 

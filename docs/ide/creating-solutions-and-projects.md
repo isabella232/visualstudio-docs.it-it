@@ -1,7 +1,7 @@
 ---
 title: Usare soluzioni e progetti
 description: Informazioni sulla differenza tra soluzioni e progetti e su come usarli in Visual Studio.
-ms.custom: SEO-VS-2020
+ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 02/06/2018
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bbfa16273dc323d2ad175e965a19a22ad0d17ce
-ms.sourcegitcommit: 6f37100d4b8c15a21d3858335ded3c26ab275b93
+ms.openlocfilehash: c6649b313d4ab03c1f096a6bcbc466cb338f427c
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97599479"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684026"
 ---
 # <a name="work-with-solutions-and-projects"></a>Usare soluzioni e progetti
 
@@ -48,18 +48,18 @@ Per informazioni sulla creazione di un nuovo progetto da un modello, vedere [Cre
 
 Se è presente una raccolta di file di origine di codice è possibile aggiungerli facilmente a un progetto.
 
-1. Dal menu scegliere **file**  >  **nuovo**  >  **progetto da codice esistente**.
+1. Nel menu selezionare **file**  >  **nuovo**  >  **progetto da codice esistente**.
 
-1. In **Creazione guidata nuovo progetto da file di codice esistenti** scegliere il tipo di progetto desiderato nella casella di riepilogo a discesa **Specificare il tipo di progetto che si vuole creare** e quindi scegliere **Avanti**.
+1. Nella procedura guidata **Crea progetto da file di codice esistenti** selezionare il tipo di progetto desiderato nella casella di riepilogo a discesa **specificare il tipo di progetto che si desidera creare** e quindi selezionare il pulsante **Avanti** .
 
-1. Nella procedura guidata, passare al percorso dei file e immettere un nome per il nuovo progetto nella casella **Nome**. Al termine scegliere il pulsante **Fine**.
+1. Nella procedura guidata, passare al percorso dei file e immettere un nome per il nuovo progetto nella casella **Nome**. Al termine, selezionare il pulsante **fine** .
 
 > [!NOTE]
 > Questa opzione risulta più adatta per raccolte di file relativamente semplici. Attualmente sono supportati solo i tipi di progetto C++, Apache Cordova, Visual Basic e C#.
 
 ## <a name="add-files-to-a-solution"></a>Aggiungere file a una soluzione
 
-Se è presente un file che può essere usato per più progetti, ad esempio un file Leggimi per la soluzione o altri file che appartengono al livello della soluzione più che a un progetto specifico, è possibile aggiungerli alla soluzione stessa. Per aggiungere un elemento a una soluzione fare clic con il pulsante destro del mouse sul nodo della soluzione in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo elemento** o **Aggiungi** > **Elemento esistente**.
+Se è presente un file che può essere usato per più progetti, ad esempio un file Leggimi per la soluzione o altri file che appartengono al livello della soluzione più che a un progetto specifico, è possibile aggiungerli alla soluzione stessa. Per aggiungere un elemento a una soluzione, fare clic con il pulsante destro del mouse sul menu di scelta rapida del nodo della soluzione in **Esplora soluzioni**, scegliere **Aggiungi**  >  **nuovo elemento** o **Aggiungi**  >  **elemento esistente**.
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Creare un progetto .NET che usa una specifica versione di .NET Framework
 
@@ -67,7 +67,7 @@ Quando si crea un progetto .NET Framework è possibile indicare la versione spec
 
 ::: moniker range="vs-2017"
 
-Per specificare una versione di .NET Framework, scegliere il menu a discesa **Framework** nella finestra di dialogo **nuovo progetto** .
+Per specificare una versione di .NET Framework, selezionare il menu a discesa **Framework** nella finestra di dialogo **nuovo progetto** .
 
 ![Elenco a discesa Framework nella finestra di dialogo Nuovo progetto](./media/vside-newproject-framework.png)
 
@@ -78,7 +78,7 @@ Per specificare una versione di .NET Framework, scegliere il menu a discesa **Fr
 
 ::: moniker range=">=vs-2019"
 
-Per specificare una versione di .NET Framework, scegliere il menu a discesa **Framework** nella pagina **Crea un nuovo progetto** .
+Per specificare una versione di .NET Framework, selezionare il menu a discesa **Framework** nella pagina **Crea un nuovo progetto** .
 
 ![Selettore Framework nella configurazione di un nuovo progetto](media/vs-2019/configure-new-project-framework.png)
 
@@ -90,15 +90,15 @@ Per specificare una versione di .NET Framework, scegliere il menu a discesa **Fr
 
 ### <a name="to-create-an-empty-solution"></a>Per creare una soluzione vuota
 
-1. Sulla barra dei menu scegliere **file**  >  **nuovo**  >  **progetto**.
+1. Nella barra dei menu selezionare **file**  >  **nuovo**  >  **progetto**.
 
 ::: moniker range="vs-2017"
 
-2. Nel riquadro a sinistra (**Modelli**) scegliere **Altri tipi di progetto** > **Soluzioni di Visual Studio** nell'elenco espanso.
+2. Nel riquadro sinistro (**modelli**) selezionare **altri tipi di progetto** > **soluzioni di Visual Studio** nell'elenco espanso.
 
-3. Nel riquadro centrale scegliere **Soluzione vuota**.
+3. Nel riquadro centrale selezionare **Soluzione vuota**.
 
-4. Immettere i valori **Nome** e **Percorso** per la soluzione e quindi scegliere **OK**.
+4. Immettere i valori **nome** e **percorso** per la soluzione e quindi fare clic su **OK**.
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ Per specificare una versione di .NET Framework, scegliere il menu a discesa **Fr
 
 3. Selezionare il modello **Soluzione vuota** e quindi fare clic su **Avanti**.
 
-4. Immettere i valori **Nome** e **Percorso** per la soluzione e quindi scegliere **Crea**.
+4. Immettere i valori **nome** e **percorso** per la soluzione e quindi selezionare **Crea**.
 
 ::: moniker-end
 
@@ -137,11 +137,11 @@ Per creare un progetto temporaneo, passare prima a **strumenti**  >  **Opzioni**
 
 ### <a name="permanently-delete-a-solution"></a>Eliminare una soluzione in modo permanente
 
-1. In **Esplora soluzioni** scegliere **Apri cartella in Esplora file** dal menu di scelta rapida della soluzione da eliminare.
+1. In **Esplora soluzioni** scegliere **Apri cartella in Esplora file** dal menu di scelta rapida (menu di scelta rapida) della soluzione che si desidera eliminare.
 
 1. In Esplora file spostarsi in alto di un livello.
 
-1. Scegliere la cartella contenente la soluzione e quindi premere **Canc**.
+1. Selezionare la cartella che contiene la soluzione, quindi premere il tasto **Canc** .
 
 ## <a name="see-also"></a>Vedere anche
 

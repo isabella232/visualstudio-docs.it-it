@@ -1,8 +1,8 @@
 ---
-title: Scopri le soluzioni e i progetti
+title: Informazioni su soluzioni e progetti
 description: Informazioni sui progetti e le soluzioni di Visual Studio, su come creare nuovi progetti da un modello e su come visualizzare & gestire i progetti in Esplora soluzioni.
-ms.custom: SEO-VS-2020
-ms.date: 12/15/2020
+ms.custom: SEO-VS-2020, contperf-fy21q2
+ms.date: 12/17/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewitem
@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19d0d2fc862572fdf7226a78e0b34d0af0d57541
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 51a2f9683dd2285cc71dfff67020687f0c48afa4
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668092"
+ms.locfileid: "97683918"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 
@@ -77,11 +77,14 @@ Il modo più semplice per creare un nuovo progetto consiste nell'usare un modell
 
 Quando si crea un nuovo progetto, Visual Studio lo salva nel percorso predefinito, *%USERPROFILE%\source\repos*. Per modificare questo percorso, passare a **strumenti**  >  **Opzioni**  >  **progetti e soluzioni**  >  **percorsi**. Per altre informazioni, vedere finestra di [dialogo Opzioni: progetti e soluzioni > percorsi](./reference/projects-solutions-locations-options.md).
 
+> [!TIP]
+> Per un esempio di progetto e di soluzione creato da zero, completate con istruzioni dettagliate e codice di esempio, vedere [Introduzione a progetti e soluzioni](../get-started/tutorial-projects-solutions.md).
+
 ## <a name="solution-explorer"></a>Esplora soluzioni
 
 Dopo aver creato un nuovo progetto, è possibile usare **Esplora soluzioni** per visualizzare e gestire il progetto e la soluzione, nonché gli elementi associati. La figura seguente illustra **Esplora soluzioni** con una soluzione C# contenente due progetti:
 
-![Esplora soluzioni](../ide/media/vs2015_solution_explorer.png)
+![Screenshot del Esplora soluzioni.](../ide/media/vs2015_solution_explorer.png)
 
 Sono disponibili molti comandi di menu dal menu di scelta rapida per vari elementi in **Esplora soluzioni**. Questi comandi includono la compilazione di un progetto, la gestione dei pacchetti NuGet, l'aggiunta di un riferimento, la ridenominazione di un file e l'esecuzione di test, solo per citarne alcuni. La barra degli strumenti nella parte superiore di **Esplora soluzioni** include pulsanti per passare dalla visualizzazione della soluzione alla visualizzazione delle cartelle, visualizzare i file nascosti, comprimere tutti i nodi e altro ancora.
 
