@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 901a5a5eea7835720ab9d5963f0ab1be36df3685
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168736"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668859"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -302,7 +302,7 @@ Impostare i seguenti valori del registro di sistema per abilitare il fallback F1
 
    - Per i sistemi operativi a 64 bit:
 
-        HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
+        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
         "VendorContent" = DWORD: 00000001
 
@@ -310,13 +310,13 @@ Impostare i seguenti valori del registro di sistema per abilitare il fallback F1
 
    - Per i sistemi operativi a 32 bit:
 
-      <em> \\ Spazio dei nomi \> </em> HKEY_LOCAL_MACHINE \software\microsoft\help\v2.3\partner<
+      <em> \\ Spazio dei nomi \> HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner<</em>
 
       "location" = "offline"
 
    - Per i sistemi operativi a 64 bit:
 
-      <em> \\ Spazio dei nomi \> </em> HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\help\v2.3\partner<
+      <em> \\ Spazio dei nomi \> HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<</em>
 
       "location" = "offline"
 
@@ -324,7 +324,7 @@ Impostare i seguenti valori del registro di sistema per abilitare il fallback F1
 
 Per attivare l'analisi dello spazio dei nomi nativo di base, nel registro di sistema aggiungere un nuovo valore DWORD con il nome: BaseNativeNamespaces e impostare il relativo valore su 1 (sotto la chiave del catalogo che si desidera supportare).  Se ad esempio si vuole usare il catalogo di Visual Studio, è possibile aggiungere la chiave al percorso:
 
-HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
 Quando viene rilevata una parola chiave F1 nel metodo o nell'intestazione del formato, il carattere '/' verrà analizzato, ottenendo il costrutto seguente:
 
@@ -342,13 +342,13 @@ Aggiungere la chiave e il valore del registro di sistema seguenti:
 
 ::: moniker range="vs-2017"
 
-**Guida di HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\15.0\Dynamic**
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help**
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-**Guida di HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\16.0\Dynamic**
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic Help**
 
 ::: moniker-end
 
@@ -459,7 +459,7 @@ Nota: le variabili indicate da "{n}" presentano dipendenze del codice. la rimozi
 | ViewColorizedText | Visualizza colori |
 | CombinedVBTabDisplayLanguage | Visual Basic (esempio) |
 | VBDeclaration | Dichiarazione |
-| VBUsage | Utilizzo |
+| VBUsage | Uso |
 | Funzionalità: | **Feedback, piè di pagina e logo** |
 | Usare: | Fornire un controllo feedback per il cliente per fornire commenti e suggerimenti sull'argomento corrente tramite posta elettronica.  Testo del copyright per il contenuto.  Definizione del logo. |
 | **elemento** | **Valore (queste stringhe possono essere modificate per soddisfare le esigenze di adozione del contenuto).** |
@@ -469,7 +469,7 @@ Nota: le variabili indicate da "{n}" presentano dipendenze del codice. la rimozi
 | LogoTitle | [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] |
 | LogoFileName | vs_logo_bk.gif |
 | LogoFileNameHC | vs_logo_wh.gif |
-| Funzionalità: | **Dichiarazione di non responsabilità** |
+| Funzionalità: | **Non responsabilità** |
 | Usare: | Set di dichiarazioni di non responsabilità specifiche del caso per il contenuto tradotto dal computer. |
 | **elemento** | **Valore** |
 | MT_Editable | Questo articolo è stato tradotto dal computer. Se si dispone di una connessione Internet, selezionare "Visualizza questo argomento online" per visualizzare la pagina in modalità modificabile con il contenuto originale in lingua inglese nello stesso momento. |
@@ -597,7 +597,7 @@ I file CSS di personalizzazione includono le definizioni per la presentazione de
 
 Il contenuto di Visual Studio Visualizza un logo di Visual Studio e altri elementi grafici.  Di seguito è riportato l'elenco completo dei file grafici nel pacchetto di personalizzazione del Visualizzatore della Guida di Visual Studio.
 
-|**File**|**Uso**|**esempi**|
+|**File**|**Uso**|**Esempi**|
 |-|-|-|
 |clear.gif|Usato per eseguire il rendering dell'area comprimibile||
 |footer_slice.gif|Presentazione del piè di pagina||
@@ -698,7 +698,7 @@ L'uso ed estensione dei passaggi precedenti consentirà a VSPs di distribuire i 
 
 Questa procedura dettagliata illustra come incorporare il contenuto della Guida in un'applicazione shell di Visual Studio e quindi distribuirlo.
 
-**Requisiti**
+**Requirements**
 
 1. [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]
 
@@ -741,11 +741,11 @@ Definire l'archivio del contenuto nel registro di sistema. Per la shell integrat
 
 Per creare un'estensione della shell isolata:
 
-1. In Visual Studio, in **file**scegliere **nuovo progetto**, in **altri tipi di progetto** scegliere **estendibilità**, quindi scegliere  **Visual Studio Shell isolata**. Denominare il progetto `ContosoHelpShell` ) per creare un progetto di estendibilità basato sul modello Visual Studio Isolated Shell.
+1. In Visual Studio, in **file** scegliere **nuovo progetto**, in **altri tipi di progetto** scegliere **estendibilità**, quindi scegliere  **Visual Studio Shell isolata**. Denominare il progetto `ContosoHelpShell` ) per creare un progetto di estendibilità basato sul modello Visual Studio Isolated Shell.
 
 2. In Esplora soluzioni, nella cartella file di risorse del progetto ContosoHelpShellUI aprire ApplicationCommands. vsct. Verificare che questa riga sia impostata come commento (cercare "No_Help"): `<!-- <define name="No_HelpMenuCommands"/> -->`
 
-3. Premere il tasto F5 per compilare ed eseguire il **debug**. Nell'istanza sperimentale dell'IDE della shell isolata, scegliere il menu **Guida** . Verificare che vengano visualizzati i comandi **Visualizza Guida**, **Aggiungi e Rimuovi contenuto della Guida**e **imposta preferenza** guida.
+3. Premere il tasto F5 per compilare ed eseguire il **debug**. Nell'istanza sperimentale dell'IDE della shell isolata, scegliere il menu **Guida** . Verificare che vengano visualizzati i comandi **Visualizza Guida**, **Aggiungi e Rimuovi contenuto della Guida** e **imposta preferenza** guida.
 
 4. In Esplora soluzioni, nel progetto ContosHelpShell, nella cartella personalizzazione della shell aprire ContosoHelpShell. pkgdef. Per definire il catalogo della Guida di Contoso, aggiungere le righe seguenti:
 
@@ -773,7 +773,7 @@ Per creare un'estensione della shell isolata:
     @="{4A791146-19E4-11D3-B86B-00C04F79F802}"
     ```
 
-6. In Esplora soluzioni scegliere la voce di menu **Proprietà** dal menu di scelta rapida della soluzione ContosoHelpShell. In **proprietà di configurazione**selezionare **Configuration Manager**. Nella colonna **configurazione** modificare ogni valore di "debug" in "release".
+6. In Esplora soluzioni scegliere la voce di menu **Proprietà** dal menu di scelta rapida della soluzione ContosoHelpShell. In **proprietà di configurazione** selezionare **Configuration Manager**. Nella colonna **configurazione** modificare ogni valore di "debug" in "release".
 
 7. Compilare la soluzione. Viene creato un set di file in una cartella di versione, che verrà usato nella sezione successiva.
 
@@ -822,7 +822,7 @@ Per eseguire il test come se venisse distribuito:
 
 10. Avviare l'applicazione Contoso (dalla radice dell'app Contoso). All'interno della shell ISO scegliere la voce **di menu?** e modificare la **preferenza impostare la preferenza** per l'uso della **Guida locale**.
 
-11. All' **interno della shell** , scegliere la voce di menu?, quindi visualizzare la **Guida**. Verrà avviato il Visualizzatore della guida locale. Scegliere la scheda **Gestisci contenuto** . In **origine installazione**scegliere il pulsante di opzione **disco** . Scegliere il pulsante **...** e passare alla cartella locale che contiene il contenuto di Contoso (copiato nella cartella locale nel passaggio precedente). Scegliere HelpContentSetup. msha. Contoso verrà ora visualizzato come libro nelle selezioni del libro. Scegliere **Aggiungi**, quindi fare clic sul pulsante **Aggiorna** (angolo inferiore destro).
+11. All' **interno della shell** , scegliere la voce di menu?, quindi visualizzare la **Guida**. Verrà avviato il Visualizzatore della guida locale. Scegliere la scheda **Gestisci contenuto** . In **origine installazione** scegliere il pulsante di opzione **disco** . Scegliere il pulsante **...** e passare alla cartella locale che contiene il contenuto di Contoso (copiato nella cartella locale nel passaggio precedente). Scegliere HelpContentSetup. msha. Contoso verrà ora visualizzato come libro nelle selezioni del libro. Scegliere **Aggiungi**, quindi fare clic sul pulsante **Aggiorna** (angolo inferiore destro).
 
 12. Nell'IDE di Contoso scegliere il tasto F1 per testare la funzionalità F1.
 
@@ -832,4 +832,4 @@ Per l'API di runtime, vedere [API della Guida di Windows](/previous-versions/win
 
 Per altre informazioni su come sfruttare l'API della guida, vedere [esempi di codice del Visualizzatore della Guida](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples).
 
-È possibile inviare suggerimenti sulle funzionalità nella [community degli sviluppatori](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+È possibile inviare suggerimenti sulle funzionalità nella [community degli sviluppatori](https://aka.ms/feedback/suggest?space=8).

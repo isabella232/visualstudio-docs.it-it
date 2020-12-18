@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a17f196f48b053f8b834b8fd25b8c0295e42b547
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88114211"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668898"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Suggerire una funzionalità per Visual Studio
 
-È stata introdotta una nuova esperienza che, insieme all'attuale possibilità di segnalare problemi in [Visual Studio Developer Community](https://developercommunity.visualstudio.com), consente di suggerire nuove funzionalità. Si tratta di un modo nuovo per poter interagire direttamente con il flusso di lavoro di progettazione di Visual Studio.
+È stata introdotta una nuova esperienza che, insieme all'attuale possibilità di segnalare problemi in [Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8), consente di suggerire nuove funzionalità. Si tratta di un modo nuovo per poter interagire direttamente con il flusso di lavoro di progettazione di Visual Studio.
 
 ![Pulsante Suggest a Feature (Suggerisci funzionalità) in Developer Community](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -25,7 +25,7 @@ ms.locfileid: "88114211"
 
 ![Menu Invia un suggerimento in Visual Studio](media/suggest-a-feature/provide-suggestion.png)
 
-Se si sceglie **Invia un suggerimento**, si passa a [Developer Community](https://developercommunity.visualstudio.com), in cui è possibile immettere il suggerimento.
+Se si sceglie **Invia un suggerimento**, si passa a [Developer Community](https://aka.ms/feedback/suggest?space=8), in cui è possibile immettere il suggerimento.
 
 ## <a name="user-voice"></a>UserVoice
 

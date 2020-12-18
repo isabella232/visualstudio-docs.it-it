@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7b2fd0a49a235827d3a9094aad6cc0f59a0cd403
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: f27ccf9440d0f01a5a41d69e753a6d83f81c5263
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007127"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668534"
 ---
 # <a name="repair-visual-studio"></a>Ripristinare Visual Studio
 
@@ -32,7 +32,7 @@ In alcuni casi l'installazione di Visual Studio può risultare danneggiata Una c
 > Se il problema di installazione è causato da un problema in un servizio di Windows sottostante, ad esempio Windows Installer, la correzione può raggiungere lo stesso problema. I problemi sistemici possono includere una connessione Internet Windows Installer o instabile. Per verificare la presenza di un problema di sistemi, utilizzare il report di errore generato dall'operazione di installazione.
 
 > [!NOTE] 
-> Il ripristino di Visual Studio Reimposta le impostazioni utente e installa di nuovo gli assembly già presenti. Se si verifica un problema del prodotto, creare un [ticket di feedback di Visual Studio](https://developercommunity.visualstudio.com/content/problem/post.html?space=8), in quanto il ripristino potrebbe non risolvere il problema.
+> Il ripristino di Visual Studio Reimposta le impostazioni utente e installa di nuovo gli assembly già presenti. Se si verifica un problema del prodotto, creare un [ticket di feedback di Visual Studio](https://aka.ms/feedback/suggest?space=8), in quanto il ripristino potrebbe non risolvere il problema.
 
 ## <a name="how-to-repair"></a>Come ripristinare
 ::: moniker range="vs-2017"

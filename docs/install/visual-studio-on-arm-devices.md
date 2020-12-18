@@ -10,12 +10,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6aacd4639e440998a5123dae8c38a64c84ebb948
-ms.sourcegitcommit: d9dd86c421532cfca6c0c5761d160f35829419c6
+ms.openlocfilehash: 367b3681d2ff8a828ee45f59359043b5fede3d26
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90026291"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668105"
 ---
 # <a name="visual-studio-on-arm-powered-devices"></a>Visual Studio nei dispositivi basati su ARM
 
@@ -42,4 +42,4 @@ Per eseguire il debug di un'app in esecuzione in un dispositivo remoto, è neces
 Non tutti i progetti di Visual Studio sono configurati per avviare i progetti localmente quando si avvia il debug (**F5**) da un dispositivo ARM. Potrebbe essere necessario configurare Visual Studio per il debug remoto, anche se l'app è in esecuzione in locale. Per ulteriori informazioni, vedere [Remote Debugging](../debugger/remote-debugging.md).
 
 ## <a name="we-need-your-help"></a>È necessario un aiuto.
-Se si vuole che Visual Studio venga eseguito in modalità nativa sui dispositivi ARM, è opportuno conoscere gli scenari e il supporto necessari. È possibile contattare Microsoft pubblicando la [community degli sviluppatori](https://developercommunity.visualstudio.com/idea/1161018/native-arm-support-for-visual-studio.html). 
+Se si vuole che Visual Studio venga eseguito in modalità nativa sui dispositivi ARM, è opportuno conoscere gli scenari e il supporto necessari. È possibile contattare Microsoft pubblicando la [community degli sviluppatori](https://developercommunity.visualstudio.com/idea/1161018/native-arm-support-for-visual-studio.html).

@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f06b72673ea73e68f6c224ec9734568d70e25a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4cded3bfdb6adc206f02ef54402964f4e7276f93
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852257"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668781"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Risoluzione degli errori dei punti di interruzione dei dati
 In questa pagina viene illustrata la risoluzione degli errori comuni riscontrati durante l'utilizzo di "Interrompi in caso di modifica del valore"
@@ -79,9 +79,9 @@ L'architettura (configurazione della piattaforma) in cui viene eseguito il progr
 | ARM | 1 | 4 |
 | ARM64 | 2 | 8 |
 
-## <a name="provide-feedback"></a>Inviare feedback
+## <a name="provide-feedback"></a>Fornire commenti e suggerimenti
 
-Per eventuali problemi o suggerimenti relativi a questa funzionalità, inviare commenti tramite la guida > inviare commenti e suggerimenti > [segnalare un problema](../ide/how-to-report-a-problem-with-visual-studio.md) nell'IDE o nella [community degli sviluppatori](https://developercommunity.visualstudio.com/).
+Per eventuali problemi o suggerimenti relativi a questa funzionalità, inviare commenti tramite la guida > inviare commenti e suggerimenti > [segnalare un problema](../ide/how-to-report-a-problem-with-visual-studio.md) nell'IDE o nella [community degli sviluppatori](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="see-also"></a>Vedere anche
 

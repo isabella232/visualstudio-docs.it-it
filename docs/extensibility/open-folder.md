@@ -8,12 +8,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: d213a7add358c46f7088f504d8c54352cda44a1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 964b360806f6f834aa57c475d2117c124f2cf8af
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905972"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668638"
 ---
 # <a name="open-folder-extensibility"></a>Estendibilità Apri cartella
 
@@ -51,7 +51,7 @@ Le funzionalità che usano i seguenti tipi dovranno adottare nuove API per suppo
 
 ## <a name="feedback-comments-issues"></a>Commenti, commenti, problemi
 
-Apri cartella e le `Microsoft.VisualStudio.Workspace.*` API sono in fase di sviluppo attivo. Se viene visualizzato un comportamento imprevisto, vedere i problemi noti per il rilascio di interesse. La [community degli sviluppatori](https://developercommunity.visualstudio.com) è la posizione consigliata per votare e creare eventuali problemi. Per ogni feedback, si consiglia vivamente una descrizione dettagliata del problema. Includere la versione di Visual Studio che si sta sviluppando per, le API in uso (sia ciò che è stato implementato che quello con cui si sta interagendo), il risultato previsto e il risultato effettivo. Se possibile, includere un dump del processo di devenv.exe. Usare il rilevamento dei problemi di GitHub per fornire commenti e suggerimenti su questa e documentazione correlata.
+Apri cartella e le `Microsoft.VisualStudio.Workspace.*` API sono in fase di sviluppo attivo. Se viene visualizzato un comportamento imprevisto, vedere i problemi noti per il rilascio di interesse. La [community degli sviluppatori](https://aka.ms/feedback/suggest?space=8) è la posizione consigliata per votare e creare eventuali problemi. Per ogni feedback, si consiglia vivamente una descrizione dettagliata del problema. Includere la versione di Visual Studio che si sta sviluppando per, le API in uso (sia ciò che è stato implementato che quello con cui si sta interagendo), il risultato previsto e il risultato effettivo. Se possibile, includere un dump del processo di devenv.exe. Usare il rilevamento dei problemi di GitHub per fornire commenti e suggerimenti su questa e documentazione correlata.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfe2b73f7f2ba771875355279043558f3c4cf105
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801438"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667910"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Procedura: modificare i tipi di carattere, i colori e i temi in Visual Studio
 
@@ -61,7 +61,7 @@ Di seguito viene illustrato come modificare il tema colori del frame IDE e le fi
 
 1. Sulla barra dei menu scegliere **strumenti**  >  **Opzioni**.
 
-1. Nell'elenco di opzioni scegliere **Environment**  >  **tipi di carattere e colori**dell'ambiente.
+1. Nell'elenco di opzioni scegliere   >  **tipi di carattere e colori** dell'ambiente.
 
 1. Nell'elenco **Mostra impostazioni per** scegliere **ambiente**.
 
@@ -78,7 +78,7 @@ Di seguito viene illustrato come modificare il tema colori del frame IDE e le fi
 
 1. Sulla barra dei menu scegliere **strumenti**  >  **Opzioni**.
 
-1. Nell'elenco di opzioni scegliere **Environment**  >  **tipi di carattere e colori**dell'ambiente.
+1. Nell'elenco di opzioni scegliere   >  **tipi di carattere e colori** dell'ambiente.
 
 1. Nell'elenco **Mostra impostazioni per** selezionare **editor di testo**.
 
@@ -98,9 +98,9 @@ Se si verificano problemi di visione bassa, sono disponibili opzioni di tema col
 
 Utilizzare una delle seguenti procedure per impostare l'opzione di contrasto elevato di Windows:
 
-- In Windows o in qualsiasi applicazione Microsoft, premere il tasto **ALT**di sinistra + **MAIUSC** + **Stamp** .
+- In Windows o in qualsiasi applicazione Microsoft, premere il tasto **ALT** di sinistra + **MAIUSC** + **Stamp** .
 
-- In Windows scegliere **Avvia**  >  **Impostazioni**  >  **accesso facilitato**a  >  **contrasto elevato**.
+- In Windows scegliere **Avvia**  >  **Impostazioni**  >  **accesso facilitato** a  >  **contrasto elevato**.
 
     > [!WARNING]
     > L'impostazione contrasto elevato di Windows influiscono su tutte le applicazioni e sull'interfaccia utente del computer.
@@ -109,14 +109,14 @@ Utilizzare una delle seguenti procedure per impostare l'opzione di contrasto ele
 
 Utilizzare le procedure seguenti per impostare l'opzione di contrasto aggiuntivo di Visual Studio:
 
-1. Nella barra dei menu di Visual Studio scegliere **strumenti**  >  **Opzioni**e quindi nell'elenco Opzioni scegliere **ambiente**  >  **generale**.
+1. Nella barra dei menu di Visual Studio scegliere **strumenti**  >  **Opzioni** e quindi nell'elenco Opzioni scegliere **ambiente**  >  **generale**.
 
 1. Nell'elenco a discesa **tema colori** scegliere il tema **blu (contrasto aggiuntivo)** , quindi scegliere **OK**.
 
 Per ulteriori informazioni sulle altre opzioni di accessibilità di Visual Studio disponibili, vedere la pagina relativa alle [funzionalità di accessibilità di Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) .
 
 > [!TIP]
-> Se è disponibile un'opzione di accessibilità per i colori o i tipi di carattere che si ritiene possano essere utili ma che attualmente non è disponibile in Visual Studio, è possibile segnalarli selezionando **Suggerisci una funzionalità** nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/). Per ulteriori informazioni su questo forum e sul relativo funzionamento, vedere la pagina [Suggerisci una funzionalità](../ide/suggest-a-feature.md) .
+> Se è disponibile un'opzione di accessibilità per i colori o i tipi di carattere che si ritiene possano essere utili ma che attualmente non è disponibile in Visual Studio, è possibile segnalarli selezionando **Suggerisci una funzionalità** nella [community degli sviluppatori di Visual Studio](https://aka.ms/feedback/suggest?space=8). Per ulteriori informazioni su questo forum e sul relativo funzionamento, vedere la pagina [Suggerisci una funzionalità](../ide/suggest-a-feature.md) .
 
 ## <a name="next-steps"></a>Passaggi successivi
 

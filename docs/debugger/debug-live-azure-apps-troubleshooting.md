@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64ea7f1ea1f665f5180851e42814ad4e8c12c8c5
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84182872"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668521"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Risoluzione dei problemi e problemi noti per il debug di snapshot in Visual Studio
 
-Se la procedura descritta in questo articolo non risolve il problema, cercare il problema nella community degli [sviluppatori](https://developercommunity.visualstudio.com/spaces/8/index.html) o segnalare un nuovo problema scegliendo **Guida**  >  **Invia commenti e suggerimenti**  >  **segnala un problema** in Visual Studio.
+Se la procedura descritta in questo articolo non risolve il problema, cercare il problema nella community degli [sviluppatori](https://aka.ms/feedback/suggest?space=8) o segnalare un nuovo problema scegliendo **Guida**  >  **Invia commenti e suggerimenti**  >  **segnala un problema** in Visual Studio.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problema: "Connetti Snapshot Debugger" rileva un errore del codice di stato HTTP
 
@@ -34,7 +34,7 @@ Questo errore indica che la chiamata REST eseguita da Visual Studio in Azure usa
 
 Seguire questa procedura:
 
-* Verificare che l'account di personalizzazione di Visual Studio disponga delle autorizzazioni per la sottoscrizione di Azure e la risorsa a cui si sta effettuando la connessione. Un modo rapido per determinare questo problema consiste nel controllare se la risorsa è disponibile nella finestra di dialogo da **debug**  >  **Connetti snapshot debugger...**  >  **Risorsa**  >  di Azure **Selezionare esistente**o in Cloud Explorer.
+* Verificare che l'account di personalizzazione di Visual Studio disponga delle autorizzazioni per la sottoscrizione di Azure e la risorsa a cui si sta effettuando la connessione. Un modo rapido per determinare questo problema consiste nel controllare se la risorsa è disponibile nella finestra di dialogo da **debug**  >  **Connetti snapshot debugger...**  >  **Risorsa**  >  di Azure **Selezionare esistente** o in Cloud Explorer.
 * Se l'errore persiste, usare uno dei canali di feedback descritti all'inizio di questo articolo.
 
 Se è stata abilitata l'autenticazione/autorizzazione (EasyAuth) nel servizio app, è possibile che venga visualizzato un errore 401 con LaunchAgentAsync nel messaggio di errore dello stack di chiamate. Assicurarsi che l' **azione da eseguire quando la richiesta non è autenticata** sia impostata in modo da **consentire richieste anonime (nessuna azione)** nell'portale di Azure e fornire un authorization.jsin D:\Home\sites\wwwroot con il contenuto seguente. 
@@ -67,7 +67,7 @@ Questo errore indica che l'autorizzazione è stata negata. Questa situazione pu�
 
 Seguire questa procedura:
 
-* Verificare che l'account di Visual Studio disponga di una sottoscrizione di Azure valida con le autorizzazioni necessarie per il controllo degli accessi in base al ruolo (RBAC) per la risorsa. Per AppService, verificare se si dispone delle autorizzazioni per [eseguire query](/rest/api/appservice/appserviceplans/get) sul piano di servizio app che ospita l'app.
+* Verificare che l'account di Visual Studio disponga di una sottoscrizione di Azure valida con le autorizzazioni di controllo degli accessi Role-Based (RBAC) necessarie per la risorsa. Per AppService, verificare se si dispone delle autorizzazioni per [eseguire query](/rest/api/appservice/appserviceplans/get) sul piano di servizio app che ospita l'app.
 * Verificare che il timestamp del computer client sia corretto e aggiornato. I server con timestamp spenti da più di 15 minuti del timestamp della richiesta generano questo errore.
 * Se l'errore persiste, usare uno dei canali di feedback descritti all'inizio di questo articolo.
 

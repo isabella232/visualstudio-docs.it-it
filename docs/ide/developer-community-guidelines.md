@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfcdcfc309fb951b2f7e490f0d03dcfe9d381b83
-ms.sourcegitcommit: 54ec951bcfa87fd80a42e3ab4539084634a5ceb4
+ms.openlocfilehash: 3e30dcb6a9d65cb562851ed90e350530759975d2
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92116150"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668560"
 ---
 # <a name="developer-community-guidelines"></a>Linee guida per Developer Community
 
@@ -21,7 +21,7 @@ La community degli sviluppatori tiene traccia dei problemi e dei suggerimenti su
 
 ## <a name="submitting-problems-and-suggestions"></a>Invio di problemi e suggerimenti
 
-La [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/) tiene traccia dei problemi e suggerimenti sulle funzionalità di Visual Studio.
+La [community degli sviluppatori di Visual Studio](https://aka.ms/feedback/suggest?space=8) tiene traccia dei problemi e suggerimenti sulle funzionalità di Visual Studio.
 
 ### <a name="before-submitting-an-issue"></a>Prima di inviare un problema
 
@@ -49,7 +49,7 @@ Se non si riesce a trovare un problema esistente che descrive il bug o la funzio
 
   - Eseguire una ricerca per verificare se esiste un duplicato. In tal caso, votare il problema esistente, fornendo commenti o chiarimenti aggiuntivi in base alle esigenze.
   - Ricreare il problema dopo aver disabilitato tutte le estensioni. Se il problema è causato da un'estensione installata, archiviare rispettivamente un problema nell'estensione.
-  - Semplificare il codice per risolvere il problema, in modo da poter isolare meglio il problema.
+  - Semplificare il codice intorno al problema in modo da poterlo isolare meglio.
 
 Anche in caso di problemi che includono dettagli avanzati, potrebbe non essere possibile riprodurre il problema e richiedere ulteriori informazioni.
 
@@ -117,4 +117,4 @@ I commenti e le risposte sono visibili pubblicamente, ma tutti i file allegati s
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Passa alla [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/) per segnalare problemi, suggerire funzionalità o esplorare i ticket esistenti. Buon lavoro.
+Passa alla [community degli sviluppatori di Visual Studio](https://aka.ms/feedback/suggest?space=8) per segnalare problemi, suggerire funzionalità o esplorare i ticket esistenti. Buon lavoro.

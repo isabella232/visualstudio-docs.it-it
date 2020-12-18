@@ -7,12 +7,12 @@ ms.author: madsk
 manager: jillfra
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 1567e75d5e0a6f27aee68cd783b9ebd4a70815f4
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 57009326857672ea648bdf8f531f9509cf8487ff
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211188"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668444"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Come aumentare le probabilità di correzione di un problema di prestazioni
 
@@ -28,7 +28,7 @@ Cercare firme distinte per il problema segnalato e includere quanto più possibi
 
 **In caso di dubbi, registrare un nuovo report di problemi**
 
-Molti problemi potrebbero non avere alcuna firma o procedura distinta per la riproduzione. In questi casi, un nuovo report è migliore di un voto o un commento su un altro report, che segnala un *sintomo*esterno simile. A seconda del tipo di report, includere i file di diagnostica aggiuntivi nel report, come descritto più avanti in questo documento.
+Molti problemi potrebbero non avere alcuna firma o procedura distinta per la riproduzione. In questi casi, un nuovo report è migliore di un voto o un commento su un altro report, che segnala un *sintomo* esterno simile. A seconda del tipo di report, includere i file di diagnostica aggiuntivi nel report, come descritto più avanti in questo documento.
 
 **Procedure consigliate specifiche per i problemi**
 
@@ -198,5 +198,5 @@ Ciò che rende più praticabile questi tipi di problemi consiste nel fornire log
 * [Opzioni per commenti e suggerimenti in Visual Studio](../ide/feedback-options.md)
 * [Segnala un problema con Visual Studio per Mac](/visualstudio/mac/report-a-problem)
 * [Segnalare un problema con C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/)
+* [Community degli sviluppatori di Visual Studio](https://aka.ms/feedback/suggest?space=8)
 * [Privacy dei dati della community degli sviluppatori](developer-community-privacy.md)

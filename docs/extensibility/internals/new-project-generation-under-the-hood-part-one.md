@@ -1,5 +1,6 @@
 ---
 title: 'Creazione di un nuovo progetto: dietro le quinte, parte 1 | Microsoft Docs'
+description: Esaminare in modo dettagliato cosa accade in Visual Studio Integrated Development Environment (IDE) quando si crea un tipo di progetto personalizzato (parte 1 di 2).
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aca35e85e57a07a2b411a23d81b99cff9983b9c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec16895e71788f160e0ce6025f35b4dff02d7d2f
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707059"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668885"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Generazione nuovo progetto: Dietro le quinte, prima parte
 Hai mai pensato come creare un tipo di progetto personalizzato? Cosa accade effettivamente quando si crea un nuovo progetto? Diamo un'occhiata sotto la cappa e vediamo cosa succede.
@@ -36,7 +37,7 @@ Hai mai pensato come creare un tipo di progetto personalizzato? Cosa accade effe
 ## <a name="the-new-project-dialog-box"></a>Finestra di dialogo nuovo progetto
  Tutto inizia quando si seleziona un tipo di progetto per un nuovo progetto. Per iniziare, fare clic su **nuovo progetto** dal menu **file** . Verrà visualizzata la finestra di dialogo **nuovo progetto** con un aspetto simile al seguente:
 
- ![Finestra di dialogo nuovo progetto](../../extensibility/internals/media/newproject.gif "NewProject")
+ ![Screenshot della finestra di dialogo Nuovo progetto.](../../extensibility/internals/media/newproject.gif)
 
  Di seguito si spiegherà meglio questo concetto. Nell'albero dei **tipi di progetto** sono elencati i vari tipi di progetto che è possibile creare. Quando si seleziona un tipo di progetto, ad esempio **Visual C# Windows**, viene visualizzato un elenco di modelli di applicazione per iniziare. I **modelli di Visual Studio installati** vengono installati da Visual Studio e sono disponibili per qualsiasi utente del computer. I nuovi modelli creati o raccolti possono essere aggiunti ai **modelli personali** e sono disponibili solo per l'utente.
 
@@ -53,7 +54,7 @@ Hai mai pensato come creare un tipo di progetto personalizzato? Cosa accade effe
 devenv /setup
 ```
 
- Oppure
+ o
 
 ```
 devenv /installvstemplates
@@ -63,7 +64,7 @@ devenv /installvstemplates
  La posizione e i nomi dei nodi radice dei **tipi di progetto** , ad esempio **Visual C#** e **altri linguaggi**, sono determinati dalle voci del registro di sistema. L'organizzazione dei nodi figlio, ad esempio **database** e **Smart Device**, rispecchia la gerarchia delle cartelle che contengono i file con estensione vstemplate corrispondenti. Esaminiamo prima i nodi radice.
 
 #### <a name="project-type-root-nodes"></a>Nodi radice del tipo di progetto
- Quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] viene inizializzato, attraversa le sottochiavi della chiave del registro di sistema HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\14.0\newprojecttemplates\templatedirs per compilare e denominare i nodi radice dell'albero dei **tipi di progetto** . Queste informazioni vengono memorizzate nella cache per un uso successivo. Esaminare la chiave TemplateDirs \\ {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\ /1. Ogni voce è un GUID VSPackage. Il nome della sottochiave (/1) viene ignorato, ma la sua presenza indica che si tratta di un nodo radice dei **tipi di progetto** . Un nodo radice può a sua volta avere diverse sottochiavi che ne controllano l'aspetto nell'albero dei **tipi di progetto** . Esaminiamo alcuni di essi.
+ Quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] viene inizializzato, attraversa le sottochiavi della chiave del registro di sistema HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\NewProjectTemplates\TemplateDirs per compilare e denominare i nodi radice dell'albero dei **tipi di progetto** . Queste informazioni vengono memorizzate nella cache per un uso successivo. Esaminare la chiave TemplateDirs \\ {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\ /1. Ogni voce è un GUID VSPackage. Il nome della sottochiave (/1) viene ignorato, ma la sua presenza indica che si tratta di un nodo radice dei **tipi di progetto** . Un nodo radice può a sua volta avere diverse sottochiavi che ne controllano l'aspetto nell'albero dei **tipi di progetto** . Esaminiamo alcuni di essi.
 
 ##### <a name="default"></a>Valore predefinito.
  Si tratta dell'ID risorsa della stringa localizzata che assegna un nome al nodo radice. La risorsa di stringa si trova nella DLL satellite selezionata dal GUID del pacchetto VSPackage.
@@ -88,7 +89,7 @@ devenv /installvstemplates
  Più basso è il numero di priorità, maggiore è la posizione nella struttura ad albero.
 
 ##### <a name="developeractivity"></a>DeveloperActivity
- Se questa sottochiave è presente, la posizione del nodo radice viene controllata dalla finestra di dialogo Impostazioni sviluppatore. Ad esempio:
+ Se questa sottochiave è presente, la posizione del nodo radice viene controllata dalla finestra di dialogo Impostazioni sviluppatore. Ad esempio,
 
  DeveloperActivity REG_SZ VC #
 
@@ -97,7 +98,7 @@ devenv /installvstemplates
 ##### <a name="folder"></a>Cartella
  Se questa sottochiave è presente, il nodo radice diventa un nodo figlio della cartella specificata. Viene visualizzato un elenco di cartelle possibili sotto la chiave
 
- HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\11.0\NewProjectTemplates\PseudoFolders
+ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\NewProjectTemplates\PseudoFolders
 
  Ad esempio, la voce progetti di database ha una chiave di cartella che corrisponde alla voce altri tipi di progetto in PseudoFolders. Nell'albero dei **tipi di progetto** , quindi, i **progetti di database** saranno un nodo figlio di **altri tipi di progetto**.
 
@@ -106,11 +107,11 @@ devenv /installvstemplates
 
  Per le impostazioni di Visual Studio con C# Developer, l'albero dei **tipi di progetto** ha un aspetto simile al seguente:
 
- ![Project Types](../../extensibility/internals/media/projecttypes.png "ProjectTypes") (Tipi di progetto)
+ ![Screenshot dell'albero delle cartelle dei tipi di progetto in Visual Studio con le impostazioni per sviluppatori C#.](../../extensibility/internals/media/projecttypes.png)
 
  La cartella ProjectTemplates corrispondente ha un aspetto simile al seguente:
 
- ![Modelli di progetto](../../extensibility/internals/media/projecttemplates.png "ProjectTemplates")
+ ![Screenshot dell'albero delle cartelle dei modelli di progetto in Visual Studio con le impostazioni per sviluppatori C#.](../../extensibility/internals/media/projecttemplates.png)
 
  Quando viene visualizzata la finestra di dialogo **nuovo progetto** , [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] attraversa la cartella ProjectTemplates e ricrea la relativa struttura nell'albero dei **tipi di progetto** con alcune modifiche:
 
@@ -208,7 +209,7 @@ devenv /installvstemplates
 
 10. Aprire la finestra di dialogo **nuovo progetto** ed espandere il nodo del progetto **Visual C#** .
 
-    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")
+    ![Screenshot dell'albero delle cartelle dei tipi di progetto nella finestra di dialogo nuovo progetto con MyProjectNode evidenziato nel nodo del progetto Visual C# espanso.](../../extensibility/internals/media/myprojectnode.png)
 
     **MyProjectNode** viene visualizzato come nodo figlio di Visual C# solo sotto il nodo Windows.
 

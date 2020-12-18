@@ -1,5 +1,6 @@
 ---
 title: Immagini e icone per Visual Studio | Microsoft Docs
+description: Informazioni sui concetti di progettazione usati per creare immagini e icone per Visual Studio.
 ms.date: 04/26/2017
 ms.topic: overview
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edbf1542277189f37565e7ff415a52025094e595
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f29fd0a69ceafa33c00593b67f6775a723780c26
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906115"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668651"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Immagini e icone per Visual Studio
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Uso delle immagini in Visual Studio
@@ -258,7 +259,7 @@ ms.locfileid: "85906115"
 ### <a name="base-palette"></a>Tavolozza di base
  Tutte le icone standard contengono tre colori di base. Le icone non contengono gradienti o ombreggiatura, con una o due eccezioni per le icone degli strumenti 3D.
 
-|Utilizzo|Nome|Valore (tema chiaro)|Campione|Esempio|
+|Uso|Nome|Valore (tema chiaro)|Campione|Esempio|
 |-----------|----------|---------------------------|------------|-------------|
 |Sfondo/scuro|VS BG|424242/66, 66, 66|![Campione 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Esempio di tavolozza di base](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405-02_BasePaletteExample")|
 |Primo piano/chiaro|VS FG|F0EFF1/240.239.241|![Campione F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -271,7 +272,7 @@ ms.locfileid: "85906115"
 #### <a name="action-modifiers"></a>Modificatori di azione
  I quattro colori seguenti indicano i tipi di azioni richiesti dai modificatori di azione:
 
-|Utilizzo|Nome|Valore (tutti i temi)|Campione|
+|Uso|Nome|Valore (tutti i temi)|Campione|
 |-----------|----------|--------------------------|------------|
 |Positivo|Verde azione VS|388A34/56138, 52|![Campione 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |Negativo|Rosso azione VS|A1260D/161, 38, 13|![Campione A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
@@ -293,7 +294,7 @@ ms.locfileid: "85906115"
 
  Il blu viene applicato ai modificatori di azione neutri rappresentati più di frequente come frecce, ad esempio "Apri", "Avanti", "precedente", "importazione" ed "esportazione".
 
-|Vai al campo|Archiviazione in batch|Editor indirizzi|Editor associazione|
+|Vai al campo|Check-In in batch|Editor indirizzi|Editor associazione|
 |-|-|-|-|
 |![Icona Vai al campo](../../extensibility/ux-guidelines/media/0405-11_gotofield.png "0405-11_GoToField")|![Icona di controllo&#45;in batch nell'icona](../../extensibility/ux-guidelines/media/0405-12_batchedcheckin.png "0405-12_BatchedCheckIn")|![Icona Editor di indirizzo](../../extensibility/ux-guidelines/media/0405-13_addresseditor.png "0405-13_AddressEditor")|![Icona Editor di associazione](../../extensibility/ux-guidelines/media/0405-14_associationeditor.png "0405-14_AssociationEditor")|
 
@@ -306,22 +307,22 @@ ms.locfileid: "85906115"
 #### <a name="special-cases"></a>Casi speciali
  In casi speciali, un modificatore di azione colorato può essere usato in modo indipendente come icona autonoma. Il colore utilizzato per l'icona riflette le azioni a cui è associata l'icona. Questo utilizzo è limitato a un piccolo subset di icone, tra cui:
 
-|Esegui|Arresto|Delete|Salva|Esplora indietro|
+|Esegui|Interrompere|Delete|Salva|Esplora indietro|
 |-|-|-|-|-|
-|![Icona Esegui](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![Icona Arresta](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![Icona Elimina](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![Icona Salva](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![Icona Esplora indietro](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
+|![Icona Esegui](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")|![Icona Arresta il quadrato rosso a tinta unita.](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")|![Icona Elimina](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405-20_Delete")|![Icona Salva](../../extensibility/ux-guidelines/media/0405-21_save.png "0405-21_Save")|![Icona Esplora indietro](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405-22_NavigateBack")|
 
 ### <a name="code-hierarchy-palette"></a>Tavolozza gerarchia del codice
 
 #### <a name="folder"></a>Cartella
 
-|Utilizzo|Nome|Valore (tutti i temi)|Campione|Esempio|
+|Uso|Nome|Valore (tutti i temi)|Campione|Esempio|
 |-----------|----------|--------------------------|------------|-------------|
 |Cartelle|Cartella|DCB67A/220.182.122|![Campione DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Icona del colore della cartella](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Linguaggi di Visual Studio
  A ogni linguaggio o piattaforma comune disponibile in Visual Studio è associato un colore. Questi colori vengono utilizzati sull'icona di base o sui modificatori di linguaggio visualizzati nell'angolo superiore destro delle icone composte.
 
-|Utilizzo|Nome|Valore (tutti i temi)|Campione|
+|Uso|Nome|Valore (tutti i temi)|Campione|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|ASP.NET HTML WPF blu|0095D7/0149.215|![Campione 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|CPP viola|9B4F96/155, 79150|![Campione 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -346,7 +347,7 @@ ms.locfileid: "85906115"
 #### <a name="intellisense"></a>IntelliSense
  Le icone IntelliSense usano una tavolozza dei colori esclusiva. Questi colori vengono usati per aiutare gli utenti a distinguere rapidamente tra i diversi elementi nell'elenco popup di IntelliSense.
 
-|Utilizzo|Nome|Valore (tutti i temi)|Campione|
+|Uso|Nome|Valore (tutti i temi)|Campione|
 |-----------|----------|--------------------------|------------|
 |Classe, evento|Arancio azione VS|C27D1A/194125, 26|![Campione C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |Metodo di estensione, metodo, modulo, delegato|Viola azione VS|652D90/101, 45144|![Campione 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -356,7 +357,7 @@ ms.locfileid: "85906115"
 
 ##### <a name="examples-of-intellisense-icons"></a>Esempi di icone IntelliSense
 
-|Classe|Evento privato|Delegato|Friend metodo|Campo|
+|Class|Evento privato|Delegato|Friend metodo|Campo|
 |-|-|-|-|-|
 |![Icona della classe IntelliSense](../../extensibility/ux-guidelines/media/0405-36_intellisenseclass.png "0405-36_IntelliSenseClass")|![Icona dell'evento privato IntelliSense](../../extensibility/ux-guidelines/media/0405-37_intellisenseprivateevent.png "0405-37_IntelliSensePrivateEvent")|![Icona del delegato IntelliSense](../../extensibility/ux-guidelines/media/0405-38_intellisensedelegate.png "0405-38_IntelliSenseDelegate")|![Icona descrittiva del metodo IntelliSense](../../extensibility/ux-guidelines/media/0405-39_intellisensemethodfriend.png "0405-39_IntelliSenseMethodFriend")|![Icona campo](../../extensibility/ux-guidelines/media/0405-40_field.png "0405-40_Field")|
 
@@ -367,7 +368,7 @@ ms.locfileid: "85906115"
 ### <a name="notifications"></a>Notifiche
  Le notifiche in Visual Studio vengono usate per indicare lo stato. La tavolozza delle notifiche usa i quattro colori seguenti, nonché le opzioni di riempimento in primo piano nero o bianco, per definire le notifiche con i livelli di stato seguenti.
 
-|Utilizzo|Nome|Valore (tutti i temi)|Campione|
+|Uso|Nome|Valore (tutti i temi)|Campione|
 |-----------|----------|--------------------------|------------|
 |Stato: neutro|Notifica blu (VS blu)|1BA1E2/27.161.226|![Campione 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |Stato: positivo|Verde delle notifiche (VS verde)|339933/51153, 51|![Campione 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
@@ -378,6 +379,6 @@ ms.locfileid: "85906115"
 
 #### <a name="examples-of-notification-icons"></a>Esempi di icone di notifica
 
-|Avviso|Avviso|Operazione completata|Arresto|
+|Avviso|Avviso|Operazione completata|Interrompere|
 |-|-|-|-|
-|![Icona di avviso](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405-45_Alert")|![Icona avviso](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405-48_Warning")|![Icona Completato](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405-46_Complete")|![Icona Arresta](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop")|
+|![Icona di avviso](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405-45_Alert")|![Icona avviso](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405-48_Warning")|![Icona Completato](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405-46_Complete")|![Arresta il cerchio rosso con icona a tinta unita con un quadrato bianco al centro.](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop")|

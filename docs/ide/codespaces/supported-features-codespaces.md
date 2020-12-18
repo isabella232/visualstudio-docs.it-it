@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: f253ba9b7e46f809bc107aa2b3e26f635d778770
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 84be6698c62e3a2a205ceb9d404673ee1d0c6f64
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928554"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668612"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Funzionalità supportate di Visual Studio (anteprima)
 
@@ -27,7 +27,7 @@ Nella [versione beta](https://github.com/features/codespaces)corrente di GitHub 
 Questo **non è destinato a essere un elenco esaustivo**, ma per illustrare le funzionalità generali di Visual Studio quando si è connessi a uno spazio.
 
 > [!NOTE]
-> Se è presente una funzionalità mancante quando si usano gli spazi dei numeri con Visual Studio, è possibile segnalare aprendo un problema in https://developercommunity.visualstudio.com/ . In questo modo è possibile classificare in ordine di priorità le funzionalità più desiderate.
+> Se è presente una funzionalità mancante durante l'uso degli spazi dei numeri con Visual Studio, è possibile segnalare aprendo un problema nella community degli [sviluppatori di Visual Studio](https://aka.ms/feedback/suggest?space=8). In questo modo è possibile classificare in ordine di priorità le funzionalità più desiderate.
 
 > [!NOTE]
 > Le funzionalità descritte di seguito si riportano per Visual Studio e non per altri due client di codespace GitHub. Visual Studio Code e l'editor nel browser.
@@ -104,12 +104,12 @@ Non ancora disponibile:
 * Funzionalità di threading: i thread di blocco/sblocco, Rinomina thread e Mostra thread nell'origine non sono supportati.
 * Funzionalità per l'esecuzione di istruzioni aggiuntive: l'esecuzione automatica delle proprietà e degli operatori (.NET Core) e l'esecuzione di istruzioni specifiche non sono supportate. 
 
-## <a name="features"></a>Caratteristiche
+## <a name="features"></a>Funzionalità
 
 Quando si usa Visual Studio connesso a uno spazio dei servizi, si ottengono le stesse funzionalità di accessibilità di quando si lavora localmente.
 
 * Controllo del codice sorgente: supporto Git completo tramite la nuova [finestra git](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/).
-* Accessibilità: esiste un problema noto con la tecnologia di accesso facilitato che non è in grado di accedere alla appcasting di un'app sottoposta a debug. Oltre a questa limitazione, non riteniamo che esistano altri problemi di compatibilità che non esistono già nell'esperienza locale di Visual Studio. Segnalare eventuali bug segnalando un problema nella [community degli sviluppatori](https://developercommunity.visualstudio.com/).
+* Accessibilità: esiste un problema noto con la tecnologia di accesso facilitato che non è in grado di accedere alla appcasting di un'app sottoposta a debug. Oltre a questa limitazione, non riteniamo che esistano altri problemi di compatibilità che non esistono già nell'esperienza locale di Visual Studio. Segnalare eventuali bug segnalando un problema nella [community degli sviluppatori](https://aka.ms/feedback/suggest?space=8).
 * Pubblicazione: è supportata la pubblicazione in Azure tramite azioni di GitHub.
 * Servizi connessi: le informazioni dettagliate su app, l'insieme di credenziali delle applicazioni, l'archivio, SQL, Redis, Cosmos, openAPI e gRPC sono parzialmente supportate.
 * Esplora test *-principalmente supportata.

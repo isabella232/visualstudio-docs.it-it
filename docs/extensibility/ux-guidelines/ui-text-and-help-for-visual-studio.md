@@ -1,5 +1,6 @@
 ---
 title: Testo dell'interfaccia utente e guida per Visual Studio | Microsoft Docs
+description: Informazioni sul testo e la terminologia dell'interfaccia utente usati nelle informazioni della Guida per Visual Studio.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3247aeaa702b59722471c7d28e98957f04f3e07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2795d766c43d6119fa50a12c4dcd1e2c72d79186
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698289"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668599"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Testo dell'interfaccia utente e Guida per Visual Studio
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> Testo e terminologia dell'interfaccia utente
@@ -60,11 +61,11 @@ ms.locfileid: "80698289"
 #### <a name="supplemental-instructions"></a>Istruzioni supplementari
  Le istruzioni aggiuntive forniscono informazioni aggiuntive che consentono all'utente di comprendere i controlli o i raggruppamenti di controlli. Questo può includere anche testo di suggerimento necessario per comprendere il formato previsto dal controllo di input. Usare le istruzioni aggiuntive con moderazione. Riservarle per i casi in cui è probabile che l'utente non abbia compreso completamente le ramificazioni della scelta effettuata.
 
- ![Testo supplementare in Visual Studio](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
+ ![Screenshot che mostra il pulsante Opzioni di Internet Explorer con il testo supplementare sottostante che descrive l'effetto della modifica delle impostazioni delle opzioni.](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
 
  **Testo supplementare in Visual Studio**
 
- ![Testo supplementare in Visual Studio](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
+ ![Screenshot della finestra di dialogo Scegli controllo del codice sorgente in Visual Studio che mostra il testo supplementare che descrive ognuna delle opzioni del sistema di controllo del codice sorgente.](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
 
  **Testo supplementare in Visual Studio**
 
@@ -123,7 +124,7 @@ ms.locfileid: "80698289"
 
 - Non collegare mai solo la parola "Here". Si tratta di un problema per alcune utilità per la lettura dello schermo, che consente di esprimere solo la parola con collegamento ipertestuale.
 
-     Errato **: "informazioni su servizi mobili**di Microsoft Azure"
+     Errato **: "informazioni su servizi mobili** di Microsoft Azure"
 
      Corretto: "quali opzioni di prezzo sono disponibili per i servizi mobili di Windows Azure?"
 
@@ -136,15 +137,15 @@ ms.locfileid: "80698289"
 
 - Al posto dell'etichetta del controllo:
 
-     ![Testo del suggerimento in Visual Studio](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
+     ![Screenshot di un controllo a discesa con testo di suggerimento al posto dell'etichetta del controllo che legge "Cerca Esplora soluzioni (CTRL +;)".](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
 
 - Con un verbo, che fornisce istruzioni:
 
-     ![Testo del suggerimento in Visual Studio](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
+     ![Screenshot di una casella di testo con testo di suggerimento nel controllo che legge "immettere il nome".](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
 
 - Con il testo che indica una voce obbligatoria:
 
-     ![Testo del suggerimento in Visual Studio](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
+     ![Screenshot di una casella di testo con testo di suggerimento nel controllo che legge " \< Required \> ".](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
 
 #### <a name="watermark-text"></a>Testo filigrana
  In un'area di progettazione vuota, il testo deve indicare cosa fare e fornire collegamenti per aprire altre finestre correlate, se appropriato:
@@ -155,7 +156,7 @@ ms.locfileid: "80698289"
 
 ### <a name="common-terminology"></a>Terminologia comune
 
-|Termine|Spiegazione|Commento|
+|Termine|Spiegazione|Aggiungere commenti|
 |----------|-----------------|-------------|
 |Accesso/disconnessione|Verbi usati in sinonimo con il Web per la rappresentazione dell'autenticazione in una proprietà Web. Nei client viene usata una sola volta come concetto di primo livello per l'accesso e la disconnessione dell'IDE, che rappresenta un'identità di primo livello che fornisce funzionalità di livello superiore, ad esempio roaming e licenze che non sono disponibili con tutte le altre connessioni.|L'utente IDE è l'unica funzionalità che deve rappresentare un verbo di accesso/disconnessione, perché rappresenta l'utente IDE di primo livello.|
 |Connetti/Disconnetti|Usare in posizioni in cui una funzionalità gestisce una singola connessione a un servizio online.|Esplora server, in cui è possibile avere una sola connessione di Azure attiva alla volta, è un esempio di connessione/disconnessione.|

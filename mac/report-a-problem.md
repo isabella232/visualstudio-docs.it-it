@@ -6,20 +6,20 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 2b5fd2fd115c4461659ba1b4f211e645367851d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c104e4d819e58630f894405b3b56a8a442576816
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67691221"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668716"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Come segnalare un problema in Visual Studio per Mac
 
-Se si verifica un problema con Visual Studio per Mac, è importante segnalarlo a Microsoft. Di seguito viene descritto come segnalare il problema alla [community degli sviluppatori](https://developercommunity.visualstudio.com/spaces/41/index.html) in modo che Microsoft possa diagnosticarlo e risolverlo.
+Se si verifica un problema con Visual Studio per Mac, è importante segnalarlo a Microsoft. Di seguito viene descritto come segnalare il problema alla [community degli sviluppatori](https://aka.ms/feedback/report?space=41) in modo che Microsoft possa diagnosticarlo e risolverlo.
 
 ## <a name="how-to-report-a-problem"></a>Come segnalare un problema
 
-Per segnalare un problema relativo a Visual Studio per Mac, l'opzione migliore consiste nell'avviare la segnalazione da Visual Studio per Mac. La segnalazione tramite Visual Studio per Mac consente di includere automaticamente le informazioni di diagnostica nella segnalazione. Se non è possibile usare Visual Studio per Mac a causa, ad esempio, di un arresto anomalo del sistema, è possibile segnalare il problema direttamente nel sito della [community degli sviluppatori](https://developercommunity.visualstudio.com/content/problem/post.html?space=41).
+Per segnalare un problema relativo a Visual Studio per Mac, l'opzione migliore consiste nell'avviare la segnalazione da Visual Studio per Mac. La segnalazione tramite Visual Studio per Mac consente di includere automaticamente le informazioni di diagnostica nella segnalazione. Se non è possibile usare Visual Studio per Mac a causa, ad esempio, di un arresto anomalo del sistema, è possibile segnalare il problema direttamente nel sito della [community degli sviluppatori](https://aka.ms/feedback/report?space=41).
 
 Per segnalare un problema con Visual Studio per Mac, selezionare **Aiuto > Segnala un problema** dalla barra dei menu:
 
@@ -59,9 +59,9 @@ Per segnalare un problema con Visual Studio per Mac, selezionare **Aiuto > Segna
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Cercare soluzioni o fornire commenti e suggerimenti
 
-Se non si vuole o non si può usare Visual Studio per Mac per segnalare un problema, tenere presente che il problema potrebbe essere già stato segnalato e potrebbe essere stata pubblicata una soluzione nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/).
+Se non si vuole o non si può usare Visual Studio per Mac per segnalare un problema, tenere presente che il problema potrebbe essere già stato segnalato e potrebbe essere stata pubblicata una soluzione nella [community degli sviluppatori di Visual Studio](https://aka.ms/feedback/report?space=41/).
 
-Se non si vuole segnalare un problema, ma suggerire una funzionalità, esiste una pagina specifica anche per questo. Per altre informazioni, vedere la pagina [Suggerire una funzionalità](https://developercommunity.visualstudio.com/content/idea/post.html?space=41).
+Se non si vuole segnalare un problema, ma suggerire una funzionalità, esiste una pagina specifica anche per questo. Per altre informazioni, vedere la pagina [Suggerire una funzionalità](https://aka.ms/feedback/suggest?space=41).
 
 ## <a name="see-also"></a>Vedere anche
 

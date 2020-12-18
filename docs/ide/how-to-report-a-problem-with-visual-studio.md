@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2956372882d4449345d026e691a12afb2988054a
-ms.sourcegitcommit: 6ef4e46c786c5bbcc52cd9c30e5ddfca12ea8b3c
+ms.openlocfilehash: 5c6c09bbf74cca803156842d185b5bf86ff52439
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97050827"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668820"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Come segnalare un problema con Visual Studio o il programma di installazione di Visual Studio
 
@@ -25,7 +25,7 @@ ms.locfileid: "97050827"
 
 1. **In Visual Studio**, selezionare l'icona di feedback nell'angolo superiore destro e selezionare Segnala un problema. È anche possibile accedere allo strumento per il feedback dal menu **Guida**  >  **Invia commenti e suggerimenti**  >  **segnala un problema**.
 ![Elemento popup per la segnalazione di un problema nella community degli sviluppatori di Visual Studio](media/feedback-button.png) In alternativa, segnalare un problema nel **programma di installazione di Visual Studio** se non è possibile installare Visual Studio o non è possibile accedere allo strumento di feedback all'interno di Visual Studio.  Nel programma di installazione selezionare l'icona di feedback nell'angolo superiore destro e selezionare Segnala un problema.
-![Elemento popup per la segnalazione di un problema nella community degli sviluppatori di Visual Studio](media/installer.png)
+![Segnala un messaggio popup relativo a un problema nella community di sviluppatori di Visual Studio nel programma di installazione](media/installer.png)
 
 1. Se si fa clic su **segnala un problema** , si aprirà il browser predefinito e si effettuerà l'accesso con lo stesso account usato per accedere a Visual Studio
 
@@ -71,7 +71,7 @@ Quando in un problema mancano informazioni importanti, viene assegnato lo stato 
 
 1. Selezionando il collegamento fornire altre informazioni nel report problema si passa a una nuova schermata. Da qui è possibile visualizzare le informazioni richieste.
 
-   ![Commenti e suggerimenti](../ide/media/feedback-need-more-info.png)
+   ![Dettagli delle informazioni da inviare a Microsoft](../ide/media/feedback-need-more-info.png)
 
 1. È possibile specificare altre informazioni aggiungendo commenti o allegati oppure registrando la procedura. Questa esperienza è simile alla segnalazione di un nuovo problema o all'inserimento di informazioni aggiuntive quando si vota un problema.
 
@@ -81,9 +81,9 @@ Quando in un problema mancano informazioni importanti, viene assegnato lo stato 
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>Cercare soluzioni o fornire commenti e suggerimenti
 
-Se non si vuole o non si può usare Visual Studio per segnalare un problema, tenere presente che il problema potrebbe essere già stato segnalato e potrebbe essere stata pubblicata una soluzione nella pagina della [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/).
+Se non si vuole o non si può usare Visual Studio per segnalare un problema, tenere presente che il problema potrebbe essere già stato segnalato e potrebbe essere stata pubblicata una soluzione nella pagina della [community degli sviluppatori di Visual Studio](https://developercommunity2.visualstudio.com/search?space=8).
 
-Se non si ha un problema da segnalare ma si vuole suggerire una funzionalità, è disponibile un posto anche per questa operazione. Per altre informazioni, vedere la pagina [Suggerire una funzionalità](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
+Se non si ha un problema da segnalare ma si vuole suggerire una funzionalità, è disponibile un posto anche per questa operazione. Per altre informazioni, vedere la pagina [Suggerire una funzionalità](https://aka.ms/feedback/suggest?space=8).
 
 ## <a name="see-also"></a>Vedere anche
 
@@ -91,5 +91,5 @@ Se non si ha un problema da segnalare ma si vuole suggerire una funzionalità, �
 * [Opzioni per commenti e suggerimenti in Visual Studio](../ide/feedback-options.md)
 * [Segnala un problema con Visual Studio per Mac](/visualstudio/mac/report-a-problem)
 * [Segnalare un problema con C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/)
+* [Community degli sviluppatori di Visual Studio](https://aka.ms/feedback/suggest?space=8)
 * [Privacy dei dati della community degli sviluppatori](developer-community-privacy.md)

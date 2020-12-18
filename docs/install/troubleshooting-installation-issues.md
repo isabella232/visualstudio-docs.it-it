@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 418cc9f75842cb4f3e9d8c0c0753084e2f0633c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54bd53f5c63a2f126f4aeae264c4dff745633cf6
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350810"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668313"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Risolvere i problemi di installazione e aggiornamento di Visual Studio
 
@@ -53,7 +53,7 @@ Riparazione corregge molti problemi di aggiornamento comuni. Per altre informazi
 
 ### <a name="step-3---check-with-the-developer-community"></a>Passaggio 3: verificare con la community degli sviluppatori
 
-Cercare il messaggio di errore nella [community degli sviluppatori di Visual Studio](https://developercommunity.visualstudio.com/spaces/8/index.html). È possibile che altri membri della community abbiano documentato una soluzione per il problema.
+Cercare il messaggio di errore nella [community degli sviluppatori di Visual Studio](https://aka.ms/feedback/suggest?space=8). È possibile che altri membri della community abbiano documentato una soluzione per il problema.
 
 ### <a name="step-4---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Passaggio 4: eliminare la directory Programma di installazione di Visual Studio per correggere i problemi di aggiornamento
 
@@ -120,7 +120,7 @@ Se le procedure indicate sopra non consentono di installare o aggiornare corrett
 
 Ecco una tabella dei problemi noti e delle soluzioni alternative che potrebbero essere utili quando si crea un' [installazione offline](create-an-offline-installation-of-visual-studio.md) e quindi si esegue l'installazione da un layout locale.
 
-| Problema       | Item                   | Soluzione |
+| Problema       | Elemento                   | Soluzione |
 | ----------- | ---------------------- | -------- |
 | Gli utenti non anno accesso ai file. | Autorizzazioni (ACL) | Assicurarsi di modificare le autorizzazioni (ACL) in modo da concedere l'accesso in lettura ad altri utenti  *prima* di condividere l'installazione offline. |
 | Non è possibile installare nuovi carichi di lavoro, componenti o lingue.  | `--layout`  | Assicurarsi che sia disponibile l'accesso a Internet se si esegue l'installazione da un layout parziale e si selezionano carichi di lavoro, componenti o lingue non scaricati precedentemente nel layout parziale. |

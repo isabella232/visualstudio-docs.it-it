@@ -17,20 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 52eee3535590842db53cd80ac761286fb4a23fa9
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1fc40c826499b36d5d713d0842a2c0e8dae462d1
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93398995"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668365"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
 
 Se un utente o un'organizzazione usa misure di sicurezza, come un firewall o un server proxy, è possibile che vi siano URL di dominio da aggiungere a un elenco di indirizzi consentiti, così come porte e protocolli da aprire per ottenere un'esperienza ottimale durante l'installazione e l'uso di Visual Studio e dei servizi di Azure.
 
-* **[Installare Visual Studio](#install-visual-studio)** : queste tabelle includono gli URL di dominio da aggiungere a un elenco Consenti, in modo da poter accedere a tutti i componenti e i carichi di lavoro desiderati.
+* **[Installare Visual Studio](#install-visual-studio)**: queste tabelle includono gli URL di dominio da aggiungere a un elenco Consenti, in modo da poter accedere a tutti i componenti e i carichi di lavoro desiderati.
 
-* **[Usare Visual Studio e i servizi di Azure](#use-visual-studio-and-azure-services)** : questa tabella include gli URL di dominio da aggiungere a un elenco Consenti e le porte e i protocolli da aprire per poter accedere a tutte le funzionalità e i servizi desiderati.
+* **[Usare Visual Studio e i servizi di Azure](#use-visual-studio-and-azure-services)**: questa tabella include gli URL di dominio da aggiungere a un elenco Consenti e le porte e i protocolli da aprire per poter accedere a tutte le funzionalità e i servizi desiderati.
 
 > [!NOTE]
 > Questo articolo è stato scritto per Visual Studio in Windows, ma alcune informazioni sono applicabili anche all'[installazione di Visual Studio per Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) dietro un firewall o un server proxy.
@@ -109,7 +109,7 @@ Per assicurarsi di avere accesso a tutti gli elementi desiderati quando si usano
 | Informazioni sul repository GitHub | api.github.com | https/443 | Necessario per ottenere informazioni aggiuntive sui pacchetti Bower |
 | Linter Web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http/80 | |
 | Cookiecutter<br>Individuazione di modelli<br>individuazione <br><br>Cookiecutter <br>Creazione di progetti<br> di Explorer | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https/443<br> | Usato per individuare modelli online dal feed consigliato e dai repository GitHub <br><br>Usato per creare un progetto da un modello di Cookiecutter che richiede un'unica installazione su richiesta di un pacchetto di Python Cookiecutter dall'indice dei pacchetti di Python (PyPI) |
-| Pacchetto Python <br>individuazione<br><br>Pacchetto Python <br>management<br><br>Nuovo <br>Python <br> project <br>Modelli | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https/443 | Offre la possibilità di cercare pacchetti pip<br><br>Usato per installare automaticamente pip, se mancante <br><br>Usato per trovare la corrispondenza tra i nuovi modelli di progetto Python seguenti e gli URL di modelli di Cookiecutter:<br> - Progetto Classificatore<br>- Progetto Clustering <br> - Progetto Regressione <br> - PyGame con PyKinect <br> - Progetto Pyvot |
+| Pacchetto Python <br>individuazione<br><br>Pacchetto Python <br>management<br><br>Nuova <br>Python <br> project <br>Modelli | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https/443 | Offre la possibilità di cercare pacchetti pip<br><br>Usato per installare automaticamente pip, se mancante <br><br>Usato per trovare la corrispondenza tra i nuovi modelli di progetto Python seguenti e gli URL di modelli di Cookiecutter:<br> - Progetto Classificatore<br>- Progetto Clustering <br> - Progetto Regressione <br> - PyGame con PyKinect <br> - Progetto Pyvot |
 | Componente aggiuntivo <br>componente aggiuntivo <br> manifesto <br>Verifica <br>Servizio | verificationservice.osi.office.net | https/443 | Usato per convalidare i manifesti per i componenti aggiuntivi Web di Office |
 | Componenti aggiuntivi di <br>Componenti aggiuntivi per Office | sharepoint.com<br> microsoft.com/microsoft-365<br> microsoftonline.com <br> outlook.com | https/443 | Usato per pubblicare e testare i componenti aggiuntivi di SharePoint e Office in SharePoint Online e Microsoft 365 |
 | Host del servizio <br>di test di<br> Host | | http/12292 | Regola del firewall che viene creata automaticamente per il test di componenti aggiuntivi di SharePoint con i flussi di lavoro |
@@ -148,14 +148,14 @@ Per assicurarsi di avere accesso a tutti gli elementi desiderati quando si usano
 
 In alcuni casi, è possibile che si riscontrino problemi correlati alla rete o al proxy quando si installa o si usa Visual Studio protetto da un firewall o un server proxy. Per altre informazioni sulle soluzioni per questo tipo di messaggi di errore, vedere la pagina [Troubleshooting network-related errors when you install or use Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md) (Risoluzione dei problemi correlati alla rete quando si installa o usa Visual Studio).
 
-## <a name="get-support"></a>Ottenere supporto
+## <a name="get-support"></a>Supporto
 
 È disponibile un'opzione di supporto per la [**chat di installazione**](https://visualstudio.microsoft.com/vs/support/#talktous) (solo in inglese) per i problemi relativi all'installazione.
 
 Ecco alcune altre opzioni di supporto:
 
 * Segnalare i problemi del prodotto a Microsoft tramite lo strumento [Segnala un problema](../ide/how-to-report-a-problem-with-visual-studio.md) che viene visualizzato sia nel programma di installazione di Visual Studio che nell'IDE di Visual Studio.
-* Suggerire una funzionalità, tenere traccia dei problemi del prodotto e trovare risposte in [Visual Studio Developer Community](https://developercommunity.visualstudio.com/).
+* Suggerire una funzionalità, tenere traccia dei problemi del prodotto e trovare risposte in [Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8).
 * Usare l'account [GitHub](https://github.com/) per comunicare con gli sviluppatori Microsoft e altri sviluppatori di Visual Studio partecipando alla [conversazione dedicata a Visual Studio nella community di Gitter](https://gitter.im/Microsoft/VisualStudio).
 
 ## <a name="see-also"></a>Vedere anche

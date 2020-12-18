@@ -12,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c89f2f6ec2a1a9bc6c87a600c355226b2f3da4
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: dccf962aef39227388f86134a9dd1f8c96440a3c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95005938"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668547"
 ---
 # <a name="developer-community-data-privacy"></a>Privacy dei dati della community degli sviluppatori
 
-Per impostazione predefinita, tutte le informazioni contenute nelle segnalazioni di problemi nella [community degli sviluppatori](https://developercommunity.visualstudio.com/), inclusi eventuali commenti e risposte, sono visibili pubblicamente. Ciò rappresenta un vantaggio poiché consente all'intera community di visualizzare i problemi, le soluzioni ed eventuali soluzioni alternative individuate da altri utenti. Tuttavia sono disponibili opzioni che consentono di proteggere la privacy dei dati o dell'identità.
+Per impostazione predefinita, tutte le informazioni contenute nelle segnalazioni di problemi nella [community degli sviluppatori](https://aka.ms/feedback/suggest?space=8), inclusi eventuali commenti e risposte, sono visibili pubblicamente. Ciò rappresenta un vantaggio poiché consente all'intera community di visualizzare i problemi, le soluzioni ed eventuali soluzioni alternative individuate da altri utenti. Tuttavia sono disponibili opzioni che consentono di proteggere la privacy dei dati o dell'identità.
 
 ## <a name="identity-privacy"></a>Privacy dell'identità
 
@@ -90,7 +90,7 @@ Se la **segnalazione del problema** viene avviata da Visual Studio, Microsoft ra
   > ![Segnala un problema: riepilogo dei log raccolti](media/report-a-problem-logs-collected.png)
 
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Come segnalare un problema con Visual Studio](how-to-report-a-problem-with-visual-studio.md)
 - [Segnalazioni e privacy](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)
