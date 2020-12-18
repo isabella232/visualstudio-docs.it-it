@@ -182,11 +182,11 @@
       href: ide/visual-studio-search.md
     - name: Soluzioni e progetti
       items:
-        - name: Usare soluzioni e progetti
+        - name: Informazioni su soluzioni e progetti
           href: ide/solutions-and-projects-in-visual-studio.md
         - name: Creare un nuovo progetto
           href: ide/create-new-project.md
-        - name: Creare soluzioni e progetti
+        - name: Usare soluzioni e progetti
           href: ide/creating-solutions-and-projects.md
         - name: Aprire un progetto da un repository
           href: get-started/tutorial-open-project-from-repo.md
