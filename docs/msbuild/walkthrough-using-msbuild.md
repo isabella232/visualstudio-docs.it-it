@@ -3,7 +3,7 @@ title: Usare MSBuild
 description: Informazioni sulle varie parti di un file di progetto MSBuild, inclusi elementi, metadati degli elementi, proprietà, destinazioni e attività.
 ms.date: 10/19/2020
 ms.topic: conceptual
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b26c13765daf5a82a9961e6509b36e24e18f4e0c
-ms.sourcegitcommit: 6b62e09026b6f1446187c905b789645f967a371c
+ms.openlocfilehash: adc1a191e8fe3869273df546191f7701956018dd
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92298527"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684013"
 ---
 # <a name="walkthrough-use-msbuild"></a>Procedura dettagliata: Usare MSBuild
 
@@ -76,7 +76,7 @@ Nel programma di installazione verificare che gli strumenti MSBuild per i carich
 
 **Per esaminare il file di progetto**
 
-1. In **Esplora soluzioni**fare clic sul nodo del progetto **BuildApp**.
+1. In **Esplora soluzioni** fare clic sul nodo del progetto **BuildApp**.
 
 1. Nel browser delle **Proprietà** si noti che la proprietà **file di progetto** è *BuildApp. csproj*. Tutti i file di progetto vengono denominati con il suffisso *proj*. Se è stato creato un progetto di Visual Basic, il nome del file di progetto sarà *BuildApp. vbproj*.
 
