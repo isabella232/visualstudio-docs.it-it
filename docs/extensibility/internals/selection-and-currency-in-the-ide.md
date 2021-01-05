@@ -1,5 +1,7 @@
 ---
 title: Selezione e valuta nell'IDE | Microsoft Docs
+description: Informazioni su come i pacchetti VSPackage partecipano al rilevamento della valuta. L'IDE di Visual Studio mantiene le informazioni sugli oggetti attualmente selezionati usando il contesto di selezione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f580b7c8e1651dcbcd053476ae756399a0ac3482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2d745619be8bff77503bc14a1d7a87d84cc7864
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705576"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875596"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Selezione e valuta nell'IDE
-Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE) mantiene le informazioni sugli oggetti attualmente selezionati dagli utenti usando il *contesto*di selezione. Con il contesto di selezione, i pacchetti VSPackage possono partecipare al rilevamento della valuta in due modi:
+Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE) mantiene le informazioni sugli oggetti attualmente selezionati dagli utenti usando il *contesto* di selezione. Con il contesto di selezione, i pacchetti VSPackage possono partecipare al rilevamento della valuta in due modi:
 
 - Grazie alla propagazione delle informazioni di valuta sui pacchetti VSPackage nell'IDE.
 
@@ -62,6 +64,6 @@ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Devel
 
 - Eventi che modificano gli elementi tracciati nel contesto della selezione della cornice della finestra. Gli esempi includono la modifica della selezione all'interno di un DocObject o la modifica della selezione in una finestra del tipo di progetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Oggetti del contesto di selezione](../../extensibility/internals/selection-context-objects.md)
 - [Commenti e suggerimenti per l'utente](../../extensibility/internals/feedback-to-the-user.md)

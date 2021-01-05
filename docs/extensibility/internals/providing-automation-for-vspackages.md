@@ -1,5 +1,7 @@
 ---
 title: Fornire l'automazione per i pacchetti VSPackage | Microsoft Docs
+description: Informazioni su come fornire l'automazione per i pacchetti Vspackage implementando oggetti specifici del pacchetto VSPackage e implementando oggetti di automazione standard.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6364f9cbaf3409e076eeb77365e5d793c7be96cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939de72d672b750d2f2fc61a6c412368df5523d8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705954"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875401"
 ---
 # <a name="providing-automation-for-vspackages"></a>Automazione per i pacchetti VSPackage
 Esistono due modi principali per fornire l'automazione per i pacchetti VSPackage: implementando oggetti specifici del pacchetto VSPackage e implementando oggetti di automazione standard. In genere, vengono usati insieme per estendere il modello di automazione dell'ambiente.
 
-## <a name="vspackage-specific-objects"></a>Oggetti specifici di VSPackage
+## <a name="vspackage-specific-objects"></a>Oggetti VSPackage-Specific
  Per alcune posizioni all'interno del modello di automazione è necessario fornire oggetti di automazione che siano univoci per il pacchetto VSPackage. I nuovi progetti, ad esempio, richiedono oggetti distinti forniti solo dal pacchetto VSPackage. I nomi di questi oggetti vengono immessi nel registro di sistema e ottenuti tramite chiamate all' `DTE` oggetto ambiente.
 
  È possibile ottenere oggetti specifici del pacchetto VSPackage anche quando un consumer di automazione utilizza l'oggetto fornito tramite la proprietà Object di un oggetto standard. Ad esempio, l' `Window` oggetto standard dispone di una `Object` proprietà, nota comunemente come `Windows.Object` Proprietà. Quando gli utenti chiamano il in `Window.Object` una finestra implementata nel pacchetto VSPackage, viene passato un oggetto di automazione specifico della propria progettazione.

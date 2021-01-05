@@ -1,5 +1,7 @@
 ---
 title: Raccolte private | Microsoft Docs
+description: Informazioni su come condividere i controlli, i modelli e gli strumenti sviluppati in Visual Studio SDK, inserendoli in una raccolta privata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: afd1d79d7f1846e60386d2a9478466bf7eae72e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ec7390acf753af20bc0edbe20194ba17c2d9d80
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81444648"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863502"
 ---
 # <a name="private-galleries"></a>Raccolte private
 È possibile condividere i controlli, i modelli e gli strumenti sviluppati inserendoli in una *raccolta privata* della Intranet per l'organizzazione, come indicato di seguito:
@@ -51,7 +53,7 @@ ms.locfileid: "81444648"
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
-@={URI}  (REG_SZ)
+@={URI}  (REG_SZ)
 Disabled=0 | 1 (DWORD)
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)
 Protocol=Atom|Sharepoint (REG_SZ)
@@ -89,6 +91,6 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 3. Nel riquadro destro selezionare un'estensione e quindi scegliere il pulsante **Aggiorna** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Individuare e usare le estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)
 - [Distribuire le estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

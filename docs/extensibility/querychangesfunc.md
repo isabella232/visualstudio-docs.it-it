@@ -1,5 +1,7 @@
 ---
 title: QUERYCHANGESFUNC | Microsoft Docs
+description: La funzione di callback QUERYCHANGESFUNC viene utilizzata per enumerare una raccolta di nomi di file e determinare lo stato di ogni file.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30864cae95672f4026084a94c5474d165b124cba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7ce5d9fa8e1c3cfc3eaedb55d69ca382e937e45
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701639"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864024"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 Si tratta di una funzione di callback utilizzata dall'operazione [SccQueryChanges](../extensibility/sccquerychanges-function.md) per enumerare una raccolta di nomi di file e determinare lo stato di ogni file.
@@ -96,7 +98,7 @@ struct QUERYCHANGESDATA_W
 
  lpLatestName il nome del file corrente per questo elemento.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni di callback implementate dall'IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccQueryChanges](../extensibility/sccquerychanges-function.md)
 - [Codici di errore](../extensibility/error-codes.md)

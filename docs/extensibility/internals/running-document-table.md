@@ -1,5 +1,7 @@
 ---
 title: Tabella documenti in esecuzione | Microsoft Docs
+description: Informazioni sul modo in cui l'IDE di Visual Studio gestisce la tabella documenti in esecuzione, che include tutti i documenti aperti in memoria.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e6aa882921786b1592922372581beae8c4c2443
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd166626d6043da4ac94658bdd35219efc7a37c2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705560"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875648"
 ---
 # <a name="running-document-table"></a>Tabella documenti in esecuzione
 L'IDE gestisce l'elenco di tutti i documenti attualmente aperti in una struttura interna denominata tabella documenti in esecuzione (RDT). Questo elenco include tutti i documenti aperti in memoria, indipendentemente dal fatto che questi documenti siano attualmente in fase di modifica. Un documento è un elemento che viene mantenuto, inclusi i file in un progetto o il file di progetto principale (ad esempio, un file con estensione vcxproj).
@@ -56,6 +58,6 @@ L'IDE gestisce l'elenco di tutti i documenti attualmente aperti in una struttura
 
 - Usare la gerarchia o l'ID elemento per chiedere al sistema del progetto il percorso completo del documento, quindi cercare l'elemento nella RDT.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Uso di RDT_ReadLock](../../extensibility/internals/rdt-readlock-usage.md)
 - [Salvataggio permanente e tabella documenti in esecuzione](../../extensibility/internals/persistence-and-the-running-document-table.md)

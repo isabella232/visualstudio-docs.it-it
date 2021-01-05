@@ -1,5 +1,7 @@
 ---
 title: Registrazione di un tipo di progetto | Microsoft Docs
+description: Informazioni sulla creazione di voci del registro di sistema che consentono a Visual Studio di riconoscere e usare il nuovo tipo di progetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7267060f2207b0842885dc3001c3926874be30a9
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 9a34f5c7f1ae3a214a0a72932ae80dbc44845a45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407731"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875195"
 ---
 # <a name="registering-a-project-type"></a>Registrazione di un tipo di progetto
 Quando si crea un nuovo tipo di progetto, è necessario creare le voci del registro di sistema che consentono [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a di riconoscere e utilizzare il tipo di progetto. Queste voci del registro di sistema vengono in genere create usando un file di script del registro di sistema (con estensione RGS).
@@ -264,7 +266,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare le voci del regis
 
  Ciò significa che se si include una voce PROJECT_TYPE = EF nel file con estensione vsz, l'ambiente troverà i file con estensione vsz nella directory ProductDir specificata in precedenza.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Elementi di un modello di progetto](../../extensibility/internals/elements-of-a-project-model.md)
 - [Creazione di istanze di progetto tramite le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

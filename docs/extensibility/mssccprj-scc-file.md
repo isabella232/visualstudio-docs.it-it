@@ -1,5 +1,7 @@
 ---
 title: Mssccprj. File SCC | Microsoft Docs
+description: Informazioni su MSSCCPRJ. File SCC, ovvero un file locale sul lato client utilizzato dal plug-in del controllo del codice sorgente, che funziona con Visual Studio SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89511b7c8b69c5793eceef7d58153dde253a4f47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 253482f840350ae1d3cf7ee83e03a88ace15a6cd
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702474"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863468"
 ---
 # <a name="mssccprjscc-file"></a>Mssccprj. File SCC
 Quando si inserisce una soluzione Visual Studio o un progetto nel controllo del codice sorgente usando l'IDE, l'IDE riceve due informazioni chiave. Le informazioni provengono dal plug-in del controllo del codice sorgente sotto forma di stringhe. Queste stringhe, "AuxPath" e "ProjName", sono opache per l'IDE, ma sono usate dal plug-in per individuare la soluzione o il progetto nel controllo della versione. L'IDE ottiene in genere queste stringhe la prima volta chiamando il [SccGetProjPath](../extensibility/sccgetprojpath-function.md)e quindi le salva nel file di soluzione o di progetto per le chiamate future al [SccOpenProject](../extensibility/sccopenproject-function.md). Quando incorporati nei file di soluzione e di progetto, le stringhe "AuxPath" e "ProjName" non vengono aggiornate automaticamente quando un utente esegue il branching, il fork o copia i file della soluzione e del progetto presenti nel controllo della versione. Per assicurarsi che la soluzione e i file di progetto puntino al percorso corretto nel controllo della versione, gli utenti devono aggiornare manualmente le stringhe. Poiché le stringhe sono pensate per essere opache, potrebbe non essere sempre chiaro come devono essere aggiornate.
@@ -72,6 +74,6 @@ Quando si inserisce una soluzione Visual Studio o un progetto nel controllo del 
 
  Nessun delimitatore finale a questa sezione. Il nome del file, nonché tutti i valori letterali visualizzati nel file, vengono definiti nel file di intestazione SCC. h. Per ulteriori informazioni, vedere [stringhe utilizzate come chiavi per la ricerca di un plug-in del controllo del codice sorgente](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)
 - [Stringhe utilizzate come chiavi per la ricerca di un plug-in del controllo del codice sorgente](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

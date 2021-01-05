@@ -1,5 +1,7 @@
 ---
 title: Decisioni di progettazione del controllo del codice sorgente | Microsoft Docs
+description: Informazioni sulle diverse decisioni di progettazione principali da considerare per i progetti durante l'implementazione del controllo del codice sorgente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c36bb2b50a72a52aeaeb7712f4ed711845b5e6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98e84167bc9cbbcad41b897c2de69115c6827ca5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705251"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875518"
 ---
 # <a name="source-control-design-decisions"></a>Decisioni di progettazione relative al controllo del codice sorgente
 Quando si implementa il controllo del codice sorgente, è necessario considerare le seguenti decisioni di progettazione per i progetti.
@@ -34,7 +36,7 @@ Quando si implementa il controllo del codice sorgente, è necessario considerare
 
 3. Quando il progetto o l'editor chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> un file, i file speciali associati al file non vengono estratti automaticamente. Passare i file speciali in insieme al file padre. L'ambiente rileverà la relazione tra tutti i file passati e nasconderà in modo appropriato i file speciali nell'interfaccia utente di estrazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>

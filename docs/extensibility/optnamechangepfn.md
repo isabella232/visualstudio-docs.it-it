@@ -1,5 +1,7 @@
 ---
 title: OPTNAMECHANGEPFN | Microsoft Docs
+description: Informazioni sulla funzione di callback OPTNAMECHANGEPFN, che comunica le modifiche dei nomi dal plug-in del controllo del codice sorgente all'IDE di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 603bd08c1ec3832bf732e0b33101076738d009e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e18a3e5004a86bb96ad77112f4c81ebca3e59cbf
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702242"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863438"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 Si tratta di una funzione di callback specificata in una chiamata a [SccSetOption](../extensibility/sccsetoption-function.md) (opzione using `SCC_OPT_NAMECHANGEPFN` ) e viene usata per comunicare le modifiche del nome apportate dal plug-in del controllo del codice sorgente all'IDE.
@@ -53,6 +55,6 @@ in Nome in cui il file è stato rinominato.
 
  Se l'IDE non supporta questo callback, non chiamerà [SccSetOption](../extensibility/sccsetoption-function.md) per specificarlo. Se il plug-in non supporta questo callback, viene restituito `SCC_E_OPNOTSUPPORTED` dalla `SccSetOption` funzione quando l'IDE tenta di impostare il callback.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni di callback implementate dall'IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

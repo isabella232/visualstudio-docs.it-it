@@ -1,5 +1,7 @@
 ---
 title: Guida di riferimento allo schema di estensione VSIX 2,0 | Microsoft Docs
+description: Lo schema di estensione VSIX 2,0 definisce il formato di file per un file manifesto di distribuzione VSIX, che descrive il contenuto di un pacchetto VSIX.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78e260c62d67afc10fea25d52169c48b64c82f72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2edd0349555380f6d98d24f7a40c22e48797d12
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697919"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863757"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Riferimento allo schema di estensione VSIX 2,0
 Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VSIX. Il formato del file è regolato da uno schema. La versione 2,0 di questo schema supporta l'aggiunta di tipi e attributi personalizzati.  Lo schema del manifesto è estendibile. Il caricatore del manifesto ignora gli elementi e gli attributi XML che non sono in grado di comprendere.
@@ -219,6 +221,6 @@ Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VS
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Distribuire le estensioni di Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

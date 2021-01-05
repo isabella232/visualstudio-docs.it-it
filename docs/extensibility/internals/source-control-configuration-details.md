@@ -1,5 +1,7 @@
 ---
 title: Dettagli di configurazione del controllo del codice sorgente | Microsoft Docs
+description: Informazioni sull'implementazione del controllo del codice sorgente per un tipo di progetto in Visual Studio, che prevede la configurazione del sistema di progetto o dell'editor per richiedere le autorizzazioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cf4a5c55e8093e5dcd6406cde1c60f642188495
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efed4592bfa0b697d66f377430cc5998d3e9e5d3
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705286"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875505"
 ---
 # <a name="source-control-configuration-details"></a>Dettagli di configurazione del controllo del codice sorgente
 Per implementare il controllo del codice sorgente, è necessario configurare correttamente il sistema di progetto o l'editor per eseguire le operazioni seguenti:
@@ -50,7 +52,7 @@ Per implementare il controllo del codice sorgente, è necessario configurare cor
 
  Per ogni azione di aggiunta, ridenominazione e rimozione sono disponibili un `OnQuery*` metodo e un `OnAfter*` metodo. Chiamare il `OnQuery*` metodo per richiedere l'autorizzazione per aggiungere, rinominare o rimuovere il file o la directory. Chiamare il `OnAfter*` metodo dopo che il file o la directory è stata aggiunta, rinominata o rimossa e lo stato del progetto riflette il nuovo stato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>

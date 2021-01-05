@@ -1,5 +1,7 @@
 ---
 title: Aggiunta di riferimenti utilizzando NuGet o SDK di estensione
+description: Informazioni sulle differenze tra la creazione di pacchetti di software come pacchetto NuGet o come Software Development Kit quando si fa riferimento a un progetto di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: conceptual
 author: acangialosi
@@ -7,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad7fc9132647988aee46a2bb07e992505109d33c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50197eeda1828156113fbbfa507447484618861a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702424"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863769"
 ---
 # <a name="nuget-versus-sdk-as-a-project-reference"></a>NuGet versus SDK come riferimento a un progetto
 
@@ -26,10 +28,10 @@ Questo articolo è progettato per consentire agli sviluppatori di scegliere se c
 
 La tabella seguente consente di confrontare le funzionalità di riferimento di un SDK con le funzionalità di riferimento di NuGet.
 
-| Feature | Supporto SDK | Note all'SDK | Supporto NuGet | Note a NuGet |
+| Funzionalità | Supporto SDK | Note all'SDK | Supporto NuGet | Note a NuGet |
 | - | - | - |---------------| - |
 | Facendo riferimento a una sola entità, il meccanismo rende disponibili tutti i file e tutte le funzionalità. | Y | Per aggiungere un SDK, usare la finestra di dialogo **Gestione riferimenti**. Tutti i file e tutte le funzionalità sono disponibili durante il flusso di lavoro di sviluppo. | Y | |
-| MSBuild utilizza automaticamente gli assembly e i file di metadati di Windows (con*estensione WinMD*). | Y | I riferimenti all'interno dell'SDK vengono passati automaticamente al compilatore. | Y | |
+| MSBuild utilizza automaticamente gli assembly e i file di metadati di Windows (con *estensione WinMD*). | Y | I riferimenti all'interno dell'SDK vengono passati automaticamente al compilatore. | Y | |
 | MSBuild consuma automaticamente i file con estensione h o lib. | Y | Il file *SDKName. props* indica a Visual Studio come configurare la directory di Visual C++ e così via per l'utilizzo automatico di file con estensione *h* o *lib* . | N | |
 | MSBuild utilizza automaticamente i file con  *estensione js* o *CSS* . | Y | In **Esplora soluzioni**, è possibile espandere il nodo riferimenti di JavaScript SDK per visualizzare singoli file con *estensione js* o *CSS* e quindi generare `<source include/>` tag trascinando tali file nei file di origine. L'SDK supporta F5 e il programma di installazione automatica dei pacchetti. | Y | |
 | MSBuild aggiunge automaticamente il controllo nella **casella degli strumenti**. | Y | La **casella degli strumenti** può consumare gli SDK e visualizzare i controlli nelle schede specificate dall'utente. | N | |
@@ -64,7 +66,7 @@ La tabella seguente consente di confrontare le funzionalità di riferimento di u
 | Il meccanismo supporta un formato leggero per i manifesti. | Y | *SDKManifest.xml* supporta molti attributi, ma è in genere necessario un subset ridotto. | Y | |
 | Il meccanismo è disponibile per tutte le edizioni di Visual Studio. | Y | L'SDK supporta tutte le edizioni di Visual Studio. | Y | NuGet supporta tutte le edizioni di Visual Studio. |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Gestire i riferimenti in un progetto](../ide/managing-references-in-a-project.md)
 - [Gestione dei riferimenti in un progetto (Visual Studio per Mac)](/visualstudio/mac/managing-references-in-a-project)

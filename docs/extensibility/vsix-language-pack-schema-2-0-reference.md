@@ -1,5 +1,7 @@
 ---
 title: Informazioni di riferimento sullo schema del Language Pack VSIX 2,0 | Microsoft Docs
+description: Lo schema del Language Pack VSIX fornisce informazioni di installazione localizzate per i pacchetti VSIX. La versione 2,0 supporta elementi di localizzazione aggiuntivi.
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 author: acangialosi
 ms.author: anthc
 manager: jillfra
-ms.openlocfilehash: f0eee51c0654c6e517209e23baf43c6b262d8f73
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: fc9c3c1aa7f8cf77ebf165a3e10a67ccbd5887f7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830701"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863821"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Informazioni di riferimento sullo schema del Language Pack VSIX 2,0
 
@@ -63,7 +65,7 @@ All'interno dell' `<Metadata>` elemento è possibile avere gli elementi seguenti
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 |Titolo|Descrizione|
 |-----------|-----------------|

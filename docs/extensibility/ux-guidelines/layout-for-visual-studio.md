@@ -1,5 +1,7 @@
 ---
 title: Layout per Visual Studio | Microsoft Docs
+description: Informazioni sul layout per le finestre di dialogo di Visual Studio, incluse le finestre di dialogo non con tema e le nuove finestre di dialogo con un aspetto con tema.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4eb8eb7468751d46b922c15530389c554a8d3e36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e6c90831c39f0e378dd9060397c68592ec73384
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698400"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863664"
 ---
 # <a name="layout-for-visual-studio"></a>Layout per Visual Studio
 La maggior parte delle finestre di dialogo di Visual Studio è il [layout della finestra di dialogo utilità](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), ovvero le finestre di dialogo che seguono i principi standard di layout delle finestre di [dialogo desktop di Windows](/windows/desktop/uxguide/win-dialog-box). Quando Visual Studio si sposta per aggiornare l'interfaccia utente, alcune delle finestre di dialogo più importanti hanno un nuovo progetto che li definisce come esperienze di definizione dei prodotti. Il [layout della finestra di dialogo con tema](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) presenta un aspetto con tema.
@@ -154,7 +156,7 @@ La maggior parte delle finestre di dialogo di Visual Studio è il [layout della 
 
  **Figura 08,01-k: finestra di dialogo con tema-colori**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Modelli delle applicazioni per Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)
 - [Controlli (Windows)](/windows/desktop/uxguide/controls)
 - [Finestre di dialogo (Windows)](/windows/desktop/uxguide/win-dialog-box)

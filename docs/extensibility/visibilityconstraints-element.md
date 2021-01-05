@@ -1,5 +1,7 @@
 ---
 title: Elemento VisibilityConstraints | Microsoft Docs
+description: L'elemento VisibilityConstraints determina la visibilità statica di gruppi di comandi e barre degli strumenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1aaa9573b883910ac6fa5d921a9bc79ce1c1cf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f50f23847da8f6d56da6763146efd147aebca8c6
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698196"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863920"
 ---
 # <a name="visibilityconstraints-element"></a>Elemento VisibilityConstraints
 L'elemento VisibilityConstraints determina la visibilità statica di gruppi di comandi e barre degli strumenti. La visibilità viene prima controllata dal [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE) senza caricare il pacchetto VSPackage.
@@ -58,7 +60,7 @@ L'elemento VisibilityConstraints determina la visibilità statica di gruppi di c
 
 ```xml
 <VisibilityConstraints>
-  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
     context="guidNotViewSourceMode"/>
 </VisibilityConstraints>
 ```

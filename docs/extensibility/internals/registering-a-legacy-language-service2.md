@@ -1,5 +1,7 @@
 ---
 title: Registrazione di un Service2 di linguaggio legacy | Microsoft Docs
+description: Questo articolo elenca le voci del registro di sistema per le varie opzioni di servizio di linguaggio disponibili in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +14,22 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a41f3f507579cbd2649e33e81d1368fb5404799
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08b9e88440fcb7b488e479e4188279d82a526e4c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238842"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875180"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>Registrazione di un servizio di linguaggio Legacy 2
 Le sezioni seguenti forniscono elenchi di voci del registro di sistema per le varie opzioni di servizio di linguaggio disponibili in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
- Nel seguente elenco di voci del registro di sistema, *vs reg root* è uguale a HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ *x. y*, dove *x. y* è il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] numero di versione.
+ Nel seguente elenco di voci del registro di sistema, *vs reg root* è uguale a HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *x. y*, dove *x. y* è il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] numero di versione.
 
 ## <a name="registry-entries-for-language-service-options"></a>Voci del registro di sistema per le opzioni del servizio di linguaggio
- La chiave del nome della lingua dei servizi \Languages\Language di *Visual Studio reg* \\ *Language Name* può contenere i valori seguenti.
+ La chiave del nome della lingua dei servizi \Languages\Language di *Visual Studio reg* \\  può contenere i valori seguenti.
 
-|Nome|Type|Range|Descrizione|
+|Nome|Tipo|Range|Descrizione|
 |----------|----------|-----------|-----------------|
 |Valore predefinito.|REG_SZ|*\<GUID>*|GUID del servizio di linguaggio.|
 |LangResID|REG_DWORD|0x0-0xFFFF|Identificatore di risorsa di stringa (da un Resid) per il nome di testo localizzato della lingua.|
@@ -62,11 +64,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-debugger-languages-options"></a>Voci del registro di sistema per le opzioni dei linguaggi del debugger
- Il nome della lingua dei servizi \Languages\Language di *vs reg radice* \\ *Language Name*\Debugger lingue \\ *GUID*\ chiave può includere i valori seguenti.
+ Il nome della lingua dei servizi \Languages\Language di *vs reg radice* \\ \Debugger lingue \\ *GUID*\ chiave può includere i valori seguenti.
 
-|Nome|Type|Range|Descrizione|
+|Nome|Tipo|Range|Descrizione|
 |----------|----------|-----------|-----------------|
-|Valore predefinito.|REG_SZ|testo|Il valore predefinito può essere utilizzato per documentare il nome della lingua. Il nome di questa chiave è un GUID di un analizzatore di espressioni con una voce corrispondente nell' *\<VS Reg Root>* analizzatore di \AD7Metrics\Expression.|
+|Valore predefinito.|REG_SZ|text|Il valore predefinito può essere utilizzato per documentare il nome della lingua. Il nome di questa chiave è un GUID di un analizzatore di espressioni con una voce corrispondente nell' *\<VS Reg Root>* analizzatore di \AD7Metrics\Expression.|
 
 ### <a name="example"></a>Esempio
 
@@ -83,7 +85,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-tools-options"></a>Voci del registro di sistema per le opzioni degli strumenti dell'editor
  È possibile aggiungere chiavi del registro di sistema nella chiave EditorToolsOptions per le pagine delle proprietà e i nodi delle proprietà. Queste chiavi e i rispettivi valori identificano le pagine delle proprietà nella finestra di dialogo **Opzioni** (nel menu **strumenti** ) utilizzate per configurare il servizio di linguaggio. Nell'esempio seguente il nome della *pagina* è il nome di una pagina delle proprietà e il nome del *nodo* è il nome di un nodo nell'albero della finestra di dialogo **Opzioni** . La voce di pagina e la voce del nodo devono essere specificate separatamente.
 
-|Nome|Type|Range|Descrizione|
+|Nome|Tipo|Range|Descrizione|
 |----------|----------|-----------|-----------------|
 |Valore predefinito.|REG_SZ|Da un Resid|Nome visualizzato localizzato della pagina di opzioni. Il nome può essere un testo letterale o # `nnn` , dove `nnn` è un ID di risorsa stringa nella DLL satellite del pacchetto VSPackage specificato.|
 |Pacchetto|REG_SZ|*GUID*|GUID del pacchetto VSPackage che implementa questa pagina di opzioni.|
@@ -117,7 +119,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-file-name-extension-options"></a>Voci del registro di sistema per le opzioni di estensione di file
  La voce per l'estensione di file deve includere il periodo principale, ad esempio ". myext".
 
-|Nome|Type|Range|Descrizione|
+|Nome|Tipo|Range|Descrizione|
 |----------|----------|-----------|-----------------|
 |Valore predefinito.|REG_SZ|*GUID*|GUID del servizio per il servizio di linguaggio predefinito per questo tipo di estensione del nome di file.|
 
@@ -132,9 +134,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-editor-options"></a>Voci del registro di sistema per le opzioni dell'editor
- La chiave \Editors *radice di vs reg*può contenere i valori seguenti:
+ La chiave \Editors *radice di vs reg* può contenere i valori seguenti:
 
-|Nome|Type|Range|Descrizione|
+|Nome|Tipo|Range|Descrizione|
 |----------|----------|-----------|-----------------|
 |Valore predefinito.|REG_SZ|""|Inutilizzati qui è possibile inserire il nome per la documentazione.|
 |DefaultToolboxTab|REG_SZ|""|Nome della scheda della casella degli strumenti da rendere predefinita quando l'editor è attivo.|
@@ -159,7 +161,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-logical-view-options"></a>Voci del registro di sistema per le opzioni di visualizzazione logica
  L'interfaccia utente grafica dell'editor \Editors di *vs reg radice* \\ *>* chiave \LogicalViews può contenere i valori seguenti.
 
-|Nome|Type|Range|Descrizione|
+|Nome|Tipo|Range|Descrizione|
 |----------|----------|-----------|-----------------|
 |Valore predefinito.|REG_SZ||Non utilizzato.|
 |*\<GUID>*|REG_SZ|""|Chiave per le visualizzazioni logiche supportate. È possibile disporre di tutti gli altri necessari. Il nome della voce del registro di sistema è quello che è importante, non il valore, che è sempre una stringa vuota.|
@@ -179,9 +181,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-editor-extension-options"></a>Voci del registro di sistema per le opzioni di estensione dell'editor
- La chiave \Extensions GUID dell'editor \Editors di *vs reg radice* \\ *Editor GUID*può contenere i valori seguenti. L'estensione del nome file non include il punto iniziali.
+ La chiave \Extensions GUID dell'editor \Editors di *vs reg radice* \\ può contenere i valori seguenti. L'estensione del nome file non include il punto iniziali.
 
-|Nome|Type|Range|Descrizione|
+|Nome|Tipo|Range|Descrizione|
 |----------|----------|-----------|-----------------|
 |Valore predefinito.|REG_SZ||Non utilizzato.|
 |*\<ext>*|REG_DWORD|0-0xFFFFFFFF|Priorità relativa delle estensioni. Se due o più lingue condividono la stessa estensione, viene scelta la lingua con priorità più alta.|
@@ -207,7 +209,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
 
  È possibile accedere a queste voci del registro di sistema tramite la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe.
 
-|Nome|Type|Range|Descrizione|
+|Nome|Tipo|Range|Descrizione|
 |----------|----------|-----------|-----------------|
 |CodeSense|REG_DWORD|0-1|Supporto per le operazioni di IntelliSense.|
 |MatchBraces|REG_DWORD|0-1|Supporto per coppie di lingue corrispondenti, ad esempio parentesi graffe, parentesi e parentesi quadre.|
@@ -237,5 +239,5 @@ ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
         MaxRegions            = reg_dword:0x0000000a
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sviluppo di un servizio di linguaggio legacy](../../extensibility/internals/developing-a-legacy-language-service.md)

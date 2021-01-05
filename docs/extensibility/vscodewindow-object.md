@@ -1,5 +1,7 @@
 ---
 title: Oggetto oggetto VsCodeWindow. | Microsoft Docs
+description: Informazioni sulle finestre del codice, che sono finestre di documento specializzate che possono includere una o più visualizzazioni di testo, in genere l'oggetto oggetto VsTextView.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d2cdbe12146dd5d3010b9bf8ffcdd130a0ea4bb
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: a778cde66bc85a6f3cd8a13b5f2bb6fdb41844de
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414360"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864006"
 ---
 # <a name="vscodewindow-object"></a>Oggetto oggetto VsCodeWindow.
 Una finestra del codice è una finestra di documento specializzata che può includere una o più visualizzazioni di testo, in genere l' <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> oggetto.
@@ -33,6 +35,6 @@ Una finestra del codice è una finestra di documento specializzata che può incl
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|Rappresenta un'interfaccia a documenti multipli (MDI) che contiene una o più visualizzazioni di codice.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|Riempie una cornice della finestra.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
 - [Modifica figure](https://www.microsoft.com/download/details.aspx?id=55984)

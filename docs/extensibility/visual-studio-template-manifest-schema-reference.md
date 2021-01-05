@@ -1,5 +1,7 @@
 ---
 title: Riferimenti allo schema del manifesto dei modelli di Visual Studio | Microsoft Docs
+description: Questo riferimento allo schema descrive il formato dei file manifesto dei modelli di Visual Studio generati per i modelli di progetto o di elemento di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
@@ -8,15 +10,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbe46851d9df85569be796b4147217bd7db450ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d712f2cb95b2df9680c4476805e9dfb6809cf038
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697978"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863838"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Riferimento allo schema del manifesto del modello di Visual Studio
-Questo schema descrive il formato dei file manifesto del modello di Visual Studio (con*estensione vstman*) generati per i modelli di progetto o di elemento di Visual Studio. Lo schema descrive anche il percorso e altre informazioni rilevanti sul modello.
+Questo schema descrive il formato dei file manifesto del modello di Visual Studio (con *estensione vstman*) generati per i modelli di progetto o di elemento di Visual Studio. Lo schema descrive anche il percorso e altre informazioni rilevanti sul modello.
 
  : Poiché sono presenti directory di modelli di elemento e di progetto separate, un manifesto non deve mai includere una combinazione di modelli di elemento e di progetto.
 
@@ -39,7 +41,7 @@ Questo schema descrive il formato dei file manifesto del modello di Visual Studi
 - **VSTemplateDir** Opzionale.
 
 ### <a name="parent-element"></a>Elemento padre
- Nessuno.
+ No.
 
 ## <a name="vstemplatecontainer"></a>VSTemplateContainer
  Contenitore degli elementi del manifesto del modello. Un manifesto dispone di un contenitore di modelli per ogni modello definito.
@@ -62,7 +64,7 @@ Questo schema descrive il formato dei file manifesto del modello di Visual Studi
  A causa della loro progettazione, le voci **VSTemplateDir** dovrebbero essere visualizzate solo in manifesti non locali specificati.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ No.
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -87,7 +89,7 @@ Questo schema descrive il formato dei file manifesto del modello di Visual Studi
 - **ID**: valore stringa che specifica l'ID. facoltativo.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ No.
 
 ### <a name="parent-element"></a>Elemento padre
  **LocalizedName**

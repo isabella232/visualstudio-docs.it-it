@@ -1,5 +1,7 @@
 ---
 title: Riformattazione del codice in un servizio di linguaggio legacy | Microsoft Docs
+description: Informazioni su come abilitare il supporto per la riformattazione del codice sorgente per un servizio di linguaggio legacy di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3e83c7299298b16a6fb3178b189479a80e1728
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fcd9871cb0eeec69b98ada83af15f0daa624cb4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705915"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875362"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Riformattazione del codice in un servizio di linguaggio legacy
 
@@ -183,6 +185,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Funzionalità dei servizi di linguaggio legacy](legacy-language-service-features1.md)

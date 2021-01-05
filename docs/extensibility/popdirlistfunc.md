@@ -1,5 +1,7 @@
 ---
 title: POPDIRLISTFUNC | Microsoft Docs
+description: Informazioni sulla funzione di callback POPDIRLISTFUNC, che viene passata alle directory di aggiornamento per scoprire quali sono inclusi nel controllo del codice sorgente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52a0c16af0e142bda8527c5244a22e0830ced9e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 805d7a5c9250bc511692c497bc9083852dad2301
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702076"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863444"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 Si tratta di una funzione di callback assegnata alla funzione [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) per aggiornare una raccolta di directory e (facoltativamente) i nomi di file per scoprire quali sono inclusi nel controllo del codice sorgente.
@@ -56,10 +58,10 @@ in Percorso locale completo di una directory o di un nome file nel controllo del
 |SCC_I_OPERATIONCANCELED|Consente di arrestare l'elaborazione.|
 |SCC_E_xxx|Qualsiasi errore appropriato del controllo del codice sorgente dovrebbe arrestare l'elaborazione.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Se il `fOptions` parametro della `SccPopulateDirList` funzione contiene il `SCC_PDL_INCLUDEFILES` flag, l'elenco conterrà anche nomi di file e nomi di directory.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni di callback implementate dall'IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)
 - [Codici di errore](../extensibility/error-codes.md)

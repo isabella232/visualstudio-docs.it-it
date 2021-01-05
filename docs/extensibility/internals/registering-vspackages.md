@@ -1,5 +1,7 @@
 ---
 title: Registrazione di pacchetti VSPackage | Microsoft Docs
+description: Un file con estensione pkgdef contiene informazioni che altrimenti verrebbero aggiunte al registro di sistema. Informazioni su come Visual Studio USA i file pkgdef per descrivere/individuare un pacchetto VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b40793a5ab317b6a467e55df13302f19cec82640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae4d7ae70766b7e0d2d8eedb5d79d97159839146
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705738"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875115"
 ---
 # <a name="registering-vspackages"></a>Registrazione di pacchetti VSPackage
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] si basa sui file. pkgdef per descrivere e individuare un pacchetto VSPackage. Un file. pkgdef contiene tutte le informazioni di registrazione che altrimenti verrebbero aggiunte al registro di sistema. I pacchetti VSPackage gestiti vengono registrati aggiungendo attributi al codice sorgente e quindi eseguendo l' [utilità CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md) nell'assembly risultante per generare un file con estensione pkgdef.

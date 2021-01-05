@@ -1,5 +1,7 @@
 ---
 title: Elemento padre | Microsoft Docs
+description: L'elemento padre specifica che un elemento è un elemento padre di un pulsante, di una casella combinata, di un menu o di un gruppo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c018505ba06762bf8426f266b24ee1835313c29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03f1709184126d31845bfe1145afdebfeffcd1d1
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702222"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863327"
 ---
 # <a name="parent-element"></a>Elemento padre
 L'elemento padre di un pulsante o di una casella combinata può essere solo un gruppo. L'elemento padre di un menu o di un gruppo può essere qualsiasi altro menu o gruppo. In un [elemento CommandPlacement](../extensibility/commandplacement-element.md), questo elemento è obbligatorio. in tutti gli altri casi è facoltativa. Se questo elemento viene omesso, l'elemento padre di `Group_Undefined:0` sarà implicito.
@@ -30,7 +32,7 @@ L'elemento padre di un pulsante o di una casella combinata può essere solo un g
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -49,5 +51,5 @@ L'elemento padre di un pulsante o di una casella combinata può essere solo un g
 |[Menu (elemento)](../extensibility/menus-element.md)|Definisce tutti i menu implementati da un VSPackage.|
 |[Elemento Groups](../extensibility/groups-element.md)|Contiene le voci che definiscono i gruppi di comandi di un VSPackage.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

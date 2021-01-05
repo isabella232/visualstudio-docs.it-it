@@ -1,5 +1,7 @@
 ---
 title: Menu e comandi per Visual Studio | Microsoft Docs
+description: Informazioni su come le barre dei comandi consentono flessibilità nell'interfaccia utente quando si creano nuove funzionalità per Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f22b7ac4377b600208c079b6af1eff7fc3cbfc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7abb0249efc1a8da5d7e65572777e192e72c25e7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698392"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863544"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menu e comandi per Visual Studio
 ## <a name="command-usage"></a>Utilizzo comando
@@ -49,13 +51,13 @@ ms.locfileid: "80698392"
  È utile posizionare i comandi in prossimità dell'area di interesse dell'utente. Un modo per eseguire questa operazione consiste nel creare una barra degli strumenti incorporata nella parte superiore della finestra degli strumenti o dell'editor di documenti. I comandi posizionati sulla barra degli strumenti devono essere specifici dell'area del contenuto all'interno della finestra. Non duplicare i comandi condivisi su queste barre degli strumenti. Ad esempio, non inserire mai un'icona "Save" all'interno di una barra degli strumenti incorporata.
 
 ### <a name="content-and-command-visibility"></a>Visibilità del contenuto e del comando
- I comandi sono disponibili negli ambiti seguenti: **ambiente**, **gerarchia**e **documento**. Conosce ogni ambito per avere confidenza nel posizionamento del comando.
+ I comandi sono disponibili negli ambiti seguenti: **ambiente**, **gerarchia** e **documento**. Conosce ogni ambito per avere confidenza nel posizionamento del comando.
 
- I comandi nell'ambito dell' **ambiente** definiscono il contesto primario e sono condivisi tra più contesti. Modificano la visibilità o la disposizione dei documenti e delle finestre degli strumenti. Tra i comandi nell'ambito dell'ambiente sono presenti **nuovo progetto**, **Connetti al server**, Connetti **processo**, **taglia**, **copia**, **Incolla**, **trova**, **Opzioni**, **Personalizza**, **nuova finestra**e **Visualizza Guida**.
+ I comandi nell'ambito dell' **ambiente** definiscono il contesto primario e sono condivisi tra più contesti. Modificano la visibilità o la disposizione dei documenti e delle finestre degli strumenti. Tra i comandi nell'ambito dell'ambiente sono presenti **nuovo progetto**, **Connetti al server**, Connetti **processo**, **taglia**, **copia**, **Incolla**, **trova**, **Opzioni**, **Personalizza**, **nuova finestra** e **Visualizza Guida**.
 
- I comandi nell'ambito della **gerarchia** gestiscono le gerarchie in Visual Studio, inclusi il **progetto**, il **Team**e **i dati**. Sono correlati al sottocontesto di un progetto, ad esempio **debug**, **compilazione**, **test**, **architettura**o **analisi**. Tra i comandi nell'ambito della gerarchia sono **Aggiungi nuovo elemento**, **nuova query**, **Impostazioni progetto**, **Aggiungi nuova origine dati**, **Avvia Creazione guidata sessione di prestazioni**e **nuovo diagramma**.
+ I comandi nell'ambito della **gerarchia** gestiscono le gerarchie in Visual Studio, inclusi il **progetto**, il **Team** e **i dati**. Sono correlati al sottocontesto di un progetto, ad esempio **debug**, **compilazione**, **test**, **architettura** o **analisi**. Tra i comandi nell'ambito della gerarchia sono **Aggiungi nuovo elemento**, **nuova query**, **Impostazioni progetto**, **Aggiungi nuova origine dati**, **Avvia Creazione guidata sessione di prestazioni** e **nuovo diagramma**.
 
- I comandi nell'ambito del **documento** agiscono sul contenuto di un documento, ad esempio codice, progettazione o una query elemento di lavoro (wiq). Agiscono anche sulla visualizzazione di una finestra degli strumenti o sono specifici di tale finestra degli strumenti. I comandi dell'ambito del documento agiscono anche sugli oggetti file che sono specifici della gerarchia, ad esempio **Rimuovi dal progetto**. Tra i comandi nell'ambito del documento sono **Refactor > Rinomina**, **Crea copia di elemento di lavoro**, **Espandi tutto**, **Comprimi tutto**e **Crea attività utente**.
+ I comandi nell'ambito del **documento** agiscono sul contenuto di un documento, ad esempio codice, progettazione o una query elemento di lavoro (wiq). Agiscono anche sulla visualizzazione di una finestra degli strumenti o sono specifici di tale finestra degli strumenti. I comandi dell'ambito del documento agiscono anche sugli oggetti file che sono specifici della gerarchia, ad esempio **Rimuovi dal progetto**. Tra i comandi nell'ambito del documento sono **Refactor > Rinomina**, **Crea copia di elemento di lavoro**, **Espandi tutto**, **Comprimi tutto** e **Crea attività utente**.
 
 ### <a name="command-placement-decisions"></a>Decisioni sul posizionamento del comando
  Dopo aver deciso di creare un comando, è necessario determinarne il posizionamento appropriato e se creare un tasto di scelta rapida. Seguire questo percorso decisionale per stabilire dove inserire il comando:
@@ -91,7 +93,7 @@ ms.locfileid: "80698392"
 
 - Progetto
 
-- Compilare
+- Compilazione
 
 - Debug
 
@@ -99,7 +101,7 @@ ms.locfileid: "80698392"
 
 - Team
 
-- Dati
+- Data
 
 - Test
 

@@ -1,5 +1,7 @@
 ---
 title: Salvataggio di un documento standard | Microsoft Docs
+description: Informazioni sul processo che si verifica per un documento standard per un tipo di progetto aggiunto all'IDE di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8d50a9e62e69f925564717020a51f88620f5f3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81c79ece83bc8aaaf7ca4dd28642de5973ad94c1
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705546"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875666"
 ---
 # <a name="saving-a-standard-document"></a>Salvataggio di un documento standard
-L'ambiente gestisce i comandi Salva, Salva con nome e Salva tutti. Quando un utente seleziona **Salva**, **Salva con nome**o **Salva tutto** dal menu **file** o chiude la soluzione, generando un' **eccezione Salva tutto**, si verifica il processo seguente.
+L'ambiente gestisce i comandi Salva, Salva con nome e Salva tutti. Quando un utente seleziona **Salva**, **Salva con nome** o **Salva tutto** dal menu **file** o chiude la soluzione, generando un' **eccezione Salva tutto**, si verifica il processo seguente.
 
  ![Editor standard](../../extensibility/internals/media/public.gif "Pubblico") Salva, Salva con nome e Salva tutte le operazioni di gestione dei comandi per un editor standard
 
@@ -56,6 +58,6 @@ L'ambiente gestisce i comandi Salva, Salva con nome e Salva tutti. Quando un ute
 
 2. Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> `pszMkDocumentNew` Metodo (, `punkWindowFrame` ) per trasferire il documento alla nuova gerarchia. La gerarchia che esegue il comando Salva con nome chiama questo metodo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Apertura e salvataggio di elementi di progetto](../../extensibility/internals/opening-and-saving-project-items.md)

@@ -1,5 +1,7 @@
 ---
 title: Oggetto configurazione progetto | Microsoft Docs
+description: Informazioni sul modo in cui l'oggetto di configurazione del progetto gestisce la visualizzazione delle informazioni di configurazione nell'interfaccia utente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 001509b56e3bac6a8fd585eb0efe0bd57018acea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d91f640abc4fd91b68341e825b312b8bfb0d6f6
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706649"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875492"
 ---
 # <a name="project-configuration-object"></a>Oggetto di configurazione del progetto
 L'oggetto configurazione progetto gestisce la visualizzazione delle informazioni di configurazione nell'interfaccia utente.
@@ -47,7 +49,7 @@ L'oggetto configurazione progetto gestisce la visualizzazione delle informazioni
 
  `ISpecifyPropertyPages` e `IDispatch` vengono utilizzati in combinazione con le pagine delle proprietà per recuperare e visualizzare le informazioni dipendenti dalla configurazione per l'utente. Per ulteriori informazioni, vedere [pagine delle proprietà](../../extensibility/internals/property-pages.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md)
 - [Configurazione del progetto per la compilazione](../../extensibility/internals/project-configuration-for-building.md)
 - [Configurazione del progetto per l'output](../../extensibility/internals/project-configuration-for-output.md)

@@ -1,5 +1,7 @@
 ---
 title: Oggetto oggetto VsTextBuffer | Microsoft Docs
+description: L'oggetto oggetto VsTextBuffer rappresenta un flusso di testo Unicode, che in genere è associato a un file. Questo articolo elenca le interfacce di oggetto VsTextBuffer.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 193d96be91839143893ac0798db723f3e94ea26c
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: e5c2afa08e9c480342bff95d417dfb9174250b83
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93413913"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863956"
 ---
 # <a name="vstextbuffer-object"></a>Oggetto oggetto VsTextBuffer
 L'oggetto buffer di testo rappresenta un flusso di testo Unicode, che in genere è associato a un file. Un <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto può essere usato all'esterno del contesto dell'editor principale, come in, una procedura guidata.
@@ -40,10 +42,10 @@ L'oggetto buffer di testo rappresenta un flusso di testo Unicode, che in genere 
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|Fornisce l'accesso a una raccolta generica di proprietà. La proprietà più importante è il nome, o moniker, del buffer. È possibile archiviare i dati casuali nel buffer con questa interfaccia creando un GUID e usandolo come chiave.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|Supporta i punti di connessione per gli eventi.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  `VSTextBuffer`Viene in genere trovato da una `QueryInterface` chiamata a `IVsTextBuffer` . Per ulteriori informazioni, vedere [buffer di testo](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api?preserve-view=true&view=vs-2015).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>
 - <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>
 - [Modifica figure](https://www.microsoft.com/download/details.aspx?id=55984)

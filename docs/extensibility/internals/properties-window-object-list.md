@@ -1,5 +1,7 @@
 ---
 title: Elenco oggetti finestra Proprietà | Microsoft Docs
+description: Informazioni sulle interfacce usate per interagire con l'elenco di oggetti nel Finestra Proprietà nell'IDE di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffe11ae6ebb4e692686c884b663a4f93d1466535
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92fcce4dc62cdc84d15ca6dc51420791d4460340
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706141"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875427"
 ---
 # <a name="properties-window-object-list"></a>Elenco di oggetti della finestra Proprietà
 L'elenco di oggetti nella finestra **Proprietà** è un elenco a discesa che consente di modificare la selezione in altri oggetti disponibili all'interno di una o più finestre selezionate. Se si seleziona un oggetto diverso dall'interno di questo elenco, viene attivata una chiamata a <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> per informare l'ambiente che è stato selezionato un nuovo oggetto. Le informazioni visualizzate nella finestra **Proprietà** vengono quindi modificate per visualizzare le proprietà associate all'oggetto appena selezionato.
@@ -29,5 +31,5 @@ L'elenco di oggetti nella finestra **Proprietà** è un elenco a discesa che con
 
  Se l'oggetto COM non implementa <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> , nella finestra **Proprietà** viene visualizzato il nome dell'interfaccia al posto del nome dell'oggetto sul lato sinistro dell'elenco.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estensione delle proprietà](../../extensibility/internals/extending-properties.md)

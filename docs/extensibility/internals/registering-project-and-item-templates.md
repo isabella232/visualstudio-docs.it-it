@@ -1,5 +1,7 @@
 ---
 title: Registrazione di modelli di progetti e di elementi | Microsoft Docs
+description: Scopri in che modo Visual Studio usa le informazioni di registrazione per i tipi di progetto per determinare gli elementi da visualizzare nelle finestre di dialogo Aggiungi nuovo progetto e Aggiungi nuovo elemento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b64504c39b1fc3c4a82530b265cfd0e96832b4f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 999b435719113883201b7619daca9a84d095294e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705818"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875271"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrazione di modelli di progetto e di elementi
 I tipi di progetto devono registrare le directory in cui si trovano i modelli di progetto e di elemento di progetto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Usa le informazioni di registrazione associate ai tipi di progetto per determinare gli elementi da visualizzare nelle finestre di dialogo **Aggiungi nuovo progetto** e **Aggiungi nuovo elemento** .
@@ -27,7 +29,7 @@ I tipi di progetto devono registrare le directory in cui si trovano i modelli di
  Per ulteriori informazioni sui modelli, vedere [aggiunta di modelli di progetto e di elementi di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
 ## <a name="registry-entries-for-projects"></a>Voci del registro di sistema per i progetti
- Gli esempi seguenti illustrano le voci del registro di sistema in HKEY_LOCAL_MACHINE versione di \Software\Microsoft\VisualStudio \\ < *Version*>. Le tabelle associate spiegano gli elementi utilizzati negli esempi.
+ Negli esempi seguenti vengono illustrate le voci del registro di sistema in HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ < *versione*>. Le tabelle associate spiegano gli elementi utilizzati negli esempi.
 
 ```
 [Projects\{ProjectGUID}]
@@ -37,7 +39,7 @@ I tipi di progetto devono registrare le directory in cui si trovano i modelli di
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|Nome|Type|Descrizione|
+|Nome|Tipo|Descrizione|
 |----------|----------|-----------------|
 |@|REG_SZ|Nome predefinito dei progetti di questo tipo.|
 |DisplayName|REG_SZ|ID risorsa del nome da recuperare dalla DLL satellite registrata nei pacchetti.|
@@ -55,7 +57,7 @@ I tipi di progetto devono registrare le directory in cui si trovano i modelli di
 "SortPriority"=dword:00000064
 ```
 
-| Nome | Type | Descrizione |
+| Nome | Tipo | Descrizione |
 |--------------------------|-----------| - |
 | @ | REG_SZ | ID risorsa per i modelli Aggiungi elemento. |
 | TemplatesDir | REG_SZ | Percorso degli elementi del progetto visualizzati nella finestra di dialogo per la procedura guidata **Aggiungi nuovo elemento** . |
@@ -67,7 +69,7 @@ I tipi di progetto devono registrare le directory in cui si trovano i modelli di
 
  **File di Visual C# ( \* . cs, \* . resx, \* . Settings, \* . xsd, \* . WSDL); \* . CS, \* . resx, \* . Settings, \* . xsd, \* . WSDL)**
 
- Per supportare la registrazione di più filtri, ogni filtro viene registrato nella relativa sottochiave in HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ < *versione*> \projects \\ { \<*ProjectGUID*> } \Filters \\ < *sottochiave*>. Il nome della sottochiave è arbitrario; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Ignora il nome della sottochiave e usa solo i relativi valori.
+ Per supportare la registrazione di più filtri, ogni filtro viene registrato nella relativa sottochiave in HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ < *versione*> \\ \<*ProjectGUID*> sottochiave \Filters \projects {} \\ < >. Il nome della sottochiave è arbitrario; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Ignora il nome della sottochiave e usa solo i relativi valori.
 
  È possibile controllare i contesti in cui viene utilizzato un filtro impostando i flag, illustrati nella tabella seguente. Se per un filtro non è impostato alcun flag, questo verrà elencato dopo i filtri comuni nella finestra di dialogo **Aggiungi elemento esistente** e nella finestra di dialogo **Apri file** , ma non verrà utilizzato nella finestra di dialogo **Cerca nei file** .
 
@@ -82,7 +84,7 @@ I tipi di progetto devono registrare le directory in cui si trovano i modelli di
 "SortPriority"=dword:00000064
 ```
 
-|Nome|Type|Descrizione|
+|Nome|Tipo|Descrizione|
 |----------|----------|-----------------|
 |CommonFindFilesFilter|REG_DWORD|Consente di filtrare uno dei filtri comuni nella finestra di dialogo **Cerca nei file** . I filtri comuni sono elencati nell'elenco di filtri prima che i filtri non siano contrassegnati come comuni.|
 |CommonOpenFilesFilter|REG_DWORD|Consente di filtrare uno dei filtri comuni nella finestra di dialogo **Apri file** . I filtri comuni sono elencati nell'elenco di filtri prima che i filtri non siano contrassegnati come comuni.|
@@ -116,7 +118,7 @@ I tipi di progetto devono registrare le directory in cui si trovano i modelli di
 
  \WizardFiles
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Aggiunta di modelli di progetto e di elementi di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [Procedure guidate](../../extensibility/internals/wizards.md)

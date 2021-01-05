@@ -1,5 +1,7 @@
 ---
 title: Registrazione di un oggetto Service1 della lingua legacy | Microsoft Docs
+description: Informazioni sulla registrazione di un servizio di linguaggio legacy da un pacchetto VSPackage con Visual Studio aggiungendo chiavi e voci del registro di sistema.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0076eeee0ebcb0a80925efdde212097a3ec3e7e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e92c831ad3d2f4d75d57c48cfc7ba666d19b7a5e
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238881"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875205"
 ---
 # <a name="registering-a-legacy-language-service-1"></a>Registrazione di un servizio di linguaggio Legacy 1
 Nel Framework di pacchetto gestito (MPF), il servizio di linguaggio viene offerto da un pacchetto VSPackage (vedere [VSPackage](../../extensibility/internals/vspackages.md)) ed è registrato con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aggiungendo chiavi e voci del registro di sistema. Questo processo di registrazione viene eseguito in parte durante l'installazione e, in parte, in fase di esecuzione.
@@ -128,7 +130,7 @@ namespace TestLanguagePackage
  Questo attributo registra una pagina delle proprietà da visualizzare nella finestra di dialogo **Opzioni** sotto la categoria **editor di testo** . Usare uno di questi attributi per ogni pagina da visualizzare per il servizio di linguaggio. Se è necessario organizzare le pagine in una struttura ad albero, utilizzare attributi aggiuntivi per definire ogni nodo dell'albero.
 
 ### <a name="example"></a>Esempio
- Questo esempio mostra due pagine delle proprietà, **Opzioni** e **rientri**e un nodo che contiene la seconda pagina delle proprietà.
+ Questo esempio mostra due pagine delle proprietà, **Opzioni** e **rientri** e un nodo che contiene la seconda pagina delle proprietà.
 
 ```csharp
 using Microsoft.VisualStudio.Shell;

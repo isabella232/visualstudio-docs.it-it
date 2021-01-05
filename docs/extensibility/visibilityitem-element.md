@@ -1,5 +1,7 @@
 ---
 title: Elemento VisibilityItem | Microsoft Docs
+description: L'elemento VisibilityItem determina la visibilità statica dei comandi e delle barre degli strumenti. Le voci identificano un comando o un menu e un contesto dell'interfaccia utente del comando associato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9129d64e430d661bbdd8f7682e64c93650570211
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 637fea7d203e58c59f85794eeb0f8894eb62e777
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698154"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863894"
 ---
 # <a name="visibilityitem-element"></a>Elemento VisibilityItem
 L' `VisibilityItem` elemento determina la visibilità statica dei comandi e delle barre degli strumenti. Ogni voce identifica un comando o un menu e anche un contesto dell'interfaccia utente del comando associato. Visual Studio rileva i comandi, i menu e le barre degli strumenti e la relativa visibilità, senza caricare i pacchetti VSPackage che li definiscono. L'IDE usa il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metodo per determinare se un contesto dell'interfaccia utente del comando è attivo.
@@ -57,14 +59,14 @@ L' `VisibilityItem` elemento determina la visibilità statica dei comandi e dell
 |-------------|-----------------|
 |[Elemento VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|L' `VisibilityConstraints` elemento determina la visibilità statica di gruppi di comandi e barre degli strumenti.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  I contesti dell'interfaccia utente di Visual Studio standard vengono definiti nel file \VisualStudioIntegration\Common\Inc\vsshlids.h del *percorso di installazione di Visual Studio SDK*, nonché nelle <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> classi e. Nella classe viene definito un set più completo di contesti dell'interfaccia utente <xref:Microsoft.VisualStudio.VSConstants> .
 
 ## <a name="example"></a>Esempio
 
 ```xml
 <VisibilityConstraints>
-  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"
     context="guidNotViewSourceMode"/>
 </VisibilityConstraints>
 ```

@@ -1,5 +1,7 @@
 ---
 title: Progettazione manifesto VSIX | Microsoft Docs
+description: Informazioni su come la finestra di progettazione del manifesto VSIX modifica un file manifesto del pacchetto VSIX, che imposta il comportamento di installazione per un'estensione di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,19 +16,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30620e0fe91d0e90995d2d2f721950f878c65fdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6323b4330279848bc0453bdc7413904e2582d13a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697887"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863971"
 ---
 # <a name="vsix-manifest-designer"></a>Finestra di progettazione del manifesto VSIX
 Modifica un file manifesto del pacchetto VSIX, che imposta il comportamento di installazione per un'estensione di Visual Studio.
 
  La **finestra di progettazione del manifesto VSIX** esegue il mapping allo schema VSIX sottostante. Ogni elemento nello schema può essere impostato utilizzando un controllo corrispondente nella finestra di progettazione. Per altre informazioni sullo schema, vedere [riferimento allo schema di estensione VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md).
 
- Per aprire **Progettazione manifesto VSIX**, individuare un file *source. Extension. vsixmanifest* in **Esplora soluzioni**e aprire il file. Se il file non contiene codice XML valido, la finestra di progettazione del manifesto non verrà aperta.
+ Per aprire **Progettazione manifesto VSIX**, individuare un file *source. Extension. vsixmanifest* in **Esplora soluzioni** e aprire il file. Se il file non contiene codice XML valido, la finestra di progettazione del manifesto non verrà aperta.
 
 > [!NOTE]
 > Il file *source. Extension. vsixmanifest* viene restituito in *Extension. vsixmanifest* al momento della compilazione del pacchetto.
@@ -66,9 +68,9 @@ Modifica un file manifesto del pacchetto VSIX, che imposta il comportamento di i
 
   **Tag** Aggiunge tag di testo da utilizzare per gli hint di ricerca.
 
-  **Note sulla versione** Specifica un file (con*estensione txt*, *RTF*) che contiene le note sulla versione. Accetta anche l'URL di un sito Web che visualizza le note sulla versione.
+  **Note sulla versione** Specifica un file (con *estensione txt*, *RTF*) che contiene le note sulla versione. Accetta anche l'URL di un sito Web che visualizza le note sulla versione.
 
-  **Guida introduzione** Specifica un file (con estensione*txt*, *RTF*) che contiene informazioni su come usare l'estensione o il contenuto del pacchetto VSIX. Questa guida viene visualizzata al termine dell'installazione dell'estensione. Accetta anche l'URL di un sito Web che visualizza la guida.
+  **Guida introduzione** Specifica un file (con estensione *txt*, *RTF*) che contiene informazioni su come usare l'estensione o il contenuto del pacchetto VSIX. Questa guida viene visualizzata al termine dell'installazione dell'estensione. Accetta anche l'URL di un sito Web che visualizza la guida.
 
   **Altro URL informazioni** Specifica l'URL di un sito Web che contiene informazioni aggiuntive sul prodotto.
 
@@ -94,7 +96,7 @@ Modifica un file manifesto del pacchetto VSIX, che imposta il comportamento di i
 
   **Questo progetto VSIX è installato per tutti gli utenti (è richiesta l'elevazione dei privilegi all'installazione)** Se si seleziona questa casella di controllo, l'estensione viene installata per tutti gli utenti. in caso contrario, viene installato solo per l'utente corrente.
 
-  **Questo progetto VSIX viene installato da Windows Installer** Se si seleziona questa casella di controllo, l'estensione viene installata dal Windows Installer (file con estensione*MSI* ); in caso contrario, viene installato come pacchetto VSIX*tipico (file VSIX)* .
+  **Questo progetto VSIX viene installato da Windows Installer** Se si seleziona questa casella di controllo, l'estensione viene installata dal Windows Installer (file con estensione *MSI* ); in caso contrario, viene installato come pacchetto VSIX *tipico (file VSIX)* .
 
   La scheda **Asset** contiene i controlli seguenti.
 
@@ -128,6 +130,6 @@ Modifica un file manifesto del pacchetto VSIX, che imposta il comportamento di i
 
   L'identificatore deve corrispondere all' `ID` attributo dei metadati del pacchetto di dipendenze. L'origine può essere un progetto nella soluzione corrente, un'estensione attualmente installata o un file. L'impostazione **How is resolved Dependency** può essere il percorso relativo di un pacchetto annidato o l'URL del percorso di download per la dipendenza. L'ID, la versione e la risoluzione del pacchetto di dipendenze corrispondono agli `Id` attributi, `Version` e `Location` dell' `Dependency` elemento associato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento allo schema di estensione VSIX 2,0](../extensibility/vsix-extension-schema-2-0-reference.md)
 - [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md)

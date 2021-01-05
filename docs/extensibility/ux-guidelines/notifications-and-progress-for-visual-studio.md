@@ -1,5 +1,7 @@
 ---
 title: Notifiche e stato di avanzamento per Visual Studio | Microsoft Docs
+description: Informazioni su diversi modi per informare gli utenti su cosa accade in Visual Studio in merito alle attività di sviluppo del software.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f6a7ddd5d1a5a7257617b03098722e1341017b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56acfd96f8d9be575f6e13c727a294f28301bef4
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699878"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863790"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notifiche e avanzamento per Visual Studio
 ## <a name="notification-systems"></a><a name="BKMK_NotificationSystems"></a> Sistemi di notifica
@@ -286,7 +288,7 @@ ms.locfileid: "80699878"
 ### <a name="overview"></a>Panoramica
  Barre informazioni forniscono all'utente un indicatore vicino al punto di attenzione e l'utilizzo del controllo della barra informazioni condivisa garantisce la coerenza nell'aspetto e nell'interazione visive.
 
- ![Barra informazioni](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")
+ ![Infobar](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")
 
  **Barre informazioni in Visual Studio**
 
@@ -409,7 +411,7 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 }
 ```
 
-### <a name="placement"></a>Posizione
+### <a name="placement"></a>Selezione host
  Barre informazioni può essere visualizzato in una o più delle seguenti posizioni:
 
 - Finestre degli strumenti

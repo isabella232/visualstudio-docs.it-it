@@ -1,5 +1,7 @@
 ---
 title: Oggetti contesto selezione | Microsoft Docs
+description: Informazioni sugli elementi interni del modo in cui l'IDE di Visual Studio usa un oggetto contesto di selezione globale per determinare gli elementi da visualizzare nell'IDE.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e4f33dd0168a667b8f266ea606cecf0c26d62f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf5e54f00ecbac03eaebe68c6fb4de410987b63f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705505"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875570"
 ---
 # <a name="selection-context-objects"></a>Oggetti del contesto di selezione
 Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE) usa un oggetto contesto di selezione globale per determinare gli elementi da visualizzare nell'IDE. Ogni finestra nell'IDE può avere un proprio oggetto contesto di selezione inserito nel contesto di selezione globale. L'IDE aggiorna il contesto di selezione globale con i valori di una finestra quando la finestra ha lo stato attivo. Per ulteriori informazioni, vedere [feedback all'utente](../../extensibility/internals/feedback-to-the-user.md).
@@ -39,7 +41,7 @@ Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Devel
 
 3. Il pacchetto VSPackage agisce sugli eventi ricevuti eseguendo attività quali l'aggiornamento di una gerarchia, la riattivazione di uno strumento o altre attività simili.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>
 - [Gerarchie in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

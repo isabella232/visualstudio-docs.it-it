@@ -1,5 +1,7 @@
 ---
 title: Riferimento allo schema XML di VSCT | Microsoft Docs
+description: Gli articoli di riferimento XML Schema VSCT descrivono gli elementi dello schema del compilatore della tabella dei comandi, con attributi e elementi figlio consentiti per ognuno.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 923a0c4b64fcae3a409a2298d6d481f6e1bb14db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56d6c1309dc5b9a52de0bc0b54a764eceaf37d96
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697907"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863976"
 ---
 # <a name="vsct-xml-schema-reference"></a>Riferimento XML Schema VSCT
 Fornisce una tabella di elementi dello schema del compilatore della tabella dei comandi, con gli elementi figlio e gli attributi consentiti per ciascuno.
@@ -72,6 +74,6 @@ Fornisce una tabella di elementi dello schema del compilatore della tabella dei 
 
 - [Attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Routing di comandi nei pacchetti VSPackage](../extensibility/internals/command-routing-in-vspackages.md)
