@@ -1,5 +1,7 @@
 ---
 title: Creazione di un'area di visualizzazione, comandi e impostazioni di visualizzazione | Microsoft Docs
+description: Informazioni su come estendere l'editor di codice di Visual Studio con le guide di colonna usando questa procedura dettagliata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 392c4be60f2285edb986d5ca7a1cf4a2202e03c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2108abe89a47fa276da53a14439a52451d936eea
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905035"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863066"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Procedura dettagliata: creare un'area di visualizzazione, comandi e impostazioni (guide di colonna)
 È possibile estendere l'editor di testo/codice di Visual Studio con i comandi e gli effetti di visualizzazione. Questo articolo illustra come iniziare a usare una funzionalità di estensione comune, ovvero le guide alle colonne. Le guide di colonna sono linee chiare visive disegnate nella visualizzazione dell'editor di testo, per semplificare la gestione del codice a larghezze di colonna specifiche. In particolare, il codice formattato può essere importante per gli esempi inclusi in documenti, post di Blog o segnalazioni di bug.
@@ -43,11 +45,11 @@ Innanzitutto, si crea un progetto VSIX, si aggiunge un'area di controllo della v
 
   **Progetto VSIX**. Usare il comando **File &#124; nuovo...** per creare un progetto. Scegliere il nodo **estensibilità** in **C#** nel riquadro di spostamento a sinistra e scegliere **progetto VSIX** nel riquadro di destra. Immettere il nome **ColumnGuides** e scegliere **OK** per creare il progetto.
 
-  **Visualizzazione**dell'area di visualizzazione. Premere il pulsante destro del mouse sul nodo del progetto nella Esplora soluzioni. Scegliere il comando **aggiungi &#124; nuovo elemento** per aggiungere un nuovo elemento dell'area di controllo della visualizzazione. Scegliere **Extensibility &#124; editor** nel riquadro di spostamento a sinistra e scegliere l'area di **visualizzazione dell'editor** nel riquadro di destra. Immettere il nome **ColumnGuideAdornment** come nome dell'elemento e scegliere **Aggiungi** per aggiungerlo.
+  **Visualizzazione** dell'area di visualizzazione. Premere il pulsante destro del mouse sul nodo del progetto nella Esplora soluzioni. Scegliere il comando **aggiungi &#124; nuovo elemento** per aggiungere un nuovo elemento dell'area di controllo della visualizzazione. Scegliere **Extensibility &#124; editor** nel riquadro di spostamento a sinistra e scegliere l'area di **visualizzazione dell'editor** nel riquadro di destra. Immettere il nome **ColumnGuideAdornment** come nome dell'elemento e scegliere **Aggiungi** per aggiungerlo.
 
   È possibile vedere che questo modello di elemento ha aggiunto due file al progetto (oltre a riferimenti e così via): **ColumnGuideAdornment.cs** e **ColumnGuideAdornmentTextViewCreationListener.cs**. I modelli traggono un rettangolo viola nella visualizzazione. Nella sezione seguente vengono modificate due righe nel listener di creazione della visualizzazione e viene sostituito il contenuto di **ColumnGuideAdornment.cs**.
 
-  **Comandi**. In **Esplora soluzioni**premere il pulsante destro del mouse sul nodo del progetto. Scegliere il comando **aggiungi &#124; nuovo elemento** per aggiungere un nuovo elemento dell'area di controllo della visualizzazione. Scegliere **Extensibility &#124; VSPackage** nel riquadro di spostamento a sinistra e scegliere **comando personalizzato** nel riquadro di destra. Immettere il nome **ColumnGuideCommands** come nome dell'elemento e scegliere **Aggiungi**. Oltre a diversi riferimenti, l'aggiunta di comandi e pacchetti ha aggiunto anche **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs**e **ColumnGuideCommandsPackage. vsct**. Nella sezione seguente si sostituisce il contenuto del primo e dell'ultimo file per definire e implementare i comandi.
+  **Comandi**. In **Esplora soluzioni** premere il pulsante destro del mouse sul nodo del progetto. Scegliere il comando **aggiungi &#124; nuovo elemento** per aggiungere un nuovo elemento dell'area di controllo della visualizzazione. Scegliere **Extensibility &#124; VSPackage** nel riquadro di spostamento a sinistra e scegliere **comando personalizzato** nel riquadro di destra. Immettere il nome **ColumnGuideCommands** come nome dell'elemento e scegliere **Aggiungi**. Oltre a diversi riferimenti, l'aggiunta di comandi e pacchetti ha aggiunto anche **ColumnGuideCommands.cs**, **ColumnGuideCommandsPackage.cs** e **ColumnGuideCommandsPackage. vsct**. Nella sezione seguente si sostituisce il contenuto del primo e dell'ultimo file per definire e implementare i comandi.
 
 ## <a name="set-up-the-text-view-creation-listener"></a>Configurare il listener per la creazione della visualizzazione testo
 Aprire *ColumnGuideAdornmentTextViewCreationListener.cs* nell'editor. Questo codice implementa un gestore per ogni volta che Visual Studio crea visualizzazioni di testo. Esistono attributi che controllano quando viene chiamato il gestore a seconda delle caratteristiche della vista.
@@ -1339,7 +1341,7 @@ Ci sarà presto un progetto GitHub di esempi di estendibilità di Visual Studio 
 
 È possibile provare una versione della funzionalità Guide di colonna con questa[estensione](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)della raccolta di Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [All'interno dell'editor](../extensibility/inside-the-editor.md)
 - [Estendere l'editor e i servizi di linguaggio](../extensibility/extending-the-editor-and-language-services.md)
 - [Punti di estensione Editor e servizio di linguaggio](../extensibility/language-service-and-editor-extension-points.md)

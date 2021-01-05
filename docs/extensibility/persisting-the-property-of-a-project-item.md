@@ -1,5 +1,7 @@
 ---
 title: Salvataggio permanente della proprietà di un elemento di progetto | Microsoft Docs
+description: Informazioni su come salvare in modo permanente una proprietà che si aggiunge a un elemento del progetto archiviando la proprietà nel file di progetto nel tipo di progetto esteso.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 224a1e4f5f5d56022ae7c1e0572ca648b9a5aa6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 72de98e08581b105322b07390d85b95c06b1083c
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906199"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862692"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Rende permanente la proprietà di un elemento di progetto
 È possibile che si desideri salvare in modo permanente una proprietà aggiunta a un elemento del progetto, ad esempio l'autore di un file di origine. Questa operazione può essere eseguita archiviando la proprietà nel file di progetto.
@@ -67,7 +69,7 @@ ms.locfileid: "85906199"
     uint itemid;
 
     // Retrieve shell interface in order to get current selection
-    IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection;
+    IVsMonitorSelection monitorSelection =     Package.GetGlobalService(typeof(SVsShellMonitorSelection)) as     IVsMonitorSelection;
     if (monitorSelection == null)
         throw new InvalidOperationException();
 
@@ -132,6 +134,6 @@ ms.locfileid: "85906199"
    </Compile>
    ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti personalizzati](../extensibility/internals/custom-tools.md)

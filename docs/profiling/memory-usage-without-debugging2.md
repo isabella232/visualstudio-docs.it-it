@@ -1,5 +1,6 @@
 ---
 title: Analizzare l'utilizzo della memoria nel profiler delle prestazioni
+description: Informazioni su come usare lo strumento utilizzo memoria senza il debugger nel profiler delle prestazioni di Visual Studio per monitorare l'uso della memoria dell'app.
 ms.custom: ''
 ms.date: 04/02/2020
 ms.topic: how-to
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6e1bd3d38e6303f11ec5da0e88816d56dd43d98
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 65ac088d52b4e7a288965bb75e1bc6a00da40f7b
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918227"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815815"
 ---
 # <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>Analizzare l'utilizzo della memoria senza debug nel profiler delle prestazioni
 
@@ -34,11 +35,11 @@ Lo strumento utilizzo memoria può essere eseguito [con o senza il debugger](../
 
    Lo strumento utilizzo memoria supporta le app .NET, ASP.NET, C++ o mista (.NET e native).
 
-1. Nel menu debug impostare la configurazione della soluzione su **rilascia** e selezionare **debugger Windows locale** (o **computer locale** ) come destinazione della distribuzione.
+1. Nel menu debug impostare la configurazione della soluzione su **rilascia** e selezionare **debugger Windows locale** (o **computer locale**) come destinazione della distribuzione.
 
-1. Nella barra dei menu scegliere **debug**  >  **Profiler prestazioni** .
+1. Nella barra dei menu scegliere **debug**  >  **Profiler prestazioni**.
 
-1. In **strumenti disponibili** selezionare **utilizzo memoria** e quindi fare clic su **Avvia** .
+1. In **strumenti disponibili** selezionare **utilizzo memoria** e quindi fare clic su **Avvia**.
 
    ![Avviare una sessione diagnostica di Utilizzo memoria](../profiling/media/memuse_start_diagnosticssession.png "Avviare una sessione diagnostica di Utilizzo memoria")
 
@@ -46,7 +47,7 @@ Lo strumento utilizzo memoria può essere eseguito [con o senza il debugger](../
 
 Quando si avvia una sessione di diagnostica, l'app viene avviata e nella finestra **strumenti di diagnostica** viene visualizzato un grafico della sequenza temporale dell'uso della memoria dell'app.
 
-![Pagina delle informazioni generali dello strumento Utilizzo memoria](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
+![Screenshot della finestra di Strumenti di diagnostica nel profiler delle prestazioni di Visual Studio che mostra un grafico della sequenza temporale dell'uso della memoria dell'app.](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
 
 Il grafico della sequenza temporale mostra le fluttuazioni di memoria durante l'esecuzione dell'app. Eventuali picchi nel grafico in genere indicano che alcune stringhe di codice stanno raccogliendo o creando dati, per poi rimuoverli al termine del processo. Picchi significativi indicano aree che potrebbero essere ottimizzate. Più preoccupante sarebbe un aumento del consumo di memoria che non torna ai valori normali, perché può indicare un uso della memoria non efficiente o addirittura una perdita di memoria.
 
@@ -58,15 +59,15 @@ Per raccogliere gli snapshot, scegliere **Crea snapshot** quando si vogliono acq
 
 ### <a name="close-the-diagnostic-session"></a><a name="BKMK_Close_a_monitoring_session"></a> Chiudere la sessione di diagnostica
 
-Per arrestare una sessione di monitoraggio senza creare un report, chiudi semplicemente la finestra di diagnostica. Per generare un report al termine della raccolta o della creazione di snapshot, selezionare **Arresta raccolta** .
+Per arrestare una sessione di monitoraggio senza creare un report, chiudi semplicemente la finestra di diagnostica. Per generare un report al termine della raccolta o della creazione di snapshot, selezionare **Arresta raccolta**.
 
 ![Interrompi raccolta](../profiling/media/memuse__stopcollection.png "Arresta raccolta")
 
 ## <a name="memory-usage-reports"></a>Report sull'utilizzo della memoria
 
-Una volta completata la raccolta dei dati, lo strumento **Utilizzo memoria** arresta l'app e visualizza la pagina di panoramica **Utilizzo memoria** .
+Una volta completata la raccolta dei dati, lo strumento **Utilizzo memoria** arresta l'app e visualizza la pagina di panoramica **Utilizzo memoria**.
 
-![Pagina delle informazioni generali dello strumento Utilizzo memoria](../profiling/media/memuse__reportoverview1.png "Pagina delle informazioni generali dello strumento Utilizzo memoria")
+![Screenshot della pagina Overview nello strumento utilizzo memoria nel profiler delle prestazioni di Visual Studio, che mostra un grafico di utilizzo della memoria e due riquadri dello snapshot.](../profiling/media/memuse__reportoverview1.png "Pagina delle informazioni generali dello strumento Utilizzo memoria")
 
 ### <a name="memory-usage-snapshots"></a><a name="BKMK_Memory_Usage_snapshot_views"></a> Snapshot di Utilizzo memoria
 
@@ -85,7 +86,7 @@ I numeri sono collegamenti che aprono visualizzazioni report dettagliate di **Ut
 
 ## <a name="memory-usage-snapshot-reports"></a>Report snapshot di Utilizzo memoria
 
-<a name="BKMK_Snapshot_report_trees"></a> Quando si seleziona uno dei collegamenti dello snapshot nella pagina di panoramica **Utilizzo di memoria** , un report snapshot viene aperto in una nuova pagina.
+<a name="BKMK_Snapshot_report_trees"></a> Quando si seleziona uno dei collegamenti dello snapshot nella pagina di panoramica **Utilizzo di memoria**, un report snapshot viene aperto in una nuova pagina.
 
 ![Report snapshot Utilizzo memoria](../profiling/media/memuse_snapshotreport_all.png "Report snapshot Utilizzo memoria")
 
@@ -105,11 +106,11 @@ Nei report snapshot:
 
 ### <a name="report-tree-filters"></a><a name="BKMK_Report_tree_filters_"></a> Filtri degli alberi dei rapporti
 
-Molti tipi di app non sono particolarmente interessanti per gli sviluppatori di app. I filtri dei report snapshot possono nascondere la maggior parte di questi tipi negli alberi **Heap gestito** e **Percorsi della radice** .
+Molti tipi di app non sono particolarmente interessanti per gli sviluppatori di app. I filtri dei report snapshot possono nascondere la maggior parte di questi tipi negli alberi **Heap gestito** e **Percorsi della radice**.
 
 ![Opzioni di Ordina e filtra](../profiling/media/memuse_sortandfilter.png "MEMUSE_SortAndFilter")
 
-- <a name="BKMK_Filter"></a> Per filtrare un albero in base al nome del tipo, immettere il nome nella casella **Filtro** . Il filtro non fa distinzione tra maiuscole e minuscole e riconosce la stringa specificata in ogni parte del nome del tipo.
+- <a name="BKMK_Filter"></a> Per filtrare un albero in base al nome del tipo, immettere il nome nella casella **Filtro**. Il filtro non fa distinzione tra maiuscole e minuscole e riconosce la stringa specificata in ogni parte del nome del tipo.
 
 - <a name="BKMK_Collapse_Small_Objects"></a> Selezionare **Comprimi oggetti piccoli** nell'elenco a discesa **Filtro** per nascondere i tipi la cui **Dimensione (byte)** è minore dello 0,5% della memoria totale.
 
@@ -121,7 +122,7 @@ Molti tipi di app non sono particolarmente interessanti per gli sviluppatori di 
 
  ![Collegamenti al report snapshot in un riquadro snapshot](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "Collegamenti al report snapshot in un riquadro snapshot")
 
-Entrambi i collegamenti aprono lo stesso report. L'unica differenza è il tipo di ordinamento iniziale dell'albero **Heap gestito** . Il collegamento dimensione ordina il rapporto in base alla colonna **Dimensione inclusiva (byte)** . Il collegamento Oggetti ordina il rapporto in base alla colonna **Conteggio** . È possibile modificare il tipo o la colonna di ordinamento dopo l'apertura del report.
+Entrambi i collegamenti aprono lo stesso report. L'unica differenza è il tipo di ordinamento iniziale dell'albero **Heap gestito**. Il collegamento dimensione ordina il rapporto in base alla colonna **Dimensione inclusiva (byte)**. Il collegamento Oggetti ordina il rapporto in base alla colonna **Conteggio**. È possibile modificare il tipo o la colonna di ordinamento dopo l'apertura del report.
 
 ### <a name="managed-heap-tree-snapshot-details-reports"></a><a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Albero Heap gestito (report dettagli dello snapshot)
  Nell'albero **Heap gestito** sono elencati i tipi di oggetti contenuti in memoria. Espandere un nome di tipo per visualizzare le dieci istanze più grandi del tipo, ordinate in base alla dimensione. Selezionare un tipo o un'istanza per visualizzare gli alberi **Percorsi della radice** e **Oggetti a cui si fa riferimento** per l'elemento selezionato.
@@ -133,7 +134,7 @@ L'albero **Heap gestito** di un report dettagli dello snapshot include le colonn
 |Nome|Descrizione|
 |-|-|
 |**Tipo oggetto**|Nome dell'istanza di tipo o di oggetto.|
-|**Numero**|Numero di istanze di oggetto del tipo. Il valore di **Conteggio** è sempre 1 per un'istanza.|
+|**Count**|Numero di istanze di oggetto del tipo. Il valore di **Conteggio** è sempre 1 per un'istanza.|
 |**Dimensioni (byte)**|Per un tipo, la dimensione di tutte le istanze del tipo nello snapshot meno la dimensione degli oggetti contenuti nelle istanze.<br /><br /> Per un'istanza, la dimensione dell'oggetto meno la dimensione degli oggetti contenuti nell'istanza. |
 |**Dimensione inclusiva (byte)**|La dimensione delle istanze del tipo o di una singola istanza, inclusa la dimensione degli oggetti contenuti.|
 |**Modulo**|Il modulo che contiene il costruttore.|
@@ -141,7 +142,7 @@ L'albero **Heap gestito** di un report dettagli dello snapshot include le colonn
 ### <a name="paths-to-root-tree-snapshot-details-reports"></a><a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Albero Percorsi della radice (report dettagli dello snapshot)
 L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Il Garbage Collector .NET pulisce la memoria per un oggetto solo quando tutti i relativi riferimenti sono stati rilasciati.
 
-Per un tipo nell'albero **Percorsi della radice** , il numero di oggetti che contengono riferimenti al tipo viene visualizzato nella colonna **Conteggio riferimenti** .
+Per un tipo nell'albero **Percorsi della radice**, il numero di oggetti che contengono riferimenti al tipo viene visualizzato nella colonna **Conteggio riferimenti**.
 
 ![Albero percorsi della radice per i tipi](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Albero percorsi della radice per i tipi")
 
@@ -150,7 +151,7 @@ L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** 
 
 ![Albero oggetti a cui si fa riferimento per le istanze](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Albero oggetti a cui si fa riferimento per le istanze")
 
-Un albero **Tipi a cui si fa riferimento** di un report dettagli dello snapshot include le colonne seguenti. Un albero **Oggetti a cui si fa riferimento** non comprende la colonna **Conteggio riferimenti** .
+Un albero **Tipi a cui si fa riferimento** di un report dettagli dello snapshot include le colonne seguenti. Un albero **Oggetti a cui si fa riferimento** non comprende la colonna **Conteggio riferimenti**.
 
 |Nome|Descrizione|
 |-|-|
@@ -164,7 +165,7 @@ Un albero **Tipi a cui si fa riferimento** di un report dettagli dello snapshot 
 
 Un report differenze degli snapshot mostra le differenze tra uno snapshot principale e lo snapshot precedente. Per aprire un report delle differenze, selezionare uno dei collegamenti differenza in un riquadro snapshot.
 
-Entrambi i collegamenti aprono lo stesso report. L'unica differenza è il tipo di ordinamento iniziale dell'albero **Heap gestito** nel report. Il collegamento dimensione ordina il report in base alla colonna **Differenza dimensioni inclusive (byte)** . Il collegamento oggetti ordina il rapporto in base alla colonna **Diff. conteggio** . È possibile modificare il tipo o la colonna di ordinamento dopo l'apertura del report.
+Entrambi i collegamenti aprono lo stesso report. L'unica differenza è il tipo di ordinamento iniziale dell'albero **Heap gestito** nel report. Il collegamento dimensione ordina il report in base alla colonna **Differenza dimensioni inclusive (byte)**. Il collegamento oggetti ordina il rapporto in base alla colonna **Diff. conteggio**. È possibile modificare il tipo o la colonna di ordinamento dopo l'apertura del report.
 
  ![Collegamenti al report delle differenze in un riquadro snapshot](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Collegamenti al report delle differenze in un riquadro snapshot")
 
@@ -179,7 +180,7 @@ L'albero **Heap gestito** di un report differenze dello snapshot include le colo
 |Nome|Descrizione|
 |-|-|
 |**Tipo oggetto**|Nome dell'istanza di tipo o di oggetto.|
-|**Numero**|Numero di istanze di un tipo nello snapshot principale. **Count** è sempre 1 per un'istanza.|
+|**Count**|Numero di istanze di un tipo nello snapshot principale. **Count** è sempre 1 per un'istanza.|
 |**Diff. conteggio**|Per un tipo, differenza nel numero di istanze del tipo tra lo snapshot principale e quello precedente. Il campo è vuoto per un'istanza.|
 |**Dimensioni (byte)**|La dimensione degli oggetti nello snapshot principale, meno la dimensione degli oggetti negli oggetti. Per un tipo, **Dimensione (byte)** e **Dimensione inclusiva (byte)** corrispondono ai totali delle dimensioni delle istanze di tipo.|
 |**Diff. dimensione totale (byte)**|Per un tipo, la differenza nella dimensione totale delle istanze del tipo tra lo snapshot principale e quello precedente, meno la dimensione degli oggetti nelle istanze. Il campo è vuoto per un'istanza.|
@@ -191,7 +192,7 @@ L'albero **Heap gestito** di un report differenze dello snapshot include le colo
 
 L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Il Garbage Collector .NET pulisce la memoria per un oggetto solo quando tutti i relativi riferimenti sono stati rilasciati.
 
-Per un tipo nell'albero **Percorsi della radice** , il numero di oggetti che contengono riferimenti al tipo viene visualizzato nella colonna **Conteggio riferimenti** . La differenza di numero rispetto allo snapshot precedente è indicata nella colonna **Diff. conteggio riferimenti** .
+Per un tipo nell'albero **Percorsi della radice**, il numero di oggetti che contengono riferimenti al tipo viene visualizzato nella colonna **Conteggio riferimenti**. La differenza di numero rispetto allo snapshot precedente è indicata nella colonna **Diff. conteggio riferimenti**.
 
  ![Albero percorsi della radice in un rapporto diff](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Albero percorsi della radice in un rapporto diff")
 
@@ -201,7 +202,7 @@ L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** 
 
 ![Tipi a cui si fa riferimento in un report diff](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Tipi a cui si fa riferimento in un report diff")
 
-Un albero **Tipi a cui si fa riferimento** di un report differenze dello snapshot include le colonne seguenti. Un albero **Oggetti a cui si fa riferimento** comprende le colonne **Istanza** , **Dimensione (byte)** , **Dimensione inclusiva (byte)** e **Modulo** .
+Un albero **Tipi a cui si fa riferimento** di un report differenze dello snapshot include le colonne seguenti. Un albero **Oggetti a cui si fa riferimento** comprende le colonne **Istanza**, **Dimensione (byte)**, **Dimensione inclusiva (byte)** e **Modulo**.
 
 |Nome|Descrizione|
 |-|-|
@@ -214,7 +215,7 @@ Un albero **Tipi a cui si fa riferimento** di un report differenze dello snapsho
 |**Differenza dimensioni inclusive (byte)**|Per un tipo, la differenza nella dimensione di tutte le istanze del tipo tra lo snapshot principale e quello precedente, inclusa la dimensione degli oggetti negli oggetti.|
 |**Modulo**|Il modulo che contiene il costruttore.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Memoria JavaScript](../profiling/javascript-memory.md)
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

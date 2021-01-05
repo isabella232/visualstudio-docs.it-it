@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: aggiunta di funzionalità a un editor personalizzato | Microsoft Docs'
+description: Per informazioni su come aggiungere altre funzionalità a un editor personalizzato dopo aver creato l'editor, usare questa procedura dettagliata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12f585a3e7dd4a8182d7ed80cf65a20d0a82da83
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: c08af63eaf68701f1a6703ac41fec20368d78931
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414022"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863205"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Procedura dettagliata: aggiungere funzionalità a un editor personalizzato
 Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzionalità.
@@ -138,7 +140,7 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
   > [!NOTE]
   > L' `IOleInPlaceComponent` interfaccia viene utilizzata per evitare l'Unione di menu OLE 2.
 
-   L' `IOleCommandTarget` implementazione gestisce i comandi, ad esempio **taglia** , **copia** e **Incolla**. Quando `IOleCommandTarget` si implementa, decidere se l'Editor richiede il proprio file *. vsct* per definire la propria struttura del menu dei comandi o se può implementare comandi standard definiti da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . In genere, gli editor usano ed estendono i menu dell'IDE e definiscono le barre degli strumenti. Tuttavia, spesso è necessario che un editor definisca i propri comandi specifici, oltre a usare il set di comandi standard dell'IDE. L'editor deve dichiarare i comandi standard usati e quindi definire i nuovi comandi, i menu di scelta rapida, i menu di primo livello e le barre degli strumenti in un file con *estensione vsct* . Se si crea un editor di attivazione sul posto, implementare <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> e definire i menu e le barre degli strumenti per l'editor in un file con *estensione vsct* anziché utilizzare l'Unione dei menu OLE 2.
+   L' `IOleCommandTarget` implementazione gestisce i comandi, ad esempio **taglia**, **copia** e **Incolla**. Quando `IOleCommandTarget` si implementa, decidere se l'Editor richiede il proprio file *. vsct* per definire la propria struttura del menu dei comandi o se può implementare comandi standard definiti da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . In genere, gli editor usano ed estendono i menu dell'IDE e definiscono le barre degli strumenti. Tuttavia, spesso è necessario che un editor definisca i propri comandi specifici, oltre a usare il set di comandi standard dell'IDE. L'editor deve dichiarare i comandi standard usati e quindi definire i nuovi comandi, i menu di scelta rapida, i menu di primo livello e le barre degli strumenti in un file con *estensione vsct* . Se si crea un editor di attivazione sul posto, implementare <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> e definire i menu e le barre degli strumenti per l'editor in un file con *estensione vsct* anziché utilizzare l'Unione dei menu OLE 2.
 
 - Per evitare che il comando di menu venga affollato nell'interfaccia utente, è necessario usare i comandi esistenti nell'IDE prima di inventare nuovi comandi. I comandi condivisi sono definiti in *SharedCmdDef. vsct* e *ShellCmdDef. vsct*. Questi file vengono installati per impostazione predefinita nella sottodirectory VisualStudioIntegration\Common\Inc dell' [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] installazione.
 
@@ -152,6 +154,6 @@ Dopo aver creato un editor personalizzato, è possibile aggiungervi altre funzio
 
   - `Window.Object`
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Contribuire al modello di automazione](../extensibility/internals/contributing-to-the-automation-model.md)

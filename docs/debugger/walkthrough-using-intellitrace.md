@@ -1,5 +1,6 @@
 ---
 title: Visualizzare gli eventi con IntelliTrace | Microsoft Docs
+description: Informazioni su come usare IntelliTrace in Visual Studio Enterprise per raccogliere dati su eventi specifici, categorie di eventi e singole chiamate di funzione.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ffbe0b8365948dc5a69edca390f308cb55ba5a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fef839b5473881450581db77a885da158e67bbc
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929434"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815750"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Visualizzare gli eventi con IntelliTrace in Visual Studio Enterprise (C#, Visual Basic)
 
@@ -60,17 +61,17 @@ ms.locfileid: "62929434"
 
 2. L'esecuzione verrà interrotta in corrispondenza del punto di interruzione. Se non viene visualizzata la finestra **Strumenti di diagnostica**, fare clic su **Debug > Finestre > Eventi di IntelliTrace**.
 
-    Nella finestra **Strumenti di diagnostica** trovare la scheda **Eventi** (sono presenti 3 schede: **Eventi**, **Utilizzo della memoria**e **Utilizzo della CPU**). La scheda **Eventi** visualizza un elenco cronologico di eventi, fino all'ultimo evento prima dell'interruzione dell'esecuzione del debugger. Verrà visualizzato un evento denominato **Access WordSearchInputs.txt**.
+    Nella finestra **Strumenti di diagnostica** trovare la scheda **Eventi** (sono presenti 3 schede: **Eventi**, **Utilizzo della memoria** e **Utilizzo della CPU**). La scheda **Eventi** visualizza un elenco cronologico di eventi, fino all'ultimo evento prima dell'interruzione dell'esecuzione del debugger. Verrà visualizzato un evento denominato **Access WordSearchInputs.txt**.
 
     La screenshot che segue è presa da Visual Studio 2015 Update 1.
 
-    ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")
+    ![Screenshot della finestra di Visual Studio Code. L'esecuzione viene arrestata in corrispondenza di un punto di interruzione e nella scheda eventi della finestra Strumenti di diagnostica vengono elencati gli eventi.](../debugger/media/intellitrace-update1.png)
 
 3. Selezionare l'evento per espandere i dettagli.
 
     La screenshot che segue è presa da Visual Studio 2015 Update 1.
 
-    ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1-SingleEvent")
+    ![Screenshot della scheda eventi nella finestra di Strumenti di diagnostica di Visual Studio. Un evento viene selezionato ed espanso per visualizzare i dettagli.](../debugger/media/intellitraceupdate1-singleevent.png)
 
     È possibile scegliere il collegamento al percorso per aprire il file. Se il nome del percorso completo non è disponibile, viene visualizzata la finestra di dialogo **Apri file** .
 
@@ -78,7 +79,7 @@ ms.locfileid: "62929434"
 
     La screenshot che segue è presa da Visual Studio 2015 Update 1.
 
-    ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")
+    ![Screenshot della finestra di Visual Studio Code. L'esecuzione viene arrestata in corrispondenza di un punto di interruzione, viene selezionato un evento e viene evidenziata la riga di codice corrispondente.](../debugger/media/historicaldebugging-update1.png)
 
 4. Se il bug non viene trovato, provare ad analizzare altri eventi. È anche possibile che IntelliTrace registri le informazioni sulle chiamate in modo da eseguire le chiamate alle funzioni.
 

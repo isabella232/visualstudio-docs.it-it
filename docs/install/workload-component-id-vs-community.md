@@ -1,7 +1,7 @@
 ---
 title: ID dei carichi di lavoro e dei componenti di Visual Studio Community
 titleSuffix: ''
-description: Usare gli ID dei carichi di lavoro e dei componenti per installare Visual Studio tramite la riga di comando o per specificarli come dipendenza in un manifesto VSIX
+description: Usare gli ID dei carichi di lavoro e dei componenti di Visual Studio community per installare Visual Studio dalla riga di comando o specificare una dipendenza in un manifesto VSIX.
 keywords: ''
 author: ornellaalt
 ms.author: ornella
@@ -16,12 +16,12 @@ ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 94b1ab6182bff28d41a1da326eb88c99341f2e5a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 744364dd18a784567dad49a960da08dc48de9606
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437388"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847025"
 ---
 # <a name="visual-studio-community-component-directory"></a>Elenco dei componenti di Visual Studio Community
 
@@ -45,7 +45,7 @@ ms.locfileid: "94437388"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)
 * [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)

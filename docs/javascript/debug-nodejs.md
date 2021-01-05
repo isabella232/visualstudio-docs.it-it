@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 801ea23430d13dbefd9498c57b07881235275961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 369fa3c080705f552aed25ecef6bd87a3db43a64
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285192"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815620"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Eseguire il debug di un'app JavaScript o TypeScript in Visual Studio
 
@@ -29,7 +29,7 @@ ms.locfileid: "85285192"
 
 1. Con il progetto aperto in Visual Studio, aprire un file JavaScript lato server (ad esempio *server.js*) e fare clic nella barra di navigazione sinistra per impostare un punto di interruzione:
 
-    ![Imposta punto di interruzione](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
+    ![Screenshot della finestra di Visual Studio Code che mostra il codice JavaScript. Un punto rosso nella barra di navigazione a sinistra indica che è stato impostato un punto di interruzione.](../javascript/media/tutorial-nodejs-react-set-breakpoint.png)
 
     I punti di interruzione rappresentano la funzionalità di base essenziale per un debug affidabile. Un punto di interruzione indica il punto in cui Visual Studio dovrebbe sospendere l'esecuzione del codice in modo da poter esaminare i valori delle variabili, il comportamento della memoria o lo stato di esecuzione di un ramo del codice.
 
@@ -78,7 +78,7 @@ Per questo scenario, usare Chrome.
 2. Avviare il browser con il debug abilitato.
 
     ::: moniker range=">=vs-2019"
-    A partire da Visual Studio 2019, è possibile impostare il `--remote-debugging-port=9222` flag all'avvio del browser selezionando **Sfoglia con...** > dalla barra degli strumenti **debug** , quindi scegliendo **Aggiungi**e quindi impostando il flag nel campo **argomenti** . Usare un nome descrittivo diverso per il browser, ad esempio **Edge con debug** o **Chrome con debug**. Per informazioni dettagliate, vedere le [note sulla versione](/visualstudio/releases/2019/release-notes-v16.2).
+    A partire da Visual Studio 2019, è possibile impostare il `--remote-debugging-port=9222` flag all'avvio del browser selezionando **Sfoglia con...** > dalla barra degli strumenti **debug** , quindi scegliendo **Aggiungi** e quindi impostando il flag nel campo **argomenti** . Usare un nome descrittivo diverso per il browser, ad esempio **Edge con debug** o **Chrome con debug**. Per informazioni dettagliate, vedere le [note sulla versione](/visualstudio/releases/2019/release-notes-v16.2).
 
     ![Imposta il browser per l'apertura con il debug abilitato](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
@@ -107,13 +107,13 @@ Per allungare il debugger da Visual Studio e raggiungere i punti di interruzione
 
 1. Passare a Visual Studio e quindi impostare un punto di interruzione nel codice sorgente, che potrebbe essere un file JavaScript, un file TypeScript o un file JSX. Impostare il punto di interruzione in una riga di codice che consente i punti di interruzione, ad esempio un'istruzione return o una dichiarazione var.
 
-    ![Imposta punto di interruzione](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+    ![Screenshot della finestra di Visual Studio Code. Viene selezionata un'istruzione return e un punto rosso nella barra di navigazione a sinistra indica che è stato impostato un punto di interruzione.](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Per trovare il codice specifico in un file transpiled, usare **CTRL** + **F** (**modifica**  >  **trova e Sostituisci**  >  **ricerca veloce**).
 
-    Per il codice lato client, per raggiungere un punto di interruzione in un file TypeScript, il file con *estensione VME*o JSX richiede in genere l'uso delle [mappe di origine](#generate_source_maps). Una mappa di origine deve essere configurata correttamente per supportare il debug in Visual Studio.
+    Per il codice lato client, per raggiungere un punto di interruzione in un file TypeScript, il file con *estensione VME* o JSX richiede in genere l'uso delle [mappe di origine](#generate_source_maps). Una mappa di origine deve essere configurata correttamente per supportare il debug in Visual Studio.
 
-2. Selezionare il browser di destinazione come destinazione di debug in Visual Studio, quindi premere **CTRL** + **F5** (avvia**debug**  >  **senza debug**) per eseguire l'app nel browser.
+2. Selezionare il browser di destinazione come destinazione di debug in Visual Studio, quindi premere **CTRL** + **F5** (avvia **debug**  >  **senza debug**) per eseguire l'app nel browser.
 
     ::: moniker range=">=vs-2019"
     Se è stata creata una configurazione del browser con un nome descrittivo, sceglierla come destinazione di debug.
@@ -197,7 +197,7 @@ Per abilitare il debug con Visual Studio, è necessario assicurarsi che i riferi
   },
 ```
 
-con questo codice:
+Con questo:
 
 ```javascript
   output: {
@@ -234,7 +234,7 @@ Se si aggiunge al progetto un file *tsconfig.json*, Visual Studio considera la d
 
 * **inlineSourceMap**: creare un singolo file con mapping di origine anziché creare una mappa di origine separata per ogni file di origine.
 * **inlineSources**: creare l'origine insieme alle mappe di origine all'interno di un singolo file. richiede l'impostazione di *inlineSourceMap* o *sourceMap* .
-* **MAPROOT**: specifica il percorso in cui il debugger deve trovare i file della mappa di origine (con*estensione map*) anziché il percorso predefinito. Usare questo flag se i file di runtime con estensione *map* devono trovarsi in una posizione diversa rispetto ai file con estensione *js*. Il percorso specificato è incorporato nel mapping di origine per indirizzare il debugger alla posizione dei file con estensione *map*.
+* **MAPROOT**: specifica il percorso in cui il debugger deve trovare i file della mappa di origine (con *estensione map*) anziché il percorso predefinito. Usare questo flag se i file di runtime con estensione *map* devono trovarsi in una posizione diversa rispetto ai file con estensione *js*. Il percorso specificato è incorporato nel mapping di origine per indirizzare il debugger alla posizione dei file con estensione *map*.
 * **sourceMap**: genera un file con *estensione map* corrispondente.
 * **sourceRoot**: specifica il percorso in cui il debugger deve trovare i file typescript anziché i percorsi di origine. Usare questo flag se le origini di runtime devono trovarsi in un percorso diverso rispetto a quello usato per la fase di progettazione. Il percorso specificato è incorporato nel mapping di origine per indirizzare il debugger alla posizione dei file di origine.
 
@@ -261,7 +261,7 @@ Visual Studio supporta il debug solo per Internet Explorer e Chrome.
 
 Tuttavia, non è possibile raggiungere automaticamente i punti di interruzione nei file generati con sintassi Razor (cshtml, vbhtml). È possibile usare due approcci per il debug di questo tipo di file:
 
-* **Inserire l' `debugger;` istruzione in cui si desidera interrompere**l'esecuzione, in modo che lo script dinamico interrompa l'esecuzione e avvii immediatamente il debug durante la creazione.
+* **Inserire l' `debugger;` istruzione in cui si desidera interrompere** l'esecuzione, in modo che lo script dinamico interrompa l'esecuzione e avvii immediatamente il debug durante la creazione.
 * **Caricare la pagina e aprire il documento dinamico in Visual Studio**: è necessario aprire il file dinamico durante il debug, impostare il punto di interruzione e aggiornare la pagina per il funzionamento di questo metodo. Per trovare il file usare uno dei seguenti metodi, a seconda che si usi Chrome o Internet Explorer:
 
    Per Chrome, andare a **Esplora soluzioni > Documenti script > NomePagina**.

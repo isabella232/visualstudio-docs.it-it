@@ -1,5 +1,6 @@
 ---
 title: PerfTips | Microsoft Docs
+description: Informazioni su come usare il debugger di Visual Studio PerfTips e Strumenti di diagnostica integrato per monitorare e analizzare le prestazioni dell'app durante il debug.
 ms.date: 9/11/2020
 ms.topic: how-to
 ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f260307b677046be54e6d80b0d8fe122b13292e4
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 481113e9f5e2f5b66aec5f4dad29f581462165ca
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075470"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815828"
 ---
 # <a name="perftips"></a>PerfTips
 
@@ -33,7 +34,7 @@ I punti di interruzione e i dati di intervallo associati vengono registrati nell
 
 Nella figura seguente viene illustrata la finestra di **strumenti di diagnostica** .
 
-![Diagnostica&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+![Screenshot della finestra di Strumenti di diagnostica nel debugger di Visual Studio, che mostra la sequenza temporale degli eventi e i grafici per l'utilizzo della memoria e della CPU.](../profiling/media/diagnostictools-update1.png)
 
 - La sequenza temporale **Eventi di interruzione** contrassegnano i punti di interruzione che vengono eseguiti nella sessione di debug. Fare clic su un evento per selezionare l’elenco dei dettagli **Debugger** .
 
@@ -59,7 +60,7 @@ Per attivare o disattivare la finestra Strumenti di diagnostica:
 
 2. Selezionare o deselezionare **Abilita Strumenti di diagnostica durante il debug**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

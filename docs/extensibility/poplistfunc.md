@@ -1,5 +1,7 @@
 ---
 title: POPLISTFUNC | Microsoft Docs
+description: Informazioni sulla funzione di callback POPLISTFUNC, usata dal plug-in del controllo del codice sorgente per aggiornare un elenco di file o directory.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c5f8c1683a993915476ff23f1f5d5f2c2aba462
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 239f1aa5a55c3a5ce3a0f2a3ec9145f3cdb0630e
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702067"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863156"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Questo callback viene fornito a [SccPopulateList](../extensibility/sccpopulatelist-function.md) dall'IDE e viene usato dal plug-in del controllo del codice sorgente per aggiornare un elenco di file o directory (forniti anche alla `SccPopulateList` funzione).
@@ -52,13 +54,13 @@ typedef BOOL (*POPLISTFUNC) (
 |`TRUE`|Il plug-in può continuare a chiamare questa funzione.|
 |`FALSE`|Si è verificato un problema sul lato IDE, ad esempio una situazione di memoria insufficiente. Il plug-in deve arrestare l'operazione.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Per ogni file che il plug-in del controllo del codice sorgente desidera aggiungere o eliminare dall'elenco di file, chiama questa funzione, passando `lpFileName` . Il `fAddRemove` flag indica un nuovo file da aggiungere all'elenco o un file obsoleto da eliminare. Il `nStatus` parametro restituisce lo stato del file. Al termine dell'aggiunta e dell'eliminazione dei file del plug-in SCC, viene restituito dalla chiamata [SccPopulateList](../extensibility/sccpopulatelist-function.md) .
 
 > [!NOTE]
 > Il `SCC_CAP_POPULATELIST` bit di funzionalità è necessario per Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni di callback implementate dall'IDE](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)

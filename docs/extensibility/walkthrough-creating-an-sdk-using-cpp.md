@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: creazione di un SDK con C++ | Microsoft Docs'
+description: Informazioni su come creare un SDK Math Library per C++ nativo, assemblare l'SDK come estensione di Visual Studio e quindi usarlo per creare un'app usando questa procedura dettagliata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15fa0714097efda31b52f1d389d3a26cf581e506
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9cc65fe72ed631a4bb3c0b22efb74aae9160e1cb
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905013"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862946"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Procedura dettagliata: creare un SDK con C++
 In questa procedura dettagliata viene illustrato come creare un SDK di Math Library per C++ nativo, assemblare l'SDK come estensione di Visual Studio (VSIX) e quindi usarlo per creare un'app. La procedura dettagliata è divisa in questi passaggi:
@@ -31,7 +33,7 @@ In questa procedura dettagliata viene illustrato come creare un SDK di Math Libr
 
 1. Sulla barra dei menu scegliere **file**  >  **nuovo**  >  **progetto**.
 
-2. Nell'elenco dei modelli espandere **Visual C++**  >  **universale di Windows**e quindi selezionare il modello **dll (app universali di Windows)** . Nella casella **nome** specificare `NativeMath` , quindi scegliere il pulsante **OK** .
+2. Nell'elenco dei modelli espandere **Visual C++**  >  **universale di Windows** e quindi selezionare il modello **dll (app universali di Windows)** . Nella casella **nome** specificare `NativeMath` , quindi scegliere il pulsante **OK** .
 
 3. Aggiornare *NativeMath. h* in modo che corrisponda al codice seguente.
 
@@ -41,7 +43,7 @@ In questa procedura dettagliata viene illustrato come creare un SDK di Math Libr
 
      [!code-cpp[CreatingAnSDKUsingCpp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_2.cpp)]
 
-5. In **Esplora soluzioni**aprire il menu di scelta rapida per la **soluzione ' NativeMath '**, quindi scegliere **Aggiungi**  >  **nuovo progetto**.
+5. In **Esplora soluzioni** aprire il menu di scelta rapida per la **soluzione ' NativeMath '**, quindi scegliere **Aggiungi**  >  **nuovo progetto**.
 
 6. Nell'elenco dei modelli espandere **Visual C++**, quindi selezionare il modello di **componente Windows Runtime** . Nella casella **nome** specificare `NativeMathWRT` , quindi scegliere il pulsante **OK** .
 
@@ -57,17 +59,17 @@ In questa procedura dettagliata viene illustrato come creare un SDK di Math Libr
 
 ## <a name="to-create-the-nativemathvsix-extension-project"></a><a name="createVSIX"></a> Per creare il progetto di estensione NativeMathVSIX
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per la **soluzione ' NativeMath '**, quindi scegliere **Aggiungi**  >  **nuovo progetto**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per la **soluzione ' NativeMath '**, quindi scegliere **Aggiungi**  >  **nuovo progetto**.
 
-2. Nell'elenco dei modelli espandere Extensibility di **Visual C#**  >  **Extensibility**e quindi selezionare **progetto VSIX**. Nella casella **nome** specificare **NativeMathVSIX**, quindi scegliere il pulsante **OK** .
+2. Nell'elenco dei modelli espandere Extensibility di **Visual C#**  >  e quindi selezionare **progetto VSIX**. Nella casella **nome** specificare **NativeMathVSIX**, quindi scegliere il pulsante **OK** .
 
-3. In **Esplora soluzioni**aprire il menu di scelta rapida per **source. Extension. vsixmanifest**, quindi scegliere **Visualizza codice**.
+3. In **Esplora soluzioni** aprire il menu di scelta rapida per **source. Extension. vsixmanifest**, quindi scegliere **Visualizza codice**.
 
 4. Utilizzare il codice XML seguente per sostituire il codice XML esistente.
 
     [!code-xml[CreatingAnSDKUsingCpp#6](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_6.xml)]
 
-5. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto **NativeMathVSIX** , quindi scegliere **Aggiungi**  >  **nuovo elemento**.
+5. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **NativeMathVSIX** , quindi scegliere **Aggiungi**  >  **nuovo elemento**.
 
 6. Nell'elenco di **elementi di Visual C#** espandere **dati**, quindi selezionare **file XML**. Nella casella **nome** specificare `SDKManifest.xml` , quindi scegliere il pulsante **OK** .
 
@@ -92,26 +94,26 @@ In questa procedura dettagliata viene illustrato come creare un SDK di Math Libr
                 \Neutral
     ```
 
-9. In **Esplora soluzioni**aprire il menu di scelta rapida per la **soluzione ' NativeMath '** e quindi scegliere **Apri cartella in Esplora file**.
+9. In **Esplora soluzioni** aprire il menu di scelta rapida per la **soluzione ' NativeMath '** e quindi scegliere **Apri cartella in Esplora file**.
 
-10. In **Esplora file**copiare *$SolutionRoot $ \NativeMath\NativeMath.h*, quindi in **Esplora soluzioni**, nel progetto **NativeMathVSIX** , incollarlo nella cartella *$SolutionRoot $ \NativeMathVSIX\DesignTime\CommonConfiguration\Neutral\Include \\ * .
+10. In **Esplora file** copiare *$SolutionRoot $ \NativeMath\NativeMath.h*, quindi in **Esplora soluzioni**, nel progetto **NativeMathVSIX** , incollarlo nella cartella *$SolutionRoot $ \NativeMathVSIX\DesignTime\CommonConfiguration\Neutral\Include \\* .
 
-     Copiare *$SolutionRoot $ \Debug\NativeMath\NativeMath.lib*, quindi incollarlo nella cartella *$SolutionRoot $ \NativeMathVSIX\DesignTime\Debug\x86 \\ * .
+     Copiare *$SolutionRoot $ \Debug\NativeMath\NativeMath.lib*, quindi incollarlo nella cartella *$SolutionRoot $ \NativeMathVSIX\DesignTime\Debug\x86 \\* .
 
-     Copiare *$SolutionRoot $\Debug\NativeMath\NativeMath.dll* e incollarlo nella cartella *$SolutionRoot $ \NativeMathVSIX\Redist\Debug\x86 \\ * .
+     Copiare *$SolutionRoot $\Debug\NativeMath\NativeMath.dll* e incollarlo nella cartella *$SolutionRoot $ \NativeMathVSIX\Redist\Debug\x86 \\* .
 
      Copiare *$SolutionRoot $\Debug\NativeMathWRT\NativeMathWRT.dll* e incollarlo nella cartella *$SolutionRoot $ \NativeMathVSIX\Redist\Debug\x86* .
      Copiare *$SolutionRoot $ \Debug\NativeMathWRT\NativeMathWRT.winmd* e incollarlo nella cartella *$SolutionRoot $ \NativeMathVSIX\References\CommonConfiguration\Neutral* .
 
      Copiare *$SolutionRoot $ \Debug\NativeMathWRT\NativeMathWRT.pri* e incollarlo nella cartella *$SolutionRoot $ \NativeMathVSIX\References\CommonConfiguration\Neutral* .
 
-11. Nella cartella *$SolutionRoot $ \NativeMathVSIX\DesignTime\Debug\x86 \\ * creare un file di testo denominato *NativeMathSDK. props*, quindi incollare il contenuto seguente:
+11. Nella cartella *$SolutionRoot $ \NativeMathVSIX\DesignTime\Debug\x86 \\* creare un file di testo denominato *NativeMathSDK. props*, quindi incollare il contenuto seguente:
 
     [!code-xml[CreatingAnSDKUsingCpp#7](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]
 
 12. Sulla barra dei menu scegliere **Visualizza**  >  **altre finestre**  >  **proprietà finestra** (tastiera: premere il tasto **f4** ).
 
-13. In **Esplora soluzioni**selezionare il file **NativeMathWRT. winmd** . Nella finestra **Proprietà** impostare la proprietà **azione di compilazione** su **contenuto**, quindi impostare la proprietà **Includi in VSIX** su **true**.
+13. In **Esplora soluzioni** selezionare il file **NativeMathWRT. winmd** . Nella finestra **Proprietà** impostare la proprietà **azione di compilazione** su **contenuto**, quindi impostare la proprietà **Includi in VSIX** su **true**.
 
      Ripetere questo processo per il file **NativeMath. h** .
 
@@ -121,7 +123,7 @@ In questa procedura dettagliata viene illustrato come creare un SDK di Math Libr
 
      Ripetere questo processo per il file **NativeMathSDK. props** .
 
-14. In **Esplora soluzioni**selezionare il file **NativeMath. h** . Nella finestra **Proprietà** modificare la proprietà **Includi in VSIX** su **true**.
+14. In **Esplora soluzioni** selezionare il file **NativeMath. h** . Nella finestra **Proprietà** modificare la proprietà **Includi in VSIX** su **true**.
 
      Ripetere questo processo per il file di **NativeMath.dll** .
 
@@ -131,9 +133,9 @@ In questa procedura dettagliata viene illustrato come creare un SDK di Math Libr
 
 15. Sulla barra dei menu scegliere **Compila**  >  **Compila soluzione**.
 
-16. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto **NativeMathVSIX** , quindi scegliere **Apri cartella in Esplora file**.
+16. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **NativeMathVSIX** , quindi scegliere **Apri cartella in Esplora file**.
 
-17. In **Esplora file**passare alla cartella *$SolutionRoot $ \NativeMathVSIX\bin\Debug* , quindi eseguire *NativeMathVSIX. vsix* per avviare l'installazione.
+17. In **Esplora file** passare alla cartella *$SolutionRoot $ \NativeMathVSIX\bin\Debug* , quindi eseguire *NativeMathVSIX. vsix* per avviare l'installazione.
 
 18. Scegliere il pulsante **Installa** , attendere il completamento dell'installazione, quindi aprire Visual Studio.
 
@@ -143,15 +145,15 @@ In questa procedura dettagliata viene illustrato come creare un SDK di Math Libr
 
 2. Nell'elenco dei modelli espandere **Visual C++**  >  **universale di Windows** e quindi selezionare **applicazione vuota**. Nella casella **nome** specificare **NativeMathSDKSample**, quindi scegliere il pulsante **OK** .
 
-3. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto **NativeMathSDKSample** , quindi scegliere **Aggiungi**  >  **riferimento**.
+3. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto **NativeMathSDKSample** , quindi scegliere **Aggiungi**  >  **riferimento**.
 
 4. Nell'elenco dei tipi di riferimento della finestra di dialogo **Aggiungi riferimento** espandere **Windows universale**, quindi selezionare **estensioni**. Infine, selezionare la casella di controllo **native Math SDK** , quindi scegliere il pulsante **OK** .
 
 5. Visualizzare le proprietà del progetto per NativeMathSDKSample.
 
-    Le proprietà definite in *NativeMathSDK. props* sono state applicate quando è stato aggiunto il riferimento. È possibile verificare che le proprietà siano state applicate esaminando la proprietà **directory di VC + +** delle **proprietà di configurazione**del progetto.
+    Le proprietà definite in *NativeMathSDK. props* sono state applicate quando è stato aggiunto il riferimento. È possibile verificare che le proprietà siano state applicate esaminando la proprietà **directory di VC + +** delle **proprietà di configurazione** del progetto.
 
-6. In **Esplora soluzioni**aprire **MainPage. XAML**e quindi usare il codice XAML seguente per sostituirne il contenuto:
+6. In **Esplora soluzioni** aprire **MainPage. XAML** e quindi usare il codice XAML seguente per sostituirne il contenuto:
 
     [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]
 

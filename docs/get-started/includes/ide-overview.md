@@ -6,12 +6,12 @@ ms.author: tglee
 author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 03e5f806b428b7ecf08038ef34d6b1dddcd92f9e
-ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+ms.openlocfilehash: fbbd2278a59197601afe02e777e89245fc6bb421
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92210801"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97844731"
 ---
 L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio creativa che consente di modificare, eseguire il debug, compilare il codice e quindi pubblicare un'app. Un ambiente di sviluppo integrato (IDE) è un programma con numerose funzionalità che può essere usato per molti aspetti dello sviluppo software. A differenza dell'editor e del debugger standard disponibili nella maggior parte degli ambienti IDE, Visual Studio include compilatori, strumenti di completamento codice, finestre di progettazione con interfaccia grafica e altre funzionalità che semplificano il processo di sviluppo del software.
 
@@ -171,7 +171,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    ![File > Nuovo progetto sulla barra dei menu](../media/file-new-project-menu.png)
 
-   La finestra di dialogo **nuovo progetto** Mostra diversi *modelli*di progetto. Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
+   La finestra di dialogo **nuovo progetto** Mostra diversi *modelli* di progetto. Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
 
 1. Scegliere la categoria di modello **.NET Core** in **Visual C#** e quindi scegliere il modello **App console (.NET Core)**. Nella casella di testo **Nome** digitare **HelloWorld** e quindi selezionare il pulsante **OK**.
 
@@ -198,7 +198,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!**. Ed ecco un'app in esecuzione.
 
-   ![Finestra della console](../media/overview-console-window.png)
+   ![Screenshot della finestra della console cmd.exe che mostra l'output ' Hello Word!' e premere un tasto qualsiasi per continuare.](../media/overview-console-window.png)
 
 1. Per chiudere la finestra della console, premere un tasto qualsiasi.
 
@@ -241,7 +241,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    Viene visualizzata la finestra **Crea un nuovo progetto**, che mostra diversi *modelli* di progetto. Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
 
-1. Per trovare il modello da usare, digitare o immettere **console .net core** nella casella di ricerca. L'elenco dei modelli disponibili viene automaticamente filtrato in base alle parole chiave immesse. È possibile filtrare ulteriormente i risultati relativi ai modelli scegliendo **C#** dall'elenco a discesa **Linguaggio**. Selezionare il modello**App console (.NET Core)**, quindi scegliere **Avanti**.
+1. Per trovare il modello da usare, digitare o immettere **console .net core** nella casella di ricerca. L'elenco dei modelli disponibili viene automaticamente filtrato in base alle parole chiave immesse. È possibile filtrare ulteriormente i risultati relativi ai modelli scegliendo **C#** dall'elenco a discesa **Linguaggio**. Selezionare il modello **App console (.NET Core)**, quindi scegliere **Avanti**.
 
     ![Creare un nuovo progetto in Visual Studio](../media/vs-2019/create-new-project.png)
 
@@ -267,7 +267,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!**. Ed ecco un'app in esecuzione.
 
-   ![Finestra della console](../media/vs-2019/overview-console-window.png)
+   ![Screenshot della finestra di Console di debug Microsoft Visual Studio che mostra l'output ' Hello Word!' e premere un tasto qualsiasi per chiudere la finestra.](../media/vs-2019/overview-console-window.png)
 
 1. Per chiudere la finestra della console, premere un tasto qualsiasi.
 
@@ -292,7 +292,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 1. Immettere il nome nella finestra della console e premere **INVIO**.
 
-   ![Finestra della console](../media/vs-2019/overview-console-input.png)
+   ![Screenshot della finestra di Console di debug Microsoft Visual Studio che mostra la richiesta di un nome, l'input e l'output "Hello Georgette!".](../media/vs-2019/overview-console-input.png)
 
 1. Premere un tasto qualsiasi per chiudere la finestra della console e arrestare l'esecuzione del programma.
 
@@ -366,7 +366,7 @@ In primo luogo, rinominare la variabile `name`:
 
 10. Eseguire di nuovo il programma premendo **CTRL** + **F5**. L'output è simile al seguente:
 
-    ![Finestra della console con output del programma](../media/overview-console-final.png)
+    ! Screenshot della finestra della console cmd.exe che mostra la richiesta di un nome, l'input e l'output ' Hello georgette! Giorno dell'anno: 151'.] (.. overview-console-final.png/Media/)
 
 ::: moniker-end
 
@@ -374,7 +374,7 @@ In primo luogo, rinominare la variabile `name`:
 
 10. Eseguire di nuovo il programma premendo **CTRL** + **F5**. L'output è simile al seguente:
 
-    ![Finestra della console con output del programma](../media/vs-2019/overview-console-final.png)
+    ![Screenshot della finestra di Console di debug Microsoft Visual Studio che mostra la richiesta di un nome, l'input e l'output ' Hello georgette! Giorno dell'anno: 43'.](../media/vs-2019/overview-console-final.png)
 
 ::: moniker-end
 

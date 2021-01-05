@@ -1,5 +1,5 @@
 ---
-title: Testing unità
+title: Strumenti di unit test & attività
 description: Informazioni sugli strumenti di unit test che è possibile usare per fornire agli sviluppatori e ai tester un modo rapido per individuare gli errori logici nel codice.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8f48a50b39c04df9abab7c11b3b85cc0d2670025
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: ba3db5b74a415d3736c37f54fdb708fde3436d92
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330134"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756591"
 ---
-# <a name="unit-test-your-code"></a>Eseguire unit test del codice
+# <a name="unit-test-tools-and-tasks"></a>Strumenti e attività per unit test
 
 Gli unit test rappresentano per sviluppatori e tester un modo rapido per verificare la presenza di errori di logica nei metodi delle classi in progetti C#, Visual Basic e C++.
 
@@ -34,7 +34,7 @@ Gli strumenti di unit test includono:
 
 * Strumenti di code **coverage** &mdash; È possibile determinare la quantità di codice prodotto esercitata dagli unit test da un comando in Esplora test.
 
-* Framework di isolamento di **Microsoft Fakes** &mdash; Il Framework di isolamento di Microsoft Fakes può creare classi e metodi sostitutivi per la produzione e il codice di sistema che creano le dipendenze nel codice sottoposto a test. L'implementazione di delegati falsi per una funzione consente di controllare il comportamento e l'output dell'oggetto di dipendenza.
+* Framework di isolamento di **Microsoft Fakes** &mdash; Il Framework di isolamento di Microsoft Fakes può creare classi e metodi sostitutivi per il codice di produzione e di sistema .NET che creano le dipendenze nel codice sottoposto a test. L'implementazione di delegati falsi per una funzione consente di controllare il comportamento e l'output dell'oggetto di dipendenza.
 
 È anche possibile creare [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) che esplorano il codice .NET per generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Viene eseguita un'analisi del caso per ogni ramo condizionale nel codice.
 
@@ -44,12 +44,12 @@ Usare gli articoli seguenti per la comprensione e la creazione di unit test:
 
 |Attività|Argomenti correlati|
 |-|-----------------------|
-|**Guide introduttive e procedure dettagliate:** Per informazioni sugli unit test in Visual Studio, vedere esempi di codice.|- [Procedura dettagliata: creare ed eseguire unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [Guida introduttiva: sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [Procedura: aggiungere unit test a app C++](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
+|**Guide introduttive e procedure dettagliate:** Per informazioni sugli unit test in Visual Studio, vedere esempi di codice.|- [Procedura dettagliata: creare ed eseguire unit test per il codice .NET](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [Procedura dettagliata: sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [Procedura: aggiungere unit test a app C++](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
 |**Unit test con Esplora test:** informazioni su come Esplora test può agevolare la creazione di unit test più produttivi ed efficienti.|- [Nozioni fondamentali sugli unit test](../test/unit-test-basics.md)<br />- [Creare un progetto di unit test](../test/create-a-unit-test-project.md)<br />- [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md)<br />- [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md)|
 |**Unit test di codice C++**|- [Scrivere unit test per C/C++](../test/writing-unit-tests-for-c-cpp.md)|
-|**Isolamento degli unit test**|- [Isolare il codice sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**Usare code coverage per identificare la percentuale del codice del progetto in fase di test:** informazioni sulla funzionalità code coverage degli strumenti di test di Visual Studio.|- [Usare code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Eseguire analisi di stress e prestazioni usando i test di carico:** Informazioni su come creare test di carico per isolare i problemi di prestazioni e di stress nell'applicazione.|- [Guida introduttiva: creare un progetto di test di carico](../test/quickstart-create-a-load-test-project.md)<br />- [Test di carico (Azure Test Plans e TFS)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
+|**Isolamento degli unit test**|- [Isolare il codice .NET sottoposto a test con Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
+|**Eseguire analisi di stress e prestazioni usando i test di carico:** Informazioni su come creare test di carico per isolare i problemi di prestazioni e di stress nell'applicazione (deprecati).|- [Guida introduttiva: creare un progetto di test di carico](../test/quickstart-create-a-load-test-project.md)<br />- [Test di carico (Azure Test Plans e TFS)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
 |Impostare i controlli di **qualità:** Informazioni su come creare controlli di qualità per applicare l'esecuzione di test prima che il codice venga archiviato o sottoposto a merge.|- [Criteri di archiviazione (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts&preserve-view=true)|
 |**Impostare le opzioni di test:** Informazioni su come configurare le opzioni di test, ad esempio, in cui vengono archiviati i risultati dei test.|[Configurazione di unit test usando un file con estensione runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 

@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: b28d87cc0842d5a3de8634ae50378915196366ff
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 484cb82a3659e306bd4c6bd14a3133c4677160db
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527924"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833338"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Esercitazione: creare una semplice app console C# in Visual Studio
 
@@ -282,7 +282,7 @@ Verranno esaminati alcuni errori comuni di input dell'utente, che verranno indiv
 
 Quando si prova a dividere un numero per zero, l'app console potrebbe bloccarsi e quindi visualizzare l'errore nell'editor di codice.
 
-   ![L'editor del codice di Visual Studio mostra l'errore di divisione per zero](./media/csharp-console-calculator-dividebyzero-error.png)
+   ![Screenshot dell'editor di codice di Visual Studio che mostra una riga evidenziata in giallo e un errore non gestito dell'eccezione per ' tentativo di dividere per zerò.](./media/csharp-console-calculator-dividebyzero-error.png)
 
 > [!NOTE]
 > In alcuni casi l'app non si blocca e il debugger non visualizzerà un errore di divisione per zero. L'app potrebbe invece restituire un risultato imprevisto non numerico, ad esempio un simbolo di infinito. Viene comunque applicata la correzione del codice seguente.
@@ -311,7 +311,7 @@ Ora il codice verrà modificato per gestire questo errore.
 
 Ora, quando si divide un numero qualsiasi per zero, l'app richiederà un altro numero. Ancora meglio: non smette di richiedere fino a quando non si specifica un numero diverso da zero.
 
-   ![Correzione dell'errore di divisione per zero](./media/csharp-console-calculator-dividebyzero.png)
+   ![Screenshot dell'editor di codice di Visual Studio che mostra il codice per l'istruzione switch con la verifica dell'immissione di un divisore diverso da zero aggiunto.](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>Correggere l'errore di formato
 
@@ -620,7 +620,7 @@ Continuare con la seconda parte di questa esercitazione:
 > [Continua con la parte 2](tutorial-console-part-2.md)
 :::moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [IntelliSense per C#](../../ide/visual-csharp-intellisense.md)
 * [Informazioni sul debug del codice C# in Visual Studio](tutorial-debugger.md)

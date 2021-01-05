@@ -1,5 +1,7 @@
 ---
 title: Eseguire la migrazione della registrazione della classe COM del debugger a 64 bit | Microsoft Docs
+description: Informazioni su come registrare le classi COM in msvsmon per le estensioni del debugger senza scrivere in HKEY_CLASSES_ROOT.
+ms.custom: SEO-VS-2020
 ms.date: 11/10/2016
 ms.topic: conceptual
 ms.assetid: 45cfcee6-7a68-4d4f-b3f6-e2d8a0fa066a
@@ -8,12 +10,12 @@ ms.author: greggm
 manager: jillfra
 ms.workload:
 - greggm
-ms.openlocfilehash: 74fbb959f8272be001aad8a576724d5eb1ad6157
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f28f8eb2935ed2dd8a848ccc3151b9f438fc437
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62433695"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862884"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>Eseguire la migrazione della registrazione della classe COM del debugger a 64 bit
 
@@ -21,7 +23,7 @@ Per le estensioni del debugger che registrano le classi COM in HKEY_CLASSES_ROOT
 
 ## <a name="msvsmon-comclass-def"></a>msvsmon-ComClass-def
 
-Per usare questa tecnica, aggiungere un * *.msvsmon-comclass-def.jsnel* file accanto a msvsmon (installDir:* \Common7\IDE\Remote Debugger\x64 *).
+Per usare questa tecnica, aggiungere un **.msvsmon-comclass-def.jsnel* file accanto a msvsmon (installDir:* \Common7\IDE\Remote Debugger\x64 *).
 
 Di seguito è riportato un esempio di file msvsmon-ComClass-def che registra una classe gestita e una classe nativa:
 

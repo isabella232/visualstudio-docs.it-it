@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f563d37e6456ec775b2e70d59e07b0627c82994b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330199"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833312"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -24,17 +24,17 @@ Per controllare che il codice funzioni come previsto, creare ed eseguire unit te
 
 Gli unit test offrono i risultati migliori in relazione alla qualità del codice quando sono parte integrante del flusso di lavoro di sviluppo di software. Non appena si scrive una funzione o un altro blocco di codice dell'applicazione, creare unit test per verificare il comportamento del codice in risposta a casi standard, limite e non corretti di dati di input e quindi controllare eventuali presupposti espliciti o impliciti presenti nel codice. Con lo *sviluppo basato su test*, gli unit test vengono creati prima di scrivere il codice e quindi vengono usati sia come documentazione di progettazione sia come specifiche funzionali.
 
-È possibile generare rapidamente progetti di test e metodi di test dal codice oppure creare manualmente i test necessari. Quando si usa IntelliTest per esplorare il codice .NET, è possibile generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Informazioni su come [generare unit test per il codice](generate-unit-tests-for-your-code-with-intellitest.md).
-
 Esplora test può eseguire anche framework per unit test di terze parti e open source che hanno implementato le interfacce dei componenti aggiuntivi di Esplora test. È possibile aggiungere molti di questi framework tramite Gestione estensioni di Visual Studio e la Visual Studio Gallery. Per altre informazioni, vedere [installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
+
+È possibile generare rapidamente progetti di test e metodi di test dal codice oppure creare manualmente i test necessari. Quando si usa IntelliTest per esplorare il codice .NET, è possibile generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Informazioni su come [generare unit test per il codice .NET](generate-unit-tests-for-your-code-with-intellitest.md).
 
 ## <a name="get-started"></a>Introduzione
 
 Per un'introduzione agli unit test che mostra direttamente la creazione di codice, vedere uno degli argomenti seguenti:
 
-- [Procedura dettagliata: Creare ed eseguire unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Procedura dettagliata: creare ed eseguire unit test per il codice .NET](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [Guida introduttiva allo sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Procedura dettagliata: sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Scrivere unit test per C/C++ in Visual Studio](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -85,7 +85,7 @@ Ora che è disponibile codice, è possibile passare al test.
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>Creare progetti di unit test e metodi di test
 
-Spesso è più rapido generare il progetto di unit test e gli stub di unit test dal codice. In alternativa, è possibile creare il progetto di unit test e i test manualmente, in base alle esigenze. Se si vuole creare unit test con un Framework di terze parti, sarà necessario installare una di queste estensioni: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) o [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
+Per C#, spesso è più rapido generare il progetto unit test e unit test stub dal codice. In alternativa, è possibile creare il progetto di unit test e i test manualmente, in base alle esigenze. Se si vuole creare unit test dal codice con un Framework di terze parti, sarà necessario installare una di queste estensioni: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) o [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator). Se non si usa C#, ignorare questa sezione e passare a [creare manualmente il progetto unit test e gli unit test](#create-the-unit-test-project-and-unit-tests-manually).
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generare progetto e stub di unit test
 
@@ -101,7 +101,7 @@ Spesso è più rapido generare il progetto di unit test e gli stub di unit test 
    ![Dalla finestra dell'editor, visualizzare il menu di scelta rapida](../test/media/vs-2019/basics-create-unit-tests.png)
 
    > [!NOTE]
-   > Il comando di menu **Crea unit test** è disponibile solo per il codice gestito.
+   > Il comando di menu **Crea unit test** è disponibile solo per il codice C#.
    ::: moniker-end
 
 2. Fare clic su **OK** per accettare le impostazioni predefinite per creare gli unit test oppure modificare i valori usati per creare e denominare il progetto di unit test e gli unit test. È possibile selezionare il codice aggiunto per impostazione predefinita ai metodi di unit test.
@@ -264,7 +264,7 @@ La barra degli strumenti di **Esplora test** consente di individuare, organizzar
 
 ::: moniker range="vs-2017"
 
-Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![Screenshot dell'interruttore di esecuzione dei test paralleli sulla barra degli strumenti di Esplora test di Visual Studio.](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
 ::: moniker-end
 

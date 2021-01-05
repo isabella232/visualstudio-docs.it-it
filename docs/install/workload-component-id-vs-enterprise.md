@@ -1,7 +1,7 @@
 ---
 title: ID dei carichi di lavoro e dei componenti di Visual Studio Enterprise
 titleSuffix: ''
-description: Usare gli ID dei carichi di lavoro e dei componenti per installare Visual Studio tramite la riga di comando o per specificarli come dipendenza in un manifesto VSIX
+description: Usare Visual Studio Enterprise ID dei carichi di lavoro e dei componenti per installare Visual Studio dalla riga di comando o specificare una dipendenza in un manifesto VSIX.
 keywords: ''
 author: ornellaalt
 ms.author: ornella
@@ -16,12 +16,12 @@ ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 4e8b3c03caa55cd309623d5191925a0d13360999
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: aa5e9ea62d02d900eab91d68e4df008431303007
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437453"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846898"
 ---
 # <a name="visual-studio-enterprise-component-directory"></a>Elenco dei componenti di Visual Studio Enterprise
 
@@ -45,7 +45,7 @@ ms.locfileid: "94437453"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)
 * [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)

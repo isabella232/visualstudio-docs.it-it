@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58faf100c61a25ae014bdcc0b09d161e924ad5c9
-ms.sourcegitcommit: 21ac4a0c8ffac3964b75604678b12e0955e0159b
+ms.openlocfilehash: b934c6cb7c2a6ba98113a5e68091ab53f54b1423
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098527"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833364"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -62,7 +62,7 @@ Quando si eseguono, scrivono e rieseguono i test, Esplora test visualizza i risu
 ### <a name="run-tests"></a>Esecuzione dei test
 
 ::: moniker range="vs-2017"
-È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una di queste operazioni:
+È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
 
 - Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto**.
 
@@ -70,12 +70,12 @@ Quando si eseguono, scrivono e rieseguono i test, Esplora test visualizza i risu
 
 - Selezionare i singoli test da eseguire, aprire il menu di scelta rapida per un test selezionato e quindi scegliere **Esegui test selezionati**.
 
-- Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+- Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![Screenshot dell'interruttore di esecuzione dei test paralleli sulla barra degli strumenti di Esplora test di Visual Studio. Quando si seleziona questo pulsante, i test vengono eseguiti in parallelo.](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
 Mentre il test viene eseguito, la barra **Superato/Non superato** nella parte superiore della finestra **Esplora test** visualizza un'animazione. Al termine dell'esecuzione del test, la barra **Superato/Non superato** diventa verde se tutti i test sono stati superati o rossa se un test non è stato superato.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una di queste operazioni:
+È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
 
 - Per eseguire tutti i test in una soluzione, scegliere l'icona **Esegui tutto**.
 
@@ -150,7 +150,7 @@ Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento 
 
 È possibile definire i propri livelli della gerarchia e raggruppare in base a **Stato** e quindi a **Classe**, ad esempio, selezionando le opzioni di Raggruppa per nell'ordine preferito.
 
-![Raggruppamento per stato e quindi per classe](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
+![Screenshot di Esplora test di Visual Studio che mostra una gerarchia di test in un riquadro e il menu Raggruppa per nell'altro con le opzioni classe e stato selezionate.](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
 ::: moniker-end
 
 ### <a name="test-explorer-groups"></a>Gruppi di Esplora test
@@ -207,7 +207,7 @@ Vedere [Come usare il framework di testing unità Microsoft per C++](how-to-use-
 
 **Per aprire una playlist**, scegliere **Test** > **Playlist** dal menu di Visual Studio e quindi scegliere nell'elenco delle playlist usate di recente oppure scegliere **Apri playlist** per specificare il nome e il percorso della playlist.
 
-Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![Screenshot dell'interruttore di esecuzione dei test paralleli sulla barra degli strumenti di Esplora test di Visual Studio.](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 È possibile creare e salvare un elenco di test da eseguire o visualizzare come gruppo. Quando si seleziona una playlist, i test nell'elenco vengono visualizzati in una nuova scheda Esplora test. È possibile aggiungere un test a più di una playlist.
@@ -264,7 +264,7 @@ Usare il formato seguente per xUnit. Verificare che sia presente uno spazio tra 
 
 I [gruppi](#test-explorer-groups) sono disponibili anche come colonne in Esplora test, insieme a Tratti, Analisi dello stack, Messaggio di errore e Nome completo. La maggior parte delle colonne non è visibile per impostazione predefinita ed è possibile personalizzare quali colonne visualizzare e l'ordine in cui sono disposte.
 
-![Raggruppamento per stato e quindi per classe](../test/media/vs-2019/test-explorer-columns-16-2.png)
+![Screenshot di Esplora test di Visual Studio che mostra un menu con le colonne selezionate e un sottomenu con durata, tratti e messaggio di errore selezionati.](../test/media/vs-2019/test-explorer-columns-16-2.png)
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>Filtrare, ordinare e ridisporre le colonne di test
 
@@ -377,7 +377,7 @@ I test possono essere eseguiti da Esplora test facendo clic con il pulsante dest
 > [!NOTE]
 > Non è possibile eseguire un test in una classe astratta, poiché i test vengono solo definiti nelle classi astratte ma non ne viene creata l'istanza. Per eseguire i test nelle classi astratte, creare una classe che deriva dalla classe astratta.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)
 - [Eseguire il debug di unit test con Esplora test](../test/debug-unit-tests-with-test-explorer.md)

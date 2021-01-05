@@ -1,6 +1,6 @@
 ---
 title: Eseguire il debug di servizi Azure Kubernetes Azure ASP.NET attivi
-description: Informazioni su come impostare punti di acquisizione snapshot e visualizzare gli snapshot con Snapshot Debugger.
+description: Informazioni su come usare il Snapshot Debugger in Visual Studio per impostare ancoraggio e acquisire snapshot durante il debug dei servizi Live ASP.NET Azure Kubernetes.
 ms.custom: ''
 ms.date: 02/11/2019
 ms.topic: how-to
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: e0f062108f19b38c6bf6514eda78098f493b3f78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 823da6da0a842766739cb50c700bb723a47d0309
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350654"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846964"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Eseguire il debug di servizi Azure Kubernetes Azure ASP.NET attivi con Snapshot Debugger
 

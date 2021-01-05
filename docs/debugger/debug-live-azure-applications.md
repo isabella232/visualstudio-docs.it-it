@@ -1,7 +1,7 @@
 ---
 title: Eseguire il debug di app di Azure ASP.NET attive
 titleSuffix: Visual Studio Enterprise
-description: Informazioni su come impostare punti di acquisizione snapshot e visualizzare gli snapshot con Snapshot Debugger.
+description: Informazioni su come usare il Snapshot Debugger in Visual Studio per impostare ancoraggio e acquisire snapshot durante il debug di applicazioni Azure ASP.NET in tempo reale.
 ms.custom: ''
 ms.date: 03/16/2018
 ms.topic: how-to
@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 526f7b7cc1af3dd5a370c74baa09cbab50b3d866
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 3393328999793a7e34fb3af9f7abea7430838f76
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879086"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846978"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Eseguire il debug di app di Azure ASP.NET attive con Snapshot Debugger
 

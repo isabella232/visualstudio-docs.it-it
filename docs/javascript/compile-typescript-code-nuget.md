@@ -1,6 +1,6 @@
 ---
 title: Compilare e compilare codice TypeScript usando NuGet
-description: Informazioni su come compilare e compilare TypeScript in Visual Studio.
+description: Informazioni su come aggiungere il supporto typescript ai progetti di Visual Studio usando il pacchetto NuGet.
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 16ff335fdf8ca76889562cfd94807ec1adc516d2
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 929c17c9cbd2a0987bebca02c70b3b751c19fc9a
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927926"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846826"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>Compila codice TypeScript (ASP.NET Core)
 
@@ -44,7 +44,7 @@ Se Visual Studio è installato, il node.exe in bundle verrà automaticamente sel
    </PackageReference>
    ```
 
-1. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **aggiungi > nuovo elemento**. Scegliere il **file di configurazione TYPESCRIPT JSON**e quindi fare clic su **Aggiungi**.
+1. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **aggiungi > nuovo elemento**. Scegliere il **file di configurazione TYPESCRIPT JSON** e quindi fare clic su **Aggiungi**.
 
    Visual Studio aggiunge il *tsconfig.jsnel* file alla radice del progetto. È possibile usare questo file per [configurare le opzioni](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) per il compilatore typescript.
 
@@ -106,7 +106,7 @@ Se Visual Studio è installato, il node.exe in bundle verrà automaticamente sel
 
 Per un esempio dell'uso di Gulp con l'attività Runner per compilare l'app, vedere [ASP.NET Core e typescript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html).
 
-Se si verificano problemi in cui Visual Studio usa una versione di Node.js o uno strumento di terze parti diverso dalla versione prevista, potrebbe essere necessario impostare il percorso di Visual Studio. Scegliere **strumenti**  >  **Opzioni**. In **progetti e soluzioni**scegliere **Web Gestione pacchetti**  >  **strumenti Web esterni**.
+Se si verificano problemi in cui Visual Studio usa una versione di Node.js o uno strumento di terze parti diverso dalla versione prevista, potrebbe essere necessario impostare il percorso di Visual Studio. Scegliere **strumenti**  >  **Opzioni**. In **progetti e soluzioni** scegliere **Web Gestione pacchetti**  >  **strumenti Web esterni**.
 
 ### <a name="run-the-application"></a>Eseguire l'applicazione
 
@@ -163,7 +163,7 @@ Se si usa il pacchetto NuGet per il supporto MSBuild per un progetto, il file di
 
 1. Fare clic con il pulsante destro del mouse sul progetto e scegliere **Scarica progetto**.
 
-1. Fare clic con il pulsante destro del mouse sul progetto e scegliere **modifica \<*project file name*\> **.
+1. Fare clic con il pulsante destro del mouse sul progetto e scegliere **modifica \<*project file name*\>**.
 
    Verrà aperto il file di progetto.
 

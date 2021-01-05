@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64166768dea1da015c223a74c74440ae09a0d106
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 74b6b6b6a8f7a9f5f234a9b46c799e6e0580536f
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863036"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761329"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Identificatori di formato per C++ nel debugger di Visual Studio
 È possibile modificare il formato in cui un valore viene visualizzato nelle finestre **espressioni di controllo**, **auto** e **variabili locali** utilizzando identificatori di formato.
@@ -54,7 +54,7 @@ int main() {
 
 Aggiungere la `my_var1` variabile alla finestra **espressioni di controllo** durante il debug, **eseguire il debug** di  >  **Windows**  >  **Watch**  >  **Watch 1**. Fare quindi clic con il pulsante destro del mouse sulla variabile e scegliere **visualizzazione esadecimale**. A questo punto la finestra **espressioni di controllo** Mostra il valore 0x0065. Per visualizzare questo valore espresso come carattere anziché come Integer, fare prima clic con il pulsante destro del mouse e deselezionare la **visualizzazione esadecimale**. Aggiungere quindi l'identificatore di formato carattere **, c** nella colonna **nome** dopo il nome della variabile. La colonna **valore** ora Mostra **101 "e"**.
 
-![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
+![Screenshot di Visual Studio finestra Espressioni di controllo con una riga selezionata che mostra my_var1. c con un valore di 101' è e un tipo di int.](../debugger/media/watchformatcplus1.png)
 
 ::: moniker range=">= vs-2019" 
 È possibile visualizzare e selezionare da un elenco di identificatori di formato disponibili aggiungendo una virgola (,) al valore nella finestra **espressioni di controllo** . 

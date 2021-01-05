@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 21052d59205c7ddc14247f180348fea3b8d5652a
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780984"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833247"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Passaggio 2: creare la prima app Web ASP.NET Core
 
@@ -50,7 +50,7 @@ Nella finestra Esplora soluzioni a destra è possibile visualizzare il contenuto
 
 La cartella *wwwroot* contiene i file statici che saranno pubblicamente accessibili dall'applicazione Web. In genere contiene fogli di stile, file di script lato client e immagini.
 
-### <a name="pages"></a>.NET
+### <a name="pages"></a>Pagine
 
 La cartella *Pages* contiene le pagine Razor del sito. Il modello predefinito offre diverse pagine, tra cui la pagina *Index.cshtml* che è la home page dell'applicazione, nonché le pagine About, Contact e così via.
 
@@ -68,7 +68,7 @@ L'host Web creato in *Program.cs* fa riferimento alla classe Startup e chiama i 
 
 ### <a name="indexcshtml"></a>Index.cshtml
 
-La home page del sito include markup HTML e codice Razor lato server. Usa Razor per specificare il modello di pagina, `IndexModel`, che si trova nel file *Index.cshtml.cs* associato. Imposta inoltre il titolo della pagina, impostando un valore in ViewData. Questo valore ViewData viene letto nel file * \_ layout. cshtml* , che si trova nella cartella Shared all'interno della cartella pages. Il file Layout è condiviso da molte pagine Razor e fornisce le caratteristiche comuni per l'aspetto dell'applicazione. Il rendering del contenuto di ogni pagina viene eseguito all'interno del codice HTML del file Layout.
+La home page del sito include markup HTML e codice Razor lato server. Usa Razor per specificare il modello di pagina, `IndexModel`, che si trova nel file *Index.cshtml.cs* associato. Imposta inoltre il titolo della pagina, impostando un valore in ViewData. Questo valore ViewData viene letto nel file *\_ layout. cshtml* , che si trova nella cartella Shared all'interno della cartella pages. Il file Layout è condiviso da molte pagine Razor e fornisce le caratteristiche comuni per l'aspetto dell'applicazione. Il rendering del contenuto di ogni pagina viene eseguito all'interno del codice HTML del file Layout.
 
 ## <a name="run-the-application"></a>Eseguire l'applicazione
 
@@ -94,7 +94,7 @@ Sostituire il contenuto `<div>` in *Index.cshtml* con il markup seguente:
 
 Eseguire di nuovo l'applicazione. Ora nella pagina dovrebbe essere visualizzata l'ora corrente, ma risulta sempre mezzanotte. Questo non è corretto.
 
-![Progetto ASP.NET Core di Visual Studio 2019 nel browser](media/vs-2019/vs2019-app-in-browser.png)
+![Screenshot della Home page dell'applicazione in una finestra del browser. Il contenuto della pagina viene letto: "si tratta di 12:00 al momento nel server!".](media/vs-2019/vs2019-app-in-browser.png)
 
 ## <a name="debug-the-application"></a>Eseguire il debug dell'applicazione
 
@@ -102,7 +102,7 @@ Aggiungere un punto di interruzione al metodo `OnGet` assegnando un valore a `Ti
 
 L'esecuzione si interrompe in corrispondenza della riga e si può osservare che `DateTime.Today` comprende la data, ma l'ora è sempre la mezzanotte perché non sono inclusi dati sull'ora.
 
-![Progetto ASP.NET Core di Visual Studio 2019 nel browser](media/vs-2019/vs2019-breakpoint.png)
+![Screenshot che illustra il codice per Index.cshtml.cs in Visual Studio. Viene impostato un punto di interruzione sulla riga ' Time = DateTime. Today. ToShortTimeString ();'.](media/vs-2019/vs2019-breakpoint.png)
 
 Modificare il codice in modo da usare `DateTime.Now` e continuare l'esecuzione. Il nuovo codice per `OnGet` dovrebbe essere:
 
@@ -118,7 +118,7 @@ Adesso nel browser verrà visualizzata l'ora effettiva del server quando si pass
 > [!NOTE]
 > L'output potrebbe essere diverso dall'immagine, poiché il formato di output di ToShortDateTimeString dipende dalle impostazioni cultura correnti. Vedere <xref:System.DateTime.ToShortTimeString>.
 
-![Progetto ASP.NET Core di Visual Studio 2019 nel browser](media/vs-2019/vs2019-app-fixed-in-browser.png)
+![Screenshot della Home page dell'applicazione in una finestra del browser. Il contenuto della pagina viene letto: "si tratta di 1:46 al momento nel server!".](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
@@ -126,6 +126,6 @@ Nel prossimo video si apprenderà come aggiungere il supporto dei dati per l'app
 
 [Esercitazione: uso dei dati nell'app ASP.NET Core](tutorial-aspnet-core-ef-step-03.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Esercitazione: creare un'app Web Razor Pages con ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)

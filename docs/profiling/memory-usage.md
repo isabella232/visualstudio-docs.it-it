@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e1e6951aebac63494aada4e64c5c072eb79c6a9
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 3d259c6fa69821d1fecd26944227bff86cc82104
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074982"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815854"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Misurare l'utilizzo della memoria in Visual Studio
 
@@ -124,7 +124,7 @@ Per analizzare l'utilizzo della memoria, fare clic su uno dei collegamenti che c
 
  Per visualizzare le istanze di un tipo selezionato nel riquadro superiore, scegliere l'icona dell' ![icona dell'istanza](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") .
 
- ![Visualizzazione Istanze](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
+ ![Screenshot della visualizzazione istanze nello strumento utilizzo memoria di Visual Studio, che mostra il riquadro istanze e il riquadro percorsi della radice e oggetti a cui si fa riferimento.](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
 
  La visualizzazione **Istanze** mostra le istanze dell'oggetto selezionato nello snapshot nel riquadro superiore. I riquadri **Percorsi della radice** e **Oggetti a cui si fa riferimento** mostrano gli oggetti che fanno riferimento all'istanza selezionata e i tipi a cui fa riferimento l'istanza selezionata. Quando il debugger viene interrotto nel punto in cui è stato effettuato lo snapshot, è possibile passare il puntatore del mouse sulla cella del **valore** per visualizzare i valori dell'oggetto in una descrizione comandi.
 
@@ -139,7 +139,7 @@ Per analizzare l'utilizzo della memoria, fare clic su uno dei collegamenti che c
 
      La visualizzazione **Istanze** mostra ogni istanza del tipo selezionato. La selezione di un'istanza consente di visualizzare lo stack di chiamate che ha comportato la creazione dell'istanza nel riquadro **Stack di chiamate allocazione** .
 
-     ![Visualizzazione Istanze](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
+     ![Screenshot della visualizzazione istanze nello strumento utilizzo memoria di Visual Studio, che mostra il riquadro istanze e il riquadro stack di chiamate allocazione.](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
 - Scegliere **Visualizzazione stack** dall'elenco **Modalità di visualizzazione** per visualizzare lo stack di allocazione per il tipo selezionato.
 

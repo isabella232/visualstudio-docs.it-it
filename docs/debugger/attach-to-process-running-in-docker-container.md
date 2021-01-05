@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b32b402e2bbf85cf5c028ec2dc94821ec463644
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94674779"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761264"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>Connettersi a un processo in esecuzione in un contenitore Docker 
 
@@ -34,7 +34,7 @@ ms.locfileid: "94674779"
 
 1. In Visual Studio selezionare **Debug > Connetti a processo (CTRL + ALT + P)** per aprire la finestra di dialogo **Connetti a processo** .
 
-![Menu Connetti a processo](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
+![Screenshot della finestra di dialogo Connetti a processo in Visual Studio che mostra un tipo di connessione di Docker (contenitore Linux).](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
 
 2. Impostare il **tipo di connessione** su **Docker (contenitore Linux)**.
 3. Selezionare **trova..** . per impostare la **destinazione della connessione** tramite la finestra di dialogo **Seleziona contenitore Docker** .
@@ -63,7 +63,7 @@ ms.locfileid: "94674779"
 
 4. Scegliere il processo contenitore corrispondente nell'elenco dei **processi disponibili** e selezionare **Connetti** per avviare il debug del processo contenitore C# in Visual Studio.
 
-    ![Menu Docker collegato completato](../debugger/media/docker-attach-complete.png "Menu Docker collegato Linux completato")
+    ![Screenshot della finestra di dialogo Connetti a processo in Visual Studio. Il tipo di connessione è impostato su Docker (contenitore Linux) e il processo DotNet è selezionato.](../debugger/media/docker-attach-complete.png "Menu Docker collegato Linux completato")
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a>Connettersi a un processo in esecuzione in un contenitore Docker di Windows
 
@@ -76,7 +76,7 @@ ms.locfileid: "94674779"
 
 1. In Visual Studio selezionare **Debug > Connetti a processo** (o **CTRL + ALT + P**) per aprire la finestra di dialogo **Connetti a processo** .
 
-   ![Menu Connetti a processo](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
+   ![Screenshot della finestra di dialogo Connetti a processo in Visual Studio che mostra un tipo di connessione di Docker (contenitore di Windows).](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
 
 2. Impostare il **tipo di connessione** su **Docker (contenitore di Windows)**.
 3. Selezionare **trova..** . per impostare la **destinazione della connessione** usando la finestra di dialogo **Seleziona contenitore Docker** .
@@ -93,6 +93,6 @@ ms.locfileid: "94674779"
 
 4. Scegliere il processo contenitore corrispondente nell'elenco dei **processi disponibili** e selezionare **Connetti** per avviare il debug del processo contenitore C#.
 
-    ![Menu Docker collegato completato](../debugger/media/docker-attach-complete-windows.png "Menu di alconnessione Docker Windows completato")
+    ![Screenshot della finestra di dialogo Connetti a processo in Visual Studio. Il tipo di connessione è impostato su Docker (contenitore di Windows) ed è selezionato il dotnet.exe processo.](../debugger/media/docker-attach-complete-windows.png "Menu di alconnessione Docker Windows completato")
 
-5.  Scegliere il processo contenitore corrispondente nell'elenco dei processi disponibili e scegliere **Connetti** per avviare il debug del processo contenitore C#.
+5. Scegliere il processo contenitore corrispondente nell'elenco dei processi disponibili e scegliere **Connetti** per avviare il debug del processo contenitore C#.

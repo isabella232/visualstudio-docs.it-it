@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaeff850c739cd81569a88ae980acf837c413c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6d451735042374f0e3c6fb2154cd54520a069fc
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184211"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761433"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Presentazione del debugger di Visual Studio
 
@@ -64,17 +64,17 @@ Come accennato in precedenza, per impostazione predefinita il debugger ignora pr
 
 Fare clic con il pulsante destro del mouse su una proprietà o un campo e scegliere **Esegui istruzione specifica**, quindi scegliere una delle opzioni disponibili.
 
-![Esegui istruzione specifica](../debugger/media/dbg-tour-step-into-specific.png "Esegui istruzione specifica")
+![Screenshot del debugger di Visual Studio con una riga di codice evidenziata. Esegui istruzione specifica è selezionato nel menu di scelta rapida e il metodo Path. set è selezionato.](../debugger/media/dbg-tour-step-into-specific.png)
 
 In questo esempio **Esegui istruzione specifica** si interrompe in corrispondenza del codice per `Path.set`.
 
-![Esegui istruzione specifica](../debugger/media/dbg-tour-step-into-specific-2.png "Esegui istruzione specifica")
+![Screenshot del debugger di Visual Studio che mostra il codice per Path. set. Le parentesi graffe che racchiudono la funzione set sono evidenziate in giallo.](../debugger/media/dbg-tour-step-into-specific-2.png)
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>Raggiungere rapidamente un punto del codice usando il mouse
 
-Nel debugger passare il puntatore del mouse su una riga di codice fino a quando non viene eseguito il pulsante Esegui fino al **clic** (Esegui esecuzione fino a qui) ![per fare clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") su a sinistra.
+Nel debugger passare il puntatore del mouse su una riga di codice fino a quando non **si fa clic** sul pulsante Esegui esecuzione fino a qui, ![ screenshot del pulsante Esegui fino al clic dal debugger di Visual Studio. Il pulsante indica che l'esecuzione deve essere eseguita fino alla riga in cui si trova il pulsante.](../debugger/media/dbg-tour-run-to-click.png) viene visualizzata a sinistra.
 
-![Esegui fino alla riga selezionata](../debugger/media/dbg-tour-run-to-click-2.png "Esegui fino alla riga selezionata")
+![Screenshot del debugger di Visual Studio che mostra il pulsante Esegui fino al clic visualizzato a sinistra di una chiamata alla funzione Update.](../debugger/media/dbg-tour-run-to-click-2.png)
 
 > [!NOTE]
 > Il pulsante **Esegui fino alla riga selezionata** (Continua l'esecuzione fino a qui) è disponibile a partire da [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
@@ -116,7 +116,7 @@ Se si desidera arrestare il debugger e tornare all'editor di codice, è possibil
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>Modificare il codice e continuare il debug (C#, VB, C++, XAML)
 
-Nella maggior parte dei linguaggi supportati da Visual Studio, è possibile modificare il codice nel corso di una sessione di debug e continuare il debug. Per usare questa funzionalità, fare clic sul codice con il cursore mentre è in pausa nel debugger, apportare modifiche e premere **F5**, **F10**o **F11** per continuare il debug.
+Nella maggior parte dei linguaggi supportati da Visual Studio, è possibile modificare il codice nel corso di una sessione di debug e continuare il debug. Per usare questa funzionalità, fare clic sul codice con il cursore mentre è in pausa nel debugger, apportare modifiche e premere **F5**, **F10** o **F11** per continuare il debug.
 
 ![Debug di modifica e continuazione](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 

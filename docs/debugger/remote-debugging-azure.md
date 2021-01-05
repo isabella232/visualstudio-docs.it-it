@@ -1,5 +1,6 @@
 ---
 title: ASP.NET Core di debug remoto in IIS e Azure | Microsoft Docs
+description: Informazioni su come configurare e configurare un'app di Visual Studio ASP.NET Core, distribuirla in IIS usando Azure e collegarla da Visual Studio.
 ms.custom: remotedebugging
 ms.date: 05/06/2020
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 926bd4a6630d9d99726ee6c1479d04c476756c18
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: b6535bb52221de780b9a8862be22a6a4deb79b57
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "92298753"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815841"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>ASP.NET Core di debug remoto in IIS in Azure in Visual Studio
 
@@ -29,13 +30,13 @@ Il metodo consigliato per eseguire il debug remoto in Azure dipende dallo scenar
 
     In questo scenario, è necessario distribuire l'app da Visual Studio in Azure, ma non è necessario installare o configurare manualmente IIS o il debugger remoto (questi componenti sono rappresentati da linee tratteggiate), come illustrato nella figura seguente.
 
-    ![Componenti del debugger remoto](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+    ![Diagramma che mostra la relazione tra Visual Studio, app Azure servizio e un'app ASP.NET. IIS e il debugger remoto sono rappresentati da linee tratteggiate.](../debugger/media/remote-debugger-azure-app-service.png)
 
 * Per eseguire il debug di IIS in una macchina virtuale di Azure, seguire la procedura descritta in questo argomento (vedere la sezione [debug remoto in una macchina virtuale di Azure](#remote_debug_azure_vm)). In questo modo è possibile utilizzare una configurazione personalizzata di IIS, ma i passaggi di installazione e distribuzione sono più complicati.
 
     Per una macchina virtuale di Azure, è necessario distribuire l'app da Visual Studio in Azure ed è inoltre necessario installare manualmente il ruolo IIS e il debugger remoto, come illustrato nella figura seguente.
 
-    ![Componenti del debugger remoto](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+    ![Diagramma che mostra la relazione tra Visual Studio, una macchina virtuale di Azure e un'app ASP.NET. IIS e il debugger remoto sono rappresentati con linee continue.](../debugger/media/remote-debugger-azure-vm.png)
 
 * Per eseguire il debug di ASP.NET Core in Azure Service Fabric, vedere [eseguire il debug di un'applicazione Service Fabric remota](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
@@ -78,7 +79,7 @@ Da Visual Studio è possibile pubblicare rapidamente ed eseguire il debug dell'a
 
     Se sono stati configurati dei profili di pubblicazione, viene visualizzato il riquadro **Pubblica**. Fare clic su **nuovo profilo**.
 
-1. Scegliere **servizio app Azure** dalla finestra di dialogo **pubblica** , selezionare **Crea nuovo**e seguire le istruzioni per creare un profilo.
+1. Scegliere **servizio app Azure** dalla finestra di dialogo **pubblica** , selezionare **Crea nuovo** e seguire le istruzioni per creare un profilo.
 
     Per istruzioni dettagliate, vedere [Distribuire un'app Web ASP.NET Core in Azure con Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
@@ -96,7 +97,7 @@ Da Visual Studio è possibile pubblicare rapidamente ed eseguire il debug dell'a
 
     Il punto di interruzione verrà raggiunto in Visual Studio.
 
-    L'operazione è terminata. Il resto dei passaggi descritti in questo argomento si applica al debug remoto in una macchina virtuale di Azure.
+    Ecco fatto! Il resto dei passaggi descritti in questo argomento si applica al debug remoto in una macchina virtuale di Azure.
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a> ASP.NET Core di debug remoto in una macchina virtuale di Azure
 
@@ -159,7 +160,7 @@ Se è necessario assistenza per la distribuzione dell'app in IIS, prendere in co
 
 ### <a name="configure-the-aspnet-core-web-site"></a>Configurare il sito Web di ASP.NET Core
 
-1. In Gestione IIS fare clic su **pool di applicazioni**nel riquadro sinistro in **connessioni**. Aprire **DefaultAppPool** e impostare la **versione .NET CLR** su **nessun codice gestito**. Questa operazione è necessaria per ASP.NET Core. Il sito Web predefinito utilizza DefaultAppPool.
+1. In Gestione IIS fare clic su **pool di applicazioni** nel riquadro sinistro in **connessioni**. Aprire **DefaultAppPool** e impostare la **versione .NET CLR** su **nessun codice gestito**. Questa operazione è necessaria per ASP.NET Core. Il sito Web predefinito utilizza DefaultAppPool.
 
 2. Arrestare e riavviare il DefaultAppPool.
 
@@ -201,13 +202,13 @@ Se si importano le impostazioni di pubblicazione, è possibile ignorare questa s
 
 3. Impostare il campo **alias** su **MyASPApp** e il campo pool di applicazioni su **nessun codice gestito**. Impostare il **percorso fisico** su **C:\publish** (dove si distribuirà successivamente il progetto di ASP.NET Core).
 
-4. Con il sito selezionato in Gestione IIS, scegliere **modifica autorizzazioni**e verificare che IUSR, IIS_IUSRS o l'utente configurato per il pool di applicazioni sia un utente autorizzato con lettura & Esegui diritti.
+4. Con il sito selezionato in Gestione IIS, scegliere **modifica autorizzazioni** e verificare che IUSR, IIS_IUSRS o l'utente configurato per il pool di applicazioni sia un utente autorizzato con lettura & Esegui diritti.
 
     Se non viene visualizzato uno di questi utenti con accesso, seguire la procedura per aggiungere IUSR come utente con i diritti di esecuzione di lettura &.
 
 ### <a name="optional-publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>Opzionale Pubblicare e distribuire l'app pubblicando in una cartella locale da Visual Studio
 
-Se non si usa Distribuzione Web, è necessario pubblicare e distribuire l'app usando il file system o altri strumenti. È possibile iniziare creando un pacchetto usando il file system, quindi distribuire il pacchetto manualmente o usare altri strumenti come PowerShell, RoboCopy o XCopy. In questa sezione si presuppone che si stia copiando manualmente il pacchetto se non si usa Distribuzione Web.
+Se non si usa Distribuzione Web, è necessario pubblicare e distribuire l'app usando il file system o altri strumenti. È possibile iniziare creando un pacchetto usando il file system, quindi distribuire il pacchetto manualmente o usare altri strumenti come PowerShell, Robocopy o XCopy. In questa sezione si presuppone che si stia copiando manualmente il pacchetto se non si usa Distribuzione Web.
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
@@ -234,13 +235,13 @@ Scaricare la versione di Remote Tools corrispondente alla versione di Visual Stu
 
 3. Impostare il campo qualificatore su **\<remote computer name>** e premere **invio**.
 
-    Verificare che in Visual Studio venga aggiunta la porta richiesta al nome del computer, che viene visualizzato nel formato: ** \<remote computer name> :p Ort**
+    Verificare che in Visual Studio venga aggiunta la porta richiesta al nome del computer, che viene visualizzato nel formato: **\<remote computer name> :p Ort**
 
     ::: moniker range=">=vs-2019"
-    In Visual Studio 2019 dovrebbe essere visualizzato ** \<remote computer name> : 4024**
+    In Visual Studio 2019 dovrebbe essere visualizzato **\<remote computer name> : 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    In Visual Studio 2017 dovrebbe essere visualizzato ** \<remote computer name> : 4022**
+    In Visual Studio 2017 dovrebbe essere visualizzato **\<remote computer name> : 4022**
     ::: moniker-end
     La porta è obbligatoria. Se il numero di porta non è visibile, aggiungerlo manualmente.
 
@@ -270,7 +271,7 @@ Scaricare la versione di Remote Tools corrispondente alla versione di Visual Stu
 
 7. Scegliere **Connetti**.
 
-8. Aprire il sito Web del computer remoto. In un browser passare a **http:// \<remote computer name> **.
+8. Aprire il sito Web del computer remoto. In un browser passare a **http:// \<remote computer name>**.
 
     Verrà visualizzata la pagina Web ASP.NET.
 9. Nell'applicazione ASP.NET in esecuzione fare clic sul collegamento alla pagina **About** .

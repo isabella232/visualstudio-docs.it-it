@@ -1,5 +1,6 @@
 ---
 title: Eseguire il debug del metodo OnStart | Microsoft Docs
+description: Informazioni su come eseguire il debug del metodo OnStart di un servizio Windows in Visual Studio, avviando il debugger dall'interno del metodo.
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d695e4d22c728eb256aeb0e1350819ba23b93385
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 27cb5a870166e1d8909c80dc617ca16690bf6619
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852374"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761407"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Procedura: eseguire il debug del metodo OnStart
 È possibile eseguire il debug di un servizio Windows stesso avviando il servizio e connettendo il debugger al processo del servizio. Per altre informazioni, vedere [Procedura: Eseguire il debug di applicazioni di servizio per Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Per eseguire il debug del metodo <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> di un servizio Windows, è tuttavia necessario avviare il debugger all'interno del metodo.
@@ -42,16 +43,16 @@ ms.locfileid: "90852374"
 
     Verrà visualizzata una finestra di dialogo analoga alla seguente:
 
-    ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")
+    ![Screenshot della finestra di dialogo debugger JIT di Visual Studio in cui viene visualizzata un'eccezione .NET Framework non gestita nel WindowsService-Asis.exe.](../debugger/media/onstartdebug.png)
 
 3. Selezionare **Sì, debug \<service name> .**
 
 4. Nella finestra Debugger JIT di Visual Studio selezionare la versione di Visual Studio da usare per il debug.
 
-    ![JustInTimeDebugger](../debugger/media/justintimedebugger.png "JustInTimeDebugger")
+    ![Screenshot di una finestra del debugger JIT di Visual Studio con ' nuova istanza di Microsoft Visual Studio 2015' selezionata nell'elenco dei debugger possibili.](../debugger/media/justintimedebugger.png)
 
 5. Viene avviata una nuova istanza di Visual Studio e l'esecuzione viene arrestata in corrispondenza del metodo `Debugger.Launch()` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Debug del codice gestito](../debugger/debugging-managed-code.md)

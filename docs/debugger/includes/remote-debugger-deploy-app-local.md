@@ -8,20 +8,20 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d049bc8b74b83028e04fe92e7ce96f45907d042
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89325481"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97762608"
 ---
-1. Nella **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **pubblica** (per Web Form, **pubblica app Web**).
+1. Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **pubblica** (per Web Form, **pubblica app Web**).
 
     Se sono stati configurati dei profili di pubblicazione, viene visualizzato il riquadro **Pubblica**. Fare clic su **nuovo profilo**.
 
-1. Nella finestra di dialogo **pubblica** selezionare **cartella**, fare clic su **Sfoglia**e creare una nuova cartella, **C:\publish**.
+1. Nella finestra di dialogo **pubblica** selezionare **cartella**, fare clic su **Sfoglia** e creare una nuova cartella, **C:\publish**.
 
-    ![RemoteDBG_Publish_Local](../media/remotedbg_publish_local.png "RemoteDBG_Publish_Local")
+    ![Screenshot della finestra di dialogo selezionare una destinazione di pubblicazione in Visual Studio con la cartella "bin\Release\Publish" selezionata come destinazione di pubblicazione.](../media/remotedbg_publish_local.png)
 
     Per un'app Web Form, scegliere **personalizzata** nella finestra di dialogo pubblica, immettere un nome di profilo e scegliere **OK**.
 
@@ -29,14 +29,14 @@ ms.locfileid: "89325481"
 
 1. Nella finestra di dialogo **pubblica** fare clic sul collegamento **Impostazioni** , quindi selezionare la scheda **Impostazioni** .
 
-1. Impostare la configurazione su **debug**, selezionare **Elimina tutti i file esistenti prima della pubblicazione**e quindi fare clic su **Salva**.
+1. Impostare la configurazione su **debug**, selezionare **Elimina tutti i file esistenti prima della pubblicazione** e quindi fare clic su **Salva**.
 
     > [!NOTE]
     > Se si usa una build di rilascio, si disabilita il debug nel file di web.config durante la pubblicazione.
 
 1. Fare clic su **Pubblica**.
 
-    ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
+    ![Screenshot della scheda Impostazioni della finestra di dialogo pubblica. La configurazione è impostata su debug e viene selezionato il pulsante pubblica.](../media/remotedbg_publish_debug_config.png)
 
     L'applicazione pubblica una configurazione di **debug** del progetto nella cartella locale. Lo stato di avanzamento viene visualizzato nella finestra output.
 

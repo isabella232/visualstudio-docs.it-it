@@ -1,5 +1,7 @@
 ---
 title: Registrazione dei verbi per le estensioni di file | Microsoft Docs
+description: Informazioni su come registrare un verbo associato a un identificatore a livello di codice per un'estensione di file usando una chiave della shell.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac2854f1799075cc14d9beb557335be5228be21d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df0dfe90bd5e3bccbb6bb0f9dab400082f539fbf
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701527"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863041"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrare i verbi per le estensioni dei nomi di file
 L'associazione di un'estensione di file a un'applicazione in genere presenta un'azione preferenziale che si verifica quando un utente fa doppio clic su un file. Questa azione preferita è collegata a un verbo, ad esempio Open, che corrisponde all'azione.
@@ -29,7 +31,7 @@ L'associazione di un'estensione di file a un'applicazione in genere presenta un'
 
 - Modifica
 
-- Esegui
+- Riproduci
 
 - Stampa
 
@@ -106,10 +108,10 @@ L'associazione di un'estensione di file a un'applicazione in genere presenta un'
 ```
 
 ## <a name="set-the-default-verb"></a>Imposta il verbo predefinito
- Il verbo predefinito è l'azione che viene eseguita quando un utente fa doppio clic su un file in Esplora risorse. Il verbo predefinito è il verbo specificato come valore predefinito per la chiave **\Shell contiene \\ *ProgID*del HKEY_CLASSES_ROOT** . Se non viene specificato alcun valore, il verbo predefinito è il primo verbo specificato nell'elenco di chiavi ** \\ \shell contiene*ProgID*HKEY_CLASSES_ROOT** .
+ Il verbo predefinito è l'azione che viene eseguita quando un utente fa doppio clic su un file in Esplora risorse. Il verbo predefinito è il verbo specificato come valore predefinito per la chiave **\Shell contiene \\ *ProgID* del HKEY_CLASSES_ROOT** . Se non viene specificato alcun valore, il verbo predefinito è il primo verbo specificato nell'elenco di chiavi **\\ \shell contiene *ProgID* HKEY_CLASSES_ROOT** .
 
 > [!NOTE]
 > Se si prevede di modificare il verbo predefinito per un'estensione in una distribuzione side-by-Side, considerare l'effetto sull'installazione e la rimozione. Durante l'installazione, il valore predefinito originale viene sovrascritto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gestire le associazioni di file affiancati](../extensibility/managing-side-by-side-file-associations.md)

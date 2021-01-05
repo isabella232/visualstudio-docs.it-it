@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d743749ebf1c31c25345c89922fee2434c3284bd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49da1f46ee5e182741d3aaa56432faac39bfe0f1
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386732"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833286"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Come far funzionare il codice in Visual Studio
 
@@ -44,7 +44,7 @@ A meno che non siano state apportate modifiche al codice compilato correttamente
 
 ![Output ed elenco di errori di Visual Studio](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-Fare clic sulla riga di errore nella finestra **Elenco errori** per passare alla riga in cui si è verificato l'errore. (In alternativa, attivare i numeri di riga premendo **CTRL** + **D**, digitando i **numeri di riga**e quindi scegliendo **attiva o disattiva numeri di riga** dai risultati. Questo è il modo più rapido per passare alla finestra di dialogo **Opzioni** in cui è possibile attivare i numeri di riga.)
+Fare clic sulla riga di errore nella finestra **Elenco errori** per passare alla riga in cui si è verificato l'errore. (In alternativa, attivare i numeri di riga premendo **CTRL** + **D**, digitando i **numeri di riga** e quindi scegliendo **attiva o disattiva numeri di riga** dai risultati. Questo è il modo più rapido per passare alla finestra di dialogo **Opzioni** in cui è possibile attivare i numeri di riga.)
 
 ![Editor di Visual Studio con numeri di riga](../ide/media/vs_ide_gs_debug_line_numbers.png)
 
@@ -146,13 +146,13 @@ Per altre informazioni sull'uso dei punti di interruzione, vedere [Uso di punti 
 
 Quando il codice in esecuzione incontra un punto di interruzione e viene sospeso, la riga di codice contrassegnata in giallo, ovvero l'istruzione corrente, non è ancora stata eseguita. A questo punto, è possibile eseguire l'istruzione corrente ed esaminare i valori modificati. È possibile usare diversi comandi di *esecuzione* per eseguire il codice nel debugger. Se il codice contrassegnato è una chiamata a un metodo, è possibile eseguire le istruzioni premendo **F11**. È anche possibile eseguire l' *istruzione/* routine della riga di codice premendo **F10**. Per informazioni su altri comandi e informazioni dettagliate su come esaminare il codice, leggere [Spostarsi nel codice con il debugger](../debugger/navigating-through-code-with-the-debugger.md).
 
-![Verifica del valore di runtime di Visual Studio](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
+![Screenshot della finestra di Visual Studio Code. Un punto rosso nella barra di navigazione a sinistra indica un punto di interruzione nella riga di codice contrassegnata in giallo.](../ide/media/vs_ide_gs_debug_hit_breakpoint.png)
 
 Nell'illustrazione precedente, è possibile spostarsi in un'istruzione con il debugger premendo **F10** o **F11**. In questo caso non si verifica una chiamata al metodo e pertanto il risultato dei due comandi è lo stesso.
 
 Quando il debugger viene sospeso, è possibile esaminare le variabili e gli stack di chiamate per individuare il problema. I valori sono compresi negli intervalli previsti? L'ordine con cui si stanno eseguendo le chiamate è corretto?
 
-![Verifica del valore di runtime di Visual Studio](../ide/media/vs_ide_gs_debug_inspect_value.png)
+![Screenshot della finestra di Visual Studio Code. Alla riga di codice contrassegnata in giallo, viene selezionata una variabile e un elenco a discesa Visualizza il valore corrente e i riferimenti.](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
 Passare il mouse su una variabile per visualizzarne il valore corrente e i riferimenti. Se viene visualizzato un valore non previsto, è probabile che ci sia un bug nel codice precedente o chiamante. Per i dettagli sul debug, [leggere altre informazioni ](../debugger/debugger-feature-tour.md) sull'uso del debugger.
 
@@ -166,7 +166,7 @@ Per iniziare, vedere [Generate unit tests for your code with IntelliTest](../tes
 
 Per altre informazioni sugli unit test in Visual Studio e su come usarli per creare codice di qualità migliore, vedere [Unit Test Basics](../test/unit-test-basics.md) (Nozioni di base sugli unit test).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Altre informazioni sull'uso del debugger](../debugger/index.yml)

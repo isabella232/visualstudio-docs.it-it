@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 4e474cc96e4b950aee2f509a8e2879b0c31f912a
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 27002d9360d36330249167b2cc8b75b7cd832135
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350722"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815633"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Eseguire la pubblicazione di un'app ASP.NET Core nel Servizio app in Linux con Visual Studio
 
@@ -42,7 +42,7 @@ Questo articolo descrive come usare lo strumento **Pubblica** per una distribuzi
 
     ![Scegliere la destinazione di pubblicazione](../deployment/media/quickstart-publish-azure-new.png)
 
-1. Selezionare **app Azure Service (Linux)** e **Next (avanti** ).
+1. Selezionare **app Azure Service (Linux)** e **Next (avanti**).
 
     ![Scegliere app Azure servizio in Linux](../deployment/media/quickstart-publish-linux-select-azure-service.png)
 
@@ -50,13 +50,13 @@ Questo articolo descrive come usare lo strumento **Pubblica** per una distribuzi
 
     ![Collegamento per creare una nuova istanza del servizio app Azure](../deployment/media/quickstart-publish-linux-create-new-link.png)
 
-1. Nella finestra di dialogo **Crea servizio app Azure (Linux)** vengono popolati i campi **nome app** , **gruppo di risorse** e **piano di servizio app** . È possibile mantenere questi nomi o modificarli. Quando si è pronti, selezionare **Crea**.
+1. Nella finestra di dialogo **Crea servizio app Azure (Linux)** vengono popolati i campi **nome app**, **gruppo di risorse** e **piano di servizio app** . È possibile mantenere questi nomi o modificarli. Quando si è pronti, selezionare **Crea**.
 
-    ![Scegliere app Azure servizio](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
+    ![Screenshot della finestra di dialogo Crea servizio app Azure (Linux) con i campi nome, sottoscrizione, gruppo di risorse e piano di hosting popolati.](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
 
 1. Nella finestra di dialogo **pubblica** l'istanza appena creata è stata selezionata automaticamente. Quando si è pronti, fare clic su **fine**.
 
-    ![Scegliere app Azure servizio](../deployment/media/quickstart-publish-linux-select-instance.png)
+    ![Screenshot della finestra di dialogo pubblica con il servizio MyASpCoreWebAppOnAzure appena creato selezionato come servizio app per la pubblicazione.](../deployment/media/quickstart-publish-linux-select-instance.png)
 
 1. Selezionare **Pubblica**. Visual Studio distribuisce l'app al Servizio app di Azure e l'app Web viene caricata nel browser. Nel riquadro **Pubblica** delle proprietà del progetto viene visualizzato l'URL del sito con altri dettagli.
 
@@ -67,7 +67,7 @@ Questo articolo descrive come usare lo strumento **Pubblica** per una distribuzi
 Nei passaggi precedenti sono state create risorse di Azure in un gruppo di risorse. Se non si prevede di aver bisogno di queste risorse in futuro, è possibile eliminarle eliminando il gruppo di risorse.
 Dal menu a sinistra nel portale di Azure scegliere **Gruppi di risorse** e quindi selezionare **myResourceGroup**.
 Nella pagina del gruppo di risorse assicurarsi che le risorse elencate siano quelle da eliminare.
-Selezionare **Elimina** , digitare **myResourceGroup** nella casella di testo e quindi selezionare **Elimina**.
+Selezionare **Elimina**, digitare **myResourceGroup** nella casella di testo e quindi selezionare **Elimina**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

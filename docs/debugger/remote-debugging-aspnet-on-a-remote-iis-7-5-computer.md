@@ -1,5 +1,6 @@
 ---
 title: Eseguire il debug remoto di ASP.NET in un computer IIS
+description: Informazioni su come configurare e configurare un'applicazione ASP.NET MVC 4.5.2 di Visual Studio, distribuirla in IIS e alleghire il debugger remoto da Visual Studio.
 ms.custom:
 - remotedebugging
 - seodec18
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: cd2b787fe546b9c53332fcdc548d3da829759755
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a3520220da15ef771c8cecbd7962e4448727910
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173915"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815711"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Eseguire il debug remoto di ASP.NET in un computer IIS remoto
 Per eseguire il debug di un'applicazione ASP.NET distribuita in IIS, installare ed eseguire Remote Tools nel computer in cui è stata distribuita l'app e quindi connettersi all'app in esecuzione da Visual Studio.
@@ -91,7 +92,7 @@ Per informazioni più dettagliate sull'installazione di ASP.NET in IIS, vedere [
 
 1. Usare l'installazione guidata piattaforma Web (WebPI) per installare ASP.NET 4,5 (dal nodo del server in Windows Server 2012 R2, scegliere **Ottieni nuovi componenti della piattaforma Web** e quindi cercare ASP.NET)
 
-    ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg_iis_aspnet_45.png "RemoteDBG_IIS_AspNet_45")
+    ![Screenshot dell'installazione guidata piattaforma Web 5,0 che mostra i risultati della ricerca per asp.net con il componente della piattaforma Web IIS: ASP.NET 4,5 con cerchio in rosso.](../debugger/media/remotedbg_iis_aspnet_45.png)
 
     > [!NOTE]
     > Se si usa Windows Server 2008 R2, installare ASP.NET 4 usando invece questo comando:
@@ -148,15 +149,15 @@ Quando la distribuzione è completata, l'app viene avviata automaticamente. Se l
 
 3. In **connessioni** nel riquadro sinistro passare a **siti**.
 
-4. Selezionare il **sito Web predefinito**, scegliere **impostazioni di base**e impostare il **percorso fisico** su **C:\publish**.
+4. Selezionare il **sito Web predefinito**, scegliere **impostazioni di base** e impostare il **percorso fisico** su **C:\publish**.
 
 5. Fare clic con il pulsante destro del mouse sul nodo **Sito Web predefinito** e scegliere **Aggiungi applicazione**.
 
 6. Impostare il campo **alias** su **MyASPApp**, accettare il pool di applicazioni predefinito (**DefaultAppPool**) e impostare il **percorso fisico** su **C:\publish**.
 
-7. In **connessioni**selezionare **pool di applicazioni**. Aprire **DefaultAppPool** e impostare il campo pool di applicazioni su **ASP.NET v 4.0** (ASP.NET 4,5 non è un'opzione per il pool di applicazioni).
+7. In **connessioni** selezionare **pool di applicazioni**. Aprire **DefaultAppPool** e impostare il campo pool di applicazioni su **ASP.NET v 4.0** (ASP.NET 4,5 non è un'opzione per il pool di applicazioni).
 
-8. Con il sito selezionato in Gestione IIS, scegliere **modifica autorizzazioni**e verificare che IUSR, IIS_IUSRS o l'utente configurato per il pool di applicazioni sia un utente autorizzato con lettura & Esegui diritti. Se nessuno di questi utenti è presente, aggiungere IUSR come utente con i diritti di esecuzione Read &.
+8. Con il sito selezionato in Gestione IIS, scegliere **modifica autorizzazioni** e verificare che IUSR, IIS_IUSRS o l'utente configurato per il pool di applicazioni sia un utente autorizzato con lettura & Esegui diritti. Se nessuno di questi utenti è presente, aggiungere IUSR come utente con i diritti di esecuzione Read &.
 
 ### <a name="publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>Pubblicare e distribuire l'app pubblicando in una cartella locale da Visual Studio
 
@@ -204,13 +205,13 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
 
 3. Impostare il campo qualificatore su **\<remote computer name>** e premere **invio**.
 
-    Verificare che in Visual Studio venga aggiunta la porta richiesta al nome del computer, che viene visualizzato nel formato: ** \<remote computer name> :p Ort**
+    Verificare che in Visual Studio venga aggiunta la porta richiesta al nome del computer, che viene visualizzato nel formato: **\<remote computer name> :p Ort**
 
     ::: moniker range=">=vs-2019"
-    In Visual Studio 2019 dovrebbe essere visualizzato ** \<remote computer name> : 4024**
+    In Visual Studio 2019 dovrebbe essere visualizzato **\<remote computer name> : 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    In Visual Studio 2017 dovrebbe essere visualizzato ** \<remote computer name> : 4022**
+    In Visual Studio 2017 dovrebbe essere visualizzato **\<remote computer name> : 4022**
     ::: moniker-end
     La porta è obbligatoria. Se il numero di porta non è visibile, aggiungerlo manualmente.
 
@@ -234,7 +235,7 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
 
 7. Fare clic su **Connetti**
 
-8. Aprire il sito Web del computer remoto. In un browser passare a **http:// \<remote computer name> **.
+8. Aprire il sito Web del computer remoto. In un browser passare a **http:// \<remote computer name>**.
 
     Verrà visualizzata la pagina Web ASP.NET.
 9. Nell'applicazione ASP.NET in esecuzione fare clic sul collegamento alla pagina **About** .
@@ -261,7 +262,7 @@ Porte obbligatorie:
 
 1. Per aprire una porta in Windows Server, aprire il menu **Start** , cercare **Windows Firewall con sicurezza avanzata**.
 
-2. Scegliere quindi **regole in ingresso > nuova regola > porta**. Scegliere **Avanti** e in **porte locali specifiche**, immettere il numero di porta, fare clic su **Avanti**, quindi **consentire la connessione**, fare clic su avanti e aggiungere il nome (**IIS**, **distribuzione Web**o **msvsmon**) per la regola in ingresso.
+2. Scegliere quindi **regole in ingresso > nuova regola > porta**. Scegliere **Avanti** e in **porte locali specifiche**, immettere il numero di porta, fare clic su **Avanti**, quindi **consentire la connessione**, fare clic su avanti e aggiungere il nome (**IIS**, **distribuzione Web** o **msvsmon**) per la regola in ingresso.
 
     Per altri dettagli sulla configurazione di Windows Firewall, vedere [configurare il Windows Firewall per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
 

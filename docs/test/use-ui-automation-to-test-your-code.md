@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3da0a3868b410fbb78ed98265eb8f0920e6482b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 68d6d2823a4944ec74aaa477fb7b3913943a7296
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330108"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833273"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Usare test codificati dell'interfaccia utente per il testing del codice
 
@@ -217,7 +217,7 @@ Se il controllo che si desidera selezionare perde lo stato attivo e scompare qua
 
 A volte, durante l'aggiunta di controlli e la verifica delle relative proprietà, può essere necessario usare la tastiera. Ad esempio, quando si prova a registrare un test codificato dell'interfaccia utente che usa un controllo del menu di scelta rapida, l'elenco delle voci di menu nel controllo perderà lo stato attivo e non sarà visualizzato quando si cercherà di selezionare lo strumento **Aggiungi asserzioni** dal **Generatore di test codificati dell'interfaccia utente**. Questa situazione è illustrata nella figura seguente in cui il menu di scelta rapida in Internet Explorer perde lo stato attivo e scompare quando si cerca di selezionarlo con lo strumento **Aggiungi asserzioni**.
 
-![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
+![Screenshot che illustra lo strumento Aggiungi asserzioni nel generatore di test codificati dell'interfaccia utente sovrapposto al menu di scelta rapida da Internet Explorer.](../test/media/codeduitest_selectcontrolkeyboard.png)
 
 Per usare la tastiera per selezionare un controllo dell'interfaccia utente, passare il puntatore del mouse sul controllo. Tenere premuti contemporaneamente **CTRL** e **I**. Rilasciare i tasti. Il controllo viene registrato dal **Generatore di test codificati dell'interfaccia utente**.
 
@@ -229,7 +229,7 @@ In alcuni casi un particolare controllo usato in un test codificato dell'interfa
 
 Quando si esegue il test codificato dell'interfaccia utente, passare il puntatore sul controllo. Quindi, tenere contemporaneamente premuti **CTRL**, **MAIUSC** e **R**. Rilasciare i tasti. Il **Generatore di test codificati dell'interfaccia utente** registrerà un evento di passaggio del mouse.
 
-![CodedUI&#95;Hover](../test/media/codedui_hover.png)
+![Screenshot della barra dei comandi del generatore di test codificati dell'interfaccia utente con l'icona di sospensione selezionata. Una finestra descrizione comando Mostra la posizione di un evento di passaggio del mouse.](../test/media/codedui_hover.png)
 
 Dopo aver generato il metodo di test, al file *UIMap.Designer.cs* verrà aggiunto codice simile a quello riportato nell'esempio seguente:
 
@@ -283,7 +283,7 @@ Dopo aver creato il test codificato dell'interfaccia utente, è possibile modifi
 
 - Usare il **Generatore di test codificati dell'interfaccia utente** per aggiungere altri controlli e la convalida ai test. Vedere la sezione [Convalidare le proprietà dei controlli dell'interfaccia utente](#validate-the-properties-of-ui-controls) in questo argomento.
 
-- L'**editor di test codificati dell'interfaccia utente** consente di modificare facilmente i test. Con l'**editor di test codificati dell'interfaccia utente** è possibile individuare, visualizzare e modificare i metodi di test. È anche possibile modificare le azioni dell'interfaccia utente e i relativi controlli associati nella mappa di controllo dell'interfaccia utente. Per altre informazioni, vedere [Modificare test codificati dell'interfaccia utente usando l'Editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+- L'**editor di test codificati dell'interfaccia utente** consente di modificare facilmente i test. Con l'**editor di test codificati dell'interfaccia utente** è possibile individuare, visualizzare e modificare i metodi di test. È anche possibile modificare le azioni dell'interfaccia utente e i relativi controlli associati nella mappa di controllo dell'interfaccia utente. Per altre informazioni, vedere [modificare i test codificati dell'interfaccia utente usando l'editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 - **Editor di codice:**
 

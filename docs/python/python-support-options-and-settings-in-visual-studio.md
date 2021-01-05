@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 99274d3884d002f6dee29a632f8a7c08ac90a56f
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: fc6260bdac6f4313daddc1ca59f8541bc4fda7c8
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211128"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761303"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opzioni di Python in Visual Studio
 
@@ -35,7 +35,7 @@ Per visualizzare le opzioni di Python, usare il comando di menu **strumenti**  >
 ![Finestra di dialogo Opzioni di Python, scheda Generale](media/options-general-2019.png)
 ::: moniker-end
 
-Sono disponibili anche altre opzioni specifiche di Python nella scheda avanzate di Python dell' **editor di testo**  >  **Python**  >  **Advanced** e nella **Environment**  >  scheda**tipi di carattere e colori** all'interno del gruppo **editor di testo** .
+Sono disponibili anche altre opzioni specifiche di Python nella scheda avanzate di Python dell' **editor di testo**  >    >   e nella   >  scheda **tipi di carattere e colori** all'interno del gruppo **editor di testo** .
 
 > [!Note]
 > Il gruppo **Sperimentale** contiene le opzioni per le funzionalità che sono ancora in fase di sviluppo e che non sono qui documentate. Sono spesso discusse in post nel [blog Python engineering at Microsoft](https://devblogs.microsoft.com/python/) (Progettazione Python in Microsoft).
@@ -46,15 +46,15 @@ Sono disponibili anche altre opzioni specifiche di Python nella scheda avanzate 
 
 | Opzione | Predefinito | Descrizione |
 | --- | --- | --- |
-| **Mostra la finestra di output durante la creazione degli ambienti virtuali**| Attivato | Deselezionare per impedire che venga visualizzata la **finestra di output**. |
-| **Mostra la finestra di output durante l'installazione o la rimozione di pacchetti** | Attivato | Deselezionare per impedire che venga visualizzata la **finestra di output**. |
-| **Mostra la barra di notifica per la creazione di ambienti** | Attivato | *Solo Visual Studio 2019.* Quando questa opzione è impostata e l'utente apre un progetto che contiene un file *requirements.txt* oppure *environment.yml*, Visual Studio visualizza una barra informazioni con i suggerimenti per creare rispettivamente un ambiente virtuale o un ambiente conda, invece di usare l'ambiente globale predefinito. |
-| **Mostra la barra di notifica per l'installazione di pacchetti** | Attivato | *Solo Visual Studio 2019.* Quando questa opzione è impostata e l'utente apre un progetto che contiene un file *requirements.txt* (e non usa l'ambiente globale predefinito) Visual Studio confronta tali requisiti con i pacchetti installati nell'ambiente corrente. Se mancano pacchetti, Visual Studio visualizza un prompt per installare tali dipendenze. |
-| **Esegui sempre strumenti di gestione pacchetti come amministratore** | Disattivato | Eleva sempre i privilegi per `pip install` e operazioni di gestione pacchetti simili per tutti gli ambienti. Durante l'installazione dei pacchetti, Visual Studio richiede i privilegi di amministratore se l'ambiente si trova in un'area protetta del file system, come *c:\Programmi*. In questo prompt è possibile scegliere di elevare sempre i privilegi del comando di installazione solo per tale specifico ambiente. Vedere la [scheda Pacchetti](python-environments-window-tab-reference.md#packages-tab). |
-| **Genera automaticamente il database di completamento al primo utilizzo** | Attivato | *Si applica a Visual Studio 2017 versione 15.5 e versioni precedenti quando si usa un database di IntelliSense.* Assegna la priorità del completamento del database per una libreria, quando si scrive un codice che ne fa uso. Per altre informazioni, vedere [Scheda Intellisense](python-environments-window-tab-reference.md?view=vs-2017&preserve-view=true#intellisense-tab). |
-| **Ignora variabili PYTHONPATH a livello di sistema** | Attivato | PYTHONPATH viene ignorato per impostazione predefinita perché Visual Studio offre un mezzo più diretto per specificare i percorsi di ricerca negli ambienti e nei progetti. Per altri dettagli, vedere [Percorsi di ricerca](search-paths.md). |
-| **Aggiorna percorsi di ricerca quando vengono aggiunti file collegati** | Attivato | Se impostata, l'aggiunta di un [file collegato](managing-python-projects-in-visual-studio.md#linked-files) a un progetto aggiorna i [percorsi di ricerca](search-paths.md) in modo che IntelliSense possa includere il contenuto della cartella del file collegato nel relativo database di completamento. Deselezionare questa opzione per escludere tale contenuto dal database di completamento. |
-| **Avvisa quando non è possibile trovare il modulo importato** | Attivato | Deselezionare questa opzione per non visualizzare gli avvisi quando si è certi che un modulo importato non è attualmente disponibile, ma non influisce comunque sul funzionamento del codice. |
+| **Mostra la finestra di output durante la creazione degli ambienti virtuali**| On | Deselezionare per impedire che venga visualizzata la **finestra di output**. |
+| **Mostra la finestra di output durante l'installazione o la rimozione di pacchetti** | On | Deselezionare per impedire che venga visualizzata la **finestra di output**. |
+| **Mostra la barra di notifica per la creazione di ambienti** | On | *Solo Visual Studio 2019.* Quando questa opzione è impostata e l'utente apre un progetto che contiene un file *requirements.txt* oppure *environment.yml*, Visual Studio visualizza una barra informazioni con i suggerimenti per creare rispettivamente un ambiente virtuale o un ambiente conda, invece di usare l'ambiente globale predefinito. |
+| **Mostra la barra di notifica per l'installazione di pacchetti** | On | *Solo Visual Studio 2019.* Quando questa opzione è impostata e l'utente apre un progetto che contiene un file *requirements.txt* (e non usa l'ambiente globale predefinito) Visual Studio confronta tali requisiti con i pacchetti installati nell'ambiente corrente. Se mancano pacchetti, Visual Studio visualizza un prompt per installare tali dipendenze. |
+| **Esegui sempre strumenti di gestione pacchetti come amministratore** | Off | Eleva sempre i privilegi per `pip install` e operazioni di gestione pacchetti simili per tutti gli ambienti. Durante l'installazione dei pacchetti, Visual Studio richiede i privilegi di amministratore se l'ambiente si trova in un'area protetta del file system, come *c:\Programmi*. In questo prompt è possibile scegliere di elevare sempre i privilegi del comando di installazione solo per tale specifico ambiente. Vedere la [scheda Pacchetti](python-environments-window-tab-reference.md#packages-tab). |
+| **Genera automaticamente il database di completamento al primo utilizzo** | On | *Si applica a Visual Studio 2017 versione 15.5 e versioni precedenti quando si usa un database di IntelliSense.* Assegna la priorità del completamento del database per una libreria, quando si scrive un codice che ne fa uso. Per altre informazioni, vedere [Scheda Intellisense](python-environments-window-tab-reference.md?view=vs-2017&preserve-view=true#intellisense-tab). |
+| **Ignora variabili PYTHONPATH a livello di sistema** | On | PYTHONPATH viene ignorato per impostazione predefinita perché Visual Studio offre un mezzo più diretto per specificare i percorsi di ricerca negli ambienti e nei progetti. Per altri dettagli, vedere [Percorsi di ricerca](search-paths.md). |
+| **Aggiorna percorsi di ricerca quando vengono aggiunti file collegati** | On | Se impostata, l'aggiunta di un [file collegato](managing-python-projects-in-visual-studio.md#linked-files) a un progetto aggiorna i [percorsi di ricerca](search-paths.md) in modo che IntelliSense possa includere il contenuto della cartella del file collegato nel relativo database di completamento. Deselezionare questa opzione per escludere tale contenuto dal database di completamento. |
+| **Avvisa quando non è possibile trovare il modulo importato** | On | Deselezionare questa opzione per non visualizzare gli avvisi quando si è certi che un modulo importato non è attualmente disponibile, ma non influisce comunque sul funzionamento del codice. |
 | **Segnala rientro incoerente come** | **Avvisi** | Poiché l'interprete di Python dipende fortemente da un rientro corretto per determinare l'ambito, Visual Studio per impostazione predefinita genera dei messaggi di avviso quando rileva rientri incoerenti che potrebbero indicare errori di codifica. Per maggiore precisione, impostare su **Errori**, opzione che provoca la chiusura del programma in casi di questo tipo. Per disabilitare completamente questo comportamento, selezionare **No**. |
 | **Controlla disponibilità di sondaggi/novità** | **Una volta alla settimana** | *Visual Studio 2017 e versioni precedenti.* Imposta la frequenza con cui si consente a Visual Studio di aprire una finestra contenente una pagina web con sondaggi e notizie relativi a Python, qualora disponibili. Le opzioni sono **Mai**, **Una volta al giorno**, **Una volta alla settimana** e **Una volta al mese**. |
 | Pulsante **Ripristina tutte le finestre di dialogo nascoste in modo permanente** | n/d | Diverse finestre di dialogo presentano opzioni quali **Non visualizzare più questo messaggio**. Usare questo pulsante per cancellare tali opzioni e visualizzare nuovamente le finestre di dialogo. |
@@ -75,7 +75,7 @@ Sono disponibili anche altre opzioni specifiche di Python nella scheda avanzate 
 | --- | --- | --- |
 | **Percorso dell'eseguibile di Conda** | (vuoto) | Specifica un percorso esatto per l'eseguibile *conda.exe* anziché basarsi sull'installazione di Miniconda predefinita inclusa nel carico di lavoro di Python. Se si specifica un altro percorso in questa posizione, avrà la precedenza sull'installazione predefinita e su eventuali altri eseguibili conda.exe specificati nel Registro di sistema. Può essere utile modificare questa impostazione se si installa manualmente una versione più recente di Anaconda o Miniconda oppure si vuole usare una distribuzione a 32-bit piuttosto che la distribuzione predefinita a 64 bit. |
 
-![Finestra di dialogo Opzioni Python, scheda Server di linguaggio](media/options-conda.png)
+![Screenshot della finestra di dialogo Opzioni di Strumenti di Visual Studio con conda selezionato nelle opzioni di Python e il campo percorso eseguibile conda indicato nel riquadro di destra.](media/options-conda.png)
 
 ::: moniker-end
 
@@ -85,13 +85,13 @@ Sono disponibili anche altre opzioni specifiche di Python nella scheda avanzate 
 
 | Opzione | Predefinito | Descrizione |
 | --- | --- | --- |
-| **Chiedi conferma prima dell'esecuzione quando sono presenti errori** | Attivato | Se impostato, viene chiesto di confermare che si desidera eseguire il codice contenente errori. Deselezionare questa opzione per disabilitare l'avviso. |
+| **Chiedi conferma prima dell'esecuzione quando sono presenti errori** | On | Se impostato, viene chiesto di confermare che si desidera eseguire il codice contenente errori. Deselezionare questa opzione per disabilitare l'avviso. |
 | **Attendi input quando il processo viene chiuso in modo anomalo**<br/><br/>**Attendi input quando il processo viene chiuso normalmente** | Attivato (per entrambi) | Un programma Python avviato da Visual Studio viene eseguito nella propria finestra della console. Per impostazione predefinita, la finestra attende che venga premuto un tasto prima di chiudere il programma, indipendentemente dalla modalità con cui viene chiuso il programma. Per rimuovere il prompt e chiudere la finestra automaticamente, deselezionare una o entrambe le opzioni. |
-| **Output del programma tee nella finestra di output del debug** | Attivato | Visualizza l'output del programma in una finestra della console separata e nella **finestra di output** di Visual Studio. Deselezionare questa opzione per visualizzare l'output solo nella finestra della console separata. |
-| **Interrompi in caso di eccezione SystemExit con codice di uscita zero** | Disattivato | Se l'opzione è selezionata, il debugger viene arrestato su questa eccezione. Se è deselezionata, il debugger viene chiuso senza interruzioni. |
-| **Abilita il debug della libreria standard Python** | Disattivato | Consente di eseguire il codice sorgente della libreria standard durante il debug, ma aumenta il tempo necessario all'avvio del debugger.|
-| **Mostra il valore restituito della funzione** | Attivato | *Solo Visual Studio 2019.* Consente di visualizzare i valori restituiti della funzione nella finestra **Variabili locali** e quindi di eseguire una chiamata di funzione nel debugger (F10) |
-| **Usa debugger legacy** | Disattivato | *Solo Visual Studio 2019.* Indica a Visual Studio di usare il debugger legacy per impostazione predefinita. Per altre informazioni, vedere [Debug - Usare il debugger legacy](debugging-python-in-visual-studio.md#use-the-legacy-debugger). |
+| **Output del programma tee nella finestra di output del debug** | On | Visualizza l'output del programma in una finestra della console separata e nella **finestra di output** di Visual Studio. Deselezionare questa opzione per visualizzare l'output solo nella finestra della console separata. |
+| **Interrompi in caso di eccezione SystemExit con codice di uscita zero** | Off | Se l'opzione è selezionata, il debugger viene arrestato su questa eccezione. Se è deselezionata, il debugger viene chiuso senza interruzioni. |
+| **Abilita il debug della libreria standard Python** | Off | Consente di eseguire il codice sorgente della libreria standard durante il debug, ma aumenta il tempo necessario all'avvio del debugger.|
+| **Mostra il valore restituito della funzione** | On | *Solo Visual Studio 2019.* Consente di visualizzare i valori restituiti della funzione nella finestra **Variabili locali** e quindi di eseguire una chiamata di funzione nel debugger (F10) |
+| **Usa debugger legacy** | Off | *Solo Visual Studio 2019.* Indica a Visual Studio di usare il debugger legacy per impostazione predefinita. Per altre informazioni, vedere [Debug - Usare il debugger legacy](debugging-python-in-visual-studio.md#use-the-legacy-debugger). |
 
 ::: moniker range="vs-2017"
 ![Finestra di dialogo Opzioni di Python, scheda Debug](media/options-debugging.png)
@@ -106,7 +106,7 @@ Sono disponibili anche altre opzioni specifiche di Python nella scheda avanzate 
 
 | Opzione | Predefinito | Descrizione |
 | --- | --- | --- |
-| **Includi log di analisi** | Attivato | Include log dettagliati relativi all'analisi di ambienti Python installati durante il salvataggio della diagnostica in un file o la copia negli Appunti tramite i pulsanti. Questa opzione può aumentare notevolmente le dimensioni del file generato, ma spesso è necessaria per diagnosticare problemi di IntelliSense. |
+| **Includi log di analisi** | On | Include log dettagliati relativi all'analisi di ambienti Python installati durante il salvataggio della diagnostica in un file o la copia negli Appunti tramite i pulsanti. Questa opzione può aumentare notevolmente le dimensioni del file generato, ma spesso è necessaria per diagnosticare problemi di IntelliSense. |
 | Pulsante **Salva diagnostica nel file** | n/d | Richiede un nome di file, quindi salva il log in un file di testo. |
 | Pulsante **copia diagnostica negli Appunti** | n/d | Inserisce l'intero contenuto del log negli Appunti. Questa operazione potrebbe richiedere tempo a seconda delle dimensioni del log. |
 
@@ -119,9 +119,9 @@ Sono disponibili anche altre opzioni specifiche di Python nella scheda avanzate 
 | Opzione | Predefinito | Descrizione |
 | --- | --- | --- |
 | **Script** | n/d | Specifica una cartella generale per gli script di avvio valida per le finestre **interattive** per tutti gli ambienti. Vedere [script di avvio](python-environments-window-tab-reference.md#startup-scripts). Si noti, tuttavia, che questa funzionalità non è attualmente supportata. |
-| **Spostarsi nella cronologia con le frecce su/giù** | Attivato | Usare i tasti freccia per spostarsi nella cronologia nella finestra **interattiva**. Deselezionare questa impostazione per usare i tasti freccia per spostarsi invece all'interno dell'output della finestra **interattiva**. |
+| **Spostarsi nella cronologia con le frecce su/giù** | On | Usare i tasti freccia per spostarsi nella cronologia nella finestra **interattiva**. Deselezionare questa impostazione per usare i tasti freccia per spostarsi invece all'interno dell'output della finestra **interattiva**. |
 | **Modalità di completamento** | **Valuta solo le espressioni senza chiamate di funzione** | Il processo di determinazione dei membri disponibili su un'espressione nella finestra **interattiva** può richiedere la valutazione dell'espressione incompleta corrente, con la conseguente chiamata ripetuta di effetti collaterali o funzioni. L'impostazione predefinita, **Valuta solo le espressioni senza chiamate di funzione** esclude le espressioni che sembrano chiamare una funzione, ma valuta altre espressioni. Ad esempio, valuta `a.b` ma non `a().b`.  **Non valutare mai le espressioni** evita tutti gli effetti collaterali e usa solo il motore di IntelliSense normale per i suggerimenti. **Valuta tutte le espressioni** valuta l'espressione completa per ottenere suggerimenti, indipendentemente dagli effetti collaterali. |
-| **Nascondi suggerimenti analisi statica** | Disattivato | Se è impostata questa opzione, vengono visualizzati solo i suggerimenti ottenuti dalla valutazione dell'espressione. Se è associata alla **modalità di completamento****Non valutare mai le espressioni**, non viene visualizzato alcun completamento utile nella finestra **interattiva**. |
+| **Nascondi suggerimenti analisi statica** | Off | Se è impostata questa opzione, vengono visualizzati solo i suggerimenti ottenuti dalla valutazione dell'espressione. Se è associata alla **modalità di completamento****Non valutare mai le espressioni**, non viene visualizzato alcun completamento utile nella finestra **interattiva**. |
 
 ![Finestra di dialogo delle opzioni di Python, scheda Finestre interattive](media/options-interactive-windows.png)
 
@@ -132,10 +132,10 @@ Sono disponibili anche altre opzioni specifiche di Python nella scheda avanzate 
 
 | Opzione | Predefinito | Descrizione |
 | --- | --- | --- |
-| **Disabilita completamenti da Typeshed** | Disattivato | IntelliSense per Visual Studio usa in genere una versione in bundle di Typeshed (un set di file con estensione *pyi*) per trovare suggerimenti relativi al tipo per la libreria standard e le librerie di terze parti per Python 2 e Python 3. Impostando questa opzione viene disabilitato il comportamento di Typeshed in bundle. |
+| **Disabilita completamenti da Typeshed** | Off | IntelliSense per Visual Studio usa in genere una versione in bundle di Typeshed (un set di file con estensione *pyi*) per trovare suggerimenti relativi al tipo per la libreria standard e le librerie di terze parti per Python 2 e Python 3. Impostando questa opzione viene disabilitato il comportamento di Typeshed in bundle. |
 | **Percorso personalizzato di Typeshed** | (vuoto) | Se si imposta questa opzione, Visual Studio usa i file Typeshed in questo percorso invece della versione in bundle. L'opzione viene ignorata se si imposta **Disabilita completamenti da Typeshed**. |
 
-![Finestra di dialogo Opzioni Python, scheda Server di linguaggio](media/options-language-server.png)
+![Screenshot della finestra di dialogo Opzioni di Strumenti di Visual Studio con il server di lingua selezionato nelle opzioni di Python e le opzioni del server di lingua visualizzate nel riquadro destro.](media/options-language-server.png)
 
 ::: moniker-end
 
@@ -147,25 +147,25 @@ Sono disponibili anche altre opzioni specifiche di Python nella scheda avanzate 
 
 | Opzione | Predefinito | Descrizione |
 | --- | --- | --- |
-| **Il completamento dei membri visualizza l'intersezione dei membri** | Disattivato | Se l'opzione è impostata, vengono visualizzati solo i completamenti supportati da tutti i tipi possibili. |
-| **Filtra elenco in base alla stringa di ricerca** | Attivato | Applica il filtro dei suggerimenti di completamento durante la digitazione (l'opzione è selezionata per impostazione predefinita). |
-| **Mostra automaticamente i completamenti per tutti gli identificatori** | Attivato | Deselezionare questa opzione per disabilitare i completamenti sia nell'editor che nelle finestre **interattive**. |
+| **Il completamento dei membri visualizza l'intersezione dei membri** | Off | Se l'opzione è impostata, vengono visualizzati solo i completamenti supportati da tutti i tipi possibili. |
+| **Filtra elenco in base alla stringa di ricerca** | On | Applica il filtro dei suggerimenti di completamento durante la digitazione (l'opzione è selezionata per impostazione predefinita). |
+| **Mostra automaticamente i completamenti per tutti gli identificatori** | On | Deselezionare questa opzione per disabilitare i completamenti sia nell'editor che nelle finestre **interattive**. |
 
 ### <a name="selection-in-completion-list"></a>Selezione negli elenchi di completamento
 
 | Opzione | Predefinito | Descrizione |
 | --- | --- | --- |
 | **Commit alla digitazione dei caratteri seguenti** | **{}\[\]().,:; +-*/% &&#124;^ ~ =<> #@\\** | Questi caratteri seguono in genere un identificatore che può essere selezionato da un elenco di completamento, pertanto è consigliabile eseguire il commit del completamento semplicemente digitando un carattere. È possibile rimuovere o aggiungere caratteri specifici all'elenco in base alle esigenze.  |
-| **Immetti completamento corrente dei commit** | Attivato | Quando è impostata, il tasto **invio** sceglie e applica il completamento attualmente selezionato come con i caratteri precedenti, ma ovviamente non è presente alcun carattere per **Enter** , quindi non è possibile accedere direttamente a tale elenco. |
-| **Aggiungi nuova riga quando si preme Invio alla fine della parola digitata** | Disattivato | Per impostazione predefinita, se si digita l'intera parola che viene visualizzata nel popup di completamento e si preme **invio**, si esegue il commit del completamento. Impostando questa opzione, i completamenti vengono sottoposte a commit in modo efficace quando si termina la digitazione dell'identificatore, in modo da **immettere** una nuova riga. |
+| **Immetti completamento corrente dei commit** | On | Quando è impostata, il tasto **invio** sceglie e applica il completamento attualmente selezionato come con i caratteri precedenti, ma ovviamente non è presente alcun carattere per **Enter** , quindi non è possibile accedere direttamente a tale elenco. |
+| **Aggiungi nuova riga quando si preme Invio alla fine della parola digitata** | Off | Per impostazione predefinita, se si digita l'intera parola che viene visualizzata nel popup di completamento e si preme **invio**, si esegue il commit del completamento. Impostando questa opzione, i completamenti vengono sottoposte a commit in modo efficace quando si termina la digitazione dell'identificatore, in modo da **immettere** una nuova riga. |
 
 ### <a name="miscellaneous-options"></a>Opzioni varie
 
 | Opzione | Predefinito | Descrizione |
 | --- | --- | --- |
-| **Attiva modalità struttura all'apertura dei file** | Attivato | Attiva automaticamente la funzionalità di struttura nell'editor di Visual Studio all'apertura di un file di codice Python. |
-| **Paste removed REPL prompts (Incolla prompt REPL rimossi)** | Attivato | Rimuove **>>>** e **..** . dal testo incollato, consentendo il trasferimento semplice del codice dalla finestra **interattiva** all'editor. Deselezionare questa opzione se è necessario conservare tali caratteri provenienti da altre origini. |
-| **Nomi dei colori in base ai tipi** | Attivato | Abilita la colorazione della sintassi nel codice Python. |
+| **Attiva modalità struttura all'apertura dei file** | On | Attiva automaticamente la funzionalità di struttura nell'editor di Visual Studio all'apertura di un file di codice Python. |
+| **Paste removed REPL prompts (Incolla prompt REPL rimossi)** | On | Rimuove **>>>** e **..** . dal testo incollato, consentendo il trasferimento semplice del codice dalla finestra **interattiva** all'editor. Deselezionare questa opzione se è necessario conservare tali caratteri provenienti da altre origini. |
+| **Nomi dei colori in base ai tipi** | On | Abilita la colorazione della sintassi nel codice Python. |
 
 ![Finestra di dialogo delle opzioni dell'editor di Python, scheda avanzate](media/options-editor-advanced.png)
 
@@ -173,6 +173,6 @@ Sono disponibili anche altre opzioni specifiche di Python nella scheda avanzate 
 
 (**Ambiente**  >  Scheda **tipi di carattere e colori** all'interno del gruppo **editor di testo** .
 
-I nomi delle opzioni di Python sono preceduti tutti dal prefisso **Python** e sono autoesplicativi. Il tipo di carattere predefinito per tutti i temi colori di Visual Studio è 10pt Consolas Regular (non grassetto). I colori predefiniti variano a seconda del tema. In genere, si modifica un tipo di carattere o un colore se la leggibilità del testo non è adeguata con le impostazioni predefinite.
+I nomi delle opzioni di Python sono preceduti tutti dal prefisso **Python** e sono autoesplicativi. Il tipo di carattere predefinito per tutti i temi di colore di Visual Studio è 10 PT consola Regular (non grassetto). I colori predefiniti variano a seconda del tema. In genere, si modifica un tipo di carattere o un colore se la leggibilità del testo non è adeguata con le impostazioni predefinite.
 
 ![Opzioni per tipo di carattere e colori di Python](media/options-fonts-and-colors.png)

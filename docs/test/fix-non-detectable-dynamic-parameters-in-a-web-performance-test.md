@@ -12,12 +12,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 713d711847d798c617074d2d620e09f914c1a147
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 9f670c9cf543ae209ebed63ce185fadfbbe253d0
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190233"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815724"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Correggere parametri dinamici non rilevabili in un test delle prestazioni Web
 
@@ -190,13 +190,13 @@ Per illustrare un parametro dinamico sia rilevabile sia non rilevabile, si creer
 
 3. Tornare al Visualizzatore risultati test prestazioni Web e selezionare la pagina *JScriptQuery.aspx* che ha generato l'errore. Quindi, scegliere la scheda Richiesta, verificare che la casella di controllo Mostra dati non elaborati sia deselezionata, scorrere verso il basso e scegliere Ricerca veloce in CustomQueryString.
 
-     ![Usare la ricerca veloce per isolare il parametro dinamico](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
+     ![Screenshot della scheda richiesta nel Visualizzatore risultati testo prestazioni Web. Un parametro QueryString è selezionato e QuickFind è evidenziato in un menu di scelta rapida.](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
 4. Si è a conoscenza dell'editor di test a cui è stato assegnato il valore di CustomQueryString della richiesta *JScriptQuery. aspx* `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` e che la parte dinamica sospetta è "1v0yhyiyr0raa2w4j4pwf5zl". Nell'elenco a discesa Trova rimuovere la parte sospetta della stringa di ricerca. La stringa deve essere "CustomQueryString=jScriptQueryString___".
 
      Ai parametri dinamici sono assegnati i valori in una delle richieste che precede la richiesta che contiene l'errore. Selezionare pertanto la casella di controllo Cerca in alto e scegliere Trova successivo fino a visualizzare la richiesta *Querystring.aspx* precedente evidenziata nel pannello Richiesta. Questo dovrebbe avvenire dopo avere fatto clic su Trova successivo tre volte.
 
-     ![Usare la ricerca veloce per isolare il parametro dinamico](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
+     ![Screenshot del Visualizzatore risultati testo prestazioni Web. Viene selezionata una stringa di query e viene visualizzata una finestra di dialogo di ricerca con SearchUp e trova successivo selezionato.](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
 
      Come mostrato nella scheda Risposta e nel codice JavaScript implementato in precedenza e mostrato sotto, al parametro della stringa di query CustomQueryString è assegnato un valore "jScriptQueryString___" e vi viene concatenato anche il valore restituito dalla variabile sessionId.
 

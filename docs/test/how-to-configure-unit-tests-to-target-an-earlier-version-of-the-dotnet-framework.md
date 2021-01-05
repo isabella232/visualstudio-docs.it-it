@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 6badbb7723bf4d8ed0c9385558204c2dc4907574
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 3f90a3d42eb1390adbb242242172aea152a0a54f
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441248"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833234"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procedura: configurare unit test destinati a una versione precedente di .NET Framework
 
@@ -62,7 +62,7 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 4. Usare l'elenco a discesa **Framework di destinazione (tutte le configurazioni)** per impostare il framework di destinazione su **.NET Framework 3.5** o una versione successiva, come indicato nella didascalia B della figura seguente. Non specificare una versione client.
 
-     ![Elenco a discesa dei framework di destinazione](../test/media/howtoconfigureunitest35frameworkstepb.png)
+     ![Screenshot della finestra di dialogo Impostazioni avanzate del compilatore. L'elenco a discesa Framework di destinazione è evidenziato e il valore è impostato su ".NET Frameowrk 3,5".](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="retargeting-for-c-unit-test-projects"></a>Ridestinazione per progetti di unit test C#
 
@@ -74,7 +74,7 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 3. Nella scheda **Applicazione** scegliere **Framework di destinazione**. Nell'elenco a discesa scegliere **.NET Framework 3.5** o versione successiva, come illustrato nella figura seguente. Non specificare una versione client.
 
-   ![Elenco a discesa dei framework di destinazione](../test/media/howtoconfigureunittest35frameworkcsharp.png)
+   ![Illustrazione della scheda applicazione nel riquadro Proprietà Esplora soluzioni che evidenzia il percorso dell'elenco a discesa Framework di destinazione.](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="retargeting-for-ccli-unit-test-projects"></a>Ridestinazione per progetti di unit test C++/CLI
 
@@ -106,7 +106,7 @@ Quando si ridefinisce la destinazione dei progetti di test per l'uso di versioni
 
 6. In **Esplora soluzioni** selezionare **Ricarica progetto** dal menu di scelta rapida del nuovo progetto di test C++.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creazione di soluzioni SharePoint](../sharepoint/create-sharepoint-solutions.md)
 - [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

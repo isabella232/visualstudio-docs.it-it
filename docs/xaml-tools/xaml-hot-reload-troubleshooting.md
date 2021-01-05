@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 447725fd27ab81b85890d37a8f0df8a35ad5fbee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03c5dca96b4e20e36bc6c69b907423f27ac4af71
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328480"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833221"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Risoluzione dei problemi relativi al ricaricamento rapido XAML
 
@@ -34,13 +34,13 @@ La funzionalità è abilitata per impostazione predefinita. Quando si avvia il d
 
 ![Ricaricamento a caldo di XAML disponibile](../debugger/media/xaml-hot-reload-available.png)
 
-Se la barra degli strumenti in-app non è visibile, aprire Opzioni di **debug**  >  **Options**  >  **generale**. Assicurarsi che siano selezionate entrambe le opzioni, **Abilita strumenti di debug dell'interfaccia utente per XAML** e **Abilita ricaricamento a caldo XAML** .
+Se la barra degli strumenti in-app non è visibile, aprire Opzioni di **debug**  >    >  **generale**. Assicurarsi che siano selezionate entrambe le opzioni, **Abilita strumenti di debug dell'interfaccia utente per XAML** e **Abilita ricaricamento a caldo XAML** .
 
-![Abilita ricaricamento attivo XAML](../debugger/media/xaml-hot-reload-enable.png)
+![Screenshot della finestra opzioni di debug di Visual Studio. Sono selezionate le opzioni generali per il debug e l'opzione Abilita ricaricamento a caldo XAML è selezionata.](../debugger/media/xaml-hot-reload-enable.png)
 
-Se queste opzioni sono selezionate, passare a albero elementi visivi attivi (**debug**  >  **Windows**  >  **albero elementi visivi**di Windows Live) e assicurarsi che **Mostra strumenti di runtime nel pulsante della** barra degli strumenti dell'applicazione (all'estrema sinistra) sia selezionata.
+Se queste opzioni sono selezionate, passare a albero elementi visivi attivi (**debug**  >    >  **albero elementi visivi** di Windows Live) e assicurarsi che **Mostra strumenti di runtime nel pulsante della** barra degli strumenti dell'applicazione (all'estrema sinistra) sia selezionata.
 
-![Abilita ricaricamento attivo XAML](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
+![Screenshot della barra degli strumenti nella parte superiore della finestra albero elementi visivi attivi con il pulsante ' Mostra strumenti di runtime nell'applicazione ' selezionato.](../debugger/media/xaml-hot-reload-show-runtime-tools.png)
 
 ## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>Verificare di usare Avvia debug anziché Connetti a processo
 
@@ -51,7 +51,7 @@ Il ricaricamento a caldo di XAML richiede che la variabile `ENABLE_XAML_DIAGNOST
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>Verificare che le proprietà di MSBuild siano corrette
 
-Per impostazione predefinita, le informazioni sull'origine sono incluse in una configurazione di debug. Viene controllata dalle proprietà di MSBuild nei file di progetto, ad esempio *. csproj. Per WPF, la proprietà è `XamlDebuggingInformation` , che deve essere impostata su `True` . Per UWP, la proprietà è `DisableXbfLineInfo` , che deve essere impostata su `False` . Ad esempio:
+Per impostazione predefinita, le informazioni sull'origine sono incluse in una configurazione di debug. Viene controllata dalle proprietà di MSBuild nei file di progetto, ad esempio *. csproj. Per WPF, la proprietà è `XamlDebuggingInformation` , che deve essere impostata su `True` . Per UWP, la proprietà è `DisableXbfLineInfo` , che deve essere impostata su `False` . Esempio:
 
 WPF:
 
@@ -69,6 +69,6 @@ UWP
 
 Se il file XAML Mostra errori nel **Elenco errori**, il ricaricamento a caldo di XAML potrebbe non funzionare.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Scrivere ed eseguire il debug del codice XAML in esecuzione con il ricaricamento attivo XAML](xaml-hot-reload.md)

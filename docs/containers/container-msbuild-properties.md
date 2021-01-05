@@ -1,17 +1,17 @@
 ---
 title: Proprietà di compilazione degli strumenti contenitore di Visual Studio
 author: ghogen
-description: Panoramica del processo di compilazione degli strumenti contenitore
+description: Informazioni su come modificare le proprietà di compilazione degli strumenti contenitore per personalizzare il modo in cui Visual Studio compila ed esegue un progetto contenitore.
 ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 427a70d9bc4f6ef326ffb16e7d26df9d8fae2365
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e8675bd0ea12b30ce678ce454bcedee457ddacd
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283203"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846734"
 ---
 # <a name="container-tools-build-properties"></a>Proprietà di compilazione degli strumenti contenitore
 
@@ -39,7 +39,7 @@ La tabella seguente illustra le proprietà MSBuild disponibili per i progetti co
 | DockerDebuggeeWorkingDirectory | Quando si esegue il debug, al debugger viene richiesto di utilizzare questo percorso come directory di lavoro. | C:\app (Windows) o/app (Linux) |1.7.8 o versione successiva|
 | DockerDefaultTargetOS | Sistema operativo di destinazione predefinito usato durante la compilazione dell'immagine docker. | Impostata da Visual Studio. |1.0.1985401 o versione successiva|
 | DockerImageLabels | Set predefinito di etichette applicato all'immagine docker. | com. Microsoft. created-by = Visual-Studio; com. Microsoft. Visual-Studio. Project-Name = $ (MSBuildProjectName) |1.5.4 o versione successiva|
-| DockerFastModeProjectMountDirectory|In **modalità rapida**questa proprietà controlla il punto in cui la directory di output del progetto viene montata sul volume nel contenitore in esecuzione.|C:\app (Windows) o/app (Linux)|1.9.2 o versione successiva|
+| DockerFastModeProjectMountDirectory|In **modalità rapida** questa proprietà controlla il punto in cui la directory di output del progetto viene montata sul volume nel contenitore in esecuzione.|C:\app (Windows) o/app (Linux)|1.9.2 o versione successiva|
 | DockerfileBuildArguments | Argomenti aggiuntivi passati al comando di [compilazione Docker](https://docs.docker.com/engine/reference/commandline/build/) . | Non applicabile. |1.0.1872750 o versione successiva|
 | DockerfileContext | Contesto predefinito usato durante la compilazione dell'immagine Docker, come percorso relativo a Dockerfile. | Impostata da Visual Studio. |1.0.1872750 o versione successiva|
 | DockerfileFastModeStage | Fase Dockerfile (ovvero destinazione) da utilizzare quando si compila l'immagine in modalità di debug. | Prima fase trovata in Dockerfile (base) |
@@ -80,7 +80,7 @@ Il file di progetto seguente mostra esempi di alcune di queste impostazioni.
 
 Per informazioni sulle proprietà di MSBuild in genere, vedere [proprietà di MSBuild](../msbuild/msbuild-properties.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Proprietà di compilazione Docker Compose](docker-compose-properties.md)
 

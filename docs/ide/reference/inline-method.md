@@ -1,5 +1,6 @@
 ---
 title: Metodo inline
+description: Informazioni su come usare il menu azioni rapide e refactoring in Visual Studio per effettuare il refactoring delle dichiarazioni di metodi inline e fornire una sintassi più chiara.
 ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0cc619ea61a7fd4d7f4bc542b946e298933a8f73
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 655c6dad03b05b257aec3d92199321a0e0e93d22
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93402301"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761420"
 ---
 # <a name="inline-method"></a>Metodo inline
 
@@ -41,12 +42,12 @@ Questo refactoring si applica a:
     
    Selezionare **Inline `<QualifiedMethodName>`** (NomeMetodo inline) per rimuovere la dichiarazione del metodo inline: 
 
-    ![Crea classe astratta](media/inline-method-remove-declaration.png)
+    ![LinkedDataFormUpdated del menu azioni rapide e refactoring in Visual Studio con le modifiche apportate al codice in linea ' CreateWidget ()' selezionate e in C# visualizzate.](media/inline-method-remove-declaration.png)
 
    Selezionare **Inline and keep `<QualifiedMethodName>`** (NomeMetodo inline e mantieni) per mantenere la dichiarazione del metodo originale: 
 
-    ![Crea classe astratta](media/inline-method-preserve-declaration.png)
+    ![LinkedDataFormUpdated del menu azioni rapide e refactoring in Visual Studio con convert ' inline and Keep ' CreateWidget ()' selected and C# Code changes mostrate.](media/inline-method-preserve-declaration.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)

@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a033c0fe1fd80edc7959c5f49993714982ecc805
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd1b12be2dba1526301cd0ea9a4356fb9cc14c14
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238180"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815737"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>Informazioni su come usare l'editor di codice per JavaScript
 
@@ -40,11 +40,11 @@ Questo articolo presuppone una certa familiarità con lo sviluppo di JavaScript.
 
 IntelliSense è una risorsa molto importante per la creazione di codice. Consente di visualizzare informazioni sui membri disponibili di un tipo o sui dettagli parametro per diversi overload di un metodo. Nel codice seguente quando si digita `Router()`, vengono visualizzati i tipi di argomento che si possono passare. Questo si chiama firma di chiamata.
 
-![Usare IntelliSense](../javascript/media/write-code-signature-checking.png)
+![Screenshot di una finestra di Visual Studio Code con codice JavaScript immesso. Vengono visualizzate le informazioni di IntelliSense per la funzione router ().](../javascript/media/write-code-signature-checking.png)
 
 È anche possibile usare IntelliSense per completare una parola dopo aver digitato un numero di caratteri sufficiente a evitare ambiguità. Se si posiziona il cursore dopo la stringa `data` nel codice seguente e si digita `get`, IntelliSense visualizza le funzioni definite in precedenza nel codice o definite in una libreria di terze parti che è stata aggiunta al progetto.
 
-![Usare IntelliSense](../javascript/media/write-code-intellisense.png)
+![Screenshot di una finestra di Visual Studio Code con la parola ' Get ' immessa. Le informazioni di IntelliSense vengono visualizzate per tutte le funzioni che iniziano con "Get".](../javascript/media/write-code-intellisense.png)
 
 IntelliSense può visualizzare anche informazioni sui tipi quando si passa il mouse sugli elementi di programmazione.
 
@@ -52,7 +52,7 @@ Per specificare informazioni di IntelliSense, il servizio di linguaggio può usa
 
 ## <a name="check-syntax"></a>Controllare la sintassi
 
-Il servizio di linguaggio usa ESLint per il controllo e il rilevamento di errori della sintassi. Se è necessario impostare le opzioni per il controllo della sintassi nell'editor, selezionare **strumenti**  >  **Opzioni**  >  **JavaScript/typescript**  >  **Linting**. Le opzioni di rilevamento degli errori puntano al file di configurazione globale ESLint.
+Il servizio di linguaggio usa ESLint per il controllo e il rilevamento di errori della sintassi. Se è necessario impostare le opzioni per il controllo della sintassi nell'editor, selezionare **strumenti**  >  **Opzioni**  >  **JavaScript/typescript**  >  . Le opzioni di rilevamento degli errori puntano al file di configurazione globale ESLint.
 
 Nel codice seguente parte della sintassi viene evidenziata con una linea verde a zig zag all'interno dell'espressione. Spostare il puntatore del mouse sull'evidenziazione della sintassi.
 
@@ -100,7 +100,7 @@ Chiudere la finestra di visualizzazione della definizione scegliendo la piccola 
 
 Visual Studio offre *frammenti di codice* utili che è possibile usare per generare in modo semplice e rapido blocchi di codice di uso comune. I [frammenti di codice](../ide/code-snippets.md) sono disponibili per vari linguaggi di programmazione, tra cui JavaScript. Ora verrà aggiunto un ciclo `for` al file di codice.
 
-Posizionare il cursore nel punto in cui si vuole inserire il frammento, fare clic con il pulsante destro del mouse e scegliere **frammento**  >  **Inserisci**frammento.
+Posizionare il cursore nel punto in cui si vuole inserire il frammento, fare clic con il pulsante destro del mouse e scegliere **frammento**  >  **Inserisci** frammento.
 
 ![Frammenti di codice in Visual Studio](../javascript/media/write-code-insert-snippet.png)
 
@@ -118,7 +118,7 @@ for (var i = 0; i < length; i++) {
 
 È possibile esaminare i frammenti di codice disponibili per la lingua scegliendo **modifica**  >  **IntelliSense**  >  **Inserisci frammento**, quindi scegliere la cartella del linguaggio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Frammenti di codice](../ide/code-snippets.md)
 - [Spostarsi all'interno del codice](../ide/navigating-code.md)

@@ -1,6 +1,7 @@
 ---
 title: 'Esaminare le variabili: finestre auto e variabili locali | Microsoft Docs'
-ms.custom: seodec18
+description: Controllare le variabili nelle finestre auto e variabili locali durante il debug in Visual Studio. Nelle finestre auto e variabili locali vengono visualizzati i valori delle variabili durante il debug.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/18/2018
 ms.topic: how-to
 f1_keywords:
@@ -15,22 +16,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ae67fadf5d9710f2088f47617b74eeeb8212826
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b57c27d038193a5c73bee48814a2aa457a94b6a6
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350745"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97760913"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Esaminare le variabili nelle finestre auto e variabili locali
 
-Nelle finestre **auto** e **variabili locali** vengono visualizzati i valori delle variabili durante il debug. Le finestre sono disponibili solo durante una sessione di debug. La finestra **auto** Mostra le variabili usate intorno al punto di interruzione corrente. La finestra variabili **locali** Mostra le variabili definite nell'ambito locale, che in genere è la funzione o il metodo corrente. Se è la prima volta che si tenta di eseguire il debug del codice, è consigliabile leggere il [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) e [tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md) prima di procedere con questo articolo.
+Nelle finestre **auto** e **variabili locali** vengono visualizzati i valori delle variabili durante il debug. Le finestre sono disponibili solo durante una sessione di debug. La finestra **auto** Mostra le variabili usate intorno al punto di interruzione corrente. La finestra variabili **locali** Mostra le variabili definite nell'ambito locale, che in genere è la funzione o il metodo corrente.
+
+> [!NOTE]
+> Se è la prima volta che si tenta di eseguire il debug del codice, è consigliabile leggere il [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) e [tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md) prima di procedere con questo articolo.
 
  La finestra **auto** è disponibile per il codice C#, Visual Basic, C++ e Python, ma non per JavaScript o F #.
 
-Per aprire la finestra **auto** , durante il debug, selezionare **debug**di  >  **Windows**  >  **auto**oppure premere **CTRL** + **ALT** + **V**  >  **A**.
+Per aprire la finestra **auto** , durante il debug, selezionare **debug** di  >  **Windows**  >  **auto** oppure premere **CTRL** + **ALT** + **V**  >  **A**.
 
-Per aprire la finestra **variabili locali** , durante il debug, selezionare **debug**  >  **Windows**  >  **variabili locali**di Windows oppure premere **ALT** + **4**.
+Per aprire la finestra **variabili locali** , durante il debug, selezionare **debug**  >    >  **variabili locali** di Windows oppure premere **ALT** + **4**.
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [visualizzazioni dei dati in Visual Studio per Mac](/visualstudio/mac/data-visualizations).
@@ -39,7 +43,7 @@ Per aprire la finestra **variabili locali** , durante il debug, selezionare **de
 
 Le matrici e gli oggetti vengono visualizzati nelle finestre **auto** e **variabili locali** come controlli struttura ad albero. Selezionare la freccia a sinistra di un nome di variabile per espandere la visualizzazione in modo da visualizzare i campi e le proprietà. Di seguito è riportato un esempio di <xref:System.IO.FileStream?displayProperty=fullName> oggetto nella finestra **variabili locali** :
 
-![Locals-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
+![Screenshot della finestra variabili locali, con file impostato su un valore System. IO. FileStream.](../debugger/media/locals-filestream.png)
 
 Un valore rosso nella finestra **variabili locali** o **auto** indica che il valore è stato modificato dall'ultima valutazione. La modifica può provenire da una sessione di debug precedente o dal fatto che il valore nella finestra è stato modificato.
 
@@ -91,7 +95,7 @@ Per rendere la ricerca più o meno completa, usare l'elenco a discesa Cerca più
 
 È possibile utilizzare la barra degli strumenti **posizione di debug** per selezionare la funzione, il thread o il processo desiderato, che modifica il contesto per le finestre **auto** e **variabili locali** .
 
-Per abilitare la barra degli strumenti **posizione di debug** , fare clic su una parte vuota dell'area della barra degli strumenti, selezionare **posizione di debug** nell'elenco a discesa oppure selezionare **Visualizza**posizione di debug per le  >  **barre degli strumenti**  >  **Debug Location**.
+Per abilitare la barra degli strumenti **posizione di debug** , fare clic su una parte vuota dell'area della barra degli strumenti, selezionare **posizione di debug** nell'elenco a discesa oppure selezionare **Visualizza** posizione di debug per le  >  **barre degli strumenti**  >  .
 
 Impostare un punto di interruzione e avviare il debug Quando viene raggiunto il punto di interruzione, l'esecuzione viene sospesa ed è possibile visualizzarla nella barra degli strumenti **posizione di debug** .
 
@@ -116,7 +120,7 @@ Diversi linguaggi di codice visualizzano variabili diverse nella finestra **auto
 
    Impostare un punto di interruzione sulla riga `c = 3;` e avviare il debugger. Quando l'esecuzione viene sospesa, viene visualizzata la finestra **auto** :
 
-   ![Autos-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
+   ![Screenshot della finestra auto, con il valore di c impostato su 0.](../debugger/media/autos-csharp.png)
 
    Il valore di `c` è 0, perché la riga `c = 3` non è stata ancora eseguita.
 
@@ -136,7 +140,7 @@ Diversi linguaggi di codice visualizzano variabili diverse nella finestra **auto
 
     Impostare un punto di interruzione sulla riga `e = 5;` ed eseguire il debugger. Quando l'esecuzione viene arrestata, viene visualizzata la finestra **auto** :
 
-    ![Auto-C + +](../debugger/media/autos-cplus.png "Auto-C + +")
+    ![Screenshot della finestra auto, con la riga evidenziata che Mostra int c con valore 3.](../debugger/media/autos-cplus.png)
 
     La variabile `e` non è inizializzata, perché la riga `e = 5` non è stata ancora eseguita.
 
@@ -175,7 +179,7 @@ Per visualizzare i valori restituiti delle `sumVars()` chiamate al `subtractVars
 
   ![Auto valore restituito C #](../debugger/media/autosreturnvaluecsharp2.png "Auto valore restituito C #")
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Che cos'è il debug?](../debugger/what-is-debugging.md)
 - [Tecniche e strumenti di debug CRT](../debugger/write-better-code-with-visual-studio.md)

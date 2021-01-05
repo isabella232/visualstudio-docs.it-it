@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d801f052cb02e6a5b53189eeae342b9015d30f9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8a98ebd1fa1e8a9ec937cf4e0965d804a8a9387
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79093880"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761225"
 ---
 # <a name="wrap-indent-and-align-refactorings"></a>Impostare il ritorno a capo automatico, il rientro e l'allineamento dei refactoring
 
@@ -40,7 +40,7 @@ Questo refactoring si applica a:
 2. Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
 3. Selezionare **Esegui il wrapping della catena di chiamate** o **Esegui il wrapping e allinea la catena di chiamate** per accettare il refactoring.
 
-   ![Ritorno a capo e allineamento delle catene di chiamate](media/wrap-call-chain.png)
+   ![LinkedDataFormUpdated del menu azioni rapide e refactoring in Visual Studio con la catena di chiamate Warap selezionata e le modifiche al codice C# visualizzate.](media/wrap-call-chain.png)
 
 ## <a name="wrap-indent-and-align-parameters-or-arguments"></a>Ritorno a capo automatico, rientro e allineamento dei parametri o degli argomenti
 
@@ -85,8 +85,8 @@ Questo refactoring si applica a:
 2. Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
 3. Selezionare **espressione a capo** per accettare il refactoring.
 
-   ![Ritorno a capo e allineamento delle catene di chiamate](media/wrap-binary-expression.png)
+   ![LinkedDataFormUpdated del menu azioni rapide e refactoring in Visual Studio con espressioni Warap selezionate e modifiche al codice C# visualizzate.](media/wrap-binary-expression.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)

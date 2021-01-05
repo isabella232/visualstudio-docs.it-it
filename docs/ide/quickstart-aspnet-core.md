@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e7c6eec178d0ba3b2934e390cc02310044c4dfa
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579957"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833351"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app Web ASP.NET Core
 
@@ -89,7 +89,7 @@ Dopo pochi istanti, Visual Studio apre il file di progetto.
 
    ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *ASP.NET* nella casella di ricerca. Scegliere quindi **C# ** dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma.
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *ASP.NET* nella casella di ricerca. Scegliere quindi **C#** dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma.
 
    Dopo aver applicato i filtri di linguaggio e piattaforma, scegliere il modello **Applicazione Web ASP.NET Core**, quindi scegliere **Avanti**.
 
@@ -124,7 +124,7 @@ Dopo pochi istanti, Visual Studio apre il file di progetto.
 
 1. In **Esplora soluzioni** espandere la cartella **Pagine** e quindi scegliere **About.cshtml**.
 
-   ![Scegliere il file About.cshtml in Esplora soluzioni](../ide/media/csharp-aspnet-about-page-html-file.png)
+   ![Screenshot di Visual Studio Esplora soluzioni la visualizzazione dei file nel progetto HelloWorld. La cartella pagine è espansa e viene selezionato about. cshtml.](../ide/media/csharp-aspnet-about-page-html-file.png)
 
    Questo file corrisponde a una pagina denominata **Informazioni su** nell'app Web, eseguita in un Web browser.
 
@@ -140,7 +140,7 @@ Dopo pochi istanti, Visual Studio apre il file di progetto.
 
 1. In **Esplora soluzioni** espandere **About.cshtml** e quindi scegliere **About.cshtml**. Questo file corrisponde anche alla pagina **Informazioni su** di un Web browser.
 
-   ![Scegliere il file About.cshtml in Esplora soluzioni](../ide/media/csharp-aspnet-about-page-code-file.png)
+   ![Screenshot di Visual Studio Esplora soluzioni la visualizzazione dei file nel progetto HelloWorld. About. cshtml è espanso ed è selezionata l'opzione About.cshtml.cs.](../ide/media/csharp-aspnet-about-page-code-file.png)
 
    Nell'editor si noterà il codice C# che include il testo per l'area della "descrizione dell'applicazione" della pagina **Informazioni su**.
 
@@ -175,7 +175,7 @@ La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per 
 
 ::: moniker range="vs-2019"
 
-1. Nella **Esplora soluzioni**espandere la cartella **pagine** , quindi scegliere **index. cshtml**.
+1. Nella **Esplora soluzioni** espandere la cartella **pagine** , quindi scegliere **index. cshtml**.
 
    ![Scegliere il file index. cshtml dalla Esplora soluzioni](../ide/media/vs-2019/csharp-aspnet-index-page-cshtml-file.png)
 
@@ -213,6 +213,6 @@ Per altre informazioni, passare all'esercitazione successiva:
 > [!div class="nextstepaction"]
 > [Introduzione a C# e ad ASP.NET Core in Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Eseguire la pubblicazione di un'app Web in Servizio app di Azure con Visual Studio](../deployment/quickstart-deploy-to-azure.md)

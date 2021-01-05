@@ -1,17 +1,17 @@
 ---
 title: Servizi connessi
-description: Aggiungere l'archiviazione dei dati di Azure, l'autenticazione e le notifiche push alle app per dispositivi mobili da Visual Studio per Mac
+description: Informazioni su come aggiungere l'archiviazione dei dati, l'autenticazione e le notifiche push di Azure dall'interno Visual Studio per Mac a un'applicazione multipiattaforma.
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 11/06/2018
 ms.topic: how-to
-ms.openlocfilehash: 8a1287d82096677d20a498756de3d2a9f5af259b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69ad6007283b3c56a8d0e5902cc2b9bdc445f220
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938768"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847084"
 ---
 # <a name="connected-services-walkthrough"></a>Procedura dettagliata per Servizi connessi
 
@@ -73,6 +73,6 @@ Il nuovo servizio richiede i parametri seguenti:
 
 Per altre informazioni, vedere la [documentazione del servizio app di Azure](/azure/app-service-mobile/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Servizi connessi (Visual Studio in Windows)](/visualstudio/azure/vs-azure-tools-connected-services-storage)

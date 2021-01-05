@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: creazione di un glifo del margine | Microsoft Docs'
+description: Per informazioni su come personalizzare l'aspetto dei margini dell'editor usando le estensioni dell'editor personalizzate, usare questa procedura dettagliata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b94ab61f56d74537758c189adc9c104516f67f92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8a2ac481ebf76fc2b34be841cd20d15b97fcfa9
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905049"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863083"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Procedura dettagliata: creare un glifo del margine
 È possibile personalizzare l'aspetto dei margini dell'editor usando le estensioni dell'editor personalizzate. Questa procedura dettagliata inserisce un glifo personalizzato sul margine dell'indicatore ogni volta che la parola "TODO" viene visualizzata in un commento del codice.
@@ -134,7 +136,7 @@ ms.locfileid: "85905049"
 
 2. Eseguire il progetto premendo **F5**. Viene avviata una seconda istanza di Visual Studio.
 
-3. Verificare che sia visualizzato il margine indicatore. Scegliere **Opzioni**dal menu **strumenti** . Nella pagina **editor di testo** assicurarsi che sia selezionato **Margin indicatore** .
+3. Verificare che sia visualizzato il margine indicatore. Scegliere **Opzioni** dal menu **strumenti** . Nella pagina **editor di testo** assicurarsi che sia selezionato **Margin indicatore** .
 
 4. Aprire un file di codice con commenti. Aggiungere la parola "TODO" a una delle sezioni di commento.
 

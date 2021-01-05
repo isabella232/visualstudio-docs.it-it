@@ -1,5 +1,6 @@
 ---
 title: Convertire typeof in nameof
+description: Informazioni su come usare il menu azioni rapide e refactoring in Visual Studio per convertire typeof in NameOf in C# e GetType in NameOf in Visual Basic.
 ms.date: 08/12/2020
 ms.topic: reference
 author: m-redding
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96bd4d67302fb09e5c1cb7837ad73b345ad88c81
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: ce76b82e2ebc68634be7cf4d463f6b8216d81e06
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400324"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761199"
 ---
 # <a name="convert-typeof-to-nameof"></a>Convertire `typeof` in `nameof`
 
@@ -39,11 +40,11 @@ Questo refactoring si applica a:
 3. Selezionare una delle opzioni seguenti:
 
     - C#
-      <br>Selezionare **Convert ' typeof ' in ' NameOf '** : ![ Convert typeof in NameOf](media/convert-type-of.PNG)
+      <br>Selezionare **Converti ' typeof ' in ' NameOf '**: ![ screenshot del menu azioni rapide e refactoring in Visual Studio con convert ' typeof ' in ' NameOf ' selezionato e modifiche del codice C# visualizzate.](media/convert-type-of.PNG)
 
     - Visual Basic
-      <br>Select **Convert ' GetType ' in ' NameOf '** : ![ Convert typeof in NameOf](media/convert-get-type.PNG)
+      <br>Selezionare **Converti ' GetType ' in ' NameOf '**: ![ screenshot del menu azioni rapide e refactoring in Visual Studio con convert ' GetType ' in ' NameOf ' selezionato e Visual Basic modifiche del codice visualizzate.](media/convert-get-type.PNG)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)

@@ -1,5 +1,6 @@
 ---
 title: Utilizzo GPU | Microsoft Docs
+description: Informazioni su come usare lo strumento utilizzo GPU nel profiler delle prestazioni per comprendere meglio l'utilizzo dell'hardware di alto livello dell'app Direct3D.
 ms.date: 11/01/2018
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a738490933c6f2d1cdf89e7e974a268540af991
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: a6b143cc0b3001f0a182de43f1b6eea554025eda
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074969"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815652"
 ---
 # <a name="gpu-usage"></a>Utilizzo GPU
 
@@ -62,11 +63,11 @@ Per generare e visualizzare il report sull'utilizzo della GPU:
 
 1. Nella parte inferiore della finestra della sessione di diagnostica scegliere il collegamento **Interrompi raccolta** oppure selezionare **Arresta** nell'angolo superiore sinistro.
 
-   ![Screenshot della finestra della sessione di diagnostica](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
+   ![Screenshot di una finestra della sessione di diagnostica nello strumento utilizzo GPU, che mostra i frame al secondo, l'utilizzo della GPU, il pulsante Interrompi e il collegamento Interrompi raccolta.](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
 
 2. Nella parte superiore del report selezionare in uno dei grafici una sezione che mostra il problema da analizzare. La selezione può avere una lunghezza di 3 secondi. Le sezioni più lunghe vengono troncate verso l'inizio.
 
-   ![Screenshot della finestra della sessione di diagnostica](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
+   ![Screenshot di una finestra della sessione di diagnostica nello strumento utilizzo GPU con una parte della sequenza temporale della sessione di diagnostica selezionata.](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
 
 3. Per visualizzare una sequenza temporale dettagliata della selezione, nella parte inferiore del report, in **... fare clic qui per visualizzare i dettagli dell'utilizzo della GPU per il** messaggio di intervallo, selezionare **Visualizza dettagli**.
 
@@ -84,7 +85,7 @@ A partire da Visual Studio 2017, è possibile aprire i dati con [GPUView](/windo
 
 ## <a name="use-the-gpu-usage-report"></a>Usare il report utilizzo GPU
 
-La parte superiore del report sull'utilizzo della GPU Mostra le sequenze temporali per l'attività di elaborazione della CPU, l'attività di rendering della GPU e l'attività di copia della GPU. Queste sequenze temporali sono divise da barre verticali grigio chiaro che indicano il vsync della visualizzazione. La frequenza delle barre corrisponde alla frequenza di aggiornamento di uno degli schermi (selezionato usando l'elenco a discesa **Visualizza** ) in cui sono stati raccolti i dati di utilizzo della GPU.
+La parte superiore del report sull'utilizzo della GPU Mostra le sequenze temporali per l'attività di elaborazione della CPU, l'attività di rendering della GPU e l'attività di copia della GPU. Queste sequenze temporali sono divise da barre verticali grigio chiaro che indicano la sincronizzazione verticale della visualizzazione (vsync). La frequenza delle barre corrisponde alla frequenza di aggiornamento di uno degli schermi (selezionato usando l'elenco a discesa **Visualizza** ) in cui sono stati raccolti i dati di utilizzo della GPU.
 
 Poiché lo schermo può avere una frequenza di aggiornamento superiore rispetto alla destinazione di prestazioni dell'app, potrebbe non esserci una relazione 1 a 1 tra vsync e frequenza dei frame che l'app deve ottenere. Per soddisfare la destinazione di prestazioni, un'app deve completare l'elaborazione, eseguire il rendering ed effettuare una `Present()` chiamata al framerate di destinazione. Il frame sottoposto a rendering non verrà visualizzato fino al vsync successivo `Present()` , tuttavia.
 
@@ -128,7 +129,7 @@ Per posticipare la profilatura rispetto all'avvio dell'app:
 
 2. Nell'hub **prestazioni e diagnostica** selezionare il collegamento **Impostazioni** accanto a **utilizzo GPU**.
 
-3. Nella pagina delle proprietà **generale** della **configurazione della profilatura GPU**deselezionare la casella di controllo **inizia profilatura all'avvio dell'app** per posticipare la profilatura.
+3. Nella pagina delle proprietà **generale** della **configurazione della profilatura GPU** deselezionare la casella di controllo **inizia profilatura all'avvio dell'app** per posticipare la profilatura.
 
    ![Screenshot delle pagine delle proprietà dell'oggetto, che mostra le opzioni di raccolta](media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")
 

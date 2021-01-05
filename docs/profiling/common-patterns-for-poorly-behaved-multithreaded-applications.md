@@ -1,5 +1,6 @@
 ---
 title: Modelli comuni per le app multithread con comportamento non corretto
+description: Informazioni sui modelli comuni per applicazioni multithreading con comportamento non corretto incluse nello strumento Visualizzatore di concorrenza di Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f45c22684ef737de7235caebd4ad0b1b4189155
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 36e14640da4d66134ca961607f66f6a355f6b9d9
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808942"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815789"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modelli comuni per applicazioni multithreading con comportamenti non validi
 
@@ -37,17 +38,17 @@ Per altre informazioni, vedere la sezione "Start with the problem" (Partire dal 
 
 ## <a name="uneven-workload-distribution"></a>Distribuzione ineguale del carico di lavoro
 
-![Carico di lavoro non uniforme](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
+![Screenshot di un grafico del carico di lavoro per i thread paralleli nel Visualizzatore di concorrenza. I thread terminano in momenti diversi che mostrano un modello di passaggio della scala.](../profiling/media/unevenworkload_1.png)
 
 Quando si verifica una distribuzione irregolare del lavoro tra diversi thread paralleli in un'applicazione, man mano che ogni thread completa il proprio lavoro viene visualizzato un tipico modello a gradini, come illustrato nella figura precedente. Nella maggior parte dei casi il visualizzatore di concorrenza indica orari di inizio molto ravvicinati per ogni thread simultaneo. Tuttavia, anziché terminare simultaneamente, questi thread di solito terminano in modo irregolare. Questo modello indica una distribuzione irregolare del lavoro all'interno di un gruppo di thread paralleli. Ciò potrebbe causare una diminuzione delle prestazioni. L'approccio migliore a questo problema consiste nel rivalutare l'algoritmo tramite il quale il lavoro viene suddiviso tra i thread paralleli.
 
 Come illustrato nella figura seguente, il visualizzatore di concorrenza può esporre questo sintomo anche nella visualizzazione Utilizzo CPU, dove l'utilizzo della CPU viene rappresentato sotto forma di una scala discendente.
 
-![Carico di lavoro non uniforme](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
+![Screenshot della visualizzazione utilizzo CPU nel Visualizzatore di concorrenza che mostra un modello di passaggio alla fine del grafico di utilizzo della CPU.](../profiling/media/unevenworkload_2.png)
 
 ## <a name="oversubscription"></a>Oversubscription
 
-![Oversubscription](../profiling/media/oversubscription.png "Oversubscription")
+![Screenshot di un grafico del carico di lavoro per tutti i thread attivi nel Visualizzatore di concorrenza. Una legenda Mostra la quantità di tempo impiegato per l'esecuzione e la precedenza.](../profiling/media/oversubscription.png)
 
 In caso di oversubscription, il numero di thread attivi in un processo è maggiore del numero di core logici disponibili nel sistema. L'illustrazione precedente mostra i risultati dell'oversubscription con una significativa rappresentazione per bande della precedenza in tutti i thread attivi. La legenda, poi, indica che una percentuale elevata di tempo (l'84% in questo esempio) viene impiegata nella precedenza. Questo può indicare che il processo richiede al sistema di eseguire più thread simultanei rispetto al numero di core logici. Tuttavia, questo potrebbe indicare anche che altri processi nel sistema stanno usando le risorse che dovrebbero invece essere disponibili per il processo in questione.
 
@@ -69,6 +70,6 @@ Un uso eccessivo o improprio delle operazioni di I/O è una causa comune dell'in
 
 Le serie di istruzioni di blocco si verificano quando l'applicazione acquisisce blocchi in base al principio del primo arrivato e la frequenza di arrivo in corrispondenza del blocco è maggiore della frequenza di acquisizione. A causa della combinazione di queste due condizioni le richieste per il blocco iniziano ad accumularsi. Per opporsi a questo problema è possibile fare uso di blocchi "non equi", ovvero blocchi che danno accesso al primo thread che li trova in stato sbloccato. L'illustrazione precedente mostra questo tipo di comportamento delle serie di istruzioni. Per risolvere il problema, ridurre i conflitti tra gli oggetti di sincronizzazione e usare blocchi non equi.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a6b089309ca7202c01028b3323ccabfd3668e909
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 15fcc5981c5711c7c3ddcf7262649a9d3473ee55
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780971"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833325"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Esercitazione: introduzione a C# e ad ASP.NET Core in Visual Studio
 
@@ -108,7 +108,7 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
 
    ![Visualizzare la finestra Crea un nuovo progetto](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *ASP.NET* nella casella di ricerca. Scegliere quindi **C# ** dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma.
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *ASP.NET* nella casella di ricerca. Scegliere quindi **C#** dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma.
 
    Dopo aver applicato i filtri di linguaggio e piattaforma, scegliere il modello **Applicazione Web ASP.NET Core**, quindi scegliere **Avanti**.
 
@@ -154,7 +154,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
  1. Visualizzare il file **About.cshtml** nell'editor del codice.
 
-     ![Visualizzare il file About.cshtml nell'editor del codice di Visual Studio](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
+     ![Screenshot che mostra le prime dieci righe del file about. cshtml nell'editor di codice di Visual Studio.](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
 
  1. Scegliere il file **About.cshtml.cs**.
 
@@ -162,7 +162,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
  1. Visualizzare il file **About.cshtml.cs** nell'editor del codice.
 
-     ![Visualizzare il file About.cshtml nell'editor del codice di Visual Studio](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
+     ![Screenshot che mostra le prime 18 righe del file About.cshtml.cs nell'editor di codice di Visual Studio. ](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
 
  1. Il progetto contiene una cartella **wwwroot** che rappresenta la radice del sito Web. Espandere la cartella per visualizzarne il contenuto.
 
@@ -288,7 +288,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
      >
      > Potrebbe essere visualizzato un messaggio in cui si chiede se accettare un certificato SSL di IIS Express. Per visualizzare il codice in un Web browser, scegliere **Yes** (Sì), quindi scegliere **Yes** (Sì) se si riceve un messaggio di avviso di sicurezza per il completamento.
 
-1. Visual Studio apre una finestra del browser. Verranno visualizzate le pagine **Home**e **privacy** nella barra dei menu.
+1. Visual Studio apre una finestra del browser. Verranno visualizzate le pagine **Home** e **privacy** nella barra dei menu.
 
 1. Scegliere **privacy** dalla barra dei menu.
 
@@ -368,6 +368,6 @@ L'esercitazione è stata completata. Ci auguriamo che sia stata utile per l'appr
 > [!div class="nextstepaction"]
 > [Creare un'app Web Razor Pages con ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Eseguire la pubblicazione di un'app Web in Servizio app di Azure con Visual Studio](../../deployment/quickstart-deploy-to-azure.md)

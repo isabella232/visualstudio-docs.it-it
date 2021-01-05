@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 83446ab87af07e3ac46594beeecec781f596ecff
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cf32e0aa1f19bb4398bc5600ae7fc9fbf151c76c
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349581"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815594"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Eseguire la pubblicazione di un'app Web in Servizio app di Azure con Visual Studio
 
@@ -51,13 +51,13 @@ Questo articolo descrive come usare lo strumento **Pubblica** per una distribuzi
 
     ![Collegamento per creare una nuova istanza del servizio app Azure](../deployment/media/quickstart-publish-windows-create-new-link.png)
 
-1. Nella finestra di dialogo **Crea servizio app Azure (Windows)** vengono popolati i campi **nome app** , **gruppo di risorse** e **piano di servizio app** . È possibile mantenere questi nomi o modificarli. Quando si è pronti, selezionare **Crea**.
+1. Nella finestra di dialogo **Crea servizio app Azure (Windows)** vengono popolati i campi **nome app**, **gruppo di risorse** e **piano di servizio app** . È possibile mantenere questi nomi o modificarli. Quando si è pronti, selezionare **Crea**.
 
-    ![Scegliere app Azure servizio](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
+    ![Screenshot della finestra di dialogo Crea servizio app Azure (Windows) con i campi nome, sottoscrizione, gruppo di risorse e piano di hosting popolati.](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
 
 1. Nella finestra di dialogo **pubblica** l'istanza appena creata è stata selezionata automaticamente. Quando si è pronti, fare clic su **fine**.
 
-    ![Scegliere app Azure servizio](../deployment/media/quickstart-publish-windows-select-instance.png)
+    ![Screenshot della finestra di pubblicazione a cui si accede da Visual Studio Esplora soluzioni. Azure è selezionato come destinazione di pubblicazione.](../deployment/media/quickstart-publish-windows-select-instance.png)
 
 1. Selezionare **Pubblica**. Visual Studio distribuisce l'app al Servizio app di Azure e l'app Web viene caricata nel browser. Nel riquadro **Pubblica** delle proprietà del progetto viene visualizzato l'URL del sito con altri dettagli.
 
@@ -68,7 +68,7 @@ Questo articolo descrive come usare lo strumento **Pubblica** per una distribuzi
 Nei passaggi precedenti sono state create risorse di Azure in un gruppo di risorse. Se non si prevede di aver bisogno di queste risorse in futuro, è possibile eliminarle eliminando il gruppo di risorse.
 Dal menu a sinistra nel portale di Azure scegliere **Gruppi di risorse** e quindi selezionare **myResourceGroup**.
 Nella pagina del gruppo di risorse assicurarsi che le risorse elencate siano quelle da eliminare.
-Selezionare **Elimina** , digitare **myResourceGroup** nella casella di testo e quindi selezionare **Elimina**.
+Selezionare **Elimina**, digitare **myResourceGroup** nella casella di testo e quindi selezionare **Elimina**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -1,6 +1,6 @@
 ---
 title: 'Esercitazione: eseguire il debug del codice C#'
-description: Informazioni su come avviare il debugger di Visual Studio, eseguire il codice un'istruzione alla volta ed esaminare i dati.
+description: Informazioni sulle funzionalità del debugger di Visual Studio e su come avviare il debugger, eseguire il codice un'istruzione alla volta ed esaminare i dati in un'applicazione C#.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 04/23/2020
 ms.technology: vs-ide-debug
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d6e9ee79602f3a0db8f68d701120c450bfee721
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 435564a9bf4e90dd25ed5fee3a44d0578c201a99
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "82153088"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846943"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Esercitazione: Informazioni sul debug del codice C# tramite Visual Studio
 
@@ -85,11 +85,11 @@ In primo luogo, verrà creato un progetto di applicazione console .NET Core. Il 
 
 1. Aprire Visual Studio 2019.
 
-   Se la finestra di avvio non è aperta, **File** scegliere > **finestra di avvio**file.
+   Se la finestra di avvio non è aperta,  scegliere > **finestra di avvio** file.
 
 1. Nella finestra Start scegliere **Crea un nuovo progetto**.
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Scegliere quindi **C# ** dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma. 
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *console* nella casella di ricerca. Scegliere quindi **C#** dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma. 
 
    Dopo aver applicato i filtri di linguaggio e piattaforma, scegliere il modello **App console (.NET Core)** e **Avanti**.
 
@@ -106,7 +106,7 @@ In primo luogo, verrà creato un progetto di applicazione console .NET Core. Il 
 
 ## <a name="create-the-application"></a>Creazione dell'applicazione
 
-1. In *Program.cs*sostituire tutto il codice predefinito con il codice seguente:
+1. In *Program.cs* sostituire tutto il codice predefinito con il codice seguente:
 
     ```csharp
     using System;
@@ -187,7 +187,7 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
 1. Espandere la `letters` variabile per visualizzarne le proprietà, che includono tutti gli elementi contenuti nella variabile.
 
-     ![Visualizzare un suggerimento dati](../csharp/media/get-started-view-data-tip.png "Visualizzare un suggerimento dati")
+     ![Screenshot del debugger di Visual Studio con l'istruzione ' name + = Letters [I]' evidenziata e un elenco a discesa che Mostra gli elementi nella matrice Letters.](../csharp/media/get-started-view-data-tip.png)
 
 1. Posizionare quindi il puntatore del mouse sulla `name` variabile e visualizzare il relativo valore corrente, una stringa vuota.
 
@@ -197,7 +197,7 @@ In questa esercitazione nella maggior parte dei casi vengono usati tasti di scel
 
 1. Premere **F10** (o **eseguire**  >  il debug di un'**istruzione/** routine) alcune volte per eseguire un'iterazione più volte nel `for` ciclo, sospendendo nuovamente il punto di interruzione e passando il puntatore del mouse sulla `name` variabile ogni volta per verificarne il valore.
 
-     ![Visualizzare un suggerimento dati](../csharp/media/get-started-data-tip.gif "Visualizzare un suggerimento dati")
+     ![Schermata animata del debugger di Visual Studio che mostra l'effetto della pressione di F10 per eseguire un'istruzione/routine e l'iterazione di un ciclo durante il debug.](../csharp/media/get-started-data-tip.gif)
 
      Il valore della variabile viene modificato a ogni iterazione del `for` ciclo, mostrando i valori `f` , quindi, quindi `fr` `fre` e così via. Per far avanzare il debugger attraverso il ciclo più velocemente in questo scenario, è possibile premere **F5** (oppure scegliere **debug**  >  **continua**), che consente di passare al punto di interruzione anziché all'istruzione successiva.
 
@@ -254,7 +254,7 @@ Il debugger si interrompe nuovamente in corrispondenza del punto di interruzione
 
 1. Osservare la finestra **Auto** nella parte inferiore dell'editor di codice.
 
-    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo **debug**  >  **Windows**  >  **auto**di Windows.
+    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo **debug**  >    >  **auto** di Windows.
 
     Nella finestra **Auto** vengono visualizzate le variabili e i relativi valori correnti. La finestra **Auto** mostra tutte le variabili usate nella riga corrente o nella riga precedente (vedere la documentazione per il comportamento specifico del linguaggio).
 
@@ -278,7 +278,7 @@ Il debugger si interrompe nuovamente in corrispondenza del punto di interruzione
 
 1. Mentre l'esecuzione è in pausa nel ciclo `for`, fare clic sulla finestra **Stack di chiamate**, visualizzata per impostazione predefinita nel riquadro inferiore destro.
 
-    Se è chiuso, aprirlo mentre è sospeso nel debugger scegliendo **debug**  >  **Windows**  >  **stack di chiamate**Windows.
+    Se è chiuso, aprirlo mentre è sospeso nel debugger scegliendo **debug**  >    >  **stack di chiamate** Windows.
 
 2. Fare clic su **F11** alcune volte fino a quando non viene visualizzata la pausa del debugger nel `SendMessage` metodo. Osservare la finestra **Stack di chiamate**.
 

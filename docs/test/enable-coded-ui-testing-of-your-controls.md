@@ -9,35 +9,35 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7b36b7e2469aa5d4ef6e11cff2580e0fb0c8ff03
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 76224ce191354e05c2220af23aabe010403b35cb
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441404"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815763"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Abilitare test codificati dell'interfaccia utente per i controlli
 
 È utile implementare il supporto del framework dei test codificati dell'interfaccia utente per facilitare i test dei controlli. È possibile aggiungere gradualmente livelli crescenti di supporto. Iniziare supportando la registrazione, la riproduzione e la convalida delle proprietà. Partendo da queste basi, abilitare il generatore di test codificato dell'interfaccia utente per riconoscere le proprietà personalizzate dei controlli. Specificare classi personalizzate per accedere a tali proprietà dal codice generato. È anche possibile consentire al generatore di test codificati dell'interfaccia utente di acquisire le azioni nella modalità che più si avvicina di più allo scopo dell'azione registrata.
 
-![CUIT&#95;Full](../test/media/cuit_full.png)
+! Diagramma che illustra il modo in cui le classi in ChartControl vengono estese attraverso la classe CreateAccessabilityInstance alle classi in ChartControlExtensionPackage. (.. cuit_full.png/test/media/)
 
-[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+[!INCLUDE[coded-ui-test-deprecation](../test/includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>Supportare registrazione, riproduzione e convalida delle proprietà implementando l'accessibilità
 
 Il generatore di test codificati dell'interfaccia utente acquisisce informazioni sui controlli intercettati durante la registrazione e quindi genera il codice per riprodurre quella sessione. Se il controllo non supporta l'accessibilità, il generatore di test codificati dell'interfaccia utente acquisisce le azioni, come ad esempio i clic del mouse, usando le coordinate dello schermo. Quando il test viene riprodotto, il codice generato emette le azioni nelle stesse coordinate dello schermo. Se, quando il test viene riprodotto, il controllo viene visualizzato in un punto diverso dello schermo, l'azione da parte del codice generato non riuscirà. Se non si implementa l'accessibilità per il controllo, è possibile che i test abbiano esito negativo se vengono riprodotti in configurazioni di schermo diverse, in ambienti diversi o quando il layout dell'interfaccia utente viene modificato.
 
-![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
+![Screenshot della finestra di registrazione nel generatore di test codificati dell'interfaccia utente. Il pulsante Sospendi è evidenziato e il client ' ChartControl ' viene visualizzato in una descrizione comando.](../test/media/cuit_recordnosupport.png)
 
 Se si implementa l'accessibilità, il generatore di test codificati dell'interfaccia utente la userà per acquisire informazioni sul controllo quando registra un test. Quindi, quando si esegue il test, il codice generato riprodurrà tali eventi sul controllo, anche se questo si trova altrove nell'interfaccia utente. Gli autori del test possono creare le asserzioni anche usando le proprietà di base del controllo.
 
-![CUIT&#95;Record](../test/media/cuit_record.png)
+![Screenshot della finestra di registrazione nel generatore di test codificati dell'interfaccia utente. Il pulsante Sospendi è evidenziato e l'etichetta ' A ' viene visualizzata in una descrizione comando.](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Per supportare registrazione e riproduzione, convalida delle proprietà e navigazione per un controllo Windows Form
 Implementare l'accessibilità per il controllo come descritto nella procedura seguente e descritto in dettaglio in <xref:System.Windows.Forms.AccessibleObject>.
 
-![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
+![Diagramma delle classi in ChartControl che mostra la relazione tra CreateAccessabilityInstance e la classe ChartControl. CurveLegend.](../test/media/cuit_accessible.png)
 
 1. Implementare una classe che derivi da <xref:System.Windows.Forms.Control.ControlAccessibleObject> ed eseguire l'override della proprietà <xref:System.Windows.Forms.Control.AccessibilityObject%2A> per restituire un oggetto della classe.
 
@@ -77,11 +77,11 @@ Implementare l'accessibilità per il controllo come descritto nella procedura se
 
 Dopo aver implementato il supporto di base per la registrazione, la riproduzione e la convalida delle proprietà, è possibile rendere disponibili le proprietà personalizzate del controllo ai test codificati dell'interfaccia utente mediante l'implementazione di un plug-in <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. La procedura seguente, ad esempio, crea un provider di proprietà che consente ai test codificati dell'interfaccia utente di accedere alla proprietà di stato dei controlli figlio del controllo CurveLegend del grafico:
 
-![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
+![Screenshot della finestra principale del generatore di test codificati dell'interfaccia utente parzialmente analizzato da una finestra Aggiungi asserzioni con la proprietà stato di un controllo di testo selezionato.](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>Per supportare la convalida delle proprietà personalizzate
 
-![CUIT&#95;Props](../test/media/cuit_props.png)
+![Diagramma delle classi in ChartControl e ChartControlExtension con le classi ChartControlExtensionPackage e ChartControlIPropertyProvider evidenziate.](../test/media/cuit_props.png)
 
 1. Eseguire l'override della proprietà <xref:System.Windows.Forms.AccessibleObject.Description%2A> dell'oggetto accessibile CurveLegend per passare valori di proprietà avanzate nella stringa di descrizione. Se si specificano più valori, separarli con il punto e virgola (;).
 
@@ -149,7 +149,7 @@ Se è stato implementato un provider di proprietà per offrire accesso alle prop
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Per aggiungere una classe specializzata per accedere al proprio controllo
 
-![CUIT&#95;CodeGen](../test/media/cuit_codegen.png)
+![Diagramma delle classi in ChartControl e ChartControlExtension con la classe CurveLegend evidenziata in ChartControlExtensionPackage.](../test/media/cuit_codegen.png)
 
 1. Implementare una classe che sia derivata da <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> e aggiungere il tipo del controllo alla raccolta di proprietà di ricerca nel costruttore.
 
@@ -165,7 +165,7 @@ Quando Visual Studio registra un test, acquisisce ogni evento di mouse e tastier
 
 ### <a name="to-support-intent-aware-actions"></a>Per supportare le azioni sensibili allo scopo
 
-![CUIT&#95;Actions](../test/media/cuit_actions.png)
+![Diagramma delle classi ChartControl e ChartControlExtensionPackage con la classe ChartControlActionFilter evidenziata in ChartControlExtensionPackage.](../test/media/cuit_actions.png)
 
 1. Implementare una classe di filtro azioni che sia derivata da [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)), eseguendo l'override delle proprietà [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29), [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110)), [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110)), [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110)), [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) e [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)).
 
@@ -198,7 +198,7 @@ Il provider di proprietà e il filtro azioni vengono implementati in un pacchett
 
 6. Nel generatore di test codificati dell'interfaccia utente creare le asserzioni per verificare il provider di proprietà e registrare azioni per verificare i filtri azioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Windows.Forms.AccessibleObject>
 - [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)

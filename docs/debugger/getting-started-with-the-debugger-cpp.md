@@ -1,6 +1,6 @@
 ---
 title: 'Esercitazione: eseguire il debug di codice C++'
-description: Informazioni su come avviare il debugger di Visual Studio, eseguire il codice un'istruzione alla volta ed esaminare i dati.
+description: Informazioni sulle funzionalità del debugger di Visual Studio e su come avviare il debugger, eseguire il codice un'istruzione alla volta ed esaminare i dati in un'applicazione C++.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 02/04/2020
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47b1a031a6c4e4e823a1fcc12aba228750aee27e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4cc5d0b85ac1406f214784976ca23467a0e0eb6c
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77091808"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847094"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Esercitazione: Informazioni sul debug del codice C++ tramite Visual Studio
 
@@ -86,7 +86,7 @@ In primo luogo, verrà creato un progetto di applicazione console C++. Il tipo d
 
 1. Aprire Visual Studio 2019.
 
-   Se la finestra di avvio non è aperta, **File** scegliere > **finestra di avvio**file.
+   Se la finestra di avvio non è aperta,  scegliere > **finestra di avvio** file.
 
 1. Nella finestra Start scegliere **Crea un nuovo progetto**.
 
@@ -107,7 +107,7 @@ In primo luogo, verrà creato un progetto di applicazione console C++. Il tipo d
 
 ## <a name="create-the-application"></a>Creazione dell'applicazione
 
-1. In *Get-Started-debugging. cpp*sostituire tutto il codice predefinito con il codice seguente:
+1. In *Get-Started-debugging. cpp* sostituire tutto il codice predefinito con il codice seguente:
 
     ```cpp
     #include <string>
@@ -263,7 +263,7 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
 1. Osservare la finestra **Auto** nella parte inferiore dell'editor di codice.
 
-    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo **debug**  >  **Windows**  >  **auto**di Windows.
+    Se è chiuso, aprirlo mentre è in pausa nel debugger scegliendo **debug**  >    >  **auto** di Windows.
 
     Nella finestra **Auto** vengono visualizzate le variabili e i relativi valori correnti. La finestra **Auto** mostra tutte le variabili usate nella riga corrente o nella riga precedente (vedere la documentazione per il comportamento specifico del linguaggio).
 
@@ -287,7 +287,7 @@ Le funzionalità che consentono di esaminare le variabili sono tra le funzionali
 
 1. Mentre l'esecuzione è in pausa nel ciclo `for`, fare clic sulla finestra **Stack di chiamate**, visualizzata per impostazione predefinita nel riquadro inferiore destro.
 
-    Se è chiuso, aprirlo mentre è sospeso nel debugger scegliendo **debug**  >  **Windows**  >  **stack di chiamate**Windows.
+    Se è chiuso, aprirlo mentre è sospeso nel debugger scegliendo **debug**  >    >  **stack di chiamate** Windows.
 
 2. Fare clic su **F11** alcune volte fino a quando non viene visualizzata la pausa del debugger nel `SendMessage` metodo. Osservare la finestra **Stack di chiamate**.
 

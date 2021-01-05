@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: a7bf174191a6a2fb013aa3d25880b01bc2e7f070
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d11ffcb2c43d2c519d75d43afad6383e0bfaa44a
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801672"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761277"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Guida introduttiva: aprire ed eseguire codice Python in una cartella
 
@@ -70,11 +70,11 @@ In questi casi, è anche necessario aggiungere una riga al file JSON di configur
 
 1. Fare clic con il pulsante destro del mouse sul file di avvio Python (con estensione *py*) in **Esplora soluzioni** e scegliere **Impostazioni per debug e avvio**.
 
-    ![Comando Impostazioni per debug e avvio per un file di Python](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
+    ![Screenshot della visualizzazione cartella Esplora soluzioni con il file contemplate-koans.py selezionato e impostazioni di debug e avvio selezionate nel menu di scelta rapida.](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
 
 1. Nella finestra di dialogo **Seleziona un debugger** visualizzata selezionare **Predefinito** e quindi scegliere **Seleziona**.
 
-    ![Comando Impostazioni per debug e avvio per un file di Python](media/quickstart-open-folder/10-select-debugger.png)
+    ![Screenshot della finestra di dialogo Seleziona un debugger con il debugger predefinito selezionato e il pulsante Seleziona.](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
     > Se non viene visualizzato il **valore predefinito** , assicurarsi di aver scelto un file Python *. py* quando si seleziona il comando **debug e avvia Impostazioni** . Visual Studio usa il tipo di file per determinare quali opzioni del debugger visualizzare.
@@ -109,7 +109,7 @@ In questi casi, è anche necessario aggiungere una riga al file JSON di configur
 > [!div class="nextstepaction"]
 > [Esercitazione: Usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Guida introduttiva: Creare un progetto Python a partire da un codice esistente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 - [Guida introduttiva: creare un progetto Python da un repository](quickstart-03-python-in-visual-studio-project-from-repository.md)

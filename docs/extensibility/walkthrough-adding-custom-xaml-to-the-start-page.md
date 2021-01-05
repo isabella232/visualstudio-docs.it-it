@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: aggiunta di codice XAML personalizzato alla pagina iniziale | Microsoft Docs'
+description: Per informazioni su come creare una pagina iniziale personalizzata di Visual Studio che contenga un Web browser, usare questa procedura dettagliata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 85cc6520ea86db664de676232e8d61a643483ca4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 8f23b1331b2c083a38f6b11d9a4a3647474b2f04
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012074"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862789"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Procedura dettagliata: aggiungere XAML personalizzato alla pagina iniziale
 
@@ -81,13 +83,13 @@ Questa procedura dettagliata illustra come creare una pagina iniziale personaliz
 
 7. Chiudere l'istanza sperimentale.
 
-Per applicare la pagina iniziale personalizzata, in **strumenti**  >  **Opzioni**  >  **ambiente**selezionare **Startup (avvio**). Nell'elenco **Personalizza pagina iniziale** selezionare il file *XAML* e fare clic su **OK**.
+Per applicare la pagina iniziale personalizzata, in **strumenti**  >  **Opzioni**  >  **ambiente** selezionare **Startup (avvio**). Nell'elenco **Personalizza pagina iniziale** selezionare il file *XAML* e fare clic su **OK**.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 La pagina iniziale di Visual Studio contiene ora una scheda che consente di visualizzare una scheda Web browser e una scheda pulsante. È possibile creare pagine iniziali personalizzate con altre funzionalità usando il modello *code-behind* per aggiungere un file con estensione dll personalizzato, come illustrato in [aggiunta del controllo utente alla pagina iniziale](../extensibility/adding-user-control-to-the-start-page.md). È possibile condividere le pagine iniziali personalizzate con altri utenti pubblicando il file con estensione VSIX risultante nel sito Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o in un altro sito Web o in una condivisione di rete. Per altre informazioni, vedere [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Personalizzare la pagina iniziale](../ide/customizing-the-start-page-for-visual-studio.md)
 - [Controlli contenitore WPF](/previous-versions/bb675291(v=vs.110))

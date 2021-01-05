@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c6c09bbf74cca803156842d185b5bf86ff52439
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: a6f0d126853c518692725d495586b3adfa57c9aa
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668820"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761355"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Come segnalare un problema con Visual Studio o il programma di installazione di Visual Studio
 
@@ -24,8 +24,9 @@ ms.locfileid: "97668820"
 È possibile segnalare un problema da Visual Studio o dal programma di installazione. Lo strumento di feedback integrato consente di aggiungere facilmente informazioni di diagnostica che consentono ai team di Visual Studio di diagnosticare e risolvere i problemi. Questa è la procedura per segnalare un problema.
 
 1. **In Visual Studio**, selezionare l'icona di feedback nell'angolo superiore destro e selezionare Segnala un problema. È anche possibile accedere allo strumento per il feedback dal menu **Guida**  >  **Invia commenti e suggerimenti**  >  **segnala un problema**.
-![Elemento popup per la segnalazione di un problema nella community degli sviluppatori di Visual Studio](media/feedback-button.png) In alternativa, segnalare un problema nel **programma di installazione di Visual Studio** se non è possibile installare Visual Studio o non è possibile accedere allo strumento di feedback all'interno di Visual Studio.  Nel programma di installazione selezionare l'icona di feedback nell'angolo superiore destro e selezionare Segnala un problema.
-![Segnala un messaggio popup relativo a un problema nella community di sviluppatori di Visual Studio nel programma di installazione](media/installer.png)
+![Screenshot che mostra l'icona del feedback selezionata nell'angolo superiore destro della finestra di Visual Studio e segnala un problema selezionato nel menu di scelta rapida.](media/feedback-button.png)
+In alternativa, segnalare un problema in **programma di installazione di Visual Studio** se non è possibile installare Visual Studio o non si riesce ad accedere allo strumento per il feedback all'interno di Visual Studio.  Nel programma di installazione selezionare l'icona di feedback nell'angolo superiore destro e selezionare Segnala un problema.
+![Screenshot che mostra l'icona Commenti e suggerimenti selezionata nell'angolo superiore destro del Programma di installazione di Visual Studio e segnala un problema selezionato nel menu di scelta rapida.](media/installer.png)
 
 1. Se si fa clic su **segnala un problema** , si aprirà il browser predefinito e si effettuerà l'accesso con lo stesso account usato per accedere a Visual Studio
 
@@ -67,11 +68,11 @@ Quando in un problema mancano informazioni importanti, viene assegnato lo stato 
 
 1. Per visualizzare tutti i report nello stato **needs more info (ulteriori informazioni** ), seguire il collegamento nel messaggio di posta elettronica al report relativo al problema o passare alla Home page.
 
-    ![Commenti e suggerimenti](../ide/media/feedback-my-feedback.png)
+    ![Screenshot della Home page della finestra feedback di Visual Studio. Viene elencato un elemento di feedback ed è contrassegnato con un'etichetta "need more info" in rosso.](../ide/media/feedback-my-feedback.png)
 
 1. Selezionando il collegamento fornire altre informazioni nel report problema si passa a una nuova schermata. Da qui è possibile visualizzare le informazioni richieste.
 
-   ![Dettagli delle informazioni da inviare a Microsoft](../ide/media/feedback-need-more-info.png)
+   ![Screenshot della finestra feedback di Visual Studio che mostra le informazioni richieste da Microsoft per la risoluzione del problema.](../ide/media/feedback-need-more-info.png)
 
 1. È possibile specificare altre informazioni aggiungendo commenti o allegati oppure registrando la procedura. Questa esperienza è simile alla segnalazione di un nuovo problema o all'inserimento di informazioni aggiuntive quando si vota un problema.
 
@@ -85,7 +86,7 @@ Se non si vuole o non si può usare Visual Studio per segnalare un problema, ten
 
 Se non si ha un problema da segnalare ma si vuole suggerire una funzionalità, è disponibile un posto anche per questa operazione. Per altre informazioni, vedere la pagina [Suggerire una funzionalità](https://aka.ms/feedback/suggest?space=8).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Linee guida della community degli sviluppatori](./developer-community-guidelines.md)
 * [Opzioni per commenti e suggerimenti in Visual Studio](../ide/feedback-options.md)

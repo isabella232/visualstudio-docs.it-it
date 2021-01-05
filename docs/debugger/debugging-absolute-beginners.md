@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c3cf9d5e4d72ed316344d1bda930d0416e9efe5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6202fa019aed8e6fc9eb9ff93bdb390bf22f2911
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77416396"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761251"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Debug per principianti
 
@@ -64,7 +64,7 @@ Quando si esegue un'app normalmente, errori e risultati non corretti sono visibi
 
 L'esecuzione di un'app all'interno di un debugger, o in *modalità di debug*, consente al debugger di monitorare attivamente tutto ciò che accade durante l'esecuzione del programma. Consente anche di sospendere l'app in un punto qualsiasi per esaminarne lo stato e di eseguire quindi il codice riga per riga per controllare ogni dettaglio durante l'esecuzione.
 
-In Visual Studio è possibile attivare la modalità di debug tramite **F5** (oppure **Debug**il  >  comando di menu debug**Avvia debug** o il pulsante **Avvia debug** ![Avvia](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") debug sulla barra degli strumenti Debug). In caso di eccezioni, l'Helper eccezioni di Visual Studio visualizza il punto esatto in cui si è verificata l'eccezione e offre altre informazioni utili. Per altre informazioni su come gestire le eccezioni nel codice, vedere [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md).
+In Visual Studio è possibile attivare la modalità di debug tramite **F5** (oppure il  >  comando di menu debug **Avvia debug** o il pulsante **Avvia debug** ![Avvia](../debugger/media/dbg-tour-start-debugging.png "Avvia debug") debug sulla barra degli strumenti Debug). In caso di eccezioni, l'Helper eccezioni di Visual Studio visualizza il punto esatto in cui si è verificata l'eccezione e offre altre informazioni utili. Per altre informazioni su come gestire le eccezioni nel codice, vedere [Tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md).
 
 Se non è stata restituita un'eccezione, probabilmente si ha già un'idea di dove cercare il problema nel codice. In questi casi si usano i *punti di interruzione* con il debugger per avere l'opportunità di esaminare il codice più attentamente. I punti di interruzione rappresentano la funzionalità di base essenziale per un debug affidabile. Un punto di interruzione indica il punto in cui Visual Studio deve sospendere il codice in esecuzione in modo da consentire di esaminare i valori delle variabili, il comportamento della memoria o la sequenza di esecuzione del codice.
 
@@ -78,7 +78,7 @@ Verrà creata un'applicazione con alcuni bug.
 
 1. È necessario che Visual Studio sia installato e che il carico di lavoro **sviluppo per desktop .NET** o il carico di lavoro **sviluppo multipiattaforma .NET Core** sia installato, a seconda del tipo di app che si vuole creare.
 
-    Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/)per   installarlo gratuitamente.
+    Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
 
     Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, fare clic su **strumenti**  >  **Ottieni strumenti e funzionalità**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro sviluppo di applicazioni **desktop .NET** (o **sviluppo multipiattaforma .NET Core**), quindi scegliere **modifica**.
 
@@ -229,17 +229,17 @@ Verrà creata un'applicazione con alcuni bug.
 
 1. Passare il puntatore sulla variabile `GalaxyType` a destra e quindi, a sinistra dell'icona a forma di chiave inglese, espandere `theGalaxy.GalaxyType`. Si può osservare che `GalaxyType` contiene una proprietà `MyGType` e il valore della proprietà è impostato su `Spiral`.
 
-    ![Ispezionare una variabile](../debugger/media/beginners-inspect-variable.png)
+    ![Screenshot del debugger di Visual Studio con una riga di codice in giallo e un menu espanso sotto la proprietà la galassia. GalaxyType alla fine della riga.](../debugger/media/beginners-inspect-variable.png)
 
     "Spiral" è effettivamente il valore corretto che ci si aspettava di stampare nella console. La possibilità di accedere a questo valore nel codice durante l'esecuzione dell'app è pertanto un buon punto di partenza. In questo scenario viene usata l'API non corretta. Si vedrà come risolvere questo problema durante l'esecuzione del codice nel debugger.
 
 1. Nello stesso codice, durante il debug, posizionare il cursore alla fine di `theGalaxy.GalaxyType` e modificarlo in `theGalaxy.GalaxyType.MyGType`. Anche se questa modifica è consentita, l'editor del codice visualizza un errore che indica l'impossibilità di compilare il codice.
 
-    ![Errore di sintassi](../debugger/media/beginners-edit.png)
+    ![Screenshot del debugger di Visual Studio con una riga di codice evidenziata in rosso e una finestra di messaggio modifica e continuazione con il pulsante Modifica selezionato.](../debugger/media/beginners-edit.png)
 
 1. Fare clic su **Modifica** nella finestra di messaggio **Modifica e continuazione**. Un messaggio di errore viene ora visualizzato nella finestra **Elenco errori**. L'errore indica che `'object'` non contiene una definizione per `MyGType`.
 
-    ![Errore di sintassi](../debugger/media/beginners-no-definition.png)
+    ![Screenshot del debugger di Visual Studio con una riga di codice evidenziata in rosso e una finestra Elenco errori con due errori elencati.](../debugger/media/beginners-no-definition.png)
 
     Anche se ogni galassia è stata impostata con un oggetto di tipo `GType` (che include la proprietà `MyGType`), il debugger non riconosce l'oggetto `theGalaxy` come oggetto di tipo `GType`. Cosa è successo? Esaminare tutto il codice che imposta il tipo di galassia. Durante questa operazione, si noterà che la classe `GType` include certamente una proprietà `MyGType`, ma qualcosa non va. Il messaggio di errore relativo a `object` è l'indizio; per l'interprete del linguaggio, il tipo è un oggetto di tipo `object` anziché un oggetto di tipo `GType`.
 
@@ -259,7 +259,7 @@ Verrà creata un'applicazione con alcuni bug.
 
     Ora, quando il debugger viene sospeso in corrispondenza di `Console.WriteLine`, passando il puntatore su `theGalaxy.GalaxyType.MyGType` si noterà che il valore è impostato correttamente.
 
-1. Rimuovere il punto di interruzione facendo clic sul cerchio del punto di interruzione nel margine sinistro (oppure facendo clic **Breakpoint**con il pulsante destro del mouse e scegliendo punto di interruzione  >  **Elimina**punto di interruzione), quindi premere **F5** per continuare.
+1. Rimuovere il punto di interruzione facendo clic sul cerchio del punto di interruzione nel margine sinistro (oppure facendo clic con il pulsante destro del mouse e scegliendo punto di interruzione  >  **Elimina** punto di interruzione), quindi premere **F5** per continuare.
 
     L'app viene eseguita e visualizza l'output. Ora sembra tutto corretto, ma si nota qualcosa. Ci si aspettava che la galassia "Small Magellanic Cloud" venisse indicata nell'output della console come galassia di tipo "Irregular", ma il tipo di galassia non viene indicato affatto.
 
@@ -288,7 +288,7 @@ Verrà creata un'applicazione con alcuni bug.
 
 1. Premere **F5** e passare di nuovo il puntatore sulla variabile `type`. Ripetere questo passaggio finché non si vedrà il valore `I` nella variabile `type`.
 
-    ![Ispezionare una variabile](../debugger/media/beginners-inspecting-data.png)
+    ![Screenshot del debugger di Visual Studio con una riga di codice in giallo e una piccola finestra che mostra il valore della variabile di tipo come 73' I '.](../debugger/media/beginners-inspecting-data.png)
 
 1. Premere ora **F11** (**Debug** > **Esegui istruzione** o il pulsante **Esegui istruzione** nella barra degli strumenti di debug).
 

@@ -1,6 +1,7 @@
 ---
 title: Connettersi a processi in esecuzione con il debugger
-ms.custom: seodec18
+description: Scopri come alleghi il debugger di Visual Studio a un processo in esecuzione in un computer locale o remoto.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/12/2020
 ms.topic: conceptual
 f1_keywords:
@@ -28,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a33af839406497a2a30fba2f5103a64a1da36ed7
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 1fd1ff5ff0f8c7510185236c425ddd870f8b500f
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671459"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97760926"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Associare a processi in esecuzione con il debugger di Visual Studio
 
@@ -58,7 +59,7 @@ Per riconnettersi rapidamente a un processo collegato in precedenza, vedere [Ric
 
 1. Impostare la **destinazione della connessione** sul nome del computer locale.
 
-   ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process")
+   ![Screenshot della finestra di dialogo Connetti a processo, con la destinazione della connessione impostata sul nome del computer locale.](../debugger/media/DBG_Basics_Attach_To_Process.png)
 
 1. Nell'elenco **processi disponibili** individuare e selezionare il processo o i processi a cui si desidera connettersi.
 
@@ -248,8 +249,8 @@ Se si desiderano informazioni più specifiche sui motivi per cui il debugger non
 
     La connessione non verrà eseguita e verrà visualizzato un messaggio di errore specifico.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Debug di più processi](../debugger/debug-multiple-processes.md)
+- [Eseguire il debug di più processi](../debugger/debug-multiple-processes.md)
 - [Debug just-in-Time](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Debug remoto](../debugger/remote-debugging.md)

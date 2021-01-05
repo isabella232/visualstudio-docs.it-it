@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: be0ba7b32af5247bb0dccccb68d900cb6797cc13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8be766e078a04d713ed69aa0b9cc464433dcb73d
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801178"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761394"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Introduzione a R Tools per Visual Studio
 
@@ -62,7 +62,7 @@ Dopo aver installato R Tools per Visual Studio (RTVS), da [How to install R Tool
 
 1. Alcuni comandi, ad esempio `plot(1:100)`, aprono una nuova finestra in Visual Studio quando non è possibile visualizzare l'output direttamente nella finestra interattiva:
 
-    ![Visualizzazione di un tracciato in Visual Studio](media/getting-started-07-plot-window.png)
+    ![Screenshot di una finestra del tracciato R di Visual Studio che Visualizza l'output del tracciato della funzione Graph (1:100).](media/getting-started-07-plot-window.png)
 
 La finestra interattiva consente anche di rivedere la cronologia, caricare e salvare le aree di lavoro, collegarsi a un debugger e interagire con i file di codice sorgente anziché usare operazioni di copia e incolla. Per altri dettagli, vedere [Uso della finestra R interattivo](interactive-repl-for-r-in-visual-studio.md).
 
@@ -70,7 +70,7 @@ La finestra interattiva consente anche di rivedere la cronologia, caricare e sal
 
 L'uso anche per poco tempo della finestra interattiva consente di entrare in contatto con funzionalità di modifica di base, come IntelliSense, che possono essere usate anche nell'editor di codice. Se si immette lo stesso codice usato in precedenza, si notano gli stessi prompt di completamento automatico e di IntelliSense, ma non lo stesso output.
 
-Se si scrive il codice in un file con estensione *R*, è possibile visualizzare tutto il codice in una sola volta ed è quindi più facile apportare piccole modifiche e visualizzarne rapidamente il risultato eseguendo il codice nella finestra interattiva. È anche possibile avere quanti file si voglia in un solo progetto. Quando il codice si trova in un file è anche possibile eseguirlo un'istruzione per volta nel debugger, come illustrato più avanti in questo articolo. Queste funzionalità sono utili quando si sviluppano algoritmi di calcolo e si scrive codice per modificare uno o più set di dati, soprattutto se si vogliono esaminare tutti i risultati intermedi.
+Se si scrive il codice in un file con estensione *R*, è possibile visualizzare tutto il codice in una sola volta ed è quindi più facile apportare piccole modifiche e visualizzarne rapidamente il risultato eseguendo il codice nella finestra interattiva. È anche possibile avere quanti file si voglia in un solo progetto. Quando il codice si trova in un file, è anche possibile eseguirlo passo per passo nel debugger (descritto più avanti in questo articolo). Queste funzionalità sono utili quando si sviluppano algoritmi di calcolo e si scrive codice per modificare uno o più set di dati, soprattutto se si vogliono esaminare tutti i risultati intermedi.
 
 Ad esempio, la procedura seguente crea un breve codice per esplorare i [teoremi centrali del limite](https://en.wikipedia.org/wiki/Central_limit_theorem) (Wikipedia). Questo esempio è stato adattato da *R Cookbook* di Paul Teetor.
 
@@ -86,7 +86,7 @@ Ad esempio, la procedura seguente crea un breve codice per esplorare i [teoremi 
 
 1. Per visualizzare rapidamente i risultati, selezionare tutto il codice (**CTRL** + **A**), quindi premere **CTRL** + **invio** o fare clic con il pulsante destro del mouse e selezionare **Esegui in interattivo**. Tutto il codice selezionato viene eseguito nella finestra interattiva come se fosse stato digitato direttamente. Il risultato viene poi visualizzato in una finestra dei tracciati:
 
-    ![Visualizzazione di un tracciato in Visual Studio](media/getting-started-08-plot1.png)
+    ![Screenshot di una finestra del tracciato R di Visual Studio che visualizza un grafico della densità della popolazione.](media/getting-started-08-plot1.png)
 
 1. Per una singola riga, è sufficiente premere **CTRL** + **invio** in qualsiasi momento per eseguire la riga nella finestra interattiva.
 
@@ -103,7 +103,7 @@ Ad esempio, la procedura seguente crea un breve codice per esplorare i [teoremi 
     lines(density(samp.means))
     ```
 
-1. Premere **CTRL** + **a** e **CTRL** + di nuovo**invio** per eseguire il codice, producendo il risultato seguente:
+1. Premere **CTRL** + **a** e **CTRL** + di nuovo **invio** per eseguire il codice, producendo il risultato seguente:
 
     ![Doppio tracciato aggiornato in Visual Studio](media/getting-started-09-plot2.png)
 
@@ -125,7 +125,7 @@ Ad esempio, la procedura seguente crea un breve codice per esplorare i [teoremi 
     lines(density(samp.means))
     ```
 
-1. **CTRL** + **A** e **CTRL** + di nuovo**invio** per visualizzare il risultato:
+1. **CTRL** + **A** e **CTRL** + di nuovo **invio** per visualizzare il risultato:
 
     ![Doppio tracciato aggiornato in Visual Studio, ridimensionato correttamente](media/getting-started-10-plot3.png)
 
@@ -135,7 +135,7 @@ Nell'editor è possibile eseguire altre operazioni. Per informazioni dettagliate
 
 Uno dei principali vantaggi di Visual Studio è l'interfaccia utente di debug. RTVS è stato sviluppato su queste solide basi alle quali è stata aggiunta un'interfaccia utente innovativa, come ad esempio l'utilità [Esplora variabili](variable-explorer.md). In questo caso, vedremo solo brevemente il debug.
 
-1. Per iniziare, reimpostare l'area di lavoro corrente per cancellare tutte le operazioni eseguite finora usando **R Tools**il  >  **Session**  >  comando di menu**Reimposta** sessione di R Tools. Per impostazione predefinita, tutte le operazioni eseguite nella finestra interattiva vengono aggiunte alla sessione corrente, che viene usata anche dal debugger. Reimpostando la sessione, si garantisce che la sessione di debug venga avviata senza dati preesistenti. Il comando **Reimposta**, tuttavia, non ha alcun effetto sul file di origine *script.R*, poiché questo viene gestito e salvato fuori dell'area di lavoro.
+1. Per iniziare, reimpostare l'area di lavoro corrente per cancellare tutte le operazioni eseguite finora usando il  >    >  comando di menu **Reimposta** sessione di R Tools. Per impostazione predefinita, tutte le operazioni eseguite nella finestra interattiva vengono aggiunte alla sessione corrente, che viene usata anche dal debugger. Reimpostando la sessione, si garantisce che la sessione di debug venga avviata senza dati preesistenti. Il comando **Reimposta**, tuttavia, non ha alcun effetto sul file di origine *script.R*, poiché questo viene gestito e salvato fuori dell'area di lavoro.
 
 1. Con il file *script.R* creato nella sezione precedente, impostare un punto di interruzione sulla riga che inizia con `pop <-` posizionando il cursore sulla riga e premendo **F9** o selezionando il comando di menu **Debug** > **Imposta/Rimuovi punto di interruzione**. In alternativa, fare clic sul margine sinistro (o sulla barra di navigazione) per la riga in cui viene visualizzato il punto di interruzione rosso:
 
@@ -163,7 +163,7 @@ Per informazioni più approfondite, vedere [Debugging in R Visual Studio](debugg
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-In questa procedura dettagliata sono state illustrate le nozioni di base dei progetti di R, usando la finestra interattiva, la modifica del codice e il debug in Visual Studio. Per passare all'esplorazione di altre funzionalità, vedere gli articoli seguenti, nonché quelli illustrati nel sommario:
+In questa procedura dettagliata sono state illustrate le nozioni di base dei progetti di R, usando la finestra interattiva, la modifica del codice e il debug in Visual Studio. Per continuare a esplorare altre funzionalità, vedere gli articoli e gli articoli seguenti illustrati nel Sommario:
 
 - [Progetti di esempio](getting-started-samples.md)
 - [Modifica del codice](editing-r-code-in-visual-studio.md)

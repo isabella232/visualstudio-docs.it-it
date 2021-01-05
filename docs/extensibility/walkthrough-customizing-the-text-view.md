@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: personalizzazione della visualizzazione di testo | Microsoft Docs'
+description: Per informazioni su come personalizzare una visualizzazione di testo, modificare una delle diverse proprietà nella relativa mappa in formato editor utilizzando questa procedura dettagliata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b7a62ee2b55bf2b56ae1d8e28fc1910ed444c29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 057e2a68e1d9a130f69441d8aec4b6a7fe0249e9
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904930"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862972"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Procedura dettagliata: personalizzare la visualizzazione di testo
 È possibile personalizzare una visualizzazione di testo modificando una delle proprietà seguenti nella mappa di formato dell'Editor:
@@ -91,5 +93,5 @@ ms.locfileid: "85904930"
 
 5. Attivare lo spazio vuoto visibile. Scegliere **Avanzate** dal menu **modifica** , quindi fare clic su **Visualizza spazi vuoti**. Digitare alcune schede nel testo. Verranno visualizzate le frecce rosse che rappresentano le schede.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Punti di estensione Editor e servizio di linguaggio](../extensibility/language-service-and-editor-extension-points.md)

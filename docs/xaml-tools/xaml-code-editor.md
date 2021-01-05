@@ -7,12 +7,12 @@ monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29fa854ab00764fc0166a53d8b48989f2c74f036
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329177"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833299"
 ---
 # <a name="xaml-code-editor"></a>Editor di codice XAML
 
@@ -109,14 +109,14 @@ Ecco come:
 
     ![Opzione "Rimuovi using superflue" dell'editor IDE dal menu azioni rapide](media/xaml-code-editor-remove-usings.png "Screenshot dell'opzione Rimuovi using superflue dell'editor IDE dal menu azioni rapide")
 
-1. Scegliere se si desidera correggere tutte le occorrenze nel **documento**, nel **progetto**o nella **soluzione**.
+1. Scegliere se si desidera correggere tutte le occorrenze nel **documento**, nel **progetto** o nella **soluzione**.
 1. Visualizzare la finestra di dialogo **Anteprima** , quindi scegliere **applica**.
 
 È anche possibile accedere a questa funzionalità dalla barra dei menu. A tale scopo, scegliere **modifica**  >  **IntelliSense**  >  **Rimuovi e Ordina using**.
 
 Per ulteriori informazioni sull'utilizzo delle impostazioni, vedere la pagina [Ordina using](../ide/reference/sort-usings.md) . Per ulteriori informazioni su IntelliSense, vedere la pagina relativa [a IntelliSense in Visual Studio](../ide/using-intellisense.md) . Per ulteriori informazioni su alcune delle modalità tipiche di utilizzo delle azioni rapide da parte degli sviluppatori, vedere la pagina delle [azioni rapide comuni](../ide/common-quick-actions.md) .
 
-#### <a name="change-tracking"></a>Rilevamento modifiche
+#### <a name="change-tracking"></a>Change tracking
 
 Il colore del margine sinistro consente di tenere traccia delle modifiche apportate al file. Ecco il modo in cui i colori sono correlati alle azioni intraprese:
 
@@ -136,7 +136,7 @@ Per ulteriori informazioni sul rilevamento &mdash; delle modifiche per includere
 
 Quando si modifica il codice nell'editor di codice XAML, sono disponibili diverse funzionalità a cui è possibile accedere tramite il menu di scelta rapida. La maggior parte di queste funzionalità sono disponibili universalmente nell'IDE di Visual Studio, mentre altre sono specifiche dell'uso di un editor di codice insieme a una finestra di progettazione.
 
-![Menu di scelta rapida dell'editor di codice XAML in Visual Studio](media/xaml-code-editor-right-click-menu.png "Screenshot del menu di scelta rapida dell'editor di codice XAML in Visual Studio 2019")
+![Screenshot del menu di scelta rapida dell'editor di codice XAML in Visual Studio 2019.](media/xaml-code-editor-right-click-menu.png)
 
 Di seguito sono riportate le caratteristiche di ogni funzionalità e il modo in cui è utile:
 
@@ -163,7 +163,7 @@ La barra di scorrimento può eseguire più di scorrere il codice. È anche possi
 
 Nella barra di scorrimento dell'editor di codice è presente un pulsante di **divisione** in alto a destra. Quando lo si sceglie, è possibile aprire un altro riquadro dell'editor di codice. Questa operazione è utile perché funzionano indipendentemente l'una dall'altra, quindi è possibile usarle per lavorare sul codice in posizioni diverse.
 
-![Editor del codice XAML, solo il riquadro centrale, in Visual Studio](media/code-editor-split-window-button.png "Screenshot dell'editor del codice XAML, solo del riquadro centrale, in Visual Studio 2019")
+![Screenshot che illustra il riquadro centrale dell'editor di codice XAML in Visual Studio 2019 con il pulsante di suddivisione evidenziato in alto a destra nel riquadro.](media/code-editor-split-window-button.png)
 
 Per ulteriori informazioni su come suddividere una finestra dell'editor, vedere la pagina [gestione delle finestre dell'editor](../ide/how-to-manage-editor-windows.md) .
 
@@ -230,7 +230,7 @@ Di seguito sono riportati alcuni esempi di come possono trarre vantaggio dall'es
 
   ![Opzione Rimuovi spazi dei nomi superflui nell'editor del codice XAML dalla lampadina azioni rapide](media/xaml-code-editor-dimmed-namespaces-preview.png "Screenshot dell'opzione Rimuovi spazi dei nomi non necessari dell'editor del codice XAML visualizzata tramite la lampadina azioni rapide")
 
-- **Rinominare lo spazio dei nomi**. Questa funzionalità, disponibile dal menu di scelta rapida dopo aver evidenziato uno spazio dei nomi, semplifica la modifica di più istanze di un'impostazione alla volta. Per accedere a questa funzionalità, è anche possibile usare la barra dei menu, **modificare**  >  **Rinomina refactoring**  >  **Rename**oppure premere **CTRL** + **r**, quindi premere di nuovo **CTRL** + **r** .
+- **Rinominare lo spazio dei nomi**. Questa funzionalità, disponibile dal menu di scelta rapida dopo aver evidenziato uno spazio dei nomi, semplifica la modifica di più istanze di un'impostazione alla volta. Per accedere a questa funzionalità, è anche possibile usare la barra dei menu, **modificare**  >  **Rinomina refactoring**  >  oppure premere **CTRL** + **r**, quindi premere di nuovo **CTRL** + **r** .
 
   ![Opzione Rinomina spazio dei nomi dell'editor del codice XAML dal menu di scelta rapida](media/code-editor-rename-namespace.png "Screenshot dell'opzione Rinomina spazio dei nomi dell'editor del codice XAML visualizzato tramite il menu di scelta rapida")
 
@@ -277,7 +277,7 @@ Per altre informazioni su *tutte* le impostazioni nell'IDE di Visual Studio, ved
 
 Nella finestra di dialogo [Opzioni](../ide/reference/options-text-editor-xaml-formatting.md) per XAML i primi tre elementi seguenti sono universali per tutti i linguaggi di programmazione supportati dall'IDE di Visual Studio. Per ulteriori informazioni su queste opzioni e su come usarle, vedere le informazioni collegate nella tabella seguente.
 
-|Name  |Altre informazioni  |
+|Nome  |Altre informazioni  |
 |---------|---------|
 |Generale  | [Finestra di dialogo Opzioni: editor di testo > tutti i linguaggi](../ide/reference/options-text-editor-all-languages.md) |
 |Barre di scorrimento | [Opzioni, Editor di testo, Tutti i linguaggi, Barre di scorrimento](../ide/reference/options-text-editor-all-languages-scroll-bars.md) |
@@ -287,7 +287,7 @@ Nella finestra di dialogo [Opzioni](../ide/reference/options-text-editor-xaml-fo
 
 Nella tabella seguente sono elencate le impostazioni della finestra di dialogo [Opzioni](../ide/reference/options-text-editor-xaml-formatting.md) che consentono di migliorare l'esperienza di modifica quando si sviluppano app basate su XAML. Per ulteriori informazioni su queste opzioni e su come usarle, vedere le informazioni collegate.
 
-|Name  |Altre informazioni  |
+|Nome  |Altre informazioni  |
 |---------|---------|
 |Formattazione | [Opzioni, Editor di testo, XAML, Formattazione](../ide/reference/options-text-editor-xaml-formatting.md) |
 |Varie |  [Opzioni, Editor di testo, XAML, Varie](../ide/reference/options-text-editor-xaml-miscellaneous.md) |
@@ -299,7 +299,7 @@ Nella tabella seguente sono elencate le impostazioni della finestra di dialogo [
 
 Per altre informazioni su come modificare il codice in tempo reale mentre si esegue l'app in modalità di debug, vedere la pagina relativa al [ricaricamento a caldo di XAML](xaml-hot-reload.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Funzionalità dell'editor di codice di Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md)
 - [XAML in all UWP](/windows/uwp/xaml-platform/xaml-overview/)

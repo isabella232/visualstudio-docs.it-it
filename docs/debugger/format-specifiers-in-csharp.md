@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31739b9c8fecc862c891173a792986b467730400
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: a832bcee3f722cabaedcb3ac0672dbe09a4e77c4
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862789"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761212"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Identificatori di formato in C# nel debugger di Visual Studio
 È possibile modificare il formato in cui un valore viene visualizzato nella finestra **espressioni di controllo** usando gli identificatori di formato. È anche possibile usare gli identificatori di formato nella finestra di **controllo immediato** , nella finestra di **comando** , in [punti](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e nelle finestre di origine. Se si sospende un'espressione in queste finestre, il risultato verrà visualizzato in un  [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) nella visualizzazione del formato specificato.
@@ -52,7 +52,7 @@ Verrà usato il codice di esempio seguente:
 
 Aggiungere la `my_var1` variabile alla finestra **espressioni di controllo** durante il debug, **eseguire il debug** di  >  **Windows**  >  **Watch**  >  **Watch 1**. Fare quindi clic con il pulsante destro del mouse sulla variabile e scegliere **visualizzazione esadecimale**. A questo punto la finestra **espressioni di controllo** Mostra il valore 0x0065. Per visualizzare questo valore come intero decimale anziché come intero esadecimale, aggiungere l'identificatore di formato decimale **, d** nella colonna **nome** dopo il nome della variabile. La colonna **valore** ora Visualizza **101**.
 
-![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+![Screenshot di Visual Studio finestra Espressioni di controllo con una riga che mostra my_var1, d con un valore di 101 e un tipo di int.](../debugger/media/watchformatcsharp.png)
 
 ::: moniker range=">= vs-2019" 
 

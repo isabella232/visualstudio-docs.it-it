@@ -1,5 +1,7 @@
 ---
 title: Eseguire il debug con il debugger JIT | Microsoft Docs
+description: Eseguire il debug usando il debugger JIT in Visual Studio. Il debug JIT può avviare automaticamente Visual Studio quando si verifica un errore o un arresto anomalo dell'app.
+ms.custom: SEO-VS-2020
 ms.date: 09/24/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b6a0e43a8d0980615087c946e5dd14deef1b0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a03afa64d19e3ccd0efbb170b4305049f6bfee30
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350576"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761342"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Eseguire il debug con il debugger JIT in Visual Studio
 
@@ -31,7 +33,7 @@ Il debug JIT funziona per le applicazioni desktop di Windows. Non funziona per l
 >[!NOTE]
 >Per abilitare o disabilitare il debug JIT, è necessario eseguire Visual Studio come amministratore. L'abilitazione o la disabilitazione del debug just-in-Time imposta una chiave del registro di sistema e i privilegi di amministratore potrebbero essere necessari per modificare tale chiave. Per aprire Visual Studio come amministratore, fare clic con il pulsante destro del mouse sull'app Visual Studio e scegliere **Esegui come amministratore**.
 
-È possibile configurare il debug JIT dalla finestra di dialogo Opzioni di Visual Studio **Tools**  >  **Options** (o **Debug**  >  **Opzioni**di debug).
+È possibile configurare il debug JIT dalla finestra di dialogo Opzioni di Visual Studio **Tools**  >   (o   >  **Opzioni** di debug).
 
 **Per abilitare o disabilitare il debug JIT:**
 
@@ -39,7 +41,7 @@ Il debug JIT funziona per le applicazioni desktop di Windows. Non funziona per l
 
    ![Abilitare o disabilitare il debug JIT](../debugger/media/dbg-jit-enable-or-disable.png "Abilitare o disabilitare il debug JIT")
 
-1. Nella casella **Abilita debug JIT per questi tipi di codice** selezionare i tipi di codice per cui si vuole eseguire il debug JIT: **gestito**, **nativo**e/o **script**.
+1. Nella casella **Abilita debug JIT per questi tipi di codice** selezionare i tipi di codice per cui si vuole eseguire il debug JIT: **gestito**, **nativo** e/o **script**.
 
 1. Selezionare **OK**.
 
@@ -79,7 +81,7 @@ Per impostazione predefinita, le app Windows Form dispongono di un gestore di ec
 
 Per abilitare il debug JIT invece della gestione degli errori standard di Windows Form, aggiungere le impostazioni seguenti:
 
-- Nella `system.windows.forms` sezione del file *machine.config* o * \<app name>.exe.config* , impostare il `jitDebugging` valore su `true` :
+- Nella `system.windows.forms` sezione del file *machine.config* o *\<app name>.exe.config* , impostare il `jitDebugging` valore su `true` :
 
     ```xml
     <configuration>
@@ -120,27 +122,27 @@ Per questo esempio, si renderà un'app console C# in Visual Studio che genera un
 
    > [!NOTE]
    > - Scegliere **debug** configurazione per l'esperienza di debug completa.
-   > - Se si seleziona [Release](../debugger/how-to-set-debug-and-release-configurations.md) Configuration (configurazione versione), è necessario disattivare [Just My Code](../debugger/just-my-code.md) affinché questa procedura funzioni. In **strumenti**  >  **Opzioni**  >  **debug**deselezionare **Abilita Just My Code**.
+   > - Se si seleziona [Release](../debugger/how-to-set-debug-and-release-configurations.md) Configuration (configurazione versione), è necessario disattivare [Just My Code](../debugger/just-my-code.md) affinché questa procedura funzioni. In **strumenti**  >  **Opzioni**  >  **debug** deselezionare **Abilita Just My Code**.
 
    Per ulteriori informazioni sulle configurazioni della build, vedere [informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md).
 
-1. Aprire l'app compilata *ThrowsNullException.exe* nella cartella del progetto C# (con*estensione ..\ThrowsNullException\ThrowsNullException\bin\Debug* o *..\ThrowsNullException\ThrowsNullException\bin\Release*).
+1. Aprire l'app compilata *ThrowsNullException.exe* nella cartella del progetto C# (con *estensione ..\ThrowsNullException\ThrowsNullException\bin\Debug* o *..\ThrowsNullException\ThrowsNullException\bin\Release*).
 
    Verrà visualizzata la finestra di comando seguente:
 
-   ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")
+   ![Screenshot della console per ThrowsNullException.exe, che genera un'eccezione di riferimento null non gestita (System. NullReferenceException).](../debugger/media/throwsnullexceptionconsole.png)
 
 1. Verrà visualizzata la finestra **di dialogo Scegli debugger JIT** .
 
-   ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
+   ![Screenshot della finestra di dialogo Scegli debugger JIT, che viene visualizzata dopo che l'eccezione viene visualizzata nella finestra della console ThrowsNullException.exe.](../debugger/media/justintimedialog.png)
 
-   In **debugger disponibili**selezionare **nuova istanza di \<your preferred Visual Studio version/edition> **, se non è già selezionata.
+   In **debugger disponibili** selezionare **nuova istanza di \<your preferred Visual Studio version/edition>**, se non è già selezionata.
 
 1. Selezionare **OK**.
 
    Il progetto ThrowsNullException viene aperto in una nuova istanza di Visual Studio, con l'esecuzione arrestata alla riga che ha generato l'eccezione:
 
-   ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
+   ![Screenshot del progetto ThrowsNullException in Visual Studio, con l'evidenziazione della riga di codice sorgente che ha generato l'eccezione.](../debugger/media/nullreferencesecondinstance.png)
 
 A questo punto è possibile avviare il debug. Se si esegue il debug di un'app reale, è necessario individuare il motivo per cui il codice genera l'eccezione.
 
@@ -155,9 +157,9 @@ Se il debug JIT non viene avviato quando un'app si arresta in modo anomalo, anch
 
   Per risolvere questo problema, utilizzare l'editor del registro di sistema per aggiungere un **valore DWORD** **disabilitato**, con **dati di valore** pari a **1**, alle chiavi del registro di sistema seguenti:
 
-  - **Segnalazione errori HKEY_LOCAL_MACHINE \Software\Microsoft\Windows\Windows**
+  - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows Error Reporting**
 
-  - (Per computer a 64 bit): **HKEY_LOCAL_MACHINE segnalazione errori \software\wow6432node\microsoft\windows\windows**
+  - (Per computer a 64 bit): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows Error Reporting**
 
   Per ulteriori informazioni, vedere [. Impostazioni WER](/windows/desktop/wer/wer-settings).
 
@@ -167,7 +169,7 @@ Se il debug JIT non viene avviato quando un'app si arresta in modo anomalo, anch
 
   - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
-  - (Per computer a 64 bit): **HKEY_LOCAL_MACHINE \Software\wow6432node\microsoft\windows NT\CurrentVersion\AeDebug**
+  - (Per computer a 64 bit): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 Durante il debug JIT potrebbero essere visualizzati i messaggi di errore seguenti:
 
@@ -175,7 +177,7 @@ Durante il debug JIT potrebbero essere visualizzati i messaggi di errore seguent
 
     Il debugger ha tentato di connettersi a un processo in esecuzione con un altro utente.
 
-    Per risolvere questo problema, in Visual Studio aprire **debug**  >  **Connetti a processo**e individuare il processo di cui si vuole eseguire il debug nell'elenco **processi disponibili** . Se non si conosce il nome del processo, trovare l'ID del processo nella finestra di dialogo **debugger JIT di Visual Studio** . Selezionare il processo nell'elenco **processi disponibili** e selezionare **Connetti**. Selezionare **No** per chiudere la finestra di dialogo debugger JIT.
+    Per risolvere questo problema, in Visual Studio aprire **debug**  >  **Connetti a processo** e individuare il processo di cui si vuole eseguire il debug nell'elenco **processi disponibili** . Se non si conosce il nome del processo, trovare l'ID del processo nella finestra di dialogo **debugger JIT di Visual Studio** . Selezionare il processo nell'elenco **processi disponibili** e selezionare **Connetti**. Selezionare **No** per chiudere la finestra di dialogo debugger JIT.
 
 - **Impossibile avviare il debugger perché nessun utente è connesso.**
 
@@ -189,7 +191,7 @@ Durante il debug JIT potrebbero essere visualizzati i messaggi di errore seguent
 
     Per risolvere il problema, usare la Programma di installazione di Visual Studio per reinstallare o ripristinare l'installazione di Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

@@ -1,6 +1,6 @@
 ---
 title: Creare un'app Node.js ed Express
-description: In questa esercitazione si creerà un'app usando Node.js Tools for Visual Studio
+description: Questa esercitazione illustra come creare una semplice applicazione Node.js usando il Framework dell'applicazione Web Express in Visual Studio.
 ms.date: 04/20/2020
 ms.topic: tutorial
 ms.devlang: javascript
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3d91f20dec22379d79b5f295fccf49aae0733a24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ce7b4af783149a53e0eacadaa5753d596f69563
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81744884"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846914"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app Express in Visual Studio
 
@@ -63,10 +63,10 @@ Express è un framework applicazione Web utilizzato come framework server per da
 * È necessario che siano installati Visual Studio e il carico di lavoro di sviluppo Node.js.
 
     ::: moniker range=">=vs-2019"
-    Se Visual Studio 2019 non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/)per   installarlo gratuitamente.
+    Se Visual Studio 2019 non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Se Visual Studio 2017 non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/)per   installarlo gratuitamente.
+    Se Visual Studio 2017 non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
     ::: moniker-end
 
     Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, passare a **strumenti**  >  **Ottieni strumenti e funzionalità...**, che consente di aprire la programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo Node.js**, quindi scegliere **Modifica**.
@@ -77,7 +77,7 @@ Express è un framework applicazione Web utilizzato come framework server per da
 
     Se non è installato, è consigliabile installare la versione LTS dal sito Web [Node.js](https://nodejs.org/en/download/) per una migliore compatibilità con i Framework e le librerie esterni. Node.js è compilato per le architetture a 32 bit e a 64 bit. Gli strumenti Node.js in Visual Studio, inclusi nel carico di lavoro Node.js, supportano entrambe le versioni. Ne è necessario solo uno e il programma di installazione di Node.js ne supporta solo uno in fase di installazione.
     
-    In generale, Visual Studio rileva automaticamente il runtime di Node.js installato. Se non rileva un Runtime installato, è possibile configurare il progetto in modo che faccia riferimento al runtime installato nella pagina delle proprietà (dopo aver creato un progetto, fare clic con il pulsante destro del mouse sul nodo del progetto, scegliere **Proprietà**e impostare il ** percorso diNode.exe**). È possibile usare un'installazione globale di Node.js oppure è possibile specificare il percorso di un interprete locale in ogni progetto Node.js. 
+    In generale, Visual Studio rileva automaticamente il runtime di Node.js installato. Se non rileva un Runtime installato, è possibile configurare il progetto in modo che faccia riferimento al runtime installato nella pagina delle proprietà (dopo aver creato un progetto, fare clic con il pulsante destro del mouse sul nodo del progetto, scegliere **Proprietà** e impostare il **percorso diNode.exe**). È possibile usare un'installazione globale di Node.js oppure è possibile specificare il percorso di un interprete locale in ogni progetto Node.js. 
 
     Questa esercitazione è stata testata con Node.js 8.10.0.
 
@@ -208,7 +208,7 @@ IntelliSense è uno strumento di Visual Studio che assiste l'utente durante la s
 
 L'app verrà eseguita con il debugger di Visual Studio associato. Prima di ciò, è necessario impostare un punto di interruzione.
 
-1. In *index.js*fare clic sulla barra di navigazione a sinistra prima della riga di codice seguente per impostare un punto di interruzione:
+1. In *index.js* fare clic sulla barra di navigazione a sinistra prima della riga di codice seguente per impostare un punto di interruzione:
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
