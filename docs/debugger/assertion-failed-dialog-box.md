@@ -1,5 +1,7 @@
 ---
 title: Finestra di dialogo asserzione non riuscita | Microsoft Docs
+description: Informazioni sulla finestra di dialogo asserzione non riuscita, ovvero una finestra di dialogo che può verificarsi nell'interfaccia utente di debug di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb42067bb4c88777a6c25ace71f53b9d9b3aa36b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: acc8f5abaa0c839232bbcedc63d24387444bd749
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745772"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729080"
 ---
 # <a name="assertion-failed-dialog-box"></a>Asserzione non riuscita (finestra di dialogo)
 Un'istruzione di asserzione specifica una condizione che ci si aspetta abbia valore True in un dato punto del programma. Se questa condizione non restituisce True, l'asserzione ha esito negativo, l'esecuzione del programma viene interrotta e viene visualizzata questa finestra di dialogo.
@@ -36,6 +38,6 @@ Un'istruzione di asserzione specifica una condizione che ci si aspetta abbia val
 |Ignora|Ignorare l'asserzione e continuare l'esecuzione del programma.|
 |Interruzione|Interrompere l'esecuzione del programma e terminare la sessione di debug.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Asserzioni C/C++](../debugger/c-cpp-assertions.md)

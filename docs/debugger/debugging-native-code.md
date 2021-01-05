@@ -1,5 +1,7 @@
 ---
 title: Debug del codice nativo | Microsoft Docs
+description: Informazioni sui problemi di debug comuni e sulle tecniche di alto livello per le applicazioni native in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/11/2017
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f98b99a31d9215d661879aa7fa52d4b671024496
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fee3044e4eaa1e7dd3549923082f9b843951b28
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738160"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728317"
 ---
 # <a name="debugging-native-code"></a>Debug del codice nativo
 In questa sezione vengono discussi alcuni problemi di debug comuni, nonché varie tecniche per le applicazioni native. Le tecniche illustrate in questa sezione sono di alto livello. Per informazioni sui meccanismi di utilizzo del debugger di Visual Studio, vedere la pagina relativa alla [prima occhiata al debugger](../debugger/debugger-feature-tour.md).
@@ -41,7 +43,7 @@ In questa sezione vengono discussi alcuni problemi di debug comuni, nonché vari
 
  [Tecniche di debug MFC](../debugger/mfc-debugging-techniques.md) Collegamenti alle tecniche di debug per i programmi MFC, tra cui: afxDebugBreak, la macro TRACE, rilevamento di perdite di memoria in MFC, asserzioni MFC e riduzione delle dimensioni delle build di debug MFC.
 
- [Tecniche di debug CRT](../debugger/crt-debugging-techniques.md) Collegamenti alle tecniche di debug per la libreria di runtime del linguaggio C, tra cui l'uso della libreria di debug CRT, le macro per la creazione di report, le differenze tra malloc e _malloc_dbg, la scrittura di funzioni hook di debug e l'heap di debug CRT.
+ [Tecniche di debug CRT](../debugger/crt-debugging-techniques.md) Collegamenti alle tecniche di debug per la libreria di Run-Time C, tra cui l'uso della libreria di debug CRT, le macro per la creazione di report, le differenze tra malloc e _malloc_dbg, la scrittura di funzioni hook di debug e l'heap di debug CRT.
 
  [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md) Fornisce risposte alle domande frequenti sul debug di programmi C++
 
@@ -58,7 +60,7 @@ In questa sezione vengono discussi alcuni problemi di debug comuni, nonché vari
 
  [Prima di tutto esaminare il debugger](../debugger/debugger-feature-tour.md) Vengono forniti collegamenti alle sezioni più grandi della documentazione di debug. Vengono fornite informazioni sui seguenti argomenti: novità del debugger, impostazione e preparazione, punti di interruzione, gestione delle eccezioni, modifica e continuazione, debug di codice nativo, debug di SQL e riferimenti all'interfaccia utente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Debug in Visual Studio](../debugger/index.yml)

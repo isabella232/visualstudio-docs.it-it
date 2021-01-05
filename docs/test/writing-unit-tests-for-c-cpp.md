@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 0eaf41dc0bf3e21dfbf4018261844181d594f0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf6287ebdb4c2df6145a0e60e22ac1197a517fde
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649607"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729366"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Scrivere unit test per C/C++ in Visual Studio
 
@@ -37,7 +37,7 @@ I progetti di unit test C++ supportano [CodeLens](../ide/find-code-changes-and-o
 
 **Visual Studio 2017 e versioni successive (tutte le edizioni)**
 
-- **Google test adapter** è incluso come componente predefinito del carico di lavoro sviluppo di applicazioni **desktop con C++** . Include un modello di progetto che è possibile aggiungere a una soluzione. Usare il menu **Aggiungi nuovo progetto** fare clic con il pulsante destro del mouse sul nodo della soluzione in **Esplora soluzioni** per aggiungerlo. Dispone inoltre di opzioni che è possibile configurare tramite le opzioni **degli strumenti**  >  **Options**. Per altre informazioni, vedere [procedura: usare Google test in Visual Studio](how-to-use-google-test-for-cpp.md).
+- **Google test adapter** è incluso come componente predefinito del carico di lavoro sviluppo di applicazioni **desktop con C++** . Include un modello di progetto che è possibile aggiungere a una soluzione. Usare il menu **Aggiungi nuovo progetto** fare clic con il pulsante destro del mouse sul nodo della soluzione in **Esplora soluzioni** per aggiungerlo. Dispone inoltre di opzioni che è possibile configurare tramite le opzioni **degli strumenti**  >  . Per altre informazioni, vedere [procedura: usare Google test in Visual Studio](how-to-use-google-test-for-cpp.md).
 
 - **Boost. test** è incluso come componente predefinito del carico di lavoro sviluppo di applicazioni **desktop con C++** . È integrato con **Esplora test**, ma attualmente non dispone di un modello di progetto. Deve essere configurata manualmente. Per altre informazioni, vedere [procedura: usare boost. test in Visual Studio](how-to-use-boost-test-for-cpp.md).
 
@@ -85,9 +85,9 @@ Se il codice di test non esporta le funzioni che si vuole testare, è possibile 
 
 Nel file con estensione *cpp* dell'unit test aggiungere quindi una direttiva `#include` per tutti i file di intestazione che dichiarano i tipi e le funzioni da testare. Digitare `#include "`. Verrà attivato IntelliSense per facilitare la scelta. Ripetere per eventuali intestazioni aggiuntive.
 
-![Aggiungere direttive include](media/cpp-add-includes-test-project.png)
+![Screenshot della Esplora soluzioni che mostra una direttiva #include aggiunta con IntelliSense che evidenzia un file di intestazione per l'inclusione.](media/cpp-add-includes-test-project.png)
 
-Per evitare di dover digitare il percorso completo in ogni istruzione include nel file di origine, è possibile aggiungere le cartelle richieste nelle proprietà del **progetto**  >  **Properties**  >  **C/C++**  >  **General**  >  **Additional include directory**.
+Per evitare di dover digitare il percorso completo in ogni istruzione include nel file di origine, è possibile aggiungere le cartelle richieste nelle proprietà del **progetto**  >    >  **C/C++**  >  **General**  >  **Additional include directory**.
 
 ### <a name="write-test-methods"></a>Scrivere i metodi di test
 
@@ -96,7 +96,7 @@ Per evitare di dover digitare il percorso completo in ogni istruzione include ne
 
 Il file con *estensione cpp* nel progetto di test include una classe e un metodo stub definiti. Viene illustrato un esempio di come scrivere il codice di test. Le firme utilizzano le macro TEST_CLASS e TEST_METHOD, che rendono i metodi individuabili dalla finestra **Esplora test** .
 
-![Aggiungere direttive include](media/cpp-write-test-methods.png)
+![Screenshot della finestra Esplora test che mostra il file di codice UnitTest1. cpp contenente una classe e un metodo stub usando le macro TEST_CLASS e TEST_METHOD.](media/cpp-write-test-methods.png)
 
 TEST_CLASS e TEST_METHOD fanno parte del [framework di test nativo Microsoft](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Esplora test** consente di individuare i metodi di test in altri framework supportati in modo analogo.
 
@@ -126,7 +126,7 @@ Nell'esempio precedente, il risultato della chiamata `Assert::AreEqual` determin
 
 1. Se non tutti i test sono visibili nella finestra, compilare il progetto di test facendo clic con il pulsante destro del mouse sul nodo in **Esplora soluzioni** e scegliendo **Compila** o **ricompila**.
 
-1. In **Esplora test**scegliere **Esegui tutto**oppure selezionare i test specifici che si desidera eseguire. Fare clic con il pulsante destro del mouse su un test per le altre opzioni, inclusa l'esecuzione in modalità di debug con i punti di interruzione abilitati. Dopo aver eseguito tutti i test, la finestra mostra i test superati e quelli non superati:
+1. In **Esplora test** scegliere **Esegui tutto** oppure selezionare i test specifici che si desidera eseguire. Fare clic con il pulsante destro del mouse su un test per le altre opzioni, inclusa l'esecuzione in modalità di debug con i punti di interruzione abilitati. Dopo aver eseguito tutti i test, la finestra mostra i test superati e quelli non superati:
 
 ![Esplora test dopo l'esecuzione dei test](media/cpp-test-explorer-passed.png)
 
@@ -156,6 +156,6 @@ Fare clic sull'icona per altre informazioni o per eseguire lo unit test o esegui
 
 ![Esecuzione e debug in CodeLens C++](media/cpp-test-codelens-run-debug.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Eseguire unit test del codice](unit-test-your-code.md)

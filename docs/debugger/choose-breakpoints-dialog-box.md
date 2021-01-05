@@ -1,5 +1,7 @@
 ---
 title: Finestra di dialogo Scegli punti di interruzione | Microsoft Docs
+description: Leggere la finestra di dialogo Scegli punti di interruzione, che viene visualizzata se si tenta di impostare un punto di interruzione da input ambiguo nella finestra di dialogo nuovo punto di interruzione in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdec8c8d1b53f87e14700f5c14099cf0d2e6e392
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 876cc88756f6230585dce72b984b7ac40390a7f4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745722"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729041"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Finestra di dialogo Seleziona punti di interruzione
 La finestra di dialogo Scegli punti di **interruzione** viene visualizzata quando si tenta di impostare un punto di interruzione da input ambiguo nella finestra di dialogo nuovo punto di **interruzione** . Un esempio comune di input ambiguo è un nome di funzione in overload.
@@ -37,6 +39,6 @@ La finestra di dialogo Scegli punti di **interruzione** viene visualizzata quand
 
  **Nessuna** Cancella tutti i punti di interruzione elencati nella casella punti di **interruzione** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Uso di punti di interruzione](../debugger/using-breakpoints.md)
+- [Utilizzo di punti di interruzione](../debugger/using-breakpoints.md)

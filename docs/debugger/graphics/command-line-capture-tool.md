@@ -1,5 +1,7 @@
 ---
-title: Strumento di acquisizione da riga di comando | Microsoft Docs
+title: Strumento di acquisizione Command-Line | Microsoft Docs
+description: Informazioni su DXCap.exe, uno strumento da riga di comando per l'acquisizione e la riproduzione di diagnostica della grafica che supporta Direct3D 10 attraverso Direct3D 12 in tutti i livelli di funzionalità.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d88e62b1520677ddac3ff66a6891eb805af30d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3618c1d6e929d40108abd5fd0b0cc3a3361964bf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64808466"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727877"
 ---
 # <a name="command-line-capture-tool"></a>Strumento di acquisizione da riga di comando
 DXCap.exe è uno strumento da riga di comando per l'acquisizione e la riproduzione della diagnostica grafica. Supporta Direct3D dalla versione 10 alla 12 per tutti i livelli di funzionalità.
@@ -75,7 +77,7 @@ DXCap.exe -info
 
  `-info` Visualizza le informazioni sul computer e sulle DLL di acquisizione.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  DXCap.exe funziona in tre modalità:
 
  La modalità di acquisizione (-c) acquisisce le informazioni grafiche da un'app in esecuzione e le registra in un file di log di grafica. Le funzionalità di acquisizione e il formato di file sono identici a quelli di Visual Studio.
@@ -137,7 +139,7 @@ DXCap.exe -e map
 
  Il comando precedente enumera le app UWP che corrispondono a "map"; di seguito è riportato l'output:
 
- **Pacchetto "Microsoft. BingMaps":** **InstallDirectory: C:\Program files\windowsapps\microsoft. BingMaps_2.1.2914.1734_X64__8wekyb3d8bbwe** **FullName: Microsoft. BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533** **Nome: Microsoft. BingMaps** **Publisher: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = versione USA** **: 2.1.2914.1734** **applicazioni avviabili:** **ID: AppexMaps** **exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA: nessun** **AppSpec (da avviare): DXCap.exe-C Microsoft. BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe, AppexMaps** l'ultima riga di output per ogni app enumerata Visualizza il comando che è possibile usare per acquisire le informazioni grafiche.
+ **Pacchetto "Microsoft. BingMaps":** **InstallDirectory: C: \ Program Files \ WindowsApps \ Microsoft. BingMaps_2.1.2914.1734_X64__8wekyb3d8bbwe** **FullName: Microsoft. BingMaps_2.1.2914.1734 8wekyb3d8bbwe** **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533** **Nome: Microsoft. BingMaps** **Publisher: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = versione US** **: 2.1.2914.1734** **applicazioni avviabili:** **ID: AppexMaps** **exe: C: \ Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA: No** **AppSpec (to Launch): DXCap.exe-C Microsoft. BingMaps_2.1.2914.1734 8wekyb3d8bbwe, AppexMaps** l'ultima riga di output per ogni app enumerata Visualizza il comando che è possibile usare per acquisire le informazioni grafiche.
 
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Acquisizione di frame specifici o frame tra intervalli di tempo specifici
  Utilizzare `-frame` per specificare i frame che si desidera acquisire utilizzando virgole e intervalli:

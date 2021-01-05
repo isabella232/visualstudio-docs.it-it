@@ -1,6 +1,7 @@
 ---
 title: Preparare il debug di progetti console | Microsoft Docs
-ms.custom: seodec18
+description: 'Ottenere informazioni sulla preparazione al debug di progetti Console (C#, C++, Visual Basic, F #) in Visual Studio.'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9de54feeb77f1bff31fc0b41e385e5a10393aba2
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916279"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728265"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparazione al debug: progetti Console (C#, C++, Visual Basic, F #)
 
@@ -41,7 +42,7 @@ Preparare il debug di un progetto console è simile alla preparazione per il deb
 
 Potrebbe essere necessario specificare gli argomenti della riga di comando per l'applicazione console. Per altre informazioni, vedere [impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [impostazioni di progetto per una configurazione](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)di debug Visual Basic o [impostazioni di progetto per le configurazioni di debug C#](../debugger/project-settings-for-csharp-debug-configurations.md).
 
-Come tutte le proprietà di progetto, questi argomenti sono persistenti tra le sessioni di debug e tra le sessioni di Visual Studio. Pertanto, se l'applicazione console è già stata sottoposta a debug, tenere presente che potrebbero essere presenti argomenti delle sessioni precedenti immesse nella finestra di dialogo ** \<Project> pagine delle proprietà** .
+Come tutte le proprietà di progetto, questi argomenti sono persistenti tra le sessioni di debug e tra le sessioni di Visual Studio. Pertanto, se l'applicazione console è già stata sottoposta a debug, tenere presente che potrebbero essere presenti argomenti delle sessioni precedenti immesse nella finestra di dialogo **\<Project> pagine delle proprietà** .
 
 ## <a name="start-the-application"></a>Avviare l'applicazione
 
@@ -49,7 +50,7 @@ Come tutte le proprietà di progetto, questi argomenti sono persistenti tra le s
 
 - Impostare un punto di interruzione nel codice e avviare l'applicazione.
 
-- Avviare l'applicazione con **F10** (**debug**  >  **istruzione/** routine) o **F11** (eseguire il**debug**  >  di**istruzioni**), quindi esplorare il codice usando altre opzioni, ad esempio **Esegui fino a fare clic su**.
+- Avviare l'applicazione con **F10** (**debug**  >  **istruzione/** routine) o **F11** (eseguire il **debug**  >  di **istruzioni**), quindi esplorare il codice usando altre opzioni, ad esempio **Esegui fino a fare clic su**.
 
 - Nell'editor di codice fare clic con il pulsante destro del mouse su una riga e scegliere **Esegui fino al cursore**.
 
@@ -57,7 +58,7 @@ Come tutte le proprietà di progetto, questi argomenti sono persistenti tra le s
 
   Quando si avvia un'applicazione console da Visual Studio, la finestra della **console** viene visualizzata in secondo piano rispetto alla finestra di Visual Studio. Se si tenta di avviare l'applicazione console da Visual Studio senza alcun apparente risultato, provare a spostare la finestra di Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug del codice nativo](../debugger/debugging-native-code.md)
 - [Debug del codice gestito](../debugger/debugging-managed-code.md)
 - [Preparare il debug di progetti C++](../debugger/debugging-preparation-visual-cpp-project-types.md)

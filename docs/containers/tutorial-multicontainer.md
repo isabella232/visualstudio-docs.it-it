@@ -7,14 +7,14 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0fa7d186623b69fd83c3ed7e4ab9cc12128847d2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 93f9d5ba8bd84341e1b314c1fabca07690114e39
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037211"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729288"
 ---
-# <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Esercitazione: creare un'app a più contenitori con Docker Compose
+# <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Esercitazione: Creare un'app a più contenitori con Docker Compose
 
 In questa esercitazione si apprenderà come gestire più di un contenitore e comunicare tra loro quando si usano gli strumenti contenitore in Visual Studio.  La gestione di più contenitori richiede l' *orchestrazione del contenitore* e richiede un agente di orchestrazione, ad esempio Docker compose, Kubernetes o Service Fabric. In questo caso verrà usato Docker Compose. Docker Compose è ideale per il debug e il test locali nel corso del ciclo di sviluppo.
 
@@ -46,11 +46,11 @@ Non selezionare **Abilita supporto Docker**. Verrà aggiunto il supporto Docker 
 
 ::: moniker range="vs-2019"
 
-![Screenshot della creazione del progetto Web](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
+![Screenshot della schermata di configurazione del nuovo progetto per un'applicazione Web di ASP.NET Core, i campi nome progetto e nome soluzione sono impostati su "WebFrontEnd".](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
 
 Non selezionare **Abilita supporto Docker**. Verrà aggiunto il supporto Docker in un secondo momento.
 
-![Screenshot della creazione del progetto Web](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
+![Screenshot della schermata Crea una nuova applicazione Web di ASP.NET Core con l'applicazione Web selezionata. L'opzione per abilitare il supporto di Docker non è selezionata.](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
 
 ::: moniker-end
 
@@ -124,7 +124,7 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI*. Selezionare
                 //app.UseHttpsRedirection();
     ```
 
-1. Nel `WebFrontEnd` progetto scegliere **Aggiungi > Supporto**per l'agente di orchestrazione dei contenitori. Viene visualizzata la finestra di dialogo **Opzioni di supporto Docker** .
+1. Nel `WebFrontEnd` progetto scegliere **Aggiungi > Supporto** per l'agente di orchestrazione dei contenitori. Viene visualizzata la finestra di dialogo **Opzioni di supporto Docker** .
 
 1. Scegliere **Docker compose**.
 
@@ -153,7 +153,7 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI*. Selezionare
 
    Per informazioni dettagliate sui comandi in esecuzione, vedere la sezione **strumenti contenitore** del riquadro di output.  Per configurare e creare i contenitori di runtime è possibile vedere lo strumento da riga di comando Docker-compose.
 
-1. Nel progetto API Web, fare di nuovo clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**supporto per l'agente di  >  **orchestrazione del contenitore**. Scegliere **Docker compose**, quindi selezionare lo stesso sistema operativo di destinazione.  
+1. Nel progetto API Web, fare di nuovo clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi** supporto per l'agente di  >  **orchestrazione del contenitore**. Scegliere **Docker compose**, quindi selezionare lo stesso sistema operativo di destinazione.  
 
     > [!NOTE]
     > In questo passaggio, in Visual Studio verrà offerta la creazione di un Dockerfile. Se si esegue questa operazione in un progetto che ha già il supporto per Docker, viene chiesto se si vuole sovrascrivere il Dockerfile esistente. Se sono state apportate modifiche al Dockerfile che si vuole salvare, scegliere No.
@@ -179,7 +179,7 @@ Aggiungere un progetto alla stessa soluzione e chiamarlo *MyWebAPI*. Selezionare
 
 1. Esegui il sito localmente adesso (F5 o CTRL + F5) per verificare che funzioni come previsto. Se tutti gli elementi sono configurati correttamente con la versione di .NET Core 2. x, viene visualizzato il messaggio "Hello from WebFrontEnd and WebAPI (with value 1)".  Con .NET Core 3, vengono visualizzati i dati relativi alle previsioni meteorologiche.
 
-   Il primo progetto utilizzato per l'aggiunta dell'orchestrazione del contenitore viene configurato per essere avviato quando si esegue o si esegue il debug. È possibile configurare l'azione di avvio nelle **proprietà del progetto** per il progetto Docker-compose.  Nel nodo del progetto Docker-compose, fare clic con il pulsante destro del mouse per aprire il menu di scelta rapida, quindi scegliere **Proprietà**oppure premere ALT + INVIO.  Lo screenshot seguente mostra le proprietà che si desidera usare per la soluzione.  Ad esempio, è possibile modificare la pagina che viene caricata personalizzando la proprietà **URL servizio** .
+   Il primo progetto utilizzato per l'aggiunta dell'orchestrazione del contenitore viene configurato per essere avviato quando si esegue o si esegue il debug. È possibile configurare l'azione di avvio nelle **proprietà del progetto** per il progetto Docker-compose.  Nel nodo del progetto Docker-compose, fare clic con il pulsante destro del mouse per aprire il menu di scelta rapida, quindi scegliere **Proprietà** oppure premere ALT + INVIO.  Lo screenshot seguente mostra le proprietà che si desidera usare per la soluzione.  Ad esempio, è possibile modificare la pagina che viene caricata personalizzando la proprietà **URL servizio** .
 
    ![Screenshot delle proprietà del progetto Docker-compose](media/tutorial-multicontainer/launch-action.png)
 
@@ -195,5 +195,5 @@ Vedere le opzioni per la distribuzione dei [contenitori in Azure](/azure/contain
 
 ## <a name="see-also"></a>Vedi anche
   
-[Modello di Docker Compose](https://docs.docker.com/compose/)  
+[Docker Compose](https://docs.docker.com/compose/)  
 [Strumenti contenitore](./index.yml)

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 32f6535e92f41d8030b6e060960940339da91fc9
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: de7065ebdf5426077418e50d2c03118de9f9d68f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92298222"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729301"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Eseguire il debug di app in un contenitore Docker locale
 
@@ -62,7 +62,7 @@ Per eseguire rapidamente l'iterazione delle modifiche, è possibile avviare l'ap
 
 1. Assicurarsi che Docker sia configurato in modo da usare il tipo di contenitore (Linux o Windows) in uso. Fare clic con il pulsante destro del mouse sull'icona Docker sulla barra delle applicazioni e scegliere **passa a contenitori Linux** o **passa a contenitori Windows** in base alle esigenze.
 
-1. (Solo .NET Core 3 e versioni successive) Modificare il codice e aggiornare il sito in esecuzione come descritto in questa sezione non è abilitato nei modelli predefiniti in .NET Core >= 3,0. Per abilitarla, aggiungere il pacchetto NuGet [Microsoft. AspNetCore. Mvc. Razor. RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/). In *Startup.cs*aggiungere una chiamata al metodo di estensione `IMvcBuilder.AddRazorRuntimeCompilation` al codice nel `ConfigureServices` metodo. Questa operazione è necessaria solo per abilitare la modalità di DEBUG, quindi scrivere il codice seguente:
+1. (Solo .NET Core 3 e versioni successive) Modificare il codice e aggiornare il sito in esecuzione come descritto in questa sezione non è abilitato nei modelli predefiniti in .NET Core >= 3,0. Per abilitarla, aggiungere il pacchetto NuGet [Microsoft. AspNetCore. Mvc. Razor. RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/). In *Startup.cs* aggiungere una chiamata al metodo di estensione `IMvcBuilder.AddRazorRuntimeCompilation` al codice nel `ConfigureServices` metodo. Questa operazione è necessaria solo per abilitare la modalità di DEBUG, quindi scrivere il codice seguente:
 
     ```csharp
     public IWebHostEnvironment Env { get; set; }
@@ -120,7 +120,7 @@ Le modifiche sono state applicate.
 Spesso le modifiche richiedono un ulteriore controllo. Per questa attività è possibile usare le funzionalità di debug di Visual Studio.
 
 1. In Visual Studio aprire *index.cshtml.cs*.
-2. Sostituire il contenuto del `OnGet` metodo con il codice seguente:
+2. Sostituire il contenuto del metodo `OnGet` con il codice seguente:
 
    ```csharp
        ViewData["Message"] = "Your application description page from within a container";
@@ -130,7 +130,7 @@ Spesso le modifiche richiedono un ulteriore controllo. Per questa attività è p
 4. Per avviare il debug e raggiungere il punto di interruzione, premere F5.
 5. Passare a Visual Studio per visualizzare il punto di interruzione. Controllare i valori.
 
-   ![Punto di interruzione](media/edit-and-refresh/breakpoint.png)
+   ![Screenshot che mostra parte del codice per Index.cshtml.cs in Visual Studio con un punto di interruzione impostato a sinistra di una riga di codice evidenziata in giallo.](media/edit-and-refresh/breakpoint.png)
 
 ## <a name="create-a-net-framework-console-app"></a>Creare un'app console .NET Framework
 
@@ -142,7 +142,7 @@ Quando si usa .NET Framework progetti di app console, l'opzione per aggiungere i
 ### <a name="debug-with-breakpoints"></a>Eseguire il debug con punti di interruzione
 
 1. In Esplora soluzioni aprire *Program.cs*.
-2. Sostituire il contenuto del `Main` metodo con il codice seguente:
+2. Sostituire il contenuto del metodo `Main` con il codice seguente:
 
    ```csharp
        System.Console.WriteLine("Hello, world!");
@@ -152,7 +152,7 @@ Quando si usa .NET Framework progetti di app console, l'opzione per aggiungere i
 4. Premere F5 per avviare il debug e raggiungere il punto di interruzione.
 5. Passare a Visual Studio per visualizzare il punto di interruzione ed esaminare i valori.
 
-   ![Punto di interruzione](media/edit-and-refresh/breakpoint-console.png)
+   ![Screenshot della finestra del codice per Program.cs in Visual Studio con un punto di interruzione impostato a sinistra di una riga di codice evidenziata in giallo.](media/edit-and-refresh/breakpoint-console.png)
 
 ## <a name="container-reuse"></a>Riutilizzo del contenitore
 

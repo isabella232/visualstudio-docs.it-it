@@ -1,5 +1,7 @@
 ---
 title: Modelli compositi per Visual Studio | Microsoft Docs
+description: Informazioni sui modelli compositi importanti per la coerenza in Visual Studio. I modelli compositi combinano elementi di interazione e progettazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebc8f4f6c17af54f4dfdcfc0d0d05c5da9d2d88b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 719ce0ac88761599fbed7da90643fd8a9d79db69
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88114076"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715821"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modelli compositi per Visual Studio
 I modelli compositi combinano elementi di interazione e progettazione in configurazioni distinte. Alcuni dei più importanti modelli compositi in Visual Studio rispetto alla coerenza includono:
@@ -270,9 +272,9 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
 
 - Disgiunto
 
-- Area
+- Region
 
-#### <a name="scope"></a>Ambito
+#### <a name="scope"></a>Scope
  Il componente più importante della selezione è garantire che l'utente sia in grado di riconoscere la finestra che sta funzionando (attivazione) e la posizione dello stato attivo (selezione). Visual Studio estende la funzionalità di gestione delle finestre in Windows, ma lo schema di attivazione è lo stesso: l'interazione con una finestra porta lo stato attivo sulla finestra. Visual Studio include due indicatori per l'attivazione: uno per le finestre dei documenti e uno per le finestre degli strumenti.
 
  Per le finestre dei documenti, la finestra attiva è indicata da una scheda della finestra del documento in primo piano e modificando il colore di sfondo:
@@ -310,7 +312,7 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
  **Selezione area (box) in Visual Studio**
 
 #### <a name="text-selection-appearance"></a>Aspetto selezione testo
- I colori utilizzati per la selezione attiva e inattiva nell'editor possono essere personalizzati. Per personalizzare l'aspetto visivo dell'editor, un utente può passare a **strumenti > opzioni**e quindi cercare in **ambiente > tipi di carattere e colori > editor di testo**.
+ I colori utilizzati per la selezione attiva e inattiva nell'editor possono essere personalizzati. Per personalizzare l'aspetto visivo dell'editor, un utente può passare a **strumenti > opzioni** e quindi cercare in **ambiente > tipi di carattere e colori > editor di testo**.
 
 ### <a name="graphical-selection"></a>Selezione grafica
 
@@ -435,11 +437,11 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
 
  Le selezioni negli elenchi possono essere contigue, non contigue o di regione. Quando sono consentite più selezioni, la selezione contigua e non contigua deve sempre essere supportata, mentre il supporto per le selezioni di area (box) è facoltativo. Le selezioni dell'area vengono avviate trascinando nello spazio vuoto del corpo dell'elenco.
 
-| Oggetto | Selection |
+| Oggetto | Selezione |
 |--------|------------|
 | Elenco | Contigui |
 | Elenco | Disgiunto |
-| Elenco | Area |
+| Elenco | Region |
 
  Facendo clic una volta su un elenco, viene selezionata la riga in cui si è verificato il clic. Se l'utente fa clic in una cella di elenco che supporta la modifica sul posto, viene attivata immediatamente anche la cella per la modifica sul posto. In caso contrario, l'intera riga viene immediatamente selezionata e Mostra un'evidenziazione.
 
@@ -481,7 +483,7 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
 |Oggetto selezionabile (ad esempio, una riga di codice)|Un punto di interruzione in una riga di codice<br /><br /> Un collegamento utente associato alla riga di codice|Quando il progetto viene salvato|File delle **Opzioni utente (con estensione suo)** per il progetto|
 |Finestra di dialogo|Posizione della finestra di dialogo, se è stata spostata<br /><br /> Visualizzazione usata dall'utente nella finestra di dialogo|Alla chiusura della finestra di dialogo<br /><br /> Al termine della sessione di Visual Studio|In memoria<br /><br /> Registro di sistema in **HKEY_CURRENT_USER**|
 |Finestra|Le dimensioni e la posizione della finestra|Alla chiusura della finestra<br /><br /> Quando cambia la modalità di Visual Studio<br /><br /> Al termine della sessione di Visual Studio|File delle **Opzioni utente (con estensione suo)** per il progetto<br /><br /> File di opzioni personalizzate per le impostazioni della finestra|
-|Document|Selezione corrente nel documento.<br /><br /> Visualizzazione del documento<br /><br /> Ultime diverse posizioni visitate dall'utente|Quando il documento viene salvato|File delle **Opzioni utente (con estensione suo)** per il progetto|
+|Documento|Selezione corrente nel documento.<br /><br /> Visualizzazione del documento<br /><br /> Ultime diverse posizioni visitate dall'utente|Quando il documento viene salvato|File delle **Opzioni utente (con estensione suo)** per il progetto|
 |Progetto|Riferimenti a file<br /><br /> Riferimenti alle directory su disco<br /><br /> Riferimenti ad altri software<br /><br /> Componenti<br /><br /> Informazioni sullo stato del progetto stesso|Quando il progetto viene salvato|File di progetto|
 |Soluzione|Riferimenti ai progetti<br /><br /> Riferimenti a file|Quando il progetto o la soluzione viene salvata|File della **soluzione (. sln)**|
 |Impostazioni in **strumenti > opzioni**|Personalizzazioni della tastiera<br /><br /> Personalizzazioni della barra degli strumenti<br /><br /> Combinazioni di colori|Quando si chiude la finestra di dialogo **strumenti > opzioni**<br /><br /> Al termine della sessione di Visual Studio|Registro di sistema in **HKEY_CURRENT_USER**|
@@ -521,7 +523,7 @@ I modelli compositi combinano elementi di interazione e progettazione in configu
 ||Esperienza di base|Esperienza ottimizzata|Esperienza elevata|
 |-|----------------------|--------------------------|-------------------------|
 |**Consente agli utenti di...**|Correzione del codice e della lettura a livello di progetto e soluzione senza terminazioni non recapitabili|Eseguire attività di manutenzione, refactoring e navigazione|Utilizza un'esperienza coerente, intuitiva e fluida in tutta sicurezza|
-|**Editor**|Panoramica e selezione del tocco<br /><br /> Tocco della barra di scorrimento per saltare e premere + trascina|Zoom a pizzico<br /><br /> Scorrimento rapido<br /><br /> Selection<br /><br /> Facile utilizzo del menu di scelta rapida||
+|**Editor**|Panoramica e selezione del tocco<br /><br /> Tocco della barra di scorrimento per saltare e premere + trascina|Zoom a pizzico<br /><br /> Scorrimento rapido<br /><br /> Selezione<br /><br /> Facile utilizzo del menu di scelta rapida||
 |**Finestre degli strumenti principali**|Panoramica dell'elenco<br /><br /> Selezione degli elementi<br /><br /> Tocco della barra di scorrimento per saltare e premere + trascina|Scorrimento e selezione semplici degli elementi||
 |**Windowing**||Ridimensiona finestra<br /><br /> Barra di accesso rapido||
 |**Documento**||Navigazione semplice tra file aperti||

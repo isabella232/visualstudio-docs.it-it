@@ -1,5 +1,7 @@
 ---
 title: Scheda classe, finestra di dialogo Proprietà finestra | Microsoft Docs
+description: Selezionare la scheda classe in Visual Studio, spostare lo stato attivo nella finestra visualizzazione di Windows, selezionare un nodo della finestra e scegliere Visualizza proprietà > per visualizzare la finestra di dialogo Proprietà finestra.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0917c9a038b42e6302ec1f1782f095ca397a92ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3bf37d9e5d672f0ecce262699fdd5d704cde9efe
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62565013"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729028"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Scheda Classe, finestra di dialogo Proprietà finestra
 Utilizzare la scheda **classe** per visualizzare le informazioni sulla classe della finestra selezionata. Per visualizzare la finestra di [dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo sulla finestra di [visualizzazione di Windows](../debugger/windows-view.md) . Selezionare un nodo della finestra nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .

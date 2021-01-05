@@ -1,6 +1,8 @@
 ---
 title: Errore DCOM durante il tentativo di contattare il computer remoto. Accesso negato.
 titleSuffix: ''
+description: "' Si è verificato un errore DCOM durante il tentativo di contattare il computer remoto. Accesso negato .' Visualizzare le informazioni su questo riferimento all'errore di debug remoto di Visual Studio."
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 093f2e46178d8734e7499c9f7a340396bbbdc9ed
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c430462a224cb4604c09984a5397e540ce752b8a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851632"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729197"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Errore DCOM durante il tentativo di contattare il computer remoto. Accesso negato.
 Il debug remoto usa DCOM per la comunicazione tra i computer locale e remoto nelle situazioni seguenti:
@@ -49,7 +51,7 @@ Il debug remoto usa DCOM per la comunicazione tra i computer locale e remoto nel
 
 - Se il debug remoto richiede l'immissioni di credenziali, selezionare l'opzione per salvarle.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Errori e risoluzione dei problemi di debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Debug remoto](../debugger/remote-debugging.md)

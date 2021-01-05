@@ -1,7 +1,8 @@
 ---
 title: Analizzatori Roslyn e librerie in grado di riconoscere il codice per ImmutableArrays
-titleSuffix: ''
+description: Informazioni su come creare un analizzatore Roslyn reale per rilevare errori comuni quando si usa il pacchetto NuGet System. Collections. Immutable.
 ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db3ebbd289feb227506d8c188ade9261dfb53da2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 04b65ae8c81f381ee996da5f20ec15588b9180de
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037647"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715769"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizzatori Roslyn e libreria compatibile con il codice per ImmutableArrays
 
@@ -63,7 +64,7 @@ Posizionare il punto di inserimento dell'editor sulla riga che dichiara `b1` . S
 
 ## <a name="create-the-analyzer-project"></a>Creare il progetto dell'analizzatore
 
-Dal menu principale scegliere **file**  >  **nuovo**  >  **progetto**. Nella finestra di dialogo **nuovo progetto** , in progetti **C#** nella barra di spostamento a sinistra, scegliere **estendibilità**e nel riquadro destro scegliere il modello **di progetto analizzatore con correzione codice** . Immettere un nome e confermare la finestra di dialogo.
+Dal menu principale scegliere **file**  >  **nuovo**  >  **progetto**. Nella finestra di dialogo **nuovo progetto** , in progetti **C#** nella barra di spostamento a sinistra, scegliere **estendibilità** e nel riquadro destro scegliere il modello **di progetto analizzatore con correzione codice** . Immettere un nome e confermare la finestra di dialogo.
 
 Il modello apre un file *DiagnosticAnalyzer.cs* . Scegliere la scheda buffer dell'editor. Questo file contiene una classe analizzatore (formato dal nome assegnato al progetto) che deriva da `DiagnosticAnalyzer` (un tipo di API Roslyn). La nuova classe dispone di un oggetto `DiagnosticAnalyzerAttribute` che dichiara che l'analizzatore è pertinente per il linguaggio C#, in modo che il compilatore individua e carica l'analizzatore.
 
@@ -87,7 +88,7 @@ Aprire una nuova riga in questo metodo e digitare "context". per visualizzare un
 
 Come altro esempio, `RegisterCompilationStartAction` , richiama il codice all'inizio di una compilazione, operazione utile quando è necessario raccogliere lo stato in molte posizioni. È possibile creare una struttura di dati, ad Say, per raccogliere tutti i simboli usati e ogni volta che l'analizzatore viene richiamato per una sintassi o un simbolo, è possibile salvare le informazioni su ogni posizione nella struttura dei dati. Quando viene richiamato a causa della fine della compilazione, è possibile analizzare tutte le posizioni salvate, ad esempio per segnalare i simboli usati dal codice da ogni `using` istruzione.
 
-Utilizzando il **Syntax Visualizer**si è appreso che si desidera chiamare quando il compilatore elabora un ObjectCreationExpression. Usare questo codice per impostare il callback:
+Utilizzando il **Syntax Visualizer** si è appreso che si desidera chiamare quando il compilatore elabora un ObjectCreationExpression. Usare questo codice per impostare il callback:
 
 ```csharp
 context.RegisterSyntaxNodeAction(c => AnalyzeObjectCreation(c),
@@ -141,11 +142,11 @@ Viene ancora visualizzato il controllo ortografia durante rosso `ImmutableArray`
 
 Nella prima istanza di Visual Studio impostare un punto di interruzione all'inizio del `AnalyzeObjectCreation` Metodo premendo **F9** con il cursore nella prima riga.
 
-Avviare di nuovo l'analizzatore con **F5**e nella seconda istanza di Visual Studio riaprire l'applicazione console creata per l'ultima volta.
+Avviare di nuovo l'analizzatore con **F5** e nella seconda istanza di Visual Studio riaprire l'applicazione console creata per l'ultima volta.
 
 Si ritorna alla prima istanza di Visual Studio in corrispondenza del punto di interruzione perché il compilatore Roslyn ha visto un'espressione di creazione di un oggetto e ha chiamato nell'analizzatore.
 
-**Ottenere il nodo di creazione dell'oggetto.** Eseguire un'istruzione/routine della riga che imposta la `objectCreation` variabile premendo **F10**e nella **finestra di controllo immediato** valutare l'espressione `"objectCreation.ToString()"` . Si noterà che il nodo della sintassi a cui punta la variabile è il codice `"new ImmutableArray<int>()"` , solo quello che si sta cercando.
+**Ottenere il nodo di creazione dell'oggetto.** Eseguire un'istruzione/routine della riga che imposta la `objectCreation` variabile premendo **F10** e nella **finestra di controllo immediato** valutare l'espressione `"objectCreation.ToString()"` . Si noterà che il nodo della sintassi a cui punta la variabile è il codice `"new ImmutableArray<int>()"` , solo quello che si sta cercando.
 
 **Ottiene l'oggetto di tipo ImmutableArray<T \> .** È necessario verificare se il tipo da creare è ImmutableArray. In primo luogo, si ottiene l'oggetto che rappresenta questo tipo. È possibile controllare i tipi usando il modello semantico per assicurarsi di avere esattamente il tipo corretto e non confrontare la stringa da `ToString()` . Immettere la riga di codice seguente alla fine della funzione:
 
@@ -300,7 +301,7 @@ Il metodo recupera quindi la radice del documento e, poiché può implicare un l
 
 È ora possibile premere **F5** per eseguire l'analizzatore in una seconda istanza di Visual Studio. Aprire il progetto console usato in precedenza. A questo punto si noterà che la lampadina viene visualizzata in cui si trova la nuova espressione di creazione di un oggetto `ImmutableArray<int>` . Se si preme **CTRL** + **.** (periodo), verrà visualizzata la correzione del codice e verrà visualizzata un'anteprima della differenza del codice generata automaticamente nell'interfaccia utente lampadina. Roslyn lo crea automaticamente.
 
-**Suggerimento Pro:** Se si avvia la seconda istanza di Visual Studio e non viene visualizzata la lampadina con la correzione del codice, potrebbe essere necessario cancellare la cache dei componenti di Visual Studio. La cancellazione della cache impone a Visual Studio di riesaminare i componenti, quindi Visual Studio dovrebbe quindi selezionare il componente più recente. Arrestare prima di tutto la seconda istanza di Visual Studio. Quindi, in **Esplora risorse**passare a *%LocalAppData%\Microsoft\VisualStudio\16.0Roslyn \\ *. ("16,0" passa dalla versione alla versione con Visual Studio). Eliminare la sottodirectory *ComponentModelCache*.
+**Suggerimento Pro:** Se si avvia la seconda istanza di Visual Studio e non viene visualizzata la lampadina con la correzione del codice, potrebbe essere necessario cancellare la cache dei componenti di Visual Studio. La cancellazione della cache impone a Visual Studio di riesaminare i componenti, quindi Visual Studio dovrebbe quindi selezionare il componente più recente. Arrestare prima di tutto la seconda istanza di Visual Studio. Quindi, in **Esplora risorse** passare a *%LocalAppData%\Microsoft\VisualStudio\16.0Roslyn \\*. ("16,0" passa dalla versione alla versione con Visual Studio). Eliminare la sottodirectory *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Talk video e termina progetto di codice
 

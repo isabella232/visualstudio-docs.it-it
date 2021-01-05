@@ -1,5 +1,7 @@
 ---
 title: CV_CPU_TYPE_e | Microsoft Docs
+description: Ottenere informazioni di riferimento sul tipo di enumerazione CV_CPU_TYPE_e, che specifica il processore di destinazione in Debug Interface Access SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82a482b570d3ed22d1b9dfe2ca3c8248a0185911
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44b076caffe4bc92bb62b63aa9d5d5e3dc464786
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462114"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728569"
 ---
 # <a name="cv_cpu_type_e"></a>CV_CPU_TYPE_e
 Specifica il processore di destinazione.
@@ -101,6 +103,6 @@ I valori di questa enumerazione vengono restituiti da una chiamata al metodo [ID
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst. h
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md)

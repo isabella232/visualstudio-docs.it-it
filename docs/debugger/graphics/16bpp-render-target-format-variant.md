@@ -1,5 +1,7 @@
 ---
 title: Variante del formato di destinazione di rendering 16bpp | Microsoft Docs
+description: Applicare la variante del formato di destinazione di rendering a 16 bit per pixel (BPP) impostando il formato pixel su DXGI_FORMAT_B5G6R5_UNORM per tutte le destinazioni di rendering e i buffer back.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a63261a4ef8a6304bec8c2bdde1d9ec9113405e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa73637244469d781ac77acba362886b5656f8d8
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74188583"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728044"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>Variante del formato di destinazione di rendering a 16 BPP
 Imposta il formato di pixel su DXGI_FORMAT_B5G6R5_UNORM per tutte le destinazioni di rendering e i buffer nascosti.
@@ -45,7 +47,7 @@ Le applicazioni che fanno parte di una catena di scambio hanno un formato di buf
 
    Le architetture GPU che usano tecniche di rendering affiancate possono avere vantaggi significativi in merito alle prestazioni usando un formato di buffer di frame a 16 BPP. Questo miglioramento è dovuto al fatto che una parte più ampia del buffer dei frame può adattarsi alla cache del buffer dei frame locale di ogni riquadro. Le architetture di rendering basate su riquadri vengono spesso usate nelle GPU di telefoni cellulari e tablet; è raro trovarle in altri tipi di dispositivi.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il formato della destinazione di rendering viene reimpostato su DXGI_FORMAT_B5G6R5_UNORM a ogni chiamata al metodo `ID3D11Device::CreateTexture2D` che crea una destinazione di rendering. In particolare, il formato viene sovrascritto quando l'oggetto D3D11_TEXTURE2D_DESC passato a pDesc descrive una destinazione di rendering, ovvero:
 
 - Il membro BindFlags presenta il flag D3D11_BIND_REDNER_TARGET impostato.

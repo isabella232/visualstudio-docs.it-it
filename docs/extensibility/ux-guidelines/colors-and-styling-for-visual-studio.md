@@ -1,5 +1,7 @@
 ---
 title: Colori e stile per Visual Studio | Microsoft Docs
+description: Scopri in che modo l'esperienza utente di Visual Studio usa il colore come strumento di comunicazione, anziché per motivi puramente estetici.
+ms.custom: SEO-VS-2020
 ms.date: 07/31/2017
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f9123117144d12babd97264090f16899f392954
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 99e33ae67e0fd18ecd9a1a40a8b8075cd22d4bf7
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414269"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715665"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colori e stili per Visual Studio
 
@@ -358,7 +360,7 @@ Costruire un tipo speciale di voce del registro di sistema Category in `[HKLM\SO
 
 Popolare il registro di sistema con due valori:
 
-| Nome | Type | Data | Descrizione |
+| Nome | Tipo | Data | Descrizione |
 | --- | --- | --- | --- |
 | Category | REG_SZ | GUID | GUID creato per identificare la categoria |
 | Pacchetto | REG_SZ | GUID | GUID del servizio VSPackage che supporta la categoria |
@@ -371,7 +373,7 @@ Costruire un tipo speciale di voce del registro di sistema Category in `[HKLM\SO
 
 Popolare il registro di sistema con due valori:
 
-| Nome | Type | Data | Descrizione |
+| Nome | Tipo | Data | Descrizione |
 |--- | --- | --- | --- |
 | Category | REG_SZ | GUID | GUID creato per identificare la categoria |
 | Pacchetto | REG_SZ | GUID | GUID del servizio VSPackage che supporta la categoria |

@@ -1,5 +1,7 @@
 ---
 title: CompilandDetails | Microsoft Docs
+description: Trovare informazioni di riferimento sul tipo di simbolo CompilandDetails (SymTagCompilandDetails) in Visual Studio Debug Interface Access SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da102a8968bc3e29091f6b4b58ee6ef78c6c3fb3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04687eb58ecee2211f098c0f432afc28e0465305
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462253"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728781"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Le informazioni di modulo vengono suddivise tra simboli con un `SymTagCompiland` tag (dettaglio basso) e un `SymTagCompilandDetails` tag (dettaglio elevato). `SymTagCompilandDetails` fornisce un'ampia gamma di informazioni su modulo che non sono disponibili con un `SymTagCompiland` simbolo.
@@ -50,9 +52,9 @@ Le informazioni di modulo vengono suddivise tra simboli con un `SymTagCompiland`
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID di indice del simbolo.|
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Restituisce `SymTagCompilandDetails` uno dei valori di [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) .|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  I compilatori spesso sono in un formato noto come compilatore a due passaggi. in alcune versioni del compilatore ogni passaggio viene gestito da un programma separato. Questi sono noti rispettivamente come compilatori front-end e back-end, quindi le proprietà dei simboli per i numeri di versione back-end e front-end.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Compilando](../../debugger/debug-interface-access/compiland.md)
 - [Gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

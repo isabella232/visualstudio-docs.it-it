@@ -18,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7af24dbbb510fb1d5c9c62b40d5986ea5c74d35b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d935ee5c4341a2d625c6f85226cc649d696d6e6e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361651"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729392"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Usare le mappe codice per eseguire il debug delle applicazioni
 
@@ -62,9 +62,9 @@ Per informazioni dettagliate sui comandi e sulle azioni che è possibile usare q
 ## <a name="navigate-and-examine-code-from-the-map"></a>Passare al codice ed esaminarlo dal mapping
  Per visualizzare la definizione di codice per ogni campo, fare doppio clic sul campo nella mappa o selezionare il campo e premere **F12**. La freccia verde si sposta tra gli elementi nella mappa. Il cursore nell'editor di codice viene spostato automaticamente.
 
- ![Mappa del codice &#45; esaminare la definizione del campo](../modeling/media/codemapstoryboardpaint5.png)
+ ![Screenshot di una finestra della mappa del codice con il campo cronologia selezionato e una finestra dell'editor di codice in cui sono evidenziate tutte le istanze della cronologia.](../modeling/media/codemapstoryboardpaint5.png)
 
- ![Mappa del codice &#45; esaminare la definizione del campo](../modeling/media/codemapstoryboardpaint5a.png)
+ ![Screenshot della finestra della mappa del codice con il campo paintObjects selezionato e una finestra dell'editor di codice in cui sono evidenziate tutte le istanze di paintObjects.](../modeling/media/codemapstoryboardpaint5a.png)
 
 > [!TIP]
 > È inoltre possibile spostare la freccia verde sulla mappa spostando il cursore nell'editor di codice.
@@ -81,24 +81,24 @@ Per informazioni dettagliate sui comandi e sulle azioni che è possibile usare q
 
  Modificare il layout per ridisporre il flusso di relazioni e rendere la mappa più facile da leggere. È inoltre possibile spostare elementi nella mappa trascinandoli.
 
- ![Mappa del codice &#45; layout delle modifiche](../modeling/media/codemapstoryboardpaint7a.png)
+ ![Screenshot della finestra della mappa del codice con il menu layout aperto e il comando Left to rgiht selezionato.](../modeling/media/codemapstoryboardpaint7a.png)
 
 > [!TIP]
 > Per impostazione predefinita, il **Layout incrementale** è attivato. Ciò consente di ridisporre la mappa il meno possibile quando vengono aggiunti nuovi elementi. Per ridisporre l'intera mappa ogni volta che si aggiungono nuovi elementi, disabilitare **Layout incrementale**.
 
- ![Mappa del codice &#45; layout delle modifiche](../modeling/media/codemapstoryboardpaint7.png)
+ ![Screenshot di una finestra della mappa del codice con le frecce relationshiop tra i campi che puntano da sinistra a destra.](../modeling/media/codemapstoryboardpaint7.png)
 
  Esaminiamo questi metodi. Nella mappa fare doppio clic sul metodo **sul PaintCanvas** oppure selezionare questo metodo e premere **F12**. Questo metodo crea `history` e `paintObjects` come elenchi vuoti.
 
- ![Mappa del codice &#45; esaminare la definizione del metodo](../modeling/media/codemapstoryboardpaint8.png)
+ ![Screenshot di una finestra della mappa del codice con il metodo sul PaintCanvas selezionato e un'immagine del frammento di codice che mostra il nome del metodo PainCanvas evidenziato.](../modeling/media/codemapstoryboardpaint8.png)
 
  A questo punto, ripetere gli stessi passaggi per esaminare la definizione del metodo `clear`. Il metodo `clear` esegue alcune attività con `paintObjects` e `history` e quindi chiama il metodo `Repaint`.
 
- ![Mappa del codice &#45; esaminare la definizione del metodo](../modeling/media/codemapstoryboardpaint9.png)
+ ![Screenshot di una finestra della mappa del codice con il metodo Clear selezionato e un'immagine del frammento di codice che mostra il codice per il metodo Clear.](../modeling/media/codemapstoryboardpaint9.png)
 
  A questo punto, esaminare la definizione del metodo `addPaintObject`. Tale metodo esegue alcune attività con `history` e `paintObjects`. e chiama inoltre `Repaint`.
 
- ![Mappa del codice &#45; esaminare la definizione del metodo](../modeling/media/codemapstoryboardpaint10.png)
+ ![Screenshot di una finestra della mappa del codice con il metodo addPaintObject selezionato e un'immagine del frammento di codice che mostra il codice per il metodo addPaintObject.](../modeling/media/codemapstoryboardpaint10.png)
 
 ## <a name="find-the-problem-by-examining-the-map"></a>Individuare il problema esaminando il mapping
  Sembra che tutti i metodi che modificano `history` e `paintObjects` chiamino `Repaint`. Tuttavia il metodo `undo` non chiama `Repaint`, anche se `undo` modifica gli stessi campi. Pertanto, è possibile risolvere il problema chiamando `Repaint` da `undo`.

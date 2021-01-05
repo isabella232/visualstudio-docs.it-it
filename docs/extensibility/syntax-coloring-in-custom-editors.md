@@ -1,5 +1,7 @@
 ---
 title: Colorazione della sintassi negli editor personalizzati | Microsoft Docs
+description: Informazioni sulla colorazione della sintassi negli editor personalizzati di Visual Studio Environment SDK, che Visualizza i colori specificati per una determinata visualizzazione del documento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72749d3a58b4adae149baefff9e9ae77f6b05f18
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: 8aac72cbc26ff5e6abf96259fd161cba63b3b2af
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414178"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716068"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Colorazione della sintassi negli editor personalizzati
 Gli editor dell'ambiente Visual Studio SDK, incluso l'editor principale, utilizzano i servizi di linguaggio per identificare elementi sintattici specifici e visualizzarli con i colori specificati per una determinata visualizzazione del documento.
@@ -54,7 +56,7 @@ Gli editor dell'ambiente Visual Studio SDK, incluso l'editor principale, utilizz
 > [!NOTE]
 > Oltre a usare il colorante di un servizio di linguaggio, un pacchetto VSPackage può scegliere di usare il meccanismo di colorazione del testo di Visual Studio Environment SDK per utilizzo generico. Per ulteriori informazioni su questo meccanismo, vedere [utilizzo di tipi di carattere e colori](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Colorazione della sintassi in un servizio di linguaggio legacy](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [Implementazione della colorazione della sintassi](../extensibility/internals/implementing-syntax-coloring.md)

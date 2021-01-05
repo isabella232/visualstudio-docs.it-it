@@ -1,5 +1,7 @@
 ---
 title: Specifica dei gestori di file per le estensioni di file | Microsoft Docs
+description: Informazioni su come determinare quale applicazione gestisce un'estensione di file in Visual Studio SDK usando OpenWithList e OpenWithProgids.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af195aea09c91696843c6be42c20053bb8c095a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 421244cd88af43e7602298e7384a632c8aa51833
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699747"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715600"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Definizione di handle di file per le estensioni
 Esistono diversi modi per determinare l'applicazione che gestisce un file con una specifica estensione di file. I verbi OpenWithList e OpenWithProgids sono due modi per specificare i gestori di file nella voce del registro di sistema per l'estensione di file.
@@ -34,7 +36,7 @@ HKEY_CLASSES_ROOT\
 ```
 
 > [!NOTE]
-> Le chiavi che specificano le applicazioni sono incluse nell'elenco HKEY_CLASSES_ROOT \Applications.
+> Le chiavi che specificano le applicazioni sono incluse nell'elenco HKEY_CLASSES_ROOT\Applications.
 
  Aggiungendo una chiave OpenWithList, si dichiara che l'applicazione supporta un'estensione di file anche se un'altra applicazione acquisisce la proprietà dell'estensione. Potrebbe trattarsi di una versione futura dell'applicazione o di un'altra applicazione.
 
@@ -52,7 +54,7 @@ HKEY_CLASSES_ROOT\
 > [!NOTE]
 > La `OpenWithProgids` chiave è supportata solo in Windows XP. Poiché altri sistemi operativi ignorano questa chiave, non usarla come unica registrazione per i gestori di file. Usare questa chiave per offrire una migliore esperienza utente in Windows XP.
 
- Aggiungere i ProgID desiderati come valori del tipo REG_NONE. Il codice seguente fornisce un esempio di registrazione dei ProgID per un'estensione di file (.* EXT*).
+ Aggiungere i ProgID desiderati come valori del tipo REG_NONE. Il codice seguente fornisce un esempio di registrazione dei ProgID per un'estensione di file (.*EXT*).
 
 ```
 HKEY_CLASSES_ROOT\
@@ -63,7 +65,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)
 ```
 
- Il ProgID specificato come valore predefinito per l'estensione di file è il gestore di file predefinito. Se si modifica il ProgID per un'estensione di file fornita con una versione precedente di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o che può essere rilevata da altre applicazioni, è necessario registrare la `OpenWithProgids` chiave per l'estensione di file e specificare il nuovo ProgID nell'elenco insieme ai ProgID precedenti supportati. Ad esempio:
+ Il ProgID specificato come valore predefinito per l'estensione di file è il gestore di file predefinito. Se si modifica il ProgID per un'estensione di file fornita con una versione precedente di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o che può essere rilevata da altre applicazioni, è necessario registrare la `OpenWithProgids` chiave per l'estensione di file e specificare il nuovo ProgID nell'elenco insieme ai ProgID precedenti supportati. Esempio:
 
 ```
 HKEY_CLASSES_ROOT\
@@ -77,6 +79,6 @@ HKEY_CLASSES_ROOT\
 
  Se al ProgID precedente sono associati verbi, questi verbi verranno visualizzati anche in **Apri con** *nome prodotto* nel menu di scelta rapida.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Informazioni sulle estensioni di file](../extensibility/about-file-name-extensions.md)
 - [Registrazione di verbi per le estensioni di file](../extensibility/registering-verbs-for-file-name-extensions.md)

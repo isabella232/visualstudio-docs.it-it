@@ -13,12 +13,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ef956980b08e688970ad0a00d7d1a0804da7c3
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b84f638876270658be2f08a7e375540f0329a1d6
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363120"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729340"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizzazione della creazione e dello spostamento di elementi
 
@@ -40,7 +40,7 @@ Sebbene le operazioni di creazione possano sembrare diverse dalle operazioni di 
 
 La responsabilità di un EMD consiste nel decidere come un oggetto o un gruppo di oggetti deve essere unito in una determinata posizione nel modello. In particolare, decide le relazioni di cui deve essere creata un'istanza per collegare il gruppo unito al modello. È anche possibile personalizzarlo per impostare le proprietà e creare oggetti aggiuntivi.
 
-![DSL&#45;EMD&#95;merge](../modeling/media/dsl-emd_merge.png)
+![Diagramma che illustra prima e dopo l'aspetto di un albero di elementi e delle relative relazioni di riferimento quando un E M D determina la modalità di aggiunta di un nuovo elemento.](../modeling/media/dsl-emd_merge.png)
 
 Un EMD viene generato automaticamente quando si definisce una relazione di incorporamento. Questo EMD predefinito crea un'istanza della relazione quando gli utenti aggiungono nuove istanze figlio all'elemento padre. È possibile modificare questi EMDs predefiniti, ad esempio aggiungendo codice personalizzato.
 
@@ -50,7 +50,7 @@ Un EMD viene generato automaticamente quando si definisce una relazione di incor
 
 È possibile aggiungere direttive di Unione elementi a classi di dominio, relazioni di dominio, forme, connettori e diagrammi. È possibile aggiungerli o trovarli in DSL Explorer sotto la classe di dominio ricevente. La classe ricevente è la classe di dominio dell'elemento già presente nel modello e su cui verrà eseguito il merge dell'elemento nuovo o copiato.
 
-![DSL&#45;EMD&#95;dettagli](../modeling/media/dsl-emd_details.png)
+![Screenshot di DSL Explorer che mostra un E M D aggiunto con ExampleElement selezionato come classe di indicizzazione e l'opzione si applica alle sottoclassi controllate.](../modeling/media/dsl-emd_details.png)
 
 La **classe di indicizzazione** è la classe di dominio di elementi che possono essere Uniti in membri della classe ricevente. Anche le istanze delle sottoclassi della classe di indicizzazione verranno unite da questo EMD, a meno che non si imposti le **sottoclassi** su false.
 
@@ -232,7 +232,7 @@ Nel codice di merge personalizzato è possibile definire cosa accade quando l'ut
 
 5. Esaminare il contenuto di **Dsl\Generated Files\DomainClasses.cs**. Cercare i metodi denominati `MergeRelate` ed esaminarne il contenuto. Ciò consentirà di scrivere versioni personalizzate.
 
-6. In un nuovo file di codice scrivere una classe parziale per la classe ricevente ed eseguire l'override del `MergeRelate` metodo. Ricordarsi di chiamare il metodo di base. Ad esempio:
+6. In un nuovo file di codice scrivere una classe parziale per la classe ricevente ed eseguire l'override del `MergeRelate` metodo. Ricordarsi di chiamare il metodo di base. Esempio:
 
     ```csharp
     partial class ExampleModel

@@ -1,6 +1,7 @@
 ---
 title: Debug di app Web-risoluzione dei problemi | Microsoft Docs
-ms.custom: seodec18
+description: Individuare i collegamenti alle procedure comuni che è possibile utilizzare per eseguire il debug e la risoluzione degli errori nelle applicazioni Web.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6907ba5f0b48721646c57964012bf0aaa0838b60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 569b967a91ea3a93ff75bc45aec8974f5474ce84
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188326"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728161"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>Debug di applicazioni Web: risoluzione dei problemi
 In questa sezione sono contenute le procedure comuni utilizzabili per risolvere gli errori.

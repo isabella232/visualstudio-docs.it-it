@@ -1,5 +1,7 @@
 ---
 title: Documento di log di grafica | Microsoft Docs
+description: Informazioni sul documento di log della grafica in Visual Studio, che registra gli eventi di grafica che si sono verificati durante l'esecuzione di un'app in una sessione di diagnostica grafica.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d9bdfdb23d199c50b8d7ec6520964043dee8aa6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38dc7452493ebcd39bee5ee55c59fc70e0a6493c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735524"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727658"
 ---
 # <a name="graphics-log-document"></a>Documento log grafica
 Il documento di log della grafica è la registrazione degli eventi di grafica che si sono verificati durante l'esecuzione dell'app in una sessione di diagnostica della grafica. Dopo la registrazione, è possibile esaminare il log in Analizzatore grafica di Visual Studio per diagnosticare i problemi di rendering e di prestazioni.
@@ -67,7 +69,7 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 |**Memoria visualizzazione**|Quantità di memoria installata nella scheda video grafica.|
 |**Nome del driver**|Nome del driver della scheda video grafica.|
 |**Versione driver**|Versione del driver della scheda video grafica.|
-|**Name**|Nome della scheda video grafica.|
+|**Nome**|Nome della scheda video grafica.|
 
  **File esperimento** Elenca le informazioni sul file di esperimento associato alla sessione di acquisizione.
 
@@ -94,7 +96,7 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 |**Data/ora ultima modifica**|Data e ora in cui è stata compilata l'app.|
 |**Percorso**|Percorso dell'app.|
 |**ID processo**|ID processo assegnato all'app.|
-|**Versione**|Versione dell'app.|
+|**Version**|Versione dell'app.|
 
  **File di log VSG** Elenca le informazioni sul documento del log di grafica.
 
@@ -102,8 +104,8 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 |------------------------| - |
 | **Creato da** | Nome dell'app che ha creato il documento di log della grafica. Ad esempio, se la sessione di acquisizione è stata avviata da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (acquisizione manuale), il valore di questa proprietà è [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | **Ora di inizio della sessione** | Data e ora in cui è stata iniziata la sessione di acquisizione. |
-| **Dimensione** | Dimensione del documento log grafica. |
+| **Dimensioni** | Dimensione del documento log grafica. |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
 - [Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo](walkthrough-debugging-rendering-errors-due-to-shading.md)

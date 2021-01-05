@@ -1,5 +1,7 @@
 ---
 title: CV_call_e | Microsoft Docs
+description: Ottenere informazioni di riferimento sul tipo di enumerazione CV_call_e, che specifica la convenzione di chiamata per una funzione in Debug Interface Access SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afab1aef58616bfa925fd9f37aacf195eb569c96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 521d5640f001fa0bc190e1869a6568328e864f5a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462141"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728622"
 ---
 # <a name="cv_call_e"></a>CV_call_e
 Specifica la convenzione di chiamata per una funzione.
@@ -51,12 +53,12 @@ CV_CALL_THISCALL specifica una convenzione di chiamata di funzione utilizzando `
 
 CV_CALL_CLRCALL specifica una convenzione di chiamata di funzione utilizzata da Common Language Runtime (CLR), nota anche come convenzione di chiamata del codice gestito.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaSymbol:: get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) .
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst. h
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)

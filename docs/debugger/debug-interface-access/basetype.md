@@ -1,5 +1,7 @@
 ---
 title: BaseType | Microsoft Docs
+description: Trovare informazioni di riferimento sul tipo di simbolo BaseType (SymTagBaseType) in Visual Studio Debug Interface Access SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d49969f1897529de770063be1a7acc0f035e5ef9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ecbcc24e1558039490a17838cdef4d72e7e95e0
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462288"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728879"
 ---
 # <a name="basetype"></a>BaseType
 I tipi di base sono identificati da `SymTagBaseType` simboli.
@@ -37,6 +39,6 @@ I tipi di base sono identificati da `SymTagBaseType` simboli.
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` Se il tipo di base non è allineato.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Se il tipo di base è contrassegnato come volatile.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazione BasicType](../../debugger/debug-interface-access/basictype.md)
 - [Gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

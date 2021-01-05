@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 626666fc912fcff85fcfcc49425d59018778d1f6
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: fd876e86cefcd0ce50aab02de8e7f4cf37d3ab51
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742779"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729223"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Come visualizzare e diagnosticare contenitori e immagini in Visual Studio
 
@@ -25,11 +25,11 @@ ms.locfileid: "89742779"
 
 ## <a name="view-information-about-your-containers"></a>Visualizzare le informazioni sui contenitori
 
-La finestra **contenitori** viene visualizzata automaticamente quando si avvia un progetto .NET in contenitori. Per visualizzare i contenitori in Visual Studio in qualsiasi momento, usare **CTRL** + **Q** per attivare la casella di ricerca di Visual Studio e digitare `Containers` e scegliere il primo elemento. È anche possibile aprire la finestra **contenitori** dal menu principale. Usare il percorso dei menu per **visualizzare**  >  **altri**  >  **contenitori**di Windows.  
+La finestra **contenitori** viene visualizzata automaticamente quando si avvia un progetto .NET in contenitori. Per visualizzare i contenitori in Visual Studio in qualsiasi momento, usare **CTRL** + **Q** per attivare la casella di ricerca di Visual Studio e digitare `Containers` e scegliere il primo elemento. È anche possibile aprire la finestra **contenitori** dal menu principale. Usare il percorso dei menu per **visualizzare**  >  **altri**  >  **contenitori** di Windows.  
 
-![Screenshot della scheda ambiente nella finestra contenitori](media/view-and-diagnose-containers/container-window.png)
+![Screenshot della finestra contenitori in Visual Studio con un contenitore selezionato nel riquadro sinistro e la scheda ambiente selezionata nel riquadro destro.](media/view-and-diagnose-containers/container-window.png)
 
-Sul lato sinistro viene visualizzato l'elenco dei contenitori nel computer locale. I contenitori associati alla soluzione vengono visualizzati in **contenitori della soluzione**. A destra viene visualizzato un riquadro con schede per l' **ambiente**, le **porte**, i **log**e **i file**.
+Sul lato sinistro viene visualizzato l'elenco dei contenitori nel computer locale. I contenitori associati alla soluzione vengono visualizzati in **contenitori della soluzione**. A destra viene visualizzato un riquadro con schede per l' **ambiente**, le **porte**, i **log** e **i file**.
 
 > [!TIP]
 > È possibile personalizzare facilmente il punto in cui la finestra degli strumenti dei **contenitori** è ancorata in Visual Studio. Vedere [personalizzazione del layout delle finestre in Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Per impostazione predefinita, la finestra **contenitori** è ancorata alla finestra **espressioni di controllo** quando il debugger è in esecuzione.
@@ -38,7 +38,7 @@ Sul lato sinistro viene visualizzato l'elenco dei contenitori nel computer local
 
 La scheda **Environment (ambiente** ) Visualizza le variabili di ambiente nel contenitore. Per il contenitore dell'app, è possibile impostare queste variabili in molti modi, ad esempio in Dockerfile, in un file con estensione ENV oppure usando l'opzione-e quando si avvia un contenitore con un comando di Docker.
 
-![Screenshot della scheda ambiente nella finestra contenitori](media/view-and-diagnose-containers/containers-environment-vars.png)
+![Screenshot della finestra contenitori in Visual Studio che mostra le variabili di ambiente per il contenitore WebApplication11.](media/view-and-diagnose-containers/containers-environment-vars.png)
 
 > [!NOTE]
 > Tutte le modifiche apportate alle variabili di ambiente non vengono riflesse in tempo reale. Inoltre, le variabili di ambiente in questa scheda sono le variabili di ambiente di sistema nel contenitore e non riflettono le variabili di ambiente utente locali per l'app.
@@ -102,13 +102,13 @@ In genere, la finestra del terminale si apre all'esterno di Visual Studio come f
 
 È anche possibile visualizzare le immagini nel computer locale usando la scheda **Immagini** nella finestra **contenitori** . Le immagini estratte da repository esterni vengono raggruppate in un oggetto TreeView. Selezionare un'immagine per esaminare i dettagli per l'immagine.
 
-Per rimuovere un'immagine, fare clic con il pulsante destro del mouse sull'immagine nella visualizzazione albero e scegliere **Rimuovi**oppure selezionare l'immagine e utilizzare il pulsante **Rimuovi** sulla barra degli strumenti.
+Per rimuovere un'immagine, fare clic con il pulsante destro del mouse sull'immagine nella visualizzazione albero e scegliere **Rimuovi** oppure selezionare l'immagine e utilizzare il pulsante **Rimuovi** sulla barra degli strumenti.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
 Per altre informazioni sugli strumenti contenitore disponibili in Visual Studio, vedere [Panoramica degli strumenti](overview.md)per i contenitori.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Sviluppo di contenitori in Visual Studio](./index.yml)
 

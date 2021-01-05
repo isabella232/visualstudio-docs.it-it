@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cdc30b34c85a799827519af3cd2bba2c9f1735a
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 3aa347b7f789e24e7cdd3baa19a6267f0ecdf2e5
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668807"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727515"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>Introduzione a progetti e soluzioni
 
@@ -279,7 +279,17 @@ La riga del file *Calendar.cs* contenente l'attributo <xref:System.Runtime.Compi
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per verificare che il unit test funzioni, selezionare **test**  >  **Esegui**  >  **tutti i test** dalla barra dei menu. Viene visualizzata la finestra **Esplora test**. Verificare che venga superato il testo **TestGetCurrentDate**.
+::: moniker range="vs-2017"
+
+Se si vuole verificare che il unit test funzioni, scegliere **test**  >  **Esegui**  >  **tutti i test** dalla barra dei menu. Viene visualizzata la finestra **Esplora test**. Verificare che venga superato il testo **TestGetCurrentDate**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Se si vuole verificare che il unit test funzioni, scegliere **test**  >  **Esegui tutti i test** dalla barra dei menu. Viene visualizzata la finestra **Esplora test**. Verificare che venga superato il testo **TestGetCurrentDate**.
+
+::: moniker-end
 
 ![Esplora test in Visual Studio mostra che il test è stato superato](media/tutorial-projects-test-explorer.png "Esplora test in Visual Studio che mostra un test superato.")
 
@@ -297,7 +307,7 @@ Per verificare che il unit test funzioni, selezionare **test**  >  **Esegui**  >
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare progetti e soluzioni](../ide/creating-solutions-and-projects.md)
 - [Gestire le proprietà di progetti e soluzioni](../ide/managing-project-and-solution-properties.md)

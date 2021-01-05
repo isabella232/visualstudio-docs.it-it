@@ -1,5 +1,7 @@
 ---
 title: Risolvere i problemi di individuazione dei modelli in Visual Studio | Microsoft Docs
+description: Informazioni su come abilitare la registrazione diagnostica per risolvere i problemi di distribuzione di progetti e modelli personalizzati in Visual Studio SDK.
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
 author: acangialosi
@@ -7,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ff5b9974f20841378f367c3cb631a8d4cf7787
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff864e1a244d058b2c5ec1de33d116cfdcfe22db
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235043"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716046"
 ---
 # <a name="troubleshooting-template-installation"></a>Risoluzione dei problemi di installazione del modello
 
@@ -70,7 +72,7 @@ Il file di log contiene le colonne seguenti:
 > [!NOTE]
 > Per disabilitare la registrazione, rimuovere il file pkgdef o modificare il valore di `EnableTemplateDiscoveryLog` in `dword:00000000` , quindi eseguire di `devenv /updateConfiguration` nuovo l'operazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creazione di modelli di progetto e di elemento personalizzati](creating-custom-project-and-item-templates.md)
 - [Risoluzione dei problemi di Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

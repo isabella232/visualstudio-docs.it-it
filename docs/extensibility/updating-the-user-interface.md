@@ -1,5 +1,7 @@
 ---
 title: Aggiornamento dell'interfaccia utente | Microsoft Docs
+description: Informazioni su come aggiungere codice per aggiornare l'interfaccia utente dopo aver implementato un nuovo comando nel pacchetto VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c51ae790eb35645fbe9aec5d9c422e1051aaa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fae228b3fab1e25f92c02da2512abdd78edda0db
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698878"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716029"
 ---
 # <a name="updating-the-user-interface"></a>Aggiornamento dell'interfaccia utente
 Dopo aver implementato un comando, è possibile aggiungere il codice per aggiornare l'interfaccia utente con lo stato dei nuovi comandi.
@@ -50,6 +52,6 @@ Dopo aver implementato un comando, è possibile aggiungere il codice per aggiorn
 
          Si noti che è possibile ottenere l' <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interfaccia chiamando il `QueryInterface` metodo su un <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> oggetto o ottenendo l'interfaccia dal <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> servizio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Implementazione](../extensibility/internals/command-implementation.md)

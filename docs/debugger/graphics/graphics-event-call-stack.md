@@ -1,5 +1,7 @@
 ---
 title: Stack di chiamate eventi di grafica | Microsoft Docs
+description: Esaminare lo stack di chiamate eventi di grafica in Analizzatore grafica di Visual Studio per eseguire il mapping della relazione tra gli eventi grafici problematici e il codice sorgente dell'app.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c221a572264bf6a6aaed9edbec66fb3c0c3ff4b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85712f2b8971b2b5284dab89d90eecec9010e9b4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735505"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727750"
 ---
 # <a name="graphics-event-call-stack"></a>Stack di chiamate eventi di grafica
 Stack di chiamate eventi di grafica in Analizzatore grafica di Visual Studio consente di mappare la relazione tra gli eventi di grafica problematici e il codice sorgente dell'app.
@@ -34,12 +36,12 @@ Stack di chiamate eventi di grafica in Analizzatore grafica di Visual Studio con
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Name**|Simbolo che identifica in modo univoco la funzione che contiene il sito di chiamata. Il simbolo di debug per la funzione viene visualizzato quando è disponibile; in caso contrario, viene visualizzato l'offset della funzione.|
+|**Nome**|Simbolo che identifica in modo univoco la funzione che contiene il sito di chiamata. Il simbolo di debug per la funzione viene visualizzato quando è disponibile; in caso contrario, viene visualizzato l'offset della funzione.|
 |**File**|Nome del file di codice sorgente o di libreria contenente il sito di chiamata.|
-|**Posizione**|Numero di riga del sito di chiamata.|
+|**Località**|Numero di riga del sito di chiamata.|
 
 ### <a name="links-to-graphics-objects"></a>Collegamenti a oggetti grafici
  Per comprendere l'evento di grafica selezionato potrebbero essere necessarie informazioni sull'oggetto Direct3D a cui è associato. Nella finestra **Stack di chiamate eventi di grafica** è presente un collegamento a tali informazioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex](walkthrough-missing-objects-due-to-vertex-shading.md)

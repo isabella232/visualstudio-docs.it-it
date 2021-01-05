@@ -1,5 +1,7 @@
 ---
 title: BeginCapture | Microsoft Docs
+description: Usare il metodo BeginCapture della classe VsgDbg per iniziare un intervallo di acquisizione che termina con EndCapture.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9edbb52d-ee0b-4cc4-a382-972bcee067d3
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9521288b27b1f9b11a2fdb8cbbd613f1a77f857d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 931e7ab05442a429c0b9e6468d42aadca942c1ee
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72736149"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727965"
 ---
 # <a name="begincapture"></a>BeginCapture
 Inizia un intervallo di acquisizione che termina con `EndCapture` .
@@ -29,6 +31,6 @@ void BeginCapture();
 
  Per acquisire un intervallo, è necessario preparare l'app per acquisire e registrare le informazioni grafiche, ovvero è necessario avere chiamato [init](init.md) tramite un'istanza della `VsgDbg` classe prima di chiamare `BeginCapture` o `EndCapture` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [EndCapture](endcapture.md)
 - [CaptureCurrentFrame](capturecurrentframe.md)

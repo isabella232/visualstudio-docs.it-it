@@ -1,6 +1,7 @@
 ---
 title: Preparare il debug di progetti C++ | Microsoft Docs
-ms.custom: seodec18
+description: Ottenere informazioni sulla preparazione per il debug dei tipi di progetto di base creati dal Visual C++ modelli di progetto in Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e399b28d3ddce07cae263550b536c21ad1db028
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916314"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728304"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Preparazione al debug: tipi di progetto C++
 In questa sezione viene descritto come eseguire il debug dei tipi di progetto di base creati mediante i modelli di progetto [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].
@@ -101,7 +102,7 @@ In questa sezione viene descritto come eseguire il debug dei tipi di progetto di
 
  Il debug di questo tipo di applicazione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è simile a quello delle applicazioni Windows Form gestite.
 
- Quando si crea un progetto di Windows Form mediante il modello di progetto, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vengono definite automaticamente le impostazioni necessarie per le configurazioni di debug e di rilascio. Se necessario, è possibile modificare queste impostazioni nella finestra di dialogo ** \<project name> pagine delle proprietà** . Per altre informazioni, vedere [debug e configurazioni di rilascio](../debugger/how-to-set-debug-and-release-configurations.md).
+ Quando si crea un progetto di Windows Form mediante il modello di progetto, in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vengono definite automaticamente le impostazioni necessarie per le configurazioni di debug e di rilascio. Se necessario, è possibile modificare queste impostazioni nella finestra di dialogo **\<project name> pagine delle proprietà** . Per altre informazioni, vedere [debug e configurazioni di rilascio](../debugger/how-to-set-debug-and-release-configurations.md).
 
  Per altre informazioni, vedere [impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
@@ -109,7 +110,7 @@ In questa sezione viene descritto come eseguire il debug dei tipi di progetto di
 
  [Contenuto dell'argomento](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Connessione a uno o più programmi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

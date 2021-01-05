@@ -1,5 +1,7 @@
 ---
 title: CV_HREG_e | Microsoft Docs
+description: Ottenere informazioni di riferimento sul tipo di enumerazione CV_HREG_e, che specifica un registro di destinazione in Debug Interface Access SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee15d5b4d6a0959397d8d62753455c7a26f01f78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f24476bc00293f204dfa28d57ca2d961c2d55d9d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462107"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728555"
 ---
 # <a name="cv_hreg_e"></a>CV_HREG_e
 Specifica un registro di destinazione.
@@ -431,7 +433,7 @@ CV_AM33_ * registri utilizzati da Matsushita/Panasonic AM33 e dai processori cor
 
 CV_M32R_ * i registri usati dal processore Mitsubishi M32R.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Ogni tipo di processore utilizza un proprio set di registri univoco.
 
 I valori di questa enumerazione vengono passati ai metodi seguenti:
@@ -449,7 +451,7 @@ I valori di questa enumerazione vengono passati ai metodi seguenti:
 ## <a name="requirements"></a>Requisiti:
 Intestazione: cvconst. h
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
 - [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)

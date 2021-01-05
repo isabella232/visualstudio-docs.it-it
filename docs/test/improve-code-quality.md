@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f5eff2257988a4210e7f4cd8a8a37c66c57c185d
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 0029321ddfc3ff12bb9c40dac9de64a9eb067a95
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328691"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756643"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>Esaminare prima di tutto gli strumenti di test in Visual Studio
 
@@ -51,11 +51,17 @@ Visual Studio è anche estendibile e consente l'uso di adattatori di unit test d
 
 [Live Unit Testing](../test/live-unit-testing.md) consente di eseguire automaticamente unit test in background e di visualizzare graficamente i risultati di code coverage e test nell'editor del codice di Visual Studio.
 
+> [!NOTE]
+> Live unit testing è disponibile solo in Enterprise Edition ed è supportato solo per il codice .NET.
+
 ## <a name="intellitest"></a>IntelliTest
 
 IntelliTest genera automaticamente unit test e dati di test per il codice gestito. IntelliTest migliora il code coverage e riduce significativamente l'impegno necessario per creare e gestire unit test per codice nuovo o esistente.
 
 ![IntelliTest in azione](media/devtest-intellitest.png)
+
+> [!NOTE]
+> IntelliTest è disponibile solo in Enterprise Edition. È supportato per il codice C# destinato al .NET Framework. .NET Core e .NET Standard non sono attualmente supportati.
 
 * [Generare unit test per il codice con IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Post di blog su IntelliTest](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
@@ -64,6 +70,9 @@ IntelliTest genera automaticamente unit test e dati di test per il codice gestit
 ## <a name="code-coverage"></a>Code coverage
 
 [Code coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) determina la percentuale di codice del progetto che viene effettivamente testata dai test codificati come ad esempio gli unit test. Per una protezione efficace dai bug, i test devono analizzare o "coprire" gran parte del codice.
+
+> [!NOTE]
+> Il code coverage è disponibile solo in Enterprise Edition.
 
 L'analisi di code coverage può essere applicata sia al codice gestito che a quello non gestito (nativo).
 
@@ -77,9 +86,15 @@ Il code coverage è un'opzione per l'esecuzione dei metodi di test utilizzando E
 
 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) consente di isolare il codice che si sta testando sostituendo altre parti dell'applicazione con stub o shim.
 
+> [!NOTE]
+> Microsoft Fakes è disponibile solo in Enterprise Edition ed è supportato solo per il codice .NET.
+
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Test dell'interfaccia utente con interfaccia utente codificata e Selenium
 
 I test codificati dell'interfaccia utente consentono di creare test completamente automatici per convalidare le funzionalità e il comportamento dell'interfaccia utente dell'applicazione. Sono in grado di automatizzare il testing dell'interfaccia utente in diverse tecnologie, tra cui le app UWP basate su XAML, le app browser e le app di SharePoint.
+
+> [!NOTE]
+> L'interfaccia utente codificata è una funzionalità deprecata.
 
 Sia che si scelgano i test codificati dell'interfaccia utente più evoluti, sia che si usino test generici basati su browser con Selenium, Visual Studio offre tutti gli strumenti necessari.
 
@@ -89,10 +104,6 @@ Sia che si scelgano i test codificati dell'interfaccia utente più evoluti, sia 
 * [Creazione, modifica e gestione di un test codificato dell'interfaccia utente](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [Testare app UWP con test codificati dell'interfaccia utente](test-uwp-app-with-coded-ui-test.md)
 * [Lab sull'esecuzione di test codificati dell'interfaccia utente con Visual Studio Enterprise](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
-
-## <a name="load-testing"></a>Test di carico
-
-Il [test di carico](../test/quickstart-create-a-load-test-project.md) simula il carico su un'applicazione server eseguendo unit test e test delle prestazioni Web.
 
 ## <a name="related-scenarios"></a>Scenari correlati
 

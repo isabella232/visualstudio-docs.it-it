@@ -13,12 +13,12 @@ manager: crdun
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 24af3c279115322b0592faa3b9fa6049bc0c0b62
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 62c2b69edf6868d1559df2a861a85e286f8ffa15
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878917"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729210"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Risolvere i problemi di Visual Studio Emulator for Android
 Questo argomento contiene informazioni che consentono di risolvere i problemi che possono verificarsi quando si usa Visual Studio Emulator for Android.
@@ -70,7 +70,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
 ## <a name="emulator-fails-to-install"></a><a name="NoInstall"></a> Non è possibile installare l'emulatore
  Se Hyper-V non è installato, quando si prova a installare l'emulatore verrà visualizzato un messaggio analogo al seguente. È necessario avere un computer che supporta HyperV e che HyperV sia abilitato.
 
- ![Android&#95;Emu&#95;installare&#95;problema](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
+ ![Screenshot di un messaggio di Visual Studio che informa che l'installazione è bloccata per Microsoft Visual Studio Emulator for Android perché il computer non dispone di Hyper-V.](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
 > Questo messaggio è applicabile a Visual Studio Emulator for Android e all'emulatore Windows Phone. Windows 8.1 e Windows 10 supportano l'emulatore.
@@ -135,7 +135,7 @@ Questo argomento contiene informazioni che consentono di risolvere i problemi ch
 
 - Nella Console di gestione di Hyper-V aprire Gestione commutatori virtuali e verificare la disponibilità di due commutatore di rete. Assicurarsi che il primo sia il commutatore interno e che il secondo sia esterno.
 
-     ![Android&#95;Emu&#95;V&#95;switch&#95;Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
+     ![Screenshot della gestione Commuter virtuale nella console di gestione di Hyper-V. Viene evidenziato un nuovo comportatore virtuale e le proprietà indicano che si tratta di un Commuter di rete esterno.](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
 
      Se l'installazione non è corretta e si usa Windows 10, è possibile provare a [reinstallare i dispositivi di rete con il comando netcfg -d](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (sezione 6).
 

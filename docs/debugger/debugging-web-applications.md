@@ -1,5 +1,7 @@
 ---
 title: Debug di applicazioni Web | Microsoft Docs
+description: Sono disponibili collegamenti che consentono di eseguire il debug di diversi tipi di applicazioni Web, ad esempio app ASP.NET, app JavaScript e TypeScript o app script AJAX.
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f54e80059896345abb00e955a827a00b5a35a5
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 63c5409f14fde2805e80f35f498cb57d68b1f58b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600121"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728135"
 ---
 # <a name="debugging-web-applications"></a>Debug di applicazioni Web
 
@@ -46,6 +48,6 @@ Questo articolo fornisce i collegamenti che consentono di eseguire il debug di d
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)
+- [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Debug in Visual Studio](../debugger/index.yml)

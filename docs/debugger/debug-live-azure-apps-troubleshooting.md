@@ -1,6 +1,7 @@
 ---
 title: Risoluzione dei problemi relativi al debug di snapshot | Microsoft Docs
-ms.custom: ''
+description: Informazioni sulla risoluzione dei problemi e sui problemi noti per il debug di snapshot in Visual Studio. Caricare ICorProfiler senza causare tempi di inattività nel sito di produzione.
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ea7f1ea1f665f5180851e42814ad4e8c12c8c5
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: b5a76c1cae508acd08e5f077d466facf02e0211a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668521"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728644"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Risoluzione dei problemi e problemi noti per il debug di snapshot in Visual Studio
 
@@ -242,7 +243,7 @@ Il debug di snapshot e Application Insights dipendono da un ICorProfiler, che vi
 - Avviare il sito dello slot. È consigliabile visitare il sito per eseguire di nuovo il riscaldamento.
 - Scambiare questo slot con quello di produzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Debug in Visual Studio](../debugger/index.yml)
 - [Eseguire il debug di app ASP.NET attive con Snapshot Debugger](../debugger/debug-live-azure-applications.md)

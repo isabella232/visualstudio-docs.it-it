@@ -1,5 +1,7 @@
 ---
 title: Eseguire il debug del codice di esempio HTML e CSS | Microsoft Docs
+description: Trovare il codice di esempio HTML e CSS usato con un articolo di debug della Guida introduttiva. Gli errori presenti in progettazione nella Guida introduttiva sono corretti in questo articolo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 245676d084485ee46647112f5409cdb1854d6913
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745551"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728911"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Eseguire il debug del codice di esempio HTML e CSS
 
@@ -101,5 +103,5 @@ Nell'esempio di codice seguente viene illustrato il codice JavaScript completo i
 })();
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

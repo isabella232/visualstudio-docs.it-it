@@ -1,5 +1,7 @@
 ---
 title: CV_CFL_LANG | Microsoft Docs
+description: Ottenere informazioni sul tipo di enumerazione CV_CFL_LANG, che specifica il linguaggio del codice dell'applicazione o del modulo collegato in Debug Interface Access SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8910ebe012e1edbaa6c26695027214db4e66c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07fff0b927fcc271c7671ab98683571adfa9830f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462134"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728589"
 ---
 # <a name="cv_cfl_lang"></a>CV_CFL_LANG
 Specifica il linguaggio del codice sorgente dell'applicazione o del modulo collegato.
@@ -81,12 +83,12 @@ CV_CFL_MSIL linguaggio dell'applicazione è un linguaggio MSIL (Microsoft Interm
 
 CV_CFL_HLSL linguaggio applicazione è un linguaggio shader di alto livello.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaSymbol:: get_Language](../../debugger/debug-interface-access/idiasymbol-get-language.md) .
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst. h
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md)

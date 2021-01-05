@@ -1,5 +1,7 @@
 ---
 title: Costanti (Debug Interface Access SDK) | Microsoft Docs
+description: Vedere un elenco di costanti stringa che è possibile usare per identificare varie sezioni di un file di database di debug del programma (PDB) tramite l'SDK di debug Interface Access (DIA).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fa6037253141df1111ef3bc57fac9c718d826dc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 806eb9207fa60b7147d1e0d7df75871b23f8850d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462239"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728754"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>Costanti (Debug Interface Access SDK)
 Queste costanti di stringa possono essere utilizzate per identificare varie sezioni di un file di database di debug del programma (PDB) tramite il DIA SDK.
@@ -55,7 +57,7 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 ## <a name="requirements"></a>Requisiti
 Intestazione: dia2. h
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

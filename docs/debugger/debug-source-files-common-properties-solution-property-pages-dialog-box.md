@@ -1,5 +1,6 @@
 ---
 title: File di origine di debug/pagine delle proprietà della soluzione
+description: Per accedere alla pagina delle proprietà debug dei file di origine in Visual Studio, fare clic con il pulsante destro del mouse sulla soluzione in Esplora soluzioni e scegliere Proprietà > proprietà comuni.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3057a6a94edb09018836493257e8d875d938b839
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: be57355c8fc38758080ebde344db0b4224bc3df8
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809544"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728525"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Esegui debug dei file di origine, Proprietà comuni, finestra di dialogo Pagine delle proprietà di soluzione
 In questa pagina delle proprietà è specificato il punto in cui il debugger cerca i file di origine durante il debug della soluzione.
@@ -39,7 +40,7 @@ In questa pagina delle proprietà è specificato il punto in cui il debugger cer
 
  **Non cercare questi file di origine** Immettere i nomi dei file che non si desidera vengano letti dal debugger. Se il debugger trova uno di questi file in una delle directory specificate in precedenza, lo ignora. Se durante il debug viene visualizzata la finestra di dialogo **Trova origine** e si fa clic su **Annulla**, il file cercato verrà aggiunto all'elenco per evitare che il debugger continui a cercarlo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sicurezza del debugger](../debugger/debugger-security.md)
-- [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)
+- [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)

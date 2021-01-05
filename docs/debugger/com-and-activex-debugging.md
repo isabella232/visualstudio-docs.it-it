@@ -1,5 +1,7 @@
 ---
 title: Debug di COM e ActiveX | Microsoft Docs
+description: Suggerimenti per il debug di applicazioni COM e controlli ActiveX in Visual Studio. Informazioni sul debug dei server e dei contenitori COM. Trova gli strumenti di debug COM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a818cfde2996b26bd9d5f31b128e41f2a9fe2e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1df80e8486cb8f8667494137392fadb0a9754e8b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188689"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729002"
 ---
 # <a name="com-and-activex-debugging"></a>Debug di COM e ActiveX
 In questa sezione vengono forniti suggerimenti sul debug di applicazioni COM e di controlli ActiveX.
@@ -41,7 +43,7 @@ In questa sezione vengono forniti suggerimenti sul debug di applicazioni COM e d
 ## <a name="related-sections"></a>Sezioni correlate
  [Prima di tutto esaminare il debugger](../debugger/debugger-feature-tour.md) Vengono forniti collegamenti alle sezioni più grandi della documentazione di debug. Le informazioni includono: novità del debugger, impostazioni e preparazione, punti di interruzione, gestione delle eccezioni, modifica e continuazione, debug di codice gestito, debug di progetti C++, debug di COM e ActiveX, debug di dll, debug di SQL e riferimenti all'interfaccia utente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Introduzione a COM](/cpp/atl/introduction-to-com)

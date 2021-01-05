@@ -1,5 +1,7 @@
 ---
 title: Eseguire il debug di più processi | Microsoft Docs
+description: Eseguire il debug di più processi in Visual Studio. Inizia e passa da un processo all'altra, Interrompi, continua, Esegui istruzione per istruzione e termina o scollega dai singoli processi.
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2018
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a61e0083b17fa095b419a2066a4f8b9c39dfb7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 214025c2d128443223594fdb00fcf730e5a8091a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350602"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728631"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a>Eseguire il debug di più processi (C#, Visual Basic, C++)
 
@@ -34,7 +36,7 @@ Visual Studio è in grado di eseguire il debug di una soluzione con diversi proc
 
 Quando più di un progetto in una soluzione Visual Studio può essere eseguito in modo indipendente, è possibile selezionare il progetto avviato dal debugger. Il progetto di avvio corrente viene visualizzato in grassetto in **Esplora soluzioni**.
 
-Per modificare il progetto di avvio, in **Esplora soluzioni**fare clic con il pulsante destro del mouse su un progetto diverso e selezionare **Imposta come progetto di avvio**.
+Per modificare il progetto di avvio, in **Esplora soluzioni** fare clic con il pulsante destro del mouse su un progetto diverso e selezionare **Imposta come progetto di avvio**.
 
 Per avviare il debug di un progetto da **Esplora soluzioni** senza renderlo il progetto di avvio, fare clic con il pulsante destro del mouse sul progetto e scegliere **debug**  >  **Avvia nuova istanza** o **Esegui istruzione nuova istanza**.
 
@@ -42,15 +44,15 @@ Per avviare il debug di un progetto da **Esplora soluzioni** senza renderlo il p
 
 1. Selezionare la soluzione in **Esplora soluzioni** , quindi selezionare l'icona **Proprietà** sulla barra degli strumenti oppure fare clic con il pulsante destro del mouse sulla soluzione e scegliere **proprietà**.
 
-1. Nella pagina **Proprietà** selezionare progetto di **avvio proprietà comuni**  >  **Startup Project**.
+1. Nella pagina **Proprietà** selezionare progetto di **avvio proprietà comuni**  >  .
 
    ![Modifica del tipo di avvio per un progetto](../debugger/media/dbg_execution_startmultipleprojects.png "DBG_Execution_StartMultipleProjects")
 
 1. Selezionare **selezione corrente**, **progetto di avvio singolo** e un file di progetto o **più progetti di avvio**.
 
-   Se si selezionano **più progetti di avvio**, è possibile modificare l'ordine di avvio e l'azione da eseguire per ogni progetto: **Start**, **Avvia senza eseguire debug**o **nessuno**.
+   Se si selezionano **più progetti di avvio**, è possibile modificare l'ordine di avvio e l'azione da eseguire per ogni progetto: **Start**, **Avvia senza eseguire debug** o **nessuno**.
 
-1. Selezionare **applica**oppure **OK** per applicare e chiudere la finestra di dialogo.
+1. Selezionare **applica** oppure **OK** per applicare e chiudere la finestra di dialogo.
 
 ### <a name="attach-to-a-process"></a><a name="BKMK_Attach_to_a_process"></a> Connettersi a un processo
 
@@ -75,11 +77,11 @@ In alcuni casi potrebbe essere necessario eseguire il debug del codice di avvio 
 
 1. Avviare l'editor del registro di sistema di Windows eseguendo *regedit.exe*.
 
-1. Nell'editor del registro di sistema passare a **HKEY_LOCAL_MACHINE opzioni di esecuzione file di NT\CurrentVersion\Image \Software\Microsoft\Windows**.
+1. Nell'editor del registro di sistema passare a **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options**.
 
 1. Selezionare la cartella dell'app da avviare nel debugger.
 
-   Se l'app non è elencata come cartella figlio, fare clic con il pulsante destro del mouse su **Opzioni di esecuzione file di immagine**, selezionare **nuova**  >  **chiave**e digitare il nome dell'app. In alternativa, fare clic con il pulsante destro del mouse sulla nuova chiave nell'albero, scegliere **Rinomina**e quindi immettere il nome dell'app.
+   Se l'app non è elencata come cartella figlio, fare clic con il pulsante destro del mouse su **Opzioni di esecuzione file di immagine**, selezionare **nuova**  >  **chiave** e digitare il nome dell'app. In alternativa, fare clic con il pulsante destro del mouse sulla nuova chiave nell'albero, scegliere **Rinomina** e quindi immettere il nome dell'app.
 
 1. Fare clic con il pulsante destro del mouse sulla nuova chiave nell'albero e scegliere **nuovo**  >  **valore stringa**.
 
@@ -100,7 +102,7 @@ Quando si esegue il debug di un'app con diversi processi, i comandi di interruzi
 
 **Per modificare se tutti i processi vengono sospesi quando un processo viene interrotto:**
 
-- In **strumenti** (o **debug**) > **Opzioni**  >  **debug**  >  **generale**selezionare o deselezionare la casella di controllo **Interrompi tutti i processi quando un processo viene interrotto** .
+- In **strumenti** (o **debug**) > **Opzioni**  >  **debug**  >  **generale** selezionare o deselezionare la casella di controllo **Interrompi tutti i processi quando un processo viene interrotto** .
 
 ### <a name="break-step-and-continue-commands"></a><a name="BKMK_Break__step__and_continue_commands"></a> Comandi per interrompere, eseguire le istruzioni e continuare
 
@@ -136,7 +138,7 @@ Quando si esegue il debug, è possibile connettersi a più processi, ma in un de
 
 **Per impostare il processo corrente dalla finestra processi:**
 
-1. Per aprire la finestra **processi** , durante il debug, selezionare **debug**  >  **Windows**  >  **processi**Windows.
+1. Per aprire la finestra **processi** , durante il debug, selezionare **debug**  >    >  **processi** Windows.
 
 1. Nella finestra **processi** il processo corrente è contrassegnato da una freccia gialla. Fare doppio clic sul processo che si desidera impostare come processo corrente.
 
@@ -170,12 +172,12 @@ La tabella seguente descrive i comportamenti del debugger arrestare, terminare e
 |**Esegui debug**  >  **Scollega tutto**|Il debugger si disconnette da tutti i processi.|
 |Finestra **processi** > **scollegare il processo**|Il debugger si disconnette da tutti i processi selezionati.<br />Mantenimento dello stato esistente (sospeso o in esecuzione) degli altri processi.|
 |Finestra **processi** > **Termina processo**|Il processo selezionato è terminato.<br />Mantenimento dello stato esistente (sospeso o in esecuzione) degli altri processi.|
-|Finestra **processi** > **scollegare quando si arresta il debug**|Se questa opzione è selezionata, **debug**  >  **Interrompi debug** disconnette dal processo selezionato. <br />Se questa opzione non è **selezionata,**  >  il debug**Interrompi debug** termina il processo selezionato. |
+|Finestra **processi** > **scollegare quando si arresta il debug**|Se questa opzione è selezionata, **debug**  >  **Interrompi debug** disconnette dal processo selezionato. <br />Se questa opzione non è **selezionata,**  >  il debug **Interrompi debug** termina il processo selezionato. |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [Connetti a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Esplorazione del codice con il debugger](../debugger/navigating-through-code-with-the-debugger.md)
 - [Debug just-in-Time](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Eseguire il debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)

@@ -1,5 +1,7 @@
 ---
 title: Risoluzione dei problemi relativi ai pacchetti VSPackage | Microsoft Docs
+description: Informazioni sui problemi comuni che potrebbero verificarsi con il pacchetto VSPackage e suggerimenti per la risoluzione dei problemi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f79bfcb73749992365b167bae84a15de17d2440d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c1e85c59d49f4079172cfb098701b09d461bdf3
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235030"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716055"
 ---
 # <a name="troubleshooting-vspackages"></a>Risoluzione dei problemi relativi ai pacchetti VSPackage
 Di seguito sono riportati i problemi comuni che potrebbero verificarsi con il pacchetto VSPackage e suggerimenti per risolvere i problemi.
@@ -123,6 +125,6 @@ Di seguito sono riportati i problemi comuni che potrebbero verificarsi con il pa
 
    Verificare che la voce InprocServer32 abbia il percorso corretto della dll del pacchetto VSPackage.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [VSPackages](../extensibility/internals/vspackages.md)
 - [Risoluzione dei problemi di Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

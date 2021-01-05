@@ -1,6 +1,7 @@
 ---
 title: Distribuire app UWP | Microsoft Docs
-ms.custom: seodec18
+description: Distribuisci app piattaforma UWP (Universal Windows Platform) (UWP) da Visual Studio. Specificare un dispositivo di destinazione locale o remoto per la distribuzione. Informazioni sulle opzioni di distribuzione.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 01/16/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4c58dbb32ef0a476ac7e22a840e27e389c710f97
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70b4d862b69eeb34028fb0f782cc5c8d6acbdbce
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188286"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728200"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Distribuire app UWP da Visual Studio
 
@@ -66,9 +67,9 @@ La distribuzione usa il canale di rete del debugger remoto per inviare i file de
 
 3. Seleziona il nodo **Debug** nella finestra della pagina delle proprietà.
 
-4. Per **dispositivo di destinazione**selezionare **computer remoto**.
+4. Per **dispositivo di destinazione** selezionare **computer remoto**.
 
-5. In **computer remoto**fare clic su **trova**.
+5. In **computer remoto** fare clic su **trova**.
 
 6. È possibile digitare il nome o l'indirizzo IP del dispositivo remoto oppure è possibile scegliere il dispositivo nella finestra di dialogo **connessione remota** .
 
@@ -98,9 +99,9 @@ Di seguito sono indicate le opzioni di distribuzione che puoi impostare nella pa
 
 **Consenti loopback della rete locale**
 
-Per motivi di sicurezza, un UWP o un' [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] app installata in modalità standard non è consentita per effettuare chiamate di rete al dispositivo in cui è installato. Per impostazione predefinita, la distribuzione di Visual Studio crea una esenzione da questa regola per l'app distribuita. Questa esenzione ti consente di verificare le procedure di comunicazione in un singolo computer. Prima di inviare l'app a [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], dovrai testarla senza l'esenzione.
+Per motivi di sicurezza, un UWP o un' [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] app installata in modalità standard non è consentita per effettuare chiamate di rete al dispositivo in cui è installato. Per impostazione predefinita, per l'app distribuita la distribuzione di Visual Studio crea un'esenzione da questa regola. Questa esenzione ti consente di testare le procedure di comunicazione in un unico computer. Prima di inviare l'app a [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], dovrai testarla senza l'esenzione.
 
-Per rimuovere l'esenzione relativa al loopback della rete:
+Per rimuovere l'esenzione relativa al loopback della rete dall'app:
 
 - Nella pagina delle proprietà debug in C# e Visual Basic deselezionare la casella di controllo **Consenti loopback di rete** .
 
@@ -108,14 +109,14 @@ Per rimuovere l'esenzione relativa al loopback della rete:
 
 **Non avviare, ma eseguire il debug del codice all'avvio (C# e Visual Basic)/applicazione di avvio (C++)**
 
-Per configurare la distribuzione in modo da avviare automaticamente una sessione di debug all'avvio dell'app:
+Per configurare la distribuzione in modo che venga avviata automaticamente una sessione di debug all'avvio dell'app:
 
 - Nella pagina delle proprietà debug in C# e Visual Basic, selezionare la casella di controllo **non avviare, ma eseguire il debug del codice all'avvio** .
 
 - Nella pagina delle proprietà debug C++ impostare il valore di **Avvia applicazione** su **Sì**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Opzioni di distribuzione remota avanzata](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
+- [Opzioni avanzate di distribuzione remota](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
 - [Eseguire il debug di un pacchetto dell'app installato](../debugger/debug-installed-app-package.md)
 - [Eseguire app da Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

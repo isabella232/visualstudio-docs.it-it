@@ -1,5 +1,7 @@
 ---
 title: Finestra di dialogo non è possibile modificare il valore | Microsoft Docs
+description: Esaminare la finestra di dialogo non è possibile modificare il valore, che viene visualizzato in Visual Studio se si tenta di modificare una variabile in un valore non valido in una finestra del debugger o controllo immediato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97f057edefefd590c37b49d709ecf8a6e029b905
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf4181d7ff56bd1a5cf3f195bcea5b02aa023629
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745746"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729054"
 ---
 # <a name="cannot-change-value-dialog-box"></a>Impossibile modificare il valore (finestra di dialogo)
 ## <a name="error"></a>Errore
@@ -34,6 +36,6 @@ ms.locfileid: "72745746"
 ## <a name="solution"></a>Soluzione
  Assicurarsi che l'input digitato nella finestra del debugger o nella finestra di dialogo Controllo immediato rappresenti un valore consentito per la variabile che si sta tentando di impostare.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Espressioni nel debugger](../debugger/expressions-in-the-debugger.md)

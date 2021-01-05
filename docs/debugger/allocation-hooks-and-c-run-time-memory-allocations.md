@@ -1,5 +1,7 @@
 ---
 title: Hook di allocazione e allocazioni di memoria di runtime C
+description: Informazioni sugli hook di allocazione e sulle allocazioni di memoria di runtime C nel debug di Visual Studio. Le funzioni hook di allocazione devono ignorare in modo esplicito _CRT_BLOCK blocchi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be75b4d3e83ed297f31e9015c7ba082c0611206d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: f2c9225281952700b118f13b20a11f7619307b8e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851619"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729171"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Hook di allocazione e allocazioni di memoria di runtime C
 Una restrizione molto importante per le funzioni hook di allocazione è che devono ignorare in modo esplicito i `_CRT_BLOCK` blocchi. Questi blocchi sono le allocazioni di memoria eseguite internamente dalle funzioni della libreria di runtime del linguaggio C se effettuano chiamate a funzioni della libreria di runtime C che allocano memoria interna. È possibile ignorare `_CRT_BLOCK` i blocchi includendo il codice seguente all'inizio della funzione hook di allocazione:
@@ -39,5 +41,5 @@ Se l'hook di allocazione non ignora `_CRT_BLOCK` i blocchi, qualsiasi funzione d
 
 Se si esaminano i file di origine della libreria di runtime, si noterà che la funzione hook di allocazione predefinita, **CrtDefaultAllocHook** (che restituisce semplicemente **TRUE**) si trova in un file separato, DBGHOOK.C. Se si desidera che l'hook di allocazione venga chiamato anche per le allocazioni effettuate dal codice di avvio di runtime, che viene eseguito prima della funzione **main** dell'applicazione, è possibile sostituire questa funzione predefinita con una personalizzata, anziché utilizzare [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Scrittura di funzioni hook di debug](../debugger/debug-hook-function-writing.md)

@@ -1,5 +1,7 @@
 ---
 title: Finestra di dialogo Configura firewall per debug remoto | Microsoft Docs
+description: Vedere la finestra di dialogo Configura firewall per debug remoto, che viene visualizzata quando il Windows Firewall interrompe la ricezione dei dati tramite la rete da parte del debugger.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2511fc2adfa63ff28f8459f48cbdf4b4623ff5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86a0cac2e42e1271e689f2b1880eef8ca6d14644
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745669"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728963"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>Configura firewall per debug remoto (finestra di dialogo)
 Questa finestra di dialogo viene visualizzata quando Windows Firewall impedisce al debugger di ricevere informazioni attraverso la rete. Per continuare il debug remoto, è necessario configurare un'apertura nel firewall per consentire al debugger di ricevere informazioni.
@@ -40,7 +42,7 @@ Questa finestra di dialogo viene visualizzata quando Windows Firewall impedisce 
 
  **Sblocca debug remoto da qualsiasi computer** Consente il debug remoto di computer in qualsiasi punto della rete. Questa impostazione comporta il maggior rischio di sicurezza.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Debug remoto](../debugger/remote-debugging.md)

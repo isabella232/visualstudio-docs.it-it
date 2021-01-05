@@ -1,5 +1,7 @@
 ---
 title: Informazioni sulla finestra registri | Microsoft Docs
+description: Informazioni sulla finestra registri in Visual Studio, disponibile solo se il debug a livello di indirizzo è abilitato nella finestra di dialogo Opzioni, nodo Debug.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b370b653590dd5061dc98d31d74d3351180dc6
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: f62425913e65207953554a35054399fb8a6d2af4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600318"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728473"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Informazioni sulla finestra registri in Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -54,7 +56,7 @@ Per evitare confusione, nella finestra **Registri** i registri sono organizzati 
 
 Per i processori Intel x86, nella finestra **registri** è possibile che vengano visualizzati i flag seguenti. Durante una sessione di debug, è anche possibile modificare questi flag.
 
-|Flag|Impostare il valore|
+|Contrassegno|Impostare il valore|
 |-|-|
 |Overflow|OV = 1|
 |Direzione|MASSIMO = 1|

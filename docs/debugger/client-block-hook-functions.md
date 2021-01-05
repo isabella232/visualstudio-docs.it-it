@@ -1,5 +1,7 @@
 ---
 title: Funzioni hook del blocco client | Microsoft Docs
+description: Scrivere una funzione hook del blocco client per convalidare o segnalare il contenuto dei dati archiviati nei blocchi di _CLIENT_BLOCK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881809dda7e8254f9d337b68f0c317eccfd9093d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 720087e3c109c6dec4db06d993d0357dc1eddcd4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600205"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729015"
 ---
 # <a name="client-block-hook-functions"></a>Funzioni hook del blocco client
 Se si desidera convalidare o inserire in report il contenuto dei dati memorizzati in blocchi `_CLIENT_BLOCK`, sarà possibile scrivere una funzione specificamente per tale scopo. Tale funzione dovrà avere un prototipo analogo al seguente, come definito in CRTDBG.H:

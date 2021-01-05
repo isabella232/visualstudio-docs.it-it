@@ -7,12 +7,12 @@ ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 58d749a1d014288754dcd9eb7e620730933d742a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 274e8defe25fa78c30aee72834e486b302a9af4e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950402"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729431"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Inserimento di un pacchetto NuGet nel progetto
 
@@ -76,7 +76,7 @@ Gli aggiornamenti dei pacchetti possono essere eseguiti tutti in una sola volta,
 
 Fare clic con il pulsante destro del mouse su **Pacchetti** per accedere al menu di scelta rapida:
 
-![Menu Pacchetti](media/nuget-walkthrough-PackagesMenu.png)
+![Screenshot che mostra il nodo pacchetti selezionato e il menu di scelta rapida aperto con i comandi per aggiungere pacchetti, aggiornare, ripristinare e aggiornare.](media/nuget-walkthrough-PackagesMenu.png)
 
 * **Aggiungi pacchetti** - Apre la finestra per l'aggiunta di altri pacchetti al progetto.
 * **Aggiorna** - Controlla il server di origine per ogni pacchetto e scarica le eventuali versioni più recenti.
@@ -86,7 +86,7 @@ Le opzioni Aggiorna e Ripristina sono disponibili anche a livello di soluzione e
 
 È anche possibile fare clic con il pulsante destro del mouse sui singoli pacchetti per accedere a un menu di scelta rapida:
 
-![Menu Pacchetti](media/nuget-walkthrough-PackageMenu.png)
+![Screenshot che mostra un singolo pacchetto selezionato e il menu di scelta rapida aperto con i comandi per l'aggiornamento, la rimozione e l'aggiornamento.](media/nuget-walkthrough-PackageMenu.png)
 
 * **Numero di versione** - La voce di menu Numero di versione è disabilitata e viene fornita esclusivamente a scopo informativo.
 * **Aggiorna** - Controlla il server di origine e scarica una versione più recente, se disponibile.
@@ -102,11 +102,11 @@ In Visual Studio per Mac passare a **Visual Studio > Preferenze > NuGet > Origin
 
 Fare clic su **Aggiungi** per configurare una nuova origine. Immettere un nome descrittivo e l'URL (o il percorso file) dell'origine del pacchetto. Se l'origine è un server Web sicuro, immettere nome utente e password, in caso contrario lasciare vuote queste voci:
 
-![Aggiungere origini dei pacchetti](media/nuget-walkthrough-PackageSource2.png)
+![Screenshot della finestra di dialogo Aggiungi origine pacchetto contenente i campi nome, percorso, nome utente e password.](media/nuget-walkthrough-PackageSource2.png)
 
 Quando si cercano i pacchetti è quindi possibile selezionare origini diverse:
 
-![Aggiungere origini dei pacchetti](media/nuget-walkthrough-PackageSource3.png)
+![Screenshot della schermata Aggiungi pacchetti, che mostra un elenco a discesa delle origini che è possibile selezionare durante la ricerca di pacchetti.](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>Controllo della versione
 
@@ -120,6 +120,6 @@ Vedere la documentazione relativa al controllo del codice sorgente specifico per
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Using-NuGet/player]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Installare e usare un pacchetto in Visual Studio (in Windows)](/nuget/quickstart/install-and-use-a-package-in-visual-studio)

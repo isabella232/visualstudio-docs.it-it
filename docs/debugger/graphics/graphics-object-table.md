@@ -1,5 +1,7 @@
 ---
 title: Tabella oggetti grafici | Microsoft Docs
+description: Informazioni sulla tabella oggetti grafici, che consente di comprendere gli oggetti Direct3D che supportano un frame di un gioco o di un'app in analisi grafica di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea80420b2146bd8c604a95d71012009dcb940ef5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7e746d37edaca87abfca42f315a65a470369e7e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735445"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727580"
 ---
 # <a name="graphics-object-table"></a>Tabella oggetti grafici
 La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio consente di individuare gli oggetti Direct3D che supportano un frame specifico del gioco o dell'app.
@@ -31,7 +33,7 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
 
  La Tabella oggetti supporta le funzioni di copia e incolla in modo che sia possibile usare un altro strumento, ad esempio Microsoft Excel, per esaminarne il contenuto.
 
- Inoltre, è possibile utilizzare l'elenco a discesa **tipo** nell'angolo superiore sinistro per impostare la visualizzazione di oggetti di tipo **buffer**, **shader** o **trame**o tutti questi elementi contemporaneamente.  Inoltre, è possibile utilizzare la casella di ricerca nell'angolo superiore destro per trovare righe specifiche in tutti i dati presentati.  Ad esempio, è possibile cercare *D32_FLOAT* per trovare tutte le istanze di oggetti di tale formato nell'elenco.
+ Inoltre, è possibile utilizzare l'elenco a discesa **tipo** nell'angolo superiore sinistro per impostare la visualizzazione di oggetti di tipo **buffer**, **shader** o **trame** o tutti questi elementi contemporaneamente.  Inoltre, è possibile utilizzare la casella di ricerca nell'angolo superiore destro per trovare righe specifiche in tutti i dati presentati.  Ad esempio, è possibile cercare *D32_FLOAT* per trovare tutte le istanze di oggetti di tale formato nell'elenco.
 
 ### <a name="graphics-object-table-format"></a>Formato della Tabella oggetti grafici
  Nella Tabella oggetti vengono visualizzati gli oggetti e le risorse Direct3D che supportano il frame associato all'evento selezionato, ad esempio gli oggetti di stato, i buffer, gli shader, le trame e altre risorse. Gli oggetti creati nel frame precedente ma non usati durante il frame acquisito vengono omessi dalla tabella degli oggetti. Gli oggetti eliminati da eventi precedenti durante il frame acquisito vengono omessi negli eventi successivi. Gli oggetti che non vengono impostati per D3D10Device o D3D11DeviceContext vengono visualizzati come testo in grigio. Gli oggetti vengono visualizzati in un formato tabella.
@@ -39,14 +41,14 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
 |Colonna|Descrizione|
 |------------|-----------------|
 |**Identificatore**|ID dell'oggetto.|
-|**Name**|Informazioni specifiche dell'applicazione impostate per l'oggetto con la funzione Direct3D `SetPrivateData`, in genere per fornire informazioni di identificazione aggiuntive su un oggetto.|
+|**Nome**|Informazioni specifiche dell'applicazione impostate per l'oggetto con la funzione Direct3D `SetPrivateData`, in genere per fornire informazioni di identificazione aggiuntive su un oggetto.|
 |**Tipo**|Tipo di oggetto.|
 |**Attivo**|Visualizza "*" per un oggetto impostato per D3D10Device o D3D11DeviceContext durante il frame acquisito.<br /><br /> Corrisponde agli oggetti visualizzati come testo in grigio, ma fornisce una voce di colonna che è possibile usare per ordinare la tabella degli oggetti.|
-|**Dimensione**|Dimensione dell'oggetto in byte.|
+|**Dimensioni**|Dimensione dell'oggetto in byte.|
 |**Formato**|Formato dell'oggetto. Ad esempio, il formato di un oggetto trama o il modello di shader di un oggetto shader.|
 |**Larghezza**|Larghezza di un oggetto trama. Non vale per altri tipi di oggetto.|
 |**Altezza**|Altezza di un oggetto trama. Non vale per altri tipi di oggetto.|
-|**Depth**|Profondità di un oggetto trama tridimensionale. Se una trama non è in 3D, il valore sarà 0. Non vale per altri tipi di oggetto.|
+|**Livello nidificazione**|Profondità di un oggetto trama tridimensionale. Se una trama non è in 3D, il valore sarà 0. Non vale per altri tipi di oggetto.|
 |**MIPS**|Numero di livelli MIP di un oggetto trama. Non vale per altri tipi di oggetto.|
 |**ArraySize**|Numero di trame in una matrice di trame. L'intervallo è compreso tra 1 e un limite superiore definito dal livello della funzionalità corrente. Per una mappa cubi, questo valore corrisponde a 6 volte il numero delle mappe cubi nella matrice.|
 |**Esempi**|Numero di trame multicampionate per pixel.|
@@ -78,7 +80,7 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
 
  Si può anche selezionare/deselezionare la casella di controllo **Mostra offset** per nascondere o visualizzare l'offset di ogni elemento del buffer.
 
-|Type|Descrizione|
+|Tipo|Descrizione|
 |----------|-----------------|
 |**float**|Valore a virgola mobile a 32 bit.|
 |**float2**|Vettore che contiene due valori a virgola mobile a 32 bit.|
@@ -103,12 +105,12 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
 |**double**|Valore a virgola mobile a 64 bit.|
 |**int**|Valore Signed Integer a 32 bit. Equivale a **4byte**.|
 |**int64**|Valore Signed Integer a 64 bit. Equivale a **8byte**.|
-|**xint**|Valore esadecimale a 32 bit. Equivale a **x4byte**.|
+|**Xint**|Valore esadecimale a 32 bit. Equivale a **x4byte**.|
 |**xint64**|Valore esadecimale a 64 bit. Equivale a **x8byte**.|
 |**uint**|Valore Unsigned Integer a 32 bit. Equivale a **u4byte**.|
 |**uint64**|Valore Unsigned Integer a 64 bit. Equivale a **u8byte**.|
 |**bool**|Valore booleano (`true` o `false`). Ogni valore booleano è rappresentato da un valore a 32 bit.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Diagnostica della grafica (Debug grafica DirectX)](visual-studio-graphics-diagnostics.md)
 - [Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo](walkthrough-missing-objects-due-to-device-state.md)

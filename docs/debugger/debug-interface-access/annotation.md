@@ -1,5 +1,7 @@
 ---
 title: Annotazione | Microsoft Docs
+description: Trovare informazioni di riferimento sul tipo di simbolo di annotazione (SymTagAnnotation) in Visual Studio Debug Interface Access SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1adc922021d1e2bcc9b55de0b5986ee0c1766d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cadd93b935e102cee2108be5c6fd6274f5a29e15
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462379"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728902"
 ---
 # <a name="annotation"></a>Annotazione
 Un codice del programma di percorso può essere annotato con un `SymTagAnnotation` simbolo.
@@ -37,7 +39,7 @@ Un codice del programma di percorso può essere annotato con un `SymTagAnnotatio
 |[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|`VARIANT`|Valore dei dati costanti.|
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Posizione dell'annotazione all'interno dell'immagine eseguibile.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [Enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md)
 - [Percorsi dei simboli](../../debugger/debug-interface-access/symbol-locations.md)

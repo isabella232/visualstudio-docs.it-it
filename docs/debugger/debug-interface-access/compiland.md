@@ -1,5 +1,7 @@
 ---
 title: Modulo | Microsoft Docs
+description: Trovare informazioni di riferimento sul tipo di simbolo modulo (SymTagCompiland) in Visual Studio Debug Interface Access SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c6a9460415112f9d86af6d5cf8766ad7d55f97
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 537b915269a6b7bcf345caf2545d38ca21337ecf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462260"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728788"
 ---
 # <a name="compiland"></a>Compilando
 È presente un `SymTagCompiland` simbolo per ogni modulo collegato al file exe. Le informazioni modulo vengono suddivise tra simboli con un `SymTagCompiland` tag, che può essere recuperato senza caricare altri simboli modulo e simboli con un `SymTagCompilandDetails` tag, che potrebbe richiedere il caricamento di simboli aggiuntivi.
@@ -37,7 +39,7 @@ ms.locfileid: "85462260"
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID di indice del simbolo.|
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Restituisce `SymTagCompiland` uno dei valori di [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) .|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)
 - [CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)
 - [Gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

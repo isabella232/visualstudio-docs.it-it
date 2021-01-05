@@ -1,6 +1,7 @@
 ---
 title: Introduzione alla diagnostica della grafica | Microsoft Docs
-ms.custom: seodec18
+description: Preparare l'uso di Diagnostica della grafica per la prima volta, quindi acquisire i frame da un'app Direct3D ed esaminarli nell'analizzatore grafica.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/08/2020
 ms.topic: how-to
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00a802c0083a9e67a145077ff8ec5842b30eb607
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 88b22364c92a17c7200ddb261d154c7896cd1696
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600091"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727864"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Guida introduttiva a Diagnostica grafica di Visual Studio
 In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, quindi si acquisisce un frame da un'app Direct3D e lo si esamina in Analizzatore grafica.
@@ -63,10 +64,10 @@ Scaricare un esempio dall' [esempio di gioco Direct3D](/samples/microsoft/window
 - [Esempio Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) per Windows 10.
 ::: moniker-end
 
-Verificare che sia possibile compilare ed eseguire l'app prima di procedere. Scegliere **Compila**Compila  >  **soluzione** per assicurarsi che venga compilata senza errori. Quindi scegliere **debug**  >  **Avvia senza eseguire debug** (**CTRL + F5**) per assicurarsi che venga eseguito correttamente. A seconda del computer che si sta testando con lo strumento, potrebbe essere necessario modificare la piattaforma e la destinazione di debug per l'esempio. Ad esempio, per eseguire il test sulla piattaforma x64 nel computer host di Visual Studio, scegliere **x64** come piattaforma della soluzione e **computer locale** come destinazione di debug. 
+Verificare che sia possibile compilare ed eseguire l'app prima di procedere. Scegliere **Compila** Compila  >  **soluzione** per assicurarsi che venga compilata senza errori. Quindi scegliere **debug**  >  **Avvia senza eseguire debug** (**CTRL + F5**) per assicurarsi che venga eseguito correttamente. A seconda del computer che si sta testando con lo strumento, potrebbe essere necessario modificare la piattaforma e la destinazione di debug per l'esempio. Ad esempio, per eseguire il test sulla piattaforma x64 nel computer host di Visual Studio, scegliere **x64** come piattaforma della soluzione e **computer locale** come destinazione di debug. 
 
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - Avviare una sessione di Diagnostica grafica
- A questo punto si è pronti per avviare la prima sessione di diagnostica della grafica. In Visual Studio scegliere **debug, grafica, Avvia debug grafica**dal menu principale oppure premere **ALT + F5**. L'app viene avviata in Diagnostica grafica e in Visual Studio vengono visualizzate le finestre della sessione di diagnostica.
+ A questo punto si è pronti per avviare la prima sessione di diagnostica della grafica. In Visual Studio scegliere **debug, grafica, Avvia debug grafica** dal menu principale oppure premere **ALT + F5**. L'app viene avviata in Diagnostica grafica e in Visual Studio vengono visualizzate le finestre della sessione di diagnostica.
 
 > [!IMPORTANT]
 > Se si esegue l'app in Windows 10 e non si è ancora installata la funzionalità facoltativa Strumenti di grafica, verrà richiesto di farlo ora. La funzionalità deve essere installata per poter usare Diagnostica della grafica in Windows 10.

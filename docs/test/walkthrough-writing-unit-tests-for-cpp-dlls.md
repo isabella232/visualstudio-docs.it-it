@@ -9,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 178fef548bc52346a78c7f9e4607aad7b1c56f65
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 2d145e1383e8f6c0d7c25ae72232fdbe2a8d703d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598406"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727541"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedura: Scrivere unit test per DLL C/C++
 
@@ -40,7 +40,7 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
 1. Nel menu **File**, scegliere **Nuovo** > **Progetto**.
 
-     **Visual Studio 2017 e versioni precedenti**: espandere modelli **installati**  >  **Templates**  >  **Visual C++**  >  **test**.
+     **Visual Studio 2017 e versioni precedenti**: espandere modelli **installati**  >    >  **Visual C++**  >  **test**.
      **Visual Studio 2019**: impostare la **lingua** su C++ e digitare "test" nella casella di ricerca.
 
      Scegliere il modello **Progetto unit test nativo** o scegliere un qualsiasi altro framework installato. Se si sceglie un altro modello, ad esempio Google Test o Boost.Test, i principi di base sono gli stessi, cambiano però alcuni dettagli.
@@ -328,7 +328,7 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
+> Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con lo ![ screenshot dell'interruttore parallelo esecuzione test sulla barra degli strumenti di Esplora test. Quando si seleziona questo pulsante, i test vengono eseguiti in parallelo.](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
 ::: moniker-end
 
@@ -368,7 +368,7 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
 
    È anche possibile lasciare al chiamante un livello minimo di code coverage.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Aggiungere unit test alle applicazioni C++ esistenti](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [Utilizzo di Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)

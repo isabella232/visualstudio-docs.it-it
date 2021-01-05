@@ -1,5 +1,7 @@
 ---
 title: Pattern di controllo comuni per Visual Studio | Microsoft Docs
+description: Informazioni sul modo in cui i controlli comuni di Visual Studio seguono le linee guida per l'interazione con il desktop di Windows e le situazioni speciali che aumentano tali linee
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b5a1904c01f5688a00e45de7feed7ae326d9b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1caccebf1dc14146bef214a4d33e1216243780
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698705"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715886"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Modelli dei controlli comuni per Visual Studio
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> Controlli comuni
@@ -41,7 +43,7 @@ I controlli comuni costituiscono la maggior parte dell'interfaccia utente in Vis
 
 - [Visualizzazioni albero](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViews)
 
-#### <a name="visual-style"></a>Stile di visualizzazione
+#### <a name="visual-style"></a>Stile visivo
 Il primo aspetto da considerare quando i controlli di stile è se i controlli verranno utilizzati nell'interfaccia utente con tema. I controlli nell'interfaccia utente standard sono interfaccia utente senza tema e devono seguire il [normale stile di desktop di Windows](/windows/desktop/uxguide/controls), ovvero non vengono ribasati su modelli e dovrebbero apparire nell'aspetto del controllo predefinito.
 
 - **Finestre di dialogo standard (Utility):** non con tema. Non ricreare il modello. Usare le impostazioni predefinite dello stile del controllo di base.
@@ -54,7 +56,7 @@ Il primo aspetto da considerare quando i controlli di stile è se i controlli ve
 ### <a name="input-fields"></a><a name="BKMK_InputFields"></a> Campi di input
  Per un comportamento di interazione tipico, seguire le [linee guida per i desktop di Windows per le caselle di testo](/windows/desktop/uxguide/ctrl-text-boxes).
 
-#### <a name="visual-style"></a>Stile di visualizzazione
+#### <a name="visual-style"></a>Stile visivo
 
 - Non è possibile applicare uno stile ai campi di input nelle finestre di dialogo dell'utilità. Utilizzare lo stile di base intrinseco al controllo.
 
@@ -77,7 +79,7 @@ Il primo aspetto da considerare quando i controlli di stile è se i controlli ve
 ### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a> Caselle combinate ed elenchi a discesa
 Per un comportamento di interazione tipico, seguire le [linee guida per i desktop di Windows per elenchi a discesa e caselle combinate](/windows/desktop/uxguide/ctrl-drop).
 
-#### <a name="visual-style"></a>Stile di visualizzazione
+#### <a name="visual-style"></a>Stile visivo
 
 - Nelle finestre di dialogo dell'utilità non ricreare il modello del controllo. Utilizzare lo stile di base intrinseco al controllo.
 
@@ -93,7 +95,7 @@ Le caselle combinate e gli elenchi a discesa devono essere dimensionati per adat
 ### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a> Caselle di controllo
 Per un comportamento di interazione tipico, seguire le [linee guida per il desktop di Windows per le caselle di controllo](/windows/desktop/uxguide/ctrl-check-boxes).
 
-#### <a name="visual-style"></a>Stile di visualizzazione
+#### <a name="visual-style"></a>Stile visivo
 
 - Nelle finestre di dialogo dell'utilità non ricreare il modello del controllo. Utilizzare lo stile di base intrinseco al controllo.
 
@@ -112,7 +114,7 @@ Per un comportamento di interazione tipico, seguire le [linee guida per il deskt
 ### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a> Pulsanti di opzione
 Per un comportamento di interazione tipico, seguire le [linee guida per il desktop di Windows per i pulsanti di opzione](/windows/desktop/uxguide/ctrl-radio-buttons).
 
-#### <a name="visual-style"></a>Stile di visualizzazione
+#### <a name="visual-style"></a>Stile visivo
 Nelle finestre di dialogo dell'utilità non applicare uno stile ai pulsanti di opzione. Utilizzare lo stile di base intrinseco al controllo.
 
 #### <a name="specialized-interactions"></a>Interazioni specializzate
@@ -121,7 +123,7 @@ Non è necessario usare un frame di gruppo per racchiudere le scelte radiofonich
 ### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a> Raggruppare i frame
 Per un comportamento di interazione tipico, seguire le [linee guida per il desktop di Windows per i frame del gruppo](/windows/desktop/uxguide/ctrl-group-boxes).
 
-#### <a name="visual-style"></a>Stile di visualizzazione
+#### <a name="visual-style"></a>Stile visivo
 Nelle finestre di dialogo dell'utilità non applicare lo stile ai frame del gruppo. Utilizzare lo stile di base intrinseco al controllo.
 
 #### <a name="layout"></a>Layout
@@ -152,7 +154,7 @@ In una finestra di dialogo in cui sono presenti altre aree raggruppate e il cont
 
 Ciò consente all'utente di selezionare il testo all'interno del campo, ma non di modificarlo. Queste caselle di testo sono delimitate dal solito scalpello 3D con un `ButtonShadow` riempimento.
 
-Una casella di testo può diventare attiva (modificabile) quando un utente modifica un controllo associato, ad esempio selezionando/deselezionando una casella di controllo o selezionando o deselezionando un pulsante di opzione. Ad esempio, nella pagina ** &gt; Opzioni strumenti** mostrata di seguito, la casella di testo **Home page** diventa attiva quando la casella di controllo **Usa predefinito** è deselezionata.
+Una casella di testo può diventare attiva (modificabile) quando un utente modifica un controllo associato, ad esempio selezionando/deselezionando una casella di controllo o selezionando o deselezionando un pulsante di opzione. Ad esempio, nella pagina **&gt; Opzioni strumenti** mostrata di seguito, la casella di testo **Home page** diventa attiva quando la casella di controllo **Usa predefinito** è deselezionata.
 
 ![Casella di testo di sola lettura, che Mostra gli stati inattivi e attivi](../../extensibility/ux-guidelines/media/ReadOnlyTextBox.png "ReadOnlyTextBox.png")<br />Casella di testo di sola lettura, che Mostra gli stati inattivi e attivi
 
@@ -255,7 +257,7 @@ Evitare i pulsanti di comando nelle finestre degli strumenti o se sono necessari
 #### <a name="text"></a>Testo
 Seguire le linee guida per la scrittura nel [testo e nella terminologia dell'interfaccia utente](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology).
 
-#### <a name="visual-style"></a>Stile di visualizzazione
+#### <a name="visual-style"></a>Stile visivo
 
 ##### <a name="standard-unthemed"></a>Standard (non con tema)
 La maggior parte dei pulsanti in Visual Studio verrà visualizzata nelle finestre di dialogo dell'utilità e non deve avere uno stile. Devono riflettere l'aspetto standard dei pulsanti come stabilito dal sistema operativo.
@@ -302,7 +304,7 @@ Alcuni pulsanti devono sempre usare un'immagine grafica e non includono mai test
 | Funzione | Pulsante |
 | --- | --- |
 | Add | ![Pulsante grafico "Aggiungi"](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
-| Rimuovere | ![Pulsante grafico "Rimuovi"](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
+| Rimuovi | ![Pulsante grafico "Rimuovi"](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
 | Aggiungi tutto | ![Pulsante grafico "Aggiungi tutto"](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703-10_ButtonAddAll") |
 | Rimuovi tutto | ![Pulsante grafico "Rimuovi tutto"](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
 | Sposta su | ![Pulsante grafico "Sposta su"](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703-12_ButtonMoveUp") |
@@ -320,7 +322,7 @@ I collegamenti ipertestuali sono ideali per le azioni basate sull'esplorazione, 
 #### <a name="writing-style"></a>Stile di scrittura
 Seguire le [indicazioni sul desktop di Windows per il testo dell'interfaccia utente](/windows/desktop/uxguide/text-ui). Non usare "ulteriori informazioni su", "ulteriori informazioni su" o "ottenere assistenza per questo". Al contrario, frasere il testo del collegamento alla Guida in termini di domanda principale fornita dal contenuto della guida. Ad esempio, "**ricerca per categorie aggiungere un server al Esplora server?**"
 
-#### <a name="visual-style"></a>Stile di visualizzazione
+#### <a name="visual-style"></a>Stile visivo
 
 - I collegamenti ipertestuali devono sempre usare [il servizio VSColor](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService). Se lo stile di un collegamento ipertestuale non è corretto, il colore rosso viene attivato quando attivo o viene visualizzato un colore diverso dopo la visita.
 
@@ -341,7 +343,7 @@ I controlli di visualizzazione albero devono essere conformi alla progettazione 
 
 ![Errato: stile non corretto del nodo della visualizzazione albero](../../extensibility/ux-guidelines/media/070705-2_treeviewincorrect1.png "070705-2_TreeViewIncorrect1")<br />Errato: stile non corretto del nodo della visualizzazione albero
 
-#### <a name="selection"></a>Selection
+#### <a name="selection"></a>Selezione
 Quando si seleziona un nodo nella visualizzazione albero, l'evidenziazione deve espandersi fino alla larghezza massima del controllo di visualizzazione albero. Ciò consente agli utenti di identificare chiaramente l'elemento selezionato. I colori di selezione riflettono il tema corrente di Visual Studio.
 
 ![Corretto: l'evidenziazione del nodo selezionato corrisponde all'intera larghezza del controllo di visualizzazione albero.](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />Corretto: l'evidenziazione del nodo selezionato corrisponde all'intera larghezza del controllo di visualizzazione albero.

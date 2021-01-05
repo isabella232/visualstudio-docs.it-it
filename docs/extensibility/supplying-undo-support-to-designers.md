@@ -1,5 +1,7 @@
 ---
 title: Fornire il supporto per l'annullamento alle finestre di progettazione | Microsoft Docs
+description: Informazioni su come fornire il supporto di annullamento nelle finestre di progettazione, automaticamente o usando le funzionalità di Visual Studio SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0580f974c362a71c3e400946f2ad34f565ad1232
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4108e259fb0a2e60c2719df8a7fb76f273634799
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699669"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715575"
 ---
 # <a name="supply-undo-support-to-designers"></a>Fornire il supporto per l'annullamento alle finestre di progettazione
 
@@ -29,7 +31,7 @@ Implementazioni della finestra di progettazione che devono fornire supporto per 
 
 - Fornire la persistenza e il supporto CodeDOM implementando le <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  <xref:System.ComponentModel.Design.IComponentChangeService> classi e.
 
-Per ulteriori informazioni sulla creazione di finestre di progettazione con .NET Framework, vedere [estensione del supporto in fase di progettazione](/previous-versions/37899azc(v=vs.140)).
+Per ulteriori informazioni sulla creazione di finestre di progettazione con .NET Framework, vedere [estendere Design-Time Supporto](/previous-versions/37899azc(v=vs.140)).
 
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]Fornisce un'infrastruttura di annullamento predefinita per:
 
@@ -99,8 +101,8 @@ Le finestre di progettazione che implementano un <xref:Microsoft.VisualStudio.Sh
 
 - La finestra di progettazione sceglie di creare in modo esplicito le unità di annullamento usando l'unità di annullamento standard fornita da un'implementazione di <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> o l'implementazione specifica di Visual Studio <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> , che deriva da <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> e fornisce anche un'implementazione di <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.ComponentModel.Design.UndoEngine>
 - <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>
-- [Estendi supporto in fase di progettazione](/previous-versions/37899azc(v=vs.140))
+- [Estendi supporto Design-Time](/previous-versions/37899azc(v=vs.140))

@@ -1,5 +1,7 @@
 ---
 title: Server COM e debug del contenitore | Microsoft Docs
+description: Informazioni sul debug dei server e dei contenitori COM. Eseguire il debug di un server e di un contenitore COM nella stessa soluzione, un'app Server senza informazioni sul contenitore o un'app SDI.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec5ed51c72ad7fd64bbdfd0135f53a13bb8c6e4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b1d4ceecae385ac6e5444c60f6634b260f2e887
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745670"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728976"
 ---
 # <a name="com-server-and-container-debugging"></a>Debug dei server e dei contenitori COM
 Le applicazioni COM eseguono alcune attività che non sono sotto il controllo diretto del programmatore. Le comunicazioni tra le DLL, il conteggio di utilizzo degli oggetti e le operazioni relative agli Appunti rappresentano solo alcune delle aree nelle quali potrebbero verificarsi comportamenti non prevedibili. In questi casi il primo passo consiste nel tracciare il codice sorgente.
@@ -54,6 +56,6 @@ Le applicazioni COM eseguono alcune attività che non sono sotto il controllo di
 
  Per accedere alla finestra di dialogo Pagine delle proprietà di *Progetto*, fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni e scegliere Proprietà dal menu di scelta rapida. Per individuare la proprietà Argomenti della riga di comando, espandere la categoria Proprietà di configurazione e fare clic sulla pagina Debug.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Debug di COM e ActiveX](../debugger/com-and-activex-debugging.md)

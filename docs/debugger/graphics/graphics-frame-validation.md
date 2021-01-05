@@ -1,5 +1,7 @@
 ---
 title: Convalida di fotogrammi grafici | Microsoft Docs
+description: Informazioni sullo strumento di convalida dei frame per la grafica in Visual Studio. Questo strumento Visualizza gli errori e gli avvisi associati all'elenco di eventi.
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49248c6209f9e56e51551f6cd3d4af66ecac8b56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0fe9b1ed3acbe588b342ba6550bc45558a2070d2
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72735492"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727645"
 ---
 # <a name="graphics-frame-validation"></a>Convalida di frame grafica
 <!-- VERSIONLESS -->
@@ -30,9 +32,9 @@ Fare clic sul pulsante **Esegui convalida** nell'angolo superiore sinistro per a
 | ID evento | ID che esegue il mapping a una voce nella finestra [elenco eventi](graphics-event-list.md) . |
 | Gravità | Danneggiamento, errore, avviso, informazioni o messaggio. |
 | Category | Applicazione definita, varie, inizializzazione, pulizia, compilazione, creazione dello stato, impostazione dello stato, recupero dello stato, esecuzione, manipolazione delle risorse, shader, ridondante e non usata. |
-| Message | Messaggio associato all'evento. |
+| Messaggio | Messaggio associato all'evento. |
 | Event | Evento associato all'errore o all'avviso. |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 [Diagnostica della grafica (Debug grafica DirectX)](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

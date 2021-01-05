@@ -1,5 +1,7 @@
 ---
 title: CustomType | Microsoft Docs
+description: Trovare informazioni di riferimento sul tipo di simbolo CustomType (SymTagCustomType) in Visual Studio Debug Interface Access SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5398cbd4b2678bd435673eb8b30155d3593d34c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2a202cbf9f315dce647e8ccbdfdde0fd5a01cc5
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462155"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728715"
 ---
 # <a name="customtype"></a>CustomType
 I tipi definiti dal fornitore (tipi specifici del compilatore) sono identificati da un `SymTagCustomType` simbolo.
@@ -35,5 +37,5 @@ I tipi definiti dal fornitore (tipi specifici del compilatore) sono identificati
 |[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|ID del simbolo del tipo.|
 |[IDiaSymbol::get_types](../../debugger/debug-interface-access/idiasymbol-get-types.md)|`IDiaSymbol**`|Matrice di tutti i tipi a cui fa riferimento il simbolo di tipo personalizzato.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

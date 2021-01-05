@@ -7,12 +7,12 @@ ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: d2ba7f5d044b82c44d719b251a7d803212cf7b07
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: b9aa9b718ad4618502a58185c27333d689c74300
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860558"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729379"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Connessione al controllo della versione di Team Foundation
 
@@ -21,7 +21,7 @@ ms.locfileid: "91860558"
 >
 > Se è stata usata in precedenza la versione di anteprima dell'estensione TFVC per Visual Studio per Mac, non è più supportata in caso di aggiornamento a Visual Studio 2019 per Mac.
 
-Azure Repos fornisce due modelli di controllo della versione: [git](/azure/devops/repos/git/?view=azure-devops), un sistema di controllo della versione distribuito e [controllo della versione di Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), un sistema di controllo della versione centralizzato.
+Azure Repos fornisce due modelli di controllo della versione: [git](/azure/devops/repos/git/?view=azure-devops&preserve-view=true), un sistema di controllo della versione distribuito e [controllo della versione di Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops&preserve-view=true) (TFVC), un sistema di controllo della versione centralizzato.
 
 Visual Studio per Mac offre il supporto completo per i repository Git, ma richiede alcune soluzioni alternative per usare il controllo della versione di Team Foundation. Se attualmente si usa il controllo della versione di Team Foundation, ecco alcune soluzioni che è possibile adottare per accedere al codice sorgente ospitato nel controllo della versione di Team Foundation:
 
@@ -69,7 +69,7 @@ Per **configurare manualmente TEE-CLC**:
 
 Dopo aver installato TEE-CLC, è possibile eseguire il comando `tf eula` per visualizzare e accettare il contratto di licenza per il client.
 
-Infine, per l'autenticazione nell'ambiente TFS/Azure DevOps, sarà necessario creare un token di accesso personale nel server. Altre informazioni sull'[autenticazione con token di accesso personali](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Quando si crea un token di accesso personale da usare con il controllo della versione di Team Foundation, assicurarsi di assegnare l'accesso completo quando si configura il token.
+Infine, per l'autenticazione nell'ambiente TFS/Azure DevOps, sarà necessario creare un token di accesso personale nel server. Altre informazioni sull'[autenticazione con token di accesso personali](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops&preserve-view=true). Quando si crea un token di accesso personale da usare con il controllo della versione di Team Foundation, assicurarsi di assegnare l'accesso completo quando si configura il token.
 
 ### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Uso di TEE-CLC per la connessione al repository
 
@@ -214,7 +214,7 @@ Per configurare il progetto remoto con un'area di lavoro locale, seguire questa 
 
 1. Selezionare il **Server** dalla casella combinata.
 1. Si noti che non sono presenti aree di lavoro e che il percorso locale non è mappato. Selezionare il collegamento **Non mappato** per visualizzare la finestra di dialogo **Crea nuova area di lavoro**.
-1. Specificare un nome per l'area di lavoro e quindi fare clic su **Aggiungi Cartella di lavoro ** per eseguire il mapping del progetto in una cartella locale nel computer:
+1. Specificare un nome per l'area di lavoro e quindi fare clic su **Aggiungi Cartella di lavoro** per eseguire il mapping del progetto in una cartella locale nel computer:
 
     ![Creare una nuova finestra dell'area di lavoro con le opzioni predefinite](media/tfvc-workspace1.png)
 
@@ -247,11 +247,11 @@ Per usare l'autenticazione di base è necessario abilitare le **credenziali di a
 
 2. Dalla barra degli strumenti dell'organizzazione selezionare l'icona a forma di ingranaggio, quindi **Policy** (Criteri):
 
-    ![Opzione delle impostazioni dei criteri selezionata](media/tfvc-auth2.png)
+    ![Screenshot della barra degli strumenti dell'organizzazione DevOps di Azure con l'icona a forma di ingranaggio selezionata e criteri selezionati nel menu a discesa.](media/tfvc-auth2.png)
 
 3. Verificare le impostazioni di connessione dell'applicazione. Modificare queste impostazioni in base ai propri criteri di sicurezza:
 
-    ![Opzione delle impostazioni dei criteri selezionata](media/tfvc-auth.png)
+    ![Screenshot della schermata dei criteri in Azure DevOps Services, che mostra le impostazioni per i criteri di connessione dell'applicazione.](media/tfvc-auth.png)
 
 #### <a name="i-do-not-see-anything-in-tfvc"></a>Nel controllo della versione di Team Foundation non viene visualizzato nulla
 
@@ -273,6 +273,6 @@ Quando si tenta di [creare una nuova area di lavoro](#creating-a-new-workspace),
 - Il nome deve essere composto da un massimo di 64 caratteri.
 - Il percorso locale non può essere usato da altre aree di lavoro.
 
-### <a name="see-also"></a>Vedere anche
+### <a name="see-also"></a>Vedi anche
 
 - [Sviluppare e condividere il codice nel controllo della versione di Team Foundation usando Visual Studio (in Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

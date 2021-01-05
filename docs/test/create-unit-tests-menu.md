@@ -11,20 +11,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8afbc73e8c778829a9a1ce5a59d30df6de2f0daa
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c9bdbd545a3509927dd13a800e22b9aaaab2cb2b
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441859"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756630"
 ---
-# <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Creare stub di metodo di unit test con il comando Crea unit test
+# <a name="create-unit-test-method-stubs-from-code"></a>Creare stub di metodo unit test dal codice
 
 Il comando **Crea unit test** crea stub di metodo di unit. Questa funzionalità consente di semplificare la configurazione di un progetto di test, della classe di test e dello stub del metodo di test all'interno di essa.
 
 ::: moniker range="vs-2017"
 > [!NOTE]
-> Il comando di menu **Crea unit test** è disponibile solo per il codice C# che ha come destinazione .NET Framework (ma non .NET Core).
+> Il comando di menu **Crea unit test** è disponibile solo per il codice C# che ha come destinazione .NET Framework (ma non .NET Core o .NET standard).
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
@@ -38,6 +38,8 @@ Il comando di menu **Crea unit test** è estendibile e può essere usato per gen
 Per iniziare, selezionare un metodo, un tipo o uno spazio dei nomi nell'editor di codice nel progetto da testare, fare clic con il pulsante destro del mouse e quindi scegliere **Crea unit test**. Verrà visualizzata la finestra di dialogo **Crea unit test**, in cui è possibile configurare la modalità di creazione dei test.
 
 ![Uso del comando Crea unit test](media/createunittestcommand.png)
+
+Se non vengono visualizzate le opzioni del Framework di test per NUnit o xUnit, vedere [usare framework di unit test di terze parti](#use-third-party-unit-test-frameworks).
 
 ## <a name="set-unit-test-traits"></a>Impostare tratti di unit test
 
@@ -58,7 +60,7 @@ Usare questa funzionalità ogni volta che è necessario creare unit test, ma in 
 
 Tuttavia, questa funzionalità può essere applicata anche quando uno sviluppatore inizia a scrivere codice e lo usa per il bootstrap degli unit test. All'interno del flusso di scrittura del codice, lo sviluppatore potrebbe voler creare rapidamente uno stub del metodo di unit test, con una classe di test e un progetto di test appropriati, per una parte specifica di codice.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare stub di metodo di unit test con il comando Crea unit test](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
 - [Post di blog sul testing unità](https://devblogs.microsoft.com/devops/?s=unit+testing)

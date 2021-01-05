@@ -1,5 +1,7 @@
 ---
 title: Blocca | Microsoft Docs
+description: Trovare informazioni sul tipo di simbolo di blocco (SymTagBlock), che identificano gli ambiti annidati all'interno di funzioni in Visual Studio Debug Interface Access SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45e1d97c694806857d9ee7920e6d4fd640db4582
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a3b7e4430c2bbfb6e1372a750608d4105b3d3e18
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462267"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728867"
 ---
 # <a name="block"></a>Blocca
 Ogni blocco di codice è identificato da un `SymTagBlock` simbolo. I simboli di blocco vengono usati per identificare gli ambiti annidati all'interno di funzioni.
@@ -41,7 +43,7 @@ Ogni blocco di codice è identificato da un `SymTagBlock` simbolo. I simboli di 
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Restituisce `SymTagBlock` uno dei valori di [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) .|
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Restituisce l'indirizzo virtuale del blocco all'interno dell'eseguibile.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [Enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md)
 - [Percorsi dei simboli](../../debugger/debug-interface-access/symbol-locations.md)

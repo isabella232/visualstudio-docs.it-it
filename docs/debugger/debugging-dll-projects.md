@@ -1,5 +1,7 @@
 ---
 title: Debug di progetti DLL | Microsoft Docs
+description: Eseguire il debug di file DLL (Dynamic Link Library) in Visual Studio. Utilizzare Visual Studio per creare, compilare, configurare ed eseguire il debug di dll.
+ms.custom: SEO-VS-2020
 ms.date: 11/06/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898eb0eb1489d83e97ec9f0a5b38b475bda0199d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec78e9a04062699ea699f45671e1210fc2306631
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315070"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728499"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Eseguire il debug di dll in Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -35,7 +37,7 @@ I modelli di progetto di Visual Studio seguenti possono creare dll:
 
 - Libreria di classi C#, Visual Basic o F #
 - Libreria di controllo Windows Forms (WCF) C# o Visual Basic
-- Libreria a collegamento dinamico (DLL) C++
+- Libreria di Dynamic-Link C++ (DLL)
 
 Per ulteriori informazioni, vedere [tecniche di debug MFC](../debugger/mfc-debugging-techniques.md).
 
@@ -60,13 +62,13 @@ Per la connessione del debugger a una DLL di C++, è necessario che il codice C+
 
 1. Selezionare il progetto DLL C++ in **Esplora soluzioni** e selezionare l'icona **Proprietà** oppure fare clic con il pulsante destro del mouse sul progetto e scegliere **proprietà**.
 
-1. Nel riquadro **Proprietà** , in debug del **linker**  >  **Debugging**, selezionare **Sì (/ASSEMBLYDEBUG)** per l'assembly di cui è stato eseguito il **debug**.
+1. Nel riquadro **Proprietà** , in debug del **linker**  >  , selezionare **Sì (/ASSEMBLYDEBUG)** per l'assembly di cui è stato eseguito il **debug**.
 
 Per ulteriori informazioni, vedere [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
 ### <a name="set-cc-dll-file-locations"></a><a name="vxtskdebuggingdllprojectsexternal"></a> Imposta percorsi file DLL C/C++
 
-Per eseguire il debug di una DLL esterna, un progetto chiamante deve essere in grado di trovare la DLL, il [file con estensione PDB](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)e tutti gli altri file necessari per la dll. È possibile creare un'attività di compilazione personalizzata per copiare questi file nella cartella di output di * \<project folder> \Debug* . in alternativa, è possibile copiare i file manualmente.
+Per eseguire il debug di una DLL esterna, un progetto chiamante deve essere in grado di trovare la DLL, il [file con estensione PDB](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)e tutti gli altri file necessari per la dll. È possibile creare un'attività di compilazione personalizzata per copiare questi file nella cartella di output di *\<project folder> \Debug* . in alternativa, è possibile copiare i file manualmente.
 
 Per i progetti C/C++, è possibile impostare i percorsi dei file di intestazione e LIB nelle pagine delle proprietà del progetto, anziché copiarli nella cartella di output.
 
@@ -76,9 +78,9 @@ Per i progetti C/C++, è possibile impostare i percorsi dei file di intestazione
 
 1. Nella parte superiore del riquadro **Proprietà** , in **configurazione**, selezionare **tutte le configurazioni**.
 
-1. In **C/C++**  >  **General**  >  **Additional include directory**specificare la cartella contenente i file di intestazione.
+1. In **C/C++**  >  **General**  >  **Additional include directory** specificare la cartella contenente i file di intestazione.
 
-1. In **Linker**  >  **General**  >  **directory aggiuntive librerie**generali del linker specificare la cartella che contiene file lib.
+1. In   >    >  **directory aggiuntive librerie** generali del linker specificare la cartella che contiene file lib.
 
 1. In **linker**  >  **immettere**  >  **altre dipendenze**, specificare il percorso completo e il nome file per i file lib.
 
@@ -90,7 +92,7 @@ Per ulteriori informazioni sulle impostazioni del progetto C++, vedere [riferime
 
 Assicurarsi di compilare una versione di debug della DLL prima di avviare il debug. Per eseguire il debug di una DLL, un'app chiamante deve essere in grado di trovare il file con estensione [PDB](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) e tutti gli altri file necessari per la dll.
 
-È possibile creare un'attività di compilazione personalizzata per copiare i file DLL nella cartella di output di * \<calling project folder> \Debug* . in alternativa, è possibile copiare i file manualmente.
+È possibile creare un'attività di compilazione personalizzata per copiare i file DLL nella cartella di output di *\<calling project folder> \Debug* . in alternativa, è possibile copiare i file manualmente.
 
 Assicurarsi di chiamare la DLL nella posizione corretta. Questo può sembrare ovvio, ma se un'app chiamante trova e carica una copia diversa della DLL, il debugger non raggiungerà mai i punti di interruzione impostati.
 
@@ -115,13 +117,13 @@ Per eseguire il debug di una DLL da un'app chiamante, è possibile:
 
 - Aprire il progetto per l'app chiamante e avviare il debug selezionando **debug**  >  **Avvia debug** o premendo **F5**.
 
-  Oppure
+  oppure
 
 - Connettersi a un'app che è già stata distribuita ed eseguita in un computer di test o di produzione. Usare questo metodo per le dll nei siti Web o nelle app Web. Per altre informazioni, vedere [procedura: connettersi a un processo in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
 Prima di iniziare a eseguire il debug dell'app chiamante, impostare un punto di interruzione nella DLL. Vedere [utilizzo](../debugger/using-breakpoints.md)di punti di interruzione. Quando viene raggiunto il punto di interruzione della DLL, è possibile eseguire il codice un'istruzione alla volta, osservando l'azione a ogni riga. Per ulteriori informazioni, vedere [spostarsi nel codice del debugger](../debugger/navigating-through-code-with-the-debugger.md).
 
-Durante il debug, è possibile usare la finestra **moduli** per verificare i file dll e *exe* caricati dall'app. Per aprire la finestra **moduli** , durante il debug selezionare **debug**  >  **Windows**  >  **moduli**di Windows. Per altre informazioni, vedere [procedura: usare la finestra moduli](../debugger/how-to-use-the-modules-window.md).
+Durante il debug, è possibile usare la finestra **moduli** per verificare i file dll e *exe* caricati dall'app. Per aprire la finestra **moduli** , durante il debug selezionare **debug**  >    >  **moduli** di Windows. Per altre informazioni, vedere [procedura: usare la finestra moduli](../debugger/how-to-use-the-modules-window.md).
 
 ### <a name="use-the-immediate-window"></a><a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Utilizzare la finestra controllo immediato
 
@@ -160,7 +162,7 @@ Ad esempio, per testare un metodo denominato `Test` nella classe `Class1` :
 
 È anche possibile eseguire il debug di una DLL nativa da un progetto chiamante gestito. Per ulteriori informazioni, vedere [come eseguire il debug di codice gestito e nativo](how-to-debug-managed-and-native-code.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Eseguire il debug del codice gestito](../debugger/debugging-managed-code.md)
 - [Preparare il debug di progetti C++](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [Tipi di progetto C#, F # e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)

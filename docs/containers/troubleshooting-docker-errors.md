@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 31b9d8649abed0f9901aa872ff3939c25e3025b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9535a7d88cb375d97867092eddf969095c327329
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235108"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729254"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Risolvere i problemi di sviluppo di Visual Studio con Docker
 
@@ -24,22 +24,15 @@ Quando si lavora con Visual Studio container Tools, è possibile che si verifich
 
 ## <a name="volume-sharing-is-not-enabled-enable-volume-sharing-in-the-docker-ce-for-windows-settings--linux-containers-only"></a>La condivisione dei volumi non è abilitata. Abilitare la condivisione dei volumi nelle impostazioni di Docker CE per Windows (solo per i contenitori Linux)
 
-Per risolvere il problema:
+La condivisione file deve essere gestita solo se si usa Hyper-V con Docker. Se si usa WSL 2, i passaggi seguenti non sono necessari e l'opzione di condivisione file non sarà visibile. Per risolvere il problema:
 
 1. Fare doppio clic su **Docker per Windows** nell'area di notifica e quindi selezionare **Impostazioni**.
-1. Fare clic su **Unità condivise** e condividere l'unità di sistema e l'unità in cui si trova il progetto.
+1. Selezionare **risorse**  >  **condivisione file** e condividere la cartella a cui è necessario accedere. La condivisione dell'intera unità di sistema è possibile, ma non consigliata.
 
-> [!NOTE]
-> Se i file risultano condivisi, potrebbe comunque essere necessario fare clic sul collegamento "Reimposta credenziali" nella parte inferiore della finestra di dialogo per abilitare di nuovo la condivisione dei volumi. Per continuare dopo aver reimpostato le credenziali, potrebbe essere necessario riavviare Visual Studio.
-
-![unità condivise](media/troubleshooting-docker-errors/shareddrives.png)
+    ![unità condivise](media/troubleshooting-docker-errors/docker-settings-image.png)
 
 > [!TIP]
-> Versioni di Visual Studio successive a Visual Studio 2017 versione 15,6 richiesta quando non sono configurate **unità condivise** .
-
-### <a name="container-type"></a>Tipo di contenitore
-
-Quando si aggiunge il supporto di Docker a un progetto, scegliere un contenitore Windows o Linux. L'host Docker deve eseguire lo stesso tipo di contenitore. Per modificare il tipo di contenitore nell'istanza di Docker in esecuzione, fare clic con il pulsante destro del mouse sull'icona di Docker sulla barra delle applicazioni e scegliere **Switch to Windows containers** (Passa ai contenitori Windows) o **Switch to Linux containers** (Passa ai contenitori Linux).
+> Le versioni di Visual Studio successive a Visual Studio 2017 versione 15,6 richiederanno la configurazione delle **unità condivise** .
 
 ## <a name="unable-to-start-debugging"></a>Impossibile avviare il debug
 
@@ -54,7 +47,7 @@ Provare a eseguire lo script scaricabile dall'articolo relativo alla [pulizia de
 
 ## <a name="mounts-denied"></a>Montaggi negati
 
-Quando si usa Docker per macOs, potrebbe verificarsi un errore durante il riferimento alla cartella /usr/local/share/dotnet/sdk/NuGetFallbackFolder. Aggiunge la cartella alla scheda Condivisione file in Docker
+Quando si usa Docker per macOs, potrebbe verificarsi un errore durante il riferimento alla cartella /usr/local/share/dotnet/sdk/NuGetFallbackFolder. Aggiunge la cartella alla scheda Condivisione file in Docker.
 
 ## <a name="docker-users-group"></a>Gruppo utenti Docker
 
@@ -68,7 +61,7 @@ Add yourself to the 'docker-users' group and then log out of Windows.
 È necessario essere un membro del gruppo "Docker-Users" per avere le autorizzazioni per lavorare con i contenitori docker.  Per aggiungere se stessi al gruppo in Windows 10, attenersi alla procedura seguente:
 
 1. Dal menu Start aprire **Gestione computer**.
-1. Espandere **utenti e gruppi locali**e scegliere **gruppi**.
+1. Espandere **utenti e gruppi locali** e scegliere **gruppi**.
 1. Trovare il gruppo **Docker-Users** , fare clic con il pulsante destro del mouse e scegliere **Aggiungi al gruppo**.
 1. Aggiungere l'account utente o gli account.
 1. Disconnettersi ed eseguire nuovamente l'accesso per rendere effettive le modifiche.
@@ -83,20 +76,34 @@ In PowerShell usare la funzione [Add-LocalGroupMember](/powershell/module/micros
 
 ## <a name="low-disk-space"></a>Spazio su disco insufficiente
 
-Per impostazione predefinita, Docker archivia le immagini nella cartella *% ProgramData%/Docker/* , che in genere si trova nell'unità di sistema, * C:\ProgramData\Docker \* . Per evitare che immagini occupano spazio prezioso nell'unità di sistema, è possibile modificare il percorso della cartella immagini.  Dall'icona Docker sulla barra delle applicazioni, aprire Docker Settings, scegliere **daemon**e passare da **Basic** a **Advanced**. Nel riquadro di modifica aggiungere l' `graph` impostazione della proprietà con il valore della posizione desiderata per le immagini docker:
+Per impostazione predefinita, Docker archivia le immagini nella cartella *% ProgramData%/Docker/* , che in genere si trova nell'unità di sistema, * C:\ProgramData\Docker \* . Per evitare che immagini occupano spazio prezioso nell'unità di sistema, è possibile modificare il percorso della cartella immagini. A tale scopo, procedere nel seguente modo:
+
+ 1. Fare clic con il pulsante destro del mouse sull'icona Docker sulla barra delle applicazioni e scegliere **Impostazioni**.
+ 1. Selezionare **motore Docker**. 
+ 1. Nel riquadro di modifica aggiungere l' `graph` impostazione della proprietà con il valore della posizione desiderata per le immagini docker:
 
 ```json
     "graph": "D:\\mypath\\images"
 ```
 
-![Screenshot dell'impostazione del percorso dell'immagine Docker](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+![Screenshot della condivisione di file di Docker](media/troubleshooting-docker-errors/docker-daemon-settings.png)
 
-Fare clic su **applica** per riavviare docker. Questa procedura modifica il file di configurazione in *% ProgramData% \docker\config\daemon.json*. Le immagini compilate in precedenza non vengono spostate.
+Fare clic su **applica & riavvia**. Questa procedura modifica il file di configurazione in *% ProgramData% \docker\config\daemon.json*. Le immagini compilate in precedenza non vengono spostate.
+
+## <a name="container-type-mismatch"></a>Tipo di contenitore non corrispondente
+
+Quando si aggiunge il supporto di Docker a un progetto, scegliere un contenitore Windows o Linux. Se l'host del server Docker non è configurato per eseguire lo stesso tipo di contenitore della destinazione del progetto, è probabile che venga visualizzato un errore simile a quello riportato di seguito:
+
+![Screenshot dell'host Docker e del progetto non corrispondenti](media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png)
+
+Per risolvere il problema:
+
+- Fare clic con il pulsante destro del mouse sull'icona Docker per Windows nella barra delle applicazioni e scegliere **passa a contenitori Windows** o **passa a contenitori Linux...**.
 
 ## <a name="microsoftdockertools-github-repo"></a>Repository GitHub Microsoft/DockerTools
 
 Per qualsiasi altro problema riscontrato, vedere i problemi di [Microsoft/DockerTools](https://github.com/microsoft/dockertools/issues).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Risoluzione dei problemi di Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

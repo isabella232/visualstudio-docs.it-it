@@ -1,5 +1,7 @@
 ---
 title: Scrittura di funzioni hook di debug | Microsoft Docs
+description: Leggere le informazioni su numerose funzioni hook di debug personalizzate che è possibile scrivere per consentire l'inserimento del codice in punti predefiniti all'interno dell'elaborazione normale del debugger.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 038c976380ff1e1f0a1a7c4c150fc462f6b1d1db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5e2f05005d0b43d526936bfbc8018739cb1ed88
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350719"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728937"
 ---
 # <a name="debug-hook-function-writing"></a>Scrittura di funzioni hook di debug
 In questa sezione vengono descritte alcune funzioni hook di debug personalizzate che consentono di inserire il codice in alcuni punti predefiniti nell'ambito della normale elaborazione del debugger.
@@ -42,4 +44,4 @@ In questa sezione vengono descritte alcune funzioni hook di debug personalizzate
 
 ## <a name="related-sections"></a>Sezioni correlate
 
-- [Tecniche di debug CRT](../debugger/crt-debugging-techniques.md) : collegamenti alle tecniche di debug per la libreria di runtime del linguaggio C, tra cui l'uso della libreria di debug CRT, le macro per la creazione di report, le differenze tra `malloc` e `_malloc_dbg` , la scrittura di funzioni hook di debug e l'heap di debug CRT.
+- [Tecniche di debug CRT](../debugger/crt-debugging-techniques.md) : collegamenti alle tecniche di debug per la libreria di Run-Time C, tra cui l'uso della libreria di debug CRT, le macro per la creazione di report, le differenze tra `malloc` e `_malloc_dbg` , la scrittura di funzioni hook di debug e l'heap di debug CRT.
