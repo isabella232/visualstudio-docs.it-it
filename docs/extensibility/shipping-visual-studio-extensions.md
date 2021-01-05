@@ -1,5 +1,7 @@
 ---
 title: Distribuzione delle estensioni di Visual Studio | Microsoft Docs
+description: Informazioni su come pubblicare e gestire l'estensione di Visual Studio SDK, tra cui l'uso di file con estensione VSIX, la pubblicazione, la localizzazione e l'aggiornamento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 767bb24bb5cb47f1af1452aa04ebdc91c778e284
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 812fc4f4e2f8dcf54876e2764f0c091f16348496
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700115"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716003"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Distribuzione delle estensioni di Visual Studio
 Dopo aver completato lo sviluppo dell'estensione, è possibile installarla in altri computer, condividerla con gli amici e i colleghi oppure pubblicarla nel Visual Studio Marketplace. In questa sezione vengono illustrate tutte le operazioni che è necessario eseguire per pubblicare e gestire l'estensione: uso dei file VSIX, pubblicazione, localizzazione e aggiornamento.

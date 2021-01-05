@@ -1,6 +1,7 @@
 ---
 title: 'Preparare il debug di progetti C#, F # e VB | Microsoft Docs'
-ms.custom: seodec18
+description: 'Ottenere informazioni sulla preparazione per il debug dei tipi di progetto C#, F # e Visual Basic creati dai modelli di progetto di Visual Studio.'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 90e108ddd64a9b520c8ae1d0c86e416dea64e5be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1536c00f68232bb9e4aa92102b605b59ec58b196
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738124"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726852"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Preparazione al debug: tipi di progetto C#, F# e Visual Basic
 Negli argomenti di questa sezione viene descritto come eseguire il debug dei tipi di progetto C#, F# e [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] creati mediante i modelli di progetto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -47,5 +48,5 @@ Negli argomenti di questa sezione viene descritto come eseguire il debug dei tip
 
  [Debug del codice gestito](../debugger/debugging-managed-code.md) Vengono illustrati i problemi e le tecniche comuni di debug per le applicazioni scritte in codice gestito.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)

@@ -1,5 +1,6 @@
 ---
 title: Stringhe utilizzate come chiavi per trovare un plug-in del controllo del codice sorgente
+description: Informazioni sulle stringhe che rappresentano le chiavi per l'accesso al registro di sistema per trovare informazioni sul plug-in del controllo del codice sorgente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67e1a9c73c13632cf766b0536f2b7cfc1b456394
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a99d64873018885c35c066f05e6a3a8919868d72
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037133"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715314"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Stringhe usate come chiavi per la ricerca di un plug-in del controllo del codice sorgente
 Le stringhe seguenti sono le chiavi per accedere al registro di sistema per trovare informazioni sul plug-in del controllo del codice sorgente.

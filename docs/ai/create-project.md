@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 15e788cca7cb27b36e3f3567aff96cd33bf5aaae
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 28eccd9c564b7d368e823288311a823fdff86fb3
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099232"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726398"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Creare un progetto AI da un modello in Visual Studio
 
@@ -37,10 +37,10 @@ Dopo aver [installato Visual Studio Tools for AI](installation.md) è facile cre
 
 6. Per il progetto sono anche state create alcune proprietà che semplificano il debug dell'applicazione passando automaticamente gli argomenti della riga di comando a questi parametri di input. **Fare clic con il pulsante destro del mouse** sul progetto e selezionare **Proprietà**
 
-    ![Proprietà](media/create-project/project-properties.png)
+    ![Screenshot del Esplora soluzioni di Visual Studio che mostra il menu di scelta rapida per TensorFlowApplication1 con le proprietà selezionate.](media/create-project/project-properties.png)
 
 7. Fare clic sulla scheda **Debug** per vedere gli argomenti di script aggiunti automaticamente. È possibile modificarli in base alle proprie esigenze a seconda della posizione dei dati di input e della posizione di archiviazione preferita per i dati di output.
 
-    ![Proprietà](media/create-project//project-properties_1.png)
+    ![Screenshot della scheda debug nelle impostazioni delle proprietà per TensorFlowApplication1 che Mostra gli argomenti dello script per il progetto.](media/create-project//project-properties_1.png)
 
 8. Eseguire il programma premendo Ctrl+F5 o selezionando **Debug > Avvia senza eseguire debug** del menu. I risultati vengono visualizzati nella finestra della console.

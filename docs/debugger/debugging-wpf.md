@@ -1,5 +1,7 @@
 ---
 title: Debug di WPF | Microsoft Docs
+description: Vedere un elenco di articoli che descrivono funzionalità aggiuntive in Visual Studio che semplificano le applicazioni di debug Windows Presentation Foundation (WPF).
+ms.custom: SEO-VS-2020
 ms.date: 10/22/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cfe148f67d7fe21bd98d2442a4427270b84d5dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb68f1a89f09c2229a190098ebf47343d9784b72
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72888441"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726722"
 ---
 # <a name="debugging-wpf"></a>Debug di WPF
 
@@ -36,5 +38,5 @@ ms.locfileid: "72888441"
 | [Procedura: utilizzare il visualizzatore della struttura ad albero di WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md) | È possibile utilizzare il visualizzatore della struttura ad albero di WPF per esplorare la struttura ad albero visuale di un oggetto WPF e visualizzare le proprietà di dipendenza WPF per gli oggetti contenuti in quella struttura ad albero. In questo argomento viene argomento descritta l'interfaccia utente del visualizzatore della struttura ad albero di WPF. |
 | [Procedura: visualizzare le informazioni di traccia WPF](../debugger/how-to-display-wpf-trace-information.md) | [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è in grado di ricevere informazioni di traccia di debug da applicazioni WPF e di visualizzare tali informazioni nella finestra **Output**. In questo argomento viene descritto come abilitare e personalizzare la visualizzazione di informazioni di traccia WPF. |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug del codice gestito](../debugger/debugging-managed-code.md)

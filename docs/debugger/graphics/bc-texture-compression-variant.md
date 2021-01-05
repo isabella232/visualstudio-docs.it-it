@@ -1,5 +1,7 @@
 ---
 title: Variante di compressione della trama BC | Microsoft Docs
+description: Usare la variante di compressione della trama BC per consentire la compressione dei blocchi (BC) sulle trame con un formato pixel che è una variante di B8G8R8X8, B8G8R8A8 o R8G8B8A8.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5faf19632d746105deed3a36af6943627594175
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e767268073f896de590386854a0d2c9ce2803073
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72736156"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726449"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante di compressione della trama BC
 Abilita la compressione a blocchi in tutte le trame con un formato di pixel che è una variante del formato B8G8R8X8, B8G8R8A8 o R8G8B8A8.
@@ -23,7 +25,7 @@ Abilita la compressione a blocchi in tutte le trame con un formato di pixel che 
 
  Se le trame sono adatte per la compressione basata su blocchi e non serve una fedeltà dei colori perfetta, valutare l'uso di un formato con compressione a blocchi per ridurre l'utilizzo della memoria e della larghezza di banda.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Per comprimere le trame, usare un formato di compressione basato su blocchi in ogni chiamata a `ID3DDevice::CreateTexture2D` che crea una trama di origine. In particolare, le trame vengono compresse quando:
 
 - L'oggetto `D3D11_TEXTURE2D_DESC` passato a `pDesc` descrive una risorsa shader che non cambia, ovvero:
@@ -60,5 +62,5 @@ Abilita la compressione a blocchi in tutte le trame con un formato di pixel che 
 ## <a name="example"></a>Esempio
  Questa variante esegue la compressione a blocchi delle trame in fase di esecuzione, prima della chiamata a `CreateTexture2D`. Per il codice di produzione, questo approccio è sconsigliato perché le trame a dimensioni intere occupano più spazio su disco e perché il passaggio aggiuntivo può aumentare in modo significativo i tempi di caricamento nell'app, perché la compressione basata su blocchi richiede risorse di elaborazione notevoli per la codifica. È invece consigliabile comprimere le trame offline usando un editor o programma per l'elaborazione di immagini che faccia parte della pipeline di compilazione. Questi approcci riducono i requisiti di spazio su disco ed eliminano sovraccarichi in fase di esecuzione nell'app, oltre a restituire una quantità di tempo di elaborazione che consente di mantenere la migliore qualità di immagine.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Variante delle dimensioni della trama metà/trimestre](half-quarter-texture-dimensions-variant.md)

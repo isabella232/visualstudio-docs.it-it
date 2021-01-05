@@ -1,5 +1,7 @@
 ---
 title: Uso dell'archivio impostazioni | Microsoft Docs
+description: Informazioni su come leggere i dati dall'archivio delle impostazioni di configurazione, ovvero le impostazioni di Visual Studio e VSPackage di sola lettura.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3bbc09586f883e067e32f525a0331c1a9e253f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aeb147c245f7dc09cf91db8a1b810a7c5f30b46b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698511"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715912"
 ---
 # <a name="using-the-settings-store"></a>Uso dell'archivio delle impostazioni
 Esistono due tipi di archivi delle impostazioni:
@@ -69,7 +71,7 @@ Esistono due tipi di archivi delle impostazioni:
 
 4. Testare il codice. Compilare il progetto e avviare il debug.
 
-5. Nell'istanza sperimentale, scegliere **richiama SettingsStoreCommand**dal menu **strumenti** .
+5. Nell'istanza sperimentale, scegliere **richiama SettingsStoreCommand** dal menu **strumenti** .
 
     Verrà visualizzata una finestra di messaggio che informa che **Microsoft Windows Phone strumenti di sviluppo:**  seguito da **true** o **false**.
 
@@ -79,7 +81,7 @@ Esistono due tipi di archivi delle impostazioni:
 
 1. Aprire Regedit.exe.
 
-2. Passare a HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0Exp_Config \InstalledProducts \\ .
+2. Passare a HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\ .
 
     > [!NOTE]
     > Assicurarsi di esaminare la chiave che contiene \ 14.0Exp_Config \ e non \ 14.0_Config \\ . Quando si esegue l'istanza sperimentale di Visual Studio, le impostazioni di configurazione si trovano nell'hive del registro di sistema "14.0Exp_Config".

@@ -1,5 +1,7 @@
 ---
 title: Estensioni caricate automaticamente in modo sincrono
+description: Informazioni sul comportamento predefinito a partire da Visual Studio 2019, che blocca i pacchetti caricati in modo sincrono da qualsiasi estensione.
+ms.custom: SEO-VS-2020
 ms.date: 12/11/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab62d235fd6ed4e47e765fc23868acd5c56efcb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 506c098f1f385ddf39c5d000f4571a8ee92c09fc
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699377"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715444"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Estensioni caricate automaticamente in modo sincrono
 
@@ -21,7 +23,7 @@ Le estensioni autocaricate in modo sincrono hanno un impatto negativo sulle pres
 
 ![avviso di compatibilità dell'estensione](media/extension-compatibility-warning-16-1.png.png)
 
-È possibile scegliere:
+È possibile:
 
 - Fare clic su **Consenti autoload sincrono** per consentire le estensioni di autoload. Per modificare questa impostazione nelle opzioni di Visual Studio, fare clic su ambiente, quindi su estensioni, quindi selezionare la casella di controllo "Consenti autoload sincrono di estensioni". 
 
@@ -42,7 +44,7 @@ Tutte le estensioni che hanno caricato in modo sincrono tutti i pacchetti in qua
 
 Gli amministratori possono abilitare un Criteri di gruppo per consentire l'autoload sincrono. A tale scopo, impostare criteri basati sul Registro di sistema nella chiave seguente:
 
-**HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
 
 Entry = **consentito**
 
@@ -53,5 +55,5 @@ Valore = (DWORD)
 ## <a name="extension-authors"></a>Autori di estensioni
 Gli autori di estensioni sono in grado di trovare istruzioni per la migrazione di pacchetti a autoload asincrono alla [migrazione a AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 Per altre informazioni sulle impostazioni di autoload sincrono in Visual Studio 2019, vedere la pagina [comportamento di autoload sincrono](https://devblogs.microsoft.com/visualstudio/updates-to-synchronous-autoload-of-extensions-in-visual-studio-2019/) .

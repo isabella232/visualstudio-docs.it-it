@@ -1,5 +1,7 @@
 ---
 title: Debug di applicazioni ASP.NET distribuite | Microsoft Docs
+description: Utilizzare Visual Studio per eseguire il debug di un'applicazione ASP.NET distribuita collegandosi al processo di lavoro e garantendo che il debugger disponga dell'accesso ai simboli per l'applicazione.
+ms.custom: SEO-VS-2020
 ms.date: 06/30/2018
 ms.topic: how-to
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8d787e6586a9dcce2ca4d2c840f67e652bfc5714
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e8c99f1988ef1aa2e14c7b0a4d6ed46e10f6f1e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350550"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727047"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Debug di applicazioni ASP.NET distribuite
 Per utilizzare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per eseguire il debug di un'applicazione distribuita, è necessario effettuare la connessione al processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e verificare che il debugger abbia accesso ai simboli per l'applicazione. Inoltre, è necessario individuare e aprire i file di origine dell'applicazione. Per altre informazioni, vedere [specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [procedura: trovare il nome del processo ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md)e [requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md).
@@ -38,7 +40,7 @@ La connessione al processo di lavoro [!INCLUDE[vstecasp](../code-quality/include
 > [!NOTE]
 > Molte applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] fanno riferimento a DLL contenenti logica di business o altro codice utile. Un riferimento di questo tipo copia la DLL dal computer locale alla cartella \bin della directory virtuale dell'applicazione Web quando si distribuisce l'app. Quando si esegue il debug, tenere presente che l'applicazione Web fa riferimento a tale copia della DLL e non alla copia presente sul computer locale.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
 - [Come fare per: Attivare il debug per applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
 - [Procedura: trovare il nome del processo ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md)

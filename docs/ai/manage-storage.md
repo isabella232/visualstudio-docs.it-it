@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: ae419c67b493ef03b08f6fcf627ad0fbe42ca6d0
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: b145c4acf4047356b8996d09d746679900314f1b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099206"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726566"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Esplorare lo spazio di archiviazione per caricare dati o per scaricare modelli e log
 
@@ -27,7 +27,7 @@ ms.locfileid: "92099206"
 2. Espandere il contesto di calcolo del computer remoto o di Batch per intelligenza artificiale.
 3. Fare clic con il pulsante destro del mouse su **Archiviazione** e quindi scegliere **Sfoglia**.
 
-    ![storage](media/manage-storage/browse-storage.png)
+    ![Screenshot di Esplora server con la cartella computer remoti espansa. L'archiviazione viene evidenziata nell'albero delle cartelle ed è selezionata l'opzione Sfoglia nel menu di scelta rapida.](media/manage-storage/browse-storage.png)
 
 ## <a name="to-access-job-specific-data-on-the-remote-machine-or-file-share"></a>Per accedere ai dati specifici di un processo nel computer remoto o nella condivisione file
 
@@ -35,4 +35,4 @@ ms.locfileid: "92099206"
 2. Selezionare il processo.
 3. Fare clic su **cartella di lavoro** o su **stdout/stderr** per accedere rapidamente a questi file di log importanti.
 
-    ![storage](media/manage-storage/job-workingfolder.png)
+    ![Screenshot della finestra del browser del processo in Esplora server. Il processo train_mnist è selezionato e il collegamento cartella di lavoro è selezionato in dettagli processo.](media/manage-storage/job-workingfolder.png)

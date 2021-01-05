@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ab66089de25b7648b13e1ba05f88ab55b7868df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7e2a05fe84b023a60ef75f0cb262a08fc02587a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348028"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727424"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Osservare le variabili con le finestre espressioni di controllo e controllo immediato
 
@@ -30,7 +30,8 @@ Durante il debug, è possibile usare le finestre **espressioni di controllo** e 
 
 Le finestre **espressioni di controllo** possono visualizzare diverse variabili alla volta durante il debug. La finestra di dialogo controllo **immediato** Visualizza una singola variabile alla volta e deve essere chiusa prima che il debug possa continuare.
 
-Se è la prima volta che si tenta di eseguire il debug del codice, è consigliabile leggere il [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) e [tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md) prima di procedere con questo articolo.
+> [!NOTE]
+> Se è la prima volta che si tenta di eseguire il debug del codice, è consigliabile leggere il [debug per principianti assoluti](../debugger/debugging-absolute-beginners.md) e [tecniche e strumenti di debug](../debugger/write-better-code-with-visual-studio.md) prima di procedere con questo articolo.
 
 ## <a name="observe-variables-with-a-watch-window"></a>Osservare le variabili con una finestra Espressioni di controllo
 
@@ -58,13 +59,13 @@ int main()
 
 ```
 
-1. Impostare un punto di interruzione sulla `c = a + b;` riga facendo clic sul margine sinistro, selezionando **debug**  >  **Imposta/Rimuovi**punto di interruzione oppure premendo **F9**.
+1. Impostare un punto di interruzione sulla `c = a + b;` riga facendo clic sul margine sinistro, selezionando **debug**  >  **Imposta/Rimuovi** punto di interruzione oppure premendo **F9**.
 
-1. Avviare il debug selezionando la freccia di **avvio** verde o **debug**  >  **Avvia debug**o premere **F5**. L'esecuzione viene sospesa in corrispondenza del punto di interruzione.
+1. Avviare il debug selezionando la freccia di **avvio** verde o **debug**  >  **Avvia debug** o premere **F5**. L'esecuzione viene sospesa in corrispondenza del punto di interruzione.
 
-1. Aprire una finestra **espressioni di controllo** selezionando **debug**  >  **Windows**  >  **Watch**  >  **Watch 1**o premendo **CTRL** + **ALT** + **W**  >  **1**.
+1. Aprire una finestra **espressioni di controllo** selezionando **debug**  >  **Windows**  >  **Watch**  >  **Watch 1** o premendo **CTRL** + **ALT** + **W**  >  **1**.
 
-   È possibile aprire finestre **espressioni di controllo** aggiuntive selezionando Windows **2**, **3**o **4**.
+   È possibile aprire finestre **espressioni di controllo** aggiuntive selezionando Windows **2**, **3** o **4**.
 
 1. Nella finestra **espressioni di controllo** selezionare una riga vuota e digitare Variable `a` . Eseguire la stessa operazione per `b` e `c` .
 
@@ -134,7 +135,7 @@ Se viene visualizzata l'icona di aggiornamento perché la valutazione automatica
 
 Per illustrare l'uso dell'icona di aggiornamento:
 
-1. In **strumenti**  >  **Opzioni**  >  **debug**  >  **generale**deselezionare la casella di controllo **Abilita valutazione delle proprietà e altre chiamate di funzioni implicite** .
+1. In **strumenti**  >  **Opzioni**  >  **debug**  >  **generale** deselezionare la casella di controllo **Abilita valutazione delle proprietà e altre chiamate di funzioni implicite** .
 
 1. Immettere il codice seguente e nella finestra **espressioni di controllo** impostare un'espressione di controllo sulla `list.Count` Proprietà.
 
@@ -165,7 +166,7 @@ Questo codice può causare un [effetto collaterale](https://en.wikipedia.org/wik
 
 Un'espressione con effetti collaterali viene valutata una sola volta, al momento della prima immissione. Successivamente, l'espressione viene visualizzata in grigio nella finestra **espressioni di controllo** e altre valutazioni sono disabilitate. Nella colonna Descrizione comando o **valore** viene illustrato che l'espressione causa un effetto collaterale. È possibile forzare la rivalutazione selezionando l'icona di aggiornamento visualizzata accanto al valore.
 
-Un modo per evitare la designazione degli effetti collaterali consiste nel disattivare la valutazione automatica della funzione. In **strumenti**  >  **Opzioni**  >  **debug**  >  **generale**deselezionare **Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**.
+Un modo per evitare la designazione degli effetti collaterali consiste nel disattivare la valutazione automatica della funzione. In **strumenti**  >  **Opzioni**  >  **debug**  >  **generale** deselezionare **Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**.
 
 Solo per C#, quando la valutazione delle proprietà o delle chiamate di funzione implicite è disattivata, è possibile forzare la valutazione aggiungendo il modificatore di formato **AC** a un **nome** di variabile nella finestra **espressioni di controllo** . Vedere [identificatori di formato in C#](../debugger/format-specifiers-in-csharp.md).
 
@@ -217,7 +218,7 @@ Per individuare il nome dell' `Person` `DoSomething()` oggetto nel metodo, è po
 
 1. Avviare il debug.
 
-1. Quando l'esecuzione viene sospesa in corrispondenza del punto di interruzione, aprire la finestra **variabili locali** scegliendo **debug**  >  **Windows**  >  **variabili locali**di Windows.
+1. Quando l'esecuzione viene sospesa in corrispondenza del punto di interruzione, aprire la finestra **variabili locali** scegliendo **debug**  >    >  **variabili locali** di Windows.
 
 1. Nella finestra variabili **locali** , fare clic con il pulsante destro del mouse sulla `Person` variabile e scegliere **Crea ID oggetto**.
 
@@ -253,11 +254,11 @@ Per visualizzare solo la **visualizzazione dinamica** per un oggetto, aggiungere
 **Per inserire una nuova variabile Watch che esegue il cast di un oggetto in un oggetto dinamico:**
 
 1. Fare clic con il pulsante destro del mouse su qualsiasi elemento figlio di una **visualizzazione dinamica**.
-1. Scegliere **Aggiungi**espressione di controllo. Il `object.name` diventa `((dynamic) object).name` e viene visualizzato in una nuova finestra **espressioni di controllo** .
+1. Scegliere **Aggiungi** espressione di controllo. Il `object.name` diventa `((dynamic) object).name` e viene visualizzato in una nuova finestra **espressioni di controllo** .
 
-Il debugger aggiunge anche un nodo figlio **visualizzazione dinamica** dell'oggetto alla finestra **auto** . Per aprire la finestra **auto** , durante il debug selezionare **debug**di  >  **Windows**  >  **auto**.
+Il debugger aggiunge anche un nodo figlio **visualizzazione dinamica** dell'oggetto alla finestra **auto** . Per aprire la finestra **auto** , durante il debug selezionare **debug** di  >  **Windows**  >  **auto**.
 
-La **visualizzazione dinamica** migliora anche il debug di oggetti com. Quando il debugger raggiunge un oggetto COM di cui è stato eseguito il wrapper in **System. __ComObject**, aggiunge un nodo della **visualizzazione dinamica** per l'oggetto.
+La **visualizzazione dinamica** migliora anche il debug di oggetti com. Quando il debugger raggiunge un oggetto COM incapsulato in **System.__ComObject**, aggiunge un nodo della **visualizzazione dinamica** per l'oggetto.
 
 ## <a name="observe-a-single-variable-or-expression-with-quickwatch"></a>Osservare una singola variabile o espressione con controllo immediato
 
@@ -286,7 +287,7 @@ Per osservare la `a` variabile,
 
 1. Selezionare la variabile `a` nel codice.
 
-1. Selezionare **Debug**controllo  >  **immediato**debug, premere **MAIUSC** + **F9**oppure fare clic con il pulsante destro del mouse e scegliere controllo **immediato**.
+1. Selezionare controllo  >  **immediato** debug, premere **MAIUSC** + **F9** oppure fare clic con il pulsante destro del mouse e scegliere controllo **immediato**.
 
    Viene visualizzata la finestra di dialogo controllo **immediato** . La `a` variabile si trova nella casella **espressione** con un **valore** pari a **1**.
 
@@ -298,11 +299,11 @@ Per osservare la `a` variabile,
 
 1. Per aggiungere la variabile o l'espressione da controllo **immediato** alla finestra **espressioni di controllo** , selezionare Aggiungi espressione di **controllo**.
 
-1. Selezionare **Chiudi** per chiudere la finestra controllo **immediato** . (Controllo**immediato** è una finestra di dialogo modale, pertanto non è possibile continuare il debug finché è aperto).
+1. Selezionare **Chiudi** per chiudere la finestra controllo **immediato** . (Controllo **immediato** è una finestra di dialogo modale, pertanto non è possibile continuare il debug finché è aperto).
 
 1. Continuare il debug. È possibile osservare la variabile nella finestra **espressioni di controllo** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Che cos'è il debug?](../debugger/what-is-debugging.md)
 - [Tecniche e strumenti di debug CRT](../debugger/write-better-code-with-visual-studio.md)
 - [Esaminare prima di tutto il debug](../debugger/debugger-feature-tour.md)

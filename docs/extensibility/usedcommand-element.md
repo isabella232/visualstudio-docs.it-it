@@ -1,5 +1,7 @@
 ---
 title: Elemento UsedCommand | Microsoft Docs
+description: L'elemento UsedCommand consente a un VSPackage di accedere a un comando definito in un altro file. vsct.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65030c3fe24c3456b0c4c99a667362d2a4c67703
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d1dcef25413bddbb1eb5c35a47a9dc0d30f4a8f
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698831"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715964"
 ---
 # <a name="usedcommand-element"></a>Elemento UsedCommand
 Consente a un VSPackage di accedere a un comando definito in un altro file con estensione vsct. Se, ad esempio, il pacchetto VSPackage usa il comando **Copy** standard, definito dalla [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Shell, è possibile aggiungere il comando a un menu o a una barra degli strumenti senza implementarlo di nuovo.
@@ -30,7 +32,7 @@ Consente a un VSPackage di accedere a un comando definito in un altro file con e
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|
@@ -50,7 +52,7 @@ Consente a un VSPackage di accedere a un comando definito in un altro file con e
 |-------------|-----------------|
 |[Elemento UsedCommands](../extensibility/usedcommands-element.md)|Raggruppa gli elementi UsedCommand e altri raggruppamenti UsedCommands.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Aggiungendo un comando all' `<UsedCommands>` elemento, un VSPackage informa l' [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente che il pacchetto VSPackage richiede il comando. È necessario aggiungere un `<UsedCommand>` elemento per qualsiasi comando richiesto dal pacchetto che potrebbe non essere incluso in tutte le versioni e le configurazioni di Visual Studio. Se, ad esempio, il pacchetto chiama un comando specifico per Visual C++, il comando non sarà disponibile per gli utenti di Visual Web Developer a meno che non si includa un `<UsedCommand>` elemento per il comando.
 
 ## <a name="example"></a>Esempio

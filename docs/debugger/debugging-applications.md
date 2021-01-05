@@ -1,5 +1,7 @@
 ---
 title: Debug di applicazioni | Microsoft Docs
+description: Informazioni su come usare il debug in Visual Studio per diversi tipi di applicazioni, ad esempio app UWP, codice gestito, codice nativo, codice GPU e app Web.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1849d6918c1fd5607c97b82c17e385d3c6521fc4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfe7bb45d2979a62d07e34b2ee44076394ff936c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535161"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727008"
 ---
 # <a name="debugging-applications"></a>Debug di applicazioni
 Nelle sezioni seguenti è trattato il debug per tipi specifici di applicazioni. Diversi tipi di applicazioni e linguaggi richiedono impostazioni e tecniche diverse e presentano problemi diversi che devono essere sottoposti a debug.
@@ -35,5 +37,5 @@ Nelle sezioni seguenti è trattato il debug per tipi specifici di applicazioni. 
 |[Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|Viene descritto come eseguire il debug di applicazioni ASP.NET.|
 |[Debug del codice Python](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Viene descritto come eseguire il debug del codice Python|
 |[Eseguire il debug di applicazioni JavaScript e TypeScript](../javascript/debug-nodejs.md)|Viene descritto come eseguire il debug di applicazioni JavaScript, TypeScript e Node.js|
-|[Debug di applicazioni Web](../debugger/debugging-web-applications.md)|Viene descritto come eseguire il debug di script e applicazioni Web.|
+|[Eseguire il debug di applicazioni Web](../debugger/debugging-web-applications.md)|Viene descritto come eseguire il debug di script e applicazioni Web.|
 |[Eseguire il debug di servizi WCF](../debugger/debugging-wcf-services.md)|Viene descritto come eseguire il debug di servizi Windows Communication Foundation|

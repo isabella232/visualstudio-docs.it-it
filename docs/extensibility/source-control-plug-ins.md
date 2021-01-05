@@ -1,5 +1,7 @@
 ---
 title: Plug-in del controllo del codice sorgente | Microsoft Docs
+description: Negli articoli di questa sezione viene illustrata la specifica di interfaccia completa che consente l'integrazione dei sistemi di controllo del codice sorgente con Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc5f092e0ae93109d071af0b1a67999947e73e90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 617b06e46bb150026f49af3e23761dfd6cb4e902
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699897"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715834"
 ---
 # <a name="source-control-plug-ins"></a>Plug-in del controllo del codice sorgente
 La sezione di riferimento dell'SDK del plug-in del controllo del codice sorgente contiene la specifica dell'interfaccia completa che consente l'integrazione dei sistemi di controllo del codice sorgente con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Specifica la sintassi e la semantica delle varie funzioni e tipi di dati che il plug-in del controllo del codice sorgente deve implementare per l'interfaccia con il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE).

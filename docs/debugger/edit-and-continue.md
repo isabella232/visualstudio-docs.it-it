@@ -1,6 +1,7 @@
 ---
 title: Modificare il codice e continuare il debug | Microsoft Docs
-ms.custom: seodec18
+description: Usare il comando modifica e continuazione durante il debug in Visual Studio in modo che sia possibile apportare modifiche al codice sorgente mentre il programma è in modalità di interruzioni.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/31/2018
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d3da21a833764745a7b6fc7dd001eeb4995f44d
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: c335ce5a394454daacd86338a96ba51d04c88c0e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599637"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726540"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Modificare il codice e continuare a eseguire il debug in Visual Studio (C#, VB, C++)
 Modifica e continuazione è una funzionalità che consente di ridurre i tempi necessari per il debug poiché permette di apportare modifiche al codice sorgente mentre il programma è in modalità di interruzione. Quando si riprende l'esecuzione del programma scegliendo un comando di esecuzione, ad esempio **continua** o **passaggio**, modifica e continuazione applica automaticamente le modifiche del codice con alcune limitazioni. In questo modo è possibile modificare il codice durante una sessione di debug anziché dover terminare la sessione corrente, ricompilare l'intero programma e riavviare la sessione di debug.
@@ -43,7 +44,7 @@ Modifica e continuazione è una funzionalità che consente di ridurre i tempi ne
 
  [Modifica e continuazione (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
 
- [Modifica e continuazione non supportate per F#](../debugger/edit-and-continue-not-supported-for-f-hash.md)
+ [Modifica e continuazione non supportate per F #](../debugger/edit-and-continue-not-supported-for-f-hash.md)
 
 ## <a name="see-also"></a>Vedi anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)

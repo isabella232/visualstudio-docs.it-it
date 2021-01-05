@@ -1,5 +1,7 @@
 ---
 title: Versioni di debug delle funzioni di allocazione heap | Microsoft Docs
+description: Usare le versioni di debug delle funzioni di allocazione heap nella libreria di runtime del linguaggio C. Queste funzioni hanno gli stessi nomi delle versioni di rilascio con _dbg accodato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0fde776e9f2bd48aca92c7ba6d7f1fe1e23f01a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4be03c96f9c6ffdf8745ab8890e524ca98b4f4f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738364"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727073"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Versioni di debug di funzioni di allocazione heap
 La libreria di runtime del linguaggio C contiene speciali versioni di debug delle funzioni di allocazione heap. Queste funzioni presentano lo stesso nome delle corrispondenti versioni di rilascio, con l'unica differenza del suffisso _dbg. Questo argomento illustra le differenze tra la versione di rilascio di una funzione CRT e la versione _dbg, utilizzando `malloc` e `_malloc_dbg` come esempi.
@@ -47,6 +49,6 @@ La libreria di runtime del linguaggio C contiene speciali versioni di debug dell
 
   Quando _DEBUG non è definito, le chiamate a `malloc` non vengono disturbate, `_malloc_dbg` le chiamate a vengono risolte in `malloc` , la definizione di [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc) viene ignorata e le informazioni sul file di origine che riguardano la richiesta di allocazione non vengono fornite. Dal momento che `malloc` non presenta alcun parametro di tipo di blocco, le richieste di tipi `_CLIENT_BLOCK` vengono gestite come allocazioni standard.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Tecniche di debug CRT](../debugger/crt-debugging-techniques.md)

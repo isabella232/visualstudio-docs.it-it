@@ -1,5 +1,7 @@
 ---
 title: Supporto di più versioni di Visual Studio | Microsoft Docs
+description: Informazioni su come supportare diverse versioni di Visual Studio, con i pacchetti VSPackage che possono essere caricati in versioni diverse.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d571f1be4da45ff5ed6b2538cfb515930bde1de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d1309c6fcda2b27efdc78e7b31189d3a58edfb8
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699480"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715626"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Supporto di più versioni di Visual Studio
 Il termine *side-by-side* significa che è possibile installare e gestire più versioni di un prodotto nello stesso computer. Per i pacchetti VSPackage, significa che un utente può avere diverse versioni di Visual Studio installate nello stesso computer. Tuttavia, non è possibile avere versioni affiancate dei pacchetti VSPackage caricati in una singola versione di Visual Studio.

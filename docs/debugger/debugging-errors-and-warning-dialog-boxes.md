@@ -1,5 +1,7 @@
 ---
 title: Errori di debug e finestre di dialogo di avviso | Microsoft Docs
+description: Vedere un elenco di errori e finestre di dialogo di avviso che possono verificarsi durante il debug dell'applicazione in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,38 +23,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: beeba55c873e008b3e096da66f888695d719c882
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 73432c1693db1543095643a998396967b7aa2bdf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599945"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726982"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Finestre di dialogo di errore e di avviso per il debug
 Di seguito sono riportate le finestre di errore e di avviso che possono essere visualizzate quando si effettua il debug di un'applicazione.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
- [Asserzione non riuscita (finestra di dialogo)](../debugger/assertion-failed-dialog-box.md)
+ [Finestra di dialogo asserzione non riuscita](../debugger/assertion-failed-dialog-box.md)
 
- [Impossibile modificare il valore (finestra di dialogo)](../debugger/cannot-change-value-dialog-box.md)
+ [Finestra di dialogo non è possibile modificare il valore](../debugger/cannot-change-value-dialog-box.md)
 
  [Impossibile visualizzare il codice sorgente o il disassembly](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
  
  [Memoria insufficiente per i servizi del debugger](../debugger/error-debugger-services-no-memory.md)
 
- [finestra di dialogo Eseguibile per la sessione di debug](../debugger/executable-for-debugging-session-dialog-box.md)
+ [Finestra di dialogo eseguibile per la sessione di debug](../debugger/executable-for-debugging-session-dialog-box.md)
 
  [Finestra di dialogo Impossibile applicare le modifiche del codice](../debugger/edit-and-continue-dialog-box-cpp.md)
 
- [finestra di dialogo Debugger di Microsoft Visual Studio (generata eccezione)](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)
+ [Finestra di dialogo Microsoft Visual Studio debugger (generata eccezione)](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)
 
  [Finestra di dialogo Codice sorgente non disponibile per il percorso corrente](../debugger/no-source-available.md)
 
  [Finestra di dialogo Nessuna informazione sui simboli](/previous-versions/d493t3ew(v=vs.100))
 
- [finestra di dialogo Risolvi ambiguità](../debugger/resolve-ambiguity-dialog-box.md)
+ [Finestra di dialogo Risolvi ambiguità](../debugger/resolve-ambiguity-dialog-box.md)
 
- [Avviso di codice non aggiornato (finestra di dialogo)](../debugger/stale-code-warning-dialog-box.md)
+ [Finestra di dialogo avviso di codice non aggiornato](../debugger/stale-code-warning-dialog-box.md)
 
  [Impossibile connettersi al computer](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 

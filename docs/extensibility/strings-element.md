@@ -1,5 +1,7 @@
 ---
 title: Elemento Strings | Microsoft Docs
+description: L'elemento Strings contiene un elemento figlio ButtonText e altri elementi figlio facoltativi. Una e commerciale nella stringa di testo specifica un tasto di scelta rapida.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db44db8926b523665a21c00b710dcee55749ab89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f517d350f3383dcaeb99d651872ffb8ed09814fe
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699727"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715249"
 ---
 # <a name="strings-element"></a>Elemento Strings
 L'elemento Strings deve contenere almeno un elemento figlio **ButtonText** . Tutti gli altri elementi figlio sono facoltativi. I caratteri XML non validi, ad esempio ' &' è <', devono essere codificati come entità (' &amp; ' è &lt; ' e così via).
@@ -60,5 +62,5 @@ L'elemento Strings deve contenere almeno un elemento figlio **ButtonText** . Tut
 |[Elemento Menu](../extensibility/menu-element.md)|Definisce una singola voce di menu.|
 |[Elemento Combo](../extensibility/combo-element.md)|Definisce i comandi che vengono visualizzati in una casella combinata.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [File Visual Studio Command Table (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

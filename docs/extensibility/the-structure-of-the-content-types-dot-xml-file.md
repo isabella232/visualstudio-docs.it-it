@@ -1,5 +1,7 @@
 ---
 title: Struttura del file [Content_types]. XML | Microsoft Docs
+description: Informazioni sulla struttura del file dei tipi di contenuto, che contiene informazioni sui tipi di contenuto in un pacchetto VSIX.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e96af4936f27d869409a7215c720d9bb64e4128
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 7117845e4756f8b0e09a8fa603e66448e705b903
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012517"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715223"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Struttura del file [Content_types].xml
 Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio usa il file [Content_Types]. XML per installare il pacchetto, ma non installa il file stesso.
@@ -43,7 +45,7 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
 
 ### <a name="attribute-name-attribute"></a>{Nome attributo} Attributo
 
-| valore | Descrizione |
+| Valore | Descrizione |
 | - | - |
 | `http://schemas.openformats.org/package/2006/content-types` | Percorso dello schema dei tipi di contenuto. |
 
@@ -99,7 +101,7 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
 </Types>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md)
 - [Riferimento allo schema di estensione VSIX 1,0](/previous-versions/dd393700(v=vs.110))
 - [OPC: nuovo standard per il packaging dei dati](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data)

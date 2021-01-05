@@ -10,18 +10,18 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e6bdae7ef85545d0790782f5ad825b8f27659c
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 303c410bf519561844d95cc13fa036534ddb2aa7
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099245"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726618"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Clonare un repository del codice Python in Visual Studio
 
 Dopo aver [installato Visual Studio Tools for AI](installation.md), è possibile clonare facilmente un repository di codice Python e creare un progetto a partire da questo.
 
-1. Per connettersi ai repository di GitHub, eseguire il programma di installazione di Visual Studio, selezionare **modifica**e selezionare la scheda **singoli componenti** . Scorrere verso il basso fino alla sezione **strumenti del codice** , selezionare l' **estensione GitHub per Visual Studio**e selezionare **modifica**.
+1. Per connettersi ai repository di GitHub, eseguire il programma di installazione di Visual Studio, selezionare **modifica** e selezionare la scheda **singoli componenti** . Scorrere verso il basso fino alla sezione **strumenti del codice** , selezionare l' **estensione GitHub per Visual Studio** e selezionare **modifica**.
 
     ![Selezione dell'estensione GitHub nel programma di installazione di Visual Studio](media/create-project-repo/installation-github-extension.png)
 
@@ -57,8 +57,8 @@ Dopo aver [installato Visual Studio Tools for AI](installation.md), è possibile
 
 11. È possibile visualizzare lo stato con TensorBoard. Fare clic con il pulsante destro de mouse sul progetto e scegliere **Run TensorBoard** (Esegui TensorBoard) quindi selezionare la directory dei log di output di TensorBoard.
 
-   ![eseguire tensorboard](media/create-project-repo/run-tensorboard.png)
+   ![Screenshot del Esplora soluzioni di Visual Studio con il progetto MNIST selezionato e l'opzione Esegui TensorBoard selezionata nel menu di scelta rapida.](media/create-project-repo/run-tensorboard.png)
 
 12. Si noti che gli errori diminuiscono nel tempo e ciò indica un miglioramento della qualità.
 
-   ![eseguire tensorboard](media/create-project-repo/tensorboard.png)
+   ![Screenshot della finestra principale di TensorBoard che mostra quattro grafici che visualizzano i dati dai log di TensorBoard.](media/create-project-repo/tensorboard.png)

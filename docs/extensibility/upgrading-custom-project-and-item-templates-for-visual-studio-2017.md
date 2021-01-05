@@ -1,6 +1,8 @@
 ---
 title: Aggiornare i modelli di progetto e di elemento personalizzati per Visual Studio 2017
 titleSuffix: ''
+description: Informazioni su come aggiornare il progetto e il modello di elemento personalizzati da versioni precedenti di Visual Studio SDK per l'uso con Visual Studio 2017 e versioni successive.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5f807e142b376d05e5a44600e8f6b24ddb3593be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 089baadcb60afcc8b32e287095b10ab30196ce17
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698852"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715977"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Aggiornare Modelli di progetti ed elementi per Visual Studio personalizzati 2017
 
@@ -27,7 +29,7 @@ Se si vuole creare un modello di progetto o di elemento come parte di un'estensi
 
 ## <a name="template-scanning"></a>Analisi dei modelli
 
-Nelle versioni precedenti di Visual Studio, **devenv/setup** o **devenv/installvstemplates** ha analizzato il disco locale per trovare i modelli di progetto e di elemento. A partire da Visual Studio 2017, l'analisi viene eseguita solo per la posizione a livello di utente. Il percorso predefinito a livello di utente è **%userprofile%\documenti \\<Visual Studio \> versione \\ \Modelli**. Questo percorso viene usato per i modelli generati dal **Project**  >  comando**Esporta modelli** di progetto... se l'opzione **Importa automaticamente il modello in Visual Studio** è selezionata nella procedura guidata.
+Nelle versioni precedenti di Visual Studio, **devenv/setup** o **devenv/installvstemplates** ha analizzato il disco locale per trovare i modelli di progetto e di elemento. A partire da Visual Studio 2017, l'analisi viene eseguita solo per la posizione a livello di utente. Il percorso predefinito a livello di utente è **%userprofile%\documenti \\<Visual Studio \> versione \\ \Modelli**. Questo percorso viene usato per i modelli generati dal   >  comando **Esporta modelli** di progetto... se l'opzione **Importa automaticamente il modello in Visual Studio** è selezionata nella procedura guidata.
 
 Per altri percorsi (non utente), è necessario includere un file manifesto (con estensione vstman) che specifichi il percorso e altre caratteristiche del modello. Il file con estensione vstman viene generato insieme al file con estensione vstemplate utilizzato per i modelli. Se si installa l'estensione usando un. vsix, è possibile eseguire questa operazione ricompilando l'estensione in Visual Studio 2017. Tuttavia, se si usa un file con estensione msi, è necessario apportare manualmente le modifiche. Per un elenco delle operazioni necessarie per apportare queste modifiche, vedere  **aggiornamenti per le estensioni installate con un. MSI** più avanti in questa pagina.
 
@@ -188,7 +190,7 @@ Se l'estensione esegue una distribuzione basata su MSI, è necessario generare m
 
 Creare manifesti distinti per i modelli di progetto e di elemento e devono puntare alla directory radice del modello, come specificato in precedenza. Creare un manifesto per estensione e impostazioni locali.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Risoluzione dei problemi di individuazione dei modelli](troubleshooting-template-discovery.md)
 - [Creazione di modelli di progetto e di elemento personalizzati](creating-custom-project-and-item-templates.md)

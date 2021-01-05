@@ -1,5 +1,7 @@
 ---
 title: Debug di codice gestito | Microsoft Docs
+description: Vedere le tecniche e i problemi di debug comuni in Visual Studio per le applicazioni gestite o le app scritte in linguaggi destinati alla Common Language Runtime.
+ms.custom: SEO-VS-2020
 ms.date: 09/23/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7dadfbc6a02382165b623aeff9d866e9edc975a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188408"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727021"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debug di codice gestito (C#, Visual Basic, F #, C++/CLI)
 
@@ -79,7 +81,7 @@ Viene descritto il debug di applicazioni .NET e i requisiti di configurazione.
 [Debug di script e applicazioni Web](how-to-enable-debugging-for-aspnet-applications.md)\
 Vengono presentati le tecniche di debug e i problemi più comuni riscontrabili durante il debug di script e applicazioni Web.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura dettagliata: debug di controlli di Windows Forms personalizzati in fase di progettazione](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [Sicurezza del debugger](../debugger/debugger-security.md)

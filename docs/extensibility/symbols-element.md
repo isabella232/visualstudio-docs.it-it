@@ -1,5 +1,7 @@
 ---
 title: Elemento symbols | Microsoft Docs
+description: L'elemento symbols definisce i GUID e gli ID usati da altri elementi VSCT. Questo articolo contiene un esempio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c24c3f84df23a07b6b16272b66b29e32ad7b911
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e86406c4c10c2f65e8e43d8f3cb67f413ed3c63
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699344"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715561"
 ---
 # <a name="symbols-element"></a>Elemento Symbols
 Definisce GUID e ID usati da altri elementi VSCT. Per il codice non gestito, queste informazioni provengono in genere dai file di intestazione specificati dall' [elemento extern](../extensibility/extern-element.md). Il codice gestito utilizza gli elementi figlio dell'elemento symbols per definire queste informazioni.

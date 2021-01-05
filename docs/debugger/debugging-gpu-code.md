@@ -1,5 +1,7 @@
 ---
 title: Debug del codice GPU | Microsoft Docs
+description: Informazioni sul debug del codice C++ in esecuzione nell'unità di elaborazione grafica (GPU) in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02900bc7e0d3746e465c8e4741036605a76190d4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 36359f8d5f2044c97e3479981290aff07d3f2e31
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599957"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727034"
 ---
 # <a name="debugging-gpu-code"></a>Debug del codice GPU
 È possibile eseguire il debug del codice C++ in esecuzione nell'unità di elaborazione grafica (GPU). Il supporto del debug di GPU in Visual Studio include il rilevamento di race condition, l'avvio di processi e la connessione a essi e l'integrazione nelle finestre di debug.

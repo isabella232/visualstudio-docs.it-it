@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 84be6698c62e3a2a205ceb9d404673ee1d0c6f64
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668612"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696537"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Funzionalità supportate di Visual Studio (anteprima)
 
@@ -108,8 +108,8 @@ Non ancora disponibile:
 
 Quando si usa Visual Studio connesso a uno spazio dei servizi, si ottengono le stesse funzionalità di accessibilità di quando si lavora localmente.
 
-* Controllo del codice sorgente: supporto Git completo tramite la nuova [finestra git](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/).
-* Accessibilità: esiste un problema noto con la tecnologia di accesso facilitato che non è in grado di accedere alla appcasting di un'app sottoposta a debug. Oltre a questa limitazione, non riteniamo che esistano altri problemi di compatibilità che non esistono già nell'esperienza locale di Visual Studio. Segnalare eventuali bug segnalando un problema nella [community degli sviluppatori](https://aka.ms/feedback/suggest?space=8).
+* Controllo del codice sorgente: supporto Git completo tramite la nuova [esperienza git integrata](../git-with-visual-studio.md).
+* Accessibilità: esiste un problema noto con la tecnologia di accesso facilitato che non è in grado di accedere alla appcasting di un'app sottoposta a debug. Oltre a questa limitazione, non riteniamo che esistano altri problemi di compatibilità che non esistono già nell'esperienza locale di Visual Studio. Segnalare eventuali bug segnalando un problema nella [community degli sviluppatori](https://aka.ms/feedback/report?space=8).
 * Pubblicazione: è supportata la pubblicazione in Azure tramite azioni di GitHub.
 * Servizi connessi: le informazioni dettagliate su app, l'insieme di credenziali delle applicazioni, l'archivio, SQL, Redis, Cosmos, openAPI e gRPC sono parzialmente supportate.
 * Esplora test *-principalmente supportata.
@@ -121,7 +121,7 @@ Non ancora disponibile:
 * Funzionalità di test aziendali: Live Unit Testing, Microsoft Fakes, code coverage e IntelliTest non sono supportati.
 * Scenari di pubblicazione avanzati: pubblicazione selettiva, pubblicazione FTP, modifiche in anteprima, barra degli strumenti di pubblicazione rapida e così via.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Che cosa sono gli spazi di dati di GitHub?](codespaces-overview.md)
 * [Come usare Visual Studio con un codespace](use-visual-studio-with-codespaces.md)

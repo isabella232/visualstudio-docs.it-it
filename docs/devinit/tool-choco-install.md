@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: d26b2aa89ad295b63f0115acae11148c505720a5
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 586f503569f7218e78cda79e7a40e33f7ec30ff6
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440510"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696531"
 ---
 # <a name="choco-install"></a>choco-install
 
@@ -26,7 +26,7 @@ Lo `choco-install` strumento può essere usato per installare e aggiornare i pac
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento non eseguirà alcuna operazione.
 
-| Nome                                             | Type   | Obbligatoria  | valore                                                                                                          |
+| Nome                                             | Tipo   | Obbligatoria  | valore                                                                                                          |
 |--------------------------------------------------|--------|-----------|----------------------------------------------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No        | Proprietà commenti facoltativi. Non usato.                                                                          |
 | [**input**](#input)                              | string | Sì       | Pacchetto da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.                                                 |
@@ -39,6 +39,9 @@ La `input` proprietà viene utilizzata per specificare il nome del pacchetto da 
 ### <a name="additional-options"></a>Opzioni aggiuntive
 
 Altre opzioni di configurazione possono essere passate come valore di `additionalOptions` . Questi argomenti sono il pass-through diretto agli argomenti utilizzati da [`choco install`](https://chocolatey.org/docs/commands-install) e sono definiti nella documentazione di cioccolato.
+
+#### <a name="adding-new-feeds-to-chocolatey"></a>Aggiunta di nuovi feed a Chocolate
+Se si desidera aggiungere un nuovo feed alla cioccolata, in modo simile a un `choco source add` comando, è possibile passare `additionalOptions` a tale scopo. Un esempio di aggiunta di un nuovo feed è nell' [uso di esempio](#example-usage). Se si desidera aggiungere un feed privato, è consigliabile eseguire lo strumento nel prompt dei comandi perché richiede le credenziali. Ad esempio, `devinit run -t choco-install -i {package} -s "{feed link}" -u {user} -p {password}` , dove `{package}` , `{feed link}` , `{user}` e `{password}` fanno riferimento al pacchetto specifico, al collegamento al feed, al nome utente e alla password. Per ulteriori informazioni, fare riferimento alla documentazione di cioccolato. 
 
 ### <a name="built-in-options"></a>Opzioni predefinite
 
@@ -92,6 +95,20 @@ Di seguito sono riportati alcuni esempi di come eseguire `choco-install` usando 
             "tool": "choco-install",
             "input": "mongodb",
             "additionalOptions": "--version 4.2.7"
+        }
+    ]
+}
+```
+
+#### <a name="devinitjson-that-adds-a-new-feed-to-chocolatey"></a>.devinit.jssu che aggiunge un nuovo feed alla cioccolata:
+```json
+{
+    "$schema": "https://json.schemastore.org/devinit.schema-3.0",
+    "run": [
+        {
+            "tool": "choco-install",
+            "input": "packages.config",
+            "additionalOptions": "-s '{feed link}'"
         }
     ]
 }

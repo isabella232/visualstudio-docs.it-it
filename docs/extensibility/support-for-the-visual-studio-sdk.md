@@ -1,5 +1,7 @@
 ---
 title: Supporto per Visual Studio SDK | Microsoft Docs
+description: Informazioni sulle opzioni di supporto disponibili per i clienti su come estendere l'IDE di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddcdf62fbfe6d683159cccce24280bdb08cedc2a
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 40e2ceb39931ce7779a7e13de6d0f13ee68f32b7
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099375"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715288"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Supporto per Visual Studio SDK
 Sono disponibili diverse opzioni di supporto per i clienti che hanno domande su come estendere Visual Studio Integrated Development Environment (IDE).

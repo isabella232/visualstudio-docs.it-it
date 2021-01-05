@@ -1,6 +1,7 @@
 ---
 title: Eseguire il debug di applicazioni multithread | Microsoft Docs
-ms.custom: seodec18
+description: Eseguire il debug di applicazioni multithreading in Visual Studio. Esaminare gli strumenti e altri articoli sul debug di app multithread.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/06/2018
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b99f7b44168a451e8e927e5e0d2ca1a7f8d0bf93
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 4fed6580219964ab71f5a5010060c1af193375df
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600333"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727138"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debug di applicazioni multithreading in Visual Studio
 Un thread è una sequenza di istruzioni a cui il sistema operativo concede tempo di elaborazione. Ogni processo in esecuzione nel sistema operativo è composto da almeno un thread. I processi composti da più di un thread sono detti multithreading.
@@ -62,7 +63,7 @@ Panoramica delle funzionalità di debug dei thread, evidenziando le funzionalit�
 
 Elenca le funzionalità degli strumenti per il debug di thread e processi.
 
- [Debug di più processi](../debugger/debug-multiple-processes.md)
+ [Eseguire il debug di più processi](../debugger/debug-multiple-processes.md)
 
 Spiega la procedura per eseguire il debug di più processi
 

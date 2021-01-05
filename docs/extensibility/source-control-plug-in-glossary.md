@@ -1,5 +1,7 @@
 ---
 title: Glossario del plug-in del controllo del codice sorgente | Microsoft Docs
+description: Questo articolo include termini e definizioni utili riguardanti la documentazione dell'SDK del plug-in del controllo del codice sorgente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3835561eb63fa2a4a71174732c07ecd73f1df5d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5b878efd9d937f532526ed3b49ad41228749b47
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699901"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715405"
 ---
 # <a name="source-control-plug-in-glossary"></a>Glossario del plug-in del controllo del codice sorgente
 I termini e le definizioni utili seguenti riguardano la documentazione dell'SDK del plug-in del controllo del codice sorgente.
@@ -50,5 +52,5 @@ I termini e le definizioni utili seguenti riguardano la documentazione dell'SDK 
 
  Revisione di una modifica di cui è stato eseguito il commit nella cronologia di un file o di un set di file. Una revisione è uno snapshot in un progetto continuamente modificato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)

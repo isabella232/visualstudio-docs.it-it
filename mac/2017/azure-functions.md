@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 009df6525696405914aeeb224e3817bbfbe27155
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 63793548bd3ea1098cc1113724cd9a3b513adbf5
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189797"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727463"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduzione alle funzioni di Azure
 
@@ -91,10 +91,10 @@ I modelli di funzione consentono di creare rapidamente nuove funzioni usando i t
 
 ## <a name="publish-to-azure"></a>Pubblicazione in Azure
 
-1. Fare clic con il pulsante destro del mouse sul nome del progetto e selezionare **pubblica > pubblica in Azure**:  ![ opzione di menu pubblica in Azure](media/azure-functions-image5.png)
+1. Fare clic con il pulsante destro del mouse sul nome del progetto e selezionare **pubblica > pubblica in Azure**:  ![ screenshot da funzioni di Azure, che mostra il progetto AF-httptrigger selezionato e i comandi pubblica e pubblica in Azure evidenziati nel menu di scelta rapida.](media/azure-functions-image5.png)
 2. Se l'account di Azure è già stato connesso a Visual Studio per Mac, viene visualizzato un elenco dei servizi app disponibili. Se non è stato ancora effettuato l'accesso, verrà richiesto di farlo.
 3. Nella finestra di dialogo **Pubblica in Servizi app di Azure** è possibile selezionare un servizio app esistente o crearne uno nuovo facendo clic **Nuovo**.
-4. Nella finestra di dialogo **Crea nuovo servizio app** immettere le impostazioni: ![Opzione di menu Pubblica in Azure](media/azure-functions-image7.png)
+4. Nella finestra di dialogo **Crea nuovo servizio app** immettere le impostazioni:  ![ screenshot della finestra del nuovo servizio app in funzioni di Azure, mostrando le impostazioni per la creazione di un nuovo servizio app in Azure.](media/azure-functions-image7.png)
 
     |Impostazione  |Descrizione  |
     |---------|---------|
@@ -108,13 +108,13 @@ I modelli di funzione consentono di creare rapidamente nuove funzioni usando i t
 
 5. Fare clic su **Avanti** per creare un account di archiviazione. L'account di archiviazione di Azure è necessario per il runtime di Funzioni. Fare clic su **Personalizzato** per creare un account di archiviazione per utilizzo generico oppure usarne uno esistente:
 
-    ![Opzione di menu Pubblica in Azure](media/azure-functions-image8.png)
+    ![Screenshot della schermata di configurazione dell'account di archiviazione in funzioni di Azure. Custom è selezionato per l'account di archiviazione e il nome dell'account e il tipo di account sono compilati.](media/azure-functions-image8.png)
 
 6. Fare clic su **Crea** per creare un'app per le funzioni e le relative risorse in Azure con queste impostazioni e distribuire il codice di progetto della funzione.
 
 7. Potrebbe essere visualizzata una finestra di dialogo durante la pubblicazione con la richiesta "Aggiorna versione di Funzioni in Azure". Fare clic su **Sì**:
 
-    ![Opzione di menu Pubblica in Azure](media/azure-functions-image12.png)
+    ![Schermata della finestra di dialogo Aggiorna la versione di funzioni in Azure, in cui viene chiesto di aggiornare le impostazioni dell'applicazione Azure in modo che corrispondano alle versioni di funzioni locali.](media/azure-functions-image12.png)
 
 > [!CAUTION]
 > È presente un bug nella versione 7.6 di Visual Studio per Mac a causa del quale `FUNCTIONS_EXTENSION_VERSION` non è impostato correttamente su "beta" e ciò significa che la funzione potrebbe non essere eseguita correttamente. Per risolvere questo problema, passare a [Impostazioni dell'app per le funzioni](#function-app-settings) e modificare l'impostazione di `FUNCTIONS_EXTENSION_VERSION` da "-1" a "beta".

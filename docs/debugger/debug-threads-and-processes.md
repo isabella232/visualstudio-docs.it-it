@@ -1,5 +1,7 @@
 ---
 title: Strumenti per il debug di thread e processi | Microsoft Docs
+description: Esaminare gli strumenti per eseguire il debug di thread e processi in Visual Studio. I thread e i processi rappresentano le sequenze di istruzioni che devono essere eseguite in un ordine specifico.
+ms.custom: SEO-VS-2020
 ms.date: 04/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcdaf083462b75485449cae05894681e2bb5c900
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51917065e8764f7edbebbdb3bfcc7a03cc9723d4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738388"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727151"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Strumenti per il debug di thread e processi in Visual Studio
 I termini *thread* e *processi* costituiscono concetti correlati in ambito informatico. Entrambi rappresentano infatti sequenze di istruzioni che devono essere eseguite in un ordine specifico. Le istruzioni incluse in thread o processi distinti possono tuttavia essere eseguite in parallelo.
@@ -62,8 +64,8 @@ Gli strumenti che è necessario usare in [!INCLUDE[vsprvs](../code-quality/inclu
 |Finestra **attività**|-   Visualizzare informazioni sugli oggetti <xref:System.Threading.Tasks.Task> inclusi ID attività, stato dell'attività (programmato, in esecuzione, in attesa, in deadlock) e il thread assegnato all'attività.<br />-   Percorso corrente nello stack di chiamate.<br />-   Delegato passato all'attività in fase di creazione|-   Passare all'attività corrente<br />-   Contrassegnare o rimuovere il contrassegno di un'attività<br />-   Bloccare o sbloccare un'attività|
 |Finestra **Thread GPU**|-   Colonna flag, nella quale è possibile contrassegnare un thread al quale si desidera prestare particolare attenzione.<br />: Colonna del thread corrente, in cui una freccia gialla indica il thread corrente.<br />-   Colonna **Conteggio thread**, che visualizza il numero di thread nella stessa posizione.<br />-   Colonna **Riga** che visualizza la riga di codice in cui si trova ciascun gruppo di thread.<br />-   Colonna **Indirizzo** che visualizza l'indirizzo dell'istruzione in cui si trova ciascun gruppo di thread.<br />-   Colonna **Posizione** che indica la posizione nel codice dell'indirizzo.<br />-   Colonna **Stato**, che indica se il thread è attivo o bloccato.<br />-   Colonna **Sezione**, che indica l'indice della sezione per i thread nella riga.|-Passare a un thread diverso<br />-   Visualizza una sezione e un thread specifici<br />-   Mostra o nasconde una colonna<br />-   Ordina per colonna<br />-   Raggruppa i thread<br />-   Blocca o sblocca i thread<br />-   Contrassegno o rimozione del contrassegno di un thread<br />-   Visualizza solo thread con flag|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Connettersi a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-- [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Debug del codice GPU](../debugger/debugging-gpu-code.md)

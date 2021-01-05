@@ -1,6 +1,7 @@
 ---
 title: Debug di app Web-errori e risoluzione dei problemi
-ms.custom: seodec18
+description: Trovare collegamenti a pagine di riferimento per facilitare il debug delle applicazioni Web, ad esempio una pagina di risoluzione dei problemi e pagine che descrivono ogni errore che potrebbe verificarsi.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -27,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4cb60f4d378daab829713cb4bbbb670ef8ed25a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f827dd2bb8081787a4883b2d67ee41d8b6d43876
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188343"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726787"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debug di applicazioni Web: errori e risoluzione dei problemi
 È possibile che si verifichino i seguenti errori durante il tentativo di eseguire il debug di applicazioni Web.
@@ -55,6 +56,6 @@ ms.locfileid: "73188343"
 
 - [Errore: Impossibile avviare il debug sul server Web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Debug di script e applicazioni Web](how-to-enable-debugging-for-aspnet-applications.md)

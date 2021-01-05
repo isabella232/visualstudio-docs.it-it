@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: a9242cdd4a09b7d0cb1cae1904800696dc9c3d82
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 650189c4418355ae06b296bac7e16eece0ea88ad
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099180"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727255"
 ---
 # <a name="monitor-with-tensorboard"></a>Monitorare con TensorBoard
 
@@ -23,8 +23,8 @@ ms.locfileid: "92099180"
 
 1. Fare clic con il pulsante destro de mouse sul progetto e scegliere **Run TensorBoard** (Esegui TensorBoard) quindi selezionare la directory dei log di output di TensorBoard.
 
-    ![eseguire tensorboard](media/monitor-tensorboard/run-tensorboard.png)
+    ![Screenshot di Visual Studio Esplora soluzioni con il progetto MNIST selezionato. Viene aperto un menu di scelta rapida e viene selezionato il comando Esegui TensorBoard.](media/monitor-tensorboard/run-tensorboard.png)
 
 2. Si noti che gli errori diminuiscono nel tempo e ciò indica un miglioramento della qualità.
 
-    ![eseguire tensorboard](media/monitor-tensorboard/tensorboard.png)
+    ![Screenshot della finestra principale di TensorBoard che mostra le visualizzazioni grafiche dei dati dei log TensorBoard.](media/monitor-tensorboard/tensorboard.png)

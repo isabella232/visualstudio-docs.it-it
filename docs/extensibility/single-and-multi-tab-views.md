@@ -1,5 +1,7 @@
 ---
 title: Visualizzazioni singole e a più schede | Microsoft Docs
+description: Informazioni su come implementare visualizzazioni a più schede negli editor, ad esempio le finestre dell'editor di codice e una finestra di progettazione di form.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c308b4d6c7b90456255019ef57c6b9d544aefc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94081af0bfdb85793c092f76d28758f220f4628b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699983"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715210"
 ---
 # <a name="single-and-multi-tab-views"></a>Visualizzazioni a schede singole e multiple
 Un editor può creare tipi diversi di visualizzazioni. Un esempio è una finestra dell'editor di codice, un'altra è una finestra di progettazione di form.
@@ -112,7 +114,7 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Supporto di più visualizzazioni documento](../extensibility/supporting-multiple-document-views.md)
 - [Procedura: Collegare visualizzazioni ai dati documento](../extensibility/how-to-attach-views-to-document-data.md)
 - [Creazione di finestre di progettazione ed editor personalizzati](../extensibility/creating-custom-editors-and-designers.md)

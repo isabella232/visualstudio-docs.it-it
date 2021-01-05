@@ -1,6 +1,7 @@
 ---
 title: Eseguire il debug di app UWP | Microsoft Docs
-ms.custom: ''
+description: Trovare articoli sulle attività di debug per le app piattaforma UWP (Universal Windows Platform) (UWP) nel debugger di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/22/2019
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 73b9b78be6a6325a422c945db8c51caa7a11b487
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 111a84471ca20659b9a8a4a00345c1c027a0472e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188263"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726709"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Eseguire il debug di app di Windows universale (UWP) in Visual Studio
 
@@ -32,5 +33,5 @@ Il debugger di Visual Studio fornisce supporto completo per il debug di app UWP.
 | [Analizzare le proprietà XAML durante il debug](../xaml-tools/xaml-hot-reload.md) | È possibile usare la struttura ad albero visuale attiva per esplorare la struttura ad albero visuale di un oggetto XAML UWP e visualizzare le proprietà di dipendenza per gli oggetti in tale albero. |
 |Analizzare l'effetto della classe ContentPrefetcher sulle app UWP.|[Prelettura del contenuto per le app UWP](../debugger/prefetch-content-for-windows-store-apps.md)|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Analizzare la qualità del codice tramite analisi statica del codice](../code-quality/code-analysis-for-managed-code-overview.md)

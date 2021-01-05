@@ -1,5 +1,7 @@
 ---
 title: Decompilare il codice .NET durante il debug | Microsoft Docs
+description: Generare e incorporare il codice sorgente dagli assembly .NET durante il debug in Visual Studio. Estrarre e visualizzare il codice sorgente incorporato.
+ms.custom: SEO-VS-2020
 ms.date: 2/2/2020
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 87f8fbec389e3735b6f1c39cdd671a391c7334d7
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 8ad919b14642dff98746c194ad8c05bbb3aea529
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600111"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726735"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Genera codice sorgente da assembly .NET durante il debug
 
@@ -101,7 +103,7 @@ Per altri dettagli, vedere il problema [relativo al generatore PDB](https://gith
 
 Le impostazioni di [Just My Code (JMC)](./just-my-code.md) consentono a Visual Studio di eseguire un'istruzione/routine di sistema, Framework, libreria e altre chiamate non utente. Durante una sessione di debug, nella finestra **moduli** vengono visualizzati i moduli di codice che il debugger sta trattando come codice utente (codice utente).
 
-La decompilazione di moduli ottimizzati o versione produce codice non utente. Se il debugger si interrompe nel codice non utente decompilato, ad esempio, non viene visualizzata **alcuna** finestra di origine. Per disabilitare Just My Code, passare a **strumenti**  >  **Opzioni** (o **Debug**  >  **Opzioni**di debug) > **debug**  >  **generale**, quindi deselezionare **Abilita Just My Code**.
+La decompilazione di moduli ottimizzati o versione produce codice non utente. Se il debugger si interrompe nel codice non utente decompilato, ad esempio, non viene visualizzata **alcuna** finestra di origine. Per disabilitare Just My Code, passare a **strumenti**  >  **Opzioni** (o   >  **Opzioni** di debug) > **debug**  >  **generale**, quindi deselezionare **Abilita Just My Code**.
 
 ### <a name="extracted-sources"></a>Origini estratte
 

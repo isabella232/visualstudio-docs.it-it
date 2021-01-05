@@ -1,5 +1,7 @@
 ---
 title: Elemento UsedCommands | Microsoft Docs
+description: L'elemento UsedCommands raggruppa gli elementi UsedCommand e altri raggruppamenti UsedCommands. L'elemento UsedCommands è facoltativo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76732b2a9700f1737af495098c8c23aa4b618819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cbc48d305e287fcb77407fbbf5ba52888b25dca6
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698745"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715899"
 ---
 # <a name="usedcommands-element"></a>Elemento UsedCommands
 L'elemento UsedCommands raggruppa gli elementi UsedCommand e altri raggruppamenti UsedCommands.
@@ -36,7 +38,7 @@ L'elemento UsedCommands raggruppa gli elementi UsedCommand e altri raggruppament
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
+### <a name="attributes"></a>Attributi
 
 |Attributo|Descrizione|
 |---------------|-----------------|

@@ -13,12 +13,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f5ca27d44e611ab3b541dfb5992ef37d230513c3
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fc74a556fe6baf21b6270b21951018fc246aa962
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040641"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696626"
 ---
 # <a name="overview"></a>Panoramica
 
@@ -46,7 +46,7 @@ Nella tabella seguente vengono illustrate le diverse opzioni di gravità:
 | Avviso | `warning` | Le violazioni vengono visualizzate come *avvisi* nell'elenco errori e nell'output di compilazione da riga di comando, ma non comportano la mancata riuscita delle compilazioni. | Il codice offensivo è sottolineato con una zigzag verde e contrassegnato da una piccola casella verde nella barra di scorrimento. |
 | Info | `suggestion` | Le violazioni vengono visualizzate come *messaggi* nell'elenco errori e non nell'output di compilazione da riga di comando. | Il codice che causa il danneggiamento è sottolineato con un zigzag grigio e contrassegnato da una piccola casella grigia nella barra di scorrimento. |
 | Nascosto | `silent` | Non visibile all'utente. | Non visibile all'utente. Tuttavia, la diagnostica viene segnalata al motore di diagnostica IDE. |
-| nessuno | `none` | Eliminati completamente. | Eliminati completamente. |
+| Nessuno | `none` | Eliminati completamente. | Eliminati completamente. |
 | Predefinito | `default` | Corrisponde alla gravità predefinita della regola. Per determinare il valore predefinito di una regola, cercare nell'Finestra Proprietà. | Corrisponde alla gravità predefinita della regola. |
 
 Se le violazioni delle regole vengono trovate da un analizzatore, vengono segnalate nell'editor del codice (come *zigzag* sotto il codice che causa il errore) e nella finestra Elenco errori.
@@ -261,7 +261,7 @@ dotnet_diagnostic.CA2231.severity = warning
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Imposta gravità regola da Esplora soluzioni
 
-1. In Esplora soluzioni, espandere **References**  >  **analizzatori** di riferimenti (o **Dependencies**  >  **analizzatori** di dipendenze per i progetti .NET Core).
+1. In Esplora soluzioni, espandere   >  **analizzatori** di riferimenti (o   >  **analizzatori** di dipendenze per i progetti .NET Core).
 
 2. Espandere l'assembly che contiene la regola per la quale si desidera impostare la gravità.
 
@@ -382,7 +382,9 @@ Esistono diversi modi per eliminare le violazioni delle regole:
 
 Quando si compila il progetto dalla riga di comando, le violazioni delle regole vengono visualizzate nell'output di compilazione se vengono soddisfatte le condizioni seguenti:
 
-- Gli analizzatori vengono installati come pacchetto NuGet e non come estensione VSIX.
+- Gli analizzatori vengono installati con .NET SDK o come pacchetto NuGet e non come estensione VSIX.
+
+  Per gli analizzatori installati con .NET SDK, potrebbe essere necessario [abilitare gli analizzatori](../code-quality/install-net-analyzers.md). Per gli stili di codice, è anche possibile [applicare stili di codice alla compilazione](/dotnet/fundamentals/code-analysis/overview#code-style-analysis) impostando una proprietà di MSBuild.
 
 - Una o più regole sono violate nel codice del progetto.
 
@@ -411,7 +413,7 @@ In un progetto .NET Core, se si aggiunge un riferimento a un progetto che includ
 <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica degli analizzatori di codice in Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Inviare un bug dell'analizzatore del codice](https://github.com/dotnet/roslyn-analyzers/issues)

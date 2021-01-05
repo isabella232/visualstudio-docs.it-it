@@ -1,5 +1,7 @@
 ---
 title: Avvio dello sviluppo di estensioni di Visual Studio | Microsoft Docs
+description: Informazioni su alcune delle domande comuni che si potrebbero avere al primo avvio della scrittura di un'estensione di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 812c5b2366e40226011a15acfc1cae2327e4b897
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: da8bd850413d32e5453b7dc312e863832e5f5218
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099388"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715262"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Sviluppo di estensioni di Visual Studio
 
@@ -49,7 +51,7 @@ In pratica, è stato rilevato che le funzionalità che la maggior parte degli ut
 
 - [Estensione di menu e comandi](../extensibility/extending-menus-and-commands.md): aggiungere elementi personalizzati ai menu e alle barre degli strumenti di Visual Studio. È possibile usarli per avviare nuove funzionalità di Visual Studio o le proprie applicazioni Helper esterne. È anche possibile specificare collegamenti personalizzati per le voci di menu.
 
-- [Estensione e personalizzazione delle finestre degli](../extensibility/extending-and-customizing-tool-windows.md)strumenti: estendere le finestre degli strumenti esistenti o creare le proprie finestre degli strumenti. Ad esempio, è possibile aggiungere nuove proprietà alle **Proprietà**oppure è possibile creare una nuova finestra degli strumenti per aggiungere ulteriori funzionalità.
+- [Estensione e personalizzazione delle finestre degli](../extensibility/extending-and-customizing-tool-windows.md)strumenti: estendere le finestre degli strumenti esistenti o creare le proprie finestre degli strumenti. Ad esempio, è possibile aggiungere nuove proprietà alle **Proprietà** oppure è possibile creare una nuova finestra degli strumenti per aggiungere ulteriori funzionalità.
 
 - [Editor e Language Service Extensions](../extensibility/editor-and-language-service-extensions.md): aggiungere personalizzazioni personalizzate a IntelliSense fornite per i linguaggi di Visual Studio oppure creare supporto per i nuovi linguaggi di programmazione. È possibile creare nuovi completamenti di istruzioni, suggerimenti e nuove descrizioni comandi di informazioni rapide. Con le lampadine è possibile aggiungere suggerimenti per il refactoring e correzioni del codice per supportare i nuovi linguaggi di programmazione.
 

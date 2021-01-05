@@ -1,5 +1,7 @@
 ---
 title: Animazioni per Visual Studio | Microsoft Docs
+description: Informazioni sulle regole che consentono di garantire stili di animazione coerenti e intuitivi nell'IDE di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc11eb7bab69728be5ceaa55143f56e93cd1fca4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c86b033986511100415989e76f4f1e6ef7702f10
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698612"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715951"
 ---
 # <a name="animations-for-visual-studio"></a>Animazioni per Visual Studio
 ## <a name="animation-fundamentals"></a>Nozioni fondamentali sull'animazione
@@ -43,7 +45,7 @@ Seguire queste regole per garantire stili di animazione coerenti e intuitivi nel
 
 - **La sottigliezza è importante.** Nella maggior parte dei casi, non è necessario che l'animazione richieda l'attenzione dell'utente per soddisfare i propri scopi. Modifiche minime nell'intervallo di tempo, sequenziazione e comportamento possono influire in modo significativo sulla percezione e possono fare la differenza tra un'animazione efficace e inefficace.
 
-- Quando si usa l'animazione per attirare l'attenzione su un elemento, **assicurarsi che valga la pena interrompere il**training dell'utente.
+- Quando si usa l'animazione per attirare l'attenzione su un elemento, **assicurarsi che valga la pena interrompere il** training dell'utente.
 
 - **Quando si visualizza lo stato di avanzamento o lo stato** tramite l'animazione:
 
@@ -84,14 +86,14 @@ Nell'interfaccia utente di Visual Studio, l'animazione funziona solo come strume
 
  Le animazioni dell'interfaccia utente in genere funzionano in quattro modi: visualizzare, attirare l'attenzione, simulare e tempi di risposta/indicatori di stato.
 
-#### <a name="visualize"></a>Visualizzare
+#### <a name="visualize"></a>Visualizzazione
 L'animazione può evidenziare la natura tridimensionale degli oggetti e semplificare la visualizzazione della struttura spaziale da parte degli utenti. Per ottenere questo risultato, è possibile che l'animazione debba ruotare l'oggetto in un cerchio completo, spostarlo lentamente avanti e indietro o avvicinare l'oggetto e aumentare leggermente le dimensioni per evidenziare il rollover o lo stato attivo.
 
 Anche se gli oggetti tridimensionali possono essere spostati con il controllo utente, la finestra di progettazione deve determinare in anticipo (a livello di codice o manualmente) come applicare un'animazione migliore a un movimento che fornisce una comprensione ottimale dell'oggetto. Questa animazione programmata può quindi essere attivata dall'utente posizionando il cursore sull'oggetto, mentre per i movimenti controllati dall'utente è necessario che l'utente possa comprendere come modificare l'oggetto. Limitare lo spostamento a un singolo asse o orientamento alla volta; ridimensionare, ruotare o tradurre, ma non eseguire più di una simultaneamente.
 
 La categoria Visualizza include gli aspetti di dati, relazioni, stato, struttura, sequenza e tempo.
 
-##### <a name="data"></a>Dati
+##### <a name="data"></a>Data
 Illustrare le informazioni complesse e variabili:
 
 - Spostarsi tra visualizzazioni di informazioni come grafici e grafici
@@ -142,7 +144,7 @@ Illustrare le informazioni complesse e variabili:
 
 - Capovolgimento di immagini
 
-##### <a name="time"></a>Ora
+##### <a name="time"></a>Tempo
 
 - Mostra modifica nel tempo, intervallo di tempo e screencast
 

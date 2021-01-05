@@ -1,5 +1,7 @@
 ---
 title: API di estendibilità Riepilogo file dump | Microsoft Docs
+description: Usare l'API di estensibilità Riepilogo file dump per estendere il sistema di progetto con estensione exe e la pagina Riepilogo dump per lavorare con il motore di debug personalizzato in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d34e60b0b932470dec8a69874e28b99ebe76316b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a91f262c34d9bdc69d5ce3319f05cdb3f0b952f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72737976"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726527"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>API di estensibilità del riepilogo file dump
 Utilizzando le API di estensibilità di questa sezione, è possibile estendere il sistema di progetto EXE e la pagina **Riepilogo dump** per l'utilizzo con il motore di debug personalizzato.
@@ -28,5 +30,5 @@ Utilizzando le API di estensibilità di questa sezione, è possibile estendere i
 
  <xref:Microsoft.VisualStudio.Debugger.VsDebugPresentationExtension>
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Uso di file dump](../debugger/using-dump-files.md)
