@@ -2,7 +2,7 @@
 title: Registro modifiche (Visual Studio Tools per Unity, Mac) | Microsoft Docs
 description: Visualizzare il log delle modifiche per Visual Studio Tools per Unity, Mac. Vedere le modifiche della versione 1.0.0.0 con 2.7.0.0 e oltre.
 ms.custom: ''
-ms.date: 11/13/2020
+ms.date: 12/18/2020
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,25 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 2f026c9d33f5aa49ebb7e974a507c85b87073897
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 53aade9880686746d11fb899b377e81174915bfa
+ms.sourcegitcommit: 4976419fae731860295dbcd072e6778832f7255d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672847"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97917906"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Registro modifiche (Visual Studio Tools per Unity, Mac)
 
 Registro delle modifiche di Visual Studio Tools per Unity.
+
+## <a name="2840"></a>2.8.4.0
+Rilasciata il 15 dicembre 2020
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione**
+
+  - Correzione di un problema di affidabilità quando si chiude la creazione guidata evento di Unity.
 
 ## <a name="2830"></a>2.8.3.0
 Rilasciata il 10 novembre 2020
