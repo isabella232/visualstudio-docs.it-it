@@ -1,5 +1,7 @@
 ---
 title: Informazioni sui parametri in un Service2 di linguaggio legacy | Microsoft Docs
+description: Informazioni su come supportare l'operazione informazioni sul parametro IntelliSense per la visualizzazione di una firma del metodo poiché il metodo è tipizzato in un servizio di linguaggio legacy.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dff6e871320d0727ed2fbec4188e8f7af2e5c5fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc239d5b0d580d420683c6940ac2bbd5198335d7
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88237958"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875947"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-2"></a>Informazioni sui parametri in un servizio di linguaggio Legacy 2
 Informazioni sul parametro IntelliSense è una descrizione comando che visualizza la firma di un metodo quando l'utente digita il carattere iniziale dell'elenco di parametri, in genere una parentesi aperta, per l'elenco dei parametri del metodo. Quando viene immesso ogni parametro e viene digitato il separatore di parametro (in genere una virgola), la descrizione comando viene aggiornata per mostrare il parametro successivo in grassetto.

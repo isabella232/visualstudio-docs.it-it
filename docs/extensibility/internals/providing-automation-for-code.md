@@ -1,5 +1,7 @@
 ---
 title: Fornire l'automazione per il codice | Microsoft Docs
+description: Informazioni sull'implementazione di un modello di codice, che richiede l'implementazione di interfacce determinate dalla struttura dei dati interna.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd13b7db2065069ff1540dbfc921570c2b230b8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd8d0745ae971f4039ffccf3431614325236e63f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705989"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875856"
 ---
 # <a name="providing-automation-for-code"></a>Automazione per il codice
 La creazione di un modello di automazione per il codice non è obbligatoria. L'SDK dell'ambiente non fornisce un esempio per questa operazione. Per informazioni dettagliate sui modelli di codice, vedere l' <xref:EnvDTE.CodeModel> oggetto.
@@ -32,5 +34,5 @@ La creazione di un modello di automazione per il codice non è obbligatoria. L'S
 
  Se si desidera aggiungere funzionalità, ad esempio metodi o proprietà, che non sono disponibili dalle `CodeModel` interfacce standard e `FileCodeModel` , creare una propria interfaccia che erediti dallo standard. Assicurarsi di documentarlo con il sistema di progetto in modo che gli utenti finali conoscano la ricerca. Viene restituita l'interfaccia standard, ma l'utente può chiamare il `QueryInterface` metodo o eseguire il cast all'interfaccia se è noto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica del modello di automazione](../../extensibility/internals/automation-model-overview.md)

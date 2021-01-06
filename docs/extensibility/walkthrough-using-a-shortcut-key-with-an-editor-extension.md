@@ -1,5 +1,6 @@
 ---
 title: Usare un tasto di scelta rapida con un'estensione dell'editor
+description: Informazioni su come aggiungere un'area di visualizzazione a una visualizzazione di testo usando un tasto di scelta rapida. Questa procedura dettagliata è basata sul modello di editor dell'area di visualizzazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78bbf84f6b11451c8b1a09e6883ba76b19cec757
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4c939328e1ef8e517821db8622e7383cab90c384
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037458"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875843"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Procedura dettagliata: usare un tasto di scelta rapida con un'estensione dell'editor
 È possibile rispondere ai tasti di scelta rapida nell'estensione dell'editor. Nella procedura dettagliata seguente viene illustrato come aggiungere un'area di visualizzazione della vista a una visualizzazione di testo utilizzando un tasto di scelta rapida. Questa procedura dettagliata è basata sul modello dell'editor dell'area di visualizzazione del viewport e consente di aggiungere l'area di visualizzazione utilizzando il carattere +.
@@ -78,7 +79,7 @@ Prima di Visual Studio 2017 versione 15,6 l'unico modo per gestire i comandi in 
 3. La classe denominata KeyBindingCommandFilter deve ereditare da <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> .
 
     ```csharp
-    internal class KeyBindingCommandFilter : IOleCommandTarget
+    internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
 4. Aggiungere campi privati per la visualizzazione di testo, il comando successivo nella catena di comandi e un flag per indicare se il filtro del comando è già stato aggiunto.
@@ -86,8 +87,8 @@ Prima di Visual Studio 2017 versione 15,6 l'unico modo per gestire i comandi in 
     ```csharp
     private IWpfTextView m_textView;
     internal IOleCommandTarget m_nextTarget;
-    internal bool m_added;
-    internal bool m_adorned;
+    internal bool m_added;
+    internal bool m_adorned;
     ```
 
 5. Aggiungere un costruttore che imposta la visualizzazione di testo.
@@ -198,7 +199,7 @@ Aggiornare innanzitutto i riferimenti NuGet del progetto per fare riferimento al
 
 1. Fare clic con il pulsante destro del mouse sul progetto e scegliere **Gestisci pacchetti NuGet**.
 
-2. In **Gestione pacchetti NuGet**selezionare la scheda **aggiornamenti** , selezionare la casella di controllo **Seleziona tutti i pacchetti** e quindi fare clic su **Aggiorna**.
+2. In **Gestione pacchetti NuGet** selezionare la scheda **aggiornamenti** , selezionare la casella di controllo **Seleziona tutti i pacchetti** e quindi fare clic su **Aggiorna**.
 
 Il gestore del comando è un'implementazione di <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601> che gestisce il comando creando un'istanza dell'area di controllo.
 

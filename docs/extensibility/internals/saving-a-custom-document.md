@@ -1,5 +1,7 @@
 ---
 title: Salvataggio di un documento personalizzato | Microsoft Docs
+description: Informazioni sul processo che si verifica per un documento personalizzato per un tipo di progetto aggiunto all'IDE di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f04d588b4becfa778407269849032ea8ec56fb3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2d2aa249d6944e33ab9556000c483efdec78f20
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705620"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875679"
 ---
 # <a name="saving-a-custom-document"></a>Salvataggio di un documento personalizzato
-L'ambiente gestisce i comandi **Salva**, **Salva con nome**e **Salva tutti** . Quando un utente fa clic su **Salva**, **Salva con nome** **o Salva tutto** dal menu **file** o chiude la soluzione, generando un salvataggio, si verifica il processo seguente.
+L'ambiente gestisce i comandi **Salva**, **Salva con nome** e **Salva tutti** . Quando un utente fa clic su **Salva**, **Salva con nome** **o Salva tutto** dal menu **file** o chiude la soluzione, generando un salvataggio, si verifica il processo seguente.
 
- ![Salvataggio dell'editor del cliente](../../extensibility/internals/media/private.gif "Privati") Salva, Salva con nome e Salva tutte le operazioni di gestione dei comandi per un editor personalizzato
+ ![Salvataggio dell'editor del cliente](../../extensibility/internals/media/private.gif "Privato") Salva, Salva con nome e Salva tutte le operazioni di gestione dei comandi per un editor personalizzato
 
  Questo processo è descritto in dettaglio nei passaggi seguenti:
 
@@ -41,6 +43,6 @@ L'ambiente gestisce i comandi **Salva**, **Salva con nome**e **Salva tutti** . Q
     > [!NOTE]
     > Se si implementa la propria persistenza, assicurarsi di chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> metodo per risparmiare tempo. Questo metodo verifica che sia possibile salvare il file in modo sicuro (ad esempio, il file non è di sola lettura).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Apertura e salvataggio di elementi di progetto](../../extensibility/internals/opening-and-saving-project-items.md)

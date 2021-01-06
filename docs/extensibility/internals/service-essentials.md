@@ -1,5 +1,7 @@
 ---
 title: Servizi essenziali | Microsoft Docs
+description: Informazioni sui servizi, che sono interfacce per l'utilizzo da un altro VSPackage. I servizi in un pacchetto VSPackage possono eseguire l'override di servizi incorporati o di altro.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2947cb4cd6a347d8e010340f8689eb1907a28a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54d785d665122fd5c5fa1709aa9348777e3c730b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705492"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875804"
 ---
 # <a name="service-essentials"></a>Nozioni fondamentali sui servizi
 Un servizio è un contratto tra due pacchetti VSPackage. Un pacchetto VSPackage fornisce un set specifico di interfacce per l'utilizzo da parte di un altro VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è a sua volta una raccolta di pacchetti VSPackage che fornisce servizi ad altri pacchetti VSPackage.
@@ -92,7 +94,7 @@ Fortunatamente, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 
 
     Questo codice ottiene un servizio SVsActivityLog e ne esegue il cast a un'interfaccia IVsActivityLog, che può essere usata per scrivere nel log attività. Per un esempio, vedere [procedura: usare il log attività](../../extensibility/how-to-use-the-activity-log.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Elenco di servizi disponibili](../../extensibility/internals/list-of-available-services.md)
 - [Uso e offerta di servizi](../../extensibility/using-and-providing-services.md)

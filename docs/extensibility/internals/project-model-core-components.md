@@ -1,5 +1,7 @@
 ---
 title: Componenti di base del modello di progetto | Microsoft Docs
+description: Questo articolo contiene le descrizioni delle interfacce e dei servizi identificati nel nucleo del modello di progetto e le interfacce e i servizi associati agli oggetti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e29a9d40531b32f127054fe02f61c72738e508e
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c6aeb24b2aee5b0abb3e5d803004ba97725bb707
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012412"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876896"
 ---
 # <a name="project-model-core-components"></a>Componenti di base del modello di progetto
 Le tabelle seguenti si espandono sul modello di progetto. Le tabelle presentano brevi descrizioni delle interfacce e dei servizi identificati nel modello e delle interfacce e dei servizi associati a oggetti specifici. Inoltre, le tabelle illustrano in dettaglio altre interfacce facoltative per la creazione e la manutenzione di progetti, a seconda dei requisiti del tipo di progetto specifico.
 
- Per ulteriori informazioni, vedere [supporto degli strumenti](../../extensibility/internals/supporting-symbol-browsing-tools.md)per l'esplorazione dei simboli.
+ Per ulteriori informazioni, vedere [supporto di Symbol-Browsing Tools](../../extensibility/internals/supporting-symbol-browsing-tools.md).
 
 ### <a name="package-object"></a>Oggetto Package
 
@@ -99,7 +101,7 @@ Le tabelle seguenti si espandono sul modello di progetto. Le tabelle presentano 
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibility3>|Utilizzato per implementare il modello di automazione. Nel modello di progetto verrà restituito un oggetto Properties che consente di creare un'istanza di tale oggetto.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper>|Utilizzato per implementare gli eventi degli Appunti nell'oggetto progetto nella gerarchia. `SVsUIHierWinClipboardHelper` consente di gestire correttamente le operazioni Taglia, copia e incolla.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Not in Build: uso delle classi di progetto HierUtil7 per implementare un tipo di progetto (C++)](/previous-versions/bb166212(v=vs.100))

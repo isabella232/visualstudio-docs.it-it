@@ -1,5 +1,7 @@
 ---
 title: Opzioni utente soluzione (. Suo) file | Microsoft Docs
+description: Informazioni sul file delle opzioni utente della soluzione (. suo), che contiene le opzioni della soluzione per ogni utente in un file di archiviazione strutturato archiviato in un formato binario.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9469663d3ac258e1c568778894d8584c68c13632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b2a5386e8329bb3ca51ca88a2449e223bb8d73d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705309"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876754"
 ---
 # <a name="solution-user-options-suo-file"></a>File delle opzioni utente della soluzione (con estensione suo)
 Il file delle opzioni utente della soluzione (. suo) contiene le opzioni per la soluzione per utente. Questo file non deve essere archiviato nel controllo del codice sorgente.
@@ -36,6 +38,6 @@ Il file delle opzioni utente della soluzione (. suo) contiene le opzioni per la 
 
  Questi due metodi, `SaveUserOptions` e `WriteUserOptions` , vengono chiamati in modo ricorsivo per ogni flusso di informazioni da salvare nel file con estensione suo, passando il puntatore a `IVsSolutionPersistence` . Vengono chiamati in modo ricorsivo per consentire la scrittura di più flussi nel file con estensione suo. In questo modo, le informazioni utente vengono rese permanente con la soluzione e si garantisce che sia presente alla successiva apertura della soluzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
 - [Soluzioni](../../extensibility/internals/solutions-overview.md)

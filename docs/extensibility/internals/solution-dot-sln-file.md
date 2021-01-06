@@ -1,5 +1,7 @@
 ---
 title: Soluzione (. File sln
+description: Informazioni sul file sln, ovvero uno dei file che mantiene le informazioni sullo stato per un progetto in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 03/15/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f4eee1f0a5e8371d239b3c33d10e1d9d7998095
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 903b33d72d3a97eb4ed3f7ad0bc865999bee54cf
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705323"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877507"
 ---
 # <a name="solution-sln-file"></a>File di soluzione (. sln)
 
@@ -160,7 +162,7 @@ Ogni VSPackage caricato viene enumerato per verificare se è presente qualcosa d
 
 Solo il file con estensione sln contiene voci nelle `preSolution` `postSolution` sezioni e. Non sono presenti sezioni simili nel file con estensione suo poiché la soluzione richiede che queste informazioni vengano caricate correttamente. Il file con estensione suo contiene opzioni specifiche dell'utente, ad esempio note private, che non sono progettate per essere condivise o inserite nel controllo del codice sorgente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>
 - [File delle opzioni utente della soluzione (con estensione suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)

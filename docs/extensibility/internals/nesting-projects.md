@@ -1,5 +1,7 @@
 ---
 title: Annidamento di progetti | Microsoft Docs
+description: Informazioni sull'annidamento dei progetti, che consente agli sviluppatori di applicazioni che usano il pacchetto VSPackage di raggruppare tipi simili di progetti in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 814780fa8e7e57a022a75b2e09115cfa55a1b8be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 464538d7f7be68737715cb6fd10fda4017a5556a
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707037"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876662"
 ---
 # <a name="nesting-projects"></a>Annidamento dei progetti
 Gli sviluppatori di applicazioni aziendali che utilizzano il pacchetto VS possono raggruppare in modo pratico tipi simili di progetti in utilizzando l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] *annidamento del progetto*. Il progetto modello Enterprise, ad esempio, USA i progetti annidati per raggruppare i progetti in categorie. I progetti di facciata aziendale, i progetti dell'interfaccia utente Web e così via sono raggruppati in un'unica categoria.
@@ -32,7 +34,7 @@ Gli sviluppatori di applicazioni aziendali che utilizzano il pacchetto VS posson
 ## <a name="nested-projects-example"></a>Esempio di progetti annidati
  ![Soluzione di progetti annidati](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") Esempio di progetti annidati
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Considerazioni per lo scaricamento e il ricaricamento di progetti annidati](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
 - [Supporto di procedure guidate per i progetti annidati](../../extensibility/internals/wizard-support-for-nested-projects.md)
 - [Registrazione di modelli di progetto e di elementi](../../extensibility/internals/registering-project-and-item-templates.md)

@@ -1,5 +1,7 @@
 ---
 title: Supporto per le impostazioni utente | Microsoft Docs
+description: Informazioni su come abilitare la persistenza delle categorie di impostazioni usando le API delle impostazioni in Visual Studio SDK.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02bb2450196de76917e9cffc2f5f5acc6c8ee7b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9f6ee52e9ba87eb2f570a6e388dc98c050989c9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704783"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876519"
 ---
 # <a name="support-for-user-settings"></a>Supporto per le impostazioni utente
 Un pacchetto VSPackage può definire una o più categorie di impostazioni, ovvero gruppi di variabili di stato che vengono mantenute quando un utente sceglie il comando **Importa/Esporta impostazioni** dal menu **strumenti** . Per abilitare questa persistenza, è possibile utilizzare le API delle impostazioni in [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
@@ -34,7 +36,7 @@ Un pacchetto VSPackage può definire una o più categorie di impostazioni, ovver
  I punti delle impostazioni personalizzate vengono creati in una voce del registro di sistema nel percorso seguente: \Software\microsoft\visualstudio HKLM \\ *\<Version>* \UserSettings \\ `<CSPName>` , dove `<CSPName>` è il nome del punto di impostazioni personalizzato supportato da Vspackage e *\<Version>* è la versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , ad esempio 8,0.
 
 > [!NOTE]
-> Il percorso radice di HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *\<Version>* può essere sostituito con una radice alternativa quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] viene inizializzato il Integrated Development Environment (IDE). Per ulteriori informazioni, vedere [Opzioni della riga di comando](../../extensibility/command-line-switches-visual-studio-sdk.md).
+> Il percorso radice di HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* può essere sottoposto a override con una radice alternativa quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] viene inizializzato il Integrated Development Environment (IDE). Per ulteriori informazioni, vedere [Opzioni della riga di comando](../../extensibility/command-line-switches-visual-studio-sdk.md).
 
  La struttura della voce del registro di sistema è illustrata di seguito:
 
@@ -50,7 +52,7 @@ Un pacchetto VSPackage può definire una o più categorie di impostazioni, ovver
 
  AlternateParent = CategoryName
 
-| Nome | Type | Dati | Descrizione |
+| Nome | Tipo | Data | Descrizione |
 |-----------------|--------| - | - |
 | Valore predefinito. | REG_SZ | Nome del punto di impostazioni personalizzato | Il nome della chiave, `<CSPName`>, è il nome non localizzato del punto di impostazioni personalizzato.<br /><br /> Per le implementazioni basate su MPF, il nome della chiave viene ottenuto combinando `categoryName` gli `objectName` argomenti e del <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> costruttore in `categoryName_objectName` .<br /><br /> La chiave può essere vuota oppure può contenere l'ID di riferimento per la stringa localizzata in una DLL satellite. Questo valore viene ottenuto dall' `objectNameResourceID` argomento al <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> costruttore. |
 | Pacchetto | REG_SZ | GUID | GUID del pacchetto VSPackage che implementa il punto di impostazioni personalizzato.<br /><br /> Implementazioni basate su MPF mediante la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> classe, utilizzare l'argomento del costruttore `objectType` contenente i pacchetti VSPackage <xref:System.Type> e reflection per ottenere questo valore. |

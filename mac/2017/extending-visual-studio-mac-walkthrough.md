@@ -1,16 +1,18 @@
 ---
 title: Procedura dettagliata per l'estensione di Visual Studio per Mac
+description: Informazioni su come creare un pacchetto di estensione semplice per Visual Studio per Mac, che consente di creare un nuovo comando nel menu Modifica.
+ms.custom: SEO-VS-2020
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9274f86e8ade5b49b5db0c7f4773cf6fd57ea353
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74985030"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876194"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Procedura dettagliata per l'estensione di Visual Studio per Mac
 
@@ -136,6 +138,6 @@ Questo esempio usa Addin Maker. Addin Maker crea un nuovo modello di progetto e 
 
     ![Screenshot dell'inserimento della data](media/extending-visual-studio-mac-addin12.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Create your first extension (Visual Studio in Windows)](/visualstudio/extensibility/extensibility-hello-world) (Creare la prima estensione)

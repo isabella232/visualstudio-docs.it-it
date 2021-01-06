@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: salvataggio delle impostazioni utente in una pagina iniziale | Microsoft Docs'
+description: Informazioni su come salvare in modo permanente le impostazioni utente per la pagina iniziale salvando un'impostazione nel registro di sistema utilizzando questa procedura dettagliata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
@@ -9,18 +11,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8dd20513defd1db8848cf6a80a29e04c127c9dd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17dfb844733a15b1607d2daa2ce24a8f6e0be420
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903163"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876181"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Procedura dettagliata: salvare le impostazioni utente in una pagina iniziale
 
 È possibile salvare in permanente le impostazioni utente per la pagina iniziale. Seguendo questa procedura dettagliata, è possibile creare un controllo che salva un'impostazione nel registro di sistema quando l'utente fa clic su un pulsante e quindi recupera l'impostazione ogni volta che viene caricata la pagina iniziale. Poiché il modello di progetto di pagina iniziale include un controllo utente personalizzabile e il codice XAML predefinito della pagina iniziale chiama tale controllo, non è necessario modificare la pagina iniziale.
 
-L'archivio impostazioni di cui viene creata un'istanza in questa procedura dettagliata è un'istanza dell' <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfaccia, che legge e scrive nel seguente percorso del registro di sistema quando viene chiamato: **HKCU\Software\Microsoft\VisualStudio\14.0 \\ \<CollectionName> **
+L'archivio impostazioni di cui viene creata un'istanza in questa procedura dettagliata è un'istanza dell' <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfaccia, che legge e scrive nel seguente percorso del registro di sistema quando viene chiamato: **HKCU\Software\Microsoft\VisualStudio\14.0 \\ \<CollectionName>**
 
 Quando è in esecuzione nell'istanza sperimentale di Visual Studio, l'archivio delle impostazioni legge e scrive in **HKCU\Software\Microsoft\VisualStudio\14.0Exp \\ \<CollectionName> .**
 
@@ -37,7 +39,7 @@ Per ulteriori informazioni su come salvare in modo permanente le impostazioni, v
 
 1. Creare un progetto di pagina iniziale come descritto in [creare una pagina iniziale personalizzata](creating-a-custom-start-page.md). Denominare il progetto **SaveMySettings**.
 
-2. In **Esplora soluzioni**aggiungere i riferimenti ad assembly seguenti al progetto StartPageControl:
+2. In **Esplora soluzioni** aggiungere i riferimenti ad assembly seguenti al progetto StartPageControl:
 
     - EnvDTE
 
@@ -59,7 +61,7 @@ Per ulteriori informazioni su come salvare in modo permanente le impostazioni, v
 
      Questo passaggio rimuove l' <xref:System.Windows.Controls.Border> elemento e tutti gli elementi al suo interno e lascia solo l'elemento di primo livello <xref:System.Windows.Controls.Grid> .
 
-6. Dalla **casella degli strumenti**trascinare un <xref:System.Windows.Controls.StackPanel> controllo nella griglia.
+6. Dalla **casella degli strumenti** trascinare un <xref:System.Windows.Controls.StackPanel> controllo nella griglia.
 
 7. Trascinare ora un oggetto <xref:System.Windows.Controls.TextBlock> , un oggetto <xref:System.Windows.Controls.TextBox> e un pulsante in <xref:System.Windows.Controls.StackPanel> .
 
@@ -77,7 +79,7 @@ Per ulteriori informazioni su come salvare in modo permanente le impostazioni, v
 
 1. Nel riquadro XAML, fare clic con il pulsante destro del mouse sull' `Click` attributo dell' <xref:System.Windows.Controls.Button> elemento, quindi scegliere **passa al gestore eventi**.
 
-     Questo passaggio consente di aprire *myControl.XAML.cs*e di creare un gestore stub per l' `Button_Click` evento.
+     Questo passaggio consente di aprire *myControl.XAML.cs* e di creare un gestore stub per l' `Button_Click` evento.
 
 2. Aggiungere le seguenti `using` direttive all'inizio del file.
 
@@ -150,7 +152,7 @@ Per ulteriori informazioni su come salvare in modo permanente le impostazioni, v
 
 6. Compilare il controllo utente.
 
-7. In **Esplora soluzioni**aprire *source. Extension. vsixmanifest*.
+7. In **Esplora soluzioni** aprire *source. Extension. vsixmanifest*.
 
 8. Nell'Editor manifesto impostare **nome prodotto** per **salvare la pagina iniziale impostazioni**.
 
@@ -164,13 +166,13 @@ Per ulteriori informazioni su come salvare in modo permanente le impostazioni, v
 
      Si apre l'istanza sperimentale di Visual Studio.
 
-2. Nell'istanza sperimentale, scegliere **Opzioni**dal menu **strumenti** .
+2. Nell'istanza sperimentale, scegliere **Opzioni** dal menu **strumenti** .
 
 3. Nel nodo **ambiente** , fare clic su **avvio**, quindi nell'elenco **Personalizza pagina iniziale** selezionare **[estensione installata] Salva impostazioni di avvio pagina**.
 
      Fare clic su **OK**.
 
-4. Chiudere la pagina iniziale, se è aperta, quindi scegliere **pagina iniziale**dal menu **Visualizza** .
+4. Chiudere la pagina iniziale, se è aperta, quindi scegliere **pagina iniziale** dal menu **Visualizza** .
 
 5. Nella pagina iniziale fare clic sulla scheda **controllo** .
 
@@ -196,7 +198,7 @@ Per ulteriori informazioni su come salvare in modo permanente le impostazioni, v
 
 È possibile modificare questo controllo utente per salvare e recuperare un numero qualsiasi di impostazioni personalizzate utilizzando valori diversi di gestori eventi diversi per ottenere e impostare la `SettingsStore` Proprietà. Finché si usa un `propertyName` parametro diverso per ogni chiamata a <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A> , i valori non vengono sovrascritti tra loro nel registro di sistema.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:EnvDTE80.DTE2?displayProperty=fullName>
 - [Aggiunta di comandi di Visual Studio a una pagina iniziale](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

@@ -1,5 +1,7 @@
 ---
 title: Configurazione del progetto per l'output | Microsoft Docs
+description: Informazioni sui processi di compilazione supportati da ogni configurazione e sulle interfacce e sui metodi in base ai quali è possibile rendere disponibili gli elementi di output.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78b95457af4c5d806fdfcc20f49ac4e82df36488
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffe5cb6477808f892b8d36aa5fd616a5a0ea7969
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706661"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876324"
 ---
 # <a name="project-configuration-for-output"></a>Configurazione del progetto per l'output
 Ogni configurazione può supportare un set di processi di compilazione che generano elementi di output, ad esempio file eseguibili o file di risorse. Questi elementi di output sono privati per l'utente e possono essere inseriti in gruppi che collegano i tipi di output correlati, ad esempio i file eseguibili (con estensione exe, dll, lib) e i file di origine (file con estensione IDL, h).
@@ -43,7 +45,7 @@ Ogni configurazione può supportare un set di processi di compilazione che gener
 
  Per ulteriori informazioni, vedere l'implementazione di `IVsOutputGroup` nell'esempio di progetto personalizzato in [MPF per i progetti](https://github.com/tunnelvisionlabs/MPFProj10).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md)
 - [Configurazione del progetto per la compilazione](../../extensibility/internals/project-configuration-for-building.md)
 - [Oggetto di configurazione del progetto](../../extensibility/internals/project-configuration-object.md)

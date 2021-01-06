@@ -1,5 +1,7 @@
 ---
 title: Controllo del codice sorgente | Microsoft Docs
+description: Questi articoli illustrano le opzioni per implementare il controllo del codice sorgente come funzionalità integrata di Visual Studio, tramite un plug-in o un pacchetto VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ff7904e9abc3df8ed36f8c196ce4c1175b4d9af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33437994770ee78327d130f288d9d2e9689774fe
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704990"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876103"
 ---
 # <a name="source-control"></a>Controllo del codice sorgente
 In questa sezione vengono illustrate le opzioni per implementare il controllo del codice sorgente come funzionalità integrata di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , tramite un plug-in del controllo del codice sorgente o un VSPackage del controllo del codice sorgente.
@@ -25,7 +27,7 @@ In questa sezione vengono illustrate le opzioni per implementare il controllo de
 
  Vengono presentate le informazioni importanti necessarie per iniziare a utilizzare il controllo del codice sorgente.
 
-- [Panoramica](../../extensibility/internals/source-control-integration-overview.md)
+- [Overview](../../extensibility/internals/source-control-integration-overview.md)
 
  Panoramica delle due opzioni disponibili per l'implementazione del controllo del codice sorgente.
 

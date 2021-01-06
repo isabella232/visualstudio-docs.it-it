@@ -1,5 +1,7 @@
 ---
-title: Supporto degli strumenti per l'esplorazione di simboli | Microsoft Docs
+title: Supporto di Symbol-Browsing Tools | Microsoft Docs
+description: Visual Studio offre funzionalità di esplorazione simboli in Visual Studio. Informazioni su come estendere queste funzionalità con le librerie per i simboli nei componenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,17 +20,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4998e47ccd6f99df2710833c18975d57e3bb92f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0adf586831e21c2448931215d4ef4a89d16a63f8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704773"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876441"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Supporto degli strumenti di esplorazione dei simboli
 Gli strumenti **Visualizzatore oggetti**, **Visualizzazione classi**, **Visualizzatore chiamate** e **Trova simbolo** forniscono funzionalità di esplorazione dei simboli in Visual Studio. Questi strumenti visualizzano visualizzazioni ad albero gerarchico dei simboli e mostrano le relazioni tra i simboli nell'albero. I simboli possono rappresentare gli spazi dei nomi, gli oggetti, le classi, i membri della classe e altri elementi del linguaggio contenuti in diversi componenti. I componenti includono i progetti di Visual Studio, i componenti di .NET Framework esterni e le librerie di tipo (tlb). Per ulteriori informazioni, vedere [visualizzazione della struttura del codice](../../ide/viewing-the-structure-of-code.md).
 
-## <a name="symbol-browsing-libraries"></a>Librerie di esplorazione simboli
+## <a name="symbol-browsing-libraries"></a>Librerie di Symbol-Browsing
  In qualità di implementatore di linguaggi, è possibile estendere le funzionalità di esplorazione dei simboli di Visual Studio creando librerie che tengono traccia dei simboli nei componenti e forniscono gli elenchi di simboli al gestore oggetti di Visual Studio tramite un set di interfacce. Una libreria è descritta dall' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> interfaccia. Il gestore oggetti di Visual Studio risponde alle richieste di nuovi dati dagli strumenti di esplorazione dei simboli ottenendo i dati dalle librerie e organizzando il relativo. Successivamente, compila o aggiorna gli strumenti con i dati richiesti. Per ottenere un riferimento al gestore oggetti di Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2> , passare l' <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> ID del servizio al `GetService` metodo.
 
  Ogni libreria deve eseguire la registrazione con il gestore oggetti di Visual Studio, che raccoglie le informazioni su tutte le librerie. Per registrare una raccolta, chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A> metodo. A seconda dello strumento che avvia la richiesta, il gestore oggetti di Visual Studio trova la libreria appropriata e richiede i dati. I dati vengono trasmessi tra le librerie e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestione oggetti negli elenchi di simboli descritti dall' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaccia.
@@ -48,7 +50,7 @@ Gli strumenti **Visualizzatore oggetti**, **Visualizzazione classi**, **Visualiz
 > [!NOTE]
 > Per implementare un provider di simboli di codice nativo, usare le <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfacce e.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: Registrare una libreria con il gestore degli oggetti](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
 - [Procedura: Esporre gli elenchi dei simboli forniti dalla libreria al gestore degli oggetti](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
 - [Procedura: Identificare i simboli in una libreria](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

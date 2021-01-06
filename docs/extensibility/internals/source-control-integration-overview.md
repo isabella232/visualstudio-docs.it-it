@@ -1,5 +1,7 @@
 ---
 title: Panoramica dell'integrazione del controllo del codice sorgente | Microsoft Docs
+description: 'Informazioni sulle differenze tra le due modalità di integrazione del controllo del codice sorgente in Visual Studio: un plug-in del controllo del codice sorgente e un pacchetto VSPackage.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d80363286f5f0cac9a5ceb2e8ac9d20345df9e6f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bbd385c7089504949d2437091b0a2ea002fafdd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705115"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876012"
 ---
 # <a name="source-control-integration-overview"></a>Panoramica dell'integrazione del controllo del codice sorgente
 In questa sezione vengono confrontati i due modi per integrarsi nel controllo del codice sorgente di Visual Studio. un plug-in del controllo del codice sorgente e un VSPackage che fornisce una soluzione di controllo del codice sorgente ed evidenzia le nuove funzionalità del controllo del codice sorgente. Visual Studio consente il cambio manuale tra i pacchetti VSPackage del controllo del codice sorgente e i plug-in del controllo del codice sorgente, nonché il cambio automatico basato sulla soluzione.
@@ -73,7 +75,7 @@ In questa sezione vengono confrontati i due modi per integrarsi nel controllo de
 
 - Il pacchetto VSPackage non è confinato a un particolare modello di controllo del codice sorgente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Controllo del codice sorgente](../../extensibility/internals/source-control.md)
 - [Creazione di un plug-in del controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [Creazione di un pacchetto VSPackage di controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-vspackage.md)

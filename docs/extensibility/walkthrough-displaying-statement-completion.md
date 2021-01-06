@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: visualizzazione del completamento delle istruzioni | Microsoft Docs'
+description: Informazioni su come implementare il completamento delle istruzioni basato sul linguaggio per il contenuto non crittografato usando questa procedura dettagliata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,17 +15,17 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 472ff8c10e1346f25e7bc72ed5fd4ee9f31bbafa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d05d33074f48e59e365792fda63897b1d38cd585
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904785"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877156"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Procedura dettagliata: Visualizzare il completamento istruzioni
 È possibile implementare il completamento delle istruzioni basate sul linguaggio definendo gli identificatori per i quali si desidera fornire il completamento e quindi attivare una sessione di completamento. È possibile definire il completamento delle istruzioni nel contesto di un servizio di linguaggio, definire l'estensione del nome di file e il tipo di contenuto e quindi visualizzare il completamento solo per quel tipo. In alternativa, è possibile attivare il completamento per un tipo di contenuto esistente, ad esempio "testo normale". In questa procedura dettagliata viene illustrato come attivare il completamento delle istruzioni per il tipo di contenuto "testo normale", che è il tipo di contenuto dei file di testo. Il tipo di contenuto "Text" è il predecessore di tutti gli altri tipi di contenuto, inclusi il codice e i file XML.
 
- Il completamento delle istruzioni viene in genere attivato digitando determinati caratteri, ad esempio digitando l'inizio di un identificatore, ad esempio "using". Viene in genere rilasciata premendo la **barra spaziatrice**, la **scheda**o il tasto **invio** per eseguire il commit di una selezione. È possibile implementare le funzionalità di IntelliSense che vengono attivate quando si digita un carattere usando un gestore di comando per le sequenze di tasti ( <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia) e un provider del gestore che implementa l' <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interfaccia. Per creare l'origine di completamento, ovvero l'elenco di identificatori che partecipano al completamento, implementare l' <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interfaccia e un provider di origine di completamento ( <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interfaccia). I provider sono parti del componente Managed Extensibility Framework (MEF). Sono responsabili dell'esportazione delle classi di origine e del controller e dell'importazione di servizi e broker, ad esempio, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> che consente la navigazione nel buffer di testo e <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> , che attiva la sessione di completamento.
+ Il completamento delle istruzioni viene in genere attivato digitando determinati caratteri, ad esempio digitando l'inizio di un identificatore, ad esempio "using". Viene in genere rilasciata premendo la **barra spaziatrice**, la **scheda** o il tasto **invio** per eseguire il commit di una selezione. È possibile implementare le funzionalità di IntelliSense che vengono attivate quando si digita un carattere usando un gestore di comando per le sequenze di tasti ( <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia) e un provider del gestore che implementa l' <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interfaccia. Per creare l'origine di completamento, ovvero l'elenco di identificatori che partecipano al completamento, implementare l' <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interfaccia e un provider di origine di completamento ( <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interfaccia). I provider sono parti del componente Managed Extensibility Framework (MEF). Sono responsabili dell'esportazione delle classi di origine e del controller e dell'importazione di servizi e broker, ad esempio, <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> che consente la navigazione nel buffer di testo e <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> , che attiva la sessione di completamento.
 
  In questa procedura dettagliata viene illustrato come implementare il completamento delle istruzioni per un set hardcoded di identificatori. Nelle implementazioni complete, il servizio di linguaggio e la documentazione della lingua sono responsabili di fornire tale contenuto.
 
@@ -172,7 +174,7 @@ ms.locfileid: "85904785"
 
    - Consentire la scrittura del carattere nel buffer e quindi attivare o filtrare il completamento. I caratteri di stampa eseguono questa operazione.
 
-   - Eseguire il commit del completamento, ma non consentire la scrittura del carattere nel buffer. (Spazi vuoti, **Tab**e **invio** eseguire questa operazione quando viene visualizzata una sessione di completamento).
+   - Eseguire il commit del completamento, ma non consentire la scrittura del carattere nel buffer. (Spazi vuoti, **Tab** e **invio** eseguire questa operazione quando viene visualizzata una sessione di completamento).
 
    - Consente di passare il comando al gestore successivo. (Tutti gli altri comandi).
 
@@ -202,7 +204,7 @@ ms.locfileid: "85904785"
 
 3. Creare un file di testo e digitare il testo che include la parola "Add".
 
-4. Quando si digita prima "a" e quindi "d", viene visualizzato un elenco che contiene "addizione" e "adattamento". Si noti che è selezionata l'opzione aggiunta. Quando si digita un'altra "d", l'elenco deve contenere solo "addizione", che ora è selezionato. È possibile eseguire il commit di "addizione" premendo la **barra spaziatrice**, la **scheda**o il tasto **invio** oppure chiudere l'elenco digitando ESC o qualsiasi altra chiave.
+4. Quando si digita prima "a" e quindi "d", viene visualizzato un elenco che contiene "addizione" e "adattamento". Si noti che è selezionata l'opzione aggiunta. Quando si digita un'altra "d", l'elenco deve contenere solo "addizione", che ora è selezionato. È possibile eseguire il commit di "addizione" premendo la **barra spaziatrice**, la **scheda** o il tasto **invio** oppure chiudere l'elenco digitando ESC o qualsiasi altra chiave.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: collegare un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

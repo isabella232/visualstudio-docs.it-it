@@ -1,5 +1,7 @@
 ---
 title: Confrontare la cartella del progetto con l'archivio del controllo del codice sorgente | Microsoft Docs
+description: Nell'API del plug-in del controllo del codice sorgente, il confronto tra la cartella del progetto locale e il controllo del codice sorgente viene eseguito usando SccDirQueryInfo e SccDirDiff.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: facb3b656e0ac50b50fdb0291307aa2fe98b1df4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed69c6e503614cd1b2ed8e21716a5edcb4babd2b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706869"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877585"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Confronto facoltativo della cartella di progetto locale con l'archivio del controllo del codice sorgente
 Nell'API del plug-in del controllo del codice sorgente 1,2 il confronto tra la cartella del progetto locale e il controllo del codice sorgente viene eseguito usando le funzioni [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) e [SccDirDiff](../../extensibility/sccdirdiff-function.md).
@@ -38,5 +40,5 @@ Nell'API del plug-in del controllo del codice sorgente 1,2 il confronto tra la c
 > [!NOTE]
 > Questa funzione usa gli stessi flag di comando di [SccDiff](../../extensibility/sccdiff-function.md). Come provider del plug-in del controllo del codice sorgente, è possibile scegliere di non supportare l'operazione "diff veloce" per le directory.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Novità della versione 1.2 dell'API del plug-in del controllo del codice sorgente](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

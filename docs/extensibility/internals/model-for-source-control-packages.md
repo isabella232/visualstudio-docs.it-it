@@ -1,5 +1,7 @@
 ---
 title: Modello per i pacchetti del controllo del codice sorgente | Microsoft Docs
+description: Questo modello rappresenta un'implementazione del controllo del codice sorgente. In questo articolo vengono illustrati i nomi delle classi per semplificare la visualizzazione del modo in cui viene eseguito il controllo del codice sorgente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46845be1bc22a67d6703af12933945bdfcfa7f4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ece2a7df1aeb2ec44f7b21075d2945a93d51838
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707066"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876689"
 ---
 # <a name="model-for-source-control-packages"></a>Modello per i pacchetti del controllo del codice sorgente
 Il modello seguente rappresenta un esempio di implementazione del controllo del codice sorgente. Nel modello vengono visualizzate le interfacce che è necessario implementare e i servizi dell'ambiente che devono essere chiamati. Come tutti i servizi, si chiamano effettivamente i metodi di una particolare interfaccia ottenuti tramite il servizio. Vengono identificati i nomi delle classi per semplificare la visualizzazione del modo in cui viene eseguito il controllo del codice sorgente.
@@ -25,7 +27,7 @@ Il modello seguente rappresenta un esempio di implementazione del controllo del 
 ## <a name="interfaces"></a>Interfacce
  È possibile implementare il controllo del codice sorgente per i nuovi tipi di progetto in Visual Studio usando l'elenco di interfacce illustrato nella tabella seguente.
 
-|Interfaccia|Uso|
+|Interfaccia|Usa|
 |---------------|---------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Chiamato da progetti ed editor prima di salvare o modificare i file (Dirty). È possibile accedere a questa interfaccia tramite il <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> servizio.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Chiamato dai progetti per richiedere l'autorizzazione per aggiungere, rimuovere o rinominare un file o una directory. Questa interfaccia viene chiamata anche dai progetti per informare l'ambiente quando viene completata un'azione di aggiunta, rimozione o ridenominazione approvata. È possibile accedervi usando il <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> servizio.|
@@ -33,7 +35,7 @@ Il modello seguente rappresenta un esempio di implementazione del controllo del 
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Viene chiamato dai progetti per la registrazione con il pacchetto del controllo del codice sorgente e per ottenere informazioni sullo stato del controllo del codice sorgente. È possibile accedere a questa interfaccia tramite il <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> servizio.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Implementato dal progetto per rispondere alle richieste di controllo del codice sorgente per ottenere informazioni sui file e per ottenere le impostazioni di controllo del codice sorgente necessarie per il file di progetto.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>

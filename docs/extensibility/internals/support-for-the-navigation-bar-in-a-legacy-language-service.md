@@ -1,5 +1,6 @@
 ---
 title: Supporto della barra di spostamento in un servizio di linguaggio legacy
+description: Informazioni su come supportare la barra di spostamento in un servizio di linguaggio legacy. La barra di spostamento nella visualizzazione dell'editor consente di visualizzare i tipi e i membri del file.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0011e9dac5438715571d1df76ba379fb9ed122df
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 325789c3b7210c87d5c1b0414434af27c266c31c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036561"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876545"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Supporto per la barra di spostamento in un servizio di linguaggio legacy
 La barra di navigazione nella parte superiore della visualizzazione dell'editor consente di visualizzare i tipi e i membri del file. I tipi vengono visualizzati nell'elenco a discesa a sinistra e i membri vengono visualizzati nell'elenco a discesa a destra. Quando l'utente seleziona un tipo, il punto di inserimento viene inserito nella prima riga del tipo. Quando l'utente seleziona un membro, il punto di inserimento viene inserito nella definizione del membro. Le caselle di riepilogo a discesa vengono aggiornate in modo da riflettere la posizione corrente del punto di inserimento.

@@ -1,5 +1,7 @@
 ---
 title: Campi e interfacce della finestra Proprietà | Microsoft Docs
+description: Informazioni sulla selezione che determina quali informazioni vengono visualizzate nel Finestra Proprietà in base alla finestra con lo stato attivo nell'IDE di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9529708c781e7fdb04c3b4c5ee143b7605857e84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21bc3a7f1d46a1afe579a67afa09097fd04458ff
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706155"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875765"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Campi e interfacce della finestra Proprietà
 Il modello per la selezione per determinare quali informazioni vengono visualizzate nella finestra **Proprietà** è basato sulla finestra con lo stato attivo nell'IDE. Ogni finestra e oggetto all'interno della finestra selezionata può avere un oggetto contesto di selezione inserito nel contesto di selezione globale. L'ambiente aggiorna il contesto di selezione globale con i valori da una cornice della finestra quando tale finestra ha lo stato attivo. Quando lo stato attivo cambia, il contesto di selezione.
@@ -114,6 +116,6 @@ STDAPI DLLGetDocumentation
 
  Un altro modo per ottenere il nome e la descrizione localizzati per una proprietà è implementando <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A>. Per altre informazioni sull'implementazione di questo metodo, vedere [Properties Window Fields and Interfaces](../../extensibility/internals/properties-window-fields-and-interfaces.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Estensione delle proprietà](../../extensibility/internals/extending-properties.md)

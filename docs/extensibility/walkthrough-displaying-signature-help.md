@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: visualizzazione della Guida per le firme | Microsoft Docs'
+description: Per informazioni su come visualizzare la guida per la firma per il tipo di contenuto testo, usare questa procedura dettagliata. La guida alla firma Visualizza la firma di un metodo in una descrizione comando.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b88c8555904bb31c2804579459ad3096d640b0c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be324ab48d42e859678ccf01d8c75faae6cea381
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904810"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876246"
 ---
 # <a name="walkthrough-display-signature-help"></a>Procedura dettagliata: visualizzare la guida per la firma
 La guida per la firma (nota anche come *informazioni sul parametro*) Visualizza la firma di un metodo in una descrizione comando quando un utente digita il carattere iniziale dell'elenco di parametri, in genere una parentesi di apertura. Poiché un parametro e un separatore di parametro (in genere una virgola) sono tipizzati, la descrizione comando viene aggiornata per visualizzare il parametro successivo in grassetto. È possibile definire la guida per la firma nei modi seguenti: nel contesto di un servizio di linguaggio, definire l'estensione del nome di file e il tipo di contenuto e visualizzare la guida della firma solo per quel tipo o visualizzare la guida della firma per un tipo di contenuto esistente (ad esempio, "testo"). In questa procedura dettagliata viene illustrato come visualizzare la guida per la firma per il tipo di contenuto "Text".
@@ -244,5 +246,5 @@ La guida per la firma (nota anche come *informazioni sul parametro*) Visualizza 
 
 4. Dopo aver digitato la parentesi di apertura, viene visualizzata una descrizione comando che visualizza un elenco delle due firme per il `add()` metodo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: collegare un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

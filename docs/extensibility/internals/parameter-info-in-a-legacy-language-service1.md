@@ -1,5 +1,7 @@
 ---
 title: Informazioni sui parametri in un oggetto Service1 della lingua legacy | Microsoft Docs
+description: Informazioni su come implementare la descrizione comando di IntelliSense per informazioni sul parametro, che fornisce agli utenti gli hint in un servizio di linguaggio legacy.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f8e5664634d189e8463376761d8fb59543740df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cd49644e670df42f4630af987a5e9152b4f6c95
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238075"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876805"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-1"></a>Informazioni sui parametri in un servizio di linguaggio Legacy 1
 La descrizione comando informazioni parametri IntelliSense fornisce agli utenti suggerimenti sulla posizione in cui si trovano in un costrutto di linguaggio.

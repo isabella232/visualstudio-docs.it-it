@@ -1,5 +1,7 @@
 ---
 title: Scrittura nell'archivio impostazioni utente | Microsoft Docs
+description: Informazioni su come aggiungere il blocco note a Visual Studio come strumento esterno leggendo e scrivendo nell'archivio impostazioni utente usando questa procedura dettagliata.
+ms.custom: SEO-VS-2020
 ms.date: 05/23/2019
 ms.topic: how-to
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec4d9cdda975d0f80e9d8523ec18a19c24c9418a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55e17693bee1ced0354b21ee5cc736961a994c6f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906212"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876922"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Scrittura nell'archivio delle impostazioni utente
 Le impostazioni utente sono impostazioni scrivibili come quelle nella finestra di dialogo **Strumenti/Opzioni** , finestre proprietà e alcune altre finestre di dialogo. Le estensioni di Visual Studio possono usarle per archiviare piccole quantità di dati. Questa procedura dettagliata illustra come aggiungere il blocco note a Visual Studio come strumento esterno leggendo e scrivendo nell'archivio impostazioni utente.
@@ -104,6 +106,6 @@ Le impostazioni utente sono impostazioni scrivibili come quelle nella finestra d
 
 7. Compilare il codice e avviare il debug.
 
-8. Scegliere **richiama UserSettingsStoreCommand**dal menu **strumenti** . Il blocco note verrà aggiunto al menu **strumenti** .
+8. Scegliere **richiama UserSettingsStoreCommand** dal menu **strumenti** . Il blocco note verrà aggiunto al menu **strumenti** .
 
 9. A questo punto, il blocco note verrà visualizzato nel menu Strumenti/Opzioni e facendo clic su **blocco note** verrà visualizzata un'istanza del blocco note.

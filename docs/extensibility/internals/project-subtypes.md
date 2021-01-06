@@ -1,5 +1,7 @@
 ---
 title: Sottotipi di progetto | Microsoft Docs
+description: Informazioni su come i sottotipi di progetto consentono di personalizzare il comportamento dei sistemi di progetto di Visual Studio. I pacchetti VSPackage implementano sottotipi di progetto tramite l'aggregazione COM.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c528486db99ddf07b2a2d1e18dcee4fc46e8713b
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 05240ee72aef85e50d07c7a39df1c819f04933a2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426976"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876299"
 ---
 # <a name="project-subtypes"></a>Sottotipi di progetto
 I sottotipi di progetto consentono di personalizzare o insaporire il comportamento dei sistemi del progetto di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Le personalizzazioni includono il salvataggio di dati aggiuntivi nel file di progetto, l'aggiunta o il filtro di elementi nella finestra di dialogo **Aggiungi nuovo elemento** , il controllo della modalità di debug e distribuzione degli assembly e l'estensione della finestra di dialogo **pagine delle proprietà** del progetto. I pacchetti VSPackage implementano sottotipi di progetto tramite l'aggregazione COM.

@@ -1,5 +1,7 @@
 ---
 title: Priorità progetto | Microsoft Docs
+description: Per informazioni sullo schema di priorità usato dall'IDE di Visual Studio, determinare il progetto migliore per l'apertura di un elemento se l'elemento è un membro di più di un progetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a75c1c333d88e1bf5524281bee8b2a683ca6c98e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1389668bbcd1239fbb1ae0e865478bf0e0f6a7e8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706425"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877377"
 ---
 # <a name="project-priority"></a>Priorità di progetto
 Un elemento del progetto è in genere un membro di un solo progetto nella soluzione. Pertanto, l'IDE può determinare facilmente quale progetto viene utilizzato per aprire l'elemento. Tuttavia, se un elemento è un membro di più di un progetto, l'IDE usa uno schema di priorità per determinare il progetto migliore per l'apertura dell'elemento.
@@ -32,7 +34,7 @@ Un elemento del progetto è in genere un membro di un solo progetto nella soluzi
 
 - Al progetto che specifica la priorità più alta viene assegnato il contesto per l'apertura del documento. Se due progetti restituiscono valori di priorità uguali, è preferibile il progetto attivo. Se nessun progetto nella soluzione risponde che è in grado di aprire il documento, l'IDE inserisce il documento nel progetto di file esterni. Per altre informazioni, vedere [progetto di file esterni](../../extensibility/internals/miscellaneous-files-project.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Progetto di file esterni](../../extensibility/internals/miscellaneous-files-project.md)
 - [Procedura: Aprire gli editor per i documenti aperti](../../extensibility/how-to-open-editors-for-open-documents.md)
 - [Aggiunta di modelli di progetto e di elementi di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md)

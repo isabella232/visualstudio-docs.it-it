@@ -1,5 +1,7 @@
 ---
 title: Funzionalità VSPackage del controllo del codice sorgente | Microsoft Docs
+description: Informazioni sulle funzionalità di un pacchetto VSPackage del controllo del codice sorgente, inclusi i dettagli di registrazione/selezione e su alcune delle principali funzionalità correlate al controllo del codice sorgente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a01b9d8fbf5f8d0645b5245d21b05aba9e7dacea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8dd887488adc5813ad51c9fa2a25648e25ab4876
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705022"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876220"
 ---
 # <a name="source-control-vspackage-features"></a>Funzionalità dei pacchetti VSPackage di controllo del codice sorgente
-Questa sezione descrive le varie funzionalità di un pacchetto VSPackage del controllo del codice sorgente. Vengono descritti i dettagli relativi alla registrazione e alla selezione per un pacchetto VSPackage e vengono illustrate tre delle principali funzionalità correlate al controllo del codice sorgente: gestione degli eventi di tipo Query-Save (QEQS), sostituzione di glifi e interfaccia utente personalizzata per le funzioni di controllo del codice sorgente.
+Questa sezione descrive le varie funzionalità di un pacchetto VSPackage del controllo del codice sorgente. Vengono descritti i dettagli di registrazione e selezione per un pacchetto VSPackage e vengono illustrate tre delle principali funzionalità correlate al controllo del codice sorgente: gestione degli eventi Query-Edit Query-Save (QEQS), sostituzione di glifi e interfaccia utente personalizzata per le funzioni di controllo del codice sorgente.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Registrazione e selezione](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)
@@ -27,7 +29,7 @@ Questa sezione descrive le varie funzionalità di un pacchetto VSPackage del con
 
 - [Query Edit Query Save](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)
 
- Viene illustrato il ruolo degli eventi di salvataggio delle query con modifiche di query e il modo in cui vengono gestiti dal pacchetto VSPackage del controllo del codice sorgente.
+ Viene illustrato il ruolo degli eventi Query-Edit Query-Save e il modo in cui vengono gestiti dal pacchetto VSPackage del controllo del codice sorgente.
 
 - [Controllo dei glifi](../../extensibility/internals/glyph-control-source-control-vspackage.md)
 

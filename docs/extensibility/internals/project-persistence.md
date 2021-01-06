@@ -1,5 +1,7 @@
 ---
 title: Persistenza progetto | Microsoft Docs
+description: Informazioni sulla persistenza nella progettazione del progetto, incluso l'uso di IPersistFileFormat per la persistenza di oggetti di progetto sia file che non basati su file.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10a9cde91c0181fbfefbaa353c7c3702f4b36819
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6ffa60508eba02a4442bacb63b05abb39202ab9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706464"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877442"
 ---
 # <a name="project-persistence"></a>Salvataggio permanente dei progetti
 La persistenza è una considerazione della progettazione chiave per il progetto. La maggior parte dei progetti utilizza gli elementi del progetto che rappresentano i file; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta inoltre progetti i cui dati non sono basati su file. È necessario che i file di proprietà del progetto e il file di progetto siano salvati in permanenza. L'IDE indica al progetto di salvare se stesso o un elemento del progetto.
@@ -42,6 +44,6 @@ La persistenza è una considerazione della progettazione chiave per il progetto.
 
  I metodi sull' `IVsPersistHierarchyItem2` interfaccia vengono usati per determinare se un elemento può essere ricaricato e, se l'elemento può essere, per ricaricarlo. Inoltre, è <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> possibile implementare il metodo per fare in modo che gli elementi modificati vengano eliminati senza essere salvati.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Creazione di istanze di progetto tramite le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

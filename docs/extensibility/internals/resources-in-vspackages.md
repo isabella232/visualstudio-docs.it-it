@@ -1,5 +1,7 @@
 ---
 title: Risorse nei pacchetti VSPackage | Microsoft Docs
+description: Informazioni sui tipi di risorse localizzate che possono essere incorporati nei pacchetti VSPackage. È anche possibile incorporare risorse in DLL dell'interfaccia utente satellite native o dll satellite gestite.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 493e9834e3d7cf6d82cebb8dd93d5369678c7be0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2693d25e0b175a075bcc644077895076b75b7578
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705597"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875726"
 ---
 # <a name="resources-in-vspackages"></a>Risorse nei pacchetti VSPackage
 È possibile incorporare le risorse localizzate in DLL dell'interfaccia utente satellite nativa, dll satellite gestite o in un VSPackage gestito.
@@ -85,6 +87,6 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 
  Quando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] richiede una risorsa da un VSPackage dopo l'installazione, è probabile che il pacchetto sia già caricato e inizializzato, quindi la perdita di prestazioni è minima.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gestione dei pacchetti VSPackage](../../extensibility/managing-vspackages.md)
 - [Risorse localizzate in applicazioni MFC: dll satellite](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)

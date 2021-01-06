@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: implementazione di frammenti di codice | Microsoft Docs'
+description: È possibile creare frammenti di codice e includerli in un'estensione dell'editor. Informazioni su come creare/registrare frammenti di codice tramite questa procedura dettagliata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
@@ -11,17 +13,17 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: e06e97acc77b4701e02b0ca54de589830a768669
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a36590c0e56f1e1a2c01f8e084f0b95442607a5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904713"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877117"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Procedura dettagliata: implementare frammenti di codice
 È possibile creare frammenti di codice e includerli in un'estensione dell'editor in modo che gli utenti dell'estensione possano aggiungerli al proprio codice.
 
- Un frammento di codice è un frammento di codice o altro testo che può essere incorporato in un file. Per visualizzare tutti i frammenti di codice registrati per determinati linguaggi di programmazione, scegliere **Gestione frammenti di codice**dal menu **strumenti** . Per inserire un frammento di codice in un file, fare clic con il pulsante destro del mouse sul punto in cui si desidera il frammento, scegliere Inserisci frammento o **Racchiudi tra**, individuare il frammento desiderato, quindi fare doppio clic su di esso. Premere **Tab** o **MAIUSC** + **Tab** per modificare le parti pertinenti del frammento, quindi premere **invio** o **ESC** per accettarlo. Per altre informazioni, vedere [frammenti di codice](../ide/code-snippets.md).
+ Un frammento di codice è un frammento di codice o altro testo che può essere incorporato in un file. Per visualizzare tutti i frammenti di codice registrati per determinati linguaggi di programmazione, scegliere **Gestione frammenti di codice** dal menu **strumenti** . Per inserire un frammento di codice in un file, fare clic con il pulsante destro del mouse sul punto in cui si desidera il frammento, scegliere Inserisci frammento o **Racchiudi tra**, individuare il frammento desiderato, quindi fare doppio clic su di esso. Premere **Tab** o **MAIUSC** + **Tab** per modificare le parti pertinenti del frammento, quindi premere **invio** o **ESC** per accettarlo. Per altre informazioni, vedere [frammenti di codice](../ide/code-snippets.md).
 
  Un frammento di codice è contenuto in un file XML con estensione snippet *. Un frammento può contenere campi che vengono evidenziati dopo l'inserimento del frammento, in modo che l'utente possa trovarli e modificarli. Un file di frammento fornisce inoltre informazioni per **Gestione frammenti di codice** in modo che sia in grado di visualizzare il nome del frammento nella categoria corretta. Per informazioni sullo schema del frammento di [codice, vedere riferimenti allo schema dei frammenti di codice](../ide/code-snippets-schema-reference.md).
 

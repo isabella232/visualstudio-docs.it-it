@@ -1,5 +1,7 @@
 ---
 title: Supporto del controllo del codice sorgente | Microsoft Docs
+description: Informazioni su come Visual Studio supporta le estrazioni di file, archiviazioni e altre operazioni di controllo del codice sorgente per il progetto o l'editor.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84de3120783528d209b1475477aee5087edac42b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e722770ad1db4b85dbc2a5a8754d9158b6ee436
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704736"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876454"
 ---
 # <a name="supporting-source-control"></a>Supporto del controllo del codice sorgente
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta le estrazioni di file, le archiviazioni e altre operazioni di controllo del codice sorgente per il progetto o l'editor. Come client del controllo del codice sorgente, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è progettato per interagire con un pacchetto di controllo del codice sorgente, ad esempio [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] , che fornisce funzionalità di archiviazione, controllo delle versioni e controllo per un set di file definito in modo dinamico.

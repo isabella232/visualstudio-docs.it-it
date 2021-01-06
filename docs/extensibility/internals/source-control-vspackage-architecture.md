@@ -1,5 +1,7 @@
 ---
 title: Architettura VSPackage del controllo del codice sorgente | Microsoft Docs
+description: Informazioni sull'architettura di un pacchetto di controllo del codice sorgente, un pacchetto VSPackage che fornisce funzionalità a Visual Studio come servizio di controllo del codice sorgente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +12,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6e62aa9e2d725e982f0605e2721f0bfeb3cc5ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c03482ff489c356ddcbe28ccc26c69c5936be6c5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705075"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877676"
 ---
 # <a name="source-control-vspackage-architecture"></a>Architettura dei pacchetti VSPackage di controllo del codice sorgente
 Un pacchetto di controllo del codice sorgente è un VSPackage che usa i servizi [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] forniti dall'IDE. In restituzione, un pacchetto di controllo del codice sorgente fornisce le funzionalità come servizio di controllo del codice sorgente. Inoltre, un pacchetto di controllo del codice sorgente è un'alternativa più versatile rispetto a un plug-in del controllo del codice sorgente per l'integrazione del controllo del codice sorgente in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
  Un plug-in del controllo del codice sorgente che implementa l'API del plug-in del controllo del codice sorgente è rispettato da un contratto rigoroso. Ad esempio, un plug-in non può sostituire l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaccia utente predefinita. Inoltre, l'API del plug-in del controllo del codice sorgente non consente a un plug-in di implementare il proprio modello di controllo del codice sorgente. Un pacchetto di controllo del codice sorgente, tuttavia, si limita a entrambe le limitazioni. Un pacchetto di controllo del codice sorgente ha il controllo completo sull'esperienza del controllo del codice sorgente di un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utente. Inoltre, un pacchetto di controllo del codice sorgente può utilizzare la propria logica e il proprio modello di controllo del codice sorgente e può definire tutte le interfacce utente correlate al controllo del codice sorgente.
 
-## <a name="source-control-package-components"></a>Componenti del pacchetto di controllo del codice sorgente
+## <a name="source-control-package-components"></a>Componenti del pacchetto Source-Control
  Come illustrato nel diagramma dell'architettura, un [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] componente denominato stub del controllo del codice sorgente è un VSPackage che integra un pacchetto di controllo del codice sorgente con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
  Lo stub del controllo del codice sorgente gestisce le seguenti attività.
@@ -37,7 +39,7 @@ Un pacchetto di controllo del codice sorgente è un VSPackage che usa i servizi 
 
   Il pacchetto dell'adattatore del controllo del codice sorgente è un pacchetto di controllo del codice sorgente speciale [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornito da. Questo pacchetto è il componente centrale per supportare i plug-in del controllo del codice sorgente basati sull'API del plug-in del controllo del codice sorgente. Quando un plug-in del controllo del codice sorgente è il plug-in attivo, lo stub del controllo del codice sorgente invia gli eventi al pacchetto dell'adattatore del controllo del codice sorgente. Il pacchetto dell'adattatore del controllo del codice sorgente comunica a sua volta con il plug-in del controllo del codice sorgente tramite l'API del plug-in del controllo del codice sorgente e fornisce anche un'interfaccia utente predefinita comune per tutti i plug-in del controllo del codice sorgente.
 
-  Quando un pacchetto di controllo del codice sorgente è il pacchetto attivo, d'altra parte, lo stub del controllo del codice sorgente comunica direttamente con il pacchetto usando le interfacce del pacchetto del controllo del codice sorgente [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] . Il pacchetto del controllo del codice sorgente è responsabile dell'hosting della propria interfaccia utente del controllo del codice sorgente.
+  Quando un pacchetto di controllo del codice sorgente è il pacchetto attivo, d'altra parte, lo stub del controllo del codice sorgente comunica direttamente con il pacchetto usando le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] interfacce del pacchetto Source-Control. Il pacchetto del controllo del codice sorgente è responsabile dell'hosting della propria interfaccia utente del controllo del codice sorgente.
 
   ![Immagine dell'architettura di controllo del codice sorgente](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")
 
@@ -47,6 +49,6 @@ Un pacchetto di controllo del codice sorgente è un VSPackage che usa i servizi 
 
   La scrittura di un pacchetto di controllo del codice sorgente basato su VSPackage richiede un'esperienza di programmazione più avanzata rispetto alla scrittura di un plug-in basato su API del plug-in del controllo del codice sorgente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>
 - [Per iniziare](../../extensibility/internals/getting-started-with-source-control-vspackages.md)

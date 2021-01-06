@@ -1,5 +1,7 @@
 ---
 title: Registrazione e selezione (VSPackage del controllo del codice sorgente) | Microsoft Docs
+description: Informazioni su come registrare un pacchetto VSPackage del controllo del codice sorgente con Visual Studio e su come selezionare il pacchetto da caricare da più pacchetti del controllo del codice sorgente registrati.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 973eb19916a737dfa775fe79ee62cb3d11fe0123
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f0bd737eff52706cf73c9a1105b79e08c556f0
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705713"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877364"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registrazione e selezione (VSPackage di controllo del codice sorgente)
 Un VSPackage del controllo del codice sorgente deve essere registrato per esporlo a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Se è registrato più di un VSPackage del controllo del codice sorgente, l'utente può selezionare il VSPackage da caricare in momenti appropriati. Vedere [VSPackage](../../extensibility/internals/vspackages.md) per altre informazioni sui pacchetti VSPackage e su come registrarli.
@@ -24,7 +26,7 @@ Un VSPackage del controllo del codice sorgente deve essere registrato per esporl
 ## <a name="registering-a-source-control-package"></a>Registrazione di un pacchetto di controllo del codice sorgente
  Il pacchetto del controllo del codice sorgente viene registrato in modo che l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente possa trovarlo ed eseguire una query per le funzionalità supportate. Questo è conforme allo schema di caricamento ritardato in cui viene creata un'istanza di un pacchetto solo quando le funzionalità o i comandi sono necessari o sono richiesti in modo esplicito.
 
- I pacchetti VSPackage inseriscono informazioni in una chiave del registro di sistema specifica della versione, HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *x. Y*, dove *x* è il numero di versione principale e *Y* è il numero di versione secondario. Questa procedura consente di supportare l'installazione side-by-side di più versioni di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
+ I pacchetti VSPackage inseriscono informazioni in una chiave del registro di sistema specifica della versione, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *x. Y*, dove *x* è il numero di versione principale e *Y* è il numero di versione secondario. Questa procedura consente di supportare l'installazione side-by-side di più versioni di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
  L' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfaccia utente supporta la selezione tra più plug-in del controllo del codice sorgente installati (tramite il pacchetto di adattatore del controllo del codice sorgente) e i pacchetti VSPackage del controllo del codice sorgente. Può essere presente un solo plug-in del controllo del codice sorgente attivo o VSPackage alla volta. Tuttavia, come descritto di seguito, l'IDE consente il passaggio tra i plug-in del controllo del codice sorgente e i pacchetti VSPackage tramite un meccanismo automatico di scambio di pacchetti basato su soluzioni. Per abilitare questo meccanismo di selezione sono necessari alcuni requisiti per il pacchetto VSPackage del controllo del codice sorgente.
 
@@ -39,7 +41,7 @@ Un VSPackage del controllo del codice sorgente deve essere registrato per esporl
 
   Le seguenti voci del registro di sistema devono essere effettuate da un pacchetto VSPackage del controllo del codice sorgente:
 
-| Nome chiave | Voci |
+| Nome della chiave | Voci |
 | - | - |
 | `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\` | (impostazione predefinita) = rg_sz: {ID_SccProvider} |
 | `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\` | (impostazione predefinita) = rg_sz:\<Friendly name of Package><br /><br /> Service = rg_sz: {SID_SccPkgService} |
@@ -79,7 +81,7 @@ Un VSPackage del controllo del codice sorgente deve essere registrato per esporl
 
   Diversamente dalle versioni precedenti di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , un riavvio dell'IDE non è più l'unico modo per cambiare i pacchetti VSPackage del controllo del codice sorgente. La selezione del pacchetto VSPackage è automatica. Il cambio di pacchetti richiede privilegi utente di Windows (non amministratore o utente Power).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>
 - [Funzionalità](../../extensibility/internals/source-control-vspackage-features.md)
 - [Creazione di un plug-in del controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-plug-in.md)

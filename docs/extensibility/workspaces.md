@@ -1,5 +1,7 @@
 ---
 title: Aree di lavoro in Visual Studio | Microsoft Docs
+description: Informazioni su come Visual Studio usa un'area di lavoro per rappresentare una raccolta di file in una cartella aperta, inclusi i provider e i servizi dell'area di lavoro.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ed660a5f52aba548d087b28f7caea4d1966fe45
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952763"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876948"
 ---
 # <a name="workspaces"></a>Aree di lavoro
 
@@ -59,7 +61,7 @@ La potenza delle impostazioni dell'area di lavoro si centra intorno agli "ambiti
 1. Tutte le altre directory padre fino a includere la radice dell'area di lavoro.
 1. "Impostazioni globali", che si trova in una directory utente.
 
-Il risultato è un'istanza di <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings> . Questo oggetto include le impostazioni per un determinato tipo e può essere sottoposto a query per l'impostazione dei nomi di chiave archiviati come `string` . I metodi <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A> e i <xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions> metodi di estensione prevedono che il chiamante conosca il tipo del valore dell'impostazione richiesto. Poiché la maggior parte dei file di impostazioni viene salvata in modo permanente come file con _estensione JSON_ , molte chiamate utilizzeranno `string` `bool` `int` le matrici,, e di tali tipi. Sono supportati anche i tipi di oggetto. In questi casi, è possibile usare `IWorkspaceSettings` se stesso come argomento di tipo. Ad esempio:
+Il risultato è un'istanza di <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings> . Questo oggetto include le impostazioni per un determinato tipo e può essere sottoposto a query per l'impostazione dei nomi di chiave archiviati come `string` . I metodi <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A> e i <xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions> metodi di estensione prevedono che il chiamante conosca il tipo del valore dell'impostazione richiesto. Poiché la maggior parte dei file di impostazioni viene salvata in modo permanente come file con _estensione JSON_ , molte chiamate utilizzeranno `string` `bool` `int` le matrici,, e di tali tipi. Sono supportati anche i tipi di oggetto. In questi casi, è possibile usare `IWorkspaceSettings` se stesso come argomento di tipo. Esempio:
 
 ```json
 {
@@ -76,7 +78,7 @@ Il risultato è un'istanza di <xref:Microsoft.VisualStudio.Workspace.Settings.IW
 }
 ```
 
-Supponendo che queste impostazioni si trovino in un _VSWorkspaceSettings.js_utente, i dati sono accessibili come:
+Supponendo che queste impostazioni si trovino in un _VSWorkspaceSettings.js_ utente, i dati sono accessibili come:
 
 ```csharp
 using System.Collections.Generic;
@@ -179,13 +181,13 @@ L'estendibilità dell'area di lavoro è molto basata su MEF e gli errori di comp
 
 ::: moniker range="vs-2017"
 
-I dettagli dell'errore sono reperibili in _%localappdata%\microsoft\visualstudio\15.0_id \componentmodelcache\microsoft.VisualStudio.default.err_. Risolvere gli eventuali errori per i tipi implementati dall'estensione.
+I dettagli dell'errore sono reperibili in _%localappdata%\microsoft\visualstudio\ 15.0_Id \componentmodelcache\microsoft.VisualStudio.default.err_. Risolvere gli eventuali errori per i tipi implementati dall'estensione.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-I dettagli dell'errore sono reperibili in _%localappdata%\microsoft\visualstudio\16.0_id \componentmodelcache\microsoft.VisualStudio.default.err_. Risolvere gli eventuali errori per i tipi implementati dall'estensione.
+I dettagli dell'errore sono reperibili in _%localappdata%\microsoft\visualstudio\ 16.0_Id \componentmodelcache\microsoft.VisualStudio.default.err_. Risolvere gli eventuali errori per i tipi implementati dall'estensione.
 
 ::: moniker-end
 

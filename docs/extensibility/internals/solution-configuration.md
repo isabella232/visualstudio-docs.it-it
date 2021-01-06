@@ -1,5 +1,7 @@
 ---
 title: Configurazione della soluzione | Microsoft Docs
+description: Informazioni su come implementare le configurazioni della soluzione supportate dal tipo di progetto, che indirizzano il comportamento della chiave di avvio (F5) e dei comandi di compilazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c96b73747ef8b136a74a7256cde7fef8d1c42de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad298a44eedea0681a554add74bd67ed22cad41
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705382"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876028"
 ---
 # <a name="solution-configuration"></a>Configurazione soluzione
 Le configurazioni della soluzione archiviano le proprietà a livello di soluzione. Essi indirizzano il comportamento della chiave di **avvio** (F5) e dei comandi di **compilazione** . Per impostazione predefinita, questi comandi compilano e avviano la configurazione di debug. Entrambi i comandi vengono eseguiti nel contesto di una configurazione di soluzione. Ciò significa che l'utente può prevedere l'avvio di F5 e la compilazione di qualsiasi soluzione attiva configurata tramite le impostazioni. L'ambiente è progettato per ottimizzare le soluzioni anziché i progetti quando si tratta di creare ed eseguire.
@@ -45,7 +47,7 @@ Le configurazioni della soluzione archiviano le proprietà a livello di soluzion
 
    Se un progetto non supporta le piattaforme, la colonna della piattaforma per il progetto Visualizza None ed è disabilitata.
 
-- Compilare
+- Compilazione
 
    Specifica se il progetto viene compilato o meno dalla configurazione della soluzione corrente. I progetti non selezionati non vengono compilati quando vengono richiamati i comandi di compilazione a livello di soluzione nonostante le dipendenze del progetto in essi contenute. I progetti non selezionati per la compilazione sono ancora inclusi in debug, esecuzione, creazione di pacchetti e distribuzione della soluzione.
 
@@ -55,7 +57,7 @@ Le configurazioni della soluzione archiviano le proprietà a livello di soluzion
 
   Una volta aggiunta una nuova configurazione di soluzione, l'utente può selezionarla dall'elenco a discesa Configurazione soluzione sulla barra degli strumenti standard per compilare e/o avviare tale configurazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md)
 - [Configurazione del progetto per la compilazione](../../extensibility/internals/project-configuration-for-building.md)
 - [Oggetto di configurazione del progetto](../../extensibility/internals/project-configuration-object.md)

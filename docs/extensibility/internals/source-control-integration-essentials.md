@@ -1,5 +1,7 @@
 ---
 title: Concetti di base sull'integrazione del controllo del codice sorgente | Microsoft Docs
+description: 'Informazioni sui due tipi di integrazione del controllo del codice sorgente supportati da Visual Studio: un plug-in del controllo del codice sorgente e una soluzione di controllo del codice sorgente basata su VSPackage.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e56658d644720f1563d71d3d08bf35268119112f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4dd5186b20dfac4ad5a027e4519700ff8ac1f77
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705241"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876038"
 ---
 # <a name="source-control-integration-essentials"></a>Nozioni fondamentali sull'integrazione del controllo del codice sorgente
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta due tipi di integrazione del controllo del codice sorgente: un plug-in del controllo del codice sorgente che fornisce funzionalità di base e viene compilato tramite l'API del plug-in del controllo del codice sorgente (precedentemente nota come API MSSCCI) e una soluzione di integrazione del controllo del codice sorgente basata su VSPackage che fornisce funzionalità più affidabili.
@@ -50,7 +52,7 @@ ms.locfileid: "80705241"
 
    Per altre informazioni, vedere [creazione di un pacchetto VSPackage del controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-vspackage.md).
 
-## <a name="see-also"></a>Vedere anche
-- [Panoramica](../../extensibility/internals/source-control-integration-overview.md)
+## <a name="see-also"></a>Vedi anche
+- [Overview](../../extensibility/internals/source-control-integration-overview.md)
 - [Creazione di un plug-in del controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [Creazione di un pacchetto VSPackage di controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-vspackage.md)

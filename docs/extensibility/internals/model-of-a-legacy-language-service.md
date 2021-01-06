@@ -1,5 +1,7 @@
 ---
 title: Modello di un servizio di linguaggio legacy | Microsoft Docs
+description: Usare questo modello di un servizio di linguaggio minimo per l'editor principale di Visual Studio come guida per la creazione di un servizio di linguaggio personalizzato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f024a02641902843f673ce3ff8583a4bce3b135
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2928d3c09a54ea8e9548f7751381279f153643e5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707041"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876740"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modello di un servizio di linguaggio legacy
 Un servizio di linguaggio definisce gli elementi e le funzionalità per una lingua specifica e viene usato per fornire all'editor le informazioni specifiche di tale lingua. È ad esempio necessario che l'editor conosca gli elementi e le parole chiave del linguaggio per supportare la colorazione della sintassi.
@@ -47,5 +49,5 @@ Un servizio di linguaggio definisce gli elementi e le funzionalità per una ling
 | Gestione testo | Gestito dal <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> servizio, da cui si ottiene un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> puntatore | Componente che mantiene le informazioni comuni condivise da tutti i componenti descritti in precedenza. |
 | Servizio di linguaggio | Dipendente dall'implementazione; implementa <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | Oggetto che fornisce all'editor le informazioni specifiche della lingua, ad esempio l'evidenziazione della sintassi, il completamento delle istruzioni e la corrispondenza delle parentesi graffe. |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Dati documento e visualizzazione documento negli editor personalizzati](../../extensibility/document-data-and-document-view-in-custom-editors.md)

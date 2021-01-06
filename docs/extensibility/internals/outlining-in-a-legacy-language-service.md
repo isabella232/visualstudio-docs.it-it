@@ -1,5 +1,7 @@
 ---
 title: Struttura in un servizio di linguaggio legacy | Microsoft Docs
+description: Informazioni su come supportare la struttura tramite l'implementazione di aree nascoste in un servizio di linguaggio legacy.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be485a0e7406d49c4dcce77958c720e0b62504b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca457c32751fb1f9179a9c09b624c444efab627d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706807"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876831"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Struttura in un servizio di linguaggio legacy
 La struttura rende possibile la compressione di un programma complesso in una panoramica o una struttura. In C#, ad esempio, tutti i metodi possono essere compressi in una sola riga, mostrando solo la firma del metodo. Inoltre, le strutture e le classi possono essere compresse per visualizzare solo i nomi delle strutture e delle classi. All'interno di un singolo metodo, la logica complessa può essere compressa per mostrare il flusso generale mostrando solo la prima riga di istruzioni, ad esempio `foreach` , `if` e `while` .
@@ -117,6 +119,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzionalità dei servizi di linguaggio legacy](../../extensibility/internals/legacy-language-service-features1.md)
 - [Registrazione di un servizio di linguaggio legacy](../../extensibility/internals/registering-a-legacy-language-service1.md)

@@ -1,5 +1,7 @@
 ---
 title: Indicizzazione dell'area di lavoro in Visual Studio | Microsoft Docs
+description: Informazioni sull'indicizzazione dell'area di lavoro, ovvero la raccolta e l'archiviazione permanente dei dati per supportare le funzionalità avanzate dell'IDE per un'area di lavoro Apri cartella.
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf7df777d27003fa5763debc772a8804ec28ef5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b5c069ce3ae993f2d2371bffae3ac58b286fa70
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952706"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877052"
 ---
 # <a name="workspace-indexing"></a>Indicizzazione area di lavoro
 
@@ -22,7 +24,7 @@ In una soluzione, i sistemi di progetto sono responsabili di fornire funzionalit
 
 Sono disponibili tre tipi di dati indicizzati. Si noti che il tipo previsto da scanner di file è diverso dal tipo deserializzato dall'indice.
 
-|Dati|Tipo di scanner di file|Tipo di risultato query indice|Tipi correlati|
+|Data|Tipo di scanner di file|Tipo di risultato query indice|Tipi correlati|
 |--|--|--|--|
 |Riferimenti|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfo>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfoType>|
 |Simboli|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinition>|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinitionSearchResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.ISymbolService> deve essere usato al posto di `IIndexWorkspaceService` per le query|
