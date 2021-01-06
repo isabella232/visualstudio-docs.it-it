@@ -1,5 +1,6 @@
 ---
 title: Finestra di dialogo Opzioni messaggio | Microsoft Docs
+description: Specificare nelle opzioni del messaggio quali messaggi sono elencati nella visualizzazione messaggi e quali dati del messaggio visualizzare.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97704675e1135959744e60724e4e3381bccf2b30
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f066dd687f4bfbb6b286667abe0bb67224a7b763
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62931316"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903584"
 ---
 # <a name="message-options-dialog-box"></a>Finestra di dialogo Opzioni messaggio
 Utilizzare questa finestra di dialogo per selezionare i messaggi elencati nella [visualizzazione messaggi](../debugger/messages-view.md). Per visualizzare questa finestra di dialogo, scegliere **Registra messaggi** dal menu **Spy** .

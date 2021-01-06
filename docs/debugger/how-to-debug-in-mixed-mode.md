@@ -1,5 +1,7 @@
 ---
 title: Eseguire il debug in modalità mista | Microsoft Docs
+description: Vedere come abilitare il debug in modalità mista (codice gestito e nativo insieme) nelle pagine delle proprietà del progetto dell'app chiamante.
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2018
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb563b260175d3385288c4cb6f046af8526069cf
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 123fb61cb223d8db3c447f5925639df33a2b3e11
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852113"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903987"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Procedura: eseguire il debug in modalità mista (C#, C++, Visual Basic)
 
@@ -41,9 +43,9 @@ Se non si ha accesso a un progetto di app chiamante, è possibile eseguire il de
 
 ## <a name="enable-mixed-mode-debugging-for-a-native-calling-app"></a>Abilitare il debug in modalità mista per un'app chiamante nativa
 
-1. Selezionare il progetto C++ in **Esplora soluzioni** e fare clic sull'icona delle **Proprietà** , premere **ALT** + **invio**oppure fare clic con il pulsante destro del mouse e scegliere **Proprietà**.
+1. Selezionare il progetto C++ in **Esplora soluzioni** e fare clic sull'icona delle **Proprietà** , premere **ALT** + **invio** oppure fare clic con il pulsante destro del mouse e scegliere **Proprietà**.
 
-1. Nella finestra di dialogo ** \<Project> pagine delle proprietà** espandere **proprietà di configurazione**, quindi selezionare **debug**.
+1. Nella finestra di dialogo **\<Project> pagine delle proprietà** espandere **proprietà di configurazione**, quindi selezionare **debug**.
 
 1. Impostare **Tipo debugger** su **Misto** o **Automatico**.
 
@@ -53,7 +55,7 @@ Se non si ha accesso a un progetto di app chiamante, è possibile eseguire il de
 
 ## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>Abilitare il debug in modalità mista per un'app chiamante gestita
 
-1. Selezionare il progetto C# o Visual Basic in **Esplora soluzioni** e selezionare l'icona delle **Proprietà** , premere **ALT** + **invio**oppure fare clic con il pulsante destro del mouse e scegliere **Proprietà**.
+1. Selezionare il progetto C# o Visual Basic in **Esplora soluzioni** e selezionare l'icona delle **Proprietà** , premere **ALT** + **invio** oppure fare clic con il pulsante destro del mouse e scegliere **Proprietà**.
 
 1. Selezionare la scheda **debug** e quindi selezionare **Abilita il debug del codice nativo**.
 

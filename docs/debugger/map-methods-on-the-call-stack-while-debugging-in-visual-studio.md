@@ -1,5 +1,7 @@
 ---
 title: Creare una mappa visiva dello stack di chiamate | Microsoft Docs
+description: Creare una mappa codici per tracciare visivamente lo stack di chiamate durante il debug. Prendere nota sulla mappa per tenere traccia delle attività del codice, in modo da potersi concentrare sull'individuazione dei bug.
+ms.custom: SEO-VS-2020
 ms.date: 11/26/2018
 ms.topic: how-to
 f1_keywords:
@@ -29,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cf0cda942241ca77aa750624b6de25b5ae39391
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 965232f56fcd2bf0d459910e983fb10dcca7f96d
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348535"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903831"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Creare una mappa visiva dello stack di chiamate durante il debug (C#, Visual Basic, C++, JavaScript)
 
@@ -55,7 +57,7 @@ Ecco una rapida panoramica di una mappa del codice:
 
 1. In un progetto Visual Studio Enterprise C#, Visual Basic, C++ o JavaScript, avviare il debug selezionando **debug**  >  **Avvia debug** o premendo **F5**.
 
-1. Quando l'app passa alla modalità di interruzioni o si esegue un'istruzione in una funzione, selezionare **debug**  >  **mappa codice**oppure premere **CTRL** + **MAIUSC** + **`** .
+1. Quando l'app passa alla modalità di interruzioni o si esegue un'istruzione in una funzione, selezionare **debug**  >  **mappa codice** oppure premere **CTRL** + **MAIUSC** + **`** .
 
    Lo stack di chiamate corrente verrà visualizzato in arancione in una nuova mappa codici:
 
@@ -77,7 +79,7 @@ Per impostazione predefinita, nella mappa viene visualizzato solo il proprio cod
 - Fare clic con il pulsante destro del mouse nella finestra **stack di chiamate** e selezionare **Mostra codice esterno**:
 
   ![Visualizzare il codice esterno tramite la finestra Stack di chiamate](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
-- In alternativa, deselezionare **Abilita Just My Code** in **strumenti** di Visual Studio (o **debug**) **Options**>  >  **debug**opzioni:
+- In alternativa, deselezionare **Abilita Just My Code** in **strumenti** di Visual Studio (o **debug**) >  >  **debug** opzioni:
 
   ![Scegliere Mostra codice esterno nella finestra di dialogo Opzioni](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
 
@@ -115,7 +117,7 @@ Per arrestare la mappa aggiungendo automaticamente nuovi stack di chiamate, sele
 
 Ora che è disponibile una mappa, in C# o Visual Basic, è possibile aggiungere elementi come campi, proprietà e altri metodi, per tenere traccia di ciò che si sta verificando nel codice.
 
-Per passare alla definizione di un metodo nel codice, fare doppio clic sul metodo nella mappa oppure selezionarlo e premere **F12**oppure fare clic con il pulsante destro del mouse su di esso e scegliere **Vai a definizione**.
+Per passare alla definizione di un metodo nel codice, fare doppio clic sul metodo nella mappa oppure selezionarlo e premere **F12** oppure fare clic con il pulsante destro del mouse su di esso e scegliere **Vai a definizione**.
 
 ![Passare alla definizione del codice per un metodo nella mappa del codice](../debugger/media/debuggermap_gotocodedefinition.png "DebuggerMap_GoToCodeDefinition")
 

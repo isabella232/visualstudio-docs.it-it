@@ -1,5 +1,7 @@
 ---
 title: Griglia di visualizzazione delle proprietà | Microsoft Docs
+description: Informazioni sulla posizione in cui vengono trovati i campi dei nomi delle proprietà e dei valori delle proprietà nella griglia del Finestra Proprietà e su come utilizzare la griglia in estensione delle proprietà.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d094c32ba8a64fc636f3fb6dfb2944dc3955628a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 418501ada340614d084e9796a59a46f8612aa743
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706181"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878027"
 ---
 # <a name="properties-display-grid"></a>Griglia di visualizzazione delle proprietà
 
@@ -29,7 +31,7 @@ L'elenco a due colonne Mostra le proprietà indipendenti dalla configurazione ch
 
 2. Impostare il `pfHide` parametro in <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A> su `TRUE` .
 
-Per eseguire il push delle informazioni nella finestra **Proprietà** , l'IDE utilizza <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> viene chiamato da Vspackage per ogni finestra che contiene oggetti selezionabili con proprietà correlate da visualizzare nella finestra **Proprietà** . **Esplora soluzioni**l'implementazione delle <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> chiamate `GetProperty` utilizzando [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) nella gerarchia del progetto per acquisire gli oggetti esplorabili nella gerarchia.
+Per eseguire il push delle informazioni nella finestra **Proprietà** , l'IDE utilizza <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> viene chiamato da Vspackage per ogni finestra che contiene oggetti selezionabili con proprietà correlate da visualizzare nella finestra **Proprietà** . **Esplora soluzioni** l'implementazione delle <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> chiamate `GetProperty` utilizzando [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) nella gerarchia del progetto per acquisire gli oggetti esplorabili nella gerarchia.
 
 Se il pacchetto VSPackage non supporta [__VSHPROPID. VSHPROPID_BrowseObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>), l'IDE tenta di usare <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> usando il valore per [__VSHPROPID. VSHPROPID_SelContainer](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) che l'elemento o gli elementi della gerarchia forniscano.
 
@@ -55,6 +57,6 @@ Nella finestra **Proprietà** vengono visualizzati diversi tipi di campi a secon
 
 - Facendo clic sul pulsante con i puntini di sospensione (...) viene visualizzato un elenco di valori di proprietà da cui l'utente può selezionare, ad esempio una selezione colori o un elenco di tipi di carattere. <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder> fornisce questi valori.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Estendi proprietà](../../extensibility/internals/extending-properties.md)

@@ -1,5 +1,7 @@
 ---
 title: Migrazione di un servizio di linguaggio legacy | Microsoft Docs
+description: Per informazioni su come aggiornare un servizio di linguaggio alla versione più recente di Visual Studio, aggiornare il progetto e aggiungere un file source. Extension. vsixmanifest.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e2eff3f3a27b7d8a276c8ed776c1e11d5ce332e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ced200ff24b17f312e63642c8083f038a6fc6a4d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707105"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877832"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migrazione di un servizio di linguaggio legacy
 Per eseguire la migrazione di un servizio di linguaggio legacy a una versione successiva di Visual Studio, è possibile aggiornare il progetto e aggiungere un file source. Extension. vsixmanifest al progetto. Il servizio di linguaggio stesso continuerà a funzionare come prima, perché l'editor di Visual Studio lo adatta.
@@ -57,7 +59,7 @@ Per eseguire la migrazione di un servizio di linguaggio legacy a una versione su
 
     - Nella scheda **applicazione** impostare Framework di **destinazione** su **4.6.1**.
 
-    - Nella scheda **debug** , nella casella **Avvia programma esterno** , digitare ** \<Visual Studio installation path>\Common7\IDE\devenv.exe.**.
+    - Nella scheda **debug** , nella casella **Avvia programma esterno** , digitare **\<Visual Studio installation path>\Common7\IDE\devenv.exe.**.
 
          Nella casella **argomenti della riga di comando** Digitare/**rootsuffix exp**.
 
@@ -87,7 +89,7 @@ Per eseguire la migrazione di un servizio di linguaggio legacy a una versione su
 
     - Aggiungere il file al progetto.
 
-    - Nelle **Proprietà**del file impostare azione di **compilazione** su **nessuno**.
+    - Nelle **Proprietà** del file impostare azione di **compilazione** su **nessuno**.
 
     - Aprire il file con l' **Editor del manifesto VSIX**.
 
@@ -99,13 +101,13 @@ Per eseguire la migrazione di un servizio di linguaggio legacy a una versione su
 
     - **Descrizione**: servizio di linguaggio di espressioni regolari.
 
-    - In **Asset**fare clic **su nuovo**, selezionare il **tipo** in **Microsoft. VisualStudio. VSPackage**, impostare l' **origine** su **un progetto nella soluzione corrente**, quindi impostare il **progetto** su **RegExLangServ**.
+    - In **Asset** fare clic **su nuovo**, selezionare il **tipo** in **Microsoft. VisualStudio. VSPackage**, impostare l' **origine** su **un progetto nella soluzione corrente**, quindi impostare il **progetto** su **RegExLangServ**.
 
     - Salvare e chiudere il file.
 
-11. Compilare la soluzione. I file compilati vengono distribuiti in **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ \\ **.
+11. Compilare la soluzione. I file compilati vengono distribuiti in **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ \\**.
 
 12. Avviare il debug. È stata aperta una seconda istanza di Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estendibilità dei servizi di linguaggio legacy](../../extensibility/internals/legacy-language-service-extensibility.md)

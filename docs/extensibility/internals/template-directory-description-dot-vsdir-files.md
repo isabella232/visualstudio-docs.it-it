@@ -1,5 +1,7 @@
 ---
 title: Descrizione Directory modello (. File VSDIR) | Microsoft Docs
+description: Informazioni su come un file di descrizione della directory dei modelli consente all'IDE di Visual Studio di visualizzare le cartelle, i file con estensione vsz e i modelli associati al progetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16ba609d5b05d565a12b38bd19e9a777851ced5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edc4b4bcfe1ac1a85524517ba467e207a792e3cd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704693"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877728"
 ---
 # <a name="template-directory-description-vsdir-files"></a>File (con estensione vsdir) di descrizione della directory dei modelli
 Un file di descrizione della directory dei modelli (. vsdir) è un file di testo che consente all'Integrated Development Environment (IDE) di visualizzare le cartelle, i file con estensione vsz della procedura guidata e i file modello associati al progetto nelle finestre di dialogo. Il contenuto include un record per ogni file o cartella. Viene eseguito il merge di tutti i file con estensione VSDIR in un percorso a cui viene fatto riferimento, anche se in genere viene fornito un solo file con estensione VSDIR per descrivere più cartelle, procedure guidate o file di modello.
@@ -62,6 +64,6 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
 - Se si eliminano i file con estensione vsz, le cartelle o i file modello, è necessario rimuovere anche i record associati dal file VSDIR.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedure guidate](../../extensibility/internals/wizards.md)
 - [File (con estensione vsz) della procedura guidata](../../extensibility/internals/wizard-dot-vsz-file.md)

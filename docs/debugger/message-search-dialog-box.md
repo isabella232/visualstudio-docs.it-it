@@ -1,5 +1,7 @@
 ---
 title: Finestra di dialogo Ricerca messaggi | Microsoft Docs
+description: Utilizzare la ricerca messaggi per individuare e selezionare il nodo per un messaggio specifico nella visualizzazione messaggi. È possibile eseguire la ricerca per handle, tipo di messaggio e ID messaggio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fed7fe9bf9e10bf893159a11d28f991a255791c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d100b36ff706752f1855939d4c45b5b7793ccfa
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62931289"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903051"
 ---
 # <a name="message-search-dialog-box"></a>Finestra di dialogo Ricerca messaggi
 Utilizzare questa finestra di dialogo per individuare e selezionare il nodo di un messaggio specifico nella [visualizzazione messaggi](../debugger/messages-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo in una finestra Visualizzazione messaggi. Scegliere **Trova messaggio** dal menu **Cerca** .

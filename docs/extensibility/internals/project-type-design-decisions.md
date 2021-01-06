@@ -1,5 +1,7 @@
 ---
 title: Decisioni di progettazione del tipo di progetto | Microsoft Docs
+description: Per informazioni sull'elemento, sulla persistenza dei file di progetto e sulle decisioni di progettazione del meccanico di impegno, vedere prima di estendere Visual Studio creando un nuovo tipo di progetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e33ac1c4168593b881f799dfdfb94005fb55fc1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab29fbe79b474aa7b640faf81de812b7571de861
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706366"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877797"
 ---
 # <a name="project-type-design-decisions"></a>Decisioni di progettazione relative al tipo di progetto
 Prima di creare un nuovo tipo di progetto, è necessario prendere alcune decisioni di progettazione per il tipo di progetto. È necessario decidere quali tipi di elementi saranno contenuti nei progetti, come verranno salvati in modo permanente i file di progetto e il modello di impegno che verrà usato.
@@ -56,7 +58,7 @@ Prima di creare un nuovo tipo di progetto, è necessario prendere alcune decisio
 
  Quando gli oggetti dati vengono aperti usando la modalità transazionale, le modifiche vengono salvate in un percorso temporaneo in memoria e non vengono salvate fino a quando l'utente sceglie di salvare il file manualmente. A questo punto, tutte le modifiche devono essere eseguite insieme o non verrà apportata alcuna modifica.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Apertura e salvataggio di elementi di progetto](../../extensibility/internals/opening-and-saving-project-items.md)
 - [Salvataggio permanente dei progetti](../../extensibility/internals/project-persistence.md)

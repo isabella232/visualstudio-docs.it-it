@@ -1,6 +1,7 @@
 ---
 title: Comandi della console JavaScript | Microsoft Docs
-ms.custom: ''
+description: Usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript. Questo articolo si applica alle app Node.js, alle app UWP e alle app Apache Cordova.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -14,18 +15,18 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 301461caa15321b5a77f42872c93f52f3ec2c9c1
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 2877b3ca9fb644ae4dae1af27e79e6ee52423b97
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211274"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903909"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandi della console JavaScript in Visual Studio
 
 È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come usare questa finestra, vedere [Guida introduttiva: debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true). Le informazioni contenute in questo argomento sono valide per Node.js app, app UWP e app create con Strumenti di Visual Studio per Apache Cordova.
 
-Se la finestra della console JavaScript è chiusa, è possibile aprirla durante il debug in Visual Studio scegliendo **debug**  >  **Windows**  >  **console JavaScript**di Windows.
+Se la finestra della console JavaScript è chiusa, è possibile aprirla durante il debug in Visual Studio scegliendo **debug**  >    >  **console JavaScript** di Windows.
 
 > [!NOTE]
 > Se la finestra non è disponibile durante una sessione di debug, assicurarsi che il tipo di debugger sia impostato su **Script** nelle proprietà di debug per il progetto.
@@ -87,7 +88,7 @@ if (console && console.log) {
 ```
 
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Esame degli oggetti nella finestra della console JavaScript
-È possibile interagire con qualsiasi oggetto all'interno dell'ambito quando si usa la finestra della console JavaScript. Per controllare un oggetto esterno all'ambito nella finestra della console, usare `console.log` , `console.dir`o altri comandi del codice. In alternativa, è possibile interagire con l'oggetto dalla finestra della console mentre si trova nell'ambito impostando un punto di interruzione nel codice (punto di interruzione Inserisci punto**di interruzione**  >  **Insert Breakpoint**).
+È possibile interagire con qualsiasi oggetto all'interno dell'ambito quando si usa la finestra della console JavaScript. Per controllare un oggetto esterno all'ambito nella finestra della console, usare `console.log` , `console.dir`o altri comandi del codice. In alternativa, è possibile interagire con l'oggetto dalla finestra della console mentre si trova nell'ambito impostando un punto di interruzione nel codice (punto di interruzione Inserisci punto **di interruzione**  >  ).
 
 ## <a name="formatting-consolelog-output"></a><a name="ConsoleLog"></a> Formattazione dell'output di console.log
 Se si passano più argomenti a `console.log`, la console li considererà come una matrice e concatenerà l'output.

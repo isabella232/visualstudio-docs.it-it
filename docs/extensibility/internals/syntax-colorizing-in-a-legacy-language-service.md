@@ -1,5 +1,7 @@
 ---
 title: Colorazione della sintassi in un servizio di linguaggio legacy | Microsoft Docs
+description: Informazioni su come supportare la colorazione della sintassi in un servizio di linguaggio legacy fornendo un parser o uno scanner in grado di identificare i tipi di elementi o token lessicali.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02723a09254255b98291cb921ae5ec091d8b9859
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c51885e593fabffab80d11c930100f3cc719dff8
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704700"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877754"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Colorazione della sintassi in un servizio di linguaggio legacy
 La colorazione della sintassi è una funzionalità che determina la visualizzazione di elementi diversi di un linguaggio di programmazione in un file di origine con colori e stili diversi. Per supportare questa funzionalità, è necessario fornire un parser o uno scanner in grado di identificare i tipi di elementi o token lessicali nel file. Molti linguaggi distinguono le parole chiave, i delimitatori, ad esempio le parentesi o le parentesi graffe, e i commenti per colorarli in modi diversi.
@@ -144,7 +146,7 @@ namespace TestLanguagePackage
         }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzionalità dei servizi di linguaggio legacy](../../extensibility/internals/legacy-language-service-features1.md)
 - [Scanner e parser dei servizi di linguaggio legacy](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
 - [Registrazione di un servizio di linguaggio legacy](../../extensibility/internals/registering-a-legacy-language-service1.md)

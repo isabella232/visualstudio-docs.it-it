@@ -1,5 +1,7 @@
 ---
 title: Trovare il processo ASP.NET in esecuzione | Microsoft Docs
+description: Informazioni su come eseguire il debug di un'app ASP.NET in esecuzione. Il debugger di Visual Studio viene collegato al processo ASP.NET in base al nome.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2018
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: c14067d58289dd0b41fa526937a0553c10934ea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07d692dac1b5770cdee4682af5184649471c2828
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349607"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903441"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>Trovare il nome del processo ASP.NET
 

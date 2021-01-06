@@ -1,5 +1,7 @@
 ---
 title: 'Area di test 2: ottenere dal controllo del codice sorgente | Microsoft Docs'
+description: Questa area di test include i test case per il recupero di elementi dall'archivio versioni con Get. Questi test case possono essere applicati sia ai progetti locali che ai progetti Web.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c213e2774730596db8b8e4f2d0691472495222e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98ed765f78a9e7330e5e1d3864c8a91b63239a3f
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704595"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877702"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Area di test 2: Caricare dal controllo del codice sorgente
 Questa area di test include i test case per il recupero di elementi dall'archivio delle versioni tramite il comando Get. Questi test case possono essere applicati sia ai progetti locali che ai progetti Web.
@@ -44,7 +46,7 @@ Questa area di test include i test case per il recupero di elementi dall'archivi
 
 ## <a name="test-cases"></a>Test case
 
-|Action|Passi del test|Risultati previsti da verificare|
+|Azione|Passi del test|Risultati previsti da verificare|
 |------------|----------------|--------------------------------|
 |Ottenere la versione più recente di un file che non esiste localmente|1. creare un progetto.<br />2. aggiungere un elemento al progetto.<br />3. Inserire il progetto nel controllo del codice sorgente.<br />4. eliminare la copia locale dell'elemento.<br />5. ottenere la versione più recente dell'elemento (menu di scelta rapida, **ottenere la versione più recente**).|Il file di elemento viene recuperato localmente.|
 |Ottenere un file che non esiste localmente|1. creare un progetto.<br />2. aggiungere un elemento al progetto.<br />3. Inserire il progetto nel controllo del codice sorgente.<br />4. eliminare la copia locale dell'elemento.<br />5. ottenere l'elemento (**file**, **controllo del codice sorgente**, **Get** \<item> ).|Il file di elemento viene recuperato localmente.|
@@ -53,5 +55,5 @@ Questa area di test include i test case per il recupero di elementi dall'archivi
 |Ottenere un file esistente localmente, uguale alla versione più recente nell'archivio delle versioni|1. creare un nuovo progetto.<br />2. aggiungere un elemento al progetto.<br />3. Inserire il progetto nel controllo del codice sorgente.<br />4. ottenere l'elemento (**file**, **controllo del codice sorgente**, **Get** \<item> ).|Il file locale è invariato.|
 |Ottenere una soluzione con un progetto|1. creare una soluzione con un progetto.<br />2. Inserire la soluzione nel controllo del codice sorgente.<br />3. eliminare tutti i file di progetto in locale.<br />4. ottenere la soluzione (**file**, **controllo del codice sorgente**, **Get**).|Tutti i file eliminati vengono ripristinati localmente.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Guida per il test dei plug-in del controllo del codice sorgente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

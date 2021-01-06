@@ -1,5 +1,7 @@
 ---
 title: Visualizzare le proprietà del messaggio | Microsoft Docs
+description: Visualizzazione messaggi consente di visualizzare il flusso di messaggi di una finestra, un processo o un thread. Informazioni su come visualizzare le proprietà di un messaggio visualizzato nella visualizzazione messaggi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35ca92905a100de09753b72aa8e913343c0729bf
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 009bada1354739c25aceab4cd19de77e255e9ad0
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852348"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903324"
 ---
 # <a name="how-to-display-message-properties"></a>Procedura: visualizzare le proprietà del messaggio
 Per ulteriori informazioni su un messaggio elencato nella [visualizzazione messaggi](../debugger/messages-view.md), utilizzare la finestra di [dialogo Proprietà messaggio](../debugger/message-properties-dialog-box.md).

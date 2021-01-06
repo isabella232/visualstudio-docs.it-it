@@ -1,5 +1,7 @@
 ---
 title: Pubblica estensione con riga di comando
+description: Informazioni su come usare la riga di comando per pubblicare un'estensione per la Visual Studio Marketplace, che consente agli sviluppatori di individuare le estensioni nuove e aggiornate.
+ms.custom: SEO-VS-2020
 ms.date: 07/12/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5108f4afa382c00376424432d2086f0494e34a03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4132d878ff1ec7689be890446a1849577fafd30
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904678"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877923"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Procedura dettagliata: pubblicazione di un'estensione di Visual Studio tramite la riga di comando
 
@@ -24,7 +26,7 @@ Questa procedura dettagliata illustra come pubblicare un'estensione di Visual St
 
 VsixPublisher.exe è lo strumento da riga di comando per la pubblicazione di estensioni di Visual Studio nel Marketplace. È possibile accedervi da $ {VSInstallDir} \VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe. I comandi disponibili in questo strumento sono: **Publish**, **createPublisher**, **deletePublisher**, **deleteExtension**, **login**, **Logout**.
 
-## <a name="commands"></a>Comandi:
+## <a name="commands"></a>Comandi
 
 ### <a name="publish"></a>Pubblica
 
@@ -262,11 +264,11 @@ In questo caso, verrà usata un'estensione VSPackage predefinita, ma gli stessi 
 
 Ora che l'estensione è pubblicata, installarla in Visual Studio ed eseguirne il test.
 
-1. In Visual Studio scegliere **estensioni e aggiornamenti**dal menu **strumenti** .
+1. In Visual Studio scegliere **estensioni e aggiornamenti** dal menu **strumenti** .
 
 2. Fare clic su **online** e quindi cercare TestPublish.
 
-3. Fare clic su **Scarica**. L'estensione verrà quindi pianificata per l'installazione.
+3. Fare clic su **Download**. L'estensione verrà quindi pianificata per l'installazione.
 
 4. Per completare l'installazione, chiudere tutte le istanze di Visual Studio.
 
@@ -290,7 +292,7 @@ Ora che l'estensione è pubblicata, installarla in Visual Studio ed eseguirne il
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Per rimuovere l'estensione dal computer
 
-1. In Visual Studio scegliere **estensioni e aggiornamenti**dal menu **strumenti** .
+1. In Visual Studio scegliere **estensioni e aggiornamenti** dal menu **strumenti** .
 
 2. Selezionare "MyVsixExtension" e quindi fare clic su **Disinstalla**. L'estensione verrà quindi pianificata per la disinstallazione.
 

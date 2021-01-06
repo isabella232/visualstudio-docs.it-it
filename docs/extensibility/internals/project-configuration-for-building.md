@@ -1,5 +1,7 @@
 ---
 title: Configurazione del progetto per la compilazione | Microsoft Docs
+description: Informazioni su come un elenco di configurazioni della soluzione per una particolare soluzione viene gestito dalla finestra di dialogo Configurazioni soluzione in un nuovo tipo di progetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd084053e06206a99298b234b4d51c8504119a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7768de1b57142e201c4108f5ef0c0768c57a8639
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706736"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878001"
 ---
 # <a name="project-configuration-for-building"></a>Configurazione del progetto per la compilazione
 L'elenco delle configurazioni della soluzione per una determinata soluzione è gestito dalla finestra di dialogo Configurazioni soluzione.
@@ -55,7 +57,7 @@ L'elenco delle configurazioni della soluzione per una determinata soluzione è g
 
  Inoltre, è possibile specificare una griglia nella finestra Dipendenze progetto. Per altre informazioni, vedere [griglia di visualizzazione delle proprietà](../../extensibility/internals/properties-display-grid.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md)
 - [Configurazione del progetto per la gestione della distribuzione](../../extensibility/internals/project-configuration-for-managing-deployment.md)
 - [Configurazione del progetto per l'output](../../extensibility/internals/project-configuration-for-output.md)

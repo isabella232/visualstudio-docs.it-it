@@ -1,5 +1,7 @@
 ---
 title: Debug del codice ottimizzato | Microsoft Docs
+description: Se possibile, non creare una destinazione di rilascio Win32 fino a quando non viene eseguito il debug del programma, perché l'ottimizzazione può complicare il debug. Vedere i dettagli in questo articolo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da0a9c40a2c4887b2798e908ad0c12d6c9a85b32
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 971ceb59a17788076a1188e42d834f7b4bd704cc
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852387"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903181"
 ---
 # <a name="how-to-debug-optimized-code"></a>Procedura: eseguire il debug di codice ottimizzato
 
@@ -58,7 +60,7 @@ ms.locfileid: "90852387"
 
 ## <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>Per attivare l'ottimizzazione nella configurazione di una build di debug
 
-1. Quando si crea un nuovo progetto, selezionare la destinazione `Win32 Debug`. Usare la destinazione `Win32``Debug` finché non viene completato il debug del programma e non si è pronti a compilare una destinazione `Win32 Release`. Il compilatore non ottimizza la destinazione `Win32 Debug`.
+1. Quando si crea un nuovo progetto, selezionare la destinazione `Win32 Debug`. Usare la destinazione `Win32 Debug` finché non viene completato il debug del programma e non si è pronti a compilare una destinazione `Win32 Release`. Il compilatore non ottimizza la destinazione `Win32 Debug`.
 
 2. Selezionare il progetto in Esplora soluzioni.
 

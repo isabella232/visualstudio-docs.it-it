@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: ba95e15be083e0bb1274e01a986f4139d9443240
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 1f8cbe1629aab6a177a46888fe25cf8e3565d91d
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341793"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903753"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Introduzione a Visual Studio e Unity
 
@@ -34,7 +34,7 @@ Visual Studio Tools per Unity è un'estensione gratuita che fornisce supporto pe
 > [!NOTE]
 > Questa guida all'installazione è relativa a Visual Studio. Se si usa Visual Studio Code, vedere la [documentazione relativa allo sviluppo Unity con vs code](https://code.visualstudio.com/docs/other/unity).
 
-1. [Scaricare il programma di installazione di Visual Studio](/docs/install/install-visual-studio.md)oppure eseguirlo se è già installato.
+1. [Scaricare il programma di installazione di Visual Studio](/visualstudio/docs/install/install-visual-studio.md)oppure eseguirlo se è già installato.
 2. Fare clic su **Modifica** (se già installato) o **Installa** (per le nuove installazioni) per la versione desiderata di Visual Studio.
 3. Nella scheda **carichi di lavoro** scorrere fino alla sezione **Gaming** e selezionare il carico di lavoro **sviluppo di giochi con Unity** .
 
@@ -84,8 +84,8 @@ Per impostazione predefinita, Unity deve essere già configurato per l'uso di Vi
 
     ![Menu di preferenza strumenti esterni nell'editor di Unity in Windows](../media/vs/preferences-external-tools.png)
 
-4. Se è stato selezionato **Browse** , aprire la directory **Common7/IDE** all'interno della directory di installazione di Visual Studio e selezionare **devenv.exe**. Quindi, fare clic su **Apri**.
-5. Dopo aver selezionato Visual Studio nell'elenco **External Script Editor** , verificare che la casella di controllo **Editor Attaching** sia selezionata.
+4. Se è stato selezionato **Browse**, aprire la directory **Common7/IDE** all'interno della directory di installazione di Visual Studio e selezionare **devenv.exe**. Quindi, fare clic su **Apri**.
+5. Dopo aver selezionato Visual Studio nell'elenco **External Script Editor**, verificare che la casella di controllo **Editor Attaching** sia selezionata.
 6. Chiudere la finestra di dialogo **Preferences** (Preferenze) per completare il processo di configurazione.
 
 :::zone-end

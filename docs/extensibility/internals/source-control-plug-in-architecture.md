@@ -1,5 +1,7 @@
 ---
 title: Architettura del plug-in del controllo del codice sorgente | Microsoft Docs
+description: Informazioni su come aggiungere il supporto del controllo del codice sorgente all'IDE di Visual Studio tramite l'implementazione e il collegamento di un plug-in del controllo del codice sorgente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f549ad2c4ee456860a08fbf20ccda813934a8582
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e154e91ce552df9e54d45ea9210a0679edae5f28
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705104"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878066"
 ---
 # <a name="source-control-plug-in-architecture"></a>Architettura dei plug-in del controllo del codice sorgente
-È possibile aggiungere il supporto del controllo del codice sorgente all' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE) tramite l'implementazione e il collegamento di un plug-in del controllo del codice sorgente. L'IDE si connette al plug-in del controllo del codice sorgente tramite l'API del plug-in del controllo del codice sorgente ben definito. L'IDE espone le funzionalità di controllo della versione del sistema di controllo del codice sorgente fornendo un'interfaccia utente (UI) composta da barre degli strumenti e comandi di menu. Il plug-in del controllo del codice sorgente implementa la funzionalità del controllo del codice sorgente.
+È possibile aggiungere il supporto del controllo del codice sorgente all' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE) tramite l'implementazione e il collegamento di un plug-in del controllo del codice sorgente. L'IDE si connette al plug-in del controllo del codice sorgente tramite il controllo del codice sorgente ben definito Plug-In API. L'IDE espone le funzionalità di controllo della versione del sistema di controllo del codice sorgente fornendo un'interfaccia utente (UI) composta da barre degli strumenti e comandi di menu. Il plug-in del controllo del codice sorgente implementa la funzionalità del controllo del codice sorgente.
 
 ## <a name="source-control-plug-in-resources"></a>Risorse del plug-in del controllo del codice sorgente
  Il plug-in del controllo del codice sorgente fornisce risorse che consentono di creare e connettere l'applicazione di controllo delle versioni all' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Il plug-in del controllo del codice sorgente contiene la specifica API che deve essere implementata da un plug-in del controllo del codice sorgente, in modo che possa essere integrato nell' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Contiene anche un esempio di codice (scritto in C++) che implementa un plug-in del controllo del codice sorgente che illustra l'implementazione di funzioni essenziali conformi all'API del plug-in del controllo del codice sorgente.
@@ -36,7 +38,7 @@ ms.locfileid: "80705104"
 
  Un plug-in del controllo del codice sorgente non può apportare modifiche alla [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell e, di conseguenza, al pacchetto di adattatori del controllo del codice sorgente o all'interfaccia utente del controllo del codice sorgente fornita dall'IDE. Deve sfruttare al massimo la flessibilità offerta mediante l'implementazione delle varie funzioni API del plug-in del controllo del codice sorgente che contribuiscono a un'esperienza integrata per l'utente finale. La sezione di riferimento della documentazione dell'API del plug-in del controllo del codice sorgente include informazioni per alcune funzionalità avanzate del plug-in del controllo del codice sorgente. Per sfruttare queste funzionalità, il plug-in del controllo del codice sorgente deve dichiarare le sue funzionalità avanzate nell'IDE durante l'inizializzazione e deve implementare funzioni avanzate specifiche per ogni funzionalità.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Plug-in del controllo del codice sorgente](../../extensibility/source-control-plug-ins.md)
 - [Glossario](../../extensibility/source-control-plug-in-glossary.md)
 - [Creazione di un plug-in del controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-plug-in.md)

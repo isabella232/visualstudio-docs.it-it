@@ -1,5 +1,7 @@
 ---
 title: Pulsanti della finestra Proprietà | Microsoft Docs
+description: Informazioni sui pulsanti visualizzati per impostazione predefinita sulla barra degli strumenti per il Finestra Proprietà e sull'implementazione dei pulsanti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aaa4db159ccb0ecf3d0e9c9243e23fcd0dacc455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e99c362904bc40a2937c030f1ee2bb1c4d32a113
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706178"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878014"
 ---
 # <a name="properties-window-buttons"></a>Pulsanti della finestra Proprietà
-A seconda del linguaggio di sviluppo e del tipo di prodotto, per impostazione predefinita alcuni pulsanti vengono visualizzati nella barra degli strumenti della finestra **Proprietà** . In tutti i casi, vengono visualizzati i pulsanti **categorizzati**, in **ordine alfabetico**, **proprietà**e **pagine delle proprietà** . In Visual C# e Visual Basic viene visualizzato anche il pulsante **eventi** . In alcuni progetti di Visual C++, vengono visualizzati i **messaggi di VC + +** e i pulsanti delle **sostituzioni VC** . Per gli altri tipi di progetto possono essere visualizzati pulsanti aggiuntivi. Per ulteriori informazioni sui pulsanti nella finestra **Proprietà** , vedere [finestra Proprietà](../../ide/reference/properties-window.md).
+A seconda del linguaggio di sviluppo e del tipo di prodotto, per impostazione predefinita alcuni pulsanti vengono visualizzati nella barra degli strumenti della finestra **Proprietà** . In tutti i casi, vengono visualizzati i pulsanti **categorizzati**, in **ordine alfabetico**, **proprietà** e **pagine delle proprietà** . In Visual C# e Visual Basic viene visualizzato anche il pulsante **eventi** . In alcuni progetti di Visual C++, vengono visualizzati i **messaggi di VC + +** e i pulsanti delle **sostituzioni VC** . Per gli altri tipi di progetto possono essere visualizzati pulsanti aggiuntivi. Per ulteriori informazioni sui pulsanti nella finestra **Proprietà** , vedere [finestra Proprietà](../../ide/reference/properties-window.md).
 
 ## <a name="implementation-of-properties-window-buttons"></a>Implementazione dei pulsanti della finestra Proprietà
  Quando si fa clic sul pulsante **categorizzato** , Visual Studio chiama l' <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> interfaccia sull'oggetto che ha lo stato attivo per ordinare le proprietà in base alla categoria. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> viene implementato nell' `IDispatch` oggetto presentato alla finestra **Proprietà** .
@@ -36,5 +38,5 @@ A seconda del linguaggio di sviluppo e del tipo di prodotto, per impostazione pr
 > [!NOTE]
 > Non è possibile aggiungere pulsanti della barra degli strumenti alla finestra **Proprietà** utilizzando codice non gestito. Per aggiungere un pulsante della barra degli strumenti, è necessario creare un oggetto gestito che deriva da <xref:System.Windows.Forms.Design.PropertyTab> .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estensione delle proprietà](../../extensibility/internals/extending-properties.md)

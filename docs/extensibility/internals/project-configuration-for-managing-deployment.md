@@ -1,5 +1,7 @@
 ---
 title: Configurazione del progetto per la gestione della distribuzione | Microsoft Docs
+description: Informazioni sulla distribuzione nel percorso previsto per il debug e l'installazione e i due modi in cui Visual Studio supporta i progetti che supportano la distribuzione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62f7bf6535a89e46799ade88fe8976974b3019c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c322e320e193acd25a011cc85173c1c80e2d29d
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706705"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877988"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Configurazione del progetto per la gestione della distribuzione
 La distribuzione è l'azione di spostamento fisico degli elementi di output da un processo di compilazione al percorso previsto per il debug e l'installazione. Ad esempio, un'applicazione Web può essere compilata in un computer locale e quindi posizionata sul server.
@@ -37,7 +39,7 @@ La distribuzione è l'azione di spostamento fisico degli elementi di output da u
 
   Le configurazioni possono specificare dipendenze che influiscono sulle operazioni di compilazione o di distribuzione. Le dipendenze di compilazione o distribuzione sono progetti che devono essere compilati o distribuiti prima o dopo la compilazione o la distribuzione delle configurazioni stesse. Le dipendenze di compilazione tra i progetti sono descritte con l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> interfaccia e distribuiscono le dipendenze con l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfaccia. Per ulteriori informazioni, vedere [configurazione di progetto per la compilazione](../../extensibility/internals/project-configuration-for-building.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gestione delle opzioni di configurazione](../../extensibility/internals/managing-configuration-options.md)
 - [Configurazione del progetto per la compilazione](../../extensibility/internals/project-configuration-for-building.md)
 - [Configurazione del progetto per l'output](../../extensibility/internals/project-configuration-for-output.md)

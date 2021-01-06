@@ -1,5 +1,7 @@
 ---
 title: Ottimizzazione e debug JIT | Microsoft Docs
+description: Il codice ottimizzato è più difficile da eseguire il debug rispetto al codice non. Informazioni sull'ottimizzazione JIT e su quando e come eliminarlo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae11860aaa64448cd4d23b5602cf4c2da1575ce3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 66f63c7232b52ebe849722147e007ab70527c311
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916214"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903922"
 ---
 # <a name="jit-optimization-and-debugging"></a>Debug e ottimizzazione JIT
 Se si sta provando a eseguire il debug del codice, è più facile quando il codice **non** è ottimizzato. Quando il codice viene ottimizzato, il compilatore e il runtime apportano modifiche al codice della CPU creato in modo che venga eseguito più velocemente, ma con un mapping meno diretto al codice sorgente originale. Se il mapping è meno diretto, spesso i debugger non sono in grado di indicare il valore delle variabili locali e l'esecuzione del codice e i punti di interruzione potrebbero non funzionare come previsto.
@@ -37,7 +39,7 @@ Nell'ecosistema .NET, il codice viene convertito dalle istruzioni di origine a C
 ## <a name="the-suppress-jit-optimization-on-module-load-managed-only-option"></a>Opzione ' non visualizzare l'ottimizzazione JIT al caricamento del modulo (solo gestito)'
 Il debugger espone un'opzione che controlla cosa accade quando una DLL compilata con ottimizzazioni abilitate viene caricata all'interno del processo di destinazione. Se questa opzione è deselezionata (stato predefinito), quando il Runtime .NET compila il codice MSIL nel codice della CPU, lascia le ottimizzazioni abilitate. Se l'opzione è selezionata, il debugger richiede che le ottimizzazioni siano disabilitate.
 
-Per trovare l'opzione **Disattiva l'ottimizzazione JIT al caricamento del modulo (solo gestito)** , selezionare **strumenti**  >  **Opzioni**e quindi selezionare la pagina **generale** nel nodo **debug** .
+Per trovare l'opzione **Disattiva l'ottimizzazione JIT al caricamento del modulo (solo gestito)** , selezionare **strumenti**  >  **Opzioni** e quindi selezionare la pagina **generale** nel nodo **debug** .
 
 ![Disattiva l'ottimizzazione JIT](../debugger/media/suppress-jit-tool-options.png "Disattiva l'ottimizzazione JIT")
 
@@ -60,7 +62,7 @@ Ci sono due situazioni in cui l'attivazione di questa opzione **non** funziona:
 
     **Per impostare una variabile di ambiente per un progetto .NET Core in Visual Studio:**
     1. Nella **Esplora soluzioni** **fare clic con il pulsante destro del mouse** sul file di progetto e scegliere **proprietà**.
-    2. Passare alla scheda **debug** e in **variabili di ambiente**fare clic sul pulsante **Aggiungi** .
+    2. Passare alla scheda **debug** e in **variabili di ambiente** fare clic sul pulsante **Aggiungi** .
     3. Impostare il nome (chiave) su **COMPlus_ReadyToRun** e impostare il valore su **0**.
 
     ![Imposta COMPlus_ReadyToRun variabile di ambiente](../debugger/media/environment-variables-debug-menu.png "Imposta COMPlus_ReadyToRun variabile di ambiente")

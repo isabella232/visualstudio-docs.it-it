@@ -1,6 +1,7 @@
 ---
 title: Gestire le eccezioni con il debugger | Microsoft Docs
-ms.custom: seodec18
+description: Viene illustrato come specificare le eccezioni in cui si interrompe il debugger, a quel punto si desidera che il debugger si interrompa e come vengono gestite le interruzioni.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/09/2018
 ms.topic: how-to
 f1_keywords:
@@ -33,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff28944a36d338230a17cd533a4832452e42885b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 210f2b2fc3e037f58fed19031d7ae9762185a640
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348457"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903848"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gestire le eccezioni con il debugger in Visual Studio
 
@@ -91,7 +92,7 @@ Se si seleziona un'eccezione nella finestra **Impostazioni eccezioni** , l'esecu
   }
   ```
 
-  Se **le impostazioni dell'eccezione**sono state archiviate in **AccessViolationException** , l'esecuzione si interrompe sulla `throw` riga quando si esegue questo codice nel debugger. È quindi possibile continuare l'esecuzione. Nella console dovrebbero essere visualizzate entrambe le righe:
+  Se **le impostazioni dell'eccezione** sono state archiviate in **AccessViolationException** , l'esecuzione si interrompe sulla `throw` riga quando si esegue questo codice nel debugger. È quindi possibile continuare l'esecuzione. Nella console dovrebbero essere visualizzate entrambe le righe:
 
   ```cmd
   caught exception
@@ -135,7 +136,7 @@ Se si seleziona un'eccezione nella finestra **Impostazioni eccezioni** , l'esecu
   }
   ```
 
-  Se **le impostazioni dell'eccezione**sono state archiviate in **AccessViolationException** , l'esecuzione si interrompe sulla `throw` riga in **ThrowHandledException ()** e **ThrowUnhandledException ()** quando si esegue questo codice nel debugger.
+  Se **le impostazioni dell'eccezione** sono state archiviate in **AccessViolationException** , l'esecuzione si interrompe sulla `throw` riga in **ThrowHandledException ()** e **ThrowUnhandledException ()** quando si esegue questo codice nel debugger.
 
 Per ripristinare le impostazioni predefinite delle eccezioni, scegliere il pulsante **Ripristina le impostazioni predefinite dell'elenco** :
 
@@ -216,9 +217,9 @@ Per aggiungere eccezioni condizionali:
 
    ![Condizioni aggiuntive per un'eccezione](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Per ogni riga di condizione, digitare il nome del modulo e impostare l'elenco operatore di confronto su **uguale** a o **non uguale**a. È possibile specificare caratteri jolly ( **\\\*** ) nel nome per specificare più di un modulo.
+3. Per ogni riga di condizione, digitare il nome del modulo e impostare l'elenco operatore di confronto su **uguale** a o **non uguale** a. È possibile specificare caratteri jolly (* *\\\** _) nel nome per specificare più di un modulo.
 
-4. Se è necessario eliminare una condizione, scegliere la **X** alla fine della riga della condizione.
+4. Se è necessario eliminare una condizione, scegliere la _ *X** alla fine della riga della condizione.
 
 ## <a name="see-also"></a>Vedere anche
 

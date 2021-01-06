@@ -1,5 +1,7 @@
 ---
 title: Macro per la creazione di report | Microsoft Docs
+description: Informazioni sulle macro di debug _RPTn e _RPTFn fornite in CRTDBG. H e informazioni sulla creazione di macro di debug personalizzate.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,20 +24,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1920b4eddcbffa5cd51d548ade9af3a3a2f208d0
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731393"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903792"
 ---
 # <a name="macros-for-reporting"></a>Macro per la creazione di rapporti
-Per il debug, è possibile usare le macro **_RPTn** e **_RPTFn** , definite in CRTDBG. H, per sostituire l'utilizzo delle `printf` istruzioni. Non è necessario inserirli nel **#ifdef**s, perché scompaiono automaticamente nella build di rilascio quando **_DEBUG** non è definito.
+Per il debug, è possibile usare le macro **_RPTn** e **_RPTFn** , definite in CRTDBG. H, per sostituire l'utilizzo delle `printf` istruzioni. Non è necessario inserirli nel **#ifdef** s, perché scompaiono automaticamente nella build di rilascio quando **_DEBUG** non è definito.
 
 |Macro|Descrizione|
 |-----------|-----------------|
-|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Genera una stringa di messaggio e da zero a quattro argomenti. Da _RPT1 a **_RPT4** la stringa di messaggio funge da stringa di formattazione di tipo printf per gli argomenti.|
-|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|Come **_RPTn**, ma queste macro generano anche il nome file e il numero di riga in cui si trova la macro.|
+|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Genera una stringa di messaggio e da zero a quattro argomenti. Per **_RPT1** tramite **_RPT4**, la stringa di messaggio funge da stringa di formattazione di tipo printf per gli argomenti.|
+|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF3**, **_RPTF4**|Come **_RPTn**, ma queste macro generano anche il nome file e il numero di riga in cui si trova la macro.|
 
  Si consideri l'esempio seguente:
 

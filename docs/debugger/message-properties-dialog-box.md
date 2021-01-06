@@ -1,5 +1,7 @@
 ---
 title: Finestra di dialogo Proprietà messaggio | Microsoft Docs
+description: Per ulteriori informazioni su un messaggio, vedere le proprietà del messaggio che vengono visualizzate nella visualizzazione messaggi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f590f40e4e3361f4dbeb46a3a9b8758b8ab5075
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f58ad7344c7de9a9486fcb3ccefbf263688926f
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62846115"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903064"
 ---
 # <a name="message-properties-dialog-box"></a>Finestra di dialogo Proprietà messaggio
 Utilizzare questa finestra di dialogo per ottenere ulteriori informazioni su un messaggio specifico. Per visualizzare questa finestra di dialogo, spostare lo stato attivo in una finestra [visualizzazione messaggi](../debugger/messages-view.md) . Selezionare un nodo del messaggio nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .

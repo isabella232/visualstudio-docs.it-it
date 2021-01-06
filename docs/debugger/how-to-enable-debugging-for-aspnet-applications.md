@@ -1,7 +1,7 @@
 ---
 title: Abilitare il debug per le app ASP.NET | Microsoft Docs
-description: Informazioni su come abilitare il debug per le app ASP.NET e ASP.NET Core in Visual Studio ed eseguire il processo in un server IIS Express o in un server IIS locale.
-ms.custom: ''
+description: Informazioni su come abilitare il debug per le app ASP.NET e ASP.NET Core in Visual Studio. È possibile eseguire il processo in un server IIS Express o in un server IIS locale.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2020
 ms.topic: how-to
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: c5256def84f15fae535ac409349ce21cdd5c80ba
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 28f74c449e196d5eb0b3380d0ff1392db17e0b23
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761381"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903597"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Eseguire il debug di app ASP.NET o ASP.NET Core in Visual Studio
 
@@ -187,7 +187,7 @@ Esistono diversi modi per pubblicare le app in IIS. Questi passaggi illustrano c
 > [!IMPORTANT]
 > La modalità di debug riduce notevolmente le prestazioni dell'app. Per ottenere prestazioni ottimali, impostare `debug="false"` nell' *web.config* e specificare una build di rilascio quando si distribuisce un'app di produzione o si conducono le misurazioni delle prestazioni.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Debug di ASP.NET: requisiti di sistema](aspnet-debugging-system-requirements.md)
 - [Procedura: Eseguire il processo di lavoro con un account utente](how-to-run-the-worker-process-under-a-user-account.md)
 - [Procedura: Trovare il nome del processo ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: visualizzazione di suggerimenti lampadina | Microsoft Docs'
+description: Informazioni su come creare una lampadina nell'editor di Visual Studio che viene visualizzata nella parola corrente e due azioni consigliate tramite questa procedura dettagliata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86412b82b291ee395b35d654d3cde6d326e956f0
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 8d8d498c1d9a5e5142672bcd561ac0749bbf8d75
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508951"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877962"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Procedura dettagliata: visualizzare i suggerimenti della lampadina
 Le lampadine sono icone nell'editor di Visual Studio che si espandono per visualizzare un set di azioni, ad esempio correzioni per i problemi identificati dagli analizzatori di codice predefiniti o dal refactoring del codice.
@@ -34,7 +36,7 @@ Le lampadine sono icone nell'editor di Visual Studio che si espandono per visual
 
   ![anteprima di lampadina](../extensibility/media/lightbulbpreview.png "LightBulbPreview")
 
-  È possibile usare le lampadine per fornire le proprie azioni suggerite. Ad esempio, è possibile fornire azioni per spostare le parentesi graffe di apertura in una nuova riga o spostarle alla fine della riga precedente. Nella procedura dettagliata riportata di seguito viene illustrato come creare una lampadina visualizzata nella parola corrente con due azioni consigliate: **convertire in lettere** maiuscole e **convertirle in lettere**minuscole.
+  È possibile usare le lampadine per fornire le proprie azioni suggerite. Ad esempio, è possibile fornire azioni per spostare le parentesi graffe di apertura in una nuova riga o spostarle alla fine della riga precedente. Nella procedura dettagliata riportata di seguito viene illustrato come creare una lampadina visualizzata nella parola corrente con due azioni consigliate: **convertire in lettere** maiuscole e **convertirle in lettere** minuscole.
 
 ## <a name="prerequisites"></a>Prerequisiti
  A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare Visual Studio SDK in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
@@ -222,8 +224,8 @@ Le lampadine sono icone nell'editor di Visual Studio che si espandono per visual
 2. Creare due classi, denominate `UpperCaseSuggestedAction` e `LowerCaseSuggestedAction`. Entrambe le classi implementano <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.
 
     ```csharp
-    internal class UpperCaseSuggestedAction : ISuggestedAction
-    internal class LowerCaseSuggestedAction : ISuggestedAction
+    internal class UpperCaseSuggestedAction : ISuggestedAction
+    internal class LowerCaseSuggestedAction : ISuggestedAction
     ```
 
      Le due classi sono simili, con l'unica eccezione che una chiama <xref:System.String.ToUpper%2A> e l'altra chiama <xref:System.String.ToLower%2A>. Anche se i passaggi seguenti descrivono solo la classe dell'azione per le maiuscole, è necessario implementarle entrambe. Usare i passaggi per l'implementazione dell'azione per le maiuscole come criterio per l'implementazione dell'azione per le minuscole.
@@ -243,8 +245,8 @@ Le lampadine sono icone nell'editor di Visual Studio che si espandono per visual
 
     ```csharp
     private ITrackingSpan m_span;
-    private string m_upper;
-    private string m_display;
+    private string m_upper;
+    private string m_display;
     private ITextSnapshot m_snapshot;
     ```
 
@@ -288,7 +290,7 @@ Le lampadine sono icone nell'editor di Visual Studio che si espandono per visual
     {
         get { return false; }
     }
-    public string DisplayText
+    public string DisplayText
     {
         get { return m_display; }
     }
@@ -319,7 +321,7 @@ Le lampadine sono icone nell'editor di Visual Studio che si espandono per visual
 9. Implementare il metodo <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> sostituendo il testo nell'intervallo con l'equivalente in maiuscole.
 
     ```csharp
-    public void Invoke(CancellationToken cancellationToken)
+    public void Invoke(CancellationToken cancellationToken)
     {
         m_span.TextBuffer.Replace(m_span.GetSpan(m_snapshot), m_upper);
     }

@@ -1,5 +1,7 @@
 ---
 title: Scheda memoria, finestra di dialogo Proprietà processo | Microsoft Docs
+description: Utilizzare la scheda memoria delle proprietà del processo per visualizzare il modo in cui un processo utilizza la memoria. Sono disponibili informazioni sullo spazio usato, lo spazio condiviso e lo spazio virtuale usato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bdfc2740094c807818922f09ca3fef0a21c9e1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10fd47127abfd9cc476ed7029edd0dbbeb5501de
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62931285"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903727"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Scheda Memoria, finestra di dialogo Proprietà processo
 Utilizzare la scheda **memoria** per visualizzare il modo in cui un processo utilizza la memoria. Per visualizzare la finestra di [dialogo Proprietà processo](../debugger/process-properties-dialog-box.md), spostare lo stato attivo in una finestra [visualizzazione processi](../debugger/processes-view.md) . Selezionare un nodo di processo nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .

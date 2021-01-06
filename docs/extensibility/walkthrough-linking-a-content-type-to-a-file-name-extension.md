@@ -1,5 +1,6 @@
 ---
 title: Collegare un tipo di contenuto a un'estensione del nome file
+description: Per informazioni su come collegare il proprio tipo di contenuto a un'estensione di file, usare l'editor Managed Extensibility Framework estensioni in questa procedura dettagliata.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d59ae0b5eb2411ff9e41466e8b87dbe20b835ba
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 478ecc6c2238703d1cacc8e649072d669a41c590
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034663"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877910"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Procedura dettagliata: collegare un tipo di contenuto a un'estensione di file
 È possibile definire un tipo di contenuto personalizzato e collegarvi un'estensione di file usando le estensioni dell'editor Managed Extensibility Framework (MEF). In alcuni casi, l'estensione del nome file è già definita da un servizio di linguaggio. Tuttavia, per usarlo con MEF, è comunque necessario collegarlo a un tipo di contenuto.
@@ -28,7 +29,7 @@ ms.locfileid: "90034663"
 
 1. Creare un progetto VSIX in C#. Nella finestra di dialogo **nuovo progetto** selezionare **Visual C#/extensibility**, quindi **progetto VSIX**. Assegnare un nome alla soluzione `ContentTypeTest` .
 
-2. Nel file **source. Extension. vsixmanifest** passare alla scheda **Asset** e impostare il campo **tipo** su **Microsoft. VisualStudio. MefComponent**, il campo di **origine** su **un progetto nella soluzione corrente**e il campo **progetto** sul nome del progetto.
+2. Nel file **source. Extension. vsixmanifest** passare alla scheda **Asset** e impostare il campo **tipo** su **Microsoft. VisualStudio. MefComponent**, il campo di **origine** su **un progetto nella soluzione corrente** e il campo **progetto** sul nome del progetto.
 
 ## <a name="define-the-content-type"></a>Definire il tipo di contenuto
 

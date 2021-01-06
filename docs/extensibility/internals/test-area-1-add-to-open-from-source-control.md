@@ -1,5 +1,7 @@
 ---
-title: "Area di test 1: aggiungere all'apertura dal controllo del codice sorgente | Microsoft Docs"
+title: 'Area di test 1: aggiungere To-Open dal controllo del codice sorgente | Microsoft Docs'
+description: Questa area di test del plug-in del controllo del codice sorgente copre la disposizione di soluzioni o progetti nel controllo del codice sorgente e il recupero dal controllo del codice sorgente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ac7b8e5a60fe25ac22272cc28fc3ed6f903b058
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 608d3489f657cf38d310e67a17bdd48a529de3e5
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704674"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877741"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Area di test 1: aggiungere o aprire elementi dal controllo del codice sorgente
 Questa area di test del plug-in del controllo del codice sorgente copre la disposizione di soluzioni o progetti nel controllo del codice sorgente e il recupero dal controllo del codice sorgente.
@@ -24,11 +26,11 @@ Questa area di test del plug-in del controllo del codice sorgente copre la dispo
 ## <a name="command-menu-access"></a>Accesso al menu dei comandi
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Nei test case vengono utilizzati i percorsi dei menu Integrated Development Environment seguenti:
 
-- Per [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] aprire dal controllo del codice sorgente: **file**, **Apri**, **Project** / **soluzione**progetto; esaminare il [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] percorso.
+- Per [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] aprire dal controllo del codice sorgente: **file**, **Apri**,  / **soluzione** progetto; esaminare il [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] percorso.
 
 - Per altri plug-in del controllo del codice sorgente, aprire dal controllo del codice sorgente: **file**, **controllo del codice sorgente**, **aprire dal controllo del codice sorgente**.
 
-- Aggiungi al controllo del codice sorgente: **file**, **controllo del codice sorgente**, **Aggiungi soluzione al file del controllo del codice**sorgente, controllo del **codice sorgente**, **Aggiungi progetti selezionati al controllo del codice sorgente**.
+- Aggiungi al controllo del codice sorgente: **file**, **controllo del codice sorgente**, **Aggiungi soluzione al file del controllo del codice** sorgente, controllo del **codice sorgente**, **Aggiungi progetti selezionati al controllo del codice sorgente**.
 
 - Menu di scelta rapida (progetto/soluzione), **Aggiungi soluzione al controllo del codice sorgente**.
 
@@ -57,7 +59,7 @@ Questa area di test del plug-in del controllo del codice sorgente copre la dispo
 ### <a name="case-1a-add-solution-to-source-control"></a>Caso 1a: aggiungere una soluzione al controllo del codice sorgente
  Questa test case è incentrata sull'aggiunta di soluzioni al controllo del codice sorgente.
 
-|Action|Passi del test|Risultati previsti da verificare|
+|Azione|Passi del test|Risultati previsti da verificare|
 |------------|----------------|--------------------------------|
 |Aggiungere una soluzione contenente un progetto client al controllo del codice sorgente|1. creare un progetto client.<br />2. aggiungere la soluzione al controllo del codice sorgente (**file**, **controllo del codice sorgente**, **Aggiungi soluzione al controllo del codice sorgente**).|La soluzione o il progetto è stato aggiunto al controllo del codice sorgente.|
 |Aggiungere una soluzione contenente un file System o un progetto Web IIS locale al controllo del codice sorgente|1. creare un file System o un progetto Web IIS locale (usare il pulsante Sfoglia per puntare al percorso del progetto; il percorso determina quale tipo di progetto Web viene creato).<br />2. aggiungere la soluzione al controllo del codice sorgente (**file**, **controllo del codice sorgente**, **Aggiungi soluzione al controllo del codice sorgente**).|La soluzione o il progetto è stato aggiunto al controllo del codice sorgente.|
@@ -68,7 +70,7 @@ Questa area di test del plug-in del controllo del codice sorgente copre la dispo
 ### <a name="case-1b-open-solution-from-source-control"></a>Caso 1B. Apri soluzione dal controllo del codice sorgente
  Questa test case è incentrata sull'apertura di soluzioni dal controllo del codice sorgente.
 
-|Action|Passi del test|Risultati previsti da verificare|
+|Azione|Passi del test|Risultati previsti da verificare|
 |------------|----------------|--------------------------------|
 |Aprire una soluzione contenente un progetto client dal controllo del codice sorgente|1. creare un progetto client.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. chiudere la soluzione.<br />4. Aprire la soluzione dal controllo del codice sorgente in una nuova posizione.|Soluzione/progetto aperto dal controllo del codice sorgente.|
 |Aprire una soluzione contenente un progetto Web locale o IIS dal controllo del codice sorgente|1. creare un progetto Web locale o IIS.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. chiudere la soluzione.<br />4. Aprire la soluzione dal controllo del codice sorgente in una nuova posizione.|Soluzione/progetto aperto dal controllo del codice sorgente.|
@@ -77,11 +79,11 @@ Questa area di test del plug-in del controllo del codice sorgente copre la dispo
 ### <a name="case-1c-add-solution-from-source-control"></a>Caso 1C: aggiungere una soluzione dal controllo del codice sorgente
  Questa test case è incentrata sull'aggiunta di soluzioni dal controllo del codice sorgente.
 
-|Action|Passi del test|Risultati previsti da verificare|
+|Azione|Passi del test|Risultati previsti da verificare|
 |------------|----------------|--------------------------------|
 |Aggiungi a soluzione vuota-una soluzione di progetto singolo|1. creare una soluzione di progetto singolo.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. chiudere la soluzione.<br />4. creare una seconda soluzione vuota.<br />5. aggiungere la soluzione precedentemente controllata dal controllo del codice sorgente (**file**, **controllo del codice sorgente**, **Aggiungi progetto dal controllo del codice sorgente**).|Il progetto aggiunto viene visualizzato in **Esplora soluzioni** ed è archiviato.|
 |Aggiungi a soluzione con singolo progetto-progetto singolo|1. creare una soluzione con un singolo progetto.<br />2. aggiungere la soluzione al controllo del codice sorgente.<br />3. chiudere la soluzione.<br />4. creare una seconda soluzione vuota.<br />5. aggiungere la soluzione precedentemente controllata dal controllo del codice sorgente (**file**, **controllo del codice sorgente**, **Aggiungi progetto dal controllo del codice sorgente**).|Il progetto aggiunto viene visualizzato in **Esplora soluzioni** ed è archiviato.|
 |Aggiungi alla soluzione: aggiunta della soluzione al controllo del codice sorgente tramite selezione|1. creare una soluzione con un progetto.<br />2. aggiungere solo la soluzione al controllo del codice sorgente come selezione. Se questo passaggio ha esito positivo, continuare con il passaggio successivo.<br />3. chiudere la soluzione.<br />4. creare una nuova soluzione.<br />5. aggiungere la soluzione precedentemente controllata dal controllo del codice sorgente (**file**, **controllo del codice sorgente**, **Aggiungi progetto dal controllo del codice sorgente**).|`Result from Step 2:`<br /><br /> Il progetto non è sotto il controllo del codice sorgente.<br /><br /> `Result from Step 5:`<br /><br /> Se la prima soluzione aveva elementi di soluzione, non è possibile aggiungerli dal controllo del codice sorgente, in modo che non vengano visualizzati.<br /><br /> Il progetto dalla prima soluzione viene visualizzato come non disponibile.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Guida per il test dei plug-in del controllo del codice sorgente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

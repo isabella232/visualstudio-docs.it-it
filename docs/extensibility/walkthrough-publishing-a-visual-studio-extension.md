@@ -1,5 +1,7 @@
 ---
 title: "Procedura dettagliata: pubblicazione di un'estensione di Visual Studio | Microsoft Docs"
+description: Informazioni su come pubblicare un'estensione di Visual Studio nel Visual Studio Marketplace, che consente agli sviluppatori di individuare le estensioni nuove e aggiornate.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6bd7a5d9622f7aea7382522dcf69ce660b61ae7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cbdd283c5d147c53e7d82843207b48d0dbf6e6e9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904742"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877884"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Procedura dettagliata: pubblicare un'estensione di Visual Studio
 
@@ -68,7 +70,7 @@ Questo articolo usa un'estensione VSPackage predefinita, ma i passaggi sono vali
 
 6. Scegliere il server di pubblicazione che si vuole usare per caricare l'estensione. È possibile modificare i server di pubblicazione facendo clic sui nomi dei server di pubblicazione elencati a sinistra. Fare clic su **nuova estensione** e selezionare **Visual Studio**.
 
-7. In **1: caricare l'estensione**, è possibile scegliere di caricare un file VSIX direttamente in Visual Studio Marketplace o semplicemente aggiungere un collegamento al proprio sito Web. In questo esempio viene caricata l'estensione *TestPublish. vsix* . Trascinare e rilasciare l'estensione o usare il collegamento **fare clic** per cercare il file. Trovare l'estensione nella cartella \bin\Release del progetto.  Fare clic su **Continua**.
+7. In **1: caricare l'estensione**, è possibile scegliere di caricare un file VSIX direttamente in Visual Studio Marketplace o semplicemente aggiungere un collegamento al proprio sito Web. In questo esempio viene caricata l'estensione *TestPublish. vsix* . Trascinare e rilasciare l'estensione o usare il collegamento **fare clic** per cercare il file. Trovare l'estensione nella cartella \bin\Release del progetto.  Fare clic su **Continue**.
 
 8. In **2: specificare i dettagli dell'estensione**. alcuni campi vengono popolati automaticamente dal file *source. Extension. vsixmanifest* dall'estensione. Per ulteriori dettagli, vedere:
 
@@ -90,7 +92,7 @@ Questo articolo usa un'estensione VSPackage predefinita, ma i passaggi sono vali
 
     * * * L'edizione di Visual Studio supportata consente di scegliere le edizioni di Visual Studio su cui funzionerà l'estensione. L'estensione viene installata solo in queste edizioni.
 
-    * **Type**. Il tipo più comune di estensioni sono **gli strumenti**di.
+    * **Type**. Il tipo più comune di estensioni sono **gli strumenti** di.
 
     * **Categorie**. È possibile scegliere un massimo di tre adatta per l'estensione.
 
@@ -132,11 +134,11 @@ Marketplace supporta la concessione di autorizzazioni utente aggiuntive per l'ac
 
 Ora che l'estensione è pubblicata, installarla in Visual Studio ed eseguirne il test.
 
-1. In Visual Studio scegliere **estensioni e aggiornamenti**dal menu **strumenti** .
+1. In Visual Studio scegliere **estensioni e aggiornamenti** dal menu **strumenti** .
 
 2. Fare clic su **online** e quindi cercare **TestPublish**.
 
-3. Fare clic su **Scarica**. L'estensione viene quindi pianificata per l'installazione.
+3. Fare clic su **Download**. L'estensione viene quindi pianificata per l'installazione.
 
 4. Per completare l'installazione, chiudere tutte le istanze di Visual Studio.
 
@@ -154,7 +156,7 @@ Ora che l'estensione è pubblicata, installarla in Visual Studio ed eseguirne il
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Per rimuovere l'estensione dal computer
 
-1. In Visual Studio scegliere **estensioni e aggiornamenti**dal menu **strumenti** .
+1. In Visual Studio scegliere **estensioni e aggiornamenti** dal menu **strumenti** .
 
 2. Selezionare **TestPublish** e quindi fare clic su **Disinstalla**. L'estensione viene quindi pianificata per la disinstallazione.
 

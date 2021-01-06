@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: struttura | Microsoft Docs'
+description: Informazioni su come definire e visualizzare le aree della struttura nel contesto di un servizio di linguaggio o per l'estensione del nome file e il tipo di contenuto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 6e3e60fe873d7bcb512e56c844e76fcbef037d42
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: ea0f16deee17e2cd249c0ee1de0861a936abc75c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508925"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877897"
 ---
 # <a name="walkthrough-outlining"></a>Procedura dettagliata: definizione della struttura
 Configurare le funzionalità basate sul linguaggio, ad esempio la struttura, definendo i tipi di aree di testo che si desidera espandere o comprimere. È possibile definire le aree nel contesto di un servizio di linguaggio oppure definire l'estensione del nome di file e il tipo di contenuto e applicare la definizione di area solo a tale tipo oppure applicare le definizioni delle aree a un tipo di contenuto esistente, ad esempio "testo". Questa procedura dettagliata illustra come definire e visualizzare le aree della struttura.
@@ -134,5 +136,5 @@ Configurare le funzionalità basate sul linguaggio, ad esempio la struttura, def
 
 4. Deve essere presente un'area della struttura che include entrambe le parentesi quadre. Si dovrebbe essere in grado di fare clic sul segno meno a sinistra della parentesi aperta per comprimere l'area della struttura. Quando l'area è compressa, il simbolo dei puntini di sospensione (*...*) viene visualizzato a sinistra dell'area compressa e viene visualizzato un popup contenente il **testo al passaggio del mouse** quando si sposta il puntatore sui puntini di sospensione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: collegare un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

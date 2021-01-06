@@ -1,5 +1,7 @@
 ---
 title: Salvataggio permanente dei dati nel file di progetto MSBuild | Microsoft Docs
+description: Informazioni su come mantenere i dati in un file di progetto e usare IPersistXMLFragment per gestire i dati nel file di progetto tra i livelli di aggregazione del sottotipo di progetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e83526007f676ae94ddce57936b627bcb4308c2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c6d79e6ea59b4993b4d6bfc5e165bdd952a3f9
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706688"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878079"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Salvataggio permanente dei dati nel file di progetto MSBuild
 Un sottotipo di progetto potrebbe avere la necessità di salvare in modo permanente i dati specifici del sottotipo nel file di progetto per un uso successivo. Un sottotipo di progetto usa la persistenza dei file di progetto per soddisfare i requisiti seguenti:
@@ -24,7 +26,7 @@ Un sottotipo di progetto potrebbe avere la necessità di salvare in modo permane
 
     1. Dati indipendenti dalla configurazione. Ovvero i dati archiviati negli elementi MSBuild con condizioni vuote o mancanti.
 
-    2. Dati dipendenti dalla configurazione. Ovvero i dati archiviati negli elementi MSBuild che sono condizionati per una particolare configurazione del progetto. Ad esempio:
+    2. Dati dipendenti dalla configurazione. Ovvero i dati archiviati negli elementi MSBuild che sono condizionati per una particolare configurazione del progetto. Esempio:
 
         ```
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -36,7 +38,7 @@ Un sottotipo di progetto potrebbe avere la necessità di salvare in modo permane
 
     2. Dati dipendenti dalla configurazione.
 
-## <a name="persisting-build-related-information"></a>Salvataggio permanente delle informazioni correlate alla compilazione
+## <a name="persisting-build-related-information"></a>Salvataggio permanente delle informazioni Build-Related
  La persistenza dei dati utile per la compilazione di un progetto viene gestita tramite MSBuild. Il sistema MSBuild gestisce una tabella master di informazioni correlate alla compilazione. I sottotipi di progetto sono responsabili dell'accesso a questi dati per ottenere e impostare i valori delle proprietà. I sottotipi di progetto possono anche aumentare la tabella dei dati correlati alla compilazione aggiungendo proprietà aggiuntive da rendere permanente e rimuovendo le proprietà in modo che non siano rese permanente.
 
  Per modificare i dati MSBuild, un sottotipo di progetto è responsabile del recupero dell'oggetto proprietà MSBuild dal sistema del progetto di base tramite <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> . <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> è un'interfaccia implementata nel sistema del progetto di base e il sottotipo di aggregazione del progetto esegue query per l'oggetto eseguendo `QueryInterface` .
@@ -76,5 +78,5 @@ Un sottotipo di progetto potrebbe avere la necessità di salvare in modo permane
       </ProjectExtensions>
     ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sottotipi di progetto](../../extensibility/internals/project-subtypes.md)

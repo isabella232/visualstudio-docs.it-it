@@ -1,5 +1,7 @@
 ---
 title: Completamento delle istruzioni in un servizio di linguaggio legacy | Microsoft Docs
+description: Informazioni sul funzionamento del completamento delle istruzioni e su come implementarlo nel servizio di linguaggio legacy in un pacchetto VSPackage.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbeb360cf5bc0f74d6b2d9b93086382dd35da988
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1534c6ba029cf47cb637e958422efeecb970f35
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704934"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877767"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Completamento delle istruzioni in un servizio di linguaggio legacy
 Il completamento delle istruzioni è il processo mediante il quale il servizio di linguaggio consente agli utenti di completare una parola chiave o un elemento del linguaggio che hanno iniziato a digitare nell'editor principale. In questo argomento viene illustrato il funzionamento del completamento delle istruzioni e come implementarlo nel servizio di linguaggio.
@@ -36,5 +38,5 @@ Il completamento delle istruzioni è il processo mediante il quale il servizio d
 
  Quando il trigger viene immesso nell'editor, in particolare il buffer di testo, il servizio di linguaggio chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metodo. Questo fa sì che l'editor possa visualizzare l'interfaccia utente in modo che l'utente possa scegliere tra i candidati per il completamento delle istruzioni. Per questo metodo è necessario implementare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> e i <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> flag come parametri. L'elenco degli elementi di completamento viene visualizzato in una casella di riepilogo a scorrimento. Quando l'utente continua a digitare, la selezione all'interno della casella di riepilogo viene aggiornata per riflettere la corrispondenza più vicina ai caratteri più recenti digitati. L'editor principale implementa l'interfaccia utente per il completamento delle istruzioni, ma il servizio di linguaggio deve implementare l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> interfaccia per definire un set di elementi di completamento candidati per l'istruzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Intercettazione dei comandi dei servizi di linguaggio legacy](../../extensibility/internals/intercepting-legacy-language-service-commands.md)

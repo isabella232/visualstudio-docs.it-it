@@ -1,5 +1,7 @@
 ---
 title: SDK di Microsoft Help Viewer | Microsoft Docs
+description: Informazioni sulle attività del Visualizzatore della Guida di Visual Studio, ad esempio la creazione di un articolo, la creazione di un pacchetto di personalizzazione del contenuto del Visualizzatore della guida e la distribuzione di un set di articoli.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 901a5a5eea7835720ab9d5963f0ab1be36df3685
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 9e77d06900a17aca4c2630587a45a9b144accde2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668859"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877845"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -459,7 +461,7 @@ Nota: le variabili indicate da "{n}" presentano dipendenze del codice. la rimozi
 | ViewColorizedText | Visualizza colori |
 | CombinedVBTabDisplayLanguage | Visual Basic (esempio) |
 | VBDeclaration | Dichiarazione |
-| VBUsage | Uso |
+| VBUsage | Utilizzo |
 | Funzionalità: | **Feedback, piè di pagina e logo** |
 | Usare: | Fornire un controllo feedback per il cliente per fornire commenti e suggerimenti sull'argomento corrente tramite posta elettronica.  Testo del copyright per il contenuto.  Definizione del logo. |
 | **elemento** | **Valore (queste stringhe possono essere modificate per soddisfare le esigenze di adozione del contenuto).** |
@@ -704,7 +706,7 @@ Questa procedura dettagliata illustra come incorporare il contenuto della Guida 
 
 2. [Visual Studio 2013 Redist della shell isolata](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-**Panoramica**
+**Overview**
 
 La [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Shell è una versione dell' [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] IDE in cui è possibile basare un'applicazione. Tali applicazioni contengono la shell isolata insieme alle estensioni create. Usare i modelli di progetto della shell isolata, inclusi nell' [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] SDK, per compilare le estensioni.
 

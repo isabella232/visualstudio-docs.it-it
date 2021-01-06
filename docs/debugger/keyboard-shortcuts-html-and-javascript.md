@@ -1,5 +1,7 @@
 ---
 title: Scelte rapide da tastiera (HTML e JavaScript) | Microsoft Docs
+description: Vedere Tasti di scelta rapida per il debug di app UWP che usano HTML e JavaScript. Sono disponibili collegamenti per la finestra della console JavaScript e per DOM Explorer.
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 32a3dcc48e34cc3ecc429f7f2b4ca62221263fe0
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: a65cf7eea0541464a013a72377f439dd53ebf685
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211339"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903818"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Scelte rapide da tastiera (HTML e JavaScript)
 
@@ -28,7 +30,7 @@ Tasti di scelta rapida in Visual Studio per il debug di app UWP con HTML e JavaS
 
  Questi tasti di scelta rapida funzionano in tutti gli strumenti per le app UWP con HTML e JavaScript.
 
-|Action|Tasto di scelta rapida|
+|Azione|Tasto di scelta rapida|
 |------------|--------------|
 |Aggiornare l'app di Windows|CTRL+MAIUSC+R|
 |Riavviare l'app di Windows|Ctrl+Maiusc+F5|
@@ -39,7 +41,7 @@ Tasti di scelta rapida in Visual Studio per il debug di app UWP con HTML e JavaS
 
  Usa questi tasti di scelta rapida nella finestra Console JavaScript.
 
-|Action|Tasto di scelta rapida|
+|Azione|Tasto di scelta rapida|
 |------------|--------------|
 |Eseguire un comando della console|Immettere|
 |Chiudere la console|ESC|
@@ -49,7 +51,7 @@ Tasti di scelta rapida in Visual Studio per il debug di app UWP con HTML e JavaS
 
  Usa questi tasti di scelta rapida in DOM Explorer.
 
-|Action|Tasto di scelta rapida|
+|Azione|Tasto di scelta rapida|
 |------------|--------------|
 |Seleziona elemento|Ctrl+B|
 |Visualizzare/nascondere le caselle evidenziate della pagina Web quando si usa **Seleziona elemento**|CTRL+MAIUSC+I|

@@ -1,5 +1,7 @@
 ---
 title: 'Procedura dettagliata: visualizzazione di parentesi graffe corrispondenti | Microsoft Docs'
+description: Informazioni su come definire le parentesi graffe nel contesto di una lingua, applicando i tag corrispondenti alle parentesi graffe al tipo di contenuto text usando questa procedura dettagliata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65a0bc2c53d5d6e970b4aaa956170bc06c24e7c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce40f5673a8aba4ab3f7714a3aafdc3de4697cc4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904844"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877949"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Procedura dettagliata: visualizzare le parentesi graffe corrispondenti
 Implementare le funzionalità basate sul linguaggio, ad esempio la corrispondenza tra parentesi graffe definendo le parentesi graffe che si vuole trovare e aggiungere un tag del marcatore di testo alle parentesi graffe corrispondenti quando il cursore si trova su una delle parentesi graffe. È possibile definire parentesi graffe nel contesto di una lingua, definire l'estensione del nome di file e il tipo di contenuto e applicare i tag solo a tale tipo o applicare i tag a un tipo di contenuto esistente, ad esempio "Text". Nella procedura dettagliata seguente viene illustrato come applicare tag di corrispondenza tra parentesi graffe al tipo di contenuto "Text".
@@ -122,5 +124,5 @@ Implementare le funzionalità basate sul linguaggio, ad esempio la corrispondenz
 
 4. Quando si posiziona il punto di inserimento prima di una parentesi graffa aperta, è necessario evidenziare sia la parentesi graffa che la parentesi graffa di chiusura corrispondente. Quando si posiziona il cursore immediatamente dopo la parentesi graffa di chiusura, è necessario evidenziare sia la parentesi graffa che la parentesi graffa aperta corrispondente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: collegare un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

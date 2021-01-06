@@ -1,5 +1,7 @@
 ---
-title: Eseguire il debug in un cluster ad alte prestazioni | Microsoft Docs
+title: Eseguire il debug in un cluster High-Performance | Microsoft Docs
+description: Informazioni sulle peculiarità del debug di un programma di multielaborazione in un cluster ad alte prestazioni. Due finestre sono particolarmente utili e sono disponibili tecniche particolari.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5f33fe5fd556830d0276f3e7cbfef3731dfe7db
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6b19f1d919095f30e4408056e49847c3c9ba5671
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852439"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903109"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Procedura: eseguire il debug in un cluster ad alte prestazioni (C#, Visual Basic, C++)
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Procedura: eseguire il debug in un cluster High-Performance (C#, Visual Basic, C++)
 
 Il debug di un programma con multiprocessing in un cluster ad alte prestazioni è simile al debug di un programma normale in un computer remoto. È tuttavia necessario fare alcune considerazioni specifiche. Per i requisiti generali di configurazione remota, vedere [Remote Debugging](../debugger/remote-debugging.md).
 
@@ -97,9 +99,9 @@ Il debug di un programma con multiprocessing in un cluster ad alte prestazioni �
 `(MachineName = marvin) & (ThreadName = fourier1)`
 
 ## <a name="see-also"></a>Vedere anche
-- [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Debug remoto](../debugger/remote-debugging.md)
 - [Procedura: utilizzare la finestra processi](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
 - [Inizia a eseguire il debug di app multithread](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Thread e processi](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))
-- [Uso di punti di interruzione](../debugger/using-breakpoints.md)
+- [Utilizzo di punti di interruzione](../debugger/using-breakpoints.md)
