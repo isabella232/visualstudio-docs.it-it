@@ -1,7 +1,8 @@
 ---
 title: Finestra di dialogo Microsoft Visual Studio debugger (generata eccezione) | Microsoft Docs
 titleSuffix: ''
-ms.custom: seodec18
+description: "Informazioni sulle operazioni da eseguire quando si verifica un'eccezione che il programma deve gestire. È possibile: 1) interrompere il debugger. 2) continua; o 3) ignora."
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8376d0cd82e309c2c8db94e38b8c6a2083bd429a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c86c765ad8ebfbe36dcaca484f7da4121b7e297
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731202"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975277"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>finestra di dialogo Debugger di Microsoft Visual Studio (generata eccezione)
 Si è verificata un'eccezione nel programma. In questa finestra di dialogo è indicato il tipo di eccezione generata. Il codice deve gestire questa eccezione. Per la gestione dell'eccezione sono disponibili le seguenti opzioni:

@@ -1,5 +1,7 @@
 ---
 title: Finestra di output, debug, finestra di dialogo Opzioni | Microsoft Docs
+description: È possibile specificare quali tipi di informazioni di debug vengono visualizzati nella finestra Output. Informazioni su come eseguire questa operazione e sui tipi di informazioni che è possibile controllare.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9224258a2dfd48cc17ed15f9723e455e225af8b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7f74b0e490cf8b2baaa8818fa8f8eebb7842a30
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62904787"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975017"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Finestra di output, Debug, finestra di dialogo Opzioni
 È possibile specificare quali tipi di informazioni di debug vengono visualizzati nella finestra **Output**. Per visualizzare queste opzioni aprire il menu **Strumenti**, fare clic su **Opzioni**, espandere il nodo **Debug** e fare clic su **Finestra di output**.

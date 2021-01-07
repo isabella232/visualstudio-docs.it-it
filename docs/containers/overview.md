@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: f1473c731dbf9413cf695e1b2331039c3880b8d7
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: 4f8c1c265f49b600880cd1278b51095fda9cfb1d
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829867"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975147"
 ---
 # <a name="container-tools-in-visual-studio"></a>Strumenti per contenitori in Visual Studio
 
@@ -105,7 +105,7 @@ Quando si vuole comporre una soluzione con più contenitori tramite Docker Compo
 
 Per aggiungere il supporto dell'orchestrazione dei contenitori tramite Docker Compose, fare clic con il pulsante destro del mouse sul nodo della soluzione o del progetto in **Esplora soluzioni**, scegliere **Aggiungi > Supporto dell'orchestrazione del contenitore**. Scegliere quindi **Docker Compose** per gestire i contenitori.
 
-Dopo aver aggiunto il supporto dell'orchestrazione dei contenitori al progetto, si noteranno un *Dockerfile* aggiunto al progetto (se non esisteva già) e una cartella **docker-compose** aggiunta alla soluzione in ** Esplora soluzioni**, come illustrato di seguito:
+Dopo aver aggiunto il supporto dell'orchestrazione dei contenitori al progetto, si noteranno un *Dockerfile* aggiunto al progetto (se non esisteva già) e una cartella **docker-compose** aggiunta alla soluzione in **Esplora soluzioni**, come illustrato di seguito:
 
 ![File di Docker in Esplora soluzioni in Visual Studio](media/overview/docker-support-solution-explorer.png)
 
@@ -119,9 +119,9 @@ Ripetere il processo con gli altri progetti che si vuole controllare tramite Doc
 Per aggiungere il supporto di Kubernetes, installare [Visual Studio Tools per Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).
 ::: moniker-end
 
-Con il supporto di Kubernetes, è possibile abilitare una connessione tra il progetto locale e un cluster di Kubernetes in esecuzione nel [servizio Azure Kubernetes](/azure/aks), riuscendo così a modificare ed eseguire il debug dei servizi in esecuzione nel servizio Azure Kubernetes con Visual Studio.  Questo servizio viene fornito da [Azure Dev Spaces](/azure/dev-spaces/quickstart-netcore-visualstudio). Azure Dev Spaces consente anche di configurare rami separati dei servizi Kubernetes chiamati *spazi di Azure Dev Spaces* per scopi di sviluppo. È quindi possibile isolare in modo efficiente i servizi di produzione dalle versioni attive in fase di sviluppo e mantenere nettamente separate modifiche distinte.
+Con il supporto di Kubernetes, è possibile abilitare una connessione tra il progetto locale e un cluster Kubernetes in esecuzione in [Azure Kubernetes Service (AKS)](/azure/aks), quindi modificare ed eseguire il debug dei servizi in esecuzione con Visual Studio.  Questo servizio viene fornito da [Bridge a Kubernetes](overview-bridge-to-kubernetes.md). Bridge to Kubernetes consente inoltre di configurare rami distinti dei servizi Kubernetes a scopo di sviluppo, in modo da poter isolare in modo efficiente i servizi di produzione dalle versioni di lavoro in fase di sviluppo e di rendere separate le modifiche distinte.
 
-Per aggiungere il supporto di Kubernetes ai progetti, scegliere **Kubernetes/Helm** quando si aggiunge il supporto dell'orchestrazione dei contenitori. Vengono aggiunti vari file al progetto, tra i quali *azds.yaml*, che consente di configurare Azure Dev Spaces, e grafici Helm che descrivono la struttura dei servizi Kubernetes.
+Per aggiungere il supporto di Kubernetes ai progetti, scegliere **Kubernetes/Helm** quando si aggiunge il supporto dell'orchestrazione dei contenitori. Al progetto vengono aggiunti diversi file, inclusi i grafici Helm che descrivono la struttura dei servizi Kubernetes. Per iniziare a usare Bridge per Kubernetes, vedere [usare Bridge per Kubernetes](bridge-to-kubernetes.md).
 
 ## <a name="service-fabric-support"></a>Supporto di Service Fabric
 

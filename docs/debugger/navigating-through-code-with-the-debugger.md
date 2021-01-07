@@ -1,6 +1,7 @@
 ---
 title: Esplorare il codice con il debugger | Microsoft Docs
-ms.custom: seodec18
+description: 'Informazioni su come usare il debugger di Visual Studio per risolvere i problemi del codice. Gli argomenti includono: Introduzione alla modalità di interruzioni, esecuzione del codice istruzione per istruzione e esecuzione fino a una destinazione.'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/12/2018
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cd7bb050204d65bb78a597c1ae3c7eea36ac184
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 0ffe163ab567de98161f185ba2f3d2522c505095
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729353"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975212"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Esplorare il codice con il debugger di Visual Studio
 
@@ -110,7 +111,7 @@ I punti di interruzione in Visual Studio forniscono un'ampia gamma di funzionali
 
    ![Finestra di dialogo nuovo punto di interruzione della funzione](../debugger/media/dbg_execution_newbreakpoint.png "Nuovo punto di interruzione della funzione")
 
-1. Selezionare **OK**.
+1. Seleziona **OK**.
 
 Se la funzione è in overload o in più di uno spazio dei nomi, è possibile scegliere quella desiderata nella finestra punti di **interruzione** .
 
@@ -186,7 +187,7 @@ Per caricare i simboli Microsoft, vedere [configurare i percorsi dei simboli e l
 ## <a name="step-into-properties-and-operators-in-managed-code"></a><a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Eseguire istruzioni di proprietà e operatori nel codice gestito
  Il debugger esegue le istruzioni/routine di proprietà e operatori nel codice gestito per impostazione predefinita. Nella maggior parte dei casi, l'esperienza di debug risulta notevolmente migliorata. Per abilitare l'esecuzione di un'istruzione in proprietà o operatori, scegliere Opzioni di **debug**  >  . Nella pagina **debug**  >  **generale** deselezionare la casella di controllo Esegui istruzione/routine di **proprietà e operatori (solo gestito)** .
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Che cos'è il debug?](../debugger/what-is-debugging.md)
 - [Tecniche e strumenti di debug CRT](../debugger/write-better-code-with-visual-studio.md)
 - [Esaminare prima di tutto il debug](../debugger/debugger-feature-tour.md)

@@ -1,5 +1,7 @@
 ---
 title: Finestra di dialogo Cerca processo | Microsoft Docs
+description: Usare la ricerca dei processi per trovare e selezionare il nodo per un processo specifico nella visualizzazione processi. È possibile specificare l'ID del processo, la stringa del modulo e la direzione di ricerca.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 190ec35d014e6b443a9f80bf79433ac14b8fb8ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62903769"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975095"
 ---
 # <a name="process-search-dialog-box"></a>Finestra di dialogo Ricerca processi
 Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per un processo specifico nella [visualizzazione processi](../debugger/processes-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo su una finestra visualizzazione **processi** . Scegliere quindi **trova processo** dal menu **Cerca** .

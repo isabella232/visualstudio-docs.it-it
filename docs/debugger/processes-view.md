@@ -1,5 +1,7 @@
 ---
 title: Visualizzazione processi | Microsoft Docs
+description: Visualizzazione processi consente di visualizzare un albero di tutti i processi attivi nel sistema. Per ulteriori informazioni sui contenuti e sugli utilizzi, vedere i collegamenti a ulteriori informazioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a52da28d01eac4f04081497888fbbfccaf4495e2
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62904229"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975134"
 ---
 # <a name="processes-view"></a>Visualizzazione processi
 Nella visualizzazione processi viene visualizzato un albero di tutti i processi attivi nel sistema. Vengono visualizzati l'ID del processo e il nome del modulo. Utilizzare la visualizzazione processi se si desidera esaminare un particolare processo di sistema, che in genere corrisponde a un programma in esecuzione. I processi sono identificati dai nomi dei moduli o sono designati come "processi di sistema".
@@ -30,7 +32,7 @@ Nella visualizzazione processi viene visualizzato un albero di tutti i processi 
 
 #### <a name="to-open-the-processes-view"></a>Per aprire la visualizzazione processi
 
-1. Scegliere **processi**dal menu **Spy** .
+1. Scegliere **processi** dal menu **Spy** .
 
    ![Visualizzazione processi di Spy&#43;&#43; ](../debugger/media/spy--_processes.png "_Processes di Spy + +") Visualizzazione processi di Spy + +
 

@@ -1,5 +1,7 @@
 ---
 title: Tecniche di debug MFC | Microsoft Docs
+description: 'Informazioni sulle tecniche per il debug di programmi MFC, tra cui: punti di interruzione codificati, traccia, rilevamento delle perdite di memoria, dump della memoria degli oggetti e riduzione delle dimensioni del programma.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06b42dbf31a8b5f4cb66de047bc1e08a4f840353
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 5cf00191aff408b1133c281e10eea17e3a923215
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600242"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975121"
 ---
 # <a name="mfc-debugging-techniques"></a>Tecniche di debug MFC
 Se si effettua il debug di un programma MFC, possono essere utili le seguenti tecniche di debug.
@@ -430,7 +432,7 @@ La compilazione di moduli selezionati con le librerie di debug MFC consente di e
 
 3. Creare innanzitutto una nuova configurazione di progetto.
 
-   1. Nella finestra di dialogo ** \<Project> pagine delle proprietà** fare clic sul pulsante **Configuration Manager** .
+   1. Nella finestra di dialogo **\<Project> pagine delle proprietà** fare clic sul pulsante **Configuration Manager** .
 
    2. Nella [finestra di dialogo Gestione configurazione](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))individuare il progetto all'interno della griglia. Nella colonna **configurazione** selezionare **\<New...>** .
 
@@ -448,7 +450,7 @@ La compilazione di moduli selezionati con le librerie di debug MFC consente di e
 
    2. Nella griglia delle impostazioni del progetto espandere **Impostazioni predefinite progetto** (se necessario).
 
-   3. In **Impostazioni predefinite progetto**trovare **Uso di MFC**. L'impostazione corrente verrà visualizzata nella colonna di destra della griglia. Fare clic sull'impostazione corrente e modificarla in **Usa MFC in una libreria statica**.
+   3. In **Impostazioni predefinite progetto** trovare **Uso di MFC**. L'impostazione corrente verrà visualizzata nella colonna di destra della griglia. Fare clic sull'impostazione corrente e modificarla in **Usa MFC in una libreria statica**.
 
    4. Nel riquadro di sinistra della finestra di dialogo **Pagine delle proprietà** aprire la cartella **C/C++** e selezionare **Preprocessore**. Nella griglia delle proprietà cercare **Definizioni preprocessore** e sostituire "NDEBUG" con "_DEBUG".
 
@@ -472,7 +474,7 @@ La compilazione di moduli selezionati con le librerie di debug MFC consente di e
 
    6. Fare clic sulle impostazioni **Formato informazioni di debug** e selezionare l'opzione desiderata (in genere **/ZI**) per le informazioni di debug.
 
-   7. Se si usa un'applicazione generata mediante una creazione guidata di applicazioni o si fa uso di intestazioni precompilate, sarà necessario disattivare tali intestazioni o compilarle nuovamente prima di compilare gli altri moduli. In caso contrario, verranno generati l'avviso C4650 e il messaggio di errore C2855. È possibile disattivare le intestazioni precompilate modificando l'impostazione **Crea/Usa intestazioni precompilate** nella finestra di dialogo ** \<Project> Proprietà** (cartella**proprietà di configurazione** , sottocartella **C/C++** , categoria **intestazioni precompilate** ).
+   7. Se si usa un'applicazione generata mediante una creazione guidata di applicazioni o si fa uso di intestazioni precompilate, sarà necessario disattivare tali intestazioni o compilarle nuovamente prima di compilare gli altri moduli. In caso contrario, verranno generati l'avviso C4650 e il messaggio di errore C2855. È possibile disattivare le intestazioni precompilate modificando l'impostazione **Crea/Usa intestazioni precompilate** nella finestra di dialogo **\<Project> Proprietà** (cartella **proprietà di configurazione** , sottocartella **C/C++** , categoria **intestazioni precompilate** ).
 
 7. Scegliere **Compila** dal menu **Compila** per compilare nuovamente i file di progetto non aggiornati.
 
@@ -480,5 +482,5 @@ La compilazione di moduli selezionati con le librerie di debug MFC consente di e
 
    [Contenuto dell'argomento](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 [Debug del codice nativo](../debugger/debugging-native-code.md)

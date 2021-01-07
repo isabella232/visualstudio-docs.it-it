@@ -1,6 +1,7 @@
 ---
 title: Impostazioni di progetto per una configurazione di debug C++
-ms.custom: seodec18
+description: Configurare il debug di C e C++ nelle pagine delle proprietà. Questo articolo descrive le impostazioni e indica la categoria.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/26/2018
 ms.topic: reference
 f1_keywords:
@@ -112,12 +113,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bca39b97f6363d8b8fefcfd691b69baf85c32170
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6130b49beecb3411c275fc5d2005b7aabee262fd
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72450384"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975290"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Impostazioni di progetto per una configurazione di debug C++
 È possibile modificare le impostazioni di progetto per una configurazione di debug C o C++ nella finestra di dialogo **pagine delle proprietà** , come descritto in [procedura: impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md). Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.
@@ -187,7 +188,7 @@ Per eseguire il debug di dll esterne al progetto, vedere [debug di progetti DLL]
 
 ## <a name="see-also"></a>Vedere anche
 - [Debug del codice nativo](../debugger/debugging-native-code.md)
-- [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)
+- [Impostazioni del debugger e preparazione](../debugger/debugger-settings-and-preparation.md)
 - [Creazione e gestione di progetti C++](/cpp/ide/creating-and-managing-visual-cpp-projects)
 - [/ASSEMBLYDEBUG (Aggiunge DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute)
 - [Macro comuni per i comandi e le proprietà di compilazione](/cpp/ide/common-macros-for-build-commands-and-properties)

@@ -1,5 +1,7 @@
 ---
 title: Scheda file di paging, finestra di dialogo Proprietà processo | Microsoft Docs
+description: Utilizzare la scheda file di paging delle proprietà del processo per esaminare il file di paging di un processo. Questo articolo descrive le impostazioni disponibili.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dc3b0aca1b58c18ae4038540c14fc4dbfe4036
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47f4a2e9215cb2e98fdfefecdf978cb4a442ad84
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62904107"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975056"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>Scheda File di paging, finestra di dialogo Proprietà processo
 Utilizzare la scheda **file** di paging per esaminare il file di paging di un processo. Per visualizzare la finestra di [dialogo Proprietà processo](../debugger/process-properties-dialog-box.md), spostare lo stato attivo in una finestra [visualizzazione processi](../debugger/processes-view.md) . Selezionare un nodo di processo nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .

@@ -1,5 +1,7 @@
 ---
 title: Finestra di dialogo Proprietà processo | Microsoft Docs
+description: 'Utilizzare le proprietà del processo per ottenere ulteriori informazioni su un processo selezionato nella visualizzazione processi. Sono disponibili quattro schede: generale, memoria, file di paging e spazio.'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2448659a8725c7e284e12a99d52478144ebec1b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abf4e8c6d1e61441459b0b48adfda4fa8728f44a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62903756"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975108"
 ---
 # <a name="process-properties-dialog-box"></a>Finestra di dialogo Proprietà processo
 Utilizzare questa finestra di dialogo per ottenere ulteriori informazioni su un processo specifico. Per visualizzare questa finestra di dialogo, spostare lo stato attivo su una finestra [visualizzazione processi](../debugger/processes-view.md) . Selezionare un nodo di processo nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .
