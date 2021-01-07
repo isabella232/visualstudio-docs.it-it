@@ -6,8 +6,6 @@
       href: what-is-debugging.md
     - name: Tecniche e strumenti di debug CRT
       href: write-better-code-with-visual-studio.md
-    - name: Trovare l'attività di debug
-      href: find-your-debugging-task.md
 - name: Guide rapide introduttive
   items:
     - name: Presentazione del debugger
@@ -944,5 +942,7 @@
                   href: copyright-notice-for-spy-increment-help.md
 - name: Risorse
   items:
+    - name: Domande frequenti - Trovare la funzionalità di debug
+      href: find-your-debugging-task.md
     - name: Novità relative al debugger di Visual Studio
       href: what-s-new-for-the-debugger-in-visual-studio.md
