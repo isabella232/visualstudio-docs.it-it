@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd1ff5ff0f8c7510185236c425ddd870f8b500f
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
+ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97760926"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031042"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Associare a processi in esecuzione con il debugger di Visual Studio
 
@@ -199,7 +199,7 @@ Per selezionare rapidamente un processo in esecuzione a cui connettersi, in Visu
 |Eseguire il debug di un'app C#, Visual Basic o C++ nel computer locale|Usare il debug standard (**F5**) o **Connetti a processo**|*\<appname>. exe*|Nella maggior parte degli scenari, utilizzare il debug standard e non la **connessione al processo**.|
 |Eseguire il debug remoto di un'app desktop di Windows|Strumenti remoti|N/D| Vedere [eseguire il debug remoto di un'app C# o Visual Basic](../debugger/remote-debugging-csharp.md) o [eseguire il debug remoto di un'app C++](../debugger/remote-debugging-cpp.md)|
 |Eseguire il debug di .NET Core in Linux|Usare **Connetti a processo**|*dotnet.exe* o un nome di processo univoco|Per usare SSH, vedere [eseguire il debug remoto di .NET Core in esecuzione su Linux tramite SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Per le app in contenitori, vedere [connettersi a un processo in esecuzione in un contenitore Docker](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container).|
-|Eseguire il debug di un'app in contenitori|*dotnet.exe* o un nome di processo univoco|Vedere [connettersi a un processo in esecuzione in un contenitore Docker](../debugger/attach-to-process-running-in-docker-container.md)|
+|Eseguire il debug di un'app in contenitori|Usare **Connetti a processo**|*dotnet.exe* o un nome di processo univoco|Vedere [connettersi a un processo in esecuzione in un contenitore Docker](../debugger/attach-to-process-running-in-docker-container.md)|
 |Debug remoto di Python in Linux|Usare **Connetti a processo**|*debugpy*|Vedere [connettersi in remoto da strumenti Python](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)|
 |Eseguire il debug di un'app ASP.NET nel computer locale dopo avere avviato l'app senza il debugger|Usare **Connetti a processo**|*iiexpress.exe*|Questa operazione può essere utile per velocizzare il caricamento dell'app, ad esempio quando si esegue la profilatura. |
 |Eseguire il debug di altri tipi di app supportati in un processo server|Se il server è remoto, utilizzare Remote Tools e **Connetti a processo**|*chrome.exe*, *iexplore.exe* o altri processi|Se necessario, utilizzare Monitoraggio risorse per facilitare l'identificazione del processo. Vedere [Debug remoto](../debugger/remote-debugging.md).|
@@ -249,7 +249,7 @@ Se si desiderano informazioni più specifiche sui motivi per cui il debugger non
 
     La connessione non verrà eseguita e verrà visualizzato un messaggio di errore specifico.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Eseguire il debug di più processi](../debugger/debug-multiple-processes.md)
 - [Debug just-in-Time](../debugger/just-in-time-debugging-in-visual-studio.md)
