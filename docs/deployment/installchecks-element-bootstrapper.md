@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 660fc893eb22d0c40805a8bf7b2efc86fd83c3b1
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cf02fda50678d9de4eb01dc28b4825844e33063e
+ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350868"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069500"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;&gt;Elemento InstallChecks (programma di avvio automatico)
 L' `InstallChecks` elemento supporta l'avvio di una serie di test sul computer locale per assicurarsi che siano stati installati tutti i prerequisiti appropriati per un'applicazione.
@@ -142,7 +142,7 @@ L' `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 |`FileName`|facoltativo. Nome di un file. Se specificato, il valore ottenuto dalla chiave del registro di sistema viene considerato un percorso di directory e tale nome viene aggiunto al nome. Se non specificato, il valore restituito dal registro di sistema si presuppone che corrisponda al percorso completo di un file.|
 |`SearchDepth`|facoltativo. Profondità in corrispondenza della quale ricercare le sottocartelle per il file specificato. La ricerca è di primo livello. Il valore predefinito è 0, che limita la ricerca alla cartella di livello superiore specificata dal valore della chiave del registro di sistema.|
 
-## <a name="remarks"></a>Commenti
+## <a name="remarks"></a>Osservazioni
  Mentre gli elementi sottostanti `InstallChecks` definiscono i test da eseguire, non li eseguono. Per eseguire i test, è necessario creare `Command` elementi sotto l' `Commands` elemento.
 
 ## <a name="example"></a>Esempio
@@ -158,7 +158,7 @@ L' `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
 ## <a name="installconditions"></a>InstallConditions
  Quando `InstallChecks` vengono valutati, producono proprietà. Le proprietà vengono quindi utilizzate da `InstallConditions` per determinare se un pacchetto deve eseguire l'installazione, il bypass o l'esito negativo. Nella tabella seguente sono elencate le `InstallConditions` :
 
-|Condizione|Descrizione|
+|Condizione|Description|
 |-|-|
 |`FailIf`|Se una `FailIf` condizione restituisce true, il pacchetto avrà esito negativo. Le altre condizioni non verranno valutate.|
 |`BypassIf`|Se una `BypassIf` condizione restituisce true, il pacchetto verrà ignorato. Le altre condizioni non verranno valutate.|
@@ -177,9 +177,19 @@ L' `InstallChecks` elemento supporta l'avvio di una serie di test sul computer l
  Ad esempio, per bloccare l'installazione in un computer che esegue Windows 95, usare codice simile al seguente:
 
 ```xml
-<!-- Block install on Windows 95 -->
+    <!-- Block install on Windows 95 -->
     <FailIf Property="Version9X" Compare="VersionLessThan" Value="4.10" String="InvalidPlatform"/>
 ```
+
+ Per ignorare l'esecuzione dei controlli di installazione se viene soddisfatta una condizione FailIf o BypassIf, usare l'attributo BeforeInstallChecks.  Esempio:
+
+```xml
+    <!-- Block install and do not evaluate install checks if user does not have admin privileges -->
+    <FailIf Property="AdminUser" Compare="ValueEqualTo" Value="false" String="AdminRequired" BeforeInstallChecks="true"/>
+```
+
+>[!NOTE]
+>L' `BeforeInstallChecks` attributo è supportato a partire dalla versione di Visual Studio 2019 Update 9.
 
 ## <a name="see-also"></a>Vedere anche
 - [\<Commands> elemento](../deployment/commands-element-bootstrapper.md)
