@@ -453,6 +453,12 @@
           href: how-to-generate-code-metrics-data.md
         - name: Usare dati di metrica del codice
           href: working-with-code-metrics-data.md
+        - name: Risorse
+          items:
+            - name: Intervallo indici di manutenibilità e significato
+              href: code-metrics-maintainability-index-range-and-meaning.md
+            - name: Accoppiamento tra classi
+              href: code-metrics-class-coupling.md
 - name: Analisi del codice C++
   items:
     - name: Analizzare il codice C e C++
