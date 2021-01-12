@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b934c6cb7c2a6ba98113a5e68091ab53f54b1423
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 1bb738e0e12598fd31c51c6b3cf2fa684badae40
+ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833364"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98113600"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -377,7 +377,15 @@ I test possono essere eseguiti da Esplora test facendo clic con il pulsante dest
 > [!NOTE]
 > Non è possibile eseguire un test in una classe astratta, poiché i test vengono solo definiti nelle classi astratte ma non ne viene creata l'istanza. Per eseguire i test nelle classi astratte, creare una classe che deriva dalla classe astratta.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="test-audio-cue"></a>Testare la cue audio
+Esplora test può riprodurre un suono quando viene completata un'esecuzione del test. Sono presenti due suoni: un suono per indicare che l'esecuzione dei test è riuscita con tutti i test superati e un secondo suono per indicare che l'esecuzione dei test è stata completata con almeno un test non superato. È possibile configurare questi suoni nella finestra di dialogo audio di Windows 10 predefinita. Questa funzionalità è disponibile a partire da Visual Studio 2019 Update 16,9 Preview 3.
+
+1. Aprire la finestra di dialogo audio predefinito di Windows 10.
+2. Passare alla scheda **suoni** .
+3. Trovare la categoria **Microsoft Visual Studio** . Scegliere l' **esecuzione dei test riuscita** o i suoni di **esecuzione dei test non riusciti** per selezionare i suoni del set di impostazioni o passare al file audio.  
+![Finestra di dialogo audio di Windows 10](../test/media/default-windows-10-sound-dialog.png)
+
+## <a name="see-also"></a>Vedere anche
 
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)
 - [Eseguire il debug di unit test con Esplora test](../test/debug-unit-tests-with-test-explorer.md)
