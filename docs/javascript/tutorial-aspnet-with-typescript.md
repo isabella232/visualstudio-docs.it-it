@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 58e3557d260b821055c533fc703a1f47949c5bfb
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: ef287616f5b214566a273817c229d9105bf253c5
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781058"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129484"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Esercitazione: creare un'app ASP.NET Core con TypeScript in Visual Studio
 
@@ -47,10 +47,10 @@ In questa esercitazione verranno illustrate le procedure per:
 * È necessario che Visual Studio sia installato e che il carico di lavoro sviluppo Web ASP.NET.
 
     ::: moniker range=">=vs-2019"
-    Se Visual Studio 2019 non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/)per   installarlo gratuitamente.
+    Se Visual Studio 2019 non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Se Visual Studio 2017 non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/)per   installarlo gratuitamente.
+    Se Visual Studio 2017 non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
     ::: moniker-end
 
     Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, passare a **strumenti**  >  **Ottieni strumenti e funzionalità...**, che consente di aprire la programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo ASP.NET e Web**, quindi scegliere **Cambia**.
@@ -69,7 +69,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene il codic
 1. Creare un nuovo progetto.
 
     ::: moniker range=">=vs-2019"
-    Se la finestra di avvio non è aperta, **File**scegliere  >  **finestra di avvio**file. Nella finestra Start scegliere **Crea un nuovo progetto**. Nell'elenco a discesa lingua scegliere **C#**. Nella casella di ricerca digitare **ASP.NET**, quindi scegliere **ASP.NET Core applicazione Web**. Scegliere **Avanti**.
+    Se la finestra di avvio non è aperta, scegliere  >  **finestra di avvio** file. Nella finestra Start scegliere **Crea un nuovo progetto**. Nell'elenco a discesa lingua scegliere **C#**. Nella casella di ricerca digitare **ASP.NET**, quindi scegliere **ASP.NET Core applicazione Web**. Scegliere **Avanti**.
 
     Digitare un nome per il progetto e scegliere **Crea**.
     ::: moniker-end
@@ -92,7 +92,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene il codic
 
    Visual Studio aggiunge il pacchetto NuGet nel nodo **dipendenze** in Esplora soluzioni.
 
-1. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **aggiungi > nuovo elemento**. Scegliere il **file di configurazione TYPESCRIPT JSON**e quindi fare clic su **Aggiungi**.
+1. Fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **aggiungi > nuovo elemento**. Scegliere il **file di configurazione TYPESCRIPT JSON** e quindi fare clic su **Aggiungi**.
 
    Visual Studio aggiunge il *tsconfig.jsnel* file alla radice del progetto. È possibile usare questo file per [configurare le opzioni](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) per il compilatore typescript.
 
@@ -100,6 +100,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene il codic
 
    ```json
    {
+     "compileOnSave": true,
      "compilerOptions": {
        "noImplicitAny": false,
        "noEmitOnError": true,
@@ -240,7 +241,7 @@ In questa esercitazione si inizia con un semplice progetto che contiene il codic
 
 1. Scegliere **file typescript**, digitare *Library. TS*, quindi scegliere **Aggiungi**.
 
-1. In *Library. TS*aggiungere il codice seguente.
+1. In *Library. TS* aggiungere il codice seguente.
 
    ```ts
    var jqtest = {

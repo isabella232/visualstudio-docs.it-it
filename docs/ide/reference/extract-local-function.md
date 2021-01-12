@@ -1,6 +1,6 @@
 ---
 title: Estrai funzione locale
-description: Trasformare un frammento di codice nel metodo corrispondente selezionando il codice e immettendo CTRL+R, CTRL+M.
+description: Trasformare un frammento di codice nella propria funzione selezionando il codice e digitando CTRL + R, CTRL + M.
 ms.date: 02/19/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 031fbe22ec61837d489df7a6af923ef0cd2454c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e007246b85671a0f4606bbdb3d1e9c4e0dc83541
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77515330"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129458"
 ---
 # <a name="extract-local-function-refactoring"></a>Refactoring Estrai funzione locale
 
@@ -37,7 +37,7 @@ Questo refactoring si applica a:
 
 3. Selezionare **Estrai funzione locale**.
 
-    ![Estrai funzione locale](media/extract-local-function.png)
+    ![Screenshot della finestra di Visual Studio Code con una riga evidenziata. Il menu azioni rapide e refactoring è aperto ed Estrai funzione locale è selezionata.](media/extract-local-function.png)
 
 ## <a name="see-also"></a>Vedere anche
 

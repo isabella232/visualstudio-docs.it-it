@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50f14cc2a7eafe5d65e0c6a6af54bafa2ebb5a1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21f6ac868268c40ea6df837596546f86fd9a3a44
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75569699"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129471"
 ---
 # <a name="extract-a-method-refactoring"></a>Refactoring con estrazione di un metodo
 
@@ -40,11 +40,11 @@ Questo refactoring si applica a:
 
    - C#:
 
-       ![Codice evidenziato - C#](media/extractmethod-highlight-cs.png)
+       ! Screenshot che illustra il codice C# per la classe Program. Nella funzione principale della classe, una riga di codice evidenziata.] (media/extractmethod-highlight-cs.png)
 
    - Visual Basic:
 
-       ![Codice evidenziato - Visual Basic](media/extractmethod-highlight-vb.png)
+       ![Screenshot che mostra il codice Visual Basic per il sub principale. In tale sub, viene evidenziata una riga di codice.](media/extractmethod-highlight-vb.png)
 
 2. Eseguire quindi una delle operazioni seguenti:
 
@@ -63,11 +63,11 @@ Questo refactoring si applica a:
 
    - C#:
 
-      ![Rinominare il metodo - C#](media/extractmethod-rename-cs.png)
+      ![Screenshot che illustra il codice C# per la classe Program. Viene evidenziato un nome di metodo e la finestra Rinomina popup è aperta.](media/extractmethod-rename-cs.png)
 
    - Visual Basic:
 
-      ![Rinominare il metodo - Visual Basic](media/extractmethod-rename-vb.png)
+      ![Screenshot che mostra il codice Visual Basic per il sub principale. Viene evidenziato un nome di metodo e la finestra Rinomina popup è aperta.](media/extractmethod-rename-vb.png)
 
 3. Quando si è soddisfatti della modifica, scegliere il pulsante **Applica** o premere **INVIO**. Verrà eseguito il commit delle modifiche.
 
