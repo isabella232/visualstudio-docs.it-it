@@ -1,6 +1,7 @@
 ---
 title: Scrivere un visualizzatore in C# | Microsoft Docs
-ms.custom: seodec18
+description: Seguire una procedura dettagliata per creare un visualizzatore semplice in C#. Mostra i passaggi necessari sia con che senza usare il modello di elemento del visualizzatore.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
@@ -14,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b3b8a67d1b01d7f3a3ada7b391423676b9294e8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8caf1be3c10c0d89ce8780213c0914944ae87842
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286306"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149716"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procedura dettagliata: scrittura di un visualizzatore in C\#
 
 In questa procedura dettagliata viene descritto come usare C# per creare un visualizzatore semplice che consente di visualizzare il contenuto di una stringa in una finestra di messaggio di Windows Form. Questo semplice visualizzatore di stringhe non è particolarmente utile, ma mostra i passaggi di base che è necessario seguire per creare visualizzatori più utili per altri tipi di dati.
 
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni**dal menu **strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
 Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta dal debugger. Pertanto, il primo passaggio consiste nel creare un progetto di libreria di classi per la DLL.
 
@@ -51,18 +52,18 @@ Per creare un visualizzatore, seguire le attività riportate di seguito.
 
 ### <a name="to-rename-class1cs-and-add-microsoftvisualstudiodebuggervisualizers"></a>Per rinominare Class1.cs e aggiungere Microsoft. VisualStudio. DebuggerVisualizers
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su Class1.cs e scegliere **Rinomina** dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su Class1.cs e scegliere **Rinomina** dal menu di scelta rapida.
 
 2. Modificare il nome da Class1.cs a qualcosa di significativo, ad esempio DebuggerSide.cs.
 
    > [!NOTE]
    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modifica automaticamente la dichiarazione di classe in DebuggerSide.cs in modo che corrisponda al nuovo nome file.
 
-3. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **riferimenti** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.
+3. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **riferimenti** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.
 
 4. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** selezionare **Sfoglia** e trovare il Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
-    È possibile trovare la DLL nella sottodirectory * \<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies.* della directory di installazione di Visual Studio.
+    È possibile trovare la DLL nella sottodirectory *\<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies.* della directory di installazione di Visual Studio.
 
 5. Fare clic su **OK**.
 
@@ -104,9 +105,9 @@ Per creare un visualizzatore, seguire le attività riportate di seguito.
 
 ### <a name="to-add-systemwindowsforms"></a>Per aggiungere System.Windows.Forms
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **riferimenti** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **riferimenti** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.
 
-2. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** selezionare **Sfoglia**e individuare il System.Windows.Forms.DLL.
+2. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** selezionare **Sfoglia** e individuare il System.Windows.Forms.DLL.
 
     È possibile trovare la DLL in *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
@@ -130,7 +131,7 @@ Per creare un visualizzatore, seguire le attività riportate di seguito.
 
     Questo codice di esempio non include la gestione degli errori. In un vero visualizzatore o in un qualsiasi altro tipo di applicazione è consigliabile includere la gestione degli errori.
 
-2. Scegliere **Compila MyFirstVisualizer**dal menu **Compila** . La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.
+2. Scegliere **Compila MyFirstVisualizer** dal menu **Compila** . La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.
 
    Il codice sul lato debugger è stato completato. È tuttavia necessario eseguire un altro passaggio, ovvero specificare l'attributo che indica al lato dell'oggetto del debug la raccolta di classi che comprende il visualizzatore.
 
@@ -148,7 +149,7 @@ Nel codice sul lato debugger specificare il tipo da visualizzare (origine oggett
    Description = "My First Visualizer")]
    ```
 
-2. Scegliere **Compila MyFirstVisualizer**dal menu **Compila** . La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.
+2. Scegliere **Compila MyFirstVisualizer** dal menu **Compila** . La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.
 
    A questo punto il visualizzatore è pronto. Se la procedura è stata completata in modo corretto, è possibile compilare il visualizzatore e installarlo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Prima di installare un visualizzatore in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], è tuttavia consigliabile testarlo per assicurarsi che funzioni in modo corretto. Di seguito viene descritto come creare un test harness per eseguire il visualizzatore senza installarlo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
@@ -164,7 +165,7 @@ Nel codice sul lato debugger specificare il tipo da visualizzare (origine oggett
    }
    ```
 
-2. Scegliere **Compila MyFirstVisualizer**dal menu **Compila** . La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.
+2. Scegliere **Compila MyFirstVisualizer** dal menu **Compila** . La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.
 
    Creare quindi un progetto eseguibile per chiamare la DLL del visualizzatore. Per semplicità, si userà un progetto di applicazione console.
 
@@ -185,7 +186,7 @@ Nel codice sul lato debugger specificare il tipo da visualizzare (origine oggett
 
 ### <a name="to-add-necessary-references-to-mytestconsole"></a>Per aggiungere riferimenti necessari a MyTestConsole
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **MyTestConsole** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **MyTestConsole** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.
 
 2. Nella scheda **Sfoglia** della finestra di dialogo **aggiungi riferimento** scegliere Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
@@ -201,7 +202,7 @@ Nel codice sul lato debugger specificare il tipo da visualizzare (origine oggett
 
 ### <a name="to-add-code-to-mytestconsole"></a>Per aggiungere codice a MyTestConsole
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su Program.cs e scegliere **Rinomina** dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su Program.cs e scegliere **Rinomina** dal menu di scelta rapida.
 
 2. Modificare il nome da Program.cs a qualcosa di più significativo, ad esempio TestConsole.cs.
 
@@ -225,7 +226,7 @@ Nel codice sul lato debugger specificare il tipo da visualizzare (origine oggett
 
 ### <a name="to-test-the-visualizer"></a>Per eseguire il test del visualizzatore
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su **MyTestConsole** e scegliere **Imposta come progetto di avvio** dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **MyTestConsole** e scegliere **Imposta come progetto di avvio** dal menu di scelta rapida.
 
 2. Scegliere **Avvia** dal menu **Debug**.
 
@@ -245,7 +246,7 @@ Prima di tutto, è necessario creare un nuovo progetto libreria di classi.
 
 ### <a name="to-create-a-new-class-library"></a>Per creare una nuova libreria di classi
 
-1. Scegliere **nuovo > progetto**dal menu **file** .
+1. Scegliere **nuovo > progetto** dal menu **file** .
 
 2. Nella finestra di dialogo **nuovo progetto** , in **Visual C#**, selezionare **.NET Framework**.
 
@@ -259,7 +260,7 @@ Prima di tutto, è necessario creare un nuovo progetto libreria di classi.
 
 ### <a name="to-add-a-visualizer-item"></a>Per aggiungere un elemento del Visualizzatore
 
-1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse su MySecondVisualizer.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su MySecondVisualizer.
 
 2. Scegliere **Aggiungi** dal menu di scelta rapida, quindi fare clic su **nuovo elemento**.
 
@@ -274,6 +275,6 @@ Prima di tutto, è necessario creare un nuovo progetto libreria di classi.
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Architettura del visualizzatore](../debugger/visualizer-architecture.md)
+- [Architettura del Visualizzatore](../debugger/visualizer-architecture.md)
 - [Procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)
 - [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)

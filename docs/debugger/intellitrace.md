@@ -1,5 +1,7 @@
 ---
 title: IntelliTrace | Microsoft Docs
+description: Usare IntelliTrace per registrare e tenere traccia della cronologia di esecuzione del codice in Visual Studio. Registrare eventi specifici, esaminare il codice correlato e gli errori di debug.
+ms.custom: SEO-VS-2020
 ms.date: 09/19/2018
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 878c2481164bc87d4af5e79a0a978e822e7baafe
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 518043a38f3a0f6945840a36a1f7fcade5a313d7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600257"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149001"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace per Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -106,7 +108,7 @@ Per impostazione predefinita, IntelliTrace registra solo gli eventi di IntelliTr
 
   - Valori nei suggerimenti dati mostrati quando si sposta il puntatore del mouse su una variabile nella finestra di origine per visualizzarne il valore. Tramite IntelliTrace non vengono raccolti i valori nei suggerimenti dati bloccati.
 
-    Quando è abilitata la modalità eventi e snapshot IntelliTrace, IntelliTrace crea uno snapshot del processo dell'applicazione in corrispondenza di ogni punto di **interruzione** del debugger e evento del **passaggio** . Verranno registrati i valori nelle finestre **variabili locali**, **auto**e espressioni di **controllo** , indipendentemente dal fatto che le finestre siano aperte o meno. Verranno raccolti anche i valori nei suggerimenti per i dati aggiunti.
+    Quando è abilitata la modalità eventi e snapshot IntelliTrace, IntelliTrace crea uno snapshot del processo dell'applicazione in corrispondenza di ogni punto di **interruzione** del debugger e evento del **passaggio** . Verranno registrati i valori nelle finestre **variabili locali**, **auto** e espressioni di **controllo** , indipendentemente dal fatto che le finestre siano aperte o meno. Verranno raccolti anche i valori nei suggerimenti per i dati aggiunti.
 
 - **Eccezioni**
 

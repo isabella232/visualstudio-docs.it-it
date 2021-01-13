@@ -1,6 +1,7 @@
 ---
 title: Scrivere un visualizzatore in Visual Basic | Microsoft Docs
-ms.custom: seodec18
+description: Seguire una procedura dettagliata per creare un visualizzatore semplice in Visual Basic. Si crea anche un test harness per testare il visualizzatore.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25720f31c721cae44ed5425631a86b3a41bf475e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4354a226503ef11b8e596cff609912afa7fd34f0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84180532"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149625"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Procedura dettagliata: scrittura di un visualizzatore in Visual Basic
 
@@ -63,7 +64,7 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 
 4. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** selezionare **Sfoglia** e trovare il Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
-    È possibile trovare la DLL nella sottodirectory * \<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies.* della directory di installazione di Visual Studio.
+    È possibile trovare la DLL nella sottodirectory *\<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies.* della directory di installazione di Visual Studio.
 
 5. Fare clic su **OK**.
 
@@ -109,7 +110,7 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Riferimenti** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.
 
-2. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** selezionare **Sfoglia**e individuare il System.Windows.Forms.DLL.
+2. Nella scheda **Sfoglia** della finestra di dialogo **Aggiungi riferimento** selezionare **Sfoglia** e individuare il System.Windows.Forms.DLL.
 
     È possibile trovare la DLL in *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
@@ -238,6 +239,6 @@ Nel codice sul lato debugger specificare il tipo da visualizzare (origine oggett
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Architettura del visualizzatore](../debugger/visualizer-architecture.md)
+- [Architettura del Visualizzatore](../debugger/visualizer-architecture.md)
 - [Procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)
 - [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)

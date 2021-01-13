@@ -1,6 +1,7 @@
 ---
 title: Esegui il debug in fase di progettazione | Microsoft Docs
-ms.custom: ''
+description: Usare la finestra controllo immediato per eseguire il debug del codice in fase di progettazione, senza eseguire l'app. È possibile eseguire una funzione ed esaminare lo stato quando viene raggiunto un punto di interruzione.
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bc5d08e8b0ae71acb846e1e863e24e8b8def0ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f127c630cec0e0b64ab5602e81f2b314a3896b16
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183561"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148847"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Eseguire il debug in fase di progettazione in Visual Studio (C#, C++/CLI, Visual Basic, F #)
 
@@ -57,7 +58,7 @@ Nell'esempio seguente viene Visual Basic. È anche possibile usare la finestra *
    End Module
    ```
 
-1. Impostare un punto di interruzione nella **funzione di fine**riga.
+1. Impostare un punto di interruzione nella **funzione di fine** riga.
 
 1. Aprire la finestra di **controllo immediato** selezionando **debug**  >  **Windows**  >  **immediate**. Digitare `?MyFunction` nella finestra, quindi premere **invio**.
 
@@ -89,7 +90,7 @@ Nell'esempio seguente viene Visual Basic. È anche possibile usare la finestra *
 
 1. Nella seconda istanza di Visual Studio aprire il menu **debug** e scegliere **Connetti a processo...**.
 
-1. A seconda del tipo di progetto (vedere i passaggi precedenti), selezionare il *UwpSurface.exe*, *WpfSurface.exe*o il processo *XDesProc.exe* dall'elenco dei processi disponibili.
+1. A seconda del tipo di progetto (vedere i passaggi precedenti), selezionare il *UwpSurface.exe*, *WpfSurface.exe* o il processo *XDesProc.exe* dall'elenco dei processi disponibili.
 
 1. Nel campo **Connetti a** della finestra di dialogo **Connetti a processo** scegliere il tipo di codice corretto per il controllo personalizzato di cui si vuole eseguire il debug.
 

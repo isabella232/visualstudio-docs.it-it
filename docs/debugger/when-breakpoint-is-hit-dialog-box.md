@@ -1,5 +1,7 @@
 ---
 title: Finestra di dialogo quando il punto di interruzione viene raggiunto | Microsoft Docs
+description: Usare quando viene raggiunto il punto di interruzione per specificare un'azione di interruzione. È possibile specificare che un messaggio deve essere stampato e che l'esecuzione debba proseguire in seguito.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b19f4dd0d4b0cb97bb33e4895f36c4dc8f670c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a528709769f599219a7b3df2b8157b0ee3a605b1
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72728136"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149313"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Finestra di dialogo Quando il punto di interruzione viene raggiunto
 Con questa finestra di dialogo è possibile personalizzare l'azione che si verifica quando viene raggiunto un punto di interruzione.
@@ -35,5 +37,5 @@ Con questa finestra di dialogo è possibile personalizzare l'azione che si verif
  **Continua esecuzione** Questo controllo è abilitato solo quando è selezionata **l'opzione stampa un messaggio** . Con questo controllo selezionato, è possibile usare un punto di interruzione come punto di analisi per tracciare l'esecuzione del programma, anziché interferire quando viene raggiunto il percorso.
 
 ## <a name="see-also"></a>Vedere anche
-- [Uso di punti di interruzione](../debugger/using-breakpoints.md)
+- [Utilizzo di punti di interruzione](../debugger/using-breakpoints.md)
 - [Utilizzo dell'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)

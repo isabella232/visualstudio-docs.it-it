@@ -1,5 +1,7 @@
 ---
 title: Finestra di dialogo Proprietà finestra | Microsoft Docs
+description: Informazioni su come visualizzare le proprietà di una finestra elencata in visualizzazione di Windows. Questo articolo contiene collegamenti ad altri articoli che documentano le proprietà.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c27f10298f3a5621bc68e31bc2b150663955d6c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5bd6c8a7f3b07cdd0667ae8d2c33aeb96d6d7679
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929210"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149222"
 ---
 # <a name="window-properties-dialog-box"></a>Proprietà finestra (finestra di dialogo)
 Utilizzare questa finestra di dialogo per ottenere ulteriori informazioni su una finestra specifica. Per visualizzare questa finestra di dialogo, spostare lo stato attivo sulla finestra di [visualizzazione di Windows](../debugger/windows-view.md) . Selezionare un nodo della finestra nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .

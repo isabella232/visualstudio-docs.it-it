@@ -1,5 +1,7 @@
 ---
 title: Informazioni sul log con punti | Microsoft Docs
+description: Impostare punti per registrare le informazioni nell'output senza modificare o arrestare il codice. È sufficiente specificare una stringa di output nella casella di controllo azione in impostazioni punto di interruzione.
+ms.custom: SEO-VS-2020
 ms.date: 10/28/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 144f83b1be0c3a21aa5cb244f8498f61e3ef380a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "89561338"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150093"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Registrare le informazioni nella finestra di output usando punti in Visual Studio
 
@@ -53,7 +55,7 @@ Il programma di esempio seguente è un semplice `for` ciclo con una variabile co
 
    ![Casella condizioni controllate](../debugger/media/checkedconditionsbox.png "Casella condizioni controllate")
 
-   Sono disponibili tre opzioni per le condizioni: **espressione condizionale** , **filtro** e **numero di passaggi** .
+   Sono disponibili tre opzioni per le condizioni: **espressione condizionale**, **filtro** e **numero di passaggi**.
 
 ## <a name="actions-menu"></a>Menu Azioni
 
@@ -63,7 +65,7 @@ Se ad esempio si desidera visualizzare il valore della `counter` variabile nella
 
 ![Messaggio di output del contatore](../debugger/media/counteroutputmessage.png "Messaggio di output del contatore")
 
-Se si fa clic su **Chiudi** e quindi si esegue il debug del programma ( **F5** ), nella finestra di output verrà visualizzato il seguente output.
+Se si fa clic su **Chiudi** e quindi si esegue il debug del programma (**F5**), nella finestra di output verrà visualizzato il seguente output.
 
 ![Messaggio azioni nella Finestra di output](../debugger/media/actionsmessageinoutputwindow.png "Messaggio azioni nella Finestra di output")
 
@@ -110,7 +112,7 @@ Per il numero di passaggi è possibile scegliere di generare un messaggio quando
 
 ![Numero di passaggi delle espressioni condizionali](../debugger/media/conditionalexpressionhitcount.png "Numero di passaggi delle espressioni condizionali")
 
-### <a name="filter"></a>Filtra
+### <a name="filter"></a>Filtro
 Per una condizione di filtro, specificare quali dispositivi, processi o output dei thread vengono visualizzati per.
 
 ![Filtro espressione condizionale](../debugger/media/conditionalexpressionfilter.png "Filtro espressione condizionale")

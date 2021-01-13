@@ -1,5 +1,7 @@
 ---
 title: Impostare le configurazioni di debug e di versione | Microsoft Docs
+description: Impostare le configurazioni di debug e di rilascio in Visual Studio. Compilare la versione di debug per il debug e la versione di rilascio per la distribuzione finale della versione.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: how-to
 f1_keywords:
@@ -31,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e85f7c67f8dc25bb69f7de07a19286b5c63e938a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 51237a9b73825620c77c7f2a10ad1efe367cdd37
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599899"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149547"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Impostare le configurazioni Debug e Release in Visual Studio
 
@@ -54,11 +56,11 @@ Per altre informazioni sulle configurazioni della build, vedere [Informazioni su
 
 Per modificare la configurazione della build, effettuare una delle operazioni seguenti:
 
-* Scegliere **Configuration Manager**dal menu **Compila** , quindi selezionare **debug** o **rilascia**.
+* Scegliere **Configuration Manager** dal menu **Compila** , quindi selezionare **debug** o **rilascia**.
 
 oppure
 
-* Sulla barra degli strumenti selezionare **Debug ** o **Release** nell'elenco **Configurazione soluzione**.
+* Sulla barra degli strumenti selezionare **Debug** o **Release** nell'elenco **Configurazione soluzione**.
 
   ![configurazione della build della barra degli strumenti](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
@@ -85,7 +87,7 @@ Per informazioni dettagliate sulle impostazioni di progetto per le configurazion
 
 5. Selezionare il pulsante **Avanzate** o il pulsante **Opzioni di compilazione avanzate** in Visual Basic).
 
-6. Nell'elenco **informazioni di debug** (o nell'elenco **genera informazioni di debug** in Visual Basic) scegliere **completo**, **solo PDB**o portabile **Portable**.
+6. Nell'elenco **informazioni di debug** (o nell'elenco **genera informazioni di debug** in Visual Basic) scegliere **completo**, **solo PDB** o portabile .
 
    Il formato portatile è il formato multipiattaforma più recente per .NET Core. Per altre informazioni sulle opzioni, vedere [finestra di dialogo Impostazioni di compilazione avanzate (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 
@@ -120,7 +122,7 @@ Per informazioni dettagliate sulle impostazioni di progetto per le configurazion
 ## <a name="see-also"></a><a name="see-also"></a>Vedere anche
 
 - [Specificare i file di simboli (con estensione pdb) e i file di origine nel debugger di Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
-- [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)<br/>
+- [Impostazioni del debugger e preparazione](../debugger/debugger-settings-and-preparation.md)<br/>
 - [Impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
 - [Impostazioni di progetto per una configurazione di debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
 - [Impostazioni di progetto per una configurazione di debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>

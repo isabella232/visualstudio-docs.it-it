@@ -1,5 +1,7 @@
 ---
 title: Visualizzazione thread | Microsoft Docs
+description: Informazioni sulla visualizzazione thread nello strumento di debug di Spy + +. La visualizzazione thread è un elenco semplice di tutti i thread associati a Windows nel sistema.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c8bb229a0781f299b5fa8c3a8c73670be8c4fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 356db0f3ad8308edae2910e060b5b08731f9aabb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929962"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150210"
 ---
 # <a name="threads-view"></a>Visualizzazione Thread
 La visualizzazione thread è un elenco semplice di tutti i thread associati a Windows nel sistema. Vengono visualizzati l'ID del thread e il nome del modulo per ogni thread. I processi non sono inclusi, ma è possibile trovare facilmente il processo che possiede un thread selezionato.
@@ -26,7 +28,7 @@ La visualizzazione thread è un elenco semplice di tutti i thread associati a Wi
 
 #### <a name="to-open-the-threads-view"></a>Per aprire la visualizzazione thread
 
-1. Scegliere **thread**dal menu **Spy** .
+1. Scegliere **thread** dal menu **Spy** .
 
    ![Visualizzazione thread&#43;&#43; Spy](../debugger/media/spy--_threads.png "_Threads di Spy + +") Visualizzazione thread di Spy + +
 

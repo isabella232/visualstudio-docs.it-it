@@ -1,6 +1,7 @@
 ---
 title: Visualizzare i valori delle variabili nei suggerimenti dati | Microsoft Docs
-ms.custom: seodec18
+description: Usare i suggerimenti dati per visualizzare comodamente le informazioni sulle variabili, incluse le matrici e le strutture, durante il debug. È anche possibile modificare i valori.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 432fd50d30347972d7b1fc8222a430fc90a9e590
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75404273"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149963"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Visualizzare i valori dei dati nei suggerimenti dati nell'editor di codice
 
@@ -71,11 +72,11 @@ Per chiudere un DataTip, passare il puntatore del mouse su DataTip e selezionare
 
 ### <a name="close-all-datatips"></a>Chiudi tutti i suggerimenti dati
 
-Per chiudere tutti i suggerimenti dati, scegliere **Cancella tutti i suggerimenti**dati dal menu **debug** .
+Per chiudere tutti i suggerimenti dati, scegliere **Cancella tutti i suggerimenti** dati dal menu **debug** .
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Chiudi tutti i suggerimenti dati per un file specifico
 
-Per chiudere tutti i suggerimenti dati per un file specifico, scegliere **Cancella tutti i suggerimenti dati \<Filename> aggiunti a **dal menu **debug** .
+Per chiudere tutti i suggerimenti dati per un file specifico, scegliere **Cancella tutti i suggerimenti dati \<Filename> aggiunti a** dal menu **debug** .
 
 ## <a name="expand-and-edit-information"></a>Espandi e modifica informazioni
 È possibile utilizzare i suggerimenti dati per espandere una matrice, una struttura o un oggetto e visualizzarne i membri. È anche possibile modificare il valore di una variabile da un suggerimento dati.
@@ -127,13 +128,13 @@ La variabile viene visualizzata nella finestra **espressioni di controllo** . Se
 
 **Per esportare i suggerimenti dati:**
 
-1. Selezionare **debug**  >  **Esporta suggerimenti**dati.
+1. Selezionare **debug**  >  **Esporta suggerimenti** dati.
 
 1. Nella finestra di dialogo **Esporta suggerimenti** dati passare al percorso in cui salvare il file XML, digitare un nome per il file e quindi selezionare **Salva**.
 
 **Per importare i suggerimenti dati:**
 
-1. Selezionare **debug**  >  **Importa suggerimenti**dati.
+1. Selezionare **debug**  >  **Importa suggerimenti** dati.
 
 1. Nella finestra di dialogo **Importa suggerimenti** dati selezionare il file XML dei suggerimenti dati che si desidera aprire e quindi selezionare **Apri**.
 

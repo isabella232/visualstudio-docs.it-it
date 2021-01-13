@@ -1,5 +1,7 @@
 ---
 title: Aprire la visualizzazione messaggi dalla finestra trova | Microsoft Docs
+description: Utilizzare la finestra di dialogo Trova finestra di Spy + + per selezionare una finestra di destinazione e quindi aprire una visualizzazione messaggi per tale finestra.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b6240807eb82313182278251b353894545b957d
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 0e66e3e1200e1e08776853f2ac8308537e4b4a17
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852270"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148910"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Procedura: aprire la visualizzazione messaggi dalla finestra Trova
 Potrebbe risultare utile utilizzare la finestra di dialogo **Trova finestra** per selezionare una finestra di destinazione e quindi aprire una visualizzazione messaggi di tale finestra.
@@ -25,7 +27,7 @@ Potrebbe risultare utile utilizzare la finestra di dialogo **Trova finestra** pe
 
 1. Disporre le finestre in modo che siano visibili sia Spy + + che la finestra di destinazione.
 
-2. Scegliere **Trova finestra**dal menu **Spy** .
+2. Scegliere **Trova finestra** dal menu **Spy** .
 
     Verrà visualizzata la [finestra di dialogo Trova finestra](../debugger/find-window-dialog-box.md) .
 
@@ -35,7 +37,7 @@ Potrebbe risultare utile utilizzare la finestra di dialogo **Trova finestra** pe
 
      Se si dispone dell'handle della finestra che si desidera esaminare (ad esempio, copiato dal debugger), è possibile digitarlo nella casella di testo **handle** .
 
-4. In **Mostra**selezionare **messaggi**.
+4. In **Mostra** selezionare **messaggi**.
 
 5. Fare clic su **OK**.
 

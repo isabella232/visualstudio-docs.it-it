@@ -1,5 +1,7 @@
 ---
 title: Scheda spazio, finestra di dialogo Proprietà processo | Microsoft Docs
+description: Informazioni su come visualizzare la finestra di dialogo Proprietà processo in Spy + + durante il debug. Esaminare le impostazioni disponibili nella scheda spazio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 563d54c39b4d9ce3bb2d76a9e531161c2c4ee5b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe168f34baf65b00eab59e94afb30e07dfe89b50
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929813"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149079"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Scheda Spazio, finestra di dialogo Proprietà processo
 Utilizzare la scheda **spazio** per esaminare lo spazio degli indirizzi di un processo. Per visualizzare la finestra di [dialogo Proprietà processo](../debugger/process-properties-dialog-box.md), spostare lo stato attivo in una finestra [visualizzazione processi](../debugger/processes-view.md) . Selezionare un nodo di processo nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .
@@ -31,5 +33,5 @@ Utilizzare la scheda **spazio** per esaminare lo spazio degli indirizzi di un pr
 |**Exec-scrittura byte copia**|Per la categoria selezionata, somma di tutto lo spazio di indirizzi che può essere eseguito da programmi, nonché da lettura e scrittura. Questo tipo di protezione viene utilizzato quando la memoria deve essere condivisa tra i processi. Se i processi di condivisione leggono solo la memoria, tutti utilizzeranno la stessa memoria. Se un processo di condivisione desidera l'accesso in scrittura, verrà creata una copia della memoria per il processo.|
 |**Byte senza accesso**|Per la categoria selezionata, la somma di tutto lo spazio di indirizzi che impedisce a un processo di utilizzarla. Se si tenta di scrivere o leggere, viene generata una violazione di accesso.|
 |**Byte sola lettura**|Per la categoria selezionata, somma di tutti gli spazi di indirizzi che possono essere eseguiti e letti.|
-|**Byte lettura/scrittura**|Per la categoria selezionata, somma di tutto lo spazio di indirizzi che consente la lettura e la scrittura.|
+|**Byte di lettura/scrittura**|Per la categoria selezionata, somma di tutto lo spazio di indirizzi che consente la lettura e la scrittura.|
 |**Byte copia/scrittura**|Per la categoria selezionata, somma di tutto lo spazio di indirizzi che consente la condivisione della memoria per la lettura, ma non per la scrittura. Quando i processi leggono questa memoria, possono condividere la stessa memoria. Tuttavia, quando un processo di condivisione vuole avere accesso in lettura/scrittura a questa memoria condivisa, viene creata una copia di tale memoria per la scrittura.|

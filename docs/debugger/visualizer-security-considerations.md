@@ -1,5 +1,7 @@
 ---
 title: Considerazioni sulla sicurezza del Visualizzatore | Microsoft Docs
+description: Un visualizzatore per il debugger di Visual Studio deve essere eseguito con attendibilità totale. Quando si scrive il proprio, tenere presente le possibili minacce alla sicurezza e adottare le precauzioni appropriate.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2db18a1443b0c4faaa288a887a22d935d243f678
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187151"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149742"
 ---
 # <a name="visualizer-security-considerations"></a>Considerazioni sulla sicurezza del visualizzatore
 La scrittura di un visualizzatore comporta possibili rischi per la sicurezza. Attualmente non sono noti attacchi in grado di sfruttare tali rischi, ma gli sviluppatori devono essere a conoscenza della loro esistenza e adottare misure di sicurezza adeguate come descritto in questo argomento al fine di impedire eventuali attacchi futuri.
@@ -38,7 +40,7 @@ La scrittura di un visualizzatore comporta possibili rischi per la sicurezza. At
  Per ovviare a questa vulnerabilità, tenere presenti le interfacce esposte dal visualizzatore.
 
 ## <a name="see-also"></a>Vedere anche
-- [Architettura del visualizzatore](../debugger/visualizer-architecture.md)
+- [Architettura del Visualizzatore](../debugger/visualizer-architecture.md)
 - [Procedura: scrivere un visualizzatore](create-custom-visualizers-of-data.md)
 - [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)
 - [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

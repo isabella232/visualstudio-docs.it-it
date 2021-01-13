@@ -1,5 +1,7 @@
 ---
 title: Riferimenti per Spy + + | Microsoft Docs
+description: Esaminare un elenco di collegamenti di riferimento ad articoli che descrivono ogni comando di menu e la finestra di dialogo dello strumento di debug di Spy + +.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b28c737f0a1c17d302cc2924b5d2c3ddc9c1dbb6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1738b073c8f271e599c1e14bd852b4ebc654dee
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62902556"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98147974"
 ---
 # <a name="spy-reference"></a>Riferimenti per Spy++
 Vedere le sezioni elencate di seguito per le descrizioni di ogni menu e finestra di dialogo di Spy + +:

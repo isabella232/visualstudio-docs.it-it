@@ -1,5 +1,7 @@
 ---
 title: Barra degli strumenti di Spy + + | Microsoft Docs
+description: Informazioni sugli elementi dell'interfaccia utente nella barra degli strumenti di Spy + +, visualizzata sotto la barra dei menu. Per visualizzare o nascondere la barra degli strumenti, scegliere barra degli strumenti dal menu Visualizza.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa1dfe0917fece3c814678295c5abd6013b426b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dc2564a69c291055d53e358c084e7dd9c4d0506
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72729742"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148195"
 ---
 # <a name="spy-toolbar"></a>Barra degli strumenti di Spy++
-La barra degli strumenti viene visualizzata sotto la barra dei menu in Spy + +. Per visualizzare o nascondere la barra degli strumenti, scegliere **barra degli**strumenti dal menu **Visualizza** .
+La barra degli strumenti viene visualizzata sotto la barra dei menu in Spy + +. Per visualizzare o nascondere la barra degli strumenti, scegliere **barra degli** strumenti dal menu **Visualizza** .
 
  Sulla barra degli strumenti sono disponibili i controlli seguenti.
 

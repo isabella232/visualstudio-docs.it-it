@@ -1,5 +1,6 @@
 ---
 title: Riga di comando del profiler-ottenere i dati di concorrenza delle app autonome
+description: Raccogliere dati di concorrenza per applicazioni autonome tramite la riga di comando del profiler in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d49ffdca054034e1ec08105d2041794714bcdee
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 6a04740bdfd54a23ac1ac4e23e2007e0062ddcd3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811123"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148286"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Raccogliere dati di concorrenza per applicazioni autonome tramite la riga di comando del profiler
 Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consente di raccogliere i dati relativi ai conflitti di risorse e all'attività dei thread. Questi dati illustrano l'utilizzo della CPU, nonché i conflitti e la migrazione di thread, i ritardi nella sincronizzazione, le aree di sovrapposizione delle operazioni di I/O e altri eventi di sistema.
@@ -27,8 +28,8 @@ Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../
 
 |Attività|Contenuti correlati|
 |----------|---------------------|
-|**Avviare un'applicazione .NET Framework e sottoporre a profilatura dati di concorrenza **|-   [Procedura: avviare un'applicazione .NET Framework per raccogliere dati di concorrenza](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|
-|**Avviare un'applicazione C/C++ e sottoporre a profilatura dati di concorrenza **|-   [Procedura: avviare un'applicazione nativa per raccogliere dati di concorrenza](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|
+|**Avviare un'applicazione .NET Framework e sottoporre a profilatura dati di concorrenza**|-   [Procedura: avviare un'applicazione .NET Framework per raccogliere dati di concorrenza](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|
+|**Avviare un'applicazione C/C++ e sottoporre a profilatura dati di concorrenza**|-   [Procedura: avviare un'applicazione nativa per raccogliere dati di concorrenza](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|
 |**Connettere il profiler a un'applicazione .NET Framework in esecuzione**|-   [Procedura: connessione del profiler a un'applicazione .NET Framework per raccogliere dati di concorrenza](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)|
 |**Connettere il profiler a un'applicazione C/C++ in esecuzione**|-   [Procedura: connessione del profiler a un'applicazione nativa e raccolta di dati di concorrenza](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)|
 
@@ -55,5 +56,5 @@ Il metodo di concorrenza degli strumenti di profilatura di [!INCLUDE[vsprvs](../
 
 - [Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>Informazioni di riferimento
+## <a name="reference"></a>Riferimento
 - [Riferimenti agli strumenti di profilatura della riga di comando](../profiling/command-line-profiling-tools-reference.md)

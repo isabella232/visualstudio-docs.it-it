@@ -1,5 +1,7 @@
 ---
 title: Modifiche al codice supportate (C# e Visual Basic) | Microsoft Docs
+description: Informazioni sulle modifiche al codice supportate quando si usa la funzionalità modifica e continuazione durante il debug di un progetto C# o Visual Basic in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c480fad064cad602ea3fd19153d53f0276815d30
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 267d9097ebe53b4074bed6c5caf4077006c946eb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509419"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149209"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Modifiche al codice supportate (C# e Visual Basic)
 La funzionalità Modifica e continuazione è in grado di gestire la maggior parte dei tipi di modifiche al codice all'interno del corpo del metodo. Tuttavia, non è possibile applicare durante il debug la maggior parte delle modifiche all'esterno del corpo del metodo nonché alcune modifiche all'interno del corpo del metodo. Per applicare tali modifiche non supportate, interrompere il debug e riavviarlo utilizzando una versione aggiornata del codice.
@@ -56,7 +58,7 @@ La tabella seguente illustra le modifiche che possono essere apportate a C# e Vi
 |Elemento/funzionalità del linguaggio|Operazione di modifica non supportata|
 |-|-|
 |Tutti gli elementi di codice|Ridenominazione|
-|Spazi dei nomi|Add|
+|Spazi dei nomi|Aggiungi|
 |Spazi dei nomi, tipi, membri|Delete|
 |Generics|Aggiungi o modifica|
 |Interfacce|Modifica|
@@ -74,7 +76,7 @@ La tabella seguente illustra le modifiche che possono essere apportate a C# e Vi
 |Operatori o indicizzatori|Modificare un parametro di tipo, un tipo di base, un tipo delegato o un tipo restituito |
 |blocchi catch|Modificare quando contiene un'istruzione attiva|
 |blocchi try-catch-finally|Modificare quando contiene un'istruzione attiva|
-|utilizzo di istruzioni|Add|
+|utilizzo di istruzioni|Aggiungi|
 |metodi o espressioni lambda asincrone|Modificare un metodo/lambda asincrono in un progetto destinato a .NET Framework 4 e inferiore (vedere [i dettagli](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 |Iterators|Modificare un iteratore in un progetto destinato a .NET Framework 4 e inferiore (vedere [i dettagli](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 

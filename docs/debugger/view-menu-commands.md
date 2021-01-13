@@ -1,5 +1,7 @@
 ---
 title: Comandi del menu Visualizza | Microsoft Docs
+description: Il menu di visualizzazione di Spy + + fornisce i comandi per il controllo dell'interfaccia utente. Vedere un elenco dei comandi di menu View, con una breve descrizione di ognuno.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cbfbfb5ee11711b36d20d808cef22b42bcc43b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c28f94520b55ceddc8d77bcb1299c0f6308cdf3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929627"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149924"
 ---
 # <a name="view-menu-commands"></a>comandi del menu Visualizza
 Il menu **Visualizza** include i comandi per il controllo dell'interfaccia utente di Spy + +.

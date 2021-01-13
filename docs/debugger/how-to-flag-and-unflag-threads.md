@@ -1,5 +1,7 @@
 ---
 title: Flag e Rimuovi flag per i thread | Microsoft Docs
+description: Informazioni su come contrassegnare o non contrassegnare i thread in Visual Studio. Contrassegnare o decontrassegnare un thread, più thread o tutti i thread. Contrassegnare solo il codice o quelli associati a un modulo.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,23 +17,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e381faac8a8e4ae6f45f1fde6e2e20dd9f127a97
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e9b7ce5db863987d530fe9e68d026a94474fc13c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852061"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149495"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Procedura: contrassegnare e decontrassegnare i thread (C#, Visual Basic, C++)
 
-È possibile contrassegnare un thread che si desidera prestare particolare attenzione contrassegnando il thread con un'icona nelle finestre **thread**, **stack in parallelo** (visualizzazione thread), espressione di controllo in **parallelo**e **thread GPU** . Questa icona può essere d'aiuto all'utente e ad altri per distinguere i thread con flag dagli altri thread.
+È possibile contrassegnare un thread che si desidera prestare particolare attenzione contrassegnando il thread con un'icona nelle finestre **thread**, **stack in parallelo** (visualizzazione thread), espressione di controllo in **parallelo** e **thread GPU** . Questa icona può essere d'aiuto all'utente e ad altri per distinguere i thread con flag dagli altri thread.
 
 I thread contrassegnati ricevono anche un trattamento speciale nell'elenco dei **thread** sulla barra degli strumenti **posizione di debug** e nelle altre finestre di debug multithread. È possibile visualizzare tutti i thread o solo i thread contrassegnati nell'elenco dei **thread** o nelle altre finestre.
 
 ### <a name="to-flag-or-unflag-a-thread"></a>Per aggiungere o rimuovere flag che contrassegnano un thread
 
 - Nella finestra **thread** o espressione di **controllo in parallelo** individuare il thread a cui si è interessati e fare clic sull'icona del flag per selezionare o deselezionare il flag.
-- Nella finestra **stack in parallelo** , fare clic con il pulsante destro del mouse su un thread o un gruppo di thread e selezionare **flag/ \<thread> ** o **Rimuovi flag/ \<thread> **.
+- Nella finestra **stack in parallelo** , fare clic con il pulsante destro del mouse su un thread o un gruppo di thread e selezionare **flag/ \<thread>** o **Rimuovi flag/ \<thread>**.
 
 ### <a name="to-unflag-all-threads"></a>Per rimuovere i flag di tutti thread
 
@@ -61,6 +63,6 @@ I thread contrassegnati ricevono anche un trattamento speciale nell'elenco dei *
 5. Fare clic su **OK**.
 
 ## <a name="see-also"></a>Vedere anche
-- [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Iniziare il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Procedura dettagliata: eseguire il debug di applicazioni multithread utilizzando la finestra thread](../debugger/how-to-use-the-threads-window.md)

@@ -1,5 +1,7 @@
 ---
 title: Uso della finestra attività | Microsoft Docs
+description: Le attività sono operazioni asincrone che possono essere eseguite simultaneamente. Più attività possono essere eseguite nello stesso thread. Usare le attività per visualizzare le informazioni sull'oggetto Task e WinJS. Promise.
+ms.custom: SEO-VS-2020
 ms.date: 03/18/2018
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7df43a02dbda1fbcbe93decb58721032cd84d657
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901593"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150067"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>Uso della finestra attività (C#, Visual Basic, C++)
 
@@ -54,7 +56,7 @@ Nelle colonne della finestra **Attività** vengono visualizzate le informazioni 
 |**Start Time**|Ora in cui l'attività è diventata attiva.|
 |**Duration**|Numero di secondi durante i quali l'attività è rimasta attiva.|
 |**Tempo di completamento**|Data e ora in cui è stata completata l'esecuzione dell'attività.|
-|**Posizione**|Percorso corrente nello stack di chiamate dell'attività. Passare il mouse su questa cella per visualizzare l'intero stack di chiamate dell'attività. Le attività pianificate non presentano alcun valore in questa colonna.|
+|**Località**|Percorso corrente nello stack di chiamate dell'attività. Passare il mouse su questa cella per visualizzare l'intero stack di chiamate dell'attività. Le attività pianificate non presentano alcun valore in questa colonna.|
 |**Attività**|Metodo iniziale ed eventuali argomenti passati all'attività quando è stata creata.|
 |**AsyncState**|Per il codice gestito, lo stato dell'attività. Per impostazione predefinita, questa colonna è nascosta. Per visualizzarla, aprire il menu di scelta rapida per una delle intestazioni di colonna. Scegliere **Colonne**, **AsyncState**.|
 |**Parent**|ID dell'attività che ha creato questa attività. Se la cella è vuota significa che l'attività non dispone di un'attività padre. Questo dato è applicabile ai soli programmi gestiti.|
@@ -76,7 +78,7 @@ Nelle colonne della finestra **Attività** vengono visualizzate le informazioni 
  ![Modalità raggruppata nella finestra attività](../debugger/media/parallel_tasks_groupedmode.png "Parallel_Tasks_GroupedMode")
 
 ## <a name="parent-child-view"></a>Visualizzazione padre/figlio
- Questa vista è disponibile solo per codice gestito. Facendo clic con il pulsante destro del mouse sull'intestazione della colonna **stato** e scegliendo **raggruppa**per  >  **elemento padre**, è possibile modificare l'elenco di attività in una visualizzazione gerarchica, in cui ogni attività figlio è un sottonodo che può essere visualizzato o nascosto sotto il padre.
+ Questa vista è disponibile solo per codice gestito. Facendo clic con il pulsante destro del mouse sull'intestazione della colonna **stato** e scegliendo **raggruppa** per  >  **elemento padre**, è possibile modificare l'elenco di attività in una visualizzazione gerarchica, in cui ogni attività figlio è un sottonodo che può essere visualizzato o nascosto sotto il padre.
 
 ## <a name="flagging-tasks"></a>Contrassegno delle attività
  È possibile contrassegnare il thread sull'attività su cui è in esecuzione un'attività selezionando l'elemento elenco attività e scegliendo **flag assegnato thread** dal menu di scelta rapida oppure facendo clic sull'icona del flag nella prima colonna. Se si contrassegnano diverse attività, sarà successivamente possibile ordinare in base alla colonna del contrassegno in modo da portare tutte le attività contrassegnate in cima e potersi concentrare su di esse. È inoltre possibile usare la finestra **Stack in parallelo** per visualizzare solo le attività con contrassegno. In questo modo si possono filtrare le attività di poco interesse per il debug. I contrassegni non vengono salvati in modo permanente tra una sessione di debug e l'altra.

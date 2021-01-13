@@ -1,5 +1,7 @@
 ---
 title: Scheda stili, finestra di dialogo Proprietà finestra | Microsoft Docs
+description: Utilizzare la scheda stili in Spy + + per visualizzare gli stili applicati alla finestra selezionata. Consente di visualizzare la finestra di dialogo Proprietà finestra spostando lo stato attivo sulla finestra di visualizzazione di Windows.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 581ad210e5e8b11fec35e2171f4e8c4b5553baa5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 66408749688f80b1c49b317336f76ce148f09c74
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929671"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148663"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Scheda Stili, finestra di dialogo Proprietà finestra
 Utilizzare la scheda **stili** per visualizzare gli stili applicati alla finestra selezionata. Per visualizzare la finestra di [dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo sulla finestra di [visualizzazione di Windows](../debugger/windows-view.md) . Selezionare un nodo della finestra nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .
@@ -24,5 +26,5 @@ Utilizzare la scheda **stili** per visualizzare gli stili applicati alla finestr
 
 |Voce|Descrizione|
 |-----------|-----------------|
-|**Stili di finestra**|Combinazione di codici di stile della finestra e stili di controllo, se applicabile.|
+|**Stili finestra**|Combinazione di codici di stile della finestra e stili di controllo, se applicabile.|
 |**Stili estesi**|Combinazione di codici di stile della finestra estesa.|

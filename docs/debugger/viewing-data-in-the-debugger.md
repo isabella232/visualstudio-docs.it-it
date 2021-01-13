@@ -1,5 +1,7 @@
 ---
 title: Creare visualizzazioni personalizzate dei dati nel debugger | Microsoft Docs
+description: Informazioni sui vari modi per esaminare e modificare lo stato del programma nel debugger di Visual Studio. Sono incluse le finestre auto e espressioni di controllo, i suggerimenti dati e i visualizzatori.
+ms.custom: SEO-VS-2020
 ms.date: 01/09/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63dc11736e92013719fcda2bae0ba9599a8835aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5acac83a6d461f6b7301ff2bfe89d92dc78d00ee
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72568995"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149911"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Creare visualizzazioni personalizzate dei dati nel debugger di Visual Studio (C#, Visual Basic, C++)
 

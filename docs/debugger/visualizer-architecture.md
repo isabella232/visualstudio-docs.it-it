@@ -1,5 +1,7 @@
 ---
 title: Architettura del Visualizzatore | Microsoft Docs
+description: Un visualizzatore Visualizza un tipo specifico di elemento dati e può consentire anche la modifica. Informazioni sull'architettura di un visualizzatore.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6dfbc8c57ff2e78bf0c6ebbd4e9899c372d7084
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9166cc3c98f72e43042a26c0787d1cbf45223a74
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73187166"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149755"
 ---
 # <a name="visualizer-architecture"></a>Architettura del visualizzatore
 L'architettura di un visualizzatore del debugger è definita da due parti:
@@ -90,4 +92,4 @@ L'architettura di un visualizzatore del debugger è definita da due parti:
 - [Procedura dettagliata: scrittura di un visualizzatore in C #](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Procedura dettagliata: scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Procedura dettagliata: scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
-- [Considerazioni sulla sicurezza del visualizzatore](../debugger/visualizer-security-considerations.md)
+- [Considerazioni sulla sicurezza del Visualizzatore](../debugger/visualizer-security-considerations.md)

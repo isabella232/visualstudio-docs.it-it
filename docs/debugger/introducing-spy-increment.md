@@ -1,5 +1,7 @@
 ---
 title: Introduzione a Spy + + | Microsoft Docs
+description: Vedere lo strumento di debug di Spy + +. Visualizza un albero grafico delle relazioni tra oggetti di sistema. Ottiene le proprietà per le finestre, i thread, i processi o i messaggi selezionati.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d04b2e9e04e1f2b952baadbdf0cca32cc3b301b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fb8debef874dd32f52994d0edd4a27d81b340834
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731813"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148793"
 ---
 # <a name="introducing-spy"></a>Introduzione a Spy++
 Spy++ consente di eseguire le attività seguenti:

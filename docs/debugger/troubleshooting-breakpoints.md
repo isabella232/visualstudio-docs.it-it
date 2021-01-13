@@ -1,6 +1,7 @@
 ---
 title: Risolvere i problemi relativi ai punti di interruzione nel debugger | Microsoft Docs
-ms.custom: seodec18
+description: Se un punto di interruzione è disabilitato o non può essere impostato, viene visualizzato come cerchio vuoto. Esaminare qui le informazioni sui problemi che possono verificarsi durante l'impostazione dei punti di interruzione.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 01/23/2018
 ms.topic: troubleshooting
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c11741cb9bb9a0b0c64b9452b54daa6ac226b92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a07f92eccd7884ea3cc3871d04285a82cb5cb62e
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72535938"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148052"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Risolvere i problemi relativi ai punti di interruzione nel debugger di Visual Studio
 
@@ -25,7 +26,7 @@ Nelle due sezioni seguenti vengono descritti gli avvisi principali e come risolv
 
 ### <a name="no-symbols-have-been-loaded-for-this-document"></a>"Nessun simbolo è stato caricato per questo documento"
 
-Passare alla finestra **moduli** (**eseguire il debug**dei  >  **Windows**  >  **moduli**di Windows) e verificare se il modulo è stato caricato.
+Passare alla finestra **moduli** (**eseguire il debug** dei  >    >  **moduli** di Windows) e verificare se il modulo è stato caricato.
 * Se il modulo è caricato, controllare la colonna **stato simboli** per verificare se i simboli sono stati caricati.
   * Se i simboli non vengono caricati, controllare lo stato del simbolo per diagnosticare il problema. Dal menu di scelta rapida di un modulo nella finestra **moduli** fare clic su informazioni sul caricamento dei simboli **...** per vedere il punto in cui il debugger ha cercato di provare a caricare i simboli. Per ulteriori informazioni sul caricamento dei simboli, vedere [specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
   * Se i simboli vengono caricati, il PDB non contiene informazioni sui file di origine. Di seguito sono riportate alcune possibili cause:
@@ -35,7 +36,7 @@ Passare alla finestra **moduli** (**eseguire il debug**dei  >  **Windows**  >  *
 
 * Se il modulo non è caricato, controllare quanto segue per individuare la ragione:
   * Confermare che si sta eseguendo il debug del processo corretto.
-  * Verificare di eseguire il debug del tipo di codice corretto. È possibile individuare il tipo di codice per il quale il debugger è configurato per eseguire il debug nella finestra **processi** (**debug**dei processi di  >  **Windows**  >  **Processes**). Se, ad esempio, si sta provando a eseguire il debug del codice C#, verificare che il debugger sia configurato per il tipo e la versione appropriati di .NET (ad esempio, Managed (v4 \* ) e Managed (v2 \* /v3 \* ) rispetto a Managed (CoreCLR).
+  * Verificare di eseguire il debug del tipo di codice corretto. È possibile individuare il tipo di codice per il quale il debugger è configurato per eseguire il debug nella finestra **processi** (**debug** dei processi di  >  **Windows**  >  ). Se, ad esempio, si sta provando a eseguire il debug del codice C#, verificare che il debugger sia configurato per il tipo e la versione appropriati di .NET (ad esempio, Managed (v4 \* ) e Managed (v2 \* /v3 \* ) rispetto a Managed (CoreCLR).
 
 ### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… il codice sorgente corrente è diverso dalla versione compilata in... "
 
@@ -45,7 +46,7 @@ In rari scenari, è consigliabile eseguire il debug senza avere un codice sorgen
 
 Per disabilitare i controlli di sicurezza, eseguire una delle operazioni seguenti:
 * Per modificare un singolo punto di interruzione, passare il puntatore del mouse sull'icona del punto di interruzione nell'editor e fare clic sull'icona Impostazioni (ingranaggio). Viene aggiunta una finestra di anteprima all'editor. Nella parte superiore della finestra di anteprima è disponibile un collegamento ipertestuale che indica la posizione del punto di interruzione. Fare clic sul collegamento ipertestuale per consentire la modifica della posizione del punto di interruzione e selezionare **Consenti che il codice sorgente sia diverso dall'originale**.
-* Per modificare questa impostazione per tutti i punti di interruzione, **Debug**passare a  >  **Opzioni e impostazioni**di debug. Nella pagina **Debug/Generale** deselezionare l'opzione **Richiedi corrispondenza esatta dei file di origine con la versione originale** . Assicurarsi di riabilitare questa opzione al termine del debug.
+* Per modificare questa impostazione per tutti i punti di interruzione, passare a  >  **Opzioni e impostazioni** di debug. Nella pagina **Debug/Generale** deselezionare l'opzione **Richiedi corrispondenza esatta dei file di origine con la versione originale** . Assicurarsi di riabilitare questa opzione al termine del debug.
 
 ## <a name="the-breakpoint-was-successfully-set-no-warning-but-didnt-hit"></a>Il punto di interruzione è stato impostato (nessun avviso) ma non è stato raggiunto
 

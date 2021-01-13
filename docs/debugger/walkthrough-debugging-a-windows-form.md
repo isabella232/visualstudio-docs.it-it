@@ -1,6 +1,7 @@
 ---
 title: Debug di un Windows Form | Microsoft Docs
-ms.custom: seodec18
+description: "Seguire una procedura dettagliata per vedere come creare ed eseguire il debug di un Windows Form, un'applicazione gestita comune. È possibile utilizzare C#, Visual Basic, C++ o F #."
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cec7b9bc2c56e16d1a5d59701d0953797ae00f4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 31c1bc9e65eb63877d8f8a42902d8ec47a61fd22
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599474"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148093"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: Debug di un Windows Form
 Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea un'applicazione Windows standard. È possibile completare questa procedura dettagliata utilizzando Visual Basic, C# o C++.
@@ -37,7 +38,7 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
 
 ### <a name="to-prepare-for-this-walkthrough"></a>Operazioni preliminari per la procedura dettagliata
 
-- Se è già aperta una soluzione aperta, chiuderla. Scegliere **Chiudi soluzione**dal menu **file** .
+- Se è già aperta una soluzione aperta, chiuderla. Scegliere **Chiudi soluzione** dal menu **file** .
 
 ## <a name="create-a-new-windows-form"></a>Creare un nuovo Windows Form
  Successivamente, verrà creato un nuovo Windows Form.
@@ -50,7 +51,7 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
 
 2. Nel riquadro Tipi progetto aprire il nodo **Visual Basic**, **Visual C#** o **Visual C++** , quindi
 
-    1. Per Visual Basic o Visual C#, selezionare **Windows Desktop**  >  **app Windows Form**per desktop Windows.
+    1. Per Visual Basic o Visual C#, selezionare   >  **app Windows Form** per desktop Windows.
 
     2. Per Visual C++ selezionare **applicazione desktop di Windows**.
 
@@ -60,7 +61,7 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
 
      Visual Studio crea un nuovo progetto e visualizza un nuovo modulo nella finestra di progettazione Windows Forms. Per ulteriori informazioni, vedere [Progettazione Windows Form](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\)).
 
-5. Scegliere **casella degli strumenti**dal menu **Visualizza** .
+5. Scegliere **casella degli strumenti** dal menu **Visualizza** .
 
      Verrà visualizzata la casella degli strumenti. Per altre informazioni, vedere [Casella degli strumenti](../ide/reference/toolbox.md).
 
@@ -114,7 +115,7 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
     > [!NOTE]
     > È anche possibile fare clic con il pulsante destro del mouse su una qualsiasi riga di codice, scegliere punto di **interruzione**, quindi fare clic su Inserisci punto di **interruzione** per aggiungere un punto di interruzione nella riga.
 
-2. Scegliere **Avvia**dal menu **debug** .
+2. Scegliere **Avvia** dal menu **debug** .
 
      Viene avviata l'esecuzione di Windows Form.
 
@@ -122,7 +123,7 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
 
      In Visual Studio si passa alla riga in cui è stato impostato il punto di interruzione nella tabella codici. Tale riga dovrebbe essere evidenziata in giallo. A questo punto è possibile visualizzare le variabili dell'applicazione e controllarne l'esecuzione. È stata arrestata l'esecuzione dell'applicazione, in attesa di un'azione da te.
 
-4. Scegliere **finestre**dal menu **debug** , quindi **guardare**e fare clic su **controllo1**.
+4. Scegliere **finestre** dal menu **debug** , quindi **guardare** e fare clic su **controllo1**.
 
 5. Nella finestra **controllo1** fare clic su una riga vuota. Nella colonna **nome** Digitare `textBox1.Text` (se si utilizza Visual Basic o Visual C#) o `textBox1->Text` (se si utilizza C++), quindi premere INVIO.
 
@@ -171,7 +172,7 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
 
      Windows Form viene avviato in Windows, come se fosse stato fatto doppio clic sul relativo eseguibile. Il debugger non è collegato.
 
-3. Scegliere **Connetti a processo**dal menu **debug** . (Questo comando è disponibile anche nel menu **strumenti** ).
+3. Scegliere **Connetti a processo** dal menu **debug** . (Questo comando è disponibile anche nel menu **strumenti** ).
 
      Verrà visualizzata la finestra di dialogo **Connetti a processo** .
 
@@ -183,6 +184,6 @@ Windows Form è una delle più comuni applicazioni gestite. Un Windows Form crea
 
      Il debugger interrompe l'esecuzione di Windows Form in corrispondenza del punto di interruzione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Debug del codice gestito](../debugger/debugging-managed-code.md)
 - [Sicurezza del debugger](../debugger/debugger-security.md)

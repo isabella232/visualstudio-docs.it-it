@@ -1,5 +1,7 @@
 ---
 title: Comandi del menu albero | Microsoft Docs
+description: Il menu albero di Spy + + fornisce i comandi per espandere o comprimere le visualizzazioni. Vedere un elenco dei comandi di menu della struttura ad albero, con una breve descrizione di ognuno.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc840ac19e48f6a0a6a597ec667a4bc799070e59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d93dec46c99c5a4385f254b797a522925d4b945f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901829"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148728"
 ---
 # <a name="tree-menu-commands"></a>comandi del menu Struttura ad albero
 Il menu **albero** fornisce comandi per espandere o comprimere le visualizzazioni.

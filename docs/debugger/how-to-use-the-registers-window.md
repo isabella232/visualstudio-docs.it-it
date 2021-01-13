@@ -1,6 +1,7 @@
 ---
 title: Visualizzare i valori di registro nel debugger | Microsoft Docs
-ms.custom: seodec18
+description: Visualizzare i valori di registrazione nella finestra registri in Visual Studio. Durante il debug, i valori di registrazione cambiano in base all'esecuzione del codice nell'app.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/19/2018
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed60b21d7c8e90e18b389a29c3343713ac8ece3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8422738b5c46b5482ac65cd24ccc903acdb4506e
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348574"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148039"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Visualizzare i valori di registrazione nella finestra registri (C#, C++, Visual Basic, F #)
 
@@ -50,7 +51,7 @@ Per informazioni sui flag visualizzati nella finestra **registri** , vedere [inf
 
 1. Abilitare il debug a livello di indirizzo selezionando **Abilita debug a livello di indirizzo** in **strumenti** (o **debug**) > **Opzioni**  >  **debug**.
 
-1. Durante il debug è in esecuzione o in un punto di interruzione, selezionare **Esegui il debug**di  >  **Windows**  >  **registri**di Windows oppure premere **ALT** + **5**.
+1. Durante il debug è in esecuzione o in un punto di interruzione, selezionare **Esegui il debug** di  >    >  **registri** di Windows oppure premere **ALT** + **5**.
 
 >[!NOTE]
 >Le finestre di dialogo e i comandi di menu potrebbero variare a seconda dell'edizione o delle impostazioni di Visual Studio. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **strumenti** di Visual Studio. Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).

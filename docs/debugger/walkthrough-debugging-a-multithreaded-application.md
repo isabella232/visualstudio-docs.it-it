@@ -1,5 +1,7 @@
 ---
 title: Visualizzare i thread nel debugger | Microsoft Docs
+description: Usare i thread per esaminare e controllare i thread. È possibile raggruppare, ordinare, contrassegnare, bloccare, scongelare e cercare i thread, selezionare le colonne e visualizzare gli stack di chiamate.
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b02d980292eaed40c7c1598c772b52f695bf23e2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67821583"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149703"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Visualizzare i thread nel debugger di Visual Studio tramite la finestra thread (C#, Visual Basic, C++)
 Nella finestra **thread** è possibile esaminare e utilizzare i thread nell'applicazione di cui si sta eseguendo il debug. Per istruzioni dettagliate su come usare la finestra **thread** , vedere [procedura dettagliata: eseguire il debug usando la finestra thread](../debugger/how-to-use-the-threads-window.md).
@@ -168,5 +170,5 @@ In un programma multithread ogni thread dispone di un proprio stack di chiamate.
 - Nella barra degli strumenti nella parte superiore della finestra **thread** selezionare **Espandi stack di chiamate** o **Comprimi stack di chiamate**.
 
 ## <a name="see-also"></a>Vedere anche
-- [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Eseguire il debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Iniziare il debug di applicazioni multithreading](../debugger/get-started-debugging-multithreaded-apps.md)

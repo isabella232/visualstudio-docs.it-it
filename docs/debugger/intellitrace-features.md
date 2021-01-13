@@ -1,5 +1,7 @@
 ---
 title: Funzionalità di IntelliTrace | Microsoft Docs
+description: Informazioni sulle funzionalità di IntelliTrace in Visual Studio. Usare IntelliTrace per registrare gli eventi e le chiamate al metodo nell'applicazione.
+ms.custom: SEO-VS-2020
 ms.date: 09/19/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ac7ca0e59a479aff3386486d2ceaf061038db68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f5d4603e052cd5968055304290559b8a8d5a56a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536578"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148637"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Funzionalità IntelliTrace (C#, Visual Basic, C++)
 
@@ -48,13 +50,13 @@ Se il debug è in corso, interromperlo. Passare a **strumenti > opzioni > intell
 
 ## <a name="collect-snapshots-c-visual-basic-c"></a><a name="Snapshots"></a> Raccogliere snapshot (C#, Visual Basic, C++)
 
-Questa funzionalità non è abilitata per impostazione predefinita, ma IntelliTrace è in grado di acquisire snapshot dell'applicazione a ogni punto di interruzione e di evento del debugger ed è possibile visualizzare questi snapshot in una sessione di debug cronologica. Uno snapshot offre una visualizzazione dello stato completo dell'applicazione. Per abilitare l'acquisizione degli snapshot, passare a **strumenti > opzioni > intellitrace > generale**e selezionare **snapshot IntelliTrace (gestito e nativo)**. Per altre informazioni, vedere [esaminare gli Stati delle app precedenti con IntelliTrace](../debugger/view-historical-application-state.md).
+Questa funzionalità non è abilitata per impostazione predefinita, ma IntelliTrace è in grado di acquisire snapshot dell'applicazione a ogni punto di interruzione e di evento del debugger ed è possibile visualizzare questi snapshot in una sessione di debug cronologica. Uno snapshot offre una visualizzazione dello stato completo dell'applicazione. Per abilitare l'acquisizione degli snapshot, passare a **strumenti > opzioni > intellitrace > generale** e selezionare **snapshot IntelliTrace (gestito e nativo)**. Per altre informazioni, vedere [esaminare gli Stati delle app precedenti con IntelliTrace](../debugger/view-historical-application-state.md).
 
 Gli snapshot sono disponibili in Visual Studio Enterprise 2017 versione 15,5 e successive e richiedono l'aggiornamento dell'anniversario di Windows 10 o versione successiva.  Per le app .NET Core e ASP.NET Core, è necessario Visual Studio Enterprise 2017 versione 15,7. Per le app native destinate a Windows, è necessario Visual Studio Enterprise 2017 versione 15,9 Preview 2.
 
 ## <a name="collect-intellitrace-events-and-call-information-c-visual-basic"></a><a name="GoingFurther"></a> Raccogliere eventi IntelliTrace e informazioni sulle chiamate (C#, Visual Basic)
 
-Questo non è abilitato per impostazione predefinita, ma IntelliTrace è in grado di registrare le chiamate ai metodi insieme agli eventi. Per abilitare la raccolta di chiamate al metodo, passare a **strumenti > opzioni > intellitrace > generale**e selezionare **eventi IntelliTrace e informazioni sulle chiamate (solo gestito)**.
+Questo non è abilitato per impostazione predefinita, ma IntelliTrace è in grado di registrare le chiamate ai metodi insieme agli eventi. Per abilitare la raccolta di chiamate al metodo, passare a **strumenti > opzioni > intellitrace > generale** e selezionare **eventi IntelliTrace e informazioni sulle chiamate (solo gestito)**.
 
 Le informazioni sulle chiamate non sono attualmente disponibili per le app .NET Core e ASP.NET Core.
 

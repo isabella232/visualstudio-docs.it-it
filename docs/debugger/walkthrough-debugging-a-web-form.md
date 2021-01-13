@@ -1,6 +1,7 @@
 ---
 title: Eseguire il debug di un Web Form | Microsoft Docs
-ms.custom: seodec18
+description: Seguire una procedura dettagliata per vedere come eseguire il debug di un'applicazione Web ASP.NET (Web Form), incluso come impostare i punti di interruzione ed esaminare le variabili.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa2632e7d9b8103b5a89c49e5f44464a658fadc3
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 007a63ea16ab044292f451d8d9c427f4358e3f13
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599480"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148221"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Procedura dettagliata: Debug di un Web Form
 Nei passaggi di questa procedura dettagliata viene illustrato come eseguire il debug di un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], noto anche come Web Form. Viene spiegato come avviare e arrestare l'esecuzione, impostare punti di interruzione ed esaminare le variabili nella finestra **Espressioni di controllo**.
@@ -42,7 +43,7 @@ Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispon
 
 1. Se una soluzione è già aperta, chiuderla.
 
-2. Scegliere **Nuovo **dal menu **File**, quindi fare clic su **Sito Web**.
+2. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Sito Web**.
 
     Verrà visualizzata la finestra di dialogo **Nuovo sito Web**.
 
@@ -162,6 +163,6 @@ Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispon
 
 6. Dopo il completamento del debug, scegliere **Termina debug** dal menu **Debug**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

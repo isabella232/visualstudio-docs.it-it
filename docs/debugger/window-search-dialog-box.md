@@ -1,5 +1,7 @@
 ---
 title: Finestra di dialogo ricerca finestre | Microsoft Docs
+description: Usare la ricerca finestre per trovare e selezionare il nodo per una finestra specifica elencata in visualizzazione di Windows. Vedere questo articolo per le descrizioni delle impostazioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ca04cadbfce26319a9ed72b85071d7ab139a85a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f83469d6bd97e493a704282aa1fca1fbec96962d
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900923"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148988"
 ---
 # <a name="window-search-dialog-box"></a>Finestra di dialogo Ricerca finestre
 Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per una finestra specifica nella [visualizzazione Windows](../debugger/windows-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo sulla finestra di visualizzazione di Windows. Quindi scegliere **Trova finestra** dal menu **Cerca** .

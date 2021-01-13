@@ -1,5 +1,7 @@
 ---
 title: Visualizzare i thread nella finestra stack in parallelo | Microsoft Docs
+description: Usare gli stack in parallelo per facilitare il debug di applicazioni multithread. È possibile visualizzare le informazioni sullo stack per tutti i thread e le informazioni sullo stack di chiamate centrate sulle attività.
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2018
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9728346bc4c6d805bb0febd3a0d5bef0ed809a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55a004e65a39f4a2b7bbf972cec36d689bf88d97
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62902420"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150171"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>Visualizzare i thread e le attività nella finestra stack in parallelo (C#, Visual Basic, C++)
 
@@ -38,7 +40,7 @@ La finestra **stack in parallelo** è utile per il debug di applicazioni multith
 
 ## <a name="use-the-parallel-stacks-window"></a>Usare la finestra Stack in parallelo
 
-Per aprire la finestra **stack in parallelo** , è necessario trovarsi in una sessione di debug. Selezionare **debug**  >  **Windows**  >  **stack in parallelo**di Windows.
+Per aprire la finestra **stack in parallelo** , è necessario trovarsi in una sessione di debug. Selezionare **debug**  >    >  **stack in parallelo** di Windows.
 
 ### <a name="toolbar-controls"></a>Controlli della barra degli strumenti
 
@@ -70,7 +72,7 @@ Le voci del menu di scelta rapida seguenti sono disponibili quando si fa clic co
 
 |Voce di menu|Descrizione|
 |-|-|
-|**Bandiera**|Contrassegna l'elemento selezionato.|
+|**Contrassegno**|Contrassegna l'elemento selezionato.|
 |**Rimuovi flag**|Rimuove il flag dall'elemento selezionato.|
 |**Freeze**|Blocca l'elemento selezionato.|
 |**Sblocca**|Sblocca l'elemento selezionato.|

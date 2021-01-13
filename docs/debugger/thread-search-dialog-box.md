@@ -1,5 +1,7 @@
 ---
 title: Finestra di dialogo Ricerca thread | Microsoft Docs
+description: Informazioni sulla finestra di dialogo Ricerca thread nello strumento di debug di Spy + +. Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per un thread specifico nella visualizzazione thread.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fddbb589a6978f72dc5926a78c9eb13f21b3a4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 895241a99131c31e2fab73b9799f6203db7259e0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901862"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148754"
 ---
 # <a name="thread-search-dialog-box"></a>Finestra di dialogo Ricerca thread
 Utilizzare questa finestra di dialogo per individuare e selezionare il nodo per un thread specifico nella [visualizzazione thread](../debugger/threads-view.md). Per visualizzare questa finestra di dialogo, spostare lo stato attivo in una finestra di visualizzazione **thread** . Quindi scegliere **Trova thread** dal menu **Cerca** .
