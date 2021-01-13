@@ -1,5 +1,7 @@
 ---
-title: Utilizzo dei controlli runtime senza la libreria di runtime del linguaggio C | Microsoft Docs
+title: Uso di Run-Time controlli senza la libreria di Run-Time C | Microsoft Docs
+description: È possibile collegare il programma senza la libreria di runtime del linguaggio C usando/NODEFAULTLIB. Se si desidera utilizzare i controlli run-time, è necessario effettuare il collegamento con RunTmChk. lib.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,15 +25,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 029aafa634ba0e6837cdc7d4304d0419420dd912
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfa83533b1ae929bf443dd6c3eb7f7dc3e7db165
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72728655"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150860"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Utilizzo dei controlli runtime senza la libreria di runtime del linguaggio C
-Se si collega il programma senza la libreria di runtime del linguaggio C, usando **/NODEFAULTLIB**e si vogliono usare i controlli run-time, è necessario collegarsi a RunTmChk. lib.
+Se si collega il programma senza la libreria di runtime del linguaggio C, usando **/NODEFAULTLIB** e si vogliono usare i controlli run-time, è necessario collegarsi a RunTmChk. lib.
 
 `_RTC_Initialize` consente di inizializzare il programma per i controlli runtime. Se non si stabilisce il collegamento con la libreria di runtime del linguaggio C, è necessario verificare che il programma sia compilato con i controlli degli errori di runtime prima di chiamare `_RTC_Initialize`, come illustrato di seguito:
 
@@ -64,4 +66,4 @@ extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
 Dopo aver installato la funzione di segnalazione degli errori predefinita, sarà possibile installare altre funzioni di segnalazione degli errori con `_RTC_SetErrorFuncW`. Per altre informazioni, vedere [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw).
 
 ## <a name="see-also"></a>Vedere anche
-[Procedura: utilizzare i controlli runtime nativi](../debugger/how-to-use-native-run-time-checks.md)
+[Procedura: utilizzare i controlli di Run-Time nativi](../debugger/how-to-use-native-run-time-checks.md)

@@ -1,5 +1,7 @@
 ---
 title: Visualizzazione Albero delle chiamate | Microsoft Docs
+description: Comprendere la visualizzazione albero delle chiamate, che consente di visualizzare i percorsi di esecuzione della funzione attraversati nell'applicazione profilata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b932d5f9e4a178c94f3e490c66cec64648ce4f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 386f8e85c02fe73eab9801b3edf79ec0d0b178fc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773335"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150782"
 ---
 # <a name="call-tree-view"></a>Visualizzazione albero delle chiamate
 La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Per ogni nodo della funzione vengono elencate tutte le funzioni chiamate e i dati delle prestazioni delle chiamate di funzione.

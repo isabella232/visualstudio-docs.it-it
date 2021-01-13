@@ -1,5 +1,7 @@
 ---
 title: 'Visualizzazione Chiamante/chiamato: dati di campionamento di memoria .NET | Microsoft Docs'
+description: Informazioni sul modo in cui la visualizzazione chiamante/chiamato Visualizza i dati di campionamento di memoria .NET per una funzione selezionata e le relative funzioni padre e figlio in Esplora prestazioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50e278e858ea086c83b29ef4eebf6b48ee8e477e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5f0e3613dc9b122a6fac915f4683d9f7b859ee3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773309"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150899"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Visualizzazione Chiamante-chiamato: dati di campionamento di memoria .NET
 La visualizzazione Chiamante/chiamato consente di visualizzare i dati di profilatura della memoria .NET per una funzione selezionata e le relative funzioni padre e figlio. La visualizzazione Chiamante/chiamato contiene tre griglie.

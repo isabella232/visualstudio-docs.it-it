@@ -1,6 +1,7 @@
 ---
 title: Visualizzare il codice disassembly nel debugger | Microsoft Docs
-ms.custom: seodec18
+description: Utilizzare la finestra Disassembly in Visual Studio per visualizzare il codice assembly corrispondente alle istruzioni create dal compilatore.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/30/2018
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23f297aa3fc549714a9b6327232a8a0b69c6138f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 733eb439808d6cab2d290615751cf44ccd711022
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808168"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150613"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visualizzare il codice disassembly nel debugger di Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -50,7 +51,7 @@ Oltre alle istruzioni in linguaggio assembly, nella finestra **Disassembly** è 
 
 - Numeri di riga corrispondenti al codice sorgente.
 
-Le istruzioni in linguaggio assembly sono costituite da *tasti*di scelta, ovvero abbreviazioni per i nomi di istruzioni e *simboli* per variabili, registri e costanti. Ogni istruzione in linguaggio computer è rappresentata da un tasto di scelta rapida in linguaggio assembly, seguito facoltativamente da uno o più simboli.
+Le istruzioni in linguaggio assembly sono costituite da *tasti* di scelta, ovvero abbreviazioni per i nomi di istruzioni e *simboli* per variabili, registri e costanti. Ogni istruzione in linguaggio computer è rappresentata da un tasto di scelta rapida in linguaggio assembly, seguito facoltativamente da uno o più simboli.
 
 Il codice assembly si basa principalmente sui registri del processore o, per il codice gestito, Common Language Runtime registri. È possibile utilizzare la finestra **Disassembly** insieme alla finestra **registri** , che consente di esaminare il contenuto del registro.
 
@@ -58,9 +59,9 @@ Per visualizzare le istruzioni del codice del computer nel formato numerico non 
 
 ## <a name="use-the-disassembly-window"></a>Usare la finestra Disassembly
 
-Per abilitare la finestra **Disassembly** , in **strumenti**  >  **Opzioni**  >  **debug**selezionare **Abilita debug a livello di indirizzo**.
+Per abilitare la finestra **Disassembly** , in **strumenti**  >  **Opzioni**  >  **debug** selezionare **Abilita debug a livello di indirizzo**.
 
-Per aprire la finestra **Disassembly** durante il debug, selezionare **Windows**  >  **Disassembly** di Windows o premere **ALT** + **8**.
+Per aprire la finestra **Disassembly** durante il debug, selezionare   >  **Disassembly** di Windows o premere **ALT** + **8**.
 
 > [!NOTE]
 > È possibile che le finestre di dialogo e i comandi di menu visualizzati varino da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).

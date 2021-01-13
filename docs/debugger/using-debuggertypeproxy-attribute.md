@@ -1,5 +1,7 @@
 ---
 title: Visualizzare il tipo personalizzato usando DebuggerTypeProxy | Microsoft Docs
+description: Utilizzare un'istanza di DebuggerTypeProxyAttribute per specificare un proxy (autonomo) per un tipo, per modificare la modalità di visualizzazione del tipo nelle finestre del debugger.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b98481cb1727ecad9289f63136291d500c0d577e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94551605581890692f8a1366fa2235811ccdc5f2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85347963"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150379"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Indicare al debugger quale tipo visualizzare usando l'attributo DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
 
@@ -68,5 +70,5 @@ In Visual Basic non è disponibile la sintassi dei tipi aperti, pertanto non è 
 ## <a name="see-also"></a>Vedere anche
 
 - [Utilizzo dell'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
-- [Creazione di visualizzazioni personalizzate di oggetti gestiti](../debugger/create-custom-views-of-managed-objects.md)
+- [Creare viste personalizzate di oggetti gestiti](../debugger/create-custom-views-of-managed-objects.md)
 - [Miglioramento del debug tramite gli attributi di visualizzazione del debugger](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

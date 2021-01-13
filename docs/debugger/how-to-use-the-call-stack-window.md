@@ -1,6 +1,7 @@
 ---
 title: Visualizzare lo stack di chiamate nel debugger | Microsoft Docs
-ms.custom: seodec18
+description: Utilizzare la finestra stack di chiamate per visualizzare le chiamate di funzione o di routine attualmente presenti nello stack in Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/29/2018
 ms.topic: how-to
 f1_keywords:
@@ -29,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa91807459ea5c2d8f576891d0eafc35336347bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 206c79a47ec59e02206332d80d1afe935fb72bdc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348743"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150626"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Visualizzare lo stack di chiamate e utilizzare la finestra stack di chiamate nel debugger
 
@@ -52,11 +53,11 @@ Quando i [simboli di debug](#bkmk_symbols) non sono disponibili per una parte di
 
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>Visualizzare lo stack di chiamate nel debugger
 
-- Durante il debug, scegliere **Windows > stack di chiamate**dal menu **debug** .
+- Durante il debug, scegliere **Windows > stack di chiamate** dal menu **debug** .
 
   ![Finestra Stack di chiamate](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
-Lo stack frame in cui è attualmente posizionato il puntatore di esecuzione è contraddistinto da una freccia gialla. Per impostazione predefinita, le informazioni di questo stack frame vengono visualizzate nelle finestre origine, **variabili locali**, **auto**, **espressioni di controllo**e **Disassembly** . Per modificare il contesto del debugger in un altro frame dello stack, [passare a un altro stack frame](#bkmk_switch).
+Lo stack frame in cui è attualmente posizionato il puntatore di esecuzione è contraddistinto da una freccia gialla. Per impostazione predefinita, le informazioni di questo stack frame vengono visualizzate nelle finestre origine, **variabili locali**, **auto**, **espressioni di controllo** e **Disassembly** . Per modificare il contesto del debugger in un altro frame dello stack, [passare a un altro stack frame](#bkmk_switch).
 
 ## <a name="display-non-user-code-in-the-call-stack-window"></a>Visualizzare il codice non utente nella finestra stack di chiamate
 
@@ -108,7 +109,7 @@ In Visual Studio Enterprise (solo), è possibile visualizzare le mappe codice pe
 
 ## <a name="change-the-optional-information-displayed"></a>Modificare le informazioni facoltative visualizzate
 
-- Fare clic con il pulsante destro del mouse nella finestra **stack di chiamate** e impostare o deselezionare **Mostra \<**_the information that you want_**> **.
+- Fare clic con il pulsante destro del mouse nella finestra **stack di chiamate** e impostare o deselezionare **Mostra \<**_the information that you want_**>**.
 
 ## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a> Caricare i simboli per un modulo (C#, C++, Visual Basic, F #)
 
@@ -140,7 +141,7 @@ Vedere [specificare i file di simboli (con estensione pdb) e di origine](../debu
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Codice misto e informazioni mancanti nella finestra stack di chiamate](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
+- [Codice misto e informazioni mancanti nella finestra Stack di chiamate](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
 - [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)
 - [Specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-- [Utilizzo di punti di interruzione](../debugger/using-breakpoints.md)
+- [Uso dei punti di interruzione](../debugger/using-breakpoints.md)

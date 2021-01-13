@@ -1,6 +1,7 @@
 ---
 title: Avviare una sessione di debug per un'app UWP | Microsoft Docs
-ms.custom: seodec18
+description: Avviare una sessione di debug di Visual Studio per un'app piattaforma UWP (Universal Windows Platform) (UWP). Configurare la sessione di debug e scegliere la modalità di avvio dell'app.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/20/2018
 ms.topic: how-to
 f1_keywords:
@@ -35,12 +36,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c4e025603fef11e278aee21b3c44f8d35d7cd34b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 003eaa7eefffaab9ff2b3c8c25a5ce5c0d41d43b
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536552"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150366"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Avviare una sessione di debug per un'app UWP
 
@@ -66,7 +67,7 @@ Il modo più semplice per configurare e avviare il debug è dalla barra degli st
 
 1. Dall'elenco a discesa accanto alla freccia verde selezionare la destinazione di debug. È possibile scegliere un computer locale, un dispositivo connesso direttamente, un simulatore locale di Visual Studio, un dispositivo remoto o un emulatore.
 
-1. Per avviare il debug, selezionare la freccia di **inizio** verde sulla barra degli strumenti oppure selezionare **debug**  >  **Avvia debug**o premere **F5**.
+1. Per avviare il debug, selezionare la freccia di **inizio** verde sulla barra degli strumenti oppure selezionare **debug**  >  **Avvia debug** o premere **F5**.
 
    Visual Studio compila e avvia l'app con il debugger collegato.
 
@@ -90,7 +91,7 @@ Per configurare altre opzioni di debug, utilizzare la pagina delle proprietà di
 
 **Per aprire le proprietà di debug:**
 
-1. In **Esplora soluzioni**selezionare il progetto, quindi selezionare l'icona **Proprietà** oppure fare clic con il pulsante destro del mouse sul progetto e scegliere **proprietà**.
+1. In **Esplora soluzioni** selezionare il progetto, quindi selezionare l'icona **Proprietà** oppure fare clic con il pulsante destro del mouse sul progetto e scegliere **proprietà**.
 
 1. Sul lato sinistro del riquadro **Proprietà** :
 
@@ -173,7 +174,7 @@ Per altre informazioni sul debug di attività in background, vedere [trigger Sus
 
 È possibile avviare immediatamente l'app installata oppure è possibile impostarla per l'esecuzione nel debugger quando viene avviata con un altro metodo. Per altre informazioni, vedere [attivazione di eventi di sospensione, ripresa e background per le app UWP](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 
-Per avviare un'app UWP installata o in esecuzione nel debugger, selezionare **debug**  >  **altre destinazioni**di debug  >  **debug pacchetto app installato**. Per altre istruzioni, vedere [eseguire il debug di un pacchetto dell'app installato](../debugger/debug-installed-app-package.md).
+Per avviare un'app UWP installata o in esecuzione nel debugger, selezionare **debug**  >  **altre destinazioni** di debug  >  **debug pacchetto app installato**. Per altre istruzioni, vedere [eseguire il debug di un pacchetto dell'app installato](../debugger/debug-installed-app-package.md).
 
 ### <a name="attach-the-debugger-to-a-running-windows-8x-app"></a><a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Connessione del debugger a un'app di Windows 8. x in esecuzione
 
@@ -181,7 +182,7 @@ Per collegare il debugger a un'app in [!INCLUDE[win8_appname_long](../debugger/i
 
 1. Installare il Remote Tools per Visual Studio nel dispositivo in cui è installata l'app. Per ulteriori informazioni, vedere [installazione di Remote Tools](../debugger/remote-debugging.md).
 
-1. Nella schermata **Start** di Windows cercare e avviare **Gestione pacchetti**di cui è possibile eseguire il debug.
+1. Nella schermata **Start** di Windows cercare e avviare **Gestione pacchetti** di cui è possibile eseguire il debug.
 
    Viene visualizzata una finestra di PowerShell correttamente configurata per il cmdlet AppxDebug.
 

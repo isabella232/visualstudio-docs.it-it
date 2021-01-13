@@ -1,5 +1,7 @@
 ---
 title: Specificare le impostazioni del debugger | Microsoft Docs
+description: Specificare diverse impostazioni per il comportamento del debugger in Visual Studio, ad esempio come visualizzare le variabili, quali avvisi vengono presentati e come impostare i punti di interruzione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b831ae0329adc218ba76fc27206e1f47d0ac8f9c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a5034fe887ba221106055a928e67e11076167286
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851944"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150769"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Procedura: specificare le impostazioni del debugger
 In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è possibile configurare varie impostazioni relative al funzionamento del debugger, che specificano ad esempio la modalità di visualizzazione delle variabili, se determinati messaggi di avviso vengono visualizzati, la modalità di impostazione dei punti di interruzione e gli effetti dell'interruzione sui programmi in esecuzione. Per specificare queste impostazioni, utilizzare la finestra di dialogo **Opzioni**.
@@ -42,7 +44,7 @@ In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è possibile config
 4. Selezionare o deselezionare l'opzione o le opzioni desiderate. Per visualizzare le informazioni della Guida sulle opzioni, premere F1
 
 ## <a name="see-also"></a>Vedere anche
-- [Generale, Debug, finestra di dialogo Opzioni](../debugger/general-debugging-options-dialog-box.md)
+- [Generale, debug, finestra di dialogo Opzioni](../debugger/general-debugging-options-dialog-box.md)
 - [Modifica e continuazione, Debug, finestra di dialogo Opzioni](./edit-and-continue.md)
-- [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)
+- [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)
 - [Macro comuni per i comandi e le proprietà di compilazione](/cpp/build/reference/common-macros-for-build-commands-and-properties)

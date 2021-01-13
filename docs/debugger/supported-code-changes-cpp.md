@@ -1,5 +1,7 @@
 ---
 title: Modifiche al codice supportate (C++) | Microsoft Docs
+description: Informazioni sulle modifiche al codice supportate quando si utilizza la funzionalità modifica e continuazione durante il debug di un progetto C++ in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 02/18/2020
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af6c0d88dd230bee768641905e200f1f47749d77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d693753cbcc9844ff602ab4d20e90fdc6de7dae5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77629586"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150496"
 ---
 # <a name="supported-code-changes-c"></a>Modifiche al codice supportate (C++)
 Modifica e continuazione per i progetti C++ gestisce la maggior parte dei tipi di modifiche al codice. Alcune modifiche non possono tuttavia essere applicate durante l'esecuzione del programma. Per applicare tali modifiche, è necessario arrestare l'esecuzione e compilare una versione aggiornata del codice.
@@ -116,10 +118,10 @@ Modifica e continuazione per i progetti C++ gestisce la maggior parte dei tipi d
 ### <a name="linker-options-that-disable-edit-and-continue"></a><a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Opzioni dei linker che disabilitano Modifica e continuazione
  La funzionalità Modifica e continuazione viene disabilitata dalle seguenti opzioni dei linker:
 
-- L'impostazione di **/OPT:REF**, **/OPT:ICF**o **/INCREMENTAL:NO** provoca la disattivazione di Modifica e continuazione con la visualizzazione del seguente messaggio di avviso:  
+- L'impostazione di **/OPT:REF**, **/OPT:ICF** o **/INCREMENTAL:NO** provoca la disattivazione di Modifica e continuazione con la visualizzazione del seguente messaggio di avviso:  
      `LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /OPT specification`
 
-- L'impostazione di **/Order**, **/Release**o **/Force** Disabilita la modifica e continua con l'avviso seguente:  
+- L'impostazione di **/Order**, **/Release** o **/Force** Disabilita la modifica e continua con l'avviso seguente:  
      `LINK : warning LNK4075: ignoring /INCREMENTAL due to /option specification`
 
 - L'impostazione di qualsiasi opzione che impedisce la creazione di un file di database di programma con estensione pdb provoca la disattivazione di Modifica e continuazione senza la visualizzazione di un messaggio di avviso specifico.
@@ -161,7 +163,7 @@ Modifica e continuazione per i progetti C++ gestisce la maggior parte dei tipi d
  2. Eseguire il comando seguente:  
      `VsRegEdit.exe set “C:\Program Files (x86)\Microsoft Visual Studio\[Version]\[YOUR EDITION]” HKCU Debugger NativeEncDiagnosticLoggingLevel DWORD 1`
 
- Se si imposta questo valore all'inizio di una sessione di debug, i vari componenti di modifica e continuazione generano una registrazione **Output Window**dettagliata nel riquadro di  >  **debug** finestra di output.
+ Se si imposta questo valore all'inizio di una sessione di debug, i vari componenti di modifica e continuazione generano una registrazione dettagliata nel riquadro di  >  **debug** finestra di output.
 
 ## <a name="see-also"></a>Vedere anche
 - [Modifica e continuazione (C++)](../debugger/edit-and-continue-visual-cpp.md)

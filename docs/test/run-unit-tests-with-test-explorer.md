@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bb738e0e12598fd31c51c6b3cf2fa684badae40
-ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
+ms.openlocfilehash: c992a1a4fca536f219a69b9ab629f6f602b4dfb0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98113600"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150509"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -169,7 +169,7 @@ Esplora test consente di raggruppare i test in una gerarchia. Il raggruppamento 
 |**Duration**|Raggruppa i test in base al tempo di esecuzione: **veloce**, **medio** e **lento**.|
 |**State**|Raggruppa i test per risultati di esecuzione: **test non** superati, **test ignorati**, **test superati**, **non eseguiti**|
 |**Framework di destinazione** | Raggruppa i test in base al framework di destinazione dei progetti |
-|**Spazio dei nomi**|Raggruppa i test in base allo spazio dei nomi contenitore.|
+|**Namespace**|Raggruppa i test in base allo spazio dei nomi contenitore.|
 |**Progetto**|Raggruppa i test in base al progetto contenitore.|
 |**Classe**|Raggruppa i test in base alla classe contenitore.|
 ::: moniker-end
@@ -323,7 +323,7 @@ Per filtrare in base a un criterio diverso:
 |**Nome completo**|Cerca le corrispondenze nel nome completo di spazi dei nomi, classi e metodi di test.|
 |**Progetto**|Cerca le corrispondenze nei nomi dei progetti di test.|
 |**Framework di destinazione**|Cerca le corrispondenze nei nomi delle categorie di Esplora test: **Test non superati**, **Test ignorati**, **Test superati**.|
-|**Spazio dei nomi**|Cerca le corrispondenze negli spazi dei nomi di test.|
+|**Namespace**|Cerca le corrispondenze negli spazi dei nomi di test.|
 |**Classe**|Cerca le corrispondenze nei nomi delle classi di test.|
 ::: moniker-end
 
@@ -377,6 +377,7 @@ I test possono essere eseguiti da Esplora test facendo clic con il pulsante dest
 > [!NOTE]
 > Non è possibile eseguire un test in una classe astratta, poiché i test vengono solo definiti nelle classi astratte ma non ne viene creata l'istanza. Per eseguire i test nelle classi astratte, creare una classe che deriva dalla classe astratta.
 
+::: moniker range=">=vs-2019"
 ## <a name="test-audio-cue"></a>Testare la cue audio
 Esplora test può riprodurre un suono quando viene completata un'esecuzione del test. Sono presenti due suoni: un suono per indicare che l'esecuzione dei test è riuscita con tutti i test superati e un secondo suono per indicare che l'esecuzione dei test è stata completata con almeno un test non superato. È possibile configurare questi suoni nella finestra di dialogo audio di Windows 10 predefinita. Questa funzionalità è disponibile a partire da Visual Studio 2019 Update 16,9 Preview 3.
 
@@ -385,6 +386,7 @@ Esplora test può riprodurre un suono quando viene completata un'esecuzione del 
 3. Trovare la categoria **Microsoft Visual Studio** . Scegliere l' **esecuzione dei test riuscita** o i suoni di **esecuzione dei test non riusciti** per selezionare i suoni del set di impostazioni o passare al file audio.  
 ![Finestra di dialogo audio di Windows 10](../test/media/default-windows-10-sound-dialog.png)
 
+::: moniker-end
 ## <a name="see-also"></a>Vedere anche
 
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)

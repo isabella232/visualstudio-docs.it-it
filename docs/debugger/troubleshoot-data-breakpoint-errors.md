@@ -1,5 +1,7 @@
 ---
 title: Impossibile impostare il punto di interruzione dei dati | Microsoft Docs
+description: Trovare spiegazioni, soluzioni e soluzioni alternative per "Impossibile impostare gli errori del punto di interruzione dei dati" che si verificano quando si usa "Interrompi in caso di modifica del valore".
+ms.custom: SEO-VS-2020
 ms.date: 12/3/2019
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cded3bfdb6adc206f02ef54402964f4e7276f93
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 4e90c3d4af8e568f1bb2e6987c66c7fbc0856c57
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668781"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150457"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Risoluzione degli errori dei punti di interruzione dei dati
 In questa pagina viene illustrata la risoluzione degli errori comuni riscontrati durante l'utilizzo di "Interrompi in caso di modifica del valore"
@@ -79,7 +81,7 @@ L'architettura (configurazione della piattaforma) in cui viene eseguito il progr
 | ARM | 1 | 4 |
 | ARM64 | 2 | 8 |
 
-## <a name="provide-feedback"></a>Fornire commenti e suggerimenti
+## <a name="provide-feedback"></a>Fornire il feedback
 
 Per eventuali problemi o suggerimenti relativi a questa funzionalità, inviare commenti tramite la guida > inviare commenti e suggerimenti > [segnalare un problema](../ide/how-to-report-a-problem-with-visual-studio.md) nell'IDE o nella [community degli sviluppatori](https://aka.ms/feedback/suggest?space=8).
 

@@ -1,5 +1,7 @@
 ---
 title: Utilizzare lo strumento di ricerca | Microsoft Docs
+description: Utilizzare lo strumento di ricerca nella finestra di dialogo Trova finestra dello strumento Spy + + per visualizzare le proprietà o i messaggi della finestra durante una sessione di debug.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e92223359c6bc78b2a98c234c03ee139c052f86
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 41ca277962f81b3cd1c35ebcf8a940e8168a6803
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851840"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150600"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Procedura: utilizzare lo strumento di ricerca
 È possibile utilizzare lo strumento di ricerca nella **finestra di dialogo Trova finestra** per visualizzare le proprietà o i messaggi della finestra. Lo strumento di ricerca può anche individuare le finestre figlio disabilitate e distinguere la finestra da evidenziare se le finestre figlio disabilitate si sovrappongono.
@@ -28,7 +30,7 @@ ms.locfileid: "90851840"
 
 1. Disporre le finestre in modo che siano visibili sia Spy + + che la finestra di destinazione.
 
-2. Scegliere **Trova finestra**dal menu **Spy** .
+2. Scegliere **Trova finestra** dal menu **Spy** .
 
     Verrà visualizzata la [finestra di dialogo Trova finestra](../debugger/find-window-dialog-box.md) .
 
@@ -41,9 +43,9 @@ ms.locfileid: "90851840"
      Se si dispone dell'handle della finestra che si desidera esaminare (ad esempio, copiato dal debugger), digitarlo nella casella di testo **handle** .
 
    > [!TIP]
-   > Per ridurre il disordine dello schermo, selezionare l'opzione **Nascondi Spy** . Questa opzione consente di nascondere la finestra principale di Spy + +, lasciando visibile solo la finestra di dialogo **Trova finestra** nella parte superiore delle altre applicazioni. La finestra principale di Spy + + viene ripristinata quando si fa clic su **OK** o **Annulla**oppure quando si deseleziona l'opzione **Nascondi Spy + +** .
+   > Per ridurre il disordine dello schermo, selezionare l'opzione **Nascondi Spy** . Questa opzione consente di nascondere la finestra principale di Spy + +, lasciando visibile solo la finestra di dialogo **Trova finestra** nella parte superiore delle altre applicazioni. La finestra principale di Spy + + viene ripristinata quando si fa clic su **OK** o **Annulla** oppure quando si deseleziona l'opzione **Nascondi Spy + +** .
 
-4. In **Mostra**selezionare **Proprietà** o **messaggi**.
+4. In **Mostra** selezionare **Proprietà** o **messaggi**.
 
 5. Fare clic su **OK**.
 

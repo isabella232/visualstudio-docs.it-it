@@ -1,5 +1,7 @@
 ---
 title: Impossibile eseguire la connessione a Microsoft Visual Studio Remote Debugging Monitor
+description: Informazioni sul significato di "Impossibile connettersi al Microsoft Visual Studio Remote Debugging Monitor", le possibili cause e le soluzioni.
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/14/2020
 ms.topic: reference
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1863caeaa3d3b0457d89913186337fa74ad5d8de
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: dc34a5f58f8bc3c47526cc8ba8516311e94f0631
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852244"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150834"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossibile eseguire la connessione a Microsoft Visual Studio Remote Debugging Monitor
 Questo messaggio può verificarsi perché Remote Debugging Monitor non è configurato correttamente nel computer remoto o il computer remoto non è accessibile a causa di problemi di rete o della presenza di un firewall.

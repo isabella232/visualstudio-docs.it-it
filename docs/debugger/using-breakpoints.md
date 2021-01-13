@@ -1,6 +1,7 @@
 ---
 title: Usare i punti di interruzione nel debugger | Microsoft Docs
-ms.custom: ''
+description: Informazioni sui punti di interruzione, una delle più importanti tecniche di debug. Questo articolo illustra le azioni del punto di interruzione, punti, le condizioni e molto altro ancora.
+ms.custom: SEO-VS-2020
 ms.date: 06/30/2020
 ms.topic: how-to
 f1_keywords:
@@ -34,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52c95749d5d7e2909fbff6da0a3a45bc36cd73c6
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: c8487482b1d87ba87dfc3a8b1e07be1360227a2f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729327"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150444"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usare i punti di interruzione nel debugger di Visual Studio
 
@@ -317,7 +318,7 @@ Per tracciare visivamente i punti di interruzione durante l'esecuzione del codic
 
 2. Nella finestra **Disassembly** fare clic sul margine sinistro dell'istruzione che si desidera interrompere. È anche possibile selezionarlo e premere **F9** oppure fare clic con il pulsante destro del mouse **e scegliere punto di interruzione**  >  **Inserisci** punto di interruzione.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Che cos'è il debug?](../debugger/what-is-debugging.md)
 - [Scrivi codice C# migliore con Visual Studio](../debugger/write-better-code-with-visual-studio.md)

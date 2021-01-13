@@ -1,5 +1,7 @@
 ---
 title: Visualizzazione dei thread GPU nel debugger | Microsoft Docs
+description: Utilizzare la finestra thread GPU per esaminare e utilizzare i thread in esecuzione sulla GPU nell'applicazione di cui si esegue il debug in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbb49a1017fb0bc65300f3c16050db4954e1103
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5919ac657d828e87e48b8cfb3f4f643e1187f701
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348717"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150587"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Procedura: utilizzare la finestra thread GPU (C++)
 Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuzione nella GPU nell'applicazione sottoposta a debug. Per ulteriori informazioni sulle applicazioni eseguite sulla GPU, vedere [C++ amp Overview](/cpp/parallel/amp/cpp-amp-overview).
@@ -52,7 +54,7 @@ Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuz
 
 ### <a name="to-display-the-gpu-threads-window"></a>Per visualizzare la finestra Thread GPU
 
-1. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto, quindi scegliere **Proprietà**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto, quindi scegliere **Proprietà**.
 
 2. Nella finestra **Pagine delle proprietà** per il progetto, in **Proprietà di configurazione** scegliere **Debug**.
 
@@ -103,6 +105,6 @@ Nella finestra Thread GPU è possibile esaminare e utilizzare i thread in esecuz
 - Scegliere il pulsante del flag nella finestra Thread GPU.
 
 ## <a name="see-also"></a>Vedere anche
-- [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Procedura: usare la finestra espressione di controllo in parallelo](../debugger/how-to-use-the-parallel-watch-window.md)
 - [Procedura dettagliata: debug di un'applicazione C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

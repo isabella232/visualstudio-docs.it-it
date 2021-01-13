@@ -1,5 +1,7 @@
 ---
 title: Non è possibile connettersi al processo | Microsoft Docs
+description: Informazioni sul significato di "Impossibile connettersi al processo", dei due scenari che lo provocano e delle soluzioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22d798d30d09cb509f53d093ae61bb1a02b414ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7a90d2e08d16ddfb7ac22baafe58cf76b4895d3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72728883"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150847"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Impossibile connettersi al processo
 Impossibile connettersi al processo. Accesso negato per il componente del debugger che si trova sul server durante la connessione a questo computer.
@@ -60,4 +62,4 @@ Impossibile connettersi al processo. Accesso negato per il componente del debugg
 7. Chiudere tutte le finestre.
 
 ## <a name="see-also"></a>Vedere anche
-- [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)
+- [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)

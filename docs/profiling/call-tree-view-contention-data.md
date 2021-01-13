@@ -1,5 +1,7 @@
 ---
 title: 'Visualizzazione Albero delle chiamate: dati sui conflitti | Microsoft Docs'
+description: Esaminare la visualizzazione albero delle chiamate, che mostra i dati sui conflitti per i percorsi di esecuzione della funzione attraversati nell'applicazione profilata.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e91e231f72b006d2020c8b4d5d96c7e24fa1dd9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 974eeccbb1f4691c00fafad65fadef7c909a7ed2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779779"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150418"
 ---
 # <a name="call-tree-view---contention-data"></a>Visualizzazione Albero delle chiamate: dati sui conflitti
 La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Ogni nodo della funzione elenca tutte le funzioni che ha chiamato, il numero di volte per cui la funzione è stata bloccata e il tempo per il quale la funzione è stata bloccata perché in conflitto per una risorsa con altri thread o processi.

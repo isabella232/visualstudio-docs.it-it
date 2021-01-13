@@ -1,5 +1,7 @@
 ---
 title: 'Visualizzazione Albero delle chiamate: dati di strumentazione | Microsoft Docs'
+description: Informazioni sul modo in cui nella visualizzazione albero delle chiamate vengono visualizzate le informazioni di strumentazione nell'albero delle chiamate in Esplora prestazioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7497f455ad3868f53758555aa28d305b6068e30d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c846910da4dec636c073446ae63cffb7cb2a682
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773511"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150795"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Visualizzazione Albero delle chiamate: dati di strumentazione
 I valori di una funzione nell'albero delle chiamate indicano il tempo per le istanze della funzione chiamate dalla funzione padre nell'albero delle chiamate. I valori percentuali vengono calcolati confrontando il valore delle istanze della funzione con il tempo inclusivo trascorso totale di tutte le funzioni nell'esecuzione della profilatura.

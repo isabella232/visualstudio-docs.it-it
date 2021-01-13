@@ -1,5 +1,7 @@
 ---
-title: Usare i controlli runtime nativi | Microsoft Docs
+title: Usare i controlli di Run-Time nativi | Microsoft Docs
+description: Usare i controlli runtime nativi in Visual Studio per rilevare errori di runtime comuni, ad esempio il danneggiamento del puntatore dello stack, il superamento delle matrici locali e il danneggiamento dello stack.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -37,12 +39,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 586f43f14a8638ab9c3c67f8ffef52ef52a70c53
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 7e46e2253c5664fff9cf456250d375993a0a0c9a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852667"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150639"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Procedura: utilizzare controlli runtime nativi
 In un progetto Visual Studio C++ è possibile usare [runtime_checks](/cpp/preprocessor/runtime-checks) nativi per rilevare errori di runtime comuni, ad esempio:
@@ -67,7 +69,7 @@ In un progetto Visual Studio C++ è possibile usare [runtime_checks](/cpp/prepro
 
 - [Personalizzazione dei controlli runtime nativi](../debugger/native-run-time-checks-customization.md)
 
-- [Utilizzo dei controlli runtime senza la libreria di runtime del linguaggio C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)
+- [Utilizzo dei controlli Run-Time senza la libreria di Run-Time C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)
 
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Per attivare i controlli runtime nativi in una build di debug
 

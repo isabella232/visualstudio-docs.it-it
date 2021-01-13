@@ -1,7 +1,8 @@
 ---
 title: Visualizza file eseguibili e dll
+description: Visualizzare le dll e gli eseguibili (file con estensione exe) usati dall'app nella finestra moduli durante una sessione di debug in Visual Studio.
+ms.custom: SEO-VS-2020, seodec18
 titleSuffix: Visual Studio Modules window
-ms.custom: seodec18
 ms.date: 11/04/2018
 ms.topic: how-to
 f1_keywords:
@@ -25,29 +26,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa284a44f75503a2890a15981d2b4f9947be2fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0471aa25b14111271e6f9219e8e849eed49f113f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348678"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150561"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Visualizzare le dll e gli eseguibili nella finestra moduli (C#, C++, Visual Basic, F #)
 
-Durante il debug di Visual Studio, la finestra **moduli** elenca e visualizza informazioni sulle dll e i file eseguibili (file con*estensione exe* ) usati dall'app.
+Durante il debug di Visual Studio, la finestra **moduli** elenca e visualizza informazioni sulle dll e i file eseguibili (file con *estensione exe* ) usati dall'app.
 
 > [!NOTE]
 > La finestra moduli non è disponibile per il debug di script o SQL.
 
 ## <a name="use-the-modules-window"></a>Usare la finestra Moduli
 
-Per aprire la finestra moduli, durante il debug, selezionare **debug**  >  **Windows**  >  **moduli** Windows (oppure premere **CTRL + ALT + U**).
+Per aprire la finestra moduli, durante il debug, selezionare **debug**  >    >  **moduli** Windows (oppure premere **CTRL + ALT + U**).
 
 Per impostazione predefinita, nella finestra **Moduli** i moduli sono ordinati in base all'ordine di caricamento. Per eseguire l'ordinamento in base a qualsiasi colonna della finestra, selezionare l'intestazione nella parte superiore della colonna.
 
 ## <a name="load-symbols"></a>Caricare i simboli
 
-Nella colonna **stato simbolo** della finestra **moduli** vengono visualizzati i moduli con i simboli di debug caricati. Se lo stato viene **ignorato**durante il caricamento dei simboli, **non è possibile trovare o aprire il file PDB oppure il** **caricamento è disabilitato dall'impostazione Includi/Escludi**. è possibile caricare i simboli manualmente. Per ulteriori informazioni sul caricamento e sull'utilizzo dei simboli, vedere [specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Nella colonna **stato simbolo** della finestra **moduli** vengono visualizzati i moduli con i simboli di debug caricati. Se lo stato viene **ignorato** durante il caricamento dei simboli, **non è possibile trovare o aprire il file PDB oppure il** **caricamento è disabilitato dall'impostazione Includi/Escludi**. è possibile caricare i simboli manualmente. Per ulteriori informazioni sul caricamento e sull'utilizzo dei simboli, vedere [specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 **Per caricare i simboli manualmente:**
 
@@ -67,7 +68,7 @@ Nella colonna **stato simbolo** della finestra **moduli** vengono visualizzati i
 
 1. Selezionare **Impostazioni simboli**.
 
-1. Selezionare **carica tutti i simboli**oppure selezionare i moduli da includere o escludere.
+1. Selezionare **carica tutti i simboli** oppure selezionare i moduli da includere o escludere.
 
 1. Selezionare **OK**. Le modifiche diventano effettive nella successiva sessione di debug.
 

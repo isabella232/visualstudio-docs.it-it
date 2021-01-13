@@ -1,5 +1,7 @@
 ---
 title: Utilizzo dei dati di IntelliTrace salvati | Microsoft Docs
+description: Usare un file IntelliTrace (. iTrace) per avviare il debug in un punto di esecuzione specifico. Il file contiene informazioni che IntelliTrace ha registrato da un'esecuzione dell'app.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb79e2f1a9ffd84f48910637deaff85329c3d91e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42f355a0a8d04e48a2b9d14d0d62edf2cd949a87
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911319"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150938"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Uso dei dati di IntelliTrace salvati (C#, Visual Basic, C++)
 
@@ -36,7 +38,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
     |**Origine**|**Vedere**|
     |----------------|-------------|
-    |Una sessione di IntelliTrace in Visual Studio Visual Studio Enterprise (ma non edizioni Professional o Community)|[Funzionalità di IntelliTrace](../debugger/intellitrace-features.md)|
+    |Una sessione di IntelliTrace in Visual Studio Visual Studio Enterprise (ma non edizioni Professional o Community)|[Funzionalità IntelliTrace](../debugger/intellitrace-features.md)|
     |Microsoft Monitoring Agent, in modalità autonoma o con System Center 2012 R2 Operations Manager, per app Web ASP.NET e applicazioni SharePoint in esecuzione in fase di distribuzione|-   [Diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novità di System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ## <a name="what-do-you-want-to-do"></a><a name="GetStarted"></a> Che cosa si vuole fare?
@@ -56,11 +58,11 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 - Se il file .iTrace viene associato a un elemento di lavoro Team Foundation Server, seguire questi passaggi nell'elemento di lavoro:
 
-  - In **Tutti i collegamenti**individuare il file .iTrace. Aprirlo.
+  - In **Tutti i collegamenti** individuare il file .iTrace. Aprirlo.
 
     \- - oppure -
 
-  - In **Passaggi ripetizione bug**scegliere il collegamento **IntelliTrace** .
+  - In **Passaggi ripetizione bug** scegliere il collegamento **IntelliTrace** .
 
 > [!TIP]
 > Se si chiude il file IntelliTrace durante il debug, è possibile riaprirlo facilmente. Scegliere **IntelliTrace** dal menu **Debug**, quindi selezionare **Mostra riepilogo log**. È inoltre possibile scegliere **Mostra riepilogo log** nella finestra **IntelliTrace** . Questo comando è disponibile solo se si esegue il debug con IntelliTrace.
@@ -95,7 +97,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 ##### <a name="to-start-debugging-from-a-performance-event"></a>Per avviare il debug da un evento di prestazioni
 
-1. In **Violazioni prestazioni**esaminare gli eventi di prestazioni registrati, i relativi tempi di esecuzione totali e altre informazioni sugli eventi. Esaminare ulteriori dettagli sui metodi chiamati durante un evento di prestazioni specifico.
+1. In **Violazioni prestazioni** esaminare gli eventi di prestazioni registrati, i relativi tempi di esecuzione totali e altre informazioni sugli eventi. Esaminare ulteriori dettagli sui metodi chiamati durante un evento di prestazioni specifico.
 
      ![Visualizzare i dettagli degli eventi di prestazioni](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
@@ -126,7 +128,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 ##### <a name="to-start-debugging-from-an-exception"></a>Per avviare il debug da un'eccezione
 
-1. In **Dati eccezione**esaminare gli eventi di eccezione registrati, i relativi tipi, i messaggi e il momento in cui si sono verificate le eccezioni. Per esaminare il codice in dettaglio, avviare il debug dall'evento più recente in un gruppo di eccezioni.
+1. In **Dati eccezione** esaminare gli eventi di eccezione registrati, i relativi tipi, i messaggi e il momento in cui si sono verificate le eccezioni. Per esaminare il codice in dettaglio, avviare il debug dall'evento più recente in un gruppo di eccezioni.
 
      ![Avviare il debug da un evento di eccezione](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
 
@@ -166,7 +168,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
     ![Log IntelliTrace &#45; immettere l'ID correlazione di SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
 
-3. In **Eventi richiesta**esaminare gli eventi. Partendo dall'alto, gli eventi vengono visualizzati nell'ordine in cui si sono verificati.
+3. In **Eventi richiesta** esaminare gli eventi. Partendo dall'alto, gli eventi vengono visualizzati nell'ordine in cui si sono verificati.
 
    1. Scegliere un evento per visualizzarne i dettagli.
 
@@ -211,9 +213,9 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>Per avviare il debug da un thread specifico
 
-1. In **Elenco dei thread**scegliere un thread.
+1. In **Elenco dei thread** scegliere un thread.
 
-2. Nella parte inferiore di **Elenco dei thread**scegliere **Avvia debug**. È inoltre possibile fare doppio clic su un thread.
+2. Nella parte inferiore di **Elenco dei thread** scegliere **Avvia debug**. È inoltre possibile fare doppio clic su un thread.
 
     Per avviare il debug dall'inizio dell'applicazione, fare doppio clic su **Thread principale**. Vedere [funzionalità di IntelliTrace](../debugger/intellitrace-features.md).
 
@@ -222,7 +224,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 |**Colonna**|**Mostra**|
 |----------------|-------------------|
 |**ID**|Numero ID del thread|
-|**Name**|Nome del thread. I thread senza nome vengono visualizzati come " \<No Name> ".|
+|**Nome**|Nome del thread. I thread senza nome vengono visualizzati come " \<No Name> ".|
 |**Start Time**|Ora di creazione del thread|
 |**Ora fine**|Ora di completamento del thread|
 
@@ -230,7 +232,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 1. Espandere **Griglia passaggi test**. Scegliere un passaggio di test.
 
-2. Nella parte inferiore di **Griglia passaggi test**scegliere **Avvia debug**. È inoltre possibile fare doppio clic su un passaggio di test.
+2. Nella parte inferiore di **Griglia passaggi test** scegliere **Avvia debug**. È inoltre possibile fare doppio clic su un passaggio di test.
 
      Verrà avviato il debug dal primo evento IntelliTrace valido dopo il passaggio di test selezionato.
 
@@ -257,7 +259,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 ### <a name="where-can-i-get-more-information"></a>Dove è possibile ottenere ulteriori informazioni?
  [Uso dell'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)
 
- [Funzionalità di IntelliTrace](../debugger/intellitrace-features.md)
+ [Funzionalità IntelliTrace](../debugger/intellitrace-features.md)
 
  [Raccogliere un maggior numero di dati di diagnostica durante i test manuali](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 

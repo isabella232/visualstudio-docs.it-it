@@ -1,6 +1,7 @@
 ---
 title: Usare i file di dump nel debugger | Microsoft Docs
-ms.custom: seodec18
+description: Un file dump è uno snapshot di un'app in esecuzione e dei moduli caricati. Provare a creare un file di dump per le situazioni in cui non si dispone dell'accesso di debug all'app.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/05/2018
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 8bcd225bb64096d8a8e58e3cffd15e7bc94bf5cc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970616"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150873"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Dump di file nel debugger di Visual Studio
 
@@ -107,13 +108,13 @@ Visual Studio esegue automaticamente la ricerca di questi percorsi per i file *e
 
 1. Cartella che contiene il file dump.
 2. Il percorso del modulo specificato dal file di dump, ovvero il percorso del modulo nel computer in cui è stato raccolto il dump.
-3. I percorsi dei simboli specificati in **strumenti** (o **debug**) > **Opzioni** di  >  **debug**  >  **Symbols**. È inoltre possibile aprire la pagina **simboli** dal riquadro **Azioni** della finestra **Riepilogo file dump** . In questa pagina è possibile aggiungere altri percorsi in cui eseguire la ricerca.
+3. I percorsi dei simboli specificati in **strumenti** (o **debug**) > **Opzioni** di  >  **debug**  >  . È inoltre possibile aprire la pagina **simboli** dal riquadro **Azioni** della finestra **Riepilogo file dump** . In questa pagina è possibile aggiungere altri percorsi in cui eseguire la ricerca.
 
 ### <a name="use-the-no-binary-no-symbols-or-no-source-found-pages"></a>Usa le pagine nessun binario, nessun simbolo o nessuna origine trovata
 
 Se Visual Studio non riesce a trovare i file necessari per eseguire il debug di un modulo nel dump, viene visualizzato un file **binario non** trovato, non è stato **trovato alcun simbolo** oppure non è stata trovata alcuna pagina di **origine** . Queste pagine forniscono informazioni dettagliate sulla causa del problema e forniscono collegamenti all'azione che consentono di individuare i file. Vedere [specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Debug just-in-Time](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [Specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

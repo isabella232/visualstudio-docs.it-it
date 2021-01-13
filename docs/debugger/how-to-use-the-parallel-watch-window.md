@@ -1,5 +1,7 @@
 ---
 title: Impostare un'espressione di controllo sulle variabili nei thread paralleli | Microsoft Docs
+description: Impostare un'espressione di controllo sulle variabili nei thread paralleli in Visual Studio. Visualizza contemporaneamente i valori che un'espressione include su più thread.
+ms.custom: SEO-VS-2020
 ms.date: 04/25/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fb0d5ac60ea5ab89b02a624488b5df4f8a7164b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28aeffb629a44c296fb9a349e165c7ce88f70b0c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348626"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150574"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Impostare un'espressione di controllo sulle variabili nei thread paralleli in Visual Studio (C#, Visual Basic, C++)
 Nella finestra Espressione di controllo in parallelo è possibile visualizzare contemporaneamente i valori di un'espressione utilizzata in più thread. Ogni riga rappresenta un thread in esecuzione in un'applicazione, ma un thread può essere rappresentato su più righe. In particolare, ogni riga rappresenta una chiamata di funzione la cui firma della funzione corrisponde alla funzione nello stack frame corrente. È possibile ordinare, riordinare, rimuovere e raggruppare gli elementi presenti nelle colonne. È possibile aggiungere flag, rimuovere flag, bloccare (sospendere) e sbloccare (riprendere) i thread. Le colonne seguenti vengono visualizzate nella finestra **Espressione di controllo in parallelo**:
@@ -85,6 +87,6 @@ Nella finestra Espressione di controllo in parallelo è possibile visualizzare c
 - Immettere un'espressione booleana nella casella **Filtra per espressione booleana**. Il debugger valuta l'espressione per ogni contesto del thread. Vengono visualizzate solo le righe in cui valore è `true`.
 
 ## <a name="see-also"></a>Vedere anche
-- [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Procedura: usare la finestra thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)
 - [Procedura dettagliata: debug di un'applicazione C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

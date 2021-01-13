@@ -1,6 +1,7 @@
 ---
 title: Scrivere una funzione di segnalazione degli errori di run-time | Microsoft Docs
-ms.custom: seodec18
+description: Vedere esempi di scrittura di una funzione di segnalazione errori in fase di esecuzione personalizzata in Visual Studio. Deve avere la stessa dichiarazione di _CrtDbgReportW e restituire un valore pari a 1.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22445868cca1533cad3d7e395452a6b19e102952
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 046384e664ab4aa9c031b76a1ecd6285a9de5502
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407640"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150470"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Procedura: Scrivere una funzione per la segnalazione degli errori di runtime (C++)
 Una funzione personalizzata per la segnalazione degli errori di runtime deve avere la stessa dichiarazione di `_CrtDbgReportW` e deve restituire al debugger il valore 1.
@@ -123,4 +124,4 @@ int main()
 ```
 
 ## <a name="see-also"></a>Vedere anche
-[Personalizzazione dei controlli runtime nativi](../debugger/native-run-time-checks-customization.md)
+[Personalizzazione Run-Time controlli nativi](../debugger/native-run-time-checks-customization.md)
