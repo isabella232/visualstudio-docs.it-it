@@ -10,18 +10,18 @@ user.type: subscriber, admin
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: 21555c11df2671a86d97d6f6c855756cd7e2d3b4
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 2cb74dda511efbed7a204ef11a163097efc2f54b
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916027"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147368"
 ---
 ## <a name="purchase-monthly-subscriptions-through-visual-studio-marketplace"></a>Acquistare sottoscrizioni mensili tramite Visual Studio Marketplace 
 
 Con le sottoscrizioni cloud mensili, puoi affittare Visual Studio e Azure DevOps senza un contratto a lungo termine. È possibile acquistare queste sottoscrizioni tramite il [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions).  
 
-## <a name="visual-studio-marketplace"></a>Visual Studio Marketplace 
+## <a name="billing-in-the-visual-studio-marketplace"></a>Fatturazione nell'Visual Studio Marketplace 
 
 La fatturazione viene gestita tramite la sottoscrizione di Microsoft Azure. Se non è ancora disponibile una sottoscrizione di Azure, non c'è da preoccuparsi. La configurazione è gratuita ed è possibile eseguirla al momento del primo acquisto.  
 
@@ -30,7 +30,7 @@ La fatturazione viene gestita tramite la sottoscrizione di Microsoft Azure. Se n
 
 [Scopri di più](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq) sulle sottoscrizioni mensili di Visual Studio per la fatturazione di Azure. 
 
-## <a name="more-information"></a>Ulteriori informazioni 
+## <a name="more-information-about-subscription-benefits"></a>Ulteriori informazioni sui vantaggi della sottoscrizione
 
 [Confrontare i vantaggi e i prezzi delle sottoscrizioni](https://visualstudio.microsoft.com/vs/pricing/) per comprendere i vantaggi offerti da ogni sottoscrizione di Visual Studio. 
 

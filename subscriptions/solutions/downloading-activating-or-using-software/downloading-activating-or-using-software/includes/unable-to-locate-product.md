@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: c862de5bc5006abc60650a26132453f260a51a89
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: e4d24412ab4e3aee22a9184d23ddbefb6ceb35fa
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916002"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147661"
 ---
 ## <a name="im-unable-to-locate-the-product-i-need-to-download"></a>Non riesco a trovare il prodotto che devo scaricare.
 
@@ -30,8 +30,8 @@ I download del software disponibili dipendono dalla sottoscrizione in uso. È po
 1. Qui sarà possibile visualizzare un elenco di download più diffusi o cercare un prodotto specifico. Nota: se si dispone di più di una sottoscrizione associata allo stesso indirizzo di accesso, verranno visualizzati i download inclusi nella sottoscrizione di livello più alto, indipendentemente dalla sottoscrizione che si sta visualizzando.
 1. Fare clic su "Ottieni chiave" per visualizzare tutte le chiavi disponibili per il prodotto che si vuole scaricare. Fare quindi clic su "Richiedi chiave" per richiedere un codice Product Key se il download richiede una chiave per iniziare. 
 
-## <a name="product-keys-page"></a>Pagina codici Product Key 
+## <a name="find-available-product-keys"></a>Trovare i codici Product Key disponibili
 È anche possibile visitare la pagina [codici Product Key](https://my.visualstudio.com/productkeys)   in cui tutte le chiavi sono disponibili nell'aggregazione. È possibile modificare la colonna Note per identificare quando e perché la chiave è stata richiesta. 
 
-## <a name="more-information"></a>Ulteriori informazioni 
+## <a name="more-information-about-product-keys"></a>Ulteriori informazioni sui codici Product Key
 Scopri di [più](https://docs.microsoft.com/visualstudio/subscriptions/find-keys) su come trovare e richiedere i codici Product Key e i download.  

@@ -10,12 +10,12 @@ user.type: subscriber, admin
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: b16123ef691036c027ac6046616699624e53b10a
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 90c56d7be8e4f3e687ff602619b5eda80807b030
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916026"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147423"
 ---
 ## <a name="purchase-subscriptions-through-microsoft-store"></a>Acquistare sottoscrizioni tramite Microsoft Store 
 
@@ -37,7 +37,7 @@ Ognuna di queste sottoscrizioni offre la possibilità di effettuare un acquisto 
 1. Fare clic su "Download-New" e aggiungere al carrello. Nota: a volte, per impostazione predefinita, per il negozio verrà visualizzato il prezzo di rinnovo. Assicurarsi di acquistare una nuova sottoscrizione. Il negozio non convaliderà la presenza di una sottoscrizione corrente durante l'acquisto al prezzo del rinnovo. Non sarà possibile attivare il rinnovo senza una sottoscrizione corrispondente corrente.
 1. Estrai. Nella pagina di conferma verrà fornito un codice Product Key da utilizzare per attivare la sottoscrizione. Vedere le istruzioni riportate di seguito. 
 
-## <a name="how-to-activate"></a>Come attivare  
+## <a name="how-to-activate-your-subscription"></a>Come attivare la sottoscrizione 
 
 Dopo aver acquistato una sottoscrizione di Visual Studio tramite il Microsoft Store, è possibile avviare il processo di attivazione dalla pagina di conferma del pagamento o dall'e-mail di conferma ricevuta dopo l'acquisto. 
 
@@ -47,7 +47,7 @@ Dopo aver acquistato una sottoscrizione di Visual Studio tramite il Microsoft St
 
 La sottoscrizione dovrebbe essere ora visibile nella [pagina Sottoscrizioni](https://my.visualstudio.com/subscriptions) ed è necessario avere accesso a tutti i vantaggi della sottoscrizione. 
 
-## <a name="more-information"></a>Ulteriori informazioni 
+## <a name="compare-subscription-benefits"></a>Confrontare i vantaggi della sottoscrizione
 
 [Confrontare i vantaggi e i prezzi delle sottoscrizioni](https://visualstudio.microsoft.com/vs/pricing/) per comprendere i vantaggi offerti da ogni sottoscrizione di Visual Studio. 
 

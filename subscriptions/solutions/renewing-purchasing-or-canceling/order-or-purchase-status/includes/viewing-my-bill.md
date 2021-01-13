@@ -10,12 +10,12 @@ user.type: subscriber
 tags: billing
 subscription.type: vl, cloud, retail, partner
 sap.id: 2db8f927-5814-835b-cc9d-daab30a7a09e
-ms.openlocfilehash: a7121ac942b074b0414c00ee791ccf37bf8320bd
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: fa95610b98d8731b486392d927452b8d42576f28
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915996"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147531"
 ---
 ## <a name="how-do-i-view-my-bill"></a>Ricerca per categorie visualizzare la fattura?
 
@@ -34,5 +34,5 @@ La funzionalità limite di spesa in Azure consente di impostare un limite di spe
 
 Se è stato rimosso il limite di spesa per la sottoscrizione di Azure, è stato eseguito il pagamento in base al consumo, i prezzi di sviluppo/test Enterprise sono disponibili solo per i sottoscrittori di Visual Studio o si vogliono usare i servizi al di fuori di quelli usati per lo sviluppo e i test coperti dal credito mensile, verranno addebitati mensilmente per i servizi.  
 
-## <a name="more-information"></a>Ulteriori informazioni 
+## <a name="more-information-about-billing"></a>Ulteriori informazioni sulla fatturazione
 Risposte alle domande più comuni sull'utilizzo e sugli addebiti. Visita le [domande frequenti](https://docs.microsoft.com/azure/cost-management-billing/manage/getting-started)relative alla fatturazione. 

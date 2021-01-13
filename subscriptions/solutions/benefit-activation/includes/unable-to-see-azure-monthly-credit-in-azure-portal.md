@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: f12da1b45520de87bfd94f5b4597d10820968a11
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 48f52f1381bb890942e6f5ed3f1772c0735b1fb8
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915972"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147630"
 ---
 ## <a name="im-unable-to-see-my-azure-monthly-credit-in-the-azure-portal"></a>Non è possibile visualizzare il credito mensile di Azure nel portale di Azure.
 
@@ -29,10 +29,12 @@ Quando si attiva il credito mensile, viene collegato il messaggio di posta elett
 
 Sarà necessario accedere al [portale di Azure](https://portal.azure.com/) con il messaggio di posta elettronica con cui si è impostato l'account. Se, ad esempio, è stato attivato il credito mensile con l'account alternativo, è sempre necessario accedere alla sottoscrizione di Azure con tale indirizzo di posta elettronica. 
 
-## <a name="azure-directories"></a>Directory di Azure 
+## <a name="azure-directories"></a>Directory di Azure
+ 
 È possibile avere più directory come parte della sottoscrizione di Azure. Assicurarsi di usare la directory per la configurazione della sottoscrizione di Azure. È possibile visualizzare e cambiare le directory facendo clic sull'icona dell'account nell'angolo in alto a destra nella portale di Azure. 
 
-## <a name="how-to-activate"></a>Come attivare
+## <a name="how-to-activate-your-azure-monthly-credit"></a>Come attivare il credito mensile di Azure
+
 1. Accedere al portale delle [sottoscrizioni](https://my.visualstudio.com/benefits)  
 1. Individuare il riquadro Azure Dev/test single Credit nella sezione strumenti della pagina vantaggi e fare clic sul collegamento attiva nella parte inferiore del riquadro del vantaggio. Se non è possibile trovare il riquadro del credito mensile di Azure, usare la [pagina di confronto dei vantaggi](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription) per verificare che la sottoscrizione includa un credito mensile. 
 1. Se non si ha una sottoscrizione di Azure esistente, verrà richiesto di immettere le informazioni personali necessarie per crearne una.  
@@ -42,7 +44,7 @@ Sarà necessario accedere al [portale di Azure](https://portal.azure.com/) con i
 
 Le sottoscrizioni di Azure create tramite il vantaggio delle sottoscrizioni di Visual Studio possono essere interessate da restrizioni che non vengono imposte su sottoscrizioni a pagamento. Alcune aree geografiche potrebbero non essere disponibili per la creazione di macchine virtuali e servizi di Azure e alcuni tipi di servizi potrebbero non essere disponibili. Potrebbe essere presente una quota predefinita inferiore rispetto alle sottoscrizioni a pagamento. 
 
-## <a name="more-information"></a>Ulteriori informazioni 
+## <a name="more-information-about-azure-monthly-credits"></a>Altre informazioni sui crediti mensili di Azure
 
 [Altre informazioni su](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure) attivazione, idoneità e altre risorse di supporto.  
 
