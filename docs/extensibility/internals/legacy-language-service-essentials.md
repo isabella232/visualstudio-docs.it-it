@@ -1,5 +1,7 @@
 ---
 title: Servizi di linguaggio legacy | Microsoft Docs
+description: Informazioni sulle funzionalità essenziali disponibili nei servizi di linguaggio legacy che consentono di integrare un linguaggio di programmazione in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 501bccf755293e86e8a9dc23fce125a10c882376
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffa21b619ef17be3fa649732a2b6e3bcd700dda6
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707415"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205138"
 ---
 # <a name="legacy-language-service-essentials"></a>Nozioni fondamentali sui servizi di linguaggio legacy
 È necessario fornire un servizio di linguaggio per integrare un linguaggio di programmazione in Visual Studio. In questo argomento vengono illustrate le funzionalità disponibili nei servizi di linguaggio legacy.
@@ -30,7 +32,7 @@ ms.locfileid: "80707415"
 
  I servizi di linguaggio legacy forniscono le funzionalità seguenti:
 
-|Feature|Descrizione|
+|Funzionalità|Descrizione|
 |-------------|-----------------|
 |Colorazione della sintassi|Consente alla visualizzazione dell'editor di visualizzare colori e stili dei tipi di carattere diversi per i diversi elementi di una lingua. Questa differenziazione può semplificare la lettura e la modifica dei file.<br /><br /> Per informazioni generali, vedere [colorazione della sintassi in un servizio di linguaggio legacy](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Per informazioni su questa funzionalità nel Framework di pacchetto gestito (MPF), vedere [colorazione della sintassi in un servizio di linguaggio legacy](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|
 |Completamento istruzioni|Completa un'istruzione o una parola chiave che l'utente ha iniziato a digitare. Il completamento delle istruzioni consente agli utenti di immettere più facilmente istruzioni complesse, con minore digitazione e meno probabilità di errore.<br /><br /> Per informazioni generali, vedere [completamento delle istruzioni in un servizio di linguaggio legacy](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Per informazioni su questa funzionalità in MPF, vedere [completamento delle parole in un servizio di linguaggio legacy](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|
@@ -42,7 +44,7 @@ ms.locfileid: "80707415"
 
  Le funzionalità seguenti sono correlate al supporto per i linguaggi di programmazione, ma non fanno parte dei servizi di linguaggio:
 
-| Feature | Descrizione |
+| Funzionalità | Descrizione |
 |-----------------------| - |
 | Analizzatori di espressioni | Supporta il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debugger convalidando i punti di interruzione e fornendo un elenco di espressioni da visualizzare nella finestra di debug **auto** .<br /><br /> Per ulteriori informazioni, vedere [supporto del servizio di linguaggio per il debug](../../extensibility/internals/language-service-support-for-debugging.md). |
-| Strumenti per l'esplorazione di simboli | Supporta i risultati di **Visualizzatore oggetti**, **Visualizzazione classi**, **Visualizzatore chiamate**e **Trova simbolo**. |
+| Strumenti per l'esplorazione di simboli | Supporta i risultati di **Visualizzatore oggetti**, **Visualizzazione classi**, **Visualizzatore chiamate** e **Trova simbolo**. |

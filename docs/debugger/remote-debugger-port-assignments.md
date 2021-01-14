@@ -1,6 +1,7 @@
 ---
 title: Assegnazioni delle porte del debugger remoto | Microsoft Docs
-ms.custom: ''
+description: Informazioni sulle assegnazioni delle porte del debugger remoto di Visual Studio in sistemi operativi a 32 bit, sistemi operativi a 64 bit e Azure. Informazioni sulla porta di individuazione.
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
 ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fcd0159e5bd315009c1c468dc7a19b5ba5a9c61
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 40081f276dc9649cf448bf00e80d11fc80f58f47
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713503"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204826"
 ---
 # <a name="remote-debugger-port-assignments"></a>Assegnazioni delle porte del debugger remoto
 Visual Studio Remote Debugger può essere eseguito come applicazione o come servizio in background. Quando viene eseguito come applicazione, usa una porta assegnata per impostazione predefinita, come indicato di seguito:
@@ -42,7 +43,7 @@ In altre parole, il numero della porta assegnata al debugger remoto viene increm
 
  Nella finestra del debugger remoto fare clic su **Strumenti > opzioni** e impostare il numero di porta TCP/IP.
 
- Nella riga di comando avviare il debugger remoto con l'opzione **/Port** : **msvsmon/Port \<port number> **.
+ Nella riga di comando avviare il debugger remoto con l'opzione **/Port** : **msvsmon/Port \<port number>**.
 
  Tutte le opzioni della riga di comando del debugger remoto sono reperibili nella Guida al debug remoto (premere **F1** o fare clic su **Guida > Utilizzo** nella finestra del debugger remoto).
 
@@ -54,7 +55,7 @@ In altre parole, il numero della porta assegnata al debugger remoto viene increm
  Quando viene avviata la versione a 64 bit del debugger remoto, per impostazione predefinita viene usata la porta principale (4022).  Se si esegue il debug di un processo a 32 bit, la versione a 64 bit del debugger remoto avvia una versione a 32 bit del debugger remoto sulla porta 4023 (il numero di porta principale è stato incrementato di 1). Se si esegue il debugger remoto a 32 bit, viene usata la porta 4022 e non la porta 4023.
 :::moniker-end
 
- Questa porta è configurabile dalla riga di comando: **msvsmon \<port number> /wow64port **.
+ Questa porta è configurabile dalla riga di comando: **msvsmon \<port number> /wow64port**.
 
 ## <a name="the-discovery-port"></a>Porta di individuazione
  La porta UDP 3702 viene usata per individuare le istanze in esecuzione del debugger remoto sulla rete, ad esempio la finestra di dialogo **Trova** nella finestra di dialogo **Connetti a processo** . Viene usata solo per l'individuazione di un computer che esegue il debugger remoto, pertanto è facoltativa se si ha altro un modo per conoscere il nome del computer o l'indirizzo IP del computer di destinazione. Si tratta di una porta standard per l'individuazione, quindi non è possibile configurare il numero di porta.

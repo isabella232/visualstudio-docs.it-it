@@ -1,5 +1,7 @@
 ---
 title: Installazione di VSPackage con Windows Installer | Microsoft Docs
+description: Informazioni su come usare il Microsoft Windows Installer per installare un pacchetto VSPackage e i relativi file dipendenti e registrarli e integrarli in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a7ace9203cd8f21a9e9ab5dc525bf604aeff678
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: ec49e5184071e0640d671ba0baaad8ac049fea25
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012204"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205234"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Installazione di pacchetti VSPackage con Windows Installer
 L'integrazione [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] di un VSPackage in richiede molto più della semplice copia dei file nel computer di un utente. Il programma di installazione del pacchetto VSPackage deve installare il pacchetto VSPackage e i relativi file dipendenti e registrarli e integrarli in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Il pacchetto VSPackage può sfruttare le funzionalità di integrazione, ad esempio la visualizzazione di un'icona nella [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] schermata iniziale e la finestra di dialogo informazioni su.

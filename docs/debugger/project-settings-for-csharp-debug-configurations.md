@@ -1,6 +1,7 @@
 ---
 title: Impostazioni di progetto per una configurazione di debug C# | Microsoft Docs
-ms.custom: seodec18
+description: Informazioni su come modificare le impostazioni di progetto per una configurazione di debug C# in Visual Studio, usando la scheda debug e la scheda compilazione delle pagine delle proprietà del progetto.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/21/2018
 ms.topic: reference
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5108e195e5df245c72436752316e8ee91781e7d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 262e46436f1391ae21df0ccdd3ca308eecb347da
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62904061"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205567"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Impostazioni di progetto per configurazioni di debug C#
 
@@ -43,7 +44,7 @@ Per altre informazioni, vedere [Configurazioni di debug e rilascio](how-to-set-d
 
 |Impostazione|Descrizione|
 |-------------------------------------| - |
-| **Configurazione** | Imposta la modalità per la compilazione dell'app. Selezionare **Active (debug)**, **debug**, **Release**o **tutte le configurazioni** dall'elenco a discesa. |
+| **Configuration** | Imposta la modalità per la compilazione dell'app. Selezionare **Active (debug)**, **debug**, **Release** o **tutte le configurazioni** dall'elenco a discesa. |
 | **Azione di avvio** | Specifica l'azione quando si seleziona **Avvia** in una configurazione di debug.<br />- **Avvia progetto** è l'azione predefinita e avvia il progetto di avvio per il debug. Per altre informazioni, vedere [Choose the Startup Project](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />- **Avvia programma esterno** e si connette a un'app che non fa parte di un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto. Per ulteriori informazioni, vedere [Connetti a processi in esecuzione con il debugger](attach-to-running-processes-with-the-visual-studio-debugger.md).<br />- **Avvia browser con URL** consente di eseguire il debug di un'app Web. |
 | **Opzioni**  >  di avvio **Argomenti della riga di comando** | Specifica gli argomenti della riga di comando per l'applicazione di cui è in corso il debug. Il nome del comando è il nome dell'app specificato in **Avvia programma esterno**. |
 | **Opzioni**  >  di avvio **Directory di lavoro** | Specifica la directory di lavoro dell'app di cui è in corso il debug. In C# la directory di lavoro è *\bin\Debug* per impostazione predefinita.
@@ -58,7 +59,7 @@ Per altre informazioni, vedere [Configurazioni di debug e rilascio](how-to-set-d
 |**Informazioni generali**  >  **Simboli di compilazione condizionale**|Definire le costanti di DEBUG e di traccia, se selezionate.<br /><br /> Esse attivano la compilazione condizionale della [Classe Debug](/dotnet/api/system.diagnostics.debug) e della [Classe Trace](/dotnet/api/system.diagnostics.trace). Quando sono definite, i metodi delle classi Debug e Trace generano l'output per la [finestra di output](../ide/reference/output-window.md). In caso contrario, tali metodi non verranno compilati e non verrà generato alcun output.<br /><br />In genere, il DEBUG è definito nella versione di debug di una compilazione e non è definito nella versione di rilascio. TRACE è definito in entrambe le versioni di debug e di rilascio.|
 |**Informazioni generali**  >  **Ottimizza codice**|A meno che non sia presente un bug solo nel codice ottimizzato, lasciare deselezionata questa impostazione per le compilazioni di debug. Il debug del codice ottimizzato è più difficile, perché le istruzioni non corrispondono direttamente alle istruzioni nel codice sorgente.|
 |**Output**  >  di **Percorso di output**|Viene in genere impostato su *bin\Debug* per il debug.|
-|Pulsante **Avanzate**|Per informazioni sulle opzioni di debug avanzate, vedere [finestra di dialogo Impostazioni di compilazione avanzate (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md). Il formato portatile per i file di simboli (con*estensione PDB*) è un recente formato multipiattaforma per le app .NET Core.
+|Pulsante **Avanzate**|Per informazioni sulle opzioni di debug avanzate, vedere [finestra di dialogo Impostazioni di compilazione avanzate (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md). Il formato portatile per i file di simboli (con *estensione PDB*) è un recente formato multipiattaforma per le app .NET Core.
 
 ## <a name="see-also"></a>Vedere anche
-- [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)
+- [Impostazioni del debugger e preparazione](../debugger/debugger-settings-and-preparation.md)

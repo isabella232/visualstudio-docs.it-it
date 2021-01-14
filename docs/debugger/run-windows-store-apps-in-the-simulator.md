@@ -1,5 +1,7 @@
 ---
 title: Eseguire app UWP nel simulatore | Microsoft Docs
+description: Informazioni su come eseguire app piattaforma UWP (Universal Windows Platform) (UWP) nel simulatore di Visual Studio, che è un'applicazione desktop che simula un'app UWP.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9b46abc4d22ddfdc551669d3bcd4cba5acf7cce4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 12d2fed62e1a4762c9b92304ff1acfe8374ab976
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599524"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205632"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Eseguire app UWP nel simulatore
 
@@ -159,6 +161,6 @@ Per ulteriori informazioni sulla gestione delle connessioni di rete, vedere:
 
 È possibile arrestare il simulatore premendo **CTRL + ALT + F4**.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Eseguire app da Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

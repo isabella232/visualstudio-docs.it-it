@@ -1,5 +1,7 @@
 ---
 title: Elenco dei servizi disponibili | Microsoft Docs
+description: Consente di visualizzare un elenco dei servizi disponibili supportati da Visual Studio e Visual Studio SDK, inclusi i GUID del servizio per ottenere un'interfaccia per ogni servizio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302d4bcff647a74acc973c47e0b62e66c86e5859
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53ab3531e67be540f7c66da52b7e5152a510fa27
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707348"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204644"
 ---
 # <a name="list-of-available-services"></a>Elenco di servizi disponibili
 
@@ -140,7 +142,7 @@ Usare i GUID del servizio elencati di seguito o ottenuti da un'altra origine (ad
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextSpanSet> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextSpanSet> | Sì | Sì | Consente di accedere a un elenco di intervalli di testo in un'immagine o in un buffer di testo. Questo servizio viene in genere implementato in un contenitore di documenti e si riferisce al documento corrente. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadedWaitDialog> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadedWaitDialog> | No | Sì | Consente a un VSPackage di visualizzare una finestra di dialogo in attesa di un thread diverso (utilizzato per l'attesa delle attività in background). |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadPool> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadPool> | No | Sì | Consente a un VSPackage di avviare attività in background che vengono quindi gestite da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | Sì | Sì | Consente di accedere alla **casella degli strumenti**dell'IDE. |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | Sì | Sì | Consente di accedere alla **casella degli strumenti** dell'IDE. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxActiveXDataProvider> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider> | Sì | Sì | Consente a un VSPackage di ottenere informazioni dagli elementi della **casella degli strumenti** . |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxDataProviderRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProviderRegistry> | No | Sì | Consente a un VSPackage di registrare un provider di dati della casella degli strumenti senza sostenere il costo delle prestazioni del precaricamento dell'intera **casella degli strumenti**. |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolsOptions> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolsOptions> | No | Sì | Consente a un VSPackage di determinare se la finestra di dialogo **Opzioni** è aperta e di aggiornare la visibilità di tutte le pagine opzioni. |

@@ -1,5 +1,7 @@
 ---
 title: Interfacce del servizio di linguaggio legacy | Microsoft Docs
+description: Informazioni sulle interfacce disponibili in Visual Studio SDK che forniscono le funzionalità legacy del servizio di linguaggio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89d80d6961f5eaf91721567ccb0efa73bbe31406
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb694389bbf6f913db084dca29f7787c6283d3ad
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707376"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205023"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfacce dei servizi di linguaggio legacy
 Per qualsiasi linguaggio di programmazione specifico, può essere presente una sola istanza di un servizio di linguaggio alla volta. Tuttavia, un singolo servizio di linguaggio può servire più di un editor.

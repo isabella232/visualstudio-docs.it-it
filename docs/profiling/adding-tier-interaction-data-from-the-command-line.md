@@ -1,5 +1,7 @@
 ---
 title: Aggiunta di dati di interazione tra livelli dalla riga di comando | Microsoft Docs
+description: Per le applicazioni a più livelli che comunicano con uno o più database, usare la profilatura dell'interazione tra livelli per le informazioni sul tempo di esecuzione per le chiamate sincrone.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5e3dc7fc3ebbb3d06e85f7322237ecb72b22b0e
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779870"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205541"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Aggiungere dati di interazione tra livelli dalla riga di comando
 
@@ -32,7 +34,7 @@ I dati di profilatura dell'interazione tra livelli possono essere raccolti usand
 
 **Raccogliere dati TIP in un computer remoto**
 
-Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file ** \_ vs_profiler** _\<Platform>_ **\_** _\<Language>_ **. exe** dalla cartella _% VSInstallDir%_**\Team Tools\Performance Tools\Setups** di un computer con Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
+Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **\_ vs_profiler** _\<Platform>_ **\_** _\<Language>_ **. exe** dalla cartella _% VSInstallDir%_**\Team Tools\Performance Tools\Setups** di un computer con Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
 
 **Report TIP**
 

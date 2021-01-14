@@ -1,5 +1,7 @@
 ---
 title: Eseguire il debug di app UWP nei computer remoti | Microsoft Docs
+description: Vedere come usare Visual Studio per eseguire, eseguire il debug, profilare e testare un'app piattaforma UWP (Universal Windows Platform) (UWP) in remoto in un altro computer o dispositivo.
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c8e8305cb454bfc9f0fb0be4b9964ac1a7e4fe96
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: a28769237f0c1b0078e9c9c117695e68e5b521ac
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "92298703"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204956"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Eseguire il debug di app UWP nei computer remoti da Visual Studio
 
@@ -45,11 +47,11 @@ Per eseguire il debug di un'app UWP in un dispositivo remoto da Visual Studio:
 
 ### <a name="configure-a-c-or-visual-basic-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Configurare un progetto C# o Visual Basic per il debug remoto
 
-1. Selezionare il progetto C# o Visual Basic in Visual Studio **Esplora soluzioni** e selezionare l'icona delle **Proprietà** , premere **ALT** + **invio**oppure fare clic con il pulsante destro del mouse e scegliere **Proprietà**.
+1. Selezionare il progetto C# o Visual Basic in Visual Studio **Esplora soluzioni** e selezionare l'icona delle **Proprietà** , premere **ALT** + **invio** oppure fare clic con il pulsante destro del mouse e scegliere **Proprietà**.
 
 1. Selezionare la scheda **Debug**.
 
-1. In **dispositivo di destinazione**selezionare **computer remoto** per un computer remoto o **dispositivo** per un dispositivo Windows Mobile 10 connesso direttamente.
+1. In **dispositivo di destinazione** selezionare **computer remoto** per un computer remoto o **dispositivo** per un dispositivo Windows Mobile 10 connesso direttamente.
 
 1. Per un computer remoto, immettere il nome di rete o l'indirizzo IP nel campo **computer remoto** oppure selezionare **trova** per cercare il dispositivo nella finestra di [dialogo connessioni remote](#remote-connections).
 
@@ -57,11 +59,11 @@ Per eseguire il debug di un'app UWP in un dispositivo remoto da Visual Studio:
 
 ### <a name="configure-a-c-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Configurare un progetto C++ per il debug remoto
 
-1. Selezionare il progetto C++ in Visual Studio **Esplora soluzioni** e selezionare l'icona delle **Proprietà** , premere **ALT** + **invio**oppure fare clic con il pulsante destro del mouse e scegliere **Proprietà**.
+1. Selezionare il progetto C++ in Visual Studio **Esplora soluzioni** e selezionare l'icona delle **Proprietà** , premere **ALT** + **invio** oppure fare clic con il pulsante destro del mouse e scegliere **Proprietà**.
 
 1. Selezionare la scheda **debug** .
 
-3. In **debugger da avviare**selezionare computer **remoto** per un computer remoto o **dispositivo** per un dispositivo Windows Mobile 10 connesso direttamente.
+3. In **debugger da avviare** selezionare computer **remoto** per un computer remoto o **dispositivo** per un dispositivo Windows Mobile 10 connesso direttamente.
 
 1. Per un computer remoto, immettere o selezionare il nome di rete o l'indirizzo IP nel campo **nome computer** oppure elenco a discesa e selezionare **individua** per cercare il dispositivo nella finestra di [dialogo connessioni remote](#remote-connections).
 
@@ -100,7 +102,7 @@ Il debug remoto funziona allo stesso modo del debug locale.
 
 1. Nel computer Visual Studio, assicurarsi che venga visualizzata la destinazione di debug corretta (computer o **dispositivo****remoto** ) accanto alla freccia verde sulla barra degli strumenti.
 
-1. Avviare il debug selezionando **debug**  >  **Avvia debug**, premendo **F5**o selezionando la freccia verde sulla barra degli strumenti.
+1. Avviare il debug selezionando **debug**  >  **Avvia debug**, premendo **F5** o selezionando la freccia verde sulla barra degli strumenti.
 
    Il progetto viene ricompilato, quindi distribuito e avviato sul dispositivo remoto. Il debugger sospende l'esecuzione in corrispondenza dei punti di interruzione ed è possibile eseguire istruzioni, over e out di codice.
 

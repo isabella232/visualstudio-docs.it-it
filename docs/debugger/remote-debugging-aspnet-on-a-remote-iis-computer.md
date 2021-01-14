@@ -1,6 +1,7 @@
 ---
 title: ASP.NET Core di debug remoto in un computer IIS remoto | Microsoft Docs
-ms.custom: remotedebugging
+description: Eseguire il debug di un'applicazione ASP.NET Core distribuita in un computer Internet Information Services remoto (IIS) con Visual Studio Remote Debugger.
+ms.custom: remotedebugging, SEO-VS-2020
 ms.date: 05/06/2020
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
@@ -10,12 +11,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 389fe1491a92cacecd772244c2a0facd0d12c887
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: bc746d5139b897d51d4d038f077906f56aa5d552
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "92298767"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205814"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>ASP.NET Core di debug remoto in un computer IIS remoto in Visual Studio
 
@@ -108,7 +109,7 @@ Se è necessario assistenza per la distribuzione dell'app in IIS, prendere in co
 
 ### <a name="configure-the-aspnet-core-web-site"></a>Configurare il sito Web di ASP.NET Core
 
-1. In Gestione IIS fare clic su **pool di applicazioni**nel riquadro sinistro in **connessioni**. Aprire **DefaultAppPool** e impostare la **versione .NET CLR** su **nessun codice gestito**. Questa operazione è necessaria per ASP.NET Core. Il sito Web predefinito utilizza DefaultAppPool.
+1. In Gestione IIS fare clic su **pool di applicazioni** nel riquadro sinistro in **connessioni**. Aprire **DefaultAppPool** e impostare la **versione .NET CLR** su **nessun codice gestito**. Questa operazione è necessaria per ASP.NET Core. Il sito Web predefinito utilizza DefaultAppPool.
 
 2. Arrestare e riavviare il DefaultAppPool.
 
@@ -145,15 +146,15 @@ Quando la distribuzione è completata, l'app viene avviata automaticamente. Se l
 
 3. In **connessioni** nel riquadro sinistro passare a **siti**.
 
-4. Selezionare il **sito Web predefinito**, scegliere **impostazioni di base**e impostare il **percorso fisico** su **C:\publish**.
+4. Selezionare il **sito Web predefinito**, scegliere **impostazioni di base** e impostare il **percorso fisico** su **C:\publish**.
 
 4. Fare clic con il pulsante destro del mouse sul nodo **Sito Web predefinito** e scegliere **Aggiungi applicazione**.
 
 5. Impostare il campo **alias** su **MyASPApp**, accettare il pool di applicazioni predefinito (**DefaultAppPool**) e impostare il **percorso fisico** su **C:\publish**.
 
-6. In **connessioni**selezionare **pool di applicazioni**. Aprire **DefaultAppPool** e impostare il campo pool di applicazioni su **nessun codice gestito**.
+6. In **connessioni** selezionare **pool di applicazioni**. Aprire **DefaultAppPool** e impostare il campo pool di applicazioni su **nessun codice gestito**.
 
-7. Fare clic con il pulsante destro del mouse sul nuovo sito in Gestione IIS, scegliere **modifica autorizzazioni**e assicurarsi che IUSR, IIS_IUSRS o l'utente configurato per l'accesso all'app Web sia un utente autorizzato con lettura & Esegui diritti.
+7. Fare clic con il pulsante destro del mouse sul nuovo sito in Gestione IIS, scegliere **modifica autorizzazioni** e assicurarsi che IUSR, IIS_IUSRS o l'utente configurato per l'accesso all'app Web sia un utente autorizzato con lettura & Esegui diritti.
 
     Se non viene visualizzato uno di questi utenti con accesso, seguire la procedura per aggiungere IUSR come utente con i diritti di esecuzione di lettura &.
 
@@ -188,13 +189,13 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
 
 3. Impostare il campo qualificatore su **\<remote computer name>** e premere **invio**.
 
-    Verificare che in Visual Studio venga aggiunta la porta richiesta al nome del computer, che viene visualizzato nel formato: ** \<remote computer name> :p Ort**
+    Verificare che in Visual Studio venga aggiunta la porta richiesta al nome del computer, che viene visualizzato nel formato: **\<remote computer name> :p Ort**
 
     ::: moniker range=">=vs-2019"
-    In Visual Studio 2019 dovrebbe essere visualizzato ** \<remote computer name> : 4024**
+    In Visual Studio 2019 dovrebbe essere visualizzato **\<remote computer name> : 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    In Visual Studio 2017 dovrebbe essere visualizzato ** \<remote computer name> : 4022**
+    In Visual Studio 2017 dovrebbe essere visualizzato **\<remote computer name> : 4022**
     ::: moniker-end
     La porta è obbligatoria. Se il numero di porta non è visibile, aggiungerlo manualmente.
 
@@ -224,7 +225,7 @@ Per informazioni sull'esecuzione del debugger remoto come servizio, vedere [eseg
 
 7. Scegliere **Connetti**.
 
-8. Aprire il sito Web del computer remoto. In un browser passare a **http:// \<remote computer name> **.
+8. Aprire il sito Web del computer remoto. In un browser passare a **http:// \<remote computer name>**.
 
     Verrà visualizzata la pagina Web ASP.NET.
 
@@ -254,14 +255,14 @@ Porte obbligatorie:
 
 2. Scegliere quindi **regole in ingresso > nuova regola > porta**, quindi fare clic su **Avanti**. Per UDP 3702, scegliere invece **regole in uscita** .
 
-3. In **porte locali specifiche**immettere il numero di porta, quindi fare clic su **Avanti**.
+3. In **porte locali specifiche** immettere il numero di porta, quindi fare clic su **Avanti**.
 
 4. Fare clic su **Consenti la connessione**, quindi su **Avanti**.
 
 5. Selezionare uno o più tipi di rete da abilitare per la porta e fare clic su **Avanti**.
 
     Il tipo selezionato deve includere la rete a cui è connesso il computer remoto.
-6. Aggiungere il nome (ad esempio, **IIS**, **distribuzione Web**o **msvsmon**) per la regola in ingresso e fare clic su **fine**.
+6. Aggiungere il nome (ad esempio, **IIS**, **distribuzione Web** o **msvsmon**) per la regola in ingresso e fare clic su **fine**.
 
     La nuova regola dovrebbe comparire nell'elenco Regole in ingresso o Regole in uscita.
 

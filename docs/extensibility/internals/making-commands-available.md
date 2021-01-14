@@ -1,5 +1,7 @@
 ---
 title: Rendere disponibili i comandi | Microsoft Docs
+description: Informazioni su come controllare la disponibilità dei comandi aggiunti all'IDE di Visual Studio nei pacchetti VSPackage, usando il caricamento ritardato, il contesto e la visibilità.
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d64df85516e0a1ac326f8d40558755718c4644c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d17fd0b63438183b10b1ecb0e5eb6abb9f5d7f46
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707327"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204540"
 ---
 # <a name="making-commands-available"></a>Rendere disponibili i comandi
 

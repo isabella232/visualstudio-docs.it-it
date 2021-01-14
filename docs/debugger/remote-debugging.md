@@ -1,8 +1,10 @@
 ---
 title: Debug remoto | Microsoft Docs
+description: Eseguire il debug di un'applicazione di Visual Studio distribuita in un computer diverso mediante Visual Studio Remote Debugger.
 ms.custom:
 - remotedebugging
 - seodec18
+- SEO-VS-2020
 ms.date: 07/02/2018
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8051b83e0022361e4cb1cb61602dfcf8991062e
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: e97fd8979235f8ea89b43c6466b3119debe5b3ca
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "92298692"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205671"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 È possibile eseguire il debug di un'applicazione Visual Studio che è stata distribuita in un computer diverso. A questo scopo si usa Visual Studio Remote Debugger.
@@ -93,7 +95,7 @@ Se si vuole semplicemente scaricare e installare il debugger remoto e non sono n
      > [!IMPORTANT]
      > È possibile eseguire il debugger remoto con un account utente diverso dall'account utente in uso nel computer di Visual Studio, ma è necessario aggiungere l'account utente diverso alle autorizzazioni del debugger remoto.
 
-     In alternativa, è possibile avviare il debugger remoto dalla riga di comando con il **parametro \<username> /Allow** : **msvsmon/allow \<username@computer> **.
+     In alternativa, è possibile avviare il debugger remoto dalla riga di comando con il **parametro \<username> /Allow** : **msvsmon/allow \<username@computer>**.
 
 - Se è necessario modificare la modalità di autenticazione o il numero di porta oppure specificare un valore di timeout per Remote Tools: scegliere **strumenti > opzioni**.
 
@@ -115,7 +117,7 @@ Per il debug in ASP.NET e in altri ambienti server, è necessario eseguire il de
 
 4. Aggiungere il nome dell'account utente e la password.
 
-    Potrebbe essere necessario aggiungere il diritto utente **Accedi come servizio** a questo account (trovare i criteri di **sicurezza locali** (secpol. msc) nella pagina o nella finestra **iniziale** (oppure digitare **secpol** al prompt dei comandi). Quando viene visualizzata la finestra, fare doppio clic su **Assegnazione diritti utente**e trovare **Accedi come servizio** nel riquadro di destra. Fare doppio clic. Aggiungere l'account utente alla finestra **Proprietà** e fare clic su **OK**. Fare clic su **Avanti**.
+    Potrebbe essere necessario aggiungere il diritto utente **Accedi come servizio** a questo account (trovare i criteri di **sicurezza locali** (secpol. msc) nella pagina o nella finestra **iniziale** (oppure digitare **secpol** al prompt dei comandi). Quando viene visualizzata la finestra, fare doppio clic su **Assegnazione diritti utente** e trovare **Accedi come servizio** nel riquadro di destra. Fare doppio clic. Aggiungere l'account utente alla finestra **Proprietà** e fare clic su **OK**. Fare clic su **Avanti**.
 
 5. Selezionare il tipo di rete con cui si vuole che Remote Tools comunichi. Almeno un tipo di rete deve essere selezionato. Se i computer sono connessi tramite un dominio, è necessario scegliere il primo elemento. Se i computer sono connessi tramite un gruppo di lavoro o un gruppo home, è necessario scegliere il secondo o il terzo elemento. Fare clic su **Avanti**.
 
@@ -134,7 +136,7 @@ Per il debug in ASP.NET e in altri ambienti server, è necessario eseguire il de
 ## <a name="see-also"></a>Vedere anche
 
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
-- [Configurare Windows Firewall per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
+- [Configurare la Windows Firewall per il debug remoto](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Assegnazioni delle porte del debugger remoto](../debugger/remote-debugger-port-assignments.md)
 - [ASP.NET Core di debug remoto in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
-- [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Errori e risoluzione dei problemi di debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)

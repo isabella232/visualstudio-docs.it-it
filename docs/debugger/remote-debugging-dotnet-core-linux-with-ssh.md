@@ -1,5 +1,7 @@
 ---
 title: Eseguire il debug di .NET Core in Linux
+description: Eseguire il debug di .NET Core in Linux usando Secure Shell (SSH) mediante la connessione a un processo. Preparare l'app per il debug. Compilare e distribuire l'app. Alleghi il debugger.
+ms.custom: SEO-VS-2020
 ms.date: 02/26/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b77d68e7f8876f7e0d038166f4b2a6517bb3cb
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: bde5bb8722e0f95a10991019bdc9cba9c8a48ec3
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671506"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204891"
 ---
 # <a name="debug-net-core-on-linux-using-ssh-by-attaching-to-a-process"></a>Eseguire il debug di .NET Core in Linux tramite SSH mediante la connessione a un processo
 
@@ -40,7 +42,7 @@ Per preparare l'applicazione per il debug:
 
 - Si consiglia di usare una configurazione di debug quando si compila l'applicazione. È molto più difficile eseguire il debug del codice compilato al dettaglio (una configurazione di rilascio) rispetto al codice compilato con debug. Se è necessario usare una configurazione di versione, disabilitare prima di tutto Just My Code. Per disabilitare questa impostazione, scegliere **strumenti**  >  **Opzioni**  >  **debug**, quindi deselezionare **Abilita Just My Code**.
 
-- Verificare che il progetto sia configurato per produrre [PDB](https://github.com/OmniSharp/omnisharp-vscode/wiki/Portable-PDBs) portabili (impostazione predefinita) e assicurarsi che PDB si trovino nella stessa posizione della dll. Per configurarlo in Visual Studio, fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**  >  **Compila**  >  **Advanced**  >  **informazioni di debug** avanzate.
+- Verificare che il progetto sia configurato per produrre [PDB](https://github.com/OmniSharp/omnisharp-vscode/wiki/Portable-PDBs) portabili (impostazione predefinita) e assicurarsi che PDB si trovino nella stessa posizione della dll. Per configurarlo in Visual Studio, fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **Proprietà**  >  **Compila**  >    >  **informazioni di debug** avanzate.
 
 ## <a name="build-and-deploy-the-application"></a>Compilare e distribuire l'applicazione
 

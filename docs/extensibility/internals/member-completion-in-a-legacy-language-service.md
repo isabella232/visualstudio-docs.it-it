@@ -1,5 +1,7 @@
 ---
 title: Completamento del membro in un servizio di linguaggio legacy | Microsoft Docs
+description: Informazioni sul funzionamento della descrizione comando per il completamento dei membri di IntelliSense in un servizio di linguaggio legacy e sul modo in cui è supportata dal framework di pacchetto gestito (MPF).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6445aec4954590e4d361189f053592eebe7767e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fbf88dab2f1ffad0b4a6e5dc6b2ad516c28afca
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707189"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205801"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Completamento dei membri in un servizio di linguaggio legacy
 

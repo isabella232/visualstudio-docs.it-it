@@ -1,5 +1,7 @@
 ---
 title: Visualizzazione di Windows | Microsoft Docs
+description: Visualizzazione Windows Mostra un albero di tutte le finestre e i controlli. Utilizzarlo come punto di partenza per ottenere informazioni su Windows di interesse.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 717c0f18d5443f712151a2f8318c56a8e738f6d7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900859"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205372"
 ---
 # <a name="windows-view"></a>Visualizzazione finestre
 Alla prima apertura di Spy + +, visualizzazione di Windows visualizza un albero di tutte le finestre e i controlli nel sistema. Vengono visualizzati l'handle della finestra e il nome della classe. La finestra del desktop corrente si trova nella parte superiore dell'albero. Tutte le altre finestre sono elementi figlio del desktop e sono elencate in base alla gerarchia standard della finestra. Le finestre di pari livello vengono visualizzate negli elenchi di espandibili rientrate sotto gli elementi padre.

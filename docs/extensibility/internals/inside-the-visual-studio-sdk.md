@@ -1,5 +1,7 @@
 ---
 title: All'interno di Visual Studio SDK | Microsoft Docs
+description: Informazioni sulle estensioni in Visual Studio SDK, tra cui l'architettura, i componenti, i servizi, gli schemi e le utilità di Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e72020795bc3181e11f0f90eff580a2365d4000
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 73bbb1beb30677711b8b517262b48465e7529585
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707579"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205333"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>All'interno di Visual Studio SDK
 
@@ -47,7 +49,7 @@ In questa sezione vengono fornite informazioni approfondite sulle estensioni di 
  Per ulteriori informazioni, vedere [comandi, menu e barre degli strumenti](../../extensibility/internals/commands-menus-and-toolbars.md).
 
 ## <a name="menus-and-toolbars"></a>Menu e barre degli strumenti
- I menu e le barre degli strumenti offrono agli utenti un modo per richiamare i comandi. I menu sono righe o colonne di comandi che in genere vengono visualizzati come singoli elementi di testo nella parte superiore di una finestra degli strumenti. I sottomenu sono menu secondari che vengono visualizzati quando un utente fa clic su comandi che includono una piccola freccia. I menu di scelta rapida vengono visualizzati quando un utente fa clic con il pulsante destro del mouse su determinati elementi Alcuni nomi di menu comuni sono **file**, **modifica**, **Visualizza**e **finestra**. Per altre informazioni, vedere [estensione di menu e comandi](../../extensibility/extending-menus-and-commands.md).
+ I menu e le barre degli strumenti offrono agli utenti un modo per richiamare i comandi. I menu sono righe o colonne di comandi che in genere vengono visualizzati come singoli elementi di testo nella parte superiore di una finestra degli strumenti. I sottomenu sono menu secondari che vengono visualizzati quando un utente fa clic su comandi che includono una piccola freccia. I menu di scelta rapida vengono visualizzati quando un utente fa clic con il pulsante destro del mouse su determinati elementi Alcuni nomi di menu comuni sono **file**, **modifica**, **Visualizza** e **finestra**. Per altre informazioni, vedere [estensione di menu e comandi](../../extensibility/extending-menus-and-commands.md).
 
  Le barre degli strumenti sono righe o colonne di pulsanti e altri controlli, ad esempio caselle combinate, caselle di riepilogo e caselle di testo. I pulsanti della barra degli strumenti in genere contengono immagini icona, ad esempio un'icona di cartella per un comando **Apri file** o una stampante per un comando **stampa** . Tutti gli elementi della barra degli strumenti sono associati a comandi. Quando si fa clic su un pulsante della barra degli strumenti, viene eseguito il comando associato. Nel caso di un controllo a discesa, ogni elemento nell'elenco a discesa è associato a un comando diverso. Alcuni controlli della barra degli strumenti, ad esempio un controllo Splitter, sono ibridi. Un lato del controllo è un pulsante della barra degli strumenti e l'altro lato è una freccia rivolta verso il basso che visualizza diversi comandi quando viene selezionato.
 

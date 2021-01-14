@@ -1,6 +1,7 @@
 ---
 title: Analizzare il consumo di risorse nelle app XAML
-ms.custom: seodec18
+description: Usare il profiler Sequenza temporale applicazione per individuare i problemi di prestazioni nelle applicazioni XAML. È possibile analizzare il tempo impiegato per varie attività in diversi scenari.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/01/2018
 ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6d7f3d943d621708efab8df1e2f69402a0c5f26c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8fc482e10ae1ca08230feb38eb2997d0c4dcab00
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038348"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205736"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizzare il consumo delle risorse e l'attività del thread dell'interfaccia utente (XAML)
 
@@ -27,7 +28,7 @@ Questo strumento sostituisce lo strumento **Velocità di risposta interfaccia ut
 È possibile utilizzare questo strumento sulle piattaforme seguenti:
 
 - App Universal Windows (su Windows 10)
-- Windows 8,1
+- Windows 8.1
 - Windows Presentation Foundation (.Net 4.0 e versioni successive)
 - Windows 7
 
@@ -123,7 +124,7 @@ Usare la barra degli strumenti **Dettagli sequenza temporale** per ordinare, fil
 |![Elenco dettagli filtro sequenza temporale](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtra l'elenco in base a categorie selezionate e alla lunghezza degli eventi.|
 |![Personalizzare le informazioni sui dettagli della cronologia](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permette di specificare le annotazioni negli eventi.|
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Blog del team WPF: nuovo strumento di analisi delle prestazioni dell'interfaccia utente per applicazioni WPF](/archive/blogs/wpf/new-ui-performance-analysis-tool-for-wpf-applications)
 - [Procedure consigliate per le prestazioni per app UWP scritte in C++, C# e Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))

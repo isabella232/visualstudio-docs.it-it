@@ -1,5 +1,7 @@
 ---
 title: Comandi importanti per i filtri dei servizi di linguaggio | Microsoft Docs
+description: Informazioni sui comandi importanti che è necessario supportare quando si crea un filtro completo del servizio di linguaggio in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb29ee5b5a5359d6cfe34911656dfe9be015262e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13014d61450897897029750b012833cf93a57729
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707621"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204618"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Comandi importanti per i filtri dei servizi di linguaggio
 Se si desidera creare un filtro dei servizi di linguaggio completo, considerare la possibilità di gestire i comandi seguenti. L'elenco completo degli identificatori di comando è definito nell' <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> enumerazione per il codice gestito e nel file di intestazione Stdidcmd. h per il [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] codice non gestito. È possibile trovare il file Stdidcmd. h nel *percorso di installazione di Visual Studio SDK*\VisualStudioIntegration\Common\Inc.

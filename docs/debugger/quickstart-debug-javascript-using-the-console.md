@@ -1,5 +1,7 @@
 ---
 title: Eseguire il debug di JavaScript usando la console | Microsoft Docs
+description: Usare la finestra console JavaScript in Visual Studio per interagire con le app piattaforma UWP (Universal Windows Platform) (UWP) compilate con JavaScript ed eseguirne il debug.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aca36c56bfeed4fd5d8b240cce6bea5b55b75d85
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 8a2b2e82e664abea1a53112776dc0ec3ec5f1259
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211076"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205008"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Eseguire il debug di JavaScript usando la console in Visual Studio
 
@@ -42,7 +44,7 @@ La finestra Console JavaScript ti permette di:
 - Eseguire altre attività, come cancellare lo schermo. Per un elenco completo di comandi, vedi [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) .
 
 > [!TIP]
-> Se la finestra della console JavaScript è chiusa, scegliere **debug** >  **Windows**  >  **console JavaScript** di Windows per aprirla di nuovo. La finestra viene visualizzata solo durante una sessione di debug di script.
+> Se la finestra della console JavaScript è chiusa, scegliere **debug** >    >  **console JavaScript** di Windows per aprirla di nuovo. La finestra viene visualizzata solo durante una sessione di debug di script.
 
 Usando la finestra Console JavaScript puoi interagire con la tua app senza arrestare e riavviare il debugger. Per altre informazioni, vedere [aggiornare un'app (JavaScript)](../debugger/refresh-an-app-javascript.md). Per informazioni su altre funzionalità di debug JavaScript, ad esempio l'uso del DOM Explorer e l'impostazione dei punti di interruzione, vedere [Guida introduttiva: eseguire il debug di app HTML e CSS](../debugger/quickstart-debug-html-and-css.md) ed [eseguire il debug in Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
@@ -56,7 +58,7 @@ La procedura seguente consente di creare un'app `FlipView` e mostra come eseguir
 
 1. Creare una nuova soluzione in Visual Studio scegliendo **file**  >  **nuovo progetto**.
 
-2. Scegliere **JavaScript**  >  **universale di Windows**e quindi scegliere **app WinJS**.
+2. Scegliere **JavaScript**  >  **universale di Windows** e quindi scegliere **app WinJS**.
 
 3. Digitare un nome per il progetto, ad esempio `FlipViewApp`e scegliere **OK** per creare l'app.
 
@@ -199,11 +201,11 @@ Quando un programma è in modalità di interruzione, è possibile usare la fines
 
 #### <a name="to-set-a-breakpoint-and-debug-the-app"></a>Per impostare un punto di interruzione ed eseguire il debug dell'app
 
-1. Nel file default.html dell' `FlipView` app creata in precedenza, aprire il menu di scelta rapida per la `updateImages()` funzione e quindi scegliere punto di **Breakpoint**interruzione Inserisci punto di interruzione  >  **Insert Breakpoint**.
+1. Nel file default.html dell' `FlipView` app creata in precedenza, aprire il menu di scelta rapida per la `updateImages()` funzione e quindi scegliere punto di interruzione Inserisci punto di interruzione  >  .
 
 2. Scegliere **computer locale** nell'elenco a discesa accanto al pulsante **Avvia debug** sulla barra degli strumenti **debug** .
 
-3. Scegliere **debug**  >  **Avvia debug**o premere F5.
+3. Scegliere **debug**  >  **Avvia debug** o premere F5.
 
     Quando l'esecuzione raggiunge la funzione `updateImages()` , l'app passa alla modalità di interruzione e la riga corrente dell'esecuzione del programma viene evidenziata in giallo.
 

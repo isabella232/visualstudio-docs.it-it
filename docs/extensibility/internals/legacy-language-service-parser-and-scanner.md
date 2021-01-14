@@ -1,5 +1,7 @@
 ---
 title: Parser e scanner del servizio di linguaggio legacy | Microsoft Docs
+description: Informazioni sul parser e sullo scanner del servizio di linguaggio legacy che selezionano informazioni sul codice visualizzato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c87f447a4b8bca804d27aae4967f4adaf389c627
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707321"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204605"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Scanner e parser dei servizi di linguaggio legacy
 Il parser è il fulcro del servizio di linguaggio. Per le classi di linguaggio del Framework di pacchetto gestito (MPF) è necessario un parser di linguaggio per selezionare informazioni sul codice visualizzato. Un parser separa il testo in token lessicali e quindi identifica i token in base al tipo e alla funzionalità.
@@ -42,13 +44,13 @@ namespace MyNamespace
 |Token Name (Nome del token)|Tipo di token|
 |----------------|----------------|
 |namespace, Class, Public, void, int|parola chiave|
-|=|operator|
+|=|Operatore|
 |{ } ( ) ;|delimiter|
 |MyNamespace, MyClass, funzione, arg1, var1|identificatore|
 |MyNamespace|namespace|
 |MyClass|classe|
 |MyFunction|method|
-|arg1|parametro|
+|arg1|parameter|
 |var1|variabile locale|
 
  Il ruolo del parser consiste nell'identificare i token. Alcuni token possono avere più di un tipo. Dopo l'identificazione dei token da parte del parser, il servizio di linguaggio può usare le informazioni per fornire funzionalità utili, ad esempio l'evidenziazione della sintassi, la corrispondenza delle parentesi graffe e le operazioni di IntelliSense.

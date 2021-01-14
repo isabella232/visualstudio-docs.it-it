@@ -1,6 +1,7 @@
 ---
 title: Guida per principianti al campionamento CPU
-ms.custom: seodec18
+description: Scopri in che modo gli strumenti di profilatura di Visual Studio rivelano quanto tempo viene usato dalle funzioni nell'applicazione, guidando l'utente alle aree per velocizzare l'applicazione.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 02/27/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a58803747e0da411012226325c390352edf4e919
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c61d407247910131deee9585d19a921f8cf76cca
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330597"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205359"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guida per principianti al campionamento CPU
 È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questa procedura illustra come usare i dati di **campionamento**.
@@ -126,7 +127,7 @@ ms.locfileid: "85330597"
 
 ## <a name="see-also"></a>Vedere anche
 - [Esplora prestazioni](../profiling/performance-explorer.md)
-- [Introduzione](../profiling/getting-started-with-performance-tools.md)
+- [Attività iniziali](../profiling/getting-started-with-performance-tools.md)
 - [Cenni preliminari](../profiling/overviews-performance-tools.md)
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

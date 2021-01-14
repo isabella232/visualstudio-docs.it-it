@@ -1,5 +1,7 @@
 ---
 title: Implementazione della colorazione della sintassi | Microsoft Docs
+description: Informazioni su come implementare la colorazione della sintassi in Visual Studio usando le funzionalità del servizio di linguaggio del Framework di pacchetto gestito (MPF).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb3f26f59d7cbc994da1d2537e0ab352ce12205e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 195cf7a26b1615b7c56f3f0d06cfd9e0d44a4384
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905201"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204670"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementazione della colorazione della sintassi
 Quando il servizio di linguaggio fornisce la colorazione della sintassi, il parser converte una riga di testo in una matrice di elementi colorabili e restituisce i tipi di token corrispondenti a tali elementi colorabili. Il parser deve restituire i tipi di token che appartengono a un elenco di elementi colorabili. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Visualizza ogni elemento colorabile nella finestra del codice in base agli attributi assegnati dall'oggetto Colorer al tipo di token appropriato.

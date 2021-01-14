@@ -1,6 +1,7 @@
 ---
 title: Analizzare l'utilizzo della memoria
-ms.custom: seodec18
+description: Informazioni sugli strumenti che è possibile usare per individuare le perdite di memoria e l'utilizzo inefficiente della memoria, strumenti come lo strumento utilizzo memoria e lo strumento di allocazione oggetti .NET.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/12/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53d8e33555530eacf482f3f99752ea4c42f8d827
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 675636b7abca10fb2f9f1898d753155235830f86
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918097"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205723"
 ---
 # <a name="analyze-memory-usage"></a>Analizzare l'utilizzo della memoria
 
@@ -31,7 +32,7 @@ Gli sviluppatori C++ possono utilizzare lo strumento di utilizzo della memoria i
 - [Analizzare l'utilizzo della memoria con il debugger](../profiling/memory-usage.md)
 - [Analizzare l'utilizzo della memoria senza il debugger](../profiling/memory-usage-without-debugging2.md)
 
-È possibile usare gli strumenti di profilatura senza il debugger con Windows 7 e versioni successive. Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica** .
+È possibile usare gli strumenti di profilatura senza il debugger con Windows 7 e versioni successive. Per Windows 8 e versioni successive è necessario eseguire gli strumenti di profilatura con il debugger, nella finestra **Strumenti di diagnostica**.
 
 ## <a name="blogs-and-videos"></a>Blog e video
 

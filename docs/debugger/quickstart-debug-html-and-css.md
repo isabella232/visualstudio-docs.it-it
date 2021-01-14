@@ -1,5 +1,7 @@
 ---
 title: Eseguire il debug di HTML e CSS nelle app UWP | Microsoft Docs
+description: Informazioni su come eseguire il debug di HTML e CSS nelle app piattaforma UWP (Universal Windows Platform) (UWP) in Visual Studio. Le funzionalità di debug di JavaScript sono supportate per le app UWP.
+ms.custom: SEO-VS-2020
 ms.date: 07/17/2018
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e270956fc6c8f1d7432cb65e1eaf37fdc58907c
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: fafab7a2cbf660987de0365549aaa823a4e3445d
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211089"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205476"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Eseguire il debug di HTML e CSS nelle app UWP in Visual Studio
 
@@ -46,7 +48,7 @@ DOM Explorer presenta una visualizzazione della pagina sottoposta a rendering. �
 
 - Controllare l'applicazione degli stili CSS agli elementi della pagina e tenere traccia delle regole applicate.
 
-  Quando si esegue il debug delle app, è spesso necessario selezionare elementi in DOM Explorer. Quando si seleziona un elemento, i valori visualizzati nelle schede a destra di DOM Explorer vengono aggiornati automaticamente per riflettere l'elemento selezionato in DOM Explorer. Si tratta delle schede **Stili**, **Calcolata**e **Layout**. Le app UWP supportano anche le schede **eventi** e **modifiche** . Per altre informazioni sulla selezione di elementi, vedere [Selecting elements](#SelectingElements).
+  Quando si esegue il debug delle app, è spesso necessario selezionare elementi in DOM Explorer. Quando si seleziona un elemento, i valori visualizzati nelle schede a destra di DOM Explorer vengono aggiornati automaticamente per riflettere l'elemento selezionato in DOM Explorer. Si tratta delle schede **Stili**, **Calcolata** e **Layout**. Le app UWP supportano anche le schede **eventi** e **modifiche** . Per altre informazioni sulla selezione di elementi, vedere [Selecting elements](#SelectingElements).
 
 > [!TIP]
 > Se la finestra di Dom Explorer è chiusa, scegliere **debug** > **Windows**  >  **Dom Explorer** per aprirla nuovamente. La finestra viene visualizzata solo durante una sessione di debug di script.
@@ -60,7 +62,7 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 
 1. Creare una nuova soluzione in Visual Studio scegliendo **file**  >  **nuovo progetto**.
 
-2. Scegliere **JavaScript**  >  **universale di Windows**e quindi scegliere **app WinJS**.
+2. Scegliere **JavaScript**  >  **universale di Windows** e quindi scegliere **app WinJS**.
 
 3. Digitare un nome per il progetto, ad esempio `FlipViewApp`e scegliere **OK** per creare l'app.
 
@@ -149,7 +151,7 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 
     ![Selezionare l'elenco di destinazione del debug](../debugger/media/js_select_target.png "JS_Select_Target")
 
-8. Scegliere **debug**  >  **Avvia debug**o premere F5 per eseguire l'app in modalità di debug.
+8. Scegliere **debug**  >  **Avvia debug** o premere F5 per eseguire l'app in modalità di debug.
 
     Viene eseguita l'app, ma verrà visualizzata una schermata per lo più vuota perché lo stile presenta alcuni bug. La prima immagine `FlipView` è contenuta in un piccolo quadrato in prossimità del centro dello schermo.
 
@@ -182,7 +184,7 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 14. Nella finestra principale, fare doppio clic su `width: 100px;height: 100px;` , premere il tasto **Canc** , quindi premere **invio**. Dopo aver premuto INVIO, i nuovi valori vengono immediatamente riflessi nell'app, anche se non è stata arrestata la sessione di debug.
 
     > [!IMPORTANT]
-    > Così come è possibile aggiornare gli attributi nella finestra DOM Explorer, è anche possibile aggiornare i valori visualizzati nelle schede **Stili**, **Calcolata**e **Layout** .
+    > Così come è possibile aggiornare gli attributi nella finestra DOM Explorer, è anche possibile aggiornare i valori visualizzati nelle schede **Stili**, **Calcolata** e **Layout** .
 
 15. Passare all'app selezionandola o usando Alt + Tab.
 

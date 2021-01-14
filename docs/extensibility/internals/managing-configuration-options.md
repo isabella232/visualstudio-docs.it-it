@@ -1,5 +1,7 @@
 ---
 title: Gestione delle opzioni di configurazione | Microsoft Docs
+description: Informazioni su come gestire le impostazioni di configurazione di progetti e soluzioni in Visual Studio per controllare la modalità di compilazione, creazione di pacchetti, distribuzione ed esecuzione del progetto.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e18c308d74f8c20267c286c47d0e89bf82cd2850
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34f772b780cda825861e11e6816d1d88405f74e
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707305"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204528"
 ---
 # <a name="managing-configuration-options"></a>Gestione delle opzioni di configurazione
 Quando si crea un nuovo tipo di progetto, è necessario gestire le impostazioni di configurazione del progetto e della soluzione che determinano il modo in cui il progetto verrà compilato, inserito in un pacchetto, distribuito ed eseguito. Gli argomenti seguenti illustrano la configurazione di progetti e soluzioni.
@@ -29,7 +31,7 @@ Quando si crea un nuovo tipo di progetto, è necessario gestire le impostazioni 
 
  Spiega che gli utenti possono visualizzare e modificare le proprietà dipendenti dalla configurazione del progetto e le proprietà indipendenti usando le pagine delle proprietà.
 
-- [Configurazione soluzione](../../extensibility/internals/solution-configuration.md)
+- [Configurazione della soluzione](../../extensibility/internals/solution-configuration.md)
 
  Fornisce informazioni sugli elementi archiviati nelle configurazioni della soluzione e su come le configurazioni della soluzione indirizzano il comportamento dei comandi di **avvio** e **compilazione** .
 

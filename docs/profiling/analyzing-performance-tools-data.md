@@ -1,5 +1,7 @@
 ---
 title: Analisi dei dati degli strumenti per le prestazioni | Microsoft Docs
+description: Informazioni sui report di prestazioni e le visualizzazioni fornite da Visual Studio Strumenti di profilatura per analizzare i problemi di prestazioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 90752fd8e34769530f1b95dd439a46c71fe985a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f11873a3e101c0c37d327d6869ee63fe48f5f42
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779831"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205346"
 ---
 # <a name="analyze-performance-tools-data"></a>Analizzare i dati degli strumenti per le prestazioni
 I report sulle prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consentono di visualizzare e analizzare i problemi di prestazioni delle applicazioni. Questa sezione offre una panoramica dei report sulle prestazioni e delle visualizzazioni che è possibile usare per esaminare i dati sulle prestazioni.

@@ -1,5 +1,7 @@
 ---
 title: Pagina Debug, Progettazione progetti
+description: Usare la pagina debug di progettazione progetti per impostare le proprietà di debug in un progetto Visual Basic o C#. Vedere questo articolo per le descrizioni delle impostazioni.
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -14,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 406b3ecdc0e4e3f0d45c22fc9201bd37c6031152
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8567b762e9858205e3ca8d6aafa8a3dba17a90fe
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418743"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205775"
 ---
 # <a name="debug-page-project-designer"></a>Pagina Debug, Progettazione progetti
 
 Usare la pagina **Debug** di **Creazione progetti** per impostare le proprietà per il comportamento di debug in un progetto Visual Basic o C#.
 
-Per accedere alla pagina **Debug** selezionare un nodo del progetto in **Esplora soluzioni**. Scegliere ** \<ProjectName> Proprietà**dal menu **progetto** . Quando viene visualizzata la finestra **Creazione progetti** fare clic sulla scheda **Debug**.
+Per accedere alla pagina **Debug** selezionare un nodo del progetto in **Esplora soluzioni**. Scegliere **\<ProjectName> Proprietà** dal menu **progetto** . Quando viene visualizzata la finestra **Creazione progetti** fare clic sulla scheda **Debug**.
 
 > [!NOTE]
 > Questo argomento non si applica alle app UWP. Per le app UWP, vedere [Avviare una sessione di debug (VB, C#, C++ e XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
@@ -34,7 +36,7 @@ Per accedere alla pagina **Debug** selezionare un nodo del progetto in **Esplora
 
 Le opzioni seguenti consentono di selezionare la configurazione e la piattaforma da visualizzare o modificare.
 
-**Configurazione**
+**Configuration**
 
 Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni possibili sono **Debug** (impostazione predefinita), **Rilascio** o **Tutte le configurazioni**.
 

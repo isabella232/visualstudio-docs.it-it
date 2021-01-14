@@ -1,5 +1,7 @@
 ---
 title: Finestra di dialogo Impostazioni avanzate (visualizzatore di concorrenza) | Microsoft Docs
+description: Utilizzare le impostazioni avanzate nel Visualizzatore di concorrenza per controllare il contenuto della traccia. Sono disponibili schede per i simboli, Just My Code, il buffering e altro ancora.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc7d3464fd05b1fe99fcbfa8773e64bca4cb95e7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911217"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205502"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Finestra di dialogo Impostazioni avanzate (visualizzatore di concorrenza)
 La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente di controllare quali tracce vengono raccolte.  Nella finestra sono presenti le schede seguenti: Simboli, Just My Code, Buffer, Filtro, Eventi CLR, Marcatori, Provider e File.
@@ -31,7 +33,7 @@ La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente
 ## <a name="buffering"></a>responseBuffering
  Per raccogliere una traccia, il visualizzatore di concorrenza usa ETW (Event Tracing for Windows).  Per l'archiviazione degli eventi, ETW usa diversi buffer.  Le impostazioni predefinite del buffer ETW possono non essere sempre ottimali e, in alcuni casi, possono causare problemi come la perdita di eventi.  Per configurare le impostazioni del buffer ETW, è possibile usare la scheda Buffer. Per altre informazioni, vedere [Registrazione di eventi](/windows/win32/etw/event-tracing-portal) e [EVENT_TRACE_PROPERTIES structure](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) (Struttura EVENT_TRACE_PROPERTIES).
 
-## <a name="filter"></a>Filtro
+## <a name="filter"></a>Filtra
  Nella scheda Filtro è possibile selezionare il set di eventi raccolti dal visualizzatore di concorrenza. La selezione di un subset di eventi limita i tipi di dati visualizzati nei report, riduce la dimensione di ciascuna traccia e diminuisce il tempo necessario per l'elaborazione delle tracce.
 
 ### <a name="clr-events"></a>eventi CLR
@@ -52,7 +54,7 @@ La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente
 ### <a name="file-io-events"></a>Eventi di I/O dei file
  Gli eventi di I/O su file rappresentano gli accessi al disco per conto del processo corrente.  Se la raccolta di eventi di I/O su file viene disabilitata, la dimensione della traccia raccolta risulta ridotta, ma nella visualizzazione Thread non sarà riportata alcuna informazione sui canali o le operazioni del disco.
 
-## <a name="markers"></a>Marcatori
+## <a name="markers"></a>Indicatori
  Nella scheda **Marcatori** è possibile configurare il set di provider ETW mostrati come marcatori nel visualizzatore di concorrenza.  È anche possibile filtrare la raccolta di marcatori in base al livello di importanza e alla categoria ETW.  Se si usa l'[SDK del visualizzatore di concorrenza ](../profiling/concurrency-visualizer-sdk.md) e il proprio provider marcatori, è possibile registrare qui quest'ultimo in modo che venga mostrato nella visualizzazione Thread.
 
 ### <a name="add-a-new-provider"></a>Aggiungi nuovo provider
