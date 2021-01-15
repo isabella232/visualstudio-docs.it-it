@@ -39,12 +39,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e46e2253c5664fff9cf456250d375993a0a0c9a
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 70f047fa84513821812a13f7dee3136d2d431d9a
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150639"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240244"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Procedura: utilizzare controlli runtime nativi
 In un progetto Visual Studio C++ è possibile usare [runtime_checks](/cpp/preprocessor/runtime-checks) nativi per rilevare errori di runtime comuni, ad esempio:
@@ -68,8 +68,6 @@ In un progetto Visual Studio C++ è possibile usare [runtime_checks](/cpp/prepro
   Negli altri argomenti di questa sezione vengono fornite informazioni relative a:
 
 - [Personalizzazione dei controlli runtime nativi](../debugger/native-run-time-checks-customization.md)
-
-- [Utilizzo dei controlli Run-Time senza la libreria di Run-Time C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)
 
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Per attivare i controlli runtime nativi in una build di debug
 

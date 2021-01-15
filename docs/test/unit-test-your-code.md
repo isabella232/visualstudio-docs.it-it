@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ba3db5b74a415d3736c37f54fdb708fde3436d92
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: dc82d72d7c0a333fc28146746a473ed359857490
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756591"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240283"
 ---
-# <a name="unit-test-tools-and-tasks"></a>Strumenti e attività per unit test
+# <a name="unit-test-tools-and-tasks"></a>Strumenti e attività di unit test
 
 Gli unit test rappresentano per sviluppatori e tester un modo rapido per verificare la presenza di errori di logica nei metodi delle classi in progetti C#, Visual Basic e C++.
 
@@ -36,7 +36,7 @@ Gli strumenti di unit test includono:
 
 * Framework di isolamento di **Microsoft Fakes** &mdash; Il Framework di isolamento di Microsoft Fakes può creare classi e metodi sostitutivi per il codice di produzione e di sistema .NET che creano le dipendenze nel codice sottoposto a test. L'implementazione di delegati falsi per una funzione consente di controllare il comportamento e l'output dell'oggetto di dipendenza.
 
-È anche possibile creare [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) che esplorano il codice .NET per generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Viene eseguita un'analisi del caso per ogni ramo condizionale nel codice.
+Per .NET, è anche possibile usare [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) per esplorare il codice e generare dati di test e un gruppo di unit test. Per ogni istruzione nel codice viene generato un input di test che eseguirà l'istruzione. Viene eseguita un'analisi del caso per ogni ramo condizionale nel codice.
 
 ## <a name="key-tasks"></a>Attività chiave
 
@@ -58,6 +58,6 @@ Usare gli articoli seguenti per la comprensione e la creazione di unit test:
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting> descrive lo spazio dei nomi UnitTesting, che rende disponibili attributi, eccezioni, asserzioni e altre classi che supportano il testing unità.
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> descrive lo spazio dei nomi UnitTesting.Web, che estende lo spazio dei nomi UnitTesting offrendo supporto per unit test ASP.NET e del servizio Web.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Migliorare la qualità del codice](../test/improve-code-quality.md)

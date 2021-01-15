@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e6433d665157c186a390e2963ef7ad1447b2f982
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 9a5fbd9f396dfe0ed92c0590712f9fddb84c27a0
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329978"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240309"
 ---
 # <a name="install-unit-test-frameworks"></a>Installare framework di unit test
 
@@ -23,7 +23,7 @@ Esplora test di Visual Studio può eseguire test da qualsiasi framework di unit 
 Una soluzione di Visual Studio può includere progetti unit test che usano diversi framework e fanno riferimento a diversi linguaggi.
 
 ::: moniker range=">=vs-2019"
-Per .NET, [MSTest, NUnit e xUnit](getting-started-with-unit-testing.md) sono i Framework di test forniti da Visual Studio installati per impostazione predefinita.
+Per .NET, [MSTest, NUnit e xUnit](getting-started-with-unit-testing.md) sono i Framework di test forniti da Visual Studio installati per impostazione predefinita. Per C++, viene fornito un set di Framework di test diverso, ad esempio CTest.
 ::: moniker-end
 ::: moniker range="vs-2017"
 [MSTest](getting-started-with-unit-testing.md) è il framework di test offerto da Visual Studio che viene installato per impostazione predefinita.
@@ -55,6 +55,6 @@ Eseguire l'aggiornamento all'adattatore di test stabile più recente per una mig
 
    ![Aggiornare un adattatore di test](media/install-adapter-upgrade.png)
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)
