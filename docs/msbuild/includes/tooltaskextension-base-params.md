@@ -3,12 +3,12 @@ author: ghogen
 ms.author: ghogen
 ms.topic: include
 ms.date: 4/23/2020
-ms.openlocfilehash: 6fd0fc6fd4f2e54c0d15f649139b649797f8336f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7d4027c53f599b4a17d267d5ebf72eee1ed296b
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89042998"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98535300"
 ---
 ### <a name="tooltaskextension-parameters"></a>Parametri ToolTaskExtension
 
@@ -19,9 +19,8 @@ Nella tabella seguente vengono descritti i parametri delle classi di base:
 | Parametro | Descrizione |
 | - | - |
 | <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | Parametro `bool` facoltativo.<br /><br /> Quando è impostato su `true` , questa attività passa **/q** alla riga di comando *cmd.exe* in modo che la riga di comando non venga copiata in stdout. |
-| <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | Parametro di matrice `String` facoltativo.<br /><br /> Matrice di definizioni di variabili di ambiente, separate da punti e virgola. Ogni definizione deve specificare un nome e un valore della variabile di ambiente separati da un segno di uguale. Queste variabili vengono passate all'eseguibile generato in aggiunta a o con override selettivo del blocco di ambiente standard. Ad esempio, `Variable1=Value1;Variable2=Value2` |
+| <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | Parametro di matrice `String` facoltativo.<br /><br /> Matrice di definizioni di variabili di ambiente, separate da punti e virgola. Ogni definizione deve specificare un nome e un valore della variabile di ambiente separati da un segno di uguale. Queste variabili vengono passate all'eseguibile generato in aggiunta a o con override selettivo del blocco di ambiente standard. Ad esempio, `Variable1=Value1;Variable2=Value2`. |
 | <xref:Microsoft.Build.Utilities.ToolTask.ExitCode%2A> | Parametro di sola lettura di output `Int32` facoltativo.<br /><br /> Specifica il codice di uscita fornito dal comando eseguito. Se l'attività ha registrato errori, ma il processo ha un codice di uscita pari a 0 (esito positivo), il parametro viene impostato su -1. |
-| <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | Parametro `bool` facoltativo.<br /><br /> Se `true`, tutti i messaggi ricevuti nel flusso di errori standard vengono registrati come errori. |
 | <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | Parametro `bool` facoltativo.<br /><br /> Se `true`, tutti i messaggi ricevuti nel flusso di errori standard vengono registrati come errori. |
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardErrorImportance%2A> | Parametro `String` facoltativo.<br /><br /> Importanza con cui registrare il testo dal flusso di output standard. |
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A> | Parametro `String` facoltativo.<br /><br /> Importanza con cui registrare il testo dal flusso di output standard. |
