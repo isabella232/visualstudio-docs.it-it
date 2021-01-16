@@ -10,16 +10,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d29c4e4659e8e6a5564e3fb41f54615bf29171d2
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 958f33a39126f8f48cf29bad1c25c7d962513ed0
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049099"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533862"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Framework e piattaforma di destinazione di MSBuild
 
-È possibile compilare un progetto per eseguirlo in un *framework di destinazione* , che è una versione particolare di .NET Framework e una *piattaforma di destinazione* , che è un'architettura software particolare.  Ad esempio, è possibile fare riferimento a un'applicazione per l'esecuzione nel .NET Framework 2,0 in una piattaforma a 32 bit compatibile con la famiglia di processori 80x86 ("x86"). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione* .
+È possibile compilare un progetto per eseguirlo in un *framework di destinazione*, che è una versione particolare di .NET Framework e una *piattaforma di destinazione*, che è un'architettura software particolare.  Ad esempio, è possibile fare riferimento a un'applicazione per l'esecuzione nel .NET Framework 2,0 in una piattaforma a 32 bit compatibile con la famiglia di processori 80x86 ("x86"). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*.
 
 > [!IMPORTANT]
 > Questo articolo descrive il metodo precedente per specificare un framework di destinazione. I progetti in stile SDK abilitano framework di destinazione diversi, ad esempio netstandard. Per altre informazioni, vedere [Framework di destinazione](/dotnet/standard/frameworks).
@@ -78,7 +78,7 @@ Il framework di destinazione viene specificato nella proprietà `TargetFramework
 
 - `x86` definisce un sistema operativo Windows a 32 bit che è in esecuzione su un processore 80x86 Intel o un suo equivalente.
 
-- `x64` definisce un sistema operativo Windows a 64 bit che è in esecuzione su un processore x64 Intel o un suo equivalente.
+- `x64` designa un sistema operativo Windows a 64 bit in esecuzione su un processore Intel x64 o sul relativo equivalente.
 
 - `Xbox` definisce la piattaforma Microsoft Xbox 360.
 
@@ -91,7 +91,7 @@ Una *piattaforma di destinazione* è una particolare piattaforma in cui il propr
 
 ```
 
-Una *configurazione di destinazione* è un subset di una piattaforma di destinazione. Ad esempio, la configurazione `x86` `Debug` non include la maggior parte delle ottimizzazioni di codice. La configurazione di destinazione viene specificata nella proprietà di compilazione `Configuration` in un file di progetto. È possibile modificare la configurazione di destinazione usando le pagine della proprietà del progetto o la **Gestione configurazione** .
+Una *configurazione di destinazione* è un subset di una piattaforma di destinazione. Ad esempio, la configurazione `x86` `Debug` non include la maggior parte delle ottimizzazioni di codice. La configurazione di destinazione viene specificata nella proprietà di compilazione `Configuration` in un file di progetto. È possibile modificare la configurazione di destinazione usando le pagine della proprietà del progetto o la **Gestione configurazione**.
 
 ```xml
 <PropertyGroup>
@@ -101,6 +101,6 @@ Una *configurazione di destinazione* è un subset di una piattaforma di destinaz
 
 ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)

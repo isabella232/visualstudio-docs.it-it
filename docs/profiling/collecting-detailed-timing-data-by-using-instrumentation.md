@@ -1,5 +1,6 @@
 ---
 title: Raccogliere dati di intervallo dettagliati tramite la strumentazione
+description: Usare il metodo di strumentazione Strumenti di profilatura per informazioni dettagliate sull'intervallo di una sezione del codice e per comprendere l'effetto delle operazioni di I/O.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5082066de22bee3954b297f30eebb7d89ec607
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 17c569a9f5a50b769af0881d47fe810afe18058e
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810770"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533849"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Raccogliere dati di intervallo dettagliati tramite la strumentazione
 Il metodo di strumentazione degli strumenti per la profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] inserisce il codice di profilatura in una copia di un modulo. Il codice registra ogni voce, uscita e chiamata di funzione delle funzioni nel modulo durante un'esecuzione di profilatura. Il metodo di strumentazione è utile per raccogliere informazioni dettagliate sugli intervalli relative a una sezione del codice e per comprendere l'impatto delle operazioni di input e output sulle prestazioni dell'applicazione.
@@ -34,7 +35,7 @@ Il metodo di strumentazione degli strumenti per la profilatura di [!INCLUDE[vspr
 ## <a name="common-tasks"></a>Attività comuni
  È possibile specificare altre opzioni nella finestra di dialogo _Pagine delle proprietà_**Sessioni prestazioni** della sessione di prestazioni. Per aprire questa finestra di dialogo:
 
-- In **Esplora prestazioni**fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni, quindi scegliere **Proprietà**.
+- In **Esplora prestazioni** fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni, quindi scegliere **Proprietà**.
 
   Le attività nella tabella seguente descrivono le opzioni che è possibile specificare nella finestra di dialogo Pagine _delle_**Proprietà** della sessione di prestazioni quando si esegue la profilatura tramite il metodo di strumentazione.
 

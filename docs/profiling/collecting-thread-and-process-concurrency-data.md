@@ -1,5 +1,6 @@
 ---
 title: Raccogli dati di concorrenza del processo di & thread
+description: Usare il metodo di profilatura della concorrenza Strumenti di profilatura per raccogliere dati su ogni evento di sincronizzazione che fa in modo che una funzione attenda l'accesso alle risorse.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f44b7785306fc486c8f550c41bcac199825b8ed
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c1f6d0dbc8c10c972957e2bcf8092d145bb3651c
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810718"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533745"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>Raccogliere dati di concorrenza di thread e processi
 
@@ -33,7 +34,7 @@ Il metodo di profilatura della concorrenza degli strumenti di profilatura di Vis
 
 È possibile specificare altre opzioni nella finestra di dialogo _Pagine delle proprietà_**Sessioni prestazioni** della sessione di prestazioni. Per aprire questa finestra di dialogo:
 
-- In **Esplora prestazioni**fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni, quindi scegliere **Proprietà**.
+- In **Esplora prestazioni** fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni, quindi scegliere **Proprietà**.
 
 Le attività nella tabella seguente descrivono le opzioni che è possibile specificare nella finestra di dialogo _Pagine delle proprietà_ della **sessione di prestazioni** quando si esegue la profilatura con il metodo di concorrenza.
 

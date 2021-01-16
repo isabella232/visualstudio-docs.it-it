@@ -1,5 +1,7 @@
 ---
 title: Confronto di file di dati sulle prestazioni | Microsoft Docs
+description: Utilizzare Strumenti di profilatura per confrontare due file di report (con estensione vsp o vsps). Il confronto mostra le differenze, le regressioni delle prestazioni e i miglioramenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 64842c5b4f622a1f76aa528360f79403ec92cb42
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d1c57c6c3dd8d7d01e37eae374c547e074d62e6
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777855"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533498"
 ---
 # <a name="compare-performance-data-files"></a>Confrontare i file di dati delle prestazioni
 
-Strumenti di profilatura funzionalità di confronto dei file di dati consente di selezionare due file di report (.* VSP* /. *vsps*) file e generazione di un report che mostra le differenze, le regressioni delle prestazioni e i miglioramenti apportati da una sessione di profilatura all'altra.
+Strumenti di profilatura funzionalità di confronto dei file di dati consente di selezionare due file di report (.*VSP* o. *vsps*) file e generazione di un report che mostra le differenze, le regressioni delle prestazioni e i miglioramenti apportati da una sessione di profilatura all'altra.
 
 In un rapporto di confronto di file di dati degli strumenti per la profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vengono messi a confronto i risultati di un'analisi in un file di dati per la profilatura e i risultati di un'analisi di base in un altro file di dati. È necessario che i due file di dati siano stati generati usando lo stesso metodo di profilatura. Il report dei confronti analizzati viene salvato come. file *vsps* .
 

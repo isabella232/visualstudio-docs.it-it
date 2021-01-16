@@ -1,5 +1,6 @@
 ---
 title: Riga di comando del profiler-ottenere i dati di memoria .NET
+description: Informazioni su come usare il metodo di campionamento dalla riga di comando per raccogliere dati sull'allocazione di memoria e sulla durata degli oggetti per un client .NET autonomo.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d8c6b588552c2a4b4a93c2dbdbeb998eb94d7af
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f21974ad59951290123a3a89f68b6f326a6e2057
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810744"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533810"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Raccogliere dati di memoria .NET Framework tramite la riga di comando del profiler
 

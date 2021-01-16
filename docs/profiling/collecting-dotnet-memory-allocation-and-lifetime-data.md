@@ -1,5 +1,6 @@
 ---
 title: Raccolta dati di durata & di allocazione di memoria .NET
+description: Per individuare i problemi di prestazioni relativi alla memoria nell'applicazione .NET, utilizzare Strumenti di profilatura per raccogliere dati di allocazione della memoria e durata degli oggetti.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1354fb95b543e73a67d19204871f3b79aec9ece9
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: a9321ce83f65d5a7cac95d793d5f635651bef0e7
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809427"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533797"
 ---
 # <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>Raccolta dei dati di durata e allocazione della memoria .NET Framework
 
@@ -45,9 +46,9 @@ Per informazioni su come raccogliere dati di memoria .NET tramite gli strumenti 
 
 ## <a name="to-collect-net-memory-data"></a>Per raccogliere dati di memoria .NET
 
-1. In **Esplora prestazioni**fare clic con il pulsante destro del mouse sulla sessione di prestazioni, quindi fare clic su **Proprietà**.
+1. In **Esplora prestazioni** fare clic con il pulsante destro del mouse sulla sessione di prestazioni, quindi fare clic su **Proprietà**.
 
-2. Nella finestra di dialogo *Pagine delle proprietà della * **sessione di prestazioni** fare clic sulla scheda **Generale** e selezionare la casella di controllo **Raccogliere le informazioni sull'allocazione dell'oggetto .NET**.
+2. Nella finestra di dialogo *Pagine delle proprietà della* **sessione di prestazioni** fare clic sulla scheda **Generale** e selezionare la casella di controllo **Raccogliere le informazioni sull'allocazione dell'oggetto .NET**.
 
 3. Per raccogliere dati sulla durata degli oggetti .NET, selezionare la casella di controllo **Raccogliere anche le informazioni sulla durata dell'oggetto .NET**.
 
@@ -55,7 +56,7 @@ Per informazioni su come raccogliere dati di memoria .NET tramite gli strumenti 
 
 È possibile specificare altre opzioni nella finestra di dialogo _Pagine delle proprietà_**Sessioni prestazioni** della sessione di prestazioni. Per aprire questa finestra di dialogo:
 
-- In **Esplora prestazioni**fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni, quindi scegliere **Proprietà**.
+- In **Esplora prestazioni** fare clic con il pulsante destro del mouse sul nome della sessione di prestazioni, quindi scegliere **Proprietà**.
 
 Le attività nella tabella seguente descrivono le opzioni che è possibile specificare nella finestra di dialogo _Pagine delle proprietà_ della **sessione di prestazioni** quando si raccolgono dati di memoria .NET.
 

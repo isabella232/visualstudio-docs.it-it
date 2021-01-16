@@ -1,5 +1,7 @@
 ---
 title: CommentMarkAtProfile | Microsoft Docs
+description: Usare il metodo CommentMarkAtProfile per inserire un valore di timestamp, un indicatore numerico e una stringa di commento nel file con estensione vsp.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +14,20 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee9eb5353109bcf5df6903e7e607a11b8bfd0536
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43e8f9806c724da414940c92b6609846486a49c0
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545613"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533524"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
-Il metodo `CommentMarkAtProfile` inserisce un valore di timestamp, un indicatore numerico e una stringa di commento nel file con estensione *vsp*. Il valore di timestamp può essere usato per sincronizzare gli eventi esterni. Per l'indicatore e il commento da inserire, è necessario attivare la profilatura per il thread che contiene la funzione CommentMarkAtProfile.
+Il `CommentMarkAtProfile` metodo inserisce un valore di timestamp, un indicatore numerico e una stringa di commento nel file con *estensione VSP* . Il valore di timestamp può essere usato per sincronizzare gli eventi esterni. Per l'indicatore e il commento da inserire, è necessario attivare la profilatura per il thread che contiene la funzione CommentMarkAtProfile.
 
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
+PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
                                    __int64 dnTimestamp,
                                    long lMarker,
                                    LPCTSTR szComment);
@@ -57,7 +59,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 |MARK_TEXTTOOLONG|La stringa supera il numero massimo di 256 caratteri. La stringa di commento viene troncata e vengono registrati l'indicatore e il commento.|
 |MARK_OK|MARK_OK viene restituito per indicare l'esito positivo.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Lo stato della profilatura per il thread che contiene la funzione di contrassegno del profilo deve essere attivo quando vengono inseriti indicatori e commenti con il comando Contrassegno o con le funzioni API (CommentMarkAtProfile, CommentMarkProfile o MarkProfile). I contrassegni del profilo hanno ambito globale. Ad esempio, un contrassegno del profilo inserito in un solo thread può essere usato per contrassegnare l'inizio o la fine di un segmento di dati in qualsiasi thread del file VSP.
 
 > [!IMPORTANT]

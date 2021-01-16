@@ -1,5 +1,7 @@
 ---
 title: Visualizzazioni dei dati comuni | Microsoft Docs
+description: Per informazioni di riferimento sulle visualizzazioni e sui report dei file di dati del profiler comuni a tutti i metodi di profilatura, vedere questa sezione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 39af1975dc3bcb0f5df729579ca1af38fa60160f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69f68bec998108869676946e2995e45b2f662169
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777829"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533537"
 ---
 # <a name="common-data-views"></a>Visualizzazioni dei dati comuni
 Questa sezione contiene informazioni di riferimento sulle visualizzazioni e i report dei file di dati del profiler comuni a tutti i metodi di profilatura.

@@ -13,16 +13,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37bfd1ab57fd0e37f32a55d5bfc3787cb0c0cbd2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60d817c3600eaa82eb7f67489d5dadadaba3932f
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248051"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533966"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Creare visualizzazioni personalizzate di oggetti C++ nel debugger usando il Framework natvis
 
-Il Framework *natvis* di Visual Studio Personalizza la modalità di visualizzazione dei tipi nativi nelle finestre delle variabili del debugger, ad esempio le finestre variabili **locali** e **espressioni di controllo** e nei **suggerimenti**dati. Le visualizzazioni di natvis consentono di rendere più visibili i tipi creati durante il debug.
+Il Framework *natvis* di Visual Studio Personalizza la modalità di visualizzazione dei tipi nativi nelle finestre delle variabili del debugger, ad esempio le finestre variabili **locali** e **espressioni di controllo** e nei **suggerimenti** dati. Le visualizzazioni di natvis consentono di rendere più visibili i tipi creati durante il debug.
 
 Natvis sostituisce il file *autoexp. dat* nelle versioni precedenti di Visual Studio con sintassi XML, migliore diagnostica, controllo delle versioni e supporto di più file.
 
@@ -72,13 +72,13 @@ Visual Studio fornisce alcuni file *natvis* nella cartella *%VSInstallDir%\Commo
 
 **Per aggiungere un nuovo file con *estensione natvis* :**
 
-1. Selezionare il nodo del progetto C++ in **Esplora soluzioni**e selezionare **progetto**  >  **Aggiungi nuovo elemento**oppure fare clic con il pulsante destro del mouse sul progetto e scegliere **Aggiungi**  >  **nuovo elemento**.
+1. Selezionare il nodo del progetto C++ in **Esplora soluzioni** e selezionare **progetto**  >  **Aggiungi nuovo elemento** oppure fare clic con il pulsante destro del mouse sul progetto e scegliere **Aggiungi**  >  **nuovo elemento**.
 
-1. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Visual C++**  >  **Utility**  >  **file di visualizzazione debugger utilità (natvis)**.
+1. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Visual C++**  >    >  **file di visualizzazione debugger utilità (natvis)**.
 
 1. Assegnare un nome al file e selezionare **Aggiungi**.
 
-   Il nuovo file verrà aggiunto al **Esplora soluzioni**e verrà aperto nel riquadro del documento di Visual Studio.
+   Il nuovo file verrà aggiunto al **Esplora soluzioni** e verrà aperto nel riquadro del documento di Visual Studio.
 
 Il debugger di Visual Studio carica automaticamente i file con *estensione natvis* nei progetti C++ e, per impostazione predefinita, li include nel file con *estensione PDB* quando il progetto viene compilato. Se si esegue il debug dell'app compilata, il debugger carica il file con *estensione natvis* dal file con *estensione PDB* anche se il progetto non è aperto. Se non si desidera che il file con *estensione natvis* sia incluso nel file *PDB*, è possibile escluderlo dal file *PDB* compilato.
 
@@ -86,7 +86,7 @@ Il debugger di Visual Studio carica automaticamente i file con *estensione natvi
 
 1. Selezionare il file con *estensione natvis* in **Esplora soluzioni**, quindi selezionare l'icona **proprietà** oppure fare clic con il pulsante destro del mouse sul file e scegliere **Proprietà**.
 
-1. A discesa della freccia accanto a **escluso da compila** , selezionare **Sì**e quindi fare clic su **OK**.
+1. A discesa della freccia accanto a **escluso da compila** , selezionare **Sì** e quindi fare clic su **OK**.
 
 >[!NOTE]
 >Per il debug di progetti eseguibili, usare gli elementi della soluzione per aggiungere eventuali file con *estensione natvis* che non sono presenti nel file *PDB*, poiché non è disponibile alcun progetto C++.
@@ -167,6 +167,12 @@ Nelle visualizzazioni Natvis si usano espressioni C++ per specificare gli elemen
 
 - Per controllare la modalità di visualizzazione di un'espressione, è possibile usare uno qualsiasi degli identificatori di formato descritti in [identificatori di formato in C++](format-specifiers-in-cpp.md#BKMK_Visual_Studio_2012_format_specifiers). Gli identificatori di formato vengono ignorati quando la voce viene utilizzata internamente da natvis, ad esempio l' `Size` espressione in un' [espansione ArrayItems](../debugger/create-custom-views-of-native-objects.md#BKMK_ArrayItems_expansion).
 
+>[!NOTE]
+> Poiché il documento natvis è XML, le espressioni non possono usare direttamente gli operatori commerciale, maggiore di, minore di o spostamento. È necessario escludere questi caratteri sia nel corpo dell'elemento che nelle istruzioni della condizione. Ad esempio:<br>
+> \<Item Name="HiByte"\>byte (_flags \& gt; \& gt 24), x\</Item\><br>
+> \<Item Name="HiByteStatus" Condition="(_flags \&amp; 0xFF000000) == 0"\>Nessuno\</Item\><br>
+> \<Item Name="HiByteStatus" Condition="(_flags \&amp; 0xFF000000) != 0"\>Alcuni\</Item\>
+
 ## <a name="natvis-views"></a>Visualizzazioni di Natvis
 
 È possibile definire viste natvis diverse per visualizzare i tipi in modi diversi. Ecco, ad esempio, una visualizzazione di `std::vector` che definisce una visualizzazione semplificata denominata `simple` . Gli `DisplayString` elementi e vengono `ArrayItems` visualizzati nella visualizzazione predefinita e nella visualizzazione `simple` , mentre gli `[size]` elementi e `[capacity]` non vengono visualizzati nella `simple` visualizzazione.
@@ -195,7 +201,7 @@ Quando il debugger rileva errori in una voce di visualizzazione, li ignora. Visu
 
 **Per attivare la diagnostica natvis:**
 
-- In **strumenti**  >  **Opzioni** (o **Debug**  >  **Opzioni**di debug) > **debug**  >  **finestra di output**, impostare **i messaggi di diagnostica natvis (solo C++)** su **errore**, **avviso**o **dettagliato**, quindi selezionare **OK**.
+- In **strumenti**  >  **Opzioni** (o   >  **Opzioni** di debug) > **debug**  >  **finestra di output**, impostare **i messaggi di diagnostica natvis (solo C++)** su **errore**, **avviso** o **dettagliato**, quindi selezionare **OK**.
 
 Gli errori vengono visualizzati nella finestra **output** .
 
@@ -400,7 +406,7 @@ Durante il debug, è possibile selezionare l'icona della lente di ingrandimento 
 
  ![Dati CStringT con visualizzatore StringView](../debugger/media/dbg_natvis_stringview_cstringt.png "Dati CStringT con visualizzatore StringView")
 
-L'espressione `{m_pszData,su}` include un identificatore di formato C++ **su**per visualizzare il valore come stringa Unicode. Per altre informazioni, vedere [identificatori di formato in C++](../debugger/format-specifiers-in-cpp.md).
+L'espressione `{m_pszData,su}` include un identificatore di formato C++ **su** per visualizzare il valore come stringa Unicode. Per altre informazioni, vedere [identificatori di formato in C++](../debugger/format-specifiers-in-cpp.md).
 
 ### <a name="expand-element"></a><a name="BKMK_Expand"></a> Espandi elemento
 

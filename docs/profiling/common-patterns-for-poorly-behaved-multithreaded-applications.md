@@ -1,6 +1,6 @@
 ---
 title: Modelli comuni per le app multithread con comportamento non corretto
-description: Informazioni sui modelli comuni per applicazioni multithreading con comportamento non corretto incluse nello strumento Visualizzatore di concorrenza di Visual Studio.
+description: Il Visualizzatore di concorrenza fornisce grafici per le applicazioni multithread e una raccolta di modelli comuni di quelli che non si comportano in modo corretto.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e14640da4d66134ca961607f66f6a355f6b9d9
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: f6d5139a0327af05f67c2a7429b1055fa80c2175
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815789"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533550"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modelli comuni per applicazioni multithreading con comportamenti non validi
 
@@ -70,6 +70,6 @@ Un uso eccessivo o improprio delle operazioni di I/O è una causa comune dell'in
 
 Le serie di istruzioni di blocco si verificano quando l'applicazione acquisisce blocchi in base al principio del primo arrivato e la frequenza di arrivo in corrispondenza del blocco è maggiore della frequenza di acquisizione. A causa della combinazione di queste due condizioni le richieste per il blocco iniziano ad accumularsi. Per opporsi a questo problema è possibile fare uso di blocchi "non equi", ovvero blocchi che danno accesso al primo thread che li trova in stato sbloccato. L'illustrazione precedente mostra questo tipo di comportamento delle serie di istruzioni. Per risolvere il problema, ridurre i conflitti tra gli oggetti di sincronizzazione e usare blocchi non equi.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)
