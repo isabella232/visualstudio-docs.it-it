@@ -180,8 +180,6 @@
                   href: native-run-time-checks-customization.md
                 - name: Scrivere una funzione per la segnalazione degli errori di runtime
                   href: how-to-write-a-run-time-error-reporting-function.md
-                - name: Usare i controlli di runtime senza la libreria di runtime del linguaggio C
-                  href: using-run-time-checks-without-the-c-run-time-library.md
         - name: Specificare file di simboli (con estensione pdb) e di origine nel debugger
           href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
         - name: Eseguire il debug del codice utente
