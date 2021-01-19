@@ -8,12 +8,12 @@ ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6092b02f5f8f94b3c87b68afe344fffba96c1a7d
+ms.sourcegitcommit: 987ed5f5adf85771d77c0efafc36d939fb9a356f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524090"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98571986"
 ---
 # <a name="git-experience-in-visual-studio"></a>Esperienza git in Visual Studio
 
@@ -92,7 +92,7 @@ Quando si esegue il lavoro, Visual Studio tiene traccia delle modifiche apportat
 
 Quando si è pronti per la gestione temporanea delle modifiche, fare clic sul **+** pulsante (segno più) in ogni file che si desidera inserire in una fase oppure fare clic con il pulsante destro del mouse su un file e scegliere **fase**. È anche possibile organizzare tutti i file modificati con un solo clic usando il pulsante staging All **+** (più) nella parte superiore della sezione **changes** .
 
-Quando si esegue il staging di una modifica, Visual Studio crea una sezione di modifiche di gestione **temporanea** . Al commit successivo verranno aggiunte solo le modifiche apportate alla sezione modifiche di gestione **temporanea** . a tale scopo, è possibile selezionare **commit** staging. È anche possibile non installare le modifiche facendo clic sul pulsante **–** (meno). Il comando equivalente per questa azione è `git commit -m "Your commit message"` .
+Quando si esegue il staging di una modifica, Visual Studio crea una sezione di modifiche di gestione **temporanea** . Al commit successivo verranno aggiunte solo le modifiche apportate alla sezione modifiche di gestione **temporanea** . a tale scopo, è possibile selezionare **commit** staging. Il comando equivalente per questa azione è `git commit -m "Your commit message"` . È anche possibile non installare le modifiche facendo clic sul pulsante **–** (meno). Il comando equivalente per questa azione consiste `git reset <file_path>` nell'eseguire l'unstage di un singolo file o di unstaging `git reset <directory_path>` di tutti i file in una directory.
 
 È anche possibile scegliere di non organizzare i file modificati ignorando l'area di gestione temporanea. In questo caso, Visual Studio consente di eseguire il commit delle modifiche direttamente senza doverle organizzare. È sufficiente immettere il messaggio di commit e quindi selezionare **commit tutti**. Il comando equivalente per questa azione è `git commit -a` .
 
