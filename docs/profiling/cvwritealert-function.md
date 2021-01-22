@@ -1,5 +1,7 @@
 ---
 title: Funzione CvWriteAlert | Microsoft Docs
+description: Vedere le informazioni di riferimento per la funzione SDK del Visualizzatore di concorrenza CvWriteAlert (libreria C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56af9515fb9c066e56dd45a0fb91a95530f09799
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb2cc6f7408fc5d9af0215dbccf166477876ac23
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332172"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686441"
 ---
 # <a name="cvwritealert-function"></a>Funzione CvWriteAlert
 Scrive un avviso nel file di traccia del visualizzatore di concorrenza.
@@ -71,5 +73,5 @@ HRESULT CvWriteAlertVA(
 
  **ANSI:** CvWriteAlertA, CvWriteAlertVA
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)

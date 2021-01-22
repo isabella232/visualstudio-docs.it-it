@@ -1,5 +1,7 @@
 ---
 title: Rapporto delle operazioni su disco (visualizzazione thread) | Microsoft Docs
+description: Nel rapporto delle operazioni su disco vengono descritte le operazioni I/O eseguite nei canali del disco. Vedere le informazioni segnalate per ogni accesso al disco.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69cbef53bcca74cceba4f9409b578fca45a58806
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44975999c71b1c331d90aa10f709071cef466cb1
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62970070"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686532"
 ---
 # <a name="disk-operations-report-threads-view"></a>Report delle operazioni su disco (visualizzazione Thread)
 Nel rapporto delle operazioni su disco vengono descritte le operazioni I/O eseguite nei canali del disco.
@@ -42,5 +44,5 @@ Nel rapporto delle operazioni su disco vengono descritte le operazioni I/O esegu
 
 - Latenza di scrittura in millisecondi
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

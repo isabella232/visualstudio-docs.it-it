@@ -1,5 +1,7 @@
 ---
 title: Funzione CvEnterSpan | Microsoft Docs
+description: Vedere le informazioni di riferimento per la funzione SDK del Visualizzatore di concorrenza CvEnterSpan (libreria C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5bb034d4a2501175d117256364082966a97af8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50a68d58d6a9b2564c732605075811e8bc99721f
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328967"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686519"
 ---
 # <a name="cventerspan-function"></a>Funzione CvEnterSpan
 Segna l'inizio di una nuova sezione.
@@ -124,5 +126,5 @@ HRESULT CvEnterSpanExVA(
 
  **ANSI:** CvEnterSpanA, CvEnterSpanVA, CvEnterSpanExA, CvEnterSpanExVW
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)

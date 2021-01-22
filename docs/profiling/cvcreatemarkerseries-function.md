@@ -1,5 +1,7 @@
 ---
 title: Funzione CvCreateMarkerSeries | Microsoft Docs
+description: Vedere le informazioni di riferimento per la funzione SDK del Visualizzatore di concorrenza CvCreateMarkerSeries (libreria C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc44e9e1a9a1d17d3f5b0f31515e2402e9512c55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a80d833396644fa6c2a025dc24b6db473b2b393
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332209"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686168"
 ---
 # <a name="cvcreatemarkerseries-function"></a>Funzione CvCreateMarkerSeries
 Crea una serie di marcatori per un determinato provider.
@@ -55,5 +57,5 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
 
  **ANSI:** CvCreateMarkerSeriesA
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)

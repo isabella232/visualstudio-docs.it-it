@@ -1,5 +1,7 @@
 ---
 title: Funzione CvReleaseProvider | Microsoft Docs
+description: Vedere le informazioni di riferimento per la funzione SDK del Visualizzatore di concorrenza CvReleaseProvider (libreria C).
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0347d3e2345defb13a67e0e0d730e010be618a21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5175f7f649dad3feed9f93a6e34ae5986ecda11b
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332186"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686415"
 ---
 # <a name="cvreleaseprovider-function"></a>Funzione CvReleaseProvider
 Rilascia un provider di marcatori. Il rilascio del provider di marcatori non influisce sulle serie di marcatori del provider create in precedenza. Le serie di marcatori devono essere rilasciate separatamente dalla chiamata CvReleaseMarkerSeries. Il mancato rilascio del provider di marcatori causa una perdita di memoria.
@@ -39,5 +41,5 @@ HRESULT CvReleaseProvider(
 ## <a name="requirements"></a>Requisiti
  **Intestazione:** *cvmarkers.h*
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimenti alla libreria C++](../profiling/cpp-library-reference.md)

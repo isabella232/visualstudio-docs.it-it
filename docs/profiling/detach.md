@@ -1,5 +1,7 @@
 ---
 title: Detach | Microsoft Docs
+description: Utilizzare l'opzione di scollegamento di VSPerfCmd.exe per disconnettere il Profiler dal processo specificato o da tutti i processi se non ne viene specificato alcuno.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d9d1b52c-7f28-467d-b1e0-512afc4e46c9
@@ -9,17 +11,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3251836959f41a4349851716f58f917943f10b09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45225e4478b0a1a3cddc7f74ae223c437bf4226e
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330239"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686597"
 ---
 # <a name="detach"></a>Detach
 L'opzione **Detach** di VSPerfCmd.exe disconnette il profiler dai processi specificati o da tutti i processi se non ne vengono specificati. La profilatura deve essere inizializzata usando il metodo di campionamento.
 
- La profilatura avviata con l'opzione **Launch** o **Attach** può essere disconnessa con **Detach**. Il profiler può essere connesso nuovamente usando comandi **Attach** successivi.
+ La profilatura avviata con l'opzione **Launch** o **Attach** può essere disconnessa con **Detach**. Il profiler può essere ricollegato usando i comandi **Attach** successivi.
 
  **Detach** non consente di chiudere il file di dati di profilatura. Usare l'opzione **Shutdown** per terminare la profilatura e chiudere il file di dati.
 
@@ -57,7 +59,7 @@ VSPerfCmd.exe /Detach
 VSPerfCmd.exe /Shutdown
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

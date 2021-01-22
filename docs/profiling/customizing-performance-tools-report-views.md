@@ -1,5 +1,7 @@
 ---
 title: Personalizzazione delle visualizzazioni dei report sugli strumenti delle prestazioni | Microsoft Docs
+description: Vedere questa sezione per informazioni su come personalizzare i report generati con Visual Studio Strumenti di profilatura.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9479c0dc2af592271bc7f21db1cec0c71cc7e71d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57a3dddbefcf0b5a0220da282674fa781f102030
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777764"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686194"
 ---
 # <a name="customize-performance-tools-report-views"></a>Personalizzare le visualizzazioni dei report sugli strumenti per le prestazioni
 In questa sezione viene descritto come personalizzare i report generati con gli strumenti di profilatura [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -33,5 +35,5 @@ In questa sezione viene descritto come personalizzare i report generati con gli 
 ## <a name="related-sections"></a>Sezioni correlate
 - [Visualizzazioni dei report di prestazioni](../profiling/performance-report-views.md) Descrive le visualizzazioni che è possibile usare per analizzare i dati di profilatura.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Analizzare i dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)
