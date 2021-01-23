@@ -1,5 +1,6 @@
 ---
 title: 'Visualizzazione Moduli: dati di campionamento | Microsoft Docs'
+description: Informazioni sul modo in cui la visualizzazione moduli dei dati di campionamento Visualizza i dati sulle prestazioni raggruppati in base ai moduli campionati nei dati di profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ead219ddf482af5917842118d386c6fefe67973
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0de246e5ecdc51ff6471eeed242d638fee261c8c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772714"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722958"
 ---
 # <a name="modules-view---sampling-data"></a>Visualizzazione Moduli: dati di campionamento
 Nella visualizzazione Moduli dei dati di campionamento vengono visualizzati i dati sulle prestazioni raggruppati in base ai moduli campionati nei dati di profilatura. Ogni modulo è la radice di una struttura gerarchica. Le funzioni campionate del modulo sono elencate sotto il nodo del modulo.
@@ -29,7 +30,7 @@ Nella visualizzazione Moduli dei dati di campionamento vengono visualizzati i da
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Name**|Nome del modulo, della funzione, del numero di riga o dell'indirizzo del puntatore all'istruzione.|
+|**Nome**|Nome del modulo, della funzione, del numero di riga o dell'indirizzo del puntatore all'istruzione.|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
 |**Nome processo**|Nome del processo.|
 |**Nome del modulo**|Nome del modulo che contiene la funzione, la riga o il puntatore all'istruzione.|

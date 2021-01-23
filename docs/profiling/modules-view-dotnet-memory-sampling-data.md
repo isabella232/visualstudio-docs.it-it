@@ -1,5 +1,6 @@
 ---
 title: 'Visualizzazione Moduli: dati di campionamento di memoria .NET | Microsoft Docs'
+description: Informazioni sulla visualizzazione moduli dei dati di allocazione di memoria .NET raccolti tramite il metodo di campionamento.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9d0d9b7ab681a266115673b48f2c2604c5ff869c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e05a3e1d915853689c436b192de9e266e86b13d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772727"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723296"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Visualizzazione Moduli: dati di campionamento di memoria .NET
 La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti tramite il metodo di campionamento raggruppa i dati di memoria in base ai moduli eseguiti nell'esecuzione della profilatura. Ogni modulo è la radice di una struttura gerarchica. Le funzioni del modulo sono elencate sotto il nodo del modulo.
@@ -25,7 +26,7 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Name**|Nome del modulo, della funzione, del numero di riga o dell'indirizzo dell'istruzione.|
+|**Nome**|Nome del modulo, della funzione, del numero di riga o dell'indirizzo dell'istruzione.|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
 |**Nome processo**|Nome del processo.|
 |**Nome del modulo**|Nome del modulo che contiene la funzione.|

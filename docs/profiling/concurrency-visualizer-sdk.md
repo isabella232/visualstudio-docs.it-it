@@ -1,5 +1,7 @@
 ---
 title: SDK del visualizzatore di concorrenza | Microsoft Docs
+description: Informazioni su come usare l'SDK del Visualizzatore di concorrenza per instrumentare il codice per visualizzare i marcatori. I marcatori sono icone visualizzate nel Visualizzatore di concorrenza per contrassegnare gli eventi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1732d62fa20e170825cba5e133a9a44f11a59a34
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f07dbfb0ca193f7bacbf2408fc26e622ffb037e1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037354"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720982"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del visualizzatore di concorrenza
 Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice sorgente in modo che nel visualizzatore di concorrenza siano visualizzate informazioni aggiuntive. È possibile associare i dati aggiuntivi a fasi ed eventi nel codice. Queste visualizzazioni aggiuntive sono note come *marcatori*.  Per una procedura dettagliata introduttiva, vedere [Introducing the Concurrency Visualizer SDK](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk).(Introduzione all'SDK del visualizzatore di concorrenza).
@@ -119,7 +121,7 @@ Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice
     CvWriteFlag(series, _T("Writing a flag"));
     ```
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 |Titolo|Descrizione|
 |-----------|-----------------|

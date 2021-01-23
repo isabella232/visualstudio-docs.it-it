@@ -1,5 +1,6 @@
 ---
 title: Visualizzazione Thread nel visualizzatore di concorrenza | Microsoft Docs
+description: Si apprenderà che nella visualizzazione thread è possibile identificare i thread che eseguono il codice durante un segmento di esecuzione.
 ms.date: 11/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4382a21a68848a758f3d4cd37a8528722927691c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 619e76b3db67314119782ebc3010465ac7fa622f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62973754"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722724"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>Visualizzazione Thread nel visualizzatore di concorrenza
 
@@ -114,7 +115,7 @@ La scheda **Rapporto profili** contiene i report per le categorie e i collegamen
 
   Per trovare la riga di codice in cui è trascorso il tempo di esecuzione, espandere l'albero delle chiamate e scegliere **Visualizza origine** o **Visualizza siti di chiamata** dal menu di scelta rapida per la voce dell'albero delle chiamate. **Visualizzazione origine** consente di individuare la riga di codice eseguita. **Visualizza siti di chiamata** permette di individuare la riga di codice che ha chiamato la riga eseguita. Se esiste una sola riga di sito di chiamata, viene evidenziato il codice corrispondente. Se esistono diversi siti di chiamata, selezionarne uno nella finestra di dialogo e quindi selezionare **Passa all'origine**. È spesso molto utile individuare il sito di chiamata con il maggior numero di istanze, i tempi più elevati o entrambi. Per altre informazioni, vedere [Report del profilo di esecuzione](../profiling/execution-profile-report.md).
 
-- **Sincronizzazione**Il report **Sincronizzazione** illustra le chiamate responsabili dei blocchi di sincronizzazione, oltre ai tempi di blocco totali di ogni stack di chiamate. Per altre informazioni, vedere [Periodo di sincronizzazione](../profiling/synchronization-time.md).
+- **Sincronizzazione** Il report **Sincronizzazione** illustra le chiamate responsabili dei blocchi di sincronizzazione, oltre ai tempi di blocco totali di ogni stack di chiamate. Per altre informazioni, vedere [Periodo di sincronizzazione](../profiling/synchronization-time.md).
 
 - **I/O** Il report **I/O** illustra le chiamate responsabili dei blocchi di I/O, oltre ai tempi di blocco totali di ogni stack di chiamate. Per altre informazioni, vedere [Tempo di I/O (visualizzazione Thread)](../profiling/i-o-time-threads-view.md).
 

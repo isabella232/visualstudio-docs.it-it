@@ -1,5 +1,6 @@
 ---
 title: Analizzare l'utilizzo della memoria di JavaScript nelle app UWP | Microsoft Docs
+description: Informazioni sul modo in cui JavaScript Memory Analyzer è disponibile per comprendere l'utilizzo della memoria e individuare le perdite di memoria nelle app UWP compilate per Windows con JavaScript.
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a1b857639d8a58ffc7686569ad8e103674f136
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a29d12a4ca2e6a7a620c5197f76c0ad35ac33a40
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037484"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721684"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analizzare l'utilizzo della memoria di JavaScript nelle app UWP
 JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi dell'uso della memoria e il rilevamento delle perdite di memoria nelle app UWP create per Windows con JavaScript. Le app supportate includono le app di Windows universali.
@@ -69,7 +70,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 
          Usa questa opzione per analizzare l'utilizzo della memoria delle app installate nel tuo computer quando non puoi accedere al codice sorgente. Questa opzione può essere utile anche quando vuoi semplicemente analizzare l'utilizzo della memoria di qualsiasi app, al di là dello sviluppo delle tue.
 
-4. In **Strumenti disponibili**seleziona la casella di controllo **Memoria JavaScript** e scegli **Avvia**.
+4. In **Strumenti disponibili** seleziona la casella di controllo **Memoria JavaScript** e scegli **Avvia**.
 
 5. Quando avvii l'analizzatore di memoria, la finestra Controllo dell'account utente potrebbe richiedere l'autorizzazione per eseguire Visual Studio ETW Collector.exe. Scegliere **Sì**.
 
@@ -255,7 +256,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 
   Per filtrare le informazioni sulle differenze tra gli snapshot, scegli uno dei filtri **Ambito** nella parte superiore delle visualizzazioni delle differenze.
 
-- **Oggetti rimasti dallo snapshot # \<number> **. Questo filtro mostra la differenze tra gli oggetti aggiunti all'heap e quelli rimossi dall'heap rispetto allo snapshot della linea di base e allo snapshot precedente. Ad esempio, se il conteggio oggetti nel riepilogo dello snapshot indica +205 / -195, questo filtro consente di visualizzare i dieci oggetti che sono stati aggiunti ma non rimossi.
+- **Oggetti rimasti dallo snapshot # \<number>**. Questo filtro mostra la differenze tra gli oggetti aggiunti all'heap e quelli rimossi dall'heap rispetto allo snapshot della linea di base e allo snapshot precedente. Ad esempio, se il conteggio oggetti nel riepilogo dello snapshot indica +205 / -195, questo filtro consente di visualizzare i dieci oggetti che sono stati aggiunti ma non rimossi.
 
   > [!TIP]
   > Per mostrare le informazioni più utili in questo filtro, segui la procedura descritta in [Isolate a memory leak](#isolate-a-memory-leak).
@@ -302,7 +303,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
  Per visualizzare questi oggetti, scegliere **Mostra incorporati** nell'elenco impostazioni ![&#45;elenco a discesa nell'analizzatore di memoria](../profiling/media/js_mem_settings.png "JS_Mem_Settings") nell'angolo superiore destro del riquadro.
 
 ## <a name="save-diagnostic-session-files"></a>Salvare file delle sessioni di diagnostica
- I riepiloghi degli snapshot di diagnostica e le visualizzazioni dei dettagli associate vengono salvati come file con estensione *diagsession*. **Esplora soluzioni** visualizza le sessioni di diagnostica precedenti nella cartella Sessioni di diagnostica. In **Esplora soluzioni**puoi aprire sessioni precedenti oppure rimuovere o rinominare file.
+ I riepiloghi degli snapshot di diagnostica e le visualizzazioni dei dettagli associate vengono salvati come file con estensione *diagsession*. **Esplora soluzioni** visualizza le sessioni di diagnostica precedenti nella cartella Sessioni di diagnostica. In **Esplora soluzioni** puoi aprire sessioni precedenti oppure rimuovere o rinominare file.
 
 ## <a name="associate-source-code-with-memory-usage-data"></a>Associare il codice sorgente a dati sull'utilizzo della memoria
  Per isolare la sezione di codice in cui si è verificato un problema di memoria, usa i metodi seguenti:

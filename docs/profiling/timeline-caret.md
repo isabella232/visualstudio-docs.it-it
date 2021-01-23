@@ -1,5 +1,6 @@
 ---
 title: Indicatore di posizione nella sequenza temporale | Microsoft Docs
+description: Informazioni su come il cursore mostra la posizione esatta dello stack di chiamate, ovvero lo stack di chiamate più vicino alla posizione selezionata dall'utente.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 370e19757890d6d9f56fad4e7b89b2197e515d9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85ead5e0292815e92de587e90e0fd2cab92cb485
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62999665"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722490"
 ---
 # <a name="timeline-caret"></a>Indicatore della sequenza temporale
 Quando si seleziona un punto nella sequenza temporale di un segmento di thread in esecuzione, sopra di esso viene visualizzato un indicatore di posizione nella sequenza temporale. Lo stack di chiamate visualizzato nella scheda dello stack corrente è quello più vicino nel tempo al punto in cui è stato fatto clic sul segmento. L'indicatore viene usato per associare lo stack di chiamate, visualizzato nella scheda **Corrente**, alle informazioni sul momento in cui è stato effettuato il campionamento. L'indicatore mostra la posizione esatta dello stack di chiamate, che rappresenta lo stack di chiamate più vicino alla posizione selezionata dall'utente.

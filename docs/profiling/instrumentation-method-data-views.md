@@ -1,5 +1,6 @@
 ---
 title: Visualizzazioni dei dati del metodo di strumentazione | Microsoft Docs
+description: Informazioni sulle informazioni di riferimento per le visualizzazioni e i report dei file di dati del profiler generati tramite il metodo di strumentazione.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 18d7d2266ec21a3eee983474e433d72245658c43
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74774163"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721541"
 ---
 # <a name="instrumentation-method-data-views"></a>Visualizzazioni dei dati del metodo di strumentazione
 Questa sezione contiene informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler generati tramite il metodo di strumentazione.
@@ -50,7 +51,7 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 
 - [Visualizzazione Processo](../profiling/process-view.md)
 
- Elenca inizio, fine e durata per tutti i processi sottoposti alla profilatura.
+ Elenca l'inizio, la fine e la durata del processo per tutti i processi profilati.
 
 ## <a name="related-sections"></a>Sezioni correlate
 - [Visualizzazioni dei dati del metodo di campionamento](../profiling/profiler-sampling-method-data-views.md)

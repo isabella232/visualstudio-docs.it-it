@@ -1,5 +1,6 @@
 ---
 title: Visualizzazione Puntatore all'istruzione | Microsoft Docs
+description: Informazioni sul modo in cui la visualizzazione puntatori all'istruzione consente di visualizzare istruzioni specifiche che vengono eseguite durante la profilatura del campionamento.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c90d070a3b7125143eda5fd8666b1a4f64312b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d00742b1832aebcfff0e008455da98e744a485f7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778635"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721567"
 ---
 # <a name="instruction-pointers-ips-view"></a>Visualizzazione Puntatori all'istruzione
 La visualizzazione Puntatore all'istruzione consente di visualizzare istruzioni specifiche eseguite durante la profilatura del campionamento.

@@ -1,5 +1,6 @@
 ---
 title: Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app UWP | Microsoft Docs
+description: Informazioni su come isolare i problemi di prestazioni nelle app usando il profiler della velocità di risposta dell'interfaccia utente, uno strumento per le prestazioni disponibile per le app di Windows universale.
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 9fdc2b7fc459d655748444759913cab903dfe782
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6545fb206096c7b74a7016b506ae3bcade7f136c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331420"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721879"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app di Windows universali
 Questo argomento descrive come isolare i problemi di prestazioni nelle app usando il profiler della velocità di risposta dell'interfaccia utente, uno strumento per le prestazioni disponibile per le app di Windows universali.
@@ -40,7 +41,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
 
 1. Se si esegue l'app da Visual Studio, nell'elenco **Avvia debug** sulla barra degli strumenti **Standard** scegliere una destinazione di distribuzione come **Computer locale** o **Dispositivo**.
 
-2. Scegliere **Profiler prestazioni**dal menu **debug** .
+2. Scegliere **Profiler prestazioni** dal menu **debug** .
 
      Se si vuole modificare la destinazione di analisi per il profiler, scegliere **Modifica destinazione**.
 
@@ -58,7 +59,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
 
          Puoi usare questa opzione per analizzare le prestazioni delle app installate nel tuo computer quando non disponi dell'accesso al codice sorgente. Questa opzione può essere utile anche quando vuoi semplicemente analizzare le prestazioni di qualsiasi app, al di là dello sviluppo delle tue app.
 
-3. Da **Strumenti disponibili**seleziona **Velocità di risposta interfaccia utente HTML**, quindi scegli **Avvia**.
+3. Da **Strumenti disponibili** seleziona **Velocità di risposta interfaccia utente HTML**, quindi scegli **Avvia**.
 
 4. Quando avvii il profiler della velocità di risposta dell'interfaccia utente, la finestra Controllo dell'account utente potrebbe richiedere l'autorizzazione a eseguire Visual Studio ETW Collector.exe. Scegliere **Sì**.
 
@@ -188,7 +189,7 @@ if (performance.mark && performance.measure) {
 - Un evento di navigazione, che si verifica quando passi a una pagina diversa. Una descrizione comando per l'evento mostra l'URL della pagina di destinazione.
 
 ### <a name="view-cpu-utilization"></a><a name="CPUUtilization"></a> Visualizzare l'utilizzo della CPU
- Il grafico dell'utilizzo della CPU consente di identificare i periodi di tempo in cui l'attività della CPU è eccessiva. Fornisce informazioni sull'utilizzo medio della CPU da parte dell'app in un periodo di tempo. Le informazioni sono contraddistinte da colori per rappresentare le seguenti categorie specifiche: **Caricamento**, **Scripting**, Garbage Collection (**GC**), **Stile**, **Rendering**e **Decodifica immagine**. Per ulteriori informazioni su queste categorie, vedi [Profiler event reference](#profiler-event-reference) più avanti in questo argomento.
+ Il grafico dell'utilizzo della CPU consente di identificare i periodi di tempo in cui l'attività della CPU è eccessiva. Fornisce informazioni sull'utilizzo medio della CPU da parte dell'app in un periodo di tempo. Le informazioni sono contraddistinte da colori per rappresentare le seguenti categorie specifiche: **Caricamento**, **Scripting**, Garbage Collection (**GC**), **Stile**, **Rendering** e **Decodifica immagine**. Per ulteriori informazioni su queste categorie, vedi [Profiler event reference](#profiler-event-reference) più avanti in questo argomento.
 
  Il grafico dell'utilizzo della CPU mostra la quantità di tempo trascorso in tutti i thread dell'app, combinando i valori di utilizzo per una o più CPU in un singolo valore percentuale. Il valore di utilizzo della CPU può superare il 100% quando sono in uso più CPU.
 
@@ -325,7 +326,7 @@ if (performance.mark && performance.measure) {
 
   Questa tabella mostra gli eventi e le relative descrizioni:
 
-|Evento|Categoria evento|Ambito|
+|Event|Categoria evento|Ambito|
 |-----------|--------------------|-----------------|
 |Analisi CSS|Caricamento|È stato rilevato nuovo contenuto CSS e ne è stata tentata l'analisi.|
 |Analisi HTML|Caricamento|È stato rilevato nuovo contenuto HTML ed è stata tentata l'analisi del contenuto nei nodi e l'inserimento del contenuto nell'albero DOM.|

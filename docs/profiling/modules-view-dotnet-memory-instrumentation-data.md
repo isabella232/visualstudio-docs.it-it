@@ -1,5 +1,6 @@
 ---
 title: 'Visualizzazione Moduli: dati di strumentazione di memoria .NET | Microsoft Docs'
+description: Informazioni sul modo in cui la visualizzazione moduli dei dati di allocazione di memoria .NET raccolti tramite il metodo di strumentazione raggruppa i dati relativi a memoria e temporizzazione in base al modulo.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 521c884a0a25d7fa975a4039e6ec3e36ff4dc020
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6a0a42fdc83891b96bb3fe036ebf7515e3d6a42
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778544"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723309"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Visualizzazione Moduli: dati di strumentazione di memoria .NET
 La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti tramite il metodo di strumentazione raggruppa i dati temporali e di memoria in base ai moduli eseguiti nell'esecuzione della profilatura. I dati di profilatura per le funzioni del modulo sono elencati sotto il nodo del modulo.
@@ -25,7 +26,7 @@ La visualizzazione Moduli dei dati di allocazione di memoria .NET raccolti trami
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Name**|Nome della funzione o del modulo.|
+|**Nome**|Nome della funzione o del modulo.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Numero di chiamate**|Numero totale di chiamate effettuate a questa funzione o modulo.|
 |**File di origine**|File di origine che contiene la definizione di questa funzione.|

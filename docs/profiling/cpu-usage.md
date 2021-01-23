@@ -1,5 +1,7 @@
 ---
 title: Analizzare l'utilizzo della CPU nel profiler delle prestazioni
+description: Informazioni sullo strumento prestazioni utilizzo CPU, che mostra il tempo di CPU e la percentuale di tempo impiegato per l'esecuzione di codice in app C++, C#, Visual Basic e JavaScript.
+ms.custom: SEO-VS-2020
 ms.date: 04/02/2020
 ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 706ffa8d17974894403c22a559edad4c2e4b4ef8
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: 902974c195cabf09abf5f29334a1e28316da54e5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007092"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719357"
 ---
 # <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>Analizzare l'utilizzo della CPU senza debug nel profiler delle prestazioni
 

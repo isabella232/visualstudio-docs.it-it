@@ -1,5 +1,6 @@
 ---
 title: VSPerfCmd | Microsoft Docs
+description: Informazioni su come usare lo strumento VSPerfCmd.exe per avviare e arrestare la raccolta dei dati sulle prestazioni. Vengono inoltre fornite informazioni sulle varie opzioni dello strumento VSPerfCmd.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: caf145213c41215d518cf42d0a69975c8580e817
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 90d263052c543cbf7e0f3207d9980bd04c13e990
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330014"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719188"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 Lo strumento *VSPerfCmd.exe* viene usato per avviare e arrestare la raccolta di dati sulle prestazioni. Viene usata la sintassi seguente:
@@ -39,12 +40,12 @@ VSPerfCmd [/U] [/options]
 |[CrossSession&#124;CS](../profiling/crosssession.md)|Abilita la profilatura tra sessioni di Windows. Usare solo con **Start**, **Attach** o **Launch**.|
 |[Utente](../profiling/user-vsperfcmd.md) **:**[ `domain\` ]`username`|Consente l'accesso al servizio profiler all'account specificato. Usare solo con **Start**.|
 |[WaitStart](../profiling/waitstart.md)[**:** `n` ]|Attende l'inizializzazione del logger di raccolta dei dati. Se si specifica `n`, **VSPerfCmd** attende al massimo `n` secondi. Se non si specifica `n`, **VSPerfCmd** attenderà un tempo illimitato. Ciò semplifica l'uso di **VSPerfCmd** come parte di un processo batch.|
-|[Contatore](../profiling/counter.md) **:**`cfg`|Quando viene usato il metodi di campionamento per la profilatura, specifica un contatore di CPU e il numero di eventi da usare come intervallo di campionamento. È possibile campionare solo un valore di contatore.<br /><br /> Quando viene usato il metodo di profilatura tramite strumentazione, specifica un contatore di CPU da raccogliere a ogni punto di strumentazione. Usare solo con **Start:** `Trace` , **Connetti**o **Launch**.|
+|[Contatore](../profiling/counter.md) **:**`cfg`|Quando viene usato il metodi di campionamento per la profilatura, specifica un contatore di CPU e il numero di eventi da usare come intervallo di campionamento. È possibile campionare solo un valore di contatore.<br /><br /> Quando viene usato il metodo di profilatura tramite strumentazione, specifica un contatore di CPU da raccogliere a ogni punto di strumentazione. Usare solo con **Start:** `Trace` , **Connetti** o **Launch**.|
 |[QueryCounters](../profiling/querycounters.md)|Visualizza un elenco di contatori CPU validi per il computer corrente.|
 |[WinCounter](../profiling/wincounter.md) **:** *percorso*|Specifica un evento contatore delle prestazioni di Windows da includere con i dati contrassegnati di profilatura. Usare solo con **Start**.|
 |[Contrassegno automark](../profiling/automark.md) **:** *n*|Specifica l'intervallo di tempo (in millisecondi) tra gli eventi di raccolta di dati dei contatori delle prestazioni di Windows. Usare con **WinCounter**.|
 |[Eventi](../profiling/events-vsperfcmd.md) **:**`option`|Controlla la raccolta degli eventi ETW (Event Tracing for Windows) specificati. I dati ETW vengono raccolti in un file con estensione *itl* diverso dal file di dati di profilatura (con estensione *vsp*).|
-|[Stato](../profiling/status.md)|Visualizza lo stato del profiler, informazioni sui processi attualmente in corso di profilatura e gli account che dispongono dell'autorità per controllare il profiler.|
+|[Status](../profiling/status.md)|Visualizza lo stato del profiler, informazioni sui processi attualmente in corso di profilatura e gli account che dispongono dell'autorità per controllare il profiler.|
 |[Arresto](../profiling/shutdown.md)[**:** `n` ]|Chiude il file di dati di profilatura e disattiva il profiler.|
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|Riprende la raccolta di dati dopo una chiamata a **VSPerfCmdGlobalOff**.|
 |[GlobalOff](../profiling/globalon-and-globaloff.md)|Arresta la raccolta di tutti i dati, ma non termina la sessione di profilatura.|

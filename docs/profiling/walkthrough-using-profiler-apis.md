@@ -1,5 +1,6 @@
 ---
 title: 'Procedura dettagliata: uso delle API del profiler | Microsoft Docs'
+description: Informazioni su come usare le API del profiler per limitare la quantità di dati raccolti durante la profilatura della strumentazione.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94276e294bfcf342cfc81b14005205a8f1e97949
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779883"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723088"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Procedura dettagliata: Uso delle API del profiler
 
@@ -124,7 +125,7 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Per raccogliere e visualizzare i dati nell'IDE di Visual Studio
 
-1. Aprire l'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Scegliere **Profiler**dal menu **analizza** , quindi selezionare **nuova sessione di prestazioni**.
+1. Aprire l'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Scegliere **Profiler** dal menu **analizza** , quindi selezionare **nuova sessione di prestazioni**.
 
 2. Aggiungere il file binario compilato per l'elenco **Destinazioni** nella finestra **Esplora prestazioni**. Fare clic con il pulsante destro del mouse su **Destinazioni** e selezionare **Aggiungi binario di destinazione**. Nella finestra di dialogo **Aggiungi binario di destinazione** selezionare il file binario e fare clic su **Apri**.
 
@@ -170,5 +171,5 @@ DataCollection.CurrentId);
 
 - [Profiler](/previous-versions/ms242704(v=vs.140))
 - [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
-- [Introduzione](../profiling/getting-started-with-performance-tools.md)
+- [Attività iniziali](../profiling/getting-started-with-performance-tools.md)
 - [Usare gli strumenti per la profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

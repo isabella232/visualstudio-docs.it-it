@@ -1,5 +1,6 @@
 ---
 title: Visualizzazione Moduli - dati di strumentazione | Microsoft Docs
+description: Informazioni su come la visualizzazione moduli Visualizza i dati sulle prestazioni raggruppati in base ai moduli presenti nei dati di profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f6449ad30edf11d3d315532cc33db2a79c14f90b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7012f2deffa2e01057fd79f52ec2fcac3674f7eb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778531"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722971"
 ---
 # <a name="modules-view---instrumentation-data"></a>Visualizzazione Moduli - dati di strumentazione
 Nella visualizzazione Moduli vengono visualizzati i dati sulle prestazioni raggruppati in base ai moduli presenti nei dati di profilatura. Le funzioni del modulo sono elencate sotto il nodo del modulo.
@@ -26,7 +27,7 @@ Nella visualizzazione Moduli vengono visualizzati i dati sulle prestazioni raggr
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Name**|Nome della funzione o del modulo.|
+|**Nome**|Nome della funzione o del modulo.|
 |**Numero riga funzione**|Numero di riga dell'inizio di questa funzione nel file di origine.|
 |**Numero di chiamate**|Numero totale di chiamate effettuate a questa funzione o modulo.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|

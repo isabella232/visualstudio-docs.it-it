@@ -1,5 +1,7 @@
 ---
 title: Contatori CPU e Windows | Microsoft Docs
+description: I contatori CPU (hardware) e Windows (software) forniscono dati sulle prestazioni. Scopri come visualizzarli e come raccoglierne i dati.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c3657f3558a688232424b868d0e93b8c056467c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779549"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719162"
 ---
 # <a name="cpu-and-windows-counters"></a>Contatori CPU e Windows
 
@@ -130,7 +132,7 @@ Con lo strumento da riga di comando [VSPerfCmd](../profiling/vsperfcmd.md) è po
 
 ## <a name="see-also"></a>Vedere anche
 
-[Panoramica](../profiling/overviews-performance-tools.md) 
- [Procedura: scegliere eventi](../profiling/how-to-choose-sampling-events.md) 
- di campionamento [Procedura: raccogliere i dati dei](../profiling/how-to-collect-cpu-counter-data.md) 
- contatori CPU [Procedura: raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md)
+- [Cenni preliminari](../profiling/overviews-performance-tools.md)
+- [Procedura: scegliere eventi di campionamento](../profiling/how-to-choose-sampling-events.md)
+- [Procedura: raccogliere i dati dei contatori CPU](../profiling/how-to-collect-cpu-counter-data.md)
+- [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md)

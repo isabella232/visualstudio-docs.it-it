@@ -1,5 +1,6 @@
 ---
 title: Visualizzazione Interazioni tra livelli | Microsoft Docs
+description: Informazioni sul modo in cui la profilatura dell'interazione tra livelli fornisce informazioni sui tempi di esecuzione nelle funzioni di applicazioni multilivello che comunicano con i database.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,18 +13,18 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9021f814f093151c6d65beaececc0fa99a662d44
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778141"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722516"
 ---
 # <a name="tier-interactions-view"></a>Interazioni tra livelli (visualizzazione)
 
 La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui tempi di esecuzione nelle funzioni di applicazioni multilivello che comunicano con i database tramite [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]. I dati vengono raccolti solo per le chiamate di funzione sincrone.
 
-**Requisiti**
+**Requirements**
 
 - Visual Studio Enterprise
 
@@ -39,9 +40,9 @@ La visualizzazione Interazioni mostra i dati di interazione tra livelli in due r
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Name**|- Per una riga di primo livello, nome del processo o della pagina Web profilata.<br />- Per una riga di connessione di database, nome del server che ospita il database.|
+|**Nome**|- Per una riga di primo livello, nome del processo o della pagina Web profilata.<br />- Per una riga di connessione di database, nome del server che ospita il database.|
 |**Database**|Nome del database (solo righe di connessione di database).|
-|**Numero**|Numero totale di richieste generate dal processo, dalla pagina Web o dalla connessione di database.|
+|**Count**|Numero totale di richieste generate dal processo, dalla pagina Web o dalla connessione di database.|
 |**Tempo totale trascorso**|Tempo totale impiegato per l'esecuzione di una richiesta dal processo, dalla pagina Web o dalla connessione di database.|
 |**Tempo massimo trascorso**|Tempo massimo impiegato per l'esecuzione di una richiesta dal processo, dalla pagina Web o dalla connessione di database.|
 |**Tempo minimo trascorso**|Tempo minimo impiegato per l'esecuzione di una richiesta dal processo, dalla pagina Web o dalla connessione di database.|

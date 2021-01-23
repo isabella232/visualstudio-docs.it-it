@@ -1,5 +1,6 @@
 ---
 title: Analizzare l'utilizzo della rete nelle app UWP
+description: Informazioni sul modo in cui lo strumento diagnostica di rete di Visual Studio raccoglie i dati sulle operazioni di rete eseguite mediante l'API Windows. Web. http.
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 00fd0c03bf460cd8b72a10d15501994d7a2aa10a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 429bc6c8c2d82e3c18c75132f71e60231b10f10d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541713"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722906"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizzare l'utilizzo della rete nelle app UWP
 Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere dati sulle operazioni di rete eseguite con l'[API Windows.Web.Http](/uwp/api/windows.web.http). L'analisi dei dati può essere utile nella risoluzione di problemi di accesso e autenticazione, di uso errato della cache, nonché in caso di problemi di prestazioni relativi a visualizzazione e download.
@@ -53,7 +54,7 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
 
  ![Riquadro dei dettagli dello strumento di rete](../profiling/media/network_detailsviewpane.png "NETWORK_DetailsViewPane")
 
-|Name|Descrizione|
+|Nome|Descrizione|
 |-|-|
 |**Intestazioni**|Informazioni sulle intestazioni della richiesta dell'evento.|
 |**Corpo**|Dati relativi ai payload di richiesta e risposta.|

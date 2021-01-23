@@ -1,5 +1,6 @@
 ---
 title: 'Visualizzazione Riepilogo: visualizzazione dei conflitti tra le risorse | Microsoft Docs'
+description: La visualizzazione Riepilogo riporta informazioni sugli eventi dell'applicazione in cui un thread o un processo in attesa di accedere a una risorsa è stato sospeso.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 185345c13134f4d2ec6086e6a66183e044c577ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40d922d8728e53d0098ad67c8b8140f9045c32b0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74771448"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722646"
 ---
 # <a name="summary-view---resource-contention-view"></a>Visualizzazione Riepilogo: visualizzazione dei conflitti tra le risorse
 La visualizzazione Riepilogo riporta informazioni sugli eventi dell'applicazione in cui un thread o un processo in attesa di accedere a una risorsa è stato sospeso.
@@ -33,7 +34,7 @@ La visualizzazione Riepilogo riporta informazioni sugli eventi dell'applicazione
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Name**|Nome della risorsa.|
+|**Nome**|Nome della risorsa.|
 |**% conflitti**|Percentuale di tutti gli eventi di conflitto nei dati di profilatura che rappresentano conflitti per questa risorsa.|
 
 ## <a name="most-contended-thread"></a>Thread con più conflitti
@@ -44,5 +45,5 @@ La visualizzazione Riepilogo riporta informazioni sugli eventi dell'applicazione
 |Colonna|Descrizione|
 |------------|-----------------|
 |**ID**|Identificatore del thread.|
-|**Name**|Nome del processo proprietario del thread.|
+|**Nome**|Nome del processo proprietario del thread.|
 |**% conflitti**|Percentuale di tutti gli eventi di conflitto nei dati di profilatura che rappresentano conflitti per questa risorsa.|

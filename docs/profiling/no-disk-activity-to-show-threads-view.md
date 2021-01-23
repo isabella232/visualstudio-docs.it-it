@@ -1,5 +1,6 @@
 ---
 title: Nessuna attività del disco da mostrare (visualizzazione dei thread) | Microsoft Docs
+description: Informazioni sull'attività del disco per l'intervallo di tempo corrente nei canali di I/O su disco. Per visualizzare l'attività del disco, provare a fare zoom indietro o a scorrere.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a88679d5423fc0ed2340638e5e1634bb3c81a20c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25ef8fd7d149a489458f28a7e276476c8fa09776
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62794455"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722893"
 ---
 # <a name="no-disk-activity-to-show-threads-view"></a>Nessuna attività del disco da mostrare (Visualizzazione thread)
 Non è possibile visualizzare l'attività del disco per l'intervallo di tempo corrente nei canali Disco I/O. Per visualizzare l'attività del disco, provare a fare zoom indietro o a scorrere. Assicurarsi inoltre che non ci siano canali di disco nascosti.

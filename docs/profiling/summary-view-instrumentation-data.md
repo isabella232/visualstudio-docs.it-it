@@ -1,5 +1,6 @@
 ---
 title: 'Visualizzazione Riepilogo: dati di strumentazione | Microsoft Docs'
+description: Viene illustrato come la visualizzazione di riepilogo Visualizza informazioni sulle funzioni più dispendiose in merito alle prestazioni e una descrizione dei collegamenti di notifica e degli elenchi di report.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f52f80cad4ce7678a832a7b76a75d8f2fd4460e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a9431f6f7a2adfee06f4fa007eafc109d3c32d0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778219"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722659"
 ---
 # <a name="summary-view---instrumentation-data"></a>Visualizzazione Riepilogo: dati di strumentazione
 La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono maggiormente sulle prestazioni in un'esecuzione della profilatura. Per ulteriori informazioni, tra cui una descrizione dei collegamenti di notifica e degli elenchi di report, vedere [visualizzazione Riepilogo](../profiling/summary-view.md).
@@ -31,7 +32,7 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono 
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Name**|Nome della funzione.|
+|**Nome**|Nome della funzione.|
 |**% tempo inclusivo trascorso**|Percentuale del tempo totale nei dati di profilatura dedicato dalla funzione all'esecuzione del codice nel corpo della funzione e nelle funzioni chiamate dalla funzione stessa.|
 |**% tempo esclusivo trascorso**|Percentuale del tempo totale nei dati di profilatura dedicato dalla funzione all'esecuzione del codice nel corpo della funzione. Il tempo dedicato a funzioni chiamate dalla funzione non è incluso.|
 
@@ -42,7 +43,7 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono 
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Name**|Nome della funzione.|
+|**Nome**|Nome della funzione.|
 |**% tempo esclusivo**|Percentuale del tempo totale nei dati di profilatura dedicato dalla funzione all'esecuzione del codice nel corpo della funzione. Il tempo dedicato a funzioni chiamate dalla funzione non è incluso.|
 
 ## <a name="see-also"></a>Vedere anche

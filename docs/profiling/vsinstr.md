@@ -1,5 +1,6 @@
 ---
 title: VSInstr | Microsoft Docs
+description: Informazioni sul modo in cui lo strumento VSInstr viene usato per instrumentare i file binari e altre opzioni dello strumento VSInstr.
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -18,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fc68ad7da06a1710e3c34ddb601155fc3d0b1182
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 576e83e5440607b06aca1b80171f8ca30d716e24
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330506"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723114"
 ---
 # <a name="vsinstr"></a>VSInstr
 Lo strumento VSInstr viene usato per instrumentare i file binari. Viene richiamato tramite la sintassi seguente:
@@ -41,7 +42,7 @@ VSInstr [/U] filename [/options]
 |`@filename`|Specifica il nome di un file di risposta che contiene un'opzione di comando per riga.  Non usare virgolette.|
 |**OutputPath**`:path`|Specifica una directory di destinazione per l'immagine instrumentata. Se non si specifica un percorso di output, il file binario originale viene rinominato aggiungendo "Orig" al nome del file nella stessa directory e viene instrumentata una copia del file binario.|
 |**Escludi:**`funcspec`|Indica una specifica di funzione da escludere dalla strumentazione tramite probe. È utile quando l'inserimento di probe di profilatura in una funzione causa risultati imprevedibili o indesiderati.<br /><br /> Non usare opzioni **Exclude** e **Include** che fanno riferimento a funzioni nello stesso file binario.<br /><br /> È possibile specificare più specifiche di funzione con opzioni **Exclude** distinte.<br /><br /> `funcspec` è definito come:<br /><br /> [spazio dei nomi \<separator1> ] [classe \<separator2> ] funzione<br /><br /> \<separator1> è `::` per il codice nativo e `.` per il codice gestito.<br /><br /> \<separator2> è sempre `::`<br /><br /> L'opzione **Exclude** è supportata con il code coverage.<br /><br /> È supportato il carattere jolly \*. Ad esempio, per escludere tutte le funzioni in uno spazio dei nomi, usare:<br /><br /> MyNamespace::\*<br /><br /> È possibile usare **VSInstr /DumpFuncs** per ottenere un elenco dei nomi completi delle funzioni nel file binario specificato.|
-|**Includi:**`funcspec`|Indica una specifica di funzione in un file binario da instrumentare tramite probe. Tutte le altre funzioni nei file binari non vengono instrumentate.<br /><br /> È possibile specificare più specifiche di funzione con opzioni **Include** distinte.<br /><br /> Non usare opzioni **Include** ed **Exclude** che fanno riferimento a funzioni nello stesso file binario.<br /><br /> L'opzione **Include** non è supportata con il code coverage.<br /><br /> `funcspec` è definito come:<br /><br /> [spazio dei nomi \<separator1> ] [classe \<separator2> ] funzione<br /><br /> \<separator1> è `::` per il codice nativo e `.` per il codice gestito.<br /><br /> \<separator2> è sempre `::`<br /><br /> È supportato il carattere jolly \*. Ad esempio, per includere tutte le funzioni in uno spazio dei nomi, usare:<br /><br /> MyNamespace::\*<br /><br /> È possibile usare **VSInstr /DumpFuncs** per ottenere un elenco dei nomi completi delle funzioni nel file binario specificato.|
+|**Include:** `funcspec`|Indica una specifica di funzione in un file binario da instrumentare tramite probe. Tutte le altre funzioni nei file binari non vengono instrumentate.<br /><br /> È possibile specificare più specifiche di funzione con opzioni **Include** distinte.<br /><br /> Non usare opzioni **Include** ed **Exclude** che fanno riferimento a funzioni nello stesso file binario.<br /><br /> L'opzione **Include** non è supportata con il code coverage.<br /><br /> `funcspec` è definito come:<br /><br /> [spazio dei nomi \<separator1> ] [classe \<separator2> ] funzione<br /><br /> \<separator1> è `::` per il codice nativo e `.` per il codice gestito.<br /><br /> \<separator2> è sempre `::`<br /><br /> È supportato il carattere jolly \*. Ad esempio, per includere tutte le funzioni in uno spazio dei nomi, usare:<br /><br /> MyNamespace::\*<br /><br /> È possibile usare **VSInstr /DumpFuncs** per ottenere un elenco dei nomi completi delle funzioni nel file binario specificato.|
 |**DumpFuncs**|Elenca le funzioni nell'immagine specificata. Non viene eseguita alcuna strumentazione.|
 |**ExcludeSmallFuncs**|Esclude dalla strumentazione le funzioni piccole, ovvero funzioni brevi che non effettuano alcuna chiamata di funzione. L'opzione **ExcludeSmallFuncs** riduce il sovraccarico di strumentazione, aumentando la velocità di strumentazione.<br /><br /> L'esclusione delle piccole funzioni riduce anche la dimensione del file con estensione *vsp* e il tempo necessario per l'analisi.|
 |**Mark:**{**Before**\|**After**\|**Top**\|**Bottom**}`,funcname,markid`|Inserisce un contrassegno del profilo (un identificatore usato per delimitare i dati nei report) che è possibile usare per identificare l'inizio o la fine di un intervallo di dati nel file di report con estensione vsp.<br /><br /> **Before** - Subito prima dell'ingresso nella funzione di destinazione.<br /><br /> **After** - Subito dopo l'uscita dalla funzione di destinazione.<br /><br /> **Top** : immediatamente dopo la voce della funzione di destinazione.<br /><br /> **Bottom** - Subito prima di ogni restituzione del controllo nella funzione di destinazione.<br /><br /> `funcname` - Nome della funzione di destinazione.<br /><br /> `Markid` - Numero intero positivo (long) da usare come identificatore del contrassegno del profilo.|

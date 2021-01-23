@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42f355a0a8d04e48a2b9d14d0d62edf2cd949a87
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 070bcc04d79231d074e30d1e87d3ad512ce5dca1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150938"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723036"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Uso dei dati di IntelliTrace salvati (C#, Visual Basic, C++)
 
@@ -193,7 +193,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
     |**ID della categoria**|**ID della categoria**|
     |**Categoria**|**Categoria**|
     |**Area**|**Prodotto**|
-    |**Output**|**Message**|
+    |**Output**|**Messaggio**|
     |**ID correlazione**|**ID correlazione**|
 
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Avviare il debug da un'eccezione non gestita
@@ -261,7 +261,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
  [Funzionalità IntelliTrace](../debugger/intellitrace-features.md)
 
- [Raccogliere un maggior numero di dati di diagnostica durante i test manuali](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+ [Raccogliere un maggior numero di dati di diagnostica durante i test manuali](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
 
  [IntelliTrace](../debugger/intellitrace.md)
 

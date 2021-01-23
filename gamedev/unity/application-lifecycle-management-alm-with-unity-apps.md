@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 9c078f3500a5a00edadae73f04f04e60d7c199d6
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 3697ac75eb608f6990cb7f8ca976e103f0df8454
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341704"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722984"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps con app Unity
 
@@ -61,8 +61,8 @@ Commento generale: anche se le funzionalità di progettazione sono indipendenti 
 
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|
 |-------------|--------------------------|-------------------------|
-|[Usare controllo della versione di Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) o Azure Repos|Sì|I progetti Unity sono semplicemente una raccolta di file che possono essere inseriti nei sistemi di controllo della versione come qualsiasi altro progetto, ma con alcune considerazioni speciali descritte dopo la presente tabella.|
-|[Introduzione a Git in Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Sì|Vedere le note dopo la tabella.|
+|[Usare controllo della versione di Team Foundation (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) o Azure Repos|Sì|I progetti Unity sono semplicemente una raccolta di file che possono essere inseriti nei sistemi di controllo della versione come qualsiasi altro progetto, ma con alcune considerazioni speciali descritte dopo la presente tabella.|
+|[Introduzione a Git in Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&preserve-view=true&tabs=visual-studio)|Sì|Vedere le note dopo la tabella.|
 |[Migliorare la qualità del codice](/test/improve-code-quality.md)|Sì||
 |[Trovare le modifiche apportate al codice e altri elementi della cronologia](/ide/find-code-changes-and-other-history-with-codelens.md)|Sì||
 |[Usare le mappe del codice per eseguire il debug delle applicazioni](/modeling/use-code-maps-to-debug-your-applications.md)|Sì||
@@ -118,7 +118,7 @@ Collegamento di riferimento: [Build and Release in Azure Pipelines and TFS](/azu
 |-------------|--------------------------|-------------------------|
 |Gestire i processi di rilascio|Sì||
 |Distribuzione ai server per il caricamento laterale tramite script|Sì||
-|Caricare nell'app store|Partial|Sono disponibili estensioni che possono automatizzare questo processo per alcuni archivi applicazioni. Vedere le [estensioni per Azure DevOps Services](https://marketplace.visualstudio.com/VSTS), ad esempio l'[estensione per Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
+|Caricare nell'app store|Parziale|Sono disponibili estensioni che possono automatizzare questo processo per alcuni archivi applicazioni. Vedere le [estensioni per Azure DevOps Services](https://marketplace.visualstudio.com/VSTS), ad esempio l'[estensione per Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
 ## <a name="monitor-with-hockeyapp"></a>Monitorare con HockeyApp
 

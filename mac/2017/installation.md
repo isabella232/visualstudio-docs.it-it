@@ -8,17 +8,17 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: c494f8d8543e0aa51b0c2be0ee52c0cb80aba982
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: be799764c3d6913cd2a13c6d631fc3450f8875a0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862437"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719916"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Installare Visual Studio 2017 per Mac
 
 > [!NOTE]
-> Visual Studio 2019 per Mac è [ora disponibile](installation.md?view=vsmac-2019). Per le versioni precedenti di Visual Studio per Mac, vedere la [pagina dei download](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac) di Visual Studio.
+> Visual Studio 2019 per Mac è [ora disponibile](installation.md?view=vsmac-2019&preserve-view=true). Per le versioni precedenti di Visual Studio per Mac, vedere la [pagina dei download](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac) di Visual Studio.
 
 ## <a name="downgrading-from-visual-studio-2019-for-mac"></a>Downgrade da Visual Studio 2019 per Mac
 
@@ -90,7 +90,7 @@ Per l'uso di iOS in Visual Studio è necessario quanto segue:
 
 10. Una volta completata l'installazione, è possibile iniziare a sviluppare app in Visual Studio premendo **Avvia**:
 
-    ![Aprire Visual Studio](media/installer-image11.png)
+    ![Aprire Visual Studio.](media/installer-image11.png)
 
 > [!NOTE]
 > Se si sceglie di non installare una piattaforma o uno strumento durante l'installazione originale (deselezionandolo nel passaggio 6), è necessario eseguire di nuovo il [programma di installazione](https://visualstudio.microsoft.com/vs/) se si vuole aggiungere i componenti in un secondo momento.

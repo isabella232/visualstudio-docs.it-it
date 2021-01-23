@@ -1,5 +1,7 @@
 ---
 title: Marcatori del visualizzatore di concorrenza.| Microsoft Docs
+description: "Informazioni sui marcatori nel Visualizzatore di concorrenza. I marcatori sono icone che rappresentano gli eventi generati da un'app. Sono disponibili tre tipi: Flag, messaggi e intervalli."
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5e4b65db5c3d96b16a68a7b8e21a2786b9110b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fab8108e15f3cbaf81130c2ce8533d00f2a23c7e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63001059"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720995"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcatori del visualizzatore di concorrenza
 I marcatori del visualizzatore di concorrenza sono icone che rappresentano eventi in un'app.  In genere, l'applicazione genera questi eventi per definire fasi o occorrenze di un'applicazione.  Gli eventi possono essere generati dall'app o da librerie e runtime usati dall'app.
@@ -45,7 +47,7 @@ I marcatori del visualizzatore di concorrenza sono icone che rappresentano event
 
 - [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)
 
-- [Dataflow](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)
+- [Flusso di dati](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)
 
 - [Parallel LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)
 
