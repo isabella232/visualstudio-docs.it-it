@@ -1,5 +1,6 @@
 ---
 title: Filtro delle visualizzazioni dei rapporti di prestazioni | Microsoft Docs
+description: Informazioni sul modo in cui la finestra filtro di visualizzazione report del profiler si trova nella parte superiore della finestra del rapporto di prestazioni.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a5642a8e153a4dfc7705d91d933397b6f8acb37
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79fb4b7cf7a5df4b2077a2145172d24acdbf86cb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778454"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722737"
 ---
 # <a name="performance-report-view-filter"></a>Filtro delle visualizzazioni dei rapporti di prestazioni
 La finestra **filtro di visualizzazione report del profiler** si trova nella parte superiore della finestra **rapporto di prestazioni** . Se non è visibile, fare clic sul pulsante **Mostra filtro**.
@@ -29,7 +30,7 @@ La finestra **filtro di visualizzazione report del profiler** si trova nella par
 |And/Or|Scegliere **And** se questa clausola e la successiva devono essere entrambe vere (true) per restituire un risultato. Scegliere **Or** se questa clausola o la successiva può essere vera (true) per restituire un risultato.|
 |Campo|Selezionare il campo da usare nella clausola filtro dall'elenco dei campi dati disponibili nel file di rapporto corrente.|
 |Operatore|Scegliere l'operatore che specifica la relazione da impostare tra il campo e il valore.<br /><br /> =    Uguale a<br /><br /> <>  Non uguale a<br /><br /> <    Minore di<br /><br /> >    Maggiore di<br /><br /> <=  Minore o uguale a<br /><br /> >=  Maggiore o uguale a|
-|Valore|Selezionare o immettere il valore da cercare. Per alcuni campi è presente l'elenco dei valori disponibili.|
+|valore|Selezionare o immettere il valore da cercare. Per alcuni campi è presente l'elenco dei valori disponibili.|
 
  È possibile aggiungere clausole filtro fino a ottenere risultati ottimali. Fare clic su **Esegui filtro** per applicare il filtro al file di dati.
 

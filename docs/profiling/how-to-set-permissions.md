@@ -1,5 +1,6 @@
 ---
 title: Impostare le autorizzazioni | Microsoft Docs
+description: Informazioni su come un amministratore di un computer concede le autorizzazioni di sicurezza necessarie per la profilatura a un utente o a un gruppo che non dispone di autorizzazioni di amministratore.
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f0a55e5e18829856b913ad01df6f831a2df42863
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 2ab51b317164b8f2e828e0327021fb595574583c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851827"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721996"
 ---
 # <a name="how-to-set-permissions"></a>Procedura: Impostare le autorizzazioni
 
@@ -64,13 +65,13 @@ I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene
 
 2. Fare clic con il pulsante destro del mouse sulla cartella e quindi fare clic su **Proprietà**.
 
-     Verrà visualizzata la finestra di dialogo ** \<folder name> Proprietà** .
+     Verrà visualizzata la finestra di dialogo **\<folder name> Proprietà** .
 
 3. Fare clic sulla scheda **Security** (Sicurezza).
 
 4. Fare clic sul nome dell'account utente nella casella **Utenti e gruppi**.
 
-5. Nella casella **autorizzazioni per \<user name> ** Selezionare la casella di controllo **controllo completo**.
+5. Nella casella **autorizzazioni per \<user name>** Selezionare la casella di controllo **controllo completo**.
 
 6. Fare clic su **OK**.
 

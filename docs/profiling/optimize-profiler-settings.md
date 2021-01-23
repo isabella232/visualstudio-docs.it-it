@@ -1,5 +1,6 @@
 ---
 title: Ottimizzazione delle impostazioni del profiler | Microsoft Docs
+description: Informazioni sul modo in cui il profiler delle prestazioni e la finestra di Strumenti di diagnostica in Visual Studio presentano molte impostazioni diverse che influiscono sulle prestazioni complessive degli strumenti.
 ms.date: 4/29/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f0629228c2fcad1f8ea36db2e4d0c67a68715e4
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 482ee640f4b84348e00f2f3da42a4dbe13f73460
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400311"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722841"
 ---
 # <a name="optimizing-profiler-settings"></a>Ottimizzazione delle impostazioni del profiler
 
@@ -22,7 +23,7 @@ Il profiler delle prestazioni e la finestra Strumenti di diagnostica in Visual S
 
 ## <a name="symbol-settings"></a>Impostazioni simboli
 
-Le impostazioni dei simboli disponibili nelle opzioni del debugger ( **debug > opzioni > simboli** o **strumenti > opzioni > debug > simboli** ) hanno un impatto significativo sul tempo necessario per generare risultati negli strumenti. L'abilitazione dei server di simboli o l'utilizzo della **_NT_SYMBOL_PATH** fa sì che il profiler richieda simboli per ogni modulo caricato in un report. Attualmente, il profiler carica sempre automaticamente tutti i simboli indipendentemente dalle preferenze di caricamento automatico dei simboli.
+Le impostazioni dei simboli disponibili nelle opzioni del debugger (**debug > opzioni > simboli** o **strumenti > opzioni > debug > simboli**) hanno un impatto significativo sul tempo necessario per generare risultati negli strumenti. L'abilitazione dei server di simboli o l'utilizzo della **_NT_SYMBOL_PATH** fa sì che il profiler richieda simboli per ogni modulo caricato in un report. Attualmente, il profiler carica sempre automaticamente tutti i simboli indipendentemente dalle preferenze di caricamento automatico dei simboli.
 
 ![Pagina di caricamento dei simboli](../profiling/media/symbolloading.png "Caricamento simboli")
 

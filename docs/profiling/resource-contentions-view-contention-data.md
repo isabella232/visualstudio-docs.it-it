@@ -1,5 +1,6 @@
 ---
 title: 'Visualizzazione dei conflitti di risorse: dati sui conflitti | Microsoft Docs'
+description: Informazioni su come la visualizzazione dei conflitti di risorse elenca i dati sui conflitti per le risorse che sono l'origine di eventi di conflitto.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1607e594b6456d4da4396069d589160230b39680
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc8e6c39efea24ac8a4a493099f3bcdb39dc4fe6
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778336"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720345"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Visualizzazione dei conflitti di risorse: dati sui conflitti
 Nella visualizzazione dei conflitti tra le risorse sono elencati i dati sui conflitti relativi alle risorse che hanno causato gli eventi di conflitto. Un evento di conflitto si verifica quando una funzione in un thread deve attendere l'accesso alla risorsa perché una funzione in un altro thread ne ha acquisito l'accesso esclusivo. Ogni risorsa è il nodo radice di un albero delle chiamate in cui vengono visualizzati i percorsi di esecuzione delle funzioni che hanno generato gli eventi di conflitto.
@@ -42,7 +43,7 @@ Nella visualizzazione dei conflitti tra le risorse sono elencati i dati sui conf
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Name**|Nome della risorsa o della funzione.|
+|**Nome**|Nome della risorsa o della funzione.|
 |**Tempo blocco esclusivo**|- Per una risorsa, il tempo totale per cui è stato bloccato l'accesso alla risorsa con conseguente attesa di un thread.<br />- Per una funzione, il tempo per cui è stato bloccato l'accesso alla risorsa padre a queste istanze della funzione durante l'esecuzione di codice nel corpo della funzione. È escluso il tempo di blocco nelle funzioni chiamate dalla funzione.|
 |**% tempo blocco esclusivo**|- Per una risorsa, la percentuale del tempo totale di blocco nei dati di profilatura corrispondente al tempo di blocco di questa risorsa<br />- Per una funzione, la percentuale del tempo totale di blocco nei dati di profilatura corrispondente al tempo di blocco esclusivo di queste istanze della funzione.|
 |**Conflitti esclusivi**|- Per una risorsa, il numero totale di volte in cui è stato bloccato l'accesso alla risorsa con conseguente attesa di un thread.<br />- Per una funzione, il numero di volte in cui è stato bloccato l'accesso alla risorsa padre a queste istanze della funzione durante l'esecuzione di codice nel corpo della funzione. Non sono inclusi gli eventi di blocco in funzioni chiamate dalla funzione.|

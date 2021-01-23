@@ -1,5 +1,7 @@
 ---
 title: Strumento di zoom della visualizzazione Core | Documenti Microsoft
+description: Informazioni sul controllo zoom della visualizzazione Core, che consente di ingrandire e ridurre la sequenza temporale, oltre a informazioni sugli altri modi per eseguire lo zoom.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6862493de844ad8108009a2103752122114ae6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df2ffebee150ae106003ed5113e4c7354458143c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62553045"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720722"
 ---
 # <a name="cores-view-zoom-tool"></a>Strumento di zoom della visualizzazione Core
 Il controllo Zoom è un dispositivo di scorrimento che consente di ingrandire e ridurre la sequenza temporale in modo da potersi concentrare sulle aree di particolare interesse. Il controllo fa zoom in avanti al centro della visualizzazione corrente, quindi è opportuno regolare la visualizzazione prima di ingrandire.

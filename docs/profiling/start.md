@@ -1,5 +1,6 @@
 ---
 title: Start | Microsoft Docs
+description: Informazioni su come l'opzione Start è un'opzione di VSPerfCmd.exe che inizializza il profiler sul metodo di profilatura specificato.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: df3ccda9730be02bafb7f7d069a26193a4528d1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aea1032f709d2f8cebf105bce14dc081fe3b74da
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778271"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719994"
 ---
 # <a name="start"></a>Avvio
 L'opzione **Start** è un'opzione di *VSPerfCmd.exe* che inizializza il profiler sul metodo di profilatura specificato.
@@ -58,7 +59,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **Shutdown**[**:** `Timeout` ] disattiva il profiler.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra come usare l'opzione *Start di * **VSPerfCmd.exe** per inizializzare il profiler.
+ L'esempio seguente illustra come usare l'opzione *Start di* **VSPerfCmd.exe** per inizializzare il profiler.
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp

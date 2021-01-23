@@ -1,5 +1,6 @@
 ---
 title: Mark | Microsoft Docs
+description: Informazioni sul modo in cui l'opzione VSPerfCmd.exe Mark inserisce le informazioni specificate nel file di dati di profilatura.
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 1d72cef3-bb09-4bbb-8864-6ea0ab623ff9
@@ -9,15 +10,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b3049a253dca37090d128748b71f278aa2f7e63
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4554a994fe790d5e0ec46762e830576181b312dd
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330791"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722139"
 ---
 # <a name="mark"></a>Contrassegno
-In *VSPerfCmd.exe l'opzione * **Mark** consente di inserire le informazioni specificate nel file di dati di profilatura. L'opzione Mark può essere elencata in un report di VSPerfReport separato o nella visualizzazione Contrassegni dell'interfaccia utente del profiler. È possibile usare **Mark** per specificare i punti di inizio e fine nel report e visualizzare i filtri.
+In *VSPerfCmd.exe l'opzione* **Mark** consente di inserire le informazioni specificate nel file di dati di profilatura. L'opzione Mark può essere elencata in un report di VSPerfReport separato o nella visualizzazione Contrassegni dell'interfaccia utente del profiler. È possibile usare **Mark** per specificare i punti di inizio e fine nel report e visualizzare i filtri.
 
  L'opzione **Mark** deve essere l'unica opzione specificata nella riga di comando.
 

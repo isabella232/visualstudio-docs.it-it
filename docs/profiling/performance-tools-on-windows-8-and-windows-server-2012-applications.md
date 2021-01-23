@@ -1,5 +1,6 @@
 ---
 title: Strumenti per le prestazioni nelle app di Windows 8 & WS 2012
+description: Informazioni sulle funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative nel modo in cui gli strumenti per le prestazioni di Visual Studio raccolgono i dati.
 ms.custom: SEO-VS-2020
 ms.date: 06/19/2017
 ms.topic: conceptual
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cc44eddc2af2e2d85f7c4bb9c876d336ccd1b546
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ce83684b77d4546915cdcf5980e68be0b6c6a125
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807833"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719591"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012
 
@@ -111,7 +112,7 @@ I dati di profilatura dell'interazione tra livelli possono essere raccolti usand
 
 **Raccolta di dati TIP in un computer remoto**
 
-Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **vs \_ Profiler \_ ** _\<Platform>_ **\_** _\<Language>_ **. exe** dalla cartella *%VSInstallDir%\Team Tools\Performance Tools\Setups* di un computer con Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
+Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **vs \_ Profiler \_** _\<Platform>_ **\_** _\<Language>_ **. exe** dalla cartella *%VSInstallDir%\Team Tools\Performance Tools\Setups* di un computer con Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
 
 È possibile usare [VSPerfCmd](../profiling/vsperfcmd.md) o [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) per raccogliere i dati di profilatura.
 

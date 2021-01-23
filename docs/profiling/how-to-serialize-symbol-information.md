@@ -1,5 +1,6 @@
 ---
 title: Serializzare le informazioni sui simboli | Microsoft Docs
+description: Informazioni su come è possibile serializzare i simboli necessari per analizzare l'applicazione e il modo in cui la serializzazione dei simboli aggiunge simboli al file con estensione vsp.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d644960153a8e342f6442f3750420ea68a61b38f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 0b7cdfa6e64380c966b62d6691f73719a3034e2d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851593"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722087"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Procedura: Serializzare le informazioni sui simboli
 È possibile serializzare i simboli necessari per analizzare l'applicazione. Con la serializzazione dei simboli vengono aggiunti simboli al file con estensione *vsp*. L'aggiunta di informazioni sui simboli nel file con estensione *vsp* consente ad altri utenti di analizzare un rapporto di prestazioni senza dover accedere ai simboli originali. Se i simboli non vengono serializzati, sarà necessario disporre dei file *exe* e *pdb* originali instrumentati per analizzare il file *vsp*.

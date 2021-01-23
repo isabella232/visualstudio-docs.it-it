@@ -1,5 +1,6 @@
 ---
 title: Visualizzazione Righe | Microsoft Docs
+description: Informazioni sul modo in cui la visualizzazione righe è disponibile solo per i dati del profiler raccolti tramite il metodo di campionamento.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac0d7785071e5f2928e7eabb4a29b1655b42c5ad
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773981"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721294"
 ---
 # <a name="lines-view"></a>Visualizzazione Righe
 La visualizzazione Righe è disponibile solo per i dati del profiler raccolti tramite il metodo di campionamento. La visualizzazione non è disponibile per i dati raccolti mediante la strumentazione.

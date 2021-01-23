@@ -1,5 +1,6 @@
 ---
 title: Marcatori span | Microsoft Docs
+description: Informazioni su come un marcatore span rappresenti una fase significativa di un'applicazione e visualizza un esempio che mostra un intervallo nel Visualizzatore di concorrenza.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69b48a5b1b551e2e29b9aa10e7f68ff0df0e379
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28fb9da2e838a17f5b014c3b1af4fc9ee5ab46d7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62980969"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720111"
 ---
 # <a name="span-markers"></a>Marcatori span
 Un marcatore span rappresenta una fase significativa di un'applicazione. Ad esempio, è possibile usare uno span per rappresentare un intervallo di tempo durante il quale viene elaborato un particolare elemento di lavoro. La sua lunghezza rappresenta la durata della fase dell'applicazione corrispondente. La figura mostra uno span nel visualizzatore di concorrenza:

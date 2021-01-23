@@ -1,5 +1,6 @@
 ---
 title: Connettore pronto per thread | Microsoft Docs
+description: Quando si fa clic su un segmento di blocco per visualizzare uno stack di chiamate e il relativo stack di sblocco, è possibile che venga visualizzato anche il connettore pronto per il thread.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20842cc277246bba6c9e05c6c59a937a89b5f6bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 789c60be4f31d053c4ff9f95121bf8f0e0d4689e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62943492"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718785"
 ---
 # <a name="thread-ready-connector"></a>Connettore pronto per il thread
 Quando si fa clic su un segmento di blocco per visualizzare uno stack di chiamate e il relativo stack di sblocco, potrebbe essere visualizzato anche il connettore pronto per thread. Se l'evento di sblocco si è verificato su un altro thread nel processo corrente, il connettore pronto per thread identifica visivamente il thread e il segmento di esecuzione che hanno consentito al thread bloccato di riprendere l'esecuzione.

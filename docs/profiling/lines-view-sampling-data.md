@@ -1,5 +1,6 @@
 ---
 title: 'Visualizzazione Righe: dati di campionamento | Microsoft Docs'
+description: Informazioni su come la visualizzazione righe dei dati di campionamento elenca i dati sulle prestazioni per le istruzioni eseguite durante la raccolta degli esempi nell'esecuzione della profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ff4d851937111400002de531696b9b69aec20ba9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38ae3e9c40204082ea8791ddea4e92d77a0d311e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778583"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721320"
 ---
 # <a name="lines-view---sampling-data"></a>Visualizzazione Righe: dati di campionamento
 Nella visualizzazione Righe dei dati di campionamento sono elencati i dati delle prestazioni per le istruzioni eseguite durante la raccolta dei campioni nell'esecuzione della profilatura.

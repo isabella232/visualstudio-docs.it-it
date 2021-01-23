@@ -1,5 +1,6 @@
 ---
 title: Visualizzazioni dei dati sui conflitti di risorse | Microsoft Docs
+description: Informazioni sulle informazioni di riferimento per le visualizzazioni e i report dei file di dati del profiler che contengono dati di profilatura dei conflitti di thread.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25dc334819c4b32bf74822e46dd3251919f621bf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74771530"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720332"
 ---
 # <a name="resource-contention-data-views"></a>Visualizzazioni dei dati su conflitti tra risorse
 Questa sezione contiene informazioni di riferimento relative alle visualizzazioni e ai report sui file di dati del profiler che contengono dati di profilatura sui conflitti dei thread.

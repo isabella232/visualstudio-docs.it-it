@@ -1,5 +1,6 @@
 ---
 title: ThreadOn e ThreadOff | Microsoft Docs
+description: Informazioni sul modo in cui i sottocomandi VSPerfCmd.exe ThreadOff e ThreadOn sono disponibili solo nelle sessioni di profilatura della riga di comando che usano il metodo di strumentazione.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
@@ -9,17 +10,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 906629eb24f6be097f3e24dfca3e6a231f42357f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8b2e51857fc799c7b60f7650b823b77c9c6a283
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778154"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718772"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn e ThreadOff
-In *VSPerfCmd.exe i sottocomandi * **ThreadOff** e **ThreadOn** sono disponibili solo nelle sessioni di profilatura della riga di comando che usano il metodo di strumentazione. **ThreadOff** e **ThreadOn** sospendono e riprendono la profilatura per il thread specificato. **ThreadOff** arresta la profilatura del thread e **ThreadOn** avvia la profilatura del thread.
+In *VSPerfCmd.exe i sottocomandi* **ThreadOff** e **ThreadOn** sono disponibili solo nelle sessioni di profilatura della riga di comando che usano il metodo di strumentazione. **ThreadOff** e **ThreadOn** sospendono e riprendono la profilatura per il thread specificato. **ThreadOff** arresta la profilatura del thread e **ThreadOn** avvia la profilatura del thread.
 
- Nella maggior parte dei casi, è necessario specificare **ThreadOn** o **ThreadOff** come unica opzione in una *VSPerfCmd.exe* riga di comando, ma possono anche essere combinati con i sottocomandi **GlobalOn**, **GlobalOff**, **ProcessOn**e **ProcessOff** .
+ Nella maggior parte dei casi, è necessario specificare **ThreadOn** o **ThreadOff** come unica opzione in una *VSPerfCmd.exe* riga di comando, ma possono anche essere combinati con i sottocomandi **GlobalOn**, **GlobalOff**, **ProcessOn** e **ProcessOff** .
 
  I sottocomandi **ThreadOn** e **ThreadOff** interagiscono con i sottocomandi **GlobalOn** e **GlobalOff** che controllano la raccolta dei dati per tutti i processi in una sessione di profilatura da riga di comando e i sottocomandi **ProcessOn** e **ProcessOff** che controllano la raccolta dei dati per un processo specificato.
 

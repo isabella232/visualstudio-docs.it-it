@@ -1,5 +1,6 @@
 ---
 title: Visualizzazione Utilizzo | Microsoft Docs
+description: Viene illustrato come visualizzare le informazioni relative alla CPU, alla GPU e ad altre risorse di sistema usate dal processo corrente.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 926c67261f91aa8787d9be4a33dadbd3a890c568
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 047c9ef9d5bb03546eb88372ae43a51c7c8e4d32
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62823524"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723205"
 ---
 # <a name="utilization-view"></a>Visualizzazione Utilizzo
 La **visualizzazione Utilizzo** contiene informazioni relative a CPU, GPU e altre risorse di sistema usate dal processo corrente (scegliere **Analizza** > **Visualizzatore di concorrenza** per avviare il visualizzatore di concorrenza). Viene indicato l'utilizzo medio dei core da parte del processo analizzato, del processo inattivo, del processo di sistema e di altri processi in esecuzione nel sistema nel tempo. Non viene indicato quale core specifico è attivo in un momento determinato. Ad esempio, se due core sono in esecuzione al 50% per un determinato periodo di tempo, il grafico indica che viene usato un solo core logico. La visualizzazione viene generata dividendo il tempo di profilatura in brevi segmenti di tempo. Per ogni segmento, nel grafico viene rappresentato il numero medio di thread di processo in esecuzione nei core logici durante l'intervallo.

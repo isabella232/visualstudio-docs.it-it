@@ -1,5 +1,6 @@
 ---
 title: Classe span | Microsoft Docs
+description: Informazioni sulla classe Span e su come definisce una fase dell'applicazione. Vengono inoltre illustrati i costruttori pubblici della classe Span e la gerarchia di ereditarietà.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ca1e674b13877ff8a8864c3b7447f15fd0307d7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62979757"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720046"
 ---
 # <a name="span-class"></a>Classe span
 Definisce una fase dell'applicazione.
@@ -28,7 +29,7 @@ Definisce una fase dell'applicazione.
 class span;
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
 
 ### <a name="public-constructors"></a>Costruttori pubblici
 

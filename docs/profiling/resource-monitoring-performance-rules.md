@@ -1,5 +1,6 @@
 ---
 title: Regole di prestazioni relative al monitoraggio delle risorse | Microsoft Docs
+description: Informazioni sul modo in cui i messaggi di prestazioni nella categoria monitoraggio risorse forniscono dati aggiuntivi sulle prestazioni dell'applicazione.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0f77faf-0a05-4718-a2c5-47934be40868
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 39df18811a47dfb41c17333121cd9a23d8f46940
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96cad46cd8a42346ab6199bca664cdc885bfc3cd
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544534"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720267"
 ---
 # <a name="resource-monitoring-performance-rules"></a>Regole di prestazioni relative al monitoraggio delle risorse
 I messaggi relativi alle prestazioni nella categoria Monitoraggio risorse forniscono ulteriori dati sulle prestazioni dell'applicazione. È possibile usare questi dati per analizzare i problemi di prestazioni. Queste regole sono informative e vengono indicate per ogni esecuzione della profilatura.

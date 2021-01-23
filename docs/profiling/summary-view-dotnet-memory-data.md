@@ -1,5 +1,6 @@
 ---
 title: 'Visualizzazione Riepilogo: dati di memoria .NET | Microsoft Docs'
+description: Scopri in che modo la visualizzazione riepilogo Visualizza informazioni sulle funzioni e sui tipi .NET che hanno allocato la maggior parte della memoria.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: a67902af99eaee6c75f92f86c2481dfc2afd744e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 590705e7fb55315176d5533a9cd009784430ea4d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74771556"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722672"
 ---
 # <a name="summary-view---net-memory-data"></a>Visualizzazione Riepilogo: dati di memoria .NET
 La visualizzazione Riepilogo riporta informazioni sui tipi e sulle funzioni .NET che hanno allocato la quantità di memoria maggiore e sui tipi che sono stati creati più frequentemente in un'esecuzione della profilatura. Per ulteriori informazioni, tra cui una descrizione dei collegamenti di notifica e degli elenchi di report, vedere [visualizzazione Riepilogo](../profiling/summary-view.md).
@@ -29,7 +30,7 @@ La visualizzazione Riepilogo riporta informazioni sui tipi e sulle funzioni .NET
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Name**|Nome della funzione.|
+|**Nome**|Nome della funzione.|
 |**% byte**|Percentuale di tutti i byte allocati nell'esecuzione della profilatura che sono stati allocati da questa funzione o da una funzione figlio chiamata da questa funzione.|
 
 ## <a name="types-with-most-memory-allocated"></a>Tipi con molta memoria allocata
@@ -37,7 +38,7 @@ La visualizzazione Riepilogo riporta informazioni sui tipi e sulle funzioni .NET
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Name**|Nome del tipo.|
+|**Nome**|Nome del tipo.|
 |**% byte**|Percentuale di tutti i byte allocati nell'esecuzione della profilatura che sono stati allocati per questo tipo.|
 
 ## <a name="types-with-most-instances"></a>Tipi con molte istanze
@@ -45,7 +46,7 @@ La visualizzazione Riepilogo riporta informazioni sui tipi e sulle funzioni .NET
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Name**|Nome del tipo.|
+|**Nome**|Nome del tipo.|
 |**% istanze**|Percentuale del numero totale di oggetti .NET creati nell'esecuzione della profilatura corrispondenti a istanze di questo tipo.|
 
 ## <a name="see-also"></a>Vedere anche

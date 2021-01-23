@@ -7,12 +7,12 @@ ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: 0808f86f8571210a9048faf2e825b483120e73ca
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 11b0788317cd0a20dd27159aa241db32e3818daf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584204"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722126"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Visual Studio per Mac supporta il controllo della versione di Team Foundation?
 
@@ -68,7 +68,7 @@ Per **configurare manualmente TEE-CLC**:
 
 Dopo aver installato TEE-CLC, è possibile eseguire il comando `tf eula` per visualizzare e accettare il contratto di licenza per il client.
 
-Infine, per l'autenticazione nell'ambiente TFS/Azure DevOps, sarà necessario creare un token di accesso personale nel server. Altre informazioni sull'[autenticazione con token di accesso personali](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Quando si crea un token di accesso personale da usare con il controllo della versione di Team Foundation, assicurarsi di assegnare l'accesso completo quando si configura il token.
+Infine, per l'autenticazione nell'ambiente TFS/Azure DevOps, sarà necessario creare un token di accesso personale nel server. Altre informazioni sull'[autenticazione con token di accesso personali](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops&preserve-view=true). Quando si crea un token di accesso personale da usare con il controllo della versione di Team Foundation, assicurarsi di assegnare l'accesso completo quando si configura il token.
 
 #### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Uso di TEE-CLC per la connessione al repository
 
@@ -107,6 +107,6 @@ Per altre informazioni sui comandi qui indicati o su altri comandi, è possibile
 
 `tf help`
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 
 - [Sviluppare e condividere il codice nel controllo della versione di Team Foundation usando Visual Studio (in Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

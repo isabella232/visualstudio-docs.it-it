@@ -1,5 +1,6 @@
 ---
 title: Status | Microsoft Docs
+description: Informazioni sul modo in cui l'opzione stato VSPerfCmd.exe Visualizza informazioni sullo stato del profiler e sui processi attualmente in corso di profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
@@ -9,17 +10,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c77c78258b5ddef486dc35ed6a620003864254cc
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778245"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722711"
 ---
 # <a name="status"></a>Stato
-L'opzione *Status di * **VSPerfCmd.exe** visualizza informazioni sullo stato del profiler e di eventuali processi in corso di profilatura.
+L'opzione *Status di* **VSPerfCmd.exe** visualizza informazioni sullo stato del profiler e di eventuali processi in corso di profilatura.
 
- L'opzione **Status** deve essere l'unica opzione specificata nella riga di comando. Prima di poter visualizzare qualsiasi stato è necessario inizializzare il profiler con l'opzione *Start di * **VSPerfCmd.exe**.
+ L'opzione **Status** deve essere l'unica opzione specificata nella riga di comando. Prima di poter visualizzare qualsiasi stato è necessario inizializzare il profiler con l'opzione *Start di* **VSPerfCmd.exe**.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -47,7 +48,7 @@ VSPerfCmd.exe /Status
 
  L'opzione **Status** visualizza le informazioni sullo stato seguenti per ogni processo in corso di profilatura.
 
- **Processo ** Nome del processo di cui è stata eseguita la profilatura.
+ **Processo** Nome del processo di cui è stata eseguita la profilatura.
 
  **ID processo** Identificatore di sistema del processo.
 

@@ -1,5 +1,6 @@
 ---
 title: Riga di comando per la profilatura-creazione di report di base
+description: Informazioni sulle opzioni di riepilogo e CallTrace di VSPerfReport.exe, che creano report con estensione CSV (valori delimitati da virgole) da un file di dati di profilatura con estensione vsp o vsps.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ee74732c917ee4267e08f7ff1c60715971ed71
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 86c72f0281f459852b878f17687411ce87eb6978
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808851"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718941"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Creare report di profilatura di base tramite la riga di comando
 Questo articolo descrive i comandi VSPerfReport di base che generano report di valori separati da virgole (file con estensione *csv*) da un file di dati di profilatura con estensione *vsp* o *vsps*. Per la descrizione di tutte le opzioni del report, vedere [VSPerfReport](../profiling/vsperfreport.md).
@@ -39,7 +40,7 @@ Questo articolo descrive i comandi VSPerfReport di base che generano report di v
 |**CallTree**|Rappresenta i percorsi di esecuzione e i dati di profilatura delle funzioni nell'esecuzione della profilatura.|-   [Dati di strumentazione](../profiling/call-tree-view-instrumentation-data.md)<br />-   [Campionamento dei dati](../profiling/call-tree-view-sampling-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [Dati di strumentazione di memoria .NET](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [Dati su conflitti](../profiling/call-tree-view-contention-data.md)|
 |**Contatore**|Elenca i contrassegni di profilo e valori del contatore delle prestazioni di Windows raccolti durante l'esecuzione della profilatura.|-   [Visualizzazione Contrassegni](../profiling/marks-view.md)|
 |**IP**|Elenca i dati di profilatura per istruzione.|-   [Campionamento dei dati](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Dati su conflitti](../profiling/instruction-pointers-ips-view-contention-data.md)|
-|**Life**|Visualizza la durata degli oggetti allocati.|-   [Visualizzazione Durata oggetti](../profiling/object-lifetime-view.md)|
+|**Vita**|Visualizza la durata degli oggetti allocati.|-   [Visualizzazione Durata oggetti](../profiling/object-lifetime-view.md)|
 |**Linea**|Elenca i dati di profilatura per riga di codice sorgente.|-   [Campionamento dei dati](../profiling/lines-view-sampling-data.md)<br />-   [Dati di campionamento di memoria .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Dati sui conflitti](../profiling/lines-view-contention-data.md)|
 |**Intestazione**|Informazioni di intestazione per il file di dati di profilatura.|Specifico per il file.|
 |**Contrassegno**|Contrassegni di profilatura raccolti nell'esecuzione della profilatura.|-   [Visualizzazione Contrassegni](../profiling/marks-view.md)|

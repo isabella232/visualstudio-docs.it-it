@@ -1,5 +1,7 @@
 ---
 title: Controllo della raccolta di dati | Microsoft Docs
+description: Informazioni su come avviare e arrestare Strumenti di profilatura raccolta dei dati e su come limitare gli oggetti per i quali vengono raccolti i dati di profilatura. Questo articolo è una panoramica.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 48c7047bdd321943074221c9f09193970d42a247
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b846db263c95f20c6ea4cb6a418973830a5dd8ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777803"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720930"
 ---
 # <a name="control-data-collection"></a>Controllare la raccolta dati
 Gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consentono di controllare quando i dati di profilatura vengono raccolti durante una sessione prestazioni e di specificare le funzioni che vengono profilate. In questa sezione viene descritto come avviare e arrestare la raccolta dei dati dalle finestre **Esplora prestazioni** e **Controllo raccolta dati** e come limitare gli oggetti per i quali vengono raccolti i dati di profilatura.

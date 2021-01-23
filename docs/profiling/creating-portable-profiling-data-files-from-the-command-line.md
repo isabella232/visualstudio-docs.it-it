@@ -1,5 +1,6 @@
 ---
 title: Riga di comando per la profilatura-creare file di dati portabili
+description: Per semplificare la condivisione dei dati di profilatura, usare lo strumento da riga di comando VSPerfReport.exe per incorporare i simboli per un'esecuzione della profilatura nel file con estensione vsp.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d0584cd2a476a7552beec483dd72ad1e957800ec
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5df9f14fecce23eb72d08dcba87dee360269e078
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808838"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718967"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>Creare file dei dati di profilatura portabili dalla riga di comando
 Per semplificare la condivisione dei dati di profilatura, è possibile usare lo strumento da riga di comando [VSPerfReport](../profiling/vsperfreport.md) per incorporare i simboli di un'esecuzione della profilatura nel file con estensione *vsp*.

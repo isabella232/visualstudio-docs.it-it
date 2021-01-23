@@ -1,5 +1,6 @@
 ---
 title: Salvataggio delle informazioni sui simboli con i file di dati di prestazioni | Microsoft Docs
+description: Informazioni su come è possibile impostare le impostazioni del progetto di prestazioni per salvare o serializzare i simboli nel file di report.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 74137752900d082c545dd5e5271b7700ec81fa01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 142e73a65fa9ffd2210719d84f18a25068762acb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778297"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720215"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Salvataggio delle informazioni sui simboli con i file di dati di prestazioni
 

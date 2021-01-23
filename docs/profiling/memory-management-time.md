@@ -1,5 +1,6 @@
 ---
 title: Tempo di gestione della memoria | Microsoft Docs
+description: Informazioni sul modo in cui questo scenario implica che un thread è bloccato da un evento associato a un'operazione di gestione della memoria, ad esempio il paging.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 442973edb18e75bafda8a9397eac799286c69dfa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23e1dd2868f5b29a12f3f54f46e5cb5833d270af
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62963781"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721203"
 ---
 # <a name="memory-management-time"></a>Tempo di gestione della memoria
 Questi segmenti nella sequenza temporale sono associati a tempi di blocco categorizzati come gestione della memoria. Questo scenario implica che un thread è bloccato da un evento associato a un'operazione di gestione della memoria quale il paging. Durante questo periodo, un thread è stato bloccato in un'API o in uno stato del kernel che il visualizzatore di concorrenza calcola come gestione della memoria. Si tratta di eventi come il paging e l'allocazione di memoria.

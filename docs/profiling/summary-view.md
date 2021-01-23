@@ -1,5 +1,6 @@
 ---
 title: Visualizzazione Riepilogo | Microsoft Docs
+description: Informazioni su come la visualizzazione di riepilogo Visualizza informazioni sulle funzioni o sugli oggetti più costosi delle prestazioni in un'esecuzione della profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a12989004b5bed8601bdda1ec0719eda789ff822
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 154f168044e5395a534b4a79ea44d9eafe6293f6
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546887"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719279"
 ---
 # <a name="summary-view"></a>Visualizzazione di riepilogo
 La visualizzazione Riepilogo mostra informazioni sulle funzioni o gli oggetti che influiscono maggiormente sulle prestazioni in un'esecuzione della profilatura. Questa visualizzazione include un grafico della sequenza temporale e due o più elenchi delle funzioni o degli oggetti che influiscono maggiormente sulle prestazioni, in base alle metriche delle prestazioni del metodo di profilatura. I dati in questa visualizzazione dipendono dal metodo di profilatura usato (campionamento, strumentazione o concorrenza) e dal fatto che siano state raccolte le allocazioni di memoria .NET.
@@ -40,7 +41,7 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni o gli oggetti ch
 |Opzione|Descrizione|
 |-|-|
 |**Mostra tutto il codice**<br /><br /> **Mostra Just My Code**|Non disponibile per il codice nativo o per i dati di profilatura raccolti tramite il metodo di strumentazione. Consente di passare dalla visualizzazione dei dati solo dal codice utente (**Mostra Just My Code**) alla visualizzazione dei dati da tutto il codice, incluso il codice di sistema (**Mostra tutto il codice**). Per impostazione predefinita, i dati sono limitati al codice utente. Per modificare l'impostazione, vedere [procedura: filtrare le visualizzazioni dei report degli strumenti per la profilatura per visualizzare Just My Code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|
-|**Visualizza materiale sussidiario**|Visualizza gli avvisi delle regola per le prestazioni nella finestra **Elenco errori**. Per altre informazioni, vedere [Usare le regole per le prestazioni per analizzare dati](../profiling/using-performance-rules-to-analyze-data.md)|
+|**Visualizza le linee guida**|Visualizza gli avvisi delle regola per le prestazioni nella finestra **Elenco errori**. Per altre informazioni, vedere [Usare le regole per le prestazioni per analizzare dati](../profiling/using-performance-rules-to-analyze-data.md)|
 
 ## <a name="report"></a>Report
  È possibile fare clic sui collegamenti nell'elenco Rapporto per aprire visualizzazioni diverse e confrontare, salvare o filtrare il report. L'elenco è a destra del grafico della sequenza temporale.

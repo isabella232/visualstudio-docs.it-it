@@ -1,5 +1,6 @@
 ---
 title: ProcessOn e ProcessOff | Microsoft Docs
+description: Informazioni sul modo in cui i sottocomandi VSPerfCmd.exe ProcessOff e Processor sospendono e riprendono la profilatura per il processo specificato in una sessione di profilatura dalla riga di comando.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae4b5e95636894ddc2d0c4799308afb057145747
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778388"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719448"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn e ProcessOff
 I sottocomandi **ProcessOff** e **ProcessOn** di VSPerfCmd.exe sospendono e riprendono la profilatura per il processo specificato in una sessione di profilatura da riga di comando. **ProcessOff** arresta la profilatura del processo e **ProcessOn** avvia la profilatura del processo.
@@ -42,7 +43,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  `PID` Identificatore integer del processo da avviare o arrestare. Gli ID di processo sono elencati nella scheda **processo** di gestione attività di Windows.
 
 ## <a name="required-subcommands"></a>Sottocomandi obbligatori
- Nessuno
+ nessuno
 
 ## <a name="valid-subcommands"></a>Sottocomandi validi
  **ProcessOn** e **ProcessOff** possono essere specificati su righe di comando che contengono anche i sottocomandi seguenti.

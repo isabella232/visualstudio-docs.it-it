@@ -1,5 +1,6 @@
 ---
 title: Periodo di elaborazione dell'interfaccia utente | Microsoft Docs
+description: Informazioni che i segmenti nella sequenza temporale sono associati ai tempi di blocco categorizzati come elaborazione dell'interfaccia utente.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 391b4582d03e32e738f0eade823326e72a662a43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63462aedfb1d7a2c03fe6ff5d59495358c52194e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63004459"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722386"
 ---
 # <a name="ui-processing-time"></a>Periodo di elaborazione dell'interfaccia utente
 Questi segmenti nella sequenza temporale sono associati ai periodi di blocco categorizzati come Elaborazione interfaccia utente. Ciò implica che un thread stia distribuendo messaggi di Windows o eseguendo altre operazioni dell'interfaccia utente. Durante questo periodo, un thread è stato bloccato in un'API che il visualizzatore di concorrenza conteggia come Elaborazione interfaccia utente. Le interfacce API come `GetMessage()` e `MsgWaitForMultipleObjects()` rientrano in questo gruppo.

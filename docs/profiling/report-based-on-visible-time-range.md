@@ -1,5 +1,6 @@
 ---
 title: Report basato sull'intervallo di tempo visibile | Microsoft Docs
+description: Informazioni sul modo in cui la visualizzazione profilo Visualizza i report basati sull'intervallo di tempo e sui canali attualmente visibili.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02dc0e009702b25c2204f0a1302931fe941b5f59
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63002341"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720371"
 ---
 # <a name="report-based-on-visible-time-range"></a>Report basato sull'intervallo di tempo visibile
 La visualizzazione Profilo mostra i report basati sull'intervallo di tempo e i canali attualmente visibili. Per visualizzare i dettagli per subset dei dati diversi, fare clic sugli elementi nella legenda.
@@ -29,7 +30,7 @@ La visualizzazione Profilo mostra i report basati sull'intervallo di tempo e i c
 - [Report del profilo di esecuzione](../profiling/execution-profile-report.md)
 - [Tempo di sincronizzazione](../profiling/synchronization-time.md)
 - [Tempo di I/O (visualizzazione thread)](../profiling/i-o-time-threads-view.md)
-- [Durata della sospensione](../profiling/sleep-time.md)
+- [Tempo di sospensione](../profiling/sleep-time.md)
 - [Tempo di gestione della memoria](../profiling/memory-management-time.md)
 - [Tempo di annullamento](../profiling/preemption-time.md)
 - [Tempo di elaborazione dell'interfaccia utente](../profiling/ui-processing-time.md)

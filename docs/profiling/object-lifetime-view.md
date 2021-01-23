@@ -1,5 +1,6 @@
 ---
 title: Visualizzazione Durata oggetti | Microsoft Docs
+description: Informazioni sul modo in cui la visualizzazione Durata oggetti è disponibile quando vengono raccolti anche i dati di durata degli oggetti .NET nelle pagine delle proprietà della sessione di prestazioni.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ea486930d0ea9f266b4ee57b69a50f7c570651
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9405b66c7412d65402a5572dcb5c71b232341b22
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772624"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722867"
 ---
 # <a name="object-lifetime-view"></a>Visualizzazione Durata oggetti
 La visualizzazione Durata oggetti è disponibile quando vengono **raccolti anche i dati di durata degli oggetti .NET** nelle pagine delle proprietà della **sessione di prestazioni** .
@@ -35,7 +36,7 @@ La visualizzazione Durata oggetti è disponibile quando vengono **raccolti anche
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Nome classe**|Nome della classe del tipo allocato.|
+|**Nome della classe**|Nome della classe del tipo allocato.|
 |**ID processo**|ID di processo dell'esecuzione della profilatura.|
 |**Nome processo**|Nome del processo.|
 |**Nome del modulo**|Nome del modulo che contiene la funzione.|

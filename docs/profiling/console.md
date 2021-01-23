@@ -1,5 +1,7 @@
 ---
 title: Console | Microsoft Docs
+description: Usare l'opzione console di VSPerfCmd.exe per avviare l'applicazione specificata in una nuova finestra del prompt dei comandi. È necessario usarlo con l'opzione Launch.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e825ba66-1383-46ad-8712-396bc9c14036
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b70c44f72d8f9d8fb25eb1c459946797cfb97913
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93c39bfb503bec9858e33b7acf04e0f0433264b9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331575"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720904"
 ---
 # <a name="console"></a>Console
 L'opzione **Console** di VSPerfCmd.exe consente di avviare l'applicazione specificata in una nuova finestra del prompt dei comandi. **Console** può essere usata solo con l'opzione **Launch** di VSPerfCmd. Se l'applicazione non è un'applicazione della riga di comando, **Console** non ha alcun effetto.
@@ -26,7 +28,7 @@ VSPerfCmd.exe /Launch:AppName /Console
 ```
 
 #### <a name="parameters"></a>Parametri
- Nessuno
+ nessuno
 
 ## <a name="required-options"></a>Opzioni obbligatorie
  L'opzione **Console** può essere specificata solo in una riga di comando che contiene anche l'opzione **Launch**.

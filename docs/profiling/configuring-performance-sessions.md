@@ -1,5 +1,7 @@
 ---
 title: Configurazione di sessioni di prestazioni | Microsoft Docs
+description: Informazioni su come configurare il Strumenti di profilatura di Visual Studio per raccogliere i dati sulle prestazioni desiderati. Questo articolo elenca le attività comuni e fornisce i collegamenti.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,15 +16,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bdf1c372ffcb3ad3a0ebf102827565853947e2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52e2575e034dbabe5e380857edd95e4bc46f56d2
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777868"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721021"
 ---
 # <a name="configure-performance-sessions"></a>Configurare le sessioni di prestazioni
-Usando gli strumenti per la profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], è possibile raccogliere un'ampia gamma di dati sulle prestazioni per un numero elevato di tipi di applicazioni. In questa sezione viene illustrato come usare le proprietà della Creazione guidata sessione di prestazioni della sessione di prestazioni e del file binario di destinazione per configurare gli strumenti di profilatura per raccogliere i dati di interesse. Le proprietà di configurazione degli strumenti per la profilatura possono essere usate anche per controllare quanti dati vengono raccolti in un'esecuzione di profilatura. Per altre informazioni, vedere [Controllare la raccolta dati](../profiling/controlling-data-collection.md).
+Usando gli strumenti per la profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], è possibile raccogliere un'ampia gamma di dati sulle prestazioni per un numero elevato di tipi di applicazioni. In questa sezione viene illustrato come utilizzare la creazione guidata sessione di prestazioni e le proprietà della sessione di prestazioni e del file binario di destinazione per configurare Strumenti di profilatura per raccogliere i dati desiderati. Le proprietà di configurazione degli strumenti per la profilatura possono essere usate anche per controllare quanti dati vengono raccolti in un'esecuzione di profilatura. Per altre informazioni, vedere [Controllare la raccolta dati](../profiling/controlling-data-collection.md).
 
 > [!NOTE]
 > In molti casi l'uso delle proprietà della Creazione guidata sessione di prestazioni è un metodo efficace per raccogliere dati di profilatura. Per ulteriori informazioni, vedere [Guida per principianti alla profilatura delle prestazioni](../profiling/beginners-guide-to-performance-profiling.md) [e introduzione](../profiling/getting-started-with-performance-tools.md).

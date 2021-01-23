@@ -1,5 +1,6 @@
 ---
 title: Marcatori messaggio | Microsoft Docs
+description: Informazioni su come esportare messaggi in un file di testo da usare con altri strumenti e posizionare il puntatore su un messaggio nel Visualizzatore di concorrenza per visualizzare la stringa del messaggio.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b668f0331345e6a1022ef79105614f4a22e91d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d8e4d493173cb50f62510a9b776701a0b199f47
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62830078"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720566"
 ---
 # <a name="message-markers"></a>Marcatori di messaggio
 Un marcatore del messaggio rappresenta l'output del log. Un messaggio è una stringa che viene emessa da un thread specifico in un momento specifico. È possibile esportare i messaggi in un file di testo per usarli con altri strumenti. È possibile posizionare il puntatore del mouse su un messaggio nel visualizzatore di concorrenza per visualizzare la stringa del messaggio. È possibile visualizzare tutti i marcatori dei messaggi nel [Rapporto marcatori](../profiling/markers-report.md).  La figura seguente mostra un marcatore del messaggio.

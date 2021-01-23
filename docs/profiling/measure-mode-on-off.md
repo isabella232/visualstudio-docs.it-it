@@ -1,5 +1,6 @@
 ---
 title: Modalità misurazione attiva/non attiva | Microsoft Docs
+description: Informazioni su come usare lo strumento modalità di misurazione on-off per misurare con precisione un periodo di tempo nella sequenza temporale.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbe8ea27f16dc8b120380989c15b1838ea9260d0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62830824"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718993"
 ---
 # <a name="measure-mode-onoff"></a>Modalità misurazione attiva/non attiva
 Tramite questo strumento è possibile misurare con precisione un periodo di tempo nella sequenza temporale. Per abilitare la modalità misurazione, fare clic sul pulsante di misurazione (con un'icona a forma di righello) e quindi trascinare nella sequenza temporale. Durante il trascinamento, si noti che l'area sotto il puntatore viene evidenziata in giallo e il tempo misurato viene visualizzato sulla barra degli strumenti a destra del pulsante. Questo valore viene calcolato in modo dinamico durante il trascinamento in modo da poter determinare immediatamente il tempo richiesto per un particolare evento. Quando si rilascia il pulsante del mouse, il valore rimane visibile.

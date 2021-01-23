@@ -1,5 +1,6 @@
 ---
 title: Rilocare file binari instrumentati | Microsoft Docs
+description: Informazioni sul modo in cui i probe vengono inseriti nel file binario per misurare le prestazioni dell'applicazione durante la strumentazione.
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 13fa5c3413e620e43a695e205a0523dce23e90b4
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ee94737f59f5c29aac47d686f68ade06131d0379
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851346"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720618"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>Procedura: Rilocare file binari instrumentati
 
@@ -28,9 +29,9 @@ Durante la strumentazione, i probe vengono inseriti nel file binario per misurar
 
 ## <a name="to-relocate-instrumented-binary"></a>Per rilocare il file binario instrumentato
 
-1. In **Esplora prestazioni**fare clic con il pulsante destro del mouse sulla sessione di prestazioni, quindi fare clic su **Proprietà**.
+1. In **Esplora prestazioni** fare clic con il pulsante destro del mouse sulla sessione di prestazioni, quindi fare clic su **Proprietà**.
 
-2. Nella **Pagine delle proprietà**fare clic sulle proprietà di **Binario** .
+2. Nella **Pagine delle proprietà** fare clic sulle proprietà di **Binario** .
 
 3. Selezionare la casella di controllo **Rilocare binari instrumentati** .
 

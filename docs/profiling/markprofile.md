@@ -1,5 +1,6 @@
 ---
 title: MarkProfile | Microsoft Docs
+description: Il metodo MarkProfile inserisce un contrassegno del profilo nel file con estensione vsp. La profilatura per il thread contenente la funzione MarkProfile deve essere impostata su ON affinché il contrassegno venga inserito.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f53b51f9e78e2cb5d327abd3a79ebf2faa3a9204
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecf676c58d8850834ec0c3333196dfb7144f885e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778570"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718863"
 ---
 # <a name="markprofile"></a>MarkProfile
 Il metodo `MarkProfile` inserisce un contrassegno del profilo nel file con estensione *vsp*. La profilatura per il thread che contiene la funzione `MarkProfile` deve essere impostata su ON affinché il contrassegno possa essere inserito.

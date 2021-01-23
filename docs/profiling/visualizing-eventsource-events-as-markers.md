@@ -1,5 +1,6 @@
 ---
 title: Visualizzazione di eventi EventSource come marcatori | Microsoft Docs
+description: Scopri che il Visualizzatore di concorrenza può visualizzare gli eventi EventSource come marcatori ed è possibile controllare la modalità di visualizzazione dei marcatori.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f8fadf9ef97717983c96226d81d43efada65e89
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64811543"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723140"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualizzare eventi EventSource come marcatori
 Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource come marcatori ed è possibile controllare la modalità di visualizzazione dei marcatori. Per visualizzare i marcatori EventSource, registrare il GUID del provider ETW mediante la finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). Il visualizzatore di concorrenza usa convenzioni predefinite per rappresentare gli eventi EventSource come [marcatori di flag](../profiling/flag-markers.md), [marcatori di span](../profiling/span-markers.md) e [marcatori di messaggi](../profiling/message-markers.md). È possibile personalizzare la modalità di visualizzazione degli eventi EventSource aggiungendo campi personalizzati agli eventi. Per altre informazioni sui marcatori, vedere [Marcatori del visualizzatore di concorrenza](../profiling/concurrency-visualizer-markers.md). Per altre informazioni sugli eventi EventSource, vedere <xref:System.Diagnostics.Tracing>.
@@ -37,7 +38,7 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
 |win:LogAlways|Normale|
 |win:Critical|Critico|
 |win:Error|Critico|
-|win:Warning|Alta|
+|win:Warning|Alto|
 |win:Informational|Normale|
 |win:Verbose|Basso|
 |Superiore a win:verbose|Basso|
@@ -62,7 +63,7 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
 |0|Message|
 |1|Inizio sezione span|
 |2|Fine sezione span|
-|3|Flag|
+|3|Contrassegno|
 |Tutti gli altri valori|Message|
 
 ### <a name="importance"></a>Importanza
@@ -72,8 +73,8 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
 |------------------------|---------------------------------------|
 |0|Normale|
 |1|Critico|
-|2|Alta|
-|3|Alta|
+|2|Alto|
+|3|Alto|
 |4|Normale|
 |5|Basso|
 |Tutti gli altri valori|Basso|

@@ -1,5 +1,6 @@
 ---
 title: Visualizzazione Contrassegni | Microsoft Docs
+description: Informazioni su come nella visualizzazione Contrassegni vengono visualizzati gli eventi ETW e di campionamento inseriti nell'applicazione.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d7483f309a3d7edb92d25c34e9665a6212c8038
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 969bf0debfc1da9f7ca1763d8c9c001d565ce64a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037517"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718980"
 ---
 # <a name="marks-view"></a>Visualizzazione Contrassegni
 Nella visualizzazione Contrassegni vengono mostrati gli eventi ETW e di campionamento inseriti nell'applicazione.
@@ -40,7 +41,7 @@ Nella visualizzazione Contrassegni vengono mostrati gli eventi ETW e di campiona
 
  Dati del contatore delle prestazioni di Windows Quando vengono raccolti dati del contatore delle prestazioni di Windows, i valori vengono visualizzati in una colonna che ha il nome del contatore.
 
-## <a name="see-also"></a>Vedi anche
+## <a name="see-also"></a>Vedere anche
 - [Panoramica del rapporto di prestazioni](../profiling/performance-report-overview.md)
 - [Procedura: Raccogliere i dati dei contatori Windows](../profiling/how-to-collect-windows-counter-data.md)
 - [&#91;&#93; finestra del controllo raccolta dati](/previous-versions/bb385767(v=vs.110))

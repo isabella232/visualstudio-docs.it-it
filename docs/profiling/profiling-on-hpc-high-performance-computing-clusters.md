@@ -1,5 +1,6 @@
 ---
 title: Profilatura su cluster HPC (High Performance Computing) | Microsoft Docs
+description: Informazioni su come è possibile profilare sui nodi di calcolo di cluster Microsoft Windows HPC tramite il metodo di campionamento di Visual Studio Strumenti di profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06a160adda25debe21d8262d9064c23849011dc9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772120"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720527"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Eseguire la profilatura su cluster HPC (High Performance Computing)
 

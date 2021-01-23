@@ -1,5 +1,6 @@
 ---
 title: 'Visualizzazione Processo: dati sui conflitti | Microsoft Docs'
+description: Informazioni su come la visualizzazione processi Visualizza i dati sui conflitti per i processi e i thread eseguiti durante l'esecuzione della profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 30c938088538bcecc71e3a7e37d5ae403dd476e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3eb95c5ba8bb9f519623d4b43bc80d37919305d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778401"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719472"
 ---
 # <a name="process-view---contention-data"></a>Visualizzazione Processo: dati sui conflitti
 Nella visualizzazione Processo sono riportati i dati sui conflitti per i processi e i thread eseguiti durante l'esecuzione della profilatura.
@@ -36,7 +37,7 @@ Nella visualizzazione Processo sono riportati i dati sui conflitti per i process
 |**ID**|Identificatore generato dal sistema per il processo o il thread.|
 |**Durata**|Numero di millisecondi o di cicli del processore dall'inizio del processo o del thread alla fine del processo o del thread o alla fine della profilatura.|
 |**Tipo**|Tipo di riga, ovvero processo o thread.<br /><br /> Solo nei rapporti della riga di comando di **VSReport**. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md).|
-|**Name**|Nome del processo o del thread.|
+|**Nome**|Nome del processo o del thread.|
 |**ID univoco**|Identificatore generato dal profiler univoco per il processo o il thread.|
 
 ## <a name="see-also"></a>Vedere anche

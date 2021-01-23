@@ -1,5 +1,6 @@
 ---
 title: Visualizzazione Processo | Microsoft Docs
+description: Informazioni su come la visualizzazione processi Visualizza i dati di profilatura per i processi e i thread eseguiti durante l'esecuzione della profilatura.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: da3097c276557238e6f5b521f6f7d3231434cd10
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd4dfd4657d6ca2f42c234f576e362ffacb9e693
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74772176"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719464"
 ---
 # <a name="process-view"></a>Visualizzazione Processo
 La visualizzazione Processo visualizza i dati di profilatura per i processi e i thread eseguiti durante l'esecuzione della profilatura.
@@ -37,7 +38,7 @@ La visualizzazione Processo visualizza i dati di profilatura per i processi e i 
 |------------|-----------------|
 |**ID univoco**|Identificatore generato dal profiler univoco per il processo o il thread.|
 |**ID**|Identificatore generato dal sistema per il processo o il thread.|
-|**Name**|Nome del processo o del thread.|
+|**Nome**|Nome del processo o del thread.|
 |**Ora di inizio**|Numero di millisecondi o di cicli del processore dall'inizio della profilatura all'avvio del processo o del thread.|
 |**Ora fine**|Numero di millisecondi o di cicli del processore dall'inizio della profilatura alla fine del processo o del thread.|
 
