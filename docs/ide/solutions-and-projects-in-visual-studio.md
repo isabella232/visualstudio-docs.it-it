@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b34d96f49370a71a63e986a79584caffbc00adf
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: a2a64b613ca19632a7827686ab0552e6e23620c1
+ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847047"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98773332"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 
@@ -102,12 +102,15 @@ La barra degli strumenti nella parte superiore di **Esplora soluzioni** dispone 
 
 Molti comandi di menu sono disponibili dal menu di scelta rapida per i vari elementi in **Esplora soluzioni**. Questi comandi includono la compilazione di un progetto, la gestione dei pacchetti NuGet, l'aggiunta di un riferimento, la ridenominazione di un file e l'esecuzione di test, solo per citarne alcuni.
 
-> [!TIP]
-> Se è stato chiuso Esplora soluzioni e si desidera aprirlo nuovamente, scegliere **finestra**  >  **Reimposta layout finestra** dalla barra dei menu.
-
 Per i progetti ASP.NET Core, è possibile personalizzare la modalità di annidamento dei file in **Esplora soluzioni**. Per altre informazioni, vedere [Personalizzare l'annidamento file in Esplora soluzioni](file-nesting-solution-explorer.md).
 
-## <a name="see-also"></a>Vedi anche
+> [!TIP]
+> Se si è chiuso Esplora soluzioni e si vuole aprirlo di nuovo, scegliere **Visualizza**  >  **Esplora soluzioni** dalla barra dei menu o premere **CTRL** + **ALT** + **L**. Se le schede laterali sono state chiuse e si desidera ripristinarle nei percorsi predefiniti, scegliere **finestra**  >  **Reimposta layout finestra** dalla barra dei menu.
+
+> [!NOTE]
+> Per visualizzare le immagini e le icone dell'applicazione visualizzate in Visual Studio, scaricare la [**libreria di immagini di Visual Studio**](https://www.microsoft.com/download/details.aspx?id=35825).
+
+## <a name="see-also"></a>Vedere anche
 
 - [Introduzione a progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
 - [Gestire le proprietà di progetti e soluzioni](managing-project-and-solution-properties.md)

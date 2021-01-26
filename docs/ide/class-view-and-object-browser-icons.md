@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c0cf21d6d9055f183d15728fb63118ffb87e9c
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 9e0348c1f6c51f0a82328814be671d8f44e3d4a7
+ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94904001"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98773342"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icone di Visualizzazione classi e Visualizzatore oggetti
 
@@ -32,7 +32,7 @@ In **Visualizzazione classi** e **Visualizzatore oggetti** vengono visualizzate 
 |Icona|Descrizione|Icona|Descrizione|
 |----------|-----------------|----------|-----------------|
 |![Simbolo dello spazio dei nomi](../ide/media/vxnamespace_icon.gif)|Spazio dei nomi|![Simbolo Dichiarazione](../ide/media/vxmethod_icon.gif)|Metodo o funzione|
-|![Icona Classe](../ide/media/vxclass_icon.gif)|Class|![Simbolo operatore](../ide/media/vxoperator_icon.gif)|Operatore|
+|![Icona Classe](../ide/media/vxclass_icon.gif)|Classe|![Simbolo operatore](../ide/media/vxoperator_icon.gif)|Operatore|
 |![Simbolo interfaccia cerchio-linea](../ide/media/vxinterface_icon.gif)|Interfaccia|![Simbolo della proprietà](../ide/media/vxproperty_icon.gif)|Proprietà|
 |![Simbolo struttura](../ide/media/vxstruct_icon.gif)|Struttura|![Icona Campo](../ide/media/vxfield_icon.gif)|Campo o variabile|
 |![Simbolo unione](../ide/media/vxunion_icon.gif)|Union|![Simbolo Evento](../ide/media/vxevent_icon.gif)|Event|
@@ -65,6 +65,9 @@ Le icone di segnalazione seguenti si applicano a tutte le icone precedenti e ne 
 
 > [!NOTE]
 > Se il progetto è incluso in un database di controllo del codice sorgente potrebbero essere visualizzate altre icone di segnalazione per indicare lo stato di controllo del codice sorgente, ad esempio se il codice è stato archiviato o estratto.
+
+> [!TIP]
+> Per visualizzare altre immagini dell'applicazione e icone visualizzate in Visual Studio, scaricare la libreria di [**Immagini di Visual Studio**](https://www.microsoft.com/download/details.aspx?id=35825).
 
 ## <a name="see-also"></a>Vedere anche
 
