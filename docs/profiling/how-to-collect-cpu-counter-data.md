@@ -1,5 +1,7 @@
 ---
 title: Raccogliere i dati dei contatori CPU | Microsoft Docs
+description: Informazioni su come usare i contatori di eventi CPU (hardware) per raccogliere dati sulle prestazioni specifici dell'hardware. Questo articolo elenca i vari tipi di eventi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96934250bc00b02630b60e83d50ed4b274db0323
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e59214640ab3048f94b2801ad6b6b2d7e12d2e25
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851281"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801555"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Procedura: Raccogliere i dati dei contatori CPU
 
@@ -30,9 +32,9 @@ Si verificano due tipi di eventi del contatore CPU:
 
 - Eventi piattaforma: eventi della CPU associati a un particolare tipo di CPU.
 
-  Gli eventi portabili includono eventi generali, ad esempio le istruzioni ritirate e i cicli non interrotti, eventi del buffer della CPU, eventi di diramazione ed eventi della cache L2. I contatori degli eventi piattaforma disponibili sono determinati dal produttore del processore.
+Gli eventi portabili includono eventi generali, ad esempio le istruzioni ritirate e i cicli non interrotti, eventi del buffer della CPU, eventi di diramazione ed eventi della cache L2. I contatori degli eventi piattaforma disponibili sono determinati dal produttore del processore.
 
-  Le categorie di eventi possono essere condivise tra contatori portabili e di piattaforma. Ad esempio, le categorie di dati seguenti sono spesso comuni a entrambi i tipi:
+Le categorie di eventi possono essere condivise tra contatori portabili e di piattaforma. Ad esempio, le categorie di dati seguenti sono spesso comuni a entrambi i tipi:
 
 - Eventi memoria.
 
@@ -40,7 +42,7 @@ Si verificano due tipi di eventi del contatore CPU:
 
 - Eventi di diramazione.
 
-  Nel profiler è possibile raccogliere i dati del contatore di prestazioni in due modi:
+Nel profiler è possibile raccogliere i dati del contatore di prestazioni in due modi:
 
 - Raccogliere i dati da uno o più contatori quando si esegue la profilatura tramite strumentazione.
 
@@ -59,7 +61,7 @@ Si verificano due tipi di eventi del contatore CPU:
     > [!NOTE]
     > L'opzione **Contatori di prestazioni disponibili** è abilitata solo se si seleziona la casella di controllo **Raccogli contatori CPU**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
  di prestazioni Proprietà della sessione di [prestazioni](../profiling/performance-session-properties.md) 

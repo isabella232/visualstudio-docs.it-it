@@ -1,5 +1,7 @@
 ---
 title: Scegliere un metodo di raccolta | Microsoft Docs
+description: Visual Studio Strumenti di profilatura supporta tre metodi di raccolta dei dati sulle prestazioni. Scopri come scegliere quello che ti serve per l'applicazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b66df2f302790f579891c337b217e76202e79ac
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3fe102c7ebd8ed551a0da4e92c66dfac8acb78ec
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851307"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801582"
 ---
 # <a name="how-to-choose-collection-methods"></a>Procedura: Scegliere i metodi di raccolta
 
@@ -84,13 +86,13 @@ Gli strumenti di profilatura di Visual Studio supportano tre metodi di raccolta 
 
 ### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>Per selezionare la raccolta dei dati di concorrenza usando le proprietà della sessione di prestazioni
 
-1. In **Esplora prestazioni**fare clic con il pulsante destro del mouse sulla sessione di prestazioni, quindi fare clic su **Proprietà**.
+1. In **Esplora prestazioni** fare clic con il pulsante destro del mouse sulla sessione di prestazioni, quindi fare clic su **Proprietà**.
 
 2. In **Pagine delle proprietà** fare clic su **Generale**.
 
 3. Fare clic su **Concorrenza**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
  di prestazioni [Informazioni sui valori](../profiling/understanding-sampling-data-values.md) 

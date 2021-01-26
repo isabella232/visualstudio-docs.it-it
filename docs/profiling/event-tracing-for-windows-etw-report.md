@@ -1,5 +1,7 @@
 ---
 title: Report Traccia eventi per Windows (ETW) | Microsoft Docs
+description: Informazioni sul report Event Tracing for Windows (ETW), che elenca gli eventi ETW registrati in una sessione di prestazioni di Visual Studio Strumenti di profilatura.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 19412d184377637c29f34b2fe3ffd033f176b97c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7167f2fb5c78a6fa8c3d83fb56c2c2eba217516
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779298"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801419"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Report Traccia eventi per Windows (ETW)
-Il report Traccia eventi per Windows (ETW) indica gli eventi ETW registrati in una sessione di prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. I dati ETW vengono raccolti in un file binario (.* ETL*).
+Il report Traccia eventi per Windows (ETW) indica gli eventi ETW registrati in una sessione di prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. I dati ETW vengono raccolti in un file binario (.*ETL*).
 
 > [!NOTE]
 > Non è possibile visualizzare i report ETW nell'interfaccia di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

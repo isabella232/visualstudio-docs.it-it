@@ -1,5 +1,7 @@
 ---
 title: 'Visualizzazione Funzioni: dati di strumentazione | Microsoft Docs'
+description: Leggere le descrizioni delle colonne di dati di profilatura nella visualizzazione report funzioni, che elenca i dati di profilatura in base al nome della funzione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 423b6d61af93c37e6fa83549ed3fa5d422128165
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b12fc05f9eeb9b77e982c62ae52bfbbe784f5e6
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779220"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801368"
 ---
 # <a name="functions-view---instrumentation-data"></a>Visualizzazione Funzioni: dati di strumentazione
 La visualizzazione del rapporto Funzioni elenca i dati di profilatura in base al nome della funzione.
@@ -82,7 +84,7 @@ La visualizzazione del rapporto Funzioni elenca i dati di profilatura in base al
 |**Tempo esclusivo applicazione massimo**|Tempo esclusivo applicazione massimo di una chiamata a questa funzione.|
 |**Tempo esclusivo applicazione minimo**|Tempo esclusivo applicazione minimo di una chiamata a questa funzione.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Funzioni](../profiling/functions-view-sampling-data.md)
 - [Visualizzazione Funzioni: campionamento](../profiling/functions-view-dotnet-memory-sampling-data.md)

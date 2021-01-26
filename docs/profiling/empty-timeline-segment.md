@@ -1,5 +1,7 @@
 ---
 title: Segmento della cronologia vuoto | Microsoft Docs
+description: Nel Visualizzatore di concorrenza di Visual Studio comprendere il motivo per cui una sezione di una sequenza temporale può essere vuota (ha uno sfondo bianco) per un tipo di canale.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a96cdc7ae4edc7ea7193d5b95dfc73fa1747c1fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 15dc4526ce101e21c00fe083b85f81db92bcd609
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62970109"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801429"
 ---
 # <a name="empty-timeline-segment"></a>Segmento della sequenza temporale vuoto
 Nel visualizzatore di concorrenza, il motivo per cui una sezione della sequenza temporale è vuota (presenta uno sfondo bianco) dipende dal tipo di canale.
@@ -30,6 +32,6 @@ Nel visualizzatore di concorrenza, il motivo per cui una sezione della sequenza 
 
 - Per un canale di marcatore, significa che non sono stati generati marcatori.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)
 - [Controllo zoom (visualizzazione thread)](../profiling/zoom-control-threads-view.md)

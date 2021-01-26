@@ -1,5 +1,6 @@
 ---
 title: Connetti profiler a .NET per raccogliere dati di memoria
+description: Informazioni su come usare Visual Studio Strumenti di profilatura gli strumenti da riga di comando per allineare il profiler a un'app in esecuzione .NET Framework autonoma (client) e ottenere i dati di memoria.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 88b3eedf8989b4c7421ecb7504b18997058a0204
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a80e4201f04565aaa163d58bca8e13ae715b09f
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811110"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801101"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione .NET Framework autonoma per raccogliere dati di memoria tramite la riga di comando
 
@@ -103,13 +104,13 @@ Per terminare una sessione di profilatura, il profiler deve essere disconnesso d
 
 2. Arrestare il profiler. Digitare:
 
-     **VSPerfCmd**[/Shutdown](../profiling/shutdown.md) VSPerfCmd  
+     [/Shutdown](../profiling/shutdown.md) VSPerfCmd  
 
 3. (Facoltativo) Cancellare le variabili di ambiente di profilatura. Digitare:
 
      **VSPerfCmd /off**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Profilare applicazioni](../profiling/command-line-profiling-of-stand-alone-applications.md) 
  autonome [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)

@@ -1,5 +1,6 @@
 ---
 title: Connetti profiler all'app autonoma .NET; ottenere le statistiche dell'app
+description: Informazioni su come usare Visual Studio Strumenti di profilatura gli strumenti da riga di comando per allineare il profiler a un'applicazione (client) autonoma .NET Framework in esecuzione e ottenere le statistiche.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 89c7f4141459f612f55a2253e37a6e56349fcb6a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 899a74894e34b43f87a7f45b4c4c90fff60088a1
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808051"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801139"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione .NET Framework autonoma e raccogliere statistiche dell'applicazione tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un'applicazione (client) autonoma .NET Framework in esecuzione e raccogliere statistiche sulle prestazioni tramite il metodo di campionamento.
@@ -108,12 +109,12 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 2. Arrestare il profiler. Digitare:
 
-     **VSPerfCmd**[/Shutdown](../profiling/shutdown.md) VSPerfCmd  
+     [/Shutdown](../profiling/shutdown.md) VSPerfCmd  
 
 3. (Facoltativo) Cancellare le variabili di ambiente di profilatura. Digitare:
 
      **VSPerfClrEnv /off**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Visualizzazioni dei dati del metodo di campionamento](../profiling/profiler-sampling-method-data-views.md)

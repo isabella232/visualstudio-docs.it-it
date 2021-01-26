@@ -1,5 +1,6 @@
 ---
 title: Connetti profiler a ASP.NET per raccogliere dati di concorrenza
+description: Usare Visual Studio Strumenti di profilatura gli strumenti da riga di comando per aggiungere il profiler a un'applicazione ASP.NET e raccogliere dati di concorrenza di thread e processi.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 939cf4eb16ff685b8ba8dc19064f497f3f7c6464
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4a4f83cbff6e12798649ce34c109786e71a56c28
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807989"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801618"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione Web ASP.NET per raccogliere dati di concorrenza tramite la riga di comando
 
@@ -53,7 +54,7 @@ Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il 
 
    - `PID` specifica l'ID o il nome del processo di lavoro ASP.NET. È possibile visualizzare gli ID di processo di tutti i processi in esecuzione in Gestione attività di Windows.
 
-   - [/TargetCLR](../profiling/targetclr.md) **:** `Version` specifica la versione del Common Language Runtime (CLR) da profilare quando più di una versione del runtime viene caricata in un'applicazione. Questo parametro è facoltativo e,
+   - [/TargetCLR](../profiling/targetclr.md) **:** `Version` specifica la versione del Common Language Runtime (CLR) da profilare quando più di una versione del runtime viene caricata in un'applicazione. Questo parametro è facoltativo.
 
 ## <a name="control-data-collection"></a>Controllare la raccolta dati
  Mentre l'applicazione è in esecuzione, è possibile controllare la raccolta dei dati avviando e interrompendo la scrittura dei dati nel file usando le opzioni *VSPerfCmd.exe* . Per controllare la raccolta dei dati, è possibile raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o arresto dell'applicazione.
@@ -79,8 +80,8 @@ Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il 
 
 2. Arrestare il profiler digitando il comando seguente al prompt dei comandi:
 
-     **VSPerfCmd**[/Shutdown](../profiling/shutdown.md) VSPerfCmd  
+     [/Shutdown](../profiling/shutdown.md) VSPerfCmd  
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profilatura rapida di siti Web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)

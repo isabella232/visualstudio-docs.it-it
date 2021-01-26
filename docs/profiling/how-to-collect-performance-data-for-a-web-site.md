@@ -1,5 +1,7 @@
 ---
-title: Raccogliere dati sulle prestazioni per un sito Web | Microsoft Docs
+title: Raccolta dei dati sulle prestazioni per un sito Web | Microsoft
+description: Informazioni su come usare la creazione guidata sessione di prestazioni per raccogliere dati sulle prestazioni per un'app Web ASP.NET. L'app viene eseguita nel computer locale e può essere aperta in Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea4e3309fc003a4fc4fc73377e8b2bbe12cd567
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 92e70ff7c6d10ad060086230955c27b781dd73be
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851476"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801059"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedura: Raccogliere dati sulle prestazioni per un sito Web
 
@@ -100,7 +102,7 @@ Per raccogliere dati sulle prestazioni di un'applicazione Web di [!INCLUDE[vstec
 
      Il profiler genera il file di dati e apre la visualizzazione Riepilogo dei dati nella finestra principale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Panoramica](../profiling/overviews-performance-tools.md) 
  [Configurare le sessioni](../profiling/configuring-performance-sessions.md) 

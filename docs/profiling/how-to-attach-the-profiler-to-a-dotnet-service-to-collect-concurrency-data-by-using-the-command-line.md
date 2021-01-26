@@ -1,6 +1,7 @@
 ---
 title: Connetti profiler a .NET per raccogliere dati di concorrenza-riga di comando
 titleSuffix: ''
+description: Usare Visual Studio Strumenti di profilatura per aggiungere il profiler a un servizio .NET Framework e ottenere i dati di concorrenza di processi e thread usando il metodo di campionamento.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7b9b2e9a90df1b9dcfaaa2fd7b77410e24e32a9a
-ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
+ms.openlocfilehash: c3b7a8e255094cb03cac8708dbaa4cb4a938db24
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91421807"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800384"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un servizio .NET per raccogliere dati di concorrenza tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un servizio .NET Framework e raccogliere dati di concorrenza di thread e processi tramite il metodo di campionamento.
@@ -106,4 +107,4 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 2. Arrestare il profiler. Digitare:
 
-     **VSPerfCmd**[Arresto](../profiling/shutdown.md) di VSPerfCmd  
+     [Arresto](../profiling/shutdown.md) di VSPerfCmd  

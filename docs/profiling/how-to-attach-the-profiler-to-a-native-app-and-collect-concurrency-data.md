@@ -1,5 +1,6 @@
 ---
 title: Connetti profiler a app native & raccogliere dati di concorrenza
+description: Usare Visual Studio Strumenti di profilatura gli strumenti da riga di comando per il profiler a un'applicazione autonoma nativa (C/C++) in esecuzione e ottenere i dati sui conflitti di thread.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a853a8ff3d8ecdc89316edafc927ec93096f720f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fd06783f50708e13c97f7bfe00a22be26739fd9c
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811058"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801644"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione autonoma nativa e raccogliere dati di concorrenza tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un'applicazione autonoma nativa (C/C++) in esecuzione e raccogliere dati sui conflitti di thread.
@@ -73,4 +74,4 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 2. Arrestare il profiler digitando il comando seguente:
 
-     **VSPerfCmd**[/Shutdown](../profiling/shutdown.md) VSPerfCmd  
+     [/Shutdown](../profiling/shutdown.md) VSPerfCmd  

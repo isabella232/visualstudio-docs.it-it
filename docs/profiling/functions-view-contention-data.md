@@ -1,5 +1,7 @@
 ---
 title: 'Visualizzazione Funzioni: dati sui conflitti | Microsoft Docs'
+description: Ottenere informazioni dettagliate sulla visualizzazione report delle funzioni dei dati sui conflitti, che elenca le funzioni nell'esecuzione della profilatura che sono state bloccate durante l'esecuzione della profilatura.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5874ffc7b4d304d1eaacd78032d657fe6ff31d94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07f23e38a0d2bc7b538bbe42818ce8a8a2f3d2c1
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74780052"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801670"
 ---
 # <a name="functions-view---contention-data"></a>Visualizzazione Funzioni: dati sui conflitti
 La visualizzazione report Funzioni dei dati sui conflitti elenca le funzioni nell'esecuzione della profilatura la cui esecuzione è stata bloccata durante l'esecuzione della profilatura stessa.
@@ -42,7 +44,7 @@ La visualizzazione report Funzioni dei dati sui conflitti elenca le funzioni nel
 |**Nome processo**|Nome del processo.|
 |**File di origine**|File di origine che contiene la definizione per questa funzione.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Funzioni](../profiling/functions-view.md)
 - [Visualizzazione Funzioni: strumentazione](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

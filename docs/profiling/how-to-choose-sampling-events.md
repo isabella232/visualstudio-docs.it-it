@@ -1,5 +1,7 @@
 ---
 title: Scegliere eventi di campionamento | Microsoft Docs
+description: Informazioni su come impostare l'evento di esempio in base alle esigenze e impostare il numero di cicli tra gli esempi. Gli eventi disponibili includono cicli di clock ed errori di pagina.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f28859b1c17c735be405c6c56ebabcbe43903170
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ed97fd205ffc0c969d0cad39d962cd8cdeb4e2eb
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851294"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801575"
 ---
 # <a name="how-to-choose-sampling-events"></a>Procedura: Scegliere eventi di campionamento
 Per impostazione predefinita, gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] raccolgono dati relativi alle prestazioni a un intervallo specificato come numero di cicli del processore usati dal processo profilato. Il numero predefinito di cicli in un intervallo è 10.000.000, pari a circa 0,01 secondi in un computer da 1 GHz. È possibile modificare il numero di cicli in un intervallo, nonché l'evento di campionamento. Sono disponibili gli eventi di campionamento seguenti:
@@ -42,7 +44,7 @@ Per impostazione predefinita, gli strumenti di profilatura di [!INCLUDE[vsprvs](
 
 ### <a name="to-select-a-sample-event"></a>Per selezionare un evento di campionamento
 
-1. In **Esplora prestazioni**fare clic con il pulsante destro del mouse sulla sessione di prestazioni, quindi fare clic su **Proprietà**.
+1. In **Esplora prestazioni** fare clic con il pulsante destro del mouse sulla sessione di prestazioni, quindi fare clic su **Proprietà**.
 
 2. In **Pagine delle proprietà** fare clic sulle proprietà di **Campionamento**.
 
@@ -59,7 +61,7 @@ Per impostazione predefinita, gli strumenti di profilatura di [!INCLUDE[vsprvs](
 
 5. Quando si seleziona un evento di campionamento, nella casella di testo **Intervallo di campionamento** viene visualizzato un valore predefinito per l'intervallo di campionamento. Se necessario, è possibile immettere il valore desiderato nella casella di testo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
 - [Procedura: scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)
 - [Contatori CPU e Windows](../profiling/cpu-and-windows-counters.md)

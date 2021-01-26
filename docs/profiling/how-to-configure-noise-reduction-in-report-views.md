@@ -1,5 +1,7 @@
 ---
 title: Configurare la riduzione del rumore nelle visualizzazioni report | Microsoft Docs
+description: Usare le funzionalità di taglio e riduzione, entrambe abilitate per impostazione predefinita, per ridurre il rumore e rendere più evidenti i problemi di prestazioni nei report.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 71065ac66fff972e5b6e9cf2c397a75b97e4d02f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 324c00c869e335fe6fc9504b461e6fc7f85bab98
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851229"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800425"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Procedura: Configurare la riduzione del rumore nelle visualizzazioni dei report
 I rapporti di prestazioni possono essere configurati per la riduzione del rumore limitando la quantità di dati presentati nelle visualizzazioni Albero delle chiamate e Allocazioni. Con la riduzione del rumore, i problemi di prestazioni sono più evidenti. In questo modo è più semplice analizzare i rapporti di prestazioni.
@@ -77,7 +79,7 @@ I rapporti di prestazioni possono essere configurati per la riduzione del rumore
 
 4. Fare clic su **OK**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Personalizzare le visualizzazioni report degli strumenti per le prestazioni](../profiling/customizing-performance-tools-report-views.md)
 - [Procedura: Escludere o includere funzioni brevi nella strumentazione](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
 - [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md)

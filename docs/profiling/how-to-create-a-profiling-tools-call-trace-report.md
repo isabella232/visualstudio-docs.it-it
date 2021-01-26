@@ -1,5 +1,7 @@
 ---
 title: Creare un report calltrace degli strumenti di profilatura | Microsoft Docs
+description: Creare uno strumento per le prestazioni chiamare il report di traccia per visualizzare le informazioni di temporizzazione per le funzioni e per le funzioni chiamate dalle funzioni.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d7d315d1931dfa64ce0070790c833651fa4fc11
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: b9c979668cdf24fae7acddd259a82e5c62353084
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851203"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800423"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Procedura: Creare un report calltrace degli strumenti di profilatura
 Il *report calltrace* per gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] elenca le informazioni di intervallo per ogni punto di ingresso e di uscita delle funzioni dell'applicazione e ogni chiamata ad altre funzioni da parte di una determinata funzione. I report calltrace sono disponibili per i dati di profilatura solo se sono stati raccolti con il metodo di strumentazione.
@@ -36,9 +38,9 @@ Il *report calltrace* per gli strumenti di profilatura di [!INCLUDE[vsprvs](../c
     |Elemento|Descrizione|
     |-|-|
     |*ToolsPath*|Percorso degli strumenti da riga di comando disponibili negli strumenti di profilatura. Per altre informazioni, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
-    |*VSPFile*|I dati di profilatura (.* VSP* o. *vsps*) file. Sono accettati percorsi completi e parziali.|
+    |*VSPFile*|I dati di profilatura (.*VSP* o. *vsps*) file. Sono accettati percorsi completi e parziali.|
     |Xml|Genera un report in formato XML.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: raccogliere dati di Event Tracing for Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 - [API degli strumenti di profilatura](../profiling/profiling-tools-apis.md)

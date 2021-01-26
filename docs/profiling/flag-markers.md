@@ -1,5 +1,7 @@
 ---
 title: Marcatori flag | Microsoft Docs
+description: Per informazioni sui marcatori dei flag, vedere il Visualizzatore di concorrenza di Visual Studio. Un marcatore flag rappresenta un evento che si è verificato in un determinato istante di tempo all'interno di un'app.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc0c7aa3386e906ad13331a596953db70240701
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc7b128915b7fc961b44aa7d70a24a813d432ddf
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62969955"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801467"
 ---
 # <a name="flag-markers"></a>Marcatori flag
 Un marcatore flag rappresenta un evento che si è verificato in un determinato istante di tempo all'interno di un'app. Un flag può rappresentare molti tipi di eventi dell'applicazione. Ad esempio, un flag può indicare quando è stato pianificato un particolare elemento di lavoro o quando è stata generata un'eccezione. Anche i runtime come Task Parallel Library possono generare flag.
@@ -42,6 +44,6 @@ Un marcatore flag rappresenta un evento che si è verificato in un determinato i
 
  ![Flag aggregati con quattro livelli di importanza](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate") Flag di aggregazione in base al livello di importanza
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Marcatori del Visualizzatore di concorrenza](../profiling/concurrency-visualizer-markers.md)
 - [SDK del visualizzatore di concorrenza](../profiling/concurrency-visualizer-sdk.md)

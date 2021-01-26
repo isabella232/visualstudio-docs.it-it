@@ -1,5 +1,6 @@
 ---
 title: Collegare il profiler a un servizio nativo per ottenere dati sulla concorrenza
+description: Utilizzare Visual Studio Strumenti di profilatura dalla riga di comando per raccogliere dati di concorrenza di thread e processi da un servizio nativo (C/C++).
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55398d2ab914ea03b431557775e1bd1064969590
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 233d6d77fad3997fead9126065b2f867ac8ffd2e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808002"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801075"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line-vsperfcmd"></a>Procedura: connessione del profiler a un servizio nativo per raccogliere dati di concorrenza tramite la riga di comando (VSPerfCmd)
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un servizio nativo (C/C++) e raccogliere dati di concorrenza di thread e processi tramite il metodo di campionamento.
@@ -84,4 +85,4 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 2. Arrestare il profiler digitando il comando seguente al prompt dei comandi:
 
-     **VSPerfCmd**[/Shutdown](../profiling/shutdown.md) VSPerfCmd  
+     [/Shutdown](../profiling/shutdown.md) VSPerfCmd  

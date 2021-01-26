@@ -1,6 +1,7 @@
 ---
 title: Connettere gli strumenti per le prestazioni ai processi in esecuzione
-ms.custom: seodec18
+description: Informazioni su come usare il profiler di Visual Studio per connettersi o disconnettersi da un processo in esecuzione per semplificare il campionamento e la raccolta dei dati sulle prestazioni.
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 58bbf5fa291d71b26cd303a7d43719fde8605c0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9cccad7f47a26396612264280926b7b26e431879
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331147"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801160"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Procedura: Connettere e disconnettere gli strumenti per le prestazioni ai processi in esecuzione
 Il profiler può essere usato per la connessione o la disconnessione da un processo in esecuzione per facilitare la raccolta e il campionamento dei dati relativi alle prestazioni. È possibile usare questo metodo per la profilatura di un processo quando si vuole evitare di raccogliere dati sul tempo di caricamento dell'applicazione o per monitorare le prestazioni di un processo dopo il raggiungimento di uno stato specifico.
@@ -61,7 +62,7 @@ Il profiler può essere usato per la connessione o la disconnessione da un proce
 
 3. Fare clic su **Scollega**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Controllare la raccolta dati](../profiling/controlling-data-collection.md)
 - [Panoramica delle sessioni di prestazioni](../profiling/performance-session-overview.md)
 - [Procedura: Iniziare e terminare la raccolta dati sulle prestazioni](../profiling/how-to-start-and-end-performance-data-collection.md)

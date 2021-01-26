@@ -1,5 +1,7 @@
 ---
 title: Visualizzazioni dei dati di memoria .NET | Microsoft Docs
+description: Vedere i collegamenti alle informazioni di riferimento per le visualizzazioni e i report dei file di dati del profiler che contengono dati di profilatura della memoria .NET.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a4a6143127a2e55bf5c13cf6606bfe00de5cd9e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779272"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801269"
 ---
 # <a name="net-memory-data-views"></a>Visualizzazioni dei dati di memoria .NET
 Questa sezione contiene informazioni di riferimento relative alle visualizzazioni e ai rapporti sui file di dati del profiler che contengono dati di profilatura della memoria .NET.
@@ -75,7 +77,7 @@ Questa sezione contiene informazioni di riferimento relative alle visualizzazion
 
  Elenca i dati sull'allocazione di memoria per le funzioni instrumentate nella profilatura.
 
-## <a name="reference"></a>Informazioni di riferimento
+## <a name="reference"></a>Riferimento
 - [Visualizzazione Dettagli funzione](../profiling/function-details-view.md)
 
  Visualizza un grafico della relazione tra una funzione selezionata e le funzioni che hanno chiamato e che sono state chiamate dalla funzione selezionata.

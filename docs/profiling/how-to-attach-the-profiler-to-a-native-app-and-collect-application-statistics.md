@@ -1,5 +1,6 @@
 ---
 title: Connetti profiler a app native & raccogliere le statistiche dell'app
+description: Usare Visual Studio Strumenti di profilatura per aggiungere il profiler a un'applicazione nativa autonoma in esecuzione e ottenere statistiche sulle prestazioni usando il metodo di campionamento.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b696a9bddeee4dc7b309945aab66c1d9c801307
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 37914559f71748865e25b5512264f6597ae4ef42
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811084"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801654"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Procedura: Allegare il profiler a un'applicazione nativa autonoma e raccogliere statistiche dell'applicazione tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un'applicazione (client) autonoma nativa in esecuzione e raccogliere statistiche sulle prestazioni tramite il metodo di campionamento.
@@ -95,12 +96,12 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 2. Arrestare il profiler. Digitare:
 
-     **VSPerfCmd**[/Shutdown](../profiling/shutdown.md) VSPerfCmd  
+     [/Shutdown](../profiling/shutdown.md) VSPerfCmd  
 
 3. (Facoltativo) Cancellare le variabili di ambiente di profilatura. Digitare:
 
      **VSPerfClrEnv /off**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Visualizzazioni dei dati del metodo di campionamento](../profiling/profiler-sampling-method-data-views.md)

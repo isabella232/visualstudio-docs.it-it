@@ -1,5 +1,7 @@
 ---
 title: Visualizzazione Allocazioni per la memoria .NET | Microsoft Docs
+description: Informazioni sulla visualizzazione allocazioni di memoria .NET, in cui sono elencati i tipi creati durante l'esecuzione della profilatura.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ce16f65947fd69b5a54e564ba6bec061bc68e328
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f52a30eef50c783ea96d403c25837f9bf2515a52
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74777377"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801290"
 ---
 # <a name="net-memory-allocations-view"></a>Visualizzazione Allocazioni per la memoria .NET
 Nella visualizzazione Allocazioni sono elencati i tipi creati durante l'esecuzione della profilatura. Ogni tipo è il nodo radice di un albero delle chiamate in cui vengono visualizzati i percorsi di esecuzione delle funzioni che hanno generato le allocazioni del tipo.
@@ -41,7 +43,7 @@ Nella visualizzazione Allocazioni sono elencati i tipi creati durante l'esecuzio
 
 |Colonna|Descrizione|
 |------------|-----------------|
-|**Name**|Nome della funzione o del tipo allocato.|
+|**Nome**|Nome della funzione o del tipo allocato.|
 |**ID processo**|ID di processo (PID) dell'esecuzione della profilatura.|
 |**Nome processo**|Nome del processo.|
 |**Nome del modulo**|Nome del modulo che contiene il tipo o la funzione.|

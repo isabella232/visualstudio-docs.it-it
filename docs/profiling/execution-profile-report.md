@@ -1,5 +1,7 @@
 ---
 title: Rapporto profilo di esecuzione| Microsoft Docs
+description: Informazioni sul rapporto del profilo di esecuzione, ovvero un profilo di campionamento tradizionale nell'estensione del Visualizzatore di concorrenza per Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25886ad4f7c31ea02c8dab2d45d8709a362a5a69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98361f9abad40e447d7198265d21ef193bb9ddf5
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62969992"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801373"
 ---
 # <a name="execution-profile-report"></a>Report del profilo di esecuzione
 Il rapporto del profilo di esecuzione è un profilo di campionamento tradizionale. I campioni vengono presi ogni millisecondo circa durante i periodi in cui un thread è in esecuzione su un core logico e il visualizzatore di concorrenza compila un albero delle chiamate tipico collazionando il set di stack di campioni accumulato. I dati della tabella possono essere influenzati dall'intervallo di tempo corrente e dai thread nascosti e dai filtri seguenti che possono essere applicati:
@@ -39,5 +41,5 @@ Il rapporto del profilo di esecuzione è un profilo di campionamento tradizional
 
  Questa tabella report può essere visualizzata nella visualizzazione [tempo di esecuzione (visualizzazione thread)](../profiling/execution-time-threads-view.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

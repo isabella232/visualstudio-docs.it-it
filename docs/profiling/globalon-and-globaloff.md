@@ -1,5 +1,7 @@
 ---
 title: GlobalOn e GlobalOff | Microsoft Docs
+description: Esaminare le opzioni GlobalOn e GlobalOff in VSPerfCmd.exe. Queste opzioni sospendono e riprendono la profilatura per i processi e i thread in una sessione di profilatura dalla riga di comando.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
@@ -9,19 +11,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 518f41557809cdeaaae9f9e1ac79e3797a854395
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaeac096c6bdff77368508bd34276d66530fa739
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74776966"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801337"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn e GlobalOff
-Le opzioni *GlobalOff e * **GlobalOn** di **VSPerfCmd.exe** consentono di sospendere e riprendere la profilatura per tutti i processi e i thread in una sessione di profilatura da riga di comando.
+Le opzioni *GlobalOff e* **GlobalOn** di **VSPerfCmd.exe** consentono di sospendere e riprendere la profilatura per tutti i processi e i thread in una sessione di profilatura da riga di comando.
 
- È possibile specificare **GlobalOn** e **GlobalOff** come uniche opzioni in una *VSPerfCmd.exe* riga di comando oppure è possibile includerle nelle righe di comando che contengono anche le opzioni di **avvio**, **avvio**o **connessione** .
+ È possibile specificare **GlobalOn** e **GlobalOff** come uniche opzioni in una *VSPerfCmd.exe* riga di comando oppure è possibile includerle nelle righe di comando che contengono anche le opzioni di **avvio**, **avvio** o **connessione** .
 
- **GlobalOn** e **GlobalOff** possono anche essere combinate con le opzioni **ProcessOn**, **ProcessOff**, **ThreadOn** e ** ThreadOff**.
+ **GlobalOn** e **GlobalOff** possono anche essere combinate con le opzioni **ProcessOn**, **ProcessOff**, **ThreadOn** e **ThreadOff**.
 
  Le opzioni **GlobalOn** e **GlobalOff** interagiscono con le opzioni **ProcessOn** e **ProcessOff** che controllano la raccolta dei dati per un processo specificato e con le opzioni **ThreadOn** e **ThreadOff** che controllano la raccolta dei dati per un thread specificato.
 
@@ -44,7 +46,7 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ```
 
 #### <a name="parameters"></a>Parametri
- Nessuno
+ nessuno
 
 ## <a name="valid-options"></a>Opzioni valide
  **GlobalOn** e **GlobalOff** possono essere specificate su righe di comando che contengono anche le opzioni seguenti.
@@ -77,7 +79,7 @@ VSPerfCmd /Shutdown
 
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
