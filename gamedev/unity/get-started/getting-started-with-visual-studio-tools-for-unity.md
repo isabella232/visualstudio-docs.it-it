@@ -2,7 +2,7 @@
 title: Introduzione a Visual Studio Tools per Unity | Microsoft Docs
 description: Informazioni su come installare e configurare Visual Studio per lo sviluppo di Unity.
 ms.custom: ''
-ms.date: 07/13/2020
+ms.date: 01/27/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: how-to
@@ -13,17 +13,17 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: 1f8cbe1629aab6a177a46888fe25cf8e3565d91d
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: e05a94ecf9cf690f46299684c82f2b3961a783c8
+ms.sourcegitcommit: 585547ea7363ab1b6bb9d41f6d008cbe478d1a3b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903753"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98912568"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Introduzione a Visual Studio e Unity
 
 > [!NOTE]
-> Questa guida presuppone che sia già stato installato Unity tramite il programma Hub Unity. Se non si ha familiarità con Unity, è consigliabile visitare Unity Learning e completare l' [esercitazione Introduzione con Unity](https://learn.unity.com/course/getting-started-with-unity) .
+> Questa guida presuppone che sia già stato installato Unity tramite il programma Hub Unity. Se non si ha familiarità con Unity, è consigliabile visitare Unity e completare prima il [percorso di apprendimento di Unity Essentials](https://learn.unity.com/pathway/unity-essentials) .
 
 ## <a name="install-unity-support-for-visual-studio"></a>Installare il supporto Unity per Visual Studio
 
