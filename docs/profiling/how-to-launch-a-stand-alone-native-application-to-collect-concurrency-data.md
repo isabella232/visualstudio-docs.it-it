@@ -1,5 +1,7 @@
 ---
 title: Riga di comando del Profiler-aprire l'app client nativa, ottenere i dati di concorrenza
+description: Informazioni su come usare Visual Studio Strumenti di profilatura gli strumenti da riga di comando per avviare un'app client autonoma nativa e raccogliere dati di concorrenza di thread e processi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e5aed651-afed-4b70-9a7e-1a6032cc614f
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0aeebe82e3c7b574b65ab463a7bfd986d43d46ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce8c16c3c895c0538f91bdb27af08e003b1450cf
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85327652"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883476"
 ---
 # <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Avviare un'applicazione nativa autonoma con il profiler per raccogliere dati di concorrenza tramite la riga di comando
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per avviare un'applicazione (client) autonoma nativa e raccogliere dati di concorrenza di thread e processi.
@@ -87,4 +89,4 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 2. Arrestare il profiler digitando il comando seguente al prompt dei comandi:
 
-     **VSPerfCmd**[/Shutdown](../profiling/shutdown.md) VSPerfCmd  
+     [/Shutdown](../profiling/shutdown.md) VSPerfCmd  

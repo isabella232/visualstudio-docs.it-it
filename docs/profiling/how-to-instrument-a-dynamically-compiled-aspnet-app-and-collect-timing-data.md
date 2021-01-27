@@ -1,5 +1,7 @@
 ---
 title: 'Strumento da riga di comando del profiler: applicazione ASP.NET dinamica, ottenere dati temporali'
+description: Informazioni su come usare Visual Studio Strumenti di profilatura gli strumenti da riga di comando per raccogliere dati di intervallo dettagliati per un'applicazione ASP.NET compilata dinamicamente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -8,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: f510878c3952cb98bcbee3bfecedf05b87b2658f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 318728a78e6f15d8858aa2f037b890a3bfe8aeca
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85327969"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883631"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Procedura: Instrumentare un'applicazione Web ASP.NET compilata dinamicamente e raccogliere dati di intervallo dettagliati con il profiler tramite la riga di comando
 
@@ -50,7 +52,7 @@ Avviare il profiler, quindi eseguire l'applicazione di destinazione. Mentre il p
 
    - L'opzione **/start:trace** inizializza il profiler.
 
-   - L'opzione **/output:** `OutputFile` è obbligatoria con **/Start**. `OutputFile` Specifica il nome e il percorso dei dati di profilatura (.* VSP*).
+   - L'opzione **/output:** `OutputFile` è obbligatoria con **/Start**. `OutputFile` Specifica il nome e il percorso dei dati di profilatura (.*VSP*).
 
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:trace**.
 
@@ -95,7 +97,7 @@ Per terminare una sessione di profilatura, chiudere l'applicazione Web [!INCLUDE
 
 3. Arrestare il profiler. Digitare:
 
-     **VSPerfCmd**[/Shutdown](../profiling/shutdown.md) VSPerfCmd  
+     [/Shutdown](../profiling/shutdown.md) VSPerfCmd  
 
 4. Riavviare IIS. Digitare:
 
@@ -113,7 +115,7 @@ Dopo aver completato l'attività di profilatura, sostituire il file *web.config*
 
 3. Riavviare il computer.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Profilare applicazioni](../profiling/command-line-profiling-of-aspnet-web-applications.md) 
  Web ASP.NET [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)

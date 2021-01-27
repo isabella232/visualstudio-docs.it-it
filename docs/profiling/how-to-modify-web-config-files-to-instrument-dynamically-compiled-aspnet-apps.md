@@ -1,5 +1,6 @@
 ---
 title: Web.Config app ASP.NET dinamica del profilo & per lo strumento file
+description: Informazioni su come usare Visual Studio Strumenti di profilatura per raccogliere dati relativi alle attività di temporizzazione e memoria per un'applicazione Web ASP.NET compilata dinamicamente.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9682fe820e34e8e30a3c57670f5e5fbc7eae2153
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e08732689d11cd7de70df1e93d1d1110a35baa6d
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809596"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883469"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procedura: Modificare file Web.Config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente
 È possibile usare il metodo di strumentazione degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per raccogliere dati di intervallo dettagliati, dati relativi all'allocazione di memoria .NET e dati di durata degli oggetti .NET da applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilate in modo dinamico.
@@ -63,7 +64,7 @@ ms.locfileid: "90809596"
    |--------------------| - |
    | **nome** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
-   | **Impostazioni cultura** | **Neutralità** |
+   | **Impostazioni cultura** | **Indipendente dalla** |
 
 7. Aggiungere un elemento **codeBase** come elemento figlio dell'elemento **dependentAssembly**.
 
@@ -221,6 +222,6 @@ ms.locfileid: "90809596"
 
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: instrumentare un'applicazione ASP.NET compilata dinamicamente e raccogliere dati di intervallo dettagliati](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
 - [Procedura: instrumentare un'applicazione ASP.NET compilata dinamicamente e raccogliere dati di memoria](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

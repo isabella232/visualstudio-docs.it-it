@@ -1,5 +1,7 @@
 ---
 title: Strumento da riga di comando del profiler-strumentazione nativa, ottenere dati di temporizzazione
+description: Informazioni su come usare Visual Studio Strumenti di profilatura gli strumenti da riga di comando per raccogliere dati di intervallo dettagliati per un componente nativo, ad esempio un file C++. exe o. dll.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 36883074-9be8-4e90-a66f-7e87f21fcd30
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9436487655e04649228a1bdb60c5d48138f13842
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f9deae5372b6fdc22728fbf7df0c678ffb39c45
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85327830"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883579"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Procedura: Instrumentare un componente autonomo nativo e raccogliere dati di intervallo con il profiler tramite la riga di comando
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per instrumentare un componente nativo, ad esempio un file C++ con estensione *exe* o *dll*, e raccogliere dati di intervallo dettagliati.
@@ -80,6 +82,6 @@ Per raccogliere dati di intervallo dettagliati da un componente usando il metodo
 
      **VSPerfCmd /shutdown**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)

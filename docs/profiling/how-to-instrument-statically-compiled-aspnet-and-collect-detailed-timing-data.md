@@ -1,5 +1,7 @@
 ---
 title: Strumento da riga di comando del profiler-instrumentare l'app ASP.NET statica, ottenere dati
+description: Informazioni su come usare Visual Studio Strumenti di profilatura gli strumenti da riga di comando per raccogliere dati di intervallo dettagliati per un componente Web o un sito Web ASP.NET precompilato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: b260ce68-76e6-4c3b-8062-3c00bd5cf7b8
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 97d8e18d68ecaf0abf2b3b94e6c22ea6ba3237de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 256cecda13b15eb679ac3826199d6c86df7a1acf
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85327914"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883521"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Procedura: Instrumentare un'applicazione Web ASP.NET compilata staticamente e raccogliere dati di intervallo dettagliati con il profiler tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per instrumentare un componente Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] precompilato o un sito Web e raccogliere dati di intervallo dettagliati.
@@ -62,7 +64,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
    | Opzione | Descrizione |
    | - | - |
    | [/User](../profiling/user-vsperfcmd.md) **:**[ `Domain` **\\** ]`UserName` | Specifica il dominio e il nome utente dell'account proprietario del processo di lavoro ASP.NET. Questa opzione è obbligatoria se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna **Nome utente** nella scheda **Processi** di Gestione attività di Windows. |
-   | [/CrossSession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni di accesso. Questa opzione è obbligatoria se l'applicazione ASP.NET è in esecuzione in una sessione diversa. La sessione identificatore viene elencata nella colonna ID sessione nella scheda **processi** di gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
+   | [/CrossSession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni di accesso. Questa opzione è obbligatoria se l'applicazione ASP.NET è in esecuzione in una sessione diversa. L'identificatore di sessione è elencato nella colonna ID sessione della scheda **Processi** di Gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
    | [/WinCounter](../profiling/wincounter.md) **:**`WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
    | [/AutoMark](../profiling/automark.md) **:**`Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
    | [/Events](../profiling/events-vsperfcmd.md) **:**`Config` | Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione *etl*. |
@@ -106,6 +108,6 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 5. Riavviare il computer.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)

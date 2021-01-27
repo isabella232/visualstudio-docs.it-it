@@ -1,5 +1,7 @@
 ---
 title: Riga di comando del profiler-instrumentare il servizio .NET, ottenere dettagli sull'intervallo
+description: Informazioni su come usare gli strumenti da riga di comando Strumenti di profilatura di Visual Studio per raccogliere dati di intervallo dettagliati per un servizio di .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -8,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62303ab2ea7296ca5093636efcf97ea7a3c540c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6002af64474c6ed15aa9807b804c588f20f1443b
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331474"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883605"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un servizio .NET e raccogliere dati di intervallo dettagliati tramite la riga di comando del profiler
 
@@ -54,7 +56,7 @@ Per terminare una sessione di profilatura, chiudere il servizio e arrestare in m
 
    - L'opzione [/Start](../profiling/start.md)**: Trace** Inizializza il profiler.
 
-   - L'opzione [/output](../profiling/output.md)**:** `OutputFile` è obbligatoria con **/Start**. `OutputFile` Specifica il nome e il percorso dei dati di profilatura (.* VSP*).
+   - L'opzione [/output](../profiling/output.md)**:** `OutputFile` è obbligatoria con **/Start**. `OutputFile` Specifica il nome e il percorso dei dati di profilatura (.*VSP*).
 
      È possibile usare una delle opzioni seguenti con l'opzione **/start:trace**.
 
@@ -106,7 +108,7 @@ Per terminare una sessione di profilatura, arrestare il servizio che esegue il c
 
 5. Riavviare il computer.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Servizi profili](../profiling/command-line-profiling-of-services.md) 
  [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)

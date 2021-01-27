@@ -1,5 +1,7 @@
 ---
 title: Limitare la strumentazione a specifiche DLL | Microsoft Docs
+description: Informazioni su come usare il metodo di profilatura della strumentazione per limitare la raccolta dei dati di profilatura a una o più dll in un'applicazione.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a3584498854e7518e93c4ba00dc019d804b0e8d8
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 7bd781f2c62a313a8e0c0b044103ca5da28021f8
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851021"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883371"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procedura: Limitare la strumentazione a DLL specifiche
 
@@ -37,7 +39,7 @@ Usando il metodo di profilatura della strumentazione, è possibile limitare la r
 
 7. Dall'elenco **Aggiungi progetto di destinazione** selezionare il progetto eseguibile da usare per verificare la DLL.
 
-     Facoltativo. È possibile aggiungere qualsiasi progetto DLL che si vuole profilare.
+     facoltativo. È possibile aggiungere qualsiasi progetto DLL che si vuole profilare.
 
 8. Per impedire la raccolta di dati per un progetto aggiunto, fare clic con il pulsante destro del mouse sul nome del progetto e quindi deselezionare la casella di controllo **Strumento**.
 
@@ -51,11 +53,11 @@ Usando il metodo di profilatura della strumentazione, è possibile limitare la r
 
 4. Nella seconda pagina della procedura guidata eseguire i passaggi seguenti:
 
-    - Digitare il percorso e il nome del file di. file *dll* che si desidera profilare nel **percorso dll**. È anche possibile fare clic sul pulsante con i puntini di sospensione (...) per individuare il file nella finestra di dialogo **Libreria a collegamento dinamico da profilare**. Si noti che è necessario specificare la copia di. file *dll* che verrà avviato dall'eseguibile (.* file exe*) che si seleziona Avanti.
+    - Digitare il percorso e il nome del file di. file *dll* che si desidera profilare nel **percorso dll**. È anche possibile fare clic sul pulsante con i puntini di sospensione (...) per individuare il file nella finestra di dialogo **Libreria a collegamento dinamico da profilare**. Si noti che è necessario specificare la copia di. file *dll* che verrà avviato dall'eseguibile (.*file exe*) che si seleziona Avanti.
 
-    - Digitare il percorso e il nome del file eseguibile (.* file exe*) che eseguirà l'operazione. *dll* nel **percorso eseguibile**. È anche possibile fare clic sul pulsante con i puntini di sospensione (...) per individuare il file nella finestra di dialogo **Eseguibile da avviare**.
+    - Digitare il percorso e il nome del file eseguibile (.*file exe*) che eseguirà l'operazione. *dll* nel **percorso eseguibile**. È anche possibile fare clic sul pulsante con i puntini di sospensione (...) per individuare il file nella finestra di dialogo **Eseguibile da avviare**.
 
-    - Facoltativo. Digitare gli argomenti della riga di comando da passare al file eseguibile in **Argomenti della riga di comando**. Se necessario, specificare la directory di lavoro per l'applicazione in **Directory di lavoro**.
+    - facoltativo. Digitare gli argomenti della riga di comando da passare al file eseguibile in **Argomenti della riga di comando**. Se necessario, specificare la directory di lavoro per l'applicazione in **Directory di lavoro**.
 
     - Fare clic su **Avanti**.
 
@@ -63,12 +65,12 @@ Usando il metodo di profilatura della strumentazione, è possibile limitare la r
 
 6. Fare clic su **Fine** per chiudere la procedura guidata e visualizzare la nuova sessione di prestazioni nella finestra **Esplora prestazioni**.
 
-7. Facoltativo. Per aggiungere altre informazioni. file *dll* , fare clic con il pulsante destro del mouse su **destinazioni** e scegliere **Aggiungi binario di destinazione**. Selezionare i file dalla finestra di dialogo **Aggiungi binario di destinazione**.
+7. facoltativo. Per aggiungere altre informazioni. file *dll* , fare clic con il pulsante destro del mouse su **destinazioni** e scegliere **Aggiungi binario di destinazione**. Selezionare i file dalla finestra di dialogo **Aggiungi binario di destinazione**.
 
     > [!NOTE]
-    > Non specificare l'eseguibile (.* file exe*) che esercita le dll.
+    > Non specificare l'eseguibile (.*file exe*) che esercita le dll.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 Raccolta dati di [controllo](../profiling/controlling-data-collection.md) 
  [Procedura: limitare la strumentazione a funzioni specifiche](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

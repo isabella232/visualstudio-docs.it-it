@@ -1,5 +1,7 @@
 ---
 title: Riga di comando del profiler-instrumentare il servizio .NET, ottenere dati di memoria
+description: Informazioni su come usare gli strumenti da riga di comando Strumenti di profilatura di Visual Studio per raccogliere dati sull'allocazione di memoria e sulla durata degli oggetti per un servizio di .NET Framework.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ff00f9a8a79dadc0cc037b707db057610b904e8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 28d17a80a04ad7ecd8e7dcb35226b3b1815db4bb
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809609"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883657"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un servizio .NET Framework e raccogliere dati di memoria tramite la riga di comando del profiler
 
@@ -124,6 +126,6 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 4. Riavviare il computer.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)
 - [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)

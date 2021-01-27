@@ -1,5 +1,7 @@
 ---
 title: Strumento da riga di comando del profiler-strumentazione ASP.NET dinamica, ottenere dati di memoria
+description: Informazioni su come usare Visual Studio Strumenti di profilatura gli strumenti da riga di comando per raccogliere dati dettagliati dell'attività di memoria per un'applicazione ASP.NET compilata dinamicamente.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7c1fafd3b21dd40da1215e7864c6d66090589d03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c26342fb956aa5043f316015f05e18ef70d20559
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328073"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883592"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un'applicazione Web ASP.NET compilata dinamicamente e raccogliere dati di memoria tramite la riga di comando del profiler
 Questo argomento descrive come usare gli strumenti della riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per raccogliere dati dettagliati dell'allocazione di memoria .NET e della durata degli oggetti per un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilata in modo dinamico tramite il metodo di profilatura della strumentazione.
@@ -60,7 +62,7 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
 
    - L'opzione **/start:trace** inizializza il profiler.
 
-   - L'opzione **/output:** `OutputFile` è obbligatoria con **/Start**. `OutputFile` Specifica il nome e il percorso dei dati di profilatura (.* VSP*).
+   - L'opzione **/output:** `OutputFile` è obbligatoria con **/Start**. `OutputFile` Specifica il nome e il percorso dei dati di profilatura (.*VSP*).
 
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:trace**.
 
@@ -107,7 +109,7 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
 
 3. Arrestare il profiler. Digitare:
 
-    **VSPerfCmd** [/Shutdown](../profiling/shutdown.md) VSPerfCmd
+     [/Shutdown](../profiling/shutdown.md) VSPerfCmd
 
 4. Riavviare IIS. Digitare:
 
@@ -126,6 +128,6 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
 
 3. Riavviare il computer.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)

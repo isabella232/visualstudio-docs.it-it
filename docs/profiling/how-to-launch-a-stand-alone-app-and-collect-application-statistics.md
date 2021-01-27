@@ -1,5 +1,7 @@
 ---
 title: Esecuzione della riga di comando del profiler-avvio dell'app autonoma, ottenere statistiche dell'app
+description: Informazioni su come usare Visual Studio Strumenti di profilatura gli strumenti da riga di comando per avviare un'app autonoma e raccogliere dati sulle prestazioni usando il metodo di campionamento.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 52dcee2b-f178-4a76-bddc-e36c50bfcb78
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96838b622171aa3e313dd8c241a5e316f72ff7b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 575601f2676a8081422b029d0d7da94b6a4836ca
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85327765"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883518"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Procedura: Avviare un'applicazione autonoma con il profiler e raccogliere statistiche dell'applicazione usando la riga di comando
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per avviare un'applicazione (client) autonoma e raccogliere statistiche sulle prestazioni tramite il metodo di campionamento.
@@ -102,8 +104,8 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 2. Arrestare il profiler. Digitare:
 
-     **VSPerfCmd**[/Shutdown](../profiling/shutdown.md) VSPerfCmd  
+     [/Shutdown](../profiling/shutdown.md) VSPerfCmd  
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Visualizzazioni dei dati del metodo di campionamento](../profiling/profiler-sampling-method-data-views.md)

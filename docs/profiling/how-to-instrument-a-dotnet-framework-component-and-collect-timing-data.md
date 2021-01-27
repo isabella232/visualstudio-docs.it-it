@@ -1,5 +1,7 @@
 ---
 title: Strumento da riga di comando del profiler-componente .NET client Instrument, ottenere dati ora
+description: Informazioni su come usare gli strumenti da riga di comando Strumenti di profilatura di Visual Studio per raccogliere dati di temporizzazione per un componente .NET Framework di un'applicazione autonoma.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: b7dcc27b-45c6-4302-9552-6fa5b1e94b56
@@ -9,15 +11,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 64c69a8f38e7b0e4705fb8cca187936b96264f55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6296dea0314ac6f279e5a74dd40515674bc9e65
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328017"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883670"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Procedura: Instrumentare un componente autonomo .NET Framework e raccogliere dati di intervallo con il profiler tramite la riga di comando
-In questo argomento viene descritto come utilizzare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gli strumenti da riga di comando strumenti di profilatura per instrumentare un componente di .NET Framework, ad esempio.* exe* o. file *dll* e per raccogliere dati di intervallo dettagliati.
+In questo argomento viene descritto come utilizzare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gli strumenti da riga di comando strumenti di profilatura per instrumentare un componente di .NET Framework, ad esempio.*exe* o. file *dll* e per raccogliere dati di intervallo dettagliati.
 
 > [!NOTE]
 > Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app della piattaforma UWP richiedono anche nuove tecniche di raccolta. Vedere [Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
@@ -57,7 +59,7 @@ In questo argomento viene descritto come utilizzare [!INCLUDE[vsprvs](../code-qu
    | Opzione | Descrizione |
    | - | - |
    | [/User](../profiling/user-vsperfcmd.md) **:**[ `Domain` **\\** ]`UserName` | Specifica il dominio e il nome utente dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna **Nome utente** nella scheda **Processi** di Gestione attività di Windows. |
-   | [/CrossSession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se l'applicazione ASP.NET è in esecuzione in una sessione diversa. La sessione identificatore viene elencata nella colonna **ID sessione** nella scheda **processi** di gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
+   | [/CrossSession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se l'applicazione ASP.NET è in esecuzione in una sessione diversa. L'identificatore di sessione è elencato nella colonna **ID sessione** della scheda **Processi** di Gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
    | [/GlobalOff](../profiling/globalon-and-globaloff.md) | Avvia il profiler con la raccolta dei dati sospesa. Usare [/globalon](../profiling/globalon-and-globaloff.md) per riprendere la profilatura. |
    | [/Counter](../profiling/counter.md) **:**`Config` | Raccoglie informazioni dal contatore delle prestazioni del processore specificato in `Config`. Le informazioni del contatore vengono aggiunte ai dati raccolti a ogni evento di profilatura. |
    | [/WinCounter](../profiling/wincounter.md) **:**`WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
@@ -94,6 +96,6 @@ In questo argomento viene descritto come utilizzare [!INCLUDE[vsprvs](../code-qu
 
      **VSPerfClrEnv /off**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Visualizzazioni dei dati del metodo di strumentazione](../profiling/instrumentation-method-data-views.md)

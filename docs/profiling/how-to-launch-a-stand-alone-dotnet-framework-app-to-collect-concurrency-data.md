@@ -1,5 +1,7 @@
 ---
 title: Riga di comando del Profiler-aprire l'app client .NET, ottenere i dati di concorrenza
+description: Informazioni su come usare Visual Studio Strumenti di profilatura gli strumenti da riga di comando per avviare un'app autonoma .NET e raccogliere dati di concorrenza di thread e processi.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 17a48848-bd3e-44ef-9971-e39836ff1df2
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: e2c1b0a52429e74ad35cf0cad3acc44d064c9672
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01356e2fe8693e39ef06fc1620cabbb2cb608a43
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85327910"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883467"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Avviare un'applicazione .NET Framework autonoma con il profiler per raccogliere dati di concorrenza tramite la riga di comando
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per avviare un'applicazione (client) autonoma .NET Framework e raccogliere dati di concorrenza di thread e processi
@@ -95,7 +97,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 2. Arrestare il profiler
 
-     **VSPerfCmd**[/Shutdown](../profiling/shutdown.md) VSPerfCmd  
+     [/Shutdown](../profiling/shutdown.md) VSPerfCmd  
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Raccogli dati di concorrenza](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)

@@ -1,5 +1,7 @@
 ---
 title: Strumento da riga di comando del profiler-instrumentare un'app ASP.NET statica, ottenere dati
+description: Informazioni su come usare Visual Studio Strumenti di profilatura gli strumenti da riga di comando per raccogliere dati di memoria e di intervallo per un componente Web o un sito Web ASP.NET precompilato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 427ece50dc2e8add6cc05e944907a9e0e1a890ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51523991ece7322eef6db38a7b5738ce07a471ea
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85327926"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883473"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un'applicazione Web ASP.NET compilata staticamente e raccogliere dati di memoria tramite la riga di comando del profiler
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per instrumentare un componente Web o un sito Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] precompilato e raccogliere dati di allocazione di memoria, di durata degli oggetti e di intervallo dettagliati .NET.
@@ -112,6 +114,6 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
     **IISReset /start**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Visualizzazioni dei dati di memoria .NET](../profiling/dotnet-memory-data-views.md)

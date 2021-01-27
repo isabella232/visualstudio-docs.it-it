@@ -1,5 +1,7 @@
 ---
 title: Installare il profiler autonomo | Microsoft Docs
+description: Informazioni su come installare il profiler autonomo, che può essere eseguito senza installato Visual Studio. Esistono situazioni in cui Visual Studio non deve essere installato.
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4005a7af5af1582f31b6c706be150a504355f3d2
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 8f13edc60a2c05d50e2118e24344bf9d475e3f5f
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851151"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883618"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Procedura: Installare il profiler autonomo
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offre un profiler autonomo basato sulla riga di comando che può essere eseguito senza installare l'IDE di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Questa situazione si verifica quando un computer non ha o non può avere un ambiente di sviluppo installato. È consigliabile, ad esempio, non installare un ambiente di sviluppo in un server Web di produzione.
@@ -52,7 +54,7 @@ ms.locfileid: "90851151"
 
 6. Usare lo strumento [VSPerfReport](../profiling/vsperfreport.md) per serializzare i simboli nel file dei dati di profilatura (con estensione vsp). Usare le opzioni **VSPerfReport /summary:all /packsymbols**. Se non sono presenti simboli inseriti nel file di dati, assicurarsi di aver impostato la variabile di ambiente _NT_SYMBOL_PATH.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Usare gli strumenti per la profilatura dalla riga di comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
 - [Procedura dettagliata: profilatura dalla riga di comando tramite strumentazione](command-line-profiling-of-stand-alone-applications.md)
 - [Procedura: fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md)
