@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69f93aca88cb8e83417a370de7113640d3ae38c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3a6f1efc85366bc74206dc8637c992f249c4eb44
+ms.sourcegitcommit: e443866e3468f838bc3655ad56a83a552013ceed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351336"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98925890"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procedura dettagliata: Eseguire il debug di un foglio di stile XSLT
 
@@ -24,17 +24,17 @@ Nei passaggi della procedura dettagliata viene illustrato come usare il debugger
 Per preparare questa procedura dettagliata, copiare prima i due [file di esempio](#sample-files) nel computer locale. Uno è il foglio di stile e uno è il file XML che verrà usato come input per il foglio di stile. In questa procedura dettagliata, il foglio di stile usato trova tutti i libri il cui costo è inferiore al prezzo medio del libro.
 
 > [!NOTE]
-> Il debugger XSLT è disponibile solo nell'edizione Enterprise di Visual Studio.
+> Il debugger XSLT è disponibile solo nelle edizioni Professional ed Enterprise di Visual Studio.
 
 ## <a name="start-debugging"></a>Consente di iniziare il debug
 
-1. Scegliere **Apri** file dal menu **file**  >  **File**.
+1. Scegliere **Apri** file dal menu **file**  >  .
 
 2. Individuare il file *below-average. xsl* e scegliere **Apri**.
 
    Il foglio di stile verrà aperto nell'editor XML.
 
-3. Fare clic sul pulsante Sfoglia ( **...** ) nel campo di **input** della finestra proprietà del documento. Se la finestra **Proprietà** non è visibile, fare clic con il pulsante destro del mouse in un punto qualsiasi del file aperto nell'editor, quindi scegliere **Proprietà**.
+3. Fare clic sul pulsante Sfoglia (**...**) nel campo di **input** della finestra proprietà del documento. Se la finestra **Proprietà** non è visibile, fare clic con il pulsante destro del mouse in un punto qualsiasi del file aperto nell'editor, quindi scegliere **Proprietà**.
 
 4. Individuare il file di *books.xml* , quindi scegliere **Apri**.
 
@@ -46,17 +46,17 @@ Per preparare questa procedura dettagliata, copiare prima i due [file di esempio
 
    - Fare clic in un punto qualsiasi della riga 12, quindi premere **F9**.
 
-   - Fare clic con il pulsante destro del mouse sul `xsl:if` tag **Breakpoint** di inizio e scegliere punto di  >  **interruzione Inserisci** punto di interruzione.
+   - Fare clic con il pulsante destro del mouse sul `xsl:if` tag di inizio e scegliere punto di  >  **interruzione Inserisci** punto di interruzione.
 
       ![Inserisci punto di interruzione nel file XSL in Visual Studio](media/insert-breakpoint.PNG)
 
-6. Sulla barra dei menu scegliere **XML**  >  **Avvia debug XSLT** (oppure premere **ALT** + **F5** ).
+6. Sulla barra dei menu scegliere **XML**  >  **Avvia debug XSLT** (oppure premere **ALT** + **F5**).
 
    Viene avviato il processo di debug.
 
    Nell'editor il debugger è posizionato sull' `xsl:if` elemento del foglio di stile. Un altro file denominato *below-average.xml* verrà aperto nell'editor; si tratta del file di output che verrà popolato quando viene elaborato ogni nodo del file di input *books.xml* .
 
-   Le finestre **auto** , **variabili locali** e **espressioni di controllo 1** vengono visualizzate nella parte inferiore della finestra di Visual Studio. Nella finestra variabili **locali** vengono visualizzate tutte le variabili locali e i relativi valori correnti. incluse le variabili definite nel foglio di stile e quelle usate dal debugger per tenere traccia dei nodi presenti nel contesto.
+   Le finestre **auto**, **variabili locali** e **espressioni di controllo 1** vengono visualizzate nella parte inferiore della finestra di Visual Studio. Nella finestra variabili **locali** vengono visualizzate tutte le variabili locali e i relativi valori correnti. incluse le variabili definite nel foglio di stile e quelle usate dal debugger per tenere traccia dei nodi presenti nel contesto.
 
 ## <a name="watch-window"></a>Finestra Espressioni di controllo
 
@@ -157,6 +157,6 @@ I due file seguenti vengono usati nella procedura dettagliata.
 </bookstore>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)](../xml-tools/debugging-xslt.md)
