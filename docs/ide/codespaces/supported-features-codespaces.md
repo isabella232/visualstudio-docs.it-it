@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 20d42b45cc98a64d86306b81f14d781becb8b7a6
+ms.sourcegitcommit: 52742b678233eed1de7a249cf990d072f9758149
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696537"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99049480"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Funzionalità supportate di Visual Studio (anteprima)
 
@@ -73,6 +73,7 @@ Sono supportati la maggior parte dei tipi di applicazione e delle configurazioni
 Non ancora disponibile:
 
 * Finestre di progettazione interfaccia utente-WinForms, WPF e progettazione risorse
+* Il cast dell'app per progetti WinForms e WPF è disponibile solo in un flag funzionalità
 * Progetti Visual Basic e F #
 * .NET Framework progetti di destinazione
 * Progetti Docker Compose
