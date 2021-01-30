@@ -188,7 +188,9 @@
           href: ide/create-new-project.md
         - name: Usare soluzioni e progetti
           href: ide/creating-solutions-and-projects.md
-        - name: Aprire un progetto da un repository
+        - name: Aprire un progetto da un repository in Visual Studio 2017
+          href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
+        - name: Aprire un progetto da un repository in Visual Studio
           href: get-started/tutorial-open-project-from-repo.md
         - name: 'Portabilità, migrazione e aggiornamento dei progetti'
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
@@ -978,7 +980,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Prodotti e servizi Microsoft per l'accessibilità
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Informazioni di riferimento
+- name: Riferimento
   items:
     - name: Scelte rapide da tastiera
       items:
