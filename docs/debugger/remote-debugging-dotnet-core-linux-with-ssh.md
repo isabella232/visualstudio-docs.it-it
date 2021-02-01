@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bde5bb8722e0f95a10991019bdc9cba9c8a48ec3
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 599ebe86867e78d17029b2787b9f35b6755c3040
+ms.sourcegitcommit: 586369f5aa61d4a0330802f718f0ceaa55d7e9c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204891"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99224353"
 ---
 # <a name="debug-net-core-on-linux-using-ssh-by-attaching-to-a-process"></a>Eseguire il debug di .NET Core in Linux tramite SSH mediante la connessione a un processo
 
-A partire da Visual Studio 2017, è possibile connettersi ai processi .NET Core in esecuzione in una distribuzione Linux locale o remota tramite SSH. Questo articolo descrive come configurare il debug e come eseguire il debug. Per gli scenari di debug che usano i contenitori Docker, vedere in alternativa [connettersi a un processo in esecuzione in un contenitore Docker](../debugger/attach-to-process-running-in-docker-container.md) .
+A partire da Visual Studio 2017, è possibile connettersi ai processi .NET Core in esecuzione in una distribuzione Linux locale o remota tramite SSH. Questo articolo descrive come configurare il debug e come eseguire il debug. Per gli scenari di debug con i contenitori Docker, vedere la pagina [relativa alla connessione a un processo in esecuzione in un contenitore Docker](../debugger/attach-to-process-running-in-docker-container.md) e agli articoli sugli [strumenti contenitore](../containers/edit-and-refresh.md) . Per eseguire il debug di Linux in WSL 2 da Visual Studio (nessuna connessione al processo), vedere [eseguire il debug di app .NET Core in WSL 2 con Visual Studio](../debugger/debug-dotnet-core-in-wsl-2.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
 

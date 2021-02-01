@@ -338,8 +338,6 @@
       items:
         - name: Connettersi a processi in esecuzione con il debugger
           href: attach-to-running-processes-with-the-visual-studio-debugger.md
-        - name: Eseguire il debug di .NET Core in Linux
-          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: Connettersi a un processo in esecuzione in un contenitore Docker
           href: attach-to-process-running-in-docker-container.md
     - name: Debug di applicazioni multithreading
@@ -422,6 +420,14 @@
           href: debug-live-azure-apps-troubleshooting.md
         - name: Debug spostamento cronologico per app di macchine virtuali di Azure attive
           href: debug-live-azure-virtual-machines-time-travel-debugging.md
+    - name: Debug di Linux
+      items:
+        - name: Eseguire il debug di app .NET Core in WSL 2
+          href: debug-dotnet-core-in-wsl-2.md
+        - name: Eseguire il debug di .NET Core in Linux tramite SSH
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
+        - name: Eseguire il debug con gli strumenti contenitore >>
+          href: ../containers/edit-and-refresh.md
     - name: Tipi di applicazioni
       items:
         - name: Eseguire il debug specifico di tipi di applicazioni
