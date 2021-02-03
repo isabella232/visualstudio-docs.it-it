@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
-ms.date: 12/02/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: Gestione delle sottoscrizioni nelle sottoscrizioni di Visual Studio con GitHub Enterprise
-ms.openlocfilehash: eed2f0636b0751c996da79c54d1a439532bce097
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: ca71e696081e304cdbb8cc58576e0ae4c536f911
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538124"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511319"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Gestire le sottoscrizioni di Visual Studio con GitHub Enterprise
 I clienti con contratto Enterprise Agreement (EA) con Microsoft sono idonei per acquistare una nuova offerta di sottoscrizione che riunisce le sottoscrizioni di Visual Studio standard e GitHub Enterprise. Per i sottoscrittori di Visual Studio, si tratta di un modo semplice ed economico per acquisire GitHub Enterprise. 
@@ -35,7 +35,7 @@ Per ulteriori informazioni sulla gestione delle sottoscrizioni di Visual Studio,
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Come funziona il processo di configurazione di Visual Studio con GitHub Enterprise?
 GitHub Enterprise viene configurato e gestito separatamente dalle sottoscrizioni di Visual Studio. In seguito a una sottoscrizione di Visual Studio con l'acquisto di GitHub Enterprise, viene avviato un processo di configurazione dell'account aziendale GitHub in parallelo con (ma separato da) la definizione di un accordo in [Manage.VisualStudio.com](https://manage.visualstudio.com). La creazione di questo account di GitHub Enterprise può richiedere del tempo. 
 
-Dopo che l'azienda ha configurato un account GitHub Enterprise, gli abbonati che hanno ricevuto le sottoscrizioni di Visual Studio con GitHub Enterprise riceveranno un messaggio di posta elettronica da GitHub che informa che le sottoscrizioni di Visual Studio sono state collegate. Quando i sottoscrittori ricevono questo messaggio di posta elettronica, possono rivolgersi all'amministratore dell'organizzazione GitHub per ricevere un invito all'organizzazione appropriata.
+Dopo che l'azienda ha configurato un account di GitHub Enterprise, i sottoscrittori a cui sono state assegnate sottoscrizioni di Visual Studio con GitHub Enterprise riceveranno un messaggio di posta elettronica da GitHub che informa che le sottoscrizioni di Visual Studio sono state collegate. Quando i sottoscrittori ricevono questo messaggio di posta elettronica, possono rivolgersi all'amministratore dell'organizzazione GitHub per ricevere un invito all'organizzazione appropriata.
 
 Per ulteriori informazioni sulla configurazione di GitHub Enterprise, fare riferimento alla [documentazione del Sottoscrittore](access-github.md).   
 
@@ -51,11 +51,11 @@ GitHub è disponibile come GitHub.com basato su cloud o in versione locale come 
 - Altre informazioni sull'assegnazione di GitHub in [GitHub docs](https://docs.github.com/en/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)
 - Trovare le risposte alle domande su un'ampia gamma di argomenti su GitHub nella [Guida di GitHub](https://help.github.com/en).
 - Ottenere assistenza da altri utenti di GitHub nel [GitHub Community Forum](https://github.community/) (forum della Community GitHub).
-- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto delle sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/).
+- Per assistenza in merito a vendite, sottoscrizioni, account e fatturazione per le sottoscrizioni di Visual Studio, contattare il [supporto di amministrazione e sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp).
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  Visita il [supporto tecnico di Visual Studio](https://visualstudio.microsoft.com/support/).
 - Ottenere [supporto tecnico](https://support.microsoft.com/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) per GitHub Enterprise.   
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)

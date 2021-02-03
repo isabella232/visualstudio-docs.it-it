@@ -7,12 +7,12 @@ ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
 ms.date: 01/14/2021
 ms.topic: conceptual
 description: Informazioni sulle responsabilità degli amministratori per condurre gli inventari di pre-produzione
-ms.openlocfilehash: abcb3c8c1213885b5e543b05cf912c418acaa3f5
-ms.sourcegitcommit: 4ee20054afe7bcf5c0aed504dec01e18059fbbd0
+ms.openlocfilehash: da8146b9f7d2b758ac2d249534d43bd98beae385
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226487"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511306"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventario dell'ambiente di preproduzione
 Le sottoscrizioni di Visual Studio semplificano la gestione degli asset basandosi sul conteggio degli utenti piuttosto che dei dispositivi.
@@ -30,10 +30,10 @@ Ecco alcuni modi per semplificare la creazione dell'inventario dell'ambiente di 
 
 ## <a name="resources"></a>Risorse
 - [White paper sulle licenze per Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Supporto delle sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp)
 - [Condizioni per contratti multilicenza](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)

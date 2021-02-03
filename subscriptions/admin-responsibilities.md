@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: Informazioni sulle responsabilità degli amministratori delle sottoscrizioni.
-ms.openlocfilehash: 183209e5e1fa873ae9af6ff2d9b32caf94c5461e
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 9d2c724fafb41ee44e531a1eec41d76d7e888686
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467466"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511293"
 ---
 # <a name="overview-of-admin-responsibilities"></a>Panoramica delle responsabilità degli amministratori
 In qualità di amministratore, è possibile gestire le sottoscrizioni per l'organizzazione.  Il ruolo di amministratore ha anche le responsabilità di garantire che le sottoscrizioni siano gestite in conformità con le condizioni di licenza. Questo articolo descrive le responsabilità, i vantaggi e le limitazioni del ruolo di amministratore.
@@ -36,11 +36,12 @@ Le sottoscrizioni di Visual Studio consentono agli sviluppatori di installare e 
 | Riassegnazione di una licenza                     | Quando un utente lascia un team e non ha più bisogno di una licenza, è possibile riassegnarla dopo 90 giorni. Quando si riassegna una licenza, tutti i codici Product Key già usati rimangono disponibili, ma non vengono sostituiti. Per le organizzazioni che hanno in essere contratti Enterprise, gli eventuali vantaggi usati dall'utente originale, ad esempio corsi Pluralsight, verranno reimpostati.                                                                                                                                                                                                                                                 |
 | Eccezione per gli utenti finali                  | Alla fine di un progetto di sviluppo software, gli utenti finali in genere esaminano un'applicazione e determinano se soddisfa i criteri necessari per il rilascio. Questo processo è denominato test di accettazione utente. I membri di un team, ad esempio uno sponsor aziendale o un responsabile del prodotto possono fungere da intermediari per gli utenti finali. Gli utenti finali che non hanno una sottoscrizione di Visual Studio possono accedere al software per i test di accettazione utente, se l'uso del software è comunque conforme a tutte le condizioni di licenza di Visual Studio. È raro che un utente il cui ruolo primario stia progettando, sviluppando o testando il software venga qualificato anche come "utente finale". |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
 - [Documentazione di Microsoft 365](/microsoft-365/)
+- [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://my.visualstudio.com/gethelp)
 
 ## <a name="next-steps"></a>Passaggi successivi
 Altre informazioni sulle responsabilità per gli amministratori:
