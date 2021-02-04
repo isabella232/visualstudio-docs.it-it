@@ -10,12 +10,12 @@ user.type: subscriber
 tags: sign-in
 subscription.type: cloud,
 sap.id: 17a2bf94-0d03-2629-dfd8-e8935f9126ec
-ms.openlocfilehash: e3f76bcfe227ecb4093650c99d179a05b1581a03
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: acd8d4c766dab444f316a534056d89cc37419651
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915991"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99540982"
 ---
 ## <a name="how-can-i-change-the-sign-in-address-on-my-visual-studio-cloud-subscription"></a>Come è possibile modificare l'indirizzo di accesso nella sottoscrizione cloud di Visual Studio?
 
@@ -27,5 +27,4 @@ Se è stata acquistata una o più sottoscrizioni cloud per se stessi, è stato c
 0. Modificare l'indirizzo di posta elettronica nel modo desiderato.
 0. Fare clic su **Salva**.
 
-> [!NOTE]
-> Questa operazione non comporta la modifica dell'indirizzo di posta elettronica usato per accedere al portale di amministrazione.
+Nota: questa operazione non comporta la modifica dell'indirizzo di posta elettronica usato per accedere al portale di amministrazione.

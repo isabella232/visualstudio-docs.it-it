@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: 81c9013c59ffa8fc503e71202941b044f90b139a
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 477753ab93205aa838389313a0ad2c96487aacc3
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147409"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541144"
 ---
 ## <a name="im-unable-to-download-or-activate-software-excluding-visual-studio-family"></a>Non è possibile scaricare o attivare il software (esclusa la famiglia di Visual Studio)
 
@@ -34,4 +34,4 @@ I download del software disponibili variano a seconda della sottoscrizione di Vi
 È anche possibile visitare la pagina [codici Product Key](https://my.visualstudio.com/productkeys)   in cui tutte le chiavi sono disponibili nell'aggregazione. È possibile modificare la colonna Note per identificare quando e perché la chiave è stata richiesta. 
 
 ## <a name="more-information-about-downloads"></a>Ulteriori informazioni sui download 
-Scopri di [più](https://docs.microsoft.com/visualstudio/subscriptions/find-keys) su come trovare e richiedere i codici Product Key e i download.  
+Scopri di più su come [trovare e richiedere i codici Product Key e i download](https://docs.microsoft.com/visualstudio/subscriptions/find-keys).  

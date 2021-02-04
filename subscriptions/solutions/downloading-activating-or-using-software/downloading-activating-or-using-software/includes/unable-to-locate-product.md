@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: e4d24412ab4e3aee22a9184d23ddbefb6ceb35fa
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 03ffd1e9a80b69652040653d2cacfdfd2ebb4e2d
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147661"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541054"
 ---
 ## <a name="im-unable-to-locate-the-product-i-need-to-download"></a>Non riesco a trovare il prodotto che devo scaricare.
 
@@ -34,4 +34,4 @@ I download del software disponibili dipendono dalla sottoscrizione in uso. È po
 È anche possibile visitare la pagina [codici Product Key](https://my.visualstudio.com/productkeys)   in cui tutte le chiavi sono disponibili nell'aggregazione. È possibile modificare la colonna Note per identificare quando e perché la chiave è stata richiesta. 
 
 ## <a name="more-information-about-product-keys"></a>Ulteriori informazioni sui codici Product Key
-Scopri di [più](https://docs.microsoft.com/visualstudio/subscriptions/find-keys) su come trovare e richiedere i codici Product Key e i download.  
+Scopri di più su come [trovare e richiedere i codici Product Key e i download](https://docs.microsoft.com/visualstudio/subscriptions/find-keys).  

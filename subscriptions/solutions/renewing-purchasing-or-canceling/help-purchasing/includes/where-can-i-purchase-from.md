@@ -10,12 +10,12 @@ user.type: subscriber
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: e79c8a818b4e2bf787225342c9ad2c344cfbc74c
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: be2c22f6ea8bb9b6b98823b8adbe763137fdec1a
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916021"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541184"
 ---
 ## <a name="where-to-purchase-subscriptions"></a>Dove acquistare le sottoscrizioni 
 
@@ -42,8 +42,8 @@ Con le sottoscrizioni mensili, è possibile noleggiare Visual Studio e Azure Dev
 * [Sottoscrizione Visual Studio Professional-mensile](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly) 
 * [Sottoscrizione Visual Studio Enterprise-mensile](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly) 
 
-[Altre informazioni](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq) sulla fatturazione mensile delle Sottoscrizioni di Visual Studio. 
+Scopri di più sulla [fatturazione mensile di sottoscrizioni di Visual Studio](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq). 
 
 ## <a name="volume-licensing"></a>Contratti multilicenza 
 
-Le sottoscrizioni con contratti multilicenza sono disponibili quando un'organizzazione deve acquistare un numero elevato di sottoscrizioni. [Scopri di più](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) sull'acquisto tramite contratti multilicenza.
+Le sottoscrizioni con contratti multilicenza sono disponibili quando un'organizzazione deve acquistare un numero elevato di sottoscrizioni. Scopri di più sull' [acquisto tramite contratti multilicenza](https://www.microsoft.com/licensing/how-to-buy/how-to-buy).

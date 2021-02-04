@@ -1,5 +1,5 @@
 ---
-title: Non è possibile visualizzare il credito mensile di Azure nel portale di Azure.
+title: Non è possibile visualizzare il credito mensile di Azure nell'portale di Azure
 description: Non è possibile visualizzare il credito mensile di Azure dopo aver eseguito l'accesso al portale di Azure
 ms.topic: include
 ms.assetid: 48420a4c-11b4-4bbd-a509-2c939d24e81a
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 48f52f1381bb890942e6f5ed3f1772c0735b1fb8
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 5a5322563be438c734b03c9d834ffd545cb6da43
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147630"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541033"
 ---
 ## <a name="im-unable-to-see-my-azure-monthly-credit-in-the-azure-portal"></a>Non è possibile visualizzare il credito mensile di Azure nel portale di Azure.
 
@@ -46,6 +46,6 @@ Le sottoscrizioni di Azure create tramite il vantaggio delle sottoscrizioni di V
 
 ## <a name="more-information-about-azure-monthly-credits"></a>Altre informazioni sui crediti mensili di Azure
 
-[Altre informazioni su](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure) attivazione, idoneità e altre risorse di supporto.  
+Altre [informazioni su attivazione, idoneità e altre risorse di supporto](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure).  
 
-[Informazioni su come](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits) usare i crediti di Azure inclusi nella sottoscrizione di Visual Studio. 
+[Informazioni su come usare i crediti di Azure](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits) inclusi nella sottoscrizione di Visual Studio. 
