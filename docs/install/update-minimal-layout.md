@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27a9c0de35bb6f9944015391c5f933bef28f4b9d
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168749"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99533565"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Aggiornare Visual Studio usando un layout offline minimo
 
@@ -53,7 +53,7 @@ Questo strumento Crea layout di aggiornamento per Visual Studio 2017 (15,9) e ve
 
 ```MinimalLayout.exe [command] <options>...```
 
-#### <a name="commands"></a>Comandi:
+#### <a name="commands"></a>Comandi
 * **Anteprima**: usare questo comando per visualizzare in anteprima il numero di pacchetti che verrà scaricato e lo spazio totale usato per creare questo layout. 
 * **Genera**: usare questo comando per generare il layout minimo per l'aggiornamento di Visual Studio.
 * **Rigenera**: usare questo comando per rigenerare un layout usando un file di risposta layout minimo esistente. Ogni layout minimo produce un `MinimalLayout.json` file di risposta che contiene i parametri di input del layout minimo originali. Per rigenerare il layout minimo, è possibile usare il comando **Rigenera** e un `MinimalLayout.json` file di risposta. Questa opzione è utile se si vuole creare un layout minimo per un nuovo aggiornamento di Visual Studio in base al file di risposta del layout minimo precedente.
@@ -92,6 +92,8 @@ Prima di creare il layout, è possibile individuare le dimensioni totali del dow
 
 Verranno esaminati alcuni esempi di come visualizzare in anteprima, generare e rigenerare un layout minimo:
 
+::: moniker range="vs-2019"
+
 - In primo luogo, di seguito è riportato un esempio di come visualizzare in anteprima un layout per Visual Studio Enterprise versioni 16.4.0 in 16.4.4 solo per l'inglese.
 
     ```cmd
@@ -123,6 +125,44 @@ Un paio di altri esempi di utilizzo del comando **generate** :
     ```cmd
     MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
     ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+- In primo luogo, di seguito è riportato un esempio di come visualizzare in anteprima un layout per Visual Studio Enterprise versioni 15.0.0 in 15.9.31 solo per l'inglese.
+
+    ```cmd
+    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
+    ```
+
+- Di seguito viene illustrato come generare lo stesso layout con un carico di lavoro.
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
+    ```
+
+- Di seguito viene illustrato come rigenerare un layout minimo offline usando un file di risposta esistente. 
+
+    ```cmd
+    MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
+    ```
+
+Un paio di altri esempi di utilizzo del comando **generate** :
+
+- Ecco come aggiungere un carico di lavoro aggiuntivo e includere solo i pacchetti consigliati. 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+    ```
+
+- Infine, ecco come includere più lingue nel layout minimo. 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
+    ```
+
+::: moniker-end
 
 ### <a name="how-to-maintain-a-minimal-layout"></a>Come mantenere un layout minimo
 
@@ -178,7 +218,7 @@ L'aggiornamento viene applicato a un'istanza di Visual Studio in due passaggi. P
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Installa Visual Studio](install-visual-studio.md)
 * [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
