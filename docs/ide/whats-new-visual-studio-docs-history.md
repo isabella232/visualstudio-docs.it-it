@@ -2,7 +2,7 @@
 title: 'Documenti di Visual Studio: cronologia delle novità '
 titleSuffix: ''
 description: Cronologia delle novità nella documentazione di Visual Studio
-ms.date: 01/11/2021
+ms.date: 02/01/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,16 +15,80 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 49c8d18a35cbe4a64585efa9bc16fd8afd250404
-ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
+ms.openlocfilehash: 899334e6ac4a952ea2d33f01d95ecfbe0a972653
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98113580"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572967"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Cronologia delle novità nella documentazione di Visual Studio
 
-Benvenuti alla cronologia delle novità di Visual Studio docs. Questo articolo contiene le principali modifiche apportate ai documenti prima del 2020 dicembre (a partire dal luglio 2020). Per le ultime novità, vedere la [documentazione di Visual Studio:](whats-new-visual-studio-docs.md)novità della documentazione.
+Benvenuti alla cronologia delle novità di Visual Studio docs. Questo articolo contiene le principali modifiche apportate ai documenti prima del 2021 gennaio (a partire dal luglio 2020). Per le ultime novità, vedere la [documentazione di Visual Studio:](whats-new-visual-studio-docs.md)novità della documentazione.
+
+## <a name="december-2020"></a>Dicembre 2020
+### <a name="azure"></a>Azure
+
+**Nuovi articoli**
+
+- [Aggiunta di app Azure configurazione con Visual Studio servizi connessi](../azure/vs-azure-tools-connected-services-app-configuration.md) -App config servizi connessi esercitazione
+
+### <a name="code-quality"></a>Qualità del codice
+
+**Articoli aggiornati**
+
+- [Panoramica](../code-quality/use-roslyn-analyzers.md) -compilazione dalla riga di comando con EditorConfig
+- [Abilitare o installare gli analizzatori .NET di terze parti](../code-quality/install-net-analyzers.md)
+  - Aggiungere maggiore chiarezza ai documenti di migrazione per FxCopAnalyzers in NetAnalyzers
+  - Ridisporre il sommario per gli analizzatori .NET
+- [Eseguire la migrazione da analizzatori FxCop ad analizzatori .NET](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) -aggiungere maggiore chiarezza alla documentazione per la migrazione di FxCopAnalyzers in NetAnalyzers
+
+### <a name="containers"></a>Contenitori
+
+**Articoli aggiornati**
+
+- [Risolvere i problemi relativi allo sviluppo di Visual Studio con Docker](../containers/troubleshooting-docker-errors.md) -aggiornamento di Docker per Visual Studio Guida alla risoluzione dei problemi
+
+### <a name="debugger"></a>Debugger
+
+**Articoli aggiornati**
+
+- [Domande frequenti: trovare la funzionalità di debug necessaria in Visual Studio](../debugger/find-your-debugging-task.md) -attività di individuazione per trovare l'attività di debug e gli argomenti introduttivi
+
+### <a name="get-started"></a>Introduzione
+
+**Articoli aggiornati**
+
+- [Esercitazione: creare una semplice app console c# in Visual Studio](../get-started/csharp/tutorial-console.md) -esercitazione sulla console c#: la parte 2 si applica solo a vs 2019
+
+### <a name="ide"></a>IDE
+
+**Articoli aggiornati**
+
+- [Soluzioni e progetti in Visual Studio](./solutions-and-projects-in-visual-studio.md) -argomenti relativi agli aggiornamenti per progetti & soluzioni
+- [Creare un nuovo progetto in Visual Studio](./create-new-project.md)
+  - perfezionare il testo ALT per screenshot e diagrammi
+  - altri aggiornamenti per le soluzioni & argomenti relativi ai progetti
+- [Risorse per la risoluzione dei problemi relativi agli errori IDE](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md) -rivedere la sezione delle risorse del forum obsolete
+- [Usare soluzioni e progetti](./creating-solutions-and-projects.md) -altri aggiornamenti alle soluzioni & argomenti sui progetti
+- [Come segnalare un problema con Visual Studio o il programma di installazione di Visual Studio](./how-to-report-a-problem-with-visual-studio.md)
+  - Schermata aggiornata
+  - Modifiche della community degli sviluppatori
+- [Suggerimenti per le prestazioni di Visual Studio](./visual-studio-performance-tips-and-tricks.md) : aggiornare la sezione Disable strumenti di diagnostica
+- [Introduzione a progetti e soluzioni](../get-started/tutorial-projects-solutions.md)
+  - argomenti relativi agli aggiornamenti a soluzioni & progetti
+  - Aggiornare tutorial-projects-solutions.md
+  - opzione di menu from mancante
+
+### <a name="test"></a>Test
+
+**Articoli aggiornati**
+
+- [Introduzione a unit test](../test/getting-started-with-unit-testing.md) -lavoro di individuazione e altri miglioramenti per gli strumenti di test
+- [Esaminare prima di tutto gli strumenti di test in Visual Studio](../test/improve-code-quality.md) : lavoro di individuazione e altri miglioramenti per gli strumenti di test
+- [Strumenti di test in Visual Studio # obbligatorio; titolo della pagina visualizzato nei risultati della ricerca. Includere il marchio. < 60 caratteri.](../test/index.yml) -Lavoro di individuazione e altri miglioramenti per gli strumenti di test
+- [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md) -aggiungere il codice XML della playlist dinamica per i Framework diff
+
 ## <a name="november-2020"></a>Novembre 2020
 ### <a name="code-quality"></a>Qualità del codice
 

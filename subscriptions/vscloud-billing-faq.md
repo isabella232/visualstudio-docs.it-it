@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 10/21/2020
+ms.date: 02/04/2021
 ms.topic: conceptual
 description: Domande sulla fatturazione per sottoscrizioni cloud.
-ms.openlocfilehash: 0140a6250f2c04ad33fec962283e035393a03aae
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a812965a549f2e6e6d6c58366d943f3129d951cd
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353421"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572876"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Domande frequenti sulla fatturazione per le sottoscrizioni cloud di Visual Studio
 Assicurarsi di [confrontare i vantaggi e i prezzi delle sottoscrizioni cloud](https://visualstudio.microsoft.com/vs/pricing/) per comprendere i vantaggi di ogni sottoscrizione di Visual Studio, esaminando le differenze tra le sottoscrizioni cloud e standard di Visual Studio, i dettagli dei vantaggi per i sottoscrittori e altri aspetti.
@@ -28,6 +28,9 @@ Non possono essere usati alcuni tipi di sottoscrizioni di Azure, tra cui la [ver
 
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>D: è obbligatorio acquistare altri servizi di Azure?
 R: assolutamente no. Se si vogliono acquistare solo sottoscrizioni cloud di Visual Studio tramite Azure, è possibile farlo.
+
+### <a name="q-where-can-i-view-my-billing-and-usage-data"></a>D: dove è possibile visualizzare i dati di fatturazione e di utilizzo?
+R: ottenere informazioni sulla [visualizzazione della fattura e dell'utilizzo](https://docs.microsoft.com/azure/cost-management-billing/manage/download-azure-invoice-daily-usage-date).
 
 ## <a name="enterprise-agreement-ea-customers"></a>Clienti Enterprise Agreement (EA)
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>D: è possibile usare un contratto Enterprise Agreement per acquistare sottoscrizioni cloud di Visual Studio?
@@ -96,7 +99,7 @@ R: Sì, è possibile, se il rivenditore partecipa al programma Cloud Solution Pr
 - [Supporto per la sottoscrizione di Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 - [Acquisto di sottoscrizioni cloud di Visual Studio per i CSP](vscloud-csp.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Documentazione di Visual Studio](/visualstudio/)
 - [Documentazione di Azure DevOps](/azure/devops/)
 - [Documentazione di Azure](/azure/)
