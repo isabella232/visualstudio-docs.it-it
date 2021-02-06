@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d451735042374f0e3c6fb2154cd54520a069fc
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 0e136339ae5f34a7e65c19cf14c9ff840c620b25
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761433"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628058"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Presentazione del debugger di Visual Studio
 
@@ -93,7 +93,7 @@ Questo comando riprende l'esecuzione dell'app e fa avanzare il debugger fino all
 
 ## <a name="run-to-cursor"></a>Esecuzione fino al cursore
 
-Quando si modifica il codice (anziché sospendere il debugger), fare clic con il pulsante destro del mouse su una riga di codice nell'app e scegliere **Esegui fino al cursore**. Questo comando avvia il debug e imposta un punto di interruzione temporaneo nella riga di codice corrente.
+Quando si modifica il codice (anziché sospendere il debugger), fare clic con il pulsante destro del mouse su una riga di codice nell'app e scegliere **Esegui fino al cursore** oppure premere **CTRL** per **F10**. Questo comando avvia il debug e imposta un punto di interruzione temporaneo nella riga di codice corrente.
 
 ![Esegui fino al cursore](../debugger/media/dbg-tour-run-to-cursor.png "Esegui fino al cursore")
 
@@ -108,7 +108,7 @@ Questo comando è utile quando si modifica il codice e si vuole impostare rapida
 
 ## <a name="restart-your-app-quickly"></a>Riavviare rapidamente l'app
 
-Fare clic sul pulsante **Riavvia** ![app riavvia](../debugger/media/dbg-tour-restart.png "Riavvia l'app") sulla barra degli strumenti Debug (**CTRL + MAIUSC + F5**).
+Fare clic sul pulsante **Riavvia** ![app riavvia](../debugger/media/dbg-tour-restart.png "Riavvia l'app") sulla barra degli strumenti Debug oppure premere **CTRL + MAIUSC + F5**.
 
 Il pulsante **Riavvia** consente di risparmiare tempo rispetto all'arresto dell'app e al riavvio del debugger. Il debugger viene messo in pausa in corrispondenza del primo punto di interruzione raggiunto eseguendo il codice.
 

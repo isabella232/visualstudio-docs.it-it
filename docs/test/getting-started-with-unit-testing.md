@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31314a669815d38ed408a28e033e4943df0f75d3
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: 328f7540846f923fe186a76c4dcc03347f9c3214
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756656"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628019"
 ---
 # <a name="get-started-with-unit-testing"></a>Introduzione agli unit test
 
@@ -180,13 +180,13 @@ In questa sezione viene descritto come creare un progetto unit test.
 1. Aprire [Esplora test](../test/run-unit-tests-with-test-explorer.md).
 
    ::: moniker range=">=vs-2019"
-   Per aprire Esplora test, scegliere **test** > **Esplora** test dalla barra dei menu superiore.
+   Per aprire Esplora test, scegliere **test** > **Esplora** test dalla barra dei menu superiore oppure premere **CTRL** + **E**, **T**.
    ::: moniker-end
    ::: moniker range="vs-2017"
    Per aprire Esplora test, scegliere **test** >  > **Esplora test** di Windows dalla barra dei menu superiore.
    ::: moniker-end
 
-1. Eseguire gli unit test facendo clic su **Esegui tutto**.
+1. Per eseguire gli unit test, fare clic su **Esegui tutto** (oppure premere **CTRL**  +  **R**, **V**).
 
    ![Eseguire unit test in Esplora test](media/vs-2019/test-explorer-run-all.png)
 
@@ -274,7 +274,7 @@ Per aggiungere un progetto unit test:
 
    ![Aggiungere codice al file di codice dello unit test](media/vs-2019/unit-test-method.png)
 
-6. Eseguire il test da **Esplora test** o facendo clic con il pulsante destro del mouse sul codice di test e scegliendo **Esegui test**.
+6. Eseguire il test da **Esplora test** oppure facendo clic con il pulsante destro del mouse sul codice di test e scegliendo **Esegui test** (o **CTRL**  +  **R**, **T**).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

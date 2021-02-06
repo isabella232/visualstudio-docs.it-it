@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: ed2e7f11a6e36c797bb6c506c19b0fff11fb5ad1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: f734435f93c60ab0b66bd258417d90541575e398
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598549"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99627980"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procedura dettagliata: Creare ed eseguire unit test per codice gestito
 
@@ -34,7 +34,7 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 1. Aprire Visual Studio.
 
-2. Scegliere **nuovo** progetto dal menu **file** > **Project**.
+2. Scegliere **nuovo** progetto dal menu **file** > .
 
    Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
@@ -138,7 +138,7 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 6. Rinominare il file *BankAccount.cs* facendo clic con il pulsante destro del mouse e scegliendo **Rinomina** in **Esplora soluzioni**.
 
-7. Nel menu **Compila** scegliere **Compila soluzione**.
+7. Scegliere **Compila soluzione** dal menu **Compila** (oppure premere **CTRL**  +  **MAIUSC**  +  **B**).
 
 È ora disponibile un progetto che include metodi da testare. In questo articolo i test sono incentrati sul metodo `Debit`. Il metodo `Debit` viene chiamato quando si preleva denaro da un conto.
 
@@ -187,7 +187,7 @@ Creare una classe di test per verificare la classe `BankAccount`. È possibile u
 
 ### <a name="rename-a-file-and-class"></a>Rinominare un file e una classe
 
-1. Per rinominare un file, in **Esplora soluzioni** selezionare il file *UnitTest1.cs* nel progetto BankTests. Dal menu di scelta rapida scegliere **Rinomina** e quindi rinominare il file come *BankAccountTests.cs*.
+1. Per rinominare un file, in **Esplora soluzioni** selezionare il file *UnitTest1.cs* nel progetto BankTests. Dal menu di scelta rapida scegliere **Rinomina** (oppure premere **F2**), quindi rinominare il file in *BankAccountTests.cs*.
 
 ::: moniker range="vs-2017"
 
@@ -197,7 +197,7 @@ Creare una classe di test per verificare la classe `BankAccount`. È possibile u
 
 ::: moniker range=">=vs-2019"
 
-2. Per rinominare la classe, posizionare il cursore su `UnitTest1` nell'editor del codice, fare clic con il pulsante destro del mouse e quindi scegliere **Rinomina**. Digitare **BankAccountTests** e quindi premere **INVIO**.
+2. Per rinominare la classe, posizionare il cursore sull' `UnitTest1` Editor del codice, fare clic con il pulsante destro del mouse su, quindi scegliere **Rinomina** (oppure premere **F2**). Digitare **BankAccountTests** e quindi premere **INVIO**.
 
 ::: moniker-end
 
@@ -289,11 +289,11 @@ Un metodo di test deve soddisfare i seguenti requisiti:
 
 ## <a name="build-and-run-the-test"></a>Compilare ed eseguire il test
 
-1. Scegliere **Compila soluzione** dal menu **Compila**.
+1. Scegliere **Compila soluzione** dal menu **Compila** (oppure premere **CTRL**  +  **MAIUSC**  +  **B**).
 
-2. Se **Esplora test** non è aperto, scegliere **Test** > **Finestre** > **Esplora test** dalla barra dei menu in alto.
+2. Se **Esplora test** non è aperto, aprirlo scegliendo **test**  >    >  **Esplora test** di Windows dalla barra dei menu superiore oppure premere **CTRL**  +  **E**, **T**.
 
-3. Scegliere **Esegui tutto** per eseguire il test.
+3. Scegliere **Esegui tutto** per eseguire il test oppure premere **CTRL**  +  **R**, **V**.
 
    Mentre il test è in esecuzione, la barra di stato nella parte superiore della finestra **Esplora test** viene animata. Al termine del test, la barra diventa verde se tutti i metodi di test vengono superati oppure rossa se almeno uno dei test ha esito negativo.
 
@@ -323,7 +323,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Eseguire nuovamente il test
 
-In **Esplora test** scegliere **Esegui tutto** per rieseguire il test. La barra verde/rossa diventa verde per indicare che il test è stato superato.
+In **Esplora test** scegliere **Esegui tutto** per rieseguire il test oppure premere **CTRL**  +  **R**, **V**. La barra verde/rossa diventa verde per indicare che il test è stato superato.
 
 ![Esplora test in Visual Studio 2019 che indica che il test è stato superato](media/test-explorer-banktests-passed.png)
 
@@ -471,6 +471,6 @@ I miglioramenti al codice di test hanno creato metodi di test più affidabili e 
 > [!TIP]
 > Questa procedura dettagliata usa il framework di unit test di Microsoft per il codice gestito. **Esplora test** consente anche di eseguire test da framework di unit test di terze parti che possiedono adapter per **Esplora test**. Per altre informazioni, vedere [installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 Per informazioni su come eseguire i test dalla riga di comando, vedere [Opzioni della riga di comando di VSTest.Console.exe](vstest-console-options.md).

@@ -29,16 +29,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
-ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
+ms.openlocfilehash: 3250eff2b5691ab344e2fedde80054415ec8ffcd
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031042"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99627967"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Associare a processi in esecuzione con il debugger di Visual Studio
 
-È possibile collegare il debugger di Visual Studio a un processo in esecuzione in un computer locale o remoto. Al termine dell'esecuzione del processo, selezionare **debug**  >  **Connetti a processo** oppure premere **CTRL** + **ALT** + **P** in Visual Studio e usare la finestra di dialogo **Connetti a processo** per aggiungere il debugger al processo.
+È possibile collegare il debugger di Visual Studio a un processo in esecuzione in un computer locale o remoto. Al termine dell'esecuzione del processo, selezionare **debug**  >  **Connetti a processo** oppure premere **CTRL** + **ALT** + **p** in Visual Studio e usare la finestra di dialogo **Connetti a processo** per aggiungere il debugger al processo.
 
 È possibile usare **Connetti a processo** per eseguire il debug di app in esecuzione in computer locali o remoti, eseguire il debug di più processi simultaneamente, eseguire il debug di app che non sono state create in Visual Studio o eseguire il debug di qualsiasi app non avviata da Visual Studio con il debugger collegato. Se, ad esempio, si esegue un'app senza il debugger e si raggiunge un'eccezione, è possibile connettersi al processo che esegue l'app e avviare il debug.
 
@@ -249,7 +249,7 @@ Se si desiderano informazioni più specifiche sui motivi per cui il debugger non
 
     La connessione non verrà eseguita e verrà visualizzato un messaggio di errore specifico.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Eseguire il debug di più processi](../debugger/debug-multiple-processes.md)
 - [Debug just-in-Time](../debugger/just-in-time-debugging-in-visual-studio.md)

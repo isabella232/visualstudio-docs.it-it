@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8487482b1d87ba87dfc3a8b1e07be1360227a2f
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 3fba148b409d8e2b5b9cbc3b629f9f7116509c74
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150444"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99627993"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usare i punti di interruzione nel debugger di Visual Studio
 
@@ -85,7 +85,7 @@ Un *punto di analisi è un* punto di interruzione che stampa un messaggio nella 
 
 **Per impostare una condizione del punto di interruzione:**
 
-1. Fare clic con il pulsante destro del mouse sul simbolo e selezionare **condizioni**. In alternativa, passare il puntatore del mouse sul simbolo del punto di interruzione, selezionare l'icona **delle impostazioni** e quindi selezionare **condizioni** nella finestra impostazioni del punto di **interruzione** .
+1. Fare clic con il pulsante destro del mouse sul simbolo del punto di interruzione e selezionare **condizioni** (oppure premere **ALT**  +  **F9**, **C**). In alternativa, passare il puntatore del mouse sul simbolo del punto di interruzione, selezionare l'icona **delle impostazioni** e quindi selezionare **condizioni** nella finestra impostazioni del punto di **interruzione** .
 
    È anche possibile impostare le condizioni nella finestra punti di **interruzione** facendo clic con il pulsante destro del mouse su un punto di interruzione e selezionando **Impostazioni**, quindi selezionando le **condizioni**.
 
@@ -124,7 +124,7 @@ Se si imposta una condizione del punto di interruzione con sintassi non valida, 
 
 1. Impostare un punto di interruzione nel codice dopo la creazione dell'oggetto.
 
-2. Avviare il debug e quando l'esecuzione viene sospesa in corrispondenza del punto di interruzione, selezionare **debug**  >    >  **variabili locali** di Windows o **ALT** + **4** per aprire la finestra **variabili locali** .
+2. Avviare il debug e quando l'esecuzione viene sospesa in corrispondenza del punto di interruzione, selezionare **debug**  >    >  **variabili locali** di Windows (oppure premere **CTRL**  +  **ALT**  +  **V**, **L**) per aprire la finestra **variabili locali** .
 
    Individuare l'istanza specifica dell'oggetto nella finestra **variabili locali** , fare clic con il pulsante destro del mouse su di essa e scegliere **Crea ID oggetto**.
 
@@ -169,7 +169,7 @@ Racchiudere i valori String tra virgolette doppie. È possibile combinare clauso
 
 **Per impostare un punto di interruzione della funzione:**
 
-1. Selezionare **debug**  >  **nuovo** punto  >  di **interruzione funzione** punto di interruzione oppure premere **ALT** + **F9**  >  **CTRL** + **B**.
+1. Selezionare **debug**  >  **nuovo** punto  >  di **interruzione funzione** punto di interruzione oppure premere **CTRL**  +  **K**, **B**.
 
    È anche possibile selezionare **nuovo** punto  >  di **interruzione della funzione** nella finestra punti di **interruzione** .
 
@@ -206,7 +206,7 @@ Racchiudere i valori String tra virgolette doppie. È possibile combinare clauso
 
 2. Trovare l'indirizzo dell'istanza (ad esempio, `0xcccccccc` ).
 
-3. Selezionare **debug**  >  **nuovo** punto  >  di **interruzione funzione** punto di interruzione oppure premere **ALT** + **F9**  >  **CTRL** + **B**.
+3. Selezionare **debug**  >  **nuovo** punto  >  di **interruzione funzione** punto di interruzione oppure premere **CTRL**  +  **K**, **B**.
 
 4. Aggiungere quanto segue alla casella **nome funzione** e selezionare linguaggio **C++** .
 
@@ -243,7 +243,7 @@ I punti di interruzione dei dati in .NET Core non funzionano per:
 
 **Per impostare un punto di interruzione dei dati:**
 
-1. In un progetto C++ avviare il debug e attendere che venga raggiunto un punto di interruzione. Scegliere **nuovo** punto di interruzione dati punto di interruzione dal menu **debug** .  >  
+1. In un progetto C++ avviare il debug e attendere che venga raggiunto un punto di interruzione. Scegliere nuovo  punto di   >  **interruzione dei dati** del punto di interruzione dal menu debug.
 
     È anche possibile selezionare **nuovo**  >  punto di **interruzione dei dati** nella finestra punti di **interruzione** oppure fare clic con il pulsante destro del mouse su un elemento nella finestra **auto**, **espressioni di controllo** o **variabili locali** e selezionare **Interrompi quando il valore cambia** nel menu di scelta rapida.
 
@@ -268,7 +268,7 @@ I punti di interruzione dei dati non funzionano nelle condizioni seguenti:
 
 Nella finestra punti di **interruzione** è possibile cercare, ordinare, filtrare, abilitare/disabilitare o eliminare punti di interruzione. È anche possibile impostare condizioni e azioni oppure aggiungere una nuova funzione o un nuovo punto di interruzione dei dati.
 
-Per aprire la finestra punti di **interruzione** , selezionare **debug** punti di  >    >  **interruzione** di Windows oppure premere **ALT** + **F9** o **CTRL** + **ALT** + **B**.
+Per aprire la finestra punti di **interruzione** , selezionare **debug** punti di  >    >  **interruzione** di Windows oppure premere **CTRL** + **ALT** + **B**.
 
 ![Finestra punti di interruzione](../debugger/media/breakpointswindow.png "finestra Punti di interruzione")
 
@@ -314,11 +314,11 @@ Per tracciare visivamente i punti di interruzione durante l'esecuzione del codic
 
 ### <a name="set-a-breakpoint-in-the-disassembly-window"></a>Imposta un punto di interruzione nella finestra Disassembly
 
-1. Per aprire la finestra **Disassembly** , è necessario sospenderla durante il debug. Selezionare **debug**  >    >  **Disassembly** Windows o premere **ALT** + **8**.
+1. Per aprire la finestra **Disassembly** , è necessario sospenderla durante il debug. Selezionare **debug**  >  **Windows**  >  **Disassembly** oppure premere **CTRL** + **ALT** + **D**.
 
 2. Nella finestra **Disassembly** fare clic sul margine sinistro dell'istruzione che si desidera interrompere. È anche possibile selezionarlo e premere **F9** oppure fare clic con il pulsante destro del mouse **e scegliere punto di interruzione**  >  **Inserisci** punto di interruzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Che cos'è il debug?](../debugger/what-is-debugging.md)
 - [Scrivi codice C# migliore con Visual Studio](../debugger/write-better-code-with-visual-studio.md)

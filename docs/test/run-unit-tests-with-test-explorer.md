@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c992a1a4fca536f219a69b9ab629f6f602b4dfb0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 52a910bddd2f75c631f130dddee22f8b2e05510b
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150509"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628045"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -34,7 +34,7 @@ Visual Studio include i framework di unit test Microsoft sia per il codice gesti
 
 ## <a name="run-tests-in-test-explorer"></a>Eseguire test in Esplora test
 
-Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visibile, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Finestre** e infine **Esplora test**.
+Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visibile, scegliere **test** dal menu di Visual Studio, scegliere **Windows**, quindi scegliere **Esplora test** (oppure premere **CTRL**  +  **E**, **T**).
 
 ::: moniker range="vs-2017"
 ![Esplora unit test](../test/media/ute_failedpassednotrunsummary.png)
@@ -64,11 +64,11 @@ Quando si eseguono, scrivono e rieseguono i test, Esplora test visualizza i risu
 ::: moniker range="vs-2017"
 È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
 
-- Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto**.
+- Per eseguire tutti i test in una soluzione, scegliere **Esegui tutto** (oppure premere **CTRL** + **R**, **V**).
 
 - Per eseguire tutti i test in un gruppo predefinito, scegliere **Esegui** e quindi scegliere il gruppo dal menu.
 
-- Selezionare i singoli test da eseguire, aprire il menu di scelta rapida per un test selezionato e quindi scegliere **Esegui test selezionati**.
+- Selezionare i singoli test da eseguire, aprire il menu di scelta rapida per un test selezionato e quindi scegliere **Esegui test selezionati** (oppure premere **CTRL** + **R**, **T**).
 
 - Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![Screenshot dell'interruttore di esecuzione dei test paralleli sulla barra degli strumenti di Esplora test di Visual Studio. Quando si seleziona questo pulsante, i test vengono eseguiti in parallelo.](../test/media/ute_parallelicon-small.png) sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 
@@ -77,11 +77,11 @@ Mentre il test viene eseguito, la barra **Superato/Non superato** nella parte su
 ::: moniker range=">=vs-2019"
 È possibile eseguire tutti i test nella soluzione, tutti i test in un gruppo o un set di test selezionati. Eseguire una delle operazioni seguenti:
 
-- Per eseguire tutti i test in una soluzione, scegliere l'icona **Esegui tutto**.
+- Per eseguire tutti i test in una soluzione, scegliere l'icona **Esegui tutto** oppure premere **CTRL** + **R**, **V**.
 
 - Per eseguire tutti i test in un gruppo predefinito, scegliere **Esegui** e quindi scegliere il gruppo dal menu.
 
-- Selezionare i singoli test da eseguire, aprire il menu di scelta rapida per un test selezionato e quindi scegliere **Esegui test selezionati**.
+- Selezionare i singoli test da eseguire, aprire il menu di scelta rapida per un test selezionato e quindi scegliere **Esegui test selezionati** (oppure premere **CTRL** + **R**, **T**).
 
 - Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test nel menu Impostazioni sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.
 ::: moniker-end
@@ -130,7 +130,7 @@ Se il test non viene superato, il riquadro dei dettagli mostra anche le informaz
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Visualizzare il codice sorgente di un metodo di test
 
-Per visualizzare il codice sorgente per un metodo di test nell'editor di Visual Studio, selezionare il test e quindi scegliere **Apri test** dal menu di scelta rapida (tastiera: **F12**).
+Per visualizzare il codice sorgente per un metodo di test nell'editor di Visual Studio, selezionare il test e quindi scegliere **Apri test** dal menu di scelta rapida (o premere **F12**).
 
 ## <a name="group-and-filter-the-test-list"></a>Raggruppare e filtrare l'elenco dei test
 
@@ -387,7 +387,7 @@ Esplora test può riprodurre un suono quando viene completata un'esecuzione del 
 ![Finestra di dialogo audio di Windows 10](../test/media/default-windows-10-sound-dialog.png)
 
 ::: moniker-end
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)
 - [Eseguire il debug di unit test con Esplora test](../test/debug-unit-tests-with-test-explorer.md)

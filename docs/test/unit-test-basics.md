@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 5efed99b9934ed91b2194b5a38c99134d6d4b5e5
+ms.sourcegitcommit: 686aa3516594ab951d48b192fc60b102eedaf9b7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833312"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99628032"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -236,7 +236,7 @@ public void My_Test ()
 
 ## <a name="run-tests-in-test-explorer"></a>Eseguire test in Esplora test
 
-Quando si compila il progetto di test, i test vengono visualizzati in **Esplora test**. Se **Esplora test** non è visibile, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Finestre** e infine **Esplora test**.
+Quando si compila il progetto di test, i test vengono visualizzati in **Esplora test**. Se **Esplora test** non è visibile, scegliere **test** dal menu di Visual Studio, scegliere **Windows**, quindi scegliere **Esplora test** (oppure premere **CTRL**  +  **E**, **T**).
 
 ::: moniker range="vs-2017"
 ![Esplora unit test](../test/media/ute_failedpassednotrunsummary.png)
@@ -260,7 +260,7 @@ La barra degli strumenti di **Esplora test** consente di individuare, organizzar
 ![Eseguire test dalla barra degli strumenti di Esplora test](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
 ::: moniker-end
 
-È possibile scegliere **Esegui tutto** per eseguire tutti i test oppure scegliere **Esegui** per scegliere un subset di test da eseguire. Selezionare un test per visualizzarne i dettagli nel riquadro dei dettagli del test. Scegliere **Apri test** dal menu di scelta rapida (tastiera: **F12**) per visualizzare il codice sorgente per il test selezionato.
+È possibile scegliere **Esegui tutto** per eseguire tutti i test (oppure premere **CTRL**  +  **r**, **V**) o scegliere **Esegui** per scegliere un subset di test da eseguire (**CTRL**  +  **r**, **T**). Selezionare un test per visualizzarne i dettagli nel riquadro dei dettagli del test. Scegliere **Apri test** dal menu di scelta rapida (tastiera: **F12**) per visualizzare il codice sorgente per il test selezionato.
 
 ::: moniker range="vs-2017"
 
