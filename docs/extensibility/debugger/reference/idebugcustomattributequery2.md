@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7cfa23e4-a05a-47a3-af6c-bd40c655014b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fe3969002c64ab361de76012c432e2bb5c61b5c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 331fba87de68b3cf5e135e0b6f633874236bec38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732483"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842407"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 Determina l'esistenza di un attributo personalizzato per questo campo e, se esistente, restituisce le informazioni sugli attributi.
@@ -26,7 +26,7 @@ Determina l'esistenza di un attributo personalizzato per questo campo e, se esis
 ## <a name="syntax"></a>Sintassi
 
 ```
-IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
+IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
@@ -49,7 +49,7 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 |------------|-----------------|
 |[EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)|Ottiene un enumeratore per tutti gli attributi personalizzati collegati a questo campo.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il metodo [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) può restituire un enumeratore per tutti gli attributi personalizzati definiti per questo campo.
 
 ## <a name="requirements"></a>Requisiti
@@ -59,7 +59,7 @@ IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce del provider di simboli](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

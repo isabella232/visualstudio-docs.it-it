@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 733eb439808d6cab2d290615751cf44ccd711022
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: b7d772ed757b231ce68fe27b74123f7f5878d0ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150613"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99845048"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visualizzare il codice disassembly nel debugger di Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -70,7 +70,7 @@ Per attivare o disattivare le informazioni facoltative, fare clic con il pulsant
 
 Una freccia gialla nel margine sinistro contrassegna il punto di esecuzione corrente. Per il codice nativo, il punto di esecuzione corrisponde al contatore di programma della CPU. Questo indicatore mostra l'istruzione successiva che verrà eseguita dal programma.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Procedura: Spostare verso l'alto o verso il basso una pagina di memoria](../debugger/how-to-page-up-or-down-in-memory.md)
 * [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bf515a8f-dcee-4004-8f81-543d547ceaae
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: edc4a209537ca4bd54d3f6d9343d1496ab7c0e90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecb8257d2428222fd18d6cafdfde950cb743f293
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844866"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 Recupera la dimensione del testo in questa posizione nel documento.
@@ -28,14 +28,14 @@ Recupera la dimensione del testo in questa posizione nel documento.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetSize( 
+HRESULT GetSize( 
    ULONG* pcNumLines,
    ULONG* pcNumChars
 );
 ```
 
 ```csharp
-int GetSize( 
+int GetSize( 
    ref uint pcNumLines,
    ref uint pcNumChars
 );
@@ -51,11 +51,11 @@ out Restituisce il numero di caratteri del testo.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
  [Solo C++] Se non si desidera un valore specifico, passare un valore NULL per il parametro.
 
  [Solo C#] È necessario specificare entrambi i parametri.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

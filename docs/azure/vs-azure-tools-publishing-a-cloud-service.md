@@ -2,17 +2,17 @@
 title: Pubblicazione di un Servizio cloud con gli Strumenti di Azure | Documentazione Microsoft
 description: Informazioni su come pubblicare progetti di servizi cloud di Azure tramite Visual Studio.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: f4aebb023aa764b0f2d7cc1c5426a63e7df81200
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 3a6bc08d3c293f67e10d79996968eeb483203095
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902129"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843982"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Pubblicazione di un servizio cloud con Visual Studio
 

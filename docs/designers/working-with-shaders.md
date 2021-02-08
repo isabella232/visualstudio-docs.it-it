@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce08d475c75f197180417dcf94f9d52f59fb2e7b
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: bff5aee4337a464498fc4ac027eb05b2da912b61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93133936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844892"
 ---
 # <a name="work-with-shaders"></a>Usare gli shader
 
@@ -25,7 +25,7 @@ ms.locfileid: "93133936"
 
 Uno *shader* è un programma per computer che esegue calcoli grafici, ad esempio le trasformazioni di vertice o la colorazione dei pixel. In genere viene eseguito su un'unità di elaborazione grafica (GPU) anziché su una CPU. Poiché le fasi della tradizionale pipeline grafica a funzioni fisse vengono ora eseguite per la maggior parte dai programmi shader, è possibile usare questi ultimi per creare una pipeline specifica per le esigenze dell'applicazione.
 
-I tipi più comuni di shader sono i *vertex shader* , che eseguono calcoli per vertice e sostituiscono i circuiti di trasformazione e di illuminazione a funzioni fisse in hardware per grafica non programmabile, e i *pixel shader* , che eseguono calcoli per pixel in grado di determinare il colore dei singoli pixel e sostituire i circuiti di combinazione dei colori a funzioni fisse in hardware per grafica non programmabile. Nell'hardware per grafica moderno sono inclusi anche altri tipi di shader: *hull shader* , *domain shader* e *geometry shader* per i calcoli di grafica e *compute shader* per i calcoli non di grafica. Nessuna di queste fasi è disponibile nell'hardware per grafica non programmabile. Gli shader sono stati originariamente creati tramite un linguaggio di tipo di assembly che ha fornito istruzioni dati in parallelo (SIMD) e incentrate su grafici (prodotto scalare). Ora gli shader vengono in genere creati usando linguaggi di alto livello simili al C, ad esempio HLSL (High Level Shader Language).
+I tipi più comuni di shader sono i *vertex shader*, che eseguono calcoli per vertice e sostituiscono i circuiti di trasformazione e di illuminazione a funzioni fisse in hardware per grafica non programmabile, e i *pixel shader*, che eseguono calcoli per pixel in grado di determinare il colore dei singoli pixel e sostituire i circuiti di combinazione dei colori a funzioni fisse in hardware per grafica non programmabile. Nell'hardware per grafica moderno sono inclusi anche altri tipi di shader: *hull shader*, *domain shader* e *geometry shader* per i calcoli di grafica e *compute shader* per i calcoli non di grafica. Nessuna di queste fasi è disponibile nell'hardware per grafica non programmabile. Gli shader sono stati originariamente creati tramite un linguaggio di tipo di assembly che ha fornito istruzioni dati in parallelo (SIMD) e incentrate su grafici (prodotto scalare). Ora gli shader vengono in genere creati usando linguaggi di alto livello simili al C, ad esempio HLSL (High Level Shader Language).
 
 È possibile usare la finestra di progettazione shader per creare i pixel shader in modo interattivo anziché mediante l'immissione e la compilazione di codice. Nella finestra di progettazione shader, uno shader è definito da una serie di nodi che rappresentano i dati e le operazioni, oltre che da connessioni tra i nodi che rappresentano il flusso dei valori di dati e risultati intermedi attraverso lo shader stesso. Usando questo approccio e l'anteprima in tempo reale nella finestra di progettazione shader, è possibile visualizzare l'esecuzione dello shader in modo più facile e "scoprire" variazioni interessanti mediante sperimentazioni.
 

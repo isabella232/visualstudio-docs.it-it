@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7ed01441-686f-4032-8268-a4c750f19f85
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6132235a7e4789c7d9efe5bae9d7fd531112dab4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14b5bdc8a8be5734da765f0396fb96830042969f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842225"
 ---
 # <a name="ienumdebugreferenceinfo2"></a>IEnumDebugReferenceInfo2
 Questa interfaccia enumera [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) strutture.
@@ -45,7 +45,7 @@ IEnumDebugReferenceInfo2 : IUnknown
 |[Clone](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-getcount.md)|Ottiene il numero di strutture di [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) in un enumeratore.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Un riferimento è essenzialmente un tipo e un indirizzo, mentre una proprietà è un nome, un tipo e un indirizzo. Un riferimento viene reso persistente fino a quando l'oggetto a cui si fa riferimento esiste nella memoria. Per ulteriori informazioni, vedere [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) .
 
 ## <a name="requirements"></a>Requisiti
@@ -55,7 +55,7 @@ IEnumDebugReferenceInfo2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

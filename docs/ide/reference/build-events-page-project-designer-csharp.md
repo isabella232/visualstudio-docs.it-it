@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5f70557338a48931a3d109f345714d219f428f50
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 51b430a18a3d0934c16de19cbde82177a5f21f12
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136849"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836462"
 ---
 # <a name="build-events-page-project-designer-c"></a>Pagina Eventi di compilazione, Progettazione progetti (C#)
 
@@ -98,7 +98,7 @@ Per un evento di post-compilazione, utilizzare il nome `PostBuild` e impostare l
 > [!NOTE]
 > Queste modifiche al file di progetto sono state apportate per supportare i progetti in stile SDK. Se si esegue la migrazione manuale di un file di progetto dal formato precedente al formato di tipo SDK, è necessario eliminare `PreBuildEvent` le `PostBuildEvent` proprietà e e sostituirle con le `PreBuild` `PostBuild` destinazioni e come illustrato nel codice precedente. Per informazioni su come stabilire se il progetto è un progetto di tipo SDK, vedere [controllare il formato del progetto](/nuget/resources/check-project-format).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: specificare gli eventi di compilazione (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Procedura: specificare gli eventi di compilazione (C#)](../../ide/how-to-specify-build-events-csharp.md)

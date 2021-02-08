@@ -2,17 +2,17 @@
 title: Pubblicare un servizio cloud di Azure
 description: Informazioni su come configurare le varie impostazioni della procedura guidata Pubblica l'applicazione Azure di Visual Studio
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 87082a0d4df4542f36b1ce95cba92d261a2b4d9e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f965d8e7f71ba34be9901d77fa4f0af881805bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902311"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844060"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Uso della procedura guidata Pubblica l'applicazione Azure di Visual Studio
 

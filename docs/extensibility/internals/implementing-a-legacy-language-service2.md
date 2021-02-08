@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7da218a9ada593731e6205e017861084e73adc
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: f870da49cdf82203e7dd435601f93a75cb16dccd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761140"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839963"
 ---
 # <a name="implementing-a-legacy-language-service-2"></a>Implementazione di un servizio di linguaggio Legacy 2
 Per implementare un servizio di linguaggio utilizzando il Framework di pacchetto gestito (MPF), è necessario derivare una classe dalla <xref:Microsoft.VisualStudio.Package.LanguageService> classe e implementare i metodi e le proprietà astratti seguenti:

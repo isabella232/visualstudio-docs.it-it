@@ -2,18 +2,18 @@
 title: Debug di un servizio cloud o di una macchina virtuale di Azure
 description: Debug di un servizio cloud o di una macchina virtuale in Visual Studio
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c6e03bb4048b077bb4e1faa8b0382a3f4dbaf856
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: c7a95c43435cf78f169ce363b3e8fe301e9d0cbe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844333"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debug di un servizio cloud o di una macchina virtuale di Azure in Visual Studio
 
@@ -77,7 +77,7 @@ Se si abilita il debug remoto per un servizio cloud, esso non produce una riduzi
 
     ![Finestra di dialogo Seleziona tipo di codice](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. Per identificare i processi a cui è collegato il debugger, sulla barra dei menu selezionare **debug**  >  **Windows**  >  **processi** Windows e aprire la finestra di dialogo **processi** . (Tastiera: CTRL+ALT+Z) Per disconnettere un processo specifico, aprire il menu di scelta rapida e quindi selezionare **Disconnetti processo**. In alternativa, individuare il nodo dell'istanza in Esplora server, individuare il processo, aprire il relativo menu di scelta rapida e quindi selezionare **Disconnetti processo**.
+4. Per identificare i processi a cui è collegato il debugger, sulla barra dei menu selezionare **debug**  >    >  **processi** Windows e aprire la finestra di dialogo **processi** . (Tastiera: CTRL+ALT+Z) Per disconnettere un processo specifico, aprire il menu di scelta rapida e quindi selezionare **Disconnetti processo**. In alternativa, individuare il nodo dell'istanza in Esplora server, individuare il processo, aprire il relativo menu di scelta rapida e quindi selezionare **Disconnetti processo**.
 
     ![Debug di processi](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 

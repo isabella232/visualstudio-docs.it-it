@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f366f7c9-358d-46c8-993f-32ff86539833
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e05677122b7d4e4eb025a9382ede1509374de894
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f1149e9522803a199034395697e5c88bd988840
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717914"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842192"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 Questo metodo crea un servizio visualizzatore.
@@ -28,22 +28,22 @@ Questo metodo crea un servizio visualizzatore.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT CreateVisualizerService(
-   IDebugBinder*              binder,
-   IDebugSymbolProvider*      pSymProv,
-   IDebugAddress*             pAddress,
-   IEEVisualizerDataProvider* dataProvider,
-   IEEVisualizerService**     ppService
+HRESULT CreateVisualizerService(
+   IDebugBinder*              binder,
+   IDebugSymbolProvider*      pSymProv,
+   IDebugAddress*             pAddress,
+   IEEVisualizerDataProvider* dataProvider,
+   IEEVisualizerService**     ppService
 );
 ```
 
 ```csharp
-int CreateVisualizerService(
-   IDebugBinder binder,
-   IDebugSymbolProvider      pSymProv,
-   IDebugAddress             pAddress,
-   IEEVisualizerDataProvider dataProvider,
-   out IEEVisualizerService  ppService
+int CreateVisualizerService(
+   IDebugBinder binder,
+   IDebugSymbolProvider      pSymProv,
+   IDebugAddress             pAddress,
+   IEEVisualizerDataProvider dataProvider,
+   out IEEVisualizerService  ppService
 );
 ```
 
@@ -66,10 +66,10 @@ out Il servizio creato.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  I `binder` `pSymProv` parametri, e `pAddress` sono stati tutti passati al `IDebugParsedExpression::EvaluateSync` metodo. `CreateVisualizerService` deve essere chiamato solo da `IDebugParsedExpression::EvaluateSync` come parte del supporto dell'analizzatore di espressioni per i visualizzatori di tipi.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 76ac9b77-f536-43b5-a9fc-984854b1c566
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e761a9bcbbf2f35555ae30065cd239f4d7587ff4
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 74ac0ffad60e2e637318b26d875127b01c2d140d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148598"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99845087"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Procedura: ripristinare comandi nascosti del debugger
 Quando si installa Visual Studio, viene chiesto di scegliere una serie di impostazioni IDE predefinite per il linguaggio di programmazione principale. Le impostazioni IDE predefinite per alcuni linguaggi possono nascondere determinati comandi del debugger.
@@ -74,6 +74,6 @@ Quando si installa Visual Studio, viene chiesto di scegliere una serie di impost
 
 9. Fare clic su **Close**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

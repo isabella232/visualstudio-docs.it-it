@@ -2,17 +2,17 @@
 title: Accesso a Macchine virtuali di Azure da Esplora server | Documentazione Microsoft
 description: Panoramica su come visualizzare, creare e gestire macchine virtuali di Azure (VM) in Esplora Server in Visual Studio.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 653a9be556441f5f8d5fc1c1053b144dc97dd3b2
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a40434845187490ee4f8437f8e15963bddd1998f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901870"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843787"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Accesso alle macchine virtuali di Azure da Esplora server
 

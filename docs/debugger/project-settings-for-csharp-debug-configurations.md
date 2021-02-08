@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 262e46436f1391ae21df0ccdd3ca308eecb347da
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 1adc574241ba34f8170f1c8b1f38c198e3b6ff58
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205567"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842695"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Impostazioni di progetto per configurazioni di debug C#
 
@@ -61,5 +61,5 @@ Per altre informazioni, vedere [Configurazioni di debug e rilascio](how-to-set-d
 |**Output**  >  di **Percorso di output**|Viene in genere impostato su *bin\Debug* per il debug.|
 |Pulsante **Avanzate**|Per informazioni sulle opzioni di debug avanzate, vedere [finestra di dialogo Impostazioni di compilazione avanzate (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md). Il formato portatile per i file di simboli (con *estensione PDB*) è un recente formato multipiattaforma per le app .NET Core.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Impostazioni del debugger e preparazione](../debugger/debugger-settings-and-preparation.md)

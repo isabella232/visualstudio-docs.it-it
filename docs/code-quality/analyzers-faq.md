@@ -8,15 +8,15 @@ helpviewer_keywords:
 - analyzers, faq
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 48dcb2d01e53502c371595048666fd94c267b6ec
-ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
+ms.openlocfilehash: 6d67471027f36d0e22c055f4306ce2137d972463
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97646385"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843748"
 ---
 # <a name="code-analysis-faq"></a>Domande frequenti sull'analisi del codice
 
@@ -102,7 +102,7 @@ Gli [analizzatori StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers
 
 **R**: la pagina delle proprietà dell'analisi del codice a livello di soluzione è stata rimossa a favore del gruppo di proprietà condiviso più affidabile. Per la gestione dell'analisi del codice a livello di progetto, la pagina delle proprietà analisi codice è ancora disponibile. Per i progetti gestiti, è anche consigliabile eseguire la migrazione da RuleSets a EditorConfig per la configurazione delle regole.  Per la condivisione di RuleSet tra più progetti in una soluzione o in un repository, è consigliabile definire un gruppo di proprietà con la proprietà [CodeAnalysisRuleSet](../code-quality/using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) in un file props/targets condiviso o in un file *Directory. props/directory. targets* . Se non si dispone di tali oggetti o destinazioni comuni che tutti i progetti importano, è consigliabile aggiungere tale gruppo di proprietà a una directory [. props o a un file directory. targets](../msbuild/customize-your-build.md) in una directory della soluzione di primo livello, che viene importata automaticamente in tutti i file di progetto definiti nella directory o nelle relative sottodirectory.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica degli analizzatori](roslyn-analyzers-overview.md)
 - [Impostazioni della convenzione di codifica .NET per EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)

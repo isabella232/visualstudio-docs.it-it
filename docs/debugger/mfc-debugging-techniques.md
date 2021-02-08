@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf00191aff408b1133c281e10eea17e3a923215
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: b4a3f0f675df70643876b7bb5480cb8c885d8854
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975121"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844996"
 ---
 # <a name="mfc-debugging-techniques"></a>Tecniche di debug MFC
 Se si effettua il debug di un programma MFC, possono essere utili le seguenti tecniche di debug.
@@ -482,5 +482,5 @@ La compilazione di moduli selezionati con le librerie di debug MFC consente di e
 
    [Contenuto dell'argomento](#BKMK_In_this_topic)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 [Debug del codice nativo](../debugger/debugging-native-code.md)

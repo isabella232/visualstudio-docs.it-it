@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 34b2cf99-2e52-4757-8969-1d12ac517ec0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28ff6065bbe83852b5acc3ffe253a0bdabcc67ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cfaf6dd332f17bd934a55f700e4d28096fba8b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725107"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844775"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 Avvia un file eseguibile.
@@ -28,7 +28,7 @@ Avvia un file eseguibile.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT LaunchSuspended( 
+HRESULT LaunchSuspended( 
    LPCOLESTR        pszExe,
    LPCOLESTR        pszArgs,
    LPCOLESTR        pszDir,
@@ -41,7 +41,7 @@ HRESULT LaunchSuspended( 
 ```
 
 ```csharp
-int LaunchSuspended( 
+int LaunchSuspended( 
    string             pszExe,
    string             pszArgs,
    string             pszDir,
@@ -81,12 +81,12 @@ out Restituisce un oggetto [IDebugPendingBreakpoint2](../../../extensibility/deb
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo metodo deve avviare il processo in modo che venga sospeso e non esegua alcun codice. Per riprendere il processo, viene chiamato il metodo [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) .
 
  Un programma può essere avviato anche da un motore di debug. Per informazioni dettagliate, vedere [avvio di un programma](../../../extensibility/debugger/launching-a-program.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)

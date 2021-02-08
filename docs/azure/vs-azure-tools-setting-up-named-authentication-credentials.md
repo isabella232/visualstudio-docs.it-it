@@ -2,17 +2,17 @@
 title: Configurare credenziali per l'autenticazione denominate | Microsoft Docs
 description: Informazioni su come fornire le credenziali che Visual Studio può usare per l'autenticazione delle richieste ad Azure per pubblicare un'applicazione in Azure da Visual Studio o monitorare un servizio cloud esistente.
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 059ac654f13ed833e80464e74e18a6cb8b0f8132
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: bd4c1864539d915e34b286debb3f6b2f739049d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901999"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843800"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Configurare le credenziali di autenticazione denominate
 
@@ -36,6 +36,6 @@ Se si vuole creare un certificato, vedere le istruzioni contenute in [Creare e c
 ## <a name="next-steps"></a>Passaggi successivi
 
 - [Panoramica di App Web](/azure/app-service/)
-- [Distribuire l'app nel servizio app Azure](/azure/app-service/app-service-deploy-local-git)
+- [Distribuire l'app nel servizio app di Azure](/azure/app-service/app-service-deploy-local-git)
 - [Distribuzione di processi Web usando Visual Studio](/azure/app-service/websites-dotnet-deploy-webjobs)
 - [Creare e distribuire un servizio cloud](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

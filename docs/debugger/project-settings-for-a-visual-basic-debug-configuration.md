@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 72a8483a-af0b-4403-8b0d-ee9ad71ee435
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 277d78b225afae13d73e091c1228e181df30e532
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 7a1f0e7aa0e6ee7523f8ff7ae1f3c8e34745a3af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205593"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842708"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Impostazioni di progetto per una configurazione di debug Visual Basic
 È possibile modificare le impostazioni di progetto per una configurazione di debug [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nella finestra di dialogo **Pagine delle proprietà**, come descritto in [Configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md). Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.
@@ -58,5 +58,5 @@ ms.locfileid: "98205593"
 | **Definisci costante DEBUG** | La definizione di questo simbolo attiva la compilazione condizionale delle funzioni di output della [classe Debug](/dotnet/api/system.diagnostics.debug). Quando è definito, i metodi della classe Debug generano l'output per la [finestra Output](../ide/reference/output-window.md). In caso contrario, tali metodi non verranno compilati e non verrà generato alcun output. Questo simbolo deve essere definito nella versione di debug e non nella versione di rilascio. La relativa definizione in una versione di rilascio determina la creazione di codice non necessario che rallenta l'esecuzione del programma. |
 | **Definisci costante TRACE** | La definizione di questo simbolo attiva la compilazione condizionale delle funzioni di output della [classe Trace](/dotnet/api/system.diagnostics.trace). Quando è definito, i metodi della classe Trace generano l'output per la [finestra Output](../ide/reference/output-window.md). In caso contrario, tali metodi non verranno compilati e non verrà generato alcun output. Questo simbolo è definito per impostazione predefinita in entrambe le versioni di debug e di rilascio. |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)

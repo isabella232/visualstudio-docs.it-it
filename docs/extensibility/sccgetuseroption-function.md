@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc7b68df3331c1240ad833048940e656da034ccf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e4bc3e4bf6acef8ff8de1cdcecb2596dcf6d86e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844554"
 ---
 # <a name="sccgetuseroption-function"></a>Funzione SccGetUserOption
 Questa funzione recupera un'ampia gamma di opzioni specifiche dell'utente.
@@ -25,10 +25,10 @@ Questa funzione recupera un'ampia gamma di opzioni specifiche dell'utente.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-SCCRTN SccGetUserOption(
-   LPVOID pContext,
-   LONG nOption,
-   LPLONG lpVal
+SCCRTN SccGetUserOption(
+   LPVOID pContext,
+   LONG nOption,
+   LPLONG lpVal
 );
 ```
 
@@ -54,13 +54,13 @@ out Valore associato all'opzione.
 |SCC_E_OPNOTSUPPORTED|L'opzione non è supportata.|
 |SCC_E_NONSPECIFICERROR|Si è verificato un errore non specificato.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo comando supporta le opzioni seguenti:
 
 |Opzione utente|Descrizione|
 |-----------------|-----------------|
 |`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina se l'utente desidera estrarre la versione locale dei file. `lpVal` viene assegnato `SCC_USEROPT_COLV_YES` (l'utente desidera estrarre i file locali) o `SCC_USEROPT_COLV_NO` .|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [Codici errore](../extensibility/error-codes.md)

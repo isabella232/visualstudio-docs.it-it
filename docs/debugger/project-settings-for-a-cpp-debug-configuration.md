@@ -110,15 +110,15 @@ helpviewer_keywords:
 ms.assetid: 860c7f13-a108-4fe5-8fca-d235cd3ca1cb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6130b49beecb3411c275fc5d2005b7aabee262fd
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 168dac192972c2ee670d733a07503ffe2776910e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842721"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Impostazioni di progetto per una configurazione di debug C++
 È possibile modificare le impostazioni di progetto per una configurazione di debug C o C++ nella finestra di dialogo **pagine delle proprietà** , come descritto in [procedura: impostare le configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md). Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.
@@ -186,7 +186,7 @@ Per eseguire il debug dei tipi di progetto, ad esempio librerie statiche e dll, 
 
 Per eseguire il debug di dll esterne al progetto, vedere [debug di progetti DLL](../debugger/debugging-dll-projects.md#vxtskdebuggingdllprojectsexternal). Se è necessario eseguire il debug del progetto DLL, ma non si ha accesso al progetto per l'applicazione chiamante, vedere [come eseguire il debug da un progetto di dll](../debugger/how-to-debug-from-a-dll-project.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug del codice nativo](../debugger/debugging-native-code.md)
 - [Impostazioni del debugger e preparazione](../debugger/debugger-settings-and-preparation.md)
 - [Creazione e gestione di progetti C++](/cpp/ide/creating-and-managing-visual-cpp-projects)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: aafb32c5-5790-4807-a448-878a80256438
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cb3b3bc07cc784300fd80626acd7f0cd6179773c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e303787a21996ba4a743e854d6ba1263438259b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725454"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844827"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
 Restituisce un elenco di tutti i processi in esecuzione su una porta.
@@ -28,13 +28,13 @@ Restituisce un elenco di tutti i processi in esecuzione su una porta.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT EnumProcesses( 
+HRESULT EnumProcesses( 
    IEnumDebugProcesses2** ppEnum
 );
 ```
 
 ```csharp
-int EnumProcesses( 
+int EnumProcesses( 
    out IEnumDebugProcesses2 ppEnum
 );
 ```
@@ -46,6 +46,6 @@ out Restituisce un oggetto [IEnumDebugProcesses2](../../../extensibility/debugge
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
 - [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

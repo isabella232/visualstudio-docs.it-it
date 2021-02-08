@@ -3,17 +3,17 @@ title: Usare PowerShell per la pubblicazione in ambienti di sviluppo e test
 description: Informazioni su come utilizzare gli script di Windows PowerShell da Visual Studio per pubblicare allo sviluppo e gli ambienti di prova.
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 97c337adabc5ce22ce92c720a3a4d776eaecf867
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: e0486e3a13b1c6b6ba421c5c0a97788f514413e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902143"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843956"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Uso degli script di Windows PowerShell per la pubblicazione in ambienti di sviluppo e test
 

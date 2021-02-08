@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae9090604a16196c43b80140395eb3401215d665
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: dc0acd64a61acac2cb30b9251bcb4e528c08f227
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840119"
 ---
 # <a name="image-library-viewer"></a>Visualizzatore della libreria di immagini
 Lo strumento Visualizzatore della libreria di immagini di Visual Studio è in grado di caricare e cercare manifesti di immagini, consentendo all'utente di manipolarli nello stesso modo in cui è possibile eseguire Visual Studio. L'utente può modificare sfondo, dimensioni, DPI, contrasto elevato e altre impostazioni. Lo strumento Visualizza anche le informazioni di caricamento per ogni manifesto dell'immagine e visualizza le informazioni sull'origine per ogni immagine nel manifesto dell'immagine. Questo strumento è utile per:
@@ -70,7 +70,7 @@ Lo strumento Visualizzatore della libreria di immagini di Visual Studio è in gr
 </Symbols>
 ```
 
-|**Sottoelemento**|**Definizione**|
+|**Sottoelemento**|**Definition**|
 |-|-|
 |Importa|Importa i simboli del file manifesto specificato per l'utilizzo nel manifesto corrente.|
 |Guid|Il simbolo rappresenta un GUID e deve corrispondere alla formattazione del GUID.|
@@ -94,7 +94,7 @@ Lo strumento Visualizzatore della libreria di immagini di Visual Studio è in gr
 |ManifestFolder|Cartella contenente il file manifesto|
 |MyDocuments|Percorso completo della cartella documenti dell'utente corrente|
 |ProgramFiles|Valore della variabile di ambiente% ProgramFiles%|
-|System|Cartella Windows\System32|
+|Sistema|Cartella Windows\System32|
 |WinDir|Valore della variabile di ambiente% WinDir%|
 
  **Immagine**
@@ -110,7 +110,7 @@ Lo strumento Visualizzatore della libreria di immagini di Visual Studio è in gr
 </Image>
 ```
 
-|**Attributo**|**Definizione**|
+|**Attributo**|**Definition**|
 |-|-|
 |Guid|Necessaria Parte GUID del moniker dell'immagine|
 |ID|Necessaria Parte relativa all'ID del moniker dell'immagine|
@@ -126,14 +126,14 @@ Lo strumento Visualizzatore della libreria di immagini di Visual Studio è in gr
  </Source>
 ```
 
-|**Attributo**|**Definizione**|
+|**Attributo**|**Definition**|
 |-|-|
 |Uri|Necessaria URI che definisce dove è possibile caricare l'immagine. I possibili valori sono i seguenti:<br /><br /> : [URI di pacchetto](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) che usa l'autorità Application:///<br /><br /> -Riferimento a una risorsa componente assoluto<br /><br /> : Percorso di un file che contiene una risorsa nativa|
-|Background|Opzionale Indica il tipo di background che l'origine deve usare.<br /><br /> I possibili valori sono i seguenti:<br /><br /> - *Light*: l'origine può essere usata su uno sfondo chiaro.<br /><br /> - *Dark*: l'origine può essere usata su uno sfondo scuro.<br /><br /> - *HighContrast*: l'origine può essere usata in qualsiasi background in modalità contrasto elevato.<br /><br /> - *HighContrastLight*: l'origine può essere usata in uno sfondo chiaro in modalità contrasto elevato.<br /><br /> -*HighContrastDark*: l'origine può essere usata su uno sfondo scuro in modalità contrasto elevato.<br /><br /> Se l'attributo **background** viene omesso, l'origine può essere utilizzata in qualsiasi background.<br /><br /> Se **background** è *Light*, *Dark*, *HighContrastLight* o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se **background** viene omesso o impostato su *HighContrast*, l'inversione dei colori dell'origine viene controllata dall'attributo **AllowColorInversion** dell'immagine.|
+|Sfondo|Opzionale Indica il tipo di background che l'origine deve usare.<br /><br /> I possibili valori sono i seguenti:<br /><br /> - *Light*: l'origine può essere usata su uno sfondo chiaro.<br /><br /> - *Dark*: l'origine può essere usata su uno sfondo scuro.<br /><br /> - *HighContrast*: l'origine può essere usata in qualsiasi background in modalità contrasto elevato.<br /><br /> - *HighContrastLight*: l'origine può essere usata in uno sfondo chiaro in modalità contrasto elevato.<br /><br /> -*HighContrastDark*: l'origine può essere usata su uno sfondo scuro in modalità contrasto elevato.<br /><br /> Se l'attributo **background** viene omesso, l'origine può essere utilizzata in qualsiasi background.<br /><br /> Se **background** è *Light*, *Dark*, *HighContrastLight* o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se **background** viene omesso o impostato su *HighContrast*, l'inversione dei colori dell'origine viene controllata dall'attributo **AllowColorInversion** dell'immagine.|
 
  Un \<Source> elemento può avere esattamente uno dei sottoelementi facoltativi seguenti:
 
-|**elemento**|**Attributi (tutti necessari)**|**Definizione**|
+|**elemento**|**Attributi (tutti necessari)**|**Definition**|
 |-|-|-|
 |\<Size>|Valore|L'origine verrà usata per le immagini con le dimensioni specificate (in unità dispositivo). L'immagine sarà quadrata.|
 |\<SizeRange>|MinSize, MaxSize|L'origine verrà usata per le immagini da MinSize a MaxSize (in unità dispositivo), inclusi. L'immagine sarà quadrata.|
@@ -146,7 +146,7 @@ Lo strumento Visualizzatore della libreria di immagini di Visual Studio è in gr
 <NativeResource Type="type" ID="int" />
 ```
 
-|**Attributo**|**Definizione**|
+|**Attributo**|**Definition**|
 |-|-|
 |Tipo|Necessaria Il tipo della risorsa nativa, ovvero XAML o PNG|
 |ID|Necessaria Parte relativa all'ID integer della risorsa nativa|
@@ -162,7 +162,7 @@ Lo strumento Visualizzatore della libreria di immagini di Visual Studio è in gr
  </ImageList>
 ```
 
-|**Attributo**|**Definizione**|
+|**Attributo**|**Definition**|
 |-|-|
 |Guid|Necessaria Parte GUID del moniker dell'immagine|
 |ID|Necessaria Parte relativa all'ID del moniker dell'immagine|

@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 2918ffa2-562f-40d6-9053-ef321bbeb767
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8422738b5c46b5482ac65cd24ccc903acdb4506e
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: ea0275a5186b58c9b9a07934b95351b597a816f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148039"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99845009"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Visualizzare i valori di registrazione nella finestra registri (C#, C++, Visual Basic, F #)
 
@@ -56,7 +56,7 @@ Per informazioni sui flag visualizzati nella finestra **registri** , vedere [inf
 >[!NOTE]
 >Le finestre di dialogo e i comandi di menu potrebbero variare a seconda dell'edizione o delle impostazioni di Visual Studio. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **strumenti** di Visual Studio. Per altre informazioni vedere [Reimpostare le impostazioni](../ide/environment-settings.md#reset-settings).
 
-### <a name="see-also"></a>Vedere anche
+### <a name="see-also"></a>Vedi anche
 
 - [Nozioni fondamentali di debug: finestra registri](../debugger/debugging-basics-registers-window.md)
 - [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

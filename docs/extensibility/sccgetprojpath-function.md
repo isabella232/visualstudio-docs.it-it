@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 281787da3499c081fbbe6f59b7b8175a4dbf24d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bad1cae248c0fe3babd920e0773825d9d36b7042
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700697"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844567"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath (funzione)
 Questa funzione richiede all'utente un percorso del progetto, ovvero una stringa significativa solo per il plug-in del controllo del codice sorgente. Viene chiamato quando l'utente è:
@@ -76,14 +76,14 @@ in Se è `TRUE` , il plug-in del controllo del codice sorgente può richiedere e
 
 [in, out] Il valore in arrivo indica se creare un nuovo progetto. Il valore restituito indica la riuscita della creazione di un progetto:
 
-|In ingresso|Interpretazione|
+|In arrivo|Interpretazione|
 |--------------|--------------------|
-|TRUE|L'utente può creare un nuovo progetto.|
+|true|L'utente può creare un nuovo progetto.|
 |FALSE|L'utente non può creare un nuovo progetto.|
 
 |In uscita|Interpretazione|
 |--------------|--------------------|
-|TRUE|È stato creato un nuovo progetto.|
+|true|È stato creato un nuovo progetto.|
 |FALSE|È stato selezionato un progetto esistente.|
 
 ## <a name="return-value"></a>Valore restituito
@@ -97,7 +97,7 @@ in Se è `TRUE` , il plug-in del controllo del codice sorgente può richiedere e
 |SCC_E_CONNECTIONFAILURE|Si è verificato un problema durante il tentativo di connessione al sistema di controllo del codice sorgente.|
 |SCC_E_NONSPECIFICERROR|Si è verificato un errore non specificato.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Lo scopo di questa funzione è che l'IDE acquisisca i parametri `lpProjName` e `lpAuxProjPath` . Dopo che il plug-in del controllo del codice sorgente ha richiesto all'utente di ottenere tali informazioni, le due stringhe vengono passate all'IDE. L'IDE mantiene queste stringhe nel file della soluzione e le passa a [SccOpenProject](../extensibility/sccopenproject-function.md) ogni volta che l'utente apre il progetto. Queste stringhe consentono al plug-in di tenere traccia delle informazioni associate a un progetto.
 
  Quando la funzione viene chiamata per la prima volta, `lpAuxProjPath` viene impostata su una stringa vuota. `lProjName` può anche essere vuoto o contenere il nome del progetto IDE, che può essere usato o ignorato dal plug-in del controllo del codice sorgente. Quando la funzione restituisce correttamente, il plug-in restituisce le due stringhe corrispondenti. L'IDE non fa supposizioni su queste stringhe, non le userà e non consentirà all'utente di modificarle. Se l'utente desidera modificare le impostazioni, l'IDE chiamerà `SccGetProjPath` nuovamente, passando gli stessi valori ricevuti dall'ora precedente. In questo modo il plug-in consente il controllo completo su queste due stringhe.
@@ -113,6 +113,6 @@ in Se è `TRUE` , il plug-in del controllo del codice sorgente può richiedere e
 
  Se, ad esempio, un utente nella creazione guidata **nuovo progetto** di Visual Studio aggiunge il progetto al controllo del codice sorgente, Visual Studio chiama questa funzione e il plug-in determina se è corretto creare un nuovo progetto nel sistema di controllo del codice sorgente per contenere il progetto di Visual Studio. Se l'utente fa clic su **Annulla** prima di completare la procedura guidata, il progetto non viene mai creato. Se l'utente fa clic su **OK**, in Visual Studio `SccOpenProject` viene chiamato, passato `SCC_OPT_CREATEIFNEW` e il progetto con controllo del codice sorgente viene creato in quel momento.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

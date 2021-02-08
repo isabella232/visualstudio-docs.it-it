@@ -4,17 +4,17 @@ description: Viene descritto come aggiornare un'app docker.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: e8f17047902ccf6c7fad164e788e64fe0b17cf14
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: df2102c38250aa5c1bda52b4324cba808501db3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485428"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841744"
 ---
 # <a name="update-the-app"></a>Aggiornare l'app
 
@@ -80,7 +80,7 @@ Per rimuovere un contenitore, è prima necessario arrestarlo. Una volta arrestat
     ```
 
 > [!TIP]
-> È possibile arrestare e rimuovere un contenitore in un singolo comando aggiungendo il flag "Force" al `docker rm` comando. Ad esempio: `docker rm -f <the-container-id>`
+> È possibile arrestare e rimuovere un contenitore in un singolo comando aggiungendo il flag "Force" al `docker rm` comando. ad esempio `docker rm -f <the-container-id>`
 
 ### <a name="remove-a-container-using-the-docker-view"></a>Rimuovere un contenitore usando la visualizzazione Docker
 

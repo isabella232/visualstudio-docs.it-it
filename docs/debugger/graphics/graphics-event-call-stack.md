@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 8a30168d-8b39-4de1-b094-c7356ba101a3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 85712f2b8971b2b5284dab89d90eecec9010e9b4
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: c7c8d415da1de7be9cafdad6e5dea531dd59a7b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99845139"
 ---
 # <a name="graphics-event-call-stack"></a>Stack di chiamate eventi di grafica
 Stack di chiamate eventi di grafica in Analizzatore grafica di Visual Studio consente di mappare la relazione tra gli eventi di grafica problematici e il codice sorgente dell'app.
@@ -38,7 +38,7 @@ Stack di chiamate eventi di grafica in Analizzatore grafica di Visual Studio con
 |------------|-----------------|
 |**Nome**|Simbolo che identifica in modo univoco la funzione che contiene il sito di chiamata. Il simbolo di debug per la funzione viene visualizzato quando è disponibile; in caso contrario, viene visualizzato l'offset della funzione.|
 |**File**|Nome del file di codice sorgente o di libreria contenente il sito di chiamata.|
-|**Località**|Numero di riga del sito di chiamata.|
+|**Posizione**|Numero di riga del sito di chiamata.|
 
 ### <a name="links-to-graphics-objects"></a>Collegamenti a oggetti grafici
  Per comprendere l'evento di grafica selezionato potrebbero essere necessarie informazioni sull'oggetto Direct3D a cui è associato. Nella finestra **Stack di chiamate eventi di grafica** è presente un collegamento a tali informazioni.
