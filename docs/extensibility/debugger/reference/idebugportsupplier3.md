@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f015c21f71f064f2302660ebc75ef00a245348c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d45d8d93f26ef01fb184811a87b4f4fcc4483340
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724432"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840236"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 Questa interfaccia consente a un chiamante di determinare se un fornitore di porte può mantenere le porte (scrivendole su disco) tra le chiamate del debugger e quindi ottenere un elenco delle porte mantenute.
@@ -42,7 +42,7 @@ IDebugPortSupplier3 : IDebugPortSupplier2
 |[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|Restituisce un valore che indica se il fornitore della porta può salvare in modo permanente le porte (scrivendole su disco) tra le chiamate del debugger.|
 |[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|Restituisce un oggetto che può essere utilizzato per enumerare tutte le porte scritte su disco da questo fornitore della porta.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Se un fornitore di porte può rendere permanente le porte tra le chiamate, deve implementare questa interfaccia. Le porte devono essere caricate quando viene creata un'istanza del fornitore della porta e scritte su disco quando il fornitore della porta viene eliminato definitivamente.
 
  Un motore di debug non interagisce in genere con un fornitore di porte e non verrà utilizzato per questa interfaccia.
@@ -54,6 +54,6 @@ IDebugPortSupplier3 : IDebugPortSupplier2
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

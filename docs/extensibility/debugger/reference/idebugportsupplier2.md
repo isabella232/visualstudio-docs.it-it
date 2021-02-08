@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddce454e6634d8cc177019e9d30b0ffcc7e7f1cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf9cd3cb82e2b14811a8ec52a651248e2990ae27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840366"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 Questa interfaccia fornisce le porte al gestore di debug della sessione (SDM).
@@ -70,7 +70,7 @@ La tabella seguente illustra i metodi di `IDebugPortSupplier2` .
 |[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|Aggiunge una porta.|
 |[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|Rimuove una porta.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Un fornitore di porte può identificare se stesso in base al nome e all'ID, aggiungere e rimuovere porte ed enumerare tutte le porte fornite dal fornitore della porta.
 
 ## <a name="requirements"></a>Requisiti
@@ -80,7 +80,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)
 - [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)

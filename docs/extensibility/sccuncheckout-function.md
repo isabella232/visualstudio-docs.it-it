@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4317133b2f215e0f9af447e5c042785561231f63
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fdcd8cd94914763d103a6232c4f87c3ec93f216
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700242"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836670"
 ---
 # <a name="sccuncheckout-function"></a>Funzione SccUncheckout
 Questa funzione Annulla un'operazione di estrazione precedente, ripristinando in tal modo il contenuto del file o dei file selezionati nello stato precedente all'estrazione. Tutte le modifiche apportate al file dall'estrazione vengono perse.
@@ -74,8 +74,8 @@ in Opzioni specifiche del plug-in del controllo del codice sorgente.
 |SCC_E_PROJNOTOPEN|Il progetto non è stato aperto dal controllo del codice sorgente.|
 |SCC_I_OPERATIONCANCELED|L'operazione è stata annullata prima del completamento.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Dopo questa operazione, i `SCC_STATUS_CHECKEDOUT` `SCC_STATUS_MODIFIED` flag e verranno cancellati per i file in cui è stata eseguita l'operazione di annullamento dell'estrazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

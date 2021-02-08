@@ -4,17 +4,17 @@ description: Descrive le opzioni per estendere le app Docker con l'orchestrazion
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f93185641a0814797b66eae90714e04cac83f7e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ca68b2eba710037535b4bd76c744e7c029a53e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178288"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841653"
 ---
 # <a name="whats-next"></a>Passaggi successivi
 
@@ -38,7 +38,7 @@ Se non si ha familiarità con il paesaggio del contenitore e lo sviluppo di appl
 Altre informazioni sull'uso dell'estensione Docker VS Code:
 
 - [Panoramica dell'estensione Docker VS Code](https://code.visualstudio.com/docs/containers/overview)
-- [Inizia a usare Node.js](https://code.visualstudio.com/docs/containers/quickstart-node)
+- [Introduzione a Node.js](https://code.visualstudio.com/docs/containers/quickstart-node)
 - [Introduzione a Python](https://code.visualstudio.com/docs/containers/quickstart-python)
 - [Introduzione a .NET Core](https://code.visualstudio.com/docs/containers/quickstart-aspnet-core)
 - [Eseguire il debug di app in contenitori](https://code.visualstudio.com/docs/containers/debug-common)

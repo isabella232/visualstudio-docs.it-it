@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 02c2fa04-1424-4bca-9936-feaecd2afab6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aa98107ada265d232647d27b4050b507d4581df7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d1a38b6c6b519b28f6094bced51a84a4b730f9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837541"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
 Ottiene una descrizione delle proprietà di un stack frame.
@@ -28,13 +28,13 @@ Ottiene una descrizione delle proprietà di un stack frame.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetDebugProperty ( 
+HRESULT GetDebugProperty ( 
    IDebugProperty2** ppDebugProp
 );
 ```
 
 ```csharp
-int GetDebugProperty ( 
+int GetDebugProperty ( 
    out IDebugProperty2 ppDebugProp
 );
 ```
@@ -46,9 +46,9 @@ out Restituisce un oggetto [IDebugProperty2](../../../extensibility/debugger/ref
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  La chiamata al metodo [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) con i filtri appropriati può recuperare le variabili locali, i parametri del metodo, i registri e il puntatore "This" associato all'stack frame.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

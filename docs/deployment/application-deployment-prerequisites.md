@@ -18,23 +18,23 @@ helpviewer_keywords:
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c87b0f6ded2960054cb553dbeb85681aa447668b
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: fe8312a4dcaa2efb0b783e89540e5ff9f71f15e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383248"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837801"
 ---
 # <a name="application-deployment-prerequisites"></a>Prerequisiti per la distribuzione dell'applicazione
 
 Per installare ed eseguire correttamente l'applicazione, installare prima tutti i componenti da cui dipende l'applicazione nel computer di destinazione. La maggior parte delle applicazioni create usando, ad esempio, dipende [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dalla .NET Framework. In tal caso, prima di installare l'applicazione, è necessario che nel computer di destinazione sia presente la versione corretta del Common Language Runtime.
 
- È possibile selezionare questi prerequisiti nella finestra di **dialogo Prerequisiti** e installare il .NET Framework e qualsiasi altro ridistribuibile come parte dell'installazione di. Questa procedura è denominata *bootstrap*. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] genera un programma eseguibile di Windows denominato *Setup.exe* , noto anche come programma di *avvio automatico*. Il programma di avvio automatico installa questi prerequisiti prima dell'esecuzione dell'applicazione. Per ulteriori informazioni sulla selezione di questi prerequisiti, vedere la finestra di [dialogo Prerequisiti](../ide/reference/prerequisites-dialog-box.md).
+ È possibile selezionare questi prerequisiti nella finestra di **dialogo Prerequisiti** e installare il .NET Framework e qualsiasi altro ridistribuibile come parte dell'installazione di. Questa procedura è denominata *bootstrap*. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] genera un programma eseguibile di Windows denominato *Setup.exe*, noto anche come programma di *avvio automatico*. Il programma di avvio automatico installa questi prerequisiti prima dell'esecuzione dell'applicazione. Per ulteriori informazioni sulla selezione di questi prerequisiti, vedere la finestra di [dialogo Prerequisiti](../ide/reference/prerequisites-dialog-box.md).
 
- Ogni prerequisito è un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio automatico è un gruppo di directory e file contenente i file manifesto che descrivono la modalità di installazione dei prerequisiti. Se i prerequisiti dell'applicazione non sono elencati nella finestra di dialogo **Prerequisiti** , è possibile creare pacchetti del programma di avvio automatico personalizzati e aggiungerli a Visual Studio. A questo punto è possibile selezionare i prerequisiti nella finestra di dialogo **Prerequisiti**. Per altre informazioni, vedere [creare pacchetti del programma di avvio automatico](../deployment/creating-bootstrapper-packages.md).
+ Ogni prerequisito è un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio automatico è un gruppo di directory e file contenente i file manifesto che descrivono la modalità di installazione dei prerequisiti. Se i prerequisiti dell'applicazione non sono elencati nella finestra di dialogo **Prerequisiti**, è possibile creare pacchetti del programma di avvio automatico personalizzati e aggiungerli a Visual Studio. A questo punto è possibile selezionare i prerequisiti nella finestra di dialogo **Prerequisiti**. Per altre informazioni, vedere [creare pacchetti del programma di avvio automatico](../deployment/creating-bootstrapper-packages.md).
 
  Per impostazione predefinita, il bootstrap è abilitato per la distribuzione ClickOnce. Il programma di avvio automatico generato per la distribuzione ClickOnce è firmato. È possibile disabilitare il bootstrap per un componente, ma solo se si è certi che la versione corretta del componente sia già installata in tutti i computer di destinazione.
 
@@ -50,7 +50,7 @@ Per installare ed eseguire correttamente l'applicazione, installare prima tutti 
   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] può rilevare i prerequisiti mancanti ed è possibile installare i prerequisiti usando un programma di avvio automatico. Per altre informazioni, vedere [procedura: installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
 
 > [!NOTE]
-> Per modificare i valori nei manifesti generati da strumenti quali [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e *MageUI.exe* , è necessario modificare il manifesto dell'applicazione in un editor di testo e quindi firmare nuovamente i manifesti dell'applicazione e della distribuzione. Per altre informazioni, vedere [Procedura: Firmare nuovamente manifesti di applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+> Per modificare i valori nei manifesti generati da strumenti quali [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e *MageUI.exe*, è necessario modificare il manifesto dell'applicazione in un editor di testo e quindi firmare nuovamente i manifesti dell'applicazione e della distribuzione. Per altre informazioni, vedere [Procedura: Firmare nuovamente manifesti di applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
  Se si usa Visual Studio e ClickOnce per distribuire l'applicazione, i pacchetti del programma di avvio automatico selezionati per impostazione predefinita variano a seconda della versione di .NET Framework inclusa nella soluzione. Se invece si cambia la versione .NET Framework di destinazione, è necessario aggiornare manualmente le opzioni nella finestra di dialogo **Prerequisiti**.
 
@@ -84,6 +84,6 @@ Per installare ed eseguire correttamente l'applicazione, installare prima tutti 
 ## <a name="operating-system-support"></a>Supporto dei sistemi operativi
  Il programma di avvio automatico di Visual Studio non è supportato in Windows Server 2008 Server Core o Windows Server 2008 R2 Server Core, poiché forniscono un ambiente server a bassa manutenzione con funzionalità limitate. Ad esempio, l'opzione di installazione dei componenti di base del server supporta solo il profilo .NET Framework 3,5 Server Core, che non è in grado di eseguire le funzionalità di Visual Studio che dipendono dalla .NET Framework completa.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Scegliere una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)

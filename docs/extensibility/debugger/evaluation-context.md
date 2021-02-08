@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 008a20c7-1b27-4013-bf96-d6a3f510da02
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a021d5dfdff5058211f5bafdfd7854611f977c27
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 0957a204a83ab72aabe14fe4a70d8e758e83a08f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840587"
 ---
 # <a name="evaluation-context"></a>Contesto di valutazione
 > [!IMPORTANT]
@@ -28,7 +28,7 @@ ms.locfileid: "96914517"
 
 ## <a name="arguments"></a>Argomenti
 
-|Argomento|Description|
+|Argomento|Descrizione|
 |--------------|-----------------|
 |`pSymbolProvider`|Interfaccia [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md) che specifica il gestore di simboli (SH) da utilizzare per identificare il simbolo.|
 |`pAddress`|Interfaccia [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) che specifica il punto di esecuzione corrente. Questa interfaccia trova il metodo che contiene il codice in esecuzione.|

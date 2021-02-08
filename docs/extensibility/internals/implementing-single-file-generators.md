@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: fe9ef6b6-4690-4c2c-872c-301c980d17fe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 373536844e3572e2e61b56c1b86f3e00ed47845d
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: e353101c7932e06042b451360b7ca040adcb303f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761244"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839950"
 ---
 # <a name="implementing-single-file-generators"></a>Implementazione di generatori di file singoli
 Uno strumento personalizzato, talvolta denominato generatore di file singolo, può essere utilizzato per estendere i sistemi di [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] progetto e in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Uno strumento personalizzato è un componente COM che implementa l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> interfaccia. Utilizzando questa interfaccia, uno strumento personalizzato trasforma un singolo file di input in un unico file di output. Il risultato della trasformazione può essere codice sorgente o qualsiasi altro output utile. Due esempi di file di codice generati da strumenti personalizzati sono rappresentati dal codice generato in risposta alle modifiche in una finestra di progettazione visiva e ai file generati utilizzando Web Services Description Language (WSDL).

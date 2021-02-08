@@ -9,15 +9,15 @@ helpviewer_keywords:
 - code snippets, security
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f54a451bea8345d06073e6f3a8ab944b3c7ea820
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: ad94fb8ea4dffcd0c3c7c10bb06046d5558baa1e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903143"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836501"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedure consigliate per l'uso dei frammenti di codice
 
@@ -69,7 +69,7 @@ I frammenti di codice IntelliSense installati da Visual Studio non rappresentano
 
   - Il frammento di codice può contenere riferimenti che vengono automaticamente aggiunti al progetto e possono essere caricati da un punto qualsiasi nel sistema. Questi riferimenti possono essere stati scaricati nel computer dal punto in cui è stato scaricato il frammento di codice. Il frammento di codice può a questo punto chiamare un metodo nel riferimento che esegue codice dannoso. Per proteggersi da questo tipo di attacco, analizzare i blocchi delle importazioni e dei riferimenti del file di frammento.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Visual Basic frammenti di codice IntelliSense](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [Protezione delle applicazioni](../ide/securing-applications.md)

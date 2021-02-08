@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7928c03e52e4a72fb354bd7202e041ec2264fcd6
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 2032a10d24f0d5cf2488f33d83d444df8d5135bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560954"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836229"
 ---
 # <a name="visual-studio-commands"></a>Comandi di Visual Studio
 
@@ -80,7 +80,7 @@ I comandi seguenti accettano opzioni o argomenti:
 | [Attiva/disattiva punto di interruzione](../../ide/reference/toggle-breakpoint-command.md) | Imposta o rimuove il punto di interruzione, a seconda dello stato corrente, nella posizione corrente all'interno del file. |
 | [Comando Watch](../../ide/reference/watch-command.md) | Crea e apre un'istanza specificata di una finestra **Espressione di controllo** . |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/comando](../../ide/find-command-box.md)

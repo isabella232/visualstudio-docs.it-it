@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b7b29c477bf046cfd47db9e39cb57360d999dee
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 59eba4addc21c47db19de212c527e744428973f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838366"
 ---
 # <a name="options-dialog-box-environment--task-list"></a>Finestra di dialogo Opzioni: ambiente \> elenco attività
 
@@ -63,7 +63,7 @@ Fare clic su questo pulsante per apportare modifiche a un token esistente usando
 > [!NOTE]
 > Non è possibile rinominare o eliminare il token di commento predefinito, ma è possibile modificarne il livello di priorità.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare l'elenco attività](../../ide/using-the-task-list.md)
 - [Impostare segnalibri nel codice](../../ide/setting-bookmarks-in-code.md)

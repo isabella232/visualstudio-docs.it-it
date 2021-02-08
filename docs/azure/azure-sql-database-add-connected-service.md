@@ -2,18 +2,18 @@
 title: Aggiungere una connessione al database SQL di Azure | Microsoft Docs
 description: Aggiungere la connessione al database SQL di Azure all'app usando Visual Studio Servizi connessi
 author: AngelosP
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 4d720c51d7245d60d40c286c71976132a119a56f
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 9e4a695a26e17e20fbd19081b863d9f108fc16b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902870"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841198"
 ---
 # <a name="add-a-connection-to-azure-sql-database"></a>Aggiungere una connessione al database SQL di Azure
 
@@ -22,7 +22,7 @@ Con Visual Studio, è possibile connettere uno dei seguenti al database SQL di A
 - App console .NET Framework
 - MVC ASP.NET (.NET Framework) 
 - ASP.NET Core
-- .NET Core (incluse app console, WPF, Windows Forms, libreria di classi)
+- .NET Core (incluse app console, WPF, Windows Form, libreria di classi)
 - Ruolo di lavoro .NET Core
 - Funzioni di Azure
 - App piattaforma UWP (Universal Windows Platform)
@@ -86,7 +86,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
    ![Dipendenze dei servizi](./media/azure-sql-database-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Pagina del prodotto del database SQL di Azure](https://azure.microsoft.com/services/sql-database/)
 - [Documentazione sul database SQL di Azure](/azure/azure-sql/database/)

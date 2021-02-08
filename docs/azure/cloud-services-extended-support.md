@@ -2,19 +2,19 @@
 title: Usare i servizi cloud (supporto esteso) (anteprima)
 description: Informazioni su come creare e distribuire un servizio cloud (supporto esteso) usando Azure Resource Manager con Visual Studio
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 01/25/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: ff45cf05a6811c02881c26f76193d4c1f5a5e735
-ms.sourcegitcommit: 7d34ab111614ae6bde5fb3c2bb91dd79e29a0a78
+ms.openlocfilehash: 39a76f4c76afb2ed0c738adfc477807eebfdbc61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98750305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841133"
 ---
 # <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio-preview"></a>Creare e distribuire in servizi cloud (supporto esteso) in Visual Studio (anteprima)
 

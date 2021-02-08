@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: fbb6cb60-420b-4ca9-8306-2494f7d321fe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: c1a36f4661abb5535c71fcebcf9e486408a56b22
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 34e8f2e6148dc504e6dc8f25f81bc1ba8acb1f47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150808"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839296"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Visualizzazione Albero delle chiamate: dati di campionamento di memoria .NET
 La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Per ogni nodo della funzione vengono elencate tutte le funzioni chiamate e i dati di allocazione della memoria .NET per queste chiamate di funzione.
@@ -53,7 +53,7 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
 |**Byte esclusivi**|Numero di byte in memoria allocati dalle istanze di questa funzione chiamate dalla funzione padre nell'albero delle chiamate. Questo numero non include le allocazioni effettuate dalle funzioni figlio.|
 |**% byte esclusivi**|Percentuale di tutti i byte di memoria allocati nell'esecuzione della profilatura che rappresentavano allocazioni esclusive di questa funzione.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzazione albero delle chiamate-Strumentazione](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 - [Visualizzazione albero delle chiamate](../profiling/call-tree-view-sampling-data.md)
 - [Visualizzazione albero delle chiamate](../profiling/call-tree-view-instrumentation-data.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d012908e59be8b82e34ff68cdab1945c5bd2de8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10c04daf8ffea8266c874dfb0fb805e551942bc9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700404"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836761"
 ---
 # <a name="sccrunscc-function"></a>Funzione SccRunScc
 Questa funzione richiama lo strumento di amministrazione del controllo del codice sorgente.
@@ -63,14 +63,14 @@ in Matrice dei nomi file selezionati.
 |SCC_E_FILENOTCONTROLLED|Il file selezionato non è sotto il controllo del codice sorgente.|
 |SCC_E_NONSPECIFICERROR|Errore non specifico.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa funzione consente al chiamante di accedere all'intera gamma di funzionalità del sistema di controllo del codice sorgente tramite uno strumento di amministrazione esterno. Se il sistema di controllo del codice sorgente non dispone di un'interfaccia utente, il plug-in del controllo del codice sorgente può implementare un'interfaccia per eseguire le funzioni di amministrazione necessarie.
 
  Questa funzione viene chiamata con un conteggio e una matrice di nomi file per i file attualmente selezionati. Se lo strumento di amministrazione lo supporta, è possibile utilizzare l'elenco dei file per preselezionare i file nell'interfaccia di amministrazione. in caso contrario, l'elenco può essere ignorato.
 
- Questa funzione viene in genere richiamata quando l'utente seleziona l' ** \<Source Control Server> avvio** dal menu del controllo del **File**  ->  **codice sorgente** del file. Questa opzione di menu di **avvio** può essere sempre disabilitata o anche nascosta impostando una voce del registro di sistema. Per informazioni dettagliate, vedere [procedura: installare un plug-in del controllo del codice sorgente](../extensibility/internals/how-to-install-a-source-control-plug-in.md) . Questa funzione viene chiamata solo se [SccInitialize](../extensibility/sccinitialize-function.md) restituisce il `SCC_CAP_RUNSCC` bit di capacità (vedere [flag funzionalità](../extensibility/capability-flags.md) per informazioni dettagliate su questo e altri bit di funzionalità).
+ Questa funzione viene in genere richiamata quando l'utente seleziona l' **\<Source Control Server> avvio** dal menu del controllo del   ->  **codice sorgente** del file. Questa opzione di menu di **avvio** può essere sempre disabilitata o anche nascosta impostando una voce del registro di sistema. Per informazioni dettagliate, vedere [procedura: installare un plug-in del controllo del codice sorgente](../extensibility/internals/how-to-install-a-source-control-plug-in.md) . Questa funzione viene chiamata solo se [SccInitialize](../extensibility/sccinitialize-function.md) restituisce il `SCC_CAP_RUNSCC` bit di capacità (vedere [flag funzionalità](../extensibility/capability-flags.md) per informazioni dettagliate su questo e altri bit di funzionalità).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [Procedura: Installare un plug-in del controllo del codice sorgente](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [Flag di funzionalità](../extensibility/capability-flags.md)

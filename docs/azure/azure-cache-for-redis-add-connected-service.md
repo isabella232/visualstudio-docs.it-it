@@ -2,18 +2,18 @@
 title: Aggiungere la cache di Azure per Redis usando Servizi connessi | Microsoft Docs
 description: Aggiungere la cache di Azure per il supporto di redis all'app usando Visual Studio per aggiungere un servizio connesso
 author: AngelosP
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ad233d51e271dfbacb80b7f5f2792d546a8a3e0a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: dd08cc9cc44b0866d718fe03392e99d5fa6467b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903063"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841174"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>Aggiungere la cache di Azure per Redis usando Visual Studio Servizi connessi
 
@@ -22,7 +22,7 @@ Con Visual Studio, è possibile connettere una delle seguenti opzioni alla cache
 - App console .NET Framework
 - MVC ASP.NET (.NET Framework) 
 - ASP.NET Core
-- .NET Core (incluse app console, WPF, Windows Forms, libreria di classi)
+- .NET Core (incluse app console, WPF, Windows Form, libreria di classi)
 - Ruolo di lavoro .NET Core
 - Funzioni di Azure
 - App piattaforma UWP (Universal Windows Platform)
@@ -82,7 +82,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
    ![Dipendenze dei servizi](./media/azure-redis-cache-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Pagina del prodotto cache di Azure per Redis](https://azure.microsoft.com/services/cache)
 - [Documentazione di cache di Azure per Redis](/azure/azure-cache-for-redis/)

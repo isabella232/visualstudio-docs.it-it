@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f518413adba1546bcff4f7cf2e62b4563cf1bcc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2deb30b606de686269e095fffe369a7d56adb453
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700536"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836930"
 ---
 # <a name="sccpopulatelist-function"></a>Funzione SccPopulateList
 Questa funzione aggiorna un elenco di file per un particolare comando del controllo del codice sorgente e fornisce lo stato del controllo del codice sorgente in tutti i file specificati.
@@ -78,7 +78,7 @@ in Flag di comando (vedere la sezione "flag di popolamento" di [flag usata da co
 |SCC_OK|Esito positivo.|
 |SCC_E_NONSPECIFICERROR|Errore non specifico.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa funzione esamina l'elenco dei file per lo stato corrente. Usa la `pfnPopulate` funzione di callback per notificare al chiamante quando un file non corrisponde ai criteri per l'oggetto `nCommand` . Se, ad esempio, il comando è `SCC_COMMAND_CHECKIN` e un file nell'elenco non è estratto, il callback viene usato per informare il chiamante. Occasionalmente, il plug-in del controllo del codice sorgente potrebbe trovare altri file che potrebbero far parte del comando e aggiungerli. Questo consente, ad esempio, a un utente Visual Basic di estrarre un file con estensione bmp utilizzato dal suo progetto ma non viene visualizzato nel file di progetto Visual Basic. Un utente sceglie il comando **Get** nell'IDE. Nell'IDE verrà visualizzato un elenco di tutti i file che ritiene che l'utente possa ottenere, ma prima che venga visualizzato l'elenco, viene `SccPopulateList` chiamata la funzione per assicurarsi che l'elenco da visualizzare sia aggiornato.
 
 ## <a name="example"></a>Esempio
@@ -89,7 +89,7 @@ in Flag di comando (vedere la sezione "flag di popolamento" di [flag usata da co
 > [!NOTE]
 > Un plug-in del controllo del codice sorgente ha sempre la possibilità di restituire semplicemente immediatamente da questa funzione, lasciando l'elenco così com'è. Se un plug-in implementa questa funzione, può indicare questo problema impostando la `SCC_CAP_POPULATELIST` funzionalità flag nella prima chiamata a [SccInitialize](../extensibility/sccinitialize-function.md). Per impostazione predefinita, il plug-in deve sempre presupporre che tutti gli elementi passati siano file. Tuttavia, se l'IDE imposta il `SCC_PL_DIR` flag nel `fOptions` parametro, tutti gli elementi passati devono essere considerati directory. Il plug-in deve aggiungere tutti i file che appartengono alle directory. L'IDE non passerà mai a una combinazione di file e directory.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)
 - [POPLISTFUNC](../extensibility/poplistfunc.md)

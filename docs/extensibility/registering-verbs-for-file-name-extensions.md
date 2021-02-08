@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: df0dfe90bd5e3bccbb6bb0f9dab400082f539fbf
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 10e1b158ab62cfedfb6171a0a3874cfe14e89caf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837005"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrare i verbi per le estensioni dei nomi di file
 L'associazione di un'estensione di file a un'applicazione in genere presenta un'azione preferenziale che si verifica quando un utente fa doppio clic su un file. Questa azione preferita è collegata a un verbo, ad esempio Open, che corrisponde all'azione.
@@ -31,7 +31,7 @@ L'associazione di un'estensione di file a un'applicazione in genere presenta un'
 
 - Modifica
 
-- Riproduci
+- Esegui
 
 - Stampa
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 69e81439-1238-4f18-9028-6fd1c1ba5e4a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 362ee6b98699a32a3bfd6219d11ccf4c80d2a4be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8de85f157995db77653b71f7b25f3106caffb9ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719767"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837508"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
 Ottiene il contesto del documento per questo stack frame.
@@ -28,13 +28,13 @@ Ottiene il contesto del documento per questo stack frame.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetDocumentContext ( 
+HRESULT GetDocumentContext ( 
    IDebugDocumentContext2** ppCxt
 );
 ```
 
 ```csharp
-int GetDocumentContext ( 
+int GetDocumentContext ( 
    out IDebugDocumentContext2 ppCxt
 );
 ```
@@ -46,10 +46,10 @@ out Restituisce un oggetto [IDebugDocumentContext2](../../../extensibility/debug
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo metodo è più veloce della chiamata al metodo [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) e quindi della chiamata al metodo [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) sul contesto del codice. Tuttavia, non è garantito che tutti i motori di debug implementino questo metodo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)

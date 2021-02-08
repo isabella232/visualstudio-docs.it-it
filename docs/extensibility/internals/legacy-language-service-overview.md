@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ec349e38acbdb0271ecfb0c081b4f1aadadcd9
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 5226f9a3464786f85ad9d5348226e82e070cf57e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204943"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839586"
 ---
 # <a name="legacy-language-service-overview"></a>Panoramica dei servizi di linguaggio legacy
 Un servizio di linguaggio fornisce supporto per l'editor che consente di implementare determinate [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funzionalità. Le classi del servizio di linguaggio MPF (Managed Package Framework) forniscono supporto completo per le funzionalità di uso frequente e il supporto parziale per altre funzionalità.
@@ -91,6 +91,6 @@ Un servizio di linguaggio fornisce supporto per l'editor che consente di impleme
 
 - [Convalida dei punti di interruzione in un servizio di linguaggio legacy](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Implementazione di un servizio di linguaggio legacy](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [Estendibilità dei servizi di linguaggio legacy](../../extensibility/internals/legacy-language-service-extensibility.md)

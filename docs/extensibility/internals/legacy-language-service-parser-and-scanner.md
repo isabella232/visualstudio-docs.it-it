@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: c4c9ee6cfec35804d7e60675342f3961dfb90c6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204605"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839560"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Scanner e parser dei servizi di linguaggio legacy
 Il parser è il fulcro del servizio di linguaggio. Per le classi di linguaggio del Framework di pacchetto gestito (MPF) è necessario un parser di linguaggio per selezionare informazioni sul codice visualizzato. Un parser separa il testo in token lessicali e quindi identifica i token in base al tipo e alla funzionalità.
@@ -133,7 +133,7 @@ namespace MyNamespace
 
  L' <xref:Microsoft.VisualStudio.Package.AuthoringSink> oggetto viene passato al parser come parte dell' <xref:Microsoft.VisualStudio.Package.ParseRequest> oggetto e <xref:Microsoft.VisualStudio.Package.AuthoringSink> viene creato un nuovo oggetto ogni volta che <xref:Microsoft.VisualStudio.Package.ParseRequest> viene creato un nuovo oggetto. Inoltre, il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo deve restituire un <xref:Microsoft.VisualStudio.Package.AuthoringScope> oggetto, che viene usato per gestire varie operazioni di IntelliSense. L' <xref:Microsoft.VisualStudio.Package.AuthoringScope> oggetto gestisce un elenco di dichiarazioni e un elenco per i metodi, ognuno dei quali è popolato, a seconda del motivo dell'analisi. La <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe deve essere implementata.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Implementazione di un servizio di linguaggio legacy](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [Panoramica dei servizi di linguaggio legacy](../../extensibility/internals/legacy-language-service-overview.md)
 - [Colorazione della sintassi in un servizio di linguaggio legacy](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

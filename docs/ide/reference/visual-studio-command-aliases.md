@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dda564939652a09b64fec65747ca14d1315b3f1
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 54a33d56542065311b2614bad72593132b7908cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96561071"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836202"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
@@ -55,7 +55,7 @@ Nella tabella seguente vengono elencati gli alias predefiniti dei comandi di Vis
 |[Comando Elenca memoria](../../ide/reference/list-memory-command.md) come ANSI|da|Debug.ListMemory /Ansi|
 |[Comando Elenca memoria](../../ide/reference/list-memory-command.md) formato a byte singolo|db|Debug.ListMemory /Format:OneByte|
 |[Comando Elenca memoria](../../ide/reference/list-memory-command.md) come ANSI con formato a quattro byte|dc|Debug.ListMemory /Format:FourBytes /Ansi|
-|[Comando Elenca memoria](../../ide/reference/list-memory-command.md) formato a quattro byte|dd|Debug.ListMemory /Format:FourBytes|
+|[Comando Elenca memoria](../../ide/reference/list-memory-command.md) formato a quattro byte|gg|Debug.ListMemory /Format:FourBytes|
 |Elimina a inizio riga|DelBOL|Edit.DeleteToBOL|
 |Elimina a fine riga|DelEOL|Edit.DeleteToEOL|
 |Elimina spazio vuoto superfluo|DelHSp|Edit.DeleteHorizontalWhitespace|
@@ -101,7 +101,7 @@ Nella tabella seguente vengono elencati gli alias predefiniti dei comandi di Vis
 |Stampa file|print|File.Print|
 |Finestra Proprietà|props|View.PropertiesWindow|
 |Interrompere|q|Debug.StopDebugging|
-|Ripristinare|rollforward|Edit.Redo|
+|Ripeti|rollforward|Edit.Redo|
 |Registri (finestra)|registri|Debug.Registers|
 |Esegui fino al cursore|rtc|Debug.RunToCursor|
 |Salva elementi selezionati|Salva|File.SaveSelectedItems|
@@ -127,7 +127,7 @@ Nella tabella seguente vengono elencati gli alias predefiniti dei comandi di Vis
 |Elenca processi|&#124;|Debug.ListProcesses|
 |[Comando list Threads](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)

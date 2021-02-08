@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb694389bbf6f913db084dca29f7787c6283d3ad
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 8f6010ffdf6873073eded63c75475115391a3964
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205023"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839599"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfacce dei servizi di linguaggio legacy
 Per qualsiasi linguaggio di programmazione specifico, può essere presente una sola istanza di un servizio di linguaggio alla volta. Tuttavia, un singolo servizio di linguaggio può servire più di un editor.
@@ -52,6 +52,6 @@ Per qualsiasi linguaggio di programmazione specifico, può essere presente una s
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|Consente di modificare la visualizzazione di testo utilizzando il gestore del comando. La classe in cui viene implementata l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> interfaccia deve implementare anche l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia. La visualizzazione di testo recupera l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> oggetto eseguendo una query sull' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> oggetto passato al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> metodo. Deve essere presente un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> oggetto per ogni visualizzazione.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Intercetta i comandi che l'utente digita nella finestra del codice. Monitorare l'output dell' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> implementazione per fornire informazioni di completamento personalizzate e visualizzare le modifiche<br /><br /> Per passare l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> oggetto alla visualizzazione di testo, chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> .|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sviluppo di un servizio di linguaggio legacy](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [Elenco di controllo: Creazione di un servizio di linguaggio legacy](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

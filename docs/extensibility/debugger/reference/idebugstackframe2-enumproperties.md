@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 334bb95e-c7e0-4008-9f06-8c3999e47ee8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f822f20cf4fb7a6fd5aa71b9cc1ec26bcd90e234
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 500701be7b6f2aedffceaaaa819ecbd253a58e36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719903"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837710"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 Crea un enumeratore per le proprietà associate all'stack frame, ad esempio le variabili locali.
@@ -28,7 +28,7 @@ Crea un enumeratore per le proprietà associate all'stack frame, ad esempio le v
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT EnumProperties ( 
+HRESULT EnumProperties ( 
    DEBUGPROP_INFO_FLAGS      dwFieldSpec,
    UINT                      nRadix,
    REFIID                    refiid,
@@ -39,7 +39,7 @@ HRESULT EnumProperties ( 
 ```
 
 ```csharp
-int EnumProperties ( 
+int EnumProperties ( 
    enum_DEBUGPROP_INFO_FLAGS   dwFieldSpec,
    uint                        nRadix,
    ref Guid                    refiid,
@@ -71,10 +71,10 @@ out Restituisce un oggetto [IEnumDebugPropertyInfo2](../../../extensibility/debu
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Poiché questo metodo consente il recupero di tutte le proprietà selezionate con una singola chiamata, è più veloce della chiamata sequenziale dei metodi [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) e [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1bde9807-8219-4a2a-a440-ac5ee5178159
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cbdd7e948aaafff8e90aa8e67907c9a53471b05c
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 251b15edc838a1231e017d8f23b04f8bbb773692
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150080"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840873"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Uso dell'agente di raccolta autonomo IntelliTrace (C#, Visual Basic)
 
@@ -33,7 +33,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 > È possibile raccogliere gli eventi relativi alle prestazioni nei dati IntelliTrace eseguendo l'agente in modalità **Monitor** . La modalità **Monitor** ha un impatto minore sulle prestazioni rispetto alla modalità **Traccia** o all' **IntelliTraccia stand-alone collector**. Microsoft Monitoring Agent non modifica l'ambiente del sistema di destinazione quando viene installato. Vedere [utilizzo del Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
 > L'agente di raccolta autonomo IntelliTrace non supporta gli snapshot di processo.
 
- **Requirements**
+ **Requisiti**
 
 - .NET Framework 3,5 o versione successiva
 

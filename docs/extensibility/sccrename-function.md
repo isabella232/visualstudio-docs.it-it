@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88a917e43729b3049e488264c260f8455ab08fe4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b4579644b04002ae9da3361ba35c63472eef637
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700422"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836748"
 ---
 # <a name="sccrename-function"></a>Funzione SccRename
 Questa funzione rinomina un file nel sistema di controllo del codice sorgente.
@@ -64,8 +64,8 @@ in Nome completo del file che viene rinominato.
 |SCC_E_OPNOTPERFORMED|L'operazione non è stata eseguita.|
 |SCC_E_NONSPECIFICERROR|Si è verificato un errore non specificato o generale.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa funzione può essere usata per rinominare un file o spostarla da una posizione a un'altra nel sistema di controllo del codice sorgente. Il plug-in del controllo del codice sorgente non deve tentare di accedere al file su disco. È responsabilità dell'IDE rinominare il file locale.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - local data [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1a3166a88080eaee1042187c171c4938d236058a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 857038700a29f423250f006e743152bceea43c14
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838231"
 ---
 # <a name="use-local-database-files-in-office-solutions-overview"></a>Panoramica sull'uso dei file di database locali nelle soluzioni Office
   È possibile includere un file di database, ad esempio un file di SQL Server Express (con *estensione MDF*) o un file con estensione *MDB*(Microsoft Office Access) nella soluzione Office. Ciò consente agli utenti finali di gestire un database locale in situazioni in cui la gestione di un database centralizzato non è necessaria, ad esempio in una soluzione di inventario locale utilizzata su un solo computer.
@@ -39,7 +39,7 @@ ms.locfileid: "97526559"
 ## <a name="local-database-files-and-caching-the-dataset"></a>File di database locali e memorizzazione nella cache del set di dati
  Nelle soluzioni a livello di documento per Microsoft Office Excel e Microsoft Office Word, è possibile memorizzare nella cache i set di dati nel documento contrassegnando l'istanza del set di dati con l'attributo <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> . Quando si aggiunge il file di database al progetto tramite la **Configurazione guidata origine dati**, un set di dati tipizzato viene aggiunto automaticamente al progetto. Raramente è necessario applicarlo <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> a questo set di dati, perché i dati sono già locali nel computer dell'utente. Per altre informazioni, vedere [memorizzare i dati nella cache](../vsto/caching-data.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Procedura: popolare documenti con dati da un database](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 - [Procedura: aggiornare un'origine dati con i dati di un controllo host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

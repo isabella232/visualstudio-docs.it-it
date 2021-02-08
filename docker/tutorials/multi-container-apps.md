@@ -4,17 +4,17 @@ description: Come configurare la rete tra i contenitori e aggiungere un contenit
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 9513a3414a38aa02f6a4607a8c95bbf02c0e1cf6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c8c9fb4072da071ba06d5dc371e85db8291353a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178300"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841783"
 ---
 # <a name="multi-container-apps"></a>App con più contenitori
 
@@ -136,7 +136,7 @@ Per scoprirlo, si userà il contenitore [nicolaka/NetShoot](https://github.com/n
 
 ## <a name="run-your-app-with-mysql"></a>Eseguire l'app con MySQL
 
-L'app todo supporta l'impostazione di alcune variabili di ambiente per specificare le impostazioni di connessione di MySQL. ovvero:
+L'app todo supporta l'impostazione di alcune variabili di ambiente per specificare le impostazioni di connessione di MySQL. Ad esempio:
 
 - `MYSQL_HOST` : il nome host per il server MySQL in esecuzione
 - `MYSQL_USER` : nome utente da usare per la connessione

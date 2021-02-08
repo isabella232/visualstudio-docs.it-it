@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding controls at run time
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbf6313f4788a0bd224d04639d3ab588a6469842
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3cc88b5ee48241a15a66144c992936b55fb2acf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526282"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838087"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Procedura dettagliata: aggiungere controlli a un documento in fase di esecuzione in un componente aggiuntivo VSTO
   È possibile aggiungere controlli a qualsiasi documento Microsoft Office Word aperto usando un componente aggiuntivo VSTO. In questa procedura dettagliata viene illustrato come utilizzare la barra multifunzione per consentire agli utenti di aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.Controls.Button> o <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento.
@@ -80,14 +80,14 @@ ms.locfileid: "97526282"
 
 8. Nella finestra **Proprietà** modificare le seguenti proprietà:
 
-   | Proprietà | valore |
+   | Proprietà | Valore |
    |-----------|-----------------------|
    | **Nome** | **addButtonCheckBox** |
    | **Etichetta** | **Pulsante Aggiungi** |
 
 9. Aggiungere una seconda casella di controllo a **group1** e quindi modificare le proprietà seguenti.
 
-   | Proprietà | valore |
+   | Proprietà | Valore |
    |-----------|---------------------------|
    | **Nome** | **addRichTextCheckBox** |
    | **Etichetta** | **Add Rich Text Control** |
@@ -127,7 +127,7 @@ ms.locfileid: "97526282"
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#3)]
 
 ## <a name="remove-the-button-control-when-the-document-is-saved"></a>Rimuovere il controllo Button quando il documento viene salvato
- I controlli Windows Form non vengono mantenuti quando il documento viene salvato e quindi chiuso. Nel documento, però, rimane un wrapper ActiveX per ogni controllo e il bordo di questo wrapper è visibile agli utenti finali quando il documento viene riaperto. Esistono diversi modi per pulire i controlli Windows Forms creati dinamicamente nei componenti aggiuntivi VSTO. In questa procedura dettagliata, il controllo viene rimosso a livello di codice <xref:Microsoft.Office.Tools.Word.Controls.Button> quando il documento viene salvato.
+ I controlli Windows Form non vengono mantenuti quando il documento viene salvato e quindi chiuso. Nel documento, però, rimane un wrapper ActiveX per ogni controllo e il bordo di questo wrapper è visibile agli utenti finali quando il documento viene riaperto. Esistono diversi modi per pulire i controlli Windows Form creati dinamicamente nei componenti aggiuntivi VSTO. In questa procedura dettagliata, il controllo viene rimosso a livello di codice <xref:Microsoft.Office.Tools.Word.Controls.Button> quando il documento viene salvato.
 
 ### <a name="to-remove-the-button-control-when-the-document-is-saved"></a>Per rimuovere il controllo Button quando il documento viene salvato
 
@@ -184,10 +184,10 @@ ms.locfileid: "97526282"
 
 - Per una procedura dettagliata che illustra come aggiungere controlli a un foglio di lavoro usando un componente aggiuntivo VSTO per Excel, vedere [procedura dettagliata: aggiungere controlli a un foglio di lavoro in fase di esecuzione in un progetto di componente aggiuntivo VSTO](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Soluzioni Word](../vsto/word-solutions.md)
 - [Aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Mantieni controlli dinamici nei documenti di Office](../vsto/persisting-dynamic-controls-in-office-documents.md)
-- [Procedura: aggiungere controlli Windows Forms ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Procedura: aggiungere controlli Windows Form ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [Procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [Estendi i documenti di Word e le cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

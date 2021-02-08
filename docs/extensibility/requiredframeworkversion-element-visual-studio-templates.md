@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 552efae54a3c8346c7a259fb36e0ed0f8084be3e
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 211393ea65f7ca31f80134c48863b0092478b3f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037725"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836982"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Elemento RequiredFrameworkVersion (modelli di Visual Studio)
 
@@ -40,11 +40,11 @@ Specifica la versione minima del .NET Framework richiesta dal modello. L'elenco 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
-### <a name="attributes"></a>Attributes
- Nessuno.
+### <a name="attributes"></a>Attributi
+ Nessuna.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 

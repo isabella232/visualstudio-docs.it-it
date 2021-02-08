@@ -4,23 +4,23 @@ description: Viene descritto come utilizzare i montaggi di binding per controlla
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 6474179a0714f2407ac37e724b997139206a91fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57cb56d0d9a93d0f11e4047f6e25b64841c47e93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178331"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841679"
 ---
 # <a name="use-bind-mounts"></a>Usare i montaggi di binding
 
 Nel capitolo precedente è stato descritto e utilizzato un **volume denominato** per salvare in modo permanente i dati nel database. I volumi denominati sono eccezionali se si vuole semplicemente archiviare i dati, perché non è necessario preoccuparsi della *posizione in cui* sono archiviati i dati.
 
-Con i **montaggi di binding**è possibile controllare l'esatto mountpoint nell'host. Questa operazione può essere utilizzata per rendere permanente i dati, ma viene spesso utilizzata per fornire dati aggiuntivi nei contenitori. Quando si lavora in un'applicazione, è possibile usare un montaggio di binding per montare il codice sorgente nel contenitore per visualizzare le modifiche al codice, rispondere e consentire di visualizzare immediatamente le modifiche.
+Con i **montaggi di binding** è possibile controllare l'esatto mountpoint nell'host. Questa operazione può essere utilizzata per rendere permanente i dati, ma viene spesso utilizzata per fornire dati aggiuntivi nei contenitori. Quando si lavora in un'applicazione, è possibile usare un montaggio di binding per montare il codice sorgente nel contenitore per visualizzare le modifiche al codice, rispondere e consentire di visualizzare immediatamente le modifiche.
 
 Per le applicazioni basate su nodi, [nodemon](https://npmjs.com/package/nodemon) è un ottimo strumento che consente di controllare le modifiche ai file e quindi di riavviare l'applicazione. Sono disponibili strumenti equivalenti nella maggior parte degli altri linguaggi e Framework.
 
@@ -75,7 +75,7 @@ Per eseguire il contenitore per supportare un flusso di lavoro di sviluppo, proc
 
     Al termine del controllo dei log, uscire da `Ctrl` + `C` .
 
-1. A questo punto, apportare una modifica all'app. Nel `src/static/js/app.js` file modificare il pulsante **Aggiungi elemento** per **aggiungere**semplicemente. Questa modifica sarà alla riga 109.
+1. A questo punto, apportare una modifica all'app. Nel `src/static/js/app.js` file modificare il pulsante **Aggiungi elemento** per **aggiungere** semplicemente. Questa modifica sarà alla riga 109.
 
     ```diff
     -                         {submitting ? 'Adding...' : 'Add Item'}

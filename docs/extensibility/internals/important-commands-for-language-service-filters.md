@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13014d61450897897029750b012833cf93a57729
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 4eaa85eab9d9691125afce28d51c61d464e56cb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839833"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Comandi importanti per i filtri dei servizi di linguaggio
 Se si desidera creare un filtro dei servizi di linguaggio completo, considerare la possibilità di gestire i comandi seguenti. L'elenco completo degli identificatori di comando è definito nell' <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> enumerazione per il codice gestito e nel file di intestazione Stdidcmd. h per il [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] codice non gestito. È possibile trovare il file Stdidcmd. h nel *percorso di installazione di Visual Studio SDK*\VisualStudioIntegration\Common\Inc.
@@ -40,5 +40,5 @@ Se si desidera creare un filtro dei servizi di linguaggio completo, considerare 
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Viene in genere inviato quando l'utente digita CTRL + barra SPAZIAtrice. Questo comando indica al servizio di linguaggio di chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metodo su <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> .|
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Inviato da un menu, in genere la selezione di **Commenti** o la rimozione di **Commenti** dal menu **Avanzate** nel menu **modifica** . <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> indica che l'utente desidera impostare come commento il testo selezionato. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> indica che l'utente desidera rimuovere il commento dal testo selezionato. Questi comandi possono essere implementati solo dal servizio di linguaggio.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sviluppo di un servizio di linguaggio legacy](../../extensibility/internals/developing-a-legacy-language-service.md)

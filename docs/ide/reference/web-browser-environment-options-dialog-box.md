@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2898984896ef96f9e7767e0c56ad58c92be42f54
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: c87077005ae2ebbcc8fba92c9f1dc09f17bb3157
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560928"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836215"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>Finestra di dialogo Opzioni: \> Web browser ambiente
 
@@ -65,7 +65,7 @@ Selezionare questa opzione per modificare le opzioni di Internet Explorer nella 
 > [!NOTE]
 > Usare la finestra di dialogo **Esplora con** per sostituire il Web browser di Visual Studio interno con un browser di propria scelta. È possibile accedere alla finestra di dialogo Esplora con ad esempio dal menu di scelta rapida di un file HTML nel progetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Generale, ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
 - [Finestra di progettazione HTML](/previous-versions/ex0hkwbx(v=vs.140))

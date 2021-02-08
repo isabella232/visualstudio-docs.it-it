@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: f8c3409c7ba62f1deb628645b624a40de4cbeaff
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 95404beb5c2be5363c9ef91e770237b453970429
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136875"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836449"
 ---
 # <a name="build-page-project-designer-c"></a>Pagina Compilazione, Progettazione progetti (C#)
 
@@ -147,7 +147,7 @@ Specifica se il compilatore userà lo strumento per la generazione di serializza
 
 Selezionare il collegamento per informazioni sulla finestra di dialogo [Impostazioni di compilazione avanzate (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Project Properties Reference](../../ide/reference/project-properties-reference.md) (Riferimenti alle proprietà di progetto)
 - [Opzioni del compilatore C#](/dotnet/csharp/language-reference/compiler-options/index)

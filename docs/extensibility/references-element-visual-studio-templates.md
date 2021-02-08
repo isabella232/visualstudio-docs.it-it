@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 1969146d-46bf-422d-8d46-0e9493925003
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2576a56bf223fd1b3a1ba4903595cc25144011ec
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 6a9c2cc5d8827f6419472e5fd84add4d9c9f5228
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837177"
 ---
 # <a name="references-element-visual-studio-templates"></a>Elemento References (modelli di Visual Studio)
 Raggruppa i riferimenti agli assembly aggiunti dal modello ai progetti.
@@ -43,7 +43,7 @@ Raggruppa i riferimenti agli assembly aggiunti dal modello ai progetti.
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ Nessuna.
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -83,6 +83,6 @@ Raggruppa i riferimenti agli assembly aggiunti dal modello ai progetti.
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf2dd87efbb50346093144db6e069eea30138e37
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a68694388f49d59c7e8e872f0fc70994130e2990
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700500"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836774"
 ---
 # <a name="sccproperties-function"></a>Funzione SccProperties
 Questa funzione consente di visualizzare le proprietà del controllo del codice sorgente per un file o un progetto.
@@ -57,10 +57,10 @@ in Nome del percorso completo del file o del progetto.
 |SCC_E_FILENOTCONTROLLED|Il file o il progetto specificato non è sotto il controllo del codice sorgente.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Si è verificato un errore sconosciuto o generico.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il plug-in del controllo del codice sorgente Visualizza le proprietà nella relativa finestra di dialogo.
 
  Le proprietà sono definite dal plug-in del controllo del codice sorgente e possono essere diverse dal plug-in per il plug-in. Se il plug-in consente all'utente di modificare le proprietà del controllo del codice sorgente di un file, deve restituire `SCC_I_RELOAD` per segnalare all'IDE che il file o il progetto deve essere ricaricato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 206c79a47ec59e02206332d80d1afe935fb72bdc
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: adb56ddfa53356c00224082c2460137b3f2b3751
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150626"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841016"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Visualizzare lo stack di chiamate e utilizzare la finestra stack di chiamate nel debugger
 
@@ -139,7 +139,7 @@ Vedere [specificare i file di simboli (con estensione pdb) e di origine](../debu
 
 5. Selezionare **OK** per chiudere la finestra di dialogo **Opzioni** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Codice misto e informazioni mancanti nella finestra Stack di chiamate](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
 - [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)

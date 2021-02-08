@@ -12,21 +12,21 @@ helpviewer_keywords:
 - Application page in Project Designer
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 675c3fbaaf1a3e49648befebca4927299649b057
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 986179e66335403cda85ba48d1652ac95b9f8171
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871418"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836527"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
 Usare la pagina **Applicazione** di Creazione progetti per specificare le impostazioni e le proprietà dell'applicazione del progetto.
 
-Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Quindi scegliere **Project**  >  **proprietà** progetto dalla barra dei menu. Quando si apre **Creazione progetti**, selezionare la scheda **Applicazione**.
+Per accedere alla pagina **Applicazione**, scegliere un nodo del progetto (non il nodo **Soluzione**) in **Esplora soluzioni**. Quindi scegliere   >  **proprietà** progetto dalla barra dei menu. Quando si apre **Creazione progetti**, selezionare la scheda **Applicazione**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -104,7 +104,7 @@ Fare clic su questo pulsante per visualizzare la [finestra di dialogo Informazio
 
 ### <a name="enable-application-framework"></a>Abilita framework applicazione
 
-Consente di specifica se un progetto deve usare il framework dell'applicazione. L'impostazione di questa opzione influiscono sulle opzioni disponibili nell'oggetto di avvio del modulo di **avvio** / **Startup object**.
+Consente di specifica se un progetto deve usare il framework dell'applicazione. L'impostazione di questa opzione influiscono sulle opzioni disponibili nell'oggetto di avvio del modulo di **avvio** / .
 
 Se questa casella di controllo è selezionata, l'applicazione usa la procedura `Sub Main` standard. Se si seleziona questa casella di controllo, vengono abilitate le funzionalità della sezione **Proprietà framework applicazione Windows** ed è anche necessario selezionare un modulo di avvio.
 

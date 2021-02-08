@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea784eae808cbab3a5991651961d3b150b641c04
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 86173253c947be5de8600e15b68a6f08504803a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839846"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Sequenza di inizializzazione dei sottotipi di progetto
 L'ambiente costruisce un progetto chiamando l'implementazione della factory del progetto di base di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> . La costruzione di un sottotipo di progetto viene avviata quando l'ambiente determina che l'elenco dei GUID del tipo di progetto per l'estensione di un file di progetto non è vuoto. L'estensione del file di progetto e il GUID del progetto specificano se il progetto è un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] tipo di progetto o. Ad esempio, l'estensione vbproj e {F184B08F-C81C-45F6-A57F-5ABD9991F28F} identificano un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] progetto.
@@ -133,7 +133,7 @@ HRESULT HrCreateInnerProj
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:Microsoft.VisualStudio.Shell.Flavor>
 - [Sottotipi di progetto](../../extensibility/internals/project-subtypes.md)

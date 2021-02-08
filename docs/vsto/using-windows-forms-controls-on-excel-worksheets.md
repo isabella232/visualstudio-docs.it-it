@@ -1,6 +1,6 @@
 ---
-title: Usare Windows Forms controlli nei fogli di lavoro di Excel
-description: Informazioni su come aggiungere controlli Windows Forms alle cartelle di lavoro di Microsoft Excel nello stesso modo in cui si aggiungono controlli a Windows Forms.
+title: Usare Windows Form controlli nei fogli di lavoro di Excel
+description: Informazioni su come aggiungere controlli Windows Form alle cartelle di lavoro di Microsoft Excel nello stesso modo in cui si aggiungono controlli a Windows Form.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,18 +13,18 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], Window Forms controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 015fffa51358c3a7a13d98950392d0749560c089
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f8c79e487e116741c393cef5a6f65b30cc4a8cfb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526518"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838217"
 ---
-# <a name="use-windows-forms-controls-on-excel-worksheets"></a>Usare Windows Forms controlli nei fogli di lavoro di Excel
-  È possibile aggiungere controlli Windows Forms alle cartelle di lavoro di Microsoft Office Excel nello stesso modo in cui si aggiungono controlli a Windows Forms. Per informazioni generali sull'uso dei controlli sui documenti, vedere [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).
+# <a name="use-windows-forms-controls-on-excel-worksheets"></a>Usare Windows Form controlli nei fogli di lavoro di Excel
+  È possibile aggiungere controlli Windows Form alle cartelle di lavoro di Microsoft Office Excel nello stesso modo in cui si aggiungono controlli a Windows Form. Per informazioni generali sull'uso dei controlli sui documenti, vedere [Windows Form Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "97526518"
 ### <a name="formula-for-embedding-controls"></a>Formula per l'incorporamento di controlli
  Quando si seleziona un controllo in Excel, verrà visualizzato **=EMBED("WinForms.Control.Host","")** nella **Barra della formula**. Questo testo è necessario e non deve essere eliminato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: ridimensionare i controlli all'interno di celle del foglio di comando](../vsto/how-to-resize-controls-within-worksheet-cells.md)
 - [Procedura: nascondere i controlli nei fogli di foglio durante la stampa](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
 - [Procedura dettagliata: modificare la formattazione del foglio di controllo tramite i controlli CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)

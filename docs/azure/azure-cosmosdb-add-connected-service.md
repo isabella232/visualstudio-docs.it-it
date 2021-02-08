@@ -2,18 +2,18 @@
 title: Aggiungere CosmosDB di Azure usando Servizi connessi | Microsoft Docs
 description: Aggiungere il supporto di Azure CosmosDB all'app usando Visual Studio per aggiungere un servizio connesso
 author: AngelosP
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 4a2789246a75fe7d2331156eecb106f31f21cbf5
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 070c1e77559e33ac398730b1bafc5a4a86825cda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841183"
 ---
 # <a name="add-azure-cosmos-db-to-your-app-by-using-visual-studio-connected-services"></a>Aggiungere Azure Cosmos DB all'app usando Visual Studio Servizi connessi
 
@@ -22,7 +22,7 @@ Con Visual Studio, è possibile connettere uno dei seguenti elementi a Azure Cos
 - App console .NET Framework
 - MVC ASP.NET (.NET Framework) 
 - ASP.NET Core
-- .NET Core (incluse app console, WPF, Windows Forms, libreria di classi)
+- .NET Core (incluse app console, WPF, Windows Form, libreria di classi)
 - Ruolo di lavoro .NET Core
 - Funzioni di Azure
 - App piattaforma UWP (Universal Windows Platform)
@@ -82,7 +82,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 
    ![Dipendenze dei servizi](./media/azure-cosmosdb-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Pagina del prodotto Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/)
 - [Documentazione di Azure Cosmos DB](/azure/cosmos-db/)

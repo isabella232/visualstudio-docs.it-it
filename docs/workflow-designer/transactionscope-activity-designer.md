@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 8d7ebfc6-7478-4888-b3b0-b14f296096af
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fde6dabb372bfa20f55335008ce91e8de2481a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 234e6c2d0349cf610d9ba22d53ce59e3768ad64e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838009"
 ---
 # <a name="transactionscope-activity-designer"></a>ActivityDesigner TransactionScope
 
@@ -35,7 +35,7 @@ Accedere all'ActivityDesigner **TransactionScope** nella categoria **transazione
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.TransactionScope> e ne viene descritta la modalità di uso nella finestra di progettazione. Le <xref:System.Activities.Activity.DisplayName%2A> <xref:System.Activities.Statements.TransactionScope.Body%2A> proprietà e possono essere modificate in Progettazione flussi di lavoro area. Le altre proprietà devono invece essere modificate nella griglia delle proprietà.
 
-|Nome proprietà|Obbligatoria|Uso|
+|Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.TransactionScope>. Il valore predefinito è TransactionScope. Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
 |<xref:System.Activities.Statements.TransactionScope.Body%2A>|Vero|Consente di specificare l'attività da eseguire in un'unica transazione. Per aggiungere l' <xref:System.Activities.Statements.TransactionScope.Body%2A> attività, rilasciare un'attività dalla casella **degli strumenti** nella casella **corpo** dell'ActivityDesigner **TransactionScope** con il testo di suggerimento "rilasciare l'attività".|
@@ -43,7 +43,7 @@ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.St
 |<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|Falso|Consente di specificare l'intervallo di tempo (nel formato 00:00:00, che indica ore:minuti:secondi) disponibile per il completamento della transazione. Il valore predefinito è 1 minuto (00:01:00).|
 |<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|Vero|Specifica il valore che indica se il flusso di lavoro deve essere interrotto se la transazione si interrompe.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Transazione](../workflow-designer/transaction-activity-designers.md)
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)

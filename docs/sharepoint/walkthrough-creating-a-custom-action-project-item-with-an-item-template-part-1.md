@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d9d1d2cca8f8ffaec67c92b44e7a621d08ad673
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e7427c0866806c705ed28a049b33024771631c0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839123"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Procedura dettagliata: creare un elemento di progetto azione personalizzata con un modello di elemento, parte 1
   Per estendere il sistema del progetto SharePoint in Visual Studio, è possibile creare tipi di elemento di progetto personalizzati. In questa procedura dettagliata verrà creato un elemento del progetto che può essere aggiunto a un progetto SharePoint per creare un'azione personalizzata in un sito di SharePoint. L'azione personalizzata consente di aggiungere una voce di menu al menu **Azioni sito** del sito di SharePoint.

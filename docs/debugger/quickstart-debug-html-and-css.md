@@ -15,16 +15,16 @@ helpviewer_keywords:
 - DOM Explorer [UWP apps]
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: fafab7a2cbf660987de0365549aaa823a4e3445d
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 8132e3f26352bada4d06910e40a7ca662dae874e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205476"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840977"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Eseguire il debug di HTML e CSS nelle app UWP in Visual Studio
 
@@ -256,7 +256,7 @@ Nella routine seguente viene illustrato il processo di debug interattivo di un'a
 > [!NOTE]
 > L'evidenziazione degli elementi al passaggio del mouse è supportata solo in parte nell'emulatore Windows Phone.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Eseguire il debug di app in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md)

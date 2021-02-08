@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1adcbb47e9fce7037fe8942326e8836ade51e3eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33ef775f33194a616d93478aecfdcceec446ebe8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700315"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836696"
 ---
 # <a name="sccsetoption-function"></a>Funzione SccSetOption
 Questa funzione imposta le opzioni che controllano il comportamento del plug-in del controllo del codice sorgente.
@@ -54,7 +54,7 @@ in Impostazioni per l'opzione.
 |SCC_I_SHARESUBPROJOK|Restituito se `nOption` è `SCC_OPT_SHARESUBPROJ` e il plug-in del controllo del codice sorgente consente all'IDE di impostare la cartella di destinazione.|
 |SCC_E_OPNOTSUPPORTED|L'opzione non è stata impostata e non deve essere basata su.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'IDE chiama questa funzione per controllare il comportamento del plug-in del controllo del codice sorgente. Il primo parametro, `nOption` , indica il valore che viene impostato, mentre il secondo, `dwVal` , indica le operazioni da eseguire con tale valore. Il plug-in archivia queste informazioni associate a un oggetto in `pvContext``,` modo che l'IDE debba chiamare questa funzione dopo la chiamata a [SccInitialize](../extensibility/sccinitialize-function.md) (ma non necessariamente dopo ogni chiamata a [SccOpenProject](../extensibility/sccopenproject-function.md)).
 
  Riepilogo delle opzioni e dei relativi valori:
@@ -83,7 +83,7 @@ in Impostazioni per l'opzione.
 ## <a name="scc_opt_sharesubproj"></a>SCC_OPT_SHARESUBPROJ
  Se `nOption` è impostato su `SCC_OPT_SHARESUBPROJ` , l'IDE sta verificando se il plug-in del controllo del codice sorgente può utilizzare una cartella locale specificata durante l'aggiunta di file dal controllo del codice sorgente. Il valore del parametro non è `dwVal` importante in questo caso. Se il plug-in consente all'IDE di specificare la cartella di destinazione locale in cui verranno aggiunti i file dal controllo del codice sorgente quando viene chiamato [SccAddFromScc](../extensibility/sccaddfromscc-function.md) , il plug-in deve restituire `SCC_I_SHARESUBPROJOK` quando `SccSetOption` viene chiamata la funzione. L'IDE usa quindi il `lplpFileNames` parametro della `SccAddFromScc` funzione per passare la cartella di destinazione. Il plug-in utilizza tale cartella di destinazione per inserire i file aggiunti dal controllo del codice sorgente. Se il plug-in non restituisce `SCC_I_SHARESUBPROJOK` quando l' `SCC_OPT_SHARESUBPROJ` opzione è impostata, l'IDE presuppone che il plug-in sia in grado di aggiungere file solo nella cartella locale corrente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office functionality inside Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c93994b233990e2362c62445909adb66a0eeeb9b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 258ea4529a558c91eb115b82b35def4ca4ab6561
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528402"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838242"
 ---
 # <a name="use-office-functionality-inside-of-visual-studio"></a>Usare le funzionalità di Office all'interno di Visual Studio
   Quando si crea un progetto a livello di documento, il documento e l'applicazione associata sono ospitati all'interno di Visual Studio in modo da poter progettare e utilizzare direttamente il documento. Quando si dispone di un'applicazione Microsoft Office aperta in Visual Studio, in genere funziona come previsto. Tuttavia, alcune delle funzionalità dell'applicazione sono diverse o inaccessibili.
@@ -37,7 +37,7 @@ ms.locfileid: "97528402"
 ## <a name="password-protection"></a>Password di protezione
  È possibile impostare Microsoft Office documenti di Word e Microsoft Office cartelle di lavoro di Excel in modo che non possano essere aperti da un utente che non conosce la password. La protezione con password viene gestita in modo diverso in Word ed Excel e può influire sul processo di sviluppo. Per ulteriori informazioni, vedere la pagina [relativa alla protezione delle password nei documenti di Office](../vsto/password-protection-on-office-documents.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Protezione di documenti nelle soluzioni a livello di documento](../vsto/document-protection-in-document-level-solutions.md)
 - [Panoramica di Information Rights Management e delle estensioni di codice gestito](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [Protezione delle password nei documenti di Office](../vsto/password-protection-on-office-documents.md)

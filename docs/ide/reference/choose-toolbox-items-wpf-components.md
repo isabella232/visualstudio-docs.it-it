@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Choose Toolbox Items dialog box, WPF Components tab
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b9727d335607f15101222e40be193de2315b7dc
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: d23418cd784b9e0b7c916c1e5629a6da012b9d0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836397"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Scegli elementi della Casella degli strumenti, Componenti WPF
 
@@ -41,7 +41,7 @@ Le colonne della scheda **Componenti WPF** contengono le informazioni seguenti:
 
 Elenca i nomi dei controlli WPF per i quali sono presenti voci nel Registro di sistema del computer.
 
-**Spazio dei nomi**
+**Namespace**
 
 Visualizza la gerarchia dello spazio dei nomi [API di .NET](/dotnet/api/?view=netframework-4.7&preserve-view=true) che definisce la struttura del componente. Ordinare in base a questa colonna per elencare i componenti disponibili in ogni spazio dei nomi .NET installato nel computer in uso.
 
@@ -55,7 +55,7 @@ Visualizza il percorso dell'assembly .NET. Gli assembly si trovano, per impostaz
 
 ## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
-### <a name="filter"></a>Filtro
+### <a name="filter"></a>Filtra
 
 Filtra l'elenco dei controlli WPF in base alla stringa immessa nella casella di testo. Vengono visualizzate tutte le corrispondenze presenti in una qualsiasi delle quattro colonne.
 
@@ -83,7 +83,7 @@ Inoltre se al controllo personalizzato vengono applicati i metadati della fase d
 
 È possibile fare riferimento ai controlli direttamente in XAML eseguendo il mapping dello spazio dei nomi e dell'assembly per il controllo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Casella degli strumenti](../../ide/reference/toolbox.md)
 - [Guida introduttiva a WPF](../../designers/getting-started-with-wpf.md)

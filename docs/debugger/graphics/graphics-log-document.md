@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: 6ccb1269-d55f-49c4-920d-baedf7de2888
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 38dc7452493ebcd39bee5ee55c59fc70e0a6493c
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 0fbf6e002254f10ca983cfaff4198008aaa9724a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727658"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841107"
 ---
 # <a name="graphics-log-document"></a>Documento log grafica
 Il documento di log della grafica è la registrazione degli eventi di grafica che si sono verificati durante l'esecuzione dell'app in una sessione di diagnostica della grafica. Dopo la registrazione, è possibile esaminare il log in Analizzatore grafica di Visual Studio per diagnosticare i problemi di rendering e di prestazioni.
@@ -96,7 +96,7 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 |**Data/ora ultima modifica**|Data e ora in cui è stata compilata l'app.|
 |**Percorso**|Percorso dell'app.|
 |**ID processo**|ID processo assegnato all'app.|
-|**Version**|Versione dell'app.|
+|**Versione**|Versione dell'app.|
 
  **File di log VSG** Elenca le informazioni sul documento del log di grafica.
 

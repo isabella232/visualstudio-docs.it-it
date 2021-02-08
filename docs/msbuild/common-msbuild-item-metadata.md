@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 152967fb99442b58d96016e10d8899b57ef35bf6
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 8dda627f748773bc4cb5598b133ac05597ffe1d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796590"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839309"
 ---
 # <a name="common-msbuild-item-metadata"></a>Metadati dell'elemento MSBuild comuni
 
@@ -30,10 +30,10 @@ La tabella seguente descrive i metadati facoltativi degli elementi che hanno un 
 
 | Metadati degli elementi | SDK | Descrizione |
 |---------------| ------- | -------------|
-|% (Collegamento)| Tutti |Il sistema di progetto di Visual Studio USA i `Link` metadati (se presenti) per modificare gli elementi visualizzati nell'albero del progetto. è possibile inserire un file in una struttura di cartelle logica diversa in **Esplora soluzioni** .<br />Inoltre, l' `AssignTargetPath` attività esamina `Link` per determinare la posizione della directory di output in cui copiare un file, se si tratta di uno degli elementi che vengono copiati.|
+|% (Collegamento)| Tutti |Il sistema di progetto di Visual Studio USA i `Link` metadati (se presenti) per modificare gli elementi visualizzati nell'albero del progetto. è possibile inserire un file in una struttura di cartelle logica diversa in **Esplora soluzioni**.<br />Inoltre, l' `AssignTargetPath` attività esamina `Link` per determinare la posizione della directory di output in cui copiare un file, se si tratta di uno degli elementi che vengono copiati.|
 |% (Collegamento)| .NET Core SDK | Utilizzato per impostare la cartella da utilizzare per i `Link` metadati per i gruppi di elementi. |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Proprietà di progetto MSBuild comuni](../msbuild/common-msbuild-project-properties.md)
 - [Elementi di progetto MSBuild comuni](../msbuild/common-msbuild-project-items.md)

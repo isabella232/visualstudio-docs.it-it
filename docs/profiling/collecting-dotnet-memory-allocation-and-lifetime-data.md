@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Profiling Tools,.NET memory method
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: a9321ce83f65d5a7cac95d793d5f635651bef0e7
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: 00a8b7c7e92153fcbc323349f30adc458cf973fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533797"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839283"
 ---
 # <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>Raccolta dei dati di durata e allocazione della memoria .NET Framework
 
@@ -80,7 +80,7 @@ Le attività nella tabella seguente sono opzioni della finestra di dialogo **Pag
 |Nella pagina **Contatori CPU** specificare uno o più contatori di prestazioni del processore da aggiungere ai dati di profilatura.|- [Procedura: raccogliere i dati dei contatori CPU](../profiling/how-to-collect-cpu-counter-data.md)|
 |Nella pagina **Avanzate** specificare eventuali opzioni di VSInstr.exe aggiuntive, ad esempio le opzioni per includere o escludere funzioni specifiche. Per altre informazioni sulle opzioni di VSInstr, vedere [VSInstr](../profiling/vsinstr.md)|- [Procedura: specificare opzioni di strumentazione aggiuntive](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [Procedura: limitare la strumentazione a funzioni specifiche](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Configurare le sessioni](../profiling/configuring-performance-sessions.md) 
  di prestazioni [Procedura: scegliere i metodi](../profiling/how-to-choose-collection-methods.md) 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7bc79a53b62cf9fb0ca0ba533a2ce0d542b08c72
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3a34774d537348a93308cb992ee8a7500ea242ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528429"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838269"
 ---
 # <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-45"></a>Aggiornare i progetti di Excel e Word di cui si esegue la migrazione all'.NET Framework 4,5
   Se il progetto di Excel o di Word usa una qualsiasi delle funzionalità seguenti, è necessario modificare il codice se il framework di destinazione viene modificato in [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva:
@@ -190,8 +190,8 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
     }
     ```
 
-## <a name="update-code-that-uses-windows-forms-controls-on-documents"></a><a name="winforms"></a> Aggiornamento del codice che usa Windows Forms controlli nei documenti
- È necessario aggiungere un'istruzione **using** (C#) o **Imports** (Visual Basic) per lo <xref:Microsoft.Office.Tools.Excel> <xref:Microsoft.Office.Tools.Word> spazio dei nomi o all'inizio di un file di codice che usa la proprietà Controls per aggiungere Windows Forms controlli al documento o al foglio di controllo a livello di codice.
+## <a name="update-code-that-uses-windows-forms-controls-on-documents"></a><a name="winforms"></a> Aggiornamento del codice che usa Windows Form controlli nei documenti
+ È necessario aggiungere un'istruzione **using** (C#) o **Imports** (Visual Basic) per lo <xref:Microsoft.Office.Tools.Excel> <xref:Microsoft.Office.Tools.Word> spazio dei nomi o all'inizio di un file di codice che usa la proprietà Controls per aggiungere Windows Form controlli al documento o al foglio di controllo a livello di codice.
 
  Nei progetti destinati a .NET Framework 3.5 i metodi che aggiungono controlli Windows Form (come il metodo `AddButton`) sono definiti nelle classi <xref:Microsoft.Office.Tools.Excel.ControlCollection> e <xref:Microsoft.Office.Tools.Word.ControlCollection>.
 
@@ -204,7 +204,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 
  La tabella seguente elenca gli eventi dei controlli contenuto di Word e i delegati a essi associati nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva.
 
-|Event|Delegato da usare in progetti di [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e versioni successive|
+|Evento|Delegato da usare in progetti di [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e versioni successive|
 |-----------| - |
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.Added>|<xref:Microsoft.Office.Tools.Word.ContentControlAddedEventHandler>|
 |<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|<xref:Microsoft.Office.Tools.Word.ContentControlContentUpdatingEventHandler>|
@@ -232,7 +232,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
 
  Nei progetti destinati a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versione successiva questi tipi di raccolta sono ora interfacce che non derivano da <xref:System.Collections.CollectionBase>. In questi tipi di raccolta non sono più disponibili alcuni membri, come <xref:System.Collections.CollectionBase.Capacity%2A>, <xref:System.Collections.CollectionBase.List%2A>e <xref:System.Collections.CollectionBase.InnerList%2A>.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Eseguire la migrazione di soluzioni Office a .NET Framework 4 o versione successiva](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Controlli contenuto](../vsto/content-controls.md)
 - [Estendi i documenti di Word e le cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

@@ -14,16 +14,16 @@ helpviewer_keywords:
 - debugging, JavaScript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2b2e82e664abea1a53112776dc0ec3ec5f1259
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 964151b3e674f493eeeeb564d0a449e093cde11f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205008"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840938"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Eseguire il debug di JavaScript usando la console in Visual Studio
 
@@ -251,7 +251,7 @@ La figura seguente mostra l'elenco Destinazione nella finestra Console JavaScrip
 
 Puoi anche cambiare il contesto di esecuzione usando il comando `cd` , ma devi ricordare il nome dell'altro contesto di esecuzione e il riferimento che usi deve essere incluso nell'ambito. L'elenco **Destinazione** offre un accesso migliore ad altri contesti di esecuzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Eseguire il debug di app in Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [Aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8f1f6449-e03d-4a5b-9076-d3b1f84ada48
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee8738d06c0f02adb6f5e6352d2006e0133c66ef
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: d1ed2fd5fe9e49ab947752f84accb326499392fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871340"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836422"
 ---
 # <a name="assembly-information-dialog-box"></a>Finestra di dialogo Informazioni assembly
 
@@ -67,7 +67,7 @@ Specifica se i tipi nell'assembly saranno disponibili a COM. Corrisponde a <xref
 > [!NOTE]
 > Per altre informazioni sull'impostazione di queste proprietà durante la generazione di un pacchetto NuGet in una libreria di classi .NET Framework, vedere [configurare le proprietà del progetto per il pacchetto](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Application Page, Project Designer (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [Attributes (Attributi)](/previous-versions/z0w1kczw(v=vs.140))
