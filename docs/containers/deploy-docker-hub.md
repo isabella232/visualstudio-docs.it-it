@@ -2,19 +2,19 @@
 title: Distribuire un contenitore Docker ASP.NET Core nell'hub Docker | Microsoft Docs
 description: Informazioni su come usare gli strumenti del contenitore di Visual Studio per distribuire un'app Web di ASP.NET Core nell'hub Docker
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 5bbdbffa9de9ac7789495249d3e7bfb0a8d65377
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: e51088d135d0d2cdcc5d1bcca71f72fed8b73fd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867659"
 ---
 # <a name="deploy-to-docker-hub"></a>Distribuire in Docker Hub
 
@@ -32,7 +32,7 @@ Se non si dispone di un repository Docker Hub, crearne uno nell' [Hub Docker](ht
 
    ![Screenshot delle opzioni di distribuzione](media/container-tools/vs-2019/docker-container-registry.png)
 
-1. Scegliere **docker container Registry**e quindi fare clic su **Hub Docker**.
+1. Scegliere **docker container Registry** e quindi fare clic su **Hub Docker**.
 
    ![Screenshot della finestra di dialogo di pubblicazione-scegliere l'hub Docker](media/deploy-docker-hub/container-tools-docker-hub-deploy.png)
 
@@ -54,7 +54,7 @@ Eseguire la pubblicazione in [azure container Registry](/azure/container-registr
 
 Configurare l'integrazione e il recapito continui con [Azure Pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Distribuisci nel servizio app Azure](deploy-app-service.md) 
  [Strumenti contenitore di Visual Studio](./index.yml).

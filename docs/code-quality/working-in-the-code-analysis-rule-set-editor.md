@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d2703972658aace438ab235d469eed3e0644c06
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: ba8ecdd3a1aae382d1b74d75e26e614ba07e6a66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436823"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867607"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usare l'editor set di regole di analisi del codice
 
@@ -31,7 +31,7 @@ Nella tabella seguente vengono illustrate le opzioni di gravità:
 |Errore|Genera un errore nel **Elenco errori** e anche in fase di compilazione.|
 |Info|Genera un messaggio nel **Elenco errori**.|
 |Nascosto|La violazione non è visibile all'utente. Tuttavia, l'IDE riceve una notifica della violazione.|
-|Nessuno|La regola è stata eliminata. Il comportamento è lo stesso di se la regola è stata rimossa dal set di regole.|
+|nessuno|La regola è stata eliminata. Il comportamento è lo stesso di se la regola è stata rimossa dal set di regole.|
 
 Nell'editor vengono visualizzate le regole in una struttura ad albero che raggruppa le regole in base a un campo del set di regole specificato. Per aggiungere o rimuovere regole da un set di regole, eseguire uno o più dei passaggi seguenti:
 
@@ -74,7 +74,7 @@ Nella tabella seguente vengono descritti i campi di un set di regole:
 |**ID**|Identificatore della regola.|
 |**Categoria**|Oltre all'appartenenza ai set di regole, le regole di analisi del codice sono raggruppate per categoria. Per altre informazioni, vedere [avvisi di analisi del codice](/dotnet/fundamentals/code-analysis/quality-rules/index).|
 |**Nome**|Titolo della regola.|
-|**Spazio dei nomi**|Spazio dei nomi della regola.|
+|**Namespace**|Spazio dei nomi della regola.|
 |**Tipo destinazione**|Indica se la regola è per il codice nativo, gestito o del database.|
 |**Azione**|Azione eseguita quando la regola viene violata in un'esecuzione dell'analisi del codice. È possibile modificare il campo **azione** .|
 |**Set di regole di origine**|Set di regole che contiene la regola.|
@@ -87,6 +87,6 @@ Dalle intestazioni di colonna della griglia del set di regole è possibile ordin
 
 - Per filtrare i set di regole in base al valore di un campo, selezionare il pulsante filtro nell'intestazione di colonna del campo in base al quale si desidera filtrare. Selezionare le caselle di controllo dei valori che si desidera visualizzare e deselezionare le caselle di controllo dei valori che si desidera nascondere.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare un set di regole personalizzato](../code-quality/how-to-create-a-custom-rule-set.md)

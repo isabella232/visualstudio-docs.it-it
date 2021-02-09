@@ -12,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ec58528bfe5e1687c4b4edc7f86451c08b04652c
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: b6e42681d2c25162df22af9711d47b71ba155d67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518674"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867438"
 ---
 # <a name="add-new-data-sources"></a>Aggiungere nuove origini dati
 
 :::moniker range="vs-2019"
 > [!NOTE]
-> Le funzionalità descritte in questo articolo si applicano a .NET Framework Windows Forms e allo sviluppo WPF. In Visual Studio 2019 (e versioni precedenti), le funzionalità non sono supportate per lo sviluppo di .NET Core, sia per WPF che per Windows Forms.
+> Le funzionalità descritte in questo articolo si applicano a .NET Framework Windows Form e allo sviluppo WPF. In Visual Studio 2019 (e versioni precedenti), le funzionalità non sono supportate per lo sviluppo di .NET Core, sia per WPF che per Windows Form.
 :::moniker-end
 
 Nel contesto di strumenti di dati .NET in Visual Studio, il termine *data source* fa riferimento a oggetti .NET che si connettono a un archivio dati e rendere i dati disponibili a un'applicazione .NET. Le finestre di progettazione di Visual Studio possono usare l'output dell'origine dati per generare il codice boilerplate che associa i dati a un form quando si trascinano gli oggetti di database dalla finestra **Data Source**. Questo tipo di origine dati può essere:
@@ -44,7 +44,7 @@ Nel contesto di strumenti di dati .NET in Visual Studio, il termine *data source
 > [!NOTE]
 > Se non si utilizzano funzionalità di data binding, set di dati, Entity Framework, LINQ to SQL, WCF o SharePoint, il concetto di "origine dati" non è applicabile. È sufficiente connettersi direttamente al database usando gli oggetti SqlCommand e comunicare direttamente con il database.
 
-Per creare e modificare origini dati, è possibile utilizzare la **Configurazione guidata origine dati** in un'applicazione Windows Forms o Windows Presentation Foundation. Per Entity Framework, creare innanzitutto le classi di entità e quindi avviare la procedura guidata selezionando **progetto**  >  **Aggiungi nuova origine dati** (descritta in dettaglio più avanti in questo articolo).
+Per creare e modificare origini dati, è possibile utilizzare la **Configurazione guidata origine dati** in un'applicazione Windows Form o Windows Presentation Foundation. Per Entity Framework, creare innanzitutto le classi di entità e quindi avviare la procedura guidata selezionando **progetto**  >  **Aggiungi nuova origine dati** (descritta in dettaglio più avanti in questo articolo).
 
 ![Configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png)
 
@@ -53,7 +53,7 @@ Per creare e modificare origini dati, è possibile utilizzare la **Configurazion
 Dopo aver creato un'origine dati, viene visualizzato nei **Data source** finestra degli strumenti.
 
 > [!TIP]
-> Per aprire la finestra **Data source** , assicurarsi che il progetto sia aperto e quindi premere **MAIUSC**+**Alt**+**1!d** oppure scegliere **View** > **Other Windows** > **Data source**.
+> Per aprire la finestra **Data source**, assicurarsi che il progetto sia aperto e quindi premere **MAIUSC**+**Alt**+**1!d** oppure scegliere **View** > **Other Windows** > **Data source**.
 
 È possibile trascinare un'origine dati dal **Data source** finestra in un'area di progettazione form o controllo. Questo causa la generazione di codice standard che Visualizza i dati dall'archivio dati.
 
@@ -120,6 +120,6 @@ Se si desidera eseguire il binding a un oggetto in un assembly o in un progetto 
 
 È possibile creare un'origine dati da un elenco SharePoint eseguendo la **Configurazione guidata origine dati** e selezionando il tipo di origine dati **SharePoint** . SharePoint espone i dati attraverso WCF Data Services, pertanto la creazione di un'origine dati SharePoint equivale alla creazione di un'origine dati da un servizio. Selezionando l'elemento **SharePoint** nella **Configurazione guidata origine dati** viene visualizzata la finestra di dialogo **Aggiungi riferimento al servizio** , in cui è possibile connettersi al servizio dati di SharePoint puntando al server SharePoint. Questa operazione richiede SharePoint SDK.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Visual Studio data tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

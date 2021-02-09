@@ -1,6 +1,6 @@
 ---
 title: Associare controlli Windows Form ai dati
-description: Associare Windows Forms controlli ai dati in Visual Studio in modo che sia possibile visualizzare i dati agli utenti dell'applicazione.
+description: Associare Windows Form controlli ai dati in Visual Studio in modo che sia possibile visualizzare i dati agli utenti dell'applicazione.
 ms.custom: SEO-VS-2020
 ms.date: 11/03/2017
 ms.topic: how-to
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee50a01093ff83faba17ec6fd59f4ddc1101012a
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 3da0c4e9835c9b6f6498aa28b82f2e631d1717ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518648"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867412"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Associare controlli Windows Form ai dati in Visual Studio
 
-È possibile visualizzare i dati per gli utenti dell'applicazione associando i dati a Windows Forms. Per creare questi controlli associati a dati, trascinare gli elementi dalla finestra **origini dati** nel Progettazione Windows Form in Visual Studio.
+È possibile visualizzare i dati per gli utenti dell'applicazione associando i dati a Windows Form. Per creare questi controlli associati a dati, trascinare gli elementi dalla finestra **origini dati** nel Progettazione Windows Form in Visual Studio.
 
 ![Operazione di trascinamento dell'origine dati](../data-tools/media/raddata-data-source-drag-operation.png)
 
@@ -69,7 +69,7 @@ Se i controlli necessari per l'applicazione non sono disponibili nella finestra 
 
 ## <a name="bind-to-data-in-individual-controls"></a>Eseguire l'associazione ai dati nei singoli controlli
 
-Quando si associa un'origine dati ai **Dettagli** , ogni colonna del set di dati viene associata a un controllo separato.
+Quando si associa un'origine dati ai **Dettagli**, ogni colonna del set di dati viene associata a un controllo separato.
 
 ![Associa origine dati ai dettagli](../data-tools/media/raddata-bind-data-source-to-details.png)
 
@@ -82,7 +82,7 @@ Nella figura seguente vengono mostrati i controlli associati a dati predefiniti 
 
 Si noti anche che ogni controllo dispone di uno smart tag. Questo tag Abilita le personalizzazioni che si applicano solo a tale controllo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Associazione di controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
-- [Data Binding in Windows Forms (.NET Framework)](/dotnet/framework/winforms/windows-forms-data-binding)
+- [Data Binding in Windows Form (.NET Framework)](/dotnet/framework/winforms/windows-forms-data-binding)

@@ -223,21 +223,21 @@ helpviewer_keywords:
 ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c3bfd0b322a368cd758ea1518c8c63ed668d4545
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: a61e7be94faf9a9b75349412f923157b5df47b6a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867386"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Risolvere gli errori di accesso ai dati nei forum
 
 È possibile ottenere assistenza per la risoluzione dei problemi relativi a errori e avvisi nei forum pubblici MSDN (Microsoft Developer Network). Di seguito sono riportati alcuni forum relativi ai dati disponibili in MSDN:
 
-- [Windows Forms i controlli dati e l'associazione dati](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
+- [Windows Form i controlli dati e l'associazione dati](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
 - [Forum del set di dati ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
@@ -253,6 +253,6 @@ ms.locfileid: "94518584"
 
 Per informazioni su come risolvere i problemi di connettività ai SQL Server, vedere [risolvere i problemi di connessione al motore di database di SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Visual Studio data tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

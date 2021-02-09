@@ -1,6 +1,6 @@
 ---
 title: Creare un'applicazione dati semplice tramite ADO.NET
-description: Informazioni su come creare una semplice applicazione da modulo a dati usando Windows Forms e ADO.NET in Visual Studio.
+description: Informazioni su come creare una semplice applicazione da modulo a dati usando Windows Form e ADO.NET in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 08/23/2017
 ms.topic: conceptual
@@ -10,19 +10,19 @@ dev_langs:
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 44205f7f8f12d453a7c1d93ec8fee6ed1a3c1765
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 71e6c03c4ed0319b45c5b6ef0b79f65abbfc9f73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436797"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867191"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 
-Quando si crea un'applicazione che modifica i dati in un database, è possibile eseguire attività di base, ad esempio la definizione delle stringhe di connessione, l'inserimento di dati e l'esecuzione di stored procedure. Seguendo questo argomento, è possibile scoprire come interagire con un database dall'interno di un'applicazione semplice Windows Forms "Forms over data" usando Visual C# o Visual Basic e ADO.NET.  Tutte le tecnologie di dati .NET, inclusi set di dati, LINQ to SQL e Entity Framework, eseguono infine passaggi molto simili a quelli illustrati in questo articolo.
+Quando si crea un'applicazione che modifica i dati in un database, è possibile eseguire attività di base, ad esempio la definizione delle stringhe di connessione, l'inserimento di dati e l'esecuzione di stored procedure. Seguendo questo argomento, è possibile scoprire come interagire con un database dall'interno di un'applicazione semplice Windows Form "Forms over data" usando Visual C# o Visual Basic e ADO.NET.  Tutte le tecnologie di dati .NET, inclusi set di dati, LINQ to SQL e Entity Framework, eseguono infine passaggi molto simili a quelli illustrati in questo articolo.
 
 In questo articolo viene illustrato un modo semplice per estrarre i dati da un database in modo rapido. Se l'applicazione deve modificare i dati in modi non semplici e aggiornare il database, è consigliabile utilizzare Entity Framework e utilizzare data binding per sincronizzare automaticamente i controlli dell'interfaccia utente con le modifiche nei dati sottostanti.
 
@@ -49,7 +49,7 @@ Creare il database di esempio attenendosi alla procedura seguente:
 
 3. Nella casella di testo **nome server** immettere (local DB **) \mssqllocaldb**.
 
-4. Nella casella di testo **nome nuovo database** immettere **Sales** , quindi scegliere **OK**.
+4. Nella casella di testo **nome nuovo database** immettere **Sales**, quindi scegliere **OK**.
 
      Il database **delle vendite** vuoto viene creato e aggiunto al nodo Connessioni dati in Esplora server.
 
@@ -124,10 +124,10 @@ Creare il database di esempio attenendosi alla procedura seguente:
 ## <a name="store-the-connection-string"></a>Archiviare la stringa di connessione
 Quando l'applicazione tenta di aprire una connessione al database, l'applicazione deve disporre dell'accesso alla stringa di connessione. Per evitare di immettere manualmente la stringa in ogni form, archiviare la stringa nel file *App.config* nel progetto e creare un metodo che restituisca la stringa quando il metodo viene chiamato da qualsiasi form nell'applicazione.
 
-È possibile trovare la stringa di connessione facendo clic con il pulsante destro del mouse sulla connessione dati **vendite** in **Esplora server** e scegliendo **proprietà**. Individuare la proprietà **ConnectionString** , quindi premere **CTRL** + **a** , **CTRL** + **C** per selezionare e copiare la stringa negli Appunti.
+È possibile trovare la stringa di connessione facendo clic con il pulsante destro del mouse sulla connessione dati **vendite** in **Esplora server** e scegliendo **proprietà**. Individuare la proprietà **ConnectionString** , quindi premere **CTRL** + **a**, **CTRL** + **C** per selezionare e copiare la stringa negli Appunti.
 
 1. Se si usa C#, in **Esplora soluzioni** espandere il nodo **Proprietà** sotto il progetto, quindi aprire il file **Settings. Settings** .
-    Se si usa Visual Basic, in **Esplora soluzioni** fare clic su **Mostra tutti i file** , espandere il nodo **progetto** e quindi aprire il file **Settings. Settings** .
+    Se si usa Visual Basic, in **Esplora soluzioni** fare clic su **Mostra tutti i file**, espandere il nodo **progetto** e quindi aprire il file **Settings. Settings** .
 
 2. Nella colonna **nome** immettere `connString` .
 
@@ -235,6 +235,6 @@ Per completare la logica del modulo FillOrCancel, attenersi alla seguente proced
 
 Premere il tasto **F5** per compilare e testare l'applicazione dopo aver inserito il codice in ogni gestore dell'evento Click e quindi dopo aver completato la scrittura del codice.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Visual Studio data tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

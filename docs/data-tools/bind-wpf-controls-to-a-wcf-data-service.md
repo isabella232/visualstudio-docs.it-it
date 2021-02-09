@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4368c9134539202b1bde2be7a2d8c39e5ebc3e74
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 9f3c4cc273d89b5d1fc74596f1f5565177319da7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518528"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867360"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associare controlli WPF a un servizio di dati WCF
 
@@ -72,13 +72,13 @@ Per esporre i dati a un'applicazione utilizzando un servizio WCF Data Services, 
 
 1. Dal menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
-2. Nell'elenco Modelli installati fare clic su **Dati** , quindi selezionare l'elemento di progetto **ADO.NET Entity Data Model**.
+2. Nell'elenco Modelli installati fare clic su **Dati**, quindi selezionare l'elemento di progetto **ADO.NET Entity Data Model**.
 
 3. Modificare il nome in `AdventureWorksModel.edmx` e fare clic su **Aggiungi**.
 
      Verrà aperta la **Procedura guidata Entity Data Model**.
 
-4. Nella pagina **Scegli contenuto del modello** fare clic su **Genera da database** , quindi su **Avanti**.
+4. Nella pagina **Scegli contenuto del modello** fare clic su **Genera da database**, quindi su **Avanti**.
 
 5. Nella pagina **Seleziona connessione dati** selezionare una delle opzioni seguenti:
 
@@ -88,7 +88,7 @@ Per esporre i dati a un'applicazione utilizzando un servizio WCF Data Services, 
 
 6. Nella pagina **Seleziona connessione dati** verificare che l'opzione **Salva impostazioni di connessione entità in App.Config come** sia selezionata, quindi fare clic su **Avanti**.
 
-7. Nella pagina **Seleziona oggetti di database** espandere **Tabelle** , quindi selezionare la tabella **SalesOrderHeader**.
+7. Nella pagina **Seleziona oggetti di database** espandere **Tabelle**, quindi selezionare la tabella **SalesOrderHeader**.
 
 8. Fare clic su **Fine**.
 
@@ -98,7 +98,7 @@ Creare un servizio dati WCF per esporre i dati nel Entity Data Model a un'applic
 
 1. Nel menu **Progetto** selezionare **Aggiungi nuovo elemento**.
 
-2. Nell'elenco **Modelli installati** fare clic su **Web** , quindi selezionare l'elemento di progetto **WCF Data Services**.
+2. Nell'elenco **Modelli installati** fare clic su **Web**, quindi selezionare l'elemento di progetto **WCF Data Services**.
 
 3. Nella casella **nome** Digitare `AdventureWorksService.svc` e fare clic su **Aggiungi**.
 
@@ -123,7 +123,7 @@ Per visualizzare i dati da WCF Data Services, creare una nuova applicazione WPF 
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere **Aggiungi** e selezionare **Nuovo progetto**.
 
-2. Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#** o **Visual Basic** , quindi selezionare **Finestre**.
+2. Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#** o **Visual Basic**, quindi selezionare **Finestre**.
 
 3. Selezionare il modello di progetto **Applicazione WPF**.
 
@@ -139,7 +139,7 @@ Per visualizzare i dati da WCF Data Services, creare una nuova applicazione WPF 
 
    Verrà avviata la **Configurazione guidata origine dati** .
 
-7. Nella pagina **Seleziona un tipo di origine dati** della procedura guidata selezionare **Servizio** , quindi fare clic su **Avanti**.
+7. Nella pagina **Seleziona un tipo di origine dati** della procedura guidata selezionare **Servizio**, quindi fare clic su **Avanti**.
 
 8. Nella finestra di dialogo **Aggiungi riferimento al servizio** fare clic su **Individua**.
 
@@ -147,7 +147,7 @@ Per visualizzare i dati da WCF Data Services, creare una nuova applicazione WPF 
 
 9. Nella casella **Spazio dei nomi** digitare **AdventureWorksService**.
 
-10. Nella casella **Servizi** fare clic su **AdventureWorksService.svc** , quindi su **OK**.
+10. Nella casella **Servizi** fare clic su **AdventureWorksService.svc**, quindi su **OK**.
 
     Visual Studio scarica le informazioni sul servizio, quindi torna alla **Configurazione guidata origine dati**.
 
@@ -185,7 +185,7 @@ Creare controlli che consentono di visualizzare i record dei clienti trascinando
 
 2. Espandere il nodo **SalesOrderHeaders**.
 
-3. Poiché per questo esempio alcuni campi non verranno visualizzati, fare clic sul menu a discesa accanto ai nodi seguenti e selezionare **Nessuno** :
+3. Poiché per questo esempio alcuni campi non verranno visualizzati, fare clic sul menu a discesa accanto ai nodi seguenti e selezionare **Nessuno**:
 
     - **CreditCardApprovalCode**
 
@@ -250,7 +250,7 @@ Aggiungere il codice che consente agli utenti di scorrere i record delle vendite
 
 ## <a name="save-changes-to-sales-records"></a>Salva le modifiche apportate ai record delle vendite
 
-Aggiungere il codice che consente agli utenti di visualizzare e salvare le modifiche ai record delle vendite usando il pulsante **Salva modifiche** :
+Aggiungere il codice che consente agli utenti di visualizzare e salvare le modifiche ai record delle vendite usando il pulsante **Salva modifiche**:
 
 1. Nella finestra di progettazione fare doppio clic sul pulsante **Salva modifiche**.
 
@@ -261,7 +261,7 @@ Aggiungere il codice che consente agli utenti di visualizzare e salvare le modif
      [!code-csharp[Data_WPFWCF#5](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_5.cs)]
      [!code-vb[Data_WPFWCF#5](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_5.vb)]
 
-## <a name="test-the-application"></a>Test dell'applicazione
+## <a name="test-the-application"></a>Testare l'applicazione
 
 Compilare ed eseguire l'applicazione per verificare che sia possibile visualizzare e aggiornare i record cliente:
 
@@ -273,7 +273,7 @@ Compilare ed eseguire l'applicazione per verificare che sia possibile visualizza
 
 3. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **AdventureWorksSalesEditor**.
 
-4. Nel menu di scelta rapida, in **debug** , fare clic su **Avvia nuova istanza**.
+4. Nel menu di scelta rapida, in **debug**, fare clic su **Avvia nuova istanza**.
 
      Verrà eseguita l'applicazione. Verificare gli elementi seguenti:
 
@@ -281,7 +281,7 @@ Compilare ed eseguire l'applicazione per verificare che sia possibile visualizza
 
     - È possibile fare clic **>** sui **<** pulsanti o per spostarsi tra gli altri record delle vendite.
 
-5. In uno dei record delle vendite digitare del testo nella casella **Commento** , quindi fare clic su **Salva modifiche**.
+5. In uno dei record delle vendite digitare del testo nella casella **Commento**, quindi fare clic su **Salva modifiche**.
 
 6. Chiudere l'applicazione, quindi avviarla di nuovo da Visual Studio.
 
@@ -297,7 +297,7 @@ Dopo avere completato questa procedura dettagliata, è possibile eseguire le att
 
 - Imparare a usare la finestra **Origini dati** in Visual Studio per visualizzare i dati correlati, ovvero i dati in una relazione padre-figlio, nei controlli WPF. Per ulteriori informazioni, vedere [procedura dettagliata: visualizzazione di dati correlati in un'applicazione WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Associare controlli WPF a un set di dati](../data-tools/bind-wpf-controls-to-a-dataset.md)

@@ -8,15 +8,15 @@ keywords: Bridge to Kubernetes, Azure Dev Spaces, dev Spaces, Docker, Kubernetes
 monikerRange: '>=vs-2019'
 author: ghogen
 ms.author: ghogen
-manager: jillfra
-ms.openlocfilehash: bd28921b7812689554e1dd707c500434bb021c9c
-ms.sourcegitcommit: f9179a3a6d74fbd871f62b72491e70b9e7b05637
+manager: jmartens
+ms.openlocfilehash: b250454fe5e80ec18f75add92c8c2f653893e994
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90845872"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867620"
 ---
-# <a name="configure-bridge-to-kubernetes"></a>Configurare il Bridge per Kubernetes
+# <a name="configure-bridge-to-kubernetes"></a>Configurare Bridge per Kubernetes
 
 Il `KubernetesLocalProcessConfig.yaml` file consente di replicare le variabili di ambiente e i file montati disponibili per i Pod nel cluster AKS. È possibile specificare le azioni seguenti in un `KubernetesLocalProcessConfig.yaml` file:
 
@@ -28,7 +28,7 @@ Un `KubernetesLocalProcessConfig.yaml` file predefinito non viene creato automat
 
 ## <a name="download-a-volume"></a>Scaricare un volume
 
-In *ENV*specificare un *nome* e un *valore* per ogni volume da scaricare. Il *nome* è la variabile di ambiente che verrà usata nel computer di sviluppo. Il *valore* è il nome del volume e un percorso nel computer di sviluppo. Il valore per *value* assume il formato *$ (volumeMounts: VOLUME_NAME)/path/to/files*.
+In *ENV* specificare un *nome* e un *valore* per ogni volume da scaricare. Il *nome* è la variabile di ambiente che verrà usata nel computer di sviluppo. Il *valore* è il nome del volume e un percorso nel computer di sviluppo. Il valore per *value* assume il formato *$ (volumeMounts: VOLUME_NAME)/path/to/files*.
 
 Ad esempio:
 
@@ -44,7 +44,7 @@ Nell'esempio precedente viene scaricato il volume *allow-list* dal contenitore e
 > [!NOTE]
 > Il download di un volume scaricherà l'intero contenuto di tale volume indipendentemente dal percorso impostato. Il percorso viene utilizzato solo per impostare la variabile di ambiente per l'utilizzo nel computer di sviluppo. L'aggiunta di */allow-list* o */path/to/files* alla fine del token non influisce effettivamente sulla posizione in cui il volume è persistente. La variabile di ambiente è semplicemente una praticità nel caso in cui l'app necessiti di un riferimento a un file specifico all'interno di tale volume.
 
-È anche possibile specificare un percorso per scaricare il montaggio del volume nel computer di sviluppo anziché usare una directory temporanea. In *volumeMounts*specificare un *nome* e un *LocalPath* per ogni percorso specifico. Il *nome* è il nome del volume di cui si desidera trovare una corrispondenza, mentre *LocalPath* è il percorso assoluto nel computer di sviluppo. Ad esempio:
+È anche possibile specificare un percorso per scaricare il montaggio del volume nel computer di sviluppo anziché usare una directory temporanea. In *volumeMounts* specificare un *nome* e un *LocalPath* per ogni percorso specifico. Il *nome* è il nome del volume di cui si desidera trovare una corrispondenza, mentre *LocalPath* è il percorso assoluto nel computer di sviluppo. Ad esempio:
 
 ```yaml
 version: 0.1
@@ -56,11 +56,11 @@ env:
     value: $(volumeMounts:default-token-*)
 ```
 
-Nell'esempio precedente viene usata la voce in *ENV* per scaricare un volume corrispondente a un * \* token predefinito*, ad esempio *default-token-1111* o *default-token-1234-5678-90abcdef*. Nei casi in cui più volumi corrispondono, viene utilizzato il primo volume corrispondente. Tutti i file vengono scaricati nel `/var/run/secrets/kubernetes.io/serviceaccount` computer di sviluppo usando la voce in *volumeMounts*. La variabile di ambiente *KUBERNETES_IN_CLUSTER_CONFIG_OVERRIDE* è impostata su `/var/run/secrets/kubernetes.io/serviceaccount` .
+Nell'esempio precedente viene usata la voce in *ENV* per scaricare un volume corrispondente a un *\* token predefinito*, ad esempio *default-token-1111* o *default-token-1234-5678-90abcdef*. Nei casi in cui più volumi corrispondono, viene utilizzato il primo volume corrispondente. Tutti i file vengono scaricati nel `/var/run/secrets/kubernetes.io/serviceaccount` computer di sviluppo usando la voce in *volumeMounts*. La variabile di ambiente *KUBERNETES_IN_CLUSTER_CONFIG_OVERRIDE* è impostata su `/var/run/secrets/kubernetes.io/serviceaccount` .
 
 ## <a name="make-a-service-available"></a>Rendere disponibile un servizio
 
-In *ENV*specificare un *nome* e un *valore* per ogni servizio che si desidera rendere disponibile nel computer di sviluppo. Il *nome* è la variabile di ambiente che verrà usata nel computer di sviluppo. Il *valore* è il nome del servizio del cluster e un percorso. Il valore per *value* assume il formato *$ (Services: SERVICE_NAME)/path*.
+In *ENV* specificare un *nome* e un *valore* per ogni servizio che si desidera rendere disponibile nel computer di sviluppo. Il *nome* è la variabile di ambiente che verrà usata nel computer di sviluppo. Il *valore* è il nome del servizio del cluster e un percorso. Il valore per *value* assume il formato *$ (Services: SERVICE_NAME)/path*.
 
 Ad esempio:
 
@@ -71,7 +71,7 @@ env:
     value: $(services:myapp1)/api/v1/
 ```
 
-L'esempio precedente rende disponibile il servizio *MyApp1* per il computer di sviluppo e la variabile di ambiente *MYAPP1_SERVICE_HOST* è impostata sull'indirizzo IP locale del servizio *MyApp1* con il `/api/v1` percorso (ovvero `127.1.1.4/api/v1` ). Il servizio *MyApp1* è accessibile tramite la variabile di ambiente, *MyApp1*o *MyApp1. svc. cluster. local*.
+L'esempio precedente rende disponibile il servizio *MyApp1* per il computer di sviluppo e la variabile di ambiente *MYAPP1_SERVICE_HOST* è impostata sull'indirizzo IP locale del servizio *MyApp1* con il `/api/v1` percorso (ovvero `127.1.1.4/api/v1` ). Il servizio *MyApp1* è accessibile tramite la variabile di ambiente, *MyApp1* o *MyApp1. svc. cluster. local*.
 
 > [!NOTE]
 > Rendendo disponibile un servizio nel computer di sviluppo, l'intero servizio viene reso disponibile indipendentemente dal percorso impostato. Il percorso viene utilizzato solo per impostare la variabile di ambiente per l'utilizzo nel computer di sviluppo.
@@ -88,7 +88,7 @@ L'esempio precedente rende *MyApp2* *lo spazio dei nomi MyNamespace* disponibile
 
 ## <a name="create-an-environment-variable-with-a-constant-value"></a>Creare una variabile di ambiente con un valore costante
 
-In *ENV*specificare un *nome* e un *valore* per ogni variabile di ambiente che si desidera creare nel computer di sviluppo. Il *nome* è la variabile di ambiente che verrà usata nel computer di sviluppo e il *valore* è il valore. Ad esempio:
+In *ENV* specificare un *nome* e un *valore* per ogni variabile di ambiente che si desidera creare nel computer di sviluppo. Il *nome* è la variabile di ambiente che verrà usata nel computer di sviluppo e il *valore* è il valore. Ad esempio:
 
 ```yaml
 version: 0.1

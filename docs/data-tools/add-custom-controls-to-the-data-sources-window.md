@@ -15,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: ghogen
 ms.author: ghogen
-manager: jillfra
-ms.openlocfilehash: 004004a420374f3b0ce9504098ac5836cb307f1d
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+manager: jmartens
+ms.openlocfilehash: 5591dc9c3422918fa8f9c605105ea10c8fbc447d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382065"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867425"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Aggiungere controlli personalizzati alla finestra Origini dati
 
@@ -83,14 +83,14 @@ Per aggiungere controlli all'elenco di controlli associati:
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implementare questo attributo sui controlli che visualizzano elenchi o tabelle di dati, ad esempio un oggetto <xref:System.Windows.Forms.DataGridView> .|
     |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implementare questo attributo sui controlli che visualizzano elenchi (o tabelle) di dati, ma che devono anche presentare una singola colonna o proprietà, ad esempio <xref:System.Windows.Forms.ComboBox> .|
 
-2. Per Windows Forms, nella finestra di dialogo **Opzioni** aprire la pagina **personalizzazione interfaccia utente dati** . In alternativa, per WPF aprire la finestra di dialogo **Personalizza binding del controllo** . Per ulteriori informazioni, vedere [personalizzare l'elenco di controlli associabili per un tipo di dati](#customize-the-bindable-controls-list).
+2. Per Windows Form, nella finestra di dialogo **Opzioni** aprire la pagina **personalizzazione interfaccia utente dati** . In alternativa, per WPF aprire la finestra di dialogo **Personalizza binding del controllo** . Per ulteriori informazioni, vedere [personalizzare l'elenco di controlli associabili per un tipo di dati](#customize-the-bindable-controls-list).
 
 3. Nella casella **controlli associati** verrà visualizzato il controllo appena aggiunto alla **casella degli strumenti** .
 
     > [!NOTE]
     > Solo i controlli che si trovano all'interno della soluzione corrente o in un assembly a cui si fa riferimento possono essere aggiunti all'elenco di controlli associati. I controlli devono inoltre implementare uno degli attributi di data binding nella tabella precedente. Per associare dati a un controllo personalizzato che non è disponibile nella finestra Origini dati, trascinare il controllo dalla **casella degli strumenti** nell'area di progettazione, quindi trascinare l'elemento da associare a dalla finestra **origini dati** nel controllo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Finestra di dialogo Opzioni di personalizzazione dell'interfaccia utente dati](../ide/reference/options-windows-forms-designer-data-ui-customization.md)
