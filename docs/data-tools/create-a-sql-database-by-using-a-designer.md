@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e31be90ff24f110fda66449187d3372976f269a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed0df13f1dd281fcf56056809419af5d7ed6d3dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282722"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867204"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Creare un database e aggiungere tabelle in Visual Studio
 
@@ -29,11 +29,11 @@ ms.locfileid: "85282722"
 Per completare questa procedura dettagliata, saranno necessari i carichi di lavoro sviluppo di applicazioni **desktop .NET** e **archiviazione dati e elaborazione** in Visual Studio. Per installarli, aprire **programma di installazione di Visual Studio** e scegliere **modifica** (o **altre**  >  **modifiche**) accanto alla versione di Visual Studio che si desidera modificare.
 
 > [!NOTE]
-> Le procedure descritte in questo articolo si applicano solo ai progetti .NET Framework Windows Forms, non ai progetti .NET Core Windows Forms.
+> Le procedure descritte in questo articolo si applicano solo ai progetti .NET Framework Windows Form, non ai progetti .NET Core Windows Form.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Creare un progetto e un file di database locale
 
-1. Creare un nuovo progetto di **App Windows Forms (.NET Framework)** e denominarlo **SampleDatabaseWalkthrough**.
+1. Creare un nuovo progetto di **App Windows Form (.NET Framework)** e denominarlo **SampleDatabaseWalkthrough**.
 
 2. Nella barra dei menu selezionare **progetto**  >  **Aggiungi nuovo elemento**.
 
@@ -69,7 +69,7 @@ Per completare questa procedura dettagliata, saranno necessari i carichi di lavo
 
 - Selezionare **Visualizza**  >  **Esplora oggetti di SQL Server** per aprire la finestra di **Esplora oggetti di SQL Server** . Espandere **(local DB) \MSSQLLocalDB**  >  **databases**, quindi fare clic con il pulsante destro del mouse su *SampleDatabase. MDF* e scegliere **Proprietà**.
 
-- In alternativa, è possibile selezionare **Visualizza**  >  **Esplora server**, se tale finestra non è già aperta. Aprire il Finestra Proprietà espandendo il nodo **connessioni dati** , facendo clic con il pulsante destro del mouse su *SampleDatabase. MDF*e quindi scegliendo **proprietà**.
+- In alternativa, è possibile selezionare **Visualizza**  >  **Esplora server**, se tale finestra non è già aperta. Aprire il Finestra Proprietà espandendo il nodo **connessioni dati** , facendo clic con il pulsante destro del mouse su *SampleDatabase. MDF* e quindi scegliendo **proprietà**.
 
   > [!TIP]
   > Se non è possibile espandere il nodo Connessioni dati o la connessione SampleDatabase. mdf non è inclusa nell'elenco, selezionare il pulsante **Connetti al database** nella barra degli strumenti Esplora server. Nella finestra di dialogo **Aggiungi connessione** verificare che **Microsoft SQL Server file di database** sia selezionato in **origine dati**, quindi individuare e selezionare il file SampleDatabase. MDF. Completare l'aggiunta della connessione selezionando **OK**.
@@ -80,7 +80,7 @@ In questa sezione verranno create due tabelle, una chiave primaria in ogni tabel
 
 ### <a name="create-the-customers-table"></a>Creare la tabella Customers
 
-1. In **Esplora server**espandere il nodo **connessioni dati** , quindi espandere il nodo **SampleDatabase. MDF** .
+1. In **Esplora server** espandere il nodo **connessioni dati** , quindi espandere il nodo **SampleDatabase. MDF** .
 
    Se non è possibile espandere il nodo Connessioni dati o la connessione SampleDatabase. mdf non è inclusa nell'elenco, selezionare il pulsante **Connetti al database** nella barra degli strumenti Esplora server. Nella finestra di dialogo **Aggiungi connessione** verificare che **Microsoft SQL Server file di database** sia selezionato in **origine dati**, quindi individuare e selezionare il file SampleDatabase. MDF. Completare l'aggiunta della connessione selezionando **OK**.
 
@@ -111,7 +111,7 @@ In questa sezione verranno create due tabelle, una chiave primaria in ogni tabel
 
    ![Progettazione tabelle](../data-tools/media/table-designer.png)
 
-7. Nell'angolo in alto a sinistra di **Progettazione tabelle**selezionare **Aggiorna**.
+7. Nell'angolo in alto a sinistra di **Progettazione tabelle** selezionare **Aggiorna**.
 
 8. Nella finestra di dialogo **Anteprima aggiornamenti database** selezionare **Aggiorna database**.
 
@@ -136,7 +136,7 @@ In questa sezione verranno create due tabelle, una chiave primaria in ogni tabel
    CREATE TABLE [dbo].[Orders]
    ```
 
-4. Nell'angolo superiore sinistro del **Progettazione tabelle**selezionare **Aggiorna**.
+4. Nell'angolo superiore sinistro del **Progettazione tabelle** selezionare **Aggiorna**.
 
 5. Nella finestra di dialogo **Anteprima aggiornamenti database** selezionare **Aggiorna database**.
 
@@ -158,7 +158,7 @@ In questa sezione verranno create due tabelle, una chiave primaria in ogni tabel
    CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])
    ```
 
-4. Nell'angolo superiore sinistro del **Progettazione tabelle**selezionare **Aggiorna**.
+4. Nell'angolo superiore sinistro del **Progettazione tabelle** selezionare **Aggiorna**.
 
 5. Nella finestra di dialogo **Anteprima aggiornamenti database** selezionare **Aggiorna database**.
 
@@ -166,7 +166,7 @@ In questa sezione verranno create due tabelle, una chiave primaria in ogni tabel
 
 ## <a name="populate-the-tables-with-data"></a>Popola le tabelle con i dati
 
-1. In **Esplora server** o **Esplora oggetti di SQL Server**espandere il nodo per il database di esempio.
+1. In **Esplora server** o **Esplora oggetti di SQL Server** espandere il nodo per il database di esempio.
 
 2. Aprire il menu di scelta rapida per il nodo **tabelle** , selezionare **Aggiorna**, quindi espandere il nodo **tabelle** .
 
@@ -185,6 +185,6 @@ In questa sezione verranno create due tabelle, una chiave primaria in ogni tabel
 
 7. Nella barra dei menu selezionare **file**  >  **Salva tutto**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Accesso ai dati in Visual Studio](accessing-data-in-visual-studio.md)

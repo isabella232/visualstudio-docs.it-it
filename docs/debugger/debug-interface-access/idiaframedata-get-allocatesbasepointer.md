@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8a33db5d-008c-4fe5-b64f-210c9b77f686
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a8c51b335e0d13752ee2f3c6c68c17b5f2b76a9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d89ec42b689f4217c0b6f727662c3ccc46632e20
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467428"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865006"
 ---
 # <a name="idiaframedataget_allocatesbasepointer"></a>IDiaFrameData::get_allocatesBasePointer
 Recupera un flag che indica se il puntatore di base è allocato per il codice in questo intervallo di indirizzi. Questo metodo è deprecato.
@@ -25,7 +25,7 @@ Recupera un flag che indica se il puntatore di base è allocato per il codice in
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_allocatesBasePointer ( 
+HRESULT get_allocatesBasePointer ( 
    BOOL* pRetVal
 );
 ```
@@ -38,9 +38,9 @@ out Restituisce `TRUE` se viene allocato un puntatore di base. in caso contrario
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa proprietà deve essere usata solo dal codice che ha avuto accesso in precedenza FPO_DATA o quando la stringa di programma restituita dal metodo [IDiaFrameData:: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) è `NULL` . In caso contrario, la stringa di programma contiene tutte le informazioni necessarie per calcolare i valori di registro precedenti.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
 - [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

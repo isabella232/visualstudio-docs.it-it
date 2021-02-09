@@ -1,5 +1,5 @@
 ---
-title: Creazione di un servizio WCF semplice in Windows Forms
+title: Creazione di un servizio WCF semplice in Windows Form
 description: In questa procedura dettagliata creare un servizio Windows Communication Foundation (WCF) in Visual Studio, testarlo e accedervi da una Windows Forms Application.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 215ae1409c36417526bb1362f0029029ed95e801
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 92c2d72e2b0c71abe93290ab2bfb9b5b584e9178
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998135"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866281"
 ---
-# <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Procedura dettagliata: creare un servizio WCF semplice in Windows Forms
+# <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Procedura dettagliata: creare un servizio WCF semplice in Windows Form
 
 In questa procedura dettagliata viene illustrato come creare un semplice servizio di Windows Communication Foundation (WCF), eseguirne il test e quindi accedervi da una Windows Forms Application.
 
@@ -119,7 +119,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice servizi
 
 1. Scegliere **Aggiungi** dal menu **file** , quindi fare clic su **nuovo progetto**.
 
-2. Nella finestra di dialogo **nuovo progetto** espandere il nodo **Visual Basic** o **Visual C#** , selezionare **Windows**, quindi selezionare **Windows Forms applicazione**. Fare clic su **OK** per aprire il progetto.
+2. Nella finestra di dialogo **nuovo progetto** espandere il nodo **Visual Basic** o **Visual C#** , selezionare **Windows**, quindi selezionare **Windows Form applicazione**. Fare clic su **OK** per aprire il progetto.
 
      ![Progetto Applicazione Windows Form](../data-tools/media/wcf7.png)
 

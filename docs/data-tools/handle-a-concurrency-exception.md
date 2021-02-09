@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5fcd8bb06cf9c88466b4dfa3cfaf2dfd8093bd3d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c410d9290b7e377654a9cff87f8df7524a1b7149
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436446"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866879"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gestire un'eccezione di concorrenza
 
@@ -33,7 +33,7 @@ Vengono generate eccezioni di concorrenza ( <xref:System.Data.DBConcurrencyExcep
 
 Questa procedura dettagliata illustra il processo seguente:
 
-1. Creare un nuovo progetto di **applicazione Windows Forms** .
+1. Creare un nuovo progetto di **applicazione Windows Form** .
 
 2. Creare un nuovo set di dati in base alla tabella Northwind Customers.
 
@@ -73,15 +73,15 @@ Per iniziare, creare un nuovo Windows Forms Application:
 
 2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
-3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
+3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Form** .
 
-4. Denominare il progetto **ConcurrencyWalkthrough** , quindi scegliere **OK**.
+4. Denominare il progetto **ConcurrencyWalkthrough**, quindi scegliere **OK**.
 
      Il progetto **ConcurrencyWalkthrough** viene creato e aggiunto a **Esplora soluzioni** e viene aperto un nuovo form nella finestra di progettazione.
 
 ## <a name="create-the-northwind-dataset"></a>Creare il set di dati Northwind
 
-Successivamente, creare un set di dati denominato **NorthwindDataSet** :
+Successivamente, creare un set di dati denominato **NorthwindDataSet**:
 
 1. Scegliere **Aggiungi nuova origine dati** dal menu **dati** .
 
@@ -178,7 +178,7 @@ Creare il messaggio aggiungendo il codice seguente all'editor di **codice**. Imm
 
 ### <a name="process-the-users-response"></a>Elaborare la risposta dell'utente
 
-È necessario anche codice per elaborare la risposta dell'utente alla finestra di messaggio. Le opzioni consentono di sovrascrivere il record corrente nel database con la modifica proposta oppure di abbandonare le modifiche locali e aggiornare la tabella dati con il record attualmente presente nel database. Se l'utente sceglie **Sì** , il <xref:System.Data.DataTable.Merge%2A> metodo viene chiamato con l'argomento *preserveChanges* impostato su **true**. In questo modo il tentativo di aggiornamento ha esito positivo, perché la versione originale del record ora corrisponde al record nel database.
+È necessario anche codice per elaborare la risposta dell'utente alla finestra di messaggio. Le opzioni consentono di sovrascrivere il record corrente nel database con la modifica proposta oppure di abbandonare le modifiche locali e aggiornare la tabella dati con il record attualmente presente nel database. Se l'utente sceglie **Sì**, il <xref:System.Data.DataTable.Merge%2A> metodo viene chiamato con l'argomento *preserveChanges* impostato su **true**. In questo modo il tentativo di aggiornamento ha esito positivo, perché la versione originale del record ora corrisponde al record nel database.
 
 Aggiungere il codice seguente sotto il codice aggiunto nella sezione precedente:
 
@@ -199,14 +199,14 @@ Aggiungere il codice seguente sotto il codice aggiunto nella sezione precedente:
 
 5. Fare clic con il pulsante destro del mouse sulla tabella **Customers** , quindi scegliere **Mostra dati tabella**.
 
-6. Nel primo record ( **ALFKI** ) modificare **ContactName** in **Maria Anders2**.
+6. Nel primo record (**ALFKI**) modificare **ContactName** in **Maria Anders2**.
 
     > [!NOTE]
     > Passare a una riga diversa per eseguire il commit della modifica.
 
 7. Passare al form in esecuzione di ConcurrencyWalkthrough.
 
-8. Nel primo record nel form ( **ALFKI** ) modificare **ContactName** in **Maria Anders1**.
+8. Nel primo record nel form (**ALFKI**) modificare **ContactName** in **Maria Anders1**.
 
 9. Fare clic sul pulsante **Salva**.
 
@@ -214,6 +214,6 @@ Aggiungere il codice seguente sotto il codice aggiunto nella sezione precedente:
 
    Se si seleziona **No** , l'aggiornamento viene annullato e il set di dati viene aggiornato con i valori attualmente presenti nel database. Se **si seleziona Sì** , il valore proposto viene scritto nel database.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

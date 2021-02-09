@@ -7,19 +7,19 @@ ms.topic: error-reference
 ms.assetid: 71dcd4f9-2946-42c5-9ce4-99c819ea2785
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4f678ad9bc6bcfc36baabad8a8d4d64d7bf2f89e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c50d47363217a87147275a406d5370cc8736c10b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436133"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866645"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Uno o più elementi selezionati contengono un tipo di dati non supportato dalla finestra di progettazione
 
-Uno o più elementi trascinati da **Esplora server** o **Esplora database** in **Progettazione relazionale** oggetti contiene un tipo di dati che non è supportato da **o/r designer** , ad esempio i [tipi CLR definiti dall'utente](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
+Uno o più elementi trascinati da **Esplora server** o **Esplora database** in **Progettazione relazionale** oggetti contiene un tipo di dati che non è supportato da **o/r designer**, ad esempio i [tipi CLR definiti dall'utente](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
 
 ## <a name="to-correct-this-error"></a>Per correggere l'errore
 
@@ -27,6 +27,6 @@ Uno o più elementi trascinati da **Esplora server** o **Esplora database** in *
 
 2. Trascinare la vista da **Esplora server** o **Esplora database** nella finestra di progettazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

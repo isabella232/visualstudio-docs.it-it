@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d65ab262-10c6-48ce-95a3-b5e4cb2c85af
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c6a65bdca680bac7c3a5b2e6a5a671045cdef093
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7f1ddf3982275429428635754c488993e2058ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467533"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865076"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
 Recupera una tabella per mezzo di un indice o un nome.
@@ -25,7 +25,7 @@ Recupera una tabella per mezzo di un indice o un nome.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    VARIANT     index,
    IDiaTable** table
 );
@@ -43,7 +43,7 @@ out Restituisce un oggetto [IDiaTable](../../debugger/debug-interface-access/idi
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Se viene specificata una stringa Variant, la stringa assegna un nome a una tabella specifica. Il nome deve essere uno dei nomi di tabella come definito in [costanti (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).
 
 ## <a name="example"></a>Esempio

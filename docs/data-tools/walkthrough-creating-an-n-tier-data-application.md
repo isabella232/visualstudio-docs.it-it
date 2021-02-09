@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76bf07e99f9965e88804c51663bcc37053bf74d6
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: ed395c60ec16eeff6a5aac88a99698193e8bacbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998083"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866151"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Procedura dettagliata: creare un'applicazione dati a più livelli
 Le applicazioni dati *a più livelli* sono applicazioni con accesso ai dati e sono separate in più *livelli logici*. La separazione dei componenti dell'applicazione in livelli discreti aumenta la manutenibilità e la scalabilità dell'applicazione mediante l'adozione semplificata di nuove tecnologie che possono essere applicate a un singolo livello senza la necessità di riprogettare l'intera soluzione. L'architettura a più livelli include un livello di presentazione, un livello intermedio e un livello dati. Il livello intermedio include in genere un livello di accesso ai dati, un livello di logica di business e componenti condivisi quali l'autenticazione e la convalida. Il livello dati include un database relazionale. Le applicazioni a più livelli in genere archiviano le informazioni riservate nel livello di accesso ai dati del livello intermedio per mantenere l'isolamento dagli utenti finali che accedono al livello di presentazione. Per altre informazioni, vedere [Panoramica delle applicazioni dati](../data-tools/n-tier-data-applications-overview.md)a più livelli.
@@ -292,7 +292,7 @@ Ora che la soluzione contiene il servizio dati con metodi che effettuano chiamat
 
 1. Fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo progetto**.
 
-2. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** selezionare **desktop di Windows**. Nel riquadro centrale selezionare **Windows Forms app**.
+2. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** selezionare **desktop di Windows**. Nel riquadro centrale selezionare **Windows Form App**.
 
 3. Assegnare al progetto il nome **PresentationTier** e fare clic su **OK**.
 
@@ -371,7 +371,7 @@ Il valore predefinito per `maxReceivedMessageSize` non è sufficiente per conser
 
 2. Trovare l'attributo di dimensione **maxReceivedMessage** e impostare il valore su `6553600`.
 
-## <a name="test-the-application"></a>Test dell'applicazione
+## <a name="test-the-application"></a>Testare l'applicazione
 Eseguire l'applicazione premendo **F5**. I dati delle `Customers` tabelle e `Orders` vengono recuperati dal servizio dati e visualizzati nel form.
 
 ## <a name="next-steps"></a>Passaggi successivi

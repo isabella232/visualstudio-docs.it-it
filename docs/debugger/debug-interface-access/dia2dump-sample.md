@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 492c0893-7043-452f-a020-890a47230d20
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 17fe6d65e70399ccac5b9ef4e2f1234ef4e3698e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fee6f04b3ee0aefe0aac99f8079e2f31733ce08b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468686"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865419"
 ---
 # <a name="dia2dump-sample"></a>Esempio Dia2dump
 
@@ -40,11 +40,11 @@ Per impostazione predefinita, la directory di installazione è una directory pro
 
 1. Aprire il file DIA2Dump. sln in Visual Studio. Se la soluzione non è stata copiata in un'altra directory, è possibile che venga richiesto di riavviare Visual Studio con autorizzazioni elevate.
 
-1. In **Esplora soluzioni**selezionare il progetto Dia2Dump (non la soluzione).
+1. In **Esplora soluzioni** selezionare il progetto Dia2Dump (non la soluzione).
 
 1. Aprire la finestra di dialogo **Pagine delle proprietà** del progetto. Per informazioni dettagliate, vedere [Utilizzo di proprietà di progetto](/cpp/build/working-with-project-properties).
 
-1. Aprire la pagina delle proprietà generale relativa alle **proprietà di configurazione**  >  **C/C++**  >  **General** .
+1. Aprire la pagina delle proprietà generale relativa alle **proprietà di configurazione**  >  **C/C++**  >   .
 
 1. Nella proprietà **directory di inclusione aggiuntive** scegliere il controllo elenco a discesa, quindi scegliere **modifica**.
 
@@ -52,7 +52,7 @@ Per impostazione predefinita, la directory di installazione è una directory pro
 
 1. Scegliere **OK** per salvare le modifiche apportate alle proprietà del progetto.
 
-1. Scegliere **Ricompila soluzione**dal menu **Compila** . Per impostazione predefinita, in Visual Studio viene compilata una versione di debug dell'esempio che si trova in una sottodirectory di debug della directory della soluzione.
+1. Scegliere **Ricompila soluzione** dal menu **Compila** . Per impostazione predefinita, in Visual Studio viene compilata una versione di debug dell'esempio che si trova in una sottodirectory di debug della directory della soluzione.
 
 1. Chiudere Visual Studio.
 
@@ -64,7 +64,7 @@ Per impostazione predefinita, la directory di installazione è una directory pro
 
 ## <a name="run-the-dia2dump-sample"></a>Eseguire l'esempio Dia2Dump
 
-Dia2Dump.exe si basa sul server COM*Version*. dll di MSDIA vengono per fornire i servizi. A partire da Visual Studio 2015, la versione è msdia140.dll. Se il server COM*Version*. dll di MSDIA vengono non è inizializzato, è necessario registrarlo prima che dia2dump.exe possa funzionare. La directory DIA SDK dispone di una sottodirectory bin che contiene la versione x86 della DLL. Una versione per computer con architettura x64 è in bin\amd64 e una versione per ARM si trova in bin\arm. Per registrare la dll, aprire una finestra del prompt dei comandi per gli sviluppatori con privilegi elevati e passare alla directory che contiene la versione per l'architettura del computer. Immettere il comando `regsvr32 msdia140.dll` per registrare il server com.
+Dia2Dump.exe si basa sul server COM *Version*. dll di MSDIA vengono per fornire i servizi. A partire da Visual Studio 2015, la versione è msdia140.dll. Se il server COM *Version*. dll di MSDIA vengono non è inizializzato, è necessario registrarlo prima che dia2dump.exe possa funzionare. La directory DIA SDK dispone di una sottodirectory bin che contiene la versione x86 della DLL. Una versione per computer con architettura x64 è in bin\amd64 e una versione per ARM si trova in bin\arm. Per registrare la dll, aprire una finestra del prompt dei comandi per gli sviluppatori con privilegi elevati e passare alla directory che contiene la versione per l'architettura del computer. Immettere il comando `regsvr32 msdia140.dll` per registrare il server com.
 
 ### <a name="to-run-the-sample"></a>Per eseguire l'esempio
 
@@ -74,6 +74,6 @@ Dia2Dump.exe si basa sul server COM*Version*. dll di MSDIA vengono per fornire i
 
 1. Dia2Dump dispone di altre opzioni per visualizzare solo le informazioni selezionate. Usare il `dia2dump -?` comando per elencare tutte le opzioni disponibili.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Porta, migrazione e aggiornamento dei progetti di Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2f6401fedc3158e2743f08775da93faf2ddfee73
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 75800c5a2b5ff62addec3c914905ae67ac171b95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436042"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866580"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvare dati in un database (a più tabelle)
 
@@ -63,7 +63,7 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 ## <a name="create-the-windows-forms-application"></a>Creare il Windows Forms Application
 
-Creare un nuovo progetto di **App Windows Forms** per C# o Visual Basic. Assegnare al progetto il nome **UpdateMultipleTablesWalkthrough**.
+Creare un nuovo progetto di **App Windows Form** per C# o Visual Basic. Assegnare al progetto il nome **UpdateMultipleTablesWalkthrough**.
 
 ## <a name="create-the-data-source"></a>Creare l'origine dati
 
@@ -75,7 +75,7 @@ Questo passaggio consente di creare un'origine dati dal database Northwind usand
 
 2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
-3. Nella schermata **scegliere un tipo di origine dati** selezionare **database** , quindi fare clic su **Avanti**.
+3. Nella schermata **scegliere un tipo di origine dati** selezionare **database**, quindi fare clic su **Avanti**.
 
 4. Nella schermata **Seleziona connessione dati** eseguire una delle operazioni seguenti:
 
@@ -136,7 +136,7 @@ Per questa procedura dettagliata, i dati nella `Customers` tabella si trova in u
      [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]
      [!code-csharp[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]
 
-## <a name="test-the-application"></a>Test dell'applicazione
+## <a name="test-the-application"></a>Testare l'applicazione
 
 1. Premere **F5**.
 
@@ -146,6 +146,6 @@ Per questa procedura dettagliata, i dati nella `Customers` tabella si trova in u
 
 4. Controllare i valori presenti nel database per verificare che le modifiche siano state salvate.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

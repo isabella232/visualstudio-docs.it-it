@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5c542025-98cf-4307-901f-b9430f780cf0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4621c25daf8b8c8415f84eb87f06e7223ff30cf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 810f6f153fa09409ff8356505f297c185319ccbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865181"
 ---
 # <a name="idiaenumsymbolsclone"></a>IDiaEnumSymbols::Clone
 Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.
@@ -25,7 +25,7 @@ Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumerator
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT Clone ( 
+HRESULT Clone ( 
    IDiaEnumSymbols** ppenum
 );
 ```
@@ -38,5 +38,5 @@ out Restituisce un oggetto [IDiaEnumSymbols](../../debugger/debug-interface-acce
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

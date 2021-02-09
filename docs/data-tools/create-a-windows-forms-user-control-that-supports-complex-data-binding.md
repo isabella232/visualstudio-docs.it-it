@@ -1,6 +1,6 @@
 ---
-title: Creare un controllo utente Windows Forms con data binding
-description: Informazioni su come creare un Windows Forms controllo utente che supporta data binding complessi, implementando la classe ComplexBindingPropertiesAttribute.
+title: Creare un controllo utente Windows Form con data binding
+description: Informazioni su come creare un Windows Form controllo utente che supporta data binding complessi, implementando la classe ComplexBindingPropertiesAttribute.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,29 +13,29 @@ helpviewer_keywords:
 - user controls [Visual Studio], complex data binding
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 465636b2b5bbf1a47752b4f0917258e264172abd
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 25bdda6a1b62f47c752a2975fa3acfd1379a470c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436784"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867148"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding complesso
 
 Quando si visualizzano i dati nei form nelle applicazioni Windows, è possibile scegliere i controlli esistenti dalla **casella degli strumenti**. In alternativa, è possibile creare controlli personalizzati se l'applicazione richiede funzionalità che non sono disponibili nei controlli standard. In questa procedura dettagliata è illustrato come creare un controllo che implementa <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. I controlli che implementano <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> contengono `DataSource` e la proprietà `DataMember` che può essere associata ai dati. Tali controlli sono simili a <xref:System.Windows.Forms.DataGridView> o <xref:System.Windows.Forms.ListBox>.
 
-Per ulteriori informazioni sulla creazione di controlli, vedere [sviluppo di controlli Windows Forms in fase di progettazione](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
+Per ulteriori informazioni sulla creazione di controlli, vedere [sviluppo di controlli Windows Form in fase di progettazione](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
 
 Quando si creano controlli da usare negli scenari di data binding, è necessario implementare uno degli attributi di data binding seguenti:
 
 |Utilizzo degli attributi di associazione dati|
 | - |
-|Implementare <xref:System.ComponentModel.DefaultBindingPropertyAttribute> su controlli semplici, ad esempio <xref:System.Windows.Forms.TextBox>, che visualizzano una singola colonna, o proprietà, di dati. Per altre informazioni, vedere [creare un Windows Forms controllo utente che supporta data binding semplici](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).|
+|Implementare <xref:System.ComponentModel.DefaultBindingPropertyAttribute> su controlli semplici, ad esempio <xref:System.Windows.Forms.TextBox>, che visualizzano una singola colonna, o proprietà, di dati. Per altre informazioni, vedere [creare un Windows Form controllo utente che supporta data binding semplici](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).|
 |Implementare <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> su controlli, ad esempio <xref:System.Windows.Forms.DataGridView>, che visualizzano elenchi, o tabelle, di dati. Il processo è descritto in questa pagina di procedura dettagliata.|
-|Implementare <xref:System.ComponentModel.LookupBindingPropertiesAttribute> su controlli, ad esempio <xref:System.Windows.Forms.ComboBox>, che visualizzano elenchi, o tabelle, di dati ma che devono anche presentare una singola colonna o proprietà. Per altre informazioni, vedere [creare un Windows Forms controllo utente che supporta la ricerca data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
+|Implementare <xref:System.ComponentModel.LookupBindingPropertiesAttribute> su controlli, ad esempio <xref:System.Windows.Forms.ComboBox>, che visualizzano elenchi, o tabelle, di dati ma che devono anche presentare una singola colonna o proprietà. Per altre informazioni, vedere [creare un Windows Form controllo utente che supporta la ricerca data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
 
 Questa procedura dettagliata crea un controllo complesso che visualizza righe di dati da una tabella. In questo esempio viene usata la tabella `Customers` del database di esempio Northwind. Il controllo utente complesso visualizzerà la tabella dei clienti in un oggetto <xref:System.Windows.Forms.DataGridView> nel controllo personalizzato.
 
@@ -71,13 +71,13 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
        Dopo un breve periodo di tempo, viene completata l'esecuzione della query e viene creato il database Northwind.
 
-## <a name="create-a-windows-forms-app-project"></a>Creare un progetto di app Windows Forms
+## <a name="create-a-windows-forms-app-project"></a>Creare un progetto di app Windows Form
 
-Il primo passaggio consiste nel creare un progetto di **App Windows Forms** per C# o Visual Basic. Assegnare al progetto il nome **ComplexControlWalkthrough**.
+Il primo passaggio consiste nel creare un progetto di **App Windows Form** per C# o Visual Basic. Assegnare al progetto il nome **ComplexControlWalkthrough**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Aggiungere un controllo utente al progetto
 
-Poiché in questa procedura dettagliata viene creato un controllo associabile a dati complesso da un **controllo utente** , aggiungere un elemento del **controllo utente** al progetto:
+Poiché in questa procedura dettagliata viene creato un controllo associabile a dati complesso da un **controllo utente**, aggiungere un elemento del **controllo utente** al progetto:
 
 1. Scegliere **Aggiungi controllo utente** dal menu **Progetto**.
 
@@ -156,10 +156,10 @@ A seconda dei requisiti dell'applicazione, dopo la creazione di un controllo che
 
 - Posizionamento dei controlli personalizzati in una libreria di controlli in modo da poterli usare di nuovo in altre applicazioni.
 
-- Creazione di controlli che supportano scenari di ricerca. Per altre informazioni, vedere [creare un Windows Forms controllo utente che supporta la ricerca data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
+- Creazione di controlli che supportano scenari di ricerca. Per altre informazioni, vedere [creare un Windows Form controllo utente che supporta la ricerca data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
-- [Controlli di Windows Forms](/dotnet/framework/winforms/controls/index)
+- [Controlli di Windows Form](/dotnet/framework/winforms/controls/index)

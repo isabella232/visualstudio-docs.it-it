@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 0f17e96a-2e06-42c9-a877-3e5e670ee0ef
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cd507974a11636b4fdc0753dbf94da2a6aece783
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c71f9f39d1b38db79d47aff37cee50f48e92566e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468714"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865433"
 ---
 # <a name="data-debug-interface-access-sdk"></a>Dati (Debug Interface Access SDK)
 Tutte le variabili, ad esempio i parametri, le variabili locali, le variabili globali e i membri delle classi, sono identificate da `SymTagData` simboli. I valori costanti ( `LocIsConstant` ) sono identificati anche con questo tipo.
@@ -61,7 +61,7 @@ Tutte le variabili, ad esempio i parametri, le variabili locali, le variabili gl
 |[IDiaSymbol::get_virtualAddress](../../debugger/debug-interface-access/idiasymbol-get-virtualaddress.md)|`ULONGLONG`|Posizione dei dati all'interno dell'eseguibile.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Se i dati sono contrassegnati come volatili.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazione CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)
 - [Enumerazione DataKind](../../debugger/debug-interface-access/datakind.md)
 - [Gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

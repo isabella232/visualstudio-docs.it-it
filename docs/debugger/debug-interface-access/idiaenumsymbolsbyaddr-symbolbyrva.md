@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f7828029-f2ee-4ccd-afac-785adc60a4c8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6f2f4486f943064ef4c29d16c98003aa3ff088
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaa0d07a32653d03db6ac14b7507e0073c33d4e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467624"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865125"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
 Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo RVA (relative Virtual Address).
@@ -25,7 +25,7 @@ Posiziona l'enumeratore eseguendo una ricerca in base all'indirizzo RVA (relativ
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT symbolByRVA ( 
+HRESULT symbolByRVA ( 
    DWORD**      relativeVirtualAddress,
    IDiaSymbol** ppsymbol
 );
@@ -43,7 +43,7 @@ out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/id
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se il simbolo non è stato trovato. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
 - [IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

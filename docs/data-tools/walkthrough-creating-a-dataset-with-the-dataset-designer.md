@@ -12,15 +12,15 @@ helpviewer_keywords:
 - datasets [Visual Basic], creating
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1f124a459d55b945cd8dbb480d7e7c22b5de4f3e
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: b1fe1d75673dc47f423cf398118230cd1530def0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998031"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866229"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Procedura dettagliata: creare un set di dati con l'Progettazione DataSet
 
@@ -50,7 +50,7 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
-3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
+3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Form** .
 
 4. Denominare il progetto **DatasetDesignerWalkthrough**, quindi scegliere **OK**.
 
@@ -104,7 +104,7 @@ In questa sezione viene illustrato come aggiungere tabelle al set di dati.
 
 - Salvare il set di dati.
 
-- Selezionare gli elementi nella finestra **origini dati** e trascinarli in un modulo. Per altre informazioni, vedere [associare Windows Forms controlli ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
+- Selezionare gli elementi nella finestra **origini dati** e trascinarli in un modulo. Per altre informazioni, vedere [associare Windows Form controlli ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
 
 - Aggiungere altre query agli oggetti TableAdapter.
 

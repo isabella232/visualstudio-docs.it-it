@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77f6a837fcc88c7154978e8031b17febaa0fcd39
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: bdbfba867fd1fa898ff376d3d1e60f33f58c32a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436055"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866593"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati di nuovo nel database
 
@@ -105,7 +105,7 @@ Per evitare violazioni dei vincoli prematuri, è possibile sospendere temporanea
 - Impedisce la generazione di determinati eventi di aggiornamento (eventi spesso utilizzati per la convalida).
 
 > [!NOTE]
-> In Windows Forms, l'architettura data binding incorporata nel DataGrid sospende il controllo dei vincoli fino a quando lo stato attivo non viene spostato in una riga e non è necessario chiamare in modo esplicito i <xref:System.Data.DataRow.BeginEdit%2A> <xref:System.Data.DataRow.EndEdit%2A> metodi, o <xref:System.Data.DataRow.CancelEdit%2A> .
+> In Windows Form, l'architettura data binding incorporata nel DataGrid sospende il controllo dei vincoli fino a quando lo stato attivo non viene spostato in una riga e non è necessario chiamare in modo esplicito i <xref:System.Data.DataRow.BeginEdit%2A> <xref:System.Data.DataRow.EndEdit%2A> metodi, o <xref:System.Data.DataRow.CancelEdit%2A> .
 
 I vincoli vengono disabilitati automaticamente quando il <xref:System.Data.DataSet.Merge%2A> metodo viene richiamato su un set di dati. Al termine dell'Unione, se nel set di dati sono presenti vincoli che non possono essere abilitati, <xref:System.Data.ConstraintException> viene generata un'eccezione. In questa situazione, la <xref:System.Data.DataSet.EnforceConstraints%2A> proprietà viene impostata su `false,` e tutte le violazioni dei vincoli devono essere risolte prima di reimpostare la <xref:System.Data.DataSet.EnforceConstraints%2A> proprietà su `true` .
 
@@ -160,7 +160,7 @@ Anche se i record sono stati modificati, non sono sempre presenti versioni origi
 
 ## <a name="get-changed-records"></a>Ottenere record modificati
 
-È prassi comune non aggiornare ogni record in un set di dati. Un utente potrebbe, ad esempio, utilizzare un controllo Windows Forms <xref:System.Windows.Forms.DataGridView> che visualizza molti record. Tuttavia, l'utente potrebbe aggiornare solo alcuni record, eliminarne uno e inserirne uno nuovo. I set di dati e le tabelle di dati forniscono un metodo ( `GetChanges` ) per restituire solo le righe che sono state modificate.
+È prassi comune non aggiornare ogni record in un set di dati. Un utente potrebbe, ad esempio, utilizzare un controllo Windows Form <xref:System.Windows.Forms.DataGridView> che visualizza molti record. Tuttavia, l'utente potrebbe aggiornare solo alcuni record, eliminarne uno e inserirne uno nuovo. I set di dati e le tabelle di dati forniscono un metodo ( `GetChanges` ) per restituire solo le righe che sono state modificate.
 
 È possibile creare subset di record modificati usando il `GetChanges` metodo della tabella dati ( <xref:System.Data.DataTable.GetChanges%2A> ) o del set di dati ( <xref:System.Data.DataSet.GetChanges%2A> ). Se si chiama il metodo per la tabella dati, viene restituita una copia della tabella con solo i record modificati. Analogamente, se si chiama il metodo sul set di dati, si ottiene un nuovo set di dati con solo i record modificati al suo interno.
 
@@ -221,7 +221,7 @@ Per verificare che i dati nell'applicazione soddisfino i requisiti dei processi 
 
 - Nel livello aziendale, aggiungendo codice all'applicazione per convalidare i dati. Il set di dati è una posizione in cui è possibile eseguire questa operazione. Il set di dati offre alcuni dei vantaggi della convalida back-end, ad esempio la possibilità di convalidare le modifiche in seguito alla modifica dei valori delle colonne e delle righe. Per altre informazioni, vedere [convalidare i dati nei set di dati](../data-tools/validate-data-in-datasets.md).
 
-- Nel livello di presentazione, aggiungendo la convalida ai moduli. Per ulteriori informazioni, vedere [convalida dell'input dell'utente in Windows Forms](/dotnet/framework/winforms/user-input-validation-in-windows-forms).
+- Nel livello di presentazione, aggiungendo la convalida ai moduli. Per ulteriori informazioni, vedere [convalida dell'input dell'utente in Windows Form](/dotnet/framework/winforms/user-input-validation-in-windows-forms).
 
 - Nel back-end dei dati, inviando i dati all'origine dati, ad esempio il database, e consentendogli di accettare o rifiutare i dati. Se si utilizza un database con funzionalità sofisticate per la convalida dei dati e la fornitura di informazioni sugli errori, questo approccio può essere pratico perché è possibile convalidare i dati indipendentemente da dove provengono. Tuttavia, questo approccio potrebbe non soddisfare i requisiti di convalida specifici dell'applicazione. Inoltre, la convalida dei dati da parte dell'origine dati può causare numerosi round trip all'origine dati, a seconda del modo in cui l'applicazione facilita la risoluzione degli errori di convalida generati dal back-end.
 
@@ -274,7 +274,7 @@ In un'istruzione UPDATE è necessario specificare sia i nuovi valori (quelli che
 > [!NOTE]
 > È inoltre possibile impostare i valori nella `Parameters` raccolta manualmente nel codice, che in genere si esegue in un gestore eventi per l'evento dell'adattatore dati <xref:System.Data.DataTable.RowChanging> .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Creare e configurare oggetti TableAdapter](create-and-configure-tableadapters.md)

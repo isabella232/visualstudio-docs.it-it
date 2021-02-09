@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 18d1da27faed67b90658ea4479f1e2e9a11ead4a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 1707bbdd458ba6fc57ea3f6897af40e4cb9b4f03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436289"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866736"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Procedura: Salvare e modificare stringhe di connessione
 Le stringhe di connessione nelle applicazioni di Visual Studio vengono salvate nel file di configurazione dell'applicazione (noto anche come impostazioni dell'applicazione) o hardcoded direttamente nell'applicazione. Il salvataggio delle stringhe di connessione nel file di configurazione dell'applicazione semplifica la gestione dell'applicazione. Se la stringa di connessione richiede modifiche, infatti, è possibile aggiornarla all'interno di tale file invece di modificarla nel codice sorgente e poi ricompilare l'applicazione.
@@ -32,7 +32,7 @@ Nella **Configurazione guidata origine dati** selezionare l'opzione per salvare 
 1. In **Esplora soluzioni** fare doppio clic sull'icona **Progetto** (Visual Basic) o **Proprietà** (C#) per aprire **Progettazione progetti**.
 1. Selezionare la scheda **Settings** (Impostazioni).
 1. Nella casella **Nome** immettere un nome per la stringa di connessione. Fare riferimento a questo nome per l'accesso alla stringa di connessione nel codice.
-1. Impostare **Tipo** su ( **Stringa di connessione** ).
+1. Impostare **Tipo** su (**Stringa di connessione**).
 1. Lasciare l'opzione **Ambito** impostata su **Applicazione**.
 1. Digitare la stringa di connessione nel campo **valore** oppure fare clic sul pulsante con i **puntini** di sospensione (...) nel campo **valore** per aprire la finestra di dialogo **Proprietà connessione** per compilare la stringa di connessione.
 
@@ -58,6 +58,6 @@ Per modificare le informazioni sulla connessione salvate nelle impostazioni dell
 L'archiviazione delle informazioni riservate, ad esempio la password, nella stringa di connessione può avere implicazioni sulla sicurezza dell'applicazione. La sicurezza integrata di Windows consente di controllare l'accesso a un database in modo più sicuro.
 Per ulteriori informazioni, vedere [protezione delle informazioni di connessione](/dotnet/framework/data/adonet/protecting-connection-information).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Aggiunta di connessioni](../data-tools/add-new-connections.md)
