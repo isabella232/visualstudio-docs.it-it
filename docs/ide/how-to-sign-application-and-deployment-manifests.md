@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a267a64a6b6d59b64ffb70596154d1e54f368410
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 5568961cc8b527ecd724ab9a1d26ab4a641696b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869284"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procedura: firmare manifesti dell'applicazione e di distribuzione
 
@@ -42,14 +42,14 @@ Per altre informazioni sulla creazione di file di chiave, vedere [Procedura: Cre
 
 ## <a name="sign-using-a-certificate"></a>Firmare con un certificato
 
-1. Passare alla finestra delle proprietà del progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà** ). Nella scheda **Firma** , selezionare la casella di controllo **Firma i manifesti ClickOnce**.
+1. Passare alla finestra delle proprietà del progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà**). Nella scheda **Firma**, selezionare la casella di controllo **Firma i manifesti ClickOnce**.
 
 2. Fare clic sul pulsante **Seleziona da archivio**.
 
      Viene visualizzata la finestra di dialogo **Seleziona un certificato** con il contenuto dell'archivio certificati di Windows.
 
     > [!TIP]
-    > Se si fa clic su **Fare clic qui per le proprietà del certificato** , viene visualizzata la finestra di dialogo **Dettagli del certificato**. Questa finestra di dialogo contiene informazioni dettagliate sul certificato e opzioni aggiuntive. Fare clic su **Certificati** per visualizzare altre informazioni della Guida.
+    > Se si fa clic su **Fare clic qui per le proprietà del certificato**, viene visualizzata la finestra di dialogo **Dettagli del certificato**. Questa finestra di dialogo contiene informazioni dettagliate sul certificato e opzioni aggiuntive. Fare clic su **Certificati** per visualizzare altre informazioni della Guida.
 
 3. Selezionare il certificato che si vuole usare per firmare i manifesti.
 
@@ -63,7 +63,7 @@ Per altre informazioni sulla creazione di file di chiave, vedere [Procedura: Cre
 
      Verrà visualizzata la finestra di dialogo **Seleziona file**.
 
-3. Nella finestra di dialogo **Seleziona file** individuare la posizione del file di chiave ( *pfx* ) che si vuole usare e scegliere **Apri**.
+3. Nella finestra di dialogo **Seleziona file** individuare la posizione del file di chiave (*pfx*) che si vuole usare e scegliere **Apri**.
 
     > [!NOTE]
     > Questa opzione supporta solo file con estensione *pfx*. Se il file di chiave o il certificato sono in un altro formato, archiviarlo nell'archivio certificati di Windows e selezionare il certificato come illustrato nella procedura precedente. Nei requisiti del certificato selezionato deve essere inclusa la firma del codice.
@@ -113,7 +113,7 @@ Per impostazione predefinita, ClickOnce genera automaticamente manifesti firmati
 
 3. Pubblicare l'applicazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Assembly con nomi sicuri](/dotnet/framework/app-domains/strong-named-assemblies)
 - [Procedura: creare una coppia di chiavi pubblica/privata](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)

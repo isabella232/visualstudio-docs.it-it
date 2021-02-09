@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c7a25246f42d288020481330fe60e312849862d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67a5bfe92547738a672cb6881234ae80f76aeda8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728749"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869765"
 ---
 # <a name="idebugfield"></a>IDebugField
 Questa interfaccia rappresenta un campo, ovvero una descrizione di un simbolo o di un tipo.
@@ -49,7 +49,7 @@ IDebugField : IUnknown
 |[Uguale](../../../extensibility/debugger/reference/idebugfield-equal.md)|Confronta due campi.|
 |[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Ottiene informazioni indipendenti dal tipo sul simbolo o sul tipo.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Un tipo è equivalente a un linguaggio C `typedef` .
 
  Nel seguente esempio di linguaggio C++, `weather` è un tipo di classe e `sunny` e `stormy` sono simboli:
@@ -69,5 +69,5 @@ weather stormy;
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce del provider di simboli](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

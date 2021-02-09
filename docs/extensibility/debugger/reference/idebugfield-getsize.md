@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 73329924-3751-4f44-af54-5986b7943374
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9f19a914de2e74613e987753c8062215fd0d0403
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6330179f1bbfffcb1f590dfc09ae0c06385f12e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728801"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869856"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 Questo metodo ottiene le dimensioni in byte di un campo.
@@ -28,7 +28,7 @@ Questo metodo ottiene le dimensioni in byte di un campo.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetSize( 
+HRESULT GetSize( 
    DWORD* pdwSize
 );
 ```
@@ -46,8 +46,8 @@ out Restituisce la dimensione.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Tutti i campi hanno un tipo e tutti i tipi hanno una dimensione. Ad esempio, un campo con un tipo di byte ha una dimensione di 1 byte.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

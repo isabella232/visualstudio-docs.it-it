@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1847d5f0a0fa77b1dd0ddd0d74eeba84326d0205
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a4938d90c3122d7aa42582e68aa087a9068a1ac4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901856"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869440"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>Elemento SupportsCodeSeparation (modelli di Visual Studio)
 Specifica se la casella **di controllo Inserisci codice in file separato** è abilitata nella finestra di dialogo **Aggiungi nuovo elemento** .
@@ -40,10 +40,10 @@ Specifica se la casella **di controllo Inserisci codice in file separato** è ab
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ Nessuna.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -88,6 +88,6 @@ Specifica se la casella **di controllo Inserisci codice in file separato** è ab
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

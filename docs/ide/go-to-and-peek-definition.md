@@ -12,15 +12,15 @@ helpviewer_keywords:
 - member definition [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fab4bae999825d7d2fb11dd232d1e271b4f62d5
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 804c49c079f619a774cb1f99d54b2b2af5a3929d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869362"
 ---
 # <a name="view-type-and-member-definitions"></a>Visualizzare le definizioni di tipi e membri
 
@@ -78,7 +78,7 @@ Ad esempio, se si esegue il comando **Vai a definizione** per <xref:System.Conso
 > [!NOTE]
 > Visual Studio ricostruisce i corpi dei metodi tramite la decompilazione ILSpy. Al primo accesso a questa funzionalità, è necessario accettare una dichiarazione di non responsabilità relativa alla licenza del software e alle leggi su copyright e marchi.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Spostarsi all'interno del codice](../ide/navigating-code.md)
 - [Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

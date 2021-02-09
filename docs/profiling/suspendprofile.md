@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 7c8de6e6-bb88-4353-92c3-ce7290310d61
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 728aa7c858f8321e3289f2d17e612284f8739f17
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 6be94fafb1e41390236977a7a06b59cf7ac71a84
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719266"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868205"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 Il metodo `SuspendProfile` incrementa il contatore Suspend/Resume per il livello di profilatura specificato.
@@ -56,7 +56,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|La chiamata della funzione di profilatura, il livello di profilatura o la combinazione di chiamata e livello non sono ancora stati implementati.|
 |PROFILE_OK|La chiamata è stata completata correttamente.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il valore iniziale del contatore Suspend/Resume è 0. Ogni chiamata a SuspendProfile aggiunge 1 al conteggio di Suspend/Resume. Ogni chiamata a ResumeProfile sottrae 1.
 
  Quando il conteggio di Suspend/Resume è maggiore di 0, lo stato di Suspend/Resume per il livello è OFF. Quando il conteggio è minore o uguale a 0, lo stato di Suspend/Resume è ON.
@@ -106,5 +106,5 @@ void ExerciseSuspendProfile()
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

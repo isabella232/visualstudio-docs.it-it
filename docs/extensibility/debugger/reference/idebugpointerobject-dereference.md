@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 196ec2cc-8569-4780-b217-23b24e7f50ca
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe87d5db40ce663d84c9561e89a84e6fcb1684ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b3646df80dc93d3248c698efb172bb12a09925e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869635"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
 Ottiene l'oggetto a cui punta.
@@ -28,7 +28,7 @@ Ottiene l'oggetto a cui punta.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT DeReference( 
+HRESULT DeReference( 
    DWORD          dwIndex,
    IDebugObject** ppObject
 );
@@ -51,8 +51,8 @@ out Restituisce un oggetto [IDebugObject](../../../extensibility/debugger/refere
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore. Restituisce E_FAIL se l'oggetto non punta a un altro oggetto.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'oggetto a cui punta può essere un tipo primitivo o più complesso, ad esempio una classe o una struttura.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

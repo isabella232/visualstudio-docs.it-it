@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f6a6262f-5183-46ce-8a45-33ef46088b98
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: be06acbef93d8858557fea5bd7563168be2d28aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a93e75be0e3a7b3c86e75b29a13b2cabe5a4573
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736246"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870168"
 ---
 # <a name="idebugarrayobjectgetelements"></a>IDebugArrayObject::GetElements
 Ottiene un enumeratore di tutti gli elementi della matrice.
@@ -28,7 +28,7 @@ Ottiene un enumeratore di tutti gli elementi della matrice.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetElements( 
+HRESULT GetElements( 
    IEnumDebugObjects** ppEnum
 );
 ```
@@ -46,8 +46,8 @@ out Restituisce un oggetto [IEnumDebugObjects](../../../extensibility/debugger/r
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  In alternativa, usare i metodi [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) e [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) per scorrere gli elementi.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

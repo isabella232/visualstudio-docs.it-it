@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14193c0806c4b45f721ee97b101969de8437448d
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: c0d9d20000781980535259c0a739e03a47ae53e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869544"
 ---
 # <a name="inside-the-editor"></a>All'interno dell'editor
 
@@ -320,7 +320,7 @@ IntelliSense supporta il completamento delle istruzioni, la guida alla firma, no
 
 Il completamento delle istruzioni fornisce elenchi popup di possibili completamenti per i nomi dei metodi, gli elementi XML e altri elementi di codifica o di markup. In generale, un gesto utente richiama una sessione di completamento. La sessione Visualizza l'elenco dei completamenti potenziali e l'utente può selezionarne uno o chiudere l'elenco. <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>È responsabile della creazione e dell'attivazione dell'oggetto <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession> . <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>Calcola l'oggetto <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> di elementi di completamento per la sessione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Punti di estensione Editor e servizio di linguaggio](../extensibility/language-service-and-editor-extension-points.md)
 - [Importazioni editor](../extensibility/editor-imports.md)

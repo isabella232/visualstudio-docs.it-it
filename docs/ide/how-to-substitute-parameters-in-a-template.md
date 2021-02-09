@@ -10,13 +10,13 @@ helpviewer_keywords:
 - Visual Studio templates, using parameters
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: ba830035f441421ca0eb83404b37319d9a9e2ca3
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+manager: jmartens
+ms.openlocfilehash: 6d7d0a6f45468759dc3ec2349764cf2677aa5d9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95596859"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869232"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Procedura: Sostituire i parametri di un modello
 
@@ -42,7 +42,7 @@ Nella sezione seguente viene illustrato come modificare un modello in modo da so
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
     ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
 - [Parametri di modelli](../ide/template-parameters.md)

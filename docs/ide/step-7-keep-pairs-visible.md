@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc61a59d1e04d96fb36e7a7e4cd1304e2057adb
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: c6a4c2ce57e231cb174bb14a1a15e9089db8e6ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479446"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868764"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Passaggio 7: Mantenere le coppie visibili
 Il gioco funziona finché il giocatore sceglierà coppie di icone che non corrispondono. Si consideri però cosa dovrebbe accadere quando il giocatore sceglie una coppia esatta. Anziché far scomparire le icone attivando il timer, tramite il metodo <xref:System.Windows.Forms.Timer.Start>, il gioco deve reimpostarsi in modo da non tenere più traccia delle etichette tramite le variabili di riferimento `firstClicked` e `secondClicked`, senza reimpostare i colori delle due etichette scelte.

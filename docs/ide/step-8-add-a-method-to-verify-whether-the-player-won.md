@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c53afebfd8c39e9c43f82916095d8eeef2ec8b11
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 68a4848f00153206b87dd3e5893bbaaeccf3b358
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868751"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Passaggio 8: Aggiungere un metodo per verificare se il giocatore ha vinto
 È stato creato un gioco divertente, ma serve un elemento aggiuntivo per completare l'opera. Il gioco deve terminare quando il giocatore vince, pertanto è necessario aggiungere un metodo `CheckForWinner()` per verificare se il giocatore ha vinto.
@@ -45,10 +45,10 @@ ms.locfileid: "96479290"
 3. Salvare ed eseguire il programma. Giocare e accoppiare tutte le icone. Quando si vince, il programma visualizza un **MessageBox** di congratulazioni, come illustrato nello screenshot seguente, e quindi chiude la finestra.
 
      ![Gioco di abbinamenti con MessageBox](../ide/media/express_tut4step8.png)<br/>
-**_Matching Game_* _ _con * ***MessageBox**_
+***Gioco corrispondente** _ _With * ***MessageBox***
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
-- Per andare al passaggio successivo dell'esercitazione, vedere _ *[passaggio 9: provare altre funzionalità](../ide/step-9-try-other-features.md)* *.
+- Per andare al passaggio successivo dell'esercitazione, vedere **[passaggio 9: provare altre funzionalità](../ide/step-9-try-other-features.md)**.
 
 - Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 7: Mantenere le coppie visibili](../ide/step-7-keep-pairs-visible.md).

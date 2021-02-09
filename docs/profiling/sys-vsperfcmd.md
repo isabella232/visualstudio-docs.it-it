@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8090a39426455e0f6d877c26a7f0a50f00f10c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 66815265544afdee263490ed5eec92301911e3cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719760"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868166"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 L'opzione *Sys di* **VSPerfCmd.exe** imposta l'evento di profilatura campionato per gli eventi di chiamata del sistema (chiamate di funzione dall'applicazione profilata al sistema operativo) e, facoltativamente, modifica il numero di chiamate del sistema in un intervallo di campionamento rispetto al valore predefinito 10.
@@ -61,7 +61,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /Sys:20
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Sottoporre a profilatura applicazioni autonome](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

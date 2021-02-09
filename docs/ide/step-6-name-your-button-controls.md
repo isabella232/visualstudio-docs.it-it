@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa5b69cc106aeae18012a7116fd511263423b2c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0f6612806f8bf1453cf28f9d75c78588c2074bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480317"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868881"
 ---
 # <a name="step-6-name-your-button-controls"></a>Passaggio 6: Assegnare un nome ai pulsanti
 
@@ -35,7 +35,7 @@ Vi sono quattro pulsanti nel form e l'IDE li ha denominati **button1**, **button
 
 1. Nel form scegliere il pulsante **Chiudi** . Se sono ancora selezionati tutti i pulsanti, premere **ESC** per annullare la selezione. Scorrere nella finestra **Proprietà** fino a quando non viene visualizzata la proprietà **(Name)** . La proprietà **(Name)** è vicina alla parte superiore quando le proprietà sono alfabetiche. Modificare il nome in **CloseButton**, come illustrato nello screenshot seguente.
 
-    ![Finestra Proprietà con il nome closeButton](../ide/media/express_setnameproperty.png)<br>**_Proprietà_* _ _finestra con * ***CloseButton**_ _name *
+    ![Finestra Proprietà con il nome closeButton](../ide/media/express_setnameproperty.png)<br>***Proprietà** _ _finestra con * ***CloseButton**_ _name *
 
     > [!NOTE]
     > Provare a modificare il nome del pulsante in **Chiudi pulsante**, con uno spazio tra le parole "close" e "button". Quando si esegue questa operazione, l'IDE Visualizza un messaggio di errore: "valore della proprietà non valido". Gli spazi (e alcuni altri caratteri) non sono consentiti nei nomi dei controlli.
@@ -48,7 +48,7 @@ Vi sono quattro pulsanti nel form e l'IDE li ha denominati **button1**, **button
    In questa scheda viene visualizzato il file di codice dietro il form, come illustrato nello screenshot seguente.
 
     ![Scheda Form1.cs con codice Visual C&#35;](../ide/media/express_showbuttoncode.png)<br>
-**_Form1.cs_* _ _tab con codice C# *
+***Form1.cs** _ _tab con codice C# *
 
     > [!NOTE]
     > In alternativa, è possibile che la scheda Form1.cs o Form1. vb visualizzi **showButton** come **showButton** .

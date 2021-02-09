@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8e11d77a94c7c1d3d7b038ecea1a6c61646e371f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3dd2a688ef70064f44caccfd7c64150b7c649769
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77027572"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869128"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>Estendere una versione di valutazione o aggiornare una licenza
 
@@ -26,7 +26,7 @@ Per continuare a usare Visual Studio al termine di un periodo di valutazione, sb
 
 ## <a name="use-an-online-subscription"></a>Usa una sottoscrizione online
 
-1. Scegliere il pulsante **Sign in (accedi** ) nell'angolo superiore destro dell'IDE oppure passare a **File**  >  **Impostazioni account** file per aprire la finestra di dialogo **Impostazioni account** e quindi scegliere il pulsante **Accedi** .
+1. Scegliere il pulsante **Sign in (accedi** ) nell'angolo superiore destro dell'IDE oppure passare a   >  **Impostazioni account** file per aprire la finestra di dialogo **Impostazioni account** e quindi scegliere il pulsante **Accedi** .
 
 1. Immettere le credenziali per un account Microsoft oppure un account aziendale o dell'istituto di istruzione. Visual Studio individua una sottoscrizione di Visual Studio o un'organizzazione di Azure DevOps associata all'account.
 
@@ -66,16 +66,16 @@ Se non si immettono nuovamente le credenziali, il token inizia a diventare obsol
 
 ## <a name="update-an-expired-license"></a>Aggiornare una licenza scaduta
 
-Se la sottoscrizione è scaduta e non si dispone più dei diritti di accesso a Visual Studio, è necessario rinnovare la sottoscrizione o aggiungere un altro account che disponga di una sottoscrizione. Per visualizzare altre informazioni sulla licenza in uso, passare a **File**  >  **Impostazioni account** file ed esaminare le informazioni sulla licenza sul lato destro della finestra di dialogo. Se si dispone di un'altra sottoscrizione associata a un account diverso, aggiungere l'account all'elenco **tutti gli account** sul lato sinistro della finestra di dialogo selezionando il collegamento **Aggiungi un account** .
+Se la sottoscrizione è scaduta e non si dispone più dei diritti di accesso a Visual Studio, è necessario rinnovare la sottoscrizione o aggiungere un altro account che disponga di una sottoscrizione. Per visualizzare altre informazioni sulla licenza in uso, passare a   >  **Impostazioni account** file ed esaminare le informazioni sulla licenza sul lato destro della finestra di dialogo. Se si dispone di un'altra sottoscrizione associata a un account diverso, aggiungere l'account all'elenco **tutti gli account** sul lato sinistro della finestra di dialogo selezionando il collegamento **Aggiungi un account** .
 
-## <a name="get-support"></a>Ottenere supporto
+## <a name="get-support"></a>Supporto
 
 Non sempre tutto funziona correttamente. Se si verifica un problema, di seguito sono riportate alcune opzioni di supporto:
 
 * Segnalare i problemi del prodotto utilizzando lo strumento [segnala un problema](how-to-report-a-problem-with-visual-studio.md) .
 * Domande frequenti su sottoscrizioni, account e fatturazione nelle domande frequenti sul [supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Accedi a Visual Studio](../ide/signing-in-to-visual-studio.md)
 * [Confrontare le edizioni di Visual Studio](https://visualstudio.microsoft.com/vs/compare/)

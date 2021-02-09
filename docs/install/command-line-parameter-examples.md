@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f182351cbb0351256ebe32b4ab70543022ed92c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02496f230338e429b281f2b0d516cb9a06fe9e7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88114245"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868530"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Esempi di parametri della riga di comando per l'installazione di Visual Studio
 
@@ -76,7 +76,7 @@ Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installa
    Write-Output $process.ExitCode 
    ```
 
-   Oppure
+   oppure
 
    ```powershell
     $startInfo = New-Object System.Diagnostics.ProcessStartInfo
@@ -222,7 +222,7 @@ Questo parametro della riga di comando è una **novità della versione 15.9**. P
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

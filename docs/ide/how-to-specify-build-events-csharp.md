@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7bac7b2b293cd508931304b1e6cdd237234001e3
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: e1ea031391b93d571b9f34ad820f1a6957dab242
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869245"
 ---
 # <a name="how-to-specify-build-events-c"></a>Procedura: Specificare gli eventi di compilazione (C#)
 
@@ -74,7 +74,7 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
 
 1. Creare un nuovo progetto **App console** per il comando. Assegnare al progetto il nome **ChangeOSVersionCS**.
 
-2. In *Program.cs*aggiungere la riga seguente alle altre `using` direttive all'inizio del file:
+2. In *Program.cs* aggiungere la riga seguente alle altre `using` direttive all'inizio del file:
 
    ```csharp
    using System.Xml;
@@ -176,7 +176,7 @@ Richiamare quindi questo comando in un evento di post-compilazione per modificar
    <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
    ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Pagina eventi di compilazione, Progettazione progetti (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Finestra di dialogo riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)

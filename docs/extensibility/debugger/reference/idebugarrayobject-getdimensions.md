@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 527f79724aeac0de58d0ae63c9c2408ed2eca9ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c0c71032fc8f5c75522f6b1f9e0d8cb1308f63f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870194"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 Ottiene le dimensioni della matrice.
@@ -25,7 +25,7 @@ Ottiene le dimensioni della matrice.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetDimensions( 
+HRESULT GetDimensions( 
    DWORD dwCount,
    DWORD dwDimensions[]
 );
@@ -48,8 +48,8 @@ in Numero di dimensioni da recuperare.
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Una matrice multidimensionale può avere dimensioni diverse per ogni dimensione. Ad esempio, in base alla matrice tridimensionale `myarray[3][2][6]` , questo metodo restituisce 3, 2 e 6 nel `dwDimensions` parametro in tale ordine.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

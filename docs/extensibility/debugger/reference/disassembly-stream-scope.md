@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 43e2b364-cbbe-4755-a7e6-a03f3054c965
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fae1f22c6db22cd6cff93cfb1b98a28620a1537c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54773ee6f770855122992f49bebad44fa1f6129a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737263"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870298"
 ---
 # <a name="disassembly_stream_scope"></a>DISASSEMBLY_STREAM_SCOPE
 Specifica l'ambito del flusso di Disassembly.
@@ -59,7 +59,7 @@ Quando viene restituito dal `IDebugDisassemblyStream2::GetScope` metodo, specifi
 `DSS_ALL`\
 Specifica il disassembly per l'intero spazio degli indirizzi.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Passato come argomento al metodo [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) e restituito dal metodo [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) .
 
 Questi valori possono essere combinati con un bit per bit `OR` .
@@ -71,7 +71,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)
 - [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)

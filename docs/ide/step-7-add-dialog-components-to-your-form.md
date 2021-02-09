@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 37cbd2ca1f0207eaf2a41f6a08248bcedcfbe5bb
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: a485433ef73ef853a186a5b441396f6d5a57f679
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868855"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Passaggio 7: Aggiungere componenti di finestra di dialogo al modulo
 
@@ -34,7 +34,7 @@ Un componente è per alcuni aspetti simile a un controllo. Si usa la **casella d
 
 1. Per aggiungere un componente denominato **openFileDialog1** al form, fare doppio clic su **OpenFileDialog**. Per aggiungere un componente denominato **colorDialog1** al modulo, fare doppio clic su **ColorDialog** nella **casella degli strumenti**. Che verrà usato nel passaggio successivo dell'esercitazione. Verrà visualizzata un'area nella parte inferiore di **Progettazione Windows Form** (sotto il modulo **Visualizzatore immagini** ) che dispone di un'icona per ognuno dei due componenti della finestra di dialogo aggiunti, come illustrato nella figura seguente.
 
-     ![Componenti della finestra di dialogo](../ide/media/express_dialogsadded.png)<br>**_Finestra di dialogo_* _ _components *
+     ![Componenti della finestra di dialogo](../ide/media/express_dialogsadded.png)<br>***Finestra di dialogo** _ _components *
 
 1. Scegliere l'icona **openFileDialog1** nell'area nella parte inferiore di **Progettazione Windows Form**. Impostare due proprietà:
 

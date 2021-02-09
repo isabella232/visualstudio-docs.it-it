@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: ab38f7ca-fa01-4cf3-a06c-56cbb7207617
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 32331a5b628c27dc79d6a2e5919c8d268c96a3aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93296770597e8809c5b739b46d8eaefdc8fe5daf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738002"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870285"
 ---
 # <a name="bp_location_code_func_offset"></a>BP_LOCATION_CODE_FUNC_OFFSET
 Descrive la posizione di offset di un punto di interruzione in una funzione nel codice.
@@ -40,7 +40,7 @@ Contesto del punto di interruzione, in genere un metodo o un nome di funzione co
 `pFuncPos`\
 Oggetto [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) che descrive il nome della funzione e la posizione relativa dall'inizio della funzione.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'Unione.
 
 Il `pFuncPos` membro indica dove impostare il punto di interruzione della funzione.
@@ -52,7 +52,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
 - [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

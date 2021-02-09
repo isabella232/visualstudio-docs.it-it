@@ -9,13 +9,13 @@ helpviewer_keywords:
 - Solution Explorer, file nesting
 author: angelosp
 ms.author: angelpe
-manager: jillfra
-ms.openlocfilehash: 5425c255e85a2785383f1e8e718340fc2049e0c4
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+manager: jmartens
+ms.openlocfilehash: aa3ca640fed4e32c19defd925a49369890219035
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869453"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Annidamento file in Esplora soluzioni
 
@@ -64,7 +64,7 @@ Si esamineranno ora il nodo **dependentFileProviders** e i suoi nodi figlio. Ogn
 
 ### <a name="the-extensiontoextension-provider"></a>Provider extensionToExtension
 
-Questo provider consente di definire regole di annidamento file usando estensioni file specifiche. Prendere in considerazione gli esempi seguenti:
+Questo provider consente di definire regole di annidamento file usando estensioni file specifiche. Si consideri l'esempio seguente:
 
 ![Regole dell'esempio extentionToExtension](media/filenesting_extensiontoextension.png) ![Effetto dell'esempio extentionToExtension](media/filenesting_extensiontoextension_effect.png)
 
@@ -78,7 +78,7 @@ Questo provider consente di definire regole di annidamento file usando estension
 
 ### <a name="the-filesuffixtoextension-provider"></a>Provider fileSuffixToExtension
 
-Questo provider ha lo stesso funzionamento di **extensionToExtension**, con l'unica differenza che la regola esamina il suffisso del file anziché la sola l'estensione. Prendere in considerazione gli esempi seguenti:
+Questo provider ha lo stesso funzionamento di **extensionToExtension**, con l'unica differenza che la regola esamina il suffisso del file anziché la sola l'estensione. Si consideri l'esempio seguente:
 
 ![Regole dell'esempio fileSuffixToExtension](media/filenesting_filesuffixtoextension.png) ![Effetto dell'esempio fileSuffixToExtension](media/filenesting_filesuffixtoextension_effect.png)
 
@@ -90,7 +90,7 @@ Questo provider ha lo stesso funzionamento di **extensionToExtension**, con l'un
 
 Questo provider annida i file con un'estensione aggiuntiva nel file senza l'estensione aggiuntiva. L'estensione aggiuntiva può essere visualizzata solo alla fine del nome file completo.
 
-Prendere in considerazione gli esempi seguenti:
+Si consideri l'esempio seguente:
 
 ![Regole dell'esempio addedExtension](media/filenesting_addedextension.png) ![Effetto dell'esempio addedExtension](media/filenesting_addedextension_effect.png)
 
@@ -103,7 +103,7 @@ Prendere in considerazione gli esempi seguenti:
 
 Questo provider annida i file con un'estensione aggiuntiva in un file senza estensione aggiuntiva. L'estensione aggiuntiva può essere visualizzata solo al centro del nome file completo.
 
-Prendere in considerazione gli esempi seguenti:
+Si consideri l'esempio seguente:
 
 ![Regole dell'esempio pathSegment](media/filenesting_pathsegment.png) ![Effetto dell'esempio pathSegment](media/filenesting_pathsegment_effect.png)
 
@@ -128,7 +128,7 @@ Prendere in considerazione gli esempi seguenti:
 
 ### <a name="the-allextensions-provider"></a>Provider allExtensions
 
-Questo provider consente di definire regole di annidamento file per i file con qualsiasi estensione ma con lo stesso nome file di base. Prendere in considerazione gli esempi seguenti:
+Questo provider consente di definire regole di annidamento file per i file con qualsiasi estensione ma con lo stesso nome file di base. Si consideri l'esempio seguente:
 
 ![Regole dell'esempio allExtensions](media/filenesting_allextensions.png) ![Effetto dell'esempio allExtensions](media/filenesting_allextensions_effect.png)
 
@@ -136,7 +136,7 @@ Questo provider consente di definire regole di annidamento file per i file con q
 
 ### <a name="the-filetofile-provider"></a>Provider fileToFile
 
-Questo provider consente di definire regole di annidamento file in base a nomi file interi. Prendere in considerazione gli esempi seguenti:
+Questo provider consente di definire regole di annidamento file in base a nomi file interi. Si consideri l'esempio seguente:
 
 ![Regole dell'esempio fileToFile](media/filenesting_filetofile.png) ![Effetto dell'esempio fileToFile](media/filenesting_filetofile_effect.png)
 

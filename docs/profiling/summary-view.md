@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 98a1eb71-bbf5-4ce7-8559-cdc29f082c4b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 154f168044e5395a534b4a79ea44d9eafe6293f6
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: a7c1e22d10e7ffa20c73e1b4c42541bc22eab4bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719279"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868231"
 ---
 # <a name="summary-view"></a>Visualizzazione di riepilogo
 La visualizzazione Riepilogo mostra informazioni sulle funzioni o gli oggetti che influiscono maggiormente sulle prestazioni in un'esecuzione della profilatura. Questa visualizzazione include un grafico della sequenza temporale e due o più elenchi delle funzioni o degli oggetti che influiscono maggiormente sulle prestazioni, in base alle metriche delle prestazioni del metodo di profilatura. I dati in questa visualizzazione dipendono dal metodo di profilatura usato (campionamento, strumentazione o concorrenza) e dal fatto che siano state raccolte le allocazioni di memoria .NET.
@@ -56,7 +56,7 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni o gli oggetti ch
 | **Filtra dati report** | Visualizza il riquadro per filtrare i report di profilatura in cui è possibile specificare criteri per limitare i dati nella visualizzazione del report. Per ulteriori informazioni, vedere [filtro delle visualizzazioni dei report di prestazioni](../profiling/performance-report-view-filter.md) |
 | **Mostra/Nascondi a schermo intero** | Disattiva la modalità schermo intero per la visualizzazione dei report. |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzazione Riepilogo: dati di campionamento](../profiling/summary-view-sampling-data.md)
 - [Visualizzazione Riepilogo: dati di strumentazione](../profiling/summary-view-instrumentation-data.md)
 - [Visualizzazione Riepilogo: dati di memoria .NET](../profiling/summary-view-dotnet-memory-data.md)

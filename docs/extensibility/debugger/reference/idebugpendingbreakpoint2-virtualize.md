@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 58c8e9a5-4494-47c2-bddb-56f628da6a2d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7ad5aac997cf694a7cf8fa887ae63fbef54ca07f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 242caf91b8f25f8bea6ff9c17820ed84c5fc98f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725663"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869674"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 Consente di abilitare o disabilitare lo stato virtualizzato del punto di interruzione in sospeso. Quando un punto di interruzione in sospeso viene virtualizzato, il motore di debug tenterà di associarlo ogni volta che viene caricato il nuovo codice nel programma.
@@ -47,7 +47,7 @@ in Impostare su un valore diverso da zero ( `TRUE` ) per virtualizzare il punto 
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se il punto di interruzione è stato eliminato.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Un punto di interruzione virtualizzato viene associato ogni volta che viene caricato il codice.
 
 ## <a name="example"></a>Esempio
@@ -85,5 +85,5 @@ HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

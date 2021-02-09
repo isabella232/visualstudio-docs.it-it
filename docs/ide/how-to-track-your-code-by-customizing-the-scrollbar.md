@@ -6,15 +6,15 @@ ms.date: 03/20/2020
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c59ac152be9528ef3e01410f0a3b5f34dd882286
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 740a1b9385c53c87e8d52d2e80729586557f7ce0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95596937"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869154"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>Procedura: Personalizzare la barra di scorrimento
 
@@ -72,6 +72,6 @@ La figura seguente mostra l'opzione **Mostra descrizione comando anteprima**:
 > [!TIP]
 > Per modificare i colori visualizzati in modalità mappa, scegliere **strumenti**  >  **Opzioni**  >  **ambiente**  >  **tipi di carattere e colori**. Successivamente, in **elementi visualizzati** scegliere uno degli elementi che sono preceduti da "panoramica", apportare le modifiche ai colori desiderate, quindi scegliere **OK**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 882951a2-3da0-49bf-8d1e-7daedd13ffe6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 925ce3a7bcce9f787e02c2bd2714f8b26d8cec26
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 074bc97bab80e09d6b720d23e9d617cdfcdc6350
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736137"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870051"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 Recupera gli indici di base (limiti inferiori) per ogni indice dato il numero di dimensioni nella matrice.
@@ -50,7 +50,7 @@ out Indici di base (limiti inferiori) per la matrice.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Ad esempio, questa funzione restituisce ' 5' per la matrice creata dal codice C# seguente:
 
 ```
@@ -59,5 +59,5 @@ int[] lowerbounds = { 5 };
 Array.CreateInstance(typeof(int), lengths, lowerbounds);
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugArrayObject2](../../../extensibility/debugger/reference/idebugarrayobject2.md)

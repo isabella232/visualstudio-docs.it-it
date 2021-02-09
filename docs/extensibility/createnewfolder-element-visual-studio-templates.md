@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: acef2016-4140-45d6-ace8-b8160eabd676
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15633c2f701c813ca24c5484fd4108a86c57b05b
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 9169d90eb10c0595b7dc7fe940463f57354dfffa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870311"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>Elemento CreateNewFolder (modelli di Visual Studio)
 Determina se controllare se la directory di destinazione in cui verrà creato il progetto esiste o meno. Se la directory è inesistente, è possibile crearne una nuova per il progetto. Di norma, il flag del Registro di sistema `NewProjectRequiresNewFolder(VsTemplate)` (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`), usato da tutti i tipi di progetto comuni per determinare se creare un nuovo progetto in una nuova directory, esegue l'override di questa impostazione.
@@ -36,17 +36,17 @@ Determina se controllare se la directory di destinazione in cui verrà creato il
 </CreateNewFolder>
 ```
 
-## <a name="type"></a>Type
+## <a name="type"></a>Tipo
  `Boolean`
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ Nessuna.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -92,6 +92,6 @@ Determina se controllare se la directory di destinazione in cui verrà creato il
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

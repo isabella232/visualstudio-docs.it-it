@@ -10,15 +10,15 @@ helpviewer_keywords:
 - application icons [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34405fd52b49e89c2fa0fc95ec1268448bad3061
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 77be1eefb4ea4da139bb536e9d838afecddd7202
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95596911"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869297"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Procedura: Specificare l'icona di un'applicazione (Visual Basic, C#)
 
@@ -33,7 +33,7 @@ La proprietà `Icon` per un progetto specifica il file icona (*.ico*) che verrà
 
 1. In **Esplora soluzioni** scegliere un nodo progetto, non il nodo **Soluzione**.
 
-1. Sulla barra dei menu scegliere proprietà **progetto**  >  **Properties**.
+1. Sulla barra dei menu scegliere proprietà **progetto**  >  .
 
 1. Quando si apre **Creazione progetti**, scegliere la scheda **Applicazione**.
 
@@ -41,7 +41,7 @@ La proprietà `Icon` per un progetto specifica il file icona (*.ico*) che verrà
 
     **C#** &mdash; Accanto all'elenco **icona** scegliere il **\<Browse...>** pulsante, quindi selezionare il percorso del file icona desiderato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Pagina applicazione, Progettazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
 - [Pagina applicazione, Progettazione progetti (C#)](../ide/reference/application-page-project-designer-csharp.md)

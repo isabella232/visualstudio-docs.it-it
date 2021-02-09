@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 458ca77ebcd8017b9834a8925edec255ca04cc13
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 161be2b157c079312cdbbee0b6913c92c3c61578
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487829"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869518"
 ---
 # <a name="when-to-create-project-types"></a>Quando creare tipi di progetto
 La creazione di un nuovo tipo di progetto costituisce una base per la personalizzazione degli [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utenti. Tuttavia, la creazione di un nuovo tipo di progetto non è necessaria per tutte le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] personalizzazioni. Le linee guida seguenti consentono di determinare se è necessario un nuovo tipo di progetto per lo scenario in uso.
@@ -59,7 +59,7 @@ La creazione di un nuovo tipo di progetto costituisce una base per la personaliz
 ## <a name="create-a-project-subtype"></a>Creare un sottotipo di progetto
  È possibile utilizzare sottotipi di progetto per estendere un tipo di progetto gestito senza dover creare un nuovo tipo di progetto. I sottotipi di progetto utilizzano l'aggregazione COM per estendere i progetti gestiti scritti in Microsoft [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] . Con l'aggregazione COM, è possibile riutilizzare gran parte dell'implementazione del sistema di progetti gestiti e comunque personalizzare per uno scenario specifico tramite l'aggregazione e l'utilizzo di interfacce di supporto. Per ulteriori informazioni sui sottotipi di progetto, vedere [sottotipi di progetto](../../extensibility/internals/project-subtypes.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Finestre di documento e editor](/previous-versions/bb165691(v=vs.100))
 - [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Gerarchie in Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

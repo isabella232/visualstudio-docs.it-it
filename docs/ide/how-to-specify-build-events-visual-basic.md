@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00655d1f30d18da4170782384c634ff189b104ee
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 426b387603fbe7bca29f2ad4f507f2e517cac9bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136927"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869258"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Procedura: Specificare gli eventi di compilazione (Visual Basic)
 
@@ -69,7 +69,7 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
 
 2. Nella finestra di dialogo **Nuovo progetto** nel nodo **Visual Basic** selezionare **Windows** e quindi scegliere il modello **Applicazione console**. Assegnare al progetto il nome `ChangeOSVersionVB`.
 
-3. In *Module1. vb*aggiungere la riga seguente alle altre `Imports` istruzioni all'inizio del file:
+3. In *Module1. vb* aggiungere la riga seguente alle altre `Imports` istruzioni all'inizio del file:
 
    ```vb
    Imports System.Xml
@@ -118,7 +118,7 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
    End Sub
    ```
 
-   Il comando accetta due argomenti. Il primo argomento è il percorso del manifesto dell'applicazione, ovvero la cartella in cui il processo di compilazione crea il manifesto, in genere * \<ProjectName> Publish*. Il secondo argomento è la nuova versione del sistema operativo.
+   Il comando accetta due argomenti. Il primo argomento è il percorso del manifesto dell'applicazione, ovvero la cartella in cui il processo di compilazione crea il manifesto, in genere *\<ProjectName> Publish*. Il secondo argomento è la nuova versione del sistema operativo.
 
 5. Nel menu **Compila** scegliere **Compila soluzione**.
 
@@ -165,7 +165,7 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
     <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
     ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Pagina Compila, Progettazione progetti (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Pagina pubblica, Progettazione progetti](../ide/reference/publish-page-project-designer.md)

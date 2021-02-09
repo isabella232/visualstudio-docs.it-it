@@ -8,15 +8,15 @@ helpviewer_keywords:
 - .NET analyzers
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: ea13fde64f6214cf3c219de45c79458b75e1caf8
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: b41615e1826987cb42076ab3195fe7bfad235e7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867893"
 ---
 # <a name="enable-or-install-first-party-net-analyzers"></a>Abilitare o installare gli analizzatori .NET di terze parti
 
@@ -33,7 +33,7 @@ Gli analizzatori della piattaforma del compilatore .NET (Roslyn) ispezionano il 
 > [!NOTE]
 > È consigliabile abilitare gli analizzatori di .NET SDK anziché installare il `Microsoft.CodeAnalysis.NetAnalyzers` [pacchetto NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers), quando possibile. L'abilitazione degli analizzatori di .NET SDK consente di ottenere automaticamente le correzioni di bug e i nuovi analizzatori dell'analizzatore appena si aggiorna l'SDK. Nel modello NuGet è necessario aggiornare il pacchetto NuGet ogni volta che si desiderano le correzioni di bug più recenti. Il pacchetto NuGet viene aggiornato con maggiore frequenza.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica degli analizzatori di codice in Visual Studio](roslyn-analyzers-overview.md)
 - [Usare gli analizzatori del codice in Visual Studio](use-roslyn-analyzers.md)
