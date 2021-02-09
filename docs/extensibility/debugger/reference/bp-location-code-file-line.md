@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 3ff32032-d412-44d3-91bf-870cc354a09e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: e338c3b24ade2cf7663b77abea64f58425d3a068
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a94425c86e59e360814df2053f003948af6e674
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738009"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916270"
 ---
 # <a name="bp_location_code_file_line"></a>BP_LOCATION_CODE_FILE_LINE
 Contiene i dati per la posizione di un punto di interruzione in una riga specifica in un file di origine del codice.
@@ -40,7 +40,7 @@ Contesto del punto di interruzione, in genere un metodo o un nome di funzione co
 `pDocPos`\
 Oggetto [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) che rappresenta la posizione del documento del punto di interruzione.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questa struttura è un membro della struttura [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) come parte di un'Unione.
 
 ## <a name="requirements"></a>Requisiti
@@ -50,7 +50,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

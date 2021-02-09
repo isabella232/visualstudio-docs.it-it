@@ -5,17 +5,17 @@ ms.date: 06/05/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fb1c657789e232307672d494710f330758780a67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2c4cd4c110b55837009ea9d081a95180727d331
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540725"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916522"
 ---
 # <a name="install-python-interpreters"></a>Installare interpreti Python
 
@@ -38,7 +38,7 @@ Visual Studio, in tutte le versioni, rileva automaticamente ogni interprete Pyth
 
 Se Visual Studio non rileva un ambiente installato, vedere [Identificare manualmente un ambiente esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
-Visual Studio visualizza tutti gli ambienti noti nella finestra[**Ambienti Python**](managing-python-environments-in-visual-studio.md#the-python-environments-window) e rileva automaticamente gli aggiornamenti per gli interpreti esistenti.
+Visual Studio visualizza tutti gli ambienti noti nella finestra [**Ambienti Python**](managing-python-environments-in-visual-studio.md#the-python-environments-window) e rileva automaticamente gli aggiornamenti per gli interpreti esistenti.
 
 | Interprete | Descrizione |
 | --- | --- |
@@ -65,7 +65,7 @@ Se si sposta un interprete esistente in una nuova posizione nel file system, Vis
 
 Seguendo questa procedura si assicura il corretto aggiornamento delle voci del Registro di sistema che identificano il percorso dell'interprete, usato da Visual Studio. L'uso di un programma di installazione consente anche di gestire eventuali altri effetti collaterali.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Gestire gli ambienti Python](managing-python-environments-in-visual-studio.md)
 - [Selezionare un interprete per un progetto](selecting-a-python-environment-for-a-project.md)

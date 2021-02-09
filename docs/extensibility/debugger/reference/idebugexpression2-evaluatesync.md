@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 306ed6af2a0a0b8fdb4525a112e680e289e6e6df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5adb5d6fc38a06054d6273f5b0493bae5bed77df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729680"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916208"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 Questo metodo valuta l'espressione in modo sincrono.
@@ -66,7 +66,7 @@ Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un cod
 |E_EVALUATE_BUSY_WITH_EVALUATION|È attualmente in corso la valutazione di un'altra espressione e la valutazione dell'espressione simultanea non è supportata.|
 |E_EVALUATE_TIMEOUT|Timeout della valutazione.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Per la valutazione sincrona, non è necessario inviare un evento a Visual Studio al completamento della valutazione.
 
 ## <a name="example"></a>Esempio
@@ -117,7 +117,7 @@ HRESULT CExpression::EvalExpression(BOOL bSynchronous,
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

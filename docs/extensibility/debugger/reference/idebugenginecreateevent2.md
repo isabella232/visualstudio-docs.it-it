@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37c0a841-1c8d-4802-a990-36b54bca3ef7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41a964f1e08fc2e88ac9a1d211e4b3e36b32c5b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a6aebd8a27f4eb9962abbcd593c947c04a17854
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730604"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916293"
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
 Il motore di debug (DE) Invia questa interfaccia al gestore di debug della sessione (SDM) quando viene creata un'istanza del DE.
@@ -48,7 +48,7 @@ IDebugEngineCreateEvent2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

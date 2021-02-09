@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 82b85a47-b223-4221-a17c-38a52c3fb6e2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b6b57faf01878dc5aff708f0aca47707bf6e48c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 74e6641eff7fcaecfab300afe4747bb2ab7b75b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350335"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917300"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procedura dettagliata: scaricare assembly satellite su richiesta con l'API della distribuzione ClickOnce tramite la finestra di progettazione
 Le applicazioni Windows Form possono essere configurate per più impostazioni cultura con l'uso di assembly satellite. Un *assembly satellite* è un assembly in cui sono contenute risorse dell'applicazione per impostazioni cultura diverse da quelle predefinite dell'applicazione.
@@ -45,11 +45,11 @@ Le applicazioni Windows Form possono essere configurate per più impostazioni cu
 
 2. Fare clic con il pulsante destro del mouse sul nome del progetto in Esplora soluzioni, quindi scegliere **Proprietà**.
 
-3. Fare clic sulla scheda **Pubblica** , quindi su **File applicazione**.
+3. Fare clic sulla scheda **Pubblica**, quindi su **File applicazione**.
 
 4. Selezionare la casella di controllo **Mostra tutti i file** per visualizzare gli assembly satellite. Per impostazione predefinita, tutti gli assembly satellite verranno inclusi nella distribuzione e saranno visibili in questa finestra di dialogo.
 
-     Un assembly satellite avrà un nome nel formato *\<isoCode>\ApplicationName.resources.dll* , dove \<isoCode> è un identificatore di lingua in formato RFC 1766.
+     Un assembly satellite avrà un nome nel formato *\<isoCode>\ApplicationName.resources.dll*, dove \<isoCode> è un identificatore di lingua in formato RFC 1766.
 
 5. Scegliere **Nuovo** nell'elenco **Gruppo di download** per ogni identificatore del linguaggio. Quando viene richiesto di specificare un nome per il gruppo di download, immettere l'identificatore del linguaggio. Per un assembly satellite giapponese, ad esempio, è necessario specificare il nome del gruppo di download `ja-JP` .
 
@@ -69,7 +69,7 @@ Le applicazioni Windows Form possono essere configurate per più impostazioni cu
 
 2. Nella parte inferiore della pagina della scheda, scegliere **Visualizza eventi di applicazioni**.
 
-3. Nella parte iniziale del file *ApplicationEvents.VB* , aggiungere i seguenti riferimenti importati.
+3. Nella parte iniziale del file *ApplicationEvents.VB*, aggiungere i seguenti riferimenti importati.
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]
 
@@ -80,6 +80,6 @@ Le applicazioni Windows Form possono essere configurate per più impostazioni cu
 ## <a name="next-steps"></a>Passaggi successivi
  In un ambiente di produzione sarà probabilmente necessario rimuovere la riga degli esempi di codice usata per impostare la proprietà <xref:System.Threading.Thread.CurrentUICulture%2A> su un valore specifico, perché il valore predefinito per i computer client è quello corretto. Quando l'applicazione è in esecuzione su un computer client giapponese, ad esempio, la proprietà predefinita <xref:System.Threading.Thread.CurrentUICulture%2A> sarà `ja-JP` . L'impostazione di tale proprietà a livello di codice è un buon metodo per procedere alla verifica degli assembly satellite prima di distribuire l'applicazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: scaricare assembly satellite su richiesta con l'API di distribuzione ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
 - [Localizzazione delle applicazioni ClickOnce](../deployment/localizing-clickonce-applications.md)

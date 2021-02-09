@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: cd45b379-394b-4b71-828c-92cd89e46ae0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a245ebffc0aa0efaec8df1ec0c5b93b2d99228d
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: a26ce757ade9428326e54d3c21050b7df8d9a620
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916577"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Visualizzazione Funzioni: dati di strumentazione di memoria .NET
 La visualizzazione Funzioni dei dati di profilatura sull'allocazione di memoria .NET raccolti tramite il metodo di strumentazione elenca le funzioni che hanno allocato memoria durante l'esecuzione della profilatura. La riga di una funzione indica le dimensioni e il numero di allocazioni, nonché i dati di intervallo per la funzione.

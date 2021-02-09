@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b8445ed0-c512-4f92-b6b4-3d05c044f939
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7df74624ea602b5c996d5523a45826137119f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bcd4386b8eff7589993458f1f7f6baaf7f33d4a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917788"
 ---
 # <a name="marker_series-class"></a>Classe marker_series
 Rappresenta un canale seriale di eventi generati da un singolo provider.
@@ -32,14 +32,14 @@ class marker_series;
 
 ### <a name="public-constructors"></a>Costruttori pubblici
 
-|Name|Descrizione|
+|Nome|Descrizione|
 |----------|-----------------|
 |[Costruttore marker_series:: marker_series](../profiling/marker-series-marker-series-constructor.md)|Inizializza una nuova istanza della classe `marker_series`.|
 |[Distruttore marker_series:: ~ marker_series](../profiling/marker-series-tilde-marker-series-destructor.md)|Elimina l'oggetto marker_series e rilascia tutte le risorse allocate.|
 
 ### <a name="public-methods"></a>Metodi pubblici
 
-|Name|Descrizione|
+|Nome|Descrizione|
 |----------|-----------------|
 |[Metodo marker_series:: is_enabled](../profiling/marker-series-is-enabled-method.md)|Determina se il provider è stato abilitato da una sessione.|
 |[Metodo marker_series:: write_alert](../profiling/marker-series-write-alert-method.md)|Scrive un avviso nel file di traccia del visualizzatore di concorrenza.|
@@ -54,5 +54,5 @@ class marker_series;
 
  **Spazio dei nomi:** Concurrency::diagnostic
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [spazio dei nomi Diagnostic](../profiling/diagnostic-namespace.md)

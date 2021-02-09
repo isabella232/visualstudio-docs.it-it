@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain class
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fd36973a9c355dcaec32b6da4149e6efd88282da
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: cc86f04841a819423bc45c9220d6de80a5340b2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360793"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916005"
 ---
 # <a name="properties-of-domain-classes"></a>Proprietà delle classi di dominio
 Le classi di dominio hanno le proprietà riportate nella tabella seguente. Per informazioni sulle classi di dominio, vedere informazioni su [modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzazione ed estensione di un linguaggio Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -32,7 +32,7 @@ Le classi di dominio hanno le proprietà riportate nella tabella seguente. Per i
 |Nome|Nome di questa classe di dominio.|Nome corrente|
 |Spazio dei nomi|Spazio dei nomi di questa classe di dominio.|Spazio dei nomi corrente|
 |Note|Note informali associate a questa classe di dominio.|\<none>|
-|Description|Descrizione utilizzata per documentare l'interfaccia utente della finestra di progettazione generata.|\<none>|
+|Descrizione|Descrizione utilizzata per documentare l'interfaccia utente della finestra di progettazione generata.|\<none>|
 |Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per questa classe di dominio.|\<none>|
 |Parola chiave della Guida|Parola chiave facoltativa utilizzata per indicizzare la Guida F1 per questa classe di dominio.|\<none>|
 

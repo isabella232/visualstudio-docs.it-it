@@ -1,6 +1,6 @@
 ---
 title: Aggiungere un riquadro azioni ai documenti di Word o alle cartelle di lavoro di Excel
-description: Per informazioni su come aggiungere un riquadro azioni a un documento Microsoft Office Word o a una cartella di lavoro di Microsoft Excel, è innanzitutto necessario creare un controllo utente Windows Forms.
+description: Per informazioni su come aggiungere un riquadro azioni a un documento Microsoft Office Word o a una cartella di lavoro di Microsoft Excel, è innanzitutto necessario creare un controllo utente Windows Form.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,18 +14,18 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 69d675209f2a3ac47e8681da8fca73c5cd86e95d
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f9488a15f851446c5779bdb1a4572e69a1cf3053
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848066"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917527"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Procedura: aggiungere un riquadro ai documenti Word o alle cartelle di lavoro di Excel
-  Per aggiungere un riquadro azioni a un documento Microsoft Office Word o a una cartella di lavoro di Microsoft Excel, creare prima un controllo utente Windows Forms. Aggiungere quindi il controllo utente alla <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> proprietà del `ThisDocument.ActionsPane` campo (Word) o del `ThisWorkbook.ActionsPane` campo (Excel) nel progetto.
+  Per aggiungere un riquadro azioni a un documento Microsoft Office Word o a una cartella di lavoro di Microsoft Excel, creare prima un controllo utente Windows Form. Aggiungere quindi il controllo utente alla <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> proprietà del `ThisDocument.ActionsPane` campo (Word) o del `ThisWorkbook.ActionsPane` campo (Excel) nel progetto.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -46,7 +46,7 @@ ms.locfileid: "96848066"
     > [!NOTE]
     > In alternativa, è possibile aggiungere un elemento di **controllo utente** al progetto. Le classi generate dal **controllo del riquadro azioni** e dagli elementi del **controllo utente** sono funzionalmente equivalenti.
 
-4. Dalla scheda **Windows Forms** della **casella degli strumenti** trascinare un controllo **Button** sul controllo.
+4. Dalla scheda **Windows Form** della **casella degli strumenti** trascinare un controllo **Button** sul controllo.
 
     > [!NOTE]
     > Se il controllo non è visibile nella finestra di progettazione, fare doppio clic su **HelloControl** in **Esplora soluzioni**.

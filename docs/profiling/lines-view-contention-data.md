@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 50a314d5ba0a5dd907da3a915835f1410894ee7a
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 863cd741833082ddfac400d86edeba574b4dcb09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721346"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917891"
 ---
 # <a name="lines-view---contention-data"></a>Visualizzazione Righe: dati sui conflitti
 Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle prestazioni per le istruzioni eseguite durante la raccolta dei campioni nell'esecuzione della profilatura. In un file di origine un'istruzione può occupare più di una riga in un file di origine e una singola riga può includere più di un'istruzione.
@@ -64,7 +64,7 @@ Nella visualizzazione Righe dei dati sui conflitti sono elencati i dati sulle pr
 |**Inizio riga di origine**|Numero di riga del file di origine dove inizia questa istruzione.|
 |**Fine riga di origine**|Numero di riga del file di origine dove termina questa istruzione.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: personalizzare le colonne della visualizzazione report](../profiling/how-to-customize-report-view-columns.md)
 - [Visualizzazione Righe](../profiling/lines-view.md)
 - [Visualizzazione righe-campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb74d7fd5ad388b9b3dc217bae8782b24517c13b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a87bcd8b51bc393921d21d838943d5e1fe8f02a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349261"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917344"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procedura dettagliata: scaricare assembly su richiesta con l'API di distribuzione ClickOnce
 Per impostazione predefinita, tutti gli assembly inclusi in un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione vengono scaricati quando l'applicazione viene eseguita per la prima volta. Tuttavia, è possibile che si disponga di parti dell'applicazione utilizzate da un piccolo set di utenti. In questo caso, è consigliabile scaricare un assembly solo quando si crea uno dei relativi tipi. La procedura dettagliata riportata di seguito illustra come contrassegnare come "facoltativi" determinati assembly nell'applicazione e come scaricarli tramite le classi nello spazio dei nomi <xref:System.Deployment.Application> quando sono richiesti da Common Language Runtime (CLR).
@@ -59,7 +59,7 @@ Per impostazione predefinita, tutti gli assembly inclusi in un' [!INCLUDE[ndptec
     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
     [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
 
-6. Salvare il testo come file denominato *ClickOnceLibrary.cs* o *ClickOnceLibrary. vb* , a seconda del linguaggio usato, alla directory *ClickOnceOnDemand* .
+6. Salvare il testo come file denominato *ClickOnceLibrary.cs* o *ClickOnceLibrary. vb*, a seconda del linguaggio usato, alla directory *ClickOnceOnDemand* .
 
 7. Compilare il file in un assembly.
 
@@ -102,7 +102,7 @@ Per impostazione predefinita, tutti gli assembly inclusi in un' [!INCLUDE[ndptec
 
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>Per contrassegnare gli assembly come facoltativi nell'applicazione ClickOnce usando MageUI.exe
 
-1. Utilizzando *MageUI.exe* , creare un manifesto dell'applicazione come descritto in [procedura dettagliata: distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Usare le impostazioni seguenti per il manifesto dell'applicazione:
+1. Utilizzando *MageUI.exe*, creare un manifesto dell'applicazione come descritto in [procedura dettagliata: distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Usare le impostazioni seguenti per il manifesto dell'applicazione:
 
     - Denominare il manifesto dell'applicazione `ClickOnceOnDemand` .
 
@@ -110,7 +110,7 @@ Per impostazione predefinita, tutti gli assembly inclusi in un' [!INCLUDE[ndptec
 
     - Nella riga *ClickOnceLibrary.dll* della pagina **file** digitare `ClickOnceLibrary.dll` nella colonna **gruppo** .
 
-2. Utilizzando *MageUI.exe* , creare un manifesto di distribuzione come descritto in [procedura dettagliata: distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Usare le impostazioni seguenti per il manifesto di distribuzione:
+2. Utilizzando *MageUI.exe*, creare un manifesto di distribuzione come descritto in [procedura dettagliata: distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Usare le impostazioni seguenti per il manifesto di distribuzione:
 
     - Denominare il manifesto della distribuzione `ClickOnceOnDemand` .
 

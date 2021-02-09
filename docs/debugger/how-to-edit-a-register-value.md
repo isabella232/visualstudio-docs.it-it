@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: e27b6bd8-e6d4-4f1d-8a86-9f4047bb1167
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f83f67f57e67080f97a6df434f8dfc008e36892
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 4187be3bd4d5d2099374acea58d86bd093538ef7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903545"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917386"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>Procedura: modificare un valore di registro (C#, C++, Visual Basic, F #)
 
@@ -44,5 +44,5 @@ La finestra Registri è disponibile solo se il debug a livello di indirizzo è s
     > [!CAUTION]
     > La modifica di valori a virgola mobile può causare lievi inesattezze dovute alla conversione dei componenti frazionari da decimali a binari. Anche una modifica apparentemente innocua può generare modifiche in alcuni dei bit meno significativi in un registro a virgola mobile.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: utilizzare la finestra Registri](../debugger/how-to-use-the-registers-window.md)

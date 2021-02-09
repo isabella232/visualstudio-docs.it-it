@@ -4,14 +4,14 @@ description: Vengono illustrate le limitazioni di Progettazione Windows Form per
 ms.date: 09/28/2020
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.topic: conceptual
-ms.openlocfilehash: 08eb15914ad381fd81a838f5e09a1350bedff4fd
-ms.sourcegitcommit: 31f216b5f7491d5558de5b7ea4ebb0eb1faa3b9d
+ms.openlocfilehash: f63d831127951815f28955e72ae29b1a4d7f5a3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91493309"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917092"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Disabilitare la compatibilità con DPI in Visual Studio
 
@@ -88,7 +88,7 @@ L'impostazione del ridimensionamento dello schermo su 100% potrebbe non essere a
 
 È possibile scegliere di non ricevere notifiche per i problemi di ridimensionamento DPI in Visual Studio. Ad esempio, potrebbe essere utile disabilitare le notifiche se non si lavora nella finestra di progettazione.
 
-Per disabilitare le notifiche, scegliere **strumenti**  >  **Opzioni** per aprire la finestra di dialogo **Opzioni** . Quindi, scegliere **Progettazione Windows Form**  >  **generale**e impostare le **notifiche di ridimensionamento DPI** su **false**.
+Per disabilitare le notifiche, scegliere **strumenti**  >  **Opzioni** per aprire la finestra di dialogo **Opzioni** . Quindi, scegliere **Progettazione Windows Form**  >  **generale** e impostare le **notifiche di ridimensionamento DPI** su **false**.
 
 ![Opzione per le notifiche di ridimensionamento DPI in Visual Studio](./media/notifications-option.png)
 
@@ -98,6 +98,6 @@ Se si vogliono riabilitare le notifiche per il ridimensionamento in un secondo m
 
 Se la transizione per la compatibilità con DPI non funziona come previsto in Visual Studio, controllare se è presente il valore `dpiAwareness` nella sottochiave **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\devenv.exe** nell'editor del Registro di sistema. Se presente, eliminare il valore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-- [Scalabilità automatica in Windows Forms](/dotnet/framework/winforms/automatic-scaling-in-windows-forms)
+- [Scalabilità automatica in Windows Form](/dotnet/framework/winforms/automatic-scaling-in-windows-forms)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b1d17f63-7146-4076-a588-034cfc6858b9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc6f0643066aaca4ba12d9818d449785f6edb752
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 430cd05c66311971ad3cdbf60e170478810899ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011866"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916191"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 Questa interfaccia consente a un motore di debug (DE) o a un fornitore di porta personalizzato di registrare i programmi per il debug.
@@ -45,7 +45,7 @@ Questa interfaccia implementa i metodi seguenti:
 |[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|Rimuove un programma in modo che non sia più disponibile.|
 |[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|Imposta un flag che indica che è presente un debugger.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questa interfaccia rende disponibili i programmi e i nodi del programma (ovvero li pubblica) per l'uso da parte di DEs e gestione debug della sessione (SDM). Per accedere ai programmi e ai nodi del programma pubblicati, usare l'interfaccia [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) . Questo è l'unico modo in cui Visual Studio è in grado di riconoscere che è in corso il debug di un programma.
 
 ## <a name="requirements"></a>Requisiti
@@ -89,6 +89,6 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

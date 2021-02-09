@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language, rules
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c4ff2273c8c71582c3ef634eeb398b12e29401d0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7062feddf00194e4633435655b5e11f5fefd38ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363952"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916945"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Le regole propagano le modifiche all'interno del modello
 È possibile creare una regola di archiviazione per propagare una modifica da un elemento a un altro nell'SDK di visualizzazione e modellazione (VMSDK). Quando si verifica una modifica a qualsiasi elemento nell'archivio, le regole vengono pianificate per l'esecuzione, in genere quando viene eseguito il commit della transazione più esterna. Esistono diversi tipi di regole per diversi tipi di eventi, ad esempio l'aggiunta o l'eliminazione di un elemento. È possibile alleghi regole a tipi specifici di elementi, forme o diagrammi. Molte funzionalità predefinite sono definite da regole: ad esempio, le regole assicurano che un diagramma venga aggiornato quando il modello viene modificato. È possibile personalizzare il linguaggio specifico di dominio aggiungendo regole personalizzate.
@@ -130,7 +130,7 @@ namespace ExampleNamespace
 
 - Derivare la classe Rule da una delle classi base seguenti:
 
-  | Classe di base | Trigger |
+  | Classe base | Trigger |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Viene aggiunto un elemento, un collegamento o una forma.<br /><br /> Usare questa funzionalità per rilevare nuove relazioni, oltre ai nuovi elementi. |
   | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Viene modificato un valore della proprietà di dominio. L'argomento Method fornisce i valori vecchi e nuovi.<br /><br /> Per le forme, questa regola viene attivata quando la proprietà incorporata viene `AbsoluteBounds` modificata, se la forma viene spostata.<br /><br /> In molti casi, è più pratico eseguire l'override di `OnValueChanged` o `OnValueChanging` nel gestore della proprietà. Questi metodi vengono chiamati immediatamente prima e dopo la modifica. Al contrario, la regola viene in genere eseguita alla fine della transazione. Per altre informazioni, vedere [gestori delle modifiche dei valori delle proprietà del dominio](../modeling/domain-property-value-change-handlers.md). **Nota:**  Questa regola non viene attivata quando viene creato o eliminato un collegamento. Scrivere invece un `AddRule` e un `DeleteRule` per la relazione di dominio. |

@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 46497249-c797-42c5-a02c-3e4bb3b4ee60
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 38ae3e9c40204082ea8791ddea4e92d77a0d311e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 28dd2c6132905e4c5610d2a7a0f598650ce06692
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721320"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917859"
 ---
 # <a name="lines-view---sampling-data"></a>Visualizzazione Righe: dati di campionamento
 Nella visualizzazione Righe dei dati di campionamento sono elencati i dati delle prestazioni per le istruzioni eseguite durante la raccolta dei campioni nell'esecuzione della profilatura.
@@ -61,5 +61,5 @@ Nella visualizzazione Righe dei dati di campionamento sono elencati i dati delle
 |**Campioni esclusivi**|Numero totale di campioni raccolti durante l'esecuzione della riga della funzione.|
 |**% esempi esclusivi**|Percentuale di tutti i campioni nell'esecuzione della profilatura che sono stati raccolti durante l'esecuzione della riga della funzione.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzazione righe-campionamento](../profiling/lines-view-dotnet-memory-sampling-data.md)

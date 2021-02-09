@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: e47c8723-df08-4645-aa2d-0c956e7ccca2
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 23064842d89ffb1e7fb5e521afe80caea5ffae56
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: bf8fbe09d1bbe2b340e52bd070fccfff802e8dc9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916017"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 
@@ -54,7 +54,7 @@ devenv SolutionName /Deploy [SolnConfigName [/Project ProjName [/ProjectConfig P
 
   facoltativo. Nome di un file a cui si vuole inviare l'output dello strumento. Se il file esiste già, lo strumento aggiunge l'output alla fine del file.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Il progetto specificato deve essere un progetto di distribuzione. Se non lo è, quando il progetto compilato viene passato per la distribuzione, genererà un errore.
 
@@ -70,7 +70,7 @@ Questo esempio distribuisce il progetto `CSharpWinApp` usando la configurazione 
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Opzioni della riga di comando devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)

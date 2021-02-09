@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: c21822fb-d4ee-42e4-b72d-41ee9786efe5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29bdd080e87e8fad44c7b8943d0d017749b8c30b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c0e8895f45524526fc8007ff909a9c541e9899b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350309"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917264"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Procedura dettagliata: distribuire manualmente un'applicazione ClickOnce che non richiede una nuova firma e che conserva le informazioni di personalizzazione
 Quando si crea un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione e la si assegna a un cliente per la pubblicazione e la distribuzione, il cliente ha tradizionalmente dovuto aggiornare il manifesto di distribuzione e firmarlo di nuovo. Sebbene questo sia ancora il metodo preferito nella maggior parte dei casi, il .NET Framework 3,5 consente di creare [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzioni che possono essere distribuite dai clienti senza dover rigenerare un nuovo manifesto di distribuzione. Per ulteriori informazioni, vedere la pagina relativa alla [distribuzione di applicazioni ClickOnce per i server di test e di produzione senza firma](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -113,9 +113,9 @@ Quando si crea un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
    MageUI.exe
    ```
 
-6. Creare un nuovo manifesto dell'applicazione selezionando **file** , **nuovo** , **manifesto dell'applicazione** dal menu.
+6. Creare un nuovo manifesto dell'applicazione selezionando **file**, **nuovo**, **manifesto dell'applicazione** dal menu.
 
-7. Nella scheda **nome** predefinito immettere il nome e il numero di versione della distribuzione. Specificare anche un valore per **Publisher** , che verrà usato come nome della cartella per il collegamento di collegamento dell'applicazione nel menu Start quando viene distribuito.
+7. Nella scheda **nome** predefinito immettere il nome e il numero di versione della distribuzione. Specificare anche un valore per **Publisher**, che verrà usato come nome della cartella per il collegamento di collegamento dell'applicazione nel menu Start quando viene distribuito.
 
 8. Selezionare la scheda **Opzioni applicazione** e fare clic su **Usa manifesto applicazione per informazioni sull'attendibilità**. In questo modo verrà abilitata la personalizzazione di terze parti per questa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione.
 
@@ -125,17 +125,17 @@ Quando si crea un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
 
 11. Fare clic sul pulsante **popola** per aggiungere tutti i file dell'applicazione all'elenco file. Se l'applicazione contiene più file eseguibili, contrassegnare il file eseguibile principale per questa distribuzione come applicazione di avvio selezionando il **punto di ingresso** dall'elenco a discesa **tipo file** . Se l'applicazione contiene un solo file eseguibile, *MageUI.exe* lo contrassegnerà.
 
-12. Selezionare la scheda **autorizzazioni necessarie** e selezionare il livello di attendibilità che l'applicazione deve dichiarare. Il valore predefinito è **attendibilità totale** , che sarà appropriato per la maggior parte delle applicazioni.
+12. Selezionare la scheda **autorizzazioni necessarie** e selezionare il livello di attendibilità che l'applicazione deve dichiarare. Il valore predefinito è **attendibilità totale**, che sarà appropriato per la maggior parte delle applicazioni.
 
-13. Selezionare **file** , **Salva** dal menu e salvare il manifesto dell'applicazione. Verrà richiesto di firmare il manifesto dell'applicazione al momento del salvataggio.
+13. Selezionare **file**, **Salva** dal menu e salvare il manifesto dell'applicazione. Verrà richiesto di firmare il manifesto dell'applicazione al momento del salvataggio.
 
-14. Se si dispone di un certificato archiviato come file nella file system, utilizzare l'opzione per il **file del certificato di firma** e selezionare il certificato dall'file System utilizzando il pulsante con i puntini di sospensione ( **...** ).
+14. Se si dispone di un certificato archiviato come file nella file system, utilizzare l'opzione per il **file del certificato di firma** e selezionare il certificato dall'file System utilizzando il pulsante con i puntini di sospensione (**...**).
 
      -oppure-
 
      Se il certificato viene mantenuto in un archivio certificati a cui è possibile accedere dal computer, selezionare l' **opzione firma con certificato archiviato** e selezionare il certificato dall'elenco fornito.
 
-15. Selezionare **file** , **nuovo** , **manifesto distribuzione** dal menu per creare il manifesto di distribuzione e quindi nella scheda **nome** specificare un nome e un numero di versione ( **1.0.0.0** in questo esempio).
+15. Selezionare **file**, **nuovo**, **manifesto distribuzione** dal menu per creare il manifesto di distribuzione e quindi nella scheda **nome** specificare un nome e un numero di versione (**1.0.0.0** in questo esempio).
 
 16. Passare alla scheda **aggiornamento** e specificare la frequenza con cui si vuole aggiornare l'applicazione. Se l'applicazione usa l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API di distribuzione per verificare la disponibilità di aggiornamenti, deselezionare la casella di controllo con l'etichetta **questa applicazione deve verificare la disponibilità di aggiornamenti**.
 
@@ -156,7 +156,7 @@ Quando si crea un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
 
 22. Il cliente distribuisce l'applicazione agli utenti.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Mage.exe (Strumento per la generazione e la modifica di manifesti)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [MageUI.exe (Strumento per la generazione e la modifica di manifesti, client grafico)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
 - [MakeCert](/windows/desktop/SecCrypto/makecert)

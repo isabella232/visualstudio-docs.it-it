@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging and deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bd06a5be3c9e7ceea38bdb4560f8b6262175bd45
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: ae74aa3cf759ba006acd36c168eecceac4b2ee4a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305077"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916543"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Creare pacchetti e distribuire soluzioni SharePoint
   In genere, una soluzione SharePoint viene distribuita in un server SharePoint tramite un file di pacchetto di soluzione (con estensione wsp). È possibile utilizzare Visual Studio per organizzare gli elementi del progetto SharePoint in funzionalità e creare un pacchetto per distribuire le funzionalità di SharePoint.
@@ -103,6 +103,6 @@ ms.locfileid: "96305077"
 
   Se un file aggiunto non è applicabile a un progetto specifico nella soluzione, è possibile aggiungere un progetto SharePoint vuoto alla soluzione e quindi aggiungervi i file aggiuntivi. Un'altra alternativa per la distribuzione di file in SharePoint, in particolare per il database del contenuto, consiste nell'aggiungere un modulo al progetto e quindi aggiungere i file al modulo. Per altre informazioni, vedere [usare i moduli per includere file nella soluzione](../sharepoint/using-modules-to-include-files-in-the-solution.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

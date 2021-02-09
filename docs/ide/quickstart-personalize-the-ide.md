@@ -6,15 +6,15 @@ ms.topic: how-to
 ms.custom: contperf-fy21q1
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d261d6c13572be6df80ca36f37e19792d53e2a32
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: eb7c9bf04e5f38e5138eae6cf6254bb77bbd6230
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97684037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916064"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>Procedura: personalizzare l'IDE di Visual Studio e l'editor
 
@@ -128,7 +128,7 @@ Si vedrà ora come personalizzare alcuni colori del testo per l'editor. Prima di
 
 Sono stati presentati solo un paio di modi per personalizzare i colori in Visual Studio. Ci auguriamo che verranno esaminate le altre opzioni di personalizzazione nella finestra di dialogo [**Opzioni**](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) , per rendere effettivamente Visual Studio personalizzato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: modificare i tipi di carattere, i colori e i temi in Visual Studio](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 - [Procedura: Modificare maiuscole/minuscole nell'editor](../ide/how-to-change-text-case-in-the-editor.md)

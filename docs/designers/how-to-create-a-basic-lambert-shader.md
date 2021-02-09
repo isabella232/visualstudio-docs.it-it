@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1677de15006dcf3bbe2f7a6b925be247518f752
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 2aa4f3676708a99abba0a4706ecb524f1c14b212
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917035"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Procedura: Creare uno shader con Lambert di base
 
@@ -25,17 +25,17 @@ Questo articolo illustra come usare la finestra di progettazione shader e il lin
 
 Il modello di illuminazione Lambert incorpora l'illuminazione ambientale e direzionale per ombreggiare oggetti in una scena 3D. I componenti ambientali forniscono un livello di illuminazione di base della scena 3D, mentre i componenti direzionali forniscono illuminazione aggiuntiva da sorgenti di luce (lontane) direzionali. L'illuminazione ambientale interessa allo stesso modo tutte le superfici della scena, indipendentemente dall'orientamento. Per una determinata superficie, è un prodotto del colore ambientale della superficie, nonché del colore e dell'intensità dell'illuminazione ambientale nella scena. L'illuminazione direzionale, invece, influenza ogni area della scena in modo diverso, in base all'orientamento della superficie rispetto alla direzione della sorgente di luce. È un prodotto del colore diffuso e dell'orientamento della superficie, nonché del colore, dell'intensità e della direzione delle sorgenti di luce. Le superfici rivolte direttamente verso una sorgente di luce ricevono il massimo contributo, mentre le superfici rivolte in senso contrario alla luce non ricevono alcun contributo. Nel modello di illuminazione Lambert, il componente ambientale e uno o più componenti direzionali vengono combinati per determinare il contributo totale di colore con riflessione diffusa per ogni punto sull'oggetto.
 
-Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti** .
+Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti**.
 
 1. Creare uno shader DGSL da usare. Per informazioni su come aggiungere uno shader DGSL al progetto, vedere la sezione Introduzione in [Finestra di progettazione shader](../designers/shader-designer.md).
 
-2. Scollegare il nodo **Colore punto** dal nodo **Colore finale** . Scegliere il terminale **RGB** del nodo **Colore punto** e quindi scegliere **Interrompi collegamenti** . Lasciare connesso il terminale **Alfa** .
+2. Scollegare il nodo **Colore punto** dal nodo **Colore finale**. Scegliere il terminale **RGB** del nodo **Colore punto** e quindi scegliere **Interrompi collegamenti**. Lasciare connesso il terminale **Alfa**.
 
-3. Aggiungere un nodo **Lambert** al grafico. Nella **casella degli strumenti** , in **Utilità** , selezionare **Lambert** e spostarlo nell'area di progettazione. Il nodo Lambert calcola il contributo totale di colore con riflessione diffusa del pixel in base ai parametri di illuminazione ambientale e diffusa.
+3. Aggiungere un nodo **Lambert** al grafico. Nella **casella degli strumenti**, in **Utilità**, selezionare **Lambert** e spostarlo nell'area di progettazione. Il nodo Lambert calcola il contributo totale di colore con riflessione diffusa del pixel in base ai parametri di illuminazione ambientale e diffusa.
 
-4. Collegare il nodo **Colore punto** al nodo **Lambert** . In modalità **Seleziona** spostare il terminale **RGB** del nodo **Colore punto** nel terminale **Colore diffuso** del nodo **Lambert** . Questa connessione fornisce il nodo Lambert con interpolazione del colore con riflessione diffusa del pixel.
+4. Collegare il nodo **Colore punto** al nodo **Lambert**. In modalità **Seleziona** spostare il terminale **RGB** del nodo **Colore punto** nel terminale **Colore diffuso** del nodo **Lambert**. Questa connessione fornisce il nodo Lambert con interpolazione del colore con riflessione diffusa del pixel.
 
-5. Collegare il valore del colore calcolato al colore finale. Spostare il terminale **Output** del nodo **Lambert** nel terminale **RGB** del nodo **Colore finale** .
+5. Collegare il valore del colore calcolato al colore finale. Spostare il terminale **Output** del nodo **Lambert** nel terminale **RGB** del nodo **Colore finale**.
 
    La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a un modello di teiera.
 
@@ -52,7 +52,7 @@ La figura seguente illustra lo shader descritto in questo documento applicato a 
 
 Per altre informazioni su come applicare uno shader a un modello 3D, vedere [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)

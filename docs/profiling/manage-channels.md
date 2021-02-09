@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 507b06e9-bb56-4a72-8fd5-f91f958da6fc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b0dd8643f63a7a3e67400f09f00b999fff33f09e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: ebeb885d427cf6a9a6ca80d4d0ad572b23d7f685
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721268"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917795"
 ---
 # <a name="manage-channels"></a>Gestione dei canali
 Nella **visualizzazione Thread** del visualizzatore di concorrenza è possibile organizzare i canali per il processo in modo da poter esaminare modelli specifici. È possibile ordinare i canali, spostarli verso l'alto o verso il basso e nasconderli o visualizzarli.
@@ -59,7 +59,7 @@ Nella **visualizzazione Thread** del visualizzatore di concorrenza è possibile 
 ## <a name="group-markers-by-thread"></a>Raggruppare i marcatori in base ai thread
  Se una traccia contiene eventi marcatori, è possibile usare questo comando per raggruppare i canali dei marcatori sotto il thread che ha generato gli eventi marcatori.  I canali dei dischi vengono spostati all'inizio dell'elenco dei canali e i canali GPU vengono spostati alla fine.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Controllo zoom (visualizzazione thread)](../profiling/zoom-control-threads-view.md)
 - [Modalità misurazione attiva/disattiva](../profiling/measure-mode-on-off.md)
 - [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

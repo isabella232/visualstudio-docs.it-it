@@ -12,15 +12,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7e48b8cfbcf4ee1c7340aef4cd59e09698f89412
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 4fd82cf9d8d5cb15215bf7ecbfa51c735ef52a0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845466"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917398"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Procedura: aggiungere controlli Chart a fogli di foglio
   È possibile aggiungere <xref:Microsoft.Office.Tools.Excel.Chart> controlli a un foglio di lavoro Microsoft Office Excel in fase di progettazione e in fase di esecuzione nelle personalizzazioni a livello di documento. È anche possibile aggiungere <xref:Microsoft.Office.Tools.Excel.Chart> controlli in fase di esecuzione nei componenti aggiuntivi VSTO.
@@ -51,7 +51,7 @@ ms.locfileid: "96845466"
 
 3. Nella scheda **progettazione** , nel gruppo **dati** , fare clic su **Seleziona dati**.
 
-4. Nella finestra di dialogo **Seleziona origine dati** fare clic nella casella **Chart** **intervallo di dati** del grafico e deselezionare le selezioni predefinite.
+4. Nella finestra di dialogo **Seleziona origine dati** fare clic nella casella  **intervallo di dati** del grafico e deselezionare le selezioni predefinite.
 
 5. Nel foglio **dati per il grafico** selezionare l'intervallo di celle contenente i dati per il grafico (celle da **a5** a **D8**).
 

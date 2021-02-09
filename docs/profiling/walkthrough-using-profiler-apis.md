@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 94276e294bfcf342cfc81b14005205a8f1e97949
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: e1405169ae7f4734463428405cf90cce631fba3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723088"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915954"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Procedura dettagliata: Uso delle API del profiler
 
@@ -167,7 +167,7 @@ DataCollection.CurrentId);
 
      Viene creato un file con estensione *csv* nella directory corrente con i dati sulle prestazioni risultanti.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Profiler](/previous-versions/ms242704(v=vs.140))
 - [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

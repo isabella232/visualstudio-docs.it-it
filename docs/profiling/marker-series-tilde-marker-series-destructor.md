@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5632523b-fd58-40aa-8523-f29ee9083a65
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a864a0940c6ff8ab66a492c76c84ecf3a35910f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbe38fa222157818a65bb2b6d58cb417d7ad346d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329647"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917635"
 ---
 # <a name="marker_seriesmarker_series-destructor"></a>Distruttore marker_series::~marker_series
 Elimina l'oggetto marker_series e rilascia tutte le risorse allocate.
@@ -33,5 +33,5 @@ Elimina l'oggetto marker_series e rilascia tutte le risorse allocate.
 
  **Spazio dei nomi:** Concurrency::diagnostic
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [classe marker_series](../profiling/marker-series-class.md)
