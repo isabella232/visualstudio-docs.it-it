@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: ea549d2f-c857-458c-93c7-bc5a2d11d15d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 835e2cec19e36418091e094abd2ec76bd6403398
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8aff9836570b3af882e5863cc85834f5423f890e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72734836"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861426"
 ---
 # <a name="vsg_default_run_filename"></a>VSG_DEFAULT_RUN_FILENAME
 Definisce il nome file predefinito del file di log di grafica.
@@ -34,7 +34,7 @@ Definisce il nome file predefinito del file di log di grafica.
 #define VSG_DEFAULT_FILENAME L"default.vsglog"
 ```
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Se viene definito il simbolo del preprocessore `DONT_SAVE_VSGLOG_TO_TEMP`, il nome del file è relativo alla directory corrente dell'applicazione acquisita o è un percorso assoluto; in caso contrario, è relativo alla directory dei file temporanei dell'utente e non può essere un percorso assoluto.
 
  Per modificare il nome del file definito, è necessario ridefinirlo prima `vsgcapture.h` di includere nel programma.
@@ -49,5 +49,5 @@ Definisce il nome file predefinito del file di log di grafica.
 #include <vsgcapture.h>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)

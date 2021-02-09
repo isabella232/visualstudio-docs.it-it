@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b0456a6d-2b96-49e2-a871-516571b4f6a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 08872160860d0d442f9807705dea70190dff9b28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98d6d7c4d9f1df0c7c4346792d841de574859619
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727213"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861153"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 Crea un enumeratore per le variabili locali selezionate del metodo.
@@ -51,7 +51,7 @@ out Restituisce un oggetto [IEnumDebugFields](../../../extensibility/debugger/re
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce S_OK o restituisce S_FALSE se non sono presenti variabili locali. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Vengono enumerate solo le variabili definite all'interno del blocco che contiene l'indirizzo di debug specificato. Se sono necessarie tutte le variabili locali, incluse quelle generate dal compilatore, chiamare il metodo [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) .
 
 Un metodo può contenere più contesti di ambito o blocchi. Il metodo escogitato seguente, ad esempio, contiene tre ambiti, i due blocchi interni e il corpo del metodo stesso.
@@ -76,7 +76,7 @@ public void func(int index)
 
 L'oggetto [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) rappresenta il `func` metodo stesso. Se si chiama il `EnumLocals` metodo con un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) impostato sull' `Inner Scope 1` Indirizzo, viene restituita un'enumerazione che contiene la `temp1` variabile, ad esempio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

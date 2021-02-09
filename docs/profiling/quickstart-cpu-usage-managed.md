@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Diagnostics Tools, CPU Usage
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d3cdb022dce8a9f4b7037e3770cb0ae46c6863c
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 582a412dbcac043e4a77c1508d385cc8caa4c64c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074891"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861646"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>Guida introduttiva: analizzare i dati di utilizzo della CPU in Visual Studio (C#, Visual Basic)
 
@@ -34,12 +34,12 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
    ::: moniker range="vs-2017"
    Dalla barra dei menu in alto scegliere **file** > **nuovo** > **progetto**.
 
-   Nella finestra di dialogo **nuovo progetto** nel riquadro sinistro espandere **C#** o **Visual Basic**e quindi scegliere **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Quindi denominare il progetto *myprofilingapp*.
+   Nella finestra di dialogo **nuovo progetto** nel riquadro sinistro espandere **C#** o **Visual Basic** e quindi scegliere **.NET Core**. Nel riquadro centrale scegliere **Console App (.NET Core)** (App console (.NET Core)). Quindi denominare il progetto *myprofilingapp*.
 
    Se non viene visualizzato il modello di progetto **Applicazione console (.NET Core)**, fare clic sul collegamento **Apri il programma di installazione di Visual Studio** nel riquadro a sinistra della finestra di dialogo **Nuovo progetto**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo multipiattaforma .NET Core**, quindi scegliere **Modifica**.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Se la finestra di avvio non è aperta, **File** scegliere > **finestra di avvio**file.
+   Se la finestra di avvio non è aperta,  scegliere > **finestra di avvio** file.
 
    Nella finestra Start scegliere **Crea un nuovo progetto**.
 
@@ -175,7 +175,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
     ```
 
     > [!NOTE]
-    > In Visual Basic verificare che l'oggetto di avvio sia impostato su `Sub Main` (**Proprietà**  >  **dell'**  >  **oggetto di avvio**dell'applicazione).
+    > In Visual Basic verificare che l'oggetto di avvio sia impostato su `Sub Main` (**Proprietà**  >  **dell'**  >  **oggetto di avvio** dell'applicazione).
 
 ## <a name="step-1-collect-profiling-data"></a>Passaggio 1: Raccogliere i dati di profilatura
 
@@ -251,7 +251,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 - [Analizzare l'uso della CPU](../profiling/cpu-usage.md) per informazioni dettagliate sullo strumento Utilizzo CPU.
 - Analizzare l'uso della CPU senza un debugger collegato o usando un'app in esecuzione. Per altre informazioni, vedere [Raccogliere dati di profilatura senza il debug](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) in [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

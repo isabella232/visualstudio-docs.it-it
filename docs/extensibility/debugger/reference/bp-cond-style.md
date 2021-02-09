@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca704ca186308ea9e44c4fa7edc6617cbac806eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f98f02e7e756a744d8042a9955802165065d54d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738109"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862162"
 ---
 # <a name="bp_cond_style"></a>BP_COND_STYLE
 Specifica lo stile della condizione del punto di interruzione per i punti di interruzione in sospeso e associati.
@@ -54,7 +54,7 @@ Genera il punto di interruzione solo quando l'espressione condizionale associata
 `BP_COND_WHEN_CHANGED`\
 Genera il punto di interruzione solo quando il valore dell'espressione condizionale associato al punto di interruzione è stato modificato rispetto alla valutazione precedente.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Utilizzato per il `styleCondition` membro della struttura [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) .
 
 ## <a name="requirements"></a>Requisiti
@@ -64,6 +64,6 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

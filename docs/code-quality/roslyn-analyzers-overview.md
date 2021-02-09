@@ -11,15 +11,15 @@ helpviewer_keywords:
 - code analyzers
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 237d1188b1a90c64464a15b2df81d507abacb718
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: d6a295e4abc62a7591c98b92cad4c173c5ff507b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349035"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859801"
 ---
 # <a name="overview-of-source-code-analysis"></a>Panoramica dell'analisi del codice sorgente
 
@@ -99,7 +99,7 @@ Non è possibile configurare la gravità delle regole degli analizzatori install
 > [!div class="nextstepaction"]
 > [Usare gli analizzatori del codice in Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Domande frequenti sugli analizzatori](analyzers-faq.md)
 - [Scrivere un analizzatore del codice personalizzato](../extensibility/getting-started-with-roslyn-analyzers.md)

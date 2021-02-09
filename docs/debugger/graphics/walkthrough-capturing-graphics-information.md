@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3acd9df9dbb5a430171ae7a283bbf4292e07e26a
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 4b964276db7dd3b8e7effb23a80aef4868ff8b8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861385"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Procedura dettagliata: Acquisizione di informazioni grafiche
 Questa procedura dettagliata dimostra come usare Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per acquisire manualmente informazioni grafiche da un'app Direct3D.
@@ -60,5 +60,5 @@ Questa procedura dettagliata dimostra come usare Diagnostica grafica di [!INCLUD
 
 - Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di Diagnostica grafica. Vedere [Panoramica](overview-of-visual-studio-graphics-diagnostics.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Acquisizione di informazioni grafiche](capturing-graphics-information.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 67dfbede-2678-47df-b664-5c49841d0b9b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 696ad3e659b503b27da73056dafb57c5852d5133
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c63d38e1b4d79227cfdc694dc6d8c154a01532f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461175"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853212"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Specifica le opzioni di ricerca per i nomi di simboli e file.
@@ -55,7 +55,7 @@ enum NameSearchOptions {
 
 `nsfUndecoratedName` Si applica solo ai simboli con nomi non decorati e decorati.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 I valori di questa enumerazione vengono passati ai metodi seguenti:
 
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
@@ -67,7 +67,7 @@ I valori di questa enumerazione vengono passati ai metodi seguenti:
 ## <a name="requirements"></a>Requisiti
 Intestazione: dia2. h
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 - [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)

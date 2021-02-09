@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Excel projects [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1fb048fd015126e5438a007be1950cddffbac9e1
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: de5d7529e0bd8bc99eb4f375a31dab9ea9520234
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860724"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Introduzione alla programmazione delle personalizzazioni a livello di documento per Excel
   Se si sta iniziando a creare personalizzazioni a livello di documento per Microsoft Office Excel usando Visual Studio, ecco cosa è necessario conoscere.
@@ -41,7 +41,7 @@ ms.locfileid: "96846038"
 ## <a name="program-excel-workbooks-by-using-host-items-and-host-controls"></a>Programmare le cartelle di lavoro di Excel tramite elementi host e controlli host
  *Gli elementi* e i *controlli host* sono classi che forniscono il modello di programmazione per le personalizzazioni a livello di documento create tramite Visual Studio.
 
- Gli elementi host forniscono un punto di ingresso per il codice e possono fungere anche da contenitori per controlli host e controlli Windows Forms. Nei progetti a livello di documento per Excel questi elementi host sono rappresentati dalle `ThisWorkbook` `Sheet1` classi,, `Sheet2` e `Sheet3` .
+ Gli elementi host forniscono un punto di ingresso per il codice e possono fungere anche da contenitori per controlli host e controlli Windows Form. Nei progetti a livello di documento per Excel questi elementi host sono rappresentati dalle `ThisWorkbook` `Sheet1` classi,, `Sheet2` e `Sheet3` .
 
  I controlli host sono basati su oggetti nativi di Excel, ad esempio oggetti elenco e intervalli. I controlli host forniscono funzionalità simili agli oggetti nativi di Excel, ma dispongono anche di nuovi eventi, supporto della finestra di progettazione e funzionalità data binding. Vengono visualizzati come oggetti di prima classe nel codice del progetto e in IntelliSense, che rende più semplice fare riferimento a oggetti specifici direttamente nel codice senza dover esplorare il modello a oggetti di Excel.
 

@@ -21,15 +21,15 @@ helpviewer_keywords:
 - dependency graphs, browsing
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ace2095e98bc7d7425f518249a754fcbed07a02
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e579f62c24795ad99939fe10f68c42acaaa89b60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861934"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Cercare e ridisporre le mappe codice
 
@@ -37,7 +37,7 @@ ms.locfileid: "97363614"
 
 Le mappe codice possono essere personalizzate senza influire sul codice sottostante di una soluzione. Questa operazione risulta utile quando si vuole concentrarsi sugli elementi di codice principali o comunicare informazioni sul codice. Ad esempio, per evidenziare aree interessanti, è possibile selezionare elementi di codice sulla mappa e filtrarli, modificarne lo stile e i collegamenti, nascondere o eliminare elementi di codice e organizzarli tramite proprietà, categorie o gruppi.
 
- **Requirements**
+ **Requisiti**
 
 - Per creare mappe codice, è necessario usare Visual Studio Enterprise.
 
@@ -310,7 +310,7 @@ Per eseguire il drill-down o semplificare la mappa, è possibile visualizzare pi
     |**To**|**Scegliere**|
     |-|-|
     |Disattivare l'elemento di codice|**Disabilitato**|
-    |Eliminare l'elemento di codice|**Eliminazione**|
+    |Eliminare l'elemento di codice|**Elimina**|
     |Spostare lo stile in alto|**Sposta su**|
     |Spostare l'elemento di codice in basso|**Sposta giù**|
 

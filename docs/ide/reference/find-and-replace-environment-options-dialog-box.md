@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f804d6d5-6309-46e4-8294-b83e880b5ec9
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f5fb6034c693c14cd04c83fe4c71f8763a0b0c
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: c0fab4fd10d985ad1cee01fbea4269934c01d243
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860919"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Trova e sostituisci, Ambiente, finestra di dialogo Opzioni
 
@@ -55,6 +55,6 @@ Dopo aver deselezionato l'opzione **Visualizza sempre questo messaggio** per alc
 
 Selezionare questa opzione per incollare il testo su entrambi i lati del punto di inserimento dell'editor corrente nel campo **Find what** (Trova) quando si seleziona una delle visualizzazioni della finestra **Trova e sostituisci** dal menu **Modifica**. Deselezionare questa opzione per utilizzare l'ultimo criterio della ricerca precedente, come la stringa **Trova**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Ricerca e sostituzione di testo](../../ide/finding-and-replacing-text.md)

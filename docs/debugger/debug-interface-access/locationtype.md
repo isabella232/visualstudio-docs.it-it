@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d3e1eedc-bfd3-4c91-881b-d69565138d0f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b2fafbb25d52df6082736431727222c788d73476
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5aafc62f5920db70bd881bd3a541cfcfabfac360
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862346"
 ---
 # <a name="locationtype"></a>LocationType
 Indica il tipo di informazioni sulla posizione contenute in un simbolo.
@@ -66,7 +66,7 @@ enum LocationType {
 
 `LocTypeMax` Numero di tipi di posizione in questa enumerazione.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Le proprietà disponibili per l'interfaccia [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) dipendono dalla posizione del simbolo all'interno del file di immagine. Per ulteriori informazioni, vedere [posizioni dei simboli](../../debugger/debug-interface-access/symbol-locations.md).
 
 I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaSymbol:: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) .
@@ -74,7 +74,7 @@ I valori di questa enumerazione vengono restituiti da una chiamata al metodo [ID
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst. h
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)

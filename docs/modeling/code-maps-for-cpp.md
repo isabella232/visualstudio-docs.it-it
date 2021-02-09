@@ -6,15 +6,15 @@ ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
 ms.custom: SEO-VS-2020
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b33e9400926dd7d1f7a2dc5a66a33ec2fb244b1b
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 9c2aa1e49c0465fcf75917f0d9bd134962794c74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100440"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861751"
 ---
 # <a name="code-maps-for-c-projects"></a>Mappe codice per progetti C++
 
@@ -51,6 +51,6 @@ Questi problemi possono verificarsi quando si creano mappe del codice per il cod
 ||Le informazioni di debug sono state rimosse dal file pdb.|Se nel linker è stata usata l'opzione **/PDBSTRIPPED** , includere il file pdb completo.|
 ||Il chiamante non è una funzione e non è un thunk nel file binario o un puntatore nella sezione di dati.|Quando il chiamante è un thunk, provare a usare `_declspec(dllimport)` per evitare il thunk.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Eseguire il mapping delle dipendenze con le mappe codice](../modeling/map-dependencies-across-your-solutions.md)

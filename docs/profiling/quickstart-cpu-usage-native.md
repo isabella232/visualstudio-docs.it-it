@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Diagnostics Tools, CPU Usage
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e721a424cc1c8b7202764fdc9b23eae737d22a4
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 86b5e44f5b9e2fec07fef4e54a48ff89ebb2ff74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861634"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Avvio rapido: Analizzare i dati d'uso della CPU in Visual Studio (C++)
 
@@ -40,7 +40,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
    Se il modello di progetto **applicazione console di Windows** non è visualizzato, scegliere il collegamento **Apri programma di installazione di Visual Studio** nel riquadro sinistro della finestra di dialogo **nuovo progetto** . Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **sviluppo di applicazioni desktop con C++** , quindi scegliere **modifica**.
    ::: moniker-end
    ::: moniker range="vs-2019"
-   Se la finestra di avvio non è aperta, **File** scegliere > **finestra di avvio**file.
+   Se la finestra di avvio non è aperta,  scegliere > **finestra di avvio** file.
 
    Nella finestra Start scegliere **Crea un nuovo progetto**.
 
@@ -57,7 +57,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
    Visual Studio aprirà il nuovo progetto.
 
-1. In *Diagnostics_Get_Started_Native*sostituire il codice seguente
+1. In *Diagnostics_Get_Started_Native* sostituire il codice seguente
 
     ```c++
     int main()
@@ -200,7 +200,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 - [Analizzare l'uso della CPU](../profiling/cpu-usage.md) per informazioni dettagliate sullo strumento Utilizzo CPU.
 - Analizzare l'uso della CPU senza un debugger collegato o usando un'app in esecuzione. Per altre informazioni, vedere [Raccogliere dati di profilatura senza il debug](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) in [Eseguire gli strumenti di profilatura con o senza il debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

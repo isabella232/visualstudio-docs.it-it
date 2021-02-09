@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c50d205745917b3af7de638a17921f4bcdca509
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 3c0874302a7cae4b7a2a3c02edade3ef88fd402a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363549"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861842"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Proprietà di archiviazione calcolate e personalizzate
 Tutte le proprietà del dominio in un linguaggio specifico di dominio (DSL) possono essere visualizzate all'utente nel diagramma e in Esplora linguaggio ed è possibile accedervi tramite codice programma. Tuttavia, le proprietà differiscono in base alla modalità di archiviazione dei relativi valori.
@@ -24,7 +24,7 @@ Tutte le proprietà del dominio in un linguaggio specifico di dominio (DSL) poss
 ## <a name="kinds-of-domain-properties"></a>Tipi di proprietà del dominio
  Nella definizione DSL è possibile impostare il **tipo** di una proprietà di dominio, come elencato nella tabella seguente:
 
-|Tipo di proprietà del dominio|Description|
+|Tipo di proprietà del dominio|Descrizione|
 |-|-|
 |**Standard** (impostazione predefinita)|Proprietà di dominio salvata nell' *Archivio* e serializzata in un file.|
 |**Calcolate**|Proprietà di dominio di sola lettura che non viene salvata nell'archivio, ma viene calcolata da altri valori.<br /><br /> Ad esempio, `Person.Age` può essere calcolato da `Person.BirthDate` .<br /><br /> È necessario fornire il codice per eseguire il calcolo. In genere, il valore viene calcolato dalle altre proprietà del dominio. Tuttavia, è anche possibile usare le risorse esterne.|

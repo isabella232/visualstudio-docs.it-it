@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 594b894c-e652-4e13-a980-9909473d5712
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bb2666b3b57c8f84c81e181355f096674543445
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: f4ea2004680a60fcd2c90a57b19f719c0412ee53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861244"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Avviso di codice non aggiornato (finestra di dialogo)
 
@@ -37,7 +37,7 @@ Questa finestra di dialogo viene visualizzata quando vengono apportate modifiche
 
 Se si seleziona questa casella di controllo, la modalità Modifica e continuazione applicherà le modifiche al codice senza chiedere l'autorizzazione. Per riattivare questo messaggio di avviso, accedere alla finestra di dialogo **Opzioni**, aprire la cartella **Debug**, fare clic sulla pagina **Modifica e continuazione** e selezionare **Avvisa in caso di codice non aggiornato**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Modifiche al codice supportate (C++)](supported-code-changes-cpp.md)
 - [Modifica e continuazione, Debug, finestra di dialogo Opzioni](edit-and-continue.md)

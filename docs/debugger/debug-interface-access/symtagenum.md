@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 528a50cf-e13d-46ec-a98c-323d5d047de9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29bbb4eed485d3ff354757ab8c83a60b92f566aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 66705cdc213d8dd143856ba6a8e378505085c73a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461049"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853177"
 ---
 # <a name="symtagenum"></a>SymTagEnum
 Specifica il tipo di simbolo.
@@ -141,7 +141,7 @@ enum SymTagEnum {
 
 `SymTagHLSLType` Indica che il simbolo è un tipo di linguaggio shader di alto livello.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Tutti i simboli in un file di debug hanno un tag di identificazione che specifica il tipo del simbolo.
 
 I valori di questa enumerazione vengono restituiti da una chiamata al metodo [IDiaSymbol:: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) .
@@ -167,7 +167,7 @@ I valori di questa enumerazione vengono passati ai metodi seguenti per limitare 
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst. h
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [Gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)

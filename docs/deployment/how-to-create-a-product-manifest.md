@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ab7156635914d46dfc1849717d29ac0416e2d9fa
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 40a620023dad754e3de4fedb9bc4fdbe7b7835a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351219"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861231"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Procedura: Creare il manifesto di un prodotto
 Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio automatico contiene un singolo file manifesto del prodotto, ma un manifesto del pacchetto per ogni impostazione locale. Il manifesto del pacchetto contiene aspetti specifici della localizzazione del pacchetto. Sono incluse le stringhe, i contratti di licenza con l'utente finale e i Language Pack.
@@ -66,7 +66,7 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
 
 6. Copiare o spostare il file di *CorePackage.msi* nella cartella *C:\package* .
 
-7. Aggiungere il codice XML per installare il pacchetto utilizzando i comandi del programma di avvio automatico. Il programma di avvio automatico aggiunge automaticamente il flag **/qn** al file con *estensione msi* , che verrà installato in modalità invisibile all'utente. Se il file è un file con *estensione exe* , il programma di avvio automatico esegue il file con *estensione exe* utilizzando la Shell. Il codice XML seguente non Mostra argomenti da *CorePackage.msi* , ma è possibile inserire l'argomento della riga di comando nell' `Arguments` attributo.
+7. Aggiungere il codice XML per installare il pacchetto utilizzando i comandi del programma di avvio automatico. Il programma di avvio automatico aggiunge automaticamente il flag **/qn** al file con *estensione msi* , che verrà installato in modalità invisibile all'utente. Se il file è un file con *estensione exe*, il programma di avvio automatico esegue il file con *estensione exe* utilizzando la Shell. Il codice XML seguente non Mostra argomenti da *CorePackage.msi*, ma è possibile inserire l'argomento della riga di comando nell' `Arguments` attributo.
 
     ```xml
     <Commands>
@@ -160,5 +160,5 @@ Per distribuire i prerequisiti per l'applicazione, è possibile creare un pacche
 </Product>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento allo schema del prodotto e del pacchetto](../deployment/product-and-package-schema-reference.md)

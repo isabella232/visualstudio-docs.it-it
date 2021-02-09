@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93cd01c0a90f2864843549c3ce11e066a16a8843
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 3d4833ba922ddde1a1770cfd75cf446f210e2c79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040381"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859853"
 ---
 # <a name="install-third-party-analyzers"></a>Installare analizzatori di terze parti
 
@@ -98,7 +98,7 @@ Se si vuole verificare se l'estensione è installata, selezionare **estensioni**
 > [!div class="nextstepaction"]
 > [Usare gli analizzatori del codice in Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica degli analizzatori di codice in Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Installare gli analizzatori .NET](../code-quality/install-net-analyzers.md)

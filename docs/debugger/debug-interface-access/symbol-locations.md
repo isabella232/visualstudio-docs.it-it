@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7c8cd8fe-169e-4161-9cff-5e9015984add
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 125245f38be5588f2661b45162ffde24e5930ad7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74f7e5d9a02a8c928b64bcb6abd8054d8fa76f0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461077"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853191"
 ---
 # <a name="symbol-locations"></a>Percorsi dei simboli
 La maggior parte dei simboli ha una posizione definita all'interno del file di immagine. Il percorso di un simbolo viene specificato con un valore dell'enumerazione Enumerazione [LocationType](../../debugger/debug-interface-access/locationtype.md) . Il simbolo può supportare proprietà aggiuntive a seconda della posizione.
@@ -39,7 +39,7 @@ La maggior parte dei simboli ha una posizione definita all'interno del file di i
 |`LocInMetaData`|[IDiaSymbol::get_token](../../debugger/debug-interface-access/idiasymbol-get-token.md)|
 |`LocIsConstant`|[IDiaSymbol::get_value](../../debugger/debug-interface-access/idiasymbol-get-value.md)|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)
 - [IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)
 - [IDiaSymbol::get_bitPosition](../../debugger/debug-interface-access/idiasymbol-get-bitposition.md)

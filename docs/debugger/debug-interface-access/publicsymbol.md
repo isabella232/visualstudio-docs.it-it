@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f8d33007-302d-4549-9dad-47fb33ea60b7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f552aa8bc887d2b9bcaacdcf2947ac6781a7879c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c13674eb7aba147946f2dc8a75bcabbdb4b7147
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461112"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862297"
 ---
 # <a name="publicsymbol"></a>PublicSymbol
 Quando viene creato il file con estensione exe, a ogni simbolo pubblico (come minimo, ogni funzione globale e simbolo di dati) viene assegnato un `SymTagPublicSymbol` tag.
@@ -46,7 +46,7 @@ Quando viene creato il file con estensione exe, a ogni simbolo pubblico (come mi
 |[IDiaSymbol::get_undecoratedName](../../debugger/debug-interface-access/idiasymbol-get-undecoratedname.md)|`BSTR`|Nome del simbolo non decorato.|
 |[IDiaSymbol::get_undecoratedNameEx](../../debugger/debug-interface-access/idiasymbol-get-undecoratednameex.md)|`BSTR`|Parte o tutto il nome del simbolo non decorato.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [Enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md)
 - [Percorsi dei simboli](../../debugger/debug-interface-access/symbol-locations.md)

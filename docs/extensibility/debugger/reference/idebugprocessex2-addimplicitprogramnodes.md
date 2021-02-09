@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 113c81e95e7384be04b7e02a5c58cd2cad7c9c6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ef9379edc9e02e8bed6761abf0aa4a2830fc415
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723400"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861088"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 Questo metodo aggiunge un nodo di programma per ogni motore di debug (DE) specificato.
@@ -56,9 +56,9 @@ in Numero di `GUID` s nella `rgguidSpecificEngines` matrice.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 - I [nodi del programma](../../../extensibility/debugger/program-nodes.md) verranno aggiunti per ogni de elencato in, `rgguidSpecificEngines` escluso il motore di avvio (come indicato in `guidLaunchingEngine` ), che si presuppone aggiungere il proprio nodo di programma all'avvio di un programma.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)
 - [Nodi di programma](../../../extensibility/debugger/program-nodes.md)

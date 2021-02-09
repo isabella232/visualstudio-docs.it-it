@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb47abe8-6706-4679-bc52-79f6444dae7e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c48db236e7cd416929d26d3473c537c2d81ac06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4f4272ac168fc4377cc2afa79b151db45ab36ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461330"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862416"
 ---
 # <a name="idiatableget_count"></a>IDiaTable::get_Count
 Recupera il numero di elementi nella tabella.
@@ -25,7 +25,7 @@ Recupera il numero di elementi nella tabella.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_Count ( 
+HRESULT get_Count ( 
    LONG* pRetVal
 );
 ```
@@ -38,6 +38,6 @@ out Restituisce il numero di elementi nella tabella.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
 - [IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)

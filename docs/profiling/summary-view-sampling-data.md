@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 79056873-2985-40be-9112-cdbc26a65156
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e5d75574e29118beacb6312d2dd013a19894a176
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 681e86a8483790a91a6a7e75eef95b5033042e5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718954"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861543"
 ---
 # <a name="summary-view---sampling-data"></a>Visualizzazione Riepilogo: dati di campionamento
 La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono maggiormente sulle prestazioni in un'esecuzione della profilatura. Per altre informazioni, inclusa una descrizione degli elenchi dei collegamenti di notifica e dei rapporti, vedere [Visualizzazione Riepilogo](../profiling/summary-view.md).
@@ -52,6 +52,6 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono 
 |**Nome**|Nome della funzione.|
 |**% esempi esclusivi**|Percentuale di tutti i campioni nell'esecuzione della profilatura che sono stati raccolti durante l'esecuzione di codice da parte della funzione nel corpo della funzione. Da questa percentuale sono esclusi i campioni raccolti durante l'esecuzione delle funzioni chiamate da questa funzione.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzazione Riepilogo: dati di memoria .NET](../profiling/summary-view-dotnet-memory-data.md)
 - [Visualizzazione Riepilogo: dati di strumentazione](../profiling/summary-view-instrumentation-data.md)

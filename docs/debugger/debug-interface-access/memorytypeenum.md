@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8778c047-edeb-4495-8f9f-3f8bbb297099
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd255ab59c9d46676ba46baddd9cee7e3ef4cc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a92cc41fd0e6898ad0d108204f5b472000b9b65c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461182"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862311"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
 Specifica il tipo di memoria a cui accedere.
@@ -42,12 +42,12 @@ enum MemoryTypeEnum {
 
 `MemTypeAny` Accede a qualsiasi tipo di memoria.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 I valori di questa enumerazione vengono passati al metodo [IDiaStackWalkHelper:: ReadMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) per limitare l'accesso a diversi tipi di memoria.
 
 ## <a name="requirements"></a>Requisiti
 Intestazione: cvconst. h
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)

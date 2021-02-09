@@ -8,22 +8,22 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e0c96c93e3583a7d2877a5f4f7bd70561b650b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 23629c2503fd14a758cf3f68f2576db601dd39cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363536"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861855"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Scelta di un modello di soluzione per un linguaggio specifico di dominio
 Per creare una soluzione per il linguaggio specifico di dominio, scegliere uno dei modelli di soluzione disponibili nella procedura guidata Domain-Specific Language Designer. Scegliendo il modello che è molto simile alla lingua che si desidera creare, è possibile ridurre al minimo le modifiche da apportare alla soluzione iniziale.
 
  Nella procedura guidata Domain-Specific Designer Language sono disponibili i modelli di soluzione seguenti.
 
-|Modello|Funzionalità|Description|
+|Modello|Funzionalità|Descrizione|
 |-|-|-|
 |Diagrammi classi|-Forme raggruppamento<br />-Ereditarietà della classe<br />-Ereditarietà della relazione<br />-Ereditarietà della forma<br />-Proprietà relazione|Utilizzare questo modello di soluzione se il linguaggio specifico di dominio include entità e relazioni che dispongono di proprietà. Questo modello consente di creare un linguaggio specifico di dominio simile ai diagrammi classi UML. Le entità principali sono classi e interfacce, insieme alle relazioni di associazione, generalizzazione e implementazione. Una classe o interfaccia viene visualizzata come una casella contenente un elenco di attributi.|
 |Diagrammi componente|-Porte|Utilizzare questo modello di soluzione se il linguaggio specifico di dominio include componenti, ovvero parti di un sistema software. Questo modello consente di creare un linguaggio specifico di dominio simile ai diagrammi componenti UML. Le entità principali sono componenti e porte, che vengono visualizzati come forme piccole all'esterno dei componenti.|

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - managed code, analyzing
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e862b176ab396999d3504e19c4de9a5c407b266
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: b9895dc8926f1bb5c7d33e792168ca46297c8196
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349022"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859606"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Procedura dettagliata: usare l'analisi del codice statica per individuare i difetti del codice
 
@@ -172,6 +172,6 @@ Questo articolo illustra il processo di utilizzo dell'analisi legacy per analizz
 
      Il progetto viene compilato senza avvisi o errori.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Analisi codice per il codice gestito](../code-quality/code-analysis-for-managed-code-overview.md)

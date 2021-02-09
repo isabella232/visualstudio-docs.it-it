@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 19c95b0d-9a4d-441f-9ed7-3acb39e67521
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 304576391b2287aee7567b3ccc2e4514ce5cb2e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed60fb5262a6af07966ff974b8535ae299f3fc51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62848469"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861413"
 ---
 # <a name="vsg_nodefault_instance"></a>VSG_NODEFAULT_INSTANCE
 Definisce in base alla sua presenza se viene fornita un'istanza predefinita della classe [VsgDbg](vsgdbg-class.md) , che fornisce l'interfaccia di acquisizione a livello di codice.
@@ -33,7 +33,7 @@ Definisce in base alla sua presenza se viene fornita un'istanza predefinita dell
 VsgDbg *g_pVsgDbg;
 ```
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'istanza predefinita è in genere sufficiente, ma per utilizzare l'interfaccia di acquisizione programmatica in una DLL quando il dispositivo D3D è stato creato all'esterno di tale DLL, è necessario creare e gestire l'istanza personalizzata della classe `VsgDbg`. Se si sta gestendo l'interfaccia personalizzata per l'API di acquisizione in questo modo, disabilitare l'istanza predefinita definendo `VSG_NODEFAULT_INSTANCE` per evitare un sovraccarico.
 
  Se l'istanza predefinita non è disabilitata, verrà automaticamente inizializzata prima dell'esecuzione del programma e automaticamente distrutta al termine di tale programma. Non è necessario inizializzare o annullare l'inizializzazione di tale istanza in modo esplicito.

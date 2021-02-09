@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8fd87f05-a950-4d14-b925-98be29d4facc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62912be9fdfecc98a264a58c9713cc12ccaf28f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d50266e792d58be3824e5c14e4936f3af381f0fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725226"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861140"
 ---
 # <a name="idebugport2"></a>IDebugPort2
 Questa interfaccia rappresenta una porta di debug in un computer.
@@ -48,7 +48,7 @@ IDebugPort2 : IUnknown
 |[GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)|Restituisce un'interfaccia per il processo in base all'identificatore del processo.|
 |[EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)|Enumera tutti i processi in esecuzione su una porta.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  La porta locale consente di accedere a tutti i processi e programmi in esecuzione nel computer locale. Altre porte potrebbero rappresentare una connessione via cavo seriale a un dispositivo basato su Windows CE o una connessione di rete a un computer non DCOM. L' `IDebugPort2` interfaccia viene utilizzata per trovare il nome e l'identificatore di una porta ed enumerare tutti i processi in esecuzione sulla porta. Le funzionalità per l'avvio e la terminazione dei processi sulla porta sono implementate nell' `IDebugPortEx2` interfaccia.
 
 ## <a name="requirements"></a>Requisiti
@@ -58,7 +58,7 @@ IDebugPort2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

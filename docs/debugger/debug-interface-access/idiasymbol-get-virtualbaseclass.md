@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 474eddc6-bf16-4731-9145-6db2f2a0b4fd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 859a8d7696cf1b1ebc3932f41713a988558efd96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd6c2b08915c83d041d11cc9b65c1e35c725e56c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461462"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862458"
 ---
 # <a name="idiasymbolget_virtualbaseclass"></a>IDiaSymbol::get_virtualBaseClass
 Recupera un flag che specifica se il tipo di dati definito dall'utente è una classe di base virtuale.
@@ -25,7 +25,7 @@ Recupera un flag che specifica se il tipo di dati definito dall'utente è una cl
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_virtualBaseClass ( 
+HRESULT get_virtualBaseClass ( 
    BOOL* pRetVal
 );
 ```
@@ -41,5 +41,5 @@ out Restituisce `TRUE` se il tipo di dati definito dall'utente è una classe bas
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

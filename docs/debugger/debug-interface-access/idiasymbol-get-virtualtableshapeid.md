@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cbee9944-817a-4805-9c08-fac8e0da58b7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e46a9188e4189359118eaf1ea4891c903c1f47a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af945892bfc99e86e30457084481c8675804ffad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461385"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862430"
 ---
 # <a name="idiasymbolget_virtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
 Recupera l'identificatore del simbolo di forma della tabella virtuale del simbolo.
@@ -25,7 +25,7 @@ Recupera l'identificatore del simbolo di forma della tabella virtuale del simbol
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_virtualTableShapeId ( 
+HRESULT get_virtualTableShapeId ( 
    DWORD* pRetVal
 );
 ```
@@ -41,8 +41,8 @@ out Restituisce l'ID simbolo di forma della tabella virtuale del simbolo.
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoci.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
