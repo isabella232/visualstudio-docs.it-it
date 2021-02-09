@@ -7,23 +7,23 @@ ms.topic: conceptual
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 91d1df06d991669b023ede60b8b384ea75af651a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: e4ba5678d91779f0955147dbc87fd3b57cbe387c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876406"
 ---
 # <a name="debug-xaml-in-blend"></a>Debug XAML in Blend
 
-È possibile usare gli strumenti disponibili in Blend per Visual Studio per eseguire il debug del codice XAML nell'app. Quando compili un progetto, eventuali errori vengono visualizzati nel pannello **Risultati** . Fai doppio clic su un errore per trovare il markup correlato all'errore. Se è necessario più spazio per lavorare, è possibile nascondere il pannello dei **risultati** premendo **F12** .
+È possibile usare gli strumenti disponibili in Blend per Visual Studio per eseguire il debug del codice XAML nell'app. Quando compili un progetto, eventuali errori vengono visualizzati nel pannello **Risultati**. Fai doppio clic su un errore per trovare il markup correlato all'errore. Se è necessario più spazio per lavorare, è possibile nascondere il pannello dei **risultati** premendo **F12**.
 
 ## <a name="syntax-errors"></a>Errori di sintassi
 
-Si verificano errori di sintassi se il codice XAML o i file code-behind non rispettano le regole di formattazione del linguaggio. La descrizione dell'errore ti aiuterà a capire come risolverlo. L'elenco specifica anche il nome del file e il numero della riga in cui è presente l'errore. Gli errori XAML sono elencati nella scheda **Markup** del pannello **Risultati** .
+Si verificano errori di sintassi se il codice XAML o i file code-behind non rispettano le regole di formattazione del linguaggio. La descrizione dell'errore ti aiuterà a capire come risolverlo. L'elenco specifica anche il nome del file e il numero della riga in cui è presente l'errore. Gli errori XAML sono elencati nella scheda **Markup** del pannello **Risultati**.
 
 > [!TIP]
 > XAML è un linguaggio di markup basato su XML che segue le regole di sintassi XML.
@@ -48,21 +48,21 @@ Nell'esempio seguente viene illustrata una semplice sessione di debug XAML in Bl
 
 #### <a name="to-create-a-project"></a>Per creare un progetto
 
-1. In Blend aprire il menu **file** e quindi fare clic su **nuovo progetto** .
+1. In Blend aprire il menu **file** e quindi fare clic su **nuovo progetto**.
 
     Nella finestra di dialogo **Nuovo progetto** viene visualizzato un elenco di tipi di progetto sul lato sinistro. Quando fai clic su un tipo di progetto, i modelli di progetto a esso associati vengono visualizzati a destra.
 
-2. Nell'elenco dei tipi di progetto fare clic su **universale di Windows** .
+2. Nell'elenco dei tipi di progetto fare clic su **universale di Windows**.
 
-3. Nell'elenco dei modelli di progetto fare clic su **app vuota (Windows universale)** .
+3. Nell'elenco dei modelli di progetto fare clic su **app vuota (Windows universale)**.
 
 4. Nella casella di testo **nome** Digitare `DebuggingSample` .
 
 5. Nella casella di testo **Percorso** verifica il percorso del progetto.
 
-6. Nell'elenco **Linguaggio** fai clic su **Visual C#** , quindi scegli **OK** per creare il progetto.
+6. Nell'elenco **Linguaggio** fai clic su **Visual C#**, quindi scegli **OK** per creare il progetto.
 
-7. Fai clic con il pulsante destro del mouse sull'area di progettazione, quindi scegli **Visualizza origine** per passare alla visualizzazione **divisa** .
+7. Fai clic con il pulsante destro del mouse sull'area di progettazione, quindi scegli **Visualizza origine** per passare alla visualizzazione **divisa**.
 
 8. Copia il codice seguente facendo clic sul link **Copia** nell'angolo in alto a destra del codice.
 
@@ -92,7 +92,7 @@ Nell'esempio seguente viene illustrata una semplice sessione di debug XAML in Bl
 
 10. Premere **CTRL** + **MAIUSC** + **B** per compilare il progetto.
 
-    Un messaggio di errore ti avvisa che il progetto non può essere compilato e nella parte superiore dell'app appare il pannello **Risultati** , che elenca gli errori.
+    Un messaggio di errore ti avvisa che il progetto non può essere compilato e nella parte superiore dell'app appare il pannello **Risultati**, che elenca gli errori.
 
     ![Eseguire il debug di XAML in Blend per Visual Studio](../debugger/media/blend_debugxaml_xaml.png "blend_debugXAML_XAML")
 
@@ -118,7 +118,7 @@ Quando vengono rilevati errori XAML, nell'area di progettazione viene visualizza
 
 ## <a name="debug-in-visual-studio"></a>Eseguire il debug in Visual Studio
 
-È possibile aprire i progetti Blend in Visual Studio per eseguire più facilmente il debug del codice nell'app. Per aprire un progetto di Blend in Visual Studio, fare clic con il pulsante destro del mouse sul progetto nel pannello **progetti** , quindi scegliere **modifica in Visual Studio** . Al termine della sessione di debug in Visual Studio, premere CTRL + MAIUSC + S per salvare tutte le modifiche e quindi tornare a Blend. Ti verrà chiesto di ricaricare il progetto. Fare clic su **Sì per** continuare a lavorare in Blend.
+È possibile aprire i progetti Blend in Visual Studio per eseguire più facilmente il debug del codice nell'app. Per aprire un progetto di Blend in Visual Studio, fare clic con il pulsante destro del mouse sul progetto nel pannello **progetti** , quindi scegliere **modifica in Visual Studio**. Al termine della sessione di debug in Visual Studio, premere CTRL + MAIUSC + S per salvare tutte le modifiche e quindi tornare a Blend. Ti verrà chiesto di ricaricare il progetto. Fare clic su **Sì per** continuare a lavorare in Blend.
 
 Per altre informazioni sul debug dell'app, vedere [eseguire il debug di app UWP in Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md).
 

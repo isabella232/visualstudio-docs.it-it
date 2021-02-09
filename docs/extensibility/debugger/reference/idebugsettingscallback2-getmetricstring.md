@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: ecc875a2-8ac6-444c-a839-5191a780fd6b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e0c90f3261809bf41b3aa4bd3337a16c1190fcfc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 929783f0fa2c82babf9197f9a0a81108143d1f87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719970"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875822"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
 Recupera la stringa di valore della metrica in base al nome.
@@ -60,5 +60,5 @@ out Restituisce la stringa di valore della metrica.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

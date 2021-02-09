@@ -11,15 +11,15 @@ helpviewer_keywords:
 - FeatureProperty element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8e6010ac45d0b760325c73c4bd754fbb0b422a77
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 070866b9dd14d974eb976b22bf7a79907e2c5d9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672756"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876667"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty (elemento)
   Rappresenta una proprietà personalizzata inclusa con una funzionalità quando viene distribuita in SharePoint. Dopo la distribuzione di una funzionalità, è possibile accedere alla proprietà nel codice.
@@ -42,7 +42,7 @@ ms.locfileid: "94672756"
 |**Valore**|Attributo **xs: String** obbligatorio.<br /><br /> Valore della proprietà.|
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, getting started
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 40eb9444ec72787e154ddd0cd7bc93e786c84397
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 109cf2fe5661f23ae7fb051829ec1c9e9a6d2329
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915167"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876628"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>Introduzione (sviluppo per SharePoint in Visual Studio)
   Questa sezione permette di iniziare a usare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per sviluppare soluzioni SharePoint in grado di sfruttare i vantaggi offerti da [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] e [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)].
@@ -33,13 +33,13 @@ ms.locfileid: "96915167"
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-|Argomento|Description|
+|Argomento|Descrizione|
 |-----------|-----------------|
 |[Informazioni aggiuntive sugli errori di SharePoint](../sharepoint/additional-information-for-sharepoint-errors.md)|Descrive dove trovare supporto durante lo sviluppo e la risoluzione dei problemi per SharePoint.|
 
 ## <a name="related-sections"></a>Sezioni correlate
 
-|Argomento|Description|
+|Argomento|Descrizione|
 |-----------|-----------------|
 |[Sviluppo di soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)|Descrive lo sviluppo per SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
 |[Configurare un ambiente di sviluppo generale per SharePoint](/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)|Descrive le installazioni necessarie per la creazione di una soluzione SharePoint|

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0893596157078de62e33034a9ab6566637642176
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 96269f67b11def6fa34ddd1fc7540f9a0462a73e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876875"
 ---
 # <a name="create-sharepoint-solutions"></a>Creazione di soluzioni SharePoint
   È possibile creare applicazioni di SharePoint in Visual Studio come alternativa alla creazione in SharePoint Designer. Visual Studio promuove lo sviluppo rapido di SharePoint fornendo funzionalità quali strumenti di debug avanzati, IntelliSense, completamento istruzioni e modelli di progetto. Visual Studio sfrutta anche i linguaggi e gli strumenti avanzati basati su .NET Framework. È possibile sviluppare progetti SharePoint con Visual Basic o Visual C# e sviluppare l'app per progetti SharePoint con JavaScript.

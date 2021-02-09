@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5a572eeb-beb7-4fc7-8259-792d277069be
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4dc28da803cde8044240efea3da996dd7af1c2b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 059ac49ebec0d8a7ef1a9aa54dab085a2cbf525c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875692"
 ---
 # <a name="ienumdebugboundbreakpoints2getcount"></a>IEnumDebugBoundBreakpoints2::GetCount
 Restituisce il numero di elementi nell'enumerazione.
@@ -46,8 +46,8 @@ out Restituisce il numero di elementi nell'enumerazione.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo metodo non fa parte dell'interfaccia di enumerazione com personalizzata che specifica che `Next` `Clone` `Skip` `Reset` devono essere implementati solo i metodi,, e.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

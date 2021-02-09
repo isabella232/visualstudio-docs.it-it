@@ -12,15 +12,15 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 52939fe00dcbca1cfd633c81d4b0a00ea6b517b9
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: adf5de014c7921130bd6f3ecd3cf8c5bb5daa92a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915505"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876680"
 ---
 # <a name="form-support-in-workflows"></a>Supporto dei form nei flussi di lavoro
   In un flusso di lavoro possono essere utilizzati quattro tipi di form: associazione, avvio, attività e modifica. Questi tipi di form possono essere basati su un form ASPX o un modulo di InfoPath. Il livello di supporto [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornito da per un particolare modulo dipende da diversi fattori, descritti nelle tabelle seguenti. Per ulteriori informazioni sui tipi di form del flusso di lavoro, vedere [Cenni preliminari sui form](/previous-versions/office/developer/sharepoint-2010/ms457061(v=office.14))dei flussi

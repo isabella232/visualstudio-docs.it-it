@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 67097b3a-fcf5-4a72-beb1-2c7784151a86
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fd81377ca24dfbeaf4a25f2af00fb69f4821d73
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d4c594e613d1160794e8310695d61bcc97902caa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437983"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876459"
 ---
 # <a name="foreachlttgt-activity-designer"></a>ActivityDesigner ForEach &lt; T &gt;
 
@@ -27,7 +27,7 @@ L'attività <xref:System.Activities.Statements.ForEach%601> esegue l'attività c
 
 Nella tabella seguente sono elencate le proprietà più utili dell'attività <xref:System.Activities.Statements.ForEach%601> e ne viene descritto l'uso nella finestra di progettazione.
 
-|Nome proprietà|Obbligatoria|Uso|
+|Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Nome descrittivo dell'attività <xref:System.Activities.Statements.ForEach%601>. Il valore predefinito è ForEach<Int32 \> . Sebbene non sia obbligatorio specificare il valore di <xref:System.Activities.Activity.DisplayName%2A>, è consigliabile farlo.|
 |<xref:System.Activities.Statements.ForEach%601.Values%2A>|Vero|Raccolta di elementi da scorrere. Per impostare <xref:System.Activities.Statements.ForEach%601.Values%2A> , digitare un'espressione Visual Basic nella casella **valori** dell'ActivityDesigner **foreach<\> T** o nella griglia delle proprietà.|
@@ -35,7 +35,7 @@ Nella tabella seguente sono elencate le proprietà più utili dell'attività <xr
 
 Per impostazione predefinita, l'iteratore del ciclo è denominato **elemento**. È possibile modificare il nome della variabile di iteratore nell'ActivityDesigner <xref:System.Activities.Statements.ForEach%601>. L'iteratore del ciclo può essere usato nelle espressioni contenute in elementi figlio dell'attività <xref:System.Activities.Statements.ForEach%601>.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)
 - [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)

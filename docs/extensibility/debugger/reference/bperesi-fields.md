@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: dd7dd89c-1043-46a1-a929-099cc039c344
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: af2f20e7d3abd79261dc18753a7eb940666fc186
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 287e6750ceaafc705c5d49bd5cd27201f16a692f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737762"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876095"
 ---
 # <a name="bperesi_fields"></a>BPERESI_FIELDS
 Specifica le informazioni da recuperare su una risoluzione non riuscita di un punto di interruzione.
@@ -69,7 +69,7 @@ Inizializza/usa il `dwType` campo (tipo di punto di interruzione) della `BP_ERRO
 `BPERESI_ALLFIELDS`\
 Inizializza/usa tutti i campi della `BP_ERROR_RESOLUTION_INFO` struttura.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Passato come parametro al metodo [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) per indicare quali campi della struttura [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) devono essere inizializzati.
 
 Questi valori vengono usati anche per indicare quali campi della `BP_ERROR_RESOLUTION_INFO` struttura vengono usati e validi quando viene restituita tale struttura.
@@ -83,7 +83,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
 - [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)

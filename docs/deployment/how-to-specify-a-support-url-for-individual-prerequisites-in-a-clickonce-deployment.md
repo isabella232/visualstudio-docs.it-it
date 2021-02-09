@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 585ea1a558b91ac733670ad94a9a3e0be33f1348
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350946"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876316"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Procedura: Specificare un URL di supporto per i singoli prerequisiti in una distribuzione ClickOnce
 Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione può verificare la presenza di alcuni prerequisiti che devono essere disponibili nel computer client per l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] esecuzione dell'applicazione. Queste dipendenze includono la versione minima richiesta del .NET Framework, la versione del sistema operativo e tutti gli assembly che devono essere preinstallati nella Global Assembly Cache (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Tuttavia, non è in grado di installare alcuno di questi prerequisiti. Se un prerequisito non viene trovato, viene semplicemente interrotto l'installazione e viene visualizzata una finestra di dialogo che spiega il motivo per cui l'installazione non è riuscita.
@@ -83,7 +83,7 @@ Una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzi
 ## <a name="net-framework-security"></a>.NET Framework (sicurezza)
  L'URL di supporto non viene visualizzato nella finestra di dialogo se l'applicazione è contrassegnata per l'esecuzione con attendibilità parziale.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Mage.exe (Strumento per la generazione e la modifica di manifesti)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [\<compatibleFrameworks> elemento](../deployment/compatibleframeworks-element-clickonce-deployment.md)

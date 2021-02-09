@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d78925411f911f9c0dfc0c2cfff891deca0e91e3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: b18323f42b67ebb3fb1162432a8b2fd296f2908e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434051"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876355"
 ---
 # <a name="send-activity-designer"></a>ActivityDesigner Send
 
@@ -39,7 +39,7 @@ In alternativa, è possibile usare la finestra di progettazione del modello **Se
 
 Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.Activities.Send> e ne viene descritta la modalità di uso nella finestra di progettazione. Queste proprietà possono essere modificate nella griglia delle proprietà o nell'area Progettazione flussi di lavoro.
 
-| Nome proprietà | Obbligatoria | Uso |
+| Nome proprietà | Obbligatoria | Utilizzo |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | Falso | Nome descrittivo dell'attività <xref:System.ServiceModel.Activities.Send>. L'impostazione predefinita è Send. Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso. |
 | <xref:System.ServiceModel.Activities.Send.OperationName%2A> | Vero | Nome dell'operazione del servizio chiamata da questa attività <xref:System.ServiceModel.Activities.Send>. Questa proprietà viene utilizzata per costruire il valore predefinito per la proprietà **Action** se la proprietà **Action** non è impostata in modo esplicito. |
@@ -56,7 +56,7 @@ Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.
 | <xref:System.ServiceModel.Activities.Send.EndpointAddress%2A> | | Oggetto <xref:System.ServiceModel.EndpointAddress> a cui viene inviato il messaggio. |
 | <xref:System.ServiceModel.Activities.Send.EndpointConfigurationName%2A> | | Nome della configurazione dell'endpoint. Questa proprietà viene impostata durante la configurazione di un endpoint in un file di configurazione. Questa proprietà deve essere impostata sul nome specificato nell' **\<endpoint>** elemento nel file di configurazione. Se questa proprietà è impostata, la <xref:System.ServiceModel.Activities.Send.Endpoint%2A> proprietà deve essere **null**. |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)

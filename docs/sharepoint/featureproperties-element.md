@@ -11,15 +11,15 @@ helpviewer_keywords:
 - FeatureProperties element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9ee2bddec02263a889fb1f69088a8a50b3d8b57d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8756feaf08de9b01904309177f5e19c122da714d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672600"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876719"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties (elemento)
   Raccolta di valori di proprietà inclusi in una funzionalità quando viene distribuita in SharePoint. Dopo la distribuzione di una funzionalità, è possibile accedere ai valori delle proprietà nel codice.
@@ -36,7 +36,7 @@ ms.locfileid: "94672600"
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ Nessuna.
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -57,7 +57,7 @@ ms.locfileid: "94672600"
 
 |Elemento|Descrizione|
 |-------------|-----------------|
-|**Spazio dei nomi**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Namespace**|http: \/ \/ schemas.Microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nome schema**|Schema dell'elemento del progetto SharePoint|
 |**File di convalida**|ProjectItemModelSchema. xsd|
 |**Può essere vuoto**|No|

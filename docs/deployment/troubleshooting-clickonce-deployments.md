@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 58e90012-f68b-4852-8ae9-58e361cbcc32
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae6f4098edf246a4f84533b37e4f9a684d932456
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: fa16c38f7e2bad03578d51da6db829ae708c4e71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876212"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Risoluzione dei problemi relativi alle distribuzioni ClickOnce
 Questo argomento consente di diagnosticare e risolvere i problemi più comuni con le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzioni.
@@ -58,7 +58,7 @@ Questo argomento consente di diagnosticare e risolvere i problemi più comuni co
 
  Viene descritta una tecnica per il debug di applicazioni ClickOnce che utilizzano System. Deployment. Application.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)

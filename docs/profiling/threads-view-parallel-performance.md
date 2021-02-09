@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 619e76b3db67314119782ebc3010465ac7fa622f
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 77655e2e040b6a14a5c82151dac451e8373ea674
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722724"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876979"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>Visualizzazione Thread nel visualizzatore di concorrenza
 
@@ -139,5 +139,5 @@ Questa scheda mostra lo stack di chiamate per un punto selezionato su un segment
 ### <a name="unblocking-stack-tab"></a>Scheda Stack di sblocco
 Questa scheda indica quale thread ha sbloccato il thread selezionato e lo stack di chiamate di sblocco.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzatore di concorrenze](../profiling/concurrency-visualizer.md)

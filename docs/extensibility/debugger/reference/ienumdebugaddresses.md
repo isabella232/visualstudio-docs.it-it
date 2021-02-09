@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f6f6751-e6d8-4c5a-8e81-414b6e5d8cc5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14b42ec37babe72b47b0e832397d33029c4fc3d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f9b4b95d805833ffd8b8041292cd18e5db8df9b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717592"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875796"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 Questa interfaccia rappresenta una raccolta di oggetti che implementano l'interfaccia [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
@@ -45,7 +45,7 @@ IEnumDebugAdresses : IUnknown
 |[Clone](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|Recupera una copia dell'enumerazione corrente.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|Recupera il numero di voci nell'enumerazione.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa interfaccia viene in genere utilizzata dal motore di debug per determinare l'indirizzo appropriato da assegnare all'analizzatore di espressioni.
 
 ## <a name="requirements"></a>Requisiti
@@ -55,7 +55,7 @@ IEnumDebugAdresses : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce del provider di simboli](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)

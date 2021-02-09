@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 455f144a95a41ae482c1f240e1d2f87b888763a5
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 8151748b946d2c1b5ad21359569d6f5f856f9250
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598458"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876160"
 ---
 # <a name="address-dpi-issues"></a>Risolvere i problemi di DPI
 Un numero crescente di dispositivi viene distribuito con schermate ad alta risoluzione. Queste schermate hanno in genere più di 200 pixel per pollice (PPI). L'uso di un'applicazione su questi computer richiede il ridimensionamento del contenuto per soddisfare le esigenze di visualizzazione del contenuto a una distanza di visualizzazione normale per il dispositivo. A partire da 2014, la destinazione principale per i display ad alta densità è costituita dai dispositivi di elaborazione mobile (tablet, portatili a copertura mobile e telefoni).

@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af462178cf18d57afa6b51aedaba0004615ebb6f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4697aa4869535d63c522ae25c978dd89bfe51697
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349264"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876173"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Risoluzione di errori specifici nelle distribuzioni ClickOnce
 In questo articolo vengono elencati gli errori comuni seguenti che possono verificarsi durante la distribuzione di un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione e vengono descritti i passaggi per risolvere ogni problema.
@@ -91,7 +91,7 @@ In questo articolo vengono elencati gli errori comuni seguenti che possono verif
  Per usare PrivatePath (percorsi di sondaggio Fusion), l'applicazione deve richiedere l'autorizzazione di attendibilità totale. Provare a modificare il manifesto dell'applicazione in modo da richiedere l'attendibilità totale, quindi riprovare.
 
 #### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>Durante la disinstallazione viene visualizzato un messaggio che indica che non è stato possibile disinstallare l'applicazione
- Questo messaggio indica in genere che l'applicazione è già stata rimossa o che l'archivio è danneggiato. Dopo aver fatto clic su **OK** , la voce **Aggiungi/Rimuovi programma** verrà rimossa.
+ Questo messaggio indica in genere che l'applicazione è già stata rimossa o che l'archivio è danneggiato. Dopo aver fatto clic su **OK**, la voce **Aggiungi/Rimuovi programma** verrà rimossa.
 
 #### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>Durante l'installazione viene visualizzato un messaggio che indica che le dipendenze della piattaforma non sono installate
  Manca un prerequisito nella GAC (Global Assembly Cache) necessario per l'esecuzione dell'applicazione.
@@ -138,7 +138,7 @@ In questo articolo vengono elencati gli errori comuni seguenti che possono verif
 | Non è possibile attivare i collegamenti sulla rete. | I collegamenti a un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione possono essere avviati solo sul disco rigido locale. Non possono essere avviati aprendo un URL che punta a un file di collegamento in un server remoto. |
 | L'applicazione è troppo grande per l'esecuzione online in attendibilità parziale. Per assistenza, contattare il fornitore dell'applicazione o l'amministratore di sistema. | Un'applicazione che viene eseguita con attendibilità parziale non può essere maggiore della metà delle dimensioni della quota dell'applicazione online, che per impostazione predefinita è 250 MB. |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Risoluzione dei problemi relativi alle distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
 - [Risoluzione dei problemi di Visual Studio](/troubleshoot/visualstudio/welcome-visual-studio/)

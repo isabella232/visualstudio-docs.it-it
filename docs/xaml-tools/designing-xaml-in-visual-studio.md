@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 5be85715efa3086a5a225da45501697440053cc5
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: fc6c05b925c8dac5c488ce3eea79ca683b590b72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796706"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876420"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Progettare XAML in Visual Studio e Blend per Visual Studio
 
@@ -62,7 +62,7 @@ Per aumentare la produttività, è consigliabile usare Blend per Visual Studio p
 
 Per altre informazioni sulla progettazione XAML avanzata, vedere [Creare un'interfaccia utente usando Blend per Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica di XAML](xaml-overview.md)
 - [Panoramica di Blend per Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md)

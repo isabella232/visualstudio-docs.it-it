@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d7e43183-444c-4417-af19-82e28229f83a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6fc3e89adbf47bc8a430693694dbc45fe2ff9c0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c041a9dca28dfbd0b1138e45809143e87d0809db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720975"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876069"
 ---
 # <a name="idebugpropertycreateevent2getdebugproperty"></a>IDebugPropertyCreateEvent2::GetDebugProperty
 Ottiene la nuova proprietà.
@@ -28,13 +28,13 @@ Ottiene la nuova proprietà.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetDebugProperty ( 
+HRESULT GetDebugProperty ( 
    IDebugProperty2** ppProperty
 );
 ```
 
 ```csharp
-int GetDebugProperty ( 
+int GetDebugProperty ( 
    out IDebugProperty2 ppProperty
 );
 ```
@@ -46,6 +46,6 @@ out Restituisce un oggetto [IDebugProperty2](../../../extensibility/debugger/ref
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

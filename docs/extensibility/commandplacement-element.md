@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2828a32ea837e95be438aafa6ec4b31293a43a7
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 77c7ae72f9c4c776dd8535e54112dc43833705cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974068"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876108"
 ---
 # <a name="commandplacement-element"></a>Elemento CommandPlacement
 L'elemento CommandPlacement consente di includere pulsanti, gruppi e menu in più di un gruppo o menu. Utilizzando l'elemento CommandPlacement, non è necessario ridefinire completamente questi elementi per modificare l'aspetto di un'interfaccia utente.
@@ -43,7 +43,7 @@ L'elemento CommandPlacement consente di includere pulsanti, gruppi e menu in pi�
 |guid|Obbligatorio. GUID del set di comandi, come definito nell' [elemento symbols](../extensibility/symbols-element.md).|
 |id|Obbligatorio. ID del menu, del gruppo o del comando da inserire, come definito in `Symbols Element` .|
 |priority|Obbligatorio. Determina la posizione visiva dell'elemento nel relativo elemento padre.|
-|Condizione|Facoltativo. Vedere [Aattributes condizionale](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condizione|facoltativo. Vedere [Aattributes condizionale](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementi figlio
 
