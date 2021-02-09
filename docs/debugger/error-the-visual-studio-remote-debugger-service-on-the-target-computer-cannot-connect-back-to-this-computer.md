@@ -13,15 +13,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e879fdc1be2eba309258dd64b3c9d83639eb05f7
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ef556e19946789abb5805727ccc42c1a9230d9af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851073"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871260"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Errore: il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer
 Questo errore indica che il servizio debugger remoto è in esecuzione con un account utente che non è in grado di eseguire l'autenticazione quando tenta di connettersi al computer da cui si esegue il debug. Questo errore può verificarsi quando il debug remoto utilizza il motore di debug legacy e il debugger remoto viene eseguito come servizio.
@@ -73,6 +73,6 @@ Questo errore indica che il servizio debugger remoto è in esecuzione con un acc
 
 - Eseguire Remote Debugging Monitor come applicazione anziché come servizio.
 
-## <a name="see-also"></a>Vedere anche
-- [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
+## <a name="see-also"></a>Vedi anche
+- [Errori e risoluzione dei problemi di debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)
 - [Debug remoto](../debugger/remote-debugging.md)

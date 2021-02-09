@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 256b7858ed5714d716b31fa28c8cd463b96dbb8a
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1f6cae3ffb692161deb0b162a6432efe90f12bf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852745"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871650"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>Errore: si è verificato un timeout durante la valutazione della funzione &#39;funzione&#39; e l'operazione deve essere interrotta in modo non sicuro
 
@@ -44,8 +44,8 @@ Il messaggio di errore indica il nome della funzione che il debugger ha tentato 
 
 ### <a name="solution-3-disable-all-implicit-evaluation"></a>#3 soluzione: disabilitare tutta la valutazione implicita
 
-Se le soluzioni precedenti non consentono di risolvere il problema, passare a **strumenti**  >  **Opzioni**e deselezionare l'impostazione **debug**  >  **generale**  >  **Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**. Questa operazione Disabilita la maggior parte delle valutazioni di funzioni implicite e dovrebbe risolvere il problema.
+Se le soluzioni precedenti non consentono di risolvere il problema, passare a **strumenti**  >  **Opzioni** e deselezionare l'impostazione **debug**  >  **generale**  >  **Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**. Questa operazione Disabilita la maggior parte delle valutazioni di funzioni implicite e dovrebbe risolvere il problema.
 
 ### <a name="solution-4-enable-managed-compatibility-mode"></a>#4 soluzione: abilitare la modalità di compatibilità gestita
 
-Se si passa al motore di debug legacy, potrebbe essere possibile eliminare l'errore. Passare a **strumenti**  >  **Opzioni**e selezionare l'impostazione **debug**  >  **generale**  >  **Usa modalità di compatibilità gestita**. Per ulteriori informazioni, vedere [Opzioni di debug generali](../debugger/general-debugging-options-dialog-box.md).
+Se si passa al motore di debug legacy, potrebbe essere possibile eliminare l'errore. Passare a **strumenti**  >  **Opzioni** e selezionare l'impostazione **debug**  >  **generale**  >  **Usa modalità di compatibilità gestita**. Per ulteriori informazioni, vedere [Opzioni di debug generali](../debugger/general-debugging-options-dialog-box.md).

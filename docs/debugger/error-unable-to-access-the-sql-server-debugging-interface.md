@@ -12,15 +12,15 @@ dev_langs:
 - SQL
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae2d0ba3abf66aefe56921c51669787186d49f12
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: f14143052ed3eb65e74e284e0877d9b32cb17bf7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851515"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871091"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Errore: impossibile accedere all'interfaccia di debug di SQL Server
 Questo messaggio viene visualizzato quando si tenta di eseguire il debug di SQL su un computer in cui non è attivato questo tipo di debug.
@@ -29,5 +29,5 @@ Questo messaggio viene visualizzato quando si tenta di eseguire il debug di SQL 
 
 - Vedere [configurazione del debug SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug di SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6(v=vs.100))

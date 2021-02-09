@@ -13,15 +13,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b869a536ca3445069d9caf84eb862e407dfbe6dc
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: d574a10ba081a30f88583e035a18869e68976d18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871351"
 ---
 # <a name="error-site-uses-ip-address"></a>Errore: il sito utilizza un indirizzo IP
 Questo errore si verifica quando il debugger tenta di connettersi automaticamente a un'applicazione Web che utilizza un indirizzo IP ed è dovuto alla selezione di **Usa indirizzo IP specifico** anziché **Identificazione sito Web** in IIS.
@@ -36,5 +36,5 @@ Questo errore si verifica quando il debugger tenta di connettersi automaticament
 
 2. Modificare l'impostazione **Identificazione sito Web IIS**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

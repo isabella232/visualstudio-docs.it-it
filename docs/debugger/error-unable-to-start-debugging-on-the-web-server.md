@@ -23,15 +23,15 @@ helpviewer_keywords:
 - remote debugging, errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a0aa657abefa0638e62039cae8b6d15a33fdf51
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 94dcfdc05f2d852e1a433067b0a574444632195d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851424"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870883"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Errore: impossibile avviare il debug sul server Web
 
@@ -58,7 +58,7 @@ Il `Unable to start debugging on the Web server` messaggio è generico. In gener
 
 - Riavviare Visual Studio come amministratore e riprovare a eseguire il debug. Alcuni scenari di debug ASP.NET richiedono privilegi elevati.
 
-    È possibile configurare Visual Studio in modo che venga sempre eseguito come amministratore facendo clic con il pulsante destro del mouse sull'icona di collegamento di Visual Studio, scegliendo **proprietà > avanzate**e scegliendo Esegui sempre come amministratore.
+    È possibile configurare Visual Studio in modo che venga sempre eseguito come amministratore facendo clic con il pulsante destro del mouse sull'icona di collegamento di Visual Studio, scegliendo **proprietà > avanzate** e scegliendo Esegui sempre come amministratore.
 
 ## <a name="the-web-server-is-not-configured-correctly"></a><a name="web_server_config"></a> Il server Web non è configurato correttamente
 
@@ -166,5 +166,5 @@ Se la configurazione di IIS non causa il problema, effettuare le seguenti operaz
 
     Se non è possibile fare in modo che l'app funzioni con il debugger, provare a creare un'applicazione ASP.NET di base localmente nel server e provare a eseguire il debug dell'app di base. (Potrebbe essere necessario usare il modello MVC ASP.NET predefinito). Se è possibile eseguire il debug di un'app di base, può essere utile per identificare le differenze tra le due configurazioni. Individuare le differenze nelle impostazioni nel file di web.config, ad esempio le regole di riscrittura URL.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

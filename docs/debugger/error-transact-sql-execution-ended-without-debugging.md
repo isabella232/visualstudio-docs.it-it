@@ -12,15 +12,15 @@ dev_langs:
 - SQL
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 66a1f60673d1bdfb58b1a101bd1571637c41f556
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 660b6c8b1f8d09baf35d3d019fe80d428e9d7525
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851528"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871130"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Errore: esecuzione Transact-SQL terminata senza debug
 
@@ -46,9 +46,9 @@ Questo problema riguarda due account:
 
   - Consultare l'amministratore della rete o del database.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Impostazione del debug SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
 - [Procedura: impostare le autorizzazioni SQL Server per il debug](/previous-versions/w1bhybwz(v=vs.100))
-- [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)
+- [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)
 - [Debug remoto](../debugger/remote-debugging.md)

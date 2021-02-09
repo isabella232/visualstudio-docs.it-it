@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bc0fe09078493814d1ff12108ccdada36e8da1f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 22fa1b7f332d6a9f6481c513a3c2024a3551c7a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852628"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871585"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Errore: il debug in modalità mista per i processi IA64 non è supportato
 Il debugger di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] non supporta il debug di codice nativo e gestito misto in un processo basato su Itanium.
@@ -28,5 +28,5 @@ Il debugger di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] non sup
 
 - Compilare una versione a 32 bit dell'applicazione per il debug.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug remoto](../debugger/remote-debugging.md)
