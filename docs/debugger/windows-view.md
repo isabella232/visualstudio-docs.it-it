@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 717c0f18d5443f712151a2f8318c56a8e738f6d7
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 34a66e9c2728798330b52f87afe8ecdea8733508
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205372"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906328"
 ---
 # <a name="windows-view"></a>Visualizzazione finestre
 Alla prima apertura di Spy + +, visualizzazione di Windows visualizza un albero di tutte le finestre e i controlli nel sistema. Vengono visualizzati l'handle della finestra e il nome della classe. La finestra del desktop corrente si trova nella parte superiore dell'albero. Tutte le altre finestre sono elementi figlio del desktop e sono elencate in base alla gerarchia standard della finestra. Le finestre di pari livello vengono visualizzate negli elenchi di espandibili rientrate sotto gli elementi padre.

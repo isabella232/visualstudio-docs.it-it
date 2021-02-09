@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 481f7579-f784-49ef-bb6c-2944e9d6ab42
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 18d7d2266ec21a3eee983474e433d72245658c43
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: a8842e4c9ec2a8513b42a34cb4c4a5c18ffedf31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721541"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906732"
 ---
 # <a name="instrumentation-method-data-views"></a>Visualizzazioni dei dati del metodo di strumentazione
 Questa sezione contiene informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler generati tramite il metodo di strumentazione.
@@ -44,7 +44,7 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 
  Elenca i dati di profilatura per funzione.
 
-## <a name="reference"></a>Informazioni di riferimento
+## <a name="reference"></a>Riferimento
 - [Visualizzazione Dettagli funzione](../profiling/function-details-view.md)
 
  Visualizza un grafico della relazione tra una funzione selezionata e le funzioni che hanno chiamato e che sono state chiamate dalla funzione selezionata.
@@ -66,5 +66,5 @@ Questa sezione contiene informazioni di riferimento per le visualizzazioni e i r
 
  Informazioni di riferimento per le visualizzazioni e i rapporti dei file di dati del profiler generati tramite il metodo di conflitti di thread.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Informazioni sui valori dei dati di strumentazione](../profiling/understanding-instrumentation-data-values.md)

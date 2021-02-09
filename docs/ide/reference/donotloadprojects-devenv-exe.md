@@ -10,15 +10,15 @@ helpviewer_keywords:
 - DoNotLoadProjects Devenv switch
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ef3502a2180f7ae7ed5963deb14844b46f3dbff9
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fb43d3a12e50d3f4a7af43721a5e93b769da28ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040628"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907588"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
 
@@ -46,7 +46,7 @@ L'esempio apre la soluzione MySln.sln senza caricare alcun progetto.
 devenv /donotloadprojects MySln.sln
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Soluzioni filtrate in Visual Studio](../filtered-solutions.md)
 - [Opzioni della riga di comando devenv](../../ide/reference/devenv-command-line-switches.md)

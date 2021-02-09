@@ -14,16 +14,16 @@ helpviewer_keywords:
 - profiler, JavaScript [UWP apps]
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 6545fb206096c7b74a7016b506ae3bcade7f136c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: d8756b25f1223f5c7158405748fa69e402f53003
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721879"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906914"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizzare la velocità di risposta dell'interfaccia utente HTML nelle app di Windows universali
 Questo argomento descrive come isolare i problemi di prestazioni nelle app usando il profiler della velocità di risposta dell'interfaccia utente, uno strumento per le prestazioni disponibile per le app di Windows universali.
@@ -326,7 +326,7 @@ if (performance.mark && performance.measure) {
 
   Questa tabella mostra gli eventi e le relative descrizioni:
 
-|Event|Categoria evento|Ambito|
+|Evento|Categoria evento|Ambito|
 |-----------|--------------------|-----------------|
 |Analisi CSS|Caricamento|È stato rilevato nuovo contenuto CSS e ne è stata tentata l'analisi.|
 |Analisi HTML|Caricamento|È stato rilevato nuovo contenuto HTML ed è stata tentata l'analisi del contenuto nei nodi e l'inserimento del contenuto nell'albero DOM.|
@@ -358,5 +358,5 @@ if (performance.mark && performance.measure) {
 
 - Per informazioni sulle prestazioni e sul modello di esecuzione di codice a thread singolo, vedere [Esecuzione di codice](/previous-versions/windows/apps/hh781217\(v\=win.10\)).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - debugging JavaScript, console [UWP apps]
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 2877b3ca9fb644ae4dae1af27e79e6ee52423b97
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: d874b2831d906a42856e71d42dac6df1a1fe8d6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903909"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906384"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Comandi della console JavaScript in Visual Studio
 
@@ -127,6 +127,6 @@ console.log("%s is %f years old!", user.first, user.age);
 // Fred is 10.01 years old!
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true)
 - [Guida introduttiva: Eseguire il debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017&preserve-view=true)

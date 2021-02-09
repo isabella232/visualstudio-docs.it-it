@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], security
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b47a18aa3e791d446abc2a57b6aad1f139924ebf
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c778ed98a3f5d17007acccd2f16208ece3237037
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906740"
 ---
 # <a name="secure-deployment"></a>Distribuzione sicura
   Quando si crea una soluzione Office, il computer di sviluppo viene aggiornato automaticamente per consentire l'esecuzione del codice nel progetto. Tuttavia, quando si distribuisce la soluzione, è necessario fornire l'evidenza su quale basare una decisione di attendibilità firmando la soluzione con un certificato o usando la [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] chiave della richiesta di attendibilità. Per altre informazioni, vedere [concedere l'attendibilità alle soluzioni Office](../vsto/granting-trust-to-office-solutions.md).
@@ -46,7 +46,7 @@ ms.locfileid: "97528473"
 
   Per consentire alle soluzioni Office di eseguire codice, impostare entrambe le `Disabled` voci su 0 (zero) o eliminare le voci del registro di sistema.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)
 - [Preparare i computer per l'esecuzione o l'hosting di soluzioni Office](/previous-versions/bb772092(v=vs.110))
 - [Soluzioni Office sicure](../vsto/securing-office-solutions.md)

@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: af194a324840bc3e8b8e67199c7e213d7dca96c9
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: c788be648b77a36b8da7027c89a7d9cb047b57d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907096"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Procedura: Fare riferimento alle informazioni sui simboli di Windows
 Gli strumenti di profilatura di Visual Studio usano file di simboli (con estensione *pdb*) per risolvere i nomi simbolici, ad esempio i nomi delle funzioni nei file binari del programma. È possibile seguire questa procedura per scaricare e aggiornare automaticamente i file *pdb* corretti per la versione di Windows nel computer locale.
@@ -48,6 +48,6 @@ Gli strumenti di profilatura di Visual Studio usano file di simboli (con estensi
 
      È anche possibile fare clic sul pulsante con i puntini di sospensione (**...**) e quindi selezionare una directory dalla finestra di dialogo **Sfoglia per cartelle**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)
 - [Procedura: serializzare le informazioni sui simboli](../profiling/how-to-serialize-symbol-information.md)

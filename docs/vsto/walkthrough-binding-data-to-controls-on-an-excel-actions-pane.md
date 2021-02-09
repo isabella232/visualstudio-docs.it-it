@@ -17,15 +17,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], data binding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6c53f4c1dfe9838fe4522dcc71b675a7f6b868d4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 75df7a3a9ddfa6009b0002bfe83b57f2d91e6e0d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524977"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906564"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Procedura dettagliata: associare dati a controlli in un riquadro azioni di Excel
   Questa procedura dettagliata illustra data binding ai controlli in un riquadro azioni in Microsoft Office Excel. I controlli mostrano una relazione master/detail tra le tabelle in un database SQL Server.
@@ -38,7 +38,7 @@ ms.locfileid: "97524977"
 
 - Creazione di un controllo del riquadro azioni.
 
-- Aggiunta di controlli Windows Forms associati a dati a un controllo del riquadro azioni.
+- Aggiunta di controlli Windows Form associati a dati a un controllo del riquadro azioni.
 
 - Visualizzazione del riquadro azioni all'apertura dell'applicazione.
 
@@ -125,7 +125,7 @@ ms.locfileid: "97524977"
 
 3. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare il **controllo riquadro azioni**, denominarlo **ActionsControl** e fare clic su **Aggiungi**.
 
-### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Per aggiungere controlli Windows Forms associati a dati a un controllo del riquadro azioni
+### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Per aggiungere controlli Windows Form associati a dati a un controllo del riquadro azioni
 
 1. Dalle schede **controlli comuni** della **casella degli strumenti** trascinare un <xref:System.Windows.Forms.ComboBox> controllo nel controllo del riquadro azioni.
 
@@ -166,7 +166,7 @@ ms.locfileid: "97524977"
      [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#4)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#4)]
 
-## <a name="test-the-application"></a>Test dell'applicazione
+## <a name="test-the-application"></a>Testare l'applicazione
  A questo punto è possibile testare il documento per verificare che il riquadro azioni si apra quando il documento viene aperto e che i controlli abbiano una relazione master/dettagli.
 
 ### <a name="to-test-your-document"></a>Per testare il documento
@@ -186,7 +186,7 @@ ms.locfileid: "97524977"
 
 - Distribuzione del progetto. Per altre informazioni, vedere [distribuire una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)
 - [Procedura: gestire il layout di controllo nei riquadri azioni](../vsto/how-to-manage-control-layout-on-actions-panes.md)
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)

@@ -6,19 +6,19 @@ ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: a041c077a41ce6b37d74507723ec1ce0f8c9585c
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 19e755e4b56675265d85a416684f2b42bd7ccd13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040785"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907651"
 ---
 # <a name="convert-anonymous-type-to-class"></a>Conversione di tipi anonimi in classe
 
@@ -45,6 +45,6 @@ Questo refactoring si applica a:
 
    ![Conversione del tipo anonimo in classe accettata](media/convert-anon-to-class-complete.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)

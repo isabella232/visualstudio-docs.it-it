@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], text boxes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c499800efa783ce252dbf925f307bc64e814420f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 270754005704d91569f014ed2e0be382bc2dd707
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522640"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906474"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Procedura dettagliata: visualizzare il testo in una casella di testo di un foglio di testo utilizzando un pulsante
   Questa procedura dettagliata illustra le nozioni di base sull'uso di pulsanti e caselle di testo in Microsoft Office fogli di lavoro di Excel e su come creare progetti Excel usando gli strumenti di sviluppo di Office in Visual Studio. Per visualizzare il risultato come esempio completo, vedere l'esempio relativo ai controlli di Excel in [esempi e procedure dettagliate per lo sviluppo di Office](../vsto/office-development-samples-and-walkthroughs.md).
@@ -71,10 +71,10 @@ ms.locfileid: "97522640"
 
 5. Trascinare un controllo **Button** su `Sheet1` e modificare le proprietà seguenti:
 
-   |Proprietà|valore|
+   |Proprietà|Valore|
    |--------------|-----------|
    |**Nome**|**insertText**|
-   |**Testo**|**Inserisci testo**|
+   |**Text**|**Inserisci testo**|
 
    A questo punto, scrivere il codice da eseguire quando si fa clic sul pulsante.
 
@@ -94,7 +94,7 @@ ms.locfileid: "97522640"
 
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#12)]
 
-## <a name="test-the-application"></a>Test dell'applicazione
+## <a name="test-the-application"></a>Testare l'applicazione
  È ora possibile testare la cartella di lavoro per verificare che il messaggio **Hello World!** viene visualizzato nella casella di testo quando si fa clic sul pulsante.
 
 ### <a name="to-test-your-workbook"></a>Per testare la cartella di lavoro
@@ -112,7 +112,7 @@ ms.locfileid: "97522640"
 
 - Utilizzare le caselle di controllo per modificare la formattazione. Per altre informazioni, vedere [procedura dettagliata: modificare la formattazione del foglio di controllo tramite i controlli CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
 
-## <a name="see-also"></a>Vedere anche
-- [Procedura: aggiungere controlli Windows Forms ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+## <a name="see-also"></a>Vedi anche
+- [Procedura: aggiungere controlli Windows Form ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [Procedure dettagliate con Excel](../vsto/walkthroughs-using-excel.md)
-- [Limitazioni dei controlli Windows Forms nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [Limitazioni dei controlli Windows Form nei documenti di Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

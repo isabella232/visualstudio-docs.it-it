@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf008bd7c1355f5991890ca5ab8bd999f2a8dd32
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: df8d9545ce8179451530e2eb30bef7f98ba365d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305443"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907545"
 ---
 # <a name="error-list-window"></a>Finestra Elenco errori
 
@@ -68,7 +68,7 @@ Se ai risultati della ricerca è applicato un filtro, il nome del filtro viene v
 
 L'elenco sul lato destro della barra degli strumenti specifica se visualizzare errori di compilazione (errori risultanti da un'operazione di compilazione) o di IntelliSense (errori rilevati prima di eseguire una compilazione) o di entrambi.
 
-## <a name="search"></a>Ricerca
+## <a name="search"></a>Cerca
 
 Usare la casella di testo **Elenco errori di ricerca** sul lato destro della barra degli strumenti **Elenco errori** per trovare errori specifici nell'elenco errori. È possibile cercare una colonna visibile nell'elenco errori e i risultati di ricerca vengono sempre ordinati in base alla colonna con priorità di ordinamento anziché alla query o al filtro applicato. Se si sceglie il tasto **Esc** mentre è attivo l'**Elenco errori**, è possibile cancellare il termine di ricerca e i risultati di ricerca filtrati. È anche possibile fare clic sulla **X** sul lato destro della casella di testo per cancellare il contenuto.
 
@@ -98,6 +98,6 @@ File
 
 Visualizza il nome del file.
 
-Riga
+Linea
 
 Visualizza la riga in cui si è verificato l'errore.

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], data binding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 76dffda9b332b9b76d6c0e0a423073959bcc7a56
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 7599348b0c44b7239305bb5af49ee2f5c51d882b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526207"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906584"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Procedura dettagliata: associare dati a controlli in un riquadro azioni di Word
   Questa procedura dettagliata illustra data binding a controlli in un riquadro azioni in Word. I controlli mostrano una relazione master/detail tra le tabelle in un database SQL Server.
@@ -34,7 +34,7 @@ ms.locfileid: "97526207"
 
  Vengono illustrate le attività seguenti:
 
-- Creazione di un riquadro azioni con Windows Forms controlli associati ai dati.
+- Creazione di un riquadro azioni con Windows Form controlli associati ai dati.
 
 - Utilizzo di una relazione Master/Detail per visualizzare i dati nei controlli.
 
@@ -66,7 +66,7 @@ ms.locfileid: "97526207"
      Visual Studio apre il nuovo documento di Word nella finestra di progettazione e aggiunge il progetto del **riquadro azioni di Word** a **Esplora soluzioni**.
 
 ## <a name="add-controls-to-the-actions-pane"></a>Aggiungere controlli al riquadro azioni
- Per questa procedura dettagliata è necessario un controllo del riquadro azioni che contiene i controlli di Windows Forms associati a dati. Aggiungere un'origine dati al progetto, quindi trascinare i controlli dalla finestra **origini dati** al controllo del riquadro azioni.
+ Per questa procedura dettagliata è necessario un controllo del riquadro azioni che contiene i controlli di Windows Form associati a dati. Aggiungere un'origine dati al progetto, quindi trascinare i controlli dalla finestra **origini dati** al controllo del riquadro azioni.
 
 ### <a name="to-add-an-actions-pane-control"></a>Per aggiungere un controllo del riquadro azioni
 
@@ -101,7 +101,7 @@ ms.locfileid: "97526207"
 
    La procedura guidata consente di aggiungere la tabella **Suppliers** e **Products** alla finestra **origini dati** . Aggiunge anche un set di dati tipizzato al progetto che è visibile in **Esplora soluzioni**.
 
-### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Per aggiungere controlli Windows Forms associati a dati a un controllo del riquadro azioni
+### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Per aggiungere controlli Windows Form associati a dati a un controllo del riquadro azioni
 
 1. Nella finestra **origini dati** espandere la tabella **Suppliers** .
 
@@ -132,10 +132,10 @@ ms.locfileid: "97526207"
 
 11. Fare clic con il pulsante destro del mouse su <xref:System.Windows.Forms.Button> , scegliere **Proprietà** dal menu di scelta rapida e modificare le proprietà seguenti.
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**Inserimento**|
-    |**Testo**|**Inserimento**|
+    |**Text**|**Inserimento**|
 
 12. Ridimensionare il controllo utente per adattarlo ai controlli.
 
@@ -216,7 +216,7 @@ ms.locfileid: "97526207"
      [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
      [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]
 
-## <a name="test-the-application"></a>Test dell'applicazione
+## <a name="test-the-application"></a>Testare l'applicazione
  A questo punto è possibile testare il documento per verificare che il riquadro azioni venga visualizzato all'apertura del documento. Verificare la relazione master/dettaglio nei controlli nel riquadro azioni e assicurarsi che i dati vengano inseriti in una tabella di Word quando si fa clic sul pulsante **Inserisci** .
 
 ### <a name="to-test-your-document"></a>Per testare il documento
@@ -238,7 +238,7 @@ ms.locfileid: "97526207"
 
 - Distribuzione del progetto. Per altre informazioni, vedere [distribuire una soluzione Office tramite ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)
 - [Procedura: aggiungere un riquadro azioni ai documenti di Word o alle cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Associare i dati ai controlli nelle soluzioni Office](../vsto/binding-data-to-controls-in-office-solutions.md)

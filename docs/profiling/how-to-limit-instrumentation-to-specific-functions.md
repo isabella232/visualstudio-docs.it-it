@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 92825f77b1c94a7545b399dbc1cb35ecefb8218d
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 2b1ce5af864a87691fab5b4026e797dc6eb970bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883332"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907258"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Procedura: Limitare la strumentazione a funzioni specifiche
 È possibile limitare la strumentazione e la raccolta dei dati a una o più funzioni impostando le opzioni nella pagina **Avanzate** di **Sessione prestazioni** o nelle pagine delle proprietà del file binario di destinazione:
@@ -44,10 +44,10 @@ ms.locfileid: "98883332"
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]**`...`
 
-    `FuncSpec` è il nome dello spazio dei nomi e della funzione Il formato è `Namespace` **:** `FunctionName` . Usare un punto e virgola per separare più funzioni. Usare un asterisco (\*) per specificare un carattere jolly per uno o più caratteri. Ad esempio, **/include: MyNS:: \\** _ specifica tutte le funzioni nello spazio dei nomi MyNS.
+    `FuncSpec` è il nome dello spazio dei nomi e della funzione Il formato è `Namespace` **:** `FunctionName` . Usare un punto e virgola per separare più funzioni. Usare un asterisco (\*) per specificare un carattere jolly per uno o più caratteri. Ad esempio, **/include: MyNS::\\*** specifica tutte le funzioni nello spazio dei nomi MyNS.
 
    > [!NOTE]
-   > Per elencare le funzioni in un file binario, aprire una finestra del prompt dei comandi nella directory di installazione Strumenti di profilatura (vedere [specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e quindi digitare _ *vsinstr/DumpFuncs**
+   > Per elencare le funzioni in un file binario, aprire una finestra del prompt dei comandi nella directory di installazione degli strumenti di profilatura (vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e quindi digitare **vsinstr /DumpFuncs**
 
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>Per limitare la strumentazione a specifiche funzioni in un file binario
 
@@ -63,10 +63,10 @@ ms.locfileid: "98883332"
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]**`...`
 
-    `FuncSpec` è il nome dello spazio dei nomi e della funzione Il formato è `Namespace` **:** `FunctionName` . Usare un punto e virgola per separare più funzioni. Usare un asterisco (\*) per specificare un carattere jolly per uno o più caratteri. Ad esempio, **/include: MyNS:: \\** _ specifica tutte le funzioni nello spazio dei nomi MyNS.
+    `FuncSpec` è il nome dello spazio dei nomi e della funzione Il formato è `Namespace` **:** `FunctionName` . Usare un punto e virgola per separare più funzioni. Usare un asterisco (\*) per specificare un carattere jolly per uno o più caratteri. Ad esempio, **/include: MyNS::\\*** specifica tutte le funzioni nello spazio dei nomi MyNS.
 
    > [!NOTE]
-   > Per elencare le funzioni in un file binario, aprire una finestra del prompt dei comandi nella directory di installazione Strumenti di profilatura (vedere [specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e quindi digitare _ *vsinstr/DumpFuncs**
+   > Per elencare le funzioni in un file binario, aprire una finestra del prompt dei comandi nella directory di installazione degli strumenti di profilatura (vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e quindi digitare **vsinstr /DumpFuncs**
 
 ## <a name="see-also"></a>Vedi anche
 - [Controllare la raccolta dati](../profiling/controlling-data-collection.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 4478b3d5-aa30-4105-8d05-e3bae2f8917a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d6598e0407311160232c473d92a032a0ee105d05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43c37ee56ccd90799d099f25e73f2ea9a72aa23d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725379"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907906"
 ---
 # <a name="idebugport2getportname"></a>IDebugPort2::GetPortName
 Ottiene il nome della porta.
@@ -28,13 +28,13 @@ Ottiene il nome della porta.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetPortName( 
+HRESULT GetPortName( 
    BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetPortName( 
+int GetPortName( 
    out string pbstrName
 );
 ```
@@ -46,5 +46,5 @@ out Restituisce il nome della porta.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

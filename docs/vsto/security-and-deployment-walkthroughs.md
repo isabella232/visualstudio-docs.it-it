@@ -14,15 +14,15 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0a750aa97c371ce25c7b6797ee773e82d8ab8eb6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9101c59dddd0f5c3488c91c0ac7054ebb56cc2f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524368"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906580"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Procedure dettagliate relative alla sicurezza e alla distribuzione
   Gli argomenti seguenti illustrano come è possibile impostare i criteri di sicurezza per consentire l'esecuzione della soluzione e come è possibile distribuire la soluzione Office.
@@ -60,5 +60,5 @@ ms.locfileid: "97524368"
 
 - [Progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md) Fornisce collegamenti a informazioni sulla creazione di soluzioni Word ed Excel e sul ruolo degli assembly nella soluzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedure dettagliate e esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md)
