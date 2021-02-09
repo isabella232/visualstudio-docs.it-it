@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ece3916f0af442b67bb5cdd0999ad37159e53448
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 47875bcece910433a1d20ad66867acd7fdbee8d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901180"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841924"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
 
@@ -59,7 +59,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**/CollectionName:**`CollectionName`|Specifica il nome dell'insieme di progetti sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionId**.|
 |**/CollectionId:**`CollectionId`|Specifica il numero di identificazione dell'insieme di progetti sulla quale eseguire il comando **CodeIndex**. Obbligatoria se non si usa **/CollectionName**.|
 
-## <a name="examples"></a>Esempi
+## <a name="examples"></a>Esempio
 
 > [!NOTE]
 > Società, organizzazioni, prodotti, nomi di dominio, indirizzi di posta elettronica, logo, persone, luoghi ed eventi citati nell'esempio sono puramente immaginari.  Nessuna associazione con nessuna società, organizzazione, prodotto, nome di dominio, indirizzo di posta elettronica, logo, persona, luogo o evento è intenzionale o può essere presupposta.
@@ -124,7 +124,7 @@ Per eliminare l'indice di codice con conferma:
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
 - [Managing server configuration with TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd) (Gestione della configurazione del server con TFSConfig)

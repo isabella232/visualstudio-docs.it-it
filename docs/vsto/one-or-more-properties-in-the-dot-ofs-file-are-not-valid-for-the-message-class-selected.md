@@ -11,15 +11,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b655a7bb6ab4b9ab971c0edd775aa8f29150dead
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b22870cdb038adee84adc0fd7a56c269cb048626
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525086"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841914"
 ---
 # <a name="invalid-properties-in-the-ofs-file-for-the-message-class"></a>Proprietà non valide nel file OFS per la classe Message
 
@@ -35,5 +35,5 @@ Ad esempio, è possibile selezionare **Task (IPM.Task)** nella pagina finale del
 
 - In progettazione form in Outlook rimuovere i campi non compatibili con le classi messaggio. Rimuovere i campi che si intende selezionare nella pagina finale della procedura guidata **nuova area del modulo** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: importare un'area del modulo progettata in Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)

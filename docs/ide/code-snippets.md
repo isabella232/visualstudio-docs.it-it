@@ -12,19 +12,19 @@ helpviewer_keywords:
 - code snippets
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 52059dd464ad0c720a4a2e77a961b7d6f3525c6d
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 642bfe9fdccaa607476facb792120502437cb4b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006393"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841968"
 ---
 # <a name="code-snippets"></a>Frammenti di codice
 
@@ -64,7 +64,7 @@ finally
 
 Per inserire questo frammento di codice, fare clic su **Inserisci frammento** di codice nel menu di scelta rapida della finestra del codice, quindi su **Visual C#**, digitare `tryf` e quindi premere **Tab**. In alternativa, è possibile digitare `tryf` e premere due volte **Tab** .
 
-Un esempio di un frammento Racchiudi tra: in C++ il collegamento `if` può essere usato come frammento di inserimento o come frammento Racchiudi tra. Se si seleziona una riga di codice (ad esempio `return FALSE;` ) e quindi si sceglie **Racchiudi tra**  >  **if**, il frammento viene espanso intorno alla riga:
+Un esempio di un frammento Racchiudi tra: in C++ il collegamento `if` può essere usato come frammento di inserimento o come frammento Racchiudi tra. Se si seleziona una riga di codice (ad esempio `return FALSE;` ) e quindi si sceglie **Racchiudi tra**  >  , il frammento viene espanso intorno alla riga:
 
 ```cpp
 if (true)

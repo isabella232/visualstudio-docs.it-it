@@ -2,18 +2,18 @@
 title: Aggiungere spazio di archiviazione di Azure usando Servizi connessi | Microsoft Docs
 description: Aggiungere una dipendenza del servizio di archiviazione di Azure all'app usando Visual Studio Servizi connessi
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: d169940d6deffdf67bcbcb94e9f647631d0f606a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a2aa5a0453b6a05c261d3cac853ab8265fb4e453
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902636"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844346"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Aggiunta dell’archiviazione di Azure tramite Servizi connessi di Visual Studio
 
@@ -22,7 +22,7 @@ Con Visual Studio, è possibile connettere uno dei seguenti ad archiviazione di 
 - App console .NET Framework
 - MVC ASP.NET (.NET Framework)
 - ASP.NET Core
-- .NET Core (incluse app console, WPF, Windows Forms, libreria di classi)
+- .NET Core (incluse app console, WPF, Windows Form, libreria di classi)
 - Ruolo di lavoro .NET Core
 - Funzioni di Azure
 - App piattaforma UWP (Universal Windows Platform)
@@ -116,7 +116,7 @@ La funzionalità servizio connesso aggiunge al progetto tutti i riferimenti rich
 1. Il servizio connesso di archiviazione viene visualizzato sotto il nodo **Riferimenti servizio** del progetto.
 :::moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Forum di Archiviazione di Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Documentazione di Archiviazione di Azure](/azure/storage/)
