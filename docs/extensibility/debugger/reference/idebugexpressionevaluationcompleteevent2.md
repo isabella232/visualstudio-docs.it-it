@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d538fc19-55bf-4231-9595-eb01e84fd1d8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35e57e361b59e76e187617b5e528b219e8e47897
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74e31339b48e49869ce76ce9a3b20a14dcb0acf5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930460"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 Questa interfaccia viene inviata dal motore di debug (DE) al gestore di debug della sessione (SDM) quando viene completata la valutazione dell'espressione asincrona.
@@ -42,7 +42,7 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
 |[GetExpression](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getexpression.md)|Ottiene l'espressione originale.|
 |[GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)|Ottiene il risultato della valutazione dell'espressione.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il DE deve inviare questo evento, indipendentemente dal fatto che la valutazione abbia avuto esito positivo o negativo.
 
  Se la valutazione ha esito negativo, `DEBUG_PROPINFO_VALUE` i `DEBUG_PROPINFO_ATTRIB` flag e non verranno impostati nella struttura [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) restituita da [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) (l'oggetto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) viene creato da de e restituito nell' `IDebugExpressionEvaluationCompleteEvent2` evento se la valutazione non riesce).
@@ -54,7 +54,7 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 52c42a2e-f144-476b-8bef-442464c8fe8e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a6ba87d6c1a1f7370ce5e209440589f362b87035
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13759bc8598c4739fbb9d2263dd8dc7d1b84c16e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930421"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 Questo metodo converte il percorso e l'offset di un metodo in un indirizzo di memoria.
@@ -28,7 +28,7 @@ Questo metodo converte il percorso e l'offset di un metodo in un indirizzo di me
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetMethodLocationProperty( 
+HRESULT GetMethodLocationProperty( 
    LPCOLESTR             upstrFullyQualifiedMethodPlusOffset,
    IDebugSymbolProvider* pSymbolProvider,
    IDebugAddress*        pAddress,
@@ -66,12 +66,12 @@ out Restituisce un'interfaccia [IDebugProperty2](../../../extensibility/debugger
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'indirizzo restituito può essere utilizzato per impostare un punto di interruzione, ad esempio.
 
  Nonostante il nome `upstrFullyQualifiedMethodPlusOffset` , è possibile passare un nome di metodo parzialmente qualificato a questo parametro. In tal caso, il metodo selezionato è quello che racchiude `pAddress` . Il modo in cui questo parametro viene interpretato dipende dall'implementazione dell'analizzatore di espressioni e dal linguaggio supportato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

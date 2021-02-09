@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e6825000-e195-42b4-b296-bfe1e533d79b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b3c6cd55293bf34b0c2780dd76eaf8f4ee81bb69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1680c2e68a72c985236e501281100fa4e8b7d1f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929381"
 ---
 # <a name="ienumdebugcustomattributesclone"></a>IEnumDebugCustomAttributes::Clone
 Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.
@@ -28,7 +28,7 @@ Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumerator
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT Clone ( 
+HRESULT Clone ( 
    IEnumCustomAttributes** ppEnum
 );
 ```
@@ -46,8 +46,8 @@ int Clone(
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  La copia dell'enumerazione ha lo stesso stato dell'originale al momento della chiamata di questo metodo. Tuttavia, gli Stati della copia e dell'originale sono separati e possono essere modificati singolarmente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

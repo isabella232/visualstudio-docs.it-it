@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3aafb28715f58eaba4499b47a2e1dee15b82ed14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63803b84e3d00bddef2238a627300522a4e7c294
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929784"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Recupera un elenco di percorsi in cui vengono cercati i simboli e i risultati della ricerca in ogni percorso.
@@ -55,7 +55,7 @@ Se il metodo ha esito positivo, restituisce `S_OK` ; in caso contrario, restitui
 > [!NOTE]
 > La stringa restituita (nella `MODULE_SYMBOL_SEARCH_INFO` struttura) può essere vuota anche se `S_OK` viene restituito. In questo caso, non sono presenti informazioni di ricerca da restituire.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Se il `bstrVerboseSearchInfo` campo della `MODULE_SYMBOL_SEARCH_INFO` struttura non è vuoto, contiene un elenco di percorsi cercati e i risultati della ricerca. L'elenco è formattato con un percorso, seguito da un pulsante con i puntini di sospensione ("..."), seguito dal risultato. Se è presente più di una coppia di risultati di percorso, ogni coppia è separata da una coppia "\r\n" (ritorno a capo/avanzamento riga). Il modello ha un aspetto simile al seguente:
 
 \<path>...\<result> \r\n \<path> ... \<result> \r\n \<path> ...\<result>
@@ -86,9 +86,9 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 
 **c:\symbols\user32.pdb... Il file non è stato trovato.** 
  **c:\winnt\symbols\user32.pdb... La versione non corrisponde.** 
- ** \\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb... Simboli caricati.**
+ **\\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb... Simboli caricati.**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)
 - [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)

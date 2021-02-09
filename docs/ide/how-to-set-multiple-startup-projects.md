@@ -10,15 +10,15 @@ ms.assetid: 6131eb80-8745-4eb9-bdab-433e69b41651
 ms.technology: vs-ide-compile
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99d8f93dc21925b997828adb541b7ee2f0337b6c
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: f51ae283f94703b7d7572ae51308da660784e80e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930239"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Procedura: Impostare più progetti di avvio
 
@@ -34,7 +34,7 @@ Visual Studio consente di specificare la modalità di esecuzione di più progett
 
 4. Scegliere l'opzione **Progetti di avvio multipli** e impostare le azioni appropriate.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Compilare](../ide/compiling-and-building-in-visual-studio.md)
 - [Usare soluzioni e progetti](../ide/creating-solutions-and-projects.md)

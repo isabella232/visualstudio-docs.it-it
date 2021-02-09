@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a380e53c-15f1-401f-927f-f366eea789e6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd4c07f2b95ff3077de79d4bc63f4fad19b0c6fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44d60c2f0573bf60d827737b2a54ff16b49d610c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728612"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930003"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 Crea un oggetto Array. Questa matrice può contenere valori di istanze primitive o di oggetti.
@@ -28,7 +28,7 @@ Crea un oggetto Array. Questa matrice può contenere valori di istanze primitive
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT CreateArrayObject( 
+HRESULT CreateArrayObject( 
    OBJECT_TYPE    ot,
    IDebugField*   pClassField,
    DWORD          dwRank,
@@ -71,8 +71,8 @@ out Restituisce un oggetto [IDebugObject](../../../extensibility/debugger/refere
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Chiamare questo metodo per creare un oggetto che rappresenta un parametro di matrice per la funzione rappresentata dall'interfaccia [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

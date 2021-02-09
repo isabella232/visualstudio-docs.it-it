@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 8145d875-26b1-4049-a2a2-e7d3d7f4735f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e82f12b12c9afbc24f9416ec2639a4b9768d8fd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5daff1f0bd1928633a32021f96addcacd291694
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735409"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930473"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 Imposta il numero di passaggi per il punto di interruzione associato.
@@ -29,13 +29,13 @@ Imposta il numero di passaggi per il punto di interruzione associato.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT SetHitCount( 
+HRESULT SetHitCount( 
    DWORD dwHitCount
 );
 ```
 
 ```csharp
-int SetHitCount( 
+int SetHitCount( 
    uint dwHitCount
 );
 ```
@@ -47,11 +47,11 @@ in Numero di passaggi da impostare.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_BP_DELETED` se lo stato dell'oggetto punto di interruzione associato è impostato su `BPS_DELETED` (parte dell'enumerazione [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il numero di passaggi è il numero di volte in cui il punto di interruzione è stato generato durante l'esecuzione corrente della sessione.
 
  Questo metodo viene in genere chiamato dal motore di debug per aggiornare il numero di passaggi corrente su questo punto di interruzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

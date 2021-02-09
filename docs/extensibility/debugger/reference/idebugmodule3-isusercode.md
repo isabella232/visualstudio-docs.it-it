@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 77022946-bb8b-4114-aa81-614df6e54b13
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 435ec50ef5437e5aca5d3722a2041115882d15f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8b313ecdbc1168238bad517f34350a420fb30ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929771"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
 Recupera informazioni sul fatto che il modulo rappresenti o meno il codice utente.
@@ -28,8 +28,8 @@ Recupera informazioni sul fatto che il modulo rappresenti o meno il codice utent
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT IsUserCode(
-   BOOL* pfUser
+HRESULT IsUserCode(
+   BOOL* pfUser
 );
 ```
 
@@ -46,5 +46,5 @@ out Diverso da zero ( `TRUE` ) se il modulo rappresenta il codice utente, zero (
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3ae09d34-112c-4285-80ee-9f7f8dc414d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fbd270aa1b65f05f308d41d22f154fb53b8833d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b90540aaf5f7e409c8fc7fa44126f195230317f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727686"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929810"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 > [!IMPORTANT]
@@ -28,7 +28,7 @@ ms.locfileid: "80727686"
 ## <a name="syntax"></a>Sintassi
 
 ```
-IDebugManagedObject : IDebugObject
+IDebugManagedObject : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
@@ -45,7 +45,7 @@ IDebugManagedObject : IDebugObject
 |[GetManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-getmanagedobject.md)|Restituisce un'interfaccia che rappresenta l'oggetto codice gestito e da cui è possibile ottenere qualsiasi interfaccia di codice gestito appropriata.|
 |[SetFromManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject.md)|Imposta il valore di questo oggetto sul valore di un oggetto di codice gestito specificato.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Un analizzatore di espressioni usa questa interfaccia per archiviare un oggetto di codice gestito in un albero di analisi.
 
 ## <a name="requirements"></a>Requisiti
@@ -55,6 +55,6 @@ IDebugManagedObject : IDebugObject
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di valutazione delle espressioni](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [Valuta](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)

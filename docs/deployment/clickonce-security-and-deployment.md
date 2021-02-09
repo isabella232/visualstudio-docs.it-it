@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b055928212dd4b094f4bd8987f6ce03960e932f1
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 8bb0bdeae09f22a2b45e3029fbc9097c00911d2a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930018"
 ---
 # <a name="clickonce-security-and-deployment"></a>Sicurezza e distribuzione di ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è una tecnologia di distribuzione che consente di creare applicazioni basate su Windows con aggiornamento automatico che possono essere installate ed eseguite con interazioni utente minime. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fornisce supporto completo per la pubblicazione e l'aggiornamento di applicazioni distribuite con la tecnologia ClickOnce se i progetti sono stati sviluppati con Visual Basic e Visual C#. Per informazioni sulla distribuzione di applicazioni Visual C++, vedere [la pagina relativa alla distribuzione ClickOnce per le applicazioni Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).
@@ -40,7 +40,7 @@ ms.locfileid: "94382676"
   In passato, questi problemi causavano talvolta la creazione di applicazioni Web anziché di applicazioni basate su Windows, sacrificando un'interfaccia utente avanzata per semplificare l'installazione. Utilizzando le applicazioni distribuite mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , è possibile sfruttare al meglio entrambe le tecnologie.
 
 ## <a name="what-is-a-clickonce-application"></a>Che cos'è un'applicazione ClickOnce?
- Un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione è qualsiasi Windows Presentation Foundation ( *. XBAP* ), Windows Forms ( *exe* ), applicazione console ( *exe* ) o soluzione Office (con *estensione dll* ) pubblicata usando la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnologia. È possibile pubblicare un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione in tre modi diversi: da una pagina Web, da una condivisione file di rete o da un supporto come un CD-ROM. Un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione può essere installata nel computer di un utente finale ed eseguita localmente anche quando il computer è offline oppure può essere eseguito in modalità solo online senza installare in modo permanente alcun elemento nel computer dell'utente finale. Per ulteriori informazioni, vedere [scelta di una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
+ Un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione è qualsiasi Windows Presentation Foundation (*. XBAP*), Windows Form (*exe*), applicazione console (*exe*) o soluzione Office (con *estensione dll*) pubblicata usando la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnologia. È possibile pubblicare un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione in tre modi diversi: da una pagina Web, da una condivisione file di rete o da un supporto come un CD-ROM. Un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione può essere installata nel computer di un utente finale ed eseguita localmente anche quando il computer è offline oppure può essere eseguito in modalità solo online senza installare in modo permanente alcun elemento nel computer dell'utente finale. Per ulteriori informazioni, vedere [scelta di una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni possono essere con aggiornamento automatico; possono verificare la disponibilità di versioni più recenti e sostituire automaticamente eventuali file aggiornati. Lo sviluppatore può specificare il comportamento di aggiornamento; un amministratore di rete può controllare le strategie di aggiornamento, ad esempio, rendendo obbligatorio un aggiornamento. È anche possibile eseguire il rollback degli aggiornamenti a una versione precedente dall'utente finale o da un amministratore. Per ulteriori informazioni, vedere [scelta di una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
@@ -56,13 +56,13 @@ ms.locfileid: "94382676"
  La sicurezza dall'accesso di codice consente di limitare l'accesso del codice alle risorse protette. Nella maggior parte dei casi, è possibile scegliere le aree Internet o Intranet locale per limitare le autorizzazioni. Usare la pagina **sicurezza** in **ProjectDesigner** per richiedere l'area appropriata per l'applicazione. È anche possibile eseguire il debug di applicazioni con autorizzazioni limitate per emulare l'esperienza dell'utente finale. Per altre informazioni, vedere [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).
 
 ### <a name="clickonce-trust-prompt"></a>Richiesta di attendibilità ClickOnce
- Se l'applicazione richiede più autorizzazioni rispetto a quelle consentite dalla zona, è possibile che all'utente finale venga richiesto di prendere una decisione di attendibilità. L'utente finale può decidere se le applicazioni ClickOnce come Windows Forms applicazioni, Windows Presentation Foundation applicazioni, applicazioni console, applicazioni browser XAML e soluzioni Office sono attendibili per l'esecuzione. Per ulteriori informazioni, vedere [procedura: configurare il comportamento della richiesta di attendibilità ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
+ Se l'applicazione richiede più autorizzazioni rispetto a quelle consentite dalla zona, è possibile che all'utente finale venga richiesto di prendere una decisione di attendibilità. L'utente finale può decidere se le applicazioni ClickOnce come Windows Form applicazioni, Windows Presentation Foundation applicazioni, applicazioni console, applicazioni browser XAML e soluzioni Office sono attendibili per l'esecuzione. Per ulteriori informazioni, vedere [procedura: configurare il comportamento della richiesta di attendibilità ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
 
 ## <a name="how-clickonce-deployment-works"></a>Come funziona la distribuzione ClickOnce
  L' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] architettura di distribuzione principale si basa su due file manifesto XML: un manifesto dell'applicazione e un manifesto di distribuzione. I file vengono utilizzati per descrivere la posizione di installazione delle applicazioni ClickOnce, il modo in cui vengono aggiornate e il momento in cui vengono aggiornate.
 
 ### <a name="publish-clickonce-applications"></a>Pubblicare applicazioni ClickOnce
- Il manifesto dell'applicazione descrive l'applicazione stessa. Sono inclusi gli assembly, le dipendenze e i file che costituiscono l'applicazione, le autorizzazioni necessarie e il percorso in cui saranno disponibili gli aggiornamenti. Lo sviluppatore dell'applicazione crea il manifesto dell'applicazione usando la pubblicazione guidata in Visual Studio o il Strumento per la generazione e la modifica di manifesti ( *Mage.exe* ) in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Per altre informazioni, vedere [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ Il manifesto dell'applicazione descrive l'applicazione stessa. Sono inclusi gli assembly, le dipendenze e i file che costituiscono l'applicazione, le autorizzazioni necessarie e il percorso in cui saranno disponibili gli aggiornamenti. Lo sviluppatore dell'applicazione crea il manifesto dell'applicazione usando la pubblicazione guidata in Visual Studio o il Strumento per la generazione e la modifica di manifesti (*Mage.exe*) in [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] . Per altre informazioni, vedere [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
  Il manifesto di distribuzione descrive il modo in cui viene distribuita l'applicazione. Inclusi il percorso del manifesto dell'applicazione e la versione dell'applicazione che i client devono eseguire.
 
@@ -113,7 +113,7 @@ ms.locfileid: "94382676"
 |Chrome|3,5|
 |Microsoft Edge|3,5|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Distribuzione ClickOnce in Windows Vista](../deployment/clickonce-deployment-on-windows-vista.md)
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)

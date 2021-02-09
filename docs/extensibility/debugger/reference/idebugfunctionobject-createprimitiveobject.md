@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24b26a072a3bebda2d01a89baaf2910de96e77d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69ad4328d2ae94a23ebaa9fb4fd0aa0d2cff7c74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728527"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929985"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 Crea un oggetto dati primitivo, ad esempio un intero semplice.
@@ -28,7 +28,7 @@ Crea un oggetto dati primitivo, ad esempio un intero semplice.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT CreatePrimitiveObject( 
+HRESULT CreatePrimitiveObject( 
    OBJECT_TYPE    ot,
    IDebugObject** ppObject
 );
@@ -51,8 +51,8 @@ out Restituisce un [IDebugObject](../../../extensibility/debugger/reference/ideb
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Chiamare questo metodo per creare un oggetto che rappresenta un oggetto primitivo che è un parametro per la funzione rappresentata dall'interfaccia [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) . Se, ad esempio, la stringa dell'espressione è "stringa (5)", questo metodo verrà usato per creare un oggetto che rappresenta il numero intero 5.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c4c99dd5-609a-4e7c-8f29-eb728f57e995
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: beb00bcf932b19ed4e489456236957c55d909ce4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6085e974f58346eba7b38e76e5588b34fc3ff2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728602"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929987"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
 Crea un oggetto usando un costruttore.
@@ -28,7 +28,7 @@ Crea un oggetto usando un costruttore.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT CreateObject( 
+HRESULT CreateObject( 
    IDebugFunctionObject* pConstructor,
    DWORD                 dwArgs,
    IDebugObject*         pArgs[],
@@ -61,11 +61,11 @@ out Restituisce un `IDebugObject` oggetto che rappresenta l'oggetto appena creat
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Chiamare questo metodo per creare un oggetto che rappresenta un'istanza di una classe (o un altro tipo complesso che richiede un costruttore) che rappresenta un parametro per la funzione rappresentata dall'interfaccia [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
  Se il parametro dell'oggetto non richiede un costruttore, chiamare il metodo [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 - [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)
