@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 646522fe5c893508cbe60a0886ba704e6829252f
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: e5469825b8d81a210fdb699dc9afeb7c6689953b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134766"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896451"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Procedura dettagliata: Creazione di una palla da biliardo tridimensionale realistica
 
@@ -45,13 +45,13 @@ Una sfera è la forma di anteprima predefinita nella finestra di Progettazione s
 
 Nel prossimo passaggio verrà creato un programma shader che applica una trama al modello, ma è necessario innanzitutto creare una trama da utilizzare. In questa procedura dettagliata viene illustrato come creare una trama usando l'editor di immagini incluso in Visual Studio. È tuttavia possibile usare qualsiasi editor di immagini in grado di salvare la trama in un formato appropriato.
 
-Assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti** .
+Assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti**.
 
 ### <a name="to-create-a-billiard-ball-texture-by-using-the-image-editor"></a>Per creare una trama palla da biliardo utilizzando l'editor di immagini
 
 1. Creare una trama da usare. Per informazioni su come aggiungere una trama al progetto, vedere la sezione Introduzione in [Editor di immagini](../designers/image-editor.md).
 
-2. Impostare la dimensione dell'immagine in modo che la larghezza sia due volte l'altezza. Questa operazione è necessaria a causa della modalità con cui viene eseguito il mapping di una trama sulla superficie sferica della palla da biliardo. Per ridimensionare l'immagine, nella finestra **Proprietà** , specificare i nuovi valori per le proprietà **Larghezza** e **Altezza** . Ad esempio, impostare la larghezza su 512 e l'altezza su 256.
+2. Impostare la dimensione dell'immagine in modo che la larghezza sia due volte l'altezza. Questa operazione è necessaria a causa della modalità con cui viene eseguito il mapping di una trama sulla superficie sferica della palla da biliardo. Per ridimensionare l'immagine, nella finestra **Proprietà**, specificare i nuovi valori per le proprietà **Larghezza** e **Altezza**. Ad esempio, impostare la larghezza su 512 e l'altezza su 256.
 
 3. Disegnare una trama per la palla da biliardo, tenendo presente il modo in cui la trama viene mappata su una sfera.
 
@@ -77,7 +77,7 @@ Assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella deg
 
     ![Grafico shader per l'applicazione di una trama a un oggetto](../designers/media/gfx_shader_demo_billiard_step_1.png)
 
-3. Applicare la trama creata nella procedura precedente configurando le proprietà della trama. Impostare il valore della proprietà **Trama** del nodo **Campione trama** su **Trama1** , quindi specificare il file di trama utilizzando la proprietà **Nome file** del gruppo di proprietà **Trama1** nella stessa finestra della proprietà.
+3. Applicare la trama creata nella procedura precedente configurando le proprietà della trama. Impostare il valore della proprietà **Trama** del nodo **Campione trama** su **Trama1**, quindi specificare il file di trama utilizzando la proprietà **Nome file** del gruppo di proprietà **Trama1** nella stessa finestra della proprietà.
 
    Per ulteriori informazioni su come applicare una trama allo shader, vedere [Procedura: Creare uno shader con trama di base](../designers/how-to-create-a-basic-texture-shader.md).
 
@@ -91,7 +91,7 @@ Per ora, è stata creata una palla da biliardo facilmente riconoscibile. Tuttavi
 
 Nel mondo reale, la luce appare più luminosa su superfici rivolte direttamente verso una sorgente di luce e meno luminosa su superfici disposte obliquamente rispetto alla sorgente di luce. Il motivo è che, quando la superficie si trova direttamente di fronte alla sorgente di luce, l'energia nei raggi di luce è distribuita su una area di superficie più piccola. Mentre la superficie si allontana dalla sorgente di luce, la stessa quantità di energia viene distribuita in un'area sempre più grande. Una superficie non rivolta verso una fonte di luce non riceve alcuna energia, dando come risultato un aspetto completamente scuro. Questa varianza nella luminosità sulla superficie di un oggetto è un segnale visivo importante che consente di individuare la forma di un oggetto. Senza di essa, l'oggetto appare piatto.
 
-In computer grafica, i *modelli di illuminazione* , ovvero approssimazioni semplificate di interazioni complesse di illuminazione reale, vengono utilizzati per replicare l'aspetto dell'illuminazione reale. Il modello di illuminazione di Lambert varia la quantità di luce diffusa riflessa sulla superficie di un oggetto, come descritto nel paragrafo precedente. È possibile aggiungere il modello di illuminazione di Lambert allo shader per conferire alla palla da biliardo un aspetto 3D più realistico.
+In computer grafica, i *modelli di illuminazione*, ovvero approssimazioni semplificate di interazioni complesse di illuminazione reale, vengono utilizzati per replicare l'aspetto dell'illuminazione reale. Il modello di illuminazione di Lambert varia la quantità di luce diffusa riflessa sulla superficie di un oggetto, come descritto nel paragrafo precedente. È possibile aggiungere il modello di illuminazione di Lambert allo shader per conferire alla palla da biliardo un aspetto 3D più realistico.
 
 ### <a name="to-add-lambert-lighting-to-your-shader"></a>Per aggiungere l'illuminazione di Lambert allo shader
 
@@ -121,7 +121,7 @@ Il modello di illuminazione di Phong si basa sul modello di illuminazione di Lam
 
     ![Grafico shader con illuminazione speculare](../designers/media/gfx_shader_demo_billiard_step_3.png)
 
-2. Facoltativamente, è possibile regolare la modalità di comportamento dell'evidenziazione speculare configurando le proprietà speculari ( **MaterialSpecular** e **MaterialSpecularPower** ) del grafico di shader. Per accedere alle proprietà del grafico di shader, scegliere un'area vuota dell'area di progettazione, quindi nella finestra **Proprietà** individuare la proprietà a cui si desidera accedere.
+2. Facoltativamente, è possibile regolare la modalità di comportamento dell'evidenziazione speculare configurando le proprietà speculari (**MaterialSpecular** e **MaterialSpecularPower**) del grafico di shader. Per accedere alle proprietà del grafico di shader, scegliere un'area vuota dell'area di progettazione, quindi nella finestra **Proprietà** individuare la proprietà a cui si desidera accedere.
 
    Per altre informazioni su come applicare evidenziazioni speculari allo shader, vedere [Procedura: Creare uno shader con phong di base](../designers/how-to-create-a-basic-phong-shader.md).
 
@@ -135,7 +135,7 @@ Con le evidenziazioni speculari applicate, l'aspetto della palla da biliardo sar
 
 Se si esamina da vicino una palla da biliardo reale, è possibile vedere che la sua superficie lucida non presenta solo evidenziazioni speculari, ma riflette anche vagamente un'immagine dell'ambiente circostante. È possibile simulare la reflection utilizzando un'immagine dell'ambiente come trama e combinandola con la trama propria del modello per determinare il colore finale di ogni pixel. A seconda del tipo di completamento desiderato, è possibile combinare più o meno della trama di reflection con il resto dello shader. Ad esempio, uno shader che simula una superficie altamente riflettente come un'immagine speculare può utilizzare solo la trama di reflection, ma lo shader che simula una reflection meno evidente come quella presente in una palla da biliardo può combinare solo una piccola parte del valore della trama di reflection con il resto del calcolo di shader.
 
-Naturalmente, non è possibile applicare solo l'immagine riflessa al modello allo stesso modo in cui si applica il mapping della trama del modello. In caso affermativo, la reflection dell'ambiente si sposterebbe con la palla da biliardo, come se vi fosse incollata. Poiché una reflection può provenire da qualsiasi direzione, è necessario un modo per fornire un valore del mapping della reflection per qualsiasi angolo e per mantenere il mapping di reflection orientato in base all'ambiente. Per rispondere a queste esigenze, è possibile utilizzare un tipo speciale di mappa di trama, chiamato *mappa cubo* , che dispone di sei trame disposte per formare i lati di un cubo. Nel cubo, è possibile puntare a qualsiasi direzione per individuare un valore di trama. Se le trame su ogni lato del cubo contengono immagini dell'ambiente, è possibile simulare eventuali riflessi mediante il campionamento della posizione corretta sulla superficie del cubo. Mantenendo il cubo allineato alla terra, si otterrà una reflection accurata dell'ambiente. Per determinare la posizione di campionatura del cubo è sufficiente calcolare la reflection del vettore della fotocamera dalla superficie dell'oggetto, quindi usarla come coordinate della trama tridimensionale. L'utilizzo di mappe cubo in questo modo è una tecnica comune nota come *mapping dell'ambiente* .
+Naturalmente, non è possibile applicare solo l'immagine riflessa al modello allo stesso modo in cui si applica il mapping della trama del modello. In caso affermativo, la reflection dell'ambiente si sposterebbe con la palla da biliardo, come se vi fosse incollata. Poiché una reflection può provenire da qualsiasi direzione, è necessario un modo per fornire un valore del mapping della reflection per qualsiasi angolo e per mantenere il mapping di reflection orientato in base all'ambiente. Per rispondere a queste esigenze, è possibile utilizzare un tipo speciale di mappa di trama, chiamato *mappa cubo*, che dispone di sei trame disposte per formare i lati di un cubo. Nel cubo, è possibile puntare a qualsiasi direzione per individuare un valore di trama. Se le trame su ogni lato del cubo contengono immagini dell'ambiente, è possibile simulare eventuali riflessi mediante il campionamento della posizione corretta sulla superficie del cubo. Mantenendo il cubo allineato alla terra, si otterrà una reflection accurata dell'ambiente. Per determinare la posizione di campionatura del cubo è sufficiente calcolare la reflection del vettore della fotocamera dalla superficie dell'oggetto, quindi usarla come coordinate della trama tridimensionale. L'utilizzo di mappe cubo in questo modo è una tecnica comune nota come *mapping dell'ambiente*.
 
 Il mapping dell'ambiente fornisce un'approssimazione efficace di reflection reali, come descritto nei paragrafi precedenti. È possibile sfumare le reflection mappate all'ambiente nello shader per conferire alla palla da biliardo una finitura simulata che la fa sembrare più integrata con la scena.
 
@@ -145,7 +145,7 @@ Il primo passaggio consiste nella creazione della trama della mappa cubo. In mol
 
 1. Creare una trama da usare. Per informazioni su come aggiungere una trama al progetto, vedere la sezione Introduzione in [Editor di immagini](../designers/image-editor.md).
 
-2. Impostare la dimensione dell'immagine in modo che la larghezza sia uguale all'altezza e una potenza di due nelle dimensioni; ciò è necessario a causa della modalità con cui una mappa cubo è indicizzata. Per ridimensionare l'immagine, nella finestra **Proprietà** , specificare i nuovi valori per le proprietà **Larghezza** e **Altezza** . Ad esempio, impostare il valore delle proprietà **Larghezza** e **Altezza** su 256.
+2. Impostare la dimensione dell'immagine in modo che la larghezza sia uguale all'altezza e una potenza di due nelle dimensioni; ciò è necessario a causa della modalità con cui una mappa cubo è indicizzata. Per ridimensionare l'immagine, nella finestra **Proprietà**, specificare i nuovi valori per le proprietà **Larghezza** e **Altezza**. Ad esempio, impostare il valore delle proprietà **Larghezza** e **Altezza** su 256.
 
 3. Utilizzare una tinta unita per riempire la trama. Questa trama sarà la parte inferiore della mappa cubo, che corrisponde alla superficie del tavolo da biliardo. Ricordare il colore utilizzato per la trama successiva.
 
@@ -159,17 +159,17 @@ Il primo passaggio consiste nella creazione della trama della mappa cubo. In mol
 
     ![Trama per la parte superiore della mappa cubi](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png)
 
-   Dopo aver creato le singole trame per i lati della mappa cubo, è possibile usare uno strumento per assemblarli in una mappa cubo che può essere memorizzata in una singola trama di *.dds* . È possibile utilizzare qualsiasi programma per creare la mappa cubo, a condizione che si possa salvare la mappa nel formato di trama .dds. In questa procedura dettagliata viene illustrato come creare una trama utilizzando lo strumento Trama di DirectX, incluso in DirectX SDK del giugno 2010.
+   Dopo aver creato le singole trame per i lati della mappa cubo, è possibile usare uno strumento per assemblarli in una mappa cubo che può essere memorizzata in una singola trama di *.dds*. È possibile utilizzare qualsiasi programma per creare la mappa cubo, a condizione che si possa salvare la mappa nel formato di trama .dds. In questa procedura dettagliata viene illustrato come creare una trama utilizzando lo strumento Trama di DirectX, incluso in DirectX SDK del giugno 2010.
 
 ### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>Per assemblare una mappa cubo utilizzando lo strumento Trama di DirectX
 
-1. Nel menu principale dello strumento trama di DirectX scegliere **file**  >  **nuova trama** . Verrà visualizzata la finestra di dialogo **New Texture** (Nuova trama).
+1. Nel menu principale dello strumento trama di DirectX scegliere **file**  >  **nuova trama**. Verrà visualizzata la finestra di dialogo **New Texture** (Nuova trama).
 
 2. Nello gruppo **Texture Type** (Tipo trama), scegliere **Cubemap Texture** (Trama mappa cubo).
 
-3. Nel gruppo **Dimensioni** , immettere il valore corretto per **Larghezza** e **Altezza** , quindi scegliere **OK** . Verrà visualizzato un nuovo documento a trama. Per impostazione predefinita, la trama mostrata per prima nel documento di trama corrisponde alla faccia del cubo **Positive X** (X positivo).
+3. Nel gruppo **Dimensioni**, immettere il valore corretto per **Larghezza** e **Altezza**, quindi scegliere **OK**. Verrà visualizzato un nuovo documento a trama. Per impostazione predefinita, la trama mostrata per prima nel documento di trama corrisponde alla faccia del cubo **Positive X** (X positivo).
 
-4. Caricare la trama creata per il lato del cubo di trama sulla faccia del cubo. Nel menu principale scegliere **file**  >  **Apri su questo mappa cubi** , selezionare la trama creata per il lato del cubo, quindi scegliere **Apri** .
+4. Caricare la trama creata per il lato del cubo di trama sulla faccia del cubo. Nel menu principale scegliere **file**  >  **Apri su questo mappa cubi**, selezionare la trama creata per il lato del cubo, quindi scegliere **Apri**.
 
 5. Ripetere il passaggio 4 per le facce del cubo **Negative X** (X negativo), **Positive Z** (Z positivo) e **Negative Z** (Z negativo). A tal fine, è necessario visualizzare la faccia che si desidera caricare. Per visualizzare un'altra faccia della mappa del cubo, scegliere **Visualizza**  >  **faccia Mappa del cubo** dal menu principale, quindi selezionare la faccia che si desidera visualizzare.
 
@@ -199,9 +199,9 @@ Il primo passaggio consiste nella creazione della trama della mappa cubo. In mol
 
     ![Grafico shader con mapping dell'ambiente](../designers/media/gfx_shader_demo_billiard_step_4a.png)
 
-2. Applicare la trama creata nella procedura precedente configurando le proprietà della trama del mapping del cubo. Impostare il valore della proprietà **Trama** del nodo **Campione mappa cubi** su **Trama2** , quindi specificare il file di trama utilizzando la proprietà **Nome file** del gruppo di proprietà **Trama2** .
+2. Applicare la trama creata nella procedura precedente configurando le proprietà della trama del mapping del cubo. Impostare il valore della proprietà **Trama** del nodo **Campione mappa cubi** su **Trama2**, quindi specificare il file di trama utilizzando la proprietà **Nome file** del gruppo di proprietà **Trama2**.
 
-3. Facoltativamente, è possibile regolare la riflettività della palla da biliardo configurando la proprietà **Output** del nodo **Costante** . Per accedere alle proprietà del nodo, selezionarlo e quindi nella finestra **Proprietà** individuare la proprietà a cui si desidera accedere.
+3. Facoltativamente, è possibile regolare la riflettività della palla da biliardo configurando la proprietà **Output** del nodo **Costante**. Per accedere alle proprietà del nodo, selezionarlo e quindi nella finestra **Proprietà** individuare la proprietà a cui si desidera accedere.
 
    Con il mapping dell'ambiente applicato, la palla da biliardo risulterà simile alla seguente:
 
@@ -209,7 +209,7 @@ Il primo passaggio consiste nella creazione della trama della mappa cubo. In mol
 
    In questa immagine finale, osservare come gli effetti aggiunti convergono per creare una palla da biliardo molto convincente. La forma, la trama e l'illuminazione creano l'aspetto di base di un oggetto 3D e le evidenziazioni e i riflessi speculari abbelliscono la palla da biliardo e la rendono parte dell'ambiente che la circonda.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: esportare uno shader](../designers/how-to-export-a-shader.md)
 - [Procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)

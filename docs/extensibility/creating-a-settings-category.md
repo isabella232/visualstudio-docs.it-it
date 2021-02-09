@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 468b1a44fb4754f86b31992e2c6d96bf6380592d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: bf089eeaf8c4408a0bc76d2f3982d311ac9c5979
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974542"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896260"
 ---
 # <a name="create-a-settings-category"></a>Crea una categoria di impostazioni
 
@@ -94,7 +94,7 @@ Per iniziare questa procedura dettagliata, è necessario completare prima la pri
 
 1. Avviare il progetto in modalità di debug premendo **F5**. Viene avviata l'istanza sperimentale.
 
-2. Aprire la **Tools**  >  finestra di dialogo **Opzioni** strumenti.
+2. Aprire la   >  finestra di dialogo **Opzioni** strumenti.
 
 3. Nella visualizzazione albero nel riquadro sinistro espandere la **categoria** e quindi fare clic sulla **pagina della griglia**.
 

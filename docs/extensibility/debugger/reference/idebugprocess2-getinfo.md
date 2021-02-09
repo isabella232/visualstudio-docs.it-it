@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 46021dce-bb97-46c3-b0cc-e5b3b68acc35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f437c1a15b136d08ea7e57987c346844044228c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf4b8d933729c95eaffa3a0caa44961bb5c87baa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894920"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 Ottiene una descrizione del processo.
@@ -28,16 +28,16 @@ Ottiene una descrizione del processo.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetInfo(
-   PROCESS_INFO_FIELDS  Fields,
-   PROCESS_INFO*        pProcessInfo
+HRESULT GetInfo(
+   PROCESS_INFO_FIELDS  Fields,
+   PROCESS_INFO*        pProcessInfo
 );
 ```
 
 ```csharp
-int GetInfo(
-   enum_PROCESS_INFO_FIELDS  Fields,
-   PROCESS_INFO[]            pProcessInfo
+int GetInfo(
+   enum_PROCESS_INFO_FIELDS  Fields,
+   PROCESS_INFO[]            pProcessInfo
 );
 ```
 
@@ -51,7 +51,7 @@ out Struttura [PROCESS_INFO](../../../extensibility/debugger/reference/process-i
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - <addin> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cf922799301aef67ee70c480dd9e0823382cbd47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71fa31122432f4894bfca59929ee5eb127b7cad2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543767"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896730"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;&gt;elemento AddIn (sviluppo per Office in Visual Studio)
   L'elemento **AddIn** dello `vstav3` spazio dei nomi contiene informazioni specifiche per Microsoft Office componenti aggiuntivi VSTO e le personalizzazioni a livello di documento sviluppate con Visual Studio.
@@ -190,7 +190,7 @@ ms.locfileid: "85543767"
 </vstav3:addIn>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Manifesti dell'applicazione per le soluzioni Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifesti della distribuzione per le soluzioni Office](../vsto/deployment-manifests-for-office-solutions.md)

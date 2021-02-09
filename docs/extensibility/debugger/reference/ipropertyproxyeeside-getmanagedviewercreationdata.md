@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c4eb4d60-8816-4d52-bc8d-dffd4f066499
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2e72922b348c8744f10037e199e93f735ff4be8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee551ba78ceb91c2622af217d8863597e028be9d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714955"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896012"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 Recupera le informazioni sul visualizzatore per questo tipo di proprietà per creare un'istanza di tale visualizzatore.
@@ -28,18 +28,18 @@ Recupera le informazioni sul visualizzatore per questo tipo di proprietà per cr
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetManagedViewerCreationData(
-   BSTR*                  assemName,
-   IEEDataStorage**       assemBytes,
-   IEEDataStorage**       assemPdb,
-   BSTR*                  className,
-   ASSEMBLYLOCRESOLUTION* alr,
-   BOOL*                  replacementOk
+HRESULT GetManagedViewerCreationData(
+   BSTR*                  assemName,
+   IEEDataStorage**       assemBytes,
+   IEEDataStorage**       assemPdb,
+   BSTR*                  className,
+   ASSEMBLYLOCRESOLUTION* alr,
+   BOOL*                  replacementOk
 );
 ```
 
 ```csharp
-int GetManagedViewerCreationData(
+int GetManagedViewerCreationData(
    out string                     assemName,
    out IEEDataStorage             assemBytes,
    out IEEDataStorage             assemPdb,
@@ -71,10 +71,10 @@ out Restituisce un valore diverso da zero ( `TRUE` ) se il valore di questo ogge
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo metodo viene usato dai visualizzatori di tipi per creare un'istanza di un visualizzatore gestito.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

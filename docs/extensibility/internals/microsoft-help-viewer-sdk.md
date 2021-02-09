@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e77d06900a17aca4c2630587a45a9b144accde2
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 2e7b2c8d5f194287f0b654184ddd8716f248ca36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895752"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -599,7 +599,7 @@ I file CSS di personalizzazione includono le definizioni per la presentazione de
 
 Il contenuto di Visual Studio Visualizza un logo di Visual Studio e altri elementi grafici.  Di seguito è riportato l'elenco completo dei file grafici nel pacchetto di personalizzazione del Visualizzatore della Guida di Visual Studio.
 
-|**File**|**Uso**|**Esempi**|
+|**File**|**Uso**|**esempi**|
 |-|-|-|
 |clear.gif|Usato per eseguire il rendering dell'area comprimibile||
 |footer_slice.gif|Presentazione del piè di pagina||
@@ -700,7 +700,7 @@ L'uso ed estensione dei passaggi precedenti consentirà a VSPs di distribuire i 
 
 Questa procedura dettagliata illustra come incorporare il contenuto della Guida in un'applicazione shell di Visual Studio e quindi distribuirlo.
 
-**Requirements**
+**Requisiti**
 
 1. [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]
 

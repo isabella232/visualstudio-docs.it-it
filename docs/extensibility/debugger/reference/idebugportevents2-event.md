@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5cc813f7-04a1-4462-9ea7-fbddcf0e0143
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 931be468f6321250481aec79688f7f326abcfcac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bcf8a827f09c1b8d0e83b92f7729635cbb0f7f18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725244"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896175"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
 Questo metodo invia eventi che indicano la creazione e la distruzione di processi e programmi su una porta.
@@ -79,7 +79,7 @@ in GUID dell'evento. Poiché viene eseguito il cast dell'evento in [IDebugEvent2
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

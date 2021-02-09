@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49d4b76fe7feadb4458ef68acb351b81c6fa494c
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 81b1e46db4f38f37296798a645d6547cdd6f017f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895726"
 ---
 # <a name="extend-the-editor-and-language-services"></a>Estendere l'editor e i servizi di linguaggio
 È possibile aggiungere le funzionalità del servizio di linguaggio (ad esempio IntelliSense) al proprio editor ed estendere la maggior parte delle funzionalità dell'editor di codice di Visual Studio.  Per un elenco completo degli elementi che è possibile estendere, vedere i [punti di estensione del servizio di linguaggio e dell'editor](../extensibility/language-service-and-editor-extension-points.md).
@@ -55,7 +55,7 @@ ms.locfileid: "96995746"
 |[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Fornisce informazioni sul Managed Extensibility Framework (MEF).|
 |[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Fornisce informazioni sul Windows Presentation Foundation (WPF).|
 
-## <a name="reference"></a>Informazioni di riferimento
+## <a name="reference"></a>Riferimento
  L'editor di Visual Studio include gli spazi dei nomi seguenti.
 
  <xref:Microsoft.VisualStudio.Language.Intellisense>

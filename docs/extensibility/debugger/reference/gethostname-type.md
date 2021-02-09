@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2be92bea-8133-412b-9015-1833baf16e1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a7da1486f0edf52f3f0d96db699f60f24e36827
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13fdcea11aa579109f74f4404d0985aed4d0aa99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736780"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894933"
 ---
 # <a name="gethostname_type"></a>GETHOSTNAME_TYPE
 Specifica il tipo di nome host.
@@ -49,7 +49,7 @@ Specifica un nome descrittivo dell'host.
 `GHN_FILE_NAME`\
 Specifica un nome file dell'host.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questi valori vengono passati come argomento al metodo [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) per recuperare un nome host in formati diversi.
 
 ## <a name="requirements"></a>Requisiti
@@ -59,6 +59,6 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

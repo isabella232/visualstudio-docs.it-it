@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 442f33ef-9f52-4515-b55f-fb816d664645
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 20540fe7cc124c44cd1af0e031e10d5ee0b06ba1
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: 57e218dadfe04d8cad034f2638ffefb9346e5a41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96617422"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894595"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedura: gestire il ritorno a capo automatico nell'editor
 
@@ -54,6 +54,6 @@ Se si ha familiarità con il ritorno a capo automatico in Notepad++, Sublime Tex
 * [Il triplo clic non seleziona l'intera riga](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
 * [Premere il tasto FINE due volte non sposta il cursore alla fine della riga](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Funzionalità dell'editor del codice](../../ide/writing-code-in-the-code-and-text-editor.md)

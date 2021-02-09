@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 886d6d24293af9f630e70defff0d95ec791f0edf
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 9206fa8ced5ae60e58d353a9adae2234860670c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93133949"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896299"
 ---
 # <a name="work-with-3d-models"></a>Uso di modelli 3D
 
@@ -23,7 +23,7 @@ ms.locfileid: "93133949"
 
 ## <a name="3d-models"></a>Modelli 3D
 
-I modelli 3D definiscono la forma degli oggetti in una scena 3D. I modelli possono essere oggetti isolati di base, oggetti complessi costituiti da gerarchie di oggetti di base, o addirittura intere scene 3D. Un oggetto 3D è costituito da punti nello spazio 3D (noti come *vertici* ), indici che definiscono triangoli, linee o altre primitive che sono costituite da tali punti, e attributi che possono essere applicati a una base per vertice o per primitiva, ad esempio le normali della superficie. Alcune informazioni possono anche essere applicate in base all'oggetto, ad esempio quali shader e trame daranno all'oggetto un aspetto univoco.
+I modelli 3D definiscono la forma degli oggetti in una scena 3D. I modelli possono essere oggetti isolati di base, oggetti complessi costituiti da gerarchie di oggetti di base, o addirittura intere scene 3D. Un oggetto 3D è costituito da punti nello spazio 3D (noti come *vertici*), indici che definiscono triangoli, linee o altre primitive che sono costituite da tali punti, e attributi che possono essere applicati a una base per vertice o per primitiva, ad esempio le normali della superficie. Alcune informazioni possono anche essere applicate in base all'oggetto, ad esempio quali shader e trame daranno all'oggetto un aspetto univoco.
 
 L'Editor dei modelli è l'unico strumento necessario per creare modelli 3D di base comprensivi di proprietà materiale, trame e pixel shader che possono essere usati nel gioco o nell'app. Oppure è possibile creare modelli segnaposto da usare per la creazione di prototipi e per il testing prima che siano finalizzati dai grafici.
 

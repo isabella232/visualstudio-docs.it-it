@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8567b762e9858205e3ca8d6aafa8a3dba17a90fe
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 643fd4c68be4059b2c5ca558d777c34bb4add500
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205775"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894634"
 ---
 # <a name="debug-page-project-designer"></a>Pagina Debug, Progettazione progetti
 
@@ -84,7 +84,7 @@ Questa opzione specifica se è supportato il debug del codice nativo. Selezionar
 
 Selezionare o deselezionare questa casella di controllo per abilitare o disabilitare il debug delle routine SQL dall'applicazione Visual Basic. Questa casella di controllo è deselezionata per impostazione predefinita.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Presentazione del debugger](../../debugger/debugger-feature-tour.md)
 - [Impostazioni di progetto per le configurazioni di debug C#](../../debugger/project-settings-for-csharp-debug-configurations.md)

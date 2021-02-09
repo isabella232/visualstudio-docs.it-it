@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08b9e88440fcb7b488e479e4188279d82a526e4c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d08552683ce61892b0ee233173466a79326e4c6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875180"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894855"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>Registrazione di un servizio di linguaggio Legacy 2
 Le sezioni seguenti forniscono elenchi di voci del registro di sistema per le varie opzioni di servizio di linguaggio disponibili in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .

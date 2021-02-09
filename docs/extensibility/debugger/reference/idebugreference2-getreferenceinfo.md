@@ -9,26 +9,26 @@ helpviewer_keywords:
 ms.assetid: ae611714-f114-4cf2-b5bb-37461e6ff289
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4fa198a3ded56a0dd054cf225bfb6b10968d1da3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca23c5acd5f32d79cb76f2059b6a39066197150f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720415"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896038"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
-Ottiene la struttura [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) che descrive un riferimento. Riservato per usi futuri.
+Ottiene la struttura [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) che descrive un riferimento. Riservato per utilizzi futuri.
 
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetReferenceInfo ( 
+HRESULT GetReferenceInfo ( 
    DEBUGREF_INFO_FLAGS   dwFields,
    DWORD                 nRadix,
    DWORD                 dwTimeout,
@@ -39,7 +39,7 @@ HRESULT GetReferenceInfo ( 
 ```
 
 ```csharp
-int GetReferenceInfo ( 
+int GetReferenceInfo ( 
    enum_DEBUGREF_INFO_FLAGS  dwFields,
    uint                      nRadix,
    uint                      dwTimeout,
@@ -71,7 +71,7 @@ out Struttura [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/d
 ## <a name="return-value"></a>Valore restituito
  Restituisce sempre `E_NOTIMPL`.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)

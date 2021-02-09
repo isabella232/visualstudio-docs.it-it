@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f2fa81e7-822f-456e-8729-a96a18eea771
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1d3993d674f029260dbe32d16c576cb239ff8d6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9d555d7b0480d910a5cb88397db5bfd7e734fd1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721180"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896123"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
 Crea un ID univoco per questa proprietà per assicurarsi che sia univoco tra tutte le altre proprietà.
@@ -28,19 +28,19 @@ Crea un ID univoco per questa proprietà per assicurarsi che sia univoco tra tut
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT CreateObjectID(
+HRESULT CreateObjectID(
    void
 );
 ```
 
 ```csharp
-int CreateObjectID();
+int CreateObjectID();
 ```
 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo metodo viene chiamato quando il gestore di debug della sessione vuole assicurarsi che questa proprietà sia identificata in modo univoco tra tutte le altre proprietà. Il motore di debug (DE) supporta questo metodo, a meno che le proprietà che gestisce non siano già identificate in modo univoco. Se il DE non supporta questo metodo, restituisce `E_NOTIMPL` .
 
  Qualsiasi ID univoco creato con `CreateObjectID` viene eliminato definitivamente quando viene chiamato il metodo [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) , che segnala anche la fine della necessità di identificare in modo univoco questa proprietà.
@@ -48,6 +48,6 @@ int CreateObjectID();
 > [!NOTE]
 > Non esiste alcun metodo per recuperare questo ID univoco, quindi il DE può eseguire qualsiasi tipo di ID univoco quando `CreateObjectID` viene chiamato il metodo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)

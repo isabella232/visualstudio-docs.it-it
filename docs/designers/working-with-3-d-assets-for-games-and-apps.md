@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f031aa3e3767af3132e68f92c492dc7e3fae6f
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 8b622200832e42aa3900061125fe08271f5f3458
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134563"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896351"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Usare risorse 3D per giochi e app
 
@@ -37,7 +37,7 @@ Le immagini e le trame definiscono colore e dettagli visivi in giochi e app. Nel
 
 ### <a name="3d-models"></a>Modelli 3D
 
-I modelli 3D creano spazio e forma in giochi e app. I modelli codificano la posizione dei punti nello spazio 3D, noti come *vertici* , insieme all'indicizzazione dati, per definire linee o triangoli che rappresentano la forma del modello. A questi vertici è possibile aggiungere dati aggiuntivi, ad esempio informazioni sul colore, vettori normali o attributi specifici dell'applicazione. Ogni modello può anche definire attributi a livello di oggetto, ad esempio quali shader usare per definire l'aspetto dell'area dell'oggetto o quale trama applicare.
+I modelli 3D creano spazio e forma in giochi e app. I modelli codificano la posizione dei punti nello spazio 3D, noti come *vertici*, insieme all'indicizzazione dati, per definire linee o triangoli che rappresentano la forma del modello. A questi vertici è possibile aggiungere dati aggiuntivi, ad esempio informazioni sul colore, vettori normali o attributi specifici dell'applicazione. Ogni modello può anche definire attributi a livello di oggetto, ad esempio quali shader usare per definire l'aspetto dell'area dell'oggetto o quale trama applicare.
 
 È possibile usare l'Editor modello di Visual Studio per lavorare con modelli 3D in diversi formati comuni.
 
