@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eafcc757-b488-487d-a063-ad3703ff42e8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1462ed0224dc2f881c5745876347712ac2c14e60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 241f2860a6ed3b1bc57fb8e2d959ad5b26decc68
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465405"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864089"
 ---
 # <a name="idiasessiongetsymbolsbyaddr"></a>IDiaSession::getSymbolsByAddr
 Recupera un enumeratore che trova i simboli nell'ordine dei rispettivi indirizzi.
@@ -25,7 +25,7 @@ Recupera un enumeratore che trova i simboli nell'ordine dei rispettivi indirizzi
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT getSymbolsByAddr( 
+HRESULT getSymbolsByAddr( 
    IDiaEnumSymbolsByAddr** ppEnumbyAddr
 );
 ```
@@ -38,6 +38,6 @@ out Restituisce un oggetto [IDiaEnumSymbolsByAddr](../../debugger/debug-interfac
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

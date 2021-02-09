@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d3197a38-5973-4e56-873e-4f1b84c3f674
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ba4cdb5f74cedf13cfb74b5aff6d43d24534eab9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc38d92dc20d1eea368c07e45237508dd5f85585
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466483"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864565"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 Consente di leggere le proprietà permanenti di un set di proprietà DIA.
@@ -25,7 +25,7 @@ Consente di leggere le proprietà permanenti di un set di proprietà DIA.
 ## <a name="syntax"></a>Sintassi
 
 ```
-IDiaPropertyStorage : IUnknown
+IDiaPropertyStorage : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
@@ -42,7 +42,7 @@ La tabella seguente illustra i metodi di `IDiaPropertyStorage` .
 |[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Ottiene i nomi di stringa corrispondenti per gli identificatori di proprietà specificati.|
 |[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|Legge `ULONGLONG` i valori in un set di proprietà.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Ogni proprietà all'interno di un set di proprietà è identificata da un identificatore di proprietà (ID), un `ULONG` valore a quattro byte univoco per tale set. Le proprietà esposte tramite l' `IDiaPropertyStorage` interfaccia corrispondono alle proprietà disponibili nell'interfaccia padre. È ad esempio possibile accedere alle proprietà dell'interfaccia [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) in base al nome tramite l' `IDiaPropertyStorage` interfaccia. si noti, tuttavia, che anche se la proprietà può essere accessibile, non significa che la proprietà è valida per un `IDiaSymbol` oggetto specifico.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
@@ -126,7 +126,7 @@ Libreria: diaguids. lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

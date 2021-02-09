@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 892b80ff-5957-4233-b4d7-6144167be289
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b8ba63eb1b68cc5e630e650bff80d86d6fb0b3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05355c9031aa588c8e9ed4ddceb69920fa485f51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463029"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863004"
 ---
 # <a name="idiasymbolget_liverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
 Restituisce la parte della sezione dell'indirizzo iniziale dell'intervallo in cui il simbolo locale è valido.
@@ -25,7 +25,7 @@ Restituisce la parte della sezione dell'indirizzo iniziale dell'intervallo in cu
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_liveRangeStartAddressSection ( 
+HRESULT get_liveRangeStartAddressSection ( 
    DWORD* section
 );
 ```
@@ -41,7 +41,7 @@ out Restituisce la parte della sezione dell'intervallo di indirizzi iniziale.
 > [!NOTE]
 > Un codice di errore restituito indica che il simbolo non contiene informazioni sull'intervallo Live.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'indirizzo formato dalla sezione e dall'offset è l'inizio dell'intervallo in cui il simbolo è valido.
 
  Per ottenere la parte di offset dell'indirizzo, utilizzare [IDiaSymbol:: get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).
@@ -53,5 +53,5 @@ out Restituisce la parte della sezione dell'intervallo di indirizzi iniziale.
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c0496f6f-f8f2-435f-8674-6c32db6c5934
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d0243b5d083b33c9838edc93e6570a2df606f543
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 146256d47d5217b63e2718b876e2636c5d6532aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466343"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864516"
 ---
 # <a name="idiasectioncontribget_compiland"></a>IDiaSectionContrib::get_compiland
 Recupera un riferimento al simbolo modulo che ha contribuito a questa sezione.
@@ -25,7 +25,7 @@ Recupera un riferimento al simbolo modulo che ha contribuito a questa sezione.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_compiland ( 
+HRESULT get_compiland ( 
    IDiaSymbol** pRetVal
 );
 ```
@@ -38,6 +38,6 @@ out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/id
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

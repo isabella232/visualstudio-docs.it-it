@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3be5fe1b-46e8-4b07-90d8-4929dbbe7ff7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da8597c0a30a25e0cbda01b294273f845fcef7a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 338c2e650b59f501bbf184e877ca1e1f08b924c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863109"
 ---
 # <a name="idiasymbolget_isstatic"></a>IDiaSymbol::get_isStatic
 Recupera un flag che specifica se la funzione o il livello thunk è stato contrassegnato come statico.
@@ -48,5 +48,5 @@ out Restituisce `TRUE` se il livello di funzione o thunk è stato contrassegnato
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

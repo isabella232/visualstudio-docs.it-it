@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 577c8011-9269-4373-8577-b4822a983724
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d6e653bbafc09a9182cac743bdc97a23a6c58e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55d27f9f3f2054e4093eccfd40d75dbb7c9a6721
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463295"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863137"
 ---
 # <a name="idiasymbolget_ispointerbasedonsymbolvalue"></a>IDiaSymbol::get_isPointerBasedOnSymbolValue
 Specifica se il `this` puntatore è basato sul valore di un simbolo.
@@ -35,5 +35,5 @@ out Puntatore a un oggetto `BOOL` che specifica se il `this` puntatore è basato
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

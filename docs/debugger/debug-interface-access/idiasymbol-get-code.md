@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f425fa3-7ba6-4979-8b3e-0fcd06cbba73
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b34714ccd23929d4aaa3ea734fc80941d04103dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb6336ea900cc7ae23848d67b5a2e6545a404ad7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863522"
 ---
 # <a name="idiasymbolget_code"></a>IDiaSymbol::get_code
 Recupera un flag che specifica se il simbolo fa riferimento a un indirizzo di codice.
@@ -25,7 +25,7 @@ Recupera un flag che specifica se il simbolo fa riferimento a un indirizzo di co
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_code ( 
+HRESULT get_code ( 
    BOOL* pRetVal
 );
 ```
@@ -48,5 +48,5 @@ out Restituisce `TRUE` se il simbolo fa riferimento a un indirizzo di codice; in
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

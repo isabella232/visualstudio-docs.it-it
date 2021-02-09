@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9cbcaf00-9ace-45e1-b164-7a9439e08083
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fee917c4d275ec0f76cd3442d1ae56887667ca6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdec2a9d4c1cb089ef813123bab6f84daa26a826
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862997"
 ---
 # <a name="idiasymbolget_localbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
 Recupera l'ID del registro che include un puntatore di base alle variabili locali nello stack. Utilizzare quando l' [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su `SymTagFunction` .
@@ -25,7 +25,7 @@ Recupera l'ID del registro che include un puntatore di base alle variabili local
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_localBasePointerRegisterId ( 
+HRESULT get_localBasePointerRegisterId ( 
    DWORD* pRetVal
 );
 ```
@@ -50,5 +50,5 @@ out Restituisce l'ID del registro che include un puntatore di base alle variabil
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

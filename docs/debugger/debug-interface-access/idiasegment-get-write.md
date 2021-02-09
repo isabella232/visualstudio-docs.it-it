@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5fcda988-6be1-4b2f-8660-b59aa78fc35d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 498a72888ff59d09abf4f8d4dd830db25678761c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f804267175bfffef0a21cabf7c1c9549551f74aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465937"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864299"
 ---
 # <a name="idiasegmentget_write"></a>IDiaSegment::get_write
 Recupera un flag che indica se il segmento può essere modificato.
@@ -25,7 +25,7 @@ Recupera un flag che indica se il segmento può essere modificato.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_write ( 
+HRESULT get_write ( 
    BOOL* pRetVal
 );
 ```
@@ -38,5 +38,5 @@ out Restituisce `TRUE` se è possibile scrivere nel segmento. in caso contrario,
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

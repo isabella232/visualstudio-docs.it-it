@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 908976ae-95c4-4020-89c9-de137f727f98
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e14a713772a183100753212effcb696e5d5f1f05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a25d2eb12529461a9787deadf3f3babff6b6cbe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464391"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863669"
 ---
 # <a name="idiasymbolget_access"></a>IDiaSymbol::get_access
 Recupera il modificatore di accesso di un membro di classe.
@@ -25,7 +25,7 @@ Recupera il modificatore di accesso di un membro di classe.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_access ( 
+HRESULT get_access ( 
    DWORD* pRetVal
 );
 ```
@@ -48,6 +48,6 @@ out Restituisce un valore dall'enumerazione [CV_access_e](../../debugger/debug-i
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)

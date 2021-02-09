@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b16629dc-8e17-476b-9c7b-58e7277c61ed
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff263ace06e529c625d78daaa7055dbf70bd0fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9e905cc68bb612d9a59bb1780d08561716abca8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463309"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863144"
 ---
 # <a name="idiasymbolget_isnaked"></a>IDiaSymbol::get_isNaked
 Recupera un flag che specifica se la funzione ha l'attributo [naked](/cpp/cpp/naked-cpp) , ovvero se la funzione non ha un prologo o un codice di epilogo aggiunto dal compilatore.
@@ -48,6 +48,6 @@ out Restituisce `TRUE` se la funzione dispone dell' `naked` attributo; in caso c
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Chiamate di funzioni naked](/cpp/cpp/naked-function-calls)

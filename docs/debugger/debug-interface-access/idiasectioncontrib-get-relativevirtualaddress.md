@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 32f9674d-94f1-4590-99de-a2eb60da4af8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c3bd8f0a4db99823b44b214891bc302290a2d141
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1b7228b461db7beac8b208c198d3453db2295bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466133"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864418"
 ---
 # <a name="idiasectioncontribget_relativevirtualaddress"></a>IDiaSectionContrib::get_relativeVirtualAddress
 Recupera l'indirizzo RVA (relative Virtual Address) dell'immagine del contributo.
@@ -25,7 +25,7 @@ Recupera l'indirizzo RVA (relative Virtual Address) dell'immagine del contributo
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_relativeVirtualAddress ( 
+HRESULT get_relativeVirtualAddress ( 
    DWORD* pRetVal
 );
 ```
@@ -38,5 +38,5 @@ out Restituisce l'immagine RVA del contributo.
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

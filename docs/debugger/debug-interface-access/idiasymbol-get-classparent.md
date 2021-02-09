@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99db875a-caae-4d60-ae70-64bc8a9f6fba
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d8b20552d29f5d649ddf669187632814986a388b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44b556529a0cf4a30cd84f83700947cb52c671de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464107"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863529"
 ---
 # <a name="idiasymbolget_classparent"></a>IDiaSymbol::get_classParent
 Recupera un riferimento all'elemento padre della classe del simbolo.
@@ -25,7 +25,7 @@ Recupera un riferimento all'elemento padre della classe del simbolo.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_classParent ( 
+HRESULT get_classParent ( 
    IDiaSymbol** pRetVal
 );
 ```
@@ -48,9 +48,9 @@ out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/id
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  I tipi di simboli che possono essere elementi padre della classe sono documentati nella [gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

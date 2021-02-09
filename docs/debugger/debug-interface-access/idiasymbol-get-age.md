@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 60d05654-e832-4a2e-a4a7-fe9922c459fe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b8fc198573123c24a3c48068b50161d0aa7f3b60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9d7ebaaafa1e01ef081aa96d64170ac59922dc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464345"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863592"
 ---
 # <a name="idiasymbolget_age"></a>IDiaSymbol::get_age
 Recupera il valore Age di un file con estensione pdb.
@@ -25,7 +25,7 @@ Recupera il valore Age di un file con estensione pdb.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_age ( 
+HRESULT get_age ( 
    DWORD* pRetVal
 );
 ```
@@ -41,7 +41,7 @@ out Restituisce il valore Age di un file con estensione pdb.
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'età non corrisponde necessariamente a un valore di ora noto. viene in genere usato per determinare se un file con estensione PDB non è sincronizzato con un file exe corrispondente.
 
 ## <a name="requirements"></a>Requisiti
@@ -51,5 +51,5 @@ out Restituisce il valore Age di un file con estensione pdb.
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c02a6c92-f406-4646-82e7-3cd005af900e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 27c672f3738585923348ac5c36df681b4de60ca7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: faba8ccc1cbaacdf6459c8245a230595bf258624
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463820"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863403"
 ---
 # <a name="idiasymbolget_guid"></a>IDiaSymbol::get_guid
 Recupera l'identificatore univoco globale (GUID) del simbolo.
@@ -25,7 +25,7 @@ Recupera l'identificatore univoco globale (GUID) del simbolo.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_guid ( 
+HRESULT get_guid ( 
    GUID* pRetVal
 );
 ```
@@ -48,5 +48,5 @@ out Restituisce il GUID del simbolo.
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

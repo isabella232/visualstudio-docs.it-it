@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5c610b78-f1a3-494a-acf8-c42b97935be1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74a2cd3daa2c1ca466b0e302c916a220fa31e7d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3ac08460995cbaec149c5dda9ffc4c1e3e5bfbf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462840"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862962"
 ---
 # <a name="idiasymbolget_noinline"></a>IDiaSymbol::get_noInline
 Recupera un flag che specifica se la funzione è stata contrassegnata come non inline (usando l'attributo [noinline](/cpp/cpp/noinline) ).
@@ -48,6 +48,6 @@ out Restituisce `TRUE` se la funzione dispone dell' `noinline` attributo; in cas
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v8.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [noinline](/cpp/cpp/noinline)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 900a05dd-c29b-44ad-b46b-f43bda819a66
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 87ede4bfbac0d88ba65bd57d301df93a97738ea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 725e08bbe9ae41dc44fb90033bec994a9ca45ab6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85464254"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863564"
 ---
 # <a name="idiasymbolget_backendmajor"></a>IDiaSymbol::get_backEndMajor
 Recupera il numero di versione principale del back-end del compilatore.
@@ -25,7 +25,7 @@ Recupera il numero di versione principale del back-end del compilatore.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_backEndMajor ( 
+HRESULT get_backEndMajor ( 
    DWORD* pRetVal
 );
 ```
@@ -41,7 +41,7 @@ out Restituisce il numero di versione principale del back-end. Vedere la sezione
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Un compilatore è in genere costituito da due elementi primari: il front-end (il parser), che gestisce l'analisi del codice sorgente in un form intermedio e un back-end (Generatore di codice), che converte il modulo intermedio in assembly. Non è insolito che il front-end disponga di una versione diversa da quella del back-end.
 
  Un numero di versione front-end o back-end è costituito da tre parti: \<major> . \<minor> . \<build> , dove \<major> è il numero di versione principale, \<minor> è il numero di versione secondario e \<build> è il numero di Build. Ad esempio, 13.10.3077.
@@ -53,5 +53,5 @@ out Restituisce il numero di versione principale del back-end. Vedere la sezione
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

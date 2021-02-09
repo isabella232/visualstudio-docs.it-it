@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 69dab9bf-2c68-4f70-9678-3b50fba3e6fa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7fb8c5336a14180b3742fa02a91e6532b6e5831
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12337385d2ac9b586176c47d8579ec8ee7a5bd29
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85465349"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864033"
 ---
 # <a name="idiasession"></a>IDiaSession
 Fornisce un contesto di query per i simboli di debug.
@@ -25,7 +25,7 @@ Fornisce un contesto di query per i simboli di debug.
 ## <a name="syntax"></a>Sintassi
 
 ```
-IDiaSession : IUnknown
+IDiaSession : IUnknown
 ```
 
 ## <a name="methods"></a>Metodi
@@ -70,7 +70,7 @@ La tabella seguente illustra i metodi di `IDiaSession` .
 |[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|Restituisce un'enumerazione di simboli per i frame inline che corrispondono al nome della funzione inline specificata.|
 |[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|Restituisce un'enumerazione di simboli per i frame inline che corrispondono al percorso di origine specificato.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 È importante chiamare il metodo [IDiaSession::p ut_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) dopo la creazione dell' `IDiaSession` oggetto, mentre il valore passato al `put_loadAddress` metodo deve essere diverso da zero, per poter accedere alle proprietà di un indirizzo virtuale (va) dei simboli. L'indirizzo di caricamento deriva da qualsiasi programma caricato il file eseguibile di cui è in corso il debug. Ad esempio, è possibile chiamare la funzione Win32 `GetModuleInformation` per recuperare l'indirizzo di caricamento per il file eseguibile, dato un handle al file eseguibile.
 
 ## <a name="example"></a>Esempio
@@ -116,9 +116,9 @@ Libreria: diaguids. lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
-- [Panoramica](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
+- [Overview](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 - [Exe](../../debugger/debug-interface-access/exe.md)
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

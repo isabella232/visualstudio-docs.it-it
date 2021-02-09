@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 101afe4a-4c57-45de-87b4-330394c6de10
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b48f91dcb68f44f070e596d674461367dcf22966
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5099eb9d8ba1f56419cd1cf0138e29a79e2c28f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85463519"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99863263"
 ---
 # <a name="idiasymbolget_intro"></a>IDiaSymbol::get_intro
 Recupera un flag che specifica se la funzione è una funzione virtuale introduttiva.
@@ -25,7 +25,7 @@ Recupera un flag che specifica se la funzione è una funzione virtuale introdutt
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_intro ( 
+HRESULT get_intro ( 
     BOOL* pRetVal
 );
 ```
@@ -61,5 +61,5 @@ Sia `A::f1` che `B::f1` sono funzioni virtuali, ma `A::f1` è il virtuale introd
 |Intestazione:|dia2. h|
 |Version:|DIA SDK v7.0|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

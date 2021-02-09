@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 39736f35-6c73-4f54-a092-517192e417ff
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 934d2295d97d89b58704ada2eba58f0e2ec9aea1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d18e6398f563f7f766ba1e38047a688676b55bca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466091"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864390"
 ---
 # <a name="idiasectioncontribget_uninitializeddata"></a>IDiaSectionContrib::get_uninitializedData
 Recupera un flag che indica se la sezione contiene dati non inizializzati.
@@ -25,7 +25,7 @@ Recupera un flag che indica se la sezione contiene dati non inizializzati.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_uninitializedData ( 
+HRESULT get_uninitializedData ( 
    BOOL* pRetVal
 );
 ```
@@ -38,5 +38,5 @@ out Restituisce `TRUE` se la sezione contiene dati non inizializzati. in caso co
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
