@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 56b9a147-e8c0-4d4b-a42a-398214dd5f86
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2475ccf14d892a7f7d1b130c63dbea458038dd41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ae752826e1e57527087140ab1ecdad7b52e25ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461801"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862598"
 ---
 # <a name="idiasymbolget_thisadjust"></a>IDiaSymbol::get_thisAdjust
 Recupera l'utilità `this` di regolazione logica per il metodo.
@@ -25,7 +25,7 @@ Recupera l'utilità `this` di regolazione logica per il metodo.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_thisAdjust ( 
+HRESULT get_thisAdjust ( 
    LONG* pRetVal
 );
 ```
@@ -41,8 +41,8 @@ out Restituisce l'utilità `this` di regolazione logica per il metodo.
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  In alcuni casi di ereditarietà multipla il metodo stesso deve calcolare un `this` valore true aggiungendo un offset a `this` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

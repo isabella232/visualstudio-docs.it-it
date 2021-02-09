@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: cd1fef1f-47de-47c7-885f-f6f0a9a07d8c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1f826c4dfcc8f000b37144b28dfcb8cf503a87
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03447b1b0b8d5b5a47db61cd75c8857508e3ab40
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462053"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862717"
 ---
 # <a name="idiasymbolget_sealed"></a>IDiaSymbol::get_sealed
 Recupera un flag che specifica se la classe o il metodo è sealed.
@@ -25,7 +25,7 @@ Recupera un flag che specifica se la classe o il metodo è sealed.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_sealed( 
+HRESULT get_sealed( 
    BOOL* pRetVal)
 );
 ```
@@ -41,7 +41,7 @@ out Restituisce `TRUE` se la classe o il metodo è sealed; in caso contrario, re
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Una classe sealed non può essere utilizzata come classe base. Un metodo sealed non può essere punto.
 
 ## <a name="requirements"></a>Requisiti
@@ -51,5 +51,5 @@ out Restituisce `TRUE` se la classe o il metodo è sealed; in caso contrario, re
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

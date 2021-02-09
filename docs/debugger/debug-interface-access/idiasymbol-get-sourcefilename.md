@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0f5dce88-829e-4df3-8acd-8d71076ad167
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f87d3bee740573d0d3597253ff4e0ce2049cbe4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 79e847fccc35c38b6a592d8338afd2b802b43a87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461963"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862703"
 ---
 # <a name="idiasymbolget_sourcefilename"></a>IDiaSymbol::get_sourceFileName
 Recupera il nome file del file di origine modulo.
@@ -25,7 +25,7 @@ Recupera il nome file del file di origine modulo.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_sourceFileName ( 
+HRESULT get_sourceFileName ( 
    BSTR* pRetVal
 );
 ```
@@ -41,5 +41,5 @@ out Restituisce il nome file del file di origine modulo.
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

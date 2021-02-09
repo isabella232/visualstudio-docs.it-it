@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 1886e3ec-b227-4187-8d93-c5144b4b77ae
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a4690afe754db2c5e82d200de780d28aae3c652e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a46f42e83587954dce158bdbd8b3bc0ae4cae749
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462770"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862892"
 ---
 # <a name="idiasymbolget_numberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
 Restituisce il numero di tag del puntatore acceleratore in una funzione stub C++ AMP.
@@ -35,8 +35,8 @@ out Puntatore a un oggetto `DWORD` che include il numero di tag del puntatore de
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo metodo viene chiamato su un' `IDiaSymbol` interfaccia che corrisponde a una funzione dello stub di C++ amp Accelerator.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

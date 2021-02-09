@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 257a9894-e980-47ae-bdc0-c5e2293ea734
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be214ee5a2e566ae8e79989279ea3f8a52164d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b42c1c6a5a05d18ec4846b950bce46f4fa26787
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462595"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862836"
 ---
 # <a name="idiasymbolget_overloadedoperator"></a>IDiaSymbol::get_overloadedOperator
 Recupera un flag che specifica se il tipo di dati definito dall'utente dispone di operatori di overload.
@@ -25,7 +25,7 @@ Recupera un flag che specifica se il tipo di dati definito dall'utente dispone d
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_overloadedOperator ( 
+HRESULT get_overloadedOperator ( 
    BOOL* pRetVal
 );
 ```
@@ -41,5 +41,5 @@ out Restituisce `TRUE` se il tipo di dati definito dall'utente dispone di operat
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

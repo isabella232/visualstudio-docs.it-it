@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c1aa39ee-d645-431e-bf5f-0640c0998934
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d83747d3db9336c00d8c770db415093de693f1c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1fa997d8552efec7fdfbcd97fa3e300975d4f58
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461928"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862689"
 ---
 # <a name="idiasymbolget_symbolsfilename"></a>IDiaSymbol::get_symbolsFileName
 Recupera il nome del file da cui sono stati caricati i simboli.
@@ -25,7 +25,7 @@ Recupera il nome del file da cui sono stati caricati i simboli.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_symbolsFileName ( 
+HRESULT get_symbolsFileName ( 
    BSTR* pRetVal
 );
 ```
@@ -41,9 +41,9 @@ out Restituisce il nome del file da cui sono stati caricati i simboli.
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa proprietà è valida solo per i simboli con un valore di [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) di `SymTagExe` che dispongono anche dell'ambito globale.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

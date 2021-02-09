@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ddfa1617-bd0f-4187-ba77-a225bab93a95
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d573f54a6264562c02960448768a8409fcc5e5a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 11f86019cdf037aaf5859346dba21e94a0471500
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461546"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862500"
 ---
 # <a name="idiasymbolget_upperboundid"></a>IDiaSymbol::get_upperBoundId
 Recupera l'identificatore del simbolo del limite superiore di una dimensione della matrice FORTRAN.
@@ -25,7 +25,7 @@ Recupera l'identificatore del simbolo del limite superiore di una dimensione del
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_upperBoundId ( 
+HRESULT get_upperBoundId ( 
    DWORD* pRetVal
 );
 ```
@@ -40,8 +40,8 @@ HRESULT get_upperBoundId ( 
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoci.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

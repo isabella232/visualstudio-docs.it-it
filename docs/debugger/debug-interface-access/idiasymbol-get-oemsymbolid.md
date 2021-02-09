@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 187801f0-bd82-4c5b-9fae-8eeb1a4ac0ce
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 401894a921f2ad6a9649e337059c8ee142858f84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bec0bcde96bbb55129cf3549afa48707e236ddeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462623"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862850"
 ---
 # <a name="idiasymbolget_oemsymbolid"></a>IDiaSymbol::get_oemSymbolId
 Recupera il valore ID del simbolo OEM (Original Equipment Manufacturer).
@@ -25,7 +25,7 @@ Recupera il valore ID del simbolo OEM (Original Equipment Manufacturer).
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_oemSymbolId ( 
+HRESULT get_oemSymbolId ( 
    DWORD* pRetVal
 );
 ```
@@ -41,11 +41,11 @@ out Restituisce l'ID simbolo assegnato internamente dall'OEM.
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoci.
 
  Questa proprietà si applica solo ai simboli con un tipo di [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) di `SymTagCustomType` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)

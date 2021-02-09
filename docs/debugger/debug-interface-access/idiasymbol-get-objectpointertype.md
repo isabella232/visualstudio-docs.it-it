@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bce193b9-67b0-4c35-96e5-6a664937322e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ae9ce8d655d9229b5e9c9f547b0dade6ad503e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: add00659717072522acd7942d16feb942a5dca83
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85462686"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862857"
 ---
 # <a name="idiasymbolget_objectpointertype"></a>IDiaSymbol::get_objectPointerType
 Recupera il tipo del puntatore all'oggetto per un metodo della classe.
@@ -25,7 +25,7 @@ Recupera il tipo del puntatore all'oggetto per un metodo della classe.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_objectPointerType ( 
+HRESULT get_objectPointerType ( 
    IDiaSymbol** pRetVal
 );
 ```
@@ -41,9 +41,9 @@ out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/id
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa proprietà si applica solo ai simboli con un tipo di [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) di `SymTagFunctionType` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
