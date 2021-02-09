@@ -14,15 +14,15 @@ helpviewer_keywords:
 - code metrics [Visual Studio]
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f843df01059adef3a94bb46501e4e75bd67d5a7
-ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
+ms.openlocfilehash: 6e77667feae806b66092195f30b028ccca653b2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98069487"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860451"
 ---
 # <a name="code-metrics-values"></a>Valori della metrica del codice
 
@@ -66,7 +66,7 @@ Un *metodo anonimo* è semplicemente un metodo senza nome. I metodi anonimi veng
 
 Alcuni strumenti e compilatori software generano codice aggiunto a un progetto e che lo sviluppatore del progetto non Visualizza o non deve essere modificato. Per lo più, la metrica del codice ignora il codice generato durante il calcolo dei valori delle metriche. In questo modo, i valori delle metriche riflettono ciò che lo sviluppatore può visualizzare e modificare.
 
-Il codice generato per Windows Forms non viene ignorato perché è il codice che lo sviluppatore può visualizzare e modificare.
+Il codice generato per Windows Form non viene ignorato perché è il codice che lo sviluppatore può visualizzare e modificare.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

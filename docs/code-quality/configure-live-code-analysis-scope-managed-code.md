@@ -11,21 +11,21 @@ helpviewer_keywords:
 - full solution analysis
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9690e50ccbe927702ef1b3e7e99545c07cdced41
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 7a6a7253d4104fbcde09b96b86f5f83a864677cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348463"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860399"
 ---
 # <a name="configure-live-code-analysis-for-net"></a>Configurare l'analisi del codice in tempo reale per .NET
 
-Visual Studio esegue una serie di analisi del codice in tempo reale, denominate anche *analisi in background* , mentre si modificano i file di origine nell'editor. Alcune di esse sono richieste di analisi minime per un'esperienza di modifica accettabile dell'IDE di Visual Studio. Alcune di queste funzionalità sono per migliorare la velocità di risposta per le funzionalità IDE. Sebbene alcune di queste funzioni consentano di abilitare funzionalità aggiuntive dell'IDE, ad esempio la diagnostica e le correzioni del codice degli analizzatori Roslyn. In base alla funzionalità, queste analisi possono essere raggruppate come segue:
+Visual Studio esegue una serie di analisi del codice in tempo reale, denominate anche *analisi in background*, mentre si modificano i file di origine nell'editor. Alcune di esse sono richieste di analisi minime per un'esperienza di modifica accettabile dell'IDE di Visual Studio. Alcune di queste funzionalità sono per migliorare la velocità di risposta per le funzionalità IDE. Sebbene alcune di queste funzioni consentano di abilitare funzionalità aggiuntive dell'IDE, ad esempio la diagnostica e le correzioni del codice degli analizzatori Roslyn. In base alla funzionalità, queste analisi possono essere raggruppate come segue:
 
-- **Calcolo in background della diagnostica** : analisi per calcolare errori, avvisi e suggerimenti nei file di origine. Questi dati di diagnostica vengono visualizzati come voci nell'elenco errori e come controllo ortografia durante nell'editor. Possono essere classificati in due categorie:
+- **Calcolo in background della diagnostica**: analisi per calcolare errori, avvisi e suggerimenti nei file di origine. Questi dati di diagnostica vengono visualizzati come voci nell'elenco errori e come controllo ortografia durante nell'editor. Possono essere classificati in due categorie:
   - Diagnostica del compilatore C# e Visual Basic
   - Diagnostica di Roslyn Analyzer, che include:
 
@@ -33,7 +33,7 @@ Visual Studio esegue una serie di analisi del codice in tempo reale, denominate 
     - Analizzatori CA predefiniti per i suggerimenti sulla qualità del codice
     - Pacchetti dell'analizzatore di terze parti [installati](./install-roslyn-analyzers.md) per i progetti nella soluzione corrente.
 
-- **Altre analisi in background** : analisi per migliorare la velocità di risposta e l'interazione di Visual Studio per le funzionalità IDE. Di seguito sono riportati alcuni esempi di analisi di questo tipo:
+- **Altre analisi in background**: analisi per migliorare la velocità di risposta e l'interazione di Visual Studio per le funzionalità IDE. Di seguito sono riportati alcuni esempi di analisi di questo tipo:
   - Analisi in background dei file aperti.
   - Compilazione in background dei progetti con file aperti per realizzare i simboli per migliorare la velocità di risposta di alcune funzionalità IDE.
   - Compilazione della sintassi e delle cache di simboli.
@@ -53,9 +53,9 @@ L'ambito predefinito di ogni analisi in background è stato ottimizzato per l'es
 
 A partire da Visual Studio 2019 versione 16,5, gli utenti possono personalizzare in modo esplicito l'ambito di tutte le analisi del codice in tempo reale, incluso il calcolo della diagnostica, per i progetti C# e Visual Basic. Gli ambiti di analisi disponibili sono:
 
-- **Documento corrente** : riduce al minimo l'ambito dell'analisi del codice in tempo reale per l'esecuzione solo per il file corrente o visibile nell'editor.
-- **Documenti aperti** : ambito predefinito dell'analisi del codice in tempo reale, come descritto nella sezione precedente.
-- **Intera soluzione** : ingrandisce l'ambito dell'analisi del codice in tempo reale da eseguire per tutti i file e i progetti nell'intera soluzione.
+- **Documento corrente**: riduce al minimo l'ambito dell'analisi del codice in tempo reale per l'esecuzione solo per il file corrente o visibile nell'editor.
+- **Documenti aperti**: ambito predefinito dell'analisi del codice in tempo reale, come descritto nella sezione precedente.
+- **Intera soluzione**: ingrandisce l'ambito dell'analisi del codice in tempo reale da eseguire per tutti i file e i progetti nell'intera soluzione.
 
 È possibile scegliere uno degli ambiti di analisi personalizzati sopra indicati nella finestra di dialogo Opzioni strumenti attenendosi alla procedura seguente:
 
@@ -68,7 +68,7 @@ A partire da Visual Studio 2019 versione 16,5, gli utenti possono personalizzare
 ![Ambito di analisi.](./media/background-analysis-scope.png)
 
 > [!NOTE]
-> Prima di Visual Studio 2019 versione 16,5, gli utenti possono personalizzare l'ambito di analisi per il calcolo della diagnostica nell'intera soluzione usando la casella di controllo **Abilita analisi della soluzione completa** da **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **C#** o **Basic**  >  scheda **Avanzate** di base. Non è disponibile alcun supporto per ridurre al minimo l'ambito di analisi in background nelle versioni precedenti di Visual Studio.
+> Prima di Visual Studio 2019 versione 16,5, gli utenti possono personalizzare l'ambito di analisi per il calcolo della diagnostica nell'intera soluzione usando la casella di controllo **Abilita analisi della soluzione completa** da **strumenti**  >  **Opzioni**  >  **editor di testo**  >  **C#** o   >  scheda **Avanzate** di base. Non è disponibile alcun supporto per ridurre al minimo l'ambito di analisi in background nelle versioni precedenti di Visual Studio.
 
 ## <a name="automatically-minimize-live-code-analysis-scope"></a>Riduci automaticamente l'ambito di analisi del codice in tempo reale
 
@@ -76,7 +76,7 @@ Se Visual Studio rileva che sono disponibili 200 MB o meno di memoria di sistema
 
 ![Testo dell'avviso per la riduzione dell'ambito dell'analisi](./media/fsa_alert.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sospensione funzionalità automatica](./automatic-feature-suspension.md)
 - [Richiesta di funzionalità della modalità di risparmio energia](https://github.com/dotnet/roslyn/issues/38429)

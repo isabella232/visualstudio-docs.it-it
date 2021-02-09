@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65c0f1146549dfbee6f84fab06be12053b174aeb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: be9a6840c3b41b442e5019e08c4d2f4d2fa5c3dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436628"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858995"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati
 
@@ -28,13 +28,13 @@ Quando si trascinano elementi dalla [finestra Origini dati](add-new-data-sources
 
 ::: moniker range="vs-2017"
 
-È possibile personalizzare la modalità di creazione di queste etichette impostando i valori **SmartCaptionExpression** , **SmartCaptionReplacement** e **SmartCaptionSuffix** nella chiave del registro di sistema **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** .
+È possibile personalizzare la modalità di creazione di queste etichette impostando i valori **SmartCaptionExpression**, **SmartCaptionReplacement** e **SmartCaptionSuffix** nella chiave del registro di sistema **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-È possibile personalizzare la modalità di creazione di queste etichette impostando i valori **SmartCaptionExpression** , **SmartCaptionReplacement** e **SmartCaptionSuffix** nella chiave del registro di sistema **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** .
+È possibile personalizzare la modalità di creazione di queste etichette impostando i valori **SmartCaptionExpression**, **SmartCaptionReplacement** e **SmartCaptionSuffix** nella chiave del registro di sistema **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** .
 
 ::: moniker-end
 
@@ -140,6 +140,6 @@ Nella tabella seguente sono elencate le impostazioni predefinite interne per que
 
     La volta successiva che si trascinano gli elementi dalla finestra **origini dati** , le etichette didascalia vengono create con didascalie non modificate.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

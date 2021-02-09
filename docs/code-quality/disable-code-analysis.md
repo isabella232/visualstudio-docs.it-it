@@ -9,13 +9,13 @@ helpviewer_keywords:
 - disable code analysis
 author: mikadumont
 ms.author: midumont
-manager: jillfra
-ms.openlocfilehash: e808cb623fa47c9971e1cdceb15a02b5bf46e901
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+manager: jmartens
+ms.openlocfilehash: 6a1f1466caa921d46ce4701f5074b98f3d5ba051
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348554"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860386"
 ---
 # <a name="disable-source-code-analysis-for-net"></a>Disabilitare l'analisi del codice sorgente per .NET
 
@@ -69,7 +69,7 @@ Esempi:
 
 ## <a name="source-analysis"></a>Analisi dell'origine
 
-Non è possibile disattivare l' [analisi dell'origine](roslyn-analyzers-overview.md) in Visual Studio 2017. Se si desidera cancellare gli errori dell'analizzatore dalla **Elenco errori** , è possibile eliminare tutte le violazioni correnti selezionando **analizza**  >  **Esegui analisi codice ed elimina problemi attivi** sulla barra dei menu. Per ulteriori informazioni, vedere la pagina relativa all' [eliminazione delle violazioni](use-roslyn-analyzers.md#suppress-violations).
+Non è possibile disattivare l' [analisi dell'origine](roslyn-analyzers-overview.md) in Visual Studio 2017. Se si desidera cancellare gli errori dell'analizzatore dalla **Elenco errori**, è possibile eliminare tutte le violazioni correnti selezionando **analizza**  >  **Esegui analisi codice ed elimina problemi attivi** sulla barra dei menu. Per ulteriori informazioni, vedere la pagina relativa all' [eliminazione delle violazioni](use-roslyn-analyzers.md#suppress-violations).
 
 A partire da Visual Studio 2019 versione 16,3, è possibile disattivare l'analisi del codice sorgente o eseguirla su richiesta. Provare a eseguire l'aggiornamento a Visual Studio 2019.
 
@@ -79,7 +79,7 @@ A partire da Visual Studio 2019 versione 16,3, è possibile disattivare l'analis
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Non visualizzare le violazioni](use-roslyn-analyzers.md#suppress-violations)
 - [Procedura: abilitare e disabilitare l'analisi del codice legacy](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00b492c7aec41d30e972df93206f9e597ea82eb3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: eb6e5a1ba304627c08828b6ad7bff7f6accd3980
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435287"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859112"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Creare un Windows Form per la ricerca di dati
 
@@ -65,11 +65,11 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 ## <a name="create-the-windows-forms-application"></a>Creare il Windows Forms Application
 
-Creare un nuovo progetto di **App Windows Forms** per C# o Visual Basic. Assegnare al progetto il nome **WindowsSearchForm**.
+Creare un nuovo progetto di **App Windows Form** per C# o Visual Basic. Assegnare al progetto il nome **WindowsSearchForm**.
 
 ## <a name="create-the-data-source"></a>Creare l'origine dati
 
-Questo passaggio consente di creare un'origine dati da un database usando la **Configurazione guidata origine dati** :
+Questo passaggio consente di creare un'origine dati da un database usando la **Configurazione guidata origine dati**:
 
 1. Per aprire la finestra **origini dati** , scegliere **Mostra origini dati** dal menu **dati** .
 
@@ -89,7 +89,7 @@ Questo passaggio consente di creare un'origine dati da un database usando la **C
 
 7. Espandere il nodo **Tables** nella pagina **Seleziona oggetti di database**.
 
-8. Selezionare la tabella **Customers** , quindi fare clic su **Fine**.
+8. Selezionare la tabella **Customers**, quindi fare clic su **Fine**.
 
      L'oggetto **NorthwindDataSet** viene aggiunto al progetto e la tabella **Customers** viene visualizzata nella finestra **Origini dati**.
 
@@ -129,13 +129,13 @@ Questo passaggio consente di creare un'origine dati da un database usando la **C
 
      Al form viene aggiunto un elemento **FillByCityToolStrip**.
 
-## <a name="test-the-application"></a>Test dell'applicazione
+## <a name="test-the-application"></a>Testare l'applicazione
 
 L'esecuzione dell'applicazione apre il form e lo rende pronto per assumere il parametro come input:
 
 1. Premere **F5** per eseguire l'applicazione.
 
-2. Digitare **London** nella casella di testo **City** , quindi fare clic su **FillByCity**.
+2. Digitare **London** nella casella di testo **City**, quindi fare clic su **FillByCity**.
 
      La griglia di dati viene popolata con i clienti che soddisfano i criteri. In questo esempio nella griglia dei dati vengono visualizzati solo i clienti nella cui colonna **City** è presente un valore **London**.
 
@@ -147,6 +147,6 @@ A seconda dei requisiti dell'applicazione, si potranno eseguire diverse operazio
 
 - Modifica del set di dati per aggiungere o rimuovere oggetti di database. Per altre informazioni, vedere [Create and configure datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md) (Creare e configurare set di dati).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

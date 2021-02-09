@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ea8e6a09c512ed5edb6098183c66361e96537f54
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 8d42726cddb0565af66e161b41c16c94cfe2cb2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914933"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839136"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Procedura dettagliata: creare un passaggio di distribuzione personalizzato per i progetti SharePoint
   Quando si distribuisce un progetto SharePoint, Visual Studio esegue una serie di passaggi di distribuzione in un ordine specifico. Visual Studio include molti passaggi di distribuzione incorporati, ma è anche possibile crearne di personalizzati.
@@ -469,7 +469,7 @@ ms.locfileid: "96914933"
 
 #### <a name="to-remove-the-list-definition-from-the-sharepoint-site"></a>Per rimuovere la definizione dell'elenco dal sito di SharePoint
 
-1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere **Build**  >  **ritrazione** compilazione.
+1. Nella barra dei menu dell'istanza sperimentale di Visual Studio scegliere   >  **ritrazione** compilazione.
 
      Visual Studio ritira la definizione dell'elenco dal sito di SharePoint.
 

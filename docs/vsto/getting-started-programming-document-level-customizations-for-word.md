@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Word projects [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e9420ab02b5f402dd39e5ca1713b911a10932dfb
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ff19fd84b66b9d31ed806589044775e006ef7096
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845180"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860659"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Introduzione alla programmazione delle personalizzazioni a livello di documento per Word
   Se si sta iniziando a creare personalizzazioni a livello di documento per Microsoft Office Word con Visual Studio, ecco cosa è necessario conoscere.
@@ -41,7 +41,7 @@ ms.locfileid: "96845180"
 ## <a name="program-word-documents-by-using-host-items-host-controls"></a>Programmare documenti Word usando gli elementi host controlli host
  *Gli elementi host* e i *controlli host* sono classi che forniscono il modello di programmazione per le personalizzazioni a livello di documento.
 
- Gli elementi host forniscono un punto di ingresso per il codice e possono fungere anche da contenitori per controlli host e controlli Windows Forms. Nei progetti a livello di documento per Word, l'elemento host è rappresentato dalla `ThisDocument` classe.
+ Gli elementi host forniscono un punto di ingresso per il codice e possono fungere anche da contenitori per controlli host e controlli Windows Form. Nei progetti a livello di documento per Word, l'elemento host è rappresentato dalla `ThisDocument` classe.
 
  I controlli host sono basati su oggetti nativi di Word, ad esempio controlli contenuto, segnalibri e nodi XML. I controlli host forniscono funzionalità simili agli oggetti nativi di Word, ma dispongono anche di nuovi eventi, supporto della finestra di progettazione e funzionalità di data binding. Vengono visualizzati come oggetti di prima classe nel codice del progetto e in IntelliSense, che rende più semplice fare riferimento a oggetti specifici direttamente nel codice senza dover esplorare il modello a oggetti di Word.
 

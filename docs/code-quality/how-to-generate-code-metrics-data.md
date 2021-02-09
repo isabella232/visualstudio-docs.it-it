@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code metrics [Visual Studio]
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 631ce51df5d985e02e8ccabca258c0ef1c1318f4
-ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
+ms.openlocfilehash: 0387542487b2c24baa129fbb0163dee0140cb413
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98069474"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860042"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Procedura: generare dati di metrica del codice
 
@@ -59,7 +59,7 @@ dotnet_diagnostic.CA1502.severity = warning
 
    In questo esempio la regola [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502) è configurata in modo da essere attivata quando la complessità ciclomatica di un metodo è maggiore di 10.
 
-3. Nella finestra **Proprietà** di Visual Studio o nel file di progetto contrassegnare l'azione di compilazione del file di configurazione come [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Esempio:
+3. Nella finestra **Proprietà** di Visual Studio o nel file di progetto contrassegnare l'azione di compilazione del file di configurazione come [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Ad esempio:
 
    ```xml
    <ItemGroup>
@@ -108,7 +108,7 @@ I risultati vengono generati e viene visualizzata la finestra **Risultati metric
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Pacchetto NuGet Microsoft. CodeAnalysis. Metrics
 
-Il modo più semplice per generare dati di metrica del codice dalla riga di comando consiste nell'installare il pacchetto NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Dopo aver installato il pacchetto, eseguire `msbuild /t:Metrics` dalla directory che contiene il file di progetto. Esempio:
+Il modo più semplice per generare dati di metrica del codice dalla riga di comando consiste nell'installare il pacchetto NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Dopo aver installato il pacchetto, eseguire `msbuild /t:Metrics` dalla directory che contiene il file di progetto. Ad esempio:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -131,7 +131,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-È possibile eseguire l'override del nome del file di output specificando `/p:MetricsOutputFile=<filename>` . È anche possibile ottenere dati di metrica del codice di [tipo legacy](#previous-versions) specificando `/p:LEGACY_CODE_METRICS_MODE=true` . Esempio:
+È possibile eseguire l'override del nome del file di output specificando `/p:MetricsOutputFile=<filename>` . È anche possibile ottenere dati di metrica del codice di [tipo legacy](#previous-versions) specificando `/p:LEGACY_CODE_METRICS_MODE=true` . Ad esempio:
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -290,7 +290,7 @@ Se non si vuole installare il pacchetto NuGet, è possibile generare e usare dir
 
 #### <a name="metricsexe-usage"></a>Utilizzo Metrics.exe
 
-Per eseguire *Metrics.exe*, fornire un progetto o una soluzione e un file XML di output come argomenti. Esempio:
+Per eseguire *Metrics.exe*, fornire un progetto o una soluzione e un file XML di output come argomenti. Ad esempio:
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -333,7 +333,7 @@ La `LinesOfCode` metrica è più accurata e affidabile nel nuovo strumento per l
 
 Altre metriche, ad esempio `CyclomaticComplexity` e `MaintainabilityIndex` , usano le stesse formule delle versioni precedenti di *Metrics.exe*, ma il nuovo strumento conta il numero di istruzioni per le `IOperations` origini logiche anziché le istruzioni del linguaggio intermedio (il). I numeri saranno leggermente diversi rispetto a quelli generati dall'IDE di Visual Studio e dalle versioni precedenti di *Metrics.exe*.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare la finestra Risultati metrica codice](../code-quality/working-with-code-metrics-data.md)
 - [Valori della metrica del codice](../code-quality/code-metrics-values.md)

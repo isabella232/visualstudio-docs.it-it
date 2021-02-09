@@ -7,21 +7,21 @@ ms.topic: conceptual
 ms.assetid: c149f4e5-3b61-4c33-892e-3e26d47f3eeb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 30091a5bfd613ba9bd3738731e23153565ec4c8e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 64b5643704024ee689a011f5285b41be818dc5cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436589"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858969"
 ---
 # <a name="datacontext-methods-or-designer"></a>Metodi DataContext (O/R Designer)
 
 <xref:System.Data.Linq.DataContext> i metodi (nel contesto degli [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)) sono metodi della <xref:System.Data.Linq.DataContext> classe che eseguono stored procedure e funzioni in un database.
 
-La classe <xref:System.Data.Linq.DataContext> rappresenta una classe [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] che funge da canale tra un database SQL Server e le classi di entità [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] con mapping a tale database. La classe <xref:System.Data.Linq.DataContext> contiene le informazioni sulla stringa di connessione e i metodi per la connessione a un database e la modifica dei dati presenti in esso. Per impostazione predefinita, la classe <xref:System.Data.Linq.DataContext> contiene diversi metodi che è possibile chiamare, ad esempio il metodo <xref:System.Data.Linq.DataContext.SubmitChanges%2A> che invia dati aggiornati dalle classi [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] al database. È anche possibile creare metodi <xref:System.Data.Linq.DataContext> aggiuntivi mappati a stored procedure e funzioni. In altre parole, la chiamata a questi metodi personalizzati esegue la stored procedure o la funzione nel database a cui è stato eseguito il <xref:System.Data.Linq.DataContext> mapping del metodo. È possibile aggiungere nuovi metodi alla classe <xref:System.Data.Linq.DataContext> nello stesso modo in cui si aggiungono per estendere qualsiasi classe. Tuttavia, nelle discussioni sui <xref:System.Data.Linq.DataContext> metodi nel contesto di **O/R Designer** , sono i <xref:System.Data.Linq.DataContext> metodi che eseguono il mapping a stored procedure e funzioni che vengono discusse.
+La classe <xref:System.Data.Linq.DataContext> rappresenta una classe [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] che funge da canale tra un database SQL Server e le classi di entità [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] con mapping a tale database. La classe <xref:System.Data.Linq.DataContext> contiene le informazioni sulla stringa di connessione e i metodi per la connessione a un database e la modifica dei dati presenti in esso. Per impostazione predefinita, la classe <xref:System.Data.Linq.DataContext> contiene diversi metodi che è possibile chiamare, ad esempio il metodo <xref:System.Data.Linq.DataContext.SubmitChanges%2A> che invia dati aggiornati dalle classi [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] al database. È anche possibile creare metodi <xref:System.Data.Linq.DataContext> aggiuntivi mappati a stored procedure e funzioni. In altre parole, la chiamata a questi metodi personalizzati esegue la stored procedure o la funzione nel database a cui è stato eseguito il <xref:System.Data.Linq.DataContext> mapping del metodo. È possibile aggiungere nuovi metodi alla classe <xref:System.Data.Linq.DataContext> nello stesso modo in cui si aggiungono per estendere qualsiasi classe. Tuttavia, nelle discussioni sui <xref:System.Data.Linq.DataContext> metodi nel contesto di **O/R Designer**, sono i <xref:System.Data.Linq.DataContext> metodi che eseguono il mapping a stored procedure e funzioni che vengono discusse.
 
 ## <a name="methods-pane"></a>Riquadro Metodi
 
@@ -51,7 +51,7 @@ Quando si trascinano stored procedure e funzioni da **Esplora server** o **Esplo
 
 Gli oggetti trascinati dal database nell'area di progettazione di O/R vengono denominati automaticamente in base al nome degli oggetti nel database. Se si trascina più volte lo stesso oggetto, viene aggiunto un numero alla fine del nuovo nome che distingue i nomi. Se i nomi degli oggetti di database contengono spazi o caratteri non supportati in Visual Basic o C#, lo spazio o il carattere non valido viene sostituito con un carattere di sottolineatura.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

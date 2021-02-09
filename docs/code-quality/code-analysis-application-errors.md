@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dccefdb0325cfd96024923c77d03565f904ea49
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0f5c217e8d043d0363b66a63c84c78829f640065
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348502"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860581"
 ---
 # <a name="code-analysis-application-errors"></a>Errori nell'applicazione dell'analisi del codice
 
@@ -41,12 +41,12 @@ Questa sezione è un riferimento dei messaggi di errore generati dallo strumento
 |[CA0058](ca0058.md)|Impossibile caricare assembly a cui si fa riferimento.|
 |[CA0059](ca0059.md)|Errore di opzione della riga di comando.|
 |[CA0060](ca0060.md)|Impossibile caricare gli assembly a cui si fa riferimento indirettamente.|
-|[CA0061](ca0061.md)|Impossibile trovare la regola ' *RuleId* '.|
-|[CA0062](ca0062.md)|Impossibile trovare la regola ' *RuleId* ' a cui viene fatto riferimento nel set di regole ' *RuleSetName* '.|
+|[CA0061](ca0061.md)|Impossibile trovare la regola '*RuleId*'.|
+|[CA0062](ca0062.md)|Impossibile trovare la regola '*RuleId*' a cui viene fatto riferimento nel set di regole '*RuleSetName*'.|
 |[CA0063](ca0063.md)|Non è stato possibile caricare il file del set di regole o uno dei file del set di regole dipendenti.|
 |[CA0064](ca0064.md)|Non è stata eseguita alcuna analisi perché il set di regole specificato non contiene regole FxCop.|
-|[CA0065](ca0065.md)|Costrutto di metadati non supportato: il tipo ' *typeName* ' contiene una proprietà e un campo con lo stesso nome ' *NomeCampoProprietà* '|
-|[CA0066](ca0066.md)|Il valore ' *VersionId* ' specificato per **/TargetFrameworkVersion** non è una versione riconosciuta.|
+|[CA0065](ca0065.md)|Costrutto di metadati non supportato: il tipo '*typeName*' contiene una proprietà e un campo con lo stesso nome '*NomeCampoProprietà*'|
+|[CA0066](ca0066.md)|Il valore '*VersionId*' specificato per **/TargetFrameworkVersion** non è una versione riconosciuta.|
 |[CA0067](ca0067.md)|Directory non trovata.|
 |[CA0068](ca0068.md)|Impossibile trovare le informazioni di debug per l'assembly di destinazione *' AssemblyName '*.|
 |[CA0069](ca0069.md)|Uso della piattaforma alternativa. *FrameworkVersion1* non è stato trovato. In alternativa, usare *FrameworkVersion2* . Per ottenere risultati di analisi ottimali, verificare che sia installata la versione corretta del Framework.|

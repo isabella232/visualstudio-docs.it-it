@@ -1,6 +1,6 @@
 ---
-title: Utilizzo di tabelle di ricerca in data binding-Windows Forms
-description: Informazioni su come creare un Windows Forms controllo utente che supporta la ricerca data binding, usando la classe LookupBindingPropertiesAttribute in Visual Studio.
+title: Utilizzo di tabelle di ricerca in data binding-Windows Form
+description: Informazioni su come creare un Windows Form controllo utente che supporta la ricerca data binding, usando la classe LookupBindingPropertiesAttribute in Visual Studio.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,35 +14,35 @@ helpviewer_keywords:
 ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: de89839dd85f0f330356e1ade7d4658428ea3d3e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0eeb3e768370066bf93afc766d4d7f67d8d39a1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859073"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Creare un controllo utente Windows Form che supporta il data binding di ricerca
 
 Quando si visualizzano dati nei Windows Form, è possibile scegliere i controlli esistenti dalla **Casella degli strumenti** o creare controlli personalizzati se l'applicazione richiede funzionalità che non sono disponibili nei controlli standard. In questa procedura dettagliata è illustrato come creare un controllo che implementa <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. I controlli che implementano <xref:System.ComponentModel.LookupBindingPropertiesAttribute> possono contenere tre proprietà associabili ai dati. Tali controlli sono simili a <xref:System.Windows.Forms.ComboBox>.
 
-Per ulteriori informazioni sulla creazione di controlli, vedere [sviluppo di controlli Windows Forms in fase di progettazione](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
+Per ulteriori informazioni sulla creazione di controlli, vedere [sviluppo di controlli Windows Form in fase di progettazione](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).
 
 Quando si creano controlli da usare negli scenari di data binding, è necessario implementare uno degli attributi di data binding seguenti:
 
 |Utilizzo degli attributi di associazione dati|
 | - |
-|Implementare <xref:System.ComponentModel.DefaultBindingPropertyAttribute> su controlli semplici, ad esempio <xref:System.Windows.Forms.TextBox>, che visualizzano una singola colonna, o proprietà, di dati. Per altre informazioni, vedere [creare un Windows Forms controllo utente che supporta data binding semplici](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).|
-|Implementare <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> su controlli, ad esempio <xref:System.Windows.Forms.DataGridView>, che visualizzano elenchi, o tabelle, di dati. Per ulteriori informazioni, vedere la pagina relativa alla [creazione di un Windows Forms controllo utente che supporta data binding complessi](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
+|Implementare <xref:System.ComponentModel.DefaultBindingPropertyAttribute> su controlli semplici, ad esempio <xref:System.Windows.Forms.TextBox>, che visualizzano una singola colonna, o proprietà, di dati. Per altre informazioni, vedere [creare un Windows Form controllo utente che supporta data binding semplici](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).|
+|Implementare <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> su controlli, ad esempio <xref:System.Windows.Forms.DataGridView>, che visualizzano elenchi, o tabelle, di dati. Per ulteriori informazioni, vedere la pagina relativa alla [creazione di un Windows Form controllo utente che supporta data binding complessi](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Implementare <xref:System.ComponentModel.LookupBindingPropertiesAttribute> su controlli, ad esempio <xref:System.Windows.Forms.ComboBox>, che visualizzano elenchi, o tabelle, di dati ma che devono anche presentare una singola colonna o proprietà. Il processo è descritto in questa pagina di procedura dettagliata.|
 
 Questa procedura dettagliata crea un controllo di ricerca che effettua l'associazione ai dati di due tabelle. Questo esempio usa le tabelle `Customers` e `Orders` del database di esempio Northwind. Il controllo di ricerca è associato al `CustomerID` campo della `Orders` tabella. Usa questo valore per cercare `CompanyName` dalla `Customers` tabella.
 
 Durante questa procedura dettagliata si apprenderà come:
 
-- Creare una nuova **applicazione Windows Forms**.
+- Creare una nuova **applicazione Windows Form**.
 
 - Aggiungere un nuovo **controllo utente** al progetto.
 
@@ -74,23 +74,23 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
        Dopo un breve periodo di tempo, viene completata l'esecuzione della query e viene creato il database Northwind.
 
-## <a name="create-a-windows-forms-app-project"></a>Creare un progetto di app Windows Forms
+## <a name="create-a-windows-forms-app-project"></a>Creare un progetto di app Windows Form
 
-Il primo passaggio consiste nel creare un progetto di **applicazione Windows Forms** .
+Il primo passaggio consiste nel creare un progetto di **applicazione Windows Form** .
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
 2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
-3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
+3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Form** .
 
-4. Denominare il progetto **LookupControlWalkthrough** , quindi scegliere **OK**.
+4. Denominare il progetto **LookupControlWalkthrough**, quindi scegliere **OK**.
 
      Il progetto **LookupControlWalkthrough** viene creato e aggiunto a **Esplora soluzioni**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Aggiungere un controllo utente al progetto
 
-Dal momento che questa procedura dettagliata crea un controllo di ricerca da un **Controllo utente** , è necessario aggiungere un elemento **Controllo utente** al progetto **LookupControlWalkthrough**.
+Dal momento che questa procedura dettagliata crea un controllo di ricerca da un **Controllo utente**, è necessario aggiungere un elemento **Controllo utente** al progetto **LookupControlWalkthrough**.
 
 1. Selezionare **Aggiungi controllo utente** dal menu **Progetto**.
 
@@ -149,11 +149,11 @@ Nella finestra **Origini dati** è possibile impostare il controllo da creare pr
 
 2. Espandere il nodo **Customers** nella finestra **Origini dati**.
 
-3. Espandere il nodo **Orders** (nel nodo **Customers** sotto la colonna **Fax** ).
+3. Espandere il nodo **Orders** (nel nodo **Customers** sotto la colonna **Fax**).
 
 4. Fare clic sulla freccia a discesa nel nodo **Orders** e scegliere **Dettagli** dall'elenco di controllo.
 
-5. Fare clic sulla freccia a discesa nella colonna **CustomerID** (nel nodo **Orders** ) e scegliere **Personalizza**.
+5. Fare clic sulla freccia a discesa nella colonna **CustomerID** (nel nodo **Orders**) e scegliere **Personalizza**.
 
 6. Selezionare **LookupBox** dall'elenco **Controlli associati** nella finestra di dialogo **Personalizzazione dell'interfaccia utente dati**.
 
@@ -179,6 +179,6 @@ Viene in questo modo impostato il data binding per visualizzare `CompanyName` da
 
 - Spostarsi all'interno di alcuni record e verificare che `CompanyName` venga mostrato nel controllo `LookupBox`.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

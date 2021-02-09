@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 ms.author: mikejo
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c900ec10ea13e7f9d7092769565703bf52fe8c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: efeabd85bbf2753dd3f5e37a43e0918b7f95d7fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348932"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860217"
 ---
 # <a name="fxcopcmd-tool-errors"></a>Errori dello strumento FxCopCmd
 
@@ -54,6 +54,6 @@ Per gli errori irreversibili viene restituito l' **errore di analisi** . Indica 
 > [!NOTE]
 > L'assembly di codice restituito FxCopCmd **fa riferimento all'errore** 0x200 da solo è un avviso anziché un errore. Questo codice restituito indica che non sono presenti riferimenti indiretti mancanti, ma che FxCopCmd è stato in grado di gestirli. L'avviso indica che è possibile che alcuni risultati dell'analisi siano stati compromessi. Considera l' **errore di riferimento all'assembly** come un errore quando viene combinato con qualsiasi altro codice restituito.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Errori nell'applicazione dell'analisi del codice](../code-quality/code-analysis-application-errors.md)

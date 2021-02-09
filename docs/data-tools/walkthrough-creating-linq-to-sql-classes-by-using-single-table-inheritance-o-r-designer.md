@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: b83fd664cb2969c12d69e1e818f61190deed3804
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 7ed6d6f9d6a0e723979764313d185a41f49a08ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998239"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858150"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procedura dettagliata: creare classi di LINQ to SQL usando l'ereditarietà a tabella singola (O/R Designer)
 Gli [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supportano l'ereditarietà a tabella singola poiché viene in genere implementata nei sistemi relazionali. Questa procedura dettagliata illustra i passaggi generici forniti nell'argomento [How to: Configure ereditarietà by using the o/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) e fornisce alcuni dati reali per illustrare l'uso dell'ereditarietà in [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
@@ -96,7 +96,7 @@ Una volta creata la tabella, creare un nuovo progetto per illustrare la configur
 
 2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
-3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
+3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Form** .
 
 4. Denominare il progetto **InheritanceWalkthrough**, quindi scegliere **OK**.
 
@@ -175,7 +175,7 @@ Configurare l'ereditarietà trascinando un oggetto **Inheritance** dalla **Casel
     }
     ```
 
-## <a name="test-the-application"></a>Test dell'applicazione
+## <a name="test-the-application"></a>Testare l'applicazione
 Eseguire l'applicazione e verificare che i record visualizzati nella casella di riepilogo siano tutti dipendenti (record con valore 2 nella colonna di **tipo** ).
 
 ### <a name="to-test-the-application"></a>Per testare l'applicazione

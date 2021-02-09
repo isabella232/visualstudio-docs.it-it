@@ -9,15 +9,15 @@ helpviewer_keywords:
 - .NET analyzers, ported rules
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: dde5a3d8ccf5557905395ee03d108e995ecffe7e
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: de23f3529cfcd321b0a7c3f9844ac69d96fed9c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860321"
 ---
 # <a name="fxcop-rule-port-status"></a>Stato della porta della regola FxCop
 
@@ -202,6 +202,6 @@ CA5377 | Usare i criteri di accesso a livello di contenitore
 CA5379 | Non usare l'algoritmo della funzione di derivazione della chiave debole
 Ca9999 | Versione analizzatore non corrispondente
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Regole dell'analizzatore .NET](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md)

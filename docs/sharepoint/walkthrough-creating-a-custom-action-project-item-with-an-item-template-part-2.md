@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fe283da2c2a81827ca70414315278cebd775873a
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: bc1474d1c7aeabb9b3e9ecbbe6b42931d44c59c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839097"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Procedura dettagliata: creare un elemento di progetto azione personalizzata con un modello di elemento, parte 2
   Dopo aver definito un tipo personalizzato di elemento di progetto SharePoint e averlo associato a un modello di elemento in Visual Studio, potrebbe essere necessario fornire anche una procedura guidata per il modello. È possibile utilizzare la procedura guidata per raccogliere informazioni dagli utenti quando utilizzano il modello per aggiungere una nuova istanza dell'elemento del progetto a un progetto. Le informazioni raccolte possono essere utilizzate per inizializzare l'elemento del progetto.

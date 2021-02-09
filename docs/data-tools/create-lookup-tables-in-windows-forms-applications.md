@@ -1,6 +1,6 @@
 ---
 title: Creare tabelle di ricerca nelle applicazioni Windows Forms
-description: Informazioni su come creare tabelle di ricerca nelle applicazioni Windows Forms. Una tabella di ricerca descrive i controlli associati a due tabelle di dati correlate.
+description: Informazioni su come creare tabelle di ricerca nelle applicazioni Windows Form. Una tabella di ricerca descrive i controlli associati a due tabelle di dati correlate.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d6ec8860d2c163d16e29d229203bb77abcdf65f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 57190afba118468b4533ef1ecd30957eb25b08e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435195"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859048"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Creare tabelle di ricerca nelle applicazioni Windows Forms
 
@@ -59,6 +59,6 @@ Si consideri, ad esempio, una tabella di `Orders` in un database Sales. Ogni rec
     |**ValueMember**|Questa proprietà viene impostata da Visual Studio sulla prima colonna che partecipa alla chiave primaria o la prima colonna della tabella nel caso in cui non sia stata definita alcuna chiave.<br /><br /> Se è necessario apportare una modifica, impostarla sulla chiave primaria nella tabella con la colonna che si desidera visualizzare.|
     |**SelectedValue**|Visual Studio imposta questa proprietà sulla colonna originale eliminata dalla finestra **origini dati** .<br /><br /> Se è necessario apportare una modifica, impostarla sulla colonna chiave esterna nella tabella correlata.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

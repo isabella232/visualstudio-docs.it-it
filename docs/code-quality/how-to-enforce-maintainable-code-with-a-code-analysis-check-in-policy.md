@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa97f52f67e08b2ccf0843e5b5400680ed1c020
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9f061d9d10d66857a0b2506d13d6d6671f7df401
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434818"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860041"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedura: applicare codice gestibile con criteri di archiviazione dell'analisi del codice
 
@@ -29,7 +29,7 @@ Gli amministratori del controllo della versione di Team Foundation possono aggiu
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>Per aprire l'editor dei criteri di analisi del codice
 
-1. In **Team Explorer** fare clic con il pulsante destro del mouse sul progetto, scegliere **Impostazioni progetto** , quindi fare clic su **controllo del codice sorgente**.
+1. In **Team Explorer** fare clic con il pulsante destro del mouse sul progetto, scegliere **Impostazioni progetto**, quindi fare clic su **controllo del codice sorgente**.
 
      Verrà visualizzata la finestra di dialogo **controllo del codice sorgente** .
 
@@ -43,7 +43,7 @@ Gli amministratori del controllo della versione di Team Foundation possono aggiu
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>Per abilitare le regole di gestibilità dell'analisi codice
 
-1. Nella finestra di dialogo **Editor criteri di analisi codice** , in **Impostazioni regola** , espandere il nodo **regole di gestibilità** .
+1. Nella finestra di dialogo **Editor criteri di analisi codice** , in **Impostazioni regola**, espandere il nodo **regole di gestibilità** .
 
 2. Selezionare le caselle di controllo per le regole seguenti:
 
@@ -59,7 +59,7 @@ Gli amministratori del controllo della versione di Team Foundation possono aggiu
 
 3. Fare clic su **OK**. I nuovi criteri di archiviazione si applicano ora alle archiviazioni future.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Valori della metrica del codice](../code-quality/code-metrics-values.md)
 - [Creazione e utilizzo di criteri di archiviazione dell'analisi del codice](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

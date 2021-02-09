@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code analysis, migrating check-in policy
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f03cbd78944d49301362c07d01497abb22734c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3d46ed89880c41cbcaa6982c386e2ff8f115f8de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348762"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860113"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare criteri di archiviazione standard dell'analisi del codice
 
@@ -37,11 +37,11 @@ Dopo aver specificato i criteri di archiviazione per il codice gestito, i membri
 
 ## <a name="to-open-the-check-in-policy-editor"></a>Per aprire l'editor dei criteri di archiviazione
 
-1. In Team Explorer fare clic con il pulsante destro del mouse sul nome del progetto, scegliere **Impostazioni progetto** , quindi fare clic su **controllo del codice sorgente**.
+1. In Team Explorer fare clic con il pulsante destro del mouse sul nome del progetto, scegliere **Impostazioni progetto**, quindi fare clic su **controllo del codice sorgente**.
 
 1. Nella finestra di dialogo **controllo del codice sorgente** selezionare la scheda **criteri di archiviazione** .
 
-1. Eseguire una di queste operazioni:
+1. Eseguire una delle operazioni seguenti:
 
     - Fare clic su **Aggiungi** per creare nuovi criteri di archiviazione.
 
@@ -69,6 +69,6 @@ Dall'elenco **Esegui questo set di regole** , usare uno dei metodi seguenti:
 
 Per ulteriori informazioni su come creare e implementare un set di regole dei criteri di archiviazione personalizzato, vedere [implementare criteri di archiviazione personalizzati per il codice gestito](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Implementare i criteri di archiviazione di analisi codice personalizzati per il codice gestito](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

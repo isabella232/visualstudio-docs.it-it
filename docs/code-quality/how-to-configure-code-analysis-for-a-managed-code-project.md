@@ -17,15 +17,15 @@ helpviewer_keywords:
 - code analysis, rule sets
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c14a72ff0d797f2fcab8e4ac62d0e0a3fb1001f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8b76678b1e5c0f53502e24f8baee87ede3bd3ef6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348801"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860178"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Procedura: configurare l'analisi legacy per il codice gestito
 
@@ -40,7 +40,7 @@ In Visual Studio è possibile scegliere da un elenco di [set di regole](../code-
 
    - In **Esplora soluzioni** scegliere il progetto. Sulla barra dei menu selezionare **analizza**  >  **Configura analisi codice**  >  **per \<projectname>**.
 
-   - Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** , scegliere **Proprietà** , quindi selezionare la scheda **analisi codice** .
+   - Fare clic con il pulsante destro del mouse sul progetto in **Esplora soluzioni** , scegliere **Proprietà**, quindi selezionare la scheda **analisi codice** .
 
 2. Negli elenchi **configurazione** e **piattaforma** scegliere la configurazione di compilazione e la piattaforma di destinazione.
 
@@ -87,7 +87,7 @@ Per impostazione predefinita, a tutti i progetti gestiti di una soluzione viene 
 
 2. Nel menu **analizza** selezionare **Configura analisi codice per la soluzione**.
 
-3. Se necessario, espandere **Proprietà comuni** , quindi selezionare **Impostazioni analisi codice**.
+3. Se necessario, espandere **Proprietà comuni**, quindi selezionare **Impostazioni analisi codice**.
 
 4. È possibile specificare un set di regole per uno o più progetti:
 
@@ -99,6 +99,6 @@ Per impostazione predefinita, a tutti i progetti gestiti di una soluzione viene 
 
 5. Selezionare il campo **set di regole** di un progetto, quindi selezionare il nome del set di regole che si desidera applicare.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Tabella di riferimento del set di regole di analisi del codice](../code-quality/rule-set-reference.md)

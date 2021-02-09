@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8c9ced0b589b28f1cd21de4a862c6f11dc6e03e
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 54699947588e29da7312c0574833a13bbc3c8cfd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998265"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858189"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procedura dettagliata: Creazione di un'istanza di WCF Data Services con WPF ed Entity Framework
 Questa procedura dettagliata illustra come creare un semplice servizio [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] incluso in un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e come accedervi da un'applicazione Windows Forms.
@@ -145,18 +145,18 @@ Nel passaggio successivo viene creato e testato il servizio dati.
 
 8. Chiudere la finestra del browser.
 
-Nei passaggi successivi si creerà un'applicazione client di Windows Forms per utilizzare il servizio.
+Nei passaggi successivi si creerà un'applicazione client di Windows Form per utilizzare il servizio.
 
 ## <a name="creating-the-client-application"></a>Creazione dell'applicazione client
 Per creare l'applicazione client è necessario aggiungere un secondo progetto, aggiungere un riferimento al servizio per il progetto, configurare un'origine dati e creare un'interfaccia utente per visualizzare i dati del servizio.
 
-Nel primo passaggio si aggiunge un progetto di Windows Forms alla soluzione e lo si imposta come progetto di avvio.
+Nel primo passaggio si aggiunge un progetto di Windows Form alla soluzione e lo si imposta come progetto di avvio.
 
 ### <a name="to-create-the-client-application"></a>Per creare l'applicazione client
 
 1. Sulla barra dei menu scegliere file, **Aggiungi**  >  **nuovo progetto**.
 
-2. Nella finestra di dialogo **nuovo progetto** espandere il nodo **Visual Basic** o **Visual C#** , scegliere il nodo **Windows** , quindi scegliere **Windows Forms applicazione**.
+2. Nella finestra di dialogo **nuovo progetto** espandere il nodo **Visual Basic** o **Visual C#** , scegliere il nodo **Windows** , quindi scegliere **Windows Form applicazione**.
 
 3. Nella casella di testo **Nome** immettere `NorthwindClient` e quindi scegliere il pulsante **OK**.
 
