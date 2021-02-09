@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e777e1f8cb67187a81f8f3bb4f79299939bfa31c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b67b28c61624b73787dabe9fd24c4c39ff9b3c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738075"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853052"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
 Specifica il tipo di errore di un punto di interruzione.
@@ -94,7 +94,7 @@ Specifica un errore di interruzione generale di tipo errore.
 `BPET_ALL`\
 Specifica tutti i tipi di errore del punto di interruzione.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questi valori possono essere combinati con un operatore `OR` and bit per bit utilizzati per il `dwType` membro della struttura [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) . Passato come parametro al metodo [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) .
 
 Un tipo di errore del punto di interruzione è costituito da un tipo e da una gravità. Questo significa che un tipo di errore del punto di interruzione non è mai solo un tipo (ad esempio, `BPET_TYPE_ERROR` ) o un livello di gravità (ad esempio, `BPET_SEV_GENERAL` ). `BPET_GENERAL_WARNING` e `BPET_GENERAL_ERROR` forniscono valori predefiniti per i punti di interruzione di avviso e di errore generali.
@@ -106,7 +106,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
 - [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

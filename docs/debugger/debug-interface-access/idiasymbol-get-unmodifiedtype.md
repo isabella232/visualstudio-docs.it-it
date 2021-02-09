@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bf914dc0-ff84-4f5d-9f75-1733b17f3be0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee138fd361d883fb465711e679d09e6c96ddac4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38ca5d1d1612b0a51dd817c3edc8c3e8d3f9d8fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461581"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853408"
 ---
 # <a name="idiasymbolget_unmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
 Recupera il tipo originale per questo simbolo. Utilizzare quando l' [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su un tipo.
@@ -25,7 +25,7 @@ Recupera il tipo originale per questo simbolo. Utilizzare quando l' [enumerazion
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_unmodifiedType( 
+HRESULT get_unmodifiedType( 
    IDiaSymbol** pRetVal
 );
 ```
@@ -41,7 +41,7 @@ out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/id
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il tipo corrente è una modifica del tipo originale restituito. Il tipo originale per un simbolo può essere determinato ottenendo innanzitutto il tipo del simbolo e quindi interrogando il tipo restituito per il tipo originale. Si noti che alcuni simboli potrebbero non avere un tipo modificato del tipo originale.
 
 ## <a name="requirements"></a>Requisiti
@@ -51,5 +51,5 @@ out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/id
 
  DLL: msdia100.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

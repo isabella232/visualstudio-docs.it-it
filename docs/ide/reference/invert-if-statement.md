@@ -6,18 +6,18 @@ ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 71b3a11e053b6a600d0b33db7c52a91c4950bf5b
-ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
+ms.openlocfilehash: cf4ad7c25030e4a331ee67f4957ddac59afdd966
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "96616980"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852232"
 ---
 # <a name="invert-if-statement"></a>Istruzione Invert if
 
@@ -46,7 +46,7 @@ Questo refactoring si applica a:
 
     ![Risultato di Invert if else](media/invert-if-codefix-result.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)
 - [Suggerimenti per gli sviluppatori di .NET](../csharp-developer-productivity.md)

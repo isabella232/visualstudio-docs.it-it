@@ -12,15 +12,15 @@ helpviewer_keywords:
 - custom controls [Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 905288d4a580f5633196273666fbea3954d1767c
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 52b7eeefd157e99fc5214f29c220d94fd6e19772
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560278"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841899"
 ---
 # <a name="toolbox"></a>Casella degli strumenti
 
@@ -30,7 +30,7 @@ Nella finestra **Casella degli strumenti** sono visualizzati i controlli che è 
 
 È possibile trascinare diversi controlli sulla superficie della finestra di progettazione in uso nonché ridimensionare e posizionare tali controlli.
 
-La casella degli strumenti viene visualizzata insieme alle visualizzazioni della finestra di progettazione, ad esempio la visualizzazione progettazione di un file XAML o un progetto di app Windows Forms. La **casella degli strumenti** visualizza solo i controlli che possono essere usati nella finestra di progettazione corrente. È possibile eseguire una ricerca all'interno della **casella degli strumenti** per restringere ulteriormente gli elementi visualizzati.
+La casella degli strumenti viene visualizzata insieme alle visualizzazioni della finestra di progettazione, ad esempio la visualizzazione progettazione di un file XAML o un progetto di app Windows Form. La **casella degli strumenti** visualizza solo i controlli che possono essere usati nella finestra di progettazione corrente. È possibile eseguire una ricerca all'interno della **casella degli strumenti** per restringere ulteriormente gli elementi visualizzati.
 
 > [!NOTE]
 > Per alcuni tipi di progetto, nella **casella degli strumenti** potrebbe non essere visualizzato alcun elemento.
@@ -82,6 +82,6 @@ Per ulteriori informazioni su alcune delle schede della **casella degli strument
 - [Casella degli strumenti, Scheda Componenti](../../ide/reference/toolbox-components-tab.md)
 - [Casella degli strumenti, Scheda HTML](../../ide/reference/toolbox-html-tab.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Scegli elementi della Casella degli strumenti, Componenti WPF](choose-toolbox-items-wpf-components.md)

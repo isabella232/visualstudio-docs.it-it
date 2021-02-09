@@ -5,15 +5,15 @@ ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 564ba133074af3749bd909f1b0a7fe32822f5d75
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 35850293b1ef739506fe6848e000396f6bacf1d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833260"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852297"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introdurre una variabile locale in Visual Studiio
 
@@ -47,7 +47,7 @@ Questa generazione di codice si applica a:
       - Premere **CTRL** + **.** per attivare il menu **Azioni rapide e refactoring**.
    - **Mouse**
       - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
-      - Fare clic su ![Screenshot dell'icona del cacciavite visualizzata nel margine sinistro del menu azioni rapide e refactoring.](media/screwdriver.png) icona che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con l'espressione evidenziata.
+      - Fare clic sull'icona ![Screenshot dell'icona del cacciavite visualizzata nel margine sinistro del menu azioni rapide e refactoring.](media/screwdriver.png) icona che viene visualizzata nel margine sinistro se il cursore del testo si trova già nella riga con l'espressione evidenziata.
 
    ![Anteprima di Introduce l'elemento locale](media/local-preview-cs.png)
 

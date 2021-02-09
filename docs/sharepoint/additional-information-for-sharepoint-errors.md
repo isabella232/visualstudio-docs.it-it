@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 240913e93dc1945846613ac1ecc8d0141368f7b3
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 5ce41bdf53ee55bfcbcec0cc2a2271ba9914aed8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850429"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851738"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Informazioni aggiuntive sugli errori di SharePoint
   Per informazioni sulla risoluzione degli [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] errori e degli avvisi degli strumenti di SharePoint, vedere gli argomenti relativi alla risoluzione dei problemi e i forum pubblici.
@@ -48,5 +48,5 @@ ms.locfileid: "94850429"
 
  Se non si riesce ancora a trovare le risposte necessarie, è possibile accedere alle opzioni di supporto online, ad esempio contattare il servizio supporto tecnico Microsoft o eseguire ricerche negli articoli della Knowledge base. Per ulteriori informazioni, vedere la pagina della [Guida e del supporto tecnico Microsoft](https://support.microsoft.com/) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Build e debug delle soluzioni SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 94a06468-a44d-403d-a931-77bbc9d06e56
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 409c0f40adfd374065dedb842965d2d1237bc9a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 587cabb19105041b73c4767e26ab20fd074d148f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75568828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852453"
 ---
 # <a name="import-and-export-settings-command"></a>Importa/Esporta impostazioni (comando)
 
@@ -44,7 +44,7 @@ facoltativo. Importa le impostazioni correnti nel file specificato.
 
 facoltativo. Reimposta le impostazioni correnti.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Se si esegue questo comando senza opzioni viene visualizzata l'**Importazione/Esportazione guidata delle impostazioni**. Per altre informazioni, vedere [Sincronizzare le impostazioni](../synchronized-settings-in-visual-studio.md) e [Impostazioni dell'ambiente](../environment-settings.md).
 
@@ -56,7 +56,7 @@ Il comando seguente esporta le impostazioni correnti nel file `MyFile.vssettings
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Impostazioni dell'ambiente](../../ide/environment-settings.md)
 - [Sincronizzare le impostazioni](../../ide/synchronized-settings-in-visual-studio.md)

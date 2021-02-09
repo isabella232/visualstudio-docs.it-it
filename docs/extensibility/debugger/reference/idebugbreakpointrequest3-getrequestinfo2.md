@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 33942e4a-0a0a-49e8-a693-004954f6d38a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f5febf664da9cd69dbd88b70056d9eac953bf581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a11a317b4f14d94670a454a97be321b3097cffeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734841"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852986"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
 Questo metodo ottiene le informazioni sulla richiesta del punto di interruzione che descrivono la richiesta del punto di interruzione.
@@ -28,9 +28,9 @@ Questo metodo ottiene le informazioni sulla richiesta del punto di interruzione 
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetRequestInfo2(
-   BPREQI_FIELDS      dwFields,
-   BP_REQUEST_INFO2*  bBPRequestInfo
+HRESULT GetRequestInfo2(
+   BPREQI_FIELDS      dwFields,
+   BP_REQUEST_INFO2*  bBPRequestInfo
 );
 ```
 
@@ -51,10 +51,10 @@ out Struttura di [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Sono disponibili altre informazioni in questa richiesta rispetto a quelle restituite dal metodo [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)
 - [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

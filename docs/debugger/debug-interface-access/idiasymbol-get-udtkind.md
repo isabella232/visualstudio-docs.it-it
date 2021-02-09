@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4002f887-aea6-4475-b302-67c57079fe0a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ef8254433fc67291b47247f376e22a5ac8f2bf0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a0b93f8369b4cc1e733b89c9aa25e04150849b2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461637"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853450"
 ---
 # <a name="idiasymbolget_udtkind"></a>IDiaSymbol::get_udtKind
 Recupera la varietà di un tipo definito dall'utente (UDT).
@@ -25,7 +25,7 @@ Recupera la varietà di un tipo definito dall'utente (UDT).
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_udtKind ( 
+HRESULT get_udtKind ( 
    DWORD* pRetVal
 );
 ```
@@ -41,6 +41,6 @@ out Restituisce un valore dall'enumerazione Enumerazione [UdtKind](../../debugge
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione UdtKind](../../debugger/debug-interface-access/udtkind.md)

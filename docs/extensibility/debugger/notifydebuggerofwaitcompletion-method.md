@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 841c5908-4f3f-400b-a7b0-96a95f362817
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35571b28287ecdea48a2ff089cb25cf3ed742d60
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: b62b613950f9fd6c8ce18969c126a6e74a154b58
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606632"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851296"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>Metodo NotifyDebuggerOfWaitCompletion
 Metodo segnaposto utilizzato come destinazione del punto di interruzione dal debugger. Questo metodo non deve essere inline o ottimizzato.
@@ -37,5 +37,5 @@ private void NotifyDebuggerOfWaitCompletion()
 
 ## <a name="requirements"></a>Requisiti
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

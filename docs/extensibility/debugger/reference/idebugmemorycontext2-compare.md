@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: c51b5128-848e-4d8e-b2e9-1161339763c3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b2551f8554d96186b90a1eed97a5a48ec5f0405
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e54a2bf7cd37b411dbc2d18d23a3466a4b47ce0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727500"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851205"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 Confronta il contesto di memoria con ogni contesto nella matrice specificata nel modo indicato dai flag di confronto, restituendo un indice del primo contesto corrispondente a.
@@ -29,7 +29,7 @@ Confronta il contesto di memoria con ogni contesto nella matrice specificata nel
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT Compare( 
+HRESULT Compare( 
    CONTEXT_COMPARE        compare,
    IDebugMemoryContext2** rgpMemoryContextSet,
    DWORD                  dwMemoryContextSetLen,
@@ -62,9 +62,9 @@ out Restituisce l'indice del primo contesto di memoria che soddisfa il confronto
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Restituisce `E_COMPARE_CANNOT_COMPARE` se i due contesti non possono essere confrontati.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Un motore di debug (de) non deve supportare tutti i tipi di confronto, ma deve supportare almeno `CONTEXT_EQUAL` , `CONTEXT_LESS_THAN` `CONTEXT_GREATER_THAN` e `CONTEXT_SAME_SCOPE` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md)

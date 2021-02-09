@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dc20c7c0-15a6-4b78-a5c9-2e0b94cac522
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbcf11f95260d8e58916de9fcc40d9a44a14a27d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c933bd98a4745bdd4f8198993b476945120ed51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461483"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853380"
 ---
 # <a name="idiasymbolget_virtualaddress"></a>IDiaSymbol::get_virtualAddress
 Recupera l'indirizzo virtuale (VA) del percorso. Utilizzare quando l' [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è impostata su `LocIsStatic` .
@@ -25,7 +25,7 @@ Recupera l'indirizzo virtuale (VA) del percorso. Utilizzare quando l' [enumerazi
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_virtualAddress ( 
+HRESULT get_virtualAddress ( 
    ULONGLONG* pRetVal
 );
 ```
@@ -41,6 +41,6 @@ out Restituisce l'indirizzo virtuale del percorso.
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
 - [Enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md)

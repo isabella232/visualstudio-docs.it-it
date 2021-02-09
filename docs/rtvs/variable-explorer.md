@@ -5,15 +5,15 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 799b7f2789898e0d02d9588f9a3ad7d1e8098a00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f69e5b61e80d3a00522307dd7481f74418407d99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62809823"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851803"
 ---
 # <a name="variable-explorer"></a>Esplora variabili
 
@@ -45,7 +45,7 @@ Poiché i dati sono spesso tabulari, è possibile visualizzare qualsiasi tipo di
 
 Se si fa clic sull'intestazione di una colonna, i dati vengono ordinati in base a tale colonna, alternatamente in ordine crescente e decrescente. Se si fa clic su altre colonne tenendo premuto **MAIUSC**, anche queste colonne vengono prese in considerazione per l'ordinamento. Se si fa clic su una colonna senza tenere premuto **MAIUSC** si torna all'ordinamento in base a una sola colonna.
 
-La sequenza in cui si fa clic sulle intestazioni di colonna determina l'ordine in cui viene eseguito l'ordinamento. Ad esempio, **MAIUSC** + **fare clic** sulla colonna **CIL** , **Shift**quindi + **fare clic** due volte sulla colonna **MPG** per ordinare l'elenco per i cilindri ascendenti e i chilometri decrescenti per Gallo:
+La sequenza in cui si fa clic sulle intestazioni di colonna determina l'ordine in cui viene eseguito l'ordinamento. Ad esempio, **MAIUSC** + **fare clic** sulla colonna **CIL** , quindi + **fare clic** due volte sulla colonna **MPG** per ordinare l'elenco per i cilindri ascendenti e i chilometri decrescenti per Gallo:
 
 ![Vista tabulare dell'ordinamento dei dati in base a due colonne.](media/variable-explorer-table-view-sorting.png)
 

@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 9fca7285-f7f1-422d-8565-92bf0e0db60a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 819b796a656f0ef8775fbb1c9e800e3019b81729
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e1b1d379f235729614f257e38ea2b84b856507b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727406"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851049"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 Ottiene il messaggio da visualizzare.
@@ -29,7 +29,7 @@ Ottiene il messaggio da visualizzare.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetMessage( 
+HRESULT GetMessage( 
    MESSAGETYPE* pMessageType,
    BSTR*        pbstrMessage,
    DWORD*       pdwType,
@@ -39,7 +39,7 @@ HRESULT GetMessage( 
 ```
 
 ```csharp
-int GetMessage( 
+int GetMessage( 
    out enum_MESSAGETYPE pMessageType,
    out string           pbstrMessage,
    out uint             pdwType,
@@ -67,7 +67,7 @@ out Restituisce il tipo del messaggio, utilizzando le convenzioni della funzione
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
 - [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)
 - [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

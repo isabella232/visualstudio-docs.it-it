@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f6e9cd07-63cd-48a6-9835-e69c2d0859c5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 59332c3508413dffc77a8a922fed6fe912bd3ff7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 127beb471a44c4edfd5a070451f369ec54452fe9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461323"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853303"
 ---
 # <a name="idiatableget_name"></a>IDiaTable::get_name
 Recupera il nome della tabella.
@@ -25,7 +25,7 @@ Recupera il nome della tabella.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_name ( 
+HRESULT get_name ( 
    BSTR* pRetVal
 );
 ```
@@ -38,5 +38,5 @@ out Restituisce il nome della tabella.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

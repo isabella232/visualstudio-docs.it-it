@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea477d3d21cd3b7a1a5352c736dc2f78195b99a4
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: a2d4ee971e2c53c9431982ef33483471a50c54bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851309"
 ---
 # <a name="event-descriptions"></a>Descrizioni degli eventi
 Ogni tipo di evento ha uno scopo specifico.
@@ -34,7 +34,7 @@ Ogni tipo di evento ha uno scopo specifico.
 |Eventi testo documento|Si verificano quando viene modificato il testo in un documento. Questi eventi non vengono inviati tramite il `IDebugEventCallBack2::Event` metodo.|
 |Eventi di creazione del motore|Inviato quando un motore viene creato per la prima volta.|
 |Eventi punto di ingresso|Inviato quando il programma di cui è in corso il debug ha eseguito il codice di inizializzazione e ha raggiunto il primo punto di ingresso dell'utente.|
-|Eventi eccezione|Inviato quando un programma in esecuzione raggiunge un'eccezione.|
+|Eventi di eccezione|Inviato quando un programma in esecuzione raggiunge un'eccezione.|
 |Eventi di completamento della valutazione delle espressioni|Inviato quando la valutazione dell'espressione asincrona è completata.|
 |Trova eventi simbolo|Inviato ogni volta che il DE deve chiedere all'utente di trovare i simboli per un modulo.|
 |Eventi di caricamento completo|Inviato solo quando il caricamento iniziale del programma è completato e il primo codice sta per essere eseguito nel programma.|

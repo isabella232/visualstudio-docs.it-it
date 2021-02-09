@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 54dac8c8-c8ee-4023-af27-b25466e3a6ec
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf676c58d8850834ec0c3333196dfb7144f885e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b4e66049ec5547913dad8df7256f2db3d2395fa0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718863"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851959"
 ---
 # <a name="markprofile"></a>MarkProfile
 Il metodo `MarkProfile` inserisce un contrassegno del profilo nel file con estensione *vsp*. La profilatura per il thread che contiene la funzione `MarkProfile` deve essere impostata su ON affinché il contrassegno possa essere inserito.
@@ -46,7 +46,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_TEXTTOOLONG|La stringa supera il numero massimo di 256 caratteri. La stringa di commento viene troncata e vengono registrati l'indicatore e il commento.|
 |MARK_OK|MARK_OK viene restituito per indicare l'esito positivo.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il valore del contrassegno viene inserito nel file con estensione *vsp* ogni volta che il codice viene eseguito se il thread che contiene la funzione MarkProfile è in corso di profilatura. È possibile chiamare MarkProfile più volte.
 
  I contrassegni del profilo hanno ambito globale. Ad esempio, è possibile usare un contrassegno del profilo inserito in un thread per contrassegnare l'inizio o la fine di un segmento di dati in qualsiasi thread in. file *VSP* .
@@ -99,5 +99,5 @@ void ExerciseMarkProfile()
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento all'API del profiler di Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

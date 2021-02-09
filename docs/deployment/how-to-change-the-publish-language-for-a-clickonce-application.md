@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: ef5024c4-cda1-4970-bc75-32a2a10c92c3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fed8c137b5bce225d8a231bb5a263b87c2bf361
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c0d9c3d49dde0bdef41e89ee71139fb1ab621297
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851465"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Procedura: Cambiare la lingua di pubblicazione di un'applicazione ClickOnce
 
@@ -36,7 +36,7 @@ La `Publish language` proprietà può essere impostata nella finestra di dialogo
 
 ## <a name="to-change-the-publish-language"></a>Per modificare la lingua di pubblicazione
 
-1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
@@ -46,7 +46,7 @@ La `Publish language` proprietà può essere impostata nella finestra di dialogo
 
 5. Nella finestra di dialogo **Opzioni di pubblicazione** selezionare una lingua e le impostazioni cultura dall'elenco a discesa **lingua di pubblicazione** , quindi fare clic su **OK**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

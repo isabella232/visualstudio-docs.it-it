@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 08c7f091-1816-4d64-8834-f9ecaac5c58d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c190710afc9231662fa12c5552d6f73e0268b643
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec9531d05c7009bcdd0998cb44146bf3f00c2e18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851192"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
 Recupera una struttura [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) che descrive il contesto.
@@ -29,7 +29,7 @@ Recupera una struttura [CONTEXT_INFO](../../../extensibility/debugger/reference/
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetInfo( 
+HRESULT GetInfo( 
    CONTEXT_INFO_FIELDS dwFields,
    CONTEXT_INFO*       pInfo
 );
@@ -52,7 +52,7 @@ in Combinazione di flag dell'enumerazione [CONTEXT_INFO_FIELDS](../../../extensi
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)
 - [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)

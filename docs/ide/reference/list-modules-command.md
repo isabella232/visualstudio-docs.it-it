@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0c3f6445a22ee80457e8a7f9f24fb7008f77ed
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 4a38a5423568528d267fd92894b8b06b4e5667c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305314"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852063"
 ---
 # <a name="list-modules-command"></a>Comando Elenca moduli
 Elenca i moduli disponibili per il processo corrente.
@@ -78,7 +78,7 @@ In questo esempio vengono elencati i nomi dei moduli, gli indirizzi e i timestam
 Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolFile:no /SymbolStatus:no /Timestamp:yes /Version:no
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)

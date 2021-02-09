@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0deb8ec5-d6fb-4622-bb14-0c46b9459cc6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f57a742bae0217493d8869b257e4a17839e4e14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af31a88859f2afba735e0696124076eb82068404
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721334"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850907"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
 Ottiene la dimensione, in byte, del valore della proprietà.
@@ -28,13 +28,13 @@ Ottiene la dimensione, in byte, del valore della proprietà.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetSize ( 
+HRESULT GetSize ( 
    DWORD* pdwSize
 );
 ```
 
 ```csharp
-int GetSize ( 
+int GetSize ( 
    out uint pdwSize
 );
 ```
@@ -46,5 +46,5 @@ out Restituisce la dimensione, in byte, del valore della proprietà.
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice errore. Restituisce `S_GETSIZE_NO_SIZE` se la proprietà non ha dimensioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

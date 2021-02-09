@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3a544c8b-11dc-46bb-8549-261e4ac5bbc4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d20a1180e1162e7de3aee1c5d69facf8c193910
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12016ae7d03913d1880015a6b8cf318b14c94af5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727422"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851075"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 Questa interfaccia rappresenta una posizione nello spazio degli indirizzi del computer in cui è in esecuzione il programma di cui è in corso il debug.
@@ -42,10 +42,10 @@ IDebugMemoryContext2 : IUnknown
 |[GetName](../../../extensibility/debugger/reference/idebugmemorycontext2-getname.md)|Ottiene il nome visualizzabile dall'utente per questo contesto.|
 |[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)|Ottiene informazioni che descrivono questo contesto.|
 |[Aggiungere](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md)|Aggiunge un valore specificato all'indirizzo del contesto corrente per creare un nuovo contesto.|
-|[Sottrazione](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md)|Sottrae un valore specificato dall'indirizzo del contesto corrente per creare un nuovo contesto.|
+|[Sottrarre](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md)|Sottrae un valore specificato dall'indirizzo del contesto corrente per creare un nuovo contesto.|
 |[Confronta](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)|Confronta due contesti nel modo indicato dai flag di confronto.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  La finestra **memoria** di Visual Studio chiama [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) per ottenere l' `IDebugMemoryContext2` interfaccia che contiene l'espressione valutata utilizzata per l'indirizzo di memoria. Questo contesto viene quindi passato a [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) e [WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) per specificare l'indirizzo per la lettura o la scrittura.
 
 ## <a name="requirements"></a>Requisiti
@@ -55,7 +55,7 @@ IDebugMemoryContext2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)
 - [GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)

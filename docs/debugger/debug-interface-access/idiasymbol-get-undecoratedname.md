@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e49edf25-a51d-4787-bd5b-2bf5af827c8c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eeb6fa8a2ed90325c061e0e0633e991ebd318917
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eafc08533d062b817e0ce9da4c8a398e26dbd70a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853443"
 ---
 # <a name="idiasymbolget_undecoratedname"></a>IDiaSymbol::get_undecoratedName
 Recupera il nome non decorato per un nome in C++ decorato, o collegamento,.
@@ -25,7 +25,7 @@ Recupera il nome non decorato per un nome in C++ decorato, o collegamento,.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_undecoratedName ( 
+HRESULT get_undecoratedName ( 
    BSTR* pRetVal
 );
 ```
@@ -41,5 +41,5 @@ out Restituisce il nome non decorato per un nome decorato C++.
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

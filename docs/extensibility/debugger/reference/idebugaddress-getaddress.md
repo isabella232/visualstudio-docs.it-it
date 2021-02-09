@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2590387b-5d36-4116-9a75-737957b8898e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 162a64c9118bdcde23208082350005e607a237b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df4eb1278a0fe436899c1da989c4c63cfa98cac3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736600"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853012"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
 Restituisce una struttura che descrive un oggetto e la relativa posizione all'interno del relativo ambito o contenitore.
@@ -46,8 +46,8 @@ int GetAddress(
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  La struttura [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) viene passata a questo metodo, che quindi la compila con le informazioni appropriate. Il modo in cui queste informazioni vengono interpretate dipende dal tipo di informazioni restituite e dal gestore di simboli stesso. Per ulteriori informazioni, vedere [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

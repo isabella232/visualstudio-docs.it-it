@@ -22,15 +22,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], designer
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b6e78b6809d3136c0db1f558d175706dc0ecd75b
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: b398d9c00caf3a4fa2ca58bafa3273673a305859
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850312"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851686"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Panoramica degli strumenti di progettazione dei modelli BDC
   È possibile progettare un modello di integrazione applicativa dei dati tramite la finestra di progettazione dell'integrazione applicativa dei dati, la finestra **Dettagli metodo** di integrazione applicativa dei dati e l' **esplorazione BDC**.
@@ -75,7 +75,7 @@ ms.locfileid: "94850312"
 
  Per altre informazioni, vedere [procedura: definire il descrittore di tipo di un parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: creare un modello di integrazione applicativa dei dati](../sharepoint/how-to-create-a-bdc-model.md)
 - [Procedura: aggiungere un'entità a un modello](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)

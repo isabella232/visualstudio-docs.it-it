@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 654ebf68efebaa44766079c172e87396134805e3
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 72d2c6ded39564b91ba4f7b74fe2985aab14a7ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304713"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852622"
 ---
 # <a name="context-parameters"></a>Parametri di contesto
 Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Development Environment (IDE), è possibile aggiungere le procedure guidate alle finestre di dialogo **nuovo progetto**, **Aggiungi nuovo elemento** o **Aggiungi progetto secondario** . Le procedure guidate aggiunte sono disponibili nel menu **file** o facendo clic con il pulsante destro del mouse su un progetto in **Esplora soluzioni**. L'IDE passa i parametri di contesto all'implementazione della procedura guidata. I parametri di contesto definiscono lo stato del progetto quando l'IDE chiama la procedura guidata.
@@ -60,7 +60,7 @@ Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrated Deve
 | `InstallationDirectory` | Percorso della directory dell' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] installazione. |
 | `Silent` | Valore booleano che indica se la procedura guidata deve essere eseguita automaticamente come se fosse stato fatto clic su **fine** ( `TRUE` ). |
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>
 - [Parametri personalizzati](../../extensibility/internals/custom-parameters.md)

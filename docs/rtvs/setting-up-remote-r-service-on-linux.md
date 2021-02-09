@@ -6,15 +6,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 586f3038ff4bb091fb99160d7965ad927eda070a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62809557"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851816"
 ---
 # <a name="remote-r-service-for-linux"></a>Remote R Service per Linux
 
@@ -22,7 +22,7 @@ Remote R Service per Linux è attualmente disponibile in un pacchetto come rtvs-
 
 Dopo aver configurato il computer remoto, i passaggi seguenti consentono di connettere R Tools for Visual Studio (RTVS) a tale servizio:
 
-1. Selezionare **R Tools**  >  **Windows**  >  **area di lavoro** Windows per aprire la finestra **aree di lavoro** .
+1. Selezionare **R Tools**  >    >  **area di lavoro** Windows per aprire la finestra **aree di lavoro** .
 1. Selezionare **Aggiungi connessione**.
 1. Assegnare un nome alla connessione e specificare l'URL, ad esempio `https://localhost:5444` (sottosistema Windows per Linux) o `https://public-ip:5444` (contenitore di Azure). Al termine, selezionare **Salva**.
 1. Selezionare l'icona della connessione o fare doppio clic sull'elemento della connessione.

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dbe9ed00223fa549420537579d39a4c88cf37cb
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 9b401baf1605a869772ba41ce83ad906061f8144
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973973"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851439"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Creare un controllo della casella degli strumenti WPF
 
@@ -33,7 +33,7 @@ A partire da Visual Studio 2015, non si installa Visual Studio SDK dall'area dow
 
 1. Creare un progetto VSIX denominato `MyToolboxControl` . È possibile trovare il modello di progetto VSIX nella finestra di dialogo **nuovo progetto** cercando "VSIX".
 
-2. Quando si apre il progetto, aggiungere un modello di elemento di **controllo della casella degli strumenti WPF** denominato `MyToolboxControl` . Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a estensibilità di **Visual C#**  >  **Extensibility** e selezionare **controllo della casella degli strumenti WPF**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *MyToolboxControl.cs*.
+2. Quando si apre il progetto, aggiungere un modello di elemento di **controllo della casella degli strumenti WPF** denominato `MyToolboxControl` . Nella **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Aggiungi**  >  **nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** passare a estensibilità di **Visual C#**  >   e selezionare **controllo della casella degli strumenti WPF**. Nel campo **nome** nella parte inferiore della finestra modificare il nome del file di comando in *MyToolboxControl.cs*.
 
     La soluzione ora contiene un controllo utente, un `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> che aggiunge il controllo alla **casella degli strumenti** e una voce di asset **Microsoft. VisualStudio. ToolboxControl** nel manifesto VSIX per la distribuzione.
 

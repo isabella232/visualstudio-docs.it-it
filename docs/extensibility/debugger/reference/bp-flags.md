@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62626ff75a4545d89835d3136649191004291f8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff3730d3903b71db78c8ecbc025bfe44d6e37f7f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738066"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853032"
 ---
 # <a name="bp_flags"></a>BP_FLAGS
 Fornisce flag facoltativi che possono essere utilizzati per specificare informazioni aggiuntive quando si imposta un punto di interruzione.
@@ -54,7 +54,7 @@ Specifica che il motore di debug (DE) deve eseguire il mapping del punto di inte
 `BP_FLAG_DONT_STOP`\
 Specifica che il punto di interruzione deve essere elaborato dal motore di debug, ma che in definitiva il motore di debug non dovrebbe arrestarsi, ovvero un oggetto evento [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) non deve essere inviato. Questo flag è progettato per essere utilizzato principalmente con punti.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Utilizzato per il `dwFlags` membro delle strutture [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
 Questi valori possono essere combinati con un bit per bit `OR` .
@@ -66,7 +66,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

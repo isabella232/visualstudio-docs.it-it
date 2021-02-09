@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 92360cbd-0761-446e-93f9-04dc8f4b66c6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e0842c5bfcb98a730f1f23862a45b01d2e65a977
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62eb3879fd30bfd4820dd0f53b864140127f51a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461392"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853373"
 ---
 # <a name="idiasymbolget_virtualtableshape"></a>IDiaSymbol::get_virtualTableShape
 Recupera l'interfaccia dei simboli del tipo di tabella virtuale per un tipo definito dall'utente.
@@ -25,7 +25,7 @@ Recupera l'interfaccia dei simboli del tipo di tabella virtuale per un tipo defi
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_virtualTableShape ( 
+HRESULT get_virtualTableShape ( 
    IDiaSymbol** pRetVal
 );
 ```
@@ -41,5 +41,5 @@ out Restituisce un oggetto [IDiaSymbol](../../debugger/debug-interface-access/id
 > [!NOTE]
 > Un valore restituito di `S_FALSE` indica che la proprietà non è disponibile per il simbolo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

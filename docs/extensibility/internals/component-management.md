@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 648a1c90b143a0f38f8911fcaed3ee1ed16908b6
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 44ee1a3afe313cdc11bb28e0a24a89e3e3ad7f0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304921"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852726"
 ---
 # <a name="component-management"></a>Gestione dei componenti
 Le unità di attività nel Windows Installer sono definite componenti Windows Installer (talvolta denominati WICs o Just Components). Un GUID identifica ogni WIC, ovvero l'unità di base dell'installazione e il conteggio dei riferimenti per le configurazioni che utilizzano Windows Installer.
@@ -49,6 +49,6 @@ Le unità di attività nel Windows Installer sono definite componenti Windows In
 
      In tal caso, le chiavi condivise verranno sovrascritte quando viene installato un altro pacchetto VSPackage con versione. Dopo la rimozione della seconda versione, il file a cui punta la chiave non è più disponibile.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Scegliere tra VSPackage condivisi e con versione](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [Scenari di installazione di VSPackage](../../extensibility/internals/vspackage-setup-scenarios.md)

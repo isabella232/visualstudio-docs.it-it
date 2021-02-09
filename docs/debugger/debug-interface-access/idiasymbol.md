@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 01ad328a-736c-4933-a9f8-c2ded19ddd8c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0214d3e8d097efa31b3f8b02e67f419226a093a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: da51eda00bd2c80152029e503cfb33089e608683
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85461343"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853310"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 Descrive le proprietà di un'istanza del simbolo.
@@ -25,7 +25,7 @@ Descrive le proprietà di un'istanza del simbolo.
 ## <a name="syntax"></a>Sintassi
 
 ```
-IDiaSymbol : IUnknown
+IDiaSymbol : IUnknown
 ```
 
 ## <a name="methods-in-alphabetical-order"></a>Metodi in ordine alfabetico
@@ -220,7 +220,7 @@ La tabella seguente illustra i metodi di `IDiaSymbol` .
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|Recupera l'identificatore di forma della tabella virtuale del simbolo.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|Recupera un flag che indica se il tipo di dati definito dall'utente è volatile.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 Ottenere questa interfaccia chiamando uno dei metodi seguenti:
@@ -342,7 +342,7 @@ Libreria: diaguids. lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17bc39f65d7c4c42b4f958b559df7c5b7d3bbdf7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1961aaf45478f25ed8eb55d8eda91a5c4eafc4dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725512"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852947"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 Ottiene il valore a cui punta una serie di byte consecutivi.
@@ -28,7 +28,7 @@ Ottiene il valore a cui punta una serie di byte consecutivi.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetBytes( 
+HRESULT GetBytes( 
    DWORD  dwStart,
    DWORD  dwCount,
    BYTE*  pBytes,
@@ -61,9 +61,9 @@ out Restituisce il numero di byte effettivamente recuperati.
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo metodo viene utilizzato se il puntatore rappresentato da questo [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) punta a un tipo primitivo o a una semplice matrice di tipi primitivi (ovvero una matrice che può essere rappresentata da una semplice sequenza di byte).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)
 - [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)

@@ -5,15 +5,15 @@ ms.date: 12/04/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 686f98aaaade035f1632139d255ccff8b37eddf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96078d1b2fdb5a54c912cbf214024726ce102e4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75850063"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851842"
 ---
 # <a name="set-up-remote-workspaces"></a>Impostare aree di lavoro remote
 
@@ -76,7 +76,7 @@ Per installare il certificato nel computer remoto, eseguire *certlm.msc* (lo str
 Dopo aver importato il certificato, concedere all'account `NETWORK SERVICE` le autorizzazioni per la lettura della chiave privata, come indicato nelle istruzioni che seguono. `NETWORK_SERVICE` è l'account usato per l'esecuzione del broker dei servizi R, il servizio che termina le connessioni SSL in ingresso nel computer server.
 
 1. Eseguire *certlm.msc* (lo strumento di gestione certificati) da un prompt dei comandi dell'amministratore.
-1. Espandere **Personal**  >  **certificati**personali, fare clic con il pulsante destro del mouse sul certificato e scegliere **tutte le attività**  >  **Gestisci chiavi private**.
+1. Espandere   >  **certificati** personali, fare clic con il pulsante destro del mouse sul certificato e scegliere **tutte le attività**  >  **Gestisci chiavi private**.
 1. Fare clic con il pulsante destro del mouse sul certificato e selezionare il comando **Gestisci chiavi private** in **Tutte le attività**.
 1. Nella finestra di dialogo visualizzata selezionare **Add** (Aggiungi) e immettere `NETWORK SERVICE` come nome dell'account:
 

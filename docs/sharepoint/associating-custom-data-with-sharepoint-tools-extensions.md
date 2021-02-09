@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: db32c05b4a1f4536e71b4ef233758f747a958327
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 1b4722f04ae46f85d7cc70dadf6127330e8f6616
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850403"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851716"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Associare dati personalizzati alle estensioni degli strumenti di SharePoint
   È possibile aggiungere dati personalizzati a determinati oggetti nelle estensioni degli strumenti di SharePoint. Questa operazione è utile quando si dispone di dati in una parte dell'estensione a cui si desidera accedere in seguito da altro codice nell'estensione. Anziché implementare una modalità personalizzata per archiviare e accedere ai dati, è possibile associare i dati a un oggetto nell'estensione e quindi recuperare i dati dallo stesso oggetto in un secondo momento.
@@ -82,7 +82,7 @@ ms.locfileid: "94850403"
   [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
   [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Programmazione di concetti e funzionalità per le estensioni degli strumenti di SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
 - [Procedura dettagliata: creazione di un elemento di progetto azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [Procedura dettagliata: estensione Esplora server per visualizzare le web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

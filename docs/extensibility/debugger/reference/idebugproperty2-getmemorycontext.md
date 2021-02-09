@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 91793d25-790f-4881-a5c0-d0458e534514
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8fa610af3ae00d30462c1a3a0c825e5a85722cdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c170c647878088a84dd14ce658bd738d3c6733b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721467"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851010"
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
 Ottiene il contesto della memoria del valore della proprietà.
@@ -28,7 +28,7 @@ Ottiene il contesto della memoria del valore della proprietà.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetMemoryContext ( 
+HRESULT GetMemoryContext ( 
    IDebugMemoryContext2** ppMemory
 );
 ```
@@ -46,6 +46,6 @@ out Restituisce l'oggetto [IDebugMemoryContext2](../../../extensibility/debugger
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce il codice errore. Restituisce `S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT` se non esiste alcun contesto di memoria da recuperare.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
