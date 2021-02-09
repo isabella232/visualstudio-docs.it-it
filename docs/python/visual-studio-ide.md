@@ -5,18 +5,18 @@ ms.date: 03/13/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9d744e7495323c6e0ce565f33e2cfca95feb0a51
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d90ee69b8ee7f264a48d6ae01f77ea65e5d1c1b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928684"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908792"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Benvenuti all'IDE di Visual Studio | Python
 
@@ -106,7 +106,7 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
 - [Debug](debugging-python-in-visual-studio.md)
 
-    Visual Studio offre un'esperienza di debug completa per Python, tra cui la connessione a processi in esecuzione **, la valutazione** di espressioni nelle finestre espressioni di controllo e **immediate** , il controllo delle variabili locali, i punti di interruzione, le istruzioni step in/out/over, l' **istruzione Next**e altro ancora. È anche possibile eseguire il debug di codice Python remoto in esecuzione su computer Linux.
+    Visual Studio offre un'esperienza di debug completa per Python, tra cui la connessione a processi in esecuzione **, la valutazione** di espressioni nelle finestre espressioni di controllo e **immediate** , il controllo delle variabili locali, i punti di interruzione, le istruzioni step in/out/over, l' **istruzione Next** e altro ancora. È anche possibile eseguire il debug di codice Python remoto in esecuzione su computer Linux.
 
     ![Debug di Python in Visual Studio](media/remote-debugging-breakpoint-hit.png)
 
@@ -144,7 +144,7 @@ Per approfondire altri aspetti di Python in Visual Studio, eseguire una delle es
 > [!div class="nextstepaction"]
 > [Introduzione al framework Web Flask in Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - Scoprire [altre funzionalità di Visual Studio](../ide/advanced-feature-overview.md)
 - Visitare [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8f0e1838-a818-4459-9138-a3dceb7408de
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31b1784055c54c9243237c81edb708e13de9bc5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b555ac218ceee1d376c9f7cf3c9df87f7c2e2da0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909774"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 Questa interfaccia consente al gestore di debug della sessione di recuperare un'interfaccia che rappresenta il motore di debug (DE).
@@ -41,7 +41,7 @@ IDebugQueryEngine2 : IUnknown
 |------------|-----------------|
 |[GetEngineInterface](../../../extensibility/debugger/reference/idebugqueryengine2-getengineinterface.md)|Ottiene un'interfaccia del motore di debug personalizzato.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa interfaccia viene in genere implementata nell'oggetto che implementa l'interfaccia [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) per supportare le funzioni di esecuzione all'interno di causalità ordinate. ovvero, quando il debugger sta uscendo da una funzione, la funzione successiva da eseguire potrebbe non essere la funzione precedente nello stack, ma una funzione in un altro thread. Per una definizione di "causalità", vedere il [Glossario del debugger di Visual Studio](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md).
 
 ## <a name="requirements"></a>Requisiti
@@ -51,7 +51,7 @@ IDebugQueryEngine2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

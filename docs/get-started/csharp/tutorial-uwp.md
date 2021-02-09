@@ -9,17 +9,17 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1f541c94804f8f5f454f6299a116a8bd1386e7
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 342fb2ba0d094299b41707b93b52f3b28a3afdce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037276"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909254"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Esercitazione: creare la prima applicazione piattaforma UWP (Universal Windows Platform) in Visual Studio con XAML e C&#35;
 
@@ -66,7 +66,7 @@ Per prima cosa è necessario creare un progetto della piattaforma UWP (Universal
    > [!NOTE]
    > Se il modello di progetto **App vuota (Windows universale)** non viene visualizzato, fare clic sul collegamento **Installa altri strumenti e funzionalità**.<br><br>![Fare clic sul collegamento Installa altri strumenti e funzionalità](media/vs-2019/uwp-not-finding.png)<br><br>Verrà avviato il Programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo di app per la piattaforma UWP (Universal Windows Platform)** e scegliere **Modifica**.<br><br>![Carico di lavoro Sviluppo di app per la piattaforma UWP (Universal Windows Platform) nel programma di installazione di Visual Studio](media/uwp-dev-workload.png)
 
-1. Assegnare al progetto un nome, _HelloWorld_e scegliere **Crea**.
+1. Assegnare al progetto un nome, _HelloWorld_ e scegliere **Crea**.
 
    ![Configurare la schermata del progetto](media/vs-2019/uwp-configure-your-project.png)
 
@@ -118,7 +118,7 @@ A questo punto è possibile iniziare a sviluppare l'app. Verrà aggiunto un puls
 
 ### <a name="add-a-label-to-the-button"></a>Aggiungere un'etichetta al pulsante
 
-1. Nell' **editor XAML**modificare il valore di Button Content da "button" a "Hello World!"
+1. Nell' **editor XAML** modificare il valore di Button Content da "button" a "Hello World!"
 
    ![Modificare il valore di Button Content in Hello World](media/uwp-change-button-text-in-xaml-code-window.png)
 

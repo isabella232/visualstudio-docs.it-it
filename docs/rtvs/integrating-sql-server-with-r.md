@@ -5,15 +5,15 @@ ms.date: 06/25/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 2d1eb4cc53b6123acbba9741d33d3401d44cf6d7
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c0aedbccdb82bd91fe201a23b6201a3cdd7db283
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011879"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908682"
 ---
 # <a name="work-with-sql-server-and-r"></a>Usare SQL Server ed R
 
@@ -37,7 +37,7 @@ L'ottimo supporto di Visual Studio per SQL Server consente agli esperti di dati 
 
 RTVS supporta l'aggiunta di query SQL all'interno di progetti R, consentendo di sviluppare in modo iterativo query SQL in un contesto separato fino a quando non si ottengono i risultati voluti.
 
-Per aggiungere un file di query SQL, fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, scegliere **Aggiungi**  >  **nuovo elemento**e selezionare il tipo di file di **query SQL** :
+Per aggiungere un file di query SQL, fare clic con il pulsante destro del mouse sul progetto in Esplora soluzioni, scegliere **Aggiungi**  >  **nuovo elemento** e selezionare il tipo di file di **query SQL** :
 
 ![Aggiungere un elemento Query SQL a un progetto](media/sql-add-item.png)
 
@@ -153,7 +153,7 @@ WITH RESULT SETS ((medallion NVARCHAR(max), hack_license NVARCHAR(max)));
 
 ### <a name="publish-a-sql-stored-procedure"></a>Pubblicare una stored procedure SQL
 
-1. Selezionare il **R Tools**  >  **Data**  >  comando**di menu pubblica dati di** R Tools.
+1. Selezionare il   >    >  comando **di menu pubblica dati di** R Tools.
 1. Nella finestra di dialogo visualizzata, modificare il valore di **Pubblica in:** in **Database**, specificare la destinazione e selezionare **Pubblica**. RTVS compila e pubblicha la stored procedure:
 
     ![Finestra di dialogo di pubblicazione di una stored procedure](media/sql-publish-with-options.png)
@@ -161,4 +161,4 @@ WITH RESULT SETS ((medallion NVARCHAR(max), hack_license NVARCHAR(max)));
 1. Per pubblicare tutte le stored procedure in un progetto, è possibile usare il comando **R Tools**  >  **Data**  >  **Publish stored procedure** , disponibile anche quando si fa clic con il pulsante destro del mouse sul progetto in Esplora soluzioni.
 
 > [!Tip]
-> Se la Esplora oggetti di SQL Server è aperta in Visual Studio, la stored procedure pubblicata viene visualizzata nella cartella **Programmability**  >  **stored procedure** di programmabilità del database. È anche possibile eseguirla da Esplora oggetti facendo clic con il pulsante destro del mouse e selezionando **Esegui procedura** o chiamandola in modo interattivo da una finestra di query *.sql*.
+> Se la Esplora oggetti di SQL Server è aperta in Visual Studio, la stored procedure pubblicata viene visualizzata nella cartella   >  **stored procedure** di programmabilità del database. È anche possibile eseguirla da Esplora oggetti facendo clic con il pulsante destro del mouse e selezionando **Esegui procedura** o chiamandola in modo interattivo da una finestra di query *.sql*.

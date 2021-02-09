@@ -7,17 +7,17 @@ ms.technology: vs-ide-general
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8122f42fb5d2ec4c31ec553407b644e59e9f4418
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8724fcb717953f3897bab092eb3895e228e10c60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248294"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909228"
 ---
 # <a name="learn-to-use-the-code-editor-with-c"></a>Informazioni su come usare l'editor di codice con C\#
 
@@ -58,7 +58,7 @@ Per iniziare si crea un nuovo file e si aggiunge codice al file.
 
 ::: moniker-end
 
-2. Dal menu **file** nella barra dei menu scegliere **nuovo**  >  **file**oppure premere **CTRL** + **N**.
+2. Dal menu **file** nella barra dei menu scegliere **nuovo**  >  **file** oppure premere **CTRL** + **N**.
 
 3. Nella finestra di dialogo **Nuovo file**, nella categoria **Generale**, scegliere **Classe di Visual C#** e quindi scegliere **Apri**.
 
@@ -80,7 +80,7 @@ Visual Studio offre *frammenti di codice* utili che è possibile usare per gener
 
    La firma del metodo `static void Main()` viene aggiunta al file. Il metodo [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) è il punto di ingresso per le applicazioni C#.
 
-I frammenti di codice disponibili variano a seconda del linguaggio di programmazione. È possibile esaminare i frammenti di codice disponibili per la lingua scegliendo **modifica**  >  **IntelliSense**  >  **Inserisci frammento** o premendo **CTRL** + **K**, **CTRL** + **X**e quindi scegliendo la cartella del linguaggio. Per C# l'elenco ha l'aspetto seguente:
+I frammenti di codice disponibili variano a seconda del linguaggio di programmazione. È possibile esaminare i frammenti di codice disponibili per la lingua scegliendo **modifica**  >  **IntelliSense**  >  **Inserisci frammento** o premendo **CTRL** + **K**, **CTRL** + **X** e quindi scegliendo la cartella del linguaggio. Per C# l'elenco ha l'aspetto seguente:
 
 ![Elenco di frammenti di codice per C#](../media/tutorial-code-snippet-list.png)
 
@@ -188,7 +188,7 @@ Quando si inizia a creare codice è facile commettere errori e quindi dover modi
 > [!div class="nextstepaction"]
 > [Informazioni su progetti e soluzioni](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Frammenti di codice](../../ide/code-snippets.md)
 - [Spostarsi all'interno del codice](../../ide/navigating-code.md)

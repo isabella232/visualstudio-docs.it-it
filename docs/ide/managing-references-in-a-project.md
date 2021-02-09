@@ -20,15 +20,15 @@ helpviewer_keywords:
 - objects [Visual Studio], referencing
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fdf737d26ec14c2a108125425a3b66cdf4a0e519
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: b9beb330f452ff97b7f5a81539cfc62c02404901
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870950"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909162"
 ---
 # <a name="manage-references-in-a-project"></a>Gestire i riferimenti in un progetto
 
@@ -128,7 +128,7 @@ A differenza della maggior parte degli altri tipi di progetto, un *progetto cond
 
 I riferimenti a file sono riferimenti diretti ad assembly esterni al contesto di un progetto di Visual Studio. È possibile crearli usando la scheda **Sfoglia** della finestra di dialogo Gestione riferimenti. Usare un riferimento a file quando si ha solo un assembly o un componente e non il progetto che lo crea come output.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Risolvere i problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md)
 - [Procedura: Aggiungere o rimuovere riferimenti](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

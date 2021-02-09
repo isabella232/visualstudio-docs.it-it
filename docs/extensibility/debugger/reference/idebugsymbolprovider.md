@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: df5f095f-1dee-46f9-84cf-92417c71d5fb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11e180288a9312d9af5a3d3b1bd63d8f2266f581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8485497f9a5f0c6a04090755e6848bf8ed916ab3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719176"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909564"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 Questa interfaccia rappresenta un provider di simboli che fornisce i simboli e i tipi, restituendo tali simboli come campi.
@@ -54,7 +54,7 @@ La tabella seguente illustra i metodi di `IDebugSymbolProvider` .
 |[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|Esegue il mapping di un nome di simbolo a un tipo di simbolo.|
 |[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|Ottiene l'indirizzo di debug che segue un indirizzo di debug specificato in un metodo.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questa interfaccia esegue il mapping delle posizioni dei documenti negli indirizzi di debug e viceversa.
 
 ## <a name="requirements"></a>Requisiti
@@ -103,5 +103,5 @@ IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce del provider di simboli](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

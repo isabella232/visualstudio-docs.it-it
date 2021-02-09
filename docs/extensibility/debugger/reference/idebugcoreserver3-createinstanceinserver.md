@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 76f36bae-f6ab-413c-a8a9-8808bfeba05b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2346bb76fe604265a309a51f48b734fc6f2ab8d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b76c37d767ae38a33d537a96f9ad8f7087503ed2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733012"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909952"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 Crea un'istanza di un motore di debug nel server.
@@ -28,12 +28,12 @@ Crea un'istanza di un motore di debug nel server.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT CreateInstanceInServer(
-   LPCWSTR  szDll,
-   WORD     wLangId,
-   REFCLSID clsidObject,
-   REFIID   riid,
-   void**   ppvObject
+HRESULT CreateInstanceInServer(
+   LPCWSTR  szDll,
+   WORD     wLangId,
+   REFCLSID clsidObject,
+   REFIID   riid,
+   void**   ppvObject
 );
 ```
 
@@ -66,6 +66,6 @@ in ID di interfaccia dell'interfaccia specifica da recuperare dall'oggetto class
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
 - [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)

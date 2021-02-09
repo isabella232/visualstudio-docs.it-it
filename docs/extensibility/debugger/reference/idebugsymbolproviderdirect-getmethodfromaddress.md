@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 33ffd197-1221-41bc-a9f6-f133ebdcb783
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a062056f4a61521966417e9923a17f6d85b991a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cbcab2126ffa61f4bfb71fbf21abff8ecc5d798
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718928"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909441"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 Recupera le informazioni sul metodo in corrispondenza dell'indirizzo di debug specificato.
@@ -75,5 +75,5 @@ out Numero di versione del metodo.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

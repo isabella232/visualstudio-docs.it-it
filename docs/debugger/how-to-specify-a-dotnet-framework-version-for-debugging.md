@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7a4893ba-4620-4774-893f-378d4ca28893
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6b536cbfbd1019fc9b55a0113525f37030493f8
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 197cd51d31729119d48e255d038ad2e53f17a891
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149417"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908376"
 ---
 # <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>Specificare una versione precedente di .NET Framework per il debug (C#, Visual Basic, F #)
 
@@ -65,5 +65,5 @@ Nei rari casi in cui viene visualizzato questo errore, è possibile impostare un
 
      Se all'avvio del debug viene di nuovo visualizzato un messaggio di errore, verificare di avere immesso il numero di versione corretto nel Registro di sistema. Verificare anche che si stia usando una versione di .NET Framework supportata da Visual Studio. Il debugger è compatibile con la versione di .NET Framework corrente e le versioni precedenti, ma potrebbe non essere compatibile con le versioni future.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)

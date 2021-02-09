@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 815a945f6fb591960ebf0bf4b4fcd9d842ffefd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e11472c2c883705c36ab71a37b1af10eb1cb5b10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909809"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 Questa interfaccia esegue il marshalling delle interfacce correlate al programma tra i limiti dei processi.
@@ -41,7 +41,7 @@ IDebugProviderProgramNode2 : IUnknown
 |------------|-----------------|
 |[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Ottiene un'interfaccia specificata tra i limiti del processo.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa interfaccia viene implementata quando il DE viene eseguito in uno spazio di processo separato dal programma di cui è in corso il debug, ad esempio quando il DE è in esecuzione nello spazio di processo di Visual Studio invece che nello spazio di elaborazione del programma di cui è in corso il debug.
 
 ## <a name="requirements"></a>Requisiti
@@ -51,6 +51,6 @@ IDebugProviderProgramNode2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

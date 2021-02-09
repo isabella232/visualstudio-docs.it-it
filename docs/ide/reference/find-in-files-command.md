@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2fc78bfe-b339-4599-97f9-4cafd8a194d9
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aa0a907332b3ce0164573b809ee9c4b2ac2addda
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 6fc824a7166e3bbaba84bd49e89f1fdf30b65761
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305392"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908958"
 ---
 # <a name="find-in-files-command"></a>Comando Cerca nei file
 Esegue la ricerca di testo nei file usando un subset delle opzioni disponibili nella scheda **Cerca nei file** della finestra **Trova e sostituisci**.
@@ -86,7 +86,7 @@ Nell'esempio riportato di seguito viene cercato btnCancel in tutti i file CLS pr
 >Edit.FindinFiles btnCancel /lookin:"c:/My Visual Studio Projects" /ext:*.cls /text2
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Cerca nei file](../../ide/find-in-files.md)
 - [Finestra di comando](../../ide/reference/command-window.md)

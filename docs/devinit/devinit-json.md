@@ -5,18 +5,18 @@ ms.date: 11/02/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 863c2715b7dfbc2c331bb57f6cf06851401c51df
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 47859d00861c2361ed03931bf1417e22425d6e68
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672500"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908119"
 ---
 # <a name="devinit-configuration-file"></a>file di configurazione di devinit
 
@@ -64,20 +64,20 @@ In un `.devinit.json` è possibile specificare più di uno strumento da eseguire
 
 ### <a name="property-values"></a>Valori delle proprietà
 
-| Nome         | Type   | Obbligatoria | valore                              |
+| Nome         | Tipo   | Obbligatoria | valore                              |
 |--------------|--------|----------|------------------------------------|
 | **Commenti** | stringa | No       | Commenti per il file.             |
 | **Correre**      | array  | Sì      | [Oggetto RunTool](#run-tool-object) |
 
 #### <a name="run-tool-object"></a>Esegui oggetto strumento
 
-| Nome                  | Type   | Obbligatoria | valore                                                                                                      |
+| Nome                  | Tipo   | Obbligatoria | valore                                                                                                      |
 |-----------------------|--------|----------|------------------------------------------------------------------------------------------------------------|
 | **Commenti**          | stringa | No       | Commenti per la voce dello strumento.                                                                               |
 | **strumento**              | string | Sì      | Nome dello strumento. Vedere il `devinit list` comando per un elenco di strumenti disponibili.                            |
 | **input**             | stringa | No       | Input dello strumento. Varia in base allo strumento. Ad esempio, la versione richiesta, l'ID del pacchetto, il nome file o la cartella.|
 | **additionalOptions** | stringa | No       | Argomenti aggiuntivi della riga di comando da passare allo strumento.                                                |
 
-## <a name="examples"></a>Esempi
+## <a name="examples"></a>Esempio
 
 Per altri esempi sull'uso di devinit, vedere la [sezione Esempi](sample-readme.md).

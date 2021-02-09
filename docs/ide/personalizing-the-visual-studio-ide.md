@@ -6,15 +6,15 @@ ms.date: 11/20/2017
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4acd399aeb9de1d25cbe6abe2b8bba3f347dbc8a
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 550ab6449cc74d3d0d81d60a41b11f0273003c51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871457"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909020"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizzare l'IDE di Visual Studio
 
@@ -68,7 +68,7 @@ Per creare una pagina iniziale personalizzata per l'utente e il team, vedere [Pe
 
 È possibile personalizzare il menu **Strumenti** per avviare gli strumenti esterni. Per altre informazioni, vedere [Gestire gli strumenti esterni](../ide/managing-external-tools.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Impostazioni dell'ambiente](environment-settings.md)
 - [Panoramica dell'ambiente IDE di Visual Studio](../get-started/visual-studio-ide.md)
