@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 86c3c2b77b6bbea1e609bbea092b44bd1dee1dd4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 600408231e5085009e5edc546535ca8e5110fc6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848300"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882557"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Assembly nel Strumenti di Visual Studio per Office Runtime
   Quando si crea un progetto di Office, in Visual Studio vengono automaticamente aggiunti riferimenti agli assembly [!INCLUDE[vsto_runtime](includes/vsto-runtime-md.md)] usati per il tipo di progetto e .NET Framework di destinazione del progetto. Sono disponibili diversi assembly nelle estensioni di Office per .NET Framework 3.5, [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]e [!INCLUDE[net_v45](includes/net-v45-md.md)]. Per altre informazioni sulle estensioni di Office, vedere [Panoramica di strumenti di Visual Studio per Office Runtime](visual-studio-tools-for-office-runtime-overview.md).
@@ -44,9 +44,9 @@ ms.locfileid: "96848300"
 |Nome assembly|Descrizione|
 |-------------------|-----------------|
 |Microsoft.Office.Tools.Common.v4.0.Utilities.dll|Fornisce le classi base per la classe `ThisAddIn` generata nei progetti di componente aggiuntivo VSTO e la classe Ribbon generata in tutti i progetti.|
-|Microsoft.Office.Tools.Excel.v4.0.Utilities.dll|Fornisce i seguenti tipi:<br /><br /> -Classi di base per le `ThisWorkbook` classi e generate `Sheet` nei progetti a livello di documento per Excel.<br />-Windows Forms i controlli che è possibile usare nei fogli di lavoro nei progetti di Excel.|
+|Microsoft.Office.Tools.Excel.v4.0.Utilities.dll|Fornisce i seguenti tipi:<br /><br /> -Classi di base per le `ThisWorkbook` classi e generate `Sheet` nei progetti a livello di documento per Excel.<br />-Windows Form i controlli che è possibile usare nei fogli di lavoro nei progetti di Excel.|
 |Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll|Fornisce le classi di base le classi `ThisAddIn` e le classi dell'area del modulo generate nei progetti di Outlook.|
-|Microsoft.Office.Tools.Word.v4.0.Utilities.dll|Fornisce i seguenti tipi:<br /><br /> -Classi base per la `ThisDocument` classe generata nei progetti a livello di documento per Word.<br />-Windows Forms i controlli che è possibile usare nei documenti in progetti Word.|
+|Microsoft.Office.Tools.Word.v4.0.Utilities.dll|Fornisce i seguenti tipi:<br /><br /> -Classi base per la `ThisDocument` classe generata nei progetti a livello di documento per Word.<br />-Windows Form i controlli che è possibile usare nei documenti in progetti Word.|
 
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-35"></a>Assembly nelle estensioni di Office per il .NET Framework 3,5
  Nella tabella seguente sono elencati gli assembly che vengono inclusi nelle estensioni di Office per .NET Framework 3.5. Per la documentazione sugli spazi dei nomi e le classi in questi assembly, vedere la sezione di riferimento seguente nella documentazione di Visual Studio 2008: [http://go.microsoft.com/fwlink/?LinkId=160658](managed-reference-office-development-in-visual-studio.md) .

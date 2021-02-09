@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, swimlane
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fef3b2115be499197030a4ce7fd49b1dd849de12
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 61994a25b5fa862a2014e2dd5b57a0c47130e6ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363068"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882986"
 ---
 # <a name="properties-of-swimlanes"></a>Proprietà delle corsie
 È possibile aggiungere corsie a un diagramma. Le corsie dividono un diagramma in aree verticali o orizzontali. È possibile definire altre forme da visualizzare all'interno delle corsie. Per ulteriori informazioni, vedere [come definire un linguaggio Domain-Specific](../modeling/how-to-define-a-domain-specific-language.md). Per ulteriori informazioni sull'utilizzo di queste proprietà, vedere [personalizzazione ed estensione di un linguaggio Domain-Specific](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -27,7 +27,7 @@ ms.locfileid: "97363068"
 
 |Proprietà|Descrizione|Predefinito|
 |-|-|-|
-|Colore riempimento corpo|Colore di riempimento per il corpo della corsia.|bianco|
+|Colore riempimento corpo|Colore di riempimento per il corpo della corsia.|White|
 |Colore riempimento intestazione|Colore di riempimento per l'intestazione della corsia.|grigio scuro|
 |Colore separatore|Colore della linea di separazione.|LightGray|
 |Stile linea separatore|Stile della linea di separazione ( `Solid` ,, `Dash` `Dot` , `DashDot` , `DashDotDot` o `Custom` ).|`Dash`|
@@ -47,7 +47,7 @@ ms.locfileid: "97363068"
 |Altezza iniziale|Altezza iniziale della corsia, in pollici. Applicabile solo alle corsie orizzontali.|0|
 |Larghezza iniziale|Larghezza iniziale della corsia, in pollici. Applicabile solo alle corsie verticali.|0|
 |Espone il colore del testo|Se `True` , l'utente può impostare il colore di una corsia nella finestra di progettazione generata. Per impostare questa impostazione, fare clic con il pulsante destro del mouse sulla forma corsia e scegliere **Aggiungi esposti**.|Falso|
-|Description|Utilizzato per documentare la finestra di progettazione generata.|\<none>|
+|Descrizione|Utilizzato per documentare la finestra di progettazione generata.|\<none>|
 |Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per fare riferimento a questa classe di corsia.|\<none>|
 |Testo della descrizione comando fisso|Testo utilizzato per una descrizione comando fissa.|\<none>|
 |Parola chiave della Guida|Parola chiave utilizzata per indicizzare la Guida sensibile al contesto per questa corsia.|\<none>|

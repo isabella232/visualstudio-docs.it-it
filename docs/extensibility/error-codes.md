@@ -11,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a77f869936531dbc41cc3bd1d9b510bf44c35cec
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: c9706f7c9cd5b25a3644af2f324fda01f448fa17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883402"
 ---
 # <a name="error-codes"></a>Codici di errore
 Quando una funzione dell'API del plug-in del controllo del codice sorgente restituisce un errore, dovrebbe essere uno dei codici di errore seguenti. Tutti gli errori sono negativi, gli avvisi o i codici di errore informativi sono positivi e il risultato è 0.
 
-|Codice di errore|valore|Descrizione|
+|Codice di errore|Valore|Descrizione|
 |----------------|-----------|-----------------|
 |`SCC_I_SHARESUBPROJOK`|7|Il plug-in supporta l'aggiunta di file dal controllo del codice sorgente in due passaggi. Per ulteriori informazioni, vedere [SccSetOption](../extensibility/sccsetoption-function.md).|
 |`SCC_I_FILEDIFFERS`|6|Il file locale è diverso dal file nel database del controllo del codice sorgente (ad esempio, [SccDiff](../extensibility/sccdiff-function.md) può restituire questo valore).|
@@ -81,5 +81,5 @@ IS_SCC_WARNING(rtn) (((rtn) > 0) ? TRUE : FALSE)
 
  Il plug-in del controllo del codice sorgente non deve presupporre i privilegi relativi a un file nella cartella di lavoro, anche se il plug-in ha contrassegnato il file come di sola lettura durante un'operazione. È possibile spostare, eliminare e modificare un file nella cartella di lavoro all'esterno del controllo del plug-in.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)

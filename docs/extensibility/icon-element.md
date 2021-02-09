@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ed5a4f64a2c80cfdc61b37a6a8bac72adc97a33
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: c4e68889ae6ea8396795137243cf732a9b028931
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993601"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883272"
 ---
 # <a name="icon-element"></a>Icon (elemento)
 L'attributo GUID del tag Icon è il GUID di una bitmap definita. L' `id` attributo seleziona lo slot nella striscia bitmap. Questo elemento è facoltativo. Se questo elemento non è incluso, il valore di **guidOfficeIcon: msotcidNoIcon** sarà implicito.
@@ -51,5 +51,5 @@ L'attributo GUID del tag Icon è il GUID di una bitmap definita. L' `id` attribu
 |-------------|-----------------|
 |[Elemento Buttons](../extensibility/buttons-element.md)||
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [File della tabella dei comandi di Visual Studio (con estensione vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

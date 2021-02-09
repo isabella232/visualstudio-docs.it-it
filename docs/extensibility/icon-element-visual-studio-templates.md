@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 059105b9d188c0e7a81252172aa2d1bf7002420c
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: fced03b190ab46885c5d786b8374a05c3bd043b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672691"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883298"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Elemento Icon (modelli di Visual Studio)
 Specifica il percorso e il nome del file di immagine che funge da icona, che viene visualizzata nella finestra di dialogo **nuovo progetto** o **Aggiungi nuovo elemento** per il modello.
@@ -51,7 +51,7 @@ Specifica il percorso e il nome del file di immagine che funge da icona, che vie
 |`ID`|Attributo facoltativo, per gli scenari utente avanzati.<br /><br /> Specifica l'ID di risorsa di Visual Studio.|
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -94,6 +94,6 @@ Specifica il percorso e il nome del file di immagine che funge da icona, che vie
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)

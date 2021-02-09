@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, port shape
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c51d770392fd219478b3e8f8aa428cdcbab6ef3e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 91b505278ef62a7e0ded42f407e1c38083fa7c6d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362821"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883012"
 ---
 # <a name="properties-of-port-shapes"></a>Proprietà delle forme delle porte
 È possibile utilizzare le forme porta per rappresentare le classi di dominio nella finestra di progettazione generata.
@@ -29,7 +29,7 @@ ms.locfileid: "97362821"
 
 |Proprietà|Descrizione|Predefinito|
 |-|-|-|
-|Colore riempimento|Colore di riempimento di questa forma.|bianco|
+|Colore riempimento|Colore di riempimento di questa forma.|White|
 |Modalità gradiente riempimento|Modalità di sfumatura riempimento di questa forma.|Ridimensionamento orizzontale|
 |Geometria|Geometria di questa forma (rettangolo, rettangolo arrotondato, ellisse o cerchio).|Rettangolo|
 |Con punti di connessione predefiniti|Se `True` , la forma utilizzerà i punti di connessione superiore, inferiore, sinistro e destro nella finestra di progettazione generata.|Falso|
@@ -50,7 +50,7 @@ ms.locfileid: "97362821"
 |Altezza iniziale|Altezza iniziale di questa forma, in pollici.|1|
 |Larghezza iniziale|Larghezza iniziale di questa forma, in pollici.|1.5|
 |Colore riempimento esposto come proprietà<br /><br /> Modalità di sfumatura riempimento esposta<br /><br /> Colore struttura esposto come proprietà<br /><br /> Stile tratteggiato del contorno esposto come proprietà<br /><br /> Spessore del contorno esposto come proprietà<br /><br /> Espone il colore del testo|Se `True` , l'utente può impostare la proprietà dichiarata di una forma. Per impostare questa impostazione, fare clic con il pulsante destro del mouse sulla definizione della forma e scegliere **Aggiungi esposti**.|Falso|
-|Description|Utilizzato per documentare la finestra di progettazione generata.|\<none>|
+|Descrizione|Utilizzato per documentare la finestra di progettazione generata.|\<none>|
 |Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per questa forma.|\<none>|
 |Testo del suggerimento dello strumento fisso|Testo utilizzato per una descrizione comando fissa.|\<none>|
 |Parola chiave della Guida|Parola chiave utilizzata per indicizzare la Guida sensibile al contesto per questa forma.|\<none>|

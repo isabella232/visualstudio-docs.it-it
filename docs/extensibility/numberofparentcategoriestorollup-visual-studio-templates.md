@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6f9d36f5-ae23-4a92-8132-b11799e2c21a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58c702a70392f4a0330ea51b563570362f51df35
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 1bcf11552ecd137f63f1f3ccca2b1d869f003b3c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672411"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883077"
 ---
 # <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>Elemento NumberOfParentCategoriesToRollUp (modelli di Visual Studio)
 Specifica il numero di categorie padre che visualizzeranno il modello nella finestra di dialogo **nuovo progetto** .
@@ -41,10 +41,10 @@ Specifica il numero di categorie padre che visualizzeranno il modello nella fine
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ Nessuna.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -88,6 +88,6 @@ Specifica il numero di categorie padre che visualizzeranno il modello nella fine
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

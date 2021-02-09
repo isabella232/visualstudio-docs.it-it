@@ -5,18 +5,18 @@ ms.date: 01/07/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f96e9123f613cf50eebbedd393f5bce9cfa633d2
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: b76bc008c30efdee0185e6f122abaff8457acef6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91830679"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882791"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Come configurare un ambiente Python in Servizio app di Azure (Windows)
 
@@ -94,7 +94,7 @@ Questa azione apre la pagina di descrizione dell'estensione contenente il percor
 
 In caso di difficoltà a visualizzare il percorso per l'estensione, è possibile trovarlo manualmente tramite la console:
 
-1. Nella pagina del servizio app selezionare la console **degli strumenti di sviluppo**  >  **Console**.
+1. Nella pagina del servizio app selezionare la console **degli strumenti di sviluppo**  >  .
 1. Immettere il comando `ls ../home` o `dir ..\home` per visualizzare le cartelle delle estensioni di primo livello, ad esempio *Python361x64*.
 1. Immettere un comando come `ls ../home/python361x64` o `dir ..\home\python361x64` per verificare che contenga *python.exe* e altri file di interprete.
 
@@ -162,7 +162,7 @@ L'interprete Python installato tramite un'estensione del sito è solo una parte 
 
 Per installare i pacchetti direttamente nell'ambiente server, usare uno dei metodi seguenti:
 
-| Metodi | Uso |
+| Metodi | Utilizzo |
 | --- | --- |
 | [Console Kudu del Servizio app di Azure](#azure-app-service-kudu-console) | I pacchetti vengono installati in modo interattivo. I pacchetti devono essere puri Python o è necessario pubblicare wheel. |
 | [API REST Kudu](#kudu-rest-api) | Consente di automatizzare l'installazione dei pacchetti.  I pacchetti devono essere puri Python o è necessario pubblicare wheel. |
@@ -173,7 +173,7 @@ Per installare i pacchetti direttamente nell'ambiente server, usare uno dei meto
 
 La [console Kudu](https://github.com/projectkudu/kudu/wiki/Kudu-console) offre l'accesso diretto da riga di comando con privilegi elevati al server del servizio app e al relativo file system. Oltre a essere un utile strumento di debug, supporta operazioni CLI, come l'installazione dei pacchetti.
 
-1. Aprire Kudu dalla pagina del servizio app nel portale di Azure selezionando **strumenti di sviluppo**strumenti  >  **avanzati**e quindi fare clic su **Vai**. Questa azione consente di passare a un URL uguale all'URL del servizio app di base, con l'aggiunta di `.scm`. Ad esempio, se l'URL di base è `https://vspython-test.azurewebsites.net/` Kudu è su `https://vspython-test.scm.azurewebsites.net/` ed è possibile aggiungere un segnalibro:
+1. Aprire Kudu dalla pagina del servizio app nel portale di Azure selezionando **strumenti di sviluppo** strumenti  >  **avanzati** e quindi fare clic su **Vai**. Questa azione consente di passare a un URL uguale all'URL del servizio app di base, con l'aggiunta di `.scm`. Ad esempio, se l'URL di base è `https://vspython-test.azurewebsites.net/` Kudu è su `https://vspython-test.scm.azurewebsites.net/` ed è possibile aggiungere un segnalibro:
 
     ![Console Kudu per il servizio app di Azure](media/python-on-azure-console01.png)
 

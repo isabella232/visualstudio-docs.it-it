@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 87a67cb90ed48993e75dc248f23d10e982c64c43
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: c93c636d8321affead3c3fce6f3074801cb9ae87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95439862"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882648"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Procedura: Selezionare l'impostazione di esecuzione test attiva per un test di carico
 
@@ -57,7 +57,7 @@ E per eseguire il test:
 
 **mstest /testcontainer:loadtest1.loadtest**
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Configurare le impostazioni di esecuzione dei test di carico](../test/configure-load-test-run-settings.md)
 - [Specifica degli insiemi di contatori e delle regole di soglia per i computer in un test di carico](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

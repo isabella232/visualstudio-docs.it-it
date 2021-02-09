@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d5168d739e49ebfc78054ea695f8b73a3e06fbc
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 92c423254c2e2e0a605ab3f7ff2238db41f4b45a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487673"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883129"
 ---
 # <a name="using-msbuild"></a>Uso di MSBuild
 MSBuild fornisce un formato XML estendibile e ben definito per la creazione di file di progetto che descrivono completamente gli elementi di progetto da compilare, le attività di compilazione e le configurazioni di compilazione.
@@ -55,7 +55,7 @@ MSBuild fornisce un formato XML estendibile e ben definito per la creazione di f
 #### <a name="single-file-generators-vs-msbuild-tasks"></a>Generatori di file singoli e attività MSBuild
  I generatori di file singoli sono accessibili solo in fase di progettazione, ma le attività di MSBuild possono essere utilizzate in fase di progettazione e di compilazione. Per garantire la massima flessibilità, utilizzare le attività MSBuild per trasformare e generare codice. Per ulteriori informazioni, vedere [strumenti personalizzati](../../extensibility/internals/custom-tools.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimenti a MSBuild](../../msbuild/msbuild-reference.md)
 - [MSBuild](../../msbuild/msbuild.md)
 - [Strumenti personalizzati](../../extensibility/internals/custom-tools.md)

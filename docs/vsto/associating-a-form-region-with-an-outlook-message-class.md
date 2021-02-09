@@ -14,15 +14,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], message classes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 213b167bf7fe10c83b028fce2d97c67cd837d272
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0bbbd381ff84714b780bbb817ccfea64ac05e949
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882544"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associare un'area del modulo a una classe messaggio di Outlook
   È possibile specificare quali Microsoft Office elementi di Outlook visualizzano un'area del modulo associando l'area del modulo alla classe Message di ogni elemento. Se ad esempio si desidera aggiungere un'area del modulo alla parte inferiore di un elemento di posta elettronica, è possibile associare l'area del modulo alla `IPM.Note` classe Message.

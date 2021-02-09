@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d42a912761f04fb122551dc14ec077f1869f6bf
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5b399feb80da56ef70b18a1b11b05c7f6cc3795f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487582"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883155"
 ---
 # <a name="upgrading-projects"></a>Aggiornamento dei progetti
 
@@ -181,6 +181,6 @@ In genere, gli implementatori di elementi di progetto vogliono sfruttare un prog
 
 2. Quando l'elemento del progetto riceve una notifica dell'aggiornamento del progetto, viene ancora visualizzata la **conversione guidata di Visual Studio** . Pertanto, è necessario utilizzare i metodi dell' <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> interfaccia per fornire messaggi di aggiornamento all'interfaccia utente della procedura guidata.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Progetti](../../extensibility/internals/projects.md)
