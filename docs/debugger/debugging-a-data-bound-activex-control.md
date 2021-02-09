@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9f6e1f00-e25b-48a9-8484-7e67a1232461
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a999014309c4545067967b77d1b91794e4bd3c99
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 24de30887185ce4520817904ec6348ef6276b6d2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560720"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872898"
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>Debug di un controllo ActiveX con associazione a dati
 Quando si sviluppa un controllo ActiveX che verrà associato a un controllo origine dati, è possibile creare un'applicazione contenitore e utilizzare il contenitore per eseguire il debug del controllo ActiveX.
@@ -36,6 +36,6 @@ Quando si sviluppa un controllo ActiveX che verrà associato a un controllo orig
 
  Per eseguire istruzione per istruzione il codice del contenitore durante il debug, utilizzare la versione di debug del contenitore oppure la versione di debug di ActiveX Control Test Container. Per altre informazioni, vedere [esempio TSTCON: ActiveX Control Test Container](/previous-versions/f9adb5t5(v=vs.100)).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug di COM e ActiveX](../debugger/com-and-activex-debugging.md)
 - [Controlli ActiveX](/cpp/mfc/activex-controls)

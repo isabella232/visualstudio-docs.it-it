@@ -5,18 +5,18 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: cd48cbe0eac8438bb761029bbca4cd27e13f2319
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 2364e20d7da6bb574f6321142ab94b46ba43b241
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442091"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874393"
 ---
 # <a name="wsl-install"></a>wsl-install
 
@@ -29,7 +29,7 @@ Lo `wsl-install` strumento viene usato per installare le distribuzioni di Linux 
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Type   | Obbligatoria | valore                                                             |
+| Nome                                             | Tipo   | Obbligatoria | valore                                                             |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                             |
 | [**input**](#input)                              | string | Sì      | Distro da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.     |
@@ -56,7 +56,7 @@ URI del pacchetto di distribuzione dell'applicazione AppX ( `.appx` ) che contie
 
 Sono supportate più opzioni aggiuntive:
 
-| Nome                      | Type      | Obbligatoria | valore                                                                                                                                                                                    |
+| Nome                      | Tipo      | Obbligatoria | valore                                                                                                                                                                                    |
 |---------------------------|-----------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | --WSL-Version             | stringa    | No       | Versione di WSL da usare. Il valore predefinito è 2.                                                                                                                                  |
 | --Post-creazione-comando     | stringa    | No       | Comando da eseguire all'interno della distribuzione di Linux una volta completata l'installazione. Il comando deve essere formattato come una singola parola o racchiuso tra virgolette. Il valore predefinito è no Command.  |

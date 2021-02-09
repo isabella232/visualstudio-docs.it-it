@@ -16,15 +16,15 @@ ms.assetid: 3870a8fd-4afa-4f1e-a811-9fdf41a9e82d
 monikerRange: vs-2019
 author: profexorgeek
 ms.author: jusjohns
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b9f8182646af4facb0f2f86c74f95dff091d55d1
-ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+ms.openlocfilehash: 101875b3a600a71c832498d05073187d2cf0b774
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92199654"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873905"
 ---
 # <a name="use-visual-studio-search"></a>Usare la ricerca di Visual Studio
 
@@ -43,29 +43,29 @@ A differenza di altre funzionalità di ricerca, ad esempio cerca nei file o Cerc
 
 È possibile usare la casella di ricerca di Visual Studio per trovare le impostazioni, le opzioni e gli elementi di configurazione simili. Cercare, ad esempio, *Cambia tema* per trovare e aprire rapidamente la finestra di dialogo che consente di modificare il tema colori di Visual Studio, come illustrato nello screenshot seguente:
 
-:::image type="content" source="media/visual-studio-search-options.png" alt-text="Casella di ricerca di Visual Studio":::
+:::image type="content" source="media/visual-studio-search-options.png" alt-text="Cerca le opzioni e le impostazioni di Visual Studio":::
 
 > [!TIP]
 > Nella maggior parte dei casi, la ricerca di Visual Studio ti ricorda anche il menu, i tasti di scelta rapida e la posizione di ogni elemento nei risultati.
 
 È possibile usare la casella di ricerca di Visual Studio per trovare voci di menu e comandi. Ad esempio, cercare *Clean Sol* per trovare ed eseguire rapidamente il comando Pulisci soluzione. I risultati della ricerca offrono inoltre un promemoria di come trovare questo comando nei menu, come illustrato nello screenshot seguente:
 
-:::image type="content" source="media/visual-studio-search-menu.png" alt-text="Casella di ricerca di Visual Studio":::
+:::image type="content" source="media/visual-studio-search-menu.png" alt-text="Cerca elementi e comandi di menu di Visual Studio":::
 
 Infine, è possibile cercare finestre o pannelli che potrebbero essere stati chiusi accidentalmente. Ad esempio, cercare *test* per trovare e aprire la finestra Esplora test:
 
-:::image type="content" source="media/visual-studio-search-window.png" alt-text="Casella di ricerca di Visual Studio":::
+:::image type="content" source="media/visual-studio-search-window.png" alt-text="Cerca finestre e pannelli di Visual Studio":::
 
 ## <a name="search-files-and-code"></a>Cerca file e codice
 
 Ricerca di Visual Studio cerca anche gli elementi della soluzione per nome file, codice, metodo e altre corrispondenze. Nella schermata seguente, una ricerca di *Markdown* ha trovato il file MarkdownMetaExtractor.cs, la `MarkdownMetaExtractor` classe e due metodi all'interno della soluzione:
 
-:::image type="content" source="media/visual-studio-search-files.png" alt-text="Casella di ricerca di Visual Studio":::
+:::image type="content" source="media/visual-studio-search-files.png" alt-text="Cerca file con la ricerca di Visual Studio":::
 
-È anche possibile eseguire una ricerca di "Camel case". Nella schermata seguente, una ricerca di *FSS* ha rilevato un file, una classe e**S**un metodo**di ize,** classe e metodo di **F**Older:
+È anche possibile eseguire una ricerca di "Camel case". Nella schermata seguente, una ricerca di *FSS* ha rilevato un file, una classe eun metodo **di ize,** classe e metodo di **F** Older:
 
-:::image type="content" source="media/visual-studio-search-camel.png" alt-text="Casella di ricerca di Visual Studio":::
+:::image type="content" source="media/visual-studio-search-camel.png" alt-text="Ricerca della gobba Camel con ricerca di Visual Studio":::
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Comandi di Visual Studio](reference/visual-studio-commands.md)

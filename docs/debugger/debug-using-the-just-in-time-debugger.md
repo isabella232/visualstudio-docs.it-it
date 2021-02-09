@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Just-In-Time debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a03afa64d19e3ccd0efbb170b4305049f6bfee30
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 8e082f5346d22fd574b7f9b725f8ec88b8a3b08f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761342"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873197"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Eseguire il debug con il debugger JIT in Visual Studio
 
@@ -75,7 +75,7 @@ Il debug JIT può comunque essere abilitato anche se Visual Studio non è più p
 
 ## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>Abilitare il debug JIT di un Windows Form
 
-Per impostazione predefinita, le app Windows Form dispongono di un gestore di eccezioni di primo livello che consente l'esecuzione dell'app se può essere ripristinata. Se un'app Windows Forms genera un'eccezione non gestita, viene visualizzata la finestra di dialogo seguente:
+Per impostazione predefinita, le app Windows Form dispongono di un gestore di eccezioni di primo livello che consente l'esecuzione dell'app se può essere ripristinata. Se un'app Windows Form genera un'eccezione non gestita, viene visualizzata la finestra di dialogo seguente:
 
 ![Eccezione non gestita di Windows Form](../debugger/media/windowsformsunhandledexception.png "Eccezione non gestita di Windows Form")
 

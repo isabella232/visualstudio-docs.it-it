@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0e838ced-12bb-4efc-b811-2b7c034b77b0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63742f220d5a776fca180a3f9f7fe9c15e04c66a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7dc8537fc943e84e37d47dc02cf6264b16dd7fb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731646"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874309"
 ---
 # <a name="idebugdocumentposition2"></a>IDebugDocumentPosition2
 Questa interfaccia rappresenta una posizione astratta in un file di origine.
@@ -51,7 +51,7 @@ IDebugDocumentPosition2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)

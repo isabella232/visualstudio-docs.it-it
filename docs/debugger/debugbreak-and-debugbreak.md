@@ -18,22 +18,22 @@ helpviewer_keywords:
 ms.assetid: 9787c795-df94-4f48-bc8d-3bf899b67421
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 376dd75062dc5a78582a23a12e9e025db60b9f3a
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: f4fb03cf4d45e367f0d7a99dbe26705475652651
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559771"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873145"
 ---
 # <a name="debugbreak-and-__debugbreak"></a>DebugBreak e __debugbreak
 È possibile chiamare la funzione Win32 [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) o il [__debugbreak](/cpp/intrinsics/debugbreak) intrinseco in qualsiasi punto del codice. `DebugBreak` e `__debugbreak` hanno lo stesso effetto dell'impostazione di un punto di interruzione nella stessa posizione.
 
  Poiché `DebugBreak` è una chiamata a una funzione di sistema, è necessario che siano installati i simboli di debug del sistema per garantire che vengano visualizzate le informazioni corrette sullo stack di chiamate dopo l'interruzione. In alternativa, le informazioni sullo stack di chiamate visualizzate dal debugger possono essere spostate di un frame. Se si usa `__debugbreak`, i simboli non sono obbligatori.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Intrinseci del compilatore](/cpp/intrinsics/compiler-intrinsics)
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Debug del codice nativo](../debugger/debugging-native-code.md)

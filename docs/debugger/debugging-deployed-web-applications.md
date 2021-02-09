@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: b938a91b-be96-416f-83bc-4177e7f3929a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 1e8c99f1988ef1aa2e14c7b0a4d6ed46e10f6f1e
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 9b298d756754743635fe3de10c8b72d3195ff3f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872807"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>Debug di applicazioni ASP.NET distribuite
 Per utilizzare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per eseguire il debug di un'applicazione distribuita, è necessario effettuare la connessione al processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e verificare che il debugger abbia accesso ai simboli per l'applicazione. Inoltre, è necessario individuare e aprire i file di origine dell'applicazione. Per altre informazioni, vedere [specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [procedura: trovare il nome del processo ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md)e [requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md).

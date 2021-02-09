@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f12459dd-c64d-4cc9-9ee3-a56e19e9e573
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f94ab1404e4134c086230217bb2857176e6a7d11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d49d41c6f399391ac748125cb9012630784827c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460986"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873401"
 ---
 # <a name="udt"></a>UDT
 Ogni classe, struttura e Unione è identificata da un `SymTagUDT` simbolo. Ogni membro, funzione, dati o tipo annidato e ogni classe base viene visualizzato come classe figlio del tipo definito dall'utente (UDT).
@@ -54,5 +54,5 @@ Ogni classe, struttura e Unione è identificata da un `SymTagUDT` simbolo. Ogni 
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|`DWORD`|ID del simbolo di forma della tabella virtuale.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Se il tipo definito dall'utente è contrassegnato come volatile.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

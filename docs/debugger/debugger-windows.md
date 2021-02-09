@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e8caa5f11f4f0501d8b56c308d5336f10d518062
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 0e626302e4ec311aeaccef77af2870ae69ee76aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560733"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872911"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Esaminare i dati usando le finestre del debugger in Visual Studio
 
@@ -48,6 +48,6 @@ ms.locfileid: "96560733"
 |Disassembly|CTRL+ALT+D|[Procedura: utilizzare la finestra Disassembly](../debugger/how-to-use-the-disassembly-window.md)|
 |Registri|CTRL+ALT+G|[Procedura: utilizzare la finestra Registri](../debugger/how-to-use-the-registers-window.md)|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Presentazione del debugger](../debugger/debugger-feature-tour.md)

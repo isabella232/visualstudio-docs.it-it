@@ -15,15 +15,15 @@ helpviewer_keywords:
 - managed code, debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: e7dadfbc6a02382165b623aeff9d866e9edc975a
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 1cac60b6b7187164780a67be24c7d8bdfb3b4eb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727021"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872664"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Debug di codice gestito (C#, Visual Basic, F #, C++/CLI)
 
@@ -83,7 +83,7 @@ Vengono presentati le tecniche di debug e i problemi più comuni riscontrabili d
 
 ## <a name="see-also"></a>Vedi anche
 
-- [Procedura dettagliata: debug di controlli di Windows Forms personalizzati in fase di progettazione](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [Procedura dettagliata: debug di controlli di Windows Form personalizzati in fase di progettazione](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

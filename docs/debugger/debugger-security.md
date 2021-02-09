@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: d4fc3c43-e844-419c-8dbb-551cc2a9b09e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6d0c09a7f54157bd2ace9a6be09a357eb436ceb
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 9d204f99dd955609dcc082d5d9bd607cfad75bb1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559745"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873054"
 ---
 # <a name="debugger-security"></a>Sicurezza del debugger
 La possibilità di eseguire il debug di un altro processo offre grandi potenzialità che altrimenti non si avrebbero, in particolare nel debug remoto. Un debugger dannoso potrebbe causare gravi danni al computer oggetto del debug.
@@ -79,7 +79,7 @@ La possibilità di eseguire il debug di un altro processo offre grandi potenzial
 
   Vedere [Specificare file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Impostazioni e preparazione del debugger](../debugger/debugger-settings-and-preparation.md)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Avviso di sicurezza: può essere pericoloso connettersi a un processo appartenente a un account utente non attendibile. Se le seguenti sottostanti risultano sospette o non sicure, non stabilire la connessione al processo.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

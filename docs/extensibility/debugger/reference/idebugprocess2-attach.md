@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fb6ea896285c784021402400597ba168f6ccf716
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 462b2299a658359e81fc3641e590b95ab183a24e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724189"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874178"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 Connette il gestore di debug della sessione (SDM) al processo.
@@ -28,20 +28,20 @@ Connette il gestore di debug della sessione (SDM) al processo.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT Attach( 
-   IDebugEventCallback2* pCallback,
-   GUID*                 rgguidSpecificEngines,
-   DWORD                 celtSpecificEngines,
-   HRESULT*              rghrEngineAttach
+HRESULT Attach( 
+   IDebugEventCallback2* pCallback,
+   GUID*                 rgguidSpecificEngines,
+   DWORD                 celtSpecificEngines,
+   HRESULT*              rghrEngineAttach
 );
 ```
 
 ```csharp
-int Attach( 
-   IDebugEventCallback2 pCallback,
-   Guid[]               rgguidSpecificEngines,
-   uint                 celtSpecificEngines,
-   int[]                rghrEngineAttach
+int Attach( 
+   IDebugEventCallback2 pCallback,
+   Guid[]               rgguidSpecificEngines,
+   uint                 celtSpecificEngines,
+   int[]                rghrEngineAttach
 );
 ```
 
@@ -67,11 +67,11 @@ in Il numero di motori di debug nella `rgguidSpecificEngines` matrice e la dimen
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Si è verificata una violazione della sicurezza durante la procedura di associazione.|
 |`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Non è possibile collegare un processo desktop al debugger.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il tentativo di connessione a un processo consente di allineare il SDM a tutti i programmi in esecuzione nel processo di cui è possibile eseguire il debug dai motori di debug (DE) specificati nella `rgguidSpecificEngines` matrice. Impostare il `rgguidSpecificEngines` parametro su un valore null o includere `GUID_NULL` nella matrice per connettersi a tutti i programmi nel processo.
 
  Tutti gli eventi di debug che si verificano nel processo vengono inviati all'oggetto [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) specificato. Questo `IDebugEventCallback2` oggetto viene fornito quando SDM chiama questo metodo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

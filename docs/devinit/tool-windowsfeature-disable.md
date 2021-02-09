@@ -5,18 +5,18 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e48ba0a288aec76588e3d984d4c1577e053e35ae
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: ba0bcea403033d869d429c2bc85d86434a3b3846
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442159"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874512"
 ---
 # <a name="windowsfeature-disable"></a>windowsfeature-disable
 
@@ -24,7 +24,7 @@ Lo `windowsfeature-disable` strumento viene usato per acquisire le funzionalità
 
 ## <a name="usage"></a>Utilizzo
 
-| Nome                                             | Type   | Obbligatoria | valore                                                                  |
+| Nome                                             | Tipo   | Obbligatoria | valore                                                                  |
 |--------------------------------------------------|--------|----------|------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                  |
 | [**input**](#input)                              | string | Sì      | Funzionalità di Windows da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito. |
@@ -36,7 +36,7 @@ La `input` proprietà deve essere `name` della proprietà dell'oggetto `windows 
 
 ### <a name="additional-options"></a>Additional-Options
 
-No.
+Nessuna.
 
 ### <a name="default-behavior"></a>Comportamento predefinito
 

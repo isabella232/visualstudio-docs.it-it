@@ -9,16 +9,16 @@ f1_keywords:
 - System.Activities.Statements.StateMachine.UI
 ms.assetid: 474d5fb3-1049-4b3f-bc6b-7524dbbe1672
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: dacb6dfa5c30ce174c64accfedf82f1c288c734d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 7fe26f8d0ea127189d115692bd01fa538bf8fb33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433947"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873502"
 ---
 # <a name="statemachine-activity-designer"></a>ActivityDesigner StateMachine
 
@@ -32,11 +32,11 @@ Per aggiungere un' <xref:System.Activities.Statements.StateMachine> attività, t
 
 Nella tabella seguente vengono elencate le proprietà di <xref:System.Activities.Statements.StateMachine> che possono essere impostate usando la finestra di progettazione flussi di lavoro e viene descritta la modalità di utilizzo nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia della proprietà e alcune nell'area della finestra di progettazione.
 
-|Nome proprietà|Obbligatoria|Uso|
+|Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.StateMachine> nell'intestazione. Il valore predefinito è **StateMachine**. Facoltativamente, è possibile modificare il valore nella griglia Proprietà o direttamente nell'intestazione dell'ActivityDesigner. <xref:System.Activities.Activity.DisplayName%2A> è usato per l'esplorazione tramite la barra di navigazione visualizzata nella parte superiore della Progettazione flussi di lavoro.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Diagramma di flusso](../workflow-designer/flowchart-activity-designer.md)
 - [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)

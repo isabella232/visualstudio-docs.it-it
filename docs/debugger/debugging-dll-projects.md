@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 433cab30-d191-460b-96f7-90d2530ca243
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ec78e9a04062699ea699f45671e1210fc2306631
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: b6ad51d6b791def360f12b2d64e4ef6841c7bcda
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728499"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872794"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Eseguire il debug di dll in Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -36,12 +36,12 @@ Una DLL (libreria a collegamento dinamico) è una libreria che contiene il codic
 I modelli di progetto di Visual Studio seguenti possono creare dll:
 
 - Libreria di classi C#, Visual Basic o F #
-- Libreria di controllo Windows Forms (WCF) C# o Visual Basic
+- Libreria di controllo Windows Form (WCF) C# o Visual Basic
 - Libreria di Dynamic-Link C++ (DLL)
 
 Per ulteriori informazioni, vedere [tecniche di debug MFC](../debugger/mfc-debugging-techniques.md).
 
-Il debug di una libreria WCF è simile al debug di una libreria di classi. Per informazioni dettagliate, vedere [controlli Windows Forms](/dotnet/framework/winforms/controls/index).
+Il debug di una libreria WCF è simile al debug di una libreria di classi. Per informazioni dettagliate, vedere [controlli Windows Form](/dotnet/framework/winforms/controls/index).
 
 In genere si chiama una DLL da un altro progetto. Quando si esegue il debug del progetto chiamante, a seconda della configurazione della DLL, è possibile eseguire istruzioni ed eseguire il debug del codice DLL.
 

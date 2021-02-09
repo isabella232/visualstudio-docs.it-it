@@ -1,6 +1,6 @@
 ---
-title: Preparare il debug di app Windows Forms | Microsoft Docs
-description: Eseguire i passaggi di preparazione per eseguire il debug di applicazioni Windows Forms create dal modello di progetto Windows Forms in Visual Studio.
+title: Preparare il debug di app Windows Form | Microsoft Docs
+description: Eseguire i passaggi di preparazione per eseguire il debug di applicazioni Windows Form create dal modello di progetto Windows Form in Visual Studio.
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 7092ee7f-8378-4def-aef8-1695bd97cf14
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ccb195d6c4a35e4ca3b89c5505ab14c45a5d555
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: f370fc0e3f97d53fb63bfdabb637edff90960442
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726813"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872404"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Preparazione al debug: applicazioni Windows Form
 Il modello di progetto Windows Forms consente di creare un'applicazione Windows Forms. Il debug di questo tipo di applicazione in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è una procedura molto semplice. Per ulteriori informazioni, vedere [creazione di un progetto di applicazione Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
@@ -39,7 +39,7 @@ Il modello di progetto Windows Forms consente di creare un'applicazione Windows 
 
 ### <a name="configuration-properties-in-debug-tab"></a>Proprietà di configurazione disponibili nella scheda Debug
 
-|**Nome proprietà**|**Impostazione**|
+|**Nome della proprietà**|**Impostazione**|
 |-----------------------|-----------------|
 |**Azione di avvio**|Nella maggior parte dei casi, impostare questa proprietà su **Avvia progetto**. Impostare questa proprietà su **Avvia programma esterno** se si vuole avviare un altro eseguibile quando si inizia il debug (in genere per il debug di DLL).|
 

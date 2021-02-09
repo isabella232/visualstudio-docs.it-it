@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: dd97f4c3-115d-46a9-b506-2531e30a0d8f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b3032854f5c12dc9e281f08f0a7fac6577420db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b87d14774fa098121c405eb94bbf7ea96a338b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873315"
 ---
 # <a name="vtableshape"></a>VTableShape
 Il simbolo [vtable](../../debugger/debug-interface-access/vtable.md) ha un simbolo figlio della classe identificato dal `SymTagVTableShape` tag.
@@ -37,6 +37,6 @@ Il simbolo [vtable](../../debugger/debug-interface-access/vtable.md) ha un simbo
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` Se la classe di VTable è non allineata.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Se la classe di VTable è contrassegnata come volatile.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [VTable](../../debugger/debug-interface-access/vtable.md)

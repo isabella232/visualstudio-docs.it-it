@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e399b28d3ddce07cae263550b536c21ad1db028
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: fcd4375b475106b0428f21057f5b44fc8bee8700
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728304"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872426"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Preparazione al debug: tipi di progetto C++
 In questa sezione viene descritto come eseguire il debug dei tipi di progetto di base creati mediante i modelli di progetto [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].
@@ -41,20 +41,20 @@ In questa sezione viene descritto come eseguire il debug dei tipi di progetto di
 
 - [Per impostare manualmente una configurazione di debug](#BKMK_To_manually_set_a_Debug_configuration)
 
-  [Applicazioni Windows Forms (.NET)](#BKMK_Windows_Forms_Applications___NET_)
+  [Applicazioni Windows Form (.NET)](#BKMK_Windows_Forms_Applications___NET_)
 
 ## <a name="recommended-property-settings"></a><a name="BKMK_Recommended_Property_Settings"></a> Impostazioni delle proprietà consigliate
  Determinate proprietà devono essere impostate nello stesso modo per tutti gli scenari di debug non gestito. Nelle tabelle riportate di seguito sono indicate le impostazioni consigliate delle proprietà. Le impostazioni non specificate in queste tabelle possono variare in base al tipo di progetto non gestito. Per altre informazioni, vedere [impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
 ### <a name="configuration-properties-124-cc-124-optimization-node"></a>Proprietà di configurazione &#124; nodo di ottimizzazione &#124; C/C++
 
-|Nome proprietà|Impostazione|
+|Nome della proprietà|Impostazione|
 |-------------------|-------------|
 |**Ottimizzazione**|Impostare su **Disabilitato (/0d).** L'esecuzione del debug di codice ottimizzato è più complessa perché le istruzioni generate non corrispondono direttamente al codice sorgente. Se si nota un bug presente solo nel codice ottimizzato del programma, è possibile attivare questa impostazione, tenendo però presente che il codice riportato nella finestra **Disassembly** è generato da codice sorgente ottimizzato che potrebbe non corrispondere a quanto visualizzato nelle finestre del codice sorgente. È possibile che altre funzionalità, ad esempio il debug passo a passo, non funzionino come previsto.|
 
 ### <a name="configuration-properties-124-linker-124-debugging-node"></a>Proprietà di configurazione &#124; il linker &#124; nodo di debug
 
-|Nome proprietà|Impostazione|
+|Nome della proprietà|Impostazione|
 |-------------------|-------------|
 |**Genera informazioni di debug**|Si consiglia di impostare questa opzione sempre su **Sì (/DEBUG)** per creare i simboli di debug e i file necessari per il debug. Quando l'applicazione passa alla fase di produzione, è possibile disattivare questa opzione.|
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0093e3a79a5a9caf9846c4b418226568e37828f0
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 981e4e4561db7bc7fb8a9f0ce92522d34e4b34fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994485"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874048"
 ---
 # <a name="file-status-code-enumerator"></a>Enumeratore del codice di stato file
 L' `SccStatus` enumeratore contiene valori costanti denominati che specificano lo stato di un file nel sistema di controllo del codice sorgente. Questa enumerazione viene utilizzata da [SccQueryInfo](../extensibility/sccqueryinfo-function.md) e dalla `POPLISTFUNC` funzione di callback (vedere [POPLISTFUNC](../extensibility/poplistfunc.md) per informazioni dettagliate).
@@ -87,7 +87,7 @@ enum SccStatus {
 
  SCC_STATUS_RESERVED_2 riservata per uso interno.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)
 - [SccQueryInfo](../extensibility/sccqueryinfo-function.md)
 - [POPLISTFUNC](../extensibility/poplistfunc.md)

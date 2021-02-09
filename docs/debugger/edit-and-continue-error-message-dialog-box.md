@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: f98c91c0-447a-4533-85b6-87170a0dc4c3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef34889b838e2f7eaa92420eec90db9def57e65
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 0835746b94412380bee314bc3fac59b4c48f86d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872001"
 ---
 # <a name="edit-and-continue-error-message"></a>Messaggio di errore di modifica e continuazione
 
@@ -42,7 +42,7 @@ I possibili motivi di questo messaggio di errore includono:
 - Tentativo di modificare il codice durante il debug di un dump di Dr. Watson.
 - Il tentativo di modificare il codice dopo un'eccezione non gestita si verifica e l'opzione **Rimuovi stack di chiamate su eccezioni non gestite** non è selezionata.
 - Tentativo di modificare il codice durante il debug di un'applicazione di runtime incorporata.
-- Tentativo di modificare il codice gestito usando una versione di .NET Framework precedente alla 4.5.1 con una destinazione app a 64 bit. Per usare modifica e continuazione per .NET Framework precedenti a 4.5.1, impostare la destinazione su **x86** nella **\<ProjectName>**  >  **Properties**  >  scheda **compilazione** proprietà, impostazioni **del compilatore avanzate** .
+- Tentativo di modificare il codice gestito usando una versione di .NET Framework precedente alla 4.5.1 con una destinazione app a 64 bit. Per usare modifica e continuazione per .NET Framework precedenti a 4.5.1, impostare la destinazione su **x86** nella **\<ProjectName>**  >    >  scheda **compilazione** proprietà, impostazioni **del compilatore avanzate** .
 - Tentativo di modificare il codice in un assembly modificato durante il debug ed è stato ricaricato.
 - Tentativo di modificare il codice in un assembly che non è stato caricato.
 - Avvio del debug di una versione precedente di un'app, perché la versione più recente contiene errori di compilazione.

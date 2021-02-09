@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: bf5547b3-f6c7-4989-9d47-2fe4f1261444
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c35a3e2d7da9472167c2ac20400fe3b3992b4883
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 3cc48c3409ad4e683032da402c2ecedbccea3da7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98800479"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873671"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Procedura: Creare un report ETW degli strumenti di profilatura
 Il report ETW (Event Tracing for Windows) elenca gli eventi ETW registrati in una sessione di prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. I dati ETW vengono raccolti in un file binario (.*ETL*). Per ulteriori informazioni su questo report, vedere il [report Event Tracing for Windows (ETW)](../profiling/event-tracing-for-windows-etw-report.md).

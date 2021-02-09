@@ -13,15 +13,15 @@ helpviewer_keywords:
 - kernel debugger
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 569d3d0baf98f5c13d0ccb182df6e51160db93d6
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: a06ed9092145188bf5fbecd2caeb42f5ad5c2e3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852771"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871767"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Errore: il debug di isn&#39;t è possibile perché nel sistema è abilitato un debugger del kernel
 Quando si esegue il debug del codice gestito, è possibile che venga visualizzato il seguente messaggio di errore:
@@ -98,6 +98,6 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
      `gn`
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Debug del codice gestito](../debugger/debugging-managed-code.md)

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 591bd1b7-ef10-4d10-817b-3f92ca4be006
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 55406001e4017c853895002445d9bd5d614b4b20
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 375e1db598f925a193def159203ccb7e5c5fdf05
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862881"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871858"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifica e continuazione (Visual C#)
  La funzionalità Modifica e continuazione per C# consente di apportare modifiche al codice in modalità di interruzione durante il debug. Le modifiche possono essere applicate senza terminare e riavviare la sessione di debug. In modalità di esecuzione l'editor del codice sorgente è di sola lettura.

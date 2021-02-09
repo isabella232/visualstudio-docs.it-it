@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: d05d33074f48e59e365792fda63897b1d38cd585
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 95c797de1e68b275fa1a36ec8fa1f97f665cfd18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873918"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Procedura dettagliata: Visualizzare il completamento istruzioni
 È possibile implementare il completamento delle istruzioni basate sul linguaggio definendo gli identificatori per i quali si desidera fornire il completamento e quindi attivare una sessione di completamento. È possibile definire il completamento delle istruzioni nel contesto di un servizio di linguaggio, definire l'estensione del nome di file e il tipo di contenuto e quindi visualizzare il completamento solo per quel tipo. In alternativa, è possibile attivare il completamento per un tipo di contenuto esistente, ad esempio "testo normale". In questa procedura dettagliata viene illustrato come attivare il completamento delle istruzioni per il tipo di contenuto "testo normale", che è il tipo di contenuto dei file di testo. Il tipo di contenuto "Text" è il predecessore di tutti gli altri tipi di contenuto, inclusi il codice e i file XML.

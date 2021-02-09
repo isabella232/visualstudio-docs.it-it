@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f2979073414434d2b8f5be9d070b6b505c09ee14
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f4c1d2e986b6a810cc568efd9577be87a38fdefb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873541"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Procedura: creare un pacchetto della soluzione SharePoint tramite le attività MSBuild
   È possibile compilare, pulire e convalidare un pacchetto di SharePoint (con *estensione wsp*) utilizzando le attività MSBuild della riga di comando in un computer di sviluppo. È inoltre possibile utilizzare questi comandi per automatizzare il processo di compilazione utilizzando Team Foundation Server in un computer di compilazione.
@@ -107,7 +107,7 @@ ms.locfileid: "94903728"
     msbuild /property:WarningLevel = 2
     ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creazione di funzionalità di SharePoint](../sharepoint/creating-sharepoint-features.md)
 - [Procedura: personalizzare una funzionalità di SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [Procedura: aggiungere e rimuovere elementi nelle funzionalità di SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

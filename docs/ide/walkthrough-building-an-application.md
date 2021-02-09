@@ -7,15 +7,15 @@ ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a281b90b3dabe2b1d91c43a27ee5f9c858f96c
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: f7fe40f78b8a8447c1ae784e33a25e905e368118
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136615"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873827"
 ---
 # <a name="walkthrough-build-an-application"></a>Procedura dettagliata: Creare un'applicazione
 
@@ -45,7 +45,7 @@ Quando si crea una soluzione, le configurazioni della build di versione e di deb
 
 1. Nell'elenco **piattaforma soluzione attiva** scegliere **\<New...\>** .
 
-1. Nella finestra di dialogo **nuova piattaforma soluzione** scegliere **x64**e non copiare le impostazioni dalla piattaforma x86.
+1. Nella finestra di dialogo **nuova piattaforma soluzione** scegliere **x64** e non copiare le impostazioni dalla piattaforma x86.
 
    ![Finestra di dialogo Nuova piattaforma soluzione](../ide/media/buildwalk_newsolutionplatform.png)
 
@@ -67,7 +67,7 @@ Successivamente verrà creata la soluzione con la configurazione della build per
 
 ### <a name="build-the-solution"></a>Compilare la soluzione
 
-- Sulla barra dei menu scegliere **Compila**  >  **Compila soluzione**oppure premere **CTRL** + **MAIUSC** + **B**.
+- Sulla barra dei menu scegliere **Compila**  >  **Compila soluzione** oppure premere **CTRL** + **MAIUSC** + **B**.
 
     Nella finestra **Output** vengono visualizzati i risultati della compilazione. La compilazione è stata completata.
 
@@ -79,7 +79,7 @@ A questo punto viene presentata la parte del codice che determina un avviso gene
 
     OR
 
-    Nel progetto Visual Basic aprire il file *ExpenseReportPage.xaml.vb*. Nel costruttore personalizzato **Public Sub New... ** aggiungere il codice seguente: `Dim i`.
+    Nel progetto Visual Basic aprire il file *ExpenseReportPage.xaml.vb*. Nel costruttore personalizzato **Public Sub New...** aggiungere il codice seguente: `Dim i`.
 
 1. Compilare la soluzione.
 
@@ -223,7 +223,7 @@ Per altre informazioni, vedere [Procedura: Modificare la directory dell'output c
 
 Congratulazioni! Questa procedura dettagliata è stata completata correttamente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura dettagliata: compilare un progetto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
 - [Panoramica della precompilazione del progetto di applicazione Web ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))

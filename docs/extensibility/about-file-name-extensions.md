@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ef0c942e88c10b4f814dc103702edc08229fb9b
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: c3f938eb31c06e1e88af21b058b4475bc192d49c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597665"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874409"
 ---
 # <a name="about-file-name-extensions"></a>Informazioni sulle estensioni di file
 Quando si registra un'estensione di file di un pacchetto VSPackage, questo viene associato a una versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Questo è importante se [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] in un computer è installata più di una versione di.
@@ -37,6 +37,6 @@ HKEY_CLASSES_ROOT\
 
  In alcuni casi, il ProgID associato a un'estensione di file non deve essere modificato. Il ProgID per l'estensione di file *htm* (ProgID = htmlfile), ad esempio, è hardcoded in numerose posizioni del sistema operativo ed è ampiamente noto e utilizzato in associazione ai file con estensione *htm* e *HTML* .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Registrare le estensioni di file per le distribuzioni side-by-side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 - [Specificare i gestori di file per le estensioni di file](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

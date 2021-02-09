@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6ad0befdfc656233373e8c79d14495aa3f7fa21e
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 0f55eb3ba06f2541bf1f4777c24927993444c6b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873606"
 ---
 # <a name="how-to-create-a-sharepoint-project-item-extension"></a>Procedura: creare un'estensione di elemento di progetto SharePoint
   Creare un'estensione di elemento del progetto quando si desidera aggiungere funzionalità a un elemento del progetto SharePoint già installato in Visual Studio. Per altre informazioni, vedere [estendere gli elementi del progetto SharePoint](../sharepoint/extending-sharepoint-project-items.md).
@@ -64,6 +64,6 @@ ms.locfileid: "94850650"
 ## <a name="deploy-the-extension"></a>Distribuzione dell'estensione
  Per distribuire l'estensione, creare un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacchetto di estensione (VSIX) per l'assembly e qualsiasi altro file che si vuole distribuire con l'estensione. Per ulteriori informazioni, vedere la pagina relativa alla [distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Estendi elementi di progetto SharePoint](../sharepoint/extending-sharepoint-project-items.md)
 - [Procedura dettagliata: estensione di un tipo di elemento di progetto SharePoint](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)

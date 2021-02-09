@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, decorators
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ef863d0d3dab394c2ca427a27d039c19e5921a51
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e29dcda43fdbb7b60567ff0aa0627b41ca3ca299
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360833"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873788"
 ---
 # <a name="properties-of-decorators"></a>Proprietà degli elementi Decorator
 Gli elementi Decorator sono icone, testo o frecce di espansione/compressione che possono essere visualizzate su forme o connettori nel diagramma. Nelle tabelle seguenti sono illustrate le proprietà dei tre tipi di elemento Decorator. Alcune delle proprietà vengono visualizzate solo negli elementi Decorator di forma o solo negli elementi Decorator del connettore.
@@ -54,11 +54,11 @@ Gli elementi Decorator sono icone, testo o frecce di espansione/compressione che
 
 |Proprietà|Descrizione|Predefinito|
 |-|-|-|
-|DefaultText|Testo predefinito da visualizzare.|Label|
-|DisplayName|Nome dell'elemento Decorator da visualizzare nella finestra di progettazione generata.|Label|
+|DefaultText|Testo predefinito da visualizzare.|Etichetta|
+|DisplayName|Nome dell'elemento Decorator da visualizzare nella finestra di progettazione generata.|Etichetta|
 |FontSize|Dimensioni del carattere per il testo visualizzato nell'elemento Decorator.|8|
 |FontStyle|Stile del carattere per il testo visualizzato nell'elemento Decorator.|Regular|
-|Nome|Nome dell'elemento Decorator.|Label|
+|Nome|Nome dell'elemento Decorator.|Etichetta|
 |Note|Note informali associate all'elemento Decorator.|\<none>|
 |HorizontalOffset|Offset orizzontale, in pollici, relativo alla posizione predefinita dell'elemento Decorator. (Solo su forme).|0|
 |VerticalOffset|Offset verticale rispetto alla posizione predefinita dell'elemento Decorator, in pollici. (Solo su forme).|0|

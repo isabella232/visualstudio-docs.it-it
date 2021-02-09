@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 068362f88d801d44a1a6b6a85c74f97ba2d3c773
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 894263883cbb34c8d41ec67a5e595e801f723390
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873424"
 ---
 # <a name="evaluate-xpath-expressions"></a>Valutare le espressioni XPath
 
@@ -36,7 +36,7 @@ La procedura seguente usa i file *below-average. xsl* e *books.xml* della pagina
 
 1. Inserire un punto di interruzione in corrispondenza del tag di inizio `xsl:if`.
 
-2. Per avviare il debug, scegliere **XML**  >  **Avvia debug XSLT** sulla barra dei menu (oppure premere **ALT** + **F5** ).
+2. Per avviare il debug, scegliere **XML**  >  **Avvia debug XSLT** sulla barra dei menu (oppure premere **ALT** + **F5**).
 
    Il debugger viene avviato e interrotto sul tag `xsl:if`.
 
@@ -54,6 +54,6 @@ La procedura seguente usa i file *below-average. xsl* e *books.xml* della pagina
 
    Nella casella **valore** viene indicato che l'espressione XPath restituisce `true` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)](../xml-tools/debugging-xslt.md)

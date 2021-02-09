@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 60e34477-ae4e-48c7-9093-3e37f72e1bc3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4137e7a73032a34276416b9640dd608b96b660a4
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 6eff1cae9c1895e853712218d5e0ae55e3138c41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728330"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872612"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Debug delle applicazioni in modalità mista
 Un'applicazione in modalità mista combina codice nativo (C++) con codice gestito, ad esempio Visual Basic, Visual C# o C++ eseguito in Common Language Runtime. Il debug di applicazioni in modalità mista è ampiamente trasparente in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e non è molto diverso dal debug di un'applicazione in modalità singola. È tuttavia necessario fare alcune considerazioni specifiche.

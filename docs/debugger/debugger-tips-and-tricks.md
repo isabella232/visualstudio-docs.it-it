@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5262d8b1-2648-429e-85d5-90fcaadfb362
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5b934c0e9532bd3bc1f53d9b00d1cc8273f4120
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315057"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872989"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Informazioni sui suggerimenti per la produttività per il debugger in Visual Studio
 
@@ -33,7 +33,7 @@ Se si passa spesso il mouse sui suggerimenti dati durante il debug, potrebbe ess
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Modificare il codice e continuare il debug (C#, VB, C++)
 
-Nella maggior parte dei linguaggi supportati da Visual Studio, è possibile modificare il codice nel corso di una sessione di debug e continuare il debug. Per usare questa funzionalità, fare clic sul codice con il cursore mentre è in pausa nel debugger, apportare modifiche e premere **F5**, **F10**o **F11** per continuare il debug.
+Nella maggior parte dei linguaggi supportati da Visual Studio, è possibile modificare il codice nel corso di una sessione di debug e continuare il debug. Per usare questa funzionalità, fare clic sul codice con il cursore mentre è in pausa nel debugger, apportare modifiche e premere **F5**, **F10** o **F11** per continuare il debug.
 
 ![Debug di modifica e continuazione](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
 
@@ -175,6 +175,6 @@ Per ulteriori suggerimenti e consigli e informazioni più dettagliate, vedere i 
 - [7 hacker meno noti per il debug in Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
 - [7 gemme nascoste in Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Tasti di scelta rapida](../ide/productivity-shortcuts.md)

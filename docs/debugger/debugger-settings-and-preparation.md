@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ddae505580781c707678e95d9e270c46b86cdae
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: d35b2cfac9a6b39d71359341444816fcfe56c0db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560226"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872937"
 ---
 # <a name="debugger-settings-and-preparation"></a>Impostazioni di debug e preparazione
 In questa sezione vengono descritte le impostazioni delle proprietà correlate al debugger e le operazioni di preparazione necessarie per eseguire il debug del programma con il debugger di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Se si crea il programma in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mediante i modelli di progetto, tali impostazioni vengono definite automaticamente in modo corretto nella configurazione di debug.
@@ -48,7 +48,7 @@ In questa sezione vengono descritte le impostazioni delle proprietà correlate a
 
  [Procedura: specificare una versione precedente di .NET Framework per il debug](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) Viene descritto come impostare una chiave del registro di sistema per indicare al debugger la versione da utilizzare.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Debug in Visual Studio](../debugger/index.yml)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfb7f339ca9832db8fdfea47a5bc1aa940534823
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: ea697e6e445eeae117bb6bf1d1603220ec0c0675
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874074"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Scegliere la directory di installazione per un pacchetto VSPackage
 Un pacchetto VSPackage e i relativi file di supporto devono trovarsi nel file system di un utente. Il percorso varia a seconda che il pacchetto VSPackage sia gestito o non gestito, lo schema di controllo delle versioni side-by-side e la scelta dell'utente.
@@ -61,7 +61,7 @@ Un pacchetto VSPackage e i relativi file di supporto devono trovarsi nel file sy
 
 Se la DLL del pacchetto VSPackage include risorse e i punti di ingresso del registro di sistema **SatelliteDll\DllName** , [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tenta di caricarli nell'ordine precedente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Scegliere tra VSPackage condivisi e con versione](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [Gestire VSPackage](../../extensibility/managing-vspackages.md)
 - [Gestire la registrazione del pacchetto](/previous-versions/bb166783(v=vs.100))

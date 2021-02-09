@@ -16,15 +16,15 @@ helpviewer_keywords:
 - ASP.NET, installation error messages
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 1c4138b1f3d102e235bb03ebcfd5a80808d8762c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 2388e59ae760e28c8f778ab8ccb15265414174b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852797"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871754"
 ---
 # <a name="error-aspnet-not-installed"></a>Errore: ASP.NET non è installato
 Questo errore si verifica quando [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] non è installato correttamente nel computer di cui si sta tentando di eseguire il debug. Questo errore potrebbe essere dovuto al fatto che [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] non è mai stato installato o che [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] è stato installato prima di IIS.
@@ -42,5 +42,5 @@ Questo errore si verifica quando [!INCLUDE[vstecasp](../code-quality/includes/vs
    > [!NOTE]
    > Con Windows Server 2003 è possibile installare [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] dall'applicazione **Installazione applicazioni** del Pannello di controllo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

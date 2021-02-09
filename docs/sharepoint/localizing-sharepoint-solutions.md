@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 16cb372e5acf719d3edc79f081cff6f4b0396b6a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: a216e57bc9da15fca625e71c7e0430d4fbf4164b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304269"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873554"
 ---
 # <a name="localize-sharepoint-solutions"></a>Localizzare le soluzioni SharePoint
 
@@ -130,7 +130,7 @@ HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")
 
  Nella classe derivata, fare riferimento all'ID stringa dal file di risorse e all'oggetto ResourceManager per ottenere il valore localizzato per l'ID stringa. Restituisce questo valore all'attributo dell'editor proprietà.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: localizzare una funzionalità](../sharepoint/how-to-localize-a-feature.md)
 - [Procedura: localizzare il markup ASPX](../sharepoint/how-to-localize-aspx-markup.md)
 - [Procedura: localizzare il codice](../sharepoint/how-to-localize-code.md)

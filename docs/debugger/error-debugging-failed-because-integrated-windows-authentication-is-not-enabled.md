@@ -14,15 +14,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 35c602b2754e4361b4e41e2b4d4d5cdcc09381c5
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4d1bbdc3e06dee87e7d8930bc5c4e60c6d25ee2f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852784"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871741"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Errore: debug non riuscito. Non è attivata l'autenticazione di Windows integrata
 L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a causa di un errore di autenticazione. Questo errore può verificarsi quando si tenta di eseguire un'applicazione Web o un servizio Web XML. Una causa di questo errore è la mancata attivazione dell'autenticazione di Windows integrata. Per attivarla, seguire i passaggi della procedura relativa all'attivazione dell'autenticazione integrata di Windows.
@@ -35,7 +35,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
 
 2. Fare clic sul pulsante **Start** e scegliere **Pannello di controllo**.
 
-3. Nel **Pannello di controllo**fare doppio clic su **strumenti di amministrazione**.
+3. Nel **Pannello di controllo** fare doppio clic su **strumenti di amministrazione**.
 
 4. Fare doppio clic su **Internet Information Services**.
 
@@ -73,7 +73,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
 
          Verrà visualizzata la finestra di dialogo Controllo di accesso utente e verrà richiesto di immettere l'autorizzazione per continuare.
 
-    3. Fare clic su **Continua**.
+    3. Fare clic su **Continue**.
 
          Verrà visualizzata la finestra di dialogo Funzionalità Windows.
 
@@ -113,7 +113,7 @@ L'autenticazione dell'utente che ha richiesto il debug non è stata possibile a 
 
 10. Chiudere la finestra **Gestione Internet Information Services (IIS)**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug di applicazioni Web: errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Autenticazione digest Microsoft](/windows/win32/secauthn/microsoft-digest-authentication)
 - [Esecuzione di applicazioni Web in Windows Vista con IIS 7,0 e Visual Studio](/previous-versions/aa964620(v=vs.140))

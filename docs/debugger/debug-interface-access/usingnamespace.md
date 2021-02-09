@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e8e1beb5-7cb9-43b4-9ff4-760d5f91ea2d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3662bdc61cd98a36161bd8972a98cb4f168bc452
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4c42899aaf829d4c12efdcb6e1daa004d7611960
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460965"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873387"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
 Alcuni simboli possono essere indicati dallo spazio dei nomi e successivamente verranno identificati da un `SymTagUsingNameSpace` tag.
@@ -36,5 +36,5 @@ Alcuni simboli possono essere indicati dallo spazio dei nomi e successivamente v
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID di indice del simbolo.|
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Restituisce `SymTagNameSpace` uno dei valori di [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) .|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

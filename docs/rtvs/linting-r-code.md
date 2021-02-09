@@ -7,15 +7,15 @@ f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: aecf9d95fb8a3b2cda659e2694bff145424e150b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c32bffbd25a39ff2053dea22930365860ed04a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62970738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873658"
 ---
 # <a name="lint-r-code-in-visual-studio"></a>Lint del codice R in Visual Studio
 

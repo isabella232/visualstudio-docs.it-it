@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 73baaf39-3026-48c9-be48-8b9ba0063cde
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 73432c1693db1543095643a998396967b7aa2bdf
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 837facbc35a9fbb6e7c40ff39d8a4300c8120b6d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726982"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872690"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Finestre di dialogo di errore e di avviso per il debug
 Di seguito sono riportate le finestre di errore e di avviso che possono essere visualizzate quando si effettua il debug di un'applicazione.

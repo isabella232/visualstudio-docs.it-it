@@ -5,24 +5,24 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 07b92e8783393fa19e5c09344a396a6c5c4fc011
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 43370389aaffdb4395248fed6ec83de39f16c86d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442126"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874505"
 ---
 # <a name="windowsfeature-list"></a>windowsfeature-list
 
 Lo `windowsfeature-list` strumento viene usato per elencare lo stato di abilitazione/disabilitazione di tutte le funzionalità di Windows.
 
-| Nome                                             | Type   | Obbligatoria | valore                                      |
+| Nome                                             | Tipo   | Obbligatoria | valore                                      |
 |--------------------------------------------------|--------|----------|--------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.      |
 | [**input**](#input)                              | stringa | No       | Non usato. Ignorato.                         |

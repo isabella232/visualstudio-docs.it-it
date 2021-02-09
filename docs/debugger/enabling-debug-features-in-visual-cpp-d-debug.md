@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: 276e2254-7274-435e-ba4d-67fcef4f33bc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a2ead92108d66b54342019fc19702e7a6e53575
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: c0a8941fbda263ce3a2345a135594d2f9eec87e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862933"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871897"
 ---
 # <a name="enabling-debug-features-in-c-projects-d_debug"></a>Abilitazione delle funzionalità di debug nei progetti C++ (/D_DEBUG)
 In [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] le funzionalità di debug, ad esempio le asserzioni, vengono attivate quando si compila il programma definendo il simbolo **_DEBUG**. Il simbolo **_DEBUG** può essere definito in uno dei due modi seguenti:

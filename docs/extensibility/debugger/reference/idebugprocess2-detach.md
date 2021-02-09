@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ee2b9084-2db1-4e49-a1d9-387284b7c3f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9036ebc44835ab6c3ebd08b9fad4408d9cb97461
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6418a7f628eef4e00ea0555c07122555eb6d600c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724121"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874087"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 Scollega il debugger da questo processo scollegando tutti i programmi nel processo.
@@ -28,8 +28,8 @@ Scollega il debugger da questo processo scollegando tutti i programmi nel proces
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT Detach( 
-   void 
+HRESULT Detach( 
+   void 
 );
 ```
 
@@ -40,8 +40,8 @@ int Detach();
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Tutti i programmi e il processo continuano a funzionare, ma non fanno più parte della sessione di debug. Al termine dell'operazione di scollegamento, non vengono inviati altri eventi di debug per questo processo (e i relativi programmi).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
