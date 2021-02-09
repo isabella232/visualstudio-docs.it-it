@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], opening workbooks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f7de4072df177bd9a7c6ae23bf59e44e50d56e32
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 5bca39b5536d5717da994808f23ee541856264ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523891"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888732"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Procedura: aprire cartelle di lavoro a livello di codice
   <xref:Microsoft.Office.Interop.Excel.Workbooks>Nella raccolta Microsoft Office Excel è possibile utilizzare tutte le cartelle di lavoro aperte e aprire le cartelle di lavoro di.
@@ -39,7 +39,7 @@ ms.locfileid: "97523891"
 
 - Una cartella di lavoro denominata `YourWorkbook.xls` deve esistere in una directory denominata nell' `Test` unità C.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Utilizzare le cartelle di lavoro](../vsto/working-with-workbooks.md)
 - [Procedura: aprire file di testo come cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)
 - [Procedura: creare nuove cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-create-new-workbooks.md)

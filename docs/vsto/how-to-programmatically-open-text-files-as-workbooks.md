@@ -13,15 +13,15 @@ helpviewer_keywords:
 - text files, opening as workbooks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5f471161a8563718f69f14ea341ab099fbf138d8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 47582718128fc9818bb42571e3f33c0190a32d9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888745"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Procedura: aprire file di testo come cartelle di lavoro a livello di codice
   È possibile aprire un file di testo come cartella di lavoro. È necessario passare il nome del file di testo che si desidera aprire. È possibile specificare diversi parametri facoltativi, ad esempio il numero di riga da cui avviare l'analisi e il formato di colonna dei dati nel file.
@@ -39,7 +39,7 @@ ms.locfileid: "97525530"
 
 - File di testo `Test.txt` da archiviare nell'unità C.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Utilizzare le cartelle di lavoro](../vsto/working-with-workbooks.md)
 - [Procedura: aprire cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-open-workbooks.md)
 - [Procedura: creare nuove cartelle di lavoro a livello di codice](../vsto/how-to-programmatically-create-new-workbooks.md)

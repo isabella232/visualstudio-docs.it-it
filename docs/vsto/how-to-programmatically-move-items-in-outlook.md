@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], moving items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7b247df68827767a53d8d066f4750dfa9da52ac7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 770f056dc681e1ee2cd6704f9bd1d42afae4957b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525572"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888862"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Procedura: spostare elementi in Outlook a livello di codice
   Questo esempio Mostra come spostare i messaggi di posta elettronica non letti dalla **posta in arrivo** a una cartella denominata **test**. Nell'esempio vengono spostati solo i messaggi con la parola **test** nel `Subject` campo.
@@ -36,7 +36,7 @@ ms.locfileid: "97525572"
 
 - Un messaggio di posta elettronica che arriva con la parola **test** nel `Subject` campo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Usare le cartelle](../vsto/working-with-folders.md)
 - [Procedura: recuperare una cartella per nome a livello di codice](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
 - [Procedura: eseguire una ricerca all'interno di una cartella specifica a livello di codice](../vsto/how-to-programmatically-search-within-a-specific-folder.md)

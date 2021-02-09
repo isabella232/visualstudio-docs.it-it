@@ -9,21 +9,21 @@ f1_keywords:
 - Blend.Start.Dev12
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: affef27dae9fe569c0cacbbd3725b9bf76edb94c
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 9fdc3fc2241807cd1b36ec64d620c7b46a498918
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796342"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889265"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Panoramica di Blend per Visual Studio
 
 Blend per Visual Studio consente di progettare applicazioni Windows e Web basate su XAML. Offre la stessa esperienza di progettazione XAML di base disponibile in Visual Studio e aggiunge finestre di progettazione visive per attività avanzate, quali animazioni e comportamenti. Per un confronto tra Blend e Visual Studio, vedere [Progettare XAML in Visual Studio e Blend per Visual Studio](../xaml-tools/designing-xaml-in-visual-studio.md).
 
-Blend per Visual Studio è un componente di Visual Studio. Per installare Blend, nel **programma di installazione di Visual Studio** scegliere il carico di lavoro **Sviluppo di app per la piattaforma UWP (Universal Windows Platform)** o **Sviluppo per desktop .NET** . Entrambi questi carichi di lavoro includono il componente Blend per Visual Studio.
+Blend per Visual Studio è un componente di Visual Studio. Per installare Blend, nel **programma di installazione di Visual Studio** scegliere il carico di lavoro **Sviluppo di app per la piattaforma UWP (Universal Windows Platform)** o **Sviluppo per desktop .NET**. Entrambi questi carichi di lavoro includono il componente Blend per Visual Studio.
 
 ![Componenti del carico di lavoro UWP](media/installer-uwp.png)&nbsp;&nbsp;&nbsp;&nbsp;![Componenti del carico di lavoro Sviluppo per desktop .NET](media/installer-dotnet-desktop.png)
 
@@ -31,7 +31,7 @@ Se non si ha familiarità con Blend per Visual Studio, dedicare alcuni minuti al
 
 ## <a name="tools-panel"></a>Pannello Strumenti
 
-È possibile usare il pannello **Strumenti** in Blend per Visual Studio per creare e modificare oggetti nell'applicazione. Il pannello **Strumenti** è visualizzato sul lato sinistro della finestra di progettazione XAML quando è aperto un file *XAML* .
+È possibile usare il pannello **Strumenti** in Blend per Visual Studio per creare e modificare oggetti nell'applicazione. Il pannello **Strumenti** è visualizzato sul lato sinistro della finestra di progettazione XAML quando è aperto un file *XAML*.
 
 Per creare oggetti, si seleziona lo strumento e si disegna sulla tavola da disegno con il mouse.
 
@@ -64,7 +64,7 @@ Consente di accedere alla finestra Asset e visualizzare l'ultimo asset usato nel
 
 ## <a name="assets-window"></a>Finestra Asset
 
-La finestra **Asset** contiene tutti i controlli disponibili ed è simile alla **casella degli strumenti** di Visual Studio. Oltre ai controlli, nella finestra **Asset** è disponibile tutto ciò che può essere aggiunto alla tavola da disegno, inclusi gli stili, gli elementi multimediali, i comportamenti e gli effetti. Per aprire la finestra **Asset** , scegliere **Visualizza** > **Finestra Asset** oppure premere **CTRL**+**ALT**+**X** .
+La finestra **Asset** contiene tutti i controlli disponibili ed è simile alla **casella degli strumenti** di Visual Studio. Oltre ai controlli, nella finestra **Asset** è disponibile tutto ciò che può essere aggiunto alla tavola da disegno, inclusi gli stili, gli elementi multimediali, i comportamenti e gli effetti. Per aprire la finestra **Asset**, scegliere **Visualizza** > **Finestra Asset** oppure premere **CTRL**+**ALT**+**X**.
 
 ![Finestra Asset in Blend per Visual Studio](media/blend-assets-window.png)
 
@@ -73,7 +73,7 @@ La finestra **Asset** contiene tutti i controlli disponibili ed è simile alla *
 
 ## <a name="objects-and-timeline-window"></a>Finestra Oggetti e sequenza temporale
 
-Usare questa finestra per organizzare gli oggetti nella tavola da disegno e, se si vuole, per animarli. Per aprire la finestra **Oggetti e sequenza temporale** , scegliere **Visualizza** > **Struttura documento** . Oltre alla funzionalità fornita nella finestra [Struttura documento](creating-a-ui-by-using-xaml-designer-in-visual-studio.md#document-outline-window) in Visual Studio, la finestra Oggetti e sequenza temporale in Blend per Visual Studio dispone di un'area di composizione della sequenza temporale a destra. Usare la sequenza temporale durante la creazione e la modifica di animazioni.
+Usare questa finestra per organizzare gli oggetti nella tavola da disegno e, se si vuole, per animarli. Per aprire la finestra **Oggetti e sequenza temporale**, scegliere **Visualizza** > **Struttura documento**. Oltre alla funzionalità fornita nella finestra [Struttura documento](creating-a-ui-by-using-xaml-designer-in-visual-studio.md#document-outline-window) in Visual Studio, la finestra Oggetti e sequenza temporale in Blend per Visual Studio dispone di un'area di composizione della sequenza temporale a destra. Usare la sequenza temporale durante la creazione e la modifica di animazioni.
 
 ![Finestra Oggetti e sequenza temporale in modalità animazione](media/storyboard-timeline.png)
 
@@ -81,7 +81,7 @@ Usare i pulsanti correlati allo storyboard ![Pulsanti dello storyboard in Blend 
 
 Passare il puntatore del mouse su ogni pulsante della finestra per altre informazioni sulle funzionalità disponibili.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Animare oggetti](../xaml-tools/animate-objects-in-xaml-designer.md)
 - [Disegnare forme e tracciati](../xaml-tools/draw-shapes-and-paths.md)

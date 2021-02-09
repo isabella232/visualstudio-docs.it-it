@@ -8,27 +8,27 @@ ms.topic: how-to
 ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 2c1c4100921430daa0faa0daba3c3c3f5328fb3d
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: 162ed3ddb7e8f71a14c9dd8415500cc845316e82
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796329"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889252"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animare oggetti in una finestra di progettazione XAML
 
 Blend per Visual Studio consente di creare facilmente brevi animazioni che spostano gli oggetti o li visualizzano in dissolvenza in entrata e in uscita, ad esempio.
 
-Per creare un'animazione è necessario uno *storyboard* . Uno storyboard contiene uno o più *sequenze temporali* . Impostare i *fotogrammi chiave* in una sequenza temporale per contrassegnare le modifiche alle proprietà. Quando poi si esegue l'animazione, Blend per Visual Studio interpola le modifiche alle proprietà nel periodo di tempo indicato, garantendo in tal modo una transizione graduale. È possibile aggiungere un'animazione a qualsiasi proprietà che appartiene a un oggetto, anche quelle non visive.
+Per creare un'animazione è necessario uno *storyboard*. Uno storyboard contiene uno o più *sequenze temporali*. Impostare i *fotogrammi chiave* in una sequenza temporale per contrassegnare le modifiche alle proprietà. Quando poi si esegue l'animazione, Blend per Visual Studio interpola le modifiche alle proprietà nel periodo di tempo indicato, garantendo in tal modo una transizione graduale. È possibile aggiungere un'animazione a qualsiasi proprietà che appartiene a un oggetto, anche quelle non visive.
 
-Le immagini seguenti mostrano uno storyboard denominato **Storyboard1** . La sequenza temporale contiene fotogrammi chiave che indicano le posizioni X e Y di un rettangolo. Quando si esegue questa animazione, il rettangolo si sposta da una posizione a un altro in modo graduale.
+Le immagini seguenti mostrano uno storyboard denominato **Storyboard1**. La sequenza temporale contiene fotogrammi chiave che indicano le posizioni X e Y di un rettangolo. Quando si esegue questa animazione, il rettangolo si sposta da una posizione a un altro in modo graduale.
 
 ![Storyboard per l'animazione in Blend per Visual Studio](media/storyboard-timeline.png)
 
 ## <a name="create-an-animation"></a>Creare un'animazione
 
-1. Per creare uno storyboard, selezionare il pulsante **Opzioni storyboard** nella finestra **Oggetti e sequenza temporale** , quindi selezionare **Nuovo** .
+1. Per creare uno storyboard, selezionare il pulsante **Opzioni storyboard** nella finestra **Oggetti e sequenza temporale**, quindi selezionare **Nuovo**.
 
    ![Aggiungere uno storyboard in Blend per Visual Studio](media/new-storyboard.png)
 
@@ -48,6 +48,6 @@ Le immagini seguenti mostrano uno storyboard denominato **Storyboard1** . La seq
 
 Provare ad apportate altre modifiche al rettangolo in altri punti della sequenza temporale. Ad esempio, è possibile cambiare il colore di riempimento o capovolgere l'orientamento nella finestra Proprietà.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Creare un'interfaccia utente usando Blend per Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

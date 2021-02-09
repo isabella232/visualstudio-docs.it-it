@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 4ccec541-3c49-42bd-972a-686eb3a88fbc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65f643d0f03f9754d580de8be95fb5c1f65a940d
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9d9a51df36a21d0f5234f78f6ac23ebf65f0c414
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995135"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889239"
 ---
 # <a name="hlsl-shader-debugger"></a>Debugger dello shader HLS
 Il debugger HLSL in Analizzatore grafica di Visual Studio Visual Studio aiuta a comprendere come opera il codice dello shader HLSL in condizioni di funzionamento reali dell'app.
@@ -73,7 +73,7 @@ Il debugger HLSL in Analizzatore grafica di Visual Studio Visual Studio aiuta a 
 
    Per esempi su come usare il debugger HLSL per eseguire il debug degli errori dello shader, vedere gli [esempi](graphics-diagnostics-examples.md) o le procedure dettagliate collegate a nella sezione vedere anche.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
 - [Procedura dettagliata: Debug degli errori di rendering dovuti allo sfondo](walkthrough-debugging-rendering-errors-due-to-shading.md)
 - [Procedura dettagliata: Uso della diagnostica della grafica per eseguire il debug di un compute shader](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1396a60cda1e4e1ad372a73b9c2130d450d746
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 23d9f1b0037600c6612a413cce7b089f6adbc7aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889304"
 ---
 # <a name="trycatch-activity-designer"></a>ActivityDesigner TryCatch
 
@@ -33,7 +33,7 @@ Accedere all'ActivityDesigner **TryCatch** nella categoria **Gestione errori** d
 
 È possibile trascinare l'ActivityDesigner **TryCatch** dalla **casella degli strumenti** e rilasciarlo nell'area Progettazione flussi di lavoro quando vengono in genere posizionate le attività, ad esempio all'interno di un oggetto <xref:System.Activities.Statements.Sequence> . In questo modo viene creata un'attività <xref:System.Activities.Statements.TryCatch> con il valore <xref:System.Activities.Activity.DisplayName%2A> predefinito TryCatch. Il <xref:System.Activities.Activity.DisplayName%2A> valore può essere modificato nell'intestazione dell'ActivityDesigner **TryCatch** o nella casella **DisplayName** della griglia delle proprietà. Le altre proprietà devono essere modificate sulla superficie dell'ActivityDesigner **TryCatch** .
 
-Fare clic sul pulsante Espandi nell'angolo superiore destro di **TryCatch** designer per visualizzare le caselle **try** , **catch** e **finally** nella visualizzazione espansa. Per aggiungere un catch, fare clic sul pulsante **Aggiungi nuova cattura** in **TryCatch** designer. Il pulsante diventa una casella combinata del tipo. Selezionare un tipo di eccezione e premere INVIO per aggiungere il catch. Dopo l'aggiunta di un **catch** , l'area catch viene espansa e un'attività può essere rilasciata nell'intercetta per definire la logica di esecuzione per l'istruzione catch. Si noti la presenza di una casella di testo a destra dell'area dei catch espansa. Questa casella consente di assegnare un nome alla variabile dell'eccezione. La variabile di eccezione può essere utilizzata solo per le attività all'interno dello stesso **catch**.
+Fare clic sul pulsante Espandi nell'angolo superiore destro di **TryCatch** designer per visualizzare le caselle **try**, **catch** e **finally** nella visualizzazione espansa. Per aggiungere un catch, fare clic sul pulsante **Aggiungi nuova cattura** in **TryCatch** designer. Il pulsante diventa una casella combinata del tipo. Selezionare un tipo di eccezione e premere INVIO per aggiungere il catch. Dopo l'aggiunta di un **catch**, l'area catch viene espansa e un'attività può essere rilasciata nell'intercetta per definire la logica di esecuzione per l'istruzione catch. Si noti la presenza di una casella di testo a destra dell'area dei catch espansa. Questa casella consente di assegnare un nome alla variabile dell'eccezione. La variabile di eccezione può essere utilizzata solo per le attività all'interno dello stesso **catch**.
 
 **TryCatch** designer non supporta la modifica di **catch**. Se si desidera modificare il tipo di eccezione, è necessario eliminare il **catch** e aggiungerne uno nuovo. Per eliminare un **catch** , selezionarlo ed eliminarlo o selezionando **Elimina** dal menu di scelta rapida a cui si accede facendo clic con il pulsante destro del mouse.
 
@@ -41,14 +41,14 @@ Fare clic sul pulsante Espandi nell'angolo superiore destro di **TryCatch** desi
 
 Nella tabella seguente vengono illustrate le <xref:System.Activities.Statements.TryCatch> proprietà e viene descritto il modo in cui vengono utilizzate nella finestra di progettazione.
 
-|Nome proprietà|Obbligatoria|Uso|
+|Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo facoltativo dell'attività <xref:System.Activities.Statements.TryCatch>. Il percorso predefinito è TryCatch.|
 |<xref:System.Activities.Statements.TryCatch.Try%2A>|Falso|L'attività è stata eseguita per prima quando viene eseguito <xref:System.Activities.Statements.TryCatch>.|
 |<xref:System.Activities.Statements.TryCatch.Catches%2A>|Falso|Raccolta di elementi **catch** da verificare quando l' <xref:System.Activities.Statements.TryCatch.Try%2A> attività genera un'eccezione.<br /><br /> È necessario aggiungere almeno un'attività in <xref:System.Activities.Statements.TryCatch.Catches%2A> o un'attività nel blocco <xref:System.Activities.Statements.TryCatch.Finally%2A>.|
 |<xref:System.Activities.Statements.TryCatch.Finally%2A>|Falso|L'attività da eseguire quando <xref:System.Activities.Statements.TryCatch.Try%2A> e qualsiasi attività necessaria nella raccolta <xref:System.Activities.Statements.TryCatch.Catches%2A> completano l'esecuzione.<br /><br /> È necessario aggiungere almeno un'attività in <xref:System.Activities.Statements.TryCatch.Catches%2A> o un'attività nel blocco <xref:System.Activities.Statements.TryCatch.Finally%2A>.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Raccolta](../workflow-designer/collection-activity-designers.md)
 - [Rethrow](../workflow-designer/rethrow-activity-designer.md)
