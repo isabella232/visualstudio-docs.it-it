@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c52be25c007a16d7e6221663c434767c02d8d50
-ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
+ms.openlocfilehash: 943bc9aa6efbdf5fcec038d469d39a3361315afb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97683903"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875549"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>Procedura: modificare i tipi di carattere, i colori e i temi in Visual Studio
 
@@ -122,7 +122,7 @@ Per ulteriori informazioni sulle altre opzioni di accessibilità di Visual Studi
 
 Per ulteriori informazioni su tutti gli elementi dell'interfaccia utente per i quali è possibile modificare le combinazioni di tipi di carattere e colori, vedere la pagina tipi di carattere [e colori, ambiente, finestra di dialogo Opzioni](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: modificare i tipi di carattere e i colori per l'editor in Visual Studio](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
 - [Funzionalità dell'editor di codice di Visual Studio](../ide/writing-code-in-the-code-and-text-editor.md)

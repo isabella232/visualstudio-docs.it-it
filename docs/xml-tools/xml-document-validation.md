@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ec38cb416f764990252b1e58c2322bea8be94d15
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3d7046a08ac61ac0c23e98a47fb5eda75e38846c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351453"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875003"
 ---
 # <a name="xml-document-validation"></a>Convalida di documenti XML
 
@@ -45,6 +45,6 @@ Quando si modifica un file XSLT, per la convalida viene utilizzato il file *XSLT
 ## <a name="xml-schema-xsd-files"></a>File XML Schema (XSD)
 Quando si modifica un file di XML Schema, per la convalida viene utilizzato il file *XSDSchema. xsd* che si trova nella cache degli schemi. Gli errori di convalida vengono visualizzati con una sottolineatura ondulata di colore blu. Anche gli errori di compilazione vengono visualizzati con una sottolineatura ondulata di colore rosso.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Editor XML](../xml-tools/xml-editor.md)

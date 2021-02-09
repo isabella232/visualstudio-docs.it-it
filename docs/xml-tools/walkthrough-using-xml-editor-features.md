@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f8aa7daef6e427b7355eb7676db0728a4af4ca42
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 45d0bb8b47162966974499fed20c826b52dcfaa4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351479"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875081"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Procedura dettagliata: Usare le funzionalità dell'editor XML
 
@@ -32,11 +32,11 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
      Viene aperto un nuovo file nell'editor. Il file contiene una dichiarazione XML predefinita, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Nella finestra proprietà del documento fare clic sul pulsante Sfoglia ( **...** ) nel campo **schemi** .
+3. Nella finestra proprietà del documento fare clic sul pulsante Sfoglia (**...**) nel campo **schemi** .
 
      Verrà visualizzata la finestra di dialogo **schemi XSD** .
 
-4. Scegliere **Aggiungi**.
+4. Fare clic su **Aggiungi**.
 
      Verrà visualizzata la finestra di dialogo **Apri schema XSD** .
 
@@ -98,7 +98,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 ## <a name="to-format-the-xml-document"></a>Per formattare il documento XML
 
-- Selezionare il pulsante **Formatta documento** sulla barra degli strumenti dell'editor XML oppure premere **CTRL** + **E** , **D**.
+- Selezionare il pulsante **Formatta documento** sulla barra degli strumenti dell'editor XML oppure premere **CTRL** + **E**,**D**.
 
    ![Pulsante Formatta documento XML in Visual Studio](media/format-xml-document.png)
 
@@ -132,6 +132,6 @@ In questa procedura dettagliata viene usato il file di schema seguente:
 </xs:schema>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Editor XML](../xml-tools/xml-editor.md)

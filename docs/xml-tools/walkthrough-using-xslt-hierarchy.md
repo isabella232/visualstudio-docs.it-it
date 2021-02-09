@@ -6,13 +6,13 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 68018c625c5e406e2ba0d7fbfb138b05c53fff9c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+manager: jmartens
+ms.openlocfilehash: 94c8a26d75b92f9b8d51e3ca61f761985a5b4959
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351323"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875042"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Procedura dettagliata: usare la gerarchia XSLT
 
@@ -48,7 +48,7 @@ Nell'esempio riportato in questo argomento viene dimostrata l'esecuzione del deb
     </COLLECTION>
     ```
 
-1. Aggiungere il seguente *xslinclude. xsl* :
+1. Aggiungere il seguente *xslinclude. xsl*:
 
     ```xml
     <?xml version='1.0'?>
@@ -111,6 +111,6 @@ Nell'esempio riportato in questo argomento viene dimostrata l'esecuzione del deb
 
 6. Quando il debugger si interrompe in corrispondenza dell'istruzione `<xsl:include href="xslincludefile.xsl" />` , fare clic sul pulsante **Esegui istruzione** . Il debug può essere continuato nel foglio di stile a cui si fa riferimento. La gerarchia è visibile e nella finestra di progettazione viene visualizzato il percorso corretto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Profiler XSLT](../xml-tools/xslt-profiler.md)

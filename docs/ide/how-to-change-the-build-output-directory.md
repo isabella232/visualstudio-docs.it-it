@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2512836781b0bf8c269f296066b25722b58be1fb
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 792175d7d2c168f75d20bce86675a1fcd8c47899
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136888"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875536"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Procedura: modificare la directory dell'output compilato
 
@@ -47,7 +47,7 @@ Il percorso dell'output generato dal progetto può essere specificato a livello 
    ![Proprietà Percorso di output per un progetto Visual Studio C#](media/output-path.png)
    
    > [!NOTE]
-   > In alcuni progetti, per impostazione predefinita, il Framework e il runtime vengono inclusi nel percorso di compilazione. Per modificare questa operazione, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni**, scegliere **modifica file di progetto**e aggiungere quanto segue:
+   > In alcuni progetti, per impostazione predefinita, il Framework e il runtime vengono inclusi nel percorso di compilazione. Per modificare questa operazione, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni**, scegliere **modifica file di progetto** e aggiungere quanto segue:
    > ```xml
    > <PropertyGroup>
    >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -60,7 +60,7 @@ Il percorso dell'output generato dal progetto può essere specificato a livello 
 >
 > ![Selezione della configurazione della build in Visual Studio 2019](media/build-configuration-chooser.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Pagina Compila, Progettazione progetti (C#)](../ide/reference/build-page-project-designer-csharp.md)
 - [Pagina delle proprietà generale (progetto)](/cpp/build/reference/general-property-page-project)

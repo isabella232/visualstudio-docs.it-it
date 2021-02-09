@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: overview
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bd1cac1c688bf2efc0a4c08797d72eabf0133e2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: de79063eeef5056bd850d8fa1fe76d6698c7e082
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351440"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874846"
 ---
 # <a name="xml-editor"></a>Editor XML
 
@@ -42,7 +42,7 @@ Nell'editor XML sono incluse le funzionalità seguenti:
 
 - Integrazione con [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). In questo modo viene fornita una visualizzazione gerarchica degli schemi XML.
 
-L'editor XML viene richiamato per estensioni di file note, quali *. XML* , *. xsd* , *. xsl* e *. config*. Viene inoltre richiamato su qualsiasi estensione di file sconosciuta se il file sembra contenere XML.
+L'editor XML viene richiamato per estensioni di file note, quali *. XML*, *. xsd*, *. xsl* e *. config*. Viene inoltre richiamato su qualsiasi estensione di file sconosciuta se il file sembra contenere XML.
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
@@ -56,7 +56,7 @@ Il [Profiler XSLT](../xml-tools/xslt-profiler.md) crea report di prestazioni XSL
 
 Lo [strumento di gerarchia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md) consente di aggiungere punti di interruzione nei fogli di stile inclusi e/o nelle regole del modello predefinite.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Opzioni dell'editor XML-formattazione](../ide/reference/options-text-editor-xml-formatting.md)
 - [Opzioni dell'editor XML-varie](../ide/reference/options-text-editor-xml-miscellaneous.md)

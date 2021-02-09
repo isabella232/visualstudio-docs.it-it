@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31edea44741249c5d75a53e291c766824dc3b8ea
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c4b16c1baa039a2f1e812d35e7a4994ffc0d5e5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351297"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874886"
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
 
@@ -37,7 +37,7 @@ ms.locfileid: "94351297"
 
 - Generare codice XML di esempio per gli elementi globali.
 
-**XML Schema Explorer** fornisce una visualizzazione gerarchica del set di schemi tramite una visualizzazione struttura ad albero. **XML Schema Explorer** fornisce inoltre funzionalità di ricerca, filtro, navigazione e ordinamento. Per accedere a **XML Schema Explorer** , eseguire una delle operazioni seguenti:
+**XML Schema Explorer** fornisce una visualizzazione gerarchica del set di schemi tramite una visualizzazione struttura ad albero. **XML Schema Explorer** fornisce inoltre funzionalità di ricerca, filtro, navigazione e ordinamento. Per accedere a **XML Schema Explorer**, eseguire una delle operazioni seguenti:
 
 - Nella [visualizzazione iniziale](../xml-tools/start-view.md)fare clic sul collegamento **XML Schema Explorer** .
 
@@ -45,7 +45,7 @@ ms.locfileid: "94351297"
 
 - È inoltre possibile selezionare **XML Schema Explorer** dal menu **Visualizza** .
 
-- È possibile accedere a **XML Schema Explorer** da un file con *estensione VB* che dispone di un Visual Basic valore letterale XML associato a un file *xsd* . Per visualizzare il set di schemi in **XML Schema Explorer** , fare clic con il pulsante destro del mouse su un nodo XML in un valore letterale XML o su un'importazione di spazi dei nomi XML e selezionare il comando **Mostra in Esplora schema** . Per ulteriori informazioni, vedere [integrazione di valori letterali XML con XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
+- È possibile accedere a **XML Schema Explorer** da un file con *estensione VB* che dispone di un Visual Basic valore letterale XML associato a un file *xsd* . Per visualizzare il set di schemi in **XML Schema Explorer**, fare clic con il pulsante destro del mouse su un nodo XML in un valore letterale XML o su un'importazione di spazi dei nomi XML e selezionare il comando **Mostra in Esplora schema** . Per ulteriori informazioni, vedere [integrazione di valori letterali XML con XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).
 
 ## <a name="tree-view"></a>Visualizzazione ad albero
 In **XML Schema Explorer** vengono visualizzate le informazioni sul set di schemi precompilate in una struttura ad albero. La struttura ad albero è organizzata come segue:
@@ -80,6 +80,6 @@ Se si eliminano i file nella vista, tutti i nodi globali del file vengono aggiun
 
  Non è possibile trascinare e rilasciare nodi locali o importazioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: aggiungere nodi all'area di lavoro da XML Schema Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 024a8659d95855c8154ed8d9bed231739648719e
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9e5d113718c2ecc73ad942dd58ddf92216fe6c83
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045796"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875120"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaccia utente del debugger (XSLT)
 
@@ -58,7 +58,7 @@ Il **elenco attività** elenca tutti gli errori di compilazione nel foglio di st
 Il **elenco attività** include tutti gli errori che si verificano nei blocchi di script nel file XSLT.
 
 > [!NOTE]
-> Il debugger XSLT non contiene avvisi, quindi non vengono mai visualizzati nella **elenco attività** .
+> Il debugger XSLT non contiene avvisi, quindi non vengono mai visualizzati nella **elenco attività**.
 
 ## <a name="breakpoints-window"></a>finestra Punti di interruzione
 

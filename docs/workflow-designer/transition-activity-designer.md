@@ -8,16 +8,16 @@ f1_keywords:
 - System.Activities.Statements.Transition.UI
 ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: cedc9c7b6f402ad3f5f2c40e21c29e2a0d1ad2e6
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 24a20ca9f7905adee3b7d0d83801d0033a1752ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433726"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875276"
 ---
 # <a name="transition-activity-designer"></a>ActivityDesigner Transition
 
@@ -31,10 +31,10 @@ Un ActivityDesigner Transition consente di configurare una transizione tra due s
 
 Nella tabella seguente vengono elencate le proprietà di <xref:System.Activities.Statements.Transition> che possono essere impostate usando la finestra di progettazione flussi di lavoro e viene descritta la modalità di utilizzo nella finestra di progettazione.
 
-|Nome proprietà|Obbligatoria|Uso|
+|Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Statements.Transition.DisplayName%2A>|Falso|Specifica il nome descrittivo dell'ActivityDesigner <xref:System.Activities.Statements.Transition>. Il valore predefinito è **T1**. Il valore può essere modificato nella griglia della proprietà, nell'intestazione della finestra di progettazione estesa di transizione e nell'intestazione della sezione di azione all'interno della finestra di progettazione espansa di transizione. <xref:System.Activities.Activity.DisplayName%2A> è usato per l'esplorazione tramite la barra di navigazione visualizzata nella parte superiore della Progettazione flussi di lavoro.<br /><br /> Sebbene la proprietà <xref:System.Activities.Activity.DisplayName%2A> non sia obbligatoria, se ne consiglia l'uso.|
-|<xref:System.Activities.Statements.Transition.Condition%2A>|Falso|Se presente, specifica un'espressione che deve restituire **true** prima che il controllo venga passato allo stato di destinazione. Tale condizione può essere modificata nella griglia delle proprietà e nella finestra di progettazione estesa di transizione. Più condizioni in una transizione condivisa vengono valutate nell'ordine in cui appaiono nella finestra di progettazione di transizione. **Nota:**  Si noti che se la <xref:System.Activities.Statements.Transition.Condition%2A> di una transizione restituisce **false** (o tutte le condizioni di una transizione del trigger condivisa restituiscono **false** ), la transizione non verrà eseguita e tutti i trigger per tutte le transizioni dallo stato verranno ripianificati. In questa esercitazione, questa situazione non può verificarsi a causa della modalità con cui le condizioni vengono configurate (esistono azioni specifiche per verificare se il valore indicato è corretto o errato).|
+|<xref:System.Activities.Statements.Transition.Condition%2A>|Falso|Se presente, specifica un'espressione che deve restituire **true** prima che il controllo venga passato allo stato di destinazione. Tale condizione può essere modificata nella griglia delle proprietà e nella finestra di progettazione estesa di transizione. Più condizioni in una transizione condivisa vengono valutate nell'ordine in cui appaiono nella finestra di progettazione di transizione. **Nota:**  Si noti che se la <xref:System.Activities.Statements.Transition.Condition%2A> di una transizione restituisce **false** (o tutte le condizioni di una transizione del trigger condivisa restituiscono **false**), la transizione non verrà eseguita e tutti i trigger per tutte le transizioni dallo stato verranno ripianificati. In questa esercitazione, questa situazione non può verificarsi a causa della modalità con cui le condizioni vengono configurate (esistono azioni specifiche per verificare se il valore indicato è corretto o errato).|
 |**Origine**|Vero|Indica lo stato da cui ha origine questa transizione. Facendo clic sul nome dello stato di origine si passa dalla visualizzazione Progettazione a una visualizzazione espansa di tale stato. Questo valore viene impostato quando la transizione viene creata e non può essere modificata.|
 |<xref:System.Activities.Statements.Transition.Trigger%2A>|Falso|Specifica l'attività il cui completamento avvia la transizione. Per impostare questa attività, trascinare un'attività dalla **casella degli strumenti** e rilasciarla nella sezione **trigger** della transizione.|
 |<xref:System.Activities.Statements.Transition.Action%2A>|Falso|Specifica l'attività eseguita quando l'attività del trigger è stata completata e <xref:System.Activities.Statements.Transition.Condition%2A> , se presente, restituisce **true**. Questa attività viene eseguita durante la transizione allo stato di destinazione, dopo l'esecuzione dell'attività di <xref:System.Activities.Statements.State.Exit%2A> per lo stato di origine, se presente. Quando la finestra di progettazione della transizione viene espansa, questo valore può essere impostato trascinando un'attività dalla **casella degli strumenti** e rilasciandola nella sezione **Action** della transizione. Possono essere presenti più azioni per una sola transizione. Le singole azioni possono essere espanse e contratte e possono essere ordinate facendo clic sulla freccia verso l'alto o verso il basso visualizzato sull'azione quando sono presenti più azioni in una transizione.|
@@ -49,7 +49,7 @@ Le transizioni vengono creati trascinando una riga da uno stato a un altro, o ri
 
 Le transizioni del trigger condivise sono il set di transizioni che condividono lo stesso evento del trigger. Un trigger condiviso consente la progressione condizionale a uno stato di destinazione in base alla valutazione delle espressioni configurate per più transizioni che condividono un evento comune del trigger. Per aggiungere altre azioni a una transizione e creare una transizione condivisa, fare clic sul cerchio che indica l'inizio della transizione desiderata e trascinarlo nello stato desiderato. La nuova transizione condividerà uno stesso trigger della transizione iniziale, ma avrà una condizione e un'azione univoche. Le transizioni condivise possono essere create anche dall'interno della finestra di progettazione della transizione facendo clic su **Aggiungi transizione del trigger condiviso** nella parte inferiore della finestra di progettazione della transizione e quindi selezionando lo stato di destinazione desiderato dall'elenco **a discesa stati disponibili per la connessione** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [StateMachine](../workflow-designer/statemachine-activity-designer.md)
 - [FinalState](../workflow-designer/finalstate-activity-designer.md)

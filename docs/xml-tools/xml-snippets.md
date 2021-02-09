@@ -7,19 +7,19 @@ ms.topic: conceptual
 ms.assetid: 348dbf64-3f09-4fff-b47a-a7ecdf3221cc
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9114d50abd8f12e19f67d593927b94afcb010f6
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 158f51ddc8db8f83d98c34aa03b3ee4f5a1a4d01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350192"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874821"
 ---
 # <a name="xml-snippets"></a>frammenti XML
 
-L'editor XML offre una funzionalità, denominata *frammenti XML* , che consente di creare file XML più rapidamente. È possibile riutilizzare i frammenti di codice XML inserendoli nei file. È inoltre possibile generare dati XML in base a uno schema di XML Schema Definition Language (XSD).
+L'editor XML offre una funzionalità, denominata *frammenti XML*, che consente di creare file XML più rapidamente. È possibile riutilizzare i frammenti di codice XML inserendoli nei file. È inoltre possibile generare dati XML in base a uno schema di XML Schema Definition Language (XSD).
 
 ## <a name="reusable-xml-snippets"></a>Frammenti XML riutilizzabili
 
@@ -51,7 +51,7 @@ L'editor XML è inoltre in grado di generare un frammento XML da un XML Schema. 
 
 Oltre ai frammenti di codice inclusi in Visual Studio per impostazione predefinita, è anche possibile creare e utilizzare frammenti XML personalizzati. Per altre informazioni, vedere [procedura: creare frammenti XML](../xml-tools/how-to-create-xml-snippets.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Frammenti di codice in Visual Studio](../ide/code-snippets.md)
 - [Editor XML](../xml-tools/xml-editor.md)

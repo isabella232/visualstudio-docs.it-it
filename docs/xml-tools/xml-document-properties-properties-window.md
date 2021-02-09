@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31098083383b1669e0fe79423c212f1f38208acc
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1e12118f2f7f5d9189ca768f7be65a35b490eb54
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350231"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875016"
 ---
 # <a name="xml-document-properties-properties-window"></a>Proprietà del documento XML, Finestra Proprietà
 
@@ -30,7 +30,7 @@ La codifica dei caratteri per il file. Modificando questa proprietà si modifica
 
 **Input**
 
-Il documento di input associato al foglio di stile XSLT. Viene usato dai comandi di **avvio XSLT** , ad esempio, **XML**  >  **Start XSLT senza debug**. È possibile selezionare un documento utilizzando il pulsante Sfoglia ( **..**.).
+Il documento di input associato al foglio di stile XSLT. Viene usato dai comandi di **avvio XSLT** , ad esempio, **XML**  >  **Start XSLT senza debug**. È possibile selezionare un documento utilizzando il pulsante Sfoglia (**..**.).
 
 Questa proprietà è visibile solo quando un file XSLT è aperto nell'editor.
 
@@ -52,6 +52,6 @@ Il file XSLT utilizzato per trasformare il documento quando vengono utilizzati i
 
 Quando si modifica un file XSLT, questa proprietà può essere usata per specificare che è necessario usare un foglio di stile diverso quando si seleziona il comando **Avvia il debug XSLT** o **Avvia XSLT senza debug** . Questa operazione può essere eseguita, ad esempio, quando si modifica un foglio di stile incluso in un foglio di stile padre.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Editor XML](../xml-tools/xml-editor.md)

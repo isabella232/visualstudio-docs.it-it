@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c479cbad884a8a21197c945f8f6f1ae13947991
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: f0a7ffb9e100a621019a5d0ced855575a05708ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995486"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875302"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Finestra di dialogo Cerca e seleziona un tipo .NET
 
@@ -41,7 +41,7 @@ Nella finestra **Proprietà** , nelle finestre di dialogo o nelle finestre di pr
 
 1. Nella casella **nome tipo** immettere il nome del tipo che si desidera utilizzare.
 
-2. Eseguire una di queste operazioni:
+2. Eseguire una delle operazioni seguenti:
 
     - Una volta visualizzato il nome del tipo che si desidera utilizzare nell'albero nella casella **nome tipo** , fare doppio clic sul tipo per selezionarlo.
 
@@ -75,6 +75,6 @@ Ad esempio:
 
 Quando si seleziona un tipo di contratto di servizio, il browser del tipo visualizza solo i tipi che dispongono di un attributo di <xref:System.ServiceModel.ServiceContractAttribute>.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Utilizzo degli ActivityDesigner](control-flow-activity-designers.md)

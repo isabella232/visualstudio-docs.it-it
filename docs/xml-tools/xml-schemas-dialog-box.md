@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 26703b821d2748612f461a35591a831488807dbb
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1c91e97d0508ab85893409386ddd3ab9dded7f45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351401"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874835"
 ---
 # <a name="xml-schemas-dialog-box"></a>Finestra di dialogo XML Schema
 
@@ -53,7 +53,7 @@ Apre la finestra di dialogo **Apri schema XSD** , che consente di selezionare sc
 
 Consente di rimuovere lo schema attualmente selezionato dal set di schemi. L'operazione rimuove lo schema dalla cache degli schemi in memoria, ma non dal file system.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: selezionare gli schemi XML da utilizzare](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [Cache dello schema](../xml-tools/schema-cache.md)
