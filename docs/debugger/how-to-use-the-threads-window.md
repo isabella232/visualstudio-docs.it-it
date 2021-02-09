@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 33375a8970638765d02a94e6e3e9cd8afc1a0fe7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbac3de879937435e9f2e1dc5ab4fad0e7358fc9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348652"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925389"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Procedura dettagliata: eseguire il debug di un'app multithread usando la finestra thread (C#, Visual Basic, C++)
 
@@ -38,7 +38,7 @@ Creare il progetto di app multithread seguente da usare in questa esercitazione:
 
    ::: moniker range=">=vs-2019"
 
-   Se la finestra di avvio non è aperta, **File** scegliere > **finestra di avvio**file.
+   Se la finestra di avvio non è aperta,  scegliere > **finestra di avvio** file.
 
    Nella finestra Start scegliere **Crea un nuovo progetto**.
 
@@ -55,7 +55,7 @@ Creare il progetto di app multithread seguente da usare in questa esercitazione:
    ::: moniker range="vs-2017"
    Dalla barra dei menu in alto scegliere **file**  >  **nuovo**  >  **progetto**. Nel riquadro sinistro della finestra di dialogo **nuovo progetto** scegliere le opzioni seguenti:
 
-   - Per un'app C#, in **Visual c#** scegliere **desktop di Windows**e quindi nel riquadro centrale scegliere **app console (.NET Framework)**.
+   - Per un'app C#, in **Visual c#** scegliere **desktop di Windows** e quindi nel riquadro centrale scegliere **app console (.NET Framework)**.
    - Per un'app C++, in **Visual C++** scegliere **desktop di Windows**, quindi scegliere **applicazione console di Windows**.
 
    Se non viene visualizzata l' **app console (.NET Core)** o, per C++, il modello di progetto di **app console** , passare a **strumenti**  >  **Ottieni strumenti e funzionalità...**, che consente di aprire la programma di installazione di Visual Studio. Scegliere il carico di lavoro sviluppo per **desktop .NET** o **sviluppo desktop con C++** , quindi scegliere **modifica**.
@@ -65,7 +65,7 @@ Creare il progetto di app multithread seguente da usare in questa esercitazione:
    Selezionare **OK**.
    ::: moniker-end
 
-   Verrà visualizzato un nuovo progetto console. Una volta creato il progetto, viene visualizzato un file di origine. A seconda della lingua scelta, il file di origine potrebbe essere denominato *Program.cs*, *MyThreadWalkthroughApp. cpp*o *Module1. vb*.
+   Verrà visualizzato un nuovo progetto console. Una volta creato il progetto, viene visualizzato un file di origine. A seconda della lingua scelta, il file di origine potrebbe essere denominato *Program.cs*, *MyThreadWalkthroughApp. cpp* o *Module1. vb*.
 
 1. Sostituire il codice nel file di origine con il codice di esempio C# o C++ riportato di iniziare a eseguire il [debug di app multithread](../debugger/get-started-debugging-multithreaded-apps.md).
 
@@ -89,11 +89,11 @@ Creare il progetto di app multithread seguente da usare in questa esercitazione:
 
    Il punto di interruzione viene visualizzato come un cerchio rosso nella barra di navigazione a sinistra accanto alla riga di codice.
 
-1. Selezionare **debug**  >  **Avvia debug**o premere **F5**.
+1. Selezionare **debug**  >  **Avvia debug** o premere **F5**.
 
    L'app viene avviata in modalità di debug e viene sospesa in corrispondenza del punto di interruzione.
 
-1. In modalità di interruzioni aprire la finestra **thread** selezionando **debug**  >  **Windows**  >  **thread**di Windows. Per aprire o visualizzare i **thread** e altre finestre di debug, è necessario essere in una sessione di debug.
+1. In modalità di interruzioni aprire la finestra **thread** selezionando **debug**  >    >  **thread** di Windows. Per aprire o visualizzare i **thread** e altre finestre di debug, è necessario essere in una sessione di debug.
 
 ## <a name="examine-thread-markers"></a>Esaminare i marcatori dei thread
 
@@ -120,7 +120,7 @@ Flag e Rimuovi i flag dei thread dall'editor del codice sorgente o dalla finestr
 
 1. Aprire la barra degli strumenti **posizione di debug** selezionando **Visualizza**  >  **barra degli strumenti**  >  **posizione di debug**. È anche possibile fare clic con il pulsante destro del mouse sull'area della barra degli strumenti e selezionare **percorso di debug**.
 
-1. La barra degli strumenti **posizione di debug** include tre campi: **processo**, **thread**e **stack frame**. Scorrere l'elenco dei **thread** e notare il numero di thread disponibili. Nell'elenco **thread** il thread attualmente in esecuzione è contrassegnato da un **>** simbolo.
+1. La barra degli strumenti **posizione di debug** include tre campi: **processo**, **thread** e **stack frame**. Scorrere l'elenco dei **thread** e notare il numero di thread disponibili. Nell'elenco **thread** il thread attualmente in esecuzione è contrassegnato da un **>** simbolo.
 
 1. Nella finestra del codice sorgente passare il puntatore del mouse sull'icona di un marcatore di thread nella barra di navigazione e selezionare l'icona del flag (o una delle icone di flag vuote) in DataTip. L'icona del flag diventerà rossa.
 
@@ -145,7 +145,7 @@ Nella finestra **thread** i thread contrassegnati hanno icone di flag rosse acca
 
 Selezionare un'icona di contrassegno per impostare lo stato del thread su contrassegnato o senza flag, a seconda dello stato corrente.
 
-È anche possibile fare clic con il pulsante destro del mouse su una riga e selezionare **flag**, Rimuovi **flag**o Rimuovi flag per **tutti i thread** dal menu di scelta rapida.
+È anche possibile fare clic con il pulsante destro del mouse su una riga e selezionare **flag**, Rimuovi **flag** o Rimuovi flag per **tutti i thread** dal menu di scelta rapida.
 
 La barra degli strumenti della finestra **thread** presenta anche un pulsante **Mostra solo thread contrassegnati** , che corrisponde a destra di una delle due icone del flag. Funziona allo stesso modo del pulsante sulla barra degli strumenti **posizione di debug** e uno dei pulsanti controlla la visualizzazione in entrambe le posizioni.
 
@@ -158,12 +158,12 @@ La seconda colonna della finestra **thread** (senza intestazione) è la colonna 
 La colonna **location** indica il punto in cui ogni thread viene visualizzato nel codice sorgente. Selezionare la freccia di espansione accanto alla voce **posizione** oppure passare il puntatore del mouse sulla voce per visualizzare uno stack di chiamate parziale per il thread.
 
 >[!TIP]
->Per una visualizzazione grafica degli stack di chiamate per i thread, utilizzare la finestra [stack in parallelo](../debugger/using-the-parallel-stacks-window.md) . Per aprire la finestra, durante il debug, selezionare **debug** >  stack in parallelo di**Windows**  >  **Parallel Stacks**.
+>Per una visualizzazione grafica degli stack di chiamate per i thread, utilizzare la finestra [stack in parallelo](../debugger/using-the-parallel-stacks-window.md) . Per aprire la finestra, durante il debug, selezionare **debug** >  stack in parallelo di **Windows**  >  .
 
-Oltre ai **flag**, Rimuovi **flag**e Rimuovi **flag di tutti i thread**, il menu di scelta rapida per gli elementi della finestra dei **thread** è:
+Oltre ai **flag**, Rimuovi **flag** e Rimuovi **flag di tutti i thread**, il menu di scelta rapida per gli elementi della finestra dei **thread** è:
 
 - Pulsante **Mostra thread nel codice sorgente** .
-- **Visualizzazione esadecimale**, che modifica l' **ID del thread**nella finestra **thread** dal formato decimale in formato esadecimale.
+- **Visualizzazione esadecimale**, che modifica l' **ID del thread** nella finestra **thread** dal formato decimale in formato esadecimale.
 - [Passa a thread](#switch-to-another-thread), che passa immediatamente l'esecuzione a tale thread.
 - **Rinominare**, che consente di modificare il nome del thread.
 - [Blocca e sblocca](#bkmk_freeze) i comandi.
@@ -207,6 +207,6 @@ Con il marcatore del thread nel codice sorgente, è possibile passare solo a thr
 
 A questo punto sono state apprese le nozioni di base per il debug di app multithread. È possibile osservare, contrassegnare e annotare e bloccare e sbloccare i thread utilizzando la finestra **thread** , l'elenco **thread** nella barra degli strumenti **posizione di debug** o i marcatori di thread nell'editor del codice sorgente.
 
-## <a name="see-also"></a>Vedere anche
-- [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+## <a name="see-also"></a>Vedi anche
+- [Eseguire il debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Procedura: Passare a un altro thread durante il debug](../debugger/how-to-switch-to-another-thread-while-debugging.md)

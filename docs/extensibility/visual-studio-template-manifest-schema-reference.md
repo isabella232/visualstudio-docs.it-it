@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d712f2cb95b2df9680c4476805e9dfb6809cf038
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 5f251b4511e2bff5bc20172e4018560205a378e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863838"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925827"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Riferimento allo schema del manifesto del modello di Visual Studio
 Questo schema descrive il formato dei file manifesto del modello di Visual Studio (con *estensione vstman*) generati per i modelli di progetto o di elemento di Visual Studio. Lo schema descrive anche il percorso e altre informazioni rilevanti sul modello.
@@ -41,7 +41,7 @@ Questo schema descrive il formato dei file manifesto del modello di Visual Studi
 - **VSTemplateDir** Opzionale.
 
 ### <a name="parent-element"></a>Elemento padre
- No.
+ Nessuna.
 
 ## <a name="vstemplatecontainer"></a>VSTemplateContainer
  Contenitore degli elementi del manifesto del modello. Un manifesto dispone di un contenitore di modelli per ogni modello definito.
@@ -64,7 +64,7 @@ Questo schema descrive il formato dei file manifesto del modello di Visual Studi
  A causa della loro progettazione, le voci **VSTemplateDir** dovrebbero essere visualizzate solo in manifesti non locali specificati.
 
 ### <a name="attributes"></a>Attributi
- No.
+ Nessuna.
 
 ### <a name="child-elements"></a>Elementi figlio
 
@@ -89,12 +89,12 @@ Questo schema descrive il formato dei file manifesto del modello di Visual Studi
 - **ID**: valore stringa che specifica l'ID. facoltativo.
 
 ### <a name="child-elements"></a>Elementi figlio
- No.
+ Nessuna.
 
 ### <a name="parent-element"></a>Elemento padre
  **LocalizedName**
 
-## <a name="examples"></a>Esempi
+## <a name="examples"></a>Esempio
  Il codice seguente è un esempio di un file template *. vstman* del modello di progetto.
 
 ```xml

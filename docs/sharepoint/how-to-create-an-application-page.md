@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: df52ca75ef99fe98158cb5f874e59fe4ee0c47b4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 74e7aab4cbc012afbf045672dbf4af248ada4c61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849857"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925622"
 ---
 # <a name="how-to-create-an-application-page"></a>Procedura: creare una pagina dell'applicazione
   È possibile creare una pagina Web ASP.NET per uno o più siti di SharePoint. In SharePoint queste pagine sono denominate pagine dell'applicazione. Diversamente da una pagina del sito, una pagina dell'applicazione contiene il codice che viene eseguito dietro la pagina. Per ulteriori informazioni, vedere [creare pagine dell'applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
@@ -49,6 +49,6 @@ ms.locfileid: "94849857"
 
      Il file di codice viene visualizzato se si espande il nodo per il file di paging ASP.NET con estensione *CS* o *VB* , a seconda del linguaggio del progetto. Per un esempio end-to-end di come creare una pagina dell'applicazione, vedere [procedura dettagliata: creare un'applicazione di SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creazione di pagine applicazione per SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [Procedura dettagliata: creare una pagina dell'applicazione SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)

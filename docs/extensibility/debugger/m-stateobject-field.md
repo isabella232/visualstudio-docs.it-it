@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 68c54b22-3e1c-4031-b9c7-b972c519d8a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fed70f2eda19ad96454a83217c20c046809f3034
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbf16af65ab59147614ce5609de9b56ff833862a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738380"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925135"
 ---
 # <a name="m_stateobject-field"></a>campo m_stateObject
 Oggetto che rappresenta i dati che l'azione utilizzerà.
@@ -35,5 +35,5 @@ Oggetto che rappresenta i dati che l'azione utilizzerà.
 ## <a name="remarks"></a>Osservazioni
  Si tratta del `state` parametro nel <xref:System.Threading.Tasks.Task.%23ctor%2A> costruttore. È anche il campo sottostante per la <xref:System.Threading.Tasks.Task.AsyncState%2A?displayProperty=fullName> Proprietà.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

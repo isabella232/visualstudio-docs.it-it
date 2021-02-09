@@ -20,15 +20,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], associate external content types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e736e0befe8aaf9a6c090615d0c43bb3f3116dbf
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: e726e8b5702a656b340401c9a2db26e40be1a37d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849844"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925566"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Procedura: creare un'associazione tra entità
   È possibile definire le relazioni tra entità nel modello di integrazione applicativa dei dati (Business Data Connectivity) creando associazioni. Visual Studio genera metodi che forniscono agli utenti del modello informazioni sulle singole associazioni. Questi metodi possono essere utilizzati da elenchi, applicazioni personalizzate o web part di SharePoint per visualizzare le relazioni tra i dati in un'interfaccia utente.
@@ -63,7 +63,7 @@ ms.locfileid: "94849844"
 
      Per esempi di metodi di associazione dello strumento di navigazione, vedere [creare un'associazione tra entità](../sharepoint/creating-an-association-between-entities.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creare un'associazione tra entità](../sharepoint/creating-an-association-between-entities.md)
 - [Progettare un modello di integrazione applicativa dei dati](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Procedura: aggiungere un metodo Finder](../sharepoint/how-to-add-a-finder-method.md)

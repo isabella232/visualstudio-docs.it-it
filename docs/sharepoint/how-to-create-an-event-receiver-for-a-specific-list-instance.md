@@ -13,15 +13,15 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8bd76f2aafc5d0b3058dcaba68b6f3099f01ff8d
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 664a7ac4e763b2378cf30603c417aacde27c2e47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925497"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Procedura: creare un ricevitore di eventi per un'istanza di elenco specifica
   Un ricevitore di eventi di istanza elenco risponde agli eventi che si verificano in qualsiasi istanza di una definizione di elenco. Sebbene il modello di ricevitore di eventi non consenta la destinazione di un'istanza di elenco specifica, è possibile modificare un ricevitore di eventi che ha come ambito una definizione di elenco per rispondere agli eventi in un'istanza di elenco specifica.
@@ -88,6 +88,6 @@ ms.locfileid: "94849896"
 
      Si noti che il ricevitore di eventi non viene attivato sul nuovo annuncio perché il ricevitore è configurato per rispondere solo agli eventi nell'istanza dell'elenco di annunci personalizzati, **TestAnnouncements**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: creare un ricevitore di eventi](../sharepoint/how-to-create-an-event-receiver.md)
 - [Sviluppare soluzioni SharePoint](../sharepoint/developing-sharepoint-solutions.md)

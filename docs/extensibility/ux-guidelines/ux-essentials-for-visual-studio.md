@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 616837c358c804198818df659cb7b7ee76716305
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 38c560cf75fad8887dabdaab38004b10ae0ffc08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97864048"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926129"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Nozioni fondamentali sull'esperienza utente per Visual Studio
 
@@ -156,7 +156,7 @@ Nell'approccio corretto illustrato nella **Figura C**, l'impostazione è associa
 
    ![Ignorando il servizio colori e utilizzando "ulteriori informazioni" per i collegamenti ipertestuali si trovano anti-modelli di Visual Studio.](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />Ignorando il servizio colori e utilizzando "ulteriori informazioni" per i collegamenti ipertestuali si trovano anti-modelli di Visual Studio.
 
-**Soluzione migliore:** Porre la domanda richiesta dall'utente facendo clic sul collegamento. Esempio:
+**Soluzione migliore:** Porre la domanda richiesta dall'utente facendo clic sul collegamento. Ad esempio:
 
 - Come funzionano i servizi di Microsoft Azure?
 

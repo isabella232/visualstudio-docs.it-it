@@ -15,15 +15,15 @@ helpviewer_keywords:
 - regular expressions
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8648eb48c68e0220b1d36a851619edec2b51ceb7
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: d62d35a296c70462aab75af5a8c6729179d5b34d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96478991"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925765"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usare espressioni regolari in Visual Studio
 
@@ -52,7 +52,7 @@ La tabella seguente contiene alcuni caratteri, operatori, costrutti ed esempi di
 |Trovare la corrispondenza con qualsiasi carattere non presente in un determinato set di caratteri. Per altre informazioni, vedere [Gruppo di caratteri negativi](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]` corrisponde a "BEF" in "before", "Beh" in "Behind" e "bel" in "below", ma non trova corrispondenze in "below".|
 |Trovare la corrispondenza con l'espressione prima o dopo il simbolo|&#124;|`(sponge|mud) bath` corrisponde a "Sponge Bath" e a "Mud Bath"|
 |[Far precedere dai caratteri di escape il carattere](/dotnet/standard/base-types/character-escapes-in-regular-expressions) che segue la barra rovesciata| \\ |`\^` corrisponde al carattere ^|
-|Specificare il numero di occorrenze del gruppo o del carattere precedente. Per altre informazioni, vedere [Trova la corrispondenza esatta n volte](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, dove 'n' è il numero di occorrenze|`x(ab){2}x` trova la corrispondenza con "xababx"<br/>`x(ab){2,3}x` trova "xababx" e "xabababx" ma non "xababababx"|
+|Specificare il numero di occorrenze del gruppo o del carattere precedente. Per altre informazioni, vedere [Trova la corrispondenza esatta n volte](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, dove 'n' è il numero di occorrenze|`x(ab){2}x` corrisponde a "xababx"<br/>`x(ab){2,3}x` corrisponde a "xababx" e a "xabababx", ma non a "xababababx"|
 |[Trovare la corrispondenza con un testo in una categoria Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Per altre informazioni sulle classi di caratteri Unicode, vedere [Proprietà dei caratteri Unicode standard 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, dove "X" è il numero Unicode.|`\p{Lu}` trova la corrispondenza di "T" e "D" in "Thomas Doe"|
 |[Trovare la corrispondenza con un confine di parola](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (all'esterno di una classe di caratteri `\b` specifica un confine di parola e all'interno di una classe di caratteri `\b` specifica un backspace).|`\bin` trova "in" in "interno" ma non trova corrispondenze in "Pinto"|
 |Trovare la corrispondenza con un'interruzione di riga (ovvero un ritorno a capo seguito da una nuova riga)|\r?\n|`End\r?\nBegin` trova "end" e "Begin" solo quando "end" è l'ultima stringa in una riga e "Begin" è la prima stringa nella riga successiva|

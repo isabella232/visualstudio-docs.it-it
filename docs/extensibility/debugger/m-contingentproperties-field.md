@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 49e8cb36-db39-440b-acda-a325651f1165
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c216a99042a3b9b67eaa0dc13555c27a1e8bfad9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbdd6f69dd9c4c4fb270473065ba836071c85856
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738410"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925262"
 ---
 # <a name="m_contingentproperties-field"></a>campo m_contingentProperties
 Archivia le proprietà aggiuntive dell' <xref:System.Threading.Tasks.Task> oggetto.
@@ -34,5 +34,5 @@ Archivia le proprietà aggiuntive dell' <xref:System.Threading.Tasks.Task> ogget
 
 ## <a name="remarks"></a>Osservazioni
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d1f31e5b-c6e2-4e02-8959-b3e86041b29c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcdec19c4667356edaf9e057c86ddc24baf747b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cf4f418cf02f08f95d0192e99c0b02d0f74e3ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735966"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925110"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
@@ -42,13 +42,13 @@ IDebugBinder : IUnknown
 
 |Metodo|Descrizione|
 |------------|-----------------|
-|[Associazione](../../../extensibility/debugger/reference/idebugbinder-bind.md)|Ottiene il contesto di memoria o l'oggetto che contiene il valore corrente del simbolo.|
+|[Associare](../../../extensibility/debugger/reference/idebugbinder-bind.md)|Ottiene il contesto di memoria o l'oggetto che contiene il valore corrente del simbolo.|
 |[ResolveRuntimeType](../../../extensibility/debugger/reference/idebugbinder-resolveruntimetype.md)|Determina il tipo in fase di esecuzione di un oggetto.|
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugbinder-getmemorycontext.md)|Converte un indirizzo di memoria o un percorso dell'oggetto in un contesto di memoria.|
 |[GetFunctionObject](../../../extensibility/debugger/reference/idebugbinder-getfunctionobject.md)|Ottiene un oggetto [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) usato per creare i parametri della funzione.|
 |[ResolveDynamicType](../../../extensibility/debugger/reference/idebugbinder-resolvedynamictype.md)|Ottiene il tipo esatto per una variabile.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa interfaccia restituisce gli oggetti utilizzati dall'analizzatore di espressioni negli alberi di analisi. L'analizzatore di espressioni analizza un'espressione utilizzando il provider di simboli per convertire i simboli nell'espressione in istanze di [IDebugField](../../../extensibility/debugger/reference/idebugfield.md), che descrivono ogni simbolo in termini di tipo e posizione nel codice sorgente. Il metodo [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md) converte `IDebugField` gli oggetti in oggetti [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che si connettono o associano un tipo di simbolo a un valore effettivo in memoria. Questi `IDebugObject` oggetti vengono quindi archiviati in un albero di analisi per una valutazione successiva.
 
 ## <a name="requirements"></a>Requisiti
@@ -58,7 +58,7 @@ IDebugBinder : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di valutazione delle espressioni](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)
 - [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)
