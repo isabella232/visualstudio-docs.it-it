@@ -9,15 +9,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 523279d70215af90ea070ea8272a5221d9947582
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9c3d745f14185d46dce08d46b8c56391b108627d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524323"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882408"
 ---
 # <a name="setwefprocessid-method"></a>Metodo SetWefProcessId
   Fornisce l'identificatore del processo che eseguirà il contenuto del framework Web Extensions (WEF).
@@ -39,7 +39,7 @@ HRESULT SetWefProcessId(
 ## <a name="return-value"></a>Valore restituito
  Valore HRESULT che indica se il metodo è stato completato correttamente.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo metodo deve essere chiamato dopo la creazione del processo di contenuto WEF, ma prima dell'esecuzione di qualsiasi contenuto di WEF.
 
  Se si vuole che l'ambiente di sviluppo alleghi un debugger al processo di contenuto WEF, l'ambiente deve eseguire questa operazione nell'implementazione di questo metodo.

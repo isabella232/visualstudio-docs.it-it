@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 48da37f7-a237-48a9-9ff9-389c1a00862c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7e9859267cc26ec012852a1150e458c81383dfd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d16eb78cdb6c6b9e665dda8410f46d4cf61ee69a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737714"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882212"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
 Struttura che descrive una matrice di stringhe.
@@ -48,7 +48,7 @@ Numero di stringhe nella `Members` matrice.
 `Members`\
 Matrice di stringhe.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questa struttura viene restituita dal metodo [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) .
 
  [Solo C++] Ogni singola stringa deve essere liberata usando `SysFreeString` e la `Members` matrice deve essere liberata con `CoTaskMemFree` .
@@ -60,6 +60,6 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)

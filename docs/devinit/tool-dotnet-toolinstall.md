@@ -5,18 +5,18 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 343c66a0f1da955479993502cf5dcf967abe03b9
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: ae8f58224e5e4e1d6f8bed7bb810dafe0f0ed54a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440402"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882262"
 ---
 # <a name="dotnet-toolinstall"></a>dotnet-toolinstall
 
@@ -26,7 +26,7 @@ Lo `dotnet-toolinstall` strumento viene usato per installare gli [strumenti di .
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Type   | Obbligatoria | valore                                                                 |
+| Nome                                             | Tipo   | Obbligatoria | valore                                                                 |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                 |
 | [**input**](#input)                              | string | Sì      | Strumento .NET Core da installare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito. |

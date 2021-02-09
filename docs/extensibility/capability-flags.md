@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b80672b00bec95c740824ef7e29f1faba0e63cf4
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 2d626f2390138c7e4e6e2471d285bcda940d7f30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882284"
 ---
 # <a name="capability-flags"></a>Flag funzionalità
 I flag di SCC_CAP_ *xxx* sono flag di bit utilizzati per indicare le funzionalità di un plug-in del controllo del codice sorgente. I flag SCC_EXCAP_ *xxx* sono flag incrementali che indicano le funzionalità estese e vengono risolti in valori integer.
 
-|Codice funzionalità|Valore|Description|
+|Codice funzionalità|Valore|Descrizione|
 |---------------------|-----------|-----------------|
 |`SCC_CAP_REMOVE`|0x00000001L|Supporta [SccRemove](../extensibility/sccremove-function.md) e Command.|
 |`SCC_CAP_RENAME`|0x00000002L|Supporta [SccRename](../extensibility/sccrename-function.md) e Command.|
@@ -52,7 +52,7 @@ I flag di SCC_CAP_ *xxx* sono flag di bit utilizzati per indicare le funzionalit
 
 ## <a name="capability-bits-added-in-version-12"></a>Bit funzionalità aggiunti nella versione 1,2
 
-|Codice funzionalità|Valore|Description|
+|Codice funzionalità|Valore|Descrizione|
 |---------------------|-----------|-----------------|
 |`SCC_CAP_CREATESUBPROJECT`|0x00010000L|Supporta [SccCreateSubProject](../extensibility/scccreatesubproject-function.md).|
 |`SCC_CAP_GETPARENTPROJECT`|0x00020000L|Supporta [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).|
@@ -79,5 +79,5 @@ I flag di SCC_CAP_ *xxx* sono flag di bit utilizzati per indicare le funzionalit
 |`SCC_EXCAP_DELETE_CHECKEDOUT`|10|Consente di eliminare i file estratti.|
 |`SCC_EXCAP_RENAME_CHECKEDOUT`|11|Consente di rinominare i file estratti.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Plug-in del controllo del codice sorgente](../extensibility/source-control-plug-ins.md)
