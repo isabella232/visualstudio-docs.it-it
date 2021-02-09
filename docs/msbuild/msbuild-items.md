@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a28823a1a492cb1e8d5f434f98248fecc5d84e47
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: d4bfc58c9be578514598fce2d447ef921d091177
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904499"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919068"
 ---
 # <a name="msbuild-items"></a>Elementi MSBuild
 
@@ -35,7 +35,7 @@ Gli elementi MSBuild, forniti come input al sistema di compilazione, in genere r
 </ItemGroup>
 ```
 
- L'elemento *file2.cs* non sostituisce l'elemento *file1.cs* ; al contrario, il nome del file viene accodato all'elenco di valori per il `Compile` tipo di elemento.
+ L'elemento *file2.cs* non sostituisce l'elemento *file1.cs*; al contrario, il nome del file viene accodato all'elenco di valori per il `Compile` tipo di elemento.
 
  Il codice XML seguente crea lo stesso tipo di elemento dichiarando entrambi i file in un solo attributo `Include`. Si noti che i nomi file sono separati da punto e virgola.
 
@@ -89,7 +89,7 @@ Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i fil
 
 ## <a name="use-the-exclude-attribute"></a>Usare l'attributo Exclude
 
- Gli elementi Item possono contenere l'attributo `Exclude`, che esclude elementi (file) specifici dal tipo di elemento. L'attributo `Exclude` viene in genere usato con i caratteri jolly. Il codice XML seguente, ad esempio, aggiunge ogni file con estensione *cs* nella directory al tipo di elemento CSFile, ad eccezione del file *DoNotBuild.cs* .
+ Gli elementi Item possono contenere l'attributo `Exclude`, che esclude elementi (file) specifici dal tipo di elemento. L'attributo `Exclude` viene in genere usato con i caratteri jolly. Il codice XML seguente, ad esempio, aggiunge ogni file con estensione *cs* nella directory al tipo di elemento CSFile, ad eccezione del file *DoNotBuild.cs*.
 
 ```xml
 <ItemGroup>
@@ -97,7 +97,7 @@ Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i fil
 </ItemGroup>
 ```
 
- L'attributo `Exclude` interessa solo gli elementi che vengono aggiunti dall'attributo `Include` nell'elemento item che li contiene entrambi. L'esempio seguente non escluderà il file *Form1.cs* , che è stato aggiunto nell'elemento Item precedente.
+ L'attributo `Exclude` interessa solo gli elementi che vengono aggiunti dall'attributo `Include` nell'elemento item che li contiene entrambi. L'esempio seguente non escluderà il file *Form1.cs*, che è stato aggiunto nell'elemento Item precedente.
 
 ```xml
 <Compile Include="*.cs" />
@@ -593,7 +593,7 @@ Item1: notebook
 -->
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)
 - [Elementi di progetto MSBuild comuni](../msbuild/common-msbuild-project-items.md)

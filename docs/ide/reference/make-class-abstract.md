@@ -1,23 +1,23 @@
 ---
-title: Crea classe astratta
+title: Impostare una classe come astratta
 ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8bfcaa7117249ceffbaed706ac420c5250c02089
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 7b44c8331c10bc0cf2f87e19094a77c0cbec251a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93402316"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919424"
 ---
-# <a name="make-class-abstract"></a>Crea classe astratta
+# <a name="make-class-abstract"></a>Impostare una classe come astratta
 
 Questo refactoring si applica a:
 
@@ -39,8 +39,8 @@ Questo refactoring si applica a:
 
 3. Selezionare **make Class ' abstract '**.
 
-    ![Crea classe astratta](media/make-class-abstract.png)
+    ![Impostare una classe come astratta](media/make-class-abstract.png)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)

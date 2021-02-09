@@ -13,15 +13,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], control layout
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbee49a97ab6cb3e6084950e53f30b3cb6ce1b7c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 49739b6011fcf977db84a3350929a56514040975
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848248"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918585"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Procedura: gestire il layout di controllo nei riquadri azioni
   Per impostazione predefinita, un riquadro azioni è ancorato a destra di un documento o di un foglio di foglio. Tuttavia, può essere ancorato a sinistra, in alto o in basso. Se si usano più controlli utente, è possibile scrivere codice per lo stack corretto dei controlli utente nel riquadro azioni. Per altre informazioni, vedere [Cenni preliminari sul riquadro azioni](../vsto/actions-pane-overview.md).
@@ -31,7 +31,7 @@ ms.locfileid: "96848248"
  L'ordine dello stack dei controlli dipende dal fatto che il riquadro azioni sia ancorato verticalmente o orizzontalmente.
 
 > [!NOTE]
-> Se l'utente ridimensiona il riquadro azioni in fase di esecuzione, è possibile impostare i controlli per il ridimensionamento con il riquadro azioni. È possibile usare la proprietà <xref:System.Windows.Forms.Control.Anchor%2A> di un controllo Windows Form per ancorare i controlli al riquadro azioni. Per altre informazioni, vedere [How to: Anchor Controls on Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
+> Se l'utente ridimensiona il riquadro azioni in fase di esecuzione, è possibile impostare i controlli per il ridimensionamento con il riquadro azioni. È possibile usare la proprietà <xref:System.Windows.Forms.Control.Anchor%2A> di un controllo Windows Form per ancorare i controlli al riquadro azioni. Per altre informazioni, vedere [How to: Anchor Controls on Windows Form](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
 
 > [!NOTE]
 > Nomi o percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).

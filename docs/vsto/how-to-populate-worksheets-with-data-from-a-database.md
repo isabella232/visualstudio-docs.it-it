@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: popolare fogli di dati da un database'
-description: Informazioni su come usare i dati di un oggetto nella soluzione e su come usare Windows Forms controlli per visualizzare i dati in un foglio di lavoro.
+description: Informazioni su come usare i dati di un oggetto nella soluzione e su come usare Windows Form controlli per visualizzare i dati in un foglio di lavoro.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4252eac32540ac2d0b6e763b5b6e9cf0e2ac7055
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 66f37a1639cb6a86f107d9372704d5c8364c6a18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918561"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Procedura: popolare fogli di dati da un database
 
-È possibile accedere ai dati nei progetti di Office a livello di documento nello stesso modo in cui si accede ai dati nei progetti Windows Forms. Per inserire i dati nella soluzione si possono usare gli stessi strumenti e lo stesso codice e per visualizzarli è possibile persino usare i controlli Windows Form. Inoltre, è possibile sfruttare i controlli denominati controlli host, ovvero oggetti nativi in Microsoft Office Excel che sono stati migliorati con eventi e funzionalità di data binding. Per altre informazioni, vedere [Cenni preliminari sugli elementi host e sui controlli host](../vsto/host-items-and-host-controls-overview.md).
+È possibile accedere ai dati nei progetti di Office a livello di documento nello stesso modo in cui si accede ai dati nei progetti Windows Form. Per inserire i dati nella soluzione si possono usare gli stessi strumenti e lo stesso codice e per visualizzarli è possibile persino usare i controlli Windows Form. Inoltre, è possibile sfruttare i controlli denominati controlli host, ovvero oggetti nativi in Microsoft Office Excel che sono stati migliorati con eventi e funzionalità di data binding. Per altre informazioni, vedere [Cenni preliminari sugli elementi host e sui controlli host](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 

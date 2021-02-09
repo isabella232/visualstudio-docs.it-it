@@ -33,15 +33,15 @@ helpviewer_keywords:
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 538b6c0dc3a163936e04a85b374a239d43e46e8e
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 20f8afa9dc9946644b935c34b98616d96a5fa875
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136810"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918316"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione
 
@@ -97,7 +97,7 @@ Inserisce nella casella di modifica della riga di comando la macro selezionata n
 |`$(TargetFileName)`|Nome file del file di output principale per la build (definito come nome di base ed estensione di file).|
 |`$(TargetExt)`|Estensione di file del file di output principale per la compilazione. È incluso il punto '.' prima dell'estensione.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Specifica di eventi di compilazione personalizzati in Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [Pagina Eventi di compilazione, Progettazione progetti (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)

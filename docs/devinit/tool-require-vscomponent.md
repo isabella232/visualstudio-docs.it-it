@@ -5,18 +5,18 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 4a4725ac0757f43830741afd5aefd540633f05af
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 0b58e80a03828bf486e6beb4d0014f6fe2267485
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442277"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918357"
 ---
 # <a name="require-vscomponent"></a>require-vscomponent
 
@@ -26,7 +26,7 @@ Lo `require-vscomponent` strumento viene usato per importare le configurazioni d
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                     | Type   | Obbligatoria | valore                                                                |
+| Nome                                     | Tipo   | Obbligatoria | valore                                                                |
 |------------------------------------------|--------|----------|----------------------------------------------------------------------|
 | **Commenti**                             | stringa | No       | Proprietà commenti facoltativi. Non usato.                                |
 | [**input**](#input)                      | stringa | No       | Percorso completo dell'oggetto `.vsconfig` . Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito. |

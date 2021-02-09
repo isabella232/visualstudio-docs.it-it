@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language, image shape
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 50785a4f37b4f3e9e6eaae1bb2a58dcf206af672
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 8bbd2fff30ab59d14c8aa2762d8cca942063bd79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361914"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918355"
 ---
 # <a name="properties-of-image-shapes"></a>Proprietà delle forme d'immagine
 
@@ -47,7 +47,7 @@ Le forme immagine hanno le proprietà elencate nella tabella seguente.
 
 |Proprietà|Descrizione|Predefinito|
 |-|-|-|
-|Colore riempimento|Colore di riempimento di questa forma.|bianco|
+|Colore riempimento|Colore di riempimento di questa forma.|White|
 |Modalità gradiente riempimento|Modalità di sfumatura riempimento di questa forma.|Ridimensionamento orizzontale|
 |Con punti di connessione predefiniti|Se `True` , la forma utilizzerà i punti di connessione superiore, inferiore, sinistro e destro nella finestra di progettazione generata.|Falso|
 |Colore del contorno|Colore del contorno di questa forma.|Nero|
@@ -67,7 +67,7 @@ Le forme immagine hanno le proprietà elencate nella tabella seguente.
 |Altezza iniziale|Altezza iniziale di questa forma, in pollici.|1|
 |Larghezza iniziale|Larghezza iniziale di questa forma, in pollici.|1.5|
 |Colore riempimento esposto come proprietà<br /><br /> Modalità di sfumatura riempimento esposta<br /><br /> Colore struttura esposto come proprietà<br /><br /> Stile tratteggiato del contorno esposto come proprietà<br /><br /> Spessore del contorno esposto come proprietà<br /><br /> Espone il colore del testo|Se `True` , l'utente può impostare la proprietà dichiarata di una forma. Per impostare questa impostazione, fare clic con il pulsante destro del mouse sulla definizione della forma e scegliere **Aggiungi esposti**.|Falso|
-|Description|Utilizzato per documentare la finestra di progettazione generata.|\<none>|
+|Descrizione|Utilizzato per documentare la finestra di progettazione generata.|\<none>|
 |Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per questa forma.|\<none>|
 |Testo della descrizione comando fisso|Testo utilizzato per una descrizione comando fissa.|\<none>|
 |Parola chiave della Guida|Parola chiave utilizzata per indicizzare la Guida sensibile al contesto per questo elemento.|\<none>|

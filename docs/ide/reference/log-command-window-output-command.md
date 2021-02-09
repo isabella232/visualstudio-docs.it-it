@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d4ecec35-5af4-4954-8d60-2cd24583fbb4
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cab4f102832e8dfa6ce51b61abed8e3bfd672c40
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 36f0ece9ed1e29c414fbb6bf6e5f7ab2fa514734
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305276"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919404"
 ---
 # <a name="log-command-window-output-command"></a>Comando Registra output finestra di comando
 
@@ -55,7 +55,7 @@ facoltativo. Se il file specificato nell'argomento `filename` corrisponde a un f
 
 Se non viene specificato alcun file, viene creato per impostazione predefinita il file cmdline.log. Per impostazione predefinita, l'alias per questo comando è Log.
 
-## <a name="examples"></a>Esempi
+## <a name="examples"></a>Esempio
 
 In questo esempio viene creato un nuovo file di log, cmdlog, e viene avviata la registrazione dei comandi.
 
@@ -75,7 +75,7 @@ Questo esempio consente di riprendere la registrazione dei comandi nel file di l
 >Tools.LogCommandWindowOutput /on
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Comandi di Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Finestra di comando](../../ide/reference/command-window.md)

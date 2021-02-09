@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac5810fa3bdd6d479c1df4c484960fd923b0ed59
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1e409ba89a9ca472f0025ddcf81383ed83641db5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918366"
 ---
 # <a name="product-and-package-schema-reference"></a>Riferimenti dello schema di prodotti e package
 Un *file di prodotto* è un manifesto XML che descrive tutte le dipendenze esterne richieste da un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione. Tra gli esempi di dipendenze esterne sono inclusi il .NET Framework e Microsoft Data Access Components (MDAC). Un file di pacchetto è simile a un file di prodotto, ma viene utilizzato per installare i componenti dipendenti dalle impostazioni cultura di una dipendenza, ad esempio gli assembly localizzati, i contratti di licenza e la documentazione.
@@ -50,7 +50,7 @@ Un *file di prodotto* è un manifesto XML che descrive tutte le dipendenze ester
 |[\<Strings> Elemento](../deployment/strings-element-bootstrapper.md)|Elemento obbligatorio. Archivia le versioni localizzate del nome del prodotto e delle stringhe di errore.|nessuno|
 
 ## <a name="remarks"></a>Osservazioni
- Lo schema del pacchetto viene utilizzato da *Setup.exe* , un programma stub generato dall'attività di bootstrap di compilazione di Microsoft che contiene una logica di codice hardcoded. Lo schema guida ogni aspetto del processo di installazione.
+ Lo schema del pacchetto viene utilizzato da *Setup.exe*, un programma stub generato dall'attività di bootstrap di compilazione di Microsoft che contiene una logica di codice hardcoded. Lo schema guida ogni aspetto del processo di installazione.
 
  `InstallChecks` i test che setup.exe devono essere eseguiti per l'esistenza di un pacchetto specifico. `PackageFiles` Elenca tutti i pacchetti che il processo di installazione potrebbe dover installare, in caso di esito negativo di un test specifico. Ogni voce di comando sotto comandi esegue uno dei test descritti da `InstallChecks` e specifica quale `PackageFile` eseguire in caso di esito negativo del test. È possibile utilizzare l' `Strings` elemento per localizzare i nomi dei prodotti e i messaggi di errore, in modo che sia possibile utilizzare un unico file binario di installazione per installare l'applicazione per un numero qualsiasi di lingue.
 
@@ -159,6 +159,6 @@ Un *file di prodotto* è un manifesto XML che descrive tutte le dipendenze ester
 </Product>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md)
 - [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)

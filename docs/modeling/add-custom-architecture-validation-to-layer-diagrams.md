@@ -8,16 +8,16 @@ helpviewer_keywords:
 - dependency diagrams, adding custom validation
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: ea168744427469d1d08dd78bc1a23d79d577604f
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: bd5f17e7e8c12da1d4e01738c26650a3df4760fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100526"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919313"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Aggiungere strumenti di convalida dell'architettura personalizzati ai diagrammi delle dipendenze
 
@@ -35,7 +35,7 @@ Quando l'utente seleziona il comando **convalida architettura** in un diagramma 
 
 ## <a name="requirements"></a>Requisiti
 
-Vedere [Requisiti](../modeling/extend-layer-diagrams.md#requirements).
+Vedere i [requisiti](../modeling/extend-layer-diagrams.md#requirements).
 
 ## <a name="defining-a-layer-validator-in-a-new-vsix"></a>Definizione di un validator dei livelli in un nuovo progetto VSIX
 
@@ -82,9 +82,9 @@ Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e 
 
 2. Trovare o creare un **progetto VSIX** nella soluzione. Un progetto VSIX contiene un file denominato **source.extension.vsixmanifest**.
 
-3. In **Esplora soluzioni**fare clic sul menu di scelta rapida del progetto VSIX e scegliere **Imposta come progetto di avvio**.
+3. In **Esplora soluzioni** fare clic sul menu di scelta rapida del progetto VSIX e scegliere **Imposta come progetto di avvio**.
 
-4. In **source.extension.vsixmanifest**aggiungere il progetto di convalida dei livelli come componente MEF in **Asset**.
+4. In **source.extension.vsixmanifest** aggiungere il progetto di convalida dei livelli come componente MEF in **Asset**.
 
     1. Scegliere **Nuovo**.
 
@@ -221,7 +221,7 @@ La convalida viene eseguita in un processo separato. Di conseguenza, i punti di 
 
 Per connettere il debugger al processo di convalida, inserire una chiamata a `System.Diagnostics.Debugger.Launch()` all'avvio del metodo di convalida. Quando viene visualizzata la finestra di dialogo debug, selezionare l'istanza principale di Visual Studio.
 
-In alternativa, è possibile inserire una chiamata a `System.Windows.Forms.MessageBox.Show()`. Quando viene visualizzata la finestra di messaggio, passare all'istanza principale di Visual Studio e scegliere **Connetti a processo**dal menu **debug** . Selezionare il processo denominato **Graphcmd.exe**.
+In alternativa, è possibile inserire una chiamata a `System.Windows.Forms.MessageBox.Show()`. Quando viene visualizzata la finestra di messaggio, passare all'istanza principale di Visual Studio e scegliere **Connetti a processo** dal menu **debug** . Selezionare il processo denominato **Graphcmd.exe**.
 
 Avviare sempre l'istanza sperimentale premendo CTRL+F5 (**Avvia senza eseguire debug**).
 
@@ -290,6 +290,6 @@ namespace Validator3
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Estendere i diagrammi delle dipendenze](../modeling/extend-layer-diagrams.md)
