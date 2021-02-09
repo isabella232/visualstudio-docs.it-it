@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c4de1866-7447-48f7-aa88-28ad92c0b930
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe168f34baf65b00eab59e94afb30e07dfe89b50
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: cb1a33b1456e44b745b3b8992c0233634368952b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149079"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903498"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Scheda Spazio, finestra di dialogo Proprietà processo
 Utilizzare la scheda **spazio** per esaminare lo spazio degli indirizzi di un processo. Per visualizzare la finestra di [dialogo Proprietà processo](../debugger/process-properties-dialog-box.md), spostare lo stato attivo in una finestra [visualizzazione processi](../debugger/processes-view.md) . Selezionare un nodo di processo nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .

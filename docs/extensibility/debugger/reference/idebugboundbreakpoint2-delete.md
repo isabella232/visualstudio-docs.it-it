@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 7088dc66-f24a-446f-a52a-397d02457a41
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a480a97c14b568565fee9b1b82d672db11f4ebab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 035ff9fc40a952319efe85c8d42a8f6544afff13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735652"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901876"
 ---
 # <a name="idebugboundbreakpoint2delete"></a>IDebugBoundBreakpoint2::Delete
 Elimina il punto di interruzione.
@@ -29,8 +29,8 @@ Elimina il punto di interruzione.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT Delete( 
-    void 
+HRESULT Delete( 
+    void 
 );
 ```
 
@@ -68,6 +68,6 @@ HRESULT CBoundBreakpoint::Delete(void)
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

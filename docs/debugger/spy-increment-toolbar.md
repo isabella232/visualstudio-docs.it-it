@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 949c18fb-bb25-42ed-9130-c4a47869f24d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dc2564a69c291055d53e358c084e7dd9c4d0506
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: af6db0f367c73804197ef35d0b3734d68f15a332
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148195"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903535"
 ---
 # <a name="spy-toolbar"></a>Barra degli strumenti di Spy++
 La barra degli strumenti viene visualizzata sotto la barra dei menu in Spy + +. Per visualizzare o nascondere la barra degli strumenti, scegliere **barra degli** strumenti dal menu **Visualizza** .
@@ -43,7 +43,7 @@ La barra degli strumenti viene visualizzata sotto la barra dei menu in Spy + +. 
 |![Pulsante Esplora proprietà di Spy&#43;&#43; ](../debugger/media/icon_spy--_propexp.gif "Icon_Spy + + _PropExp")|Consente di visualizzare le proprietà della finestra selezionata nella visualizzazione Windows.|
 |![Pulsante di aggiornamento Spy&#43;&#43; ](../debugger/media/icon_spy--_refresh.gif "Icon_Spy + + _Refresh")|Aggiorna le visualizzazioni di sistema.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Utilizzo di Spy++](../debugger/using-spy-increment.md)
 - [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)
 - [Riferimenti per Spy++](../debugger/spy-increment-reference.md)

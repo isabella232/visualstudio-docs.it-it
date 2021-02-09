@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f7a2e7c8-3b9f-4f8e-a6a8-000d72e3811d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c37868558ec483b85b4480ba85a1eaa5fe23beb
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 94e95917e65f8b455fe6ff27a7d7c57843172827
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902216"
 ---
 # <a name="the-visual-studio-image-library"></a>Libreria di immagini di Visual Studio
 
@@ -33,7 +33,7 @@ La libreria di immagini di Visual Studio contiene le immagini dell'applicazione 
 
 La libreria di immagini è suddivisa in cinque categorie: Elementi comuni, Azioni, Annotazioni, Icone e Oggetti. I file readme vengono inclusi in formato PDF per i tipi Elementi comuni e Icone. I file contengono informazioni su come utilizzare le immagini in maniera appropriata all'interno delle applicazioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Installa Visual Studio](../install/install-visual-studio.md)
 - [Immagini, bitmap e metafile](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)

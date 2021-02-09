@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59ad41bda80337fd0adc65d4792adbbbb1cf38f1
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5e90b12b12589fff89f4df1241eb73504e8bdb74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328600"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903138"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Creare istanze di progetto tramite Project Factory
 I tipi di progetto in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usano una *Factory di progetto* per creare istanze di oggetti progetto. Una factory del progetto è simile a una class factory standard per oggetti COM cocreabili. Tuttavia, gli oggetti di progetto non sono cocreabili; possono essere creati solo tramite una factory del progetto.

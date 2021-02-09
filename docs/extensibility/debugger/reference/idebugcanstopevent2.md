@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0a3710756f02d7c622be94bab6c3056fb051827
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87306e1373d746479ce59c96b6625fa41ef119fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734519"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903243"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 Questa interfaccia viene utilizzata per richiedere alla gestione del debug della sessione (SDM) se arrestare in corrispondenza della posizione del codice corrente.
@@ -46,7 +46,7 @@ IDebugCanStopEvent2 : IUknown
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|Ottiene il contesto del documento che descrive la posizione di questo evento.|
 |[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|Ottiene il contesto del codice che descrive la posizione di questo evento.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il DE Invia questa interfaccia se l'utente passa a una funzione e la DE non trova informazioni di debug o se sono presenti informazioni di debug, ma non sa se il codice sorgente può essere visualizzato per tale percorso.
 
 ## <a name="requirements"></a>Requisiti
@@ -56,6 +56,6 @@ IDebugCanStopEvent2 : IUknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugStepCompleteEvent2](../../../extensibility/debugger/reference/idebugstepcompleteevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

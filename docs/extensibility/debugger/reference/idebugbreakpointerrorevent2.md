@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adee79df-8db5-4510-a7df-c50f4dbf5e35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09cb93f0f16420e56104f371d9caab262873390f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 033c997f3bd1038c2103a6c0ef3ad9ddbd74c249
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735050"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901860"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 Questa interfaccia indica al gestore di debug della sessione (SDM) che non è stato possibile associare un punto di interruzione in sospeso a un programma caricato, a causa di un avviso o di un errore.
@@ -41,7 +41,7 @@ IDebugBreakpointErrorEvent2 : IUnknown
 |------------|-----------------|
 |[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|Ottiene l'interfaccia [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) che descrive l'avviso o l'errore.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Ogni volta che viene associato un punto di interruzione, viene inviato un evento all'SDM. Se non è possibile associare il punto di interruzione, `IDebugBreakpointErrorEvent2` viene inviato un oggetto; in caso contrario, viene inviato un [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) .
 
  Ad esempio, quando la condizione associata al punto di interruzione in sospeso non riesce ad analizzare o valutare, viene inviato un avviso che attualmente non è possibile associare al punto di interruzione in sospeso. Questo problema può verificarsi se il codice per il punto di interruzione non è ancora stato caricato.
@@ -53,7 +53,7 @@ IDebugBreakpointErrorEvent2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 10430c6eba57c97dd46a706d0ec2f532cd08d4f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43d24d38fcb9ba07d4cc8c58d7b544256171b049
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801165"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902377"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Come vengono usati i percorsi di ricerca di Python Visual Studio
 
@@ -29,7 +29,7 @@ Visual Studio ignora tuttavia la variabile di ambiente del percorso di ricerca, 
 
 Visual Studio consente quindi di specificare direttamente i percorsi di ricerca sia negli ambienti che nei progetti. Il codice eseguito o sottoposto a debug in Visual Studio riceve i percorsi di ricerca nel valore di `PYTHONPATH` (e altre variabili equivalenti). Quando si aggiungono percorsi di ricerca, Visual Studio controlla le librerie in questi percorsi e crea i database di IntelliSense corrispondenti all'occorrenza (Visual Studio 2017 versione 15.5 e precedenti; la creazione dei database potrebbe richiedere tempo a seconda del numero di librerie).
 
-Per aggiungere un percorso di ricerca, passare a **Esplora soluzioni**, espandere il nodo del progetto, fare clic con il pulsante destro del mouse su **percorsi di ricerca**e selezionare **Aggiungi cartella al percorso di ricerca**:
+Per aggiungere un percorso di ricerca, passare a **Esplora soluzioni**, espandere il nodo del progetto, fare clic con il pulsante destro del mouse su **percorsi di ricerca** e selezionare **Aggiungi cartella al percorso di ricerca**:
 
 ::: moniker range="vs-2017"
 ![Comando Aggiungi cartella al percorso di ricerca in Percorsi di ricerca di Esplora soluzioni](media/search-paths-command.png)
@@ -46,7 +46,7 @@ Dopo aver aggiunto le cartelle ai percorsi di ricerca, Visual Studio usa tali pe
 
 È possibile aggiungere come percorsi di ricerca i file con estensione *zip* o *egg*, selezionando il comando **Aggiungi archivio ZIP al percorso di ricerca**. Come con le cartelle, il contenuto di questi file viene analizzato e reso disponibile per IntelliSense.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Gestire ambienti Python in Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Selezionare un interprete per un progetto](selecting-a-python-environment-for-a-project.md)

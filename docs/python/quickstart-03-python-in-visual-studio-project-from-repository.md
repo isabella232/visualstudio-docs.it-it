@@ -5,17 +5,17 @@ ms.date: 12/06/2018
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5d0363626748588b6f4058e197f0d6796ece51ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55db74b2b2882aac12ac1587c4e972e31f7dfe10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64543148"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902397"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Guida introduttiva: Clonare un repository di codice Python in Visual Studio
 
@@ -80,7 +80,7 @@ Dopo aver [installato il supporto di Python in Visual Studio](installing-python-
 > [!div class="nextstepaction"]
 > [Esercitazione: Usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Identificare manualmente un interprete Python esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
 - [Come installare il supporto di Python in Visual Studio in Windows](installing-python-support-in-visual-studio.md)

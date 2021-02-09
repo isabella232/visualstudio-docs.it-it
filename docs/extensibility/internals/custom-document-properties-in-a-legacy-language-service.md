@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5fa24f3d052ab9122776967607b2c197fb102bf
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 7a9bd5b41d1c04e52d16ecb2fc327e648d9f81aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902993"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Proprietà personalizzate del documento in un servizio di linguaggio legacy
 Le proprietà del documento possono essere visualizzate nella [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] finestra **Proprietà** . I linguaggi di programmazione non dispongono in genere di proprietà associate a singoli file di origine. Tuttavia, XML supporta le proprietà del documento che interessano la codifica, lo schema e il foglio di stile.

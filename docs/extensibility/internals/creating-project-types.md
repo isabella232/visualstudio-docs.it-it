@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4038a122c6d2ec5f6ed29df6e529b2bff2e2bb71
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 26e616ac9862f6a077115c23bef426a94ab3ecbf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903038"
 ---
 # <a name="create-project-types"></a>Creazione di tipi di progetto
 È possibile estendere creando [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] un nuovo tipo di progetto. Per creare un nuovo tipo di progetto, è necessario comprendere alcuni concetti e completare una serie di passaggi. Negli argomenti seguenti viene fornita una panoramica su come creare i tipi di progetto.

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cacf8db933c7d56d44351da11b7b310bc0bdb8aa
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 1c38abc09b0d5c8996cde44d33f4778a54a0cd62
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329885"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902960"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Posizionamento predefinito di comandi, gruppi e barre degli strumenti
 Per uniformità e stabilità del prodotto, l'interfaccia utente visualizza determinati gruppi di comandi per impostazione predefinita e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce le definizioni per i comandi e i gruppi di comandi. I pacchetti VSPackage possono anche usare i comandi e i gruppi di comandi standard.

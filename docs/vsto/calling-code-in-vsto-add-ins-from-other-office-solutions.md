@@ -16,15 +16,15 @@ helpviewer_keywords:
 - calling code from VBA
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fad3f107487e4736ccd0a6aa59ea5a801b5f72e5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: deb8fec9212c686bce670df6bab23ed56e51741f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903798"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Chiamata di codice nei componenti aggiuntivi VSTO da altre soluzioni Office
   È possibile esporre un oggetto del componente aggiuntivo VSTO in altre soluzioni, ad esempio in altre soluzioni Microsoft Office. Questa funzionalità è utile se il componente aggiuntivo VSTO fornisce un servizio che si vuole usare anche in altre soluzioni. Ad esempio, se si dispone di un componente aggiuntivo VSTO per Microsoft Office Excel che esegue calcoli sui dati finanziari da un servizio Web, altre soluzioni possono eseguire questi calcoli chiamando il componente aggiuntivo VSTO di Excel in fase di esecuzione.

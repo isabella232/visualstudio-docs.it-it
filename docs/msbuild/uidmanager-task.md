@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 4fc7b5a5-11b0-46ca-9656-8c2a0b08d1fe
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 852b910de742676e1fe7dd0c85129640eb37a9ae
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 6287abee811d406ef7aafa5ce3cc3dc62624b0d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902617"
 ---
 # <a name="uidmanager-task"></a>Attività UidManager
 
@@ -38,7 +38,7 @@ L' <xref:Microsoft.Build.Tasks.Windows.UidManager> attività controlla, aggiorna
 |-------------------------| - |
 | `IntermediateDirectory` | Parametro **stringa** facoltativo.<br /><br /> Specifica la directory utilizzata per eseguire il backup dei file XAML di origine specificati dal parametro **MarkupFiles** . |
 | `MarkupFiles` | Parametro **ITaskItem[]** obbligatorio.<br /><br /> Specifica i file XAML di origine da includere per il controllo, l'aggiornamento o la rimozione degli UID. |
-| `Task` | Parametro **String** obbligatorio.<br /><br /> Specifica l'attività di gestione degli UID da eseguire. Le opzioni valide sono **Check** , **Update** o **Remove** . |
+| `Task` | Parametro **String** obbligatorio.<br /><br /> Specifica l'attività di gestione degli UID da eseguire. Le opzioni valide sono **Check**, **Update** o **Remove**. |
 
 ## <a name="example"></a>Esempio
 

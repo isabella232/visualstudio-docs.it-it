@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: aee34a14-4f9c-4ad3-845f-c96ee938cefd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1aaa25e719f17701344d821759a0dac06aa88698
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d39b7f1120f2ee4d0548e2c8a0b9a75f2fe0bd56
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718533"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901609"
 ---
 # <a name="idebugthreadcreateevent2"></a>IDebugThreadCreateEvent2
 Questa interfaccia viene inviata dal motore di debug (DE) al gestore di debug della sessione (SDM) quando viene creato un thread in un programma di cui è in corso il debug.
@@ -25,7 +25,7 @@ Questa interfaccia viene inviata dal motore di debug (DE) al gestore di debug de
 ## <a name="syntax"></a>Sintassi
 
 ```
-IDebugThreadCreateEvent2 : IUnknown
+IDebugThreadCreateEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
@@ -41,7 +41,7 @@ IDebugThreadCreateEvent2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

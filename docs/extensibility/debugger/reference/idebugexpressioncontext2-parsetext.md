@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f58575db-f926-4ac8-83ff-7b3b86ab61e2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a8494c9c90c4cb6e94115c542a25e12e948f7064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc55cceb8db392d590ff414ac3df5b807d1e52e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729656"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901649"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 Analizza un'espressione in formato testo per una valutazione successiva.
@@ -71,7 +71,7 @@ out Restituisce l'indice dei caratteri dell'errore in `pszCode` se l'espressione
 ## <a name="return-value"></a>Valore restituito
 In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Quando viene chiamato questo metodo, un motore di debug (DE) deve analizzare l'espressione e convalidarla per verificarne la correttezza. `pbstrError` `pichError` Se l'espressione non è valida, è possibile compilare i parametri e.
 
 Si noti che l'espressione non viene valutata, solo analizzata. Una chiamata successiva ai metodi [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) o [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) valuta l'espressione analizzata.
@@ -125,7 +125,7 @@ HRESULT CEnvBlock::ParseText(
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)
 - [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)

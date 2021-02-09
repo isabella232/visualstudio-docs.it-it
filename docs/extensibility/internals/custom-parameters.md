@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2fd2ba746f10094a79f1b37e57ba4ca90ff117b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 1b4927e63bec93fbe7b6730e131a0893372aa70d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328444"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902969"
 ---
 # <a name="custom-parameters"></a>Parametri personalizzati
 I parametri personalizzati controllano l'operazione di una procedura guidata dopo l'avvio di una procedura guidata. Un file con *estensione vsz* correlato fornisce una matrice di parametri definiti dall'utente che vengono inseriti in un pacchetto dall'Integrated Development Environment (IDE) e passati alla procedura guidata come una matrice di stringhe quando viene avviata la procedura guidata. La procedura guidata analizza quindi la matrice di stringhe e usa le informazioni per controllare l'effettivo funzionamento della procedura guidata. In questo modo, una procedura guidata può personalizzare le funzionalità in base al contenuto del file con *estensione vsz* .

@@ -5,17 +5,17 @@ ms.date: 02/25/2019
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6868b4c581674c8015d30bf81f64f2ab24ea2ee0
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 4c8a3727faa01b69962dd3dc456ac7b704f62882
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902436"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Guida introduttiva: Creare un progetto da un modello di Cookiecutter
 
@@ -46,7 +46,7 @@ Dopo aver [installato il supporto di Python in Visual Studio](installing-python-
 > [!div class="nextstepaction"]
 > [Esercitazione: Usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Usare l'estensione Cookiecutter](using-python-cookiecutter-templates.md)
 - [Identificare manualmente un interprete Python esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

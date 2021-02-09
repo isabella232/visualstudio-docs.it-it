@@ -22,15 +22,15 @@ no-loc:
 ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f73f2f56a4e60d0030d897d64662ad438027d41
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 7fb7b7625e8e08e291f4f27606d03f9066828e0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205515"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903485"
 ---
 # <a name="select-code-type-dialog-box"></a>Finestra di dialogo Seleziona tipo di codice
 
@@ -61,6 +61,6 @@ Per visualizzare questa finestra di dialogo, aprire la finestra di dialogo **Con
 
 Per la maggior parte degli scenari, non è supportato il fissaggio di più debugger nella stessa sessione di debug. Questa operazione può essere eseguita usando una seconda istanza di Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Connettersi a processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

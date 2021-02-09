@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 830e3e45-9a93-4279-a249-75b84599aefb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 98c3ba64454ca25b62dc5dbe0964db64b010a7ec
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7b4e6f14eb5ba771ff83b0aa5fedc8ae261ca69d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046988"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902626"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Risolvere i problemi relativi agli errori di impostazione di .NET Framework come destinazione
 
@@ -38,7 +38,7 @@ Questo argomento illustra gli errori di MSBuild che possono verificarsi a causa 
 
  Se si modifica la versione di destinazione di .NET Framework per l'applicazione, Visual Studio modifica alcuni dei riferimenti. Può tuttavia essere necessario aggiornarne altri in modo manuale. È possibile, ad esempio, che si verifichi uno degli errori indicati in precedenza se si modifica un'applicazione destinata a .NET Framework 3,5 Service Pack 1 e l'applicazione dispone di risorse o impostazioni basate sul profilo client per la .NET Framework 4.
 
- Per ovviare alle impostazioni, aprire **Esplora soluzioni** , scegliere **Mostra tutti i file** e quindi modificare il file *app.config* nell'editor XML di Visual Studio. Nelle impostazioni modificare la versione in modo che corrisponda alle versione corretta di .NET Framework. È ad esempio possibile modificare l'impostazione della versione da 4.0.0.0 a 2.0.0.0. Analogamente, per un'applicazione che ha aggiunto risorse, aprire **Esplora soluzioni** , scegliere il pulsante **Mostra tutti i file** , espandere **Progetti** (Visual Basic) o **Proprietà** (C#) e quindi modificare il file *Resources.resx* nell'editor XML di Visual Studio. Modificare l'impostazione della versione da 4.0.0.0 a 2.0.0.0.
+ Per ovviare alle impostazioni, aprire **Esplora soluzioni**, scegliere **Mostra tutti i file** e quindi modificare il file *app.config* nell'editor XML di Visual Studio. Nelle impostazioni modificare la versione in modo che corrisponda alle versione corretta di .NET Framework. È ad esempio possibile modificare l'impostazione della versione da 4.0.0.0 a 2.0.0.0. Analogamente, per un'applicazione che ha aggiunto risorse, aprire **Esplora soluzioni**, scegliere il pulsante **Mostra tutti i file**, espandere **Progetti** (Visual Basic) o **Proprietà** (C#) e quindi modificare il file *Resources.resx* nell'editor XML di Visual Studio. Modificare l'impostazione della versione da 4.0.0.0 a 2.0.0.0.
 
  Se l'applicazione dispone di risorse, come icone o bitmap, o di impostazioni, come stringhe di connessione dati, per correggere l'errore è anche possibile rimuovere tutti gli elementi nella pagina **Impostazioni** di **Creazione progetti** e quindi aggiungere di nuovo le impostazioni necessarie.
 

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3a793e3d7233eb1b6d0aaaa74fbe16d52cf6f43
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 74e31cb8fddb00e8a6771a6ad3065bce57cc8bc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974324"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902244"
 ---
 # <a name="create-a-software-development-kit"></a>Creare una Software Development Kit
 
@@ -52,7 +52,7 @@ Gli SDK della piattaforma hanno il seguente layout:
                         \[arch]
 ```
 
-| Nodo | Description |
+| Nodo | Descrizione |
 |------------------------| - |
 | Cartella *riferimenti* | Contiene file binari che contengono API che possono essere codificate in base a. Possono includere file o assembly di metadati Windows (WinMD). |
 | Cartella *DesignTime* | Contiene i file necessari solo in fase di pre-esecuzione/debug. Questi possono includere documenti XML, librerie, intestazioni, binari della fase di progettazione della casella degli strumenti, elementi MSBuild e così via<br /><br /> I documenti XML dovrebbero, idealmente, essere posizionati nella cartella *\DesignTime* , ma i documenti XML per i riferimenti continueranno a essere inseriti insieme al file di riferimento in Visual Studio. Ad esempio, il documento XML per un riferimento <em>\References \\ [config] \\ [Arch] \sample.dll</em> sarà *\References \\ [config] \\ [Arch] \sample.xml* e la versione localizzata del documento sarà *\References \\ [config] \\ [Arch] \\ [locale] \sample.xml*. |
@@ -269,7 +269,7 @@ L'elemento **ToolBoxItems** dello schema *SDKManifest.xml* specifica la categori
     </File>
     ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura dettagliata: creare un SDK con C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [Procedura dettagliata: creare un SDK usando C# o Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)

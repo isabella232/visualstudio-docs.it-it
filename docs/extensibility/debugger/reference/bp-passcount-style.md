@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1633c5e9aa6ff251fedce83a0243664cd9e0e0a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0148a92ee37a4f9885c9c12a5076ff966051d20b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737924"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902115"
 ---
 # <a name="bp_passcount_style"></a>BP_PASSCOUNT_STYLE
 Specifica la condizione associata al numero di passaggi del punto di interruzione che determina l'attivazione del punto di interruzione.
@@ -59,7 +59,7 @@ Imposta lo stile del conteggio pass per il punto di interruzione su uguale o mag
 `BP_PASSCOUNT_MOD`\
 Specifica un numero di passaggi modulo. Se, ad esempio, il numero di passaggi è del tipo `BP_PASSCOUNT_MOD` e il valore del numero di passaggi è 4, il punto di interruzione viene attivato ogni volta che il numero di passaggi è un multiplo di 4.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Utilizzato per il `stylePassCount` membro della struttura [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) che è a sua volta un membro delle strutture [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
 ## <a name="requirements"></a>Requisiti
@@ -69,7 +69,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)

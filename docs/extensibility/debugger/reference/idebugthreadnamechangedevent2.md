@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 34c1652e-f019-48ba-8b26-ace20f8a158c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e218fc2ed99e0f180421aede1fc3aa212dcfa993
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdb65d73db0e506e5cba89834c0c7e90fdf6e8f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718463"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901574"
 ---
 # <a name="idebugthreadnamechangedevent2"></a>IDebugThreadNameChangedEvent2
 Questa interfaccia viene inviata dal motore di debug (DE) al gestore di debug della sessione (SDM) quando un nome di thread viene modificato nel programma di cui è in corso il debug.
@@ -25,7 +25,7 @@ Questa interfaccia viene inviata dal motore di debug (DE) al gestore di debug de
 ## <a name="syntax"></a>Sintassi
 
 ```
-IDebugThreadNameChangedEvent2 : IUnknown
+IDebugThreadNameChangedEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Note per gli implementatori
@@ -41,7 +41,7 @@ IDebugThreadNameChangedEvent2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
