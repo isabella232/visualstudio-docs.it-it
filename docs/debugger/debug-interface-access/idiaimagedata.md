@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b696f350-fc08-4352-9287-a15e87512c1e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 39bc89e9b41f4d1c384476e673d116cb1cd08159
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab2b27ac07cab49834d3f2364ab3b77fd162ced5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467134"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855830"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 Espone i dettagli della posizione di base e degli offset della memoria del modulo o dell'immagine.
@@ -25,7 +25,7 @@ Espone i dettagli della posizione di base e degli offset della memoria del modul
 ## <a name="syntax"></a>Sintassi
 
 ```
-IDiaImageData : IUnknown
+IDiaImageData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
@@ -37,7 +37,7 @@ La tabella seguente illustra i metodi di `IDiaImageData` .
 |[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Recupera il percorso nella memoria virtuale dell'immagine.|
 |[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Recupera la posizione di memoria in cui deve essere basata l'immagine.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Alcuni flussi di debug (XDATA, PDATA) contengono copie dei dati archiviati anche nell'immagine. È possibile eseguire query su questi oggetti dati di flusso per l' `IDiaImageData` interfaccia. Per informazioni dettagliate, vedere la sezione "note per i chiamanti" in questo argomento.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
@@ -117,6 +117,6 @@ Libreria: diaguids. lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

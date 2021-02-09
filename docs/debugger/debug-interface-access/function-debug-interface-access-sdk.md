@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 458dc91c-b78b-4427-84f4-615d89e26760
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c35ce4a58978cd14e274dd2b49c2bbc1bab4844
-ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
+ms.openlocfilehash: a294444cf03760ef83fb02ae012bcbf609a2982a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91421785"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857251"
 ---
 # <a name="function-debug-interface-access-sdk"></a>Funzione (Debug Interface Access SDK)
 Ogni funzione è identificata da un `SymTagFunction` simbolo.
@@ -73,7 +73,7 @@ Ogni funzione è identificata da un `SymTagFunction` simbolo.
 |[IDiaSymbol::get_virtualBaseOffset](../../debugger/debug-interface-access/idiasymbol-get-virtualbaseoffset.md)|`DWORD`|Se una funzione virtuale, l'offset nella tabella delle funzioni virtuali.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Se la funzione è contrassegnata come volatile.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazione CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)
 - [Gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 - [Enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md)

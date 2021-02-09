@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 83bf6317-ff39-4c5c-8987-cba34e7a6983
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7081c85d64e76900d6f310cfc8ff6cde51087fc3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e33abf7a38c5acab799b8a9f9342b2002d62a21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467911"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856236"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
 Recupera un numero specificato di file di origine nella sequenza di enumerazione.
@@ -25,7 +25,7 @@ Recupera un numero specificato di file di origine nella sequenza di enumerazione
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT Next ( 
+HRESULT Next ( 
    ULONG            celt,
    IDiaSourceFile** rgelt,
    ULONG*           pceltFetched
@@ -48,7 +48,7 @@ out Restituisce il numero di file di origine nell'enumeratore recuperato.
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti altri file di origine. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
 - [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

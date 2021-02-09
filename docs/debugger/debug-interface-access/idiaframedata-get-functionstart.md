@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 49fd24fb-65c2-4812-8303-56a968353e1b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e4ee5de3c27d1ba16aed25c59555880901c010b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bae370c5a279edf86bd3fabd9ba710436ae63ed7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467372"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855928"
 ---
 # <a name="idiaframedataget_functionstart"></a>IDiaFrameData::get_functionStart
 Recupera un flag che indica se il blocco contiene il punto di ingresso di una funzione.
@@ -25,7 +25,7 @@ Recupera un flag che indica se il blocco contiene il punto di ingresso di una fu
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_functionStart ( 
+HRESULT get_functionStart ( 
    BOOL* pRetVal
 );
 ```
@@ -38,8 +38,8 @@ out Restituisce `TRUE` se il blocco contiene il punto di ingresso; in caso contr
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  È possibile che un stack frame non sia l'inizio di una funzione perché il frame rappresenta un metodo o una funzione inline inserita in una funzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

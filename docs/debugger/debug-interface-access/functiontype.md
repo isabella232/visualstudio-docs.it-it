@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 646a07e7-9d4f-4e21-95e3-3e403cdd4843
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe52fc0ffe0c48e91ac2be032569702b58725c02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52c69e4aba479073256d5dcf136c9d955b13f50c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857237"
 ---
 # <a name="functiontype"></a>FunctionType
 Ogni firma di funzione univoca è identificata da un `SymTagFunctionType` simbolo. Ogni parametro è identificato come un simbolo figlio della classe con un `SymTagFunctionArgType` tag.
@@ -44,7 +44,7 @@ Ogni firma di funzione univoca è identificata da un `SymTagFunctionType` simbol
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` Se la funzione non è allineata.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Se la funzione è contrassegnata come volatile.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [Enumerazione CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)
 - [FunctionArgType](../../debugger/debug-interface-access/functionargtype.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a3319ed0-3979-483b-9852-c0af96852c48
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b49c90374975865edcac8a94c504e1fa991d711a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1221bac37b51d9aa55e31a07f2a301defa3af16e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857125"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Apre una sessione per l'esecuzione di query sui simboli.
@@ -25,7 +25,7 @@ Apre una sessione per l'esecuzione di query sui simboli.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT openSession ( 
+HRESULT openSession ( 
    IDiaSession** ppSession
 );
 ```
@@ -44,7 +44,7 @@ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un
 |E_INVALIDARG|Parametro `ppSession` non valido.|
 |E_OUTOFMEMORY|Memoria insufficiente per aprire la sessione.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questo metodo apre un oggetto [IDiaSession](../../debugger/debug-interface-access/idiasession.md) per un'origine dati.
 
 `IDiaSession` gli oggetti implementano query nell'origine dati. Una sessione gestisce uno spazio degli indirizzi per ogni set di simboli di debug. Se il file con estensione exe o dll descritto dai simboli dell'origine dati è attivo in più intervalli di indirizzi, ad esempio perché è stato caricato più processi, è necessario usare una sessione per ogni intervallo di indirizzi.
@@ -62,6 +62,6 @@ if (FAILED(hr))
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
-- [Panoramica](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
+- [Overview](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [Esecuzione di query nel file PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

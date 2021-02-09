@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 93deaac6-72ab-4408-ba14-66174a618757
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b9d0ff6739487ee34cfb1eb216e6f0509ab19f3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59cfde0b935ec43f6b439d2d2cf58b39d2ac9aa7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468065"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856411"
 ---
 # <a name="idiaenumsegmentsclone"></a>IDiaEnumSegments::Clone
 Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.
@@ -25,7 +25,7 @@ Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumerator
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT Clone ( 
+HRESULT Clone ( 
    IDiaEnumSegments** ppenum
 );
 ```
@@ -38,5 +38,5 @@ out Restituisce un oggetto [IDiaEnumSegments](../../debugger/debug-interface-acc
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

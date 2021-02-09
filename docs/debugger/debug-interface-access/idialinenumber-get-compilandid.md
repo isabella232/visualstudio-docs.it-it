@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2cd6f551-8091-47c7-803f-3f79a766a211
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4989e8f5436b9da842e7a72173a73aced8591c25
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30e944c04eb3a6fb7fd7bcc2a7749edbb4d9f2f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466917"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855753"
 ---
 # <a name="idialinenumberget_compilandid"></a>IDiaLineNumber::get_compilandId
 Recupera un identificatore univoco per il modulo che ha contribuito a questa riga.
@@ -25,7 +25,7 @@ Recupera un identificatore univoco per il modulo che ha contribuito a questa rig
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_compilandId ( 
+HRESULT get_compilandId ( 
    DWORD* pRetVal
 );
 ```
@@ -38,5 +38,5 @@ out Restituisce `DWORD` un oggetto che contiene l'identificatore univoco per mod
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

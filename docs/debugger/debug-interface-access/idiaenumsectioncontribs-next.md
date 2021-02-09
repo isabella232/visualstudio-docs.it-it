@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a6bb2adb-ee6d-4f3c-ab5b-e89361c8880e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 09622b1b152a8d1efd105b9b18a3c1fa74835378
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55c4dcef489c56688321497c93448d83ce342b1b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468114"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856460"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
 Recupera un numero specificato di contributi di sezione nella sequenza di enumerazione.
@@ -25,7 +25,7 @@ Recupera un numero specificato di contributi di sezione nella sequenza di enumer
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT Next( 
+HRESULT Next( 
    ULONG                celt,
    IDiaSectionContrib** rgelt,
    ULONG*               pceltFetched
@@ -48,6 +48,6 @@ out Restituisce il numero di contributi di sezione nell'enumeratore recuperato.
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti ulteriori contributi alla sezione. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 38af80fc-748f-4b15-bff1-823db21dd4d0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f5aa24efe6ce479de2a312943613b8262d0118
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b77fd91e53e6fd0a3e5940e25c8d495a87d7f45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468266"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856677"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
 Recupera un numero specificato di origini inserite nella sequenza di enumerazione.
@@ -25,7 +25,7 @@ Recupera un numero specificato di origini inserite nella sequenza di enumerazion
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT Next ( 
+HRESULT Next ( 
    ULONG                celt,
    IDiaInjectedSource** rgelt,
    ULONG*               pceltFetched
@@ -48,6 +48,6 @@ out Restituisce il numero di origini inserite nell'enumeratore recuperato.
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti altre origini inserite. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

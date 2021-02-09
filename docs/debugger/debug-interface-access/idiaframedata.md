@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f1b4986-341b-4641-89a4-226e261e9d93
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee2f68066de6a41e6fd6a1cf4143613a7597d6f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f596cd67ce7d31440b40fb24ef3b1c141e98186
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467183"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855879"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 Espone i dettagli di un stack frame.
@@ -25,7 +25,7 @@ Espone i dettagli di un stack frame.
 ## <a name="syntax"></a>Sintassi
 
 ```
-IDiaFrameData : IUnknown
+IDiaFrameData : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
@@ -52,7 +52,7 @@ La tabella seguente illustra i metodi di `IDiaFrameData` .
 |[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Recupera l'interfaccia dati del frame per la funzione di inclusione.|
 |[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Esegue la rimozione dello stack e restituisce lo stato corrente dei registri in un'interfaccia di frame di percorso stack.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  I dettagli disponibili per un frame sono per i punti di esecuzione nell'intervallo di indirizzi indicato dall'indirizzo e dalla lunghezza del blocco.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
@@ -119,7 +119,7 @@ Libreria: diaguids. lib
 
 DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 - [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)

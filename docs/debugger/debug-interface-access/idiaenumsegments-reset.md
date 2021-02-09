@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5eabca3c-6023-4474-a545-a3bec7521e4d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c302b145f043588eb9949dfe47c8d47640e25a92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab6bf3da112104f4eec2ea7bc4cf4d1e9e0c30d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467988"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856334"
 ---
 # <a name="idiaenumsegmentsreset"></a>IDiaEnumSegments::Reset
 Riporta all'inizio la sequenza di enumerazione.
@@ -31,5 +31,5 @@ HRESULT Reset ();
 ## <a name="return-value"></a>Valore restituito
  Restituisce `S_OK`.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

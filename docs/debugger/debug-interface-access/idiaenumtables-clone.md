@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: beb21109-b12c-44d8-8c1f-a332216b3713
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 68727c09b03ba8cf53f865c51698256b60742410
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b7abdc5545c25f0e4dfa68657a0867c4c97b483
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856047"
 ---
 # <a name="idiaenumtablesclone"></a>IDiaEnumTables::Clone
 Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.
@@ -25,7 +25,7 @@ Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumerator
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT Clone ( 
+HRESULT Clone ( 
    IDiaEnumTables** ppenum
 );
 ```
@@ -38,5 +38,5 @@ out Restituisce un oggetto [IDiaEnumTables](../../debugger/debug-interface-acces
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

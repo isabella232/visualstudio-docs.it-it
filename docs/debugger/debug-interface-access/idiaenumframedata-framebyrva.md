@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b8dec05-e76c-4cc4-9644-2369d583849f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cb00e661fc3976201abb4ab7304422195fda272
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5aa30598dcae08842c935d0d404cbb8b3303aefe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468357"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856880"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
 Restituisce un frame in base all'indirizzo RVA (relative Virtual Address).
@@ -25,7 +25,7 @@ Restituisce un frame in base all'indirizzo RVA (relative Virtual Address).
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT frameByRVA( 
+HRESULT frameByRVA( 
    DWORD           relativeVirtualAddress,
    IDiaFrameData** frame
 );
@@ -43,6 +43,6 @@ out Restituisce un oggetto [IDiaFrameData](../../debugger/debug-interface-access
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se nessun dato del frame corrisponde all'indirizzo specificato. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

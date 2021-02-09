@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4aad6a51-f2d3-4064-b216-60d830d0a560
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b8cfac0306d95dffb2b6879e9bdc930719eb77ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab2adf44fa1ed2d394a6ad5edaca0818c503a180
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468252"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856663"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
 Ignora un numero specificato di origini inserite in una sequenza di enumerazione.
@@ -25,7 +25,7 @@ Ignora un numero specificato di origini inserite in una sequenza di enumerazione
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT Skip ( 
+HRESULT Skip ( 
    ULONG celt
 );
 ```
@@ -38,5 +38,5 @@ in Numero di origini inserite nella sequenza di enumerazione da ignorare.
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` se non sono presenti altre origini inserite da ignorare.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

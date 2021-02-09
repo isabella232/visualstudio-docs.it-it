@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1df2aeae-2c84-4c35-817e-b85d43022ae2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f3154b05657a45e46c0239494772d4458b0b0eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d78cedfa2e6de695b394314fe58c579cfa3437f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856215"
 ---
 # <a name="idiaenumsourcefilesreset"></a>IDiaEnumSourceFiles::Reset
 Riporta all'inizio la sequenza di enumerazione.
@@ -31,5 +31,5 @@ HRESULT Reset ();
 ## <a name="return-value"></a>Valore restituito
  Restituisce `S_OK`.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

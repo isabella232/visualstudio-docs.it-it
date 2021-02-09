@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a1320587-7ce7-401f-9548-2f8bcece5cc3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f2a4be91f2439c198ca7424ba13542c68d41c6b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1c4aa49ae8097dea4c325f7423b0f388ea8701fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467666"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856075"
 ---
 # <a name="idiaenumsymbolsbyaddrnext"></a>IDiaEnumSymbolsByAddr::Next
 Recupera i simboli successivi nell'ordine in base all'indirizzo.
@@ -25,7 +25,7 @@ Recupera i simboli successivi nell'ordine in base all'indirizzo.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT Next ( 
+HRESULT Next ( 
    ULONG        celt,
    IDiaSymbol** rgelt,
    ULONG*       pceltFetched
@@ -48,9 +48,9 @@ out Restituisce il numero di simboli nell'enumeratore recuperato.
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti altri simboli. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo metodo aggiorna la posizione dell'enumeratore in base al numero di elementi recuperati.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 53f61874-d821-47ab-a1f5-27e982804a6a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f8e87efa1ed616a38ccb79fec1e286417c10124b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a4533b34b35f5050e3bb13a9dee9c74fa69c61d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468030"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856354"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
 Recupera un numero specificato di segmenti nella sequenza di enumerazione.
@@ -25,7 +25,7 @@ Recupera un numero specificato di segmenti nella sequenza di enumerazione.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT Next ( 
+HRESULT Next ( 
    ULONG         celt,
    IDiaSegment** rgelt,
    ULONG*        pceltFetched
@@ -48,6 +48,6 @@ out Restituisce il numero di segmenti nell'enumeratore recuperato.
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se non sono presenti altri segmenti. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e6467529-508c-4328-85d7-89444ae4d1c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf4b1c2a6a22170fb52da200bbd53c2b6b96e62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 975321d9710e9b448fa0b6b860f76c2f0b84d52e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468532"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857160"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 Consente di controllare il modo in cui il DIA SDK calcola gli indirizzi virtuali virtuali e relativi per gli oggetti di debug.
@@ -25,7 +25,7 @@ Consente di controllare il modo in cui il DIA SDK calcola gli indirizzi virtuali
 ## <a name="syntax"></a>Sintassi
 
 ```
-IDiaAddressMap : IUnknown
+IDiaAddressMap : IUnknown
 ```
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
@@ -42,7 +42,7 @@ IDiaAddressMap : IUnknown
 |[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Imposta le intestazioni dell'immagine per abilitare la conversione degli indirizzi virtuali relativi.|
 |[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Fornisce una mappa degli indirizzi per supportare le traduzioni del layout dell'immagine.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il controllo fornito da questa interfaccia è incapsulato in due set di dati forniti: intestazioni di immagine e mappe di indirizzi. La maggior parte dei client usa il metodo [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) per trovare le informazioni di debug appropriate per un'immagine e il metodo può in genere individuare tutte le intestazioni necessarie e mappare i dati stessi. Tuttavia, alcuni client implementano l'elaborazione specializzata e la ricerca di dati. Tali client utilizzano i metodi dell' `IDiaAddressMap` interfaccia per fornire la DIA SDK con i risultati della ricerca.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
@@ -55,7 +55,7 @@ IDiaAddressMap : IUnknown
 
  DLL: msdia80.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4821e6dd-d33f-403d-857d-e3ae81e4a9e3
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c6dd38782a7618259d802ae898c643d2a504c3fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8474899ac5f1a0617bc0adfc110dbb773d6b6b43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467876"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856201"
 ---
 # <a name="idiaenumsourcefilesskip"></a>IDiaEnumSourceFiles::Skip
 Ignora un numero specificato di file di origine in una sequenza di enumerazione.
@@ -25,7 +25,7 @@ Ignora un numero specificato di file di origine in una sequenza di enumerazione.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT Skip ( 
+HRESULT Skip ( 
    ULONG celt
 );
 ```
@@ -38,5 +38,5 @@ in Numero di file di origine nella sequenza di enumerazione da ignorare.
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce `S_FALSE` se non sono presenti altri file di origine da ignorare.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

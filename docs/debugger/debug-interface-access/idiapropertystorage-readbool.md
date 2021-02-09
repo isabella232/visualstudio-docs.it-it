@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ad1822db-4572-48f7-9919-f8137f6701f2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d94e38ade7b44d7458a0918080214d00e0000aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60d985851b1d547eed4306762c453bdd480bb1a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855592"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
 Legge `BOOL` i valori in un set di proprietà.
@@ -25,7 +25,7 @@ Legge `BOOL` i valori in un set di proprietà.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT ReadBOOL ( 
+HRESULT ReadBOOL ( 
    PROPID id,
    BOOL*  pValue
 );
@@ -43,8 +43,8 @@ out Restituisce il valore della proprietà.
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK` ; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `BOOL` .
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Per risultati coerenti, interpretare il `BOOL` valore in modo che i valori diversi da zero siano `TRUE` e zero sia `FALSE` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

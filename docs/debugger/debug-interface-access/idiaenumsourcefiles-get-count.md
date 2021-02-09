@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 04083b97-e1ac-4baf-bf5a-50a4dc1c6f27
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 635dceb392861232dceab3f98b29581c6c84404e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d7191ea5607dc035e023389d776afe301034e88
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467932"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856292"
 ---
 # <a name="idiaenumsourcefilesget_count"></a>IDiaEnumSourceFiles::get_Count
 Recupera il numero di file di origine.
@@ -25,7 +25,7 @@ Recupera il numero di file di origine.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_Count ( 
+HRESULT get_Count ( 
    LONG* pRetVal
 );
 ```
@@ -38,6 +38,6 @@ out Restituisce il numero di file di origine.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
 - [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fcd2479a-8ff7-4aba-a737-06123c280d54
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee3892b10465c197e4c3ebfbde7fdb574bafb3ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c8593fca731f96bb0d04b7cba12143eaf65614bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468238"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856621"
 ---
 # <a name="idiaenumlinenumbersclone"></a>IDiaEnumLineNumbers::Clone
 Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.
@@ -25,7 +25,7 @@ Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumerator
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT Clone ( 
+HRESULT Clone ( 
    IDiaEnumLineNumbers** ppenum
 );
 ```
@@ -38,5 +38,5 @@ out Restituisce un oggetto [IDiaEnumLineNumbers](../../debugger/debug-interface-
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

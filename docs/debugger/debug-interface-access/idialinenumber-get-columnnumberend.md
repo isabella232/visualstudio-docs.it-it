@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 02fa56c1-87b6-405a-adee-3bb6bc62de2d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 26645878ffca7c8c6ea0c51e02aa24668764a757
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f2ea924ffd92b6e099302c1bb8e2857dab47479
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466930"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855760"
 ---
 # <a name="idialinenumberget_columnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
 Recupera il numero della colonna di origine in base 1 in cui termina l'espressione o l'istruzione.
@@ -25,7 +25,7 @@ Recupera il numero della colonna di origine in base 1 in cui termina l'espressio
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_columnNumberEnd ( 
+HRESULT get_columnNumberEnd ( 
    DWORD* pRetVal
 );
 ```
@@ -38,8 +38,8 @@ out Restituisce il numero di colonna in cui termina l'espressione o l'istruzione
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il valore della colonna restituito da questo metodo è un offset di byte nella riga alla posizione dopo l'ultimo carattere dell'istruzione sulla riga.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

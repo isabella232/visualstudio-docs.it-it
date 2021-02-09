@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 30b1cef0-b366-4712-8e89-d21f640964f8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 741fd417fa6ce8e8a2faf714038aaa3d0f798233
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d70ca331d56fd423e7bfbfc4596b8f3ef5954b03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466476"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855515"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 Legge il numero specificato di byte a partire dall'offset specificato da un file eseguibile.
@@ -25,7 +25,7 @@ Legge il numero specificato di byte a partire dall'offset specificato da un file
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT ReadExecutableAt ( 
+HRESULT ReadExecutableAt ( 
    DWORDLONG fileOffset,
    DWORD     cbData,
    DWORD*    pcbData,
@@ -50,9 +50,9 @@ out Restituisce il numero di byte letti.
 
 [in, out] Matrice compilata con byte letti dal file.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo metodo viene chiamato dal codice di supporto DIA per caricare i byte di dati da un eseguibile usando un offset assoluto del file. Questo metodo viene chiamato per supportare il metodo [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

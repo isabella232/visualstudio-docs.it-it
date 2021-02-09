@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5d0ae226-981d-4541-a801-fc4993fe663b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cae8159c893229f02e9598e932d7bc19efc2f4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05475d2e6d48e7a8dacea834e5d7ca18c71d3260
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468679"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857307"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Descrive una voce in una mappa indirizzi.
@@ -36,7 +36,7 @@ struct DiaAddressMapEntry {
 
 `rvaTo` Viene eseguito il mapping dell'indirizzo virtuale relativo `rva` a nell'immagine B.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Una mappa indirizzi fornisce una traduzione da un layout immagine (A) a un altro (B). Una matrice di `DiaAddressMapEntry` strutture ordinate in base a `rva` definisce una mappa degli indirizzi.
 
 Per tradurre un indirizzo,, `addrA` nell'immagine a in un indirizzo, `addrB` , nell'immagine B, seguire questa procedura:
@@ -52,6 +52,6 @@ Per tradurre un indirizzo,, `addrA` nell'immagine a in un indirizzo, `addrB` , n
 ## <a name="requirements"></a>Requisiti
 Intestazione: dia2. h
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
 - [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

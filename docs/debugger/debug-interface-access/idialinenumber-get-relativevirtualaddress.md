@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ba8142e3-5c77-43cc-bd33-c077dcc18cab
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 79d7c62c2b4b78149b7be4b9781f1123412220f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4049956c3c7a606abb2dd32b2963b9c2965f070
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466868"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855718"
 ---
 # <a name="idialinenumberget_relativevirtualaddress"></a>IDiaLineNumber::get_relativeVirtualAddress
 Recupera l'indirizzo RVA (relativo Virtual Address) del blocco.
@@ -25,7 +25,7 @@ Recupera l'indirizzo RVA (relativo Virtual Address) del blocco.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_relativeVirtualAddress ( 
+HRESULT get_relativeVirtualAddress ( 
    DWORD* pRetVal
 );
 ```
@@ -38,5 +38,5 @@ out Restituisce l'indirizzo virtuale relativo all'immagine del blocco.
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

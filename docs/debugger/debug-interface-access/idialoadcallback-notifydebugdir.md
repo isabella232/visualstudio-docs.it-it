@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bd04e2f6-0dbf-4742-a556-96f2cd99aa19
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 032e628512b7c601a6409f6f70ba0b0c3cabb37c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5844cc235d604e8433940920eb9244044732d54
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466756"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99855648"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
 Chiamato quando viene trovata una directory di debug nel file con estensione exe.
@@ -25,7 +25,7 @@ Chiamato quando viene trovata una directory di debug nel file con estensione exe
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT NotifyDebugDir ( 
+HRESULT NotifyDebugDir ( 
    BOOL  fExecutable,
    DWORD cbData,
    BYTE  data[]
@@ -48,13 +48,13 @@ in Matrice compilata con la directory di debug.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore. Il codice restituito viene in genere ignorato.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il metodo [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) richiama questo callback quando trova una directory di debug durante l'elaborazione del file eseguibile.
 
  Questo metodo elimina la necessità per il client di decompilare il file eseguibile e/o di debug per supportare le informazioni di debug diverse da quelle presenti nel file con estensione pdb. Con questi dati, il client è in grado di riconoscere il tipo di informazioni di debug disponibili e se risiede nel file eseguibile o nel file con estensione dbg.
 
  La maggior parte dei client non richiede questo callback perché il `IDiaDataSource::loadDataForExe` metodo apre in modo trasparente i file con estensione PDB e DBG quando necessario per gestire i simboli.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
 - [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

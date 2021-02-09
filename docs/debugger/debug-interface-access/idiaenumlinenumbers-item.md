@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08efbeaf-22f7-49e9-96a8-bb906dfe4fd8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1eae34788cfed9f509e979df8efae6657f330d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55c0a421b89f9187a055b7ab5fedc93a5f66a112
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99856600"
 ---
 # <a name="idiaenumlinenumbersitem"></a>IDiaEnumLineNumbers::Item
 Recupera un numero di riga per mezzo di un indice.
@@ -25,14 +25,14 @@ Recupera un numero di riga per mezzo di un indice.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT Item ( 
+HRESULT Item ( 
    DWORD            index,
    IDiaLineNumber** lineNumber
 );
 ```
 
 #### <a name="parameters"></a>Parametri
- index
+ indice
 
 in Indice dell'oggetto [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) da recuperare. L'indice è compreso nell'intervallo tra 0 e `count` -1, dove `count` viene restituito dal metodo [IDiaEnumLineNumbers:: get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md) .
 
@@ -43,6 +43,6 @@ out Restituisce un oggetto [IDiaLineNumber](../../debugger/debug-interface-acces
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

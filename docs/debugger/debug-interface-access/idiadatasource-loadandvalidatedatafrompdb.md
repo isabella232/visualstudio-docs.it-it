@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d66712dd-6c24-4192-919a-cce262066f0e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e3a4b73cbbfe16cb87108c5f157dada135e71ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57f903bde5121a9ece797f6eb97c29805a3290a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85468539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857167"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 Apre e verifica che il file del database di programma (con estensione pdb) corrisponda alle informazioni di firma fornite e prepara il file con estensione PDB come origine dati di debug.
@@ -25,7 +25,7 @@ Apre e verifica che il file del database di programma (con estensione pdb) corri
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT loadAndValidateDataFromPdb ( 
+HRESULT loadAndValidateDataFromPdb ( 
    LPCOLESTR pdbPath,
    GUID*     pcsig70,
    DWORD     sig,
@@ -62,7 +62,7 @@ In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un
 |E_INVALIDARG|Parametro non valido.|
 |E_UNEXPECTED|L'origine dati è già stata preparata.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Un file con estensione PDB contiene sia la firma che i valori di età. Questi valori vengono replicati nel file con estensione exe o dll che corrisponde al file con estensione pdb. Prima di preparare l'origine dati, questo metodo verifica che la firma del file con estensione PDB denominata e l'età corrispondano ai valori specificati.
 
 Per caricare un file con estensione pdb senza convalida, usare il metodo [IDiaDataSource:: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) .
