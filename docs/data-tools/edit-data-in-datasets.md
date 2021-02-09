@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e547d3a6a07a7881c34462138ffbe708b8d74080
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f212fbd1868ad873f0692a11bae975eade8778a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435091"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858917"
 ---
 # <a name="edit-data-in-datasets"></a>Modifica di dati nei set di dati
 È possibile modificare i dati nelle tabelle dati in modo analogo a come si modificano i dati in una tabella di qualsiasi database. Il processo può includere l'inserimento, l'aggiornamento e l'eliminazione di record nella tabella. In un form con associazione a dati è possibile specificare i campi modificabili dall'utente. In questi casi, l'infrastruttura di data binding gestisce tutti i rilevamento delle modifiche in modo che le modifiche possano essere inviate nuovamente al database in un secondo momento. Se si apportano modifiche ai dati a livello di codice e si desidera inviare le modifiche al database, è necessario utilizzare gli oggetti e i metodi che eseguono il rilevamento delle modifiche.
@@ -109,6 +109,6 @@ Quando si utilizzano singole colonne e righe di dati, è possibile che si verifi
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

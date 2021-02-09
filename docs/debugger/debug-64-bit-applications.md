@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: db648e5f-6375-4e2d-aa98-eb7261958927
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29deb50bb57f018d3031ed1065145b6a39abab67
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 18ea2ade8ed87bfc58280bf5b2dc45c633eb2055
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857597"
 ---
 # <a name="debug-64-bit-applications"></a>Eseguire il debug di applicazioni a 64 bit
 È possibile eseguire il debug di un'applicazione a 64 bit in esecuzione nel computer locale o in un computer remoto.
@@ -54,7 +54,7 @@ ms.locfileid: "96560447"
 
 - Si è riscontrato un problema a causa del quale Visual Studio smette di rispondere o di un altro problema di prestazioni. Se il problema si verifica regolarmente, è possibile raccogliere dump di Visual Studio (devenv.exe) e del processo di lavoro (msvsmon.exe) e inviarli a Microsoft. Per informazioni sulla segnalazione di un problema, vedere [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Applicazioni a 64 bit](/dotnet/framework/64-bit-apps)
 - [Configurazione di programmi per processori a 64 bit](/cpp/build/configuring-programs-for-64-bit-visual-cpp)

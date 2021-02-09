@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: cde45c4086b93713fe6e5223c1725538c0880491
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 1db0f53ffc049d8844d7447461c4c33a0492a2d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998304"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858241"
 ---
 # <a name="validate-data-in-datasets"></a>Convalidare i dati nei set di dati
 La convalida dei dati è il processo di conferma che i valori immessi negli oggetti dati sono conformi ai vincoli all'interno dello schema di un set di dati. Il processo di convalida conferma inoltre che questi valori seguono le regole stabilite per l'applicazione. È consigliabile convalidare i dati prima di inviare gli aggiornamenti al database sottostante. In questo modo si riducono gli errori, nonché il numero potenziale di round trip tra un'applicazione e il database.
@@ -212,5 +212,5 @@ Il passaggio del <xref:System.Data.DataRowVersion> valore con l'indice di colonn
 ## <a name="see-also"></a>Vedi anche
 
 - [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Procedura: convalidare i dati nel controllo DataGridView Windows Forms](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [Procedura: visualizzare le icone di errore per la convalida dei form con il componente Windows Forms ErrorProvider](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [Procedura: convalidare i dati nel controllo DataGridView Windows Form](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [Procedura: visualizzare le icone di errore per la convalida dei form con il componente Windows Form ErrorProvider](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

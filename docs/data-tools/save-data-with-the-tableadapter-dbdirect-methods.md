@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d79b2081e2d30d77ae3507884b44421f0f14bae
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 00f508163dc039d5c29013538a78fa7dab6091fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858449"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvare dati con i metodi DBDirect di TableAdapter
 
@@ -31,7 +31,7 @@ In questa procedura dettagliata vengono fornite istruzioni dettagliate per l'ese
 
 Durante questa procedura dettagliata, si apprenderà come:
 
-- Creare una nuova **applicazione Windows Forms**.
+- Creare una nuova **applicazione Windows Form**.
 
 - Creare e configurare un set di dati con la [Configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png).
 
@@ -61,15 +61,15 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 ## <a name="create-a-windows-forms-application"></a>Creare un'applicazione Windows Forms Application
 
-Il primo passaggio consiste nel creare un' **applicazione Windows Forms**.
+Il primo passaggio consiste nel creare un' **applicazione Windows Form**.
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
 2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
-3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
+3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Form** .
 
-4. Denominare il progetto **TableAdapterDbDirectMethodsWalkthrough** , quindi scegliere **OK**.
+4. Denominare il progetto **TableAdapterDbDirectMethodsWalkthrough**, quindi scegliere **OK**.
 
      Il progetto **TableAdapterDbDirectMethodsWalkthrough** viene creato e aggiunto a **Esplora soluzioni**.
 
@@ -85,7 +85,7 @@ Questo passaggio usa la **Configurazione guidata origine dati** per creare un'or
 
 2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
-3. Nella schermata **scegliere un tipo di origine dati** selezionare **database** , quindi fare clic su **Avanti**.
+3. Nella schermata **scegliere un tipo di origine dati** selezionare **database**, quindi fare clic su **Avanti**.
 
 4. Nella schermata **Seleziona connessione dati** eseguire una delle operazioni seguenti:
 
@@ -115,7 +115,7 @@ Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridVi
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Per aggiungere pulsanti da usare per la chiamata ai singoli metodi DbDirect di TableAdapter
 
-1. Trascinare tre controlli <xref:System.Windows.Forms.Button> dalla **Casella degli strumenti** in **Form1** (sotto l'oggetto **RegionDataGridView** ).
+1. Trascinare tre controlli <xref:System.Windows.Forms.Button> dalla **Casella degli strumenti** in **Form1** (sotto l'oggetto **RegionDataGridView**).
 
 2. Impostare le proprietà **Name** e **Text** seguenti per ciascun pulsante.
 
@@ -170,6 +170,6 @@ A seconda dei requisiti dell'applicazione, è possibile eseguire diversi passagg
 
 - Aggiunta di altre tabelle al set di dati tramite selezione di **Configura il Dataset con la procedura guidata** nella finestra **Origini dati**. È possibile aggiungere controlli che consentono di visualizzare dati correlati mediante il trascinamento dei nodi correlati nel form. Per altre informazioni, vedere [relazioni nei DataSet](relationships-in-datasets.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

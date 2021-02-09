@@ -7,15 +7,15 @@ ms.topic: overview
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: af394318d18244fc6e20e517d0ff985ca5e5ad1f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 20473125814b1ee0569579c7248b7b940cd31500
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436237"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858644"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Strumenti di LINQ to SQL in Visual Studio
 
@@ -23,9 +23,9 @@ LINQ to SQL è stata la prima tecnologia di mapping relazionale a oggetti rilasc
 
 ## <a name="install-the-linq-to-sql-tools"></a>Installare gli strumenti di LINQ to SQL
 
-In Visual Studio è possibile creare classi di LINQ to SQL che rappresentano le tabelle SQL tramite **Object Relational Designer** ( **O/R Designer** ). La finestra di progettazione di O/R è l'interfaccia utente per la modifica di file con estensione dbml. Per modificare i file con estensione dbml con un'area di progettazione sono necessari gli strumenti LINQ to SQL che non sono installati per impostazione predefinita come parte di tutti i carichi di lavoro di Visual Studio.
+In Visual Studio è possibile creare classi di LINQ to SQL che rappresentano le tabelle SQL tramite **Object Relational Designer** (**O/R Designer**). La finestra di progettazione di O/R è l'interfaccia utente per la modifica di file con estensione dbml. Per modificare i file con estensione dbml con un'area di progettazione sono necessari gli strumenti LINQ to SQL che non sono installati per impostazione predefinita come parte di tutti i carichi di lavoro di Visual Studio.
 
-Per installare gli strumenti di LINQ to SQL, avviare il programma di installazione di Visual Studio, scegliere **modifica** , quindi selezionare la scheda **singoli componenti** e quindi selezionare **LINQ to SQL strumenti** nella categoria **strumenti codice** .
+Per installare gli strumenti di LINQ to SQL, avviare il programma di installazione di Visual Studio, scegliere **modifica**, quindi selezionare la scheda **singoli componenti** e quindi selezionare **LINQ to SQL strumenti** nella categoria **strumenti codice** .
 
 ## <a name="what-is-the-or-designer"></a>Che cos'è l'oggetto O/R Designer
 
@@ -48,7 +48,7 @@ Quando si seleziona il file con *estensione dbml* , Visual Studio Mostra l'area 
 ![Finestra di progettazione di LINQ to SQL](../data-tools/media/raddata-linq-to-sql-designer.png)
 
 > [!IMPORTANT]
-> **O/R Designer** è un semplice mapper relazionale a oggetti perché supporta solo le relazioni di mapping 1:1. In altre parole, una classe di entità può presentare solo una relazione di mapping 1:1 con una tabella o visualizzazione di database. Il mapping complesso, ad esempio il mapping di una classe di entità a una tabella unita in join, non è supportato. usare il Entity Framework per il mapping complesso. Inoltre, la finestra di progettazione rappresenta un generatore di codice unidirezionale: pertanto, nel file di codice vengono riflesse solo le modifiche apportate all'area di progettazione. Le modifiche manuali apportate al file di codice non vengono riflesse in **O/R Designer**. Tutte le modifiche apportate manualmente nel file di codice vengono sovrascritte durante il salvataggio della finestra di progettazione e il codice viene rigenerato. Per informazioni su come aggiungere il codice utente ed estendere le classi generate per il **O/R Designer** , vedere [come: Estendere il codice generato da Object Relational Designer](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
+> **O/R Designer** è un semplice mapper relazionale a oggetti perché supporta solo le relazioni di mapping 1:1. In altre parole, una classe di entità può presentare solo una relazione di mapping 1:1 con una tabella o visualizzazione di database. Il mapping complesso, ad esempio il mapping di una classe di entità a una tabella unita in join, non è supportato. usare il Entity Framework per il mapping complesso. Inoltre, la finestra di progettazione rappresenta un generatore di codice unidirezionale: pertanto, nel file di codice vengono riflesse solo le modifiche apportate all'area di progettazione. Le modifiche manuali apportate al file di codice non vengono riflesse in **O/R Designer**. Tutte le modifiche apportate manualmente nel file di codice vengono sovrascritte durante il salvataggio della finestra di progettazione e il codice viene rigenerato. Per informazioni su come aggiungere il codice utente ed estendere le classi generate per il **O/R Designer**, vedere [come: Estendere il codice generato da Object Relational Designer](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
 
 ## <a name="create-and-configure-the-datacontext"></a>Creare e configurare DataContext
 
@@ -86,7 +86,7 @@ In **O/R Designer** sono disponibili lo **spazio dei nomi del contesto** e le pr
 - <xref:System.Linq>
 - <xref:System.Data.Linq>
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
 - [Domande frequenti (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/frequently-asked-questions)

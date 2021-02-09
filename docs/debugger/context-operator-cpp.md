@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 73cc9afe-f4a4-474e-bb89-5a33fb5e570c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bc238cc56e1b815e79ba381a7cd4866085d3bef
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 619162bc4237c71c44f960f7ca1e4337a54f3dd5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559758"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857714"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Operatore di contesto nel debugger di Visual Studio (C++)
 L'operatore di contesto in C++ può essere usato per qualificare la posizione di un punto di interruzione, il nome di una variabile o un'espressione. L'operatore di contesto è utile per specificare un nome da un ambito esterno che altrimenti sarebbe nascosto da un nome locale.
@@ -55,7 +55,7 @@ L'operatore di contesto in C++ può essere usato per qualificare la posizione di
 
 - *module* è il nome di un modulo. È possibile usare un percorso completo per distinguere i moduli che hanno lo stesso nome.
 
-   Se il percorso di *module* include una virgola, uno spazio incorporato o una parentesi graffa, è necessario racchiudere il percorso tra virgolette in modo che il parser del contesto possa riconoscere correttamente la stringa. Poiché le virgolette singole vengono considerate parte di un nome di file di Windows, è necessario usare le virgolette doppie. ad esempio:
+   Se il percorso di *module* include una virgola, uno spazio incorporato o una parentesi graffa, è necessario racchiudere il percorso tra virgolette in modo che il parser del contesto possa riconoscere correttamente la stringa. Poiché le virgolette singole vengono considerate parte di un nome di file di Windows, è necessario usare le virgolette doppie. Ad esempio,
 
   ```C++
   {,,"a long, long, library name.dll"} g_Var

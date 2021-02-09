@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bb0262139e2096cf55ae7581ef854a57c67d22a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 62175e33949b2c6311fba8e9255b237cd8b43e01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434545"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858475"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Procedura dettagliata: Salvare dati in una transazione
 
@@ -50,15 +50,15 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 ## <a name="create-a-windows-forms-application"></a>Creare un'applicazione Windows Forms Application
 
-Il primo passaggio consiste nel creare un' **applicazione Windows Forms**.
+Il primo passaggio consiste nel creare un' **applicazione Windows Form**.
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
 2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
-3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
+3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Form** .
 
-4. Denominare il progetto **SavingDataInATransactionWalkthrough** , quindi scegliere **OK**.
+4. Denominare il progetto **SavingDataInATransactionWalkthrough**, quindi scegliere **OK**.
 
      Il progetto **SavingDataInATransactionWalkthrough** viene creato e aggiunto a **Esplora soluzioni**.
 
@@ -70,7 +70,7 @@ In questo passaggio viene utilizzata la **Configurazione guidata origine dati** 
 
 2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.
 
-3. Nella schermata **scegliere un tipo di origine dati** selezionare **database** , quindi fare clic su **Avanti**.
+3. Nella schermata **scegliere un tipo di origine dati** selezionare **database**, quindi fare clic su **Avanti**.
 
 4. Nella schermata **Seleziona connessione dati** eseguire una delle operazioni seguenti:
 
@@ -141,28 +141,28 @@ L'ordine di riconciliazione delle modifiche ai dati correlati è il seguente:
 
 ### <a name="to-delete-existing-orders"></a>Per eliminare gli ordini esistenti
 
-- Aggiungere il metodo `DeleteOrders` seguente in **Form1** :
+- Aggiungere il metodo `DeleteOrders` seguente in **Form1**:
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
 ### <a name="to-delete-existing-customers"></a>Per eliminare i clienti esistenti
 
-- Aggiungere il metodo `DeleteCustomers` seguente in **Form1** :
+- Aggiungere il metodo `DeleteCustomers` seguente in **Form1**:
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
 ### <a name="to-add-new-customers"></a>Per aggiungere nuovi clienti
 
-- Aggiungere il metodo `AddNewCustomers` seguente in **Form1** :
+- Aggiungere il metodo `AddNewCustomers` seguente in **Form1**:
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
 ### <a name="to-add-new-orders"></a>Per aggiungere nuovi ordini
 
-- Aggiungere il metodo `AddNewOrders` seguente in **Form1** :
+- Aggiungere il metodo `AddNewOrders` seguente in **Form1**:
 
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]
@@ -171,7 +171,7 @@ L'ordine di riconciliazione delle modifiche ai dati correlati è il seguente:
 
 Premere **F5** per eseguire l'applicazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: salvare dati usando una transazione](../data-tools/save-data-by-using-a-transaction.md)
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

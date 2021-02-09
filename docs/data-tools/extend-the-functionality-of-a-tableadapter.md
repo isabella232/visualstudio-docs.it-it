@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6e1c594ab1f74cddb962cc2a6d4030ede1e53c8f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: bfc0f68f38f801d63367b1ee9150c723767ec667
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435078"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858878"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Estendere la funzionalità di un TableAdapter
 
@@ -34,7 +34,7 @@ Le classi parziali consentono di dividere il codice per una classe specifica tra
 
 ## <a name="locate-tableadapters-in-code"></a>Individuare gli oggetti TableAdapter nel codice
 
-Sebbene i TableAdapter siano progettati con la **Progettazione DataSet** , le classi TableAdapter generate non sono classi annidate di <xref:System.Data.DataSet> . Gli oggetti TableAdapter si trovano in uno spazio dei nomi in base al nome del set di dati associato del TableAdapter. Se, ad esempio, l'applicazione contiene un set di dati denominato `HRDataSet` , gli oggetti TableAdapter si troveranno `HRDataSetTableAdapters` nello spazio dei nomi. La convenzione di denominazione segue questo modello: *DataSetName*  +  `TableAdapters` .
+Sebbene i TableAdapter siano progettati con la **Progettazione DataSet**, le classi TableAdapter generate non sono classi annidate di <xref:System.Data.DataSet> . Gli oggetti TableAdapter si trovano in uno spazio dei nomi in base al nome del set di dati associato del TableAdapter. Se, ad esempio, l'applicazione contiene un set di dati denominato `HRDataSet` , gli oggetti TableAdapter si troveranno `HRDataSetTableAdapters` nello spazio dei nomi. La convenzione di denominazione segue questo modello: *DataSetName*  +  `TableAdapters` .
 
 Nell'esempio seguente si presuppone che un oggetto TableAdapter denominato `CustomersTableAdapter` si trovi in un progetto con `NorthwindDataSet` .
 
@@ -51,6 +51,6 @@ Nell'esempio seguente si presuppone che un oggetto TableAdapter denominato `Cust
      [!code-csharp[VbRaddataTableAdapters#2](../data-tools/codesnippet/CSharp/extend-the-functionality-of-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataTableAdapters#2](../data-tools/codesnippet/VisualBasic/extend-the-functionality-of-a-tableadapter_1.vb)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)

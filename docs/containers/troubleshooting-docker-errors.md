@@ -3,7 +3,7 @@ title: Risoluzione degli errori dei client Docker in Windows | Microsoft Docs
 description: Risoluzione dei problemi che si verificano quando si usa Visual Studio per creare e distribuire app Web in Docker su Windows mediante Visual Studio.
 ms.technology: vs-azure
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.assetid: 346f70b9-7b52-4688-a8e8-8f53869618d3
 ms.devlang: dotnet
@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 9535a7d88cb375d97867092eddf969095c327329
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: f16ecd899bc1dddd7383ef1a815ed6197b799a19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729254"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859528"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Risolvere i problemi di sviluppo di Visual Studio con Docker
 

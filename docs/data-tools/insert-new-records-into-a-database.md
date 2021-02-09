@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3586cf45e152cd8a0149140556916b11544a00bb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8b5228d463bebf7ed57c68cbcf16a1d767d94917
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436276"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858670"
 ---
 # <a name="insert-new-records-into-a-database"></a>Inserire nuovi record in un database
 
@@ -36,7 +36,7 @@ Se l'applicazione usa set di dati per archiviare i dati, usare il `TableAdapter.
 
 Se l'applicazione utilizza oggetti per archiviare i dati o se si desidera un controllo più preciso sulla creazione di nuovi record nel database, utilizzare il `TableAdapter.Insert` metodo.
 
-Se il TableAdapter non dispone `Insert` di un metodo, significa che l'oggetto TableAdapter è configurato per l'utilizzo di stored procedure o la relativa `GenerateDBDirectMethods` proprietà è impostata su `false` . Provare a impostare la proprietà del TableAdapter `GenerateDBDirectMethods` su `true` dall'interno del **Progettazione DataSet** , quindi salvare il set di dati. Il TableAdapter verrà rigenerato. Se il TableAdapter non dispone ancora `Insert` di un metodo, è probabile che la tabella non fornisca informazioni dello schema sufficienti per distinguere le singole righe. ad esempio, nella tabella potrebbe non essere impostata alcuna chiave primaria.
+Se il TableAdapter non dispone `Insert` di un metodo, significa che l'oggetto TableAdapter è configurato per l'utilizzo di stored procedure o la relativa `GenerateDBDirectMethods` proprietà è impostata su `false` . Provare a impostare la proprietà del TableAdapter `GenerateDBDirectMethods` su `true` dall'interno del **Progettazione DataSet**, quindi salvare il set di dati. Il TableAdapter verrà rigenerato. Se il TableAdapter non dispone ancora `Insert` di un metodo, è probabile che la tabella non fornisca informazioni dello schema sufficienti per distinguere le singole righe. ad esempio, nella tabella potrebbe non essere impostata alcuna chiave primaria.
 
 ## <a name="insert-new-records-by-using-tableadapters"></a>Inserire nuovi record usando oggetti TableAdapter
 
@@ -86,6 +86,6 @@ Nell'esempio seguente viene illustrato l'inserimento di record in un database ut
 
 È necessario disporre dell'accesso al database a cui si sta tentando di connettersi, nonché dell'autorizzazione per l'esecuzione di inserimenti nella tabella desiderata.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

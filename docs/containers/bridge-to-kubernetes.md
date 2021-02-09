@@ -9,13 +9,13 @@ keywords: Bridge per Kubernetes, Azure Dev Spaces, spazi di sviluppo, Docker, Ku
 monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
-manager: jillfra
-ms.openlocfilehash: 7bbeec2baab018ea770dbee60db507399ebeb745
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+manager: jmartens
+ms.openlocfilehash: 23d060489a13aa8e02316e253d9367e9e3372bbe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860440"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859632"
 ---
 # <a name="use-bridge-to-kubernetes"></a>Usare Bridge per Kubernetes
 
@@ -123,7 +123,7 @@ Quando il computer di sviluppo è connesso, il traffico inizia a reindirizzare a
 
 ## <a name="set-a-break-point"></a>Imposta un punto di rottura
 
-Aprire [BikesHelper.cs][bikeshelper-cs-breakpoint] e fare clic in un punto qualsiasi della riga 26 per posizionare il cursore. Per impostare un punto di interruzione, premere *F9* o selezionare **debug**  >  **Imposta/Rimuovi**punto di interruzione.
+Aprire [BikesHelper.cs][bikeshelper-cs-breakpoint] e fare clic in un punto qualsiasi della riga 26 per posizionare il cursore. Per impostare un punto di interruzione, premere *F9* o selezionare **debug**  >  **Imposta/Rimuovi** punto di interruzione.
 
 Passare all'applicazione di esempio aprendo l'URL pubblico. Selezionare **Aurelia Briggs (Customer)** come utente, quindi selezionare una bicicletta da affittare. Scegliere **Rent Bike**. Tornare a Visual Studio e osservare che la riga 26 è evidenziata. Il punto di interruzione impostato ha sospeso il servizio alla riga 26. Per riprendere il servizio, premere **F5** o fare clic su **debug**  >  **continua**. Tornare al browser e verificare che la pagina indichi che la bicicletta è stata affittata.
 

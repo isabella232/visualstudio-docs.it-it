@@ -8,16 +8,16 @@ helpviewer_keywords:
 - debugging, Docker container
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 4f39d4ecd69b726c1d549d723fadd324b1edd722
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761264"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857929"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>Connettersi a un processo in esecuzione in un contenitore Docker 
 
@@ -52,13 +52,13 @@ ms.locfileid: "97761264"
     > [!NOTE]
     > Sono disponibili due opzioni per la connessione remota a un processo in esecuzione in un contenitore docker. La prima opzione, per usare SSH, è ideale se gli strumenti Docker non sono installati nel computer locale.  Se gli strumenti Docker sono installati localmente e si ha un daemon Docker configurato per accettare le richieste remote, provare la seconda opzione usando un daemon docker.
 
-    1. **_Per connettersi a un computer remoto tramite SSH:_* _
-        1. Selezionare _ *Aggiungi...* * per connettersi a un sistema remoto.<br/>
+    1. ***Per connettersi a un computer remoto tramite SSH:***
+        1. Selezionare **Aggiungi** per connettersi a un sistema remoto.<br/>
         ![Connettersi a un sistema remoto](../debugger/media/connect-remote-system.png "Connettersi a un sistema remoto")
         1. Selezionare un contenitore in esecuzione a cui connettersi dopo aver eseguito correttamente la connessione a SSH o daemon e quindi fare clic su **OK**.
 
-    1. **_Per impostare la destinazione su un contenitore remoto che esegue un processo tramite un [daemon Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)_* _
-        1. Specificare l'indirizzo del daemon (ad esempio tramite TCP, IP e così via) in _ *Docker host (facoltativo)** e fare clic sul collegamento Refresh (Aggiorna).
+    1. ***Per impostare la destinazione su un contenitore remoto che esegue un processo tramite un [daemon Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
+        1. Specificare l'indirizzo del daemon, ad esempio tramite TCP, IP e così via, in **Docker host (facoltativo)** e fare clic sul collegamento Refresh (Aggiorna).
         1. Selezionare un contenitore in esecuzione a cui connettersi dopo la connessione al daemon e fare clic su **OK**.
 
 4. Scegliere il processo contenitore corrispondente nell'elenco dei **processi disponibili** e selezionare **Connetti** per avviare il debug del processo contenitore C# in Visual Studio.
@@ -86,8 +86,8 @@ ms.locfileid: "97761264"
 
    L'impostazione della destinazione su un contenitore remoto tramite SSH non è attualmente disponibile e può essere eseguita solo tramite un daemon docker.
 
-    **_Per impostare la destinazione su un contenitore remoto che esegue un processo tramite un [daemon Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)_* _
-    1. Specificare l'indirizzo del daemon (ad esempio tramite TCP, IP e così via) in _ *Docker host (facoltativo)** e fare clic sul collegamento Refresh (Aggiorna).
+    ***Per impostare la destinazione su un contenitore remoto che esegue un processo tramite un [daemon Docker](https://docs.docker.com/engine/reference/commandline/dockerd/)***
+    1. Specificare l'indirizzo del daemon, ad esempio tramite TCP, IP e così via, in **Docker host (facoltativo)** e fare clic sul collegamento Refresh (Aggiorna).
 
     1. Selezionare un contenitore in esecuzione a cui connettersi dopo la connessione al daemon e scegliere OK.
 

@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4f367cf799dd00b8b442870554e499e5405865cb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 08d60b254867c02c7cc406709a95117a11d669c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435104"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858813"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Procedura: Aggiungere la convalida a classi di entità
 La *convalida* delle classi di entità rappresenta il processo mediante cui si conferma che i valori immessi negli oggetti dati sono conformi ai vincoli presenti nello schema di un oggetto e alle regole stabilite per l'applicazione. Per ridurre gli errori, è opportuno convalidare i dati prima di inviare aggiornamenti al database sottostante. La convalida consente anche di ridurre il numero potenziale di round trip tra un'applicazione e il database.
@@ -121,7 +121,7 @@ Oltre a controllare i valori durante le modifiche, è anche possibile convalidar
     }
     ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Convalida dei dati](../data-tools/validate-data-in-datasets.md)

@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 941cbd78ef94fa186b28391bfd3a888f66c91274
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f16d4bc03d2f2562321caa0e57e61dd0b597cfdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034091"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858592"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Uno o più oggetti di database selezionati restituisce uno schema non corrispondente allo schema della classe di dati di destinazione
 
@@ -27,7 +27,7 @@ Quando si trascinano oggetti di database in classi di entità esistenti, i dati 
 
 1. Fare clic su **OK** per chiudere la finestra di dialogo.
 
-2. Consente di selezionare un oggetto di database che restituisce dati corrispondenti allo schema della classe di destinazione, ovvero la classe in cui viene rilasciato l'oggetto di database in **Progettazione relazionale**oggetti.
+2. Consente di selezionare un oggetto di database che restituisce dati corrispondenti allo schema della classe di destinazione, ovvero la classe in cui viene rilasciato l'oggetto di database in **Progettazione relazionale** oggetti.
 
 ## <a name="see-also"></a>Vedi anche
 

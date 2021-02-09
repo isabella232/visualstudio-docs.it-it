@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eaec9f07-d580-436d-934d-76c4e59439aa
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf37d9e5d672f0ecce262699fdd5d704cde9efe
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e1d7126fe795e269ee619e03daf2b81d6458f2e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729028"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857815"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Scheda Classe, finestra di dialogo Proprietà finestra
 Utilizzare la scheda **classe** per visualizzare le informazioni sulla classe della finestra selezionata. Per visualizzare la finestra di [dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md), spostare lo stato attivo sulla finestra di [visualizzazione di Windows](../debugger/windows-view.md) . Selezionare un nodo della finestra nell'albero, quindi scegliere **Proprietà** dal menu **Visualizza** .
@@ -26,7 +26,7 @@ Utilizzare la scheda **classe** per visualizzare le informazioni sulla classe de
 
 |Voce|Descrizione|
 |-----------|-----------------|
-|**Nome classe**|Nome (o numero ordinale) di questa classe della finestra.|
+|**Nome della classe**|Nome (o numero ordinale) di questa classe della finestra.|
 |**Stili classe**|Combinazione di codici di stile della classe.|
 |**Byte classe**|Dati specifici dell'applicazione associati a questa classe della finestra.|
 |**Atomo classe**|Atom per la classe restituita dalla chiamata di **registerClass** .|

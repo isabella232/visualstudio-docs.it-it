@@ -13,21 +13,21 @@ helpviewer_keywords:
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1dc1d82b0267e5e0655f3ebef8eb08806ad319a8
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 9ce4057378db357345869d10e933929ae31ee573
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518726"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859216"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configura riferimento a servizio (finestra di dialogo)
 
 La finestra di dialogo **Configura riferimento al servizio** consente di configurare il comportamento dei servizi Windows Communication Foundation (WCF).
 
-Per accedere alla finestra di dialogo **Configura riferimento a servizio** , fare clic con il pulsante destro del mouse su un riferimento al servizio in **Esplora soluzioni** e scegliere **Configura riferimento a servizio**. È anche possibile accedere alla finestra di dialogo facendo clic sul pulsante **Avanzate** nella **finestra di dialogo Aggiungi riferimento al servizio**.
+Per accedere alla finestra di dialogo **Configura riferimento a servizio**, fare clic con il pulsante destro del mouse su un riferimento al servizio in **Esplora soluzioni** e scegliere **Configura riferimento a servizio**. È anche possibile accedere alla finestra di dialogo facendo clic sul pulsante **Avanzate** nella **finestra di dialogo Aggiungi riferimento al servizio**.
 
 ## <a name="task-list"></a>Elenco attività
 
@@ -41,7 +41,7 @@ Per accedere alla finestra di dialogo **Configura riferimento a servizio** , far
 
 - Per specificare i tipi di raccolta elenco o dizionario per un client WCF, selezionare i tipi dagli elenchi **Tipo di raccolta** e **Tipo di raccolta dizionario**.
 
-- Per disabilitare la condivisione dei tipi, deselezionare la casella di controllo **Riutilizza tipi in assembly di riferimento**. Per abilitare la condivisione di tipi per un sottoinsieme di assembly di riferimento, selezionare la casella di controllo **Riutilizza tipi in assembly di riferimento** , selezionare **Riutilizza tipi negli assembly di riferimento specificati** e selezionare i riferimenti desiderati nell'elenco **Assembly di riferimento**.
+- Per disabilitare la condivisione dei tipi, deselezionare la casella di controllo **Riutilizza tipi in assembly di riferimento**. Per abilitare la condivisione di tipi per un sottoinsieme di assembly di riferimento, selezionare la casella di controllo **Riutilizza tipi in assembly di riferimento**, selezionare **Riutilizza tipi negli assembly di riferimento specificati** e selezionare i riferimenti desiderati nell'elenco **Assembly di riferimento**.
 
 ## <a name="uielement-list"></a>Elenco degli elementi di interfaccia
 
@@ -93,7 +93,7 @@ Quando questa opzione è selezionata, vengono riutilizzati solo i tipi seleziona
 
 **Elenco Assembly di riferimento**
 
-Contiene un elenco di assembly di riferimento per il progetto o il sito Web. Quando si seleziona **Riutilizza tipi in assembly di riferimento specificati** , è possibile selezionare o deselezionare singoli assembly.
+Contiene un elenco di assembly di riferimento per il progetto o il sito Web. Quando si seleziona **Riutilizza tipi in assembly di riferimento specificati**, è possibile selezionare o deselezionare singoli assembly.
 
 **Aggiungi riferimento Web**
 
@@ -105,7 +105,7 @@ Visualizza la **finestra di dialogo Aggiungi riferimento Web**.
 > [!NOTE]
 > Il pulsante **Aggiungi riferimento Web** è disponibile solo quando nella finestra di dialogo **Aggiungi riferimento al servizio** viene visualizzata la finestra di dialogo **Configura riferimento al servizio** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Aggiungere un riferimento a un servizio Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Servizi Windows Communication Foundation e WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

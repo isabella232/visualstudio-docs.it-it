@@ -9,19 +9,19 @@ helpviewer_keywords:
 - code analysis, source suppression
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a0820404047d123350a27950c5aee254af306f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c61803c21832367ede01817029b8d0318ac741a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348697"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859905"
 ---
 # <a name="suppress-code-analysis-violations"></a>Rimuovere le violazioni dell'analisi del codice
 
@@ -52,7 +52,7 @@ In C++/CLI, usare la CA macro non \_ visualizzare \_ messaggi o ca \_ globale \_
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage (attributo)
 
-Quando si seleziona **Elimina** dal menu di scelta rapida o facendo clic con il pulsante destro del mouse su un avviso di analisi del codice nella **Elenco errori** , <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> viene aggiunto un attributo nel codice o nel file di eliminazione globale del progetto.
+Quando si seleziona **Elimina** dal menu di scelta rapida o facendo clic con il pulsante destro del mouse su un avviso di analisi del codice nella **Elenco errori**, <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> viene aggiunto un attributo nel codice o nel file di eliminazione globale del progetto.
 
 Il <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> formato dell'attributo è il seguente:
 
@@ -192,7 +192,7 @@ Per l'analisi del codice legacy, è possibile scegliere se escludere gli avvisi 
 > [!NOTE]
 > L'analisi del codice ignora `GeneratedCodeAttribute` quando viene applicata a un intero assembly o a un singolo parametro.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

@@ -12,21 +12,21 @@ helpviewer_keywords:
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b48c2e8b557a47c1ed795b6f9d3c3ced6247a43
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: a237d07af14cd6f31af300eff050c8952fd9840e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518622"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859346"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associare controlli ai dati in Visual Studio
 
 È possibile visualizzare i dati per gli utenti dell'applicazione mediante l'associazione dei dati ai controlli. È possibile creare questi controlli associati a dati trascinando gli elementi dalla finestra **origini dati** in un'area di progettazione o in controlli di una superficie in Visual Studio.
 
-In questo argomento vengono descritte le origini dati che è possibile utilizzare per creare controlli associati a dati. Vengono inoltre descritte alcune delle attività generali coinvolte nell'associazione ai dati. Per informazioni più specifiche su come creare controlli associati a dati, vedere [associare Windows Forms controlli ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) e [associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+In questo argomento vengono descritte le origini dati che è possibile utilizzare per creare controlli associati a dati. Vengono inoltre descritte alcune delle attività generali coinvolte nell'associazione ai dati. Per informazioni più specifiche su come creare controlli associati a dati, vedere [associare Windows Form controlli ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) e [associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
 ## <a name="data-sources"></a>Origini dati
 
@@ -57,7 +57,7 @@ Per ogni tipo di dati visualizzato nella finestra **Origini dati** viene creato 
 
 Nella tabella seguente sono elencate alcune delle attività più comuni eseguite per associare i controlli ai dati.
 
-|Attività|Altre informazioni|
+|Attività|Ulteriori informazioni|
 |----------| - |
 |Aprire la finestra **Origini dati**.|Aprire un'area di progettazione nell'editor e scegliere **Visualizza**  >  **origini dati**.|
 |Aggiungere un'origine dati al progetto.|[Aggiungere nuove origini dati](../data-tools/add-new-data-sources.md)|
@@ -68,7 +68,7 @@ Nella tabella seguente sono elencate alcune delle attività più comuni eseguite
 |Filtrare i dati visualizzati nell'interfaccia utente.|[Filtrare e ordinare i dati in un'applicazione Windows Forms](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|
 |Personalizzare le didascalie per i controlli.|[Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Visual Studio data tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-- [Windows Forms data binding](/dotnet/framework/winforms/windows-forms-data-binding)
+- [Windows Form data binding](/dotnet/framework/winforms/windows-forms-data-binding)

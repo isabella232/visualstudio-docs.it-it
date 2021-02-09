@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6ea872d96e59365f3dbef5dc3568641c30e51606
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 609af4ef71a6ed73bd1d9599d76d8eb64073efd8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858696"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Procedura: Attivare e disattivare la pluralizzazione (Object Relational Designer)
 Per impostazione predefinita, quando si trascinano oggetti di database con nomi che terminano in s o IES da **Esplora server** o **Esplora database** sugli [strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), i nomi delle classi di entità generate vengono modificati dal plurale al singolare. Questa modifica viene apportata per rappresentare in modo più preciso il fatto che viene eseguito il mapping della classe di entità, di cui è stata creata un'istanza, a un singolo record di dati. Ad esempio, se si aggiunge una `Customers` tabella a **Progettazione relazionale O/R** , viene generata una classe di entità denominata `Customer` perché la classe conterrà i dati per un singolo cliente.
@@ -40,7 +40,7 @@ Per impostazione predefinita, quando si trascinano oggetti di database con nomi 
 
 5. Impostare la **pluralità dei nomi** su **Enabled**  =  **true** per applicare regole di pluralità ai nomi di classe degli oggetti aggiunti a **Progettazione relazionale** oggetti.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

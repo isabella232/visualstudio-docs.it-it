@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: de0a155d675f85e10cdf38969dd6eb59a3762770
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 2ebfc2071bdf9f9e9dc40b36744bb34d4a68ac04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518521"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859281"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associare controlli WPF a un set di dati
 
@@ -62,9 +62,9 @@ Creare un nuovo progetto WPF per visualizzare i record di prodotto.
 
 1. Aprire Visual Studio.
 
-2. Scegliere **nuovo** progetto dal menu **file** > **Project**.
+2. Scegliere **nuovo** progetto dal menu **file** > .
 
-3. Espandere **Visual Basic** o **Visual C#** , quindi selezionare **Finestre**.
+3. Espandere **Visual Basic** o **Visual C#**, quindi selezionare **Finestre**.
 
 4. Selezionare il modello di progetto **applicazione WPF** .
 
@@ -96,7 +96,7 @@ Prima di poter creare i controlli associati a dati, è necessario definire un mo
 
    Verrà avviata la **Configurazione guidata origine dati** .
 
-3. Nella pagina **Seleziona un tipo di origine dati** selezionare **Database** , quindi fare clic su **Avanti**.
+3. Nella pagina **Seleziona un tipo di origine dati** selezionare **Database**, quindi fare clic su **Avanti**.
 
 4. Nella pagina **Scegli modello database** selezionare **Dataset** e scegliere **Avanti**.
 
@@ -106,9 +106,9 @@ Prima di poter creare i controlli associati a dati, è necessario definire un mo
 
    - Fare clic su **Nuova connessione** e creare una connessione al database AdventureWorksLT.
 
-6. Nella pagina **Salva la stringa di connessione nel file di configurazione applicazione** selezionare la casella di controllo **Sì, salva la connessione con nome** , quindi fare clic su **Avanti**.
+6. Nella pagina **Salva la stringa di connessione nel file di configurazione applicazione** selezionare la casella di controllo **Sì, salva la connessione con nome**, quindi fare clic su **Avanti**.
 
-7. Nella pagina **Seleziona oggetti di database** espandere **Tables** , quindi selezionare la tabella **Product (SalesLT)**.
+7. Nella pagina **Seleziona oggetti di database** espandere **Tables**, quindi selezionare la tabella **Product (SalesLT)**.
 
 8. Fare clic su **Fine**.
 
@@ -124,7 +124,7 @@ Per riempire il set di dati con i dati, usare il metodo `Fill` dell'oggetto `Pro
 
      Viene aperto Progettazione DataSet.
 
-2. Nella finestra di progettazione fare clic con il pulsante destro del mouse sulla query **Fill** , **GetData()** e scegliere **Configura**.
+2. Nella finestra di progettazione fare clic con il pulsante destro del mouse sulla query **Fill**, **GetData()** e scegliere **Configura**.
 
      Verrà avviata la **Configurazione guidata TableAdapter**.
 
@@ -166,7 +166,7 @@ Creare controlli che consentono di visualizzare i record dei clienti trascinando
 
 2. Espandere il nodo **Product**.
 
-3. Poiché per questo esempio alcuni campi non verranno visualizzati, fare clic sul menu a discesa accanto ai nodi seguenti e selezionare **Nessuno** :
+3. Poiché per questo esempio alcuni campi non verranno visualizzati, fare clic sul menu a discesa accanto ai nodi seguenti e selezionare **Nessuno**:
 
     - ProductCategoryID
 
@@ -181,7 +181,7 @@ Creare controlli che consentono di visualizzare i record dei clienti trascinando
 4. Fare clic sul menu a discesa accanto al nodo **ThumbNailPhoto** e selezionare **Image**.
 
     > [!NOTE]
-    > Per impostazione predefinita, il controllo predefinito degli elementi nella finestra **Origini dati** che rappresentano immagini è impostato su **Nessuno** , dal momento che le immagini vengono archiviate come matrici di byte nei database e le matrici di byte possono contenere qualsiasi elemento, da una matrice semplice di byte al file eseguibile di un'applicazione di grandi dimensioni.
+    > Per impostazione predefinita, il controllo predefinito degli elementi nella finestra **Origini dati** che rappresentano immagini è impostato su **Nessuno**, dal momento che le immagini vengono archiviate come matrici di byte nei database e le matrici di byte possono contenere qualsiasi elemento, da una matrice semplice di byte al file eseguibile di un'applicazione di grandi dimensioni.
 
 5. Dalla finestra **Origini dati** trascinare il nodo **Product** nella riga della griglia sotto la riga contenente i pulsanti.
 
@@ -244,7 +244,7 @@ Compilare ed eseguire l'applicazione. Verificare che sia possibile visualizzare 
 
     - È possibile fare clic **>** sui **<** pulsanti o per spostarsi tra gli altri record di prodotto.
 
-2. In uno dei record di prodotto modificare il valore **Dimensione** , quindi fare clic su **Salva modifiche**.
+2. In uno dei record di prodotto modificare il valore **Dimensione**, quindi fare clic su **Salva modifiche**.
 
 3. Chiudere l'applicazione, quindi riavviarla premendo **F5** in Visual Studio.
 
@@ -260,7 +260,7 @@ Al termine di questa procedura dettagliata, è possibile provare le seguenti att
 
 - Imparare a usare la finestra **Origini dati** in Visual Studio per visualizzare i dati correlati, ovvero i dati in una relazione padre-figlio, nei controlli WPF. Per altre informazioni, vedere [procedura dettagliata: visualizzare dati correlati in un'app WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

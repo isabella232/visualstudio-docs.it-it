@@ -12,15 +12,15 @@ helpviewer_keywords:
 - results window, code metrics
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d29109811c3dd5f354b510d046b33b0ba31d60e5
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c02f5a3b5175be4517a51a6dc477d6e59b38a762
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436810"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859567"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Usare la finestra Risultati metrica codice
 
@@ -32,9 +32,9 @@ La finestra **Risultati metrica codice** viene visualizzata automaticamente quan
 
 È possibile visualizzare la finestra Risultati metrica codice utilizzando una delle seguenti sequenze di menu:
 
-- Nel menu **analizza** scegliere **Windows**  >  **i risultati della metrica del codice** di Windows.
+- Nel menu **analizza** scegliere   >  **i risultati della metrica del codice** di Windows.
 
-- Scegliere **altri** risultati della metrica del codice di Windows dal menu **Visualizza**  >  **Code Metrics Results**.
+- Scegliere **altri** risultati della metrica del codice di Windows dal menu **Visualizza**  >  .
 
 Viene visualizzata la finestra **Risultati metrica codice** , anche se non contiene alcun risultato.
 
@@ -92,7 +92,7 @@ Per altre informazioni sugli elementi di lavoro Azure Boards, vedere [elementi d
 
 1. Fare clic con il pulsante destro del mouse sul risultato.
 
-2. Scegliere **Crea elemento di lavoro** , quindi fare clic sul tipo di elemento di lavoro che si desidera creare ( **bug** , **attività** e così via).
+2. Scegliere **Crea elemento di lavoro**, quindi fare clic sul tipo di elemento di lavoro che si desidera creare (**bug**, **attività** e così via).
 
 3. Completare il form dell'elemento di lavoro compilando tutti i campi obbligatori.
 
@@ -108,7 +108,7 @@ Per altre informazioni sugli elementi di lavoro Azure Boards, vedere [elementi d
 
 4. Scegliere **Salva tutto** dal menu **file** per salvare l'elemento di lavoro.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Valori della metrica del codice](../code-quality/code-metrics-values.md)
 - [Procedura: generare dati di metrica del codice](../code-quality/how-to-generate-code-metrics-data.md)

@@ -6,19 +6,19 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 32fbd3462f6a496d681f76480c3eb4451f325b35
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: ddcc5dd06a4e71d445c94c860b2a3ab92429ab2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518713"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859385"
 ---
 # <a name="add-new-connections"></a>Aggiungere nuove connessioni
 
-È possibile testare la connessione a un database o a un servizio ed esplorare il contenuto e gli schemi del database usando **Esplora server** , **Cloud Explorer** o **Esplora oggetti di SQL Server**. La funzionalità di queste finestre si sovrappone a una certa misura. Le differenze di base sono:
+È possibile testare la connessione a un database o a un servizio ed esplorare il contenuto e gli schemi del database usando **Esplora server**, **Cloud Explorer** o **Esplora oggetti di SQL Server**. La funzionalità di queste finestre si sovrappone a una certa misura. Le differenze di base sono:
 
 - Esplora server
 
@@ -54,8 +54,8 @@ Dopo aver scelto l'origine dati, fare clic su **Test connessione**. Se l'operazi
 
 ![Test della connessione](../data-tools/media/raddata-test-connection.png)
 
-Se il test ha esito positivo, si è pronti per creare un' *origine dati* , ovvero un termine di Visual Studio che significa realmente un *modello di dati* basato sul database o sul servizio sottostante.
+Se il test ha esito positivo, si è pronti per creare un' *origine dati*, ovvero un termine di Visual Studio che significa realmente un *modello di dati* basato sul database o sul servizio sottostante.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Visual Studio data tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

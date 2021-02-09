@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: d5e0c287565c001870f91f4912afad28864fe2ef
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9fb859d61ab31a554579f72121a18a541b2995a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434649"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858553"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leggere dati XML in un set di dati
 
@@ -35,7 +35,7 @@ ADO.NET fornisce semplici metodi per l'utilizzo di dati XML. In questa procedura
 
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto
 
-Creare un nuovo progetto di **App Windows Forms** per C# o Visual Basic. Denominare il progetto **ReadingXML**.
+Creare un nuovo progetto di **App Windows Form** per C# o Visual Basic. Denominare il progetto **ReadingXML**.
 
 ## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>Genera il file XML da leggere nel set di dati
 
@@ -43,7 +43,7 @@ Poiché questa procedura dettagliata è incentrata sulla lettura dei dati XML in
 
 1. Nel menu **Progetto** selezionare **Aggiungi nuovo elemento**.
 
-2. Selezionare **file XML** , denominare il file **authors.xml** e quindi selezionare **Aggiungi**.
+2. Selezionare **file XML**, denominare il file **authors.xml** e quindi selezionare **Aggiungi**.
 
    Il file XML viene caricato nella finestra di progettazione ed è pronto per la modifica.
 
@@ -152,7 +152,7 @@ L'interfaccia utente per questa applicazione è costituita dagli elementi seguen
 
 In questo passaggio viene creato un nuovo set di dati denominato `authors` . Per altre informazioni sui set di dati, vedere [DataSet Tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
-1. In **Esplora soluzioni** selezionare il file di origine per **Form1** , quindi selezionare il pulsante **Progettazione viste** sulla barra degli strumenti **Esplora soluzioni** .
+1. In **Esplora soluzioni** selezionare il file di origine per **Form1**, quindi selezionare il pulsante **Progettazione viste** sulla barra degli strumenti **Esplora soluzioni** .
 
 2. Dalla [casella degli strumenti, scheda dati](../ide/reference/toolbox-data-tab.md), trascinare un **set** di dati in **Form1**.
 
@@ -166,7 +166,7 @@ In questo passaggio viene creato un nuovo set di dati denominato `authors` . Per
 
 Il pulsante **Read XML** legge il file XML nel set di dati. Imposta quindi le proprietà del <xref:System.Windows.Forms.DataGridView> controllo che lo associano al set di dati.
 
-1. In **Esplora soluzioni** selezionare **Form1** , quindi selezionare il pulsante **Progettazione viste** sulla barra degli strumenti **Esplora soluzioni** .
+1. In **Esplora soluzioni** selezionare **Form1**, quindi selezionare il pulsante **Progettazione viste** sulla barra degli strumenti **Esplora soluzioni** .
 
 2. Selezionare il pulsante **lettura XML** .
 
@@ -183,7 +183,7 @@ Il pulsante **Read XML** legge il file XML nel set di dati. Imposta quindi le pr
 
 Il pulsante **Mostra schema** consente di creare un <xref:System.IO.StringWriter> oggetto compilato con lo schema e visualizzato nel <xref:System.Windows.Forms.TextBox> controllo.
 
-1. In **Esplora soluzioni** selezionare **Form1** , quindi fare clic sul pulsante **Visualizza finestra di progettazione** .
+1. In **Esplora soluzioni** selezionare **Form1**, quindi fare clic sul pulsante **Visualizza finestra di progettazione** .
 
 2. Selezionare il pulsante **Mostra schema** .
 
@@ -216,7 +216,7 @@ In questa procedura dettagliata vengono illustrate le nozioni di base per la let
 
 - Modificare i dati nel set di dati e scriverli in un database.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Accedere ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Strumenti XML in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

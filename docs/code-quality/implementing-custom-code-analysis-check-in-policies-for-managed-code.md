@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: fd029003-5671-4b24-8b6f-032e0a98b2e8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 567b6d2fe8906fd1a7a07ab73835439f8a9a9955
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8e682c3d3312be5c4f4639fc2642a398e321fc78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435424"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859879"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementare i criteri di archiviazione di analisi codice personalizzati per il codice gestito
 
@@ -44,11 +44,11 @@ Per creare un set di regole personalizzato per un progetto DevOps di Azure, crea
 
 2. Nel riquadro **cartelle** , fare clic con il pulsante destro del mouse sul progetto, quindi scegliere **nuova cartella**.
 
-3. Nel riquadro principale del controllo del codice sorgente fare clic con il pulsante destro del mouse su **nuova cartella** , scegliere **Rinomina** e digitare un nome per la cartella del set di regole.
+3. Nel riquadro principale del controllo del codice sorgente fare clic con il pulsante destro del mouse su **nuova cartella**, scegliere **Rinomina** e digitare un nome per la cartella del set di regole.
 
 ### <a name="to-create-the-check-in-policy-rule-set"></a>Per creare il set di regole dei criteri di archiviazione
 
-1. Scegliere **Nuovo** dal menu **File** , quindi fare clic su **File**.
+1. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **File**.
 
 2. Nell'elenco **categorie** fare clic su **generale**.
 
@@ -71,7 +71,7 @@ Per creare un set di regole personalizzato per un progetto DevOps di Azure, crea
 4. Nella finestra di dialogo **Archivia** è possibile aggiungere un commento, quindi fare clic su **Archivia**.
 
     > [!NOTE]
-    > Se sono già stati configurati criteri di archiviazione dell'analisi del codice per il progetto Azure DevOps ed è stata selezionata l'opzione **applica archiviazione per contenere solo file che fanno parte della soluzione corrente** , verrà generato un avviso di errore dei criteri. Nella finestra di dialogo errore criteri selezionare **Sostituisci errore criteri e continua archiviazione**. Aggiungere un commento obbligatorio, quindi fare clic su **OK**.
+    > Se sono già stati configurati criteri di archiviazione dell'analisi del codice per il progetto Azure DevOps ed è stata selezionata l'opzione **applica archiviazione per contenere solo file che fanno parte della soluzione corrente**, verrà generato un avviso di errore dei criteri. Nella finestra di dialogo errore criteri selezionare **Sostituisci errore criteri e continua archiviazione**. Aggiungere un commento obbligatorio, quindi fare clic su **OK**.
 
 ### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Per specificare il file del set di regole come criterio di archiviazione
 
@@ -90,7 +90,7 @@ Per creare un set di regole personalizzato per un progetto DevOps di Azure, crea
      **$/** `TeamProjectName` **/** `VersionControlPath`
 
     > [!NOTE]
-    > È possibile copiare il percorso usando una delle procedure seguenti in **Esplora controllo codice sorgente** :
+    > È possibile copiare il percorso usando una delle procedure seguenti in **Esplora controllo codice sorgente**:
 
     - Nel riquadro **cartelle** fare clic sulla cartella che contiene il file del set di regole. Copiare il percorso del controllo della versione della cartella che viene visualizzato nella casella **origine** e digitare manualmente il nome del file del set di regole.
 

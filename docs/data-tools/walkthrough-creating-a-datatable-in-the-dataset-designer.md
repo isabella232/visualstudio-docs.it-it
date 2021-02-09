@@ -11,15 +11,15 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a0dad1e6878adc73a08753dca21500499e652602
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: feec31fa0a9e34ad63e0b849d09084081e5710e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998252"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858176"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Procedura dettagliata: creare un oggetto DataTable nel Progettazione DataSet
 
@@ -31,7 +31,7 @@ In questa procedura dettagliata viene illustrato come creare un oggetto <xref:Sy
 
 2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
-3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
+3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Form** .
 
 4. Denominare il progetto **DataTableWalkthrough**, quindi scegliere **OK**.
 

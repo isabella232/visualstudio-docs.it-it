@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code analysis, rule sets
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 49d17e8321aa6567a6ae0936291a73d5cb854b5c
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 980c77067ac237dba13c8c888c358a0adeab6d1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436888"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859658"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Usare set di regole per raggruppare le regole di analisi del codice
 
@@ -30,7 +30,7 @@ I set di regole sono disponibili per l'analisi del [codice gestito](/dotnet/fund
 
 ## <a name="rule-set-format"></a>Formato set di regole
 
-Un set di regole viene specificato in formato XML in un file con *estensione ruleset* . Le regole, che sono costituite da un ID e da un' *azione* , sono raggruppate in base all'ID analizzatore e allo spazio dei nomi nel file.
+Un set di regole viene specificato in formato XML in un file con *estensione ruleset* . Le regole, che sono costituite da un ID e da un' *azione*, sono raggruppate in base all'ID analizzatore e allo spazio dei nomi nel file.
 
 Il contenuto di un file con *estensione ruleset* è simile al codice XML seguente:
 

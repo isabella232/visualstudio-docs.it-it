@@ -2,19 +2,19 @@
 title: Distribuire il contenitore Docker ASP.NET nel registro di sistema ACR
 description: Informazioni su come usare gli strumenti del contenitore di Visual Studio per distribuire un'app Web ASP.NET o ASP.NET Core in un registro contenitori
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.assetid: e5e81c5e-dd18-4d5a-a24d-a932036e78b9
 ms.devlang: dotnet
 ms.topic: how-to
 ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
-ms.openlocfilehash: 4626b64f5e733fec049d56dfe53407cc0fe31566
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74a74e17dcc909b529a0afad1d66959000c80455
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168696"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859541"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Distribuire un contenitore ASP.NET in un registro contenitori tramite Visual Studio
 
@@ -93,13 +93,13 @@ La procedura seguente illustra la creazione di un'app ASP.NET Core di base che v
 
     ![Finestra di dialogo Creare un'istanza di Registro Azure Container di Visual Studio](media/hosting-web-apps-in-docker/vs-acr-provisioning-dialog-2019.png)
 
-5. Scegliere **Crea**.
+5. Fare clic su **Crea**.
 
 6. Scegliere **fine** per completare il processo.
 ::: moniker-end
 
 È possibile ora eseguire il pull del contenitore dal registro a qualsiasi host in grado di eseguire immagini Docker, ad esempio [Istanze di Azure Container ](/azure/container-instances/container-instances-tutorial-deploy-app).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
-[Guida introduttiva: distribuire un'istanza di contenitore in Azure usando l'interfaccia della riga di comando](/azure/container-instances/container-instances-quickstart)
+[Guida introduttiva: Distribuire un'istanza di contenitore in Azure con l'interfaccia della riga di comando di Azure](/azure/container-instances/container-instances-quickstart)

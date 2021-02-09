@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4c7891df6de9f12df324c8d79eed5dda0e091d9a
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 4911cc5ced991389d2c7b03a405c4fe9e28c5cc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518752"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859359"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Aggiungere la convalida a un set di dati a più livelli
 L'aggiunta della convalida a un set di dati separato in una soluzione a più livelli è fondamentalmente uguale all'aggiunta della convalida a un set di dati a file singolo (un set di dati in un singolo progetto). Il percorso suggerito per eseguire la convalida dei dati è durante gli <xref:System.Data.DataTable.ColumnChanging> eventi e/o <xref:System.Data.DataTable.RowChanging> di una tabella dati.
@@ -168,7 +168,7 @@ Creare un gestore eventi per l' <xref:System.Data.DataTable.RowChanging> evento 
     }
     ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md)
 - [Procedura dettagliata: creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

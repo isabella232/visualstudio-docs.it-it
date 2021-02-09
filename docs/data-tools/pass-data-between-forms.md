@@ -1,6 +1,6 @@
 ---
 title: Passare dati da un form all'altro
-description: In questa procedura dettagliata di Windows Forms controlli, ottenere istruzioni dettagliate per il passaggio dei dati da un form a un altro.
+description: In questa procedura dettagliata di Windows Form controlli, ottenere istruzioni dettagliate per il passaggio dei dati da un form a un altro.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e740483a855bbfd736810dd4d41e3f4d01b7dd60
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9aad1bff0b70f87ff271f6d09cc7f8d34179136d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858566"
 ---
 # <a name="pass-data-between-forms"></a>Passare dati da un form all'altro
 
@@ -35,7 +35,7 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
 
 Le attività illustrate nella procedura dettagliata sono le seguenti:
 
-- Creazione di un nuovo progetto di **applicazione Windows Forms** .
+- Creazione di un nuovo progetto di **applicazione Windows Form** .
 
 - Creazione e configurazione di un set di [dati con la configurazione guidata origine dati](../data-tools/media/data-source-configuration-wizard.png).
 
@@ -67,15 +67,15 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
        Dopo un breve periodo di tempo, viene completata l'esecuzione della query e viene creato il database Northwind.
 
-## <a name="create-the-windows-forms-app-project"></a>Creare il progetto di app Windows Forms
+## <a name="create-the-windows-forms-app-project"></a>Creare il progetto di app Windows Form
 
 1. Nel menu **File** in Visual Studio selezionare **Nuovo** > **Progetto**.
 
 2. Espandere **Visual C#** o **Visual Basic** nel riquadro a sinistra, quindi selezionare **desktop di Windows**.
 
-3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Forms** .
+3. Nel riquadro centrale selezionare il tipo di progetto **App Windows Form** .
 
-4. Denominare il progetto **PassingDataBetweenForms** , quindi scegliere **OK**.
+4. Denominare il progetto **PassingDataBetweenForms**, quindi scegliere **OK**.
 
      Il progetto **PassingDataBetweenForms** verrà creato e aggiunto a **Esplora soluzioni**.
 
@@ -87,7 +87,7 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 3. Selezionare **Database** nella pagina **Scegliere un tipo di origine dati** e scegliere **Avanti**.
 
-4. Nella pagina **Scegli modello database** verificare che sia specificato **Dataset** , quindi scegliere **Avanti**.
+4. Nella pagina **Scegli modello database** verificare che sia specificato **Dataset**, quindi scegliere **Avanti**.
 
 5. Nella pagina **Seleziona connessione dati** eseguire una delle operazioni seguenti:
 
@@ -101,7 +101,7 @@ In questa procedura dettagliata vengono utilizzati SQL Server Express database l
 
 8. Espandere il nodo **Tables** nella pagina **Seleziona oggetti di database**.
 
-9. Selezionare le tabelle **Customers** e **Orders** , quindi scegliere **Fine**.
+9. Selezionare le tabelle **Customers** e **Orders**, quindi scegliere **Fine**.
 
      L'oggetto **NorthwindDataSet** viene aggiunto al progetto e le tabelle **Customers** e **Orders** vengono visualizzate nella finestra **Origini dati**.
 
@@ -156,15 +156,15 @@ Aggiungere una query TableAdapter a Form2 per caricare gli ordini per il cliente
 
 6. Fare clic su **Avanti**.
 
-7. Per il **riempimento di un nome DataTableMethod** , digitare `FillByCustomerID` .
+7. Per il **riempimento di un nome DataTableMethod**, digitare `FillByCustomerID` .
 
-8. Deselezionare l'opzione **Restituisci una DataTable** , quindi scegliere **Avanti**.
+8. Deselezionare l'opzione **Restituisci una DataTable**, quindi scegliere **Avanti**.
 
 9. Fare clic su **Fine**.
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Creare un metodo su Form2 per passare i dati a
 
-1. Fare clic con il pulsante destro del mouse su **Form2** e selezionare **Visualizza codice** per aprire **Form2** nell' **editor di codice**.
+1. Fare clic con il pulsante destro del mouse su **Form2** e selezionare **Visualizza codice** per aprire **Form2** nell'**editor di codice**.
 
 2. Aggiungere il codice riportato di seguito a **Form2** dopo il metodo `Form2_Load`:
 
@@ -200,6 +200,6 @@ A seconda dei requisiti dell'applicazione, si potranno eseguire diverse operazio
 
 - Aggiunta di funzionalità per il salvataggio dei dati nel database. Per altre informazioni, vedere [salvare i dati nel database](../data-tools/save-data-back-to-the-database.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Associare controlli Windows Form ai dati in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ad8b5f502953912e2de7383afa4a86ff749c5724
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: b9446fa0edb9302d4032f19f23c8adb8747d9cc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518594"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859307"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Associare oggetti come origini dati in Visual Studio
 
@@ -76,7 +76,7 @@ Nell'esempio seguente viene illustrato come eseguire il ciclo delle righe in una
 
 È possibile creare classi di raccolte per gli oggetti oppure utilizzare le raccolte tipizzate fornite automaticamente dal [componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component).
 
-Quando si crea una classe di raccolta personalizzata per gli oggetti, è consigliabile ereditare da <xref:System.ComponentModel.BindingList%601> . Questa classe generica fornisce funzionalità per l'amministrazione della raccolta, nonché la possibilità di generare eventi che inviano notifiche all'infrastruttura di associazione dati in Windows Forms.
+Quando si crea una classe di raccolta personalizzata per gli oggetti, è consigliabile ereditare da <xref:System.ComponentModel.BindingList%601> . Questa classe generica fornisce funzionalità per l'amministrazione della raccolta, nonché la possibilità di generare eventi che inviano notifiche all'infrastruttura di associazione dati in Windows Form.
 
 La raccolta generata automaticamente in <xref:System.Windows.Forms.BindingSource> Usa un oggetto <xref:System.ComponentModel.BindingList%601> per la raccolta tipizzata. Se l'applicazione non richiede funzionalità aggiuntive, è possibile gestire la raccolta all'interno di <xref:System.Windows.Forms.BindingSource> . Per ulteriori informazioni, vedere la <xref:System.Windows.Forms.BindingSource.List%2A> proprietà della <xref:System.Windows.Forms.BindingSource> classe.
 
@@ -126,7 +126,7 @@ Per visualizzare i dati negli oggetti per gli utenti, creare un'origine dati ogg
 
 ### <a name="modify-the-data-in-objects"></a>Modificare i dati negli oggetti
 
-Per modificare i dati in oggetti personalizzati che sono associati a dati a controlli di Windows Forms, è sufficiente modificare i dati nel controllo associato (o direttamente nelle proprietà dell'oggetto). L'architettura di data binding aggiorna i dati nell'oggetto.
+Per modificare i dati in oggetti personalizzati che sono associati a dati a controlli di Windows Form, è sufficiente modificare i dati nel controllo associato (o direttamente nelle proprietà dell'oggetto). L'architettura di data binding aggiorna i dati nell'oggetto.
 
 Se l'applicazione richiede il rilevamento delle modifiche e il rollback delle modifiche proposte ai valori originali, è necessario implementare questa funzionalità nel modello a oggetti. Per esempi di come le tabelle dati tengono traccia delle modifiche proposte, vedere <xref:System.Data.DataRowState> , <xref:System.Data.DataSet.HasChanges%2A> e <xref:System.Data.DataTable.GetChanges%2A> .
 
@@ -149,6 +149,6 @@ Nell'esempio seguente viene illustrato come utilizzare il `TableAdapter.Insert` 
 [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
 [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

@@ -3,18 +3,18 @@ title: Distribuire un contenitore ASP.NET Core per app Azure servizio
 description: Informazioni su come usare gli strumenti del contenitore di Visual Studio per distribuire un'app Web ASP.NET Core in un contenitore Docker per app Azure servizio
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: c0f45f14bc8b363a0c7c4e298effa67c5fccde18
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2e23658cfde1154f5b4df7ae7dade71b1569e35c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036340"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859645"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Distribuire un contenitore ASP.NET Core al servizio app Azure con Visual Studio
 
@@ -67,7 +67,7 @@ La procedura seguente illustra la creazione di un'app ASP.NET Core di base che v
 
    ![Screenshot della finestra di dialogo di pubblicazione](media/deploy-app-service/publish-app-service-linux.PNG)
 
-   Per pubblicare solo in un servizio app Azure senza usare Container Registry di Azure, scegliere **Crea nuovo**e fare clic su **pubblica**.
+   Per pubblicare solo in un servizio app Azure senza usare Container Registry di Azure, scegliere **Crea nuovo** e fare clic su **pubblica**.
 
 1. Verificare di aver eseguito l'accesso con l'account associato alla sottoscrizione di Azure e scegliere un nome univoco, una sottoscrizione, un gruppo di risorse, un piano di hosting e un registro contenitori, se applicabile, oppure accettare le impostazioni predefinite.
 
@@ -136,7 +136,7 @@ Da qui è possibile visualizzare le informazioni sul contenitore, visualizzare o
 
 ## <a name="clean-up-resources"></a>Pulire le risorse
 
-Per rimuovere tutte le risorse di Azure associate a questa esercitazione, eliminare il gruppo di risorse usando il [portale di Azure](https://portal.azure.com). Per trovare il gruppo di risorse associato a un'applicazione Web pubblicata, scegliere **Visualizza**  >  **altre**  >  **attività di pubblicazione Web**Windows, quindi scegliere l'icona dell'ingranaggio. Verrà visualizzata la scheda **pubblica** che contiene il gruppo di risorse.
+Per rimuovere tutte le risorse di Azure associate a questa esercitazione, eliminare il gruppo di risorse usando il [portale di Azure](https://portal.azure.com). Per trovare il gruppo di risorse associato a un'applicazione Web pubblicata, scegliere **Visualizza**  >  **altre**  >  **attività di pubblicazione Web** Windows, quindi scegliere l'icona dell'ingranaggio. Verrà visualizzata la scheda **pubblica** che contiene il gruppo di risorse.
 
 Nella portale di Azure scegliere gruppi di **risorse**, selezionare il gruppo di risorse per aprirne la pagina dei dettagli. Verificare che questo sia il gruppo di risorse corretto, quindi scegliere **Rimuovi gruppo di risorse**, digitare il nome e scegliere **Elimina**.
 

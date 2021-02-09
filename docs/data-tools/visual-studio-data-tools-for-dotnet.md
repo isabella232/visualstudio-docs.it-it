@@ -7,16 +7,16 @@ ms.topic: overview
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: a095d0fc026634c13ee9f74c8568e199e09f49db
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: f0a9609a578deb0c7c1b39a43f45b796b66a55ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998278"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858215"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio data tools per .NET
 
@@ -38,7 +38,7 @@ Il flusso di lavoro tipico è il seguente:
 
 3. Opzionale Usare gli strumenti di per generare e configurare un nuovo modello. I modelli basati su Entity Framework sono l'indicazione predefinita per le nuove applicazioni. Il modello, a seconda di quale utente si utilizza, è l'origine dati con cui interagisce l'applicazione. Il modello si trova logicamente tra il database o il servizio e l'applicazione. Vedere [aggiungere nuove origini dati](../data-tools/add-new-data-sources.md).
 
-4. Trascinare l'origine dati dalla finestra **origini dati** in un'area di progettazione Windows Forms, ASP.NET o Windows Presentation Foundation per generare il codice di data binding che visualizzerà i dati all'utente nel modo specificato. Vedere [associare i controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
+4. Trascinare l'origine dati dalla finestra **origini dati** in un'area di progettazione Windows Form, ASP.NET o Windows Presentation Foundation per generare il codice di data binding che visualizzerà i dati all'utente nel modo specificato. Vedere [associare i controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
 5. Aggiungere codice personalizzato per elementi come regole di business, ricerca e convalida dei dati oppure per sfruttare le funzionalità personalizzate esposte dal database sottostante.
 
