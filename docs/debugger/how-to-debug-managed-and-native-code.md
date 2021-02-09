@@ -11,16 +11,16 @@ helpviewer_keywords:
 - mixed mode debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 0b51a41a2b2df5ac685caebbf08606ae86b4230a
-ms.sourcegitcommit: e132a870ec198fdcec289227f1a0c1c48fef070c
+ms.openlocfilehash: 4b1d250ed5306ce101fd7482b740ad57514e4f0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344527"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899414"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Esercitazione: eseguire il debug C# e C++ nella stessa sessione di debug
 
@@ -28,7 +28,7 @@ Visual Studio consente di abilitare più di un tipo di debugger in una sessione 
 
 Questa esercitazione illustra come eseguire il debug di codice nativo da un'app gestita, ma è anche possibile [eseguire il debug di codice gestito da un'app nativa](../debugger/how-to-debug-in-mixed-mode.md). Il debugger supporta anche altri tipi di debug in modalità mista, ad esempio il debug [di codice Python e nativo](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md) e l'uso del debugger di script in tipi di app come ad esempio ASP.NET.
 
-In questa esercitazione:
+In questa esercitazione si apprenderà come:
 
 > [!div class="checklist"]
 > * Creare una semplice DLL nativa
@@ -42,7 +42,7 @@ In questa esercitazione:
 
 È necessario avere installato Visual Studio, con i carichi di lavoro seguenti:
 - **Sviluppo per desktop con C++**
-- **Sviluppo per desktop .NET** oppure **Sviluppo multipiattaforma .NET Core** , a seconda di quale tipo di app si vuole creare.
+- **Sviluppo per desktop .NET** oppure **Sviluppo multipiattaforma .NET Core**, a seconda di quale tipo di app si vuole creare.
 
 Se non si dispone di Visual Studio, passare alla pagina [download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
 
@@ -55,13 +55,13 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 1. Aprire Visual Studio e creare un progetto.
 
     ::: moniker range=">=vs-2019"
-    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL + Q** per aprire la casella di ricerca, digitare **progetto vuoto** , scegliere **modelli** , quindi scegliere **progetto vuoto** per C++. Nella finestra di dialogo visualizzata scegliere **Crea**. Quindi, digitare un nome simile a **Mixed_Mode_Debugging** e fare clic su **Crea**.
+    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL + Q** per aprire la casella di ricerca, digitare **progetto vuoto**, scegliere **modelli**, quindi scegliere **progetto vuoto** per C++. Nella finestra di dialogo visualizzata scegliere **Crea**. Quindi, digitare un nome simile a **Mixed_Mode_Debugging** e fare clic su **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dalla barra dei menu in alto scegliere **file**  >  **nuovo**  >  **progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** in **Visual C++** selezionare **Altro** e quindi **Progetto vuoto** nel riquadro centrale. Quindi, digitare un nome simile a **Mixed_Mode_Debugging** e fare clic su **OK**.
     ::: moniker-end
 
-    Se il modello di progetto **Progetto vuoto** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...** per aprire il programma di installazione di Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++** , quindi scegliere **Modifica**.
+    Se il modello di progetto **Progetto vuoto** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...** per aprire il programma di installazione di Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++**, quindi scegliere **Modifica**.
 
     Visual Studio crea il progetto.
 
@@ -71,7 +71,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 
     Visual Studio aggiunge il nuovo file di C++ in **Esplora soluzioni**.
 
-1. Copiare il codice seguente nel file *Mixed_Mode.cpp* :
+1. Copiare il codice seguente nel file *Mixed_Mode.cpp*:
 
     ```cpp
     #include "Mixed_Mode.h"
@@ -83,7 +83,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 
    Visual Studio aggiunge il nuovo file di intestazione in **Esplora soluzioni**.
 
-1. Copiare il codice seguente nel file *Mixed_Mode.h* :
+1. Copiare il codice seguente nel file *Mixed_Mode.h*:
 
     ```cpp
     #ifndef MIXED_MODE_MULTIPLY_HPP
@@ -111,13 +111,13 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
    > [!IMPORTANT]
    > Se si passa dalla piattaforma **x86** alla **x64** o viceversa, è necessario riconfigurare le proprietà per la nuova piattaforma.
 
-1. In **Proprietà di configurazione** nel riquadro a sinistra selezionare **Linker** > **Avanzate** e nell'elenco a discesa accanto a **Nessun punto di ingresso** selezionare **No**. Se è necessario apportare una modifica per impostare il campo su **No** , selezionare **Applica**.
+1. In **Proprietà di configurazione** nel riquadro a sinistra selezionare **Linker** > **Avanzate** e nell'elenco a discesa accanto a **Nessun punto di ingresso** selezionare **No**. Se è necessario apportare una modifica per impostare il campo su **No**, selezionare **Applica**.
 
 1. In **Proprietà di configurazione** selezionare **Generale** e nell'elenco a discesa accanto a **Tipo di configurazione** selezionare **Libreria dinamica (.dll)**. Selezionare **Apply** (Applica) e quindi **OK**.
 
    ![Passare a una DLL nativa](../debugger/media/mixed-mode-set-as-native-dll.png)
 
-1. Selezionare il progetto in **Esplora soluzioni** e quindi selezionare **Compila** > **Compila soluzione** , premere **F7** o fare clic con il pulsante destro del mouse sul progetto e selezionare **Compila**.
+1. Selezionare il progetto in **Esplora soluzioni** e quindi selezionare **Compila** > **Compila soluzione**, premere **F7** o fare clic con il pulsante destro del mouse sul progetto e selezionare **Compila**.
 
    Il progetto dovrebbe essere compilato senza errori.
 
@@ -126,7 +126,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 1. Aprire Visual Studio e creare un nuovo progetto.
 
     ::: moniker range=">=vs-2019"
-    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL + Q** per aprire la casella di ricerca, digitare **console** , scegliere **modelli** , quindi scegliere **app console (.net core)** o **app console (.NET Framework)** per C#. Nella finestra di dialogo visualizzata scegliere **Crea**.
+    Premere **ESC** per chiudere la finestra iniziale. Digitare **CTRL + Q** per aprire la casella di ricerca, digitare **console**, scegliere **modelli**, quindi scegliere **app console (.net core)** o **app console (.NET Framework)** per C#. Nella finestra di dialogo visualizzata scegliere **Crea**.
 
     Quindi, digitare un nome simile a **Mixed_Mode_Calling_App** e fare clic su **Crea**.
     ::: moniker-end
@@ -136,7 +136,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
     Quindi, digitare un nome simile a **Mixed_Mode_Calling_App** e fare clic su **OK**.
     ::: moniker-end
 
-    Se il modello di progetto **App console** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...** , aprendo così il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** , quindi scegliere **Modifica**.
+    Se il modello di progetto **App console** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...**, aprendo così il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET**, quindi scegliere **Modifica**.
 
     > [!NOTE]
     > È anche possibile aggiungere il nuovo progetto gestito alla soluzione C++ esistente. Il progetto viene creato in una nuova soluzione per rendere più difficile l'attività di debug in modalità mista.
@@ -185,7 +185,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 
 ## <a name="set-a-breakpoint-and-start-debugging"></a>Impostare un punto di interruzione e avviare il debug
 
-1. Nel progetto C# aprire *Program.cs*. Impostare un punto di interruzione nella riga di codice seguente facendo clic sul margine di estrema sinistra, selezionando la riga e premendo **F9** , oppure facendo clic sulla riga e selezionando **Punto di interruzione** > **Inserisci punto di interruzione**.
+1. Nel progetto C# aprire *Program.cs*. Impostare un punto di interruzione nella riga di codice seguente facendo clic sul margine di estrema sinistra, selezionando la riga e premendo **F9**, oppure facendo clic sulla riga e selezionando **Punto di interruzione** > **Inserisci punto di interruzione**.
 
     ```csharp
     int result = Multiply(7, 7);
@@ -193,7 +193,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 
     In corrispondenza del punto di interruzione viene visualizzato un cerchio rosso.
 
-1. Premere **F5** , selezionare la freccia verde sulla barra degli strumenti di Visual Studio, o selezionare **Debug** > **Avvia debug** per avviare il debug.
+1. Premere **F5**, selezionare la freccia verde sulla barra degli strumenti di Visual Studio, o selezionare **Debug** > **Avvia debug** per avviare il debug.
 
    Il debugger si fermerà in corrispondenza del punto di interruzione impostato. Una freccia gialla indica il punto in cui il debugger è attualmente in pausa.
 

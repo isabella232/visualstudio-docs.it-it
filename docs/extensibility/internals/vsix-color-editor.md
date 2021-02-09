@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66cb163a1943df9deb27ab4fa691b71ee116735e
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 1bf699a5dcb7f14c2a0ac88943b94d9e65c86450
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488063"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900088"
 ---
 # <a name="vsix-color-editor"></a>Editor dei colori VSIX
 Lo strumento Editor colori estensione Visual Studio consente di creare e modificare colori personalizzati per Visual Studio. Lo strumento consente inoltre di generare chiavi di risorsa del tema in modo che i colori possano essere utilizzati nel codice. Questo strumento è utile per la creazione di colori per un'estensione di Visual Studio che supporta i temi. Questo strumento consente di aprire i file con estensione pkgdef e XML. I temi di Visual Studio (file con estensione vstheme) possono essere usati con l'Editor colori dell'estensione di Visual Studio modificando l'estensione del file in formato XML. Inoltre, i file con estensione vstheme possono essere importati in un file XML corrente.
@@ -69,13 +69,13 @@ Lo strumento Editor colori estensione Visual Studio consente di creare e modific
 
 - Attivo
 
-- Inactive
+- Inattivo
 
 - MouseOver
 
 - MouseDown
 
-- Selezionato
+- Opzione selezionata
 
 - Con stato attivo
 

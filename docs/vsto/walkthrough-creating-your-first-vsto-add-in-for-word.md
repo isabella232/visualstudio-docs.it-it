@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6dc136b1c58f9c627787045b1259d07e27a6b8ad
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 43104ad8b26045056ca8d8d653fcb9625734f7eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527872"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899429"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Procedura dettagliata: creare il primo componente aggiuntivo VSTO per Word
   Questa procedura dettagliata introduttiva illustra come creare un componente aggiuntivo VSTO per Microsoft Office Word.  Le funzionalità create in questo tipo di soluzione sono disponibili per l'applicazione, indipendentemente da quali documenti vengano aperti.
@@ -135,7 +135,7 @@ ms.locfileid: "97527872"
 
 - Distribuzione di componenti aggiuntivi VSTO per Word: [distribuire una soluzione Office](../vsto/deploying-an-office-solution.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Soluzioni Word](../vsto/word-solutions.md)
 - [Componenti aggiuntivi VSTO di programma](../vsto/programming-vsto-add-ins.md)

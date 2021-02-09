@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: b06b5d65-424b-490f-bf58-97583cd7006a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 488fe471552256e8fad62bb6f831448811ca343f
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 51096d7a47de80be7434659936165ba0a29f7c67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903142"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899294"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>Procedura: eseguire il debug del metodo OnStart
 È possibile eseguire il debug di un servizio Windows stesso avviando il servizio e connettendo il debugger al processo del servizio. Per altre informazioni, vedere [Procedura: Eseguire il debug di applicazioni di servizio per Windows](/dotnet/framework/windows-services/how-to-debug-windows-service-applications). Per eseguire il debug del metodo <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> di un servizio Windows, è tuttavia necessario avviare il debugger all'interno del metodo.
@@ -54,6 +54,6 @@ ms.locfileid: "97903142"
 
 5. Viene avviata una nuova istanza di Visual Studio e l'esecuzione viene arrestata in corrispondenza del metodo `Debugger.Launch()` .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Debug del codice gestito](../debugger/debugging-managed-code.md)

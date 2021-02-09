@@ -19,21 +19,21 @@ helpviewer_keywords:
 ms.assetid: 7c4cd83a-f985-4c85-9022-fadb5dbd2b39
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cb63d217249cd24d6777fb4d87ae4fe4d00c755
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4059d2d4b8a5d69c0c3433699c42c5e88bc6b668
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351141"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900531"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Procedura: Pubblicare un progetto dotato di impostazioni locali specifiche
 Accade spesso che un'applicazione contenga componenti con impostazioni locali diverse. In questi casi si crea una soluzione con più progetti, che vengono poi pubblicati con impostazioni locali differenti. Questa procedura illustra come usare una macro per pubblicare il primo progetto in una soluzione con le impostazioni locali 'en'. Se si vuole provare la procedura con impostazioni locali diverse da 'en', impostare `localeString` nella macro in modo che corrisponda alle impostazioni locali in uso (ad esempio, 'de' o 'de-DE').
 
 > [!NOTE]
-> Quando si usa questa macro, il percorso di pubblicazione deve essere una condivisione UNC (Universal Naming Convention) o un URL valido. È anche necessario installare Internet Information Services (IIS) nel computer. Per installare IIS, fare clic sul menu **Start** , quindi scegliere **Pannello di controllo**. Fare doppio clic su **Installazione applicazioni**. In **Installazione applicazioni** fare clic su **Installazione componenti di Windows**. In **Aggiunta guidata componenti di Windows** selezionare la casella di controllo **Internet Information Services (IIS)** nell'elenco **Componenti**. Fare clic su **Fine** per chiudere la procedura guidata.
+> Quando si usa questa macro, il percorso di pubblicazione deve essere una condivisione UNC (Universal Naming Convention) o un URL valido. È anche necessario installare Internet Information Services (IIS) nel computer. Per installare IIS, fare clic sul menu **Start**, quindi scegliere **Pannello di controllo**. Fare doppio clic su **Installazione applicazioni**. In **Installazione applicazioni** fare clic su **Installazione componenti di Windows**. In **Aggiunta guidata componenti di Windows** selezionare la casella di controllo **Internet Information Services (IIS)** nell'elenco **Componenti**. Fare clic su **Fine** per chiudere la procedura guidata.
 
 ### <a name="to-create-the-publishing-macro"></a>Per creare la macro di pubblicazione
 
@@ -41,7 +41,7 @@ Accade spesso che un'applicazione contenga componenti con impostazioni locali di
 
 2. Creare un nuovo modulo macro. In Esplora macro selezionare **MyMacros**. Scegliere **Macro** dal menu **Strumenti** e quindi fare clic su **Nuovo modulo macro**. Denominare il modulo **PublishSpecificCulture**.
 
-3. In Esplora macro espandere il nodo **MyMacros** , quindi fare doppio clic sul modulo **PublishAllProjects** per aprirlo. In alternativa, scegliere **Macro** dal menu **Strumenti** e fare clic su **IDE macro**.
+3. In Esplora macro espandere il nodo **MyMacros**, quindi fare doppio clic sul modulo **PublishAllProjects** per aprirlo. In alternativa, scegliere **Macro** dal menu **Strumenti** e fare clic su **IDE macro**.
 
 4. In IDE macro aggiungere il codice seguente al modulo, dopo le istruzioni `Import`:
 
@@ -145,7 +145,7 @@ Accade spesso che un'applicazione contenga componenti con impostazioni locali di
 
 2. Nella finestra di dialogo **Nuovo progetto** selezionare **Applicazione Windows** nel nodo **Visual Basic**. Denominare il progetto *PublishLocales*.
 
-3. Fare clic su Form1. Nella finestra **Proprietà** , in **Progettazione** , modificare la proprietà **Lingua** da **(Predefinito)** a **Inglese**. Impostare la proprietà **Text** del form su **MyForm**.
+3. Fare clic su Form1. Nella finestra **Proprietà**, in **Progettazione**, modificare la proprietà **Lingua** da **(Predefinito)** a **Inglese**. Impostare la proprietà **Text** del form su **MyForm**.
 
      Notare che i file DDL delle risorse localizzate non vengono creati finché non sono necessari. Vengono creati, ad esempio, quando si modifica il testo del form o uno dei relativi controlli dopo avere specificato le nuove impostazioni locali.
 
@@ -161,9 +161,9 @@ Accade spesso che un'applicazione contenga componenti con impostazioni locali di
 
 6. Dopo il completamento del processo di pubblicazione verrà generato il messaggio "Publish succeeded for *PublishLocales\PublishLocales.vbproj*. La lingua di pubblicazione è' en '. " Fare clic su **OK** nella finestra di messaggio. Quando viene visualizzata la pagina Web di pubblicazione, fare clic su **Installa**.
 
-7. Cercare in *C:\Inetpub\wwwroot\PublishLocales\en*. Verranno visualizzati i file installati, ad esempio i manifesti, *setup.exe* e il file della pagina Web di pubblicazione, oltre alla DLL della risorsa localizzata. Per impostazione predefinita, ClickOnce aggiunge ai file EXE e DLL l'estensione *deploy* , che può essere rimossa dopo la distribuzione.
+7. Cercare in *C:\Inetpub\wwwroot\PublishLocales\en*. Verranno visualizzati i file installati, ad esempio i manifesti, *setup.exe* e il file della pagina Web di pubblicazione, oltre alla DLL della risorsa localizzata. Per impostazione predefinita, ClickOnce aggiunge ai file EXE e DLL l'estensione *deploy*, che può essere rimossa dopo la distribuzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Ambiente di sviluppo di macro](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))
 - [Finestra Esplora macro](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))

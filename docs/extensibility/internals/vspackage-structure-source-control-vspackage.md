@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5850dfb2448364124c8f1778eac48ac9c653269
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 886ff7112a5e455bfc07e51b30f4ac60eb10136a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487959"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899951"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struttura VSPackage (VSPackage di controllo del codice sorgente)
 
@@ -74,7 +74,7 @@ Il pacchetto VSPackage del controllo del codice sorgente implementa <xref:Micros
 
 Per un elenco completo delle interfacce che devono essere prese in considerazione da un VSPackage del controllo del codice sorgente, vedere [interfacce e servizi correlati](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Elementi di progettazione](../../extensibility/internals/source-control-vspackage-design-elements.md)
 - [Interfacce e servizi correlati](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88c8294042bb61939a52f4053f5b27ae915e01df
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5ed2dfccb47c980852bcdda423871f7517ef785a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487985"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900049"
 ---
 # <a name="vspackage-registration"></a>Registrazione di pacchetti VSPackage
 I pacchetti VSPackage devono consigliare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] che siano installati e che debbano essere caricati. Questo processo viene eseguito scrivendo le informazioni nel registro di sistema. Si tratta di un processo tipico di un programma di installazione.
@@ -57,6 +57,6 @@ I pacchetti VSPackage devono consigliare [!INCLUDE[vsprvs](../../code-quality/in
 
 - Il codice di registrazione automatica può negare l'accesso alle risorse di rete, ad esempio le librerie dei tipi, se un componente viene specificato come Run-from-source ed è elencato nella tabella SelfReg. Questo può causare un errore di installazione del componente durante un'installazione amministrativa.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
 - [Registrazione del pacchetto gestito](/previous-versions/bb166783(v=vs.100))

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 301b7a75-ecfa-46f1-9131-66cf3e4be147
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce15f389f22513e08b06c0d097cdac4aec3c35bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b09fb8c644adb5464519f0f30bd8deff0be821ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900091"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 Questa interfaccia viene inviata dal motore di debug (DE) a gestione debug sessione (SDM) quando una proprietà associata a un documento specifico sta per essere distrutta.
@@ -41,7 +41,7 @@ IDebugPropertyDestroyEvent2 : IUnknown
 |------------|-----------------|
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertydestroyevent2-getdebugproperty.md)|Ottiene la proprietà da eliminare definitivamente.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Vedere la sezione Osservazioni per [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md) per informazioni dettagliate sul motivo per cui vengono usati questi eventi.
 
 ## <a name="requirements"></a>Requisiti
@@ -51,7 +51,7 @@ IDebugPropertyDestroyEvent2 : IUnknown
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce di base](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

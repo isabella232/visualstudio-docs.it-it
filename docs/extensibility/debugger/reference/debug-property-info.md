@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34fc1b5103949a767a3ee448618cbb708ea6a48b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98cd4292692fe9d9b965790ce9a0a30d55423454
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737456"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899091"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 Contiene informazioni su una proprietà di debug.
@@ -73,7 +73,7 @@ Oggetto [IDebugProperty2](../../../extensibility/debugger/reference/idebugproper
 `dwAttrib`\
 Combinazione di flag dell'enumerazione [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) che descrive gli attributi di questa proprietà.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Una proprietà è un oggetto di una natura gerarchica che ha un nome, un tipo e un valore. Una proprietà, ad esempio, può descrivere le variabili locali, i parametri, le variabili e le espressioni di controllo e i registri.
 
 Questa struttura viene passata al metodo [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) in cui è compilata. Questa struttura viene restituita anche come parte di un elenco di questa struttura dall'interfaccia [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) che, a sua volta, viene restituita da una chiamata ai metodi [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) e [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) .
@@ -85,7 +85,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)

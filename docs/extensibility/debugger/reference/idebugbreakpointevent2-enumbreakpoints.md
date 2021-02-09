@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 606a9625-ee43-4e84-9a47-af9a50d2d005
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8744ec272fa121630e67f516ef1839c70b1a2d41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aaf3cac6d49ef2d09a9952ac41b2bb36262fbc7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899040"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
 Crea un enumeratore per tutti i punti di interruzione generati in corrispondenza della posizione del codice corrente.
@@ -46,9 +46,9 @@ out Restituisce un oggetto [IEnumDebugBoundBreakpoints2](../../../extensibility/
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Non tutti i punti di interruzione in una determinata posizione possono essere attivati in un determinato momento, ad esempio un punto di interruzione con una condizione non viene attivato fino a quando non viene soddisfatta tale condizione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

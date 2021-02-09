@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4a2f2b951881208d3995aeb1f5f1f655b80674f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 09337ee164c8b740e9aa8a044c4a9df385f01016
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349932"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900568"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Procedura: Installare i prerequisiti con un'applicazione ClickOnce
 Per tutte le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazioni è necessario che la versione corretta del .NET Framework sia installata in un computer prima di poter essere eseguita. molte applicazioni hanno anche altri prerequisiti. Quando si pubblica un' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione, è possibile scegliere un set di componenti dei prerequisiti da assemblare insieme all'applicazione. Al momento dell'installazione, verrà eseguito un controllo per ogni prerequisito per determinare se esiste già. in caso contrario, verrà installato prima di installare l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione.
@@ -40,7 +40,7 @@ Per tutte le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a
 
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Per specificare i prerequisiti per l'installazione di con un'applicazione ClickOnce
 
-1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **proprietà** dal menu **progetto** .
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **proprietà** dal menu **progetto** .
 
 2. Selezionare il riquadro **pubblica** .
 
@@ -54,7 +54,7 @@ Per tutte le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a
 
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Per specificare un percorso di download diverso per i prerequisiti
 
-1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **proprietà** dal menu **progetto** .
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **proprietà** dal menu **progetto** .
 
 2. Selezionare il riquadro **pubblica** .
 
@@ -69,6 +69,6 @@ Per tutte le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a
     > [!NOTE]
     > È necessario assicurarsi che i programmi di installazione per i componenti specificati esistano nel percorso specificato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

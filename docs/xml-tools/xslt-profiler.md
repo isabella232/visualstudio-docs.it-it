@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: f2214ab4d66dcad1ee92eda7d7acbb94b89e8eb6
-ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
+ms.openlocfilehash: 9dc37ceddd87fa0b6c8029c0acb8ea195f9ce10b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94531888"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900809"
 ---
 # <a name="the-xslt-profiler"></a>Profiler XSLT
 
@@ -53,7 +53,7 @@ Il Profiler XSLT è parte di Visual Studio ed è disponibile nel menu **XML** .
 
    - Funzioni la cui esecuzione richiede più tempo
 
-   Per impostazione predefinita, esistono tre colonne per ogni punto dati: il nome della funzione, il numero di chiamate in valore assoluto e un valore percentuale della funzione denominata per sommare le chiamate di funzione. Da ogni punto dati nella **visualizzazione di riepilogo** , è possibile passare a visualizzazioni più dettagliate facendo clic con il pulsante destro del mouse sui punti dati della funzione.
+   Per impostazione predefinita, esistono tre colonne per ogni punto dati: il nome della funzione, il numero di chiamate in valore assoluto e un valore percentuale della funzione denominata per sommare le chiamate di funzione. Da ogni punto dati nella **visualizzazione di riepilogo**, è possibile passare a visualizzazioni più dettagliate facendo clic con il pulsante destro del mouse sui punti dati della funzione.
 
 3. Selezionare l'opzione **visualizzazione funzione** nell'elenco a discesa **visualizzazione corrente** . La **visualizzazione** funzioni elenca le funzioni chiamate durante la profilatura. Per ordinare i dati è possibile fare clic sul nome di una colonna. Le colonne visualizzate per impostazione predefinita sono:
 
@@ -77,11 +77,11 @@ Il Profiler XSLT è parte di Visual Studio ed è disponibile nel menu **XML** .
 
 Selezionare la visualizzazione **chiamante/chiamato** nell'elenco a discesa **visualizzazione corrente** . La visualizzazione **chiamante/chiamato** include le tre parti distinte seguenti:
 
-- **Funzioni che hanno chiamato** : tutte le funzioni che hanno chiamato una particolare funzione sono elencate nella parte superiore della vista.
+- **Funzioni che hanno chiamato**: tutte le funzioni che hanno chiamato una particolare funzione sono elencate nella parte superiore della vista.
 
-- **Funzione corrente** : la funzione specifica chiamata viene elencata nella parte centrale della visualizzazione.
+- **Funzione corrente**: la funzione specifica chiamata viene elencata nella parte centrale della visualizzazione.
 
-- **Funzioni che sono state chiamate da** : tutte le funzioni chiamate dalla funzione specifica sono elencate nella parte inferiore della visualizzazione.
+- **Funzioni che sono state chiamate da**: tutte le funzioni chiamate dalla funzione specifica sono elencate nella parte inferiore della visualizzazione.
 
 Se una funzione denominata `SyncToNavigator` viene riportata nella parte centrale della visualizzazione, tutte le funzioni che hanno chiamato la funzione `SyncToNavigator` vengono visualizzate nella parte superiore della visualizzazione e tutte le funzioni che sono state chiamate da `SyncToNavigator` vengono elencate nella parte inferiore della visualizzazione.
 
@@ -93,22 +93,22 @@ Se una funzione denominata `SyncToNavigator` viene riportata nella parte central
 
 - Selezionare **visualizzazione albero delle chiamate** nell'elenco a discesa **visualizzazione corrente** . Questa visualizzazione è un albero dell'esecuzione del programma.
 
-   La **visualizzazione albero delle chiamate** Mostra la radice della struttura ad albero come nome del processo. Le funzioni sono i nodi dell'albero. Questa visualizzazione consente di esaminare determinate tracce di chiamata e di analizzare quali tracce hanno il maggiore impatto sulle prestazioni. La visualizzazione è simile alla **visualizzazione dello stack di chiamate** disponibile durante il debug. Oltre alle colonne nella **visualizzazione funzione** , nella **visualizzazione albero delle chiamate** è presente una colonna aggiuntiva per visualizzare il **nome del modulo**.
+   La **visualizzazione albero delle chiamate** Mostra la radice della struttura ad albero come nome del processo. Le funzioni sono i nodi dell'albero. Questa visualizzazione consente di esaminare determinate tracce di chiamata e di analizzare quali tracce hanno il maggiore impatto sulle prestazioni. La visualizzazione è simile alla **visualizzazione dello stack di chiamate** disponibile durante il debug. Oltre alle colonne nella **visualizzazione funzione**, nella **visualizzazione albero delle chiamate** è presente una colonna aggiuntiva per visualizzare il **nome del modulo**.
 
 - Selezionare **Contrassegni** nell'elenco a discesa **visualizzazione corrente** .
 
-   Con il Profiler XSLT sono presenti contrassegni che vengono visualizzati nel flusso di raccolta dati con un commento associato. I contrassegni sono parti del codice che dispongono di contatori. Indicando al Profiler XSLT di raccogliere contatori delle prestazioni XSLT, i contatori vengono raccolti ogni volta che viene eseguito uno di questi contrassegni. I dati vengono visualizzati in una tabella contenente l' **ID contrassegno** , il **nome del contrassegno** ( **programma Start** , il **programma finale** ) e il **timestamp**. I contrassegni non vengono aggregati e vengono visualizzati in ordine cronologico nella **visualizzazione Contrassegni** del rapporto di prestazioni.
+   Con il Profiler XSLT sono presenti contrassegni che vengono visualizzati nel flusso di raccolta dati con un commento associato. I contrassegni sono parti del codice che dispongono di contatori. Indicando al Profiler XSLT di raccogliere contatori delle prestazioni XSLT, i contatori vengono raccolti ogni volta che viene eseguito uno di questi contrassegni. I dati vengono visualizzati in una tabella contenente l' **ID contrassegno**, il **nome del contrassegno** (**programma Start**, il **programma finale**) e il **timestamp**. I contrassegni non vengono aggregati e vengono visualizzati in ordine cronologico nella **visualizzazione Contrassegni** del rapporto di prestazioni.
 
 ## <a name="select-modules-in-the-current-view"></a>Selezionare i moduli nella visualizzazione corrente
 
 - Selezionare **moduli** nell'elenco a discesa **visualizzazione corrente** .
 
-   La visualizzazione dei moduli è un elenco completo di tutte le funzioni aggregate a livello di modulo. Espandere o comprimere il nome del modulo per visualizzare o chiudere la visualizzazione dei dati relativi alle prestazioni del modulo. Per ordinare i dati è possibile fare clic sul nome di una colonna. Per impostazione predefinita, sono presenti sia valori assoluti che numeri percentuali per il **tempo inclusivo trascorso** , il tempo **esclusivo trascorso** , il **tempo inclusivo applicazione** , il **tempo esclusivo applicazione** e il **numero di chiamate**.
+   La visualizzazione dei moduli è un elenco completo di tutte le funzioni aggregate a livello di modulo. Espandere o comprimere il nome del modulo per visualizzare o chiudere la visualizzazione dei dati relativi alle prestazioni del modulo. Per ordinare i dati è possibile fare clic sul nome di una colonna. Per impostazione predefinita, sono presenti sia valori assoluti che numeri percentuali per il **tempo inclusivo trascorso**, il tempo **esclusivo trascorso**, il **tempo inclusivo applicazione**, il **tempo esclusivo applicazione** e il **numero di chiamate**.
 
 - Selezionare **processo** nell'elenco a discesa **visualizzazione corrente** .
 
-   Nella visualizzazione processo viene visualizzata una tabella che include l' **ID del processo** , il nome del **processo** , l'ora di **inizio** e l'ora di **fine**. Per ordinare i dati, è possibile fare clic sui nomi delle colonne.
+   Nella visualizzazione processo viene visualizzata una tabella che include l' **ID del processo**, il nome del **processo**, l'ora di **inizio** e l'ora di **fine**. Per ordinare i dati, è possibile fare clic sui nomi delle colonne.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura dettagliata: utilizzo della gerarchia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)

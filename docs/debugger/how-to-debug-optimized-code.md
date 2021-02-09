@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 971ceb59a17788076a1188e42d834f7b4bd704cc
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 19b09831aea0f7e38c7d095c1e549496569405c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903181"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899307"
 ---
 # <a name="how-to-debug-optimized-code"></a>Procedura: eseguire il debug di codice ottimizzato
 
@@ -91,7 +91,7 @@ for (x=0; x<10; x++)
 
  Si supponga di impostare un punto di interruzione in questa riga. Ci si aspetterebbe che il punto di interruzione venga raggiunto 10 volte, ma se il codice è ottimizzato, il punto di interruzione verrà raggiunto solo una volta. Ciò è dovuto al fatto che la prima istruzione imposta il valore di `x` su 0. Il compilatore riconosce che questa operazione deve essere eseguita solo una volta ed esce dal ciclo. Il punto di interruzione si sposta con essa. Le istruzioni che confrontano e incrementano `x` rimangono all'interno del ciclo. Quando si visualizza la finestra **Disassembly**, l'[unità di esecuzione](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100)) viene impostata automaticamente su Istruzione per consentire un maggiore controllo, utile se si esegue il codice un'istruzione alla volta.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Debug del codice nativo](../debugger/debugging-native-code.md)

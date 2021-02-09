@@ -15,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9e346022871a3aa25363aa717f1bf15a3d42a6
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4f4b5e8fe9d17a6de9abac2681074dcfc162e9b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349945"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900603"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procedura: Includere un file di dati in un'applicazione ClickOnce
-A ogni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione installata viene assegnata una directory dei dati nel disco locale del computer di destinazione in cui l'applicazione è in grado di gestire i propri dati. I file di dati possono includere file di qualsiasi tipo: file di testo, file XML o persino file di database di Microsoft Access ( *MDB* ). Nelle procedure riportate di seguito viene illustrato come aggiungere un file di dati di qualsiasi tipo nell' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione.
+A ogni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione installata viene assegnata una directory dei dati nel disco locale del computer di destinazione in cui l'applicazione è in grado di gestire i propri dati. I file di dati possono includere file di qualsiasi tipo: file di testo, file XML o persino file di database di Microsoft Access (*MDB*). Nelle procedure riportate di seguito viene illustrato come aggiungere un file di dati di qualsiasi tipo nell' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione.
 
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Per includere un file di dati tramite Mage.exe
 
@@ -84,5 +84,5 @@ A ogni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applica
 
      È necessario firmare di nuovo il manifesto di distribuzione perché l'hash del manifesto dell'applicazione è stato modificato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Accedere a dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

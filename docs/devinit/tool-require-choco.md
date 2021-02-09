@@ -5,18 +5,18 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 408c88a72f0d468d9a044460a0d0da2bdb5fcc31
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 68e944813e7084b13c15058e4f66aef4aadb9494
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440409"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900369"
 ---
 # <a name="require-choco"></a>require-choco
 
@@ -26,7 +26,7 @@ Lo `require-choco` strumento può essere utilizzato per installare [cioccolato](
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Type   | Obbligatoria | valore                                                                      |
+| Nome                                             | Tipo   | Obbligatoria | valore                                                                      |
 |--------------------------------------------------|--------|----------|----------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                      |
 | [**input**](#input)                              | stringa | No       | Non usato. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito.                           |

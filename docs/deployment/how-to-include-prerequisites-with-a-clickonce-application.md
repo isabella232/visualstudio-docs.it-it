@@ -7,18 +7,18 @@ ms.topic: how-to
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9199bb720cb94bc949a04bd59d5d3b6527108ed
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: e7791308de670b209433708e69ec473780342858
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351193"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900627"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Procedura: Includere i prerequisiti con un'applicazione ClickOnce
-Prima di poter distribuire i prerequisiti relativi al software con un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], è necessario scaricare i pacchetti di installazione per quei prerequisiti nel computer di sviluppo. Quando si pubblica un'applicazione e si sceglie **Scarica prerequisiti dallo stesso percorso dell'applicazione** , si verificherà un errore se i pacchetti di installazione non si trovano nella cartella **Pacchetti**.
+Prima di poter distribuire i prerequisiti relativi al software con un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], è necessario scaricare i pacchetti di installazione per quei prerequisiti nel computer di sviluppo. Quando si pubblica un'applicazione e si sceglie **Scarica prerequisiti dallo stesso percorso dell'applicazione**, si verificherà un errore se i pacchetti di installazione non si trovano nella cartella **Pacchetti**.
 
 > [!NOTE]
 > Per aggiungere un pacchetto di installazione per la .NET Framework, vedere [Guida alla distribuzione di .NET Framework per sviluppatori](/dotnet/framework/deployment/deployment-guide-for-developers).
@@ -39,7 +39,7 @@ Prima di poter distribuire i prerequisiti relativi al software con un'applicazio
    > Se non contiene alcun elemento **Name** `http://go.microsoft.com/fwlink` , aprire il file **Product.xml** nella cartella radice del prerequisito e individuare la stringa **fwlink** .
 
    > [!IMPORTANT]
-   > Alcuni prerequisiti hanno più pacchetti di installazione (ad esempio, per sistemi a 32 bit o a 64 bit). Se più elementi **Nome** contengono **fwlink** , è necessario ripetere i passaggi restanti per ciascuno di essi.
+   > Alcuni prerequisiti hanno più pacchetti di installazione (ad esempio, per sistemi a 32 bit o a 64 bit). Se più elementi **Nome** contengono **fwlink**, è necessario ripetere i passaggi restanti per ciascuno di essi.
 
 5. Incollare l'URL nella barra degli indirizzi del proprio browser e, quando viene richiesto se eseguire o salvare, scegliere **Salva**.
 
@@ -51,5 +51,5 @@ Prima di poter distribuire i prerequisiti relativi al software con un'applicazio
 
     È ora possibile distribuire il pacchetto di installazione con la propria applicazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

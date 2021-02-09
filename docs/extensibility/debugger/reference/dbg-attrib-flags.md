@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c8b3f52eff80c187d3c43b87cea804ace483169
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1093ab5252aa14418bebf4129d0c7d050d0e11d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737552"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899164"
 ---
 # <a name="dbg_attrib_flags"></a>DBG_ATTRIB_FLAGS
 Vengono descritti i vari attributi per un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) o un'interfaccia [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) . Membro della struttura [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) .
@@ -298,7 +298,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  `DBG_ATTRIB_MULTI_CUSTOM_VIEWERS`\
  Indica che all'oggetto sono associati più visualizzatori personalizzati.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 > [!NOTE]
 > I valori in questa enumerazione non sono effettivamente definiti nell'assembly per C#. Al contrario, è necessario copiare le definizioni nel file di origine.
@@ -314,7 +314,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

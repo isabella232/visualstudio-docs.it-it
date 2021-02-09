@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e372d3163dcef84d76d77e54c66cf9f7c788e213
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f090729cdd0d08d39cf97cab9c3899f0b77c80eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349854"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900473"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedura: Pubblicare un'applicazione WPF con gli stili di visualizzazione abilitati
 
@@ -51,7 +51,7 @@ Gli stili di visualizzazione consentono di modificare l'aspetto dei controlli co
 
     **Per aprire il file manifesto in un progetto Visual Basic**
 
-    1. Nella barra dei menu scegliere **progetto** , proprietà *NomeProgetto* **Properties** , dove *NomeProgetto* è il nome del progetto WPF.
+    1. Nella barra dei menu scegliere **progetto**, proprietà *NomeProgetto* , dove *NomeProgetto* è il nome del progetto WPF.
 
          Verranno visualizzate le pagine delle proprietà per il progetto WPF.
 
@@ -61,7 +61,7 @@ Gli stili di visualizzazione consentono di modificare l'aspetto dei controlli co
 
     **Per aprire il file manifesto in un progetto C#**
 
-    1. Nella barra dei menu scegliere **progetto** , proprietà *NomeProgetto* **Properties** , dove *NomeProgetto* è il nome del progetto WPF.
+    1. Nella barra dei menu scegliere **progetto**, proprietà *NomeProgetto* , dove *NomeProgetto* è il nome del progetto WPF.
 
          Verranno visualizzate le pagine delle proprietà per il progetto WPF.
 
@@ -97,7 +97,7 @@ Gli stili di visualizzazione consentono di modificare l'aspetto dei controlli co
     </asmv1:assembly>
     ```
 
-2. In Blocco note, fare clic su **File** , quindi fare clic su **Salva con nome**.
+2. In Blocco note, fare clic su **File**, quindi fare clic su **Salva con nome**.
 
 3. Nella finestra di dialogo **Salva con nome** selezionare **tutti i file** nell'elenco a discesa **Salva come tipo** .
 
@@ -112,7 +112,7 @@ Gli stili di visualizzazione consentono di modificare l'aspetto dei controlli co
 
 1. Aprire il **prompt dei comandi di Visual Studio**.
 
-    Per ulteriori informazioni su come aprire il **prompt dei comandi di Visual Studio** , vedere [prompt dei comandi](/dotnet/framework/tools/developer-command-prompt-for-vs).
+    Per ulteriori informazioni su come aprire il **prompt dei comandi di Visual Studio**, vedere [prompt dei comandi](/dotnet/framework/tools/developer-command-prompt-for-vs).
 
    > [!NOTE]
    > I passaggi rimanenti fanno i presupposti seguenti sulla soluzione:
@@ -177,7 +177,7 @@ Gli stili di visualizzazione consentono di modificare l'aspetto dei controlli co
 
    Dopo aver eseguito questi passaggi, è possibile spostare i file pubblicati nel percorso da cui si desidera che gli utenti finali possano installare l'applicazione. Se si intende aggiornare spesso la soluzione, è possibile spostare questi comandi in uno script ed eseguire lo script ogni volta che si pubblica una nuova versione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 -[Risoluzione di errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [Panoramica degli stili di visualizzazione](/windows/desktop/Controls/visual-styles-overview)

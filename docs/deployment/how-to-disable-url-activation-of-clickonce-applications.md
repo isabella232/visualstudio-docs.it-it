@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: db31a16b-960f-4264-91d7-c7c40f876068
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46e46278f5465de029aa9536744f51843397d743
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1e721199716abc47e89dc9fd2c7c510926853439
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351232"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900690"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Procedura: Disabilitare l'attivazione dell'URL delle applicazioni ClickOnce
 
@@ -45,6 +45,6 @@ Questa procedura utilizza lo strumento Windows Software Development Kit (SDK) Ma
 
 4. Salvare e firmare il manifesto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)

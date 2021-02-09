@@ -6,15 +6,15 @@ ms.date: 10/12/2020
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 675636b7abca10fb2f9f1898d753155235830f86
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 2af4bc47d711275716eea528a4d9bd816408322f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205723"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901132"
 ---
 # <a name="analyze-memory-usage"></a>Analizzare l'utilizzo della memoria
 
@@ -40,7 +40,7 @@ Gli sviluppatori C++ possono utilizzare lo strumento di utilizzo della memoria i
 
 [Blog su Visual C++: Profilatura della memoria in Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

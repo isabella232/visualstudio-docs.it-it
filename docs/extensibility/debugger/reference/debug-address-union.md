@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad531ee10914e404459632c98aae4a9bbda8e437
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76fc15389242de1011851492e3a68dc001534582
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737534"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899137"
 ---
 # <a name="debug_address_union"></a>DEBUG_ADDRESS_UNION
 Vengono descritti i diversi tipi di indirizzi.
@@ -92,7 +92,7 @@ Valore dell'enumerazione [ADDRESS_KIND](../../../extensibility/debugger/referenc
 `unionmember`\
 [Solo C#] È necessario effettuare il marshalling di questo valore al tipo di struttura appropriato in base a `dwKind` . Vedere la sezione Osservazioni per l'associazione tra `dwKind` e l'interpretazione dell'Unione.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questa struttura fa parte della struttura [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) e rappresenta uno dei diversi tipi di indirizzi (la `DEBUG_ADDRESS` struttura viene compilata da una chiamata al metodo [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) ).
 
  [Solo C#] Nella tabella seguente viene illustrato come interpretare il `unionmember` membro per ogni tipo di indirizzo. Nell'esempio viene illustrato come eseguire questa operazione per un tipo di indirizzo.
@@ -141,7 +141,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

@@ -15,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: ae3e198a-b994-4ecb-a633-dec98bd4fd45
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f11873a3e101c0c37d327d6869ee63fe48f5f42
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 20718e0ef9351b055bbefa28eb751eac88a67b1b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205346"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901158"
 ---
 # <a name="analyze-performance-tools-data"></a>Analizzare i dati degli strumenti per le prestazioni
 I report sulle prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] consentono di visualizzare e analizzare i problemi di prestazioni delle applicazioni. Questa sezione offre una panoramica dei report sulle prestazioni e delle visualizzazioni che è possibile usare per esaminare i dati sulle prestazioni.
@@ -42,7 +42,7 @@ I report sulle prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](.
 
 - [Salvare ed esportare i dati degli strumenti per le prestazioni](../profiling/saving-and-exporting-performance-tools-data.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Esplora prestazioni](../profiling/performance-explorer.md)
 - [Profilatura in Visual Studio](../profiling/index.yml)
 - [Presentazione degli strumenti di profilatura](../profiling/profiling-feature-tour.md)

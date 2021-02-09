@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 8fc482e10ae1ca08230feb38eb2997d0c4dcab00
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 40fc899aecc3b8aea239703080d8db4efcfaec52
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205736"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901187"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analizzare il consumo delle risorse e l'attività del thread dell'interfaccia utente (XAML)
 
@@ -124,7 +124,7 @@ Usare la barra degli strumenti **Dettagli sequenza temporale** per ordinare, fil
 |![Elenco dettagli filtro sequenza temporale](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtra l'elenco in base a categorie selezionate e alla lunghezza degli eventi.|
 |![Personalizzare le informazioni sui dettagli della cronologia](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Permette di specificare le annotazioni negli eventi.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Blog del team WPF: nuovo strumento di analisi delle prestazioni dell'interfaccia utente per applicazioni WPF](/archive/blogs/wpf/new-ui-performance-analysis-tool-for-wpf-applications)
 - [Procedure consigliate per le prestazioni per app UWP scritte in C++, C# e Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))

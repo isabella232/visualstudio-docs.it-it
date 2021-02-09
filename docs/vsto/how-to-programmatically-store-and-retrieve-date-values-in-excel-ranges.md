@@ -19,15 +19,15 @@ helpviewer_keywords:
 - date values
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 673969e13b2f49b91416d730533be0f075813781
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 892f8db0a6cbeee485c8139c2d6e4614f17c1cc2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899401"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Procedura: archiviare e recuperare valori di data in intervalli di Excel a livello di codice
   È possibile archiviare e recuperare i valori in un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo o in un oggetto intervallo di Excel nativo.
@@ -83,7 +83,7 @@ ms.locfileid: "97523579"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#27)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Usare gli intervalli](../vsto/working-with-ranges.md)
 - [Panoramica del modello a oggetti di Excel](../vsto/excel-object-model-overview.md)
 - [NamedRange (controllo)](../vsto/namedrange-control.md)

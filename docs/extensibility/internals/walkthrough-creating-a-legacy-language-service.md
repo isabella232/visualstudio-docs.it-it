@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fcc4004542f9a566d6c6bfa820cbb8c2e1846fa
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 61f4dfd8068cc44fca97eb5e07ddbf62b21ee1f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487933"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899917"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Procedura dettagliata: Creazione di un servizio di linguaggio legacy
 L'uso delle classi di linguaggio del Framework di pacchetto gestito (MPF) per implementare un servizio di linguaggio in [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] è semplice. È necessario un pacchetto VSPackage per ospitare il servizio di linguaggio, il servizio di linguaggio e un parser per la lingua in uso.
@@ -132,5 +132,5 @@ L'uso delle classi di linguaggio del Framework di pacchetto gestito (MPF) per im
 
      Digitare, ad esempio, `public override` per visualizzare un elenco di tutti i metodi di cui è possibile eseguire l'override in tale classe.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Implementazione di un servizio di linguaggio legacy](../../extensibility/internals/implementing-a-legacy-language-service1.md)

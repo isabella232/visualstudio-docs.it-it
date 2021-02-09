@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: d7f51e2a-1b72-489c-b7b6-4af7b7e4d663
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 89a0e559fbdf2824d334903a668bbdef8dbb6fff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1f0a93c14c99c885a9ea8af0f1d650b508efb76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731281"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899028"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromprimitive"></a>IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
 Recupera un tipo dato il tipo primitivo.
@@ -50,5 +50,5 @@ out Restituisce il [IDebugField](../../../extensibility/debugger/reference/idebu
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)

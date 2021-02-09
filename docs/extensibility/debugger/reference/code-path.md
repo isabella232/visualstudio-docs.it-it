@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2d4b2890-4c9d-47e1-83c0-df9c6436427f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3148b75e56b61ee545c6bc82b972c13572199af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4bba942b0740fba98e88a3cddcecfcd43d7d215
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737673"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900307"
 ---
 # <a name="code_path"></a>CODE_PATH
 Descrive un metodo o una chiamata di funzione.
@@ -28,7 +28,7 @@ Descrive un metodo o una chiamata di funzione.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-typedef struct tagCODE_PATH { 
+typedef struct tagCODE_PATH { 
     BSTR                bstrName;
     IDebugCodeContext2* pCode;
 } CODE_PATH;
@@ -48,7 +48,7 @@ Nome del percorso del codice.
 `pCode`\
 Oggetto [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che identifica la posizione del codice per eseguire un'istruzione in una funzione.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questa struttura viene utilizzata per implementare l'esecuzione di un'istruzione in una funzione. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) restituisce tutte le chiamate dalla posizione corrente nel programma di cui è in corso il debug. Questa struttura rappresenta una chiamata di questo tipo.
 
 ## <a name="requirements"></a>Requisiti
@@ -58,7 +58,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)

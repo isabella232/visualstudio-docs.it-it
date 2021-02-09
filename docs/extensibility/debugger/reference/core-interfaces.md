@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bf01ffceb122ad99d5ecca8fabfaa102a8fc505
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee2f44e5d75d44cfc1c903d462e7a1df360eeefa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737585"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899178"
 ---
 # <a name="core-interfaces"></a>Interfacce di base
 Le interfacce seguenti sono le interfacce di base per l'estensione del debugger tramite [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] .
@@ -51,7 +51,7 @@ Le interfacce seguenti sono le interfacce di base per l'estensione del debugger 
 
 - [Frame dello stack](#StackFrames)
 
-- [Threads](#Threads)
+- [Thread](#Threads)
 
 - [Visualizzatori di tipi](#TypeVisualizers)
 
@@ -303,6 +303,6 @@ Le interfacce seguenti sono le interfacce di base per l'estensione del debugger 
 |[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|Fornisce metodi per ottenere l'accesso ai dati da passare a un visualizzatore di tipi.|
 |[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)|EE|Rappresenta una proprietà che fornisce l'accesso alle implementazioni di [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) .|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 - [Creazione di un motore di debug personalizzato](../../../extensibility/debugger/creating-a-custom-debug-engine.md)

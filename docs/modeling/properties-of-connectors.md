@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, connectors
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d456f251c5c8af21113593469b019094207cbf2
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b09ec4278dd78f797067c3acdf3152736fb395c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899854"
 ---
 # <a name="properties-of-connectors"></a>Proprietà dei connettori
 I connettori rappresentano le relazioni di dominio in una finestra di progettazione generata.
@@ -29,8 +29,8 @@ I connettori rappresentano le relazioni di dominio in una finestra di progettazi
 |-|-|-|
 |Colore|Colore di questo connettore.|Nero|
 |Stile tratteggiato|Stile tratteggiato per la linea per questo connettore (tinta unita, trattino, punto, DashDot, TrattoPuntoPunto o personalizzato).|Tinta unita|
-|Stile dell'estremità di origine|Stile dell'estremità di origine per questo connettore (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond o None).|Nessuno|
-|Stile fine destinazione|Stile dell'estremità di destinazione per questo connettore (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond o None).|Nessuno|
+|Stile dell'estremità di origine|Stile dell'estremità di origine per questo connettore (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond o None).|nessuno|
+|Stile fine destinazione|Stile dell'estremità di destinazione per questo connettore (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond o None).|nessuno|
 |Colore del testo|Colore utilizzato per gli elementi Decorator di testo associati a questo connettore.|Nero|
 |Thickness|Spessore della linea per il connettore, misurata in pollici.|0,03125|
 |Modificatore di accesso|Livello di accesso della classe ( `public` o `internal` ).|Pubblico|
@@ -45,7 +45,7 @@ I connettori rappresentano le relazioni di dominio in una finestra di progettazi
 |Note|Note informali associate a questo connettore.|\<none>|
 |Stile di routing|Stile utilizzato per il routing del connettore. Un `Rectilinear` connettore esegue le svolte con angolo destro come richiesto; un `Straight` connettore non lo esegue.|Rettilineo|
 |Colore esposto come proprietà<br /><br /> Stile tratteggiato esposto come proprietà<br /><br /> Spessore esposto come proprietà<br /><br /> Espone il colore del testo|Se `True` , l'utente può impostare la proprietà dichiarata di una forma. Per impostare questa impostazione, fare clic con il pulsante destro del mouse sulla definizione della forma e scegliere **Aggiungi esposti**.|Falso|
-|Description|Utilizzato per documentare la finestra di progettazione generata.|\<none>|
+|Descrizione|Utilizzato per documentare la finestra di progettazione generata.|\<none>|
 |Nome visualizzato|Nome che verrà visualizzato nella finestra di progettazione generata per questo connettore.|\<none>|
 |Testo della descrizione comando fisso|Testo utilizzato per una descrizione comando fissa.|\<none>|
 |Parola chiave della Guida|Parola chiave utilizzata per indicizzare la Guida sensibile al contesto per questo elemento.|\<none>|

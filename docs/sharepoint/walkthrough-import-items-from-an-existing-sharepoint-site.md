@@ -13,15 +13,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7eeff880538d98f997f48f82c49d01045e834031
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 861b6ff20f9ceb73c279e54fa89ee513389b6b91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970120"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900957"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Procedura dettagliata: importare elementi da un sito di SharePoint esistente
   In questa procedura dettagliata viene illustrato come importare elementi da un sito di SharePoint esistente in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto SharePoint.
@@ -124,7 +124,7 @@ ms.locfileid: "95970120"
 
 7. Nella casella **selezionare gli elementi da importare** deselezionare tutte le caselle di controllo nell'elenco ad eccezione di **colonna test**, quindi scegliere il pulsante **fine** .
 
-    Poiché l'elenco contiene molti elementi, è possibile scegliere i **Ctrl** + **A** tasti CTRL per scegliere tutti gli elementi dell'elenco, scegliere il tasto barra spaziatrice per deselezionare tutte le caselle di controllo, quindi selezionare solo la casella di controllo accanto all'elemento **colonna test** .
+    Poiché l'elenco contiene molti elementi, è possibile scegliere i  +  tasti CTRL per scegliere tutti gli elementi dell'elenco, scegliere il tasto barra spaziatrice per deselezionare tutte le caselle di controllo, quindi selezionare solo la casella di controllo accanto all'elemento **colonna test** .
 
     Al termine dell'operazione di importazione, viene creato un nuovo progetto denominato **WspImportProject1** contenente una cartella denominata **Fields**. In questa cartella è la **colonna di test** colonna sito personalizzata e il relativo file di definizione *Elements.xml*.
 

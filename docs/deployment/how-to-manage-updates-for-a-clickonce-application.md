@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bc2fd7b9e58cac0b013c511e17a6a9744e87ca39
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 03b8b3899a90588ca747ca93c0ff6bd7279e1bec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351180"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900553"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Procedura: Gestire gli aggiornamenti per un'applicazione ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni possono verificare la disponibilità di aggiornamenti automaticamente o a livello di codice. Gli sviluppatori hanno molta flessibilità nell'specificare quando e come vengono eseguiti i controlli di aggiornamento, se gli aggiornamenti sono obbligatori e quando l'applicazione deve verificare la disponibilità di aggiornamenti.
@@ -43,7 +43,7 @@ ms.locfileid: "94351180"
 
 ### <a name="to-check-for-updates-before-the-application-starts"></a>Per verificare la disponibilità di aggiornamenti prima dell'avvio dell'applicazione
 
-1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
@@ -55,7 +55,7 @@ ms.locfileid: "94351180"
 
 ### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>Per cercare gli aggiornamenti in background dopo l'avvio dell'applicazione
 
-1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
@@ -69,7 +69,7 @@ ms.locfileid: "94351180"
 
 ### <a name="to-specify-a-minimum-required-version-for-the-application"></a>Per specificare una versione minima richiesta per l'applicazione
 
-1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
@@ -77,11 +77,11 @@ ms.locfileid: "94351180"
 
 4. Nella finestra di dialogo **Aggiornamenti applicazione** assicurarsi che la casella **di controllo l'applicazione deve verificare la disponibilità di aggiornamenti** sia selezionata.
 
-5. Selezionare la **casella di controllo specificare una versione minima richiesta per l'applicazione** , quindi immettere i numeri **principale** , **secondario** , **Build** e **Revisione** per l'applicazione.
+5. Selezionare la **casella di controllo specificare una versione minima richiesta per l'applicazione** , quindi immettere i numeri **principale**, **secondario**, **Build** e **Revisione** per l'applicazione.
 
 ### <a name="to-specify-a-different-update-location"></a>Per specificare un percorso di aggiornamento diverso
 
-1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
@@ -93,7 +93,7 @@ ms.locfileid: "94351180"
 
 ### <a name="to-check-for-updates-programmatically"></a>Per verificare la disponibilità di aggiornamenti a livello di codice
 
-1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Pubblica**.
 
@@ -107,7 +107,7 @@ ms.locfileid: "94351180"
 
 7. Compilare l'applicazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:System.Deployment.Application.ApplicationDeployment>
 - [Finestra di dialogo Aggiornamenti applicazione](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))
 - [Scegliere una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)

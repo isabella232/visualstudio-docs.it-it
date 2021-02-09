@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 73cd3e9d-cd72-4ad2-8cae-94d6bb6b01e0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: db31d0182c598b32933cf2d4260706a2252a9b6f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 758aecc4f2bf280fd7ff5ca7ca482ee6a3e3d68d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351167"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900640"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Procedura: Abilitare le impostazioni di sicurezza ClickOnce
 Per pubblicare l'applicazione, è necessario abilitare la sicurezza dall'accesso di codice per le applicazioni ClickOnce. Questa operazione viene eseguita automaticamente quando si pubblica un'applicazione tramite la pubblicazione guidata.
@@ -34,7 +34,7 @@ Per pubblicare l'applicazione, è necessario abilitare la sicurezza dall'accesso
 
 ### <a name="to-enable-clickonce-security-settings"></a>Per abilitare le impostazioni di sicurezza ClickOnce
 
-1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Security** (Sicurezza).
 
@@ -47,7 +47,7 @@ Per pubblicare l'applicazione, è necessario abilitare la sicurezza dall'accesso
 
 ### <a name="to-disable-clickonce-security-settings"></a>Per disabilitare le impostazioni di sicurezza ClickOnce
 
-1. Con un progetto selezionato in **Esplora soluzioni** , scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
 2. Fare clic sulla scheda **Security** (Sicurezza).
 
@@ -58,6 +58,6 @@ Per pubblicare l'applicazione, è necessario abilitare la sicurezza dall'accesso
     > [!NOTE]
     > Ogni volta che l'applicazione viene pubblicata con la pubblicazione guidata, questa casella di controllo viene selezionata. è necessario cancellarlo di nuovo dopo ogni pubblicazione completata correttamente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Sicurezza dall'accesso di codice per applicazioni ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)

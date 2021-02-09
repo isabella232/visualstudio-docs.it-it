@@ -8,15 +8,15 @@ helpviewer_keywords:
 - VSPackages, deployment considerations
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97538be6c174f76072a6ca006db6443aa3fcdb57
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 81e298229bb12d906a3061e0b547553518cce204
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487972"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899999"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scenari di installazione di pacchetti VSPackage
 
@@ -78,7 +78,7 @@ In questo caso, il pacchetto VSPackage è un pacchetto VSPackage gestito install
 
 Per altre informazioni sulla distribuzione di assembly affiancati, vedere [semplificare la distribuzione e la risoluzione di dll Hello con la .NET Framework](/previous-versions/dotnet/articles/ms973843(v=msdn.10)).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
 - [Supporto di più versioni di Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

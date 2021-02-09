@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5ca8c18c0ed69080a14ba31d4da6d80fa9ae6d4
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 88d8147dded05c6bec54682e76c6a8c1826b43e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382611"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900795"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Riferimenti alle API non gestite ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API pubbliche non gestite da dfshim.dll.
@@ -85,8 +85,8 @@ ms.locfileid: "94382611"
 |Parametro|Descrizione|Type|
 |---------------|-----------------|----------|
 |`deploymentUrl`|Puntatore a una stringa con terminazione NULL che contiene l'URL del manifesto di distribuzione.|LPCWSTR|
-|`data`|Riservato per usi futuri. Deve essere NULL.|LPVOID|
-|`flags`|Riservato per usi futuri. Deve essere 0.|DWORD|
+|`data`|Riservato per utilizzi futuri. Deve essere NULL.|LPVOID|
+|`flags`|Riservato per utilizzi futuri. Deve essere 0.|DWORD|
 
 ### <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un valore HRESULT che rappresenta l'errore. Se si verifica un'eccezione gestita, restituisce 0x80020009 (DISP_E_EXCEPTION).

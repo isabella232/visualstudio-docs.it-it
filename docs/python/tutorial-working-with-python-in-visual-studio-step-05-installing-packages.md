@@ -6,17 +6,17 @@ ms.date: 03/09/2020
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 32e85f39c4acf9466def24bcfea59bbfd6807a1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c47eacf0c9977e7342bfda17e03ea53728ee9215
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801659"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901147"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Passaggio 5: Installare i pacchetti nell'ambiente Python
 
@@ -52,7 +52,7 @@ La community degli sviluppatori di Python produce migliaia di pacchetti utili ch
 
 4. Con un progetto Python aperto, è anche possibile aprire la finestra ambienti Python da Esplora soluzioni facendo clic con il pulsante destro del mouse su **ambienti Python** e selezionando **Visualizza tutti gli ambienti Python**
 
-   ![Environment](media/environments/environments-view-all-2019.png)
+   ![Ambiente](media/environments/environments-view-all-2019.png)
 
 5. Osservando la finestra dell'editor, si noterà che se si passa il mouse `numpy` sulle `matplotlib` istruzioni Import e non vengono risolte. Ciò è dovuto al fatto che i pacchetti non sono stati installati nell'ambiente globale predefinito.
 

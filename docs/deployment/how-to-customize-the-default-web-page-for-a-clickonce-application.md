@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 418de18c-bee9-4f24-9cd9-0252d175070d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fbda4558622c2e244071a218d3d5e42196460113
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0377bdc5fa38c814bb5cd6ff02d12dcec117266d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900786"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Procedura: Personalizzare la pagina Web predefinita per un'applicazione ClickOnce
 Quando si pubblica un'applicazione ClickOnce sul Web, una pagina Web viene generata e pubblicata automaticamente insieme all'applicazione. La pagina predefinita contiene il nome dell'applicazione e i collegamenti per installare l'applicazione, installare i prerequisiti o accedere alla guida su MSDN.
@@ -32,7 +32,7 @@ Quando si pubblica un'applicazione ClickOnce sul Web, una pagina Web viene gener
 > [!NOTE]
 > I collegamenti effettivi visualizzati nella pagina dipendono dal computer in cui viene visualizzata la pagina e dai prerequisiti inclusi.
 
- Il nome predefinito per la pagina Web è *Publish.htm* ; è possibile modificare il nome in **Progettazione progetti**. Per altre informazioni, vedere [procedura: specificare una pagina di pubblicazione per un'applicazione ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
+ Il nome predefinito per la pagina Web è *Publish.htm*; è possibile modificare il nome in **Progettazione progetti**. Per altre informazioni, vedere [procedura: specificare una pagina di pubblicazione per un'applicazione ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
 
  La pagina Web *Publish.htm* viene pubblicata solo se viene rilevata una versione più recente.
 
@@ -49,7 +49,7 @@ Quando si pubblica un'applicazione ClickOnce sul Web, una pagina Web viene gener
 
 4. facoltativo. Per impedire a Visual Studio di sovrascrivere la pagina Web di pubblicazione personalizzata, deselezionare **genera automaticamente pagina Web di distribuzione dopo ogni pubblicazione** nella finestra di dialogo **Opzioni di pubblicazione** .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)
 - [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

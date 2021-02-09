@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b19f1d919095f30e4408056e49847c3c9ba5671
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 9703ff0e79fc4b44565b933a423a1cdcd7ff6c2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903109"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899360"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Procedura: eseguire il debug in un cluster High-Performance (C#, Visual Basic, C++)
 
@@ -98,7 +98,7 @@ Il debug di un programma con multiprocessing in un cluster ad alte prestazioni Ã
 
 `(MachineName = marvin) & (ThreadName = fourier1)`
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Eseguire il debug di applicazioni multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Debug remoto](../debugger/remote-debugging.md)
 - [Procedura: utilizzare la finestra processi](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
