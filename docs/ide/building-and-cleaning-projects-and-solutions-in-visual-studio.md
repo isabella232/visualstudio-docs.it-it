@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ab8a723b69f4c5930c91a10719a2107ad83003
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: ba53fefcc5d29cb47bd3a6912ad7af34dd8deabb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136797"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850386"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Compilazione e pulizia di progetti e soluzioni in Visual Studio
 
@@ -44,7 +44,7 @@ Tramite le procedure descritte in questo argomento è possibile compilare, ricom
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Per compilare, ricompilare o pulire un'intera soluzione
 
-1. In **Esplora soluzioni ** scegliere una soluzione o aprire la soluzione voluta.
+1. In **Esplora soluzioni** scegliere una soluzione o aprire la soluzione voluta.
 
 2. Nella barra dei menu, scegliere **Compila** e quindi scegliere uno dei comandi seguenti:
 
@@ -59,7 +59,7 @@ Tramite le procedure descritte in questo argomento è possibile compilare, ricom
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Per compilare o ricompilare un progetto singolo
 
-1. In **Esplora soluzioni ** scegliere un progetto o aprire il progetto voluto.
+1. In **Esplora soluzioni** scegliere un progetto o aprire il progetto voluto.
 
 2. Sulla barra dei menu scegliere **Compila**, quindi scegliere **Compila** *NomeProgetto* o **ricompila** *NomeProgetto*.
 
@@ -73,7 +73,7 @@ Tramite le procedure descritte in questo argomento è possibile compilare, ricom
 
 2. Nella finestra di dialogo **Opzioni** espandere il nodo **Progetti e soluzioni** e quindi scegliere la pagina **Compila ed esegui**.
 
-     Verrà visualizzata la finestra di dialogo **Compila ed Esegui**  >  **Opzioni progetti e soluzioni**  >  **Options** .
+     Verrà visualizzata la finestra di dialogo **Compila ed Esegui**  >  **Opzioni progetti e soluzioni**  >   .
 
 3. Selezionare la casella di controllo **Compila progetti di avvio e dipendenze solo in fase di esecuzione**.
 
@@ -87,15 +87,15 @@ Tramite le procedure descritte in questo argomento è possibile compilare, ricom
 
 ## <a name="to-build-only-the-selected-visual-c-project"></a>Per compilare solo il progetto di Visual C++ selezionato
 
-Scegliere un [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] progetto, quindi nella barra dei menu scegliere **Compila**  >  **solo progetto**e uno dei comandi seguenti:
+Scegliere un [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] progetto, quindi nella barra dei menu scegliere **Compila**  >  **solo progetto** e uno dei comandi seguenti:
 
-- **Build Only (Compila solo) ** *NomeProgetto*
+- **Build Only (Compila solo)** *NomeProgetto*
 
-- **Rebuild Only (Ricompila solo) ** *NomeProgetto*
+- **Rebuild Only (Ricompila solo)** *NomeProgetto*
 
-- **Clean Only (Pulisci solo) ** *NomeProgetto*
+- **Clean Only (Pulisci solo)** *NomeProgetto*
 
-- **Link Only (Collega solo) ** *NomeProgetto*
+- **Link Only (Collega solo)** *NomeProgetto*
 
 Questi comandi si applicano solo al progetto di [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] scelto. Non eseguono la compilazione, la ricompilazione, la pulizia o il collegamento di eventuali dipendenze del progetto o file di soluzione. A seconda della versione di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], il sottomenu **Project Only** (Solo progetto) potrebbe contenere altri comandi.
 
@@ -113,7 +113,7 @@ Effettuare uno dei passaggi seguenti:
 
 - Premere **CTRL** + **INTERR**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Visualizzare, salvare e configurare file di log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md)

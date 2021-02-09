@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d5ce10f9-047a-4b74-aa1d-295128898b89
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff03ed508fc11377861556bc27bdc33aaa1ec069
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 163d042ffb08a60d5673e64cf6bab94f7a2f1d63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993770"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850455"
 ---
 # <a name="how-to-open-standard-editors"></a>Procedura: aprire gli editor standard
 Quando si apre un editor standard, si consente all'IDE di determinare un editor standard per un tipo di file designato, anziché specificare un editor specifico del progetto per il file.
@@ -51,7 +51,7 @@ Quando si apre un editor standard, si consente all'IDE di determinare un editor 
 
      Se la visualizzazione del documento o dell'oggetto visualizzazione del documento è stata eseguita correttamente in una cornice della finestra, l'oggetto viene inizializzato con i relativi dati chiamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.LoadDocData%2A> .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
 - [Apri e Salva elementi progetto](../extensibility/internals/opening-and-saving-project-items.md)
 - [Procedura: aprire editor specifici del progetto](../extensibility/how-to-open-project-specific-editors.md)

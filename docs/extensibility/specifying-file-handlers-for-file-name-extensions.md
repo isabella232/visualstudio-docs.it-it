@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421244cd88af43e7602298e7384a632c8aa51833
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: d897cb9bb4697a687bd06eeb02c779e133090e33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715600"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848097"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Definizione di handle di file per le estensioni
 Esistono diversi modi per determinare l'applicazione che gestisce un file con una specifica estensione di file. I verbi OpenWithList e OpenWithProgids sono due modi per specificare i gestori di file nella voce del registro di sistema per l'estensione di file.
@@ -65,7 +65,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)
 ```
 
- Il ProgID specificato come valore predefinito per l'estensione di file è il gestore di file predefinito. Se si modifica il ProgID per un'estensione di file fornita con una versione precedente di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o che può essere rilevata da altre applicazioni, è necessario registrare la `OpenWithProgids` chiave per l'estensione di file e specificare il nuovo ProgID nell'elenco insieme ai ProgID precedenti supportati. Esempio:
+ Il ProgID specificato come valore predefinito per l'estensione di file è il gestore di file predefinito. Se si modifica il ProgID per un'estensione di file fornita con una versione precedente di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o che può essere rilevata da altre applicazioni, è necessario registrare la `OpenWithProgids` chiave per l'estensione di file e specificare il nuovo ProgID nell'elenco insieme ai ProgID precedenti supportati. Ad esempio:
 
 ```
 HKEY_CLASSES_ROOT\

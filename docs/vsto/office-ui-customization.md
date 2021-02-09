@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], UI customization
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 289b055ab84dd9c2c440b55f3d64fe1fe39b8e1b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ed604b1bbbfcd5b217935b541325c121d521e878
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527580"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849814"
 ---
 # <a name="office-ui-customization"></a>Personalizzazione dell'interfaccia utente di Office
   È possibile personalizzare l'interfaccia utente (UI) delle applicazioni Microsoft Office mediante gli strumenti di sviluppo di Office in Visual Studio. Questo argomento descrive le funzionalità dell'interfaccia utente che è possibile personalizzare nelle sezioni seguenti:
@@ -97,7 +97,7 @@ ms.locfileid: "97527580"
 ## <a name="shortcut-menus"></a><a name="Shortcut"></a> Menu di scelta rapida
  Quando si preme il pulsante destro del mouse in un documento o in una finestra dell'applicazione, viene visualizzato un menu di scelta rapida. È possibile impostare un menu di scelta rapida in modo che venga visualizzato dopo un evento, ad esempio quando un utente fa clic con il pulsante destro del mouse su un documento, una cartella di lavoro o un controllo host. È possibile aggiungere diversi comandi o controlli di menu a a un menu di scelta rapida. Creare menu di scelta rapida utilizzando XML. Se si aggiunge un elemento **barra multifunzione (XML)** al progetto di Office, è possibile aggiungere XML al file XML della barra multifunzione per creare menu di scelta rapida. Per altre informazioni sull'uso di XML per creare menu di scelta rapida, vedere [procedura: aggiungere comandi a menu di scelta rapida](../vsto/how-to-add-commands-to-shortcut-menus.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica della barra multifunzione](../vsto/ribbon-overview.md)
 - [Cenni preliminari sui controlli Windows Form nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)

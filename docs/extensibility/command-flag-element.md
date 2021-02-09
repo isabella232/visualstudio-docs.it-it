@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15dbf960aebc543b71ff282e525476583bdeba3d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: f328f2112073c082e276683d32d6ca06276b9829
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974189"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848195"
 ---
 # <a name="command-flag-eelement"></a>Flag di comando Eelement
 Modifica il relativo elemento padre.
@@ -33,11 +33,11 @@ Modifica il relativo elemento padre.
  Nella sezione seguente vengono descritti i valori degli elementi validi.
 
 ### <a name="attributes"></a>Attributi
- No.
+ Nessuna.
 
 ### <a name="child-elements"></a>Elementi figlio
 
-|Valore|Description|
+|Valore|Descrizione|
 |-----------|-----------------|
 |AllowParams|Indica che gli utenti possono immettere i parametri del comando nella finestra di **comando** quando digitano il nome canonico del comando.<br /><br /> Valido per: `Button`|
 |AlwaysCreate|Il menu viene creato anche se non contiene gruppi o pulsanti.<br /><br /> Valido per: `Menu`|
@@ -76,5 +76,5 @@ Modifica il relativo elemento padre.
 |[Elemento Buttons](../extensibility/buttons-element.md)|Fornisce un gruppo per gli elementi [elemento del pulsante](../extensibility/button-element.md) .|
 |[Menu (elemento)](../extensibility/menus-element.md)|Definisce tutti i menu implementati da un VSPackage.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Tabella comandi di Visual Studio (. File vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

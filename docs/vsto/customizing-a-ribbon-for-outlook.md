@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], Outlook
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 25b4faa994a99bccdc2122ad6b9d124f7391e9f8
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: c12e92ef77130ca2d9b55ccec737f37c73396c2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848105"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849879"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Personalizzare una barra multifunzione per Outlook
   Quando si personalizza la barra multifunzione in Microsoft Office Outlook, è necessario considerare la posizione in cui la barra multifunzione personalizzata verrà visualizzata nell'applicazione. Outlook visualizza la barra multifunzione nell'interfaccia utente principale dell'applicazione e nelle finestre aperte quando gli utenti eseguono determinate attività, ad esempio la creazione di messaggi di posta elettronica. Queste finestre dell'applicazione sono denominate controlli.

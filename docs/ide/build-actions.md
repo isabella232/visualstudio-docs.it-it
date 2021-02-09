@@ -7,15 +7,15 @@ ms.technology: vs-ide-compile
 ms.topic: reference
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8884eaa459fa3a2a7dd8d10f0ffeca5003398afd
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 86df6673608359dcc7158762c3ef9d86c184fff6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850481"
 ---
 # <a name="build-actions"></a>Azioni di compilazione
 
@@ -56,7 +56,7 @@ Alcune delle azioni di compilazione più comuni per i file di progetto di C# e V
 > [!NOTE]
 > È possibile definire azioni di compilazione aggiuntive per tipi di progetto specifici, pertanto l'elenco di azioni di compilazione dipende dal tipo di progetto e potrebbero venire visualizzati valori che non sono presenti in questo elenco.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Opzioni del compilatore C#](/dotnet/csharp/language-reference/compiler-options/listed-alphabetically)
 - [Opzioni del compilatore Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/compiler-options-listed-alphabetically)

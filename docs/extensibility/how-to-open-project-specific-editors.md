@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cbba1f4d6cf0a2a5a45dd2999afa5bbf3443fca
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 719460b36f926df19e76db1aab4e90b4d959fdc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850494"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Procedura: aprire editor specifici del progetto
 Se un file di elemento aperto da un progetto viene associato intrinsecamente all'editor specifico per il progetto, il progetto deve aprire il file utilizzando un editor specifico del progetto. Non è possibile delegare il file al meccanismo dell'IDE per la selezione di un editor. Ad esempio, invece di usare un editor di bitmap standard, è possibile usare questa opzione dell'editor specifico del progetto per specificare un editor di bitmap specifico che riconosca le informazioni nel file che sono univoche per il progetto.
@@ -53,7 +53,7 @@ Se un file di elemento aperto da un progetto viene associato intrinsecamente all
 
 6. Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> metodo per visualizzare e aprire la visualizzazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Apri e Salva elementi progetto](../extensibility/internals/opening-and-saving-project-items.md)
 - [Procedura: aprire gli editor standard](../extensibility/how-to-open-standard-editors.md)
 - [Procedura: aprire Editor per documenti aperti](../extensibility/how-to-open-editors-for-open-documents.md)

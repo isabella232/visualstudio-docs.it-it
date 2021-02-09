@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a36c585a09afbd1dec60e1d4399dca258399ae3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebb3b16504a76c516408f997486279f52256294f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713419"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850713"
 ---
 # <a name="text_position"></a>TEXT_POSITION
 Descrive la posizione della riga e della colonna nel testo specificato.
@@ -28,14 +28,14 @@ Descrive la posizione della riga e della colonna nel testo specificato.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-typedef struct _tagTEXT_POSITION { 
+typedef struct _tagTEXT_POSITION { 
    DWORD dwLine;
    DWORD dwColumn;
 } TEXT_POSITION;
 ```
 
 ```csharp
-public struct TEXT_POSITION { 
+public struct TEXT_POSITION { 
    public uint dwLine;
    public uint dwColumn;
 };
@@ -49,7 +49,7 @@ Indice della riga nel file di origine.
 `dwColumn`\
 Offset carattere nella riga.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Questa struttura viene utilizzata nelle strutture [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) e [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .
 
@@ -83,7 +83,7 @@ Questa struttura viene passata come parametro ai metodi seguenti:
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)

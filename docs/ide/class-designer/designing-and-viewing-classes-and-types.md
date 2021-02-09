@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 72d646150baafb7e7169a3c0a2452da6aec5df9b
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 236efe20ee652e2690cedf36843d539bf8a9cc46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850295"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Progettare e visualizzare classi e tipi con Progettazione classi
 
@@ -58,7 +58,7 @@ Dopo aver ottimizzato uno o più diagrammi classi, è possibile copiarli in docu
 > [!NOTE]
 > Progettazione classi non tiene traccia del percorso dei file di origine. Di conseguenza, se si modifica la struttura del progetto o si spostano i file di origine in un progetto, Progettazione classi può perdere traccia del tipo, soprattutto del tipo di origine di un typedef, delle classi di base o dei tipi di associazione. Si potrebbe ricevere un errore, ad esempio **Progettazione classi: impossibile visualizzare il tipo**. In tal caso, trascinare di nuovo il codice sorgente modificato o riposizionato nel diagramma classi per visualizzarlo nuovamente.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Funzionalità dell'editor del codice](../writing-code-in-the-code-and-text-editor.md)
 - [Eseguire il mapping delle dipendenze nelle soluzioni](../../modeling/map-dependencies-across-your-solutions.md)

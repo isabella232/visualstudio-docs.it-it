@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d329ce7b4f4b74b8ff77357393ffe9383a3977e
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 45cd616a58f51a532883eeba37f06c4eb73bd72d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993860"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850674"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Procedura: aprire Editor per documenti aperti
 Prima di aprire una finestra del documento, il progetto deve innanzitutto determinare se il file è già aperto nella finestra del documento per un altro editor. Il file può essere aperto in un editor specifico del progetto o in uno degli editor standard registrati con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
@@ -54,7 +54,7 @@ Prima di aprire una finestra del documento, il progetto deve innanzitutto determ
 
 2. Se il documento non è aperto, completare la procedura illustrata in [procedura: aprire gli editor standard](../extensibility/how-to-open-standard-editors.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Apri e Salva elementi progetto](../extensibility/internals/opening-and-saving-project-items.md)
 - [Procedura: aprire editor specifici del progetto](../extensibility/how-to-open-project-specific-editors.md)
 - [Procedura: aprire gli editor standard](../extensibility/how-to-open-standard-editors.md)

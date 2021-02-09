@@ -24,15 +24,15 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], about custom task panes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b08e0e3bbc9f45b33ecd0248179011113db7a779
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 8ed86cb10f6521e5863562cdb67e768b1a2367d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844180"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850035"
 ---
 # <a name="custom-task-panes"></a>Riquadri attività personalizzati
   I riquadri attività sono pannelli dell'interfaccia utente in genere ancorati a un lato di una finestra in un'applicazione di Microsoft Office. I riquadri attività personalizzati consentono di creare un riquadro attività basato sulle proprie esigenze specifiche e offrono agli utenti un'interfaccia utente nota per accedere alle funzionalità della soluzione. L'interfaccia può, ad esempio, contenere controlli che consentono di eseguire codice per la modifica dei documenti o per la visualizzazione dei dati di un'origine dati.
@@ -116,7 +116,7 @@ ms.locfileid: "96844180"
 
  Nella tabella seguente sono elencati gli eventi che è possibile gestire per rispondere alle modifiche apportate dall'utente al riquadro attività personalizzato.
 
-|Attività|Event|
+|Attività|Evento|
 |----------|-----------|
 |Per definire il comportamento quando l'utente modifica la posizione del riquadro attività.|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|
 |Per definire il comportamento quando l'utente nasconde o rende visibile il riquadro attività.|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|

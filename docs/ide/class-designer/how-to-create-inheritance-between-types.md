@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 3786a21c-8022-4bf5-9d13-740fd354e93c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 064ae443c264187e7666b7aaabde27d6705388a4
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 17939a9c800e99d8adcf1e59e32bb362cf4796ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96933479"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850152"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Procedura: Creare ereditarietà tra tipi in Progettazione classi
 
@@ -49,7 +49,7 @@ Per creare una relazione di ereditarietà tra due tipi in un diagramma classi us
     >
     >  Anche se è possibile visualizzare i tipi generici esistenti, non si possono creare nuovi tipi generici. Non si possono inoltre modificare i parametri di tipo per i tipi generici esistenti.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Ereditarietà](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [Nozioni fondamentali sull'ereditarietà](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

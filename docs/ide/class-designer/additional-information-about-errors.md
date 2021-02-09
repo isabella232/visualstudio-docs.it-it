@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 575f9b74c7931ecc752f4c2e56866534aaa1e3d5
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 5bf6f7f9fc01e1c1a047edaf1102fe6a23b35239
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903104"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850347"
 ---
 # <a name="class-designer-errors"></a>Errori di Progettazione classi
 
@@ -48,6 +48,6 @@ Nelle risorse seguenti è possibile trovare assistenza per altri errori e avvisi
 - [Usare il codice Visual C++](working-with-visual-cpp-code.md) include informazioni sulla risoluzione dei problemi relativi alla visualizzazione di C++ in un diagramma classi.
 - Il [forum su Progettazione classi di Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner) è un forum dedicato a domande su **Progettazione classi**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Progettazione e visualizzazione di classi e tipi](designing-and-viewing-classes-and-types.md)

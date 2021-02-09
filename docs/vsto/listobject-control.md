@@ -17,15 +17,15 @@ helpviewer_keywords:
 - ListObject control, improving performance when bound to data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1a80b56134f59975a39d24e824b6c83b2513b163
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: becc4ab189c0f871cc3ed1284bd26a0411b30184
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849801"
 ---
 # <a name="listobject-control"></a>ListObject (controllo)
   Il controllo <xref:Microsoft.Office.Tools.Excel.ListObject> è un elenco che espone gli eventi e può essere associato a dati. Quando si aggiunge un elenco a un foglio di lavoro, Visual Studio crea un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> su cui è possibile programmare direttamente senza dover passare attraverso il modello a oggetti di Microsoft Office Excel.
@@ -109,7 +109,7 @@ ms.locfileid: "97526603"
 
 - <xref:Microsoft.Office.Tools.Excel.ListObject.SelectionChange>
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)
 - [Procedura: aggiungere controlli ListObject a fogli di foglio](../vsto/how-to-add-listobject-controls-to-worksheets.md)
 - [Procedura: ridimensionare i controlli ListObject](../vsto/how-to-resize-listobject-controls.md)

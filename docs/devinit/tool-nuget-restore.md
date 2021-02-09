@@ -5,18 +5,18 @@ ms.date: 11/20/2020
 ms.topic: reference
 author: andysterland
 ms.author: andster
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 8e525451ffcd691b0dab1260584946ad3d0a561c
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f805b5c1c7b3b994c984dfdb6ce937f8cd51edf1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440368"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848232"
 ---
 # <a name="nuget-restore"></a>nuget-restore
 
@@ -26,7 +26,7 @@ Lo `nuget-restore` strumento Ripristina le dipendenze e gli strumenti specifici 
 
 Se entrambe le `input` `additionalOptions` proprietà e vengono omesse o vuote, lo strumento seguirà il comportamento [predefinito](#default-behavior) descritto di seguito.
 
-| Nome                                             | Type   | Obbligatoria | valore                                                                                |
+| Nome                                             | Tipo   | Obbligatoria | valore                                                                                |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------------|
 | **Commenti**                                     | stringa | No       | Proprietà commenti facoltativi. Non usato.                                                |
 | [**input**](#input)                              | stringa | No       | Percorso del file di progetto/soluzione da ripristinare. Per informazioni dettagliate, vedere l' [input](#input) riportato di seguito. |
