@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d0403a16-5d07-4fe5-b474-19ae3d9fd3ab
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0472bfeb3a988bcb39b4daf80cea92398130f59f
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 6839a4ac8e53ec70fc88d23525985e8d1b7cccd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903403"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904513"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>Elemento WizardData (modelli di Visual Studio)
 
@@ -47,11 +47,11 @@ Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gl
 
 ### <a name="attributes"></a>Attributi
 
-Nessuno.
+Nessuna.
 
 ### <a name="child-elements"></a>Elementi figlio
 
-Nessuno.
+Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -106,7 +106,7 @@ Nell'esempio seguente vengono illustrati i metadati per il modello di progetto s
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Riferimenti sullo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

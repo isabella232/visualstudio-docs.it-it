@@ -33,15 +33,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 003eaa7eefffaab9ff2b3c8c25a5ce5c0d41d43b
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: e90a6466a4bff0f3299e3f47bce7e0b54d540fcf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150366"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905033"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Avviare una sessione di debug per un'app UWP
 
@@ -217,6 +217,6 @@ Per collegare il debugger a un'app in [!INCLUDE[win8_appname_long](../debugger/i
 > Il modo più semplice per connettersi all'app JavaScript consiste nel chiudere tutte le altre app JavaScript. In alternativa, è possibile notare i PID dell'esecuzione di *wwahost.exe* processi in Gestione attività di Windows prima di avviare l'app. Quando si avvia l'app, il relativo *wwahost.exe* PID sarà quello diverso da quelli annotati in precedenza.
 ::: moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Eseguire il debug di app in Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md)

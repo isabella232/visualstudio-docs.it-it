@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1ebeabb2-52a1-4ccc-83cd-9ae7c3541783
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 744a6c769673acdc383999392cde88d255ad8142
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abe3942ec83136aca313562bc45e156b123fdf19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731424"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903997"
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
 Notifica al pacchetto di debug che il testo è stato rimosso dal documento.
@@ -28,14 +28,14 @@ Notifica al pacchetto di debug che il testo è stato rimosso dal documento.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT onRemoveText( 
+HRESULT onRemoveText( 
    TEXT_POSITION pos,
    DWORD         dwNumToRemove
 );
 ```
 
 ```csharp
-int onRemoveText( 
+int onRemoveText( 
    enum_TEXT_POSITION pos,
    uint               dwNumToRemove
 );
@@ -51,6 +51,6 @@ in Specifica il numero di caratteri del testo rimossi.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 693bd794-7215-4f07-8651-b57366d39953
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 238088caa3229a0e57da90baeb0ee0f791c2908a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e67d32b2f5e38627d8c28d96d6d86beb8fb415b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733134"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904058"
 ---
 # <a name="idebugcoreserver2getmachinename"></a>IDebugCoreServer2::GetMachineName
 Ottiene il nome del computer in cui è in esecuzione il server principale.
@@ -28,14 +28,14 @@ Ottiene il nome del computer in cui è in esecuzione il server principale.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetName( 
-   BSTR* pbstrName
+HRESULT GetName( 
+   BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetName( 
-   out string pbstrName
+int GetName( 
+   out string pbstrName
 );
 ```
 
@@ -46,5 +46,5 @@ out Restituisce una stringa contenente il nome del computer.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

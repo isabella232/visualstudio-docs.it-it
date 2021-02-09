@@ -32,15 +32,15 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], writing code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 40ea589cb4406a383876b1f16721f18fc48ebadd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b0f72e859e0847b5035e99146ef6c0435ef299d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526030"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904458"
 ---
 # <a name="write-code-in-office-solutions"></a>Scrivere codice nelle soluzioni Office
   Alcuni aspetti della scrittura del codice nei progetti di Office presentano delle differenze rispetto ad altri tipi di progetti in Visual Studio. Molte di queste differenze riguardano la modalità di esposizione dei modelli a oggetti di Office al codice gestito. Le altre differenze sono correlate alla creazione di progetti di Office.
@@ -121,7 +121,7 @@ Nella tabella seguente sono illustrate le differenze principali tra Visual Basic
 |-------------|-----------------|-----------------------------------------|
 |Indici di matrice|Il limite di matrice inferiore delle raccolte nelle applicazioni di Microsoft Office inizia con 1. Visual Basic e Visual C# usano matrici in base 0. Per ulteriori informazioni, vedere [matrici &#40;C&#35; Guida di programmazione&#41;](/dotnet/csharp/programming-guide/arrays/index) e [matrici in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Per accedere al primo elemento di una raccolta del modello a oggetti di un'applicazione di Microsoft Office, usare l'indice 1 anziché 0.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Parametri facoltativi nelle soluzioni Office](../vsto/optional-parameters-in-office-solutions.md)
 - [Accesso globale a oggetti nei progetti di Office](../vsto/global-access-to-objects-in-office-projects.md)

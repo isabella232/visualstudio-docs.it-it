@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d9f93f0081d45e986ab6845cdaee53209b84e13
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 2bfcb9fdd7eff132d02c7d14be729cd871c8dd8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190005"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905926"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Corrispondenza tra parentesi graffe in un servizio di linguaggio legacy
 La corrispondenza tra parentesi graffe consente allo sviluppatore di tenere traccia degli elementi del linguaggio che devono essere eseguiti insieme, ad esempio tra parentesi e parentesi graffe. Quando uno sviluppatore immette una parentesi graffa di chiusura, viene evidenziata la parentesi graffa di apertura.
@@ -137,6 +137,6 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Funzionalità del servizio di linguaggio legacy](../../extensibility/internals/legacy-language-service-features1.md)
 - [Parser e scanner del servizio di linguaggio legacy](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

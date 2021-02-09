@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2483cce5-321c-4d3c-9c5c-ee8385263f74
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdd7e23840701981eaea46b44355c34b55b37a33
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 688c7de73c1a935ed6f7a30c6d956c7db97bdc6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190135"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906120"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Linee guida aggiuntive sul controllo del codice sorgente per progetti ed editor
 Esistono diverse linee guida che i progetti e gli editor devono rispettare per supportare il controllo del codice sorgente.
@@ -35,5 +35,5 @@ Esistono diverse linee guida che i progetti e gli editor devono rispettare per s
 |Mantieni oggetti e proprietà in ordine stimabile|X|X|Rendere permanente i file in un ordine prevedibile, ad esempio ordine alfabetico, per facilitare l'Unione.|
 |Ricarica|X|X|Quando un file viene modificato sul disco, l'editor deve essere in grado di ricaricarlo. Quando si partecipa al controllo del codice sorgente, l'ambiente consente di ricaricare i dati chiamando l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementazione. Il caso di ricaricamento più difficile è quando si verifica un'estrazione quando si chiama IVsQueryEditQuerySave:: <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> e si stanno elaborando informazioni. Tuttavia, il codice di ricaricamento deve essere in grado di essere eseguito in questa situazione.<br /><br /> L'ambiente ricarica automaticamente i file di progetto. Tuttavia, un progetto deve implementare <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> se presenta Gerarchie annidate per supportare il ricaricamento dei file di progetto annidati.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Supporto del controllo del codice sorgente](../../extensibility/internals/supporting-source-control.md)

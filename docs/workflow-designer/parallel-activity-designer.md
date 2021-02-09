@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8751c15e40658e7a901550eef3d86050da842cc7
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 3997b72105c22f10500559370d8a23faaa2f24eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435599"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905175"
 ---
 # <a name="parallel-activity-designer"></a>ActivityDesigner Parallel
 
@@ -27,7 +27,7 @@ L'attività <xref:System.Activities.Statements.Parallel> esegue contemporaneamen
 
 L'attività <xref:System.Activities.Statements.Parallel> archivia le relative attività figlio in una raccolta <xref:System.Activities.Statements.Parallel.Branches%2A>. Usare l'attività <xref:System.Activities.Statements.Parallel> anziché l'attività <xref:System.Activities.Statements.Sequence> se alcune delle attività figlio possono diventare inattive.
 
-L' <xref:System.Activities.Statements.Parallel> attività dispone di una <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> proprietà che contiene un utente specificato Visual Basic espressione. L'attività <xref:System.Activities.Statements.Parallel> valuta tale proprietà in seguito al completamento di ogni ramo. Se restituisce **true** , l' <xref:System.Activities.Statements.Parallel> attività viene completata senza eseguire gli altri rami. Se <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> non restituisce **true** , l'attività viene completata al <xref:System.Activities.Statements.Parallel> completamento di tutte le relative attività figlio.
+L' <xref:System.Activities.Statements.Parallel> attività dispone di una <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> proprietà che contiene un utente specificato Visual Basic espressione. L'attività <xref:System.Activities.Statements.Parallel> valuta tale proprietà in seguito al completamento di ogni ramo. Se restituisce **true**, l' <xref:System.Activities.Statements.Parallel> attività viene completata senza eseguire gli altri rami. Se <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> non restituisce **true**, l'attività viene completata al <xref:System.Activities.Statements.Parallel> completamento di tutte le relative attività figlio.
 
 ### <a name="using-the-parallel-activity-designer"></a>Utilizzo dell'ActivityDesigner Parallel
 
@@ -41,13 +41,13 @@ Per aggiungere un'attività alla <xref:System.Activities.Statements.Parallel.Bra
 
 Nella tabella seguente sono elencate le proprietà dell'attività Parallel e ne viene descritta la modalità di utilizzo nella finestra di progettazione.
 
-|Nome proprietà|Obbligatoria|Uso|
+|Nome proprietà|Obbligatoria|Utilizzo|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|Falso|Specifica il nome descrittivo visualizzato nell'intestazione dell'ActivityDesigner. Il valore predefinito è **Parallel**. Facoltativamente, è possibile modificare il valore nella griglia **Proprietà** o direttamente nell'intestazione Activity Designer.|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|Vero|Contiene la raccolta di attività figlio da eseguire.|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|Falso|Restituisce il risultato dopo il completamento di un ramo. Se restituisce **true** , i rami in sospeso pianificati vengono annullati. Se questa proprietà non è impostata o restituisce **false** , l'attività viene completata al completamento di tutte le relative attività figlio. Il valore predefinito è **null**.|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|Falso|Restituisce il risultato dopo il completamento di un ramo. Se restituisce **true**, i rami in sospeso pianificati vengono annullati. Se questa proprietà non è impostata o restituisce **false**, l'attività viene completata al completamento di tutte le relative attività figlio. Il valore predefinito è **null**.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sequenza](../workflow-designer/sequence-activity-designer.md)
 - [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)

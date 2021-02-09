@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82c96bdf8e73f7d40b41220524edef022c216f1b
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 445b302c66739c8a35f180686011f3b498f87ada
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190122"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906127"
 ---
 # <a name="author-a-windows-installer-package"></a>Creazione di un pacchetto di Windows Installer
 I dati guidano il modello di Windows Installer. Anziché scrivere uno script procedurale per copiare file e scrivere voci del registro di sistema, ad esempio, è possibile creare righe e colonne in tabelle di database che contengono dati di file e registro di sistema.
@@ -51,5 +51,5 @@ Un'ampia gamma di strumenti di installazione di terze parti fornisce un ambiente
 
    Per i prodotti commerciali che si integrano in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilizzando [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] , vedere [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Installare VSPackage con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c69fe13821f595a137c07d545a4ccfb10fc89b34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89311391"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904945"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Tecniche e strumenti di debug che consentono di scrivere codice migliore
 
@@ -44,7 +44,7 @@ Per creare l'app:
 
 1. È necessario che Visual Studio sia installato e che sia installato lo **sviluppo multipiattaforma .NET Core** o il carico di lavoro sviluppo di applicazioni **desktop .NET** , a seconda del tipo di app che si vuole creare.
 
-    Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/)per   installarlo gratuitamente.
+    Se Visual Studio non è ancora installato, passare alla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/) per installarlo gratuitamente.
 
     Se è necessario installare il carico di lavoro ma si dispone già di Visual Studio, fare clic su **strumenti**  >  **Ottieni strumenti e funzionalità**. Verrà avviato il Programma di installazione di Visual Studio. Scegliere lo **sviluppo multipiattaforma .NET Core** o il carico di lavoro sviluppo di applicazioni **desktop .NET** , quindi scegliere **modifica**.
 
@@ -273,7 +273,7 @@ Se è il primo, correggere il bug. Nell'app di esempio significa correggere i da
 users = ser.ReadObject(ms) as User[];
 ```
 
-con questo codice:
+Con questo:
 
 ```csharp
 try
@@ -370,7 +370,7 @@ if (existingUser == false)
     User user = new User();
 ```
 
-con questo codice:
+Con questo:
 
 ```csharp
 if (existingUser == false && users[i].firstname != null && users[i].lastname != null)

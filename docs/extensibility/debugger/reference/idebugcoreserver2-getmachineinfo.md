@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8fa1a1d3-9fcb-4fb3-bf4e-e7172ac08d77
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9411c296f396043a63eee6e4254a35d5c2c35884
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f90e8f97b020f746f6caa4807fe8ed063d613001
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733159"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904157"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
 Recupera una descrizione del computer in cui è in esecuzione il server principale.
@@ -28,16 +28,16 @@ Recupera una descrizione del computer in cui è in esecuzione il server principa
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetMachineInfo( 
-   MACHINE_INFO_FIELDS Fields,
-   MACHINE_INFO*       pMachineInfo
+HRESULT GetMachineInfo( 
+   MACHINE_INFO_FIELDS Fields,
+   MACHINE_INFO*       pMachineInfo
 );
 ```
 
 ```csharp
-int GetMachineInfo( 
-   enum_ MACHINE_INFO_FIELDS  Fields,
-   MACHINE_INFO[]             pMachineInfo
+int GetMachineInfo( 
+   enum_ MACHINE_INFO_FIELDS  Fields,
+   MACHINE_INFO[]             pMachineInfo
 );
 ```
 
@@ -52,7 +52,7 @@ in Combinazione di flag dell'enumerazione [MACHINE_INFO_FIELDS](../../../extensi
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)
 - [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)
