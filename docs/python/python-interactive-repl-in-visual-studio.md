@@ -5,17 +5,17 @@ ms.date: 02/11/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9608f273683865be767a44dd8f1d66106b97b7e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f34ee9e852c1210425407f80788aa1b9d5c33c1e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533549"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912279"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Usare la finestra interattiva di Python
 
@@ -107,7 +107,7 @@ Oltre a lavorare direttamente nella finestra **interattiva**, è possibile selez
 Questo comando è utile per lo sviluppo di codice iterativo o evolutivo, tra cui il test del codice durante lo sviluppo. Se ad esempio è stato inviato un frammento di codice alla finestra **interattiva** e ne è stato visualizzato l'output, è possibile premere la freccia su per visualizzare di nuovo il codice, modificarlo e testarlo rapidamente premendo **CTRL** + **invio**. (Premendo **invio** alla fine dell'input viene eseguito, ma premendo **invio** al centro di input viene inserita una nuova riga). Una volta ottenuto il codice desiderato, è possibile copiarlo di nuovo nel file di progetto.
 
 > [!Tip]
-> Per impostazione predefinita, Visual Studio rimuove **>>>** e **...** REPL richiede quando si incolla il codice dalla finestra **interattiva** nell'editor. È possibile modificare questo comportamento nella scheda **strumenti**  >  **Opzioni**  >  **editor di testo**di  >  **Python**  >  **Avanzate** usando l'opzione per la **rimozione dei prompt REPL** . Vedere [Opzioni-Opzioni varie](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
+> Per impostazione predefinita, Visual Studio rimuove **>>>** e **...** REPL richiede quando si incolla il codice dalla finestra **interattiva** nell'editor. È possibile modificare questo comportamento nella scheda **strumenti**  >  **Opzioni**  >  **editor di testo** di  >  **Python**  >  **Avanzate** usando l'opzione per la **rimozione dei prompt REPL** . Vedere [Opzioni-Opzioni varie](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 
@@ -125,4 +125,4 @@ Visual Studio rileva anche le celle di codice a partire da commenti come `# In[1
 
 La finestra **interattiva** include la funzionalità IntelliSense basata su oggetti attivi, a differenza dell'editor del codice in cui IntelliSense è basato solo sull'analisi del codice sorgente. Questi suggerimenti risultano più corretti nella finestra **interattiva**, in particolare con codice generato dinamicamente. Può però capitare che funzioni con effetti collaterali, ad esempio la registrazione di messaggi, influiscano negativamente sull'esperienza di sviluppo.
 
-Se questo comportamento rappresenta un problema, modificare le impostazioni in **strumenti**  >  **Opzioni**  >  **Python**  >  **finestre di Python interattive** nel gruppo **modalità di completamento** , come descritto in [Opzioni-Opzioni di Windows interattive](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).
+Se questo comportamento rappresenta un problema, modificare le impostazioni in **strumenti**  >  **Opzioni**  >    >  **finestre di Python interattive** nel gruppo **modalità di completamento** , come descritto in [Opzioni-Opzioni di Windows interattive](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).

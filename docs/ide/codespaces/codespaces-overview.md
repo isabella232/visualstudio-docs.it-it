@@ -5,18 +5,18 @@ ms.topic: overview
 ms.date: 09/04/2020
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 629ad64ad2a179e1f70998240f26a4484280e514
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 374e07735667a2a8891824b23d49b061651b3b95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911723"
 ---
 # <a name="what-is-github-codespaces-preview"></a>Che cosa sono gli spazi di dati di GitHub? (Anteprima)
 
@@ -66,7 +66,7 @@ Sappiamo che la conservazione delle preferenze personali è fondamentale per far
 
 È possibile creare uno spazio dei nomi con una raccolta specifica dell'utente di [Dotfiles personalizzati](https://docs.github.com/github/developing-online-with-codespaces/personalizing-codespaces-for-your-account) (ad esempio,, e `.bashrc` `.gitconfig` così via) e gli spazi dei nomi di GitHub sincronizzano automaticamente l'identità, i temi e le impostazioni di Git, in modo che ogni spazio dei nomi creato appaia e si senta nel modo desiderato, indipendentemente dalle funzionalità dell'ambiente specifiche del progetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Come usare Visual Studio con un codespace](use-visual-studio-with-codespaces.md)
 * [Come personalizzare uno spazio di codespace](customize-codespaces.md)

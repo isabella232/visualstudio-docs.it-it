@@ -19,18 +19,18 @@ helpviewer_keywords:
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ffa19de6abff0bb73c91c4a8e79d707d0941e00
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 04cbb0db729d39295ee9c608a19302a109980f10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383014"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912222"
 ---
 # <a name="create-bootstrapper-packages"></a>Creare pacchetti del programma di avvio automatico personalizzati
-Il programma di installazione è un programma generico che può essere configurato per rilevare e installare componenti ridistribuibili quali file di Windows Installer ( *.msi* ) e programmi eseguibili. Il programma di installazione è noto anche come programma di avvio automatico. Viene programmato con un set di manifesti XML che specificano i metadati per gestire l'installazione del componente.  Ogni componente ridistribuibile, o prerequisito, visualizzato nella finestra di dialogo **prerequisiti** per ClickOnce è un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio automatico è un gruppo di directory e file che contengono i file manifesto in cui è descritto come deve essere installato il prerequisito.
+Il programma di installazione è un programma generico che può essere configurato per rilevare e installare componenti ridistribuibili quali file di Windows Installer (*.msi*) e programmi eseguibili. Il programma di installazione è noto anche come programma di avvio automatico. Viene programmato con un set di manifesti XML che specificano i metadati per gestire l'installazione del componente.  Ogni componente ridistribuibile, o prerequisito, visualizzato nella finestra di dialogo **prerequisiti** per ClickOnce è un pacchetto del programma di avvio automatico. Un pacchetto del programma di avvio automatico è un gruppo di directory e file che contengono i file manifesto in cui è descritto come deve essere installato il prerequisito.
 
 Il programma di avvio automatico prima rileva se i prerequisiti sono già installati. Se i prerequisiti non sono installati, visualizza prima i contratti di licenza. Successivamente, dopo che l'utente finale accetta i contratti di licenza, ha inizio l'installazione dei prerequisiti. Se invece tutti i prerequisiti vengono rilevati, viene semplicemente avviato il programma di installazione dell'applicazione.
 
@@ -39,9 +39,9 @@ Il programma di avvio automatico prima rileva se i prerequisiti sono già instal
 
 Per creare un pacchetto del programma di avvio automatico, è necessario creare un manifesto del prodotto e, per ogni versione localizzata di un componente, anche un manifesto del pacchetto.
 
-* Il manifesto del prodotto, *product.xml* , contiene i metadati indipendenti dalla lingua per il pacchetto. Questo file contiene i metadati comuni a tutte le versioni localizzate del componente ridistribuibile.  Per creare questo file, vedere [procedura: creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md).
+* Il manifesto del prodotto, *product.xml*, contiene i metadati indipendenti dalla lingua per il pacchetto. Questo file contiene i metadati comuni a tutte le versioni localizzate del componente ridistribuibile.  Per creare questo file, vedere [procedura: creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md).
 
-* Il manifesto del pacchetto, *package.xml* , contiene metadati specifici della lingua; che in genere contiene messaggi di errore localizzati. Deve essere disponibile almeno un manifesto del pacchetto per ogni versione localizzata del componente. Per creare questo file, vedere [procedura: creare un manifesto del pacchetto](../deployment/how-to-create-a-package-manifest.md).
+* Il manifesto del pacchetto, *package.xml*, contiene metadati specifici della lingua; che in genere contiene messaggi di errore localizzati. Deve essere disponibile almeno un manifesto del pacchetto per ogni versione localizzata del componente. Per creare questo file, vedere [procedura: creare un manifesto del pacchetto](../deployment/how-to-create-a-package-manifest.md).
 
 Dopo aver creato questi file, inserire il file manifesto del prodotto in una cartella denominata per il programma di avvio automatico personalizzato. Il file manifesto del pacchetto deve essere inserito in una cartella denominata per le impostazioni locali. Ad esempio, se il file manifesto del pacchetto è destinato alla ridistribuzione in inglese, inserire il file in una cartella denominata en. Ripetere questo processo per ogni impostazione locale, ad esempio ja per il giapponese e de per il tedesco. Il pacchetto del programma di avvio automatico personalizzato finale potrebbe avere la struttura di cartelle seguente.
 
@@ -72,7 +72,7 @@ oppure, per le versioni precedenti di Visual Studio
 *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
 ```
 
-o
+oppure
 
 ```
 *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
@@ -120,7 +120,7 @@ L'elenco ridistribuibile è un file XML a cui è necessario assegnare un nome us
 </FileList>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [Prerequisiti (finestra di dialogo)](../ide/reference/prerequisites-dialog-box.md)
 - [Riferimento allo schema del prodotto e del pacchetto](../deployment/product-and-package-schema-reference.md)

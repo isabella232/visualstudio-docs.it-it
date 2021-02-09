@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6ffa60508eba02a4442bacb63b05abb39202ab9
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 1009df1ce71e5ab46c0e9d100a79562f77460c0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877442"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911775"
 ---
 # <a name="project-persistence"></a>Salvataggio permanente dei progetti
 La persistenza è una considerazione della progettazione chiave per il progetto. La maggior parte dei progetti utilizza gli elementi del progetto che rappresentano i file; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta inoltre progetti i cui dati non sono basati su file. È necessario che i file di proprietà del progetto e il file di progetto siano salvati in permanenza. L'IDE indica al progetto di salvare se stesso o un elemento del progetto.

@@ -16,15 +16,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ef68ffccd7a048cd0591ee0bf1aa511fe0489c92
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846129"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910520"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Abilitare l'accesso a VBA per creare o aprire un Strumenti di Visual Studio per il progetto di sistema Microsoft Office
 
@@ -109,7 +109,7 @@ ms.locfileid: "96846129"
 
 7. Aprire il menu a discesa accanto a **Visual Basic, Applications Edition** e quindi fare clic su **Esegui da computer locale**.
 
-8. Fare clic su **Continua**.
+8. Fare clic su **Continue**.
 
 9. Fare clic su **Close**.
 

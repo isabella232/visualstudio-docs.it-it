@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f48e9531-efac-4d11-8166-f63a5ece1ac5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c86d5d1fd1e25b498405197b68efd9553ed64f16
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 92b5c1d323634bbb242cdccb54890908d5668803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383209"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911385"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;&gt;elemento assemblyIdentity (applicazione ClickOnce)
 Identifica l'applicazione distribuita in una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione.
@@ -48,7 +48,7 @@ Identifica l'applicazione distribuita in una [!INCLUDE[ndptecclick](../deploymen
 |---------------|-----------------|
 |`Name`|Obbligatorio. Identifica il nome dell'applicazione.<br /><br /> Se `Name` contiene caratteri speciali, ad esempio virgolette singole o doppie, l'attivazione dell'applicazione potrebbe non riuscire.|
 |`Version`|Obbligatorio. Specifica il numero di versione dell'applicazione nel formato seguente: `major.minor.build.revision`|
-|`publicKeyToken`|Facoltativa. Specifica una stringa esadecimale di 16 caratteri che rappresenta gli ultimi 8 byte del `SHA-1` valore hash della chiave pubblica in cui l'applicazione o l'assembly è firmato. La chiave pubblica usata per firmare il catalogo deve essere di 2048 bit o superiore.<br /><br /> Sebbene la firma di un assembly sia consigliata ma facoltativa, questo attributo è obbligatorio. Se un assembly non è firmato, è necessario copiare un valore da un assembly autofirmato oppure utilizzare un valore "fittizio" di tutti gli zeri.|
+|`publicKeyToken`|facoltativo. Specifica una stringa esadecimale di 16 caratteri che rappresenta gli ultimi 8 byte del `SHA-1` valore hash della chiave pubblica in cui l'applicazione o l'assembly è firmato. La chiave pubblica usata per firmare il catalogo deve essere di 2048 bit o superiore.<br /><br /> Sebbene la firma di un assembly sia consigliata ma facoltativa, questo attributo è obbligatorio. Se un assembly non è firmato, è necessario copiare un valore da un assembly autofirmato oppure utilizzare un valore "fittizio" di tutti gli zeri.|
 |`processorArchitecture`|Obbligatorio. Specifica il processore. I valori validi sono `msil` per tutti i processori, `x86` per windows a 32 bit, `IA64` per Windows a 64 bit e `Itanium` per processori Itanium Intel 64-bit.|
 |`language`|Obbligatorio. Identifica i codici di lingua in due parti (ad esempio, `en-US` ) dell'assembly. Questo elemento si trova nello `asmv2` spazio dei nomi. Se non è specificato, il valore predefinito è `neutral` .|
 
@@ -69,6 +69,6 @@ Identifica l'applicazione distribuita in una [!INCLUDE[ndptecclick](../deploymen
   type="win32" />
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)
 - [\<assemblyIdentity> elemento](../deployment/assemblyidentity-element-clickonce-deployment.md)

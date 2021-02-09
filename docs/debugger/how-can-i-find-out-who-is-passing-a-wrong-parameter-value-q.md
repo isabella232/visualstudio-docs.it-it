@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 1f1ae455-0e25-4e9d-b33f-53908f5bd6ce
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: de87da994dfab59d5df618671737003beea9678b
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: d159198137c70810bc47cc79caf18ac178aeecd6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398311"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912267"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Come è possibile individuare chi passa un valore di parametro errato?
 ## <a name="problem-description"></a>Descrizione del problema
@@ -52,7 +52,7 @@ ms.locfileid: "97398311"
 
 7. Utilizzare la finestra Stack di chiamate per individuare la funzione chiamante e passare al relativo codice sorgente. Per altre informazioni, vedere [procedura: usare la finestra stack di chiamate](../debugger/how-to-use-the-call-stack-window.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Domande frequenti sul debug del codice nativo](../debugger/debugging-native-code-faqs.md)
 - [Punti di interruzione](/previous-versions/ktf38f66(v=vs.100))
 - [Debug del codice nativo](../debugger/debugging-native-code.md)

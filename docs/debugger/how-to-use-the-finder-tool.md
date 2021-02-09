@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ca277962f81b3cd1c35ebcf8a940e8168a6803
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: d48e9b580d25b521721fafa7dc475bdbe3532656
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150600"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912231"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Procedura: utilizzare lo strumento di ricerca
 È possibile utilizzare lo strumento di ricerca nella **finestra di dialogo Trova finestra** per visualizzare le proprietà o i messaggi della finestra. Lo strumento di ricerca può anche individuare le finestre figlio disabilitate e distinguere la finestra da evidenziare se le finestre figlio disabilitate si sovrappongono.
@@ -51,7 +51,7 @@ ms.locfileid: "98150600"
 
     Se si seleziona **Proprietà**, viene visualizzata la [finestra di dialogo Proprietà finestra](../debugger/window-properties-dialog-box.md) . Se sono stati selezionati **messaggi**, viene visualizzata una finestra [visualizzazione messaggi](../debugger/messages-view.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzazioni di Spy++](../debugger/spy-increment-views.md)
 - [Utilizzo di Spy++](../debugger/using-spy-increment.md)
 - [Riferimenti per Spy++](../debugger/spy-increment-reference.md)

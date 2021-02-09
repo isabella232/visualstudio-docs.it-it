@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf2d41fe83b440e2a3b4bfebd4fac6f5d06094a4
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 3e0cf60b260204ac3b97a222591946765cf8bb80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671324"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910965"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>Elemento ProjectItem (modelli di progetto di Visual Studio)
 Specifica un file incluso nel modello di progetto.
@@ -62,7 +62,7 @@ Specifica un file incluso nel modello di progetto.
 | `OpenOrder` | Attributo facoltativo.<br /><br /> Specifica un valore numerico che rappresenta l'ordine in cui gli elementi verranno aperti nei rispettivi editor. Tutti i valori devono essere multipli di 10. Gli elementi con `OpenOrder` valori più alti vengono aperti per primi. |
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -139,7 +139,7 @@ Specifica un file incluso nel modello di progetto.
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
 - [Parametri di modelli](../ide/template-parameters.md)

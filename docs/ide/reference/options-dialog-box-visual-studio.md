@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 02b09877-1df1-4531-a0d1-a4ca17c7f857
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1abf435625cc9003dc569542e24e020e3801ec00
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 16c2c6a1d5f9f9b673e7ae12661c4681f713c2fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189329"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910810"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Finestra di dialogo Opzioni (Visual Studio)
 
@@ -41,6 +41,6 @@ Le opzioni per una funzionalità IDE non appaiono nel riquadro di spostamento fi
 
 Fare clic su OK nella finestra di dialogo **Opzioni** per salvare tutte le impostazioni in tutte le pagine. Fare clic su Annulla in qualsiasi pagina per annullare tutte le richieste di modifica, incluse quelle eseguite in altre pagine **Opzioni**. Alcune modifiche alle impostazioni delle opzioni, ad esempio quelle apportate in [Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md), avranno effetto solo quando si chiude e si riapre Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Personalizzazione dell'editor](../how-to-change-text-case-in-the-editor.md)

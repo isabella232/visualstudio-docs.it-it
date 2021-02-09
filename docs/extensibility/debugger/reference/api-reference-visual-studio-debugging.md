@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a2df6d82099a927664620e19096107f283afada
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24e7c8892798d9192aa59c946e1c978899b4d173
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738185"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912033"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Riferimenti API (debug di Visual Studio)
 La sezione di riferimento include una panoramica concettuale dell'API, una guida che mostra la sintassi e l'utilizzo di tutti gli elementi API e un assortimento di esempi di codice. Tutti i riferimenti vengono elencati in ordine alfabetico in base alla categoria.
@@ -42,7 +42,7 @@ La sezione di riferimento include una panoramica concettuale dell'API, una guida
 > [!NOTE]
 > I parametri non validi o `NULL` [out] possono causare l'arresto anomalo dell'IDE.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interfacce](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2898781a3603e7cb9582d246e4fa7edaaf6bddb9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ddfe9d70cafc6acf7526c8819cb9ae3f46ea8022
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846194"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910560"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Protezione di documenti nelle soluzioni a livello di documento
   È possibile utilizzare le funzionalità di protezione di Microsoft Office Word e Microsoft Office Excel nei progetti a livello di documento. Queste funzionalità impediscono a utenti non autorizzati di apportare modifiche alle parti protette di un documento.

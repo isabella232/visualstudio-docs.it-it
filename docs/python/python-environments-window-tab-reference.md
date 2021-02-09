@@ -5,17 +5,17 @@ ms.date: 03/18/2019
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f08709c5231b2981db67900f47b49503269e948b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d00f8cc05e4a2a2ce1e947207997cc2e46d9d9f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912375"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Informazioni di riferimento sulle schede della finestra Ambienti Python
 
@@ -60,7 +60,7 @@ Quando si usano le finestre interattive nel proprio flusso di lavoro quotidiano,
 
 Gli script di avvio contengono codice che la finestra **interattiva** carica ed esegue automaticamente, incluse le importazioni, le definizioni di funzione e letteralmente qualsiasi altra cosa. Tali script sono referenziati in due modi:
 
-1. Quando si installa un ambiente, Visual Studio crea una cartella *Documenti\Visual Studio \<version> \Python script \\ \<environment> * dove &lt; version &gt; è la versione di Visual Studio (ad esempio 2017 o 2019) e &lt; Environment &gt; corrisponde al nome dell'ambiente. È possibile passare alla cartella specifica dell'ambiente con il comando **Esplora gli script interattivi**. Quando si avvia la finestra **Interattiva** per tale ambiente, vengono caricati ed eseguiti tutti i file con estensione *py* disponibili qui in ordine alfabetico.
+1. Quando si installa un ambiente, Visual Studio crea una cartella *Documenti\Visual Studio \<version> \Python script \\ \<environment>* dove &lt; version &gt; è la versione di Visual Studio (ad esempio 2017 o 2019) e &lt; Environment &gt; corrisponde al nome dell'ambiente. È possibile passare alla cartella specifica dell'ambiente con il comando **Esplora gli script interattivi**. Quando si avvia la finestra **Interattiva** per tale ambiente, vengono caricati ed eseguiti tutti i file con estensione *py* disponibili qui in ordine alfabetico.
 
 1. Il controllo **Script** nella scheda **Strumenti** > **Opzioni** > **Python** > **Finestre interattive** (vedere [Opzioni delle finestre interattive](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) è destinato a specificare una cartella aggiuntiva per gli script di avvio che vengono caricati ed eseguiti in tutti gli ambienti. Tuttavia, questa funzionalità non è attualmente operativa.
 
@@ -105,7 +105,7 @@ Quando di immette un termine di ricerca viene filtrato l'elenco dei pacchetti in
 ![Scheda Pacchetti nella finestra Ambienti Python con la ricerca di "num"](media/environments/environments-pip-tab-2019.png)
 ::: moniker-end
 
-Come è possibile vedere nell'immagine precedente, i risultati della ricerca mostrano un numero di pacchetti che corrispondono al termine di ricerca. la prima voce nell'elenco, tuttavia, è un comando per eseguire direttamente l' **installazione \<name> di PIP** . Se si è nella scheda **pacchetti (conda)** , viene invece visualizzato **conda install \<name> **:
+Come è possibile vedere nell'immagine precedente, i risultati della ricerca mostrano un numero di pacchetti che corrispondono al termine di ricerca. la prima voce nell'elenco, tuttavia, è un comando per eseguire direttamente l' **installazione \<name> di PIP** . Se si è nella scheda **pacchetti (conda)** , viene invece visualizzato **conda install \<name>**:
 
 ::: moniker range="vs-2017"
 ![Scheda Pacchetti (Conda) con un comando di installazione di Conda](media/environments/environments-conda-tab-install.png)
@@ -157,7 +157,7 @@ Mostra lo stato corrente del database di completamento IntelliSense:
 ![Scheda IntelliSense di Ambienti Python](media/environments/environments-intellisense-tab.png)
 
 - In Visual Studio 2017 versione 15.5 e versioni precedenti, i completamenti IntelliSense dipendono da un database che è stato compilato per tale libreria. La creazione del database viene eseguita in background quando viene installata una libreria, ma potrebbe richiedere tempo e non essere completa quando si avvia la scrittura del codice.
-- Visual Studio 2017 versione 15.6 e versioni successive usano un metodo più rapido per rendere disponibili i completamenti che non dipendono dal database per impostazione predefinita. Per questo motivo la scheda ha l'etichetta **IntelliSense [database disabilitato]**. È possibile abilitare il database deselezionando l'opzione **strumenti**  >  **Opzioni**  >  per**Python**  >  **sperimentale**  >  **usare IntelliSense nuovo stile per gli ambienti**.
+- Visual Studio 2017 versione 15.6 e versioni successive usano un metodo più rapido per rendere disponibili i completamenti che non dipendono dal database per impostazione predefinita. Per questo motivo la scheda ha l'etichetta **IntelliSense [database disabilitato]**. È possibile abilitare il database deselezionando l'opzione **strumenti**  >  **Opzioni**  >  per **Python**  >  **sperimentale**  >  **usare IntelliSense nuovo stile per gli ambienti**.
 
 Quando Visual Studio rileva un nuovo ambiente (o ne viene aggiunto uno), avvia automaticamente la compilazione del database analizzando i file di origine della libreria. Questo processo può avvenire ovunque e richiedere da un minuto a oltre un'ora a seconda dei componenti installati. (Anaconda, ad esempio, viene fornita con molte librerie e richiede del tempo per compilare il database). Al termine dell'operazione, è possibile ottenere informazioni dettagliate su IntelliSense e non è necessario aggiornare di nuovo il database (con il pulsante **Aggiorna** database) finché non si installano altre librerie.
 
@@ -165,7 +165,7 @@ Le librerie i cui dati non sono stati compilati vengono contrassegnate con un pu
 
 ::: moniker-end
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Gestire ambienti Python in Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Selezionare un interprete per un progetto](selecting-a-python-environment-for-a-project.md)

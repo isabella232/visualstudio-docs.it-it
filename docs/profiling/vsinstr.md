@@ -15,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 7b1334f7-f9b0-4a82-a145-d0607bfa8467
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 576e83e5440607b06aca1b80171f8ca30d716e24
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 476822abe665bee18d082b7187bfa657cc360d3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723114"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911651"
 ---
 # <a name="vsinstr"></a>VSInstr
 Lo strumento VSInstr viene usato per instrumentare i file binari. Viene richiamato tramite la sintassi seguente:
@@ -57,7 +57,7 @@ VSInstr [/U] filename [/options]
 |**SuspendOnly:**{**Before**\|**After**\|**Top**\|**Bottom**}`,funcname`|Interrompe la raccolta dei dati durante un'esecuzione di profilatura. Inserisce l'API SuspendProfile nella posizione specificata.<br /><br /> **Before** : immediatamente prima dell'immissione della funzione di destinazione.<br /><br /> **After** -subito dopo l'uscita dalla funzione di destinazione.<br /><br /> **Top** - subito dopo l'ingresso nella funzione di destinazione.<br /><br /> **Bottom** : immediatamente prima di ogni restituzione nella funzione di destinazione.<br /><br /> `funcname` - nome della funzione di destinazione.<br /><br /> Se la funzione di destinazione contiene una funzione StartProfile, la funzione SuspendProfile viene inserita prima.|
 |**ResumeOnly:**{**Before**\|**After**\|**Top**\|**Bottom**}`,funcname`|Avvia o riprende la raccolta dei dati durante un'esecuzione di profilatura.<br /><br /> In genere, viene usato per avviare la profilatura dopo che un'opzione **SuspendOnly** ha terminato la profilatura. Inserisce un'API ResumeProfile nella posizione specificata.<br /><br /> **Before** : immediatamente prima dell'immissione della funzione di destinazione.<br /><br /> **After** -subito dopo l'uscita dalla funzione di destinazione.<br /><br /> **Top** - subito dopo l'ingresso nella funzione di destinazione.<br /><br /> **Bottom** : immediatamente prima di ogni restituzione nella funzione di destinazione.<br /><br /> `funcname` - nome della funzione di destinazione.<br /><br /> Se la funzione di destinazione contiene una funzione StartProfile, la funzione ResumeProfile viene inserita dopo.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [VSPerfMon](../profiling/vsperfmon.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

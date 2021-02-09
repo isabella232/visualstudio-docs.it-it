@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ad298a44eedea0681a554add74bd67ed22cad41
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 99a0de44d5e7ac240187c929a8134ab47c7de55c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876028"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910983"
 ---
 # <a name="solution-configuration"></a>Configurazione soluzione
 Le configurazioni della soluzione archiviano le proprietà a livello di soluzione. Essi indirizzano il comportamento della chiave di **avvio** (F5) e dei comandi di **compilazione** . Per impostazione predefinita, questi comandi compilano e avviano la configurazione di debug. Entrambi i comandi vengono eseguiti nel contesto di una configurazione di soluzione. Ciò significa che l'utente può prevedere l'avvio di F5 e la compilazione di qualsiasi soluzione attiva configurata tramite le impostazioni. L'ambiente è progettato per ottimizzare le soluzioni anziché i progetti quando si tratta di creare ed eseguire.
@@ -29,7 +29,7 @@ Le configurazioni della soluzione archiviano le proprietà a livello di soluzion
 
  Ecco come è possibile implementare le configurazioni della soluzione supportate dal tipo di progetto:
 
-- Progetto
+- Project
 
    Consente di visualizzare i nomi dei progetti presenti nella soluzione corrente.
 

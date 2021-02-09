@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, frequently asked questions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4f6fae2b7d446035a08e3fcb77bcffaaed6de3a9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 67b09d3881dcde1d404b7ff0c1096ced1ecb50ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846298"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910607"
 ---
 # <a name="common-tasks-in-office-programming"></a>Attività comuni nella programmazione di Office
   Questo argomento descrive come usare Visual Studio per trovare le risposte alle seguenti categorie di domande frequenti relative alla programmazione delle soluzioni Office.
@@ -66,13 +66,13 @@ ms.locfileid: "96846298"
 
 ### <a name="controls-on-documents-and-worksheets"></a>Controlli su documenti e fogli di foglio
 
-- [Procedura: aggiungere controlli Windows Forms ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).
+- [Procedura: aggiungere controlli Windows Form ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).
 
 - [Procedura: aggiungere controlli NamedRange ai fogli di foglio](../vsto/how-to-add-namedrange-controls-to-worksheets.md).
 
 - [Procedura: aggiungere controlli ListObject a fogli di controllo](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
-- [Procedura: aggiungere controlli Windows Forms ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).
+- [Procedura: aggiungere controlli Windows Form ai documenti di Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).
 
 - [Procedura: aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md).
 

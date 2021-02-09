@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 3a12fbec-7088-4cf9-8f6f-ad8ddec6009a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1298df79bbe34b240d6e7b186f42e20b3d1a89de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d909694afcec033401b730011633a9da0fafbc18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738152"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912136"
 ---
 # <a name="address_kind"></a>ADDRESS_KIND
 Specifica i tipi di indirizzi.
@@ -84,7 +84,7 @@ Elemento della matrice, rappresentato dalla struttura [METADATA_ADDRESS_ARRAYELE
 `ADDRESS_KIND_RETVAL`\
 Valore restituito, rappresentato dalla struttura [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) .
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Il metodo [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) restituisce la struttura di [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) contenente un'Unione di strutture possibili, ovvero la struttura di [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) . Il `dwKind` campo della `DEBUG_ADDRESS_UNION` struttura contiene il `ADDRESS_KIND` valore e descrive come interpretare il campo di Unione.
 
 ## <a name="requirements"></a>Requisiti
@@ -94,7 +94,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

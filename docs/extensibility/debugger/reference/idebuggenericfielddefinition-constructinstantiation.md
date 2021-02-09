@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: ef8ae261-a98b-4dc2-93b3-7c5191818ba2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 352018e50b955ed414af974bc21b62775fd55f53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60ab91340c0f9baf9a75e6e283d3c1158bdbea3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728254"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911119"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
 Costruisce un'istanza di campo in base a una matrice di argomenti di tipo.
@@ -55,8 +55,8 @@ out Restituisce l'interfaccia [IDebugField](../../../extensibility/debugger/refe
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  I vincoli non vengono controllati.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

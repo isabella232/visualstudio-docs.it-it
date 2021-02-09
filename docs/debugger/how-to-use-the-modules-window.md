@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: d840fdca-b035-4452-b652-72580c831896
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0471aa25b14111271e6f9219e8e849eed49f113f
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 8add274d74d9d8d7d72f2808a2b0100c66a19717
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150561"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912201"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Visualizzare le dll e gli eseguibili nella finestra moduli (C#, C++, Visual Basic, F #)
 
@@ -78,7 +78,7 @@ Nella colonna **stato simbolo** della finestra **moduli** vengono visualizzati i
 
 1. Nel menu di scelta rapida selezionare o deselezionare **carica sempre automaticamente**. Le modifiche diventano effettive nella successiva sessione di debug.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Interruzione dell'esecuzione](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))
 - [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)
 - [Specificare i file di simboli (con estensione pdb) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
