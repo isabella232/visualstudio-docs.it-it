@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 38b88b8b-c2e0-4b2d-8b8b-9ff373733e78
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 73beb6fea872da74bdce6f94e05d1c8ddc8915b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5fde6459d2c5bb0463a919732427b277a371099
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467064"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864852"
 ---
 # <a name="idiainjectedsourceget_length"></a>IDiaInjectedSource::get_length
 Recupera il numero di byte di codice.
@@ -25,7 +25,7 @@ Recupera il numero di byte di codice.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_length ( 
+HRESULT get_length ( 
    ULONGLONG* pRetVal
 );
 ```
@@ -38,9 +38,9 @@ out Restituisce il numero di byte di codice.
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il valore restituito da questo metodo è la lunghezza del codice sorgente ed è lo stesso valore restituito dal metodo [IDiaInjectedSource:: get_Source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
 - [IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)

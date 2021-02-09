@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e317f29a-6525-46a7-8421-33985392f8fd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e69a3ca233b739b32acaa769270b5253cc7232d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec9075be8ab003cda087b37c13a0f2ef9c481dff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466987"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864803"
 ---
 # <a name="idialinenumberget_columnnumber"></a>IDiaLineNumber::get_columnNumber
 Recupera il numero di colonna in cui inizia l'espressione o l'istruzione.
@@ -25,7 +25,7 @@ Recupera il numero di colonna in cui inizia l'espressione o l'istruzione.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT get_columnNumber ( 
+HRESULT get_columnNumber ( 
    DWORD* pRetVal
 );
 ```
@@ -38,8 +38,8 @@ out Restituisce il numero di colonna in cui inizia l'espressione o l'istruzione.
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Il valore della colonna restituito da questo metodo è un offset di byte nella riga al primo carattere dell'istruzione sulla riga.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

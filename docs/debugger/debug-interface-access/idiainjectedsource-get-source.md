@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3c0b5386-321f-4f8f-85cc-e2ee7b4cc3d2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8408145d83b3b78f8392603466980495ab32d24b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f44f30b063a34a0d5d5549cd1923b66c1dde9cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467029"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864866"
 ---
 # <a name="idiainjectedsourceget_source"></a>IDiaInjectedSource::get_source
 Recupera i byte del codice sorgente.
@@ -25,7 +25,7 @@ Recupera i byte del codice sorgente.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_source ( 
+HRESULT get_source ( 
    DWORD  cbData,
    DWORD* pcbData,
    BYTE   data[]
@@ -48,5 +48,5 @@ out Buffer da compilare con i byte di origine.
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

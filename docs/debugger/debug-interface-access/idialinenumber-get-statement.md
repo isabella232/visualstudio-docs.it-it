@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 22b8ee29-79ef-427f-bd05-00d255ab836b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ea4a05bfccddeedb29110ea6ee44f34f85534a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0baad9c254efad1fff772cfae27828e3597d078b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85466847"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864733"
 ---
 # <a name="idialinenumberget_statement"></a>IDiaLineNumber::get_statement
 Recupera un flag che indica che le informazioni sulla riga descrivono l'inizio di un'istruzione, anziché un'espressione, nell'origine del programma.
@@ -25,7 +25,7 @@ Recupera un flag che indica che le informazioni sulla riga descrivono l'inizio d
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_statement ( 
+HRESULT get_statement ( 
    BOOL* pRetVal
 );
 ```
@@ -38,8 +38,8 @@ out Restituisce `TRUE` se queste informazioni sulla riga descrivono l'inizio di 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Le istruzioni possono estendersi su più righe. Questo metodo indica se il numero di riga associato contrassegna l'inizio di tale istruzione a più righe.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

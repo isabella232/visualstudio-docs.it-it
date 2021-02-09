@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 67ecdc8c-d342-4d0b-b02a-c6b88e22fd02
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 04807518555572f43c333bfc4d4d6fdded4f4442
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: defb7bba67605c905867834c792f2bf3d49781a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85467141"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99864845"
 ---
 # <a name="idiaimagedataget_virtualaddress"></a>IDiaImageData::get_virtualAddress
 Recupera il percorso nella memoria virtuale dell'immagine.
@@ -25,7 +25,7 @@ Recupera il percorso nella memoria virtuale dell'immagine.
 ## <a name="syntax"></a>Sintassi
 
 ```C++
-HRESULT get_virtualAddress ( 
+HRESULT get_virtualAddress ( 
    ULONGLONG* pRetVal
 );
 ```
@@ -38,5 +38,5 @@ out Restituisce l'indirizzo virtuale dell'immagine.
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)
