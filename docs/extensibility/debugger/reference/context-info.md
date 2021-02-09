@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4838df34c14b936af15b8a7a582a6d30ea12bee1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a95808383d4d75810f17b4da121a11025b6f894
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912986"
 ---
 # <a name="context_info"></a>CONTEXT_INFO
 Questa struttura descrive un contesto di memoria o un contesto di codice.
@@ -73,7 +73,7 @@ Offset dell'indirizzo nel codice in cui si trova il contesto specificato.
 `bstrAddressAbsolute`\
 Indirizzo assoluto in memoria in cui si trova il contesto specificato.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Questa struttura viene restituita da una chiamata al metodo [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) .
 
 Un uso tipico di questa struttura è il supporto di una finestra di debug della **memoria** .
@@ -85,7 +85,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
 - [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)

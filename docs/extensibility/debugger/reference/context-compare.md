@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c88b50644d1adda2dd0eaa3b74a828f9739d70b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f273bbab4a85f03a7da0d155d8b9e081693987c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737613"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912969"
 ---
 # <a name="context_compare"></a>CONTEXT_COMPARE
 Specifica i criteri per il confronto di due contesti di memoria.
@@ -84,7 +84,7 @@ Trovare il primo contesto di memoria nell'elenco che si trova nello stesso modul
 `CONTEXT_SAME_PROCESS`\
 Trovare il primo contesto di memoria nell'elenco che si trova nello stesso processo del contesto di memoria di destinazione.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 Passato come argomento al metodo [compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) .
 
 Questi valori vengono usati per trovare il primo contesto di memoria in un elenco che soddisfa i criteri di confronto specificati. A un contesto di memoria viene assegnato un elenco di contesti di memoria da confrontare con il `IDebugMemoryContext2::Compare` metodo. Viene quindi restituito il primo contesto di memoria nell'elenco per il quale viene restituito l'operatore di confronto `true` .
@@ -96,6 +96,6 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [Confronta](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

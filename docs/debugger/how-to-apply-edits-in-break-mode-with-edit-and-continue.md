@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b8e6ef8c41fbaf5aafa6b1fc9ef4216c773e75e
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 46cc695461d7575c7093987c175836896732dce6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913411"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Procedura: applicare modifiche in modalità di interruzioni con modifica e continuazione (Visual Basic)
 È possibile usare Modifica e continuazione per modificare il codice in modalità di interruzione e continuare senza interrompere e riavviare l'esecuzione.
@@ -61,6 +61,6 @@ Per le limitazioni sull'uso di modifica e continuazione durante il debug, vedere
 
      Il codice verrà eseguito con le modifiche incorporate nel progetto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Modifiche al codice supportate (C# e Visual Basic)](../debugger/supported-code-changes-csharp.md)
 - [Modifica e continuazione (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

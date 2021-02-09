@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 3ea176e8-1ce5-42c4-b7a2-abe3a2765033
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4d5497a4c29502fe4d7e4825b1767991c79298
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 3bbe6cac5d74d3767948f0c117539b95cbba570f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913424"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Eseguire il debug di un'app che non fa parte di una soluzione di Visual Studio (C++, C#, Visual Basic, F #)
 
@@ -71,7 +71,7 @@ Potrebbe essere necessario eseguire il debug di un'app (file con *estensione exe
 
 1. Con il nuovo file selezionato, avviare il debug dell'app selezionando un comando di esecuzione, ad esempio **Avvia debug**, dal menu **debug** .
 
-### <a name="see-also"></a>Vedere anche
+### <a name="see-also"></a>Vedi anche
 - [Impostazioni del debugger e preparazione](../debugger/debugger-settings-and-preparation.md)
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [File DBG](/previous-versions/visualstudio/visual-studio-2010/da528y14(v=vs.100))

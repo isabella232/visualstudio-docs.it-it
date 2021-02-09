@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 356472d8-68b2-4b7e-b5f0-1f16d4ee80af
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c552e57c43b5abc1a41ecd468747b4ce32241a6f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75b5e75362330def308bc3b0b836d22807aea66a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912721"
 ---
 # <a name="ienumcodepaths2skip"></a>IEnumCodePaths2::Skip
 Ignora il numero di elementi specificato.
@@ -46,8 +46,8 @@ int Skip(
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se `celt` è maggiore del numero di elementi rimanenti; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Se `celt` specifica un valore maggiore del numero di elementi rimanenti, l'enumerazione viene impostata sulla fine e `S_FALSE` viene restituito.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

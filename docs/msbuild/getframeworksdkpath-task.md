@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 2ef82b98-02b6-40cf-a9b5-f0e882fb5064
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4061dbe96c84648aacf136c0d59b92a2af037e2
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: c0fe468f593d085c10f8d077246af6858d0571fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436816"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914634"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath (attività)
 
@@ -63,7 +63,7 @@ Nell'esempio seguente viene utilizzata l' `GetFrameworkSdkPath` attività per ar
 </Project>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

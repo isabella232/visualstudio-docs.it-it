@@ -5,18 +5,18 @@ ms.date: 01/07/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 9a3aee5dc1c2d1272c3814fa6cfb2561f6cb4564
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af3e7c2d74a9d7b3a95ae24bba37981822247728
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801308"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912555"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Pubblicazione in Servizio app di Azure in Windows
 
@@ -79,7 +79,7 @@ Dopo aver creato un servizio app con un'app Web vuota in esecuzione nella propri
 
 Durante la pubblicazione nel servizio app di Azure da Visual Studio 2017 e versioni successive vengono copiati solo i file del progetto nel server. Per questa ragione. è necessario creare i file per configurare l'ambiente del server.
 
-1. In **Esplora soluzioni**di Visual Studio fare clic con il pulsante destro del mouse sul progetto e scegliere **Aggiungi > nuovo elemento...**. Nella finestra di dialogo visualizzata selezionare il modello "Azure web.config (Fast CGI)" e selezionare OK. Verrà creato un file `web.config` nella radice del progetto.
+1. In **Esplora soluzioni** di Visual Studio fare clic con il pulsante destro del mouse sul progetto e scegliere **Aggiungi > nuovo elemento...**. Nella finestra di dialogo visualizzata selezionare il modello "Azure web.config (Fast CGI)" e selezionare OK. Verrà creato un file `web.config` nella radice del progetto.
 
 1. Modificare la voce `PythonHandler` in `web.config` in modo che il percorso corrisponda a quello dell'installazione Python nel server (vedere [Riferimento alla configurazione di IIS](https://www.iis.net/configreference) (iis.net) per tutti i dettagli). Ad esempio, per Python 3.6.1 x64 la voce sarà la seguente:
 

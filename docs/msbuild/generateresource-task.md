@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 124e5dcc3666698dd71927e15c3686038233c317
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 810cbd4987277416b5be545603908d9818bff890
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914749"
 ---
 # <a name="generateresource-task"></a>GenerateResource (attività)
 
@@ -38,7 +38,7 @@ Nella tabella che segue vengono descritti i parametri dell'attività `GenerateRe
 |Parametro|Descrizione|
 |---------------|-----------------|
 |`AdditionalInputs`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Contiene input aggiuntivi per il controllo delle dipendenze eseguito da questa attività. Ad esempio, è in genere opportuno inserire come input i file di progetto e di destinazione, in modo da consentire la rigenerazione di tutte le risorse in caso di aggiornamento.|
-|`EnvironmentVariables`|Parametro `String[]` facoltativo.<br /><br /> Specifica una matrice di coppie nome/valore di variabili di ambiente che devono essere passate alla *resgen.exe*generata, oltre a (o eseguendo l'override in modo selettivo) del blocco di ambiente regolare.|
+|`EnvironmentVariables`|Parametro `String[]` facoltativo.<br /><br /> Specifica una matrice di coppie nome/valore di variabili di ambiente che devono essere passate alla *resgen.exe* generata, oltre a (o eseguendo l'override in modo selettivo) del blocco di ambiente regolare.|
 |`ExcludedInputPaths`|Parametro facoltativo <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Specifica una matrice di elementi che indicano i percorsi dai quali gli input tracciati verranno ignorati durante la verifica dell'aggiornamento.|
 |`ExecuteAsTool`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, esegue i file *tlbimp.exe* e *aximp.exe* dal framework di destinazione appropriato in modalità out-of-process per generare gli assembly wrapper necessari. Questo parametro consente il multitargeting di `ResolveComReferences`.|
 |`FilesWritten`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Contiene i nomi di tutti i file scritti nel disco, incluso, se presente, il file di cache. Questo parametro è particolarmente utile per le implementazioni di Clean.|
@@ -100,7 +100,7 @@ Supponendo che l'assembly si chiami myAssembly, il codice seguente genera una ri
 
 Senza i \<LogicalName> metadati, la risorsa verrebbe denominata *myAssembly. MyResources. resources*.  Questo esempio si applica solo a Visual Basic e al processo di compilazione di Visual C#.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

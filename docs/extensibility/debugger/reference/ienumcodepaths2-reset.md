@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 490c0e19-ff4b-4673-bd06-cdee996ac226
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2392c25513b53137e5cdca332bc133ab998be999
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d94343bd008139b0d1932e3ae0c94e0c9b6eb926
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717801"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912864"
 ---
 # <a name="ienumcodepaths2reset"></a>IEnumCodePaths2::Reset
 Reimposta l'enumerazione sul primo elemento.
@@ -40,8 +40,8 @@ int Reset();
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Dopo la chiamata a questo metodo, la chiamata successiva al metodo [successivo](../../../extensibility/debugger/reference/ienumcodepaths2-next.md) restituisce il primo elemento dell'enumerazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

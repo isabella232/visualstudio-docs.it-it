@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f3febc5a47288225d1780ba4579dad243c1ea45
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cbd0d6ee6ede29be35437125f614512ff3bbeab3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671272"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915185"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Elemento LocationField (modelli di progetto di Visual Studio)
 Specifica se la casella di testo **percorso** nella finestra di dialogo **nuovo progetto** è abilitata, disabilitata o nascosta per il modello di progetto.
@@ -39,10 +39,10 @@ Specifica se la casella di testo **percorso** nella finestra di dialogo **nuovo 
  Nelle sezioni seguenti vengono descritti gli attributi, gli elementi figlio e gli elementi padre.
 
 ### <a name="attributes"></a>Attributi
- Nessuno.
+ Nessuna.
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -96,6 +96,6 @@ Specifica se la casella di testo **percorso** nella finestra di dialogo **nuovo 
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)

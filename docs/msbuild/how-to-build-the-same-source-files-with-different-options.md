@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c6a2b27aa08780d440c0e961c9a091c2b2fdb2
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: bd9d77e32f9c287ac2dfcf3905fe9335e119a3a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436915"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914496"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedura: Compilare gli stessi file di origine con opzioni diverse
 
@@ -189,7 +189,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 -->
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [MSBuild](../msbuild/msbuild.md)
 - [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c17f4e7477a20ea245eaa359a6f9611a8dc4ece6
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 331ae3964de40e6590345aadae59776fe37f467a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913670"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Procedura: importare una pagina master o un tema
   È possibile assegnare a pagine del sito di SharePoint un aspetto coerente creando e utilizzando pagine e temi master. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] non fornisce modelli per questi elementi, ma è possibile crearli in SharePoint Designer e quindi importarli in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Per ulteriori informazioni, vedere [blocco predefinito: pagine e interfaccia utente](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) nel sito Web Microsoft.
@@ -91,7 +91,7 @@ ms.locfileid: "94903494"
 
      Viene visualizzato l'elenco di pagine master o temi che contiene la pagina master o il tema importato.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Pagine master](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))
 - [Importazione di elementi da un sito di SharePoint esistente](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Creazione di pagine per SharePoint](../sharepoint/creating-pages-for-sharepoint.md)

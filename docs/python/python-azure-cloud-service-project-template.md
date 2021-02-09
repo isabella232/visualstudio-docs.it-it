@@ -5,18 +5,18 @@ ms.date: 11/12/2018
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4d205ee2bbc0a6e9c44c34f3b0487abb4f22283e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a40745b19bde57f7f0ca52e04a11a89ad1ca69ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72983669"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912426"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Progetti servizio cloud di Azure per Python
 
@@ -45,7 +45,7 @@ Questo articolo contiene informazioni dettagliate sul modello di progetto e su a
 
     ![File di supporto del ruolo di lavoro](media/template-azure-cloud-service-worker-role-support-files.png)
 
-    Per aggiungere questi script di configurazione a un nuovo progetto, fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi**  >  **nuovo elemento**e selezionare file di **supporto del ruolo Web** o **file di supporto del ruolo di lavoro**.
+    Per aggiungere questi script di configurazione a un nuovo progetto, fare clic con il pulsante destro del mouse sul progetto, scegliere **Aggiungi**  >  **nuovo elemento** e selezionare file di **supporto del ruolo Web** o **file di supporto del ruolo di lavoro**.
 
 ## <a name="configure-role-deployment"></a>Configurare la distribuzione dei ruoli
 
@@ -67,7 +67,7 @@ Per eseguire altre operazioni di configurazione, è possibile procedere come seg
 
 Durante la scrittura dei ruoli è possibile testare il progetto cloud in locale usando l'emulatore del servizio cloud. L'emulatore è incluso in Azure SDK Tools e rappresenta una versione limitata dell'ambiente usato quando il servizio cloud viene pubblicato in Azure.
 
-Per avviare l'emulatore, assicurarsi innanzitutto che il progetto cloud corrisponda al progetto di avvio nella soluzione. A questo scopo, fare clic con il pulsante destro del mouse e scegliere **Imposta come progetto di avvio**. Selezionare quindi **debug**  >  **Avvia debug** (**F5**) o **Debug**  >  **Avvia debug senza eseguire debug** (**CTRL** + **F5**).
+Per avviare l'emulatore, assicurarsi innanzitutto che il progetto cloud corrisponda al progetto di avvio nella soluzione. A questo scopo, fare clic con il pulsante destro del mouse e scegliere **Imposta come progetto di avvio**. Selezionare quindi **debug**  >  **Avvia debug** (**F5**) o   >  **Avvia debug senza eseguire debug** (**CTRL** + **F5**).
 
 Si noti che, a causa delle limitazioni previste nell'emulatore, non è possibile eseguire il debug del codice Python. È quindi consigliabile eseguire il debug dei ruoli eseguendoli in modo indipendente e usare successivamente l'emulatore per il test di integrazione prima della pubblicazione.
 

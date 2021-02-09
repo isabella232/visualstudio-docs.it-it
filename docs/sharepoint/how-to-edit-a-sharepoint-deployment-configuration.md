@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e64f805496d03b42ca70489bab1302ecf58b33bc
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 59354537f0c1f22534395da1e0ed3db3929a14a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913646"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Procedura: modificare una configurazione di distribuzione di SharePoint
   È possibile creare una configurazione di distribuzione o modificare una configurazione di distribuzione esistente. Ad esempio, è possibile eseguire un singolo passaggio o modificare l'ordine dei passaggi nel processo di distribuzione. Potrebbe essere necessario creare o modificare le configurazioni di distribuzione perché non è possibile modificare le configurazioni predefinite e aggiunte a livello di codice.
@@ -47,11 +47,11 @@ ms.locfileid: "94903559"
 
 #### <a name="to-change-the-active-deployment-configuration"></a>Per modificare la configurazione della distribuzione attiva
 
-1. In **Esplora soluzioni** scegliere un progetto SharePoint, quindi nella barra dei menu scegliere **Project**  >  **\<*ProjectName*> Proprietà** progetto.
+1. In **Esplora soluzioni** scegliere un progetto SharePoint, quindi nella barra dei menu scegliere   >  **\<*ProjectName*> Proprietà** progetto.
 
 2. Scegliere la scheda **SharePoint** .
 
 3. Nella casella di riepilogo **Configurazione distribuzione attiva** scegliere il nome della configurazione di distribuzione che si desidera utilizzare.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Creare pacchetti e distribuire soluzioni SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

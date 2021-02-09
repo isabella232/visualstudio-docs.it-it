@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4beb6c676fbd66d7e0d11e4ca1fe2a3fa8188bfe
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: f1237128852cec39ff49204e1c269f10153b42ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904588"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914073"
 ---
 # <a name="incremental-builds"></a>Compilazioni incrementali
 
@@ -26,7 +26,7 @@ Le compilazioni incrementali sono compilazioni ottimizzate in modo da non esegui
 > [!NOTE]
 > Quando MSBuild valuta i file di input, vengono considerati solo i contenuti dell'elenco nell'esecuzione corrente. Le modifiche apportate all'elenco dall'ultima compilazione non rendono automaticamente una destinazione obsoleta.
 
-Se tutti gli elementi di output sono aggiornati, MSBuild ignora la destinazione. Questa *compilazione incrementale* della destinazione può migliorare significativamente la velocità di compilazione. Se solo alcuni file sono aggiornati, MSBuild esegue la destinazione, ma ignora gli elementi aggiornati e in questo modo tutti gli elementi vengono aggiornati. Questo processo è noto come *compilazione incrementale parziale* .
+Se tutti gli elementi di output sono aggiornati, MSBuild ignora la destinazione. Questa *compilazione incrementale* della destinazione può migliorare significativamente la velocità di compilazione. Se solo alcuni file sono aggiornati, MSBuild esegue la destinazione, ma ignora gli elementi aggiornati e in questo modo tutti gli elementi vengono aggiornati. Questo processo è noto come *compilazione incrementale parziale*.
 
 I mapping uno a uno in genere vengono prodotti dalle trasformazioni degli elementi. Per altre informazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md).
 
@@ -40,11 +40,11 @@ I mapping uno a uno in genere vengono prodotti dalle trasformazioni degli elemen
 </Target>
 ```
 
-Il set di file rappresentato dal tipo dell'elemento `Compile` viene copiato in una directory di backup. I file di backup hanno estensione *bak* . Se i file rappresentati dal tipo dell'elemento `Compile` o i file di backup corrispondenti non vengono eliminati o modificati dopo l'esecuzione della destinazione di backup, la destinazione di backup viene ignorata nelle compilazioni successive.
+Il set di file rappresentato dal tipo dell'elemento `Compile` viene copiato in una directory di backup. I file di backup hanno estensione *bak*. Se i file rappresentati dal tipo dell'elemento `Compile` o i file di backup corrispondenti non vengono eliminati o modificati dopo l'esecuzione della destinazione di backup, la destinazione di backup viene ignorata nelle compilazioni successive.
 
 ## <a name="output-inference"></a>Inferenza di output
 
-MSBuild confronta li attributi `Inputs` e `Outputs` di una destinazione per determinare se la destinazione deve essere eseguita. In teoria, il set di file che esiste dopo il completamento di una compilazione incrementale deve rimanere invariato a prescindere dall'esecuzione delle destinazioni associate. Poiché le proprietà e gli elementi che vengono creati o modificati dalle attività possono influire sulla compilazione, MSBuild deve dedurne i valori anche se la destinazione che influisce su di essi viene ignorata. Questo processo è noto come *inferenza di output* .
+MSBuild confronta li attributi `Inputs` e `Outputs` di una destinazione per determinare se la destinazione deve essere eseguita. In teoria, il set di file che esiste dopo il completamento di una compilazione incrementale deve rimanere invariato a prescindere dall'esecuzione delle destinazioni associate. Poiché le proprietà e gli elementi che vengono creati o modificati dalle attività possono influire sulla compilazione, MSBuild deve dedurne i valori anche se la destinazione che influisce su di essi viene ignorata. Questo processo è noto come *inferenza di output*.
 
 Esistono tre casi:
 
@@ -80,6 +80,6 @@ A causa dell'inferenza di output, è necessario aggiungere un'attività `CreateP
 
 Questo codice crea la proprietà CompileRan a cui viene assegnato il valore `true`, ma solo se la destinazione viene eseguita. Se la destinazione viene ignorata, la proprietà CompileRan non viene creata.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Server di destinazione](../msbuild/msbuild-targets.md)

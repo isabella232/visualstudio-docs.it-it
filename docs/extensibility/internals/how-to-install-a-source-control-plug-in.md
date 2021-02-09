@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2496de5d1139d66e4ae9072b551ada990cf856dd
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: ad5b77176d05c28b3ba938a1255de6e10fcd7094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912748"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Procedura: installare un plug-in del controllo del codice sorgente
 La creazione di un plug-in del controllo del codice sorgente prevede tre passaggi:
@@ -37,7 +37,7 @@ La creazione di un plug-in del controllo del codice sorgente prevede tre passagg
 
 #### <a name="to-register-the-source-control-plug-in-dll"></a>Per registrare la DLL del plug-in del controllo del codice sorgente
 
-1. Aggiungere due voci sotto la chiave **HKEY_LOCAL_MACHINE** della sottochiave **software** che specifica la sottochiave del nome della società seguita dalla sottochiave del nome del prodotto. Il modello è **\\ \<company name> \\ \<product name>HKEY_LOCAL_MACHINE\SOFTWARE\\ valore \<entry>**  =  *value*. Le due voci sono sempre denominate **SCCServerName** e **SCCServerPath**. Ogni è una stringa normale.
+1. Aggiungere due voci sotto la chiave **HKEY_LOCAL_MACHINE** della sottochiave **software** che specifica la sottochiave del nome della società seguita dalla sottochiave del nome del prodotto. Il modello è **\\ \<company name> \\ \<product name>HKEY_LOCAL_MACHINE\SOFTWARE\\ valore \<entry>**  =  . Le due voci sono sempre denominate **SCCServerName** e **SCCServerPath**. Ogni è una stringa normale.
 
     Se, ad esempio, il nome della società è Microsoft e il prodotto del controllo del codice sorgente è denominato SourceSafe, il percorso del registro di sistema sarà **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe**. In questa sottochiave, la prima voce, **SCCServerName**, è una stringa leggibile dall'utente che assegna un nome al prodotto. La seconda voce, **SCCServerPath**, è il percorso completo della dll del plug-in del controllo del codice sorgente a cui l'IDE deve connettersi. Di seguito sono disponibili voci del registro di sistema di esempio:
 
@@ -55,7 +55,7 @@ La creazione di un plug-in del controllo del codice sorgente prevede tre passagg
 
       **HideInVisualStudio** è un valore DWORD ed è impostato su *1* per nascondere il plug-in o *0* per visualizzare il plug-in. Se la voce del registro di sistema non viene visualizzata, il comportamento predefinito consiste nel visualizzare il plug-in.
 
-   - La voce del registro di sistema **DisableSccManager** può essere usata per disabilitare o nascondere l'opzione di menu **Launch \<Source Control Server>** che in genere viene visualizzata sotto il **File**  >  sottomenu **controllo del codice sorgente** file. Se si seleziona questa opzione di menu, viene chiamata la funzione [SccRunScc](../../extensibility/sccrunscc-function.md) . Il plug-in del controllo del codice sorgente potrebbe non supportare un programma esterno e, pertanto, potrebbe essere necessario disabilitare o nascondere l'opzione del menu **Launch** .
+   - La voce del registro di sistema **DisableSccManager** può essere usata per disabilitare o nascondere l'opzione di menu **Launch \<Source Control Server>** che in genere viene visualizzata sotto il   >  sottomenu **controllo del codice sorgente** file. Se si seleziona questa opzione di menu, viene chiamata la funzione [SccRunScc](../../extensibility/sccrunscc-function.md) . Il plug-in del controllo del codice sorgente potrebbe non supportare un programma esterno e, pertanto, potrebbe essere necessario disabilitare o nascondere l'opzione del menu **Launch** .
 
       **DisableSccManager** è un valore DWORD ed è impostato su *0* per abilitare l'opzione di menu **Launch \<Source Control Server>** , impostata su *1* per disabilitare l'opzione di menu e su *2* per nascondere l'opzione di menu. Se questa voce del registro di sistema non viene visualizzata, il comportamento predefinito consiste nel visualizzare l'opzione di menu.
 

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 1810096e-de8c-435e-be3d-f365d0cd0a6a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 945e289f3da55c8884f4ec2cd115c65dbe3be237
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 00823fd1a5029cb45b91a6beb4168f8a9cbd999a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398649"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913254"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Procedura: debug di eccezioni ASP.NET
 Il debug delle eccezioni è una parte importante dello sviluppo di una potente applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Per informazioni generali sul debug delle eccezioni, è possibile [gestire le eccezioni con il debugger](../debugger/managing-exceptions-with-the-debugger.md).
@@ -49,5 +49,5 @@ Il debug delle eccezioni è una parte importante dello sviluppo di una potente a
 
 - Collocare blocchi `try ... catch` attorno al codice che può generare eccezioni anticipabili e gestibili. Se, ad esempio, l'applicazione effettua chiamate a un Servizio Web XML o direttamente a SQL Server, il codice dovrebbe trovarsi in blocchi **try ... catch** perché è possibile che si verifichino numerose eccezioni.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

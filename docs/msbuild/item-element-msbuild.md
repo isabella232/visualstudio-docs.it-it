@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 51ecf68cacf0edca90893931642cd7fb6064f972
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 59a0660bb78e966150a6ef8d17dc24512a901a26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904642"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913954"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 
@@ -95,15 +95,15 @@ Ora è tuttavia possibile passare il metadato `Version` come un attributo, come 
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento di raggruppamento per elementi.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Gli elementi `Item` definiscono gli input nel sistema di compilazione e vengono raggruppati in raccolte di elementi in base ai relativi nomi definiti dall'utente. Queste raccolte di elementi possono essere usate come parametri per le [attività](../msbuild/msbuild-tasks.md), che a loro volta usano i singoli elementi nelle raccolte per eseguire i passaggi del processo di compilazione. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
 L'uso della notazione @ ( \<myType> ) consente di espandere una raccolta di elementi di tipo \<myType> in un elenco delimitato da punti e virgola di stringhe e di passare a un parametro. Se il parametro è di tipo `string`, il valore del parametro è l'elenco di elementi, separati da punti e virgola. Se il parametro è una matrice di stringhe (`string[]`), ogni elemento viene inserito nella matrice in base alla posizione dei punti e virgola. Se il parametro dell'attività è di tipo <xref:Microsoft.Build.Framework.ITaskItem>`[]`, il valore è il contenuto della raccolta di elementi con eventuali metadati associati. Per delimitare ciascun elemento usando un carattere diverso da un punto e virgola, usare la sintassi @(\<myType>, '\<separator>').
 
-Il motore MSBuild può valutare caratteri jolly come `*` e `?` e caratteri jolly ricorsivi, ad esempio */ \* \* / \* . cs* . Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
+Il motore MSBuild può valutare caratteri jolly come `*` e `?` e caratteri jolly ricorsivi, ad esempio */ \* \* / \* . cs*. Per altre informazioni, vedere [Elementi](../msbuild/msbuild-items.md).
 
-## <a name="examples"></a>Esempi
+## <a name="examples"></a>Esempio
 
 Nell'esempio di codice seguente viene illustrato come dichiarare due elementi di tipo `CSFile`. Il secondo elemento dichiarato contiene i metadati con `MyMetadata` impostato su `HelloWorld`.
 
@@ -116,7 +116,7 @@ Nell'esempio di codice seguente viene illustrato come dichiarare due elementi di
 </ItemGroup>
 ```
 
-L'esempio di codice seguente illustra come usare l'attributo `Update` per modificare i metadati in un file denominato *somefile.cs* , incluso tramite un criterio GLOB. È disponibile solo per i progetti .NET Core in Visual Studio 2017 o versioni successive.
+L'esempio di codice seguente illustra come usare l'attributo `Update` per modificare i metadati in un file denominato *somefile.cs*, incluso tramite un criterio GLOB. È disponibile solo per i progetti .NET Core in Visual Studio 2017 o versioni successive.
 
 ```xml
 <ItemGroup>
@@ -126,7 +126,7 @@ L'esempio di codice seguente illustra come usare l'attributo `Update` per modifi
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Elementi](../msbuild/msbuild-items.md)
 - [Elementi di progetto MSBuild comuni](../msbuild/common-msbuild-project-items.md)

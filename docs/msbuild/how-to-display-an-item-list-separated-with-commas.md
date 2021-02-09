@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3cae844c-7c6d-4144-82dc-efad10ba458f
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da2a38041a8fa4092e0167e60b00e35a7187866b
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 3ac0295b2d6f4300fa29c893d61616977ad44b87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436416"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914414"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Procedura: Visualizzare un elenco di elementi separati da virgole
 
@@ -30,7 +30,7 @@ Per impostazione predefinita, MSBuild usa i punti e virgola per separare gli ele
 
 `<Message Text="This is my list of TXT files: @(TXTFile)"/>`
 
-Quando l' `@(TXTFile)` elenco di elementi contiene gli elementi *App1.txt*, *App2.txt*e *App3.txt*, il messaggio è:
+Quando l' `@(TXTFile)` elenco di elementi contiene gli elementi *App1.txt*, *App2.txt* e *App3.txt*, il messaggio è:
 
 `This is my list of TXT files: App1.txt;App2.txt;App3.txt`
 
@@ -71,7 +71,7 @@ Per questo esempio, la riga di comando equivalente è:
 </Project>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Riferimenti a MSBuild](../msbuild/msbuild-reference.md)
 - [Elementi](../msbuild/msbuild-items.md)

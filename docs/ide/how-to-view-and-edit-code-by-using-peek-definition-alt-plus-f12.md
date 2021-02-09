@@ -6,15 +6,15 @@ ms.date: 01/10/2018
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b706e730767c7c79fbeebc11291ecd11f4635b6
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 9c296aca79e6f334c93d8a9974d4a718ccd39d97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95596924"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914999"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)
 
@@ -77,14 +77,14 @@ Nella finestra **Visualizza definizione** è possibile usare questi tasti di sce
 |Consente di aprire la finestra di definizione|**ALT** + **F12**|
 |Consente di chiudere la finestra di definizione|**ESC**|
 |Consente di alzare di livello la finestra di definizione in una scheda documento normale|**CTRL** + **ALT** + **Pagina iniziale**|
-|Consente di spostarsi tra le finestre di definizione|**CTRL** + **Alt** + ALT **-** e **CTRL** + **ALT**+**=**|
+|Consente di spostarsi tra le finestre di definizione|**CTRL** +  + ALT **-** e **CTRL** + **ALT**+**=**|
 |Consente di spostarsi tra più risultati|**F8** e **MAIUSC**+**F8**|
 |Consente di alternare la visualizzazione della finestra dell'editor di codice e la finestra di definizione|**Sposta** + **ESC**|
 
 > [!NOTE]
 > Per modificare codice in una finestra **Visualizza definizione** è anche possibile usare gli stessi tasti di scelta rapida utilizzabili in qualsiasi altra posizione in Visual Studio.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Spostarsi all'interno del codice](../ide/navigating-code.md)
 - [Vai a definizione e Visualizza definizione](../ide/go-to-and-peek-definition.md)

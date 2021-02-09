@@ -9,17 +9,17 @@ ms.topic: tutorial
 ms.devlang: vb
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a08e955d8446ebcd376f81773b5996146241486e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579939"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915031"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Esercitazione: introduzione a Visual Basic in Visual Studio
 
@@ -268,7 +268,7 @@ L'esercitazione è stata completata. Per altre informazioni, vedere l'esercitazi
 > [!div class="nextstepaction"]
 > [Compilare una libreria .NET Standard con Visual Basic e .NET Core SDK in Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 * [Procedure dettagliate relative al linguaggio Visual Basic](/dotnet/visual-basic/walkthroughs)
 * [Informazioni di riferimento per il linguaggio Visual Basic](/dotnet/visual-basic/language-reference/index)

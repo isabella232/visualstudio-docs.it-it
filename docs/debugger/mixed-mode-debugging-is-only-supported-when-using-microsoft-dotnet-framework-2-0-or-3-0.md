@@ -14,15 +14,15 @@ dev_langs:
 ms.assetid: f607af6f-57fe-472a-a32e-b6202067aa96
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa257db5059930d16685daee5aea2b6660300292
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 497eed63b695557fe19f7fd2cf5bb4900d632355
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975238"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913178"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>Supporto del debug in modalità mista solo quando si utilizza Microsoft .NET Framework 2.0 o 3.0
 Le versioni di Microsoft .NET Framework precedenti alla 2.0 non forniscono alcun supporto per il debug in modalità mista di processi a 64 bit. Ciò significa che non è possibile passare dal codice gestito al codice nativo o viceversa durante l'esecuzione del debug.
@@ -55,5 +55,5 @@ Le versioni di Microsoft .NET Framework precedenti alla 2.0 non forniscono alcun
 
 - Vedere [configurazione del debug SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Eseguire il debug di applicazioni a 64 bit](../debugger/debug-64-bit-applications.md)

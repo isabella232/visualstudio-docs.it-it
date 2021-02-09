@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: cc5664e0-0b38-40c1-bb65-04ae720c2adb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c40b8e35cd572c0075bb87f28fa1eda424cb2e8e
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: fd6b1821c10940bdd510ed2b8e866ca8369dce3d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903935"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913216"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Procedura: eseguire il debug di codice assembly inline
 
@@ -41,7 +41,7 @@ Per il debug di codice assembly inline sono disponibili le finestre **Disassembl
 
 2. Usare la finestra **Registri** per visualizzare il contenuto del registro.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Sicurezza del debugger](../debugger/debugger-security.md)
 - [Debug del codice nativo](../debugger/debugging-native-code.md)

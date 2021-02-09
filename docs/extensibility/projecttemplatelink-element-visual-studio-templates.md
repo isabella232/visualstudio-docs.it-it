@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51098553d0b4b969b600f6e6e55cf62871cb44bf
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: dba5063080fb45c366e7a1b76461b0a0d8978f7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915154"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>Elemento ProjectTemplateLink (modelli di Visual Studio)
 Specifica il percorso del file con *estensione vstemplate* di un progetto in un modello multiprogetto.
@@ -54,7 +54,7 @@ o \<VSTemplate>
 |`CopyParameters`|Consente la copia di tutte le variabili nel modello del gruppo centrale in ognuno dei modelli collegati.<br /><br /> I parametri nei modelli collegati dispongono del prefisso `"$ext_*$"`. Se, ad esempio, nel modello del gruppo padre il parametro `$projectname$` ha un valore **ExampleProject1**, quando il modello collegato viene trasformato in modo da essere eseguito, acquisisce un parametro `$ext_projectname$` , che è una copia del `$projectname$` parametro dal modello del gruppo padre.<br /><br /> In questo modo i modelli collegati possono condividere alcuni parametri comuni, che possono essere facilmente creati solo nel modello del gruppo padre.<br /><br /> Questo attributo è facoltativo ed è automaticamente impostato su `false` quando non è incluso.<br /><br /> Introdotto in Visual Studio 2013 Update 2. Per fare riferimento alla versione del prodotto corretta, vedere [assembly di riferimento recapitati in Visual Studio 2013 SDK Update 2](/previous-versions/dn632168(v=vs.120)).|
 
 ### <a name="child-elements"></a>Elementi figlio
- Nessuno.
+ Nessuna.
 
 ### <a name="parent-elements"></a>Elementi padre
 
@@ -96,7 +96,7 @@ o \<VSTemplate>
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Riferimento allo schema di modello di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creare modelli di progetto e di elementi](../ide/creating-project-and-item-templates.md)
 - [Procedura: creare modelli per più progetti](../ide/how-to-create-multi-project-templates.md)

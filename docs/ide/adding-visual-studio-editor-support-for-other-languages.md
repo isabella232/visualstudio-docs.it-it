@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bf84f4e48b9f070b3cebed4c2e17e5fc07992e3
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d5e78f632cdfe3e207e7ce71530d06c2a3b3fc6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914975"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Aggiungere il supporto di altri linguaggi all'editor di Visual Studio
 
@@ -118,7 +118,7 @@ In Windows *% USERPROFILE%* si risolve nel percorso: *\\ \<user name> c:\Users*.
 
 Per informazioni dettagliate su come creare grammatiche TextMate, vedere [TextMate - Introduction to Language Grammars](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate: introduzione alle grammatiche dei linguaggi) e [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Note sulla creazione della grammatica di un linguaggio e di un tema personalizzato per un bundle TextMate).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Aggiungere un'estensione del protocollo di server di linguaggio](../extensibility/adding-an-lsp-extension.md)
 - [Procedura dettagliata: Creare un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)

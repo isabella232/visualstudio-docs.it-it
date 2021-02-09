@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: aac894e3-a9f1-4bbc-a796-6ef07001f35b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f4397415e684b9603dd662e409590e88e86034b
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: eff27467aeea5068f3ec086b490ca9c735861549
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903624"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913839"
 ---
 # <a name="itemgroup-element-msbuild"></a>Elemento ItemGroup (MSBuild)
 
@@ -95,7 +95,7 @@ Per ItemGroup è possibile applicare condizioni usando l' `Condition` attributo.
 
 L' `Label` attributo viene usato in alcuni sistemi di compilazione come metodo per controllare i comportamenti di compilazione. È possibile usarlo solo nelle dichiarazioni, in modo da creare script MSBuild più comprensibili o come impostazioni di controllo per influire sulle azioni di compilazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Riferimento allo schema del file di progetto](../msbuild/msbuild-project-file-schema-reference.md)
 - [Elementi](../msbuild/msbuild-items.md)

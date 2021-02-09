@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: db476af4a9d3be9cab2109fb3489d0767765075f
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: ab301f11ffdae03564f05388dfbba55a90d12391
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903572"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913685"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Procedura: distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto
   Oltre a distribuire le soluzioni SharePoint al sistema locale, è possibile pubblicare soluzioni di SharePoint in modalità sandbox in siti remoti o in siti di SharePoint locali. Il processo di pubblicazione remota copia il file con *estensione wsp* nel server SharePoint, installa la soluzione e quindi consente di attivare la soluzione. È inoltre possibile aggiornare un'installazione remota di una soluzione SharePoint dopo che sono state apportate modifiche.
@@ -77,7 +77,7 @@ ms.locfileid: "94903572"
 
      La versione precedente della soluzione è disattivata, la nuova versione della soluzione viene aggiornata con i dati conservati dalla soluzione precedente e la nuova soluzione viene attivata in SharePoint.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: distribuire e pubblicare una soluzione SharePoint in un sito di SharePoint locale](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)
 - [Creare pacchetti della soluzione SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Procedura: personalizzare un pacchetto della soluzione SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

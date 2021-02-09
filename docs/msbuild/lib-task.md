@@ -24,39 +24,39 @@ helpviewer_keywords:
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf1029d42ce40d33e6eea1fcbe5e6434ff85a36
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 2141818c13a187b8afddf337aa11677097940f23
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904450"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913741"
 ---
 # <a name="lib-task"></a>LIB (attività)
 
-Esegue il wrapping dello strumento di gestione librerie a 32 bit di Microsoft, *lib.exe* . Gestione librerie crea e gestisce una libreria di file oggetto COFF (Common Object File Format). Gestione librerie può inoltre creare file di esportazione e librerie di importazione per fare riferimento a definizioni esportate. Per ulteriori informazioni, vedere Guida di [riferimento a lib](/cpp/build/reference/lib-reference) ed [esecuzione di lib](/cpp/build/reference/running-lib).
+Esegue il wrapping dello strumento di gestione librerie a 32 bit di Microsoft, *lib.exe*. Gestione librerie crea e gestisce una libreria di file oggetto COFF (Common Object File Format). Gestione librerie può inoltre creare file di esportazione e librerie di importazione per fare riferimento a definizioni esportate. Per ulteriori informazioni, vedere Guida di [riferimento a lib](/cpp/build/reference/lib-reference) ed [esecuzione di lib](/cpp/build/reference/running-lib).
 
 ## <a name="parameters"></a>Parametri
 
- La tabella seguente descrive i parametri dell'attività **LIB** . La maggior parte dei parametri attività corrisponde a un'opzione della riga di comando.
+ La tabella seguente descrive i parametri dell'attività **LIB**. La maggior parte dei parametri attività corrisponde a un'opzione della riga di comando.
 
 |Parametro|Descrizione|
 |---------------|-----------------|
 |**AdditionalDependencies**|Parametro **String []** facoltativo.<br /><br /> Specifica altri elementi da aggiungere alla riga di comando.|
 |**AdditionalLibraryDirectories**|Parametro **String []** facoltativo.<br /><br /> Esegue l'override del percorso delle librerie dell'ambiente. Specificare un nome di directory.<br /><br /> Per altre informazioni, vedere [/LIBPATH (Percorso LIB aggiuntivo)](/cpp/build/reference/libpath-additional-libpath).|
 |**AdditionalOptions**|Parametro **stringa** facoltativo.<br /><br /> Elenco di opzioni di *lib.exe* come specificato nella riga di comando. Ad esempio,/ \<option1>  / \<option2>  / \<option#> . Utilizzare questo parametro per specificare le opzioni di *lib.exe* che non sono rappresentate da altri parametri dell'attività **lib** .<br /><br /> Per altre informazioni, vedere [Esecuzione di LIB](/cpp/build/reference/running-lib).|
-|**DisplayLibrary**|Parametro **stringa** facoltativo.<br /><br /> Visualizza le informazioni sulla libreria di output. Specificare un nome di file per reindirizzare le informazioni a un file. Specificare "CON" o niente per reindirizzare le informazioni alla console.<br /><br /> Questo parametro corrisponde all'opzione **/List** di *lib.exe* .|
+|**DisplayLibrary**|Parametro **stringa** facoltativo.<br /><br /> Visualizza le informazioni sulla libreria di output. Specificare un nome di file per reindirizzare le informazioni a un file. Specificare "CON" o niente per reindirizzare le informazioni alla console.<br /><br /> Questo parametro corrisponde all'opzione **/List** di *lib.exe*.|
 |**Errorreporting-**|Parametro **stringa** facoltativo.<br /><br /> Specifica come inviare a Microsoft informazioni sull'errore interno se *lib.exe* non riesce in fase di esecuzione.<br /><br /> Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione della riga di comando.<br /><br /> -   **NoErrorReport**  -  **/errorreport: nessuna**<br />-   **PromptImmediately**  -  **/errorreport: prompt**<br />-   **QueueForNextLogin**  -  **/errorreport: Queue**<br />-   **SendErrorReport**  -  **/errorreport: Send**<br /><br /> Per altre informazioni, vedere l'opzione della riga di comando **/ERRORREPORT** in [Esecuzione di LIB](/cpp/build/reference/running-lib).|
-|**ExportNamedFunctions**|Parametro **String []** facoltativo.<br /><br /> Specifica una o più funzioni da esportare.<br /><br /> Questo parametro corrisponde all'opzione **/Export:** di *lib.exe* .|
-|**ForceSymbolReferences**|Parametro **stringa** facoltativo.<br /><br /> Impone *lib.exe* includere un riferimento al simbolo specificato.<br /><br /> Questo parametro corrisponde all'opzione **/include:** di *lib.exe* .|
-|**IgnoreAllDefaultLibraries**|Parametro `Boolean` facoltativo.<br /><br /> Se `true` , rimuove tutte le librerie predefinite dall'elenco di librerie che *lib.exe* cerca durante la risoluzione dei riferimenti esterni.<br /><br /> Questo parametro corrisponde al formato senza parametri dell'opzione **/NODEFAULTLIB** di *lib.exe* .|
+|**ExportNamedFunctions**|Parametro **String []** facoltativo.<br /><br /> Specifica una o più funzioni da esportare.<br /><br /> Questo parametro corrisponde all'opzione **/Export:** di *lib.exe*.|
+|**ForceSymbolReferences**|Parametro **stringa** facoltativo.<br /><br /> Impone *lib.exe* includere un riferimento al simbolo specificato.<br /><br /> Questo parametro corrisponde all'opzione **/include:** di *lib.exe*.|
+|**IgnoreAllDefaultLibraries**|Parametro `Boolean` facoltativo.<br /><br /> Se `true` , rimuove tutte le librerie predefinite dall'elenco di librerie che *lib.exe* cerca durante la risoluzione dei riferimenti esterni.<br /><br /> Questo parametro corrisponde al formato senza parametri dell'opzione **/NODEFAULTLIB** di *lib.exe*.|
 |**IgnoreSpecificDefaultLibraries**|Parametro **String []** facoltativo.<br /><br /> Rimuove le librerie specificate dall'elenco di librerie che *lib.exe* cerca quando risolve i riferimenti esterni.<br /><br /> Questo parametro corrisponde all'opzione **/NODEFAULTLIB** di *lib.exe* che accetta un `library` argomento.|
 |**LinkLibraryDependencies**|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, specifica che gli output della libreria dalle dipendenze del progetto vengono collegati automaticamente.|
-|**LinkTimeCodeGeneration**|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, specifica la generazione del codice in fase di collegamento.<br /><br /> Questo parametro corrisponde all'opzione **/LCTG** di *lib.exe* .|
+|**LinkTimeCodeGeneration**|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, specifica la generazione del codice in fase di collegamento.<br /><br /> Questo parametro corrisponde all'opzione **/LCTG** di *lib.exe*.|
 |**MinimumRequiredVersion**|Parametro **stringa** facoltativo.<br /><br /> Specifica la versione minima richiesta del sottosistema. Specificare un elenco delimitato da virgole di numeri decimali nell'intervallo compreso tra 0 e 65535.|
-|**ModuleDefinitionFile**|Parametro **stringa** facoltativo.<br /><br /> Specifica il nome del file di definizione moduli (con *estensione def* ).<br /><br /> Questo parametro corrisponde all'opzione **/def** di *lib.exe* che accetta un `filename` argomento.|
+|**ModuleDefinitionFile**|Parametro **stringa** facoltativo.<br /><br /> Specifica il nome del file di definizione moduli (con *estensione def*).<br /><br /> Questo parametro corrisponde all'opzione **/def** di *lib.exe* che accetta un `filename` argomento.|
 |**Nome**|Parametro **stringa** facoltativo.<br /><br /> Quando si compila una libreria di importazione, è necessario specificare il nome della DLL per la quale compilare la libreria di importazione.<br /><br /> Questo parametro corrisponde all'opzione **/Name** di *lib.exe* che accetta un `filename` argomento.|
 |**OutputFile**|Parametro **stringa** facoltativo.<br /><br /> Esegue l'override del nome e del percorso predefiniti del programma creato da *lib.exe* .<br /><br /> Questo parametro corrisponde all'opzione **/out** di *lib.exe* che accetta un `filename` argomento.|
 |**RemoveObjects**|Parametro **String []** facoltativo.<br /><br /> Omette l'oggetto specificato dalla libreria di output. *Lib.exe* crea una libreria di output combinando tutti gli oggetti (in file oggetto o in librerie) e quindi eliminando tutti gli oggetti specificati da questa opzione.<br /><br /> Questo parametro corrisponde all'opzione **/Remove** di *lib.exe* che accetta un `membername` argomento.|
@@ -69,6 +69,6 @@ Esegue il wrapping dello strumento di gestione librerie a 32 bit di Microsoft, *
 |**UseUnicodeResponseFiles**|Parametro **booleano** facoltativo.<br /><br /> Se `true`, consente al sistema di progetto di generare file di risposta UNICODE quando viene generata la Gestione di librerie. Specificare `true` quando i percorsi dei file nel progetto sono UNICODE.|
 |**Verbose**|Parametro **booleano** facoltativo.<br /><br /> Se `true` , Visualizza i dettagli sullo stato di avanzamento della sessione, inclusi i nomi dei file con *estensione obj* da aggiungere. Le informazioni vengono inviate all'output standard e possono essere reindirizzate a un file.<br /><br /> Per altre informazioni, vedere l'opzione **/VERBOSE** in [Esecuzione di LIB](/cpp/build/reference/running-lib).|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

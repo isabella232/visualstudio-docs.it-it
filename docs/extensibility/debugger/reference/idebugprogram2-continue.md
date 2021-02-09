@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee73ea3a9b65635cf14d4d345bf22de4e9593989
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07e48a59f044f8f3ccc94576210a51e7d70d9b66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387083"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912942"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 Continua l'esecuzione del programma da uno stato interrotto. Qualsiasi stato di esecuzione precedente (ad esempio un passaggio) viene mantenuto e l'esecuzione del programma viene nuovamente avviata.
@@ -31,13 +31,13 @@ Continua l'esecuzione del programma da uno stato interrotto. Qualsiasi stato di 
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT Continue( 
+HRESULT Continue( 
    IDebugThread2* pThread
 );
 ```
 
 ```csharp
-int Continue( 
+int Continue( 
    IDebugThread2 pThread
 );
 ```
@@ -48,12 +48,12 @@ int Continue( 
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo metodo viene chiamato su questo programma indipendentemente dal numero di programmi di cui è in corso il debug o dal programma che ha generato l'evento di arresto. L'implementazione deve mantenere lo stato di esecuzione precedente (ad esempio un passaggio) e continuare l'esecuzione come se non fosse mai stata arrestata prima del completamento dell'esecuzione precedente. Ovvero, se un thread in questo programma stava eseguendo un'operazione Step-over ed è stato interrotto perché un altro programma è stato arrestato e quindi questo metodo è stato chiamato, il programma deve completare l'operazione di passaggio originale.
 
 > [!WARNING]
 > Non inviare un evento di arresto o un evento immediato (sincrono) a [un evento durante](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) la gestione della chiamata; in caso contrario, il debugger potrebbe smettere di rispondere.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

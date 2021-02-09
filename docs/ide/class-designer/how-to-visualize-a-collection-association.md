@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eaec7d97cd92e65671dedca14c2dbae056b1af10
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 0e4e446925b2ee46bc846a3edfbf09fb2eb695ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96933583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912630"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Procedura: Visualizzare un'associazione di raccolte in Progettazione classi
 
@@ -38,7 +38,7 @@ Le proprietà e i campi che sono raccolte di altri tipi possono essere visualizz
 
 La proprietà o il campo viene visualizzato come una linea di associazione che si collega al tipo raccolto.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: Creare associazioni tra tipi](how-to-create-associations-between-types.md)
 - [Progettazione di classi e tipi](designing-and-viewing-classes-and-types.md)
