@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ServerDocument class, managing documents on server
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 585ec1842daeb4e4c4c59047383e5d53b3599bcf
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 17a25ca382cfbbc762731afacaa628de616cfe1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528497"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879475"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Gestire i documenti in un server usando la classe ServerDocument
   È possibile utilizzare la `ServerDocument` classe in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] per gestire diversi aspetti delle personalizzazioni a livello di documento, anche se Microsoft Office Word e Microsoft Office Excel non sono installati. È possibile eseguire le seguenti attività:
@@ -34,7 +34,7 @@ ms.locfileid: "97528497"
   [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 ## <a name="understand-the-serverdocument-class"></a>Comprendere la classe ServerDocument
- La `ServerDocument` classe è progettata per essere usata in computer in cui non è installato Office. Pertanto, in genere si utilizza questa classe in applicazioni che non si integrano con Office, ad esempio progetti console o progetti Windows Forms, anziché progetti di Office. Utilizzare la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe nell'assembly *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* .
+ La `ServerDocument` classe è progettata per essere usata in computer in cui non è installato Office. Pertanto, in genere si utilizza questa classe in applicazioni che non si integrano con Office, ad esempio progetti console o progetti Windows Form, anziché progetti di Office. Utilizzare la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe nell'assembly *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* .
 
  La `ServerDocument` classe può essere utilizzata per operare sulle personalizzazioni a livello di documento create tramite [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] .
 
@@ -65,7 +65,7 @@ ms.locfileid: "97528497"
 |Per rimuovere a livello di codice una personalizzazione da un documento in fase di esecuzione.<br /><br /> Per altre informazioni, vedere [procedura: rimuovere estensioni di codice gestito da documenti](../vsto/how-to-remove-managed-code-extensions-from-documents.md).|Metodo <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> .|
 |Per ottenere l'URL del manifesto di distribuzione associato al documento.|La proprietà <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A>.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura: associazione di estensioni di codice gestito a documenti](../vsto/how-to-attach-managed-code-extensions-to-documents.md)
 - [Procedura: rimuovere estensioni di codice gestito da documenti](../vsto/how-to-remove-managed-code-extensions-from-documents.md)
 - [Panoramica di Strumenti di Visual Studio per Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)

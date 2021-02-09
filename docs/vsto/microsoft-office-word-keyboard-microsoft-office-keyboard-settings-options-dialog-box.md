@@ -16,15 +16,15 @@ helpviewer_keywords:
 - keyboard shortcuts, Office development in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bf4cfbaf23ad9c1e545af25614722cd52c493df7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0138fcd73ddf07202a9111ec2b3d17dcc0fb7a0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528440"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879423"
 ---
 # <a name="microsoft-office-word-keyboard-settings-options-dialog-box"></a>Tastiera Microsoft Office Word, impostazioni, finestra di dialogo Opzioni
   Microsoft Office Word e Visual Studio gestiscono entrambi i tasti di scelta rapida. La stessa combinazione di tasti di scelta rapida può basarsi su comandi diversi in Word e in Visual Studio. Quando Word è aperto in un progetto a livello di documento in Visual Studio, solo un'applicazione alla volta riceve i comandi del tasto di scelta rapida. Per impostazione predefinita, Visual Studio riceve tutti i comandi dei tasti di scelta rapida, ma è possibile fare in modo che vengano ricevuti da Word quando il documento ha lo stato attivo selezionando lo **schema della tastiera dinamica**
@@ -38,5 +38,5 @@ ms.locfileid: "97528440"
 
  **Schema della tastiera dinamica** Visual Studio riceve i comandi del tasto di scelta rapida solo quando ha lo stato attivo. Quando il documento di Word ha lo stato attivo, Word riceve tutti i comandi del tasto di scelta rapida. Se, ad esempio, si preme il tasto funzione **F5** mentre il documento di Word ha lo stato attivo, in Word verrà visualizzata la finestra di dialogo **trova e Sostituisci** con la scheda **Vai a** selezionata. Se si preme **F5** mentre Visual Studio ha lo stato attivo, Visual Studio avvia il debug della soluzione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Tastiera Microsoft Office Excel, impostazioni della tastiera Microsoft Office, finestra di dialogo Opzioni](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)

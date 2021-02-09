@@ -9,15 +9,15 @@ helpviewer_keywords:
 - coded UI tests, for large applications
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 93ae6aaa77a133a0d1805554a38b2714bff5b312
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 9995623265b4f72e75f76827c2acbdf508c4e657
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330160"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879449"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testare un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente
 
@@ -25,7 +25,7 @@ In questo argomento viene illustrato l'uso dei test codificati dell'interfaccia 
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requirements**
+**Requisiti**
 
 - Visual Studio Enterprise
 
