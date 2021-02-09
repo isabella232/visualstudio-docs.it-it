@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8223e39eb804684fede50ceb2f7c859e198a272
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 4addc7b1f62c7528e845b34842c0fd85ba66148a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560135"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921394"
 ---
 # <a name="expression-evaluator"></a>Analizzatore di espressioni
 Gli analizzatori di espressioni (EE) esaminano la sintassi di un linguaggio per analizzare e valutare variabili ed espressioni in fase di esecuzione, in modo che vengano visualizzate dall'utente quando l'IDE è in modalità di interruzioni.
@@ -42,5 +42,5 @@ Gli analizzatori di espressioni (EE) esaminano la sintassi di un linguaggio per 
 ## <a name="implementation-notes"></a>Note sull'implementazione
  I [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] motori di debug si aspettano di comunicare con l'analizzatore di espressioni usando le interfacce CLR (Common Language Runtime). Di conseguenza, un analizzatore di espressioni che interagisce con i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] motori di debug deve supportare CLR (un elenco completo di tutte le interfacce di debug CLR si trova in debugref.doc, che fa parte di [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] ).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Componenti del debugger](../../extensibility/debugger/debugger-components.md)

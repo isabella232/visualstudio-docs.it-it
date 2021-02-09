@@ -5,17 +5,17 @@ ms.date: 09/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b611657db104a4b74e784df8925627ff41f3c33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd63d927e41a8b360eb7d934693bb3c83a30ea4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535330"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920662"
 ---
 ## <a name="select-the-test-framework-for-a-python-project"></a>Selezionare il Framework di test per un progetto Python
 
@@ -91,7 +91,7 @@ Per impostazione predefinita, Visual Studio identifica i test **unittest** e **p
         unittest.main()
     ```
 
-1. Salvare il file, se necessario, quindi aprire **Esplora test** con **il**  >  comando di menu**Esplora** test test.
+1. Salvare il file, se necessario, quindi aprire **Esplora test** con **il**  >  comando di menu **Esplora** test test.
 
 1. **Esplora test** Cerca i test nel progetto e li Visualizza come illustrato di seguito. Fare doppio clic su un test per aprirne il file di origine.
 
@@ -130,7 +130,7 @@ I test vengono eseguiti in background e **Esplora test** aggiorna lo stato di og
 Dal momento che gli unit test sono parti di codice, sono soggetti a bug esattamente come qualsiasi altro tipo di codice e a volte può essere necessario eseguirli in un debugger, in cui è possibile impostare punti di interruzione, esaminare le variabili ed eseguire il codice istruzione per istruzione. Visual Studio include anche strumenti di diagnostica per gli unit test.
 
 > [!Note]
-> Per impostazione predefinita, il debug di test usa il debugger ptvsd 4 per Visual Studio 2017 (versioni 15,8 e successive) e debugpy per Visual Studio 2019 (versioni 16,5 e successive). Se si vuole usare invece ptvsd 3, è possibile selezionare l'opzione **USA debugger legacy** in **strumenti**  >  **Opzioni**  >  **Python**  >  **debug**di Python. 
+> Per impostazione predefinita, il debug di test usa il debugger ptvsd 4 per Visual Studio 2017 (versioni 15,8 e successive) e debugpy per Visual Studio 2019 (versioni 16,5 e successive). Se si vuole usare invece ptvsd 3, è possibile selezionare l'opzione **USA debugger legacy** in **strumenti**  >  **Opzioni**  >    >  **debug** di Python. 
 
 Per avviare il debug, impostare un punto di interruzione iniziale nel codice, fare clic con il pulsante destro del mouse sul test (o su una selezione) in **Esplora test** e quindi scegliere **Esegui debug test selezionati**. Visual Studio avvia il debugger di Python come farebbe per il codice dell'applicazione.
 

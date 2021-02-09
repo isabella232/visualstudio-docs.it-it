@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 37f64b455ab0331f9b8f08da1f29a3e2c1b82fdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25aa56244fa9cb981732718deb40b2ea7af90e89
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713796"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922950"
 ---
 # <a name="provider_fields"></a>PROVIDER_FIELDS
 Specifica le proprietà associate a un provider di programmi.
@@ -28,17 +28,17 @@ Specifica le proprietà associate a un provider di programmi.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-enum enum_PROVIDER_FIELDS {
-   PFIELD_PROGRAM_NODES       = 0x01,
-   PFIELD_IS_DEBUGGER_PRESENT = 0x02
+enum enum_PROVIDER_FIELDS {
+   PFIELD_PROGRAM_NODES       = 0x01,
+   PFIELD_IS_DEBUGGER_PRESENT = 0x02
 };
 typedef DWORD PROVIDER_FIELDS;
 ```
 
 ```csharp
-public enum enum_PROVIDER_FIELDS {
-   PFIELD_PROGRAM_NODES       = 0x01,
-   PFIELD_IS_DEBUGGER_PRESENT = 0x02
+public enum enum_PROVIDER_FIELDS {
+   PFIELD_PROGRAM_NODES       = 0x01,
+   PFIELD_IS_DEBUGGER_PRESENT = 0x02
 };
 ```
 
@@ -49,7 +49,7 @@ public enum enum_PROVIDER_FIELDS {
  `PFIELD_IS_DEBUGGER_PRESENT`\
  Il `fIsDebuggerPresent` campo è valido.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questi valori vengono restituiti nel `Fields` membro della struttura [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) per indicare quali campi della struttura sono stati compilati in modo esplicito.
 
  Questi valori possono essere combinati con un bit per bit `OR` .
@@ -61,6 +61,6 @@ public enum enum_PROVIDER_FIELDS {
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)

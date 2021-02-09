@@ -9,16 +9,16 @@ helpviewer_keywords:
 - performance tools, performance session properties
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 02ddf15251cf40dd340465563068b114940f9318
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 59d69843aee2aeb0354ba3adc8a8f9e77de8eaa0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721229"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922157"
 ---
 # <a name="performance-session-properties"></a>Proprietà della sessione di prestazioni
 
@@ -101,7 +101,7 @@ Questa opzione consente di raccogliere i dati dai contatori di Windows Performan
 
  Per altre informazioni, vedere [procedura: raccogliere i dati dei contatori di Windows](../profiling/how-to-collect-windows-counter-data.md).
 
-## <a name="advanced"></a>Avanzato
+## <a name="advanced"></a>Avanzate
 
 Queste impostazioni consentono di aggiungere opzioni al processo di strumentazione specificando una o più opzioni dello strumento di profilatura da riga di comando [VSInstr](../profiling/vsinstr.md). È inoltre possibile specificare la versione di Common Runtime di cui eseguire la profilatura quando l'applicazione usa più di una versione.
 
@@ -111,7 +111,7 @@ Per altre informazioni, vedere:
 
 [Procedura: specificare opzioni di strumentazione aggiuntive](../profiling/how-to-specify-additional-instrumentation-options.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Panoramica](../profiling/overviews-performance-tools.md) 
  [Configurare le sessioni](../profiling/configuring-performance-sessions.md) 

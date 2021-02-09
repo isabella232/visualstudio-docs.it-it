@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd8ebd706d9228d23eb5d5ce3b1429063bae55e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db5a8857a6b6610fdc60b05158379ef69995ddf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72289712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920743"
 ---
 # <a name="step-6-work-with-git"></a>Passaggio 6: Utilizzo di Git
 
@@ -74,4 +74,4 @@ Da qui è possibile esaminare i concetti e le procedure dettagliate, inclusi gli
 - [Creare un'estensione C++ per Python](working-with-c-cpp-python-in-visual-studio.md)
 - [Eseguire la pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Profilatura](profiling-python-code-in-visual-studio.md)
-- [Testing unità](unit-testing-python-in-visual-studio.md)
+- [Unit test](unit-testing-python-in-visual-studio.md)

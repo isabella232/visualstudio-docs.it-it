@@ -8,18 +8,18 @@ helpviewer_keywords:
 - PROCESS_INFO_FLAGS enumeration
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 36c4cbbe17a109eacd69b76500e8c10d21d2d554
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd20b194623a02ff3852d0f0734f3dc7d7e1cfc6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713957"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923092"
 ---
 # <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
 
@@ -28,7 +28,7 @@ Descrive o specifica le proprietà di un processo.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-enum enum_PROCESS_INFO_FLAGS { 
+enum enum_PROCESS_INFO_FLAGS { 
    PIFLAG_SYSTEM_PROCESS    = 0x00000001,
    PIFLAG_DEBUGGER_ATTACHED = 0x00000002,
    PIFLAG_PROCESS_STOPPED   = 0x00000004,
@@ -38,7 +38,7 @@ typedef DWORD PROCESS_INFO_FLAGS;
 ```
 
 ```csharp
-enum enum_PROCESS_INFO_FLAGS { 
+enum enum_PROCESS_INFO_FLAGS { 
    PIFLAG_SYSTEM_PROCESS    = 0x00000001,
    PIFLAG_DEBUGGER_ATTACHED = 0x00000002,
    PIFLAG_PROCESS_STOPPED   = 0x00000004,
@@ -60,7 +60,7 @@ Indica che il processo è stato interrotto. Valido solo se `PIFLAG_DEBUGGER_ATTA
 `PIFLAG_PROCESS_RUNNING`\
 Indica che il processo è in esecuzione. Valido solo se `PIFLAG_DEBUGGER_ATTACHED` viene specificato anche. Disponibile in Visual Studio 2005 e versioni successive.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
 
 Utilizzato per il `Flags` membro della struttura [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) .
 
@@ -74,7 +74,7 @@ Spazio dei nomi: Microsoft. VisualStudio. Debugger. Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Enumerazioni](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

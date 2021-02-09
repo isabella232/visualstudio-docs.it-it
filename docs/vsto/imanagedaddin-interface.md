@@ -9,15 +9,15 @@ helpviewer_keywords:
 - IManagedAddin interface
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89e705296c6051b8bdec823e523f0a386ff7ff76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541128"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920442"
 ---
 # <a name="imanagedaddin-interface"></a>interfaccia IManagedAddin
   Implementare l'interfaccia IManagedAddin per creare un componente che carica i componenti aggiuntivi VSTO gestiti. Questa interfaccia è stata aggiunta nel sistema di Microsoft Office 2007.
@@ -48,7 +48,7 @@ interface IManagedAddin : IUnknown
 |[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|Chiamato quando un'applicazione di Microsoft Office carica un componente aggiuntivo VSTO gestito.|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Chiamato appena prima che un'applicazione di Microsoft Office scarichi un componente aggiuntivo VSTO gestito.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Microsoft Office applicazioni, a partire dal sistema 2007 Microsoft Office, usare l'interfaccia IManagedAddin per caricare i componenti aggiuntivi VSTO di Office. È possibile implementare l'interfaccia IManagedAddin per creare il caricatore del componente aggiuntivo VSTO e il runtime per i componenti aggiuntivi VSTO gestiti, invece di usare il caricatore del componente aggiuntivo VSTO (*VSTOLoader.dll*) e [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Per altre informazioni, vedere [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 ## <a name="how-managed-add-ins-are-loaded"></a>Come vengono caricati i componenti aggiuntivi gestiti
@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. L'applicazione individua i componenti aggiuntivi VSTO cercando le voci nella chiave seguente del Registro di sistema:
 
-    **HKEY_CURRENT_USER \Software\Microsoft\Office \\ *\<application name>* \Addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<application name>* \Addins\\**
 
     Ogni voce sotto questa chiave del Registro di sistema è un ID univoco del componente aggiuntivo VSTO. In genere, corrisponde al nome dell'assembly del componente aggiuntivo VSTO.
 
 2. L'applicazione cerca una voce `Manifest` nella voce per ciascun componente aggiuntivo VSTO.
 
-    I componenti aggiuntivi VSTO gestiti possono archiviare il percorso completo di un manifesto nella `Manifest` voce **HKEY_CURRENT_USER \software\microsoft\office \\ _\<application name>_ \Addins \\ _\<add-in ID>_ **. Un manifesto è un file (in genere, un file XML) che fornisce informazioni usate per consentire il caricamento del componente aggiuntivo VSTO.
+    I componenti aggiuntivi VSTO gestiti possono archiviare il percorso completo di un manifesto nella `Manifest` voce in **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \Addins \\ _\<add-in ID>_**. Un manifesto è un file (in genere, un file XML) che fornisce informazioni usate per consentire il caricamento del componente aggiuntivo VSTO.
 
 3. Se l'applicazione individua una voce `Manifest` , prova a caricare un componente caricatore per componenti aggiuntivi VSTO gestiti. L'applicazione esegue questa operazione tentando di creare un oggetto COM che implementa l'interfaccia IManagedAddin.
 
@@ -84,5 +84,5 @@ interface IManagedAddin : IUnknown
 > [!CAUTION]
 > Questo CLSID viene utilizzato anche da *VSTOLoader.dll* in [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Pertanto, se si usa IManagedAddin per creare il proprio componente di runtime e caricatore del componente aggiuntivo VSTO, non è possibile distribuire il componente nei computer che eseguono componenti aggiuntivi VSTO che si basano su [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Informazioni di riferimento sulle API non gestite &#40;sviluppo per Office in Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

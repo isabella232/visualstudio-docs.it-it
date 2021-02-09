@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d88d936a4b470f891f3b2bf2c353f4ef4e595c57
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c4ae447976798372e049df46552f8383389f7b3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811045"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920774"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Passaggio 3: Usare la finestra interattiva REPL
 
@@ -59,7 +59,7 @@ La finestra **interattiva** di Visual Studio per Python offre un'esperienza REPL
     ![Invio del codice alla finestra interattiva e test](media/vs-getting-started-python-14-interactive4.png)
 
     > [!Tip]
-    > Se si usa **CTRL** + **invio** nell'editor *senza* una selezione, viene eseguita la riga di codice corrente nella finestra **interattiva** e il punto di inserimento viene posizionato automaticamente nella riga successiva. Con questa funzionalità, premendo **Ctrl** + ripetutamente CTRL**invio** , viene illustrato un modo pratico per esaminare il codice che non è possibile solo con la riga di comando di Python. Consente anche di esaminare il codice senza eseguire il debugger e senza avviare necessariamente il programma dall'inizio.
+    > Se si usa **CTRL** + **invio** nell'editor *senza* una selezione, viene eseguita la riga di codice corrente nella finestra **interattiva** e il punto di inserimento viene posizionato automaticamente nella riga successiva. Con questa funzionalità, premendo  + ripetutamente CTRL **invio** , viene illustrato un modo pratico per esaminare il codice che non è possibile solo con la riga di comando di Python. Consente anche di esaminare il codice senza eseguire il debugger e senza avviare necessariamente il programma dall'inizio.
 
 1. È anche possibile copiare e incollare più righe di codice nella finestra **Interattiva** da qualsiasi origine, come il frammento di codice riportato di seguito, che è difficile eseguire con le transazioni di replica della riga di comando di Python. Quando il codice viene incollato, la finestra **Interattiva** lo esegue, come se fosse stato digitato:
 

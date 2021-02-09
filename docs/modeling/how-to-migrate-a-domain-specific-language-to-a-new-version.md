@@ -5,16 +5,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: dacb13ef14768f4f59a414f6159bbea8d24c4de8
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: bbefb1cd5ae546c5454660b6782f9c76f35a63f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "92298406"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922697"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procedura: eseguire la migrazione di un linguaggio specifico di dominio a una nuova versione
 È possibile eseguire la migrazione di progetti che definiscono e utilizzano il linguaggio specifico di dominio a [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] dalla versione di [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] distribuita con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] .
@@ -26,7 +26,7 @@ ms.locfileid: "92298406"
  **%Programmi%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>Prima di eseguire la migrazione dei progetti DSL
- Lo strumento di migrazione modifica i file di progetto di Visual Studio (con**estensione csproj**) e i file di soluzione (con**estensione sln**).
+ Lo strumento di migrazione modifica i file di progetto di Visual Studio (con **estensione csproj**) e i file di soluzione (con **estensione sln**).
 
 #### <a name="to-prepare-projects-for-migration"></a>Per preparare i progetti per la migrazione.
 
@@ -86,6 +86,6 @@ ms.locfileid: "92298406"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Post di blog correlati](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

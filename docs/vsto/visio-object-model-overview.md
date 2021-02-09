@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Visio object model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9278cede2dc7f105b2741d5d63b01b4cd966c790
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8d7a83b5a900defb63ceffe4f63d57e2b200c47b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528373"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921772"
 ---
 # <a name="visio-object-model-overview"></a>Panoramica del modello a oggetti di Visio
   Per sviluppare soluzioni Office per Microsoft Office Visio è possibile interagire con il modello a oggetti di Visio. Questo modello a oggetti è costituito da classi e interfacce fornite nell'assembly di interoperabilità primario per Visio ed è definito nello spazio dei nomi `Microsoft.Office.Interop.Visio`.
@@ -78,7 +78,7 @@ ms.locfileid: "97528373"
 
  Per altre informazioni, vedere [Panoramica di classi e interfacce negli assembly di interoperabilità primari di Office e negli assembly di](/previous-versions/office/office-12/ms247299(v=office.12)) [interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Soluzioni Visio](../vsto/visio-solutions.md)
 - [Usare documenti di Visio](../vsto/working-with-visio-documents.md)
 - [Usare le forme di Visio](../vsto/working-with-visio-shapes.md)

@@ -5,17 +5,17 @@ ms.date: 01/28/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08ae2e13f094535eae0447cc3b8d4acf4c806a99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801581"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920613"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usare l'estensione Cookiecutter
 
@@ -40,7 +40,7 @@ Nella home page di Cookiecutter viene visualizzato un elenco di modelli tra cui 
 | **Installato** | Modelli installati nel computer locale. Quando si usa un modello online, il repository corrispondente viene clonato automaticamente in una sottocartella di file *~/.cookiecutter*. È possibile eliminare un modello installato selezionato premendo **CANC**. |
 | **Consigliato** | Modelli caricati dal feed consigliato. Il feed predefinito è a cura di Microsoft. Vedere [Opzioni di Cookiecutter](#cookiecutter-options) di seguito per altri dettagli sulla personalizzazione del feed. |
 | **GitHub** | Risultati di ricerca da GitHub per la parola chiave cookiecutter. I risultati da GitHub vengono impaginati. Se sono disponibili altri risultati, alla fine dell'elenco viene visualizzata l'opzione **Load More** (Carica altro). |
-| **Personalizzato** | Quando si immette una posizione personalizzata nella casella di ricerca, i risultati vengono visualizzati in questo gruppo. È possibile digitare il percorso completo del repository GitHub o il percorso completo di una cartella nel disco locale. |
+| **Impostazione personalizzata** | Quando si immette una posizione personalizzata nella casella di ricerca, i risultati vengono visualizzati in questo gruppo. È possibile digitare il percorso completo del repository GitHub o il percorso completo di una cartella nel disco locale. |
 
 ### <a name="cloning"></a>Clonazione
 
@@ -65,7 +65,7 @@ Ogni modello di Cookiecutter definisce un set proprio di opzioni e specifica un 
 
 Se il modello specifica attività specifiche di Visual Studio da eseguire dopo la generazione del codice, viene visualizzata un'ulteriore opzione **Run additional tasks on completion** (Esegui attività aggiuntive al completamento) che consente di rifiutare esplicitamente tali attività. Le attività vengono usate più comunemente per aprire un Web browser, aprire file nell'editor, installare dipendenze e così via.
 
-### <a name="create"></a>Create
+### <a name="create"></a>Crea
 
 Dopo aver impostato le opzioni, selezionare **Create** (Crea) per generare il codice. Se la cartella di output non è vuota viene visualizzato un messaggio di avviso. Se si ha familiarità con l'output del modello e non è un problema sovrascrivere file, è possibile ignorare l'avviso. In caso contrario, selezionare **Cancel** (Annulla), specificare una cartella vuota e quindi copiare manualmente i file creati nella cartella di output non vuota.
 
@@ -82,7 +82,7 @@ Le opzioni tagliatore sono disponibili tramite **strumenti**  >  **Opzioni**  > 
 | Opzione | Descrizione |
 | --- | --- |
 | **URL feed consigliato** | Posizione del feed dei modelli consigliato. Può essere un URL o un percorso di un file locale. Lasciare l'URL vuoto per usare il feed predefinito a cura di Microsoft. Il feed offre un semplice elenco di percorsi di modelli, separati da caratteri di nuova riga. Per richiedere modifiche al feed curato, effettuare una richiesta pull per l'[origine su GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
-| **Mostra la guida** | Controlla la visibilità della barra informazioni della Guida nella parte superiore della finestra di Cookiecutter. |
+| **Show Help (Mostra Guida)** | Controlla la visibilità della barra informazioni della Guida nella parte superiore della finestra di Cookiecutter. |
 
 ## <a name="optimize-cookiecutter-templates-for-visual-studio"></a>Ottimizzare i modelli di Cookiecutter per Visual Studio
 

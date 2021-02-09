@@ -11,18 +11,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f6d069bfa462b8aa75fc9247c08b3662c4a445fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6cf4429607f8ceb2a3ed4a5a1cb91274a201698
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801802"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922807"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Esercitazione: creare la prima app ASP.NET Core usando Entity Framework con Visual Studio 2019
 
@@ -98,6 +98,6 @@ Nel prossimo video verranno presentate ulteriori informazioni sul primo progetto
 
 [Esercitazione: creazione della prima app Web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Esercitazione: Introduzione a C# e ASP.NET Core](tutorial-aspnet-core.md) Esercitazione più dettagliata senza una procedura dettagliata video

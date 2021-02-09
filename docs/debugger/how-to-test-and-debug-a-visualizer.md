@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5cc12ce8-c819-48e4-b487-98d403001b28
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1326fe9731a9d938678eb9397b106ab9e71b4fd5
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: b01c97c0ee72a3d29052d98d8a37cdc746c26d27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150665"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923277"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Procedura: testare un visualizzatore ed eseguirne il debug
 Dopo avere scritto un visualizzatore, è necessario testarlo ed eseguirne il debug.
@@ -55,7 +55,7 @@ Una soluzione più semplice per il debug di un visualizzatore consiste nell'eseg
 
     Per un esempio più completo, vedere [procedura dettagliata: scrittura di un visualizzatore in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Procedura dettagliata: scrittura di un visualizzatore in C #](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
 - [Procedura: installare un visualizzatore](../debugger/how-to-install-a-visualizer.md)
 - [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)

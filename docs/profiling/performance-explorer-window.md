@@ -10,16 +10,16 @@ helpviewer_keywords:
 - performance tools, Performance Explorer
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 06d2b7e2ad5d5df4022dc78aa06315545d56c0ee
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 4533bcb59ebbd36f47ddf73f9b78429f041c357c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722815"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922317"
 ---
 # <a name="performance-explorer-window"></a>Finestra Esplora prestazioni
 
@@ -51,7 +51,7 @@ La finestra **Esplora prestazioni** contiene un controllo albero che visualizza 
 
 - **Report**: visualizza i nomi dei file di dati del profiler generati per la sessione. Fare clic con il pulsante destro del mouse su **Report** per aggiungere un rapporto esistente o confrontare due file di dati del profiler. Fare clic con il pulsante destro del mouse sul nome di un rapporto per aprire, rimuovere o esportare un file di dati del profiler.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Panoramica](../profiling/overviews-performance-tools.md) 
  [Configurazione di sessioni](../profiling/configuring-performance-sessions.md) 

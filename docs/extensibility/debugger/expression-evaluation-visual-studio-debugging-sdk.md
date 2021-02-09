@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5044ced5-c18c-4534-b0bf-cc3e50cd57ac
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c398d9eb79a6b5fcd1a6851596ab8913faf32fa
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 772d38b328eca1e0afb6ff48a5ad580d01939527
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921480"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Valutazione di espressioni (Visual Studio Debugging SDK)
 Durante la modalità di rottura, l'IDE deve valutare espressioni semplici che coinvolgono diverse variabili di programma. Per eseguire la valutazione, il motore di debug (DE) deve analizzare e valutare un'espressione immessa in una delle finestre dell'IDE.
@@ -40,5 +40,5 @@ Durante la modalità di rottura, l'IDE deve valutare espressioni semplici che co
 
  Per la valutazione sincrona e asincrona è necessario implementare il metodo [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) . Per la valutazione di espressioni asincrone è necessaria l'implementazione di [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Controllo di esecuzione e valutazione dello stato](../../extensibility/debugger/execution-control-and-state-evaluation.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - WPF [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e041cda914cbf8aced4b19adfc80c601984c30e0
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 7bc720e6218e4cbb76b14f356d190b738e31ede3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526436"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921910"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Usare i controlli WPF nelle soluzioni Office
 
@@ -77,7 +77,7 @@ Non è possibile aggiungere i controlli WPF direttamente agli elementi dell'inte
 
 4. Compilare il progetto.
 
-5. Aggiungere un elemento di **controllo utente** , ovvero un Windows Forms controllo utente, al progetto.
+5. Aggiungere un elemento di **controllo utente** , ovvero un Windows Form controllo utente, al progetto.
 
 6. Aprire la finestra di progettazione per il controllo utente Windows Form.
 
@@ -94,7 +94,7 @@ Non è possibile aggiungere i controlli WPF direttamente agli elementi dell'inte
 
 ## <a name="host-wpf-controls-by-using-the-elementhost-class"></a>Ospitare controlli WPF tramite la classe ElementHost
 
-In Visual Studio vengono fornite funzionalità che consentono di usare i controlli Windows Form nelle soluzioni Office, ma non vengono fornite funzionalità simili per i controlli WPF. Ad esempio, è possibile aggiungere controlli Windows Forms ai documenti e ai fogli di elaborazione in fase di progettazione trascinando i controlli dalla **casella degli strumenti** o in fase di esecuzione usando metodi helper. Questi strumenti non sono tuttavia disponibili per i controlli WPF.
+In Visual Studio vengono fornite funzionalità che consentono di usare i controlli Windows Form nelle soluzioni Office, ma non vengono fornite funzionalità simili per i controlli WPF. Ad esempio, è possibile aggiungere controlli Windows Form ai documenti e ai fogli di elaborazione in fase di progettazione trascinando i controlli dalla **casella degli strumenti** o in fase di esecuzione usando metodi helper. Questi strumenti non sono tuttavia disponibili per i controlli WPF.
 
 I controlli WPF usano la classe <xref:System.Windows.Forms.Integration.ElementHost> come livello di integrazione tra un form o un controllo Windows Form e i controlli WPF. Quando si aggiungono i controlli WPF alla soluzione in fase di progettazione, Visual Studio genera automaticamente un oggetto <xref:System.Windows.Forms.Integration.ElementHost>.
 
@@ -102,26 +102,26 @@ I controlli WPF usano la classe <xref:System.Windows.Forms.Integration.ElementHo
 
 Per altre informazioni sulle problematiche di progettazione e architettura per l'hosting dei controlli WPF in form e controlli Windows Form, vedere gli argomenti seguenti:
 
-- [Architettura di input per l'interoperabilità Windows Forms e WPF](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture)
+- [Architettura di input per l'interoperabilità Windows Form e WPF](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture)
 
-- [Mapping delle proprietà Windows Forms e WPF](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-property-mapping)
+- [Mapping delle proprietà Windows Form e WPF](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-property-mapping)
 
-- [Interoperatività di WPF e Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)
+- [Interoperatività di WPF e Windows Form](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)
 
-- [Controlli di Windows Forms e controlli WPF equivalenti](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
+- [Controlli di Windows Form e controlli WPF equivalenti](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
 
 Per altre informazioni sull'aggiunta dei controlli WPF a form e controlli Windows Form in Visual Studio in fase di progettazione, vedere gli argomenti seguenti:
 
-- [Procedura dettagliata: creare nuovi contenuti WPF in Windows Forms in fase di progettazione](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
+- [Procedura dettagliata: creare nuovi contenuti WPF in Windows Form in fase di progettazione](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
 
-- [Procedura dettagliata: disposizione del contenuto WPF in Windows Forms in fase di progettazione](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
+- [Procedura dettagliata: disposizione del contenuto WPF in Windows Form in fase di progettazione](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
 
 - [Procedura dettagliata: stile contenuto WPF](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Personalizzazione dell'interfaccia utente di Office](../vsto/office-ui-customization.md)
-- [Cenni preliminari sui controlli Windows Forms nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Cenni preliminari sui controlli Windows Form nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Panoramica del riquadro azioni](../vsto/actions-pane-overview.md)
 - [Riquadri attività personalizzati](../vsto/custom-task-panes.md)
 - [Creazione di aree del modulo di Outlook](../vsto/creating-outlook-form-regions.md)

@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 1a4dfd9a-e7e2-4aa3-93e2-4f12c7b0970f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 30b4da23ef89f8bdde61bbf1eebb63bb4d239b7b
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 3d1804782ee03e322bda35d4855015dce1cf5542
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722360"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922017"
 ---
 # <a name="unblock-stack"></a>Stack di sblocco
 Se l'elemento del thread attualmente selezionato rappresenta un segmento bloccato che ha iniziato a essere eseguito in un secondo momento, dopo essere stato sbloccato da un altro thread nel processo corrente, in questa scheda viene visualizzato lo stack di chiamate per il thread che ha eseguito lo sblocco.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

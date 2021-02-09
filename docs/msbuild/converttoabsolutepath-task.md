@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: f1af2cb8-b4ef-4a72-be80-22fa526c4491
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf9695b36f341fa350abf53062e70095c03c374
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 8c0529578d97ddbeaff4ec999329626fbf951094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796160"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922554"
 ---
 # <a name="converttoabsolutepath-task"></a>attività ConvertToAbsolutePath
 
@@ -44,7 +44,7 @@ Converte un percorso relativo, o un riferimento, in un percorso assoluto.
 
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension> , che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task> . Per un elenco di questi parametri aggiuntivi e le relative descrizioni, vedere [classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività](../msbuild/msbuild-tasks.md)
 - [Informazioni di riferimento sulle attività](../msbuild/msbuild-task-reference.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 216bf2f19d528084685a2361a158e105e2284010
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: ac81d386f0e1104879701faba230d5384259fa25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560161"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921410"
 ---
 # <a name="expression-evaluator-architecture"></a>Architettura dell'analizzatore di espressioni
 > [!IMPORTANT]
@@ -53,7 +53,7 @@ ms.locfileid: "96560161"
 
  [Interfacce dell'analizzatore di espressioni chiave](../../extensibility/debugger/key-expression-evaluator-interfaces.md) Descrive le interfacce cruciali necessarie per la scrittura di un EE, insieme al contesto di valutazione.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Scrittura di un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [Visualizzazione di variabili locali](../../extensibility/debugger/displaying-locals.md)
 - [Modifica del valore di un oggetto locale](../../extensibility/debugger/changing-the-value-of-a-local.md)

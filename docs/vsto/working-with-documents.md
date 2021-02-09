@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], document common tasks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8a8b994ed88c6499d17cc0cf241e60a17f235b97
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f04cdd246d95a4d5757ff64851a12cdede36f1b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527030"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920220"
 ---
 # <a name="work-with-documents"></a>Usare i documenti
   Gli argomenti di questa sezione forniscono le procedure dettagliate e gli esempi di codice per l'uso del modello a oggetti di Microsoft Office Word per lavorare con i documenti nei progetti di Office.
@@ -44,6 +44,6 @@ ms.locfileid: "97527030"
 |Aggiungere un'intestazione o un piè di pagina a un documento.|[Procedura: aggiungere intestazioni e piè di pagina ai documenti a livello di codice](../vsto/how-to-programmatically-add-headers-and-footers-to-documents.md)|
 |Rimuovere tutti i commenti da un documento.|[Procedura: rimuovere tutti i commenti dai documenti a livello di codice](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md)
 - [Panoramica sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

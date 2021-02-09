@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e73d98e9fff713258f4797577fd8402932fe266
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 041e499f4c670b5b31530c7fc0ecb74358a8087f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559636"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921499"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>Valutazione delle espressioni in modalità di interruzioni
 Nella sezione seguente viene descritto il processo che si verifica quando il debugger è in modalità di interruzione ed è necessario eseguire la valutazione dell'espressione.
@@ -41,5 +41,5 @@ Nella sezione seguente viene descritto il processo che si verifica quando il deb
 
     - Quando si usa `IDebugExpression2::EvaluateAsync` , l'interfaccia di callback specificata comunica il processo in corso della valutazione. Al termine della valutazione, EvaluateAsync Invia un'interfaccia [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) tramite il callback. Con questa interfaccia evento, il valore finale restituisce [GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Chiama eventi del debugger](../../extensibility/debugger/calling-debugger-events.md)

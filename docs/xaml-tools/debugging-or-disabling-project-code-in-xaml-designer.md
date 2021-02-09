@@ -7,13 +7,13 @@ ms.topic: how-to
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 8a5db556bfc9106bb18a6ef9d4d5e3e1aa893cc3
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: e03c33de81727c333db8f662232e669e37e78f59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796745"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921759"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Eseguire il debug o disabilitare il codice del progetto nella finestra di progettazione XAML
 
@@ -55,7 +55,7 @@ Quando il codice del progetto è disabilitato, Visual Studio visualizza i segnap
 
 5. Impostare un punto di interruzione nel codice del progetto.
 
-6. Nella barra dei menu della nuova istanza di Visual Studio scegliere **debug**  >  **Connetti a processo** .
+6. Nella barra dei menu della nuova istanza di Visual Studio scegliere **debug**  >  **Connetti a processo**.
 
 7. Nella finestra di dialogo **Connetti a processo** scegliere **XDesProc.exe** nell'elenco **Processi disponibili** e quindi fare clic sul pulsante **Connetti** .
 
@@ -71,7 +71,7 @@ Quando il codice del progetto è disabilitato, Visual Studio visualizza i segnap
 
 - Nella finestra di dialogo dell'eccezione non gestita fare clic sul collegamento **Fare clic qui per consentire l'esecuzione del codice del progetto e ricaricare la finestra di progettazione** .
 
-- In alternativa, nella barra degli strumenti della **finestra di progettazione XAML** fare clic sul pulsante **Disabilita il codice del progetto** .
+- In alternativa, nella barra degli strumenti della **finestra di progettazione XAML** fare clic sul pulsante **Disabilita il codice del progetto**.
 
      ![Pulsante Disabilita il codice del progetto](media/xaml_disablecode.png)
 
@@ -98,6 +98,6 @@ Per modificare le opzioni di visualizzazione dei controlli, fare clic sull'icona
 
 Quando si seleziona **Only Display Platform Controls** (Visualizza solo controlli piattaforma), tutti i controlli personalizzati provenienti dagli SDK, i controlli utente dei clienti e altri controlli non verranno visualizzati completamente. Questi controlli vengono invece sostituiti da controlli di fallback per mostrare le dimensioni e la posizione del controllo.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Progettare XAML in Visual Studio e Blend per Visual Studio](designing-xaml-in-visual-studio.md)

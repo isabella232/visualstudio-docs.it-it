@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], text
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8314752b5d1be6d1d86dcf35cf78851bcb45cb3c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 07b3ed9cc39e4eb23bec587516786cf28a940e40
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523390"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920228"
 ---
 # <a name="work-with-text-in-documents"></a>Usare il testo nei documenti
   Gli argomenti di questa sezione contengono le procedure dettagliate e gli esempi di codice per usare il modello a oggetti di Microsoft Office Word per lavorare con il testo in progetti di Office.
@@ -48,6 +48,6 @@ ms.locfileid: "97523390"
 |Nascondere il testo in un segnalibro prima di stampare un documento.|[Procedura: nascondere il testo nei documenti a livello di codice](../vsto/how-to-programmatically-hide-text-in-documents.md)|
 |Aggiungere un commento al testo.|[Procedura: aggiungere commenti al testo nei documenti a livello di codice](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Panoramica del modello a oggetti di Word](../vsto/word-object-model-overview.md)
 - [Panoramica sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

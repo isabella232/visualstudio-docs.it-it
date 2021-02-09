@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ec2362ed-4a0c-4a09-9d66-8ff04e4f41ee
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bdaf15d09af3199d026155cf7667f063f5bbe858
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5845ce7f512a24d341f73afa9f9905339dda87cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713774"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922975"
 ---
 # <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
 Questa struttura fornisce informazioni sui processi in esecuzione in un computer.
@@ -28,22 +28,22 @@ Questa struttura fornisce informazioni sui processi in esecuzione in un computer
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-typedef struct tagPROVIDER_PROCESS_DATA {
-   PROVIDER_FIELDS    Fields;
-   PROGRAM_NODE_ARRAY ProgramNodes;
-   BOOL               fIsDebuggerPresent;
-} PROVIDER_PROCESS_DATA;
+typedef struct tagPROVIDER_PROCESS_DATA {
+   PROVIDER_FIELDS    Fields;
+   PROGRAM_NODE_ARRAY ProgramNodes;
+   BOOL               fIsDebuggerPresent;
+} PROVIDER_PROCESS_DATA;
 ```
 
 ```csharp
-public struct PROVIDER_PROCESS_DATA {
-   public uint               Fields;
-   public PROGRAM_NODE_ARRAY ProgramNodes;
-   public int                fIsDebuggerPresent;
+public struct PROVIDER_PROCESS_DATA {
+   public uint               Fields;
+   public PROGRAM_NODE_ARRAY ProgramNodes;
+   public int                fIsDebuggerPresent;
 }
 ```
 
-## <a name="members"></a>Membri
+## <a name="members"></a>Members
  `Fields`\
  Combinazione di flag dell'enumerazione [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) , che indica i campi che vengono compilati.
 
@@ -53,7 +53,7 @@ public struct PROVIDER_PROCESS_DATA {
  `fIsDebuggerPresent`\
  Diverso da zero ( `TRUE` ) se il [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugger è in esecuzione, in caso contrario, zero ( `FALSE` ).
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questa struttura viene passata al metodo [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) in cui è compilata.
 
 ## <a name="requirements"></a>Requisiti
@@ -63,7 +63,7 @@ public struct PROVIDER_PROCESS_DATA {
 
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Strutture e unioni](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)
 - [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)

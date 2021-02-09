@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d27f777b660b2ffc94c4b9b6f0b6ba55816d626b
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: eb96cdafd08825f14c83d99471356f4e3a92eea5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722828"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922406"
 ---
 # <a name="overviews-performance-tools"></a>Panoramiche (strumenti per le prestazioni)
 Questa sezione fornisce una panoramica dei concetti e della terminologia per gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], utilizzabili per misurare le caratteristiche delle prestazioni di un'applicazione in fase di sviluppo.
@@ -57,7 +57,7 @@ Questa sezione fornisce una panoramica dei concetti e della terminologia per gli
 
  Vengono fornite informazioni sui problemi e i passaggi necessari per raccogliere dati di campionamento e profilare le applicazioni tra sessioni in [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)].
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Attività iniziali](../profiling/getting-started-with-performance-tools.md)
 - [Esplora prestazioni](../profiling/performance-explorer.md)

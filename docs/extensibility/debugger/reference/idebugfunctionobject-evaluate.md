@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 29349ea3-d5c1-4135-aa76-ced073ab9683
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 529a5f67c808efa258bc0cb9899f546dbb90d431
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94285bc0ca36d4a55c3cd3a3483f6e20f6914271
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728503"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920977"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 Chiama la funzione e restituisce il valore risultante come un oggetto.
@@ -28,7 +28,7 @@ Chiama la funzione e restituisce il valore risultante come un oggetto.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT Evaluate( 
+HRESULT Evaluate( 
    IDebugObject** ppParams,
    DWORD          dwParams,
    DWORD          dwTimeout,
@@ -61,8 +61,8 @@ out Restituisce un [IDebugObject](../../../extensibility/debugger/reference/ideb
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo metodo imposta ed esegue una chiamata alla funzione rappresentata dall'oggetto [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

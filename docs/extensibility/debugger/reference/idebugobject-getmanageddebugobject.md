@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cb89692e-7657-47ff-846d-311943521951
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 67d0d7a8642c9dd90067b0e197f420d4cc821faa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8fec87a2294524c915116929f2ac2c991170c5ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726684"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920882"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
 Crea una copia dell'oggetto gestito nello spazio degli indirizzi del motore di debug.
@@ -28,7 +28,7 @@ Crea una copia dell'oggetto gestito nello spazio degli indirizzi del motore di d
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetManagedDebugObject( 
+HRESULT GetManagedDebugObject( 
    IDebugManagedObject** ppObject
 );
 ```
@@ -46,9 +46,9 @@ out Restituisce un oggetto [IDebugManagedObject](../../../extensibility/debugger
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore. Restituisce E_FAIL se questo [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) non rappresenta un'istanza della classe di valori gestita.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Questo oggetto [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) deve rappresentare un'istanza della classe di valori gestita, ad esempio un' `System.Decimal` istanza di. Con una copia locale viene eliminato il sovraccarico della chiamata di [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

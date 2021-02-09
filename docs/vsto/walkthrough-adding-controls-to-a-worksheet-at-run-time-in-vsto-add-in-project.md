@@ -15,15 +15,15 @@ helpviewer_keywords:
 - worksheets, adding controls at run time
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e9987e9427c0fe982cf3ddcb88ce8071caab04b0
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: bc6c608d406cabe6962a47dae4c86fa7503a05a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522779"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921784"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Procedura dettagliata: aggiungere controlli a un foglio di lavoro in fase di esecuzione in un progetto di componente aggiuntivo VSTO
   È possibile aggiungere controlli a qualsiasi foglio di lavoro aperto mediante un componente aggiuntivo VSTO per Excel. Questa procedura dettagliata illustra come usare la barra multifunzione per consentire agli utenti l'aggiunta di oggetti <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> e <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro. Per informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -73,21 +73,21 @@ ms.locfileid: "97522779"
 
 5. Nella finestra **Proprietà** modificare le seguenti proprietà:
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**Button**|
     |**Etichetta**|**Button**|
 
 6. Aggiungere una seconda casella di controllo a **group1** e quindi modificare le proprietà seguenti.
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**NamedRange**|
     |**Etichetta**|**NamedRange**|
 
 7. Aggiungere una terza casella di controllo a **Group1**, quindi modificare le proprietà seguenti.
 
-    |Proprietà|valore|
+    |Proprietà|Valore|
     |--------------|-----------|
     |**Nome**|**ListObject**|
     |**Etichetta**|**ListObject**|
@@ -189,7 +189,7 @@ ms.locfileid: "97522779"
 
 - Per informazioni su come salvare i controlli in un foglio di lavoro, vedere l'esempio di controlli dinamici del componente aggiuntivo VSTO di Excel in [esempi e procedure dettagliate per lo sviluppo di Office](../vsto/office-development-samples-and-walkthroughs.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Soluzioni Excel](../vsto/excel-solutions.md)
 - [Cenni preliminari sui controlli Windows Form nei documenti di Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Controlli nei documenti di Office](../vsto/controls-on-office-documents.md)

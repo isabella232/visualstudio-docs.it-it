@@ -9,18 +9,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ee28bde6de10006ccfdc5175cca629ad9d1590d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbebcec3f5b2de01bcbfa7839f68e6f7a3e2cc64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649642"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922844"
 ---
 # <a name="how-to-run-a-c-program-in-visual-studio"></a>Procedura: eseguire un programma C# in Visual Studio
 
@@ -30,9 +30,9 @@ Ciò che è necessario fare per eseguire un programma dipende da ciò che si sta
 
 ## <a name="starting-from-a-project"></a>Avvio da un progetto
 
-Se si dispone di un progetto C# (file con estensione*csproj* ), è possibile eseguirlo, se si tratta di un programma eseguibile. Se un progetto contiene un file C# con un `Main` metodo e l'output è un file eseguibile (exe), è molto probabile che venga eseguito se viene compilato correttamente.
+Se si dispone di un progetto C# (file con estensione *csproj* ), è possibile eseguirlo, se si tratta di un programma eseguibile. Se un progetto contiene un file C# con un `Main` metodo e l'output è un file eseguibile (exe), è molto probabile che venga eseguito se viene compilato correttamente.
 
-Se si dispone già del codice per il programma in un progetto in Visual Studio, aprire il progetto. Per aprire il progetto, fare doppio clic o toccare il file con *estensione csproj* da Esplora file di Windows o da Visual Studio, scegliere **Apri un progetto**, Sfoglia per trovare il file di progetto (con*estensione csproj*) e scegliere il file di progetto.
+Se si dispone già del codice per il programma in un progetto in Visual Studio, aprire il progetto. Per aprire il progetto, fare doppio clic o toccare il file con *estensione csproj* da Esplora file di Windows o da Visual Studio, scegliere **Apri un progetto**, Sfoglia per trovare il file di progetto (con *estensione csproj*) e scegliere il file di progetto.
 
 Al termine del caricamento dei progetti in Visual Studio, premere **CTRL** + **F5** (**Avvia senza eseguire debug**) o usare il pulsante di **avvio** verde sulla barra degli strumenti di Visual Studio per eseguire il programma.  Se sono presenti più progetti, `Main` è necessario impostare quello con il metodo come progetto di avvio. Per impostare il progetto di avvio, fare clic con il pulsante destro del mouse su un nodo di progetto e scegliere **Imposta come progetto di avvio**.
 
@@ -74,7 +74,7 @@ Se il codice che si vuole eseguire si trova in GitHub o in un repository di Azur
 
 ## <a name="run-the-program"></a>Eseguire il programma
 
-Per avviare il programma, premere la freccia verde (pulsante**Avvia** ) sulla barra degli strumenti principale di Visual Studio oppure premere **F5** o **CTRL** + **F5** per eseguire il programma. Quando si usa il pulsante **Avvia** , viene eseguito nel debugger.  Visual Studio tenta di compilare il codice nel progetto ed eseguirlo.  Se l'operazione ha esito positivo, In caso contrario, continuare a leggere per alcune idee su come ottenere la compilazione corretta.
+Per avviare il programma, premere la freccia verde (pulsante **Avvia** ) sulla barra degli strumenti principale di Visual Studio oppure premere **F5** o **CTRL** + **F5** per eseguire il programma. Quando si usa il pulsante **Avvia** , viene eseguito nel debugger.  Visual Studio tenta di compilare il codice nel progetto ed eseguirlo.  Se l'operazione ha esito positivo, In caso contrario, continuare a leggere per alcune idee su come ottenere la compilazione corretta.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
@@ -98,7 +98,7 @@ Ad esempio, nella schermata seguente è possibile scegliere di aggiungere `using
 
 #### <a name="missing-assembly-reference"></a>Riferimento all'assembly mancante
 
-I riferimenti .NET possono essere sotto forma di assembly o pacchetti NuGet. In genere, se si trova il codice sorgente, il server di pubblicazione o l'autore descrivono quali assembly sono necessari e quali pacchetti dipendono dal codice. Per aggiungere manualmente un riferimento a un progetto, fare clic con il pulsante destro del mouse sul nodo **riferimenti** nel **Esplora soluzioni**, scegliere **Aggiungi riferimento**e individuare l'assembly richiesto.
+I riferimenti .NET possono essere sotto forma di assembly o pacchetti NuGet. In genere, se si trova il codice sorgente, il server di pubblicazione o l'autore descrivono quali assembly sono necessari e quali pacchetti dipendono dal codice. Per aggiungere manualmente un riferimento a un progetto, fare clic con il pulsante destro del mouse sul nodo **riferimenti** nel **Esplora soluzioni**, scegliere **Aggiungi riferimento** e individuare l'assembly richiesto.
 
 ![Screenshot del menu Aggiungi riferimento](media/add-reference.png)
 
@@ -122,6 +122,6 @@ Per modificare il Framework di destinazione, vedere [modificare il Framework di 
 
 Esplorare l'ambiente di sviluppo di Visual Studio leggendo [Benvenuti nell'IDE di Visual Studio](../visual-studio-ide.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 [Creare la prima app C#](tutorial-console.md)
