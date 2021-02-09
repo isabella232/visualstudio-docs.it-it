@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6d6c8213-6181-4adf-9584-3e4cac163dd8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f1217a6f3a62f331fa09d9ed276640ef62cca8d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9d14a5666db03c9ebd701d5e1145c3f14465e37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728916"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915409"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 Questo metodo ottiene il contenitore di un campo.
@@ -28,7 +28,7 @@ Questo metodo ottiene il contenitore di un campo.
 ## <a name="syntax"></a>Sintassi
 
 ```cpp
-HRESULT GetContainer( 
+HRESULT GetContainer( 
    IDebugContainerField** ppContainerField
 );
 ```
@@ -46,9 +46,9 @@ out Restituisce il contenitore come rappresentato dall'interfaccia [IDebugContai
 ## <a name="return-value"></a>Valore restituito
  In caso di esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Commenti
  Se questo campo non dispone di un contenitore, l'oggetto restituito `ppContainerField` sarà un valore null.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

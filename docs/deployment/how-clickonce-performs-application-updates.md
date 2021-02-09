@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d54313c2-cf0c-420d-b151-99953a95f0bb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e0177f199f0178e9fe0221a4cb6daa58d36a6f87
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: cdef39a0ab07d4cb9c9f42cf897bd7728934b88d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915747"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>Come vengono eseguiti gli aggiornamenti di applicazioni con ClickOnce
 ClickOnce utilizza le informazioni sulla versione del file specificate nel manifesto di distribuzione di un'applicazione per decidere se aggiornare i file dell'applicazione. Dopo l'avvio di un aggiornamento, ClickOnce utilizza una tecnica denominata applicazione di *patch* per evitare il download ridondante dei file dell'applicazione.
@@ -37,6 +37,6 @@ ClickOnce utilizza le informazioni sulla versione del file specificate nel manif
 
  L'applicazione di patch al file non funziona per i file contrassegnati come dati e archiviati nella directory dei dati. Vengono sempre scaricati indipendentemente dalla firma hash del file. Per altre informazioni sulla directory dati, vedere [accedere ai dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Scegliere una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
 - [Scegliere una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

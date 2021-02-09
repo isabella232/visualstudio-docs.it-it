@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c158453421d9e4f899a7cfed7118be8e5871356c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: b5319526da9aa59951729389749e53f3df65b643
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134132"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915712"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Procedura: Creare uno shader con phong di base
 
@@ -27,24 +27,24 @@ Il modello di illuminazione Phong estende il modello di illuminazione Lambert co
 
 Per altre informazioni sul modello di illuminazione Lambert, vedere [Procedura: Creare uno shader con Lambert di base](../designers/how-to-create-a-basic-lambert-shader.md).
 
-Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti** .
+Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti**.
 
 1. Creare uno shader Lambert, come descritto in [Procedura: Creare uno shader con Lambert di base](../designers/how-to-create-a-basic-lambert-shader.md).
 
-2. Scollegare il nodo **Lambert** dal nodo **Colore finale** . Scegliere il terminale **RGB** del nodo **Lambert** e quindi scegliere **Interrompi collegamenti** . In questo modo si crea lo spazio per il nodo che viene aggiunto nel passaggio successivo.
+2. Scollegare il nodo **Lambert** dal nodo **Colore finale**. Scegliere il terminale **RGB** del nodo **Lambert** e quindi scegliere **Interrompi collegamenti**. In questo modo si crea lo spazio per il nodo che viene aggiunto nel passaggio successivo.
 
-3. Aggiungere un nodo **Aggiungi** al grafico. Nella **casella degli strumenti** , in **Matematica** , selezionare **Aggiungi** e spostarlo nell'area di progettazione.
+3. Aggiungere un nodo **Aggiungi** al grafico. Nella **casella degli strumenti**, in **Matematica**, selezionare **Aggiungi** e spostarlo nell'area di progettazione.
 
-4. Aggiungere un nodo **Speculare** al grafico. Nella **casella degli strumenti** , in **Utilità** , selezionare **Speculare** e spostarlo nell'area di progettazione.
+4. Aggiungere un nodo **Speculare** al grafico. Nella **casella degli strumenti**, in **Utilità**, selezionare **Speculare** e spostarlo nell'area di progettazione.
 
-5. Aggiungere il contributo speculare. Spostare il terminale **Output** del nodo **Speculare** nel terminale **X** del nodo **Aggiungi** e quindi spostare il terminale **Output** del nodo **Lambert** nel terminale **Y** del nodo **Aggiungi** . Queste connessioni combinano i contributi totali di colore con riflessione diffusa e colore speculare per il pixel.
+5. Aggiungere il contributo speculare. Spostare il terminale **Output** del nodo **Speculare** nel terminale **X** del nodo **Aggiungi** e quindi spostare il terminale **Output** del nodo **Lambert** nel terminale **Y** del nodo **Aggiungi**. Queste connessioni combinano i contributi totali di colore con riflessione diffusa e colore speculare per il pixel.
 
-6. Collegare il valore del colore calcolato al colore finale. Spostare il terminale **Output** del nodo **Aggiungi** nel terminale **RGB** del nodo **Colore finale** .
+6. Collegare il valore del colore calcolato al colore finale. Spostare il terminale **Output** del nodo **Aggiungi** nel terminale **RGB** del nodo **Colore finale**.
 
    La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a un modello di teiera.
 
 > [!NOTE]
-> Per illustrare meglio l'effetto dello shader in questa figura, è stato specificato un colore arancione usando il parametro **MaterialDiffuse** dello shader e un colore metallizzato usando i parametri **MaterialSpecular** e **MaterialSpecularPower** . Per informazioni sui parametri di materiale, vedere la sezione Anteprima degli shader in [Finestra di progettazione shader](../designers/shader-designer.md).
+> Per illustrare meglio l'effetto dello shader in questa figura, è stato specificato un colore arancione usando il parametro **MaterialDiffuse** dello shader e un colore metallizzato usando i parametri **MaterialSpecular** e **MaterialSpecularPower**. Per informazioni sui parametri di materiale, vedere la sezione Anteprima degli shader in [Finestra di progettazione shader](../designers/shader-designer.md).
 
 ![Grafico shader e anteprima del relativo effetto](../designers/media/digit-lighting-graph.png)
 
@@ -61,7 +61,7 @@ La figura seguente illustra lo shader descritto in questo documento applicato a 
 
 Per altre informazioni su come applicare uno shader a un modello 3D, vedere [procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Procedura: esportare uno shader](../designers/how-to-export-a-shader.md)

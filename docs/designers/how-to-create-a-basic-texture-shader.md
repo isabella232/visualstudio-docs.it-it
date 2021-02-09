@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 93696dfe9fbf3b8db1d4be137ced6798b3a60aae
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 832d8aac861163c0d1c6b56c340502e32b2f555b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915675"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Procedura: Creare uno shader con trama di base
 
@@ -25,23 +25,23 @@ Questo articolo illustra come usare la finestra di progettazione shader e il lin
 
 È possibile implementare uno shader a trama singola di base scrivendo i valori di colore e alfa di un campione di trama direttamente nel colore di output finale.
 
-Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti** .
+Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti**.
 
 1. Creare uno shader DGSL da utilizzare. Per informazioni su come aggiungere uno shader DGSL al progetto, vedere la sezione Introduzione in [Finestra di progettazione shader](../designers/shader-designer.md).
 
-2. Eliminare il nodo **Colore punto** . In modalità **Seleziona** selezionare il nodo **Colore punto** e scegliere **Modifica** > **Elimina** nella barra dei menu. In questo modo si crea lo spazio per il nodo che viene aggiunto nel passaggio successivo.
+2. Eliminare il nodo **Colore punto**. In modalità **Seleziona** selezionare il nodo **Colore punto** e scegliere **Modifica** > **Elimina** nella barra dei menu. In questo modo si crea lo spazio per il nodo che viene aggiunto nel passaggio successivo.
 
-3. Aggiungere un nodo **Trama** al grafico. Nella **casella degli strumenti** , in **Trama** , selezionare **Campione trama** e spostarlo nell'area di progettazione.
+3. Aggiungere un nodo **Trama** al grafico. Nella **casella degli strumenti**, in **Trama**, selezionare **Campione trama** e spostarlo nell'area di progettazione.
 
-4. Aggiungere un nodo **Coordinata trama** al grafico. Nella **casella degli strumenti** , in **Trama** , selezionare **Coordinata trama** e spostarlo nell'area di progettazione.
+4. Aggiungere un nodo **Coordinata trama** al grafico. Nella **casella degli strumenti**, in **Trama**, selezionare **Coordinata trama** e spostarlo nell'area di progettazione.
 
-5. Scegliere una trama da applicare. In modalità **Seleziona** selezionare il nodo **Campione trama** e nella finestra **Proprietà** specificare la trama che si vuole usare tramite la proprietà **Nome file** .
+5. Scegliere una trama da applicare. In modalità **Seleziona** selezionare il nodo **Campione trama** e nella finestra **Proprietà** specificare la trama che si vuole usare tramite la proprietà **Nome file**.
 
-6. Rendere la trama accessibile pubblicamente. Selezionare il nodo **Campione trama** e nella finestra **Proprietà** impostare la proprietà **Accesso** su **Pubblico** . A questo punto è possibile impostare la trama da un altro strumento, ad esempio dall' **editor dei modelli** .
+6. Rendere la trama accessibile pubblicamente. Selezionare il nodo **Campione trama** e nella finestra **Proprietà** impostare la proprietà **Accesso** su **Pubblico**. A questo punto è possibile impostare la trama da un altro strumento, ad esempio dall'**editor dei modelli**.
 
-7. Collegare le coordinate di trama al campione di trama. In modalità **Seleziona** spostare il terminale **Output** del nodo **Coordinata trama** nel terminale **UV** del nodo **Campione trama** . Questa connessione esegue la campionatura della trama in corrispondenza delle coordinate specificate.
+7. Collegare le coordinate di trama al campione di trama. In modalità **Seleziona** spostare il terminale **Output** del nodo **Coordinata trama** nel terminale **UV** del nodo **Campione trama**. Questa connessione esegue la campionatura della trama in corrispondenza delle coordinate specificate.
 
-8. Collegare il campione di trama al colore finale. Spostare il terminale **RGB** del nodo **Campione trama** nel terminale **RGB** del nodo **Colore finale** e quindi spostare il terminale **Alfa** del nodo **Campione trama** nel terminale **Alfa** del nodo **Colore finale** .
+8. Collegare il campione di trama al colore finale. Spostare il terminale **RGB** del nodo **Campione trama** nel terminale **RGB** del nodo **Colore finale** e quindi spostare il terminale **Alfa** del nodo **Campione trama** nel terminale **Alfa** del nodo **Colore finale**.
 
 La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a un cubo.
 
@@ -52,7 +52,7 @@ La figura seguente illustra il grafico shader completato e un'anteprima dello sh
 
 Alcune forme potrebbero produrre anteprime migliori per alcuni shader. Per ulteriori informazioni su come visualizzare in anteprima gli shader nella finestra di progettazione shader, vedere [finestra di progettazione shader](../designers/shader-designer.md) .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 
 - [Procedura: applicare uno shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Editor di immagini](../designers/image-editor.md)

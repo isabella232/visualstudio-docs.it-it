@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 288922be-ba3f-411e-af50-bba39c9529cc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 983c053ca6bd1370cf67cb04eeb2626c2b1217aa
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 2edcf359bd54774647ff1a5957d741fec25b60a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398727"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915813"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>Procedura: eseguire il debug di un servizio WCF indipendente
 Un *servizio indipendente* è un servizio WCF che non viene eseguito in IIS, nell'host dei servizi WCF o nel server di sviluppo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Il modo più semplice per eseguire il debug di una WCF self-hosted consiste nel configurare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per avviare client e server quando si sceglie **Avvia debug** dal menu **debug** .
@@ -55,7 +55,7 @@ Un *servizio indipendente* è un servizio WCF che non viene eseguito in IIS, nel
 
    6. Fare clic su **OK**.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Debug dei servizi WCF](../debugger/debugging-wcf-services.md)
 - [Limitazioni del debug WCF](../debugger/limitations-on-wcf-debugging.md)
 - [Procedura: eseguire istruzioni nei servizi WCF](../debugger/how-to-step-into-wcf-services.md)
