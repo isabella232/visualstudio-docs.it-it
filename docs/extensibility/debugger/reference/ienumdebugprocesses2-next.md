@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: abef89eb-198b-49cd-a4c9-17bce6cac0e1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cbfab7f13160129249afe7139ef3c402ba9801ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8a2f71bf47f6b8c60cb897275f0673d4fc96479
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715832"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883701"
 ---
 # <a name="ienumdebugprocesses2next"></a>IEnumDebugProcesses2::Next
 Restituisce il successivo set di elementi dall'enumerazione.
@@ -56,6 +56,6 @@ out Restituisce il numero di elementi effettivamente restituiti in `rgelt` .
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è possibile che venga restituito un numero di elementi inferiore al numero richiesto; in caso contrario, restituisce un codice di errore.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

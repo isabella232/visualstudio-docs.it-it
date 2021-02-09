@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f4f5a96a-8230-493d-9696-8d2716bda261
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d59335a418febef45ebe35d4590c72b486921639
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76de853cfa1fbd524c87384da38a9438c6ac66bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712751"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883571"
 ---
 # <a name="task_state_canceled-field"></a>Campo TASK_STATE_CANCELED
 L'attività è stata annullata prima che raggiunga lo stato in esecuzione oppure ha confermato l'annullamento e il completamento senza eccezione.
@@ -35,5 +35,5 @@ L'attività è stata annullata prima che raggiunga lo stato in esecuzione oppure
 ## <a name="remarks"></a>Osservazioni
  Se il [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) campo contiene questo valore, la <xref:System.Threading.Tasks.Task.Status%2A> proprietà restituisce <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
 
-## <a name="see-also"></a>Vedere anche
+## <a name="see-also"></a>Vedi anche
 - [Classe Task](../../extensibility/debugger/task-class-internal-members.md)
